@@ -1,0 +1,387 @@
+#!/usr/bin/env python3
+"""Fetch URA transaction data by postal district (D01-D28).
+
+Instead of searching project-by-project (which requires knowing every condo name),
+this searches by postal district and retrieves ALL condo transactions in that
+district for the last 5 years in a single request.
+
+28 requests cover the entire Singapore condo market vs hundreds for individual projects.
+
+Data source: URA Property Market Information
+URL: https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch
+
+Usage:
+    # Fetch all districts (D01-D28)
+    python fetch_ura_districts.py
+
+    # Fetch specific districts
+    python fetch_ura_districts.py --districts 3,5,14,15
+
+    # Force re-fetch even if cached
+    python fetch_ura_districts.py --districts 5 --force
+
+    # Set max age for cache freshness (default: 30 days)
+    python fetch_ura_districts.py --max-age 14
+
+    # Build/update ura_cache.json after fetching
+    python fetch_ura_districts.py --districts 3,5 --build-cache
+"""
+
+import argparse
+import json
+import sys
+import time
+from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from scrapers.ura_scraper import parse_ura_csv, URATransactionHistory
+
+DATA_DIR = Path(__file__).parent / "data"
+URA_CACHE_FILE = DATA_DIR / "ura_cache.json"
+URA_URL = "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+
+# All valid postal districts in Singapore
+ALL_DISTRICTS = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+    16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
+]
+
+
+def district_csv_path(district: int) -> Path:
+    """Path to saved CSV for a district."""
+    return DATA_DIR / f"ura_district_D{district:02d}.csv"
+
+
+def is_fresh(csv_path: Path, max_age_days: int) -> bool:
+    """Check if a cached CSV file is fresh enough."""
+    if not csv_path.exists():
+        return False
+    mtime = datetime.fromtimestamp(csv_path.stat().st_mtime)
+    age_days = (datetime.now() - mtime).days
+    return age_days <= max_age_days
+
+
+def fetch_district(page, district: int) -> tuple[str | None, str | None]:
+    """Fetch URA CSV for one postal district.
+
+    URA search popup UI structure (discovered via browser inspection):
+    - Click "button.search-popup-btn" to open popup
+    - Popup has tabs: "Project" (default) and "Postal District"
+    - "Postal District" tab link has href="#postalDistrict"
+    - District checkboxes labeled "D{NN} / {area description}"
+    - Property Type dropdown is COMPULSORY for postal district searches
+    - Must select "Apartments & Condominiums" before searching
+
+    Returns (csv_content, error_message). One of them will be None.
+    """
+    district_str = f"D{district:02d}"
+
+    try:
+        # Navigate fresh each time (most reliable)
+        page.goto(URA_URL, wait_until="networkidle", timeout=30000)
+        page.wait_for_timeout(2000)
+
+        # Open the search popup (project/location selector)
+        page.locator("button.search-popup-btn").click()
+        page.wait_for_timeout(1000)
+
+        # Switch to "Postal District" tab
+        # Tab is an <a> link with href="#postalDistrict"
+        postal_tab = page.locator('a[href="#postalDistrict"]')
+        if postal_tab.count() == 0:
+            # Fallback: try matching by text
+            postal_tab = page.locator('a:has-text("Postal District")')
+        if postal_tab.count() == 0:
+            return None, "Could not find 'Postal District' tab in popup"
+        postal_tab.first.click()
+        page.wait_for_timeout(500)
+
+        # Find and check the district checkbox
+        # Checkboxes are labeled like "D05 / Pasir Panjang, Hong Leong Garden, Clementi New Town"
+        # The checkbox input is inside a clickable container div
+        cb = page.locator(f'input[type="checkbox"]').filter(
+            has=page.locator(f'text=/{district_str} \\//'),
+        )
+        if cb.count() == 0:
+            # Try clicking the container that has the district text
+            container = page.locator(f'text=/{district_str} \\//')
+            if container.count() > 0:
+                container.first.click()
+                page.wait_for_timeout(300)
+            else:
+                # Last resort: find by exact checkbox value
+                for val in [district_str, f"{district:02d}", str(district)]:
+                    cb = page.locator(f'input[type="checkbox"][value="{val}"]')
+                    if cb.count() > 0:
+                        cb.first.click()
+                        page.wait_for_timeout(300)
+                        break
+                else:
+                    return None, f"Could not find checkbox for {district_str}"
+        else:
+            cb.first.click()
+            page.wait_for_timeout(300)
+
+        # Click Apply to close popup
+        page.locator('button:has-text("Apply"):visible').click()
+        page.wait_for_timeout(500)
+
+        # COMPULSORY: Set property type to "Apartments & Condominiums"
+        # for postal district searches (URA requires this)
+        page.locator('select').filter(has=page.locator('option:has-text("Apartments")')).first.select_option(
+            label="Apartments & Condominiums"
+        )
+        page.wait_for_timeout(300)
+
+        # Click Search
+        page.locator('button.btn-primary:has-text("Search")').click()
+        page.wait_for_timeout(3000)
+
+        # Wait for results (district queries can be large, allow more time)
+        try:
+            page.wait_for_selector("text=/Showing \\d+/", timeout=30000)
+        except Exception:
+            # Check if "No results" message appeared
+            no_results = page.locator('text=/No results|No transaction/i')
+            if no_results.count() > 0:
+                return None, f"No results for {district_str}"
+            return None, f"Timeout waiting for results for {district_str}"
+
+        result_text = page.locator("text=/Showing \\d+/").first.inner_text()
+        print(f"  {result_text}", file=sys.stderr)
+
+        # Download CSV via the downloadCSV link
+        csv_path = str(district_csv_path(district))
+        with page.expect_download(timeout=30000) as dl_info:
+            page.evaluate("document.querySelector('a.downloadCSV').scrollIntoView()")
+            page.wait_for_timeout(500)
+            page.evaluate("document.querySelector('a.downloadCSV').click()")
+
+        dl = dl_info.value
+        dl.save_as(csv_path)
+
+        with open(csv_path) as f:
+            csv_content = f.read()
+
+        return csv_content, None
+
+    except Exception as e:
+        return None, str(e)
+
+
+def build_cache_from_district_csvs(districts: list[int] | None = None) -> dict:
+    """Build/update ura_cache.json from district-level CSV files.
+
+    Groups transactions by project name and calculates metrics for each project.
+    """
+    # Load existing cache
+    if URA_CACHE_FILE.exists():
+        with open(URA_CACHE_FILE) as f:
+            cache = json.load(f).get("projects", {})
+    else:
+        cache = {}
+
+    # Find district CSVs to process
+    if districts:
+        csv_files = [district_csv_path(d) for d in districts]
+    else:
+        csv_files = sorted(DATA_DIR.glob("ura_district_D*.csv"))
+
+    if not csv_files:
+        print("No district CSV files found", file=sys.stderr)
+        return cache
+
+    # Collect all transactions across districts, grouped by project
+    project_txns: dict[str, list] = defaultdict(list)
+    total_txns = 0
+
+    for csv_path in csv_files:
+        if not csv_path.exists():
+            continue
+        print(f"  Parsing {csv_path.name}...", file=sys.stderr)
+        with open(csv_path) as f:
+            csv_content = f.read()
+
+        transactions = parse_ura_csv(csv_content)
+        total_txns += len(transactions)
+
+        for txn in transactions:
+            project_key = txn.project_name.strip()
+            if project_key:
+                project_txns[project_key].append(txn)
+
+    print(f"\n  Total transactions parsed: {total_txns}", file=sys.stderr)
+    print(f"  Unique projects found: {len(project_txns)}", file=sys.stderr)
+
+    # Calculate metrics for each project
+    updated = 0
+    for project_name, txns in sorted(project_txns.items()):
+        history = URATransactionHistory(
+            project_name=project_name,
+            transactions=txns,
+        )
+        history.calculate_metrics()
+
+        project_key = project_name.lower()
+        cache_entry = {
+            "project_name": history.project_name,
+            "transaction_count": history.transaction_count,
+            "avg_psf_current": history.avg_psf_current_year,
+            "avg_psf_5yr_ago": history.avg_psf_5yr_ago,
+            "appreciation_1yr": history.appreciation_1yr,
+            "appreciation_3yr": history.appreciation_3yr,
+            "appreciation_5yr": history.appreciation_5yr,
+            "annualized_appreciation": history.annualized_appreciation,
+            "source": "ura_district_5yr_cagr" if history.annualized_appreciation else "ura_district_data",
+            "updated": datetime.now().strftime("%Y-%m-%d"),
+            # New launch bias fields
+            "new_sale_count": history.new_sale_count,
+            "new_sale_proportion": round(history.new_sale_proportion, 3),
+            "resale_transaction_count": history.resale_transaction_count,
+            "resale_annualized_appreciation": history.resale_annualized_appreciation,
+            "has_new_launch_bias": history.has_new_launch_bias,
+        }
+        cache[project_key] = cache_entry
+        updated += 1
+
+        # Log
+        bias_tag = " [NEW LAUNCH BIAS]" if history.has_new_launch_bias else ""
+        if history.annualized_appreciation is not None:
+            resale_info = ""
+            if history.resale_annualized_appreciation is not None:
+                resale_info = f", resale: {history.resale_annualized_appreciation:+.1f}%/yr"
+            print(f"    {history.project_name}: {history.annualized_appreciation:+.1f}%/yr "
+                  f"({history.transaction_count} txns){resale_info}{bias_tag}",
+                  file=sys.stderr)
+
+    # Save cache
+    cache_data = {
+        "last_updated": datetime.now().strftime("%Y-%m-%d"),
+        "projects": cache,
+    }
+    DATA_DIR.mkdir(exist_ok=True)
+    with open(URA_CACHE_FILE, "w") as f:
+        json.dump(cache_data, f, indent=2)
+
+    print(f"\n  Cache updated: {updated} projects from district data", file=sys.stderr)
+    print(f"  Total cached: {len(cache)} projects", file=sys.stderr)
+    return cache
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Fetch URA transaction data by postal district",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python fetch_ura_districts.py                        # All districts
+  python fetch_ura_districts.py --districts 3,5,14,15  # Specific districts
+  python fetch_ura_districts.py --districts 5 --force  # Force re-fetch
+  python fetch_ura_districts.py --build-cache           # Rebuild cache from CSVs
+        """,
+    )
+    parser.add_argument(
+        "--districts", "-d", type=str,
+        help="Comma-separated district numbers (default: all 27 districts)",
+    )
+    parser.add_argument(
+        "--force", action="store_true",
+        help="Re-fetch even if cached CSV exists and is fresh",
+    )
+    parser.add_argument(
+        "--max-age", type=int, default=30,
+        help="Max age in days before re-fetching (default: 30)",
+    )
+    parser.add_argument(
+        "--build-cache", action="store_true",
+        help="Build/update ura_cache.json from district CSVs (no browser needed)",
+    )
+    args = parser.parse_args()
+
+    # Parse district list
+    if args.districts:
+        districts = [int(d.strip()) for d in args.districts.split(",")]
+    else:
+        districts = ALL_DISTRICTS
+
+    # Build cache only mode (no browser)
+    if args.build_cache:
+        print("\nBuilding URA cache from district CSV files...", file=sys.stderr)
+        build_cache_from_district_csvs(districts)
+        return
+
+    # Determine which districts to fetch
+    to_fetch = []
+    for d in districts:
+        csv_path = district_csv_path(d)
+        if args.force or not is_fresh(csv_path, args.max_age):
+            to_fetch.append(d)
+
+    print(f"\nURA District Fetch", file=sys.stderr)
+    print(f"  Districts requested: {districts}", file=sys.stderr)
+    print(f"  Already cached (fresh): {len(districts) - len(to_fetch)}", file=sys.stderr)
+    print(f"  To fetch: {len(to_fetch)}", file=sys.stderr)
+
+    if not to_fetch:
+        print("\nAll districts cached and fresh!", file=sys.stderr)
+        print("Use --force to re-fetch or --build-cache to rebuild cache.", file=sys.stderr)
+        # Still rebuild cache if needed
+        build_cache_from_district_csvs(districts)
+        return
+
+    # Launch browser and fetch
+    from playwright.sync_api import sync_playwright
+
+    DATA_DIR.mkdir(exist_ok=True)
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=False,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        ctx = browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            ),
+        )
+        page = ctx.new_page()
+
+        ok = 0
+        fail = 0
+        for i, district in enumerate(to_fetch, 1):
+            print(f"\n[{i}/{len(to_fetch)}] District D{district:02d}", file=sys.stderr)
+            csv_content, error = fetch_district(page, district)
+
+            if csv_content:
+                transactions = parse_ura_csv(csv_content)
+                # Count unique projects
+                projects = set(t.project_name for t in transactions)
+                print(f"  -> {len(transactions)} transactions, {len(projects)} projects",
+                      file=sys.stderr)
+                ok += 1
+            else:
+                print(f"  -> FAILED: {error}", file=sys.stderr)
+                fail += 1
+
+            # Small delay between requests
+            if i < len(to_fetch):
+                time.sleep(2)
+
+        browser.close()
+
+    print(f"\n{'='*50}", file=sys.stderr)
+    print(f"Fetched: {ok} districts, {fail} failed", file=sys.stderr)
+
+    # Build cache from all fetched district CSVs
+    print(f"\nBuilding cache from district CSVs...", file=sys.stderr)
+    cache = build_cache_from_district_csvs(districts)
+
+    print(f"\n{'='*50}", file=sys.stderr)
+    print(f"Done! {len(cache)} projects in cache", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()

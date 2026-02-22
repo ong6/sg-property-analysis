@@ -1,0 +1,110 @@
+{
+  "description": "Singapore future MRT infrastructure for property investment scoring",
+  "last_updated": "2026-02-06",
+  "data_sources": [
+    "LTA data.gov.sg MRT Station Exit GeoJSON",
+    "Wikipedia MRT station articles",
+    "SMRT journey planner coordinates"
+  ],
+  "mrt_lines": {
+    "TEL": {
+      "name": "Thomson-East Coast Line",
+      "completion": "2025",
+      "status": "operational",
+      "note": "Coordinates verified from LTA data.gov.sg and official sources",
+      "stations": [
+        {"name": "Woodlands North", "district": 25, "lat": 1.4488, "lng": 103.7856},
+        {"name": "Woodlands", "district": 25, "lat": 1.4367, "lng": 103.7857},
+        {"name": "Woodlands South", "district": 25, "lat": 1.4270, "lng": 103.7926},
+        {"name": "Springleaf", "district": 26, "lat": 1.3973, "lng": 103.8181},
+        {"name": "Lentor", "district": 26, "lat": 1.3847, "lng": 103.8361},
+        {"name": "Mayflower", "district": 20, "lat": 1.3715, "lng": 103.8385},
+        {"name": "Bright Hill", "district": 20, "lat": 1.3640, "lng": 103.8336, "verified": true},
+        {"name": "Upper Thomson", "district": 20, "lat": 1.3548, "lng": 103.8318, "verified": true},
+        {"name": "Caldecott", "district": 11, "lat": 1.3378, "lng": 103.8404, "verified": true},
+        {"name": "Stevens", "district": 10, "lat": 1.3200, "lng": 103.8260},
+        {"name": "Napier", "district": 10, "lat": 1.3067, "lng": 103.8183},
+        {"name": "Orchard Boulevard", "district": 9, "lat": 1.3020, "lng": 103.8322},
+        {"name": "Orchard", "district": 9, "lat": 1.3024, "lng": 103.8354},
+        {"name": "Great World", "district": 9, "lat": 1.2935, "lng": 103.8313},
+        {"name": "Havelock", "district": 3, "lat": 1.2880, "lng": 103.8284},
+        {"name": "Outram Park", "district": 3, "lat": 1.2804, "lng": 103.8394},
+        {"name": "Maxwell", "district": 2, "lat": 1.2766, "lng": 103.8447},
+        {"name": "Shenton Way", "district": 1, "lat": 1.2767, "lng": 103.8507},
+        {"name": "Marina Bay", "district": 1, "lat": 1.2760, "lng": 103.8543},
+        {"name": "Gardens by the Bay", "district": 1, "lat": 1.2825, "lng": 103.8677},
+        {"name": "Tanjong Rhu", "district": 15, "lat": 1.2968, "lng": 103.8734, "verified": true},
+        {"name": "Katong Park", "district": 15, "lat": 1.2980, "lng": 103.8862, "verified": true},
+        {"name": "Tanjong Katong", "district": 15, "lat": 1.2961, "lng": 103.8944},
+        {"name": "Marine Parade", "district": 15, "lat": 1.3025, "lng": 103.9050, "verified": true},
+        {"name": "Marine Terrace", "district": 15, "lat": 1.3063, "lng": 103.9138},
+        {"name": "Siglap", "district": 15, "lat": 1.3097, "lng": 103.9289, "verified": true},
+        {"name": "Bayshore", "district": 16, "lat": 1.3126, "lng": 103.9410, "verified": true},
+        {"name": "Bedok South", "district": 16, "lat": 1.3177, "lng": 103.9467},
+        {"name": "Sungei Bedok", "district": 16, "lat": 1.3203, "lng": 103.9571, "verified": true}
+      ]
+    },
+    "CRL": {
+      "name": "Cross Island Line",
+      "completion": "2030",
+      "status": "under_construction",
+      "note": "Phase 1 (Aviation Park to Bright Hill) expected 2030. Coordinates from LTA announcements.",
+      "stations": [
+        {"name": "Aviation Park", "district": 17, "lat": 1.3493, "lng": 103.9831},
+        {"name": "Loyang", "district": 17, "lat": 1.3579, "lng": 103.9672},
+        {"name": "Pasir Ris", "district": 18, "lat": 1.3731, "lng": 103.9494, "interchange": "EWL"},
+        {"name": "Pasir Ris East", "district": 18, "lat": 1.3737, "lng": 103.9624},
+        {"name": "Tampines North", "district": 18, "lat": 1.3726, "lng": 103.9329},
+        {"name": "Defu", "district": 19, "lat": 1.3719, "lng": 103.8971},
+        {"name": "Hougang", "district": 19, "lat": 1.3712, "lng": 103.8924, "interchange": "NEL"},
+        {"name": "Serangoon North", "district": 19, "lat": 1.3705, "lng": 103.8736, "verified": true},
+        {"name": "Tavistock", "district": 19, "lat": 1.3693, "lng": 103.8561},
+        {"name": "Ang Mo Kio", "district": 20, "lat": 1.3700, "lng": 103.8495, "interchange": "NSL"},
+        {"name": "Teck Ghee", "district": 20, "lat": 1.3677, "lng": 103.8410},
+        {"name": "Bright Hill", "district": 20, "lat": 1.3640, "lng": 103.8336, "interchange": "TEL", "verified": true}
+      ]
+    },
+    "JRL": {
+      "name": "Jurong Region Line",
+      "completion": "2028",
+      "status": "under_construction",
+      "note": "First fully elevated MRT line. Opening in stages 2027-2029. Coordinates from LTA.",
+      "stations": [
+        {"name": "Choa Chu Kang", "district": 23, "lat": 1.3853, "lng": 103.7445, "interchange": "NSL"},
+        {"name": "Choa Chu Kang West", "district": 23, "lat": 1.3917, "lng": 103.7356},
+        {"name": "Tengah", "district": 22, "lat": 1.3665, "lng": 103.7302, "verified": true},
+        {"name": "Hong Kah", "district": 22, "lat": 1.3550, "lng": 103.7095},
+        {"name": "Corporation", "district": 22, "lat": 1.3376, "lng": 103.7035},
+        {"name": "Jurong West", "district": 22, "lat": 1.3400, "lng": 103.6969},
+        {"name": "Bahar Junction", "district": 22, "lat": 1.3350, "lng": 103.6920},
+        {"name": "Boon Lay", "district": 22, "lat": 1.3367, "lng": 103.7037, "interchange": "EWL", "verified": true},
+        {"name": "Enterprise", "district": 22, "lat": 1.3340, "lng": 103.6800},
+        {"name": "Tukang", "district": 22, "lat": 1.3290, "lng": 103.6700},
+        {"name": "Jurong Hill", "district": 22, "lat": 1.3240, "lng": 103.6600},
+        {"name": "Jurong Pier", "district": 22, "lat": 1.3190, "lng": 103.6500},
+        {"name": "Peng Kang Hill", "district": 22, "lat": 1.3300, "lng": 103.7200},
+        {"name": "Nanyang Gateway", "district": 22, "lat": 1.3400, "lng": 103.6800},
+        {"name": "Nanyang Crescent", "district": 22, "lat": 1.3450, "lng": 103.6850},
+        {"name": "Pandan Reservoir", "district": 22, "lat": 1.3200, "lng": 103.7350},
+        {"name": "Jurong Town Hall", "district": 22, "lat": 1.3260, "lng": 103.7460, "verified": true},
+        {"name": "Jurong East", "district": 22, "lat": 1.3334, "lng": 103.7421, "interchange": "EWL/NSL", "verified": true}
+      ]
+    },
+    "DTL_EXT": {
+      "name": "Downtown Line Extension",
+      "completion": "2026",
+      "status": "under_construction",
+      "stations": [
+        {"name": "Xilin", "district": 18, "lat": 1.3400, "lng": 103.9617},
+        {"name": "Sungei Bedok", "district": 16, "lat": 1.3236, "lng": 103.9562}
+      ]
+    }
+  },
+  "proximity_scoring": {
+    "description": "Distance thresholds for future MRT scoring",
+    "within_500m": 6,
+    "within_800m": 4,
+    "within_1000m": 2,
+    "within_1500m": 1
+  }
+}

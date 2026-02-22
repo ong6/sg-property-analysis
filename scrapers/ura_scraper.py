@@ -1,0 +1,607 @@
+"""URA Transaction History Scraper.
+
+Fetches historical transaction data from URA's Property Market Information system.
+Uses Playwright automation since the URA site requires form submission with CSRF tokens.
+
+Data available: 60 months of transaction history (5 years)
+Source: https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch
+"""
+
+import csv
+import io
+import os
+import re
+import sys
+import time
+from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from statistics import mean
+from typing import Optional
+
+
+@dataclass
+class URATransaction:
+    """A single transaction from URA data."""
+    project_name: str
+    price: int
+    area_sqft: float
+    psf: float
+    sale_date: str  # "Jan-26", "Dec-25" format
+    street_name: str
+    sale_type: str  # "New Sale", "Resale", "Sub Sale"
+    tenure: str
+    district: int
+    market_segment: str  # "CCR", "RCR", "OCR"
+    floor_level: str
+
+    @property
+    def sale_year(self) -> int:
+        """Extract year from sale_date (e.g., 'Jan-26' -> 2026)."""
+        match = re.search(r'-(\d{2})$', self.sale_date)
+        if match:
+            year_short = int(match.group(1))
+            return 2000 + year_short if year_short < 50 else 1900 + year_short
+        return 0
+
+    @property
+    def sale_month(self) -> int:
+        """Extract month from sale_date."""
+        months = {
+            'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4,
+            'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8,
+            'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+        }
+        for name, num in months.items():
+            if name in self.sale_date:
+                return num
+        return 0
+
+
+@dataclass
+class URATransactionHistory:
+    """Transaction history for a project with calculated metrics."""
+    project_name: str
+    transactions: list[URATransaction]
+
+    # Calculated metrics (all transactions)
+    avg_psf_current_year: Optional[float] = None
+    avg_psf_1yr_ago: Optional[float] = None
+    avg_psf_3yr_ago: Optional[float] = None
+    avg_psf_5yr_ago: Optional[float] = None
+    appreciation_1yr: Optional[float] = None  # Percentage
+    appreciation_3yr: Optional[float] = None
+    appreciation_5yr: Optional[float] = None
+    annualized_appreciation: Optional[float] = None
+    transaction_count: int = 0
+
+    # NEW: Resale-only metrics (excludes "New Sale" transactions)
+    # These give a more accurate picture of genuine market appreciation
+    # by filtering out developer-to-market price transitions.
+    resale_annualized_appreciation: Optional[float] = None
+    resale_avg_psf_current: Optional[float] = None
+    resale_avg_psf_oldest: Optional[float] = None
+    resale_transaction_count: int = 0
+    new_sale_count: int = 0
+    new_sale_proportion: float = 0.0  # Fraction of all transactions that are "New Sale"
+    has_new_launch_bias: bool = False  # True if significant new sale proportion detected
+
+    # v2.2: Momentum and data quality fields
+    # Momentum: compares annualized rates across different time horizons.
+    # Accelerating appreciation (1yr > 3yr > 5yr) = positive momentum.
+    # Decelerating (1yr < 3yr < 5yr) = negative momentum.
+    appreciation_momentum: Optional[float] = None  # -1.0 (decelerating) to +1.0 (accelerating)
+    data_coverage: str = "none"  # "5yr", "3yr", "1yr", or "none" — longest reliable period
+
+    def calculate_metrics(self):
+        """Calculate appreciation metrics from transactions.
+
+        Computes both overall metrics and resale-only metrics.
+        The resale-only metrics filter out "New Sale" transactions to avoid
+        the new-launch appreciation bias where developer pricing artificially
+        inflates apparent CAGR.
+        """
+        if not self.transactions:
+            return
+
+        current_year = datetime.now().year
+        self.transaction_count = len(self.transactions)
+
+        # Separate transactions by sale type
+        resale_txns = [t for t in self.transactions if t.sale_type in ("Resale", "Sub Sale")]
+        new_sale_txns = [t for t in self.transactions if t.sale_type == "New Sale"]
+        self.new_sale_count = len(new_sale_txns)
+        self.resale_transaction_count = len(resale_txns)
+        self.new_sale_proportion = (
+            self.new_sale_count / self.transaction_count
+            if self.transaction_count > 0 else 0.0
+        )
+        try:
+            from config import NEW_SALE_PROPORTION_THRESHOLD
+        except ImportError:
+            NEW_SALE_PROPORTION_THRESHOLD = 0.20
+        self.has_new_launch_bias = self.new_sale_proportion >= NEW_SALE_PROPORTION_THRESHOLD
+
+        # --- Overall metrics (all transaction types) ---
+        self._calculate_yearly_metrics(self.transactions, current_year)
+
+        # --- Momentum and data coverage ---
+        self._calculate_momentum()
+
+        # --- Resale-only metrics ---
+        self._calculate_resale_metrics(resale_txns, current_year)
+
+    def _calculate_yearly_metrics(self, transactions: list, current_year: int):
+        """Calculate year-based appreciation metrics from a set of transactions."""
+        if not transactions:
+            return
+
+        # Group transactions by year
+        by_year: dict[int, list[float]] = {}
+        for txn in transactions:
+            year = txn.sale_year
+            if year not in by_year:
+                by_year[year] = []
+            by_year[year].append(txn.psf)
+
+        # Calculate average PSF by year
+        avg_by_year = {
+            year: mean(psfs) for year, psfs in by_year.items() if psfs
+        }
+
+        # Current year or most recent
+        # Track which year was actually selected to avoid overlap with "1yr ago"
+        selected_current_year = None
+        for year in range(current_year, current_year - 3, -1):
+            if year in avg_by_year:
+                self.avg_psf_current_year = avg_by_year[year]
+                selected_current_year = year
+                break
+
+        # 1 year ago — must be a DIFFERENT year than what was selected as "current"
+        for year in range(current_year - 1, current_year - 3, -1):
+            if year in avg_by_year and year != selected_current_year:
+                self.avg_psf_1yr_ago = avg_by_year[year]
+                break
+
+        # 3 years ago
+        for year in range(current_year - 3, current_year - 5, -1):
+            if year in avg_by_year:
+                self.avg_psf_3yr_ago = avg_by_year[year]
+                break
+
+        # 5 years ago
+        for year in range(current_year - 5, current_year - 7, -1):
+            if year in avg_by_year:
+                self.avg_psf_5yr_ago = avg_by_year[year]
+                break
+
+        # Calculate appreciation rates
+        if self.avg_psf_current_year and self.avg_psf_1yr_ago:
+            self.appreciation_1yr = (
+                (self.avg_psf_current_year / self.avg_psf_1yr_ago) - 1
+            ) * 100
+
+        if self.avg_psf_current_year and self.avg_psf_3yr_ago:
+            self.appreciation_3yr = (
+                (self.avg_psf_current_year / self.avg_psf_3yr_ago) - 1
+            ) * 100
+
+        if self.avg_psf_current_year and self.avg_psf_5yr_ago:
+            self.appreciation_5yr = (
+                (self.avg_psf_current_year / self.avg_psf_5yr_ago) - 1
+            ) * 100
+            # Annualized appreciation (CAGR)
+            self.annualized_appreciation = (
+                ((self.avg_psf_current_year / self.avg_psf_5yr_ago) ** (1/5)) - 1
+            ) * 100
+
+    def _calculate_momentum(self):
+        """Calculate appreciation momentum and data coverage.
+
+        Momentum compares short-term vs long-term appreciation rates:
+        - Positive momentum: recent appreciation > long-term average (accelerating)
+        - Negative momentum: recent appreciation < long-term average (decelerating)
+        - Range: -1.0 to +1.0
+
+        Data coverage tracks the longest reliable time period available.
+        """
+        # Determine data coverage
+        if self.annualized_appreciation is not None:
+            self.data_coverage = "5yr"
+        elif self.appreciation_3yr is not None:
+            self.data_coverage = "3yr"
+        elif self.appreciation_1yr is not None:
+            self.data_coverage = "1yr"
+        else:
+            self.data_coverage = "none"
+
+        # Calculate momentum by comparing annualized rates at different horizons
+        # Convert all to annualized rates for fair comparison
+        rates = {}
+        if self.appreciation_1yr is not None:
+            rates["1yr"] = self.appreciation_1yr  # Already annualized (1 year)
+        if self.appreciation_3yr is not None:
+            rates["3yr"] = self.appreciation_3yr / 3  # Rough annualization
+        if self.annualized_appreciation is not None:
+            rates["5yr"] = self.annualized_appreciation  # Already CAGR
+
+        if len(rates) < 2:
+            self.appreciation_momentum = None
+            return
+
+        # Compare short-term to long-term
+        # If we have 1yr and 5yr, momentum = (1yr_annual - 5yr_annual) normalized
+        if "1yr" in rates and "5yr" in rates:
+            diff = rates["1yr"] - rates["5yr"]
+        elif "1yr" in rates and "3yr" in rates:
+            diff = rates["1yr"] - rates["3yr"]
+        elif "3yr" in rates and "5yr" in rates:
+            diff = rates["3yr"] - rates["5yr"]
+        else:
+            self.appreciation_momentum = None
+            return
+
+        # Normalize to -1.0 to +1.0 range
+        # A 5% difference in annualized rates is extreme (maps to ±1.0)
+        self.appreciation_momentum = max(-1.0, min(1.0, diff / 5.0))
+
+    def _calculate_resale_metrics(self, resale_txns: list, current_year: int):
+        """Calculate appreciation from resale-only transactions.
+
+        By excluding "New Sale" (developer) transactions, this gives a more
+        accurate picture of genuine market-driven appreciation, free from
+        the artificial developer-to-market price transition effect.
+        """
+        if len(resale_txns) < 5:
+            # Need at least 5 resale transactions for statistically meaningful CAGR
+            return
+
+        # Group resale transactions by year
+        by_year: dict[int, list[float]] = {}
+        for txn in resale_txns:
+            year = txn.sale_year
+            if year not in by_year:
+                by_year[year] = []
+            by_year[year].append(txn.psf)
+
+        avg_by_year = {
+            year: mean(psfs) for year, psfs in by_year.items() if psfs
+        }
+
+        if len(avg_by_year) < 2:
+            return
+
+        # Get current and oldest resale PSF
+        sorted_years = sorted(avg_by_year.keys())
+        oldest_year = sorted_years[0]
+        newest_year = sorted_years[-1]
+
+        self.resale_avg_psf_current = avg_by_year[newest_year]
+        self.resale_avg_psf_oldest = avg_by_year[oldest_year]
+
+        year_span = newest_year - oldest_year
+        if year_span >= 1 and self.resale_avg_psf_oldest > 0:
+            # CAGR using resale-only data
+            self.resale_annualized_appreciation = (
+                ((self.resale_avg_psf_current / self.resale_avg_psf_oldest) ** (1 / year_span)) - 1
+            ) * 100
+
+
+def parse_ura_csv(csv_content: str) -> list[URATransaction]:
+    """Parse URA CSV content into transaction objects."""
+    transactions = []
+
+    reader = csv.DictReader(io.StringIO(csv_content))
+    for row in reader:
+        try:
+            # Parse price (remove commas)
+            price_str = row.get('Transacted Price ($)', '0').replace(',', '')
+            price = int(float(price_str)) if price_str else 0
+
+            # Parse area
+            area_str = row.get('Area (SQFT)', '0').replace(',', '')
+            area = float(area_str) if area_str else 0
+
+            # Parse PSF
+            psf_str = row.get('Unit Price ($ PSF)', '0').replace(',', '')
+            psf = float(psf_str) if psf_str else 0
+
+            # Parse district
+            district_str = row.get('Postal District', '0')
+            district = int(district_str) if district_str.isdigit() else 0
+
+            txn = URATransaction(
+                project_name=row.get('Project Name', ''),
+                price=price,
+                area_sqft=area,
+                psf=psf,
+                sale_date=row.get('Sale Date', ''),
+                street_name=row.get('Street Name', ''),
+                sale_type=row.get('Type of Sale', ''),
+                tenure=row.get('Tenure', ''),
+                district=district,
+                market_segment=row.get('Market Segment', ''),
+                floor_level=row.get('Floor Level', ''),
+            )
+
+            if txn.price > 0 and txn.psf > 0:
+                transactions.append(txn)
+
+        except (ValueError, KeyError) as e:
+            continue
+
+    return transactions
+
+
+class URAScraper:
+    """
+    Scraper for URA Property Market Information.
+
+    Uses Playwright to automate the web interface and download CSV data.
+    """
+
+    URA_URL = "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+
+    def __init__(self, headless: bool = True):
+        self.headless = headless
+        self._browser = None
+        self._page = None
+        self._cache: dict[str, URATransactionHistory] = {}
+
+    def _get_browser(self):
+        """Get or create Playwright browser."""
+        if self._browser is None:
+            try:
+                from playwright.sync_api import sync_playwright
+            except ImportError:
+                print("Installing playwright...", file=sys.stderr)
+                import subprocess
+                subprocess.check_call(
+                    [sys.executable, "-m", "pip", "install", "playwright"],
+                    stdout=subprocess.DEVNULL,
+                )
+                subprocess.check_call(
+                    [sys.executable, "-m", "playwright", "install", "chromium"],
+                    stdout=subprocess.DEVNULL,
+                )
+                from playwright.sync_api import sync_playwright
+
+            self._playwright = sync_playwright().start()
+            self._browser = self._playwright.chromium.launch(headless=self.headless)
+            self._page = self._browser.new_page()
+
+        return self._page
+
+    def close(self):
+        """Close browser."""
+        if self._browser:
+            self._browser.close()
+            self._playwright.stop()
+            self._browser = None
+            self._page = None
+
+    def search_project(
+        self,
+        project_name: str,
+        year_from: int = 2021,
+        year_to: int = 2026,
+        month_from: int = 1,
+        month_to: int = 12,
+    ) -> Optional[str]:
+        """
+        Search for transactions and download CSV.
+
+        Returns CSV content as string, or None if failed.
+        """
+        page = self._get_browser()
+
+        try:
+            # Navigate to search page
+            page.goto(self.URA_URL, wait_until="networkidle")
+            time.sleep(1)
+
+            # Click project selector
+            page.click('button:has-text("Project or Location")')
+            time.sleep(0.5)
+
+            # Type project name
+            page.fill('input[aria-label="Project name"]', project_name)
+            time.sleep(1)
+
+            # Wait for and click the checkbox for the project
+            project_upper = project_name.upper()
+            checkbox = page.locator(f'input[type="checkbox"][value="{project_upper}"]')
+
+            if checkbox.count() == 0:
+                # Try partial match
+                checkbox = page.locator(f'text="{project_upper}"').first
+
+            if checkbox.count() > 0:
+                checkbox.click()
+                time.sleep(0.3)
+            else:
+                print(f"Project '{project_name}' not found", file=sys.stderr)
+                return None
+
+            # Click Apply
+            page.click('button:has-text("Apply")')
+            time.sleep(0.5)
+
+            # Set date range
+            page.select_option('select[aria-label="Sale Year From"]', str(year_from))
+            page.select_option('select[aria-label="Sale Month From"]', self._month_name(month_from))
+            page.select_option('select[aria-label="Sale Year To"]', str(year_to))
+            page.select_option('select[aria-label="Sale Month To"]', self._month_name(month_to))
+
+            # Click Search
+            page.click('button:has-text("Search")')
+            time.sleep(2)
+
+            # Wait for results
+            page.wait_for_selector('text="Showing"', timeout=10000)
+
+            # Click Download, then CSV
+            page.click('button:has-text("Download")')
+            time.sleep(0.5)
+
+            # Set up download handler
+            with page.expect_download() as download_info:
+                page.click('text="CSV"')
+
+            download = download_info.value
+
+            # Read CSV content
+            csv_path = download.path()
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                csv_content = f.read()
+
+            return csv_content
+
+        except Exception as e:
+            print(f"Error searching URA: {e}", file=sys.stderr)
+            return None
+
+    def _month_name(self, month: int) -> str:
+        """Convert month number to name."""
+        names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        return names[month - 1] if 1 <= month <= 12 else 'Jan'
+
+    def get_transaction_history(
+        self,
+        project_name: str,
+        use_cache: bool = True,
+    ) -> URATransactionHistory:
+        """
+        Get transaction history for a project.
+
+        Args:
+            project_name: Name of the condo/project
+            use_cache: Whether to use cached results
+
+        Returns:
+            URATransactionHistory with transactions and metrics
+        """
+        cache_key = project_name.lower()
+
+        if use_cache and cache_key in self._cache:
+            return self._cache[cache_key]
+
+        history = URATransactionHistory(
+            project_name=project_name,
+            transactions=[],
+        )
+
+        csv_content = self.search_project(project_name)
+
+        if csv_content:
+            transactions = parse_ura_csv(csv_content)
+            history.transactions = transactions
+            history.calculate_metrics()
+
+        self._cache[cache_key] = history
+        return history
+
+    def get_appreciation_rate(
+        self,
+        project_name: str,
+        default_rate: float = 2.0,
+    ) -> tuple[float, str]:
+        """
+        Get appreciation rate for a project.
+
+        Args:
+            project_name: Name of the condo/project
+            default_rate: Default rate if no data
+
+        Returns:
+            Tuple of (annual_rate_percent, source)
+        """
+        history = self.get_transaction_history(project_name)
+
+        if history.annualized_appreciation is not None:
+            # Cap between -5% and 15%
+            rate = max(-5.0, min(15.0, history.annualized_appreciation))
+            return (rate, "ura_5yr_cagr")
+
+        if history.appreciation_3yr is not None:
+            annual_rate = history.appreciation_3yr / 3
+            rate = max(-5.0, min(15.0, annual_rate))
+            return (rate, "ura_3yr_avg")
+
+        if history.appreciation_1yr is not None:
+            rate = max(-5.0, min(15.0, history.appreciation_1yr))
+            return (rate, "ura_1yr")
+
+        return (default_rate, "default")
+
+
+def load_ura_csv(csv_path: str) -> URATransactionHistory:
+    """
+    Load and parse a pre-downloaded URA CSV file.
+
+    Args:
+        csv_path: Path to CSV file
+
+    Returns:
+        URATransactionHistory with transactions and metrics
+    """
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        csv_content = f.read()
+
+    transactions = parse_ura_csv(csv_content)
+
+    if not transactions:
+        return URATransactionHistory(project_name="Unknown", transactions=[])
+
+    # Get project name from first transaction
+    project_name = transactions[0].project_name
+
+    history = URATransactionHistory(
+        project_name=project_name,
+        transactions=transactions,
+    )
+    history.calculate_metrics()
+
+    return history
+
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="URA Transaction Scraper")
+    parser.add_argument("--project", type=str, help="Project name to search")
+    parser.add_argument("--csv", type=str, help="Path to pre-downloaded CSV file")
+    parser.add_argument("--headless", action="store_true", default=True)
+    args = parser.parse_args()
+
+    if args.csv:
+        # Load from existing CSV
+        history = load_ura_csv(args.csv)
+        print(f"\nProject: {history.project_name}")
+        print(f"Transactions: {history.transaction_count}")
+        print(f"Current PSF: ${history.avg_psf_current_year:,.0f}" if history.avg_psf_current_year else "")
+        print(f"1yr ago PSF: ${history.avg_psf_1yr_ago:,.0f}" if history.avg_psf_1yr_ago else "")
+        print(f"3yr ago PSF: ${history.avg_psf_3yr_ago:,.0f}" if history.avg_psf_3yr_ago else "")
+        print(f"5yr ago PSF: ${history.avg_psf_5yr_ago:,.0f}" if history.avg_psf_5yr_ago else "")
+        print()
+        if history.appreciation_1yr:
+            print(f"1yr appreciation: {history.appreciation_1yr:+.1f}%")
+        if history.appreciation_3yr:
+            print(f"3yr appreciation: {history.appreciation_3yr:+.1f}%")
+        if history.appreciation_5yr:
+            print(f"5yr appreciation: {history.appreciation_5yr:+.1f}%")
+        if history.annualized_appreciation:
+            print(f"Annualized (CAGR): {history.annualized_appreciation:+.1f}%/yr")
+
+    elif args.project:
+        # Live scrape
+        scraper = URAScraper(headless=args.headless)
+        try:
+            rate, source = scraper.get_appreciation_rate(args.project)
+            print(f"\n{args.project}: {rate:+.1f}%/yr ({source})")
+        finally:
+            scraper.close()
+    else:
+        parser.print_help()

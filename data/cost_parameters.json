@@ -1,0 +1,11 @@
+{
+  "mcst_rate_per_sqft": 0.35,
+  "agent_rental_months_per_year": 0.5,
+  "agent_sale_commission": 0.02,
+  "vacancy_months_per_year": 1.5,
+  "legal_fee_buy": 3500,
+  "legal_fee_sell": 3000,
+  "repairs_per_year": 1500,
+  "insurance_per_year": 300,
+  "annual_appreciation_estimate": 0.02
+}

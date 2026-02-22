@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Browser data (generated at runtime)
+chrome-profile/
+
+# Output files (generated per analysis run)
+output/*.json
+output/*.md
+output/*.csv
+
+# Playwright MCP cache
+.playwright-mcp/
+
+# URA CSV downloads (raw data, not committed)
+data/ura_*.csv
+
+# Runtime credential files (auto-generated)
+cookies.json
+user_agent.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Claude Code local config
+.claude/
