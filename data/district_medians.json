@@ -1,0 +1,15 @@
+{
+  "last_updated": "2026-02-01",
+  "medians": {
+    "D03": {"psf": 2100, "rental_psf": 3.80, "avg_yield": 3.35},
+    "D05": {"psf": 2000, "rental_psf": 3.60, "avg_yield": 3.35},
+    "D14": {"psf": 2200, "rental_psf": 3.70, "avg_yield": 3.30},
+    "D15": {"psf": 1900, "rental_psf": 3.50, "avg_yield": 3.40}
+  },
+  "district_info": {
+    "D03": {"name": "Queenstown", "region": "RCR", "is_prime": true},
+    "D05": {"name": "Clementi", "region": "RCR", "is_prime": true},
+    "D14": {"name": "Eunos/Geylang", "region": "RCR", "is_prime": true},
+    "D15": {"name": "East Coast", "region": "RCR", "is_prime": true}
+  }
+}

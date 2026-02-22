@@ -1,0 +1,182 @@
+{
+  "description": "Singapore government priority development zones for property investment scoring",
+  "last_updated": "2026-02-06",
+  "development_zones": {
+    "jurong_lake_district": {
+      "name": "Jurong Lake District",
+      "short_name": "JLD",
+      "districts": [22],
+      "priority": "high",
+      "description": "Singapore's 2nd CBD, largest business district outside city center",
+      "completion": "2035",
+      "growth_factor": 0.05,
+      "key_developments": [
+        "Jurong Lake District masterplan",
+        "High-Speed Rail terminus (future)",
+        "Jurong Innovation District",
+        "New Jurong Lake Gardens"
+      ],
+      "score_points": 6
+    },
+    "greater_southern_waterfront": {
+      "name": "Greater Southern Waterfront",
+      "short_name": "GSW",
+      "districts": [4, 5],
+      "priority": "high",
+      "description": "30km waterfront transformation from Pasir Panjang to Marina East",
+      "completion": "2040",
+      "growth_factor": 0.04,
+      "key_developments": [
+        "Keppel Club site redevelopment",
+        "PSA port relocation (Tuas)",
+        "Pasir Panjang Power District",
+        "New waterfront residential & commercial"
+      ],
+      "score_points": 6
+    },
+    "paya_lebar_central": {
+      "name": "Paya Lebar Central",
+      "short_name": "PLC",
+      "districts": [14],
+      "priority": "medium",
+      "description": "Commercial hub with excellent connectivity",
+      "completion": "2030",
+      "growth_factor": 0.03,
+      "key_developments": [
+        "Paya Lebar Quarter",
+        "SingPost Centre redevelopment",
+        "PLQ integration projects"
+      ],
+      "score_points": 5
+    },
+    "woodlands_regional_centre": {
+      "name": "Woodlands Regional Centre",
+      "short_name": "WRC",
+      "districts": [25],
+      "priority": "medium",
+      "description": "Northern gateway and regional hub",
+      "completion": "2030",
+      "growth_factor": 0.03,
+      "key_developments": [
+        "Woodlands North Coast",
+        "RTS Link to JB",
+        "Woodlands Central",
+        "Healthcare hub"
+      ],
+      "score_points": 5
+    },
+    "punggol_digital_district": {
+      "name": "Punggol Digital District",
+      "short_name": "PDD",
+      "districts": [19],
+      "priority": "medium",
+      "description": "Singapore's tech and innovation hub",
+      "completion": "2028",
+      "growth_factor": 0.035,
+      "key_developments": [
+        "JTC business park",
+        "SIT campus",
+        "Digital economy cluster",
+        "Smart district infrastructure"
+      ],
+      "score_points": 5
+    },
+    "tampines_regional_centre": {
+      "name": "Tampines Regional Centre",
+      "short_name": "TRC",
+      "districts": [18],
+      "priority": "medium",
+      "description": "Eastern regional centre with mature amenities",
+      "completion": "established",
+      "growth_factor": 0.025,
+      "key_developments": [
+        "Our Tampines Hub",
+        "Tampines North extension",
+        "Cross Island Line"
+      ],
+      "score_points": 4
+    },
+    "kallang_riverside": {
+      "name": "Kallang Riverside",
+      "short_name": "KR",
+      "districts": [12, 13, 14],
+      "priority": "medium",
+      "description": "Urban waterfront rejuvenation",
+      "completion": "2030",
+      "growth_factor": 0.03,
+      "key_developments": [
+        "Kallang River linear park",
+        "Kolam Ayer cluster",
+        "Sports hub connectivity"
+      ],
+      "score_points": 4
+    },
+    "one_north": {
+      "name": "one-north",
+      "short_name": "ON",
+      "districts": [5],
+      "priority": "medium",
+      "description": "Research and innovation cluster",
+      "completion": "established",
+      "growth_factor": 0.025,
+      "key_developments": [
+        "Biopolis",
+        "Fusionopolis",
+        "Mediapolis",
+        "Vista expansion"
+      ],
+      "score_points": 4
+    },
+    "marina_south": {
+      "name": "Marina South",
+      "short_name": "MS",
+      "districts": [1],
+      "priority": "medium",
+      "description": "CBD extension with mixed-use development",
+      "completion": "2030",
+      "growth_factor": 0.025,
+      "key_developments": [
+        "Marina South residential",
+        "NS Square",
+        "CBD extension"
+      ],
+      "score_points": 4
+    },
+    "tengah": {
+      "name": "Tengah",
+      "short_name": "TG",
+      "districts": [22, 23],
+      "priority": "low",
+      "description": "Singapore's first car-lite HDB town (mainly HDB)",
+      "completion": "2030",
+      "growth_factor": 0.02,
+      "key_developments": [
+        "Forest town concept",
+        "Car-lite infrastructure",
+        "Jurong Region Line"
+      ],
+      "score_points": 2
+    },
+    "bidadari": {
+      "name": "Bidadari",
+      "short_name": "BD",
+      "districts": [13],
+      "priority": "low",
+      "description": "New mature estate with heritage elements",
+      "completion": "established",
+      "growth_factor": 0.02,
+      "key_developments": [
+        "Bidadari Park",
+        "The Woodleigh Residences area",
+        "Alkaff Lake"
+      ],
+      "score_points": 3
+    }
+  },
+  "priority_scoring": {
+    "description": "Score points based on zone priority",
+    "high": 6,
+    "medium": 4,
+    "low": 2
+  }
+}
