@@ -12,6 +12,7 @@ Total: 20 points max
 import json
 import math
 import os
+from datetime import datetime
 from typing import Optional
 
 from scoring.models import FutureScore
@@ -116,16 +117,22 @@ class FutureScorer:
         Called once at init so we don't re-filter per listing.
         """
         stations = []
+        current_year = datetime.now().year
         mrt_lines = self.infra_data.get("mrt_lines", {})
 
         for line_code, line_data in mrt_lines.items():
             completion = line_data.get("completion", "2099")
+            status = (line_data.get("status") or "").lower()
             try:
                 completion_year = int(completion[:4])
             except (ValueError, TypeError):
                 completion_year = 2099
 
             if completion_year > 2030:
+                continue
+            if completion_year < current_year:
+                continue
+            if status == "operational":
                 continue
 
             line_name = line_data.get("name", line_code)
@@ -239,8 +246,8 @@ class FutureScorer:
 
         score = 0
 
-        # Count future MRT lines
-        future_mrt = profile.get("future_mrt", [])
+        # Count future MRT lines (exclude operational/expired)
+        future_mrt = self._filter_future_mrt_lines(profile.get("future_mrt", []))
         if len(future_mrt) >= 2:
             score += 2  # Multiple new lines
         elif len(future_mrt) == 1:
@@ -254,6 +261,26 @@ class FutureScorer:
             score += 1
 
         return min(score, 4)
+
+    def _filter_future_mrt_lines(self, lines: list[str]) -> list[str]:
+        """Filter MRT lines to only those not yet operational and not past completion."""
+        current_year = datetime.now().year
+        filtered = []
+        for code in lines:
+            line_info = self.infra_data.get("mrt_lines", {}).get(code, {})
+            status = (line_info.get("status") or "").lower()
+            completion = line_info.get("completion", "")
+            try:
+                completion_year = int(str(completion)[:4])
+            except (ValueError, TypeError):
+                completion_year = None
+
+            if status == "operational":
+                continue
+            if completion_year is not None and completion_year < current_year:
+                continue
+            filtered.append(code)
+        return filtered
 
     def _score_supply_constraint(self, listing: dict) -> float:
         """Score supply constraint (0-4 pts).

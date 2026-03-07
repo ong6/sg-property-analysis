@@ -32,8 +32,8 @@ scores + empty fields       does web research,               applies adjustments
 ## Installation
 
 ```bash
-git clone https://github.com/ong6/sg-property-analysis.git
-cd sg-property-analysis
+git clone https://github.com/ong6/property-finder.git
+cd property-finder
 
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -106,6 +106,7 @@ python invest.py [options]
 | `--build-ura-cache` | files | — | Build URA cache from downloaded CSVs |
 | `--fetch-ura-districts` | str | — | Fetch URA data by postal district |
 | `--list-districts` | flag | off | Show all Singapore district numbers |
+| `--no-headless` | flag | off | Show browser window (runs headless by default) |
 
 ## Configuration
 
@@ -130,7 +131,7 @@ All scoring weights, tier thresholds, and bias correction parameters are also in
 |----------|--------|------------------|
 | **Rental Yield** | 15 pts | Gross yield, MRT proximity, unit config, tenant pool |
 | **Capital Appreciation** | 30 pts | URA historical growth, momentum, PSF vs median, tenure, age |
-| **Future Potential** | 20 pts | Future MRT lines (TEL/CRL/JRL), government development zones |
+| **Future Potential** | 20 pts | Upcoming MRT lines (not yet operational), government development zones |
 | **Liquidity & Exit Risk** | 25 pts | Transaction volume, buyer pool depth, development size |
 | **Cost Efficiency** | 10 pts | MCST, property tax, space efficiency |
 | **Red Flags** | -10 pts | West-facing, small dev, low lease, very old |
@@ -170,6 +171,8 @@ When using the AI agent pipeline (`--raw` → review → `--from-review`), the r
 | `agent_adjustment_reason` | string | Why the adjustment was made |
 | `agent_rental_assessment` | string | Qualitative view on rental demand |
 | `agent_appreciation_assessment` | string | Qualitative view on price trajectory |
+| `agent_appreciation_rate_pct` | float | AI-researched appreciation rate (percent) when algo used fallback |
+| `agent_appreciation_source` | string | Source for the AI-provided appreciation rate |
 | `agent_stack_notes` | string | Best/worst stacks, floors to avoid, facing analysis |
 | `agent_confidence` | string | `"high"`, `"medium"`, or `"low"` |
 
@@ -189,6 +192,7 @@ property-finder/
 ├── config.py                # Scoring weights, thresholds, investment params
 ├── models.py                # Data models (SearchParams, Listing, etc.)
 ├── fetch_ura_districts.py   # URA district-level data fetcher
+├── warmup.py                # Browser warm-up for Cloudflare cookies
 │
 ├── scrapers/
 │   ├── propertyguru.py      # PropertyGuru listing scraper

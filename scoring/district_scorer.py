@@ -12,58 +12,13 @@ This enables automatic district selection instead of hardcoded D03/05/14/15.
 
 import json
 import os
-from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Optional
+
+from scoring.models import DistrictScore
 
 # Data directory path
 _DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-
-
-@dataclass
-class DistrictScore:
-    """Score result for a single district."""
-    district: int
-    name: str
-    region: str  # CCR, RCR, OCR
-    total_score: float
-
-    # Component scores (0-100 scale each, then weighted)
-    historical_score: float = 0  # 30% weight
-    liquidity_score: float = 0  # 20% weight
-    future_infra_score: float = 0  # 25% weight
-    govt_priority_score: float = 0  # 20% weight
-    supply_score: float = 0  # 5% weight
-
-    # Catalysts for display
-    key_catalysts: list[str] = field(default_factory=list)
-
-    # Raw data for reference
-    historical_appreciation: float = 0
-    median_psf: int = 0
-    future_mrt_lines: list[str] = field(default_factory=list)
-    govt_zones: list[str] = field(default_factory=list)
-
-    def to_dict(self) -> dict:
-        return {
-            "district": self.district,
-            "name": self.name,
-            "region": self.region,
-            "total_score": round(self.total_score, 1),
-            "scores": {
-                "historical": round(self.historical_score, 1),
-                "liquidity": round(self.liquidity_score, 1),
-                "future_infra": round(self.future_infra_score, 1),
-                "govt_priority": round(self.govt_priority_score, 1),
-                "supply": round(self.supply_score, 1),
-            },
-            "key_catalysts": self.key_catalysts,
-            "data": {
-                "historical_appreciation_pct": round(self.historical_appreciation * 100, 2),
-                "median_psf": self.median_psf,
-                "future_mrt": self.future_mrt_lines,
-                "govt_zones": self.govt_zones,
-            },
-        }
 
 
 class DistrictScorer:
@@ -91,19 +46,21 @@ class DistrictScorer:
 
     def _load_district_profiles(self) -> dict:
         """Load district profiles data (reuses FutureScorer's module cache)."""
-        # Reuse FutureScorer's cached loader to avoid duplicate file reads
         from scoring.future_scorer import FutureScorer
-        return FutureScorer._load_district_profiles(self)
+        fs = FutureScorer.__new__(FutureScorer)
+        return FutureScorer._load_district_profiles(fs)
 
     def _load_infrastructure_data(self) -> dict:
         """Load future MRT infrastructure data (reuses FutureScorer's module cache)."""
         from scoring.future_scorer import FutureScorer
-        return FutureScorer._load_infrastructure_data(self)
+        fs = FutureScorer.__new__(FutureScorer)
+        return FutureScorer._load_infrastructure_data(fs)
 
     def _load_government_zones(self) -> dict:
         """Load government development zones data (reuses FutureScorer's module cache)."""
         from scoring.future_scorer import FutureScorer
-        return FutureScorer._load_government_zones(self)
+        fs = FutureScorer.__new__(FutureScorer)
+        return FutureScorer._load_government_zones(fs)
 
     def score_all_districts(self, region_filter: Optional[str] = None) -> list[DistrictScore]:
         """Score all districts and return ranked list.
@@ -131,6 +88,7 @@ class DistrictScorer:
 
     def _score_district(self, district_num: int, profile: dict) -> DistrictScore:
         """Score a single district."""
+        future_mrt = self._filter_future_mrt_lines(profile.get("future_mrt", []))
         result = DistrictScore(
             district=district_num,
             name=profile.get("name", f"District {district_num}"),
@@ -141,7 +99,7 @@ class DistrictScorer:
         # Store raw data
         result.historical_appreciation = profile.get("historical_appreciation", 0.02)
         result.median_psf = profile.get("median_psf", 1500)
-        result.future_mrt_lines = profile.get("future_mrt", [])
+        result.future_mrt_lines = future_mrt
         result.govt_zones = profile.get("govt_zones", [])
 
         # A. Historical Appreciation Score (0-100)
@@ -151,7 +109,7 @@ class DistrictScorer:
         result.liquidity_score = self._score_liquidity(profile)
 
         # C. Future Infrastructure Score (0-100)
-        result.future_infra_score = self._score_future_infra(profile)
+        result.future_infra_score = self._score_future_infra(profile, future_mrt)
 
         # D. Government Priority Score (0-100)
         result.govt_priority_score = self._score_govt_priority(profile)
@@ -169,7 +127,7 @@ class DistrictScorer:
         )
 
         # Build key catalysts list
-        result.key_catalysts = self._build_catalysts(profile, result)
+        result.key_catalysts = self._build_catalysts(profile, result, future_mrt)
 
         return result
 
@@ -212,13 +170,11 @@ class DistrictScorer:
 
         return scores.get(volume, 50)
 
-    def _score_future_infra(self, profile: dict) -> float:
+    def _score_future_infra(self, profile: dict, future_mrt: list[str]) -> float:
         """Score future infrastructure (0-100).
 
         Based on number of upcoming MRT lines.
         """
-        future_mrt = profile.get("future_mrt", [])
-
         if len(future_mrt) >= 2:
             return 100  # Multiple new MRT lines
         elif len(future_mrt) == 1:
@@ -276,12 +232,17 @@ class DistrictScorer:
 
         return scores.get(supply, 50)
 
-    def _build_catalysts(self, profile: dict, score: DistrictScore) -> list[str]:
+    def _build_catalysts(
+        self,
+        profile: dict,
+        score: DistrictScore,
+        future_mrt: list[str],
+    ) -> list[str]:
         """Build list of key investment catalysts."""
         catalysts = []
 
         # Add MRT lines
-        for mrt in profile.get("future_mrt", []):
+        for mrt in future_mrt:
             mrt_name = self._get_mrt_line_name(mrt)
             catalysts.append(mrt_name)
 
@@ -308,6 +269,27 @@ class DistrictScorer:
         mrt_lines = self.infra_data.get("mrt_lines", {})
         line_info = mrt_lines.get(code, {})
         return line_info.get("name", code)
+
+    def _filter_future_mrt_lines(self, lines: list[str]) -> list[str]:
+        """Filter MRT lines to only those not yet operational and not past completion."""
+        current_year = datetime.now().year
+        filtered = []
+        for code in lines:
+            line_info = self.infra_data.get("mrt_lines", {}).get(code, {})
+            status = (line_info.get("status") or "").lower()
+            completion = line_info.get("completion", "")
+            completion_year = None
+            try:
+                completion_year = int(str(completion)[:4])
+            except (ValueError, TypeError):
+                completion_year = None
+
+            if status == "operational":
+                continue
+            if completion_year is not None and completion_year < current_year:
+                continue
+            filtered.append(code)
+        return filtered
 
     def get_top_districts(
         self,

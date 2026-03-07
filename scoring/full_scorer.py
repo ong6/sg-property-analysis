@@ -28,6 +28,8 @@ import json
 import os
 import re
 import sys
+import math
+from bisect import bisect_left
 from datetime import datetime
 from typing import Any, Optional
 
@@ -51,6 +53,10 @@ try:
         SCORE_WEIGHT_FUTURE_POTENTIAL,
         SCORE_WEIGHT_LIQUIDITY,
         SCORE_WEIGHT_COST_EFFICIENCY,
+        SCORE_TIER1_MIN,
+        SCORE_TIER2_MIN,
+        ROI_SENSITIVITY_RENT_DELTA_PCT,
+        ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
     )
 except ImportError:
     REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.045, "RCR": 0.058, "OCR": 0.037}
@@ -62,6 +68,10 @@ except ImportError:
     SCORE_WEIGHT_FUTURE_POTENTIAL = 20
     SCORE_WEIGHT_LIQUIDITY = 25
     SCORE_WEIGHT_COST_EFFICIENCY = 10
+    SCORE_TIER1_MIN = 60
+    SCORE_TIER2_MIN = 45
+    ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
+    ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
 
 # Optional transaction scrapers for real appreciation data
 try:
@@ -96,6 +106,52 @@ def _load_district_data() -> dict:
         else:
             _district_data_cache = {"medians": {}, "district_info": {}}
     return _district_data_cache
+
+
+def build_cohort_stats(listings: list[dict]) -> dict:
+    """
+    Build cohort-level distributions for percentile-based scoring.
+
+    Uses the current batch of listings to compute:
+    - PSF distributions per district
+    - MRT distance distribution (overall)
+    - Age distributions per district
+    """
+    psf_by_district: dict[str, list[float]] = {}
+    age_by_district: dict[str, list[int]] = {}
+    mrt_distances: list[int] = []
+    current_year = datetime.now().year
+
+    for listing in listings:
+        district = normalize_district(listing.get("district", ""))
+        if district:
+            psf = listing.get("psf")
+            if psf:
+                psf_by_district.setdefault(district, []).append(float(psf))
+
+            built_year = listing.get("built_year")
+            if built_year:
+                age = current_year - built_year
+                if age < 0:
+                    age = 0
+                age_by_district.setdefault(district, []).append(int(age))
+
+        mrt_result = get_mrt_distance(listing)
+        if mrt_result:
+            _, distance = mrt_result
+            mrt_distances.append(distance)
+
+    for d in psf_by_district:
+        psf_by_district[d].sort()
+    for d in age_by_district:
+        age_by_district[d].sort()
+    mrt_distances.sort()
+
+    return {
+        "psf_by_district": psf_by_district,
+        "age_by_district": age_by_district,
+        "mrt_distances": mrt_distances,
+    }
 
 
 class FullScorer:
@@ -133,9 +189,9 @@ class FullScorer:
     # Price sweet spot for liquidity
     LIQUIDITY_SWEET_SPOT = (1_800_000, 2_500_000)
 
-    # Tier thresholds (v2.0 - adjusted for better distribution)
-    TIER1_MIN_SCORE = 60  # Was 65 - now with broader range
-    TIER2_MIN_SCORE = 45  # Was 45 - unchanged
+    # Tier thresholds (from config.py)
+    TIER1_MIN_SCORE = SCORE_TIER1_MIN
+    TIER2_MIN_SCORE = SCORE_TIER2_MIN
 
     def __init__(
         self,
@@ -143,6 +199,7 @@ class FullScorer:
         transaction_data: Optional[dict] = None,
         fetch_appreciation: bool = False,
         ura_data: Optional[dict] = None,
+        cohort_stats: Optional[dict] = None,
     ):
         """
         Initialize full scorer.
@@ -166,6 +223,7 @@ class FullScorer:
         self.fetch_appreciation = fetch_appreciation and _HAS_TRANSACTION_SCRAPER
         self._transaction_scraper = None
         self._appreciation_cache: dict[str, tuple[float, str]] = {}
+        self.cohort_stats = cohort_stats or {}
 
     def _get_transaction_scraper(self):
         """Lazy-load transaction scraper."""
@@ -182,12 +240,76 @@ class FullScorer:
                 return json.load(f).get("districts", {})
         return {}
 
+    @staticmethod
+    def _percentile_rank(sorted_values: list[float], value: float) -> Optional[float]:
+        """Return percentile rank (0-1) of value within sorted_values."""
+        if not sorted_values or value is None:
+            return None
+        n = len(sorted_values)
+        if n == 1:
+            return 0.5
+        idx = bisect_left(sorted_values, value)
+        return max(0.0, min(1.0, idx / (n - 1)))
+
+    @staticmethod
+    def _percentile_to_points(quality_pct: float, max_points: int) -> int:
+        """Bucket percentile quality into points (higher quality_pct is better)."""
+        if quality_pct is None:
+            return 0
+        if max_points == 5:
+            if quality_pct >= 0.80:
+                return 5
+            if quality_pct >= 0.60:
+                return 4
+            if quality_pct >= 0.40:
+                return 3
+            if quality_pct >= 0.20:
+                return 1
+            return 0
+        if max_points == 4:
+            if quality_pct >= 0.80:
+                return 4
+            if quality_pct >= 0.60:
+                return 3
+            if quality_pct >= 0.40:
+                return 2
+            if quality_pct >= 0.20:
+                return 1
+            return 0
+        # Fallback: scale linearly
+        return int(round(quality_pct * max_points))
+
+    @staticmethod
+    def score_appreciation_rate_points(apr_pct: float, appreciation_source: str) -> int:
+        """Score appreciation rate (0-14) based on annual % rate."""
+        apr_score = 0
+        if apr_pct >= 6.0:
+            apr_score = 14
+        elif apr_pct >= 5.0:
+            apr_score = 12
+        elif apr_pct >= 4.0:
+            apr_score = 10
+        elif apr_pct >= 3.0:
+            apr_score = 7
+        elif apr_pct >= 2.0:
+            apr_score = 5
+        elif apr_pct >= 1.0:
+            apr_score = 2
+        elif apr_pct >= 0:
+            apr_score = 0
+        else:
+            apr_score = -3
+
+        if appreciation_source in {"default", "regional_baseline"}:
+            apr_score = min(apr_score, 4)
+
+        return apr_score
+
     def _fuzzy_ura_lookup(self, project_key: str) -> Optional[dict]:
         """Look up URA data with fuzzy matching.
 
-        Tries exact match first, then falls back to substring matching
-        (stripping parentheticals and normalizing whitespace) to handle
-        title variants like "PARC ESTA (Eunos)" vs cache key "parc esta".
+        Tries exact match first, then normalized token overlap matching
+        to reduce false positives from naive substring checks.
         """
         # Exact match
         if project_key in self.ura_data:
@@ -196,18 +318,64 @@ class FullScorer:
         if not project_key:
             return None
 
-        # Normalize: strip parentheticals, extra spaces, special chars
-        normalized = re.sub(r'\s*\(.*?\)', '', project_key).strip()
-        normalized = re.sub(r'\s+', ' ', normalized)
+        def normalize(text: str) -> str:
+            text = re.sub(r"\s*\(.*?\)", "", text).lower()
+            text = re.sub(r"[^a-z0-9]+", " ", text)
+            return re.sub(r"\s+", " ", text).strip()
 
-        # Try normalized exact match
-        if normalized != project_key and normalized in self.ura_data:
-            return self.ura_data[normalized]
+        stopwords = {
+            "the", "at", "by", "of", "and",
+            "residence", "residences", "residential",
+            "condominium", "condo", "apartments", "apartment",
+            "home", "homes",
+        }
 
-        # Substring match (same pattern as RentalEstimator)
+        def tokenize(text: str) -> set[str]:
+            return {t for t in normalize(text).split() if t and t not in stopwords}
+
+        normalized = normalize(project_key)
+        if not normalized:
+            return None
+
+        # Try normalized exact match against normalized cache keys
         for cache_key in self.ura_data:
-            if cache_key in normalized or normalized in cache_key:
+            if normalize(cache_key) == normalized:
                 return self.ura_data[cache_key]
+
+        # Token overlap match (prefer strongest overlap, avoid loose substring)
+        target_tokens = tokenize(project_key)
+        if len(target_tokens) < 2:
+            return None
+
+        best_key = None
+        best_score = 0.0
+
+        for cache_key in self.ura_data:
+            if cache_key == project_key:
+                return self.ura_data[cache_key]
+
+            cache_norm = normalize(cache_key)
+            if cache_norm == normalized:
+                return self.ura_data[cache_key]
+
+            cache_tokens = tokenize(cache_key)
+            if len(cache_tokens) < 2:
+                continue
+
+            overlap_count = len(target_tokens & cache_tokens)
+            if overlap_count < 2:
+                continue
+
+            coverage = overlap_count / max(len(target_tokens), 1)
+            cand_coverage = overlap_count / max(len(cache_tokens), 1)
+            score = (coverage + cand_coverage) / 2
+
+            if coverage >= 0.6 and cand_coverage >= 0.5 and score > best_score:
+                best_score = score
+                best_key = cache_key
+
+        if best_key:
+            return self.ura_data[best_key]
 
         return None
 
@@ -223,13 +391,13 @@ class FullScorer:
         2. URA official data (5 years history, most reliable)
         3. Pre-fetched transaction data (PropertyGuru)
         4. Live fetch from PropertyGuru API
-        5. Default 2% assumption
+        5. Regional baseline fallback (flagged for AI follow-up)
 
         Returns:
             Tuple of (annual_rate_decimal, source)
-            source: "ura_resale_only", "ura_5yr_cagr", "ura_3yr_avg", "transaction_data", "default"
+            source: "ura_resale_only", "ura_5yr_cagr", "ura_3yr_avg", "transaction_data", "regional_baseline"
         """
-        project_name = listing.get("title") or listing.get("project_name", "")
+        project_name = listing.get("project_name") or listing.get("title", "")
         district = listing.get("district", "")
         cache_key = f"{project_name}_{district}".lower()
         project_key = project_name.lower()
@@ -290,8 +458,9 @@ class FullScorer:
                 except Exception as e:
                     print(f"  {project_name}: failed to fetch ({e})", file=sys.stderr)
 
-        # Fallback: Default 2% appreciation
-        return (0.02, "default")
+        # Fallback: Regional baseline appreciation (flag for AI follow-up)
+        baseline = self._get_regional_baseline(listing)
+        return (baseline, "regional_baseline")
 
     def _get_regional_baseline(self, listing: dict) -> float:
         """Get regional baseline appreciation rate for a listing's location."""
@@ -303,8 +472,8 @@ class FullScorer:
             return DEFAULT_REGIONAL_APPRECIATION
 
         # Map district to region (CCR/RCR/OCR)
-        ccr_districts = {1, 2, 6, 9, 10, 11}
-        rcr_districts = {3, 4, 5, 7, 8, 12, 13, 14, 15, 20}
+        ccr_districts = {1, 2, 6, 7, 9, 10, 11}
+        rcr_districts = {3, 4, 5, 8, 12, 13, 14, 15}
         # Everything else is OCR
 
         if d_num in ccr_districts:
@@ -319,6 +488,7 @@ class FullScorer:
         raw_rate: float,
         listing: dict,
         appreciation_source: str,
+        has_new_launch_bias: bool,
     ) -> tuple[float, float, str]:
         """
         Adjust appreciation rate to account for new-launch bias.
@@ -343,13 +513,15 @@ class FullScorer:
         # No adjustment if:
         # - No built_year known (can't determine age)
         # - Source is already "ura_resale_only" (already filtered for bias)
-        # - Source is "default" (nothing to adjust)
+        # - Source is "regional_baseline" (nothing to adjust)
         # - Rate is negative (no excess to discount)
+        # - URA data indicates no new-launch bias
         if (
             not built_year
             or appreciation_source == "ura_resale_only"
-            or appreciation_source == "default"
+            or appreciation_source in {"default", "regional_baseline"}
             or raw_rate <= 0
+            or not has_new_launch_bias
         ):
             return raw_rate, 0.0, ""
 
@@ -400,6 +572,11 @@ class FullScorer:
         Returns:
             ScoredListing with complete scoring and ROI analysis
         """
+        # Normalize district early for consistent scoring logic
+        if listing.get("district"):
+            listing = dict(listing)
+            listing["district"] = normalize_district(listing.get("district", "")) or listing.get("district")
+
         # Start with quick score
         quick_score = self.quick_scorer.score(listing)
 
@@ -425,6 +602,8 @@ class FullScorer:
             longitude=listing.get("longitude"),
             image_url=listing.get("image_url"),
             listing_date=listing.get("listing_date"),
+            floor_level=listing.get("floor_level"),
+            facing=listing.get("facing"),
             quick_score=quick_score.score,
             quick_tier=quick_score.tier,
         )
@@ -441,8 +620,11 @@ class FullScorer:
         raw_rate, appreciation_source = self._get_appreciation_rate(listing)
 
         # Apply new-launch bias adjustment
+        project_name = listing.get("project_name") or listing.get("title", "")
+        ura_entry = self._fuzzy_ura_lookup(project_name.lower()) if project_name else None
+        has_new_launch_bias = bool(ura_entry and ura_entry.get("has_new_launch_bias"))
         adjusted_rate, adjustment, adj_reason = self._apply_new_launch_adjustment(
-            raw_rate, listing, appreciation_source,
+            raw_rate, listing, appreciation_source, has_new_launch_bias,
         )
 
         scored.raw_appreciation_rate = raw_rate
@@ -473,7 +655,7 @@ class FullScorer:
         scored.future_score_details = future_score
         breakdown["future_potential"] = future_score.to_dict()
 
-        # D. Liquidity & Exit Risk (20 pts)
+        # D. Liquidity & Exit Risk (25 pts)
         liquidity_scores = self._score_liquidity(listing, scored)
         scored.liquidity_score = liquidity_scores["total"]
         breakdown["liquidity"] = liquidity_scores
@@ -513,6 +695,35 @@ class FullScorer:
                 hold_years=5,
             )
 
+            # ROI sensitivity scenarios (downside/base/upside)
+            sensitivity = self.roi_calculator.calculate_sensitivity(
+                listing,
+                periods=[5, 7],
+                monthly_rent=scored.estimated_monthly_rent if scored.estimated_monthly_rent > 0 else None,
+                appreciation_rate=appreciation_rate,
+            )
+            def _roi_summary(roi):
+                return {
+                    "exit_price": roi.estimated_exit_price,
+                    "total_return": round(roi.total_return, 2),
+                    "roi_pct": round(roi.roi_percent, 2),
+                    "annualized_roi": round(roi.annualized_roi, 2),
+                }
+            scored.roi_sensitivity = {
+                "assumptions": {
+                    "rent_delta_pct": ROI_SENSITIVITY_RENT_DELTA_PCT,
+                    "appreciation_delta_pct": ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
+                },
+                "5yr": {
+                    "downside": _roi_summary(sensitivity["downside"][5]),
+                    "upside": _roi_summary(sensitivity["upside"][5]),
+                },
+                "7yr": {
+                    "downside": _roi_summary(sensitivity["downside"][7]),
+                    "upside": _roi_summary(sensitivity["upside"][7]),
+                },
+            }
+
         return scored
 
     def _score_rental_yield(self, listing: dict, scored: ScoredListing) -> dict:
@@ -537,7 +748,8 @@ class FullScorer:
 
         # Gross Yield Score (0-6 pts) - was 0-12
         raw_yield_score = rental_data["gross_yield_score"]
-        yield_score = min(6, round(raw_yield_score / 2))  # Scale down from 12 to 6
+        # Scale down from 12 to 6 without banker's rounding
+        yield_score = min(6, math.ceil(raw_yield_score / 2))
         scores["gross_yield"] = {
             "yield_pct": rental_data["gross_yield"],
             "points": yield_score,
@@ -547,7 +759,17 @@ class FullScorer:
         # MRT Proximity (0-4 pts) - was 0-8
         mrt_score = 0
         mrt_distance = scored.mrt_distance_m
-        if mrt_distance is not None:
+        method = "thresholds"
+        percentile_quality = None
+        cohort_distances = self.cohort_stats.get("mrt_distances", [])
+        if mrt_distance is not None and len(cohort_distances) >= 5:
+            rank = self._percentile_rank(cohort_distances, mrt_distance)
+            if rank is not None:
+                percentile_quality = round(1 - rank, 2)
+                mrt_score = self._percentile_to_points(percentile_quality, 4)
+                method = "percentile"
+
+        if method == "thresholds" and mrt_distance is not None:
             if mrt_distance <= 300:
                 mrt_score = 4
             elif mrt_distance <= 500:
@@ -560,6 +782,8 @@ class FullScorer:
             "distance_m": mrt_distance,
             "station": scored.nearest_mrt,
             "points": mrt_score,
+            "method": method,
+            "percentile_quality": percentile_quality,
         }
         scores["total"] += mrt_score
 
@@ -592,7 +816,7 @@ class FullScorer:
 
     def _get_transaction_count(self, listing: dict) -> int:
         """Get transaction count for a listing from URA or transaction data."""
-        project_name = listing.get("title") or listing.get("project_name", "")
+        project_name = listing.get("project_name") or listing.get("title", "")
         project_key = project_name.lower()
         district = listing.get("district", "")
 
@@ -611,7 +835,7 @@ class FullScorer:
 
     def _get_momentum(self, listing: dict) -> tuple[Optional[float], str]:
         """Get appreciation momentum and data coverage for a listing."""
-        project_name = listing.get("title") or listing.get("project_name", "")
+        project_name = listing.get("project_name") or listing.get("title", "")
         project_key = project_name.lower()
 
         data = self._fuzzy_ura_lookup(project_key)
@@ -649,34 +873,13 @@ class FullScorer:
         # --- Actual Appreciation Rate (0-14 pts, was 0-17) ---
         # Reduced by 3 pts to make room for momentum scoring.
         apr_pct = appreciation_rate * 100
-        apr_score = 0
-
-        if apr_pct >= 6.0:
-            apr_score = 14  # Outstanding appreciation (>=6%/yr)
-        elif apr_pct >= 5.0:
-            apr_score = 12  # Excellent (5-6%/yr)
-        elif apr_pct >= 4.0:
-            apr_score = 10  # Very good (4-5%/yr)
-        elif apr_pct >= 3.0:
-            apr_score = 7  # Good (3-4%/yr)
-        elif apr_pct >= 2.0:
-            apr_score = 5  # Average (2-3%/yr)
-        elif apr_pct >= 1.0:
-            apr_score = 2  # Below average (1-2%/yr)
-        elif apr_pct >= 0:
-            apr_score = 0  # Flat (0-1%/yr)
-        else:
-            apr_score = -3  # Negative appreciation (penalty)
-
-        # If using default data (no real transaction data found), cap lower
-        if appreciation_source == "default":
-            apr_score = min(apr_score, 4)  # Cap at 4 — incentivize getting real data
+        apr_score = self.score_appreciation_rate_points(apr_pct, appreciation_source)
 
         # Confidence scaling: reduce score for low transaction counts
         # Full confidence at 50+ txns, scaling down to 60% at <10 txns
         txn_count = self._get_transaction_count(listing)
         confidence = 1.0
-        if txn_count > 0 and appreciation_source != "default":
+        if txn_count > 0 and appreciation_source not in {"default", "regional_baseline"}:
             if txn_count >= 50:
                 confidence = 1.0
             elif txn_count >= 20:
@@ -694,7 +897,7 @@ class FullScorer:
             "confidence": round(confidence, 2),
             "transaction_count": txn_count,
         }
-        scores["total"] += max(0, apr_score)  # Don't go negative in total
+        scores["total"] += apr_score
 
         # --- Momentum Scoring (-2 to +3 pts, NEW) ---
         # Rewards accelerating appreciation, penalizes deceleration.
@@ -727,37 +930,54 @@ class FullScorer:
         psf = listing.get("psf")
         district = normalize_district(listing.get("district", ""))
         psf_score = 0
+        psf_details = {"psf": psf, "median": None, "points": psf_score, "method": "median_ratio"}
 
-        medians = self.district_data.get("medians", {})
-        if psf and district in medians:
-            median_psf = medians[district].get("psf", 2000)
-            ratio = psf / median_psf if median_psf > 0 else 1
-            if ratio <= 0.85:
-                psf_score = 5  # 15%+ below median
-            elif ratio <= 0.95:
-                psf_score = 4  # 5-15% below median
-            elif ratio <= 1.00:
-                psf_score = 3  # At or below median
-            elif ratio <= 1.10:
-                psf_score = 1  # Up to 10% above
-            scores["psf_vs_median"] = {
-                "psf": psf,
-                "median": median_psf,
-                "ratio": round(ratio, 2),
-                "points": psf_score,
-            }
+        psf_values = self.cohort_stats.get("psf_by_district", {}).get(district)
+        if psf and psf_values and len(psf_values) >= 5:
+            rank = self._percentile_rank(psf_values, psf)
+            if rank is not None:
+                percentile_quality = round(1 - rank, 2)
+                psf_score = self._percentile_to_points(percentile_quality, 5)
+                psf_details = {
+                    "psf": psf,
+                    "points": psf_score,
+                    "method": "percentile",
+                    "percentile_quality": percentile_quality,
+                }
         else:
-            # Fallback scoring
-            if psf:
-                if psf < 1800:
-                    psf_score = 5
-                elif psf < 2000:
-                    psf_score = 4
-                elif psf < 2200:
-                    psf_score = 2
-                elif psf < 2400:
-                    psf_score = 1
-            scores["psf_vs_median"] = {"psf": psf, "median": None, "points": psf_score}
+            medians = self.district_data.get("medians", {})
+            if psf and district in medians:
+                median_psf = medians[district].get("psf", 2000)
+                ratio = psf / median_psf if median_psf > 0 else 1
+                if ratio <= 0.85:
+                    psf_score = 5  # 15%+ below median
+                elif ratio <= 0.95:
+                    psf_score = 4  # 5-15% below median
+                elif ratio <= 1.00:
+                    psf_score = 3  # At or below median
+                elif ratio <= 1.10:
+                    psf_score = 1  # Up to 10% above
+                psf_details = {
+                    "psf": psf,
+                    "median": median_psf,
+                    "ratio": round(ratio, 2),
+                    "points": psf_score,
+                    "method": "median_ratio",
+                }
+            else:
+                # Fallback scoring
+                if psf:
+                    if psf < 1800:
+                        psf_score = 5
+                    elif psf < 2000:
+                        psf_score = 4
+                    elif psf < 2200:
+                        psf_score = 2
+                    elif psf < 2400:
+                        psf_score = 1
+                psf_details = {"psf": psf, "median": None, "points": psf_score, "method": "absolute"}
+
+        scores["psf_vs_median"] = psf_details
         scores["total"] += psf_score
 
         # Tenure (0-4 pts) - was 0-5
@@ -791,20 +1011,41 @@ class FullScorer:
         built_year = listing.get("built_year")
         age_score = 0
         age = None
+        age_method = "thresholds"
+        percentile_quality = None
         if built_year:
             age = current_year - built_year
             if age < 0:
                 age = 0  # Future TOP — treat as brand new
-            if age <= 5:
-                age_score = 4  # Excellent condition, modern finishes
-            elif age <= 10:
-                age_score = 3  # Good condition
-            elif age <= 15:
-                age_score = 2  # Aging but maintained
-            elif age <= 20:
-                age_score = 1
-        scores["property_age"] = {"built_year": built_year, "age_years": age, "points": age_score}
+
+            age_values = self.cohort_stats.get("age_by_district", {}).get(district)
+            if age_values and len(age_values) >= 5:
+                rank = self._percentile_rank(age_values, age)
+                if rank is not None:
+                    percentile_quality = round(1 - rank, 2)
+                    age_score = self._percentile_to_points(percentile_quality, 4)
+                    age_method = "percentile"
+
+            if age_method == "thresholds":
+                if age <= 5:
+                    age_score = 4  # Excellent condition, modern finishes
+                elif age <= 10:
+                    age_score = 3  # Good condition
+                elif age <= 15:
+                    age_score = 2  # Aging but maintained
+                elif age <= 20:
+                    age_score = 1
+        scores["property_age"] = {
+            "built_year": built_year,
+            "age_years": age,
+            "points": age_score,
+            "method": age_method,
+            "percentile_quality": percentile_quality,
+        }
         scores["total"] += age_score
+
+        # Clamp total to valid range [0, SCORE_WEIGHT_CAPITAL_APPRECIATION]
+        scores["total"] = max(0, min(scores["total"], SCORE_WEIGHT_CAPITAL_APPRECIATION))
 
         return scores
 
@@ -813,7 +1054,7 @@ class FullScorer:
         Score liquidity and exit risk (25 pts max).
 
         Components:
-        - Transaction Volume (12mo): 0-8 pts
+        - Transaction Volume (total): 0-8 pts
         - Buyer Pool Depth: 0-7 pts (condo density + HDB upgrader pool)
         - Development Size: 0-5 pts
         - Price Appeal: 0-5 pts
@@ -822,7 +1063,7 @@ class FullScorer:
 
         # Transaction Volume (0-8 pts)
         project_name = listing.get("project_name", "")
-        title = listing.get("title") or project_name or ""
+        title = project_name or listing.get("title") or ""
         district = listing.get("district", "")
         # transaction_data is keyed by f"{project}_{district}".lower() from get_batch_appreciation
         txn_cache_key = f"{title}_{district}".lower()
@@ -849,7 +1090,7 @@ class FullScorer:
         # Buyer Pool Depth (0-7 pts) — replaces static district popularity
         # Uses condo density + HDB upgrader pool data from district_profiles.json
         district = normalize_district(listing.get("district", ""))
-        d_num = district.upper().replace("D", "").strip()
+        d_num = district.upper().replace("D", "").strip().lstrip("0") or "0"
         profile = self.district_profiles.get(d_num, {})
         buyer_pool = profile.get("buyer_pool_depth", "moderate")
         pool_score = self.BUYER_POOL_SCORES.get(buyer_pool, 3)
@@ -906,7 +1147,8 @@ class FullScorer:
         sqft = listing.get("sqft", 0)
 
         # MCST Estimate (0-4 pts)
-        mcst_monthly = sqft * 0.35 if sqft else 0
+        mcst_rate = self.cost_calculator.params.get("mcst_rate_per_sqft", 0.35)
+        mcst_monthly = sqft * mcst_rate if sqft else 0
         mcst_score = 0
         if mcst_monthly > 0:
             if mcst_monthly < 350:
@@ -977,11 +1219,14 @@ class FullScorer:
         Calculate red flag deductions (-10 pts max).
 
         Red flags:
-        - Near industrial zone: -3
-        - Near expressway (noise): -2
-        - Lease <70 years: -3 (auto-reject if <60)
-        - Small dev (<100 units): -2
         - West-facing: -1
+        - Small dev (<100 units): -2
+        - Lease <70 years: -3 (auto-reject if <60)
+        - Old property (>15 years): -2 to -4
+        - Very low PSF (<$1,300): -2
+        - Oversized unit: -2
+        - PSF overpriced vs URA transactions: -2 to -3 (NEW v2.3)
+        - Bedroom/sqft mismatch: -2 (NEW v2.3)
         """
         flags = []
         total_penalty = 0
@@ -1000,7 +1245,7 @@ class FullScorer:
 
         # Low remaining lease (-3)
         remaining = scored.remaining_lease
-        if remaining and remaining < 70:
+        if remaining is not None and 0 < remaining < 70:
             flags.append({"flag": "low_lease", "penalty": 3, "reason": f"Low remaining lease ({remaining} years)"})
             total_penalty += 3
 
@@ -1034,13 +1279,123 @@ class FullScorer:
                 flags.append({"flag": "oversized_unit", "penalty": 2, "reason": f"Large 3BR ({sqft_per_bed:.0f} sqft/bed) - harder to rent"})
                 total_penalty += 2
 
+        # --- NEW v2.3: PSF overpricing vs URA transaction data ---
+        # Compare listing PSF against URA median PSF for the same project.
+        # Flags listings priced significantly above recent market transactions.
+        psf_premium_pct = self._check_psf_overpricing(listing)
+        if psf_premium_pct is not None:
+            scored.score_breakdown["psf_premium_pct"] = round(psf_premium_pct, 1)
+            if psf_premium_pct > 15:
+                flags.append({
+                    "flag": "psf_overpriced",
+                    "penalty": 3,
+                    "reason": f"Asking PSF {psf_premium_pct:.0f}% above URA transaction median - likely overpriced",
+                })
+                total_penalty += 3
+            elif psf_premium_pct > 10:
+                flags.append({
+                    "flag": "psf_above_market",
+                    "penalty": 2,
+                    "reason": f"Asking PSF {psf_premium_pct:.0f}% above URA transaction median",
+                })
+                total_penalty += 2
+
+        # --- NEW v2.3: Bedroom/sqft mismatch validation ---
+        # Flag listings where sqft doesn't match expected range for bedroom count
+        mismatch = self._check_bedroom_sqft_mismatch(listing)
+        if mismatch:
+            flags.append({
+                "flag": "bedroom_sqft_mismatch",
+                "penalty": 2,
+                "reason": mismatch,
+            })
+            total_penalty += 2
+
         # Cap at 10
         total_penalty = min(total_penalty, 10)
 
         return {"flags": flags, "total": total_penalty}
 
+    def _check_psf_overpricing(self, listing: dict) -> Optional[float]:
+        """
+        Check if listing PSF is significantly above URA transaction median.
+
+        Returns:
+            Premium percentage (e.g., 15.0 means 15% above median),
+            or None if URA data is not available.
+        """
+        psf = listing.get("psf")
+        if not psf:
+            return None
+
+        project_name = listing.get("project_name") or listing.get("title", "")
+        if not project_name:
+            return None
+
+        ura_entry = self._fuzzy_ura_lookup(project_name.lower())
+        if not ura_entry:
+            return None
+
+        # Use URA median PSF if available
+        ura_median_psf = ura_entry.get("median_psf")
+        if not ura_median_psf or ura_median_psf <= 0:
+            return None
+
+        premium_pct = ((psf - ura_median_psf) / ura_median_psf) * 100
+        return premium_pct
+
+    # Expected sqft ranges per bedroom count (Singapore condo market)
+    _BEDROOM_SQFT_RANGES = {
+        1: (400, 850),
+        2: (600, 1200),
+        3: (850, 1800),
+        4: (1200, 2500),
+        5: (1600, 3500),
+    }
+
+    def _check_bedroom_sqft_mismatch(self, listing: dict) -> Optional[str]:
+        """
+        Check if sqft is inconsistent with bedroom count.
+
+        Returns:
+            Warning message string if mismatch detected, None otherwise.
+        """
+        beds = listing.get("beds")
+        sqft = listing.get("sqft")
+        if not beds or not sqft:
+            return None
+
+        expected = self._BEDROOM_SQFT_RANGES.get(beds)
+        if not expected:
+            return None
+
+        min_sqft, max_sqft = expected
+        if sqft < min_sqft:
+            return (
+                f"{beds}BR at {sqft:.0f} sqft is below expected minimum "
+                f"({min_sqft} sqft) - possible misclassification or micro unit"
+            )
+        if sqft > max_sqft:
+            return (
+                f"{beds}BR at {sqft:.0f} sqft is above expected maximum "
+                f"({max_sqft} sqft) - possible misclassification"
+            )
+        return None
+
+    # Typical gap between lease commencement and TOP (years).
+    # Leases start when the land is purchased by the developer, which is
+    # typically 3-4 years before TOP. Using built_year (TOP year) alone
+    # overstates remaining lease by this amount.
+    _LEASE_START_OFFSET = 3
+
     def _calculate_remaining_lease(self, listing: dict) -> Optional[int]:
-        """Calculate remaining lease years."""
+        """Calculate remaining lease years.
+
+        Uses lease_start_year if available, otherwise estimates lease
+        commencement as built_year minus a standard offset (typically 3 years)
+        since 99-year leases start when the developer acquires the land,
+        not when the building reaches TOP.
+        """
         tenure = (listing.get("tenure") or "").lower()
         current_year = self._current_year
 
@@ -1055,13 +1410,26 @@ class FullScorer:
         else:
             return None
 
+        # Prefer explicit lease_start_year if available
+        lease_start = listing.get("lease_start_year")
+        if lease_start:
+            elapsed = current_year - lease_start
+            return max(0, lease_years - elapsed)
+
+        # Fall back to built_year/top_year with offset for 99-year leases
         start_year = listing.get("built_year") or listing.get("top_year")
         if not start_year:
             if lease_years == 99:
                 return 90
             return None
 
-        elapsed = current_year - start_year
+        # For 99-year leases, subtract offset to approximate lease commencement
+        if lease_years == 99:
+            estimated_lease_start = start_year - self._LEASE_START_OFFSET
+            elapsed = current_year - estimated_lease_start
+        else:
+            elapsed = current_year - start_year
+
         return max(0, lease_years - elapsed)
 
 def score_listings(
@@ -1084,7 +1452,14 @@ def score_listings(
     Returns:
         List of ScoredListing objects, sorted by total score descending
     """
-    scorer = FullScorer(condo_rental_data, transaction_data, fetch_appreciation, ura_data)
+    cohort_stats = build_cohort_stats(listings)
+    scorer = FullScorer(
+        condo_rental_data,
+        transaction_data,
+        fetch_appreciation,
+        ura_data,
+        cohort_stats=cohort_stats,
+    )
     scored = [scorer.score(listing) for listing in listings]
     scored.sort(key=lambda x: x.total_score, reverse=True)
     return scored
@@ -1133,7 +1508,14 @@ def score_and_filter(
             to_score.append(listing)
 
     # Phase 2: Full score everything that passed the quick filter
-    scorer = FullScorer(condo_rental_data, transaction_data, fetch_appreciation, ura_data)
+    cohort_stats = build_cohort_stats(to_score)
+    scorer = FullScorer(
+        condo_rental_data,
+        transaction_data,
+        fetch_appreciation,
+        ura_data,
+        cohort_stats=cohort_stats,
+    )
     scored = [scorer.score(listing) for listing in to_score]
     scored.sort(key=lambda x: x.total_score, reverse=True)
 

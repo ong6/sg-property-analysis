@@ -14,6 +14,12 @@ Max possible: 100 pts for ALL properties equally.
 from dataclasses import dataclass, field
 from typing import Optional
 
+try:
+    from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
+except ImportError:
+    SCORE_TIER1_MIN = 60
+    SCORE_TIER2_MIN = 45
+
 
 @dataclass
 class QuickScore:
@@ -212,6 +218,8 @@ class ScoredListing:
     longitude: Optional[float] = None
     image_url: Optional[str] = None
     listing_date: Optional[str] = None
+    floor_level: Optional[str] = None
+    facing: Optional[str] = None
 
     # Quick score results
     quick_score: int = 0
@@ -248,9 +256,28 @@ class ScoredListing:
         return base + clamped_adj
 
     @property
+    def final_tier(self) -> int:
+        """Tier based on total score (post agent adjustment)."""
+        if self.total_score >= SCORE_TIER1_MIN:
+            return 1
+        if self.total_score >= SCORE_TIER2_MIN:
+            return 2
+        return 3
+
+    @property
+    def final_tier_label(self) -> str:
+        labels = {1: "Tier 1 (Recommended)", 2: "Tier 2 (Consider)", 3: "Below Threshold"}
+        return labels.get(self.final_tier, "Unknown")
+
+    @property
     def has_ura_data(self) -> bool:
         """Check if this listing has real transaction data (URA or PropertyGuru)."""
-        return self.appreciation_source != "default"
+        return self.appreciation_source not in {"default", "regional_baseline", "ai_required"}
+
+    @property
+    def needs_ai_appreciation(self) -> bool:
+        """Whether appreciation rate should be validated by AI research."""
+        return self.appreciation_source in {"default", "regional_baseline", "ai_required"}
 
     # Rental estimates
     estimated_monthly_rent: float = 0
@@ -259,15 +286,18 @@ class ScoredListing:
 
     # Appreciation data (for ROI calculation)
     appreciation_rate: float = 0.02  # Annual appreciation rate (decimal) — adjusted for new-launch bias
-    appreciation_source: str = "default"  # "project_history", "transaction_data", "default"
+    appreciation_source: str = "default"  # "project_history", "transaction_data", "regional_baseline", "default"
     raw_appreciation_rate: float = 0.02  # Original rate before new-launch adjustment
     appreciation_adjustment: float = 0.0  # How much was discounted (decimal, e.g., -0.02 = -2%)
     adjustment_reason: str = ""  # Why adjustment was applied (or "" if none)
+    agent_appreciation_rate_pct: Optional[float] = None  # AI-researched override (percent)
+    agent_appreciation_source: Optional[str] = None
 
     # ROI results for different holding periods
     roi_5yr: Optional[ROIResult] = None
     roi_6yr: Optional[ROIResult] = None
     roi_7yr: Optional[ROIResult] = None
+    roi_sensitivity: dict = field(default_factory=dict)
 
     # Cost breakdown
     costs: Optional[CostBreakdown] = None
@@ -279,6 +309,10 @@ class ScoredListing:
 
     # Deduplication: additional listing URLs from the same condo
     additional_urls: list[str] = field(default_factory=list)
+
+    # Condo mode: per-unit-type grouping data
+    unit_variants: list[dict] = field(default_factory=list)
+    unit_summary: Optional[dict] = None
 
     # Score breakdown details
     score_breakdown: dict = field(default_factory=dict)
@@ -304,6 +338,7 @@ class ScoredListing:
             "total_score": round(self.total_score, 1),
             "quick_score": self.quick_score,
             "quick_tier": self.quick_tier,
+            "final_tier": self.final_tier,
             "has_ura_data": self.has_ura_data,
         }
 
@@ -312,8 +347,8 @@ class ScoredListing:
             "address", "district", "district_name", "beds", "baths",
             "sqft", "psf", "tenure", "built_year", "project_name",
             "total_units", "mrt_info", "latitude", "longitude",
-            "image_url", "listing_date", "remaining_lease",
-            "mrt_distance_m", "nearest_mrt"
+            "image_url", "listing_date", "floor_level", "facing",
+            "remaining_lease", "mrt_distance_m", "nearest_mrt"
         ]
         for f in optional_fields:
             val = getattr(self, f)
@@ -323,6 +358,12 @@ class ScoredListing:
         # Additional listing URLs (same condo, different units)
         if self.additional_urls:
             result["additional_urls"] = self.additional_urls
+
+        # Condo mode: unit variant data
+        if self.unit_variants:
+            result["unit_variants"] = self.unit_variants
+        if self.unit_summary:
+            result["unit_summary"] = self.unit_summary
 
         # Score breakdown (v2.1)
         result["scores"] = {
@@ -350,7 +391,12 @@ class ScoredListing:
         appreciation_info = {
             "annual_rate_pct": round(self.appreciation_rate * 100, 2),
             "source": self.appreciation_source,
+            "needs_ai_appreciation": self.needs_ai_appreciation,
         }
+        if self.agent_appreciation_rate_pct is not None:
+            appreciation_info["agent_rate_pct"] = self.agent_appreciation_rate_pct
+        if self.agent_appreciation_source:
+            appreciation_info["agent_source"] = self.agent_appreciation_source
         if self.appreciation_adjustment != 0:
             appreciation_info["raw_rate_pct"] = round(self.raw_appreciation_rate * 100, 2)
             appreciation_info["adjustment_pct"] = round(self.appreciation_adjustment * 100, 2)
@@ -370,6 +416,9 @@ class ScoredListing:
         if roi_results:
             result["roi"] = roi_results
 
+        if self.roi_sensitivity:
+            result["roi_sensitivity"] = self.roi_sensitivity
+
         # Detailed score breakdown
         if self.score_breakdown:
             result["score_details"] = self.score_breakdown
@@ -381,6 +430,7 @@ class ScoredListing:
             or self.agent_catalysts
             or self.agent_score_adjustment != 0
             or self.agent_confidence is not None
+            or self.agent_appreciation_rate_pct is not None
         )
         if has_agent_data:
             result["agent"] = {
@@ -393,6 +443,8 @@ class ScoredListing:
                 "appreciation_assessment": self.agent_appreciation_assessment,
                 "stack_notes": self.agent_stack_notes,
                 "confidence": self.agent_confidence,
+                "appreciation_rate_pct": self.agent_appreciation_rate_pct,
+                "appreciation_source": self.agent_appreciation_source,
             }
 
         return result

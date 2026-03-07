@@ -5,6 +5,16 @@ import os
 from typing import Optional
 
 from scoring.costs import CostCalculator
+
+# Sensitivity defaults
+try:
+    from config import (
+        ROI_SENSITIVITY_RENT_DELTA_PCT,
+        ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
+    )
+except ImportError:
+    ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
+    ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
 from scoring.models import CostBreakdown, ROIResult
 from scoring.rental_estimator import RentalEstimator
 
@@ -47,7 +57,7 @@ class ROICalculator:
         """
         self.buyer_type = buyer_type
         self.property_count = property_count
-        self.annual_appreciation = annual_appreciation or _load_appreciation_rate()
+        self.annual_appreciation = annual_appreciation if annual_appreciation is not None else _load_appreciation_rate()
         self.cost_calc = CostCalculator()
         self.rental_estimator = RentalEstimator()
 
@@ -58,6 +68,8 @@ class ROICalculator:
         monthly_rent: Optional[float] = None,
         exit_price: Optional[int] = None,
         appreciation_rate: Optional[float] = None,
+        agent_rental_months_per_year: Optional[float] = None,
+        vacancy_months_per_year: Optional[float] = None,
     ) -> ROIResult:
         """
         Calculate ROI for a property investment.
@@ -109,6 +121,8 @@ class ROICalculator:
             exit_price=exit_price,
             buyer_type=self.buyer_type,
             property_count=self.property_count,
+            agent_rental_months_per_year=agent_rental_months_per_year,
+            vacancy_months_per_year=vacancy_months_per_year,
         )
 
         # Annual rental income (gross)
@@ -196,6 +210,50 @@ class ROICalculator:
                 listing, years, monthly_rent,
                 appreciation_rate=appreciation_rate,
             )
+        return results
+
+    def calculate_sensitivity(
+        self,
+        listing: dict,
+        periods: list[int] = [5, 7],
+        monthly_rent: Optional[float] = None,
+        appreciation_rate: Optional[float] = None,
+        rent_delta_pct: Optional[float] = None,
+        appreciation_delta_pct: Optional[float] = None,
+    ) -> dict[str, dict[int, ROIResult]]:
+        """
+        Calculate ROI sensitivity scenarios (downside/base/upside).
+
+        Downside/upsides adjust rent and appreciation rate.
+        """
+        if monthly_rent is None:
+            rental_data = self.rental_estimator.estimate(listing)
+            monthly_rent = rental_data["monthly_rent"]
+
+        base_rate = appreciation_rate if appreciation_rate is not None else self.annual_appreciation
+        rent_delta = ROI_SENSITIVITY_RENT_DELTA_PCT if rent_delta_pct is None else rent_delta_pct
+        appr_delta = ROI_SENSITIVITY_APPRECIATION_DELTA_PCT if appreciation_delta_pct is None else appreciation_delta_pct
+
+        scenarios = {
+            "downside": {"rent_mult": 1 - rent_delta, "rate_delta": -appr_delta},
+            "base": {"rent_mult": 1.0, "rate_delta": 0.0},
+            "upside": {"rent_mult": 1 + rent_delta, "rate_delta": appr_delta},
+        }
+
+        results: dict[str, dict[int, ROIResult]] = {}
+        for name, cfg in scenarios.items():
+            adj_rent = monthly_rent * cfg["rent_mult"]
+            adj_rate = base_rate + cfg["rate_delta"]
+            # Keep within reasonable bounds (-5% to +15%/yr)
+            adj_rate = max(-0.05, min(0.15, adj_rate))
+            results[name] = {}
+            for years in periods:
+                results[name][years] = self.calculate(
+                    listing,
+                    hold_years=years,
+                    monthly_rent=adj_rent,
+                    appreciation_rate=adj_rate,
+                )
         return results
 
     def find_optimal_hold_period(
@@ -306,7 +364,10 @@ def quick_roi_estimate(
     total_investment = price + bsd + 3500
 
     roi = (total_return / total_investment) * 100
-    annualized = ((1 + roi / 100) ** (1 / hold_years) - 1) * 100
+    if roi > -100:
+        annualized = ((1 + roi / 100) ** (1 / hold_years) - 1) * 100
+    else:
+        annualized = 0
 
     return {
         "purchase_price": price,

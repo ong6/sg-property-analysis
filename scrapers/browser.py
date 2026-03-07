@@ -53,12 +53,23 @@ class BrowserManager:
             args=launch_args,
         )
 
+        # Block heavy resources to speed up scraping and reduce detection noise.
+        try:
+            self._context.route(
+                "**/*",
+                lambda route, request: route.abort()
+                if request.resource_type in ("image", "media", "font")
+                else route.continue_(),
+            )
+        except Exception:
+            pass
+
         # On macOS, bring Chrome window to foreground
         if not self._headless:
             import subprocess
             try:
                 subprocess.run(
-                    ["osascript", "-e", 'tell application "Google Chrome" to activate'],
+                    ["osascript", "-e", f'tell application "{"Google Chrome" if BROWSER_CHANNEL == "chrome" else "Chromium"}" to activate'],
                     timeout=5, capture_output=True,
                 )
             except Exception:
@@ -94,7 +105,6 @@ def _is_past_cloudflare(page) -> bool:
     # Check hidden script tags (state="attached")
     for sel in CF_RESOLVED_SCRIPT_INDICATORS:
         try:
-            loc = page.locator(sel)
             # Use evaluate to check if the element exists in DOM at all
             count = page.evaluate(f'document.querySelectorAll("{sel}").length')
             if count > 0:
@@ -117,7 +127,7 @@ def _is_past_cloudflare(page) -> bool:
 def wait_for_cloudflare(page, timeout_ms: int = CLOUDFLARE_WAIT_TIMEOUT) -> bool:
     """Detect and wait for Cloudflare challenge to resolve.
 
-    Returns True if the page loaded successfully past CF, False if still blocked.
+    Returns True if the page is past CF (or CF not detected), False if still blocked.
     """
     import time
 
@@ -149,7 +159,7 @@ def wait_for_cloudflare(page, timeout_ms: int = CLOUDFLARE_WAIT_TIMEOUT) -> bool
         pass
 
     if not cf_detected:
-        return False
+        return True
 
     # Wait for CF to auto-resolve
     logger.info("Waiting for Cloudflare challenge to resolve automatically...")

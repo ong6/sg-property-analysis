@@ -1,13 +1,12 @@
 """Scoring package for property investment analysis.
 
-v2.0 Scoring System:
+v2.2 Scoring System:
 - Rental Yield: 15 pts (reduced from 30)
-- Capital Appreciation: 25 pts (uses actual URA data)
-- Future Potential: 20 pts (NEW)
-- Liquidity: 20 pts
+- Capital Appreciation: 30 pts (uses actual URA data, new-launch bias corrected)
+- Future Potential: 20 pts (MRT, govt zones, transformation)
+- Liquidity: 25 pts (transaction volume, district popularity)
 - Cost Efficiency: 10 pts
 - Red Flags: -10 pts max
-- URA Bonus: +10 pts (NEW)
 """
 
 from scoring.models import QuickScore, ScoredListing, ROIResult, CostBreakdown, FutureScore, DistrictScore

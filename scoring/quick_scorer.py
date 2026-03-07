@@ -11,6 +11,7 @@ from datetime import datetime
 from typing import Any, Optional
 
 from scoring.models import QuickScore
+from utils.geo import normalize_district
 
 # Import config values
 try:
@@ -165,7 +166,7 @@ class QuickScorer:
 
         # === District (0-10 pts) ===
         # High-potential districts preferred (based on v2.0 district scoring)
-        district = listing.get("district", "")
+        district = normalize_district(listing.get("district", "")) or listing.get("district", "")
         district_score = 0
         if district:
             # Normalize district code
@@ -276,6 +277,7 @@ class QuickScorer:
             red_flags.append("low_lease")
 
         score -= min(red_flag_penalty, 15)  # Cap at -15
+        score = max(0, score)  # Prevent negative quick scores
         breakdown["red_flags"] = {"flags": red_flags, "penalty": red_flag_penalty}
 
         # Calculate tier
@@ -297,8 +299,16 @@ class QuickScorer:
         else:
             return 3
 
+    # Typical gap between lease commencement and TOP (years)
+    _LEASE_START_OFFSET = 3
+
     def _calculate_remaining_lease(self, listing: dict[str, Any]) -> Optional[int]:
-        """Calculate remaining lease years from tenure and built year."""
+        """Calculate remaining lease years from tenure and built year.
+
+        For 99-year leases, the lease starts when the developer acquires the
+        land, typically 3-4 years before TOP. We subtract this offset from
+        built_year to avoid overstating remaining lease.
+        """
         tenure = (listing.get("tenure") or "").lower()
         current_year = self._current_year
 
@@ -314,15 +324,27 @@ class QuickScorer:
         else:
             return None
 
+        # Prefer explicit lease_start_year if available
+        lease_start = listing.get("lease_start_year")
+        if lease_start:
+            elapsed = current_year - lease_start
+            return max(0, lease_years - elapsed)
+
         # Need built year or TOP year to calculate remaining
         start_year = listing.get("built_year") or listing.get("top_year")
         if not start_year:
-            # If no year info, assume recent for 99-year
+            # If no year info, use conservative mid-life estimate for 99-year
             if lease_years == 99:
-                return 90  # Conservative estimate
+                return 75  # Assume ~24 years old — conservative, avoids masking old leaseholds
             return None
 
-        elapsed = current_year - start_year
+        # For 99-year leases, subtract offset to approximate lease commencement
+        if lease_years == 99:
+            estimated_lease_start = start_year - self._LEASE_START_OFFSET
+            elapsed = current_year - estimated_lease_start
+        else:
+            elapsed = current_year - start_year
+
         remaining = lease_years - elapsed
         return max(0, remaining)
 

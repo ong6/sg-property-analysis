@@ -180,6 +180,8 @@ class CostCalculator:
         self,
         monthly_rent: float,
         sqft: float,
+        agent_rental_months_per_year: Optional[float] = None,
+        vacancy_months_per_year: Optional[float] = None,
     ) -> dict:
         """
         Calculate all annual holding costs.
@@ -195,8 +197,16 @@ class CostCalculator:
         property_tax = self.calculate_property_tax(annual_value)
         mcst_annual = self.calculate_mcst(sqft) * 12
 
-        agent_months = self.params.get("agent_rental_months_per_year", 0.5)
-        vacancy_months = self.params.get("vacancy_months_per_year", 1.5)
+        agent_months = (
+            agent_rental_months_per_year
+            if agent_rental_months_per_year is not None
+            else self.params.get("agent_rental_months_per_year", 0.5)
+        )
+        vacancy_months = (
+            vacancy_months_per_year
+            if vacancy_months_per_year is not None
+            else self.params.get("vacancy_months_per_year", 1.5)
+        )
         repairs = self.params.get("repairs_per_year", 1500)
         insurance = self.params.get("insurance_per_year", 300)
 
@@ -228,13 +238,20 @@ class CostCalculator:
         exit_price: Optional[int] = None,
         buyer_type: str = "SC",
         property_count: int = 0,
+        agent_rental_months_per_year: Optional[float] = None,
+        vacancy_months_per_year: Optional[float] = None,
     ) -> CostBreakdown:
         """Create a complete cost breakdown for a property investment."""
         if exit_price is None:
             appreciation = self.params.get("annual_appreciation_estimate", 0.02)
             exit_price = int(purchase_price * (1 + appreciation) ** hold_years)
 
-        annual_costs = self.calculate_annual_holding_costs(monthly_rent, sqft)
+        annual_costs = self.calculate_annual_holding_costs(
+            monthly_rent,
+            sqft,
+            agent_rental_months_per_year=agent_rental_months_per_year,
+            vacancy_months_per_year=vacancy_months_per_year,
+        )
         exit_costs = self.calculate_exit_costs(exit_price, hold_years)
 
         return CostBreakdown(

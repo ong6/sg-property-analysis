@@ -305,6 +305,19 @@
       "supply_constraint": "low",
       "investment_notes": "Value OCR, JRL connectivity improvement, Tengah spillover"
     },
+    "24": {
+      "name": "Lim Chu Kang, Tengah",
+      "region": "OCR",
+      "median_psf": 1550,
+      "median_rental_psf": 2.95,
+      "historical_appreciation": 0.037,
+      "transaction_volume": "low",
+      "buyer_pool_depth": "shallow",
+      "future_mrt": ["JRL"],
+      "govt_zones": ["tengah"],
+      "supply_constraint": "medium",
+      "investment_notes": "Emerging forest town, JRL connectivity 2027+, controlled GLS supply, HDB upgrader demand"
+    },
     "25": {
       "name": "Woodlands, Admiralty",
       "region": "OCR",
