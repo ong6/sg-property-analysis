@@ -154,7 +154,7 @@ def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
     lat = listing.get("latitude")
     lon = listing.get("longitude")
 
-    if lat and lon:
+    if lat is not None and lon is not None:
         result = find_nearest_mrt(lat, lon)
         if result:
             station, distance = result
@@ -165,9 +165,14 @@ def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
     if mrt_info:
         import re
 
-        # Extract station name (before dash or parenthesis)
-        name_match = re.match(r"^([^-\(]+)", mrt_info)
-        station_name = name_match.group(1).strip() if name_match else ""
+        # Extract station name by removing distance/time and parentheticals
+        name_part = re.split(r"\b\d+\s*(?:m|min)\b", mrt_info, maxsplit=1, flags=re.IGNORECASE)[0]
+        name_part = name_part.split(" - ")[0]
+        name_part = re.sub(r"\(.*?\)", "", name_part).strip()
+        station_name = name_part
+        # Guard against non-names (e.g., "9 min")
+        if re.search(r"\d", station_name) or "min" in station_name.lower():
+            station_name = ""
 
         # Extract distance
         m_match = re.search(r"(\d+)\s*m(?:eters?)?(?:\s|$|,)", mrt_info.lower())

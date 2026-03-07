@@ -4,6 +4,8 @@ import json
 import os
 from typing import Any, Optional
 
+from utils.geo import normalize_district
+
 # Load district medians
 _DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 _DISTRICT_MEDIANS_FILE = os.path.join(_DATA_DIR, "district_medians.json")
@@ -113,19 +115,25 @@ class RentalEstimator:
                 if condo_name in normalized or normalized in condo_name:
                     return rent_psf, "same_condo"
 
-        # Priority 2: District median
+        # Priority 2: Bedroom-specific district rental PSF
         district = listing.get("district", "")
+        beds = listing.get("beds")
         if district:
-            # Normalize district code
-            d = district.upper()
-            if not d.startswith("D"):
-                d = f"D{int(d):02d}"
+            d = normalize_district(district)
+            bedroom_rates = self.district_data.get("bedroom_rental_psf", {})
+            if d in bedroom_rates and beds:
+                bed_key = str(beds)
+                if bed_key in bedroom_rates[d]:
+                    return bedroom_rates[d][bed_key], "district_bedroom"
 
+        # Priority 3: District median (fallback for unknown bedroom count)
+        if district:
+            d = normalize_district(district)
             medians = self.district_data.get("medians", {})
             if d in medians:
                 return medians[d].get("rental_psf", self.DEFAULT_RENTAL_PSF), "district_median"
 
-        # Priority 3: Fallback
+        # Priority 4: Fallback
         return self.DEFAULT_RENTAL_PSF, "fallback"
 
     def estimate_yield_score(self, listing: dict[str, Any]) -> dict:
@@ -184,9 +192,7 @@ def estimate_gross_yield(
 
     rent_psf = RentalEstimator.DEFAULT_RENTAL_PSF
     if district:
-        d = district.upper()
-        if not d.startswith("D"):
-            d = f"D{int(d):02d}"
+        d = normalize_district(district)
         medians = district_data.get("medians", {})
         if d in medians:
             rent_psf = medians[d].get("rental_psf", rent_psf)

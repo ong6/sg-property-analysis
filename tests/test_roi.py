@@ -110,18 +110,20 @@ class TestROICalculator:
         assert roi.net_rental_yield < roi.gross_rental_yield
 
     def test_capital_gain_with_appreciation(self):
-        """Capital gain should reflect appreciation."""
+        """Capital gain should reflect appreciation (with decay model)."""
         listing = {
             "price": 2_400_000,
             "sqft": 1000,
         }
 
-        # Default appreciation is 2% per year
+        # Default appreciation is 2% per year with 3% annual decay
         roi = self.calc.calculate(listing, hold_years=5)
 
-        # Expected exit price with 2% annual appreciation
-        expected_exit = int(2_400_000 * (1.02 ** 5))
-        assert abs(roi.estimated_exit_price - expected_exit) < 1000
+        # Exit price should be above purchase (appreciation > 0)
+        assert roi.estimated_exit_price > 2_400_000
+        # But below naive compound (due to appreciation decay)
+        naive_exit = int(2_400_000 * (1.02 ** 5))
+        assert roi.estimated_exit_price < naive_exit
 
         assert roi.capital_gain > 0
 

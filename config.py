@@ -1,11 +1,12 @@
-"""Configuration for Property Finder v2.0."""
+"""Configuration for Property Finder v2.2."""
+
+import os
 
 PROPERTYGURU_BASE_URL = "https://www.propertyguru.com.sg"
 PROPERTYGURU_SEARCH_PATH = "/apartment-condo-for-sale"
 
-# Browser settings
-BROWSER_USER_DATA_DIR = "./chrome-profile"
-BROWSER_CHANNEL = "chrome"
+BROWSER_USER_DATA_DIR = os.getenv("BROWSER_USER_DATA_DIR", "./chrome-profile")
+BROWSER_CHANNEL = "chromium"
 
 # Timeouts (milliseconds)
 PAGE_LOAD_TIMEOUT = 60_000
@@ -15,6 +16,7 @@ CLOUDFLARE_WAIT_TIMEOUT = 120_000
 
 # Rate limiting
 REQUEST_DELAY_SECONDS = 2
+REQUEST_DELAY_JITTER = 0.30  # +/- 30% jitter to avoid fixed intervals
 
 # Retry settings
 MAX_RETRIES = 3
@@ -51,7 +53,7 @@ DETAIL_PAGE_DELAY = 2  # Seconds between detail page visits
 # ============================================================================
 # New scoring weights with better variance and forward-looking factors
 
-# Property scoring weights (v2.1 - total: 100 pts, no URA bias)
+# Property scoring weights (v2.2 - total: 100 pts, no URA bias)
 SCORE_WEIGHT_RENTAL_YIELD = 15  # Reduced from 30 - yields mechanically low at $2M+
 SCORE_WEIGHT_CAPITAL_APPRECIATION = 30  # v2.1: increased from 25, absorbs old URA bonus
 SCORE_WEIGHT_FUTURE_POTENTIAL = 20  # MRT, govt zones, transformation
@@ -92,6 +94,21 @@ DEFAULT_PROPERTY_COUNT = 0  # First property (0% ABSD)
 
 # Appreciation estimate (annual) - used only when URA data unavailable
 DEFAULT_APPRECIATION_RATE = 0.02  # 2% per year
+
+# ROI sensitivity assumptions (used for downside/upside scenarios)
+# These are absolute deltas, not multipliers.
+ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10  # +/-10% rent
+ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015  # +/-1.5% appreciation rate
+
+# Data freshness thresholds (days) for local datasets
+DATA_FRESHNESS_THRESHOLDS_DAYS = {
+    "district_medians.json": 180,
+    "district_profiles.json": 365,
+    "future_infrastructure.json": 365,
+    "government_zones.json": 365,
+    "ura_cache.json": 180,
+    "cost_parameters.json": 365,
+}
 
 # ============================================================================
 # NEW LAUNCH APPRECIATION BIAS ADJUSTMENT

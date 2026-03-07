@@ -2,20 +2,19 @@
 """Unified property investment analysis CLI with URA integration.
 
 AI-friendly interface for the complete investment analysis flow:
-1. Auto-discover best districts (NEW in v2.0)
+1. Auto-discover best districts (v2.2)
 2. Scrape listings from PropertyGuru
 3. Automatically use URA appreciation data (5 years historical)
-4. Score properties with v2.0 scoring (includes future potential)
+4. Score properties with v2.2 scoring (includes future potential)
 5. Generate investment reports
 
-SCORING SYSTEM v2.0:
+SCORING SYSTEM v2.2:
 - Rental Yield: 15 pts (reduced - yields low at $2M+)
-- Capital Appreciation: 25 pts (uses actual URA rates)
+- Capital Appreciation: 30 pts (bias-adjusted URA rates)
 - Future Potential: 20 pts (NEW - MRT, govt zones)
-- Liquidity: 20 pts
+- Liquidity: 25 pts
 - Cost Efficiency: 10 pts
 - Red Flags: -10 pts max
-- URA Bonus: +10 pts (NEW - rewards verified data)
 
 Usage:
     # AUTOMATIC MODE (NEW - recommended)
@@ -58,12 +57,37 @@ from scoring.models import ScoredListing
 from scoring.district_scorer import DistrictScorer
 from scoring.raw_output import save_raw_analysis, load_reviewed_analysis, apply_review_to_listings
 from utils.markdown import save_report, generate_csv_export, generate_report
+from utils.geo import normalize_district
+from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
+try:
+    from config import DATA_FRESHNESS_THRESHOLDS_DAYS
+except ImportError:
+    DATA_FRESHNESS_THRESHOLDS_DAYS = {}
 
 
 # Paths
 DATA_DIR = Path(__file__).parent / "data"
 URA_CACHE_FILE = DATA_DIR / "ura_cache.json"
 OUTPUT_DIR = Path(__file__).parent / "output"
+
+
+def next_run_dir() -> Path:
+    """Create and return the next sequential run directory (output/run_001, run_002, ...).
+
+    Scans existing run_NNN directories to find the next number.
+    """
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    existing = sorted(OUTPUT_DIR.glob("run_*"))
+    max_num = 0
+    for d in existing:
+        try:
+            num = int(d.name.split("_", 1)[1])
+            max_num = max(max_num, num)
+        except (IndexError, ValueError):
+            continue
+    run_dir = OUTPUT_DIR / f"run_{max_num + 1:03d}"
+    run_dir.mkdir(parents=True, exist_ok=True)
+    return run_dir
 
 
 # All Singapore districts with descriptions for AI context
@@ -135,6 +159,49 @@ def save_ura_cache(projects: dict):
     with open(URA_CACHE_FILE, "w") as f:
         json.dump(cache, f, indent=2)
     print(f"URA cache saved: {len(projects)} projects", file=sys.stderr)
+
+
+def warn_if_stale_data():
+    """Warn if key local datasets are stale based on last_updated."""
+    if not DATA_FRESHNESS_THRESHOLDS_DAYS:
+        return
+
+    warnings = []
+    for filename, max_days in DATA_FRESHNESS_THRESHOLDS_DAYS.items():
+        path = DATA_DIR / filename
+        if not path.exists():
+            warnings.append(f"{filename}: missing")
+            continue
+        try:
+            with open(path) as f:
+                data = json.load(f)
+        except Exception:
+            warnings.append(f"{filename}: unreadable")
+            continue
+
+        last_updated = data.get("last_updated")
+        if not last_updated:
+            warnings.append(f"{filename}: missing last_updated")
+            continue
+
+        dt = None
+        try:
+            dt = datetime.fromisoformat(last_updated)
+        except ValueError:
+            try:
+                dt = datetime.strptime(last_updated, "%Y-%m-%d")
+            except ValueError:
+                warnings.append(f"{filename}: invalid last_updated '{last_updated}'")
+                continue
+
+        days_old = (datetime.now() - dt).days
+        if days_old > max_days:
+            warnings.append(f"{filename}: {days_old} days old (>{max_days})")
+
+    if warnings:
+        print("\nData freshness warnings:", file=sys.stderr)
+        for w in warnings:
+            print(f"  - {w}", file=sys.stderr)
 
 
 def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
@@ -267,6 +334,88 @@ def scrape_listings(
     return result
 
 
+def scrape_condo_listings(
+    condo_name: str,
+    min_price: int,
+    max_price: int,
+    beds: list[int],
+    max_pages: int = 5,
+    headless: bool = True,
+    enrich_top: int = 0,
+    fuzzy: bool = True,
+    max_results: int = 80,
+) -> list[dict]:
+    """Scrape listings by condo name (fuzzy search via freetext)."""
+    from scrapers.browser import BrowserManager
+    from scrapers.propertyguru import PropertyGuruScraper
+    from models import SearchParams
+    from difflib import SequenceMatcher
+    import re
+
+    def _norm(text: str) -> str:
+        text = re.sub(r"[^a-z0-9 ]", " ", text.lower())
+        return " ".join(text.split())
+
+    def _score(title: str, project: str) -> float:
+        target = _norm(condo_name)
+        cand = _norm(project or title)
+        if not target or not cand:
+            return 0.0
+        if target == cand:
+            return 1.0
+        return SequenceMatcher(None, target, cand).ratio()
+
+    params = SearchParams(
+        property_type="C",
+        listing_type="sale",
+        min_price=min_price,
+        max_price=max_price,
+        beds=beds,
+        freetext=condo_name,
+    )
+
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("SCRAPING PROPERTYGURU (condo-name mode)", file=sys.stderr)
+    print(f"{'='*60}", file=sys.stderr)
+    print(f"  Condo: {condo_name}", file=sys.stderr)
+    print(f"  Price: ${min_price:,} - ${max_price:,}", file=sys.stderr)
+    print(f"  Beds: {beds}", file=sys.stderr)
+    print(f"  Max pages: {max_pages}", file=sys.stderr)
+    print(f"  Fuzzy matching: {'ON' if fuzzy else 'OFF'}", file=sys.stderr)
+    if enrich_top > 0:
+        print(f"  Enrich top: {enrich_top} listings", file=sys.stderr)
+
+    with BrowserManager(headless=headless) as context:
+        scraper = PropertyGuruScraper(context)
+        listings = scraper.scrape(params, max_pages=max_pages)
+        if enrich_top > 0 and listings:
+            scraper.enrich_listings(listings, top_n=enrich_top)
+
+    result = [l.to_dict() if hasattr(l, 'to_dict') else l for l in listings]
+
+    def _passes(item: dict) -> bool:
+        title = item.get("title", "")
+        project = item.get("project_name", "")
+        score = _score(title, project)
+        item["condo_match_score"] = round(score, 3)
+        if not fuzzy:
+            return score >= 1.0
+        return score >= 0.65
+
+    filtered = [item for item in result if _passes(item)]
+    filtered.sort(key=lambda x: x.get("condo_match_score", 0), reverse=True)
+    if max_results and len(filtered) > max_results:
+        filtered = filtered[:max_results]
+
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("SCRAPING STATS", file=sys.stderr)
+    print(f"{'='*60}", file=sys.stderr)
+    print(f"  Listings fetched: {len(result)}", file=sys.stderr)
+    print(f"  Listings matched: {len(filtered)}", file=sys.stderr)
+
+    return filtered
+
+
 def deduplicate_by_project(scored: list[ScoredListing]) -> list[ScoredListing]:
     """Group listings from the same condo into one entry.
 
@@ -295,10 +444,77 @@ def deduplicate_by_project(scored: list[ScoredListing]) -> list[ScoredListing]:
     return result
 
 
+def group_condo_by_unit_type(scored: list[ScoredListing]) -> list[ScoredListing]:
+    """Group condo listings by (project_name, beds) for per-unit-type analysis.
+
+    Instead of collapsing all units into one entry, this keeps one
+    representative per bedroom type with full unit variant data.
+    The median-priced listing is chosen as representative (within the
+    same condo, scores are similar — price is the differentiator).
+    """
+    from collections import defaultdict
+    import statistics
+
+    groups: dict[tuple[str, int], list[ScoredListing]] = defaultdict(list)
+
+    for listing in scored:
+        key_name = (listing.project_name or listing.title or "").strip().lower()
+        key_beds = listing.beds or 0
+        groups[(key_name, key_beds)].append(listing)
+
+    result = []
+    for (proj_key, beds), members in groups.items():
+        if not proj_key:
+            result.extend(members)
+            continue
+
+        # Sort by price to pick median
+        members.sort(key=lambda s: s.price)
+        median_idx = len(members) // 2
+        representative = members[median_idx]
+
+        # Build unit_variants list
+        variants = []
+        for m in members:
+            variant = {
+                "price": m.price,
+                "psf": m.psf,
+                "sqft": m.sqft,
+                "floor_level": m.floor_level,
+                "facing": m.facing,
+                "url": m.url,
+            }
+            variants.append(variant)
+
+        representative.unit_variants = variants
+
+        # Build unit_summary
+        prices = [m.price for m in members]
+        psfs = [m.psf for m in members if m.psf]
+        floors = [m.floor_level for m in members if m.floor_level]
+        representative.unit_summary = {
+            "count": len(members),
+            "price_range": [min(prices), max(prices)] if prices else [],
+            "psf_range": [min(psfs), max(psfs)] if psfs else [],
+            "floors": sorted(set(floors)) if floors else [],
+        }
+
+        # Collect additional URLs (all URLs except the representative's)
+        representative.additional_urls = [
+            m.url for m in members if m.url and m.url != representative.url
+        ]
+
+        result.append(representative)
+
+    # Sort by (beds, -total_score)
+    result.sort(key=lambda s: (s.beds or 0, -s.total_score))
+    return result
+
+
 def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = False):
-    """Print analysis results to console (v2.0 format)."""
+    """Print analysis results to console (v2.2 format)."""
     print(f"\n{'='*70}")
-    print("INVESTMENT ANALYSIS RESULTS (v2.0)")
+    print("INVESTMENT ANALYSIS RESULTS (v2.2)")
     print(f"{'='*70}")
 
     # Calculate stats
@@ -311,13 +527,17 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
     ura_count = sum(1 for s in scored if s.has_ura_data)
 
     # Count tiers with new thresholds
-    tier1 = [s for s in scored if s.total_score >= 60]
-    tier2 = [s for s in scored if 45 <= s.total_score < 60]
-    tier3 = [s for s in scored if s.total_score < 45]
+    tier1 = [s for s in scored if s.final_tier == 1]
+    tier2 = [s for s in scored if s.final_tier == 2]
+    tier3 = [s for s in scored if s.final_tier == 3]
 
     print(f"  Total Analyzed: {len(scored)}")
     print(f"  Score Range: {min_score:.1f} - {max_score:.1f} (avg: {avg_score:.1f})")
-    print(f"  Tier 1 (>=60): {len(tier1)} | Tier 2 (45-59): {len(tier2)} | Tier 3 (<45): {len(tier3)}")
+    print(
+        f"  Tier 1 (>= {SCORE_TIER1_MIN}): {len(tier1)} | "
+        f"Tier 2 ({SCORE_TIER2_MIN}-{SCORE_TIER1_MIN - 1}): {len(tier2)} | "
+        f"Tier 3 (< {SCORE_TIER2_MIN}): {len(tier3)}"
+    )
     print(f"  Real Transaction Data: {ura_count}/{len(scored)} properties")
     print()
 
@@ -348,19 +568,20 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
 
     if verbose:
         print(f"\n\n{'='*70}")
-        print("DETAILED ANALYSIS (v2.0 Scoring)")
+        print("DETAILED ANALYSIS (v2.2 Scoring)")
         print(f"{'='*70}")
 
         for i, s in enumerate(scored[:min(5, top_n)], 1):
             print(f"\n--- #{i} {s.title} ---")
             print(f"  Price: ${s.price:,} | PSF: ${s.psf:,.0f}" if s.psf else f"  Price: ${s.price:,}")
-            print(f"  District: D{s.district} | Beds: {s.beds} | Sqft: {s.sqft:,.0f}" if s.sqft else "")
+            district_label = normalize_district(s.district or "")
+            print(f"  District: {district_label} | Beds: {s.beds} | Sqft: {s.sqft:,.0f}" if s.sqft else "")
             print(f"  Tenure: {s.tenure} | Built: {s.built_year}")
             if s.nearest_mrt:
                 print(f"  MRT: {s.nearest_mrt} ({s.mrt_distance_m}m)")
             print()
 
-            # v2.1 Score breakdown
+            # v2.2 Score breakdown
             print(f"  TOTAL SCORE: {s.total_score:.1f}/100")
             print(f"    Rental Yield:      {s.rental_yield_score:5.1f}/15")
             print(f"    Appreciation:      {s.capital_appreciation_score:5.1f}/30")
@@ -418,7 +639,7 @@ def print_district_discovery():
     scores = scorer.score_all_districts()
 
     print("\n" + "=" * 80)
-    print("AI-RECOMMENDED DISTRICTS FOR INVESTMENT (v2.0)")
+    print("AI-RECOMMENDED DISTRICTS FOR INVESTMENT (v2.2)")
     print("=" * 80)
     print("\nScoring: 30% Historical + 20% Liquidity + 25% Future Infra + 20% Govt Priority + 5% Supply")
     print()
@@ -452,10 +673,10 @@ def print_district_discovery():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Property investment analyzer with URA data integration (v2.0)",
+        description="Property investment analyzer with URA data integration (v2.2)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-SCORING SYSTEM v2.1 (no URA bias):
+SCORING SYSTEM v2.2 (no URA bias):
   Rental Yield: 15 pts | Capital Appreciation: 30 pts | Future Potential: 20 pts
   Liquidity: 25 pts | Cost Efficiency: 10 pts | Red Flags: -10 pts
 
@@ -497,6 +718,16 @@ Examples:
     # Scraping options
     parser.add_argument("--districts", "-d", type=str,
                        help="Comma-separated district numbers (e.g., 3,5,14,15)")
+    parser.add_argument("--condo", type=str,
+                       help="Condo/project name to search for (fuzzy matching by default)")
+    parser.add_argument("--condo-max-pages", type=int, default=5,
+                       help="Max pages to scrape for condo search (default: 5)")
+    parser.add_argument("--condo-max-results", type=int, default=80,
+                       help="Max listings to keep for condo search (default: 80)")
+    parser.add_argument("--condo-fuzzy", dest="condo_fuzzy", action="store_true", default=True,
+                       help="Enable fuzzy condo-name matching (default: enabled)")
+    parser.add_argument("--condo-exact", dest="condo_fuzzy", action="store_false",
+                       help="Exact match only (disables fuzzy matching)")
     parser.add_argument("--min-price", type=int, default=2000000,
                        help="Minimum price (default: 2000000)")
     parser.add_argument("--max-price", type=int, default=3000000,
@@ -533,14 +764,13 @@ Examples:
                        help="Number of top properties to show (default: 10)")
     parser.add_argument("--verbose", "-v", action="store_true",
                        help="Show detailed score breakdowns")
-    parser.add_argument("--headless", action="store_true", default=True,
-                       help="Run browser in headless mode (default: True)")
     parser.add_argument("--no-headless", action="store_true",
-                       help="Show browser window")
+                       help="Show browser window (default: headless)")
     parser.add_argument("--list-districts", action="store_true",
                        help="List all districts and exit")
 
     args = parser.parse_args()
+    headless = not args.no_headless
 
     # Handle --discover-districts (NEW)
     if args.discover_districts:
@@ -619,6 +849,8 @@ Examples:
             cap_info = ab.get("capital_appreciation", {})
             listing.appreciation_rate = (cap_info.get("rate_pct") or 2) / 100
             listing.appreciation_source = cap_info.get("source") or "default"
+            if entry.get("roi_sensitivity"):
+                listing.roi_sensitivity = entry.get("roi_sensitivity")
 
             # Restore ROI projections
             from scoring.models import ROIResult
@@ -653,6 +885,110 @@ Examples:
             listing.agent_appreciation_assessment = entry.get("agent_appreciation_assessment")
             listing.agent_stack_notes = entry.get("agent_stack_notes")
             listing.agent_confidence = entry.get("agent_confidence")
+            listing.agent_appreciation_rate_pct = entry.get("agent_appreciation_rate_pct")
+            listing.agent_appreciation_source = entry.get("agent_appreciation_source")
+
+            # Apply AI appreciation override (if provided)
+            if listing.agent_appreciation_rate_pct is not None:
+                try:
+                    agent_rate_pct = float(listing.agent_appreciation_rate_pct)
+                except (TypeError, ValueError):
+                    agent_rate_pct = None
+                if agent_rate_pct is not None:
+                    listing.appreciation_rate = agent_rate_pct / 100
+                    listing.appreciation_source = "agent_override"
+
+                    # Recompute capital appreciation score using stored components
+                    cap_components = cap_info.get("components", {})
+                    if cap_components:
+                        from scoring.full_scorer import FullScorer
+                        rate_points = FullScorer.score_appreciation_rate_points(
+                            agent_rate_pct,
+                            listing.appreciation_source,
+                        )
+                        other_points = (
+                            (cap_components.get("momentum_points") or 0)
+                            + (cap_components.get("psf_vs_median_points") or 0)
+                            + (cap_components.get("tenure_points") or 0)
+                            + (cap_components.get("property_age_points") or 0)
+                        )
+                        listing.capital_appreciation_score = rate_points + other_points
+                    else:
+                        from scoring.full_scorer import FullScorer
+                        rate_points = FullScorer.score_appreciation_rate_points(
+                            agent_rate_pct,
+                            listing.appreciation_source,
+                        )
+                        prev_rate_pct = cap_info.get("rate_pct")
+                        prev_source = cap_info.get("source") or listing.appreciation_source
+                        try:
+                            prev_rate_points = (
+                                FullScorer.score_appreciation_rate_points(float(prev_rate_pct), prev_source)
+                                if prev_rate_pct is not None
+                                else None
+                            )
+                        except (TypeError, ValueError):
+                            prev_rate_points = None
+                        total_cap = cap_info.get("score", listing.capital_appreciation_score)
+                        if prev_rate_points is not None:
+                            listing.capital_appreciation_score = total_cap - prev_rate_points + rate_points
+                        else:
+                            listing.capital_appreciation_score = rate_points
+
+                    # Recompute ROI projections
+                    from scoring.roi import ROICalculator
+                    roi_calc = ROICalculator()
+                    listing_dict = {
+                        "price": listing.price,
+                        "sqft": listing.sqft,
+                        "district": listing.district,
+                    }
+                    roi_results = roi_calc.calculate_multiple_periods(
+                        listing_dict,
+                        periods=[5, 6, 7],
+                        monthly_rent=listing.estimated_monthly_rent if listing.estimated_monthly_rent > 0 else None,
+                        appreciation_rate=listing.appreciation_rate,
+                    )
+                    listing.roi_5yr = roi_results.get(5)
+                    listing.roi_6yr = roi_results.get(6)
+                    listing.roi_7yr = roi_results.get(7)
+                    sensitivity = roi_calc.calculate_sensitivity(
+                        listing_dict,
+                        periods=[5, 7],
+                        monthly_rent=listing.estimated_monthly_rent if listing.estimated_monthly_rent > 0 else None,
+                        appreciation_rate=listing.appreciation_rate,
+                    )
+                    try:
+                        from config import (
+                            ROI_SENSITIVITY_RENT_DELTA_PCT,
+                            ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
+                        )
+                    except ImportError:
+                        ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
+                        ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
+
+                    def _roi_summary(roi):
+                        return {
+                            "exit_price": roi.estimated_exit_price,
+                            "total_return": round(roi.total_return, 2),
+                            "roi_pct": round(roi.roi_percent, 2),
+                            "annualized_roi": round(roi.annualized_roi, 2),
+                        }
+
+                    listing.roi_sensitivity = {
+                        "assumptions": {
+                            "rent_delta_pct": ROI_SENSITIVITY_RENT_DELTA_PCT,
+                            "appreciation_delta_pct": ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
+                        },
+                        "5yr": {
+                            "downside": _roi_summary(sensitivity["downside"][5]),
+                            "upside": _roi_summary(sensitivity["upside"][5]),
+                        },
+                        "7yr": {
+                            "downside": _roi_summary(sensitivity["downside"][7]),
+                            "upside": _roi_summary(sensitivity["upside"][7]),
+                        },
+                    }
 
             scored.append(listing)
 
@@ -672,7 +1008,8 @@ Examples:
         print(f"  Score adjustments: {adjusted_count}", file=sys.stderr)
 
         # Generate output
-        output_base = args.output or args.from_review.replace(".json", "")
+        output_base = args.output or str(Path(args.from_review).with_suffix(""))
+        Path(output_base).parent.mkdir(parents=True, exist_ok=True)
         report_path = f"{output_base}_report.md"
         save_report(scored, report_path, report_level=report_level)
         print(f"\nFinal report saved: {report_path}")
@@ -694,6 +1031,7 @@ Examples:
         print_results(scored, args.top, args.verbose)
         return
 
+
     # Handle --build-ura-cache
     if args.build_ura_cache:
         print("\nBuilding URA cache from CSV files...")
@@ -713,12 +1051,41 @@ Examples:
         fetch_districts_main()
         return
 
-    headless = not args.no_headless
+    run_dir = None
+
+    # Handle --condo mode (scrape by condo name)
+    if args.condo:
+        beds = [int(b.strip()) for b in args.beds.split(",")]
+        # Default enrich_top=20 in condo mode to get floor_level/facing
+        condo_enrich = args.enrich_top if args.enrich_top > 0 else 20
+        listings = scrape_condo_listings(
+            condo_name=args.condo,
+            min_price=args.min_price,
+            max_price=args.max_price,
+            beds=beds,
+            max_pages=args.condo_max_pages,
+            headless=headless,
+            enrich_top=condo_enrich,
+            fuzzy=args.condo_fuzzy,
+            max_results=args.condo_max_results,
+        )
+
+        if not listings:
+            print("No listings found", file=sys.stderr)
+            return
+
+        run_dir = next_run_dir()
+        safe_condo = "_".join(args.condo.lower().split())
+        listings_file = run_dir / f"listings_{safe_condo}.json"
+        with open(listings_file, "w") as f:
+            json.dump(listings, f, indent=2, ensure_ascii=False)
+        print(f"Run directory: {run_dir}", file=sys.stderr)
+        print(f"Saved: {listings_file}", file=sys.stderr)
 
     # Handle --auto mode (NEW)
-    if args.auto:
+    elif args.auto:
         print("\n" + "=" * 60, file=sys.stderr)
-        print("AUTOMATIC DISTRICT DISCOVERY (v2.0)", file=sys.stderr)
+        print("AUTOMATIC DISTRICT DISCOVERY (v2.2)", file=sys.stderr)
         print("=" * 60, file=sys.stderr)
 
         districts = discover_districts(
@@ -746,13 +1113,13 @@ Examples:
             print("No listings found", file=sys.stderr)
             return
 
-        # Save scraped listings
-        OUTPUT_DIR.mkdir(exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        # Save scraped listings into run directory
+        run_dir = next_run_dir()
         district_str = "_".join(str(d) for d in districts)
-        listings_file = OUTPUT_DIR / f"listings_auto_D{district_str}_{timestamp}.json"
+        listings_file = run_dir / f"listings_D{district_str}.json"
         with open(listings_file, "w") as f:
             json.dump(listings, f, indent=2, ensure_ascii=False)
+        print(f"Run directory: {run_dir}", file=sys.stderr)
         print(f"Saved: {listings_file}", file=sys.stderr)
 
     # Get listings (manual mode)
@@ -792,20 +1159,21 @@ Examples:
             print("No listings found", file=sys.stderr)
             return
 
-        # Save scraped listings
-        OUTPUT_DIR.mkdir(exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        # Save scraped listings into run directory
+        run_dir = next_run_dir()
         district_str = "_".join(str(d) for d in districts)
-        listings_file = OUTPUT_DIR / f"listings_D{district_str}_{timestamp}.json"
+        listings_file = run_dir / f"listings_D{district_str}.json"
         with open(listings_file, "w") as f:
             json.dump(listings, f, indent=2, ensure_ascii=False)
+        print(f"Run directory: {run_dir}", file=sys.stderr)
         print(f"Saved: {listings_file}", file=sys.stderr)
 
-    elif not args.auto:
+    else:
         # No mode specified
         parser.print_help()
-        print("\n\nError: Must specify --auto, --districts, or --input", file=sys.stderr)
+        print("\n\nError: Must specify --auto, --condo, --districts, or --input", file=sys.stderr)
         return
+
 
     # Load URA cache
     ura_data = load_ura_cache()
@@ -849,6 +1217,9 @@ Examples:
         print(f"  ** Or build cache from existing CSVs: **", file=sys.stderr)
         print(f"  **   python invest.py --build-ura-cache data/ura_*.csv **", file=sys.stderr)
 
+    # Data freshness warning (best-effort)
+    warn_if_stale_data()
+
     # Score listings with pre-filtering (skip full scoring on obvious rejects)
     print(f"\nScoring {len(listings)} listings...", file=sys.stderr)
     result = score_and_filter(listings, min_quick_score=40, ura_data=ura_data)
@@ -861,51 +1232,102 @@ Examples:
         print("No scoreable listings", file=sys.stderr)
         return
 
-    # Deduplicate: group listings from the same condo
+    # Deduplicate / group listings
     pre_dedup = len(scored)
-    scored = deduplicate_by_project(scored)
-    if len(scored) < pre_dedup:
-        print(f"  Deduplicated: {pre_dedup} -> {len(scored)} unique condos", file=sys.stderr)
+    if args.condo:
+        scored = group_condo_by_unit_type(scored)
+        if len(scored) < pre_dedup:
+            print(f"  Grouped by unit type: {pre_dedup} -> {len(scored)} unit types", file=sys.stderr)
+    else:
+        scored = deduplicate_by_project(scored)
+        if len(scored) < pre_dedup:
+            print(f"  Deduplicated: {pre_dedup} -> {len(scored)} unique condos", file=sys.stderr)
 
-    # Generate outputs
-    if args.output:
-        report_path = f"{args.output}.md"
-        save_report(scored, report_path)
+    # Generate outputs — always produce report + raw JSON into run directory
+    if run_dir:
+        # Always save markdown report
+        report_path = str(run_dir / "report.md")
+        report_title = f"Condo Analysis: {args.condo}" if args.condo else "Property Investment Analysis"
+        save_report(scored, report_path, title=report_title)
         print(f"\nReport saved: {report_path}")
 
-    if args.csv:
-        csv_content = generate_csv_export(scored)
-        with open(args.csv, "w") as f:
-            f.write(csv_content)
-        print(f"CSV saved: {args.csv}")
-
-    if args.json:
+        # Always save scored JSON
         json_data = {
             "analyzed_at": datetime.now().isoformat(),
             "total": len(scored),
             "ura_data_used": sum(1 for s in scored if "ura" in s.appreciation_source.lower()),
             "listings": [s.to_dict() for s in scored],
         }
-        with open(args.json, "w") as f:
+        json_path = str(run_dir / "scored.json")
+        with open(json_path, "w") as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
-        print(f"JSON saved: {args.json}")
+        print(f"JSON saved: {json_path}")
 
-    if args.raw:
-        # Build run config for the raw output
+        # Always save raw analysis for agent review
         run_config = {
             "price_range": [args.min_price, args.max_price],
             "beds": [int(b.strip()) for b in args.beds.split(",")],
         }
+        if args.condo:
+            run_config["condo"] = args.condo
+            run_config["condo_fuzzy"] = args.condo_fuzzy
+            run_config["condo_max_pages"] = args.condo_max_pages
+            run_config["condo_max_results"] = args.condo_max_results
         if args.districts:
             run_config["districts"] = [f"D{d.strip()}" for d in args.districts.split(",")]
         elif args.auto:
             run_config["districts"] = [f"D{d}" for d in districts]
 
-        raw_path = save_raw_analysis(scored, args.raw, ura_data, run_config)
-        print(f"\nRaw analysis saved: {raw_path}")
-        print(f"  -> {len(scored)} listings with algo scores + empty agent fields")
-        print(f"  -> Next: AI agent reviews this file, fills agent_* fields")
-        print(f"  -> Then: python invest.py --from-review {raw_path}")
+        raw_path = save_raw_analysis(scored, str(run_dir / "raw_analysis.json"), ura_data, run_config)
+        print(f"Raw analysis saved: {raw_path}")
+
+        # CSV if requested
+        if args.csv:
+            csv_content = generate_csv_export(scored)
+            csv_path = str(run_dir / "export.csv")
+            with open(csv_path, "w") as f:
+                f.write(csv_content)
+            print(f"CSV saved: {csv_path}")
+
+        print(f"\n  All outputs in: {run_dir}")
+        print(f"  -> {len(scored)} listings scored")
+        print(f"  -> To do agent review: fill agent_* fields in {raw_path}")
+        print(f"  -> Then: python invest.py --from-review {raw_path} --output {run_dir / 'final'}")
+
+    else:
+        # --input mode (no run_dir) — use explicit output flags
+        if args.output:
+            Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+            report_path = f"{args.output}.md"
+            save_report(scored, report_path)
+            print(f"\nReport saved: {report_path}")
+
+        if args.csv:
+            csv_content = generate_csv_export(scored)
+            with open(args.csv, "w") as f:
+                f.write(csv_content)
+            print(f"CSV saved: {args.csv}")
+
+        if args.json:
+            json_data = {
+                "analyzed_at": datetime.now().isoformat(),
+                "total": len(scored),
+                "ura_data_used": sum(1 for s in scored if "ura" in s.appreciation_source.lower()),
+                "listings": [s.to_dict() for s in scored],
+            }
+            with open(args.json, "w") as f:
+                json.dump(json_data, f, indent=2, ensure_ascii=False)
+            print(f"JSON saved: {args.json}")
+
+        if args.raw:
+            run_config = {
+                "price_range": [args.min_price, args.max_price],
+                "beds": [int(b.strip()) for b in args.beds.split(",")],
+            }
+            if args.districts:
+                run_config["districts"] = [f"D{d.strip()}" for d in args.districts.split(",")]
+            raw_path = save_raw_analysis(scored, args.raw, ura_data, run_config)
+            print(f"\nRaw analysis saved: {raw_path}")
 
     # Print results
     print_results(scored, args.top, args.verbose)

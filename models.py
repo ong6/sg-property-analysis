@@ -14,6 +14,7 @@ class SearchParams:
     districts: Optional[list[int]] = None
     sort: str = "date"
     order: str = "desc"
+    freetext: Optional[str] = None
 
     def to_query_params(self, page: int = 1) -> dict:
         """Return params as a dict (for JSON serialization)."""
@@ -31,6 +32,8 @@ class SearchParams:
             params["districtCode"] = ",".join(f"D{d:02d}" for d in self.districts)
         if page > 1:
             params["page"] = str(page)
+        if self.freetext:
+            params["freetext"] = self.freetext
         return params
 
     def to_url_path(self, page: int = 1) -> str:
@@ -77,6 +80,8 @@ class SearchParams:
             pairs.append(("sort", self.sort))
         if self.order != "desc":
             pairs.append(("order", self.order))
+        if self.freetext:
+            pairs.append(("freetext", self.freetext))
         return urlencode(pairs) if pairs else ""
 
 

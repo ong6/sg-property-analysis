@@ -75,16 +75,16 @@ An AI-driven ranking of all 28 Singapore districts using macro factors (historic
 PropertyGuru listings are scraped for the target districts, extracting price, PSF, bedrooms, tenure, built year, MRT proximity, coordinates, development size, facing, and more.
 
 ### Stage 3: Quick Filter (Phase 1)
-A fast pre-screening pass using only scraped data. Listings scoring below 40/85 (or violating hard filters) are eliminated. This avoids wasting expensive API calls on poor candidates.
+A fast pre-screening pass using only scraped data. Listings scoring below **40/85** (or violating hard filters) are eliminated. This avoids wasting expensive API calls on poor candidates. Tier thresholds are **60 (Tier 1)** and **45 (Tier 2)**, but the pre-filter cutoff is intentionally lenient at 40.
 
 ### Stage 4: Full Scoring (Phase 2)
 Surviving listings are scored on the full 100-point system using URA transaction data, rental estimates, geographic analysis, and infrastructure data.
 
 ### Stage 5: ROI Projection
-For top-ranked properties, detailed return-on-investment projections are computed for 5/6/7-year hold periods, incorporating stamp duties, holding costs, and appreciation decay.
+For top-ranked properties, detailed return-on-investment projections are computed for 5/6/7-year hold periods, incorporating stamp duties, holding costs, and appreciation decay. A simple **sensitivity range** is also produced (downside/base/upside) by shifting rent and appreciation assumptions.
 
 ### Stage 6: Raw Output (for AI agent)
-When `--raw` is used, the algo outputs a structured JSON file (`raw_analysis.json`) containing all computed scores, breakdowns, and ROI projections — plus empty `agent_*` fields for the AI to fill in. This is the handoff point from algo to AI.
+When `--raw` is used, the algo outputs a structured JSON file (`raw_analysis.json`) containing all computed scores, breakdowns, ROI projections, and ROI sensitivity ranges — plus empty `agent_*` fields for the AI to fill in. This is the handoff point from algo to AI.
 
 ### Stage 7: AI Agent Review
 The AI agent (Claude Code) reads the raw analysis file and performs qualitative research:
@@ -103,6 +103,8 @@ The AI agent (Claude Code) reads the raw analysis file and performs qualitative 
    - `agent_rental_assessment`: qualitative rental demand outlook
    - `agent_appreciation_assessment`: qualitative price trajectory view
    - `agent_score_adjustment`: bounded [-8, +8] score tweak with reason
+   - `agent_appreciation_rate_pct`: (optional) if algo used fallback appreciation, AI can supply a researched rate
+   - `agent_appreciation_source`: (optional) source for the AI-provided appreciation rate
    - `agent_confidence`: "high"/"medium"/"low" trust in the algo score
 
 3. **Fills in report-level fields**:
@@ -183,6 +185,8 @@ Measures current income-generating potential. Weight is kept moderate because gr
 - Within 8km of city center: 3 pts
 - Suburban: 2 pts
 
+**Note:** MRT proximity is percentile-scored within the current cohort when enough data is available; otherwise it falls back to distance thresholds.
+
 ---
 
 ### B. Capital Appreciation (30 pts)
@@ -216,7 +220,7 @@ Based on annualized price growth from URA transaction data:
 1. URA resale-only CAGR (preferred when new-launch bias detected)
 2. URA all-transaction 5-year CAGR
 3. PropertyGuru transaction scraping
-4. Default: 2%/yr (capped at 4 pts max)
+4. Regional baseline fallback (flagged for AI review)
 
 **Confidence Scaling**: The rate score is multiplied by a confidence factor based on transaction count:
 
@@ -253,6 +257,8 @@ Properties trading below their district median PSF have structural upside:
 | ≤ 1.00 | 3 | At or below median |
 | ≤ 1.10 | 1 | Slightly above median |
 | > 1.10 | 0 | Premium priced — limited upside |
+
+When enough listings exist in the current cohort for that district, PSF is scored by percentile (cheaper percentile = more points), then falls back to the ratio table above.
 
 #### Tenure (0–4 pts)
 
@@ -291,9 +297,11 @@ Measures upcoming catalysts that could drive future price growth. Forward-lookin
 
 #### Future MRT Lines Tracked
 
+Only lines that are **not yet operational** and have completion year **>= current year** are treated as “future” for scoring.
+
 | Line | Stations | Completion |
 |------|----------|------------|
-| TEL (Thomson-East Coast) | 29 | 2025 (operational) |
+| TEL (Thomson-East Coast) | 29 | 2025 (operational, excluded) |
 | CRL (Cross Island) | 12 (Phase 1) | 2030 |
 | JRL (Jurong Region) | 18 | 2028 |
 | DTL Extension | 2 | 2026 |
@@ -329,7 +337,7 @@ The **second-heaviest category**. A property is only a good investment if you ca
 
 | Sub-component | Max | Scoring |
 |---------------|-----|---------|
-| Transaction Volume | 8 | ≥50 txns: 8 · ≥20: 6 · ≥10: 4 · ≥5: 2 |
+| Transaction Volume | 8 | Total txns (all available years): ≥50: 8 · ≥20: 6 · ≥10: 4 · ≥5: 2 |
 | Buyer Pool Depth | 7 | very_deep: 7 · deep: 5 · moderate: 3 · shallow: 1 |
 | Development Size | 5 | ≥600 units: 5 · ≥400: 4 · ≥200: 3 · ≥100: 1 |
 | Price Appeal | 5 | $1.8M–$2.5M sweet spot: 5 · Below: 4 · ≤$3M: 2 · >$3M: 1 |
@@ -416,6 +424,12 @@ Year 5: rate × 0.97⁴ = 88.5% of rate
 ```
 
 Example: A 6.0% initial rate becomes 5.82% → 5.65% → 5.48% → 5.32% over 5 years.
+
+### Sensitivity Ranges
+
+To avoid false precision, the system computes a simple **downside/base/upside** range by shifting assumptions:
+- Rent: ±10%
+- Appreciation rate: ±1.5% (absolute)
 
 ### Cost Components
 
@@ -590,11 +604,11 @@ The adjusted rate is never reduced below the regional baseline (CCR: 4.5%, RCR: 
 
 **Solution**: Apply 3% annual decay to the appreciation rate in ROI projections. A 6% rate becomes ~5.3% by year 5.
 
-### Default Data Penalty
+### Fallback Data Penalty
 
-**Problem**: Properties with no real appreciation data get a default 2% rate, which could still score moderately.
+**Problem**: Properties with no real appreciation data must fall back to a regional baseline, which could still score moderately.
 
-**Solution**: When the appreciation source is "default" (no real data), the appreciation rate score is capped at 4 points (out of 14 max).
+**Solution**: When the appreciation source is a fallback (`regional_baseline`), the appreciation rate score is capped at 4 points (out of 14 max) and flagged for AI review.
 
 ---
 

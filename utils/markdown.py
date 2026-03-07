@@ -25,7 +25,7 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     # Header with rank and score
     rank_str = f"#{rank} " if rank > 0 else ""
     lines.append(f"### {rank_str}{listing.title}")
-    lines.append(f"**Score: {listing.total_score:.1f}/100** | Tier {listing.quick_tier}")
+    lines.append(f"**Score: {listing.total_score:.1f}/100** | {listing.final_tier_label}")
     lines.append("")
 
     # Key metrics
@@ -44,10 +44,37 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
         lines.append(f"| Remaining Lease | {listing.remaining_lease} years |")
     if listing.built_year:
         lines.append(f"| Built | {listing.built_year} |")
-    if listing.nearest_mrt:
-        dist = f" ({listing.mrt_distance_m}m)" if listing.mrt_distance_m else ""
-        lines.append(f"| Nearest MRT | {listing.nearest_mrt}{dist} |")
+    if listing.nearest_mrt or listing.mrt_distance_m:
+        if listing.nearest_mrt:
+            dist = f" ({listing.mrt_distance_m}m)" if listing.mrt_distance_m else ""
+            lines.append(f"| Nearest MRT | {listing.nearest_mrt}{dist} |")
+        else:
+            lines.append(f"| Nearest MRT | {listing.mrt_distance_m}m |")
     lines.append("")
+
+    # Unit variants (condo mode)
+    if listing.unit_variants:
+        summary = listing.unit_summary or {}
+        count = summary.get("count", len(listing.unit_variants))
+        price_range = summary.get("price_range", [])
+        psf_range = summary.get("psf_range", [])
+        lines.append(f"**Unit Availability:** {count} listings")
+        if price_range and len(price_range) == 2 and price_range[0] != price_range[1]:
+            lines.append(f"- Price range: {format_currency(price_range[0])} - {format_currency(price_range[1])}")
+        if psf_range and len(psf_range) == 2 and psf_range[0] != psf_range[1]:
+            lines.append(f"- PSF range: {format_currency(psf_range[0])} - {format_currency(psf_range[1])}")
+        lines.append("")
+        lines.append("| # | Price | PSF | Sqft | Floor | Facing | Link |")
+        lines.append("|---|-------|-----|------|-------|--------|------|")
+        for j, v in enumerate(listing.unit_variants, 1):
+            v_price = format_currency(v.get("price", 0))
+            v_psf = format_currency(v["psf"]) if v.get("psf") else "-"
+            v_sqft = f"{v['sqft']:,.0f}" if v.get("sqft") else "-"
+            v_floor = v.get("floor_level") or "-"
+            v_facing = v.get("facing") or "-"
+            v_url = f"[Link]({v['url']})" if v.get("url") else "-"
+            lines.append(f"| {j} | {v_price} | {v_psf} | {v_sqft} | {v_floor} | {v_facing} | {v_url} |")
+        lines.append("")
 
     # Score breakdown (v2.1)
     lines.append("**Score Breakdown:**")
@@ -93,6 +120,8 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
             "project_trend_3yr": "3yr trend",
             "transaction_data": "transaction history",
             "default": "market estimate",
+            "regional_baseline": "regional baseline",
+            "agent_override": "AI research",
         }.get(listing.appreciation_source, listing.appreciation_source)
         lines.append(f"**ROI Projections** *(using {appreciation_pct:.1f}%/yr appreciation from {source_label})*:")
         lines.append("| Period | Exit Price | Total Return | Annualized ROI |")
@@ -108,49 +137,85 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
             lines.append(f"| 7 years | {format_currency(r.estimated_exit_price)} | {format_currency(r.total_return)} | {format_percent(r.annualized_roi)} |")
         lines.append("")
 
-    # Agent assessment sections (only shown if AI review was done)
-    if listing.agent_summary:
-        lines.append("**Agent Assessment:**")
-        lines.append(listing.agent_summary)
+    # ROI sensitivity (down/base/up)
+    if listing.roi_sensitivity:
+        sens = listing.roi_sensitivity
+        lines.append("**ROI Sensitivity (Annualized ROI):**")
+        for years, base_roi in [(5, listing.roi_5yr), (7, listing.roi_7yr)]:
+            if not base_roi:
+                continue
+            period_key = f"{years}yr"
+            down = sens.get(period_key, {}).get("downside", {}).get("annualized_roi")
+            up = sens.get(period_key, {}).get("upside", {}).get("annualized_roi")
+            if down is None or up is None:
+                continue
+            lines.append(
+                f"- {years} years: {format_percent(down)} / {format_percent(base_roi.annualized_roi)} / {format_percent(up)} (down/base/up)"
+            )
+        assumptions = sens.get("assumptions", {})
+        rent_delta = assumptions.get("rent_delta_pct")
+        appr_delta = assumptions.get("appreciation_delta_pct")
+        if rent_delta is not None and appr_delta is not None:
+            lines.append(
+                f"- Assumptions: rent ±{format_percent(rent_delta * 100)}; appreciation ±{format_percent(appr_delta * 100)}"
+            )
         lines.append("")
 
-    if listing.agent_catalysts:
-        lines.append("**Additional Catalysts:**")
-        for catalyst in listing.agent_catalysts:
-            lines.append(f"- {catalyst}")
+    # AI Research & Opinion (only shown if AI review was done)
+    has_ai_review = (
+        listing.agent_summary
+        or listing.agent_catalysts
+        or listing.agent_red_flags
+        or listing.agent_stack_notes
+        or listing.agent_rental_assessment
+        or listing.agent_appreciation_assessment
+        or listing.agent_score_adjustment != 0
+    )
+    if has_ai_review:
+        lines.append("#### AI Research & Opinion")
         lines.append("")
 
-    if listing.agent_red_flags:
-        lines.append("**Risk Factors:**")
-        for flag in listing.agent_red_flags:
-            lines.append(f"- {flag}")
-        lines.append("")
+        if listing.agent_summary:
+            lines.append(listing.agent_summary)
+            lines.append("")
 
-    if listing.agent_stack_notes:
-        lines.append("**Stack Notes:**")
-        lines.append(listing.agent_stack_notes)
-        lines.append("")
+        if listing.agent_catalysts:
+            lines.append("**Catalysts:**")
+            for catalyst in listing.agent_catalysts:
+                lines.append(f"- {catalyst}")
+            lines.append("")
 
-    if listing.agent_rental_assessment:
-        lines.append("**Rental Outlook:**")
-        lines.append(listing.agent_rental_assessment)
-        lines.append("")
+        if listing.agent_red_flags:
+            lines.append("**Risk Factors:**")
+            for flag in listing.agent_red_flags:
+                lines.append(f"- {flag}")
+            lines.append("")
 
-    if listing.agent_appreciation_assessment:
-        lines.append("**Appreciation Outlook:**")
-        lines.append(listing.agent_appreciation_assessment)
-        lines.append("")
+        if listing.agent_stack_notes:
+            lines.append("**Stack & Unit Notes:**")
+            lines.append(listing.agent_stack_notes)
+            lines.append("")
 
-    if listing.agent_score_adjustment != 0:
-        adj = listing.agent_score_adjustment
-        sign = "+" if adj > 0 else ""
-        reason = f" ({listing.agent_adjustment_reason})" if listing.agent_adjustment_reason else ""
-        lines.append(f"**Agent Adjustment:** {sign}{adj:.1f}{reason}")
-        lines.append("")
+        if listing.agent_rental_assessment:
+            lines.append("**Rental Outlook:**")
+            lines.append(listing.agent_rental_assessment)
+            lines.append("")
 
-    if listing.agent_confidence:
-        lines.append(f"**Agent Confidence:** {listing.agent_confidence}")
-        lines.append("")
+        if listing.agent_appreciation_assessment:
+            lines.append("**Appreciation Outlook:**")
+            lines.append(listing.agent_appreciation_assessment)
+            lines.append("")
+
+        if listing.agent_score_adjustment != 0:
+            adj = listing.agent_score_adjustment
+            sign = "+" if adj > 0 else ""
+            reason = f" ({listing.agent_adjustment_reason})" if listing.agent_adjustment_reason else ""
+            lines.append(f"**Score Adjustment:** {sign}{adj:.1f}{reason}")
+            lines.append("")
+
+        if listing.agent_confidence:
+            lines.append(f"**Confidence:** {listing.agent_confidence}")
+            lines.append("")
 
     # Link(s)
     lines.append(f"[View Listing]({listing.url})")
@@ -168,24 +233,42 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
     """Generate summary comparison table."""
     lines = []
 
+    # Detect condo mode: any listing has unit_variants
+    is_condo_mode = any(l.unit_variants for l in listings)
+
     lines.append("## Summary Comparison")
     lines.append("")
-    lines.append("| Rank | Project | Price | PSF | Score | Yield | 5yr ROI |")
-    lines.append("|------|---------|-------|-----|-------|-------|---------|")
 
-    for i, listing in enumerate(listings[:20], 1):
-        price = format_currency(listing.price)
-        psf = format_currency(listing.psf) if listing.psf else "-"
-        score = f"{listing.total_score:.1f}"
-        yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
-        roi_5 = format_percent(listing.roi_5yr.annualized_roi) if listing.roi_5yr else "-"
+    if is_condo_mode:
+        lines.append("| Rank | Type | Price (Median) | PSF | Score | Yield | Units |")
+        lines.append("|------|------|----------------|-----|-------|-------|-------|")
 
-        # Truncate title
-        title = listing.title[:30] + "..." if len(listing.title) > 30 else listing.title
-        if listing.additional_urls:
-            title += f" (+{len(listing.additional_urls)})"
+        for i, listing in enumerate(listings[:20], 1):
+            price = format_currency(listing.price)
+            psf = format_currency(listing.psf) if listing.psf else "-"
+            score = f"{listing.total_score:.1f}"
+            yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
+            beds_str = f"{listing.beds}BR" if listing.beds else "-"
+            unit_count = listing.unit_summary.get("count", 1) if listing.unit_summary else 1
 
-        lines.append(f"| {i} | {title} | {price} | {psf} | {score} | {yield_pct} | {roi_5} |")
+            lines.append(f"| {i} | {beds_str} | {price} | {psf} | {score} | {yield_pct} | {unit_count} |")
+    else:
+        lines.append("| Rank | Project | Price | PSF | Score | Yield | 5yr ROI |")
+        lines.append("|------|---------|-------|-----|-------|-------|---------|")
+
+        for i, listing in enumerate(listings[:20], 1):
+            price = format_currency(listing.price)
+            psf = format_currency(listing.psf) if listing.psf else "-"
+            score = f"{listing.total_score:.1f}"
+            yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
+            roi_5 = format_percent(listing.roi_5yr.annualized_roi) if listing.roi_5yr else "-"
+
+            # Truncate title
+            title = listing.title[:30] + "..." if len(listing.title) > 30 else listing.title
+            if listing.additional_urls:
+                title += f" (+{len(listing.additional_urls)})"
+
+            lines.append(f"| {i} | {title} | {price} | {psf} | {score} | {yield_pct} | {roi_5} |")
 
     lines.append("")
     return "\n".join(lines)
@@ -239,8 +322,8 @@ def generate_report(
 
     # Quick stats
     if listings:
-        tier1 = [l for l in listings if l.quick_tier == 1]
-        tier2 = [l for l in listings if l.quick_tier == 2]
+        tier1 = [l for l in listings if l.final_tier == 1]
+        tier2 = [l for l in listings if l.final_tier == 2]
 
         lines.append("## Overview")
         lines.append("")
@@ -277,14 +360,14 @@ def generate_report(
     lines.append("## Scoring Methodology")
     lines.append("")
     lines.append("Properties are scored on a 100-point scale optimized for 5-7 year investment.")
-    lines.append("All properties use real transaction data — no bias for cached data.")
+    lines.append("Real transaction data is used when available; default rates are capped to avoid over-scoring.")
     lines.append("")
     lines.append("| Category | Weight | Description |")
     lines.append("|----------|--------|-------------|")
     lines.append("| Rental Yield | 15 pts | Gross yield, MRT proximity, unit config, tenant pool |")
     lines.append("| Capital Appreciation | 30 pts | Real appreciation rate, PSF vs median, tenure, age |")
     lines.append("| Future Potential | 20 pts | Upcoming MRT, govt zones, transformation |")
-    lines.append("| Liquidity | 25 pts | Transaction volume, district popularity, dev size, price appeal |")
+    lines.append("| Liquidity | 25 pts | Transaction volume, buyer pool depth, dev size, price appeal |")
     lines.append("| Cost Efficiency | 10 pts | MCST, property tax, space efficiency |")
     lines.append("| Red Flags | -10 pts | West-facing, small dev, low lease, old property |")
     lines.append("")

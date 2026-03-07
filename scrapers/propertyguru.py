@@ -2,6 +2,8 @@ import json
 import re
 import time
 import logging
+import random
+import hashlib
 from collections import Counter
 from copy import deepcopy
 from patchright.sync_api import BrowserContext, Page, TimeoutError as PlaywrightTimeout
@@ -16,6 +18,7 @@ from config import (
     NEXT_DATA_SELECTOR,
     LISTING_CARD_SELECTORS,
     REQUEST_DELAY_SECONDS,
+    REQUEST_DELAY_JITTER,
     MAX_RETRIES,
     RETRY_BACKOFF_SECONDS,
     LISTINGS_PER_PAGE,
@@ -24,6 +27,7 @@ from config import (
 )
 from models import SearchParams, Listing, ScrapedPage, ScrapeStats
 from scrapers.browser import wait_for_cloudflare
+from utils.geo import normalize_district
 
 logger = logging.getLogger("property-finder")
 
@@ -274,6 +278,7 @@ class PropertyGuruScraper:
         self._intercepted_data: list[dict] = []
         self._seen_ids: set[str] = set()
         self._stats = ScrapeStats()
+        self._interception_page: Page | None = None
 
     @property
     def raw_pages(self) -> list[dict]:
@@ -357,8 +362,9 @@ class PropertyGuruScraper:
                     break
 
             if page_num < effective_max:
-                time.sleep(REQUEST_DELAY_SECONDS)
+                _sleep_with_jitter(REQUEST_DELAY_SECONDS, REQUEST_DELAY_JITTER)
 
+        self._propagate_coordinates(all_listings)
         logger.info("Scraping complete: %d listings collected", len(all_listings))
         return all_listings
 
@@ -374,7 +380,6 @@ class PropertyGuruScraper:
         if len(districts) <= 1:
             # Single district or none — just use regular scrape
             listings = self.scrape(params, max_pages=max_pages)
-            self._stats.parsed_ok = len(listings)
             if districts:
                 self._stats.per_district_counts[districts[0]] = len(listings)
             return listings, self._stats
@@ -393,10 +398,9 @@ class PropertyGuruScraper:
 
             # Reset per-district state
             self._stats = ScrapeStats()
+            self._seen_ids = set()
 
             district_listings = self.scrape(district_params, max_pages=max_pages)
-
-            self._stats.parsed_ok = len(district_listings)
             self._stats.per_district_counts[district] = len(district_listings)
 
             all_listings.extend(district_listings)
@@ -409,7 +413,7 @@ class PropertyGuruScraper:
 
             # Delay between districts (not after the last one)
             if i < len(districts) - 1:
-                time.sleep(REQUEST_DELAY_SECONDS)
+                _sleep_with_jitter(REQUEST_DELAY_SECONDS, REQUEST_DELAY_JITTER)
 
         self._stats = combined_stats
         logger.info(
@@ -466,7 +470,7 @@ class PropertyGuruScraper:
                 logger.warning("  Failed to enrich %s: %s", listing.id, e)
 
             if i < len(candidates) - 1:
-                time.sleep(DETAIL_PAGE_DELAY)
+                _sleep_with_jitter(DETAIL_PAGE_DELAY, REQUEST_DELAY_JITTER)
 
         self._stats.enriched_count = enriched
         logger.info("Enrichment complete: %d/%d listings enriched", enriched, len(candidates))
@@ -563,6 +567,13 @@ class PropertyGuruScraper:
         """Intercept API responses that may contain listing data."""
         self._intercepted_data = []
 
+        if not self._page:
+            return
+
+        # Avoid stacking multiple handlers on the same page
+        if self._interception_page is self._page:
+            return
+
         def handle_response(response):
             try:
                 url = response.url
@@ -581,6 +592,7 @@ class PropertyGuruScraper:
 
         try:
             self._page.on("response", handle_response)
+            self._interception_page = self._page
         except Exception as e:
             logger.debug("Could not set up response interception: %s", e)
 
@@ -605,8 +617,16 @@ class PropertyGuruScraper:
 
                 # Handle Cloudflare
                 cf_resolved = wait_for_cloudflare(self._page, timeout_ms=CLOUDFLARE_WAIT_TIMEOUT)
-                if cf_resolved:
-                    logger.debug("Cloudflare check passed")
+                if not cf_resolved:
+                    logger.warning("Cloudflare challenge unresolved (attempt %d/%d)", attempt, MAX_RETRIES)
+                    if attempt < MAX_RETRIES:
+                        backoff = RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)]
+                        logger.info("Retrying in %ds...", backoff)
+                        time.sleep(backoff)
+                        continue
+                    raise CloudflareBlockedError(
+                        f"Cloudflare challenge unresolved after {MAX_RETRIES} attempts on page {page_num}"
+                    )
 
                 # Multi-strategy extraction
                 result = self._extract_page_data(page_num)
@@ -679,6 +699,7 @@ class PropertyGuruScraper:
         """Record per-page stats from a successful extraction."""
         n = len(result.listings)
         self._stats.total_cards += n
+        self._stats.parsed_ok += n
         self._stats.strategy_counts[strategy] = self._stats.strategy_counts.get(strategy, 0) + 1
         # Track missing fields
         key_fields = ["district", "latitude", "longitude", "facing", "tenure",
@@ -840,9 +861,9 @@ class PropertyGuruScraper:
         except Exception:
             pass
 
-    def _search_for_listings(self, data: dict, page_num: int) -> ScrapedPage | None:
+    def _search_for_listings(self, data: dict, page_num: int, _depth: int = 0) -> ScrapedPage | None:
         """Recursively search a JSON structure for listing arrays."""
-        if not isinstance(data, dict):
+        if not isinstance(data, dict) or _depth > 8:
             return None
 
         # Look for common listing data keys
@@ -890,9 +911,15 @@ class PropertyGuruScraper:
 
             # Recurse into nested dicts
             if isinstance(val, dict):
-                result = self._search_for_listings(val, page_num)
+                result = self._search_for_listings(val, page_num, _depth + 1)
                 if result and result.listings:
                     return result
+            elif isinstance(val, list):
+                for item in val:
+                    if isinstance(item, dict):
+                        result = self._search_for_listings(item, page_num, _depth + 1)
+                        if result and result.listings:
+                            return result
 
         return None
 
@@ -960,7 +987,13 @@ class PropertyGuruScraper:
                     listing_id = m.group(1)
 
             if not listing_id:
-                listing_id = str(hash(title))[:10]
+                listing_id = _stable_listing_id(
+                    url=item.get("url", ""),
+                    title=title,
+                    address=item.get("address", ""),
+                    price=item.get("price", 0),
+                    sqft=item.get("sqft", 0),
+                )
 
             # Parse PSF from text like "S$ 1,769 psf" or "S$ 2,489.91 psf"
             psf = None
@@ -990,7 +1023,7 @@ class PropertyGuruScraper:
                 price=item.get("price", 0),
                 url=item.get("url", ""),
                 address=item.get("address"),
-                district=item.get("district"),
+                district=normalize_district(item.get("district", "")) or item.get("district"),
                 beds=_safe_int(item.get("beds")),
                 baths=_safe_int(item.get("baths")),
                 sqft=_safe_float(item.get("sqft")),
@@ -1194,7 +1227,7 @@ class PropertyGuruScraper:
                 price=int(price),
                 url=url,
                 address=address or None,
-                district=district or None,
+                district=normalize_district(district or "") or (district or None),
                 district_name=district_name or None,
                 region=region or None,
                 beds=beds,
@@ -1227,6 +1260,30 @@ class PropertyGuruScraper:
         except Exception as e:
             logger.warning("Failed to parse listing: %s", e)
             return None
+
+    def _propagate_coordinates(self, listings: list[Listing]) -> None:
+        """Fill missing lat/lng using other listings from the same project."""
+        by_project: dict[str, tuple[float, float]] = {}
+
+        for listing in listings:
+            key = (listing.project_name or listing.title or "").strip().lower()
+            if not key:
+                continue
+            if listing.latitude is not None and listing.longitude is not None:
+                by_project[key] = (listing.latitude, listing.longitude)
+
+        if not by_project:
+            return
+
+        for listing in listings:
+            if listing.latitude is not None and listing.longitude is not None:
+                continue
+            key = (listing.project_name or listing.title or "").strip().lower()
+            if not key:
+                continue
+            coords = by_project.get(key)
+            if coords:
+                listing.latitude, listing.longitude = coords
 
 
 def _safe_int(val) -> int | None:
@@ -1290,3 +1347,17 @@ def _extract_mrt_info(item: dict) -> str | None:
         return str(first)
 
     return None
+
+
+def _stable_listing_id(url: str, title: str, address: str, price: int, sqft: float) -> str:
+    """Generate a stable hash ID when listing id is missing."""
+    raw = f"{url}|{title}|{address}|{price}|{sqft}"
+    return hashlib.md5(raw.encode("utf-8")).hexdigest()[:12]
+
+
+def _sleep_with_jitter(base_seconds: float, jitter: float = 0.3) -> None:
+    if base_seconds <= 0:
+        return
+    jitter = max(0.0, min(0.9, jitter))
+    factor = random.uniform(1 - jitter, 1 + jitter)
+    time.sleep(base_seconds * factor)

@@ -20,6 +20,8 @@ chrome-profile/
 output/*.json
 output/*.md
 output/*.csv
+output/*.txt
+output/run_*/
 
 # Playwright MCP cache
 .playwright-mcp/
