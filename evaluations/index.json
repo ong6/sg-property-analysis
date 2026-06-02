@@ -1,4 +1,12 @@
 {
-  "updated_at": null,
-  "condos": {}
+  "updated_at": "2026-06-02",
+  "condos": {
+    "botanique-at-bartley": {
+      "condo": "Botanique at Bartley",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-02",
+      "eval_count": 1
+    }
+  }
 }

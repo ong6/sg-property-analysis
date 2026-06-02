@@ -1,0 +1,68 @@
+{
+  "condo": "Botanique at Bartley",
+  "slug": "botanique-at-bartley",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-02",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A fairly-priced 2BR in a top-developer, highly liquid leasehold development right next to Bartley MRT. At $2,052 psf it undercuts current comparable listings ($2,110-$2,300 psf) and sits within the 2026 transacted band, so entry risk is low. Returns are solid-but-unspectacular: ~3.2% yield plus ~4.5% appreciation. The call hinges on confirming the unit's floor/facing given known PIE/road noise.",
+      "rating_rationale": "(1) Priced below current comps ($2,052 vs $2,110-$2,300 psf) and at/under 2026 transacted avg ($2,176 psf) - you're not overpaying. (2) UOL build quality (Smeg, Keramag, marble/oak) and 797 units = deep liquidity and reliable resale in the D19 upgrader catchment. (3) 3-min walk to Bartley MRT (Circle Line) is genuine, realised transit value. (4) ~87yr lease is healthy. Held back from Strong Buy by a mediocre ~3.2% yield, modest forward appreciation with no fresh catalyst, and an unverified stack/facing that could expose the unit to expressway/road noise.",
+      "red_flags": [
+        "PIE + Upper Paya Lebar Road noise — road-facing stacks are documented as noisy; this listing does not disclose facing/floor",
+        "Rental yield only ~3.2% gross — below the 4% bar for a property at this price",
+        "Future-potential is thin — Circle Line already running, no new MRT or government transformation zone nearby",
+        "Appreciation has cooled post-2023; boom-era CAGR will not necessarily repeat"
+      ],
+      "catalysts": [
+        "Direct 3-min walk to Bartley MRT (Circle Line) — strong, durable demand anchor for resale and rental",
+        "D19 / Bartley is a deep HDB-upgrader market keeping the $1.4-1.6M band liquid",
+        "UOL reputation + 797-unit scale supports price floor in a soft market",
+        "Priced below current listings — immediate margin of safety on entry"
+      ],
+      "as_of": {
+        "price": 1480000,
+        "psf": 2052,
+        "beds": 2,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": 4.5,
+        "appreciation_source": "agent_research",
+        "gross_yield_pct": 3.24,
+        "nearest_mrt": "Bartley MRT (220m)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 87
+      },
+      "agent_evaluation": {
+        "summary": "A fairly-priced 2BR in a top-developer, highly liquid leasehold development right next to Bartley MRT. At $2,052 psf it undercuts current comparable listings ($2,110-$2,300 psf) and sits within the 2026 transacted band, so entry risk is low. Returns are solid-but-unspectacular: ~3.2% yield plus ~4.5% appreciation. The call hinges on confirming the unit's floor/facing given known PIE/road noise.",
+        "rating": "Buy",
+        "rating_rationale": "(1) Priced below current comps ($2,052 vs $2,110-$2,300 psf) and at/under 2026 transacted avg ($2,176 psf) - you're not overpaying. (2) UOL build quality (Smeg, Keramag, marble/oak) and 797 units = deep liquidity and reliable resale in the D19 upgrader catchment. (3) 3-min walk to Bartley MRT (Circle Line) is genuine, realised transit value. (4) ~87yr lease is healthy. Held back from Strong Buy by a mediocre ~3.2% yield, modest forward appreciation with no fresh catalyst, and an unverified stack/facing that could expose the unit to expressway/road noise.",
+        "red_flags": [
+          "PIE + Upper Paya Lebar Road noise — road-facing stacks are documented as noisy; this listing does not disclose facing/floor",
+          "Rental yield only ~3.2% gross — below the 4% bar for a property at this price",
+          "Future-potential is thin — Circle Line already running, no new MRT or government transformation zone nearby",
+          "Appreciation has cooled post-2023; boom-era CAGR will not necessarily repeat"
+        ],
+        "catalysts": [
+          "Direct 3-min walk to Bartley MRT (Circle Line) — strong, durable demand anchor for resale and rental",
+          "D19 / Bartley is a deep HDB-upgrader market keeping the $1.4-1.6M band liquid",
+          "UOL reputation + 797-unit scale supports price floor in a soft market",
+          "Priced below current listings — immediate margin of safety on entry"
+        ],
+        "rental_assessment": "2BR units rent ~$5.6 psf/mo (URA, last 12mo), implying ~$4,000/mo for 721 sqft and ~3.2% gross yield. MRT-adjacency keeps tenant demand steady, but yield is average for the segment and rents have normalised from the 2022-2023 peak. Fine for a buy-and-hold, not a yield play.",
+        "appreciation_assessment": "Project rose from ~$1,250 psf (2015) to ~$1,915 psf (2024) and ~$2,176 psf (2026 YTD) — strong historically, but driven by the post-COVID boom now past. Forward base case ~4.5%/yr: supported by location/liquidity but capped by the absence of any new catalyst and a mature, fully-priced Circle Line. Upside to ~5% if the broader RCR-adjacent market re-accelerates.",
+        "stack_notes": "Botanique is 9 x 17-storey blocks ~70m apart, with 70%+ of units enjoying pool/landscape views. Target: higher-floor, internal pool/landscape-facing stacks away from Upper Paya Lebar Road and the PIE — quieter, better light, easier to rent/resell. AVOID low-floor stacks fronting the road/expressway (noise complaints are documented). This listing does not state floor/stack/facing — get the unit number and check the site plan before offering; it materially changes the value.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Agent forward estimate from URA/EdgeProp/Squarefoot transaction history (2015-2026), discounted for cooled momentum and no new catalyst"
+      },
+      "source": {
+        "run_dir": "output/run_010",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
