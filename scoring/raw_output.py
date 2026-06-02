@@ -41,90 +41,90 @@ def _load_district_medians() -> dict:
     return _district_medians_cache
 
 
-def _build_algo_breakdown(listing: ScoredListing) -> dict:
-    """Build detailed algo breakdown from a scored listing."""
-    breakdown = {}
+def _build_factual_data(listing: ScoredListing) -> dict:
+    """Extract factual/computed data from a scored listing for AI evaluation.
 
-    # Rental yield
-    rental = {
-        "score": round(listing.rental_yield_score, 1),
-        "max": 15,
+    This separates objective facts (distances, rates, costs, dates) from
+    the algorithm's opinionated point scores. The AI uses these facts to
+    form its own evaluation.
+    """
+    facts: dict[str, Any] = {}
+
+    # --- Rental data ---
+    facts["rental"] = {
+        "estimated_monthly_rent": round(listing.estimated_monthly_rent) if listing.estimated_monthly_rent else None,
         "gross_yield_pct": round(listing.estimated_gross_yield, 2) if listing.estimated_gross_yield else None,
-        "monthly_rent_est": round(listing.estimated_monthly_rent) if listing.estimated_monthly_rent else None,
         "rent_source": listing.rent_source or None,
     }
-    breakdown["rental_yield"] = rental
 
-    # Capital appreciation
-    cap = {
-        "score": round(listing.capital_appreciation_score, 1),
-        "max": 30,
-        "rate_pct": round(listing.appreciation_rate * 100, 2),
-        "source": listing.appreciation_source,
-        "needs_ai_appreciation": listing.needs_ai_appreciation,
+    # --- Capital appreciation data ---
+    appreciation: dict[str, Any] = {
+        "annual_rate_pct": round(listing.appreciation_rate * 100, 2) if listing.appreciation_rate else None,
+        "data_source": listing.appreciation_source,
+        "needs_further_research": listing.needs_ai_appreciation,
     }
-    # Add details from score_breakdown if available
     sb_cap = listing.score_breakdown.get("capital_appreciation", {})
     if sb_cap:
-        cap["components"] = {
-            "appreciation_rate_points": sb_cap.get("appreciation_rate", {}).get("points"),
-            "momentum_points": sb_cap.get("momentum", {}).get("points"),
-            "psf_vs_median_points": sb_cap.get("psf_vs_median", {}).get("points"),
-            "tenure_points": sb_cap.get("tenure", {}).get("points"),
-            "property_age_points": sb_cap.get("property_age", {}).get("points"),
-        }
-        cap["momentum"] = sb_cap.get("momentum", {}).get("value")
-        cap["data_coverage"] = sb_cap.get("momentum", {}).get("data_coverage")
-        cap["txn_count"] = sb_cap.get("appreciation_rate", {}).get("transaction_count")
-        cap["confidence"] = sb_cap.get("appreciation_rate", {}).get("confidence")
-        cap["psf_vs_median_ratio"] = sb_cap.get("psf_vs_median", {}).get("ratio")
-        cap["psf_percentile_quality"] = sb_cap.get("psf_vs_median", {}).get("percentile_quality")
-        cap["district_median_psf"] = sb_cap.get("psf_vs_median", {}).get("median")
-        cap["age_percentile_quality"] = sb_cap.get("property_age", {}).get("percentile_quality")
+        appreciation["transaction_count"] = sb_cap.get("appreciation_rate", {}).get("transaction_count")
+        appreciation["data_confidence"] = sb_cap.get("appreciation_rate", {}).get("confidence")
+        appreciation["momentum"] = sb_cap.get("momentum", {}).get("value")
+        appreciation["momentum_data_coverage"] = sb_cap.get("momentum", {}).get("data_coverage")
+        appreciation["psf_vs_district_median"] = sb_cap.get("psf_vs_median", {}).get("ratio")
+        appreciation["district_median_psf"] = sb_cap.get("psf_vs_median", {}).get("median")
     if listing.appreciation_adjustment != 0:
-        cap["raw_rate_pct"] = round(listing.raw_appreciation_rate * 100, 2)
-        cap["adjustment_pct"] = round(listing.appreciation_adjustment * 100, 2)
-        cap["adjustment_reason"] = listing.adjustment_reason
-    breakdown["capital_appreciation"] = cap
+        appreciation["raw_rate_before_bias_adjustment_pct"] = round(listing.raw_appreciation_rate * 100, 2)
+        appreciation["bias_adjustment_pct"] = round(listing.appreciation_adjustment * 100, 2)
+        appreciation["bias_adjustment_reason"] = listing.adjustment_reason
+    facts["appreciation"] = appreciation
 
-    # Future potential
-    future = {
-        "score": round(listing.future_potential_score, 1),
-        "max": 20,
-        "future_mrt": None,
-        "govt_zones": [],
-    }
+    # --- Future infrastructure ---
+    future: dict[str, Any] = {"nearest_future_mrt": None, "government_zones": []}
     if listing.future_score_details:
         fd = listing.future_score_details
         if fd.nearest_future_mrt:
-            future["future_mrt"] = {
+            future["nearest_future_mrt"] = {
                 "station": fd.nearest_future_mrt,
                 "distance_m": fd.future_mrt_distance_m,
                 "line": fd.future_mrt_line,
             }
-        future["govt_zones"] = fd.govt_zones
-    breakdown["future_potential"] = future
+        future["government_zones"] = fd.govt_zones
+    facts["future_infrastructure"] = future
 
-    # Liquidity
-    breakdown["liquidity"] = {
-        "score": round(listing.liquidity_score, 1),
-        "max": 25,
+    # --- Transaction liquidity ---
+    sb_liq = listing.score_breakdown.get("liquidity", {})
+    facts["liquidity"] = {
+        "ura_transaction_count": sb_cap.get("appreciation_rate", {}).get("transaction_count") if sb_cap else None,
+        "buyer_pool_depth": sb_liq.get("buyer_pool", {}).get("depth") if sb_liq else None,
+        "total_units": sb_liq.get("development_size", {}).get("total_units") if sb_liq else None,
     }
 
-    # Cost efficiency
-    breakdown["cost_efficiency"] = {
-        "score": round(listing.cost_efficiency_score, 1),
-        "max": 10,
-    }
-
-    # Red flags
+    # --- Red flags detected ---
     sb_flags = listing.score_breakdown.get("red_flags", {})
-    breakdown["red_flags"] = {
-        "deductions": round(listing.red_flag_deductions, 1),
-        "flags": sb_flags.get("flags", []),
-    }
+    facts["red_flags_detected"] = sb_flags.get("flags", [])
 
-    return breakdown
+    # --- PSF overpricing check ---
+    psf_premium = listing.score_breakdown.get("red_flags", {}).get("psf_premium_pct")
+    if psf_premium is not None:
+        facts["psf_premium_vs_ura_median_pct"] = round(psf_premium, 1)
+
+    return facts
+
+
+def _build_algo_breakdown(listing: ScoredListing) -> dict:
+    """Build the algorithm's point-score breakdown (reference only).
+
+    The AI should use factual_data for evaluation. This breakdown shows
+    how the algorithm scored the property for reference/comparison.
+    """
+    return {
+        "total_score": round(listing.total_score, 1),
+        "rental_yield": round(listing.rental_yield_score, 1),
+        "capital_appreciation": round(listing.capital_appreciation_score, 1),
+        "future_potential": round(listing.future_potential_score, 1),
+        "liquidity": round(listing.liquidity_score, 1),
+        "cost_efficiency": round(listing.cost_efficiency_score, 1),
+        "red_flag_deductions": round(listing.red_flag_deductions, 1),
+    }
 
 
 def _build_roi_projections(listing: ScoredListing) -> dict:
@@ -205,12 +205,17 @@ def _listing_to_raw(
     rank: int,
     ura_data: dict,
 ) -> dict:
-    """Convert a single ScoredListing to the raw analysis format."""
+    """Convert a single ScoredListing to the raw analysis format.
+
+    Structure: property basics → factual data for AI → ROI projections →
+    context → algo reference scores → agent fields to fill.
+    """
+    # --- Property basics ---
     entry: dict[str, Any] = {
         "rank": rank,
-        "algo_score": round(listing.total_score, 1),
         "title": listing.title,
         "project_name": listing.project_name or listing.title,
+        "url": listing.url,
         "price": listing.price,
         "psf": listing.psf,
         "sqft": listing.sqft,
@@ -219,30 +224,35 @@ def _listing_to_raw(
         "tenure": listing.tenure,
         "remaining_lease": listing.remaining_lease,
         "built_year": listing.built_year,
-        "nearest_mrt": None,
-        "url": listing.url,
     }
 
     # MRT info
-    if listing.nearest_mrt or listing.mrt_distance_m:
-        if listing.nearest_mrt:
-            dist_str = f" ({listing.mrt_distance_m}m)" if listing.mrt_distance_m else ""
-            entry["nearest_mrt"] = f"{listing.nearest_mrt}{dist_str}"
-        elif listing.mrt_distance_m:
-            entry["nearest_mrt"] = f"{listing.mrt_distance_m}m"
-
-    # Algo data
-    entry["algo_breakdown"] = _build_algo_breakdown(listing)
-    entry["roi_projections"] = _build_roi_projections(listing)
-    if listing.roi_sensitivity:
-        entry["roi_sensitivity"] = listing.roi_sensitivity
-    entry["context"] = _build_context(listing, ura_data)
+    if listing.nearest_mrt:
+        entry["nearest_mrt"] = listing.nearest_mrt
+        if listing.mrt_distance_m:
+            entry["nearest_mrt_distance_m"] = listing.mrt_distance_m
+    elif listing.mrt_distance_m:
+        entry["nearest_mrt_distance_m"] = listing.mrt_distance_m
 
     # Floor/facing info
     if listing.floor_level:
         entry["floor_level"] = listing.floor_level
     if listing.facing:
         entry["facing"] = listing.facing
+
+    # --- Factual computed data (for AI evaluation) ---
+    entry["factual_data"] = _build_factual_data(listing)
+
+    # --- ROI projections (factual math given inputs) ---
+    entry["roi_projections"] = _build_roi_projections(listing)
+    if listing.roi_sensitivity:
+        entry["roi_sensitivity"] = listing.roi_sensitivity
+
+    # --- District/market context ---
+    entry["context"] = _build_context(listing, ura_data)
+
+    # --- Algorithm reference scores (for comparison, not authoritative) ---
+    entry["algo_reference"] = _build_algo_breakdown(listing)
 
     # Additional listing URLs (same condo, different units)
     if listing.additional_urls:
@@ -254,18 +264,20 @@ def _listing_to_raw(
     if listing.unit_summary:
         entry["unit_summary"] = listing.unit_summary
 
-    # Agent fields (empty — to be filled by AI)
-    entry["agent_summary"] = None
-    entry["agent_red_flags"] = []
-    entry["agent_catalysts"] = []
-    entry["agent_score_adjustment"] = 0
-    entry["agent_adjustment_reason"] = None
-    entry["agent_rental_assessment"] = None
-    entry["agent_appreciation_assessment"] = None
-    entry["agent_stack_notes"] = None
-    entry["agent_confidence"] = None
-    entry["agent_appreciation_rate_pct"] = None
-    entry["agent_appreciation_source"] = None
+    # --- Agent evaluation fields (to be filled by AI) ---
+    entry["agent_evaluation"] = {
+        "summary": None,
+        "rating": None,
+        "rating_rationale": None,
+        "red_flags": [],
+        "catalysts": [],
+        "rental_assessment": None,
+        "appreciation_assessment": None,
+        "stack_notes": None,
+        "confidence": None,
+        "appreciation_rate_override_pct": None,
+        "appreciation_rate_source": None,
+    }
 
     return entry
 
@@ -297,46 +309,104 @@ def generate_raw_analysis(
         "listings": [],
     }
 
-    # Add AI review instructions (especially detailed for condo mode)
+    # Add AI review instructions — adapt to the *altitude* of the analysis.
     condo_name = config.get("condo")
-    if condo_name:
-        result["ai_review_instructions"] = {
-            "mode": "condo_analysis",
-            "condo_name": condo_name,
-            "steps": [
-                f"1. Web search '{condo_name} Singapore review' for resident reviews, build quality, developer reputation",
-                f"2. Web search '{condo_name} Singapore price trend' for recent transaction prices and market sentiment",
-                f"3. Web search '{condo_name} floor plan facing' for unit layout info, best stacks, facing directions",
-                "4. For each bedroom type, assess: is the median price fair vs recent transactions?",
-                "5. Identify specific catalysts (upcoming MRT, en-bloc potential, area transformation)",
-                "6. Identify specific risks (construction defects, oversupply, lease decay, developer issues)",
-                "7. Fill ALL agent_* fields for each listing entry",
-                "8. Fill report_level fields: agent_executive_summary (2-3 paragraph overall verdict), "
-                "agent_market_commentary (area/market context), agent_methodology_notes (data gaps or caveats)",
-            ],
-            "agent_field_guide": {
-                "agent_summary": "1-2 sentence verdict on this unit type as an investment",
-                "agent_red_flags": "List of specific risks found from research",
-                "agent_catalysts": "List of specific growth drivers found from research",
-                "agent_score_adjustment": "Score adjustment -8 to +8 based on research findings",
-                "agent_adjustment_reason": "Why the score was adjusted",
-                "agent_rental_assessment": "Rental demand outlook for this unit type in this area",
-                "agent_appreciation_assessment": "Price appreciation outlook based on transaction data and area trends",
-                "agent_stack_notes": "Best stacks/floors, facing preferences, units to avoid",
-                "agent_confidence": "high/medium/low based on data availability",
-                "agent_appreciation_rate_pct": "Override appreciation rate if research suggests different from algo (as percentage, e.g. 4.5)",
-                "agent_appreciation_source": "Source for the override rate",
-            },
-        }
+    has_url = bool(config.get("url"))
+    has_variants = any(getattr(l, "unit_variants", None) for l in scored)
+
+    # Determine evaluation mode:
+    #   development   -> a single project (by name or project page): judge the
+    #                    development as a whole + best stacks/facings/units.
+    #   single_listing-> one specific unit/listing: a clean Buy/Neutral/Avoid call.
+    #   market_scan   -> many candidates across districts: per-listing Buy/Neutral/Avoid.
+    if condo_name or has_variants:
+        mode = "development"
+    elif has_url and len(scored) == 1:
+        mode = "single_listing"
     else:
-        result["ai_review_instructions"] = {
-            "mode": "multi_district",
-            "steps": [
-                "1. For top 3-5 properties: web search for project reviews, issues, transaction history",
-                "2. Fill agent_* fields for researched listings",
-                "3. Fill report_level fields with market overview",
-            ],
-        }
+        mode = "market_scan"
+
+    mode_notes = {
+        "development": (
+            "DEVELOPMENT-LEVEL ANALYSIS. The question is whether this DEVELOPMENT is good "
+            "to invest in. Assess the project as a whole, then go granular: which STACKS, "
+            "FACINGS and FLOORS will perform best for investment, and which to avoid. Each "
+            "entry here is one unit type (bedroom count) — rate each, and give an overall "
+            "development verdict in the executive summary. Put stack/facing/floor guidance "
+            "in stack_notes. Still give a Buy/Neutral/Avoid rating per unit type."
+        ),
+        "single_listing": (
+            "INDIVIDUAL LISTING. The question is: should I buy THIS specific unit? Give a "
+            "clear Buy / Neutral / Avoid rating with confidence, grounded in this unit's "
+            "price, PSF vs the development, floor, facing, and the development's fundamentals."
+        ),
+        "market_scan": (
+            "MARKET SCAN across many candidates. For each shortlisted listing give a clear "
+            "Buy / Neutral / Avoid rating with confidence, so the user can compare. Lead "
+            "with the strongest buys in the executive summary."
+        ),
+    }
+
+    steps_by_mode = {
+        "development": [
+            f"1. Web search '{condo_name or 'the project'} Singapore review' — build quality, developer, defects",
+            f"2. Web search '{condo_name or 'the project'} price trend / transactions' — recent resale PSF and direction",
+            f"3. Web search '{condo_name or 'the project'} floor plan site plan facing' — identify best/worst stacks, facings, pool/road-facing units",
+            "4. Judge the DEVELOPMENT as a whole (location, tenure, size, liquidity, catalysts)",
+            "5. For each unit type, set a rating and put stack/facing/floor guidance in stack_notes",
+            "6. Optionally call the technical scorer (invest.py --score) with your researched numbers to sanity-check",
+            "7. Fill report_level: executive summary = overall development verdict + best units to target",
+        ],
+        "single_listing": [
+            "1. Web search the project for reviews, build quality, developer reputation",
+            "2. Web search recent transactions to judge if THIS unit's price/PSF is fair vs the development",
+            "3. Assess this unit's floor, facing, and stack relative to the best in the project",
+            "4. Review factual_data — appreciation source, yield, red flags",
+            "5. Give a clear Buy / Neutral / Avoid rating with confidence and rationale",
+            "6. Fill report_level executive summary with the one-line verdict",
+        ],
+        "market_scan": [
+            "1. For the top candidates: web search project reviews, issues, transaction history",
+            "2. Research area trends, upcoming developments, supply, and market conditions",
+            "3. For each, assess unit quality and stack information where known",
+            "4. Review factual_data per listing — appreciation reliability, yield, red flags",
+            "5. Give each a Buy / Neutral / Avoid rating with confidence",
+            "6. Fill report_level: executive summary leads with the strongest buys",
+        ],
+    }
+
+    result["ai_review_instructions"] = {
+        "mode": mode,
+        "note": (
+            "YOU are the evaluator. factual_data holds objective metrics; algo_reference is the "
+            "algorithm's technical score (one input, not the answer). You can also call the "
+            "technical scorer directly: `python invest.py --score '{...key value-drivers...}'`. "
+            "Form your own rating from the data + web research. See CLAUDE.md for the full rubric. "
+            + mode_notes[mode]
+        ),
+        "steps": steps_by_mode[mode],
+        "agent_field_guide": {
+            "summary": "2-3 sentence investment thesis"
+                       + (" for this development" if mode == "development" else " for this unit"),
+            "rating": "Strong Buy / Buy / Neutral / Avoid  (Avoid = no-buy)",
+            "rating_rationale": "Key reasons for this rating (what makes it good or bad)",
+            "red_flags": "List of specific risks from your research",
+            "catalysts": "List of specific growth drivers from your research",
+            "rental_assessment": "Rental demand outlook for this unit type and area",
+            "appreciation_assessment": "Price trajectory view based on data and research",
+            "stack_notes": ("Best/worst STACKS, FACINGS and FLOORS for investment, and which to avoid"
+                            if mode == "development" else "This unit's stack/floor/facing vs the development's best"),
+            "confidence": "high/medium/low based on data availability and conviction",
+            "appreciation_rate_override_pct": "Your researched appreciation rate if different from data (e.g. 4.5 = 4.5%/yr)",
+            "appreciation_rate_source": "Source for your override rate",
+        },
+        "before_you_start": (
+            "Check past evaluations first: `python invest.py --recall \"<condo>\"`. "
+            "Treat any prior rating as a fallible reference — re-verify the current price and conditions."
+        ),
+    }
+    if condo_name:
+        result["ai_review_instructions"]["condo_name"] = condo_name
 
     for rank, listing in enumerate(scored, 1):
         entry = _listing_to_raw(listing, rank, ura_data)

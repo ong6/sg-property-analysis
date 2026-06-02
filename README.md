@@ -49,36 +49,66 @@ python -m patchright install chromium
 
 ## Quick Start
 
+### Three ways to start an analysis
+
+```bash
+# A — A whole development, by name (groups listings by unit type)
+python invest.py --condo "The Continuum" --beds 1,2,3
+
+# B — A specific PropertyGuru listing, project page, or results page (by URL)
+python invest.py --url "https://www.propertyguru.com.sg/listing/24xxxxxx-..."
+
+# C — A market scan across districts
+python invest.py --auto --beds 2,3 --top 20
+python invest.py --districts 3,5,14,15 --beds 2,3 --top 20
+```
+
+Each run writes `output/run_NNN/` (raw analysis, report, scored JSON) and updates the
+searchable listings sheet. See [CLAUDE.md](CLAUDE.md) for the full Claude Code playbook.
+
 ### Standalone (no AI agent)
 
 ```bash
 # Discover which districts score highest for investment
 python invest.py --discover-districts
 
-# Scrape and score properties in specific districts
-python invest.py --districts 3,5,14,15 --beds 2,3 --top 10 --output output/report
+# Score a condo from key inputs and get the technical breakdown (no scraping)
+python invest.py --score '{"price":2300000,"sqft":958,"psf":2401,"beds":2,"district":"D15","tenure":"Freehold","project_name":"The Continuum","appreciation_rate_pct":5.5,"monthly_rent":6200}'
 
-# Auto-discover best districts, scrape, and score
-python invest.py --auto --beds 2,3 --top 10 --output output/report
+# Search / inspect the continuously-updated listings sheet
+python invest.py --search-db "continuum"
+python invest.py --list-db
+python invest.py --update-db --districts 3,5,14,15 --beds 2,3   # refresh sheet only
 ```
 
 ### With AI Agent Review
 
 ```bash
-# Step 1: Run algo scoring, output raw JSON with empty agent fields
-python invest.py --auto --beds 2,3 --top 10 --raw output/raw_analysis.json
+# Step 0 (optional): recall any past evaluation for this condo first
+python invest.py --recall "The Continuum"
 
-# Step 2: AI agent (or human) reads raw_analysis.json,
-#          researches each top property, fills in agent_* fields,
-#          saves as output/reviewed_analysis.json
+# Step 1: Run algo scoring (any flow above) — each run writes output/run_NNN/raw_analysis.json
+python invest.py --auto --beds 2,3 --top 10
 
-# Step 3: Generate final report from reviewed analysis
-python invest.py --from-review output/reviewed_analysis.json --output output/final
+# Step 2: AI agent (or human) reads raw_analysis.json, researches each top
+#          property, and fills in the agent_evaluation fields (rating + confidence).
+
+# Step 3: Generate the final report — it auto-saves evaluations into evaluations/
+python invest.py --from-review output/run_NNN/raw_analysis.json --output output/run_NNN/final
 ```
+
+The final report leads with a clear **🟢 BUY / 🟡 NEUTRAL / 🔴 AVOID** verdict and
+confidence per listing. Evaluations are written to the git-tracked `evaluations/`
+folder — commit it so past evaluations can be recalled later (they are a *reference*;
+prices and conditions change, so always re-verify).
 
 ### With Claude Code
 
-If you use [Claude Code](https://docs.anthropic.com/en/docs/claude-code), ask it to "find and analyze properties" — it will run the full pipeline automatically, including web research for each top property.
+If you use [Claude Code](https://docs.anthropic.com/en/docs/claude-code), just ask it
+in plain language — **"analyze The Continuum"**, **"analyze this: \<PropertyGuru link\>"**,
+or **"find me 2-bedders in D15"**. It picks the right flow, recalls past evaluations,
+does the web research, fills the evaluation, and generates the report. See
+[CLAUDE.md](CLAUDE.md) for the playbook it follows.
 
 ## CLI Reference
 
@@ -88,6 +118,9 @@ python invest.py [options]
 
 | Flag | Type | Default | Description |
 |------|------|---------|-------------|
+| `--condo` | str | — | Analyze a development by name (groups by unit type) |
+| `--url` | str | — | Analyze a PropertyGuru URL (listing, project page, or results page) |
+| `--score` | JSON | — | Score a condo from key inputs; prints the technical breakdown (AI-callable) |
 | `--auto` | flag | off | Auto-discover top districts, scrape, and score |
 | `--discover-districts` | flag | off | Show district rankings without scraping |
 | `--districts`, `-d` | str | — | Comma-separated district numbers (e.g. `3,5,14`) |
@@ -107,6 +140,15 @@ python invest.py [options]
 | `--fetch-ura-districts` | str | — | Fetch URA data by postal district |
 | `--list-districts` | flag | off | Show all Singapore district numbers |
 | `--no-headless` | flag | off | Show browser window (runs headless by default) |
+| `--recall` | str | — | Recall past evaluations for a condo (git-tracked memory) |
+| `--list-evals` | flag | off | List all stored evaluations |
+| `--save-eval` | path | — | Save evaluations from a reviewed JSON into memory |
+| `--no-save-eval` | flag | off | Don't auto-save evaluations during `--from-review` |
+| `--search-db` | str | — | Search the master listings sheet by condo name |
+| `--list-db` | flag | off | Listings sheet stats (counts, price drops, by district) |
+| `--update-db` | flag | off | Scrape and refresh the listings sheet only (skip scoring) |
+| `--export-sheet` | flag | off | Re-export the listings sheet CSV from the database |
+| `--no-db` | flag | off | Don't upsert scraped listings into the master sheet |
 
 ## Configuration
 
@@ -188,24 +230,23 @@ When using the AI agent pipeline (`--raw` → review → `--from-review`), the r
 
 ```
 property-finder/
-├── invest.py                # Main CLI entry point
+├── invest.py                # Main CLI entry point (all flows + scorer/memory/sheet commands)
 ├── config.py                # Scoring weights, thresholds, investment params
 ├── models.py                # Data models (SearchParams, Listing, etc.)
 ├── fetch_ura_districts.py   # URA district-level data fetcher
-├── warmup.py                # Browser warm-up for Cloudflare cookies
+├── eval_memory.py           # Git-tracked evaluation memory (recall/save past evaluations)
+├── listings_db.py           # Master listings sheet (continuously-updated, searchable)
 │
 ├── scrapers/
-│   ├── propertyguru.py      # PropertyGuru listing scraper
+│   ├── propertyguru.py      # PropertyGuru scraper (search, condo-name, URL, detail pages)
 │   ├── ura_scraper.py       # URA transaction CSV parser
-│   ├── transaction_scraper.py # Transaction history scraper
-│   ├── rental_scraper.py    # Rental data scraper
 │   └── browser.py           # Browser manager (Patchright/Chromium)
 │
 ├── scoring/
 │   ├── full_scorer.py       # 100-point scoring engine
 │   ├── quick_scorer.py      # Fast pre-filter scorer
-│   ├── raw_output.py        # Raw analysis JSON for agent review
-│   ├── models.py            # Score data models (ScoredListing)
+│   ├── raw_output.py        # Raw analysis JSON (mode-aware AI instructions)
+│   ├── models.py            # Score data models (ScoredListing) + verdict mapping
 │   ├── roi.py               # ROI projections with appreciation decay
 │   ├── costs.py             # BSD, ABSD, SSD, property tax calculations
 │   ├── rental_estimator.py  # Rental yield estimation
@@ -213,14 +254,15 @@ property-finder/
 │   └── future_scorer.py     # Infrastructure & govt zone scoring
 │
 ├── utils/
-│   ├── markdown.py          # Report generator
+│   ├── markdown.py          # Report generator (Buy/Neutral/Avoid verdict + confidence)
 │   ├── geo.py               # Distance calculations
 │   └── logging.py           # Logging setup
 │
-├── data/                    # Reference data (MRT stations, zones, caches)
+├── data/                    # Reference data + listings sheet (db.json / sheet.csv)
+├── evaluations/             # Git-tracked past evaluations (commit these — may be stale)
 ├── tests/                   # Test suite
 ├── docs/                    # Detailed methodology documentation
-└── output/                  # Generated reports (gitignored)
+└── output/                  # Generated per-run reports (gitignored)
 ```
 
 ## Troubleshooting

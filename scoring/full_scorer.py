@@ -73,13 +73,6 @@ except ImportError:
     ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
     ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
 
-# Optional transaction scrapers for real appreciation data
-try:
-    from scrapers.transaction_scraper import TransactionScraper
-    _HAS_TRANSACTION_SCRAPER = True
-except ImportError:
-    _HAS_TRANSACTION_SCRAPER = False
-
 # URA scraper for official government transaction data (5 years history)
 try:
     from scrapers.ura_scraper import URAScraper, load_ura_csv
@@ -207,7 +200,7 @@ class FullScorer:
         Args:
             condo_rental_data: Dict mapping project_name -> median rent_psf
             transaction_data: Dict mapping project_name -> transaction history data
-            fetch_appreciation: Whether to fetch real appreciation data from PropertyGuru
+            fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
             ura_data: Dict mapping project_name -> URA appreciation data (from official govt source)
         """
         self._current_year = datetime.now().year
@@ -220,16 +213,11 @@ class FullScorer:
         self.district_profiles = self._load_district_profiles()
         self.transaction_data = transaction_data or {}
         self.ura_data = ura_data or {}  # URA official data takes priority
-        self.fetch_appreciation = fetch_appreciation and _HAS_TRANSACTION_SCRAPER
-        self._transaction_scraper = None
+        # `fetch_appreciation` is retained for backward compatibility but is now
+        # inert: live PropertyGuru appreciation scraping was removed in favour of
+        # the URA cache as the single appreciation source.
         self._appreciation_cache: dict[str, tuple[float, str]] = {}
         self.cohort_stats = cohort_stats or {}
-
-    def _get_transaction_scraper(self):
-        """Lazy-load transaction scraper."""
-        if self._transaction_scraper is None and _HAS_TRANSACTION_SCRAPER:
-            self._transaction_scraper = TransactionScraper()
-        return self._transaction_scraper
 
     @staticmethod
     def _load_district_profiles() -> dict:
@@ -436,27 +424,6 @@ class FullScorer:
                 result = (rate, "transaction_data")
                 self._appreciation_cache[cache_key] = result
                 return result
-
-        # Priority 3: Fetch live from PropertyGuru API
-        if self.fetch_appreciation:
-            scraper = self._get_transaction_scraper()
-            if scraper:
-                try:
-                    rate_pct, source = scraper.get_appreciation_rate(
-                        project_name,
-                        district,
-                        default_rate=2.0,
-                    )
-                    rate = rate_pct / 100  # Convert % to decimal
-                    result = (rate, source)
-                    self._appreciation_cache[cache_key] = result
-                    print(
-                        f"  {project_name}: {rate_pct:+.1f}%/yr ({source})",
-                        file=sys.stderr,
-                    )
-                    return result
-                except Exception as e:
-                    print(f"  {project_name}: failed to fetch ({e})", file=sys.stderr)
 
         # Fallback: Regional baseline appreciation (flag for AI follow-up)
         baseline = self._get_regional_baseline(listing)
@@ -1446,7 +1413,7 @@ def score_listings(
         listings: List of listing dictionaries
         condo_rental_data: Optional condo rental data
         transaction_data: Optional transaction history data
-        fetch_appreciation: Whether to fetch real appreciation from PropertyGuru API
+        fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
         ura_data: Optional URA appreciation data (official govt source, highest priority)
 
     Returns:
@@ -1472,6 +1439,7 @@ def score_and_filter(
     transaction_data: Optional[dict] = None,
     fetch_appreciation: bool = False,
     ura_data: Optional[dict] = None,
+    price_range: Optional[tuple[int, int]] = None,
 ) -> dict[str, list[ScoredListing]]:
     """
     Quick filter then full score remaining listings.
@@ -1486,8 +1454,9 @@ def score_and_filter(
             Default 40 is intentionally lenient since quick scorer lacks URA data.
         condo_rental_data: Optional condo rental data
         transaction_data: Optional transaction history data
-        fetch_appreciation: Whether to fetch real appreciation from PropertyGuru API
+        fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
         ura_data: Optional URA appreciation data (official govt source, highest priority)
+        price_range: Optional (min_price, max_price) tuple to override config defaults.
 
     Returns:
         Dict with "scored" (full analysis) and "rejected" (quick filtered) lists
@@ -1495,7 +1464,7 @@ def score_and_filter(
     from scoring.quick_scorer import QuickScorer
 
     # Phase 1: Quick filter using min_quick_score threshold
-    quick_scorer = QuickScorer()
+    quick_scorer = QuickScorer(price_range=price_range)
     to_score = []
     rejected = []
 
@@ -1523,30 +1492,3 @@ def score_and_filter(
         "scored": scored,
         "rejected": rejected,
     }
-
-
-def prefetch_transaction_data(
-    listings: list[dict],
-    delay: float = 0.5,
-) -> dict[str, dict]:
-    """
-    Pre-fetch transaction history data for multiple listings.
-
-    More efficient than fetching during scoring as it deduplicates by project name.
-
-    Args:
-        listings: List of listing dictionaries
-        delay: Delay between API calls
-
-    Returns:
-        Dict mapping cache_key -> transaction data
-    """
-    if not _HAS_TRANSACTION_SCRAPER:
-        print("Transaction scraper not available", file=sys.stderr)
-        return {}
-
-    from scrapers.transaction_scraper import TransactionScraper
-
-    scraper = TransactionScraper()
-    print("\nFetching transaction history data...", file=sys.stderr)
-    return scraper.get_batch_appreciation(listings, delay)

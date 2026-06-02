@@ -21,6 +21,22 @@ except ImportError:
     SCORE_TIER2_MIN = 45
 
 
+# Map the AI's 4-point rating onto a clear, simple verdict for the final report.
+_VERDICT_MAP = {
+    "strong buy": "BUY",
+    "buy": "BUY",
+    "neutral": "NEUTRAL",
+    "avoid": "AVOID",   # i.e. "no buy"
+}
+
+
+def verdict_from_rating(rating: Optional[str]) -> Optional[str]:
+    """Collapse a rating (Strong Buy/Buy/Neutral/Avoid) to BUY / NEUTRAL / AVOID."""
+    if not rating:
+        return None
+    return _VERDICT_MAP.get(rating.strip().lower(), "NEUTRAL")
+
+
 @dataclass
 class QuickScore:
     """Result of quick scoring (Phase 1 filter)."""
@@ -318,6 +334,7 @@ class ScoredListing:
     score_breakdown: dict = field(default_factory=dict)
 
     # Agent review fields (filled by AI agent, empty by default)
+    agent_rating: Optional[str] = None  # "Strong Buy" / "Buy" / "Neutral" / "Avoid"
     agent_summary: Optional[str] = None
     agent_red_flags: list[str] = field(default_factory=list)
     agent_catalysts: list[str] = field(default_factory=list)
@@ -425,7 +442,8 @@ class ScoredListing:
 
         # Agent review fields (only include if any are populated)
         has_agent_data = (
-            self.agent_summary is not None
+            self.agent_rating is not None
+            or self.agent_summary is not None
             or self.agent_red_flags
             or self.agent_catalysts
             or self.agent_score_adjustment != 0
@@ -434,6 +452,8 @@ class ScoredListing:
         )
         if has_agent_data:
             result["agent"] = {
+                "rating": self.agent_rating,
+                "verdict": verdict_from_rating(self.agent_rating),
                 "summary": self.agent_summary,
                 "red_flags": self.agent_red_flags,
                 "catalysts": self.agent_catalysts,

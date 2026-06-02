@@ -3,7 +3,7 @@
 from datetime import datetime
 from typing import Optional
 
-from scoring.models import ScoredListing
+from scoring.models import ScoredListing, verdict_from_rating
 
 
 def format_currency(value: float, decimals: int = 0) -> str:
@@ -25,7 +25,18 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     # Header with rank and score
     rank_str = f"#{rank} " if rank > 0 else ""
     lines.append(f"### {rank_str}{listing.title}")
-    lines.append(f"**Score: {listing.total_score:.1f}/100** | {listing.final_tier_label}")
+
+    # Clear AI verdict + confidence (the headline call), with the technical score as backup
+    verdict = verdict_from_rating(listing.agent_rating)
+    if verdict:
+        badge = {"BUY": "🟢 BUY", "NEUTRAL": "🟡 NEUTRAL", "AVOID": "🔴 AVOID (no buy)"}.get(verdict, verdict)
+        conf = (listing.agent_confidence or "unrated").lower()
+        rating_detail = f" ({listing.agent_rating})" if listing.agent_rating else ""
+        lines.append(f"> ## {badge}{rating_detail}")
+        lines.append(f"> **AI confidence: {conf}** · Technical score: {listing.total_score:.1f}/100 ({listing.final_tier_label})")
+    else:
+        lines.append(f"**Technical Score: {listing.total_score:.1f}/100** | {listing.final_tier_label}")
+        lines.append("*(No AI verdict yet — run the agent review to get a Buy / Neutral / Avoid call.)*")
     lines.append("")
 
     # Key metrics
@@ -229,6 +240,12 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     return "\n".join(lines)
 
 
+def _verdict_label(listing: ScoredListing) -> str:
+    """Short verdict cell for summary tables: BUY / NEUTRAL / AVOID, or '-'."""
+    v = verdict_from_rating(listing.agent_rating)
+    return {"BUY": "🟢 BUY", "NEUTRAL": "🟡 NEUTRAL", "AVOID": "🔴 AVOID"}.get(v, "-")
+
+
 def generate_summary_table(listings: list[ScoredListing]) -> str:
     """Generate summary comparison table."""
     lines = []
@@ -240,8 +257,8 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
     lines.append("")
 
     if is_condo_mode:
-        lines.append("| Rank | Type | Price (Median) | PSF | Score | Yield | Units |")
-        lines.append("|------|------|----------------|-----|-------|-------|-------|")
+        lines.append("| Rank | Type | Verdict | Confidence | Price (Median) | PSF | Score | Yield | Units |")
+        lines.append("|------|------|---------|------------|----------------|-----|-------|-------|-------|")
 
         for i, listing in enumerate(listings[:20], 1):
             price = format_currency(listing.price)
@@ -250,11 +267,13 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
             yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
             beds_str = f"{listing.beds}BR" if listing.beds else "-"
             unit_count = listing.unit_summary.get("count", 1) if listing.unit_summary else 1
+            verdict = _verdict_label(listing)
+            conf = (listing.agent_confidence or "-").lower()
 
-            lines.append(f"| {i} | {beds_str} | {price} | {psf} | {score} | {yield_pct} | {unit_count} |")
+            lines.append(f"| {i} | {beds_str} | {verdict} | {conf} | {price} | {psf} | {score} | {yield_pct} | {unit_count} |")
     else:
-        lines.append("| Rank | Project | Price | PSF | Score | Yield | 5yr ROI |")
-        lines.append("|------|---------|-------|-----|-------|-------|---------|")
+        lines.append("| Rank | Project | Verdict | Confidence | Price | PSF | Score | Yield | 5yr ROI |")
+        lines.append("|------|---------|---------|------------|-------|-----|-------|-------|---------|")
 
         for i, listing in enumerate(listings[:20], 1):
             price = format_currency(listing.price)
@@ -262,13 +281,15 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
             score = f"{listing.total_score:.1f}"
             yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
             roi_5 = format_percent(listing.roi_5yr.annualized_roi) if listing.roi_5yr else "-"
+            verdict = _verdict_label(listing)
+            conf = (listing.agent_confidence or "-").lower()
 
             # Truncate title
             title = listing.title[:30] + "..." if len(listing.title) > 30 else listing.title
             if listing.additional_urls:
                 title += f" (+{len(listing.additional_urls)})"
 
-            lines.append(f"| {i} | {title} | {price} | {psf} | {score} | {yield_pct} | {roi_5} |")
+            lines.append(f"| {i} | {title} | {verdict} | {conf} | {price} | {psf} | {score} | {yield_pct} | {roi_5} |")
 
     lines.append("")
     return "\n".join(lines)
