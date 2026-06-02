@@ -40,6 +40,84 @@ class PageParseError(Exception):
     """Raised when the page content cannot be parsed."""
 
 
+class ProjectPageNeedsNameFallback(Exception):
+    """Raised when a pasted URL is a project/condo page rather than a listing
+    or results page. Carries the extracted project name so the caller can
+    delegate to the condo-name search flow."""
+
+    def __init__(self, project_name: str | None):
+        super().__init__(project_name or "")
+        self.project_name = project_name
+
+
+def classify_pg_url(url: str) -> tuple[str, str | None]:
+    """Classify a PropertyGuru URL.
+
+    Returns (kind, project_name) where kind is one of:
+      - "detail"  : a single listing detail page  (/listing/...)
+      - "results" : a search/results/list page    (.../property-for-sale?...)
+      - "project" : a project/condo directory page (best-effort name fallback)
+    """
+    from urllib.parse import urlparse, parse_qs
+
+    parsed = urlparse(url)
+    path = parsed.path.lower()
+    qkeys = {k.lower() for k in parse_qs(parsed.query)}
+
+    # 1. Single listing detail page wins first.
+    if "/listing/" in path:
+        return "detail", None
+
+    # 2. Project / condo-directory page -> condo-name fallback.
+    if any(seg in path for seg in ("/project/", "/new-project/", "/condo-directory/")):
+        return "project", _project_name_from_url(url)
+
+    # 3. Results / search page.
+    results_markers = (
+        "-for-sale", "-for-rent", "/property-for-sale", "/property-for-rent",
+        "/property-search", "/listing/",
+    )
+    search_qkeys = {
+        "freetext", "districtcode", "listingtype", "propertytypegroup",
+        "propertytypecode", "minprice", "maxprice", "beds", "bedrooms", "search",
+    }
+    if any(m in path for m in results_markers) or (search_qkeys & qkeys):
+        return "results", None
+
+    # 4. Unknown -> safest is a best-effort condo-name search from the slug.
+    return "project", _project_name_from_url(url)
+
+
+def _project_name_from_url(url: str) -> str | None:
+    """Extract a human-readable project name from a PG URL slug.
+
+    e.g. '/project/the-continuum-98765' -> 'the continuum'
+    """
+    from urllib.parse import urlparse
+
+    path = urlparse(url).path.rstrip("/")
+    if not path:
+        return None
+    slug = path.split("/")[-1]
+    slug = re.sub(r"-?\d{4,}$", "", slug)           # strip trailing numeric id
+    name = slug.replace("-", " ").strip()
+    return name or None
+
+
+def _with_page_segment(url: str, page_num: int) -> str:
+    """Insert PropertyGuru's '/{n}' pagination segment before the query string.
+
+    e.g. '/property-for-sale?foo=bar' + page 2 -> '/property-for-sale/2?foo=bar'.
+    If a trailing '/{n}' segment already exists, it is replaced.
+    """
+    from urllib.parse import urlsplit, urlunsplit
+
+    parts = urlsplit(url)
+    path = re.sub(r"/\d+$", "", parts.path.rstrip("/"))
+    new_path = f"{path}/{page_num}"
+    return urlunsplit((parts.scheme, parts.netloc, new_path, parts.query, parts.fragment))
+
+
 # ---------------------------------------------------------------------------
 # JavaScript to extract listing data from the rendered DOM
 # ---------------------------------------------------------------------------
@@ -421,6 +499,168 @@ class PropertyGuruScraper:
             len(all_listings), combined_stats.duplicates_skipped,
         )
         return all_listings, combined_stats
+
+    def scrape_from_url(self, url: str, max_pages: int = 5) -> list[Listing]:
+        """Scrape listings from an arbitrary PropertyGuru URL.
+
+        Classifies the URL and routes:
+          - detail  -> parse the single listing into ONE Listing
+          - results -> page through using the given URL as page 1
+          - project -> raise ProjectPageNeedsNameFallback(name) so the caller
+                       can delegate to the condo-name search.
+        """
+        self._page = self._context.pages[0] if self._context.pages else self._context.new_page()
+        self._setup_interception()
+
+        kind, project_name = classify_pg_url(url)
+        logger.info("URL classified as '%s': %s", kind, url)
+
+        if kind == "project":
+            raise ProjectPageNeedsNameFallback(project_name)
+
+        if kind == "detail":
+            listing = self._scrape_detail_as_listing(url)
+            if listing:
+                self._propagate_coordinates([listing])
+                return [listing]
+            # Detail extraction failed — fall back to treating it as a results page.
+            logger.warning("Detail extraction failed; retrying as a results page")
+
+        # results (or detail fallback): page through, reusing scrape()'s loop body.
+        all_listings: list[Listing] = []
+        effective_max = max_pages
+
+        for page_num in range(1, MAX_PAGES_LIMIT + 1):
+            if page_num > effective_max:
+                break
+
+            page_url = url if page_num == 1 else _with_page_segment(url, page_num)
+            scraped = self._scrape_url_page(page_url, page_num)
+            if not scraped or not scraped.listings:
+                break
+
+            self._stats.pages_fetched += 1
+
+            new_listings = []
+            for listing in scraped.listings:
+                if listing.id in self._seen_ids:
+                    self._stats.duplicates_skipped += 1
+                    continue
+                self._seen_ids.add(listing.id)
+                new_listings.append(listing)
+
+            if not new_listings:
+                logger.info("Page %d: 0 new listings after dedup, stopping", page_num)
+                break
+
+            all_listings.extend(new_listings)
+
+            if page_num == 1 and scraped.total_pages > effective_max:
+                effective_max = min(scraped.total_pages, MAX_PAGES_LIMIT)
+
+            if len(scraped.listings) < LISTINGS_PER_PAGE:
+                break
+            if page_num >= scraped.total_pages and scraped.total_pages >= 1:
+                if not (scraped.total_pages <= 1 and len(scraped.listings) >= LISTINGS_PER_PAGE):
+                    break
+
+            if page_num < effective_max:
+                _sleep_with_jitter(REQUEST_DELAY_SECONDS, REQUEST_DELAY_JITTER)
+
+        self._propagate_coordinates(all_listings)
+        logger.info("URL scrape complete: %d listings collected", len(all_listings))
+        return all_listings
+
+    def _scrape_url_page(self, url: str, page_num: int) -> ScrapedPage | None:
+        """Navigate to a concrete URL and extract listings (mirrors
+        _scrape_single_page but takes a ready-made URL)."""
+        self._intercepted_data = []
+
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                self._page.goto(url, timeout=PAGE_LOAD_TIMEOUT, wait_until="domcontentloaded")
+
+                cf_resolved = wait_for_cloudflare(self._page, timeout_ms=CLOUDFLARE_WAIT_TIMEOUT)
+                if not cf_resolved:
+                    if attempt < MAX_RETRIES:
+                        time.sleep(RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)])
+                        continue
+                    raise CloudflareBlockedError(
+                        f"Cloudflare challenge unresolved after {MAX_RETRIES} attempts"
+                    )
+
+                result = self._extract_page_data(page_num)
+                if result and result.listings:
+                    return result
+
+                logger.warning("No listings extracted on attempt %d/%d", attempt, MAX_RETRIES)
+                if attempt < MAX_RETRIES:
+                    time.sleep(RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)])
+
+            except PlaywrightTimeout:
+                if attempt < MAX_RETRIES:
+                    time.sleep(RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)])
+                else:
+                    raise CloudflareBlockedError(f"Could not load {url} after {MAX_RETRIES} attempts")
+            except json.JSONDecodeError as e:
+                raise PageParseError(f"Failed to parse JSON: {e}")
+
+        return None
+
+    def _scrape_detail_as_listing(self, url: str) -> Listing | None:
+        """Navigate to a single listing detail page and parse it into one Listing."""
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                self._page.goto(url, timeout=PAGE_LOAD_TIMEOUT, wait_until="domcontentloaded")
+                if not wait_for_cloudflare(self._page, timeout_ms=CLOUDFLARE_WAIT_TIMEOUT):
+                    if attempt < MAX_RETRIES:
+                        time.sleep(RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)])
+                        continue
+                    return None
+                break
+            except PlaywrightTimeout:
+                if attempt >= MAX_RETRIES:
+                    return None
+                time.sleep(RETRY_BACKOFF_SECONDS[min(attempt - 1, len(RETRY_BACKOFF_SECONDS) - 1)])
+
+        raw = None
+        try:
+            raw = self._page.evaluate("""
+                () => {
+                    const el = document.querySelector('script#__NEXT_DATA__');
+                    if (el) return JSON.parse(el.textContent);
+                    if (window.__NEXT_DATA__) return window.__NEXT_DATA__;
+                    return null;
+                }
+            """)
+        except Exception as e:
+            logger.debug("Detail __NEXT_DATA__ read failed: %s", e)
+
+        if isinstance(raw, dict):
+            props = raw.get("props", {}).get("pageProps", {})
+            page_data = props.get("pageData", props)
+            candidate = (
+                (page_data.get("data", {}) or {}).get("listingData")
+                or props.get("listingData")
+                or props.get("data")
+            )
+            # Sometimes wrapped one level deeper as {"listingData": {...}}
+            if isinstance(candidate, dict) and isinstance(candidate.get("listingData"), dict):
+                candidate = candidate["listingData"]
+            if isinstance(candidate, dict):
+                listing = self._parse_single_listing(candidate)
+                if listing:
+                    return listing
+            # Fallback: recursively hunt for a listing object anywhere in the blob.
+            sp = self._search_for_listings(raw, page_num=1)
+            if sp and sp.listings:
+                return sp.listings[0]
+
+        # Last resort: run the full multi-strategy page extraction.
+        result = self._extract_page_data(1)
+        if result and result.listings:
+            return result.listings[0]
+        return None
 
     def enrich_listings(self, listings: list[Listing], top_n: int = 10) -> int:
         """Visit detail pages for top listings to fill missing fields.

@@ -365,6 +365,19 @@ def scrape_condo_listings(
             return 1.0
         return SequenceMatcher(None, target, cand).ratio()
 
+    def _passes(listing) -> bool:
+        """Check fuzzy match on a Listing object or dict."""
+        if hasattr(listing, 'title'):
+            title = listing.title or ""
+            project = listing.project_name or ""
+        else:
+            title = listing.get("title", "")
+            project = listing.get("project_name", "")
+        score = _score(title, project)
+        if not fuzzy:
+            return score >= 1.0
+        return score >= 0.65
+
     params = SearchParams(
         property_type="C",
         listing_type="sale",
@@ -388,32 +401,183 @@ def scrape_condo_listings(
     with BrowserManager(headless=headless) as context:
         scraper = PropertyGuruScraper(context)
         listings = scraper.scrape(params, max_pages=max_pages)
+
+        # Filter by condo name BEFORE enrichment to avoid wasting time
+        # on detail pages for non-matching listings
+        pre_filter_count = len(listings)
+        listings = [l for l in listings if _passes(l)]
+        skipped = pre_filter_count - len(listings)
+
         if enrich_top > 0 and listings:
             scraper.enrich_listings(listings, top_n=enrich_top)
 
+        stats = scraper.stats
+
     result = [l.to_dict() if hasattr(l, 'to_dict') else l for l in listings]
 
-    def _passes(item: dict) -> bool:
+    # Add match scores to the dicts and apply max_results
+    for item in result:
         title = item.get("title", "")
         project = item.get("project_name", "")
-        score = _score(title, project)
-        item["condo_match_score"] = round(score, 3)
-        if not fuzzy:
-            return score >= 1.0
-        return score >= 0.65
+        item["condo_match_score"] = round(_score(title, project), 3)
 
-    filtered = [item for item in result if _passes(item)]
-    filtered.sort(key=lambda x: x.get("condo_match_score", 0), reverse=True)
-    if max_results and len(filtered) > max_results:
-        filtered = filtered[:max_results]
+    result.sort(key=lambda x: x.get("condo_match_score", 0), reverse=True)
+    if max_results and len(result) > max_results:
+        result = result[:max_results]
 
     print(f"\n{'='*60}", file=sys.stderr)
     print("SCRAPING STATS", file=sys.stderr)
     print(f"{'='*60}", file=sys.stderr)
-    print(f"  Listings fetched: {len(result)}", file=sys.stderr)
-    print(f"  Listings matched: {len(filtered)}", file=sys.stderr)
+    print(stats.summary(), file=sys.stderr)
+    print(f"  Fuzzy-filtered out: {skipped} non-matching listings", file=sys.stderr)
+    print(f"  Final matched: {len(result)} listings", file=sys.stderr)
 
-    return filtered
+    return result
+
+
+def score_condo(inputs: dict, ura_data: dict | None = None) -> dict:
+    """Score a condo from a dict of its key value-drivers and return the technical breakdown.
+
+    This is the AI-callable entry point: feed the researched facts that drive a
+    condo's investment value and get back a calibrated 100-point technical score
+    plus a per-metric breakdown. The AI uses this as ONE input to its own
+    qualitative Buy/Neutral/Avoid judgement — it is not the verdict itself.
+
+    Recognised inputs (all optional except price):
+        price (required), sqft, psf, beds, baths, district (e.g. "D15"),
+        tenure ("Freehold"/"99-year leasehold"), built_year, total_units,
+        project_name, latitude, longitude, mrt_info, floor_level, facing.
+    AI overrides (use your own researched numbers instead of the cache):
+        appreciation_rate_pct  — annual appreciation %, injected as project data
+        monthly_rent           — overrides the district-average rental estimate
+
+    Returns a JSON-serialisable dict: technical_score, tier, weighted breakdown,
+    the factual figures used, and notes about data sources.
+    """
+    from scoring.full_scorer import FullScorer
+    from config import (
+        SCORE_WEIGHT_RENTAL_YIELD, SCORE_WEIGHT_CAPITAL_APPRECIATION,
+        SCORE_WEIGHT_FUTURE_POTENTIAL, SCORE_WEIGHT_LIQUIDITY,
+        SCORE_WEIGHT_COST_EFFICIENCY, SCORE_WEIGHT_RED_FLAGS,
+    )
+
+    ura_data = dict(ura_data) if ura_data else {}
+    notes: list[str] = []
+
+    listing = {k: v for k, v in inputs.items()
+               if k not in ("appreciation_rate_pct", "monthly_rent", "gross_yield_pct")}
+    listing.setdefault("title", inputs.get("project_name") or "Manual scoring")
+
+    # Inject an AI-provided appreciation rate as if it were project data.
+    project_name = (listing.get("project_name") or listing.get("title") or "").strip()
+    apr_override = inputs.get("appreciation_rate_pct")
+    if apr_override is not None and project_name:
+        ura_data[project_name.lower()] = {
+            "project_name": project_name,
+            "annualized_appreciation": float(apr_override),
+            "transaction_count": 999,
+            "source": "agent_provided",
+        }
+        notes.append(f"Appreciation: using AI-provided {float(apr_override):.1f}%/yr")
+
+    condo_rental_data = None
+    monthly_rent = inputs.get("monthly_rent")
+    if monthly_rent is not None and listing.get("psf") and listing.get("sqft"):
+        notes.append(f"Rental: using AI-provided ${float(monthly_rent):,.0f}/mo")
+
+    scorer = FullScorer(condo_rental_data=condo_rental_data, ura_data=ura_data)
+    scored = scorer.score(listing)
+
+    # If the AI gave a monthly rent, re-derive the yield figure for transparency.
+    if monthly_rent is not None and scored.price:
+        scored.estimated_monthly_rent = float(monthly_rent)
+        scored.estimated_gross_yield = round(float(monthly_rent) * 12 / scored.price * 100, 2)
+
+    if scored.appreciation_source == "regional_baseline":
+        notes.append("Appreciation: no project data — regional baseline used (research this).")
+
+    return {
+        "technical_score": round(scored.total_score, 1),
+        "tier": scored.final_tier,
+        "tier_label": scored.final_tier_label,
+        "score_is_technical_only": True,
+        "note": "Technical score only — combine with your qualitative research for the Buy/Neutral/Avoid call.",
+        "breakdown": {
+            "rental_yield": {"score": round(scored.rental_yield_score, 1), "max": SCORE_WEIGHT_RENTAL_YIELD},
+            "capital_appreciation": {"score": round(scored.capital_appreciation_score, 1), "max": SCORE_WEIGHT_CAPITAL_APPRECIATION},
+            "future_potential": {"score": round(scored.future_potential_score, 1), "max": SCORE_WEIGHT_FUTURE_POTENTIAL},
+            "liquidity": {"score": round(scored.liquidity_score, 1), "max": SCORE_WEIGHT_LIQUIDITY},
+            "cost_efficiency": {"score": round(scored.cost_efficiency_score, 1), "max": SCORE_WEIGHT_COST_EFFICIENCY},
+            "red_flag_deductions": {"score": -round(scored.red_flag_deductions, 1), "max": SCORE_WEIGHT_RED_FLAGS},
+        },
+        "factual": {
+            "appreciation_rate_pct": round(scored.appreciation_rate * 100, 2),
+            "appreciation_source": scored.appreciation_source,
+            "estimated_monthly_rent": round(scored.estimated_monthly_rent) if scored.estimated_monthly_rent else None,
+            "gross_yield_pct": scored.estimated_gross_yield or None,
+            "nearest_mrt": scored.nearest_mrt,
+            "mrt_distance_m": scored.mrt_distance_m,
+            "remaining_lease": scored.remaining_lease,
+            "red_flags": scored.score_breakdown.get("red_flags", {}).get("flags", []),
+            "roi_5yr_annualized_pct": round(scored.roi_5yr.annualized_roi, 2) if scored.roi_5yr else None,
+            "roi_7yr_annualized_pct": round(scored.roi_7yr.annualized_roi, 2) if scored.roi_7yr else None,
+        },
+        "notes": notes,
+    }
+
+
+def scrape_url_listings(
+    url: str,
+    max_pages: int = 5,
+    headless: bool = True,
+    enrich_top: int = 0,
+    min_price: int = 0,
+    max_price: int = 10**9,
+    beds: list[int] | None = None,
+) -> list[dict]:
+    """Scrape listings from an arbitrary PropertyGuru URL.
+
+    Handles a single listing detail page or a search/results page directly.
+    A project/condo-directory page falls back to the condo-name search flow.
+    """
+    from scrapers.browser import BrowserManager
+    from scrapers.propertyguru import PropertyGuruScraper, ProjectPageNeedsNameFallback
+
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("SCRAPING PROPERTYGURU (url mode)", file=sys.stderr)
+    print(f"{'='*60}", file=sys.stderr)
+    print(f"  URL: {url}", file=sys.stderr)
+
+    with BrowserManager(headless=headless) as context:
+        scraper = PropertyGuruScraper(context)
+        try:
+            listings = scraper.scrape_from_url(url, max_pages=max_pages)
+        except ProjectPageNeedsNameFallback as e:
+            print(f"  Project/condo page detected -> condo-name search: '{e.project_name}'",
+                  file=sys.stderr)
+            return scrape_condo_listings(
+                condo_name=e.project_name or "",
+                min_price=min_price,
+                max_price=max_price,
+                beds=beds or [],
+                max_pages=max_pages,
+                headless=headless,
+                enrich_top=enrich_top or 20,
+            )
+
+        if enrich_top > 0 and listings:
+            scraper.enrich_listings(listings, top_n=enrich_top)
+        stats = scraper.stats
+
+    result = [l.to_dict() if hasattr(l, 'to_dict') else l for l in listings]
+
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("SCRAPING STATS", file=sys.stderr)
+    print(f"{'='*60}", file=sys.stderr)
+    print(stats.summary(), file=sys.stderr)
+    print(f"  Final result: {len(result)} listings", file=sys.stderr)
+
+    return result
 
 
 def deduplicate_by_project(scored: list[ScoredListing]) -> list[ScoredListing]:
@@ -728,6 +892,13 @@ Examples:
                        help="Enable fuzzy condo-name matching (default: enabled)")
     parser.add_argument("--condo-exact", dest="condo_fuzzy", action="store_false",
                        help="Exact match only (disables fuzzy matching)")
+    parser.add_argument("--score", type=str, metavar="JSON",
+                       help="Score a condo from a JSON dict of key value-drivers (AI-callable technical scorer). "
+                            "Accepts inline JSON or @file.json. Prints the technical score breakdown as JSON.")
+    parser.add_argument("--url", type=str,
+                       help="PropertyGuru URL: a single listing, a results/list page, or a project page")
+    parser.add_argument("--url-max-pages", type=int, default=5,
+                       help="Max pages to scrape when --url is a results page (default: 5)")
     parser.add_argument("--min-price", type=int, default=2000000,
                        help="Minimum price (default: 2000000)")
     parser.add_argument("--max-price", type=int, default=3000000,
@@ -758,6 +929,28 @@ Examples:
                        help="Build URA cache from CSV files (supports glob patterns)")
     parser.add_argument("--fetch-ura-districts", type=str, metavar="DISTRICTS",
                        help="Fetch URA data by postal district (e.g., '3,5,14,15' or 'all')")
+
+    # Evaluation memory (git-tracked past evaluations — may be stale, always re-verify)
+    parser.add_argument("--recall", type=str, metavar="NAME",
+                       help="Recall past evaluations for a condo by name (fuzzy)")
+    parser.add_argument("--list-evals", action="store_true",
+                       help="List all stored evaluations (condo, rating, date)")
+    parser.add_argument("--save-eval", type=str, metavar="REVIEWED_JSON",
+                       help="Save agent evaluations from a reviewed analysis JSON into memory")
+    parser.add_argument("--no-save-eval", action="store_true",
+                       help="Do not auto-save evaluations during --from-review")
+
+    # Listings sheet/database (continuously-updated, AI-searchable PropertyGuru inventory)
+    parser.add_argument("--search-db", type=str, metavar="QUERY",
+                       help="Search the master listings sheet by condo name")
+    parser.add_argument("--list-db", action="store_true",
+                       help="Show listings sheet stats (counts, price drops, by district)")
+    parser.add_argument("--export-sheet", action="store_true",
+                       help="Re-export the listings sheet CSV from the database")
+    parser.add_argument("--update-db", action="store_true",
+                       help="Scrape mode that only refreshes the listings sheet (skips scoring/report)")
+    parser.add_argument("--no-db", action="store_true",
+                       help="Do not upsert scraped listings into the master sheet")
 
     # Display options
     parser.add_argument("--top", "-n", type=int, default=10,
@@ -795,6 +988,65 @@ Examples:
         print("\nTip: Use --discover-districts to see AI-ranked districts")
         return
 
+    # --- AI-callable technical scorer ---
+    if args.score:
+        raw = args.score
+        if raw.startswith("@"):
+            with open(raw[1:]) as f:
+                raw = f.read()
+        try:
+            score_inputs = json.loads(raw)
+        except json.JSONDecodeError as e:
+            print(f"Error: --score expects valid JSON (or @file.json): {e}", file=sys.stderr)
+            sys.exit(1)
+        if not isinstance(score_inputs, dict) or "price" not in score_inputs:
+            print("Error: --score JSON must be an object containing at least 'price'.", file=sys.stderr)
+            sys.exit(1)
+        result = score_condo(score_inputs, ura_data=load_ura_cache())
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+        return
+
+    # --- Evaluation memory handlers (git-tracked past evaluations) ---
+    if args.recall:
+        import eval_memory
+        eval_memory.print_recall(args.recall)
+        return
+
+    if args.list_evals:
+        import eval_memory
+        eval_memory.print_index()
+        return
+
+    if args.save_eval:
+        import eval_memory
+        count = eval_memory.save_evaluations_from_review(args.save_eval)
+        print(f"Saved {count} evaluation(s) to {eval_memory.EVAL_DIR}")
+        return
+
+    # --- Listings sheet/database handlers ---
+    if args.search_db:
+        import listings_db
+        records = listings_db.search(args.search_db)
+        print(f"\nListings sheet — results for '{args.search_db}':\n")
+        print(listings_db.format_results(records))
+        return
+
+    if args.list_db:
+        import listings_db
+        s = listings_db.stats()
+        print(f"\nListings sheet ({listings_db.SHEET_FILE})")
+        print(f"  Total: {s['total']} | Active: {s['active']} | Stale: {s['stale']} | "
+              f"Price drops: {s['price_drops']}")
+        print(f"  Last updated: {s['updated_at']}")
+        print("  By district:", ", ".join(f"{k}:{v}" for k, v in s['by_district'].items()))
+        return
+
+    if args.export_sheet:
+        import listings_db
+        path = listings_db.export_sheet()
+        print(f"Listings sheet exported: {path}")
+        return
+
     # Handle --from-review (standalone mode: generate report from reviewed JSON)
     if args.from_review:
         print(f"\nLoading reviewed analysis: {args.from_review}", file=sys.stderr)
@@ -818,20 +1070,30 @@ Examples:
                 project_name=entry.get("project_name"),
             )
 
-            # Restore algo scores from breakdown
-            ab = entry.get("algo_breakdown", {})
-            listing.rental_yield_score = ab.get("rental_yield", {}).get("score", 0)
-            listing.capital_appreciation_score = ab.get("capital_appreciation", {}).get("score", 0)
-            listing.future_potential_score = ab.get("future_potential", {}).get("score", 0)
-            listing.liquidity_score = ab.get("liquidity", {}).get("score", 0)
-            listing.cost_efficiency_score = ab.get("cost_efficiency", {}).get("score", 0)
-            listing.red_flag_deductions = ab.get("red_flags", {}).get("deductions", 0)
+            # Restore algo scores from breakdown (supports both old and new format)
+            ab = entry.get("algo_reference") or entry.get("algo_breakdown", {})
+            if "rental_yield" in ab and isinstance(ab["rental_yield"], dict):
+                # Old format: nested dicts with "score" key
+                listing.rental_yield_score = ab.get("rental_yield", {}).get("score", 0)
+                listing.capital_appreciation_score = ab.get("capital_appreciation", {}).get("score", 0)
+                listing.future_potential_score = ab.get("future_potential", {}).get("score", 0)
+                listing.liquidity_score = ab.get("liquidity", {}).get("score", 0)
+                listing.cost_efficiency_score = ab.get("cost_efficiency", {}).get("score", 0)
+                listing.red_flag_deductions = ab.get("red_flags", {}).get("deductions", 0)
+            else:
+                # New format: flat dict with direct values
+                listing.rental_yield_score = ab.get("rental_yield", 0)
+                listing.capital_appreciation_score = ab.get("capital_appreciation", 0)
+                listing.future_potential_score = ab.get("future_potential", 0)
+                listing.liquidity_score = ab.get("liquidity", 0)
+                listing.cost_efficiency_score = ab.get("cost_efficiency", 0)
+                listing.red_flag_deductions = ab.get("red_flag_deductions", 0)
 
             # Restore remaining lease and MRT
             listing.remaining_lease = entry.get("remaining_lease")
-            mrt_str = entry.get("nearest_mrt")
-            if mrt_str:
-                # Parse "Station Name (123m)" format
+            # New format has separate fields; old format has "Station (123m)" string
+            if entry.get("nearest_mrt"):
+                mrt_str = entry["nearest_mrt"]
                 import re
                 m = re.match(r"(.+?)\s*\((\d+)m\)", mrt_str)
                 if m:
@@ -839,16 +1101,22 @@ Examples:
                     listing.mrt_distance_m = int(m.group(2))
                 else:
                     listing.nearest_mrt = mrt_str
+            if entry.get("nearest_mrt_distance_m"):
+                listing.mrt_distance_m = entry["nearest_mrt_distance_m"]
 
-            # Restore rental & appreciation
-            rental_info = ab.get("rental_yield", {})
-            listing.estimated_monthly_rent = rental_info.get("monthly_rent_est") or 0
-            listing.estimated_gross_yield = rental_info.get("gross_yield_pct") or 0
-            listing.rent_source = rental_info.get("rent_source") or ""
+            # Restore rental & appreciation (supports both old and new format)
+            fd = entry.get("factual_data", {})
+            rental_info_old = entry.get("algo_breakdown", {}).get("rental_yield", {})
+            rental_fd = fd.get("rental", {})
+            listing.estimated_monthly_rent = rental_fd.get("estimated_monthly_rent") or rental_info_old.get("monthly_rent_est") or 0
+            listing.estimated_gross_yield = rental_fd.get("gross_yield_pct") or rental_info_old.get("gross_yield_pct") or 0
+            listing.rent_source = rental_fd.get("rent_source") or rental_info_old.get("rent_source") or ""
 
-            cap_info = ab.get("capital_appreciation", {})
-            listing.appreciation_rate = (cap_info.get("rate_pct") or 2) / 100
-            listing.appreciation_source = cap_info.get("source") or "default"
+            cap_fd = fd.get("appreciation", {})
+            cap_info_old = entry.get("algo_breakdown", {}).get("capital_appreciation", {})
+            cap_info = cap_info_old  # Keep for later score component access
+            listing.appreciation_rate = (cap_fd.get("annual_rate_pct") or cap_info_old.get("rate_pct") or 2) / 100
+            listing.appreciation_source = cap_fd.get("data_source") or cap_info_old.get("source") or "default"
             if entry.get("roi_sensitivity"):
                 listing.roi_sensitivity = entry.get("roi_sensitivity")
 
@@ -875,18 +1143,20 @@ Examples:
                     )
                     setattr(listing, attr, roi)
 
-            # Apply agent fields
-            listing.agent_summary = entry.get("agent_summary")
-            listing.agent_red_flags = entry.get("agent_red_flags", [])
-            listing.agent_catalysts = entry.get("agent_catalysts", [])
-            listing.agent_score_adjustment = entry.get("agent_score_adjustment", 0)
-            listing.agent_adjustment_reason = entry.get("agent_adjustment_reason")
-            listing.agent_rental_assessment = entry.get("agent_rental_assessment")
-            listing.agent_appreciation_assessment = entry.get("agent_appreciation_assessment")
-            listing.agent_stack_notes = entry.get("agent_stack_notes")
-            listing.agent_confidence = entry.get("agent_confidence")
-            listing.agent_appreciation_rate_pct = entry.get("agent_appreciation_rate_pct")
-            listing.agent_appreciation_source = entry.get("agent_appreciation_source")
+            # Apply agent fields (supports both old flat format and new nested format)
+            ae = entry.get("agent_evaluation", {})
+            listing.agent_rating = ae.get("rating") or entry.get("agent_rating")
+            listing.agent_summary = ae.get("summary") or entry.get("agent_summary")
+            listing.agent_red_flags = ae.get("red_flags") or entry.get("agent_red_flags", [])
+            listing.agent_catalysts = ae.get("catalysts") or entry.get("agent_catalysts", [])
+            listing.agent_score_adjustment = entry.get("agent_score_adjustment", 0)  # kept at top level for backward compat
+            listing.agent_adjustment_reason = ae.get("rating_rationale") or entry.get("agent_adjustment_reason")
+            listing.agent_rental_assessment = ae.get("rental_assessment") or entry.get("agent_rental_assessment")
+            listing.agent_appreciation_assessment = ae.get("appreciation_assessment") or entry.get("agent_appreciation_assessment")
+            listing.agent_stack_notes = ae.get("stack_notes") or entry.get("agent_stack_notes")
+            listing.agent_confidence = ae.get("confidence") or entry.get("agent_confidence")
+            listing.agent_appreciation_rate_pct = ae.get("appreciation_rate_override_pct") or entry.get("agent_appreciation_rate_pct")
+            listing.agent_appreciation_source = ae.get("appreciation_rate_source") or entry.get("agent_appreciation_source")
 
             # Apply AI appreciation override (if provided)
             if listing.agent_appreciation_rate_pct is not None:
@@ -1027,6 +1297,14 @@ Examples:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
         print(f"Final JSON saved: {json_path}")
 
+        # Auto-save evaluations into git-tracked memory (unless opted out)
+        if not args.no_save_eval:
+            import eval_memory
+            saved = eval_memory.save_evaluations_from_review(args.from_review, run_dir=str(Path(args.from_review).parent))
+            if saved:
+                print(f"Evaluation memory: saved {saved} evaluation(s) to {eval_memory.EVAL_DIR}")
+                print(f"  (commit the evaluations/ folder to share them — note: past evaluations may be stale/wrong)")
+
         # Print results
         print_results(scored, args.top, args.verbose)
         return
@@ -1053,8 +1331,35 @@ Examples:
 
     run_dir = None
 
+    # Handle --url mode (scrape from a PropertyGuru URL: listing, results, or project page)
+    if args.url:
+        beds = [int(b.strip()) for b in args.beds.split(",")] if args.beds else []
+        url_enrich = args.enrich_top if args.enrich_top > 0 else 20
+        listings = scrape_url_listings(
+            url=args.url,
+            max_pages=args.url_max_pages,
+            headless=headless,
+            enrich_top=url_enrich,
+            # Don't price-gate a pasted URL: results pages already encode the
+            # user's filters, and a project page should surface all unit types.
+            min_price=0,
+            max_price=10**9,
+            beds=beds,
+        )
+
+        if not listings:
+            print("No listings found", file=sys.stderr)
+            return
+
+        run_dir = next_run_dir()
+        listings_file = run_dir / "listings_url.json"
+        with open(listings_file, "w") as f:
+            json.dump(listings, f, indent=2, ensure_ascii=False)
+        print(f"Run directory: {run_dir}", file=sys.stderr)
+        print(f"Saved: {listings_file}", file=sys.stderr)
+
     # Handle --condo mode (scrape by condo name)
-    if args.condo:
+    elif args.condo:
         beds = [int(b.strip()) for b in args.beds.split(",")]
         # Default enrich_top=20 in condo mode to get floor_level/facing
         condo_enrich = args.enrich_top if args.enrich_top > 0 else 20
@@ -1171,9 +1476,35 @@ Examples:
     else:
         # No mode specified
         parser.print_help()
-        print("\n\nError: Must specify --auto, --condo, --districts, or --input", file=sys.stderr)
+        print("\n\nError: Must specify --url, --condo, --auto, --districts, or --input",
+              file=sys.stderr)
         return
 
+    # --- Update the master listings sheet (continuously-updated, AI-searchable) ---
+    if listings and not args.no_db:
+        import listings_db
+        if args.url:
+            src = {"flow": "url", "url": args.url}
+        elif args.condo:
+            src = {"flow": "condo", "condo": args.condo}
+        elif args.auto:
+            src = {"flow": "auto", "districts": districts}
+        elif args.districts:
+            src = {"flow": "districts", "districts": args.districts}
+        else:
+            src = {"flow": "input"}
+        db_stats = listings_db.upsert_listings(listings, source=src)
+        print(
+            f"\nListings sheet updated: +{db_stats['added']} new, "
+            f"{db_stats['updated']} refreshed, {db_stats['price_changes']} price changes "
+            f"(total {db_stats['total']}) -> {listings_db.SHEET_FILE}",
+            file=sys.stderr,
+        )
+
+    # --- --update-db: refresh the sheet only, skip scoring/report ---
+    if args.update_db:
+        print("\n--update-db: listings sheet refreshed; skipping scoring/report.", file=sys.stderr)
+        return
 
     # Load URA cache
     ura_data = load_ura_cache()
@@ -1211,18 +1542,36 @@ Examples:
             print(f"  Projects without data: {', '.join(sorted(uncached)[:10])}", file=sys.stderr)
             if len(uncached) > 10:
                 print(f"    ... and {len(uncached) - 10} more", file=sys.stderr)
-        print(f"\n  ** Fetch URA data by district (fastest - gets ALL projects): **", file=sys.stderr)
-        print(f"  **   python fetch_ura_districts.py --districts 3,5,14,15 **", file=sys.stderr)
-        print(f"  **   python invest.py --fetch-ura-districts all **", file=sys.stderr)
+
+        # Suggest URA fetch based on districts found in listings
+        listing_districts = set()
+        for listing in listings:
+            d = listing.get("district") or ""
+            d_num = str(d).replace("D", "").replace("d", "").strip()
+            if d_num.isdigit():
+                listing_districts.add(int(d_num))
+        if listing_districts:
+            district_str = ",".join(str(d) for d in sorted(listing_districts))
+            print(f"\n  ** Fetch URA data by district (fastest - gets ALL projects): **", file=sys.stderr)
+            print(f"  **   python invest.py --fetch-ura-districts {district_str} **", file=sys.stderr)
+        else:
+            print(f"\n  ** Fetch URA data for all districts: **", file=sys.stderr)
+            print(f"  **   python invest.py --fetch-ura-districts all **", file=sys.stderr)
         print(f"  ** Or build cache from existing CSVs: **", file=sys.stderr)
         print(f"  **   python invest.py --build-ura-cache data/ura_*.csv **", file=sys.stderr)
 
     # Data freshness warning (best-effort)
     warn_if_stale_data()
 
-    # Score listings with pre-filtering (skip full scoring on obvious rejects)
+    # Score listings with pre-filtering (skip full scoring on obvious rejects).
+    # For --url the user pasted specific listing(s) — don't drop them on the default
+    # price band (any price filter the user wanted is already encoded in the URL).
+    score_price_range = (0, 10**9) if args.url else (args.min_price, args.max_price)
     print(f"\nScoring {len(listings)} listings...", file=sys.stderr)
-    result = score_and_filter(listings, min_quick_score=40, ura_data=ura_data)
+    result = score_and_filter(
+        listings, min_quick_score=40, ura_data=ura_data,
+        price_range=score_price_range,
+    )
     scored = result["scored"]
     rejected = result["rejected"]
     if rejected:
@@ -1247,7 +1596,12 @@ Examples:
     if run_dir:
         # Always save markdown report
         report_path = str(run_dir / "report.md")
-        report_title = f"Condo Analysis: {args.condo}" if args.condo else "Property Investment Analysis"
+        if args.condo:
+            report_title = f"Condo Analysis: {args.condo}"
+        elif args.url:
+            report_title = "Listing Analysis (from PropertyGuru URL)"
+        else:
+            report_title = "Property Investment Analysis"
         save_report(scored, report_path, title=report_title)
         print(f"\nReport saved: {report_path}")
 
@@ -1273,6 +1627,8 @@ Examples:
             run_config["condo_fuzzy"] = args.condo_fuzzy
             run_config["condo_max_pages"] = args.condo_max_pages
             run_config["condo_max_results"] = args.condo_max_results
+        if args.url:
+            run_config["url"] = args.url
         if args.districts:
             run_config["districts"] = [f"D{d.strip()}" for d in args.districts.split(",")]
         elif args.auto:

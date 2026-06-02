@@ -39,10 +39,6 @@ class QuickScorer:
     TIER_1_MIN = SCORE_TIER1_MIN  # From config (default 60)
     TIER_2_MIN = SCORE_TIER2_MIN  # From config (default 45)
 
-    # Target price range from config
-    MIN_PRICE = TARGET_PRICE_MIN
-    MAX_PRICE = TARGET_PRICE_MAX
-
     # High-potential districts (dynamic - based on district scorer results)
     # These are districts with score >= 70 from DistrictScorer
     HIGH_POTENTIAL_DISTRICTS = {
@@ -51,8 +47,15 @@ class QuickScorer:
         "03", "05", "14", "15", "19", "22", "3", "5"  # Numeric variants
     }
 
-    def __init__(self):
+    def __init__(self, price_range: tuple[int, int] | None = None):
         self._current_year = datetime.now().year
+        # Use CLI-provided price range, falling back to config defaults
+        if price_range:
+            self._min_price = price_range[0]
+            self._max_price = price_range[1]
+        else:
+            self._min_price = TARGET_PRICE_MIN
+            self._max_price = TARGET_PRICE_MAX
 
     def score(self, listing: dict[str, Any]) -> QuickScore:
         """
@@ -68,11 +71,11 @@ class QuickScorer:
 
         # === Hard Filters (auto-reject) ===
         price = listing.get("price", 0)
-        if not (self.MIN_PRICE <= price <= self.MAX_PRICE):
+        if not (self._min_price <= price <= self._max_price):
             return QuickScore(
                 score=0,
                 tier=3,
-                reason=f"Price ${price:,} outside range ${self.MIN_PRICE:,}-${self.MAX_PRICE:,}",
+                reason=f"Price ${price:,} outside range ${self._min_price:,}-${self._max_price:,}",
                 breakdown={"rejected": "price_out_of_range"},
             )
 
