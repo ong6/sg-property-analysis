@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-06-02",
+  "listings": {
+    "60147887": {
+      "id": "60147887",
+      "first_seen": "2026-06-02",
+      "last_seen": "2026-06-02",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-02",
+          "price": 1480000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 721.0,
+      "price": 1480000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Deny Gunady",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887"
+    },
+    "500082966": {
+      "id": "500082966",
+      "first_seen": "2026-06-02",
+      "last_seen": "2026-06-02",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-02",
+          "price": 1488888,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 721.0,
+      "price": 1488888,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Wendy Kwok",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966"
+    }
+  }
+}
