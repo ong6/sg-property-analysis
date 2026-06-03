@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-06-02",
+  "updated_at": "2026-06-03",
   "condos": {
     "botanique-at-bartley": {
       "condo": "Botanique at Bartley",
       "district": "D19",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-02",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-03",
+      "eval_count": 5
+    },
+    "tre-residences": {
+      "condo": "Tre Residences",
+      "district": "D14",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-03",
       "eval_count": 1
     }
   }

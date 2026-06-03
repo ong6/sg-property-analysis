@@ -1,0 +1,70 @@
+{
+  "condo": "Tre Residences",
+  "slug": "tre-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-03",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact (764 sqft) 3-bedder at Tre Residences — a 99-yr (2014) D14 condo with an outstanding 440m covered-walkway link to Aljunied MRT (EWL) plus Mattar MRT (DTL) nearby. The location, liquid $1.48M price band and below-district-median PSF are genuine positives, but you're paying slightly ABOVE the building's own recent comparable transactions for its least-desirable layout (a micro 3BR), with only modest ~3.6% yield and below-RCR-baseline appreciation. A fair-to-slightly-rich price for a well-located but compromised unit.",
+      "rating_rationale": "PSF $1,937 sits BELOW the D14 median (~$2,200, ratio 0.88) which looks like value — but it is ~1% ABOVE Tre Residences' own current average ($1,918) and above a directly comparable 764 sqft unit that transacted at $1,871 PSF in Oct 2025. So at list you are paying up, not getting a deal, for the project's tightest 3BR layout (764 sqft / 3 beds = 255 sqft/bed; algo flags bedroom_sqft_mismatch). Offsetting that: best-in-class transit access (covered 5-min walk to Aljunied EWL + Mattar DTL), liquid price point for HDB upgraders, healthy ~87yr lease, and a reliable 4.19%/yr URA appreciation history from 108 honest resale transactions (no new-launch bias). Net: solid fundamentals, but neither the price nor the layout nor the ~3.6% yield justifies a Buy at list. Negotiate toward ~$1.42-1.43M (≈$1,870 PSF, in line with recent comps) and confirm a good floor/facing to turn this into a Buy.",
+      "red_flags": [
+        "Compact 3BR: 764 sqft is micro for a 3-bedder (~255 sqft/bed) — small rooms, narrower resale/rental appeal than the standard 947 sqft 3BR; algo bedroom_sqft_mismatch penalty applies",
+        "Priced ~1% above the development's own current avg PSF ($1,918) and above a comparable 764 sqft unit sold at $1,871 PSF (Oct 2025) — no margin of safety at list",
+        "Modest rental yield (~3.6% gross at a realistic ~$4,400/mo) — a compact 3BR rents closer to a 2BR but costs like a 3BR",
+        "Floor level and facing NOT disclosed in the listing — west-facing afternoon sun and PIE/MRT-track noise are real risks for some stacks here",
+        "Geylang locale carries mild stigma; appreciation 4.19%/yr is below the RCR ~5.8% baseline"
+      ],
+      "catalysts": [
+        "Paya Lebar Central (PLC) commercial hub transformation — new offices/retail and airbase relocation land, 2 EWL stops away",
+        "Kallang Riverside / Greater Kallang waterfront and sports-hub rejuvenation nearby",
+        "Dual-line MRT access (Aljunied EWL + Mattar DTL) — covered 440m walkway to Aljunied is a durable, rare value driver",
+        "City-fringe location ~15 min to CBD keeps a deep upgrader + tenant pool"
+      ],
+      "as_of": {
+        "price": 1480000,
+        "psf": 1937,
+        "beds": 3,
+        "sqft": 764.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.19,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.6,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "A compact (764 sqft) 3-bedder at Tre Residences — a 99-yr (2014) D14 condo with an outstanding 440m covered-walkway link to Aljunied MRT (EWL) plus Mattar MRT (DTL) nearby. The location, liquid $1.48M price band and below-district-median PSF are genuine positives, but you're paying slightly ABOVE the building's own recent comparable transactions for its least-desirable layout (a micro 3BR), with only modest ~3.6% yield and below-RCR-baseline appreciation. A fair-to-slightly-rich price for a well-located but compromised unit.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $1,937 sits BELOW the D14 median (~$2,200, ratio 0.88) which looks like value — but it is ~1% ABOVE Tre Residences' own current average ($1,918) and above a directly comparable 764 sqft unit that transacted at $1,871 PSF in Oct 2025. So at list you are paying up, not getting a deal, for the project's tightest 3BR layout (764 sqft / 3 beds = 255 sqft/bed; algo flags bedroom_sqft_mismatch). Offsetting that: best-in-class transit access (covered 5-min walk to Aljunied EWL + Mattar DTL), liquid price point for HDB upgraders, healthy ~87yr lease, and a reliable 4.19%/yr URA appreciation history from 108 honest resale transactions (no new-launch bias). Net: solid fundamentals, but neither the price nor the layout nor the ~3.6% yield justifies a Buy at list. Negotiate toward ~$1.42-1.43M (≈$1,870 PSF, in line with recent comps) and confirm a good floor/facing to turn this into a Buy.",
+        "red_flags": [
+          "Compact 3BR: 764 sqft is micro for a 3-bedder (~255 sqft/bed) — small rooms, narrower resale/rental appeal than the standard 947 sqft 3BR; algo bedroom_sqft_mismatch penalty applies",
+          "Priced ~1% above the development's own current avg PSF ($1,918) and above a comparable 764 sqft unit sold at $1,871 PSF (Oct 2025) — no margin of safety at list",
+          "Modest rental yield (~3.6% gross at a realistic ~$4,400/mo) — a compact 3BR rents closer to a 2BR but costs like a 3BR",
+          "Floor level and facing NOT disclosed in the listing — west-facing afternoon sun and PIE/MRT-track noise are real risks for some stacks here",
+          "Geylang locale carries mild stigma; appreciation 4.19%/yr is below the RCR ~5.8% baseline"
+        ],
+        "catalysts": [
+          "Paya Lebar Central (PLC) commercial hub transformation — new offices/retail and airbase relocation land, 2 EWL stops away",
+          "Kallang Riverside / Greater Kallang waterfront and sports-hub rejuvenation nearby",
+          "Dual-line MRT access (Aljunied EWL + Mattar DTL) — covered 440m walkway to Aljunied is a durable, rare value driver",
+          "City-fringe location ~15 min to CBD keeps a deep upgrader + tenant pool"
+        ],
+        "rental_assessment": "Tenant demand is good — city-fringe, two MRT lines, covered walkway, near Paya Lebar/Kallang employment. The pipeline's $3,209/mo (district-3BR average) understates a transit-adjacent unit; a realistic rent for this 764 sqft compact 3BR is ~$4,300-4,600/mo, which is still only ~3.5-3.7% gross at $1.48M. The compact layout rents like a large 2BR, so yield is the weak link for an investment-led purchase.",
+        "appreciation_assessment": "URA data is reliable here: 4.19%/yr annualized over 5 years from 108 resale transactions (data_confidence 1.0, no new-launch bias). That is honest but below the RCR ~5.8% baseline. PSF at $1,937 is ~0.88x the D14 median, leaving headroom vs district, but the project has already re-rated (5yr +22.8%) and a compact 3BR is unlikely to lead the development's appreciation. Expect ~4-4.5%/yr capital growth, supported by PLC/Kallang catalysts.",
+        "stack_notes": "Floor and facing are not stated in the listing — this is the biggest gap in the call. At Tre Residences, prefer mid-to-high floors and pool/internal-facing or east-facing stacks; avoid west-facing units (equatorial afternoon heat) and stacks fronting the PIE / MRT viaduct (noise). Before committing, confirm: (1) floor level (>=8th preferred), (2) facing/orientation, (3) whether any bedroom is windowless/internal given the tight 764 sqft. The rating assumes an average mid-floor stack; a low-floor west/PIE-facing unit would push this toward Avoid, while a high-floor quiet-facing unit at a negotiated price would support a Buy.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.19,
+        "appreciation_rate_source": "URA 5yr CAGR for Tre Residences (108 resale transactions, ura_district_5yr_cagr cache, confidence 1.0)"
+      },
+      "source": {
+        "run_dir": "output/run_016",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tre-residences-500136581",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

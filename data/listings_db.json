@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-02",
+  "updated_at": "2026-06-03",
   "listings": {
     "60147887": {
       "id": "60147887",
       "first_seen": "2026-06-02",
-      "last_seen": "2026-06-02",
-      "times_seen": 1,
+      "last_seen": "2026-06-03",
+      "times_seen": 2,
       "status": "active",
       "price_history": [
         {
@@ -15,8 +15,8 @@
         }
       ],
       "source": {
-        "flow": "url",
-        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887"
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
       },
       "title": "Botanique at Bartley",
       "project_name": "Botanique at Bartley",
@@ -25,15 +25,22 @@
       "sqft": 721.0,
       "price": 1480000,
       "property_type": "Condominium",
-      "tenure": "L99",
+      "tenure": "99-year Leasehold",
       "listing_agent": "Deny Gunady",
-      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887"
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "psf": 2052.7,
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60147887/UPHO.156906253.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg"
     },
     "500082966": {
       "id": "500082966",
       "first_seen": "2026-06-02",
-      "last_seen": "2026-06-02",
-      "times_seen": 1,
+      "last_seen": "2026-06-03",
+      "times_seen": 4,
       "status": "active",
       "price_history": [
         {
@@ -43,8 +50,8 @@
         }
       ],
       "source": {
-        "flow": "url",
-        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966"
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
       },
       "title": "Botanique at Bartley",
       "project_name": "Botanique at Bartley",
@@ -53,9 +60,1020 @@
       "sqft": 721.0,
       "price": 1488888,
       "property_type": "Condominium",
-      "tenure": "L99",
+      "tenure": "99-year Leasehold",
       "listing_agent": "Wendy Kwok",
-      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966"
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "psf": 2065.03,
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500082966/UPHO.159780165.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg"
+    },
+    "500032098": {
+      "id": "500032098",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1488888,
+          "psf": 2065.03
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 721.0,
+      "psf": 2065.03,
+      "price": 1488888,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Titus Lim Zhiyong",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500032098/UPHO.160106056.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500032098"
+    },
+    "500087981": {
+      "id": "500087981",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1325000,
+          "psf": 2016.74
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2016.74,
+      "price": 1325000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Jason Chen 陈野文",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500087981/UPHO.159093816.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500087981"
+    },
+    "25560210": {
+      "id": "25560210",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 938000,
+          "psf": 1894.95
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1894.95,
+      "price": 938000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Jared Kang",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25560210/UPHO.154159985.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25560210"
+    },
+    "500151895": {
+      "id": "500151895",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1550000,
+          "psf": 2117.49
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 732.0,
+      "psf": 2117.49,
+      "price": 1550000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Tessa Chan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500151895/UPHO.160020319.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500151895"
+    },
+    "25639085": {
+      "id": "25639085",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1750000,
+          "psf": 2058.82
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 850.0,
+      "psf": 2058.82,
+      "price": 1750000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Chris Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25639085/UPHO.155168492.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25639085"
+    },
+    "500125396": {
+      "id": "500125396",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 2300000,
+          "psf": 2483.8
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 926.0,
+      "psf": 2483.8,
+      "price": 2300000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Lizzy Zhou",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500125396/UPHO.159659941.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500125396"
+    },
+    "500071085": {
+      "id": "500071085",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1350000,
+          "psf": 2054.79
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2054.79,
+      "price": 1350000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Wendy Duan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500071085/UPHO.158825576.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500071085"
+    },
+    "500123235": {
+      "id": "500123235",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 915888,
+          "psf": 1771.54
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 517.0,
+      "psf": 1771.54,
+      "price": 915888,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Tan Kian Seng",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500123235/UPHO.159631151.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500123235"
+    },
+    "500116936": {
+      "id": "500116936",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 2320000,
+          "psf": 2421.71
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 958.0,
+      "psf": 2421.71,
+      "price": 2320000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500116936/UPHO.159545313.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500116936"
+    },
+    "23860072": {
+      "id": "23860072",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 939000,
+          "psf": 1896.97
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1896.97,
+      "price": 939000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Wilson Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/23860072/UPHO.158645160.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-23860072"
+    },
+    "25606660": {
+      "id": "25606660",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1550000,
+          "psf": 2117.49
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 732.0,
+      "psf": 2117.49,
+      "price": 1550000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Geraldine Teh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25606660/UPHO.154750808.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25606660"
+    },
+    "500105397": {
+      "id": "500105397",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1350000,
+          "psf": 2054.79
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2054.79,
+      "price": 1350000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Alan Tian (邓金科)",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500105397/UPHO.159365138.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500105397"
+    },
+    "500149272": {
+      "id": "500149272",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1350000,
+          "psf": 2054.79
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2054.79,
+      "price": 1350000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Charlie Goh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500149272/UPHO.159982002.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500149272"
+    },
+    "500060652": {
+      "id": "500060652",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1580000,
+          "psf": 2158.47
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 732.0,
+      "psf": 2158.47,
+      "price": 1580000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Emmanuel Chia",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500060652/UPHO.158679298.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500060652"
+    },
+    "500158029": {
+      "id": "500158029",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1647000,
+          "psf": 2250.0
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 732.0,
+      "psf": 2250.0,
+      "price": 1647000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Doris Luo 罗之涵",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500158029/UPHO.160111816.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500158029"
+    },
+    "60080752": {
+      "id": "60080752",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 933000,
+          "psf": 1884.85
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1884.85,
+      "price": 933000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Queen Sie",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60080752/UPHO.156153983.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60080752"
+    },
+    "60189652": {
+      "id": "60189652",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 933000,
+          "psf": 1884.85
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1884.85,
+      "price": 933000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Fion Chua",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60189652/UPHO.157562934.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60189652"
+    },
+    "60022003": {
+      "id": "60022003",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1385000,
+          "psf": 2108.07
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2108.07,
+      "price": 1385000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60022003/UPHO.155486623.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60022003"
+    },
+    "500151092": {
+      "id": "500151092",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1528000,
+          "psf": 2087.43
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 732.0,
+      "psf": 2087.43,
+      "price": 1528000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Sophie Toh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500151092/UPHO.160009060.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500151092"
+    },
+    "500021710": {
+      "id": "500021710",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 2350000,
+          "psf": 2453.03
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 958.0,
+      "psf": 2453.03,
+      "price": 2350000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Koh Hui Zhen",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500021710/UPHO.157897937.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500021710"
+    },
+    "500101206": {
+      "id": "500101206",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 2380000,
+          "psf": 2570.19
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 926.0,
+      "psf": 2570.19,
+      "price": 2380000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500101206/UPHO.159390122.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500101206"
+    },
+    "25360193": {
+      "id": "25360193",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1290000,
+          "psf": 1963.47
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 1963.47,
+      "price": 1290000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Maybeline Chin",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25360193/UPHO.151709901.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25360193"
+    },
+    "500002389": {
+      "id": "500002389",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 932000,
+          "psf": 1882.83
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1882.83,
+      "price": 932000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Wilson Wu 巫海强",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500002389/UPHO.157395204.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500002389"
+    },
+    "25325397": {
+      "id": "25325397",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1360000,
+          "psf": 2070.02
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 657.0,
+      "psf": 2070.02,
+      "price": 1360000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25325397/UPHO.151286014.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25325397"
+    },
+    "500111005": {
+      "id": "500111005",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 918000,
+          "psf": 1775.63
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 517.0,
+      "psf": 1775.63,
+      "price": 918000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Delvin Lim",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500111005/UPHO.159520524.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500111005"
+    },
+    "500133653": {
+      "id": "500133653",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1000000,
+          "psf": 2020.2
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 2020.2,
+      "price": 1000000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Jolene Yeo",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500133653/UPHO.159771911.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500133653"
+    },
+    "60073415": {
+      "id": "60073415",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 988000,
+          "psf": 1995.96
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 495.0,
+      "psf": 1995.96,
+      "price": 988000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Den Ng 黄炜炜",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60073415/UPHO.156060173.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60073415"
+    },
+    "25237409": {
+      "id": "25237409",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 910000,
+          "psf": 1760.15
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Botanique at Bartley"
+      },
+      "title": "Botanique at Bartley",
+      "project_name": "Botanique at Bartley",
+      "district": "D19",
+      "district_name": "Hougang / Punggol / Sengkang",
+      "region": "Serangoon / Thomson (D19-20)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 517.0,
+      "psf": 1760.15,
+      "price": 910000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "5 min (410 m) from CC12 Bartley MRT Station",
+      "listing_agent": "Wesley Toh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25237409/UPHO.150206851.V550/Botanique-at-Bartley-Hougang-Punggol-Sengkang-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25237409"
+    },
+    "500136581": {
+      "id": "500136581",
+      "first_seen": "2026-06-03",
+      "last_seen": "2026-06-03",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-03",
+          "price": 1480000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tre-residences-500136581"
+      },
+      "title": "Tre Residences",
+      "project_name": "Tre Residences",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 764.0,
+      "price": 1480000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Sindy Lin",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-tre-residences-500136581"
     }
   }
 }

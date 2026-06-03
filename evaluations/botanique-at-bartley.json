@@ -63,6 +63,252 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60147887",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-03",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "At the $1,488,888 ask ($2,065 psf) this 721 sqft 2BR is fairly priced and sits inside the 2026 transacted band ($2,059-$2,131 psf for the 720-743 sqft cluster) — but it is NOT the best-value unit in its own development. A near-identical 721 sqft twin (listing 60147887) is listed ~$9k cheaper, and a larger 743 sqft 2BR is on the market at $1,992 psf for roughly the same ~$1.48M total. Fundamentals are sound (UOL, 797 units, 5-min walk to Bartley MRT, ~88yr lease) but gross yield is only ~3.1% and there is no fresh catalyst. Neutral at the ask; a Buy at ~$1.42-1.45M with floor/facing confirmed.",
+      "rating_rationale": "(1) Fair, not cheap: $2,065 psf is mid-band vs Jan-May 2026 transactions ($2,059-$2,131 psf for ~720-743 sqft) — you are paying market, not below it. (2) Two better-value live alternatives exist in the SAME project: a same-size 721 sqft twin ~$9k cheaper and a LARGER 743 sqft unit at $1,992 psf (~$73 psf less) for similar money — so there is no relative reason to take this exact unit at ask. (3) Yield is only ~3.1-3.2% gross, below the 4% bar at this price. (4) Held up by genuine strengths — UOL build quality, 797-unit liquidity, real 5-min MRT walk, healthy ~88yr lease — which is why this is Neutral, not Avoid. Flips to Buy if negotiated to ~$1.42-1.45M and the stack/floor/facing check out.",
+      "red_flags": [
+        "Not the best-priced equivalent: a same-size 721 sqft twin is listed ~$9k cheaper and a larger 743 sqft 2BR is at $1,992 psf (~$73 psf less) — paying ask means overpaying vs. live alternatives in the same development",
+        "Floor / stack / facing undisclosed; PIE + Upper Paya Lebar Road noise is documented for low road-facing stacks, and the 'unblocked views' claim is unverified",
+        "Gross rental yield only ~3.1-3.2% — below the 4% bar for a property at this price",
+        "Thin future potential — Circle Line already operational, no new MRT or government transformation zone nearby",
+        "99yr leasehold (~88yr left) with lease decay; appreciation has cooled post-2023 and the boom-era CAGR will not necessarily repeat",
+        "Unit is a converted 721 sqft (originally a 2BR Flexi / dual-key layout) — verify the conversion gives a clean, sensible 2-bed plan and not an awkward one"
+      ],
+      "catalysts": [
+        "5-min walk to Bartley MRT (Circle Line) via side gate — durable, realised transit demand for both rental and resale",
+        "UOL reputation + 797-unit scale = deep liquidity and a reliable price floor in the D19 HDB-upgrader catchment",
+        "$1.4-1.6M sits in the liquid sweet spot — broad buyer pool on exit",
+        "Agent flags price as negotiable / 'below valuation' — explicit room to bargain toward fair value"
+      ],
+      "as_of": {
+        "price": 1488888,
+        "psf": 2065,
+        "beds": 2,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": 4.5,
+        "appreciation_source": "agent_research",
+        "gross_yield_pct": 3.13,
+        "nearest_mrt": "Bartley MRT (410m, 5-min walk via side gate)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "At the $1,488,888 ask ($2,065 psf) this 721 sqft 2BR is fairly priced and sits inside the 2026 transacted band ($2,059-$2,131 psf for the 720-743 sqft cluster) — but it is NOT the best-value unit in its own development. A near-identical 721 sqft twin (listing 60147887) is listed ~$9k cheaper, and a larger 743 sqft 2BR is on the market at $1,992 psf for roughly the same ~$1.48M total. Fundamentals are sound (UOL, 797 units, 5-min walk to Bartley MRT, ~88yr lease) but gross yield is only ~3.1% and there is no fresh catalyst. Neutral at the ask; a Buy at ~$1.42-1.45M with floor/facing confirmed.",
+        "rating": "Neutral",
+        "rating_rationale": "(1) Fair, not cheap: $2,065 psf is mid-band vs Jan-May 2026 transactions ($2,059-$2,131 psf for ~720-743 sqft) — you are paying market, not below it. (2) Two better-value live alternatives exist in the SAME project: a same-size 721 sqft twin ~$9k cheaper and a LARGER 743 sqft unit at $1,992 psf (~$73 psf less) for similar money — so there is no relative reason to take this exact unit at ask. (3) Yield is only ~3.1-3.2% gross, below the 4% bar at this price. (4) Held up by genuine strengths — UOL build quality, 797-unit liquidity, real 5-min MRT walk, healthy ~88yr lease — which is why this is Neutral, not Avoid. Flips to Buy if negotiated to ~$1.42-1.45M and the stack/floor/facing check out.",
+        "red_flags": [
+          "Not the best-priced equivalent: a same-size 721 sqft twin is listed ~$9k cheaper and a larger 743 sqft 2BR is at $1,992 psf (~$73 psf less) — paying ask means overpaying vs. live alternatives in the same development",
+          "Floor / stack / facing undisclosed; PIE + Upper Paya Lebar Road noise is documented for low road-facing stacks, and the 'unblocked views' claim is unverified",
+          "Gross rental yield only ~3.1-3.2% — below the 4% bar for a property at this price",
+          "Thin future potential — Circle Line already operational, no new MRT or government transformation zone nearby",
+          "99yr leasehold (~88yr left) with lease decay; appreciation has cooled post-2023 and the boom-era CAGR will not necessarily repeat",
+          "Unit is a converted 721 sqft (originally a 2BR Flexi / dual-key layout) — verify the conversion gives a clean, sensible 2-bed plan and not an awkward one"
+        ],
+        "catalysts": [
+          "5-min walk to Bartley MRT (Circle Line) via side gate — durable, realised transit demand for both rental and resale",
+          "UOL reputation + 797-unit scale = deep liquidity and a reliable price floor in the D19 HDB-upgrader catchment",
+          "$1.4-1.6M sits in the liquid sweet spot — broad buyer pool on exit",
+          "Agent flags price as negotiable / 'below valuation' — explicit room to bargain toward fair value"
+        ],
+        "rental_assessment": "2BR units rent ~$5.38 psf/mo (Squarefoot, trailing) implying ~$3,880/mo for 721 sqft and ~3.1-3.2% gross yield. MRT adjacency keeps tenant demand steady (deep HDB-upgrader and decentralised-office catchment), but the yield is only average for the segment and rents have normalised from the 2022-2023 peak. Fine for buy-and-hold, not a yield play.",
+        "appreciation_assessment": "Project moved from ~$1,915 psf (2024, 63 resale deals) to ~$2,176 psf (2026 YTD, all types) with 2BR transactions clustering $2,059-$2,131 psf. Strong historically but boom-driven and now maturing. Forward base case ~4.5%/yr — supported by location and liquidity, capped by the absence of any new catalyst and a fully-priced, already-operational Circle Line. Upside to ~5% only if the broader RCR-adjacent market re-accelerates.",
+        "stack_notes": "Botanique is 9 x 17-storey blocks ~70m apart with 70%+ of units facing pool/landscape. TARGET higher-floor, internal pool/landscape-facing stacks set back from Upper Paya Lebar Road and the PIE — quieter, better light, easiest to rent and resell. AVOID low-floor stacks fronting the road/expressway (documented noise complaints). This listing does NOT state floor/stack/facing despite claiming 'unblocked views' — get the unit number and check it against the site plan before offering; it can swing fair value by $50-100k. Also confirm the 721 sqft converted-Flexi layout reads as a genuine 2-bed, not a patched dual-key.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Agent forward estimate from URA / EdgeProp / Squarefoot / PropertyGuru transaction history (2015-2026), discounted for cooled momentum and no new catalyst"
+      },
+      "source": {
+        "run_dir": "output/run_013",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-03",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "The 1BR is the value + yield pick of the whole development. The 517 sqft variant at $910-918k ($1,760-1,776 psf) is the LOWEST psf in the entire project and is larger than the 495 sqft 1BR, yet costs less. It's the only sub-type that clears ~4% gross yield and carries the lowest quantum (most liquid on exit). A clear entry-level Buy.",
+      "rating_rationale": "(1) Lowest psf in the development ($1,770 vs project avg ~$2,176). (2) 517 sqft beats the 495 sqft variant on both size AND price - prefer it; the 495 sqft asks up to $2,020 psf and is comparatively overpriced. (3) Lowest absolute quantum (~$0.9M) = deepest buyer/tenant pool and easiest exit. (4) ~4% gross yield, best in the project. (5) 200 1BR units = liquid sub-market. Not Strong Buy only because 1BR has a narrower (singles/couples) tenant base and leasehold lease-decay applies.",
+      "red_flags": [
+        "1BR tenant/buyer pool is narrower (singles/young couples) than 2BR",
+        "495 sqft variant is overpriced (up to $2,020 psf) vs the 517 sqft - don't overpay for the smaller one",
+        "Floor/stack/facing must be verified; road/PIE-facing low stacks are noisy",
+        "99yr leasehold lease decay"
+      ],
+      "catalysts": [
+        "5-min walk to Bartley MRT (Circle Line)",
+        "Lowest quantum in the project = most liquid",
+        "~4% gross yield - best yield sub-type here",
+        "UOL build quality + 797-unit facilities"
+      ],
+      "as_of": {
+        "price": 915000,
+        "psf": 1770,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": 5.0,
+        "appreciation_source": "agent_research",
+        "gross_yield_pct": 4.0,
+        "nearest_mrt": "Bartley MRT (410m, 5-min walk)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "The 1BR is the value + yield pick of the whole development. The 517 sqft variant at $910-918k ($1,760-1,776 psf) is the LOWEST psf in the entire project and is larger than the 495 sqft 1BR, yet costs less. It's the only sub-type that clears ~4% gross yield and carries the lowest quantum (most liquid on exit). A clear entry-level Buy.",
+        "rating": "Buy",
+        "confidence": "medium",
+        "rating_rationale": "(1) Lowest psf in the development ($1,770 vs project avg ~$2,176). (2) 517 sqft beats the 495 sqft variant on both size AND price - prefer it; the 495 sqft asks up to $2,020 psf and is comparatively overpriced. (3) Lowest absolute quantum (~$0.9M) = deepest buyer/tenant pool and easiest exit. (4) ~4% gross yield, best in the project. (5) 200 1BR units = liquid sub-market. Not Strong Buy only because 1BR has a narrower (singles/couples) tenant base and leasehold lease-decay applies.",
+        "red_flags": [
+          "1BR tenant/buyer pool is narrower (singles/young couples) than 2BR",
+          "495 sqft variant is overpriced (up to $2,020 psf) vs the 517 sqft - don't overpay for the smaller one",
+          "Floor/stack/facing must be verified; road/PIE-facing low stacks are noisy",
+          "99yr leasehold lease decay"
+        ],
+        "catalysts": [
+          "5-min walk to Bartley MRT (Circle Line)",
+          "Lowest quantum in the project = most liquid",
+          "~4% gross yield - best yield sub-type here",
+          "UOL build quality + 797-unit facilities"
+        ],
+        "rental_assessment": "1BR rents ~$2,950-3,250/mo, implying ~3.9-4.3% gross on a ~$915k 517 sqft unit - the only sub-type that clears the 4% bar. MRT adjacency keeps the small-unit tenant pool active.",
+        "appreciation_assessment": "Rides the project base case ~4.5-5%/yr; compact, low-quantum units tend to appreciate well in percentage terms in a deep HDB-upgrader/first-timer market.",
+        "stack_notes": "BUY the 517 sqft (Type A) over the 495 sqft. Target high floor, internal pool/landscape or north-facing (unblocked low-rise views); AVOID low floors fronting Upper Paya Lebar Rd / PIE viaduct and west-facing. Suggested entry: <= $915k for 517 sqft (~$1,770 psf); skip 495 sqft above ~$950k.",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "Agent forward estimate from URA/EdgeProp/Squarefoot history, discounted for cooled momentum"
+      },
+      "source": {
+        "run_dir": "output/run_014",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-60189652",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-03",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Within 2BR, the standout buy is the TRUE 656/657 sqft 2-bedroom at $1.29M ($1,963 psf) - the lowest psf among all 2BRs, a conventional (non-dual-key) layout with the broadest resale appeal, and a very liquid ~$1.3M quantum. The 721-732 sqft 2BR Flexi/Dual-Key units ($1.48-1.65M, $2,053-2,250 psf) are only Neutral: niche dual-key layout and higher psf. Buy the 657; be selective on the Flexi.",
+      "rating_rationale": "(1) The 657 sqft true 2BR at $1,963 psf is the cheapest psf in the 2BR class and below the project avg ($2,176). (2) Standard 2-bed layout = widest buyer pool (couples, small families, investors) and best liquidity at the ~$1.3M sweet spot. (3) ~3.4% yield, better than the larger dual-key 2BRs. The dual-key Flexi 721-732 sqft (incl. the listing evaluated separately) is NEUTRAL - you pay $2,053-2,250 psf for a niche layout; only the cheapest 721 (~$1.48M) is worth it, after negotiation and stack check.",
+      "red_flags": [
+        "Dual-key/Flexi 2BR (721-753 sqft, 232 units) is a niche resale layout - narrower buyer pool than a standard 2BR",
+        "Higher-psf 732 sqft asks ($2,117-2,250) are getting expensive vs the 657 sqft true 2BR",
+        "~3.1-3.4% yield, below the 4% bar",
+        "Floor/stack/facing unverified; road/PIE noise on low front stacks"
+      ],
+      "catalysts": [
+        "657 sqft true 2BR at $1.29M = best value + most liquid 2BR",
+        "5-min walk to Bartley MRT",
+        "$1.3-1.5M is the deepest upgrader buyer band in D19",
+        "UOL + 797-unit scale supports price floor"
+      ],
+      "as_of": {
+        "price": 1290000,
+        "psf": 1963,
+        "beds": 2,
+        "sqft": 657
+      },
+      "key_facts": {
+        "appreciation_pct": 4.5,
+        "appreciation_source": "agent_research",
+        "gross_yield_pct": 3.4,
+        "nearest_mrt": "Bartley MRT (410m, 5-min walk)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "Within 2BR, the standout buy is the TRUE 656/657 sqft 2-bedroom at $1.29M ($1,963 psf) - the lowest psf among all 2BRs, a conventional (non-dual-key) layout with the broadest resale appeal, and a very liquid ~$1.3M quantum. The 721-732 sqft 2BR Flexi/Dual-Key units ($1.48-1.65M, $2,053-2,250 psf) are only Neutral: niche dual-key layout and higher psf. Buy the 657; be selective on the Flexi.",
+        "rating": "Buy",
+        "confidence": "medium",
+        "rating_rationale": "(1) The 657 sqft true 2BR at $1,963 psf is the cheapest psf in the 2BR class and below the project avg ($2,176). (2) Standard 2-bed layout = widest buyer pool (couples, small families, investors) and best liquidity at the ~$1.3M sweet spot. (3) ~3.4% yield, better than the larger dual-key 2BRs. The dual-key Flexi 721-732 sqft (incl. the listing evaluated separately) is NEUTRAL - you pay $2,053-2,250 psf for a niche layout; only the cheapest 721 (~$1.48M) is worth it, after negotiation and stack check.",
+        "red_flags": [
+          "Dual-key/Flexi 2BR (721-753 sqft, 232 units) is a niche resale layout - narrower buyer pool than a standard 2BR",
+          "Higher-psf 732 sqft asks ($2,117-2,250) are getting expensive vs the 657 sqft true 2BR",
+          "~3.1-3.4% yield, below the 4% bar",
+          "Floor/stack/facing unverified; road/PIE noise on low front stacks"
+        ],
+        "catalysts": [
+          "657 sqft true 2BR at $1.29M = best value + most liquid 2BR",
+          "5-min walk to Bartley MRT",
+          "$1.3-1.5M is the deepest upgrader buyer band in D19",
+          "UOL + 797-unit scale supports price floor"
+        ],
+        "rental_assessment": "2BR rents ~$5.3-5.6 psf/mo -> ~$3,600/mo for 657 sqft (~3.4% gross) and ~$3,880/mo for 721 sqft (~3.1%). Steady MRT-driven demand; average yield for the segment.",
+        "appreciation_assessment": "Project ~$1,915 psf (2024) -> ~$2,176 psf (2026 YTD); 2BR trades $1,963-2,250 psf depending on size/layout. Base case ~4.5%/yr forward, capped by no new catalyst.",
+        "stack_notes": "Best 2BR buy = 657 sqft true 2BR (~$1.29M). For the dual-key Flexi, only the cheapest 721 sqft (~$1.48M) is worth it. Target high floor, internal pool/north-facing; AVOID low road/PIE-facing stacks and west sun. Verify the converted-Flexi units read as clean 2-beds.",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Agent forward estimate from URA/EdgeProp/Squarefoot/PG transaction history"
+      },
+      "source": {
+        "run_dir": "output/run_014",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500032098",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-03",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The 3BR is the weakest investment case at current asks. Live listings are $2.30-2.38M ($2,422-2,570 psf) - the HIGHEST psf in the development and at/above the April 2026 benchmark high ($2,407 psf). Above $2M the buyer pool thins to families, and yield is the lowest (~2.7%). Aggressively priced; Avoid at ask, reconsider only on a meaningful discount.",
+      "rating_rationale": "(1) $2,422-2,570 psf is above the project's recent record and well over the ~$2,176 avg - you'd be setting a new high, not buying value. (2) >$2.3M quantum shrinks the buyer pool to families only, hurting liquidity and exit. (3) ~2.7% gross yield is the weakest sub-type. (4) Capital growth from here is capped by an already-mature location with no new catalyst. Not an outright structural reject (good unit, good project) - but at these asks it's a no-buy. Reconsider at <= ~$2.15M (~$2,250 psf).",
+      "red_flags": [
+        "Priced above the development's own recent psf high ($2,422-2,570 vs $2,407)",
+        ">$2.3M quantum = thin, family-only buyer pool and slower exit",
+        "~2.7% gross yield - lowest in the project",
+        "No fresh catalyst to justify premium psf; leasehold decay"
+      ],
+      "catalysts": [
+        "Family-friendly near Maris Stella / Paya Lebar Methodist schools",
+        "5-min walk to Bartley MRT",
+        "UOL build quality + full facilities"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 2453,
+        "beds": 3,
+        "sqft": 958
+      },
+      "key_facts": {
+        "appreciation_pct": 4.0,
+        "appreciation_source": "agent_research",
+        "gross_yield_pct": 2.7,
+        "nearest_mrt": "Bartley MRT (410m, 5-min walk)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "The 3BR is the weakest investment case at current asks. Live listings are $2.30-2.38M ($2,422-2,570 psf) - the HIGHEST psf in the development and at/above the April 2026 benchmark high ($2,407 psf). Above $2M the buyer pool thins to families, and yield is the lowest (~2.7%). Aggressively priced; Avoid at ask, reconsider only on a meaningful discount.",
+        "rating": "Avoid",
+        "confidence": "medium",
+        "rating_rationale": "(1) $2,422-2,570 psf is above the project's recent record and well over the ~$2,176 avg - you'd be setting a new high, not buying value. (2) >$2.3M quantum shrinks the buyer pool to families only, hurting liquidity and exit. (3) ~2.7% gross yield is the weakest sub-type. (4) Capital growth from here is capped by an already-mature location with no new catalyst. Not an outright structural reject (good unit, good project) - but at these asks it's a no-buy. Reconsider at <= ~$2.15M (~$2,250 psf).",
+        "red_flags": [
+          "Priced above the development's own recent psf high ($2,422-2,570 vs $2,407)",
+          ">$2.3M quantum = thin, family-only buyer pool and slower exit",
+          "~2.7% gross yield - lowest in the project",
+          "No fresh catalyst to justify premium psf; leasehold decay"
+        ],
+        "catalysts": [
+          "Family-friendly near Maris Stella / Paya Lebar Methodist schools",
+          "5-min walk to Bartley MRT",
+          "UOL build quality + full facilities"
+        ],
+        "rental_assessment": "3BR rents ~$5,000-5,500/mo -> ~2.6-2.9% gross on a $2.3-2.4M ask. Family-tenant demand exists but the quantum makes yield the weakest of all sub-types.",
+        "appreciation_assessment": "3BR is being asked above the recent benchmark; limited headroom from a record price in a mature market. Base case ~4%/yr, with downside if the premium ask has to be discounted to sell.",
+        "stack_notes": "If buying for own-stay (not investment), insist on high-floor, pool/north-facing, away from Upper Paya Lebar Rd/PIE, and negotiate hard toward ~$2,250 psf (~$2.15M). The 3BR Premium (1033-1065 sqft) and 3BR Flexi (1130 sqft) layouts give more space per dollar if available - compare before committing.",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Agent forward estimate; premium ask limits upside"
+      },
+      "source": {
+        "run_dir": "output/run_014",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500021710",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
