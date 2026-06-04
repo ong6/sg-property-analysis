@@ -1,0 +1,72 @@
+{
+  "condo": "Urban Vista",
+  "slug": "urban-vista",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A $1.4M 2BR penthouse (1,066 sqft, $1,313 psf) in a 582-unit 2016 leasehold project 390m from Tanah Merah MRT interchange. The ask is the cheapest of ~16 competing penthouses in the project and rents well (~4% gross yield), but Urban Vista's resale prices have been essentially flat for 3 years (1.1% total, 0.96% over the last 12 months) — the MRT premium is fully priced in, and a penthouse with a large outdoor terrace is a niche exit unit at a price point $300-450k above the project's standard 2BRs.",
+      "rating_rationale": "For a 5-7yr investment hold, appreciation is the dominant factor and the data is unambiguous: URA resale CAGR of just 2.2%/yr over 5 years (193 resale transactions, confidence 1.0), decelerating to ~1%/yr in the last 1-3 years — below the D16/OCR baseline of 3.7% and far below RCR's ~5.8%. Base-case projected total return is 3.17%/yr annualized (downside 1.69%) — bond-like returns for equity-like risk. The penthouse format compounds exit risk: ~16 similar PH units in one project, interior space well below the headline 1,066 sqft (large terrace), top-floor heat, and at $1.4M the resale buyer will compare against the project's standard 2BRs at $950k-1.1M and against brand-new Sceneca Residence next door (TOP Dec 2027) with direct MRT/mall integration. The $1,313 psf 'discount' vs the project's $1,554 average is structural penthouse pricing, not a bargain.",
+      "red_flags": [
+        "Flat appreciation: +1.1% total over 3 years, +0.96% over 12 months (URA resale data, 193 txns) despite the east-side market rally",
+        "Penthouse niche: large low-value terrace inflates sqft; ~16 competing PH units (1,012-1,163 sqft) in the same project; two near-identical units asking $1.5M signal a crowded exit",
+        "Sceneca Residence (268 units + retail, integrated with Tanah Merah MRT) TOPs Dec 2027 — construction noise until then, newer competing stock at resale time",
+        "Resident-reported maintenance decay: broken tiles, unrepaired pool furniture, rusty gym equipment (Stacked Homes 6-year resident review) — MCST quality risk",
+        "Elevated EW-line MRT track noise adjacent to the development",
+        "Tenant-heavy, transient resident profile; tight parking"
+      ],
+      "catalysts": [
+        "Changi T5 + Changi East Industrial Zone/Urban District (2030s) — long-term employment growth for the East",
+        "Changi Airport branch conversion to TEL with Tanah Merah as interchange/terminal (~2040 — beyond a 5-7yr hold)",
+        "Sceneca's retail podium (21.5k sqft) adds doorstep amenities from 2028",
+        "Sustained rental demand from Changi Business Park, Expo, SUTD and airport workforce"
+      ],
+      "as_of": {
+        "price": 1399999,
+        "psf": 1313,
+        "beds": 2,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.2,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 3.2,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "A $1.4M 2BR penthouse (1,066 sqft, $1,313 psf) in a 582-unit 2016 leasehold project 390m from Tanah Merah MRT interchange. The ask is the cheapest of ~16 competing penthouses in the project and rents well (~4% gross yield), but Urban Vista's resale prices have been essentially flat for 3 years (1.1% total, 0.96% over the last 12 months) — the MRT premium is fully priced in, and a penthouse with a large outdoor terrace is a niche exit unit at a price point $300-450k above the project's standard 2BRs.",
+        "rating": "Avoid",
+        "rating_rationale": "For a 5-7yr investment hold, appreciation is the dominant factor and the data is unambiguous: URA resale CAGR of just 2.2%/yr over 5 years (193 resale transactions, confidence 1.0), decelerating to ~1%/yr in the last 1-3 years — below the D16/OCR baseline of 3.7% and far below RCR's ~5.8%. Base-case projected total return is 3.17%/yr annualized (downside 1.69%) — bond-like returns for equity-like risk. The penthouse format compounds exit risk: ~16 similar PH units in one project, interior space well below the headline 1,066 sqft (large terrace), top-floor heat, and at $1.4M the resale buyer will compare against the project's standard 2BRs at $950k-1.1M and against brand-new Sceneca Residence next door (TOP Dec 2027) with direct MRT/mall integration. The $1,313 psf 'discount' vs the project's $1,554 average is structural penthouse pricing, not a bargain.",
+        "red_flags": [
+          "Flat appreciation: +1.1% total over 3 years, +0.96% over 12 months (URA resale data, 193 txns) despite the east-side market rally",
+          "Penthouse niche: large low-value terrace inflates sqft; ~16 competing PH units (1,012-1,163 sqft) in the same project; two near-identical units asking $1.5M signal a crowded exit",
+          "Sceneca Residence (268 units + retail, integrated with Tanah Merah MRT) TOPs Dec 2027 — construction noise until then, newer competing stock at resale time",
+          "Resident-reported maintenance decay: broken tiles, unrepaired pool furniture, rusty gym equipment (Stacked Homes 6-year resident review) — MCST quality risk",
+          "Elevated EW-line MRT track noise adjacent to the development",
+          "Tenant-heavy, transient resident profile; tight parking"
+        ],
+        "catalysts": [
+          "Changi T5 + Changi East Industrial Zone/Urban District (2030s) — long-term employment growth for the East",
+          "Changi Airport branch conversion to TEL with Tanah Merah as interchange/terminal (~2040 — beyond a 5-7yr hold)",
+          "Sceneca's retail podium (21.5k sqft) adds doorstep amenities from 2028",
+          "Sustained rental demand from Changi Business Park, Expo, SUTD and airport workforce"
+        ],
+        "rental_assessment": "Genuinely solid. 390m to an MRT interchange serving CBP/Expo/airport employment keeps the tenant pool deep; project yield runs ~4.1%. A near-identical 1,055 sqft 2BR penthouse asks $5,000/mo — achieved rent of ~$4,500-4,800 implies ~3.9-4.1% gross on this ask, above the 2BR condo norm. Caveats: tenants pay for interior space, not terrace, so the premium over a standard 2BR ($3,800-4,200) is modest; top-floor heat and ongoing Sceneca construction (until late 2027) are tenant friction points. The scorer's $3,731 fallback estimate is too low — researched figure used instead.",
+        "appreciation_assessment": "The weakest pillar, on the most reliable data in this evaluation. URA resale-only CAGR is 2.2%/yr over 5 years and the trend is decelerating: +1.1% over 3 years, +0.96% over 1 year. The project underperformed its own OCR baseline (3.7%) through a strong east-side market — evidence of project-specific drag (track noise, maintenance, investor-heavy small-unit stock). T5 is the credible re-rating story but lands at the very end of a 5-7yr hold at best. No override applied: the 2.2% project-level rate is already in the model, and if anything recent momentum argues it is generous.",
+        "stack_notes": "Top-floor penthouse; facing not disclosed. Upside: furthest from EW-line track noise, 'city skyline' view claimed. Downside: equatorial roof heat, and west-facing stacks would worsen cooling costs — verify facing and the interior-vs-terrace sqft split (likely ~750-850 sqft interior of the 1,066) before any offer. Within Urban Vista, the better investment units are the standard 592-700 sqft 2BRs at $950k-1.1M: same rental demand at a lower quantum, much deeper exit pool.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "URA resale 5yr CAGR for Urban Vista (193 resale transactions, no new-launch bias) — used as-is"
+      },
+      "source": {
+        "run_dir": "output/run_023",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-25584219",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
