@@ -1,0 +1,80 @@
+{
+  "condo": "Skysuites @ Anson",
+  "slug": "skysuites-anson",
+  "district": "D02",
+  "history": [
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Skysuites @ Anson is a 360-unit, 71-storey 99-yr leasehold CBD tower (TOP 2014, ~81 yrs lease left) at 8 Enggor Street, 320m from Tanjong Pagar MRT. 2BR units (667-700 sqft) ask $1.45M-$1.60M ($2,174-$2,399 psf) against recent transactions of $2,066-$2,390 psf. It is a strong rental-yield asset (~4.3-4.6% gross) but a poor capital-appreciation play: URA 5-yr CAGR is just +0.9%/yr (97 txns), prices remain ~20% below the 2018 peak, and the whole D02 old-leasehold cohort is flat-to-negative.",
+      "rating_rationale": "For a 5-7 year investment hold, appreciation is the dominant factor and it is absent here: URA project CAGR +0.94%/yr with high confidence (97 txns); neighbours confirm the pattern (Altez -0.9%, Lumiere -2.6%, Wallich -3.9%, Icon/76 Shenton ~+1.1%). Modelled 5-yr annualized total ROI is ~1.4%/yr at the URA rate and only ~2.8%/yr in an optimistic 2.5%-appreciation scenario - both below risk-free; the downside scenario is negative. Lease decay (81 yrs, no realistic en-bloc for a maxed-out 71-storey tower) and 1,000+ newer competing CBD units (CBD Incentive Scheme, One Bernam, Newport Residences, The Skywaters, 51 Anson) cap the exit. Defunct developer (Arcadia) means no warranty recourse amid documented workmanship complaints. The honest exception: as a pure rental-income hold the 4.3-4.6% gross yield and deep CBD tenant pool are genuinely good - but that is not this framework's 5-7yr capital-growth mandate. Technical score 40/100 (Tier 3) agrees.",
+      "red_flags": [
+        "URA 5-yr CAGR only +0.94%/yr (97 txns, high confidence); prices still ~20% below May 2018 peak ($2,904 psf) after 8 years",
+        "Entire D02 old-leasehold cohort flat-to-negative (Altez -0.9%, Lumiere -2.6%, Wallich -3.9%/yr) - structural, not project-specific",
+        "Developer Arcadia Development is defunct: no warranty recourse; residents report doors falling off, mould, cheap fittings, $2-3k specialist repair visits",
+        "Orphaned Blomberg kitchen appliances (brand exited Singapore) - broken units need full replacement",
+        "1,000+ newer competing residential units coming to Anson/Cecil via CBD Incentive Scheme plus One Bernam / Newport Residences / The Skywaters / 51 Anson - caps rents and resale pricing",
+        "~81 years lease remaining and decaying; effectively zero en-bloc optionality (single tower already at max plot ratio)",
+        "Poorly maintained facilities reported (non-functional BBQ pits, jacuzzis chronically under maintenance); expect above-average MCST fees for a 71-storey single block (level unverified)",
+        "Multi-year construction noise from surrounding CBD redevelopment sites",
+        "One $10M/5,350 sqft listing in this result set is a mislabeled penthouse, not a 2BR"
+      ],
+      "catalysts": [
+        "Circle Line 6 opens 12 July 2026 - Prince Edward Road station adds a second line to the Anson/Shenton micro-location (marginal: already 320m from Tanjong Pagar EWL)",
+        "CBD Incentive Scheme regeneration of Anson/Cecil - placemaking lifts precinct livability over time (double-edged: also the supply source)",
+        "Greater Southern Waterfront transformation - significant but mostly beyond a 5-7yr hold window",
+        "Recent momentum: 500-1,000 sqft units +5.6% y-o-y per EdgeProp - partial recovery off a low base",
+        "$350-600+ psf discount to new launches nearby (One Bernam ~$2,650, Newport ~$2,923 psf) gives relative-value support at the low end"
+      ],
+      "as_of": {
+        "price": 1560000,
+        "psf": 2228.57,
+        "beds": 2,
+        "sqft": 700.0
+      },
+      "key_facts": {
+        "appreciation_pct": 0.94,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 1.88,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "Skysuites @ Anson is a 360-unit, 71-storey 99-yr leasehold CBD tower (TOP 2014, ~81 yrs lease left) at 8 Enggor Street, 320m from Tanjong Pagar MRT. 2BR units (667-700 sqft) ask $1.45M-$1.60M ($2,174-$2,399 psf) against recent transactions of $2,066-$2,390 psf. It is a strong rental-yield asset (~4.3-4.6% gross) but a poor capital-appreciation play: URA 5-yr CAGR is just +0.9%/yr (97 txns), prices remain ~20% below the 2018 peak, and the whole D02 old-leasehold cohort is flat-to-negative.",
+        "rating": "Avoid",
+        "rating_rationale": "For a 5-7 year investment hold, appreciation is the dominant factor and it is absent here: URA project CAGR +0.94%/yr with high confidence (97 txns); neighbours confirm the pattern (Altez -0.9%, Lumiere -2.6%, Wallich -3.9%, Icon/76 Shenton ~+1.1%). Modelled 5-yr annualized total ROI is ~1.4%/yr at the URA rate and only ~2.8%/yr in an optimistic 2.5%-appreciation scenario - both below risk-free; the downside scenario is negative. Lease decay (81 yrs, no realistic en-bloc for a maxed-out 71-storey tower) and 1,000+ newer competing CBD units (CBD Incentive Scheme, One Bernam, Newport Residences, The Skywaters, 51 Anson) cap the exit. Defunct developer (Arcadia) means no warranty recourse amid documented workmanship complaints. The honest exception: as a pure rental-income hold the 4.3-4.6% gross yield and deep CBD tenant pool are genuinely good - but that is not this framework's 5-7yr capital-growth mandate. Technical score 40/100 (Tier 3) agrees.",
+        "red_flags": [
+          "URA 5-yr CAGR only +0.94%/yr (97 txns, high confidence); prices still ~20% below May 2018 peak ($2,904 psf) after 8 years",
+          "Entire D02 old-leasehold cohort flat-to-negative (Altez -0.9%, Lumiere -2.6%, Wallich -3.9%/yr) - structural, not project-specific",
+          "Developer Arcadia Development is defunct: no warranty recourse; residents report doors falling off, mould, cheap fittings, $2-3k specialist repair visits",
+          "Orphaned Blomberg kitchen appliances (brand exited Singapore) - broken units need full replacement",
+          "1,000+ newer competing residential units coming to Anson/Cecil via CBD Incentive Scheme plus One Bernam / Newport Residences / The Skywaters / 51 Anson - caps rents and resale pricing",
+          "~81 years lease remaining and decaying; effectively zero en-bloc optionality (single tower already at max plot ratio)",
+          "Poorly maintained facilities reported (non-functional BBQ pits, jacuzzis chronically under maintenance); expect above-average MCST fees for a 71-storey single block (level unverified)",
+          "Multi-year construction noise from surrounding CBD redevelopment sites",
+          "One $10M/5,350 sqft listing in this result set is a mislabeled penthouse, not a 2BR"
+        ],
+        "catalysts": [
+          "Circle Line 6 opens 12 July 2026 - Prince Edward Road station adds a second line to the Anson/Shenton micro-location (marginal: already 320m from Tanjong Pagar EWL)",
+          "CBD Incentive Scheme regeneration of Anson/Cecil - placemaking lifts precinct livability over time (double-edged: also the supply source)",
+          "Greater Southern Waterfront transformation - significant but mostly beyond a 5-7yr hold window",
+          "Recent momentum: 500-1,000 sqft units +5.6% y-o-y per EdgeProp - partial recovery off a low base",
+          "$350-600+ psf discount to new launches nearby (One Bernam ~$2,650, Newport ~$2,923 psf) gives relative-value support at the low end"
+        ],
+        "rental_assessment": "Strong. 2BR rents $5,000-$5,800/mo (recent transactions), giving ~4.3-4.6% gross yield at the $1.45-1.56M asks - excellent for CBD. Deep tenant pool (Shenton/Anson office cluster, expat singles/couples), 78 rental transactions in 6 months = high rental liquidity. Medium-term rent growth capped by incoming CBD supply. Note: the algo's $2,450/mo 'fallback' rent estimate is wrong - researched market rent is more than double that.",
+        "appreciation_assessment": "Weak. URA 5-yr CAGR +0.94%/yr on 97 transactions (high confidence), ~20% below the 2018 peak. District-wide pattern confirms old D02 leasehold stock does not appreciate even through the 2021-2024 national bull run. Recent +5.6% y-o-y momentum and CCL6 give a plausible floor, not a re-rating thesis; lease decay works against the tail. I model 1.5%/yr as a generous blended forward rate - even that yields ~2%/yr total annualized ROI.",
+        "stack_notes": "If buying despite the rating (i.e., as a yield hold): target HIGH-floor sea/Marina Bay-facing stacks - surrounding towers (Altez, 250m, etc.) are tall, so only upper floors get unblocked views; pool-facing internal stacks are the quiet alternative. Avoid west-facing stacks (equatorial afternoon sun) and low/mid floors fronting Anson Rd/Enggor St (traffic + multi-year construction noise). Per-stack compass orientation is not published - verify facing on URA/SLA map or site visit. Negotiate from the $1.45M/667sqft asks ($2,174 psf) toward recent transaction lows ~$2,070-2,150 psf; do not pay the $2,350-2,400 psf top asks.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 1.5,
+        "appreciation_rate_source": "URA D02 cache +0.94%/yr (97 txns) blended generously upward for 2024-25 recovery momentum (+5.6% y-o-y, EdgeProp) and CCL6 opening Jul 2026"
+      },
+      "source": {
+        "run_dir": "output/run_020",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-25464237",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

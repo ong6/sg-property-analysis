@@ -1102,6 +1102,1184 @@
       "tenure": "F",
       "listing_agent": "Peter Jiang 姜泽良",
       "url": "https://www.propertyguru.com.sg/listing/for-sale-west-n-25639184"
+    },
+    "500081982": {
+      "id": "500081982",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1620000,
+          "psf": 2314.29
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 700.0,
+      "psf": 2314.29,
+      "price": 1620000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Brian Koh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500081982/UPHO.158997656.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500081982"
+    },
+    "500000297": {
+      "id": "500000297",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 2000000,
+          "psf": 2185.79
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 915.0,
+      "psf": 2185.79,
+      "price": 2000000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Mark Yeo (杨复中)",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500000297/UPHO.157337896.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500000297"
+    },
+    "500134380": {
+      "id": "500134380",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1650000,
+          "psf": 2191.24
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 753.0,
+      "psf": 2191.24,
+      "price": 1650000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Marcus Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500134380/UPHO.159782543.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500134380"
+    },
+    "25601530": {
+      "id": "25601530",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1620000,
+          "psf": 2389.38
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 678.0,
+      "psf": 2389.38,
+      "price": 1620000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "JAY PECK",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25601530/UPHO.154887622.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-25601530"
+    },
+    "21631899": {
+      "id": "21631899",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 959999,
+          "psf": 2123.89
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 452.0,
+      "psf": 2123.89,
+      "price": 959999,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Bendon Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/21631899/UPHO.122911302.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-21631899"
+    },
+    "500130455": {
+      "id": "500130455",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1788888,
+          "psf": 2216.71
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 807.0,
+      "psf": 2216.71,
+      "price": 1788888,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Amos Marcus",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500130455/UPHO.159728526.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500130455"
+    },
+    "24757155": {
+      "id": "24757155",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1690000,
+          "psf": 2180.65
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 775.0,
+      "psf": 2180.65,
+      "price": 1690000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Cheryl Yip",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/24757155/UPHO.156029241.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-24757155"
+    },
+    "25544154": {
+      "id": "25544154",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1700000,
+          "psf": 2394.37
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 710.0,
+      "psf": 2394.37,
+      "price": 1700000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "JAY PECK",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25544154/UPHO.155159903.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-25544154"
+    },
+    "60079412": {
+      "id": "60079412",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1600000,
+          "psf": 2250.35
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 711.0,
+      "psf": 2250.35,
+      "price": 1600000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Anthea Wee",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60079412/UPHO.156128876.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-60079412"
+    },
+    "21696733": {
+      "id": "21696733",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 960000,
+          "psf": 2227.38
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 431.0,
+      "psf": 2227.38,
+      "price": 960000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Jovel Chua",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/21696733/UPHO.113552041.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-21696733"
+    },
+    "25615512": {
+      "id": "25615512",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1880000,
+          "psf": 2329.62
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 807.0,
+      "psf": 2329.62,
+      "price": 1880000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25615512/UPHO.156915377.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-25615512"
+    },
+    "24715257": {
+      "id": "24715257",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 968000,
+          "psf": 2245.94
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 431.0,
+      "psf": 2245.94,
+      "price": 968000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Marcus Lee",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/24715257/UPHO.152077600.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-24715257"
+    },
+    "60209292": {
+      "id": "60209292",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1600000,
+          "psf": 2285.71
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 700.0,
+      "psf": 2285.71,
+      "price": 1600000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Bryant Tan Zhi Yong",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60209292/UPHO.157858998.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-60209292"
+    },
+    "500013224": {
+      "id": "500013224",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1690000,
+          "psf": 2180.65
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 775.0,
+      "psf": 2180.65,
+      "price": 1690000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Ena Teo",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500013224/UPHO.157684123.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500013224"
+    },
+    "23874295": {
+      "id": "23874295",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1250000,
+          "psf": 2192.98
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 570.0,
+      "psf": 2192.98,
+      "price": 1250000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Joe Ng Xu Hong 黄緒汯",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/23874295/UPHO.147454622.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-23874295"
+    },
+    "21855946": {
+      "id": "21855946",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1560000,
+          "psf": 2264.15
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 689.0,
+      "psf": 2264.15,
+      "price": 1560000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "listing_agent": "Jovel Chua",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/21855946/UPHO.108694630.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-21855946"
+    },
+    "500146959": {
+      "id": "500146959",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1288888,
+          "psf": 2261.21
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 570.0,
+      "psf": 2261.21,
+      "price": 1288888,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500146959/UPHO.160000044.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500146959"
+    },
+    "500148699": {
+      "id": "500148699",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 960000,
+          "psf": 2227.38
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale/at-city-gate-21937"
+      },
+      "title": "City Gate",
+      "project_name": "City Gate",
+      "district": "D07",
+      "district_name": "Beach Road / Bugis / Rochor",
+      "region": "City & South West (D01-08)",
+      "beds": 1,
+      "baths": 1,
+      "sqft": 431.0,
+      "psf": 2227.38,
+      "price": 960000,
+      "property_type": "Apartment",
+      "tenure": "99-year Leasehold",
+      "built_year": 2019,
+      "mrt_info": "4 min (350 m) from CC5 Nicoll Highway MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500148699/UPHO.159975306.V550/City-Gate-Beach-Road-Bugis-Rochor-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500148699"
+    },
+    "25398269": {
+      "id": "25398269",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1500000,
+          "psf": 2248.88
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2248.88,
+      "price": 1500000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Yen Suan Lim",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25398269/UPHO.152175890.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-25398269"
+    },
+    "23860543": {
+      "id": "23860543",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1580000,
+          "psf": 2368.82
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2368.82,
+      "price": 1580000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Hui Sann Kwok",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/23860543/UPHO.133975624.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-23860543"
+    },
+    "25464237": {
+      "id": "25464237",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1560000,
+          "psf": 2228.57
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 700.0,
+      "psf": 2228.57,
+      "price": 1560000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Alex Toh C W",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/25464237/UPHO.156358462.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-25464237"
+    },
+    "500113940": {
+      "id": "500113940",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1530000,
+          "psf": 2293.85
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2293.85,
+      "price": 1530000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Chris Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500113940/UPHO.160064815.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500113940"
+    },
+    "500154654": {
+      "id": "500154654",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1550000,
+          "psf": 2323.84
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2323.84,
+      "price": 1550000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Anthea Yeo 杨丽娇",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500154654/UPHO.160062902.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500154654"
+    },
+    "24939861": {
+      "id": "24939861",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1600000,
+          "psf": 2398.8
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2398.8,
+      "price": 1600000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Keith Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/24939861/UPHO.146721590.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-24939861"
+    },
+    "60173361": {
+      "id": "60173361",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 10000000,
+          "psf": 1869.16
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 5350.0,
+      "psf": 1869.16,
+      "price": 10000000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Cheryl Lee",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60173361/UPHO.157200076.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-60173361"
+    },
+    "500092273": {
+      "id": "500092273",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1458888,
+          "psf": 2187.24
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2187.24,
+      "price": 1458888,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Xinyi Lin",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500092273/UPHO.159691713.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500092273"
+    },
+    "60214478": {
+      "id": "60214478",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1450000,
+          "psf": 2173.91
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2173.91,
+      "price": 1450000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Benjamin Heng",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60214478/UPHO.157998691.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-60214478"
+    },
+    "24274787": {
+      "id": "24274787",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1600000,
+          "psf": 2398.8
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2398.8,
+      "price": 1600000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/24274787/UPHO.152732180.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-24274787"
+    },
+    "500102641": {
+      "id": "500102641",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1530000,
+          "psf": 2188.84
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 699.0,
+      "psf": 2188.84,
+      "price": 1530000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Wilson Wu 巫海强",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500102641/UPHO.159320796.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500102641"
+    },
+    "500075224": {
+      "id": "500075224",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1498000,
+          "psf": 2245.88
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2245.88,
+      "price": 1498000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500075224/UPHO.158889363.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500075224"
+    },
+    "500135685": {
+      "id": "500135685",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1550000,
+          "psf": 2214.29
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 700.0,
+      "psf": 2214.29,
+      "price": 1550000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Alerie Huang",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500135685/UPHO.159800238.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-500135685"
+    },
+    "23669754": {
+      "id": "23669754",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1580000,
+          "psf": 2368.82
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2368.82,
+      "price": 1580000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Joanne Wang",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/23669754/UPHO.131041388.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-23669754"
+    },
+    "21339873": {
+      "id": "21339873",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1490000,
+          "psf": 2233.88
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/property-for-sale?listingType=sale&page=1&propertyId=20584&isCommercial=false&_freetextDisplay=Skysuites+@+Anson&propertyNanoId=c0j6tv&bedrooms=2"
+      },
+      "title": "Skysuites @ Anson",
+      "project_name": "Skysuites @ Anson",
+      "district": "D02",
+      "district_name": "Chinatown / Tanjong Pagar",
+      "region": "City & South West (D01-08)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 667.0,
+      "psf": 2233.88,
+      "price": 1490000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2015,
+      "mrt_info": "4 min (360 m) from EW15 Tanjong Pagar MRT Station",
+      "listing_agent": "Kas Chen",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/21339873/UPHO.112848360.V550/Skysuites-Anson-Chinatown-Tanjong-Pagar-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-anson-21339873"
+    },
+    "500153648": {
+      "id": "500153648",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1318000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648"
+      },
+      "title": "Grandeur Park Residences",
+      "project_name": "Grandeur Park Residences",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 592.0,
+      "price": 1318000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Siah Boon Leng Ronnie",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648"
     }
   }
 }
