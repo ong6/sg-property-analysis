@@ -1,0 +1,74 @@
+{
+  "condo": "West-N",
+  "slug": "west-n",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold boutique unit (14-unit block, 2009) at 250P Pasir Panjang Rd, 230m from Haw Par Villa MRT, asking $1.63M ($1,721 psf) — 14% below D05 median and ~20% below new freehold launches nearby (The Hillshore from ~$2,100 psf). But it is structurally a 2BR marketed as a 'convertible 3BR', yield is only ~3.0%, and the development has had just 1 URA transaction in 5 years — exit liquidity is close to nonexistent for a 5-7yr investment hold.",
+      "rating_rationale": "Mixed: genuinely cheap PSF for freehold-near-MRT with real GSW/Pasir Panjang Power District catalysts, and the seller's own stack appreciated from $1.23M (Mar 2020, 947sqft) to this $1.63M ask (+32%). Against that: 14 total units with ~1 transaction every few years (URA shows 1 txn in 5yrs), the '3BR' is a converted 2BR (SRX lists it as 2BR; 316 sqft/bed), gross yield ~2.9-3.0% is below the 3.3-3.5% norm, the block fronts busy Pasir Panjang Road, and the ask PSF ($1,721) is already above the last transacted PSF ($1,685, Mar 2025). The PSF discount vs district is largely a structural boutique-illiquidity discount, not mispricing. As a pure investment: pass unless negotiated to ~$1.50-1.55M. As an owner-occupier play (freehold + 230m MRT + sub-$1.7M quantum) it is defensible.",
+      "red_flags": [
+        "Extreme illiquidity: 14-unit development, only 1 URA transaction in the last 5 years (Mar 2025); selling within a chosen window may be very hard",
+        "Bedroom misclassification: physically a 2BR ('2 bedder can be converted into 3 bedder' per agent; SRX lists current listing as 2BR); 947sqft/3BR = 316 sqft/bed",
+        "Weak carry: ~$4,000-4,100/mo realistic rent (Apr 2025 comp: 2BR 900-1,000sqft at $4,000) = ~2.9-3.0% gross yield",
+        "Fronts Pasir Panjang Road — arterial/port-traffic noise until port fully relocates to Tuas",
+        "17 years old, boutique block: minimal facilities (small pool, BBQ), maintenance per unit typically high with 14 units sharing costs",
+        "Asking $1,721 psf is above the development's last transacted $1,685 psf (Mar 2025, larger low-floor unit) — seller pricing in the GSW story"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront: 2,000ha multi-decade transformation; Pasir Panjang Power District mixed-use redevelopment on the doorstep",
+        "Pasir Panjang Linear Park completing ~2026 (Labrador Nature Reserve to West Coast Park)",
+        "Circle Line loop closure (CCL6, 2026) — direct access from Haw Par Villa (230m) to Bayfront/Dhoby Ghaut",
+        "Price benchmark pull from new freehold launches on the same road: The Hillshore from ~$2,100 psf, Terra Hill ~$2,2xx+ psf",
+        "Rental catchment: one-north, NUS, Science Park, Mapletree Business City (31 rental txns in a 14-unit block = tenant-popular)"
+      ],
+      "as_of": {
+        "price": 1630000,
+        "psf": 1721,
+        "beds": 3,
+        "sqft": 947.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.8,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.0,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": 999
+      },
+      "agent_evaluation": {
+        "summary": "Freehold boutique unit (14-unit block, 2009) at 250P Pasir Panjang Rd, 230m from Haw Par Villa MRT, asking $1.63M ($1,721 psf) — 14% below D05 median and ~20% below new freehold launches nearby (The Hillshore from ~$2,100 psf). But it is structurally a 2BR marketed as a 'convertible 3BR', yield is only ~3.0%, and the development has had just 1 URA transaction in 5 years — exit liquidity is close to nonexistent for a 5-7yr investment hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Mixed: genuinely cheap PSF for freehold-near-MRT with real GSW/Pasir Panjang Power District catalysts, and the seller's own stack appreciated from $1.23M (Mar 2020, 947sqft) to this $1.63M ask (+32%). Against that: 14 total units with ~1 transaction every few years (URA shows 1 txn in 5yrs), the '3BR' is a converted 2BR (SRX lists it as 2BR; 316 sqft/bed), gross yield ~2.9-3.0% is below the 3.3-3.5% norm, the block fronts busy Pasir Panjang Road, and the ask PSF ($1,721) is already above the last transacted PSF ($1,685, Mar 2025). The PSF discount vs district is largely a structural boutique-illiquidity discount, not mispricing. As a pure investment: pass unless negotiated to ~$1.50-1.55M. As an owner-occupier play (freehold + 230m MRT + sub-$1.7M quantum) it is defensible.",
+        "red_flags": [
+          "Extreme illiquidity: 14-unit development, only 1 URA transaction in the last 5 years (Mar 2025); selling within a chosen window may be very hard",
+          "Bedroom misclassification: physically a 2BR ('2 bedder can be converted into 3 bedder' per agent; SRX lists current listing as 2BR); 947sqft/3BR = 316 sqft/bed",
+          "Weak carry: ~$4,000-4,100/mo realistic rent (Apr 2025 comp: 2BR 900-1,000sqft at $4,000) = ~2.9-3.0% gross yield",
+          "Fronts Pasir Panjang Road — arterial/port-traffic noise until port fully relocates to Tuas",
+          "17 years old, boutique block: minimal facilities (small pool, BBQ), maintenance per unit typically high with 14 units sharing costs",
+          "Asking $1,721 psf is above the development's last transacted $1,685 psf (Mar 2025, larger low-floor unit) — seller pricing in the GSW story"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront: 2,000ha multi-decade transformation; Pasir Panjang Power District mixed-use redevelopment on the doorstep",
+          "Pasir Panjang Linear Park completing ~2026 (Labrador Nature Reserve to West Coast Park)",
+          "Circle Line loop closure (CCL6, 2026) — direct access from Haw Par Villa (230m) to Bayfront/Dhoby Ghaut",
+          "Price benchmark pull from new freehold launches on the same road: The Hillshore from ~$2,100 psf, Terra Hill ~$2,2xx+ psf",
+          "Rental catchment: one-north, NUS, Science Park, Mapletree Business City (31 rental txns in a 14-unit block = tenant-popular)"
+        ],
+        "rental_assessment": "Tenant demand is real (one-north/NUS/Science Park catchment; the block rents continuously — 31 rental transactions since 2009 across 14 units). But pricing power is modest: Apr 2025 comp shows $4,000/mo for the 2BR ~947sqft type, i.e. ~2.9% gross yield at the $1.63M ask. Below-average carry for D05.",
+        "appreciation_assessment": "Realistic rate ~4%/yr, below the 5.8% RCR baseline the algo defaulted to. Micro-market comps: Village @ Pasir Panjang +2.7%/yr, Ventana +4.2%, Viva Vista +0.6%, Whistler Grand +3.4%. West-N's own 1,217sqft stack did ~+6.4%/yr (Aug 2020 $1,233 psf -> Mar 2025 $1,685 psf) but n=2 transactions. GSW is a genuine but slow, multi-decade catalyst; most of the easy re-rating since 2020 has happened and this ask already prices some of it in.",
+        "stack_notes": "Floor/facing not disclosed in the listing. With one 14-unit block fronting Pasir Panjang Road, prefer higher-floor units facing away from the road (rear/hill side); avoid low floors facing the road due to traffic noise. Mar 2025 $2.05M transaction was a low floor (01-05) 1,217sqft unit.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Blend of Pasir Panjang micro-market URA comps (Village @ Pasir Panjang +2.7%, Ventana +4.2%, Whistler Grand +3.4%) discounted from RCR 5.8% baseline for boutique illiquidity; West-N own-stack realized ~6.4%/yr 2020-2025 on n=2 txns treated as upper bound"
+      },
+      "source": {
+        "run_dir": "output/run_017",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-west-n-25639184",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
