@@ -1,0 +1,72 @@
+{
+  "condo": "Grandeur Park Residences",
+  "slug": "grandeur-park-residences",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A tenanted 592 sqft 2BR Deluxe at Grandeur Park Residences (TOP Mar 2021, 720 units, CEL Development), 420m from Tanah Merah MRT. The development's fundamentals are genuinely good — 4.7%/yr URA CAGR over 186 transactions, deep liquidity, and an imminent TEL Stage 5 catalyst (2H 2026) — but the $1.318M ask works out to $2,226 psf, ABOVE the project's all-time-high transaction ($2,146 psf, Dec 2025) and ~7-10% above the last-12-month 2BR average (~$2,007-2,090 psf). Right development, wrong price; floor/facing/stack undisclosed adds risk.",
+      "rating_rationale": "Asking $2,226 psf exceeds the project's record transacted PSF of $2,146 (Dec 2025, a 624 sqft 2BR Deluxe at $1.34M) and is ~7% above the Jan 2026 comp ($2,090 psf for 560 sqft). Fair value is ~$1.24M-1.27M; at list there is zero margin of safety. Fundamentals would support a Buy at ~$1.25M: 4.7%/yr appreciation beats the OCR ~3.7% baseline, 186 URA transactions and 720 units give excellent liquidity in the very liquid ~$1.3M quantum, and the TEL Stage 5 opening (Bedok South TE30 + Sungei Bedok TE31, 2H 2026) plus Tanah Merah's planned EWL-TEL interchange role (Changi Airport branch conversion, mid-2030s) are real catalysts the technical score misses. But gross yield is only ~3.6%, the unit is tenanted (rent level undisclosed - could be locked below market), stack/floor/facing are undisclosed in a development with known MRT-track-noise stacks, and competing supply (Sceneca Residence TOP 2Q2026 next door, Bedok Rise GLS, ~3,000 Bayshore units) caps near-term upside.",
+      "red_flags": [
+        "Priced above the project's record: $2,226 psf ask vs $2,146 psf all-time-high (Dec 2025) and ~$2,007-2,090 psf recent 2BR comps — ~5-10% premium with no disclosed justification (floor/view unknown)",
+        "Floor, facing and stack NOT disclosed — stacks 5-11 suffer MRT track noise, 15/16/21/22 face road noise, 43/44 face the carpark entrance; must verify before any offer",
+        "Existing tenancy: passing rent undisclosed — if locked below the current $3,600-4,400/mo market, effective yield drops below the already-modest ~3.6%",
+        "592 sqft is compact (algo flags sub-600 sqft 2BR); rents and resells at the small end of the 2BR pool",
+        "Competing supply: Sceneca Residence (268 units) TOPs 2Q2026 next door with direct MRT link and mall, Bedok Rise GLS site adjacent, ~3,000 private units coming in Bayshore precinct"
+      ],
+      "catalysts": [
+        "TEL Stage 5 opens 2H 2026: Bedok South (TE30) and Sungei Bedok (TE31, DTL-TEL interchange) — imminent, within ~1.5km",
+        "Tanah Merah MRT slated to become an EWL-TEL interchange via Changi Airport branch conversion (~mid-2030s)",
+        "Sceneca Square mall (2026) adds a doorstep retail amenity the precinct lacked",
+        "Changi region employment growth: Changi Business Park one stop away, T5 development into the 2030s",
+        "Project PSF momentum positive (~6.4% over recent window) and Sceneca's sold-out new-launch pricing (~$2,072 psf avg) re-rates the precinct's resale benchmark upward"
+      ],
+      "as_of": {
+        "price": 1318000,
+        "psf": 2226,
+        "beds": 2,
+        "sqft": 592.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.73,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 1.89,
+        "nearest_mrt": "Tanah Merah MRT",
+        "tenure": "99-year leasehold",
+        "remaining_lease": 89
+      },
+      "agent_evaluation": {
+        "summary": "A tenanted 592 sqft 2BR Deluxe at Grandeur Park Residences (TOP Mar 2021, 720 units, CEL Development), 420m from Tanah Merah MRT. The development's fundamentals are genuinely good — 4.7%/yr URA CAGR over 186 transactions, deep liquidity, and an imminent TEL Stage 5 catalyst (2H 2026) — but the $1.318M ask works out to $2,226 psf, ABOVE the project's all-time-high transaction ($2,146 psf, Dec 2025) and ~7-10% above the last-12-month 2BR average (~$2,007-2,090 psf). Right development, wrong price; floor/facing/stack undisclosed adds risk.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2,226 psf exceeds the project's record transacted PSF of $2,146 (Dec 2025, a 624 sqft 2BR Deluxe at $1.34M) and is ~7% above the Jan 2026 comp ($2,090 psf for 560 sqft). Fair value is ~$1.24M-1.27M; at list there is zero margin of safety. Fundamentals would support a Buy at ~$1.25M: 4.7%/yr appreciation beats the OCR ~3.7% baseline, 186 URA transactions and 720 units give excellent liquidity in the very liquid ~$1.3M quantum, and the TEL Stage 5 opening (Bedok South TE30 + Sungei Bedok TE31, 2H 2026) plus Tanah Merah's planned EWL-TEL interchange role (Changi Airport branch conversion, mid-2030s) are real catalysts the technical score misses. But gross yield is only ~3.6%, the unit is tenanted (rent level undisclosed - could be locked below market), stack/floor/facing are undisclosed in a development with known MRT-track-noise stacks, and competing supply (Sceneca Residence TOP 2Q2026 next door, Bedok Rise GLS, ~3,000 Bayshore units) caps near-term upside.",
+        "red_flags": [
+          "Priced above the project's record: $2,226 psf ask vs $2,146 psf all-time-high (Dec 2025) and ~$2,007-2,090 psf recent 2BR comps — ~5-10% premium with no disclosed justification (floor/view unknown)",
+          "Floor, facing and stack NOT disclosed — stacks 5-11 suffer MRT track noise, 15/16/21/22 face road noise, 43/44 face the carpark entrance; must verify before any offer",
+          "Existing tenancy: passing rent undisclosed — if locked below the current $3,600-4,400/mo market, effective yield drops below the already-modest ~3.6%",
+          "592 sqft is compact (algo flags sub-600 sqft 2BR); rents and resells at the small end of the 2BR pool",
+          "Competing supply: Sceneca Residence (268 units) TOPs 2Q2026 next door with direct MRT link and mall, Bedok Rise GLS site adjacent, ~3,000 private units coming in Bayshore precinct"
+        ],
+        "catalysts": [
+          "TEL Stage 5 opens 2H 2026: Bedok South (TE30) and Sungei Bedok (TE31, DTL-TEL interchange) — imminent, within ~1.5km",
+          "Tanah Merah MRT slated to become an EWL-TEL interchange via Changi Airport branch conversion (~mid-2030s)",
+          "Sceneca Square mall (2026) adds a doorstep retail amenity the precinct lacked",
+          "Changi region employment growth: Changi Business Park one stop away, T5 development into the 2030s",
+          "Project PSF momentum positive (~6.4% over recent window) and Sceneca's sold-out new-launch pricing (~$2,072 psf avg) re-rates the precinct's resale benchmark upward"
+        ],
+        "rental_assessment": "Solid but unspectacular. 2BR at Grandeur Park currently rents $3,600-4,400/mo (Apr 2026 transactions $3,550-5,000 for 500-700 sqft). At a realistic $4,000/mo, gross yield is ~3.6% — typical for OCR, helped by the MRT doorstep and Changi Business Park/Expo tenant base one stop away. Tenant pool is genuine (CBP professionals, airport/aviation workers, SUTD students' faculty) but Sceneca's 268 new units arriving 2Q2026 will compete directly for the same tenants. The existing tenancy is investor-convenient but verify the passing rent and lease end date.",
+        "appreciation_assessment": "URA 5-yr CAGR of 4.73%/yr on 186 transactions (confidence 1.0) — a full point above the OCR ~3.7% baseline, with positive recent momentum (+6.4% PSF over the recent window; Nov 2025 $1,965 psf -> Jan 2026 $2,090 psf on like-for-like 560 sqft units). The TEL Stage 5 opening and eventual Tanah Merah interchange status support continued outperformance. HOWEVER, this listing already prices in that future: at $2,226 psf you are paying tomorrow's price today. Expect ~4.5-5%/yr from fair value, not from this ask.",
+        "stack_notes": "Listing discloses no block/stack/floor — a material omission. Avoid stacks 5-11 (EWL track noise), 15/16/21/22 (New Upper Changi Road traffic noise) and 43/44 (carpark entrance lights/noise). Inner-facing pool/landscape stacks are markedly quieter and hold value better; some higher-floor units get East Coast views. Before offering, obtain the exact stack and floor and inspect at peak MRT frequency (8-9am).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.7,
+        "appreciation_rate_source": "URA D16 cache: Grandeur Park Residences 5-yr resale CAGR +4.7%/yr over 186 transactions (fetched 2026-06-04)"
+      },
+      "source": {
+        "run_dir": "output/run_022",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
