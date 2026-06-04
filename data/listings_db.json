@@ -2257,7 +2257,7 @@
       "id": "500153648",
       "first_seen": "2026-06-04",
       "last_seen": "2026-06-04",
-      "times_seen": 1,
+      "times_seen": 4,
       "status": "active",
       "price_history": [
         {
@@ -2267,8 +2267,7 @@
         }
       ],
       "source": {
-        "flow": "url",
-        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648"
+        "flow": "input"
       },
       "title": "Grandeur Park Residences",
       "project_name": "Grandeur Park Residences",
@@ -2277,9 +2276,42 @@
       "sqft": 592.0,
       "price": 1318000,
       "property_type": "Condominium",
-      "tenure": "L99",
+      "tenure": "99-year leasehold",
       "listing_agent": "Siah Boon Leng Ronnie",
-      "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648"
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648",
+      "district": "D16",
+      "psf": 2226,
+      "built_year": 2021,
+      "total_units": 720,
+      "mrt_info": "Tanah Merah MRT (EW4) 420m"
+    },
+    "25584219": {
+      "id": "25584219",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1399999,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-25584219"
+      },
+      "title": "Urban Vista",
+      "project_name": "Urban Vista",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1066.0,
+      "price": 1399999,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Marilyn Seah 谢欣妤",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-25584219"
     }
   }
 }
