@@ -1,0 +1,188 @@
+{
+  "condo": "City Gate",
+  "slug": "city-gate",
+  "district": "D07",
+  "history": [
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 431-452sqft 1BRs at ~$960K ($2,124-2,246 psf) in a well-connected but chronically flat development. Yield ~3.2-3.5% is acceptable, but City Gate's own URA track record (+2.05%/yr over 5yrs, -2.2% last 12 months) shows this is a stagnant asset, and shoebox 1BRs in an investor-heavy strata-mall block are commodity product with no scarcity.",
+      "rating_rationale": "Asking $2,124-2,246 psf vs recent 6-month transacted average of ~$2,096 psf — at or slightly above market. 84 URA resale transactions give high confidence in the weak 2.05%/yr CAGR, which badly lags the CCR baseline (~4.5%). Quantum is liquid (<$1M) and rentability is genuine (Bugis/CBD-fringe tenant pool, ~$2,500-2,800/mo), but there is no appreciation engine: a decade of near-flat prices despite a prime-fringe location.",
+      "red_flags": [
+        "City Gate 5-yr CAGR just +2.05%/yr with NEGATIVE 1-yr momentum (-2.2%) on 84 transactions — chronic underperformer",
+        "Struggling 188-unit strata retail podium below (50% sold at launch; strata malls in SG chronically suffer vacancies) drags the residential premium",
+        "Investor-heavy unit mix (shoebox 1BRs + dual keys) means shallow owner-occupier resale pool",
+        "Mid-tier developer (Fragrance Group / World Class Land-Aspial) known for compact-unit products, not premium builds",
+        "Golden Mile/Aurea construction next door through ~2029 — noise and dust during the hold period"
+      ],
+      "catalysts": [
+        "Aurea at Golden Mile launched Mar 2025 at avg $3,005 psf — a ~43% pricing anchor above City Gate's ~$2,100 psf",
+        "Beach Road / Ophir-Rochor corridor rejuvenation: The Golden Mile mixed-use, Guoco Midtown, Kampong Bugis waterfront",
+        "Excellent connectivity: Nicoll Highway MRT (CCL) ~320m via link bridge, Bugis interchange (EWL/DTL) ~5-10 min walk"
+      ],
+      "as_of": {
+        "price": 960000,
+        "psf": 2227.38,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.05,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 1.89,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 89
+      },
+      "agent_evaluation": {
+        "summary": "Compact 431-452sqft 1BRs at ~$960K ($2,124-2,246 psf) in a well-connected but chronically flat development. Yield ~3.2-3.5% is acceptable, but City Gate's own URA track record (+2.05%/yr over 5yrs, -2.2% last 12 months) shows this is a stagnant asset, and shoebox 1BRs in an investor-heavy strata-mall block are commodity product with no scarcity.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2,124-2,246 psf vs recent 6-month transacted average of ~$2,096 psf — at or slightly above market. 84 URA resale transactions give high confidence in the weak 2.05%/yr CAGR, which badly lags the CCR baseline (~4.5%). Quantum is liquid (<$1M) and rentability is genuine (Bugis/CBD-fringe tenant pool, ~$2,500-2,800/mo), but there is no appreciation engine: a decade of near-flat prices despite a prime-fringe location.",
+        "red_flags": [
+          "City Gate 5-yr CAGR just +2.05%/yr with NEGATIVE 1-yr momentum (-2.2%) on 84 transactions — chronic underperformer",
+          "Struggling 188-unit strata retail podium below (50% sold at launch; strata malls in SG chronically suffer vacancies) drags the residential premium",
+          "Investor-heavy unit mix (shoebox 1BRs + dual keys) means shallow owner-occupier resale pool",
+          "Mid-tier developer (Fragrance Group / World Class Land-Aspial) known for compact-unit products, not premium builds",
+          "Golden Mile/Aurea construction next door through ~2029 — noise and dust during the hold period"
+        ],
+        "catalysts": [
+          "Aurea at Golden Mile launched Mar 2025 at avg $3,005 psf — a ~43% pricing anchor above City Gate's ~$2,100 psf",
+          "Beach Road / Ophir-Rochor corridor rejuvenation: The Golden Mile mixed-use, Guoco Midtown, Kampong Bugis waterfront",
+          "Excellent connectivity: Nicoll Highway MRT (CCL) ~320m via link bridge, Bugis interchange (EWL/DTL) ~5-10 min walk"
+        ],
+        "rental_assessment": "Solid rental demand from CBD-fringe professionals and Kampong Glam F&B/lifestyle workers; recent average ~$5.75 psf/mo implies $2,500-2,800/mo for 431-452sqft, a ~3.2-3.5% gross yield. 1BRs here let easily but compete with many similar small units in the same building.",
+        "appreciation_assessment": "URA data (84 resale txns) shows +2.05%/yr over 5 years with -2.2% in the last 12 months; recent transacted ~$2,096 psf (6mo). The rejuvenation story may lift this toward ~2.5-3%/yr, but Aurea's tepid launch (23/78 units) shows buyer resistance to premium pricing in this micro-market. Do not underwrite more than ~2.5%/yr.",
+        "stack_notes": "East/SE stacks get Kallang Basin water views — target floor 15+ to clear Nicoll Highway traffic noise; note the new 45-storey Aurea tower (NE, ~250m away) may clip some northeast water views. North/West stacks have permanently unblocked low-rise Kampong Glam conservation views but take afternoon sun (west) and are nearest the adjacent Hajjah Fatimah Mosque (azan audible on low floors). Avoid floors 4-8 just above the 3-storey retail podium — road + podium noise.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA 5-yr CAGR 2.05%/yr (84 resale txns, district fetch 2026-06-04) + modest uplift for Beach Road rejuvenation"
+      },
+      "source": {
+        "run_dir": "output/run_018",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500148699",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The widest band: compact 560-570sqft 2BRs from $1.25M ($2,193 psf) up to 807sqft dual-keys at $1.88M ($2,330 psf). Dual-keys rent strongly (two doors, $4,300-4,700/mo) but exit to a niche investor-only buyer pool. The headline asks of $2,389-2,394 psf run ~14% above the recent transacted average — negotiate hard or pass.",
+      "rating_rationale": "Recent 6-month transacted average is ~$2,096 psf; several 2BR asks sit $2,250-2,394 psf. Paying the ask locks in years of the development's own ~2%/yr appreciation just to break even on the premium. The compact 570sqft 2BR at $1.25M ($2,193 psf) is the best relative value on the sheet and the only non-dual-key-style entry with broad resale appeal at a liquid quantum. Rental economics are fine (~3.2-3.5% gross on DKs); the appreciation engine is not.",
+      "red_flags": [
+        "Asking PSF up to $2,394 vs ~$2,096 recent transacted — double-digit premium to market",
+        "Most 2BR stock is dual-key: strong to rent, niche to resell (investor-only buyer pool)",
+        "5-yr CAGR +2.05%/yr, 1-yr momentum -2.2% — no historical appreciation",
+        "Strata retail podium below with chronic strata-mall economics",
+        "Golden Mile/Aurea construction noise next door through ~2029"
+      ],
+      "catalysts": [
+        "Aurea's $3,005 psf average pricing re-anchors the micro-market well above City Gate",
+        "Beach Road corridor transformation (The Golden Mile, Guoco Midtown, Kampong Bugis waterfront)",
+        "Dual-key format hedges rental: two tenancies per title near CBD-fringe employment"
+      ],
+      "as_of": {
+        "price": 1620000,
+        "psf": 2389.38,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.05,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 1.76,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 89
+      },
+      "agent_evaluation": {
+        "summary": "The widest band: compact 560-570sqft 2BRs from $1.25M ($2,193 psf) up to 807sqft dual-keys at $1.88M ($2,330 psf). Dual-keys rent strongly (two doors, $4,300-4,700/mo) but exit to a niche investor-only buyer pool. The headline asks of $2,389-2,394 psf run ~14% above the recent transacted average — negotiate hard or pass.",
+        "rating": "Neutral",
+        "rating_rationale": "Recent 6-month transacted average is ~$2,096 psf; several 2BR asks sit $2,250-2,394 psf. Paying the ask locks in years of the development's own ~2%/yr appreciation just to break even on the premium. The compact 570sqft 2BR at $1.25M ($2,193 psf) is the best relative value on the sheet and the only non-dual-key-style entry with broad resale appeal at a liquid quantum. Rental economics are fine (~3.2-3.5% gross on DKs); the appreciation engine is not.",
+        "red_flags": [
+          "Asking PSF up to $2,394 vs ~$2,096 recent transacted — double-digit premium to market",
+          "Most 2BR stock is dual-key: strong to rent, niche to resell (investor-only buyer pool)",
+          "5-yr CAGR +2.05%/yr, 1-yr momentum -2.2% — no historical appreciation",
+          "Strata retail podium below with chronic strata-mall economics",
+          "Golden Mile/Aurea construction noise next door through ~2029"
+        ],
+        "catalysts": [
+          "Aurea's $3,005 psf average pricing re-anchors the micro-market well above City Gate",
+          "Beach Road corridor transformation (The Golden Mile, Guoco Midtown, Kampong Bugis waterfront)",
+          "Dual-key format hedges rental: two tenancies per title near CBD-fringe employment"
+        ],
+        "rental_assessment": "Strongest rental product in the building — dual-keys achieve $4,300-4,700/mo (one listing at $4,700 for 710sqft) by housing two tenancies; ~3.2-3.5% gross yield. Deep tenant pool from Bugis/CBD professionals. Compact 2BRs (~$3,300-3,600/mo) are easier single-tenancy lets.",
+        "appreciation_assessment": "Same development-level reality: +2.05%/yr 5-yr CAGR, -2.2% last year, ~$2,096 psf recent transacted. The gap to Aurea ($3,005 psf) offers a plausible re-rating path, but Aurea's slow sales suggest it will pull slowly. Underwrite ~2.5%/yr; anything more is speculation.",
+        "stack_notes": "Target the compact 570sqft 2BR at $1.25M ($2,193 psf) or negotiate DKs toward $2,100 psf. Prefer floor 15+ east/SE (Kallang Basin views, above traffic noise); the 45-storey Aurea tower may clip NE views. West-facing takes equatorial afternoon sun; low floors (4-8) sit just above the retail podium and Beach Road/Jalan Sultan traffic. Mosque adjacent — azan audible on lower north/west floors.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA 5-yr CAGR 2.05%/yr (84 resale txns, district fetch 2026-06-04) + modest uplift for Beach Road rejuvenation"
+      },
+      "source": {
+        "run_dir": "output/run_018",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-25601530",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-04",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Single 915sqft 3BR dual-key at $2.0M ($2,186 psf) — the most fairly priced listing relative to recent transactions and the largest non-penthouse format. Liquid quantum, ~3.2% yield, but it is still a dual-key in a flat development: rentability is good, the exit buyer pool is not.",
+      "rating_rationale": "At $2,186 psf it sits closest to the ~$2,096 recent transacted average (~4% premium) — the most negotiable-to-fair pricing on the sheet, and $2.0M is within the liquid sweet spot. But 915sqft for a '3BR' is compact-investor product, the development's 5-yr CAGR is +2.05%/yr with negative momentum, and a dual-key 3BR resells to investors only. Fair price for a mediocre asset is still a mediocre asset.",
+      "red_flags": [
+        "Dual-key format: niche resale market despite the liquid $2.0M quantum",
+        "915sqft is small for a 3BR — family owner-occupiers will pass",
+        "Development 5-yr CAGR +2.05%/yr with -2.2% 1-yr momentum",
+        "Strata retail podium below; Golden Mile construction next door through ~2029"
+      ],
+      "catalysts": [
+        "Aurea's $3,005 psf anchor and the Beach Road corridor rejuvenation",
+        "Two-tenancy dual-key income (~$5,200-5,500/mo combined) near CBD fringe",
+        "Nicoll Highway MRT 320m + Bugis interchange walkable"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 2185.79,
+        "beds": 3,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.05,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 1.92,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 89
+      },
+      "agent_evaluation": {
+        "summary": "Single 915sqft 3BR dual-key at $2.0M ($2,186 psf) — the most fairly priced listing relative to recent transactions and the largest non-penthouse format. Liquid quantum, ~3.2% yield, but it is still a dual-key in a flat development: rentability is good, the exit buyer pool is not.",
+        "rating": "Neutral",
+        "rating_rationale": "At $2,186 psf it sits closest to the ~$2,096 recent transacted average (~4% premium) — the most negotiable-to-fair pricing on the sheet, and $2.0M is within the liquid sweet spot. But 915sqft for a '3BR' is compact-investor product, the development's 5-yr CAGR is +2.05%/yr with negative momentum, and a dual-key 3BR resells to investors only. Fair price for a mediocre asset is still a mediocre asset.",
+        "red_flags": [
+          "Dual-key format: niche resale market despite the liquid $2.0M quantum",
+          "915sqft is small for a 3BR — family owner-occupiers will pass",
+          "Development 5-yr CAGR +2.05%/yr with -2.2% 1-yr momentum",
+          "Strata retail podium below; Golden Mile construction next door through ~2029"
+        ],
+        "catalysts": [
+          "Aurea's $3,005 psf anchor and the Beach Road corridor rejuvenation",
+          "Two-tenancy dual-key income (~$5,200-5,500/mo combined) near CBD fringe",
+          "Nicoll Highway MRT 320m + Bugis interchange walkable"
+        ],
+        "rental_assessment": "Dual-key 3BR rents as studio + 2BR for ~$5,200-5,500/mo combined (avg $5.75 psf/mo), ~3.2% gross yield. Reliable tenant demand from the Bugis/CBD fringe; the DK format reduces vacancy risk via two staggered tenancies.",
+        "appreciation_assessment": "Priced nearest to market of the three unit types, so least downside to entry, but the asset's own history (+2.05%/yr over 5yrs, 84 txns, -2.2% last yr) caps expectations. Underwrite ~2.5%/yr with the rejuvenation as optionality, not a base case.",
+        "stack_notes": "Only one 3BR-DK listed — verify its stack and floor before offering: want floor 15+ facing east/SE (Kallang Basin) or north (Kampong Glam low-rise, no afternoon sun); reject if west-facing low-floor over Jalan Sultan traffic or hard against the mosque side below floor 10. Check whether the 45-storey Aurea tower will stand in its view line.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA 5-yr CAGR 2.05%/yr (84 resale txns, district fetch 2026-06-04) + modest uplift for Beach Road rejuvenation"
+      },
+      "source": {
+        "run_dir": "output/run_018",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-500000297",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
