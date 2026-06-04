@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03",
+  "updated_at": "2026-06-04",
   "listings": {
     "60147887": {
       "id": "60147887",
@@ -1074,6 +1074,34 @@
       "tenure": "L99",
       "listing_agent": "Sindy Lin",
       "url": "https://www.propertyguru.com.sg/listing/for-sale-tre-residences-500136581"
+    },
+    "25639184": {
+      "id": "25639184",
+      "first_seen": "2026-06-04",
+      "last_seen": "2026-06-04",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-04",
+          "price": 1630000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-west-n-25639184"
+      },
+      "title": "West-N",
+      "project_name": "West-N",
+      "beds": 3,
+      "baths": 2,
+      "sqft": 947.0,
+      "price": 1630000,
+      "property_type": "Condominium",
+      "tenure": "F",
+      "listing_agent": "Peter Jiang 姜泽良",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-west-n-25639184"
     }
   }
 }

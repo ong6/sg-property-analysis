@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03",
+  "updated_at": "2026-06-04",
   "condos": {
     "botanique-at-bartley": {
       "condo": "Botanique at Bartley",
@@ -13,6 +13,13 @@
       "district": "D14",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-03",
+      "eval_count": 1
+    },
+    "west-n": {
+      "condo": "West-N",
+      "district": "D05",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-04",
       "eval_count": 1
     }
   }
