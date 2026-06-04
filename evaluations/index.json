@@ -1,6 +1,13 @@
 {
   "updated_at": "2026-06-04",
   "condos": {
+    "skysuites-anson": {
+      "condo": "Skysuites @ Anson",
+      "district": "D02",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-04",
+      "eval_count": 1
+    },
     "botanique-at-bartley": {
       "condo": "Botanique at Bartley",
       "district": "D19",
