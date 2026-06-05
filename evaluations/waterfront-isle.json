@@ -1,0 +1,72 @@
+{
+  "condo": "Waterfront Isle",
+  "slug": "waterfront-isle",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-05",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A fairly-priced, highly liquid 3BR in a proven Bedok Reservoir development with verified 6.4%/yr appreciation and a 3-min walk to Bedok Reservoir MRT (DT30). The catch: the growth catalyst (DTL) is already priced in, gross yield is a mediocre ~3.2%, and the listing doesn't disclose floor/facing — the single biggest value driver in this development, where only reservoir-facing stacks above ~floor 4 get the open-water view that drives resale premiums.",
+      "rating_rationale": "Asking $2.2M ($1,597 psf) sits exactly between the two recent same-size (1,378 sqft) comps: $2.03M/$1,473 psf for a low-floor unit in Apr-26 vs $2.37-2.40M/$1,717-1,742 psf for mid/high-floor units in Aug-Sep-25. If this is a mid/high-floor reservoir-facing unit, $2.2M is below comps and a Buy; if low-floor or non-reservoir-facing, it is ~8% above the latest identical print. Appreciation is genuinely strong and verified (6.39%/yr CAGR, 129 resale transactions, zero new-launch bias) and liquidity is excellent, but there is no remaining infrastructure catalyst (DTL opened 2017), yield is ~3.2% gross, the lease has 82 years left (~76 at a 2032 exit), and ~2,300 new D16 units (Bayshore Drive + New Upper Changi GLS) hit the market from 2026. Verify floor/facing before offering; fair value is $2.05-2.10M for low floor, $2.2M only for a high-floor reservoir view.",
+      "red_flags": [
+        "Floor and facing not disclosed — in this development non-reservoir-facing units have blocked views and poorer ventilation (8 of the stacks face the water; floors 4+ clear the tree line)",
+        "Latest identical-size transaction (Apr-26, low floor) closed at $2.03M — asking is $170k (8.4%) above it",
+        "No future infrastructure catalyst: DTL already operational since 2017 and priced in; CRL does not serve Bedok Reservoir",
+        "~2,320 new units incoming in D16 (Bayshore Drive GLS 1,280 + New Upper Changi GLS ~1,040) competing for buyers/tenants at exit",
+        "82-year remaining lease (from 2009) — ~76 years at a 2032 exit, approaching the 70-year soft floor where financing sentiment weakens",
+        "Resident-reported niggles: rush-hour traffic noise on Bedok Reservoir Rd, undersized gym (<10 machines for 561 units), facilities now 11 years old"
+      ],
+      "catalysts": [
+        "Verified resale momentum: project avg PSF rose from $1,229 (2021) to $1,676 (2026); May-26 prints hit $1,763-1,842 psf for mid-size units — market still firm",
+        "HDB-upgrader demand from Bedok/Tampines heartland keeps the buyer pool deep at the $2.0-2.4M 3BR quantum",
+        "Longer-term east-side uplift: Paya Lebar airbase relocation (2030s) and Bayshore transformation lift the whole D16 narrative, though neither is specific to Bedok Reservoir",
+        "Listing marked 'Negotiable' and listed only 29 May 2026 — seller anchoring high early; comp data supports negotiating toward $2.05-2.10M"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1597,
+        "beds": 3,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.39,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.63,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "A fairly-priced, highly liquid 3BR in a proven Bedok Reservoir development with verified 6.4%/yr appreciation and a 3-min walk to Bedok Reservoir MRT (DT30). The catch: the growth catalyst (DTL) is already priced in, gross yield is a mediocre ~3.2%, and the listing doesn't disclose floor/facing — the single biggest value driver in this development, where only reservoir-facing stacks above ~floor 4 get the open-water view that drives resale premiums.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2.2M ($1,597 psf) sits exactly between the two recent same-size (1,378 sqft) comps: $2.03M/$1,473 psf for a low-floor unit in Apr-26 vs $2.37-2.40M/$1,717-1,742 psf for mid/high-floor units in Aug-Sep-25. If this is a mid/high-floor reservoir-facing unit, $2.2M is below comps and a Buy; if low-floor or non-reservoir-facing, it is ~8% above the latest identical print. Appreciation is genuinely strong and verified (6.39%/yr CAGR, 129 resale transactions, zero new-launch bias) and liquidity is excellent, but there is no remaining infrastructure catalyst (DTL opened 2017), yield is ~3.2% gross, the lease has 82 years left (~76 at a 2032 exit), and ~2,300 new D16 units (Bayshore Drive + New Upper Changi GLS) hit the market from 2026. Verify floor/facing before offering; fair value is $2.05-2.10M for low floor, $2.2M only for a high-floor reservoir view.",
+        "red_flags": [
+          "Floor and facing not disclosed — in this development non-reservoir-facing units have blocked views and poorer ventilation (8 of the stacks face the water; floors 4+ clear the tree line)",
+          "Latest identical-size transaction (Apr-26, low floor) closed at $2.03M — asking is $170k (8.4%) above it",
+          "No future infrastructure catalyst: DTL already operational since 2017 and priced in; CRL does not serve Bedok Reservoir",
+          "~2,320 new units incoming in D16 (Bayshore Drive GLS 1,280 + New Upper Changi GLS ~1,040) competing for buyers/tenants at exit",
+          "82-year remaining lease (from 2009) — ~76 years at a 2032 exit, approaching the 70-year soft floor where financing sentiment weakens",
+          "Resident-reported niggles: rush-hour traffic noise on Bedok Reservoir Rd, undersized gym (<10 machines for 561 units), facilities now 11 years old"
+        ],
+        "catalysts": [
+          "Verified resale momentum: project avg PSF rose from $1,229 (2021) to $1,676 (2026); May-26 prints hit $1,763-1,842 psf for mid-size units — market still firm",
+          "HDB-upgrader demand from Bedok/Tampines heartland keeps the buyer pool deep at the $2.0-2.4M 3BR quantum",
+          "Longer-term east-side uplift: Paya Lebar airbase relocation (2030s) and Bayshore transformation lift the whole D16 narrative, though neither is specific to Bedok Reservoir",
+          "Listing marked 'Negotiable' and listed only 29 May 2026 — seller anchoring high early; comp data supports negotiating toward $2.05-2.10M"
+        ],
+        "rental_assessment": "Current 3BR listings in the project ask $5,500-6,000/mo (project average ~$4.70 psf/mo). At $5,800/mo the gross yield is ~3.2% — typical for an OCR family-sized unit, not a yield play. Tenant demand is steady but local-family/regional-professional driven (reservoir lifestyle, DT30 at 270m, Temasek Poly nearby); it lacks a CBD or business-park anchor, and Bayshore's 1,280 incoming units will add east-side rental competition from ~2029-30.",
+        "appreciation_assessment": "URA cache (refreshed 4 Jun 2026) shows 6.39%/yr 5-yr CAGR on 129 resale transactions — high confidence, zero new-launch bias. Momentum is decelerating but positive: +11.6% over 3yr, +4.1% over 1yr. The 1,378 sqft stack specifically went from $1.32-1.37k psf (2021-22) to $1.47-1.74k psf (2025-26). Forward expectation: 3.5-4.5%/yr is more realistic than the trailing 6.4% — the DTL re-rating is done, lease decay starts to bite past the 80-yr mark, and D16 supply arrives from 2026. Used 4.5% in my own forward view; the trailing rate flatters this property.",
+        "stack_notes": "563 units, 15 storeys, 4 units/floor. Eight stacks face Bedok Reservoir; from ~floor 4 upward the view clears the tree line to open water — these are the units that command the $1.7k+ psf prints. Non-reservoir stacks face dense internal blocks: weaker views, ventilation, and resale. Ground/low floors take Bedok Reservoir Rd traffic noise on the road-facing side. Action: get the exact block/stack/floor from the agent (listing says 758 Bedok Reservoir Rd, address suggests one of the road-side blocks) before pricing the offer.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Forward-looking haircut of URA trailing 6.39%/yr CAGR (129 resale txns, ura_cache 2026-06-04): DTL catalyst fully priced, lease decay past 80yr, ~2,300-unit D16 supply from 2026"
+      },
+      "source": {
+        "run_dir": "output/run_025",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

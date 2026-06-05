@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-06-04",
+  "updated_at": "2026-06-05",
   "condos": {
     "skysuites-anson": {
       "condo": "Skysuites @ Anson",
       "district": "D02",
       "latest_rating": "Avoid",
       "latest_date": "2026-06-04",
+      "eval_count": 1
+    },
+    "waterfront-isle": {
+      "condo": "Waterfront Isle",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-05",
       "eval_count": 1
     },
     "city-gate": {
