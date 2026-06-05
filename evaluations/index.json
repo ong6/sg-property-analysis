@@ -8,6 +8,13 @@
       "latest_date": "2026-06-04",
       "eval_count": 1
     },
+    "waterfront-key": {
+      "condo": "Waterfront Key",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-05",
+      "eval_count": 1
+    },
     "waterfront-isle": {
       "condo": "Waterfront Isle",
       "district": "D16",
@@ -29,6 +36,13 @@
       "latest_date": "2026-06-03",
       "eval_count": 5
     },
+    "waterfront-waves": {
+      "condo": "Waterfront Waves",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-05",
+      "eval_count": 1
+    },
     "urban-vista": {
       "condo": "Urban Vista",
       "district": "D16",
@@ -48,6 +62,13 @@
       "district": "D14",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-03",
+      "eval_count": 1
+    },
+    "waterfront-gold": {
+      "condo": "Waterfront Gold",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-05",
       "eval_count": 1
     },
     "west-n": {

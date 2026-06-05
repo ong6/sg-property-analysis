@@ -1,0 +1,58 @@
+{
+  "condo": "Waterfront Gold",
+  "slug": "waterfront-gold",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-05",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Comparison listing surfaced by the condo search, not the evaluation target. 785 sqft 2BR at $1.25M ($1,592 psf) — the cheapest psf of the three Waterfront sisters, TOP 2014 (newest of the three with listings), ~84 years lease, 400m to Bedok Reservoir MRT.",
+      "rating_rationale": "On raw numbers this screens as better value than the Waterfront Key target: ~$147 psf cheaper, two years newer, two more years of lease, and a $228K lower quantum that widens the buyer pool further. URA cache appreciation is lower (5.84%/yr vs 7.33%) and the unit is smaller. Not researched in depth here — rated Neutral pending its own dedicated evaluation, but it is the comp to view alongside the Key unit.",
+      "red_flags": [
+        "Smaller 785 sqft layout limits family-tenant appeal vs the Key unit",
+        "Same micro-market exit competition from the other Waterfront sisters"
+      ],
+      "catalysts": [
+        "Same Bayshore/TEL halo and Bedok Reservoir micro-market scarcity as Waterfront Key"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1592.36,
+        "beds": 2,
+        "sqft": 785.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.84,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.64,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "Comparison listing surfaced by the condo search, not the evaluation target. 785 sqft 2BR at $1.25M ($1,592 psf) — the cheapest psf of the three Waterfront sisters, TOP 2014 (newest of the three with listings), ~84 years lease, 400m to Bedok Reservoir MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "On raw numbers this screens as better value than the Waterfront Key target: ~$147 psf cheaper, two years newer, two more years of lease, and a $228K lower quantum that widens the buyer pool further. URA cache appreciation is lower (5.84%/yr vs 7.33%) and the unit is smaller. Not researched in depth here — rated Neutral pending its own dedicated evaluation, but it is the comp to view alongside the Key unit.",
+        "red_flags": [
+          "Smaller 785 sqft layout limits family-tenant appeal vs the Key unit",
+          "Same micro-market exit competition from the other Waterfront sisters"
+        ],
+        "catalysts": [
+          "Same Bayshore/TEL halo and Bedok Reservoir micro-market scarcity as Waterfront Key"
+        ],
+        "rental_assessment": "Compact 2BR near DTL should achieve roughly $3.9-4.3K/mo, implying ~3.8-4.1% gross yield at $1.25M — likely the best yield of the three sisters. Not verified against closed leases.",
+        "appreciation_assessment": "URA cache 5.84%/yr 5-yr CAGR (79 transactions). Same forward moderation logic applies as Waterfront Key: expect ~3.5-4.5%/yr.",
+        "stack_notes": "Not researched at stack level in this run. Same general guidance: prefer high-floor, quiet-side stacks; avoid road-facing low floors and west sun.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Same D16/OCR forward moderation as Waterfront Key; project-level research not done in this run"
+      },
+      "source": {
+        "run_dir": "output/run_029",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-gold-60234718",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

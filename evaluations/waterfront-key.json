@@ -1,0 +1,72 @@
+{
+  "condo": "Waterfront Key",
+  "slug": "waterfront-key",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-05",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Target listing (500089203): 850 sqft 2BR+2BA at $1.478M ($1,739 psf) — the cheapest 2BR currently listed in this 437-unit, TOP-2012, 99-yr leasehold development 320m from Bedok Reservoir MRT (DTL). Priced at/slightly below the project's recent transacted average (~$1,766 psf over 6 months), with a realistic ~3.5% gross yield and deep HDB-upgrader liquidity — but the project has no direct catalyst left (DTL priced in since 2017), ~82 years of lease remaining, and forward appreciation should moderate well below the 7.3% historical CAGR.",
+      "rating_rationale": "Fairly priced rather than a bargain: asking $1,739 psf vs ~$1,766 psf 6-month transacted average and 2025 transaction range of $1,659-1,898 psf. Strengths: 320m to MRT, deep buyer pool at $1.4-1.5M (88 URA transactions in 5 years), realistic ~3.5% gross yield, 437-unit scale, enclosed-kitchen layout that rents well. Weaknesses: 14-year-old building with documented budget-grade original fittings, lease decay (~75 years at a 7-year exit), area catalysts (Bayshore, TEL Bedok South/Sungei Bedok) are 3-4km south — halo not direct uplift — and heavy sister-project resale stock competes at exit. Technical score 56/100 (Tier 2); 5-yr annualized total ROI ~4.3% at researched inputs. Becomes a Buy if negotiated to ~$1.40-1.43M (~$1,650-1,680 psf), which the duplicate co-listing suggests is achievable.",
+      "red_flags": [
+        "Floor, stack and facing undisclosed — the agent's unblocked-view claim must be verified at viewing",
+        "Resident complaints of budget original fittings (Sanyo aircons, cracked sanitaryware) — budget for renovation on a 14-year-old unit",
+        "Lease decay: ~82 years now, ~75 at a 7-year exit — financing still clean but discount pressure grows each year",
+        "Heavy similar resale supply at exit: Waterfront Waves, Gold and Isle plus Aquarius By The Park compete in the same micro-market",
+        "Unit appears co-listed twice at $1.478M (IDs 500089203 / 500097457) — normal PG duplication but signals a motivated seller",
+        "Bedok Reservoir Road traffic noise affects front-facing stacks"
+      ],
+      "catalysts": [
+        "Bayshore precinct launches from 2026 (Vela Bay + second ~1,250-unit GLS, both atop TEL stations) will set D16 new-launch benchmarks far above $2,000 psf, pulling resale comparisons upward",
+        "TEL Bedok South and Sungei Bedok (DTL-TEL interchange) stations strengthen east-side connectivity",
+        "Minimal new supply in the immediate Bedok Reservoir micro-market — resale stock stays scarce",
+        "Persistent HDB-upgrader demand in the Bedok/Tampines corridor at the $1.4-1.6M 2BR price point"
+      ],
+      "as_of": {
+        "price": 1620000,
+        "psf": 1905.88,
+        "beds": 2,
+        "sqft": 850.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.33,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.2,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "Target listing (500089203): 850 sqft 2BR+2BA at $1.478M ($1,739 psf) — the cheapest 2BR currently listed in this 437-unit, TOP-2012, 99-yr leasehold development 320m from Bedok Reservoir MRT (DTL). Priced at/slightly below the project's recent transacted average (~$1,766 psf over 6 months), with a realistic ~3.5% gross yield and deep HDB-upgrader liquidity — but the project has no direct catalyst left (DTL priced in since 2017), ~82 years of lease remaining, and forward appreciation should moderate well below the 7.3% historical CAGR.",
+        "rating": "Neutral",
+        "rating_rationale": "Fairly priced rather than a bargain: asking $1,739 psf vs ~$1,766 psf 6-month transacted average and 2025 transaction range of $1,659-1,898 psf. Strengths: 320m to MRT, deep buyer pool at $1.4-1.5M (88 URA transactions in 5 years), realistic ~3.5% gross yield, 437-unit scale, enclosed-kitchen layout that rents well. Weaknesses: 14-year-old building with documented budget-grade original fittings, lease decay (~75 years at a 7-year exit), area catalysts (Bayshore, TEL Bedok South/Sungei Bedok) are 3-4km south — halo not direct uplift — and heavy sister-project resale stock competes at exit. Technical score 56/100 (Tier 2); 5-yr annualized total ROI ~4.3% at researched inputs. Becomes a Buy if negotiated to ~$1.40-1.43M (~$1,650-1,680 psf), which the duplicate co-listing suggests is achievable.",
+        "red_flags": [
+          "Floor, stack and facing undisclosed — the agent's unblocked-view claim must be verified at viewing",
+          "Resident complaints of budget original fittings (Sanyo aircons, cracked sanitaryware) — budget for renovation on a 14-year-old unit",
+          "Lease decay: ~82 years now, ~75 at a 7-year exit — financing still clean but discount pressure grows each year",
+          "Heavy similar resale supply at exit: Waterfront Waves, Gold and Isle plus Aquarius By The Park compete in the same micro-market",
+          "Unit appears co-listed twice at $1.478M (IDs 500089203 / 500097457) — normal PG duplication but signals a motivated seller",
+          "Bedok Reservoir Road traffic noise affects front-facing stacks"
+        ],
+        "catalysts": [
+          "Bayshore precinct launches from 2026 (Vela Bay + second ~1,250-unit GLS, both atop TEL stations) will set D16 new-launch benchmarks far above $2,000 psf, pulling resale comparisons upward",
+          "TEL Bedok South and Sungei Bedok (DTL-TEL interchange) stations strengthen east-side connectivity",
+          "Minimal new supply in the immediate Bedok Reservoir micro-market — resale stock stays scarce",
+          "Persistent HDB-upgrader demand in the Bedok/Tampines corridor at the $1.4-1.6M 2BR price point"
+        ],
+        "rental_assessment": "Realistic 2BR rent is $4,200-4,600/mo (project-wide average $4.94K over past 6 months across all unit types; recent deals span $4.5K-6.8K) giving ~3.5% gross yield at asking. Steady tenant demand from Changi Business Park, airport workers and SUTD; 320m to DTL is the key draw. Reliable rather than spectacular. Note: the $2,975 fallback estimate in factual_data is wrong — ignore it.",
+        "appreciation_assessment": "URA cache shows 7.33%/yr 5-yr CAGR (88 transactions, full confidence) but that captures the 2021-2024 post-COVID surge off a ~$1,150 psf base. At $1,739 psf with 82 years of lease and no direct new catalyst, forward appreciation should moderate to ~3.5-4.5%/yr — OCR baseline plus a modest Bayshore-halo premium. Upside case: Bayshore launching above $2,400 psf resets the district and drags mid-D16 resale toward $2,000 psf.",
+        "stack_notes": "Six 13-storey blocks (770-780 Bedok Reservoir Rd). Reservoir views front Bedok Reservoir Road but are mostly allocated to 4-bedders and penthouses; rear stacks face the park/low-rise estate and are quieter. Target high-floor (8+) units with genuine reservoir or unblocked park views; avoid low-floor road-facing stacks (traffic noise) and west-facing afternoon-sun stacks. For THIS listing the floor and stack are undisclosed — verify the view claim and listen for road noise at viewing before committing.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Moderated from URA 5-yr CAGR of 7.33% (post-COVID base effect) toward the OCR baseline 3.7% plus a Bayshore/TEL halo premium; cross-checked against the 2025 transacted range of $1,659-1,898 psf"
+      },
+      "source": {
+        "run_dir": "output/run_029",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-60075937",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
