@@ -67,6 +67,69 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-05",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Renovated reservoir-facing 3BR corner unit asking $1,625 psf — roughly 8-12% below the project's 2026 3BR transaction band of $1,763-1,842 psf, and below the $2.205M the same 1,292 sqft stack fetched in Aug-2024. Entry discount plus a proven 6.4%/yr URA appreciation track and deep liquidity (129 resale txns, 561 units, 270m to Bedok Reservoir DTL) make this a value buy, tempered by weak ~2.9% yield and no fresh infrastructure catalyst.",
+      "rating_rationale": "(1) Price: $2.1M / $1,625 psf vs 2026 comps $1,763-1,842 psf for 1,216-1,259 sqft 3BRs — a ~$200K margin of safety; the identical 1,292 sqft layout sold for $2,205,000 ($1,707 psf) in Aug-2024, and project avg PSF has risen ~6.6% since 2024. (2) Unit quality: reservoir-facing corner — the 8 reservoir stacks are the prime stacks in this development — with ~$200K renovation in 'showflat condition'. (3) Fundamentals: URA 5-yr CAGR 6.4%/yr on 129 pure-resale transactions (confidence 1.0, no new-launch bias); 561 units and a $2.1M quantum sit in the liquid sweet spot. (4) Offsets: gross yield only ~2.9%, future-potential score 1/20 (DTL already priced in), 82-yr remaining lease, and the discount needs verification at viewing — a very low floor (01-05) would explain part of it, though even low-floor mid-size 3BRs printed $1,720-1,809 psf in 2025-26.",
+      "red_flags": [
+        "Floor level not disclosed in listing — verify floor and view line at viewing; reservoir views open up from ~floor 5 (clearing the tree line), and low floors take balcony-level traffic noise from the 4-lane Bedok Reservoir Road",
+        "Unit reconfigured from 3BR to 2BR + enlarged living — family buyers/tenants may need to pay to reinstate, so the $200K renovation does not transfer at full value",
+        "Gross yield ~2.9% on a realistic $5,000/mo rent — below the 3.5%+ typical comfort zone; this is not a yield play",
+        "11 years old with ~82 yrs lease remaining — ~75-77 yrs at a 5-7 yr exit, competing against newer D16 stock",
+        "~2,300 new D16 units incoming (Bayshore Drive GLS ~1,280 + New Upper Changi GLS ~1,040) plus heavy similar-age leasehold supply in the Bedok Reservoir cluster (Waterfront Waves/Key/Gold/Isle, Archipelago) compete at exit"
+      ],
+      "catalysts": [
+        "Entry ~8-12% below recent project comps — built-in margin of safety even in a flat market",
+        "DTL Sungei Bedok extension completes the DTL-TEL interchange, improving east-side line utility",
+        "Changi T5 (2030s) and eventual Paya Lebar Airbase relocation are long-horizon eastern-region employment/land catalysts",
+        "Bayshore precinct build-out lifts D16 amenity over the hold period (though it also adds supply)"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1625.39,
+        "beds": 3,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.39,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.58,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "Renovated reservoir-facing 3BR corner unit asking $1,625 psf — roughly 8-12% below the project's 2026 3BR transaction band of $1,763-1,842 psf, and below the $2.205M the same 1,292 sqft stack fetched in Aug-2024. Entry discount plus a proven 6.4%/yr URA appreciation track and deep liquidity (129 resale txns, 561 units, 270m to Bedok Reservoir DTL) make this a value buy, tempered by weak ~2.9% yield and no fresh infrastructure catalyst.",
+        "rating": "Buy",
+        "rating_rationale": "(1) Price: $2.1M / $1,625 psf vs 2026 comps $1,763-1,842 psf for 1,216-1,259 sqft 3BRs — a ~$200K margin of safety; the identical 1,292 sqft layout sold for $2,205,000 ($1,707 psf) in Aug-2024, and project avg PSF has risen ~6.6% since 2024. (2) Unit quality: reservoir-facing corner — the 8 reservoir stacks are the prime stacks in this development — with ~$200K renovation in 'showflat condition'. (3) Fundamentals: URA 5-yr CAGR 6.4%/yr on 129 pure-resale transactions (confidence 1.0, no new-launch bias); 561 units and a $2.1M quantum sit in the liquid sweet spot. (4) Offsets: gross yield only ~2.9%, future-potential score 1/20 (DTL already priced in), 82-yr remaining lease, and the discount needs verification at viewing — a very low floor (01-05) would explain part of it, though even low-floor mid-size 3BRs printed $1,720-1,809 psf in 2025-26.",
+        "red_flags": [
+          "Floor level not disclosed in listing — verify floor and view line at viewing; reservoir views open up from ~floor 5 (clearing the tree line), and low floors take balcony-level traffic noise from the 4-lane Bedok Reservoir Road",
+          "Unit reconfigured from 3BR to 2BR + enlarged living — family buyers/tenants may need to pay to reinstate, so the $200K renovation does not transfer at full value",
+          "Gross yield ~2.9% on a realistic $5,000/mo rent — below the 3.5%+ typical comfort zone; this is not a yield play",
+          "11 years old with ~82 yrs lease remaining — ~75-77 yrs at a 5-7 yr exit, competing against newer D16 stock",
+          "~2,300 new D16 units incoming (Bayshore Drive GLS ~1,280 + New Upper Changi GLS ~1,040) plus heavy similar-age leasehold supply in the Bedok Reservoir cluster (Waterfront Waves/Key/Gold/Isle, Archipelago) compete at exit"
+        ],
+        "catalysts": [
+          "Entry ~8-12% below recent project comps — built-in margin of safety even in a flat market",
+          "DTL Sungei Bedok extension completes the DTL-TEL interchange, improving east-side line utility",
+          "Changi T5 (2030s) and eventual Paya Lebar Airbase relocation are long-horizon eastern-region employment/land catalysts",
+          "Bayshore precinct build-out lifts D16 amenity over the hold period (though it also adds supply)"
+        ],
+        "rental_assessment": "Project rentals averaged ~$4.4K/mo over the past 6 months across all sizes; 2BRs ask ~$4.2K, so a renovated reservoir-facing 3BR should achieve ~$4.8-5.3K. At $5,000/mo gross yield is ~2.9% — modest but typical for an OCR 3BR. Tenant demand is steady (270m to DTL, reservoir lifestyle, Bedok amenities) but the 3BR tenant pool is family-only.",
+        "appreciation_assessment": "URA 5-yr CAGR is 6.4%/yr on 129 resale-only transactions (confidence 1.0) — avg PSF rose 1,229 (2021) → 1,676 (2026 YTD). Momentum is decelerating (1-yr +4.1%, 3-yr +11.6% cumulative), so I model 5.0%/yr forward rather than the historical 6.4%. The below-comps entry adds an additional one-off ~8-10% catch-up if the unit's floor/view check out.",
+        "stack_notes": "This unit is reservoir-facing — one of the 8 prime stacks with open water views (open from ~floor 5 up due to reservoir width). Corner position adds light/ventilation. Verify exact floor: low floors get balcony-level traffic noise from Bedok Reservoir Road and weaker views; floors 06+ are where 2026 comps printed $1,763-1,842 psf. Avoid paying reservoir-stack money for an obstructed line.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA 5-yr CAGR 6.4% (129 resale txns) moderated to 5.0% for decelerating momentum (1-yr +4.1%)"
+      },
+      "source": {
+        "run_dir": "output/run_026",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500043467",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
