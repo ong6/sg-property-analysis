@@ -130,6 +130,71 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500043467",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-05",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Ground-floor 980 sqft patio 2BR at $1.58M ($1,612 psf) in a fundamentally solid development — 270m to Bedok Reservoir DTL, 561 units, 6.4%/yr URA CAGR on 129 resale transactions. But the ask prices a no-view ground unit at the PSF level high-floor 2BRs fetched in Sep-2025 ($1,618-1,646 psf), while low-floor 2BR comps printed $1,547-1,563 psf — and Waterfront Isle's entire premium is the reservoir view this unit doesn't have.",
+      "rating_rationale": "(1) Price: low-floor 904-915 sqft 2BRs transacted $1.405-1.43M ($1,547-1,563 psf, Aug-2025/Jan-2025); applying the ~8-10% 2026 momentum seen in larger units puts fair value at ~$1.50-1.53M — the $1.58M ask is ~4-6% above, at high-floor PSF for a ground-floor unit. (2) Unit type: ~65-75 sqft of the strata area is outdoor patio (PES), priced at full PSF but worth ~half; ground floor forgoes the reservoir view that drives this project's prime-stack pricing. (3) Fundamentals are good — 6.4%/yr URA CAGR (129 resale txns, no new-launch bias), 3.3% yield on a realistic $4,300/mo rent, liquid $1.4-1.6M quantum, 270m MRT. (4) Becomes a Buy if negotiated to ~$1.50-1.52M; at ask, the entry premium eats the first year of appreciation.",
+      "red_flags": [
+        "Asking $1,612 psf = Sep-2025 high-floor 2BR pricing for a ground-floor unit; low-floor comps were $1,547-1,563 psf",
+        "~7% of strata area is outdoor patio (PES) paid at full PSF — effective interior is ~905-915 sqft",
+        "Ground floor beside Bedok Reservoir: mosquitoes, dampness and privacy need a viewing check (Stacked Homes notes landscaping gives decent ground-floor privacy)",
+        "No 2BR transactions in 2026 yet — fair value extrapolated from late-2025 prints plus larger-unit momentum",
+        "82 yrs lease remaining (99 from 2009); ~75-77 yrs at a 5-7 yr exit, competing with newer Bayshore-precinct stock",
+        "D16 incoming supply: Bayshore GLS precinct, Sky Eden @ Bedok (TOP ~2027), New Upper Changi Rd GLS (~1,040 units)"
+      ],
+      "catalysts": [
+        "URA momentum: project prints jumped to $1,763-1,842 psf in Apr-May 2026 across larger units (+8-12% vs late 2025)",
+        "270m walk to Bedok Reservoir MRT (DTL) — genuine walk-to-MRT in a deep HDB-upgrader catchment",
+        "Sungei Bedok DTL-TEL interchange (2H 2026) completes east-side line utility (indirect — 2.5-3km away)",
+        "Ground-floor patio is a niche draw for families with young children and pet owners (pet-friendly development)"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1612.24,
+        "beds": 2,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.39,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.61,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "Ground-floor 980 sqft patio 2BR at $1.58M ($1,612 psf) in a fundamentally solid development — 270m to Bedok Reservoir DTL, 561 units, 6.4%/yr URA CAGR on 129 resale transactions. But the ask prices a no-view ground unit at the PSF level high-floor 2BRs fetched in Sep-2025 ($1,618-1,646 psf), while low-floor 2BR comps printed $1,547-1,563 psf — and Waterfront Isle's entire premium is the reservoir view this unit doesn't have.",
+        "rating": "Neutral",
+        "rating_rationale": "(1) Price: low-floor 904-915 sqft 2BRs transacted $1.405-1.43M ($1,547-1,563 psf, Aug-2025/Jan-2025); applying the ~8-10% 2026 momentum seen in larger units puts fair value at ~$1.50-1.53M — the $1.58M ask is ~4-6% above, at high-floor PSF for a ground-floor unit. (2) Unit type: ~65-75 sqft of the strata area is outdoor patio (PES), priced at full PSF but worth ~half; ground floor forgoes the reservoir view that drives this project's prime-stack pricing. (3) Fundamentals are good — 6.4%/yr URA CAGR (129 resale txns, no new-launch bias), 3.3% yield on a realistic $4,300/mo rent, liquid $1.4-1.6M quantum, 270m MRT. (4) Becomes a Buy if negotiated to ~$1.50-1.52M; at ask, the entry premium eats the first year of appreciation.",
+        "red_flags": [
+          "Asking $1,612 psf = Sep-2025 high-floor 2BR pricing for a ground-floor unit; low-floor comps were $1,547-1,563 psf",
+          "~7% of strata area is outdoor patio (PES) paid at full PSF — effective interior is ~905-915 sqft",
+          "Ground floor beside Bedok Reservoir: mosquitoes, dampness and privacy need a viewing check (Stacked Homes notes landscaping gives decent ground-floor privacy)",
+          "No 2BR transactions in 2026 yet — fair value extrapolated from late-2025 prints plus larger-unit momentum",
+          "82 yrs lease remaining (99 from 2009); ~75-77 yrs at a 5-7 yr exit, competing with newer Bayshore-precinct stock",
+          "D16 incoming supply: Bayshore GLS precinct, Sky Eden @ Bedok (TOP ~2027), New Upper Changi Rd GLS (~1,040 units)"
+        ],
+        "catalysts": [
+          "URA momentum: project prints jumped to $1,763-1,842 psf in Apr-May 2026 across larger units (+8-12% vs late 2025)",
+          "270m walk to Bedok Reservoir MRT (DTL) — genuine walk-to-MRT in a deep HDB-upgrader catchment",
+          "Sungei Bedok DTL-TEL interchange (2H 2026) completes east-side line utility (indirect — 2.5-3km away)",
+          "Ground-floor patio is a niche draw for families with young children and pet owners (pet-friendly development)"
+        ],
+        "rental_assessment": "Current 2BR asks are $4,300-4,400/mo ($4.7 psf project average) — at $4,300 the gross yield is 3.27% at ask. Tenant demand is steady (DTL at 270m, reservoir lifestyle, Bedok amenities) and 2BR is the deepest tenant pool, but a ground-floor unit rents at the bottom of the band; some tenants exclude ground floor outright. Not a yield play.",
+        "appreciation_assessment": "URA 5-yr CAGR 6.39%/yr on 129 resale-only transactions (confidence 1.0): avg PSF $1,229 (2021) -> $1,676 (2026 YTD). 1-yr rate +4.1% shows deceleration, so I model ~4.5%/yr forward. Caveat: ground-floor/PES units historically appreciate slower than the reservoir-view stacks that set the project's headline prints — the project CAGR overstates this unit's likely trajectory.",
+        "stack_notes": "This is the development's weakest unit class: ground floor, quiet (inward) facing, no reservoir line. The prime units are the 8 reservoir-facing stacks from ~floor 5 up (open water views; 2026 prints $1,763-1,842 psf). Quiet-facing beats fronting the 4-lane Bedok Reservoir Road, and the patio suits families/pets — but you are buying the project's discount tier and should pay discount-tier PSF (~$1,500-1,550), not $1,612.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA 5-yr CAGR 6.39% (129 resale txns) moderated for 1-yr deceleration (+4.1%) and ground-floor unit-class drag"
+      },
+      "source": {
+        "run_dir": "output/run_027",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933",
+        "review_file": "raw_analysis_2br_500134933.json"
+      }
     }
   ]
 }
