@@ -15,15 +15,10 @@ from utils.geo import normalize_district
 
 # Import config values
 try:
-    from config import (
-        SCORE_TIER1_MIN, SCORE_TIER2_MIN,
-        TARGET_PRICE_MIN, TARGET_PRICE_MAX
-    )
+    from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
 except ImportError:
     SCORE_TIER1_MIN = 60
     SCORE_TIER2_MIN = 45
-    TARGET_PRICE_MIN = 2_200_000
-    TARGET_PRICE_MAX = 2_700_000
 
 
 class QuickScorer:
@@ -47,15 +42,8 @@ class QuickScorer:
         "03", "05", "14", "15", "19", "22", "3", "5"  # Numeric variants
     }
 
-    def __init__(self, price_range: tuple[int, int] | None = None):
+    def __init__(self):
         self._current_year = datetime.now().year
-        # Use CLI-provided price range, falling back to config defaults
-        if price_range:
-            self._min_price = price_range[0]
-            self._max_price = price_range[1]
-        else:
-            self._min_price = TARGET_PRICE_MIN
-            self._max_price = TARGET_PRICE_MAX
 
     def score(self, listing: dict[str, Any]) -> QuickScore:
         """
@@ -70,15 +58,6 @@ class QuickScorer:
         breakdown: dict[str, Any] = {}
 
         # === Hard Filters (auto-reject) ===
-        price = listing.get("price", 0)
-        if not (self._min_price <= price <= self._max_price):
-            return QuickScore(
-                score=0,
-                tier=3,
-                reason=f"Price ${price:,} outside range ${self._min_price:,}-${self._max_price:,}",
-                breakdown={"rejected": "price_out_of_range"},
-            )
-
         remaining_lease = self._calculate_remaining_lease(listing)
         if remaining_lease is not None and remaining_lease < 60:
             return QuickScore(

@@ -23,6 +23,8 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
+from contextlib import contextmanager
 from datetime import datetime
 from difflib import SequenceMatcher
 from typing import Any, Optional
@@ -143,17 +145,47 @@ def _key_facts(entry: dict) -> dict:
     }
 
 
+@contextmanager
+def _slug_lock(slug: str, timeout: float = 10.0):
+    """Cross-process lock for one condo file, so concurrent sessions evaluating
+    different units of the same condo can't lose each other's appends."""
+    lock_path = _condo_path(slug) + ".lock"
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.close(fd)
+            break
+        except FileExistsError:
+            if time.monotonic() >= deadline:
+                # Stale lock (crashed process) — steal it rather than dropping the save.
+                break
+            time.sleep(0.1)
+    try:
+        yield
+    finally:
+        try:
+            os.unlink(lock_path)
+        except OSError:
+            pass
+
+
 def save_evaluation(condo: str, district: Optional[str], history_entry: dict) -> str:
-    """Append one evaluation to a condo's append-only history. Returns the slug."""
+    """Append one evaluation to a condo's append-only history. Returns the slug.
+
+    Load-append-write happens under a per-condo lock — concurrent runs on
+    different listings of the same condo each get their entry appended.
+    """
     _ensure_dir()
     slug = slugify(condo)
-    data = load_condo(slug) or {"condo": condo, "slug": slug, "district": district, "history": []}
-    data["condo"] = condo
-    if district:
-        data["district"] = district
-    data.setdefault("history", []).append(history_entry)
-    with open(_condo_path(slug), "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    with _slug_lock(slug):
+        data = load_condo(slug) or {"condo": condo, "slug": slug, "district": district, "history": []}
+        data["condo"] = condo
+        if district:
+            data["district"] = district
+        data.setdefault("history", []).append(history_entry)
+        with open(_condo_path(slug), "w") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
     return slug
 
 

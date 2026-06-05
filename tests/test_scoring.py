@@ -17,19 +17,12 @@ class TestQuickScorer:
     def setup_method(self):
         self.scorer = QuickScorer()
 
-    def test_reject_price_too_low(self):
-        """Listings below $2.2M should be rejected."""
-        listing = {"price": 2_000_000, "psf": 1800, "beds": 2}
-        score = self.scorer.score(listing)
-        assert score.tier == 3
-        assert "Price" in score.reason
-
-    def test_reject_price_too_high(self):
-        """Listings above $2.7M should be rejected."""
-        listing = {"price": 3_000_000, "psf": 1800, "beds": 2}
-        score = self.scorer.score(listing)
-        assert score.tier == 3
-        assert "Price" in score.reason
+    def test_no_price_rejection(self):
+        """Price alone should never hard-reject a listing (no price range filter)."""
+        for price in (500_000, 2_000_000, 10_000_000):
+            listing = {"price": price, "psf": 1800, "beds": 2}
+            score = self.scorer.score(listing)
+            assert score.breakdown.get("rejected") is None
 
     def test_reject_low_lease(self):
         """Listings with < 60 years remaining should be rejected."""
