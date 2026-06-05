@@ -1439,7 +1439,6 @@ def score_and_filter(
     transaction_data: Optional[dict] = None,
     fetch_appreciation: bool = False,
     ura_data: Optional[dict] = None,
-    price_range: Optional[tuple[int, int]] = None,
 ) -> dict[str, list[ScoredListing]]:
     """
     Quick filter then full score remaining listings.
@@ -1450,13 +1449,12 @@ def score_and_filter(
     Args:
         listings: List of listing dictionaries
         min_quick_score: Minimum quick score to keep for full scoring.
-            Listings with score=0 (hard-rejected by price/lease) are always excluded.
+            Listings with score=0 (hard-rejected by lease) are always excluded.
             Default 40 is intentionally lenient since quick scorer lacks URA data.
         condo_rental_data: Optional condo rental data
         transaction_data: Optional transaction history data
         fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
         ura_data: Optional URA appreciation data (official govt source, highest priority)
-        price_range: Optional (min_price, max_price) tuple to override config defaults.
 
     Returns:
         Dict with "scored" (full analysis) and "rejected" (quick filtered) lists
@@ -1464,13 +1462,13 @@ def score_and_filter(
     from scoring.quick_scorer import QuickScorer
 
     # Phase 1: Quick filter using min_quick_score threshold
-    quick_scorer = QuickScorer(price_range=price_range)
+    quick_scorer = QuickScorer()
     to_score = []
     rejected = []
 
     for listing in listings:
         qs = quick_scorer.score(listing)
-        # score=0 means hard-rejected (price out of range, lease too short)
+        # score=0 means hard-rejected (lease too short)
         if qs.score == 0 or qs.score < min_quick_score:
             rejected.append(listing)
         else:

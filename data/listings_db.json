@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04",
+  "updated_at": "2026-06-05",
   "listings": {
     "60147887": {
       "id": "60147887",
@@ -2312,6 +2312,300 @@
       "tenure": "L99",
       "listing_agent": "Marilyn Seah 谢欣妤",
       "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-25584219"
+    },
+    "500043467": {
+      "id": "500043467",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 2100000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500043467"
+      },
+      "title": "Waterfront Isle",
+      "project_name": "Waterfront Isle",
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1292.0,
+      "price": 2100000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Allen Wee",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500043467"
+    },
+    "500001144": {
+      "id": "500001144",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 2200000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144"
+      },
+      "title": "Waterfront Isle",
+      "project_name": "Waterfront Isle",
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1378.0,
+      "price": 2200000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Siok Keng",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144"
+    },
+    "500134933": {
+      "id": "500134933",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1580000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933"
+      },
+      "title": "Waterfront Isle",
+      "project_name": "Waterfront Isle",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 980.0,
+      "price": 1580000,
+      "property_type": "Condominium",
+      "tenure": "L99",
+      "listing_agent": "Jasper Chan",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933"
+    },
+    "500089203": {
+      "id": "500089203",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 2,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1478000,
+          "psf": null
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Key",
+      "project_name": "Waterfront Key",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 850.0,
+      "price": 1478000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "listing_agent": "Kevin Aw 胡锦胜",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-500089203",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "psf": 1738.82,
+      "built_year": 2012,
+      "mrt_info": "4 min (350 m) from DT30 Bedok Reservoir MRT Station",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500089203/UPHO.159112115.V550/Waterfront-Key-Bedok-Upper-East-Coast-Singapore.jpg"
+    },
+    "60075937": {
+      "id": "60075937",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1620000,
+          "psf": 1905.88
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Key",
+      "project_name": "Waterfront Key",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 850.0,
+      "psf": 1905.88,
+      "price": 1620000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2012,
+      "mrt_info": "4 min (350 m) from DT30 Bedok Reservoir MRT Station",
+      "listing_agent": "Joanna Chung",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60075937/UPHO.156087437.V550/Waterfront-Key-Bedok-Upper-East-Coast-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-60075937"
+    },
+    "500097457": {
+      "id": "500097457",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1478000,
+          "psf": 1738.82
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Key",
+      "project_name": "Waterfront Key",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 850.0,
+      "psf": 1738.82,
+      "price": 1478000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2012,
+      "mrt_info": "4 min (350 m) from DT30 Bedok Reservoir MRT Station",
+      "listing_agent": "Rene Tan",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500097457/UPHO.159240416.V550/Waterfront-Key-Bedok-Upper-East-Coast-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-500097457"
+    },
+    "500115922": {
+      "id": "500115922",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1699999,
+          "psf": 1857.92
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Key",
+      "project_name": "Waterfront Key",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 915.0,
+      "psf": 1857.92,
+      "price": 1699999,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2012,
+      "mrt_info": "4 min (350 m) from DT30 Bedok Reservoir MRT Station",
+      "listing_agent": "Kelvin Koh",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500115922/UPHO.159531211.V550/Waterfront-Key-Bedok-Upper-East-Coast-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-500115922"
+    },
+    "500082094": {
+      "id": "500082094",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1630000,
+          "psf": 1682.15
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Waves",
+      "project_name": "Waterfront Waves",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "beds": 2,
+      "baths": 2,
+      "sqft": 969.0,
+      "psf": 1682.15,
+      "price": 1630000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2011,
+      "mrt_info": "5 min (420 m) from DT30 Bedok Reservoir MRT Station",
+      "listing_agent": "Patrick Chee",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/500082094/UPHO.158999488.V550/Waterfront-Waves-Bedok-Upper-East-Coast-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-waves-500082094"
+    },
+    "60234718": {
+      "id": "60234718",
+      "first_seen": "2026-06-05",
+      "last_seen": "2026-06-05",
+      "times_seen": 1,
+      "status": "active",
+      "price_history": [
+        {
+          "date": "2026-06-05",
+          "price": 1250000,
+          "psf": 1592.36
+        }
+      ],
+      "source": {
+        "flow": "condo",
+        "condo": "Waterfront Key"
+      },
+      "title": "Waterfront Gold",
+      "project_name": "Waterfront Gold",
+      "district": "D16",
+      "district_name": "Bedok / Upper East Coast",
+      "region": "East Coast (D15-16)",
+      "beds": 2,
+      "baths": 1,
+      "sqft": 785.0,
+      "psf": 1592.36,
+      "price": 1250000,
+      "property_type": "Condominium",
+      "tenure": "99-year Leasehold",
+      "built_year": 2014,
+      "mrt_info": "5 min (410 m) from DT30 Bedok Reservoir MRT Station",
+      "listing_agent": "Shirley Lee",
+      "image_url": "https://sg1-cdn.pgimgs.com/listing/60234718/UPHO.159140235.V550/Waterfront-Gold-Bedok-Upper-East-Coast-Singapore.jpg",
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-gold-60234718"
     }
   }
 }

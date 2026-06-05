@@ -45,11 +45,13 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
 from pathlib import Path
 from glob import glob as file_glob
+from typing import Optional
 
 # Project imports
 from scoring.full_scorer import score_listings, score_and_filter
@@ -71,23 +73,51 @@ URA_CACHE_FILE = DATA_DIR / "ura_cache.json"
 OUTPUT_DIR = Path(__file__).parent / "output"
 
 
-def next_run_dir() -> Path:
-    """Create and return the next sequential run directory (output/run_001, run_002, ...).
+def _run_slug(text: str) -> str:
+    """Sanitize text into a short run-dir suffix ([a-z0-9-], max 40 chars)."""
+    slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    return slug[:40]
 
-    Scans existing run_NNN directories to find the next number.
+
+def url_run_slug(url: str) -> Optional[str]:
+    """Derive a run-dir suffix from a PropertyGuru URL so concurrent runs on
+    different listings get distinct directories.
+
+    Listing/project URLs end in a numeric ID (.../for-sale-foo-500134933) —
+    use that ID. Results pages have no single ID — return None.
+    """
+    path = url.split("?", 1)[0].rstrip("/#")
+    last = path.rsplit("/", 1)[-1]
+    m = re.search(r"(\d{4,})$", last)
+    if m:
+        return m.group(1)
+    return None
+
+
+def next_run_dir(slug: Optional[str] = None) -> Path:
+    """Atomically create and return the next sequential run directory.
+
+    Names are output/run_NNN or output/run_NNN_<slug> when a slug is given
+    (e.g. the listing ID from a --url run), so concurrent runs on different
+    listings land in different directories. Creation uses exist_ok=False and
+    retries on collision, so two concurrent processes can never share a dir.
     """
     OUTPUT_DIR.mkdir(exist_ok=True)
-    existing = sorted(OUTPUT_DIR.glob("run_*"))
-    max_num = 0
-    for d in existing:
+    suffix = f"_{_run_slug(slug)}" if slug else ""
+    while True:
+        max_num = 0
+        for d in OUTPUT_DIR.glob("run_*"):
+            try:
+                num = int(d.name.split("_")[1])
+                max_num = max(max_num, num)
+            except (IndexError, ValueError):
+                continue
+        run_dir = OUTPUT_DIR / f"run_{max_num + 1:03d}{suffix}"
         try:
-            num = int(d.name.split("_", 1)[1])
-            max_num = max(max_num, num)
-        except (IndexError, ValueError):
-            continue
-    run_dir = OUTPUT_DIR / f"run_{max_num + 1:03d}"
-    run_dir.mkdir(parents=True, exist_ok=True)
-    return run_dir
+            run_dir.mkdir(parents=True, exist_ok=False)
+            return run_dir
+        except FileExistsError:
+            continue  # another process took this number — rescan and retry
 
 
 # All Singapore districts with descriptions for AI context
@@ -279,10 +309,19 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
     return cache
 
 
+def _format_price_filter(min_price: int | None, max_price: int | None) -> str:
+    """Human-readable price filter description for scrape logs."""
+    if min_price is None and max_price is None:
+        return "any"
+    lo = f"${min_price:,}" if min_price is not None else "any"
+    hi = f"${max_price:,}" if max_price is not None else "any"
+    return f"{lo} - {hi}"
+
+
 def scrape_listings(
     districts: list[int],
-    min_price: int,
-    max_price: int,
+    min_price: int | None,
+    max_price: int | None,
     beds: list[int],
     max_pages: int = 5,
     headless: bool = True,
@@ -306,7 +345,7 @@ def scrape_listings(
     print(f"SCRAPING PROPERTYGURU (per-district mode)", file=sys.stderr)
     print(f"{'='*60}", file=sys.stderr)
     print(f"  Districts: {districts} ({len(districts)} districts)", file=sys.stderr)
-    print(f"  Price: ${min_price:,} - ${max_price:,}", file=sys.stderr)
+    print(f"  Price: {_format_price_filter(min_price, max_price)}", file=sys.stderr)
     print(f"  Beds: {beds}", file=sys.stderr)
     print(f"  Max pages per district: {max_pages}", file=sys.stderr)
     if enrich_top > 0:
@@ -336,8 +375,8 @@ def scrape_listings(
 
 def scrape_condo_listings(
     condo_name: str,
-    min_price: int,
-    max_price: int,
+    min_price: int | None,
+    max_price: int | None,
     beds: list[int],
     max_pages: int = 5,
     headless: bool = True,
@@ -391,7 +430,7 @@ def scrape_condo_listings(
     print("SCRAPING PROPERTYGURU (condo-name mode)", file=sys.stderr)
     print(f"{'='*60}", file=sys.stderr)
     print(f"  Condo: {condo_name}", file=sys.stderr)
-    print(f"  Price: ${min_price:,} - ${max_price:,}", file=sys.stderr)
+    print(f"  Price: {_format_price_filter(min_price, max_price)}", file=sys.stderr)
     print(f"  Beds: {beds}", file=sys.stderr)
     print(f"  Max pages: {max_pages}", file=sys.stderr)
     print(f"  Fuzzy matching: {'ON' if fuzzy else 'OFF'}", file=sys.stderr)
@@ -531,8 +570,8 @@ def scrape_url_listings(
     max_pages: int = 5,
     headless: bool = True,
     enrich_top: int = 0,
-    min_price: int = 0,
-    max_price: int = 10**9,
+    min_price: int | None = None,
+    max_price: int | None = None,
     beds: list[int] | None = None,
 ) -> list[dict]:
     """Scrape listings from an arbitrary PropertyGuru URL.
@@ -899,10 +938,10 @@ Examples:
                        help="PropertyGuru URL: a single listing, a results/list page, or a project page")
     parser.add_argument("--url-max-pages", type=int, default=5,
                        help="Max pages to scrape when --url is a results page (default: 5)")
-    parser.add_argument("--min-price", type=int, default=2000000,
-                       help="Minimum price (default: 2000000)")
-    parser.add_argument("--max-price", type=int, default=3000000,
-                       help="Maximum price (default: 3000000)")
+    parser.add_argument("--min-price", type=int, default=None,
+                       help="Minimum price filter for scraping (optional, no default)")
+    parser.add_argument("--max-price", type=int, default=None,
+                       help="Maximum price filter for scraping (optional, no default)")
     parser.add_argument("--beds", "-b", type=str, default="2,3",
                        help="Bedroom counts (default: 2,3)")
     parser.add_argument("--max-pages", type=int, default=5,
@@ -1342,8 +1381,8 @@ Examples:
             enrich_top=url_enrich,
             # Don't price-gate a pasted URL: results pages already encode the
             # user's filters, and a project page should surface all unit types.
-            min_price=0,
-            max_price=10**9,
+            min_price=None,
+            max_price=None,
             beds=beds,
         )
 
@@ -1351,7 +1390,7 @@ Examples:
             print("No listings found", file=sys.stderr)
             return
 
-        run_dir = next_run_dir()
+        run_dir = next_run_dir(slug=url_run_slug(args.url))
         listings_file = run_dir / "listings_url.json"
         with open(listings_file, "w") as f:
             json.dump(listings, f, indent=2, ensure_ascii=False)
@@ -1379,8 +1418,8 @@ Examples:
             print("No listings found", file=sys.stderr)
             return
 
-        run_dir = next_run_dir()
         safe_condo = "_".join(args.condo.lower().split())
+        run_dir = next_run_dir(slug=safe_condo)
         listings_file = run_dir / f"listings_{safe_condo}.json"
         with open(listings_file, "w") as f:
             json.dump(listings, f, indent=2, ensure_ascii=False)
@@ -1564,14 +1603,8 @@ Examples:
     warn_if_stale_data()
 
     # Score listings with pre-filtering (skip full scoring on obvious rejects).
-    # For --url the user pasted specific listing(s) — don't drop them on the default
-    # price band (any price filter the user wanted is already encoded in the URL).
-    score_price_range = (0, 10**9) if args.url else (args.min_price, args.max_price)
     print(f"\nScoring {len(listings)} listings...", file=sys.stderr)
-    result = score_and_filter(
-        listings, min_quick_score=40, ura_data=ura_data,
-        price_range=score_price_range,
-    )
+    result = score_and_filter(listings, min_quick_score=40, ura_data=ura_data)
     scored = result["scored"]
     rejected = result["rejected"]
     if rejected:
@@ -1619,9 +1652,10 @@ Examples:
 
         # Always save raw analysis for agent review
         run_config = {
-            "price_range": [args.min_price, args.max_price],
             "beds": [int(b.strip()) for b in args.beds.split(",")],
         }
+        if args.min_price is not None or args.max_price is not None:
+            run_config["price_range"] = [args.min_price, args.max_price]
         if args.condo:
             run_config["condo"] = args.condo
             run_config["condo_fuzzy"] = args.condo_fuzzy
@@ -1677,9 +1711,10 @@ Examples:
 
         if args.raw:
             run_config = {
-                "price_range": [args.min_price, args.max_price],
                 "beds": [int(b.strip()) for b in args.beds.split(",")],
             }
+            if args.min_price is not None or args.max_price is not None:
+                run_config["price_range"] = [args.min_price, args.max_price]
             if args.districts:
                 run_config["districts"] = [f"D{d.strip()}" for d in args.districts.split(",")]
             raw_path = save_raw_analysis(scored, args.raw, ura_data, run_config)

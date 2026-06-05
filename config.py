@@ -80,8 +80,6 @@ DISTRICT_WEIGHT_SUPPLY = 0.05  # Supply constraint
 # TARGET INVESTMENT PARAMETERS
 # ============================================================================
 
-TARGET_PRICE_MIN = 2_200_000
-TARGET_PRICE_MAX = 2_700_000
 TARGET_HOLD_YEARS = [5, 6, 7]
 
 # NOTE: TARGET_DISTRICTS removed in v2.0
