@@ -56,6 +56,11 @@ def _build_factual_data(listing: ScoredListing) -> dict:
         "gross_yield_pct": round(listing.estimated_gross_yield, 2) if listing.estimated_gross_yield else None,
         "rent_source": listing.rent_source or None,
     }
+    if (listing.rent_source or "").startswith("fallback"):
+        facts["rental"]["warning"] = (
+            "Rent is a generic fallback estimate (no district/condo data) — research "
+            "actual asking rents before weighing the yield."
+        )
 
     # --- Capital appreciation data ---
     appreciation: dict[str, Any] = {
@@ -94,8 +99,8 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     sb_liq = listing.score_breakdown.get("liquidity", {})
     facts["liquidity"] = {
         "ura_transaction_count": sb_cap.get("appreciation_rate", {}).get("transaction_count") if sb_cap else None,
-        "buyer_pool_depth": sb_liq.get("buyer_pool", {}).get("depth") if sb_liq else None,
-        "total_units": sb_liq.get("development_size", {}).get("total_units") if sb_liq else None,
+        "buyer_pool_depth": sb_liq.get("buyer_pool_depth", {}).get("depth") if sb_liq else None,
+        "total_units": (sb_liq.get("dev_size", {}).get("total_units") if sb_liq else None) or listing.total_units,
     }
 
     # --- Red flags detected ---
@@ -103,7 +108,7 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     facts["red_flags_detected"] = sb_flags.get("flags", [])
 
     # --- PSF overpricing check ---
-    psf_premium = listing.score_breakdown.get("red_flags", {}).get("psf_premium_pct")
+    psf_premium = sb_flags.get("psf_premium_pct")
     if psf_premium is not None:
         facts["psf_premium_vs_ura_median_pct"] = round(psf_premium, 1)
 
@@ -116,7 +121,7 @@ def _build_algo_breakdown(listing: ScoredListing) -> dict:
     The AI should use factual_data for evaluation. This breakdown shows
     how the algorithm scored the property for reference/comparison.
     """
-    return {
+    result = {
         "total_score": round(listing.total_score, 1),
         "rental_yield": round(listing.rental_yield_score, 1),
         "capital_appreciation": round(listing.capital_appreciation_score, 1),
@@ -125,6 +130,15 @@ def _build_algo_breakdown(listing: ScoredListing) -> dict:
         "cost_efficiency": round(listing.cost_efficiency_score, 1),
         "red_flag_deductions": round(listing.red_flag_deductions, 1),
     }
+    if listing.mmr is not None:
+        result["mmr"] = round(listing.mmr, 1)
+        result["score_1000"] = listing.score_1000
+        result["mmr_components"] = listing.mmr_components
+        result["mmr_note"] = (
+            "MMR: continuous uncapped rating, base 1500; score_1000 is its 0-1000 "
+            "normalization (500 = market-typical). Larger spread than the legacy /100 score."
+        )
+    return result
 
 
 def _build_roi_projections(listing: ScoredListing) -> dict:
@@ -224,6 +238,7 @@ def _listing_to_raw(
         "tenure": listing.tenure,
         "remaining_lease": listing.remaining_lease,
         "built_year": listing.built_year,
+        "total_units": listing.total_units,
     }
 
     # MRT info
@@ -342,8 +357,9 @@ def generate_raw_analysis(
         ),
         "market_scan": (
             "MARKET SCAN across many candidates. For each shortlisted listing give a clear "
-            "Buy / Neutral / Avoid rating with confidence, so the user can compare. Lead "
-            "with the strongest buys in the executive summary."
+            "Buy / Neutral / Avoid rating with confidence, so the user can compare. Order the "
+            "executive summary by rating strength — and if nothing merits a Buy, say so plainly; "
+            "'no buys in this batch' is a valid and useful outcome."
         ),
     }
 
@@ -366,22 +382,31 @@ def generate_raw_analysis(
             "6. Fill report_level executive summary with the one-line verdict",
         ],
         "market_scan": [
-            "1. For the top candidates: web search project reviews, issues, transaction history",
+            "1. Web search project reviews, issues, transaction history — cover ALL shortlisted listings, not just the algo's top-ranked (its ordering is an input, not the answer)",
             "2. Research area trends, upcoming developments, supply, and market conditions",
             "3. For each, assess unit quality and stack information where known",
             "4. Review factual_data per listing — appreciation reliability, yield, red flags",
             "5. Give each a Buy / Neutral / Avoid rating with confidence",
-            "6. Fill report_level: executive summary leads with the strongest buys",
+            "6. Fill report_level: executive summary ordered by rating strength ('no buys' is a valid outcome)",
         ],
     }
 
     result["ai_review_instructions"] = {
         "mode": mode,
+        "purpose_check": (
+            "All computed metrics (yield, ROI, liquidity, MMR) assume an INVESTMENT purpose "
+            "(5-7yr hold). If the user's request suggests OWN-STAY — or is ambiguous between "
+            "the two — ask the user before rating. Own-stay shifts the rubric: livability, "
+            "layout, facing, noise, schools and commute outweigh yield and exit liquidity."
+        ),
         "note": (
             "YOU are the evaluator. factual_data holds objective metrics; algo_reference is the "
             "algorithm's technical score (one input, not the answer). You can also call the "
             "technical scorer directly: `python invest.py --score '{...key value-drivers...}'`. "
             "Form your own rating from the data + web research. See CLAUDE.md for the full rubric. "
+            "Anti-anchoring: form your view from factual_data and your research FIRST; consult "
+            "algo_reference and past evaluations to pressure-test it, not to start from it. "
+            "Research lower-ranked listings too — the algo ordering is an input, not a shortlist. "
             + mode_notes[mode]
         ),
         "steps": steps_by_mode[mode],
@@ -444,144 +469,3 @@ def load_reviewed_analysis(path: str) -> tuple[dict, list[dict]]:
     report_level = data.get("report_level", {})
     listings = data.get("listings", [])
     return report_level, listings
-
-
-def apply_review_to_listings(
-    scored: list[ScoredListing],
-    reviewed_listings: list[dict],
-) -> list[ScoredListing]:
-    """Apply agent review data back onto ScoredListing objects.
-
-    Matches reviewed listings to scored listings by URL (most reliable),
-    then applies all agent_* fields.
-
-    Returns:
-        Updated list of ScoredListing objects, re-sorted by total_score.
-    """
-    # Index reviewed data by URL for matching
-    review_by_url = {}
-    review_by_title = {}
-    for entry in reviewed_listings:
-        if entry.get("url"):
-            review_by_url[entry["url"]] = entry
-        if entry.get("title"):
-            review_by_title[entry["title"]] = entry
-
-    for listing in scored:
-        review = review_by_url.get(listing.url) or review_by_title.get(listing.title)
-        if not review:
-            continue
-
-        listing.agent_summary = review.get("agent_summary")
-        listing.agent_red_flags = review.get("agent_red_flags", [])
-        listing.agent_catalysts = review.get("agent_catalysts", [])
-        listing.agent_score_adjustment = review.get("agent_score_adjustment", 0)
-        listing.agent_adjustment_reason = review.get("agent_adjustment_reason")
-        listing.agent_rental_assessment = review.get("agent_rental_assessment")
-        listing.agent_appreciation_assessment = review.get("agent_appreciation_assessment")
-        listing.agent_stack_notes = review.get("agent_stack_notes")
-        listing.agent_confidence = review.get("agent_confidence")
-        listing.agent_appreciation_rate_pct = review.get("agent_appreciation_rate_pct")
-        listing.agent_appreciation_source = review.get("agent_appreciation_source")
-
-        # Apply AI appreciation override to ROI and cap score
-        if listing.agent_appreciation_rate_pct is not None:
-            try:
-                agent_rate_pct = float(listing.agent_appreciation_rate_pct)
-            except (TypeError, ValueError):
-                agent_rate_pct = None
-            if agent_rate_pct is not None:
-                prev_rate_pct = listing.appreciation_rate * 100 if listing.appreciation_rate is not None else None
-                prev_source = listing.appreciation_source
-                listing.appreciation_rate = agent_rate_pct / 100
-                listing.appreciation_source = "agent_override"
-
-                # Update capital appreciation score if breakdown exists
-                sb_cap = listing.score_breakdown.get("capital_appreciation", {})
-                if sb_cap:
-                    from scoring.full_scorer import FullScorer
-                    rate_points = FullScorer.score_appreciation_rate_points(
-                        agent_rate_pct,
-                        listing.appreciation_source,
-                    )
-                    other_points = (
-                        sb_cap.get("momentum", {}).get("points", 0)
-                        + sb_cap.get("psf_vs_median", {}).get("points", 0)
-                        + sb_cap.get("tenure", {}).get("points", 0)
-                        + sb_cap.get("property_age", {}).get("points", 0)
-                    )
-                    listing.capital_appreciation_score = rate_points + other_points
-                    sb_cap.get("appreciation_rate", {})["points"] = rate_points
-                else:
-                    from scoring.full_scorer import FullScorer
-                    rate_points = FullScorer.score_appreciation_rate_points(
-                        agent_rate_pct,
-                        listing.appreciation_source,
-                    )
-                    prev_rate_points = (
-                        FullScorer.score_appreciation_rate_points(prev_rate_pct, prev_source)
-                        if prev_rate_pct is not None
-                        else None
-                    )
-                    total_cap = listing.capital_appreciation_score
-                    if prev_rate_points is not None:
-                        listing.capital_appreciation_score = total_cap - prev_rate_points + rate_points
-                    else:
-                        listing.capital_appreciation_score = rate_points
-
-                # Recompute ROI with agent appreciation rate
-                from scoring.roi import ROICalculator
-                roi_calc = ROICalculator()
-                listing_dict = {
-                    "price": listing.price,
-                    "sqft": listing.sqft,
-                    "district": listing.district,
-                }
-                roi_results = roi_calc.calculate_multiple_periods(
-                    listing_dict,
-                    periods=[5, 6, 7],
-                    monthly_rent=listing.estimated_monthly_rent if listing.estimated_monthly_rent > 0 else None,
-                    appreciation_rate=listing.appreciation_rate,
-                )
-                listing.roi_5yr = roi_results.get(5)
-                listing.roi_6yr = roi_results.get(6)
-                listing.roi_7yr = roi_results.get(7)
-                sensitivity = roi_calc.calculate_sensitivity(
-                    listing_dict,
-                    periods=[5, 7],
-                    monthly_rent=listing.estimated_monthly_rent if listing.estimated_monthly_rent > 0 else None,
-                    appreciation_rate=listing.appreciation_rate,
-                )
-                try:
-                    from config import (
-                        ROI_SENSITIVITY_RENT_DELTA_PCT,
-                        ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
-                    )
-                except ImportError:
-                    ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
-                    ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
-                def _roi_summary(roi):
-                    return {
-                        "exit_price": roi.estimated_exit_price,
-                        "total_return": round(roi.total_return, 2),
-                        "roi_pct": round(roi.roi_percent, 2),
-                        "annualized_roi": round(roi.annualized_roi, 2),
-                    }
-                listing.roi_sensitivity = {
-                    "assumptions": {
-                        "rent_delta_pct": ROI_SENSITIVITY_RENT_DELTA_PCT,
-                        "appreciation_delta_pct": ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
-                    },
-                    "5yr": {
-                        "downside": _roi_summary(sensitivity["downside"][5]),
-                        "upside": _roi_summary(sensitivity["upside"][5]),
-                    },
-                    "7yr": {
-                        "downside": _roi_summary(sensitivity["downside"][7]),
-                        "upside": _roi_summary(sensitivity["upside"][7]),
-                    },
-                }
-
-    # Re-sort by total_score (which now includes agent adjustment)
-    scored.sort(key=lambda s: s.total_score, reverse=True)
-    return scored

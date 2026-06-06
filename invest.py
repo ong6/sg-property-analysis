@@ -57,7 +57,7 @@ from typing import Optional
 from scoring.full_scorer import score_listings, score_and_filter
 from scoring.models import ScoredListing
 from scoring.district_scorer import DistrictScorer
-from scoring.raw_output import save_raw_analysis, load_reviewed_analysis, apply_review_to_listings
+from scoring.raw_output import save_raw_analysis, load_reviewed_analysis
 from utils.markdown import save_report, generate_csv_export, generate_report
 from utils.geo import normalize_district
 from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
@@ -517,26 +517,39 @@ def score_condo(inputs: dict, ura_data: dict | None = None) -> dict:
             "transaction_count": 999,
             "source": "agent_provided",
         }
-        notes.append(f"Appreciation: using AI-provided {float(apr_override):.1f}%/yr")
+        notes.append(
+            f"Appreciation: using AI-provided {float(apr_override):.1f}%/yr — the score "
+            "reflects this input at face value; it validates internal consistency, NOT the "
+            "rate itself. Verify the rate against URA/resale transaction data."
+        )
 
+    # Inject an AI-provided rent as same-condo rental data so the yield score
+    # and ROI actually use it (not just the displayed figures).
     condo_rental_data = None
     monthly_rent = inputs.get("monthly_rent")
-    if monthly_rent is not None and listing.get("psf") and listing.get("sqft"):
-        notes.append(f"Rental: using AI-provided ${float(monthly_rent):,.0f}/mo")
+    if monthly_rent is not None:
+        sqft = listing.get("sqft")
+        if sqft:
+            if not listing.get("project_name"):
+                listing["project_name"] = listing["title"]
+            condo_rental_data = {
+                listing["project_name"].lower().strip(): float(monthly_rent) / float(sqft)
+            }
+            notes.append(f"Rental: using AI-provided ${float(monthly_rent):,.0f}/mo")
+        else:
+            notes.append("Rental: monthly_rent ignored — provide sqft for it to apply")
 
     scorer = FullScorer(condo_rental_data=condo_rental_data, ura_data=ura_data)
     scored = scorer.score(listing)
-
-    # If the AI gave a monthly rent, re-derive the yield figure for transparency.
-    if monthly_rent is not None and scored.price:
-        scored.estimated_monthly_rent = float(monthly_rent)
-        scored.estimated_gross_yield = round(float(monthly_rent) * 12 / scored.price * 100, 2)
 
     if scored.appreciation_source == "regional_baseline":
         notes.append("Appreciation: no project data — regional baseline used (research this).")
 
     return {
         "technical_score": round(scored.total_score, 1),
+        "mmr": round(scored.mmr, 1) if scored.mmr is not None else None,
+        "score_1000": scored.score_1000,
+        "mmr_components": scored.mmr_components or None,
         "tier": scored.final_tier,
         "tier_label": scored.final_tier_label,
         "score_is_technical_only": True,
@@ -709,8 +722,8 @@ def group_condo_by_unit_type(scored: list[ScoredListing]) -> list[ScoredListing]
 
         result.append(representative)
 
-    # Sort by (beds, -total_score)
-    result.sort(key=lambda s: (s.beds or 0, -s.total_score))
+    # Sort by (beds, -rank_score)
+    result.sort(key=lambda s: (s.beds or 0, -s.rank_score))
     return result
 
 
@@ -720,8 +733,12 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
     print("INVESTMENT ANALYSIS RESULTS (v2.2)")
     print(f"{'='*70}")
 
-    # Calculate stats
-    scores = [s.total_score for s in scored]
+    # Calculate stats (prefer the /1000 MMR scale when available)
+    use_1000 = any(s.score_1000 is not None for s in scored)
+    if use_1000:
+        scores = [s.score_1000 for s in scored if s.score_1000 is not None]
+    else:
+        scores = [s.total_score for s in scored]
     avg_score = sum(scores) / len(scores) if scores else 0
     min_score = min(scores) if scores else 0
     max_score = max(scores) if scores else 0
@@ -735,12 +752,21 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
     tier3 = [s for s in scored if s.final_tier == 3]
 
     print(f"  Total Analyzed: {len(scored)}")
-    print(f"  Score Range: {min_score:.1f} - {max_score:.1f} (avg: {avg_score:.1f})")
-    print(
-        f"  Tier 1 (>= {SCORE_TIER1_MIN}): {len(tier1)} | "
-        f"Tier 2 ({SCORE_TIER2_MIN}-{SCORE_TIER1_MIN - 1}): {len(tier2)} | "
-        f"Tier 3 (< {SCORE_TIER2_MIN}): {len(tier3)}"
-    )
+    scale_label = "/1000" if use_1000 else "/100"
+    print(f"  Score Range ({scale_label}): {min_score:.0f} - {max_score:.0f} (avg: {avg_score:.0f})")
+    if use_1000:
+        from config import SCORE1000_TIER1_MIN, SCORE1000_TIER2_MIN
+        print(
+            f"  Tier 1 (>= {SCORE1000_TIER1_MIN}): {len(tier1)} | "
+            f"Tier 2 ({SCORE1000_TIER2_MIN}-{SCORE1000_TIER1_MIN - 1}): {len(tier2)} | "
+            f"Tier 3 (< {SCORE1000_TIER2_MIN}): {len(tier3)}"
+        )
+    else:
+        print(
+            f"  Tier 1 (>= {SCORE_TIER1_MIN}): {len(tier1)} | "
+            f"Tier 2 ({SCORE_TIER2_MIN}-{SCORE_TIER1_MIN - 1}): {len(tier2)} | "
+            f"Tier 3 (< {SCORE_TIER2_MIN}): {len(tier3)}"
+        )
     print(f"  Real Transaction Data: {ura_count}/{len(scored)} properties")
     print()
 
@@ -766,7 +792,8 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
                 future_str = s.future_score_details.govt_zones[0][:12]
 
         extra = f" (+{len(s.additional_urls)} more)" if s.additional_urls else ""
-        print(f"#{i:2d} [{s.total_score:4.1f}]{ura_tag} {title:<30} ${s.price/1e6:.2f}M  "
+        score_str = f"{s.score_1000:4d}" if s.score_1000 is not None else f"{s.total_score:4.1f}"
+        print(f"#{i:2d} [{score_str}]{ura_tag} {title:<30} ${s.price/1e6:.2f}M  "
               f"{apr_pct:+.0f}%/yr  {future_str}{extra}")
 
     if verbose:
@@ -784,8 +811,11 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
                 print(f"  MRT: {s.nearest_mrt} ({s.mrt_distance_m}m)")
             print()
 
-            # v2.2 Score breakdown
-            print(f"  TOTAL SCORE: {s.total_score:.1f}/100")
+            # Score breakdown
+            if s.score_1000 is not None:
+                print(f"  SCORE: {s.score_1000}/1000 (MMR {s.mmr:.0f}) | legacy {s.total_score:.1f}/100")
+            else:
+                print(f"  TOTAL SCORE: {s.total_score:.1f}/100")
             print(f"    Rental Yield:      {s.rental_yield_score:5.1f}/15")
             print(f"    Appreciation:      {s.capital_appreciation_score:5.1f}/30")
             print(f"    Future Potential:  {s.future_potential_score:5.1f}/20")
@@ -1111,6 +1141,11 @@ Examples:
 
             # Restore algo scores from breakdown (supports both old and new format)
             ab = entry.get("algo_reference") or entry.get("algo_breakdown", {})
+            # Restore MMR (v3) if present
+            if ab.get("mmr") is not None:
+                listing.mmr = ab["mmr"]
+                listing.score_1000 = ab.get("score_1000")
+                listing.mmr_components = ab.get("mmr_components", {})
             if "rental_yield" in ab and isinstance(ab["rental_yield"], dict):
                 # Old format: nested dicts with "score" key
                 listing.rental_yield_score = ab.get("rental_yield", {}).get("score", 0)
@@ -1154,7 +1189,14 @@ Examples:
             cap_fd = fd.get("appreciation", {})
             cap_info_old = entry.get("algo_breakdown", {}).get("capital_appreciation", {})
             cap_info = cap_info_old  # Keep for later score component access
-            listing.appreciation_rate = (cap_fd.get("annual_rate_pct") or cap_info_old.get("rate_pct") or 2) / 100
+            # Explicit None checks: 0% (or negative) is a legitimate rate and
+            # must not be coerced to the 2% fallback by `or`-chaining.
+            rate_pct = cap_fd.get("annual_rate_pct")
+            if rate_pct is None:
+                rate_pct = cap_info_old.get("rate_pct")
+            if rate_pct is None:
+                rate_pct = 2
+            listing.appreciation_rate = rate_pct / 100
             listing.appreciation_source = cap_fd.get("data_source") or cap_info_old.get("source") or "default"
             if entry.get("roi_sensitivity"):
                 listing.roi_sensitivity = entry.get("roi_sensitivity")
@@ -1185,16 +1227,20 @@ Examples:
             # Apply agent fields (supports both old flat format and new nested format)
             ae = entry.get("agent_evaluation", {})
             listing.agent_rating = ae.get("rating") or entry.get("agent_rating")
+            listing.agent_rating_rationale = ae.get("rating_rationale") or entry.get("agent_rating_rationale")
             listing.agent_summary = ae.get("summary") or entry.get("agent_summary")
             listing.agent_red_flags = ae.get("red_flags") or entry.get("agent_red_flags", [])
             listing.agent_catalysts = ae.get("catalysts") or entry.get("agent_catalysts", [])
             listing.agent_score_adjustment = entry.get("agent_score_adjustment", 0)  # kept at top level for backward compat
-            listing.agent_adjustment_reason = ae.get("rating_rationale") or entry.get("agent_adjustment_reason")
+            listing.agent_adjustment_reason = entry.get("agent_adjustment_reason")
             listing.agent_rental_assessment = ae.get("rental_assessment") or entry.get("agent_rental_assessment")
             listing.agent_appreciation_assessment = ae.get("appreciation_assessment") or entry.get("agent_appreciation_assessment")
             listing.agent_stack_notes = ae.get("stack_notes") or entry.get("agent_stack_notes")
             listing.agent_confidence = ae.get("confidence") or entry.get("agent_confidence")
-            listing.agent_appreciation_rate_pct = ae.get("appreciation_rate_override_pct") or entry.get("agent_appreciation_rate_pct")
+            # None check (not `or`): an explicit 0% override must be honored.
+            listing.agent_appreciation_rate_pct = ae.get("appreciation_rate_override_pct")
+            if listing.agent_appreciation_rate_pct is None:
+                listing.agent_appreciation_rate_pct = entry.get("agent_appreciation_rate_pct")
             listing.agent_appreciation_source = ae.get("appreciation_rate_source") or entry.get("agent_appreciation_source")
 
             # Apply AI appreciation override (if provided)
@@ -1206,6 +1252,17 @@ Examples:
                 if agent_rate_pct is not None:
                     listing.appreciation_rate = agent_rate_pct / 100
                     listing.appreciation_source = "agent_override"
+
+                    # Recompute MMR with the agent's appreciation rate
+                    if listing.mmr is not None:
+                        from scoring.mmr import apply_appreciation_override
+                        mmr_result = apply_appreciation_override(
+                            {"mmr": listing.mmr, "components": listing.mmr_components},
+                            agent_rate_pct,
+                        )
+                        listing.mmr = mmr_result["mmr"]
+                        listing.score_1000 = mmr_result["score_1000"]
+                        listing.mmr_components = mmr_result["components"]
 
                     # Recompute capital appreciation score using stored components
                     cap_components = cap_info.get("components", {})
@@ -1301,8 +1358,8 @@ Examples:
 
             scored.append(listing)
 
-        # Re-sort by total_score (includes agent adjustments)
-        scored.sort(key=lambda s: s.total_score, reverse=True)
+        # Re-sort by MMR when available (includes agent overrides), else legacy score
+        scored.sort(key=lambda s: s.rank_score, reverse=True)
 
         # Deduplicate: group listings from the same condo
         pre_dedup = len(scored)

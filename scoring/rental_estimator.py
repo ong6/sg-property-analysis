@@ -43,7 +43,12 @@ class RentalEstimator:
     3. Market fallback
     """
 
-    DEFAULT_RENTAL_PSF = 3.50  # Market average fallback
+    DEFAULT_RENTAL_PSF = 3.50  # Market average fallback (bedroom count unknown)
+
+    # Bedroom-aware fallback (small units rent at higher PSF — a flat rate
+    # systematically under-yields 1-2BR and over-yields 4BR+). Shape follows
+    # covered districts' bedroom_rental_psf, set slightly conservative.
+    FALLBACK_RENTAL_PSF_BY_BEDS = {1: 5.0, 2: 4.3, 3: 3.8, 4: 3.4, 5: 3.2}
 
     def __init__(self, condo_rental_data: Optional[dict] = None):
         """
@@ -133,7 +138,11 @@ class RentalEstimator:
             if d in medians:
                 return medians[d].get("rental_psf", self.DEFAULT_RENTAL_PSF), "district_median"
 
-        # Priority 4: Fallback
+        # Priority 4: Bedroom-aware fallback
+        if beds in self.FALLBACK_RENTAL_PSF_BY_BEDS:
+            return self.FALLBACK_RENTAL_PSF_BY_BEDS[beds], "fallback_bedroom"
+
+        # Priority 5: Flat fallback (bedroom count unknown)
         return self.DEFAULT_RENTAL_PSF, "fallback"
 
     def estimate_yield_score(self, listing: dict[str, Any]) -> dict:

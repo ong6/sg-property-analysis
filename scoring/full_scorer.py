@@ -642,6 +642,14 @@ class FullScorer:
 
         scored.score_breakdown = breakdown
 
+        # MMR (v3): continuous uncapped rating + /1000 normalization
+        from scoring.mmr import compute_mmr
+        mmr_result = compute_mmr(scored)
+        scored.mmr = mmr_result["mmr"]
+        scored.score_1000 = mmr_result["score_1000"]
+        scored.mmr_components = mmr_result["components"]
+        breakdown["mmr"] = mmr_result
+
         # Calculate ROI for different periods
         if scored.sqft and scored.price:
             roi_results = self.roi_calculator.calculate_multiple_periods(
@@ -994,13 +1002,18 @@ class FullScorer:
                     age_method = "percentile"
 
             if age_method == "thresholds":
-                if age <= 5:
-                    age_score = 4  # Excellent condition, modern finishes
-                elif age <= 10:
+                # v2.2 sweet spot is 3-7yr: brand-new units (<3yr) score slightly
+                # below max so they aren't double-rewarded on top of (possibly
+                # residual) new-launch appreciation inflation.
+                if age <= 2:
+                    age_score = 3  # Brand new — premium pricing risk
+                elif age <= 7:
+                    age_score = 4  # Sweet spot: modern but past launch premium
+                elif age <= 12:
                     age_score = 3  # Good condition
-                elif age <= 15:
+                elif age <= 17:
                     age_score = 2  # Aging but maintained
-                elif age <= 20:
+                elif age <= 21:
                     age_score = 1
         scores["property_age"] = {
             "built_year": built_year,
@@ -1197,6 +1210,7 @@ class FullScorer:
         """
         flags = []
         total_penalty = 0
+        result: dict[str, Any] = {}
 
         # West-facing (-1)
         facing = (listing.get("facing") or "").lower()
@@ -1251,7 +1265,7 @@ class FullScorer:
         # Flags listings priced significantly above recent market transactions.
         psf_premium_pct = self._check_psf_overpricing(listing)
         if psf_premium_pct is not None:
-            scored.score_breakdown["psf_premium_pct"] = round(psf_premium_pct, 1)
+            result["psf_premium_pct"] = round(psf_premium_pct, 1)
             if psf_premium_pct > 15:
                 flags.append({
                     "flag": "psf_overpriced",
@@ -1281,7 +1295,10 @@ class FullScorer:
         # Cap at 10
         total_penalty = min(total_penalty, 10)
 
-        return {"flags": flags, "total": total_penalty}
+        result["flags"] = flags
+        result["total"] = total_penalty
+        result["uncapped_total"] = sum(f["penalty"] for f in flags)
+        return result
 
     def _check_psf_overpricing(self, listing: dict) -> Optional[float]:
         """
@@ -1303,8 +1320,9 @@ class FullScorer:
         if not ura_entry:
             return None
 
-        # Use URA median PSF if available
-        ura_median_psf = ura_entry.get("median_psf")
+        # Use URA median PSF if available; the cache builder currently stores
+        # the current-year average PSF (avg_psf_current), so fall back to that.
+        ura_median_psf = ura_entry.get("median_psf") or ura_entry.get("avg_psf_current")
         if not ura_median_psf or ura_median_psf <= 0:
             return None
 
@@ -1428,7 +1446,7 @@ def score_listings(
         cohort_stats=cohort_stats,
     )
     scored = [scorer.score(listing) for listing in listings]
-    scored.sort(key=lambda x: x.total_score, reverse=True)
+    scored.sort(key=lambda x: x.rank_score, reverse=True)
     return scored
 
 
@@ -1484,7 +1502,7 @@ def score_and_filter(
         cohort_stats=cohort_stats,
     )
     scored = [scorer.score(listing) for listing in to_score]
-    scored.sort(key=lambda x: x.total_score, reverse=True)
+    scored.sort(key=lambda x: x.rank_score, reverse=True)
 
     return {
         "scored": scored,

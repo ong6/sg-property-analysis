@@ -342,8 +342,8 @@ class TestFullScorer:
         scored = score_listings(listings)
 
         assert len(scored) == 2
-        # Should be sorted by score descending
-        assert scored[0].total_score >= scored[1].total_score
+        # Should be sorted by rank score (MMR when available) descending
+        assert scored[0].rank_score >= scored[1].rank_score
 
 
 class TestROICalculation:
