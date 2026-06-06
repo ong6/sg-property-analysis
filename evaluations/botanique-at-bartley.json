@@ -309,6 +309,75 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500021710",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-06",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Own-stay evaluation of a 721 sqft 2BR (converted Flexi) at Botanique at Bartley, asking $1,488,888 with agent-indicated nego floor of $1.45M ($2,011 psf). Physical viewing CONFIRMED the development's known red flag: loud expressway (PIE/Upper Paya Lebar Rd) noise — this unit is on a road-facing stack. Unit is well maintained with ID done (incl. custom cat carpentry). Fairly priced at $1.45M but not a bargain once the confirmed noise defect is priced in; better-value alternatives exist in the same development.",
+      "rating_rationale": "The prior evaluation (3 days ago) rated this exact listing Neutral at ask, upgradeable to Buy at $1.42-1.45M *with floor/facing confirmed* — the viewing resolved that condition NEGATIVELY: noise is 'quite loud'. At $1.45M ($2,011 psf) the price sits ~2-5% below the 2026 transacted band for this size cluster ($2,059-2,131 psf) — a real discount, but roughly equal to the standard noisy-facing discount, so you are paying fair value for a defective facing, not getting a deal. For OWN-STAY the noise is a daily quality-of-life tax (windows closed permanently, balcony of limited use — resident reviews echo this) and the same discount will be demanded by your future buyer on exit. Offsets: ID done + well maintained saves ~$50-80k and months of reno; 5-min walk to Bartley MRT; liquid 797-unit UOL development. Net: Neutral at $1.45M. Becomes a defensible own-stay buy at ~$1.40-1.42M ($1,942-1,970 psf), where the noise is genuinely priced in — or skip to a quieter inner stack / the 743 sqft comp at $1,992 psf.",
+      "red_flags": [
+        "CONFIRMED by physical visit: loud highway noise (PIE / Upper Paya Lebar Rd) — road-facing stack; resident reviews corroborate ('Why are there balconies if you can't even sit there cause of the noise')",
+        "Noise is a resale drag: the discount you demand now, your future buyer demands later — exit friction is structural to this stack",
+        "Converted 2BR Flexi (dual-key origin) layout — verify the conversion is clean and reversible; niche vs a true 2BR on resale",
+        "ID/renovation value is taste-specific — built-in cat carpentry only adds value to a pet owner; removal costs money if not wanted",
+        "Better value live in the same development: 743 sqft 2BR at ~$1.48M ($1,992 psf, larger + cheaper psf) and a 721 sqft twin at $1.48M ($2,053 psf) — facing unverified on both",
+        "Gross yield ~3.2% at $1.45M — weak fallback if own-stay plans change",
+        "99yr leasehold (~88yr remaining) — lease decay irrelevant short-term but matters on eventual resale decades out"
+      ],
+      "catalysts": [
+        "5-min walk (~400m) to Bartley MRT (CC12, Circle Line) — own-stay convenience and permanent resale support",
+        "2026 momentum: development averaging $2,176 psf over 10 resale transactions YTD, after April 2026 high of $2,407 psf",
+        "Liquid, well-regarded 797-unit UOL development — deep buyer pool at the ~$1.4-1.5M quantum",
+        "ID done + well maintained — move-in ready, saves ~$50-80k and 2-3 months of renovation (if the style suits)",
+        "Maris Stella High School (primary + secondary) within 1km — schooling catalyst for own-stay families"
+      ],
+      "as_of": {
+        "price": 1488888,
+        "psf": 2065,
+        "beds": 2,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.3,
+        "appreciation_source": "ura_district_5yr_cagr",
+        "gross_yield_pct": 2.32,
+        "nearest_mrt": null,
+        "tenure": "L99",
+        "remaining_lease": 90
+      },
+      "agent_evaluation": {
+        "summary": "Own-stay evaluation of a 721 sqft 2BR (converted Flexi) at Botanique at Bartley, asking $1,488,888 with agent-indicated nego floor of $1.45M ($2,011 psf). Physical viewing CONFIRMED the development's known red flag: loud expressway (PIE/Upper Paya Lebar Rd) noise — this unit is on a road-facing stack. Unit is well maintained with ID done (incl. custom cat carpentry). Fairly priced at $1.45M but not a bargain once the confirmed noise defect is priced in; better-value alternatives exist in the same development.",
+        "rating": "Neutral",
+        "rating_rationale": "The prior evaluation (3 days ago) rated this exact listing Neutral at ask, upgradeable to Buy at $1.42-1.45M *with floor/facing confirmed* — the viewing resolved that condition NEGATIVELY: noise is 'quite loud'. At $1.45M ($2,011 psf) the price sits ~2-5% below the 2026 transacted band for this size cluster ($2,059-2,131 psf) — a real discount, but roughly equal to the standard noisy-facing discount, so you are paying fair value for a defective facing, not getting a deal. For OWN-STAY the noise is a daily quality-of-life tax (windows closed permanently, balcony of limited use — resident reviews echo this) and the same discount will be demanded by your future buyer on exit. Offsets: ID done + well maintained saves ~$50-80k and months of reno; 5-min walk to Bartley MRT; liquid 797-unit UOL development. Net: Neutral at $1.45M. Becomes a defensible own-stay buy at ~$1.40-1.42M ($1,942-1,970 psf), where the noise is genuinely priced in — or skip to a quieter inner stack / the 743 sqft comp at $1,992 psf.",
+        "red_flags": [
+          "CONFIRMED by physical visit: loud highway noise (PIE / Upper Paya Lebar Rd) — road-facing stack; resident reviews corroborate ('Why are there balconies if you can't even sit there cause of the noise')",
+          "Noise is a resale drag: the discount you demand now, your future buyer demands later — exit friction is structural to this stack",
+          "Converted 2BR Flexi (dual-key origin) layout — verify the conversion is clean and reversible; niche vs a true 2BR on resale",
+          "ID/renovation value is taste-specific — built-in cat carpentry only adds value to a pet owner; removal costs money if not wanted",
+          "Better value live in the same development: 743 sqft 2BR at ~$1.48M ($1,992 psf, larger + cheaper psf) and a 721 sqft twin at $1.48M ($2,053 psf) — facing unverified on both",
+          "Gross yield ~3.2% at $1.45M — weak fallback if own-stay plans change",
+          "99yr leasehold (~88yr remaining) — lease decay irrelevant short-term but matters on eventual resale decades out"
+        ],
+        "catalysts": [
+          "5-min walk (~400m) to Bartley MRT (CC12, Circle Line) — own-stay convenience and permanent resale support",
+          "2026 momentum: development averaging $2,176 psf over 10 resale transactions YTD, after April 2026 high of $2,407 psf",
+          "Liquid, well-regarded 797-unit UOL development — deep buyer pool at the ~$1.4-1.5M quantum",
+          "ID done + well maintained — move-in ready, saves ~$50-80k and 2-3 months of renovation (if the style suits)",
+          "Maris Stella High School (primary + secondary) within 1km — schooling catalyst for own-stay families"
+        ],
+        "rental_assessment": "Secondary for own-stay, but relevant as fallback optionality: 2BR at Botanique realistically rents $3,800-4,000/mo (algo's $2,884 district-average estimate is too low for this project), giving ~3.2% gross at $1.45M — below the 4% bar. Tenant demand is steady (Bartley MRT, quiet enclave) but a noisy unit also rents at a discount and churns tenants faster.",
+        "appreciation_assessment": "URA D19 5yr CAGR is 5.3% (264 transactions, high confidence) but that includes the 2021-2023 boom; post-2023 the pace has cooled. Development is at an all-time-high psf in 2026 ($2,176 avg, $2,407 peak) with no fresh catalyst (Circle Line already operational, no new MRT or transformation zone). Realistic forward rate ~4-4.5%/yr for the project — and road-facing stacks historically lag the development average. Entry at $2,011 psf (below the $2,059-2,131 band) provides some buffer.",
+        "stack_notes": "Visit-confirmed: this unit is on a noisy road/expressway-facing stack — exactly the stacks the prior development-level evaluation said to avoid. The stacks to target at Botanique are the inner, landscape/garden-facing ones away from Upper Paya Lebar Rd and Bartley Rd. If own-stay comfort is the priority, viewing a quieter inner-stack 2BR (e.g. the 743 sqft at $1,992 psf) before committing is the single highest-value next step. Mitigation if proceeding: budget ~$10-20k for secondary/soundproof glazing (check MCST rules) and assume windows stay closed (higher aircon bills).",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA D19 5yr CAGR 5.3% tempered for post-2023 cooling and noisy-stack drag; cross-checked against 2026 dev-wide $2,176 avg psf (10 transactions) and 2BR transacted band $2,059-2,131 psf"
+      },
+      "source": {
+        "run_dir": "output/run_030_500082966",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

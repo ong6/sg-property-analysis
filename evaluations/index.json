@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-06-06",
   "condos": {
     "skysuites-anson": {
       "condo": "Skysuites @ Anson",
@@ -32,9 +32,9 @@
     "botanique-at-bartley": {
       "condo": "Botanique at Bartley",
       "district": "D19",
-      "latest_rating": "Avoid",
-      "latest_date": "2026-06-03",
-      "eval_count": 5
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-06",
+      "eval_count": 6
     },
     "waterfront-waves": {
       "condo": "Waterfront Waves",
