@@ -652,9 +652,17 @@ def deduplicate_by_project(scored: list[ScoredListing]) -> list[ScoredListing]:
             seen[key] = listing
             result.append(listing)
         else:
-            # Append this listing's URL to the primary entry
             primary = seen[key]
-            if listing.url and listing.url not in primary.additional_urls:
+            if listing.agent_rating and not primary.agent_rating:
+                # Never let an unrated sibling hide a rated one: the agent-rated
+                # listing becomes the primary; the old primary's URLs are kept.
+                merged = [u for u in [primary.url, *primary.additional_urls]
+                          if u and u != listing.url and u not in listing.additional_urls]
+                listing.additional_urls = listing.additional_urls + merged
+                result[result.index(primary)] = listing
+                seen[key] = listing
+            elif listing.url and listing.url not in primary.additional_urls:
+                # Append this listing's URL to the primary entry
                 primary.additional_urls.append(listing.url)
 
     return result
