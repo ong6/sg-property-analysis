@@ -25,7 +25,8 @@ BASE = {
 
 class TestNormalization:
     def test_center_maps_to_500(self):
-        assert normalize_mmr(1500) == 500
+        from config import MMR_NORM_CENTER
+        assert normalize_mmr(MMR_NORM_CENTER) == 500
 
     def test_monotonic(self):
         assert normalize_mmr(1400) < normalize_mmr(1500) < normalize_mmr(1600)
