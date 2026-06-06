@@ -131,13 +131,17 @@ class QuickScorer:
             age = current_year - built_year
             if age < 0:
                 age = 0
-            if age <= 5:
-                age_score = 10  # Excellent condition
-            elif age <= 10:
+            # 3-7yr sweet spot (matches full scorer): brand-new units score
+            # slightly below max to avoid double-rewarding launch-premium pricing.
+            if age <= 2:
+                age_score = 8   # Brand new — premium pricing risk
+            elif age <= 7:
+                age_score = 10  # Sweet spot
+            elif age <= 12:
                 age_score = 8   # Good condition
-            elif age <= 15:
+            elif age <= 17:
                 age_score = 5   # Aging
-            elif age <= 20:
+            elif age <= 21:
                 age_score = 3
         score += age_score
         breakdown["property_age"] = {

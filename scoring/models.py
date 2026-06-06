@@ -15,10 +15,17 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 try:
-    from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
+    from config import (
+        SCORE_TIER1_MIN,
+        SCORE_TIER2_MIN,
+        SCORE1000_TIER1_MIN,
+        SCORE1000_TIER2_MIN,
+    )
 except ImportError:
     SCORE_TIER1_MIN = 60
     SCORE_TIER2_MIN = 45
+    SCORE1000_TIER1_MIN = 650
+    SCORE1000_TIER2_MIN = 450
 
 
 # Map the AI's 4-point rating onto a clear, simple verdict for the final report.
@@ -31,10 +38,25 @@ _VERDICT_MAP = {
 
 
 def verdict_from_rating(rating: Optional[str]) -> Optional[str]:
-    """Collapse a rating (Strong Buy/Buy/Neutral/Avoid) to BUY / NEUTRAL / AVOID."""
+    """Collapse a rating (Strong Buy/Buy/Neutral/Avoid) to BUY / NEUTRAL / AVOID.
+
+    Unknown labels degrade honestly: negative phrasing maps to AVOID, then
+    buy-ish to BUY, hold-ish to NEUTRAL, and anything else to None (no verdict)
+    rather than silently coercing to NEUTRAL.
+    """
     if not rating:
         return None
-    return _VERDICT_MAP.get(rating.strip().lower(), "NEUTRAL")
+    key = rating.strip().lower()
+    if key in _VERDICT_MAP:
+        return _VERDICT_MAP[key]
+    # Negative phrasings first — they may contain the word "buy".
+    if any(neg in key for neg in ("avoid", "sell", "no buy", "no-buy", "don't buy", "do not buy", "pass")):
+        return "AVOID"
+    if "buy" in key:
+        return "BUY"
+    if "neutral" in key or "hold" in key:
+        return "NEUTRAL"
+    return None
 
 
 @dataclass
@@ -253,6 +275,16 @@ class ScoredListing:
     # Future score details
     future_score_details: Optional[FutureScore] = None
 
+    # MMR scoring (v3): uncapped continuous rating + /1000 normalization
+    mmr: Optional[float] = None
+    score_1000: Optional[int] = None
+    mmr_components: dict = field(default_factory=dict)
+
+    @property
+    def rank_score(self) -> float:
+        """Preferred sort key: raw MMR when available, else legacy total."""
+        return self.mmr if self.mmr is not None else self.total_score
+
     @property
     def total_score(self) -> float:
         """Calculate total score with v2.1 weights (no URA bias).
@@ -273,7 +305,13 @@ class ScoredListing:
 
     @property
     def final_tier(self) -> int:
-        """Tier based on total score (post agent adjustment)."""
+        """Tier from the /1000 MMR scale when available, else the legacy score."""
+        if self.score_1000 is not None:
+            if self.score_1000 >= SCORE1000_TIER1_MIN:
+                return 1
+            if self.score_1000 >= SCORE1000_TIER2_MIN:
+                return 2
+            return 3
         if self.total_score >= SCORE_TIER1_MIN:
             return 1
         if self.total_score >= SCORE_TIER2_MIN:
@@ -335,6 +373,7 @@ class ScoredListing:
 
     # Agent review fields (filled by AI agent, empty by default)
     agent_rating: Optional[str] = None  # "Strong Buy" / "Buy" / "Neutral" / "Avoid"
+    agent_rating_rationale: Optional[str] = None  # why this rating (always rendered)
     agent_summary: Optional[str] = None
     agent_red_flags: list[str] = field(default_factory=list)
     agent_catalysts: list[str] = field(default_factory=list)
@@ -358,6 +397,11 @@ class ScoredListing:
             "final_tier": self.final_tier,
             "has_ura_data": self.has_ura_data,
         }
+        if self.mmr is not None:
+            result["mmr"] = round(self.mmr, 1)
+            result["score_1000"] = self.score_1000
+            if self.mmr_components:
+                result["mmr_components"] = self.mmr_components
 
         # Add optional fields if present
         optional_fields = [
@@ -454,6 +498,7 @@ class ScoredListing:
             result["agent"] = {
                 "rating": self.agent_rating,
                 "verdict": verdict_from_rating(self.agent_rating),
+                "rating_rationale": self.agent_rating_rationale,
                 "summary": self.agent_summary,
                 "red_flags": self.agent_red_flags,
                 "catalysts": self.agent_catalysts,

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-06-06",
   "listings": {
     "60147887": {
       "id": "60147887",
@@ -39,8 +39,8 @@
     "500082966": {
       "id": "500082966",
       "first_seen": "2026-06-02",
-      "last_seen": "2026-06-03",
-      "times_seen": 4,
+      "last_seen": "2026-06-06",
+      "times_seen": 5,
       "status": "active",
       "price_history": [
         {
@@ -50,8 +50,8 @@
         }
       ],
       "source": {
-        "flow": "condo",
-        "condo": "Botanique at Bartley"
+        "flow": "url",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966"
       },
       "title": "Botanique at Bartley",
       "project_name": "Botanique at Bartley",
@@ -60,7 +60,7 @@
       "sqft": 721.0,
       "price": 1488888,
       "property_type": "Condominium",
-      "tenure": "99-year Leasehold",
+      "tenure": "L99",
       "listing_agent": "Wendy Kwok",
       "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966",
       "district": "D19",

@@ -27,15 +27,22 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     lines.append(f"### {rank_str}{listing.title}")
 
     # Clear AI verdict + confidence (the headline call), with the technical score as backup
+    if listing.score_1000 is not None:
+        tech_str = f"Technical score: {listing.score_1000}/1000 · MMR {listing.mmr:.0f} ({listing.final_tier_label})"
+    else:
+        tech_str = f"Technical score: {listing.total_score:.1f}/100 ({listing.final_tier_label})"
     verdict = verdict_from_rating(listing.agent_rating)
     if verdict:
         badge = {"BUY": "🟢 BUY", "NEUTRAL": "🟡 NEUTRAL", "AVOID": "🔴 AVOID (no buy)"}.get(verdict, verdict)
         conf = (listing.agent_confidence or "unrated").lower()
         rating_detail = f" ({listing.agent_rating})" if listing.agent_rating else ""
         lines.append(f"> ## {badge}{rating_detail}")
-        lines.append(f"> **AI confidence: {conf}** · Technical score: {listing.total_score:.1f}/100 ({listing.final_tier_label})")
+        lines.append(f"> **AI confidence: {conf}** · {tech_str}")
+        if listing.agent_rating_rationale:
+            lines.append(f">")
+            lines.append(f"> {listing.agent_rating_rationale}")
     else:
-        lines.append(f"**Technical Score: {listing.total_score:.1f}/100** | {listing.final_tier_label}")
+        lines.append(f"**{tech_str}**")
         lines.append("*(No AI verdict yet — run the agent review to get a Buy / Neutral / Avoid call.)*")
     lines.append("")
 
@@ -87,16 +94,23 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
             lines.append(f"| {j} | {v_price} | {v_psf} | {v_sqft} | {v_floor} | {v_facing} | {v_url} |")
         lines.append("")
 
-    # Score breakdown (v2.1)
-    lines.append("**Score Breakdown:**")
-    lines.append(f"- Rental Yield: {listing.rental_yield_score:.1f}/15")
-    lines.append(f"- Capital Appreciation: {listing.capital_appreciation_score:.1f}/30")
-    lines.append(f"- Future Potential: {listing.future_potential_score:.1f}/20")
-    lines.append(f"- Liquidity: {listing.liquidity_score:.1f}/25")
-    lines.append(f"- Cost Efficiency: {listing.cost_efficiency_score:.1f}/10")
-    if listing.red_flag_deductions > 0:
-        lines.append(f"- Red Flags: -{listing.red_flag_deductions:.1f}")
-    lines.append("")
+    # Score breakdown
+    if listing.mmr_components:
+        lines.append(f"**MMR Breakdown** *(base 1500; positive helps, negative hurts)*:")
+        comps = sorted(listing.mmr_components.items(), key=lambda kv: -abs(kv[1]))
+        parts = [f"{name} {val:+.1f}" for name, val in comps if val != 0]
+        lines.append("- " + " · ".join(parts) if parts else "- all components neutral")
+        lines.append("")
+    else:
+        lines.append("**Score Breakdown:**")
+        lines.append(f"- Rental Yield: {listing.rental_yield_score:.1f}/15")
+        lines.append(f"- Capital Appreciation: {listing.capital_appreciation_score:.1f}/30")
+        lines.append(f"- Future Potential: {listing.future_potential_score:.1f}/20")
+        lines.append(f"- Liquidity: {listing.liquidity_score:.1f}/25")
+        lines.append(f"- Cost Efficiency: {listing.cost_efficiency_score:.1f}/10")
+        if listing.red_flag_deductions > 0:
+            lines.append(f"- Red Flags: -{listing.red_flag_deductions:.1f}")
+        lines.append("")
 
     # Future catalysts
     if listing.future_score_details:
@@ -263,7 +277,7 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
         for i, listing in enumerate(listings[:20], 1):
             price = format_currency(listing.price)
             psf = format_currency(listing.psf) if listing.psf else "-"
-            score = f"{listing.total_score:.1f}"
+            score = str(listing.score_1000) if listing.score_1000 is not None else f"{listing.total_score:.1f}"
             yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
             beds_str = f"{listing.beds}BR" if listing.beds else "-"
             unit_count = listing.unit_summary.get("count", 1) if listing.unit_summary else 1
@@ -278,7 +292,7 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
         for i, listing in enumerate(listings[:20], 1):
             price = format_currency(listing.price)
             psf = format_currency(listing.psf) if listing.psf else "-"
-            score = f"{listing.total_score:.1f}"
+            score = str(listing.score_1000) if listing.score_1000 is not None else f"{listing.total_score:.1f}"
             yield_pct = format_percent(listing.estimated_gross_yield) if listing.estimated_gross_yield else "-"
             roi_5 = format_percent(listing.roi_5yr.annualized_roi) if listing.roi_5yr else "-"
             verdict = _verdict_label(listing)
@@ -377,20 +391,25 @@ def generate_report(
         for i, listing in enumerate(listings[:max_detailed], 1):
             lines.append(generate_listing_card(listing, rank=i))
 
-    # Methodology note (v2.1)
+    # Methodology note (v3 MMR)
     lines.append("## Scoring Methodology")
     lines.append("")
-    lines.append("Properties are scored on a 100-point scale optimized for 5-7 year investment.")
-    lines.append("Real transaction data is used when available; default rates are capped to avoid over-scoring.")
+    lines.append("Technical score is an **MMR** (Elo-style, base 1500, uncapped) built from")
+    lines.append("continuous metrics, normalized onto a **0-1000 display scale** (500 = market-typical;")
+    lines.append("650+ recommended tier, <450 below threshold). Components, roughly by weight:")
     lines.append("")
-    lines.append("| Category | Weight | Description |")
-    lines.append("|----------|--------|-------------|")
-    lines.append("| Rental Yield | 15 pts | Gross yield, MRT proximity, unit config, tenant pool |")
-    lines.append("| Capital Appreciation | 30 pts | Real appreciation rate, PSF vs median, tenure, age |")
-    lines.append("| Future Potential | 20 pts | Upcoming MRT, govt zones, transformation |")
-    lines.append("| Liquidity | 25 pts | Transaction volume, buyer pool depth, dev size, price appeal |")
-    lines.append("| Cost Efficiency | 10 pts | MCST, property tax, space efficiency |")
-    lines.append("| Red Flags | -10 pts | West-facing, small dev, low lease, old property |")
+    lines.append("| Component | Driver |")
+    lines.append("|-----------|--------|")
+    lines.append("| Appreciation | URA rate vs 4%/yr baseline, confidence-weighted by transaction count |")
+    lines.append("| PSF value | Symmetric: discount vs URA market PSF adds, premium subtracts |")
+    lines.append("| Yield | Gross yield vs 3.2% baseline |")
+    lines.append("| Liquidity | Transaction volume, buyer pool, development size, price band |")
+    lines.append("| Future | Upcoming MRT, govt zones, transformation |")
+    lines.append("| Lease/Age | Continuous decay; 3-7yr age sweet spot |")
+    lines.append("| Red flags | West-facing, suspicious PSF, oversized/mismatched layout |")
+    lines.append("")
+    lines.append("Missing data is neutral (0), never penalized. The technical score is one input —")
+    lines.append("the AI verdict above is the actual recommendation.")
     lines.append("")
 
     # Agent methodology notes (from AI agent review)

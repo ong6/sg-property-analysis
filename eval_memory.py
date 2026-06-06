@@ -292,8 +292,11 @@ def print_recall(name: str) -> None:
                   f"{as_of.get('beds') or '?'}BR  [{note}]")
             if h.get("summary"):
                 print(f"      {h['summary']}")
+            # Show both sides so the recall doesn't anchor negatively or positively
             if h.get("red_flags"):
                 print(f"      red flags: {'; '.join(h['red_flags'])}")
+            if h.get("catalysts"):
+                print(f"      catalysts: {'; '.join(h['catalysts'])}")
 
 
 def print_index() -> None:
