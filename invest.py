@@ -997,6 +997,10 @@ Examples:
     parser.add_argument("--score", type=str, metavar="JSON",
                        help="Score a condo from a JSON dict of key value-drivers (AI-callable technical scorer). "
                             "Accepts inline JSON or @file.json. Prints the technical score breakdown as JSON.")
+    parser.add_argument("--fight", action="store_true",
+                       help="Condo arena: pairwise round-robin value tournament over the listings DB "
+                            "(respects --districts/--beds/--min-price/--max-price filters). "
+                            "Outputs Elo ranking, Pareto frontier, and champion.")
     parser.add_argument("--url", type=str,
                        help="PropertyGuru URL: a single listing, a results/list page, or a project page")
     parser.add_argument("--url-max-pages", type=int, default=5,
@@ -1107,6 +1111,58 @@ Examples:
             sys.exit(1)
         result = score_condo(score_inputs, ura_data=load_ura_cache())
         print(json.dumps(result, indent=2, ensure_ascii=False))
+        return
+
+    # --- Condo arena: pairwise value tournament over the listings DB ---
+    if args.fight:
+        warn_if_stale_data()
+        from scoring.full_scorer import FullScorer, build_cohort_stats
+        from scoring.arena import run_arena, format_arena_report
+
+        with open(os.path.join("data", "listings_db.json")) as f:
+            db = json.load(f)
+        raw_listings = db.get("listings", {})
+        if isinstance(raw_listings, dict):
+            raw_listings = list(raw_listings.values())
+
+        # Filters (reuse standard args)
+        want_districts = None
+        if args.districts:
+            want_districts = {f"D{int(d):02d}" for d in args.districts.split(",")}
+        want_beds = {int(b) for b in args.beds.split(",")} if args.beds else None
+
+        usable = []
+        for l in raw_listings:
+            if not (l.get("price") and l.get("sqft") and l.get("psf")):
+                continue
+            if want_districts and (l.get("district") or "").upper() not in want_districts:
+                continue
+            if want_beds and l.get("beds") not in want_beds:
+                continue
+            if args.min_price and l["price"] < args.min_price:
+                continue
+            if args.max_price and l["price"] > args.max_price:
+                continue
+            usable.append(l)
+
+        if len(usable) < 2:
+            print(f"Arena needs >=2 usable listings after filters (got {len(usable)})", file=sys.stderr)
+            return
+
+        print(f"\nArena: scoring {len(usable)} listings...", file=sys.stderr)
+        ura = load_ura_cache()
+        scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(usable))
+        scored_all = [scorer.score(l) for l in usable]
+
+        fighters = run_arena(scored_all)
+        report = format_arena_report(fighters)
+
+        out_dir = Path("output")
+        out_dir.mkdir(exist_ok=True)
+        out_path = out_dir / "arena_latest.md"
+        out_path.write_text(report)
+        print(report)
+        print(f"\nArena report saved: {out_path}", file=sys.stderr)
         return
 
     # --- Evaluation memory handlers (git-tracked past evaluations) ---
