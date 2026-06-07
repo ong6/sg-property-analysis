@@ -16,7 +16,7 @@ import time
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from statistics import mean
+from statistics import mean, median
 from typing import Optional
 
 
@@ -34,6 +34,7 @@ class URATransaction:
     district: int
     market_segment: str  # "CCR", "RCR", "OCR"
     floor_level: str
+    num_units: int = 1  # >1 = bulk/en-bloc sale (excluded from PSF metrics)
 
     @property
     def sale_year(self) -> int:
@@ -132,7 +133,13 @@ class URATransactionHistory:
         self._calculate_resale_metrics(resale_txns, current_year)
 
     def _calculate_yearly_metrics(self, transactions: list, current_year: int):
-        """Calculate year-based appreciation metrics from a set of transactions."""
+        """Calculate year-based appreciation metrics from a set of transactions.
+
+        Uses the MEDIAN PSF per year (robust to penthouse/ground-floor and
+        fat-finger outliers — a single outlier in a sparse year used to swing
+        the CAGR endpoint). Bulk/en-bloc rows and unparseable dates are
+        excluded from the series.
+        """
         if not transactions:
             return
 
@@ -140,13 +147,17 @@ class URATransactionHistory:
         by_year: dict[int, list[float]] = {}
         for txn in transactions:
             year = txn.sale_year
+            if year <= 0:
+                continue  # unparseable date — don't let year 0 anchor the series
+            if getattr(txn, "num_units", 1) > 1:
+                continue  # en-bloc/bulk sale PSF is not market PSF
             if year not in by_year:
                 by_year[year] = []
             by_year[year].append(txn.psf)
 
-        # Calculate average PSF by year
+        # Median PSF by year (robust to outliers)
         avg_by_year = {
-            year: mean(psfs) for year, psfs in by_year.items() if psfs
+            year: median(psfs) for year, psfs in by_year.items() if psfs
         }
 
         # Current year or most recent
@@ -171,9 +182,11 @@ class URATransactionHistory:
                 break
 
         # 5 years ago
+        selected_5yr_year = None
         for year in range(current_year - 5, current_year - 7, -1):
             if year in avg_by_year:
                 self.avg_psf_5yr_ago = avg_by_year[year]
+                selected_5yr_year = year
                 break
 
         # Calculate appreciation rates
@@ -191,9 +204,18 @@ class URATransactionHistory:
             self.appreciation_5yr = (
                 (self.avg_psf_current_year / self.avg_psf_5yr_ago) - 1
             ) * 100
-            # Annualized appreciation (CAGR)
+            # Annualized appreciation (CAGR) over the ACTUAL span between the
+            # selected endpoint years. Both endpoints have fallback windows, so
+            # the real span can be 3-6 years; dividing by a hardcoded 5 skewed
+            # the per-year rate whenever a fallback year was used.
+            span = (
+                (selected_current_year - selected_5yr_year)
+                if selected_current_year and selected_5yr_year
+                else 5
+            )
+            span = max(1, span)
             self.annualized_appreciation = (
-                ((self.avg_psf_current_year / self.avg_psf_5yr_ago) ** (1/5)) - 1
+                ((self.avg_psf_current_year / self.avg_psf_5yr_ago) ** (1 / span)) - 1
             ) * 100
 
     def _calculate_momentum(self):
@@ -257,16 +279,19 @@ class URATransactionHistory:
             # Need at least 5 resale transactions for statistically meaningful CAGR
             return
 
-        # Group resale transactions by year
+        # Group resale transactions by year (same robustness rules as overall:
+        # median PSF, skip year-0 dates and bulk/en-bloc rows)
         by_year: dict[int, list[float]] = {}
         for txn in resale_txns:
             year = txn.sale_year
+            if year <= 0 or getattr(txn, "num_units", 1) > 1:
+                continue
             if year not in by_year:
                 by_year[year] = []
             by_year[year].append(txn.psf)
 
         avg_by_year = {
-            year: mean(psfs) for year, psfs in by_year.items() if psfs
+            year: median(psfs) for year, psfs in by_year.items() if psfs
         }
 
         if len(avg_by_year) < 2:
@@ -311,6 +336,15 @@ def parse_ura_csv(csv_content: str) -> list[URATransaction]:
             district_str = row.get('Postal District', '0')
             district = int(district_str) if district_str.isdigit() else 0
 
+            # Parse number of units — >1 means a bulk/en-bloc transaction whose
+            # PSF carries a collective-sale premium and must not enter market
+            # PSF series (column name varies across URA export versions)
+            units_str = (row.get('Number of Units') or row.get('No. of Units') or '1').replace(',', '')
+            try:
+                num_units = int(float(units_str)) if units_str else 1
+            except ValueError:
+                num_units = 1
+
             txn = URATransaction(
                 project_name=row.get('Project Name', ''),
                 price=price,
@@ -323,6 +357,7 @@ def parse_ura_csv(csv_content: str) -> list[URATransaction]:
                 district=district,
                 market_segment=row.get('Market Segment', ''),
                 floor_level=row.get('Floor Level', ''),
+                num_units=max(1, num_units),
             )
 
             if txn.price > 0 and txn.psf > 0:
@@ -539,7 +574,11 @@ class URAScraper:
 
 def load_ura_csv(csv_path: str) -> URATransactionHistory:
     """
-    Load and parse a pre-downloaded URA CSV file.
+    Load and parse a pre-downloaded URA CSV file as a SINGLE project history.
+
+    ⚠ Only valid for single-project CSV exports. District-wide exports contain
+    many projects — use load_ura_csv_grouped() for those; this function would
+    mix cross-project PSF under one arbitrary project name.
 
     Args:
         csv_path: Path to CSV file
@@ -555,6 +594,14 @@ def load_ura_csv(csv_path: str) -> URATransactionHistory:
     if not transactions:
         return URATransactionHistory(project_name="Unknown", transactions=[])
 
+    project_names = {t.project_name.strip() for t in transactions if t.project_name.strip()}
+    if len(project_names) > 1:
+        print(
+            f"  ⚠ {csv_path}: {len(project_names)} projects in one CSV — "
+            "load_ura_csv() mixes them; use load_ura_csv_grouped()",
+            file=sys.stderr,
+        )
+
     # Get project name from first transaction
     project_name = transactions[0].project_name
 
@@ -565,6 +612,34 @@ def load_ura_csv(csv_path: str) -> URATransactionHistory:
     history.calculate_metrics()
 
     return history
+
+
+def load_ura_csv_grouped(csv_path: str) -> list[URATransactionHistory]:
+    """Load a URA CSV and return one history PER PROJECT.
+
+    District CSV exports hold many projects. The old single-history path
+    averaged every project's PSF together and cached it under one arbitrary
+    name — silently corrupting appreciation for the whole district.
+    """
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        csv_content = f.read()
+
+    transactions = parse_ura_csv(csv_content)
+
+    by_project: dict[str, list[URATransaction]] = {}
+    for txn in transactions:
+        name = txn.project_name.strip()
+        if name:
+            by_project.setdefault(name, []).append(txn)
+
+    histories = []
+    for name, txns in by_project.items():
+        history = URATransactionHistory(project_name=name, transactions=txns)
+        history.calculate_metrics()
+        histories.append(history)
+
+    histories.sort(key=lambda h: h.transaction_count, reverse=True)
+    return histories
 
 
 if __name__ == "__main__":

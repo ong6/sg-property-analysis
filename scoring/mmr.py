@@ -168,6 +168,16 @@ def compute_mmr(scored: Any) -> dict:
     # --- Cost efficiency (recentred from the 0-10 score) ---
     comps["cost"] = round(scored.cost_efficiency_score - 5.0, 2)
 
+    # --- Age-adjusted relative value vs district peers (symmetric) ---
+    # Distinct signal from psf_value (which compares against the SAME
+    # project's transactions): this asks whether the unit is cheap or dear
+    # for its age against the district's peer projects, normalized at a
+    # region-dependent $/psf/yr age slope. Weighted below psf_value since
+    # the slope is a heuristic.
+    rel = sb.get("relative_value") or {}
+    rel_premium = rel.get("premium_vs_age_adjusted_median_pct")
+    comps["age_value"] = round(-0.4 * rel_premium, 2) if rel_premium is not None else 0.0
+
     # --- Unique red flags only (others are continuous components above) ---
     flags = sb_flags.get("flags", [])
     unique_penalty = sum(f.get("penalty", 0) for f in flags if f.get("flag") in _UNIQUE_FLAGS)

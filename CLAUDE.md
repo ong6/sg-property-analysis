@@ -42,6 +42,9 @@ used, and ask if intent is unclear.
   evidence only.
 - **`--score` circularity.** If you feed it your own rate/rent, the result
   validates internal consistency, not your inputs.
+- **Value is age-relative.** Don't compare a resale's PSF to a new launch's
+  directly — use `factual_data.relative_value` (age-adjusted at ~$50/psf/yr,
+  region-dependent) to judge whether old vs new is the better value.
 
 Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**.
 

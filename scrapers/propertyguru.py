@@ -171,8 +171,17 @@ DOM_EXTRACT_JS = """
             // Price
             const priceEl = card.querySelector('[da-id="listing-card-v2-price"]');
             const priceText = priceEl?.textContent?.trim() || '';
-            const priceMatch = priceText.replace(/,/g, '').match(/(\\d+)/);
-            listing.price = priceMatch ? parseInt(priceMatch[1]) : 0;
+            // Handle "$1.23M" / "$950K" abbreviations — the old integer-only
+            // match read "$1.23M" as 1.
+            const priceMatch = priceText.replace(/,/g, '').match(/(\\d+(?:\\.\\d+)?)\\s*([mMkK])?/);
+            let priceVal = 0;
+            if (priceMatch) {
+                priceVal = parseFloat(priceMatch[1]);
+                const suffix = (priceMatch[2] || '').toLowerCase();
+                if (suffix === 'm') priceVal *= 1000000;
+                else if (suffix === 'k') priceVal *= 1000;
+            }
+            listing.price = Math.round(priceVal);
             listing.price_text = priceText;
 
             // PSF
@@ -1295,10 +1304,19 @@ class PropertyGuruScraper:
                 logger.debug("Skipping listing with missing id/title: %s", item.get("id"))
                 return None
 
-            # Price — new format has {value, pretty, currency}
+            # Price — new format has {value, pretty, currency}. For range-only
+            # prices use the midpoint: taking max biased range listings up
+            # (while the DOM fallback grabbed the first/min figure — the two
+            # strategies disagreed on the same listing).
             price_raw = item.get("price", {})
             if isinstance(price_raw, dict):
-                price = price_raw.get("value") or price_raw.get("max") or price_raw.get("amount") or 0
+                price = price_raw.get("value") or price_raw.get("amount")
+                if not price:
+                    p_min, p_max = price_raw.get("min"), price_raw.get("max")
+                    if p_min and p_max:
+                        price = (p_min + p_max) / 2
+                    else:
+                        price = p_min or p_max or 0
             else:
                 price = price_raw or 0
 
@@ -1340,8 +1358,21 @@ class PropertyGuruScraper:
             beds = _safe_int(item.get("bedrooms") or item.get("beds") or item.get("bedroom"))
             baths = _safe_int(item.get("bathrooms") or item.get("baths") or item.get("bathroom"))
 
-            # Area — new format has floorArea as number, area.localeStringValue as string
-            sqft = _safe_float(item.get("floorArea") or item.get("landArea") or item.get("size"))
+            # Area — new format has floorArea as number, area.localeStringValue as string.
+            # NOTE: landArea is NOT a fallback for strata floor area — it inflated
+            # area (understating PSF) for any listing that hit that path.
+            sqft = _safe_float(item.get("floorArea") or item.get("size"))
+            floor_area_sqm = _safe_float(item.get("floorAreaSqm") or item.get("floorAreaMetric"))
+            land_area_sqft = _safe_float(item.get("landAreaSqft"))
+
+            # Unit sanity: if floorArea was actually delivered in sqm (ratio to
+            # the sqm field ~1 instead of ~10.76), convert — a silent sqm/sqft
+            # mixup overstates PSF ~10.8x.
+            if sqft and floor_area_sqm and floor_area_sqm > 0:
+                if sqft / floor_area_sqm < 2.0:
+                    sqft = floor_area_sqm * 10.7639
+            elif not sqft and floor_area_sqm:
+                sqft = floor_area_sqm * 10.7639
 
             # PSF — new format has pricePerArea.localeStringValue as string
             psf = _safe_float(item.get("psf") or item.get("pricePerSqft"))
@@ -1355,9 +1386,6 @@ class PropertyGuruScraper:
                     m = re.search(r'[\d,]+\.?\d*', psf_text.replace(",", ""))
                     if m:
                         psf = _safe_float(m.group(0))
-
-            floor_area_sqm = _safe_float(item.get("floorAreaSqm") or item.get("floorAreaMetric"))
-            land_area_sqft = _safe_float(item.get("landAreaSqft"))
 
             # Project name — new format uses localizedTitle
             project_name = item.get("localizedTitle") or item.get("projectName")

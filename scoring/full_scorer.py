@@ -642,6 +642,12 @@ class FullScorer:
 
         scored.score_breakdown = breakdown
 
+        # Age-adjusted relative value vs district peers (None when data thin)
+        from scoring.relative_value import relative_value_for_listing
+        rel_value = relative_value_for_listing(scored, self.ura_data, self._current_year)
+        if rel_value:
+            breakdown["relative_value"] = rel_value
+
         # MMR (v3): continuous uncapped rating + /1000 normalization
         from scoring.mmr import compute_mmr
         mmr_result = compute_mmr(scored)

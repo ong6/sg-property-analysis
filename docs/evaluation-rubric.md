@@ -68,6 +68,26 @@ nearby new launches. 2BR has the widest tenant pool.
 `roi_projections` / `roi_sensitivity` already include BSD, ABSD, SSD, property
 tax. SSD is why holds are modeled at 5–7yr.
 
+### Relative value: new launch vs resale, age-adjusted
+
+`factual_data.relative_value` (when district peer coverage allows) answers
+"is this condo cheap or dear *for its age*?" using real URA transacted PSF:
+
+- `new_launch_median_psf` — what new launches (≤3yr) actually transact at in
+  this district: the current new-launch market price
+- `implied_fair_psf_from_new_launch` — new-launch median minus the age slope
+  (~$50/psf per year of age; CCR $60 / RCR $50 / OCR $40, freehold ×0.6 —
+  heuristics in config, verify against the market)
+- `premium_vs_new_launch_implied_pct` — subject asking PSF vs that implied
+  fair value; negative = priced below what new-launch pricing implies
+- `premium_vs_age_adjusted_median_pct` — vs the age-normalized median of ALL
+  district peers (headline; negative = cheap for its age)
+
+Use both: a resale can look "cheap" vs a new launch simply because it's old —
+the age adjustment is what makes the comparison fair. When the block is
+missing (thin peer data), research new-launch and resale PSF for the area
+yourself before judging value.
+
 ### 6. Red flags — verify, don't just inherit
 
 Algorithmic flags in `factual_data.red_flags_detected` (west facing, small dev,

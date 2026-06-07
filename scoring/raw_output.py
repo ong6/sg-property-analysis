@@ -112,6 +112,11 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     if psf_premium is not None:
         facts["psf_premium_vs_ura_median_pct"] = round(psf_premium, 1)
 
+    # --- Age-adjusted relative value vs district peers ---
+    rel_value = listing.score_breakdown.get("relative_value")
+    if rel_value:
+        facts["relative_value"] = rel_value
+
     return facts
 
 
