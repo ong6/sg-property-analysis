@@ -1237,9 +1237,17 @@ Examples:
         scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(usable))
         scored_all = [scorer.score(l) for l in usable]
 
-        from scoring.arena import build_referee_packet
-        fighters = run_arena(scored_all)
-        report = format_arena_report(fighters)
+        from scoring.arena import (
+            run_brackets,
+            format_brackets_report,
+            build_brackets_referee_packet,
+        )
+
+        # Weight-class brackets (2BR vs 2BR, 3BR vs 3BR…) — like-for-like
+        # fights — plus the open division (all types) as the secondary view.
+        brackets = run_brackets(scored_all)
+        open_fighters = run_arena(scored_all)
+        report = format_brackets_report(brackets, open_fighters)
 
         out_dir = Path("output")
         out_dir.mkdir(exist_ok=True)
@@ -1252,7 +1260,7 @@ Examples:
 
         # Referee packet: the arena is purely algorithmic — the AI referee
         # must verify the stats behind the top ranks before results are trusted.
-        packet = build_referee_packet(fighters)
+        packet = build_brackets_referee_packet(brackets)
         packet_path = out_dir / "arena_referee_packet.json"
         with open(packet_path, "w") as f:
             json.dump(packet, f, indent=2, ensure_ascii=False)
@@ -1266,15 +1274,17 @@ Examples:
         with open(arena_csv, "a", newline="") as f:
             writer = _csv.writer(f)
             if write_header:
-                writer.writerow(["run_date", "rank", "project_name", "beds", "elo",
+                writer.writerow(["run_date", "bracket", "rank", "project_name", "beds", "elo",
                                  "wins", "losses", "draws", "win_rate_pct", "on_frontier",
                                  "mmr", "score_1000", "price", "psf", "district", "url"])
-            for rank, fl in enumerate(fighters, 1):
-                s = fl.listing
-                writer.writerow([run_date, rank, fl.name, fl.beds or "", round(fl.elo),
-                                 fl.wins, fl.losses, fl.draws, round(fl.win_rate * 100),
-                                 int(fl.on_frontier), s.mmr, s.score_1000,
-                                 s.price, s.psf, s.district or "", s.url])
+            for bracket_name, fighters in list(brackets.items()) + [("open", open_fighters)]:
+                for rank, fl in enumerate(fighters, 1):
+                    s = fl.listing
+                    writer.writerow([run_date, bracket_name, rank, fl.name, fl.beds or "",
+                                     round(fl.elo), fl.wins, fl.losses, fl.draws,
+                                     round(fl.win_rate * 100), int(fl.on_frontier),
+                                     s.mmr, s.score_1000, s.price, s.psf,
+                                     s.district or "", s.url])
 
         print(report)
         print(f"\nArena report saved: {out_path}", file=sys.stderr)

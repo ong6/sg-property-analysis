@@ -63,6 +63,7 @@ def load_rankings() -> dict:
         name = r.get("project_name") or rec.get("project_name") or rec.get("title") or "?"
         maps_query = urllib.parse.quote(f"{name} condo Singapore")
         out.append({
+            "bracket": r.get("bracket") or "open",
             "rank": int(r["rank"]),
             "project_name": name,
             "beds": r.get("beds") or rec.get("beds") or "",
@@ -83,7 +84,7 @@ def load_rankings() -> dict:
             "maps_url": f"https://www.google.com/maps/search/?api=1&query={maps_query}",
         })
 
-    out.sort(key=lambda x: x["rank"])
+    out.sort(key=lambda x: (x["bracket"], x["rank"]))
     return {"run_date": latest, "rows": out}
 
 
@@ -127,14 +128,15 @@ _PAGE = """<!DOCTYPE html>
 <body>
 <header>
   <h1>🥊 Condo Arena Rankings</h1>
-  <div class="sub">Run {run_date} · {count} contenders (condo × unit type) ·
-    ⭐ = Pareto frontier · technical ranking only — referee verdict &amp; full agent
-    evaluation live in <code>output/arena_latest.md</code></div>
+  <div class="sub">Run {run_date} · {count} ranked entries across brackets ·
+    ⭐ = Pareto frontier · brackets are like-for-like (2BR fights 2BR) ·
+    technical ranking only — referee verdict &amp; full agent evaluation live in
+    <code>output/arena_latest.md</code></div>
 </header>
 <div class="controls">
+  <select id="bracket" onchange="render()" title="Weight class — like-for-like fights">{bracket_opts}</select>
   <input id="q" placeholder="Search condo…" oninput="render()">
   <select id="district" onchange="render()"><option value="">All districts</option>{district_opts}</select>
-  <select id="beds" onchange="render()"><option value="">All types</option>{beds_opts}</select>
   <input id="maxprice" type="number" placeholder="Max price $" oninput="render()">
   <select id="frontier" onchange="render()">
     <option value="">All contenders</option>
@@ -152,15 +154,15 @@ const scoreColor = s => s >= 650 ? "background:#1c3326;color:#3fb950" :
                         s >= 450 ? "background:#332d1c;color:#e3b341" :
                                    "background:#33201c;color:#f85149";
 function render() {{
+  const br = document.getElementById("bracket").value;
   const q = document.getElementById("q").value.toLowerCase();
   const d = document.getElementById("district").value;
-  const b = document.getElementById("beds").value;
   const mp = parseFloat(document.getElementById("maxprice").value);
   const fo = document.getElementById("frontier").value;
   let rows = DATA.filter(r =>
+    r.bracket === br &&
     (!q || r.project_name.toLowerCase().includes(q)) &&
     (!d || r.district === d) &&
-    (!b || String(r.beds) === b) &&
     (!mp || (r.price && r.price <= mp)) &&
     (!fo || r.on_frontier));
   rows.sort((a, b2) => {{
@@ -225,14 +227,23 @@ Run <code>python invest.py --fight</code> first, then refresh.</div>"""
 def render_index(rankings: dict) -> str:
     rows = rankings["rows"]
     districts = sorted({r["district"] for r in rows if r["district"]})
-    beds = sorted({str(r["beds"]) for r in rows if r["beds"]})
     district_opts = "".join(f'<option value="{html.escape(d)}">{html.escape(d)}</option>' for d in districts)
-    beds_opts = "".join(f'<option value="{html.escape(b)}">{html.escape(b)}BR</option>' for b in beds)
+
+    # Bracket selector: like-for-like weight classes first, open division last.
+    # Default to 2BR (the most common purchase bracket) when present.
+    order = {"1BR": 1, "2BR": 2, "3BR": 3, "4BR+": 4, "open": 9}
+    brackets = sorted({r.get("bracket") or "open" for r in rows}, key=lambda b: order.get(b, 5))
+    default_bracket = "2BR" if "2BR" in brackets else (brackets[0] if brackets else "open")
+    bracket_opts = "".join(
+        f'<option value="{html.escape(b)}"{" selected" if b == default_bracket else ""}>'
+        f'{html.escape(b + (" division (all types)" if b == "open" else " bracket"))}</option>'
+        for b in brackets
+    )
     return _PAGE.format(
         run_date=html.escape(rankings["run_date"] or "—"),
         count=len(rows),
         district_opts=district_opts,
-        beds_opts=beds_opts,
+        bracket_opts=bracket_opts,
         body=_TABLE if rows else _EMPTY,
         # "</" must be escaped when embedding JSON in a <script> block — a
         # scraped name containing "</script>" would otherwise close the tag
