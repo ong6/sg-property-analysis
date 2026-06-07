@@ -330,7 +330,29 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
             print(f"    -> Error: {e}", file=sys.stderr)
 
     save_ura_cache(cache)
+    export_ura_cache_csv(cache)
     return cache
+
+
+def export_ura_cache_csv(cache: dict, path: str = os.path.join("data", "ura_cache.csv")) -> str:
+    """Export the URA cache as a flat CSV (the inspectable data backbone)."""
+    import csv as _csv
+    cols = ["project_name", "district", "market_segment", "tenure", "lease_start_year",
+            "transaction_count", "median_psf", "avg_psf_5yr_ago",
+            "appreciation_1yr", "appreciation_3yr", "appreciation_5yr",
+            "annualized_appreciation", "resale_annualized_appreciation",
+            "new_sale_proportion", "has_new_launch_bias", "appreciation_momentum",
+            "data_coverage", "source", "updated"]
+    rows = sorted(
+        (v for v in cache.values() if isinstance(v, dict)),
+        key=lambda v: (v.get("district") or "", -(v.get("transaction_count") or 0)),
+    )
+    with open(path, "w", newline="") as f:
+        writer = _csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+    return path
 
 
 def _format_price_filter(min_price: int | None, max_price: int | None) -> str:
@@ -1147,6 +1169,23 @@ Examples:
         listings_db.save_db(db)
         path = listings_db.export_sheet(db=db)
 
+        # Append to the MMR history CSV — scores over time accumulate so the
+        # sheet always shows latest while history preserves every run.
+        import csv as _csv
+        hist_path = os.path.join("data", "mmr_history.csv")
+        write_header = not os.path.exists(hist_path)
+        with open(hist_path, "a", newline="") as f:
+            writer = _csv.writer(f)
+            if write_header:
+                writer.writerow(["scored_at", "id", "project_name", "district", "beds",
+                                 "price", "psf", "mmr", "score_1000"])
+            for r in usable:
+                if r.get("mmr") is None:
+                    continue
+                writer.writerow([today, r.get("id"), r.get("project_name"), r.get("district"),
+                                 r.get("beds"), r.get("price"), r.get("psf"),
+                                 r.get("mmr"), r.get("score_1000")])
+
         if scored_vals:
             scored_vals.sort()
             import statistics as _st
@@ -1154,6 +1193,7 @@ Examples:
             print(f"  score_1000: mean={_st.mean(scored_vals):.0f} sd={_st.stdev(scored_vals):.0f} "
                   f"min={scored_vals[0]} p50={scored_vals[len(scored_vals)//2]} max={scored_vals[-1]}")
         print(f"  Sheet updated: {path}")
+        print(f"  MMR history appended: {hist_path}")
         return
 
     # --- Condo arena: pairwise value tournament over the listings DB ---
@@ -1197,6 +1237,7 @@ Examples:
         scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(usable))
         scored_all = [scorer.score(l) for l in usable]
 
+        from scoring.arena import build_referee_packet
         fighters = run_arena(scored_all)
         report = format_arena_report(fighters)
 
@@ -1204,8 +1245,38 @@ Examples:
         out_dir.mkdir(exist_ok=True)
         out_path = out_dir / "arena_latest.md"
         out_path.write_text(report)
+
+        # Referee packet: the arena is purely algorithmic — the AI referee
+        # must verify the stats behind the top ranks before results are trusted.
+        packet = build_referee_packet(fighters)
+        packet_path = out_dir / "arena_referee_packet.json"
+        with open(packet_path, "w") as f:
+            json.dump(packet, f, indent=2, ensure_ascii=False)
+
+        # Append full results to the CSV history (the data backbone)
+        import csv as _csv
+        run_date = datetime.now().strftime("%Y-%m-%d")
+        arena_csv = Path("data") / "arena_results.csv"
+        write_header = not arena_csv.exists()
+        with open(arena_csv, "a", newline="") as f:
+            writer = _csv.writer(f)
+            if write_header:
+                writer.writerow(["run_date", "rank", "project_name", "beds", "elo",
+                                 "wins", "losses", "draws", "win_rate_pct", "on_frontier",
+                                 "mmr", "score_1000", "price", "psf", "district", "url"])
+            for rank, fl in enumerate(fighters, 1):
+                s = fl.listing
+                writer.writerow([run_date, rank, fl.name, fl.beds or "", round(fl.elo),
+                                 fl.wins, fl.losses, fl.draws, round(fl.win_rate * 100),
+                                 int(fl.on_frontier), s.mmr, s.score_1000,
+                                 s.price, s.psf, s.district or "", s.url])
+
         print(report)
         print(f"\nArena report saved: {out_path}", file=sys.stderr)
+        print(f"Arena history appended: {arena_csv}", file=sys.stderr)
+        print(f"⚠ REFEREE REQUIRED: review {packet_path} (auto_flags: "
+              f"{len(packet['auto_flags'])}) and verify top contenders' stats "
+              f"before trusting this ranking.", file=sys.stderr)
         return
 
     # --- Evaluation memory handlers (git-tracked past evaluations) ---

@@ -58,6 +58,23 @@ Missing data is neutral, never penalized. Sanity-check tool:
 python invest.py --score '{"price":2300000,"sqft":958,"psf":2401,"beds":2,"district":"D15","tenure":"Freehold","project_name":"...","appreciation_rate_pct":5.5,"monthly_rent":6200}'
 ```
 
+## Condo arena (`--fight`) — AI referee required
+
+`python invest.py --fight` runs a pairwise tournament over the listings DB —
+contenders are (condo × unit type), purely algorithmic (no AI in the fights).
+**Every run requires you to referee before results are trusted**: read
+`output/arena_referee_packet.json`, work through its `auto_flags` (thin
+transactions behind high appreciation, fallback-rent yield edges, extreme
+psf/age components, suspect sqft), verify the top contenders' stats are real
+(web-check if extreme), then append a **Referee verdict** to
+`output/arena_latest.md`: confirmed ranks, demoted contenders + reasons, and
+run confidence. The arena ranks stats; you certify the stats deserve to rank.
+
+Supporting data backbone (CSV, append-only — grep/analyze freely):
+`data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`
+(every scoring run), `data/arena_results.csv` (every tournament),
+`data/ura_cache.csv` (per-project URA metrics).
+
 ## The two memory systems
 
 **`evaluations/` (git-tracked)** — your past judgements, one JSON per condo,

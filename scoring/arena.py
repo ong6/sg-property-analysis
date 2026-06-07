@@ -17,6 +17,7 @@ ranking is reproducible for the same input set.
 
 import random
 from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Any, Optional
 
 # Dimension -> (component keys summed, weight in a fight)
@@ -37,9 +38,14 @@ TIE_MARGIN = 0.75   # dimension scores closer than this are a split
 
 @dataclass
 class Fighter:
-    """One condo (represented by its best listing) in the arena."""
-    key: str                      # project key
+    """One contender: a condo's unit type, represented by its best listing.
+
+    Unit types fight separately — a project's 2BR and 3BR have different PSF,
+    yield, efficiency and value profiles, so each is its own contender.
+    """
+    key: str                      # (project, beds) key
     name: str
+    beds: Optional[int]
     listing: Any                  # ScoredListing of the representative unit
     dims: dict[str, float] = field(default_factory=dict)
     elo: float = ELO_START
@@ -109,27 +115,29 @@ def _pareto_frontier(fighters: list[Fighter]) -> None:
 def run_arena(scored_listings: list) -> list[Fighter]:
     """Run the tournament over scored listings (with MMR components).
 
-    Listings are grouped by project; each project's highest-MMR listing is its
-    representative (the unit you would actually buy). Returns fighters sorted
-    by Elo descending.
+    Contenders are (project, unit type) pairs — a condo's 2BR and 3BR fight
+    separately. Each contender is represented by its highest-MMR listing (the
+    unit you would actually buy). Returns fighters sorted by Elo descending.
     """
-    # Group by project, keep best representative
-    by_project: dict[str, Any] = {}
+    # Group by (project, beds), keep best representative per unit type
+    by_unit_type: dict[tuple, Any] = {}
     for s in scored_listings:
         if not s.mmr_components:
             continue
-        key = (s.project_name or s.title or "").strip().lower()
-        if not key:
+        key_name = (s.project_name or s.title or "").strip().lower()
+        if not key_name:
             continue
-        cur = by_project.get(key)
+        key = (key_name, s.beds or 0)
+        cur = by_unit_type.get(key)
         if cur is None or (s.mmr or 0) > (cur.mmr or 0):
-            by_project[key] = s
+            by_unit_type[key] = s
 
     fighters = []
-    for key, s in by_project.items():
+    for key, s in by_unit_type.items():
         f = Fighter(
-            key=key,
+            key=f"{key[0]}|{key[1]}br",
             name=s.project_name or s.title,
+            beds=s.beds,
             listing=s,
             dims=_dimension_scores(s.mmr_components),
         )
@@ -168,15 +176,98 @@ def run_arena(scored_listings: list) -> list[Fighter]:
     return fighters
 
 
+def build_referee_packet(fighters: list[Fighter], top_n: int = 15) -> dict:
+    """Data-quality packet for the AI referee.
+
+    The arena is purely algorithmic — no AI judgment is involved in the
+    fights. This packet exposes the stats BEHIND the top ranks plus
+    auto-detected anomalies so the AI referee can confirm the fight was fair
+    (data real, dimensions measured properly) before results are trusted.
+    Auto-flags are leads for the referee, not verdicts.
+    """
+    packet: dict[str, Any] = {
+        "generated_at": datetime.now().isoformat(),
+        "contenders": [],
+        "auto_flags": [],
+        "referee_instructions": (
+            "You are the referee. For each contender below — especially any with "
+            "auto_flags — verify the stats are credible before endorsing the "
+            "ranking: (1) is the appreciation rate from real transactions or a "
+            "guess? (2) is the PSF/sqft plausible for that project and unit type "
+            "(web-check if extreme)? (3) is a yield edge built on estimated rent? "
+            "(4) does the age/relative-value adjustment make sense for its "
+            "built_year? Demote or disqualify contenders whose edge rests on bad "
+            "data, then write a short referee verdict: confirmed ranks, demoted "
+            "contenders with reasons, and overall confidence in this run."
+        ),
+    }
+
+    for rank, f in enumerate(fighters[:top_n], 1):
+        s = f.listing
+        sb = s.score_breakdown or {}
+        cap = sb.get("capital_appreciation", {}).get("appreciation_rate", {})
+        rel = sb.get("relative_value", {})
+        comps = s.mmr_components or {}
+
+        flags = []
+        txn = cap.get("transaction_count") or 0
+        apr_pct = (s.appreciation_rate or 0) * 100
+        if apr_pct >= 6 and txn < 10:
+            flags.append(f"high appreciation ({apr_pct:.1f}%/yr) from thin transactions ({txn})")
+        if s.appreciation_source in ("default", "regional_baseline"):
+            flags.append("appreciation is a regional guess, not measured data")
+        if (s.rent_source or "").startswith("fallback") and comps.get("yield", 0) > 5:
+            flags.append("yield advantage built on a fallback rent estimate")
+        if abs(comps.get("psf_value", 0)) > 15:
+            flags.append(f"extreme psf_value ({comps['psf_value']:+.1f}) — verify listing PSF/sqft is real")
+        if abs(comps.get("age_value", 0)) > 10:
+            flags.append(f"extreme age_value ({comps['age_value']:+.1f}) — verify built_year and peer set")
+        if not s.built_year:
+            flags.append("missing built_year — age/lease components neutral, may overrank")
+        if s.sqft and s.beds and not (250 <= s.sqft / s.beds <= 800):
+            flags.append(f"odd sqft/bed ({s.sqft / s.beds:.0f}) — possible misparse")
+
+        packet["contenders"].append({
+            "rank": rank,
+            "name": f.name,
+            "beds": f.beds,
+            "elo": round(f.elo),
+            "record": f"{f.wins}-{f.losses}-{f.draws}",
+            "on_frontier": f.on_frontier,
+            "mmr": s.mmr,
+            "score_1000": s.score_1000,
+            "price": s.price,
+            "psf": s.psf,
+            "sqft": s.sqft,
+            "district": s.district,
+            "built_year": s.built_year,
+            "tenure": s.tenure,
+            "appreciation_rate_pct": round(apr_pct, 2),
+            "appreciation_source": s.appreciation_source,
+            "appreciation_txn_count": txn,
+            "rent_source": s.rent_source,
+            "gross_yield_pct": s.estimated_gross_yield,
+            "relative_value": rel or None,
+            "mmr_components": comps,
+            "url": s.url,
+            "auto_flags": flags,
+        })
+        if flags:
+            label = f"{f.name} {f.beds}BR" if f.beds else f.name
+            packet["auto_flags"].append({"rank": rank, "name": label, "flags": flags})
+
+    return packet
+
+
 def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
     """Markdown report: Elo table, frontier, champion analysis."""
     lines = ["# Condo Arena — pairwise value tournament", ""]
     n = len(fighters)
-    lines.append(f"{n} condos, {n*(n-1)//2} fights (round-robin), "
+    lines.append(f"{n} contenders (condo × unit type), {n*(n-1)//2} fights (round-robin), "
                  f"dimensions: {', '.join(f'{d} {int(w*100)}%' for d, (_k, w) in DIMENSIONS.items())}")
     lines.append("")
-    lines.append("| Rank | Condo | Elo | W-L-D | Win% | MMR/1000 | Price | PSF | Age-adj premium | Frontier |")
-    lines.append("|------|-------|-----|-------|------|----------|-------|-----|-----------------|----------|")
+    lines.append("| Rank | Condo | Type | Elo | W-L-D | Win% | MMR/1000 | Price | PSF | Age-adj premium | Frontier |")
+    lines.append("|------|-------|------|-----|-------|------|----------|-------|-----|-----------------|----------|")
     for rank, f in enumerate(fighters[:top_n], 1):
         s = f.listing
         rel = (s.score_breakdown or {}).get("relative_value", {})
@@ -184,9 +275,10 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
         prem_str = f"{prem:+.1f}%" if prem is not None else "-"
         price_str = f"${s.price/1e6:.2f}M" if s.price else "-"
         psf_str = f"${s.psf:,.0f}" if s.psf else "-"
+        beds_str = f"{f.beds}BR" if f.beds else "?"
         frontier = "⭐" if f.on_frontier else ""
         lines.append(
-            f"| {rank} | {f.name[:30]} | {f.elo:.0f} | {f.wins}-{f.losses}-{f.draws} "
+            f"| {rank} | {f.name[:30]} | {beds_str} | {f.elo:.0f} | {f.wins}-{f.losses}-{f.draws} "
             f"| {f.win_rate*100:.0f}% | {s.score_1000 or '-'} | {price_str} | {psf_str} "
             f"| {prem_str} | {frontier} |"
         )
@@ -195,11 +287,12 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
     frontier = [f for f in fighters if f.on_frontier]
     lines.append(f"## Pareto frontier ({len(frontier)} condos)")
     lines.append("")
-    lines.append("Not beaten on every dimension by any other condo — the efficient set:")
+    lines.append("Not beaten on every dimension by any other contender — the efficient set:")
     for f in frontier:
         best_dims = sorted(f.dims_won.items(), key=lambda kv: -kv[1])[:3]
         dims_str = ", ".join(f"{d} ({c} wins)" for d, c in best_dims) if best_dims else "-"
-        lines.append(f"- **{f.name}** (Elo {f.elo:.0f}) — strongest: {dims_str}")
+        beds_str = f" {f.beds}BR" if f.beds else ""
+        lines.append(f"- **{f.name}{beds_str}** (Elo {f.elo:.0f}) — strongest: {dims_str}")
     lines.append("")
 
     if fighters:
@@ -208,7 +301,8 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
         rel = (s.score_breakdown or {}).get("relative_value", {})
         lines.append("## Champion")
         lines.append("")
-        lines.append(f"**{champ.name}** — Elo {champ.elo:.0f}, "
+        champ_beds = f" ({champ.beds}BR)" if champ.beds else ""
+        lines.append(f"**{champ.name}{champ_beds}** — Elo {champ.elo:.0f}, "
                      f"{champ.wins}-{champ.losses}-{champ.draws}, MMR {s.mmr:.0f} ({s.score_1000}/1000)")
         if s.url:
             lines.append(f"- Representative unit: {s.beds}BR ${s.price:,} @ ${s.psf:,.0f} psf — {s.url}")
