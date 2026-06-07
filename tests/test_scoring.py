@@ -401,3 +401,38 @@ class TestROICalculation:
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
+
+class TestYoungResaleDiscount:
+    """Resale-only rates from very young projects are sub-sale-contaminated
+    and must still receive the new-launch discount; mature projects' resale
+    rates stay exempt."""
+
+    def _scorer_with(self, built_year, rate_pct=11.0):
+        from scoring.full_scorer import FullScorer
+        ura = {
+            "young project": {
+                "project_name": "Young Project",
+                "annualized_appreciation": rate_pct + 2,
+                "resale_annualized_appreciation": rate_pct,
+                "transaction_count": 600,
+                "has_new_launch_bias": True,
+                "source": "ura_5yr_cagr",
+            }
+        }
+        scorer = FullScorer(ura_data=ura)
+        listing = {"id": "1", "title": "Young Project", "project_name": "Young Project",
+                   "price": 1_700_000, "sqft": 667, "psf": 2549, "beds": 2,
+                   "district": "D15", "tenure": "99-year leasehold", "built_year": built_year}
+        return scorer.score(listing)
+
+    def test_young_project_resale_rate_discounted(self):
+        s = self._scorer_with(built_year=2026)
+        assert s.appreciation_source == "ura_resale_only"
+        assert s.appreciation_adjustment < 0  # discount applied
+        assert s.appreciation_rate < 0.11
+
+    def test_mature_project_resale_rate_exempt(self):
+        s = self._scorer_with(built_year=2015)
+        assert s.appreciation_source == "ura_resale_only"
+        assert s.appreciation_adjustment == 0.0  # genuinely clean, no discount

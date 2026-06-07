@@ -1245,6 +1245,10 @@ Examples:
         out_dir.mkdir(exist_ok=True)
         out_path = out_dir / "arena_latest.md"
         out_path.write_text(report)
+        # Timestamped archive too — arena_latest.md is overwritten per run,
+        # which would otherwise destroy appended referee verdicts.
+        archive_path = out_dir / f"arena_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+        archive_path.write_text(report)
 
         # Referee packet: the arena is purely algorithmic — the AI referee
         # must verify the stats behind the top ranks before results are trusted.
