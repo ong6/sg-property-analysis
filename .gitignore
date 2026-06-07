@@ -26,8 +26,8 @@ output/run_*/
 # Playwright MCP cache
 .playwright-mcp/
 
-# URA CSV downloads (raw data, not committed)
-data/ura_*.csv
+# data/*.csv files are tracked deliberately — they are the data backbone
+# (listings sheet, MMR/arena history, URA cache export, raw URA downloads)
 
 # Runtime credential files (auto-generated)
 cookies.json
@@ -49,5 +49,6 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Claude Code local config
-.claude/
+# Claude Code local config (skills ARE tracked — shared project runbooks)
+.claude/settings.local.json
+.claude/worktrees/

@@ -103,10 +103,20 @@ def compute_mmr(scored: Any) -> dict:
     # --- PSF vs market (SYMMETRIC: discount positive, premium negative) ---
     premium_pct = sb_flags.get("psf_premium_pct")
     if premium_pct is not None:
-        comps["psf_value"] = round(-0.8 * premium_pct, 2)
+        psf_value = -0.8 * premium_pct
     else:
         ratio = sb_cap.get("psf_vs_median", {}).get("ratio")
-        comps["psf_value"] = round(80.0 * (1.0 - ratio), 2) if ratio else 0.0
+        psf_value = 80.0 * (1.0 - ratio) if ratio else 0.0
+    # Oversized units (penthouse/PES) trade at structurally lower PSF than
+    # their project's median — a positive "cheap PSF" reading there is mostly
+    # a size artifact, not value (first surfaced by the arena referee). Damp
+    # the positive side only; an oversized unit priced ABOVE median is
+    # genuinely expensive.
+    flag_names = {f.get("flag") for f in sb_flags.get("flags", [])}
+    oversized = "oversized_unit" in flag_names
+    if oversized and psf_value > 0:
+        psf_value *= 0.5
+    comps["psf_value"] = round(psf_value, 2)
 
     # --- Lease / tenure (continuous decay for 99yr) ---
     tenure = (scored.tenure or "").lower()
@@ -176,7 +186,10 @@ def compute_mmr(scored: Any) -> dict:
     # the slope is a heuristic.
     rel = sb.get("relative_value") or {}
     rel_premium = rel.get("premium_vs_age_adjusted_median_pct")
-    comps["age_value"] = round(-0.4 * rel_premium, 2) if rel_premium is not None else 0.0
+    age_value = -0.4 * rel_premium if rel_premium is not None else 0.0
+    if oversized and age_value > 0:
+        age_value *= 0.5  # same size-artifact damping as psf_value
+    comps["age_value"] = round(age_value, 2)
 
     # --- Unique red flags only (others are continuous components above) ---
     flags = sb_flags.get("flags", [])
