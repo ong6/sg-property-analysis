@@ -54,6 +54,10 @@ class Fighter:
     draws: int = 0
     dims_won: dict[str, int] = field(default_factory=dict)
     on_frontier: bool = False
+    # Agent-flow join: the AI's prior evaluation of this condo (from the
+    # git-tracked eval memory), shown alongside the technical ranking.
+    agent_rating: Optional[str] = None
+    agent_eval_date: Optional[str] = None
 
     @property
     def fights(self) -> int:
@@ -286,6 +290,8 @@ def build_referee_packet(fighters: list[Fighter], top_n: int = 15) -> dict:
             "gross_yield_pct": s.estimated_gross_yield,
             "relative_value": rel or None,
             "mmr_components": comps,
+            "agent_rating": f.agent_rating,
+            "agent_eval_date": f.agent_eval_date,
             "url": s.url,
             "auto_flags": flags,
         })
@@ -309,8 +315,8 @@ def format_arena_report(
     lines.append(f"{n} contenders (condo × unit type), {n*(n-1)//2} fights (round-robin), "
                  f"dimensions: {', '.join(f'{d} {int(w*100)}%' for d, (_k, w) in DIMENSIONS.items())}")
     lines.append("")
-    lines.append("| Rank | Condo | Type | Elo | W-L-D | Win% | MMR/1000 | Price | PSF | Age-adj premium | Frontier |")
-    lines.append("|------|-------|------|-----|-------|------|----------|-------|-----|-----------------|----------|")
+    lines.append("| Rank | Condo | Type | Elo | W-L-D | Win% | MMR/1000 | Price | PSF | Age-adj premium | Agent eval | Frontier |")
+    lines.append("|------|-------|------|-----|-------|------|----------|-------|-----|-----------------|-----------|----------|")
     for rank, f in enumerate(fighters[:top_n], 1):
         s = f.listing
         rel = (s.score_breakdown or {}).get("relative_value", {})
@@ -320,10 +326,11 @@ def format_arena_report(
         psf_str = f"${s.psf:,.0f}" if s.psf else "-"
         beds_str = f"{f.beds}BR" if f.beds else "?"
         frontier = "⭐" if f.on_frontier else ""
+        agent_str = f"{f.agent_rating} ({f.agent_eval_date})" if f.agent_rating else "-"
         lines.append(
             f"| {rank} | {f.name[:30]} | {beds_str} | {f.elo:.0f} | {f.wins}-{f.losses}-{f.draws} "
             f"| {f.win_rate*100:.0f}% | {s.score_1000 or '-'} | {price_str} | {psf_str} "
-            f"| {prem_str} | {frontier} |"
+            f"| {prem_str} | {agent_str} | {frontier} |"
         )
     lines.append("")
 

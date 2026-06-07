@@ -83,12 +83,19 @@ def compute_mmr(scored: Any) -> dict:
     apr_pct = (scored.appreciation_rate or 0.0) * 100
     source = scored.appreciation_source or "default"
     txn = sb_cap.get("appreciation_rate", {}).get("transaction_count") or 0
+    momentum_val = sb_cap.get("momentum", {}).get("value")
     if source in ("default", "regional_baseline"):
         conf = 0.35  # baseline guess, low weight (continuous analog of the legacy cap)
     elif source == "agent_override":
         conf = 1.0
     else:
         conf = 0.5 + 0.5 * min(1.0, txn / 50.0)
+        # v3.1 boutique-volatility haircut (referee finding: thin freehold
+        # series swing wildly year to year — Suites @ Topaz showed +48% 1yr
+        # vs +7.5% annualized on 15 txns). When the series is BOTH thin and
+        # unstable, trust it less; either alone is fine.
+        if txn < 30 and momentum_val is not None and abs(momentum_val) >= 0.8:
+            conf *= 0.7
     # Slope 7.5 pts per %-point (30/4.0). At the steeper 12/pp this component
     # alone carried ~84% of MMR variance, collapsing it to a one-factor score;
     # 7.5/pp keeps appreciation the largest driver (~55-60%) without drowning
@@ -104,6 +111,9 @@ def compute_mmr(scored: Any) -> dict:
     premium_pct = sb_flags.get("psf_premium_pct")
     if premium_pct is not None:
         psf_value = -0.8 * premium_pct
+        # v3.1: a premium/discount measured against few transactions is an
+        # unreliable estimate in EITHER direction — scale toward neutral.
+        psf_value *= 0.5 + 0.5 * min(1.0, txn / 30.0)
     else:
         ratio = sb_cap.get("psf_vs_median", {}).get("ratio")
         psf_value = 80.0 * (1.0 - ratio) if ratio else 0.0
@@ -187,6 +197,11 @@ def compute_mmr(scored: Any) -> dict:
     rel = sb.get("relative_value") or {}
     rel_premium = rel.get("premium_vs_age_adjusted_median_pct")
     age_value = -0.4 * rel_premium if rel_premium is not None else 0.0
+    # v3.1: thin peer sets make the age-adjusted median unreliable —
+    # scale toward neutral below ~15 peers (floor 0.4 at the 5-peer minimum).
+    peer_count = rel.get("peer_count") or 0
+    if peer_count:
+        age_value *= max(0.4, min(1.0, peer_count / 15.0))
     if oversized and age_value > 0:
         age_value *= 0.5  # same size-artifact damping as psf_value
     comps["age_value"] = round(age_value, 2)

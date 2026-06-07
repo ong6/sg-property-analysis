@@ -1247,6 +1247,22 @@ Examples:
         # fights — plus the open division (all types) as the secondary view.
         brackets = run_brackets(scored_all)
         open_fighters = run_arena(scored_all)
+
+        # Agent-flow join: attach the AI's prior evaluations (git-tracked
+        # eval memory) so technical ranks are read alongside past judgment.
+        import eval_memory
+        eval_index = eval_memory.load_index().get("condos", {})
+        eval_by_name = {}
+        for meta in eval_index.values():
+            key = (meta.get("condo") or "").strip().lower()
+            if key:
+                eval_by_name[key] = (meta.get("latest_rating"), meta.get("latest_date"))
+        for fighter_set in list(brackets.values()) + [open_fighters]:
+            for fl in fighter_set:
+                hit = eval_by_name.get(fl.name.strip().lower())
+                if hit:
+                    fl.agent_rating, fl.agent_eval_date = hit
+
         report = format_brackets_report(brackets, open_fighters)
 
         out_dir = Path("output")
@@ -1276,7 +1292,8 @@ Examples:
             if write_header:
                 writer.writerow(["run_date", "bracket", "rank", "project_name", "beds", "elo",
                                  "wins", "losses", "draws", "win_rate_pct", "on_frontier",
-                                 "mmr", "score_1000", "price", "psf", "district", "url"])
+                                 "mmr", "score_1000", "price", "psf", "district",
+                                 "agent_rating", "agent_eval_date", "url"])
             for bracket_name, fighters in list(brackets.items()) + [("open", open_fighters)]:
                 for rank, fl in enumerate(fighters, 1):
                     s = fl.listing
@@ -1284,7 +1301,8 @@ Examples:
                                      round(fl.elo), fl.wins, fl.losses, fl.draws,
                                      round(fl.win_rate * 100), int(fl.on_frontier),
                                      s.mmr, s.score_1000, s.price, s.psf,
-                                     s.district or "", s.url])
+                                     s.district or "", fl.agent_rating or "",
+                                     fl.agent_eval_date or "", s.url])
 
         print(report)
         print(f"\nArena report saved: {out_path}", file=sys.stderr)
