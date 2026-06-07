@@ -1001,6 +1001,9 @@ Examples:
                        help="Condo arena: pairwise round-robin value tournament over the listings DB "
                             "(respects --districts/--beds/--min-price/--max-price filters). "
                             "Outputs Elo ranking, Pareto frontier, and champion.")
+    parser.add_argument("--score-db", action="store_true",
+                       help="Batch-score every usable listing in the DB (MMR + score_1000), "
+                            "write scores back into the DB, and re-export the sheet.")
     parser.add_argument("--url", type=str,
                        help="PropertyGuru URL: a single listing, a results/list page, or a project page")
     parser.add_argument("--url-max-pages", type=int, default=5,
@@ -1111,6 +1114,46 @@ Examples:
             sys.exit(1)
         result = score_condo(score_inputs, ura_data=load_ura_cache())
         print(json.dumps(result, indent=2, ensure_ascii=False))
+        return
+
+    # --- Batch-score the listings DB (MMR backlog) ---
+    if args.score_db:
+        warn_if_stale_data()
+        import listings_db
+        from scoring.full_scorer import FullScorer, build_cohort_stats
+
+        db = listings_db.load_db()
+        records = list(db["listings"].values())
+        usable = [r for r in records if r.get("price") and r.get("sqft") and r.get("psf")]
+        print(f"\nScoring {len(usable)}/{len(records)} usable listings for the MMR backlog...", file=sys.stderr)
+
+        ura = load_ura_cache()
+        scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(usable))
+        today = datetime.now().strftime("%Y-%m-%d")
+        scored_vals = []
+        errors = 0
+        for r in usable:
+            try:
+                s = scorer.score(r)
+            except Exception:
+                errors += 1
+                continue
+            r["mmr"] = s.mmr
+            r["score_1000"] = s.score_1000
+            r["scored_at"] = today
+            if s.score_1000 is not None:
+                scored_vals.append(s.score_1000)
+
+        listings_db.save_db(db)
+        path = listings_db.export_sheet(db=db)
+
+        if scored_vals:
+            scored_vals.sort()
+            import statistics as _st
+            print(f"  Scored: {len(scored_vals)} (errors: {errors})")
+            print(f"  score_1000: mean={_st.mean(scored_vals):.0f} sd={_st.stdev(scored_vals):.0f} "
+                  f"min={scored_vals[0]} p50={scored_vals[len(scored_vals)//2]} max={scored_vals[-1]}")
+        print(f"  Sheet updated: {path}")
         return
 
     # --- Condo arena: pairwise value tournament over the listings DB ---

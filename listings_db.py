@@ -38,10 +38,11 @@ SHEET_FILE = os.path.join(_DATA_DIR, "listings_sheet.csv")
 # Fields surfaced in the CSV "sheet" (the critical info an agent searches on).
 SHEET_COLUMNS = [
     "project_name", "district", "region", "beds", "baths",
-    "price", "psf", "sqft", "tenure", "built_year",
+    "price", "psf", "sqft", "mmr", "score_1000", "scored_at",
+    "tenure", "built_year",
     "floor_level", "facing", "mrt_info", "total_units",
     "first_seen", "last_seen", "times_seen", "last_price_change",
-    "price_trend", "status", "url",
+    "price_trend", "lowest_price", "drop_from_peak_pct", "status", "url",
 ]
 
 # Fields copied verbatim from a scraped listing into its stored record.
@@ -213,6 +214,15 @@ def _record_to_row(rec: dict) -> dict:
     row = {col: rec.get(col, "") for col in SHEET_COLUMNS}
     row["last_price_change"] = last_change
     row["price_trend"] = _price_trend(history)
+    # Peak-relative drop: first-vs-last hides V-shaped paths; a unit that came
+    # down from its peak is a potential motivated-seller signal even if it
+    # recovered above its first listed price.
+    prices = [p.get("price") for p in history if p.get("price")]
+    if prices:
+        row["lowest_price"] = min(prices)
+        peak = max(prices)
+        current = prices[-1]
+        row["drop_from_peak_pct"] = round((current - peak) / peak * 100, 1) if peak > 0 else ""
     return row
 
 
