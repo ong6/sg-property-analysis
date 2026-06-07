@@ -60,25 +60,33 @@ class DistrictScorer:
             with open(os.path.join(_DATA_DIR, "ura_cache.json")) as f:
                 ura = json.load(f)
             ura = ura.get("projects", ura)
+        except (OSError, json.JSONDecodeError):
+            return {}
+
+        # Cache entries carry their district directly (since the v2.4 grouped
+        # cache build). Fall back to listings_db project->district mapping for
+        # older cache entries without it.
+        proj_to_district = {}
+        try:
             with open(os.path.join(_DATA_DIR, "listings_db.json")) as f:
                 db = json.load(f)
             listings = db.get("listings", {})
             if isinstance(listings, dict):
                 listings = list(listings.values())
+            for l in listings:
+                pn = (l.get("project_name") or "").lower()
+                d = str(l.get("district") or "").upper().replace("D", "").lstrip("0")
+                if pn and d:
+                    proj_to_district[pn] = d
         except (OSError, json.JSONDecodeError):
-            return {}
-
-        proj_to_district = {}
-        for l in listings:
-            pn = (l.get("project_name") or "").lower()
-            d = str(l.get("district") or "").upper().replace("D", "").lstrip("0")
-            if pn and d:
-                proj_to_district[pn] = d
+            pass
 
         by_district: dict[str, list[float]] = {}
         for key, entry in ura.items():
-            d = proj_to_district.get(key)
-            if d and isinstance(entry, dict) and entry.get("annualized_appreciation") is not None:
+            if not isinstance(entry, dict) or entry.get("annualized_appreciation") is None:
+                continue
+            d = str(entry.get("district") or "").upper().replace("D", "").lstrip("0") or proj_to_district.get(key)
+            if d:
                 by_district.setdefault(d, []).append(entry["annualized_appreciation"])
 
         return {
