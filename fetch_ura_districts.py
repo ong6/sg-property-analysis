@@ -174,100 +174,27 @@ def fetch_district(page, district: int) -> tuple[str | None, str | None]:
 def build_cache_from_district_csvs(districts: list[int] | None = None) -> dict:
     """Build/update ura_cache.json from district-level CSV files.
 
-    Groups transactions by project name and calculates metrics for each project.
+    Delegates to invest.build_ura_cache_from_csv — the single cache builder
+    (per-project grouping, median PSF, en-bloc exclusion, district/tenure/
+    lease metadata). This module previously had its own builder which wrote
+    an older entry shape (no district/median_psf/lease fields) and silently
+    diverged.
     """
-    # Load existing cache
-    if URA_CACHE_FILE.exists():
-        with open(URA_CACHE_FILE) as f:
-            cache = json.load(f).get("projects", {})
-    else:
-        cache = {}
+    from invest import build_ura_cache_from_csv
 
-    # Find district CSVs to process
     if districts:
-        csv_files = [district_csv_path(d) for d in districts]
+        patterns = [str(district_csv_path(d)) for d in districts if district_csv_path(d).exists()]
     else:
-        csv_files = sorted(DATA_DIR.glob("ura_district_D*.csv"))
+        patterns = [str(p) for p in sorted(DATA_DIR.glob("ura_district_D*.csv"))]
 
-    if not csv_files:
+    if not patterns:
         print("No district CSV files found", file=sys.stderr)
-        return cache
+        if URA_CACHE_FILE.exists():
+            with open(URA_CACHE_FILE) as f:
+                return json.load(f).get("projects", {})
+        return {}
 
-    # Collect all transactions across districts, grouped by project
-    project_txns: dict[str, list] = defaultdict(list)
-    total_txns = 0
-
-    for csv_path in csv_files:
-        if not csv_path.exists():
-            continue
-        print(f"  Parsing {csv_path.name}...", file=sys.stderr)
-        with open(csv_path) as f:
-            csv_content = f.read()
-
-        transactions = parse_ura_csv(csv_content)
-        total_txns += len(transactions)
-
-        for txn in transactions:
-            project_key = txn.project_name.strip()
-            if project_key:
-                project_txns[project_key].append(txn)
-
-    print(f"\n  Total transactions parsed: {total_txns}", file=sys.stderr)
-    print(f"  Unique projects found: {len(project_txns)}", file=sys.stderr)
-
-    # Calculate metrics for each project
-    updated = 0
-    for project_name, txns in sorted(project_txns.items()):
-        history = URATransactionHistory(
-            project_name=project_name,
-            transactions=txns,
-        )
-        history.calculate_metrics()
-
-        project_key = project_name.lower()
-        cache_entry = {
-            "project_name": history.project_name,
-            "transaction_count": history.transaction_count,
-            "avg_psf_current": history.avg_psf_current_year,
-            "avg_psf_5yr_ago": history.avg_psf_5yr_ago,
-            "appreciation_1yr": history.appreciation_1yr,
-            "appreciation_3yr": history.appreciation_3yr,
-            "appreciation_5yr": history.appreciation_5yr,
-            "annualized_appreciation": history.annualized_appreciation,
-            "source": "ura_district_5yr_cagr" if history.annualized_appreciation else "ura_district_data",
-            "updated": datetime.now().strftime("%Y-%m-%d"),
-            # New launch bias fields
-            "new_sale_count": history.new_sale_count,
-            "new_sale_proportion": round(history.new_sale_proportion, 3),
-            "resale_transaction_count": history.resale_transaction_count,
-            "resale_annualized_appreciation": history.resale_annualized_appreciation,
-            "has_new_launch_bias": history.has_new_launch_bias,
-        }
-        cache[project_key] = cache_entry
-        updated += 1
-
-        # Log
-        bias_tag = " [NEW LAUNCH BIAS]" if history.has_new_launch_bias else ""
-        if history.annualized_appreciation is not None:
-            resale_info = ""
-            if history.resale_annualized_appreciation is not None:
-                resale_info = f", resale: {history.resale_annualized_appreciation:+.1f}%/yr"
-            print(f"    {history.project_name}: {history.annualized_appreciation:+.1f}%/yr "
-                  f"({history.transaction_count} txns){resale_info}{bias_tag}",
-                  file=sys.stderr)
-
-    # Save cache
-    cache_data = {
-        "last_updated": datetime.now().strftime("%Y-%m-%d"),
-        "projects": cache,
-    }
-    DATA_DIR.mkdir(exist_ok=True)
-    with open(URA_CACHE_FILE, "w") as f:
-        json.dump(cache_data, f, indent=2)
-
-    print(f"\n  Cache updated: {updated} projects from district data", file=sys.stderr)
-    print(f"  Total cached: {len(cache)} projects", file=sys.stderr)
-    return cache
+    return build_ura_cache_from_csv(patterns)
 
 
 def main():
