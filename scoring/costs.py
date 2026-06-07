@@ -27,7 +27,7 @@ def _load_cost_params() -> dict:
                 "mcst_rate_per_sqft": 0.35,
                 "agent_rental_months_per_year": 0.5,
                 "agent_sale_commission": 0.02,
-                "vacancy_months_per_year": 1.5,
+                "vacancy_months_per_year": 0.75,  # ~6% vacancy (SG condo typical 5-7%)
                 "legal_fee_buy": 3500,
                 "legal_fee_sell": 3000,
                 "repairs_per_year": 1500,
@@ -105,19 +105,22 @@ class CostCalculator:
         """
         Calculate Seller's Stamp Duty (SSD).
 
-        SSD rates (if sold within holding period):
-        - Within 1 year: 12%
-        - 1-2 years: 8%
-        - 2-3 years: 4%
-        - After 3 years: 0%
+        SSD rates from 4 Jul 2025 (4-year holding period):
+        - Within 1 year: 16%
+        - 1-2 years: 12%
+        - 2-3 years: 8%
+        - 3-4 years: 4%
+        - After 4 years: 0%
 
         Note: For investment analysis with 5-7 year hold, SSD is always 0.
         """
         if hold_years < 1:
-            return int(price * 0.12)
+            return int(price * 0.16)
         elif hold_years < 2:
-            return int(price * 0.08)
+            return int(price * 0.12)
         elif hold_years < 3:
+            return int(price * 0.08)
+        elif hold_years < 4:
             return int(price * 0.04)
         else:
             return 0
@@ -190,7 +193,7 @@ class CostCalculator:
         - property_tax: Based on annual value (rent * 12)
         - mcst: Monthly MCST * 12
         - agent_rental_fee: 0.5 months rent/year average
-        - vacancy_cost: 1.5 months rent lost per year
+        - vacancy_cost: ~0.75 months rent lost per year (from cost_parameters.json)
         - repairs_insurance: Fixed annual cost
         """
         annual_value = monthly_rent * 12
@@ -205,7 +208,7 @@ class CostCalculator:
         vacancy_months = (
             vacancy_months_per_year
             if vacancy_months_per_year is not None
-            else self.params.get("vacancy_months_per_year", 1.5)
+            else self.params.get("vacancy_months_per_year", 0.75)
         )
         repairs = self.params.get("repairs_per_year", 1500)
         insurance = self.params.get("insurance_per_year", 300)

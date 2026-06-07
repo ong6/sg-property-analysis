@@ -89,7 +89,11 @@ def compute_mmr(scored: Any) -> dict:
         conf = 1.0
     else:
         conf = 0.5 + 0.5 * min(1.0, txn / 50.0)
-    comps["appreciation"] = round(30.0 * ((apr_pct - 4.0) / 2.5) * conf, 2)
+    # Slope 7.5 pts per %-point (30/4.0). At the steeper 12/pp this component
+    # alone carried ~84% of MMR variance, collapsing it to a one-factor score;
+    # 7.5/pp keeps appreciation the largest driver (~55-60%) without drowning
+    # out value, yield and liquidity signals.
+    comps["appreciation"] = round(30.0 * ((apr_pct - 4.0) / 4.0) * conf, 2)
     meta_conf = conf
 
     # --- Momentum (already a small signed number) ---
@@ -185,7 +189,7 @@ def apply_appreciation_override(mmr_result: dict, new_rate_pct: float) -> dict:
     """
     comps = dict(mmr_result.get("components", {}))
     old = comps.get("appreciation", 0.0)
-    new = round(30.0 * ((new_rate_pct - 4.0) / 2.5) * 1.0, 2)
+    new = round(30.0 * ((new_rate_pct - 4.0) / 4.0) * 1.0, 2)
     comps["appreciation"] = new
     mmr = mmr_result["mmr"] - old + new
     return {

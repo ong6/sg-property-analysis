@@ -5,7 +5,9 @@
     "jurong_lake_district": {
       "name": "Jurong Lake District",
       "short_name": "JLD",
-      "districts": [22],
+      "districts": [
+        22
+      ],
       "priority": "high",
       "description": "Singapore's 2nd CBD, largest business district outside city center",
       "completion": "2035",
@@ -21,7 +23,10 @@
     "greater_southern_waterfront": {
       "name": "Greater Southern Waterfront",
       "short_name": "GSW",
-      "districts": [4, 5],
+      "districts": [
+        4,
+        5
+      ],
       "priority": "high",
       "description": "30km waterfront transformation from Pasir Panjang to Marina East",
       "completion": "2040",
@@ -37,7 +42,9 @@
     "paya_lebar_central": {
       "name": "Paya Lebar Central",
       "short_name": "PLC",
-      "districts": [14],
+      "districts": [
+        14
+      ],
       "priority": "medium",
       "description": "Commercial hub with excellent connectivity",
       "completion": "2030",
@@ -52,7 +59,9 @@
     "woodlands_regional_centre": {
       "name": "Woodlands Regional Centre",
       "short_name": "WRC",
-      "districts": [25],
+      "districts": [
+        25
+      ],
       "priority": "medium",
       "description": "Northern gateway and regional hub",
       "completion": "2030",
@@ -68,7 +77,9 @@
     "punggol_digital_district": {
       "name": "Punggol Digital District",
       "short_name": "PDD",
-      "districts": [19],
+      "districts": [
+        19
+      ],
       "priority": "medium",
       "description": "Singapore's tech and innovation hub",
       "completion": "2028",
@@ -84,7 +95,9 @@
     "tampines_regional_centre": {
       "name": "Tampines Regional Centre",
       "short_name": "TRC",
-      "districts": [18],
+      "districts": [
+        18
+      ],
       "priority": "medium",
       "description": "Eastern regional centre with mature amenities",
       "completion": "established",
@@ -99,7 +112,11 @@
     "kallang_riverside": {
       "name": "Kallang Riverside",
       "short_name": "KR",
-      "districts": [12, 13, 14],
+      "districts": [
+        12,
+        13,
+        14
+      ],
       "priority": "medium",
       "description": "Urban waterfront rejuvenation",
       "completion": "2030",
@@ -114,7 +131,9 @@
     "one_north": {
       "name": "one-north",
       "short_name": "ON",
-      "districts": [5],
+      "districts": [
+        5
+      ],
       "priority": "medium",
       "description": "Research and innovation cluster",
       "completion": "established",
@@ -130,7 +149,9 @@
     "marina_south": {
       "name": "Marina South",
       "short_name": "MS",
-      "districts": [1],
+      "districts": [
+        1
+      ],
       "priority": "medium",
       "description": "CBD extension with mixed-use development",
       "completion": "2030",
@@ -145,7 +166,10 @@
     "tengah": {
       "name": "Tengah",
       "short_name": "TG",
-      "districts": [22, 23],
+      "districts": [
+        22,
+        23
+      ],
       "priority": "low",
       "description": "Singapore's first car-lite HDB town (mainly HDB)",
       "completion": "2030",
@@ -160,7 +184,9 @@
     "bidadari": {
       "name": "Bidadari",
       "short_name": "BD",
-      "districts": [13],
+      "districts": [
+        13
+      ],
       "priority": "low",
       "description": "New mature estate with heritage elements",
       "completion": "established",
@@ -172,11 +198,5 @@
       ],
       "score_points": 3
     }
-  },
-  "priority_scoring": {
-    "description": "Score points based on zone priority",
-    "high": 6,
-    "medium": 4,
-    "low": 2
   }
 }

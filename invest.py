@@ -1067,6 +1067,7 @@ Examples:
 
     # --- AI-callable technical scorer ---
     if args.score:
+        warn_if_stale_data()  # this path consumes the cached datasets too
         raw = args.score
         if raw.startswith("@"):
             with open(raw[1:]) as f:
@@ -1126,6 +1127,7 @@ Examples:
 
     # Handle --from-review (standalone mode: generate report from reviewed JSON)
     if args.from_review:
+        warn_if_stale_data()  # final report consumes cached datasets too
         print(f"\nLoading reviewed analysis: {args.from_review}", file=sys.stderr)
         report_level, reviewed_listings = load_reviewed_analysis(args.from_review)
         print(f"  Loaded {len(reviewed_listings)} listings", file=sys.stderr)

@@ -71,8 +71,8 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1515  # calibrated: mean MMR of listings DB (Jun 2026)
-MMR_NORM_SCALE = 40     # calibrated: sd≈186 on /1000, full range ≈ 158-785
+MMR_NORM_CENTER = 1512  # calibrated: mean MMR of listings DB (Jun 2026)
+MMR_NORM_SCALE = 30     # calibrated: sd≈190 on /1000, full range ≈ 144-833
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
 SCORE1000_TIER2_MIN = 450  # Consider

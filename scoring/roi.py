@@ -350,7 +350,7 @@ def quick_roi_estimate(
 
     # Annual costs (simplified)
     annual_costs = sqft * 0.35 * 12  # MCST
-    annual_costs += monthly_rent * 2  # Vacancy + agent
+    annual_costs += monthly_rent * 1.25  # Vacancy (0.75) + agent (0.5), matches full calculator
     annual_costs += 1800  # Repairs/insurance
     annual_costs += annual_rent * 0.15  # Property tax estimate
 

@@ -91,23 +91,28 @@ class TestSSDCalculation:
         self.calc = CostCalculator()
 
     def test_ssd_within_1_year(self):
-        """SSD within 1 year: 12%."""
-        assert self.calc.calculate_ssd(2_500_000, 0) == 300_000
-        assert self.calc.calculate_ssd(2_500_000, 0.5) == 300_000
+        """SSD within 1 year: 16% (post Jul-2025 schedule)."""
+        assert self.calc.calculate_ssd(2_500_000, 0) == 400_000
+        assert self.calc.calculate_ssd(2_500_000, 0.5) == 400_000
 
     def test_ssd_1_to_2_years(self):
-        """SSD 1-2 years: 8%."""
-        assert self.calc.calculate_ssd(2_500_000, 1) == 200_000
-        assert self.calc.calculate_ssd(2_500_000, 1.5) == 200_000
+        """SSD 1-2 years: 12%."""
+        assert self.calc.calculate_ssd(2_500_000, 1) == 300_000
+        assert self.calc.calculate_ssd(2_500_000, 1.5) == 300_000
 
     def test_ssd_2_to_3_years(self):
-        """SSD 2-3 years: 4%."""
-        assert self.calc.calculate_ssd(2_500_000, 2) == 100_000
-        assert self.calc.calculate_ssd(2_500_000, 2.5) == 100_000
+        """SSD 2-3 years: 8%."""
+        assert self.calc.calculate_ssd(2_500_000, 2) == 200_000
+        assert self.calc.calculate_ssd(2_500_000, 2.5) == 200_000
 
-    def test_ssd_after_3_years(self):
-        """SSD after 3 years: 0%."""
-        assert self.calc.calculate_ssd(2_500_000, 3) == 0
+    def test_ssd_3_to_4_years(self):
+        """SSD 3-4 years: 4%."""
+        assert self.calc.calculate_ssd(2_500_000, 3) == 100_000
+        assert self.calc.calculate_ssd(2_500_000, 3.5) == 100_000
+
+    def test_ssd_after_4_years(self):
+        """SSD after 4 years: 0%."""
+        assert self.calc.calculate_ssd(2_500_000, 4) == 0
         assert self.calc.calculate_ssd(2_500_000, 5) == 0
         assert self.calc.calculate_ssd(2_500_000, 7) == 0
 
@@ -203,8 +208,8 @@ class TestCostBreakdown:
         # Property tax on AV of $60,000
         assert breakdown.property_tax > 0
 
-        # Vacancy cost: 1.5 months * $5000 = $7,500
-        assert breakdown.vacancy_cost == 7_500
+        # Vacancy cost: 0.75 months * $5000 = $3,750 (~6% vacancy)
+        assert breakdown.vacancy_cost == 3_750
 
         # Agent rental: 0.5 months * $5000 = $2,500
         assert breakdown.agent_rental_fee == 2_500
