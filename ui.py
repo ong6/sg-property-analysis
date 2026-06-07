@@ -76,6 +76,8 @@ def load_rankings() -> dict:
             "price": int(float(r["price"])) if r.get("price") else None,
             "psf": float(r["psf"]) if r.get("psf") else None,
             "district": r.get("district") or rec.get("district") or "",
+            "agent_rating": r.get("agent_rating") or "",
+            "agent_eval_date": r.get("agent_eval_date") or "",
             "sqft": rec.get("sqft"),
             "built_year": rec.get("built_year"),
             "tenure": rec.get("tenure") or "",
@@ -182,6 +184,7 @@ function render() {{
       <td>${{fmtPrice(r.price)}}</td>
       <td>${{fmtPsf(r.psf)}}</td>
       <td>${{esc(r.district)}}</td>
+      <td>${{agentBadge(r.agent_rating, r.agent_eval_date)}}</td>
       <td class="dim">${{r.built_year ?? "-"}}</td>
       <td class="dim">${{esc(r.mrt_info || "-")}}</td>
       <td class="links">
@@ -192,6 +195,14 @@ function render() {{
   document.getElementById("shown").textContent = rows.length;
 }}
 function esc(s) {{ const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }}
+function agentBadge(rating, date) {{
+  if (!rating) return '<span class="dim">-</span>';
+  const r = rating.toLowerCase();
+  const color = r.includes("buy") ? "background:#1c3326;color:#3fb950"
+              : r.includes("avoid") ? "background:#33201c;color:#f85149"
+              : "background:#332d1c;color:#e3b341";
+  return `<span class="chip" style="${{color}}" title="AI evaluation ${{esc(date)}}">${{esc(rating)}}</span>`;
+}}
 function sortBy(k) {{
   if (sortKey === k) sortAsc = !sortAsc; else {{ sortKey = k; sortAsc = (k === "rank" || k === "project_name"); }}
   render();
@@ -213,6 +224,7 @@ _TABLE = """<div style="padding:0 24px 4px" class="dim"><span id="shown">0</span
     <th onclick="sortBy('price')">Price</th>
     <th onclick="sortBy('psf')">PSF</th>
     <th onclick="sortBy('district')">District</th>
+    <th onclick="sortBy('agent_rating')">Agent eval</th>
     <th onclick="sortBy('built_year')">Built</th>
     <th>MRT</th>
     <th>Links</th>
