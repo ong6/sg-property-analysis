@@ -77,3 +77,51 @@ class TestArena:
         ]
         report = format_arena_report(run_arena(listings))
         assert "Champion" in report and "Alpha" in report
+
+
+class TestBrackets:
+    def test_brackets_split_by_unit_type(self):
+        from scoring.arena import run_brackets
+        listings = []
+        for i in range(3):
+            l2 = _fighter_listing(f"P{i}", _comps(appreciation=i * 2))
+            l2.beds = 2
+            l3 = _fighter_listing(f"P{i}", _comps(appreciation=-i))
+            l3.beds = 3
+            listings += [l2, l3]
+        brackets = run_brackets(listings)
+        assert set(brackets) == {"2BR", "3BR"}
+        assert all(f.beds == 2 for f in brackets["2BR"])
+        assert all(f.beds == 3 for f in brackets["3BR"])
+        # within-bracket round-robin: each fighter fought the other two
+        assert all(f.fights == 2 for f in brackets["2BR"])
+
+    def test_unknown_beds_excluded_from_brackets(self):
+        from scoring.arena import run_brackets
+        a = _fighter_listing("A", _comps(appreciation=1))   # beds None
+        b = _fighter_listing("B", _comps(appreciation=2))
+        b.beds = 2
+        c = _fighter_listing("C", _comps(appreciation=3))
+        c.beds = 2
+        brackets = run_brackets([a, b, c])
+        assert set(brackets) == {"2BR"}
+        assert len(brackets["2BR"]) == 2
+
+    def test_four_plus_bracket(self):
+        from scoring.arena import bracket_label
+        assert bracket_label(4) == "4BR+"
+        assert bracket_label(5) == "4BR+"
+        assert bracket_label(2) == "2BR"
+        assert bracket_label(None) is None
+
+    def test_brackets_report_renders(self):
+        from scoring.arena import run_brackets, format_brackets_report, run_arena
+        listings = []
+        for i in range(3):
+            l = _fighter_listing(f"P{i}", _comps(appreciation=i))
+            l.beds = 2
+            listings.append(l)
+        brackets = run_brackets(listings)
+        report = format_brackets_report(brackets, run_arena(listings))
+        assert "2BR bracket" in report
+        assert "Open division" in report

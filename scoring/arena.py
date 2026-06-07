@@ -177,6 +177,42 @@ def run_arena(scored_listings: list) -> list[Fighter]:
     return fighters
 
 
+def bracket_label(beds: Optional[int]) -> Optional[str]:
+    """Weight-class label for a bedroom count. None = no bracket (unknown)."""
+    if not beds:
+        return None
+    if beds >= 4:
+        return "4BR+"
+    return f"{beds}BR"
+
+
+def run_brackets(scored_listings: list) -> dict[str, list[Fighter]]:
+    """Run separate round-robins per bedroom bracket (2BR vs 2BR, 3BR vs 3BR…).
+
+    Cross-type fights conflate unit-type structure with condo quality — 2BRs
+    systematically win yield/price-band, 3BRs win family-demand appreciation.
+    Brackets make every fight like-for-like; the all-types ranking remains
+    available as the 'open' division.
+
+    Returns {bracket_label: fighters sorted by Elo} for brackets with >=2
+    contenders, ordered 1BR, 2BR, 3BR, 4BR+. Unknown-bed listings are
+    excluded from brackets (they still appear in the open division).
+    """
+    by_bracket: dict[str, list] = {}
+    for s in scored_listings:
+        label = bracket_label(s.beds)
+        if label:
+            by_bracket.setdefault(label, []).append(s)
+
+    order = {"1BR": 1, "2BR": 2, "3BR": 3, "4BR+": 4}
+    results: dict[str, list[Fighter]] = {}
+    for label in sorted(by_bracket, key=lambda b: order.get(b, 9)):
+        fighters = run_arena(by_bracket[label])
+        if len(fighters) >= 2:
+            results[label] = fighters
+    return results
+
+
 def build_referee_packet(fighters: list[Fighter], top_n: int = 15) -> dict:
     """Data-quality packet for the AI referee.
 
@@ -260,9 +296,15 @@ def build_referee_packet(fighters: list[Fighter], top_n: int = 15) -> dict:
     return packet
 
 
-def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
+def format_arena_report(
+    fighters: list[Fighter],
+    top_n: int = 25,
+    title: str = "Condo Arena — pairwise value tournament",
+    heading_level: int = 1,
+) -> str:
     """Markdown report: Elo table, frontier, champion analysis."""
-    lines = ["# Condo Arena — pairwise value tournament", ""]
+    H = "#" * heading_level
+    lines = [f"{H} {title}", ""]
     n = len(fighters)
     lines.append(f"{n} contenders (condo × unit type), {n*(n-1)//2} fights (round-robin), "
                  f"dimensions: {', '.join(f'{d} {int(w*100)}%' for d, (_k, w) in DIMENSIONS.items())}")
@@ -286,7 +328,7 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
     lines.append("")
 
     frontier = [f for f in fighters if f.on_frontier]
-    lines.append(f"## Pareto frontier ({len(frontier)} condos)")
+    lines.append(f"{H}# Pareto frontier ({len(frontier)} condos)")
     lines.append("")
     lines.append("Not beaten on every dimension by any other contender — the efficient set:")
     for f in frontier:
@@ -300,7 +342,7 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
         champ = fighters[0]
         s = champ.listing
         rel = (s.score_breakdown or {}).get("relative_value", {})
-        lines.append("## Champion")
+        lines.append(f"{H}# Champion")
         lines.append("")
         champ_beds = f" ({champ.beds}BR)" if champ.beds else ""
         lines.append(f"**{champ.name}{champ_beds}** — Elo {champ.elo:.0f}, "
@@ -317,3 +359,56 @@ def format_arena_report(fighters: list[Fighter], top_n: int = 25) -> str:
                      "evaluation (research, red flags) on the champion before acting.")
 
     return "\n".join(lines)
+
+
+def format_brackets_report(
+    brackets: dict[str, list[Fighter]],
+    open_fighters: Optional[list[Fighter]] = None,
+    top_n: int = 20,
+) -> str:
+    """Combined report: one section per weight-class bracket + open division."""
+    lines = [
+        "# Condo Arena — weight-class brackets",
+        "",
+        "Like-for-like fights: each unit type only fights its own bracket "
+        "(cross-type fights conflate unit-type structure — 2BRs win yield, "
+        "3BRs win family appreciation — with condo quality). The open "
+        "division (all types) is the pound-for-pound view.",
+        "",
+    ]
+    for label, fighters in brackets.items():
+        lines.append(format_arena_report(
+            fighters, top_n=top_n,
+            title=f"{label} bracket ({len(fighters)} contenders)",
+            heading_level=2,
+        ))
+        lines.append("")
+    if open_fighters:
+        lines.append(format_arena_report(
+            open_fighters, top_n=top_n,
+            title=f"Open division — all types, pound-for-pound ({len(open_fighters)} contenders)",
+            heading_level=2,
+        ))
+    return "\n".join(lines)
+
+
+def build_brackets_referee_packet(
+    brackets: dict[str, list[Fighter]],
+    top_n_per: int = 8,
+) -> dict:
+    """Referee packet across brackets — top contenders per bracket, tagged."""
+    merged: dict[str, Any] = {
+        "generated_at": datetime.now().isoformat(),
+        "contenders": [],
+        "auto_flags": [],
+    }
+    for label, fighters in brackets.items():
+        p = build_referee_packet(fighters, top_n=top_n_per)
+        for c in p["contenders"]:
+            c["bracket"] = label
+            merged["contenders"].append(c)
+        for fl in p["auto_flags"]:
+            fl["bracket"] = label
+            merged["auto_flags"].append(fl)
+        merged["referee_instructions"] = p["referee_instructions"]
+    return merged

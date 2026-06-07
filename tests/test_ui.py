@@ -13,9 +13,13 @@ class TestLoadRankings:
         data = ui.load_rankings()
         assert "run_date" in data and "rows" in data
         if data["rows"]:
-            # all rows from one run, sorted by rank
-            ranks = [r["rank"] for r in data["rows"]]
-            assert ranks == sorted(ranks)
+            # within each bracket, rows sorted by rank
+            from collections import defaultdict
+            by_bracket = defaultdict(list)
+            for r in data["rows"]:
+                by_bracket[r["bracket"]].append(r["rank"])
+            for ranks in by_bracket.values():
+                assert ranks == sorted(ranks)
 
     def test_rows_have_links(self):
         data = ui.load_rankings()
@@ -42,6 +46,7 @@ class TestRenderIndex:
 
     def test_escapes_html_in_names(self):
         evil = {"run_date": "2026-06-07", "rows": [{
+            "bracket": "2BR",
             "rank": 1, "project_name": "<script>alert(1)</script>", "beds": 2,
             "elo": 1500, "record": "1-0-0", "win_rate_pct": 100, "on_frontier": False,
             "mmr": 1500.0, "score_1000": 500, "price": 1000000, "psf": 1500.0,
