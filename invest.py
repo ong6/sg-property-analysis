@@ -1253,9 +1253,10 @@ Examples:
         with open(packet_path, "w") as f:
             json.dump(packet, f, indent=2, ensure_ascii=False)
 
-        # Append full results to the CSV history (the data backbone)
+        # Append full results to the CSV history (the data backbone).
+        # Timestamped (not just dated) so multiple same-day runs stay distinct.
         import csv as _csv
-        run_date = datetime.now().strftime("%Y-%m-%d")
+        run_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         arena_csv = Path("data") / "arena_results.csv"
         write_header = not arena_csv.exists()
         with open(arena_csv, "a", newline="") as f:
