@@ -236,7 +236,7 @@ def warn_if_stale_data():
 
 def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
     """Build URA cache from downloaded CSV files (supports glob patterns)."""
-    from scrapers.ura_scraper import load_ura_csv
+    from scrapers.ura_scraper import load_ura_csv_grouped
 
     cache = load_ura_cache()
 
@@ -260,14 +260,37 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
     for csv_path in csv_files:
         print(f"  {csv_path}", file=sys.stderr)
         try:
-            history = load_ura_csv(csv_path)
-
-            if history.transactions:
+            # One history PER PROJECT — district CSVs hold many projects; the
+            # old single-history path mixed their PSF under one arbitrary name.
+            histories = load_ura_csv_grouped(csv_path)
+            for history in histories:
+                if not history.transactions:
+                    continue
                 project_key = history.project_name.lower()
+
+                # Project metadata from its transactions
+                import re as _re
+                from collections import Counter as _Counter
+                districts = _Counter(t.district for t in history.transactions if t.district)
+                segments = _Counter(t.market_segment for t in history.transactions if t.market_segment)
+                tenures = _Counter(t.tenure for t in history.transactions if t.tenure)
+                district = f"D{districts.most_common(1)[0][0]:02d}" if districts else None
+                tenure = tenures.most_common(1)[0][0] if tenures else None
+                lease_start_year = None
+                if tenure:
+                    m = _re.search(r"commencing [fF]rom (\d{4})", tenure)
+                    if m:
+                        lease_start_year = int(m.group(1))
+
                 cache_entry = {
                     "project_name": history.project_name,
+                    "district": district,
+                    "market_segment": segments.most_common(1)[0][0] if segments else None,
+                    "tenure": tenure,
+                    "lease_start_year": lease_start_year,
                     "transaction_count": history.transaction_count,
                     "avg_psf_current": history.avg_psf_current_year,
+                    "median_psf": history.avg_psf_current_year,  # yearly figures are medians since v2.4
                     "avg_psf_5yr_ago": history.avg_psf_5yr_ago,
                     "appreciation_1yr": history.appreciation_1yr,
                     "appreciation_3yr": history.appreciation_3yr,
@@ -302,6 +325,7 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
                           file=sys.stderr)
                 else:
                     print(f"    -> {history.project_name}: insufficient data for CAGR", file=sys.stderr)
+            print(f"    {len(histories)} project(s) in file", file=sys.stderr)
         except Exception as e:
             print(f"    -> Error: {e}", file=sys.stderr)
 
@@ -565,6 +589,7 @@ def score_condo(inputs: dict, ura_data: dict | None = None) -> dict:
         "factual": {
             "appreciation_rate_pct": round(scored.appreciation_rate * 100, 2),
             "appreciation_source": scored.appreciation_source,
+            "relative_value": scored.score_breakdown.get("relative_value"),
             "estimated_monthly_rent": round(scored.estimated_monthly_rent) if scored.estimated_monthly_rent else None,
             "gross_yield_pct": scored.estimated_gross_yield or None,
             "nearest_mrt": scored.nearest_mrt,
