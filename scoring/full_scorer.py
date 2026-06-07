@@ -477,15 +477,25 @@ class FullScorer:
         built_year = listing.get("built_year")
         current_year = self._current_year
 
+        # "ura_resale_only" is exempt from the discount ONLY for mature
+        # projects. For very young projects (<5yr since TOP) the "resales"
+        # are sub-sales/early flips bought at developer prices, so even the
+        # resale-only CAGR captures the launch ramp and must be discounted.
+        resale_only_mature = (
+            appreciation_source == "ura_resale_only"
+            and built_year is not None
+            and (current_year - built_year) >= 5
+        )
+
         # No adjustment if:
         # - No built_year known (can't determine age)
-        # - Source is already "ura_resale_only" (already filtered for bias)
+        # - Source is resale-only AND the project is mature (genuinely clean)
         # - Source is "regional_baseline" (nothing to adjust)
         # - Rate is negative (no excess to discount)
         # - URA data indicates no new-launch bias
         if (
-            not built_year
-            or appreciation_source == "ura_resale_only"
+            built_year is None
+            or resale_only_mature
             or appreciation_source in {"default", "regional_baseline"}
             or raw_rate <= 0
             or not has_new_launch_bias

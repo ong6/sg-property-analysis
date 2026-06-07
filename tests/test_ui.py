@@ -49,10 +49,19 @@ class TestRenderIndex:
             "mrt_info": "", "url": "https://x", "maps_url": "https://maps",
         }]}
         page = ui.render_index(evil)
-        # name reaches the page only inside the JSON blob, JSON-escaped —
-        # never as raw HTML markup
-        assert "<script>alert(1)</script>" not in page.replace(
-            json.dumps("<script>alert(1)</script>"), "")
+        # The critical inline-JSON vector: a literal "</script>" coming from
+        # data must never appear unescaped — it would close the script block
+        # and inject markup. The embed escapes "</" as "<\/".
+        assert "alert(1)</script>" not in page   # unescaped form absent
+        assert "alert(1)<\\/script>" in page     # escaped form present
+
+    def test_legacy_csv_without_run_date_column(self, tmp_path, monkeypatch):
+        # Older CSVs lack run_date — must not crash, just render empty state
+        legacy = tmp_path / "arena_results.csv"
+        legacy.write_text("rank,project_name\n1,Test Condo\n")
+        monkeypatch.setattr(ui, "ARENA_CSV", str(legacy))
+        data = ui.load_rankings()
+        assert data == {"run_date": None, "rows": []}
 
 
 class TestHTTPServer:

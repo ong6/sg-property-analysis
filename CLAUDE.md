@@ -70,6 +70,11 @@ psf/age components, suspect sqft), verify the top contenders' stats are real
 `output/arena_latest.md`: confirmed ranks, demoted contenders + reasons, and
 run confidence. The arena ranks stats; you certify the stats deserve to rank.
 
+Each run also writes a timestamped archive (`output/arena_<ts>.md`) since
+`arena_latest.md` is overwritten per run. **Local rankings UI**:
+`python ui.py` → http://127.0.0.1:8642 — sortable/filterable table with
+one-click PropertyGuru listing + Google Maps links per contender.
+
 Supporting data backbone (CSV, append-only — grep/analyze freely):
 `data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`
 (every scoring run), `data/arena_results.csv` (every tournament),

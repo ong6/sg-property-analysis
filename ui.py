@@ -39,8 +39,11 @@ def load_rankings() -> dict:
     if not all_rows:
         return {"run_date": None, "rows": []}
 
-    latest = max(r["run_date"] for r in all_rows)
-    rows = [r for r in all_rows if r["run_date"] == latest]
+    # Tolerate legacy CSVs without a run_date column (None from DictReader)
+    latest = max((r.get("run_date") or "" for r in all_rows), default="")
+    if not latest:
+        return {"run_date": None, "rows": []}
+    rows = [r for r in all_rows if r.get("run_date") == latest]
 
     # Join listing details by URL
     details = {}
@@ -231,7 +234,10 @@ def render_index(rankings: dict) -> str:
         district_opts=district_opts,
         beds_opts=beds_opts,
         body=_TABLE if rows else _EMPTY,
-        data_json=json.dumps(rows),
+        # "</" must be escaped when embedding JSON in a <script> block — a
+        # scraped name containing "</script>" would otherwise close the tag
+        # and inject markup (standard inline-JSON hardening).
+        data_json=json.dumps(rows).replace("</", "<\\/"),
     )
 
 

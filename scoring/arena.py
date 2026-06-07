@@ -168,7 +168,8 @@ def run_arena(scored_listings: list) -> list[Fighter]:
                     a.draws += 1
                     b.draws += 1
             else:
-                a_score = first_results[(i, j)] if (i, j) in first_results else first_results[(j, i)]
+                # pairs are always generated with i < j, so (i, j) is the key
+                a_score = first_results[(i, j)]
             _update_elo(a, b, a_score)
 
     _pareto_frontier(fighters)
