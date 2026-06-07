@@ -43,6 +43,49 @@ class DistrictScorer:
         self.district_profiles = self._load_district_profiles()
         self.infra_data = self._load_infrastructure_data()
         self.zone_data = self._load_government_zones()
+        self.ura_district_rates = self._derive_ura_district_rates()
+
+    @staticmethod
+    def _derive_ura_district_rates() -> dict:
+        """Median URA-measured appreciation per district, where coverage allows.
+
+        The static profile `historical_appreciation` values are regional
+        baselines restated (every RCR district = 5.8%, every OCR = 3.7%), so
+        the 30% 'historical' axis was a disguised region prior that double-
+        counted region. Where the URA cache and listings DB overlap on >=3
+        projects, use measured per-district data instead.
+        """
+        import statistics
+        try:
+            with open(os.path.join(_DATA_DIR, "ura_cache.json")) as f:
+                ura = json.load(f)
+            ura = ura.get("projects", ura)
+            with open(os.path.join(_DATA_DIR, "listings_db.json")) as f:
+                db = json.load(f)
+            listings = db.get("listings", {})
+            if isinstance(listings, dict):
+                listings = list(listings.values())
+        except (OSError, json.JSONDecodeError):
+            return {}
+
+        proj_to_district = {}
+        for l in listings:
+            pn = (l.get("project_name") or "").lower()
+            d = str(l.get("district") or "").upper().replace("D", "").lstrip("0")
+            if pn and d:
+                proj_to_district[pn] = d
+
+        by_district: dict[str, list[float]] = {}
+        for key, entry in ura.items():
+            d = proj_to_district.get(key)
+            if d and isinstance(entry, dict) and entry.get("annualized_appreciation") is not None:
+                by_district.setdefault(d, []).append(entry["annualized_appreciation"])
+
+        return {
+            d: {"rate": statistics.median(vals) / 100, "projects": len(vals)}
+            for d, vals in by_district.items()
+            if len(vals) >= 3
+        }
 
     def _load_district_profiles(self) -> dict:
         """Load district profiles data (reuses FutureScorer's module cache)."""
@@ -103,7 +146,11 @@ class DistrictScorer:
         result.govt_zones = profile.get("govt_zones", [])
 
         # A. Historical Appreciation Score (0-100)
-        result.historical_score = self._score_historical(profile)
+        # Prefer URA-measured per-district data over the profile's regional prior.
+        derived = self.ura_district_rates.get(str(district_num))
+        if derived:
+            result.historical_appreciation = derived["rate"]
+        result.historical_score = self._score_historical_rate(result.historical_appreciation)
 
         # B. Liquidity Score (0-100)
         result.liquidity_score = self._score_liquidity(profile)
@@ -128,13 +175,22 @@ class DistrictScorer:
 
         # Build key catalysts list
         result.key_catalysts = self._build_catalysts(profile, result, future_mrt)
+        if derived:
+            result.key_catalysts.append(
+                f"URA-measured appreciation {derived['rate']*100:.1f}%/yr ({derived['projects']} projects)"
+            )
 
         return result
 
     def _score_historical(self, profile: dict) -> float:
-        """Score historical appreciation (0-100).
+        """Score historical appreciation from a profile dict (0-100)."""
+        return self._score_historical_rate(profile.get("historical_appreciation", 0.02))
 
-        Appreciation rate mapping:
+    @staticmethod
+    def _score_historical_rate(rate: float) -> float:
+        """Score an appreciation rate (decimal) on the 0-100 axis.
+
+        Rate mapping:
         - >= 4%: 100
         - >= 3.5%: 85
         - >= 3%: 70
@@ -142,8 +198,6 @@ class DistrictScorer:
         - >= 2%: 40
         - < 2%: 25
         """
-        rate = profile.get("historical_appreciation", 0.02)
-
         if rate >= 0.04:
             return 100
         elif rate >= 0.035:

@@ -168,7 +168,7 @@ class CostBreakdown:
     property_tax: float = 0
     mcst: float = 0
     agent_rental_fee: float = 0  # 0.5 months/year avg
-    vacancy_cost: float = 0  # 1.5 months/year rent lost
+    vacancy_cost: float = 0  # ~0.75 months/year rent lost (see cost_parameters.json)
     repairs_insurance: float = 1800
 
     # Exit costs

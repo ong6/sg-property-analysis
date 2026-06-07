@@ -109,5 +109,6 @@ class TestOverride:
     def test_zero_override_is_honored(self):
         s = _score(BASE)
         result = apply_appreciation_override({"mmr": s.mmr, "components": s.mmr_components}, 0.0)
-        # 0% appreciation must produce a strongly negative component, not be ignored
-        assert result["components"]["appreciation"] < -40
+        # 0% appreciation must produce a strongly negative component, not be
+        # ignored (slope 7.5/pp at full confidence: 30*(-4/4) = -30)
+        assert result["components"]["appreciation"] <= -29

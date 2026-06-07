@@ -809,16 +809,29 @@ class FullScorer:
         return 0
 
     def _get_momentum(self, listing: dict) -> tuple[Optional[float], str]:
-        """Get appreciation momentum and data coverage for a listing."""
+        """Get appreciation momentum and data coverage for a listing.
+
+        Prefers an explicit appreciation_momentum field; otherwise derives it
+        from the cache's 1yr vs annualized 5yr rates (recent above long-term
+        trend = accelerating). Without the fallback this signal was always
+        None — the cache builder never writes appreciation_momentum.
+        """
         project_name = listing.get("project_name") or listing.get("title", "")
         project_key = project_name.lower()
 
         data = self._fuzzy_ura_lookup(project_key)
         if data:
-            return (
-                data.get("appreciation_momentum"),
-                data.get("data_coverage", "none"),
-            )
+            momentum = data.get("appreciation_momentum")
+            if momentum is not None:
+                return momentum, data.get("data_coverage", "none")
+
+            # Derive: relative gap between recent (1yr) and long-term rate
+            recent = data.get("appreciation_1yr")
+            long_term = data.get("annualized_appreciation")
+            if recent is not None and long_term is not None and abs(long_term) >= 0.5:
+                derived = (recent - long_term) / abs(long_term)
+                derived = max(-1.0, min(1.0, derived))
+                return derived, "derived_1yr_vs_5yr"
 
         return None, "none"
 

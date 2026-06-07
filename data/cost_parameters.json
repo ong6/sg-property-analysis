@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-02-24",
+  "last_updated": "2026-06-07",
   "mcst_rate_per_sqft": 0.35,
   "agent_rental_months_per_year": 0.5,
   "agent_sale_commission": 0.02,
-  "vacancy_months_per_year": 1.5,
+  "vacancy_months_per_year": 0.75,
   "legal_fee_buy": 3500,
   "legal_fee_sell": 3000,
   "repairs_per_year": 1500,
