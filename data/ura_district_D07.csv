@@ -1,0 +1,968 @@
+Project Name,Transacted Price ($),Area (SQFT),Unit Price ($ PSF),Sale Date,Street Name,Type of Sale,Type of Area,Area (SQM),Unit Price ($ PSM),Nett Price($),Property Type,Number of Units,Tenure,Postal District,Market Segment,Floor Level
+DUO RESIDENCES,"2,110,000",968.76,"2,178",May-26,FRASER STREET,Resale,Strata,90,"23,444",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+AUREA,"2,060,000",710.42,"2,900",May-26,BEACH ROAD,New Sale,Strata,66,"31,212",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+CITY GATE,"1,120,000",570.49,"1,963",May-26,BEACH ROAD,Resale,Strata,53,"21,132",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+SOUTHBANK,"1,850,000",904.18,"2,046",May-26,NORTH BRIDGE ROAD,Resale,Strata,84,"22,024",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,31 to 35
+SUNSHINE PLAZA,"1,450,000","1,130.22","1,283",May-26,PRINSEP LINK,Resale,Strata,105,"13,810",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,01 to 05
+CONCOURSE SKYLINE,"2,850,000","1,410.08","2,021",May-26,BEACH ROAD,Resale,Strata,131,"21,756",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"6,008,888","1,808.35","3,323",May-26,TAN QUEE LAN STREET,Sub Sale,Strata,168,"35,767",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+BURLINGTON SQUARE,"1,778,888","1,065.64","1,669",May-26,BENCOOLEN STREET,Resale,Strata,99,"17,969",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"1,450,000",645.84,"2,245",May-26,FRASER STREET,Resale,Strata,60,"24,167",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,568,000",753.48,"3,408",Apr-26,BEACH ROAD,Resale,Strata,70,"36,686",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+THE PLAZA,"980,000",807.3,"1,214",Apr-26,BEACH ROAD,Resale,Strata,75,"13,067",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CITY GATE,"1,528,000",678.13,"2,253",Apr-26,BEACH ROAD,Resale,Strata,63,"24,254",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+MIDTOWN MODERN,"1,200,000",409.03,"2,934",Apr-26,TAN QUEE LAN STREET,Sub Sale,Strata,38,"31,579",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,580,000",721.19,"2,191",Apr-26,FRASER STREET,Resale,Strata,67,"23,582",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+THE M,"1,980,000",721.19,"2,745",Apr-26,MIDDLE ROAD,Resale,Strata,67,"29,552",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+SOUTHBANK,"1,800,000",958,"1,879",Apr-26,NORTH BRIDGE ROAD,Resale,Strata,89,"20,225",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+AUREA,"3,040,720","1,001.05","3,038",Apr-26,BEACH ROAD,New Sale,Strata,93,"32,696",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,380,000",645.84,"2,137",Apr-26,FRASER STREET,Resale,Strata,60,"23,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,850,000",753.48,"2,455",Apr-26,BEACH ROAD,Resale,Strata,70,"26,429",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,822,000","1,334.74","2,114",Apr-26,BEACH ROAD,Resale,Strata,124,"22,758",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+BURLINGTON SQUARE,"2,775,000","2,174.33","1,276",Apr-26,BENCOOLEN STREET,Resale,Strata,202,"13,738",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"2,640,000","1,184.04","2,230",Apr-26,FRASER STREET,Resale,Strata,110,"24,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+AUREA,"1,831,400",645.84,"2,836",Apr-26,BEACH ROAD,New Sale,Strata,60,"30,523",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,837,268",635.08,"2,893",Apr-26,BEACH ROAD,New Sale,Strata,59,"31,140",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+DUO RESIDENCES,"3,360,000","1,528.49","2,198",Apr-26,FRASER STREET,Resale,Strata,142,"23,662",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,46 to 50
+BURLINGTON SQUARE,"1,538,000",936.47,"1,642",Apr-26,BENCOOLEN STREET,Resale,Strata,87,"17,678",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+THE PLAZA,"975,000",828.83,"1,176",Apr-26,BEACH ROAD,Resale,Strata,77,"12,662",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+AUREA,"2,101,100",710.42,"2,958",Apr-26,BEACH ROAD,New Sale,Strata,66,"31,835",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+AUREA,"2,701,312","1,001.05","2,698",Mar-26,BEACH ROAD,New Sale,Strata,93,"29,046",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+CITY GATE,"1,880,000",904.18,"2,079",Mar-26,BEACH ROAD,Resale,Strata,84,"22,381",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+AUREA,"1,852,600",645.84,"2,869",Mar-26,BEACH ROAD,New Sale,Strata,60,"30,877",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"2,728,300","1,001.05","2,725",Mar-26,BEACH ROAD,New Sale,Strata,93,"29,337",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"2,100,000","1,151.75","1,823",Mar-26,BEACH ROAD,Resale,Strata,107,"19,626",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+AUREA,"2,719,200","1,001.05","2,716",Mar-26,BEACH ROAD,New Sale,Strata,93,"29,239",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,900,000",818.06,"2,323",Mar-26,FRASER STREET,Resale,Strata,76,"25,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"2,120,000","1,151.75","1,841",Mar-26,BEACH ROAD,Resale,Strata,107,"19,813",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+CONCOURSE SKYLINE,"2,150,000","1,162.51","1,849",Mar-26,BEACH ROAD,Resale,Strata,108,"19,907",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+AUREA,"2,095,570",710.42,"2,950",Mar-26,BEACH ROAD,New Sale,Strata,66,"31,751",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,26 to 30
+AUREA,"1,968,000",710.42,"2,770",Mar-26,BEACH ROAD,New Sale,Strata,66,"29,818",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"2,710,026","1,001.05","2,707",Mar-26,BEACH ROAD,New Sale,Strata,93,"29,140",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+CITY GATE,"1,188,000",559.73,"2,122",Mar-26,BEACH ROAD,Resale,Strata,52,"22,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+DUO RESIDENCES,"2,230,000","1,011.82","2,204",Mar-26,FRASER STREET,Resale,Strata,94,"23,723",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+THE M,"908,000",419.8,"2,163",Mar-26,MIDDLE ROAD,Resale,Strata,39,"23,282",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+AUREA,"1,858,000",645.84,"2,877",Mar-26,BEACH ROAD,New Sale,Strata,60,"30,967",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+CITY GATE,"1,138,000",570.49,"1,995",Feb-26,BEACH ROAD,Resale,Strata,53,"21,472",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"1,300,000",409.03,"3,178",Feb-26,TAN QUEE LAN STREET,Resale,Strata,38,"34,211",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+DUO RESIDENCES,"2,640,000","1,184.04","2,230",Feb-26,FRASER STREET,Resale,Strata,110,"24,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+THE M,"1,645,000",613.55,"2,681",Feb-26,MIDDLE ROAD,Resale,Strata,57,"28,860",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+AUREA,"1,939,014",710.42,"2,729",Feb-26,BEACH ROAD,New Sale,Strata,66,"29,379",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,01 to 05
+AUREA,"2,719,000","1,001.05","2,716",Feb-26,BEACH ROAD,New Sale,Strata,93,"29,237",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+DUO RESIDENCES,"2,480,000","1,001.05","2,477",Feb-26,FRASER STREET,Resale,Strata,93,"26,667",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,41 to 45
+DUO RESIDENCES,"2,350,000",947.23,"2,481",Feb-26,FRASER STREET,Resale,Strata,88,"26,705",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,46 to 50
+AUREA,"2,650,000","1,001.05","2,647",Feb-26,BEACH ROAD,New Sale,Strata,93,"28,495",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+SOUTH BEACH RESIDENCES,"6,980,000","1,915.99","3,643",Feb-26,BEACH ROAD,Resale,Strata,178,"39,213",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,31 to 35
+AUREA,"1,965,000",710.42,"2,766",Feb-26,BEACH ROAD,New Sale,Strata,66,"29,773",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,822,000",635.08,"2,869",Feb-26,BEACH ROAD,New Sale,Strata,59,"30,881",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"2,090,000",710.42,"2,942",Feb-26,BEACH ROAD,New Sale,Strata,66,"31,667",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,26 to 30
+CITY GATE,"1,930,000",914.94,"2,109",Feb-26,BEACH ROAD,Resale,Strata,85,"22,706",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+AUREA,"2,078,000",710.42,"2,925",Feb-26,BEACH ROAD,New Sale,Strata,66,"31,485",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,31 to 35
+CITY GATE,"1,510,000",710.42,"2,125",Feb-26,BEACH ROAD,Resale,Strata,66,"22,879",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+SOUTHBANK,"1,872,888",958,"1,955",Feb-26,NORTH BRIDGE ROAD,Resale,Strata,89,"21,044",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+SUNSHINE PLAZA,"1,270,000",764.24,"1,662",Feb-26,PRINSEP LINK,Resale,Strata,71,"17,887",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+AUREA,"1,828,000",645.84,"2,830",Jan-26,BEACH ROAD,New Sale,Strata,60,"30,467",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+CITY GATE,"1,780,000",904.18,"1,969",Jan-26,BEACH ROAD,Resale,Strata,84,"21,190",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"2,245,000","1,011.82","2,219",Jan-26,FRASER STREET,Resale,Strata,94,"23,883",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+AUREA,"1,816,000",635.08,"2,860",Jan-26,BEACH ROAD,New Sale,Strata,59,"30,780",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+CITY GATE,"1,030,000",452.09,"2,278",Jan-26,BEACH ROAD,Resale,Strata,42,"24,524",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"2,350,000","1,162.51","2,021",Jan-26,BEACH ROAD,Resale,Strata,108,"21,759",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+THE M,"1,645,000",635.08,"2,590",Jan-26,MIDDLE ROAD,Resale,Strata,59,"27,881",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+AUREA,"2,674,000","1,001.05","2,671",Jan-26,BEACH ROAD,New Sale,Strata,93,"28,753",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,905,000",645.84,"2,950",Jan-26,BEACH ROAD,New Sale,Strata,60,"31,750",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,200,000",731.95,"3,006",Jan-26,BEACH ROAD,Resale,Strata,68,"32,353",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"3,240,000","1,065.64","3,040",Jan-26,TAN QUEE LAN STREET,Sub Sale,Strata,99,"32,727",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+DUO RESIDENCES,"2,350,000","1,011.82","2,323",Jan-26,FRASER STREET,Resale,Strata,94,"25,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+AUREA,"1,810,000",635.08,"2,850",Jan-26,BEACH ROAD,New Sale,Strata,59,"30,678",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"1,864,000",645.84,"2,886",Jan-26,BEACH ROAD,New Sale,Strata,60,"31,067",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+CITY GATE,"988,888",484.38,"2,042",Jan-26,BEACH ROAD,Resale,Strata,45,"21,975",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+THE BENCOOLEN,"1,698,000","1,033.34","1,643",Dec-25,BENCOOLEN STREET,Resale,Strata,96,"17,688",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"2,648,000",904.18,"2,929",Dec-25,TAN QUEE LAN STREET,Resale,Strata,84,"31,524",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"1,800,000",721.19,"2,496",Dec-25,MIDDLE ROAD,Resale,Strata,67,"26,866",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+AUREA,"1,846,000",645.84,"2,858",Dec-25,BEACH ROAD,New Sale,Strata,60,"30,767",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+THE PLAZA,"890,000",731.95,"1,216",Dec-25,BEACH ROAD,Resale,Strata,68,"13,088",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"3,198,000","1,065.64","3,001",Dec-25,TAN QUEE LAN STREET,New Sale,Strata,99,"32,303",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+AUREA,"5,684,616","1,797.59","3,162",Dec-25,BEACH ROAD,New Sale,Strata,167,"34,040",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+TEXTILE CENTRE,"1,120,000",882.65,"1,269",Dec-25,JALAN SULTAN,Resale,Strata,82,"13,659",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+CITY GATE,"1,700,000",807.3,"2,106",Dec-25,BEACH ROAD,Resale,Strata,75,"22,667",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+MIDTOWN MODERN,"1,300,000",473.62,"2,745",Dec-25,TAN QUEE LAN STREET,Sub Sale,Strata,44,"29,545",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CITY GATE,"1,538,000",699.66,"2,198",Dec-25,BEACH ROAD,Resale,Strata,65,"23,662",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+DUO RESIDENCES,"1,288,000",538.2,"2,393",Nov-25,FRASER STREET,Resale,Strata,50,"25,760",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,973,000",818.06,"2,412",Nov-25,FRASER STREET,Resale,Strata,76,"25,961",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+CITY GATE,"3,383,000","1,668.42","2,028",Nov-25,BEACH ROAD,Resale,Strata,155,"21,826",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+MIDTOWN MODERN,"2,680,000",904.18,"2,964",Nov-25,TAN QUEE LAN STREET,Sub Sale,Strata,84,"31,905",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"1,980,000",742.72,"2,666",Nov-25,MIDDLE ROAD,Resale,Strata,69,"28,696",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN BAY,"2,500,000",731.95,"3,396",Nov-25,BEACH ROAD,New Sale,Strata,68,"36,553","2,485,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+AUREA,"1,798,000",635.08,"2,831",Nov-25,BEACH ROAD,New Sale,Strata,59,"30,475",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,308,888",828.83,"1,579",Nov-25,BENCOOLEN STREET,Resale,Strata,77,"16,999",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+AUREA,"1,971,000",710.42,"2,774",Nov-25,BEACH ROAD,New Sale,Strata,66,"29,864",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+SOUTHBANK,"1,200,000",613.55,"1,956",Nov-25,NORTH BRIDGE ROAD,Resale,Strata,57,"21,053",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+MIDTOWN MODERN,"3,185,000","1,065.64","2,989",Nov-25,TAN QUEE LAN STREET,Sub Sale,Strata,99,"32,172",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SUNSHINE PLAZA,"1,640,000","1,044.11","1,571",Nov-25,PRINSEP LINK,Resale,Strata,97,"16,907",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+AUREA,"1,804,000",635.08,"2,841",Nov-25,BEACH ROAD,New Sale,Strata,59,"30,576",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+MIDTOWN BAY,"2,900,000","1,011.82","2,852",Oct-25,BEACH ROAD,New Sale,Strata,94,"30,698","2,885,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+DUO RESIDENCES,"4,680,000","1,926.76","2,429",Oct-25,FRASER STREET,Resale,Strata,179,"26,145",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,31 to 35
+MIDTOWN BAY,"2,450,000",731.95,"3,328",Oct-25,BEACH ROAD,New Sale,Strata,68,"35,818","2,435,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+AUREA,"1,783,000",635.08,"2,808",Oct-25,BEACH ROAD,New Sale,Strata,59,"30,220",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"2,830,000","1,442.38","1,962",Oct-25,BEACH ROAD,Resale,Strata,134,"21,119",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+SUNSHINE PLAZA,"1,250,000",764.24,"1,636",Oct-25,PRINSEP LINK,Resale,Strata,71,"17,606",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+AUREA,"1,792,000",635.08,"2,822",Oct-25,BEACH ROAD,New Sale,Strata,59,"30,373",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+THE PLAZA,"820,000",678.13,"1,209",Oct-25,BEACH ROAD,Resale,Strata,63,"13,016",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+THE M,"1,105,888",441.32,"2,506",Oct-25,MIDDLE ROAD,Resale,Strata,41,"26,973",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN BAY,"1,720,000",484.38,"3,521",Oct-25,BEACH ROAD,New Sale,Strata,45,"37,902","1,705,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+AUREA,"1,777,000",635.08,"2,798",Oct-25,BEACH ROAD,New Sale,Strata,59,"30,119",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"3,150,000","1,065.64","2,956",Oct-25,TAN QUEE LAN STREET,Sub Sale,Strata,99,"31,818",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,550,000",688.9,"2,250",Oct-25,FRASER STREET,Resale,Strata,64,"24,219",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+BURLINGTON SQUARE,"1,500,000",839.59,"1,787",Oct-25,BENCOOLEN STREET,Resale,Strata,78,"19,231",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+SOUTHBANK,"2,700,000","1,313.21","2,056",Oct-25,NORTH BRIDGE ROAD,Resale,Strata,122,"22,131",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+THE M,"1,930,000",721.19,"2,676",Oct-25,MIDDLE ROAD,Resale,Strata,67,"28,806",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+SOUTH BEACH RESIDENCES,"7,500,000","2,120.51","3,537",Oct-25,BEACH ROAD,Resale,Strata,197,"38,071",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,800,000",882.65,"2,039",Sep-25,BEACH ROAD,Resale,Strata,82,"21,951",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+CITY GATE,"1,470,000",688.9,"2,134",Sep-25,BEACH ROAD,Resale,Strata,64,"22,969",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"1,570,000",710.42,"2,210",Sep-25,BEACH ROAD,Resale,Strata,66,"23,788",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+THE PLAZA,"1,600,000","1,302.44","1,228",Sep-25,BEACH ROAD,Resale,Strata,121,"13,223",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,880,000","1,388.56","2,074",Sep-25,BEACH ROAD,Resale,Strata,129,"22,326",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,300,000",721.19,"3,189",Sep-25,TAN QUEE LAN STREET,Sub Sale,Strata,67,"34,328",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,550,000",710.42,"2,182",Sep-25,BEACH ROAD,Resale,Strata,66,"23,485",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+AUREA,"2,065,000",710.42,"2,907",Sep-25,BEACH ROAD,New Sale,Strata,66,"31,288",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+CITY GATE,"1,525,000",688.9,"2,214",Sep-25,BEACH ROAD,Resale,Strata,64,"23,828",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+CITY GATE,"1,600,000",775.01,"2,064",Sep-25,BEACH ROAD,Resale,Strata,72,"22,222",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"1,550,000",699.66,"2,215",Sep-25,BEACH ROAD,Resale,Strata,65,"23,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+SOUTHBANK,"2,490,000","1,313.21","1,896",Sep-25,NORTH BRIDGE ROAD,Resale,Strata,122,"20,410",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+MIDTOWN BAY,"1,419,888",462.85,"3,068",Sep-25,BEACH ROAD,Sub Sale,Strata,43,"33,021",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"3,250,000","1,065.64","3,050",Sep-25,TAN QUEE LAN STREET,Sub Sale,Strata,99,"32,828",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,550,000","1,442.38","3,155",Sep-25,TAN QUEE LAN STREET,Sub Sale,Strata,134,"33,955",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,139,993",936.47,"2,285",Sep-25,FRASER STREET,Resale,Strata,87,"24,598",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+TEXTILE CENTRE,"1,150,000",882.65,"1,303",Aug-25,JALAN SULTAN,Resale,Strata,82,"14,024",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+AUREA,"1,870,000",645.84,"2,895",Aug-25,BEACH ROAD,New Sale,Strata,60,"31,167",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+BURLINGTON SQUARE,"1,720,888","1,065.64","1,615",Aug-25,BENCOOLEN STREET,Resale,Strata,99,"17,383",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+CITY GATE,"1,420,000",699.66,"2,030",Aug-25,BEACH ROAD,Resale,Strata,65,"21,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+SOUTHBANK,"1,180,000",613.55,"1,923",Aug-25,NORTH BRIDGE ROAD,Resale,Strata,57,"20,702",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,31 to 35
+DUO RESIDENCES,"970,000",419.8,"2,311",Aug-25,FRASER STREET,Resale,Strata,39,"24,872",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+DUO RESIDENCES,"2,550,000","1,184.04","2,154",Aug-25,FRASER STREET,Resale,Strata,110,"23,182",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,510,000",721.19,"2,094",Aug-25,FRASER STREET,Resale,Strata,67,"22,537",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CITY GATE,"1,600,000",775.01,"2,064",Aug-25,BEACH ROAD,Resale,Strata,72,"22,222",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"1,980,000",635.08,"3,118",Aug-25,TAN QUEE LAN STREET,Sub Sale,Strata,59,"33,559",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE M,"1,125,000",462.85,"2,431",Aug-25,MIDDLE ROAD,Resale,Strata,43,"26,163",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE M,"2,150,000",742.72,"2,895",Aug-25,MIDDLE ROAD,Resale,Strata,69,"31,159",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+DUO RESIDENCES,"2,200,000","1,001.05","2,198",Aug-25,FRASER STREET,Resale,Strata,93,"23,656",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,31 to 35
+CONCOURSE SKYLINE,"2,320,000","1,119.46","2,072",Aug-25,BEACH ROAD,Resale,Strata,104,"22,308",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+CITY GATE,"1,485,000",699.66,"2,122",Aug-25,BEACH ROAD,Resale,Strata,65,"22,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"1,515,000",688.9,"2,199",Aug-25,BEACH ROAD,Resale,Strata,64,"23,672",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+AUREA,"1,771,000",635.08,"2,789",Aug-25,BEACH ROAD,New Sale,Strata,59,"30,017",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,01 to 05
+AUREA,"1,795,000",645.84,"2,779",Aug-25,BEACH ROAD,New Sale,Strata,60,"29,917",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,01 to 05
+DUO RESIDENCES,"3,450,000","1,528.49","2,257",Jul-25,FRASER STREET,Resale,Strata,142,"24,296",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,31 to 35
+THE M,"1,580,000",635.08,"2,488",Jul-25,MIDDLE ROAD,Resale,Strata,59,"26,780",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CITY GATE,"1,680,000",807.3,"2,081",Jul-25,BEACH ROAD,Resale,Strata,75,"22,400",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+AUREA,"2,100,000",710.42,"2,956",Jul-25,BEACH ROAD,New Sale,Strata,66,"31,818",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,26 to 30
+AUREA,"2,728,000","1,001.05","2,725",Jul-25,BEACH ROAD,New Sale,Strata,93,"29,333",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,360,000",592.02,"2,297",Jun-25,FRASER STREET,Resale,Strata,55,"24,727",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"3,300,000","1,065.64","3,097",Jun-25,TAN QUEE LAN STREET,Sub Sale,Strata,99,"33,333",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN BAY,"2,680,000",753.48,"3,538",Jun-25,BEACH ROAD,New Sale,Strata,70,"38,080","2,665,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,632,000",904.18,"2,911",Jun-25,TAN QUEE LAN STREET,Sub Sale,Strata,84,"31,333",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE PLAZA,"980,000",807.3,"1,214",Jun-25,BEACH ROAD,Resale,Strata,75,"13,067",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+THE M,"2,050,000",753.48,"2,721",Jun-25,MIDDLE ROAD,Resale,Strata,70,"29,286",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+DUO RESIDENCES,"3,450,000","1,528.49","2,257",Jun-25,FRASER STREET,Resale,Strata,142,"24,296",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,36 to 40
+CONCOURSE SKYLINE,"1,880,000",871.88,"2,156",Jun-25,BEACH ROAD,Resale,Strata,81,"23,210",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+DUO RESIDENCES,"3,500,000","1,528.49","2,290",Jun-25,FRASER STREET,Resale,Strata,142,"24,648",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,41 to 45
+MIDTOWN BAY,"4,500,000","1,323.97","3,377",Jun-25,BEACH ROAD,New Sale,Strata,123,"36,351","4,471,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+AUREA,"12,000,000","3,250.73","3,691",Jun-25,BEACH ROAD,New Sale,Strata,302,"39,735",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,36 to 40
+THE M,"2,000,000",742.72,"2,693",May-25,MIDDLE ROAD,Resale,Strata,69,"28,986",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+SOUTHBANK,"1,128,000",592.02,"1,905",May-25,NORTH BRIDGE ROAD,Resale,Strata,55,"20,509",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+SOUTHBANK,"1,750,000",904.18,"1,935",May-25,NORTH BRIDGE ROAD,Resale,Strata,84,"20,833",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+CITY GATE,"1,700,000",807.3,"2,106",May-25,BEACH ROAD,Resale,Strata,75,"22,667",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+TEXTILE CENTRE,"1,180,000",914.94,"1,290",May-25,JALAN SULTAN,Resale,Strata,85,"13,882",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+THE M,"2,088,000",764.24,"2,732",May-25,MIDDLE ROAD,Resale,Strata,71,"29,408",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CITY GATE,"1,481,000",678.13,"2,184",May-25,BEACH ROAD,Resale,Strata,63,"23,508",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+THE M,"1,080,000",409.03,"2,640",May-25,MIDDLE ROAD,Resale,Strata,38,"28,421",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+SUNSHINE PLAZA,"1,450,000",893.41,"1,623",May-25,PRINSEP LINK,Resale,Strata,83,"17,470",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,11 to 15
+SOUTHBANK,"1,155,000",613.55,"1,882",May-25,NORTH BRIDGE ROAD,Resale,Strata,57,"20,263",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+AUREA,"6,010,945","1,797.59","3,344",May-25,BEACH ROAD,New Sale,Strata,167,"35,994",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,515,000",721.19,"2,101",May-25,FRASER STREET,Resale,Strata,67,"22,612",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+SUNSHINE PLAZA,"2,000,000","1,345.5","1,486",May-25,PRINSEP LINK,Resale,Strata,125,"16,000",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+CONCOURSE SKYLINE,"2,200,000","1,162.51","1,892",May-25,BEACH ROAD,Resale,Strata,108,"20,370",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+CITY GATE,"1,610,000",775.01,"2,077",Apr-25,BEACH ROAD,Resale,Strata,72,"22,361",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+THE M,"1,130,000",452.09,"2,500",Apr-25,MIDDLE ROAD,Resale,Strata,42,"26,905",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN BAY,"2,440,000",742.72,"3,266",Apr-25,BEACH ROAD,New Sale,Strata,69,"35,154","2,425,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+DUO RESIDENCES,"3,310,888","1,614.6","2,051",Apr-25,FRASER STREET,Resale,Strata,150,"22,073",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,423,000",882.65,"1,612",Apr-25,BENCOOLEN STREET,Resale,Strata,82,"17,354",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+SUNSHINE PLAZA,"1,646,000","1,044.11","1,576",Apr-25,PRINSEP LINK,Resale,Strata,97,"16,969",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+CONCOURSE SKYLINE,"2,020,000","1,140.98","1,770",Apr-25,BEACH ROAD,Resale,Strata,106,"19,057",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,622,000",721.19,"2,249",Apr-25,FRASER STREET,Resale,Strata,67,"24,209",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+THE M,"1,250,000",527.44,"2,370",Apr-25,MIDDLE ROAD,Resale,Strata,49,"25,510",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+DUO RESIDENCES,"3,388,888","1,614.6","2,099",Mar-25,FRASER STREET,Resale,Strata,150,"22,593",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,610,000",452.09,"3,529",Mar-25,BEACH ROAD,New Sale,Strata,42,"37,990","1,595,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+CITY GATE,"1,506,000",688.9,"2,186",Mar-25,BEACH ROAD,Resale,Strata,64,"23,531",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"1,150,000",527.44,"2,180",Mar-25,FRASER STREET,Resale,Strata,49,"23,469",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,470,000",925.7,"1,588",Mar-25,BENCOOLEN STREET,Resale,Strata,86,"17,093",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+DUO RESIDENCES,"1,398,000",613.55,"2,279",Mar-25,FRASER STREET,Resale,Strata,57,"24,526",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+AUREA,"2,911,440","1,001.05","2,794",Mar-25,BEACH ROAD,New Sale,Strata,93,"30,069","2,796,440",Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,640,000",904.18,"2,920",Mar-25,TAN QUEE LAN STREET,Sub Sale,Strata,84,"31,429",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"1,400,000",409.03,"3,423",Mar-25,TAN QUEE LAN STREET,Sub Sale,Strata,38,"36,842",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+AUREA,"4,267,850","1,442.38","2,959",Mar-25,BEACH ROAD,New Sale,Strata,134,"31,850",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"2,999,039","1,001.05","2,996",Mar-25,BEACH ROAD,New Sale,Strata,93,"32,248",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,638,000",904.18,"2,918",Mar-25,TAN QUEE LAN STREET,Sub Sale,Strata,84,"31,405",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+AUREA,"5,869,248","1,797.59","3,265",Mar-25,BEACH ROAD,New Sale,Strata,167,"35,145",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+AUREA,"1,943,780",710.42,"2,736",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,451",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,911,735",645.84,"2,852",Mar-25,BEACH ROAD,New Sale,Strata,60,"30,696","1,841,735",Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,949,475",710.42,"2,744",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,538",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"2,861,015","1,001.05","2,743",Mar-25,BEACH ROAD,New Sale,Strata,93,"29,527","2,746,015",Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,958,655",710.42,"2,757",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,677",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,927,885",645.84,"2,877",Mar-25,BEACH ROAD,New Sale,Strata,60,"30,965","1,857,885",Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,06 to 10
+AUREA,"1,975,740",710.42,"2,781",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,935",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"4,239,205","1,442.38","2,939",Mar-25,BEACH ROAD,New Sale,Strata,134,"31,636",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"1,981,435",710.42,"2,789",Mar-25,BEACH ROAD,New Sale,Strata,66,"30,022",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"4,311,115","1,442.38","2,989",Mar-25,BEACH ROAD,New Sale,Strata,134,"32,173",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"1,999,880",710.42,"2,815",Mar-25,BEACH ROAD,New Sale,Strata,66,"30,301",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"2,049,605",710.42,"2,885",Mar-25,BEACH ROAD,New Sale,Strata,66,"31,055",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+AUREA,"3,016,225","1,001.05","3,013",Mar-25,BEACH ROAD,New Sale,Strata,93,"32,433",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+AUREA,"3,111,340","1,001.05","3,108",Mar-25,BEACH ROAD,New Sale,Strata,93,"33,455",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+AUREA,"5,867,210","1,797.59","3,264",Mar-25,BEACH ROAD,New Sale,Strata,167,"35,133",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+AUREA,"6,091,865","1,797.59","3,389",Mar-25,BEACH ROAD,New Sale,Strata,167,"36,478",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,26 to 30
+AUREA,"1,963,752",710.42,"2,764",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,754",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,11 to 15
+AUREA,"5,795,300","1,797.59","3,224",Mar-25,BEACH ROAD,New Sale,Strata,167,"34,702",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,21 to 25
+AUREA,"1,959,796",710.42,"2,759",Mar-25,BEACH ROAD,New Sale,Strata,66,"29,694",-,Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+AUREA,"2,886,574","1,001.05","2,769",Mar-25,BEACH ROAD,New Sale,Strata,93,"29,802","2,771,574",Apartment,1,99 yrs lease commencing from 2024,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,570,000",968.76,"1,621",Mar-25,BENCOOLEN STREET,Resale,Strata,90,"17,444",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"2,388,888",721.19,"3,312",Mar-25,TAN QUEE LAN STREET,Sub Sale,Strata,67,"35,655",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN BAY,"4,388,000","1,323.97","3,303",Mar-25,BEACH ROAD,New Sale,Strata,123,"35,558","4,373,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+CITY GATE,"1,520,000",678.13,"2,241",Feb-25,BEACH ROAD,Resale,Strata,63,"24,127",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+SOUTHBANK,"2,520,000","1,313.21","1,919",Feb-25,NORTH BRIDGE ROAD,Resale,Strata,122,"20,656",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+SOUTHBANK,"1,736,000",904.18,"1,920",Feb-25,NORTH BRIDGE ROAD,Resale,Strata,84,"20,667",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+SOUTHBANK,"1,222,000",613.55,"1,992",Feb-25,NORTH BRIDGE ROAD,Resale,Strata,57,"21,439",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,31 to 35
+SOUTHBANK,"1,720,000",904.18,"1,902",Feb-25,NORTH BRIDGE ROAD,Resale,Strata,84,"20,476",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+SOUTH BEACH RESIDENCES,"7,000,000","2,281.97","3,068",Feb-25,BEACH ROAD,Resale,Strata,212,"33,019",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,21 to 25
+SUNSHINE PLAZA,"1,850,000","1,302.44","1,420",Feb-25,PRINSEP LINK,Resale,Strata,121,"15,289",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,01 to 05
+THE M,"1,250,000",452.09,"2,765",Feb-25,MIDDLE ROAD,Resale,Strata,42,"29,762",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE PLAZA,"888,000",731.95,"1,213",Feb-25,BEACH ROAD,Resale,Strata,68,"13,059",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+THE M,"1,200,000",495.14,"2,424",Feb-25,MIDDLE ROAD,Resale,Strata,46,"26,087",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE BENCOOLEN,"1,330,000",871.88,"1,525",Feb-25,BENCOOLEN STREET,Resale,Strata,81,"16,420",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+BURLINGTON SQUARE,"1,480,000","1,151.75","1,285",Jan-25,BENCOOLEN STREET,Resale,Strata,107,"13,832",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,01 to 05
+CITY GATE,"980,000",452.09,"2,168",Jan-25,BEACH ROAD,Resale,Strata,42,"23,333",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"2,210,000",968.76,"2,281",Jan-25,FRASER STREET,Resale,Strata,90,"24,556",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,300,000",559.73,"2,323",Jan-25,FRASER STREET,Resale,Strata,52,"25,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+THE PLAZA,"951,368",807.3,"1,178",Jan-25,BEACH ROAD,Resale,Strata,75,"12,685",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,308,000","1,173.28","1,967",Jan-25,BEACH ROAD,Resale,Strata,109,"21,174",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+THE M,"1,188,000",452.09,"2,628",Dec-24,MIDDLE ROAD,Resale,Strata,42,"28,286",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+DUO RESIDENCES,"1,750,000",839.59,"2,084",Dec-24,FRASER STREET,Resale,Strata,78,"22,436",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CITY GATE,"950,000",452.09,"2,101",Dec-24,BEACH ROAD,Resale,Strata,42,"22,619",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"2,400,000",721.19,"3,328",Dec-24,TAN QUEE LAN STREET,Sub Sale,Strata,67,"35,821",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"1,680,000",592.02,"2,838",Dec-24,MIDDLE ROAD,Resale,Strata,55,"30,545",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+SUNSHINE PLAZA,"1,750,000","1,044.11","1,676",Dec-24,PRINSEP LINK,Resale,Strata,97,"18,041",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,11 to 15
+SOUTHBANK,"1,150,000",613.55,"1,874",Dec-24,NORTH BRIDGE ROAD,Resale,Strata,57,"20,175",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+CONCOURSE SKYLINE,"1,660,000",818.06,"2,029",Dec-24,BEACH ROAD,Resale,Strata,76,"21,842",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,420,000",807.3,"1,759",Dec-24,BEACH ROAD,Resale,Strata,75,"18,933",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+THE PLAZA,"1,250,000",990.29,"1,262",Dec-24,BEACH ROAD,Resale,Strata,92,"13,587",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"5,888,000","1,808.35","3,256",Nov-24,TAN QUEE LAN STREET,New Sale,Strata,168,"35,048",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"1,488,000",409.03,"3,638",Nov-24,TAN QUEE LAN STREET,New Sale,Strata,38,"39,158",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"5,688,000","1,808.35","3,145",Nov-24,TAN QUEE LAN STREET,New Sale,Strata,168,"33,857",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"1,488,000",409.03,"3,638",Nov-24,TAN QUEE LAN STREET,New Sale,Strata,38,"39,158",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,928,000",818.06,"2,357",Nov-24,FRASER STREET,Resale,Strata,76,"25,368",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+BURLINGTON SQUARE,"1,100,000",688.9,"1,597",Nov-24,BENCOOLEN STREET,Resale,Strata,64,"17,188",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+CONCOURSE SKYLINE,"2,180,000","1,162.51","1,875",Nov-24,BEACH ROAD,Resale,Strata,108,"20,185",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,370,000",645.84,"2,121",Nov-24,FRASER STREET,Resale,Strata,60,"22,833",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+SOUTHBANK,"1,163,000",592.02,"1,964",Nov-24,NORTH BRIDGE ROAD,Resale,Strata,55,"21,145",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,36 to 40
+SOUTHBANK,"1,800,000",958,"1,879",Nov-24,NORTH BRIDGE ROAD,Resale,Strata,89,"20,225",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"1,608,000",452.09,"3,525",Nov-24,BEACH ROAD,New Sale,Strata,42,"37,943","1,593,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,611,000",409.03,"3,939",Nov-24,TAN QUEE LAN STREET,New Sale,Strata,38,"42,395",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+BURLINGTON SQUARE,"995,000",667.37,"1,491",Oct-24,BENCOOLEN STREET,Resale,Strata,62,"16,048",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+TEXTILE CENTRE,"1,100,000",882.65,"1,246",Oct-24,JALAN SULTAN,Resale,Strata,82,"13,415",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+SUNSHINE PLAZA,"1,410,000",979.52,"1,439",Oct-24,PRINSEP LINK,Resale,Strata,91,"15,495",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,01 to 05
+BURLINGTON SQUARE,"1,350,000",828.83,"1,629",Oct-24,BENCOOLEN STREET,Resale,Strata,77,"17,532",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+BURLINGTON SQUARE,"1,550,000",936.47,"1,655",Oct-24,BENCOOLEN STREET,Resale,Strata,87,"17,816",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+SOUTHBANK,"2,650,000","1,313.21","2,018",Oct-24,NORTH BRIDGE ROAD,Resale,Strata,122,"21,721",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,36 to 40
+DUO RESIDENCES,"1,250,000",592.02,"2,111",Oct-24,FRASER STREET,Resale,Strata,55,"22,727",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"1,120,000",882.65,"1,269",Oct-24,JALAN SULTAN,Resale,Strata,82,"13,659",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+CITY GATE,"1,520,000",688.9,"2,206",Oct-24,BEACH ROAD,Resale,Strata,64,"23,750",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+SOUTH BEACH RESIDENCES,"3,530,000","1,140.98","3,094",Oct-24,BEACH ROAD,Resale,Strata,106,"33,302",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,36 to 40
+MIDTOWN MODERN,"2,600,000",904.18,"2,876",Sep-24,TAN QUEE LAN STREET,Sub Sale,Strata,84,"30,952",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"6,530,000","1,808.35","3,611",Sep-24,TAN QUEE LAN STREET,New Sale,Strata,168,"38,869",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,010,000","1,162.51","1,729",Sep-24,BEACH ROAD,Resale,Strata,108,"18,611",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"1,830,000",828.83,"2,208",Sep-24,BEACH ROAD,Resale,Strata,77,"23,766",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,590,000",721.19,"2,205",Sep-24,FRASER STREET,Resale,Strata,67,"23,731",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,138,000",527.44,"2,158",Sep-24,FRASER STREET,Resale,Strata,49,"23,224",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,390,000","1,119.46","2,135",Sep-24,BEACH ROAD,Resale,Strata,104,"22,981",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+SOUTHBANK,"1,843,800",968.76,"1,903",Sep-24,NORTH BRIDGE ROAD,Resale,Strata,90,"20,487",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+RESIDENTIAL APARTMENTS,"3,000,000","1,550.02","1,935",Sep-24,BENCOOLEN STREET,Resale,Strata,144,"20,833",-,Apartment,1,Freehold,07,Rest of Central Region,01 to 05
+RESIDENTIAL APARTMENTS,"3,000,000","1,550.02","1,935",Sep-24,BENCOOLEN STREET,Resale,Strata,144,"20,833",-,Apartment,1,Freehold,07,Rest of Central Region,01 to 05
+CONCOURSE SKYLINE,"2,210,000","1,097.93","2,013",Sep-24,BEACH ROAD,Resale,Strata,102,"21,667",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN BAY,"2,342,600",753.48,"3,090",Sep-24,BEACH ROAD,New Sale,Strata,70,"33,260","2,328,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+SOUTHBANK,"1,735,000",958,"1,811",Sep-24,NORTH BRIDGE ROAD,Resale,Strata,89,"19,494",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"1,400,000",861.12,"1,626",Sep-24,BEACH ROAD,Resale,Strata,80,"17,500",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+CITY GATE,"1,240,000",559.73,"2,215",Aug-24,BEACH ROAD,Resale,Strata,52,"23,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN BAY,"1,608,000",484.38,"3,290",Aug-24,BEACH ROAD,New Sale,Strata,45,"35,413","1,593,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"1,075,880",914.94,"1,176",Aug-24,JALAN SULTAN,Resale,Strata,85,"12,657",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+CITY GATE,"1,450,000",678.13,"2,138",Aug-24,BEACH ROAD,Resale,Strata,63,"23,016",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+THE M,"1,300,000",527.44,"2,465",Aug-24,MIDDLE ROAD,Resale,Strata,49,"26,531",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,500,000",710.42,"2,111",Aug-24,BEACH ROAD,Resale,Strata,66,"22,727",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+THE PLAZA,"1,138,000",839.59,"1,355",Aug-24,BEACH ROAD,Resale,Strata,78,"14,590",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,380,000","1,130.22","2,106",Aug-24,BEACH ROAD,Resale,Strata,105,"22,667",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+CONCOURSE SKYLINE,"2,380,000","1,162.51","2,047",Aug-24,BEACH ROAD,Resale,Strata,108,"22,037",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"1,538,000",785.77,"1,957",Aug-24,BEACH ROAD,Resale,Strata,73,"21,068",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+CITY GATE,"1,160,000",559.73,"2,072",Aug-24,BEACH ROAD,Resale,Strata,52,"22,308",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+BURLINGTON SQUARE,"1,100,000",731.95,"1,503",Aug-24,BENCOOLEN STREET,Resale,Strata,68,"16,176",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+CONCOURSE SKYLINE,"1,520,000",818.06,"1,858",Aug-24,BEACH ROAD,Resale,Strata,76,"20,000",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,350,000",645.84,"2,090",Aug-24,FRASER STREET,Resale,Strata,60,"22,500",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+SOUTHBANK,"1,750,000",958,"1,827",Jul-24,NORTH BRIDGE ROAD,Resale,Strata,89,"19,663",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"1,400,000",645.84,"2,168",Jul-24,FRASER STREET,Resale,Strata,60,"23,333",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,480,000","1,162.51","2,133",Jul-24,BEACH ROAD,Resale,Strata,108,"22,963",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+SOUTHBANK,"1,820,000",958,"1,900",Jul-24,NORTH BRIDGE ROAD,Resale,Strata,89,"20,449",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+THE PLAZA,"780,000",548.96,"1,421",Jul-24,BEACH ROAD,Resale,Strata,51,"15,294",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,800,000",861.12,"2,090",Jul-24,BEACH ROAD,Resale,Strata,80,"22,500",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"6,638,000","1,808.35","3,671",Jul-24,TAN QUEE LAN STREET,New Sale,Strata,168,"39,512",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,390,000",527.44,"2,635",Jul-24,MIDDLE ROAD,Resale,Strata,49,"28,367",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+DUO RESIDENCES,"2,000,000",968.76,"2,064",Jul-24,FRASER STREET,Resale,Strata,90,"22,222",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"1,680,000",871.88,"1,927",Jul-24,BEACH ROAD,Resale,Strata,81,"20,741",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"6,588,000","1,808.35","3,643",Jul-24,TAN QUEE LAN STREET,New Sale,Strata,168,"39,214",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,200,000","1,108.69","1,984",Jul-24,BEACH ROAD,Resale,Strata,103,"21,359",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"3,150,000","1,442.38","2,184",Jul-24,BEACH ROAD,Resale,Strata,134,"23,507",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+SOUTH BEACH RESIDENCES,"7,680,000","2,260.44","3,398",Jul-24,BEACH ROAD,Resale,Strata,210,"36,571",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,21 to 25
+SUNSHINE PLAZA,"1,480,000",882.65,"1,677",Jul-24,PRINSEP LINK,Resale,Strata,82,"18,049",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+BURLINGTON SQUARE,"1,850,000","1,119.46","1,653",Jun-24,BENCOOLEN STREET,Resale,Strata,104,"17,788",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"6,688,000","1,808.35","3,698",Jun-24,TAN QUEE LAN STREET,New Sale,Strata,168,"39,810",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,438,000",688.9,"2,087",Jun-24,FRASER STREET,Resale,Strata,64,"22,469",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+THE PLAZA,"820,000",548.96,"1,494",Jun-24,BEACH ROAD,Resale,Strata,51,"16,078",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+TEXTILE CENTRE,"1,020,000",882.65,"1,156",Jun-24,JALAN SULTAN,Resale,Strata,82,"12,439",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"1,228,000",538.2,"2,282",Jun-24,FRASER STREET,Resale,Strata,50,"24,560",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,478,000",882.65,"1,675",Jun-24,BENCOOLEN STREET,Resale,Strata,82,"18,024",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"4,488,000","1,431.61","3,135",Jun-24,TAN QUEE LAN STREET,New Sale,Strata,133,"33,744",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"5,488,000","1,733","3,167",Jun-24,TAN QUEE LAN STREET,New Sale,Strata,161,"34,087",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+CONCOURSE SKYLINE,"2,880,000","1,431.61","2,012",Jun-24,BEACH ROAD,Resale,Strata,133,"21,654",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,340,000",645.84,"2,075",Jun-24,FRASER STREET,Resale,Strata,60,"22,333",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CITY GATE,"975,000",452.09,"2,157",May-24,BEACH ROAD,Resale,Strata,42,"23,214",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"1,358,888",688.9,"1,973",May-24,FRASER STREET,Resale,Strata,64,"21,233",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"1,620,000",818.06,"1,980",May-24,BEACH ROAD,Resale,Strata,76,"21,316",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,700,000",731.95,"3,669",May-24,BEACH ROAD,New Sale,Strata,68,"39,494","2,685,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,328,000",473.62,"2,804",May-24,TAN QUEE LAN STREET,Sub Sale,Strata,44,"30,182",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,150,000",570.49,"2,016",May-24,BEACH ROAD,Resale,Strata,53,"21,698",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+DUO RESIDENCES,"1,550,000",721.19,"2,149",May-24,FRASER STREET,Resale,Strata,67,"23,134",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"6,370,000","1,808.35","3,523",May-24,TAN QUEE LAN STREET,New Sale,Strata,168,"37,917",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CITY GATE,"930,000",430.56,"2,160",May-24,BEACH ROAD,Resale,Strata,40,"23,250",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+THE M,"1,690,000",592.02,"2,855",May-24,MIDDLE ROAD,Sub Sale,Strata,55,"30,727",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+SOUTHBANK,"1,810,000",958,"1,889",May-24,NORTH BRIDGE ROAD,Resale,Strata,89,"20,337",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+THE BENCOOLEN,"1,400,000",882.65,"1,586",May-24,BENCOOLEN STREET,Resale,Strata,82,"17,073",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+SOUTHBANK,"1,800,000",958,"1,879",Apr-24,NORTH BRIDGE ROAD,Resale,Strata,89,"20,225",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+THE M,"2,120,000",731.95,"2,896",Apr-24,MIDDLE ROAD,Sub Sale,Strata,68,"31,176",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,486,000",699.66,"2,124",Apr-24,BEACH ROAD,Resale,Strata,65,"22,862",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+MIDTOWN BAY,"2,633,400",753.48,"3,476",Apr-24,BEACH ROAD,New Sale,Strata,70,"37,414","2,619,000",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,310,000",645.84,"2,028",Apr-24,FRASER STREET,Resale,Strata,60,"21,833",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+DUO RESIDENCES,"1,450,000",645.84,"2,245",Apr-24,FRASER STREET,Resale,Strata,60,"24,167",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+THE PLAZA,"1,020,000",807.3,"1,263",Apr-24,BEACH ROAD,Resale,Strata,75,"13,600",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CITY GATE,"1,450,000",688.9,"2,105",Apr-24,BEACH ROAD,Resale,Strata,64,"22,656",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+THE M,"1,968,000",742.72,"2,650",Apr-24,MIDDLE ROAD,Sub Sale,Strata,69,"28,522",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN BAY,"2,566,080",731.95,"3,486",Apr-24,BEACH ROAD,New Sale,Strata,68,"37,525","2,551,680",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"2,218,888",764.24,"2,903",Apr-24,MIDDLE ROAD,Sub Sale,Strata,71,"31,252",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"3,000,000","1,065.64","2,815",Apr-24,TAN QUEE LAN STREET,Sub Sale,Strata,99,"30,303",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,818,000",635.08,"2,863",Apr-24,MIDDLE ROAD,Sub Sale,Strata,59,"30,814",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,942,000",839.59,"2,313",Apr-24,FRASER STREET,Resale,Strata,78,"24,897",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+CITY GATE,"1,580,000","1,065.64","1,483",Apr-24,BEACH ROAD,Resale,Strata,99,"15,960",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+DUO RESIDENCES,"2,000,000",818.06,"2,445",Apr-24,FRASER STREET,Resale,Strata,76,"26,316",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,545,000",409.03,"3,649",Mar-24,BEACH ROAD,New Sale,Strata,38,"39,279","1,492,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+SOUTHBANK,"1,152,000",613.55,"1,878",Mar-24,NORTH BRIDGE ROAD,Resale,Strata,57,"20,211",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+TEXTILE CENTRE,"1,240,000","1,162.51","1,067",Mar-24,JALAN SULTAN,Resale,Strata,108,"11,481",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"4,808,000","1,808.35","2,659",Mar-24,TAN QUEE LAN STREET,New Sale,Strata,168,"28,619",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"1,188,888",462.85,"2,569",Mar-24,MIDDLE ROAD,Sub Sale,Strata,43,"27,649",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+DUO RESIDENCES,"2,100,000",936.47,"2,242",Mar-24,FRASER STREET,Resale,Strata,87,"24,138",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,350,000",667.37,"2,023",Mar-24,FRASER STREET,Resale,Strata,62,"21,774",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"1,020,000",882.65,"1,156",Mar-24,JALAN SULTAN,Resale,Strata,82,"12,439",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+CONCOURSE SKYLINE,"2,850,000","1,356.26","2,101",Mar-24,BEACH ROAD,Resale,Strata,126,"22,619",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,180,000",538.2,"2,192",Mar-24,FRASER STREET,Resale,Strata,50,"23,600",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+CITY GATE,"1,520,000",699.66,"2,172",Mar-24,BEACH ROAD,Resale,Strata,65,"23,385",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+BURLINGTON SQUARE,"1,600,000","1,065.64","1,501",Mar-24,BENCOOLEN STREET,Resale,Strata,99,"16,162",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+CITY GATE,"1,500,000",710.42,"2,111",Mar-24,BEACH ROAD,Resale,Strata,66,"22,727",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+THE PLAZA,"750,000",592.02,"1,267",Mar-24,BEACH ROAD,Resale,Strata,55,"13,636",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"1,638,000",818.06,"2,002",Feb-24,BEACH ROAD,Resale,Strata,76,"21,553",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,424,000",742.72,"3,264",Feb-24,BEACH ROAD,New Sale,Strata,69,"35,130",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+CITY GATE,"1,560,000",807.3,"1,932",Feb-24,BEACH ROAD,Resale,Strata,75,"20,800",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+BURLINGTON SQUARE,"1,300,000",828.83,"1,568",Feb-24,BENCOOLEN STREET,Resale,Strata,77,"16,883",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+SOUTHBANK,"1,148,000",613.55,"1,871",Feb-24,NORTH BRIDGE ROAD,Resale,Strata,57,"20,140",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+DUO RESIDENCES,"2,180,000","1,011.82","2,155",Feb-24,FRASER STREET,Resale,Strata,94,"23,191",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"1,408,000",796.54,"1,768",Feb-24,BEACH ROAD,Resale,Strata,74,"19,027",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+CITY GATE,"965,000",452.09,"2,135",Feb-24,BEACH ROAD,Resale,Strata,42,"22,976",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"1,780,000",904.18,"1,969",Feb-24,BEACH ROAD,Resale,Strata,84,"21,190",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+CITY GATE,"1,480,000",678.13,"2,182",Feb-24,BEACH ROAD,Resale,Strata,63,"23,492",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+DUO RESIDENCES,"1,900,000",818.06,"2,323",Feb-24,FRASER STREET,Resale,Strata,76,"25,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"2,320,000","1,140.98","2,033",Feb-24,BEACH ROAD,Resale,Strata,106,"21,887",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+THE M,"2,588,000",979.52,"2,642",Feb-24,MIDDLE ROAD,New Sale,Strata,91,"28,440",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+BURLINGTON SQUARE,"1,275,000",839.59,"1,519",Feb-24,BENCOOLEN STREET,Resale,Strata,78,"16,346",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"1,540,440",409.03,"3,766",Feb-24,TAN QUEE LAN STREET,New Sale,Strata,38,"40,538",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE PLAZA,"1,120,000",839.59,"1,334",Jan-24,BEACH ROAD,Resale,Strata,78,"14,359",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,539,000","1,463.9","3,101",Jan-24,TAN QUEE LAN STREET,New Sale,Strata,136,"33,375",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN BAY,"2,028,000",484.38,"4,108",Jan-24,BEACH ROAD,New Sale,Strata,45,"44,222","1,990,000",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+THE M,"1,690,000",527.44,"3,204",Jan-24,MIDDLE ROAD,New Sale,Strata,49,"34,490",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,595,000",753.48,"2,117",Jan-24,BEACH ROAD,Resale,Strata,70,"22,786",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+THE M,"1,856,000",656.6,"2,827",Dec-23,MIDDLE ROAD,New Sale,Strata,61,"30,426",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,022,000","1,463.9","2,747",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,136,"29,574",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,353,000","1,463.9","2,974",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,136,"32,007",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,300,000","1,108.69","2,075",Dec-23,BEACH ROAD,Resale,Strata,103,"22,330",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"6,350,000","1,808.35","3,511",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,168,"37,798",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,400,000",850.36,"1,646",Dec-23,BENCOOLEN STREET,Resale,Strata,79,"17,722",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"3,856,000","1,463.9","2,634",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,136,"28,353",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"4,118,000","1,463.9","2,813",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,136,"30,279",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SOUTHBANK,"1,090,000",592.02,"1,841",Dec-23,NORTH BRIDGE ROAD,Resale,Strata,55,"19,818",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,16 to 20
+SUNSHINE PLAZA,"1,360,000",882.65,"1,541",Dec-23,PRINSEP LINK,Resale,Strata,82,"16,585",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"4,319,000","1,463.9","2,950",Dec-23,TAN QUEE LAN STREET,New Sale,Strata,136,"31,757",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"1,528,000",527.44,"2,897",Dec-23,MIDDLE ROAD,Sub Sale,Strata,49,"31,184",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE PLAZA,"960,000",807.3,"1,189",Dec-23,BEACH ROAD,Resale,Strata,75,"12,800",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,179,000","1,463.9","2,855",Nov-23,TAN QUEE LAN STREET,New Sale,Strata,136,"30,728",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,180,000","1,011.82","2,155",Nov-23,FRASER STREET,Resale,Strata,94,"23,191",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+DUO RESIDENCES,"1,800,000",839.59,"2,144",Nov-23,FRASER STREET,Resale,Strata,78,"23,077",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+THE M,"1,488,000",527.44,"2,821",Nov-23,MIDDLE ROAD,Sub Sale,Strata,49,"30,367",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,779,000",904.18,"3,074",Nov-23,TAN QUEE LAN STREET,New Sale,Strata,84,"33,083",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"3,896,000","1,463.9","2,661",Nov-23,TAN QUEE LAN STREET,New Sale,Strata,136,"28,647",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"6,537,000","1,808.35","3,615",Nov-23,TAN QUEE LAN STREET,New Sale,Strata,168,"38,911",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN BAY,"1,749,000",484.38,"3,611",Nov-23,BEACH ROAD,New Sale,Strata,45,"38,867",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+CITY GATE,"1,435,000",753.48,"1,904",Nov-23,BEACH ROAD,Resale,Strata,70,"20,500",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+MIDTOWN BAY,"2,311,800",731.95,"3,158",Nov-23,BEACH ROAD,New Sale,Strata,68,"33,997",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+TEXTILE CENTRE,"1,010,000",882.65,"1,144",Nov-23,JALAN SULTAN,Resale,Strata,82,"12,317",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"1,980,000",818.06,"2,420",Nov-23,FRASER STREET,Resale,Strata,76,"26,053",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN BAY,"3,427,380","1,033.34","3,317",Nov-23,BEACH ROAD,New Sale,Strata,96,"35,702",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+THE PLAZA,"1,190,000",839.59,"1,417",Nov-23,BEACH ROAD,Resale,Strata,78,"15,256",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,587,500","1,270.15","1,250",Nov-23,BENCOOLEN STREET,Resale,Strata,118,"13,453",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+THE M,"2,136,000",839.59,"2,544",Oct-23,MIDDLE ROAD,New Sale,Strata,78,"27,385",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,481,000","1,463.9","3,061",Oct-23,TAN QUEE LAN STREET,New Sale,Strata,136,"32,949",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,528,000","1,151.75","2,195",Oct-23,BEACH ROAD,Resale,Strata,107,"23,626",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,36 to 40
+MIDTOWN BAY,"2,501,730",731.95,"3,418",Oct-23,BEACH ROAD,New Sale,Strata,68,"36,790",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,270,000",645.84,"1,966",Oct-23,FRASER STREET,Resale,Strata,60,"21,167",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+THE M,"2,048,000",667.37,"3,069",Oct-23,MIDDLE ROAD,New Sale,Strata,62,"33,032",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,288,300",731.95,"3,126",Oct-23,BEACH ROAD,New Sale,Strata,68,"33,651",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+THE M,"1,752,000",527.44,"3,322",Oct-23,MIDDLE ROAD,New Sale,Strata,49,"35,755",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SOUTHBANK,"1,730,000",958,"1,806",Oct-23,NORTH BRIDGE ROAD,Resale,Strata,89,"19,438",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"1,900,000","1,097.93","1,731",Oct-23,BEACH ROAD,Resale,Strata,102,"18,627",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,488,000",699.66,"2,127",Oct-23,FRASER STREET,Resale,Strata,65,"22,892",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+THE M,"1,997,000",667.37,"2,992",Oct-23,MIDDLE ROAD,New Sale,Strata,62,"32,210",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,834,000","1,463.9","2,619",Oct-23,TAN QUEE LAN STREET,New Sale,Strata,136,"28,191",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,180,000",559.73,"2,108",Oct-23,BEACH ROAD,Resale,Strata,52,"22,692",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"2,217,800",731.95,"3,030",Oct-23,BEACH ROAD,New Sale,Strata,68,"32,615",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"6,425,000","1,808.35","3,553",Oct-23,TAN QUEE LAN STREET,New Sale,Strata,168,"38,244",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"1,493,000",409.03,"3,650",Oct-23,TAN QUEE LAN STREET,New Sale,Strata,38,"39,289",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,308,888",688.9,"1,900",Oct-23,FRASER STREET,Resale,Strata,64,"20,451",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"5,939,000","1,808.35","3,284",Oct-23,TAN QUEE LAN STREET,New Sale,Strata,168,"35,351",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+TEXTILE CENTRE,"990,000",882.65,"1,122",Oct-23,JALAN SULTAN,Resale,Strata,82,"12,073",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"1,644,400",484.38,"3,316",Oct-23,BEACH ROAD,New Sale,Strata,45,"35,698","1,606,400",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"2,240,000","1,151.75","1,945",Sep-23,BEACH ROAD,Resale,Strata,107,"20,935",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,430,000","1,463.9","3,026",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,136,"32,574",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"5,617,000","1,808.35","3,106",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,168,"33,435",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+BURLINGTON SQUARE,"1,050,000",731.95,"1,435",Sep-23,BENCOOLEN STREET,Resale,Strata,68,"15,441",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+TEXTILE CENTRE,"1,200,000","1,162.51","1,032",Sep-23,JALAN SULTAN,Resale,Strata,108,"11,111",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"4,390,000","1,463.9","2,999",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,136,"32,279",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"5,827,000","1,808.35","3,222",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,168,"34,685",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"1,981,000",742.72,"2,667",Sep-23,MIDDLE ROAD,New Sale,Strata,69,"28,710",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"2,490,000",764.24,"3,258",Sep-23,MIDDLE ROAD,New Sale,Strata,71,"35,070",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,719,000","1,808.35","3,163",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,168,"34,042",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"5,617,000","1,808.35","3,106",Sep-23,TAN QUEE LAN STREET,New Sale,Strata,168,"33,435",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"2,041,000",667.37,"3,058",Sep-23,MIDDLE ROAD,New Sale,Strata,62,"32,919",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,917,120","1,356.26","1,414",Sep-23,BENCOOLEN STREET,Resale,Strata,126,"15,215",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+MIDTOWN BAY,"1,973,070",473.62,"4,086",Sep-23,BEACH ROAD,New Sale,Strata,44,"43,979","1,935,070",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+THE M,"2,529,000",904.18,"2,797",Sep-23,MIDDLE ROAD,New Sale,Strata,84,"30,107",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SUNSHINE PLAZA,"1,750,000","1,313.21","1,333",Sep-23,PRINSEP LINK,Resale,Strata,122,"14,344",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+DUO RESIDENCES,"2,430,000","1,108.69","2,192",Aug-23,FRASER STREET,Resale,Strata,103,"23,592",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,319,000","1,808.35","2,941",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,168,"31,661",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,288,000","1,463.9","2,929",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,136,"31,529",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,868,000","1,733","2,809",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,161,"30,236",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"1,513,710",409.03,"3,701",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,38,"39,834",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CITY GATE,"3,260,800","1,603.84","2,033",Aug-23,BEACH ROAD,Resale,Strata,149,"21,885",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+SOUTHBANK,"1,748,000",968.76,"1,804",Aug-23,NORTH BRIDGE ROAD,Resale,Strata,90,"19,422",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"3,781,000","1,463.9","2,583",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,136,"27,801",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"4,093,000","1,463.9","2,796",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,136,"30,096",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,361,000",742.72,"3,179",Aug-23,BEACH ROAD,New Sale,Strata,69,"34,217",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,966,000","1,442.38","2,750",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,134,"29,597",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN BAY,"2,449,000",731.95,"3,346",Aug-23,BEACH ROAD,New Sale,Strata,68,"36,015",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,168,400",731.95,"2,962",Aug-23,BEACH ROAD,New Sale,Strata,68,"31,888",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"4,233,000","1,463.9","2,892",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,136,"31,125",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,230,000","1,140.98","1,954",Aug-23,BEACH ROAD,Resale,Strata,106,"21,038",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,158,800",527.44,"2,197",Aug-23,FRASER STREET,Resale,Strata,49,"23,649",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,044,000","1,463.9","2,762",Aug-23,TAN QUEE LAN STREET,New Sale,Strata,136,"29,735",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE BENCOOLEN,"1,634,500","1,248.62","1,309",Aug-23,BENCOOLEN STREET,Resale,Strata,116,"14,091",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+DUO RESIDENCES,"2,480,000","1,108.69","2,237",Aug-23,FRASER STREET,Resale,Strata,103,"24,078",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+CITY GATE,"1,260,000",559.73,"2,251",Aug-23,BEACH ROAD,Resale,Strata,52,"24,231",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"3,200,000","1,668.42","1,918",Aug-23,BEACH ROAD,Resale,Strata,155,"20,645",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"1,571,130",409.03,"3,841",Jul-23,TAN QUEE LAN STREET,New Sale,Strata,38,"41,346",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,450,000",871.88,"1,663",Jul-23,BEACH ROAD,Resale,Strata,81,"17,901",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,396,790",731.95,"3,275",Jul-23,BEACH ROAD,New Sale,Strata,68,"35,247",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+BURLINGTON SQUARE,"1,220,000",828.83,"1,472",Jul-23,BENCOOLEN STREET,Resale,Strata,77,"15,844",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"4,207,000","1,463.9","2,874",Jul-23,TAN QUEE LAN STREET,New Sale,Strata,136,"30,934",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,260,000","1,463.9","2,910",Jul-23,TAN QUEE LAN STREET,New Sale,Strata,136,"31,324",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,612,600",484.38,"3,329",Jul-23,BEACH ROAD,New Sale,Strata,45,"35,836",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,877,000","1,808.35","2,697",Jul-23,TAN QUEE LAN STREET,New Sale,Strata,168,"29,030",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE BENCOOLEN,"1,549,250",979.52,"1,582",Jul-23,BENCOOLEN STREET,Resale,Strata,91,"17,025",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+CITY GATE,"1,150,000",559.73,"2,055",Jul-23,BEACH ROAD,Resale,Strata,52,"22,115",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,898,200","1,356.26","1,400",Jul-23,BENCOOLEN STREET,Resale,Strata,126,"15,065",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+SOUTHBANK,"1,040,000",613.55,"1,695",Jul-23,NORTH BRIDGE ROAD,Resale,Strata,57,"18,246",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,452,000",850.36,"1,708",Jul-23,BENCOOLEN STREET,Resale,Strata,79,"18,380",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+MIDTOWN BAY,"1,617,300",462.85,"3,494",Jun-23,BEACH ROAD,New Sale,Strata,43,"37,612",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"1,983,000",667.37,"2,971",Jun-23,MIDDLE ROAD,New Sale,Strata,62,"31,984",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,481,920",979.52,"1,513",Jun-23,BENCOOLEN STREET,Resale,Strata,91,"16,285",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"1,380,000",645.84,"2,137",Jun-23,FRASER STREET,Resale,Strata,60,"23,000",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,470,510",968.76,"1,518",Jun-23,BENCOOLEN STREET,Resale,Strata,90,"16,339",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"1,488,888",721.19,"2,064",Jun-23,FRASER STREET,Resale,Strata,67,"22,222",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,539,480",968.76,"1,589",Jun-23,BENCOOLEN STREET,Resale,Strata,90,"17,105",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+CONCOURSE SKYLINE,"2,450,000","1,334.74","1,836",Jun-23,BEACH ROAD,Resale,Strata,124,"19,758",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,360,000",828.83,"1,641",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"17,662",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,361,620",850.36,"1,601",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"17,236",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,335,900",850.36,"1,571",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"16,910",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,863,000","1,173.28","1,588",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"17,092",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE M,"1,715,000",667.37,"2,570",Jun-23,MIDDLE ROAD,Sub Sale,Strata,62,"27,661",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,754,700","1,033.34","1,698",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"18,278",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,742,500","1,033.34","1,686",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"18,151",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,833,000","1,173.28","1,562",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"16,817",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,371,120",850.36,"1,612",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"17,356",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,416,600",850.36,"1,666",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"17,932",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,449,400",968.76,"1,496",Jun-23,BENCOOLEN STREET,Resale,Strata,90,"16,104",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,728,000","1,033.34","1,672",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"18,000",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,805,000","1,173.28","1,538",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"16,560",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,331,900",850.36,"1,566",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"16,859",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,677,880","1,033.34","1,624",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,478",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,697,200","1,033.34","1,642",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,679",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+BURLINGTON SQUARE,"1,280,000",871.88,"1,468",Jun-23,BENCOOLEN STREET,Resale,Strata,81,"15,802",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,671,220","1,033.34","1,617",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,409",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,725,400","1,033.34","1,670",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,973",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,661,220","1,033.34","1,608",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,304",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,404,808",828.83,"1,695",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"18,244",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,417,800",828.83,"1,711",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"18,413",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,647,900","1,033.34","1,595",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,166",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+THE BENCOOLEN,"1,730,400","1,033.34","1,675",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"18,025",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,760,000","1,033.34","1,703",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"18,333",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"3,304,600","1,033.34","3,198",Jun-23,BEACH ROAD,New Sale,Strata,96,"34,423",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+MIDTOWN BAY,"2,304,720",731.95,"3,149",Jun-23,BEACH ROAD,New Sale,Strata,68,"33,893",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,667,000","1,033.34","1,613",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,365",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,704,000","1,033.34","1,649",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,750",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,654,650","1,033.34","1,601",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,236",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,422,400",850.36,"1,673",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"18,005",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,681,300","1,033.34","1,627",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,514",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,677,654","1,033.34","1,624",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,476",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,439,300",850.36,"1,693",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"18,219",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+TEXTILE CENTRE,"1,020,000",904.18,"1,128",Jun-23,JALAN SULTAN,Resale,Strata,84,"12,143",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,344,500",828.83,"1,622",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"17,461",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,880,000","1,173.28","1,602",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"17,248",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+THE BENCOOLEN,"1,835,000","1,173.28","1,564",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"16,835",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,693,800","1,033.34","1,639",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,644",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,328,000",828.83,"1,602",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"17,247",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,788,000","1,173.28","1,524",Jun-23,BENCOOLEN STREET,Resale,Strata,109,"16,404",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,327,900",850.36,"1,562",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"16,809",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+THE BENCOOLEN,"1,631,600","1,033.34","1,579",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"16,996",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+THE BENCOOLEN,"1,350,000",828.83,"1,629",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"17,532",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"4,135,230","1,442.38","2,867",Jun-23,TAN QUEE LAN STREET,New Sale,Strata,134,"30,860",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE BENCOOLEN,"1,715,000","1,033.34","1,660",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,865",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE M,"2,357,000",731.95,"3,220",Jun-23,MIDDLE ROAD,New Sale,Strata,68,"34,662",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,012,000",904.18,"3,331",Jun-23,TAN QUEE LAN STREET,New Sale,Strata,84,"35,857",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,877,000","1,808.35","2,697",Jun-23,TAN QUEE LAN STREET,New Sale,Strata,168,"29,030",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE BENCOOLEN,"1,671,200","1,033.34","1,617",Jun-23,BENCOOLEN STREET,Resale,Strata,96,"17,408",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,408,000",828.83,"1,699",Jun-23,BENCOOLEN STREET,Resale,Strata,77,"18,286",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,365,660",850.36,"1,606",Jun-23,BENCOOLEN STREET,Resale,Strata,79,"17,287",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+THE BENCOOLEN,"1,333,000",828.83,"1,608",May-23,BENCOOLEN STREET,Resale,Strata,77,"17,312",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,330,000",850.36,"1,564",May-23,BENCOOLEN STREET,Resale,Strata,79,"16,835",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE PLAZA,"805,000",548.96,"1,466",May-23,BEACH ROAD,Resale,Strata,51,"15,784",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,730,000","1,420.85","1,921",May-23,BEACH ROAD,Resale,Strata,132,"20,682",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+THE BENCOOLEN,"1,312,000",828.83,"1,583",May-23,BENCOOLEN STREET,Resale,Strata,77,"17,039",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,01 to 05
+MIDTOWN MODERN,"2,000,000",635.08,"3,149",May-23,TAN QUEE LAN STREET,Sub Sale,Strata,59,"33,898",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,241,300",731.95,"3,062",May-23,BEACH ROAD,New Sale,Strata,68,"32,960",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"3,998,000","1,463.9","2,731",May-23,TAN QUEE LAN STREET,New Sale,Strata,136,"29,397",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE BENCOOLEN,"1,413,500",828.83,"1,705",May-23,BENCOOLEN STREET,Resale,Strata,77,"18,357",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+CONCOURSE SKYLINE,"1,505,000",785.77,"1,915",May-23,BEACH ROAD,Resale,Strata,73,"20,616",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,264,800",731.95,"3,094",May-23,BEACH ROAD,New Sale,Strata,68,"33,306",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+THE M,"2,022,000",764.24,"2,646",May-23,MIDDLE ROAD,New Sale,Strata,71,"28,479",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,976,000","1,463.9","2,716",May-23,TAN QUEE LAN STREET,New Sale,Strata,136,"29,235",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"5,700,000","2,131.27","2,674",May-23,BEACH ROAD,Resale,Strata,198,"28,788",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+MIDTOWN MODERN,"5,417,000","1,808.35","2,996",May-23,TAN QUEE LAN STREET,New Sale,Strata,168,"32,244",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,514,000","1,808.35","3,049",May-23,TAN QUEE LAN STREET,New Sale,Strata,168,"32,821",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+BURLINGTON SQUARE,"1,600,000","1,119.46","1,429",May-23,BENCOOLEN STREET,Resale,Strata,104,"15,385",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+DUO RESIDENCES,"1,250,000",419.8,"2,978",May-23,FRASER STREET,Resale,Strata,39,"32,051",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,174,730","1,808.35","2,862",May-23,TAN QUEE LAN STREET,New Sale,Strata,168,"30,802",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"5,375,000","2,142.04","2,509",May-23,BEACH ROAD,Resale,Strata,199,"27,010",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+MIDTOWN MODERN,"2,892,000",904.18,"3,198",May-23,TAN QUEE LAN STREET,New Sale,Strata,84,"34,429",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,155,000","1,463.9","2,838",May-23,TAN QUEE LAN STREET,New Sale,Strata,136,"30,551",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,907,000",635.08,"3,003",May-23,MIDDLE ROAD,New Sale,Strata,59,"32,322",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,000,000",452.09,"2,212",May-23,BEACH ROAD,Resale,Strata,42,"23,810",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+DUO RESIDENCES,"2,380,000","1,022.58","2,327",May-23,FRASER STREET,Resale,Strata,95,"25,053",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,31 to 35
+TEXTILE CENTRE,"1,000,000",882.65,"1,133",May-23,JALAN SULTAN,Resale,Strata,82,"12,195",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"1,576,000",473.62,"3,328",May-23,BEACH ROAD,New Sale,Strata,44,"35,818",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+DUO RESIDENCES,"2,330,000","1,184.04","1,968",May-23,FRASER STREET,Resale,Strata,110,"21,182",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,221,900",731.95,"3,036",Apr-23,BEACH ROAD,New Sale,Strata,68,"32,675",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"3,876,000","1,442.38","2,687",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,134,"28,925",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"4,849,020","1,808.35","2,681",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,168,"28,863",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"5,719,000","1,808.35","3,163",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,168,"34,042",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"1,406,000",473.62,"2,969",Apr-23,TAN QUEE LAN STREET,Sub Sale,Strata,44,"31,955",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,437,000",731.95,"3,329",Apr-23,BEACH ROAD,New Sale,Strata,68,"35,838",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,760,000","1,420.85","1,943",Apr-23,BEACH ROAD,Resale,Strata,132,"20,909",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,183,200",731.95,"2,983",Apr-23,BEACH ROAD,New Sale,Strata,68,"32,106",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,335,300",731.95,"3,191",Apr-23,BEACH ROAD,New Sale,Strata,68,"34,343",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,307,500",731.95,"3,153",Apr-23,BEACH ROAD,New Sale,Strata,68,"33,934",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,603,600",731.95,"3,557",Apr-23,BEACH ROAD,New Sale,Strata,68,"38,288",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,840,110","1,808.35","2,677",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,168,"28,810",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE M,"1,882,000",635.08,"2,963",Apr-23,MIDDLE ROAD,New Sale,Strata,59,"31,898",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,050,000",968.76,"2,116",Apr-23,FRASER STREET,Resale,Strata,90,"22,778",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,503,810",409.03,"3,677",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,38,"39,574",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,998,000",796.54,"2,508",Apr-23,MIDDLE ROAD,New Sale,Strata,74,"27,000",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,276,140","1,087.16","2,094",Apr-23,BEACH ROAD,Resale,Strata,101,"22,536",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"1,472,130",409.03,"3,599",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,38,"38,740",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,028,310","1,463.9","2,752",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,136,"29,620",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"1,400,000",861.12,"1,626",Apr-23,BEACH ROAD,Resale,Strata,80,"17,500",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+THE PLAZA,"1,250,000",990.29,"1,262",Apr-23,BEACH ROAD,Resale,Strata,92,"13,587",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN BAY,"1,473,300",409.03,"3,602",Apr-23,BEACH ROAD,New Sale,Strata,38,"38,771",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,458,860","1,808.35","3,019",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,168,"32,493",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,534,500",409.03,"3,752",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,38,"40,382",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+TEXTILE CENTRE,"910,000",882.65,"1,031",Apr-23,JALAN SULTAN,Resale,Strata,82,"11,098",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"4,898,000","1,808.35","2,709",Apr-23,TAN QUEE LAN STREET,New Sale,Strata,168,"29,155",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"2,360,000","1,097.93","2,150",Mar-23,BEACH ROAD,Resale,Strata,102,"23,137",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,400,000","1,108.69","2,165",Mar-23,FRASER STREET,Resale,Strata,103,"23,301",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"5,033,160","1,808.35","2,783",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,168,"29,959",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"1,400,000",818.06,"1,711",Mar-23,BEACH ROAD,Resale,Strata,76,"18,421",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN BAY,"1,454,100",409.03,"3,555",Mar-23,BEACH ROAD,New Sale,Strata,38,"38,266",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,813,000","1,463.9","2,605",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,136,"28,037",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"5,265,810","1,808.35","2,912",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,168,"31,344",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"2,480,000",764.24,"3,245",Mar-23,MIDDLE ROAD,New Sale,Strata,71,"34,930",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,235,100",753.48,"2,966",Mar-23,BEACH ROAD,New Sale,Strata,70,"31,930",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,728,240","1,808.35","2,615",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,168,"28,144",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE M,"2,540,000",893.41,"2,843",Mar-23,MIDDLE ROAD,New Sale,Strata,83,"30,602",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,173,900",753.48,"2,885",Mar-23,BEACH ROAD,New Sale,Strata,70,"31,056",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+THE M,"2,429,000",861.12,"2,821",Mar-23,MIDDLE ROAD,New Sale,Strata,80,"30,363",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"1,560,000",473.62,"3,294",Mar-23,BEACH ROAD,New Sale,Strata,44,"35,455",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+SUNSHINE PLAZA,"1,970,000","1,679.18","1,173",Mar-23,PRINSEP LINK,Resale,Strata,156,"12,628",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,01 to 05
+MIDTOWN BAY,"2,163,800",731.95,"2,956",Mar-23,BEACH ROAD,New Sale,Strata,68,"31,821",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+CITY GATE,"1,540,000",807.3,"1,908",Mar-23,BEACH ROAD,Resale,Strata,75,"20,533",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+SOUTHBANK,"1,700,000",958,"1,775",Mar-23,NORTH BRIDGE ROAD,Resale,Strata,89,"19,101",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"4,610,000","1,463.9","3,149",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,136,"33,897",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,108,500","1,442.38","2,848",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,134,"30,660",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"1,928,000",592.02,"3,257",Mar-23,MIDDLE ROAD,New Sale,Strata,55,"35,055",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SUNSHINE PLAZA,"908,000",570.49,"1,592",Mar-23,PRINSEP LINK,Resale,Strata,53,"17,132",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+MIDTOWN BAY,"2,245,900",775.01,"2,870",Mar-23,BEACH ROAD,New Sale,Strata,72,"30,893","2,224,300",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,711,610",904.18,"2,999",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,84,"32,281",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,870,010",904.18,"3,174",Mar-23,TAN QUEE LAN STREET,New Sale,Strata,84,"34,167",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE BENCOOLEN,"1,586,000","1,044.11","1,519",Mar-23,BENCOOLEN STREET,Resale,Strata,97,"16,351",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"2,000,000",742.72,"2,693",Mar-23,BEACH ROAD,Sub Sale,Strata,69,"28,986",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+DUO RESIDENCES,"2,225,000","1,001.05","2,223",Feb-23,FRASER STREET,Resale,Strata,93,"23,925",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,36 to 40
+DUO RESIDENCES,"1,350,000",645.84,"2,090",Feb-23,FRASER STREET,Resale,Strata,60,"22,500",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,01 to 05
+SOUTHBANK,"1,110,000",592.02,"1,875",Feb-23,NORTH BRIDGE ROAD,Resale,Strata,55,"20,182",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"2,100,000","1,108.69","1,894",Feb-23,BEACH ROAD,Resale,Strata,103,"20,388",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,056,030","1,442.38","2,812",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,134,"30,269",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SOUTH BEACH RESIDENCES,"8,630,000","1,915.99","4,504",Feb-23,BEACH ROAD,Resale,Strata,178,"48,483",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,36 to 40
+BURLINGTON SQUARE,"1,468,000","1,302.44","1,127",Feb-23,BENCOOLEN STREET,Resale,Strata,121,"12,132",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,01 to 05
+THE M,"1,898,000",635.08,"2,989",Feb-23,MIDDLE ROAD,New Sale,Strata,59,"32,169",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,501,830",409.03,"3,672",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,38,"39,522",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"3,841,200","1,442.38","2,663",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,134,"28,666",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"4,728,000","1,808.35","2,615",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,168,"28,143",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,658,150",904.18,"2,940",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,84,"31,645",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+DUO RESIDENCES,"2,321,000",947.23,"2,450",Feb-23,FRASER STREET,Resale,Strata,88,"26,375",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,41 to 45
+THE M,"1,940,000",592.02,"3,277",Feb-23,MIDDLE ROAD,New Sale,Strata,55,"35,273",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,672,110",473.62,"3,531",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,44,"38,003",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"5,174,730","1,808.35","2,862",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,168,"30,802",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"2,480,000",947.23,"2,618",Feb-23,MIDDLE ROAD,New Sale,Strata,88,"28,182",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,478,070",409.03,"3,614",Feb-23,TAN QUEE LAN STREET,New Sale,Strata,38,"38,897",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,480,000",882.65,"1,677",Jan-23,BEACH ROAD,Resale,Strata,82,"18,049",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,693,000","1,808.35","2,595",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,168,"27,935",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,730,000",904.18,"1,913",Jan-23,BEACH ROAD,Resale,Strata,84,"20,595",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+THE M,"2,369,000",742.72,"3,190",Jan-23,MIDDLE ROAD,New Sale,Strata,69,"34,333",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"3,687,000","1,022.58","3,606",Jan-23,BEACH ROAD,New Sale,Strata,95,"38,811",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+MIDTOWN BAY,"2,150,800",742.72,"2,867",Jan-23,BEACH ROAD,New Sale,Strata,69,"30,858","2,129,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"2,334,000",731.95,"3,189",Jan-23,MIDDLE ROAD,New Sale,Strata,68,"34,324",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,469,060",904.18,"2,731",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,84,"29,394",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CITY GATE,"1,750,000",904.18,"1,935",Jan-23,BEACH ROAD,Resale,Strata,84,"20,833",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"2,875,900",731.95,"3,929",Jan-23,BEACH ROAD,New Sale,Strata,68,"42,293",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,229,280","1,442.38","2,932",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,134,"31,562",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,194,630","1,442.38","2,908",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,134,"31,303",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,412,430","1,442.38","3,059",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,134,"32,929",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"14,000,000","3,272.26","4,278",Jan-23,TAN QUEE LAN STREET,New Sale,Strata,304,"46,053",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,921,000",592.02,"3,245",Dec-22,MIDDLE ROAD,New Sale,Strata,55,"34,927",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,820,510",904.18,"3,119",Dec-22,TAN QUEE LAN STREET,New Sale,Strata,84,"33,578",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN BAY,"1,504,000",462.85,"3,249",Dec-22,BEACH ROAD,New Sale,Strata,43,"34,977",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+TEXTILE CENTRE,"930,000",882.65,"1,054",Dec-22,JALAN SULTAN,Resale,Strata,82,"11,341",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"2,701,710",904.18,"2,988",Dec-22,TAN QUEE LAN STREET,New Sale,Strata,84,"32,163",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+SOUTH BEACH RESIDENCES,"8,500,000","1,969.81","4,315",Dec-22,BEACH ROAD,Resale,Strata,183,"46,448",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,300,000","1,130.22","2,035",Dec-22,BEACH ROAD,Resale,Strata,105,"21,905",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"5,362,830","1,808.35","2,966",Dec-22,TAN QUEE LAN STREET,New Sale,Strata,168,"31,922",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,815,360","1,808.35","2,663",Dec-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,663",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"2,743,290",904.18,"3,034",Dec-22,TAN QUEE LAN STREET,New Sale,Strata,84,"32,658",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CITY GATE,"2,850,000","1,463.9","1,947",Dec-22,BEACH ROAD,Resale,Strata,136,"20,956",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+MIDTOWN MODERN,"3,872,880","1,442.38","2,685",Nov-22,TAN QUEE LAN STREET,New Sale,Strata,134,"28,902",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,410,000",645.84,"2,183",Nov-22,FRASER STREET,Resale,Strata,60,"23,500",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+TANQUEELAN SUITES,"1,350,000",753.48,"1,792",Nov-22,TAN QUEE LAN STREET,Resale,Strata,70,"19,286",-,Apartment,1,999 yrs lease commencing from 1827,07,Core Central Region,01 to 05
+MIDTOWN BAY,"1,558,100",473.62,"3,290",Nov-22,BEACH ROAD,New Sale,Strata,44,"35,411",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,180,300",742.72,"2,936",Nov-22,BEACH ROAD,New Sale,Strata,69,"31,599",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,681,910",904.18,"2,966",Nov-22,TAN QUEE LAN STREET,New Sale,Strata,84,"31,928",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+DUO RESIDENCES,"3,938,000","1,722.24","2,287",Nov-22,FRASER STREET,Resale,Strata,160,"24,613",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,41 to 45
+CONCOURSE SKYLINE,"2,000,000","1,097.93","1,822",Nov-22,BEACH ROAD,Resale,Strata,102,"19,608",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"988,000",882.65,"1,119",Nov-22,JALAN SULTAN,Resale,Strata,82,"12,049",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"2,620,000","1,323.97","1,979",Nov-22,BEACH ROAD,Resale,Strata,123,"21,301",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,082,760","1,442.38","2,831",Nov-22,TAN QUEE LAN STREET,New Sale,Strata,134,"30,468",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,496,600",753.48,"3,313",Nov-22,BEACH ROAD,New Sale,Strata,70,"35,666",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"2,274,000",753.48,"3,018",Nov-22,MIDDLE ROAD,New Sale,Strata,70,"32,486",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,879,000",635.08,"2,959",Nov-22,MIDDLE ROAD,New Sale,Strata,59,"31,847",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,913,000",635.08,"3,012",Nov-22,MIDDLE ROAD,New Sale,Strata,59,"32,424",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,610,630",904.18,"2,887",Nov-22,TAN QUEE LAN STREET,New Sale,Strata,84,"31,079",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+BURLINGTON SQUARE,"1,480,000","1,119.46","1,322",Nov-22,BENCOOLEN STREET,Resale,Strata,104,"14,231",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+SUNSHINE PLAZA,"1,330,000",861.12,"1,545",Nov-22,PRINSEP LINK,Resale,Strata,80,"16,625",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,01 to 05
+MIDTOWN MODERN,"4,720,320","1,808.35","2,610",Nov-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,097",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"2,259,000",753.48,"2,998",Oct-22,MIDDLE ROAD,New Sale,Strata,70,"32,271",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,750,120","1,463.9","2,562",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,136,"27,574",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE M,"2,440,000",764.24,"3,193",Oct-22,MIDDLE ROAD,New Sale,Strata,71,"34,366",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,400,000",678.13,"2,064",Oct-22,BEACH ROAD,Resale,Strata,63,"22,222",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN BAY,"1,595,300",484.38,"3,249",Oct-22,BEACH ROAD,New Sale,Strata,45,"34,971","1,573,700",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,577,960",904.18,"2,851",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,690",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,124,400",742.72,"2,831",Oct-22,BEACH ROAD,New Sale,Strata,69,"30,475","2,102,800",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,579,940",904.18,"2,853",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,714",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,522,320","1,808.35","2,501",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,168,"26,919",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,410,000",688.9,"2,047",Oct-22,BEACH ROAD,Resale,Strata,64,"22,031",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"1,390,000",688.9,"2,018",Oct-22,BEACH ROAD,Resale,Strata,64,"21,719",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"2,550,240",904.18,"2,821",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,360",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,373,030",904.18,"2,625",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,84,"28,250",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"4,977,720","1,808.35","2,753",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,168,"29,629",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,804,470","1,808.35","2,657",Oct-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,598",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"1,400,000",828.83,"1,689",Sep-22,BEACH ROAD,Resale,Strata,77,"18,182",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,556,970","1,808.35","2,520",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,168,"27,125",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"918,000",882.65,"1,040",Sep-22,JALAN SULTAN,Resale,Strata,82,"11,195",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+DUO RESIDENCES,"2,040,000",968.76,"2,106",Sep-22,FRASER STREET,Resale,Strata,90,"22,667",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"3,825,360","1,442.38","2,652",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,134,"28,547",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+DUO RESIDENCES,"11,475,720","4,391.71","2,613",Sep-22,FRASER STREET,Resale,Strata,408,"28,127",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,46 to 50
+CITY GATE,"1,100,000",570.49,"1,928",Sep-22,BEACH ROAD,Resale,Strata,53,"20,755",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"1,661,220",473.62,"3,508",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,44,"37,755",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE BENCOOLEN,"1,250,000",882.65,"1,416",Sep-22,BENCOOLEN STREET,Resale,Strata,82,"15,244",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"1,380,000",818.06,"1,687",Sep-22,BEACH ROAD,Resale,Strata,76,"18,158",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+THE BENCOOLEN,"1,500,000","1,044.11","1,437",Sep-22,BENCOOLEN STREET,Resale,Strata,97,"15,464",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"2,524,500",904.18,"2,792",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,054",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,542,800",452.09,"3,365",Sep-22,BEACH ROAD,New Sale,Strata,42,"36,219","1,521,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,643,300",904.18,"2,923",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,84,"31,468",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+TEXTILE CENTRE,"960,000",904.18,"1,062",Sep-22,JALAN SULTAN,Resale,Strata,84,"11,429",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"2,619,540",904.18,"2,897",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,84,"31,185",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"4,011,480","1,442.38","2,781",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,134,"29,936",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,110,000",968.76,"2,178",Sep-22,FRASER STREET,Resale,Strata,90,"23,444",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"2,180,000","1,151.75","1,893",Sep-22,BEACH ROAD,Resale,Strata,107,"20,374",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,598,750",904.18,"2,874",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,938",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+TEXTILE CENTRE,"990,000",904.18,"1,095",Sep-22,JALAN SULTAN,Resale,Strata,84,"11,786",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"4,908,420","1,808.35","2,714",Sep-22,TAN QUEE LAN STREET,New Sale,Strata,168,"29,217",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"1,555,000",527.44,"2,914",Sep-22,MIDDLE ROAD,New Sale,Strata,49,"31,367","1,537,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,618,000",904.18,"1,789",Sep-22,BEACH ROAD,Resale,Strata,84,"19,262",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+THE BENCOOLEN,"1,430,000","1,001.05","1,428",Aug-22,BENCOOLEN STREET,Resale,Strata,93,"15,376",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"2,556,180",904.18,"2,827",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,431",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,650,000",656.6,"2,482",Aug-22,MIDDLE ROAD,New Sale,Strata,61,"26,721","1,630,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,378,970",904.18,"2,631",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,84,"28,321",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE PLAZA,"710,000",473.62,"1,499",Aug-22,BEACH ROAD,Resale,Strata,44,"16,136",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CITY GATE,"1,530,000",710.42,"2,154",Aug-22,BEACH ROAD,Resale,Strata,66,"23,182",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"2,480,940",904.18,"2,744",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,84,"29,535",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,762,100",904.18,"3,055",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,84,"32,882",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,692,000",527.44,"3,174",Aug-22,MIDDLE ROAD,New Sale,Strata,49,"34,163","1,674,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,974,850","1,442.38","2,756",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,134,"29,663",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,650,000",656.6,"2,486",Aug-22,MIDDLE ROAD,New Sale,Strata,61,"26,754","1,632,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"1,694,700",484.38,"3,454",Aug-22,BEACH ROAD,New Sale,Strata,45,"37,180","1,673,100",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+THE M,"1,811,000",613.55,"2,917",Aug-22,MIDDLE ROAD,New Sale,Strata,57,"31,404","1,790,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"970,000",452.09,"2,146",Aug-22,BEACH ROAD,Resale,Strata,42,"23,095",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+THE PLAZA,"1,200,000",807.3,"1,486",Aug-22,BEACH ROAD,Resale,Strata,75,"16,000",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+SUNSHINE PLAZA,"1,238,888",914.94,"1,354",Aug-22,PRINSEP LINK,Resale,Strata,85,"14,575",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"3,722,400","1,463.9","2,543",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,136,"27,371",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"4,720,320","1,808.35","2,610",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,097",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,759,920","1,808.35","2,632",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,333",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"3,115,530","1,065.64","2,924",Aug-22,TAN QUEE LAN STREET,New Sale,Strata,99,"31,470",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,350,000",807.3,"1,672",Jul-22,BEACH ROAD,Resale,Strata,75,"18,000",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"4,804,470","1,808.35","2,657",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,168,"28,598",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,507,670",904.18,"2,773",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,84,"29,853",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,650,000",656.6,"2,486",Jul-22,MIDDLE ROAD,New Sale,Strata,61,"26,754","1,632,000",Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,537,370",904.18,"2,806",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,84,"30,207",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"1,531,700",484.38,"3,118",Jul-22,BEACH ROAD,New Sale,Strata,45,"33,558","1,510,100",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"3,849,120","1,442.38","2,669",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,134,"28,725",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"3,201,660","1,065.64","3,004",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,99,"32,340",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CITY GATE,"980,000",452.09,"2,168",Jul-22,BEACH ROAD,Resale,Strata,42,"23,333",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"8,350,000","1,808.35","4,617",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,168,"49,702",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"8,650,000","1,808.35","4,783",Jul-22,TAN QUEE LAN STREET,New Sale,Strata,168,"51,488",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"4,680,720","1,808.35","2,588",Jun-22,TAN QUEE LAN STREET,New Sale,Strata,168,"27,861",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,190,000",527.44,"2,256",Jun-22,FRASER STREET,Resale,Strata,49,"24,286",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,250,000","1,151.75","1,954",Jun-22,BEACH ROAD,Resale,Strata,107,"21,028",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+MIDTOWN BAY,"3,368,300","1,022.58","3,273",Jun-22,BEACH ROAD,New Sale,Strata,95,"35,228","3,346,700",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"3,760,020","1,442.38","2,607",Jun-22,TAN QUEE LAN STREET,New Sale,Strata,134,"28,060",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CITY GATE,"1,460,000",699.66,"2,087",Jun-22,BEACH ROAD,Resale,Strata,65,"22,462",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+CITY GATE,"1,390,000",699.66,"1,987",Jun-22,BEACH ROAD,Resale,Strata,65,"21,385",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"2,911,590","1,065.64","2,732",Jun-22,TAN QUEE LAN STREET,New Sale,Strata,99,"29,410",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE PLAZA,"1,045,000",807.3,"1,294",May-22,BEACH ROAD,Resale,Strata,75,"13,933",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"5,239,080","1,808.35","2,897",May-22,TAN QUEE LAN STREET,New Sale,Strata,168,"31,185",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"1,530,900",462.85,"3,261",May-22,BEACH ROAD,New Sale,Strata,43,"35,100","1,509,300",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"3,695,670","1,442.38","2,562",May-22,TAN QUEE LAN STREET,New Sale,Strata,134,"27,580",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+SOUTHBANK,"1,068,000",613.55,"1,741",May-22,NORTH BRIDGE ROAD,Resale,Strata,57,"18,737",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+CITY GATE,"1,115,000",559.73,"1,992",May-22,BEACH ROAD,Resale,Strata,52,"21,442",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+CITY GATE,"946,880",452.09,"2,094",May-22,BEACH ROAD,Resale,Strata,42,"22,545",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+TEXTILE CENTRE,"900,000",882.65,"1,020",May-22,JALAN SULTAN,Resale,Strata,82,"10,976",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+MIDTOWN BAY,"2,089,200",731.95,"2,825",May-22,BEACH ROAD,New Sale,Strata,68,"30,406","2,067,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,438,000",710.42,"2,024",May-22,FRASER STREET,Resale,Strata,66,"21,788",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+CITY GATE,"1,740,000",914.94,"1,902",May-22,BEACH ROAD,Resale,Strata,85,"20,471",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"3,041,280","1,065.64","2,854",May-22,TAN QUEE LAN STREET,New Sale,Strata,99,"30,720",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+BURLINGTON SQUARE,"1,380,000","1,151.75","1,198",May-22,BENCOOLEN STREET,Resale,Strata,107,"12,897",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,01 to 05
+THE M,"2,079,000",753.48,"2,759",May-22,MIDDLE ROAD,New Sale,Strata,70,"29,700",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,480,000",527.44,"2,806",May-22,MIDDLE ROAD,New Sale,Strata,49,"30,204",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,488,860",904.18,"2,753",May-22,TAN QUEE LAN STREET,New Sale,Strata,84,"29,629",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,950,000","1,011.82","1,927",Apr-22,FRASER STREET,Resale,Strata,94,"20,745",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,085,000",635.08,"3,283",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,59,"35,339",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,750,000",635.08,"2,756",Apr-22,MIDDLE ROAD,New Sale,Strata,59,"29,661",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,534,477","1,162.51","2,180",Apr-22,BEACH ROAD,Resale,Strata,108,"23,467",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"2,817,540","1,065.64","2,644",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,99,"28,460",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,955,150","1,065.64","2,773",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,99,"29,850",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"2,450,250",904.18,"2,710",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,84,"29,170",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+BURLINGTON SQUARE,"888,000",667.37,"1,331",Apr-22,BENCOOLEN STREET,Resale,Strata,62,"14,323",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"5,200,000","2,142.04","2,428",Apr-22,BEACH ROAD,Resale,Strata,199,"26,131",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"2,388,870",904.18,"2,642",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,84,"28,439",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+THE M,"2,122,000",764.24,"2,777",Apr-22,MIDDLE ROAD,New Sale,Strata,71,"29,887",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,480,000",527.44,"2,806",Apr-22,MIDDLE ROAD,New Sale,Strata,49,"30,204",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"2,092,000",764.24,"2,737",Apr-22,MIDDLE ROAD,New Sale,Strata,71,"29,465",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,997,720","1,065.64","2,813",Apr-22,TAN QUEE LAN STREET,New Sale,Strata,99,"30,280",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+SOUTHBANK,"1,700,000",958,"1,775",Apr-22,NORTH BRIDGE ROAD,Resale,Strata,89,"19,101",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"2,600,000","1,334.74","1,948",Apr-22,BEACH ROAD,Resale,Strata,124,"20,968",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+BURLINGTON SQUARE,"1,041,000",731.95,"1,422",Apr-22,BENCOOLEN STREET,Resale,Strata,68,"15,309",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+THE M,"1,759,000",764.24,"2,302",Apr-22,MIDDLE ROAD,New Sale,Strata,71,"24,775",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,480,000",527.44,"2,806",Apr-22,MIDDLE ROAD,New Sale,Strata,49,"30,204",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,410,000",731.95,"3,293",Apr-22,BEACH ROAD,New Sale,Strata,68,"35,441",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"1,787,000",742.72,"2,406",Apr-22,MIDDLE ROAD,New Sale,Strata,69,"25,899",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,787,000",742.72,"2,406",Apr-22,MIDDLE ROAD,New Sale,Strata,69,"25,899",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SUNSHINE PLAZA,"1,415,000","1,130.22","1,252",Mar-22,PRINSEP LINK,Resale,Strata,105,"13,476",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+THE M,"1,480,000",527.44,"2,806",Mar-22,MIDDLE ROAD,New Sale,Strata,49,"30,204",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"4,646,070","1,808.35","2,569",Mar-22,TAN QUEE LAN STREET,New Sale,Strata,168,"27,655",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,415,600",904.18,"2,672",Mar-22,TAN QUEE LAN STREET,New Sale,Strata,84,"28,757",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,433,420",904.18,"2,691",Mar-22,TAN QUEE LAN STREET,New Sale,Strata,84,"28,969",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,023,800",753.48,"2,657",Mar-22,BEACH ROAD,New Sale,Strata,70,"28,603","2,002,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+SOUTHBANK,"1,665,000",904.18,"1,841",Mar-22,NORTH BRIDGE ROAD,Resale,Strata,84,"19,821",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"2,903,670","1,065.64","2,725",Mar-22,TAN QUEE LAN STREET,New Sale,Strata,99,"29,330",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE PLAZA,"900,000",764.24,"1,178",Mar-22,BEACH ROAD,Resale,Strata,71,"12,676",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,080,000","1,087.16","1,913",Mar-22,BEACH ROAD,Resale,Strata,101,"20,594",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN BAY,"1,320,000",462.85,"2,852",Mar-22,BEACH ROAD,Sub Sale,Strata,43,"30,698",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+CITY GATE,"1,400,000",678.13,"2,064",Mar-22,BEACH ROAD,Resale,Strata,63,"22,222",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"1,980,000","1,151.75","1,719",Mar-22,BEACH ROAD,Resale,Strata,107,"18,505",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+THE PLAZA,"930,000",828.83,"1,122",Feb-22,BEACH ROAD,Resale,Strata,77,"12,078",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"1,986,000",635.08,"3,127",Feb-22,TAN QUEE LAN STREET,New Sale,Strata,59,"33,661",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE M,"1,755,000",592.02,"2,964",Feb-22,MIDDLE ROAD,New Sale,Strata,55,"31,909",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,250,000",882.65,"1,416",Feb-22,BENCOOLEN STREET,Resale,Strata,82,"15,244",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+CITY GATE,"905,000",452.09,"2,002",Feb-22,BEACH ROAD,Resale,Strata,42,"21,548",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+SOUTHBANK,"1,738,000",968.76,"1,794",Feb-22,NORTH BRIDGE ROAD,Resale,Strata,90,"19,311",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,36 to 40
+CONCOURSE SKYLINE,"1,850,000",839.59,"2,203",Feb-22,BEACH ROAD,Resale,Strata,78,"23,718",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+MIDTOWN BAY,"2,178,700",753.48,"2,860",Feb-22,BEACH ROAD,New Sale,Strata,70,"30,781","2,154,700",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"2,750,000","1,410.08","1,950",Feb-22,BEACH ROAD,Resale,Strata,131,"20,992",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+THE M,"1,740,000",613.55,"2,836",Jan-22,MIDDLE ROAD,New Sale,Strata,57,"30,526",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"1,348,000",861.12,"1,565",Jan-22,BEACH ROAD,Resale,Strata,80,"16,850",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+DUO RESIDENCES,"1,878,888",839.59,"2,238",Jan-22,FRASER STREET,Resale,Strata,78,"24,088",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"1,950,000","1,173.28","1,662",Jan-22,BEACH ROAD,Resale,Strata,109,"17,890",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+DUO RESIDENCES,"3,180,000","1,528.49","2,080",Jan-22,FRASER STREET,Resale,Strata,142,"22,394",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,26 to 30
+DUO RESIDENCES,"2,130,000","1,108.69","1,921",Jan-22,FRASER STREET,Resale,Strata,103,"20,680",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+THE M,"1,444,000",527.44,"2,738",Jan-22,MIDDLE ROAD,New Sale,Strata,49,"29,469",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,429,000",527.44,"2,709",Jan-22,MIDDLE ROAD,New Sale,Strata,49,"29,163",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,743,000",667.37,"2,612",Jan-22,MIDDLE ROAD,New Sale,Strata,62,"28,113",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE M,"1,636,000",613.55,"2,666",Jan-22,MIDDLE ROAD,New Sale,Strata,57,"28,702",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,565,000",807.3,"1,939",Jan-22,BEACH ROAD,Resale,Strata,75,"20,867",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+MIDTOWN BAY,"1,552,000",484.38,"3,160",Jan-22,BEACH ROAD,New Sale,Strata,45,"34,009","1,530,400",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"1,582,200",484.38,"3,222",Jan-22,BEACH ROAD,New Sale,Strata,45,"34,680","1,560,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,381,700",731.95,"3,224",Jan-22,BEACH ROAD,New Sale,Strata,68,"34,707","2,360,100",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+MIDTOWN BAY,"2,539,300",731.95,"3,440",Jan-22,BEACH ROAD,New Sale,Strata,68,"37,025","2,517,700",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"1,455,300",409.03,"3,558",Jan-22,TAN QUEE LAN STREET,New Sale,Strata,38,"38,297",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+SUNSHINE PLAZA,"1,400,000","1,044.11","1,341",Jan-22,PRINSEP LINK,Resale,Strata,97,"14,433",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"4,613,400","1,808.35","2,551",Dec-21,TAN QUEE LAN STREET,New Sale,Strata,168,"27,461",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,933,370","1,065.64","2,753",Dec-21,TAN QUEE LAN STREET,New Sale,Strata,99,"29,630",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+SOUTH BEACH RESIDENCES,"6,018,000","1,872.94","3,213",Dec-21,BEACH ROAD,Resale,Strata,174,"34,586",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,26 to 30
+DUO RESIDENCES,"2,318,888","1,022.58","2,268",Dec-21,FRASER STREET,Resale,Strata,95,"24,409",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,41 to 45
+MIDTOWN BAY,"1,510,800",484.38,"3,074",Dec-21,BEACH ROAD,New Sale,Strata,45,"33,093","1,489,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+THE PLAZA,"1,020,000",807.3,"1,263",Dec-21,BEACH ROAD,Resale,Strata,75,"13,600",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+TEXTILE CENTRE,"906,800",882.65,"1,027",Dec-21,JALAN SULTAN,Resale,Strata,82,"11,059",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,21 to 25
+SOUTHBANK,"1,700,000",958,"1,775",Dec-21,NORTH BRIDGE ROAD,Resale,Strata,89,"19,101",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,31 to 35
+SOUTHBANK,"1,600,000",904.18,"1,770",Dec-21,NORTH BRIDGE ROAD,Resale,Strata,84,"19,048",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+CONCOURSE SKYLINE,"5,000,000","2,174.33","2,300",Dec-21,BEACH ROAD,Resale,Strata,202,"24,752",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+TEXTILE CENTRE,"900,000",882.65,"1,020",Dec-21,JALAN SULTAN,Resale,Strata,82,"10,976",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,21 to 25
+TEXTILE CENTRE,"920,000",882.65,"1,042",Dec-21,JALAN SULTAN,Resale,Strata,82,"11,220",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,16 to 20
+SOUTHBANK,"2,250,000","1,313.21","1,713",Dec-21,NORTH BRIDGE ROAD,Resale,Strata,122,"18,443",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,31 to 35
+MIDTOWN MODERN,"2,964,060","1,065.64","2,781",Dec-21,TAN QUEE LAN STREET,New Sale,Strata,99,"29,940",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,400,000",807.3,"1,734",Dec-21,BEACH ROAD,Resale,Strata,75,"18,667",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+MIDTOWN BAY,"2,065,700",731.95,"2,822",Dec-21,BEACH ROAD,New Sale,Strata,68,"30,378",-,Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+TEXTILE CENTRE,"980,000","1,001.05",979,Dec-21,JALAN SULTAN,Resale,Strata,93,"10,538",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,21 to 25
+THE M,"2,000,000",731.95,"2,732",Dec-21,MIDDLE ROAD,New Sale,Strata,68,"29,412",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,100,000","1,097.93","1,913",Dec-21,BEACH ROAD,Resale,Strata,102,"20,588",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,26 to 30
+MIDTOWN BAY,"1,475,100",473.62,"3,069",Nov-21,BEACH ROAD,New Sale,Strata,44,"33,034","1,453,500",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,028,400",731.95,"2,742",Nov-21,BEACH ROAD,New Sale,Strata,68,"29,512","2,006,800",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+THE M,"1,457,800",527.44,"2,764",Nov-21,MIDDLE ROAD,New Sale,Strata,49,"29,751",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,847,240","1,065.64","2,672",Nov-21,TAN QUEE LAN STREET,New Sale,Strata,99,"28,760",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN BAY,"1,967,100",742.72,"2,619",Nov-21,BEACH ROAD,New Sale,Strata,69,"28,196","1,945,500",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+THE M,"1,433,800",527.44,"2,718",Nov-21,MIDDLE ROAD,New Sale,Strata,49,"29,261",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CITY GATE,"1,380,000",678.13,"2,035",Nov-21,BEACH ROAD,Resale,Strata,63,"21,905",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,26 to 30
+CONCOURSE SKYLINE,"1,890,000","1,108.69","1,705",Nov-21,BEACH ROAD,Resale,Strata,103,"18,350",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,06 to 10
+CONCOURSE SKYLINE,"2,500,000","1,108.69","2,255",Nov-21,BEACH ROAD,Resale,Strata,103,"24,272",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+THE M,"1,601,800",656.6,"2,440",Nov-21,MIDDLE ROAD,New Sale,Strata,61,"26,259",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,400,000",710.42,"1,971",Nov-21,FRASER STREET,Resale,Strata,66,"21,212",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,06 to 10
+THE BENCOOLEN,"1,190,000",882.65,"1,348",Nov-21,BENCOOLEN STREET,Resale,Strata,82,"14,512",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+TEXTILE CENTRE,"880,000",914.94,962,Nov-21,JALAN SULTAN,Resale,Strata,85,"10,353",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,11 to 15
+THE PLAZA,"850,000",764.24,"1,112",Nov-21,BEACH ROAD,Resale,Strata,71,"11,972",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+CITY GATE,"1,080,000",570.49,"1,893",Nov-21,BEACH ROAD,Resale,Strata,53,"20,377",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"4,281,750","1,442.38","2,969",Nov-21,TAN QUEE LAN STREET,New Sale,Strata,134,"31,953",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+THE PLAZA,"845,000",731.95,"1,154",Nov-21,BEACH ROAD,Resale,Strata,68,"12,426",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"2,300,000","1,108.69","2,075",Nov-21,BEACH ROAD,Resale,Strata,103,"22,330",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+MIDTOWN MODERN,"1,393,000",473.62,"2,941",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,44,"31,659",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"1,203,000",409.03,"2,941",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,38,"31,658",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"1,245,000",409.03,"3,044",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,38,"32,763",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE PLAZA,"800,000",678.13,"1,180",Oct-21,BEACH ROAD,Resale,Strata,63,"12,698",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+MIDTOWN MODERN,"2,850,210","1,065.64","2,675",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,99,"28,790",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+SOUTH BEACH RESIDENCES,"18,500,000","3,896.57","4,748",Oct-21,BEACH ROAD,Resale,Strata,362,"51,105",-,Apartment,1,99 yrs lease commencing from 2007,07,Core Central Region,41 to 45
+CITY GATE,"1,395,000",753.48,"1,851",Oct-21,BEACH ROAD,Resale,Strata,70,"19,929",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+THE PLAZA,"790,000",731.95,"1,079",Oct-21,BEACH ROAD,Resale,Strata,68,"11,618",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,26 to 30
+DUO RESIDENCES,"1,340,000",645.84,"2,075",Oct-21,FRASER STREET,Resale,Strata,60,"22,333",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,21 to 25
+DUO RESIDENCES,"2,400,000","1,184.04","2,027",Oct-21,FRASER STREET,Resale,Strata,110,"21,818",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+MIDTOWN BAY,"1,355,600",409.03,"3,261",Oct-21,BEACH ROAD,New Sale,Strata,38,"35,105","1,334,000",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,827,440","1,065.64","2,653",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,99,"28,560",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"1,450,000",818.06,"1,772",Oct-21,BEACH ROAD,Resale,Strata,76,"19,079",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,742,300","1,065.64","2,573",Oct-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,700",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+SUNSHINE PLAZA,"1,538,000","1,044.11","1,473",Oct-21,PRINSEP LINK,Resale,Strata,97,"15,856",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+CONCOURSE SKYLINE,"2,360,000","1,173.28","2,011",Oct-21,BEACH ROAD,Resale,Strata,109,"21,651",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+THE M,"1,421,000",527.44,"2,694",Oct-21,MIDDLE ROAD,New Sale,Strata,49,"29,000",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,985,000",861.12,"2,305",Oct-21,MIDDLE ROAD,New Sale,Strata,80,"24,813",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+DUO RESIDENCES,"2,128,888",936.47,"2,273",Oct-21,FRASER STREET,Resale,Strata,87,"24,470",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,16 to 20
+DUO RESIDENCES,"1,880,000",818.06,"2,298",Oct-21,FRASER STREET,Resale,Strata,76,"24,737",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+MIDTOWN BAY,"1,396,800",462.85,"2,971",Sep-21,BEACH ROAD,New Sale,Strata,43,"31,981","1,375,200",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,11 to 15
+MIDTOWN BAY,"2,303,392",753.48,"3,028",Sep-21,BEACH ROAD,New Sale,Strata,70,"32,597","2,281,792",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,16 to 20
+THE M,"1,660,000",613.55,"2,706",Sep-21,MIDDLE ROAD,New Sale,Strata,57,"29,123",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"24,000,000","11,129.98","2,156",Sep-21,BEACH ROAD,Resale,Strata,"1,034","23,211",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,36 to 40
+MIDTOWN MODERN,"2,745,270","1,065.64","2,576",Sep-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,730",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,806,650","1,065.64","2,634",Sep-21,TAN QUEE LAN STREET,New Sale,Strata,99,"28,350",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"1,700,000",592.02,"2,872",Sep-21,MIDDLE ROAD,New Sale,Strata,55,"30,909",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,714,000",613.55,"2,794",Sep-21,MIDDLE ROAD,New Sale,Strata,57,"30,070",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,862,000",613.55,"3,035",Sep-21,MIDDLE ROAD,New Sale,Strata,57,"32,667",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,708,000",731.95,"2,333",Sep-21,MIDDLE ROAD,New Sale,Strata,68,"25,118",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE M,"1,680,000",731.95,"2,295",Sep-21,MIDDLE ROAD,New Sale,Strata,68,"24,706",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+THE BENCOOLEN,"1,200,000",925.7,"1,296",Sep-21,BENCOOLEN STREET,Resale,Strata,86,"13,953",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,06 to 10
+THE M,"1,404,000",527.44,"2,662",Sep-21,MIDDLE ROAD,New Sale,Strata,49,"28,653",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+THE PLAZA,"788,000",678.13,"1,162",Sep-21,BEACH ROAD,Resale,Strata,63,"12,508",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+DUO RESIDENCES,"2,300,000","1,001.05","2,298",Aug-21,FRASER STREET,Resale,Strata,93,"24,731",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,46 to 50
+MIDTOWN MODERN,"2,716,560","1,065.64","2,549",Aug-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,440",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+MIDTOWN MODERN,"2,375,010",904.18,"2,627",Aug-21,TAN QUEE LAN STREET,New Sale,Strata,84,"28,274",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"1,400,000",882.65,"1,586",Aug-21,BEACH ROAD,Resale,Strata,82,"17,073",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,21 to 25
+THE M,"2,034,000",753.48,"2,699",Aug-21,MIDDLE ROAD,New Sale,Strata,70,"29,057",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+SOUTHBANK,"1,615,000",904.18,"1,786",Aug-21,NORTH BRIDGE ROAD,Resale,Strata,84,"19,226",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+DUO RESIDENCES,"2,000,000",968.76,"2,064",Aug-21,FRASER STREET,Resale,Strata,90,"22,222",-,Apartment,1,99 yrs lease commencing from 2011,07,Core Central Region,11 to 15
+CONCOURSE SKYLINE,"1,388,000",818.06,"1,697",Aug-21,BEACH ROAD,Resale,Strata,76,"18,263",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+CITY GATE,"1,680,000",904.18,"1,858",Aug-21,BEACH ROAD,Resale,Strata,84,"20,000",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"2,721,510","1,065.64","2,554",Aug-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,490",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+CONCOURSE SKYLINE,"2,358,000","1,173.28","2,010",Aug-21,BEACH ROAD,Resale,Strata,109,"21,633",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+THE BENCOOLEN,"1,354,000","1,001.05","1,353",Aug-21,BENCOOLEN STREET,Resale,Strata,93,"14,559",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,11 to 15
+CONCOURSE SKYLINE,"2,020,000","1,087.16","1,858",Jul-21,BEACH ROAD,Resale,Strata,101,"20,000",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,16 to 20
+THE PLAZA,"822,000",678.13,"1,212",Jul-21,BEACH ROAD,Resale,Strata,63,"13,048",-,Apartment,1,99 yrs lease commencing from 1968,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"2,659,140","1,065.64","2,495",Jul-21,TAN QUEE LAN STREET,New Sale,Strata,99,"26,860",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,11 to 15
+MIDTOWN MODERN,"2,764,080","1,065.64","2,594",Jul-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,920",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"2,420,000","1,356.26","1,784",Jul-21,BEACH ROAD,Resale,Strata,126,"19,206",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+THE BENCOOLEN,"1,288,000",979.52,"1,315",Jul-21,BENCOOLEN STREET,Resale,Strata,91,"14,154",-,Apartment,1,99 yrs lease commencing from 1995,07,Rest of Central Region,16 to 20
+MIDTOWN MODERN,"2,765,070","1,065.64","2,595",Jul-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,930",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+THE M,"2,175,000",742.72,"2,928",Jul-21,MIDDLE ROAD,New Sale,Strata,69,"31,522",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SUNSHINE PLAZA,"1,120,000",764.24,"1,466",Jul-21,PRINSEP LINK,Resale,Strata,71,"15,775",-,Apartment,1,99 yrs lease commencing from 1997,07,Rest of Central Region,06 to 10
+CITY GATE,"1,390,000",710.42,"1,957",Jul-21,BEACH ROAD,Resale,Strata,66,"21,061",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+MIDTOWN MODERN,"2,341,350",904.18,"2,589",Jul-21,TAN QUEE LAN STREET,New Sale,Strata,84,"27,873",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,696,760","1,065.64","2,531",Jul-21,TAN QUEE LAN STREET,New Sale,Strata,99,"27,240",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+CONCOURSE SKYLINE,"5,086,318","2,109.74","2,411",Jul-21,BEACH ROAD,Resale,Strata,196,"25,951",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,31 to 35
+CITY GATE,"1,032,000",559.73,"1,844",Jul-21,BEACH ROAD,Resale,Strata,52,"19,846",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,16 to 20
+CITY GATE,"840,000",430.56,"1,951",Jul-21,BEACH ROAD,Resale,Strata,40,"21,000",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,21 to 25
+MIDTOWN BAY,"1,438,600",484.38,"2,896",Jun-21,BEACH ROAD,New Sale,Strata,45,"31,169","1,402,600",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,358,180",904.18,"2,608",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,84,"28,074",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+CITY GATE,"1,385,000",753.48,"1,838",Jun-21,BEACH ROAD,Resale,Strata,70,"19,786",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
+SOUTHBANK,"1,630,000",958,"1,701",Jun-21,NORTH BRIDGE ROAD,Resale,Strata,89,"18,315",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+WATERLOO VIEW,"1,600,000","1,776.06",901,Jun-21,WATERLOO STREET,Resale,Strata,165,"9,697",-,Apartment,1,Freehold,07,Rest of Central Region,06 to 10
+BURLINGTON SQUARE,"1,130,000",839.59,"1,346",Jun-21,BENCOOLEN STREET,Resale,Strata,78,"14,487",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,11 to 15
+MIDTOWN BAY,"2,024,288",731.95,"2,736",Jun-21,BEACH ROAD,New Sale,Strata,68,"29,451","2,002,688",Apartment,1,99 yrs lease commencing from 2018,07,Core Central Region,06 to 10
+MIDTOWN MODERN,"2,971,980","1,065.64","2,789",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,99,"30,020",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+MIDTOWN MODERN,"1,426,000",409.03,"3,486",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,38,"37,526",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,21 to 25
+BURLINGTON SQUARE,"1,200,000",936.47,"1,281",Jun-21,BENCOOLEN STREET,Resale,Strata,87,"13,793",-,Apartment,1,99 yrs lease commencing from 1996,07,Rest of Central Region,06 to 10
+MIDTOWN MODERN,"2,284,920",904.18,"2,527",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,84,"27,201",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,06 to 10
+THE M,"1,740,500",731.95,"2,378",Jun-21,MIDDLE ROAD,New Sale,Strata,68,"25,596",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,16 to 20
+SOUTHBANK,"1,010,000",592.02,"1,706",Jun-21,NORTH BRIDGE ROAD,Resale,Strata,55,"18,364",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,26 to 30
+SOUTHBANK,"1,028,000",613.55,"1,676",Jun-21,NORTH BRIDGE ROAD,Resale,Strata,57,"18,035",-,Apartment,1,99 yrs lease commencing from 2006,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"2,665,080","1,065.64","2,501",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,99,"26,920",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,01 to 05
+MIDTOWN MODERN,"1,883,970",592.02,"3,182",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,55,"34,254",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+TEXTILE CENTRE,"988,888","1,001.05",988,Jun-21,JALAN SULTAN,Resale,Strata,93,"10,633",-,Apartment,1,99 yrs lease commencing from 1970,07,Rest of Central Region,21 to 25
+MIDTOWN MODERN,"1,974,060",592.02,"3,334",Jun-21,TAN QUEE LAN STREET,New Sale,Strata,55,"35,892",-,Apartment,1,99 yrs lease commencing from 2019,07,Core Central Region,26 to 30
+CONCOURSE SKYLINE,"1,400,000",818.06,"1,711",Jun-21,BEACH ROAD,Resale,Strata,76,"18,421",-,Apartment,1,99 yrs lease commencing from 2008,07,Core Central Region,11 to 15
+CITY GATE,"1,390,000",775.01,"1,794",May-21,BEACH ROAD,Resale,Strata,72,"19,306",-,Apartment,1,99 yrs lease commencing from 2014,07,Rest of Central Region,11 to 15
