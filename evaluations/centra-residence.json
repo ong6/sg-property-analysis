@@ -1,0 +1,61 @@
+{
+  "condo": "Centra Residence",
+  "slug": "centra-residence",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR in Lorong 7 Geylang at a low $1247 PSF and an oversized 1066sqft, but the technical score flatters it: only 16 URA transactions, a 78-unit boutique block, and Geylang red-light-district adjacency all undercut exit liquidity and broad-buyer appeal. Freehold tenure is the one genuine positive.",
+      "rating_rationale": "The headline freehold tenure and below-median PSF ($1247 vs $1581) are real, but this is a thin, niche asset for an investment hold. Just 16 URA transactions (vs 100+ for peers) means the 6.23% CAGR is statistically weak and the exit market is shallow; a 78-unit development has no liquidity cushion. Lorong 7 Geylang carries persistent vice/stigma that deters family and expat tenants and caps resale to a narrow value-buyer segment. The 1066sqft 2BR is oversized for the bracket, raising quantum without a premium-buyer to absorb it.",
+      "red_flags": [
+        "Only 16 URA transactions — thin liquidity and low-confidence appreciation data",
+        "78-unit boutique development with no liquidity cushion",
+        "Geylang red-light-district adjacency (vice, crime, late-night disturbance) is a persistent stigma that narrows the buyer/tenant pool"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay) in an RCR-adjacent district",
+        "Paya Lebar Central / airbase-relocation transformation could lift D14 over the long run"
+      ],
+      "as_of": {
+        "price": 1330000,
+        "psf": 1247.65,
+        "beds": 2,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR in Lorong 7 Geylang at a low $1247 PSF and an oversized 1066sqft, but the technical score flatters it: only 16 URA transactions, a 78-unit boutique block, and Geylang red-light-district adjacency all undercut exit liquidity and broad-buyer appeal. Freehold tenure is the one genuine positive.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline freehold tenure and below-median PSF ($1247 vs $1581) are real, but this is a thin, niche asset for an investment hold. Just 16 URA transactions (vs 100+ for peers) means the 6.23% CAGR is statistically weak and the exit market is shallow; a 78-unit development has no liquidity cushion. Lorong 7 Geylang carries persistent vice/stigma that deters family and expat tenants and caps resale to a narrow value-buyer segment. The 1066sqft 2BR is oversized for the bracket, raising quantum without a premium-buyer to absorb it.",
+        "red_flags": [
+          "Only 16 URA transactions — thin liquidity and low-confidence appreciation data",
+          "78-unit boutique development with no liquidity cushion",
+          "Geylang red-light-district adjacency (vice, crime, late-night disturbance) is a persistent stigma that narrows the buyer/tenant pool"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay) in an RCR-adjacent district",
+          "Paya Lebar Central / airbase-relocation transformation could lift D14 over the long run"
+        ],
+        "rental_assessment": "Yield optically high (~5%) on cheap PSF, but tenant quality and demand are constrained by the Geylang location; expect transient/lower-end tenancy rather than stable expat demand.",
+        "appreciation_assessment": "6.23% CAGR rests on only 16 transactions — treat as indicative, not reliable. Freehold limits downside but the location stigma caps premium re-rating.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Discounted from thin 16-txn URA sample toward FH-boutique norm given location stigma"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centra-residence-500153951",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

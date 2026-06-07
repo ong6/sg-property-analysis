@@ -1,0 +1,63 @@
+{
+  "condo": "FLO Residence",
+  "slug": "flo-residence",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Low-quantum $1.5M 3BR in a 2016 Punggol project with a standout 8.2%/yr URA resale CAGR on a deep 130-txn sample. But the 969 sqft footprint is a compact/efficient 3BR, the PSF 1548 sits ~4% above the project median, and the unit is on the Coral Edge LRT (not MRT) with reported traffic noise — a Neutral despite strong appreciation data.",
+      "rating_rationale": "The appreciation (8.2%/yr, 130 txns) and $1.5M quantum are genuinely attractive and the LRT-network connectivity to Punggol MRT/PDD is real. But the negatives balance it: 969 sqft for a 3BR is tight (cramped layout risk, narrows family-buyer appeal), PSF 1548 is already ~4% above the project's own median rather than a discount, and reviews flag unbearable traffic noise plus a congested, no-open-area site. You're paying an above-median PSF for a compact unit relying on PDD spillover — fine, not cheap. Liquidity is good at this quantum but the unit is not the standout 3BR in the project.",
+      "red_flags": [
+        "969 sqft is a compact 3BR — tight for families, layout efficiency over generosity",
+        "PSF 1548 is ~4% ABOVE project median 1488 — paying up, not buying a discount",
+        "Reviews report unbearable traffic noise and a congested site with no open area",
+        "Served by Coral Edge LRT only, not a direct MRT"
+      ],
+      "catalysts": [
+        "Punggol Digital District (PDD) and CRL-era Punggol growth lift the whole district",
+        "Low $1.5M quantum keeps the buyer pool broad and entry accessible",
+        "8.2%/yr URA resale CAGR is the highest in the batch on a deep sample"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1547.99,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Low-quantum $1.5M 3BR in a 2016 Punggol project with a standout 8.2%/yr URA resale CAGR on a deep 130-txn sample. But the 969 sqft footprint is a compact/efficient 3BR, the PSF 1548 sits ~4% above the project median, and the unit is on the Coral Edge LRT (not MRT) with reported traffic noise — a Neutral despite strong appreciation data.",
+        "rating": "Neutral",
+        "rating_rationale": "The appreciation (8.2%/yr, 130 txns) and $1.5M quantum are genuinely attractive and the LRT-network connectivity to Punggol MRT/PDD is real. But the negatives balance it: 969 sqft for a 3BR is tight (cramped layout risk, narrows family-buyer appeal), PSF 1548 is already ~4% above the project's own median rather than a discount, and reviews flag unbearable traffic noise plus a congested, no-open-area site. You're paying an above-median PSF for a compact unit relying on PDD spillover — fine, not cheap. Liquidity is good at this quantum but the unit is not the standout 3BR in the project.",
+        "red_flags": [
+          "969 sqft is a compact 3BR — tight for families, layout efficiency over generosity",
+          "PSF 1548 is ~4% ABOVE project median 1488 — paying up, not buying a discount",
+          "Reviews report unbearable traffic noise and a congested site with no open area",
+          "Served by Coral Edge LRT only, not a direct MRT"
+        ],
+        "catalysts": [
+          "Punggol Digital District (PDD) and CRL-era Punggol growth lift the whole district",
+          "Low $1.5M quantum keeps the buyer pool broad and entry accessible",
+          "8.2%/yr URA resale CAGR is the highest in the batch on a deep sample"
+        ],
+        "rental_assessment": "Punggol rental demand is steady from PDD/SIT and young families; a compact 3BR at $1.5M can yield ~3.5%+ but the small size and LRT-only access cap premium rents.",
+        "appreciation_assessment": "8.2%/yr resale CAGR on 130 transactions is excellent and PDD remains a structural tailwind, but the above-median entry PSF means much of the easy upside may already be priced in.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500161555",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

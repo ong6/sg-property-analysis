@@ -1,0 +1,61 @@
+{
+  "condo": "Kovan Regency",
+  "slug": "kovan-regency",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 393-unit leasehold literally on top of Kovan MRT (350m) at $1,672 psf — ~12.5% below the URA median ($1,911) — combining excellent transit access, a compact efficient 2BR and good liquidity. The entry below median plus best-in-batch MRT proximity makes this an attractive value play despite mixed management reviews.",
+      "rating_rationale": "646sqft 2BR at $1.08M / $1,672 psf is ~12.5% under median PSF ($1,911) with 86 transactions and a 4.96% CAGR. 350m to Kovan NE13 (4min) is the standout transit access in the batch, underpinning both resale and a broad tenant pool along the NEL. 393 units give adequate liquidity. Off-frontier technically (MMR 1546 / score 781) but the location-plus-discount fundamentals are strong. Mixed management/maintenance reviews are a watch-item, not a dealbreaker.",
+      "red_flags": [
+        "Mixed reviews on management office and build/window quality",
+        "646sqft compact 2BR (couples/singles segment)",
+        "Off the efficiency frontier",
+        "4.96% CAGR is good-not-great for OCR"
+      ],
+      "catalysts": [
+        "350m / 4min to Kovan NE13 MRT — best transit access in the batch",
+        "~12.5% below district median PSF (value entry)",
+        "NEL connectivity supports deep tenant demand"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 1671.83,
+        "beds": 2,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 393-unit leasehold literally on top of Kovan MRT (350m) at $1,672 psf — ~12.5% below the URA median ($1,911) — combining excellent transit access, a compact efficient 2BR and good liquidity. The entry below median plus best-in-batch MRT proximity makes this an attractive value play despite mixed management reviews.",
+        "rating": "Buy",
+        "rating_rationale": "646sqft 2BR at $1.08M / $1,672 psf is ~12.5% under median PSF ($1,911) with 86 transactions and a 4.96% CAGR. 350m to Kovan NE13 (4min) is the standout transit access in the batch, underpinning both resale and a broad tenant pool along the NEL. 393 units give adequate liquidity. Off-frontier technically (MMR 1546 / score 781) but the location-plus-discount fundamentals are strong. Mixed management/maintenance reviews are a watch-item, not a dealbreaker.",
+        "red_flags": [
+          "Mixed reviews on management office and build/window quality",
+          "646sqft compact 2BR (couples/singles segment)",
+          "Off the efficiency frontier",
+          "4.96% CAGR is good-not-great for OCR"
+        ],
+        "catalysts": [
+          "350m / 4min to Kovan NE13 MRT — best transit access in the batch",
+          "~12.5% below district median PSF (value entry)",
+          "NEL connectivity supports deep tenant demand"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-regency-60147645",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

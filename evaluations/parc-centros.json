@@ -1,0 +1,61 @@
+{
+  "condo": "Parc Centros",
+  "slug": "parc-centros",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "2016 Punggol condo a genuine 4-min/300m from Punggol MRT/LRT interchange, riding the Punggol Digital District tailwind with 6.7%/yr resale CAGR on a deep 131-txn base. But the 990 sqft footprint is a compact 3BR, PSF 1768 is at the project median (no discount), the $1.75M quantum is high for the small size, and reviews flag a busy/noisy junction — a Neutral.",
+      "rating_rationale": "The location is good — 300m to Punggol MRT/LRT interchange and direct exposure to PDD growth — and the 6.7%/yr resale CAGR on 131 txns is solid. But the value case is weak for this specific unit: 990 sqft for a 3BR is compact (you are paying $1.75M for a small layout), PSF 1768 is essentially at the URA median (1756) so no entry discount, and the implied PSF is high relative to the unit's size. Reviews note the development sits on a busy, noisy junction with low-floor traffic noise, so stack/floor selection matters. Net: a fine Punggol connectivity play but priced full for a compact unit — balanced, not compelling.",
+      "red_flags": [
+        "990 sqft is a compact 3BR — high PSF (1768) and $1.75M for a small footprint",
+        "PSF at the URA median — no value discount",
+        "Reviews report a busy, noisy junction; low-floor units exposed to traffic noise"
+      ],
+      "catalysts": [
+        "300m to Punggol MRT/LRT interchange — strong doorstep connectivity",
+        "Punggol Digital District (PDD) growth driving the wider precinct",
+        "Deep 131-txn liquidity in a 2016 (relatively young) leasehold project"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1767.68,
+        "beds": 3,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "2016 Punggol condo a genuine 4-min/300m from Punggol MRT/LRT interchange, riding the Punggol Digital District tailwind with 6.7%/yr resale CAGR on a deep 131-txn base. But the 990 sqft footprint is a compact 3BR, PSF 1768 is at the project median (no discount), the $1.75M quantum is high for the small size, and reviews flag a busy/noisy junction — a Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "The location is good — 300m to Punggol MRT/LRT interchange and direct exposure to PDD growth — and the 6.7%/yr resale CAGR on 131 txns is solid. But the value case is weak for this specific unit: 990 sqft for a 3BR is compact (you are paying $1.75M for a small layout), PSF 1768 is essentially at the URA median (1756) so no entry discount, and the implied PSF is high relative to the unit's size. Reviews note the development sits on a busy, noisy junction with low-floor traffic noise, so stack/floor selection matters. Net: a fine Punggol connectivity play but priced full for a compact unit — balanced, not compelling.",
+        "red_flags": [
+          "990 sqft is a compact 3BR — high PSF (1768) and $1.75M for a small footprint",
+          "PSF at the URA median — no value discount",
+          "Reviews report a busy, noisy junction; low-floor units exposed to traffic noise"
+        ],
+        "catalysts": [
+          "300m to Punggol MRT/LRT interchange — strong doorstep connectivity",
+          "Punggol Digital District (PDD) growth driving the wider precinct",
+          "Deep 131-txn liquidity in a 2016 (relatively young) leasehold project"
+        ],
+        "rental_assessment": "Doorstep MRT plus PDD/SIT tenant inflow supports leasing; a compact 3BR can reach ~3.4% gross but the high quantum for the size caps yield and limits the family-buyer pool on exit.",
+        "appreciation_assessment": "6.7%/yr resale CAGR and PDD tailwind are positives, but at-median entry on a compact unit means much of the easy upside is already in the price.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500153632",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "condo": "Jewel @ Buangkok",
+  "slug": "jewel-buangkok",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 872sqft 3BR at Buangkok MRT (280m), $1.68M / $1,927psf. Excellent transit liquidity (176 URA txns, deep buyer pool) but the asking PSF is a steep ~5% above URA median ($1,838) for a small-format 3BR squeezed into under 900sqft.",
+      "rating_rationale": "Strengths: 3-min walk to NE15 Buangkok is a genuine liquidity and rental driver; 176 transactions is a deep, reliable base; 6.07%/yr CAGR is solid. But asking $1,927psf is ~4.8% over the $1,838 URA median — paying up. At 872sqft this is a very tight 3BR (shoebox-ish per bedroom), which narrows the family buyer pool that 3BRs normally rely on. 99yr from 2012 leaves ~85yrs — fine. MMR 682 / off frontier is middling. The MRT proximity rescues it from Avoid, but the PSF premium on a cramped layout caps it at Neutral.",
+      "red_flags": [
+        "Asking $1,927psf is ~5% above URA median $1,838 — overpriced",
+        "872sqft is very tight for a 3BR — limits family buyer/tenant appeal",
+        "Off the efficiency frontier (MMR 682), 99yr leasehold"
+      ],
+      "catalysts": [
+        "280m / 3-min walk to Buangkok NE15 MRT — strong liquidity anchor",
+        "176 URA transactions — deep, liquid buyer pool",
+        "Sub-$1.7M entry keeps it in an accessible price band"
+      ],
+      "as_of": {
+        "price": 1680000,
+        "psf": 1926.61,
+        "beds": 3,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 872sqft 3BR at Buangkok MRT (280m), $1.68M / $1,927psf. Excellent transit liquidity (176 URA txns, deep buyer pool) but the asking PSF is a steep ~5% above URA median ($1,838) for a small-format 3BR squeezed into under 900sqft.",
+        "rating": "Neutral",
+        "rating_rationale": "Strengths: 3-min walk to NE15 Buangkok is a genuine liquidity and rental driver; 176 transactions is a deep, reliable base; 6.07%/yr CAGR is solid. But asking $1,927psf is ~4.8% over the $1,838 URA median — paying up. At 872sqft this is a very tight 3BR (shoebox-ish per bedroom), which narrows the family buyer pool that 3BRs normally rely on. 99yr from 2012 leaves ~85yrs — fine. MMR 682 / off frontier is middling. The MRT proximity rescues it from Avoid, but the PSF premium on a cramped layout caps it at Neutral.",
+        "red_flags": [
+          "Asking $1,927psf is ~5% above URA median $1,838 — overpriced",
+          "872sqft is very tight for a 3BR — limits family buyer/tenant appeal",
+          "Off the efficiency frontier (MMR 682), 99yr leasehold"
+        ],
+        "catalysts": [
+          "280m / 3-min walk to Buangkok NE15 MRT — strong liquidity anchor",
+          "176 URA transactions — deep, liquid buyer pool",
+          "Sub-$1.7M entry keeps it in an accessible price band"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jewel-buangkok-500068822",
+        "review_file": "batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "CDL development 340m from NE15 Buangkok MRT, priced ~6% below the URA median ($1733 vs $1838) with a respectable 6.07% CAGR over 176 transactions. A compact 721sqft 2BR with good connectivity and a quality developer — a clean, if not spectacular, OCR investment buy.",
+      "rating_rationale": "Strong location fundamentals: 340m to Buangkok MRT (NE line, direct to CBD), CDL build, 616 units for adequate liquidity. Listed ~6% below the URA median PSF, so not overpaying. 6.07% resale CAGR over a solid 176 transactions is reliable. The high absolute PSF ($1733) reflects the compact unit size and is in line with the area. Sengkang/Buangkok benefits from NE-line accessibility and broad HDB-upgrader demand. Minor reported nuisance (mosquitoes) is immaterial. Not a Strong Buy because OCR appreciation is moderate and there's no near-term step-change catalyst at the doorstep.",
+      "red_flags": [
+        "High absolute PSF ($1733) on a small 721sqft unit limits the value-buyer exit pool",
+        "Moderate OCR appreciation with no doorstep step-change catalyst"
+      ],
+      "catalysts": [
+        "340m to NE15 Buangkok MRT — direct North-East line CBD access",
+        "Below-median PSF entry with CDL build quality",
+        "Broad HDB-upgrader demand in Sengkang/Buangkok supports liquidity"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1733.7,
+        "beds": 2,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "CDL development 340m from NE15 Buangkok MRT, priced ~6% below the URA median ($1733 vs $1838) with a respectable 6.07% CAGR over 176 transactions. A compact 721sqft 2BR with good connectivity and a quality developer — a clean, if not spectacular, OCR investment buy.",
+        "rating": "Buy",
+        "rating_rationale": "Strong location fundamentals: 340m to Buangkok MRT (NE line, direct to CBD), CDL build, 616 units for adequate liquidity. Listed ~6% below the URA median PSF, so not overpaying. 6.07% resale CAGR over a solid 176 transactions is reliable. The high absolute PSF ($1733) reflects the compact unit size and is in line with the area. Sengkang/Buangkok benefits from NE-line accessibility and broad HDB-upgrader demand. Minor reported nuisance (mosquitoes) is immaterial. Not a Strong Buy because OCR appreciation is moderate and there's no near-term step-change catalyst at the doorstep.",
+        "red_flags": [
+          "High absolute PSF ($1733) on a small 721sqft unit limits the value-buyer exit pool",
+          "Moderate OCR appreciation with no doorstep step-change catalyst"
+        ],
+        "catalysts": [
+          "340m to NE15 Buangkok MRT — direct North-East line CBD access",
+          "Below-median PSF entry with CDL build quality",
+          "Broad HDB-upgrader demand in Sengkang/Buangkok supports liquidity"
+        ],
+        "rental_assessment": "Good 2BR rentability: MRT-on-doorstep and NE-line access draw young professionals and couples; compact size keeps quantum and yield reasonable.",
+        "appreciation_assessment": "6.07% CAGR (176 txns) is reliable mid-single-digit OCR growth; sub-median entry supports continued steady appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale CAGR 6.07% (176 txns), trimmed for forward OCR expectation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jewel-buangkok-60133208",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

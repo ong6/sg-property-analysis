@@ -1,0 +1,61 @@
+{
+  "condo": "The Shore Residences",
+  "slug": "the-shore-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 408-unit Amber Road leasehold (103yr from 2009) in the desirable D15 Katong/Marine Parade lifestyle belt with the new Amber/Marine Parade TEL stations on its doorstep. But at $2.03M and $2,219 psf the 2BR is pushing the top of the project's own transaction range (12mo high ~$2,244), so the easy TEL re-rating already looks priced in.",
+      "rating_rationale": "915sqft 2BR at $2.03M / $2,219 psf sits just above the URA median ($2,194) and near the 12-month transaction ceiling — little headroom. The $2M+ price band thins the 2BR buyer pool, and lease is only 103yr from 2009 (~86yr left, decaying). D15 lifestyle appeal, TEL access and 408-unit liquidity are genuine strengths, but with the TEL catalyst largely realized and an asking at the top of range, risk/reward is balanced. MMR 1520 / score 600 — the weakest technical in the batch. 5.3% CAGR over 94 txns is solid but not exceptional.",
+      "red_flags": [
+        "Asking psf near top of project's own 12-month range — TEL uplift already priced in",
+        "$2.03M pushes into the thinner >$2M 2BR buyer band",
+        "Leasehold decaying (~86yr remaining)",
+        "Mixed reviews on cramped facilities/management"
+      ],
+      "catalysts": [
+        "Amber TE25 / Marine Parade TE26 TEL stations now operational nearby",
+        "D15 East Coast lifestyle district with deep owner-occupier appeal",
+        "408 units = good liquidity"
+      ],
+      "as_of": {
+        "price": 2030000,
+        "psf": 2218.58,
+        "beds": 2,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "103-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 408-unit Amber Road leasehold (103yr from 2009) in the desirable D15 Katong/Marine Parade lifestyle belt with the new Amber/Marine Parade TEL stations on its doorstep. But at $2.03M and $2,219 psf the 2BR is pushing the top of the project's own transaction range (12mo high ~$2,244), so the easy TEL re-rating already looks priced in.",
+        "rating": "Neutral",
+        "rating_rationale": "915sqft 2BR at $2.03M / $2,219 psf sits just above the URA median ($2,194) and near the 12-month transaction ceiling — little headroom. The $2M+ price band thins the 2BR buyer pool, and lease is only 103yr from 2009 (~86yr left, decaying). D15 lifestyle appeal, TEL access and 408-unit liquidity are genuine strengths, but with the TEL catalyst largely realized and an asking at the top of range, risk/reward is balanced. MMR 1520 / score 600 — the weakest technical in the batch. 5.3% CAGR over 94 txns is solid but not exceptional.",
+        "red_flags": [
+          "Asking psf near top of project's own 12-month range — TEL uplift already priced in",
+          "$2.03M pushes into the thinner >$2M 2BR buyer band",
+          "Leasehold decaying (~86yr remaining)",
+          "Mixed reviews on cramped facilities/management"
+        ],
+        "catalysts": [
+          "Amber TE25 / Marine Parade TE26 TEL stations now operational nearby",
+          "D15 East Coast lifestyle district with deep owner-occupier appeal",
+          "408 units = good liquidity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-shore-residences-500128209",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

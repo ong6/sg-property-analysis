@@ -1,0 +1,121 @@
+{
+  "condo": "The Antares",
+  "slug": "the-antares",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "265-unit D14 leasehold (2022) at Mattar Road, DT25 at the doorstep, 2BR at $1.50M / $1,834psf. Good build (Keong Hong/Hock Lian Seng consortium, premium fittings) and frontier status, but URA appreciation is the weakest in the batch: 2.79% adjusted / just 1.73% resale-only, and asking PSF is far below the $2,076 median, signalling a soft submarket.",
+      "rating_rationale": "A newish, well-built 2BR right at Mattar MRT in the Paya Lebar growth corridor is appealing, and the $1.50M quantum is accessible. But the resale-only URA CAGR of just 1.73%/yr is a genuine red flag — the lowest here — and the listing sits well under the $2,076 URA median, which points to weak transacted momentum rather than a bargain. Build quality and location are solid; the price trajectory is not. Net Neutral.",
+      "red_flags": [
+        "Resale-only URA CAGR only 1.73%/yr — weakest appreciation in the batch",
+        "Asking well below URA median ($1,834 vs $2,076) signals soft demand, not necessarily a deal",
+        "New-launch bias flag present — headline rates overstate true momentum",
+        "Mid-size 265-unit dev; nearby competing launches in Paya Lebar/Geylang"
+      ],
+      "catalysts": [
+        "DT25 Mattar MRT at the doorstep (470m)",
+        "Paya Lebar Central / airbase relocation long-term transformation (D14)",
+        "Newer 2022 build with premium fittings — low near-term capex"
+      ],
+      "as_of": {
+        "price": 1499999,
+        "psf": 1833.74,
+        "beds": 2,
+        "sqft": 818.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "265-unit D14 leasehold (2022) at Mattar Road, DT25 at the doorstep, 2BR at $1.50M / $1,834psf. Good build (Keong Hong/Hock Lian Seng consortium, premium fittings) and frontier status, but URA appreciation is the weakest in the batch: 2.79% adjusted / just 1.73% resale-only, and asking PSF is far below the $2,076 median, signalling a soft submarket.",
+        "rating": "Neutral",
+        "rating_rationale": "A newish, well-built 2BR right at Mattar MRT in the Paya Lebar growth corridor is appealing, and the $1.50M quantum is accessible. But the resale-only URA CAGR of just 1.73%/yr is a genuine red flag — the lowest here — and the listing sits well under the $2,076 URA median, which points to weak transacted momentum rather than a bargain. Build quality and location are solid; the price trajectory is not. Net Neutral.",
+        "red_flags": [
+          "Resale-only URA CAGR only 1.73%/yr — weakest appreciation in the batch",
+          "Asking well below URA median ($1,834 vs $2,076) signals soft demand, not necessarily a deal",
+          "New-launch bias flag present — headline rates overstate true momentum",
+          "Mid-size 265-unit dev; nearby competing launches in Paya Lebar/Geylang"
+        ],
+        "catalysts": [
+          "DT25 Mattar MRT at the doorstep (470m)",
+          "Paya Lebar Central / airbase relocation long-term transformation (D14)",
+          "Newer 2022 build with premium fittings — low near-term capex"
+        ],
+        "appreciation_assessment": "Track record is flat (1.73% resale-only); Paya Lebar Central is a long-dated catalyst, not a near-term one. Below-baseline expected appreciation.",
+        "rental_assessment": "Mattar MRT location and proximity to CBD support steady 2BR rental demand; this is the unit's strongest leg. Yield ~3%.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.8,
+        "appreciation_rate_source": "System bias-adjusted URA; resale-only 1.73% noted as the more honest floor"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-60083359",
+        "review_file": "batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 2022, well-built (FSKH, premium fittings) D14 unit 470m from Mattar MRT, but at 883 sqft this is a very compact 'shoebox 3BR' at $1,812 psf. The decisive problem is appreciation: just 1.7%/yr resale-only (2.79% blended) over a thick 191-txn base — the weakest in the batch by far — signalling stalled price growth.",
+      "rating_rationale": "Despite a strong location (470m to Mattar DTL, central D14, Paya Lebar Central catalyst) and good build quality, the investment math fails: URA resale-only appreciation is just 1.7%/yr over 191 transactions — a high-confidence read that this project has barely moved, well below the OCR/RCR baselines and the worst in the batch. The 883 sqft footprint for a 3BR is a compact/dual-key-style layout that squeezes liveability and narrows resale appeal. $1,812 psf with new-launch bias flagged means little discount and limited room to run. A modern build and decent transit cannot offset near-flat appreciation over a 5-7yr hold. Avoid.",
+      "red_flags": [
+        "Resale-only appreciation just 1.7%/yr over 191 txns (high confidence) — near-flat price growth, worst in batch",
+        "883 sqft for a 3BR is a very compact layout — squeezed liveability, narrower resale buyer pool",
+        "New-launch bias flagged at $1,812 psf — limited discount, limited upside headroom"
+      ],
+      "catalysts": [
+        "470m to Mattar MRT (Downtown Line) and proximity to Paya Lebar Central transformation",
+        "2022 build with strong developer (FSKH) and premium fittings — no defect legacy",
+        "Central D14 location with good connectivity to CBD"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1812.0,
+        "beds": 3,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2022, well-built (FSKH, premium fittings) D14 unit 470m from Mattar MRT, but at 883 sqft this is a very compact 'shoebox 3BR' at $1,812 psf. The decisive problem is appreciation: just 1.7%/yr resale-only (2.79% blended) over a thick 191-txn base — the weakest in the batch by far — signalling stalled price growth.",
+        "rating": "Avoid",
+        "rating_rationale": "Despite a strong location (470m to Mattar DTL, central D14, Paya Lebar Central catalyst) and good build quality, the investment math fails: URA resale-only appreciation is just 1.7%/yr over 191 transactions — a high-confidence read that this project has barely moved, well below the OCR/RCR baselines and the worst in the batch. The 883 sqft footprint for a 3BR is a compact/dual-key-style layout that squeezes liveability and narrows resale appeal. $1,812 psf with new-launch bias flagged means little discount and limited room to run. A modern build and decent transit cannot offset near-flat appreciation over a 5-7yr hold. Avoid.",
+        "red_flags": [
+          "Resale-only appreciation just 1.7%/yr over 191 txns (high confidence) — near-flat price growth, worst in batch",
+          "883 sqft for a 3BR is a very compact layout — squeezed liveability, narrower resale buyer pool",
+          "New-launch bias flagged at $1,812 psf — limited discount, limited upside headroom"
+        ],
+        "catalysts": [
+          "470m to Mattar MRT (Downtown Line) and proximity to Paya Lebar Central transformation",
+          "2022 build with strong developer (FSKH) and premium fittings — no defect legacy",
+          "Central D14 location with good connectivity to CBD"
+        ],
+        "rental_assessment": "Reasonable rental from Mattar DTL access and central location; the compact 3BR rents to small families/sharers. But yield is mediocre at $1,812 psf and the layout limits premium positioning.",
+        "appreciation_assessment": "The 191-txn resale base showing only 1.7%/yr is a strong negative signal — the project has stalled, likely from compact layouts and post-launch normalization. Hard to argue for above-baseline appreciation over the hold.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "URA resale-only 1.7%/yr over 191 txns — high-confidence near-flat trajectory"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-500157920",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

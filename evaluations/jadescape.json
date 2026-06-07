@@ -1,0 +1,59 @@
+{
+  "condo": "JadeScape",
+  "slug": "jadescape",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large (1,206-unit) 2023 leasehold next to Marymount MRT with a credible 5.0% resale CAGR over 347 transactions and an asking PSF ($2,068) a solid ~13% below the project median ($2,371) — a genuinely cheap entry into a deep, liquid, MRT-adjacent development. The recurring knock on Qingjian is finishing/defect quality, but at this price the unit is well-positioned for a 5-7yr investment hold.",
+      "rating_rationale": "527sqft 2BR at $1.09M / $2,068 psf sits ~13% under the URA median PSF of $2,371 with 347 transactions and 5.0% resale-only CAGR (reliable, high-confidence data). 450m to Marymount CC16 plus Bishan-Ang Mo Kio mature-estate demand gives deep buyer pool and a wide tenant base for a compact 2BR. MMR 1548 / score 791, on frontier. Entry below median PSF is the core of the thesis.",
+      "red_flags": [
+        "Qingjian Realty finishing/workmanship defect reports (faulty access systems, cheaper interior materials)",
+        "527sqft is compact — only viable for couples/singles tenant segment",
+        "Asking sits below median, verify it's not a problem unit/poor stack"
+      ],
+      "catalysts": [
+        "450m to Marymount CC16 MRT (Circle Line)",
+        "Below-median entry PSF leaves room to converge upward",
+        "1,206 units = strong resale liquidity and rental depth"
+      ],
+      "as_of": {
+        "price": 1090000,
+        "psf": 2068.31,
+        "beds": 2,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large (1,206-unit) 2023 leasehold next to Marymount MRT with a credible 5.0% resale CAGR over 347 transactions and an asking PSF ($2,068) a solid ~13% below the project median ($2,371) — a genuinely cheap entry into a deep, liquid, MRT-adjacent development. The recurring knock on Qingjian is finishing/defect quality, but at this price the unit is well-positioned for a 5-7yr investment hold.",
+        "rating": "Buy",
+        "rating_rationale": "527sqft 2BR at $1.09M / $2,068 psf sits ~13% under the URA median PSF of $2,371 with 347 transactions and 5.0% resale-only CAGR (reliable, high-confidence data). 450m to Marymount CC16 plus Bishan-Ang Mo Kio mature-estate demand gives deep buyer pool and a wide tenant base for a compact 2BR. MMR 1548 / score 791, on frontier. Entry below median PSF is the core of the thesis.",
+        "red_flags": [
+          "Qingjian Realty finishing/workmanship defect reports (faulty access systems, cheaper interior materials)",
+          "527sqft is compact — only viable for couples/singles tenant segment",
+          "Asking sits below median, verify it's not a problem unit/poor stack"
+        ],
+        "catalysts": [
+          "450m to Marymount CC16 MRT (Circle Line)",
+          "Below-median entry PSF leaves room to converge upward",
+          "1,206 units = strong resale liquidity and rental depth"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jadescape-500158469",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

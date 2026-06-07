@@ -1,0 +1,61 @@
+{
+  "condo": "One Rosyth",
+  "slug": "one-rosyth",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "999-year D19 3BR (1,076sqft) at $1.58M / $1,468psf — the top algo score (MMR 827) but on a 17-unit micro-development with only 6 URA transactions, a 2.6% yield, and an unknown single-project developer. The headline 13.2%/yr CAGR is statistical noise; this is an illiquid boutique, not an investment-grade asset.",
+      "rating_rationale": "Anti-anchoring is decisive here: MMR 827 and the 13.2%/yr 'appreciation' both derive from just 6 transactions across a 17-unit block — meaningless and not to be trusted. With only 17 units, exit liquidity is near-nil; a single motivated seller sets the market and price discovery is poor. Developer (Mushroom Realty) has built only this one project — no track record. Gross yield is a weak 2.6%. The 999-year tenure and 990m to the future Serangoon North CRL station (~2030) are real positives that prevent an Avoid, and $1.58M is an accessible entry. But for a 5-7yr investment hold, the illiquidity and unreliable data dominate — Neutral, low confidence. Not a 'buy on the score'.",
+      "red_flags": [
+        "Only 17 units — severely illiquid, no meaningful resale market",
+        "6 URA transactions: 13.2% CAGR and MMR 827 are statistically meaningless",
+        "Single-project unknown developer (Mushroom Realty); weak 2.6% gross yield"
+      ],
+      "catalysts": [
+        "999-year leasehold — effectively freehold, no lease decay",
+        "990m to future Serangoon North CRL station (~2030) — potential uplift",
+        "Accessible $1.58M entry near Kovan/Serangoon amenities and schools"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1468.4,
+        "beds": 3,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "999-year D19 3BR (1,076sqft) at $1.58M / $1,468psf — the top algo score (MMR 827) but on a 17-unit micro-development with only 6 URA transactions, a 2.6% yield, and an unknown single-project developer. The headline 13.2%/yr CAGR is statistical noise; this is an illiquid boutique, not an investment-grade asset.",
+        "rating": "Neutral",
+        "rating_rationale": "Anti-anchoring is decisive here: MMR 827 and the 13.2%/yr 'appreciation' both derive from just 6 transactions across a 17-unit block — meaningless and not to be trusted. With only 17 units, exit liquidity is near-nil; a single motivated seller sets the market and price discovery is poor. Developer (Mushroom Realty) has built only this one project — no track record. Gross yield is a weak 2.6%. The 999-year tenure and 990m to the future Serangoon North CRL station (~2030) are real positives that prevent an Avoid, and $1.58M is an accessible entry. But for a 5-7yr investment hold, the illiquidity and unreliable data dominate — Neutral, low confidence. Not a 'buy on the score'.",
+        "red_flags": [
+          "Only 17 units — severely illiquid, no meaningful resale market",
+          "6 URA transactions: 13.2% CAGR and MMR 827 are statistically meaningless",
+          "Single-project unknown developer (Mushroom Realty); weak 2.6% gross yield"
+        ],
+        "catalysts": [
+          "999-year leasehold — effectively freehold, no lease decay",
+          "990m to future Serangoon North CRL station (~2030) — potential uplift",
+          "Accessible $1.58M entry near Kovan/Serangoon amenities and schools"
+        ],
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Discounted to D19 regional baseline; URA 13.2% rejected (only 6 txns, statistically invalid)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-one-rosyth-60167018",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

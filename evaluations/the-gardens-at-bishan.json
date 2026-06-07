@@ -1,0 +1,125 @@
+{
+  "condo": "The Gardens at Bishan",
+  "slug": "the-gardens-at-bishan",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Strong Buy",
+      "confidence": "high",
+      "summary": "The strongest entry in the batch: a very large 1,367 sqft 2BR at just $1,243 psf — a remarkable 31% below the $1,805 median — only 280m from Bright Hill MRT (Thomson-East Coast Line, becoming a Cross Island Line interchange by 2030). Backed by 7.0%/yr resale CAGR on 137 transactions, 756 units of liquidity, and documented 27.6% post-MRT-opening uplift. The deep PSF discount almost certainly reflects an oversized/old-stock layout, so verify the actual unit, but the value and catalyst stack is exceptional.",
+      "rating_rationale": "Best top-1000 score in the batch (862) and the case is fundamentally sound: 280m to a TEL station that becomes a CRL interchange by 2030 (a top-tier future-infrastructure catalyst), 7.0%/yr resale CAGR on a healthy 137-txn sample, 756-unit liquidity, and a proven 27.6% price rise since Bright Hill opened in 2021. PSF of $1,243 vs $1,805 median is a 31% gap — partly an oversized 1,367 sqft 2BR (efficiency caveat) but still deep value with a generous absolute size. Schools (Ai Tong, Catholic High) and Bishan Park add own-stay resale demand. Only minor concerns (parking, lease from 1997). Clears the Strong Buy bar.",
+      "red_flags": [
+        "1,367 sqft for a 2BR is oversized — verify it is not an awkward/dual-key layout; PSF discount partly reflects this",
+        "Resident reports of limited parking",
+        "99-yr lease from 1997, ~70 years remaining — monitor over a longer hold"
+      ],
+      "catalysts": [
+        "280m to Bright Hill MRT — TEL now, Cross Island Line interchange by ~2030 (strongest infra catalyst in batch)",
+        "27.6% resale uplift already realized since Bright Hill opened in 2021, with CRL re-rating still ahead",
+        "Top-tier school catchment (Ai Tong, Catholic High) and Bishan/Thomson amenity deepen resale demand",
+        "756-unit development — high liquidity and broad buyer base"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1243.6,
+        "beds": 2,
+        "sqft": 1367.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The strongest entry in the batch: a very large 1,367 sqft 2BR at just $1,243 psf — a remarkable 31% below the $1,805 median — only 280m from Bright Hill MRT (Thomson-East Coast Line, becoming a Cross Island Line interchange by 2030). Backed by 7.0%/yr resale CAGR on 137 transactions, 756 units of liquidity, and documented 27.6% post-MRT-opening uplift. The deep PSF discount almost certainly reflects an oversized/old-stock layout, so verify the actual unit, but the value and catalyst stack is exceptional.",
+        "rating": "Strong Buy",
+        "rating_rationale": "Best top-1000 score in the batch (862) and the case is fundamentally sound: 280m to a TEL station that becomes a CRL interchange by 2030 (a top-tier future-infrastructure catalyst), 7.0%/yr resale CAGR on a healthy 137-txn sample, 756-unit liquidity, and a proven 27.6% price rise since Bright Hill opened in 2021. PSF of $1,243 vs $1,805 median is a 31% gap — partly an oversized 1,367 sqft 2BR (efficiency caveat) but still deep value with a generous absolute size. Schools (Ai Tong, Catholic High) and Bishan Park add own-stay resale demand. Only minor concerns (parking, lease from 1997). Clears the Strong Buy bar.",
+        "red_flags": [
+          "1,367 sqft for a 2BR is oversized — verify it is not an awkward/dual-key layout; PSF discount partly reflects this",
+          "Resident reports of limited parking",
+          "99-yr lease from 1997, ~70 years remaining — monitor over a longer hold"
+        ],
+        "catalysts": [
+          "280m to Bright Hill MRT — TEL now, Cross Island Line interchange by ~2030 (strongest infra catalyst in batch)",
+          "27.6% resale uplift already realized since Bright Hill opened in 2021, with CRL re-rating still ahead",
+          "Top-tier school catchment (Ai Tong, Catholic High) and Bishan/Thomson amenity deepen resale demand",
+          "756-unit development — high liquidity and broad buyer base"
+        ],
+        "rental_assessment": "Direct TEL access to Orchard/CBD plus family-school catchment supports steady rental demand; large 2BR/dual-key configs rent well to families. Yield modest on PSF but demand durable.",
+        "appreciation_assessment": "7.0%/yr resale CAGR on 137 txns, with a structural CRL interchange catalyst (2030) not yet fully priced. Below-median PSF and proven MRT-driven re-rating support continued outperformance versus the D20 base.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "URA resale-only CAGR (7.0%) lightly trimmed for lease age, supported by documented 27.6% post-MRT uplift and pending CRL interchange"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500146707",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 22-year-old 1,152 sqft 3BR in Bishan/Sin Ming, 280m from Bright Hill TEL station, asking $1,866 PSF — a ~3% premium to the $1,806 median. The standout 7.0% URA resale CAGR (137 txns) and a near-MRT TEL location are genuinely attractive, but only ~73 years of lease remain and that decay over a 5-7yr hold is the key drag, leaving a balanced Neutral-to-Buy that lands at Neutral on the lease math.",
+      "rating_rationale": "The appreciation case is the best in the batch — 7.0% URA resale-only CAGR over 137 transactions — and a 280m walk to Bright Hill TEL station in a strong Bishan/AMK school catchment is a real plus. But the offsets are material: built 2004 with only ~73 years lease remaining, so lease decay accelerates and the finance/buyer window narrows precisely over an investment hold; asking $1,866 PSF is already a premium to the $1,805 median (paying up for an old leasehold); score 594 / MMR 1519 is the lowest in the batch and below frontier; and there are visitor-parking shortfalls flagged by residents. The strong past CAGR partly reflects the new TEL station opening — that one-time re-rating may already be largely captured.",
+      "red_flags": [
+        "~73 years lease remaining (2004 build) — lease decay accelerates over the hold; tighter financing for future buyers",
+        "Asking PSF (~$1,866) above project median (~$1,806) for a 22-year-old leasehold",
+        "Lowest technical score in batch (594) and below efficient frontier",
+        "Resident-flagged visitor-parking shortage; ageing facilities"
+      ],
+      "catalysts": [
+        "Strong 7.0% URA resale CAGR over 137 txns",
+        "280m to Bright Hill TEL station — strong connectivity uplift",
+        "Bishan/AMK school catchment and central D20 desirability",
+        "756-unit development supports liquidity"
+      ],
+      "as_of": {
+        "price": 2150000,
+        "psf": 1866.32,
+        "beds": 3,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 22-year-old 1,152 sqft 3BR in Bishan/Sin Ming, 280m from Bright Hill TEL station, asking $1,866 PSF — a ~3% premium to the $1,806 median. The standout 7.0% URA resale CAGR (137 txns) and a near-MRT TEL location are genuinely attractive, but only ~73 years of lease remain and that decay over a 5-7yr hold is the key drag, leaving a balanced Neutral-to-Buy that lands at Neutral on the lease math.",
+        "rating": "Neutral",
+        "rating_rationale": "The appreciation case is the best in the batch — 7.0% URA resale-only CAGR over 137 transactions — and a 280m walk to Bright Hill TEL station in a strong Bishan/AMK school catchment is a real plus. But the offsets are material: built 2004 with only ~73 years lease remaining, so lease decay accelerates and the finance/buyer window narrows precisely over an investment hold; asking $1,866 PSF is already a premium to the $1,805 median (paying up for an old leasehold); score 594 / MMR 1519 is the lowest in the batch and below frontier; and there are visitor-parking shortfalls flagged by residents. The strong past CAGR partly reflects the new TEL station opening — that one-time re-rating may already be largely captured.",
+        "red_flags": [
+          "~73 years lease remaining (2004 build) — lease decay accelerates over the hold; tighter financing for future buyers",
+          "Asking PSF (~$1,866) above project median (~$1,806) for a 22-year-old leasehold",
+          "Lowest technical score in batch (594) and below efficient frontier",
+          "Resident-flagged visitor-parking shortage; ageing facilities"
+        ],
+        "catalysts": [
+          "Strong 7.0% URA resale CAGR over 137 txns",
+          "280m to Bright Hill TEL station — strong connectivity uplift",
+          "Bishan/AMK school catchment and central D20 desirability",
+          "756-unit development supports liquidity"
+        ],
+        "rental_assessment": "Moderate. Central, near-MRT, school-belt location supports family tenants, but cited ~2.8% yield is low and the ageing building dampens premium rents.",
+        "appreciation_assessment": "Mixed. Past 7.0% CAGR is strong but substantially driven by the now-open TEL station; with only ~73yr lease left, future appreciation faces a lease-decay headwind that caps the forward rate well below the historical figure.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale CAGR (7.0%) discounted heavily for ~73yr lease decay and largely-captured TEL re-rating"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500145461",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

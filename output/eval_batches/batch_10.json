@@ -1,0 +1,491 @@
+{
+ "listings": [
+  {
+   "bracket": "3BR",
+   "bracket_rank": 41,
+   "project_name": "Changi Rise Condo",
+   "district": "D18",
+   "beds": 3,
+   "price": 1470000,
+   "psf": 1167.59,
+   "sqft": 1259.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "12 min (960 m) from DT34 Upper Changi MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-rise-condo-500007055",
+   "technical": {
+    "mmr": 1526.8,
+    "score_1000": 652,
+    "elo": 1878,
+    "record": "489-62-18",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": null,
+    "ura_resale_only_pct_yr": null,
+    "ura_txn_count": null,
+    "ura_median_psf": null,
+    "has_new_launch_bias": null
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 22-year-old, large 1,259 sqft 3BR at a low $1,168 PSF and an absolute $1.47M entry — the cheapest unit in this batch. Value is real but the asset is dated, ~960m from MRT in a quiet enclave, and lacks any clear catalyst, so the upside is steady-not-spectacular and exit will rely on price-sensitive HDB upgraders.",
+    "rating": "Neutral",
+    "rating_rationale": "Strengths: sub-$1.5M absolute price sits in the deepest buyer band, $1,168 PSF is genuinely cheap for a 1,259 sqft unit, 598-unit development gives decent liquidity, and MMR 1527 / score 652 is solid. Weaknesses: 2004 build (now 22yo, ~77yr lease left) means rising maintenance and a shrinking finance window for future buyers, the 960m/12-min MRT walk is a real friction in car-light D18, and no URA appreciation data is attached so the growth case is unverified. No specific catalyst (no new MRT within reach, no govt zone) to drive outperformance.",
+    "red_flags": [
+      "22-year-old building (~77yr lease) — rising maintenance, narrowing buyer finance window over a 5-7yr hold",
+      "960m / 12-min walk to Upper Changi MRT — weak connectivity for the area",
+      "No URA appreciation / transaction data attached — growth trajectory unverified",
+      "Resident complaints of early-morning gardening/leaf-blower noise"
+    ],
+    "catalysts": [
+      "Sub-$1.5M absolute entry keeps it in the deep HDB-upgrader buyer pool",
+      "Low $1,168 PSF leaves headroom if D18 (Tampines/Pasir Ris) continues to firm",
+      "Large 1,259 sqft layout appeals to families priced out of newer, smaller units"
+    ],
+    "rental_assessment": "Moderate. Large older 3BR rents to families but the tenant pool here is thinner than near-MRT or CBD-adjacent stock; expect ~3% gross yield, unremarkable for investment.",
+    "appreciation_assessment": "Steady, region-baseline-like. D18 has CRL/Tampines tailwinds but this specific project is far from the station and old; expect roughly OCR-baseline appreciation with limited multiple expansion.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 3.8,
+    "appreciation_rate_source": "OCR baseline, no project-specific URA data available"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 42,
+   "project_name": "East Signature",
+   "district": "D15",
+   "beds": 3,
+   "price": 2400000,
+   "psf": 1192.25,
+   "sqft": 2013.0,
+   "tenure": "Freehold",
+   "built_year": 2005,
+   "mrt_info": "3 min (250 m) from TE28 Siglap MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-east-signature-60217173",
+   "technical": {
+    "mmr": 1542.3,
+    "score_1000": 759,
+    "elo": 1876,
+    "record": "490-79-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 5.281447303702014,
+    "ura_resale_only_pct_yr": 5.281447303702014,
+    "ura_txn_count": 5,
+    "ura_median_psf": 1779.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A freehold 2,013 sqft 3BR in East Coast 250m from Siglap TEL station, asking $1,192 PSF — a 33% discount to the project's $1,779 URA median PSF. The PSF is exceptional for a freehold D15 unit on the Thomson-East Coast Line, but the sheer size (2,013 sqft, $2.4M) narrows the resale pool and the value hinges on whether that low PSF reflects a tired unit rather than a true bargain.",
+    "rating": "Buy",
+    "rating_rationale": "Compelling relative value: freehold tenure in deep-buyer-pool D15, 3-min walk to operational Siglap TEL station, and $1,192 PSF versus a $1,779 project median — a steep discount that, even allowing for unit condition, leaves real margin. URA resale-only CAGR of 5.3% (clean, no new-launch bias) supports the East Coast appreciation case, and the freehold + TEL combination is exactly the scarcity profile that holds value. Score 759 / MMR 1542 is the strongest in the batch and it sits on the efficient frontier. Held back from Strong Buy by the very low transaction count (5), the unusually large 2,013 sqft footprint that pushes the $2.4M quantum past the deepest liquidity band and limits the buyer set to large families, and the deep PSF discount which warrants viewing to confirm it isn't a condition-driven markdown.",
+    "red_flags": [
+      "2,013 sqft / $2.4M quantum is large and niche — narrower resale pool than a 1,000-1,300 sqft 3BR",
+      "33% PSF discount to project median may reflect a dated/unrenovated unit — verify on viewing",
+      "Only 5 URA transactions underpinning the appreciation figure — thin data",
+      "2005 build (~21yo) — older finishes despite freehold tenure"
+    ],
+    "catalysts": [
+      "Freehold + 250m to operational Siglap TEL station — durable scarcity in East Coast",
+      "$1,192 PSF vs $1,779 median — large built-in margin of safety",
+      "East Coast / D15 deep buyer pool and lifestyle premium; Bayshore/Long Island regional uplift nearby",
+      "Clean resale-only URA CAGR of 5.3% with no developer-pricing inflation"
+    ],
+    "rental_assessment": "Good. Large freehold 3BR near Siglap MRT appeals to expat families; East Coast is a strong rental district. Yield is modest at this quantum (~3.5%) but tenant demand is reliable.",
+    "appreciation_assessment": "Positive. 5.3% clean resale CAGR plus freehold + TEL scarcity in D15; the deep discount to median PSF gives unusual downside protection and room to re-rate toward project median over a 5-7yr hold.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale-only CAGR (5.3%) lightly discounted for thin 5-txn sample"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 43,
+   "project_name": "The Panorama",
+   "district": "D20",
+   "beds": 3,
+   "price": 2100000,
+   "psf": 2075.1,
+   "sqft": 1012.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2019,
+   "mrt_info": "5 min (430 m) from TE6 Mayflower MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-500155080",
+   "technical": {
+    "mmr": 1539.0,
+    "score_1000": 738,
+    "elo": 1873,
+    "record": "504-51-14",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.067502297806504,
+    "ura_resale_only_pct_yr": 6.067502297806504,
+    "ura_txn_count": 195,
+    "ura_median_psf": 2101.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A well-built Wheelock-developed 1,012 sqft 3BR in Ang Mo Kio, 430m from Mayflower TEL station, asking $2,075 PSF — fractionally below the project's $2,101 URA median. Backed by a strong 6.1% resale CAGR over 195 transactions and a high liquidity profile (698 units, deep data), this is a solid, well-priced D20 buy with the main caveats being efficient-but-tight unit size and some early ageing of communal areas.",
+    "rating": "Buy",
+    "rating_rationale": "Strong fundamentals: 6.1% URA resale-only CAGR over a robust 195 transactions (no new-launch bias) is among the best verified appreciation in the batch; $2,075 PSF is at/slightly below the $2,101 median so no overpaying; 698 units and TEL connectivity (Mayflower 430m) give deep liquidity; $2.1M quantum sits in the deepest buyer band. Reputable developer (Wheelock) with generally good build feedback. Score 738 / MMR 1539, on the frontier. Tempered from Strong Buy by reports that communal/roof facilities are ageing faster than expected and occasional lift/utility complaints, the relatively compact 1,012 sqft for a 3BR, and a 99yr lease (from 2013) that is fine now but not a freehold scarcity play.",
+    "red_flags": [
+      "Reviews cite early wear on communal/roof facilities and intermittent lift/electrical issues despite 2019 build",
+      "Compact 1,012 sqft for a 3BR — efficient but tight, modest size premium",
+      "PSF already at project median — limited mispricing to exploit; relies on continued growth"
+    ],
+    "catalysts": [
+      "6.1% URA resale CAGR over 195 txns — strong, well-evidenced appreciation",
+      "430m to Mayflower TEL station — one-line ride to Orchard/Marina Bay",
+      "698-unit development in popular AMK/Bishan-Thomson belt — deep liquidity and schools (Ai Tong nearby)",
+      "Thomson Line maturation continuing to lift the corridor"
+    ],
+    "rental_assessment": "Good. Family-friendly D20 location near MRT and schools; reliable tenant demand. Yield ~3% at this quantum, typical for the band.",
+    "appreciation_assessment": "Positive and well-supported. 6.1% CAGR on deep transaction data; TEL corridor and AMK/Bishan desirability underpin continued growth, though entry at median PSF means returns track the market rather than a re-rating.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 5.5,
+    "appreciation_rate_source": "URA resale-only CAGR (6.1%, 195 txns) lightly tempered toward forward-looking baseline"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 44,
+   "project_name": "Thomson Three",
+   "district": "D20",
+   "beds": 3,
+   "price": 2300000,
+   "psf": 2203.07,
+   "sqft": 1044.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2017,
+   "mrt_info": "5 min (420 m) from TE8 Upper Thomson MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-three-25483460",
+   "technical": {
+    "mmr": 1532.9,
+    "score_1000": 697,
+    "elo": 1863,
+    "record": "494-64-11",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 5.4860843783393065,
+    "ura_resale_only_pct_yr": 5.4860843783393065,
+    "ura_txn_count": 138,
+    "ura_median_psf": 2206.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A UOL/SingLand-built 1,044 sqft 3BR in Upper Thomson, 420m from Upper Thomson TEL station, asking $2,203 PSF — bang in line with the $2,206 URA median. Reputable developer, strong location and 5.5% resale CAGR make it a sound hold, but it is fully priced at median, slightly off the frontier, and carries scattered early-cracking complaints, so the value is fair rather than a bargain.",
+    "rating": "Buy",
+    "rating_rationale": "Solid investment-grade asset: UOL + SingLand pedigree, 420m to Upper Thomson TEL station, walkable Thomson Plaza and Ai Tong School, 435 units giving reasonable liquidity, and a verified 5.5% URA resale-only CAGR over 138 transactions. $2,300 quantum is in the deep band. Held to a plain Buy (not Strong) because it is priced exactly at the $2,206 median (no margin of safety), score 697 / MMR 1533 sits just below the frontier, the cited ~3.1% rental yield is unexciting, and there are user reports of cracks appearing within ~2 years. Good asset, fair price — not a discount.",
+    "red_flags": [
+      "Priced at project median PSF — no mispricing to capture; returns rely on continued market growth",
+      "User reviews mention cracks/finishing issues appearing within ~2 years of completion",
+      "Below the efficient frontier; ~3.1% rental yield is modest",
+      "Compact 1,044 sqft 3BR"
+    ],
+    "catalysts": [
+      "420m to Upper Thomson TEL station — direct line to city core",
+      "Strong UOL/SingLand build reputation and award track record",
+      "Established Upper Thomson lifestyle/F&B belt and Ai Tong School catchment",
+      "5.5% URA resale CAGR over 138 txns supports durable demand"
+    ],
+    "rental_assessment": "Decent. Upper Thomson is tenant-friendly (lifestyle, MRT, schools) but yield is modest at ~3.1%; demand is reliable rather than strong for investment purposes.",
+    "appreciation_assessment": "Positive, market-tracking. 5.5% CAGR on 138 txns and TEL connectivity support growth, but entry at median PSF means little re-rating headroom — expect returns near the corridor average.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale-only CAGR (5.5%, 138 txns), tempered for at-median entry"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 45,
+   "project_name": "The Gardens at Bishan",
+   "district": "D20",
+   "beds": 3,
+   "price": 2150000,
+   "psf": 1866.32,
+   "sqft": 1152.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "3 min (280 m) from CR13 Bright Hill MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500145461",
+   "technical": {
+    "mmr": 1519.4,
+    "score_1000": 594,
+    "elo": 1861,
+    "record": "493-69-7",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.02156681518975,
+    "ura_resale_only_pct_yr": 7.02156681518975,
+    "ura_txn_count": 137,
+    "ura_median_psf": 1805.5,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 22-year-old 1,152 sqft 3BR in Bishan/Sin Ming, 280m from Bright Hill TEL station, asking $1,866 PSF — a ~3% premium to the $1,806 median. The standout 7.0% URA resale CAGR (137 txns) and a near-MRT TEL location are genuinely attractive, but only ~73 years of lease remain and that decay over a 5-7yr hold is the key drag, leaving a balanced Neutral-to-Buy that lands at Neutral on the lease math.",
+    "rating": "Neutral",
+    "rating_rationale": "The appreciation case is the best in the batch — 7.0% URA resale-only CAGR over 137 transactions — and a 280m walk to Bright Hill TEL station in a strong Bishan/AMK school catchment is a real plus. But the offsets are material: built 2004 with only ~73 years lease remaining, so lease decay accelerates and the finance/buyer window narrows precisely over an investment hold; asking $1,866 PSF is already a premium to the $1,805 median (paying up for an old leasehold); score 594 / MMR 1519 is the lowest in the batch and below frontier; and there are visitor-parking shortfalls flagged by residents. The strong past CAGR partly reflects the new TEL station opening — that one-time re-rating may already be largely captured.",
+    "red_flags": [
+      "~73 years lease remaining (2004 build) — lease decay accelerates over the hold; tighter financing for future buyers",
+      "Asking PSF (~$1,866) above project median (~$1,806) for a 22-year-old leasehold",
+      "Lowest technical score in batch (594) and below efficient frontier",
+      "Resident-flagged visitor-parking shortage; ageing facilities"
+    ],
+    "catalysts": [
+      "Strong 7.0% URA resale CAGR over 137 txns",
+      "280m to Bright Hill TEL station — strong connectivity uplift",
+      "Bishan/AMK school catchment and central D20 desirability",
+      "756-unit development supports liquidity"
+    ],
+    "rental_assessment": "Moderate. Central, near-MRT, school-belt location supports family tenants, but cited ~2.8% yield is low and the ageing building dampens premium rents.",
+    "appreciation_assessment": "Mixed. Past 7.0% CAGR is strong but substantially driven by the now-open TEL station; with only ~73yr lease left, future appreciation faces a lease-decay headwind that caps the forward rate well below the historical figure.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.0,
+    "appreciation_rate_source": "URA resale CAGR (7.0%) discounted heavily for ~73yr lease decay and largely-captured TEL re-rating"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 46,
+   "project_name": "Coco Palms",
+   "district": "D18",
+   "beds": 3,
+   "price": 1850000,
+   "psf": 1684.88,
+   "sqft": 1098.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2019,
+   "mrt_info": "6 min (480 m) from CP1 Pasir Ris MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-coco-palms-25592742",
+   "technical": {
+    "mmr": 1535.1,
+    "score_1000": 711,
+    "elo": 1856,
+    "record": "497-68-4",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 6.318162052425058,
+    "ura_resale_only_pct_yr": 6.318162052425058,
+    "ura_txn_count": 234,
+    "ura_median_psf": 1696.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A CDL-built 1,098 sqft 3BR in Pasir Ris, 480m from Pasir Ris MRT/interchange, asking $1,685 PSF — marginally below the $1,696 median, with a healthy 6.3% URA resale CAGR over 234 transactions. The fundamentals are sound and well-priced, but the cluster of ~3,000 CDL units in Pasir Ris Grove (Coco Palms, plus siblings) and further upcoming supply create persistent rental and resale competition that holds this to a solid Buy rather than Strong.",
+    "rating": "Buy",
+    "rating_rationale": "Good value-for-quality: large 944-unit CDL development gives strong liquidity, $1.85M quantum sits in the deep buyer band, $1,685 PSF is just under the $1,696 median (no overpay), and a 6.3% URA resale-only CAGR over a deep 234 transactions evidences real demand. 480m to Pasir Ris MRT plus the future RTS/interchange improvements support D18. Capped at Buy by the well-documented Pasir Ris Grove supply overhang — 3,000+ CDL units clustered together plus additional plots slated nearer the MRT — which intensifies rental competition and could cap resale pricing power; score 711 is good but off-frontier.",
+    "red_flags": [
+      "Pasir Ris Grove supply overhang — ~3,000 clustered CDL units plus further plots slated nearer the MRT, pressuring rents and resale",
+      "Off the efficient frontier",
+      "OCR location with no freehold/scarcity premium — relies on continued OCR demand"
+    ],
+    "catalysts": [
+      "6.3% URA resale CAGR over a deep 234 txns — well-evidenced demand",
+      "$1,685 PSF just below median, $1.85M in the deepest buyer band",
+      "480m to Pasir Ris MRT/interchange; Pasir Ris town rejuvenation and future connectivity",
+      "Large 944-unit CDL development — strong liquidity and amenities"
+    ],
+    "rental_assessment": "Mixed. Family-friendly large 3BR but the Pasir Ris Grove cluster means heavy direct rental competition; achievable rents and occupancy are pressured versus a standalone development. Yield ~3%.",
+    "appreciation_assessment": "Positive but supply-capped. 6.3% historical CAGR is strong, yet ongoing nearby supply limits pricing power; expect appreciation to moderate toward OCR baseline-plus over the hold.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "URA resale CAGR (6.3%) discounted for Pasir Ris Grove supply overhang"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 47,
+   "project_name": "Riversails",
+   "district": "D19",
+   "beds": 3,
+   "price": 1750000,
+   "psf": 1578.0,
+   "sqft": 1109.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2016,
+   "mrt_info": "9 min (710 m) from SE4 Kangkar LRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-riversails-25562572",
+   "technical": {
+    "mmr": 1531.1,
+    "score_1000": 684,
+    "elo": 1846,
+    "record": "504-60-5",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.041827782525533,
+    "ura_resale_only_pct_yr": 6.041827782525533,
+    "ura_txn_count": 228,
+    "ura_median_psf": 1483.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 1,109 sqft 3BR in Upper Serangoon, asking $1,578 PSF — a ~6% premium to the $1,483 median — at a low $1.75M absolute. The 6.0% resale CAGR (228 txns), 928-unit liquidity and frontier position are positives, but connectivity is weak (only an LRT 710m away, MRT is far), units are noted as space-inefficient, and the above-median ask undercuts the value case, landing it at Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "Positives: $1.75M is the second-lowest quantum in the batch (deep buyer pool), 928 units give strong liquidity, on the efficient frontier, and a 6.0% URA resale CAGR over 228 transactions. But the offsets are real: asking $1,578 PSF is ~6% above the $1,483 median, so you are paying up; connectivity is genuinely poor — the nearest rail is Kangkar LRT 710m/9-min away and the true MRT is a further hop, a structural drag in transit-dependent D19; reviewers flag inefficient layouts/space wastage; and D19's broad new-supply pipeline (Sengkang/Punggol) competes for the same tenant/buyer base. Solid building, but priced above median with a connectivity handicap nets to Neutral.",
+    "red_flags": [
+      "Asking PSF (~$1,578) ~6% above project median (~$1,483)",
+      "Weak connectivity — only Kangkar LRT 710m away; no nearby MRT, transit-dependent location",
+      "Reviewer-noted layout inefficiency / space wastage",
+      "Broad D19 (Sengkang/Punggol) new-supply pipeline competes for tenants and buyers"
+    ],
+    "catalysts": [
+      "Low $1.75M absolute entry keeps it in the deep buyer band",
+      "6.0% URA resale CAGR over 228 txns",
+      "928-unit development — strong liquidity",
+      "Punggol Digital District / CRL broader-D19 tailwinds (indirect)"
+    ],
+    "rental_assessment": "Below-average. Poor rail access and a crowded D19 rental market weigh on demand and rents; yield ~3% but with softer occupancy risk than better-connected peers.",
+    "appreciation_assessment": "Moderate. 6.0% historical CAGR is healthy but the above-median ask and weak connectivity cap forward upside; expect OCR-baseline-ish appreciation rather than continued outperformance.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.0,
+    "appreciation_rate_source": "URA resale CAGR (6.0%) discounted for above-median ask and weak connectivity"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 48,
+   "project_name": "Penrose",
+   "district": "D14",
+   "beds": 3,
+   "price": 2190000,
+   "psf": 2286.01,
+   "sqft": 958.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2025,
+   "mrt_info": "7 min (570 m) from EW9 Aljunied MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-500072822",
+   "technical": {
+    "mmr": 1526.4,
+    "score_1000": 648,
+    "elo": 1840,
+    "record": "502-66-1",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 5.871700483793618,
+    "ura_resale_only_pct_yr": 5.3186787900046495,
+    "ura_txn_count": 330,
+    "ura_median_psf": 2226.0,
+    "has_new_launch_bias": true
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A brand-new (2025 TOP) CDL/Hong Leong-built 958 sqft 3BR in Sims Drive, 570m from Aljunied MRT, asking $2,286 PSF — a ~3% premium to the $2,226 median. Top-tier developer, fresh asset and city-fringe D14 location are attractive, but the new-launch pricing is already inflated (system flags new-launch bias; resale-only CAGR drops to 5.3% from 5.9%), the compact 958 sqft 3BR is tight, and entry above median into a freshly-completed project limits near-term upside — a balanced Buy with the value already largely priced in.",
+    "rating": "Buy",
+    "rating_rationale": "Quality and location carry it: CDL + Hong Leong build (premium fittings, strong track record), a brand-new 2025 asset needing no capex, 566 units, and a genuinely central D14 city-fringe location ~10 min to the CBD with Aljunied MRT 570m away and Paya Lebar Central nearby. $2.19M sits in the deep band. But this is fully-priced new-launch stock: has_new_launch_bias is true and the resale-only CAGR (5.3%) is notably below the headline (5.9%), confirming developer-pricing inflation; the $2,286 ask is above the $2,226 median; and 958 sqft is a tight 3BR. As an investment you are buying near peak developer pricing, so capital upside over the first part of the hold is limited even though the asset is excellent — hence Buy, not Strong Buy.",
+    "red_flags": [
+      "New-launch pricing inflation flagged (has_new_launch_bias true; resale-only CAGR 5.3% vs 5.9% headline)",
+      "Asking $2,286 PSF above $2,226 project median — paying up for a freshly-completed unit",
+      "Compact 958 sqft for a 3BR — efficient but small, limits family-buyer appeal",
+      "Sims Drive/Geylang fringe locale carries some stigma sensitivity for a subset of buyers"
+    ],
+    "catalysts": [
+      "Brand-new 2025 CDL/Hong Leong asset — premium build, full lease, zero capex",
+      "Central D14 city-fringe — ~10 min to CBD, 570m to Aljunied MRT (EWL)",
+      "Paya Lebar Central transformation / airbase relocation regional uplift",
+      "566-unit development with strong developer pedigree supports liquidity"
+    ],
+    "rental_assessment": "Good. City-fringe, near-MRT, brand-new — strong appeal to young professional and expat tenants; comparable Sims-area yields ~3%. Reliable demand is a genuine strength here.",
+    "appreciation_assessment": "Moderate. The 5.3% resale-only CAGR is the honest figure; with entry above median into a new-launch at inflated pricing, expect appreciation to lag in the early hold years before the location's fundamentals reassert.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "URA resale-only CAGR (5.3%, bias-adjusted) discounted for above-median new-launch entry"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 49,
+   "project_name": "The Madeira",
+   "district": "D23",
+   "beds": 3,
+   "price": 1500000,
+   "psf": 1106.19,
+   "sqft": 1356.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2003,
+   "mrt_info": "6 min (460 m) from NS3 Bukit Gombak MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
+   "technical": {
+    "mmr": 1532.2,
+    "score_1000": 692,
+    "elo": 1840,
+    "record": "498-68-3",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 5.922384104881218,
+    "ura_resale_only_pct_yr": 5.922384104881218,
+    "ura_txn_count": 71,
+    "ura_median_psf": 1228.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 23-year-old large 1,356 sqft 3BR in Bukit Batok, 460m from Bukit Gombak MRT, asking just $1,106 PSF — a ~10% discount to the $1,228 median — at a low $1.5M absolute. Genuine value (cheap PSF, deep buyer band, near-MRT, 5.9% CAGR), but the age (~77yr lease left), OCR-west location with limited catalysts, and a thinner 71-txn sample temper it to a Buy with the value real but the growth ceiling modest.",
+    "rating": "Buy",
+    "rating_rationale": "Real value play: $1,106 PSF is a ~10% discount to the $1,228 median on a large 1,356 sqft unit, and the $1.5M absolute sits in the deepest buyer band — exactly the affordability profile that resells easily to HDB upgraders. 460m to Bukit Gombak MRT (NSL) gives solid connectivity, 5.9% URA resale CAGR over 71 txns is healthy, ~3.4% yield is among the better in the batch, and score 692 / MMR 1532 is respectable. Held to a plain Buy by the 2003 build (~77yr lease, ageing finishes), the mature D23 west location with no major near-term catalyst (no new MRT line, no govt transformation zone within reach), and a moderate 71-transaction sample. Solid, affordable, fairly-bought — but the upside is steady rather than catalytic.",
+    "red_flags": [
+      "23-year-old building (~77yr lease) — ageing finishes, narrowing finance window over the hold",
+      "Mature OCR-west D23 with no near-term catalyst (no new MRT/govt zone within reach)",
+      "Off the efficient frontier; moderate 71-txn appreciation sample",
+      "456-unit mid-size development — adequate but not deep liquidity"
+    ],
+    "catalysts": [
+      "$1,106 PSF — ~10% below median; cheap large-format 3BR",
+      "$1.5M absolute in the deepest, most liquid buyer band",
+      "460m to Bukit Gombak MRT (NSL) — solid existing connectivity",
+      "5.9% URA resale CAGR and ~3.4% gross yield — better income profile than batch peers"
+    ],
+    "rental_assessment": "Above-average for the batch. ~3.4% yield, large family-friendly unit near MRT; reliable heartland tenant demand though rents are capped by the OCR-west location.",
+    "appreciation_assessment": "Steady. 5.9% historical CAGR with a discount-to-median entry gives downside protection, but mature D23 with no catalyst means forward appreciation likely settles near OCR baseline-plus, partly offset by lease decay.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.0,
+    "appreciation_rate_source": "URA resale CAGR (5.9%) tempered for age/lease decay and absence of catalysts in mature D23"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 50,
+   "project_name": "Vela Bay",
+   "district": "D15",
+   "beds": 3,
+   "price": 2314000,
+   "psf": 2588.37,
+   "sqft": 894.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2034,
+   "mrt_info": "1 min (100 m) from TE29 Bayshore MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-vela-bay-500164567",
+   "technical": {
+    "mmr": 1530.2,
+    "score_1000": 677,
+    "elo": 1840,
+    "record": "468-30-71",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": null,
+    "ura_resale_only_pct_yr": null,
+    "ura_txn_count": 371,
+    "ura_median_psf": 2863.0,
+    "has_new_launch_bias": true
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A brand-new, uncompleted (2034 TOP) 894 sqft 3BR at Vela Bay — first launch in the Bayshore precinct — directly beside Bayshore TEL station, asking $2,588 PSF, which is actually ~10% below the $2,863 project median. Exceptional connectivity and a master-planned 10,000-home waterfront catalyst make the location thesis strong, but the ~8-year build-out (heavy SSD/holding risk, no rental income for years), full new-launch pricing, and tight 894 sqft 3BR put it at Neutral for a 5-7yr investment hold.",
+    "rating": "Neutral",
+    "rating_rationale": "The location is genuinely first-class: 100m to Bayshore TEL station, the inaugural private launch in a master-planned 10,000-home car-lite waterfront precinct with future Long Island upside, in deep-buyer-pool D15. The ask of $2,588 PSF is ~10% under the $2,863 median, and the project sold 72% on launch day, signalling demand. But for an investment hold the timing is the problem: 2034 TOP means an ~8-year wait with no rental income, full BSD/ABSD capital tied up, and SSD exposure if the precinct re-rates and you want to exit early — the 5-7yr hold clock effectively doesn't start until completion. Pricing carries new-launch bias (no resale data exists), the $2,588 PSF is high in absolute terms for D15 leasehold, and 894 sqft is a compact 3BR. Strong asset, but the long dead-time and rich pricing balance the catalyst — Neutral.",
+    "red_flags": [
+      "2034 TOP — ~8-year build-out with no rental income; capital locked up and SSD/holding-period risk over the investment window",
+      "Full new-launch pricing (has_new_launch_bias true, no resale comps) at a high $2,588 PSF for D15 leasehold",
+      "Compact 894 sqft for a 3BR",
+      "Catalyst (Bayshore precinct/Long Island) is long-dated — payoff is back-loaded and partly speculative"
+    ],
+    "catalysts": [
+      "100m to Bayshore TEL station — best connectivity in the batch; one-line ride to Marina Bay/Orchard",
+      "First mover in master-planned Bayshore precinct (~10,000 homes, car-lite, waterfront amenities, large SAFRA)",
+      "URA Long Island reclamation upside for the East Coast over the long run",
+      "Asking ~10% below project median PSF; 72% sold on launch day signals demand depth"
+    ],
+    "rental_assessment": "Not applicable for years — no rental income until ~2034 completion. On eventual completion, beside-MRT waterfront D15 should rent strongly to professionals/families, but that income is far in the future for a 5-7yr investment frame.",
+    "appreciation_assessment": "Long-dated and back-loaded. Strong structural catalyst (precinct + Long Island + MRT-adjacency) but full launch pricing already prices in much of it; meaningful appreciation likely accrues post-2034, not within a near-term hold.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "No URA resale data (new launch); CCR/RCR-fringe baseline given long build-out and launch-priced entry"
+   }
+  }
+ ]
+}

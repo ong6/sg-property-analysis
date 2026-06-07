@@ -1,0 +1,119 @@
+{
+  "condo": "Parc Vera",
+  "slug": "parc-vera",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Low $1.26M entry with a headline 8.2% URA CAGR and a real future catalyst — the Cross Island Line Defu station is being built nearby, giving this currently MRT-poor (1.26km to Hougang) Sim Lian project its first close rail link. But the appreciation rests on a thin 82-transaction base and the unit is far from existing MRT today, so it's a Buy-leaning Neutral.",
+      "rating_rationale": "Positives: cheapest absolute price in the batch at $1.26M, $1,603 psf priced right at the URA median (fair, not overpaying), and the CRL Defu station is a concrete catalyst that would transform connectivity for a project that is currently a 1.26km walk to Hougang NEL. Negatives: 8.2% CAGR is the headline number but on only 82 transactions (lower confidence than the 144-292 txn peers here), Sim Lian build with no insulation standout, and until Defu opens (~2030) it remains effectively MRT-distant, which limits today's tenant pool. Catalyst is real but multi-year.",
+      "red_flags": [
+        "Currently 1.26km from nearest MRT (Hougang) — weak existing connectivity",
+        "Appreciation rate rests on a thin 82-transaction sample (lower reliability)",
+        "Sim Lian build with no standout quality credentials; reviews note incomplete noise insulation"
+      ],
+      "catalysts": [
+        "Cross Island Line Defu station under construction nearby — first close rail link, ~2030",
+        "Sub-$1.3M entry is among the most affordable 2BR private options in D19",
+        "Priced at URA median (no overpayment) leaves catalyst upside intact"
+      ],
+      "as_of": {
+        "price": 1260000,
+        "psf": 1603.05,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Low $1.26M entry with a headline 8.2% URA CAGR and a real future catalyst — the Cross Island Line Defu station is being built nearby, giving this currently MRT-poor (1.26km to Hougang) Sim Lian project its first close rail link. But the appreciation rests on a thin 82-transaction base and the unit is far from existing MRT today, so it's a Buy-leaning Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: cheapest absolute price in the batch at $1.26M, $1,603 psf priced right at the URA median (fair, not overpaying), and the CRL Defu station is a concrete catalyst that would transform connectivity for a project that is currently a 1.26km walk to Hougang NEL. Negatives: 8.2% CAGR is the headline number but on only 82 transactions (lower confidence than the 144-292 txn peers here), Sim Lian build with no insulation standout, and until Defu opens (~2030) it remains effectively MRT-distant, which limits today's tenant pool. Catalyst is real but multi-year.",
+        "red_flags": [
+          "Currently 1.26km from nearest MRT (Hougang) — weak existing connectivity",
+          "Appreciation rate rests on a thin 82-transaction sample (lower reliability)",
+          "Sim Lian build with no standout quality credentials; reviews note incomplete noise insulation"
+        ],
+        "catalysts": [
+          "Cross Island Line Defu station under construction nearby — first close rail link, ~2030",
+          "Sub-$1.3M entry is among the most affordable 2BR private options in D19",
+          "Priced at URA median (no overpayment) leaves catalyst upside intact"
+        ],
+        "rental_assessment": "Modest today given the 1.26km MRT walk; the Defu CRL station is the key to unlocking stronger tenant demand, but that uplift is years out.",
+        "appreciation_assessment": "8.2% historical CAGR is real but thinly supported; forward case hinges on CRL Defu de-risking — treat as a catalyst play, not a proven trend.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "Discounted from 8.2% URA headline for thin 82-txn sample; mid-single-digit base with CRL Defu optionality"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-vera-500110109",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1130sqft 3BR at $1.9M / $1681 psf — about 5% ABOVE the Parc Vera median of $1595, the only above-median listing in the batch. Strong URA appreciation (8.23%/yr) but on a thin 82-txn base, and the unit is poorly located at 1.26km (~15 min) from Hougang MRT with no nearby amenities. Lowest MMR/score in the D19 group.",
+      "rating_rationale": "Unlike its D19 peers, this is priced at a premium to its own development median (~+5%), so the value edge that drives the others is absent here. Location is the core weakness: 1.26km from Hougang MRT, and reviews note the marketed 8-min walk is closer to ~28 min with no markets or retail without driving — that hurts both rental and resale. The 8.23%/yr CAGR is encouraging but sits on only 82 txns and a 452-unit base. With no PSF discount, a weak MRT walk, and the lowest MMR (764)/score in the batch, this is a Neutral — pay below median or pass.",
+      "red_flags": [
+        "Priced ~5% ABOVE development median — no value cushion",
+        "1.26km to Hougang MRT; residents report a ~28-min real walk, no nearby amenities",
+        "Lowest MMR (1543) and score (764) in the batch",
+        "8.23% appreciation rests on a thin 82-txn sample"
+      ],
+      "catalysts": [
+        "Wider D19 catalysts (PDD, CRL) provide some background support",
+        "Quiet, spacious riverside setting appeals to a niche own-stay buyer"
+      ],
+      "as_of": {
+        "price": 1899999,
+        "psf": 1681.42,
+        "beds": 3,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1130sqft 3BR at $1.9M / $1681 psf — about 5% ABOVE the Parc Vera median of $1595, the only above-median listing in the batch. Strong URA appreciation (8.23%/yr) but on a thin 82-txn base, and the unit is poorly located at 1.26km (~15 min) from Hougang MRT with no nearby amenities. Lowest MMR/score in the D19 group.",
+        "rating": "Neutral",
+        "rating_rationale": "Unlike its D19 peers, this is priced at a premium to its own development median (~+5%), so the value edge that drives the others is absent here. Location is the core weakness: 1.26km from Hougang MRT, and reviews note the marketed 8-min walk is closer to ~28 min with no markets or retail without driving — that hurts both rental and resale. The 8.23%/yr CAGR is encouraging but sits on only 82 txns and a 452-unit base. With no PSF discount, a weak MRT walk, and the lowest MMR (764)/score in the batch, this is a Neutral — pay below median or pass.",
+        "red_flags": [
+          "Priced ~5% ABOVE development median — no value cushion",
+          "1.26km to Hougang MRT; residents report a ~28-min real walk, no nearby amenities",
+          "Lowest MMR (1543) and score (764) in the batch",
+          "8.23% appreciation rests on a thin 82-txn sample"
+        ],
+        "catalysts": [
+          "Wider D19 catalysts (PDD, CRL) provide some background support",
+          "Quiet, spacious riverside setting appeals to a niche own-stay buyer"
+        ],
+        "rental_assessment": "Distance from MRT and amenities limits tenant appeal; achievable rent is modest, yield ~3% on $1.9M. Not a rental standout.",
+        "appreciation_assessment": "Headline 8.23%/yr is attractive but thin-sampled; buying above the development median removes mean-reversion upside, so realistic forward gains are more muted than the figure implies.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA CAGR (82 txns) discounted for above-median entry and poor location"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-vera-500145773",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

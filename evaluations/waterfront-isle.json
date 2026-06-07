@@ -195,6 +195,116 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933",
         "review_file": "raw_analysis_2br_500134933.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1378sqft 3BR at $2.2M / $1596 psf, ~9% below the Waterfront Isle median of $1763, 270m from Bedok Reservoir MRT (DTL) in a well-regarded (8.9/10) reservoir-facing development. 7.36%/yr appreciation on 129 txns and reservoir views give it a real D16 story; prior call was Neutral but the current discounted entry and MRT proximity nudge it higher.",
+      "rating_rationale": "Upgrading from the prior Neutral: at $1596 psf the unit is ~9% under its development median, sits 270m from Bedok Reservoir MRT, and carries a solid 7.36%/yr resale CAGR on 129 transactions. D16 enjoys TEL improvements and the Bayshore precinct build-out as forward catalysts, and the development is one of the best-maintained in the Waterfront series with sought-after reservoir views (low floors still get the view). $2.2M is within a workable buyer band. Aging facilities needing upgrades and the leasehold clock keep it at Buy rather than Strong Buy, but the value/location combination is genuinely attractive.",
+      "red_flags": [
+        "Facilities are 10+ years old and reportedly need upgrading",
+        "$2.2M is toward the upper end of the comfortable D16 leasehold band",
+        "Non-reservoir-facing stacks lose the key view premium"
+      ],
+      "catalysts": [
+        "270m to Bedok Reservoir MRT (Downtown Line)",
+        "TEL connectivity and Bayshore precinct redevelopment lifting D16/Upper East Coast",
+        "~9% below-median PSF on a reservoir-facing development with strong reviews"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1596.52,
+        "beds": 3,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1378sqft 3BR at $2.2M / $1596 psf, ~9% below the Waterfront Isle median of $1763, 270m from Bedok Reservoir MRT (DTL) in a well-regarded (8.9/10) reservoir-facing development. 7.36%/yr appreciation on 129 txns and reservoir views give it a real D16 story; prior call was Neutral but the current discounted entry and MRT proximity nudge it higher.",
+        "rating": "Buy",
+        "rating_rationale": "Upgrading from the prior Neutral: at $1596 psf the unit is ~9% under its development median, sits 270m from Bedok Reservoir MRT, and carries a solid 7.36%/yr resale CAGR on 129 transactions. D16 enjoys TEL improvements and the Bayshore precinct build-out as forward catalysts, and the development is one of the best-maintained in the Waterfront series with sought-after reservoir views (low floors still get the view). $2.2M is within a workable buyer band. Aging facilities needing upgrades and the leasehold clock keep it at Buy rather than Strong Buy, but the value/location combination is genuinely attractive.",
+        "red_flags": [
+          "Facilities are 10+ years old and reportedly need upgrading",
+          "$2.2M is toward the upper end of the comfortable D16 leasehold band",
+          "Non-reservoir-facing stacks lose the key view premium"
+        ],
+        "catalysts": [
+          "270m to Bedok Reservoir MRT (Downtown Line)",
+          "TEL connectivity and Bayshore precinct redevelopment lifting D16/Upper East Coast",
+          "~9% below-median PSF on a reservoir-facing development with strong reviews"
+        ],
+        "rental_assessment": "Reservoir-view 3BR near MRT rents steadily to families and East-side professionals; yield ~3-3.5% on $2.2M. Demand supported by DTL access.",
+        "appreciation_assessment": "7.36%/yr resale CAGR on 129 txns is dependable and above the OCR baseline; reservoir-facing, MRT-adjacent stacks should keep pace with or beat the median through the hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "URA resale-only CAGR (129 txns), lightly trimmed for age"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144",
+        "review_file": "batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "The strongest D16 entry of the three Waterfront blocks: priced ~9% below the URA median ($1612 vs $1763) with a robust 7.36% CAGR over 129 transactions, 270m to Bedok Reservoir DTL MRT, and the best-maintained/highest-rated (4.3/5) of the Waterfront series. The Bayshore precinct and TEL catalysts upgrade the prior Neutral to a Buy at this entry price.",
+      "rating_rationale": "Listing sits ~9% under recent URA transacted PSF, giving headroom rather than a stretched entry. 7.36%/yr resale CAGR is high and well-supported (129 txns). Location is the differentiator: 270m to DT30 Bedok Reservoir, reservoir/park frontage, and proximity to the Bayshore precinct + Thomson-East Coast Line build-out in Upper East Coast. Reviews confirm it is the best-kept of the Waterfront developments. The earlier Neutral call looks conservative given the current sub-median price and concrete D16 catalysts; minor humidity/mould and rush-hour traffic noise are manageable and stack-dependent.",
+      "red_flags": [
+        "Some exterior mould/humidity and rush-hour traffic noise reported (stack/facing dependent)",
+        "Ageing facilities (2015 build) need ongoing maintenance spend"
+      ],
+      "catalysts": [
+        "270m to DT30 Bedok Reservoir MRT",
+        "Bayshore precinct development and Thomson-East Coast Line uplift in Upper East Coast/D16",
+        "Listed ~9% below URA median PSF, leaving appreciation headroom"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1612.24,
+        "beds": 2,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The strongest D16 entry of the three Waterfront blocks: priced ~9% below the URA median ($1612 vs $1763) with a robust 7.36% CAGR over 129 transactions, 270m to Bedok Reservoir DTL MRT, and the best-maintained/highest-rated (4.3/5) of the Waterfront series. The Bayshore precinct and TEL catalysts upgrade the prior Neutral to a Buy at this entry price.",
+        "rating": "Buy",
+        "rating_rationale": "Listing sits ~9% under recent URA transacted PSF, giving headroom rather than a stretched entry. 7.36%/yr resale CAGR is high and well-supported (129 txns). Location is the differentiator: 270m to DT30 Bedok Reservoir, reservoir/park frontage, and proximity to the Bayshore precinct + Thomson-East Coast Line build-out in Upper East Coast. Reviews confirm it is the best-kept of the Waterfront developments. The earlier Neutral call looks conservative given the current sub-median price and concrete D16 catalysts; minor humidity/mould and rush-hour traffic noise are manageable and stack-dependent.",
+        "red_flags": [
+          "Some exterior mould/humidity and rush-hour traffic noise reported (stack/facing dependent)",
+          "Ageing facilities (2015 build) need ongoing maintenance spend"
+        ],
+        "catalysts": [
+          "270m to DT30 Bedok Reservoir MRT",
+          "Bayshore precinct development and Thomson-East Coast Line uplift in Upper East Coast/D16",
+          "Listed ~9% below URA median PSF, leaving appreciation headroom"
+        ],
+        "rental_assessment": "Healthy 2BR demand from East-side families and DTL commuters; reservoir/park setting and MRT proximity keep it leasable at typical D16 yields (~3.3%).",
+        "appreciation_assessment": "7.36% CAGR over 129 transactions is reliable; sub-median entry plus Bayshore/TEL catalysts support continued above-baseline appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "URA resale CAGR 7.36% (129 txns), trimmed slightly for forward expectation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933",
+        "review_file": "batch_03.json"
+      }
     }
   ]
 }

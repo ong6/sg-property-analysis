@@ -1,0 +1,456 @@
+{
+ "listings": [
+  {
+   "bracket": "3BR",
+   "bracket_rank": 11,
+   "project_name": "Grandeur 8",
+   "district": "D20",
+   "beds": 3,
+   "price": 2250000,
+   "psf": 1422.25,
+   "sqft": 1582.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2005,
+   "mrt_info": "9 min (780 m) from CR11 Ang Mo Kio MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500079229",
+   "technical": {
+    "mmr": 1542.2,
+    "score_1000": 758,
+    "elo": 2337,
+    "record": "556-13-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.526718793230235,
+    "ura_resale_only_pct_yr": 6.526718793230235,
+    "ura_txn_count": 88,
+    "ura_median_psf": 1557.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Large, established 99LH near AMK Town Centre with a genuinely big 1,582 sqft 3BR priced at PSF 1422 — a 9% discount to the project median PSF of 1557. Strong 6.5%/yr URA resale appreciation on 88 transactions, a 579-unit liquid base, and the future CR11 Ang Mo Kio Cross Island Line interchange make this a solid value play.",
+    "rating": "Buy",
+    "rating_rationale": "PSF 1422 vs URA median 1557 is a meaningful ~9% discount on a unit that is large and well-located (5-9 min to AMK hub, mall, bus interchange). 6.5%/yr resale-only appreciation on a healthy 88-txn sample is well above the OCR baseline. 579 units gives deep liquidity, and the Cross Island Line interchange at AMK (CR11, ~2030) is a real catalyst. At $2.25M the unit sits at the upper edge of the deep buyer band but the large floor area justifies it. Build is 2005-era but reviews report decent upkeep; aging facilities and 21-year age are the main drags.",
+    "red_flags": [
+     "2005 build (21 years old) — higher maintenance, finishes dated; some reviews note aging facilities",
+     "Large 1,582 sqft pushes quantum to $2.25M, narrowing the buyer pool vs sub-$2M peers",
+     "780m to MRT is a moderate (not doorstep) walk"
+    ],
+    "catalysts": [
+     "CR11 Ang Mo Kio Cross Island Line interchange (~2030) adds a second line to the existing NSL",
+     "PSF ~9% below project median leaves room for re-rating toward the median",
+     "AMK Town Centre amenities, schools and en-bloc-scale 579-unit liquidity"
+    ],
+    "rental_assessment": "AMK is a mature tenant catchment with strong HDB-upgrader and family demand; a large 1,582 sqft 3BR rents well to families though quantum caps gross yield around 3% at this price.",
+    "appreciation_assessment": "6.5%/yr URA resale CAGR on 88 transactions is robust and above OCR norm; discount-to-median entry plus the CRL interchange supports continued outperformance over a 5-7yr hold.",
+    "confidence": "high"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 12,
+   "project_name": "FLO Residence",
+   "district": "D19",
+   "beds": 3,
+   "price": 1500000,
+   "psf": 1547.99,
+   "sqft": 969.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2016,
+   "mrt_info": "4 min (320 m) from PE3 Coral Edge LRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500161555",
+   "technical": {
+    "mmr": 1559.0,
+    "score_1000": 845,
+    "elo": 2298,
+    "record": "552-16-1",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 8.22984636012174,
+    "ura_resale_only_pct_yr": 8.22984636012174,
+    "ura_txn_count": 130,
+    "ura_median_psf": 1488.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Low-quantum $1.5M 3BR in a 2016 Punggol project with a standout 8.2%/yr URA resale CAGR on a deep 130-txn sample. But the 969 sqft footprint is a compact/efficient 3BR, the PSF 1548 sits ~4% above the project median, and the unit is on the Coral Edge LRT (not MRT) with reported traffic noise — a Neutral despite strong appreciation data.",
+    "rating": "Neutral",
+    "rating_rationale": "The appreciation (8.2%/yr, 130 txns) and $1.5M quantum are genuinely attractive and the LRT-network connectivity to Punggol MRT/PDD is real. But the negatives balance it: 969 sqft for a 3BR is tight (cramped layout risk, narrows family-buyer appeal), PSF 1548 is already ~4% above the project's own median rather than a discount, and reviews flag unbearable traffic noise plus a congested, no-open-area site. You're paying an above-median PSF for a compact unit relying on PDD spillover — fine, not cheap. Liquidity is good at this quantum but the unit is not the standout 3BR in the project.",
+    "red_flags": [
+     "969 sqft is a compact 3BR — tight for families, layout efficiency over generosity",
+     "PSF 1548 is ~4% ABOVE project median 1488 — paying up, not buying a discount",
+     "Reviews report unbearable traffic noise and a congested site with no open area",
+     "Served by Coral Edge LRT only, not a direct MRT"
+    ],
+    "catalysts": [
+     "Punggol Digital District (PDD) and CRL-era Punggol growth lift the whole district",
+     "Low $1.5M quantum keeps the buyer pool broad and entry accessible",
+     "8.2%/yr URA resale CAGR is the highest in the batch on a deep sample"
+    ],
+    "rental_assessment": "Punggol rental demand is steady from PDD/SIT and young families; a compact 3BR at $1.5M can yield ~3.5%+ but the small size and LRT-only access cap premium rents.",
+    "appreciation_assessment": "8.2%/yr resale CAGR on 130 transactions is excellent and PDD remains a structural tailwind, but the above-median entry PSF means much of the easy upside may already be priced in.",
+    "confidence": "medium"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 13,
+   "project_name": "The Minton",
+   "district": "D19",
+   "beds": 3,
+   "price": 2500000,
+   "psf": 1872.66,
+   "sqft": 1335.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2014,
+   "mrt_info": "13 min (1.06 km) from NE12 Serangoon MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-minton-500000478",
+   "technical": {
+    "mmr": 1517.2,
+    "score_1000": 576,
+    "elo": 2248,
+    "record": "548-21-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.459897631640211,
+    "ura_resale_only_pct_yr": 7.459897631640211,
+    "ura_txn_count": 292,
+    "ura_median_psf": 1635.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 1,145-unit Hougang mega-development with deep 292-txn liquidity and 7.5%/yr URA resale appreciation, but this specific 3BR is priced at PSF 1873 — a steep ~14% PREMIUM over the project's URA median of 1635 — at a $2.5M quantum that thins the buyer pool. Recurring build-quality complaints (water seepage, low-grade finishes) and a 1km+ MRT walk make this overpriced unit an Avoid.",
+    "rating": "Avoid",
+    "rating_rationale": "The project fundamentals are fine (292 txns = very liquid, 7.5%/yr resale CAGR, large facilities), but you are not buying the project at median — you are buying one unit at PSF 1873 vs a URA median of 1635, a ~14% premium. At a $2.5M quantum that premium is hard to recover on exit, and the buyer pool above $2.4M is materially shallower. Reviews repeatedly cite poor interior finishing, ceiling water seepage and piping/water-supply disruptions, which depress resale appeal. The 1.06km walk to Serangoon MRT is a further drag. Good development, bad price.",
+    "red_flags": [
+     "PSF 1873 is ~14% ABOVE URA median 1635 — significantly overpriced unit",
+     "$2.5M quantum sits above the deep buyer band, slowing exit",
+     "Documented build-quality issues: water seepage, low-grade finishes, piping/water-supply problems",
+     "13-min / 1.06km walk to Serangoon MRT"
+    ],
+    "catalysts": [
+     "292 URA transactions and 1,145 units give best-in-batch liquidity",
+     "Mature Hougang/Serangoon catchment with NEX mall and schools nearby"
+    ],
+    "rental_assessment": "Large facilities and family-sized layout draw tenant interest, but the distance to MRT and $2.5M cost basis hold gross yield near 3%, below what the quantum should command.",
+    "appreciation_assessment": "Project-level 7.5%/yr CAGR is healthy, but buying ~14% above median means the unit must first close that gap before participating in further upside — a structural headwind.",
+    "confidence": "high"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 14,
+   "project_name": "Regentville",
+   "district": "D19",
+   "beds": 3,
+   "price": 1388888,
+   "psf": 1205.63,
+   "sqft": 1152.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2000,
+   "mrt_info": "11 min (920 m) from CR9 Serangoon North MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500157715",
+   "technical": {
+    "mmr": 1532.4,
+    "score_1000": 693,
+    "elo": 2203,
+    "record": "538-28-3",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.585348334528486,
+    "ura_resale_only_pct_yr": 7.585348334528486,
+    "ura_txn_count": 131,
+    "ura_median_psf": 1185.5,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Very low-quantum $1.39M 3BR (1,152 sqft) at PSF 1206 with 7.6%/yr URA resale appreciation and the future CR9 Serangoon North CRL station as a catalyst. The catch is the lease: 99 years from 1996 means only ~63 years remaining at a 5-7yr exit, which caps financing and the resale buyer pool — a Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "Attractive entry: $1.39M for a 1,152 sqft 3BR keeps the buyer pool wide and the PSF (1206) is roughly at the URA median (1185.5). 7.6%/yr resale CAGR on 131 txns is strong, and CR9 Serangoon North (Cross Island Line, ~2030) is a genuine within-1km catalyst. But the lease commenced 1996 — at a 2032-2033 exit the property is at ~63 years remaining, the zone where CPF usage tightens and the buyer/financing pool narrows, structurally capping appreciation late in the hold. 920m to a not-yet-built MRT and mixed security/maintenance reviews temper enthusiasm. Net: a fairly-priced, cash-flow-decent hold rather than a capital-growth standout.",
+    "red_flags": [
+     "Lease from 1996 — ~63 years remaining at exit; CPF/financing restrictions begin to bite below 60yr",
+     "Decreasing-lease drag will progressively cap appreciation through the hold",
+     "CR9 MRT not yet operational and 920m away; benefit is back-loaded",
+     "Some reviews cite security and maintenance concerns"
+    ],
+    "catalysts": [
+     "Future CR9 Serangoon North Cross Island Line station (~2030) within ~1km",
+     "Low $1.39M quantum and at-median PSF keep entry attractive and liquid",
+     "Spacious 1,152 sqft layout with 3 bathrooms appeals to value-seeking families"
+    ],
+    "rental_assessment": "Serangoon North is a steady family/heartland rental area; a large 3BR at low cost basis can yield ~3.8% gross, helped by the low quantum, but ageing fit-out limits rent premium.",
+    "appreciation_assessment": "7.6%/yr historical resale CAGR is strong and the CRL is a real tailwind, but the shrinking lease is a hard ceiling that will increasingly offset that over a 5-7yr hold.",
+    "confidence": "medium"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 15,
+   "project_name": "Waterview",
+   "district": "D18",
+   "beds": 3,
+   "price": 1900000,
+   "psf": 1378.81,
+   "sqft": 1378.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2013,
+   "mrt_info": "",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-waterview-25614039",
+   "technical": {
+    "mmr": 1548.0,
+    "score_1000": 792,
+    "elo": 2200,
+    "record": "546-22-1",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.361436143147704,
+    "ura_resale_only_pct_yr": 7.361436143147704,
+    "ura_txn_count": 178,
+    "ura_median_psf": 1502.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Large 1,378 sqft 3BR by reputable Sim Lian at Bedok Reservoir, priced at PSF 1379 — a strong ~8% discount to the project's URA median of 1502 — with 7.4%/yr resale appreciation on a deep 178-txn base and a $1.9M quantum in the sweet spot. Reservoir-facing stacks avoid road noise; this is a well-priced, liquid Buy.",
+    "rating": "Buy",
+    "rating_rationale": "PSF 1379 vs URA median 1502 is a clean ~8% discount on a genuinely large 1,378 sqft 3BR — good value per square foot. 7.4%/yr resale CAGR on 178 transactions is reliable, 696 units and a $1.9M quantum (centre of the deep buyer band) support easy exit, and Sim Lian is a solid builder. Bedok Reservoir lifestyle draw and proximity to Tampines Regional Centre underpin demand. The main caveat is unit-specific: quarry/road-facing stacks suffer traffic noise, so the reservoir-facing stacks are the ones to target. No MRT directly at the door is the structural weak point but the discount and size compensate.",
+    "red_flags": [
+     "No MRT within easy walk — bus-dependent connectivity",
+     "Road/quarry-facing stacks have documented traffic noise; reservoir-facing stacks strongly preferred"
+    ],
+    "catalysts": [
+     "PSF ~8% below project median — room to re-rate toward median",
+     "Bedok Reservoir frontage and Tampines Regional Centre proximity sustain demand",
+     "Deep 178-txn liquidity, 696 units, reputable Sim Lian build"
+    ],
+    "rental_assessment": "Family-oriented Bedok Reservoir catchment with a large 3BR rents steadily; ~3.3% gross yield realistic, aided by the discounted entry price.",
+    "appreciation_assessment": "7.4%/yr resale CAGR on a deep sample plus a below-median entry PSF gives a favorable risk/reward for capital growth over 5-7 years.",
+    "confidence": "high"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 16,
+   "project_name": "Amber Skye",
+   "district": "D15",
+   "beds": 3,
+   "price": 2640000,
+   "psf": 2171.05,
+   "sqft": 1216.0,
+   "tenure": "Freehold",
+   "built_year": 2017,
+   "mrt_info": "1 min (80 m) from TE25 Tanjong Katong MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-skye-24796156",
+   "technical": {
+    "mmr": 1556.0,
+    "score_1000": 832,
+    "elo": 2184,
+    "record": "548-19-2",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 10.264525352535037,
+    "ura_resale_only_pct_yr": 10.264525352535037,
+    "ura_txn_count": 32,
+    "ura_median_psf": 2411.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Freehold, well-built 2017 D15 luxury condo with TE25 Tanjong Katong MRT literally at the doorstep (80m) and a standout 10.3%/yr URA resale CAGR. This 3BR at PSF 2171 is a striking ~10% discount to the project median of 2411; the offsets are a high $2.64M quantum, a small 109-unit boutique base, and a thin 32-txn sample. A high-confidence Buy on location and value.",
+    "rating": "Buy",
+    "rating_rationale": "The location is exceptional: 80m to TE25 (Thomson-East Coast Line direct to CBD/Marina Bay), freehold, established East Coast D15 lifestyle, completed 2017 with positive build-quality reviews. The 10.3%/yr resale CAGR is the highest non-Punggol figure in the batch, and PSF 2171 vs URA median 2411 is a clear ~10% discount — buying below where the project transacts. Tenure (FH) and doorstep MRT give deep long-run liquidity despite the $2.64M quantum. Risks are real but secondary: only 109 units (boutique, thinner same-project comps) and just 32 URA txns lower data confidence, and $2.64M is above the deepest buyer band. On balance the location/tenure/discount stack outweighs them.",
+    "red_flags": [
+     "Small 109-unit boutique development — fewer comparable resale transactions",
+     "Thin 32-txn URA sample lowers appreciation-rate confidence",
+     "$2.64M quantum sits above the deepest buyer band"
+    ],
+    "catalysts": [
+     "TE25 Tanjong Katong MRT 80m away — full Thomson-East Coast Line connectivity",
+     "Freehold tenure in a perennially-demanded D15 East Coast location",
+     "PSF ~10% below project median offers value entry; 10.3%/yr resale CAGR"
+    ],
+    "rental_assessment": "Doorstep TEL MRT, East Coast lifestyle and expat appeal drive strong rental demand; gross yield ~3% given the premium quantum but tenant pool is deep and reliable.",
+    "appreciation_assessment": "Freehold + doorstep TEL + below-median entry underpins continued outperformance; 10.3%/yr is partly a thin-sample artifact, so treat ~6-7%/yr as the durable base case rather than the headline.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 6.5,
+    "appreciation_rate_source": "Headline 10.3%/yr rests on only 32 txns; discounted to ~6.5%/yr as a durable FH-D15 resale base case"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 17,
+   "project_name": "Sunglade",
+   "district": "D19",
+   "beds": 3,
+   "price": 1999999,
+   "psf": 1705.03,
+   "sqft": 1173.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2003,
+   "mrt_info": "5 min (430 m) from NE12 Serangoon MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-sunglade-25546661",
+   "technical": {
+    "mmr": 1519.8,
+    "score_1000": 597,
+    "elo": 2175,
+    "record": "541-28-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.394092378577932,
+    "ura_resale_only_pct_yr": 7.394092378577932,
+    "ura_txn_count": 82,
+    "ura_median_psf": 1705.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "CapitaLand-built, well-maintained 2003 condo a genuine 5-min/430m walk to Serangoon MRT and NEX mall, priced exactly at the URA median (PSF 1705 vs 1705) at a $2M quantum. Solid location and 7.4%/yr resale CAGR, but at-median pricing, a 23-year age, and only an off-frontier technical read make it a fairly-priced Neutral rather than a value Buy.",
+    "rating": "Neutral",
+    "rating_rationale": "Location is the strength: 430m to Serangoon MRT (NEL interchange) and NEX, with reliable CapitaLand build and good upkeep reviews. 7.4%/yr resale CAGR on 82 txns is healthy. But there is no value edge here — PSF 1705 is dead-on the URA median, so you pay full freight, and at 23 years old (2003) the building is mid-life with worn exterior noted in reviews. $2M quantum is fine for liquidity but the unit is off the efficiency frontier (off_frontier, MMR 1520). Good home-quality asset, but as an investment it's priced to market with no discount and limited room to outrun the district.",
+    "red_flags": [
+     "PSF at the URA median — no value discount on entry",
+     "2003 build (23 years) — mid-life maintenance, worn exterior noted in reviews",
+     "Off efficiency frontier; lower technical score (597/1000) vs batch peers"
+    ],
+    "catalysts": [
+     "430m to Serangoon MRT (NEL) and NEX mall — strong, established connectivity",
+     "Reliable CapitaLand construction and consistent maintenance",
+     "Mature Serangoon catchment with deep family/upgrader demand"
+    ],
+    "rental_assessment": "Doorstep MRT and NEX make for steady tenant demand; ~3.2% gross yield realistic but the at-median entry price limits cash-flow upside.",
+    "appreciation_assessment": "7.4%/yr resale CAGR is solid, but full-price entry at the median leaves the unit reliant on broad district drift rather than any project-specific re-rating.",
+    "confidence": "medium"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 18,
+   "project_name": "NV Residences",
+   "district": "D18",
+   "beds": 3,
+   "price": 1880000,
+   "psf": 1386.43,
+   "sqft": 1356.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2013,
+   "mrt_info": "8 min (670 m) from CP1 Pasir Ris MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500018326",
+   "technical": {
+    "mmr": 1544.7,
+    "score_1000": 772,
+    "elo": 2156,
+    "record": "541-26-2",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.270827051585105,
+    "ura_resale_only_pct_yr": 7.270827051585105,
+    "ura_txn_count": 178,
+    "ura_median_psf": 1414.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Large 1,356 sqft 3BR in a well-regarded 642-unit Pasir Ris condo priced at PSF 1386 — a ~2% discount to the URA median of 1414 — with 7.3%/yr resale CAGR on a deep 178-txn base and a $1.88M quantum in the deepest buyer band. CP1 Pasir Ris MRT will become a Cross Island Line interchange beside the new Pasir Ris Mall integrated hub — a clean Buy.",
+    "rating": "Buy",
+    "rating_rationale": "Good all-round value: PSF 1386 is slightly below the URA median, the 1,356 sqft layout is genuinely large for families, and $1.88M sits squarely in the deepest buyer band for easy exit. 7.3%/yr resale CAGR on 178 transactions is reliable, and reviews are strongly positive (4.5/5, spacious units, good maintenance, quiet). The real catalyst is CP1 Pasir Ris becoming a Cross Island Line interchange (~2030) anchored by the new Pasir Ris 8 / Pasir Ris Mall integrated development next door, which is lifting the whole micro-market. 670m walk is moderate but acceptable. Few material flaws.",
+    "red_flags": [
+     "670m / 8-min walk to MRT — moderate, not doorstep",
+     "Outer-OCR Pasir Ris location relies on the CRL catalyst materializing on schedule"
+    ],
+    "catalysts": [
+     "CP1 Pasir Ris becomes a Cross Island Line interchange (~2030)",
+     "Adjacent Pasir Ris Mall / Pasir Ris 8 integrated hub re-rating the precinct",
+     "Below-median PSF, deep 178-txn liquidity, 642 units and a $1.88M sweet-spot quantum"
+    ],
+    "rental_assessment": "Pasir Ris family demand plus the new integrated mall and improving connectivity support steady leasing; ~3.4% gross yield realistic for a large 3BR at this price.",
+    "appreciation_assessment": "7.3%/yr resale CAGR on a deep sample, a slight entry discount, and the CRL-plus-integrated-hub catalyst give a favorable 5-7yr growth setup.",
+    "confidence": "high"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 19,
+   "project_name": "Compass Heights",
+   "district": "D19",
+   "beds": 3,
+   "price": 1799999,
+   "psf": 1359.52,
+   "sqft": 1324.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2003,
+   "mrt_info": "3 min (240 m) from NE16 Sengkang MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500010564",
+   "technical": {
+    "mmr": 1537.7,
+    "score_1000": 729,
+    "elo": 2155,
+    "record": "540-27-2",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.6539513616803,
+    "ura_resale_only_pct_yr": 7.6539513616803,
+    "ura_txn_count": 80,
+    "ura_median_psf": 1344.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "Integrated development sitting atop Compass One mall with direct access to Sengkang MRT/LRT and bus interchange — unbeatable convenience at a low $1.8M quantum for a large 1,324 sqft 3BR. PSF 1360 is just ~1% above the URA median and 7.7%/yr resale CAGR is the strongest of the Serangoon/Sengkang names. Aging 2003 build and common-area upkeep gripes keep it a Buy rather than Strong Buy.",
+    "rating": "Buy",
+    "rating_rationale": "The integrated-development premium is the thesis: directly above Compass One, with Sengkang MRT (NEL), LRT and bus interchange below — the kind of doorstep connectivity that holds resale value. 7.7%/yr resale CAGR (highest among the non-Punggol D19 names) on 80 txns, a $1.8M quantum in the deep buyer band, and a large 1,324 sqft layout all support the case. PSF 1360 is essentially at-median (URA 1344), so not a discount but fair for the location. Offsets: 2003 build (23 years), and reviews flag aging common-area upkeep (smell/pests at the L1 MRT entrance). The convenience moat outweighs the age drag.",
+    "red_flags": [
+     "2003 build (23 years) — aging; reviews cite common-area maintenance issues (smell, pests at L1)",
+     "PSF slightly above median — fair, not cheap",
+     "Mixed-use/above-mall living means some footfall and noise trade-offs"
+    ],
+    "catalysts": [
+     "Integrated with Compass One mall + Sengkang MRT/LRT/bus interchange — premium, durable connectivity",
+     "7.7%/yr resale CAGR, the strongest among the batch's Serangoon/Sengkang resale names",
+     "Low $1.8M quantum for a large 3BR keeps the buyer pool wide"
+    ],
+    "rental_assessment": "On-top-of-MRT-and-mall convenience makes this one of the easiest 3BRs to lease in Sengkang; ~3.4% gross yield realistic with strong tenant demand from families.",
+    "appreciation_assessment": "7.7%/yr resale CAGR plus the structural integrated-development premium supports steady outperformance; the main cap is age-related maintenance perception over the hold.",
+    "confidence": "high"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 20,
+   "project_name": "Parc Centros",
+   "district": "D19",
+   "beds": 3,
+   "price": 1750000,
+   "psf": 1767.68,
+   "sqft": 990.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2016,
+   "mrt_info": "4 min (300 m) from NE17 Punggol MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500153632",
+   "technical": {
+    "mmr": 1542.9,
+    "score_1000": 762,
+    "elo": 2154,
+    "record": "539-29-1",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 6.7455008656436055,
+    "ura_resale_only_pct_yr": 6.7455008656436055,
+    "ura_txn_count": 131,
+    "ura_median_psf": 1756.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "2016 Punggol condo a genuine 4-min/300m from Punggol MRT/LRT interchange, riding the Punggol Digital District tailwind with 6.7%/yr resale CAGR on a deep 131-txn base. But the 990 sqft footprint is a compact 3BR, PSF 1768 is at the project median (no discount), the $1.75M quantum is high for the small size, and reviews flag a busy/noisy junction — a Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "The location is good — 300m to Punggol MRT/LRT interchange and direct exposure to PDD growth — and the 6.7%/yr resale CAGR on 131 txns is solid. But the value case is weak for this specific unit: 990 sqft for a 3BR is compact (you are paying $1.75M for a small layout), PSF 1768 is essentially at the URA median (1756) so no entry discount, and the implied PSF is high relative to the unit's size. Reviews note the development sits on a busy, noisy junction with low-floor traffic noise, so stack/floor selection matters. Net: a fine Punggol connectivity play but priced full for a compact unit — balanced, not compelling.",
+    "red_flags": [
+     "990 sqft is a compact 3BR — high PSF (1768) and $1.75M for a small footprint",
+     "PSF at the URA median — no value discount",
+     "Reviews report a busy, noisy junction; low-floor units exposed to traffic noise"
+    ],
+    "catalysts": [
+     "300m to Punggol MRT/LRT interchange — strong doorstep connectivity",
+     "Punggol Digital District (PDD) growth driving the wider precinct",
+     "Deep 131-txn liquidity in a 2016 (relatively young) leasehold project"
+    ],
+    "rental_assessment": "Doorstep MRT plus PDD/SIT tenant inflow supports leasing; a compact 3BR can reach ~3.4% gross but the high quantum for the size caps yield and limits the family-buyer pool on exit.",
+    "appreciation_assessment": "6.7%/yr resale CAGR and PDD tailwind are positives, but at-median entry on a compact unit means much of the easy upside is already in the price.",
+    "confidence": "medium"
+   }
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "listings": [
+  {
+   "project_name": "Astoria Park",
+   "district": "D16",
+   "beds": 3,
+   "price": 1700000,
+   "psf": 1291.0,
+   "url": "",
+   "agent_evaluation": {
+    "rating": "Neutral",
+    "confidence": "medium",
+    "summary": "Referee reconciliation: doorstep Kembangan MRT and below-median PSF are real, but building-level defects found in the sibling 2BR evaluation (failing roof waterproofing, water ingress, special-levy risk) apply to every unit type and cap the rating.",
+    "rating_rationale": "Downgraded from Buy: 130m EWL MRT + 7% PSF discount remain, but documented waterproofing failures and dereliction reported in 2BR research are building-wide; add 1995-vintage lease decay and the value case needs a deep defect/levy check before any Buy.",
+    "red_flags": [
+     "failing roof waterproofing / water ingress (building-wide)",
+     "potential special levy",
+     "lease decay (1995 TOP)"
+    ],
+    "catalysts": [
+     "doorstep Kembangan MRT",
+     "below-median PSF entry"
+    ]
+   }
+  }
+ ]
+}

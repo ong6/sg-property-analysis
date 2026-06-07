@@ -1,0 +1,121 @@
+{
+  "condo": "Rio Vista",
+  "slug": "rio-vista",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,055 sqft 2BR at $1,220 psf, essentially at the $1,207 median, in a 2004 waterfront-themed Hougang development with a healthy 6.5%/yr resale CAGR on 125 txns. The decisive weakness is location: no MRT within walking distance (the dossier carries no MRT info), plus a 2001 lease (~74 yrs) heading toward the 60-year cliff and reports of declining management. Low absolute price but the no-MRT liquidity penalty and at-median pricing keep this Neutral.",
+      "rating_rationale": "The 6.5%/yr CAGR on 125 transactions and a sub-$1.3M entry are real positives, and the unit is priced at fair value ($1,220 vs $1,207 median). But Rio Vista is not within walking distance of any MRT — a persistent liquidity and rental drag that the strong historical CAGR (partly a low-base/Hougang-wide effect) does not offset. Lease from 2001 (~74 yrs) will cross below 60 years around 2040, weighing on the buyer pool over time, and reviews note recent management/security decline requiring MCST due diligence. Fair-priced but location-handicapped — Neutral.",
+      "red_flags": [
+        "No MRT within walking distance — material liquidity and rental handicap versus batch peers",
+        "Lease from 2001 (~74 yrs); approaches the 60-year financing cliff ~2040",
+        "Reviews report deteriorating management/security after an MCST manager change",
+        "Priced at the median PSF — no value cushion"
+      ],
+      "catalysts": [
+        "Low absolute entry (sub-$1.3M) with deep HDB-upgrader buyer base in Hougang",
+        "Waterfront/leafy product differentiates it within the local resale market",
+        "Broad Hougang/Punggol catchment growth (PDD, CRL) lifts the wider area"
+      ],
+      "as_of": {
+        "price": 1288000,
+        "psf": 1220.85,
+        "beds": 2,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,055 sqft 2BR at $1,220 psf, essentially at the $1,207 median, in a 2004 waterfront-themed Hougang development with a healthy 6.5%/yr resale CAGR on 125 txns. The decisive weakness is location: no MRT within walking distance (the dossier carries no MRT info), plus a 2001 lease (~74 yrs) heading toward the 60-year cliff and reports of declining management. Low absolute price but the no-MRT liquidity penalty and at-median pricing keep this Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "The 6.5%/yr CAGR on 125 transactions and a sub-$1.3M entry are real positives, and the unit is priced at fair value ($1,220 vs $1,207 median). But Rio Vista is not within walking distance of any MRT — a persistent liquidity and rental drag that the strong historical CAGR (partly a low-base/Hougang-wide effect) does not offset. Lease from 2001 (~74 yrs) will cross below 60 years around 2040, weighing on the buyer pool over time, and reviews note recent management/security decline requiring MCST due diligence. Fair-priced but location-handicapped — Neutral.",
+        "red_flags": [
+          "No MRT within walking distance — material liquidity and rental handicap versus batch peers",
+          "Lease from 2001 (~74 yrs); approaches the 60-year financing cliff ~2040",
+          "Reviews report deteriorating management/security after an MCST manager change",
+          "Priced at the median PSF — no value cushion"
+        ],
+        "catalysts": [
+          "Low absolute entry (sub-$1.3M) with deep HDB-upgrader buyer base in Hougang",
+          "Waterfront/leafy product differentiates it within the local resale market",
+          "Broad Hougang/Punggol catchment growth (PDD, CRL) lifts the wider area"
+        ],
+        "rental_assessment": "Without an MRT walk, rental demand leans on car-owning families and is weaker per-dollar than MRT-adjacent peers. Yield acceptable on the low price but tenant pool is narrower.",
+        "appreciation_assessment": "6.5%/yr CAGR is solid but flattered by area-wide gains and a low base; the no-MRT location and lease decay will cap forward appreciation. Underwrite mid-single-digit at best.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA CAGR 6.5% discounted for no-MRT liquidity handicap and accelerating lease decay toward the 60-year cliff"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500074517",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A low-quantum ($1.388M) 1,055 sqft 99LH 3BR in a large 716-unit Hougang waterfront development along Sungei Serangoon. Resale CAGR is a healthy 6.5%/yr over 125 txns, but it prices ABOVE the $1,207 district median, sits far from any MRT, and offers dated, minimal facilities.",
+      "rating_rationale": "Positives: deep liquidity (716 units, 125 txns), a healthy 6.5%/yr resale CAGR, low $1.388M quantum for the widest buyer base, and genuine river-frontage amenity for water-facing stacks. Against that: at $1,316 psf it is ~9% ABOVE the $1,207 district median (so this specific listing looks dear for the development), it has no MRT within reasonable walk (relies on CTE/KPE and buses), and the 2004 estate notably lacks modern clubhouse/gym/lifestyle facilities. River-view stacks are the only ones I'd consider; the rest are ordinary aging OCR stock. The above-median pricing on a no-MRT, dated estate caps this at Neutral.",
+      "red_flags": [
+        "Listed $1,316 psf is ~9% above the $1,207 district median — dear for this development",
+        "No MRT within walking distance — car/bus dependent (CTE/KPE)",
+        "2004 estate with dated, minimal facilities (no modern clubhouse/gym)"
+      ],
+      "catalysts": [
+        "Sungei Serangoon river frontage — unblocked water views for select stacks add resale appeal",
+        "Large 716-unit base with deep liquidity and low $1.388M quantum",
+        "6.5%/yr resale CAGR shows steady historical appreciation"
+      ],
+      "as_of": {
+        "price": 1388000,
+        "psf": 1315.64,
+        "beds": 3,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A low-quantum ($1.388M) 1,055 sqft 99LH 3BR in a large 716-unit Hougang waterfront development along Sungei Serangoon. Resale CAGR is a healthy 6.5%/yr over 125 txns, but it prices ABOVE the $1,207 district median, sits far from any MRT, and offers dated, minimal facilities.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: deep liquidity (716 units, 125 txns), a healthy 6.5%/yr resale CAGR, low $1.388M quantum for the widest buyer base, and genuine river-frontage amenity for water-facing stacks. Against that: at $1,316 psf it is ~9% ABOVE the $1,207 district median (so this specific listing looks dear for the development), it has no MRT within reasonable walk (relies on CTE/KPE and buses), and the 2004 estate notably lacks modern clubhouse/gym/lifestyle facilities. River-view stacks are the only ones I'd consider; the rest are ordinary aging OCR stock. The above-median pricing on a no-MRT, dated estate caps this at Neutral.",
+        "red_flags": [
+          "Listed $1,316 psf is ~9% above the $1,207 district median — dear for this development",
+          "No MRT within walking distance — car/bus dependent (CTE/KPE)",
+          "2004 estate with dated, minimal facilities (no modern clubhouse/gym)"
+        ],
+        "catalysts": [
+          "Sungei Serangoon river frontage — unblocked water views for select stacks add resale appeal",
+          "Large 716-unit base with deep liquidity and low $1.388M quantum",
+          "6.5%/yr resale CAGR shows steady historical appreciation"
+        ],
+        "rental_assessment": "Modest rental demand — no MRT and dated facilities limit tenant appeal; suits car-owning families. River-facing units rent slightly better. Yield ordinary.",
+        "appreciation_assessment": "6.5%/yr historical CAGR is decent, but the above-median entry PSF and lack of MRT/facility catalysts make a repeat uncertain; only river-view stacks justify a premium. Expect district-average at best.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale 6.5%/yr discounted for above-median entry PSF and no-MRT, dated-facility drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500085889",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

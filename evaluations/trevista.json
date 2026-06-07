@@ -1,0 +1,59 @@
+{
+  "condo": "Trevista",
+  "slug": "trevista",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 1,442sqft 3BR at Braddell MRT (280m), $2.4M / $1,664psf — a striking ~15% below the URA median ($1,967). Generous size, two-MRT access and a responsive MCST make this an efficient, well-priced D12 hold; the discount reflects the bay-window/balcony-heavy layout rather than a defect.",
+      "rating_rationale": "Asking $1,664psf vs $1,967 URA median is a ~15% discount — the standout value in this batch on an absolute-PSF basis, driven by the large 1,442sqft format (price-per-foot compresses on big units). 134 transactions = liquid, reliable; 5.64%/yr CAGR is healthy. 280m to Braddell NS18 plus Toa Payoh within reach is a real transit/rental anchor. Reviews note responsive MCST and good maintenance. Caveats: $2.4M sits at the upper edge of the liquid band, and reviews flag thin soundproofing and bay-window/balcony space that inflates strata area — partly why PSF reads cheap. Net: large, central, MRT-fronting, fairly-to-cheaply priced. MMR 746 / on frontier supports.",
+      "red_flags": [
+        "Reviews cite poor soundproofing between units",
+        "Bay windows / large balconies inflate strata area (PSF flatters the layout)",
+        "$2.4M near the top of the liquid price band; 99yr leasehold"
+      ],
+      "catalysts": [
+        "~15% below URA median PSF — genuine value for a large 3BR",
+        "280m to Braddell MRT plus second-MRT access (Toa Payoh) — strong liquidity",
+        "1,442sqft generous family layout broadens resale buyer pool"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1664.36,
+        "beds": 3,
+        "sqft": 1442.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1,442sqft 3BR at Braddell MRT (280m), $2.4M / $1,664psf — a striking ~15% below the URA median ($1,967). Generous size, two-MRT access and a responsive MCST make this an efficient, well-priced D12 hold; the discount reflects the bay-window/balcony-heavy layout rather than a defect.",
+        "rating": "Buy",
+        "rating_rationale": "Asking $1,664psf vs $1,967 URA median is a ~15% discount — the standout value in this batch on an absolute-PSF basis, driven by the large 1,442sqft format (price-per-foot compresses on big units). 134 transactions = liquid, reliable; 5.64%/yr CAGR is healthy. 280m to Braddell NS18 plus Toa Payoh within reach is a real transit/rental anchor. Reviews note responsive MCST and good maintenance. Caveats: $2.4M sits at the upper edge of the liquid band, and reviews flag thin soundproofing and bay-window/balcony space that inflates strata area — partly why PSF reads cheap. Net: large, central, MRT-fronting, fairly-to-cheaply priced. MMR 746 / on frontier supports.",
+        "red_flags": [
+          "Reviews cite poor soundproofing between units",
+          "Bay windows / large balconies inflate strata area (PSF flatters the layout)",
+          "$2.4M near the top of the liquid price band; 99yr leasehold"
+        ],
+        "catalysts": [
+          "~15% below URA median PSF — genuine value for a large 3BR",
+          "280m to Braddell MRT plus second-MRT access (Toa Payoh) — strong liquidity",
+          "1,442sqft generous family layout broadens resale buyer pool"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-trevista-500119113",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

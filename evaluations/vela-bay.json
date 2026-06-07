@@ -1,0 +1,67 @@
+{
+  "condo": "Vela Bay",
+  "slug": "vela-bay",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A brand-new, uncompleted (2034 TOP) 894 sqft 3BR at Vela Bay — first launch in the Bayshore precinct — directly beside Bayshore TEL station, asking $2,588 PSF, which is actually ~10% below the $2,863 project median. Exceptional connectivity and a master-planned 10,000-home waterfront catalyst make the location thesis strong, but the ~8-year build-out (heavy SSD/holding risk, no rental income for years), full new-launch pricing, and tight 894 sqft 3BR put it at Neutral for a 5-7yr investment hold.",
+      "rating_rationale": "The location is genuinely first-class: 100m to Bayshore TEL station, the inaugural private launch in a master-planned 10,000-home car-lite waterfront precinct with future Long Island upside, in deep-buyer-pool D15. The ask of $2,588 PSF is ~10% under the $2,863 median, and the project sold 72% on launch day, signalling demand. But for an investment hold the timing is the problem: 2034 TOP means an ~8-year wait with no rental income, full BSD/ABSD capital tied up, and SSD exposure if the precinct re-rates and you want to exit early — the 5-7yr hold clock effectively doesn't start until completion. Pricing carries new-launch bias (no resale data exists), the $2,588 PSF is high in absolute terms for D15 leasehold, and 894 sqft is a compact 3BR. Strong asset, but the long dead-time and rich pricing balance the catalyst — Neutral.",
+      "red_flags": [
+        "2034 TOP — ~8-year build-out with no rental income; capital locked up and SSD/holding-period risk over the investment window",
+        "Full new-launch pricing (has_new_launch_bias true, no resale comps) at a high $2,588 PSF for D15 leasehold",
+        "Compact 894 sqft for a 3BR",
+        "Catalyst (Bayshore precinct/Long Island) is long-dated — payoff is back-loaded and partly speculative"
+      ],
+      "catalysts": [
+        "100m to Bayshore TEL station — best connectivity in the batch; one-line ride to Marina Bay/Orchard",
+        "First mover in master-planned Bayshore precinct (~10,000 homes, car-lite, waterfront amenities, large SAFRA)",
+        "URA Long Island reclamation upside for the East Coast over the long run",
+        "Asking ~10% below project median PSF; 72% sold on launch day signals demand depth"
+      ],
+      "as_of": {
+        "price": 2314000,
+        "psf": 2588.37,
+        "beds": 3,
+        "sqft": 894.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new, uncompleted (2034 TOP) 894 sqft 3BR at Vela Bay — first launch in the Bayshore precinct — directly beside Bayshore TEL station, asking $2,588 PSF, which is actually ~10% below the $2,863 project median. Exceptional connectivity and a master-planned 10,000-home waterfront catalyst make the location thesis strong, but the ~8-year build-out (heavy SSD/holding risk, no rental income for years), full new-launch pricing, and tight 894 sqft 3BR put it at Neutral for a 5-7yr investment hold.",
+        "rating": "Neutral",
+        "rating_rationale": "The location is genuinely first-class: 100m to Bayshore TEL station, the inaugural private launch in a master-planned 10,000-home car-lite waterfront precinct with future Long Island upside, in deep-buyer-pool D15. The ask of $2,588 PSF is ~10% under the $2,863 median, and the project sold 72% on launch day, signalling demand. But for an investment hold the timing is the problem: 2034 TOP means an ~8-year wait with no rental income, full BSD/ABSD capital tied up, and SSD exposure if the precinct re-rates and you want to exit early — the 5-7yr hold clock effectively doesn't start until completion. Pricing carries new-launch bias (no resale data exists), the $2,588 PSF is high in absolute terms for D15 leasehold, and 894 sqft is a compact 3BR. Strong asset, but the long dead-time and rich pricing balance the catalyst — Neutral.",
+        "red_flags": [
+          "2034 TOP — ~8-year build-out with no rental income; capital locked up and SSD/holding-period risk over the investment window",
+          "Full new-launch pricing (has_new_launch_bias true, no resale comps) at a high $2,588 PSF for D15 leasehold",
+          "Compact 894 sqft for a 3BR",
+          "Catalyst (Bayshore precinct/Long Island) is long-dated — payoff is back-loaded and partly speculative"
+        ],
+        "catalysts": [
+          "100m to Bayshore TEL station — best connectivity in the batch; one-line ride to Marina Bay/Orchard",
+          "First mover in master-planned Bayshore precinct (~10,000 homes, car-lite, waterfront amenities, large SAFRA)",
+          "URA Long Island reclamation upside for the East Coast over the long run",
+          "Asking ~10% below project median PSF; 72% sold on launch day signals demand depth"
+        ],
+        "rental_assessment": "Not applicable for years — no rental income until ~2034 completion. On eventual completion, beside-MRT waterfront D15 should rent strongly to professionals/families, but that income is far in the future for a 5-7yr investment frame.",
+        "appreciation_assessment": "Long-dated and back-loaded. Strong structural catalyst (precinct + Long Island + MRT-adjacency) but full launch pricing already prices in much of it; meaningful appreciation likely accrues post-2034, not within a near-term hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "No URA resale data (new launch); CCR/RCR-fringe baseline given long build-out and launch-priced entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vela-bay-500164567",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

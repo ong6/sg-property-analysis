@@ -1,0 +1,65 @@
+{
+  "condo": "Kovan Residences",
+  "slug": "kovan-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "521-unit D19 Hougang leasehold (2011) next to NE13 Kovan MRT, 2BR at $1.77M / $2,000psf. URA shows a strong 7.49% CAGR but asking PSF ($2,000) is well above the $1,872 URA median, and resident reviews flag sub-par build quality requiring constant patching. Priced rich for a 15-year-old leasehold with quality concerns.",
+      "rating_rationale": "The 7.49%/yr URA over 97 transactions is genuinely good and Kovan MRT at 560m supports demand, but you are paying ~7% above URA median ($2,000 vs $1,872psf) for a development reviewers describe as 'full of defects, sub-par quality, constant repairing,' with main-road stacks suffering noise/heat/dirt. The arena score (590) and off-frontier status reflect this rich pricing. The appreciation is attractive but the entry premium and build-quality risk cap it at Neutral.",
+      "red_flags": [
+        "Reviews cite pervasive defects, sub-par build quality, constant repairs",
+        "Asking $2,000psf is ~7% above URA median ($1,872)",
+        "Main-road-facing stacks: noise, heat and dust",
+        "Off-frontier, mid arena score (590) — not a value pick at this ask"
+      ],
+      "catalysts": [
+        "Strong 7.49%/yr URA appreciation track record",
+        "560m to NE13 Kovan MRT, established Hougang amenities",
+        "521 units gives reasonable resale liquidity"
+      ],
+      "as_of": {
+        "price": 1766000,
+        "psf": 2000.0,
+        "beds": 2,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "521-unit D19 Hougang leasehold (2011) next to NE13 Kovan MRT, 2BR at $1.77M / $2,000psf. URA shows a strong 7.49% CAGR but asking PSF ($2,000) is well above the $1,872 URA median, and resident reviews flag sub-par build quality requiring constant patching. Priced rich for a 15-year-old leasehold with quality concerns.",
+        "rating": "Neutral",
+        "rating_rationale": "The 7.49%/yr URA over 97 transactions is genuinely good and Kovan MRT at 560m supports demand, but you are paying ~7% above URA median ($2,000 vs $1,872psf) for a development reviewers describe as 'full of defects, sub-par quality, constant repairing,' with main-road stacks suffering noise/heat/dirt. The arena score (590) and off-frontier status reflect this rich pricing. The appreciation is attractive but the entry premium and build-quality risk cap it at Neutral.",
+        "red_flags": [
+          "Reviews cite pervasive defects, sub-par build quality, constant repairs",
+          "Asking $2,000psf is ~7% above URA median ($1,872)",
+          "Main-road-facing stacks: noise, heat and dust",
+          "Off-frontier, mid arena score (590) — not a value pick at this ask"
+        ],
+        "catalysts": [
+          "Strong 7.49%/yr URA appreciation track record",
+          "560m to NE13 Kovan MRT, established Hougang amenities",
+          "521 units gives reasonable resale liquidity"
+        ],
+        "appreciation_assessment": "7.49%/yr resale CAGR is real and above-baseline, but buying at a premium to median erodes forward upside; net positive but not exceptional.",
+        "rental_assessment": "Kovan is a solid rental catchment near MRT and food; 2BR rents steadily. Yield only ~3% given the $1.77M / $2,000psf entry.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 7.49,
+        "appreciation_rate_source": "URA resale-only CAGR, 97 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-residences-500122793",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

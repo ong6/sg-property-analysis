@@ -1,0 +1,59 @@
+{
+  "condo": "Radix",
+  "slug": "radix",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold D15 3BR (1,528sqft) at $2.0M / $1,309psf, 470m to Kembangan MRT — looks cheap, but Radix is a 21-unit boutique with only 4 URA transactions and 3.2% yield. The headline MMR 807 is an artifact of thin data; illiquidity is the real story.",
+      "rating_rationale": "On paper attractive: freehold, large 1,528sqft, $1,309psf well under the (thin) $1,445 median, 470m to Kembangan EW6, desirable D15. But the development has just 21 units total and only 4 URA transactions — the 7.49%/yr CAGR and MMR 807 / score 807 are statistically meaningless and must be heavily discounted (anti-anchoring). A 21-unit block means shallow exit liquidity: any single forced seller moves the market, and price discovery is poor. Reviews note exclusivity/privacy as a plus but that is an own-stay virtue, not an investment one. Freehold + large size + location give real downside support, so not an Avoid — but thin liquidity and unreliable appreciation data cap it firmly at Neutral.",
+      "red_flags": [
+        "Only 21 units — extremely shallow liquidity, poor price discovery on exit",
+        "Just 4 URA transactions — appreciation rate (7.49%) and MMR 807 unreliable, ignore",
+        "3.2% gross yield is mediocre for the price; boutique blocks lack facilities/scale"
+      ],
+      "catalysts": [
+        "Freehold tenure — no lease decay, long-term hold safety",
+        "470m / 6-min walk to Kembangan MRT in deep-buyer-pool D15",
+        "Large 1,528sqft at $1,309psf — low absolute PSF gives downside cushion"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1308.9,
+        "beds": 3,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D15 3BR (1,528sqft) at $2.0M / $1,309psf, 470m to Kembangan MRT — looks cheap, but Radix is a 21-unit boutique with only 4 URA transactions and 3.2% yield. The headline MMR 807 is an artifact of thin data; illiquidity is the real story.",
+        "rating": "Neutral",
+        "rating_rationale": "On paper attractive: freehold, large 1,528sqft, $1,309psf well under the (thin) $1,445 median, 470m to Kembangan EW6, desirable D15. But the development has just 21 units total and only 4 URA transactions — the 7.49%/yr CAGR and MMR 807 / score 807 are statistically meaningless and must be heavily discounted (anti-anchoring). A 21-unit block means shallow exit liquidity: any single forced seller moves the market, and price discovery is poor. Reviews note exclusivity/privacy as a plus but that is an own-stay virtue, not an investment one. Freehold + large size + location give real downside support, so not an Avoid — but thin liquidity and unreliable appreciation data cap it firmly at Neutral.",
+        "red_flags": [
+          "Only 21 units — extremely shallow liquidity, poor price discovery on exit",
+          "Just 4 URA transactions — appreciation rate (7.49%) and MMR 807 unreliable, ignore",
+          "3.2% gross yield is mediocre for the price; boutique blocks lack facilities/scale"
+        ],
+        "catalysts": [
+          "Freehold tenure — no lease decay, long-term hold safety",
+          "470m / 6-min walk to Kembangan MRT in deep-buyer-pool D15",
+          "Large 1,528sqft at $1,309psf — low absolute PSF gives downside cushion"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-radix-25548777",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

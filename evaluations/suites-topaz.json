@@ -1,0 +1,65 @@
+{
+  "condo": "Suites @ Topaz",
+  "slug": "suites-topaz",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A freehold 1,463 sqft 2BR at a headline-cheap $1,059 psf (39% below the $1,742 median) in a tiny 46-unit Kallang development, 750m from Potong Pasir MRT. The freehold tenure and absolute size are attractive, but only 46 units and 15 URA transactions make this acutely illiquid, the odd 1,463 sqft 2BR likely reflects a strata/layout anomaly, and the 7.5% CAGR rests on a statistically thin sample. Too much exit and data risk for an investment hold.",
+      "rating_rationale": "On paper the PSF discount and freehold tenure look compelling, but the discount is largely an artifact of (a) a 46-unit boutique block with essentially no liquidity and (b) an anomalously large 1,463 sqft '2BR' that distorts the per-sqft comparison versus the 1,742 median (which is dominated by normal-sized units). Only 15 URA transactions means both the median and the 7.5% CAGR are statistically unreliable, and 750m to Potong Pasir is a soft MRT link. For a 5-7 year investment where exit liquidity is critical, a 46-unit/15-txn asset is the textbook illiquidity trap. The freehold and low absolute price don't compensate. Avoid.",
+      "red_flags": [
+        "Only 46 units — boutique block, structurally illiquid with thin amenities",
+        "Just 15 URA transactions — median PSF and 7.5% CAGR both statistically unreliable",
+        "1,463 sqft for a 2BR is anomalous — likely layout/strata quirk inflating the apparent PSF discount",
+        "750m to Potong Pasir MRT is a weak connectivity link versus batch peers"
+      ],
+      "catalysts": [
+        "Freehold tenure removes lease-decay risk",
+        "Low absolute price ($1.55M) for a freehold city-fringe unit",
+        "Well-maintained small estate (4.6/5 resident rating)"
+      ],
+      "as_of": {
+        "price": 1550000,
+        "psf": 1059.47,
+        "beds": 2,
+        "sqft": 1463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,463 sqft 2BR at a headline-cheap $1,059 psf (39% below the $1,742 median) in a tiny 46-unit Kallang development, 750m from Potong Pasir MRT. The freehold tenure and absolute size are attractive, but only 46 units and 15 URA transactions make this acutely illiquid, the odd 1,463 sqft 2BR likely reflects a strata/layout anomaly, and the 7.5% CAGR rests on a statistically thin sample. Too much exit and data risk for an investment hold.",
+        "rating": "Avoid",
+        "rating_rationale": "On paper the PSF discount and freehold tenure look compelling, but the discount is largely an artifact of (a) a 46-unit boutique block with essentially no liquidity and (b) an anomalously large 1,463 sqft '2BR' that distorts the per-sqft comparison versus the 1,742 median (which is dominated by normal-sized units). Only 15 URA transactions means both the median and the 7.5% CAGR are statistically unreliable, and 750m to Potong Pasir is a soft MRT link. For a 5-7 year investment where exit liquidity is critical, a 46-unit/15-txn asset is the textbook illiquidity trap. The freehold and low absolute price don't compensate. Avoid.",
+        "red_flags": [
+          "Only 46 units — boutique block, structurally illiquid with thin amenities",
+          "Just 15 URA transactions — median PSF and 7.5% CAGR both statistically unreliable",
+          "1,463 sqft for a 2BR is anomalous — likely layout/strata quirk inflating the apparent PSF discount",
+          "750m to Potong Pasir MRT is a weak connectivity link versus batch peers"
+        ],
+        "catalysts": [
+          "Freehold tenure removes lease-decay risk",
+          "Low absolute price ($1.55M) for a freehold city-fringe unit",
+          "Well-maintained small estate (4.6/5 resident rating)"
+        ],
+        "rental_assessment": "City-fringe D12 has reasonable tenant demand, but a 46-unit block offers no facilities draw and the unusual large layout narrows the tenant fit. Rental serviceable, not a strength.",
+        "appreciation_assessment": "The 7.5% CAGR is built on only 15 transactions and is not dependable. Freehold provides a floor, but illiquidity will suppress realized appreciation and widen the bid-ask on exit.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "URA 7.5% CAGR disregarded as statistically thin (15 txns); reverting to a conservative freehold city-fringe rate given illiquidity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-topaz-500134972",
+        "review_file": "batch_02.json"
+      }
+    }
+  ]
+}

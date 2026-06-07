@@ -1,0 +1,117 @@
+{
+  "condo": "Parc Clematis",
+  "slug": "parc-clematis",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A recent (2023) D05 mega-development (1,468 units, SingHaiyi) where this 893 sqft 2BR at $1,679 psf is dramatically below the $2,307 project median — but that gap is mostly because the median is inflated by newer/smaller higher-psf stock and new-launch pricing (flagged), so it is not a clean ~27% discount. Strong liquidity and a resale-only 5.2% CAGR; the 1.25km MRT walk and value-realism cap it at a measured Buy.",
+      "rating_rationale": "Genuine strengths: one of the largest, most liquid developments in Singapore (1,468 units, 632 URA txns) in employment-rich D05 near One-North/NUS/Clementi, completed 2023 (fresh, minimal lease decay), top technical score (905). The resale-only CAGR of 5.2% (the rubric's honest figure, stripping the new-launch bias flagged in the data) is a sound RCR-grade number. The $1,679 psf looks far under the $2,307 median, but I'm not treating that as a 27% bargain — the median is skewed by smaller higher-psf and launch-priced units, so this is 'fairly priced for its size,' not a steal. The 1.25km walk to Clementi MRT is a real connectivity limiter for a $1.5M ticket. Net: quality, liquidity and freshness earn a Buy, but a measured one — not Strong Buy.",
+      "red_flags": [
+        "Appreciation flagged new-launch biased; use the 5.2% resale-only figure, not the 6.1% headline",
+        "1.25km walk to Clementi MRT — weak near-station premium for the price",
+        "Apparent discount to $2,307 median is partly a size/launch-mix artefact, not a true bargain"
+      ],
+      "catalysts": [
+        "Massive 1,468-unit, 632-txn liquidity in employment-dense D05 (One-North / NUS / Clementi)",
+        "Recently completed (2023) — full lease, modern facilities, strong own-stay/expat appeal",
+        "Sustained west-region jobs and education demand underpins rental and resale"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1679.73,
+        "beds": 2,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A recent (2023) D05 mega-development (1,468 units, SingHaiyi) where this 893 sqft 2BR at $1,679 psf is dramatically below the $2,307 project median — but that gap is mostly because the median is inflated by newer/smaller higher-psf stock and new-launch pricing (flagged), so it is not a clean ~27% discount. Strong liquidity and a resale-only 5.2% CAGR; the 1.25km MRT walk and value-realism cap it at a measured Buy.",
+        "rating": "Buy",
+        "rating_rationale": "Genuine strengths: one of the largest, most liquid developments in Singapore (1,468 units, 632 URA txns) in employment-rich D05 near One-North/NUS/Clementi, completed 2023 (fresh, minimal lease decay), top technical score (905). The resale-only CAGR of 5.2% (the rubric's honest figure, stripping the new-launch bias flagged in the data) is a sound RCR-grade number. The $1,679 psf looks far under the $2,307 median, but I'm not treating that as a 27% bargain — the median is skewed by smaller higher-psf and launch-priced units, so this is 'fairly priced for its size,' not a steal. The 1.25km walk to Clementi MRT is a real connectivity limiter for a $1.5M ticket. Net: quality, liquidity and freshness earn a Buy, but a measured one — not Strong Buy.",
+        "red_flags": [
+          "Appreciation flagged new-launch biased; use the 5.2% resale-only figure, not the 6.1% headline",
+          "1.25km walk to Clementi MRT — weak near-station premium for the price",
+          "Apparent discount to $2,307 median is partly a size/launch-mix artefact, not a true bargain"
+        ],
+        "catalysts": [
+          "Massive 1,468-unit, 632-txn liquidity in employment-dense D05 (One-North / NUS / Clementi)",
+          "Recently completed (2023) — full lease, modern facilities, strong own-stay/expat appeal",
+          "Sustained west-region jobs and education demand underpins rental and resale"
+        ],
+        "rental_assessment": "Strong, durable tenant demand from NUS, One-North and the western jobs corridor; extensive mega-condo facilities aid leasing, though the MRT walk slightly trims commuter appeal.",
+        "appreciation_assessment": "Use the resale-only ~5.2% CAGR as the honest base — a solid RCR-grade rate; freshness and liquidity support continued steady appreciation rather than outsized gains given the already-elevated entry psf.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.2,
+        "appreciation_rate_source": "URA resale-only figure (5.15%), per rubric guidance to strip the flagged new-launch bias from the 6.1% headline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-clematis-500109485",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Newly-TOP'd (2023) D05 mega-development 3BR, 969sqft at $2.1M / $2,167psf. Huge 632-txn liquid base and One-North/Clementi proximity, but a compact layout and the high PSF on a recently-launched project (resale-only CAGR de-rates to 5.15%) mean limited near-term upside after developer pricing.",
+      "rating_rationale": "Liquidity is exceptional — 1,468 units and 632 URA transactions make this one of the most tradeable assets in the batch. D05 One-North/Clementi tech-hub demand underpins rentals. But: has_new_launch_bias=true, and the resale-only rate de-rates from 6.14% to 5.15%/yr — the headline appreciation is partly developer-pricing inflation. At $2,167psf on a 3-year-old project, much of the launch premium is already in the price, so 5-7yr upside is capped. 969sqft is a tight 3BR (efficient but family-pool-limiting), and 1.25km/15-min to Clementi MRT is a real walkability gap for a mega-project. Developer SingHaiyi has a mixed quality record (Pasir Ris One complaints). Solid, liquid, but fully priced — Neutral.",
+      "red_flags": [
+        "New-launch bias: resale-only CAGR only 5.15%/yr vs 6.14% headline — launch premium already paid",
+        "1.25km / 15-min walk to Clementi MRT — poor transit access for a mega-development",
+        "969sqft is a compact 3BR; SingHaiyi mixed build-quality track record (Pasir Ris One)"
+      ],
+      "catalysts": [
+        "632 URA transactions / 1,468 units — top-tier liquidity and exit certainty",
+        "D05 One-North & Clementi tech/education cluster sustains rental demand",
+        "Newly TOP'd (2023) — modern facilities, full lease runway"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 2167.18,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Newly-TOP'd (2023) D05 mega-development 3BR, 969sqft at $2.1M / $2,167psf. Huge 632-txn liquid base and One-North/Clementi proximity, but a compact layout and the high PSF on a recently-launched project (resale-only CAGR de-rates to 5.15%) mean limited near-term upside after developer pricing.",
+        "rating": "Neutral",
+        "rating_rationale": "Liquidity is exceptional — 1,468 units and 632 URA transactions make this one of the most tradeable assets in the batch. D05 One-North/Clementi tech-hub demand underpins rentals. But: has_new_launch_bias=true, and the resale-only rate de-rates from 6.14% to 5.15%/yr — the headline appreciation is partly developer-pricing inflation. At $2,167psf on a 3-year-old project, much of the launch premium is already in the price, so 5-7yr upside is capped. 969sqft is a tight 3BR (efficient but family-pool-limiting), and 1.25km/15-min to Clementi MRT is a real walkability gap for a mega-project. Developer SingHaiyi has a mixed quality record (Pasir Ris One complaints). Solid, liquid, but fully priced — Neutral.",
+        "red_flags": [
+          "New-launch bias: resale-only CAGR only 5.15%/yr vs 6.14% headline — launch premium already paid",
+          "1.25km / 15-min walk to Clementi MRT — poor transit access for a mega-development",
+          "969sqft is a compact 3BR; SingHaiyi mixed build-quality track record (Pasir Ris One)"
+        ],
+        "catalysts": [
+          "632 URA transactions / 1,468 units — top-tier liquidity and exit certainty",
+          "D05 One-North & Clementi tech/education cluster sustains rental demand",
+          "Newly TOP'd (2023) — modern facilities, full lease runway"
+        ],
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.15,
+        "appreciation_rate_source": "URA resale-only CAGR (strips new-launch developer-pricing inflation)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-clematis-500029072",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

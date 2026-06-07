@@ -1,0 +1,65 @@
+{
+  "condo": "Changi Rise Condo",
+  "slug": "changi-rise-condo",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 22-year-old, large 1,259 sqft 3BR at a low $1,168 PSF and an absolute $1.47M entry — the cheapest unit in this batch. Value is real but the asset is dated, ~960m from MRT in a quiet enclave, and lacks any clear catalyst, so the upside is steady-not-spectacular and exit will rely on price-sensitive HDB upgraders.",
+      "rating_rationale": "Strengths: sub-$1.5M absolute price sits in the deepest buyer band, $1,168 PSF is genuinely cheap for a 1,259 sqft unit, 598-unit development gives decent liquidity, and MMR 1527 / score 652 is solid. Weaknesses: 2004 build (now 22yo, ~77yr lease left) means rising maintenance and a shrinking finance window for future buyers, the 960m/12-min MRT walk is a real friction in car-light D18, and no URA appreciation data is attached so the growth case is unverified. No specific catalyst (no new MRT within reach, no govt zone) to drive outperformance.",
+      "red_flags": [
+        "22-year-old building (~77yr lease) — rising maintenance, narrowing buyer finance window over a 5-7yr hold",
+        "960m / 12-min walk to Upper Changi MRT — weak connectivity for the area",
+        "No URA appreciation / transaction data attached — growth trajectory unverified",
+        "Resident complaints of early-morning gardening/leaf-blower noise"
+      ],
+      "catalysts": [
+        "Sub-$1.5M absolute entry keeps it in the deep HDB-upgrader buyer pool",
+        "Low $1,168 PSF leaves headroom if D18 (Tampines/Pasir Ris) continues to firm",
+        "Large 1,259 sqft layout appeals to families priced out of newer, smaller units"
+      ],
+      "as_of": {
+        "price": 1470000,
+        "psf": 1167.59,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 22-year-old, large 1,259 sqft 3BR at a low $1,168 PSF and an absolute $1.47M entry — the cheapest unit in this batch. Value is real but the asset is dated, ~960m from MRT in a quiet enclave, and lacks any clear catalyst, so the upside is steady-not-spectacular and exit will rely on price-sensitive HDB upgraders.",
+        "rating": "Neutral",
+        "rating_rationale": "Strengths: sub-$1.5M absolute price sits in the deepest buyer band, $1,168 PSF is genuinely cheap for a 1,259 sqft unit, 598-unit development gives decent liquidity, and MMR 1527 / score 652 is solid. Weaknesses: 2004 build (now 22yo, ~77yr lease left) means rising maintenance and a shrinking finance window for future buyers, the 960m/12-min MRT walk is a real friction in car-light D18, and no URA appreciation data is attached so the growth case is unverified. No specific catalyst (no new MRT within reach, no govt zone) to drive outperformance.",
+        "red_flags": [
+          "22-year-old building (~77yr lease) — rising maintenance, narrowing buyer finance window over a 5-7yr hold",
+          "960m / 12-min walk to Upper Changi MRT — weak connectivity for the area",
+          "No URA appreciation / transaction data attached — growth trajectory unverified",
+          "Resident complaints of early-morning gardening/leaf-blower noise"
+        ],
+        "catalysts": [
+          "Sub-$1.5M absolute entry keeps it in the deep HDB-upgrader buyer pool",
+          "Low $1,168 PSF leaves headroom if D18 (Tampines/Pasir Ris) continues to firm",
+          "Large 1,259 sqft layout appeals to families priced out of newer, smaller units"
+        ],
+        "rental_assessment": "Moderate. Large older 3BR rents to families but the tenant pool here is thinner than near-MRT or CBD-adjacent stock; expect ~3% gross yield, unremarkable for investment.",
+        "appreciation_assessment": "Steady, region-baseline-like. D18 has CRL/Tampines tailwinds but this specific project is far from the station and old; expect roughly OCR-baseline appreciation with limited multiple expansion.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "OCR baseline, no project-specific URA data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-rise-condo-500007055",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

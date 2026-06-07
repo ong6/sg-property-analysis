@@ -1,0 +1,115 @@
+{
+  "condo": "Dakota Residences",
+  "slug": "dakota-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A roomy 1,023 sqft 2BR in a well-built D14 development at $1,955 psf, ~6% below the $2,083 URA median, riding a strong 6.8%/yr resale CAGR off 64 transactions and 530m from Dakota MRT (Circle Line). The headline drag is the price band: $2.0M sits at the top of the 2BR liquid range and the property is in the Paya Lebar airbase flight path. Net positive for a 5-7 year hold given the airbase relocation catalyst and Paya Lebar Central upside.",
+      "rating_rationale": "PSF discount to median (1,955 vs 2,083), genuine resale-only appreciation of 6.8%/yr on a decent 64-txn sample, and a Circle Line station 530m away. D14 sits on top of two structural catalysts: Paya Lebar Central commercial hub and the airbase relocation (~2030) that both removes the F-18 noise and unlocks land. Build quality and unit layout review well. Held back from Strong Buy by the $2.0M entry (top of the 2BR pool, thinner exit buyer base) and the current overhead-aircraft noise that a buyer must accept until relocation.",
+      "red_flags": [
+        "Sits directly under Paya Lebar military flight path — F-18s overhead until ~21:30, worse on high floors (resolves only on airbase relocation ~2030)",
+        "$2.0M entry is at the top of the 2BR liquid band — exit buyer pool thinner than sub-$1.8M",
+        "99-yr lease from ~2008, ~81 years remaining (fine now, but financing/decay watch beyond a 7-yr hold)"
+      ],
+      "catalysts": [
+        "Paya Lebar airbase relocation (~2030) removes aircraft noise and frees land for new development",
+        "Paya Lebar Central commercial hub expansion supports both rental demand and resale",
+        "530m to CC8 Dakota MRT and Old Airport Road hawker amenity underpin tenant demand"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1955.03,
+        "beds": 2,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A roomy 1,023 sqft 2BR in a well-built D14 development at $1,955 psf, ~6% below the $2,083 URA median, riding a strong 6.8%/yr resale CAGR off 64 transactions and 530m from Dakota MRT (Circle Line). The headline drag is the price band: $2.0M sits at the top of the 2BR liquid range and the property is in the Paya Lebar airbase flight path. Net positive for a 5-7 year hold given the airbase relocation catalyst and Paya Lebar Central upside.",
+        "rating": "Buy",
+        "rating_rationale": "PSF discount to median (1,955 vs 2,083), genuine resale-only appreciation of 6.8%/yr on a decent 64-txn sample, and a Circle Line station 530m away. D14 sits on top of two structural catalysts: Paya Lebar Central commercial hub and the airbase relocation (~2030) that both removes the F-18 noise and unlocks land. Build quality and unit layout review well. Held back from Strong Buy by the $2.0M entry (top of the 2BR pool, thinner exit buyer base) and the current overhead-aircraft noise that a buyer must accept until relocation.",
+        "red_flags": [
+          "Sits directly under Paya Lebar military flight path — F-18s overhead until ~21:30, worse on high floors (resolves only on airbase relocation ~2030)",
+          "$2.0M entry is at the top of the 2BR liquid band — exit buyer pool thinner than sub-$1.8M",
+          "99-yr lease from ~2008, ~81 years remaining (fine now, but financing/decay watch beyond a 7-yr hold)"
+        ],
+        "catalysts": [
+          "Paya Lebar airbase relocation (~2030) removes aircraft noise and frees land for new development",
+          "Paya Lebar Central commercial hub expansion supports both rental demand and resale",
+          "530m to CC8 Dakota MRT and Old Airport Road hawker amenity underpin tenant demand"
+        ],
+        "rental_assessment": "Strong tenant catchment — Circle Line access, Old Airport Road food, proximity to CBD and Paya Lebar offices. 2BR is the widest tenant pool. Aircraft noise mildly deters some tenants but rental demand here is consistently deep.",
+        "appreciation_assessment": "6.8%/yr resale-only CAGR on 64 transactions is well above the RCR ~5.8% baseline and credible. PSF below district median leaves room. Airbase relocation is a multi-year structural tailwind.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only CAGR (6.8%) discounted modestly for top-of-band pricing and airbase-noise overhang until relocation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-dakota-residences-500157691",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "D14 Dakota 3BR (1,292sqft) at $2.95M / $2,283psf — ~10% above URA median ($2,083) and pushed into the thin >$2.5M buyer pool. Good location (530m to Dakota MRT) and strong 6.8%/yr CAGR, but the price is both above-market and above the liquid band, capping the investment case.",
+      "rating_rationale": "Asking $2,283psf is ~9.6% over the $2,083 URA median — clearly priced above recent transactions. At $2.95M it sits well above the $1.8-2.5M sweet spot, so the buyer pool thins materially on exit. The fundamentals are otherwise good: 530m to Dakota CC8, Old Airport Rd hawker, 6.8%/yr CAGR on 64 txns, central D14 with Paya Lebar catalysts. But MMR 469 / score 469 (below market-typical 500) reflects the price/size penalty — the algo and I agree the entry is rich. A buyer who negotiated toward the ~$2,083 median (~$2.69M) would have a real Buy; at $2.95M asking it's a Neutral that leans cautious.",
+      "red_flags": [
+        "~10% above URA median PSF ($2,283 vs $2,083) — overpriced ask",
+        "$2.95M sits above the liquid band — thinner exit buyer pool",
+        "MMR 469 / score below market-typical 500"
+      ],
+      "catalysts": [
+        "530m to Dakota MRT (CC8) and Old Airport Road hawker — strong location",
+        "6.8%/yr URA CAGR; central D14 with Paya Lebar Central transformation nearby",
+        "1,292sqft genuine family-sized 3BR"
+      ],
+      "as_of": {
+        "price": 2950000,
+        "psf": 2283.28,
+        "beds": 3,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "D14 Dakota 3BR (1,292sqft) at $2.95M / $2,283psf — ~10% above URA median ($2,083) and pushed into the thin >$2.5M buyer pool. Good location (530m to Dakota MRT) and strong 6.8%/yr CAGR, but the price is both above-market and above the liquid band, capping the investment case.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2,283psf is ~9.6% over the $2,083 URA median — clearly priced above recent transactions. At $2.95M it sits well above the $1.8-2.5M sweet spot, so the buyer pool thins materially on exit. The fundamentals are otherwise good: 530m to Dakota CC8, Old Airport Rd hawker, 6.8%/yr CAGR on 64 txns, central D14 with Paya Lebar catalysts. But MMR 469 / score 469 (below market-typical 500) reflects the price/size penalty — the algo and I agree the entry is rich. A buyer who negotiated toward the ~$2,083 median (~$2.69M) would have a real Buy; at $2.95M asking it's a Neutral that leans cautious.",
+        "red_flags": [
+          "~10% above URA median PSF ($2,283 vs $2,083) — overpriced ask",
+          "$2.95M sits above the liquid band — thinner exit buyer pool",
+          "MMR 469 / score below market-typical 500"
+        ],
+        "catalysts": [
+          "530m to Dakota MRT (CC8) and Old Airport Road hawker — strong location",
+          "6.8%/yr URA CAGR; central D14 with Paya Lebar Central transformation nearby",
+          "1,292sqft genuine family-sized 3BR"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-dakota-residences-500118328",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

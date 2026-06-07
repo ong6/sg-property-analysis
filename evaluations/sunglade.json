@@ -1,0 +1,117 @@
+{
+  "condo": "Sunglade",
+  "slug": "sunglade",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A well-built CapitaLand 1,044 sqft 2BR at $1,724 psf, essentially at the $1,705 median (no PSF discount), 430m from Serangoon MRT (NEL/CCL interchange). Strong 7.4%/yr resale CAGR on 82 txns and a quality, well-maintained estate, but $1.8M at full median PSF leaves little entry cushion, and the score_1000 of 611 is the weakest in the batch. A fair-priced quality asset rather than a value buy.",
+      "rating_rationale": "Genuinely good fundamentals — CapitaLand build quality (marble/granite finishes, well-kept after 20+ years), 430m to the Serangoon NEL/Circle Line interchange (NEX mall), and 7.4%/yr resale CAGR. But the listing is priced AT the URA median ($1,724 vs $1,705), so there is no value gap to capture, and at $1.8M the entry is high for a 2003 leasehold 2BR. The technical score (611, lowest in batch) flags that the price already reflects the quality. Solid hold but not asymmetric — the upside is paid for. Neutral.",
+      "red_flags": [
+        "Priced at the URA median (no PSF discount) — buying at fair value, not a discount",
+        "$1.8M is high for a 2003 99-yr-leasehold 2BR; lease from 2000, ~74 years left",
+        "Lowest technical score_1000 in the batch (611), signalling limited margin of safety"
+      ],
+      "catalysts": [
+        "430m to Serangoon NEL/Circle Line interchange and NEX mall — prime connectivity",
+        "CapitaLand build quality and well-run MCST support resale resilience",
+        "Established Serangoon estate with steady upgrader and tenant demand"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1724.14,
+        "beds": 2,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A well-built CapitaLand 1,044 sqft 2BR at $1,724 psf, essentially at the $1,705 median (no PSF discount), 430m from Serangoon MRT (NEL/CCL interchange). Strong 7.4%/yr resale CAGR on 82 txns and a quality, well-maintained estate, but $1.8M at full median PSF leaves little entry cushion, and the score_1000 of 611 is the weakest in the batch. A fair-priced quality asset rather than a value buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely good fundamentals — CapitaLand build quality (marble/granite finishes, well-kept after 20+ years), 430m to the Serangoon NEL/Circle Line interchange (NEX mall), and 7.4%/yr resale CAGR. But the listing is priced AT the URA median ($1,724 vs $1,705), so there is no value gap to capture, and at $1.8M the entry is high for a 2003 leasehold 2BR. The technical score (611, lowest in batch) flags that the price already reflects the quality. Solid hold but not asymmetric — the upside is paid for. Neutral.",
+        "red_flags": [
+          "Priced at the URA median (no PSF discount) — buying at fair value, not a discount",
+          "$1.8M is high for a 2003 99-yr-leasehold 2BR; lease from 2000, ~74 years left",
+          "Lowest technical score_1000 in the batch (611), signalling limited margin of safety"
+        ],
+        "catalysts": [
+          "430m to Serangoon NEL/Circle Line interchange and NEX mall — prime connectivity",
+          "CapitaLand build quality and well-run MCST support resale resilience",
+          "Established Serangoon estate with steady upgrader and tenant demand"
+        ],
+        "rental_assessment": "Serangoon interchange + NEX retail underpin reliable rental demand; 1,044 sqft 2BR suits couples and small families. Yield compressed by the high $1.8M entry.",
+        "appreciation_assessment": "7.4%/yr historical CAGR is strong, but with the listing already at median PSF much of the re-rating is realized. I would underwrite mid-single-digit forward appreciation, in line with RCR/established-D19 norms.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA CAGR 7.4% discounted to mid-single digits because the unit is already priced at median PSF (re-rating largely realized)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sunglade-500029122",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "CapitaLand-built, well-maintained 2003 condo a genuine 5-min/430m walk to Serangoon MRT and NEX mall, priced exactly at the URA median (PSF 1705 vs 1705) at a $2M quantum. Solid location and 7.4%/yr resale CAGR, but at-median pricing, a 23-year age, and only an off-frontier technical read make it a fairly-priced Neutral rather than a value Buy.",
+      "rating_rationale": "Location is the strength: 430m to Serangoon MRT (NEL interchange) and NEX, with reliable CapitaLand build and good upkeep reviews. 7.4%/yr resale CAGR on 82 txns is healthy. But there is no value edge here — PSF 1705 is dead-on the URA median, so you pay full freight, and at 23 years old (2003) the building is mid-life with worn exterior noted in reviews. $2M quantum is fine for liquidity but the unit is off the efficiency frontier (off_frontier, MMR 1520). Good home-quality asset, but as an investment it's priced to market with no discount and limited room to outrun the district.",
+      "red_flags": [
+        "PSF at the URA median — no value discount on entry",
+        "2003 build (23 years) — mid-life maintenance, worn exterior noted in reviews",
+        "Off efficiency frontier; lower technical score (597/1000) vs batch peers"
+      ],
+      "catalysts": [
+        "430m to Serangoon MRT (NEL) and NEX mall — strong, established connectivity",
+        "Reliable CapitaLand construction and consistent maintenance",
+        "Mature Serangoon catchment with deep family/upgrader demand"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1705.03,
+        "beds": 3,
+        "sqft": 1173.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "CapitaLand-built, well-maintained 2003 condo a genuine 5-min/430m walk to Serangoon MRT and NEX mall, priced exactly at the URA median (PSF 1705 vs 1705) at a $2M quantum. Solid location and 7.4%/yr resale CAGR, but at-median pricing, a 23-year age, and only an off-frontier technical read make it a fairly-priced Neutral rather than a value Buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Location is the strength: 430m to Serangoon MRT (NEL interchange) and NEX, with reliable CapitaLand build and good upkeep reviews. 7.4%/yr resale CAGR on 82 txns is healthy. But there is no value edge here — PSF 1705 is dead-on the URA median, so you pay full freight, and at 23 years old (2003) the building is mid-life with worn exterior noted in reviews. $2M quantum is fine for liquidity but the unit is off the efficiency frontier (off_frontier, MMR 1520). Good home-quality asset, but as an investment it's priced to market with no discount and limited room to outrun the district.",
+        "red_flags": [
+          "PSF at the URA median — no value discount on entry",
+          "2003 build (23 years) — mid-life maintenance, worn exterior noted in reviews",
+          "Off efficiency frontier; lower technical score (597/1000) vs batch peers"
+        ],
+        "catalysts": [
+          "430m to Serangoon MRT (NEL) and NEX mall — strong, established connectivity",
+          "Reliable CapitaLand construction and consistent maintenance",
+          "Mature Serangoon catchment with deep family/upgrader demand"
+        ],
+        "rental_assessment": "Doorstep MRT and NEX make for steady tenant demand; ~3.2% gross yield realistic but the at-median entry price limits cash-flow upside.",
+        "appreciation_assessment": "7.4%/yr resale CAGR is solid, but full-price entry at the median leaves the unit reliant on broad district drift rather than any project-specific re-rating.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sunglade-25546661",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Amber Skye",
+  "slug": "amber-skye",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Freehold, well-built 2017 D15 luxury condo with TE25 Tanjong Katong MRT literally at the doorstep (80m) and a standout 10.3%/yr URA resale CAGR. This 3BR at PSF 2171 is a striking ~10% discount to the project median of 2411; the offsets are a high $2.64M quantum, a small 109-unit boutique base, and a thin 32-txn sample. A high-confidence Buy on location and value.",
+      "rating_rationale": "The location is exceptional: 80m to TE25 (Thomson-East Coast Line direct to CBD/Marina Bay), freehold, established East Coast D15 lifestyle, completed 2017 with positive build-quality reviews. The 10.3%/yr resale CAGR is the highest non-Punggol figure in the batch, and PSF 2171 vs URA median 2411 is a clear ~10% discount — buying below where the project transacts. Tenure (FH) and doorstep MRT give deep long-run liquidity despite the $2.64M quantum. Risks are real but secondary: only 109 units (boutique, thinner same-project comps) and just 32 URA txns lower data confidence, and $2.64M is above the deepest buyer band. On balance the location/tenure/discount stack outweighs them.",
+      "red_flags": [
+        "Small 109-unit boutique development — fewer comparable resale transactions",
+        "Thin 32-txn URA sample lowers appreciation-rate confidence",
+        "$2.64M quantum sits above the deepest buyer band"
+      ],
+      "catalysts": [
+        "TE25 Tanjong Katong MRT 80m away — full Thomson-East Coast Line connectivity",
+        "Freehold tenure in a perennially-demanded D15 East Coast location",
+        "PSF ~10% below project median offers value entry; 10.3%/yr resale CAGR"
+      ],
+      "as_of": {
+        "price": 2640000,
+        "psf": 2171.05,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold, well-built 2017 D15 luxury condo with TE25 Tanjong Katong MRT literally at the doorstep (80m) and a standout 10.3%/yr URA resale CAGR. This 3BR at PSF 2171 is a striking ~10% discount to the project median of 2411; the offsets are a high $2.64M quantum, a small 109-unit boutique base, and a thin 32-txn sample. A high-confidence Buy on location and value.",
+        "rating": "Buy",
+        "rating_rationale": "The location is exceptional: 80m to TE25 (Thomson-East Coast Line direct to CBD/Marina Bay), freehold, established East Coast D15 lifestyle, completed 2017 with positive build-quality reviews. The 10.3%/yr resale CAGR is the highest non-Punggol figure in the batch, and PSF 2171 vs URA median 2411 is a clear ~10% discount — buying below where the project transacts. Tenure (FH) and doorstep MRT give deep long-run liquidity despite the $2.64M quantum. Risks are real but secondary: only 109 units (boutique, thinner same-project comps) and just 32 URA txns lower data confidence, and $2.64M is above the deepest buyer band. On balance the location/tenure/discount stack outweighs them.",
+        "red_flags": [
+          "Small 109-unit boutique development — fewer comparable resale transactions",
+          "Thin 32-txn URA sample lowers appreciation-rate confidence",
+          "$2.64M quantum sits above the deepest buyer band"
+        ],
+        "catalysts": [
+          "TE25 Tanjong Katong MRT 80m away — full Thomson-East Coast Line connectivity",
+          "Freehold tenure in a perennially-demanded D15 East Coast location",
+          "PSF ~10% below project median offers value entry; 10.3%/yr resale CAGR"
+        ],
+        "rental_assessment": "Doorstep TEL MRT, East Coast lifestyle and expat appeal drive strong rental demand; gross yield ~3% given the premium quantum but tenant pool is deep and reliable.",
+        "appreciation_assessment": "Freehold + doorstep TEL + below-median entry underpins continued outperformance; 10.3%/yr is partly a thin-sample artifact, so treat ~6-7%/yr as the durable base case rather than the headline.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "Headline 10.3%/yr rests on only 32 txns; discounted to ~6.5%/yr as a durable FH-D15 resale base case"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-skye-24796156",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

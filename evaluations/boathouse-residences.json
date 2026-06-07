@@ -1,0 +1,59 @@
+{
+  "condo": "Boathouse Residences",
+  "slug": "boathouse-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Lowest-quantum entry in the batch ($1.0M) and below-median PSF ($1366 vs $1411), but the location is the dealbreaker for an investment hold: 1.2km from only Kangkar LRT, no MRT walking distance. The 5.41% CAGR is the weakest in the batch, confirming muted demand. Resort-style landscaping is a livability plus, not an investment thesis.",
+      "rating_rationale": "Affordable $1.0M quantum and a sub-median PSF make it look cheap, but cheapness here reflects a connectivity penalty rather than value. The nearest rail is Kangkar LRT 1.2km away — no MRT within walking distance, which structurally suppresses both tenant demand and the resale buyer pool. At 5.41%, its resale CAGR is the lowest of all ten condos despite 139 transactions, signalling genuinely softer appreciation rather than a data artefact. Build quality and quiet, well-landscaped environment are real but are own-stay merits. For a 5-7yr investment hold the exit liquidity and growth case are simply weaker than the better-connected peers.",
+      "red_flags": [
+        "No MRT within walking distance — only Kangkar LRT 1.2km away; suppresses tenant and resale demand",
+        "5.41% CAGR is the lowest in the batch despite ample transactions — structurally weaker appreciation"
+      ],
+      "catalysts": [
+        "Low $1.0M entry quantum widens the affordability buyer pool",
+        "Broad Sengkang/Hougang area growth and CRL (Hougang interchange) as a distant area tailwind"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1366.12,
+        "beds": 2,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Lowest-quantum entry in the batch ($1.0M) and below-median PSF ($1366 vs $1411), but the location is the dealbreaker for an investment hold: 1.2km from only Kangkar LRT, no MRT walking distance. The 5.41% CAGR is the weakest in the batch, confirming muted demand. Resort-style landscaping is a livability plus, not an investment thesis.",
+        "rating": "Neutral",
+        "rating_rationale": "Affordable $1.0M quantum and a sub-median PSF make it look cheap, but cheapness here reflects a connectivity penalty rather than value. The nearest rail is Kangkar LRT 1.2km away — no MRT within walking distance, which structurally suppresses both tenant demand and the resale buyer pool. At 5.41%, its resale CAGR is the lowest of all ten condos despite 139 transactions, signalling genuinely softer appreciation rather than a data artefact. Build quality and quiet, well-landscaped environment are real but are own-stay merits. For a 5-7yr investment hold the exit liquidity and growth case are simply weaker than the better-connected peers.",
+        "red_flags": [
+          "No MRT within walking distance — only Kangkar LRT 1.2km away; suppresses tenant and resale demand",
+          "5.41% CAGR is the lowest in the batch despite ample transactions — structurally weaker appreciation"
+        ],
+        "catalysts": [
+          "Low $1.0M entry quantum widens the affordability buyer pool",
+          "Broad Sengkang/Hougang area growth and CRL (Hougang interchange) as a distant area tailwind"
+        ],
+        "rental_assessment": "Below-average for investment: poor rail access deters transit-reliant tenants; demand skews to car owners and the quiet resort setting, a niche segment.",
+        "appreciation_assessment": "5.41% CAGR (139 txns) is the weakest in the batch and reliable — connectivity gap caps forward growth; expect low-mid single digits.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale CAGR 5.41% (139 txns), trimmed for forward connectivity drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-boathouse-residences-60243553",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Riverfront Residences",
+  "slug": "riverfront-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new (2024) 1,451-unit Oxley mega-development at $1,567 psf — ~11% below the URA median ($1,752) — but the resale-only CAGR is a modest 4.07% and the sheer scale plus a 1.4km walk to Hougang MRT cap the upside. The size that aids liquidity also creates a heavy internal-supply overhang for resale and rental for years.",
+      "rating_rationale": "861sqft 2BR at $1.349M / $1,567 psf is ~11% below median PSF ($1,752) with a deep 573-transaction dataset, but resale-only appreciation is just 4.07% (OCR-typical) and momentum is muted. The 1,451-unit scale means hundreds of competing units will hit resale/rental simultaneously, pressuring exit pricing. 1.4km to Hougang NE14 is a real walkability weakness vs MRT-fronting peers. Good facilities and below-median entry keep it off Avoid, but mega-supply overhang plus average appreciation make it a Neutral hold. MMR 1543 / score 764.",
+      "red_flags": [
+        "1,451 units — massive internal competing supply on resale and rental",
+        "1.4km / 17min walk to Hougang MRT (no direct station)",
+        "Resale-only CAGR only ~4.07% (OCR-average, muted momentum)",
+        "Recent 2024 TOP — many investor units will list together"
+      ],
+      "catalysts": [
+        "~11% below district median PSF (value entry)",
+        "Riverside setting with 100+ facilities (rental/lifestyle draw)",
+        "573 transactions = high data confidence and liquidity"
+      ],
+      "as_of": {
+        "price": 1349000,
+        "psf": 1566.78,
+        "beds": 2,
+        "sqft": 861.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new (2024) 1,451-unit Oxley mega-development at $1,567 psf — ~11% below the URA median ($1,752) — but the resale-only CAGR is a modest 4.07% and the sheer scale plus a 1.4km walk to Hougang MRT cap the upside. The size that aids liquidity also creates a heavy internal-supply overhang for resale and rental for years.",
+        "rating": "Neutral",
+        "rating_rationale": "861sqft 2BR at $1.349M / $1,567 psf is ~11% below median PSF ($1,752) with a deep 573-transaction dataset, but resale-only appreciation is just 4.07% (OCR-typical) and momentum is muted. The 1,451-unit scale means hundreds of competing units will hit resale/rental simultaneously, pressuring exit pricing. 1.4km to Hougang NE14 is a real walkability weakness vs MRT-fronting peers. Good facilities and below-median entry keep it off Avoid, but mega-supply overhang plus average appreciation make it a Neutral hold. MMR 1543 / score 764.",
+        "red_flags": [
+          "1,451 units — massive internal competing supply on resale and rental",
+          "1.4km / 17min walk to Hougang MRT (no direct station)",
+          "Resale-only CAGR only ~4.07% (OCR-average, muted momentum)",
+          "Recent 2024 TOP — many investor units will list together"
+        ],
+        "catalysts": [
+          "~11% below district median PSF (value entry)",
+          "Riverside setting with 100+ facilities (rental/lifestyle draw)",
+          "573 transactions = high data confidence and liquidity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riverfront-residences-500150240",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

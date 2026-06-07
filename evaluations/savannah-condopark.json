@@ -1,0 +1,113 @@
+{
+  "condo": "Savannah Condopark",
+  "slug": "savannah-condopark",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "D18 Simei 3BR (1,206sqft) at $1.45M / $1,202psf — priced exactly at URA median and the cheapest absolute entry in the batch. Strong 7.32%/yr CAGR on 131 txns and big CDL-built space, but 1.74km (21-min walk) from MRT is a serious liquidity/rental handicap.",
+      "rating_rationale": "The price is honest ($1,202psf = URA median exactly) and the $1.45M entry is in an accessible band with a deep HDB-upgrader pool in D18. 7.32%/yr CAGR on 131 transactions is reliable and well above the OCR ~3.7% baseline. CDL build, well-maintained, spacious 1,206sqft. The hard problem is transit: 1.74km / 21-min walk to Upper Changi DTL (shuttle bus only) materially caps both rental yield and resale appeal versus MRT-fronting peers. Built 2005, so ~20yr old with ~79yrs lease left. Decent value play, but the MRT distance keeps it from a Buy — Neutral.",
+      "red_flags": [
+        "1.74km / 21-min walk to MRT (shuttle-dependent) — weak transit, caps rental & resale",
+        "~20-year-old (2005) development, 99yr lease ~79yrs remaining",
+        "Older OCR project — appreciation rate may not sustain"
+      ],
+      "catalysts": [
+        "Cheapest entry in batch ($1.45M) at exactly URA median PSF — fair value",
+        "7.32%/yr CAGR on 131 txns — strong reliable appreciation for OCR",
+        "Spacious 1,206sqft CDL-built family unit; deep D18 HDB-upgrader demand"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1202.32,
+        "beds": 3,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "D18 Simei 3BR (1,206sqft) at $1.45M / $1,202psf — priced exactly at URA median and the cheapest absolute entry in the batch. Strong 7.32%/yr CAGR on 131 txns and big CDL-built space, but 1.74km (21-min walk) from MRT is a serious liquidity/rental handicap.",
+        "rating": "Neutral",
+        "rating_rationale": "The price is honest ($1,202psf = URA median exactly) and the $1.45M entry is in an accessible band with a deep HDB-upgrader pool in D18. 7.32%/yr CAGR on 131 transactions is reliable and well above the OCR ~3.7% baseline. CDL build, well-maintained, spacious 1,206sqft. The hard problem is transit: 1.74km / 21-min walk to Upper Changi DTL (shuttle bus only) materially caps both rental yield and resale appeal versus MRT-fronting peers. Built 2005, so ~20yr old with ~79yrs lease left. Decent value play, but the MRT distance keeps it from a Buy — Neutral.",
+        "red_flags": [
+          "1.74km / 21-min walk to MRT (shuttle-dependent) — weak transit, caps rental & resale",
+          "~20-year-old (2005) development, 99yr lease ~79yrs remaining",
+          "Older OCR project — appreciation rate may not sustain"
+        ],
+        "catalysts": [
+          "Cheapest entry in batch ($1.45M) at exactly URA median PSF — fair value",
+          "7.32%/yr CAGR on 131 txns — strong reliable appreciation for OCR",
+          "Spacious 1,206sqft CDL-built family unit; deep D18 HDB-upgrader demand"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-savannah-condopark-500071724",
+        "review_file": "batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Well-built, well-managed CDL development (648 units) at a low $1124 PSF, below median, with a strong 7.36% CAGR over 131 transactions. The fatal flaw for an investment hold is connectivity: 1.74km from Upper Changi MRT (shuttle-bus dependent), which caps tenant demand and resale to a car-owning niche. A solid home, a middling investment.",
+      "rating_rationale": "Genuine strengths — CDL build quality, proactive management, deep 648-unit liquidity, below-median PSF ($1124 vs $1206), and 7.36% CAGR over a healthy 131 transactions. But location is the binding constraint: at 1.74km/21min to the nearest MRT it relies on a shuttle bus, which structurally limits the tenant pool (transit-dependent renters skip it) and resale appeal. At 21 years old (~78yr lease remaining) lease decay is starting to matter. The appreciation rate likely reflects a low base off the 2005 vintage rather than a durable forward catalyst.",
+      "red_flags": [
+        "1.74km from MRT (21min walk), shuttle-bus dependent — caps tenant and resale demand",
+        "21-year-old leasehold (~78yr remaining); lease decay becoming material"
+      ],
+      "catalysts": [
+        "CDL build quality and strong management reputation supports value retention",
+        "Below-median PSF with deep 648-unit liquidity",
+        "Tampines/Pasir Ris regional growth (CRL, Tampines Regional Centre) as a broad area tailwind"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1124.14,
+        "beds": 2,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Well-built, well-managed CDL development (648 units) at a low $1124 PSF, below median, with a strong 7.36% CAGR over 131 transactions. The fatal flaw for an investment hold is connectivity: 1.74km from Upper Changi MRT (shuttle-bus dependent), which caps tenant demand and resale to a car-owning niche. A solid home, a middling investment.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine strengths — CDL build quality, proactive management, deep 648-unit liquidity, below-median PSF ($1124 vs $1206), and 7.36% CAGR over a healthy 131 transactions. But location is the binding constraint: at 1.74km/21min to the nearest MRT it relies on a shuttle bus, which structurally limits the tenant pool (transit-dependent renters skip it) and resale appeal. At 21 years old (~78yr lease remaining) lease decay is starting to matter. The appreciation rate likely reflects a low base off the 2005 vintage rather than a durable forward catalyst.",
+        "red_flags": [
+          "1.74km from MRT (21min walk), shuttle-bus dependent — caps tenant and resale demand",
+          "21-year-old leasehold (~78yr remaining); lease decay becoming material"
+        ],
+        "catalysts": [
+          "CDL build quality and strong management reputation supports value retention",
+          "Below-median PSF with deep 648-unit liquidity",
+          "Tampines/Pasir Ris regional growth (CRL, Tampines Regional Centre) as a broad area tailwind"
+        ],
+        "rental_assessment": "Below-average for an investment 2BR: poor MRT access deters the transit-reliant tenant majority; demand skews to car-owning families, a smaller pool. Spacious layout is a partial offset.",
+        "appreciation_assessment": "7.32% CAGR is reliable (131 txns) but likely off a low 2005-vintage base; forward appreciation constrained by lease decay and weak connectivity.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA CAGR 7.32% discounted for ageing lease and poor MRT connectivity forward"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-savannah-condopark-25592808",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

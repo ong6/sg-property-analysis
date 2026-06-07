@@ -1,0 +1,61 @@
+{
+  "condo": "The Rochester Residences",
+  "slug": "the-rochester-residences",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A D05 unit at One-North/Buona Vista, 510m from the EW21 Buona Vista MRT interchange, listed at $1,605 psf — ~10% below the $1,792 URA median. Anchored to the One-North research/tech employment hub with steady 5.3% resale CAGR. Smaller 334-unit development is the main liquidity caveat, but location quality earns a Buy.",
+      "rating_rationale": "Location is the thesis: 510m to Buona Vista MRT (EW/CC interchange) directly serving the One-North research, biomedical and tech employment cluster plus NUS/Star Vista — a deep, durable tenant catchment that supports rent and resale. $1,605 psf is ~10% under the $1,792 median, a fair-to-good entry for D05 RCR. 5.3% resale CAGR (114 txns) is reliable. Caveats: only 334 units (smaller, thinner resale than the mega-developments here) and UEL is a mid-tier developer; reviews note in-block renovation noise and modest facilities. On balance the employment-anchored location and median discount outweigh these.",
+      "red_flags": [
+        "Smaller 334-unit development — shallower resale liquidity than 600+ unit peers",
+        "Mid-tier developer (UEL); reviews cite frequent renovation noise and basic facilities",
+        "5.3% CAGR is solid but the lowest growth rate among the D19 value plays here"
+      ],
+      "catalysts": [
+        "510m to Buona Vista MRT interchange feeding One-North jobs hub + NUS — durable tenant demand",
+        "One-North continued expansion (biomedical/tech/Fusionopolis) deepens the catchment",
+        "~10% discount to URA median provides entry margin"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1605.5,
+        "beds": 2,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A D05 unit at One-North/Buona Vista, 510m from the EW21 Buona Vista MRT interchange, listed at $1,605 psf — ~10% below the $1,792 URA median. Anchored to the One-North research/tech employment hub with steady 5.3% resale CAGR. Smaller 334-unit development is the main liquidity caveat, but location quality earns a Buy.",
+        "rating": "Buy",
+        "rating_rationale": "Location is the thesis: 510m to Buona Vista MRT (EW/CC interchange) directly serving the One-North research, biomedical and tech employment cluster plus NUS/Star Vista — a deep, durable tenant catchment that supports rent and resale. $1,605 psf is ~10% under the $1,792 median, a fair-to-good entry for D05 RCR. 5.3% resale CAGR (114 txns) is reliable. Caveats: only 334 units (smaller, thinner resale than the mega-developments here) and UEL is a mid-tier developer; reviews note in-block renovation noise and modest facilities. On balance the employment-anchored location and median discount outweigh these.",
+        "red_flags": [
+          "Smaller 334-unit development — shallower resale liquidity than 600+ unit peers",
+          "Mid-tier developer (UEL); reviews cite frequent renovation noise and basic facilities",
+          "5.3% CAGR is solid but the lowest growth rate among the D19 value plays here"
+        ],
+        "catalysts": [
+          "510m to Buona Vista MRT interchange feeding One-North jobs hub + NUS — durable tenant demand",
+          "One-North continued expansion (biomedical/tech/Fusionopolis) deepens the catchment",
+          "~10% discount to URA median provides entry margin"
+        ],
+        "rental_assessment": "Strong and resilient — One-North professionals, NUS/INSEAD affiliates and biomedical staff give one of the deepest rental catchments in the batch; compact 872 sqft 2BR rents efficiently.",
+        "appreciation_assessment": "5.3% resale CAGR is dependable and the One-North employment story underpins steady mid-single-digit appreciation; the small unit count limits explosive upside but also volatility.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rochester-residences-23216476",
+        "review_file": "batch_01.json"
+      }
+    }
+  ]
+}

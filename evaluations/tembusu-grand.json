@@ -1,0 +1,121 @@
+{
+  "condo": "Tembusu Grand",
+  "slug": "tembusu-grand",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A brand-new (2026 TOP) CDL/MCL D15 project 670m from the new TEL Tanjong Katong station, with the listing's $2,549 psf sitting ~7% below the $2,746 project median — a sub-median entry on a quality launch. But the 11.3% CAGR carries explicit new-launch bias, the compact 667 sqft unit costs $1.7M at a steep absolute psf, and most price-in already happened. Honest Neutral.",
+      "rating_rationale": "Quality is not the issue — CDL/MCL are top-tier developers, 638 units, prime D15 Katong, 670m to the new Thomson-East Coast Line Tanjong Katong station, and at $2,549 psf the listing is meaningfully under the $2,746 median (motivated/early sub-sale). The investment caution is value: the flagged has_new_launch_bias means the 11.3% figure reflects developer-led launch-to-now pricing, not a repeatable resale trend (rubric warns against importing this). At $2,549 psf for a small 667 sqft 2BR, much of the East Coast/TEL upside is already in the price; entry is high-absolute ($1.7M) and yield is thin at this psf. Good building, fully-priced entry.",
+      "red_flags": [
+        "Appreciation flagged as new-launch biased (11.3%) — not a resale-validated trend; do not extrapolate",
+        "Very high $2,549 psf on a compact 667 sqft unit; thin gross yield at this entry",
+        "Most of the TEL/Katong premium appears already priced in; limited margin of safety"
+      ],
+      "catalysts": [
+        "670m to new TEL Tanjong Katong station (TE25) — fresh connectivity to CBD/Marina Bay",
+        "Prime D15 Katong lifestyle address with strong own-stay/expat demand",
+        "Listing's ~7% discount to project median offers a modest entry cushion"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 2548.73,
+        "beds": 2,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new (2026 TOP) CDL/MCL D15 project 670m from the new TEL Tanjong Katong station, with the listing's $2,549 psf sitting ~7% below the $2,746 project median — a sub-median entry on a quality launch. But the 11.3% CAGR carries explicit new-launch bias, the compact 667 sqft unit costs $1.7M at a steep absolute psf, and most price-in already happened. Honest Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Quality is not the issue — CDL/MCL are top-tier developers, 638 units, prime D15 Katong, 670m to the new Thomson-East Coast Line Tanjong Katong station, and at $2,549 psf the listing is meaningfully under the $2,746 median (motivated/early sub-sale). The investment caution is value: the flagged has_new_launch_bias means the 11.3% figure reflects developer-led launch-to-now pricing, not a repeatable resale trend (rubric warns against importing this). At $2,549 psf for a small 667 sqft 2BR, much of the East Coast/TEL upside is already in the price; entry is high-absolute ($1.7M) and yield is thin at this psf. Good building, fully-priced entry.",
+        "red_flags": [
+          "Appreciation flagged as new-launch biased (11.3%) — not a resale-validated trend; do not extrapolate",
+          "Very high $2,549 psf on a compact 667 sqft unit; thin gross yield at this entry",
+          "Most of the TEL/Katong premium appears already priced in; limited margin of safety"
+        ],
+        "catalysts": [
+          "670m to new TEL Tanjong Katong station (TE25) — fresh connectivity to CBD/Marina Bay",
+          "Prime D15 Katong lifestyle address with strong own-stay/expat demand",
+          "Listing's ~7% discount to project median offers a modest entry cushion"
+        ],
+        "rental_assessment": "Solid tenant demand from D15/Katong's expat and professional pool plus new-MRT access; however the high purchase psf compresses gross yield to the low end.",
+        "appreciation_assessment": "Strip out the new-launch bias and forward appreciation should normalize toward RCR mid-single-digits; the TEL station is the real driver, but much is already capitalized into the $2,549 psf.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "RCR/D15 baseline; discounts the 11.3% new-launch-biased URA figure per rubric anti-inflation guidance"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tembusu-grand-500143167",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new (TOP 2026) 990sqft 3BR at $2.65M / $2677 psf in a 638-unit CDL-MCL development near Tanjong Katong MRT (TEL). The headline 11.3%/yr figure is new-launch-biased and reflects developer pricing, not realizable resale momentum — Q2 2026 transactions show only ~4.8% uplift since launch. Quality D15 location, but you are buying at the top of the price curve.",
+      "rating_rationale": "This is a high-quality project (CDL/MCL, 638 units, TEL access, prime D15 Katong) but priced as a new launch with little margin for investment upside. Asking $2677 psf is near the $2746 launch median, and only ~4.8% appreciation has materialized since launch — the 11.3% URA figure is flagged new-launch-biased and should not be taken as forward resale growth. At $2.65M for a compact 990sqft 3BR, entry PSF is rich, the lowest MMR (785) and score (785/1000) in the batch reflect that, and a wave of nearby D15 new-launch supply (Grand Dunman, Continuum, etc.) will compete on resale. Good home, mediocre 5-7yr investment entry point — Neutral.",
+      "red_flags": [
+        "New-launch pricing: ~$2677 psf with only ~4.8% post-launch uplift, little upside left",
+        "11.3% URA rate is new-launch-biased — not a reliable forward indicator",
+        "990sqft is compact for a $2.65M 3BR; rich PSF caps yield",
+        "Heavy competing D15 new-launch supply (Grand Dunman, Continuum) pressures resale"
+      ],
+      "catalysts": [
+        "Thomson-East Coast Line (Tanjong Katong) and prime D15 Katong address",
+        "Reputable CDL/MCL developer, large 638-unit development with deep liquidity",
+        "Long fresh 99yr lease and brand-new condition"
+      ],
+      "as_of": {
+        "price": 2650000,
+        "psf": 2676.77,
+        "beds": 3,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new (TOP 2026) 990sqft 3BR at $2.65M / $2677 psf in a 638-unit CDL-MCL development near Tanjong Katong MRT (TEL). The headline 11.3%/yr figure is new-launch-biased and reflects developer pricing, not realizable resale momentum — Q2 2026 transactions show only ~4.8% uplift since launch. Quality D15 location, but you are buying at the top of the price curve.",
+        "rating": "Neutral",
+        "rating_rationale": "This is a high-quality project (CDL/MCL, 638 units, TEL access, prime D15 Katong) but priced as a new launch with little margin for investment upside. Asking $2677 psf is near the $2746 launch median, and only ~4.8% appreciation has materialized since launch — the 11.3% URA figure is flagged new-launch-biased and should not be taken as forward resale growth. At $2.65M for a compact 990sqft 3BR, entry PSF is rich, the lowest MMR (785) and score (785/1000) in the batch reflect that, and a wave of nearby D15 new-launch supply (Grand Dunman, Continuum, etc.) will compete on resale. Good home, mediocre 5-7yr investment entry point — Neutral.",
+        "red_flags": [
+          "New-launch pricing: ~$2677 psf with only ~4.8% post-launch uplift, little upside left",
+          "11.3% URA rate is new-launch-biased — not a reliable forward indicator",
+          "990sqft is compact for a $2.65M 3BR; rich PSF caps yield",
+          "Heavy competing D15 new-launch supply (Grand Dunman, Continuum) pressures resale"
+        ],
+        "catalysts": [
+          "Thomson-East Coast Line (Tanjong Katong) and prime D15 Katong address",
+          "Reputable CDL/MCL developer, large 638-unit development with deep liquidity",
+          "Long fresh 99yr lease and brand-new condition"
+        ],
+        "rental_assessment": "Katong/D15 rents well to expats and families; a new 3BR should let readily, but at $2677 psf gross yield is ~3% or below — yield is not the draw.",
+        "appreciation_assessment": "Forward appreciation must be judged off the modest ~4.8% post-launch resale uplift, not the inflated 11.3% headline. With supply competition and a high entry PSF, expect mid-single-digit at best over the hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Q2 2026 resale uplift (~4.8%) since launch — resale basis, not new-launch headline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tembusu-grand-500056820",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

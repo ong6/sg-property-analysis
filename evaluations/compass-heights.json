@@ -1,0 +1,61 @@
+{
+  "condo": "Compass Heights",
+  "slug": "compass-heights",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Integrated development sitting atop Compass One mall with direct access to Sengkang MRT/LRT and bus interchange — unbeatable convenience at a low $1.8M quantum for a large 1,324 sqft 3BR. PSF 1360 is just ~1% above the URA median and 7.7%/yr resale CAGR is the strongest of the Serangoon/Sengkang names. Aging 2003 build and common-area upkeep gripes keep it a Buy rather than Strong Buy.",
+      "rating_rationale": "The integrated-development premium is the thesis: directly above Compass One, with Sengkang MRT (NEL), LRT and bus interchange below — the kind of doorstep connectivity that holds resale value. 7.7%/yr resale CAGR (highest among the non-Punggol D19 names) on 80 txns, a $1.8M quantum in the deep buyer band, and a large 1,324 sqft layout all support the case. PSF 1360 is essentially at-median (URA 1344), so not a discount but fair for the location. Offsets: 2003 build (23 years), and reviews flag aging common-area upkeep (smell/pests at the L1 MRT entrance). The convenience moat outweighs the age drag.",
+      "red_flags": [
+        "2003 build (23 years) — aging; reviews cite common-area maintenance issues (smell, pests at L1)",
+        "PSF slightly above median — fair, not cheap",
+        "Mixed-use/above-mall living means some footfall and noise trade-offs"
+      ],
+      "catalysts": [
+        "Integrated with Compass One mall + Sengkang MRT/LRT/bus interchange — premium, durable connectivity",
+        "7.7%/yr resale CAGR, the strongest among the batch's Serangoon/Sengkang resale names",
+        "Low $1.8M quantum for a large 3BR keeps the buyer pool wide"
+      ],
+      "as_of": {
+        "price": 1799999,
+        "psf": 1359.52,
+        "beds": 3,
+        "sqft": 1324.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Integrated development sitting atop Compass One mall with direct access to Sengkang MRT/LRT and bus interchange — unbeatable convenience at a low $1.8M quantum for a large 1,324 sqft 3BR. PSF 1360 is just ~1% above the URA median and 7.7%/yr resale CAGR is the strongest of the Serangoon/Sengkang names. Aging 2003 build and common-area upkeep gripes keep it a Buy rather than Strong Buy.",
+        "rating": "Buy",
+        "rating_rationale": "The integrated-development premium is the thesis: directly above Compass One, with Sengkang MRT (NEL), LRT and bus interchange below — the kind of doorstep connectivity that holds resale value. 7.7%/yr resale CAGR (highest among the non-Punggol D19 names) on 80 txns, a $1.8M quantum in the deep buyer band, and a large 1,324 sqft layout all support the case. PSF 1360 is essentially at-median (URA 1344), so not a discount but fair for the location. Offsets: 2003 build (23 years), and reviews flag aging common-area upkeep (smell/pests at the L1 MRT entrance). The convenience moat outweighs the age drag.",
+        "red_flags": [
+          "2003 build (23 years) — aging; reviews cite common-area maintenance issues (smell, pests at L1)",
+          "PSF slightly above median — fair, not cheap",
+          "Mixed-use/above-mall living means some footfall and noise trade-offs"
+        ],
+        "catalysts": [
+          "Integrated with Compass One mall + Sengkang MRT/LRT/bus interchange — premium, durable connectivity",
+          "7.7%/yr resale CAGR, the strongest among the batch's Serangoon/Sengkang resale names",
+          "Low $1.8M quantum for a large 3BR keeps the buyer pool wide"
+        ],
+        "rental_assessment": "On-top-of-MRT-and-mall convenience makes this one of the easiest 3BRs to lease in Sengkang; ~3.4% gross yield realistic with strong tenant demand from families.",
+        "appreciation_assessment": "7.7%/yr resale CAGR plus the structural integrated-development premium supports steady outperformance; the main cap is age-related maintenance perception over the hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500010564",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

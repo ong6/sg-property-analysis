@@ -1,0 +1,63 @@
+{
+  "condo": "The Quartz",
+  "slug": "the-quartz",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Spacious 1484sqft 3BR at $1273 psf, ~18% under the Quartz median of $1550, just 270m from Buangkok MRT in a large 625-unit GuocoLand development. Sub-$1.9M price and MRT-adjacency give it broad resale appeal; 6.38%/yr appreciation on 120 transactions is healthy. Reviews are mixed on interior materials and facility upkeep.",
+      "rating_rationale": "Strong value-plus-location: ~18% below development median, $1.89M in the liquid HDB-upgrader band, and a genuine 3-minute (270m) walk to Buangkok MRT — the best MRT proximity in the D19 group after La Fiesta. 6.38%/yr resale CAGR on 120 txns is solid. Build quality is the watch-item: reviews call interior materials low-class and note dated/dirty facilities for the age. Not a frontier unit (record 563-4-2) but a clean, sensible buy.",
+      "red_flags": [
+        "Mixed build-quality reviews: low-class interior materials, run-down facilities",
+        "2010 vintage means rising maintenance and dated fittings",
+        "Off the efficiency frontier vs batch peers"
+      ],
+      "catalysts": [
+        "270m to Buangkok MRT (NE line) anchors resale demand",
+        "Punggol Digital District / CRL lifting wider D19",
+        "~18% below-median PSF on a large family layout"
+      ],
+      "as_of": {
+        "price": 1890000,
+        "psf": 1273.58,
+        "beds": 3,
+        "sqft": 1484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Spacious 1484sqft 3BR at $1273 psf, ~18% under the Quartz median of $1550, just 270m from Buangkok MRT in a large 625-unit GuocoLand development. Sub-$1.9M price and MRT-adjacency give it broad resale appeal; 6.38%/yr appreciation on 120 transactions is healthy. Reviews are mixed on interior materials and facility upkeep.",
+        "rating": "Buy",
+        "rating_rationale": "Strong value-plus-location: ~18% below development median, $1.89M in the liquid HDB-upgrader band, and a genuine 3-minute (270m) walk to Buangkok MRT — the best MRT proximity in the D19 group after La Fiesta. 6.38%/yr resale CAGR on 120 txns is solid. Build quality is the watch-item: reviews call interior materials low-class and note dated/dirty facilities for the age. Not a frontier unit (record 563-4-2) but a clean, sensible buy.",
+        "red_flags": [
+          "Mixed build-quality reviews: low-class interior materials, run-down facilities",
+          "2010 vintage means rising maintenance and dated fittings",
+          "Off the efficiency frontier vs batch peers"
+        ],
+        "catalysts": [
+          "270m to Buangkok MRT (NE line) anchors resale demand",
+          "Punggol Digital District / CRL lifting wider D19",
+          "~18% below-median PSF on a large family layout"
+        ],
+        "rental_assessment": "MRT-adjacent 3BR rents readily to families; Sengkang/Buangkok tenant pool is deep. Yields 3-3.5% typical at this price.",
+        "appreciation_assessment": "6.38%/yr resale CAGR on 120 txns is reliable and above OCR baseline; MRT-frontage units in this development should track or beat the median over a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only CAGR (120 txns), trimmed for age/condition"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quartz-60056427",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

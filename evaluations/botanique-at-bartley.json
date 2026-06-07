@@ -378,6 +378,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-500082966",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "UOL-built 2019 leasehold, 410m from Bartley MRT, with quality finishes and a deep 264-transaction record showing a steady 5.3% CAGR. At $1,963 psf the 2BR sits modestly below median ($2,069) — solid, well-located but fully-priced; the upside is incremental rather than a bargain.",
+      "rating_rationale": "657sqft 2BR at $1.29M / $1,963 psf is ~5% under the URA median PSF ($2,069) with a robust 264 transactions and 5.3% CAGR — reliable data. UOL build quality (marble, Smeg appliances) and 410m Bartley CC12 access support both resale and rental. Tenure 99yr from ~2015 leaves a long runway. The discount is modest, so this is a steady Buy rather than a value play. Prior Neutral re-rated to Buy on the strength of the liquidity (264 txns) and reputable-developer quality at a near-median entry. MMR 1538 / score 731.",
+      "red_flags": [
+        "Only ~5% below median — limited margin of safety",
+        "$1.29M for a 657sqft 2BR is on the pricier psf end of D19",
+        "Bartley is a quieter node — rental demand thinner than CBD-adjacent areas"
+      ],
+      "catalysts": [
+        "410m to Bartley CC12 MRT (Circle Line, ~15min to CBD)",
+        "Reputable UOL developer with quality finishes (resale confidence)",
+        "264 transactions = strong liquidity for exit"
+      ],
+      "as_of": {
+        "price": 1290000,
+        "psf": 1963.47,
+        "beds": 2,
+        "sqft": 657.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "UOL-built 2019 leasehold, 410m from Bartley MRT, with quality finishes and a deep 264-transaction record showing a steady 5.3% CAGR. At $1,963 psf the 2BR sits modestly below median ($2,069) — solid, well-located but fully-priced; the upside is incremental rather than a bargain.",
+        "rating": "Buy",
+        "rating_rationale": "657sqft 2BR at $1.29M / $1,963 psf is ~5% under the URA median PSF ($2,069) with a robust 264 transactions and 5.3% CAGR — reliable data. UOL build quality (marble, Smeg appliances) and 410m Bartley CC12 access support both resale and rental. Tenure 99yr from ~2015 leaves a long runway. The discount is modest, so this is a steady Buy rather than a value play. Prior Neutral re-rated to Buy on the strength of the liquidity (264 txns) and reputable-developer quality at a near-median entry. MMR 1538 / score 731.",
+        "red_flags": [
+          "Only ~5% below median — limited margin of safety",
+          "$1.29M for a 657sqft 2BR is on the pricier psf end of D19",
+          "Bartley is a quieter node — rental demand thinner than CBD-adjacent areas"
+        ],
+        "catalysts": [
+          "410m to Bartley CC12 MRT (Circle Line, ~15min to CBD)",
+          "Reputable UOL developer with quality finishes (resale confidence)",
+          "264 transactions = strong liquidity for exit"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25360193",
+        "review_file": "batch_05.json"
+      }
     }
   ]
 }

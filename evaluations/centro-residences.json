@@ -1,0 +1,63 @@
+{
+  "condo": "Centro Residences",
+  "slug": "centro-residences",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2014, high-finish 34-storey landmark beside AMK Hub with the upcoming CR11 Cross Island Line interchange essentially at the doorstep (100m). The listed $1,497 psf sits far below the $2,040 district median, but that gap is misleading — Centro is a SOHO/loft-stack development, so the headline median is skewed by smaller premium units; still, an integrated-transit 3BR at this price with CRL incoming is a strong setup.",
+      "rating_rationale": "The standout catalyst is CR11 Ang Mo Kio becoming a Cross Island Line interchange (~2030) at 100m — within-500m future MRT is the strongest single uplift in the rubric, and 100m is doorstep. Pair that with AMK Hub integration, a well-finished 2014 building (DP Architects, one of AMK's tallest, premium finishes) and a 6.2%/yr resale CAGR over 77 txns. The $1,497-vs-$2,040 psf gap overstates cheapness (loft/SOHO unit mix skews the district median), so I treat value as fair-to-slightly-positive rather than a deep discount. Limited common-area space and a more couple/expat-than-family layout temper broad upgrader appeal, holding it to Buy.",
+      "red_flags": [
+        "Headline PSF discount is inflated by Centro's SOHO/loft unit mix — not a clean ~27% bargain",
+        "Reviews note limited common-area/facility space; layout suits couples/expats more than large families",
+        "Smaller development footprint and 77-txn base = thinner liquidity than 500+ unit peers"
+      ],
+      "catalysts": [
+        "CR11 Ang Mo Kio Cross Island Line interchange (~2030) at 100m — doorstep future-MRT uplift",
+        "Direct integration with AMK Hub and existing NSL Ang Mo Kio MRT — rare integrated-transit convenience",
+        "2014 premium-finish landmark tower with city/landed views; durable rental demand from transit access"
+      ],
+      "as_of": {
+        "price": 2030000,
+        "psf": 1497.05,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2014, high-finish 34-storey landmark beside AMK Hub with the upcoming CR11 Cross Island Line interchange essentially at the doorstep (100m). The listed $1,497 psf sits far below the $2,040 district median, but that gap is misleading — Centro is a SOHO/loft-stack development, so the headline median is skewed by smaller premium units; still, an integrated-transit 3BR at this price with CRL incoming is a strong setup.",
+        "rating": "Buy",
+        "rating_rationale": "The standout catalyst is CR11 Ang Mo Kio becoming a Cross Island Line interchange (~2030) at 100m — within-500m future MRT is the strongest single uplift in the rubric, and 100m is doorstep. Pair that with AMK Hub integration, a well-finished 2014 building (DP Architects, one of AMK's tallest, premium finishes) and a 6.2%/yr resale CAGR over 77 txns. The $1,497-vs-$2,040 psf gap overstates cheapness (loft/SOHO unit mix skews the district median), so I treat value as fair-to-slightly-positive rather than a deep discount. Limited common-area space and a more couple/expat-than-family layout temper broad upgrader appeal, holding it to Buy.",
+        "red_flags": [
+          "Headline PSF discount is inflated by Centro's SOHO/loft unit mix — not a clean ~27% bargain",
+          "Reviews note limited common-area/facility space; layout suits couples/expats more than large families",
+          "Smaller development footprint and 77-txn base = thinner liquidity than 500+ unit peers"
+        ],
+        "catalysts": [
+          "CR11 Ang Mo Kio Cross Island Line interchange (~2030) at 100m — doorstep future-MRT uplift",
+          "Direct integration with AMK Hub and existing NSL Ang Mo Kio MRT — rare integrated-transit convenience",
+          "2014 premium-finish landmark tower with city/landed views; durable rental demand from transit access"
+        ],
+        "rental_assessment": "Excellent transit-driven rental demand — integrated with AMK Hub and the MRT, ideal for working professionals and expats; the loft/SOHO profile rents well to couples. Among the more rentable units in the batch.",
+        "appreciation_assessment": "6.2%/yr resale CAGR over 77 txns is solid; the CRL interchange at 100m is a concrete, high-impact catalyst that should drive above-baseline appreciation into 2030. Value is fair once the unit-mix-skewed median is corrected.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale 6.2%/yr, sustained by CR11 interchange catalyst at 100m"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500058461",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

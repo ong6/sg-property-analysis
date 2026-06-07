@@ -1,0 +1,61 @@
+{
+  "condo": "Suites @ Sims",
+  "slug": "suites-sims",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 48-unit freehold shoebox/serviced-apartment block in Geylang with only 14 URA transactions — the high headline appreciation (6.8%) rests on too thin a sample to trust, and the development is small, niche and carries Geylang stigma. Despite a high MMR, the exit-liquidity case is weak for an investment hold.",
+      "rating_rationale": "721sqft 2BR at $1.10M / $1,526 psf is ~20% below the project median PSF ($1,896) on paper, but with just 14 URA transactions the 6.8% CAGR is statistically unreliable and the 48-unit block offers thin, slow liquidity. Freehold and decent 5%+ rental yield (Aljunied/Paya Lebar tenant demand) are real positives, but Geylang-fringe stigma narrows the resale buyer pool. MMR 1563 / score 863 overstates the case given the data thinness.",
+      "red_flags": [
+        "Only 48 units — illiquid, slow resale, limited amenities",
+        "Just 14 URA transactions — appreciation rate unreliable",
+        "Geylang/Sims Avenue stigma narrows buyer pool",
+        "Serviced-apartment / shoebox character limits owner-occupier demand"
+      ],
+      "catalysts": [
+        "Freehold tenure (rare at this price)",
+        "Strong rental yield (~5%) from Aljunied/Paya Lebar tenant pool",
+        "Walkable to Aljunied EW9 and Paya Lebar interchange"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1525.66,
+        "beds": 2,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 48-unit freehold shoebox/serviced-apartment block in Geylang with only 14 URA transactions — the high headline appreciation (6.8%) rests on too thin a sample to trust, and the development is small, niche and carries Geylang stigma. Despite a high MMR, the exit-liquidity case is weak for an investment hold.",
+        "rating": "Neutral",
+        "rating_rationale": "721sqft 2BR at $1.10M / $1,526 psf is ~20% below the project median PSF ($1,896) on paper, but with just 14 URA transactions the 6.8% CAGR is statistically unreliable and the 48-unit block offers thin, slow liquidity. Freehold and decent 5%+ rental yield (Aljunied/Paya Lebar tenant demand) are real positives, but Geylang-fringe stigma narrows the resale buyer pool. MMR 1563 / score 863 overstates the case given the data thinness.",
+        "red_flags": [
+          "Only 48 units — illiquid, slow resale, limited amenities",
+          "Just 14 URA transactions — appreciation rate unreliable",
+          "Geylang/Sims Avenue stigma narrows buyer pool",
+          "Serviced-apartment / shoebox character limits owner-occupier demand"
+        ],
+        "catalysts": [
+          "Freehold tenure (rare at this price)",
+          "Strong rental yield (~5%) from Aljunied/Paya Lebar tenant pool",
+          "Walkable to Aljunied EW9 and Paya Lebar interchange"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-sims-500046283",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

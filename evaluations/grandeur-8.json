@@ -1,0 +1,115 @@
+{
+  "condo": "Grandeur 8",
+  "slug": "grandeur-8",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A large 1130 sqft 2BR in Ang Mo Kio (D20) at just $1,416 psf — ~9% under the $1,557 URA median — near Ang Mo Kio MRT (780m, future CRL interchange). Big, low-psf, established-estate value play with 6.5% resale CAGR. Tempered by 21-year age and reported below-par estate maintenance, but a solid Buy.",
+      "rating_rationale": "$1,416 psf is the lowest in the batch and ~9% below the $1,557 median for a spacious 1130 sqft layout — a strong value/$-per-sqft proposition for D20's deep owner-occupier estate. Ang Mo Kio is a mature town with Cross Island Line interchange (CR11) coming, 780m walk. 6.5% resale CAGR on 88 txns is solid. 579 units gives reasonable liquidity. Drags: built 2005 (21 yrs old, ~74 yrs lease left) and resident reviews flag mediocre maintenance and heavy-handed management — manageable but real for a hold/resale.",
+      "red_flags": [
+        "21 years old (built 2005); lease decay and higher maintenance ahead",
+        "Resident reviews cite below-par estate maintenance and restrictive management",
+        "Thin 88-transaction appreciation sample"
+      ],
+      "catalysts": [
+        "Ang Mo Kio becomes a Cross Island Line interchange (CR11) — connectivity uplift",
+        "Large 1130 sqft layout at low $1,416 psf appeals to right-sizing families and own-stay buyers",
+        "Established AMK estate with deep, stable owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1415.93,
+        "beds": 2,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1130 sqft 2BR in Ang Mo Kio (D20) at just $1,416 psf — ~9% under the $1,557 URA median — near Ang Mo Kio MRT (780m, future CRL interchange). Big, low-psf, established-estate value play with 6.5% resale CAGR. Tempered by 21-year age and reported below-par estate maintenance, but a solid Buy.",
+        "rating": "Buy",
+        "rating_rationale": "$1,416 psf is the lowest in the batch and ~9% below the $1,557 median for a spacious 1130 sqft layout — a strong value/$-per-sqft proposition for D20's deep owner-occupier estate. Ang Mo Kio is a mature town with Cross Island Line interchange (CR11) coming, 780m walk. 6.5% resale CAGR on 88 txns is solid. 579 units gives reasonable liquidity. Drags: built 2005 (21 yrs old, ~74 yrs lease left) and resident reviews flag mediocre maintenance and heavy-handed management — manageable but real for a hold/resale.",
+        "red_flags": [
+          "21 years old (built 2005); lease decay and higher maintenance ahead",
+          "Resident reviews cite below-par estate maintenance and restrictive management",
+          "Thin 88-transaction appreciation sample"
+        ],
+        "catalysts": [
+          "Ang Mo Kio becomes a Cross Island Line interchange (CR11) — connectivity uplift",
+          "Large 1130 sqft layout at low $1,416 psf appeals to right-sizing families and own-stay buyers",
+          "Established AMK estate with deep, stable owner-occupier demand"
+        ],
+        "rental_assessment": "Steady family-tenant demand in a mature town near MRT; the generous 1130 sqft size rents well in absolute terms to families, though psf-yield is moderate.",
+        "appreciation_assessment": "6.5% resale CAGR plus a sub-median entry and CRL interchange catalyst support continued mid-single-digit appreciation; lease decay is the main forward drag.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500123966",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large, established 99LH near AMK Town Centre with a genuinely big 1,582 sqft 3BR priced at PSF 1422 — a 9% discount to the project median PSF of 1557. Strong 6.5%/yr URA resale appreciation on 88 transactions, a 579-unit liquid base, and the future CR11 Ang Mo Kio Cross Island Line interchange make this a solid value play.",
+      "rating_rationale": "PSF 1422 vs URA median 1557 is a meaningful ~9% discount on a unit that is large and well-located (5-9 min to AMK hub, mall, bus interchange). 6.5%/yr resale-only appreciation on a healthy 88-txn sample is well above the OCR baseline. 579 units gives deep liquidity, and the Cross Island Line interchange at AMK (CR11, ~2030) is a real catalyst. At $2.25M the unit sits at the upper edge of the deep buyer band but the large floor area justifies it. Build is 2005-era but reviews report decent upkeep; aging facilities and 21-year age are the main drags.",
+      "red_flags": [
+        "2005 build (21 years old) — higher maintenance, finishes dated; some reviews note aging facilities",
+        "Large 1,582 sqft pushes quantum to $2.25M, narrowing the buyer pool vs sub-$2M peers",
+        "780m to MRT is a moderate (not doorstep) walk"
+      ],
+      "catalysts": [
+        "CR11 Ang Mo Kio Cross Island Line interchange (~2030) adds a second line to the existing NSL",
+        "PSF ~9% below project median leaves room for re-rating toward the median",
+        "AMK Town Centre amenities, schools and en-bloc-scale 579-unit liquidity"
+      ],
+      "as_of": {
+        "price": 2250000,
+        "psf": 1422.25,
+        "beds": 3,
+        "sqft": 1582.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large, established 99LH near AMK Town Centre with a genuinely big 1,582 sqft 3BR priced at PSF 1422 — a 9% discount to the project median PSF of 1557. Strong 6.5%/yr URA resale appreciation on 88 transactions, a 579-unit liquid base, and the future CR11 Ang Mo Kio Cross Island Line interchange make this a solid value play.",
+        "rating": "Buy",
+        "rating_rationale": "PSF 1422 vs URA median 1557 is a meaningful ~9% discount on a unit that is large and well-located (5-9 min to AMK hub, mall, bus interchange). 6.5%/yr resale-only appreciation on a healthy 88-txn sample is well above the OCR baseline. 579 units gives deep liquidity, and the Cross Island Line interchange at AMK (CR11, ~2030) is a real catalyst. At $2.25M the unit sits at the upper edge of the deep buyer band but the large floor area justifies it. Build is 2005-era but reviews report decent upkeep; aging facilities and 21-year age are the main drags.",
+        "red_flags": [
+          "2005 build (21 years old) — higher maintenance, finishes dated; some reviews note aging facilities",
+          "Large 1,582 sqft pushes quantum to $2.25M, narrowing the buyer pool vs sub-$2M peers",
+          "780m to MRT is a moderate (not doorstep) walk"
+        ],
+        "catalysts": [
+          "CR11 Ang Mo Kio Cross Island Line interchange (~2030) adds a second line to the existing NSL",
+          "PSF ~9% below project median leaves room for re-rating toward the median",
+          "AMK Town Centre amenities, schools and en-bloc-scale 579-unit liquidity"
+        ],
+        "rental_assessment": "AMK is a mature tenant catchment with strong HDB-upgrader and family demand; a large 1,582 sqft 3BR rents well to families though quantum caps gross yield around 3% at this price.",
+        "appreciation_assessment": "6.5%/yr URA resale CAGR on 88 transactions is robust and above OCR norm; discount-to-median entry plus the CRL interchange supports continued outperformance over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500079229",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

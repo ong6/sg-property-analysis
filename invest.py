@@ -1034,8 +1034,8 @@ Examples:
                        help="Minimum price filter for scraping (optional, no default)")
     parser.add_argument("--max-price", type=int, default=None,
                        help="Maximum price filter for scraping (optional, no default)")
-    parser.add_argument("--beds", "-b", type=str, default="2,3",
-                       help="Bedroom counts (default: 2,3)")
+    parser.add_argument("--beds", "-b", type=str, default=None,
+                       help="Bedroom counts (default: 2,3 for scraping; ALL for --fight)")
     parser.add_argument("--max-pages", type=int, default=5,
                        help="Max pages to scrape per district (default: 5)")
     parser.add_argument("--enrich-top", type=int, default=0,
@@ -1250,18 +1250,38 @@ Examples:
 
         # Agent-flow join: attach the AI's prior evaluations (git-tracked
         # eval memory) so technical ranks are read alongside past judgment.
+        # Bed-aware: a condo's 2BR and 3BR can carry different ratings; only
+        # fall back to another unit type's rating with an explicit annotation.
         import eval_memory
         eval_index = eval_memory.load_index().get("condos", {})
-        eval_by_name = {}
-        for meta in eval_index.values():
-            key = (meta.get("condo") or "").strip().lower()
-            if key:
-                eval_by_name[key] = (meta.get("latest_rating"), meta.get("latest_date"))
+        eval_lookup: dict = {}  # (name, beds) and (name, None) -> (rating, date, beds)
+        for slug in eval_index:
+            data = eval_memory.load_condo(slug)
+            if not data:
+                continue
+            name_key = (data.get("condo") or "").strip().lower()
+            for h in data.get("history", []):
+                rating, date = h.get("rating"), h.get("evaluated_at")
+                if not rating:
+                    continue
+                h_beds = (h.get("as_of") or {}).get("beds")
+                for key in [(name_key, h_beds), (name_key, None)]:
+                    cur = eval_lookup.get(key)
+                    if cur is None or (date or "") >= (cur[1] or ""):
+                        eval_lookup[key] = (rating, date, h_beds)
         for fighter_set in list(brackets.values()) + [open_fighters]:
             for fl in fighter_set:
-                hit = eval_by_name.get(fl.name.strip().lower())
+                name_key = fl.name.strip().lower()
+                hit = eval_lookup.get((name_key, fl.beds))
                 if hit:
-                    fl.agent_rating, fl.agent_eval_date = hit
+                    fl.agent_rating, fl.agent_eval_date = hit[0], hit[1]
+                else:
+                    fallback = eval_lookup.get((name_key, None))
+                    if fallback:
+                        # Different unit type's rating — say so explicitly
+                        beds_note = f"{fallback[2]}BR" if fallback[2] else "other type"
+                        fl.agent_rating = f"{fallback[0]} ({beds_note})"
+                        fl.agent_eval_date = fallback[1]
 
         report = format_brackets_report(brackets, open_fighters)
 
@@ -1667,7 +1687,7 @@ Examples:
 
     # Handle --url mode (scrape from a PropertyGuru URL: listing, results, or project page)
     if args.url:
-        beds = [int(b.strip()) for b in args.beds.split(",")] if args.beds else []
+        beds = [int(b.strip()) for b in (args.beds or "2,3").split(",")]
         url_enrich = args.enrich_top if args.enrich_top > 0 else 20
         listings = scrape_url_listings(
             url=args.url,
@@ -1694,7 +1714,7 @@ Examples:
 
     # Handle --condo mode (scrape by condo name)
     elif args.condo:
-        beds = [int(b.strip()) for b in args.beds.split(",")]
+        beds = [int(b.strip()) for b in (args.beds or "2,3").split(",")]
         # Default enrich_top=20 in condo mode to get floor_level/facing
         condo_enrich = args.enrich_top if args.enrich_top > 0 else 20
         listings = scrape_condo_listings(
@@ -1736,7 +1756,7 @@ Examples:
         print(f"  Criteria: 50% historical + 50% future potential", file=sys.stderr)
 
         # Continue with scraping using discovered districts
-        beds = [int(b.strip()) for b in args.beds.split(",")]
+        beds = [int(b.strip()) for b in (args.beds or "2,3").split(",")]
 
         listings = scrape_listings(
             districts=districts,
@@ -1782,7 +1802,7 @@ Examples:
     elif args.districts:
         # Scrape new listings (manual district selection)
         districts = [int(d.strip()) for d in args.districts.split(",")]
-        beds = [int(b.strip()) for b in args.beds.split(",")]
+        beds = [int(b.strip()) for b in (args.beds or "2,3").split(",")]
 
         listings = scrape_listings(
             districts=districts,
@@ -1947,7 +1967,7 @@ Examples:
 
         # Always save raw analysis for agent review
         run_config = {
-            "beds": [int(b.strip()) for b in args.beds.split(",")],
+            "beds": [int(b.strip()) for b in (args.beds or "2,3").split(",")],
         }
         if args.min_price is not None or args.max_price is not None:
             run_config["price_range"] = [args.min_price, args.max_price]
@@ -2006,7 +2026,7 @@ Examples:
 
         if args.raw:
             run_config = {
-                "beds": [int(b.strip()) for b in args.beds.split(",")],
+                "beds": [int(b.strip()) for b in (args.beds or "2,3").split(",")],
             }
             if args.min_price is not None or args.max_price is not None:
                 run_config["price_range"] = [args.min_price, args.max_price]

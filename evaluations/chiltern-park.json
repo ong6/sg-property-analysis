@@ -1,0 +1,121 @@
+{
+  "condo": "Chiltern Park",
+  "slug": "chiltern-park",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "500-unit D19 Serangoon leasehold (1995), 2BR at $1.65M / $1,803psf, 120m from CC14 Lorong Chuan MRT. Genuinely odd profile: strong 6.40% URA over 69 txns and great transit, yet the lowest arena score in the batch (MMR 1483 / score 303) and asking ~13% above the $1,594 URA median. The price premium against a 31-year-old leasehold is the core problem.",
+      "rating_rationale": "Lorong Chuan MRT at 120m and a 6.40%/yr URA are real positives, but the $1,803psf ask is roughly 13% above the $1,594 URA median for a 1995 leasehold (~69 yrs remaining and falling), which is why the technical engine scores it a batch-low 303. The estate recently spent on upgrading, reducing near-term en-bloc odds (Chuan Park next door already redeveloped). You are paying up for transit on an ageing lease — fair as a home, weak as a 5-7yr investment at this premium. Neutral.",
+      "red_flags": [
+        "Asking ~13% above URA median ($1,803 vs $1,594) on a 1995 leasehold",
+        "Batch-low technical score (MMR 1483 / 303) — engine flags overpricing",
+        "Ageing lease (~69 yrs) — financing/appreciation headwind over a 5-7yr hold",
+        "Recent estate upgrade lowers near-term en-bloc probability"
+      ],
+      "catalysts": [
+        "120m to CC14 Lorong Chuan MRT — outstanding transit",
+        "6.40%/yr historic URA appreciation",
+        "500 units supports liquidity"
+      ],
+      "as_of": {
+        "price": 1650000,
+        "psf": 1803.28,
+        "beds": 2,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "500-unit D19 Serangoon leasehold (1995), 2BR at $1.65M / $1,803psf, 120m from CC14 Lorong Chuan MRT. Genuinely odd profile: strong 6.40% URA over 69 txns and great transit, yet the lowest arena score in the batch (MMR 1483 / score 303) and asking ~13% above the $1,594 URA median. The price premium against a 31-year-old leasehold is the core problem.",
+        "rating": "Neutral",
+        "rating_rationale": "Lorong Chuan MRT at 120m and a 6.40%/yr URA are real positives, but the $1,803psf ask is roughly 13% above the $1,594 URA median for a 1995 leasehold (~69 yrs remaining and falling), which is why the technical engine scores it a batch-low 303. The estate recently spent on upgrading, reducing near-term en-bloc odds (Chuan Park next door already redeveloped). You are paying up for transit on an ageing lease — fair as a home, weak as a 5-7yr investment at this premium. Neutral.",
+        "red_flags": [
+          "Asking ~13% above URA median ($1,803 vs $1,594) on a 1995 leasehold",
+          "Batch-low technical score (MMR 1483 / 303) — engine flags overpricing",
+          "Ageing lease (~69 yrs) — financing/appreciation headwind over a 5-7yr hold",
+          "Recent estate upgrade lowers near-term en-bloc probability"
+        ],
+        "catalysts": [
+          "120m to CC14 Lorong Chuan MRT — outstanding transit",
+          "6.40%/yr historic URA appreciation",
+          "500 units supports liquidity"
+        ],
+        "appreciation_assessment": "Historic 6.40% is decent, but buying ~13% over median on a decaying lease likely caps realized forward appreciation; net below the headline.",
+        "rental_assessment": "MRT-adjacent 2BR near Serangoon/NEX rents well; rental is the strongest leg. Yield ~3% but lease decay weighs on resale.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 6.40% discounted for above-median entry and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-chiltern-park-500081382",
+        "review_file": "batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A spacious 1,475 sqft 99LH 3BR at $1,322 psf, ~17% below the district median PSF of $1,594, with a 500-unit base and an MRT literally at the doorstep (120m to Lorong Chuan). Strong resale CAGR (6.4%/yr, 69 txns), deep liquidity and a sub-$2M entry make this a credible value play despite the 1995 vintage.",
+      "rating_rationale": "Entry PSF $1,322 vs URA median $1,594 is a genuine ~17% discount on a large-format unit, and the 6.4%/yr resale-only appreciation over 69 transactions is well above the OCR baseline. 120m to Lorong Chuan MRT and Serangoon NEX nearby anchor both rental and resale demand; 500 units gives a deep buyer pool. Real en-bloc optionality (377,682 sqft land, second-largest in the cluster) is a tail upside, though the estate just spent on upgrading so it is not imminent. Knocked off Strong Buy by 31-year age (remaining lease ~68yr, financing/maintenance headwinds building) and reported pest/security gripes.",
+      "red_flags": [
+        "1995 vintage — ~68 years lease remaining, approaching the <70yr financing/CPF caution band over the hold",
+        "Older estate: resident complaints about pest control and security staff; dated facilities vs newer competitors",
+        "Recent estate upgrading spend dampens near-term en-bloc probability"
+      ],
+      "catalysts": [
+        "120m to Lorong Chuan MRT (Circle Line) plus Serangoon NEX/NE interchange nearby — strong transit and retail anchor",
+        "Large 377,682 sqft site = real long-run en-bloc optionality with unblocked landed-estate views",
+        "Sub-$2M entry on a 1,475 sqft 3BR keeps it in the deepest buyer band for HDB upgraders"
+      ],
+      "as_of": {
+        "price": 1950000,
+        "psf": 1322.03,
+        "beds": 3,
+        "sqft": 1475.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spacious 1,475 sqft 99LH 3BR at $1,322 psf, ~17% below the district median PSF of $1,594, with a 500-unit base and an MRT literally at the doorstep (120m to Lorong Chuan). Strong resale CAGR (6.4%/yr, 69 txns), deep liquidity and a sub-$2M entry make this a credible value play despite the 1995 vintage.",
+        "rating": "Buy",
+        "rating_rationale": "Entry PSF $1,322 vs URA median $1,594 is a genuine ~17% discount on a large-format unit, and the 6.4%/yr resale-only appreciation over 69 transactions is well above the OCR baseline. 120m to Lorong Chuan MRT and Serangoon NEX nearby anchor both rental and resale demand; 500 units gives a deep buyer pool. Real en-bloc optionality (377,682 sqft land, second-largest in the cluster) is a tail upside, though the estate just spent on upgrading so it is not imminent. Knocked off Strong Buy by 31-year age (remaining lease ~68yr, financing/maintenance headwinds building) and reported pest/security gripes.",
+        "red_flags": [
+          "1995 vintage — ~68 years lease remaining, approaching the <70yr financing/CPF caution band over the hold",
+          "Older estate: resident complaints about pest control and security staff; dated facilities vs newer competitors",
+          "Recent estate upgrading spend dampens near-term en-bloc probability"
+        ],
+        "catalysts": [
+          "120m to Lorong Chuan MRT (Circle Line) plus Serangoon NEX/NE interchange nearby — strong transit and retail anchor",
+          "Large 377,682 sqft site = real long-run en-bloc optionality with unblocked landed-estate views",
+          "Sub-$2M entry on a 1,475 sqft 3BR keeps it in the deepest buyer band for HDB upgraders"
+        ],
+        "rental_assessment": "Deep tenant pool from Lorong Chuan/Serangoon transit access and proximity to schools; large layout appeals to families. Yield is modest (older-estate rents lag new launches) but occupancy should be reliable.",
+        "appreciation_assessment": "6.4%/yr resale-only CAGR over 69 txns is robust and above OCR baseline; the PSF gap to district median gives room to converge upward. Age caps the ceiling, so expect steady rather than explosive appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only 6.4%/yr discounted for advancing lease decay over a 5-7yr hold"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-chiltern-park-500163737",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

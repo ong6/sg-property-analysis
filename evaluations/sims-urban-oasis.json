@@ -1,0 +1,65 @@
+{
+  "condo": "Sims Urban Oasis",
+  "slug": "sims-urban-oasis",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A liquid, rental-grade 829 sqft 2BR at $1,688 psf — a sizeable 14% below the $1,954 median — in a 2017 development 450m from Aljunied MRT (East-West Line). Exceptional liquidity (347 URA transactions) and a strong rental location offset a modest 4.2%/yr appreciation and only basic finishes. A pragmatic income-and-exit play rather than a capital-growth star.",
+      "rating_rationale": "The standout is liquidity: 347 transactions is the deepest in the batch, so exit risk is minimal, and the $1.4M price sits squarely in the liquid band. PSF is meaningfully below median (1,688 vs 1,954), and Aljunied (EW9) + city-fringe location drives genuinely strong rental demand. Tempered by the lowest appreciation in the batch (4.2%/yr, below RCR baseline despite D14), basic material quality per reviews, small bedrooms, and audible jet-engine noise. A solid Buy for yield + easy exit, not a growth pick.",
+      "red_flags": [
+        "Lowest appreciation in batch at 4.2%/yr — below the RCR ~5.8% baseline",
+        "Reviews cite basic materials/fittings and small bedrooms",
+        "Aircraft/jet-engine noise reported (Paya Lebar flight path) and congestion at entry/exit at peak",
+        "Some resident complaints on management/security (parcel theft)"
+      ],
+      "catalysts": [
+        "450m to EW9 Aljunied MRT — direct city-fringe access drives durable rental demand",
+        "Paya Lebar Central proximity and airbase relocation (~2030) support medium-term D14 upside",
+        "Very deep transaction liquidity (347 URA txns) minimizes exit risk"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1688.78,
+        "beds": 2,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A liquid, rental-grade 829 sqft 2BR at $1,688 psf — a sizeable 14% below the $1,954 median — in a 2017 development 450m from Aljunied MRT (East-West Line). Exceptional liquidity (347 URA transactions) and a strong rental location offset a modest 4.2%/yr appreciation and only basic finishes. A pragmatic income-and-exit play rather than a capital-growth star.",
+        "rating": "Buy",
+        "rating_rationale": "The standout is liquidity: 347 transactions is the deepest in the batch, so exit risk is minimal, and the $1.4M price sits squarely in the liquid band. PSF is meaningfully below median (1,688 vs 1,954), and Aljunied (EW9) + city-fringe location drives genuinely strong rental demand. Tempered by the lowest appreciation in the batch (4.2%/yr, below RCR baseline despite D14), basic material quality per reviews, small bedrooms, and audible jet-engine noise. A solid Buy for yield + easy exit, not a growth pick.",
+        "red_flags": [
+          "Lowest appreciation in batch at 4.2%/yr — below the RCR ~5.8% baseline",
+          "Reviews cite basic materials/fittings and small bedrooms",
+          "Aircraft/jet-engine noise reported (Paya Lebar flight path) and congestion at entry/exit at peak",
+          "Some resident complaints on management/security (parcel theft)"
+        ],
+        "catalysts": [
+          "450m to EW9 Aljunied MRT — direct city-fringe access drives durable rental demand",
+          "Paya Lebar Central proximity and airbase relocation (~2030) support medium-term D14 upside",
+          "Very deep transaction liquidity (347 URA txns) minimizes exit risk"
+        ],
+        "rental_assessment": "Best-in-batch rental profile: EW Line access, city-fringe, broad 2BR tenant pool of working professionals. High occupancy and strong gross yield are the core reason to own this unit.",
+        "appreciation_assessment": "4.2%/yr resale CAGR on a large 347-txn sample is reliable but unexciting; the project is priced for income, not growth. Below-median PSF gives some cushion but I would underwrite low-single-digit appreciation.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.2,
+        "appreciation_rate_source": "URA resale-only CAGR on a large 347-txn sample — taken at face value"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-urban-oasis-24237046",
+        "review_file": "batch_02.json"
+      }
+    }
+  ]
+}

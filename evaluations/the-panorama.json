@@ -1,0 +1,117 @@
+{
+  "condo": "The Panorama",
+  "slug": "the-panorama",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 698-unit leasehold 480m from Mayflower TEL station, posting a strong 6.07% CAGR across 195 transactions — the TEL station (opened 2021) is a confirmed, data-backed catalyst. At $1,945 psf the 2BR is ~7% below median ($2,101), with reputable build quality (Wheelock/Wing Tai pedigree), making it one of the more complete cases in the batch.",
+      "rating_rationale": "786sqft 2BR at $1.529M / $1,945 psf is ~7% under median PSF ($2,101) with 195 transactions and a strong 6.07% CAGR — high data confidence, and the appreciation visibly reflects the Mayflower TE6 station opening. 480m to MRT (direct TEL line to Orchard/CBD), 698 units for liquidity, and praised build quality/landscaping support resale and rental. Generous 786sqft 2BR suits both couples and small families, widening the buyer pool. MMR 1549 / score 795, on frontier. Minor maintenance/entrance-design gripes only.",
+      "red_flags": [
+        "$1.529M is the higher end of the batch's price band",
+        "Minor reviews on lift-lobby maintenance and narrow main entrance",
+        "TEL uplift partly realized — verify remaining headroom"
+      ],
+      "catalysts": [
+        "480m to Mayflower TE6 TEL station (direct to Orchard/CBD) — data-backed 6.07% CAGR",
+        "Reputable developer build quality (resale confidence)",
+        "698 units + ~7% below-median entry = liquidity with value"
+      ],
+      "as_of": {
+        "price": 1529000,
+        "psf": 1945.29,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 698-unit leasehold 480m from Mayflower TEL station, posting a strong 6.07% CAGR across 195 transactions — the TEL station (opened 2021) is a confirmed, data-backed catalyst. At $1,945 psf the 2BR is ~7% below median ($2,101), with reputable build quality (Wheelock/Wing Tai pedigree), making it one of the more complete cases in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "786sqft 2BR at $1.529M / $1,945 psf is ~7% under median PSF ($2,101) with 195 transactions and a strong 6.07% CAGR — high data confidence, and the appreciation visibly reflects the Mayflower TE6 station opening. 480m to MRT (direct TEL line to Orchard/CBD), 698 units for liquidity, and praised build quality/landscaping support resale and rental. Generous 786sqft 2BR suits both couples and small families, widening the buyer pool. MMR 1549 / score 795, on frontier. Minor maintenance/entrance-design gripes only.",
+        "red_flags": [
+          "$1.529M is the higher end of the batch's price band",
+          "Minor reviews on lift-lobby maintenance and narrow main entrance",
+          "TEL uplift partly realized — verify remaining headroom"
+        ],
+        "catalysts": [
+          "480m to Mayflower TE6 TEL station (direct to Orchard/CBD) — data-backed 6.07% CAGR",
+          "Reputable developer build quality (resale confidence)",
+          "698 units + ~7% below-median entry = liquidity with value"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-500083790",
+        "review_file": "batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A well-built Wheelock-developed 1,012 sqft 3BR in Ang Mo Kio, 430m from Mayflower TEL station, asking $2,075 PSF — fractionally below the project's $2,101 URA median. Backed by a strong 6.1% resale CAGR over 195 transactions and a high liquidity profile (698 units, deep data), this is a solid, well-priced D20 buy with the main caveats being efficient-but-tight unit size and some early ageing of communal areas.",
+      "rating_rationale": "Strong fundamentals: 6.1% URA resale-only CAGR over a robust 195 transactions (no new-launch bias) is among the best verified appreciation in the batch; $2,075 PSF is at/slightly below the $2,101 median so no overpaying; 698 units and TEL connectivity (Mayflower 430m) give deep liquidity; $2.1M quantum sits in the deepest buyer band. Reputable developer (Wheelock) with generally good build feedback. Score 738 / MMR 1539, on the frontier. Tempered from Strong Buy by reports that communal/roof facilities are ageing faster than expected and occasional lift/utility complaints, the relatively compact 1,012 sqft for a 3BR, and a 99yr lease (from 2013) that is fine now but not a freehold scarcity play.",
+      "red_flags": [
+        "Reviews cite early wear on communal/roof facilities and intermittent lift/electrical issues despite 2019 build",
+        "Compact 1,012 sqft for a 3BR — efficient but tight, modest size premium",
+        "PSF already at project median — limited mispricing to exploit; relies on continued growth"
+      ],
+      "catalysts": [
+        "6.1% URA resale CAGR over 195 txns — strong, well-evidenced appreciation",
+        "430m to Mayflower TEL station — one-line ride to Orchard/Marina Bay",
+        "698-unit development in popular AMK/Bishan-Thomson belt — deep liquidity and schools (Ai Tong nearby)",
+        "Thomson Line maturation continuing to lift the corridor"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 2075.1,
+        "beds": 3,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A well-built Wheelock-developed 1,012 sqft 3BR in Ang Mo Kio, 430m from Mayflower TEL station, asking $2,075 PSF — fractionally below the project's $2,101 URA median. Backed by a strong 6.1% resale CAGR over 195 transactions and a high liquidity profile (698 units, deep data), this is a solid, well-priced D20 buy with the main caveats being efficient-but-tight unit size and some early ageing of communal areas.",
+        "rating": "Buy",
+        "rating_rationale": "Strong fundamentals: 6.1% URA resale-only CAGR over a robust 195 transactions (no new-launch bias) is among the best verified appreciation in the batch; $2,075 PSF is at/slightly below the $2,101 median so no overpaying; 698 units and TEL connectivity (Mayflower 430m) give deep liquidity; $2.1M quantum sits in the deepest buyer band. Reputable developer (Wheelock) with generally good build feedback. Score 738 / MMR 1539, on the frontier. Tempered from Strong Buy by reports that communal/roof facilities are ageing faster than expected and occasional lift/utility complaints, the relatively compact 1,012 sqft for a 3BR, and a 99yr lease (from 2013) that is fine now but not a freehold scarcity play.",
+        "red_flags": [
+          "Reviews cite early wear on communal/roof facilities and intermittent lift/electrical issues despite 2019 build",
+          "Compact 1,012 sqft for a 3BR — efficient but tight, modest size premium",
+          "PSF already at project median — limited mispricing to exploit; relies on continued growth"
+        ],
+        "catalysts": [
+          "6.1% URA resale CAGR over 195 txns — strong, well-evidenced appreciation",
+          "430m to Mayflower TEL station — one-line ride to Orchard/Marina Bay",
+          "698-unit development in popular AMK/Bishan-Thomson belt — deep liquidity and schools (Ai Tong nearby)",
+          "Thomson Line maturation continuing to lift the corridor"
+        ],
+        "rental_assessment": "Good. Family-friendly D20 location near MRT and schools; reliable tenant demand. Yield ~3% at this quantum, typical for the band.",
+        "appreciation_assessment": "Positive and well-supported. 6.1% CAGR on deep transaction data; TEL corridor and AMK/Bishan desirability underpin continued growth, though entry at median PSF means returns track the market rather than a re-rating.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only CAGR (6.1%, 195 txns) lightly tempered toward forward-looking baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-500155080",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

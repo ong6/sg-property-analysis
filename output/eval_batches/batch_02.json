@@ -1,0 +1,482 @@
+{
+ "listings": [
+  {
+   "bracket": "2BR",
+   "bracket_rank": 11,
+   "project_name": "Dakota Residences",
+   "district": "D14",
+   "beds": 2,
+   "price": 2000000,
+   "psf": 1955.03,
+   "sqft": 1023.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2010,
+   "mrt_info": "6 min (530 m) from CC8 Dakota MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-dakota-residences-500157691",
+   "technical": {
+    "mmr": 1538.4,
+    "score_1000": 733,
+    "elo": 2134,
+    "record": "404-16-4",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.801543067551319,
+    "ura_resale_only_pct_yr": 6.801543067551319,
+    "ura_txn_count": 64,
+    "ura_median_psf": 2083.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A roomy 1,023 sqft 2BR in a well-built D14 development at $1,955 psf, ~6% below the $2,083 URA median, riding a strong 6.8%/yr resale CAGR off 64 transactions and 530m from Dakota MRT (Circle Line). The headline drag is the price band: $2.0M sits at the top of the 2BR liquid range and the property is in the Paya Lebar airbase flight path. Net positive for a 5-7 year hold given the airbase relocation catalyst and Paya Lebar Central upside.",
+    "rating": "Buy",
+    "rating_rationale": "PSF discount to median (1,955 vs 2,083), genuine resale-only appreciation of 6.8%/yr on a decent 64-txn sample, and a Circle Line station 530m away. D14 sits on top of two structural catalysts: Paya Lebar Central commercial hub and the airbase relocation (~2030) that both removes the F-18 noise and unlocks land. Build quality and unit layout review well. Held back from Strong Buy by the $2.0M entry (top of the 2BR pool, thinner exit buyer base) and the current overhead-aircraft noise that a buyer must accept until relocation.",
+    "red_flags": [
+     "Sits directly under Paya Lebar military flight path — F-18s overhead until ~21:30, worse on high floors (resolves only on airbase relocation ~2030)",
+     "$2.0M entry is at the top of the 2BR liquid band — exit buyer pool thinner than sub-$1.8M",
+     "99-yr lease from ~2008, ~81 years remaining (fine now, but financing/decay watch beyond a 7-yr hold)"
+    ],
+    "catalysts": [
+     "Paya Lebar airbase relocation (~2030) removes aircraft noise and frees land for new development",
+     "Paya Lebar Central commercial hub expansion supports both rental demand and resale",
+     "530m to CC8 Dakota MRT and Old Airport Road hawker amenity underpin tenant demand"
+    ],
+    "rental_assessment": "Strong tenant catchment — Circle Line access, Old Airport Road food, proximity to CBD and Paya Lebar offices. 2BR is the widest tenant pool. Aircraft noise mildly deters some tenants but rental demand here is consistently deep.",
+    "appreciation_assessment": "6.8%/yr resale-only CAGR on 64 transactions is well above the RCR ~5.8% baseline and credible. PSF below district median leaves room. Airbase relocation is a multi-year structural tailwind.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 6.0,
+    "appreciation_rate_source": "URA resale-only CAGR (6.8%) discounted modestly for top-of-band pricing and airbase-noise overhang until relocation"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 12,
+   "project_name": "Northvale",
+   "district": "D23",
+   "beds": 2,
+   "price": 1188888,
+   "psf": 913.12,
+   "sqft": 1302.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 1998,
+   "mrt_info": "6 min (460 m) from JS1 Choa Chu Kang MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-25292807",
+   "technical": {
+    "mmr": 1551.0,
+    "score_1000": 807,
+    "elo": 2115,
+    "record": "404-19-1",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.3218441657309175,
+    "ura_resale_only_pct_yr": 7.3218441657309175,
+    "ura_txn_count": 112,
+    "ura_median_psf": 1102.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "An unusually large 1,302 sqft 2BR at just $913 psf (17% below the $1,102 median) for under $1.19M, sitting 460m from Choa Chu Kang MRT/JRL interchange with a strong 7.3%/yr resale CAGR on 112 transactions. The defining risk is age: 1998 build on a 1995 lease, leaving roughly 68 years — within a decade of the 60-year financing cliff. Low absolute price and JRL catalyst make it interesting, but the lease decay caps the verdict.",
+    "rating": "Neutral",
+    "rating_rationale": "The price and PSF look outstanding (913 vs 1,102 median, sub-$1.2M, 1,302 sqft), the txn sample is robust (112) and CCK gets the Jurong Region Line (~2028) plus interchange status — all genuine positives. But the 99-yr lease commenced 1995, so ~68 years remain in 2026; by a 5-7 year exit the buyer faces a ~61-63 year lease nearing the 60-year financing/CPF restriction threshold, which structurally compresses the future buyer pool and is the real reason the PSF is so low. The high historical CAGR partly reflects a low base, not durable quality. D23 is OCR with a ~3.7% baseline; the catalyst helps but does not erase lease decay. Balanced — a value play with a hard ceiling.",
+    "red_flags": [
+     "Lease from 1995, ~68 years left — approaching the 60-year financing/CPF cliff within the hold-plus-exit horizon",
+     "OCR D23 with a 3.7% structural baseline; high past CAGR partly a low-base artifact",
+     "Reviews flag recent maintenance decline (non-working landscape lights, water features out of service) — MCST sinking-fund due diligence needed",
+     "Very large 1,302 sqft for a 2BR may reflect old-stock inefficiency rather than a premium"
+    ],
+    "catalysts": [
+     "Jurong Region Line (~2028) and existing CCK interchange — direct MRT uplift 460m away",
+     "Sub-$1.19M entry with deep HDB-upgrader buyer base keeps it liquid near-term",
+     "Choa Chu Kang Park frontage and large patio ground units appeal to families"
+    ],
+    "rental_assessment": "OCR heartland rental — steady but yield-modest tenant pool of CCK families and commuters. Large unit rents reasonably but per-psf rent is low. Adequate, not a draw.",
+    "appreciation_assessment": "7.3%/yr CAGR is real but flattered by a low base and the MRT/JRL story. Lease decay will increasingly work against PSF growth as the lease drops toward 60 years, capping medium-term upside.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 3.5,
+    "appreciation_rate_source": "OCR baseline ~3.7% discounted for accelerating lease decay (sub-60-yr cliff within exit horizon), against the 7.3% URA CAGR which is low-base flattered"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 13,
+   "project_name": "Sims Urban Oasis",
+   "district": "D14",
+   "beds": 2,
+   "price": 1400000,
+   "psf": 1688.78,
+   "sqft": 829.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2017,
+   "mrt_info": "5 min (450 m) from EW9 Aljunied MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-urban-oasis-24237046",
+   "technical": {
+    "mmr": 1553.7,
+    "score_1000": 821,
+    "elo": 2101,
+    "record": "390-26-8",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 4.228735282467766,
+    "ura_resale_only_pct_yr": 4.228735282467766,
+    "ura_txn_count": 347,
+    "ura_median_psf": 1954.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A liquid, rental-grade 829 sqft 2BR at $1,688 psf — a sizeable 14% below the $1,954 median — in a 2017 development 450m from Aljunied MRT (East-West Line). Exceptional liquidity (347 URA transactions) and a strong rental location offset a modest 4.2%/yr appreciation and only basic finishes. A pragmatic income-and-exit play rather than a capital-growth star.",
+    "rating": "Buy",
+    "rating_rationale": "The standout is liquidity: 347 transactions is the deepest in the batch, so exit risk is minimal, and the $1.4M price sits squarely in the liquid band. PSF is meaningfully below median (1,688 vs 1,954), and Aljunied (EW9) + city-fringe location drives genuinely strong rental demand. Tempered by the lowest appreciation in the batch (4.2%/yr, below RCR baseline despite D14), basic material quality per reviews, small bedrooms, and audible jet-engine noise. A solid Buy for yield + easy exit, not a growth pick.",
+    "red_flags": [
+     "Lowest appreciation in batch at 4.2%/yr — below the RCR ~5.8% baseline",
+     "Reviews cite basic materials/fittings and small bedrooms",
+     "Aircraft/jet-engine noise reported (Paya Lebar flight path) and congestion at entry/exit at peak",
+     "Some resident complaints on management/security (parcel theft)"
+    ],
+    "catalysts": [
+     "450m to EW9 Aljunied MRT — direct city-fringe access drives durable rental demand",
+     "Paya Lebar Central proximity and airbase relocation (~2030) support medium-term D14 upside",
+     "Very deep transaction liquidity (347 URA txns) minimizes exit risk"
+    ],
+    "rental_assessment": "Best-in-batch rental profile: EW Line access, city-fringe, broad 2BR tenant pool of working professionals. High occupancy and strong gross yield are the core reason to own this unit.",
+    "appreciation_assessment": "4.2%/yr resale CAGR on a large 347-txn sample is reliable but unexciting; the project is priced for income, not growth. Below-median PSF gives some cushion but I would underwrite low-single-digit appreciation.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 4.2,
+    "appreciation_rate_source": "URA resale-only CAGR on a large 347-txn sample — taken at face value"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 14,
+   "project_name": "The Gardens at Bishan",
+   "district": "D20",
+   "beds": 2,
+   "price": 1700000,
+   "psf": 1243.6,
+   "sqft": 1367.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "3 min (280 m) from CR13 Bright Hill MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500146707",
+   "technical": {
+    "mmr": 1563.0,
+    "score_1000": 862,
+    "elo": 2096,
+    "record": "399-25-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.02156681518975,
+    "ura_resale_only_pct_yr": 7.02156681518975,
+    "ura_txn_count": 137,
+    "ura_median_psf": 1805.5,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "The strongest entry in the batch: a very large 1,367 sqft 2BR at just $1,243 psf — a remarkable 31% below the $1,805 median — only 280m from Bright Hill MRT (Thomson-East Coast Line, becoming a Cross Island Line interchange by 2030). Backed by 7.0%/yr resale CAGR on 137 transactions, 756 units of liquidity, and documented 27.6% post-MRT-opening uplift. The deep PSF discount almost certainly reflects an oversized/old-stock layout, so verify the actual unit, but the value and catalyst stack is exceptional.",
+    "rating": "Strong Buy",
+    "rating_rationale": "Best top-1000 score in the batch (862) and the case is fundamentally sound: 280m to a TEL station that becomes a CRL interchange by 2030 (a top-tier future-infrastructure catalyst), 7.0%/yr resale CAGR on a healthy 137-txn sample, 756-unit liquidity, and a proven 27.6% price rise since Bright Hill opened in 2021. PSF of $1,243 vs $1,805 median is a 31% gap — partly an oversized 1,367 sqft 2BR (efficiency caveat) but still deep value with a generous absolute size. Schools (Ai Tong, Catholic High) and Bishan Park add own-stay resale demand. Only minor concerns (parking, lease from 1997). Clears the Strong Buy bar.",
+    "red_flags": [
+     "1,367 sqft for a 2BR is oversized — verify it is not an awkward/dual-key layout; PSF discount partly reflects this",
+     "Resident reports of limited parking",
+     "99-yr lease from 1997, ~70 years remaining — monitor over a longer hold"
+    ],
+    "catalysts": [
+     "280m to Bright Hill MRT — TEL now, Cross Island Line interchange by ~2030 (strongest infra catalyst in batch)",
+     "27.6% resale uplift already realized since Bright Hill opened in 2021, with CRL re-rating still ahead",
+     "Top-tier school catchment (Ai Tong, Catholic High) and Bishan/Thomson amenity deepen resale demand",
+     "756-unit development — high liquidity and broad buyer base"
+    ],
+    "rental_assessment": "Direct TEL access to Orchard/CBD plus family-school catchment supports steady rental demand; large 2BR/dual-key configs rent well to families. Yield modest on PSF but demand durable.",
+    "appreciation_assessment": "7.0%/yr resale CAGR on 137 txns, with a structural CRL interchange catalyst (2030) not yet fully priced. Below-median PSF and proven MRT-driven re-rating support continued outperformance versus the D20 base.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 6.5,
+    "appreciation_rate_source": "URA resale-only CAGR (7.0%) lightly trimmed for lease age, supported by documented 27.6% post-MRT uplift and pending CRL interchange"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 15,
+   "project_name": "Sunglade",
+   "district": "D19",
+   "beds": 2,
+   "price": 1800000,
+   "psf": 1724.14,
+   "sqft": 1044.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2003,
+   "mrt_info": "5 min (430 m) from NE12 Serangoon MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-sunglade-500029122",
+   "technical": {
+    "mmr": 1521.5,
+    "score_1000": 611,
+    "elo": 2066,
+    "record": "396-28-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.394092378577932,
+    "ura_resale_only_pct_yr": 7.394092378577932,
+    "ura_txn_count": 82,
+    "ura_median_psf": 1705.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A well-built CapitaLand 1,044 sqft 2BR at $1,724 psf, essentially at the $1,705 median (no PSF discount), 430m from Serangoon MRT (NEL/CCL interchange). Strong 7.4%/yr resale CAGR on 82 txns and a quality, well-maintained estate, but $1.8M at full median PSF leaves little entry cushion, and the score_1000 of 611 is the weakest in the batch. A fair-priced quality asset rather than a value buy.",
+    "rating": "Neutral",
+    "rating_rationale": "Genuinely good fundamentals — CapitaLand build quality (marble/granite finishes, well-kept after 20+ years), 430m to the Serangoon NEL/Circle Line interchange (NEX mall), and 7.4%/yr resale CAGR. But the listing is priced AT the URA median ($1,724 vs $1,705), so there is no value gap to capture, and at $1.8M the entry is high for a 2003 leasehold 2BR. The technical score (611, lowest in batch) flags that the price already reflects the quality. Solid hold but not asymmetric — the upside is paid for. Neutral.",
+    "red_flags": [
+     "Priced at the URA median (no PSF discount) — buying at fair value, not a discount",
+     "$1.8M is high for a 2003 99-yr-leasehold 2BR; lease from 2000, ~74 years left",
+     "Lowest technical score_1000 in the batch (611), signalling limited margin of safety"
+    ],
+    "catalysts": [
+     "430m to Serangoon NEL/Circle Line interchange and NEX mall — prime connectivity",
+     "CapitaLand build quality and well-run MCST support resale resilience",
+     "Established Serangoon estate with steady upgrader and tenant demand"
+    ],
+    "rental_assessment": "Serangoon interchange + NEX retail underpin reliable rental demand; 1,044 sqft 2BR suits couples and small families. Yield compressed by the high $1.8M entry.",
+    "appreciation_assessment": "7.4%/yr historical CAGR is strong, but with the listing already at median PSF much of the re-rating is realized. I would underwrite mid-single-digit forward appreciation, in line with RCR/established-D19 norms.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "URA CAGR 7.4% discounted to mid-single digits because the unit is already priced at median PSF (re-rating largely realized)"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 16,
+   "project_name": "Suites @ Topaz",
+   "district": "D12",
+   "beds": 2,
+   "price": 1550000,
+   "psf": 1059.47,
+   "sqft": 1463.0,
+   "tenure": "Freehold",
+   "built_year": 2013,
+   "mrt_info": "9 min (750 m) from NE10 Potong Pasir MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-topaz-500134972",
+   "technical": {
+    "mmr": 1553.3,
+    "score_1000": 819,
+    "elo": 2065,
+    "record": "388-29-7",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 7.516045071403887,
+    "ura_resale_only_pct_yr": 7.516045071403887,
+    "ura_txn_count": 15,
+    "ura_median_psf": 1742.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A freehold 1,463 sqft 2BR at a headline-cheap $1,059 psf (39% below the $1,742 median) in a tiny 46-unit Kallang development, 750m from Potong Pasir MRT. The freehold tenure and absolute size are attractive, but only 46 units and 15 URA transactions make this acutely illiquid, the odd 1,463 sqft 2BR likely reflects a strata/layout anomaly, and the 7.5% CAGR rests on a statistically thin sample. Too much exit and data risk for an investment hold.",
+    "rating": "Avoid",
+    "rating_rationale": "On paper the PSF discount and freehold tenure look compelling, but the discount is largely an artifact of (a) a 46-unit boutique block with essentially no liquidity and (b) an anomalously large 1,463 sqft '2BR' that distorts the per-sqft comparison versus the 1,742 median (which is dominated by normal-sized units). Only 15 URA transactions means both the median and the 7.5% CAGR are statistically unreliable, and 750m to Potong Pasir is a soft MRT link. For a 5-7 year investment where exit liquidity is critical, a 46-unit/15-txn asset is the textbook illiquidity trap. The freehold and low absolute price don't compensate. Avoid.",
+    "red_flags": [
+     "Only 46 units — boutique block, structurally illiquid with thin amenities",
+     "Just 15 URA transactions — median PSF and 7.5% CAGR both statistically unreliable",
+     "1,463 sqft for a 2BR is anomalous — likely layout/strata quirk inflating the apparent PSF discount",
+     "750m to Potong Pasir MRT is a weak connectivity link versus batch peers"
+    ],
+    "catalysts": [
+     "Freehold tenure removes lease-decay risk",
+     "Low absolute price ($1.55M) for a freehold city-fringe unit",
+     "Well-maintained small estate (4.6/5 resident rating)"
+    ],
+    "rental_assessment": "City-fringe D12 has reasonable tenant demand, but a 46-unit block offers no facilities draw and the unusual large layout narrows the tenant fit. Rental serviceable, not a strength.",
+    "appreciation_assessment": "The 7.5% CAGR is built on only 15 transactions and is not dependable. Freehold provides a floor, but illiquidity will suppress realized appreciation and widen the bid-ask on exit.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 3.5,
+    "appreciation_rate_source": "URA 7.5% CAGR disregarded as statistically thin (15 txns); reverting to a conservative freehold city-fringe rate given illiquidity"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 17,
+   "project_name": "The Florence Residences",
+   "district": "D19",
+   "beds": 2,
+   "price": 1300000,
+   "psf": 1610.9,
+   "sqft": 807.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2023,
+   "mrt_info": "11 min (910 m) from CR8 Hougang MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-florence-residences-60061771",
+   "technical": {
+    "mmr": 1558.8,
+    "score_1000": 844,
+    "elo": 2057,
+    "record": "395-18-11",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 2.1614455382118924,
+    "ura_resale_only_pct_yr": 4.882447076598084,
+    "ura_txn_count": 753,
+    "ura_median_psf": 1888.5,
+    "has_new_launch_bias": true
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A newish (2024 TOP) 807 sqft 2BR at $1,610 psf in a large 1,410-unit Kovan development, 910m from the future Hougang CRL station. After stripping developer-pricing inflation the system marks bias-adjusted appreciation at just 2.2%/yr (resale-only 4.9%), and the unit is 910m from MRT with reported marble-flooring defects. Large liquid project but modest growth runway and a soft MRT link — a balanced Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "Positives: a large, modern 1,410-unit project (deep liquidity, full facilities), $1.3M entry in the liquid band, the 80m lagoon/condo-in-a-park product, and proximity to the future Hougang CRL interchange. But the new-launch bias is real — the system's bias-adjusted appreciation is only 2.2%/yr versus a 4.9% resale-only figure, and as a 2024-TOP project recent buyers paid full developer pricing, leaving limited near-term upside on a 5-7 year hold. The 807 sqft unit at $1,610 psf is below the $1,888 median but that median is inflated by larger/newer mix. Add reported defects (discoloured/cracked marble) and a 910m MRT walk, and it lands squarely Neutral.",
+    "red_flags": [
+     "New-launch developer-pricing inflation — bias-adjusted appreciation only 2.2%/yr; recent buyers paid full price, capping near-term upside",
+     "910m to the (future) Hougang CRL station — soft walking link, and CRL not operational until ~2030",
+     "Reported build defects: discoloured and cracked marble flooring in some units",
+     "Smaller 2BR layouts lack store/yard, reducing functional appeal"
+    ],
+    "catalysts": [
+     "Future Hougang Cross Island Line interchange (~2030) within the broader catchment",
+     "Large 1,410-unit project with strong facilities (80m lagoon) and deep resale/rental liquidity",
+     "Kovan/Hougang heartland amenity and schools support family demand"
+    ],
+    "rental_assessment": "Large project and Kovan location give a steady tenant pool, but 910m to MRT and abundant 2BR supply within the same development create internal rental competition that pressures rates and occupancy.",
+    "appreciation_assessment": "Underwrite the bias-adjusted ~2-3%/yr, not the 4.9% resale figure or any portal headline CAGR — as a fresh-TOP project the developer premium is already in the price. CRL is a 2030 catalyst but partly anticipated.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 3.0,
+    "appreciation_rate_source": "System bias-adjusted rate (2.2%) nudged up slightly for the CRL catalyst; resale-only 4.9% not used to avoid re-introducing new-launch inflation"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 18,
+   "project_name": "Rio Vista",
+   "district": "D19",
+   "beds": 2,
+   "price": 1288000,
+   "psf": 1220.85,
+   "sqft": 1055.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500074517",
+   "technical": {
+    "mmr": 1543.6,
+    "score_1000": 766,
+    "elo": 2038,
+    "record": "396-26-2",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.4597120503658845,
+    "ura_resale_only_pct_yr": 6.4597120503658845,
+    "ura_txn_count": 125,
+    "ura_median_psf": 1207.5,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 1,055 sqft 2BR at $1,220 psf, essentially at the $1,207 median, in a 2004 waterfront-themed Hougang development with a healthy 6.5%/yr resale CAGR on 125 txns. The decisive weakness is location: no MRT within walking distance (the dossier carries no MRT info), plus a 2001 lease (~74 yrs) heading toward the 60-year cliff and reports of declining management. Low absolute price but the no-MRT liquidity penalty and at-median pricing keep this Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "The 6.5%/yr CAGR on 125 transactions and a sub-$1.3M entry are real positives, and the unit is priced at fair value ($1,220 vs $1,207 median). But Rio Vista is not within walking distance of any MRT — a persistent liquidity and rental drag that the strong historical CAGR (partly a low-base/Hougang-wide effect) does not offset. Lease from 2001 (~74 yrs) will cross below 60 years around 2040, weighing on the buyer pool over time, and reviews note recent management/security decline requiring MCST due diligence. Fair-priced but location-handicapped — Neutral.",
+    "red_flags": [
+     "No MRT within walking distance — material liquidity and rental handicap versus batch peers",
+     "Lease from 2001 (~74 yrs); approaches the 60-year financing cliff ~2040",
+     "Reviews report deteriorating management/security after an MCST manager change",
+     "Priced at the median PSF — no value cushion"
+    ],
+    "catalysts": [
+     "Low absolute entry (sub-$1.3M) with deep HDB-upgrader buyer base in Hougang",
+     "Waterfront/leafy product differentiates it within the local resale market",
+     "Broad Hougang/Punggol catchment growth (PDD, CRL) lifts the wider area"
+    ],
+    "rental_assessment": "Without an MRT walk, rental demand leans on car-owning families and is weaker per-dollar than MRT-adjacent peers. Yield acceptable on the low price but tenant pool is narrower.",
+    "appreciation_assessment": "6.5%/yr CAGR is solid but flattered by area-wide gains and a low base; the no-MRT location and lease decay will cap forward appreciation. Underwrite mid-single-digit at best.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.0,
+    "appreciation_rate_source": "URA CAGR 6.5% discounted for no-MRT liquidity handicap and accelerating lease decay toward the 60-year cliff"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 19,
+   "project_name": "Beacon Heights",
+   "district": "D12",
+   "beds": 2,
+   "price": 1350000,
+   "psf": 1511.76,
+   "sqft": 893.0,
+   "tenure": "999-year Leasehold",
+   "built_year": 2012,
+   "mrt_info": "14 min (1.21 km) from NE9 Boon Keng MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-beacon-heights-500123806",
+   "technical": {
+    "mmr": 1557.3,
+    "score_1000": 838,
+    "elo": 2038,
+    "record": "392-24-8",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.893373967469363,
+    "ura_resale_only_pct_yr": 6.893373967469363,
+    "ura_txn_count": 45,
+    "ura_median_psf": 1704.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A near-freehold (999-yr) 893 sqft 2BR at $1,511 psf — ~11% below the $1,704 median — in a well-regarded 2012 Kallang development with a 50m pool, double-glazed windows and strong build reputation, on a healthy 6.9%/yr resale CAGR. The 999-yr tenure and quality are real advantages; the offsets are a 1.21km MRT walk, a smallish 212-unit/45-txn liquidity profile, and city-fringe pricing already at $1.35M. Quality near-freehold value with a connectivity caveat — a measured Buy.",
+    "rating": "Buy",
+    "rating_rationale": "999-year tenure effectively removes lease-decay risk, the project reviews well (best-looking in the area, 50m pool, tennis, double-glazed windows that cut road noise), and PSF at $1,511 is a genuine ~11% discount to the $1,704 median with a credible 6.9%/yr resale CAGR. D12 city-fringe gives durable demand. Held to Buy (not Strong Buy) by the 1.21km walk to Boon Keng MRT, a moderate 212-unit / 45-txn liquidity base, and the fact that absolute value depends on the unit being a true 893 sqft 2BR. On balance the near-freehold tenure plus discount outweigh the soft MRT link.",
+    "red_flags": [
+     "1.21km to Boon Keng MRT — beyond comfortable walking distance, weaker than MRT-adjacent peers",
+     "212 units and only 45 URA transactions — moderate liquidity, thinner exit pool",
+     "City-fringe at $1.35M leaves a modest, not large, value cushion"
+    ],
+    "catalysts": [
+     "999-year tenure — quasi-freehold, no meaningful lease decay",
+     "Strong build/facilities reputation (50m pool, double-glazed windows) supports resale resilience",
+     "City-fringe D12 with redevelopment momentum in Kallang/Bendemeer supports demand",
+     "PSF ~11% below district median gives entry cushion"
+    ],
+    "rental_assessment": "City-fringe location and quality facilities support steady rental demand, though the 1.2km MRT walk caps the premium tenant pool versus station-adjacent options. Reasonable yield at this price.",
+    "appreciation_assessment": "6.9%/yr resale CAGR is solid and the 999-yr tenure protects long-term value; below-median PSF supports continued re-rating. The MRT distance limits catalyst-driven upside, so underwrite steady mid-single-digit appreciation.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale-only CAGR (6.9%) lightly trimmed for MRT-distance liquidity drag; 999-yr tenure supports durability"
+   }
+  },
+  {
+   "bracket": "2BR",
+   "bracket_rank": 20,
+   "project_name": "Vacanza @ East",
+   "district": "D14",
+   "beds": 2,
+   "price": 888000,
+   "psf": 1585.71,
+   "sqft": 560.0,
+   "tenure": "Freehold",
+   "built_year": 2014,
+   "mrt_info": "13 min (1.06 km) from EW6 Kembangan MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-vacanza-east-500132079",
+   "technical": {
+    "mmr": 1545.5,
+    "score_1000": 777,
+    "elo": 2020,
+    "record": "395-28-1",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 5.308596457685488,
+    "ura_resale_only_pct_yr": 5.308596457685488,
+    "ura_txn_count": 122,
+    "ura_median_psf": 1628.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A freehold but tiny 560 sqft 'shoebox' 2BR at $1,585 psf (slightly below the $1,628 median) for a low absolute $888k, in a 2014 Bedok/Eunos development 1.06km from Kembangan MRT. Freehold tenure and a sub-$900k entry give a wide buyer base, but 560 sqft is extremely compact for a 2BR (compromised livability), appreciation is a moderate 5.3%/yr, the MRT is a 1km walk, and reviews flag PIE-facing heat/noise and weak management. A niche low-ticket play — Neutral.",
+    "rating": "Neutral",
+    "rating_rationale": "The freehold tenure and $888k absolute price are genuine liquidity positives (sub-$900k attracts a deep entry-level buyer pool), and PSF is marginally below the $1,628 median with a fair 122-txn sample. But 560 sqft for a '2BR' is a true shoebox — cramped rooms, limited own-stay appeal, and a tenant fit narrowed to single professionals/couples. Appreciation at 5.3%/yr is only average for freehold D14, the 1.06km MRT walk is a drag, and reviews cite PIE-facing units with 10 hours of direct sun plus noise/dust and poor management. Freehold floor and low ticket balance the shoebox and location handicaps — Neutral.",
+    "red_flags": [
+     "560 sqft is a shoebox for a 2BR — cramped, limited own-stay and family appeal",
+     "1.06km to Kembangan MRT — beyond comfortable walking distance",
+     "Reviews: PIE-facing stacks get ~10 hrs direct sun (hot), plus noise/dust, and poor management/slow repairs",
+     "Moderate 5.3%/yr appreciation — unremarkable for freehold D14"
+    ],
+    "catalysts": [
+     "Freehold tenure — no lease decay, supports long-term value floor",
+     "Low $888k entry attracts a deep entry-level/investor buyer pool, aiding liquidity",
+     "D14 catalysts (Paya Lebar Central, airbase relocation ~2030) lift the broader area"
+    ],
+    "rental_assessment": "Shoebox 2BR rents to single professionals/couples; freehold East-side appeal helps, but the 1km MRT walk and small size cap rate and tenant breadth. Yield decent on the low price.",
+    "appreciation_assessment": "5.3%/yr resale CAGR on 122 txns is reliable but middling; freehold gives a floor while the shoebox format and MRT distance limit upside. Underwrite low-to-mid single digits.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "URA resale-only CAGR (5.3%) trimmed for shoebox-format and MRT-distance demand constraints; freehold tenure supports durability"
+   }
+  }
+ ]
+}

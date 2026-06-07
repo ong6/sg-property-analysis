@@ -1,0 +1,123 @@
+{
+  "condo": "The Trumps",
+  "slug": "the-trumps",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A massive 3068sqft 3BR at $3.55M, only $1157 psf — but the low PSF is purely a size artifact, and the $3.55M total sits well above the liquid buyer band. Just 190m from Kembangan MRT in a small 189-unit, 2005-vintage development with only 45 URA transactions. Niche, illiquid and aging.",
+      "rating_rationale": "For an investment hold this is the wrong risk profile despite a good location. $3.55M is far above the $1.8-2.5M deep-pool band, so the exit pool is shrunken to a handful of buyers wanting a 3000+sqft leasehold near Kembangan. Only 45 transactions (thin liquidity), a small 189-unit development, and a 2005 build (21 years old, ~78yr lease remaining) all compound exit risk. The 7.14%/yr CAGR and MRT-frontage are genuine positives that prevent an Avoid, but oversized + high-absolute-price + thin liquidity is a Neutral at best for investment.",
+      "red_flags": [
+        "$3.55M total well outside the liquid band — very thin buyer pool",
+        "Only 45 URA transactions — weak liquidity/exit confidence",
+        "Small 189-unit development; 2005 vintage, lease decay underway",
+        "3068sqft is far oversized for an investment unit (poor yield-per-dollar)"
+      ],
+      "catalysts": [
+        "190m to Kembangan MRT (EW line) — strong location",
+        "Paya Lebar Central / airbase relocation lifting D14",
+        "Low PSF leaves nominal room if a large-family buyer materializes"
+      ],
+      "as_of": {
+        "price": 3550000,
+        "psf": 1157.11,
+        "beds": 3,
+        "sqft": 3068.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A massive 3068sqft 3BR at $3.55M, only $1157 psf — but the low PSF is purely a size artifact, and the $3.55M total sits well above the liquid buyer band. Just 190m from Kembangan MRT in a small 189-unit, 2005-vintage development with only 45 URA transactions. Niche, illiquid and aging.",
+        "rating": "Neutral",
+        "rating_rationale": "For an investment hold this is the wrong risk profile despite a good location. $3.55M is far above the $1.8-2.5M deep-pool band, so the exit pool is shrunken to a handful of buyers wanting a 3000+sqft leasehold near Kembangan. Only 45 transactions (thin liquidity), a small 189-unit development, and a 2005 build (21 years old, ~78yr lease remaining) all compound exit risk. The 7.14%/yr CAGR and MRT-frontage are genuine positives that prevent an Avoid, but oversized + high-absolute-price + thin liquidity is a Neutral at best for investment.",
+        "red_flags": [
+          "$3.55M total well outside the liquid band — very thin buyer pool",
+          "Only 45 URA transactions — weak liquidity/exit confidence",
+          "Small 189-unit development; 2005 vintage, lease decay underway",
+          "3068sqft is far oversized for an investment unit (poor yield-per-dollar)"
+        ],
+        "catalysts": [
+          "190m to Kembangan MRT (EW line) — strong location",
+          "Paya Lebar Central / airbase relocation lifting D14",
+          "Low PSF leaves nominal room if a large-family buyer materializes"
+        ],
+        "rental_assessment": "A 3068sqft leasehold rents to a narrow high-budget family segment; gross yield will be low (likely <2.5%) on $3.55M. Weak investment yield.",
+        "appreciation_assessment": "7.14%/yr CAGR is encouraging but rests on just 45 txns; at $3.55M the unit must find a scarce buyer to realize gains, so the practical appreciation is liquidity-constrained.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA CAGR (45 txns) discounted heavily for thin liquidity and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trumps-500161977",
+        "review_file": "batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "189-unit D14 leasehold (2005) literally 190m from EW6 Kembangan MRT, 2BR at $1.70M / $1,790psf on 947sqft. Excellent transit access, well-maintained, bright floor-to-ceiling layouts, and a strong 7.14% URA CAGR. Asking is right on the $1,802 median (fair). Main constraint is the small 189-unit size and thin 45-txn data.",
+      "rating_rationale": "Top-tier location — 190m covered walk to Kembangan EW6 on the East-West line — plus a strong 7.14%/yr URA and an asking price ($1,790psf) essentially at the $1,802 median means you are not overpaying. Arena score (757) and frontier status corroborate good value. The 189-unit count and 45-transaction sample are the real caveats (thinner liquidity, less reliable rate), but the unbeatable MRT proximity in a CBD-accessible corridor keeps demand broad. Solid Buy with the small-dev caveat.",
+      "red_flags": [
+        "Small 189-unit development — thinner resale pool",
+        "URA rate from only 45 transactions — lower statistical confidence",
+        "2005 build (~21 yrs) — watch for ageing-asset capex",
+        "EW-line-adjacent stacks may carry some rail/road noise"
+      ],
+      "catalysts": [
+        "190m to EW6 Kembangan MRT — direct East-West line, covered walkway",
+        "Asking at URA median = fair entry with 7.14% historic appreciation",
+        "Paya Lebar Central / airbase relocation upside (D14)"
+      ],
+      "as_of": {
+        "price": 1695000,
+        "psf": 1789.86,
+        "beds": 2,
+        "sqft": 947.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "189-unit D14 leasehold (2005) literally 190m from EW6 Kembangan MRT, 2BR at $1.70M / $1,790psf on 947sqft. Excellent transit access, well-maintained, bright floor-to-ceiling layouts, and a strong 7.14% URA CAGR. Asking is right on the $1,802 median (fair). Main constraint is the small 189-unit size and thin 45-txn data.",
+        "rating": "Buy",
+        "rating_rationale": "Top-tier location — 190m covered walk to Kembangan EW6 on the East-West line — plus a strong 7.14%/yr URA and an asking price ($1,790psf) essentially at the $1,802 median means you are not overpaying. Arena score (757) and frontier status corroborate good value. The 189-unit count and 45-transaction sample are the real caveats (thinner liquidity, less reliable rate), but the unbeatable MRT proximity in a CBD-accessible corridor keeps demand broad. Solid Buy with the small-dev caveat.",
+        "red_flags": [
+          "Small 189-unit development — thinner resale pool",
+          "URA rate from only 45 transactions — lower statistical confidence",
+          "2005 build (~21 yrs) — watch for ageing-asset capex",
+          "EW-line-adjacent stacks may carry some rail/road noise"
+        ],
+        "catalysts": [
+          "190m to EW6 Kembangan MRT — direct East-West line, covered walkway",
+          "Asking at URA median = fair entry with 7.14% historic appreciation",
+          "Paya Lebar Central / airbase relocation upside (D14)"
+        ],
+        "appreciation_assessment": "7.14%/yr is strong but rests on a thin 45-txn sample — treat as indicative; MRT-doorstep location underpins durable demand.",
+        "rental_assessment": "MRT-at-doorstep 2BR rents reliably to CBD commuters; one of the better rental legs in the batch. Yield ~3%.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only 7.14% discounted modestly for thin 45-txn sample"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trumps-500061041",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

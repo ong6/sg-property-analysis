@@ -1,0 +1,65 @@
+{
+  "condo": "Coco Palms",
+  "slug": "coco-palms",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A CDL-built 1,098 sqft 3BR in Pasir Ris, 480m from Pasir Ris MRT/interchange, asking $1,685 PSF — marginally below the $1,696 median, with a healthy 6.3% URA resale CAGR over 234 transactions. The fundamentals are sound and well-priced, but the cluster of ~3,000 CDL units in Pasir Ris Grove (Coco Palms, plus siblings) and further upcoming supply create persistent rental and resale competition that holds this to a solid Buy rather than Strong.",
+      "rating_rationale": "Good value-for-quality: large 944-unit CDL development gives strong liquidity, $1.85M quantum sits in the deep buyer band, $1,685 PSF is just under the $1,696 median (no overpay), and a 6.3% URA resale-only CAGR over a deep 234 transactions evidences real demand. 480m to Pasir Ris MRT plus the future RTS/interchange improvements support D18. Capped at Buy by the well-documented Pasir Ris Grove supply overhang — 3,000+ CDL units clustered together plus additional plots slated nearer the MRT — which intensifies rental competition and could cap resale pricing power; score 711 is good but off-frontier.",
+      "red_flags": [
+        "Pasir Ris Grove supply overhang — ~3,000 clustered CDL units plus further plots slated nearer the MRT, pressuring rents and resale",
+        "Off the efficient frontier",
+        "OCR location with no freehold/scarcity premium — relies on continued OCR demand"
+      ],
+      "catalysts": [
+        "6.3% URA resale CAGR over a deep 234 txns — well-evidenced demand",
+        "$1,685 PSF just below median, $1.85M in the deepest buyer band",
+        "480m to Pasir Ris MRT/interchange; Pasir Ris town rejuvenation and future connectivity",
+        "Large 944-unit CDL development — strong liquidity and amenities"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1684.88,
+        "beds": 3,
+        "sqft": 1098.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A CDL-built 1,098 sqft 3BR in Pasir Ris, 480m from Pasir Ris MRT/interchange, asking $1,685 PSF — marginally below the $1,696 median, with a healthy 6.3% URA resale CAGR over 234 transactions. The fundamentals are sound and well-priced, but the cluster of ~3,000 CDL units in Pasir Ris Grove (Coco Palms, plus siblings) and further upcoming supply create persistent rental and resale competition that holds this to a solid Buy rather than Strong.",
+        "rating": "Buy",
+        "rating_rationale": "Good value-for-quality: large 944-unit CDL development gives strong liquidity, $1.85M quantum sits in the deep buyer band, $1,685 PSF is just under the $1,696 median (no overpay), and a 6.3% URA resale-only CAGR over a deep 234 transactions evidences real demand. 480m to Pasir Ris MRT plus the future RTS/interchange improvements support D18. Capped at Buy by the well-documented Pasir Ris Grove supply overhang — 3,000+ CDL units clustered together plus additional plots slated nearer the MRT — which intensifies rental competition and could cap resale pricing power; score 711 is good but off-frontier.",
+        "red_flags": [
+          "Pasir Ris Grove supply overhang — ~3,000 clustered CDL units plus further plots slated nearer the MRT, pressuring rents and resale",
+          "Off the efficient frontier",
+          "OCR location with no freehold/scarcity premium — relies on continued OCR demand"
+        ],
+        "catalysts": [
+          "6.3% URA resale CAGR over a deep 234 txns — well-evidenced demand",
+          "$1,685 PSF just below median, $1.85M in the deepest buyer band",
+          "480m to Pasir Ris MRT/interchange; Pasir Ris town rejuvenation and future connectivity",
+          "Large 944-unit CDL development — strong liquidity and amenities"
+        ],
+        "rental_assessment": "Mixed. Family-friendly large 3BR but the Pasir Ris Grove cluster means heavy direct rental competition; achievable rents and occupancy are pressured versus a standalone development. Yield ~3%.",
+        "appreciation_assessment": "Positive but supply-capped. 6.3% historical CAGR is strong, yet ongoing nearby supply limits pricing power; expect appreciation to moderate toward OCR baseline-plus over the hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale CAGR (6.3%) discounted for Pasir Ris Grove supply overhang"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-coco-palms-25592742",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}
