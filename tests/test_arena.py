@@ -29,14 +29,23 @@ class TestArena:
         assert fighters[0].wins == 2 and fighters[0].losses == 0
         assert fighters[0].elo > fighters[-1].elo
 
-    def test_same_project_collapses_to_best_listing(self):
+    def test_same_unit_type_collapses_to_best_listing(self):
         a1 = _fighter_listing("Condo A", _comps(appreciation=5), mmr=1520)
         a2 = _fighter_listing("Condo A", _comps(appreciation=2), mmr=1480)
         b = _fighter_listing("Condo B", _comps(appreciation=-5), mmr=1490)
         fighters = run_arena([a1, a2, b])
-        assert len(fighters) == 2  # A collapsed to one representative
+        assert len(fighters) == 2  # A's two same-type listings collapsed
         rep = next(f for f in fighters if f.name == "Condo A")
         assert rep.listing.mmr == 1520  # best unit chosen
+
+    def test_unit_types_fight_separately(self):
+        a2br = _fighter_listing("Condo A", _comps(appreciation=5), mmr=1520)
+        a2br.beds = 2
+        a3br = _fighter_listing("Condo A", _comps(appreciation=2), mmr=1480)
+        a3br.beds = 3
+        fighters = run_arena([a2br, a3br])
+        assert len(fighters) == 2  # 2BR and 3BR are separate contenders
+        assert {f.beds for f in fighters} == {2, 3}
 
     def test_pareto_frontier_excludes_dominated(self):
         top = _fighter_listing("Top", _comps(appreciation=10, psf_value=10, txn_volume=10,
