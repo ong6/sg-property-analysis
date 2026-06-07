@@ -1,0 +1,121 @@
+{
+  "condo": "Riversails",
+  "slug": "riversails",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The lowest absolute entry in the batch at $1.2M, with $1,359 psf sitting ~8% under the $1,483 URA median, in a large 928-unit 2016 development with good resale depth (228 txns). But it's served only by Kangkar LRT (no MRT), reviews flag space inefficiency, and connectivity is its structural ceiling — a value-led Neutral.",
+      "rating_rationale": "Positives: cheapest entry here ($1.2M), $1,359 psf is ~8% below the $1,483 median, the development is large (928 units) and reasonably young (2016) with healthy 228-txn liquidity and 6.0% resale CAGR. The decisive negative is location: the only rail access is Kangkar LRT (710m), one stop on the Sengkang loop — there is no nearby MRT, which structurally caps tenant pool and resale appeal versus MRT-served D19 peers, and reviews note inefficient/wasteful layouts. Cheap and liquid, but the connectivity ceiling keeps it balanced rather than a buy.",
+      "red_flags": [
+        "LRT-only access (Kangkar LRT, 710m) — no nearby MRT structurally limits tenant/buyer pool",
+        "Resident reviews cite small effective room sizes / layout inefficiency",
+        "OCR fringe D19 location with limited near-term connectivity catalyst"
+      ],
+      "catalysts": [
+        "Lowest absolute entry ($1.2M) and sub-median psf — strong downside buffer",
+        "Large 928-unit base with good transaction depth keeps resale active at the right price",
+        "Riverside/Punggol-fringe greenery appeals to value-seeking families"
+      ],
+      "as_of": {
+        "price": 1199999,
+        "psf": 1359.0,
+        "beds": 2,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The lowest absolute entry in the batch at $1.2M, with $1,359 psf sitting ~8% under the $1,483 URA median, in a large 928-unit 2016 development with good resale depth (228 txns). But it's served only by Kangkar LRT (no MRT), reviews flag space inefficiency, and connectivity is its structural ceiling — a value-led Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: cheapest entry here ($1.2M), $1,359 psf is ~8% below the $1,483 median, the development is large (928 units) and reasonably young (2016) with healthy 228-txn liquidity and 6.0% resale CAGR. The decisive negative is location: the only rail access is Kangkar LRT (710m), one stop on the Sengkang loop — there is no nearby MRT, which structurally caps tenant pool and resale appeal versus MRT-served D19 peers, and reviews note inefficient/wasteful layouts. Cheap and liquid, but the connectivity ceiling keeps it balanced rather than a buy.",
+        "red_flags": [
+          "LRT-only access (Kangkar LRT, 710m) — no nearby MRT structurally limits tenant/buyer pool",
+          "Resident reviews cite small effective room sizes / layout inefficiency",
+          "OCR fringe D19 location with limited near-term connectivity catalyst"
+        ],
+        "catalysts": [
+          "Lowest absolute entry ($1.2M) and sub-median psf — strong downside buffer",
+          "Large 928-unit base with good transaction depth keeps resale active at the right price",
+          "Riverside/Punggol-fringe greenery appeals to value-seeking families"
+        ],
+        "rental_assessment": "Price-led rental to budget family tenants; the LRT-only connectivity is a genuine drag on commuter-tenant demand and achievable rent.",
+        "appreciation_assessment": "6.0% resale CAGR on 228 txns is credible, but absent an MRT/infrastructure catalyst, forward appreciation likely tracks the OCR baseline rather than outperforming.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversails-60231831",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,109 sqft 3BR in Upper Serangoon, asking $1,578 PSF — a ~6% premium to the $1,483 median — at a low $1.75M absolute. The 6.0% resale CAGR (228 txns), 928-unit liquidity and frontier position are positives, but connectivity is weak (only an LRT 710m away, MRT is far), units are noted as space-inefficient, and the above-median ask undercuts the value case, landing it at Neutral.",
+      "rating_rationale": "Positives: $1.75M is the second-lowest quantum in the batch (deep buyer pool), 928 units give strong liquidity, on the efficient frontier, and a 6.0% URA resale CAGR over 228 transactions. But the offsets are real: asking $1,578 PSF is ~6% above the $1,483 median, so you are paying up; connectivity is genuinely poor — the nearest rail is Kangkar LRT 710m/9-min away and the true MRT is a further hop, a structural drag in transit-dependent D19; reviewers flag inefficient layouts/space wastage; and D19's broad new-supply pipeline (Sengkang/Punggol) competes for the same tenant/buyer base. Solid building, but priced above median with a connectivity handicap nets to Neutral.",
+      "red_flags": [
+        "Asking PSF (~$1,578) ~6% above project median (~$1,483)",
+        "Weak connectivity — only Kangkar LRT 710m away; no nearby MRT, transit-dependent location",
+        "Reviewer-noted layout inefficiency / space wastage",
+        "Broad D19 (Sengkang/Punggol) new-supply pipeline competes for tenants and buyers"
+      ],
+      "catalysts": [
+        "Low $1.75M absolute entry keeps it in the deep buyer band",
+        "6.0% URA resale CAGR over 228 txns",
+        "928-unit development — strong liquidity",
+        "Punggol Digital District / CRL broader-D19 tailwinds (indirect)"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1578.0,
+        "beds": 3,
+        "sqft": 1109.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,109 sqft 3BR in Upper Serangoon, asking $1,578 PSF — a ~6% premium to the $1,483 median — at a low $1.75M absolute. The 6.0% resale CAGR (228 txns), 928-unit liquidity and frontier position are positives, but connectivity is weak (only an LRT 710m away, MRT is far), units are noted as space-inefficient, and the above-median ask undercuts the value case, landing it at Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: $1.75M is the second-lowest quantum in the batch (deep buyer pool), 928 units give strong liquidity, on the efficient frontier, and a 6.0% URA resale CAGR over 228 transactions. But the offsets are real: asking $1,578 PSF is ~6% above the $1,483 median, so you are paying up; connectivity is genuinely poor — the nearest rail is Kangkar LRT 710m/9-min away and the true MRT is a further hop, a structural drag in transit-dependent D19; reviewers flag inefficient layouts/space wastage; and D19's broad new-supply pipeline (Sengkang/Punggol) competes for the same tenant/buyer base. Solid building, but priced above median with a connectivity handicap nets to Neutral.",
+        "red_flags": [
+          "Asking PSF (~$1,578) ~6% above project median (~$1,483)",
+          "Weak connectivity — only Kangkar LRT 710m away; no nearby MRT, transit-dependent location",
+          "Reviewer-noted layout inefficiency / space wastage",
+          "Broad D19 (Sengkang/Punggol) new-supply pipeline competes for tenants and buyers"
+        ],
+        "catalysts": [
+          "Low $1.75M absolute entry keeps it in the deep buyer band",
+          "6.0% URA resale CAGR over 228 txns",
+          "928-unit development — strong liquidity",
+          "Punggol Digital District / CRL broader-D19 tailwinds (indirect)"
+        ],
+        "rental_assessment": "Below-average. Poor rail access and a crowded D19 rental market weigh on demand and rents; yield ~3% but with softer occupancy risk than better-connected peers.",
+        "appreciation_assessment": "Moderate. 6.0% historical CAGR is healthy but the above-median ask and weak connectivity cap forward upside; expect OCR-baseline-ish appreciation rather than continued outperformance.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale CAGR (6.0%) discounted for above-median ask and weak connectivity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversails-25562572",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

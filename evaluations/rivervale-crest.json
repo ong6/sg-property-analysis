@@ -1,0 +1,63 @@
+{
+  "condo": "Rivervale Crest",
+  "slug": "rivervale-crest",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Cheapest entry in the batch — D19 Sengkang leasehold (2003), 2BR at $1.10M / $1,111psf on 990sqft, 280m from SE2 Rumbia LRT. Strong 6.23% URA over 93 txns, frontier, high arena score (799). Low quantum is the appeal; the catch is LRT-only access (no MRT) and a deep-OCR Sengkang location with limited near-term catalysts.",
+      "rating_rationale": "At $1.10M / $1,111psf this is genuinely affordable and the 6.23%/yr URA (93 txns) is solid, with asking ($1,111) close to the $1,037 median. But the unit relies on Rumbia LRT, not MRT — a real liquidity/desirability discount versus MRT-served peers — and Sengkang's private-condo appreciation leans on the broader OCR cycle rather than a specific zone catalyst. Good value and easy entry quantum, offset by LRT-only transit and a generic OCR location. Balanced Neutral leaning positive.",
+      "red_flags": [
+        "LRT-only access (Rumbia LRT) — no direct MRT, narrower buyer appeal",
+        "2003 build (~23 yrs) — ageing asset, lease decay",
+        "Deep-OCR Sengkang — appreciation tied to general cycle, no specific catalyst"
+      ],
+      "catalysts": [
+        "Low $1.10M quantum — broadest affordability/upgrader pool",
+        "6.23%/yr historic URA over 93 transactions",
+        "Next to Rivervale Plaza mall; LRT links to Sengkang MRT/interchange"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1111.11,
+        "beds": 2,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Cheapest entry in the batch — D19 Sengkang leasehold (2003), 2BR at $1.10M / $1,111psf on 990sqft, 280m from SE2 Rumbia LRT. Strong 6.23% URA over 93 txns, frontier, high arena score (799). Low quantum is the appeal; the catch is LRT-only access (no MRT) and a deep-OCR Sengkang location with limited near-term catalysts.",
+        "rating": "Neutral",
+        "rating_rationale": "At $1.10M / $1,111psf this is genuinely affordable and the 6.23%/yr URA (93 txns) is solid, with asking ($1,111) close to the $1,037 median. But the unit relies on Rumbia LRT, not MRT — a real liquidity/desirability discount versus MRT-served peers — and Sengkang's private-condo appreciation leans on the broader OCR cycle rather than a specific zone catalyst. Good value and easy entry quantum, offset by LRT-only transit and a generic OCR location. Balanced Neutral leaning positive.",
+        "red_flags": [
+          "LRT-only access (Rumbia LRT) — no direct MRT, narrower buyer appeal",
+          "2003 build (~23 yrs) — ageing asset, lease decay",
+          "Deep-OCR Sengkang — appreciation tied to general cycle, no specific catalyst"
+        ],
+        "catalysts": [
+          "Low $1.10M quantum — broadest affordability/upgrader pool",
+          "6.23%/yr historic URA over 93 transactions",
+          "Next to Rivervale Plaza mall; LRT links to Sengkang MRT/interchange"
+        ],
+        "appreciation_assessment": "6.23%/yr is respectable for OCR, but LRT-only access and no project-specific catalyst argue for OCR-baseline forward expectations rather than continued outperformance.",
+        "rental_assessment": "Sengkang HDB-belt 2BR rental is moderate; tenant pool favours MRT-served stock. Yield ~3.5% helped by the low quantum.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 6.23% trimmed toward OCR baseline for LRT-only access"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-25282406",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

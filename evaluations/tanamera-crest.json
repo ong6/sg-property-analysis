@@ -1,0 +1,117 @@
+{
+  "condo": "Tanamera Crest",
+  "slug": "tanamera-crest",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2004-vintage (22-year-old) 288-unit leasehold in Bedok with a large, low-psf 1,001sqft 2BR at just $1,249 psf and a high 7.10% headline CAGR over 68 transactions. The cheap, spacious entry and Tanah Merah access are appealing, but the aging block (lease ~78yr left, decaying) and reported under-maintenance temper the case to a balanced Neutral.",
+      "rating_rationale": "1,001sqft 2BR at $1.25M / $1,249 psf is near the median ($1,205) but the absolute psf is the lowest in the batch and the unit is unusually large for a 2BR — efficient value for the money. The 7.10% CAGR (68 txns) is the highest here, likely reflecting Bedok/Tanah Merah and TEL-area momentum. Offsetting: built 2004 (~78yr lease remaining and decaying), 950m walk to Tanah Merah, and multiple reviews flag weak maintenance/management on an already-aging estate. Genuine value but real ageing risk over a 5-7yr hold. MMR 1527 / score 652, on frontier.",
+      "red_flags": [
+        "22 years old (2004) — ~78yr lease remaining and decaying; higher maintenance",
+        "Multiple reviews cite poor maintenance/management and dated appearance",
+        "950m walk to Tanah Merah MRT",
+        "288 units — moderate liquidity only"
+      ],
+      "catalysts": [
+        "Lowest psf in batch ($1,249) on a large 1,001sqft unit — value entry",
+        "Highest CAGR in batch (7.10%) — Bedok/Upper East Coast + TEL precinct momentum",
+        "Tanah Merah EW4 / Bedok Reservoir DT30 dual-line access"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1248.75,
+        "beds": 2,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2004-vintage (22-year-old) 288-unit leasehold in Bedok with a large, low-psf 1,001sqft 2BR at just $1,249 psf and a high 7.10% headline CAGR over 68 transactions. The cheap, spacious entry and Tanah Merah access are appealing, but the aging block (lease ~78yr left, decaying) and reported under-maintenance temper the case to a balanced Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "1,001sqft 2BR at $1.25M / $1,249 psf is near the median ($1,205) but the absolute psf is the lowest in the batch and the unit is unusually large for a 2BR — efficient value for the money. The 7.10% CAGR (68 txns) is the highest here, likely reflecting Bedok/Tanah Merah and TEL-area momentum. Offsetting: built 2004 (~78yr lease remaining and decaying), 950m walk to Tanah Merah, and multiple reviews flag weak maintenance/management on an already-aging estate. Genuine value but real ageing risk over a 5-7yr hold. MMR 1527 / score 652, on frontier.",
+        "red_flags": [
+          "22 years old (2004) — ~78yr lease remaining and decaying; higher maintenance",
+          "Multiple reviews cite poor maintenance/management and dated appearance",
+          "950m walk to Tanah Merah MRT",
+          "288 units — moderate liquidity only"
+        ],
+        "catalysts": [
+          "Lowest psf in batch ($1,249) on a large 1,001sqft unit — value entry",
+          "Highest CAGR in batch (7.10%) — Bedok/Upper East Coast + TEL precinct momentum",
+          "Tanah Merah EW4 / Bedok Reservoir DT30 dual-line access"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-60157409",
+        "review_file": "batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A low-quantum (under $1.39M) 1,173 sqft 99LH 3BR in a quiet 288-unit Tanah Merah hilltop enclave, at $1,181 psf roughly in line with the $1,205 district median. Strong 7.1%/yr resale CAGR, but a small boutique base, an 11-min/950m MRT walk and reports of weak maintenance temper the case.",
+      "rating_rationale": "The low $1.385M quantum is the real draw — broadest possible buyer pool and lowest absolute risk in the batch — and the 7.1%/yr resale CAGR is strong. But fundamentals are mixed: only 288 units (thinner liquidity, 68 txns), a long 11-min/950m walk to Tanah Merah MRT, and reviews flagging poor maintenance and a development that looks older than its 2004 age, plus a small pool for resident count. PSF is essentially at median ($1,181 vs $1,205), so there is no real value discount cushioning those weaknesses. Quiet hilltop exclusivity is a livability plus but not an investment catalyst. Nets to Neutral.",
+      "red_flags": [
+        "Boutique 288-unit base — thinner liquidity (68 txns) than 500+ unit peers",
+        "11-min / 950m walk to Tanah Merah MRT — no transit premium",
+        "Reviews cite weak maintenance/management and a dated look despite 2004 vintage"
+      ],
+      "catalysts": [
+        "Low $1.385M quantum = widest buyer pool and lowest absolute downside",
+        "7.1%/yr resale CAGR shows the enclave has appreciated steadily",
+        "Quiet landed-enclave hilltop setting appeals to own-stay buyers at resale"
+      ],
+      "as_of": {
+        "price": 1385000,
+        "psf": 1180.73,
+        "beds": 3,
+        "sqft": 1173.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A low-quantum (under $1.39M) 1,173 sqft 99LH 3BR in a quiet 288-unit Tanah Merah hilltop enclave, at $1,181 psf roughly in line with the $1,205 district median. Strong 7.1%/yr resale CAGR, but a small boutique base, an 11-min/950m MRT walk and reports of weak maintenance temper the case.",
+        "rating": "Neutral",
+        "rating_rationale": "The low $1.385M quantum is the real draw — broadest possible buyer pool and lowest absolute risk in the batch — and the 7.1%/yr resale CAGR is strong. But fundamentals are mixed: only 288 units (thinner liquidity, 68 txns), a long 11-min/950m walk to Tanah Merah MRT, and reviews flagging poor maintenance and a development that looks older than its 2004 age, plus a small pool for resident count. PSF is essentially at median ($1,181 vs $1,205), so there is no real value discount cushioning those weaknesses. Quiet hilltop exclusivity is a livability plus but not an investment catalyst. Nets to Neutral.",
+        "red_flags": [
+          "Boutique 288-unit base — thinner liquidity (68 txns) than 500+ unit peers",
+          "11-min / 950m walk to Tanah Merah MRT — no transit premium",
+          "Reviews cite weak maintenance/management and a dated look despite 2004 vintage"
+        ],
+        "catalysts": [
+          "Low $1.385M quantum = widest buyer pool and lowest absolute downside",
+          "7.1%/yr resale CAGR shows the enclave has appreciated steadily",
+          "Quiet landed-enclave hilltop setting appeals to own-stay buyers at resale"
+        ],
+        "rental_assessment": "Moderate rental demand — distance from MRT and dated facilities cap appeal; quiet enclave suits families over transit-reliant tenants. Yield ordinary.",
+        "appreciation_assessment": "Headline 7.1%/yr is strong but on a thin 68-txn base and with no PSF discount to median; small dev and maintenance drag make sustained outperformance uncertain. Expect district-average appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 7.1%/yr discounted for thin liquidity, MRT distance and maintenance drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500110751",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

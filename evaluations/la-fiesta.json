@@ -1,0 +1,63 @@
+{
+  "condo": "La Fiesta",
+  "slug": "la-fiesta",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Compact 1130sqft 3BR at $1.82M, 180m from Sengkang MRT and bus interchange — unbeatable connectivity in the batch. $1610 psf is ~11% below the La Fiesta median of $1808, and the development has the deepest transaction history here (190 txns) at 6.73%/yr. Some stacks sit close to the LRT (noise); early defects were reportedly resolved.",
+      "rating_rationale": "Location is the thesis: 2-minute walk to Sengkang MRT interchange and mall is a permanent liquidity and rental magnet. ~11% below-median PSF, 190 transactions (highest in batch = strong exit confidence), 6.73%/yr resale CAGR, and a sub-$1.85M price all support a Buy. The 1130sqft layout is efficient but tight for a 3BR, and LRT-proximate stacks carry noise — target stacks facing away from the track. Lowest-risk exit in the D19 group.",
+      "red_flags": [
+        "LRT runs close to some stacks (noise, privacy)",
+        "1130sqft is compact for a 3BR; less family-friendly than peers",
+        "Resident complaints about estate management"
+      ],
+      "catalysts": [
+        "180m to Sengkang MRT interchange + mall — top-tier connectivity",
+        "Deepest transaction liquidity in the batch (190 URA txns)",
+        "Punggol Digital District / CRL strengthening D19 demand"
+      ],
+      "as_of": {
+        "price": 1820000,
+        "psf": 1610.62,
+        "beds": 3,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 1130sqft 3BR at $1.82M, 180m from Sengkang MRT and bus interchange — unbeatable connectivity in the batch. $1610 psf is ~11% below the La Fiesta median of $1808, and the development has the deepest transaction history here (190 txns) at 6.73%/yr. Some stacks sit close to the LRT (noise); early defects were reportedly resolved.",
+        "rating": "Buy",
+        "rating_rationale": "Location is the thesis: 2-minute walk to Sengkang MRT interchange and mall is a permanent liquidity and rental magnet. ~11% below-median PSF, 190 transactions (highest in batch = strong exit confidence), 6.73%/yr resale CAGR, and a sub-$1.85M price all support a Buy. The 1130sqft layout is efficient but tight for a 3BR, and LRT-proximate stacks carry noise — target stacks facing away from the track. Lowest-risk exit in the D19 group.",
+        "red_flags": [
+          "LRT runs close to some stacks (noise, privacy)",
+          "1130sqft is compact for a 3BR; less family-friendly than peers",
+          "Resident complaints about estate management"
+        ],
+        "catalysts": [
+          "180m to Sengkang MRT interchange + mall — top-tier connectivity",
+          "Deepest transaction liquidity in the batch (190 URA txns)",
+          "Punggol Digital District / CRL strengthening D19 demand"
+        ],
+        "rental_assessment": "Directly atop transport and retail — among the easiest D19 units to rent; consistent family and commuter tenant demand. Yield ~3.3-3.7%.",
+        "appreciation_assessment": "6.73%/yr resale CAGR on a large 190-txn sample is dependable. MRT-frontage and high liquidity should keep it tracking the median through the hold.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "URA resale-only CAGR (190 txns, high confidence)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-la-fiesta-500073607",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

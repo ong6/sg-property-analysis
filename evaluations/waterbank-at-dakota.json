@@ -1,0 +1,113 @@
+{
+  "condo": "Waterbank at Dakota",
+  "slug": "waterbank-at-dakota",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Strong fundamentals on paper — D14 RCR location 500m from Dakota MRT, $1,795 psf is ~16% under the $2,144 URA median, low $1.35M entry. But field reviews flag Paya Lebar Airbase military-jet noise and reportedly poor inter-floor insulation/cracking, which cap the verdict. A location-led Neutral, not a clean buy.",
+      "rating_rationale": "The discount (16% below $2,144 median) and Dakota MRT/Old Airport Road lifestyle pull are real positives, and 5.3% resale CAGR on 144 txns is solid mid-pack. But multiple resident reviews cite unbearable F-15/F-16/C-130 military jet noise from Paya Lebar Airbase (weekday + Saturday daytime) and poor build quality — thin floor slabs, wall cracks. These are exactly the qualitative risks the data can't price and they directly weigh on tenant retention and resale. Airbase relocation is a long-dated catalyst (post-2030), not near-term.",
+      "red_flags": [
+        "Paya Lebar Airbase military jet noise reported as severe by residents (daytime weekdays + Saturdays)",
+        "Reported poor build quality: wall cracks and thin inter-floor insulation",
+        "$1,795 psf is high in absolute terms for a 752 sqft 99LH unit despite the median discount"
+      ],
+      "catalysts": [
+        "500m to Dakota MRT (Circle Line) plus Old Airport Road food/lifestyle belt",
+        "Paya Lebar Central commercial transformation (long-dated)",
+        "Airbase relocation (post-2030) would eventually remove the noise overhang"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1795.21,
+        "beds": 2,
+        "sqft": 752.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Strong fundamentals on paper — D14 RCR location 500m from Dakota MRT, $1,795 psf is ~16% under the $2,144 URA median, low $1.35M entry. But field reviews flag Paya Lebar Airbase military-jet noise and reportedly poor inter-floor insulation/cracking, which cap the verdict. A location-led Neutral, not a clean buy.",
+        "rating": "Neutral",
+        "rating_rationale": "The discount (16% below $2,144 median) and Dakota MRT/Old Airport Road lifestyle pull are real positives, and 5.3% resale CAGR on 144 txns is solid mid-pack. But multiple resident reviews cite unbearable F-15/F-16/C-130 military jet noise from Paya Lebar Airbase (weekday + Saturday daytime) and poor build quality — thin floor slabs, wall cracks. These are exactly the qualitative risks the data can't price and they directly weigh on tenant retention and resale. Airbase relocation is a long-dated catalyst (post-2030), not near-term.",
+        "red_flags": [
+          "Paya Lebar Airbase military jet noise reported as severe by residents (daytime weekdays + Saturdays)",
+          "Reported poor build quality: wall cracks and thin inter-floor insulation",
+          "$1,795 psf is high in absolute terms for a 752 sqft 99LH unit despite the median discount"
+        ],
+        "catalysts": [
+          "500m to Dakota MRT (Circle Line) plus Old Airport Road food/lifestyle belt",
+          "Paya Lebar Central commercial transformation (long-dated)",
+          "Airbase relocation (post-2030) would eventually remove the noise overhang"
+        ],
+        "rental_assessment": "Decent tenant demand from CCL connectivity and the Old Airport Road lifestyle draw, but jet noise is a known tenant deterrent that can lengthen vacancy and compress achievable rent.",
+        "appreciation_assessment": "5.3% resale CAGR is respectable; the median discount gives some cushion, but the noise/build reputation likely keeps this trailing cleaner D14/D15 RCR peers until the airbase moves.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterbank-at-dakota-25013892",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "UOL-built D14 Dakota 3BR (1,281sqft) at $2.9M / $2,264psf — ~5.6% above URA median ($2,144), in the thin >$2.5M band, with documented military-jet noise from nearby Paya Lebar Airbase. Quality developer and MRT proximity, but priced rich with a real noise overhang.",
+      "rating_rationale": "Genuine positives: UOL is a top-tier developer, 500m to Dakota CC8, 144 URA txns = liquid base, central D14. But the case weakens on three fronts: (1) asking $2,264psf is ~5.6% over the $2,144 median; (2) at $2.9M it's above the liquid sweet spot, thinning exit demand; (3) reviews specifically and repeatedly flag loud military jet noise (8am-9pm weekdays/Sat) from Paya Lebar Airbase — a tenant/resale negative the data can't capture. Appreciation is the weakest in the batch at 5.28%/yr. MMR 559 is only modestly above market-typical. The Paya Lebar airbase relocation (post-2030) is a long-dated catalyst that could eventually remove the noise, but that's beyond the 5-7yr horizon. Net: fully-priced with a noise discount needed — Neutral leaning cautious.",
+      "red_flags": [
+        "Documented loud military-jet noise (Paya Lebar Airbase) — reviewers call it 'unbearable'",
+        "Asking ~5.6% above URA median and above the $2.5M liquid band",
+        "Lowest appreciation in batch (5.28%/yr); some reviews cite cramped grounds/maintenance"
+      ],
+      "catalysts": [
+        "UOL developer (strong build quality) and 500m to Dakota MRT",
+        "144 URA transactions — liquid trading history",
+        "Paya Lebar Airbase relocation (long-dated, ~2030+) could remove jet noise eventually"
+      ],
+      "as_of": {
+        "price": 2900000,
+        "psf": 2263.86,
+        "beds": 3,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "UOL-built D14 Dakota 3BR (1,281sqft) at $2.9M / $2,264psf — ~5.6% above URA median ($2,144), in the thin >$2.5M band, with documented military-jet noise from nearby Paya Lebar Airbase. Quality developer and MRT proximity, but priced rich with a real noise overhang.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: UOL is a top-tier developer, 500m to Dakota CC8, 144 URA txns = liquid base, central D14. But the case weakens on three fronts: (1) asking $2,264psf is ~5.6% over the $2,144 median; (2) at $2.9M it's above the liquid sweet spot, thinning exit demand; (3) reviews specifically and repeatedly flag loud military jet noise (8am-9pm weekdays/Sat) from Paya Lebar Airbase — a tenant/resale negative the data can't capture. Appreciation is the weakest in the batch at 5.28%/yr. MMR 559 is only modestly above market-typical. The Paya Lebar airbase relocation (post-2030) is a long-dated catalyst that could eventually remove the noise, but that's beyond the 5-7yr horizon. Net: fully-priced with a noise discount needed — Neutral leaning cautious.",
+        "red_flags": [
+          "Documented loud military-jet noise (Paya Lebar Airbase) — reviewers call it 'unbearable'",
+          "Asking ~5.6% above URA median and above the $2.5M liquid band",
+          "Lowest appreciation in batch (5.28%/yr); some reviews cite cramped grounds/maintenance"
+        ],
+        "catalysts": [
+          "UOL developer (strong build quality) and 500m to Dakota MRT",
+          "144 URA transactions — liquid trading history",
+          "Paya Lebar Airbase relocation (long-dated, ~2030+) could remove jet noise eventually"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterbank-at-dakota-500103851",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Riversound Residence",
+  "slug": "riversound-residence",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2260sqft 3BR at $1100 psf — ~24% below the Riversound median of $1455, the deepest PSF discount in the batch. But the $2.486M total price and reliance on Kangkar LRT only (no MRT) make it a niche, slow-moving exit. 6.5%/yr appreciation on 137 txns is good; the question is who buys a $2.5M leasehold OCR unit without an MRT.",
+      "rating_rationale": "The cheap PSF is real but largely an artifact of size: a 2260sqft layout at $2.486M sits above the deepest buyer band ($1.8-2.5M edge) and is served only by Kangkar LRT, which thins the buyer pool versus MRT-fronting peers. For an investment hold, liquidity and yield matter more than headline PSF — and a 2260sqft unit yields poorly per dollar while appealing mainly to a narrow large-family segment. 6.5%/yr CAGR and a well-regarded 590-unit Qingjian development keep it from Avoid, but the size/price/exit profile caps it at Neutral.",
+      "red_flags": [
+        "$2.486M total at the edge of/above the liquid band for OCR leasehold",
+        "Served only by Kangkar LRT — no MRT within walking distance",
+        "2260sqft is oversized for investment; weak yield-per-dollar and narrow buyer pool",
+        "Low headline PSF is driven by size, not genuine undervaluation"
+      ],
+      "catalysts": [
+        "Punggol Digital District / CRL lifting wider D19",
+        "Large layout appeals to multi-gen families if priced to move"
+      ],
+      "as_of": {
+        "price": 2486000,
+        "psf": 1100.0,
+        "beds": 3,
+        "sqft": 2260.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2260sqft 3BR at $1100 psf — ~24% below the Riversound median of $1455, the deepest PSF discount in the batch. But the $2.486M total price and reliance on Kangkar LRT only (no MRT) make it a niche, slow-moving exit. 6.5%/yr appreciation on 137 txns is good; the question is who buys a $2.5M leasehold OCR unit without an MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "The cheap PSF is real but largely an artifact of size: a 2260sqft layout at $2.486M sits above the deepest buyer band ($1.8-2.5M edge) and is served only by Kangkar LRT, which thins the buyer pool versus MRT-fronting peers. For an investment hold, liquidity and yield matter more than headline PSF — and a 2260sqft unit yields poorly per dollar while appealing mainly to a narrow large-family segment. 6.5%/yr CAGR and a well-regarded 590-unit Qingjian development keep it from Avoid, but the size/price/exit profile caps it at Neutral.",
+        "red_flags": [
+          "$2.486M total at the edge of/above the liquid band for OCR leasehold",
+          "Served only by Kangkar LRT — no MRT within walking distance",
+          "2260sqft is oversized for investment; weak yield-per-dollar and narrow buyer pool",
+          "Low headline PSF is driven by size, not genuine undervaluation"
+        ],
+        "catalysts": [
+          "Punggol Digital District / CRL lifting wider D19",
+          "Large layout appeals to multi-gen families if priced to move"
+        ],
+        "rental_assessment": "Big unit, modest rent ceiling for the area; gross yield likely under 3% on $2.486M. Tenant pool for a $5-6k Sengkang rental is thin.",
+        "appreciation_assessment": "6.5%/yr resale CAGR on 137 txns is sound, but large units lag smaller ones on PSF growth and the LRT-only access limits the catalyst pass-through.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale CAGR (137 txns) discounted for size/illiquidity drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversound-residence-500094581",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

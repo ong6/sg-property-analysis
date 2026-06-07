@@ -1,0 +1,474 @@
+{
+ "listings": [
+  {
+   "bracket": "3BR",
+   "bracket_rank": 21,
+   "project_name": "Chiltern Park",
+   "district": "D19",
+   "beds": 3,
+   "price": 1950000,
+   "psf": 1322.03,
+   "sqft": 1475.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 1995,
+   "mrt_info": "1 min (120 m) from CC14 Lorong Chuan MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-chiltern-park-500163737",
+   "technical": {
+    "mmr": 1532.5,
+    "score_1000": 694,
+    "elo": 2117,
+    "record": "542-27-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 6.398317686315891,
+    "ura_resale_only_pct_yr": 6.398317686315891,
+    "ura_txn_count": 69,
+    "ura_median_psf": 1594.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A spacious 1,475 sqft 99LH 3BR at $1,322 psf, ~17% below the district median PSF of $1,594, with a 500-unit base and an MRT literally at the doorstep (120m to Lorong Chuan). Strong resale CAGR (6.4%/yr, 69 txns), deep liquidity and a sub-$2M entry make this a credible value play despite the 1995 vintage.",
+    "rating": "Buy",
+    "rating_rationale": "Entry PSF $1,322 vs URA median $1,594 is a genuine ~17% discount on a large-format unit, and the 6.4%/yr resale-only appreciation over 69 transactions is well above the OCR baseline. 120m to Lorong Chuan MRT and Serangoon NEX nearby anchor both rental and resale demand; 500 units gives a deep buyer pool. Real en-bloc optionality (377,682 sqft land, second-largest in the cluster) is a tail upside, though the estate just spent on upgrading so it is not imminent. Knocked off Strong Buy by 31-year age (remaining lease ~68yr, financing/maintenance headwinds building) and reported pest/security gripes.",
+    "red_flags": [
+     "1995 vintage — ~68 years lease remaining, approaching the <70yr financing/CPF caution band over the hold",
+     "Older estate: resident complaints about pest control and security staff; dated facilities vs newer competitors",
+     "Recent estate upgrading spend dampens near-term en-bloc probability"
+    ],
+    "catalysts": [
+     "120m to Lorong Chuan MRT (Circle Line) plus Serangoon NEX/NE interchange nearby — strong transit and retail anchor",
+     "Large 377,682 sqft site = real long-run en-bloc optionality with unblocked landed-estate views",
+     "Sub-$2M entry on a 1,475 sqft 3BR keeps it in the deepest buyer band for HDB upgraders"
+    ],
+    "rental_assessment": "Deep tenant pool from Lorong Chuan/Serangoon transit access and proximity to schools; large layout appeals to families. Yield is modest (older-estate rents lag new launches) but occupancy should be reliable.",
+    "appreciation_assessment": "6.4%/yr resale-only CAGR over 69 txns is robust and above OCR baseline; the PSF gap to district median gives room to converge upward. Age caps the ceiling, so expect steady rather than explosive appreciation.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.5,
+    "appreciation_rate_source": "URA resale-only 6.4%/yr discounted for advancing lease decay over a 5-7yr hold"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 22,
+   "project_name": "The Palette",
+   "district": "D18",
+   "beds": 3,
+   "price": 2000000,
+   "psf": 1439.88,
+   "sqft": 1389.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2016,
+   "mrt_info": "9 min (750 m) from CP1 Pasir Ris MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-palette-500159220",
+   "technical": {
+    "mmr": 1545.9,
+    "score_1000": 779,
+    "elo": 2099,
+    "record": "535-32-2",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.884458981302721,
+    "ura_resale_only_pct_yr": 6.884458981302721,
+    "ura_txn_count": 206,
+    "ura_median_psf": 1561.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A well-built 2016 family condo (892 units, reputable Hong Realty/Architects 61) offering a large 1,389 sqft 3BR at $1,440 psf — ~8% under the $1,561 district median. Strong 6.9%/yr resale CAGR over a thick 206-transaction base, with Pasir Ris's CRL + DTL extension and the Pasir Ris Central redevelopment as forward catalysts.",
+    "rating": "Buy",
+    "rating_rationale": "This is the most data-backed entry in the batch: 206 URA resale transactions giving a high-confidence 6.9%/yr CAGR, on a modern (2016) well-maintained 892-unit development at a $1,440 psf discount to the $1,561 median. Build quality and management reviews are positive after ~8 years. Sub-mid-$2M for a 1,389 sqft 3BR keeps it in the deep buyer band. Held below Strong Buy by the 750m (9-min) MRT walk — fine but not doorstep — and by OCR-far-east location capping the appreciation ceiling versus RCR peers.",
+    "red_flags": [
+     "750m / 9-min walk to Pasir Ris MRT — not a doorstep transit premium",
+     "Far-east OCR location; price ceiling lower than RCR comparables",
+     "Pasir Ris has periodic new-launch supply (e.g. Pasir Ris 8 era) that can cap resale PSF"
+    ],
+    "catalysts": [
+     "Cross Island Line (CRL, ~2030) interchange at Pasir Ris plus DTL extension — meaningful connectivity uplift",
+     "Pasir Ris Central integrated redevelopment (bus interchange, retail, polyclinic) lifting the whole node",
+     "Modern, well-managed 892-unit base with reputable developer — broad family/upgrader appeal"
+    ],
+    "rental_assessment": "Solid family-tenant demand from the large layout and full facilities; Pasir Ris/Tampines employment and schools support occupancy. Yield typical OCR (~3%), with the MRT distance a mild drag on transit-driven tenants.",
+    "appreciation_assessment": "6.9%/yr over 206 txns is the highest-confidence rate in the batch and well above OCR baseline; CRL and Pasir Ris Central are concrete catalysts. Modest PSF discount to median leaves room to run.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 6.5,
+    "appreciation_rate_source": "URA resale-only 6.9%/yr over 206 txns, lightly trimmed for OCR supply risk"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 23,
+   "project_name": "Aquarius By The Park",
+   "district": "D16",
+   "beds": 3,
+   "price": 1880000,
+   "psf": 1221.57,
+   "sqft": 1539.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2000,
+   "mrt_info": "10 min (820 m) from DT30 Bedok Reservoir MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-aquarius-by-the-park-60152619",
+   "technical": {
+    "mmr": 1524.9,
+    "score_1000": 637,
+    "elo": 2035,
+    "record": "533-36-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.267448049279657,
+    "ura_resale_only_pct_yr": 7.267448049279657,
+    "ura_txn_count": 129,
+    "ura_median_psf": 1352.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A very large 1,539 sqft 99LH 3BR at $1,222 psf, ~10% under the $1,352 district median, in a 720-unit Bedok Reservoir development backing onto the reservoir. URA resale CAGR is a strong 7.3%/yr over 129 txns, but the 2000-vintage estate carries real management, leak and noise complaints that temper the value case.",
+    "rating": "Neutral",
+    "rating_rationale": "The numbers are attractive — $1,222 psf vs $1,352 median, 7.3%/yr resale CAGR over 129 txns, a huge 1,539 sqft layout under $1.9M, and reservoir-fronting amenity. But qualitative findings are a genuine drag: residents report poor MCST management, recurring unit leaks (especially upper units), evening noise, and it being the oldest/most run-down condo in the Bedok Reservoir cluster. With Bedok Reservoir MRT a 10-min/820m walk and 26-year lease decay (~74yr remaining), the appreciation may already reflect a low base catching up rather than durable quality. Mixed signals net to Neutral.",
+    "red_flags": [
+     "Reported poor MCST management, lax bylaw enforcement and resident disharmony",
+     "Recurring water-leak complaints (notably upper-floor/penthouse units) and evening noise from pool/playground",
+     "Oldest, most dated development in the Bedok Reservoir cluster; 820m to MRT; ~74yr lease remaining"
+    ],
+    "catalysts": [
+     "Bedok Reservoir frontage and Downtown Line access (DT30) underpin lifestyle and rental demand",
+     "Large 1,539 sqft layout at sub-$1.9M is rare value for space-driven families",
+     "7.3%/yr resale CAGR shows the low base has been converging toward the cluster"
+    ],
+    "rental_assessment": "Reservoir lifestyle and DTL access give steady but unspectacular family-tenant demand; dated facilities and management issues cap achievable rent versus newer Bedok Reservoir stock.",
+    "appreciation_assessment": "Headline 7.3%/yr CAGR is partly low-base catch-up; quality and management drag plus lease decay make a repeat over the next 5-7yr uncertain. Expect moderation toward district average.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale 7.3%/yr discounted heavily for management/quality drag and lease decay"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 24,
+   "project_name": "Centro Residences",
+   "district": "D20",
+   "beds": 3,
+   "price": 2030000,
+   "psf": 1497.05,
+   "sqft": 1356.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2014,
+   "mrt_info": "1 min (100 m) from CR11 Ang Mo Kio MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500058461",
+   "technical": {
+    "mmr": 1565.6,
+    "score_1000": 872,
+    "elo": 2016,
+    "record": "526-37-6",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.201498342414746,
+    "ura_resale_only_pct_yr": 6.201498342414746,
+    "ura_txn_count": 77,
+    "ura_median_psf": 2040.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 2014, high-finish 34-storey landmark beside AMK Hub with the upcoming CR11 Cross Island Line interchange essentially at the doorstep (100m). The listed $1,497 psf sits far below the $2,040 district median, but that gap is misleading — Centro is a SOHO/loft-stack development, so the headline median is skewed by smaller premium units; still, an integrated-transit 3BR at this price with CRL incoming is a strong setup.",
+    "rating": "Buy",
+    "rating_rationale": "The standout catalyst is CR11 Ang Mo Kio becoming a Cross Island Line interchange (~2030) at 100m — within-500m future MRT is the strongest single uplift in the rubric, and 100m is doorstep. Pair that with AMK Hub integration, a well-finished 2014 building (DP Architects, one of AMK's tallest, premium finishes) and a 6.2%/yr resale CAGR over 77 txns. The $1,497-vs-$2,040 psf gap overstates cheapness (loft/SOHO unit mix skews the district median), so I treat value as fair-to-slightly-positive rather than a deep discount. Limited common-area space and a more couple/expat-than-family layout temper broad upgrader appeal, holding it to Buy.",
+    "red_flags": [
+     "Headline PSF discount is inflated by Centro's SOHO/loft unit mix — not a clean ~27% bargain",
+     "Reviews note limited common-area/facility space; layout suits couples/expats more than large families",
+     "Smaller development footprint and 77-txn base = thinner liquidity than 500+ unit peers"
+    ],
+    "catalysts": [
+     "CR11 Ang Mo Kio Cross Island Line interchange (~2030) at 100m — doorstep future-MRT uplift",
+     "Direct integration with AMK Hub and existing NSL Ang Mo Kio MRT — rare integrated-transit convenience",
+     "2014 premium-finish landmark tower with city/landed views; durable rental demand from transit access"
+    ],
+    "rental_assessment": "Excellent transit-driven rental demand — integrated with AMK Hub and the MRT, ideal for working professionals and expats; the loft/SOHO profile rents well to couples. Among the more rentable units in the batch.",
+    "appreciation_assessment": "6.2%/yr resale CAGR over 77 txns is solid; the CRL interchange at 100m is a concrete, high-impact catalyst that should drive above-baseline appreciation into 2030. Value is fair once the unit-mix-skewed median is corrected.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 6.0,
+    "appreciation_rate_source": "URA resale 6.2%/yr, sustained by CR11 interchange catalyst at 100m"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 25,
+   "project_name": "Bartley Ridge",
+   "district": "D13",
+   "beds": 3,
+   "price": 2300000,
+   "psf": 1708.77,
+   "sqft": 1346.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2016,
+   "mrt_info": "3 min (260 m) from CC12 Bartley MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-ridge-500089978",
+   "technical": {
+    "mmr": 1556.6,
+    "score_1000": 835,
+    "elo": 2012,
+    "record": "529-40-0",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.175386313361675,
+    "ura_resale_only_pct_yr": 6.175386313361675,
+    "ura_txn_count": 250,
+    "ura_median_psf": 2024.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 2016 99LH 3BR in coveted D13 Bartley, 260m to Bartley MRT (Circle Line), listed at $1,709 psf — ~16% under the $2,024 district median — on a very thick 250-transaction, 6.2%/yr resale base. Strong location and liquidity, but the development carries documented finish/defect complaints and an unresponsive defects-management reputation.",
+    "rating": "Buy",
+    "rating_rationale": "D13/Bartley is a structurally strong RCR-adjacent node: 260m to Bartley CCL station, central connectivity, reputable schools nearby. The 250-txn URA base gives high-confidence 6.2%/yr appreciation, and $1,709 psf is a real ~16% discount to the $2,024 median on a modern 2016 unit. At $2.3M for 1,346 sqft it sits at the upper edge of the deep buyer band. The cap to Buy (not Strong Buy) is the well-documented build-quality history — visible wall defects, marble scratches, noisy WCs, poor appliance/defect-handling — which is a real resale and own-experience risk to verify unit-by-unit; choose a well-maintained stack.",
+    "red_flags": [
+     "Documented build-quality/defect complaints (wall stains, scratched marble, faulty appliances) and poor defect-management responsiveness",
+     "$2.3M / $1,709 psf is at the upper edge of the deep buyer band — pool thins above here",
+     "Circle Line only (no interchange at Bartley); commute to CBD requires a transfer"
+    ],
+    "catalysts": [
+     "260m to Bartley MRT (Circle Line) in central, well-regarded D13 with strong school proximity",
+     "Very deep 250-txn liquidity and 6.2%/yr resale CAGR — easy, well-priced exit",
+     "$1,709 psf vs $2,024 district median leaves clear room to converge upward"
+    ],
+    "rental_assessment": "Strong rental demand from central location, MRT proximity and schools; broad tenant appeal. Yield typical for the price band; the modern build supports premium rents if the chosen unit is defect-free.",
+    "appreciation_assessment": "High-confidence 6.2%/yr over 250 txns with a clear discount to median; central D13 supports durable above-baseline appreciation. Defect reputation is the main thing that could cap individual-unit upside.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 6.0,
+    "appreciation_rate_source": "URA resale-only 6.2%/yr over a deep 250-txn base, lightly trimmed for defect/quality risk"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 26,
+   "project_name": "Tanamera Crest",
+   "district": "D16",
+   "beds": 3,
+   "price": 1385000,
+   "psf": 1180.73,
+   "sqft": 1173.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "11 min (950 m) from EW4 Tanah Merah MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500110751",
+   "technical": {
+    "mmr": 1532.1,
+    "score_1000": 691,
+    "elo": 1992,
+    "record": "527-42-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 7.103629030598402,
+    "ura_resale_only_pct_yr": 7.103629030598402,
+    "ura_txn_count": 68,
+    "ura_median_psf": 1205.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A low-quantum (under $1.39M) 1,173 sqft 99LH 3BR in a quiet 288-unit Tanah Merah hilltop enclave, at $1,181 psf roughly in line with the $1,205 district median. Strong 7.1%/yr resale CAGR, but a small boutique base, an 11-min/950m MRT walk and reports of weak maintenance temper the case.",
+    "rating": "Neutral",
+    "rating_rationale": "The low $1.385M quantum is the real draw — broadest possible buyer pool and lowest absolute risk in the batch — and the 7.1%/yr resale CAGR is strong. But fundamentals are mixed: only 288 units (thinner liquidity, 68 txns), a long 11-min/950m walk to Tanah Merah MRT, and reviews flagging poor maintenance and a development that looks older than its 2004 age, plus a small pool for resident count. PSF is essentially at median ($1,181 vs $1,205), so there is no real value discount cushioning those weaknesses. Quiet hilltop exclusivity is a livability plus but not an investment catalyst. Nets to Neutral.",
+    "red_flags": [
+     "Boutique 288-unit base — thinner liquidity (68 txns) than 500+ unit peers",
+     "11-min / 950m walk to Tanah Merah MRT — no transit premium",
+     "Reviews cite weak maintenance/management and a dated look despite 2004 vintage"
+    ],
+    "catalysts": [
+     "Low $1.385M quantum = widest buyer pool and lowest absolute downside",
+     "7.1%/yr resale CAGR shows the enclave has appreciated steadily",
+     "Quiet landed-enclave hilltop setting appeals to own-stay buyers at resale"
+    ],
+    "rental_assessment": "Moderate rental demand — distance from MRT and dated facilities cap appeal; quiet enclave suits families over transit-reliant tenants. Yield ordinary.",
+    "appreciation_assessment": "Headline 7.1%/yr is strong but on a thin 68-txn base and with no PSF discount to median; small dev and maintenance drag make sustained outperformance uncertain. Expect district-average appreciation.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale 7.1%/yr discounted for thin liquidity, MRT distance and maintenance drag"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 27,
+   "project_name": "Bartley Vue",
+   "district": "D19",
+   "beds": 3,
+   "price": 2499999,
+   "psf": 2394.64,
+   "sqft": 1044.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2026,
+   "mrt_info": "8 min (630 m) from CC12 Bartley MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-vue-60190357",
+   "technical": {
+    "mmr": 1518.8,
+    "score_1000": 589,
+    "elo": 1986,
+    "record": "517-49-3",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 4.067452842466968,
+    "ura_resale_only_pct_yr": 6.470989076173517,
+    "ura_txn_count": 123,
+    "ura_median_psf": 2346.0,
+    "has_new_launch_bias": true
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A brand-new (2026 TOP) compact 1,044 sqft 3BR from boutique 115-unit Bartley Vue at a steep $2,395 psf and $2.5M quantum. The system already flagged new-launch bias and discounted the headline rate to 4.07%/yr; at this price/PSF on a tiny development with a high quantum, the risk/reward is poor.",
+    "rating": "Avoid",
+    "rating_rationale": "Three things stack against this as an investment: (1) $2,395 psf is above the $2,346 district median and you are buying at peak new-launch pricing — the bias-adjusted appreciation is only 4.07%/yr (vs 6.47% resale-only), so the system is explicitly warning the headline CAGR re-introduces developer inflation; (2) $2.5M for a compact 1,044 sqft 3BR pushes past the deep-buyer sweet spot into a thinner pool, with little built-in upside; (3) only 115 units = boutique, illiquid, minimal facilities, and the MRT is a 630m/8-min walk with Circle-Line-only access. Buying a just-TOP unit at developer-peak PSF in D19 with no discount and a high quantum is the classic overpay-at-launch trap. Avoid for a 5-7yr investment hold.",
+    "red_flags": [
+     "New-launch bias flagged — bias-adjusted appreciation only 4.07%/yr; $2,395 psf is above district median, peak developer pricing",
+     "$2.5M quantum on a compact 1,044 sqft 3BR sits above the deep-buyer sweet spot — thinner exit pool",
+     "Boutique 115-unit development — illiquid, minimal facilities; 630m/8-min walk, Circle Line only"
+    ],
+    "catalysts": [
+     "Brand-new 2026 build (no defect/maintenance legacy) near Bartley MRT in central D19",
+     "Small exclusive development appeals to a niche own-stay buyer at resale",
+     "Wee Hur build with smart-home/modern spec"
+    ],
+    "rental_assessment": "Decent rental from new build and Bartley CCL access, but the compact 3BR at high quantum yields poorly (gross yield well below 3% at this PSF); tenant pool for a small 3BR is narrower than 2BR.",
+    "appreciation_assessment": "Bought at developer-peak PSF above the district median, the realistic forward rate is the bias-adjusted ~4%/yr, not the 6.5% resale figure. Little headroom once the new-launch premium normalizes — downside risk on resale.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 4.0,
+    "appreciation_rate_source": "System bias-adjusted 4.07%/yr (new-launch inflation removed); not the resale-only 6.47%"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 28,
+   "project_name": "The Antares",
+   "district": "D14",
+   "beds": 3,
+   "price": 1600000,
+   "psf": 1812.0,
+   "sqft": 883.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2022,
+   "mrt_info": "6 min (470 m) from DT25 Mattar MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-500157920",
+   "technical": {
+    "mmr": 1526.5,
+    "score_1000": 649,
+    "elo": 1977,
+    "record": "517-38-14",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 2.785949559644463,
+    "ura_resale_only_pct_yr": 1.7279156642098892,
+    "ura_txn_count": 191,
+    "ura_median_psf": 2076.0,
+    "has_new_launch_bias": true
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A 2022, well-built (FSKH, premium fittings) D14 unit 470m from Mattar MRT, but at 883 sqft this is a very compact 'shoebox 3BR' at $1,812 psf. The decisive problem is appreciation: just 1.7%/yr resale-only (2.79% blended) over a thick 191-txn base — the weakest in the batch by far — signalling stalled price growth.",
+    "rating": "Avoid",
+    "rating_rationale": "Despite a strong location (470m to Mattar DTL, central D14, Paya Lebar Central catalyst) and good build quality, the investment math fails: URA resale-only appreciation is just 1.7%/yr over 191 transactions — a high-confidence read that this project has barely moved, well below the OCR/RCR baselines and the worst in the batch. The 883 sqft footprint for a 3BR is a compact/dual-key-style layout that squeezes liveability and narrows resale appeal. $1,812 psf with new-launch bias flagged means little discount and limited room to run. A modern build and decent transit cannot offset near-flat appreciation over a 5-7yr hold. Avoid.",
+    "red_flags": [
+     "Resale-only appreciation just 1.7%/yr over 191 txns (high confidence) — near-flat price growth, worst in batch",
+     "883 sqft for a 3BR is a very compact layout — squeezed liveability, narrower resale buyer pool",
+     "New-launch bias flagged at $1,812 psf — limited discount, limited upside headroom"
+    ],
+    "catalysts": [
+     "470m to Mattar MRT (Downtown Line) and proximity to Paya Lebar Central transformation",
+     "2022 build with strong developer (FSKH) and premium fittings — no defect legacy",
+     "Central D14 location with good connectivity to CBD"
+    ],
+    "rental_assessment": "Reasonable rental from Mattar DTL access and central location; the compact 3BR rents to small families/sharers. But yield is mediocre at $1,812 psf and the layout limits premium positioning.",
+    "appreciation_assessment": "The 191-txn resale base showing only 1.7%/yr is a strong negative signal — the project has stalled, likely from compact layouts and post-launch normalization. Hard to argue for above-baseline appreciation over the hold.",
+    "confidence": "high",
+    "appreciation_rate_override_pct": 2.0,
+    "appreciation_rate_source": "URA resale-only 1.7%/yr over 191 txns — high-confidence near-flat trajectory"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 29,
+   "project_name": "Rio Vista",
+   "district": "D19",
+   "beds": 3,
+   "price": 1388000,
+   "psf": 1315.64,
+   "sqft": 1055.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 2004,
+   "mrt_info": "",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500085889",
+   "technical": {
+    "mmr": 1528.5,
+    "score_1000": 665,
+    "elo": 1973,
+    "record": "519-47-3",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 6.4597120503658845,
+    "ura_resale_only_pct_yr": 6.4597120503658845,
+    "ura_txn_count": 125,
+    "ura_median_psf": 1207.5,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A low-quantum ($1.388M) 1,055 sqft 99LH 3BR in a large 716-unit Hougang waterfront development along Sungei Serangoon. Resale CAGR is a healthy 6.5%/yr over 125 txns, but it prices ABOVE the $1,207 district median, sits far from any MRT, and offers dated, minimal facilities.",
+    "rating": "Neutral",
+    "rating_rationale": "Positives: deep liquidity (716 units, 125 txns), a healthy 6.5%/yr resale CAGR, low $1.388M quantum for the widest buyer base, and genuine river-frontage amenity for water-facing stacks. Against that: at $1,316 psf it is ~9% ABOVE the $1,207 district median (so this specific listing looks dear for the development), it has no MRT within reasonable walk (relies on CTE/KPE and buses), and the 2004 estate notably lacks modern clubhouse/gym/lifestyle facilities. River-view stacks are the only ones I'd consider; the rest are ordinary aging OCR stock. The above-median pricing on a no-MRT, dated estate caps this at Neutral.",
+    "red_flags": [
+     "Listed $1,316 psf is ~9% above the $1,207 district median — dear for this development",
+     "No MRT within walking distance — car/bus dependent (CTE/KPE)",
+     "2004 estate with dated, minimal facilities (no modern clubhouse/gym)"
+    ],
+    "catalysts": [
+     "Sungei Serangoon river frontage — unblocked water views for select stacks add resale appeal",
+     "Large 716-unit base with deep liquidity and low $1.388M quantum",
+     "6.5%/yr resale CAGR shows steady historical appreciation"
+    ],
+    "rental_assessment": "Modest rental demand — no MRT and dated facilities limit tenant appeal; suits car-owning families. River-facing units rent slightly better. Yield ordinary.",
+    "appreciation_assessment": "6.5%/yr historical CAGR is decent, but the above-median entry PSF and lack of MRT/facility catalysts make a repeat uncertain; only river-view stacks justify a premium. Expect district-average at best.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 4.5,
+    "appreciation_rate_source": "URA resale 6.5%/yr discounted for above-median entry PSF and no-MRT, dated-facility drag"
+   }
+  },
+  {
+   "bracket": "3BR",
+   "bracket_rank": 30,
+   "project_name": "Astoria Park",
+   "district": "D14",
+   "beds": 3,
+   "price": 1695000,
+   "psf": 1290.94,
+   "sqft": 1313.0,
+   "tenure": "99-year Leasehold",
+   "built_year": 1995,
+   "mrt_info": "2 min (130 m) from EW6 Kembangan MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-astoria-park-60002695",
+   "technical": {
+    "mmr": 1533.0,
+    "score_1000": 697,
+    "elo": 1969,
+    "record": "516-43-10",
+    "on_frontier": true,
+    "ura_appreciation_pct_yr": 6.332948293623164,
+    "ura_resale_only_pct_yr": 6.332948293623164,
+    "ura_txn_count": 58,
+    "ura_median_psf": 1392.0,
+    "has_new_launch_bias": false
+   },
+   "prior_agent_rating": null,
+   "agent_evaluation": {
+    "summary": "A spacious 1,313 sqft 99LH 3BR right next to Kembangan MRT (130m, 2-min walk) in a 354-unit D14 family estate, at $1,291 psf — ~7% under the $1,392 district median. Doorstep East-West Line access and a sub-$1.7M quantum are strong, but the 1993/1995 vintage (lease ~67yr remaining) and thin 58-txn base are real constraints.",
+    "rating": "Buy",
+    "rating_rationale": "The location is the case: 130m / 2-min to Kembangan MRT on the East-West Line is a true doorstep transit premium that durably supports both rental and resale, in a well-regarded family-friendly D14 enclave (7.7/10 resident rating, spacious layouts). At $1,291 psf it's a ~7% discount to median on a large 1,313 sqft unit, with a friendly sub-$1.7M quantum and 6.3%/yr resale CAGR. The brakes on Strong Buy are age — 99LH from 1993, so only ~66-67 years remaining over the hold, with the financing/CPF caution band approaching — plus a thinner 58-txn liquidity base. For a 5-7yr horizon the MRT-adjacency value outweighs the lease concern, but lease decay is the key resale risk to price in.",
+    "red_flags": [
+     "1993/1995 vintage — ~66-67yr lease remaining, nearing the <70yr financing/CPF caution threshold over the hold",
+     "Thinner liquidity: 58 URA txns and 354-unit base vs 500+ unit peers",
+     "Dated facilities relative to newer D14 stock"
+    ],
+    "catalysts": [
+     "130m / 2-min to Kembangan MRT (East-West Line) — genuine doorstep transit premium",
+     "Spacious 1,313 sqft 3BR at sub-$1.7M and ~7% under district median — strong value/quantum combo",
+     "Established, well-liked D14 family enclave with reliable rental demand from MRT adjacency"
+    ],
+    "rental_assessment": "Strong, reliable rental demand from doorstep EWL access and family-friendly layouts; one of the better rental positions in the batch despite age. Yield decent for the quantum.",
+    "appreciation_assessment": "6.3%/yr resale CAGR over 58 txns is solid and the PSF discount gives some headroom, but advancing lease decay caps the ceiling. Expect steady, MRT-anchored appreciation moderated by age.",
+    "confidence": "medium",
+    "appreciation_rate_override_pct": 5.0,
+    "appreciation_rate_source": "URA resale 6.3%/yr trimmed for accelerating lease decay over a 5-7yr hold"
+   }
+  }
+ ]
+}

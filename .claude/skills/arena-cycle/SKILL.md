@@ -47,10 +47,24 @@ has verified the results** — that's the agent flow, not an optional extra.
      confirmed champions, demotions + reasons, run confidence. Do this AFTER
      the final fight of the session (each fight overwrites the file).
 
-5. **Surface the result** — give the user the refereed bracket champions and
-   real contenders (post-demotion), each with price/PSF/age-adjusted premium.
-   Offer `/analyze-development` on any champion they care about; remind them
-   the UI is at `python ui.py` → http://127.0.0.1:8642.
+5. **Evaluator subagents (when top contenders lack agent evals)** — the
+   `agent_rating` join only works if evaluations exist. For unevaluated top
+   contenders, spawn evaluation subagents (e.g., one per 2 brackets), each:
+   - given its contenders' dossier (stats from `arena_referee_packet.json`)
+     and the rubric (`docs/evaluation-rubric.md`)
+   - researches each condo on the web (reviews, transactions, defects, area)
+   - writes a reviewed JSON (`{"listings": [{project_name, district, price,
+     psf, beds, sqft, url, tenure, agent_evaluation: {rating, confidence,
+     summary, rating_rationale, red_flags, catalysts}}]}`) and persists it:
+     ```bash
+     python invest.py --save-eval <reviewed.json>
+     ```
+   Then RE-RUN `--fight` so the fresh evals join the rankings.
+
+6. **Surface the result** — give the user the refereed bracket champions and
+   real contenders (post-demotion), each with price/PSF/age-adjusted premium
+   and their agent eval. Offer `/analyze-development` on any champion they
+   care about; remind them the UI is at `python ui.py` → http://127.0.0.1:8642.
 
 ## Don'ts
 

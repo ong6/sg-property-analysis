@@ -1,0 +1,111 @@
+{
+  "condo": "Waterview",
+  "slug": "waterview",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large 1,378 sqft 3BR by reputable Sim Lian at Bedok Reservoir, priced at PSF 1379 — a strong ~8% discount to the project's URA median of 1502 — with 7.4%/yr resale appreciation on a deep 178-txn base and a $1.9M quantum in the sweet spot. Reservoir-facing stacks avoid road noise; this is a well-priced, liquid Buy.",
+      "rating_rationale": "PSF 1379 vs URA median 1502 is a clean ~8% discount on a genuinely large 1,378 sqft 3BR — good value per square foot. 7.4%/yr resale CAGR on 178 transactions is reliable, 696 units and a $1.9M quantum (centre of the deep buyer band) support easy exit, and Sim Lian is a solid builder. Bedok Reservoir lifestyle draw and proximity to Tampines Regional Centre underpin demand. The main caveat is unit-specific: quarry/road-facing stacks suffer traffic noise, so the reservoir-facing stacks are the ones to target. No MRT directly at the door is the structural weak point but the discount and size compensate.",
+      "red_flags": [
+        "No MRT within easy walk — bus-dependent connectivity",
+        "Road/quarry-facing stacks have documented traffic noise; reservoir-facing stacks strongly preferred"
+      ],
+      "catalysts": [
+        "PSF ~8% below project median — room to re-rate toward median",
+        "Bedok Reservoir frontage and Tampines Regional Centre proximity sustain demand",
+        "Deep 178-txn liquidity, 696 units, reputable Sim Lian build"
+      ],
+      "as_of": {
+        "price": 1900000,
+        "psf": 1378.81,
+        "beds": 3,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1,378 sqft 3BR by reputable Sim Lian at Bedok Reservoir, priced at PSF 1379 — a strong ~8% discount to the project's URA median of 1502 — with 7.4%/yr resale appreciation on a deep 178-txn base and a $1.9M quantum in the sweet spot. Reservoir-facing stacks avoid road noise; this is a well-priced, liquid Buy.",
+        "rating": "Buy",
+        "rating_rationale": "PSF 1379 vs URA median 1502 is a clean ~8% discount on a genuinely large 1,378 sqft 3BR — good value per square foot. 7.4%/yr resale CAGR on 178 transactions is reliable, 696 units and a $1.9M quantum (centre of the deep buyer band) support easy exit, and Sim Lian is a solid builder. Bedok Reservoir lifestyle draw and proximity to Tampines Regional Centre underpin demand. The main caveat is unit-specific: quarry/road-facing stacks suffer traffic noise, so the reservoir-facing stacks are the ones to target. No MRT directly at the door is the structural weak point but the discount and size compensate.",
+        "red_flags": [
+          "No MRT within easy walk — bus-dependent connectivity",
+          "Road/quarry-facing stacks have documented traffic noise; reservoir-facing stacks strongly preferred"
+        ],
+        "catalysts": [
+          "PSF ~8% below project median — room to re-rate toward median",
+          "Bedok Reservoir frontage and Tampines Regional Centre proximity sustain demand",
+          "Deep 178-txn liquidity, 696 units, reputable Sim Lian build"
+        ],
+        "rental_assessment": "Family-oriented Bedok Reservoir catchment with a large 3BR rents steadily; ~3.3% gross yield realistic, aided by the discounted entry price.",
+        "appreciation_assessment": "7.4%/yr resale CAGR on a deep sample plus a below-median entry PSF gives a favorable risk/reward for capital growth over 5-7 years.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterview-25614039",
+        "review_file": "batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Sim Lian D18 development (696 units) at a low $1399 PSF, ~7% below the $1502 median, with a 7.36% CAGR over a deep 178 transactions and a low $1.1M quantum. The persistent drawback is connectivity — no MRT within walking distance and a busy 4-lane road outside — which keeps it a balanced Neutral despite genuine value on price.",
+      "rating_rationale": "Real positives: below-median PSF ($1399 vs $1502), the deepest data confidence in the batch (178 txns, 7.36% CAGR), large 696-unit liquidity, and a low $1.1M quantum that widens the buyer pool. But the blank MRT field and a busy 4-lane arterial road outside are structural negatives for an investment hold — the transit-reliant tenant majority is deflected and resale appeal is capped. Design gripes (units facing each other, no direct reservoir access despite the name) further dull the premium-buyer case. Value on price, but the connectivity gap balances it to Neutral.",
+      "red_flags": [
+        "No MRT within walking distance; busy 4-lane road outside — caps tenant and resale demand",
+        "Design drawbacks: facing units, no direct reservoir access despite the name"
+      ],
+      "catalysts": [
+        "Below-median PSF with deep 178-transaction liquidity and low $1.1M quantum",
+        "Tampines Regional Centre, CRL and DTL extension as broad D18 area tailwinds"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1399.49,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Sim Lian D18 development (696 units) at a low $1399 PSF, ~7% below the $1502 median, with a 7.36% CAGR over a deep 178 transactions and a low $1.1M quantum. The persistent drawback is connectivity — no MRT within walking distance and a busy 4-lane road outside — which keeps it a balanced Neutral despite genuine value on price.",
+        "rating": "Neutral",
+        "rating_rationale": "Real positives: below-median PSF ($1399 vs $1502), the deepest data confidence in the batch (178 txns, 7.36% CAGR), large 696-unit liquidity, and a low $1.1M quantum that widens the buyer pool. But the blank MRT field and a busy 4-lane arterial road outside are structural negatives for an investment hold — the transit-reliant tenant majority is deflected and resale appeal is capped. Design gripes (units facing each other, no direct reservoir access despite the name) further dull the premium-buyer case. Value on price, but the connectivity gap balances it to Neutral.",
+        "red_flags": [
+          "No MRT within walking distance; busy 4-lane road outside — caps tenant and resale demand",
+          "Design drawbacks: facing units, no direct reservoir access despite the name"
+        ],
+        "catalysts": [
+          "Below-median PSF with deep 178-transaction liquidity and low $1.1M quantum",
+          "Tampines Regional Centre, CRL and DTL extension as broad D18 area tailwinds"
+        ],
+        "rental_assessment": "Below-average for investment: poor rail access limits the tenant pool to car owners; large unit count also means internal rental competition. Low quantum is the main offset.",
+        "appreciation_assessment": "7.36% CAGR is high-confidence (178 txns) but likely off a low 2014 OCR base; connectivity gap caps forward re-rating to mid-single digits.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA CAGR 7.36% (178 txns) discounted for poor MRT connectivity going forward"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterview-500050916",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

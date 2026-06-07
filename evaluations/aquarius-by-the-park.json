@@ -1,0 +1,63 @@
+{
+  "condo": "Aquarius By The Park",
+  "slug": "aquarius-by-the-park",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 1,539 sqft 99LH 3BR at $1,222 psf, ~10% under the $1,352 district median, in a 720-unit Bedok Reservoir development backing onto the reservoir. URA resale CAGR is a strong 7.3%/yr over 129 txns, but the 2000-vintage estate carries real management, leak and noise complaints that temper the value case.",
+      "rating_rationale": "The numbers are attractive — $1,222 psf vs $1,352 median, 7.3%/yr resale CAGR over 129 txns, a huge 1,539 sqft layout under $1.9M, and reservoir-fronting amenity. But qualitative findings are a genuine drag: residents report poor MCST management, recurring unit leaks (especially upper units), evening noise, and it being the oldest/most run-down condo in the Bedok Reservoir cluster. With Bedok Reservoir MRT a 10-min/820m walk and 26-year lease decay (~74yr remaining), the appreciation may already reflect a low base catching up rather than durable quality. Mixed signals net to Neutral.",
+      "red_flags": [
+        "Reported poor MCST management, lax bylaw enforcement and resident disharmony",
+        "Recurring water-leak complaints (notably upper-floor/penthouse units) and evening noise from pool/playground",
+        "Oldest, most dated development in the Bedok Reservoir cluster; 820m to MRT; ~74yr lease remaining"
+      ],
+      "catalysts": [
+        "Bedok Reservoir frontage and Downtown Line access (DT30) underpin lifestyle and rental demand",
+        "Large 1,539 sqft layout at sub-$1.9M is rare value for space-driven families",
+        "7.3%/yr resale CAGR shows the low base has been converging toward the cluster"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1221.57,
+        "beds": 3,
+        "sqft": 1539.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 1,539 sqft 99LH 3BR at $1,222 psf, ~10% under the $1,352 district median, in a 720-unit Bedok Reservoir development backing onto the reservoir. URA resale CAGR is a strong 7.3%/yr over 129 txns, but the 2000-vintage estate carries real management, leak and noise complaints that temper the value case.",
+        "rating": "Neutral",
+        "rating_rationale": "The numbers are attractive — $1,222 psf vs $1,352 median, 7.3%/yr resale CAGR over 129 txns, a huge 1,539 sqft layout under $1.9M, and reservoir-fronting amenity. But qualitative findings are a genuine drag: residents report poor MCST management, recurring unit leaks (especially upper units), evening noise, and it being the oldest/most run-down condo in the Bedok Reservoir cluster. With Bedok Reservoir MRT a 10-min/820m walk and 26-year lease decay (~74yr remaining), the appreciation may already reflect a low base catching up rather than durable quality. Mixed signals net to Neutral.",
+        "red_flags": [
+          "Reported poor MCST management, lax bylaw enforcement and resident disharmony",
+          "Recurring water-leak complaints (notably upper-floor/penthouse units) and evening noise from pool/playground",
+          "Oldest, most dated development in the Bedok Reservoir cluster; 820m to MRT; ~74yr lease remaining"
+        ],
+        "catalysts": [
+          "Bedok Reservoir frontage and Downtown Line access (DT30) underpin lifestyle and rental demand",
+          "Large 1,539 sqft layout at sub-$1.9M is rare value for space-driven families",
+          "7.3%/yr resale CAGR shows the low base has been converging toward the cluster"
+        ],
+        "rental_assessment": "Reservoir lifestyle and DTL access give steady but unspectacular family-tenant demand; dated facilities and management issues cap achievable rent versus newer Bedok Reservoir stock.",
+        "appreciation_assessment": "Headline 7.3%/yr CAGR is partly low-base catch-up; quality and management drag plus lease decay make a repeat over the next 5-7yr uncertain. Expect moderation toward district average.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 7.3%/yr discounted heavily for management/quality drag and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-aquarius-by-the-park-60152619",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

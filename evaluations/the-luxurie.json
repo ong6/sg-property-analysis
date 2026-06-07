@@ -1,0 +1,59 @@
+{
+  "condo": "The Luxurie",
+  "slug": "the-luxurie",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Strong Buy",
+      "confidence": "high",
+      "summary": "A genuinely strong 2BR investment case: a 1001 sqft unit listed at $1,558 psf is ~11% under the URA median of $1,747.5 in a development sitting 190m from Sengkang MRT/hub. Keppel Land build, 622 units, deep resale liquidity (184 txns) and 7.3% resale-only CAGR. The standout of this batch.",
+      "rating_rationale": "$1,558 psf vs $1,747.5 URA median = clear discount on a generously sized 1001 sqft 2BR (efficient $/unit at $1.56M, in the liquid sub-$1.6M band). 7.3% resale-only appreciation on 184 transactions is high-confidence. 190m to Sengkang MRT interchange + Compass One mall is best-in-class connectivity for the district. Reputable developer (Keppel Land), large 622-unit base for liquidity. Top technical frontier score (911). Only mild caveat: unit is large for a 2BR so per-sqft rent dilutes yield slightly.",
+      "red_flags": [
+        "Large 1001 sqft footprint for a 2BR dilutes psf-rent yield versus a compact unit",
+        "OCR/D19 baseline appreciation is lower than RCR; sustained 7.3% partly reflects a strong recent cycle"
+      ],
+      "catalysts": [
+        "Direct 190m access to Sengkang MRT interchange + Compass One / Sengkang Grand Mall hub",
+        "Discount to URA median leaves room for mean-reversion upside",
+        "Buangkok/Sengkang continued HDB-upgrader demand keeps deep buyer pool"
+      ],
+      "as_of": {
+        "price": 1560000,
+        "psf": 1558.44,
+        "beds": 2,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A genuinely strong 2BR investment case: a 1001 sqft unit listed at $1,558 psf is ~11% under the URA median of $1,747.5 in a development sitting 190m from Sengkang MRT/hub. Keppel Land build, 622 units, deep resale liquidity (184 txns) and 7.3% resale-only CAGR. The standout of this batch.",
+        "rating": "Strong Buy",
+        "rating_rationale": "$1,558 psf vs $1,747.5 URA median = clear discount on a generously sized 1001 sqft 2BR (efficient $/unit at $1.56M, in the liquid sub-$1.6M band). 7.3% resale-only appreciation on 184 transactions is high-confidence. 190m to Sengkang MRT interchange + Compass One mall is best-in-class connectivity for the district. Reputable developer (Keppel Land), large 622-unit base for liquidity. Top technical frontier score (911). Only mild caveat: unit is large for a 2BR so per-sqft rent dilutes yield slightly.",
+        "red_flags": [
+          "Large 1001 sqft footprint for a 2BR dilutes psf-rent yield versus a compact unit",
+          "OCR/D19 baseline appreciation is lower than RCR; sustained 7.3% partly reflects a strong recent cycle"
+        ],
+        "catalysts": [
+          "Direct 190m access to Sengkang MRT interchange + Compass One / Sengkang Grand Mall hub",
+          "Discount to URA median leaves room for mean-reversion upside",
+          "Buangkok/Sengkang continued HDB-upgrader demand keeps deep buyer pool"
+        ],
+        "rental_assessment": "Strong tenant pool — directly atop a major NEL interchange and mall, appealing to families and commuters to CBD; large 1001 sqft 2BR commands a rent premium in absolute terms even if psf-yield is moderate.",
+        "appreciation_assessment": "7.3% resale-only CAGR on 184 transactions is reliable and the listing's discount to median supports continued upside; expect mid-single-digit forward appreciation rather than a repeat of the full historical rate.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-luxurie-60158015",
+        "review_file": "batch_01.json"
+      }
+    }
+  ]
+}

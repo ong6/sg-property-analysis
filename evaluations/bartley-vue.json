@@ -1,0 +1,121 @@
+{
+  "condo": "Bartley Vue",
+  "slug": "bartley-vue",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "New TOP 2026 leasehold near Bartley/Serangoon, 2BR at $1.64M / $2,240psf. Strong arena record (372-47, MMR 1532, score 694) and resale-only URA of 6.5%/yr are attractive, but the project is small (115 units), the 4.07% bias-adjusted rate reflects new-launch inflation, and the smallest 2BR stacks face landed/road with west-sun exposure.",
+      "rating_rationale": "Asking $2,240psf sits just under the $2,346 URA median, so it is not overpriced for a brand-new unit, and Wee Hur has a solid build reputation. But at 115 units liquidity is thin, the headline 6.5% resale CAGR is inflated by new-launch base effect (system-adjusted rate is 4.07%, in line with OCR), and the cheap 2BR stacks carry road noise / west sun. Decent but not a standout entry at this price.",
+      "red_flags": [
+        "Small 115-unit development — thinner resale liquidity and limited amenities",
+        "New-launch pricing: 6.5% resale CAGR likely inflated, adjusted rate only ~4.1%",
+        "Cheapest 2BR stacks face landed/road with west-sun exposure",
+        "Sub-1:1 carpark ratio and high maintenance noted in forums"
+      ],
+      "catalysts": [
+        "Brand-new 2026 completion — no immediate capex, full lease",
+        "Walkable to CC12 Bartley MRT (630m), near popular schools",
+        "Asking PSF below district URA median leaves modest headroom"
+      ],
+      "as_of": {
+        "price": 1640000,
+        "psf": 2240.44,
+        "beds": 2,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "New TOP 2026 leasehold near Bartley/Serangoon, 2BR at $1.64M / $2,240psf. Strong arena record (372-47, MMR 1532, score 694) and resale-only URA of 6.5%/yr are attractive, but the project is small (115 units), the 4.07% bias-adjusted rate reflects new-launch inflation, and the smallest 2BR stacks face landed/road with west-sun exposure.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2,240psf sits just under the $2,346 URA median, so it is not overpriced for a brand-new unit, and Wee Hur has a solid build reputation. But at 115 units liquidity is thin, the headline 6.5% resale CAGR is inflated by new-launch base effect (system-adjusted rate is 4.07%, in line with OCR), and the cheap 2BR stacks carry road noise / west sun. Decent but not a standout entry at this price.",
+        "red_flags": [
+          "Small 115-unit development — thinner resale liquidity and limited amenities",
+          "New-launch pricing: 6.5% resale CAGR likely inflated, adjusted rate only ~4.1%",
+          "Cheapest 2BR stacks face landed/road with west-sun exposure",
+          "Sub-1:1 carpark ratio and high maintenance noted in forums"
+        ],
+        "catalysts": [
+          "Brand-new 2026 completion — no immediate capex, full lease",
+          "Walkable to CC12 Bartley MRT (630m), near popular schools",
+          "Asking PSF below district URA median leaves modest headroom"
+        ],
+        "appreciation_assessment": "Use the bias-adjusted ~4.1%/yr, not the 6.5% resale figure which is distorted by the new-launch base. Reasonable for OCR/D13-fringe but no clear catalyst to outperform.",
+        "rental_assessment": "2BR has the widest tenant pool; Bartley/Serangoon draws working tenants. Yield only typical (~3%) at $2,240psf entry.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.1,
+        "appreciation_rate_source": "System bias-adjusted URA rate; resale-only 6.5% discounted for new-launch base effect"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-vue-500046270",
+        "review_file": "batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A brand-new (2026 TOP) compact 1,044 sqft 3BR from boutique 115-unit Bartley Vue at a steep $2,395 psf and $2.5M quantum. The system already flagged new-launch bias and discounted the headline rate to 4.07%/yr; at this price/PSF on a tiny development with a high quantum, the risk/reward is poor.",
+      "rating_rationale": "Three things stack against this as an investment: (1) $2,395 psf is above the $2,346 district median and you are buying at peak new-launch pricing — the bias-adjusted appreciation is only 4.07%/yr (vs 6.47% resale-only), so the system is explicitly warning the headline CAGR re-introduces developer inflation; (2) $2.5M for a compact 1,044 sqft 3BR pushes past the deep-buyer sweet spot into a thinner pool, with little built-in upside; (3) only 115 units = boutique, illiquid, minimal facilities, and the MRT is a 630m/8-min walk with Circle-Line-only access. Buying a just-TOP unit at developer-peak PSF in D19 with no discount and a high quantum is the classic overpay-at-launch trap. Avoid for a 5-7yr investment hold.",
+      "red_flags": [
+        "New-launch bias flagged — bias-adjusted appreciation only 4.07%/yr; $2,395 psf is above district median, peak developer pricing",
+        "$2.5M quantum on a compact 1,044 sqft 3BR sits above the deep-buyer sweet spot — thinner exit pool",
+        "Boutique 115-unit development — illiquid, minimal facilities; 630m/8-min walk, Circle Line only"
+      ],
+      "catalysts": [
+        "Brand-new 2026 build (no defect/maintenance legacy) near Bartley MRT in central D19",
+        "Small exclusive development appeals to a niche own-stay buyer at resale",
+        "Wee Hur build with smart-home/modern spec"
+      ],
+      "as_of": {
+        "price": 2499999,
+        "psf": 2394.64,
+        "beds": 3,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new (2026 TOP) compact 1,044 sqft 3BR from boutique 115-unit Bartley Vue at a steep $2,395 psf and $2.5M quantum. The system already flagged new-launch bias and discounted the headline rate to 4.07%/yr; at this price/PSF on a tiny development with a high quantum, the risk/reward is poor.",
+        "rating": "Avoid",
+        "rating_rationale": "Three things stack against this as an investment: (1) $2,395 psf is above the $2,346 district median and you are buying at peak new-launch pricing — the bias-adjusted appreciation is only 4.07%/yr (vs 6.47% resale-only), so the system is explicitly warning the headline CAGR re-introduces developer inflation; (2) $2.5M for a compact 1,044 sqft 3BR pushes past the deep-buyer sweet spot into a thinner pool, with little built-in upside; (3) only 115 units = boutique, illiquid, minimal facilities, and the MRT is a 630m/8-min walk with Circle-Line-only access. Buying a just-TOP unit at developer-peak PSF in D19 with no discount and a high quantum is the classic overpay-at-launch trap. Avoid for a 5-7yr investment hold.",
+        "red_flags": [
+          "New-launch bias flagged — bias-adjusted appreciation only 4.07%/yr; $2,395 psf is above district median, peak developer pricing",
+          "$2.5M quantum on a compact 1,044 sqft 3BR sits above the deep-buyer sweet spot — thinner exit pool",
+          "Boutique 115-unit development — illiquid, minimal facilities; 630m/8-min walk, Circle Line only"
+        ],
+        "catalysts": [
+          "Brand-new 2026 build (no defect/maintenance legacy) near Bartley MRT in central D19",
+          "Small exclusive development appeals to a niche own-stay buyer at resale",
+          "Wee Hur build with smart-home/modern spec"
+        ],
+        "rental_assessment": "Decent rental from new build and Bartley CCL access, but the compact 3BR at high quantum yields poorly (gross yield well below 3% at this PSF); tenant pool for a small 3BR is narrower than 2BR.",
+        "appreciation_assessment": "Bought at developer-peak PSF above the district median, the realistic forward rate is the bias-adjusted ~4%/yr, not the 6.5% resale figure. Little headroom once the new-launch premium normalizes — downside risk on resale.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "System bias-adjusted 4.07%/yr (new-launch inflation removed); not the resale-only 6.47%"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-vue-60190357",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

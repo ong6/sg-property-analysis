@@ -1,0 +1,65 @@
+{
+  "condo": "The Florence Residences",
+  "slug": "the-florence-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A newish (2024 TOP) 807 sqft 2BR at $1,610 psf in a large 1,410-unit Kovan development, 910m from the future Hougang CRL station. After stripping developer-pricing inflation the system marks bias-adjusted appreciation at just 2.2%/yr (resale-only 4.9%), and the unit is 910m from MRT with reported marble-flooring defects. Large liquid project but modest growth runway and a soft MRT link — a balanced Neutral.",
+      "rating_rationale": "Positives: a large, modern 1,410-unit project (deep liquidity, full facilities), $1.3M entry in the liquid band, the 80m lagoon/condo-in-a-park product, and proximity to the future Hougang CRL interchange. But the new-launch bias is real — the system's bias-adjusted appreciation is only 2.2%/yr versus a 4.9% resale-only figure, and as a 2024-TOP project recent buyers paid full developer pricing, leaving limited near-term upside on a 5-7 year hold. The 807 sqft unit at $1,610 psf is below the $1,888 median but that median is inflated by larger/newer mix. Add reported defects (discoloured/cracked marble) and a 910m MRT walk, and it lands squarely Neutral.",
+      "red_flags": [
+        "New-launch developer-pricing inflation — bias-adjusted appreciation only 2.2%/yr; recent buyers paid full price, capping near-term upside",
+        "910m to the (future) Hougang CRL station — soft walking link, and CRL not operational until ~2030",
+        "Reported build defects: discoloured and cracked marble flooring in some units",
+        "Smaller 2BR layouts lack store/yard, reducing functional appeal"
+      ],
+      "catalysts": [
+        "Future Hougang Cross Island Line interchange (~2030) within the broader catchment",
+        "Large 1,410-unit project with strong facilities (80m lagoon) and deep resale/rental liquidity",
+        "Kovan/Hougang heartland amenity and schools support family demand"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1610.9,
+        "beds": 2,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A newish (2024 TOP) 807 sqft 2BR at $1,610 psf in a large 1,410-unit Kovan development, 910m from the future Hougang CRL station. After stripping developer-pricing inflation the system marks bias-adjusted appreciation at just 2.2%/yr (resale-only 4.9%), and the unit is 910m from MRT with reported marble-flooring defects. Large liquid project but modest growth runway and a soft MRT link — a balanced Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: a large, modern 1,410-unit project (deep liquidity, full facilities), $1.3M entry in the liquid band, the 80m lagoon/condo-in-a-park product, and proximity to the future Hougang CRL interchange. But the new-launch bias is real — the system's bias-adjusted appreciation is only 2.2%/yr versus a 4.9% resale-only figure, and as a 2024-TOP project recent buyers paid full developer pricing, leaving limited near-term upside on a 5-7 year hold. The 807 sqft unit at $1,610 psf is below the $1,888 median but that median is inflated by larger/newer mix. Add reported defects (discoloured/cracked marble) and a 910m MRT walk, and it lands squarely Neutral.",
+        "red_flags": [
+          "New-launch developer-pricing inflation — bias-adjusted appreciation only 2.2%/yr; recent buyers paid full price, capping near-term upside",
+          "910m to the (future) Hougang CRL station — soft walking link, and CRL not operational until ~2030",
+          "Reported build defects: discoloured and cracked marble flooring in some units",
+          "Smaller 2BR layouts lack store/yard, reducing functional appeal"
+        ],
+        "catalysts": [
+          "Future Hougang Cross Island Line interchange (~2030) within the broader catchment",
+          "Large 1,410-unit project with strong facilities (80m lagoon) and deep resale/rental liquidity",
+          "Kovan/Hougang heartland amenity and schools support family demand"
+        ],
+        "rental_assessment": "Large project and Kovan location give a steady tenant pool, but 910m to MRT and abundant 2BR supply within the same development create internal rental competition that pressures rates and occupancy.",
+        "appreciation_assessment": "Underwrite the bias-adjusted ~2-3%/yr, not the 4.9% resale figure or any portal headline CAGR — as a fresh-TOP project the developer premium is already in the price. CRL is a 2030 catalyst but partly anticipated.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "System bias-adjusted rate (2.2%) nudged up slightly for the CRL catalyst; resale-only 4.9% not used to avoid re-introducing new-launch inflation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-florence-residences-60061771",
+        "review_file": "batch_02.json"
+      }
+    }
+  ]
+}

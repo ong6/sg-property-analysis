@@ -1,0 +1,63 @@
+{
+  "condo": "Flamingo Valley",
+  "slug": "flamingo-valley",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Freehold 393-unit D15 Siglap development (2014/2015), 2BR at $2.00M / $1,674psf on a roomy 1,195sqft. Well-maintained hilltop estate with active en-bloc interest. Solid 4.62% URA over 109 transactions, frontier, strong arena score (769). Asking PSF sits well below the $1,898 median — value for a freehold in a deep East Coast buyer pool.",
+      "rating_rationale": "Freehold in tightly-held Siglap/East Coast with a clean 4.62%/yr URA (109 txns, no bias), priced at $1,674psf vs a $1,898 median — a real discount, partly because the 1,195sqft layout is generous (low PSF, not low quality). 393 units and FH status give durable liquidity; reviews describe it as quiet, well-managed and family-friendly. En-bloc interest provides genuine optionality. The $2.00M quantum is the practical ceiling of the deep-pool band but still saleable. Strongest freehold value in the batch.",
+      "red_flags": [
+        "$2.00M quantum at the upper edge of the deepest buyer band",
+        "En-bloc is optionality, not a certainty — FCL still holds majority",
+        "No MRT within easy walk (relies on buses/drive)"
+      ],
+      "catalysts": [
+        "Active en-bloc interest — freehold Siglap site with redevelopment appeal",
+        "Freehold + deep East Coast buyer pool = durable resale liquidity",
+        "Asking PSF ~12% under URA median provides a value cushion"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1673.64,
+        "beds": 2,
+        "sqft": 1195.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 393-unit D15 Siglap development (2014/2015), 2BR at $2.00M / $1,674psf on a roomy 1,195sqft. Well-maintained hilltop estate with active en-bloc interest. Solid 4.62% URA over 109 transactions, frontier, strong arena score (769). Asking PSF sits well below the $1,898 median — value for a freehold in a deep East Coast buyer pool.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold in tightly-held Siglap/East Coast with a clean 4.62%/yr URA (109 txns, no bias), priced at $1,674psf vs a $1,898 median — a real discount, partly because the 1,195sqft layout is generous (low PSF, not low quality). 393 units and FH status give durable liquidity; reviews describe it as quiet, well-managed and family-friendly. En-bloc interest provides genuine optionality. The $2.00M quantum is the practical ceiling of the deep-pool band but still saleable. Strongest freehold value in the batch.",
+        "red_flags": [
+          "$2.00M quantum at the upper edge of the deepest buyer band",
+          "En-bloc is optionality, not a certainty — FCL still holds majority",
+          "No MRT within easy walk (relies on buses/drive)"
+        ],
+        "catalysts": [
+          "Active en-bloc interest — freehold Siglap site with redevelopment appeal",
+          "Freehold + deep East Coast buyer pool = durable resale liquidity",
+          "Asking PSF ~12% under URA median provides a value cushion"
+        ],
+        "appreciation_assessment": "4.62%/yr resale CAGR over 109 txns is reliable and at/above RCR-adjacent baseline; freehold scarcity and en-bloc optionality add upside.",
+        "rental_assessment": "Siglap/East Coast is a strong lifestyle rental catchment; large 2BR appeals to couples and expat tenants. Yield modest (~3%) at this quantum.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.62,
+        "appreciation_rate_source": "URA resale-only CAGR, 109 transactions, no new-launch bias"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500162064",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

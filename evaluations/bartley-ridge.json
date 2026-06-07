@@ -1,0 +1,63 @@
+{
+  "condo": "Bartley Ridge",
+  "slug": "bartley-ridge",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2016 99LH 3BR in coveted D13 Bartley, 260m to Bartley MRT (Circle Line), listed at $1,709 psf — ~16% under the $2,024 district median — on a very thick 250-transaction, 6.2%/yr resale base. Strong location and liquidity, but the development carries documented finish/defect complaints and an unresponsive defects-management reputation.",
+      "rating_rationale": "D13/Bartley is a structurally strong RCR-adjacent node: 260m to Bartley CCL station, central connectivity, reputable schools nearby. The 250-txn URA base gives high-confidence 6.2%/yr appreciation, and $1,709 psf is a real ~16% discount to the $2,024 median on a modern 2016 unit. At $2.3M for 1,346 sqft it sits at the upper edge of the deep buyer band. The cap to Buy (not Strong Buy) is the well-documented build-quality history — visible wall defects, marble scratches, noisy WCs, poor appliance/defect-handling — which is a real resale and own-experience risk to verify unit-by-unit; choose a well-maintained stack.",
+      "red_flags": [
+        "Documented build-quality/defect complaints (wall stains, scratched marble, faulty appliances) and poor defect-management responsiveness",
+        "$2.3M / $1,709 psf is at the upper edge of the deep buyer band — pool thins above here",
+        "Circle Line only (no interchange at Bartley); commute to CBD requires a transfer"
+      ],
+      "catalysts": [
+        "260m to Bartley MRT (Circle Line) in central, well-regarded D13 with strong school proximity",
+        "Very deep 250-txn liquidity and 6.2%/yr resale CAGR — easy, well-priced exit",
+        "$1,709 psf vs $2,024 district median leaves clear room to converge upward"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1708.77,
+        "beds": 3,
+        "sqft": 1346.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2016 99LH 3BR in coveted D13 Bartley, 260m to Bartley MRT (Circle Line), listed at $1,709 psf — ~16% under the $2,024 district median — on a very thick 250-transaction, 6.2%/yr resale base. Strong location and liquidity, but the development carries documented finish/defect complaints and an unresponsive defects-management reputation.",
+        "rating": "Buy",
+        "rating_rationale": "D13/Bartley is a structurally strong RCR-adjacent node: 260m to Bartley CCL station, central connectivity, reputable schools nearby. The 250-txn URA base gives high-confidence 6.2%/yr appreciation, and $1,709 psf is a real ~16% discount to the $2,024 median on a modern 2016 unit. At $2.3M for 1,346 sqft it sits at the upper edge of the deep buyer band. The cap to Buy (not Strong Buy) is the well-documented build-quality history — visible wall defects, marble scratches, noisy WCs, poor appliance/defect-handling — which is a real resale and own-experience risk to verify unit-by-unit; choose a well-maintained stack.",
+        "red_flags": [
+          "Documented build-quality/defect complaints (wall stains, scratched marble, faulty appliances) and poor defect-management responsiveness",
+          "$2.3M / $1,709 psf is at the upper edge of the deep buyer band — pool thins above here",
+          "Circle Line only (no interchange at Bartley); commute to CBD requires a transfer"
+        ],
+        "catalysts": [
+          "260m to Bartley MRT (Circle Line) in central, well-regarded D13 with strong school proximity",
+          "Very deep 250-txn liquidity and 6.2%/yr resale CAGR — easy, well-priced exit",
+          "$1,709 psf vs $2,024 district median leaves clear room to converge upward"
+        ],
+        "rental_assessment": "Strong rental demand from central location, MRT proximity and schools; broad tenant appeal. Yield typical for the price band; the modern build supports premium rents if the chosen unit is defect-free.",
+        "appreciation_assessment": "High-confidence 6.2%/yr over 250 txns with a clear discount to median; central D13 supports durable above-baseline appreciation. Defect reputation is the main thing that could cap individual-unit upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only 6.2%/yr over a deep 250-txn base, lightly trimmed for defect/quality risk"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-ridge-500089978",
+        "review_file": "batch_08.json"
+      }
+    }
+  ]
+}

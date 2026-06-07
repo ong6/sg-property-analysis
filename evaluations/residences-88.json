@@ -1,0 +1,61 @@
+{
+  "condo": "Residences 88",
+  "slug": "residences-88",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 28-unit freehold boutique block off Eunos with essentially no usable liquidity — only 9 URA transactions and no project-level appreciation data — and the $1,481 psf asking sits at the very top of the project's historical $1,087-$1,575 range. The freehold tenure cannot offset the thin exit and full-price entry for a 5-7yr investment.",
+      "rating_rationale": "742sqft 2BR at $1.099M / $1,481 psf is at the ceiling of this development's own transaction band ($1,087-$1,575), leaving zero margin. With only 28 units and 9 URA transactions, resale could take many months and price discovery is unreliable (no appreciation data at all). Off-frontier (MMR 1550 / score 806 leans on a 2.79% resale rate). Freehold and a 12-min Kembangan walk are minor positives that don't rescue the illiquidity-plus-top-of-range combination for an investment hold.",
+      "red_flags": [
+        "Only 28 units and 9 URA transactions — severely illiquid, unreliable pricing",
+        "Asking psf at the top of the project's historical range (no margin)",
+        "No project-level appreciation data (regional baseline only)",
+        "Boutique block with minimal facilities limits owner-occupier/tenant appeal",
+        "Off the efficiency frontier"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "~12min walk to Kembangan EW6, near Eunos amenities"
+      ],
+      "as_of": {
+        "price": 1099000,
+        "psf": 1481.13,
+        "beds": 2,
+        "sqft": 742.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 28-unit freehold boutique block off Eunos with essentially no usable liquidity — only 9 URA transactions and no project-level appreciation data — and the $1,481 psf asking sits at the very top of the project's historical $1,087-$1,575 range. The freehold tenure cannot offset the thin exit and full-price entry for a 5-7yr investment.",
+        "rating": "Avoid",
+        "rating_rationale": "742sqft 2BR at $1.099M / $1,481 psf is at the ceiling of this development's own transaction band ($1,087-$1,575), leaving zero margin. With only 28 units and 9 URA transactions, resale could take many months and price discovery is unreliable (no appreciation data at all). Off-frontier (MMR 1550 / score 806 leans on a 2.79% resale rate). Freehold and a 12-min Kembangan walk are minor positives that don't rescue the illiquidity-plus-top-of-range combination for an investment hold.",
+        "red_flags": [
+          "Only 28 units and 9 URA transactions — severely illiquid, unreliable pricing",
+          "Asking psf at the top of the project's historical range (no margin)",
+          "No project-level appreciation data (regional baseline only)",
+          "Boutique block with minimal facilities limits owner-occupier/tenant appeal",
+          "Off the efficiency frontier"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "~12min walk to Kembangan EW6, near Eunos amenities"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-residences-88-500113769",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}

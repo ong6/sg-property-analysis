@@ -1,11 +1,39 @@
 {
-  "updated_at": "2026-06-06",
+  "updated_at": "2026-06-08",
   "condos": {
+    "the-luxurie": {
+      "condo": "The Luxurie",
+      "district": "D19",
+      "latest_rating": "Strong Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-trumps": {
+      "condo": "The Trumps",
+      "district": "D14",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
     "skysuites-anson": {
       "condo": "Skysuites @ Anson",
       "district": "D02",
       "latest_rating": "Avoid",
       "latest_date": "2026-06-04",
+      "eval_count": 1
+    },
+    "rivervale-crest": {
+      "condo": "Rivervale Crest",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "sims-urban-oasis": {
+      "condo": "Sims Urban Oasis",
+      "district": "D14",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
       "eval_count": 1
     },
     "waterfront-key": {
@@ -15,12 +43,82 @@
       "latest_date": "2026-06-05",
       "eval_count": 1
     },
+    "trevista": {
+      "condo": "Trevista",
+      "district": "D12",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
     "waterfront-isle": {
       "condo": "Waterfront Isle",
       "district": "D16",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 5
+    },
+    "d-nest": {
+      "condo": "D'Nest",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "coco-palms": {
+      "condo": "Coco Palms",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-minton": {
+      "condo": "The Minton",
+      "district": "D19",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "a-treasure-trove": {
+      "condo": "A Treasure Trove",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "suites-sims": {
+      "condo": "Suites @ Sims",
+      "district": "D14",
       "latest_rating": "Neutral",
-      "latest_date": "2026-06-05",
-      "eval_count": 3
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-santorini": {
+      "condo": "The Santorini",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "penrose": {
+      "condo": "Penrose",
+      "district": "D14",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "the-rochester-residences": {
+      "condo": "The Rochester Residences",
+      "district": "D05",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "bartley-vue": {
+      "condo": "Bartley Vue",
+      "district": "D19",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
     },
     "city-gate": {
       "condo": "City Gate",
@@ -29,19 +127,159 @@
       "latest_date": "2026-06-04",
       "eval_count": 3
     },
+    "regentville": {
+      "condo": "Regentville",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "the-tropica": {
+      "condo": "The Tropica",
+      "district": "D18",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-shore-residences": {
+      "condo": "The Shore Residences",
+      "district": "D15",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "beacon-heights": {
+      "condo": "Beacon Heights",
+      "district": "D12",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "parc-centros": {
+      "condo": "Parc Centros",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "vacanza-east": {
+      "condo": "Vacanza @ East",
+      "district": "D14",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "parc-clematis": {
+      "condo": "Parc Clematis",
+      "district": "D05",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
     "botanique-at-bartley": {
       "condo": "Botanique at Bartley",
       "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 7
+    },
+    "la-fiesta": {
+      "condo": "La Fiesta",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-panorama": {
+      "condo": "The Panorama",
+      "district": "D20",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "grandeur-8": {
+      "condo": "Grandeur 8",
+      "district": "D20",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "bartley-ridge": {
+      "condo": "Bartley Ridge",
+      "district": "D13",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "astoria-park": {
+      "condo": "Astoria Park",
+      "district": "D16",
       "latest_rating": "Neutral",
-      "latest_date": "2026-06-06",
-      "eval_count": 6
+      "latest_date": "2026-06-08",
+      "eval_count": 3
+    },
+    "straits-residences": {
+      "condo": "Straits Residences",
+      "district": "D15",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "jewel-buangkok": {
+      "condo": "Jewel @ Buangkok",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "suites-topaz": {
+      "condo": "Suites @ Topaz",
+      "district": "D12",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "chiltern-park": {
+      "condo": "Chiltern Park",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "radix": {
+      "condo": "Radix",
+      "district": "D15",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "kovan-residences": {
+      "condo": "Kovan Residences",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "vela-bay": {
+      "condo": "Vela Bay",
+      "district": "D15",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
     },
     "waterfront-waves": {
       "condo": "Waterfront Waves",
       "district": "D16",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 3
+    },
+    "waterview": {
+      "condo": "Waterview",
+      "district": "D18",
       "latest_rating": "Neutral",
-      "latest_date": "2026-06-05",
-      "eval_count": 1
+      "latest_date": "2026-06-08",
+      "eval_count": 2
     },
     "urban-vista": {
       "condo": "Urban Vista",
@@ -50,12 +288,166 @@
       "latest_date": "2026-06-04",
       "eval_count": 1
     },
+    "nv-residences": {
+      "condo": "NV Residences",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "boathouse-residences": {
+      "condo": "Boathouse Residences",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "thomson-three": {
+      "condo": "Thomson Three",
+      "district": "D20",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "river-isles": {
+      "condo": "River Isles",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "riverfront-residences": {
+      "condo": "Riverfront Residences",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-antares": {
+      "condo": "The Antares",
+      "district": "D14",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "amber-skye": {
+      "condo": "Amber Skye",
+      "district": "D15",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "east-signature": {
+      "condo": "East Signature",
+      "district": "D15",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "oasis-elias": {
+      "condo": "Oasis @ Elias",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-florence-residences": {
+      "condo": "The Florence Residences",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "jadescape": {
+      "condo": "JadeScape",
+      "district": "D20",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "parc-vera": {
+      "condo": "Parc Vera",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "tanamera-crest": {
+      "condo": "Tanamera Crest",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "centra-residence": {
+      "condo": "Centra Residence",
+      "district": "D14",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-madeira": {
+      "condo": "The Madeira",
+      "district": "D23",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-palette": {
+      "condo": "The Palette",
+      "district": "D18",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "one-rosyth": {
+      "condo": "One Rosyth",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "northvale": {
+      "condo": "Northvale",
+      "district": "D23",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
     "grandeur-park-residences": {
       "condo": "Grandeur Park Residences",
       "district": "D16",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-04",
       "eval_count": 1
+    },
+    "tembusu-grand": {
+      "condo": "Tembusu Grand",
+      "district": "D15",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "centro-residences": {
+      "condo": "Centro Residences",
+      "district": "D20",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "dakota-residences": {
+      "condo": "Dakota Residences",
+      "district": "D14",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "waterbank-at-dakota": {
+      "condo": "Waterbank at Dakota",
+      "district": "D14",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
     },
     "tre-residences": {
       "condo": "Tre Residences",
@@ -71,11 +463,109 @@
       "latest_date": "2026-06-05",
       "eval_count": 1
     },
+    "rio-vista": {
+      "condo": "Rio Vista",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "aquarius-by-the-park": {
+      "condo": "Aquarius By The Park",
+      "district": "D16",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "flamingo-valley": {
+      "condo": "Flamingo Valley",
+      "district": "D15",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "compass-heights": {
+      "condo": "Compass Heights",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "kovan-regency": {
+      "condo": "Kovan Regency",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "residences-88": {
+      "condo": "Residences 88",
+      "district": "D14",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-gardens-at-bishan": {
+      "condo": "The Gardens at Bishan",
+      "district": "D20",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
     "west-n": {
       "condo": "West-N",
       "district": "D05",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-04",
+      "eval_count": 1
+    },
+    "savannah-condopark": {
+      "condo": "Savannah Condopark",
+      "district": "D18",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "flo-residence": {
+      "condo": "FLO Residence",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "sunglade": {
+      "condo": "Sunglade",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "changi-rise-condo": {
+      "condo": "Changi Rise Condo",
+      "district": "D18",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "riversails": {
+      "condo": "Riversails",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 2
+    },
+    "riversound-residence": {
+      "condo": "Riversound Residence",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "the-quartz": {
+      "condo": "The Quartz",
+      "district": "D19",
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-08",
       "eval_count": 1
     }
   }

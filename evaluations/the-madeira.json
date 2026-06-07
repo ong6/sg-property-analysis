@@ -1,0 +1,67 @@
+{
+  "condo": "The Madeira",
+  "slug": "the-madeira",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 23-year-old large 1,356 sqft 3BR in Bukit Batok, 460m from Bukit Gombak MRT, asking just $1,106 PSF — a ~10% discount to the $1,228 median — at a low $1.5M absolute. Genuine value (cheap PSF, deep buyer band, near-MRT, 5.9% CAGR), but the age (~77yr lease left), OCR-west location with limited catalysts, and a thinner 71-txn sample temper it to a Buy with the value real but the growth ceiling modest.",
+      "rating_rationale": "Real value play: $1,106 PSF is a ~10% discount to the $1,228 median on a large 1,356 sqft unit, and the $1.5M absolute sits in the deepest buyer band — exactly the affordability profile that resells easily to HDB upgraders. 460m to Bukit Gombak MRT (NSL) gives solid connectivity, 5.9% URA resale CAGR over 71 txns is healthy, ~3.4% yield is among the better in the batch, and score 692 / MMR 1532 is respectable. Held to a plain Buy by the 2003 build (~77yr lease, ageing finishes), the mature D23 west location with no major near-term catalyst (no new MRT line, no govt transformation zone within reach), and a moderate 71-transaction sample. Solid, affordable, fairly-bought — but the upside is steady rather than catalytic.",
+      "red_flags": [
+        "23-year-old building (~77yr lease) — ageing finishes, narrowing finance window over the hold",
+        "Mature OCR-west D23 with no near-term catalyst (no new MRT/govt zone within reach)",
+        "Off the efficient frontier; moderate 71-txn appreciation sample",
+        "456-unit mid-size development — adequate but not deep liquidity"
+      ],
+      "catalysts": [
+        "$1,106 PSF — ~10% below median; cheap large-format 3BR",
+        "$1.5M absolute in the deepest, most liquid buyer band",
+        "460m to Bukit Gombak MRT (NSL) — solid existing connectivity",
+        "5.9% URA resale CAGR and ~3.4% gross yield — better income profile than batch peers"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1106.19,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 23-year-old large 1,356 sqft 3BR in Bukit Batok, 460m from Bukit Gombak MRT, asking just $1,106 PSF — a ~10% discount to the $1,228 median — at a low $1.5M absolute. Genuine value (cheap PSF, deep buyer band, near-MRT, 5.9% CAGR), but the age (~77yr lease left), OCR-west location with limited catalysts, and a thinner 71-txn sample temper it to a Buy with the value real but the growth ceiling modest.",
+        "rating": "Buy",
+        "rating_rationale": "Real value play: $1,106 PSF is a ~10% discount to the $1,228 median on a large 1,356 sqft unit, and the $1.5M absolute sits in the deepest buyer band — exactly the affordability profile that resells easily to HDB upgraders. 460m to Bukit Gombak MRT (NSL) gives solid connectivity, 5.9% URA resale CAGR over 71 txns is healthy, ~3.4% yield is among the better in the batch, and score 692 / MMR 1532 is respectable. Held to a plain Buy by the 2003 build (~77yr lease, ageing finishes), the mature D23 west location with no major near-term catalyst (no new MRT line, no govt transformation zone within reach), and a moderate 71-transaction sample. Solid, affordable, fairly-bought — but the upside is steady rather than catalytic.",
+        "red_flags": [
+          "23-year-old building (~77yr lease) — ageing finishes, narrowing finance window over the hold",
+          "Mature OCR-west D23 with no near-term catalyst (no new MRT/govt zone within reach)",
+          "Off the efficient frontier; moderate 71-txn appreciation sample",
+          "456-unit mid-size development — adequate but not deep liquidity"
+        ],
+        "catalysts": [
+          "$1,106 PSF — ~10% below median; cheap large-format 3BR",
+          "$1.5M absolute in the deepest, most liquid buyer band",
+          "460m to Bukit Gombak MRT (NSL) — solid existing connectivity",
+          "5.9% URA resale CAGR and ~3.4% gross yield — better income profile than batch peers"
+        ],
+        "rental_assessment": "Above-average for the batch. ~3.4% yield, large family-friendly unit near MRT; reliable heartland tenant demand though rents are capped by the OCR-west location.",
+        "appreciation_assessment": "Steady. 5.9% historical CAGR with a discount-to-median entry gives downside protection, but mature D23 with no catalyst means forward appreciation likely settles near OCR baseline-plus, partly offset by lease decay.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale CAGR (5.9%) tempered for age/lease decay and absence of catalysts in mature D23"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

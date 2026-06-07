@@ -1,0 +1,65 @@
+{
+  "condo": "Straits Residences",
+  "slug": "straits-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Tiny 30-unit freehold boutique at Joo Chiat Place, D15, 2BR at $1.46M / $1,443psf on 1,012sqft. Freehold East Coast and a low PSF look appealing, and arena score is high (833), but the headline 11.03% URA rests on just 7 transactions — statistically meaningless — and a 30-unit project is structurally illiquid. The thin-data, thin-market combination dominates the call.",
+      "rating_rationale": "Freehold in Joo Chiat/East Coast at $1,443psf (well under the $1,852 median) is genuine value, and the 1,012sqft 2BR is generously sized. But the 11.03% URA CAGR is computed from only 7 transactions — not reliable, and not something to lean on — and a 30-unit development has shallow, lumpy resale liquidity: a single distressed sale can reset pricing and exits can take time. The high arena score is flattered by the inflated thin-sample rate. Freehold tenure and location keep it off Avoid, but illiquidity caps it at Neutral for a 5-7yr investor who needs a clean exit.",
+      "red_flags": [
+        "URA 11.03% CAGR from only 7 transactions — statistically unreliable, do not anchor",
+        "30-unit boutique — structurally illiquid, lumpy resale pricing",
+        "No facilities scale; 12-min walk (1km) to nearest MRT",
+        "Arena score (833) inflated by the unreliable thin-sample appreciation rate"
+      ],
+      "catalysts": [
+        "Freehold tenure in tightly-held Joo Chiat / East Coast (D15)",
+        "Asking PSF ~22% under URA median — value on a generous 1,012sqft 2BR",
+        "Joo Chiat conservation charm sustains lifestyle/rental demand"
+      ],
+      "as_of": {
+        "price": 1460000,
+        "psf": 1442.69,
+        "beds": 2,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Tiny 30-unit freehold boutique at Joo Chiat Place, D15, 2BR at $1.46M / $1,443psf on 1,012sqft. Freehold East Coast and a low PSF look appealing, and arena score is high (833), but the headline 11.03% URA rests on just 7 transactions — statistically meaningless — and a 30-unit project is structurally illiquid. The thin-data, thin-market combination dominates the call.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold in Joo Chiat/East Coast at $1,443psf (well under the $1,852 median) is genuine value, and the 1,012sqft 2BR is generously sized. But the 11.03% URA CAGR is computed from only 7 transactions — not reliable, and not something to lean on — and a 30-unit development has shallow, lumpy resale liquidity: a single distressed sale can reset pricing and exits can take time. The high arena score is flattered by the inflated thin-sample rate. Freehold tenure and location keep it off Avoid, but illiquidity caps it at Neutral for a 5-7yr investor who needs a clean exit.",
+        "red_flags": [
+          "URA 11.03% CAGR from only 7 transactions — statistically unreliable, do not anchor",
+          "30-unit boutique — structurally illiquid, lumpy resale pricing",
+          "No facilities scale; 12-min walk (1km) to nearest MRT",
+          "Arena score (833) inflated by the unreliable thin-sample appreciation rate"
+        ],
+        "catalysts": [
+          "Freehold tenure in tightly-held Joo Chiat / East Coast (D15)",
+          "Asking PSF ~22% under URA median — value on a generous 1,012sqft 2BR",
+          "Joo Chiat conservation charm sustains lifestyle/rental demand"
+        ],
+        "appreciation_assessment": "Discard the 11% headline (7 txns). Freehold D15 should track RCR ~5%/yr at best; thin liquidity makes realized appreciation harder to crystallize on exit.",
+        "rental_assessment": "Joo Chiat is a strong lifestyle rental catchment; freehold 2BR rents to couples/expats. Yield modest (~3%); 1km MRT walk caps premium.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "RCR/D15 freehold baseline; URA 11% rejected as 7-transaction noise"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-straits-residences-500151300",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

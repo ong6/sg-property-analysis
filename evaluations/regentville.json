@@ -1,0 +1,117 @@
+{
+  "condo": "Regentville",
+  "slug": "regentville",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The cheapest psf in the batch ($1,118) for a huge 1163 sqft 2BR at $1.3M, ~6% under the $1,185.5 URA median, with a future CRL Serangoon North station 920m away. Far East/Sino build with decent reviews. But it's 26 years old (~73 yrs lease) — the lease-decay and financing question caps it at Neutral.",
+      "rating_rationale": "Value is the whole thesis: $1,118 psf and a 1163 sqft footprint give the lowest entry-cost-per-sqft here, below the $1,185.5 median, and the 7.6% resale CAGR (131 txns) is well-supported. CRL Serangoon North (CR9, 920m) is a genuine future catalyst and Far East/Sino is a reputable builder with 7.1/10 resident ratings. The counterweight is age — built 2000, ~73 years of lease left and accelerating decay, which weakens financing for future buyers and is the main reason resale liquidity could thin over a 5-7yr hold. Big and cheap, but the lease clock and dated fittings keep it balanced.",
+      "red_flags": [
+        "26 years old (built 2000); ~73-year lease drives accelerating decay and weaker buyer financing later",
+        "Dated development; will compete against newer D19 stock on resale",
+        "920m walk to a future (not yet operational) MRT — no rail today"
+      ],
+      "catalysts": [
+        "Cross Island Line Serangoon North station (CR9, 920m) future uplift",
+        "Lowest entry $/sqft in the batch — value buffer for downside",
+        "Spacious 1163 sqft layout attractive to value-seeking upgrader families"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1117.8,
+        "beds": 2,
+        "sqft": 1163.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The cheapest psf in the batch ($1,118) for a huge 1163 sqft 2BR at $1.3M, ~6% under the $1,185.5 URA median, with a future CRL Serangoon North station 920m away. Far East/Sino build with decent reviews. But it's 26 years old (~73 yrs lease) — the lease-decay and financing question caps it at Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Value is the whole thesis: $1,118 psf and a 1163 sqft footprint give the lowest entry-cost-per-sqft here, below the $1,185.5 median, and the 7.6% resale CAGR (131 txns) is well-supported. CRL Serangoon North (CR9, 920m) is a genuine future catalyst and Far East/Sino is a reputable builder with 7.1/10 resident ratings. The counterweight is age — built 2000, ~73 years of lease left and accelerating decay, which weakens financing for future buyers and is the main reason resale liquidity could thin over a 5-7yr hold. Big and cheap, but the lease clock and dated fittings keep it balanced.",
+        "red_flags": [
+          "26 years old (built 2000); ~73-year lease drives accelerating decay and weaker buyer financing later",
+          "Dated development; will compete against newer D19 stock on resale",
+          "920m walk to a future (not yet operational) MRT — no rail today"
+        ],
+        "catalysts": [
+          "Cross Island Line Serangoon North station (CR9, 920m) future uplift",
+          "Lowest entry $/sqft in the batch — value buffer for downside",
+          "Spacious 1163 sqft layout attractive to value-seeking upgrader families"
+        ],
+        "rental_assessment": "Adequate family rental at a low absolute rent; older fittings and current lack of MRT keep it a price-led rather than premium rental.",
+        "appreciation_assessment": "7.6% historical CAGR is real, but lease decay from a 2000-build base is a structural headwind; CRL is the offsetting catalyst — net expect moderating, not sustained high, appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-25625664",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Very low-quantum $1.39M 3BR (1,152 sqft) at PSF 1206 with 7.6%/yr URA resale appreciation and the future CR9 Serangoon North CRL station as a catalyst. The catch is the lease: 99 years from 1996 means only ~63 years remaining at a 5-7yr exit, which caps financing and the resale buyer pool — a Neutral.",
+      "rating_rationale": "Attractive entry: $1.39M for a 1,152 sqft 3BR keeps the buyer pool wide and the PSF (1206) is roughly at the URA median (1185.5). 7.6%/yr resale CAGR on 131 txns is strong, and CR9 Serangoon North (Cross Island Line, ~2030) is a genuine within-1km catalyst. But the lease commenced 1996 — at a 2032-2033 exit the property is at ~63 years remaining, the zone where CPF usage tightens and the buyer/financing pool narrows, structurally capping appreciation late in the hold. 920m to a not-yet-built MRT and mixed security/maintenance reviews temper enthusiasm. Net: a fairly-priced, cash-flow-decent hold rather than a capital-growth standout.",
+      "red_flags": [
+        "Lease from 1996 — ~63 years remaining at exit; CPF/financing restrictions begin to bite below 60yr",
+        "Decreasing-lease drag will progressively cap appreciation through the hold",
+        "CR9 MRT not yet operational and 920m away; benefit is back-loaded",
+        "Some reviews cite security and maintenance concerns"
+      ],
+      "catalysts": [
+        "Future CR9 Serangoon North Cross Island Line station (~2030) within ~1km",
+        "Low $1.39M quantum and at-median PSF keep entry attractive and liquid",
+        "Spacious 1,152 sqft layout with 3 bathrooms appeals to value-seeking families"
+      ],
+      "as_of": {
+        "price": 1388888,
+        "psf": 1205.63,
+        "beds": 3,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Very low-quantum $1.39M 3BR (1,152 sqft) at PSF 1206 with 7.6%/yr URA resale appreciation and the future CR9 Serangoon North CRL station as a catalyst. The catch is the lease: 99 years from 1996 means only ~63 years remaining at a 5-7yr exit, which caps financing and the resale buyer pool — a Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Attractive entry: $1.39M for a 1,152 sqft 3BR keeps the buyer pool wide and the PSF (1206) is roughly at the URA median (1185.5). 7.6%/yr resale CAGR on 131 txns is strong, and CR9 Serangoon North (Cross Island Line, ~2030) is a genuine within-1km catalyst. But the lease commenced 1996 — at a 2032-2033 exit the property is at ~63 years remaining, the zone where CPF usage tightens and the buyer/financing pool narrows, structurally capping appreciation late in the hold. 920m to a not-yet-built MRT and mixed security/maintenance reviews temper enthusiasm. Net: a fairly-priced, cash-flow-decent hold rather than a capital-growth standout.",
+        "red_flags": [
+          "Lease from 1996 — ~63 years remaining at exit; CPF/financing restrictions begin to bite below 60yr",
+          "Decreasing-lease drag will progressively cap appreciation through the hold",
+          "CR9 MRT not yet operational and 920m away; benefit is back-loaded",
+          "Some reviews cite security and maintenance concerns"
+        ],
+        "catalysts": [
+          "Future CR9 Serangoon North Cross Island Line station (~2030) within ~1km",
+          "Low $1.39M quantum and at-median PSF keep entry attractive and liquid",
+          "Spacious 1,152 sqft layout with 3 bathrooms appeals to value-seeking families"
+        ],
+        "rental_assessment": "Serangoon North is a steady family/heartland rental area; a large 3BR at low cost basis can yield ~3.8% gross, helped by the low quantum, but ageing fit-out limits rent premium.",
+        "appreciation_assessment": "7.6%/yr historical resale CAGR is strong and the CRL is a real tailwind, but the shrinking lease is a hard ceiling that will increasingly offset that over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500157715",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

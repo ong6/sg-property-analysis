@@ -1,0 +1,63 @@
+{
+  "condo": "Oasis @ Elias",
+  "slug": "oasis-elias",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1302sqft 3BR at just $1.58M and $1213 psf (~9% below the Oasis median of $1326), carrying the batch's highest URA appreciation at 8.87%/yr. Well-reviewed (9.2/10) 388-unit Pasir Ris development with greenery and beach proximity. The catch is location: 1.32km (~16 min walk) from Pasir Ris MRT, and a thinner 82-transaction base.",
+      "rating_rationale": "Lowest entry price in the batch ($1.58M) paired with the strongest appreciation (8.87%/yr) and a ~9% below-median PSF makes the value case compelling. Pasir Ris benefits from CRL (Pasir Ris interchange) and the Pasir Ris Central redevelopment — real OCR catalysts. Excellent resident ratings and a 388-unit base support resale. Held to Buy (not Strong Buy) by the 1.32km MRT distance, which caps tenant/buyer convenience, and only 82 transactions (moderate liquidity confidence). Strong risk-adjusted entry.",
+      "red_flags": [
+        "1.32km / ~16 min walk to Pasir Ris MRT — not walkable for many buyers",
+        "82 transactions is the thinnest meaningful base among the higher-ranked entries",
+        "388 units is mid-sized; fewer comparable resales than 600-unit peers"
+      ],
+      "catalysts": [
+        "Cross Island Line interchange at Pasir Ris (~2030)",
+        "Pasir Ris Central integrated development (mall, bus interchange, polyclinic)",
+        "Highest URA appreciation in batch (8.87%/yr) + lowest price + below-median PSF"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1213.52,
+        "beds": 3,
+        "sqft": 1302.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1302sqft 3BR at just $1.58M and $1213 psf (~9% below the Oasis median of $1326), carrying the batch's highest URA appreciation at 8.87%/yr. Well-reviewed (9.2/10) 388-unit Pasir Ris development with greenery and beach proximity. The catch is location: 1.32km (~16 min walk) from Pasir Ris MRT, and a thinner 82-transaction base.",
+        "rating": "Buy",
+        "rating_rationale": "Lowest entry price in the batch ($1.58M) paired with the strongest appreciation (8.87%/yr) and a ~9% below-median PSF makes the value case compelling. Pasir Ris benefits from CRL (Pasir Ris interchange) and the Pasir Ris Central redevelopment — real OCR catalysts. Excellent resident ratings and a 388-unit base support resale. Held to Buy (not Strong Buy) by the 1.32km MRT distance, which caps tenant/buyer convenience, and only 82 transactions (moderate liquidity confidence). Strong risk-adjusted entry.",
+        "red_flags": [
+          "1.32km / ~16 min walk to Pasir Ris MRT — not walkable for many buyers",
+          "82 transactions is the thinnest meaningful base among the higher-ranked entries",
+          "388 units is mid-sized; fewer comparable resales than 600-unit peers"
+        ],
+        "catalysts": [
+          "Cross Island Line interchange at Pasir Ris (~2030)",
+          "Pasir Ris Central integrated development (mall, bus interchange, polyclinic)",
+          "Highest URA appreciation in batch (8.87%/yr) + lowest price + below-median PSF"
+        ],
+        "rental_assessment": "Pasir Ris draws families and Changi/airport-linked tenants; demand is decent but the MRT distance limits premium rents. Yield ~3-3.5%.",
+        "appreciation_assessment": "8.87%/yr resale CAGR is the batch high, though on a smaller 82-txn sample so confidence is moderate; CRL and Pasir Ris Central give a credible forward catalyst to sustain above-baseline growth.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 7.0,
+        "appreciation_rate_source": "URA resale CAGR (82 txns) discounted for sample size and MRT distance"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-oasis-elias-25307344",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "condo": "The Minton",
+  "slug": "the-minton",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A large 980 sqft 2BR at $1,602 psf (~2% under the $1,635 median) in a BCA Construction-Excellence-awarded, 1,145-unit Hougang development — meaning best-in-batch resale liquidity (292 URA txns) and proven build quality. 7.5% resale CAGR is well-supported. The 1.06km MRT walk is the one real drawback, but the liquidity + quality combination makes it a Buy.",
+      "rating_rationale": "The Minton's scale is its edge: 1,145 units and 292 URA transactions give the deepest resale liquidity in this batch — you can exit. It won BCA Construction Excellence (Merit) and LIAS Gold awards, so build/landscaping quality is documented rather than guessed, and reviews describe it as quiet and uncrowded despite the size. 7.5% resale CAGR is high-confidence on 292 txns, and a 980 sqft 2BR at $1,602 psf is roughly at median (fair entry). Drawbacks: 1.06km to Serangoon MRT (no near-station premium) and it is the one off-frontier listing here (slightly below the efficient set). Liquidity + quality outweigh the walk.",
+      "red_flags": [
+        "1.06km walk to Serangoon MRT — no near-station premium",
+        "Off-frontier in the technical set (marginally dominated on value by other listings)",
+        "Large 980 sqft 2BR dilutes psf-yield versus compact units"
+      ],
+      "catalysts": [
+        "1,145 units + 292 transactions = deepest resale liquidity / easiest exit in the batch",
+        "Documented build quality (BCA Construction Excellence Merit, LIAS Gold)",
+        "Established, low-density-feel Hougang estate with steady upgrader demand"
+      ],
+      "as_of": {
+        "price": 1570000,
+        "psf": 1602.04,
+        "beds": 2,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 980 sqft 2BR at $1,602 psf (~2% under the $1,635 median) in a BCA Construction-Excellence-awarded, 1,145-unit Hougang development — meaning best-in-batch resale liquidity (292 URA txns) and proven build quality. 7.5% resale CAGR is well-supported. The 1.06km MRT walk is the one real drawback, but the liquidity + quality combination makes it a Buy.",
+        "rating": "Buy",
+        "rating_rationale": "The Minton's scale is its edge: 1,145 units and 292 URA transactions give the deepest resale liquidity in this batch — you can exit. It won BCA Construction Excellence (Merit) and LIAS Gold awards, so build/landscaping quality is documented rather than guessed, and reviews describe it as quiet and uncrowded despite the size. 7.5% resale CAGR is high-confidence on 292 txns, and a 980 sqft 2BR at $1,602 psf is roughly at median (fair entry). Drawbacks: 1.06km to Serangoon MRT (no near-station premium) and it is the one off-frontier listing here (slightly below the efficient set). Liquidity + quality outweigh the walk.",
+        "red_flags": [
+          "1.06km walk to Serangoon MRT — no near-station premium",
+          "Off-frontier in the technical set (marginally dominated on value by other listings)",
+          "Large 980 sqft 2BR dilutes psf-yield versus compact units"
+        ],
+        "catalysts": [
+          "1,145 units + 292 transactions = deepest resale liquidity / easiest exit in the batch",
+          "Documented build quality (BCA Construction Excellence Merit, LIAS Gold)",
+          "Established, low-density-feel Hougang estate with steady upgrader demand"
+        ],
+        "rental_assessment": "Reliable family rental from the large layout and extensive facilities; the 1.06km MRT distance is the main limiter on commuter-tenant appeal, partly offset by feeder buses to Serangoon.",
+        "appreciation_assessment": "7.5% resale CAGR on a deep 292-txn base is among the most trustworthy here; expect continued solid mid-single-digit appreciation underpinned by liquidity and quality.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-minton-500063448",
+        "review_file": "batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,145-unit Hougang mega-development with deep 292-txn liquidity and 7.5%/yr URA resale appreciation, but this specific 3BR is priced at PSF 1873 — a steep ~14% PREMIUM over the project's URA median of 1635 — at a $2.5M quantum that thins the buyer pool. Recurring build-quality complaints (water seepage, low-grade finishes) and a 1km+ MRT walk make this overpriced unit an Avoid.",
+      "rating_rationale": "The project fundamentals are fine (292 txns = very liquid, 7.5%/yr resale CAGR, large facilities), but you are not buying the project at median — you are buying one unit at PSF 1873 vs a URA median of 1635, a ~14% premium. At a $2.5M quantum that premium is hard to recover on exit, and the buyer pool above $2.4M is materially shallower. Reviews repeatedly cite poor interior finishing, ceiling water seepage and piping/water-supply disruptions, which depress resale appeal. The 1.06km walk to Serangoon MRT is a further drag. Good development, bad price.",
+      "red_flags": [
+        "PSF 1873 is ~14% ABOVE URA median 1635 — significantly overpriced unit",
+        "$2.5M quantum sits above the deep buyer band, slowing exit",
+        "Documented build-quality issues: water seepage, low-grade finishes, piping/water-supply problems",
+        "13-min / 1.06km walk to Serangoon MRT"
+      ],
+      "catalysts": [
+        "292 URA transactions and 1,145 units give best-in-batch liquidity",
+        "Mature Hougang/Serangoon catchment with NEX mall and schools nearby"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1872.66,
+        "beds": 3,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,145-unit Hougang mega-development with deep 292-txn liquidity and 7.5%/yr URA resale appreciation, but this specific 3BR is priced at PSF 1873 — a steep ~14% PREMIUM over the project's URA median of 1635 — at a $2.5M quantum that thins the buyer pool. Recurring build-quality complaints (water seepage, low-grade finishes) and a 1km+ MRT walk make this overpriced unit an Avoid.",
+        "rating": "Avoid",
+        "rating_rationale": "The project fundamentals are fine (292 txns = very liquid, 7.5%/yr resale CAGR, large facilities), but you are not buying the project at median — you are buying one unit at PSF 1873 vs a URA median of 1635, a ~14% premium. At a $2.5M quantum that premium is hard to recover on exit, and the buyer pool above $2.4M is materially shallower. Reviews repeatedly cite poor interior finishing, ceiling water seepage and piping/water-supply disruptions, which depress resale appeal. The 1.06km walk to Serangoon MRT is a further drag. Good development, bad price.",
+        "red_flags": [
+          "PSF 1873 is ~14% ABOVE URA median 1635 — significantly overpriced unit",
+          "$2.5M quantum sits above the deep buyer band, slowing exit",
+          "Documented build-quality issues: water seepage, low-grade finishes, piping/water-supply problems",
+          "13-min / 1.06km walk to Serangoon MRT"
+        ],
+        "catalysts": [
+          "292 URA transactions and 1,145 units give best-in-batch liquidity",
+          "Mature Hougang/Serangoon catchment with NEX mall and schools nearby"
+        ],
+        "rental_assessment": "Large facilities and family-sized layout draw tenant interest, but the distance to MRT and $2.5M cost basis hold gross yield near 3%, below what the quantum should command.",
+        "appreciation_assessment": "Project-level 7.5%/yr CAGR is healthy, but buying ~14% above median means the unit must first close that gap before participating in further upside — a structural headwind.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-minton-500000478",
+        "review_file": "batch_07.json"
+      }
+    }
+  ]
+}

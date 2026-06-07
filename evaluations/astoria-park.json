@@ -1,0 +1,169 @@
+{
+  "condo": "Astoria Park",
+  "slug": "astoria-park",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "354-unit D14 leasehold (1995) at Kembangan, 2BR at $1.31M / $1,519psf, 130m from EW6 Kembangan MRT. URA shows 6.33% over 58 txns and asking is near the $1,392 median, but resident reviews flag serious building defects — roof waterproofing failing, rainwater leaking into units, derelict stacks, and amenities shut for noise complaints. The maintenance overhang outweighs the cheap MRT-adjacent entry.",
+      "rating_rationale": "On paper the location is excellent (130m to Kembangan EW6) and the 6.33% URA looks fine, but multiple reviews describe failing roof waterproofing with water ingress into units, units in derelict condition, and facilities closed indefinitely — classic signs of an under-funded sinking fund and looming special-levy / capex risk on a 31-year-old lease. For a 5-7yr investment that combination (ageing lease + deferred maintenance + likely levies) is a material downside, and it explains a price near median despite a prime MRT location. Investment Avoid; the MRT proximity is its only real merit.",
+      "red_flags": [
+        "Reviews report failing roof waterproofing and rainwater leaking into units",
+        "Units in derelict condition; facilities closed indefinitely (noise complaints)",
+        "Deferred-maintenance / special-levy risk on a 1995 (~69-yr) lease",
+        "Ageing leasehold — financing and appreciation headwinds over the hold"
+      ],
+      "catalysts": [
+        "130m to EW6 Kembangan MRT — strong transit (the one positive)",
+        "Low $1.31M quantum if a buyer can stomach the capex risk"
+      ],
+      "as_of": {
+        "price": 1308000,
+        "psf": 1519.16,
+        "beds": 2,
+        "sqft": 861.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "354-unit D14 leasehold (1995) at Kembangan, 2BR at $1.31M / $1,519psf, 130m from EW6 Kembangan MRT. URA shows 6.33% over 58 txns and asking is near the $1,392 median, but resident reviews flag serious building defects — roof waterproofing failing, rainwater leaking into units, derelict stacks, and amenities shut for noise complaints. The maintenance overhang outweighs the cheap MRT-adjacent entry.",
+        "rating": "Avoid",
+        "rating_rationale": "On paper the location is excellent (130m to Kembangan EW6) and the 6.33% URA looks fine, but multiple reviews describe failing roof waterproofing with water ingress into units, units in derelict condition, and facilities closed indefinitely — classic signs of an under-funded sinking fund and looming special-levy / capex risk on a 31-year-old lease. For a 5-7yr investment that combination (ageing lease + deferred maintenance + likely levies) is a material downside, and it explains a price near median despite a prime MRT location. Investment Avoid; the MRT proximity is its only real merit.",
+        "red_flags": [
+          "Reviews report failing roof waterproofing and rainwater leaking into units",
+          "Units in derelict condition; facilities closed indefinitely (noise complaints)",
+          "Deferred-maintenance / special-levy risk on a 1995 (~69-yr) lease",
+          "Ageing leasehold — financing and appreciation headwinds over the hold"
+        ],
+        "catalysts": [
+          "130m to EW6 Kembangan MRT — strong transit (the one positive)",
+          "Low $1.31M quantum if a buyer can stomach the capex risk"
+        ],
+        "appreciation_assessment": "Historic 6.33% is undermined by visible building deterioration; future appreciation likely lags as maintenance/levy issues weigh on resale and rents.",
+        "rental_assessment": "MRT-doorstep location supports rental demand, but defects/derelict common areas hurt achievable rent and tenant quality. Yield ~3.5% nominal, at risk.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale 6.33% discounted for documented building-defect / capex overhang"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-astoria-park-500045832",
+        "review_file": "batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A spacious 1,313 sqft 99LH 3BR right next to Kembangan MRT (130m, 2-min walk) in a 354-unit D14 family estate, at $1,291 psf — ~7% under the $1,392 district median. Doorstep East-West Line access and a sub-$1.7M quantum are strong, but the 1993/1995 vintage (lease ~67yr remaining) and thin 58-txn base are real constraints.",
+      "rating_rationale": "The location is the case: 130m / 2-min to Kembangan MRT on the East-West Line is a true doorstep transit premium that durably supports both rental and resale, in a well-regarded family-friendly D14 enclave (7.7/10 resident rating, spacious layouts). At $1,291 psf it's a ~7% discount to median on a large 1,313 sqft unit, with a friendly sub-$1.7M quantum and 6.3%/yr resale CAGR. The brakes on Strong Buy are age — 99LH from 1993, so only ~66-67 years remaining over the hold, with the financing/CPF caution band approaching — plus a thinner 58-txn liquidity base. For a 5-7yr horizon the MRT-adjacency value outweighs the lease concern, but lease decay is the key resale risk to price in.",
+      "red_flags": [
+        "1993/1995 vintage — ~66-67yr lease remaining, nearing the <70yr financing/CPF caution threshold over the hold",
+        "Thinner liquidity: 58 URA txns and 354-unit base vs 500+ unit peers",
+        "Dated facilities relative to newer D14 stock"
+      ],
+      "catalysts": [
+        "130m / 2-min to Kembangan MRT (East-West Line) — genuine doorstep transit premium",
+        "Spacious 1,313 sqft 3BR at sub-$1.7M and ~7% under district median — strong value/quantum combo",
+        "Established, well-liked D14 family enclave with reliable rental demand from MRT adjacency"
+      ],
+      "as_of": {
+        "price": 1695000,
+        "psf": 1290.94,
+        "beds": 3,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spacious 1,313 sqft 99LH 3BR right next to Kembangan MRT (130m, 2-min walk) in a 354-unit D14 family estate, at $1,291 psf — ~7% under the $1,392 district median. Doorstep East-West Line access and a sub-$1.7M quantum are strong, but the 1993/1995 vintage (lease ~67yr remaining) and thin 58-txn base are real constraints.",
+        "rating": "Buy",
+        "rating_rationale": "The location is the case: 130m / 2-min to Kembangan MRT on the East-West Line is a true doorstep transit premium that durably supports both rental and resale, in a well-regarded family-friendly D14 enclave (7.7/10 resident rating, spacious layouts). At $1,291 psf it's a ~7% discount to median on a large 1,313 sqft unit, with a friendly sub-$1.7M quantum and 6.3%/yr resale CAGR. The brakes on Strong Buy are age — 99LH from 1993, so only ~66-67 years remaining over the hold, with the financing/CPF caution band approaching — plus a thinner 58-txn liquidity base. For a 5-7yr horizon the MRT-adjacency value outweighs the lease concern, but lease decay is the key resale risk to price in.",
+        "red_flags": [
+          "1993/1995 vintage — ~66-67yr lease remaining, nearing the <70yr financing/CPF caution threshold over the hold",
+          "Thinner liquidity: 58 URA txns and 354-unit base vs 500+ unit peers",
+          "Dated facilities relative to newer D14 stock"
+        ],
+        "catalysts": [
+          "130m / 2-min to Kembangan MRT (East-West Line) — genuine doorstep transit premium",
+          "Spacious 1,313 sqft 3BR at sub-$1.7M and ~7% under district median — strong value/quantum combo",
+          "Established, well-liked D14 family enclave with reliable rental demand from MRT adjacency"
+        ],
+        "rental_assessment": "Strong, reliable rental demand from doorstep EWL access and family-friendly layouts; one of the better rental positions in the batch despite age. Yield decent for the quantum.",
+        "appreciation_assessment": "6.3%/yr resale CAGR over 58 txns is solid and the PSF discount gives some headroom, but advancing lease decay caps the ceiling. Expect steady, MRT-anchored appreciation moderated by age.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 6.3%/yr trimmed for accelerating lease decay over a 5-7yr hold"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-astoria-park-60002695",
+        "review_file": "batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Referee reconciliation: doorstep Kembangan MRT and below-median PSF are real, but building-level defects found in the sibling 2BR evaluation (failing roof waterproofing, water ingress, special-levy risk) apply to every unit type and cap the rating.",
+      "rating_rationale": "Downgraded from Buy: 130m EWL MRT + 7% PSF discount remain, but documented waterproofing failures and dereliction reported in 2BR research are building-wide; add 1995-vintage lease decay and the value case needs a deep defect/levy check before any Buy.",
+      "red_flags": [
+        "failing roof waterproofing / water ingress (building-wide)",
+        "potential special levy",
+        "lease decay (1995 TOP)"
+      ],
+      "catalysts": [
+        "doorstep Kembangan MRT",
+        "below-median PSF entry"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1291.0,
+        "beds": 3,
+        "sqft": null
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": null,
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Referee reconciliation: doorstep Kembangan MRT and below-median PSF are real, but building-level defects found in the sibling 2BR evaluation (failing roof waterproofing, water ingress, special-levy risk) apply to every unit type and cap the rating.",
+        "rating_rationale": "Downgraded from Buy: 130m EWL MRT + 7% PSF discount remain, but documented waterproofing failures and dereliction reported in 2BR research are building-wide; add 1995-vintage lease decay and the value case needs a deep defect/levy check before any Buy.",
+        "red_flags": [
+          "failing roof waterproofing / water ingress (building-wide)",
+          "potential special levy",
+          "lease decay (1995 TOP)"
+        ],
+        "catalysts": [
+          "doorstep Kembangan MRT",
+          "below-median PSF entry"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "",
+        "review_file": "reconcile_astoria.json"
+      }
+    }
+  ]
+}

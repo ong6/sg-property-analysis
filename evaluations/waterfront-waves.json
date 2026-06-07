@@ -55,6 +55,112 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-waves-500082094",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "D16 waterfront 3BR (1,248sqft) at $2.1M / $1,683psf — essentially at the URA median ($1,691). Strong 7.49%/yr appreciation on a healthy 75-txn base and Bedok Reservoir/park frontage, near DT30 (420m). A fairly-priced, decent hold; reaffirms the prior Neutral leaning toward the upper end.",
+      "rating_rationale": "Priced right at median ($1,683 vs $1,691) — no overpay. 7.49%/yr CAGR is the strongest reliable rate in this batch and the 75-txn base is solid. 420m to Bedok Reservoir DTL and reservoir/park views are genuine lifestyle/rental draws; 405 units gives reasonable liquidity. Offsetting: D16 OCR fundamentals are moderate, reviews flag 'lousy/rude security & management', and the unit's value rests on appreciation already being priced in (no discount to median). Good but not exceptional — consistent with the prior Neutral. A clear Buy would need a below-median entry.",
+      "red_flags": [
+        "Reviews repeatedly cite poor/rude security and management",
+        "Priced at median — no margin of safety on entry",
+        "99yr leasehold; D16 OCR appreciation fundamentals only moderate"
+      ],
+      "catalysts": [
+        "7.49%/yr URA CAGR on 75 txns — strongest reliable rate in batch",
+        "Reservoir + park frontage and 420m to Bedok Reservoir DTL — lifestyle/rental pull",
+        "405-unit development supports liquidity"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1682.69,
+        "beds": 3,
+        "sqft": 1248.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "D16 waterfront 3BR (1,248sqft) at $2.1M / $1,683psf — essentially at the URA median ($1,691). Strong 7.49%/yr appreciation on a healthy 75-txn base and Bedok Reservoir/park frontage, near DT30 (420m). A fairly-priced, decent hold; reaffirms the prior Neutral leaning toward the upper end.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced right at median ($1,683 vs $1,691) — no overpay. 7.49%/yr CAGR is the strongest reliable rate in this batch and the 75-txn base is solid. 420m to Bedok Reservoir DTL and reservoir/park views are genuine lifestyle/rental draws; 405 units gives reasonable liquidity. Offsetting: D16 OCR fundamentals are moderate, reviews flag 'lousy/rude security & management', and the unit's value rests on appreciation already being priced in (no discount to median). Good but not exceptional — consistent with the prior Neutral. A clear Buy would need a below-median entry.",
+        "red_flags": [
+          "Reviews repeatedly cite poor/rude security and management",
+          "Priced at median — no margin of safety on entry",
+          "99yr leasehold; D16 OCR appreciation fundamentals only moderate"
+        ],
+        "catalysts": [
+          "7.49%/yr URA CAGR on 75 txns — strongest reliable rate in batch",
+          "Reservoir + park frontage and 420m to Bedok Reservoir DTL — lifestyle/rental pull",
+          "405-unit development supports liquidity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-waves-22449165",
+        "review_file": "batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "The sister block to Waterfront Isle: priced ~7% below the URA median ($1565 vs $1691), 7.49% CAGR, 420m to Bedok Reservoir DTL MRT, with reservoir/park frontage. Slightly older (2011) with thinner data (75 txns) and management/PIE-noise complaints, but the D16 location and sub-median entry support upgrading the prior Neutral to a Buy.",
+      "rating_rationale": "Sub-median entry (~7% below recent URA PSF), a strong 7.49% resale CAGR, and 420m to DT30 Bedok Reservoir MRT put this in the same favourable D16 setup as Waterfront Isle, at a lower quantum. Reservoir-and-park frontage plus the Bayshore precinct/TEL catalysts underpin demand. The prior Neutral looks conservative at the current price. Held to plain Buy rather than higher by a thinner 75-transaction sample, an older 2011 vintage, reported security/management friction, and PIE-exit traffic noise that is stack-dependent.",
+      "red_flags": [
+        "Management/security service complaints and PIE-exit traffic noise (stack-dependent)",
+        "Thinner 75-transaction sample and older 2011 vintage vs sister project"
+      ],
+      "catalysts": [
+        "420m to DT30 Bedok Reservoir MRT",
+        "Bayshore precinct and Thomson-East Coast Line uplift in D16/Upper East Coast",
+        "Listed ~7% below URA median PSF, leaving appreciation headroom"
+      ],
+      "as_of": {
+        "price": 1550000,
+        "psf": 1565.66,
+        "beds": 2,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The sister block to Waterfront Isle: priced ~7% below the URA median ($1565 vs $1691), 7.49% CAGR, 420m to Bedok Reservoir DTL MRT, with reservoir/park frontage. Slightly older (2011) with thinner data (75 txns) and management/PIE-noise complaints, but the D16 location and sub-median entry support upgrading the prior Neutral to a Buy.",
+        "rating": "Buy",
+        "rating_rationale": "Sub-median entry (~7% below recent URA PSF), a strong 7.49% resale CAGR, and 420m to DT30 Bedok Reservoir MRT put this in the same favourable D16 setup as Waterfront Isle, at a lower quantum. Reservoir-and-park frontage plus the Bayshore precinct/TEL catalysts underpin demand. The prior Neutral looks conservative at the current price. Held to plain Buy rather than higher by a thinner 75-transaction sample, an older 2011 vintage, reported security/management friction, and PIE-exit traffic noise that is stack-dependent.",
+        "red_flags": [
+          "Management/security service complaints and PIE-exit traffic noise (stack-dependent)",
+          "Thinner 75-transaction sample and older 2011 vintage vs sister project"
+        ],
+        "catalysts": [
+          "420m to DT30 Bedok Reservoir MRT",
+          "Bayshore precinct and Thomson-East Coast Line uplift in D16/Upper East Coast",
+          "Listed ~7% below URA median PSF, leaving appreciation headroom"
+        ],
+        "rental_assessment": "Steady East-side family and DTL-commuter demand; reservoir/park setting and MRT proximity keep it leasable at typical D16 yields (~3.3%).",
+        "appreciation_assessment": "7.49% CAGR (75 txns) is solid if slightly less robust than peers; sub-median entry and Bayshore/TEL catalysts support above-baseline growth.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale CAGR 7.49% (75 txns), trimmed for thinner sample and forward expectation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-waves-500107166",
+        "review_file": "batch_03.json"
+      }
     }
   ]
 }

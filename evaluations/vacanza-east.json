@@ -1,0 +1,123 @@
+{
+  "condo": "Vacanza @ East",
+  "slug": "vacanza-east",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold but tiny 560 sqft 'shoebox' 2BR at $1,585 psf (slightly below the $1,628 median) for a low absolute $888k, in a 2014 Bedok/Eunos development 1.06km from Kembangan MRT. Freehold tenure and a sub-$900k entry give a wide buyer base, but 560 sqft is extremely compact for a 2BR (compromised livability), appreciation is a moderate 5.3%/yr, the MRT is a 1km walk, and reviews flag PIE-facing heat/noise and weak management. A niche low-ticket play — Neutral.",
+      "rating_rationale": "The freehold tenure and $888k absolute price are genuine liquidity positives (sub-$900k attracts a deep entry-level buyer pool), and PSF is marginally below the $1,628 median with a fair 122-txn sample. But 560 sqft for a '2BR' is a true shoebox — cramped rooms, limited own-stay appeal, and a tenant fit narrowed to single professionals/couples. Appreciation at 5.3%/yr is only average for freehold D14, the 1.06km MRT walk is a drag, and reviews cite PIE-facing units with 10 hours of direct sun plus noise/dust and poor management. Freehold floor and low ticket balance the shoebox and location handicaps — Neutral.",
+      "red_flags": [
+        "560 sqft is a shoebox for a 2BR — cramped, limited own-stay and family appeal",
+        "1.06km to Kembangan MRT — beyond comfortable walking distance",
+        "Reviews: PIE-facing stacks get ~10 hrs direct sun (hot), plus noise/dust, and poor management/slow repairs",
+        "Moderate 5.3%/yr appreciation — unremarkable for freehold D14"
+      ],
+      "catalysts": [
+        "Freehold tenure — no lease decay, supports long-term value floor",
+        "Low $888k entry attracts a deep entry-level/investor buyer pool, aiding liquidity",
+        "D14 catalysts (Paya Lebar Central, airbase relocation ~2030) lift the broader area"
+      ],
+      "as_of": {
+        "price": 888000,
+        "psf": 1585.71,
+        "beds": 2,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold but tiny 560 sqft 'shoebox' 2BR at $1,585 psf (slightly below the $1,628 median) for a low absolute $888k, in a 2014 Bedok/Eunos development 1.06km from Kembangan MRT. Freehold tenure and a sub-$900k entry give a wide buyer base, but 560 sqft is extremely compact for a 2BR (compromised livability), appreciation is a moderate 5.3%/yr, the MRT is a 1km walk, and reviews flag PIE-facing heat/noise and weak management. A niche low-ticket play — Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "The freehold tenure and $888k absolute price are genuine liquidity positives (sub-$900k attracts a deep entry-level buyer pool), and PSF is marginally below the $1,628 median with a fair 122-txn sample. But 560 sqft for a '2BR' is a true shoebox — cramped rooms, limited own-stay appeal, and a tenant fit narrowed to single professionals/couples. Appreciation at 5.3%/yr is only average for freehold D14, the 1.06km MRT walk is a drag, and reviews cite PIE-facing units with 10 hours of direct sun plus noise/dust and poor management. Freehold floor and low ticket balance the shoebox and location handicaps — Neutral.",
+        "red_flags": [
+          "560 sqft is a shoebox for a 2BR — cramped, limited own-stay and family appeal",
+          "1.06km to Kembangan MRT — beyond comfortable walking distance",
+          "Reviews: PIE-facing stacks get ~10 hrs direct sun (hot), plus noise/dust, and poor management/slow repairs",
+          "Moderate 5.3%/yr appreciation — unremarkable for freehold D14"
+        ],
+        "catalysts": [
+          "Freehold tenure — no lease decay, supports long-term value floor",
+          "Low $888k entry attracts a deep entry-level/investor buyer pool, aiding liquidity",
+          "D14 catalysts (Paya Lebar Central, airbase relocation ~2030) lift the broader area"
+        ],
+        "rental_assessment": "Shoebox 2BR rents to single professionals/couples; freehold East-side appeal helps, but the 1km MRT walk and small size cap rate and tenant breadth. Yield decent on the low price.",
+        "appreciation_assessment": "5.3%/yr resale CAGR on 122 txns is reliable but middling; freehold gives a floor while the shoebox format and MRT distance limit upside. Underwrite low-to-mid single digits.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale-only CAGR (5.3%) trimmed for shoebox-format and MRT-distance demand constraints; freehold tenure supports durability"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vacanza-east-500132079",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 1410sqft 3BR at $1418 psf, ~13% below the Vacanza URA median of $1628, in a resort-style 473-unit D14 development. Freehold tenure and Paya Lebar/airbase-relocation tailwinds support it, but appreciation is the batch's softest (5.31%/yr) and the unit is a longish 1.06km from Kembangan MRT. Reviews flag PIE-facing stacks (heat/noise) and weak management.",
+      "rating_rationale": "Solid value-and-tenure case: freehold at $2.0M with a ~13% discount to development median and 122 transactions for liquidity. Freehold D14 holds value and appeals to a broad buyer pool. Held back from a stronger call by the lowest appreciation in the batch (5.31%/yr, roughly RCR-typical, not standout), a 1.06km MRT walk, and review complaints about PIE-facing units (10 hours direct sun, road noise, dust) plus poor estate management. Verify the specific stack faces away from the PIE.",
+      "red_flags": [
+        "PIE-facing stacks suffer heat, road noise and dust per resident reviews",
+        "Poor management / slow repairs flagged by residents",
+        "1.06km to Kembangan MRT is a real (~13 min) walk",
+        "5.31%/yr appreciation is the weakest in the batch"
+      ],
+      "catalysts": [
+        "Freehold tenure preserves value and widens the buyer pool",
+        "Paya Lebar Central redevelopment and airbase relocation lifting D14",
+        "~13% below-median PSF entry"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1418.44,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1410sqft 3BR at $1418 psf, ~13% below the Vacanza URA median of $1628, in a resort-style 473-unit D14 development. Freehold tenure and Paya Lebar/airbase-relocation tailwinds support it, but appreciation is the batch's softest (5.31%/yr) and the unit is a longish 1.06km from Kembangan MRT. Reviews flag PIE-facing stacks (heat/noise) and weak management.",
+        "rating": "Buy",
+        "rating_rationale": "Solid value-and-tenure case: freehold at $2.0M with a ~13% discount to development median and 122 transactions for liquidity. Freehold D14 holds value and appeals to a broad buyer pool. Held back from a stronger call by the lowest appreciation in the batch (5.31%/yr, roughly RCR-typical, not standout), a 1.06km MRT walk, and review complaints about PIE-facing units (10 hours direct sun, road noise, dust) plus poor estate management. Verify the specific stack faces away from the PIE.",
+        "red_flags": [
+          "PIE-facing stacks suffer heat, road noise and dust per resident reviews",
+          "Poor management / slow repairs flagged by residents",
+          "1.06km to Kembangan MRT is a real (~13 min) walk",
+          "5.31%/yr appreciation is the weakest in the batch"
+        ],
+        "catalysts": [
+          "Freehold tenure preserves value and widens the buyer pool",
+          "Paya Lebar Central redevelopment and airbase relocation lifting D14",
+          "~13% below-median PSF entry"
+        ],
+        "rental_assessment": "D14 freehold near schools and the East draws steady expat/family tenants; 3-4% yields typical. Road-facing units harder to let at top rent.",
+        "appreciation_assessment": "5.31%/yr resale CAGR on 122 txns is reliable but unspectacular; freehold premium is largely priced in, so future gains lean on D14's broader transformation rather than tenure upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.3,
+        "appreciation_rate_source": "URA resale-only CAGR (122 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vacanza-east-500102514",
+        "review_file": "batch_06.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "condo": "Penrose",
+  "slug": "penrose",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Brand-new (TOP 2025) CDL/Hong Leong RCR development at Sims Drive, 440m to Aljunied MRT and ~10min to the CBD. The compact 646sqft 2BR at $2012 PSF is below the district new-launch median ($2226) and the strongest yield in the batch (~4.1%), but the appreciation data carries new-launch pricing bias, so the upside is partly pre-captured.",
+      "rating_rationale": "Best fundamentals-plus-location combination of the batch: RCR address, top-tier developer (CDL/Hong Leong), 566 units, 440m to EW9 Aljunied with a sub-10min CBD commute, and the deepest rental demand here (RCR rents drive a ~4.1% gross yield on a compact unit). Listed $2012 PSF sits below the D14 new-launch median of $2226, so entry is reasonable for the vintage. Tempered from Strong Buy because the 5.87% headline CAGR is flagged with new-launch bias (resale-adjusted 5.32%) — recent appreciation reflects developer launch pricing, so part of the gain is already in the price, and the high absolute PSF on a small unit needs RCR demand to hold up for the exit.",
+      "red_flags": [
+        "New-launch bias flagged — headline appreciation reflects developer launch pricing already partly captured",
+        "High absolute PSF ($2012) on a compact 646sqft unit; exit depends on sustained RCR demand"
+      ],
+      "catalysts": [
+        "RCR location, 440m to EW9 Aljunied MRT, ~10min to CBD",
+        "CDL/Hong Leong developer quality and 566-unit liquidity",
+        "Strongest rental yield in batch (~4.1%) from deep RCR/CBD-fringe tenant demand"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 2012.38,
+        "beds": 2,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new (TOP 2025) CDL/Hong Leong RCR development at Sims Drive, 440m to Aljunied MRT and ~10min to the CBD. The compact 646sqft 2BR at $2012 PSF is below the district new-launch median ($2226) and the strongest yield in the batch (~4.1%), but the appreciation data carries new-launch pricing bias, so the upside is partly pre-captured.",
+        "rating": "Buy",
+        "rating_rationale": "Best fundamentals-plus-location combination of the batch: RCR address, top-tier developer (CDL/Hong Leong), 566 units, 440m to EW9 Aljunied with a sub-10min CBD commute, and the deepest rental demand here (RCR rents drive a ~4.1% gross yield on a compact unit). Listed $2012 PSF sits below the D14 new-launch median of $2226, so entry is reasonable for the vintage. Tempered from Strong Buy because the 5.87% headline CAGR is flagged with new-launch bias (resale-adjusted 5.32%) — recent appreciation reflects developer launch pricing, so part of the gain is already in the price, and the high absolute PSF on a small unit needs RCR demand to hold up for the exit.",
+        "red_flags": [
+          "New-launch bias flagged — headline appreciation reflects developer launch pricing already partly captured",
+          "High absolute PSF ($2012) on a compact 646sqft unit; exit depends on sustained RCR demand"
+        ],
+        "catalysts": [
+          "RCR location, 440m to EW9 Aljunied MRT, ~10min to CBD",
+          "CDL/Hong Leong developer quality and 566-unit liquidity",
+          "Strongest rental yield in batch (~4.1%) from deep RCR/CBD-fringe tenant demand"
+        ],
+        "rental_assessment": "Best in batch: CBD-fringe RCR location and MRT proximity drive strong, stable demand from professionals; compact unit keeps quantum low and yield high (~4.1%).",
+        "appreciation_assessment": "Use the resale-adjusted ~5.3%, not the 5.87% headline — new-launch pricing inflates the raw figure. RCR fundamentals support steady mid-single-digit growth from here.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.3,
+        "appreciation_rate_source": "URA resale-adjusted CAGR 5.32% (new-launch bias removed), per dossier"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-500159778",
+        "review_file": "batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A brand-new (2025 TOP) CDL/Hong Leong-built 958 sqft 3BR in Sims Drive, 570m from Aljunied MRT, asking $2,286 PSF — a ~3% premium to the $2,226 median. Top-tier developer, fresh asset and city-fringe D14 location are attractive, but the new-launch pricing is already inflated (system flags new-launch bias; resale-only CAGR drops to 5.3% from 5.9%), the compact 958 sqft 3BR is tight, and entry above median into a freshly-completed project limits near-term upside — a balanced Buy with the value already largely priced in.",
+      "rating_rationale": "Quality and location carry it: CDL + Hong Leong build (premium fittings, strong track record), a brand-new 2025 asset needing no capex, 566 units, and a genuinely central D14 city-fringe location ~10 min to the CBD with Aljunied MRT 570m away and Paya Lebar Central nearby. $2.19M sits in the deep band. But this is fully-priced new-launch stock: has_new_launch_bias is true and the resale-only CAGR (5.3%) is notably below the headline (5.9%), confirming developer-pricing inflation; the $2,286 ask is above the $2,226 median; and 958 sqft is a tight 3BR. As an investment you are buying near peak developer pricing, so capital upside over the first part of the hold is limited even though the asset is excellent — hence Buy, not Strong Buy.",
+      "red_flags": [
+        "New-launch pricing inflation flagged (has_new_launch_bias true; resale-only CAGR 5.3% vs 5.9% headline)",
+        "Asking $2,286 PSF above $2,226 project median — paying up for a freshly-completed unit",
+        "Compact 958 sqft for a 3BR — efficient but small, limits family-buyer appeal",
+        "Sims Drive/Geylang fringe locale carries some stigma sensitivity for a subset of buyers"
+      ],
+      "catalysts": [
+        "Brand-new 2025 CDL/Hong Leong asset — premium build, full lease, zero capex",
+        "Central D14 city-fringe — ~10 min to CBD, 570m to Aljunied MRT (EWL)",
+        "Paya Lebar Central transformation / airbase relocation regional uplift",
+        "566-unit development with strong developer pedigree supports liquidity"
+      ],
+      "as_of": {
+        "price": 2190000,
+        "psf": 2286.01,
+        "beds": 3,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new (2025 TOP) CDL/Hong Leong-built 958 sqft 3BR in Sims Drive, 570m from Aljunied MRT, asking $2,286 PSF — a ~3% premium to the $2,226 median. Top-tier developer, fresh asset and city-fringe D14 location are attractive, but the new-launch pricing is already inflated (system flags new-launch bias; resale-only CAGR drops to 5.3% from 5.9%), the compact 958 sqft 3BR is tight, and entry above median into a freshly-completed project limits near-term upside — a balanced Buy with the value already largely priced in.",
+        "rating": "Buy",
+        "rating_rationale": "Quality and location carry it: CDL + Hong Leong build (premium fittings, strong track record), a brand-new 2025 asset needing no capex, 566 units, and a genuinely central D14 city-fringe location ~10 min to the CBD with Aljunied MRT 570m away and Paya Lebar Central nearby. $2.19M sits in the deep band. But this is fully-priced new-launch stock: has_new_launch_bias is true and the resale-only CAGR (5.3%) is notably below the headline (5.9%), confirming developer-pricing inflation; the $2,286 ask is above the $2,226 median; and 958 sqft is a tight 3BR. As an investment you are buying near peak developer pricing, so capital upside over the first part of the hold is limited even though the asset is excellent — hence Buy, not Strong Buy.",
+        "red_flags": [
+          "New-launch pricing inflation flagged (has_new_launch_bias true; resale-only CAGR 5.3% vs 5.9% headline)",
+          "Asking $2,286 PSF above $2,226 project median — paying up for a freshly-completed unit",
+          "Compact 958 sqft for a 3BR — efficient but small, limits family-buyer appeal",
+          "Sims Drive/Geylang fringe locale carries some stigma sensitivity for a subset of buyers"
+        ],
+        "catalysts": [
+          "Brand-new 2025 CDL/Hong Leong asset — premium build, full lease, zero capex",
+          "Central D14 city-fringe — ~10 min to CBD, 570m to Aljunied MRT (EWL)",
+          "Paya Lebar Central transformation / airbase relocation regional uplift",
+          "566-unit development with strong developer pedigree supports liquidity"
+        ],
+        "rental_assessment": "Good. City-fringe, near-MRT, brand-new — strong appeal to young professional and expat tenants; comparable Sims-area yields ~3%. Reliable demand is a genuine strength here.",
+        "appreciation_assessment": "Moderate. The 5.3% resale-only CAGR is the honest figure; with entry above median into a new-launch at inflated pricing, expect appreciation to lag in the early hold years before the location's fundamentals reassert.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale-only CAGR (5.3%, bias-adjusted) discounted for above-median new-launch entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-500072822",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

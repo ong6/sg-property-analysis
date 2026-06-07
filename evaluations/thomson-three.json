@@ -1,0 +1,67 @@
+{
+  "condo": "Thomson Three",
+  "slug": "thomson-three",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A UOL/SingLand-built 1,044 sqft 3BR in Upper Thomson, 420m from Upper Thomson TEL station, asking $2,203 PSF — bang in line with the $2,206 URA median. Reputable developer, strong location and 5.5% resale CAGR make it a sound hold, but it is fully priced at median, slightly off the frontier, and carries scattered early-cracking complaints, so the value is fair rather than a bargain.",
+      "rating_rationale": "Solid investment-grade asset: UOL + SingLand pedigree, 420m to Upper Thomson TEL station, walkable Thomson Plaza and Ai Tong School, 435 units giving reasonable liquidity, and a verified 5.5% URA resale-only CAGR over 138 transactions. $2,300 quantum is in the deep band. Held to a plain Buy (not Strong) because it is priced exactly at the $2,206 median (no margin of safety), score 697 / MMR 1533 sits just below the frontier, the cited ~3.1% rental yield is unexciting, and there are user reports of cracks appearing within ~2 years. Good asset, fair price — not a discount.",
+      "red_flags": [
+        "Priced at project median PSF — no mispricing to capture; returns rely on continued market growth",
+        "User reviews mention cracks/finishing issues appearing within ~2 years of completion",
+        "Below the efficient frontier; ~3.1% rental yield is modest",
+        "Compact 1,044 sqft 3BR"
+      ],
+      "catalysts": [
+        "420m to Upper Thomson TEL station — direct line to city core",
+        "Strong UOL/SingLand build reputation and award track record",
+        "Established Upper Thomson lifestyle/F&B belt and Ai Tong School catchment",
+        "5.5% URA resale CAGR over 138 txns supports durable demand"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 2203.07,
+        "beds": 3,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A UOL/SingLand-built 1,044 sqft 3BR in Upper Thomson, 420m from Upper Thomson TEL station, asking $2,203 PSF — bang in line with the $2,206 URA median. Reputable developer, strong location and 5.5% resale CAGR make it a sound hold, but it is fully priced at median, slightly off the frontier, and carries scattered early-cracking complaints, so the value is fair rather than a bargain.",
+        "rating": "Buy",
+        "rating_rationale": "Solid investment-grade asset: UOL + SingLand pedigree, 420m to Upper Thomson TEL station, walkable Thomson Plaza and Ai Tong School, 435 units giving reasonable liquidity, and a verified 5.5% URA resale-only CAGR over 138 transactions. $2,300 quantum is in the deep band. Held to a plain Buy (not Strong) because it is priced exactly at the $2,206 median (no margin of safety), score 697 / MMR 1533 sits just below the frontier, the cited ~3.1% rental yield is unexciting, and there are user reports of cracks appearing within ~2 years. Good asset, fair price — not a discount.",
+        "red_flags": [
+          "Priced at project median PSF — no mispricing to capture; returns rely on continued market growth",
+          "User reviews mention cracks/finishing issues appearing within ~2 years of completion",
+          "Below the efficient frontier; ~3.1% rental yield is modest",
+          "Compact 1,044 sqft 3BR"
+        ],
+        "catalysts": [
+          "420m to Upper Thomson TEL station — direct line to city core",
+          "Strong UOL/SingLand build reputation and award track record",
+          "Established Upper Thomson lifestyle/F&B belt and Ai Tong School catchment",
+          "5.5% URA resale CAGR over 138 txns supports durable demand"
+        ],
+        "rental_assessment": "Decent. Upper Thomson is tenant-friendly (lifestyle, MRT, schools) but yield is modest at ~3.1%; demand is reliable rather than strong for investment purposes.",
+        "appreciation_assessment": "Positive, market-tracking. 5.5% CAGR on 138 txns and TEL connectivity support growth, but entry at median PSF means little re-rating headroom — expect returns near the corridor average.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR (5.5%, 138 txns), tempered for at-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-three-25483460",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

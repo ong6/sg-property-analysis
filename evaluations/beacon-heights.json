@@ -1,0 +1,117 @@
+{
+  "condo": "Beacon Heights",
+  "slug": "beacon-heights",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A near-freehold (999-yr) 893 sqft 2BR at $1,511 psf — ~11% below the $1,704 median — in a well-regarded 2012 Kallang development with a 50m pool, double-glazed windows and strong build reputation, on a healthy 6.9%/yr resale CAGR. The 999-yr tenure and quality are real advantages; the offsets are a 1.21km MRT walk, a smallish 212-unit/45-txn liquidity profile, and city-fringe pricing already at $1.35M. Quality near-freehold value with a connectivity caveat — a measured Buy.",
+      "rating_rationale": "999-year tenure effectively removes lease-decay risk, the project reviews well (best-looking in the area, 50m pool, tennis, double-glazed windows that cut road noise), and PSF at $1,511 is a genuine ~11% discount to the $1,704 median with a credible 6.9%/yr resale CAGR. D12 city-fringe gives durable demand. Held to Buy (not Strong Buy) by the 1.21km walk to Boon Keng MRT, a moderate 212-unit / 45-txn liquidity base, and the fact that absolute value depends on the unit being a true 893 sqft 2BR. On balance the near-freehold tenure plus discount outweigh the soft MRT link.",
+      "red_flags": [
+        "1.21km to Boon Keng MRT — beyond comfortable walking distance, weaker than MRT-adjacent peers",
+        "212 units and only 45 URA transactions — moderate liquidity, thinner exit pool",
+        "City-fringe at $1.35M leaves a modest, not large, value cushion"
+      ],
+      "catalysts": [
+        "999-year tenure — quasi-freehold, no meaningful lease decay",
+        "Strong build/facilities reputation (50m pool, double-glazed windows) supports resale resilience",
+        "City-fringe D12 with redevelopment momentum in Kallang/Bendemeer supports demand",
+        "PSF ~11% below district median gives entry cushion"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1511.76,
+        "beds": 2,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A near-freehold (999-yr) 893 sqft 2BR at $1,511 psf — ~11% below the $1,704 median — in a well-regarded 2012 Kallang development with a 50m pool, double-glazed windows and strong build reputation, on a healthy 6.9%/yr resale CAGR. The 999-yr tenure and quality are real advantages; the offsets are a 1.21km MRT walk, a smallish 212-unit/45-txn liquidity profile, and city-fringe pricing already at $1.35M. Quality near-freehold value with a connectivity caveat — a measured Buy.",
+        "rating": "Buy",
+        "rating_rationale": "999-year tenure effectively removes lease-decay risk, the project reviews well (best-looking in the area, 50m pool, tennis, double-glazed windows that cut road noise), and PSF at $1,511 is a genuine ~11% discount to the $1,704 median with a credible 6.9%/yr resale CAGR. D12 city-fringe gives durable demand. Held to Buy (not Strong Buy) by the 1.21km walk to Boon Keng MRT, a moderate 212-unit / 45-txn liquidity base, and the fact that absolute value depends on the unit being a true 893 sqft 2BR. On balance the near-freehold tenure plus discount outweigh the soft MRT link.",
+        "red_flags": [
+          "1.21km to Boon Keng MRT — beyond comfortable walking distance, weaker than MRT-adjacent peers",
+          "212 units and only 45 URA transactions — moderate liquidity, thinner exit pool",
+          "City-fringe at $1.35M leaves a modest, not large, value cushion"
+        ],
+        "catalysts": [
+          "999-year tenure — quasi-freehold, no meaningful lease decay",
+          "Strong build/facilities reputation (50m pool, double-glazed windows) supports resale resilience",
+          "City-fringe D12 with redevelopment momentum in Kallang/Bendemeer supports demand",
+          "PSF ~11% below district median gives entry cushion"
+        ],
+        "rental_assessment": "City-fringe location and quality facilities support steady rental demand, though the 1.2km MRT walk caps the premium tenant pool versus station-adjacent options. Reasonable yield at this price.",
+        "appreciation_assessment": "6.9%/yr resale CAGR is solid and the 999-yr tenure protects long-term value; below-median PSF supports continued re-rating. The MRT distance limits catalyst-driven upside, so underwrite steady mid-single-digit appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR (6.9%) lightly trimmed for MRT-distance liquidity drag; 999-yr tenure supports durability"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-beacon-heights-500123806",
+        "review_file": "batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "999-year leasehold D12 3BR at $1.83M / $1,701psf, priced essentially at the URA median ($1,704). Strong 6.9%/yr appreciation off a solid 45-txn base, near-freehold tenure, and city-fringe location make this a fundamentally sound, fairly-priced hold.",
+      "rating_rationale": "Asking PSF ($1,701) sits right at URA median ($1,704) — fair, not overpaid. 6.89%/yr CAGR on 45 transactions is reliable and above the RCR ~5.8% baseline. 999-year tenure removes lease-decay risk that plagues 99yr peers. Price ($1.83M) is in the liquid sweet spot. 212 units is on the smaller side but adequate; reviews praise facilities/space. MMR 752 / on frontier corroborates. Negatives: 1.2km to Boon Keng MRT (14-min walk) caps tenant appeal somewhat.",
+      "red_flags": [
+        "1.21km (~14 min) walk to Boon Keng MRT — not MRT-fronting",
+        "Mid-size 212-unit development, moderate liquidity",
+        "One review flagged price as slightly over-valued for the location"
+      ],
+      "catalysts": [
+        "999-year leasehold — near-freehold, no lease-decay discount",
+        "City-fringe D12 proximity to CBD supports rental and resale demand",
+        "Priced at URA median with 6.9%/yr proven appreciation"
+      ],
+      "as_of": {
+        "price": 1830000,
+        "psf": 1700.74,
+        "beds": 3,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "999-year leasehold D12 3BR at $1.83M / $1,701psf, priced essentially at the URA median ($1,704). Strong 6.9%/yr appreciation off a solid 45-txn base, near-freehold tenure, and city-fringe location make this a fundamentally sound, fairly-priced hold.",
+        "rating": "Buy",
+        "rating_rationale": "Asking PSF ($1,701) sits right at URA median ($1,704) — fair, not overpaid. 6.89%/yr CAGR on 45 transactions is reliable and above the RCR ~5.8% baseline. 999-year tenure removes lease-decay risk that plagues 99yr peers. Price ($1.83M) is in the liquid sweet spot. 212 units is on the smaller side but adequate; reviews praise facilities/space. MMR 752 / on frontier corroborates. Negatives: 1.2km to Boon Keng MRT (14-min walk) caps tenant appeal somewhat.",
+        "red_flags": [
+          "1.21km (~14 min) walk to Boon Keng MRT — not MRT-fronting",
+          "Mid-size 212-unit development, moderate liquidity",
+          "One review flagged price as slightly over-valued for the location"
+        ],
+        "catalysts": [
+          "999-year leasehold — near-freehold, no lease-decay discount",
+          "City-fringe D12 proximity to CBD supports rental and resale demand",
+          "Priced at URA median with 6.9%/yr proven appreciation"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-beacon-heights-25388971",
+        "review_file": "batch_09.json"
+      }
+    }
+  ]
+}

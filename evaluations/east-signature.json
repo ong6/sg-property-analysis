@@ -1,0 +1,67 @@
+{
+  "condo": "East Signature",
+  "slug": "east-signature",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 2,013 sqft 3BR in East Coast 250m from Siglap TEL station, asking $1,192 PSF — a 33% discount to the project's $1,779 URA median PSF. The PSF is exceptional for a freehold D15 unit on the Thomson-East Coast Line, but the sheer size (2,013 sqft, $2.4M) narrows the resale pool and the value hinges on whether that low PSF reflects a tired unit rather than a true bargain.",
+      "rating_rationale": "Compelling relative value: freehold tenure in deep-buyer-pool D15, 3-min walk to operational Siglap TEL station, and $1,192 PSF versus a $1,779 project median — a steep discount that, even allowing for unit condition, leaves real margin. URA resale-only CAGR of 5.3% (clean, no new-launch bias) supports the East Coast appreciation case, and the freehold + TEL combination is exactly the scarcity profile that holds value. Score 759 / MMR 1542 is the strongest in the batch and it sits on the efficient frontier. Held back from Strong Buy by the very low transaction count (5), the unusually large 2,013 sqft footprint that pushes the $2.4M quantum past the deepest liquidity band and limits the buyer set to large families, and the deep PSF discount which warrants viewing to confirm it isn't a condition-driven markdown.",
+      "red_flags": [
+        "2,013 sqft / $2.4M quantum is large and niche — narrower resale pool than a 1,000-1,300 sqft 3BR",
+        "33% PSF discount to project median may reflect a dated/unrenovated unit — verify on viewing",
+        "Only 5 URA transactions underpinning the appreciation figure — thin data",
+        "2005 build (~21yo) — older finishes despite freehold tenure"
+      ],
+      "catalysts": [
+        "Freehold + 250m to operational Siglap TEL station — durable scarcity in East Coast",
+        "$1,192 PSF vs $1,779 median — large built-in margin of safety",
+        "East Coast / D15 deep buyer pool and lifestyle premium; Bayshore/Long Island regional uplift nearby",
+        "Clean resale-only URA CAGR of 5.3% with no developer-pricing inflation"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1192.25,
+        "beds": 3,
+        "sqft": 2013.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2,013 sqft 3BR in East Coast 250m from Siglap TEL station, asking $1,192 PSF — a 33% discount to the project's $1,779 URA median PSF. The PSF is exceptional for a freehold D15 unit on the Thomson-East Coast Line, but the sheer size (2,013 sqft, $2.4M) narrows the resale pool and the value hinges on whether that low PSF reflects a tired unit rather than a true bargain.",
+        "rating": "Buy",
+        "rating_rationale": "Compelling relative value: freehold tenure in deep-buyer-pool D15, 3-min walk to operational Siglap TEL station, and $1,192 PSF versus a $1,779 project median — a steep discount that, even allowing for unit condition, leaves real margin. URA resale-only CAGR of 5.3% (clean, no new-launch bias) supports the East Coast appreciation case, and the freehold + TEL combination is exactly the scarcity profile that holds value. Score 759 / MMR 1542 is the strongest in the batch and it sits on the efficient frontier. Held back from Strong Buy by the very low transaction count (5), the unusually large 2,013 sqft footprint that pushes the $2.4M quantum past the deepest liquidity band and limits the buyer set to large families, and the deep PSF discount which warrants viewing to confirm it isn't a condition-driven markdown.",
+        "red_flags": [
+          "2,013 sqft / $2.4M quantum is large and niche — narrower resale pool than a 1,000-1,300 sqft 3BR",
+          "33% PSF discount to project median may reflect a dated/unrenovated unit — verify on viewing",
+          "Only 5 URA transactions underpinning the appreciation figure — thin data",
+          "2005 build (~21yo) — older finishes despite freehold tenure"
+        ],
+        "catalysts": [
+          "Freehold + 250m to operational Siglap TEL station — durable scarcity in East Coast",
+          "$1,192 PSF vs $1,779 median — large built-in margin of safety",
+          "East Coast / D15 deep buyer pool and lifestyle premium; Bayshore/Long Island regional uplift nearby",
+          "Clean resale-only URA CAGR of 5.3% with no developer-pricing inflation"
+        ],
+        "rental_assessment": "Good. Large freehold 3BR near Siglap MRT appeals to expat families; East Coast is a strong rental district. Yield is modest at this quantum (~3.5%) but tenant demand is reliable.",
+        "appreciation_assessment": "Positive. 5.3% clean resale CAGR plus freehold + TEL scarcity in D15; the deep discount to median PSF gives unusual downside protection and room to re-rate toward project median over a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR (5.3%) lightly discounted for thin 5-txn sample"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-east-signature-60217173",
+        "review_file": "batch_10.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "A Treasure Trove",
+  "slug": "a-treasure-trove",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Mass-market Punggol 2BR priced right at the URA median ($1645 vs $1652) with deep liquidity (215 txns) and a genuine 6.97% resale CAGR backed by the Punggol Digital District build-out. The 300m walk to Punggol MRT/interchange and 882-unit scale support a clean exit, but documented estate wear caps the upside.",
+      "rating_rationale": "Priced at median PSF with a reliable 6.97%/yr resale appreciation (215 transactions) and best-in-class connectivity (300m to NE17 Punggol interchange + future bus/LRT hub). PDD and Punggol Coast MRT are concrete catalysts. The 882-unit size gives the deepest 2BR buyer pool in the batch. Held back from Strong Buy by documented build/maintenance decline (wall cracks, vandalism, ageing water features) typical of a large mass-market block, and a sub-$1.3M price that appeals to a value-conscious rather than premium exit buyer.",
+      "red_flags": [
+        "Documented estate wear/maintenance decline (cracks, vandalism, damaged facilities) in a large 882-unit block",
+        "Mass-market profile means appreciation tied to OCR/Punggol demand cycle, not a premium location"
+      ],
+      "catalysts": [
+        "Punggol Digital District jobs and SIT campus driving tenant/buyer demand",
+        "300m to Punggol MRT interchange + future Punggol Coast MRT",
+        "Deep 215-transaction liquidity supports a clean 5-7yr exit"
+      ],
+      "as_of": {
+        "price": 1275000,
+        "psf": 1645.16,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Mass-market Punggol 2BR priced right at the URA median ($1645 vs $1652) with deep liquidity (215 txns) and a genuine 6.97% resale CAGR backed by the Punggol Digital District build-out. The 300m walk to Punggol MRT/interchange and 882-unit scale support a clean exit, but documented estate wear caps the upside.",
+        "rating": "Buy",
+        "rating_rationale": "Priced at median PSF with a reliable 6.97%/yr resale appreciation (215 transactions) and best-in-class connectivity (300m to NE17 Punggol interchange + future bus/LRT hub). PDD and Punggol Coast MRT are concrete catalysts. The 882-unit size gives the deepest 2BR buyer pool in the batch. Held back from Strong Buy by documented build/maintenance decline (wall cracks, vandalism, ageing water features) typical of a large mass-market block, and a sub-$1.3M price that appeals to a value-conscious rather than premium exit buyer.",
+        "red_flags": [
+          "Documented estate wear/maintenance decline (cracks, vandalism, damaged facilities) in a large 882-unit block",
+          "Mass-market profile means appreciation tied to OCR/Punggol demand cycle, not a premium location"
+        ],
+        "catalysts": [
+          "Punggol Digital District jobs and SIT campus driving tenant/buyer demand",
+          "300m to Punggol MRT interchange + future Punggol Coast MRT",
+          "Deep 215-transaction liquidity supports a clean 5-7yr exit"
+        ],
+        "rental_assessment": "Solid 2BR tenant pool from PDD workers and SIT; OCR rents are modest but the unit size (775sqft) and MRT proximity keep it leasable. Some rental competition from newer Punggol launches.",
+        "appreciation_assessment": "6.97% resale-only CAGR over 215 transactions is high-confidence and PDD-driven; sustainable mid-single-digit growth expected, though already partly priced in at the median.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale CAGR 6.97% (215 txns) discounted modestly for maturing PDD pricing"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-a-treasure-trove-60236135",
+        "review_file": "batch_03.json"
+      }
+    }
+  ]
+}

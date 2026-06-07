@@ -1,0 +1,65 @@
+{
+  "condo": "Northvale",
+  "slug": "northvale",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An unusually large 1,302 sqft 2BR at just $913 psf (17% below the $1,102 median) for under $1.19M, sitting 460m from Choa Chu Kang MRT/JRL interchange with a strong 7.3%/yr resale CAGR on 112 transactions. The defining risk is age: 1998 build on a 1995 lease, leaving roughly 68 years — within a decade of the 60-year financing cliff. Low absolute price and JRL catalyst make it interesting, but the lease decay caps the verdict.",
+      "rating_rationale": "The price and PSF look outstanding (913 vs 1,102 median, sub-$1.2M, 1,302 sqft), the txn sample is robust (112) and CCK gets the Jurong Region Line (~2028) plus interchange status — all genuine positives. But the 99-yr lease commenced 1995, so ~68 years remain in 2026; by a 5-7 year exit the buyer faces a ~61-63 year lease nearing the 60-year financing/CPF restriction threshold, which structurally compresses the future buyer pool and is the real reason the PSF is so low. The high historical CAGR partly reflects a low base, not durable quality. D23 is OCR with a ~3.7% baseline; the catalyst helps but does not erase lease decay. Balanced — a value play with a hard ceiling.",
+      "red_flags": [
+        "Lease from 1995, ~68 years left — approaching the 60-year financing/CPF cliff within the hold-plus-exit horizon",
+        "OCR D23 with a 3.7% structural baseline; high past CAGR partly a low-base artifact",
+        "Reviews flag recent maintenance decline (non-working landscape lights, water features out of service) — MCST sinking-fund due diligence needed",
+        "Very large 1,302 sqft for a 2BR may reflect old-stock inefficiency rather than a premium"
+      ],
+      "catalysts": [
+        "Jurong Region Line (~2028) and existing CCK interchange — direct MRT uplift 460m away",
+        "Sub-$1.19M entry with deep HDB-upgrader buyer base keeps it liquid near-term",
+        "Choa Chu Kang Park frontage and large patio ground units appeal to families"
+      ],
+      "as_of": {
+        "price": 1188888,
+        "psf": 913.12,
+        "beds": 2,
+        "sqft": 1302.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An unusually large 1,302 sqft 2BR at just $913 psf (17% below the $1,102 median) for under $1.19M, sitting 460m from Choa Chu Kang MRT/JRL interchange with a strong 7.3%/yr resale CAGR on 112 transactions. The defining risk is age: 1998 build on a 1995 lease, leaving roughly 68 years — within a decade of the 60-year financing cliff. Low absolute price and JRL catalyst make it interesting, but the lease decay caps the verdict.",
+        "rating": "Neutral",
+        "rating_rationale": "The price and PSF look outstanding (913 vs 1,102 median, sub-$1.2M, 1,302 sqft), the txn sample is robust (112) and CCK gets the Jurong Region Line (~2028) plus interchange status — all genuine positives. But the 99-yr lease commenced 1995, so ~68 years remain in 2026; by a 5-7 year exit the buyer faces a ~61-63 year lease nearing the 60-year financing/CPF restriction threshold, which structurally compresses the future buyer pool and is the real reason the PSF is so low. The high historical CAGR partly reflects a low base, not durable quality. D23 is OCR with a ~3.7% baseline; the catalyst helps but does not erase lease decay. Balanced — a value play with a hard ceiling.",
+        "red_flags": [
+          "Lease from 1995, ~68 years left — approaching the 60-year financing/CPF cliff within the hold-plus-exit horizon",
+          "OCR D23 with a 3.7% structural baseline; high past CAGR partly a low-base artifact",
+          "Reviews flag recent maintenance decline (non-working landscape lights, water features out of service) — MCST sinking-fund due diligence needed",
+          "Very large 1,302 sqft for a 2BR may reflect old-stock inefficiency rather than a premium"
+        ],
+        "catalysts": [
+          "Jurong Region Line (~2028) and existing CCK interchange — direct MRT uplift 460m away",
+          "Sub-$1.19M entry with deep HDB-upgrader buyer base keeps it liquid near-term",
+          "Choa Chu Kang Park frontage and large patio ground units appeal to families"
+        ],
+        "rental_assessment": "OCR heartland rental — steady but yield-modest tenant pool of CCK families and commuters. Large unit rents reasonably but per-psf rent is low. Adequate, not a draw.",
+        "appreciation_assessment": "7.3%/yr CAGR is real but flattered by a low base and the MRT/JRL story. Lease decay will increasingly work against PSF growth as the lease drops toward 60 years, capping medium-term upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR baseline ~3.7% discounted for accelerating lease decay (sub-60-yr cliff within exit horizon), against the 7.3% URA CAGR which is low-base flattered"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-25292807",
+        "review_file": "batch_02.json"
+      }
+    }
+  ]
+}

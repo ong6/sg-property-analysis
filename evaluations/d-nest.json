@@ -1,0 +1,63 @@
+{
+  "condo": "D'Nest",
+  "slug": "d-nest",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large 912-unit D18 Pasir Ris leasehold, 2BR at $1.39M / $1,382psf on a generous 1,012sqft layout. Best all-round profile in the batch: clean 5.95% resale-only URA over 260 transactions (no new-launch bias), frontier unit, top arena score (816). Mature 2017 build, well-maintained, deep liquidity.",
+      "rating_rationale": "Honest 5.95%/yr URA backed by 260 transactions (high confidence, no bias adjustment needed), asking $1,382psf is below the $1,526 URA median, and the 912-unit size gives genuine exit liquidity. Sub-$1.4M entry sits in an accessible price band for HDB upgraders. Pasir Ris benefits from CRL (Pasir Ris terminus ~2030) and the Pasir Ris Mall/integrated transport hub. Only modest road noise on expressway-facing stacks.",
+      "red_flags": [
+        "Some road/expressway noise on outward-facing stacks",
+        "OCR far-east location — appreciation depends on CRL delivery",
+        "Large 1,012sqft 2BR slightly heavier quantum for the bedroom count"
+      ],
+      "catalysts": [
+        "Cross Island Line — Pasir Ris terminus interchange (~2030) within the precinct",
+        "Pasir Ris Mall + bus interchange integrated hub completed",
+        "912 units + below-median PSF = strong liquidity and value cushion"
+      ],
+      "as_of": {
+        "price": 1399000,
+        "psf": 1382.41,
+        "beds": 2,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 912-unit D18 Pasir Ris leasehold, 2BR at $1.39M / $1,382psf on a generous 1,012sqft layout. Best all-round profile in the batch: clean 5.95% resale-only URA over 260 transactions (no new-launch bias), frontier unit, top arena score (816). Mature 2017 build, well-maintained, deep liquidity.",
+        "rating": "Buy",
+        "rating_rationale": "Honest 5.95%/yr URA backed by 260 transactions (high confidence, no bias adjustment needed), asking $1,382psf is below the $1,526 URA median, and the 912-unit size gives genuine exit liquidity. Sub-$1.4M entry sits in an accessible price band for HDB upgraders. Pasir Ris benefits from CRL (Pasir Ris terminus ~2030) and the Pasir Ris Mall/integrated transport hub. Only modest road noise on expressway-facing stacks.",
+        "red_flags": [
+          "Some road/expressway noise on outward-facing stacks",
+          "OCR far-east location — appreciation depends on CRL delivery",
+          "Large 1,012sqft 2BR slightly heavier quantum for the bedroom count"
+        ],
+        "catalysts": [
+          "Cross Island Line — Pasir Ris terminus interchange (~2030) within the precinct",
+          "Pasir Ris Mall + bus interchange integrated hub completed",
+          "912 units + below-median PSF = strong liquidity and value cushion"
+        ],
+        "appreciation_assessment": "5.95%/yr resale-only over 260 txns is reliable and above OCR baseline; CRL provides a concrete future uplift catalyst.",
+        "rental_assessment": "Deep 2BR tenant pool near Pasir Ris MRT and beach; large family-style layout rents well to couples/small families. Yield around 3.5% on this quantum.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.95,
+        "appreciation_rate_source": "URA resale-only CAGR, 260 transactions, no new-launch bias"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500005812",
+        "review_file": "batch_04.json"
+      }
+    }
+  ]
+}

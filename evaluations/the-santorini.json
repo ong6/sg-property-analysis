@@ -1,0 +1,61 @@
+{
+  "condo": "The Santorini",
+  "slug": "the-santorini",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 597-unit 2017 leasehold in Tampines with a large 915sqft 2BR at $1,421 psf — ~6% below the URA median ($1,517) — backed by 201 transactions and a steady 5.13% CAGR. The Tampines Regional Centre and future Tampines West DTL access give a real OCR catalyst, but the 1.4km MRT distance and MCC Land's mixed build-quality reputation hold it to a Buy rather than higher.",
+      "rating_rationale": "915sqft 2BR at $1.30M / $1,421 psf is ~6% below median PSF ($1,517) with a deep 201-transaction record and 5.13% CAGR (reliable). The generous size suits a wide buyer pool (couples to small families), and 597 units provide good liquidity. Tampines Regional Centre amenities (waterfront, Quarry Park) and DTL Tampines West proximity support demand. Held back by ~1.4km MRT walk and MCC Land's 'beware quality' reputation. On frontier, MMR 1550 / score 800. Below-median entry plus size efficiency drive the Buy.",
+      "red_flags": [
+        "MCC Land build-quality reputation flagged in forums",
+        "~1.4km to Tampines West MRT (no station frontage)",
+        "Mass-market Tampines OCR — appreciation tied to broad market, ~5.1%",
+        "Tampines has steady new-supply pipeline that can cap resale pricing"
+      ],
+      "catalysts": [
+        "~6% below district median PSF on a large efficient 2BR (value)",
+        "Tampines Regional Centre + waterfront/Quarry Park lifestyle draw",
+        "DTL Tampines West access; 597 units = solid liquidity"
+      ],
+      "as_of": {
+        "price": 1299999,
+        "psf": 1420.76,
+        "beds": 2,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 597-unit 2017 leasehold in Tampines with a large 915sqft 2BR at $1,421 psf — ~6% below the URA median ($1,517) — backed by 201 transactions and a steady 5.13% CAGR. The Tampines Regional Centre and future Tampines West DTL access give a real OCR catalyst, but the 1.4km MRT distance and MCC Land's mixed build-quality reputation hold it to a Buy rather than higher.",
+        "rating": "Buy",
+        "rating_rationale": "915sqft 2BR at $1.30M / $1,421 psf is ~6% below median PSF ($1,517) with a deep 201-transaction record and 5.13% CAGR (reliable). The generous size suits a wide buyer pool (couples to small families), and 597 units provide good liquidity. Tampines Regional Centre amenities (waterfront, Quarry Park) and DTL Tampines West proximity support demand. Held back by ~1.4km MRT walk and MCC Land's 'beware quality' reputation. On frontier, MMR 1550 / score 800. Below-median entry plus size efficiency drive the Buy.",
+        "red_flags": [
+          "MCC Land build-quality reputation flagged in forums",
+          "~1.4km to Tampines West MRT (no station frontage)",
+          "Mass-market Tampines OCR — appreciation tied to broad market, ~5.1%",
+          "Tampines has steady new-supply pipeline that can cap resale pricing"
+        ],
+        "catalysts": [
+          "~6% below district median PSF on a large efficient 2BR (value)",
+          "Tampines Regional Centre + waterfront/Quarry Park lifestyle draw",
+          "DTL Tampines West access; 597 units = solid liquidity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-santorini-500056139",
+        "review_file": "batch_05.json"
+      }
+    }
+  ]
+}
