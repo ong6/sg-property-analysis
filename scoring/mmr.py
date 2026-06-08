@@ -17,6 +17,11 @@ Design rules (anti-bias):
   carry an extra penalty.
 - Appreciation confidence scales continuously with transaction count;
   baseline/default rates get a fixed low confidence instead of a cliff cap.
+- v3.2 size-cohort awareness: PSF is compared against SAME-SIZE transactions
+  (a 1BR vs other small units, not the project's pooled median that mixes in
+  penthouses), and a unit whose own size-cohort barely trades can only
+  partially claim the project's pooled appreciation/liquidity — so a thin
+  high-PSF unit no longer inherits a big project's strength wholesale.
 """
 
 import math
@@ -27,11 +32,27 @@ try:
         MMR_BASE,
         MMR_NORM_CENTER,
         MMR_NORM_SCALE,
+        MIN_BAND_TXNS,
+        COHORT_FLOOR_APPRECIATION,
+        COHORT_FLOOR_LIQUIDITY,
+        MMR_APPRECIATION_SLOPE,
+        MMR_APPRECIATION_CENTER_PCT,
+        MMR_MOMENTUM_WEIGHT,
+        MMR_RELVALUE_SLOPE,
+        MMR_RELVALUE_CAP,
     )
 except ImportError:
     MMR_BASE = 1500
     MMR_NORM_CENTER = 1500
     MMR_NORM_SCALE = 55
+    MIN_BAND_TXNS = 5
+    COHORT_FLOOR_APPRECIATION = 0.55
+    COHORT_FLOOR_LIQUIDITY = 0.40
+    MMR_APPRECIATION_SLOPE = 4.0
+    MMR_APPRECIATION_CENTER_PCT = 4.0
+    MMR_MOMENTUM_WEIGHT = 3.0
+    MMR_RELVALUE_SLOPE = 0.8
+    MMR_RELVALUE_CAP = 20.0
 
 # Red flags that are NOT already expressed as continuous MMR components.
 # (old_property/small_dev/low_lease/psf_overpriced are continuous here.)
@@ -79,6 +100,20 @@ def compute_mmr(scored: Any) -> dict:
     sb_flags = sb.get("red_flags", {})
     comps: dict[str, float] = {}
 
+    # Cohort depth — how many SAME-SIZE transactions back this unit in its
+    # project. Project-wide signals are only weak evidence for a unit type whose
+    # own size-cohort barely trades, so they are damped toward neutral when the
+    # cohort is thin. Two floors: appreciation (a project trend) damps gently,
+    # liquidity (unit-type exit depth) damps harder. None = the project has no
+    # size-band data at all → neutral (factor 1.0), per missing-data-is-neutral.
+    cohort_txns = sb_flags.get("psf_cohort_txns")
+    if cohort_txns is None:
+        cohort_appr_factor = cohort_liq_factor = 1.0
+    else:
+        depth = min(1.0, cohort_txns / MIN_BAND_TXNS)
+        cohort_appr_factor = max(COHORT_FLOOR_APPRECIATION, depth)
+        cohort_liq_factor = max(COHORT_FLOOR_LIQUIDITY, depth)
+
     # --- Appreciation (rate in %/yr, confidence-weighted, linear) ---
     apr_pct = (scored.appreciation_rate or 0.0) * 100
     source = scored.appreciation_source or "default"
@@ -96,24 +131,36 @@ def compute_mmr(scored: Any) -> dict:
         # unstable, trust it less; either alone is fine.
         if txn < 30 and momentum_val is not None and abs(momentum_val) >= 0.8:
             conf *= 0.7
-    # Slope 7.5 pts per %-point (30/4.0). At the steeper 12/pp this component
-    # alone carried ~84% of MMR variance, collapsing it to a one-factor score;
-    # 7.5/pp keeps appreciation the largest driver (~55-60%) without drowning
-    # out value, yield and liquidity signals.
-    comps["appreciation"] = round(30.0 * ((apr_pct - 4.0) / 4.0) * conf, 2)
+    # v3.2: the project CAGR is measured mostly on other unit sizes. For a unit
+    # whose own size-cohort barely trades, that rate is weak evidence — damp it.
+    # (Not applied to an explicit agent override: the human asserted that rate.)
+    if source != "agent_override":
+        conf *= cohort_appr_factor
+    # v3.3: slope cut 7.5→4.0 pts/%-pt. The point-in-time URA backtest showed
+    # trailing appreciation has ~0 forward predictive power (ρ≈+0.06), so it no
+    # longer dominates; it stays a meaningful factor (desirability proxy) but
+    # value/yield/liquidity now carry comparable weight. (config-driven.)
+    comps["appreciation"] = round(
+        MMR_APPRECIATION_SLOPE * (apr_pct - MMR_APPRECIATION_CENTER_PCT) * conf, 2)
     meta_conf = conf
 
     # --- Momentum (already a small signed number) ---
+    # v3.3: weight cut 8.0→3.0 — backtest found momentum flat-to-contrarian
+    # (ρ≈-0.03 corrected). Kept small, not removed (direction still informs the
+    # AI's qualitative read; magnitude no longer swings the rank).
     momentum = sb_cap.get("momentum", {}).get("value")
-    comps["momentum"] = round(8.0 * momentum, 2) if momentum is not None else 0.0
+    comps["momentum"] = round(MMR_MOMENTUM_WEIGHT * momentum, 2) if momentum is not None else 0.0
 
     # --- PSF vs market (SYMMETRIC: discount positive, premium negative) ---
     premium_pct = sb_flags.get("psf_premium_pct")
     if premium_pct is not None:
         psf_value = -0.8 * premium_pct
-        # v3.1: a premium/discount measured against few transactions is an
-        # unreliable estimate in EITHER direction — scale toward neutral.
-        psf_value *= 0.5 + 0.5 * min(1.0, txn / 30.0)
+        # v3.1/3.2: a premium/discount is only as trustworthy as the comparable
+        # set behind it. Weight by the SAME-SIZE cohort count (the premium is now
+        # measured against similar-size units); fall back to project txns when a
+        # project has no size data.
+        psf_conf_n = cohort_txns if cohort_txns is not None else txn
+        psf_value *= 0.5 + 0.5 * min(1.0, psf_conf_n / 30.0)
     else:
         ratio = sb_cap.get("psf_vs_median", {}).get("ratio")
         psf_value = 80.0 * (1.0 - ratio) if ratio else 0.0
@@ -162,8 +209,10 @@ def compute_mmr(scored: Any) -> dict:
     comps["mrt"] = round(9.0 * math.tanh((700.0 - mrt_dist) / 600.0), 2) if mrt_dist is not None else 0.0
 
     # --- Liquidity ---
+    # Resale depth is project-wide, but a unit type that rarely trades is hard
+    # to exit regardless of the building's total volume — damp by cohort depth.
     liq_txn = sb_liq.get("transaction_volume", {}).get("count") or txn or 0
-    comps["txn_volume"] = round(10.0 * math.tanh(liq_txn / 40.0), 2)
+    comps["txn_volume"] = round(10.0 * math.tanh(liq_txn / 40.0) * cohort_liq_factor, 2)
 
     depth = sb_liq.get("buyer_pool_depth", {}).get("depth")
     comps["buyer_pool"] = _BUYER_POOL_PTS.get(depth, 0.0)
@@ -194,9 +243,19 @@ def compute_mmr(scored: Any) -> dict:
     # for its age against the district's peer projects, normalized at a
     # region-dependent $/psf/yr age slope. Weighted below psf_value since
     # the slope is a heuristic.
+    # v3.3: slope doubled 0.4→0.8. This age-adjusted district-relative value is
+    # the closest analog to the backtest's strongest forward predictor
+    # (cheap-vs-district-peers, ρ≈-0.24), so it earns more weight as appreciation
+    # gives some up. Still damped by peer_count below (heuristic age slope).
     rel = sb.get("relative_value") or {}
     rel_premium = rel.get("premium_vs_age_adjusted_median_pct")
-    age_value = -0.4 * rel_premium if rel_premium is not None else 0.0
+    # tanh saturation: 0.8 slope near zero, capped at ±CAP so a heavy-tailed or
+    # artifact premium can't dominate the score (see config note).
+    if rel_premium is not None:
+        age_value = MMR_RELVALUE_CAP * math.tanh(
+            -MMR_RELVALUE_SLOPE * rel_premium / MMR_RELVALUE_CAP)
+    else:
+        age_value = 0.0
     # v3.1: thin peer sets make the age-adjusted median unreliable —
     # scale toward neutral below ~15 peers (floor 0.4 at the 5-peer minimum).
     peer_count = rel.get("peer_count") or 0
@@ -227,7 +286,7 @@ def apply_appreciation_override(mmr_result: dict, new_rate_pct: float) -> dict:
     """
     comps = dict(mmr_result.get("components", {}))
     old = comps.get("appreciation", 0.0)
-    new = round(30.0 * ((new_rate_pct - 4.0) / 4.0) * 1.0, 2)
+    new = round(MMR_APPRECIATION_SLOPE * (new_rate_pct - MMR_APPRECIATION_CENTER_PCT) * 1.0, 2)
     comps["appreciation"] = new
     mmr = mmr_result["mmr"] - old + new
     return {

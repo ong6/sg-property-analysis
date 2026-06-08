@@ -312,6 +312,106 @@ class URATransactionHistory:
                 ((self.resale_avg_psf_current / self.resale_avg_psf_oldest) ** (1 / year_span)) - 1
             ) * 100
 
+    def size_band_metrics(self, recency_years: int = 2,
+                          current_year: Optional[int] = None) -> dict:
+        """Median psf per size band, for like-for-like (similar-size) comparison.
+
+        The pooled project median mixes a 1BR and a penthouse, so it can't tell
+        whether a small unit's high psf is a premium or just its size. We split
+        the recent (non-bulk) transactions into disjoint sqft bands and report a
+        median psf per band, plus a pooled `recent_median_psf` on the SAME time
+        window so a thin band can fall back without a stale-price jump.
+
+        Returns {"window_years", "recent_median_psf", "bands": {band: {
+        "median_psf", "txn_count"}}}. Bands with no transactions are omitted.
+        """
+        import config
+        cy = current_year or datetime.now().year
+        cutoff = cy - max(0, recency_years - 1)
+
+        def _clean(txns):
+            return [t for t in txns
+                    if getattr(t, "num_units", 1) <= 1 and t.psf and t.psf > 0
+                    and t.area_sqft and t.area_sqft > 0]
+
+        recent = _clean([t for t in self.transactions if t.sale_year >= cutoff])
+        # If the recency window is barren (sparse project), use the full history
+        # rather than report nothing — staleness is the lesser evil here.
+        if len(recent) < config.MIN_BAND_TXNS:
+            recent = _clean(self.transactions)
+
+        if not recent:
+            return {"window_years": recency_years, "recent_median_psf": None, "bands": {}}
+
+        bands: dict[str, list[float]] = {}
+        for t in recent:
+            key = config.size_band_key(t.area_sqft)
+            if key:
+                bands.setdefault(key, []).append(t.psf)
+
+        return {
+            "window_years": recency_years,
+            "recent_median_psf": round(median([t.psf for t in recent]), 1),
+            "bands": {
+                k: {"median_psf": round(median(v), 1), "txn_count": len(v)}
+                for k, v in bands.items()
+            },
+        }
+
+
+def district_floor_factors(histories: list, recency_years: int = 2,
+                           current_year: Optional[int] = None) -> dict:
+    """Size-normalized floor-tier PSF multipliers for a set of projects (a district).
+
+    Floor is a real price driver, but the raw floor-PSF gap in a project is badly
+    confounded with size — ground/low-floor units are often large PES units that
+    trade at a low psf for SIZE reasons, not floor. We isolate the floor effect by
+    dividing each transaction's psf by its own project's SAME-SIZE-band median
+    (over the same recent window the band medians use, so time-decay cancels too),
+    then taking the median ratio per floor tier. Result ~1.0 = no premium; e.g.
+    high-rise districts show high>1.0>low, mid-rise districts ~flat.
+
+    Returns {"low", "mid", "high", "txn_count", "basis"} — tiers with < 20
+    comparable transactions are omitted (scorer treats a missing tier as 1.0).
+    District-level (not per-project) for robustness; the listing coverage is thin,
+    so a stable district curve beats noisy per-project floor premia.
+    """
+    import config
+    from collections import defaultdict
+    cy = current_year or datetime.now().year
+    cutoff = cy - max(0, recency_years - 1)
+    tier_ratios: dict[str, list[float]] = defaultdict(list)
+
+    for h in histories:
+        def _clean(txns):
+            return [t for t in txns if getattr(t, "num_units", 1) <= 1
+                    and t.psf and t.psf > 0 and t.area_sqft and t.area_sqft > 0]
+        recent = _clean([t for t in h.transactions if t.sale_year >= cutoff])
+        if len(recent) < config.MIN_BAND_TXNS:
+            recent = _clean(h.transactions)
+        if not recent:
+            continue
+        band_psfs: dict[str, list[float]] = defaultdict(list)
+        for t in recent:
+            k = config.size_band_key(t.area_sqft)
+            if k:
+                band_psfs[k].append(t.psf)
+        band_median = {k: median(v) for k, v in band_psfs.items()}
+        for t in recent:
+            tier = config.normalize_floor_tier(t.floor_level)
+            key = config.size_band_key(t.area_sqft)
+            med = band_median.get(key)
+            if tier and med and med > 0:
+                tier_ratios[tier].append(t.psf / med)
+
+    out: dict = {"basis": "district",
+                 "txn_count": sum(len(v) for v in tier_ratios.values())}
+    for tier in ("low", "mid", "high"):
+        vals = tier_ratios.get(tier, [])
+        if len(vals) >= 20:
+            out[tier] = round(median(vals), 4)
+    return out
+
 
 def parse_ura_csv(csv_content: str) -> list[URATransaction]:
     """Parse URA CSV content into transaction objects."""

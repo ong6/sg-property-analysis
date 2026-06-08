@@ -45,6 +45,19 @@ used, and ask if intent is unclear.
 - **Value is age-relative.** Don't compare a resale's PSF to a new launch's
   directly — use `factual_data.relative_value` (age-adjusted at ~$50/psf/yr,
   region-dependent) to judge whether old vs new is the better value.
+- **Value is size-relative (v3.2).** A small unit trades at a structurally
+  higher PSF than a large one in the same project — never judge a 1BR's PSF
+  against the project-pooled median (which mixes in penthouses). MMR now
+  compares against the same-size band and damps appreciation/liquidity for a
+  unit whose own size-cohort is thin (`psf_cohort_txns`). When you see a small
+  high-PSF unit ranking well, check its cohort depth before trusting it.
+- **Appreciation is de-emphasized (v3.3).** A point-in-time URA backtest
+  (`python backtest.py`) showed trailing appreciation has ~0 forward predictive
+  power and momentum is flat-to-contrarian, while *relative value* (cheap vs
+  district peers) predicts best. MMR slopes were rebalanced accordingly
+  (appreciation 7.5→4.0/pp, momentum 8.0→3.0, relative-value 0.4→0.8, capped
+  ±20). Don't treat a high past-CAGR as a forward guarantee — research the
+  catalyst. Re-run `backtest.py` as the URA panel grows to re-validate weights.
 
 Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**.
 
@@ -110,6 +123,7 @@ python invest.py --fetch-ura-districts 3,5,14,15
 
 ```
 invest.py              # CLI: flows, --score, --recall, --search-db, --from-review
+backtest.py            # Point-in-time URA backtest of scoring features (re-validate MMR weights)
 config.py              # MMR calibration, weights, thresholds
 eval_memory.py         # Git-tracked evaluation memory
 listings_db.py         # Master listings sheet

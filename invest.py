@@ -263,6 +263,12 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
             # One history PER PROJECT — district CSVs hold many projects; the
             # old single-history path mixed their PSF under one arbitrary name.
             histories = load_ura_csv_grouped(csv_path)
+            # Floor-tier PSF multipliers, computed once across the whole district
+            # (each CSV is one district) and denormalized onto each project — the
+            # listing-side floor coverage is thin, so a stable district curve
+            # beats noisy per-project floor premia.
+            from scrapers.ura_scraper import district_floor_factors
+            floor_factors = district_floor_factors(histories)
             for history in histories:
                 if not history.transactions:
                     continue
@@ -310,6 +316,14 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
                         if history.appreciation_momentum is not None else None
                     ),
                     "data_coverage": history.data_coverage,
+                    # Size-band medians: compare a listing against same-size
+                    # transactions instead of the project-pooled median (which
+                    # mixes 1BRs with penthouses and mis-prices both ends).
+                    "by_size": history.size_band_metrics(),
+                    # Floor-tier multipliers (size-confound removed) — a low-floor
+                    # unit is benchmarked below the all-floor band median, a high
+                    # one above. District-level; applied in _check_psf_overpricing.
+                    "floor_factors": floor_factors,
                 }
                 cache[project_key] = cache_entry
 
@@ -1278,9 +1292,12 @@ Examples:
                 else:
                     fallback = eval_lookup.get((name_key, None))
                     if fallback:
-                        # Different unit type's rating — say so explicitly
+                        # A DIFFERENT unit type was evaluated, not this contender.
+                        # Mark it clearly as referential so a 2BR's "Strong Buy"
+                        # is never read as the verdict on this (e.g. 1BR) unit.
                         beds_note = f"{fallback[2]}BR" if fallback[2] else "other type"
-                        fl.agent_rating = f"{fallback[0]} ({beds_note})"
+                        fl.agent_rating = f"(no {fl.beds}BR eval; {beds_note}: {fallback[0]})" if fl.beds \
+                            else f"({beds_note} only: {fallback[0]})"
                         fl.agent_eval_date = fallback[1]
 
         report = format_brackets_report(brackets, open_fighters)
