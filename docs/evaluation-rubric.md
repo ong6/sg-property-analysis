@@ -97,6 +97,18 @@ noise sources, stigma, developer track record, competing launches.
 `psf_premium_vs_ura_median_pct` is signed: negative = listed below recent
 transactions (worth investigating why — could be motivated seller or a problem).
 
+### Developer (reference, v3.3)
+
+`factual_data.developer` (present for backfilled / previously-evaluated projects)
+gives the attributed `developer` / `developer_group`, a `confidence`, and the
+group's other projects in our data (`also_built_in_our_data`). Treat it as a
+**research prompt, not a verdict**: confirm build quality, defect history (CONQUAS
+/ news), and delivery track record yourself. `portfolio_median_appreciation_pct`
+is context only — past CAGR is a weak forward signal (the v3.3 backtest), so a
+strong-appreciating portfolio is not a guarantee. If the block is absent, research
+the developer from scratch (it's still a real factor). Low `confidence` = verify
+the attribution before relying on it.
+
 ## Technical score (MMR)
 
 The scorer outputs an Elo-style **MMR** (base 1500, uncapped, continuous) and its
