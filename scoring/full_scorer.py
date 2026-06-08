@@ -1292,9 +1292,13 @@ class FullScorer:
         # --- NEW v2.3: PSF overpricing vs URA transaction data ---
         # Compare listing PSF against URA median PSF for the same project.
         # Flags listings priced significantly above recent market transactions.
-        psf_premium_pct = self._check_psf_overpricing(listing)
+        psf_premium_pct, psf_cohort_txns = self._check_psf_overpricing(listing)
         if psf_premium_pct is not None:
             result["psf_premium_pct"] = round(psf_premium_pct, 1)
+            # Number of same-size comparable transactions behind the premium —
+            # MMR uses this to weight the psf signal and damp borrowed
+            # project-wide signals when a unit's own size-cohort is thin.
+            result["psf_cohort_txns"] = psf_cohort_txns
             if psf_premium_pct > 15:
                 flags.append({
                     "flag": "psf_overpriced",
@@ -1329,34 +1333,80 @@ class FullScorer:
         result["uncapped_total"] = sum(f["penalty"] for f in flags)
         return result
 
-    def _check_psf_overpricing(self, listing: dict) -> Optional[float]:
+    def _size_aware_median_psf(self, ura_entry: dict, sqft) -> tuple:
+        """Benchmark PSF for a listing, compared against SIMILAR-SIZE units.
+
+        A project's pooled median mixes 1BRs with penthouses, so a small unit
+        always looks "overpriced" and a large one "cheap" against it. Prefer the
+        median PSF of the project's matching size band; fall back to the recent
+        pooled median (thin band), then the all-time pooled median (no size data).
+
+        Returns (median_psf, cohort_txns, basis):
+          - cohort_txns is the number of same-size transactions behind the chosen
+            benchmark — int when size data exists (0 = no same-size sales), or
+            None when the project has no size-band data at all. Downstream uses it
+            to set confidence (thin cohort → weak signal, not a strong verdict).
         """
-        Check if listing PSF is significantly above URA transaction median.
+        import config
+        pooled = ura_entry.get("median_psf") or ura_entry.get("avg_psf_current")
+        by_size = ura_entry.get("by_size") or {}
+        if not by_size:
+            return pooled, None, "pooled"  # un-rebuilt project: neutral confidence
+        bands = by_size.get("bands") or {}
+        recent_pooled = by_size.get("recent_median_psf") or pooled
+        key = config.size_band_key(sqft) if sqft else None
+        if key and key in bands:
+            band = bands[key]
+            cnt = band.get("txn_count") or 0
+            if cnt >= config.MIN_BAND_TXNS and band.get("median_psf"):
+                return band["median_psf"], cnt, f"size_band:{key}"
+            # Thin band: too few same-size sales to anchor a benchmark. Use the
+            # recent pooled median for the point estimate, but report the small
+            # cohort count so confidence is down-weighted, not asserted.
+            return recent_pooled, cnt, f"thin_band:{key}"
+        # Unknown sqft, or a band with no recorded sales: treat as thin cohort.
+        return recent_pooled, 0, "no_band_match"
+
+    def _check_psf_overpricing(self, listing: dict) -> tuple:
+        """
+        Check if listing PSF is above the URA median for SIMILAR-SIZE units.
 
         Returns:
-            Premium percentage (e.g., 15.0 means 15% above median),
-            or None if URA data is not available.
+            (premium_pct, cohort_txns) — premium as a percentage above the
+            size-matched median (negative = discount); cohort_txns is the number
+            of same-size comparable transactions (None when no URA/size data).
+            Returns (None, None) when no URA data is available.
         """
         psf = listing.get("psf")
         if not psf:
-            return None
+            return None, None
 
         project_name = listing.get("project_name") or listing.get("title", "")
         if not project_name:
-            return None
+            return None, None
 
         ura_entry = self._fuzzy_ura_lookup(project_name.lower())
         if not ura_entry:
-            return None
+            return None, None
 
-        # Use URA median PSF if available; the cache builder currently stores
-        # the current-year average PSF (avg_psf_current), so fall back to that.
-        ura_median_psf = ura_entry.get("median_psf") or ura_entry.get("avg_psf_current")
-        if not ura_median_psf or ura_median_psf <= 0:
-            return None
+        median_psf, cohort_txns, _basis = self._size_aware_median_psf(
+            ura_entry, listing.get("sqft"))
+        if not median_psf or median_psf <= 0:
+            return None, None
 
-        premium_pct = ((psf - ura_median_psf) / ura_median_psf) * 100
-        return premium_pct
+        # Floor adjustment: the size-band median pools all floors, so a low-floor
+        # unit looks dear and a high-floor unit cheap against it. Scale the
+        # benchmark by the district floor-tier factor (size-confound already
+        # removed) so the premium reflects price-vs-comparable-floor-AND-size.
+        # Neutral (no shift) when floor is unknown or the tier factor is absent.
+        import config
+        tier = config.normalize_floor_tier(listing.get("floor_level"))
+        factor = (ura_entry.get("floor_factors") or {}).get(tier) if tier else None
+        if factor:
+            median_psf *= factor
+
+        premium_pct = ((psf - median_psf) / median_psf) * 100
+        return premium_pct, cohort_txns
 
     # Expected sqft ranges per bedroom count (Singapore condo market)
     _BEDROOM_SQFT_RANGES = {

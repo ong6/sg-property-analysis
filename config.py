@@ -71,11 +71,121 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1510  # calibrated: mean MMR of 6,349-listing DB, 1BR-4BR+, full URA coverage (Jun 2026)
-MMR_NORM_SCALE = 30     # calibrated: sd≈175 on /1000, full range in use
+MMR_NORM_CENTER = 1512  # v3.3 recalibration: mean raw MMR of 6,338-listing DB = 1512.1
+MMR_NORM_SCALE = 29     # v3.3 recalibration: score_1000 mean≈502, sd≈167, tiers stable
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
 SCORE1000_TIER2_MIN = 450  # Consider
+
+# --- v3.3 component slopes (backtest-calibrated) ------------------------------
+# Point-in-time URA backtest (backtest.py; 8 split dates × 2 forward windows,
+# Jun 2026) measured each as-of-T feature against realized forward resale-PSF
+# appreciation. Findings (Spearman ρ, mean-reversion-artifact corrected):
+#   trailing appreciation                    ρ≈+0.06  → ~0 forward predictive power
+#   momentum                                 ρ≈-0.03  → ~0 / mildly contrarian
+#   relative value (cheap vs district peers) ρ≈-0.24  → STRONGEST, correct sign
+# v3.3 rebalances away from appreciation/momentum toward value. Prior effective
+# values were appreciation 7.5/pp, momentum 8.0, relvalue 0.4. Caveat: a single
+# market regime (2021-26) — this is de-emphasis, not removal; appreciation is
+# still a desirability proxy the AI reads in research.
+MMR_APPRECIATION_SLOPE = 4.0       # pts per %-pt of annual appreciation above center
+MMR_APPRECIATION_CENTER_PCT = 4.0  # %/yr treated as neutral
+MMR_MOMENTUM_WEIGHT = 3.0          # pts per unit of momentum (-1..+1)
+MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district median (near-zero slope)
+# Relative value is a heuristic (age slope × district-peer median) with heavy
+# tails — a single bad peer-median estimate or a mis-tagged sqft can imply a
+# +200% "premium". So the contribution SATURATES (tanh) at ±CAP instead of
+# scaling linearly: full 0.8 slope near zero, but no single value reading can
+# dominate the score or blow up on an artifact. Matches the tanh idiom used by
+# mrt/txn_volume/dev_size.
+MMR_RELVALUE_CAP = 20.0            # max |pts| from age-adjusted relative value
+
+# ============================================================================
+# UNIT-SIZE BANDS — like-for-like PSF comparison within a project
+# ============================================================================
+# A small unit trades at a structurally HIGHER psf than a large one in the same
+# project (fixed costs spread over fewer sqft). A project-pooled median psf
+# therefore over-penalizes small units (a 1BR looks "overpriced") and under-
+# penalizes large ones (a penthouse looks "cheap"). We bucket each project's URA
+# transactions into disjoint size bands and compare every listing against
+# transactions of SIMILAR SIZE instead of the whole-project median.
+#
+# Bands are [lower, upper) in sqft; the last is open-ended. Tunable.
+UNIT_SIZE_BAND_EDGES_SQFT = [0, 600, 800, 1050, 1400, 1800]
+# A band needs at least this many comparable transactions to be trusted as the
+# psf benchmark; below it we fall back to the pooled median AND down-weight the
+# unit's confidence (thin cohort → we don't really have comparables).
+MIN_BAND_TXNS = 5
+# How many recent calendar years of transactions feed a band median (keeps the
+# benchmark recent; widened automatically if a band is too thin in-window).
+BAND_RECENCY_YEARS = 2
+# A unit whose own size-cohort is thin can only partially claim the project's
+# pooled signals. cohort_factor = clamp(band_txns / MIN_BAND_TXNS, floor, 1.0):
+# normal cohorts (>= MIN_BAND_TXNS) are unaffected (1.0); thinner cohorts retain
+# only `floor` of the signal. Two floors because the two signals differ in how
+# unit-type-specific they are:
+#   - Appreciation is a PROJECT trend that mostly applies even to an oddball
+#     unit, so it floors high (a thin 3BR in a project that rose 7%/yr probably
+#     rose too).
+#   - Liquidity is UNIT-TYPE-specific: a size that rarely trades is genuinely
+#     hard to exit no matter the building's total volume, so it floors lower.
+COHORT_FLOOR_APPRECIATION = 0.55
+COHORT_FLOOR_LIQUIDITY = 0.40
+
+
+# Floor tiers — coarse cut shared by listings (PropertyGuru badge / number) and
+# URA transactions (floor band string). Same function both sides → the listing's
+# tier and the URA floor-factor benchmark always line up. Absolute, building-
+# height-agnostic: 1-5 low, 6-12 mid, 13+ high.
+FLOOR_TIER_CUTS = (5, 12)  # <=5 low, <=12 mid, else high
+
+
+def normalize_floor_tier(raw) -> "str | None":
+    """Map a floor descriptor to a tier: 'low' | 'mid' | 'high' (None if absent).
+
+    Within a stack, floor is a major price driver (ground/low floors trade at a
+    discount, high floors a premium). Inputs are messy and come from both sides:
+    PropertyGuru badges ("High Floor"), keywords ("penthouse", "ground"), a bare
+    number, or a URA band ("01 to 05", "B1 to B5"). All collapse to three tiers.
+    """
+    if raw is None:
+        return None
+    s = str(raw).strip().lower()
+    if not s or s == "-":
+        return None
+    if "penthouse" in s or "top floor" in s or "high floor" in s:
+        return "high"
+    if "mid floor" in s or "middle floor" in s:
+        return "mid"
+    if "ground" in s or "low floor" in s or s.startswith("b"):  # basement/B1
+        return "low"
+    import re as _re
+    m = _re.search(r"\d+", s)  # bare number, or first number of a URA band
+    if m:
+        floor = int(m.group())
+        if floor <= FLOOR_TIER_CUTS[0]:
+            return "low"
+        if floor <= FLOOR_TIER_CUTS[1]:
+            return "mid"
+        return "high"
+    return None
+
+
+def size_band_key(sqft) -> "str | None":
+    """Disjoint size-band label for a sqft value, e.g. '800-1050' or '1800+'.
+
+    Returns None for missing/invalid sqft. Same labeling is used at cache-build
+    time (bucketing URA transactions) and at score time (locating a listing's
+    band), so the two always align.
+    """
+    if not sqft or sqft <= 0:
+        return None
+    edges = UNIT_SIZE_BAND_EDGES_SQFT
+    for i in range(len(edges) - 1):
+        if edges[i] <= sqft < edges[i + 1]:
+            return f"{edges[i]}-{edges[i + 1]}"
+    return f"{edges[-1]}+"
+
 
 # ============================================================================
 # AGE-ADJUSTED RELATIVE VALUE (heuristic — verify against market data)
