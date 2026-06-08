@@ -1,0 +1,1355 @@
+{
+  "updated": "2026-06-08",
+  "attribution": {
+    "normanton park": {
+      "project_name": "NORMANTON PARK",
+      "district": "D05",
+      "developer": "Kingsford Huray Development",
+      "developer_group": "Kingsford",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/173/normanton-park",
+      "notes": "Kingsford had past build-quality/regulatory issues (Kingsford Waterbay/Hillview Peak); large 1,862-unit project."
+    },
+    "the continuum": {
+      "project_name": "THE CONTINUUM",
+      "district": "D15",
+      "developer": "Hoi Hup Realty & Sunway Developments",
+      "developer_group": "Hoi Hup",
+      "confidence": "high",
+      "source": "https://continuum-condo.sg/project-details/",
+      "notes": "Rare large freehold; Hoi Hup well-regarded for delivery quality."
+    },
+    "riverfront residences": {
+      "project_name": "RIVERFRONT RESIDENCES",
+      "district": "D19",
+      "developer": "Oxley Holdings, KSH Holdings, Lian Beng Group & Apricot Capital",
+      "developer_group": "Oxley",
+      "confidence": "high",
+      "source": "https://riverfrontresidences-condo.sg/",
+      "notes": "Former Rio Casa en bloc; volume mass-market developer JV."
+    },
+    "penrith": {
+      "project_name": "PENRITH",
+      "district": "D03",
+      "developer": "GuocoLand & Hong Leong Holdings (Intrepid Investments)",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.penrith.newlaunches.sg/",
+      "notes": "Margaret Drive GLS won 2024; GuocoLand strong delivery track record."
+    },
+    "amo residence": {
+      "project_name": "AMO RESIDENCE",
+      "district": "D20",
+      "developer": "UOL Group, Singapore Land (SingLand) & Kheng Leong",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://amo-condo.sg/",
+      "notes": "First major AMK launch in a decade; UOL/SingLand reputable."
+    },
+    "vela bay": {
+      "project_name": "VELA BAY",
+      "district": "D16",
+      "developer": "SingHaiyi Group (Sing-Haiyi Garnet)",
+      "developer_group": "SingHaiyi",
+      "confidence": "high",
+      "source": "https://velabaybayshore.com/",
+      "notes": "First private condo in Bayshore precinct; 2026 launch."
+    },
+    "lyndenwoods": {
+      "project_name": "LYNDENWOODS",
+      "district": "D05",
+      "developer": "CapitaLand",
+      "developer_group": "CapitaLand",
+      "confidence": "high",
+      "source": "https://www.capitaland.com/sg/en/stay/residential-development-listing/lyndenwoods.html",
+      "notes": "First residential project in Singapore Science Park; CapitaLand strong reputation."
+    },
+    "the tre ver": {
+      "project_name": "THE TRE VER",
+      "district": "D13",
+      "developer": "UOL Group & Singapore Land (SingLand)",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://esingaporeproperty.sg/property/the-tre-ver-condo/",
+      "notes": "Former Raintree Gardens; WOHA-designed, well regarded."
+    },
+    "the landmark": {
+      "project_name": "THE LANDMARK",
+      "district": "D03",
+      "developer": "MCC Land, ZACD Group & SSLE Development",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/242/the-landmark",
+      "notes": "Former Landmark Tower; single 39-storey tower."
+    },
+    "watertown": {
+      "project_name": "WATERTOWN",
+      "district": "D19",
+      "developer": "Far East Organization, Frasers Centrepoint & Sekisui House",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://en.wikipedia.org/wiki/Punggol_Watertown",
+      "notes": "Integrated with Waterway Point mall and Punggol MRT/LRT; established developers."
+    },
+    "whistler grand": {
+      "project_name": "WHISTLER GRAND",
+      "district": "D05",
+      "developer": "City Developments Limited (CDL Pegasus)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/157/whistler-grand",
+      "notes": "CDL long-established, generally solid build quality."
+    },
+    "principal garden": {
+      "project_name": "PRINCIPAL GARDEN",
+      "district": "D03",
+      "developer": "UOL Group & Kheng Leong",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://principalgarden-uol.info/",
+      "notes": "Prince Charles Crescent; UOL reputable."
+    },
+    "the alps residences": {
+      "project_name": "THE ALPS RESIDENCES",
+      "district": "D18",
+      "developer": "MCC Land",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-alps-residences",
+      "notes": "Mass-market Tampines Ave 10 launch; entry-priced units."
+    },
+    "bartley residences": {
+      "project_name": "BARTLEY RESIDENCES",
+      "district": "D19",
+      "developer": "Hong Leong Holdings, City Developments & TID",
+      "developer_group": "Hong Leong",
+      "confidence": "high",
+      "source": "https://e-singaporeproperty.com/bartley-residences/",
+      "notes": "At Bartley MRT; Hong Leong/CDL/TID established JV."
+    },
+    "eco": {
+      "project_name": "ECO",
+      "district": "D16",
+      "developer": "Far East Organization, Frasers Centrepoint & Sekisui House",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.ggg.sg/condo/207",
+      "notes": "Eco-themed, DP Architects/Ken Yeang design; near Tanah Merah MRT."
+    },
+    "q bay residences": {
+      "project_name": "Q BAY RESIDENCES",
+      "district": "D18",
+      "developer": "Far East Organization, Frasers Centrepoint & Sekisui House",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/q-bay-residences-29232",
+      "notes": "Quarry Bay Pte Ltd JV; near Tampines MRT."
+    },
+    "seaside residences": {
+      "project_name": "SEASIDE RESIDENCES",
+      "district": "D15",
+      "developer": "Frasers Centrepoint, Sekisui House & Keong Hong Holdings (KH Capital)",
+      "developer_group": "Frasers",
+      "confidence": "high",
+      "source": "https://seasideresidences.cos.sg/developer/",
+      "notes": "Frasers-led (East Vue Pte Ltd); rare full-seaview East Coast launch."
+    },
+    "kent ridge hill residences": {
+      "project_name": "KENT RIDGE HILL RESIDENCES",
+      "district": "D05",
+      "developer": "Oxley Holdings (Oxley Spinel)",
+      "developer_group": "Oxley",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/139/kent-ridge-hill-residences",
+      "notes": "Former Vista Park en bloc; low-rise + strata landed."
+    },
+    "twin vew": {
+      "project_name": "TWIN VEW",
+      "district": "D05",
+      "developer": "CSC Land Group (China Construction Development)",
+      "developer_group": "CSC Land",
+      "confidence": "high",
+      "source": "https://www.latestprojectlaunch.com/twinvew.html",
+      "notes": "Arm of China State Construction Engineering Corp (CSCEC)."
+    },
+    "mori": {
+      "project_name": "MORI",
+      "district": "D14",
+      "developer": "Roxy-Pacific Holdings (RL East)",
+      "developer_group": "Roxy-Pacific",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/mori",
+      "notes": "Small 137-unit freehold; Guillemard Rd redevelopment."
+    },
+    "thomson three": {
+      "project_name": "THOMSON THREE",
+      "district": "D20",
+      "developer": "UOL Group & Singapore Land (SingLand)",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://mythomsonthree.com/",
+      "notes": "United Venture Development JV; near Upper Thomson MRT."
+    },
+    "maysprings": {
+      "project_name": "MAYSPRINGS",
+      "district": "D23",
+      "developer": "GuocoLand (First Bukit Panjang Land)",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.homejourney.sg/projects/maysprings",
+      "notes": "Completed 1998; First Bukit Panjang Land is a GuocoLand (ex-First Capital Corp) entity."
+    },
+    "costa rhu": {
+      "project_name": "COSTA RHU",
+      "district": "D15",
+      "developer": "Amcol Gardens (Tanjong Rhu) Pte Ltd",
+      "developer_group": "Amcol",
+      "confidence": "high",
+      "source": "https://singaporecondoreview.com/projects/costa-rhu/developer",
+      "notes": "Completed 1997; 737-unit waterfront. Amcol Holdings later collapsed (1998 financial crisis), but project delivered."
+    },
+    "vue 8 residence": {
+      "project_name": "VUE 8 RESIDENCE",
+      "district": "D18",
+      "developer": "Publique Realty (Pasir Ris) - Capital Development & ZACD JV",
+      "developer_group": "ZACD",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/vue-8-residence",
+      "notes": "Completed 2017 Pasir Ris; smaller developer JV (Capital Development & ZACD)."
+    },
+    "verticus": {
+      "project_name": "VERTICUS",
+      "district": "D12",
+      "developer": "Soilbuild Group",
+      "developer_group": "Soilbuild",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/verticus-87711",
+      "notes": "Former Kemaman Point; small 162-unit freehold at Balestier."
+    },
+    "parktown residence": {
+      "project_name": "PARKTOWN RESIDENCE",
+      "district": "D18",
+      "developer": "JV of CapitaLand Development, UOL Group and Singapore Land Group (SingLand)",
+      "developer_group": "CapitaLand",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/parktown-residence-25859",
+      "notes": "Tampines Ave 11 mega integrated development; all three partners are top-tier listed developers with strong delivery record"
+    },
+    "the florence residences": {
+      "project_name": "THE FLORENCE RESIDENCES",
+      "district": "D19",
+      "developer": "Logan Property (Florence Development Pte Ltd)",
+      "developer_group": "Logan Property",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/170/the-florence-residences",
+      "notes": "Large 1,410-unit 'club condo' by Hong Kong-listed Logan Property; completed 2023"
+    },
+    "pinery residences": {
+      "project_name": "PINERY RESIDENCES",
+      "district": "D16",
+      "developer": "JV of Hoi Hup Realty and Sunway Developments",
+      "developer_group": "Hoi Hup",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/pinery-residences",
+      "notes": "Established Hoi Hup-Sunway partnership with multiple award-winning, well-delivered residential projects"
+    },
+    "midwood": {
+      "project_name": "MIDWOOD",
+      "district": "D23",
+      "developer": "Hong Leong Holdings and Hong Realty (Intrepid Investments / Garden Estates)",
+      "developer_group": "Hong Leong",
+      "confidence": "high",
+      "source": "https://www.themidwoodcondo.com.sg/",
+      "notes": "Hillview Rise; Hong Leong Holdings is a long-established, reputable Singapore developer"
+    },
+    "one pearl bank": {
+      "project_name": "ONE PEARL BANK",
+      "district": "D03",
+      "developer": "CapitaLand (Areca Investment Pte Ltd)",
+      "developer_group": "CapitaLand",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/one-pearl-bank-23759",
+      "notes": "Landmark 774-unit twin-tower redevelopment of former Pearl Bank Apartments; completed 2024"
+    },
+    "sengkang grand residences": {
+      "project_name": "SENGKANG GRAND RESIDENCES",
+      "district": "D19",
+      "developer": "JV of CapitaLand and City Developments Limited (Siena Residential Development)",
+      "developer_group": "CapitaLand",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/sengkang-grand-residences-23825",
+      "notes": "Integrated development above Buangkok MRT; both partners are top-tier developers"
+    },
+    "hillhaven": {
+      "project_name": "HILLHAVEN",
+      "district": "D23",
+      "developer": "JV of Far East Organization (Far East Civil Engineering) and Sekisui House",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/hillhaven",
+      "notes": "Hillview Rise; long-running Far East-Sekisui House JV known for solid build quality"
+    },
+    "the minton": {
+      "project_name": "THE MINTON",
+      "district": "D19",
+      "developer": "JV of Kheng Leong Company and Low Keng Huat",
+      "developer_group": "Kheng Leong",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/the-minton-2652",
+      "notes": "1,145-unit Hougang project, completed 2014; Kheng Leong is the Wee family (UOL-linked) property arm"
+    },
+    "blossoms by the park": {
+      "project_name": "BLOSSOMS BY THE PARK",
+      "district": "D05",
+      "developer": "EL Development Pte Ltd",
+      "developer_group": "EL Development",
+      "confidence": "high",
+      "source": "https://www.eldev.com.sg/project/blossoms-by-the-park-2/",
+      "notes": "First residential launch in one-north; EL Development is an established mid-large local developer (Parc Riviera, Symphony Suites)"
+    },
+    "commonwealth towers": {
+      "project_name": "COMMONWEALTH TOWERS",
+      "district": "D03",
+      "developer": "JV of City Developments Limited, Hong Leong Holdings and Hong Realty",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/commonwealth-towers-21896",
+      "notes": "845-unit twin towers next to Queenstown MRT, completed 2017; Hong Leong group quality"
+    },
+    "the bayshore": {
+      "project_name": "THE BAYSHORE",
+      "district": "D16",
+      "developer": "Far East Organization",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-bayshore",
+      "notes": "1,038-unit Bedok/Bayshore Rd project completed 1996; distinct from neighbouring Bayshore Park"
+    },
+    "a treasure trove": {
+      "project_name": "A TREASURE TROVE",
+      "district": "D19",
+      "developer": "Sim Lian Group (Sim Lian JV (Punggol Central) Pte Ltd)",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.simlian.com.sg/property/a-treasure-trove/",
+      "notes": "882-unit Punggol condo completed 2015; Sim Lian is an established listed developer-builder"
+    },
+    "midtown modern": {
+      "project_name": "MIDTOWN MODERN",
+      "district": "D07",
+      "developer": "JV of GuocoLand, Hong Leong Holdings and Hong Realty",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/midtown-modern-24576",
+      "notes": "Integrated condo above Bugis MRT, part of Guoco Midtown; GuocoLand is a premium developer (Guoco Tower)"
+    },
+    "the panorama": {
+      "project_name": "THE PANORAMA",
+      "district": "D20",
+      "developer": "Wheelock Properties (Singapore) (Pinehill Investments Pte Ltd)",
+      "developer_group": "Wheelock",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-panorama",
+      "notes": "698-unit Ang Mo Kio condo completed 2017; Wheelock Properties (since absorbed into Far East Organization)"
+    },
+    "la fiesta": {
+      "project_name": "LA FIESTA",
+      "district": "D19",
+      "developer": "EL Development (Sengkang) Pte Ltd",
+      "developer_group": "EL Development",
+      "confidence": "high",
+      "source": "https://www.eldev.com.sg/project/la-fiesta/",
+      "notes": "810-unit Sengkang Square condo completed 2016, next to Sengkang MRT"
+    },
+    "kingsford hillview peak": {
+      "project_name": "KINGSFORD . HILLVIEW PEAK",
+      "district": "D23",
+      "developer": "Kingsford Development Pte Ltd",
+      "developer_group": "Kingsford",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/kingsford-hillview-peak",
+      "notes": "PRC-backed Kingsford has a mixed reputation; slashed prices to clear stock and Kingsford projects (e.g. Kingsford Waterbay) faced quality complaints and regulatory scrutiny"
+    },
+    "urban treasures": {
+      "project_name": "URBAN TREASURES",
+      "district": "D14",
+      "developer": "Fragrance Group (Fragrance Treasures Pte Ltd)",
+      "developer_group": "Fragrance",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/urban-treasures",
+      "notes": "237-unit freehold twin-tower project at Jalan Eunos; Fragrance Group is a SGX-listed volume developer"
+    },
+    "river isles": {
+      "project_name": "RIVER ISLES",
+      "district": "D19",
+      "developer": "Qingjian Realty (Punggol Central) Pte Ltd",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/river-isles",
+      "notes": "610-unit Punggol condo completed 2015; Qingjian is a PRC-backed developer with large local output"
+    },
+    "eastpoint green": {
+      "project_name": "EASTPOINT GREEN",
+      "district": "D18",
+      "developer": "Nissho Iwai Corporation with Far East Organization",
+      "developer_group": "Far East",
+      "confidence": "medium",
+      "source": "https://www.srx.com.sg/condo/eastpoint-green-359",
+      "notes": "684-unit Simei condo completed 1999; developer per SRX/99.co listings (EdgeProp lists developer as not available)"
+    },
+    "mandarin gardens": {
+      "project_name": "MANDARIN GARDENS",
+      "district": "D15",
+      "developer": "Mandarin Gardens Pte Ltd (developer SPV)",
+      "developer_group": "Mandarin Gardens Pte Ltd",
+      "confidence": "low",
+      "source": "https://www.srx.com.sg/condo/mandarin-gardens-95",
+      "notes": "~1,000-unit Siglap mega-condo completed 1986; only the project SPV name is documented, parent group not verifiable"
+    },
+    "palm gardens": {
+      "project_name": "PALM GARDENS",
+      "district": "D23",
+      "developer": "Keppel Land Limited",
+      "developer_group": "Keppel",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/palm-gardens",
+      "notes": "694-unit Choa Chu Kang (Hong San Walk) condo completed 2000; Keppel Land is a major listed developer"
+    },
+    "trevista": {
+      "project_name": "TREVISTA",
+      "district": "D12",
+      "developer": "NTUC Choice Homes (Choice Homes Gamma Pte Ltd)",
+      "developer_group": "NTUC Choice Homes",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/trevista",
+      "notes": "590-unit Toa Payoh condo completed 2012; NTUC Choice Homes is an established developer (now under NTUC Enterprise)"
+    },
+    "flo residence": {
+      "project_name": "FLO RESIDENCE",
+      "district": "D19",
+      "developer": "JV of Capital Development Pte Ltd (CDPL) and ZACD Investment (Publique Realty Pte Ltd)",
+      "developer_group": "CDPL",
+      "confidence": "medium",
+      "source": "https://www.cdpl.com.sg/flo-residence",
+      "notes": "530-unit Punggol condo completed 2016; not affiliated with CDL despite name similarity"
+    },
+    "rio vista": {
+      "project_name": "RIO VISTA",
+      "district": "D19",
+      "developer": "Bodenheim Investments Pte Ltd (Far East Organization-linked)",
+      "developer_group": "Far East",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/rio-vista",
+      "notes": "716-unit Hougang/Upper Serangoon condo completed 2004; developer SPV Bodenheim Investments, a Far East Organization entity"
+    },
+    "vacanza east": {
+      "project_name": "VACANZA @ EAST",
+      "district": "D14",
+      "developer": "Hoi Hup Sunway Property Pte Ltd (Hoi Hup Realty and Sunway)",
+      "developer_group": "Hoi Hup",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/vacanza-east",
+      "notes": "473-unit freehold Lengkong Tujoh condo completed 2014; established Hoi Hup-Sunway JV"
+    },
+    "treasure at tampines": {
+      "project_name": "TREASURE AT TAMPINES",
+      "district": "D18",
+      "developer": "Sim Lian Land Pte Ltd / Sim Lian Development Pte Ltd (Sim Lian Group)",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.simlian.com.sg/property/treasure-at-tampines/",
+      "notes": "Singapore's largest condo (2,203 units) on former Tampines Court site; Sim Lian 40+ yr track record, mainstream quality."
+    },
+    "the orie": {
+      "project_name": "THE ORIE",
+      "district": "D12",
+      "developer": "CDL (City Developments) x Frasers Property x Sekisui House JV",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/property-news/the-orie-toa-payoh",
+      "notes": "777-unit Toa Payoh Lor 1 launch (2025); strong-pedigree consortium, Sekisui House brings Japanese build quality."
+    },
+    "pasir ris 8": {
+      "project_name": "PASIR RIS 8",
+      "district": "D18",
+      "developer": "Allgreen Properties x Kerry Properties JV (Kuok Group)",
+      "developer_group": "Allgreen",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/276/pasir-ris-8",
+      "notes": "Integrated dev next to Pasir Ris MRT; both partners Kuok-linked, established reputation."
+    },
+    "stirling residences": {
+      "project_name": "STIRLING RESIDENCES",
+      "district": "D03",
+      "developer": "Logan Property x Nanshan Group (LN Development (Stirling) Pte Ltd)",
+      "developer_group": "Logan",
+      "confidence": "high",
+      "source": "https://launches.sg/projects/stirling-residences",
+      "notes": "1,259-unit Queenstown twin-tower; Chinese developer JV, generally well-received."
+    },
+    "the myst": {
+      "project_name": "THE MYST",
+      "district": "D23",
+      "developer": "CDL Aries Pte Ltd (City Developments Limited)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.cdl.com.sg/newsroom/cdl-to-launch-the-myst-in-upper-bukit-timah-with-previews-starting-saturday-24-june-2023",
+      "notes": "408-unit Upper Bukit Timah (Cashew MRT); blue-chip CDL pedigree."
+    },
+    "the woodleigh residences": {
+      "project_name": "THE WOODLEIGH RESIDENCES",
+      "district": "D13",
+      "developer": "Singapore Press Holdings (SPH) x Kajima Development JV",
+      "developer_group": "Kajima",
+      "confidence": "high",
+      "source": "https://blog.icompareloan.com/premium-housing-project/",
+      "notes": "667-unit Bidadari integrated dev; Kajima (Japanese) build quality, though project saw slow initial sales."
+    },
+    "penrose": {
+      "project_name": "PENROSE",
+      "district": "D14",
+      "developer": "Hong Leong Holdings x City Developments (CDL) JV (NovaSims Development)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/264/penrose",
+      "notes": "566-unit Sims Drive (Aljunied MRT), 60:40 HLH/CDL; strong developer pedigree."
+    },
+    "one bernam": {
+      "project_name": "ONE BERNAM",
+      "district": "D02",
+      "developer": "MCC Land x HY Realty / Hao Yuan Investment JV (HY-MCC (Bernam) Pte Ltd)",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/one-bernam",
+      "notes": "Tanjong Pagar CBD mixed-use tower; MCC is a mainstream PRC developer."
+    },
+    "sceneca residence": {
+      "project_name": "SCENECA RESIDENCE",
+      "district": "D16",
+      "developer": "MCC Land x Ekovest Development x The Place Holdings JV",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/sceneca-residence",
+      "notes": "265-unit mixed dev next to Tanah Merah MRT; MCC-led, mainstream quality."
+    },
+    "bartley ridge": {
+      "project_name": "BARTLEY RIDGE",
+      "district": "D13",
+      "developer": "City Developments (CDL) x Hong Leong Holdings x TID JV (Mount V Development)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://bartleyridge.cos.sg/index.php/developer/",
+      "notes": "868-unit Mount Vernon Rd; CDL/Hong Leong/Mitsui-Fudosan (TID) consortium, solid pedigree."
+    },
+    "riversails": {
+      "project_name": "RIVERSAILS",
+      "district": "D19",
+      "developer": "Allgreen Properties Ltd (Benefit Investments Pte Ltd)",
+      "developer_group": "Allgreen",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/riversails-25331",
+      "notes": "920-unit Upper Serangoon Cres (TOP 2016); Allgreen mass-market product, value-oriented."
+    },
+    "the poiz residences": {
+      "project_name": "THE POIZ RESIDENCES",
+      "district": "D13",
+      "developer": "MCC Land (Singapore) Pte Ltd",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/property-news/mcc-land-launches-poiz-residences",
+      "notes": "731-unit mixed dev at Potong Pasir MRT; MCC mainstream quality."
+    },
+    "the palette": {
+      "project_name": "THE PALETTE",
+      "district": "D18",
+      "developer": "Hong Realty (Private) Ltd (Hong Leong Holdings / CDL group)",
+      "developer_group": "Hong Leong",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-palette",
+      "notes": "892-unit Pasir Ris Grove (TOP 2015); Hong Leong/CDL-linked, NOT Sim Lian. Established quality."
+    },
+    "urban vista": {
+      "project_name": "URBAN VISTA",
+      "district": "D16",
+      "developer": "Fragrance Group Ltd x World Class Land Pte Ltd JV (Koh Wee Meng group)",
+      "developer_group": "Fragrance",
+      "confidence": "high",
+      "source": "https://forums.condosingapore.com/showthread.php/16111-Urban-Vista-next-to-Tanah-Merah-MRT-by-Fragrance-Group-and-World-Class-Land",
+      "notes": "582-unit next to Tanah Merah MRT; Fragrance/World Class both Koh Wee Meng-controlled, mass-market tier."
+    },
+    "narra residences": {
+      "project_name": "NARRA RESIDENCES",
+      "district": "D23",
+      "developer": "Santarli Realty x Apex Asia Development x Soon Li Heng Civil Engineering x Kay Lim Realty JV",
+      "developer_group": "Santarli",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/new-launches/narra-residences",
+      "notes": "540-unit Dairy Farm Walk (launched 2026 at ~$2,180 psf); smaller local-builder consortium led by Santarli."
+    },
+    "waterview": {
+      "project_name": "WATERVIEW",
+      "district": "D18",
+      "developer": "Sim Lian (Tampines One) Pte Ltd (Sim Lian Group)",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/waterview",
+      "notes": "696-unit Bedok Reservoir / Tampines Ave 1 (TOP 2013); Sim Lian, NOT UOL. Mainstream quality."
+    },
+    "costa del sol": {
+      "project_name": "COSTA DEL SOL",
+      "district": "D16",
+      "developer": "Japura Development Pte Ltd (CapitaLand-led JV with Hutchison Whampoa)",
+      "developer_group": "CapitaLand",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/costa-del-sol",
+      "notes": "906-unit Bayshore seafront (2004), well-regarded; Japura was a CapitaLand/Hutchison-Cheung Kong JV (sources vary on exact partners)."
+    },
+    "the hillier": {
+      "project_name": "THE HILLIER",
+      "district": "D23",
+      "developer": "Far East Organization (Far East SOHO brand)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-hillier",
+      "notes": "528-unit SOHO at Hillview Rise (TOP 2016); Far East, Singapore's largest private developer."
+    },
+    "waterbank at dakota": {
+      "project_name": "WATERBANK AT DAKOTA",
+      "district": "D14",
+      "developer": "UOL Group Limited",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/waterbank-at-dakota",
+      "notes": "616-unit at Dakota MRT (TOP 2013); UOL, reputable blue-chip developer."
+    },
+    "bayshore park": {
+      "project_name": "BAYSHORE PARK",
+      "district": "D16",
+      "developer": "Bayshore Park Pte Ltd (Far East Organization)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/bayshore-park",
+      "notes": "1,038-unit seafront (1986); Far East, won FIABCI Prix d'Excellence."
+    },
+    "the gardens at bishan": {
+      "project_name": "THE GARDENS AT BISHAN",
+      "district": "D20",
+      "developer": "First Garden Development Pte Ltd (GuocoLand subsidiary)",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.guocoland.com.sg/SG/The-Gardens-At-Bishan.asp",
+      "notes": "756-unit Sin Ming Walk (2004), European-themed; GuocoLand, reputable developer."
+    },
+    "savannah condopark": {
+      "project_name": "SAVANNAH CONDOPARK",
+      "district": "D18",
+      "developer": "City Developments Limited (CDL)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/savannah-condopark",
+      "notes": "648-unit Simei Rise (2005); CDL blue-chip pedigree."
+    },
+    "waterfront isle": {
+      "project_name": "WATERFRONT ISLE",
+      "district": "D16",
+      "developer": "Far East Organization x Frasers Centrepoint JV",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://thefolksatsgproptalk.wordpress.com/2011/03/24/waterfront-isle-review/",
+      "notes": "561-unit Bedok Reservoir, final of the Waterfront series (TOP ~2015); strong Far East/Frasers pedigree."
+    },
+    "neptune court": {
+      "project_name": "NEPTUNE COURT",
+      "district": "D15",
+      "developer": "Housing & Urban Development Company (HUDC) — privatised HUDC estate",
+      "developer_group": "HUDC",
+      "confidence": "high",
+      "source": "https://hudcsingapore.com/estates/neptune-court/",
+      "notes": "752-unit ex-HUDC at Marine Vista (TOP 1975, privatised); govt-era public housing, not a private developer product."
+    },
+    "changi rise condominium": {
+      "project_name": "CHANGI RISE CONDOMINIUM",
+      "district": "D18",
+      "developer": "City Developments Limited (CDL)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/changi-rise-condominium",
+      "notes": "598-unit Simei Rise (2004), launched at value $475 psf; CDL blue-chip pedigree."
+    },
+    "grand dunman": {
+      "project_name": "GRAND DUNMAN",
+      "district": "D15",
+      "developer": "SingHaiyi Group & CSC Land Group (JV)",
+      "developer_group": "SingHaiyi",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/grand-dunman",
+      "notes": "Mega 1,008-unit project; SingHaiyi is an established SGX-listed developer (Parc Clematis, The Gazania)."
+    },
+    "tembusu grand": {
+      "project_name": "TEMBUSU GRAND",
+      "district": "D15",
+      "developer": "City Developments Limited (CDL) & MCL Land (JV)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/tembusu-grand",
+      "notes": "Both partners are top-tier, BCA-awarded developers; strong delivery track record."
+    },
+    "affinity at serangoon": {
+      "project_name": "AFFINITY AT SERANGOON",
+      "district": "D19",
+      "developer": "Oxley Holdings, Lian Beng, KSH Holdings & Apricot Capital (JV)",
+      "developer_group": "Oxley",
+      "confidence": "high",
+      "source": "https://launches.sg/projects/affinity-at-serangoon",
+      "notes": "Oxley-led en-bloc redevelopment of former Serangoon Ville; Oxley known for compact unit layouts."
+    },
+    "promenade peak": {
+      "project_name": "PROMENADE PEAK",
+      "district": "D03",
+      "developer": "Allgreen Properties (via Valerian Residential)",
+      "developer_group": "Allgreen",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/promenade-peak",
+      "notes": "Allgreen is the property arm of the Kuok Group; reputable (Great World City, Tanglin Mall)."
+    },
+    "the botany at dairy farm": {
+      "project_name": "THE BOTANY AT DAIRY FARM",
+      "district": "D23",
+      "developer": "Sim Lian Group (Sim Lian JV Dairy Farm)",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.simlian.com.sg/property/the-botany/",
+      "notes": "Sim Lian is an established SGX-listed developer-builder with in-house construction."
+    },
+    "riviere": {
+      "project_name": "RIVIERE",
+      "district": "D03",
+      "developer": "Frasers Property (Frasers Property Corporate Services)",
+      "developer_group": "Frasers",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/property-news/riviere-jiak-kim-street-100-sold-says-frasers-property",
+      "notes": "Luxury Jiak Kim Street project (sold out); Frasers is a top-tier developer, strong build quality."
+    },
+    "liv mb": {
+      "project_name": "LIV @ MB",
+      "district": "D15",
+      "developer": "Bukit Sembawang Estates (BSEL Development)",
+      "developer_group": "Bukit Sembawang",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/liv-mb",
+      "notes": "Bukit Sembawang is a long-established SGX-listed developer with solid reputation."
+    },
+    "amber park": {
+      "project_name": "AMBER PARK",
+      "district": "D15",
+      "developer": "CDL & Hong Realty (Aquarius Properties JV)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/amber-park-36",
+      "notes": "Freehold; CDL (Citizens Development) with Hong Realty of Hong Leong Group; SCDA-designed, high-end."
+    },
+    "the tapestry": {
+      "project_name": "THE TAPESTRY",
+      "district": "D18",
+      "developer": "City Developments Limited (CDL)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-tapestry",
+      "notes": "Developer is CDL, not CapitaLand; 861 units, completed 2021. CDL most BCA-awarded developer."
+    },
+    "the trilinq": {
+      "project_name": "THE TRILINQ",
+      "district": "D05",
+      "developer": "IOI Group (Clementi Development Pte Ltd)",
+      "developer_group": "IOI",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/the-trilinq-21477",
+      "notes": "Malaysian IOI Group subsidiary; TOP 2017."
+    },
+    "the gazania": {
+      "project_name": "THE GAZANIA",
+      "district": "D19",
+      "developer": "SingHaiyi Properties & Huajiang International (JV)",
+      "developer_group": "SingHaiyi",
+      "confidence": "high",
+      "source": "https://www.singhaiyi.com/the-gazania.html",
+      "notes": "Freehold; former Sun Rosier en-bloc; SingHaiyi is SGX-listed and established."
+    },
+    "ripple bay": {
+      "project_name": "RIPPLE BAY",
+      "district": "D18",
+      "developer": "MCL Land (MCL Land Pasir Ris Pte Ltd)",
+      "developer_group": "MCL Land",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/ripple-bay",
+      "notes": "Developer is MCL Land (not MCC Land); completed 2015. MCL Land is a Hongkong Land/Jardine member."
+    },
+    "queens peak": {
+      "project_name": "QUEENS PEAK",
+      "district": "D03",
+      "developer": "HY Realty (Dundee) Pte Ltd, project-managed by MCC Land",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/queens-peak-22701",
+      "notes": "HY Realty shares shareholders with Hao Yuan Investment; MCC Land (Metallurgical Corp of China) manages; completed 2020."
+    },
+    "terra hill": {
+      "project_name": "TERRA HILL",
+      "district": "D05",
+      "developer": "Hoi Hup Realty & Sunway Developments (JV)",
+      "developer_group": "Hoi Hup",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/property-news/hoi-hup-sunway-previews-high-end-terra-hill-pasir-panjang",
+      "notes": "Freehold (former Flynn Park en-bloc); Hoi Hup-Sunway is a prolific, well-regarded JV."
+    },
+    "gem residences": {
+      "project_name": "GEM RESIDENCES",
+      "district": "D12",
+      "developer": "Evia Real Estate, Gamuda Berhad & Maxdin (JV)",
+      "developer_group": "Evia",
+      "confidence": "high",
+      "source": "https://www.thegemsresidences.com/",
+      "notes": "First Toa Payoh private condo launch since 2009; Gamuda is a major Malaysian contractor-developer."
+    },
+    "nv residences": {
+      "project_name": "NV RESIDENCES",
+      "district": "D18",
+      "developer": "City Developments Limited (CDL)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://ir.cdl.com.sg/static-files/a4f177ac-9f4d-470a-9d95-436be0c7a896",
+      "notes": "CDL Pasir Ris Grove parcel; completed 2013. Some listings also cite Hong Realty involvement."
+    },
+    "livia": {
+      "project_name": "LIVIA",
+      "district": "D18",
+      "developer": "CDL, Hong Realty & Hong Leong Holdings (JV)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://ir.cdl.com.sg/static-files/b595dcd4-f492-4430-88b8-d162abf9971e",
+      "notes": "CDL/Hong Leong group JV on Pasir Ris Grove; TOP 2011."
+    },
+    "braddell view": {
+      "project_name": "BRADDELL VIEW",
+      "district": "D20",
+      "developer": "Housing and Urban Development Corporation (HUDC)",
+      "developer_group": "HUDC",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/braddell-view",
+      "notes": "Former HUDC estate (privatised); completed 1981, 918 units. Aging, en-bloc candidate."
+    },
+    "hillion residences": {
+      "project_name": "HILLION RESIDENCES",
+      "district": "D23",
+      "developer": "Sim Lian Group",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.simlian.com.sg/property/hillion-residences/",
+      "notes": "Integrated development over Hillion Mall & Bukit Panjang interchange; completed ~2018."
+    },
+    "regent heights": {
+      "project_name": "REGENT HEIGHTS",
+      "district": "D23",
+      "developer": "Far East Organization (Bukit Landmark Properties Pte Ltd)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/regent-heights-395",
+      "notes": "Built 1999 by Far East; Far East is Singapore's largest private developer."
+    },
+    "riversound residence": {
+      "project_name": "RIVERSOUND RESIDENCE",
+      "district": "D19",
+      "developer": "Qingjian Realty (Sengkang) Pte Ltd",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://qingjian.com.sg/our_project/riversound/",
+      "notes": "Completed 2015; Qingjian is a prolific China-linked developer in the OCR/suburban segment."
+    },
+    "regentville": {
+      "project_name": "REGENTVILLE",
+      "district": "D19",
+      "developer": "Far East Organization (Serenity Properties Pte Ltd)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/regentville",
+      "notes": "Built 2000 by Far East Organization; large 580-unit suburban condo in Hougang."
+    },
+    "aquarius by the park": {
+      "project_name": "AQUARIUS BY THE PARK",
+      "district": "D16",
+      "developer": "First Capital Corporation (First Bedok Land Pte Ltd)",
+      "developer_group": "GuocoLand",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/aquarius-by-the-park",
+      "notes": "Built 2000 by First Capital Corp, the predecessor entity that was rebranded to GuocoLand."
+    },
+    "stratum": {
+      "project_name": "STRATUM",
+      "district": "D18",
+      "developer": "Elitist Development Pte Ltd (related to Sin Soon Lee Realty)",
+      "developer_group": "Sin Soon Lee",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/stratum",
+      "notes": "Completed 2016; small/independent local developer, not part of a major group."
+    },
+    "the quartz": {
+      "project_name": "THE QUARTZ",
+      "district": "D19",
+      "developer": "GuocoLand",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.guocoland.com.sg/Documents/Announcements/2006/01062006.shtml",
+      "notes": "Launched 2006 next to Buangkok MRT; GuocoLand is an established Guoco Group developer."
+    },
+    "chuan park": {
+      "project_name": "CHUAN PARK",
+      "district": "D19",
+      "developer": "Kingsford Development Pte Ltd & MCC Land (Singapore) JV",
+      "developer_group": "Kingsford",
+      "confidence": "high",
+      "source": "https://qingjianrealty.com.sg/projects/bloomsbury-residences/ (see chuanparkcondo.com.sg/developer/)",
+      "notes": "Kingsford has a mixed track record (BCA had earlier issues with Kingsford Waterbay/Normanton Park); MCC Land is the more reputable JV partner."
+    },
+    "parc clematis": {
+      "project_name": "PARC CLEMATIS",
+      "district": "D05",
+      "developer": "SingHaiyi Group (Sing-Haiyi Gold Pte Ltd)",
+      "developer_group": "SingHaiyi",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/202/parc-clematis",
+      "notes": "Mega 1,468-unit development; CONQUAS-rated past projects, award-winning at 2019 PropertyGuru Asia Property Awards."
+    },
+    "avenue south residence": {
+      "project_name": "AVENUE SOUTH RESIDENCE",
+      "district": "D03",
+      "developer": "UOL Group / UIC (UIC Homes) / Kheng Leong JV",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://uolhomes.com.sg/project/avenue-south-residence/",
+      "notes": "UOL-led JV (50:30:20 with UIC Homes and Kheng Leong); established, well-regarded developer."
+    },
+    "dairy farm residences": {
+      "project_name": "DAIRY FARM RESIDENCES",
+      "district": "D23",
+      "developer": "United Engineers Limited (UED Residential)",
+      "developer_group": "United Engineers",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/dairy-farm-residences",
+      "notes": "United Engineers (est. 1912), now under Yanlord/Perennial ownership; mixed development with Dairy Farm mall."
+    },
+    "faber residence": {
+      "project_name": "FABER RESIDENCE",
+      "district": "D05",
+      "developer": "GuocoLand / Hong Leong Holdings / TID JV",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/faber-residence",
+      "notes": "New launch (2025) at Faber Walk; backed by established GuocoLand/Hong Leong/TID consortium."
+    },
+    "sims urban oasis": {
+      "project_name": "SIMS URBAN OASIS",
+      "district": "D14",
+      "developer": "GuocoLand Limited",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/sims-urban-oasis-22053",
+      "notes": "Large 1,024-unit GuocoLand project; reputable SGX-listed developer."
+    },
+    "bloomsbury residences": {
+      "project_name": "BLOOMSBURY RESIDENCES",
+      "district": "D05",
+      "developer": "Qingjian Realty & Forsea Holdings (Media Circle Development Pte Ltd)",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://qingjianrealty.com.sg/projects/bloomsbury-residences/",
+      "notes": "One-North new launch; Qingjian is an established mid-tier developer (CONQUAS-recognised past projects)."
+    },
+    "clavon": {
+      "project_name": "CLAVON",
+      "district": "D05",
+      "developer": "UOL Group & Singapore Land Group JV (United Venture Development (Clementi 1))",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/260/clavon",
+      "notes": "UOL/SingLand JV completed 2024; both heavyweight reputable developers."
+    },
+    "botanique at bartley": {
+      "project_name": "BOTANIQUE AT BARTLEY",
+      "district": "D19",
+      "developer": "UOL Group (UOL Development (Bartley) Pte Ltd)",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/botanique-at-bartley",
+      "notes": "797-unit UOL development completed 2019; reputable developer."
+    },
+    "melville park": {
+      "project_name": "MELVILLE PARK",
+      "district": "D18",
+      "developer": "First Capital Corporation (now GuocoLand) — Melville Park Development Pte Ltd",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.guocoland.com.sg/SG/Melville-Park.asp",
+      "notes": "Built 1996 by First Capital Corp, renamed GuocoLand in 2002; large 1,232-unit older estate."
+    },
+    "park colonial": {
+      "project_name": "PARK COLONIAL",
+      "district": "D13",
+      "developer": "Chip Eng Seng (CEL Development) / Heeton Holdings / KSH Holdings JV",
+      "developer_group": "Chip Eng Seng",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/park-colonial-23459",
+      "notes": "CEL Unique Development consortium next to Woodleigh MRT; CEL is an established listed developer/builder."
+    },
+    "euhabitat": {
+      "project_name": "EUHABITAT",
+      "district": "D14",
+      "developer": "Transurban Properties Pte Ltd & OPH Marymount Ltd JV",
+      "developer_group": "Transurban/OPH",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/euhabitat",
+      "notes": "748-unit development completed 2016; built by Woh Hup; smaller niche developers, no major reputational issues found."
+    },
+    "the santorini": {
+      "project_name": "THE SANTORINI",
+      "district": "D18",
+      "developer": "MCC Land (Singapore) Pte Ltd",
+      "developer_group": "MCC Land",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-santorini",
+      "notes": "597-unit Tampines project completed 2018; MCC Land is an established Chinese-backed developer."
+    },
+    "newport residences": {
+      "project_name": "NEWPORT RESIDENCES",
+      "district": "D02",
+      "developer": "City Developments Limited (CDL)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://newportresidences-condo.com.sg/",
+      "notes": "Freehold redevelopment of former Fuji Xerox Tower at 80 Anson Rd; CDL is a top-tier developer."
+    },
+    "grandeur park residences": {
+      "project_name": "GRANDEUR PARK RESIDENCES",
+      "district": "D16",
+      "developer": "Chip Eng Seng (CEL Residential Development Pte Ltd)",
+      "developer_group": "Chip Eng Seng",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/grandeur-park-residences",
+      "notes": "720-unit Tanah Merah MRT project completed 2020; CEL is established. Commands a premium per market reports."
+    },
+    "meyer blue": {
+      "project_name": "MEYER BLUE",
+      "district": "D15",
+      "developer": "UOL Group & Singapore Land Group JV",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/meyer-blue",
+      "notes": "Freehold Meyer Rd luxury launch (~226 units); UOL/SingLand are heavyweight reputable developers."
+    },
+    "sky vue": {
+      "project_name": "SKY VUE",
+      "district": "D20",
+      "developer": "CapitaLand (75%) & Mitsubishi Estate (25%) JV — Allamanda Residential Development",
+      "developer_group": "CapitaLand",
+      "confidence": "high",
+      "source": "https://www.capitaland.com/sg/en/stay/residential-development-listing/sky-vue.html",
+      "notes": "694-unit Bishan project next to MRT; CapitaLand is a top-tier developer."
+    },
+    "archipelago": {
+      "project_name": "ARCHIPELAGO",
+      "district": "D16",
+      "developer": "UOL Group & Singapore Land JV (United Venture Development (Bedok))",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://uolhomes.com.sg/project/archipelago/",
+      "notes": "577-unit Bedok Reservoir resort-style condo completed 2015; UOL/SingLand reputable."
+    },
+    "the clement canopy": {
+      "project_name": "THE CLEMENT CANOPY",
+      "district": "D05",
+      "developer": "UOL Group & Singapore Land (Singland Homes) JV",
+      "developer_group": "UOL",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/the-clement-canopy-78642",
+      "notes": "505-unit twin-tower Clementi project; UOL/SingLand reputable developers."
+    },
+    "double bay residences": {
+      "project_name": "DOUBLE BAY RESIDENCES",
+      "district": "D18",
+      "developer": "UOL Group / Kheng Leong JV (Secure Venture Development (Simei) Pte Ltd)",
+      "developer_group": "UOL",
+      "confidence": "medium",
+      "source": "https://www.edgeprop.sg/condo-apartment/double-bay-residences",
+      "notes": "646-unit Simei condo completed 2012; SPV named 'Secure Venture Development', Simei Street 4 GLS site won by UOL/Kheng Leong consortium in 2008."
+    },
+    "icon": {
+      "project_name": "ICON",
+      "district": "D02",
+      "developer": "Far East Organization (Lucky Pinnacle Pte Ltd)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/icon",
+      "notes": "646-unit Tanjong Pagar mixed development atop Icon Village, completed 2007; Far East is Singapore's largest private developer."
+    },
+    "parc centros": {
+      "project_name": "PARC CENTROS",
+      "district": "D19",
+      "developer": "Wee Hur Development Pte Ltd",
+      "developer_group": "Wee Hur",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/parc-centros",
+      "notes": "618-unit Punggol condo completed 2016; note district is Punggol (Wee Hur is a listed builder-developer)."
+    },
+    "the tennery": {
+      "project_name": "THE TENNERY",
+      "district": "D23",
+      "developer": "Far East Organization (Dollar Land Singapore Pte Ltd)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/the-tennery",
+      "notes": "338-unit SOHO/mixed development atop Junction 10; Far East. Has underperformed on resale (per StackedHomes analysis)."
+    },
+    "hillsta": {
+      "project_name": "HILLSTA",
+      "district": "D23",
+      "developer": "Far East Organization / Sekisui House / China Construction JV",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/hillsta-21889",
+      "notes": "416-unit Choa Chu Kang condo/townhouse/SOHO completed 2016; FEO-led JV, reputable developers."
+    },
+    "le quest": {
+      "project_name": "LE QUEST",
+      "district": "D23",
+      "developer": "Qingjian Realty (BBR) Pte Ltd",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/le-quest",
+      "notes": "516-unit Bukit Batok integrated/mixed development completed 2021; Qingjian is established mid-tier."
+    },
+    "emerald of katong": {
+      "project_name": "EMERALD OF KATONG",
+      "district": "D15",
+      "developer": "Sim Lian Group (Sim Lian JV (Katong) Pte Ltd — Sim Lian Land & Sim Lian Development)",
+      "developer_group": "Sim Lian",
+      "confidence": "high",
+      "source": "https://www.simlian.com.sg/property/emeraldofkatong/",
+      "notes": "Established listed local developer; 846 units, TOP not yet; record-breaking launch sales."
+    },
+    "zyon grand": {
+      "project_name": "ZYON GRAND",
+      "district": "D03",
+      "developer": "City Developments Limited (CDL) & Mitsui Fudosan JV (CDL-MFA Altair Property Pte Ltd)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/zyon-grand",
+      "notes": "Integrated development, Zion Road; strong launch (84% sold day one)."
+    },
+    "parc esta": {
+      "project_name": "PARC ESTA",
+      "district": "D14",
+      "developer": "MCL Land (Everbright) Pte Ltd",
+      "developer_group": "MCL Land",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/parc-esta",
+      "notes": "Former Eunosville en-bloc; 1,399 units; MCL Land is a reputable Hongkong Land/Jardine-backed developer."
+    },
+    "elta": {
+      "project_name": "ELTA",
+      "district": "D05",
+      "developer": "MCL Land & CSC Land Group JV (HC Land (Clementi) Pte Ltd)",
+      "developer_group": "MCL Land",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/459/elta",
+      "notes": "JV with CSC Land (China State Construction SG arm); 501 units, TOP ~2029."
+    },
+    "kingsford waterbay": {
+      "project_name": "KINGSFORD WATERBAY",
+      "district": "D19",
+      "developer": "Kingsford Development Pte Ltd",
+      "developer_group": "Kingsford",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/kingsford-waterbay",
+      "notes": "Kingsford has a mixed reputation in SG (Kingsford Hillview Peak had a stop-work order and quality/defect complaints)."
+    },
+    "jadescape": {
+      "project_name": "JADESCAPE",
+      "district": "D20",
+      "developer": "Qingjian Realty (Marymount) Pte Ltd",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/jadescape-23491",
+      "notes": "Former Shunfu Ville en-bloc; 1,206 units; Qingjian (CNQC) is an active mid-tier developer, smart-home award winner."
+    },
+    "parc riviera": {
+      "project_name": "PARC RIVIERA",
+      "district": "D05",
+      "developer": "EL Development (West Coast) Pte Ltd",
+      "developer_group": "EL Development",
+      "confidence": "high",
+      "source": "https://www.eldev.com.sg/project/parc-riviera/",
+      "notes": "EL Development (Evan Lim group); 752 units, completed 2019."
+    },
+    "eight riversuites": {
+      "project_name": "EIGHT RIVERSUITES",
+      "district": "D12",
+      "developer": "UE Development (Bendemeer) Pte Ltd (United Engineers)",
+      "developer_group": "United Engineers",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/eight-riversuites",
+      "notes": "862 units, completed 2016; not a Chip Eng Seng/CEL project."
+    },
+    "d nest": {
+      "project_name": "D'NEST",
+      "district": "D18",
+      "developer": "CDL / Hong Leong Holdings / Hong Realty JV",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/dnest",
+      "notes": "Hong Leong group JV; 912 units, completed 2017."
+    },
+    "coco palms": {
+      "project_name": "COCO PALMS",
+      "district": "D18",
+      "developer": "CDL / Hong Realty / Hong Leong Holdings JV",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/coco-palms",
+      "notes": "Hong Leong group, ADDP architects; 944 units, TOP 2019."
+    },
+    "the glades": {
+      "project_name": "THE GLADES",
+      "district": "D16",
+      "developer": "Keppel Land & China Vanke JV (Sherwood Development Pte Ltd)",
+      "developer_group": "Keppel Land",
+      "confidence": "high",
+      "source": "https://launchpropertysingapore.com.sg/new-launch/property/the-glades.html",
+      "notes": "726 units, 1-min walk to Tanah Merah MRT; Keppel Land is a reputable developer."
+    },
+    "the garden residences": {
+      "project_name": "THE GARDEN RESIDENCES",
+      "district": "D19",
+      "developer": "Keppel Land & Wing Tai Holdings JV (Gardens Development Pte Ltd)",
+      "developer_group": "Keppel Land",
+      "confidence": "high",
+      "source": "https://singaporecondoreview.com/projects/the-garden-residences",
+      "notes": "613 units, completed 2021; both partners established."
+    },
+    "hudson place residences": {
+      "project_name": "HUDSON PLACE RESIDENCES",
+      "district": "D05",
+      "developer": "Qingjian Realty (CNQC) / Forsea Holdings / Hoovasun Holding consortium",
+      "developer_group": "Qingjian",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/hudson-place-residences",
+      "notes": "Lead Qingjian (CNQC); same group behind JadeScape, Altura/Tenet ECs; ~325 units at Media Circle, one-north."
+    },
+    "the antares": {
+      "project_name": "THE ANTARES",
+      "district": "D14",
+      "developer": "FSKH Development Pte Ltd (Hock Lian Seng / Keong Hong / TA Corp JV)",
+      "developer_group": "Hock Lian Seng",
+      "confidence": "high",
+      "source": "https://www.propnex.com/project-details/188/the-antares",
+      "notes": "265 units at Mattar MRT, completed 2022; smaller mid-tier JV partners."
+    },
+    "the luxurie": {
+      "project_name": "THE LUXURIE",
+      "district": "D19",
+      "developer": "Keppel Land Realty Pte Ltd",
+      "developer_group": "Keppel Land",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/the-luxurie",
+      "notes": "622 units next to Sengkang MRT, completed 2015."
+    },
+    "jewel buangkok": {
+      "project_name": "JEWEL @ BUANGKOK",
+      "district": "D19",
+      "developer": "White Haven Properties Pte Ltd (CDL subsidiary)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/jewel-buangkok",
+      "notes": "Wholly-owned CDL entity; 616 units, completed 2017."
+    },
+    "sky eden bedok": {
+      "project_name": "SKY EDEN@BEDOK",
+      "district": "D16",
+      "developer": "Frasers Property Limited",
+      "developer_group": "Frasers",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/sky-edenbedok",
+      "notes": "Mixed-use on former Bedok Point site; 158 units; Frasers is a large reputable developer."
+    },
+    "meyer mansion": {
+      "project_name": "MEYER MANSION",
+      "district": "D15",
+      "developer": "GuocoLand Limited",
+      "developer_group": "GuocoLand",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/meyer-mansion",
+      "notes": "Freehold, former Casa Meyfort en-bloc; 200 units, TOP Feb 2024; GuocoLand is a top-tier developer."
+    },
+    "the hill one north": {
+      "project_name": "THE HILL @ONE-NORTH",
+      "district": "D05",
+      "developer": "Kingsford Development Pte Ltd",
+      "developer_group": "Kingsford",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/the-hill-one-north",
+      "notes": "142 units at Slim Barracks Rise; Kingsford (post-Normanton Park) — watch build-quality reputation."
+    },
+    "boathouse residences": {
+      "project_name": "BOATHOUSE RESIDENCES",
+      "district": "D19",
+      "developer": "Frasers Centrepoint / Far East Organization / Sekisui House JV (EastHouse Properties)",
+      "developer_group": "Frasers",
+      "confidence": "high",
+      "source": "https://www.edgeprop.sg/condo-apartment/boathouse-residences",
+      "notes": "493 units, completed 2015; all three partners reputable."
+    },
+    "echelon": {
+      "project_name": "ECHELON",
+      "district": "D03",
+      "developer": "Freshview Developments Pte Ltd (CDL subsidiary)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://www.propertyguru.com.sg/project/echelon-21386",
+      "notes": "508 units near Redhill MRT, SCDA-designed, completed 2016."
+    },
+    "dover parkview": {
+      "project_name": "DOVER PARKVIEW",
+      "district": "D05",
+      "developer": "Dover Palisades Pte Ltd (Far East Organization)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/parkview-condominium-5260",
+      "notes": "686 units, completed 1997; Far East Organization is Singapore's largest private developer."
+    },
+    "forest woods": {
+      "project_name": "FOREST WOODS",
+      "district": "D19",
+      "developer": "CDL / Hong Leong Holdings / TID JV (Serangoon Green Pte Ltd)",
+      "developer_group": "CDL",
+      "confidence": "high",
+      "source": "https://newlaunch101.com/forest-woods/",
+      "notes": "519 units near Serangoon MRT/NEX, TOP ~2020; Hong Leong group."
+    },
+    "bartley vue": {
+      "project_name": "BARTLEY VUE",
+      "district": "D19",
+      "developer": "Wee Hur Development Pte Ltd (Wee Hur Holdings)",
+      "developer_group": "Wee Hur",
+      "confidence": "high",
+      "source": "https://www.99.co/singapore/condos-apartments/bartley-vue",
+      "notes": "115 units near Bartley MRT, TOP ~2026; Wee Hur is SGX-listed construction/property group."
+    },
+    "hillview regency": {
+      "project_name": "HILLVIEW REGENCY",
+      "district": "D23",
+      "developer": "Hillview Regency Pte Ltd (Far East Organization)",
+      "developer_group": "Far East",
+      "confidence": "high",
+      "source": "https://www.srx.com.sg/condo/hillview-regency-603",
+      "notes": "572 units in Bukit Batok, completed ~2005-2006; Far East Organization SPV."
+    }
+  }
+}
