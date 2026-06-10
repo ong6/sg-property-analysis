@@ -1,0 +1,63 @@
+{
+  "condo": "Sunshine Regency",
+  "slug": "sunshine-regency",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 1,733sqft freehold 3BR in D15 East Coast at $1,378 psf, roughly in line with the $1,363 URA median. The eye-catching 10%/yr appreciation rests on just 7 transactions, so it is statistical noise — the real case is a fairly-priced, generously-sized freehold unit in a deep buyer-pool district.",
+      "rating_rationale": "Freehold, D15 deep buyer pool, fair PSF (+1% to median) and a comfortable 1,733sqft layout are genuine merits. But the 10%/yr rate is unreliable (only 7 txn) and must be discounted to an RCR-typical ~5%; the 1.22km/15-min walk to Marine Parade MRT is a real liability vs better-connected East Coast peers; and $2.39M sits at the upper edge of the liquid band. Solidly average — a hold, not a standout buy.",
+      "red_flags": [
+        "Appreciation rate built on only 7 txn — not reliable",
+        "1.22km / 15-min walk to nearest MRT",
+        "$2.39M near top of deepest-liquidity band"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15",
+        "Large 1,733sqft family layout",
+        "East Coast lifestyle and deep resale demand"
+      ],
+      "as_of": {
+        "price": 2388888,
+        "psf": 1378.47,
+        "beds": 3,
+        "sqft": 1733.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,733sqft freehold 3BR in D15 East Coast at $1,378 psf, roughly in line with the $1,363 URA median. The eye-catching 10%/yr appreciation rests on just 7 transactions, so it is statistical noise — the real case is a fairly-priced, generously-sized freehold unit in a deep buyer-pool district.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, D15 deep buyer pool, fair PSF (+1% to median) and a comfortable 1,733sqft layout are genuine merits. But the 10%/yr rate is unreliable (only 7 txn) and must be discounted to an RCR-typical ~5%; the 1.22km/15-min walk to Marine Parade MRT is a real liability vs better-connected East Coast peers; and $2.39M sits at the upper edge of the liquid band. Solidly average — a hold, not a standout buy.",
+        "red_flags": [
+          "Appreciation rate built on only 7 txn — not reliable",
+          "1.22km / 15-min walk to nearest MRT",
+          "$2.39M near top of deepest-liquidity band"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15",
+          "Large 1,733sqft family layout",
+          "East Coast lifestyle and deep resale demand"
+        ],
+        "rental_assessment": "East Coast 3BR family rentals are steady; the large size suits family tenants but yield on a $2.39M freehold will be modest.",
+        "appreciation_assessment": "Discount the headline 10% (7 txn) to an RCR-typical ~5%/yr. Freehold East Coast holds value but no specific catalyst to accelerate it.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "RCR D15 baseline — 7-txn URA series too thin to trust"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sunshine-regency-25505542",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "The Morning Glory",
+  "slug": "the-morning-glory",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 2004 3BR at The Morning Glory (D19 Serangoon/Upper Serangoon) for $1.68M / $1,576 psf, with an eye-catching but unreliable 9.42%/yr URA rate built on only 5 transactions. PSF is ~7% above median and the MRT walk is poor (1.12km), so the headline appreciation should be heavily discounted.",
+      "rating_rationale": "The 9.42%/yr URA CAGR is statistically meaningless on 5 txns — do not anchor on it. On fundamentals: freehold is a plus and $1.68M is a liquid 3BR quantum, but PSF $1,576 is ~7% above the $1,471 median (paying up), and 1.12km/14-min to NE12 Serangoon is a weak walk that caps rental and resale appeal. A boutique freehold near Serangoon hub is a fair-but-unexciting hold; nets to Neutral with the inflated rate discounted.",
+      "red_flags": [
+        "9.42%/yr URA rate rests on just 5 transactions — unreliable, discount heavily",
+        "Listed PSF ~7% above the $1,471 URA median",
+        "Poor transit — 1.12km / 14-min walk to NE12 Serangoon MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure at a liquid $1.68M 3BR quantum",
+        "Proximity to Serangoon/NEX regional hub and NE-line catchment"
+      ],
+      "as_of": {
+        "price": 1680000,
+        "psf": 1575.98,
+        "beds": 3,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2004 3BR at The Morning Glory (D19 Serangoon/Upper Serangoon) for $1.68M / $1,576 psf, with an eye-catching but unreliable 9.42%/yr URA rate built on only 5 transactions. PSF is ~7% above median and the MRT walk is poor (1.12km), so the headline appreciation should be heavily discounted.",
+        "rating": "Neutral",
+        "rating_rationale": "The 9.42%/yr URA CAGR is statistically meaningless on 5 txns — do not anchor on it. On fundamentals: freehold is a plus and $1.68M is a liquid 3BR quantum, but PSF $1,576 is ~7% above the $1,471 median (paying up), and 1.12km/14-min to NE12 Serangoon is a weak walk that caps rental and resale appeal. A boutique freehold near Serangoon hub is a fair-but-unexciting hold; nets to Neutral with the inflated rate discounted.",
+        "red_flags": [
+          "9.42%/yr URA rate rests on just 5 transactions — unreliable, discount heavily",
+          "Listed PSF ~7% above the $1,471 URA median",
+          "Poor transit — 1.12km / 14-min walk to NE12 Serangoon MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure at a liquid $1.68M 3BR quantum",
+          "Proximity to Serangoon/NEX regional hub and NE-line catchment"
+        ],
+        "rental_assessment": "Serangoon 3BR rents steadily to families, but the 1.12km MRT walk dampens demand; yield is ordinary at the above-median entry PSF.",
+        "appreciation_assessment": "Ignore the 5-txn 9.42% figure; a realistic freehold D19 rate is mid-single-digit, trimmed for the above-median entry and weak transit access.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Freehold D19 baseline; URA 9.42%/yr ignored as unreliable (only 5 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-morning-glory-500126909",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

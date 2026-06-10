@@ -1,0 +1,61 @@
+{
+  "condo": "The Sunny Legend",
+  "slug": "the-sunny-legend",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2006 freehold 'compact 3BR' in Kembangan (D15), only 840 sqft at $1.43M / $1,701 psf. 840 sqft for a 3BR is unusually tight (likely a converted/dual-key small format), pushing PSF high; with no project URA data and a 720m MRT walk, it's a marginal freehold hold.",
+      "rating_rationale": "$1,701 psf is high for a 20-year-old D15 unit, and 840 sqft is squeezed for a 3BR — a layout-efficiency red flag that narrows resale appeal. No project-specific URA series (regional-baseline), score_1000 493 (below market-typical), 9-min walk to Kembangan MRT. Freehold tenure and East-Coast D15 deep buyer pool keep it from Avoid.",
+      "red_flags": [
+        "840 sqft is very compact for a 3BR — cramped layout limits buyer appeal",
+        "$1,701 psf is rich for a 2006 freehold unit",
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "720m / 9-min walk to Kembangan MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure in lifestyle-driven East Coast D15",
+        "Sub-$1.5M quantum keeps it in the deepest liquidity band",
+        "D15 deep resale buyer pool and durable rental demand"
+      ],
+      "as_of": {
+        "price": 1428888,
+        "psf": 1701.06,
+        "beds": 3,
+        "sqft": 840.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2006 freehold 'compact 3BR' in Kembangan (D15), only 840 sqft at $1.43M / $1,701 psf. 840 sqft for a 3BR is unusually tight (likely a converted/dual-key small format), pushing PSF high; with no project URA data and a 720m MRT walk, it's a marginal freehold hold.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,701 psf is high for a 20-year-old D15 unit, and 840 sqft is squeezed for a 3BR — a layout-efficiency red flag that narrows resale appeal. No project-specific URA series (regional-baseline), score_1000 493 (below market-typical), 9-min walk to Kembangan MRT. Freehold tenure and East-Coast D15 deep buyer pool keep it from Avoid.",
+        "red_flags": [
+          "840 sqft is very compact for a 3BR — cramped layout limits buyer appeal",
+          "$1,701 psf is rich for a 2006 freehold unit",
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "720m / 9-min walk to Kembangan MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure in lifestyle-driven East Coast D15",
+          "Sub-$1.5M quantum keeps it in the deepest liquidity band",
+          "D15 deep resale buyer pool and durable rental demand"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sunny-legend-500088039",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

@@ -56,6 +56,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-sims-500046283",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The algo's -19.5% cohort discount rests on ZERO cohort transactions and only 14 appreciation txns, so the 'value' signal is unreliable; the asking PSF is mid-range at best, on a tiny 48-unit illiquid Geylang freehold block where location and liquidity are the real risks.",
+      "rating_rationale": "Asking $1,526 PSF (721 sqft, $1.1M). The dossier shows psf_cohort_txns=0, so the -19.5% cohort premium is a pure data quirk with no comparable behind it; appreciation rests on only 14 txns (6.79% CAGR, which v3.4 priors discount to ~0 forward power). Verified project pricing: last-12-mo avg ~$1,630 PSF, range $1,261-$1,741, with a comparable 753 sqft 2BR listed at $1,448 PSF. So the asking is below the 12-mo average but above the cheapest current comp — mid-range, not a clear bargain. Structural drags dominate: a single-block 48-unit project (Macly, small developer) with only ~8 transactions in 3 years = very low liquidity and wide spreads, plus Geylang sub-locale that can constrain financing and resale demand. Freehold is not a forward edge. Without a verified discount or catalyst, this is a thin-data, illiquid hold.",
+      "red_flags": [
+        "psf_cohort_txns=0 — the -19.5% cohort discount has no comparable behind it (data quirk)",
+        "Only 14 appreciation txns; very thin signal overall",
+        "Tiny 48-unit single block; only ~8 sales in 3 years = poor liquidity/wide spreads",
+        "Geylang location can drag bank financing and resale demand"
+      ],
+      "catalysts": [
+        "Walkable to Aljunied/Paya Lebar MRT for tenant demand",
+        "Freehold tenure (optionality, not a forward price edge)",
+        "Compact 2BR supports rental yield"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1525.66,
+        "beds": 2,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The algo's -19.5% cohort discount rests on ZERO cohort transactions and only 14 appreciation txns, so the 'value' signal is unreliable; the asking PSF is mid-range at best, on a tiny 48-unit illiquid Geylang freehold block where location and liquidity are the real risks.",
+        "rating_rationale": "Asking $1,526 PSF (721 sqft, $1.1M). The dossier shows psf_cohort_txns=0, so the -19.5% cohort premium is a pure data quirk with no comparable behind it; appreciation rests on only 14 txns (6.79% CAGR, which v3.4 priors discount to ~0 forward power). Verified project pricing: last-12-mo avg ~$1,630 PSF, range $1,261-$1,741, with a comparable 753 sqft 2BR listed at $1,448 PSF. So the asking is below the 12-mo average but above the cheapest current comp — mid-range, not a clear bargain. Structural drags dominate: a single-block 48-unit project (Macly, small developer) with only ~8 transactions in 3 years = very low liquidity and wide spreads, plus Geylang sub-locale that can constrain financing and resale demand. Freehold is not a forward edge. Without a verified discount or catalyst, this is a thin-data, illiquid hold.",
+        "red_flags": [
+          "psf_cohort_txns=0 — the -19.5% cohort discount has no comparable behind it (data quirk)",
+          "Only 14 appreciation txns; very thin signal overall",
+          "Tiny 48-unit single block; only ~8 sales in 3 years = poor liquidity/wide spreads",
+          "Geylang location can drag bank financing and resale demand"
+        ],
+        "catalysts": [
+          "Walkable to Aljunied/Paya Lebar MRT for tenant demand",
+          "Freehold tenure (optionality, not a forward price edge)",
+          "Compact 2BR supports rental yield"
+        ],
+        "appreciation_assessment": "6.79% trailing CAGR is on just 14 txns and carries ~0 forward weight; with no catalyst and an illiquid market, future appreciation is unreliable.",
+        "rental_assessment": "Freehold 2BR near Aljunied/Paya Lebar can lease to couples/sharers, but the tiny project size limits comparables and the Geylang setting may narrow the tenant pool."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-sims-500046283",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

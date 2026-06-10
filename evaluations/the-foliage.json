@@ -1,0 +1,61 @@
+{
+  "condo": "The Foliage",
+  "slug": "the-foliage",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 1,733 sqft 3BR freehold in D05 West Coast/Pasir Panjang (The Foliage, TOP 2008) at $2.768M / $1,597 PSF — slightly below the $1,628.50 URA median and on the efficiency frontier. The low PSF is partly a function of the oversized unit, the $2.768M quantum sits near the liquidity ceiling, and there is no walkable MRT.",
+      "rating_rationale": "The Foliage prices below its own URA median ($1,597 vs $1,628.50) and sits on_frontier, with a respectable ~3.96%/yr resale appreciation — but on a thin 9-transaction base. The 1,733 sqft format makes the headline PSF look cheap while pushing the absolute quantum to $2.768M, right at the point the buyer pool thins. No walkable MRT and a large, niche 3BR layout cap liquidity. Freehold West Coast land and fair PSF balance the high quantum and thin data — a fair Neutral, not a value buy.",
+      "red_flags": [
+        "Oversized 1,733 sqft makes PSF look cheap while quantum hits $2.768M near the liquidity ceiling",
+        "Appreciation from only 9 URA transactions — limited reliability",
+        "No MRT within walking distance",
+        "Large niche 3BR format narrows buyer pool"
+      ],
+      "catalysts": [
+        "Freehold, priced just below its URA median PSF and on the efficiency frontier",
+        "Generous 1,733 sqft suits family own-stay / resale to upgraders",
+        "D05 West Coast / Greater Southern Waterfront long-run regeneration"
+      ],
+      "as_of": {
+        "price": 2768000,
+        "psf": 1597.23,
+        "beds": 3,
+        "sqft": 1733.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,733 sqft 3BR freehold in D05 West Coast/Pasir Panjang (The Foliage, TOP 2008) at $2.768M / $1,597 PSF — slightly below the $1,628.50 URA median and on the efficiency frontier. The low PSF is partly a function of the oversized unit, the $2.768M quantum sits near the liquidity ceiling, and there is no walkable MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "The Foliage prices below its own URA median ($1,597 vs $1,628.50) and sits on_frontier, with a respectable ~3.96%/yr resale appreciation — but on a thin 9-transaction base. The 1,733 sqft format makes the headline PSF look cheap while pushing the absolute quantum to $2.768M, right at the point the buyer pool thins. No walkable MRT and a large, niche 3BR layout cap liquidity. Freehold West Coast land and fair PSF balance the high quantum and thin data — a fair Neutral, not a value buy.",
+        "red_flags": [
+          "Oversized 1,733 sqft makes PSF look cheap while quantum hits $2.768M near the liquidity ceiling",
+          "Appreciation from only 9 URA transactions — limited reliability",
+          "No MRT within walking distance",
+          "Large niche 3BR format narrows buyer pool"
+        ],
+        "catalysts": [
+          "Freehold, priced just below its URA median PSF and on the efficiency frontier",
+          "Generous 1,733 sqft suits family own-stay / resale to upgraders",
+          "D05 West Coast / Greater Southern Waterfront long-run regeneration"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-foliage-500148601",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

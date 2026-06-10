@@ -1,0 +1,59 @@
+{
+  "condo": "Myra",
+  "slug": "myra",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Newly-completed (2024) freehold 1BR at Myra, D13, 150m from Potong Pasir MRT, at $1.08M / $2,278 PSF — actually below the $2,425 URA median for the project. Best-in-class MRT proximity and a fresh FH building, but it is a small 474sqft shoebox and the appreciation rate carries new-launch bias.",
+      "rating_rationale": "Asking $2,278 PSF is ~6% below the project's $2,425 URA median (69 transactions — a solid series), so it is priced attractively for Myra. The 2.6%/yr URA rate is flagged has_new_launch_bias=true, so don't trust it as resale appreciation. Brand-new FH directly beside Potong Pasir MRT is a genuine strength, but a 474sqft 1BR is the narrowest segment and Myra is a small development, capping liquidity. Net Neutral.",
+      "red_flags": [
+        "474sqft 1BR — niche shoebox segment",
+        "Appreciation rate carries new-launch bias (true) — not reliable as forward resale rate",
+        "Small development limits liquidity depth"
+      ],
+      "catalysts": [
+        "150m to Potong Pasir MRT (NE10) — among the closest in the batch",
+        "Brand-new (2024) freehold; priced ~6% below project URA median"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 2278.48,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Newly-completed (2024) freehold 1BR at Myra, D13, 150m from Potong Pasir MRT, at $1.08M / $2,278 PSF — actually below the $2,425 URA median for the project. Best-in-class MRT proximity and a fresh FH building, but it is a small 474sqft shoebox and the appreciation rate carries new-launch bias.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $2,278 PSF is ~6% below the project's $2,425 URA median (69 transactions — a solid series), so it is priced attractively for Myra. The 2.6%/yr URA rate is flagged has_new_launch_bias=true, so don't trust it as resale appreciation. Brand-new FH directly beside Potong Pasir MRT is a genuine strength, but a 474sqft 1BR is the narrowest segment and Myra is a small development, capping liquidity. Net Neutral.",
+        "red_flags": [
+          "474sqft 1BR — niche shoebox segment",
+          "Appreciation rate carries new-launch bias (true) — not reliable as forward resale rate",
+          "Small development limits liquidity depth"
+        ],
+        "catalysts": [
+          "150m to Potong Pasir MRT (NE10) — among the closest in the batch",
+          "Brand-new (2024) freehold; priced ~6% below project URA median"
+        ],
+        "rental_assessment": "A new FH shoebox 150m from MRT is a strong rental proposition for singles/expats; yield on $1.08M should be competitive among D13 1BRs.",
+        "appreciation_assessment": "New-launch-biased 2.6% rate is unreliable; expect the unit to track D13 FH gradually as the project matures. The sub-median asking gives some cushion.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-myra-60092761",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Splendour at Still Road",
+  "slug": "splendour-at-still-road",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,200 sqft freehold 3BR at Splendour at Still Road (D15, Eunos) at $2.15M / $1,792 PSF, 620m from Eunos MRT. A small/older freehold East-Coast block with no built year and no URA appreciation or txn data to verify the investment case.",
+      "rating_rationale": "$2.15M for a 1,200 sqft freehold 3BR in D15 is a liquid quantum in a deep-buyer-pool district with Eunos EWL MRT 620m away — the location floor is sound. But with no built year, no URA txn count, and no appreciation data, this is a small boutique block whose growth and liquidity are unverifiable; $1,792 PSF is mid-range for D15 freehold so there's no obvious discount to compensate. Ordinary, data-light hold.",
+      "red_flags": [
+        "No built year and no URA appreciation/txn data — unverifiable",
+        "Small boutique development — limited resale liquidity",
+        "$1,792 PSF offers no clear discount to D15 freehold norm"
+      ],
+      "catalysts": [
+        "Freehold in D15 East Coast — deep buyer pool, lifestyle district",
+        "620m (7 min) to Eunos EWL MRT",
+        "Liquid $2.15M family quantum with 1,200 sqft 3BR layout"
+      ],
+      "as_of": {
+        "price": 2150000,
+        "psf": 1791.67,
+        "beds": 3,
+        "sqft": 1200.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,200 sqft freehold 3BR at Splendour at Still Road (D15, Eunos) at $2.15M / $1,792 PSF, 620m from Eunos MRT. A small/older freehold East-Coast block with no built year and no URA appreciation or txn data to verify the investment case.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.15M for a 1,200 sqft freehold 3BR in D15 is a liquid quantum in a deep-buyer-pool district with Eunos EWL MRT 620m away — the location floor is sound. But with no built year, no URA txn count, and no appreciation data, this is a small boutique block whose growth and liquidity are unverifiable; $1,792 PSF is mid-range for D15 freehold so there's no obvious discount to compensate. Ordinary, data-light hold.",
+        "red_flags": [
+          "No built year and no URA appreciation/txn data — unverifiable",
+          "Small boutique development — limited resale liquidity",
+          "$1,792 PSF offers no clear discount to D15 freehold norm"
+        ],
+        "catalysts": [
+          "Freehold in D15 East Coast — deep buyer pool, lifestyle district",
+          "620m (7 min) to Eunos EWL MRT",
+          "Liquid $2.15M family quantum with 1,200 sqft 3BR layout"
+        ],
+        "rental_assessment": "Freehold 3BR near Eunos/East Coast draws families and expats; tenant demand in D15 is reliable, yield typical for the band.",
+        "appreciation_assessment": "No URA data to support a thesis; freehold D15 is a floor but unproven trend keeps this neutral rather than a buy.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-splendour-at-still-road-500128938",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "Casuarina Cove",
+  "slug": "casuarina-cove",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A large (1625 sqft) 3BR in a 160-unit 1996 condo at Tanjong Rhu, 260m from the new Tanjong Rhu TEL station. The lease (99yr from 1993, ~67yr remaining) is the key drag — it's crossing into the sub-70yr zone where financing tightens and depreciation accelerates — and the $1660 asking PSF is at the top of the recent $1500-1677 transacted range.",
+      "rating_rationale": "The 260m walk to Tanjong Rhu MRT (TEL) and the established East Coast/Kallang Basin location are genuine strengths, and URA shows 4.1%/yr on a usable 26 txns. But ~67 years of lease remaining is a structural headwind (financing/CPF limits begin tightening under 60yr and buyers price the decay now), the development is old (1996) and only 160 units, and at $1660 PSF / $2.698M you're paying the top of the range with no value cushion. Not en-bloc marked, so no near-term redevelopment catalyst. Lowest score in the batch (357) reflects these drags. Location saves it from Avoid.",
+      "red_flags": [
+        "~67yr remaining lease (99yr from 1993) — approaching the sub-70yr financing/depreciation threshold",
+        "Old 1996 development, only 160 units — limited facilities and shallow liquidity",
+        "Asking $1660 PSF is at the top of the recent $1500-1677 transacted range — no discount",
+        "$2.698M sits above the liquid sweet spot; lowest technical score in batch (357)"
+      ],
+      "catalysts": [
+        "260m to Tanjong Rhu MRT (Thomson-East Coast Line) — strong, recently opened connectivity",
+        "Tanjong Rhu / Kallang Basin waterfront precinct and Greater Southern Waterfront over the long run",
+        "Large 1625 sqft layout appeals to families wanting space in a prime-edge location"
+      ],
+      "as_of": {
+        "price": 2698000,
+        "psf": 1660.31,
+        "beds": 3,
+        "sqft": 1625.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large (1625 sqft) 3BR in a 160-unit 1996 condo at Tanjong Rhu, 260m from the new Tanjong Rhu TEL station. The lease (99yr from 1993, ~67yr remaining) is the key drag — it's crossing into the sub-70yr zone where financing tightens and depreciation accelerates — and the $1660 asking PSF is at the top of the recent $1500-1677 transacted range.",
+        "rating": "Neutral",
+        "rating_rationale": "The 260m walk to Tanjong Rhu MRT (TEL) and the established East Coast/Kallang Basin location are genuine strengths, and URA shows 4.1%/yr on a usable 26 txns. But ~67 years of lease remaining is a structural headwind (financing/CPF limits begin tightening under 60yr and buyers price the decay now), the development is old (1996) and only 160 units, and at $1660 PSF / $2.698M you're paying the top of the range with no value cushion. Not en-bloc marked, so no near-term redevelopment catalyst. Lowest score in the batch (357) reflects these drags. Location saves it from Avoid.",
+        "red_flags": [
+          "~67yr remaining lease (99yr from 1993) — approaching the sub-70yr financing/depreciation threshold",
+          "Old 1996 development, only 160 units — limited facilities and shallow liquidity",
+          "Asking $1660 PSF is at the top of the recent $1500-1677 transacted range — no discount",
+          "$2.698M sits above the liquid sweet spot; lowest technical score in batch (357)"
+        ],
+        "catalysts": [
+          "260m to Tanjong Rhu MRT (Thomson-East Coast Line) — strong, recently opened connectivity",
+          "Tanjong Rhu / Kallang Basin waterfront precinct and Greater Southern Waterfront over the long run",
+          "Large 1625 sqft layout appeals to families wanting space in a prime-edge location"
+        ],
+        "rental_assessment": "Tanjong Rhu rents well to expats/families; a large old unit rents at a discount to newer stock but the MRT proximity helps. Gross yield ~3% at this quantum.",
+        "appreciation_assessment": "URA 4.1%/yr on 26 txns is credible, but the aging lease will increasingly cap appreciation; expect the rate to fade unless an en-bloc materializes (not currently marked).",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "URA resale 4.1%/yr (26 txns) discounted for accelerating lease decay (~67yr remaining)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casuarina-cove-500157794",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

@@ -71,34 +71,42 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1512  # v3.3 recalibration: mean raw MMR of 6,338-listing DB = 1512.1
-MMR_NORM_SCALE = 29     # v3.3 recalibration: score_1000 mean≈502, sd≈167, tiers stable
+MMR_NORM_CENTER = 1507  # v3.4 recalibration: mean raw MMR of 6,338-listing DB = 1507.0
+MMR_NORM_SCALE = 29     # v3.4: score_1000 mean≈502, sd≈172, tiers (450/650) stable
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
 SCORE1000_TIER2_MIN = 450  # Consider
 
-# --- v3.3 component slopes (backtest-calibrated) ------------------------------
-# Point-in-time URA backtest (backtest.py; 8 split dates × 2 forward windows,
-# Jun 2026) measured each as-of-T feature against realized forward resale-PSF
-# appreciation. Findings (Spearman ρ, mean-reversion-artifact corrected):
-#   trailing appreciation                    ρ≈+0.06  → ~0 forward predictive power
-#   momentum                                 ρ≈-0.03  → ~0 / mildly contrarian
-#   relative value (cheap vs district peers) ρ≈-0.24  → STRONGEST, correct sign
-# v3.3 rebalances away from appreciation/momentum toward value. Prior effective
-# values were appreciation 7.5/pp, momentum 8.0, relvalue 0.4. Caveat: a single
-# market regime (2021-26) — this is de-emphasis, not removal; appreciation is
-# still a desirability proxy the AI reads in research.
+# --- v3.4 component slopes (backtest-calibrated) ------------------------------
+# Point-in-time URA backtest (backtest.py / backtest_ext.py; split-sample,
+# mean-reversion-corrected, Jun 2026) measured each as-of-T feature against
+# realized forward resale-PSF appreciation. Findings (Spearman ρ univariate /
+# std_β multivariate):
+#   trailing appreciation        ρ≈0       → ~0 forward predictive power
+#   momentum                     ρ≈-0.03   → flat-to-contrarian (NOT a positive signal)
+#   cheap vs district peers      ρ≈-0.26 / std_β -0.13  → STRONGEST region-robust signal
+#   region (CCR<RCR<OCR forward)  std_β -0.19           → strongest overall, but regime-bound
+#   absolute log-PSF             ρ≈-0.26 BUT std_β -0.04 once region is controlled
+#                                → the "absolute price" signal is mostly REGION in disguise;
+#                                  do NOT add a separate absolute-price component (it would
+#                                  double-count region). Region enters via the baselines below.
+# v3.4 (this pass): momentum slope → 0 (was 3.0; ρ≈0/contrarian, wrong sign to reward);
+# relvalue cap raised 20→28 so the strongest region-robust signal is no longer throttled
+# in its high-conviction (deep-discount) tail. Appreciation slope kept low at 4.0.
+# Caveat: single bull regime (2021-26) — magnitudes are de-emphasis, not laws.
 MMR_APPRECIATION_SLOPE = 4.0       # pts per %-pt of annual appreciation above center
 MMR_APPRECIATION_CENTER_PCT = 4.0  # %/yr treated as neutral
-MMR_MOMENTUM_WEIGHT = 3.0          # pts per unit of momentum (-1..+1)
-MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district median (near-zero slope)
+MMR_MOMENTUM_WEIGHT = 0.0          # v3.4: 0 — backtest ρ≈-0.03 (flat/contrarian); surfaced as meta only
+MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district median
 # Relative value is a heuristic (age slope × district-peer median) with heavy
 # tails — a single bad peer-median estimate or a mis-tagged sqft can imply a
 # +200% "premium". So the contribution SATURATES (tanh) at ±CAP instead of
 # scaling linearly: full 0.8 slope near zero, but no single value reading can
 # dominate the score or blow up on an artifact. Matches the tanh idiom used by
-# mrt/txn_volume/dev_size.
-MMR_RELVALUE_CAP = 20.0            # max |pts| from age-adjusted relative value
+# mrt/txn_volume/dev_size. v3.4: cap raised 20→28 — this is the strongest
+# region-robust forward predictor, and the old cap clipped its deep-discount tail
+# (a -30% discount was throttled ~30%). Peer-count damping (mmr.py) also softened.
+MMR_RELVALUE_CAP = 28.0            # max |pts| from age-adjusted relative value
 
 # ============================================================================
 # UNIT-SIZE BANDS — like-for-like PSF comparison within a project
@@ -193,7 +201,13 @@ def size_band_key(sqft) -> "str | None":
 # Rule of thumb: each year of age discounts PSF vs a comparable new launch by
 # roughly $50 ("every year adds $50 PSF"). Scaled by region PSF levels;
 # freehold holds value longer. Used by scoring/relative_value.py.
-AGE_PSF_SLOPE_BY_REGION = {"CCR": 60.0, "RCR": 50.0, "OCR": 40.0}  # $/psf per year of age
+# v3.4: recalibrated to the hedonic estimate. backtest_ext.py's leasehold hedonic
+# (log-PSF ~ floor + log_sqft + age + region) measured age decay at ~1.6%/yr — about
+# HALF the old $40-60 folk-rule constants, which over-discounted old leaseholds and
+# made them look spuriously "cheap for age" (inflating the age_value signal v3.4
+# leans on). Set to ~1.6% of each region's median resale PSF (panel medians ≈
+# CCR 2117 / RCR 1708 / OCR 1409 → ~34 / 27 / 23 $/psf/yr).
+AGE_PSF_SLOPE_BY_REGION = {"CCR": 34.0, "RCR": 27.0, "OCR": 23.0}  # $/psf per year of age (~1.6%/yr)
 FREEHOLD_SLOPE_FACTOR = 0.6  # freehold depreciates slower
 
 # Expected score distribution
@@ -252,14 +266,26 @@ DATA_FRESHNESS_THRESHOLDS_DAYS = {
 # - Resale-to-resale 5yr returns: ~14.9% (genuine market growth)
 # New launches command a 10-15% PSF premium that decays over time.
 
-# Regional baseline appreciation rates (URA 2024 full-year index)
-# Used as the "floor" when discounting new-launch inflated appreciation
+# Regional baseline appreciation rates.
+# Used as (a) the appreciation FALLBACK when a project has no URA history and
+# (b) the FLOOR when discounting new-launch inflated appreciation.
+# v3.4 CORRECTION: the old values (CCR 4.5 / RCR 5.8 / OCR 3.7, lifted from a
+# trailing 2024 index) were INVERTED vs realized forward returns. backtest_ext.py
+# measured realized 2024-26 forward resale-PSF returns at CCR +0.7%/yr, RCR +3.5%,
+# OCR +4.0% (OCR > RCR >> CCR) — and region is the single strongest forward signal
+# in the panel (std_β -0.19). The old baselines therefore propped up CCR (the worst
+# forward performer) and discounted OCR (the best), wrong-signing every fallback and
+# new-launch-floor that used them.
+# We DE-INVERT but deliberately COMPRESS toward the ~3.5% market mean rather than
+# adopt the raw realized spread: region predictiveness is strong but regime-bound
+# (2021-26 was one bull cycle; CCR can mean-revert), so we remove the wrong bet
+# without making the opposite over-fit bet. Mild OCR>RCR>CCR tilt only.
 REGIONAL_APPRECIATION_BASELINES = {
-    "CCR": 0.045,  # 4.5%/yr - Core Central Region
-    "RCR": 0.058,  # 5.8%/yr - Rest of Central Region
-    "OCR": 0.037,  # 3.7%/yr - Outside Central Region
+    "CCR": 0.030,  # 3.0%/yr - Core Central (realized fwd ~0.7%; compressed up, regime caution)
+    "RCR": 0.037,  # 3.7%/yr - Rest of Central (realized fwd ~3.5%)
+    "OCR": 0.040,  # 4.0%/yr - Outside Central (realized fwd ~4.0%, best forward performer)
 }
-DEFAULT_REGIONAL_APPRECIATION = 0.04  # 4% fallback
+DEFAULT_REGIONAL_APPRECIATION = 0.035  # ~market median forward (was 0.04)
 
 # New launch maturity discount curve
 # Maps property age (years since TOP) to the fraction of "excess"

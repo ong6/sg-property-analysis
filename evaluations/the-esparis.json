@@ -1,0 +1,61 @@
+{
+  "condo": "The Esparis",
+  "slug": "the-esparis",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "99yr leasehold 1,184sqft 4BR at The Esparis, D18 Pasir Ris, at $1.395M / $1,178 PSF — and crucially just 240m from the upcoming CR4 Pasir Ris East MRT (Cross Island Line). Affordable family 4BR with a concrete rail catalyst, though no URA data and a 99yr/2006 lease are the constraints.",
+      "rating_rationale": "The standout fact is 240m to CR4 Pasir Ris East on the Cross Island Line (~2030) — within the 500m sweet spot that gets the strongest uplift, on a unit bought before the station opens. A 4BR at $1.395M / $1,178 PSF is a low-entry family unit with deep HDB-upgrader demand in Pasir Ris/Tampines. Drawbacks: no URA series to verify current value, 4BR is a narrower tenant segment, and 99yr LH from 2006. The forward CRL catalyst at a low price tips this to a Buy.",
+      "red_flags": [
+        "No URA appreciation/txn/median data to verify current value",
+        "99yr leasehold from 2006 — lease decay over the hold",
+        "4BR is a family-only, narrower tenant pool"
+      ],
+      "catalysts": [
+        "240m to upcoming CR4 Pasir Ris East MRT (Cross Island Line, ~2030) — within 500m uplift zone",
+        "Low $1.395M entry for a 4BR — strong HDB-upgrader demand in D18",
+        "Tampines Regional Centre / Pasir Ris precinct growth"
+      ],
+      "as_of": {
+        "price": 1394999,
+        "psf": 1178.21,
+        "beds": 4,
+        "sqft": 1184.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99yr leasehold 1,184sqft 4BR at The Esparis, D18 Pasir Ris, at $1.395M / $1,178 PSF — and crucially just 240m from the upcoming CR4 Pasir Ris East MRT (Cross Island Line). Affordable family 4BR with a concrete rail catalyst, though no URA data and a 99yr/2006 lease are the constraints.",
+        "rating": "Buy",
+        "rating_rationale": "The standout fact is 240m to CR4 Pasir Ris East on the Cross Island Line (~2030) — within the 500m sweet spot that gets the strongest uplift, on a unit bought before the station opens. A 4BR at $1.395M / $1,178 PSF is a low-entry family unit with deep HDB-upgrader demand in Pasir Ris/Tampines. Drawbacks: no URA series to verify current value, 4BR is a narrower tenant segment, and 99yr LH from 2006. The forward CRL catalyst at a low price tips this to a Buy.",
+        "red_flags": [
+          "No URA appreciation/txn/median data to verify current value",
+          "99yr leasehold from 2006 — lease decay over the hold",
+          "4BR is a family-only, narrower tenant pool"
+        ],
+        "catalysts": [
+          "240m to upcoming CR4 Pasir Ris East MRT (Cross Island Line, ~2030) — within 500m uplift zone",
+          "Low $1.395M entry for a 4BR — strong HDB-upgrader demand in D18",
+          "Tampines Regional Centre / Pasir Ris precinct growth"
+        ],
+        "rental_assessment": "Once CRL opens, proximity drives rental demand; for now a 4BR in Pasir Ris rents to families at modest yield.",
+        "appreciation_assessment": "No URA series, but a sub-$1.4M LH unit 240m from a future CRL station is well-placed for pre-opening uplift over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-esparis-500129466",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

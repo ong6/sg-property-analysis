@@ -1,0 +1,63 @@
+{
+  "condo": "Vista Residences",
+  "slug": "vista-residences",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1BR (2013) in D12 Balestier/Toa Payoh fringe asking $1,935 PSF — ~7% below the $2,072 median, with a respectable 4.36%/yr URA rate on 39 transactions. Decent value and city-fringe location, but a low 941 Elo (poor arena record) and 860m MRT walk keep it at Neutral.",
+      "rating_rationale": "Asking $1,935 vs $2,071.5 median = -7%, and 4.36%/yr appreciation on a usable 39-txn series is the better growth signal among the 1BRs here. Freehold helps. But the 106-195 arena record / 941 Elo is the weakest in the batch — peers consistently beat it — and 860m (10 min) to the future TE10 Mount Pleasant is a soft walk. Balestier is a mature, somewhat tired pocket. Fair value, unexciting; Neutral.",
+      "red_flags": [
+        "weakest arena record in batch (106-195, Elo 941)",
+        "860m to MRT — outside strong uplift radius",
+        "1BR niche resale pool",
+        "39-txn series — moderate reliability"
+      ],
+      "catalysts": [
+        "freehold, priced ~7% below URA median",
+        "4.36%/yr appreciation — healthiest of the batch 1BRs",
+        "city-fringe Balestier near Novena medical hub for rental"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1934.98,
+        "beds": 1,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1BR (2013) in D12 Balestier/Toa Payoh fringe asking $1,935 PSF — ~7% below the $2,072 median, with a respectable 4.36%/yr URA rate on 39 transactions. Decent value and city-fringe location, but a low 941 Elo (poor arena record) and 860m MRT walk keep it at Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $1,935 vs $2,071.5 median = -7%, and 4.36%/yr appreciation on a usable 39-txn series is the better growth signal among the 1BRs here. Freehold helps. But the 106-195 arena record / 941 Elo is the weakest in the batch — peers consistently beat it — and 860m (10 min) to the future TE10 Mount Pleasant is a soft walk. Balestier is a mature, somewhat tired pocket. Fair value, unexciting; Neutral.",
+        "red_flags": [
+          "weakest arena record in batch (106-195, Elo 941)",
+          "860m to MRT — outside strong uplift radius",
+          "1BR niche resale pool",
+          "39-txn series — moderate reliability"
+        ],
+        "catalysts": [
+          "freehold, priced ~7% below URA median",
+          "4.36%/yr appreciation — healthiest of the batch 1BRs",
+          "city-fringe Balestier near Novena medical hub for rental"
+        ],
+        "rental_assessment": "Balestier/Novena fringe draws medical-sector and city tenants; 1BR lets steadily, supporting yield.",
+        "appreciation_assessment": "4.36%/yr on 39 transactions is the most credible growth figure among the batch 1BRs; entry below median adds a small margin.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vista-residences-500126430",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

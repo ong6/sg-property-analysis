@@ -1,0 +1,67 @@
+{
+  "condo": "Thomson View Residence",
+  "slug": "thomson-view-residence",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "This is Thomson Reserve — the ~1,268-unit UOL/SingLand/CapitaLand en-bloc redevelopment on a fresh 99yr lease, 320m from Upper Thomson MRT and beside MacRitchie Reservoir (TOP ~2032). Strong developer, mega-scale liquid project, top-tier location. The $2.6M / $2000 PSF listing is below the projected $2,100-2,450 PSF launch range, so the headline price is likely an early-bird/teaser rather than a firm transactable figure.",
+      "rating_rationale": "Best fundamentals in the batch: a 1,268-unit project (deep future resale liquidity), tier-1 developer consortium (UOL/SingLand/CapitaLand), fresh 99yr lease, 320m walk to Upper Thomson MRT (TEL), and rare nature frontage at MacRitchie. On frontier (Elo 1267). If a 4BR is genuinely available near $2000-2100 PSF that's attractive vs the $2,100-2,450 projected launch; even at projected pricing the location and scale support solid medium-term appreciation. The $2.6M quantum is at the upper edge of liquid but a large branded project mitigates exit risk. Main caveat: the listed price likely understates the real launch price.",
+      "red_flags": [
+        "Listed $2000 PSF is below the projected $2,100-2,450 launch range — headline price may be a teaser, verify actual pricing",
+        "New launch with TOP ~2032 — long capital lock-up before completion and no resale data",
+        "$2.6M is at the upper edge of the liquid band",
+        "99yr lease (fresh) — not freehold, though full new lease term"
+      ],
+      "catalysts": [
+        "Tier-1 developer consortium (UOL / SingLand / CapitaLand) — strong build quality and branding",
+        "~1,268 units — large, liquid development with full facilities",
+        "320m to Upper Thomson MRT (Thomson-East Coast Line) and direct link to Thomson Plaza",
+        "Beside MacRitchie Reservoir — rare nature frontage with durable own-stay/expat demand"
+      ],
+      "as_of": {
+        "price": 2599999,
+        "psf": 2000.0,
+        "beds": 4,
+        "sqft": 1300.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "This is Thomson Reserve — the ~1,268-unit UOL/SingLand/CapitaLand en-bloc redevelopment on a fresh 99yr lease, 320m from Upper Thomson MRT and beside MacRitchie Reservoir (TOP ~2032). Strong developer, mega-scale liquid project, top-tier location. The $2.6M / $2000 PSF listing is below the projected $2,100-2,450 PSF launch range, so the headline price is likely an early-bird/teaser rather than a firm transactable figure.",
+        "rating": "Buy",
+        "rating_rationale": "Best fundamentals in the batch: a 1,268-unit project (deep future resale liquidity), tier-1 developer consortium (UOL/SingLand/CapitaLand), fresh 99yr lease, 320m walk to Upper Thomson MRT (TEL), and rare nature frontage at MacRitchie. On frontier (Elo 1267). If a 4BR is genuinely available near $2000-2100 PSF that's attractive vs the $2,100-2,450 projected launch; even at projected pricing the location and scale support solid medium-term appreciation. The $2.6M quantum is at the upper edge of liquid but a large branded project mitigates exit risk. Main caveat: the listed price likely understates the real launch price.",
+        "red_flags": [
+          "Listed $2000 PSF is below the projected $2,100-2,450 launch range — headline price may be a teaser, verify actual pricing",
+          "New launch with TOP ~2032 — long capital lock-up before completion and no resale data",
+          "$2.6M is at the upper edge of the liquid band",
+          "99yr lease (fresh) — not freehold, though full new lease term"
+        ],
+        "catalysts": [
+          "Tier-1 developer consortium (UOL / SingLand / CapitaLand) — strong build quality and branding",
+          "~1,268 units — large, liquid development with full facilities",
+          "320m to Upper Thomson MRT (Thomson-East Coast Line) and direct link to Thomson Plaza",
+          "Beside MacRitchie Reservoir — rare nature frontage with durable own-stay/expat demand"
+        ],
+        "rental_assessment": "Upper Thomson is a strong rental pocket (TEL, nature, schools); a large branded project rents readily to families and expats, with a deep tenant pool on completion. Gross yield ~3% at this quantum.",
+        "appreciation_assessment": "No resale series yet, but the combination of top developer, MRT-doorstep, nature frontage and mega-project liquidity supports above-OCR appreciation over a 5-7yr hold; model ~5%, with the usual new-launch caveat that entry pricing is full.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "Thomson Reserve (verified developer/location) — new launch, no resale URA data; estimate from project quality"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-view-residence-500010908",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

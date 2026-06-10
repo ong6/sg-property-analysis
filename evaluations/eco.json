@@ -1,0 +1,111 @@
+{
+  "condo": "eCO",
+  "slug": "eco",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 689 sqft 1BR at eCO (Bedok South) for $915K / $1,328 PSF — a steep ~15% below the $1,568 URA median, on a very reliable 191-transaction series showing +3.89%/yr. Low quantum and deep data make this an attractive, defensible 1BR entry despite the 790m MRT walk.",
+      "rating_rationale": "PSF $1,328 vs $1,568 median is a genuine ~15% discount, and 689 sqft is a normal 1BR (no size distortion). The +3.89%/yr CAGR is backed by 191 URA txns — one of the most statistically reliable reads in the batch. eCO is a large mixed-use development (good liquidity/amenities) by CapitaLand/Mitsubishi-class pedigree. 99yr from 2017 leaves a long lease. Tanah Merah MRT 790m is the main minor knock.",
+      "red_flags": [
+        "Tanah Merah MRT 790m (9-min walk) — not doorstep",
+        "1BR is niche for own-stay, though liquid as an investment unit"
+      ],
+      "catalysts": [
+        "Large mixed-use eCO development — strong liquidity and on-site retail/F&B",
+        "TEL/Bayshore precinct and East Coast transformation lift the broader D16 corridor",
+        "Below-median PSF on a deep 191-txn series leaves upside room"
+      ],
+      "as_of": {
+        "price": 915000,
+        "psf": 1328.01,
+        "beds": 1,
+        "sqft": 689.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 689 sqft 1BR at eCO (Bedok South) for $915K / $1,328 PSF — a steep ~15% below the $1,568 URA median, on a very reliable 191-transaction series showing +3.89%/yr. Low quantum and deep data make this an attractive, defensible 1BR entry despite the 790m MRT walk.",
+        "rating": "Buy",
+        "rating_rationale": "PSF $1,328 vs $1,568 median is a genuine ~15% discount, and 689 sqft is a normal 1BR (no size distortion). The +3.89%/yr CAGR is backed by 191 URA txns — one of the most statistically reliable reads in the batch. eCO is a large mixed-use development (good liquidity/amenities) by CapitaLand/Mitsubishi-class pedigree. 99yr from 2017 leaves a long lease. Tanah Merah MRT 790m is the main minor knock.",
+        "red_flags": [
+          "Tanah Merah MRT 790m (9-min walk) — not doorstep",
+          "1BR is niche for own-stay, though liquid as an investment unit"
+        ],
+        "catalysts": [
+          "Large mixed-use eCO development — strong liquidity and on-site retail/F&B",
+          "TEL/Bayshore precinct and East Coast transformation lift the broader D16 corridor",
+          "Below-median PSF on a deep 191-txn series leaves upside room"
+        ],
+        "rental_assessment": "Mixed-use convenience and East-side accessibility support steady 1BR tenant demand; low $915K quantum yields an attractive gross return.",
+        "appreciation_assessment": "Highly reliable URA data (+3.89%/yr, 191 txns) plus a clear below-median entry gives a dependable mid-single-digit path; D16 TEL/Bayshore catalysts add modest tailwind.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eco-24001304",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "99yr 2017 1BR directly beside Tanah Merah MRT (D16, OCR/RCR border). Asking $1,328 PSF is below eCO's 12-month transaction range of $1,379-$1,770 PSF (avg ~$1,557) — and 1BRs normally trade at a PSF premium to the large-unit-heavy average, so this is genuinely cheap. Supported by deep data (191 appreciation txns, 20-unit cohort).",
+      "rating_rationale": "The algo's -24.4% age-adj and -9.3% cohort cheapness is corroborated: eCO's recorded 12-month range is $1,379-$1,770 PSF (avg ~$1,505-1,557), so this 689 sqft 1BR at $1,328 PSF is below the entire range, and since small units usually price ABOVE the blended average, the discount is real rather than a size-mix artifact. Crucially, the signal sits on 191 appreciation transactions and a 20-unit cohort — deep enough to trust, unlike the thin-cohort names in this batch. Location is a standout: directly beside Tanah Merah MRT (East-West Line, interchange to Changi/Expo branch), in a large 748-unit project with strong liquidity (30 profitable resales in the past year). OCR-belt forward prior is favourable. Confidence is medium rather than high because I could not pin an exact same-size 1BR comparable, but the project-level evidence is consistent.",
+      "red_flags": [
+        "No exact same-size 1BR transaction isolated; discount inferred from project-wide range plus size-PSF logic",
+        "99yr leasehold (2012 commencement) so lease decay clock is running"
+      ],
+      "catalysts": [
+        "Directly beside Tanah Merah MRT (East-West Line interchange) — top-tier connectivity for the east",
+        "Large 748-unit development with deep resale/rental liquidity and consistent profitable exits",
+        "Verified pricing below the project's full 12-month PSF range provides a value cushion"
+      ],
+      "as_of": {
+        "price": 915000,
+        "psf": 1328.01,
+        "beds": 1,
+        "sqft": 689
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "99yr 2017 1BR directly beside Tanah Merah MRT (D16, OCR/RCR border). Asking $1,328 PSF is below eCO's 12-month transaction range of $1,379-$1,770 PSF (avg ~$1,557) — and 1BRs normally trade at a PSF premium to the large-unit-heavy average, so this is genuinely cheap. Supported by deep data (191 appreciation txns, 20-unit cohort).",
+        "rating_rationale": "The algo's -24.4% age-adj and -9.3% cohort cheapness is corroborated: eCO's recorded 12-month range is $1,379-$1,770 PSF (avg ~$1,505-1,557), so this 689 sqft 1BR at $1,328 PSF is below the entire range, and since small units usually price ABOVE the blended average, the discount is real rather than a size-mix artifact. Crucially, the signal sits on 191 appreciation transactions and a 20-unit cohort — deep enough to trust, unlike the thin-cohort names in this batch. Location is a standout: directly beside Tanah Merah MRT (East-West Line, interchange to Changi/Expo branch), in a large 748-unit project with strong liquidity (30 profitable resales in the past year). OCR-belt forward prior is favourable. Confidence is medium rather than high because I could not pin an exact same-size 1BR comparable, but the project-level evidence is consistent.",
+        "red_flags": [
+          "No exact same-size 1BR transaction isolated; discount inferred from project-wide range plus size-PSF logic",
+          "99yr leasehold (2012 commencement) so lease decay clock is running"
+        ],
+        "catalysts": [
+          "Directly beside Tanah Merah MRT (East-West Line interchange) — top-tier connectivity for the east",
+          "Large 748-unit development with deep resale/rental liquidity and consistent profitable exits",
+          "Verified pricing below the project's full 12-month PSF range provides a value cushion"
+        ],
+        "appreciation_assessment": "Trailing 3.89% CAGR (191 txns) is well-supported but used only for context; the forward case rests on verified relative value plus the durable MRT-adjacency, the more robust signals.",
+        "rental_assessment": "MRT-doorstep 1BR in the east rents readily (eCO rents ~$3,200-5,500, ~$4.9 PSF); supports a healthy ~3% gross yield and quick tenant turnover."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eco-24001304",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

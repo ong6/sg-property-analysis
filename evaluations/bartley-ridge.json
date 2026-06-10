@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-ridge-500089978",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Verified-cheap 1BR ($1,652 psf vs ~$1,976 psf 12mo avg) beside Bartley MRT in RCR — genuine value with a real connectivity catalyst, tempered by mixed build quality.",
+      "rating_rationale": "Asking $925K / $1,652 psf for a 560 sqft 1BR sits at the bottom of the project range ($1,652-$2,497) and well below the 12mo avg of ~$1,976 psf (six-month avg ~$1,868), so the -14.7% age-adj and -9.2% vs same-size cohort (22 cohort txns, 250 appreciation txns — solid depth) are corroborated by real transactions, not a quirk. Catalyst is concrete: walkable to Bartley MRT (Circle Line), one of the better-connected nodes; D13 is RCR (~+3.5% realized forward in the v3.4 priors, favorable). Tempered to medium confidence and Buy (not Strong Buy) by mixed build-quality reviews (resident reports of wall defects, stained WCs, scratched flooring) and the usual shoebox exit-liquidity dependence on investor demand.",
+      "red_flags": [
+        "Mixed build-quality reviews — resident defect complaints (walls, WCs, flooring)",
+        "Shoebox 1BR exit depends on investor/tenant pool",
+        "Leasehold from 2012 — ~85yrs left"
+      ],
+      "catalysts": [
+        "Walkable to Bartley MRT (Circle Line) — strong connectivity",
+        "Cheapest 1BR band in project; ~16% below 12mo avg PSF",
+        "D13 RCR — favorable forward-return region"
+      ],
+      "as_of": {
+        "price": 925000,
+        "psf": 1651.79,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Verified-cheap 1BR ($1,652 psf vs ~$1,976 psf 12mo avg) beside Bartley MRT in RCR — genuine value with a real connectivity catalyst, tempered by mixed build quality.",
+        "rating_rationale": "Asking $925K / $1,652 psf for a 560 sqft 1BR sits at the bottom of the project range ($1,652-$2,497) and well below the 12mo avg of ~$1,976 psf (six-month avg ~$1,868), so the -14.7% age-adj and -9.2% vs same-size cohort (22 cohort txns, 250 appreciation txns — solid depth) are corroborated by real transactions, not a quirk. Catalyst is concrete: walkable to Bartley MRT (Circle Line), one of the better-connected nodes; D13 is RCR (~+3.5% realized forward in the v3.4 priors, favorable). Tempered to medium confidence and Buy (not Strong Buy) by mixed build-quality reviews (resident reports of wall defects, stained WCs, scratched flooring) and the usual shoebox exit-liquidity dependence on investor demand.",
+        "appreciation_assessment": "6.18% reported CAGR (250 txns) is robust as a data point but used only as story per v3.4; forward case is value + MRT, not extrapolated CAGR.",
+        "rental_assessment": "560 sqft 1BR next to Bartley MRT rents well to young-professional tenants; ~$925K entry supports a competitive gross yield (~3.5-4%).",
+        "red_flags": [
+          "Mixed build-quality reviews — resident defect complaints (walls, WCs, flooring)",
+          "Shoebox 1BR exit depends on investor/tenant pool",
+          "Leasehold from 2012 — ~85yrs left"
+        ],
+        "catalysts": [
+          "Walkable to Bartley MRT (Circle Line) — strong connectivity",
+          "Cheapest 1BR band in project; ~16% below 12mo avg PSF",
+          "D13 RCR — favorable forward-return region"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-ridge-500066238",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

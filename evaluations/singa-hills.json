@@ -1,0 +1,65 @@
+{
+  "condo": "Singa Hills",
+  "slug": "singa-hills",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 463sqft freehold shoebox 1BR in the 58-unit boutique Singa Hills, asking $1,901 psf — a ~7% premium to the $1,781 URA median. Appreciation looks decent at ~6%/yr but on only 20 transactions in a thinly-traded 58-unit development, and the 920m walk to Kaki Bukit limits the rental edge.",
+      "rating_rationale": "Freehold and a low $880k absolute entry are attractive, but a 463sqft shoebox in a 58-unit boutique is a thin-liquidity, niche product: only 20 URA txn, 32 draws in the arena (low decisiveness), and a +7% PSF premium to median. The ~6%/yr rate is plausible but not high-confidence on 20 txn. Tranquil location is a plus for tenants but 920m from the MRT caps the yield premium. Lands as a measured Neutral.",
+      "red_flags": [
+        "58-unit boutique + 463sqft shoebox — shallow resale liquidity",
+        "Asking +7% above URA median PSF",
+        "920m to Kaki Bukit MRT",
+        "Only 20 URA txn — rate moderately reliable"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Low $880k absolute price — broad shoebox-investor pool",
+        "Quiet, established Jalan Singa enclave"
+      ],
+      "as_of": {
+        "price": 880000,
+        "psf": 1900.65,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 463sqft freehold shoebox 1BR in the 58-unit boutique Singa Hills, asking $1,901 psf — a ~7% premium to the $1,781 URA median. Appreciation looks decent at ~6%/yr but on only 20 transactions in a thinly-traded 58-unit development, and the 920m walk to Kaki Bukit limits the rental edge.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a low $880k absolute entry are attractive, but a 463sqft shoebox in a 58-unit boutique is a thin-liquidity, niche product: only 20 URA txn, 32 draws in the arena (low decisiveness), and a +7% PSF premium to median. The ~6%/yr rate is plausible but not high-confidence on 20 txn. Tranquil location is a plus for tenants but 920m from the MRT caps the yield premium. Lands as a measured Neutral.",
+        "red_flags": [
+          "58-unit boutique + 463sqft shoebox — shallow resale liquidity",
+          "Asking +7% above URA median PSF",
+          "920m to Kaki Bukit MRT",
+          "Only 20 URA txn — rate moderately reliable"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Low $880k absolute price — broad shoebox-investor pool",
+          "Quiet, established Jalan Singa enclave"
+        ],
+        "rental_assessment": "Shoebox rents to singles/couples; the largely-HDB/landed surroundings and 920m MRT walk make demand moderate rather than strong. Yield is the main return lever.",
+        "appreciation_assessment": "~6%/yr on 20 txn is plausible for a freehold D14 shoebox but should be treated as indicative; boutique developments can be volatile on thin volume.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA series (20 txn), trimmed toward D14 RCR baseline for thin volume"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-singa-hills-500118246",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

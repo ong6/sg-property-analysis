@@ -1,0 +1,59 @@
+{
+  "condo": "Narra Residences",
+  "slug": "narra-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "New-launch 4BR in Hillview (D23) at $2.4M / $2083 PSF, completing 2030, but 1.18km / 14-min walk from Hillview MRT and outside any major growth corridor. Priced near the $2158 district median with no project-specific resale track record and a soft, supply-heavy OCR submarket.",
+      "rating_rationale": "$2083 PSF is below the $2158 D23 median (189 txns) and tenure is fresh 99yr, but Hillview is a mature, car-dependent OCR pocket with no MRT-on-doorstep and no JLD/PDD-style catalyst. New-launch bias flag means the headline price embeds developer pricing; $2.4M for a 4BR is at the upper end of OCR buyer-pool depth. Decent but unexciting hold.",
+      "red_flags": [
+        "1.18km/14-min walk to MRT — weak transit access for OCR",
+        "New-launch pricing bias; no resale track record to verify appreciation",
+        "$2.4M 4BR sits at the thinner end of the OCR buyer pool"
+      ],
+      "catalysts": [
+        "Hillview greenery/Rail Corridor lifestyle appeal",
+        "Fresh 99yr lease and new condo facilities"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 2083.33,
+        "beds": 4,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "New-launch 4BR in Hillview (D23) at $2.4M / $2083 PSF, completing 2030, but 1.18km / 14-min walk from Hillview MRT and outside any major growth corridor. Priced near the $2158 district median with no project-specific resale track record and a soft, supply-heavy OCR submarket.",
+        "rating": "Neutral",
+        "rating_rationale": "$2083 PSF is below the $2158 D23 median (189 txns) and tenure is fresh 99yr, but Hillview is a mature, car-dependent OCR pocket with no MRT-on-doorstep and no JLD/PDD-style catalyst. New-launch bias flag means the headline price embeds developer pricing; $2.4M for a 4BR is at the upper end of OCR buyer-pool depth. Decent but unexciting hold.",
+        "red_flags": [
+          "1.18km/14-min walk to MRT — weak transit access for OCR",
+          "New-launch pricing bias; no resale track record to verify appreciation",
+          "$2.4M 4BR sits at the thinner end of the OCR buyer pool"
+        ],
+        "catalysts": [
+          "Hillview greenery/Rail Corridor lifestyle appeal",
+          "Fresh 99yr lease and new condo facilities"
+        ],
+        "rental_assessment": "Moderate. Hillview draws families over a deep tenant pool; 4BR rental demand is family-only and shallow, far from CBD/universities.",
+        "appreciation_assessment": "Likely tracks OCR baseline (~3.7%/yr) at best; no specific catalyst and new-launch pricing limits upside. Below-median entry offers modest cushion.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-narra-residences-500019324",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

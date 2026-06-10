@@ -1,0 +1,115 @@
+{
+  "condo": "The Tembusu",
+  "slug": "the-tembusu",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 624 sqft freehold 1BR near Kovan MRT (640m) at $1,522 psf — exactly the project median, so fairly priced with no value cushion. Freehold tenure and a decent 57-txn liquidity base are positives, but a weak 2.61% appreciation keeps this firmly average.",
+      "rating_rationale": "Priced right at the $1,522 median (no discount), with a sub-baseline 2.61% resale-only CAGR over an adequate 57 txns. Freehold tenure and Kovan MRT 640m are real but unexceptional, and 1BR competes in a crowded D19 investor segment. Nothing flags it as a value buy and nothing damns it — a textbook Neutral. No standout catalyst to justify paying median for sub-baseline appreciation.",
+      "red_flags": [
+        "2.61% appreciation — below all regional baselines",
+        "PSF at median, no value cushion",
+        "1BR in a crowded D19 Kovan/Hougang investor market"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay)",
+        "NE13 Kovan MRT 640m walkable",
+        "Established Kovan rental/amenity precinct"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1522.44,
+        "beds": 1,
+        "sqft": 624.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 624 sqft freehold 1BR near Kovan MRT (640m) at $1,522 psf — exactly the project median, so fairly priced with no value cushion. Freehold tenure and a decent 57-txn liquidity base are positives, but a weak 2.61% appreciation keeps this firmly average.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced right at the $1,522 median (no discount), with a sub-baseline 2.61% resale-only CAGR over an adequate 57 txns. Freehold tenure and Kovan MRT 640m are real but unexceptional, and 1BR competes in a crowded D19 investor segment. Nothing flags it as a value buy and nothing damns it — a textbook Neutral. No standout catalyst to justify paying median for sub-baseline appreciation.",
+        "red_flags": [
+          "2.61% appreciation — below all regional baselines",
+          "PSF at median, no value cushion",
+          "1BR in a crowded D19 Kovan/Hougang investor market"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay)",
+          "NE13 Kovan MRT 640m walkable",
+          "Established Kovan rental/amenity precinct"
+        ],
+        "rental_assessment": "Kovan has steady 1BR tenant demand near MRT and amenities; yield typical, nothing distinguishing.",
+        "appreciation_assessment": "2.61% over 57 txns is reliably below-par; freehold cushions downside but offers no growth thesis at median pricing.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tembusu-60150753",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR near Kovan MRT asking $1,522 psf, below the verified ~$1,942 psf project average — but that gap is mostly the size band (1BRs price differently from the large units that set the average), the cohort is thin (6 txns), and a 624 sqft 1BR in D19 OCR offers steady but modest investment upside.",
+      "rating_rationale": "Web-verified recent Tembusu transactions average ~$1,942 psf overall, but 1BR units carry an average listing psf of ~$1,670 (474-646 sqft), and comparable ~474 sqft units list at $897k-$935k. Against that, $950k for a larger 624 sqft 1BR ($1,522 psf) is reasonable-to-slightly-below the 1BR sub-market — not the ~23% bargain the project-pooled -23.3% vs-cohort suggests (cohort only 6 txns, a thin-data caution per v3.4). Genuine positives: freehold (a value floor, though not a forward edge), Kovan NEL MRT ~5-8 min walk, well-regarded build quality. Negatives: D19 OCR with no new dated catalyst, and a small 1BR has muted appreciation (2.61% trailing) and competes in a crowded rental segment. Fairly priced freehold unit with a sound location but no decisive edge — Neutral.",
+      "red_flags": [
+        "psf_cohort comparison rests on only 6 same-size transactions — the -23.3% vs-cohort discount is thin-data and overstated by project-pooling",
+        "624 sqft 1BR has structurally muted appreciation (2.61% trailing CAGR) and faces heavy 1BR rental competition",
+        "No new dated MRT/redevelopment catalyst beyond existing Kovan MRT"
+      ],
+      "catalysts": [
+        "Kovan MRT (North East Line) ~5-8 min walk — existing strong connectivity",
+        "Freehold tenure provides a long-run value floor and broader exit appeal vs surrounding 99-yr stock",
+        "Well-reviewed build quality and management in a 337-unit development"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1522.44,
+        "beds": 1,
+        "sqft": 624
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 1BR near Kovan MRT asking $1,522 psf, below the verified ~$1,942 psf project average — but that gap is mostly the size band (1BRs price differently from the large units that set the average), the cohort is thin (6 txns), and a 624 sqft 1BR in D19 OCR offers steady but modest investment upside.",
+        "rating_rationale": "Web-verified recent Tembusu transactions average ~$1,942 psf overall, but 1BR units carry an average listing psf of ~$1,670 (474-646 sqft), and comparable ~474 sqft units list at $897k-$935k. Against that, $950k for a larger 624 sqft 1BR ($1,522 psf) is reasonable-to-slightly-below the 1BR sub-market — not the ~23% bargain the project-pooled -23.3% vs-cohort suggests (cohort only 6 txns, a thin-data caution per v3.4). Genuine positives: freehold (a value floor, though not a forward edge), Kovan NEL MRT ~5-8 min walk, well-regarded build quality. Negatives: D19 OCR with no new dated catalyst, and a small 1BR has muted appreciation (2.61% trailing) and competes in a crowded rental segment. Fairly priced freehold unit with a sound location but no decisive edge — Neutral.",
+        "red_flags": [
+          "psf_cohort comparison rests on only 6 same-size transactions — the -23.3% vs-cohort discount is thin-data and overstated by project-pooling",
+          "624 sqft 1BR has structurally muted appreciation (2.61% trailing CAGR) and faces heavy 1BR rental competition",
+          "No new dated MRT/redevelopment catalyst beyond existing Kovan MRT"
+        ],
+        "catalysts": [
+          "Kovan MRT (North East Line) ~5-8 min walk — existing strong connectivity",
+          "Freehold tenure provides a long-run value floor and broader exit appeal vs surrounding 99-yr stock",
+          "Well-reviewed build quality and management in a 337-unit development"
+        ],
+        "appreciation_assessment": "Trailing 2.61% CAGR (57 txns) is low and treated as story only; freehold is not a forward edge per v3.4. Upside is steady-but-modest, anchored by location rather than a catalyst.",
+        "rental_assessment": "Compact freehold 1BR near Kovan MRT rents easily to singles/couples; yield on the ~$950k quantum is the strongest part of the case and gives reasonable holding economics, though the segment is competitive."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tembusu-60150753",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

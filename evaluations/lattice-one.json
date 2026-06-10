@@ -1,0 +1,63 @@
+{
+  "condo": "Lattice One",
+  "slug": "lattice-one",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A young (2022) freehold 4BR of just 1033 sqft at $2130 PSF / $2.2M in D20 Bishan/Ang Mo Kio fringe, 1.53km from Mayflower MRT. The appreciation rate carries a new-launch bias flag, the only resale-only figure is missing, and 1033 sqft is very tight for a genuine 4BR.",
+      "rating_rationale": "1033 sqft for a 4-bedroom is exceptionally compact — these are 'shrunk' efficiency 4BRs that struggle on family resale and command a premium PSF ($2130, near the $2144 median) without the livability. The 3.8% rate carries a new-launch-bias flag and has no resale-only counterpart, so forward growth is uncertain. Poor MRT access (1.53km / 18-min walk) and a sub-500 score (486) compound the case. Overpriced compact 4BR with weak connectivity — Avoid.",
+      "red_flags": [
+        "1033 sqft for a 4BR is extremely tight — compromised layout, weak family resale",
+        "Appreciation flagged has_new_launch_bias — rate likely inflated by developer pricing",
+        "No resale-only CAGR available — forward growth unverified",
+        "1.53km / 18-min walk to MRT — poor connectivity at a $2.2M quantum",
+        "$2130 PSF is full price vs $2144 median — no discount"
+      ],
+      "catalysts": [
+        "Freehold tenure, young 2022 build",
+        "TE6 Mayflower (TEL) provides eventual connectivity, albeit far"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 2129.72,
+        "beds": 4,
+        "sqft": 1033.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A young (2022) freehold 4BR of just 1033 sqft at $2130 PSF / $2.2M in D20 Bishan/Ang Mo Kio fringe, 1.53km from Mayflower MRT. The appreciation rate carries a new-launch bias flag, the only resale-only figure is missing, and 1033 sqft is very tight for a genuine 4BR.",
+        "rating": "Avoid",
+        "rating_rationale": "1033 sqft for a 4-bedroom is exceptionally compact — these are 'shrunk' efficiency 4BRs that struggle on family resale and command a premium PSF ($2130, near the $2144 median) without the livability. The 3.8% rate carries a new-launch-bias flag and has no resale-only counterpart, so forward growth is uncertain. Poor MRT access (1.53km / 18-min walk) and a sub-500 score (486) compound the case. Overpriced compact 4BR with weak connectivity — Avoid.",
+        "red_flags": [
+          "1033 sqft for a 4BR is extremely tight — compromised layout, weak family resale",
+          "Appreciation flagged has_new_launch_bias — rate likely inflated by developer pricing",
+          "No resale-only CAGR available — forward growth unverified",
+          "1.53km / 18-min walk to MRT — poor connectivity at a $2.2M quantum",
+          "$2130 PSF is full price vs $2144 median — no discount"
+        ],
+        "catalysts": [
+          "Freehold tenure, young 2022 build",
+          "TE6 Mayflower (TEL) provides eventual connectivity, albeit far"
+        ],
+        "rental_assessment": "A cramped 4BR far from MRT is a difficult rental — families wanting 4BR usually want space and transport; expect a thin tenant pool and sub-3% yield on the $2.2M quantum.",
+        "appreciation_assessment": "New-launch-bias flag plus no resale data means the 3.8% is unreliable; compact 4BRs at premium PSF tend to underperform on resale as the new-launch sheen fades.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lattice-one-500105344",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

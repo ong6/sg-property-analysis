@@ -1,0 +1,61 @@
+{
+  "condo": "Fortune Park",
+  "slug": "fortune-park",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,249 sqft freehold 3BR at Fortune Park (1996) in D19 Kovan at $1.85M ($1,481 PSF), 690m from Kovan NE13 MRT. Freehold and well-located, but the asking PSF runs ~11% above the project's own $1,339 URA median while the development is nearly 30 years old.",
+      "rating_rationale": "At $1,481 PSF the listing sits ~11% above Fortune Park's $1,339 URA median — paying a premium on a 1996-built (30-year-old) freehold block whose resale CAGR is a modest ~3.5%/yr (15 txns). The very low score_1000 (361) flags poor relative value. Freehold + Kovan location are positives, but an aged development at an above-median price with mediocre appreciation is exactly the overpriced-old-asset profile to avoid for a 5-7yr investment hold.",
+      "red_flags": [
+        "Asking $1,481 PSF is ~11% above the $1,339 URA median",
+        "30-year-old development (1996); rising maintenance, dated",
+        "Low score_1000 (361) — weak value-for-price",
+        "Modest ~3.5%/yr appreciation on only 15 txns"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Established Kovan/Serangoon location, ~690m to NE13 MRT"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1481.18,
+        "beds": 3,
+        "sqft": 1249.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,249 sqft freehold 3BR at Fortune Park (1996) in D19 Kovan at $1.85M ($1,481 PSF), 690m from Kovan NE13 MRT. Freehold and well-located, but the asking PSF runs ~11% above the project's own $1,339 URA median while the development is nearly 30 years old.",
+        "rating": "Avoid",
+        "rating_rationale": "At $1,481 PSF the listing sits ~11% above Fortune Park's $1,339 URA median — paying a premium on a 1996-built (30-year-old) freehold block whose resale CAGR is a modest ~3.5%/yr (15 txns). The very low score_1000 (361) flags poor relative value. Freehold + Kovan location are positives, but an aged development at an above-median price with mediocre appreciation is exactly the overpriced-old-asset profile to avoid for a 5-7yr investment hold.",
+        "red_flags": [
+          "Asking $1,481 PSF is ~11% above the $1,339 URA median",
+          "30-year-old development (1996); rising maintenance, dated",
+          "Low score_1000 (361) — weak value-for-price",
+          "Modest ~3.5%/yr appreciation on only 15 txns"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Established Kovan/Serangoon location, ~690m to NE13 MRT"
+        ],
+        "rental_assessment": "Kovan has steady tenant demand near NEX/NE line, but a $1.85M old freehold 3BR yields only ~3% and competes with newer stock for tenants.",
+        "appreciation_assessment": "~3.5%/yr is unremarkable and the unit is listed above its own median — buying at a premium on an aging asset leaves little appreciation headroom.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-fortune-park-500126170",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

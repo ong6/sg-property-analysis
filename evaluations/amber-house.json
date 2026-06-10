@@ -1,0 +1,63 @@
+{
+  "condo": "Amber House",
+  "slug": "amber-house",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 635 sqft freehold 2BR at Far East's Amber House (TOP ~2029, D15) for $2.058M / $3,240 PSF — a boutique 105-unit launch in Amber Gardens, ~4-min walk to Tanjong Katong MRT (TEL). Freehold near a new TEL station is attractive, but $3,240 PSF is among the highest in the area, the development is tiny (thin liquidity), and the new-launch bias caps near-term upside.",
+      "rating_rationale": "$3,240 PSF for a compact 635 sqft 2BR (~$2.06M) is a top-of-market freehold price with no margin — at/above the $3,116 new-launch median and within the project's $2,895-3,558 range. The 105-unit boutique scale means a shallow resale pool, and the new-launch-bias flag plus 2029 completion mean you are paying developer-peak pricing with little headroom. Lowest score in batch (378). The TEL station and freehold don't justify the entry premium for an investment hold.",
+      "red_flags": [
+        "$3,240 PSF — top-of-market for a compact 635 sqft 2BR, no entry margin",
+        "Boutique 105-unit development — shallow resale liquidity",
+        "New-launch peak pricing (bias flagged) + TOP ~2029 — capital locked, little near-term upside"
+      ],
+      "catalysts": [
+        "Freehold tenure in prime D15 Amber Gardens enclave",
+        "~4-min walk to TE26/Tanjong Katong MRT (Thomson-East Coast Line)",
+        "Far East developer; Marine Parade / East Coast lifestyle appeal"
+      ],
+      "as_of": {
+        "price": 2057670,
+        "psf": 3240.43,
+        "beds": 2,
+        "sqft": 635.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 635 sqft freehold 2BR at Far East's Amber House (TOP ~2029, D15) for $2.058M / $3,240 PSF — a boutique 105-unit launch in Amber Gardens, ~4-min walk to Tanjong Katong MRT (TEL). Freehold near a new TEL station is attractive, but $3,240 PSF is among the highest in the area, the development is tiny (thin liquidity), and the new-launch bias caps near-term upside.",
+        "rating": "Avoid",
+        "rating_rationale": "$3,240 PSF for a compact 635 sqft 2BR (~$2.06M) is a top-of-market freehold price with no margin — at/above the $3,116 new-launch median and within the project's $2,895-3,558 range. The 105-unit boutique scale means a shallow resale pool, and the new-launch-bias flag plus 2029 completion mean you are paying developer-peak pricing with little headroom. Lowest score in batch (378). The TEL station and freehold don't justify the entry premium for an investment hold.",
+        "red_flags": [
+          "$3,240 PSF — top-of-market for a compact 635 sqft 2BR, no entry margin",
+          "Boutique 105-unit development — shallow resale liquidity",
+          "New-launch peak pricing (bias flagged) + TOP ~2029 — capital locked, little near-term upside"
+        ],
+        "catalysts": [
+          "Freehold tenure in prime D15 Amber Gardens enclave",
+          "~4-min walk to TE26/Tanjong Katong MRT (Thomson-East Coast Line)",
+          "Far East developer; Marine Parade / East Coast lifestyle appeal"
+        ],
+        "rental_assessment": "A freehold 2BR near a TEL station in Amber will let well to professionals once complete, but at $3,240 PSF the gross yield is very thin (~2.5%) and there is no income until 2029.",
+        "appreciation_assessment": "Paying at/above the new-launch median in a boutique block leaves little appreciation headroom; freehold supports the floor but the entry premium caps realistic 5-7yr upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "CCR/RCR-prime baseline; new-launch peak pricing limits upside"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-house-500023014",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

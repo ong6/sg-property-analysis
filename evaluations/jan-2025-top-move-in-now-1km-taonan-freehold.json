@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️JAN 2025 TOP, MOVE IN NOW⭐️1KM TAONAN, FREEHOLD",
+  "slug": "jan-2025-top-move-in-now-1km-taonan-freehold",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2025-TOP freehold 'new launch' marketed on Tao Nan school proximity, asking a steep $2,305 PSF for a 1,076 sqft 4BR ($2.48M). The fitting-out of 4 bedrooms into 1,076 sqft signals very compact rooms, there is no URA data, and the lowest score in the batch (413) reflects the rich pricing.",
+      "rating_rationale": "$2,305 PSF for a 1,076 sqft '4BR' is both expensive and a cramped layout (269 sqft/bedroom) — a configuration that resells poorly. No URA data to ground value, the lowest score_1000 in the batch (413), 1.12km from MRT, and a marketing-listing title screaming developer/agent push. The Tao Nan 1km draw is own-stay/school-driven, not an investment appreciation catalyst at this PSF.",
+      "red_flags": [
+        "$2,305 PSF is rich for D15 at this location (1.12km from MRT)",
+        "1,076 sqft squeezed into 4BR — cramped, weak resale layout",
+        "No URA data; lowest score in batch (413)",
+        "Marketing-heavy listing (school-proximity hook) inflating pricing"
+      ],
+      "catalysts": [
+        "1km to Tao Nan School (own-stay/enrolment appeal)",
+        "Freehold, brand-new 2025 completion"
+      ],
+      "as_of": {
+        "price": 2480000,
+        "psf": 2304.83,
+        "beds": 4,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2025-TOP freehold 'new launch' marketed on Tao Nan school proximity, asking a steep $2,305 PSF for a 1,076 sqft 4BR ($2.48M). The fitting-out of 4 bedrooms into 1,076 sqft signals very compact rooms, there is no URA data, and the lowest score in the batch (413) reflects the rich pricing.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,305 PSF for a 1,076 sqft '4BR' is both expensive and a cramped layout (269 sqft/bedroom) — a configuration that resells poorly. No URA data to ground value, the lowest score_1000 in the batch (413), 1.12km from MRT, and a marketing-listing title screaming developer/agent push. The Tao Nan 1km draw is own-stay/school-driven, not an investment appreciation catalyst at this PSF.",
+        "red_flags": [
+          "$2,305 PSF is rich for D15 at this location (1.12km from MRT)",
+          "1,076 sqft squeezed into 4BR — cramped, weak resale layout",
+          "No URA data; lowest score in batch (413)",
+          "Marketing-heavy listing (school-proximity hook) inflating pricing"
+        ],
+        "catalysts": [
+          "1km to Tao Nan School (own-stay/enrolment appeal)",
+          "Freehold, brand-new 2025 completion"
+        ],
+        "rental_assessment": "Brand-new freehold near Tao Nan rents to school-seeking families, but at $2.48M quantum the yield is poor (~2.5%) and tenant demand for a cramped 4BR is limited.",
+        "appreciation_assessment": "No URA data; entry PSF is already rich, so appreciation headroom over a 5-7yr hold is limited — new-launch pricing leaves little upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jan-2025-top-move-in-now-1km-taonan-freehold-25430124",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

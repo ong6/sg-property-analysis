@@ -1,0 +1,65 @@
+{
+  "condo": "⭐️ Cheap, Clementi D5 4 bed, NUS High, Nan Hua High, MRT",
+  "slug": "cheap-clementi-d5-4-bed-nus-high-nan-hua-high-mrt",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 4BR (1507 sqft) at ELTA Clementi Ave 1 (99yr, MCL Land/CSC, TOP ~2028) at $3.39M / $2250 PSF — close to ELTA's ~$2,537 PSF launch average, in a strong D05 location but at a high absolute quantum. Same project strengths as the sibling listing, but this unit carries the lowest technical score in the batch (392).",
+      "rating_rationale": "ELTA is a credible 501-unit project near Clementi MRT interchange and top schools, with strong launch demand — so a 4BR here has genuine underlying appeal. But $3.39M sits well above the liquid sweet spot, the $2250 PSF gives little discount to the launch average, and there's no resale history. Score 392 (lowest in batch) and below-frontier reflect a full-priced, high-quantum unit. Project quality holds it at Neutral; price and exit risk keep it from a Buy.",
+      "red_flags": [
+        "$3.39M is above the liquid sweet spot — narrow >$3M buyer pool",
+        "$2250 PSF ~ launch average — minimal value discount",
+        "New launch / null built_year — no resale URA data to verify trend",
+        "Lowest technical score in the batch (392), below frontier"
+      ],
+      "catalysts": [
+        "ELTA: 501 units, MCL Land/CSC, ~65% launch take-up — liquid, well-regarded project",
+        "D05/Clementi: One-North, Clementi MRT interchange, Nan Hua/NUS High school catchment",
+        "West Coast employment and One-North growth underpin demand"
+      ],
+      "as_of": {
+        "price": 3390000,
+        "psf": 2249.5,
+        "beds": 4,
+        "sqft": 1507.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 4BR (1507 sqft) at ELTA Clementi Ave 1 (99yr, MCL Land/CSC, TOP ~2028) at $3.39M / $2250 PSF — close to ELTA's ~$2,537 PSF launch average, in a strong D05 location but at a high absolute quantum. Same project strengths as the sibling listing, but this unit carries the lowest technical score in the batch (392).",
+        "rating": "Neutral",
+        "rating_rationale": "ELTA is a credible 501-unit project near Clementi MRT interchange and top schools, with strong launch demand — so a 4BR here has genuine underlying appeal. But $3.39M sits well above the liquid sweet spot, the $2250 PSF gives little discount to the launch average, and there's no resale history. Score 392 (lowest in batch) and below-frontier reflect a full-priced, high-quantum unit. Project quality holds it at Neutral; price and exit risk keep it from a Buy.",
+        "red_flags": [
+          "$3.39M is above the liquid sweet spot — narrow >$3M buyer pool",
+          "$2250 PSF ~ launch average — minimal value discount",
+          "New launch / null built_year — no resale URA data to verify trend",
+          "Lowest technical score in the batch (392), below frontier"
+        ],
+        "catalysts": [
+          "ELTA: 501 units, MCL Land/CSC, ~65% launch take-up — liquid, well-regarded project",
+          "D05/Clementi: One-North, Clementi MRT interchange, Nan Hua/NUS High school catchment",
+          "West Coast employment and One-North growth underpin demand"
+        ],
+        "rental_assessment": "4BR near One-North/NUS rents to families/expats; gross yield ~3% at $3.39M. Location supports tenancy but the unit type is family-only.",
+        "appreciation_assessment": "Strong project, but full new-launch pricing at a high quantum caps near-term upside; ~4.5% on the project, discounted for quantum.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "ELTA / D05 new launch estimate — strong location, full launch pricing, no resale URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-clementi-d5-4-bed-nus-high-nan-hua-high-mrt-500061142",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

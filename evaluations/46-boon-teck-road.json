@@ -1,0 +1,63 @@
+{
+  "condo": "46 Boon Teck Road",
+  "slug": "46-boon-teck-road",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A freehold 2BR (775 sqft) at 46 Boon Teck Road, D12, asking $2.0M / $2,581 psf with no built year and no project transaction data. $2,581 psf for a small 2BR is very aggressive, and a 1.09km/13-min walk to Toa Payoh MRT removes any transit premium.",
+      "rating_rationale": "$2,581 psf on a 775 sqft 2BR is full top-tier pricing — $2.0M for a small unit is poor value per dollar. No built_year and zero URA data make it unverifiable (looks like a small/boutique freehold block given the road-name listing). 1.09km to MRT is a long walk. score_1000 = 468, losing record (161-256). The freehold $2M quantum is liquid in band, but the PSF and thin data don't support a buy.",
+      "red_flags": [
+        "$2,581 psf very high for a 775 sqft 2BR — weak value",
+        "Missing built_year and zero URA transaction data — likely small/boutique block",
+        "13 min / 1.09km to Toa Payoh MRT — no transit advantage",
+        "Address-name listing suggests low-profile, low-liquidity development"
+      ],
+      "catalysts": [
+        "Freehold in central-fringe D12 (Toa Payoh/Balestier)",
+        "$2.0M quantum sits within the liquid band"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 2580.64,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (775 sqft) at 46 Boon Teck Road, D12, asking $2.0M / $2,581 psf with no built year and no project transaction data. $2,581 psf for a small 2BR is very aggressive, and a 1.09km/13-min walk to Toa Payoh MRT removes any transit premium.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,581 psf on a 775 sqft 2BR is full top-tier pricing — $2.0M for a small unit is poor value per dollar. No built_year and zero URA data make it unverifiable (looks like a small/boutique freehold block given the road-name listing). 1.09km to MRT is a long walk. score_1000 = 468, losing record (161-256). The freehold $2M quantum is liquid in band, but the PSF and thin data don't support a buy.",
+        "red_flags": [
+          "$2,581 psf very high for a 775 sqft 2BR — weak value",
+          "Missing built_year and zero URA transaction data — likely small/boutique block",
+          "13 min / 1.09km to Toa Payoh MRT — no transit advantage",
+          "Address-name listing suggests low-profile, low-liquidity development"
+        ],
+        "catalysts": [
+          "Freehold in central-fringe D12 (Toa Payoh/Balestier)",
+          "$2.0M quantum sits within the liquid band"
+        ],
+        "rental_assessment": "Moderate — Balestier/Toa Payoh fringe has tenant demand but yield on a $2,581 psf 2BR is thin (~2.5-3%).",
+        "appreciation_assessment": "No data to verify; priced at the top of the range with a long MRT walk, appreciation headroom looks limited.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "D12 freehold prior — no project data; high entry PSF caps upside"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-46-boon-teck-road-500146015",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

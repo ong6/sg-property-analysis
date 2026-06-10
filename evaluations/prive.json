@@ -1,0 +1,120 @@
+{
+  "condo": "Prive",
+  "slug": "prive",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 1,604 sqft 99LH 3BR at Punggol's Prive for $1.8M / $1,122 psf — the low PSF is partly a function of an oversized unit on a long-lease (2014) project. Pench-of-water Punggol location with only LRT (not MRT) access caps the buyer pool and appreciation versus PDD-adjacent stock.",
+      "rating_rationale": "PSF of $1,122 is genuinely cheap for D19 and the $1.8M quantum sits in a liquid band, but the 1,604 sqft size inflates quantum-per-buyer and the unit relies on Cove LRT (240m) rather than the East-West/Cross Island heavy rail that drives PDD uplift. 99LH from 2014 means ~87 years left — fine — but no URA data was matched here so the appreciation case is unverified. High arena score (744) is largely a value/PSF artifact.",
+      "red_flags": [
+        "Oversized 1,604 sqft 3BR inflates per-unit quantum and narrows resale pool",
+        "LRT-only connectivity (Cove LRT), no direct MRT",
+        "No URA appreciation/transaction data matched — value case unverified",
+        "Punggol waterway-edge location less central than PDD core"
+      ],
+      "catalysts": [
+        "Punggol Digital District and SIT campus maturing nearby",
+        "Cross Island Line Punggol stations (~2032) regional uplift",
+        "Low absolute PSF gives downside cushion"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1122.19,
+        "beds": 3,
+        "sqft": 1604.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1,604 sqft 99LH 3BR at Punggol's Prive for $1.8M / $1,122 psf — the low PSF is partly a function of an oversized unit on a long-lease (2014) project. Pench-of-water Punggol location with only LRT (not MRT) access caps the buyer pool and appreciation versus PDD-adjacent stock.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF of $1,122 is genuinely cheap for D19 and the $1.8M quantum sits in a liquid band, but the 1,604 sqft size inflates quantum-per-buyer and the unit relies on Cove LRT (240m) rather than the East-West/Cross Island heavy rail that drives PDD uplift. 99LH from 2014 means ~87 years left — fine — but no URA data was matched here so the appreciation case is unverified. High arena score (744) is largely a value/PSF artifact.",
+        "red_flags": [
+          "Oversized 1,604 sqft 3BR inflates per-unit quantum and narrows resale pool",
+          "LRT-only connectivity (Cove LRT), no direct MRT",
+          "No URA appreciation/transaction data matched — value case unverified",
+          "Punggol waterway-edge location less central than PDD core"
+        ],
+        "catalysts": [
+          "Punggol Digital District and SIT campus maturing nearby",
+          "Cross Island Line Punggol stations (~2032) regional uplift",
+          "Low absolute PSF gives downside cushion"
+        ],
+        "rental_assessment": "Punggol tenant demand is moderate and family-skewed; a large 3BR rents to families relocating for PDD/SIT but yield on $1.8M quantum is unremarkable.",
+        "appreciation_assessment": "No project-specific URA rate available; D19/OCR baseline ~3.7%/yr is the working assumption, with modest PDD/CRL upside but waterfront-edge premium already partly priced.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prive-500121432",
+        "review_file": "cov_batch_17.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Privatised Punggol EC (D19): a large 1,604 sqft 3BR asking $1,122 psf vs verified recent project transactions averaging ~$1,545-1,582 psf — a genuine ~25-27% discount, the largest verified bargain in this batch; the 'very_low_psf' flag reflects real value, not a mis-scrape.",
+      "rating_rationale": "Web-verified: Prive's last-12-month sales averaged ~$1,545 psf and ~$1,583 psf over 6mo, versus the $1,122 psf asking — a ~27% gap. Even applying a meaningful large-unit/big-quantum discount (1,604 sqft is near the top of the project's 775-1,772 sqft range), the implied fair value of a unit this size is roughly $2.3-2.4M, so $1.8M leaves real upside. The algo's age_adj_premium of -33.9% directionally matches my verified read. Now fully privatised (since 2023), Cove LRT ~260m, NEL connectivity, and Punggol's digital-district/regional-centre buildout give a genuine OCR catalyst — the region the v3.4 backtest ranks highest for forward returns. Confidence is medium not high because appreciation_txns=0 and psf_cohort_txns is null (regional_baseline fallback), so I rely on web comps, and the buyer must verify the listing/condition is current (large gaps occasionally signal a stale or distressed listing).",
+      "red_flags": [
+        "appreciation_txns=0 and psf_cohort=null — algo used regional fallback, so verify listing is live and unit condition (a ~27% gap can hint at a stale or problem unit)",
+        "Large 1,604 sqft / $1.8M quantum narrows the resale buyer pool and slows exit",
+        "Ex-EC mass-market product in Punggol — limited prestige, capped CCR-style upside",
+        "99-yr lease from 2010 — meaningful decay accumulates over a 5-7yr+ hold"
+      ],
+      "catalysts": [
+        "Punggol Digital District / regional centre buildout driving employment and demand",
+        "Fully privatised since 2023 — full resale pool (incl. foreigners/companies) and long-run en-bloc optionality",
+        "Cove LRT ~260m, direct NEL access via Punggol interchange"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1122.19,
+        "beds": 3,
+        "sqft": 1604
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Privatised Punggol EC (D19): a large 1,604 sqft 3BR asking $1,122 psf vs verified recent project transactions averaging ~$1,545-1,582 psf — a genuine ~25-27% discount, the largest verified bargain in this batch; the 'very_low_psf' flag reflects real value, not a mis-scrape.",
+        "rating_rationale": "Web-verified: Prive's last-12-month sales averaged ~$1,545 psf and ~$1,583 psf over 6mo, versus the $1,122 psf asking — a ~27% gap. Even applying a meaningful large-unit/big-quantum discount (1,604 sqft is near the top of the project's 775-1,772 sqft range), the implied fair value of a unit this size is roughly $2.3-2.4M, so $1.8M leaves real upside. The algo's age_adj_premium of -33.9% directionally matches my verified read. Now fully privatised (since 2023), Cove LRT ~260m, NEL connectivity, and Punggol's digital-district/regional-centre buildout give a genuine OCR catalyst — the region the v3.4 backtest ranks highest for forward returns. Confidence is medium not high because appreciation_txns=0 and psf_cohort_txns is null (regional_baseline fallback), so I rely on web comps, and the buyer must verify the listing/condition is current (large gaps occasionally signal a stale or distressed listing).",
+        "red_flags": [
+          "appreciation_txns=0 and psf_cohort=null — algo used regional fallback, so verify listing is live and unit condition (a ~27% gap can hint at a stale or problem unit)",
+          "Large 1,604 sqft / $1.8M quantum narrows the resale buyer pool and slows exit",
+          "Ex-EC mass-market product in Punggol — limited prestige, capped CCR-style upside",
+          "99-yr lease from 2010 — meaningful decay accumulates over a 5-7yr+ hold"
+        ],
+        "catalysts": [
+          "Punggol Digital District / regional centre buildout driving employment and demand",
+          "Fully privatised since 2023 — full resale pool (incl. foreigners/companies) and long-run en-bloc optionality",
+          "Cove LRT ~260m, direct NEL access via Punggol interchange"
+        ],
+        "rental_assessment": "Large 3BR/dual-key-capable layout suits family or co-living tenants near Punggol's growing employment node; yield modest on the larger quantum but the deep discount cushions entry.",
+        "appreciation_assessment": "No usable trailing CAGR (regional baseline 4.0%); thesis is squarely a present-value bargain plus the Punggol Digital District demand catalyst, not momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prive-500121432",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

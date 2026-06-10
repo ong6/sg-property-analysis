@@ -1,0 +1,113 @@
+{
+  "condo": "The Trilinq",
+  "slug": "the-trilinq",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "3BR at The Trilinq, a large 2017 D05 Clementi development 670m from the future CR17 Clementi (Cross Island Line) station, $1.88M at $1,695 PSF — ~7% below the $1,814 URA median. Dominant arena record (477-91-1, Elo 1804) and deep 243-txn data, but appreciation is a modest 3.0%/yr.",
+      "rating_rationale": "Strong, reliable fundamentals: $1,695 PSF is ~7% under median, 243-txn data is robust, and 670m to the CRL Clementi interchange (~2030) is a real catalyst for a 2017 leasehold (~91yrs). The 1109sqft 3BR at $1.88M sits in a reasonable family band for D05's one-north/NUS catchment. The only soft spot is the 3.0%/yr historical appreciation — below OCR/RCR baselines — but the CRL uplift and below-median entry tilt this to a measured Buy. Large development = good liquidity.",
+      "red_flags": [
+        "Modest 3.0%/yr historical appreciation — relies on CRL catalyst to lift",
+        "$1.88M 3BR is family-only; pool narrower than 2BR"
+      ],
+      "catalysts": [
+        "670m to future Clementi CRL interchange (~2030)",
+        "One-north / NUS / science-park employment corridor",
+        "Priced ~7% below URA median; deep 243-txn liquidity"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1695.22,
+        "beds": 3,
+        "sqft": 1109.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "3BR at The Trilinq, a large 2017 D05 Clementi development 670m from the future CR17 Clementi (Cross Island Line) station, $1.88M at $1,695 PSF — ~7% below the $1,814 URA median. Dominant arena record (477-91-1, Elo 1804) and deep 243-txn data, but appreciation is a modest 3.0%/yr.",
+        "rating": "Buy",
+        "rating_rationale": "Strong, reliable fundamentals: $1,695 PSF is ~7% under median, 243-txn data is robust, and 670m to the CRL Clementi interchange (~2030) is a real catalyst for a 2017 leasehold (~91yrs). The 1109sqft 3BR at $1.88M sits in a reasonable family band for D05's one-north/NUS catchment. The only soft spot is the 3.0%/yr historical appreciation — below OCR/RCR baselines — but the CRL uplift and below-median entry tilt this to a measured Buy. Large development = good liquidity.",
+        "red_flags": [
+          "Modest 3.0%/yr historical appreciation — relies on CRL catalyst to lift",
+          "$1.88M 3BR is family-only; pool narrower than 2BR"
+        ],
+        "catalysts": [
+          "670m to future Clementi CRL interchange (~2030)",
+          "One-north / NUS / science-park employment corridor",
+          "Priced ~7% below URA median; deep 243-txn liquidity"
+        ],
+        "rental_assessment": "Clementi has deep, durable tenant demand (NUS, science park, one-north); 3BR suits sharing tenants and families.",
+        "appreciation_assessment": "Historically modest (3%/yr) but the CRL interchange is a credible re-rating catalyst; entering below median adds margin.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA 243-txn series (3.0%) nudged up for confirmed CRL catalyst"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trilinq-60135925",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Well-located D05 (Clementi/Buona Vista) leasehold 1BR priced at $1,738 psf, essentially in line with the verified project average of ~$1,768 psf — fairly priced, not the discount the dossier suggests.",
+      "rating_rationale": "Web-verified recent transactions average ~$1,768 psf (last 12mo), so the $1,738 asking is only ~2% below market — at-market, not a bargain. The algo's age_adj_premium of -7.5% is modest and consistent with this near-market read (243 txns deep, psf_cohort 16 txns, so the data is reliable here — no quirk). The asset is genuinely good: D05 near Buona Vista/one-north/Clementi, large 755-unit liquid development, near NUS and the science/business parks for rental. But at a sub-3% likely yield on a ~$1.05M 1BR with no verified discount and only a baseline 3.01% trailing CAGR, there's no margin of safety to push past Neutral. A solid hold-quality unit at a fair price, not a value buy.",
+      "red_flags": [
+        "Asking ~$1,738 psf is at-market vs verified ~$1,768 avg — no real discount",
+        "High ~$1.05M quantum for a 1BR compresses rental yield",
+        "99-yr lease from ~2013 — lease decay over a long hold"
+      ],
+      "catalysts": [
+        "D05 proximity to one-north / Buona Vista / NUS supports durable rental demand",
+        "Large, liquid development eases resale exit"
+      ],
+      "as_of": {
+        "price": 1048000,
+        "psf": 1737.98,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Well-located D05 (Clementi/Buona Vista) leasehold 1BR priced at $1,738 psf, essentially in line with the verified project average of ~$1,768 psf — fairly priced, not the discount the dossier suggests.",
+        "rating_rationale": "Web-verified recent transactions average ~$1,768 psf (last 12mo), so the $1,738 asking is only ~2% below market — at-market, not a bargain. The algo's age_adj_premium of -7.5% is modest and consistent with this near-market read (243 txns deep, psf_cohort 16 txns, so the data is reliable here — no quirk). The asset is genuinely good: D05 near Buona Vista/one-north/Clementi, large 755-unit liquid development, near NUS and the science/business parks for rental. But at a sub-3% likely yield on a ~$1.05M 1BR with no verified discount and only a baseline 3.01% trailing CAGR, there's no margin of safety to push past Neutral. A solid hold-quality unit at a fair price, not a value buy.",
+        "red_flags": [
+          "Asking ~$1,738 psf is at-market vs verified ~$1,768 avg — no real discount",
+          "High ~$1.05M quantum for a 1BR compresses rental yield",
+          "99-yr lease from ~2013 — lease decay over a long hold"
+        ],
+        "catalysts": [
+          "D05 proximity to one-north / Buona Vista / NUS supports durable rental demand",
+          "Large, liquid development eases resale exit"
+        ],
+        "rental_assessment": "Strong rental fundamentals (one-north tech/biomed corridor, NUS, science parks) but yield is thin on the high 1BR quantum; demand is reliable rather than premium.",
+        "appreciation_assessment": "Trailing 3.01% CAGR on a deep 243-txn base is credible but lightly weighted per backtest; with the unit priced at market, there's no present-value edge to underwrite forward outperformance."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trilinq-25629285",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Park Place Residences",
+  "slug": "park-place-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A compact 1BR at PLQ / Park Place Residences (Lendlease, 2019) — 310m to the Paya Lebar interchange and integrated with the PLQ mall/offices, in the Paya Lebar Central growth zone. Strong location and rental story at a sane $1.09M entry; held back only by 1BR niche-ness and a moderate 3.15%/yr rate.",
+      "rating_rationale": "Best-in-class connectivity: 310m (4 min) to EW8/CC9 Paya Lebar dual-line interchange, integrated with PLQ retail and Grade-A offices. Paya Lebar Central + the airbase relocation is one of Singapore's strongest govt transformation catalysts. score 620, on_frontier=true, deep 104-txn base. URA 3.15%/yr is decent for leasehold. At $1.088M / $2,248 PSF the entry is liquid. 1BR shallow pool and leasehold decay are the main caveats but the integrated-MRT location offsets exit risk.",
+      "red_flags": [
+        "1BR — narrower resale buyer pool",
+        "99-yr leasehold (2019)",
+        "resale-only rate not isolated (3.15% is blended)"
+      ],
+      "catalysts": [
+        "310m to Paya Lebar EW8/CC9 interchange, integrated with PLQ mall + offices",
+        "Paya Lebar Central growth zone + airbase relocation land release",
+        "Lendlease build quality, deep 104-txn liquidity"
+      ],
+      "as_of": {
+        "price": 1088000,
+        "psf": 2247.93,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 1BR at PLQ / Park Place Residences (Lendlease, 2019) — 310m to the Paya Lebar interchange and integrated with the PLQ mall/offices, in the Paya Lebar Central growth zone. Strong location and rental story at a sane $1.09M entry; held back only by 1BR niche-ness and a moderate 3.15%/yr rate.",
+        "rating": "Buy",
+        "rating_rationale": "Best-in-class connectivity: 310m (4 min) to EW8/CC9 Paya Lebar dual-line interchange, integrated with PLQ retail and Grade-A offices. Paya Lebar Central + the airbase relocation is one of Singapore's strongest govt transformation catalysts. score 620, on_frontier=true, deep 104-txn base. URA 3.15%/yr is decent for leasehold. At $1.088M / $2,248 PSF the entry is liquid. 1BR shallow pool and leasehold decay are the main caveats but the integrated-MRT location offsets exit risk.",
+        "red_flags": [
+          "1BR — narrower resale buyer pool",
+          "99-yr leasehold (2019)",
+          "resale-only rate not isolated (3.15% is blended)"
+        ],
+        "catalysts": [
+          "310m to Paya Lebar EW8/CC9 interchange, integrated with PLQ mall + offices",
+          "Paya Lebar Central growth zone + airbase relocation land release",
+          "Lendlease build quality, deep 104-txn liquidity"
+        ],
+        "rental_assessment": "Exceptional tenant demand — direct mall/MRT/office integration is exactly what 1BR tenants pay for; among the strongest rental propositions in the batch.",
+        "appreciation_assessment": "3.15%/yr with a clear district-transformation catalyst; the integrated location should sustain above-average leasehold performance.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-place-residences-25629204",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

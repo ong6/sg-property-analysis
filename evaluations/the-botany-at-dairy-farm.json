@@ -1,0 +1,63 @@
+{
+  "condo": "The Botany at Dairy Farm",
+  "slug": "the-botany-at-dairy-farm",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A near-completion (2027 TOP) 1270sqft 4BR new launch in The Botany at Dairy Farm, D23 (Hillview/Bukit Panjang), at $2.3M / $1811 psf — about 15% below the $2124 district median, near Hillview MRT (DTL, 800m) in a greenery-led nature precinct. No resale history yet (new launch), but the entry PSF and nature/DTL positioning are attractive.",
+      "rating_rationale": "$1811 psf is ~15% below the $2124 district median — a meaningful discount, and 1270sqft is a sensibly-sized (not oversized) 4BR at a $2.3M family quantum. Hillview DTL (800m) gives direct downtown access, and Dairy Farm's nature-reserve setting is a durable own-stay/family-resale draw. Caveats: it is a not-yet-completed new launch (no resale data — null URA rate; pricing carries developer bias), TOP 2027 pushes the SSD-safe hold out, and 4BR narrows the pool. But the clear PSF discount and DTL/nature positioning support a Buy at the family-target altitude.",
+      "red_flags": [
+        "New launch, 2027 TOP — no resale track record, appreciation unproven, developer pricing bias",
+        "4BR at $2.3M — family-only buyer pool, above deepest-liquidity band",
+        "D23 OCR (Bukit Panjang/Hillview) — solid but not a top-tier appreciation district"
+      ],
+      "catalysts": [
+        "~15% below district median PSF — genuine value entry for a new launch",
+        "Hillview MRT (Downtown Line, 800m) — direct CBD/Bugis access",
+        "Dairy Farm nature-reserve precinct — distinctive greenery setting with durable family demand"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1811.02,
+        "beds": 4,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A near-completion (2027 TOP) 1270sqft 4BR new launch in The Botany at Dairy Farm, D23 (Hillview/Bukit Panjang), at $2.3M / $1811 psf — about 15% below the $2124 district median, near Hillview MRT (DTL, 800m) in a greenery-led nature precinct. No resale history yet (new launch), but the entry PSF and nature/DTL positioning are attractive.",
+        "rating": "Buy",
+        "rating_rationale": "$1811 psf is ~15% below the $2124 district median — a meaningful discount, and 1270sqft is a sensibly-sized (not oversized) 4BR at a $2.3M family quantum. Hillview DTL (800m) gives direct downtown access, and Dairy Farm's nature-reserve setting is a durable own-stay/family-resale draw. Caveats: it is a not-yet-completed new launch (no resale data — null URA rate; pricing carries developer bias), TOP 2027 pushes the SSD-safe hold out, and 4BR narrows the pool. But the clear PSF discount and DTL/nature positioning support a Buy at the family-target altitude.",
+        "red_flags": [
+          "New launch, 2027 TOP — no resale track record, appreciation unproven, developer pricing bias",
+          "4BR at $2.3M — family-only buyer pool, above deepest-liquidity band",
+          "D23 OCR (Bukit Panjang/Hillview) — solid but not a top-tier appreciation district"
+        ],
+        "catalysts": [
+          "~15% below district median PSF — genuine value entry for a new launch",
+          "Hillview MRT (Downtown Line, 800m) — direct CBD/Bugis access",
+          "Dairy Farm nature-reserve precinct — distinctive greenery setting with durable family demand"
+        ],
+        "rental_assessment": "Family-oriented 4BR in a nature precinct rents to families; tenant pool narrower than small units but Hillview DTL access and the greenery setting support steady demand once completed (2027).",
+        "appreciation_assessment": "No URA resale data (new launch). The ~15% discount to district median is the value case; DTL access and the nature precinct should let it track or beat the D23 baseline over a 5-7yr hold from completion.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "No resale data — conservative D23 OCR estimate, slight premium for DTL/nature discount entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-botany-at-dairy-farm-24389574",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

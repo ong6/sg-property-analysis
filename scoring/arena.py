@@ -21,13 +21,19 @@ from datetime import datetime
 from typing import Any, Optional
 
 # Dimension -> (component keys summed, weight in a fight)
+# v3.4: re-weighted to MATCH the MMR / backtest philosophy. The old weights gave
+# the `appreciation` dimension 0.30 (the HIGHEST) — handing back exactly the weight
+# the v3.3/v3.4 backtest stripped from the MMR (trailing appreciation ρ≈0, momentum
+# flat-to-contrarian). That made the arena's headline ranking lean on the weakest
+# forward feature and contradict the MMR. Now value (the strongest region-robust
+# forward signal) leads; appreciation is small. Weights sum to 1.0.
 DIMENSIONS: dict[str, tuple[list[str], float]] = {
-    "appreciation": (["appreciation", "momentum"], 0.30),
-    "value": (["psf_value", "age_value"], 0.25),
+    "value": (["psf_value", "age_value"], 0.40),
     "liquidity": (["txn_volume", "buyer_pool", "dev_size", "price_band"], 0.20),
+    "appreciation": (["appreciation", "momentum"], 0.10),
     "yield": (["yield"], 0.10),
     "future": (["future"], 0.10),
-    "condition": (["age", "lease", "mrt", "cost", "red_flags"], 0.05),
+    "condition": (["age", "lease", "mrt", "cost", "red_flags"], 0.10),
 }
 
 ELO_START = 1200.0
@@ -116,6 +122,21 @@ def _pareto_frontier(fighters: list[Fighter]) -> None:
                 break
 
 
+# A real Singapore condo resale never transacts outside this PSF band. A listing
+# outside it is a mis-scrape (wrong sqft or price) that fabricates value/yield and
+# would otherwise dominate a value-led tournament — e.g. a 5,349 sqft "4BR" at
+# $636 psf. Such contenders are excluded from the arena (referee no longer has to
+# demote the same artifact every run). NOT a value filter — genuine cheap-vs-peers
+# bargains (very_low_psf) are kept; this only removes impossible numbers.
+_ARENA_PSF_MIN = 650.0
+_ARENA_PSF_MAX = 6000.0
+
+
+def _is_data_artifact(s) -> bool:
+    """True if the representative listing's PSF is outside any real range (mis-scrape)."""
+    return bool(s.psf) and not (_ARENA_PSF_MIN <= s.psf <= _ARENA_PSF_MAX)
+
+
 def run_arena(scored_listings: list) -> list[Fighter]:
     """Run the tournament over scored listings (with MMR components).
 
@@ -128,6 +149,8 @@ def run_arena(scored_listings: list) -> list[Fighter]:
     for s in scored_listings:
         if not s.mmr_components:
             continue
+        if _is_data_artifact(s):
+            continue  # mis-scraped PSF — skip (see _is_data_artifact)
         key_name = (s.project_name or s.title or "").strip().lower()
         if not key_name:
             continue
@@ -261,7 +284,7 @@ def build_referee_packet(fighters: list[Fighter], top_n: int = 15) -> dict:
             flags.append("yield advantage built on a fallback rent estimate")
         if abs(comps.get("psf_value", 0)) > 15:
             flags.append(f"extreme psf_value ({comps['psf_value']:+.1f}) — verify listing PSF/sqft is real")
-        if abs(comps.get("age_value", 0)) > 10:
+        if abs(comps.get("age_value", 0)) > 18:  # v3.4: threshold tracks the raised cap (28)
             flags.append(f"extreme age_value ({comps['age_value']:+.1f}) — verify built_year and peer set")
         if not s.built_year:
             flags.append("missing built_year — age/lease components neutral, may overrank")

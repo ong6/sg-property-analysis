@@ -1,0 +1,63 @@
+{
+  "condo": "Casa Fortuna",
+  "slug": "casa-fortuna",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Listed as '1BR' but at 1,237 sqft freehold this is clearly a large multi-bedroom unit mislabelled — rated as the actual large FH unit. Priced at $1,237 psf, well below the $1,554 median (~20% under), in a 2012 freehold near Balestier/Novena, with a solid 4.2%/yr resale CAGR on a thin 26-txn series.",
+      "rating_rationale": "The headline sub-median PSF ($1,237 vs $1,554, ~20% below) and the high score_1000 (680) are eye-catching, but the bedroom label is wrong — 1,237 sqft is a large unit, so the cheap PSF partly reflects size, not a bargain. The $1.53M quantum is liquid and freehold is a plus, with a respectable 4.2%/yr CAGR, but only 26 txns make that rate semi-reliable, and the 1.12km/14-min walk to Novena MRT is poor. A fair-value large FH unit in a small development — balanced, not a standout buy.",
+      "red_flags": [
+        "Bedroom count mislabelled (1,237 sqft is not a 1BR); cheap PSF partly a size artefact",
+        "4.2%/yr CAGR on thin 26-txn series — semi-reliable",
+        "1.12km/14-min walk to Novena MRT — weak connectivity",
+        "Small development — moderate liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure with sub-median PSF entry",
+        "Central D12 location near Novena medical hub and Balestier"
+      ],
+      "as_of": {
+        "price": 1530000,
+        "psf": 1236.86,
+        "beds": 1,
+        "sqft": 1237.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Listed as '1BR' but at 1,237 sqft freehold this is clearly a large multi-bedroom unit mislabelled — rated as the actual large FH unit. Priced at $1,237 psf, well below the $1,554 median (~20% under), in a 2012 freehold near Balestier/Novena, with a solid 4.2%/yr resale CAGR on a thin 26-txn series.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline sub-median PSF ($1,237 vs $1,554, ~20% below) and the high score_1000 (680) are eye-catching, but the bedroom label is wrong — 1,237 sqft is a large unit, so the cheap PSF partly reflects size, not a bargain. The $1.53M quantum is liquid and freehold is a plus, with a respectable 4.2%/yr CAGR, but only 26 txns make that rate semi-reliable, and the 1.12km/14-min walk to Novena MRT is poor. A fair-value large FH unit in a small development — balanced, not a standout buy.",
+        "red_flags": [
+          "Bedroom count mislabelled (1,237 sqft is not a 1BR); cheap PSF partly a size artefact",
+          "4.2%/yr CAGR on thin 26-txn series — semi-reliable",
+          "1.12km/14-min walk to Novena MRT — weak connectivity",
+          "Small development — moderate liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure with sub-median PSF entry",
+          "Central D12 location near Novena medical hub and Balestier"
+        ],
+        "rental_assessment": "Large freehold unit near Novena rents to families/medical professionals; decent demand but high quantum-per-unit caps yield.",
+        "appreciation_assessment": "4.2%/yr resale CAGR on 26 txns is constructive but thin; freehold and central location support it, offset by the far MRT walk.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale 4.2%/yr on thin 26 txns, modestly discounted"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-fortuna-23632147",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

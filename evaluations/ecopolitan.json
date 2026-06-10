@@ -1,0 +1,65 @@
+{
+  "condo": "Ecopolitan",
+  "slug": "ecopolitan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 4BR (1141sqft) at Ecopolitan, a 2016 99yr privatised EC in Punggol D19, at $1.78M / $1,560 PSF — a high PSF for a Punggol EC and a small footprint for a 4-bed. Liquid ticket but no URA data and a middling score (523); unremarkable.",
+      "rating_rationale": "$1,560 PSF is on the higher side for a 2016 Punggol EC, and 1141sqft is tight for a genuine 4BR (per-room squeeze). $1.78M sits in the liquid band but at the top of where Punggol EC buyers transact. No URA appreciation/median data (regional prior only). Score 523 / Elo 1207 with a losing 236-180 record. Soo Teck LRT 630m is the only transit. PDD + CRL are real but broadly-priced D19 catalysts.",
+      "red_flags": [
+        "No URA appreciation/median data (regional prior)",
+        "$1,560 PSF rich for a Punggol EC",
+        "1141sqft tight for a 4BR",
+        "Only LRT (630m), no MRT"
+      ],
+      "catalysts": [
+        "Punggol Digital District employment",
+        "Cross Island Line connectivity (~2030s)",
+        "Privatisation complete (open buyer pool)"
+      ],
+      "as_of": {
+        "price": 1780000,
+        "psf": 1560.04,
+        "beds": 4,
+        "sqft": 1141.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 4BR (1141sqft) at Ecopolitan, a 2016 99yr privatised EC in Punggol D19, at $1.78M / $1,560 PSF — a high PSF for a Punggol EC and a small footprint for a 4-bed. Liquid ticket but no URA data and a middling score (523); unremarkable.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,560 PSF is on the higher side for a 2016 Punggol EC, and 1141sqft is tight for a genuine 4BR (per-room squeeze). $1.78M sits in the liquid band but at the top of where Punggol EC buyers transact. No URA appreciation/median data (regional prior only). Score 523 / Elo 1207 with a losing 236-180 record. Soo Teck LRT 630m is the only transit. PDD + CRL are real but broadly-priced D19 catalysts.",
+        "red_flags": [
+          "No URA appreciation/median data (regional prior)",
+          "$1,560 PSF rich for a Punggol EC",
+          "1141sqft tight for a 4BR",
+          "Only LRT (630m), no MRT"
+        ],
+        "catalysts": [
+          "Punggol Digital District employment",
+          "Cross Island Line connectivity (~2030s)",
+          "Privatisation complete (open buyer pool)"
+        ],
+        "rental_assessment": "Punggol family rental demand moderate; compact 4BR EC rents adequately, yield ordinary.",
+        "appreciation_assessment": "OCR-baseline; high entry PSF limits headroom over a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR D19 EC baseline (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ecopolitan-60136501",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

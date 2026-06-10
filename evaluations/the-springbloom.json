@@ -1,0 +1,61 @@
+{
+  "condo": "The Springbloom",
+  "slug": "the-springbloom",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 27-year-old 99-year leasehold 2BR in Serangoon (D19) just 210m from CC14 Lorong Chuan MRT, priced at $1,567 psf — bang on the $1,560 URA median. Excellent MRT walkability and a deep 59-txn series, offset by aging leasehold (~72 years left) and a fair-not-cheap price.",
+      "rating_rationale": "The standout is location: 210m to CC14 Lorong Chuan on the Circle Line, near Nex mall and good schools (St Gabriel's belt) — top-tier walkability that supports both rental and resale. The 59-txn URA series is the deepest in this thin-data batch, making the 6.6%/yr resale rate reliable. However PSF $1,567 is essentially at the $1,560 median (no margin of safety), and it is a 1999 leasehold (~72 years remaining) where lease decay is now a real forward drag. 893 sqft 2BR is efficient and the $1.4M quantum is liquid. Fair price + great location + lease decay = a balanced Neutral.",
+      "red_flags": [
+        "99-year leasehold from 1999 — ~72 years left, lease decay weighs on forward resale",
+        "Priced at the URA median — no value cushion",
+        "27-year-old facilities"
+      ],
+      "catalysts": [
+        "CC14 Lorong Chuan MRT 210m away — excellent Circle Line walkability",
+        "Near Nex mall and reputable schools — strong tenant/family demand",
+        "Deep, reliable transaction history"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1567.75,
+        "beds": 2,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 27-year-old 99-year leasehold 2BR in Serangoon (D19) just 210m from CC14 Lorong Chuan MRT, priced at $1,567 psf — bang on the $1,560 URA median. Excellent MRT walkability and a deep 59-txn series, offset by aging leasehold (~72 years left) and a fair-not-cheap price.",
+        "rating": "Neutral",
+        "rating_rationale": "The standout is location: 210m to CC14 Lorong Chuan on the Circle Line, near Nex mall and good schools (St Gabriel's belt) — top-tier walkability that supports both rental and resale. The 59-txn URA series is the deepest in this thin-data batch, making the 6.6%/yr resale rate reliable. However PSF $1,567 is essentially at the $1,560 median (no margin of safety), and it is a 1999 leasehold (~72 years remaining) where lease decay is now a real forward drag. 893 sqft 2BR is efficient and the $1.4M quantum is liquid. Fair price + great location + lease decay = a balanced Neutral.",
+        "red_flags": [
+          "99-year leasehold from 1999 — ~72 years left, lease decay weighs on forward resale",
+          "Priced at the URA median — no value cushion",
+          "27-year-old facilities"
+        ],
+        "catalysts": [
+          "CC14 Lorong Chuan MRT 210m away — excellent Circle Line walkability",
+          "Near Nex mall and reputable schools — strong tenant/family demand",
+          "Deep, reliable transaction history"
+        ],
+        "rental_assessment": "Strong 2BR rental demand from MRT proximity, Nex, and school catchment; among the better rental locations in the batch.",
+        "appreciation_assessment": "Reliable 6.6%/yr historical URA, but the leasehold age and full-median pricing cap forward upside to around district-typical.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-springbloom-60098317",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

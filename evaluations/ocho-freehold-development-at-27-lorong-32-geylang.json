@@ -1,0 +1,61 @@
+{
+  "condo": "OCHO - Freehold Development at 27 Lorong 32 Geylang",
+  "slug": "ocho-freehold-development-at-27-lorong-32-geylang",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Same Ocho freehold development (27 Lorong 32 Geylang, D14), a 4BR (1205 sqft) at $2.2M / $1826 PSF, completing 2028, ~810m to Dakota MRT (CC8). Freehold near the Circle Line is appealing, but this is a small Geylang boutique with no resale data to verify pricing or exit liquidity.",
+      "rating_rationale": "Freehold, ~810m to Dakota MRT (CC8), Paya Lebar Central nearby, and a nearer 2028 completion than the sister listing. But there is no URA appreciation, txn count, or median PSF to verify the $1826 PSF, and small Geylang-fringe freehold blocks are illiquid and stigma-prone. A reasonable freehold play but unverifiable as an investment, so Neutral.",
+      "red_flags": [
+        "No URA appreciation, txn count, or median PSF — pricing unverifiable",
+        "Small boutique Geylang development — limited liquidity, location stigma",
+        "Under-construction (2028 TOP) — no near-term rental and build-quality unknown"
+      ],
+      "catalysts": [
+        "Freehold tenure ~810m to Dakota MRT (Circle Line)",
+        "Paya Lebar Central transformation lifting the D14 corridor",
+        "New-build product"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1825.73,
+        "beds": 4,
+        "sqft": 1205.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Same Ocho freehold development (27 Lorong 32 Geylang, D14), a 4BR (1205 sqft) at $2.2M / $1826 PSF, completing 2028, ~810m to Dakota MRT (CC8). Freehold near the Circle Line is appealing, but this is a small Geylang boutique with no resale data to verify pricing or exit liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, ~810m to Dakota MRT (CC8), Paya Lebar Central nearby, and a nearer 2028 completion than the sister listing. But there is no URA appreciation, txn count, or median PSF to verify the $1826 PSF, and small Geylang-fringe freehold blocks are illiquid and stigma-prone. A reasonable freehold play but unverifiable as an investment, so Neutral.",
+        "red_flags": [
+          "No URA appreciation, txn count, or median PSF — pricing unverifiable",
+          "Small boutique Geylang development — limited liquidity, location stigma",
+          "Under-construction (2028 TOP) — no near-term rental and build-quality unknown"
+        ],
+        "catalysts": [
+          "Freehold tenure ~810m to Dakota MRT (Circle Line)",
+          "Paya Lebar Central transformation lifting the D14 corridor",
+          "New-build product"
+        ],
+        "rental_assessment": "On completion, Circle-Line proximity to CBD/business hubs supports moderate demand; 4BR is family-only and boutique scale limits the pool.",
+        "appreciation_assessment": "Unverifiable. Freehold D14 near the Circle Line should hold value, but boutique illiquidity and absent data prevent a confident upside call.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ocho-freehold-development-at-27-lorong-32-geylang-25508224",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

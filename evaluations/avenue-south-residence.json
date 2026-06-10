@@ -1,0 +1,117 @@
+{
+  "condo": "Avenue South Residence",
+  "slug": "avenue-south-residence",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 527 sqft 99-yr-leasehold 1BR at Avenue South Residence (TOP 2023, D03) for $900k / $1,708 PSF, in the Greater Southern Waterfront corridor. A large, liquid 509-txn development at a sub-$1M quantum and ~24% below the $2,258 median PSF, but the new-launch-adjusted appreciation is essentially flat (~0.05-0.22%/yr) and Cantonment MRT is a poor 1.2km away.",
+      "rating_rationale": "The post-new-launch-bias appreciation prints near-zero (0.05% adjusted / 0.22% resale-only) on a reliable 509-txn base — early resale buyers paid developer-inflated prices and gains have stalled. The $900k quantum and apparent ~24% discount to median PSF are attractive, but that median is inflated by larger/premium units; this shoebox at $1,708 PSF is not a true bargain. GSW is a real long-term catalyst, but 1.2km to the nearest MRT is weak. Balanced: strong liquidity and GSW upside vs flat realized appreciation and poor transit.",
+      "red_flags": [
+        "New-launch-adjusted appreciation ~0.05%/yr on a reliable 509-txn base — gains stalled post-launch",
+        "1.2km / 15-min to Cantonment MRT — weak transit for a shoebox",
+        "1BR shoebox — niche resale segment despite the large development"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D03/D04) — major long-term uplift",
+        "Sub-$1M quantum + very liquid 509-txn / large development",
+        "Prince Charles Crescent / future MRT and waterfront connectivity"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1707.78,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 527 sqft 99-yr-leasehold 1BR at Avenue South Residence (TOP 2023, D03) for $900k / $1,708 PSF, in the Greater Southern Waterfront corridor. A large, liquid 509-txn development at a sub-$1M quantum and ~24% below the $2,258 median PSF, but the new-launch-adjusted appreciation is essentially flat (~0.05-0.22%/yr) and Cantonment MRT is a poor 1.2km away.",
+        "rating": "Neutral",
+        "rating_rationale": "The post-new-launch-bias appreciation prints near-zero (0.05% adjusted / 0.22% resale-only) on a reliable 509-txn base — early resale buyers paid developer-inflated prices and gains have stalled. The $900k quantum and apparent ~24% discount to median PSF are attractive, but that median is inflated by larger/premium units; this shoebox at $1,708 PSF is not a true bargain. GSW is a real long-term catalyst, but 1.2km to the nearest MRT is weak. Balanced: strong liquidity and GSW upside vs flat realized appreciation and poor transit.",
+        "red_flags": [
+          "New-launch-adjusted appreciation ~0.05%/yr on a reliable 509-txn base — gains stalled post-launch",
+          "1.2km / 15-min to Cantonment MRT — weak transit for a shoebox",
+          "1BR shoebox — niche resale segment despite the large development"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D03/D04) — major long-term uplift",
+          "Sub-$1M quantum + very liquid 509-txn / large development",
+          "Prince Charles Crescent / future MRT and waterfront connectivity"
+        ],
+        "rental_assessment": "CBD-fringe location near Outram/GSW draws professional tenants and a shoebox lets easily; yield is the main near-term return given flat appreciation.",
+        "appreciation_assessment": "Realized appreciation is flat post-launch (509 txns, reliable). GSW is the upside thesis but it is a multi-year story; near-term I expect muted gains until waterfront catalysts materialize.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "Flat realized URA (0.05-0.22%) plus GSW long-run optionality — blended"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avenue-south-residence-500162947",
+        "review_file": "cov_batch_15.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "The dossier price is almost certainly a mis-scrape: a 527sqft 1BR at $900k/$1,707 psf is far below every verified recent transaction (~$2,050-$2,750 psf), so the headline 'cheapness' is a data artifact, not a buyable bargain.",
+      "rating_rationale": "Every verified recent comp for the identical 527sqft 1BR at Avenue South Residence trades $2,049-$2,751 psf (12-month average ~$2,252 psf; 6-month ~$2,241). The dossier's $1,707 psf ($900k) is ~24% below the cheapest real listing and would be unprecedented for a 2023-TOP RCR project by UOL/UIC/Kheng Leong. The -31.1% age-adj premium and -18.2% psf-vs-cohort are therefore driven by a bad price input, not genuine value. The underlying asset is high quality (award-winning UOL development, Greater Southern Waterfront and future Cantonment/Keppel CCL stations are real catalysts), but I cannot rate a Buy on a price that does not exist in the market. If the true asking is ~$1.18-1.35m it would be merely market-priced, not a bargain. Rating the data-as-presented: Avoid (unverifiable/erroneous price).",
+      "red_flags": [
+        "Asking $1,707 psf is ~24% below the lowest verified recent 527sqft 1BR transaction (~$2,049 psf) - strong indicator of a mis-scraped or stale price",
+        "If price were real it would imply a distressed/erroneous listing that is unlikely to complete at that figure",
+        "The model's -31.1% and -18.2% discounts are artifacts of the bad price, not corroborated value"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront redevelopment (long-dated)",
+        "Upcoming Cantonment and Keppel Circle Line MRT stations",
+        "Award-winning UOL/UIC/Kheng Leong build quality"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1707.78,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "high",
+        "summary": "The dossier price is almost certainly a mis-scrape: a 527sqft 1BR at $900k/$1,707 psf is far below every verified recent transaction (~$2,050-$2,750 psf), so the headline 'cheapness' is a data artifact, not a buyable bargain.",
+        "rating_rationale": "Every verified recent comp for the identical 527sqft 1BR at Avenue South Residence trades $2,049-$2,751 psf (12-month average ~$2,252 psf; 6-month ~$2,241). The dossier's $1,707 psf ($900k) is ~24% below the cheapest real listing and would be unprecedented for a 2023-TOP RCR project by UOL/UIC/Kheng Leong. The -31.1% age-adj premium and -18.2% psf-vs-cohort are therefore driven by a bad price input, not genuine value. The underlying asset is high quality (award-winning UOL development, Greater Southern Waterfront and future Cantonment/Keppel CCL stations are real catalysts), but I cannot rate a Buy on a price that does not exist in the market. If the true asking is ~$1.18-1.35m it would be merely market-priced, not a bargain. Rating the data-as-presented: Avoid (unverifiable/erroneous price).",
+        "red_flags": [
+          "Asking $1,707 psf is ~24% below the lowest verified recent 527sqft 1BR transaction (~$2,049 psf) - strong indicator of a mis-scraped or stale price",
+          "If price were real it would imply a distressed/erroneous listing that is unlikely to complete at that figure",
+          "The model's -31.1% and -18.2% discounts are artifacts of the bad price, not corroborated value"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront redevelopment (long-dated)",
+          "Upcoming Cantonment and Keppel Circle Line MRT stations",
+          "Award-winning UOL/UIC/Kheng Leong build quality"
+        ],
+        "appreciation_assessment": "Trailing appreciation is ~0 (0.22% on 509 resale-only txns) and forward case is RCR-baseline (~+3.5%); irrelevant here because the entry price is unverifiable.",
+        "rental_assessment": "Newer 527sqft RCR 1BR near future CCL stations would rent well in reality, but yield math is meaningless against a phantom price."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avenue-south-residence-500162947",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

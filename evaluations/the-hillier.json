@@ -1,0 +1,61 @@
+{
+  "condo": "The Hillier",
+  "slug": "the-hillier",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 581 sqft 99-year leasehold 1BR in D23 Hillview at $1463 PSF / $850k, 460m from DT3 Hillview MRT. The appreciation rate is the most statistically robust in the batch (153 txns) — and it is essentially flat at ~0.8%/yr, a strong negative signal.",
+      "rating_rationale": "A high-confidence 153-txn URA series shows just ~0.8%/yr appreciation — effectively flat for a decade, the clearest underperformance in the batch. The Hillier is a known mixed-use leasehold with persistent oversupply/weak demand; 99-yr tenure plus a 2016 build means lease decay is already in play. Lowest Elo (936) and worst record (100-194). The well-measured near-zero growth makes this an Avoid regardless of the convenient MRT.",
+      "red_flags": [
+        "~0.8%/yr appreciation on a robust 153-txn series — high-confidence flat performance",
+        "99-year leasehold from 2016 — lease decay underway, no freehold cushion",
+        "Worst Elo (936) and record (100-194-21) in the batch",
+        "Mixed-use 1BR — historically soft demand and oversupply at The Hillier"
+      ],
+      "catalysts": [
+        "460m to DT3 Hillview MRT (Downtown Line)",
+        "Mixed-use convenience (HillV2 mall integration)"
+      ],
+      "as_of": {
+        "price": 849888,
+        "psf": 1462.8,
+        "beds": 1,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 581 sqft 99-year leasehold 1BR in D23 Hillview at $1463 PSF / $850k, 460m from DT3 Hillview MRT. The appreciation rate is the most statistically robust in the batch (153 txns) — and it is essentially flat at ~0.8%/yr, a strong negative signal.",
+        "rating": "Avoid",
+        "rating_rationale": "A high-confidence 153-txn URA series shows just ~0.8%/yr appreciation — effectively flat for a decade, the clearest underperformance in the batch. The Hillier is a known mixed-use leasehold with persistent oversupply/weak demand; 99-yr tenure plus a 2016 build means lease decay is already in play. Lowest Elo (936) and worst record (100-194). The well-measured near-zero growth makes this an Avoid regardless of the convenient MRT.",
+        "red_flags": [
+          "~0.8%/yr appreciation on a robust 153-txn series — high-confidence flat performance",
+          "99-year leasehold from 2016 — lease decay underway, no freehold cushion",
+          "Worst Elo (936) and record (100-194-21) in the batch",
+          "Mixed-use 1BR — historically soft demand and oversupply at The Hillier"
+        ],
+        "catalysts": [
+          "460m to DT3 Hillview MRT (Downtown Line)",
+          "Mixed-use convenience (HillV2 mall integration)"
+        ],
+        "rental_assessment": "MRT-adjacent mixed-use 1BR rents to singles, but Hillview's tenant pool is modest and the abundant stock keeps rents and yields unremarkable.",
+        "appreciation_assessment": "The 153-txn series is the most reliable signal in the batch and it says ~0.8%/yr — near-zero real growth. This is well-measured underperformance, not noise; expect continued lag over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-hillier-500145475",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

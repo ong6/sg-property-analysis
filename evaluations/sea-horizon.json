@@ -1,0 +1,119 @@
+{
+  "condo": "Sea Horizon",
+  "slug": "sea-horizon",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 4BR (1335sqft) at Sea Horizon, a 2017 99yr (privatised EC) in Pasir Ris D18, at $1.749M / $1,310 PSF — the lowest PSF in its bracket and sitting in the liquid sub-$1.8M band. Strong arena record (238-179, Elo 1350) but no URA project data and no MRT walkability captured.",
+      "rating_rationale": "$1,310 PSF for a young (2017) 1335sqft 4BR is good value on a PSF basis and the $1.749M ticket is liquid for D18 families. Strong Elo 1350 / 238-179 record. However no URA appreciation/median data exists (regional prior only), no MRT info is captured (Pasir Ris/Sea Horizon is not MRT-adjacent), and as a privatised EC the prestige ceiling is lower. Pasir Ris CRL interchange + town redevelopment are real D18 catalysts.",
+      "red_flags": [
+        "No URA appreciation or median PSF data (regional prior)",
+        "No walkable MRT captured for the development",
+        "Privatised EC — caps premium vs true private condo"
+      ],
+      "catalysts": [
+        "Pasir Ris CRL interchange + Pasir Ris town redevelopment",
+        "Low entry PSF leaves room vs newer D18 launches",
+        "Privatisation complete (open buyer pool)"
+      ],
+      "as_of": {
+        "price": 1749000,
+        "psf": 1310.11,
+        "beds": 4,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 4BR (1335sqft) at Sea Horizon, a 2017 99yr (privatised EC) in Pasir Ris D18, at $1.749M / $1,310 PSF — the lowest PSF in its bracket and sitting in the liquid sub-$1.8M band. Strong arena record (238-179, Elo 1350) but no URA project data and no MRT walkability captured.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,310 PSF for a young (2017) 1335sqft 4BR is good value on a PSF basis and the $1.749M ticket is liquid for D18 families. Strong Elo 1350 / 238-179 record. However no URA appreciation/median data exists (regional prior only), no MRT info is captured (Pasir Ris/Sea Horizon is not MRT-adjacent), and as a privatised EC the prestige ceiling is lower. Pasir Ris CRL interchange + town redevelopment are real D18 catalysts.",
+        "red_flags": [
+          "No URA appreciation or median PSF data (regional prior)",
+          "No walkable MRT captured for the development",
+          "Privatised EC — caps premium vs true private condo"
+        ],
+        "catalysts": [
+          "Pasir Ris CRL interchange + Pasir Ris town redevelopment",
+          "Low entry PSF leaves room vs newer D18 launches",
+          "Privatisation complete (open buyer pool)"
+        ],
+        "rental_assessment": "Pasir Ris family rental demand is moderate; large 4BR rents to families, yield ordinary.",
+        "appreciation_assessment": "OCR-baseline expectation; the low PSF gives some margin but no project signal to confirm outperformance.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR D18 baseline (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sea-horizon-500066220",
+        "review_file": "cov_batch_26.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Pasir Ris EC (built 2017) priced at $1,256 psf — the bottom of the project's own $1,212-1,573 range — in the OCR region that the backtest shows has the strongest realized forward return (+4.0%). The asking is genuinely cheap (-19.6% age-adj vs district) and the EC privatization in ~2027 is a concrete near-term catalyst.",
+      "rating_rationale": "Asking $1,255.82 psf is at the floor of Sea Horizon's verified range ($1,212-1,573 psf, median project price $1.62M). The 'very_low_psf' flag is real but explained — this is an EC, which structurally trades below private condos until/after the 10-year privatization mark, due ~2027 from a 2017 completion; that privatization typically re-rates ECs upward as the full buyer pool opens. D18/OCR carries the best backtested forward prior (+4.0% vs CCR +0.7%). Rental ~$3.57 psf supports a ~3.4-3.5% gross yield. age_adj_premium -19.6% confirms it is cheap for its age. Confidence held at medium (not high) because appreciation is regional_baseline (0 txns), the unit is 1.1km from Pasir Ris MRT, and the EC has noted management/parking gripes.",
+      "red_flags": [
+        "very_low_psf flag — partly structural (EC trades below private condos), not pure bargain",
+        "appreciation is regional_baseline with 0 project transactions — no project-specific forward signal",
+        "1.1km (~14 min) walk to Pasir Ris MRT, not within comfortable walking distance",
+        "resident reviews cite management/parking enforcement friction"
+      ],
+      "catalysts": [
+        "EC privatization ~2027 (10yr from 2017 TOP) opening the full resale buyer pool",
+        "Pasir Ris town rejuvenation / Pasir Ris Mall and Cross Island Line connectivity nearby",
+        "OCR region carries the strongest backtested forward return"
+      ],
+      "as_of": {
+        "price": 1000888,
+        "psf": 1255.82,
+        "beds": 2,
+        "sqft": 797
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Pasir Ris EC (built 2017) priced at $1,256 psf — the bottom of the project's own $1,212-1,573 range — in the OCR region that the backtest shows has the strongest realized forward return (+4.0%). The asking is genuinely cheap (-19.6% age-adj vs district) and the EC privatization in ~2027 is a concrete near-term catalyst.",
+        "rating_rationale": "Asking $1,255.82 psf is at the floor of Sea Horizon's verified range ($1,212-1,573 psf, median project price $1.62M). The 'very_low_psf' flag is real but explained — this is an EC, which structurally trades below private condos until/after the 10-year privatization mark, due ~2027 from a 2017 completion; that privatization typically re-rates ECs upward as the full buyer pool opens. D18/OCR carries the best backtested forward prior (+4.0% vs CCR +0.7%). Rental ~$3.57 psf supports a ~3.4-3.5% gross yield. age_adj_premium -19.6% confirms it is cheap for its age. Confidence held at medium (not high) because appreciation is regional_baseline (0 txns), the unit is 1.1km from Pasir Ris MRT, and the EC has noted management/parking gripes.",
+        "red_flags": [
+          "very_low_psf flag — partly structural (EC trades below private condos), not pure bargain",
+          "appreciation is regional_baseline with 0 project transactions — no project-specific forward signal",
+          "1.1km (~14 min) walk to Pasir Ris MRT, not within comfortable walking distance",
+          "resident reviews cite management/parking enforcement friction"
+        ],
+        "catalysts": [
+          "EC privatization ~2027 (10yr from 2017 TOP) opening the full resale buyer pool",
+          "Pasir Ris town rejuvenation / Pasir Ris Mall and Cross Island Line connectivity nearby",
+          "OCR region carries the strongest backtested forward return"
+        ],
+        "rental_assessment": "Project rents ~$3.57-3.60 psf over the past year; on $1.00M an 797 sqft 2BR implies roughly $2,850/mo and a ~3.4% gross yield — typical for an OCR EC, supported by proximity to Pasir Ris Park/beach and family demand.",
+        "appreciation_assessment": "Algo uses 4.0% regional baseline (0 txns), so treat as story not forecast. Real forward edge here is value (bottom-of-range PSF) plus the EC-privatization re-rating, both in the favored OCR region."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sea-horizon-500054553",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

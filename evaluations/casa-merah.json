@@ -1,0 +1,61 @@
+{
+  "condo": "Casa Merah",
+  "slug": "casa-merah",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 556-unit 99-year leasehold condo in Tanah Merah (D16), 450m from EW4 Tanah Merah MRT interchange, with a deep 118-txn URA series at 5.9%/yr. This 4BR at $1,612 psf is ~5% above the $1,535 median, and a $2.5M leasehold 4BR is a narrower OCR exit than the dev's broader resale market.",
+      "rating_rationale": "Casa Merah is a solid, liquid Tanah Merah development — 556 units and 118 URA transactions support a reliable 5.9%/yr rate, and EW4 Tanah Merah (interchange for the Changi Airport branch) at 450m gives strong East-West Line connectivity plus TEL/Bayshore-precinct spillover. The reservations keep it at Neutral: the 4BR is listed ~5% ABOVE the $1,535 project median (a premium, not a discount); at $2.5M for a 99-year leasehold (2009, ~82 years left) the 4BR buyer pool is thinner than the project's 2-3BR resale market; and D16 OCR large-family units appreciate more slowly per sqft. A dependable asset bought slightly above median in the less-liquid unit type — Neutral.",
+      "red_flags": [
+        "Listed ~5% above the project URA median — paying a premium",
+        "$2.5M leasehold 4BR — narrower OCR exit than the 2-3BR market",
+        "Leasehold; OCR large-family units appreciate slower per sqft"
+      ],
+      "catalysts": [
+        "450m to EW4 Tanah Merah MRT interchange — strong East-West connectivity",
+        "Bayshore precinct / TEL and Upper East Coast transformation spillover",
+        "Large 556-unit development = deep buyer pool, reliable 5.9%/yr URA"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1612.9,
+        "beds": 4,
+        "sqft": 1550.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 556-unit 99-year leasehold condo in Tanah Merah (D16), 450m from EW4 Tanah Merah MRT interchange, with a deep 118-txn URA series at 5.9%/yr. This 4BR at $1,612 psf is ~5% above the $1,535 median, and a $2.5M leasehold 4BR is a narrower OCR exit than the dev's broader resale market.",
+        "rating": "Neutral",
+        "rating_rationale": "Casa Merah is a solid, liquid Tanah Merah development — 556 units and 118 URA transactions support a reliable 5.9%/yr rate, and EW4 Tanah Merah (interchange for the Changi Airport branch) at 450m gives strong East-West Line connectivity plus TEL/Bayshore-precinct spillover. The reservations keep it at Neutral: the 4BR is listed ~5% ABOVE the $1,535 project median (a premium, not a discount); at $2.5M for a 99-year leasehold (2009, ~82 years left) the 4BR buyer pool is thinner than the project's 2-3BR resale market; and D16 OCR large-family units appreciate more slowly per sqft. A dependable asset bought slightly above median in the less-liquid unit type — Neutral.",
+        "red_flags": [
+          "Listed ~5% above the project URA median — paying a premium",
+          "$2.5M leasehold 4BR — narrower OCR exit than the 2-3BR market",
+          "Leasehold; OCR large-family units appreciate slower per sqft"
+        ],
+        "catalysts": [
+          "450m to EW4 Tanah Merah MRT interchange — strong East-West connectivity",
+          "Bayshore precinct / TEL and Upper East Coast transformation spillover",
+          "Large 556-unit development = deep buyer pool, reliable 5.9%/yr URA"
+        ],
+        "rental_assessment": "Good East-side tenant demand (airport, Changi Business Park, expat families near schools); a 1,550 sqft 4BR rents inefficiently per sqft but draws family tenants.",
+        "appreciation_assessment": "5.9%/yr URA is reliable, but the above-median entry and large-leasehold-unit drag cap forward return to around district-typical.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-merah-60219383",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

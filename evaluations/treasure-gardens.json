@@ -1,0 +1,61 @@
+{
+  "condo": "Treasure Gardens",
+  "slug": "treasure-gardens",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Tiny 22-unit 2005 freehold walk-up apartment in Hougang with only ~10 lifetime sale transactions. The algo's cheap read rests on a single comparable (psf_cohort_txns=1) — a data quirk, not a bargain — and the asset is structurally illiquid.",
+      "rating_rationale": "Web check confirms Treasure Gardens is a 22-unit freehold completed 2005 (Teow Hock Ave, Hougang) with only ~10 sale transactions in its ENTIRE history and 38 lifetime rentals. The algo's -12.2% age-adj-cheap and 7.3% psf-vs-cohort are computed off psf_cohort_txns=1 and appreciation_txns=5 — essentially noise; per v3.4 priors a big premium on 1-2 comparables is a data quirk and must be discounted hard. The 'very_old_property' flag is real (21 yrs). At $1,308 psf for a 581 sqft old unit there's no verified, structural cheapness, and a near-dead resale market means real exit risk over a 5-7yr hold. Freehold is not a forward edge. Honest Avoid.",
+      "red_flags": [
+        "Only ~10 lifetime sale transactions — near-zero resale liquidity",
+        "Cheap read built on a single comparable (psf_cohort_txns=1) — data quirk",
+        "22-unit boutique 2005 walk-up: aging, limited facilities, narrow buyer pool",
+        "very_old_property flag (21 years) with no en-bloc-scale plot upside indicated"
+      ],
+      "catalysts": [
+        "Freehold tenure (but per v3.4 this is not a forward appreciation edge)",
+        "D19 OCR region carries above-average baseline forward appreciation"
+      ],
+      "as_of": {
+        "price": 760000,
+        "psf": 1308.09,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Tiny 22-unit 2005 freehold walk-up apartment in Hougang with only ~10 lifetime sale transactions. The algo's cheap read rests on a single comparable (psf_cohort_txns=1) — a data quirk, not a bargain — and the asset is structurally illiquid.",
+        "rating_rationale": "Web check confirms Treasure Gardens is a 22-unit freehold completed 2005 (Teow Hock Ave, Hougang) with only ~10 sale transactions in its ENTIRE history and 38 lifetime rentals. The algo's -12.2% age-adj-cheap and 7.3% psf-vs-cohort are computed off psf_cohort_txns=1 and appreciation_txns=5 — essentially noise; per v3.4 priors a big premium on 1-2 comparables is a data quirk and must be discounted hard. The 'very_old_property' flag is real (21 yrs). At $1,308 psf for a 581 sqft old unit there's no verified, structural cheapness, and a near-dead resale market means real exit risk over a 5-7yr hold. Freehold is not a forward edge. Honest Avoid.",
+        "red_flags": [
+          "Only ~10 lifetime sale transactions — near-zero resale liquidity",
+          "Cheap read built on a single comparable (psf_cohort_txns=1) — data quirk",
+          "22-unit boutique 2005 walk-up: aging, limited facilities, narrow buyer pool",
+          "very_old_property flag (21 years) with no en-bloc-scale plot upside indicated"
+        ],
+        "catalysts": [
+          "Freehold tenure (but per v3.4 this is not a forward appreciation edge)",
+          "D19 OCR region carries above-average baseline forward appreciation"
+        ],
+        "appreciation_assessment": "appreciation_pct=4.0 is a regional baseline placeholder (5 thin txns); no reliable project signal. Tiny illiquid block more likely lags than leads on a 5-7yr horizon.",
+        "rental_assessment": "Small FH 1BR can rent in Hougang, but only 38 lifetime rentals signals a shallow, sporadic rental market — hard to verify a dependable yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasure-gardens-25581551",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Stirling Residences",
+  "slug": "stirling-residences",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 441 sqft 1BR at Stirling Residences, a large, well-regarded 1,259-unit D03 leasehold near Queenstown MRT, asking $1.0M / $2,268 psf vs a $2,375 project median. Deep 426-txn liquidity and a sub-$1M entry are real strengths; shoebox format and high PSF temper the upside.",
+      "rating_rationale": "One of the more buyable shoeboxes in the batch: 426 URA txns with a 3.4% resale-only CAGR (reliable), a deep 1,259-unit base in D03 (Greater Southern Waterfront, TEL/Queenstown catchment), and listing PSF ~4.5% below the $2,375 project median. The $1.0M quantum keeps it within reach of a broad investor pool, and Queenstown's GSW transformation is a genuine forward catalyst. The 441 sqft size is small (capital growth in shoeboxes typically lags larger units) and PSF is high in absolute terms, but the combination of large liquid development + GSW location + below-median pricing tips this to a Buy.",
+      "red_flags": [
+        "441 sqft shoebox — shoebox capital growth tends to trail larger formats",
+        "High absolute PSF ($2,268) limits room for further re-rating",
+        "99yr leasehold from 2018-era launch"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D03)",
+        "1,259-unit highly liquid development, 426 URA txns",
+        "Listing ~4.5% below project median PSF; Queenstown MRT + TEL catchment"
+      ],
+      "as_of": {
+        "price": 999999,
+        "psf": 2267.57,
+        "beds": 1,
+        "sqft": 441.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 441 sqft 1BR at Stirling Residences, a large, well-regarded 1,259-unit D03 leasehold near Queenstown MRT, asking $1.0M / $2,268 psf vs a $2,375 project median. Deep 426-txn liquidity and a sub-$1M entry are real strengths; shoebox format and high PSF temper the upside.",
+        "rating": "Buy",
+        "rating_rationale": "One of the more buyable shoeboxes in the batch: 426 URA txns with a 3.4% resale-only CAGR (reliable), a deep 1,259-unit base in D03 (Greater Southern Waterfront, TEL/Queenstown catchment), and listing PSF ~4.5% below the $2,375 project median. The $1.0M quantum keeps it within reach of a broad investor pool, and Queenstown's GSW transformation is a genuine forward catalyst. The 441 sqft size is small (capital growth in shoeboxes typically lags larger units) and PSF is high in absolute terms, but the combination of large liquid development + GSW location + below-median pricing tips this to a Buy.",
+        "red_flags": [
+          "441 sqft shoebox — shoebox capital growth tends to trail larger formats",
+          "High absolute PSF ($2,268) limits room for further re-rating",
+          "99yr leasehold from 2018-era launch"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D03)",
+          "1,259-unit highly liquid development, 426 URA txns",
+          "Listing ~4.5% below project median PSF; Queenstown MRT + TEL catchment"
+        ],
+        "rental_assessment": "Strong: 1BR near Queenstown MRT with city-fringe/CBD access has a deep tenant pool; expect healthy occupancy and ~3.5-4% gross yield.",
+        "appreciation_assessment": "3.4% resale-only CAGR on 426 txns is reliable; GSW provides forward upside. Below-median entry adds a margin of safety on the price.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-stirling-residences-60040858",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

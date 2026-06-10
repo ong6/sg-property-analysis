@@ -1,0 +1,61 @@
+{
+  "condo": "Smailing Court",
+  "slug": "smailing-court",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft freehold 3BR at Smailing Court (D14 Kembangan, 2002) at $1.8M / $1,480 PSF, just 340m (4 min) from Kembangan MRT. Excellent transit access and a liquid quantum/size, but no URA appreciation data and a small older development temper conviction.",
+      "rating_rationale": "340m to Kembangan EWL MRT is a strong, durable location anchor, and $1.8M for a 1,216 sqft freehold 3BR sits in the deep buyer-pool band. score_1000 585 and a solid 294-224-51 arena record (elo 1253) are above-average. But no URA txn/appreciation data, a 2002 build, and a modest-sized development mean appreciation is unproven — good location, ordinary investment metrics.",
+      "red_flags": [
+        "No URA appreciation/txn data to verify growth",
+        "Small older (2002) development — limited liquidity vs large condos",
+        "D14 Kembangan with no specific new catalyst beyond existing MRT"
+      ],
+      "catalysts": [
+        "340m (4 min) walk to Kembangan EWL MRT — prime transit",
+        "Freehold 1,216 sqft 3BR at liquid $1.8M family quantum",
+        "D14 benefits from Paya Lebar Central transformation in the wider district"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1480.26,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft freehold 3BR at Smailing Court (D14 Kembangan, 2002) at $1.8M / $1,480 PSF, just 340m (4 min) from Kembangan MRT. Excellent transit access and a liquid quantum/size, but no URA appreciation data and a small older development temper conviction.",
+        "rating": "Neutral",
+        "rating_rationale": "340m to Kembangan EWL MRT is a strong, durable location anchor, and $1.8M for a 1,216 sqft freehold 3BR sits in the deep buyer-pool band. score_1000 585 and a solid 294-224-51 arena record (elo 1253) are above-average. But no URA txn/appreciation data, a 2002 build, and a modest-sized development mean appreciation is unproven — good location, ordinary investment metrics.",
+        "red_flags": [
+          "No URA appreciation/txn data to verify growth",
+          "Small older (2002) development — limited liquidity vs large condos",
+          "D14 Kembangan with no specific new catalyst beyond existing MRT"
+        ],
+        "catalysts": [
+          "340m (4 min) walk to Kembangan EWL MRT — prime transit",
+          "Freehold 1,216 sqft 3BR at liquid $1.8M family quantum",
+          "D14 benefits from Paya Lebar Central transformation in the wider district"
+        ],
+        "rental_assessment": "Freehold 3BR steps from Kembangan MRT with easy CBD/airport access draws families and expats; reliable tenant demand for the East.",
+        "appreciation_assessment": "No project-specific URA data; freehold + top-tier MRT access is a floor, but unproven appreciation keeps this neutral rather than a buy.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-smailing-court-500142755",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

@@ -54,6 +54,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-jadescape-500158469",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Genuinely the cheapest 1BR in a strong, recently-completed Marymount-MRT project — verified cheap vs real transactions, with a dated MRT + Bishan sub-regional-centre catalyst.",
+      "rating_rationale": "Asking $998K / $1,894 psf for a 527 sqft 1BR is the lowest live 1BR listing in JadeScape — comparable 527 sqft 1BRs are listed at $1,030K-$1,144K (~$1,955-$2,170 psf) and project 12mo avg is $2,322 psf, so the -16.3% age-adj and -7.5% vs same-size cohort (25 txns, healthy depth; 347 project appreciation txns) are corroborated by real web transactions, not a data quirk. Catalyst is concrete: <200m to Marymount MRT and URA Master Plan upgrading Bishan into a sub-regional employment node. D20 sits on the OCR/RCR border, the better forward-return region in the v3.4 priors. Built 2022/2023 by reputable Qingjian (smart-home, good BCA track record). Lead value signal (cheap vs verified peers) + decisive physical catalyst justifies high confidence; tempered to Buy (not Strong Buy) because $1,894 psf is still a rich absolute entry for a 527 sqft shoebox and 1BR exit liquidity depends on the rental/investor pool.",
+      "red_flags": [
+        "High absolute PSF (~$1,894) for a 527 sqft shoebox",
+        "Shoebox 1BR exit depends on a narrower investor/tenant pool",
+        "Leasehold from 2018 — ~91yrs left, fine now but decays"
+      ],
+      "catalysts": [
+        "<200m to Marymount MRT (Circle Line)",
+        "URA Master Plan: Bishan to become a sub-regional employment centre",
+        "Cheapest live 1BR in a desirable 2022/2023 Qingjian project — entry-point arbitrage"
+      ],
+      "as_of": {
+        "price": 998000,
+        "psf": 1893.74,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "Genuinely the cheapest 1BR in a strong, recently-completed Marymount-MRT project — verified cheap vs real transactions, with a dated MRT + Bishan sub-regional-centre catalyst.",
+        "rating_rationale": "Asking $998K / $1,894 psf for a 527 sqft 1BR is the lowest live 1BR listing in JadeScape — comparable 527 sqft 1BRs are listed at $1,030K-$1,144K (~$1,955-$2,170 psf) and project 12mo avg is $2,322 psf, so the -16.3% age-adj and -7.5% vs same-size cohort (25 txns, healthy depth; 347 project appreciation txns) are corroborated by real web transactions, not a data quirk. Catalyst is concrete: <200m to Marymount MRT and URA Master Plan upgrading Bishan into a sub-regional employment node. D20 sits on the OCR/RCR border, the better forward-return region in the v3.4 priors. Built 2022/2023 by reputable Qingjian (smart-home, good BCA track record). Lead value signal (cheap vs verified peers) + decisive physical catalyst justifies high confidence; tempered to Buy (not Strong Buy) because $1,894 psf is still a rich absolute entry for a 527 sqft shoebox and 1BR exit liquidity depends on the rental/investor pool.",
+        "appreciation_assessment": "Reported 5.87% URA 5yr CAGR on 347 txns is real but treated only as story per v3.4 (trailing appreciation ~0 forward power). Forward case rests on value + catalyst, not extrapolated CAGR.",
+        "rental_assessment": "527 sqft 1BR at ~$3,000+/mo achievable given Marymount/Bishan demand and direct MRT access; ~$1.0M entry supports a competitive shoebox gross yield (~3.5-4%).",
+        "red_flags": [
+          "High absolute PSF (~$1,894) for a 527 sqft shoebox",
+          "Shoebox 1BR exit depends on a narrower investor/tenant pool",
+          "Leasehold from 2018 — ~91yrs left, fine now but decays"
+        ],
+        "catalysts": [
+          "<200m to Marymount MRT (Circle Line)",
+          "URA Master Plan: Bishan to become a sub-regional employment centre",
+          "Cheapest live 1BR in a desirable 2022/2023 Qingjian project — entry-point arbitrage"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jadescape-500087145",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

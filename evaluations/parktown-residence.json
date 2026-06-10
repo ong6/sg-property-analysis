@@ -1,0 +1,63 @@
+{
+  "condo": "PARKTOWN Residence",
+  "slug": "parktown-residence",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1,335sqft 4BR at PARKTOWN Residence, Tampines North's integrated mega-development (1,193 units, bus interchange/hawker/CC, direct CRL access), at $2.525M / $1,891 PSF — well below the $2,308 project median. The integrated-development + CRL catalyst is among the strongest in the batch, though it is an unbuilt 2028/2030-TOP new launch at investment-thin yield.",
+      "rating_rationale": "Web check confirms this is a true integrated development (UOL/CapitaLand/SingLand) with a co-located bus interchange, hawker centre, community club and direct access to the upcoming Tampines North CRL station — a durable, scarce advantage that supports both rental and resale. The $1,891 PSF asking is a meaningful discount to the $2,308 project median (and below the ~$2,360 launch benchmark), an efficient 1,335sqft 4BR at $2.525M is at the band ceiling but justified by the format/location, and the huge 1,193-unit project plus 1,164-transaction depth means strong liquidity. Caveats: 99LH, new-launch bias on any rate, and 2030 TOP push the effective hold horizon out. The integrated/CRL catalyst and below-median entry tip this to Buy.",
+      "red_flags": [
+        "Unbuilt new launch — no resale history, new-launch bias flagged; ~2030 TOP pushes out the hold horizon",
+        "$2.525M is at the top of the deep buyer band for an OCR 4BR",
+        "99LH tenure; 720m walk to the (future) CRL station"
+      ],
+      "catalysts": [
+        "True integrated development — bus interchange, hawker centre, CC co-located; scarce and demand-durable",
+        "Direct access to Tampines North MRT on the Cross Island Line (~2030)",
+        "$1,891 PSF below the $2,308 project median / ~$2,360 launch benchmark",
+        "1,193-unit mega-project with deep liquidity and strong sales velocity"
+      ],
+      "as_of": {
+        "price": 2525000,
+        "psf": 1891.39,
+        "beds": 4,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,335sqft 4BR at PARKTOWN Residence, Tampines North's integrated mega-development (1,193 units, bus interchange/hawker/CC, direct CRL access), at $2.525M / $1,891 PSF — well below the $2,308 project median. The integrated-development + CRL catalyst is among the strongest in the batch, though it is an unbuilt 2028/2030-TOP new launch at investment-thin yield.",
+        "rating": "Buy",
+        "rating_rationale": "Web check confirms this is a true integrated development (UOL/CapitaLand/SingLand) with a co-located bus interchange, hawker centre, community club and direct access to the upcoming Tampines North CRL station — a durable, scarce advantage that supports both rental and resale. The $1,891 PSF asking is a meaningful discount to the $2,308 project median (and below the ~$2,360 launch benchmark), an efficient 1,335sqft 4BR at $2.525M is at the band ceiling but justified by the format/location, and the huge 1,193-unit project plus 1,164-transaction depth means strong liquidity. Caveats: 99LH, new-launch bias on any rate, and 2030 TOP push the effective hold horizon out. The integrated/CRL catalyst and below-median entry tip this to Buy.",
+        "red_flags": [
+          "Unbuilt new launch — no resale history, new-launch bias flagged; ~2030 TOP pushes out the hold horizon",
+          "$2.525M is at the top of the deep buyer band for an OCR 4BR",
+          "99LH tenure; 720m walk to the (future) CRL station"
+        ],
+        "catalysts": [
+          "True integrated development — bus interchange, hawker centre, CC co-located; scarce and demand-durable",
+          "Direct access to Tampines North MRT on the Cross Island Line (~2030)",
+          "$1,891 PSF below the $2,308 project median / ~$2,360 launch benchmark",
+          "1,193-unit mega-project with deep liquidity and strong sales velocity"
+        ],
+        "rental_assessment": "An integrated development atop a CRL station with a bus interchange and hawker centre will command premium rental demand in Tampines North on completion — among the best rental profiles in the batch.",
+        "appreciation_assessment": "No resale history yet and new-launch bias applies, but the integrated-transport scarcity, CRL uplift and below-median entry PSF give a credible appreciation case once the project matures and the CRL opens.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parktown-residence-25497401",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

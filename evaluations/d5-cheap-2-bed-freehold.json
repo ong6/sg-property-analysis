@@ -1,0 +1,63 @@
+{
+  "condo": "D5 cheap 2 bed , freehold",
+  "slug": "d5-cheap-2-bed-freehold",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A poorly-specified listing ('D5 cheap 2 bed, freehold') with no built_year, an inflated $2,153 PSF, and the worst arena profile in the batch (Elo 900, 91-216-8). Bed-count is ambiguous (titled 2BR, classed 1BR/743sqft) and the data is too thin and contradictory to underwrite at $1.6M.",
+      "rating_rationale": "$2,153 PSF is very high for D5 (West Coast/Clementi) for an undated unit — no built_year, no URA median, no txn count, no appreciation data. Listing title/bedroom mismatch (743sqft for a '2 bed' is tight) signals classification or data-quality problems. Elo 900 with a 91-216-8 record is the weakest in the batch. The '1 min from Haw Par Villa MRT' is almost certainly a data artifact. No defensible thesis at $1.6M with this PSF and missing fundamentals.",
+      "red_flags": [
+        "No built_year (age unknown — could be old leasehold-era stock)",
+        "$2,153 PSF well above typical D5 resale",
+        "Bedroom/title/size mismatch — data-quality red flag",
+        "Worst arena record in batch (91-216-8, Elo 900)",
+        "Suspicious '1m from MRT' geocoding"
+      ],
+      "catalysts": [
+        "One-North / D5 tech-employment district (generic, not project-specific)"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 2153.43,
+        "beds": 1,
+        "sqft": 743.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A poorly-specified listing ('D5 cheap 2 bed, freehold') with no built_year, an inflated $2,153 PSF, and the worst arena profile in the batch (Elo 900, 91-216-8). Bed-count is ambiguous (titled 2BR, classed 1BR/743sqft) and the data is too thin and contradictory to underwrite at $1.6M.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,153 PSF is very high for D5 (West Coast/Clementi) for an undated unit — no built_year, no URA median, no txn count, no appreciation data. Listing title/bedroom mismatch (743sqft for a '2 bed' is tight) signals classification or data-quality problems. Elo 900 with a 91-216-8 record is the weakest in the batch. The '1 min from Haw Par Villa MRT' is almost certainly a data artifact. No defensible thesis at $1.6M with this PSF and missing fundamentals.",
+        "red_flags": [
+          "No built_year (age unknown — could be old leasehold-era stock)",
+          "$2,153 PSF well above typical D5 resale",
+          "Bedroom/title/size mismatch — data-quality red flag",
+          "Worst arena record in batch (91-216-8, Elo 900)",
+          "Suspicious '1m from MRT' geocoding"
+        ],
+        "catalysts": [
+          "One-North / D5 tech-employment district (generic, not project-specific)"
+        ],
+        "rental_assessment": "Cannot assess reliably without verified unit type/size; West Coast rental is decent but PSF-implied yield here looks poor.",
+        "appreciation_assessment": "Unassessable — no URA data, no age; the high PSF and weak record argue against upside.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "Insufficient data — declined to estimate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d5-cheap-2-bed-freehold-500142685",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

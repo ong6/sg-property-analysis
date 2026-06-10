@@ -1,0 +1,59 @@
+{
+  "condo": "Seraya Residences",
+  "slug": "seraya-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D15 3BR (926 sqft) at $1.88M / $2,030 psf in a newer 2021 boutique near Marine Parade. Efficiently-sized compact 3BR at a sub-$2M quantum is appealing, but $2,030 psf is ~7% over the $1,894 median and the appreciation rate rides on only 7 transactions (the resale-only figure is a more sober 3.87%).",
+      "rating_rationale": "Modern 2021 freehold stock in D15 with an efficient 926 sqft 3BR layout and the new Marine Parade TEL nearby is a genuine plus, and the $1.88M quantum sits in the deep band. Held back by a ~7% premium over median PSF, thin 7-txn appreciation data (resale-only ~3.87% is the honest read), and boutique-scale liquidity. Net balanced.",
+      "red_flags": [
+        "Only 7 URA txns — appreciation unreliable; resale-only ~3.87%",
+        "PSF ~7% above $1,894 median",
+        "Boutique development — limited liquidity"
+      ],
+      "catalysts": [
+        "Modern 2021 freehold, efficient compact 3BR under $2M",
+        "Marine Parade TEL ~1km improving connectivity",
+        "D15 East Coast deep buyer pool"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 2030.24,
+        "beds": 3,
+        "sqft": 926.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D15 3BR (926 sqft) at $1.88M / $2,030 psf in a newer 2021 boutique near Marine Parade. Efficiently-sized compact 3BR at a sub-$2M quantum is appealing, but $2,030 psf is ~7% over the $1,894 median and the appreciation rate rides on only 7 transactions (the resale-only figure is a more sober 3.87%).",
+        "rating": "Neutral",
+        "rating_rationale": "Modern 2021 freehold stock in D15 with an efficient 926 sqft 3BR layout and the new Marine Parade TEL nearby is a genuine plus, and the $1.88M quantum sits in the deep band. Held back by a ~7% premium over median PSF, thin 7-txn appreciation data (resale-only ~3.87% is the honest read), and boutique-scale liquidity. Net balanced.",
+        "red_flags": [
+          "Only 7 URA txns — appreciation unreliable; resale-only ~3.87%",
+          "PSF ~7% above $1,894 median",
+          "Boutique development — limited liquidity"
+        ],
+        "catalysts": [
+          "Modern 2021 freehold, efficient compact 3BR under $2M",
+          "Marine Parade TEL ~1km improving connectivity",
+          "D15 East Coast deep buyer pool"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seraya-residences-500083757",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

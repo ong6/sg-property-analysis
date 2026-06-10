@@ -1,0 +1,61 @@
+{
+  "condo": "The Florida",
+  "slug": "the-florida",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A large 1,991 sqft 4BR at The Florida, a 2000-built 99-year leasehold in Hougang, asking $2.5M. Old leasehold, oversized unit, 1.22km from MRT and a low score (308) — the cheap-looking PSF masks a $2.5M, above-band, lease-decaying, illiquid product.",
+      "rating_rationale": "26-year-old 99-yr leasehold with ~73 years left and decaying; $1,256 psf is low only because the unit is 1,991 sqft, pushing total price to $2.5M above the liquid band. 15-min / 1.22km walk to Hougang MRT weakens demand, and the oversized layout shrinks the buyer pool. No URA data, but the structural strikes (age + size + transit distance + price) all point one way.",
+      "red_flags": [
+        "2000-build 99-yr leasehold — lease decay over the hold",
+        "Oversized 1,991 sqft pushes price to $2.5M, above the liquid band",
+        "1.22km / 15 min from Hougang MRT",
+        "Low score 982 Elo / 308 score_1000; no URA price signal"
+      ],
+      "catalysts": [
+        "D19 OCR growth, Hougang/Punggol corridor (diffuse, not unit-specific)"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1255.65,
+        "beds": 4,
+        "sqft": 1991.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,991 sqft 4BR at The Florida, a 2000-built 99-year leasehold in Hougang, asking $2.5M. Old leasehold, oversized unit, 1.22km from MRT and a low score (308) — the cheap-looking PSF masks a $2.5M, above-band, lease-decaying, illiquid product.",
+        "rating": "Avoid",
+        "rating_rationale": "26-year-old 99-yr leasehold with ~73 years left and decaying; $1,256 psf is low only because the unit is 1,991 sqft, pushing total price to $2.5M above the liquid band. 15-min / 1.22km walk to Hougang MRT weakens demand, and the oversized layout shrinks the buyer pool. No URA data, but the structural strikes (age + size + transit distance + price) all point one way.",
+        "red_flags": [
+          "2000-build 99-yr leasehold — lease decay over the hold",
+          "Oversized 1,991 sqft pushes price to $2.5M, above the liquid band",
+          "1.22km / 15 min from Hougang MRT",
+          "Low score 982 Elo / 308 score_1000; no URA price signal"
+        ],
+        "catalysts": [
+          "D19 OCR growth, Hougang/Punggol corridor (diffuse, not unit-specific)"
+        ],
+        "rental_assessment": "Large old unit far from MRT rents inefficiently; Hougang tenant demand is moderate and yield on $2.5M is poor.",
+        "appreciation_assessment": "Aging leasehold + illiquid size + transit distance argue for below-OCR-baseline appreciation; lease decay is a persistent drag.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "OCR baseline discounted heavily for age/lease decay/oversized illiquidity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-florida-500096950",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

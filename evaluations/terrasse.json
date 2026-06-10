@@ -1,0 +1,113 @@
+{
+  "condo": "Terrasse",
+  "slug": "terrasse",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "D19 1BR at Terrasse priced at $870k / $1617 PSF with a solid 5.1%/yr resale-only appreciation rate backed by 111 URA transactions, and a confirmed Cross Island Line catalyst (CR9 Serangoon North, ~2030) 420m away. Listing sits ~5% above the $1538 district median PSF, but the CRL station proximity and sub-$900k entry justify a modestly positive view.",
+      "rating_rationale": "Appreciation 5.1%/yr on a healthy 111-txn series (reliable, not thin), CRL station opening ~2030 within 420m is the strongest single future-uplift driver, and the $870k price keeps the buyer pool broad. PSF only ~5% over median is not overpriced. 1BR has a narrower owner-occupier pool but rents well in this established Serangoon Gardens fringe.",
+      "red_flags": [
+        "1BR is a niche resale segment vs 2BR",
+        "Listed ~5% above URA median PSF",
+        "Serangoon North is not a designated growth node beyond the CRL station itself"
+      ],
+      "catalysts": [
+        "Cross Island Line CR9 Serangoon North MRT ~2030 within 420m",
+        "Established mature-estate location with stable rental demand",
+        "Sub-$900k entry preserves wide buyer pool"
+      ],
+      "as_of": {
+        "price": 870000,
+        "psf": 1617.1,
+        "beds": 1,
+        "sqft": 538.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "D19 1BR at Terrasse priced at $870k / $1617 PSF with a solid 5.1%/yr resale-only appreciation rate backed by 111 URA transactions, and a confirmed Cross Island Line catalyst (CR9 Serangoon North, ~2030) 420m away. Listing sits ~5% above the $1538 district median PSF, but the CRL station proximity and sub-$900k entry justify a modestly positive view.",
+        "rating": "Buy",
+        "rating_rationale": "Appreciation 5.1%/yr on a healthy 111-txn series (reliable, not thin), CRL station opening ~2030 within 420m is the strongest single future-uplift driver, and the $870k price keeps the buyer pool broad. PSF only ~5% over median is not overpriced. 1BR has a narrower owner-occupier pool but rents well in this established Serangoon Gardens fringe.",
+        "red_flags": [
+          "1BR is a niche resale segment vs 2BR",
+          "Listed ~5% above URA median PSF",
+          "Serangoon North is not a designated growth node beyond the CRL station itself"
+        ],
+        "catalysts": [
+          "Cross Island Line CR9 Serangoon North MRT ~2030 within 420m",
+          "Established mature-estate location with stable rental demand",
+          "Sub-$900k entry preserves wide buyer pool"
+        ],
+        "rental_assessment": "1BR near a future MRT in a mature estate rents reliably to singles/young professionals; tenant pool is decent though smaller than a 2BR. Yield at ~$870k is typical-to-good for the band.",
+        "appreciation_assessment": "5.1%/yr resale-only over 111 transactions is credible and roughly RCR-grade despite the OCR location, with the CRL station as a forward catalyst. Momentum supported by the upcoming line.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.1,
+        "appreciation_rate_source": "URA resale-only CAGR, 111 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-terrasse-500115016",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Fairly priced (not cheap) 1BR in D19/OCR; the algo's headline 'cheapness' is a 3-comp cohort artifact and recent transactions show it is at, not below, market.",
+      "rating_rationale": "The apparent value is overstated. A 538 sqft 1BR at Terrasse transacted recently at ~$1,635 PSF ($880k); this listing's $1,617 PSF ($870k) is essentially at market, only marginally below the last comparable - not a bargain. The algo's -6.0% age-adj relies on a thin psf_cohort of just 3 txns, so the size-band signal is low-trust per v3.4 priors. D19 is OCR (favourable forward region), which is the one genuine positive. But yield is weak (~2.3% gross reported) and there is no dated catalyst. With value roughly fair, thin cohort, and soft yield, this is a near-tie that lands at Neutral rather than Buy.",
+      "red_flags": [
+        "psf_cohort_txns = 3 - the cheap-vs-cohort signal is statistically unreliable",
+        "Asking PSF is at/just below the most recent comparable transaction - little real discount",
+        "Reported gross yield ~2.3% is below par for a 1BR"
+      ],
+      "catalysts": [
+        "D19 (OCR) sits in the strongest verified forward-appreciation region"
+      ],
+      "as_of": {
+        "price": 870000,
+        "psf": 1617.1,
+        "beds": 1,
+        "sqft": 538
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Fairly priced (not cheap) 1BR in D19/OCR; the algo's headline 'cheapness' is a 3-comp cohort artifact and recent transactions show it is at, not below, market.",
+        "rating_rationale": "The apparent value is overstated. A 538 sqft 1BR at Terrasse transacted recently at ~$1,635 PSF ($880k); this listing's $1,617 PSF ($870k) is essentially at market, only marginally below the last comparable - not a bargain. The algo's -6.0% age-adj relies on a thin psf_cohort of just 3 txns, so the size-band signal is low-trust per v3.4 priors. D19 is OCR (favourable forward region), which is the one genuine positive. But yield is weak (~2.3% gross reported) and there is no dated catalyst. With value roughly fair, thin cohort, and soft yield, this is a near-tie that lands at Neutral rather than Buy.",
+        "red_flags": [
+          "psf_cohort_txns = 3 - the cheap-vs-cohort signal is statistically unreliable",
+          "Asking PSF is at/just below the most recent comparable transaction - little real discount",
+          "Reported gross yield ~2.3% is below par for a 1BR"
+        ],
+        "catalysts": [
+          "D19 (OCR) sits in the strongest verified forward-appreciation region"
+        ],
+        "appreciation_assessment": "Trailing CAGR 5.11% on 111 txns is decent data but discounted to ~0 forward weight; portal-cited 2023-26 PSF run (+15%) is not a forward guarantee and should not anchor pricing.",
+        "rental_assessment": "Project rents $3,300-5,900 across unit sizes; a 538 sqft 1BR at the low end implies ~$3,000-3,300/mo, ~2.3-2.7% gross at $870k - soft, a drag on the investment case."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-terrasse-500115016",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

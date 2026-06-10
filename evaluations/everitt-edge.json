@@ -1,0 +1,59 @@
+{
+  "condo": "Everitt Edge",
+  "slug": "everitt-edge",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small freehold boutique 2BR in D15 Eunos at $1.23M / $1,542 PSF, attractively priced in absolute terms but a poor appreciation profile (1.9%/yr on only 8 URA transactions) and weak liquidity. The low entry price is the only real draw; everything else is mediocre.",
+      "rating_rationale": "Resale-only URA CAGR is just 1.89%/yr — well below the RCR ~5.8% baseline — though on a thin 8-transaction series so confidence is low. PSF of $1,542 is ~4% above the $1,486 URA median. Boutique freehold blocks like this are illiquid (126-291-7 arena record, Elo 896), and 950m to Eunos MRT is a real walk. Saved from Avoid only by the sub-$1.25M entry and FH tenure in a deep D15 buyer market.",
+      "red_flags": [
+        "Weak 1.9%/yr appreciation on only 8 transactions (unreliable but directionally soft)",
+        "Boutique development — thin liquidity, limited amenities",
+        "950m from MRT, an 11-min walk"
+      ],
+      "catalysts": [
+        "Low absolute entry price under $1.25M widens the buyer pool",
+        "Freehold tenure in established D15 East Coast"
+      ],
+      "as_of": {
+        "price": 1228888,
+        "psf": 1541.89,
+        "beds": 2,
+        "sqft": 797.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Small freehold boutique 2BR in D15 Eunos at $1.23M / $1,542 PSF, attractively priced in absolute terms but a poor appreciation profile (1.9%/yr on only 8 URA transactions) and weak liquidity. The low entry price is the only real draw; everything else is mediocre.",
+        "rating": "Neutral",
+        "rating_rationale": "Resale-only URA CAGR is just 1.89%/yr — well below the RCR ~5.8% baseline — though on a thin 8-transaction series so confidence is low. PSF of $1,542 is ~4% above the $1,486 URA median. Boutique freehold blocks like this are illiquid (126-291-7 arena record, Elo 896), and 950m to Eunos MRT is a real walk. Saved from Avoid only by the sub-$1.25M entry and FH tenure in a deep D15 buyer market.",
+        "red_flags": [
+          "Weak 1.9%/yr appreciation on only 8 transactions (unreliable but directionally soft)",
+          "Boutique development — thin liquidity, limited amenities",
+          "950m from MRT, an 11-min walk"
+        ],
+        "catalysts": [
+          "Low absolute entry price under $1.25M widens the buyer pool",
+          "Freehold tenure in established D15 East Coast"
+        ],
+        "rental_assessment": "D15 has a steady tenant base; a sub-$1.3M 2BR FH should let easily, but boutique-block rents are unremarkable.",
+        "appreciation_assessment": "1.9%/yr resale CAGR is soft; thin data adds uncertainty. Expect modest, below-region appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-everitt-edge-500086653",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

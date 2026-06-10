@@ -1,0 +1,61 @@
+{
+  "condo": "West Bay Condo",
+  "slug": "west-bay-condo",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1994 99yr 3BR in D05 West Coast at $1.59M / $1304 PSF — 32 years old with ~67 years lease remaining, no MRT proximity listed and no URA data. The low PSF reflects age and lease decay rather than value; an early-90s leasehold with no MRT at the doorstep is a weak investment profile.",
+      "rating_rationale": "At 32 years old with ~67 years of a 99yr lease left, lease decay is now a real drag and the property approaches the >70yr-old / financing-sensitivity zone within the hold. No MRT distance listed (West Coast is car-dependent in parts), no URA appreciation/txn data, and the lowest-tier score 332/1000 with a 231-275 losing arena record. The $1304 PSF is cheap because of age, not because it is underpriced relative to quality. Better D05 leasehold options exist.",
+      "red_flags": [
+        "1994 build (~32yrs), ~67yr lease remaining — lease decay drag over the hold",
+        "No MRT proximity listed — West Coast can be car-dependent",
+        "No URA data; very weak score 332 and losing arena record",
+        "Aging facilities, higher maintenance risk"
+      ],
+      "catalysts": [
+        "D05 West Coast — One-North/NUS/Science Park employment in the wider district",
+        "Greater Southern Waterfront/West Coast long-term rejuvenation"
+      ],
+      "as_of": {
+        "price": 1590000,
+        "psf": 1304.35,
+        "beds": 3,
+        "sqft": 1219.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1994 99yr 3BR in D05 West Coast at $1.59M / $1304 PSF — 32 years old with ~67 years lease remaining, no MRT proximity listed and no URA data. The low PSF reflects age and lease decay rather than value; an early-90s leasehold with no MRT at the doorstep is a weak investment profile.",
+        "rating": "Avoid",
+        "rating_rationale": "At 32 years old with ~67 years of a 99yr lease left, lease decay is now a real drag and the property approaches the >70yr-old / financing-sensitivity zone within the hold. No MRT distance listed (West Coast is car-dependent in parts), no URA appreciation/txn data, and the lowest-tier score 332/1000 with a 231-275 losing arena record. The $1304 PSF is cheap because of age, not because it is underpriced relative to quality. Better D05 leasehold options exist.",
+        "red_flags": [
+          "1994 build (~32yrs), ~67yr lease remaining — lease decay drag over the hold",
+          "No MRT proximity listed — West Coast can be car-dependent",
+          "No URA data; very weak score 332 and losing arena record",
+          "Aging facilities, higher maintenance risk"
+        ],
+        "catalysts": [
+          "D05 West Coast — One-North/NUS/Science Park employment in the wider district",
+          "Greater Southern Waterfront/West Coast long-term rejuvenation"
+        ],
+        "rental_assessment": "A larger older 3BR in West Coast lets to families at a modest yield, but dated facilities and no doorstep MRT cap both rent and tenant interest.",
+        "appreciation_assessment": "Negative-to-flat bias from lease decay on an early-90s leasehold with no project URA data and no clear catalyst at the unit's location. Expect underperformance versus newer D05 stock.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-west-bay-condo-500146100",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

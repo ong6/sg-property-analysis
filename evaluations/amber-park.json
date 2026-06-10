@@ -1,0 +1,65 @@
+{
+  "condo": "Amber Park",
+  "slug": "amber-park",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1BR in CDL's Amber Park (freehold, 2023) — 250m to TE25 Tanjong Katong MRT in prime D15 East Coast. At $2,584 PSF it's actually below the $2,910 project median and below the ~$2,684+ live 1BR listings, but the resale-only appreciation is a thin 1.7%/yr and the $2,584 PSF absolute is steep, balancing to Neutral.",
+      "rating_rationale": "Entry $2,584 PSF vs $2,910.5 URA median = -11% and below recent transacted 1BR pricing (~$2,684-3,049 PSF observed in 2025) — value is reasonable for the project. Deep 283-txn base, 250m to the new TE25 station, established CDL freehold. But new_launch_bias=true and the honest resale-only rate is just 1.71%/yr; the blended 3.48% is developer-inflated per the rubric. 1BR niche pool plus a high $2,584 PSF cap the upside. Quality address, fair price, soft growth signal.",
+      "red_flags": [
+        "resale-only appreciation only 1.71%/yr (new-launch bias flagged)",
+        "high $2,584 PSF absolute for a 1BR",
+        "1BR — shallow resale pool",
+        "score 476 below batch average"
+      ],
+      "catalysts": [
+        "250m to TE25 Tanjong Katong (Thomson-East Coast Line)",
+        "freehold prime D15 East Coast, CDL build quality",
+        "priced ~11% below project URA median"
+      ],
+      "as_of": {
+        "price": 1250888,
+        "psf": 2584.48,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1BR in CDL's Amber Park (freehold, 2023) — 250m to TE25 Tanjong Katong MRT in prime D15 East Coast. At $2,584 PSF it's actually below the $2,910 project median and below the ~$2,684+ live 1BR listings, but the resale-only appreciation is a thin 1.7%/yr and the $2,584 PSF absolute is steep, balancing to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Entry $2,584 PSF vs $2,910.5 URA median = -11% and below recent transacted 1BR pricing (~$2,684-3,049 PSF observed in 2025) — value is reasonable for the project. Deep 283-txn base, 250m to the new TE25 station, established CDL freehold. But new_launch_bias=true and the honest resale-only rate is just 1.71%/yr; the blended 3.48% is developer-inflated per the rubric. 1BR niche pool plus a high $2,584 PSF cap the upside. Quality address, fair price, soft growth signal.",
+        "red_flags": [
+          "resale-only appreciation only 1.71%/yr (new-launch bias flagged)",
+          "high $2,584 PSF absolute for a 1BR",
+          "1BR — shallow resale pool",
+          "score 476 below batch average"
+        ],
+        "catalysts": [
+          "250m to TE25 Tanjong Katong (Thomson-East Coast Line)",
+          "freehold prime D15 East Coast, CDL build quality",
+          "priced ~11% below project URA median"
+        ],
+        "rental_assessment": "Prime East Coast + new TEL station is a strong 1BR rental location; tenant demand is reliable and supports yield.",
+        "appreciation_assessment": "Honest resale-only basis is only 1.71%/yr; the new-launch premium is already largely captured, so near-term capital upside is limited.",
+        "appreciation_rate_override_pct": 1.71,
+        "appreciation_rate_source": "URA resale-only rate (avoids new-launch developer-pricing inflation)",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-park-60101134",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

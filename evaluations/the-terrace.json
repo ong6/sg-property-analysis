@@ -1,0 +1,63 @@
+{
+  "condo": "The Terrace",
+  "slug": "the-terrace",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,313 sqft 99-year 4BR at The Terrace (an EC, 2018) in D19 Punggol at $2.3M ($1,752 PSF), just 200m from Kadaloor LRT. Waterway-EC with strong on-paper PSF, but $1,752 PSF and a $2.3M quantum are high for a privatised EC in OCR Punggol.",
+      "rating_rationale": "The Terrace is a former Executive Condo on Punggol Waterway with excellent immediate access (200m to Kadaloor LRT) and Punggol Digital District as a regional catalyst. But $1,752 PSF is a full price for a 99-year ex-EC, and the $2.3M quantum sits above the deepest-demand band while the buyer pool for a $2.3M Punggol unit is HDB-upgrader-capped. No URA data; arena slightly above .500. Good location and PDD upside balance the rich EC pricing — a clean Neutral.",
+      "red_flags": [
+        "$1,752 PSF / $2.3M quantum is high for a privatised EC in OCR Punggol",
+        "Former EC — appreciation ceiling once private premium is realized",
+        "LRT (not MRT) immediate access; $2.3M buyer pool is upgrader-capped",
+        "No URA appreciation/txn data"
+      ],
+      "catalysts": [
+        "Punggol Digital District — tech-jobs hub driving regional demand",
+        "200m to Kadaloor LRT; Waterway lifestyle frontage",
+        "Newer 2018 build, family-sized 4BR layout"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1751.71,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,313 sqft 99-year 4BR at The Terrace (an EC, 2018) in D19 Punggol at $2.3M ($1,752 PSF), just 200m from Kadaloor LRT. Waterway-EC with strong on-paper PSF, but $1,752 PSF and a $2.3M quantum are high for a privatised EC in OCR Punggol.",
+        "rating": "Neutral",
+        "rating_rationale": "The Terrace is a former Executive Condo on Punggol Waterway with excellent immediate access (200m to Kadaloor LRT) and Punggol Digital District as a regional catalyst. But $1,752 PSF is a full price for a 99-year ex-EC, and the $2.3M quantum sits above the deepest-demand band while the buyer pool for a $2.3M Punggol unit is HDB-upgrader-capped. No URA data; arena slightly above .500. Good location and PDD upside balance the rich EC pricing — a clean Neutral.",
+        "red_flags": [
+          "$1,752 PSF / $2.3M quantum is high for a privatised EC in OCR Punggol",
+          "Former EC — appreciation ceiling once private premium is realized",
+          "LRT (not MRT) immediate access; $2.3M buyer pool is upgrader-capped",
+          "No URA appreciation/txn data"
+        ],
+        "catalysts": [
+          "Punggol Digital District — tech-jobs hub driving regional demand",
+          "200m to Kadaloor LRT; Waterway lifestyle frontage",
+          "Newer 2018 build, family-sized 4BR layout"
+        ],
+        "rental_assessment": "PDD build-out should lift Punggol tenant demand over the hold; a large 4BR rents to families with moderate yield given the $2.3M base.",
+        "appreciation_assessment": "PDD is a real multi-year catalyst, but entering a 99-yr ex-EC at $1,752 PSF prices in much of that; expect OCR-plus-catalyst growth rather than a bargain entry.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-terrace-500106444",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

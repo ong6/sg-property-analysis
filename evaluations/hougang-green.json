@@ -1,0 +1,59 @@
+{
+  "condo": "Hougang Green",
+  "slug": "hougang-green",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Old (1998) 99yr 3BR at Hougang Green (D19) at a very low $1.2M / $1052 PSF, near the $1012 district median. Headline 7.63% CAGR looks great but rests on just 22 transactions, and the development is 28 years old with only an LRT (not MRT) ~950m away.",
+      "rating_rationale": "The cheap quantum ($1.2M) and HDB-upgrader appeal in D19 give a deep buyer pool, and PDD/CRL is a long-run D19 catalyst. But the 7.63% CAGR is built on only 22 txns (low reliability), the property is 28 years old on a 99yr lease (~71yr left, financing/lease-decay drag), and access is via Renjong LRT 950m away, not an MRT. Affordable and liquid at the low end, but ageing-lease risk and thin appreciation data cap it at Neutral.",
+      "red_flags": [
+        "1998 build, ~71yr lease remaining — lease decay and ageing-stock resale drag",
+        "7.63% CAGR rests on only 22 txns — unreliable rate",
+        "LRT access only (950m to Renjong LRT), no direct MRT"
+      ],
+      "catalysts": [
+        "Sub-$1.2M 3BR — strong HDB-upgrader demand and deep buyer pool",
+        "Punggol Digital District + CRL lifting the broader D19 over the hold"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1051.71,
+        "beds": 3,
+        "sqft": 1141.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Old (1998) 99yr 3BR at Hougang Green (D19) at a very low $1.2M / $1052 PSF, near the $1012 district median. Headline 7.63% CAGR looks great but rests on just 22 transactions, and the development is 28 years old with only an LRT (not MRT) ~950m away.",
+        "rating": "Neutral",
+        "rating_rationale": "The cheap quantum ($1.2M) and HDB-upgrader appeal in D19 give a deep buyer pool, and PDD/CRL is a long-run D19 catalyst. But the 7.63% CAGR is built on only 22 txns (low reliability), the property is 28 years old on a 99yr lease (~71yr left, financing/lease-decay drag), and access is via Renjong LRT 950m away, not an MRT. Affordable and liquid at the low end, but ageing-lease risk and thin appreciation data cap it at Neutral.",
+        "red_flags": [
+          "1998 build, ~71yr lease remaining — lease decay and ageing-stock resale drag",
+          "7.63% CAGR rests on only 22 txns — unreliable rate",
+          "LRT access only (950m to Renjong LRT), no direct MRT"
+        ],
+        "catalysts": [
+          "Sub-$1.2M 3BR — strong HDB-upgrader demand and deep buyer pool",
+          "Punggol Digital District + CRL lifting the broader D19 over the hold"
+        ],
+        "rental_assessment": "Moderate. Cheap 3BR suits families/upgraders, but heartland Hougang location and LRT-only access yield ordinary rental demand and yields.",
+        "appreciation_assessment": "Treat the 7.63% as soft (22 txns). Realistic expectation is OCR-baseline with possible lift from PDD/CRL, partly offset by the ageing 99yr lease.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hougang-green-500093007",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

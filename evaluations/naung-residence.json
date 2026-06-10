@@ -1,0 +1,63 @@
+{
+  "condo": "Naung Residence",
+  "slug": "naung-residence",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 999-year-leasehold 1BR in a small Hougang boutique with effectively flat URA resale appreciation (0.2%/yr) and a thin 17-transaction series. The near-freehold tenure and decent score don't offset weak price momentum, a niche 1BR exit, and a sub-1km MRT walk.",
+      "rating_rationale": "PSF $1,639 sits ~8% above the URA median $1,516, and the resale-only CAGR is essentially zero (0.22%/yr) over 17 txns — no appreciation case. Quasi-freehold tenure is a plus, but a boutique 1BR in D19 Hougang is a shallow-pool exit, and 560m to NE14 is acceptable not strong. Price at $900k keeps it liquid for a starter/investor.",
+      "red_flags": [
+        "Flat resale appreciation (0.22%/yr) over thin 17-txn URA series",
+        "Boutique development with niche 1BR resale pool",
+        "Listing PSF ~8% above URA median"
+      ],
+      "catalysts": [
+        "999-year tenure removes lease-decay risk",
+        "NE-line connectivity to Serangoon/CBD",
+        "Sub-$1M ticket keeps the unit accessible to upgraders/investors"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1639.34,
+        "beds": 1,
+        "sqft": 549.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 999-year-leasehold 1BR in a small Hougang boutique with effectively flat URA resale appreciation (0.2%/yr) and a thin 17-transaction series. The near-freehold tenure and decent score don't offset weak price momentum, a niche 1BR exit, and a sub-1km MRT walk.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $1,639 sits ~8% above the URA median $1,516, and the resale-only CAGR is essentially zero (0.22%/yr) over 17 txns — no appreciation case. Quasi-freehold tenure is a plus, but a boutique 1BR in D19 Hougang is a shallow-pool exit, and 560m to NE14 is acceptable not strong. Price at $900k keeps it liquid for a starter/investor.",
+        "red_flags": [
+          "Flat resale appreciation (0.22%/yr) over thin 17-txn URA series",
+          "Boutique development with niche 1BR resale pool",
+          "Listing PSF ~8% above URA median"
+        ],
+        "catalysts": [
+          "999-year tenure removes lease-decay risk",
+          "NE-line connectivity to Serangoon/CBD",
+          "Sub-$1M ticket keeps the unit accessible to upgraders/investors"
+        ],
+        "rental_assessment": "1BR near Hougang MRT rents reasonably to singles/young professionals; tenant pool is steady but not deep, yield around market-typical for a $900k 1BR.",
+        "appreciation_assessment": "URA resale-only CAGR of 0.22%/yr signals a stagnant micro-market; quasi-freehold tenure protects value but offers little upside absent a catalyst.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 1.5,
+        "appreciation_rate_source": "URA resale-only 0.22%/yr nudged up modestly for 999yr tenure durability; thin 17-txn base"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-naung-residence-21394332",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

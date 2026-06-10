@@ -1,0 +1,63 @@
+{
+  "condo": "Country Grandeur",
+  "slug": "country-grandeur",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 3,401sqft freehold 4BR in D20 Bright Hill at $4.2M — the $1,235 PSF looks like a deep discount to the $2,063 median, but on only 8 transactions and an enormous unit, so the comparison is unreliable. 260m to Bright Hill MRT is excellent, but a $4.2M quantum for a 1996 mega-unit has an extremely thin exit pool.",
+      "rating_rationale": "The headline value (PSF 1235 vs 2063 median) is a mirage: 8 URA txns can't be trusted, and the $2,063 median almost certainly reflects much smaller units — a 3,401sqft penthouse-scale unit transacts at a structurally lower PSF, so the discount is largely a size effect, not a bargain. The $4.2M absolute price sits far outside any deep buyer band; freehold and a superb 260m-to-Bright Hill-MRT location are real, but liquidity at this quantum/size/age (built 1996) is the overriding investment risk for a 5-7yr hold.",
+      "red_flags": [
+        "$4.2M quantum — very thin buyer pool; near-impossible to exit quickly",
+        "3,401sqft oversized unit — cheap PSF is a size effect, not value",
+        "Only 8 URA transactions — appreciation rate unreliable",
+        "Built 1996 — 30yr old, dated, higher maintenance"
+      ],
+      "catalysts": [
+        "260m to Bright Hill MRT (Thomson-East Coast Line) — strong connectivity",
+        "Freehold tenure",
+        "Established landed-fringe D20 (Bishan/Thomson) location"
+      ],
+      "as_of": {
+        "price": 4200000,
+        "psf": 1234.93,
+        "beds": 4,
+        "sqft": 3401.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 3,401sqft freehold 4BR in D20 Bright Hill at $4.2M — the $1,235 PSF looks like a deep discount to the $2,063 median, but on only 8 transactions and an enormous unit, so the comparison is unreliable. 260m to Bright Hill MRT is excellent, but a $4.2M quantum for a 1996 mega-unit has an extremely thin exit pool.",
+        "rating": "Avoid",
+        "rating_rationale": "The headline value (PSF 1235 vs 2063 median) is a mirage: 8 URA txns can't be trusted, and the $2,063 median almost certainly reflects much smaller units — a 3,401sqft penthouse-scale unit transacts at a structurally lower PSF, so the discount is largely a size effect, not a bargain. The $4.2M absolute price sits far outside any deep buyer band; freehold and a superb 260m-to-Bright Hill-MRT location are real, but liquidity at this quantum/size/age (built 1996) is the overriding investment risk for a 5-7yr hold.",
+        "red_flags": [
+          "$4.2M quantum — very thin buyer pool; near-impossible to exit quickly",
+          "3,401sqft oversized unit — cheap PSF is a size effect, not value",
+          "Only 8 URA transactions — appreciation rate unreliable",
+          "Built 1996 — 30yr old, dated, higher maintenance"
+        ],
+        "catalysts": [
+          "260m to Bright Hill MRT (Thomson-East Coast Line) — strong connectivity",
+          "Freehold tenure",
+          "Established landed-fringe D20 (Bishan/Thomson) location"
+        ],
+        "rental_assessment": "A 3,401sqft 4BR is a niche luxury-family rental; demand is thin and gross yield on $4.2M is very poor — not an investment-yield asset.",
+        "appreciation_assessment": "5.98%/yr is reported but on only 8 transactions and a size-distorted PSF basis — statistically unreliable; the size/quantum/age liquidity trap dominates the call.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-country-grandeur-25107394",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

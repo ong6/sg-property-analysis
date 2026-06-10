@@ -1,0 +1,65 @@
+{
+  "condo": "Bloomsbury Residences",
+  "slug": "bloomsbury-residences",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An uncompleted (TOP ~2029) 1,206 sqft 4BR at Bloomsbury Residences in the one-north/Mediapolis district, $3.0M / $2,488 PSF — slightly under the $2,573 launch median but with no realised appreciation, a poor 1.6km MRT walk, a high $3M quantum, and the lowest technical score in the batch (475). The one-north innovation-hub thesis is real, but the entry combines several investment drags.",
+      "rating_rationale": "PSF $2,488 is ~3% under the $2,573 incoming median (which itself is launch pricing, not proven resale gains) — no margin of safety. Appreciation is null (new launch, bias-flagged), so there is no URA track record to lean on. The unit is uncompleted (TOP ~2029, no income/exit for years), $3M sits above the deep-liquidity band for a 4BR, and the nearest MRT is 1.6km / 19-min walk — weak for D05. The one-north employment catalyst and low score_1000 (475) roughly offset to a cautious Neutral.",
+      "red_flags": [
+        "Uncompleted, TOP ~2029 — no rental income or liquidity for years; completion and SSD timing risk",
+        "No URA appreciation data (new launch, bias-flagged) — unproven price trajectory",
+        "1.6km / 19-min walk to nearest MRT (Commonwealth) — poor connectivity for D05",
+        "High $3M / $2,488 PSF quantum for a 1,206 sqft 4BR — narrow buyer pool",
+        "Lowest technical score in the batch (475)"
+      ],
+      "catalysts": [
+        "one-north / Mediapolis / Fusionopolis innovation district — strong long-run employment and tenant demand",
+        "Slim Barracks Rise / Buona Vista growth corridor",
+        "Below incoming-median launch PSF"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 2487.56,
+        "beds": 4,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An uncompleted (TOP ~2029) 1,206 sqft 4BR at Bloomsbury Residences in the one-north/Mediapolis district, $3.0M / $2,488 PSF — slightly under the $2,573 launch median but with no realised appreciation, a poor 1.6km MRT walk, a high $3M quantum, and the lowest technical score in the batch (475). The one-north innovation-hub thesis is real, but the entry combines several investment drags.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $2,488 is ~3% under the $2,573 incoming median (which itself is launch pricing, not proven resale gains) — no margin of safety. Appreciation is null (new launch, bias-flagged), so there is no URA track record to lean on. The unit is uncompleted (TOP ~2029, no income/exit for years), $3M sits above the deep-liquidity band for a 4BR, and the nearest MRT is 1.6km / 19-min walk — weak for D05. The one-north employment catalyst and low score_1000 (475) roughly offset to a cautious Neutral.",
+        "red_flags": [
+          "Uncompleted, TOP ~2029 — no rental income or liquidity for years; completion and SSD timing risk",
+          "No URA appreciation data (new launch, bias-flagged) — unproven price trajectory",
+          "1.6km / 19-min walk to nearest MRT (Commonwealth) — poor connectivity for D05",
+          "High $3M / $2,488 PSF quantum for a 1,206 sqft 4BR — narrow buyer pool",
+          "Lowest technical score in the batch (475)"
+        ],
+        "catalysts": [
+          "one-north / Mediapolis / Fusionopolis innovation district — strong long-run employment and tenant demand",
+          "Slim Barracks Rise / Buona Vista growth corridor",
+          "Below incoming-median launch PSF"
+        ],
+        "rental_assessment": "On completion, proximity to the one-north R&D/biomed cluster supports tenant demand, but a $3M 4BR rents to a narrow family/expat pool at modest yield, and the MRT distance is a drag.",
+        "appreciation_assessment": "No URA basis to project; new-launch pricing is already near district median, leaving little built-in upside. one-north catalyst supports the area but the entry price captures much of it.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bloomsbury-residences-500128364",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

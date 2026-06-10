@@ -1,0 +1,63 @@
+{
+  "condo": "Melrose Ville",
+  "slug": "melrose-ville",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 592 sqft 1BR at $998k / $1,686 PSF, 620m from Dakota MRT (Circle Line) in D15. Accessible sub-$1M freehold quantum with the top technical score in the batch (736, on frontier), but only 8 URA transactions make the 4.47% rate unreliable and the asking PSF sits ~8% above the $1,564 median.",
+      "rating_rationale": "Top score (736) and frontier status are appealing, but the data is thin: 8 txns is below any reliability bar, and $1,686 PSF is ~8% over the $1,564 median (a premium, not a discount). It's a boutique FH 1BR — niche resale segment, lumpy liquidity. Counterweights: sub-$1M FH quantum and 620m to Dakota (Circle Line) keep it investable, not avoidable.",
+      "red_flags": [
+        "Only 8 URA txns — 4.47% rate and $1,564 median both unreliable",
+        "Asking $1,686 PSF is ~8% above the URA median — paying a premium",
+        "Boutique 1BR — niche, lumpy resale liquidity"
+      ],
+      "catalysts": [
+        "Sub-$1M ($998k) freehold quantum — accessible, broad entry buyer pool",
+        "620m to CC8 Dakota MRT (Circle Line) in established D15",
+        "Mountbatten/Old Airport Road locale with steady rental demand"
+      ],
+      "as_of": {
+        "price": 998000,
+        "psf": 1685.81,
+        "beds": 1,
+        "sqft": 592.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 592 sqft 1BR at $998k / $1,686 PSF, 620m from Dakota MRT (Circle Line) in D15. Accessible sub-$1M freehold quantum with the top technical score in the batch (736, on frontier), but only 8 URA transactions make the 4.47% rate unreliable and the asking PSF sits ~8% above the $1,564 median.",
+        "rating": "Neutral",
+        "rating_rationale": "Top score (736) and frontier status are appealing, but the data is thin: 8 txns is below any reliability bar, and $1,686 PSF is ~8% over the $1,564 median (a premium, not a discount). It's a boutique FH 1BR — niche resale segment, lumpy liquidity. Counterweights: sub-$1M FH quantum and 620m to Dakota (Circle Line) keep it investable, not avoidable.",
+        "red_flags": [
+          "Only 8 URA txns — 4.47% rate and $1,564 median both unreliable",
+          "Asking $1,686 PSF is ~8% above the URA median — paying a premium",
+          "Boutique 1BR — niche, lumpy resale liquidity"
+        ],
+        "catalysts": [
+          "Sub-$1M ($998k) freehold quantum — accessible, broad entry buyer pool",
+          "620m to CC8 Dakota MRT (Circle Line) in established D15",
+          "Mountbatten/Old Airport Road locale with steady rental demand"
+        ],
+        "rental_assessment": "Dakota/Mountbatten is a reliable rental pocket near the CBD fringe; a compact FH 1BR should let to professionals, though 1BR yield at this PSF is modest.",
+        "appreciation_assessment": "4.47% is plausible for FH near a Circle Line stop, but on 8 txns it is indicative only — and the above-median entry erodes margin. Treat as district-typical.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA 4.47% discounted for 8-txn sample and above-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-melrose-ville-500095266",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

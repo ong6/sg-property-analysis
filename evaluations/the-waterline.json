@@ -1,0 +1,119 @@
+{
+  "condo": "The Waterline",
+  "slug": "the-waterline",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold D19 unit 560m from the future CRL Serangoon North station, listed at $1,206 psf — a striking ~20% below the project's $1,509 URA median. The discount plus a confirmed CRL catalyst is the thesis, but the 829 sqft '1BR' label is anomalous and the 26-transaction series is thin.",
+      "rating_rationale": "Listed PSF $1,206 is ~20% under the URA median of $1,509 — a large, genuine discount on a freehold asset. The standout catalyst is the future Cross Island Line station 560m away (~2030), which historically drives 10-20% uplift within 500-600m. Freehold tenure removes lease-decay risk over the hold. Two caveats temper this to Buy rather than Strong Buy: the 829 sqft '1BR' classification is unusual (likely a large 1BR+study or a mislabel — the size pulls PSF down and may not be a true 1-bedder, affecting the comp), and the 26-txn URA series makes the 5.9%/yr rate moderately reliable only. Sub-$1M-area freehold quantum keeps it liquid.",
+      "red_flags": [
+        "829 sqft for a '1BR' is anomalous — verify actual layout/classification, the low PSF may partly reflect an oversized unit",
+        "Thin 26-transaction URA series — appreciation rate less reliable",
+        "Below-median listing PSF — confirm no defect/orientation issue behind the discount"
+      ],
+      "catalysts": [
+        "Future CRL Serangoon North MRT 560m away (~2030) — strong proximity uplift",
+        "Freehold tenure premium in a leasehold-heavy district",
+        "~20% discount to project URA median offers margin of safety"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1206.27,
+        "beds": 1,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold D19 unit 560m from the future CRL Serangoon North station, listed at $1,206 psf — a striking ~20% below the project's $1,509 URA median. The discount plus a confirmed CRL catalyst is the thesis, but the 829 sqft '1BR' label is anomalous and the 26-transaction series is thin.",
+        "rating": "Buy",
+        "rating_rationale": "Listed PSF $1,206 is ~20% under the URA median of $1,509 — a large, genuine discount on a freehold asset. The standout catalyst is the future Cross Island Line station 560m away (~2030), which historically drives 10-20% uplift within 500-600m. Freehold tenure removes lease-decay risk over the hold. Two caveats temper this to Buy rather than Strong Buy: the 829 sqft '1BR' classification is unusual (likely a large 1BR+study or a mislabel — the size pulls PSF down and may not be a true 1-bedder, affecting the comp), and the 26-txn URA series makes the 5.9%/yr rate moderately reliable only. Sub-$1M-area freehold quantum keeps it liquid.",
+        "red_flags": [
+          "829 sqft for a '1BR' is anomalous — verify actual layout/classification, the low PSF may partly reflect an oversized unit",
+          "Thin 26-transaction URA series — appreciation rate less reliable",
+          "Below-median listing PSF — confirm no defect/orientation issue behind the discount"
+        ],
+        "catalysts": [
+          "Future CRL Serangoon North MRT 560m away (~2030) — strong proximity uplift",
+          "Freehold tenure premium in a leasehold-heavy district",
+          "~20% discount to project URA median offers margin of safety"
+        ],
+        "rental_assessment": "D19 Serangoon North has steady tenant demand; a large 1BR/1BR+study commutes well once CRL opens. Yield reasonable at $1M quantum.",
+        "appreciation_assessment": "5.9%/yr URA (thin sample) plus a concrete CRL catalyst and freehold status point to above-OCR appreciation, contingent on verifying the unit isn't discounted for a defect.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500139728",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The unit is genuinely below comparable 2-BR-sized transactions, but a tiny 103-unit project, a weak 2.9% yield and a soft long-dated catalyst keep this short of a Buy despite the real discount.",
+      "rating_rationale": "Asking $1,206 psf for 829 sqft (a 2-BR footprint, not a true 1-BR) compares against recent 883 sqft 2-BR transactions at $1,445-$1,586 psf and a 12-month project avg of ~$1,486 psf — so the discount is real and web-verified, supporting the very_low_psf flag and -28.0% age-adj premium. Freehold and D19 (OCR, the strongest forward region under v3.4) are positives. But two factors hold it at Neutral: (1) only 103 units means thin resale/rental liquidity and lumpy exit, and (2) the 2.9% gross yield is the weakest of the cohort. With psf_cohort_txns=2 and only 26 appreciation txns, the data depth is modest. The value is there but the liquidity and income case is not strong enough to clear the Buy bar.",
+      "red_flags": [
+        "Tiny 103-unit development — shallow resale market and lumpy, hard-to-time exits over a 5-7yr hold",
+        "2.9% gross yield is weak — poor cashflow coverage for an investment hold",
+        "psf_cohort_txns=2 and only 26 appreciation txns — thinnest appreciation base in the cohort",
+        "Not MRT-fronting today; nearest is bus-dependent until CRL stations open",
+        "$1,000,000 asking sits at the round-number ceiling with limited negotiation headroom signalled"
+      ],
+      "catalysts": [
+        "Verified discount to comparable 2-BR-sized transactions ($1,206 vs $1,445-$1,586 psf)",
+        "Freehold tenure in OCR D19 (downside floor; OCR is the best forward region per v3.4)",
+        "Future Cross Island Line connectivity in the Serangoon North / Hougang corridor (long-dated, ~2030+)"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1206.27,
+        "beds": 1,
+        "sqft": 829
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "The unit is genuinely below comparable 2-BR-sized transactions, but a tiny 103-unit project, a weak 2.9% yield and a soft long-dated catalyst keep this short of a Buy despite the real discount.",
+        "rating_rationale": "Asking $1,206 psf for 829 sqft (a 2-BR footprint, not a true 1-BR) compares against recent 883 sqft 2-BR transactions at $1,445-$1,586 psf and a 12-month project avg of ~$1,486 psf — so the discount is real and web-verified, supporting the very_low_psf flag and -28.0% age-adj premium. Freehold and D19 (OCR, the strongest forward region under v3.4) are positives. But two factors hold it at Neutral: (1) only 103 units means thin resale/rental liquidity and lumpy exit, and (2) the 2.9% gross yield is the weakest of the cohort. With psf_cohort_txns=2 and only 26 appreciation txns, the data depth is modest. The value is there but the liquidity and income case is not strong enough to clear the Buy bar.",
+        "red_flags": [
+          "Tiny 103-unit development — shallow resale market and lumpy, hard-to-time exits over a 5-7yr hold",
+          "2.9% gross yield is weak — poor cashflow coverage for an investment hold",
+          "psf_cohort_txns=2 and only 26 appreciation txns — thinnest appreciation base in the cohort",
+          "Not MRT-fronting today; nearest is bus-dependent until CRL stations open",
+          "$1,000,000 asking sits at the round-number ceiling with limited negotiation headroom signalled"
+        ],
+        "catalysts": [
+          "Verified discount to comparable 2-BR-sized transactions ($1,206 vs $1,445-$1,586 psf)",
+          "Freehold tenure in OCR D19 (downside floor; OCR is the best forward region per v3.4)",
+          "Future Cross Island Line connectivity in the Serangoon North / Hougang corridor (long-dated, ~2030+)"
+        ],
+        "appreciation_assessment": "Trailing +5.9% on just 26 txns is too thin to trust and, per v3.4, near-zero forward signal anyway. The OCR region tailwind is a genuine plus, but the small project and weak yield cap the realistic forward case.",
+        "rental_assessment": "2.9% gross yield is the weakest in the cohort; a small freehold project in a residential Hougang/Serangoon pocket draws steady but unremarkable tenant demand. A clear negative for an income-oriented hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-waterline-500139728",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

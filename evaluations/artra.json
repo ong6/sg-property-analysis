@@ -1,0 +1,63 @@
+{
+  "condo": "Artra",
+  "slug": "artra",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 2BR at Artra, D03 Redhill, for $2.0M / $2,413 PSF — directly atop Redhill MRT (40m, integrated development) with a slight discount to the $2,507 median and a reliable 4.97%/yr resale CAGR over 77 transactions. Premium MRT-integrated location, right-sized 2BR, liquid $2M quantum.",
+      "rating_rationale": "Artra is integrated directly with Redhill MRT (40m) — the rarest and most rental/resale-durable attribute in this batch. PSF 2413 vs 2507 median is a modest discount, and 4.97%/yr over 77 resale txns is reliable with no new-launch bias (2021 TOP, now well into resale). A 829sqft 2BR at $2.0M sits in the deep buyer band and is the widest tenant segment. D03 Queenstown/Redhill sits in the GSW/TEL growth corridor. The high absolute PSF is the only real caution, and it is justified by the integrated location.",
+      "red_flags": [
+        "High $2,413 PSF — limited margin if the wider market softens",
+        "99LH from 2021",
+        "2BR at $2M is a top-of-band quantum for the unit type"
+      ],
+      "catalysts": [
+        "40m / integrated with Redhill MRT (EWL) — exceptional connectivity premium",
+        "D03 Greater Southern Waterfront and TEL corridor",
+        "Reliable 4.97%/yr resale appreciation (77 txns), slight discount to median PSF",
+        "Right-sized 2BR — widest tenant and buyer pool"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 2412.55,
+        "beds": 2,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2BR at Artra, D03 Redhill, for $2.0M / $2,413 PSF — directly atop Redhill MRT (40m, integrated development) with a slight discount to the $2,507 median and a reliable 4.97%/yr resale CAGR over 77 transactions. Premium MRT-integrated location, right-sized 2BR, liquid $2M quantum.",
+        "rating": "Buy",
+        "rating_rationale": "Artra is integrated directly with Redhill MRT (40m) — the rarest and most rental/resale-durable attribute in this batch. PSF 2413 vs 2507 median is a modest discount, and 4.97%/yr over 77 resale txns is reliable with no new-launch bias (2021 TOP, now well into resale). A 829sqft 2BR at $2.0M sits in the deep buyer band and is the widest tenant segment. D03 Queenstown/Redhill sits in the GSW/TEL growth corridor. The high absolute PSF is the only real caution, and it is justified by the integrated location.",
+        "red_flags": [
+          "High $2,413 PSF — limited margin if the wider market softens",
+          "99LH from 2021",
+          "2BR at $2M is a top-of-band quantum for the unit type"
+        ],
+        "catalysts": [
+          "40m / integrated with Redhill MRT (EWL) — exceptional connectivity premium",
+          "D03 Greater Southern Waterfront and TEL corridor",
+          "Reliable 4.97%/yr resale appreciation (77 txns), slight discount to median PSF",
+          "Right-sized 2BR — widest tenant and buyer pool"
+        ],
+        "rental_assessment": "An MRT-integrated 2BR one stop from Tiong Bahru/CBD has top-tier rental demand and resilient occupancy; gross yield is moderate at $2,413 PSF but the demand floor is high.",
+        "appreciation_assessment": "4.97%/yr over 77 resale transactions is reliable; the integrated-MRT location underpins durable demand and supports the slight discount-to-median entry closing.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-artra-500082338",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

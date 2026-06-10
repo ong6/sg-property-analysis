@@ -1,0 +1,65 @@
+{
+  "condo": "Rare Patio Loft Near Boon Keng | High Ceiling | Renovated",
+  "slug": "rare-patio-loft-near-boon-keng-high-ceiling-renovated",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 999-year 3BR patio loft (1,410 sqft) near Boon Keng in D12, asking $1.89M ($1,340 psf) under a marketing title with no disclosed project or built_year. The quasi-freehold tenure and moderate PSF are positives, but a niche loft layout, 1.22km MRT distance and missing data temper it.",
+      "rating_rationale": "999-yr tenure and $1,340 psf are reasonable, and the 1,410 sqft loft offers space, but the listing hides the project name and built_year, the unit is a niche 'patio loft' (high-ceiling/loft layouts have a narrower buyer pool), and it is 15 min / 1.22km from Boon Keng MRT. No URA data to verify pricing or trajectory. Fairly priced curiosity, not a clear investment edge.",
+      "red_flags": [
+        "Marketing title hides project name and built_year",
+        "Niche loft layout — narrower resale buyer pool",
+        "1.22km / 15 min from Boon Keng MRT",
+        "No URA transaction data — no price/appreciation signal"
+      ],
+      "catalysts": [
+        "999-year (quasi-freehold) tenure",
+        "City-fringe D12 location, renovated",
+        "Moderate $1,340 psf leaves some value headroom if loft appeals"
+      ],
+      "as_of": {
+        "price": 1890000,
+        "psf": 1340.43,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 999-year 3BR patio loft (1,410 sqft) near Boon Keng in D12, asking $1.89M ($1,340 psf) under a marketing title with no disclosed project or built_year. The quasi-freehold tenure and moderate PSF are positives, but a niche loft layout, 1.22km MRT distance and missing data temper it.",
+        "rating": "Neutral",
+        "rating_rationale": "999-yr tenure and $1,340 psf are reasonable, and the 1,410 sqft loft offers space, but the listing hides the project name and built_year, the unit is a niche 'patio loft' (high-ceiling/loft layouts have a narrower buyer pool), and it is 15 min / 1.22km from Boon Keng MRT. No URA data to verify pricing or trajectory. Fairly priced curiosity, not a clear investment edge.",
+        "red_flags": [
+          "Marketing title hides project name and built_year",
+          "Niche loft layout — narrower resale buyer pool",
+          "1.22km / 15 min from Boon Keng MRT",
+          "No URA transaction data — no price/appreciation signal"
+        ],
+        "catalysts": [
+          "999-year (quasi-freehold) tenure",
+          "City-fringe D12 location, renovated",
+          "Moderate $1,340 psf leaves some value headroom if loft appeals"
+        ],
+        "rental_assessment": "Renovated high-ceiling lofts attract a specific tenant; city-fringe demand exists but the niche layout and MRT distance limit the pool. Yield average.",
+        "appreciation_assessment": "No data; quasi-freehold city-fringe holds value but niche layout and transit distance cap liquidity-driven upside. Flat-to-modest.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "City-fringe 999yr baseline; no project URA data, niche layout discount"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rare-patio-loft-near-boon-keng-high-ceiling-renovated-500099866",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

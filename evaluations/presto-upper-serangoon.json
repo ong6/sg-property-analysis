@@ -1,0 +1,117 @@
+{
+  "condo": "Presto @ Upper Serangoon",
+  "slug": "presto-upper-serangoon",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 431sqft 1BR near Serangoon MRT (540m, NEL + Circle Line interchange) at a low $730k quantum — but the dossier has zero URA data (no appreciation, no txn count, no median PSF), so the investment case is unverified. Boutique shoebox in a small development means thin resale liquidity.",
+      "rating_rationale": "Genuine positives: freehold, low $730k entry, and walkable to a two-line Serangoon interchange next to NEX mall — a strong rental location. But there is no URA appreciation or transaction data at all, and Presto is a small/boutique freehold block, so resale is shallow and the appreciation case can't be confirmed. $1694 psf for a 431sqft shoebox is paying up for the small format. Without data I can't push above Neutral.",
+      "red_flags": [
+        "No URA data whatsoever — appreciation, txn count and median PSF all null (unverifiable)",
+        "Boutique/small development — thin resale liquidity for an investor exit",
+        "431sqft shoebox — niche resale pool, high PSF for the format"
+      ],
+      "catalysts": [
+        "Freehold tenure at a low $730k quantum",
+        "540m to Serangoon MRT (NEL + Circle Line interchange) and NEX mall — strong rental draw",
+        "Established mature estate amenity"
+      ],
+      "as_of": {
+        "price": 730000,
+        "psf": 1693.74,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 431sqft 1BR near Serangoon MRT (540m, NEL + Circle Line interchange) at a low $730k quantum — but the dossier has zero URA data (no appreciation, no txn count, no median PSF), so the investment case is unverified. Boutique shoebox in a small development means thin resale liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold, low $730k entry, and walkable to a two-line Serangoon interchange next to NEX mall — a strong rental location. But there is no URA appreciation or transaction data at all, and Presto is a small/boutique freehold block, so resale is shallow and the appreciation case can't be confirmed. $1694 psf for a 431sqft shoebox is paying up for the small format. Without data I can't push above Neutral.",
+        "red_flags": [
+          "No URA data whatsoever — appreciation, txn count and median PSF all null (unverifiable)",
+          "Boutique/small development — thin resale liquidity for an investor exit",
+          "431sqft shoebox — niche resale pool, high PSF for the format"
+        ],
+        "catalysts": [
+          "Freehold tenure at a low $730k quantum",
+          "540m to Serangoon MRT (NEL + Circle Line interchange) and NEX mall — strong rental draw",
+          "Established mature estate amenity"
+        ],
+        "rental_assessment": "Location is excellent for a 1BR — interchange MRT + NEX mall pulls a steady single/couple tenant pool. Yield on a $730k freehold shoebox should be respectable.",
+        "appreciation_assessment": "Cannot verify — no URA data. Freehold near an interchange is a reasonable hold, but the absence of transaction evidence keeps confidence low.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "No data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-presto-upper-serangoon-500052068",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The algo's 'cheap' (-2.9%) and high 8.59% CAGR are data quirks from a tiny 36-unit freehold micro-development with thin transactions (17 appreciation txns, 3-txn cohort). Verified comps show the asking PSF is actually ABOVE the recent average, and the micro-project poses real liquidity risk.",
+      "rating_rationale": "Asking 1,693.74 PSF vs verified 12-month resale range 1,467-1,727 (avg ~1,594) — the ask is ~6% ABOVE the trailing average and near the top of the range, so the -2.9% age-adj 'cheap' label is wrong; this is priced rich, not at a discount. The 8.59% CAGR rests on only 17 transactions with a 3-txn size-cohort — exactly the small-sample data quirk v3.4 warns against, not a real bargain. Presto is a 36-unit freehold block with minimal facilities; freehold is NOT a forward edge per the backtest, and the micro-scale means weak resale liquidity and depth. Serangoon MRT/NEX is a 10-min walk (good but not at-door). Net: paying a premium to recent comps for an illiquid asset on noisy signals.",
+      "red_flags": [
+        "Asking PSF (1,693.74) is ~6% ABOVE the verified 12-month average (~1,594) and near the top of the range — not cheap",
+        "8.59% CAGR built on only 17 txns; psf_cohort_txns of 3 — high noise, likely a data quirk",
+        "36-unit micro-development with minimal facilities — thin resale liquidity and limited buyer pool",
+        "Freehold tenure is not a forward edge (v3.4); it does not offset the rich pricing"
+      ],
+      "catalysts": [
+        "10-min walk to Serangoon MRT interchange (NEL/CCL) and NEX mall",
+        "D19/OCR region (the only genuine positive, but undermined by rich entry pricing)"
+      ],
+      "as_of": {
+        "price": 730000,
+        "psf": 1693.74,
+        "beds": 1,
+        "sqft": 431
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The algo's 'cheap' (-2.9%) and high 8.59% CAGR are data quirks from a tiny 36-unit freehold micro-development with thin transactions (17 appreciation txns, 3-txn cohort). Verified comps show the asking PSF is actually ABOVE the recent average, and the micro-project poses real liquidity risk.",
+        "rating_rationale": "Asking 1,693.74 PSF vs verified 12-month resale range 1,467-1,727 (avg ~1,594) — the ask is ~6% ABOVE the trailing average and near the top of the range, so the -2.9% age-adj 'cheap' label is wrong; this is priced rich, not at a discount. The 8.59% CAGR rests on only 17 transactions with a 3-txn size-cohort — exactly the small-sample data quirk v3.4 warns against, not a real bargain. Presto is a 36-unit freehold block with minimal facilities; freehold is NOT a forward edge per the backtest, and the micro-scale means weak resale liquidity and depth. Serangoon MRT/NEX is a 10-min walk (good but not at-door). Net: paying a premium to recent comps for an illiquid asset on noisy signals.",
+        "red_flags": [
+          "Asking PSF (1,693.74) is ~6% ABOVE the verified 12-month average (~1,594) and near the top of the range — not cheap",
+          "8.59% CAGR built on only 17 txns; psf_cohort_txns of 3 — high noise, likely a data quirk",
+          "36-unit micro-development with minimal facilities — thin resale liquidity and limited buyer pool",
+          "Freehold tenure is not a forward edge (v3.4); it does not offset the rich pricing"
+        ],
+        "catalysts": [
+          "10-min walk to Serangoon MRT interchange (NEL/CCL) and NEX mall",
+          "D19/OCR region (the only genuine positive, but undermined by rich entry pricing)"
+        ],
+        "appreciation_assessment": "8.59% trailing CAGR is unreliable — derived from 17 transactions in a 36-unit project; per v3.4 trailing appreciation has ~0 forward power and this thin sample makes it noise, not signal.",
+        "rental_assessment": "Small 431 sqft FH 1BR near Serangoon interchange rents adequately, but a 36-unit no-facilities block commands no premium and the rich entry price depresses yield-on-cost."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-presto-upper-serangoon-500052068",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

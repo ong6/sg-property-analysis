@@ -1,0 +1,115 @@
+{
+  "condo": "Vibes @ East Coast",
+  "slug": "vibes-east-coast",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 581 sqft freehold 1BR in D15 East Coast at $1,601 psf — ~12% below the $1,817 project median, with new TEL Marine Terrace MRT 550m away and a respectable 4.87% appreciation. The freehold tenure and East Coast lifestyle pull are strong, tempered by a thin 33-txn series (small boutique) that makes the rate less reliable.",
+      "rating_rationale": "D15 freehold near the new Thomson-East Coast Line (Marine Terrace 550m, opened recently) is a genuinely attractive combination — East Coast has one of Singapore's deepest buyer pools. Asking $1,601 psf is ~12% under the $1,817 median. 4.87% resale-only CAGR beats the OCR baseline and approaches the RCR prior. The main caveat is the 33-transaction series — a small boutique dev, so the rate and liquidity are less certain than the large projects in this batch. Freehold + TEL + below-median entry still tilt it to Buy.",
+      "red_flags": [
+        "Only 33 URA txns — small boutique, appreciation rate less reliable and exit liquidity thinner",
+        "1BR niche segment",
+        "Freehold premium may already be partly priced in"
+      ],
+      "catalysts": [
+        "New TEL Marine Terrace MRT 550m — fresh connectivity upgrade for East Coast",
+        "Freehold tenure in D15 with deep, durable buyer demand",
+        "~12% below project median PSF"
+      ],
+      "as_of": {
+        "price": 930000,
+        "psf": 1600.69,
+        "beds": 1,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 581 sqft freehold 1BR in D15 East Coast at $1,601 psf — ~12% below the $1,817 project median, with new TEL Marine Terrace MRT 550m away and a respectable 4.87% appreciation. The freehold tenure and East Coast lifestyle pull are strong, tempered by a thin 33-txn series (small boutique) that makes the rate less reliable.",
+        "rating": "Buy",
+        "rating_rationale": "D15 freehold near the new Thomson-East Coast Line (Marine Terrace 550m, opened recently) is a genuinely attractive combination — East Coast has one of Singapore's deepest buyer pools. Asking $1,601 psf is ~12% under the $1,817 median. 4.87% resale-only CAGR beats the OCR baseline and approaches the RCR prior. The main caveat is the 33-transaction series — a small boutique dev, so the rate and liquidity are less certain than the large projects in this batch. Freehold + TEL + below-median entry still tilt it to Buy.",
+        "red_flags": [
+          "Only 33 URA txns — small boutique, appreciation rate less reliable and exit liquidity thinner",
+          "1BR niche segment",
+          "Freehold premium may already be partly priced in"
+        ],
+        "catalysts": [
+          "New TEL Marine Terrace MRT 550m — fresh connectivity upgrade for East Coast",
+          "Freehold tenure in D15 with deep, durable buyer demand",
+          "~12% below project median PSF"
+        ],
+        "rental_assessment": "East Coast D15 has strong, diverse 1BR tenant demand; TEL access boosts it further. Good occupancy, typical yield for a freehold.",
+        "appreciation_assessment": "4.87% is healthy for a freehold and supported by the TEL catalyst; discount the precision given only 33 txns, but direction is positive.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vibes-east-coast-24904042",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 2015 boutique in Telok Kurau (D15) with the cleanest value-plus-catalyst case of the five. Asking $1,601 psf is verifiably ~10% below real recent transactions (avg ~$1,770 psf, range $1,383-$1,906 over 12 months). The Thomson-East Coast Line (Marine Terrace TE27 / Marine Parade TE26) is now operational within ~10 min walk - a dated, decisive catalyst. Reasonable cohort depth (5 cohort txns, 33 appreciation txns) supports the discount.",
+      "rating_rationale": "Verified recent transactions average ~$1,770 psf (6mo $1,831, 12mo $1,724, range $1,383-$1,906); the $1,600.69 asking is a genuine ~10% discount to live comps, aligning with the -26.3% age_adj_premium and -12.3% cohort signal which rests on 5 cohort and 33 appreciation txns - far less thin than the quirk names. D15 is RCR with solid realized forward returns per v3.4, and the TEL stations near East Coast are a confirmed physical catalyst, justifying the higher end of medium confidence. Capped at medium (not high) because 581 sqft small units carry a structurally higher PSF and the cohort is still only 5 deep.",
+      "red_flags": [
+        "581 sqft is a small unit that structurally trades at higher PSF - judge only against same-size comps, not project pool",
+        "psf_cohort_txns=5 is adequate but not deep - the -12.3% cohort discount has moderate, not high, statistical support",
+        "Boutique 117-unit project = moderate liquidity"
+      ],
+      "catalysts": [
+        "Thomson-East Coast Line operational: Marine Terrace TE27 / Marine Parade TE26 within ~10 min walk - confirmed, dated connectivity uplift",
+        "Freehold in established East Coast/Marine Parade lifestyle belt with strong rental demand",
+        "Verified asking ~10% below live recent transactions"
+      ],
+      "as_of": {
+        "price": 930000,
+        "psf": 1600.69,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Freehold 2015 boutique in Telok Kurau (D15) with the cleanest value-plus-catalyst case of the five. Asking $1,601 psf is verifiably ~10% below real recent transactions (avg ~$1,770 psf, range $1,383-$1,906 over 12 months). The Thomson-East Coast Line (Marine Terrace TE27 / Marine Parade TE26) is now operational within ~10 min walk - a dated, decisive catalyst. Reasonable cohort depth (5 cohort txns, 33 appreciation txns) supports the discount.",
+        "rating_rationale": "Verified recent transactions average ~$1,770 psf (6mo $1,831, 12mo $1,724, range $1,383-$1,906); the $1,600.69 asking is a genuine ~10% discount to live comps, aligning with the -26.3% age_adj_premium and -12.3% cohort signal which rests on 5 cohort and 33 appreciation txns - far less thin than the quirk names. D15 is RCR with solid realized forward returns per v3.4, and the TEL stations near East Coast are a confirmed physical catalyst, justifying the higher end of medium confidence. Capped at medium (not high) because 581 sqft small units carry a structurally higher PSF and the cohort is still only 5 deep.",
+        "red_flags": [
+          "581 sqft is a small unit that structurally trades at higher PSF - judge only against same-size comps, not project pool",
+          "psf_cohort_txns=5 is adequate but not deep - the -12.3% cohort discount has moderate, not high, statistical support",
+          "Boutique 117-unit project = moderate liquidity"
+        ],
+        "catalysts": [
+          "Thomson-East Coast Line operational: Marine Terrace TE27 / Marine Parade TE26 within ~10 min walk - confirmed, dated connectivity uplift",
+          "Freehold in established East Coast/Marine Parade lifestyle belt with strong rental demand",
+          "Verified asking ~10% below live recent transactions"
+        ],
+        "appreciation_assessment": "appreciation_pct 4.87% (ura_5yr_cagr, 33 txns) is credible but per v3.4 forward-uninformative; the TEL catalyst is the real forward story and the value gap is the robust signal. The 2023-2025 PSF rose $1,711->$1,817 (~6%), consistent with a healthy, not frothy, micro-market.",
+        "rental_assessment": "Strong rental micro-market: residents cite direct city/Orchard buses, abundant F&B, and the new MRT. A 581 sqft unit at $930k renting ~$3.0-3.3k/mo gives ~3.9-4.3% gross - attractive for a freehold D15 hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vibes-east-coast-24904042",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

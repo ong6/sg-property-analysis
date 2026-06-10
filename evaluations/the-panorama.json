@@ -112,6 +112,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-500155080",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large, well-regarded D20 (Ang Mo Kio) leasehold project; 1BR asking $1,857 psf vs verified recent project average ~$2,014 psf (6mo ~$2,065) — a real ~8% discount in a deep, liquid, historically profitable development.",
+      "rating_rationale": "Web-verified recent transactions average ~$2,014 psf (last 12mo) and ~$2,065 psf over 6mo, so the $1,857 asking is genuinely ~8% below market — the algo's age_adj_premium of -13.2% directionally checks out even if it overstates. The project carries an exceptional track record (EdgeProp: 241 profitable / 0 unprofitable transactions) and very deep liquidity (195 appreciation txns), which de-risks a 5-7yr exit. D20 sits in the OCR/RCR band the v3.4 backtest prefers over CCR. appreciation_pct of 6.07% is healthy but I weight it lightly per the backtest. Main caution: psf_cohort_txns of only 4 means the precise 1BR discount is less certain than the project-wide read.",
+      "red_flags": [
+        "1BR own-cohort thin (psf_cohort_txns=4) — exact same-size discount is fuzzy",
+        "99-yr leasehold from 2013 — lease decay starts to matter over a long hold",
+        "Compact 474 sqft 1BR; small-unit segment more rate-sensitive"
+      ],
+      "catalysts": [
+        "Established AMK location with strong, proven resale liquidity (deep transaction base)",
+        "Ongoing Ang Mo Kio / Bishan amenity and connectivity upgrades support demand"
+      ],
+      "as_of": {
+        "price": 880000,
+        "psf": 1856.54,
+        "beds": 1,
+        "sqft": 474
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large, well-regarded D20 (Ang Mo Kio) leasehold project; 1BR asking $1,857 psf vs verified recent project average ~$2,014 psf (6mo ~$2,065) — a real ~8% discount in a deep, liquid, historically profitable development.",
+        "rating_rationale": "Web-verified recent transactions average ~$2,014 psf (last 12mo) and ~$2,065 psf over 6mo, so the $1,857 asking is genuinely ~8% below market — the algo's age_adj_premium of -13.2% directionally checks out even if it overstates. The project carries an exceptional track record (EdgeProp: 241 profitable / 0 unprofitable transactions) and very deep liquidity (195 appreciation txns), which de-risks a 5-7yr exit. D20 sits in the OCR/RCR band the v3.4 backtest prefers over CCR. appreciation_pct of 6.07% is healthy but I weight it lightly per the backtest. Main caution: psf_cohort_txns of only 4 means the precise 1BR discount is less certain than the project-wide read.",
+        "red_flags": [
+          "1BR own-cohort thin (psf_cohort_txns=4) — exact same-size discount is fuzzy",
+          "99-yr leasehold from 2013 — lease decay starts to matter over a long hold",
+          "Compact 474 sqft 1BR; small-unit segment more rate-sensitive"
+        ],
+        "catalysts": [
+          "Established AMK location with strong, proven resale liquidity (deep transaction base)",
+          "Ongoing Ang Mo Kio / Bishan amenity and connectivity upgrades support demand"
+        ],
+        "rental_assessment": "Compact 1BR in a mature, amenity-rich estate near AMK/Bishan — steady tenant demand; yield typical for a sub-500 sqft leasehold unit.",
+        "appreciation_assessment": "Trailing 6.07% CAGR on a deep 195-txn base is reassuring on liquidity but given ~0 forward predictive power I lean on the present-value discount and the project's profitability record instead."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-60107745",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

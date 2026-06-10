@@ -1,0 +1,117 @@
+{
+  "condo": "The line @ tanjong rhu",
+  "slug": "the-line-tanjong-rhu",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 420 sqft freehold shoebox 1BR at The Line@Tanjong Rhu (D15, built 2016), an exceptional 140m from TE24 Katong Park MRT, at $966k / $2,300 psf. The MRT-at-the-doorstep location and TEL connectivity are genuine rental strengths, but $2,300 psf on a 420 sqft shoebox is a very high per-sqft entry with no URA data to underwrite the appreciation case.",
+      "rating_rationale": "140m to a TEL station and Tanjong Rhu/Meyer prestige give this strong rental demand and a sub-$1M quantum that keeps the buyer pool reasonable. Against that, $2,300 psf is steep for a 420 sqft shoebox, shoebox capital appreciation historically lags larger units, and there's no URA transaction data here to confirm a trend. A solid yield/location 1BR but not a conviction appreciation buy at this PSF.",
+      "red_flags": [
+        "$2,300 psf is high for a 420 sqft shoebox — limited per-sqft upside",
+        "No URA appreciation/transaction data available",
+        "Shoebox units historically underperform larger formats on capital growth"
+      ],
+      "catalysts": [
+        "140m to TE24 Katong Park (Thomson-East Coast Line) — top-tier connectivity",
+        "Freehold, sub-$1M quantum, prestigious Tanjong Rhu/Meyer corridor",
+        "Greater Southern Waterfront proximity"
+      ],
+      "as_of": {
+        "price": 966000,
+        "psf": 2300.0,
+        "beds": 1,
+        "sqft": 420.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 420 sqft freehold shoebox 1BR at The Line@Tanjong Rhu (D15, built 2016), an exceptional 140m from TE24 Katong Park MRT, at $966k / $2,300 psf. The MRT-at-the-doorstep location and TEL connectivity are genuine rental strengths, but $2,300 psf on a 420 sqft shoebox is a very high per-sqft entry with no URA data to underwrite the appreciation case.",
+        "rating": "Neutral",
+        "rating_rationale": "140m to a TEL station and Tanjong Rhu/Meyer prestige give this strong rental demand and a sub-$1M quantum that keeps the buyer pool reasonable. Against that, $2,300 psf is steep for a 420 sqft shoebox, shoebox capital appreciation historically lags larger units, and there's no URA transaction data here to confirm a trend. A solid yield/location 1BR but not a conviction appreciation buy at this PSF.",
+        "red_flags": [
+          "$2,300 psf is high for a 420 sqft shoebox — limited per-sqft upside",
+          "No URA appreciation/transaction data available",
+          "Shoebox units historically underperform larger formats on capital growth"
+        ],
+        "catalysts": [
+          "140m to TE24 Katong Park (Thomson-East Coast Line) — top-tier connectivity",
+          "Freehold, sub-$1M quantum, prestigious Tanjong Rhu/Meyer corridor",
+          "Greater Southern Waterfront proximity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-line-tanjong-rhu-500157857",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Freehold 3BR at Tanjong Rhu, 270m from the new Katong Park TEL station — a genuinely strong location, but priced at-market ($2566 PSF vs $2550 URA median) for $3.038M, which is a thin >$3M buyer pool, while the URA series shows only 2.8%/yr on 42 transactions. You're paying full freight in a high-quantum, low-growth pocket.",
+      "rating_rationale": "Reliable URA data (42 txns, no new-launch bias) gives a credible read: appreciation only 2.8%/yr and the $2566 asking PSF is right on the $2550 median, so there's no value gap. At $3.038M the unit sits above the liquid sweet spot, shrinking the buyer pool. The 270m walk to Katong Park MRT (TEL, opened recently) and freehold tenure are real positives, but the weak 423 score / 209-304-56 record and sub-3% appreciation make this a hold-for-location play, not a growth investment.",
+      "red_flags": [
+        "Appreciation only 2.8%/yr on solid 42-txn URA data — below RCR baseline",
+        "$3.038M sits in the thin >$3M buyer pool — slower exit",
+        "Asking $2566 PSF = at URA median; no value cushion",
+        "Low technical score (423) and loss-heavy record (209-304-56)"
+      ],
+      "catalysts": [
+        "270m to Katong Park MRT (Thomson-East Coast Line) — top-tier connectivity",
+        "Freehold tenure in established D15/Tanjong Rhu lifestyle district with deep owner-occupier demand",
+        "Waterfront/Kallang Basin and Greater Southern Waterfront proximity over the long run"
+      ],
+      "as_of": {
+        "price": 3038000,
+        "psf": 2565.88,
+        "beds": 3,
+        "sqft": 1184.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3BR at Tanjong Rhu, 270m from the new Katong Park TEL station — a genuinely strong location, but priced at-market ($2566 PSF vs $2550 URA median) for $3.038M, which is a thin >$3M buyer pool, while the URA series shows only 2.8%/yr on 42 transactions. You're paying full freight in a high-quantum, low-growth pocket.",
+        "rating": "Neutral",
+        "rating_rationale": "Reliable URA data (42 txns, no new-launch bias) gives a credible read: appreciation only 2.8%/yr and the $2566 asking PSF is right on the $2550 median, so there's no value gap. At $3.038M the unit sits above the liquid sweet spot, shrinking the buyer pool. The 270m walk to Katong Park MRT (TEL, opened recently) and freehold tenure are real positives, but the weak 423 score / 209-304-56 record and sub-3% appreciation make this a hold-for-location play, not a growth investment.",
+        "red_flags": [
+          "Appreciation only 2.8%/yr on solid 42-txn URA data — below RCR baseline",
+          "$3.038M sits in the thin >$3M buyer pool — slower exit",
+          "Asking $2566 PSF = at URA median; no value cushion",
+          "Low technical score (423) and loss-heavy record (209-304-56)"
+        ],
+        "catalysts": [
+          "270m to Katong Park MRT (Thomson-East Coast Line) — top-tier connectivity",
+          "Freehold tenure in established D15/Tanjong Rhu lifestyle district with deep owner-occupier demand",
+          "Waterfront/Kallang Basin and Greater Southern Waterfront proximity over the long run"
+        ],
+        "rental_assessment": "Tanjong Rhu/Katong rents well to expats and professionals; at $3M the gross yield is thin (~3%), typical for prime freehold at this quantum.",
+        "appreciation_assessment": "URA resale-only 2.8%/yr on 42 txns is reliable and modest; the freehold premium is already priced in, limiting upside despite the new MRT.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.8,
+        "appreciation_rate_source": "URA resale-only series, 42 txns, no new-launch bias (from dossier)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-line-tanjong-rhu-500062426",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

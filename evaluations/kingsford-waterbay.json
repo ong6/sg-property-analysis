@@ -1,0 +1,115 @@
+{
+  "condo": "Kingsford Waterbay",
+  "slug": "kingsford-waterbay",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Kingsford Waterbay carries a well-documented build-quality stigma — lowest CONQUAS band 5, a BCA stop-work order over suspected construction-safety issues, MOM safety fines and resident defect complaints — and is widely flagged in forums as a loss-making project. At $1449 psf it merely matches the $1463 median with a thin 2.8% CAGR, so there is no value cushion to offset the reputational drag.",
+      "rating_rationale": "The developer/build reputation directly impairs resale liquidity and appreciation — exactly the things a 5-7yr investor needs. CONQUAS band 5 (lowest), BCA stop-work order, MOM fines, ongoing defect reports. Appreciation is only 2.8% (reliable over 375 txns) and the entry PSF ($1449) is at-median, so no discount compensates for the stigma. Poor MRT access too (1.15km to an LRT, not MRT). Better D19 options exist.",
+      "red_flags": [
+        "Lowest CONQUAS band 5 quality rating; BCA stop-work order; MOM safety fines (Kingsford track record)",
+        "Documented resident defect complaints and 'loss-making' forum reputation impairing resale",
+        "Only 2.8% appreciation at full median PSF — no value buffer",
+        "Poor transit: 1.15km to Kangkar LRT (not MRT)"
+      ],
+      "catalysts": [
+        "Large development (liquid unit count) and riverfront positioning",
+        "Cross Island Line / NE growth corridor provides a regional tailwind"
+      ],
+      "as_of": {
+        "price": 1388000,
+        "psf": 1448.85,
+        "beds": 3,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Kingsford Waterbay carries a well-documented build-quality stigma — lowest CONQUAS band 5, a BCA stop-work order over suspected construction-safety issues, MOM safety fines and resident defect complaints — and is widely flagged in forums as a loss-making project. At $1449 psf it merely matches the $1463 median with a thin 2.8% CAGR, so there is no value cushion to offset the reputational drag.",
+        "rating": "Avoid",
+        "rating_rationale": "The developer/build reputation directly impairs resale liquidity and appreciation — exactly the things a 5-7yr investor needs. CONQUAS band 5 (lowest), BCA stop-work order, MOM fines, ongoing defect reports. Appreciation is only 2.8% (reliable over 375 txns) and the entry PSF ($1449) is at-median, so no discount compensates for the stigma. Poor MRT access too (1.15km to an LRT, not MRT). Better D19 options exist.",
+        "red_flags": [
+          "Lowest CONQUAS band 5 quality rating; BCA stop-work order; MOM safety fines (Kingsford track record)",
+          "Documented resident defect complaints and 'loss-making' forum reputation impairing resale",
+          "Only 2.8% appreciation at full median PSF — no value buffer",
+          "Poor transit: 1.15km to Kangkar LRT (not MRT)"
+        ],
+        "catalysts": [
+          "Large development (liquid unit count) and riverfront positioning",
+          "Cross Island Line / NE growth corridor provides a regional tailwind"
+        ],
+        "rental_assessment": "Tenant demand is adequate for a large D19 development but the weak transit access (LRT only) and build reputation cap rental appeal versus better-connected peers.",
+        "appreciation_assessment": "2.8% over 375 txns is reliable and weak; the build-quality stigma is a structural drag that makes future appreciation likely to lag the district.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.8,
+        "appreciation_rate_source": "URA, 375 txns, consistent with weak resale reputation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kingsford-waterbay-60195459",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "OCR riverside 1BR priced at market, weighed down by a documented developer quality/safety record and mega-development exit competition.",
+      "rating_rationale": "The algo's -19.3% age-adj looks attractive, but the same-size cohort premium is only -3.0% (19 txns) — i.e. roughly at-market once you control for unit size, which the web confirms: 1BR/recent transactions average ~S$1,453-1,463 psf and this unit at S$1,444 psf is right on it. So the headline -19.3% is mostly leasehold-age math, not a real discount. The deeper concern is the developer: Kingsford received a BCA stop-work order at THIS project (Kingsford Waterbay, Dec 2017) over construction-safety feedback, was fined S$130k for repeated safety lapses at Hillview Peak, and was hit with a no-sale licence at Normanton Park — a well-documented build-quality reputation that depresses resale appeal. It is also a 1,165-unit mega-development, so exit liquidity competes against heavy same-project supply. D19/OCR is the best forward region and the price is fair, but no margin of safety plus the developer overhang → Neutral.",
+      "red_flags": [
+        "Developer Kingsford has a documented quality/safety record — BCA stop-work order at this very project (2017), S$130k MOM fine, Normanton Park no-sale licence",
+        "1,165-unit mega-development — resale exit competes with large in-project supply",
+        "Priced at the recent 1BR market average (~S$1,453); -19.3% headline is age-adjustment, real same-cohort gap only -3%"
+      ],
+      "catalysts": [
+        "OCR/D19 is the strongest forward region per the backtest (~+4.0% realized fwd)",
+        "Riverside (Sungei Serangoon) setting and full condo facilities support owner-occupier rental appeal"
+      ],
+      "as_of": {
+        "price": 699000,
+        "psf": 1444.21,
+        "beds": 1,
+        "sqft": 484
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "OCR riverside 1BR priced at market, weighed down by a documented developer quality/safety record and mega-development exit competition.",
+        "rating_rationale": "The algo's -19.3% age-adj looks attractive, but the same-size cohort premium is only -3.0% (19 txns) — i.e. roughly at-market once you control for unit size, which the web confirms: 1BR/recent transactions average ~S$1,453-1,463 psf and this unit at S$1,444 psf is right on it. So the headline -19.3% is mostly leasehold-age math, not a real discount. The deeper concern is the developer: Kingsford received a BCA stop-work order at THIS project (Kingsford Waterbay, Dec 2017) over construction-safety feedback, was fined S$130k for repeated safety lapses at Hillview Peak, and was hit with a no-sale licence at Normanton Park — a well-documented build-quality reputation that depresses resale appeal. It is also a 1,165-unit mega-development, so exit liquidity competes against heavy same-project supply. D19/OCR is the best forward region and the price is fair, but no margin of safety plus the developer overhang → Neutral.",
+        "red_flags": [
+          "Developer Kingsford has a documented quality/safety record — BCA stop-work order at this very project (2017), S$130k MOM fine, Normanton Park no-sale licence",
+          "1,165-unit mega-development — resale exit competes with large in-project supply",
+          "Priced at the recent 1BR market average (~S$1,453); -19.3% headline is age-adjustment, real same-cohort gap only -3%"
+        ],
+        "catalysts": [
+          "OCR/D19 is the strongest forward region per the backtest (~+4.0% realized fwd)",
+          "Riverside (Sungei Serangoon) setting and full condo facilities support owner-occupier rental appeal"
+        ],
+        "rental_assessment": "Compact 1BR in a large amenity-rich riverside project rents reasonably, but the mega-development means high competing 1BR rental supply; yield is in line with OCR peers, not a differentiator.",
+        "appreciation_assessment": "2.77% trailing CAGR on a very deep 375-txn base is reliably measured and low — no momentum story; with the unit at market price and a developer reputation drag, forward upside is muted."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kingsford-waterbay-60133845",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

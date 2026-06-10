@@ -58,6 +58,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-riversound-residence-500094581",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 99-LH Sengkang 4BR asking $1,355 psf — below the project's ~$1,406 psf 12-month average on deep data (137 txns), so reasonable value in a favorable OCR region. But $2.0M is near the quantum ceiling for a Sengkang 4BR, capping the buyer pool and exit liquidity.",
+      "rating_rationale": "The value side is decent: asking $1,355 psf is ~4% below Riversound's trailing-12-month average of $1,406 psf (range $1,025-$1,570), backed by 137 transactions — far from a thin-data quirk. D19 is OCR with the most favorable realized forward drift (~+4.0%), and ~84 years of lease remain (least lease-decay risk of the leasehold names here). What holds me at Neutral rather than Buy: (1) the size-cohort premium of -4.2% rests on only 3 cohort txns, so the size-specific 'cheapness' is thin even if the project-level value is solid; (2) the binding constraint is quantum — $2.0M for a compact (1,475 sqft) 4BR sits near the top of what Sengkang resale buyers pay, and HDB-upgrader budgets thin out sharply above this level, so exit liquidity for a 4BR at this price is the real risk; (3) transport is moderate (Buangkok NE15 / Sengkang LRT, not on the doorstep). Trailing 6.5% CAGR (137 txns) is credible but ~0 forward power, so it does not change the call. Net: fairly-to-mildly-cheaply priced asset in a good-region, but the quantum ceiling caps upside and liquidity — an honest Neutral.",
+      "red_flags": [
+        "$2.0M is near the quantum ceiling for a Sengkang 4BR — thin upgrader buyer pool on exit",
+        "Size-cohort premium -4.2% on only 3 cohort txns — size-specific value is thin",
+        "Transport moderate: Buangkok NE15 / LRT not at the doorstep",
+        "99-yr leasehold from 2011; compact 1,475 sqft for a 4-bedder (tight layout)"
+      ],
+      "catalysts": [
+        "Asking ~4% below project 12-mo avg PSF on deep data (137 txns) — modest real value",
+        "OCR/D19 region with the most favorable realized forward drift (~+4.0%)",
+        "Long lease (~84 yrs) and large-format family unit demand in maturing Sengkang"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1355.93,
+        "beds": 4,
+        "sqft": 1475
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A 99-LH Sengkang 4BR asking $1,355 psf — below the project's ~$1,406 psf 12-month average on deep data (137 txns), so reasonable value in a favorable OCR region. But $2.0M is near the quantum ceiling for a Sengkang 4BR, capping the buyer pool and exit liquidity.",
+        "rating_rationale": "The value side is decent: asking $1,355 psf is ~4% below Riversound's trailing-12-month average of $1,406 psf (range $1,025-$1,570), backed by 137 transactions — far from a thin-data quirk. D19 is OCR with the most favorable realized forward drift (~+4.0%), and ~84 years of lease remain (least lease-decay risk of the leasehold names here). What holds me at Neutral rather than Buy: (1) the size-cohort premium of -4.2% rests on only 3 cohort txns, so the size-specific 'cheapness' is thin even if the project-level value is solid; (2) the binding constraint is quantum — $2.0M for a compact (1,475 sqft) 4BR sits near the top of what Sengkang resale buyers pay, and HDB-upgrader budgets thin out sharply above this level, so exit liquidity for a 4BR at this price is the real risk; (3) transport is moderate (Buangkok NE15 / Sengkang LRT, not on the doorstep). Trailing 6.5% CAGR (137 txns) is credible but ~0 forward power, so it does not change the call. Net: fairly-to-mildly-cheaply priced asset in a good-region, but the quantum ceiling caps upside and liquidity — an honest Neutral.",
+        "red_flags": [
+          "$2.0M is near the quantum ceiling for a Sengkang 4BR — thin upgrader buyer pool on exit",
+          "Size-cohort premium -4.2% on only 3 cohort txns — size-specific value is thin",
+          "Transport moderate: Buangkok NE15 / LRT not at the doorstep",
+          "99-yr leasehold from 2011; compact 1,475 sqft for a 4-bedder (tight layout)"
+        ],
+        "catalysts": [
+          "Asking ~4% below project 12-mo avg PSF on deep data (137 txns) — modest real value",
+          "OCR/D19 region with the most favorable realized forward drift (~+4.0%)",
+          "Long lease (~84 yrs) and large-format family unit demand in maturing Sengkang"
+        ],
+        "appreciation_assessment": "Trailing 6.5% CAGR is well-supported (137 txns) but treated as story only per v3.4. Forward case rests on modest verified value plus favorable OCR drift, tempered by the quantum-ceiling drag on a 4BR resale.",
+        "rental_assessment": "4BR family units rent to larger households in Sengkang; demand is steady but the gross yield on a $2.0M entry is modest, and the rental pool for a 4-bedder is narrower than for 2-3BR stock."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversound-residence-500143929",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,115 @@
+{
+  "condo": "Suites@Braddell",
+  "slug": "suites-braddell",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2015 freehold 2BR near Woodleigh MRT (D13) at $1.15M / $1369 PSF — notably below the project's own URA median of $1606 PSF, in the deep-buyer-pool sub-$1.5M band. The technical score is a strong 713/1000 and the resale-only rate is a healthy 4.83%/yr, though that rate rests on only 7 transactions.",
+      "rating_rationale": "Three things line up: (1) $1369 PSF is ~15% below the project URA median of $1606, a real value cushion; (2) freehold 2BR at $1.15M sits in the most liquid price band with the widest tenant/buyer pool; (3) resale-only appreciation of 4.83%/yr with no new-launch bias. Woodleigh MRT (730m), Bidadari estate maturation and Woodleigh Mall are concrete catalysts. The main caveat is the thin 7-txn basis for the rate and Suites@Braddell being a smaller development.",
+      "red_flags": [
+        "Appreciation rate rests on only 7 URA transactions — statistically thin",
+        "Likely a smaller/boutique development (limited facilities)",
+        "730m/9-min to MRT is acceptable but not doorstep"
+      ],
+      "catalysts": [
+        "Priced ~15% under project URA median PSF ($1369 vs $1606)",
+        "Bidadari estate maturation + Woodleigh Mall/integrated transport hub",
+        "Freehold 2BR in the most liquid sub-$1.5M band near Woodleigh MRT (NE line)"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1369.05,
+        "beds": 2,
+        "sqft": 840.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2015 freehold 2BR near Woodleigh MRT (D13) at $1.15M / $1369 PSF — notably below the project's own URA median of $1606 PSF, in the deep-buyer-pool sub-$1.5M band. The technical score is a strong 713/1000 and the resale-only rate is a healthy 4.83%/yr, though that rate rests on only 7 transactions.",
+        "rating": "Buy",
+        "rating_rationale": "Three things line up: (1) $1369 PSF is ~15% below the project URA median of $1606, a real value cushion; (2) freehold 2BR at $1.15M sits in the most liquid price band with the widest tenant/buyer pool; (3) resale-only appreciation of 4.83%/yr with no new-launch bias. Woodleigh MRT (730m), Bidadari estate maturation and Woodleigh Mall are concrete catalysts. The main caveat is the thin 7-txn basis for the rate and Suites@Braddell being a smaller development.",
+        "red_flags": [
+          "Appreciation rate rests on only 7 URA transactions — statistically thin",
+          "Likely a smaller/boutique development (limited facilities)",
+          "730m/9-min to MRT is acceptable but not doorstep"
+        ],
+        "catalysts": [
+          "Priced ~15% under project URA median PSF ($1369 vs $1606)",
+          "Bidadari estate maturation + Woodleigh Mall/integrated transport hub",
+          "Freehold 2BR in the most liquid sub-$1.5M band near Woodleigh MRT (NE line)"
+        ],
+        "rental_assessment": "Strong — 2BR is the widest tenant pool, freehold, 730m to Woodleigh MRT and close to Bidadari/Toa Payoh; reliable lettability with a sensible yield at $1.15M.",
+        "appreciation_assessment": "Positive: 4.83%/yr resale-only (no new-launch bias) and a sub-median entry give genuine upside, but confidence is tempered by the 7-transaction sample — verify against recent comparable resales.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-braddell-500052088",
+        "review_file": "cov_batch_31.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 2BR in D13 (Toa Payoh/Braddell fringe) with a headline -28.3% age-adjusted discount, but the value claim cannot be verified — psf_cohort_txns is 0, so the -1.8% cohort premium rests on zero comparables, and web searches returned no recent Suites@Braddell transactions.",
+      "rating_rationale": "The deep -28.3% discount is the only thing carrying this listing, and it is unsupported: psf_cohort_txns=0 means the -1.8% vs-cohort figure is a data quirk, not a measured bargain, and I could not surface any actual recent Suites@Braddell resale PSF on the web to confirm $1,369 is below market. D13 is RCR-ish (backtest forward ~+3.5%, decent but not top-tier), Braddell MRT and the new The Orie/Braddell Horizon launches are nearby supports, but freehold is explicitly not a forward edge per the v3.4 priors. With the value signal unverifiable and an 840 sqft 2BR in a small boutique block, this is a Neutral until real comps confirm the discount.",
+      "red_flags": [
+        "psf_cohort_txns = 0 — the cheapness signal has no comparable transactions behind it",
+        "no recent Suites@Braddell resale transactions found on the web to verify asking PSF",
+        "small boutique development implies thin liquidity and wide bid-ask on exit",
+        "freehold premium does not translate to forward appreciation per backtest"
+      ],
+      "catalysts": [
+        "Braddell/Toa Payoh MRT proximity and new-launch (The Orie, Braddell Horizon) price anchoring nearby",
+        "Toa Payoh 99LH condo PSF up ~41% since 2020 — strong area momentum (story only)"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1369.05,
+        "beds": 2,
+        "sqft": 840
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Freehold 2BR in D13 (Toa Payoh/Braddell fringe) with a headline -28.3% age-adjusted discount, but the value claim cannot be verified — psf_cohort_txns is 0, so the -1.8% cohort premium rests on zero comparables, and web searches returned no recent Suites@Braddell transactions.",
+        "rating_rationale": "The deep -28.3% discount is the only thing carrying this listing, and it is unsupported: psf_cohort_txns=0 means the -1.8% vs-cohort figure is a data quirk, not a measured bargain, and I could not surface any actual recent Suites@Braddell resale PSF on the web to confirm $1,369 is below market. D13 is RCR-ish (backtest forward ~+3.5%, decent but not top-tier), Braddell MRT and the new The Orie/Braddell Horizon launches are nearby supports, but freehold is explicitly not a forward edge per the v3.4 priors. With the value signal unverifiable and an 840 sqft 2BR in a small boutique block, this is a Neutral until real comps confirm the discount.",
+        "red_flags": [
+          "psf_cohort_txns = 0 — the cheapness signal has no comparable transactions behind it",
+          "no recent Suites@Braddell resale transactions found on the web to verify asking PSF",
+          "small boutique development implies thin liquidity and wide bid-ask on exit",
+          "freehold premium does not translate to forward appreciation per backtest"
+        ],
+        "catalysts": [
+          "Braddell/Toa Payoh MRT proximity and new-launch (The Orie, Braddell Horizon) price anchoring nearby",
+          "Toa Payoh 99LH condo PSF up ~41% since 2020 — strong area momentum (story only)"
+        ],
+        "rental_assessment": "No project-specific rental data verified; a central-fringe FH 2BR near Braddell MRT should rent reasonably to working professionals, but yield is unconfirmed.",
+        "appreciation_assessment": "ura_5yr_cagr 4.83% on only 7 txns — thin and per backtest near-zero forward predictive power. The vs-cohort discount that would justify a Buy is unverified (0 cohort txns)."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-braddell-500052088",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

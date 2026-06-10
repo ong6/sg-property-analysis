@@ -1,0 +1,65 @@
+{
+  "condo": "Highest rental yield in D5, 1km Fairfield Methodist School, 5mins to Buona Vista Mrt",
+  "slug": "highest-rental-yield-in-d5-1km-fairfield-methodist-school-5mins-to-buona-vista-mrt",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 99-yr 4BR (1,227sqft) at $2,363 PSF, 410m from One-North MRT in D5, almost certainly One-North Eden (TOP ~2024-26). Premium location at the heart of the One-North tech/biomedical cluster with deep professional-tenant demand, but a 1,227sqft '4BR' is a tightly-stacked layout and the $2.9M quantum is steep for 99-yr leasehold.",
+      "rating_rationale": "Location is genuinely top-tier — 410m to One-North MRT, inside the One-North/Fusionopolis/Biopolis employment belt, 1km to Fairfield Methodist — which underwrites strong rental demand (the 'highest yield in D5' pitch is plausible). But 1,227sqft for a 4BR is a squeezed mass-market layout, $2,363 PSF is full new-launch RCR pricing on a 99-yr lease, and $2.9M is above the deepest-liquidity band. No URA series to verify the trend. Strong fundamentals offset by stretched price/lease and a compact floorplate.",
+      "red_flags": [
+        "1,227sqft for a 4BR is a compact, tightly-stacked layout",
+        "99-yr leasehold at $2,363 PSF / $2.9M is full RCR new-launch pricing",
+        "No URA appreciation/txn data to verify trend",
+        "$2.9M quantum above the deepest-liquidity sweet spot"
+      ],
+      "catalysts": [
+        "410m to One-North MRT (CCL) in the One-North tech/biomedical hub",
+        "Deep professional/expat rental demand drives high yield",
+        "1km to Fairfield Methodist; near NUS/Star Vista/Mediapolis"
+      ],
+      "as_of": {
+        "price": 2900000,
+        "psf": 2363.49,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 99-yr 4BR (1,227sqft) at $2,363 PSF, 410m from One-North MRT in D5, almost certainly One-North Eden (TOP ~2024-26). Premium location at the heart of the One-North tech/biomedical cluster with deep professional-tenant demand, but a 1,227sqft '4BR' is a tightly-stacked layout and the $2.9M quantum is steep for 99-yr leasehold.",
+        "rating": "Neutral",
+        "rating_rationale": "Location is genuinely top-tier — 410m to One-North MRT, inside the One-North/Fusionopolis/Biopolis employment belt, 1km to Fairfield Methodist — which underwrites strong rental demand (the 'highest yield in D5' pitch is plausible). But 1,227sqft for a 4BR is a squeezed mass-market layout, $2,363 PSF is full new-launch RCR pricing on a 99-yr lease, and $2.9M is above the deepest-liquidity band. No URA series to verify the trend. Strong fundamentals offset by stretched price/lease and a compact floorplate.",
+        "red_flags": [
+          "1,227sqft for a 4BR is a compact, tightly-stacked layout",
+          "99-yr leasehold at $2,363 PSF / $2.9M is full RCR new-launch pricing",
+          "No URA appreciation/txn data to verify trend",
+          "$2.9M quantum above the deepest-liquidity sweet spot"
+        ],
+        "catalysts": [
+          "410m to One-North MRT (CCL) in the One-North tech/biomedical hub",
+          "Deep professional/expat rental demand drives high yield",
+          "1km to Fairfield Methodist; near NUS/Star Vista/Mediapolis"
+        ],
+        "rental_assessment": "Among the strongest rental locations in D5 — One-North employment cluster guarantees deep, durable tenant demand; the high-yield claim is credible and is the main reason to hold.",
+        "appreciation_assessment": "RCR/One-North location supports ~5%+ regional appreciation, but full new-launch pricing means much of the upside may already be paid for; lease decay over a 5-7yr hold is the offset.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "RCR baseline trimmed for full new-launch entry PSF and 99-yr lease"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-highest-rental-yield-in-d5-1km-fairfield-methodist-school-5mins-to-buona-vista-mrt-25133369",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

@@ -67,6 +67,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-25584219",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline 'very_low_psf' bargain is a large-format penthouse artifact: this 1,249 sqft '2BR' is a 2BR Dual-Key Penthouse, so the -28.5% cheapness is the penthouse-size discount, not a district bargain.",
+      "rating_rationale": "This is a data quirk, not a deal. At 1,249 sqft a 2BR at Urban Vista is a 2BR Dual-Key Penthouse (project penthouses run 1,162-1,249 sqft) - confirmed by the bedroom_sqft_mismatch red flag. The eye-catching -28.5% age-adj and -22.1% vs-cohort with psf_cohort_txns = 0 simply reflect that large penthouse units always trade at a much lower PSF than standard 549-614 sqft 2BRs; comparing this $1,241 PSF against the project-pooled / standard-2BR median ($1,540 avg last 12mo) is exactly the apples-to-oranges error the v3.2/v3.4 priors warn against. With zero same-cohort transactions there is no reliable price anchor. Penthouses also have a thin buyer pool and weaker exit liquidity, and the $1.55M absolute quantum is high for D16. Tanah Merah MRT adjacency (D16/RCR-ish, mid forward region) is a genuine plus and the large dual-key layout suits own-stay-plus-rent, but as an investment this is a hold-neutral, not a buy. The 'very_low_psf' flag is a comp-mix artifact here, not a verified mis-scrape bargain.",
+      "red_flags": [
+        "1,249 sqft '2BR' is actually a 2BR Dual-Key Penthouse - the low PSF is a size effect, not a discount",
+        "psf_cohort_txns = 0 - no same-format comparable; the -22.1% vs-cohort is unanchored",
+        "very_low_psf and bedroom_sqft_mismatch flags both point to a comp-mismatch, not real cheapness",
+        "Penthouse format + $1.55M quantum = narrow buyer pool and weaker resale liquidity in mass-market D16"
+      ],
+      "catalysts": [
+        "Direct sheltered link to Tanah Merah MRT (EWL/Changi branch)",
+        "Dual-key layout enables rent-one-live-one flexibility (own-stay tilt, not a pure investment edge)"
+      ],
+      "as_of": {
+        "price": 1550000,
+        "psf": 1240.99,
+        "beds": 2,
+        "sqft": 1249
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline 'very_low_psf' bargain is a large-format penthouse artifact: this 1,249 sqft '2BR' is a 2BR Dual-Key Penthouse, so the -28.5% cheapness is the penthouse-size discount, not a district bargain.",
+        "rating_rationale": "This is a data quirk, not a deal. At 1,249 sqft a 2BR at Urban Vista is a 2BR Dual-Key Penthouse (project penthouses run 1,162-1,249 sqft) - confirmed by the bedroom_sqft_mismatch red flag. The eye-catching -28.5% age-adj and -22.1% vs-cohort with psf_cohort_txns = 0 simply reflect that large penthouse units always trade at a much lower PSF than standard 549-614 sqft 2BRs; comparing this $1,241 PSF against the project-pooled / standard-2BR median ($1,540 avg last 12mo) is exactly the apples-to-oranges error the v3.2/v3.4 priors warn against. With zero same-cohort transactions there is no reliable price anchor. Penthouses also have a thin buyer pool and weaker exit liquidity, and the $1.55M absolute quantum is high for D16. Tanah Merah MRT adjacency (D16/RCR-ish, mid forward region) is a genuine plus and the large dual-key layout suits own-stay-plus-rent, but as an investment this is a hold-neutral, not a buy. The 'very_low_psf' flag is a comp-mix artifact here, not a verified mis-scrape bargain.",
+        "red_flags": [
+          "1,249 sqft '2BR' is actually a 2BR Dual-Key Penthouse - the low PSF is a size effect, not a discount",
+          "psf_cohort_txns = 0 - no same-format comparable; the -22.1% vs-cohort is unanchored",
+          "very_low_psf and bedroom_sqft_mismatch flags both point to a comp-mismatch, not real cheapness",
+          "Penthouse format + $1.55M quantum = narrow buyer pool and weaker resale liquidity in mass-market D16"
+        ],
+        "catalysts": [
+          "Direct sheltered link to Tanah Merah MRT (EWL/Changi branch)",
+          "Dual-key layout enables rent-one-live-one flexibility (own-stay tilt, not a pure investment edge)"
+        ],
+        "appreciation_assessment": "Trailing CAGR 3.05% on 193 txns is robust project-wide data but reflects standard units, not penthouses, and carries ~0 forward weight; it cannot be read as forward upside for this atypical unit.",
+        "rental_assessment": "A dual-key 1,249 sqft can be split for ~$4,500-5,500/mo combined, ~3.5-4.3% gross at $1.55M - the one area where the large format helps; but vacancy/management of two sub-units adds friction."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-vista-500163061",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

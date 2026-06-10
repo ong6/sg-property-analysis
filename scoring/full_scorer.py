@@ -27,19 +27,18 @@ v2.2 changes:
 import json
 import os
 import re
-import sys
 import math
 from bisect import bisect_left
 from datetime import datetime
 from typing import Any, Optional
 
 from scoring.costs import CostCalculator
-from scoring.models import QuickScore, ScoredListing, ROIResult, FutureScore
+from scoring.models import ScoredListing
 from scoring.quick_scorer import QuickScorer
 from scoring.rental_estimator import RentalEstimator
 from scoring.roi import ROICalculator
 from scoring.future_scorer import FutureScorer
-from utils.geo import get_mrt_distance, get_tenant_pool_score, find_nearest_mrt, normalize_district
+from utils.geo import get_mrt_distance, get_tenant_pool_score, normalize_district
 
 # New launch bias adjustment config
 try:
@@ -59,8 +58,9 @@ try:
         ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
     )
 except ImportError:
-    REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.045, "RCR": 0.058, "OCR": 0.037}
-    DEFAULT_REGIONAL_APPRECIATION = 0.04
+    # Fallbacks mirror config.py (v3.4 de-inverted baselines; sync if config changes).
+    REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.030, "RCR": 0.037, "OCR": 0.040}
+    DEFAULT_REGIONAL_APPRECIATION = 0.035
     NEW_LAUNCH_DISCOUNT_CURVE = {1: 0.60, 3: 0.45, 5: 0.30, 7: 0.15}
     NEW_SALE_PROPORTION_THRESHOLD = 0.20
     SCORE_WEIGHT_RENTAL_YIELD = 15
@@ -72,14 +72,6 @@ except ImportError:
     SCORE_TIER2_MIN = 45
     ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
     ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
-
-# URA scraper for official government transaction data (5 years history)
-try:
-    from scrapers.ura_scraper import URAScraper, load_ura_csv
-    _HAS_URA_SCRAPER = True
-except ImportError:
-    _HAS_URA_SCRAPER = False
-
 
 # Load district data
 _DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")

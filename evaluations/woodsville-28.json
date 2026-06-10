@@ -1,0 +1,115 @@
+{
+  "condo": "Woodsville 28",
+  "slug": "woodsville-28",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "99-yr LH D13 4BR (2,368 sqft) literally on top of Potong Pasir NEL (110m), at $1,308 psf — a striking ~26% below the $1,774 median. Top score (687) and frontier status driven by the unbeatable MRT access and large family format, though the $3.1M quantum is well above the deep-pool band.",
+      "rating_rationale": "Best-in-batch fundamentals: 110m to MRT is a permanent connectivity moat, 4.94%/yr appreciation (16 txns, acceptable), and $1,308 psf sits ~26% under the $1,774 median giving a genuine value cushion. Risks are the $3.1M quantum (thinner buyer pool) and a 99-yr lease from a 2012 build (~85yr left, still financeable). Value gap and location outweigh quantum concern.",
+      "red_flags": [
+        "$3.1M quantum above the deepest buyer band",
+        "99-yr leasehold — lease decay vs freehold peers",
+        "Large 4BR is a family-only niche on exit"
+      ],
+      "catalysts": [
+        "110m to Potong Pasir NEL — direct CBD line, permanent uplift",
+        "Asking ~26% below district median PSF",
+        "Frontier-ranked, score 687 (recommended tier)"
+      ],
+      "as_of": {
+        "price": 3097000,
+        "psf": 1307.85,
+        "beds": 4,
+        "sqft": 2368.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr LH D13 4BR (2,368 sqft) literally on top of Potong Pasir NEL (110m), at $1,308 psf — a striking ~26% below the $1,774 median. Top score (687) and frontier status driven by the unbeatable MRT access and large family format, though the $3.1M quantum is well above the deep-pool band.",
+        "rating": "Buy",
+        "rating_rationale": "Best-in-batch fundamentals: 110m to MRT is a permanent connectivity moat, 4.94%/yr appreciation (16 txns, acceptable), and $1,308 psf sits ~26% under the $1,774 median giving a genuine value cushion. Risks are the $3.1M quantum (thinner buyer pool) and a 99-yr lease from a 2012 build (~85yr left, still financeable). Value gap and location outweigh quantum concern.",
+        "red_flags": [
+          "$3.1M quantum above the deepest buyer band",
+          "99-yr leasehold — lease decay vs freehold peers",
+          "Large 4BR is a family-only niche on exit"
+        ],
+        "catalysts": [
+          "110m to Potong Pasir NEL — direct CBD line, permanent uplift",
+          "Asking ~26% below district median PSF",
+          "Frontier-ranked, score 687 (recommended tier)"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-woodsville-28-24500461",
+        "review_file": "cov_batch_27.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large outlier unit at a leasehold project 100m from Potong Pasir MRT; the headline PSF looks cheap but it is mostly a size artifact, and the $3.1M quantum hurts exit liquidity.",
+      "rating_rationale": "Asking $1,309 psf sits well below the project's ~$1,774 psf recent-transaction average (range $1,728-1,799 in last 12 months), which the algo reads as -25.8% vs cohort and -28.4% age-adjusted. But the project's normal floorplans are 883-1,399 sqft (2-3BR); this 2,368 sqft 4-bed is an outlier combined/penthouse-type unit with psf_cohort_txns=0, and large units structurally trade at a deep PSF discount, so the discount is largely a size effect rather than a true bargain. A competing same-size 2,368 sqft unit lists at $3.22M ($1,358 psf), so this one only marginally undercuts. The strong, verified catalyst (100m to Potong Pasir NE10, North-East D13 OCR/RCR region with the best realized forward returns) supports the location, but the $3.1M quantum and thin same-size resale/rental market make exit and yield difficult on a 5-7yr hold.",
+      "red_flags": [
+        "2,368 sqft 4-bed is an outlier vs project's normal 883-1,399 sqft range (likely combined unit or sqft anomaly) - psf_cohort_txns=0, no like-for-like comps",
+        "Low PSF is mostly a large-unit size effect, not genuine cheapness; the -25.8% cohort signal cannot be trusted with zero same-size transactions",
+        "$3.1M quantum narrows the buyer/tenant pool, weakening resale liquidity and gross yield",
+        "99-yr leasehold from 2007 - ~80 years left, lease decay accelerating over a 5-7yr hold"
+      ],
+      "catalysts": [
+        "100m to Potong Pasir MRT (NE10) - top-tier transit access",
+        "North-East D13 (Toa Payoh/Potong Pasir fringe) sits in the OCR/RCR band with the strongest realized forward appreciation",
+        "Low absolute PSF vs project median offers some cushion if the large layout suits an own-stay/multi-gen buyer"
+      ],
+      "as_of": {
+        "price": 3100000,
+        "psf": 1309.12,
+        "beds": 4,
+        "sqft": 2368
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large outlier unit at a leasehold project 100m from Potong Pasir MRT; the headline PSF looks cheap but it is mostly a size artifact, and the $3.1M quantum hurts exit liquidity.",
+        "rating_rationale": "Asking $1,309 psf sits well below the project's ~$1,774 psf recent-transaction average (range $1,728-1,799 in last 12 months), which the algo reads as -25.8% vs cohort and -28.4% age-adjusted. But the project's normal floorplans are 883-1,399 sqft (2-3BR); this 2,368 sqft 4-bed is an outlier combined/penthouse-type unit with psf_cohort_txns=0, and large units structurally trade at a deep PSF discount, so the discount is largely a size effect rather than a true bargain. A competing same-size 2,368 sqft unit lists at $3.22M ($1,358 psf), so this one only marginally undercuts. The strong, verified catalyst (100m to Potong Pasir NE10, North-East D13 OCR/RCR region with the best realized forward returns) supports the location, but the $3.1M quantum and thin same-size resale/rental market make exit and yield difficult on a 5-7yr hold.",
+        "red_flags": [
+          "2,368 sqft 4-bed is an outlier vs project's normal 883-1,399 sqft range (likely combined unit or sqft anomaly) - psf_cohort_txns=0, no like-for-like comps",
+          "Low PSF is mostly a large-unit size effect, not genuine cheapness; the -25.8% cohort signal cannot be trusted with zero same-size transactions",
+          "$3.1M quantum narrows the buyer/tenant pool, weakening resale liquidity and gross yield",
+          "99-yr leasehold from 2007 - ~80 years left, lease decay accelerating over a 5-7yr hold"
+        ],
+        "catalysts": [
+          "100m to Potong Pasir MRT (NE10) - top-tier transit access",
+          "North-East D13 (Toa Payoh/Potong Pasir fringe) sits in the OCR/RCR band with the strongest realized forward appreciation",
+          "Low absolute PSF vs project median offers some cushion if the large layout suits an own-stay/multi-gen buyer"
+        ],
+        "appreciation_assessment": "URA 5yr CAGR of 4.94% on 16 txns reflects the broad project, not this large unit; trailing appreciation has ~0 forward power, so treat as context only.",
+        "rental_assessment": "Large 2,368 sqft unit at $3.1M faces a thin tenant pool; project rents average ~$4.7k/month, implying a sub-2% gross yield on this quantum - weak for investment."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-woodsville-28-24813989",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

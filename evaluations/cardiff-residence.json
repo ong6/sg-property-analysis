@@ -1,0 +1,119 @@
+{
+  "condo": "Cardiff Residence",
+  "slug": "cardiff-residence",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 721sqft '1BR' (oversized — closer to a small 2BR layout) at $900k / $1,248 PSF near Lorong Chuan, priced a steep ~16% below the $1,490 URA median. The deep discount and strong arena Elo are appealing, but a 0.87% URA CAGR over 53 transactions signals this development has essentially not appreciated in a decade.",
+      "rating_rationale": "The ~16% discount to median PSF and low $900k absolute price are genuinely attractive and the 53-txn sample makes the data reliable — but that same data shows just 0.87%/yr appreciation, a flat decade. A buy thesis here depends entirely on the discount mean-reverting, which is speculative. The 721sqft size for a 1BR also caps the per-unit upside and the tenant pool skews to a niche.",
+      "red_flags": [
+        "URA appreciation only 0.87%/yr over 53 txns — development has been flat for years",
+        "721sqft is large for a 1BR, limiting PSF efficiency and resale framing",
+        "Lorong Chuan is a quieter, less-trafficked CCL stop"
+      ],
+      "catalysts": [
+        "~16% below URA median PSF — clear value gap if it closes",
+        "Low $900k entry, freehold-of-mind connectivity to CCL",
+        "Nanyang/Australian International School nearby supports family-tenant rental"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1248.27,
+        "beds": 1,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 721sqft '1BR' (oversized — closer to a small 2BR layout) at $900k / $1,248 PSF near Lorong Chuan, priced a steep ~16% below the $1,490 URA median. The deep discount and strong arena Elo are appealing, but a 0.87% URA CAGR over 53 transactions signals this development has essentially not appreciated in a decade.",
+        "rating": "Neutral",
+        "rating_rationale": "The ~16% discount to median PSF and low $900k absolute price are genuinely attractive and the 53-txn sample makes the data reliable — but that same data shows just 0.87%/yr appreciation, a flat decade. A buy thesis here depends entirely on the discount mean-reverting, which is speculative. The 721sqft size for a 1BR also caps the per-unit upside and the tenant pool skews to a niche.",
+        "red_flags": [
+          "URA appreciation only 0.87%/yr over 53 txns — development has been flat for years",
+          "721sqft is large for a 1BR, limiting PSF efficiency and resale framing",
+          "Lorong Chuan is a quieter, less-trafficked CCL stop"
+        ],
+        "catalysts": [
+          "~16% below URA median PSF — clear value gap if it closes",
+          "Low $900k entry, freehold-of-mind connectivity to CCL",
+          "Nanyang/Australian International School nearby supports family-tenant rental"
+        ],
+        "rental_assessment": "Spacious 1BR near international schools and CCL has decent rental appeal; yield modest given the $900k base.",
+        "appreciation_assessment": "Track record is flat (0.87%); even with the discount, a conservative 2-3% forward rate is realistic unless an area catalyst emerges.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cardiff-residence-24337064",
+        "review_file": "cov_batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "99-LH (2011) project near Lorong Chuan MRT (Circle Line) whose headline 26%+ discount is partly a size-mix artifact. Asking $1,248 psf does sit below the 12-month average ~$1,624 psf, but that average is pulled up by tiny 420 sqft units (e.g. a Dec-2025 print at $1,753 psf on 420 sqft), there were only 5 sales in 12 months, psf_cohort_txns=0, and the project's recent PSF trend is actually negative (~-5.6%). Real but overstated value; thin and softening - a hold-your-fire Neutral.",
+      "rating_rationale": "The -26.5% age_adj_premium and -26.3% cohort discount are eye-catching but the comp set is contaminated: only 5 sales in 12 months and the high comps are 420 sqft micro-units whose PSF is structurally inflated, so the 721 sqft unit's true peer PSF is well below $1,624 - shrinking the real discount. psf_cohort_txns=0 means no same-size verification in the algo, and the verified recent PSF trend is -5.6%, signalling softening not mean-reversion. appreciation_pct of just 0.87% (53 txns) confirms a flat/weak market. D19 OCR helps marginally, but per v3.4 a big negative premium built on a contaminated/thin comp set is a quirk-to-treat-skeptically, so Neutral at medium confidence.",
+      "red_flags": [
+        "psf_cohort_txns=0 and only 5 sales in 12 months - the -26% discount is statistically thin and unverified for the 721 sqft band",
+        "Headline avg ~$1,624 psf is inflated by 420 sqft micro-units (Dec-2025 print $1,753 psf), overstating the true discount",
+        "Recent project PSF trend is ~-5.6% (softening), not a mean-reversion setup",
+        "appreciation_pct 0.87% confirms a flat-to-weak price market",
+        "99-LH from 2011 (lease decay accelerates over a 5-7yr hold)",
+        "very_low_psf flag not corroborated against same-size comps"
+      ],
+      "catalysts": [
+        "Lorong Chuan MRT (Circle Line, ~700m/8min) - direct links to Bishan, Serangoon, Paya Lebar",
+        "163-unit project with a reputation for privacy/spaciousness (own-stay appeal)"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1248.27,
+        "beds": 1,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "99-LH (2011) project near Lorong Chuan MRT (Circle Line) whose headline 26%+ discount is partly a size-mix artifact. Asking $1,248 psf does sit below the 12-month average ~$1,624 psf, but that average is pulled up by tiny 420 sqft units (e.g. a Dec-2025 print at $1,753 psf on 420 sqft), there were only 5 sales in 12 months, psf_cohort_txns=0, and the project's recent PSF trend is actually negative (~-5.6%). Real but overstated value; thin and softening - a hold-your-fire Neutral.",
+        "rating_rationale": "The -26.5% age_adj_premium and -26.3% cohort discount are eye-catching but the comp set is contaminated: only 5 sales in 12 months and the high comps are 420 sqft micro-units whose PSF is structurally inflated, so the 721 sqft unit's true peer PSF is well below $1,624 - shrinking the real discount. psf_cohort_txns=0 means no same-size verification in the algo, and the verified recent PSF trend is -5.6%, signalling softening not mean-reversion. appreciation_pct of just 0.87% (53 txns) confirms a flat/weak market. D19 OCR helps marginally, but per v3.4 a big negative premium built on a contaminated/thin comp set is a quirk-to-treat-skeptically, so Neutral at medium confidence.",
+        "red_flags": [
+          "psf_cohort_txns=0 and only 5 sales in 12 months - the -26% discount is statistically thin and unverified for the 721 sqft band",
+          "Headline avg ~$1,624 psf is inflated by 420 sqft micro-units (Dec-2025 print $1,753 psf), overstating the true discount",
+          "Recent project PSF trend is ~-5.6% (softening), not a mean-reversion setup",
+          "appreciation_pct 0.87% confirms a flat-to-weak price market",
+          "99-LH from 2011 (lease decay accelerates over a 5-7yr hold)",
+          "very_low_psf flag not corroborated against same-size comps"
+        ],
+        "catalysts": [
+          "Lorong Chuan MRT (Circle Line, ~700m/8min) - direct links to Bishan, Serangoon, Paya Lebar",
+          "163-unit project with a reputation for privacy/spaciousness (own-stay appeal)"
+        ],
+        "appreciation_assessment": "appreciation_pct 0.87% (ura_5yr_cagr, 53 txns) and a verified -5.6% recent PSF move indicate a flat-to-declining market. Per v3.4 this carries ~0 forward weight, but combined with the contaminated discount it argues against treating Cardiff as a bargain - the value signal is largely an artifact of small-unit mix.",
+        "rental_assessment": "Circle Line proximity gives decent rental support; a 721 sqft unit at $900k renting ~$3.0-3.3k/mo yields ~4.0-4.4% gross, the one genuine positive. But a 99-LH with a softening resale PSF makes the capital case weak for a 5-7yr hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cardiff-residence-24337064",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

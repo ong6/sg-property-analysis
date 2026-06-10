@@ -1,0 +1,63 @@
+{
+  "condo": "D'hiro@Hillside",
+  "slug": "d-hiro-hillside",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 999-year (quasi-freehold) 904sqft 2BR in D19 at $1383 psf — right at the project median — but a tiny boutique development with only 9 URA transactions and no MRT info, making it illiquid and its 4.2% appreciation unreliable. Quasi-freehold tenure is the one genuine plus.",
+      "rating_rationale": "999yr tenure functions like freehold and the 2BR/904sqft is a sensible efficient size at a reasonable $1.25M quantum. But this is a thin-data boutique: only 9 transactions (appreciation rate unreliable), no MRT proximity listed, and entry PSF is exactly at median (no discount cushion). Tenure is nice but doesn't offset the illiquidity and lack of a value or transit edge — Neutral.",
+      "red_flags": [
+        "Only 9 URA transactions — thin, illiquid, appreciation rate unreliable",
+        "No MRT within useful distance (none listed) — weaker rental/resale draw",
+        "At-median PSF — no value discount to compensate for the illiquidity"
+      ],
+      "catalysts": [
+        "999-year leasehold (quasi-freehold) tenure",
+        "Efficient 904sqft 2BR at a liquid $1.25M quantum",
+        "D19 NE growth corridor (PDD/CRL) as a regional tailwind"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1382.74,
+        "beds": 2,
+        "sqft": 904.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 999-year (quasi-freehold) 904sqft 2BR in D19 at $1383 psf — right at the project median — but a tiny boutique development with only 9 URA transactions and no MRT info, making it illiquid and its 4.2% appreciation unreliable. Quasi-freehold tenure is the one genuine plus.",
+        "rating": "Neutral",
+        "rating_rationale": "999yr tenure functions like freehold and the 2BR/904sqft is a sensible efficient size at a reasonable $1.25M quantum. But this is a thin-data boutique: only 9 transactions (appreciation rate unreliable), no MRT proximity listed, and entry PSF is exactly at median (no discount cushion). Tenure is nice but doesn't offset the illiquidity and lack of a value or transit edge — Neutral.",
+        "red_flags": [
+          "Only 9 URA transactions — thin, illiquid, appreciation rate unreliable",
+          "No MRT within useful distance (none listed) — weaker rental/resale draw",
+          "At-median PSF — no value discount to compensate for the illiquidity"
+        ],
+        "catalysts": [
+          "999-year leasehold (quasi-freehold) tenure",
+          "Efficient 904sqft 2BR at a liquid $1.25M quantum",
+          "D19 NE growth corridor (PDD/CRL) as a regional tailwind"
+        ],
+        "rental_assessment": "Without nearby MRT, tenant demand leans on car/bus access — adequate for a Hillside/Upper Serangoon location but not a standout; 2BR format has the widest pool which helps.",
+        "appreciation_assessment": "4.2% rests on 9 txns — directionally OCR-plausible but statistically weak. Quasi-freehold tenure supports value retention but the boutique illiquidity is the limiter.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "Discounted from 4.2% (only 9 txns) toward OCR baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-hiro-hillside-60138226",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

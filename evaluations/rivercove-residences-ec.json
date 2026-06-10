@@ -1,0 +1,59 @@
+{
+  "condo": "Rivercove Residences EC",
+  "slug": "rivercove-residences-ec",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Rivercove Residences is a 2018-launch EC (TOP ~2020) in Sengkang/D19, 4BR (1,184 sqft) at $1,646 psf / $1.95M, just past its 5-year MOP into the open resale market. ECs typically deliver strong post-MOP appreciation as they re-rate toward private comps, but URA appreciation/median data is missing here so the rate is unverified.",
+      "rating_rationale": "Post-MOP EC in Punggol/Sengkang growth corridor (PDD, CRL ~2030) is a structurally sound thesis with $1.95M sitting in the deep buyer band and strong HDB-upgrader demand. But $1,646 psf is already a full EC price after the MOP pop, the LRT-only access (660m to Layar LRT, no direct MRT) caps it, and no URA data means the appreciation case is unconfirmed. Balanced.",
+      "red_flags": [
+        "No URA appreciation/median data — rate unverified",
+        "LRT-only connectivity, no direct MRT line",
+        "Much of the EC discount already captured post-MOP"
+      ],
+      "catalysts": [
+        "Post-MOP EC entering open resale — upgrader demand",
+        "D19 Punggol Digital District + CRL ~2030 corridor",
+        "$1.95M family 4BR in deep buyer band"
+      ],
+      "as_of": {
+        "price": 1950000,
+        "psf": 1646.96,
+        "beds": 4,
+        "sqft": 1184.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Rivercove Residences is a 2018-launch EC (TOP ~2020) in Sengkang/D19, 4BR (1,184 sqft) at $1,646 psf / $1.95M, just past its 5-year MOP into the open resale market. ECs typically deliver strong post-MOP appreciation as they re-rate toward private comps, but URA appreciation/median data is missing here so the rate is unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "Post-MOP EC in Punggol/Sengkang growth corridor (PDD, CRL ~2030) is a structurally sound thesis with $1.95M sitting in the deep buyer band and strong HDB-upgrader demand. But $1,646 psf is already a full EC price after the MOP pop, the LRT-only access (660m to Layar LRT, no direct MRT) caps it, and no URA data means the appreciation case is unconfirmed. Balanced.",
+        "red_flags": [
+          "No URA appreciation/median data — rate unverified",
+          "LRT-only connectivity, no direct MRT line",
+          "Much of the EC discount already captured post-MOP"
+        ],
+        "catalysts": [
+          "Post-MOP EC entering open resale — upgrader demand",
+          "D19 Punggol Digital District + CRL ~2030 corridor",
+          "$1.95M family 4BR in deep buyer band"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rivercove-residences-ec-500091215",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

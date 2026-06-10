@@ -1,0 +1,63 @@
+{
+  "condo": "CHEAP 999years 3bedroom at Mar Thoma Rd",
+  "slug": "cheap-999years-3bedroom-at-mar-thoma-rd",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 999-yr leasehold (effectively freehold) 1,410 sqft 3BR off Mar Thoma Rd (D12 Boon Keng-fringe), 2005-built, at $1.89M / $1,340 psf. The low psf is partly a function of an oversized 1,410 sqft layout, the listing has no URA data, and the 1.22km MRT walk plus a vague 'CHEAP' marketing title warrant caution.",
+      "rating_rationale": "999-yr tenure removes lease-decay risk and the $1,340 psf looks cheap, but the 1,410 sqft is large for a 3BR so the low psf partly reflects size, not a bargain. No URA appreciation or transaction data to validate the price or trend, a 2005 build (21 years), and a 1.22km / 15-min walk to Boon Keng MRT all temper it. $1.89M is a reasonable city-fringe quantum and the tenure is a genuine plus — net Neutral, not a clear buy without verified comps.",
+      "red_flags": [
+        "Oversized 1,410 sqft 3BR — low psf is partly a size artifact",
+        "No URA appreciation/transaction data — unverified pricing",
+        "1.22km / 15-min to Boon Keng MRT — moderate connectivity",
+        "21-year-old building (2005)"
+      ],
+      "catalysts": [
+        "999-yr leasehold — effectively freehold, no decay risk",
+        "City-fringe D12 (Boon Keng/Balestier) near CBD",
+        "Large 3BR layout appeals to families wanting space"
+      ],
+      "as_of": {
+        "price": 1890000,
+        "psf": 1340.43,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 999-yr leasehold (effectively freehold) 1,410 sqft 3BR off Mar Thoma Rd (D12 Boon Keng-fringe), 2005-built, at $1.89M / $1,340 psf. The low psf is partly a function of an oversized 1,410 sqft layout, the listing has no URA data, and the 1.22km MRT walk plus a vague 'CHEAP' marketing title warrant caution.",
+        "rating": "Neutral",
+        "rating_rationale": "999-yr tenure removes lease-decay risk and the $1,340 psf looks cheap, but the 1,410 sqft is large for a 3BR so the low psf partly reflects size, not a bargain. No URA appreciation or transaction data to validate the price or trend, a 2005 build (21 years), and a 1.22km / 15-min walk to Boon Keng MRT all temper it. $1.89M is a reasonable city-fringe quantum and the tenure is a genuine plus — net Neutral, not a clear buy without verified comps.",
+        "red_flags": [
+          "Oversized 1,410 sqft 3BR — low psf is partly a size artifact",
+          "No URA appreciation/transaction data — unverified pricing",
+          "1.22km / 15-min to Boon Keng MRT — moderate connectivity",
+          "21-year-old building (2005)"
+        ],
+        "catalysts": [
+          "999-yr leasehold — effectively freehold, no decay risk",
+          "City-fringe D12 (Boon Keng/Balestier) near CBD",
+          "Large 3BR layout appeals to families wanting space"
+        ],
+        "rental_assessment": "City-fringe near Boon Keng draws decent tenant demand, but the 1.22km walk and large size cap yield to ~3%.",
+        "appreciation_assessment": "No data to anchor; 999-yr city-fringe should hold value but the oversized format and average location suggest modest, not standout, appreciation.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-999years-3bedroom-at-mar-thoma-rd-500137121",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

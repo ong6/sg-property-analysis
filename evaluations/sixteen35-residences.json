@@ -1,0 +1,113 @@
+{
+  "condo": "Sixteen35 Residences",
+  "slug": "sixteen35-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 753 sqft 'compact 3BR' at $1.035M in D14 near Paya Lebar MRT interchange (670m). Very low quantum and a strong growth corridor, but the resale-only appreciation is NEGATIVE (-1.68%/yr) on just 17 transactions, signaling either price weakness or a tiny/illiquid sample.",
+      "rating_rationale": "The entry case is appealing: $1.035M is among the cheapest 3BR-tagged units here, D14 has the Paya Lebar Central / airbase-relocation catalyst, and 670m to a EWL/CCL interchange is strong transit. But two flags temper it: (1) resale-only CAGR is -1.68%/yr — negative — on only 17 txns, so prices have not appreciated (or the sample is too thin to trust); and (2) a 753 sqft '3BR' is a squeezed shoebox layout that limits genuine family-buyer appeal. Low quantum + location keep it liquid, but the negative trend rules out Buy.",
+      "red_flags": [
+        "Resale-only appreciation is NEGATIVE -1.68%/yr — no capital growth demonstrated",
+        "Only 17 URA txns — small, low-confidence sample",
+        "753 sqft for a '3BR' is a compressed layout; weak appeal to genuine family buyers"
+      ],
+      "catalysts": [
+        "Paya Lebar Central commercial hub + airbase relocation land release (D14)",
+        "670m to Paya Lebar MRT (EWL/CCL interchange) — strong connectivity",
+        "$1.035M low quantum keeps the unit liquid"
+      ],
+      "as_of": {
+        "price": 1035000,
+        "psf": 1374.5,
+        "beds": 3,
+        "sqft": 753.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 753 sqft 'compact 3BR' at $1.035M in D14 near Paya Lebar MRT interchange (670m). Very low quantum and a strong growth corridor, but the resale-only appreciation is NEGATIVE (-1.68%/yr) on just 17 transactions, signaling either price weakness or a tiny/illiquid sample.",
+        "rating": "Neutral",
+        "rating_rationale": "The entry case is appealing: $1.035M is among the cheapest 3BR-tagged units here, D14 has the Paya Lebar Central / airbase-relocation catalyst, and 670m to a EWL/CCL interchange is strong transit. But two flags temper it: (1) resale-only CAGR is -1.68%/yr — negative — on only 17 txns, so prices have not appreciated (or the sample is too thin to trust); and (2) a 753 sqft '3BR' is a squeezed shoebox layout that limits genuine family-buyer appeal. Low quantum + location keep it liquid, but the negative trend rules out Buy.",
+        "red_flags": [
+          "Resale-only appreciation is NEGATIVE -1.68%/yr — no capital growth demonstrated",
+          "Only 17 URA txns — small, low-confidence sample",
+          "753 sqft for a '3BR' is a compressed layout; weak appeal to genuine family buyers"
+        ],
+        "catalysts": [
+          "Paya Lebar Central commercial hub + airbase relocation land release (D14)",
+          "670m to Paya Lebar MRT (EWL/CCL interchange) — strong connectivity",
+          "$1.035M low quantum keeps the unit liquid"
+        ],
+        "rental_assessment": "Reasonable — interchange proximity and compact size rent well to couples/sharers; yield ~3.5% given the low quantum.",
+        "appreciation_assessment": "Negative resale-only trend (-1.68%) on thin data is a genuine concern; D14 macro is positive but this specific stack has not shown growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sixteen35-residences-500131288",
+        "review_file": "cov_batch_11.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small 753 sqft unit in a boutique 60-unit Geylang (D14) project asking $1,374 psf, genuinely below the verified ~$1,588 psf recent average — but the '3BR' label on 753 sqft is a real mismatch (effectively a compact 2BR+study), and the Geylang location caps appreciation and exit liquidity.",
+      "rating_rationale": "Web-verified recent Sixteen35 transactions average ~$1,588 psf (range $1,495-$1,670), so the $1,374 psf ask is a credible ~13% discount, supporting the algo's -32.7% age-adj and -12.0% vs-cohort signals (cohort is moderately deep at 13 txns, so the cheapness is more trustworthy than a thin-cohort quirk). However, 753 sqft for a '3BR' is the flagged bedroom_sqft_mismatch — this is a squeezed layout that will read as a small 2BR to most buyers, hurting both livability and resale. D14 Geylang carries a persistent stigma/red-light-adjacency discount that suppresses forward appreciation despite OCR/RCR-fringe location. Tiny 60-unit project means thin secondary liquidity. The discount is real, but it is partly the market pricing in the layout and location, so I land at Neutral rather than Buy.",
+      "red_flags": [
+        "753 sqft marketed as 3BR is a genuine layout mismatch (effectively compact 2BR+study) — weak livability and resale appeal",
+        "Geylang (D14) stigma/red-light adjacency structurally caps appreciation and tenant/buyer pool",
+        "Boutique 60-unit project — thin secondary-market liquidity"
+      ],
+      "catalysts": [
+        "Paya Lebar / Eunos / Dakota MRT accessibility and proximity to the Paya Lebar commercial cluster",
+        "Asking ~13% below verified recent transactions offers an entry-price cushion"
+      ],
+      "as_of": {
+        "price": 1035000,
+        "psf": 1374.5,
+        "beds": 3,
+        "sqft": 753
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Small 753 sqft unit in a boutique 60-unit Geylang (D14) project asking $1,374 psf, genuinely below the verified ~$1,588 psf recent average — but the '3BR' label on 753 sqft is a real mismatch (effectively a compact 2BR+study), and the Geylang location caps appreciation and exit liquidity.",
+        "rating_rationale": "Web-verified recent Sixteen35 transactions average ~$1,588 psf (range $1,495-$1,670), so the $1,374 psf ask is a credible ~13% discount, supporting the algo's -32.7% age-adj and -12.0% vs-cohort signals (cohort is moderately deep at 13 txns, so the cheapness is more trustworthy than a thin-cohort quirk). However, 753 sqft for a '3BR' is the flagged bedroom_sqft_mismatch — this is a squeezed layout that will read as a small 2BR to most buyers, hurting both livability and resale. D14 Geylang carries a persistent stigma/red-light-adjacency discount that suppresses forward appreciation despite OCR/RCR-fringe location. Tiny 60-unit project means thin secondary liquidity. The discount is real, but it is partly the market pricing in the layout and location, so I land at Neutral rather than Buy.",
+        "red_flags": [
+          "753 sqft marketed as 3BR is a genuine layout mismatch (effectively compact 2BR+study) — weak livability and resale appeal",
+          "Geylang (D14) stigma/red-light adjacency structurally caps appreciation and tenant/buyer pool",
+          "Boutique 60-unit project — thin secondary-market liquidity"
+        ],
+        "catalysts": [
+          "Paya Lebar / Eunos / Dakota MRT accessibility and proximity to the Paya Lebar commercial cluster",
+          "Asking ~13% below verified recent transactions offers an entry-price cushion"
+        ],
+        "appreciation_assessment": "Algo uses a 3.7% regional baseline (no project-specific CAGR), appropriately modest. Geylang's stigma discount is the binding constraint on forward upside; no dated catalyst identified.",
+        "rental_assessment": "Compact units in Paya Lebar/Geylang rent readily to singles/couples; yield on the ~$1.0M quantum is decent, the strongest part of the case, but tempered by the small-project rental competition."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sixteen35-residences-500131288",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

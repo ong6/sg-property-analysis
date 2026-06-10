@@ -1,0 +1,65 @@
+{
+  "condo": "The Bronze",
+  "slug": "the-bronze",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Uncompleted freehold 2BR (775sqft) at a very steep $2,581 PSF / ~$2.0M in D12 Balestier, TOP 2028, 1.09km from Toa Payoh MRT. Full new-launch CCR-fringe pricing on a small 2BR with no transaction history, weak walkability, and a quantum at the top of the 2BR band.",
+      "rating_rationale": "Pays full new-launch developer pricing ($2,581 PSF, ~$2.0M for a 775sqft 2BR) without the location to justify it — 1.09km/13-min from Toa Payoh MRT is poor for a transit-led rental thesis, and TOP 2028 means no occupancy/yield for years plus exposure to lease-up-period supply. Freehold is the only structural plus. At this PSF a 5-7yr resale needs strong D12 appreciation just to clear costs; risk/reward is poor.",
+      "red_flags": [
+        "$2,581 PSF — full new-launch pricing on a small 2BR",
+        "TOP 2028 — no rental income for years, construction/completion risk",
+        "1.09km from Toa Payoh MRT — weak walkability",
+        "$2.0M quantum at the top of the 2BR band; no URA data"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Balestier/Novena-fringe rejuvenation",
+        "Brand-new build appeals to own-stay segment on resale"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 2580.64,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Uncompleted freehold 2BR (775sqft) at a very steep $2,581 PSF / ~$2.0M in D12 Balestier, TOP 2028, 1.09km from Toa Payoh MRT. Full new-launch CCR-fringe pricing on a small 2BR with no transaction history, weak walkability, and a quantum at the top of the 2BR band.",
+        "rating": "Avoid",
+        "rating_rationale": "Pays full new-launch developer pricing ($2,581 PSF, ~$2.0M for a 775sqft 2BR) without the location to justify it — 1.09km/13-min from Toa Payoh MRT is poor for a transit-led rental thesis, and TOP 2028 means no occupancy/yield for years plus exposure to lease-up-period supply. Freehold is the only structural plus. At this PSF a 5-7yr resale needs strong D12 appreciation just to clear costs; risk/reward is poor.",
+        "red_flags": [
+          "$2,581 PSF — full new-launch pricing on a small 2BR",
+          "TOP 2028 — no rental income for years, construction/completion risk",
+          "1.09km from Toa Payoh MRT — weak walkability",
+          "$2.0M quantum at the top of the 2BR band; no URA data"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Balestier/Novena-fringe rejuvenation",
+          "Brand-new build appeals to own-stay segment on resale"
+        ],
+        "rental_assessment": "Not rentable until 2028; thereafter a 775sqft Balestier 2BR rents modestly but the high entry PSF compresses yield well below attractive levels.",
+        "appreciation_assessment": "Entry at full new-launch pricing leaves little headroom; D12-fringe appreciation must be strong just to recover transaction costs over the hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "No URA data; new-launch entry priced at fair value, D12-fringe baseline net of inflation"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-bronze-500155418",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

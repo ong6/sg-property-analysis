@@ -1,0 +1,61 @@
+{
+  "condo": "Eco Sanctuary",
+  "slug": "eco-sanctuary",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Efficient 775 sqft 2BR at Eco Sanctuary, a large 2016 D23 leasehold near Bukit Panjang. Priced well below median at $1,548 psf vs $1,628 (~5% under), with a solid 4.0%/yr resale CAGR on a deep 108-txn base and a liquid $1.2M quantum — but the 1.12km LRT walk is its weakest point.",
+      "rating_rationale": "Sub-median PSF entry ($1,548 vs $1,628 median), a reliable 4.0%/yr resale CAGR on a robust 108-txn series, an efficient (not oversized) 775 sqft 2BR, and a sweet-spot $1.2M quantum that keeps the buyer pool deep. Eco Sanctuary is a large development (~483 units) supporting liquidity. The 1.12km walk to Pending LRT is the main drawback, but the value and appreciation case is strong. Score 586.",
+      "red_flags": [
+        "1.12km to Pending LRT — poor walkability and LRT (not MRT) connectivity",
+        "OCR Bukit Panjang location with limited direct catalysts"
+      ],
+      "catalysts": [
+        "Sub-median PSF leaves clear value headroom",
+        "Bukit Panjang DTL/LRT interchange connectivity in the wider area",
+        "Large development supports resale liquidity"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1548.39,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Efficient 775 sqft 2BR at Eco Sanctuary, a large 2016 D23 leasehold near Bukit Panjang. Priced well below median at $1,548 psf vs $1,628 (~5% under), with a solid 4.0%/yr resale CAGR on a deep 108-txn base and a liquid $1.2M quantum — but the 1.12km LRT walk is its weakest point.",
+        "rating": "Buy",
+        "rating_rationale": "Sub-median PSF entry ($1,548 vs $1,628 median), a reliable 4.0%/yr resale CAGR on a robust 108-txn series, an efficient (not oversized) 775 sqft 2BR, and a sweet-spot $1.2M quantum that keeps the buyer pool deep. Eco Sanctuary is a large development (~483 units) supporting liquidity. The 1.12km walk to Pending LRT is the main drawback, but the value and appreciation case is strong. Score 586.",
+        "red_flags": [
+          "1.12km to Pending LRT — poor walkability and LRT (not MRT) connectivity",
+          "OCR Bukit Panjang location with limited direct catalysts"
+        ],
+        "catalysts": [
+          "Sub-median PSF leaves clear value headroom",
+          "Bukit Panjang DTL/LRT interchange connectivity in the wider area",
+          "Large development supports resale liquidity"
+        ],
+        "rental_assessment": "Efficient 2BR at low $1.2M quantum yields well; tenant demand moderate given the LRT-distance location, but the wide 2BR pool helps.",
+        "appreciation_assessment": "Reliable 4.0%/yr resale CAGR on 108 txns plus a sub-median entry give a constructive forward view despite the OCR location.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale 4.0%/yr on deep 108-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eco-sanctuary-25620820",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

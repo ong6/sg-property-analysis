@@ -1,0 +1,61 @@
+{
+  "condo": "Palm Grove Condo",
+  "slug": "palm-grove-condo",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,292 sqft 999-yr-leasehold 3BR (built 2002) at $2.0M / $1,548 PSF in D19, but a full 1.16km / 14-min walk from Kovan MRT and with no URA appreciation, transaction or median data. The quasi-freehold tenure is the lone clear positive against weak transit and an unverified value/liquidity picture.",
+      "rating_rationale": "No URA series means appreciation and liquidity are unverified, and the low score (475) reflects the weak structural read. 1.16km to Kovan is a poor transit position for a $2.0M ticket — far outside the strong-uplift radius. A 24-year-old 3BR at $1,548 PSF is fairly priced for 999-yr tenure but offers no catalyst; this is a hold-for-the-land play, not a growth investment.",
+      "red_flags": [
+        "No URA appreciation/txn/median data — value and liquidity unverified",
+        "1.16km (14-min) from Kovan MRT — weak transit for a $2.0M unit",
+        "24-year-old development — dated facilities, refurb drag"
+      ],
+      "catalysts": [
+        "999-yr leasehold — effectively freehold, no lease-decay risk",
+        "Established Kovan/Serangoon residential estate with family demand"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1547.99,
+        "beds": 3,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,292 sqft 999-yr-leasehold 3BR (built 2002) at $2.0M / $1,548 PSF in D19, but a full 1.16km / 14-min walk from Kovan MRT and with no URA appreciation, transaction or median data. The quasi-freehold tenure is the lone clear positive against weak transit and an unverified value/liquidity picture.",
+        "rating": "Neutral",
+        "rating_rationale": "No URA series means appreciation and liquidity are unverified, and the low score (475) reflects the weak structural read. 1.16km to Kovan is a poor transit position for a $2.0M ticket — far outside the strong-uplift radius. A 24-year-old 3BR at $1,548 PSF is fairly priced for 999-yr tenure but offers no catalyst; this is a hold-for-the-land play, not a growth investment.",
+        "red_flags": [
+          "No URA appreciation/txn/median data — value and liquidity unverified",
+          "1.16km (14-min) from Kovan MRT — weak transit for a $2.0M unit",
+          "24-year-old development — dated facilities, refurb drag"
+        ],
+        "catalysts": [
+          "999-yr leasehold — effectively freehold, no lease-decay risk",
+          "Established Kovan/Serangoon residential estate with family demand"
+        ],
+        "rental_assessment": "Kovan has decent family rental demand but the distance from MRT caps tenant appeal; yield at $2.0M is thin (~3%).",
+        "appreciation_assessment": "Unverifiable — no URA data. With no MRT catalyst and aging stock, I assume district-baseline at best.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "D19 OCR baseline — no project-specific URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-grove-condo-500116902",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

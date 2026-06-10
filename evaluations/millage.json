@@ -1,0 +1,117 @@
+{
+  "condo": "Millage",
+  "slug": "millage",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An 893sqft '1BR' (oversized — closer to a 1+study/small 2BR) freehold at $1.05M / $1,176 PSF near Eunos (D14), priced a striking ~26% below the $1,591 median. Freehold and apparently very cheap, but the 942 score_1000 rests on a thin 18-txn appreciation series and Millage is a small mixed-use boutique.",
+      "rating_rationale": "Freehold at a low $1.05M with a ~26% headline discount to median PSF is eye-catching, but the discount is partly explained by the 893sqft size (large for a 1BR, so PSF reads low) and by Millage being a small commercial/residential boutique block on Geylang-fringe — niche liquidity and a 3.32% rate drawn from only 18 transactions (unreliable). The 942 algo score over-weights the apparent value; freehold and Paya Lebar Central proximity keep it a reasonable hold, but the thin data and boutique nature cap it at Neutral.",
+      "red_flags": [
+        "Appreciation from only 18 txns — unreliable",
+        "Small mixed-use boutique on Geylang-fringe — niche liquidity",
+        "893sqft labelled 1BR inflates the apparent PSF discount"
+      ],
+      "catalysts": [
+        "Freehold at low $1.05M absolute",
+        "D14 Paya Lebar Central + airbase relocation catalyst; Eunos EWL",
+        "Spacious layout differentiates from typical shoebox stock"
+      ],
+      "as_of": {
+        "price": 1049999,
+        "psf": 1175.81,
+        "beds": 1,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An 893sqft '1BR' (oversized — closer to a 1+study/small 2BR) freehold at $1.05M / $1,176 PSF near Eunos (D14), priced a striking ~26% below the $1,591 median. Freehold and apparently very cheap, but the 942 score_1000 rests on a thin 18-txn appreciation series and Millage is a small mixed-use boutique.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold at a low $1.05M with a ~26% headline discount to median PSF is eye-catching, but the discount is partly explained by the 893sqft size (large for a 1BR, so PSF reads low) and by Millage being a small commercial/residential boutique block on Geylang-fringe — niche liquidity and a 3.32% rate drawn from only 18 transactions (unreliable). The 942 algo score over-weights the apparent value; freehold and Paya Lebar Central proximity keep it a reasonable hold, but the thin data and boutique nature cap it at Neutral.",
+        "red_flags": [
+          "Appreciation from only 18 txns — unreliable",
+          "Small mixed-use boutique on Geylang-fringe — niche liquidity",
+          "893sqft labelled 1BR inflates the apparent PSF discount"
+        ],
+        "catalysts": [
+          "Freehold at low $1.05M absolute",
+          "D14 Paya Lebar Central + airbase relocation catalyst; Eunos EWL",
+          "Spacious layout differentiates from typical shoebox stock"
+        ],
+        "rental_assessment": "Spacious freehold near Eunos/Paya Lebar has decent rental appeal; mixed-use setting suits some tenants, deters others.",
+        "appreciation_assessment": "3.32% on 18 txns is not reliable; freehold D14 supports ~3-4% forward but with low confidence.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-millage-500005828",
+        "review_file": "cov_batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "$1,175.81psf is well below the ~$1,519psf recent average, but the 893sqft unit is the largest home-office format in a mixed-use commercial building being scored against a 1-bed cohort (psf_cohort_txns=2). The discount is largely a size + mixed-use artifact, not a clean bargain.",
+      "rating_rationale": "Millage is a 70-unit freehold (2016) on Changi Road - a single 11-storey tower with retail from basement to L2 and home-office/SOHO-style units above. Recent resales average ~$1,519 psf (12-mo range $1,421-$1,641). This listing at $1,175.81 psf for 893sqft sits well below that average, but it is the largest unit format, and large units structurally trade at lower PSF (v3.2) - the -24.7% psf_premium_vs_cohort rests on only 2 cohort txns and the bedroom_sqft_mismatch flag confirms it is being judged against the wrong (small 1-bed, ~420sqft) cohort that sets the high average. The $1,049,999 ask is the top of the project's current price range, so it is fully priced for what it is. Mixed-use/home-office buildings have a narrower buyer pool, weaker capital appreciation, and potential financing constraints - a structural drag for a 5-7yr investment hold. Freehold is not a forward edge (v3.4). The -38.4% age-adjusted discount overstates true value once size and mixed-use are accounted for. Neutral, low confidence.",
+      "red_flags": [
+        "Mixed-use commercial/home-office building (retail B1-L2; SOHO units) - narrower buyer pool, weaker appreciation, possible higher LTV/financing friction",
+        "893sqft is the largest format scored against a ~420sqft 1-bed cohort - PSF low due to size, not value (psf_cohort_txns=2, bedroom_sqft_mismatch flag)",
+        "$1.05m ask is the top of the project's current price range - fully priced, no clear bargain",
+        "very_low_psf flag is a size/mixed-use artifact here, not a verified discount",
+        "appreciation 3.32% on 18 txns - flat momentum, no forward power"
+      ],
+      "catalysts": [
+        "Freehold; near Eunos EW7 and Paya Lebar interchange, Joo Chiat/Katong amenities",
+        "D14/OCR-adjacent favorable forward region prior (~+4%)"
+      ],
+      "as_of": {
+        "price": 1049999,
+        "psf": 1175.81,
+        "beds": 1,
+        "sqft": 893
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "$1,175.81psf is well below the ~$1,519psf recent average, but the 893sqft unit is the largest home-office format in a mixed-use commercial building being scored against a 1-bed cohort (psf_cohort_txns=2). The discount is largely a size + mixed-use artifact, not a clean bargain.",
+        "rating_rationale": "Millage is a 70-unit freehold (2016) on Changi Road - a single 11-storey tower with retail from basement to L2 and home-office/SOHO-style units above. Recent resales average ~$1,519 psf (12-mo range $1,421-$1,641). This listing at $1,175.81 psf for 893sqft sits well below that average, but it is the largest unit format, and large units structurally trade at lower PSF (v3.2) - the -24.7% psf_premium_vs_cohort rests on only 2 cohort txns and the bedroom_sqft_mismatch flag confirms it is being judged against the wrong (small 1-bed, ~420sqft) cohort that sets the high average. The $1,049,999 ask is the top of the project's current price range, so it is fully priced for what it is. Mixed-use/home-office buildings have a narrower buyer pool, weaker capital appreciation, and potential financing constraints - a structural drag for a 5-7yr investment hold. Freehold is not a forward edge (v3.4). The -38.4% age-adjusted discount overstates true value once size and mixed-use are accounted for. Neutral, low confidence.",
+        "red_flags": [
+          "Mixed-use commercial/home-office building (retail B1-L2; SOHO units) - narrower buyer pool, weaker appreciation, possible higher LTV/financing friction",
+          "893sqft is the largest format scored against a ~420sqft 1-bed cohort - PSF low due to size, not value (psf_cohort_txns=2, bedroom_sqft_mismatch flag)",
+          "$1.05m ask is the top of the project's current price range - fully priced, no clear bargain",
+          "very_low_psf flag is a size/mixed-use artifact here, not a verified discount",
+          "appreciation 3.32% on 18 txns - flat momentum, no forward power"
+        ],
+        "catalysts": [
+          "Freehold; near Eunos EW7 and Paya Lebar interchange, Joo Chiat/Katong amenities",
+          "D14/OCR-adjacent favorable forward region prior (~+4%)"
+        ],
+        "rental_assessment": "Portal yield ~4.6%; on a $1.05m entry for a large mixed-use unit the effective yield is modest and tenant demand for SOHO-format units is narrower.",
+        "appreciation_assessment": "3.32% trailing CAGR on 18 txns - flat, discount per backtest priors. Mixed-use format is a structural appreciation headwind; no dated catalyst found."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-millage-500005828",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

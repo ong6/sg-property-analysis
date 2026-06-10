@@ -1,0 +1,61 @@
+{
+  "condo": "Cheap Freehold 1br plus Study For Sale! High Rental Yield!",
+  "slug": "cheap-freehold-1br-plus-study-for-sale-high-rental-yield",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 495 sqft freehold 1BR+study in D05 West Coast at $1657 PSF / $820k, sitting essentially on top of CC25 Haw Par Villa MRT (1-min walk). The location and quantum are attractive, but the listing carries no URA appreciation, median or txn data, so the value claim is unverified.",
+      "rating_rationale": "Genuinely strong location — doorstep to Haw Par Villa MRT (Circle Line) with One-North/NUS/Science Park tenant demand nearby, freehold tenure, and a low sub-$840k quantum. But it's a 495 sqft shoebox (shallow resale pool) and the dossier has zero URA data to confirm price trajectory or median PSF, while the 'Cheap... High Rental Yield' title is pure agent marketing. Strong rental fundamentals offset by shoebox resale risk and a data void — Neutral.",
+      "red_flags": [
+        "No URA appreciation, median PSF or txn data — value/growth unverifiable",
+        "495 sqft shoebox — shallow resale buyer pool",
+        "Generic 'Cheap... High Rental Yield' marketing title — unverified discount claim"
+      ],
+      "catalysts": [
+        "1-min walk to CC25 Haw Par Villa MRT (Circle Line)",
+        "Proximity to One-North, NUS, Science Park — strong tenant catchment for a 1BR+study",
+        "Freehold at sub-$840k quantum"
+      ],
+      "as_of": {
+        "price": 820000,
+        "psf": 1656.57,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 495 sqft freehold 1BR+study in D05 West Coast at $1657 PSF / $820k, sitting essentially on top of CC25 Haw Par Villa MRT (1-min walk). The location and quantum are attractive, but the listing carries no URA appreciation, median or txn data, so the value claim is unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely strong location — doorstep to Haw Par Villa MRT (Circle Line) with One-North/NUS/Science Park tenant demand nearby, freehold tenure, and a low sub-$840k quantum. But it's a 495 sqft shoebox (shallow resale pool) and the dossier has zero URA data to confirm price trajectory or median PSF, while the 'Cheap... High Rental Yield' title is pure agent marketing. Strong rental fundamentals offset by shoebox resale risk and a data void — Neutral.",
+        "red_flags": [
+          "No URA appreciation, median PSF or txn data — value/growth unverifiable",
+          "495 sqft shoebox — shallow resale buyer pool",
+          "Generic 'Cheap... High Rental Yield' marketing title — unverified discount claim"
+        ],
+        "catalysts": [
+          "1-min walk to CC25 Haw Par Villa MRT (Circle Line)",
+          "Proximity to One-North, NUS, Science Park — strong tenant catchment for a 1BR+study",
+          "Freehold at sub-$840k quantum"
+        ],
+        "rental_assessment": "This is the rental sweet spot: a freehold 1BR+study on top of an MRT near NUS/One-North/Science Park has excellent, durable tenant demand and likely a 4%+ gross yield — the strongest rental case in the batch.",
+        "appreciation_assessment": "No URA data to anchor a rate; West Coast freehold near the Circle Line is a sound hold, but shoebox appreciation typically lags larger units. Rate the rental case, not the growth case.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-freehold-1br-plus-study-for-sale-high-rental-yield-500082628",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "condo": "The Luxurie",
+  "slug": "the-luxurie",
+  "district": "D19",
+  "researched_at": "2026-06-08",
+  "revision": 2,
+  "confidence": "medium",
+  "sources": [
+    {
+      "url": "https://stackedhomes.com/editorial/touring-the-luxurie-a-rather-upscale-condo-in-sengkang-thats-well-located/",
+      "type": "stackedhomes",
+      "note": "tour: layout/location commentary"
+    },
+    {
+      "url": "https://www.edgeprop.sg/condo-apartment/the-luxurie",
+      "type": "listing",
+      "note": "units/blocks/tenure"
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/the-luxurie",
+      "type": "listing",
+      "note": "development facts"
+    },
+    {
+      "url": "data/ura_district_D19.csv",
+      "type": "site_plan",
+      "note": "layout sqft clusters derived from URA transactions"
+    },
+    {
+      "url": "https://directory.stackedhomes.com/condo/the-luxurie/",
+      "type": "stackedhomes",
+      "note": "directory: units/floors/developer"
+    }
+  ],
+  "development": {
+    "total_units": 622,
+    "blocks": 11,
+    "max_floor": 15,
+    "units_per_floor_typical": 4,
+    "developer": "Keppel Land",
+    "tenure": "99-year leasehold from 2011",
+    "top_year": 2015,
+    "address": "11 Compassvale Road",
+    "orientation_notes": "Marketed as N–S oriented (units predominantly face north/south, which limits harsh direct E–W sun — favourable for SG). Two pools (Olympic-length grand pool + reflective pool): the practical consequence is that genuinely QUIET-facing units are scarce — most stacks face either a road or a pool (pool-side carries children's-pool noise). Some ground-floor units have private enclosed pools (PES). Balcony size grows with floor — high-floor balconies are ~2× the low-floor ones. Per-stack numbered facing NOT verified from text — needs the visual site plan.",
+    "known_issues": [
+      "Quiet-facing units are scarce — most stacks face a road or one of the two pools (kids'-pool noise) [StackedHomes tour]",
+      "Stacks fronting Compassvale Rd / the elevated rail corridor: road + train noise — though a resident notes some road sides are light-traffic and HDB-buffered [StackedHomes]",
+      "Low-floor units get noticeably smaller balconies than high-floor units [StackedHomes]",
+      "99-yr leasehold from 2011 — lease-decay clock already running"
+    ],
+    "pools": 2,
+    "ground_floor_pes": true
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "1BR",
+      "sqft": [
+        452
+      ],
+      "efficiency": "compact",
+      "notes": "Smallest layout; thin resale cohort (few transact)."
+    },
+    {
+      "type": "2BR compact",
+      "sqft": [
+        732,
+        775,
+        797
+      ],
+      "efficiency": "good",
+      "notes": "Most liquid 2BR band (775 sqft is the volume layout)."
+    },
+    {
+      "type": "2BR large",
+      "sqft": [
+        883,
+        936,
+        969,
+        1001,
+        1012
+      ],
+      "efficiency": "generous",
+      "notes": "1001 sqft has the better living/dining; large for a 2BR so psf-rent yield dilutes."
+    },
+    {
+      "type": "3BR",
+      "sqft": [
+        1044,
+        1055,
+        1206,
+        1249
+      ],
+      "efficiency": "good",
+      "notes": "1055 sqft is the main 3BR layout."
+    },
+    {
+      "type": "4BR",
+      "sqft": [
+        1313,
+        1367
+      ],
+      "efficiency": "good",
+      "notes": null
+    },
+    {
+      "type": "Penthouse/5BR",
+      "sqft": [
+        1690,
+        1722,
+        2067,
+        2745
+      ],
+      "efficiency": "varies",
+      "notes": "Large top-floor units; trade at low psf for size — not a value signal."
+    }
+  ],
+  "stacks_note": "Numbered stack→facing map intentionally NOT populated: it is not published in any text source (99.co/EdgeProp/StackedHomes/brochure text) — it exists only in the VISUAL site plan, which needs a vision pass on the brochure/site-plan image. Development-level orientation + noise facts are captured above (sourced); the listing→stack join falls back to the URA-derived layouts. Upgrade to high confidence once the site plan is read stack-by-stack.",
+  "first_researched_at": "2026-06-08"
+}

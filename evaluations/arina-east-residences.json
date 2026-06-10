@@ -1,0 +1,65 @@
+{
+  "condo": "Arina East Residences",
+  "slug": "arina-east-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An 861sqft freehold 2BR at $2.30M / $2,671 PSF in Arina East Residences (D15 Tanjong Rhu, 2027/28 completion), 440m from Katong Park TEL station, priced below both the $3,008 launch average and the $2,784 median. The first new launch in Tanjong Rhu in 13 years, freehold and near a new TEL stop, but premium PSF and an uncompleted-build (progress-payment) profile temper the case.",
+      "rating_rationale": "This $2,671 PSF sits below the confirmed ~$3,008 launch average and the $2,784 median, so it's a relatively well-priced stack in the project — and freehold tenure, a 440m walk to the new Katong Park TEL station, the Tanjong Rhu/GSW-adjacent location and rarity (first launch there in 13 years) are genuine positives. Against that: $2,671 PSF is a high absolute basis, the $2.30M new-build 2BR carries the usual new-launch developer pricing (no resale track record yet), and exit by 2032-2034 depends on the area's premium holding. A credible long hold, but the rich entry PSF keeps it Neutral rather than Buy.",
+      "red_flags": [
+        "High $2,671 PSF basis — most appreciation already priced in by developer",
+        "Uncompleted (2027/28) — progress payments, no resale/rental track record yet",
+        "$2.30M 2BR is a rich absolute for the unit count"
+      ],
+      "catalysts": [
+        "Freehold + 440m to new Katong Park TEL station",
+        "First new launch in Tanjong Rhu in 13 years — scarcity",
+        "Greater Southern Waterfront / East Coast premium location",
+        "Priced below launch average ($3,008) and median ($2,784)"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 2671.31,
+        "beds": 2,
+        "sqft": 861.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An 861sqft freehold 2BR at $2.30M / $2,671 PSF in Arina East Residences (D15 Tanjong Rhu, 2027/28 completion), 440m from Katong Park TEL station, priced below both the $3,008 launch average and the $2,784 median. The first new launch in Tanjong Rhu in 13 years, freehold and near a new TEL stop, but premium PSF and an uncompleted-build (progress-payment) profile temper the case.",
+        "rating": "Neutral",
+        "rating_rationale": "This $2,671 PSF sits below the confirmed ~$3,008 launch average and the $2,784 median, so it's a relatively well-priced stack in the project — and freehold tenure, a 440m walk to the new Katong Park TEL station, the Tanjong Rhu/GSW-adjacent location and rarity (first launch there in 13 years) are genuine positives. Against that: $2,671 PSF is a high absolute basis, the $2.30M new-build 2BR carries the usual new-launch developer pricing (no resale track record yet), and exit by 2032-2034 depends on the area's premium holding. A credible long hold, but the rich entry PSF keeps it Neutral rather than Buy.",
+        "red_flags": [
+          "High $2,671 PSF basis — most appreciation already priced in by developer",
+          "Uncompleted (2027/28) — progress payments, no resale/rental track record yet",
+          "$2.30M 2BR is a rich absolute for the unit count"
+        ],
+        "catalysts": [
+          "Freehold + 440m to new Katong Park TEL station",
+          "First new launch in Tanjong Rhu in 13 years — scarcity",
+          "Greater Southern Waterfront / East Coast premium location",
+          "Priced below launch average ($3,008) and median ($2,784)"
+        ],
+        "rental_assessment": "Freehold 2BR near a TEL stop and the CBD/East Coast corridor will have a deep tenant pool on completion; yield thin on the $2.3M base.",
+        "appreciation_assessment": "New launch — no project rate; rich entry PSF means a conservative 3-4% forward unless GSW transformation lifts the whole precinct.",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 RCR baseline discounted for premium new-launch entry PSF; no resale history yet",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-arina-east-residences-500124935",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

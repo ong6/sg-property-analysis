@@ -1,0 +1,121 @@
+{
+  "condo": "Park Green",
+  "slug": "park-green",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 4BR (1550sqft) at Park Green, a 2005 99yr privatised EC in Sengkang/Buangkok D19, at $1.739M / $1,122 PSF — the lowest PSF in the batch and a liquid sub-$1.8M family ticket. Strong arena record (264-150, Elo 1374) offsets the aging leasehold; no URA project data limits conviction.",
+      "rating_rationale": "$1,122 PSF is genuinely cheap and the $1.74M quantum for a 1550sqft 4BR is liquid for D19 HDB upgraders. Strong Elo 1374 / 264-150 record. But it is a 2005 (21yo) 99yr leasehold with ~78 years left — lease decay starts mattering on a 5-7yr hold and eventual resale — and there is no URA appreciation/median data (regional prior only). Ranggung LRT 590m is the only transit. A solid-value holder, not a growth play.",
+      "red_flags": [
+        "2005 99yr leasehold — ~78yr remaining, lease-decay drag building",
+        "No URA appreciation or median data (regional prior)",
+        "Only LRT (590m), no MRT",
+        "Privatised EC — modest prestige ceiling"
+      ],
+      "catalysts": [
+        "Low entry PSF (margin of safety)",
+        "Punggol/Sengkang NE growth corridor + CRL",
+        "Deep HDB-upgrader demand for large affordable units"
+      ],
+      "as_of": {
+        "price": 1738888,
+        "psf": 1121.86,
+        "beds": 4,
+        "sqft": 1550.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 4BR (1550sqft) at Park Green, a 2005 99yr privatised EC in Sengkang/Buangkok D19, at $1.739M / $1,122 PSF — the lowest PSF in the batch and a liquid sub-$1.8M family ticket. Strong arena record (264-150, Elo 1374) offsets the aging leasehold; no URA project data limits conviction.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,122 PSF is genuinely cheap and the $1.74M quantum for a 1550sqft 4BR is liquid for D19 HDB upgraders. Strong Elo 1374 / 264-150 record. But it is a 2005 (21yo) 99yr leasehold with ~78 years left — lease decay starts mattering on a 5-7yr hold and eventual resale — and there is no URA appreciation/median data (regional prior only). Ranggung LRT 590m is the only transit. A solid-value holder, not a growth play.",
+        "red_flags": [
+          "2005 99yr leasehold — ~78yr remaining, lease-decay drag building",
+          "No URA appreciation or median data (regional prior)",
+          "Only LRT (590m), no MRT",
+          "Privatised EC — modest prestige ceiling"
+        ],
+        "catalysts": [
+          "Low entry PSF (margin of safety)",
+          "Punggol/Sengkang NE growth corridor + CRL",
+          "Deep HDB-upgrader demand for large affordable units"
+        ],
+        "rental_assessment": "Large 4BR rents to families in Sengkang; demand steady, yield reasonable given the low entry price.",
+        "appreciation_assessment": "OCR-baseline with lease-decay headwind; cheap entry helps but expect modest, not strong, appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.3,
+        "appreciation_rate_source": "OCR D19 baseline less lease-decay drag (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-green-60153174",
+        "review_file": "cov_batch_26.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Park Green is an EXECUTIVE CONDO (Rivervale Link, Sengkang, 99-yr from 2001, TOP 2004), 3BR 1,195 sqft at $1,350k / $1,130 psf. The eye-catching -24.2% age-adjusted cheapness is largely an EC-vs-private artefact: ECs structurally trade below private condos, so comparing to the private district median overstates the discount. Web comps show Park Green's own recent range at ~$1,122-$1,276 (avg ~$1,135), so this unit is priced at the project's own average — fair, not a bargain.",
+      "rating_rationale": "Once you correct for asset class the value edge mostly disappears: against Park Green's own transactions ($918-$1,249 psf last 12mo, ~$1,135 avg) the $1,130 asking is right at the project mean, not below it — the -24.2% age_adj is inflated by benchmarking a privatised/about-to-privatise EC against private-condo peers. appreciation_pct 4.0% is a regional_baseline on 0 txns (no project-level forward signal), and there is no fresh dated catalyst. The genuine positives are OCR D19 (favoured forward region), Buangkok MRT access, EC build/space value, and a workable family 3BR at a sub-$1.4M quantum, which keep it off Avoid. But with the headline cheapness explained away and no verified sub-market entry, this is a Neutral, not a Buy.",
+      "red_flags": [
+        "-24.2% age_adj is an EC-vs-private artefact — vs its own comps ($1,135 avg) the unit is priced at project average, not cheap",
+        "Executive Condo (not private) — different, structurally-lower-PSF asset class; algo's district benchmark is mismatched",
+        "appreciation_pct 4.0% is regional_baseline on 0 transactions — no project-level forward evidence",
+        "very_old_property (TOP 2004, 99-yr from 2001 → ~74yr lease left); very_low_psf flag is an EC effect, not a discount",
+        "No dated catalyst (MRT already present, no new zone/en-bloc trigger)"
+      ],
+      "catalysts": [
+        "OCR D19 (Sengkang/Buangkok) is the favoured forward-return region (~+4% realized)",
+        "Buangkok MRT (NEL) access and full EC facilities; family-friendly low-density estate",
+        "Privatised-EC space value: 1,195 sqft 3BR at sub-$1.4M quantum vs pricier private 3BRs nearby"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1129.71,
+        "beds": 3,
+        "sqft": 1195
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Park Green is an EXECUTIVE CONDO (Rivervale Link, Sengkang, 99-yr from 2001, TOP 2004), 3BR 1,195 sqft at $1,350k / $1,130 psf. The eye-catching -24.2% age-adjusted cheapness is largely an EC-vs-private artefact: ECs structurally trade below private condos, so comparing to the private district median overstates the discount. Web comps show Park Green's own recent range at ~$1,122-$1,276 (avg ~$1,135), so this unit is priced at the project's own average — fair, not a bargain.",
+        "rating_rationale": "Once you correct for asset class the value edge mostly disappears: against Park Green's own transactions ($918-$1,249 psf last 12mo, ~$1,135 avg) the $1,130 asking is right at the project mean, not below it — the -24.2% age_adj is inflated by benchmarking a privatised/about-to-privatise EC against private-condo peers. appreciation_pct 4.0% is a regional_baseline on 0 txns (no project-level forward signal), and there is no fresh dated catalyst. The genuine positives are OCR D19 (favoured forward region), Buangkok MRT access, EC build/space value, and a workable family 3BR at a sub-$1.4M quantum, which keep it off Avoid. But with the headline cheapness explained away and no verified sub-market entry, this is a Neutral, not a Buy.",
+        "red_flags": [
+          "-24.2% age_adj is an EC-vs-private artefact — vs its own comps ($1,135 avg) the unit is priced at project average, not cheap",
+          "Executive Condo (not private) — different, structurally-lower-PSF asset class; algo's district benchmark is mismatched",
+          "appreciation_pct 4.0% is regional_baseline on 0 transactions — no project-level forward evidence",
+          "very_old_property (TOP 2004, 99-yr from 2001 → ~74yr lease left); very_low_psf flag is an EC effect, not a discount",
+          "No dated catalyst (MRT already present, no new zone/en-bloc trigger)"
+        ],
+        "catalysts": [
+          "OCR D19 (Sengkang/Buangkok) is the favoured forward-return region (~+4% realized)",
+          "Buangkok MRT (NEL) access and full EC facilities; family-friendly low-density estate",
+          "Privatised-EC space value: 1,195 sqft 3BR at sub-$1.4M quantum vs pricier private 3BRs nearby"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-green-500142128",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

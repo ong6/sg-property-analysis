@@ -1,0 +1,63 @@
+{
+  "condo": "The Clement Canopy",
+  "slug": "the-clement-canopy",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 99LH 2BR (The Clement Canopy, D05 Clementi/West Coast) at $1.42M / $2,000 psf — bang on the $1,996 URA median, with a solid, well-sampled 3.8% resale CAGR over 143 transactions. A reliable, liquid Clementi entry near One-North/NUS, but priced at fair value with no discount and modest appreciation.",
+      "rating_rationale": "The standout here is data reliability: 143 URA txns underpinning a credible 3.8% resale-only CAGR, and the asking ($2,000 psf) sits essentially at the $1,996 median — fair, not cheap. D05 has genuine catalysts (One-North tech hub, NUS, Clementi amenities, TEL) and the $1.42M efficient 2BR is in the deep buyer band. But 99LH (2019), median pricing with no value cushion, and a middling 3.8% rate keep it Neutral rather than Buy — you are paying fair value for steady, not outsized, performance.",
+      "red_flags": [
+        "Priced at URA median ($2,000 vs $1,996) — no value cushion",
+        "Modest 3.8% appreciation despite a prime sub-district",
+        "99-year leasehold (2019) — lease clock running",
+        "MRT proximity not listed in dossier"
+      ],
+      "catalysts": [
+        "D05 One-North/NUS/NUH employment-driven rental demand",
+        "Deep 143-txn liquidity and 99LH large-development saleability",
+        "Clementi amenities and Tengah/JLD spillover over the long run"
+      ],
+      "as_of": {
+        "price": 1420000,
+        "psf": 2000.0,
+        "beds": 2,
+        "sqft": 710.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99LH 2BR (The Clement Canopy, D05 Clementi/West Coast) at $1.42M / $2,000 psf — bang on the $1,996 URA median, with a solid, well-sampled 3.8% resale CAGR over 143 transactions. A reliable, liquid Clementi entry near One-North/NUS, but priced at fair value with no discount and modest appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "The standout here is data reliability: 143 URA txns underpinning a credible 3.8% resale-only CAGR, and the asking ($2,000 psf) sits essentially at the $1,996 median — fair, not cheap. D05 has genuine catalysts (One-North tech hub, NUS, Clementi amenities, TEL) and the $1.42M efficient 2BR is in the deep buyer band. But 99LH (2019), median pricing with no value cushion, and a middling 3.8% rate keep it Neutral rather than Buy — you are paying fair value for steady, not outsized, performance.",
+        "red_flags": [
+          "Priced at URA median ($2,000 vs $1,996) — no value cushion",
+          "Modest 3.8% appreciation despite a prime sub-district",
+          "99-year leasehold (2019) — lease clock running",
+          "MRT proximity not listed in dossier"
+        ],
+        "catalysts": [
+          "D05 One-North/NUS/NUH employment-driven rental demand",
+          "Deep 143-txn liquidity and 99LH large-development saleability",
+          "Clementi amenities and Tengah/JLD spillover over the long run"
+        ],
+        "rental_assessment": "Clementi/West Coast has strong, durable tenant demand (NUS, One-North, NUH); efficient 2BR rents readily at ~3.5% gross — a genuine strength.",
+        "appreciation_assessment": "3.8% on 143 txns is reliable and OCR/RCR-typical; expect steady mid-single-digit value retention, not a growth spike, from a fair-value entry.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-clement-canopy-500111564",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

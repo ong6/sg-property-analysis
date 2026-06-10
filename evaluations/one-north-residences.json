@@ -1,0 +1,115 @@
+{
+  "condo": "One-North Residences",
+  "slug": "one-north-residences",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,108 sqft 'one-bedroom' here is a SOHO/loft duplex, not a misclassification — a niche, oversized product that drags resale liquidity. Despite a healthy One-North tech-hub location and a $1,309 PSF that sits below the $1,475 URA median, the development's appreciation has been flat-to-negative (-0.34%/yr over 96 transactions), so the value case is weak for an investment hold.",
+      "rating_rationale": "PSF is ~11% under the $1,475 URA median, which looks cheap, but that discount reflects the awkward 1,108 sqft loft format (high quantum $1.45M for effectively a 1BR), not a bargain. URA 5yr CAGR is -0.34%/yr across a robust 96-txn sample — genuinely stagnant. 99yr LH from 2009 (~83yr lease left) near One-North/Buona Vista supports rental demand, but the niche unit and absent appreciation cap upside.",
+      "red_flags": [
+        "Negative URA appreciation -0.34%/yr over 96 txns (reliable sample)",
+        "1,108 sqft loft duplex marketed as 1BR — niche, illiquid, high $1.45M quantum for the bedroom count",
+        "99yr leasehold, ~83yr remaining and decaying"
+      ],
+      "catalysts": [
+        "One-North / Fusionopolis / Biopolis tech-and-biomed employment base drives steady rental demand",
+        "550m to Buona Vista interchange (EW/CC lines)"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1308.66,
+        "beds": 1,
+        "sqft": 1108.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,108 sqft 'one-bedroom' here is a SOHO/loft duplex, not a misclassification — a niche, oversized product that drags resale liquidity. Despite a healthy One-North tech-hub location and a $1,309 PSF that sits below the $1,475 URA median, the development's appreciation has been flat-to-negative (-0.34%/yr over 96 transactions), so the value case is weak for an investment hold.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF is ~11% under the $1,475 URA median, which looks cheap, but that discount reflects the awkward 1,108 sqft loft format (high quantum $1.45M for effectively a 1BR), not a bargain. URA 5yr CAGR is -0.34%/yr across a robust 96-txn sample — genuinely stagnant. 99yr LH from 2009 (~83yr lease left) near One-North/Buona Vista supports rental demand, but the niche unit and absent appreciation cap upside.",
+        "red_flags": [
+          "Negative URA appreciation -0.34%/yr over 96 txns (reliable sample)",
+          "1,108 sqft loft duplex marketed as 1BR — niche, illiquid, high $1.45M quantum for the bedroom count",
+          "99yr leasehold, ~83yr remaining and decaying"
+        ],
+        "catalysts": [
+          "One-North / Fusionopolis / Biopolis tech-and-biomed employment base drives steady rental demand",
+          "550m to Buona Vista interchange (EW/CC lines)"
+        ],
+        "rental_assessment": "Strong, durable tenant pool from One-North R&D and Fusionopolis professionals; loft format appeals to single expat tenants, supporting occupancy even if yield on the $1.45M quantum is only moderate.",
+        "appreciation_assessment": "URA data shows flat-to-negative price action (-0.34%/yr); no project-specific catalyst beyond the mature One-North story. Expect low-single-digit at best over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-one-north-residences-500134577",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large unit (1,108 sqft, not a true 1BR) cheap-on-psf next to a major employment node, but a flat/negative 5yr track record and office-district overhang temper conviction.",
+      "rating_rationale": "1,108 sqft labelled '1 bed' is a clear mismatch - this is a large 2BR+/dual-key. Asking $1,308 psf is below the verified last-12-month average of ~$1,601 psf (range $1,136-$1,958), so the -21.3% age-adj / -24.0% cohort signals are directionally real, but much of it is a large-floorplate effect. The standout caution is the negative 5yr CAGR (-0.34% over 96 txns): even though v3.4 discounts trailing appreciation, the realized flatness corroborates the well-documented one-north office-district perception and slow price discovery. D5/Queenstown is a decent RCR-ish band with the Buona Vista/one-north employment node (Biopolis, Fusionopolis) ~5 min walk, but new launches (One-North Eden, Hudson Place Residences at ~$1.4M entry) add nearby competition.",
+      "red_flags": [
+        "Negative 5yr CAGR (-0.34%) and documented price stagnation - the area still 'feels like an office district' and is in slow price discovery",
+        "1,108 sqft mislabelled as 1BR; large quantum ($1.45M) for a single unit type narrows buyers",
+        "Nearby new launches (One-North Eden, Hudson Place) compete for the same tenant/buyer pool and cap resale upside",
+        "Old (2009) with 'campus/dormitory' common-area layout per resident reviews"
+      ],
+      "catalysts": [
+        "5-min walk to one-north and Buona Vista MRT (CCL/EWL interchange) and the Biopolis/Fusionopolis job cluster anchors rental demand",
+        "Below-average asking psf provides a value cushion on entry",
+        "New launches entering at ~$1.4M+ set a higher comparable that can pull resale values up over time"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1308.66,
+        "beds": 1,
+        "sqft": 1108
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large unit (1,108 sqft, not a true 1BR) cheap-on-psf next to a major employment node, but a flat/negative 5yr track record and office-district overhang temper conviction.",
+        "rating_rationale": "1,108 sqft labelled '1 bed' is a clear mismatch - this is a large 2BR+/dual-key. Asking $1,308 psf is below the verified last-12-month average of ~$1,601 psf (range $1,136-$1,958), so the -21.3% age-adj / -24.0% cohort signals are directionally real, but much of it is a large-floorplate effect. The standout caution is the negative 5yr CAGR (-0.34% over 96 txns): even though v3.4 discounts trailing appreciation, the realized flatness corroborates the well-documented one-north office-district perception and slow price discovery. D5/Queenstown is a decent RCR-ish band with the Buona Vista/one-north employment node (Biopolis, Fusionopolis) ~5 min walk, but new launches (One-North Eden, Hudson Place Residences at ~$1.4M entry) add nearby competition.",
+        "red_flags": [
+          "Negative 5yr CAGR (-0.34%) and documented price stagnation - the area still 'feels like an office district' and is in slow price discovery",
+          "1,108 sqft mislabelled as 1BR; large quantum ($1.45M) for a single unit type narrows buyers",
+          "Nearby new launches (One-North Eden, Hudson Place) compete for the same tenant/buyer pool and cap resale upside",
+          "Old (2009) with 'campus/dormitory' common-area layout per resident reviews"
+        ],
+        "catalysts": [
+          "5-min walk to one-north and Buona Vista MRT (CCL/EWL interchange) and the Biopolis/Fusionopolis job cluster anchors rental demand",
+          "Below-average asking psf provides a value cushion on entry",
+          "New launches entering at ~$1.4M+ set a higher comparable that can pull resale values up over time"
+        ],
+        "rental_assessment": "Strong, durable tenant demand from one-north's research/tech workforce is the real strength here; a large unit near two MRT lines should rent well, but the high $1.45M quantum keeps gross yield modest (~3.0-3.3%).",
+        "appreciation_assessment": "Trailing CAGR is actually negative (-0.34%), and unlike the other names the flatness is consistent with structural office-district overhang - so even after v3.4 discounting of trailing data, there is little forward momentum evidence; upside hinges on the employment-node value gap eventually closing."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-one-north-residences-500134577",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

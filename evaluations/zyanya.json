@@ -1,0 +1,63 @@
+{
+  "condo": "Zyanya",
+  "slug": "zyanya",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Zyanya is a tiny 34-unit freehold boutique on Lorong 25A Geylang (TOP 2025), well located 310m from Aljunied MRT but structurally illiquid. At $2.046M / $2000 PSF the 3BR sits right at the project's own URA median ($2015), with a weak new-launch-biased appreciation rate of just 1.5%/yr.",
+      "rating_rationale": "Strong points: freehold, 310m to Aljunied MRT, D14 Paya Lebar Central catalyst. But the 34-unit size means almost no amenities, shallow resale pool and dependence on a handful of buyers; the URA rate is only 1.5%/yr (new-launch biased, 34 txns) and PSF $2000 is at median, so no value cushion. Geylang-fringe stigma further caps appreciation and the small dev red flag is real.",
+      "red_flags": [
+        "Only 34 units — illiquid, minimal facilities, very shallow resale pool",
+        "URA appreciation just 1.5%/yr with new-launch bias",
+        "Geylang-fringe location stigma",
+        "Priced at median PSF — no margin of safety"
+      ],
+      "catalysts": [
+        "Freehold tenure in an RCR district",
+        "310m to Aljunied MRT (EW line)",
+        "Paya Lebar Central / airbase relocation transformation"
+      ],
+      "as_of": {
+        "price": 2046000,
+        "psf": 2000.0,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Zyanya is a tiny 34-unit freehold boutique on Lorong 25A Geylang (TOP 2025), well located 310m from Aljunied MRT but structurally illiquid. At $2.046M / $2000 PSF the 3BR sits right at the project's own URA median ($2015), with a weak new-launch-biased appreciation rate of just 1.5%/yr.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong points: freehold, 310m to Aljunied MRT, D14 Paya Lebar Central catalyst. But the 34-unit size means almost no amenities, shallow resale pool and dependence on a handful of buyers; the URA rate is only 1.5%/yr (new-launch biased, 34 txns) and PSF $2000 is at median, so no value cushion. Geylang-fringe stigma further caps appreciation and the small dev red flag is real.",
+        "red_flags": [
+          "Only 34 units — illiquid, minimal facilities, very shallow resale pool",
+          "URA appreciation just 1.5%/yr with new-launch bias",
+          "Geylang-fringe location stigma",
+          "Priced at median PSF — no margin of safety"
+        ],
+        "catalysts": [
+          "Freehold tenure in an RCR district",
+          "310m to Aljunied MRT (EW line)",
+          "Paya Lebar Central / airbase relocation transformation"
+        ],
+        "rental_assessment": "Good — 310m to MRT and CBD-adjacent Geylang draws tenants; 3BR freehold near MRT lets reliably, but oversupply of new Geylang launches pressures rents.",
+        "appreciation_assessment": "Capped: boutique freehold in Geylang appreciates slowly; the 1.5% URA rate (new-launch biased) understates but the real resale-to-resale figure for a 34-unit project will be modest. Do not override upward — thin data.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-zyanya-60019138",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

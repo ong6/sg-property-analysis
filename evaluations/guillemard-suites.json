@@ -1,0 +1,59 @@
+{
+  "condo": "Guillemard Suites",
+  "slug": "guillemard-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2017 shoebox 1BR in Geylang/Paya Lebar fringe. Algo flags it cheap-for-age (age_adj -18.2%) but the asking PSF of ~$1,582 sits ABOVE the project's real ~$1,499 12-month average, so the headline cheapness is age-relative accounting, not an actual price discount.",
+      "rating_rationale": "Asking $818k at $1,582 psf for a 517 sqft 1BR. Web-verified Guillemard Suites 12-month transactions average ~$1,499 psf (range $1,366-$1,760), so this unit is priced ~5% ABOVE the project average, not below it. 5yr URA CAGR is roughly flat (-0.37% over 42 txns) and the +3.8% premium-vs-cohort (7 txns) confirms no value edge. D14 sits in RCR (~+3.5% realized fwd), modestly favorable, and freehold + Paya Lebar/Dakota MRT access supports steady ~5% gross rental demand. But paying above-market PSF for a small Geylang-fringe shoebox with flat 5yr capital history is a hold, not a buy.",
+      "red_flags": [
+        "Asking ~$1,582 psf is above the project's verified ~$1,499 psf 12-month average",
+        "Effectively flat 5yr URA CAGR (-0.37%) - no capital momentum",
+        "Geylang-fringe shoebox: financing/tenant-mix and resale-liquidity sensitivities"
+      ],
+      "catalysts": [
+        "Freehold tenure near Dakota/Paya Lebar MRT supports durable rental demand",
+        "Paya Lebar commercial cluster (offices) underpins shoebox tenant pool"
+      ],
+      "as_of": {
+        "price": 818000,
+        "psf": 1582.21,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 2017 shoebox 1BR in Geylang/Paya Lebar fringe. Algo flags it cheap-for-age (age_adj -18.2%) but the asking PSF of ~$1,582 sits ABOVE the project's real ~$1,499 12-month average, so the headline cheapness is age-relative accounting, not an actual price discount.",
+        "rating_rationale": "Asking $818k at $1,582 psf for a 517 sqft 1BR. Web-verified Guillemard Suites 12-month transactions average ~$1,499 psf (range $1,366-$1,760), so this unit is priced ~5% ABOVE the project average, not below it. 5yr URA CAGR is roughly flat (-0.37% over 42 txns) and the +3.8% premium-vs-cohort (7 txns) confirms no value edge. D14 sits in RCR (~+3.5% realized fwd), modestly favorable, and freehold + Paya Lebar/Dakota MRT access supports steady ~5% gross rental demand. But paying above-market PSF for a small Geylang-fringe shoebox with flat 5yr capital history is a hold, not a buy.",
+        "red_flags": [
+          "Asking ~$1,582 psf is above the project's verified ~$1,499 psf 12-month average",
+          "Effectively flat 5yr URA CAGR (-0.37%) - no capital momentum",
+          "Geylang-fringe shoebox: financing/tenant-mix and resale-liquidity sensitivities"
+        ],
+        "catalysts": [
+          "Freehold tenure near Dakota/Paya Lebar MRT supports durable rental demand",
+          "Paya Lebar commercial cluster (offices) underpins shoebox tenant pool"
+        ],
+        "appreciation_assessment": "5yr URA CAGR essentially flat (-0.37% on 42 txns) - decent sample, so the no-growth read is reliable. Trailing appreciation carries ~0 forward weight; story here is yield/location, not capital growth.",
+        "rental_assessment": "Strong rental backbone (431 lifetime rental txns, ~$5.6-5.7 psf/month). At $818k a market rent of ~$2,800-3,000 implies ~4.1-4.4% gross - reasonable but not a standout for the entry price."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guillemard-suites-21453724",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

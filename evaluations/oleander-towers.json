@@ -1,0 +1,61 @@
+{
+  "condo": "Oleander Towers",
+  "slug": "oleander-towers",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,151sqft 3BR at $1.899M / $1,650 PSF near Toa Payoh (D12), trading slightly above the $1,611 URA median on a well-sampled 6.17% CAGR (53 txns). Good central-fringe location and reliable data, but it is a 28-year-old 99yr leasehold with material lease decay.",
+      "rating_rationale": "6.17%/yr over a robust 53-txn sample is credible and Toa Payoh's central-fringe location with NSL access supports liquidity. The decisive negative is age: a 1998 99yr leasehold has ~71yr left and decay accelerates, which is why the score_1000 sits at 461 despite the good rate. Priced just above median with no cushion, and at $1.9M it is near the top of the comfortable band. A balanced hold, not a clear buy.",
+      "red_flags": [
+        "28-year-old 99yr leasehold — ~71yr left, decay accelerating",
+        "Priced above URA median, no value cushion",
+        "$1.9M sits at the upper edge of the deep buyer band"
+      ],
+      "catalysts": [
+        "Reliable 6.17% URA CAGR over 53 txns",
+        "Toa Payoh central-fringe, NSL, strong amenities and HDB-upgrader demand",
+        "Mature-estate rejuvenation and schools nearby"
+      ],
+      "as_of": {
+        "price": 1899000,
+        "psf": 1649.87,
+        "beds": 3,
+        "sqft": 1151.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,151sqft 3BR at $1.899M / $1,650 PSF near Toa Payoh (D12), trading slightly above the $1,611 URA median on a well-sampled 6.17% CAGR (53 txns). Good central-fringe location and reliable data, but it is a 28-year-old 99yr leasehold with material lease decay.",
+        "rating": "Neutral",
+        "rating_rationale": "6.17%/yr over a robust 53-txn sample is credible and Toa Payoh's central-fringe location with NSL access supports liquidity. The decisive negative is age: a 1998 99yr leasehold has ~71yr left and decay accelerates, which is why the score_1000 sits at 461 despite the good rate. Priced just above median with no cushion, and at $1.9M it is near the top of the comfortable band. A balanced hold, not a clear buy.",
+        "red_flags": [
+          "28-year-old 99yr leasehold — ~71yr left, decay accelerating",
+          "Priced above URA median, no value cushion",
+          "$1.9M sits at the upper edge of the deep buyer band"
+        ],
+        "catalysts": [
+          "Reliable 6.17% URA CAGR over 53 txns",
+          "Toa Payoh central-fringe, NSL, strong amenities and HDB-upgrader demand",
+          "Mature-estate rejuvenation and schools nearby"
+        ],
+        "rental_assessment": "Central location near Toa Payoh interchange gives a broad tenant pool; yield typical for the band.",
+        "appreciation_assessment": "6.17% is data-backed but lease decay will drag forward returns toward 3-4%.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-oleander-towers-500152690",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

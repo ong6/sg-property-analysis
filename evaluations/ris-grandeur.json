@@ -1,0 +1,63 @@
+{
+  "condo": "Ris Grandeur",
+  "slug": "ris-grandeur",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 3,110sqft freehold 4BR in Pasir Ris (D18) at $3.39M — the $1,089 PSF looks cheap only because the unit is enormous. Far from MRT (1.27km), $3.39M ticket, and a deep-OCR location combine to a very thin exit pool despite a respectable 5.0%/yr resale rate.",
+      "rating_rationale": "This is the classic oversized-unit-disguised-as-cheap-PSF trap. The headline $1,089 PSF sits below the $1,341 median, but 3,110sqft means a $3.39M absolute price in OCR Pasir Ris — well above the liquid band and with a tiny, family-only buyer pool. 1.27km to Elias MRT (15-min walk) hurts both rental and resale. Freehold and 5.0%/yr (47 txns) are positives, but the exit risk at this size/price/location is the dominant factor for an investment hold.",
+      "red_flags": [
+        "$3.39M ticket far above the deep buyer band in an OCR district",
+        "3,110sqft oversized unit — cheap PSF masks high absolute price and narrow exit",
+        "1.27km / 15-min walk to nearest MRT",
+        "Built 2006, 20yr old — higher maintenance, dated finishes"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "CRL connectivity arriving in the wider Pasir Ris/Tampines area (~2030)",
+        "5.0%/yr resale appreciation on a reliable 47-txn series"
+      ],
+      "as_of": {
+        "price": 3388000,
+        "psf": 1089.39,
+        "beds": 4,
+        "sqft": 3110.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 3,110sqft freehold 4BR in Pasir Ris (D18) at $3.39M — the $1,089 PSF looks cheap only because the unit is enormous. Far from MRT (1.27km), $3.39M ticket, and a deep-OCR location combine to a very thin exit pool despite a respectable 5.0%/yr resale rate.",
+        "rating": "Avoid",
+        "rating_rationale": "This is the classic oversized-unit-disguised-as-cheap-PSF trap. The headline $1,089 PSF sits below the $1,341 median, but 3,110sqft means a $3.39M absolute price in OCR Pasir Ris — well above the liquid band and with a tiny, family-only buyer pool. 1.27km to Elias MRT (15-min walk) hurts both rental and resale. Freehold and 5.0%/yr (47 txns) are positives, but the exit risk at this size/price/location is the dominant factor for an investment hold.",
+        "red_flags": [
+          "$3.39M ticket far above the deep buyer band in an OCR district",
+          "3,110sqft oversized unit — cheap PSF masks high absolute price and narrow exit",
+          "1.27km / 15-min walk to nearest MRT",
+          "Built 2006, 20yr old — higher maintenance, dated finishes"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "CRL connectivity arriving in the wider Pasir Ris/Tampines area (~2030)",
+          "5.0%/yr resale appreciation on a reliable 47-txn series"
+        ],
+        "rental_assessment": "Very large 4BR far from MRT in OCR is a weak rental proposition — small family-tenant pool and a high quantum makes gross yield poor.",
+        "appreciation_assessment": "5.0%/yr over 47 resale txns is decent, but the size/quantum/location triple-bind on liquidity means realized appreciation is hostage to finding a rare buyer.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ris-grandeur-500126248",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

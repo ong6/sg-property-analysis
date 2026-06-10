@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️ Cheap D5 4bed penthouse, FH, 5mins to mrt ⭐️",
+  "slug": "cheap-d5-4bed-penthouse-fh-5mins-to-mrt",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A spam-titled FH 4BR penthouse in D05 at $3.49M / $2,268 psf with no URA series to verify pricing and a $3.5M quantum that sits in the thin end of the buyer pool. New (2027) and near Pasir Panjang MRT, but penthouse + high quantum + no data make it an Avoid for investment.",
+      "rating_rationale": "$3.49M penthouse quantum is well above the liquid $1.8-2.5M band, and penthouses carry an illiquidity/resale-discount risk. With null URA appreciation and median data there is no transacted basis to confirm the $2,268 psf is fair, and the 'Cheap' marketing title flags promotional pricing rather than verified value. score_1000 467 is below market-typical.",
+      "red_flags": [
+        "$3.49M quantum and penthouse format — shallow resale pool",
+        "No URA appreciation/median data to validate pricing",
+        "Marketing-keyword title; project identity unconfirmed"
+      ],
+      "catalysts": [
+        "350m to Pasir Panjang MRT (Circle Line)",
+        "Freehold tenure",
+        "Greater Southern Waterfront proximity (long-dated)"
+      ],
+      "as_of": {
+        "price": 3490000,
+        "psf": 2267.71,
+        "beds": 4,
+        "sqft": 1539.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spam-titled FH 4BR penthouse in D05 at $3.49M / $2,268 psf with no URA series to verify pricing and a $3.5M quantum that sits in the thin end of the buyer pool. New (2027) and near Pasir Panjang MRT, but penthouse + high quantum + no data make it an Avoid for investment.",
+        "rating": "Avoid",
+        "rating_rationale": "$3.49M penthouse quantum is well above the liquid $1.8-2.5M band, and penthouses carry an illiquidity/resale-discount risk. With null URA appreciation and median data there is no transacted basis to confirm the $2,268 psf is fair, and the 'Cheap' marketing title flags promotional pricing rather than verified value. score_1000 467 is below market-typical.",
+        "red_flags": [
+          "$3.49M quantum and penthouse format — shallow resale pool",
+          "No URA appreciation/median data to validate pricing",
+          "Marketing-keyword title; project identity unconfirmed"
+        ],
+        "catalysts": [
+          "350m to Pasir Panjang MRT (Circle Line)",
+          "Freehold tenure",
+          "Greater Southern Waterfront proximity (long-dated)"
+        ],
+        "rental_assessment": "Penthouse 4BR rents to a very narrow premium-tenant pool; yield poor on a $3.49M base.",
+        "appreciation_assessment": "Unverifiable — no URA series; high-quantum FH penthouse appreciation is typically slow and lumpy.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-d5-4bed-penthouse-fh-5mins-to-mrt-500014056",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

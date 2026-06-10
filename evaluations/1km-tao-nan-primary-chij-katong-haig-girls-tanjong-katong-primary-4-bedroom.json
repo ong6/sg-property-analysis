@@ -1,0 +1,65 @@
+{
+  "condo": "1KM Tao Nan Primary, CHIJ Katong, Haig Girls, Tanjong Katong Primary, 4 bedroom",
+  "slug": "1km-tao-nan-primary-chij-katong-haig-girls-tanjong-katong-primary-4-bedroom",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A school-proximity-marketed 4BR in D15 at $2.70M / $2,220 psf with no tenure, no built year and no project transaction data — a thin-data listing sold on Tao Nan/CHIJ Katong catchment. Missing fundamentals plus a weak score (330) make this an own-stay school play, not an investment.",
+      "rating_rationale": "Dossier is hollow: tenure blank, built_year null, zero URA appreciation/txn data — nothing to underwrite an investment case. $2,220 psf is full D15 pricing and the entire pitch is school-catchment (own-stay niche). score_1000 = 330 is among the weakest in the batch. $2.70M 4BR sits above the liquid band.",
+      "red_flags": [
+        "Missing tenure and built_year — cannot assess lease/age risk",
+        "No URA appreciation or transaction data — unverifiable value",
+        "Marketed purely on school catchment — own-stay niche, narrow investment appeal",
+        "$2.70M 4BR above the deep buyer band",
+        "12 min / 1km to MRT"
+      ],
+      "catalysts": [
+        "Top-tier D15 primary-school catchment (Tao Nan, CHIJ Katong, Haig Girls, TKP)",
+        "Established East Coast lifestyle location"
+      ],
+      "as_of": {
+        "price": 2700000,
+        "psf": 2220.39,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A school-proximity-marketed 4BR in D15 at $2.70M / $2,220 psf with no tenure, no built year and no project transaction data — a thin-data listing sold on Tao Nan/CHIJ Katong catchment. Missing fundamentals plus a weak score (330) make this an own-stay school play, not an investment.",
+        "rating": "Avoid",
+        "rating_rationale": "Dossier is hollow: tenure blank, built_year null, zero URA appreciation/txn data — nothing to underwrite an investment case. $2,220 psf is full D15 pricing and the entire pitch is school-catchment (own-stay niche). score_1000 = 330 is among the weakest in the batch. $2.70M 4BR sits above the liquid band.",
+        "red_flags": [
+          "Missing tenure and built_year — cannot assess lease/age risk",
+          "No URA appreciation or transaction data — unverifiable value",
+          "Marketed purely on school catchment — own-stay niche, narrow investment appeal",
+          "$2.70M 4BR above the deep buyer band",
+          "12 min / 1km to MRT"
+        ],
+        "catalysts": [
+          "Top-tier D15 primary-school catchment (Tao Nan, CHIJ Katong, Haig Girls, TKP)",
+          "Established East Coast lifestyle location"
+        ],
+        "rental_assessment": "Mixed — D15 family demand exists but yield on a $2.70M 4BR is thin; school catchment helps family rentals only modestly.",
+        "appreciation_assessment": "Cannot substantiate without tenure/age/txn data; treat as market-tracking at best, with the school premium already in the asking price.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 generic prior — no project data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1km-tao-nan-primary-chij-katong-haig-girls-tanjong-katong-primary-4-bedroom-60093386",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

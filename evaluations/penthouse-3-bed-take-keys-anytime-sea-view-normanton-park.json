@@ -1,0 +1,64 @@
+{
+  "condo": "Penthouse 3 bed , take keys anytime , sea view, Normanton Park",
+  "slug": "penthouse-3-bed-take-keys-anytime-sea-view-normanton-park",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Normanton Park (D05, 2023, 99LH) unit at $1.5M / $1,908 psf for 786 sqft — the listing title is contradictory (calls it a 3-bed penthouse but the data says 786 sqft 2BR), so the actual format needs verification. Large 1,800+ unit One-North-adjacent mega-development with strong rental fundamentals but a recent surge of resale supply hitting the market.",
+      "rating_rationale": "Normanton Park is a ~1,862-unit 99LH mega-project near One-North/Kent Ridge with deep liquidity and tenant demand, but it completed in 2023 with heavy concurrent resale/sub-sale supply that pressures near-term exit pricing. At $1,908 psf for a compact 786 sqft 2BR the $1.5M quantum is liquid, yet the misleading title (3-bed penthouse vs 786 sqft 2BR) is a red flag to verify, and no URA rate is matched. Solid hold-for-rental candidate, limited near-term appreciation edge given supply overhang.",
+      "red_flags": [
+        "Contradictory listing (3-bed penthouse claim vs 786 sqft 2BR data) — verify actual format/size",
+        "Large concurrent resale/sub-sale supply from a 1,800+ unit 2023 completion pressures exit",
+        "No URA appreciation data matched",
+        "Empty MRT field — confirm walking distance to Kent Ridge/one-north"
+      ],
+      "catalysts": [
+        "One-North / Kent Ridge / NUS / science park tenant catchment",
+        "Mega-development liquidity (1,800+ units, deep buyer pool)",
+        "Greater Southern Waterfront and RCR positioning"
+      ],
+      "as_of": {
+        "price": 1499999,
+        "psf": 1908.4,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Normanton Park (D05, 2023, 99LH) unit at $1.5M / $1,908 psf for 786 sqft — the listing title is contradictory (calls it a 3-bed penthouse but the data says 786 sqft 2BR), so the actual format needs verification. Large 1,800+ unit One-North-adjacent mega-development with strong rental fundamentals but a recent surge of resale supply hitting the market.",
+        "rating": "Neutral",
+        "rating_rationale": "Normanton Park is a ~1,862-unit 99LH mega-project near One-North/Kent Ridge with deep liquidity and tenant demand, but it completed in 2023 with heavy concurrent resale/sub-sale supply that pressures near-term exit pricing. At $1,908 psf for a compact 786 sqft 2BR the $1.5M quantum is liquid, yet the misleading title (3-bed penthouse vs 786 sqft 2BR) is a red flag to verify, and no URA rate is matched. Solid hold-for-rental candidate, limited near-term appreciation edge given supply overhang.",
+        "red_flags": [
+          "Contradictory listing (3-bed penthouse claim vs 786 sqft 2BR data) — verify actual format/size",
+          "Large concurrent resale/sub-sale supply from a 1,800+ unit 2023 completion pressures exit",
+          "No URA appreciation data matched",
+          "Empty MRT field — confirm walking distance to Kent Ridge/one-north"
+        ],
+        "catalysts": [
+          "One-North / Kent Ridge / NUS / science park tenant catchment",
+          "Mega-development liquidity (1,800+ units, deep buyer pool)",
+          "Greater Southern Waterfront and RCR positioning"
+        ],
+        "rental_assessment": "Excellent tenant demand from One-North tech/biomed and NUS; a compact 2BR rents quickly, supporting a healthy ~3.5%+ yield — the strongest part of the thesis.",
+        "appreciation_assessment": "Near-term capped by the development's own resale supply wave; medium-term RCR/GSW tailwinds support recovery, but no proven project CAGR yet.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-penthouse-3-bed-take-keys-anytime-sea-view-normanton-park-60206702",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "The Waterina",
+  "slug": "the-waterina",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR at The Waterina, D14 Geylang/Eunos (680m to Dakota CC8), $2.35M at $1,788 PSF — ~6% below the $1,894 URA median, with a solid 6.06%/yr appreciation on a reasonable 46-txn series. But it's a 1314sqft oversized 2BR (high absolute price for the bedroom count) and the low technical score (556) flags weak value-for-ticket.",
+      "rating_rationale": "Genuine positives: freehold, 6.06%/yr over 46 txns (reliable), below-median PSF, 680m to Dakota Circle Line, Paya Lebar Central catalyst. But 1314sqft for a 2BR is heavily oversized, pushing the ticket to $2.35M — above the deepest-liquidity band for a two-bedder and only justifiable to a buyer who wants the space. 2005-built freehold is fine. Net: solid trend but you're paying a 3BR-sized ticket for a 2BR label.",
+      "red_flags": [
+        "Oversized 1314sqft 2BR — $2.35M ticket is steep for two bedrooms, narrower buyer pool",
+        "Low technical score (556) signals weak value-for-price",
+        "20-year-old building — higher maintenance/older finishes"
+      ],
+      "catalysts": [
+        "Freehold near Dakota MRT (Circle Line)",
+        "Paya Lebar Central regeneration and airbase relocation",
+        "6.06%/yr appreciation on a 46-txn series"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 1788.43,
+        "beds": 2,
+        "sqft": 1314.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR at The Waterina, D14 Geylang/Eunos (680m to Dakota CC8), $2.35M at $1,788 PSF — ~6% below the $1,894 URA median, with a solid 6.06%/yr appreciation on a reasonable 46-txn series. But it's a 1314sqft oversized 2BR (high absolute price for the bedroom count) and the low technical score (556) flags weak value-for-ticket.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold, 6.06%/yr over 46 txns (reliable), below-median PSF, 680m to Dakota Circle Line, Paya Lebar Central catalyst. But 1314sqft for a 2BR is heavily oversized, pushing the ticket to $2.35M — above the deepest-liquidity band for a two-bedder and only justifiable to a buyer who wants the space. 2005-built freehold is fine. Net: solid trend but you're paying a 3BR-sized ticket for a 2BR label.",
+        "red_flags": [
+          "Oversized 1314sqft 2BR — $2.35M ticket is steep for two bedrooms, narrower buyer pool",
+          "Low technical score (556) signals weak value-for-price",
+          "20-year-old building — higher maintenance/older finishes"
+        ],
+        "catalysts": [
+          "Freehold near Dakota MRT (Circle Line)",
+          "Paya Lebar Central regeneration and airbase relocation",
+          "6.06%/yr appreciation on a 46-txn series"
+        ],
+        "rental_assessment": "D14 near Dakota MRT rents steadily; the large size suits small families. Decent but not premium yield at $2.35M.",
+        "appreciation_assessment": "6%/yr is well-supported; Paya Lebar Central is a real long-term lever for D14.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA 46-txn resale series, trimmed for ticket-size liquidity risk"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-waterina-21170841",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "SeaSuites",
+  "slug": "seasuites",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 667 sqft 1BR near Haw Par Villa MRT asking $1,679 psf — modestly below the project's 12-month average of $1,714 psf — with a long-horizon Greater Southern Waterfront angle. But this is a tiny 52-unit development with extremely thin liquidity (only ~8 sales in 3 years), negative trailing CAGR on 12 txns and a 4-txn cohort, so both the data signals and the resale exit are fragile.",
+      "rating_rationale": "Asking $1,679.16 psf is only slightly under the verified 12-mo avg of $1,714 psf (range $1,618-$1,848), so the discount is marginal rather than decisive. The dossier's age_adj_premium of -9.3% and the -1.97% CAGR both rest on thin data (appreciation_txns=12, psf_cohort_txns=4) — per v3.4 priors that warrants skepticism and lower confidence. Freehold is not a forward edge on its own. The redeeming features are a real MRT (Haw Par Villa CC25, Circle Line) and the structural Greater Southern Waterfront redevelopment thesis, but that catalyst is long-dated and uncertain. With a 52-unit project and ~8 sales in 3 years, exit liquidity is poor for a 5-7yr investment hold. Net: a fairly-priced, illiquid hold — Neutral.",
+      "red_flags": [
+        "Very thin liquidity — 52-unit project, only ~8 sales in 3 years; difficult resale exit",
+        "Negative trailing 5yr CAGR (-1.97%) on just 12 txns and a 4-txn psf cohort — fragile data",
+        "Discount to project avg is marginal (~2%), not a decisive value edge",
+        "High $1.12M quantum for a 1BR narrows the buyer pool"
+      ],
+      "catalysts": [
+        "Haw Par Villa CC25 / Pasir Panjang CC26 (Circle Line) walkable",
+        "Greater Southern Waterfront long-term redevelopment upside (long-dated, uncertain)",
+        "Freehold tenure and rooftop-pool boutique product",
+        "Rental yield ~3.6%, above the D5 norm"
+      ],
+      "as_of": {
+        "price": 1120000,
+        "psf": 1679.16,
+        "beds": 1,
+        "sqft": 667
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A freehold 667 sqft 1BR near Haw Par Villa MRT asking $1,679 psf — modestly below the project's 12-month average of $1,714 psf — with a long-horizon Greater Southern Waterfront angle. But this is a tiny 52-unit development with extremely thin liquidity (only ~8 sales in 3 years), negative trailing CAGR on 12 txns and a 4-txn cohort, so both the data signals and the resale exit are fragile.",
+        "rating_rationale": "Asking $1,679.16 psf is only slightly under the verified 12-mo avg of $1,714 psf (range $1,618-$1,848), so the discount is marginal rather than decisive. The dossier's age_adj_premium of -9.3% and the -1.97% CAGR both rest on thin data (appreciation_txns=12, psf_cohort_txns=4) — per v3.4 priors that warrants skepticism and lower confidence. Freehold is not a forward edge on its own. The redeeming features are a real MRT (Haw Par Villa CC25, Circle Line) and the structural Greater Southern Waterfront redevelopment thesis, but that catalyst is long-dated and uncertain. With a 52-unit project and ~8 sales in 3 years, exit liquidity is poor for a 5-7yr investment hold. Net: a fairly-priced, illiquid hold — Neutral.",
+        "red_flags": [
+          "Very thin liquidity — 52-unit project, only ~8 sales in 3 years; difficult resale exit",
+          "Negative trailing 5yr CAGR (-1.97%) on just 12 txns and a 4-txn psf cohort — fragile data",
+          "Discount to project avg is marginal (~2%), not a decisive value edge",
+          "High $1.12M quantum for a 1BR narrows the buyer pool"
+        ],
+        "catalysts": [
+          "Haw Par Villa CC25 / Pasir Panjang CC26 (Circle Line) walkable",
+          "Greater Southern Waterfront long-term redevelopment upside (long-dated, uncertain)",
+          "Freehold tenure and rooftop-pool boutique product",
+          "Rental yield ~3.6%, above the D5 norm"
+        ],
+        "appreciation_assessment": "Negative trailing CAGR on thin data carries ~0 forward signal; the only real forward angle is the GSW catalyst, which is structural and slow. No basis for high confidence either way.",
+        "rental_assessment": "Project yield ~3.6%; a 667 sqft 1BR near Haw Par Villa MRT rents ~$3,000-$3,400, giving ~3.2-3.6% gross on the $1.12M entry — acceptable but the high quantum dilutes the yield advantage."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seasuites-500082004",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

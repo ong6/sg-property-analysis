@@ -1,0 +1,115 @@
+{
+  "condo": "#1 Suites (One Suites)",
+  "slug": "1-suites-one-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A 581 sqft compact freehold '2BR' near Aljunied MRT at $800K / $1,377 PSF — but the dossier has zero URA data (no appreciation, no median PSF, no transaction count), meaning no benchmark for value or price trajectory. A tiny boutique freehold block with no data track record is a thin, hard-to-judge proposition I won't endorse blind.",
+      "rating_rationale": "Complete absence of URA appreciation, median-PSF, and transaction data means there is no evidence base to confirm value or appreciation — exactly the thin-data boutique profile to avoid for investment. 581 sqft for a '2BR' is a squeezed/compact (likely dual-key) layout that appeals to a narrow tenant/buyer set. Low quantum ($800K) and freehold near Aljunied MRT are the only positives, and they do not offset the inability to verify any of the core investment metrics.",
+      "red_flags": [
+        "No URA data at all — appreciation, median PSF and txn count all null; cannot verify value or trajectory",
+        "581 sqft '2BR' — cramped/dual-key format, niche demand",
+        "Small boutique development — shallow liquidity, no transaction history to anchor resale",
+        "Aljunied/Geylang fringe buyer-perception drag"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "540m to Aljunied MRT (EW line)",
+        "Low $800K entry quantum"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1376.94,
+        "beds": 2,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 581 sqft compact freehold '2BR' near Aljunied MRT at $800K / $1,377 PSF — but the dossier has zero URA data (no appreciation, no median PSF, no transaction count), meaning no benchmark for value or price trajectory. A tiny boutique freehold block with no data track record is a thin, hard-to-judge proposition I won't endorse blind.",
+        "rating": "Avoid",
+        "rating_rationale": "Complete absence of URA appreciation, median-PSF, and transaction data means there is no evidence base to confirm value or appreciation — exactly the thin-data boutique profile to avoid for investment. 581 sqft for a '2BR' is a squeezed/compact (likely dual-key) layout that appeals to a narrow tenant/buyer set. Low quantum ($800K) and freehold near Aljunied MRT are the only positives, and they do not offset the inability to verify any of the core investment metrics.",
+        "red_flags": [
+          "No URA data at all — appreciation, median PSF and txn count all null; cannot verify value or trajectory",
+          "581 sqft '2BR' — cramped/dual-key format, niche demand",
+          "Small boutique development — shallow liquidity, no transaction history to anchor resale",
+          "Aljunied/Geylang fringe buyer-perception drag"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "540m to Aljunied MRT (EW line)",
+          "Low $800K entry quantum"
+        ],
+        "rental_assessment": "A compact unit near Aljunied MRT will rent to budget single tenants/couples, but the cramped 2BR format and Geylang-fringe location limit rent ceiling; yield likely average at best.",
+        "appreciation_assessment": "No URA data to assess — unverifiable. Small freehold boutiques in this pocket historically appreciate slowly; absent evidence, I assume below-market and price the uncertainty in.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1-suites-one-suites-500140106",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold 2016 1BR in Lorong 20 Geylang (D14). The algo's -20.5% age-adj cheapness is a mirage: verified recent resales average $1,244 PSF (range $1,041-$1,340, high $1,340 Sep-2025) while this asks $1,495 PSF — ~12-20% ABOVE actual transactions. The 'psf_overpriced' flag and +16.4% cohort premium (on just 1 txn) are confirmed by the web.",
+      "rating_rationale": "Web transaction data flatly contradicts the cheapness story: #1 Suites 1BR units sold over the last 12 months at $1,041-$1,340 PSF (avg $1,244), so the $1,495 PSF asking is 12-20% above market. The freehold age-adjustment that drives the algo's -20.5% figure is not a forward edge per v3.4 priors, and freehold is explicitly not a forward edge. Poor security reviews (no guard on site), only 112 units (thin liquidity), and a Geylang red-light-fringe location with no concrete MRT/zone catalyst compound the overpricing. This is a clear Avoid.",
+      "red_flags": [
+        "Asking $1,495 PSF is ~12-20% ABOVE verified recent resales (avg $1,244, high $1,340 Sep-2025)",
+        "Algo 'psf_overpriced' flag confirmed; +16.4% cohort premium computed on a single transaction",
+        "Resident reviews cite poor/absent security",
+        "Small 112-unit project and Geylang location limit liquidity and tenant pool quality"
+      ],
+      "catalysts": [
+        "Freehold tenure (a quality, but not a forward appreciation edge per backtest priors)"
+      ],
+      "as_of": {
+        "price": 918000,
+        "psf": 1495.11,
+        "beds": 1,
+        "sqft": 614
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "high",
+        "summary": "Freehold 2016 1BR in Lorong 20 Geylang (D14). The algo's -20.5% age-adj cheapness is a mirage: verified recent resales average $1,244 PSF (range $1,041-$1,340, high $1,340 Sep-2025) while this asks $1,495 PSF — ~12-20% ABOVE actual transactions. The 'psf_overpriced' flag and +16.4% cohort premium (on just 1 txn) are confirmed by the web.",
+        "rating_rationale": "Web transaction data flatly contradicts the cheapness story: #1 Suites 1BR units sold over the last 12 months at $1,041-$1,340 PSF (avg $1,244), so the $1,495 PSF asking is 12-20% above market. The freehold age-adjustment that drives the algo's -20.5% figure is not a forward edge per v3.4 priors, and freehold is explicitly not a forward edge. Poor security reviews (no guard on site), only 112 units (thin liquidity), and a Geylang red-light-fringe location with no concrete MRT/zone catalyst compound the overpricing. This is a clear Avoid.",
+        "red_flags": [
+          "Asking $1,495 PSF is ~12-20% ABOVE verified recent resales (avg $1,244, high $1,340 Sep-2025)",
+          "Algo 'psf_overpriced' flag confirmed; +16.4% cohort premium computed on a single transaction",
+          "Resident reviews cite poor/absent security",
+          "Small 112-unit project and Geylang location limit liquidity and tenant pool quality"
+        ],
+        "catalysts": [
+          "Freehold tenure (a quality, but not a forward appreciation edge per backtest priors)"
+        ],
+        "appreciation_assessment": "Trailing 2.68% CAGR (38 txns) is the weakest of the five and has no forward predictive value; no catalyst to override the overpricing.",
+        "rental_assessment": "1BR/1BR-study near Aljunied/Mountbatten can rent, but Geylang stigma and thin project depth weaken durable rental demand and exit."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1-suites-one-suites-500164886",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

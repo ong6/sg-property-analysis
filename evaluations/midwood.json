@@ -1,0 +1,61 @@
+{
+  "condo": "Midwood",
+  "slug": "midwood",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new 2024 484 sqft 1BR at Midwood, 360m from Hillview DTL in D23. Priced at $1,808 psf, below the $1,884 median, but appreciation is soft (1.8%/yr resale-only after new-launch bias adjustment) and the OCR Hillview pocket has limited catalysts.",
+      "rating_rationale": "Strong MRT proximity (360m to Hillview) and a sub-median entry are positives, but the new-launch bias flag is on and the honest resale-only rate is just 1.8%/yr. Hillview is a quiet, supply-heavy OCR enclave with several competing recent launches (The Reserve Residences area, Hillhaven, etc.). Score 560 (market-typical). Low elo (977) reflects weak comparative strength.",
+      "red_flags": [
+        "New-launch bias flagged; honest resale-only appreciation only 1.8%/yr",
+        "Hillview OCR pocket with competing nearby new launches diluting resale demand",
+        "Small quantum but niche OCR 1BR"
+      ],
+      "catalysts": [
+        "360m to Hillview DTL — strong direct MRT access",
+        "Brand-new 2024 build, no immediate capex"
+      ],
+      "as_of": {
+        "price": 875000,
+        "psf": 1807.85,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new 2024 484 sqft 1BR at Midwood, 360m from Hillview DTL in D23. Priced at $1,808 psf, below the $1,884 median, but appreciation is soft (1.8%/yr resale-only after new-launch bias adjustment) and the OCR Hillview pocket has limited catalysts.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong MRT proximity (360m to Hillview) and a sub-median entry are positives, but the new-launch bias flag is on and the honest resale-only rate is just 1.8%/yr. Hillview is a quiet, supply-heavy OCR enclave with several competing recent launches (The Reserve Residences area, Hillhaven, etc.). Score 560 (market-typical). Low elo (977) reflects weak comparative strength.",
+        "red_flags": [
+          "New-launch bias flagged; honest resale-only appreciation only 1.8%/yr",
+          "Hillview OCR pocket with competing nearby new launches diluting resale demand",
+          "Small quantum but niche OCR 1BR"
+        ],
+        "catalysts": [
+          "360m to Hillview DTL — strong direct MRT access",
+          "Brand-new 2024 build, no immediate capex"
+        ],
+        "rental_assessment": "Modest 1BR rental demand in Hillview — quiet, nature-fronting, mostly own-stay families; tenant pool thinner than central districts.",
+        "appreciation_assessment": "Resale-only 1.8%/yr after stripping developer-pricing inflation; OCR location with supply competition limits upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "URA resale-only 1.8%/yr (post bias adjustment)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-midwood-500004513",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

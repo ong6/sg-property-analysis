@@ -1,0 +1,113 @@
+{
+  "condo": "Margaret Ville",
+  "slug": "margaret-ville",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Compact 463 sqft 1BR in a young 2021 D03 leasehold within walking distance of Queenstown MRT and the Greater Southern Waterfront catchment. Priced at $2,052 psf, roughly 8% below the $2,241 URA median, with a deep RCR location but only soft 2.4%/yr resale appreciation.",
+      "rating_rationale": "RCR D03 location with GSW and TEL tailwinds, healthy 83-txn liquidity base, young 2021 build, and a sub-median PSF entry ($2,052 vs $2,241 median). Score 664 supports the technical case. Appreciation has been modest at 2.4%/yr which caps it below Strong Buy, but a small-quantum sub-$1M 1BR in a prime-adjacent RCR district is a liquid, defensible entry.",
+      "red_flags": [
+        "Modest 2.4%/yr resale appreciation despite RCR location",
+        "1BR tenant pool is narrower than 2BR; small-quantum but niche unit type"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront redevelopment of D03/D04 waterfront",
+        "Walking distance to Queenstown EW MRT; rejuvenation of Queenstown/Alexandra corridor"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 2051.84,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 463 sqft 1BR in a young 2021 D03 leasehold within walking distance of Queenstown MRT and the Greater Southern Waterfront catchment. Priced at $2,052 psf, roughly 8% below the $2,241 URA median, with a deep RCR location but only soft 2.4%/yr resale appreciation.",
+        "rating": "Buy",
+        "rating_rationale": "RCR D03 location with GSW and TEL tailwinds, healthy 83-txn liquidity base, young 2021 build, and a sub-median PSF entry ($2,052 vs $2,241 median). Score 664 supports the technical case. Appreciation has been modest at 2.4%/yr which caps it below Strong Buy, but a small-quantum sub-$1M 1BR in a prime-adjacent RCR district is a liquid, defensible entry.",
+        "red_flags": [
+          "Modest 2.4%/yr resale appreciation despite RCR location",
+          "1BR tenant pool is narrower than 2BR; small-quantum but niche unit type"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront redevelopment of D03/D04 waterfront",
+          "Walking distance to Queenstown EW MRT; rejuvenation of Queenstown/Alexandra corridor"
+        ],
+        "rental_assessment": "Solid 1BR rental demand from Queenstown/Alexandra and one-north-adjacent professionals; small quantum keeps yield reasonable for a $950k entry.",
+        "appreciation_assessment": "URA resale CAGR a modest 2.4%/yr on 83 txns; sub-median entry plus GSW/TEL catalysts give room for re-rating over a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "URA resale 2.4%/yr nudged up for GSW catalyst; sub-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-margaret-ville-23734081",
+        "review_file": "cov_batch_19.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "MCL Land 40-storey project (99yr, TOP 2021) at 20 Margaret Drive, Queenstown D3, ~10-min walk to Commonwealth & Queenstown MRT. The 463 sqft 1BR at $2,052 psf ($950k) is verified below recent same-size resale comps — a genuine, not phantom, bargain.",
+      "rating_rationale": "Verified value: a directly comparable 463 sqft 1BR transacted at $2,225 psf ($1.03M) in Mar 2025, and a live same-size listing sits at $2,376 psf — so the dossier asking of $2,052 psf is a real ~8-13% discount to recent matched comps, corroborating the algo's -15.3% age-adj / -5.1% vs cohort. Newer asset (2021) so minimal lease/maintenance drag. Queenstown is a premium RCR rental location with two EWL stations and strong tenant demand (one-north, CBD, NUH/Holland). Held to Buy not Strong Buy because cohort depth is modest (5 txns), D3 is RCR (not the top-forward OCR), and trailing 2.43% CAGR is weak/non-predictive — the case rests on the verified value gap, which is exactly the v3.4-preferred signal.",
+      "red_flags": [
+        "psf_cohort_txns only 5 — discount is corroborated by web comps but on a thin internal sample",
+        "Tower-only layout with limited ground space; Stacked review notes it is not ideal for families (matters less for a 1BR investment)",
+        "99-yr leasehold (from ~2017) and an investor-heavy 1BR stack means exit competes with similar units"
+      ],
+      "catalysts": [
+        "~10-min walk to two EWL stations (Commonwealth + Queenstown) in a top RCR rental belt",
+        "Verified same-size resale comps ($2,225-$2,376 psf) sit clearly above the asking — value re-rating room",
+        "Queenstown estate rejuvenation / proximity to one-north and Greater Southern Waterfront long-term upside"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 2051.84,
+        "beds": 1,
+        "sqft": 463
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "MCL Land 40-storey project (99yr, TOP 2021) at 20 Margaret Drive, Queenstown D3, ~10-min walk to Commonwealth & Queenstown MRT. The 463 sqft 1BR at $2,052 psf ($950k) is verified below recent same-size resale comps — a genuine, not phantom, bargain.",
+        "rating_rationale": "Verified value: a directly comparable 463 sqft 1BR transacted at $2,225 psf ($1.03M) in Mar 2025, and a live same-size listing sits at $2,376 psf — so the dossier asking of $2,052 psf is a real ~8-13% discount to recent matched comps, corroborating the algo's -15.3% age-adj / -5.1% vs cohort. Newer asset (2021) so minimal lease/maintenance drag. Queenstown is a premium RCR rental location with two EWL stations and strong tenant demand (one-north, CBD, NUH/Holland). Held to Buy not Strong Buy because cohort depth is modest (5 txns), D3 is RCR (not the top-forward OCR), and trailing 2.43% CAGR is weak/non-predictive — the case rests on the verified value gap, which is exactly the v3.4-preferred signal.",
+        "red_flags": [
+          "psf_cohort_txns only 5 — discount is corroborated by web comps but on a thin internal sample",
+          "Tower-only layout with limited ground space; Stacked review notes it is not ideal for families (matters less for a 1BR investment)",
+          "99-yr leasehold (from ~2017) and an investor-heavy 1BR stack means exit competes with similar units"
+        ],
+        "catalysts": [
+          "~10-min walk to two EWL stations (Commonwealth + Queenstown) in a top RCR rental belt",
+          "Verified same-size resale comps ($2,225-$2,376 psf) sit clearly above the asking — value re-rating room",
+          "Queenstown estate rejuvenation / proximity to one-north and Greater Southern Waterfront long-term upside"
+        ],
+        "rental_assessment": "Queenstown 1BRs rent $3,700+; on $950k that is roughly a ~4-4.5% gross yield with strong tenant demand and low vacancy — among the better yields in this batch.",
+        "appreciation_assessment": "Forward case is value-led (asking below verified matched comps), the most robust signal per v3.4; RCR baseline ~+3.5% with upside as the price gap to comps closes."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-margaret-ville-23734081",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

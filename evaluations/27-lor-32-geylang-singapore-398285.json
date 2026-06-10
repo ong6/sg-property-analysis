@@ -1,0 +1,63 @@
+{
+  "condo": "27 Lor 32 Geylang, Singapore 398285",
+  "slug": "27-lor-32-geylang-singapore-398285",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "An unnamed 2028-completion freehold new-build at 27 Lor 32 Geylang (D14) — a 700 sqft 2BR at $1.5M / $2,143 psf, which is aggressive new-launch boutique pricing in deep Geylang with no URA track record. The high psf, no resale data, and a likely tiny development make this a speculative entry.",
+      "rating_rationale": "$2,143 psf for a 700 sqft 2BR in a Lorong Geylang freehold boutique is steep new-launch pricing with zero URA appreciation or transaction history to validate it. A 2028 completion means buying off-plan with no project liquidity, and the deep-Geylang lorong address carries perception/tenant-mix sensitivity. The $1.5M quantum is reasonable in absolute terms, but you are paying top-of-market psf for an unproven boutique block — no margin of safety.",
+      "red_flags": [
+        "$2,143 psf is high for boutique deep-Geylang freehold",
+        "No URA appreciation/transaction data — unproven pricing",
+        "2028 completion — off-plan, no resale liquidity yet",
+        "Likely small boutique development on a lorong — thin exit; Geylang perception sensitivity"
+      ],
+      "catalysts": [
+        "Freehold tenure, brand-new in 2028",
+        "810m to Dakota CC8 MRT (Circle Line)",
+        "Paya Lebar Central / D14 redevelopment over the long run"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 2142.86,
+        "beds": 2,
+        "sqft": 700.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An unnamed 2028-completion freehold new-build at 27 Lor 32 Geylang (D14) — a 700 sqft 2BR at $1.5M / $2,143 psf, which is aggressive new-launch boutique pricing in deep Geylang with no URA track record. The high psf, no resale data, and a likely tiny development make this a speculative entry.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,143 psf for a 700 sqft 2BR in a Lorong Geylang freehold boutique is steep new-launch pricing with zero URA appreciation or transaction history to validate it. A 2028 completion means buying off-plan with no project liquidity, and the deep-Geylang lorong address carries perception/tenant-mix sensitivity. The $1.5M quantum is reasonable in absolute terms, but you are paying top-of-market psf for an unproven boutique block — no margin of safety.",
+        "red_flags": [
+          "$2,143 psf is high for boutique deep-Geylang freehold",
+          "No URA appreciation/transaction data — unproven pricing",
+          "2028 completion — off-plan, no resale liquidity yet",
+          "Likely small boutique development on a lorong — thin exit; Geylang perception sensitivity"
+        ],
+        "catalysts": [
+          "Freehold tenure, brand-new in 2028",
+          "810m to Dakota CC8 MRT (Circle Line)",
+          "Paya Lebar Central / D14 redevelopment over the long run"
+        ],
+        "rental_assessment": "Geylang has rental demand but lorong-address boutiques attract a narrower tenant set; yield uncertain pre-completion.",
+        "appreciation_assessment": "No data to anchor; new-launch boutique psf this high in deep Geylang typically struggles to appreciate from an already-stretched base.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-27-lor-32-geylang-singapore-398285-25505504",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

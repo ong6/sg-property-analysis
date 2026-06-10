@@ -32,6 +32,13 @@ has verified the results** — that's the agent flow, not an optional extra.
    `output/arena_referee_packet.json`, and appends `data/arena_results.csv`.
    Past agent evaluations are auto-joined onto contenders.
 
+   **v3.4 note:** the arena is now **value-led** (fight dims: value 0.40,
+   liquidity 0.20, appreciation only 0.10 — was 0.30) and regional priors are
+   **de-inverted** (OCR≥RCR≫CCR forward). So expect cheap-vs-district names to
+   rise and CCR-prestige-on-past-CAGR names to fall vs older runs; that's the fix
+   working, not an artifact. Sanity-check that champions win on VALUE, not on a
+   high trailing appreciation component.
+
 4. **REFEREE (mandatory)** — read `output/arena_referee_packet.json`:
    - Work every `auto_flags` entry: verify the stats behind it (thin
      transactions, fallback rents, extreme value components, odd sqft).

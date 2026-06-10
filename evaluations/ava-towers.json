@@ -1,0 +1,63 @@
+{
+  "condo": "Ava Towers",
+  "slug": "ava-towers",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 33-year-old freehold 3BR (Ava Towers, D12) at $1.9M / $1,548 psf — right on the $1,546 URA median with no value cushion. The 8.1% CAGR rests on a thin 20-txn series and the 1993 build plus 1.5km/18-min MRT walk are real drags for a 5-7yr hold.",
+      "rating_rationale": "Priced at the URA median ($1,548 vs $1,546) leaves zero entry discount. The headline 8.1% CAGR is from only 20 transactions — directional at best, likely flattered by sparse sampling. Freehold tenure removes lease-decay risk, but a 1993 building carries ageing/maintenance concerns and the 1.5km (18-min) walk to Novena weakens both rental and resale appeal. $1.9M sits in a reasonable band but the package is fully priced.",
+      "red_flags": [
+        "33-year-old building (1993) — higher maintenance, dated facilities",
+        "Priced exactly at URA median — no value cushion",
+        "8.1% CAGR from only 20 txns — unreliable",
+        "1.5km / 18-min walk to Novena MRT — weak connectivity"
+      ],
+      "catalysts": [
+        "Freehold tenure in central-fringe D12 (Balestier/Novena belt)",
+        "Novena medical hub proximity supports tenant demand",
+        "En-bloc potential for an older freehold site over a long horizon"
+      ],
+      "as_of": {
+        "price": 1900000,
+        "psf": 1548.49,
+        "beds": 3,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 33-year-old freehold 3BR (Ava Towers, D12) at $1.9M / $1,548 psf — right on the $1,546 URA median with no value cushion. The 8.1% CAGR rests on a thin 20-txn series and the 1993 build plus 1.5km/18-min MRT walk are real drags for a 5-7yr hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced at the URA median ($1,548 vs $1,546) leaves zero entry discount. The headline 8.1% CAGR is from only 20 transactions — directional at best, likely flattered by sparse sampling. Freehold tenure removes lease-decay risk, but a 1993 building carries ageing/maintenance concerns and the 1.5km (18-min) walk to Novena weakens both rental and resale appeal. $1.9M sits in a reasonable band but the package is fully priced.",
+        "red_flags": [
+          "33-year-old building (1993) — higher maintenance, dated facilities",
+          "Priced exactly at URA median — no value cushion",
+          "8.1% CAGR from only 20 txns — unreliable",
+          "1.5km / 18-min walk to Novena MRT — weak connectivity"
+        ],
+        "catalysts": [
+          "Freehold tenure in central-fringe D12 (Balestier/Novena belt)",
+          "Novena medical hub proximity supports tenant demand",
+          "En-bloc potential for an older freehold site over a long horizon"
+        ],
+        "rental_assessment": "Novena-fringe location with medical-hub tenant demand, but the long MRT walk caps premium; ~3% gross at this price.",
+        "appreciation_assessment": "8.1% headline is unreliable on 20 txns; a more honest expectation is mid-single-digit central-fringe freehold appreciation, offset by building age.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ava-towers-25567888",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

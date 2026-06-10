@@ -1,0 +1,61 @@
+{
+  "condo": "Suites 28",
+  "slug": "suites-28",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Small freehold 1BR in Geylang fringe (D14) asking $1,381 psf vs verified recent project transactions averaging ~$1,527 psf — a genuine ~10% discount confirmed by web data, not just an algo artefact.",
+      "rating_rationale": "Asking $1,381 psf sits roughly 10% below the project's last-12-month average of ~$1,527 psf (EdgeProp/SRX), giving real margin of safety at a low $699k quantum. The algo's age_adj_premium of -26.6% overstates the cheapness (it benchmarks against district peers), but even my conservative project-level read confirms a discount. Region (D14/OCR-RCR fringe) aligns with the v3.4 prior favouring non-CCR forward returns. Trailing appreciation of -5.0% (18 txns) is weak but the backtest says trailing CAGR has ~0 forward power, so I do not penalise it. Yield ~3.3% is decent for a 1BR.",
+      "red_flags": [
+        "Thin own-size cohort (psf_cohort_txns=7) makes the precise discount uncertain",
+        "Geylang location carries resale/financing stigma and noise concerns flagged in reviews",
+        "Tiny 64-unit project means low transaction liquidity for a 5-7yr exit",
+        "Trailing 5yr CAGR negative (-5.0%) — flat-to-soft price history"
+      ],
+      "catalysts": [
+        "Freehold tenure with low absolute quantum keeps the buyer pool wide",
+        "Walkable to Paya Lebar/Eunos amenities and MRT; Paya Lebar commercial node growth"
+      ],
+      "as_of": {
+        "price": 699000,
+        "psf": 1381.42,
+        "beds": 1,
+        "sqft": 506
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Small freehold 1BR in Geylang fringe (D14) asking $1,381 psf vs verified recent project transactions averaging ~$1,527 psf — a genuine ~10% discount confirmed by web data, not just an algo artefact.",
+        "rating_rationale": "Asking $1,381 psf sits roughly 10% below the project's last-12-month average of ~$1,527 psf (EdgeProp/SRX), giving real margin of safety at a low $699k quantum. The algo's age_adj_premium of -26.6% overstates the cheapness (it benchmarks against district peers), but even my conservative project-level read confirms a discount. Region (D14/OCR-RCR fringe) aligns with the v3.4 prior favouring non-CCR forward returns. Trailing appreciation of -5.0% (18 txns) is weak but the backtest says trailing CAGR has ~0 forward power, so I do not penalise it. Yield ~3.3% is decent for a 1BR.",
+        "red_flags": [
+          "Thin own-size cohort (psf_cohort_txns=7) makes the precise discount uncertain",
+          "Geylang location carries resale/financing stigma and noise concerns flagged in reviews",
+          "Tiny 64-unit project means low transaction liquidity for a 5-7yr exit",
+          "Trailing 5yr CAGR negative (-5.0%) — flat-to-soft price history"
+        ],
+        "catalysts": [
+          "Freehold tenure with low absolute quantum keeps the buyer pool wide",
+          "Walkable to Paya Lebar/Eunos amenities and MRT; Paya Lebar commercial node growth"
+        ],
+        "rental_assessment": "Rental yield ~3.3% (rents S$2,600-3,000), typical for a compact 1BR; tenant demand supported by proximity to Paya Lebar commercial hub and MRT.",
+        "appreciation_assessment": "Trailing CAGR is negative and thin (18 txns) so carries near-zero forward signal; the buy case rests on present value (cheap vs verified comps), not momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-28-60160175",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

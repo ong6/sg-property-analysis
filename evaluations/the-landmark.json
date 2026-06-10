@@ -1,0 +1,61 @@
+{
+  "condo": "The Landmark",
+  "slug": "the-landmark",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 517 sqft 1BR at $1.168M in The Landmark, D03 Outram/Pearl's Hill, completed 2025, 760m from Chinatown MRT (DTL). $2,259 PSF is ~9% below the $2,485 URA median and the quantum is low, but the appreciation is weak — resale-only 2.82%/yr and a 1.88% blended rate (new-launch biased) — well under the RCR baseline.",
+      "rating_rationale": "Decent value and location on paper: $1.168M low quantum, $2,259 PSF ~9% below the $2,485 median, fresh 2025 build, 760m to Chinatown DTL on the city fringe with strong CBD/rental appeal, and a deep 277-txn dataset. The drag is appreciation: resale-only is only 2.82%/yr and the blended rate just 1.88% (new-launch biased) — both well below the RCR ~5.8% baseline, signaling the project has lagged on capital growth (Landmark's launch pricing was rich and the market has been digesting it). A 517 sqft shoebox is also a narrow segment. Good rental yield play near the CBD, but a poor appreciation engine keeps it Neutral.",
+      "red_flags": [
+        "Weak appreciation — resale-only 2.82%/yr, blended 1.88% — well below RCR baseline",
+        "517 sqft shoebox — narrow resale and tenant niche",
+        "760m to Chinatown MRT is a walk; rich launch pricing has capped capital growth"
+      ],
+      "catalysts": [
+        "City-fringe D03 Outram/Chinatown — strong CBD-worker rental demand",
+        "$2,259 PSF ~9% below URA median; low $1.168M quantum",
+        "Fresh 2025 completion near DTL"
+      ],
+      "as_of": {
+        "price": 1168000,
+        "psf": 2259.19,
+        "beds": 1,
+        "sqft": 517.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 517 sqft 1BR at $1.168M in The Landmark, D03 Outram/Pearl's Hill, completed 2025, 760m from Chinatown MRT (DTL). $2,259 PSF is ~9% below the $2,485 URA median and the quantum is low, but the appreciation is weak — resale-only 2.82%/yr and a 1.88% blended rate (new-launch biased) — well under the RCR baseline.",
+        "rating": "Neutral",
+        "rating_rationale": "Decent value and location on paper: $1.168M low quantum, $2,259 PSF ~9% below the $2,485 median, fresh 2025 build, 760m to Chinatown DTL on the city fringe with strong CBD/rental appeal, and a deep 277-txn dataset. The drag is appreciation: resale-only is only 2.82%/yr and the blended rate just 1.88% (new-launch biased) — both well below the RCR ~5.8% baseline, signaling the project has lagged on capital growth (Landmark's launch pricing was rich and the market has been digesting it). A 517 sqft shoebox is also a narrow segment. Good rental yield play near the CBD, but a poor appreciation engine keeps it Neutral.",
+        "red_flags": [
+          "Weak appreciation — resale-only 2.82%/yr, blended 1.88% — well below RCR baseline",
+          "517 sqft shoebox — narrow resale and tenant niche",
+          "760m to Chinatown MRT is a walk; rich launch pricing has capped capital growth"
+        ],
+        "catalysts": [
+          "City-fringe D03 Outram/Chinatown — strong CBD-worker rental demand",
+          "$2,259 PSF ~9% below URA median; low $1.168M quantum",
+          "Fresh 2025 completion near DTL"
+        ],
+        "rental_assessment": "Strong rental demand — CBD-adjacent shoebox rents readily to professionals; yield likely ~3.3-3.5%, the main draw here.",
+        "appreciation_assessment": "Underwhelming — both resale-only (2.82%) and blended (1.88%) rates trail the RCR baseline on a large 277-txn sample; this is a yield asset, not a growth one.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-landmark-500044891",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

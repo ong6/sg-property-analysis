@@ -1,0 +1,61 @@
+{
+  "condo": "The Skywoods",
+  "slug": "the-skywoods",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 2017 99-yr leasehold 3BR in Hillview (D23) at $1,634 PSF, slightly below the $1,684 median, backed by a robust 105-txn URA series showing 4.2%/yr appreciation. Solid liquidity and data quality; the $1.9M family quantum sits in a reasonable band, capped only by OCR location and leasehold decay.",
+      "rating_rationale": "Rare combination here of reliable data (105 txns), 4.2%/yr appreciation, on_frontier=true, and a sub-median asking PSF ($1,634 vs $1,684). 3BR at $1.9M near Hillview DTL (810m) appeals to the deep HDB-upgrader family pool. Score_1000 of 580 understates it given the data strength; leasehold + OCR are the limiting factors, not deal-breakers.",
+      "red_flags": [
+        "99-yr leasehold (2017) — decay vs freehold peers in this batch",
+        "OCR/D23 appreciation baseline (~3.7%) lower than RCR",
+        "810m to Hillview MRT — acceptable but not doorstep"
+      ],
+      "catalysts": [
+        "Hillview DTL connectivity and Hillview Rise nearby amenity growth",
+        "Deep family/HDB-upgrader demand for sub-$2M 3BR",
+        "Sub-median PSF entry with 105-txn-verified 4.2% appreciation"
+      ],
+      "as_of": {
+        "price": 1899999,
+        "psf": 1633.71,
+        "beds": 3,
+        "sqft": 1163.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2017 99-yr leasehold 3BR in Hillview (D23) at $1,634 PSF, slightly below the $1,684 median, backed by a robust 105-txn URA series showing 4.2%/yr appreciation. Solid liquidity and data quality; the $1.9M family quantum sits in a reasonable band, capped only by OCR location and leasehold decay.",
+        "rating": "Buy",
+        "rating_rationale": "Rare combination here of reliable data (105 txns), 4.2%/yr appreciation, on_frontier=true, and a sub-median asking PSF ($1,634 vs $1,684). 3BR at $1.9M near Hillview DTL (810m) appeals to the deep HDB-upgrader family pool. Score_1000 of 580 understates it given the data strength; leasehold + OCR are the limiting factors, not deal-breakers.",
+        "red_flags": [
+          "99-yr leasehold (2017) — decay vs freehold peers in this batch",
+          "OCR/D23 appreciation baseline (~3.7%) lower than RCR",
+          "810m to Hillview MRT — acceptable but not doorstep"
+        ],
+        "catalysts": [
+          "Hillview DTL connectivity and Hillview Rise nearby amenity growth",
+          "Deep family/HDB-upgrader demand for sub-$2M 3BR",
+          "Sub-median PSF entry with 105-txn-verified 4.2% appreciation"
+        ],
+        "rental_assessment": "Hillview draws family and expat tenants (nature, schools, DTL); a 3BR rents steadily though OCR yields run ~3%.",
+        "appreciation_assessment": "4.2%/yr on 105 txns is reliable and above the OCR baseline — a genuinely well-supported number, the strongest data point in the batch.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-skywoods-500114497",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

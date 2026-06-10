@@ -1,0 +1,63 @@
+{
+  "condo": "Changi Road",
+  "slug": "changi-road",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 1,323 sqft 4BR at $1.8M / $1,361 PSF on Changi Road, D14, just 50m from Kembangan MRT. Outstanding transit and freehold tenure at a reasonable quantum, but the project is identified only by street name with no built_year and zero URA appreciation/transaction/median data — almost certainly a small freehold walk-up block (the Changi Road strip holds 40-80-unit projects), which means thin, lumpy liquidity.",
+      "rating_rationale": "The 50m walk to Kembangan MRT and freehold tenure at $1,361 PSF / $1.8M are genuinely strong, and the value-frontier flag reflects efficient pricing. But the complete absence of built_year and any URA series — plus a street-name 'project' that maps to small walk-up blocks — leaves liquidity and appreciation unverifiable. The high score is partly an artifact of missing data scoring neutral. Strong location pulls it up to Neutral, but the data gaps prevent a Buy.",
+      "red_flags": [
+        "No built_year and no URA appreciation/txn/median data — value and liquidity unverified",
+        "Project named only by street — likely a small freehold walk-up block, thin/lumpy resale market",
+        "Possible older stock (unknown age) — refurb/maintenance unknown"
+      ],
+      "catalysts": [
+        "50m to EW6 Kembangan MRT (East-West Line) — exceptional transit",
+        "Freehold tenure in D14 near East Coast at a moderate $1.8M quantum",
+        "Family-sized 1,323 sqft 4BR with broad buyer appeal"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1360.54,
+        "beds": 4,
+        "sqft": 1323.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,323 sqft 4BR at $1.8M / $1,361 PSF on Changi Road, D14, just 50m from Kembangan MRT. Outstanding transit and freehold tenure at a reasonable quantum, but the project is identified only by street name with no built_year and zero URA appreciation/transaction/median data — almost certainly a small freehold walk-up block (the Changi Road strip holds 40-80-unit projects), which means thin, lumpy liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "The 50m walk to Kembangan MRT and freehold tenure at $1,361 PSF / $1.8M are genuinely strong, and the value-frontier flag reflects efficient pricing. But the complete absence of built_year and any URA series — plus a street-name 'project' that maps to small walk-up blocks — leaves liquidity and appreciation unverifiable. The high score is partly an artifact of missing data scoring neutral. Strong location pulls it up to Neutral, but the data gaps prevent a Buy.",
+        "red_flags": [
+          "No built_year and no URA appreciation/txn/median data — value and liquidity unverified",
+          "Project named only by street — likely a small freehold walk-up block, thin/lumpy resale market",
+          "Possible older stock (unknown age) — refurb/maintenance unknown"
+        ],
+        "catalysts": [
+          "50m to EW6 Kembangan MRT (East-West Line) — exceptional transit",
+          "Freehold tenure in D14 near East Coast at a moderate $1.8M quantum",
+          "Family-sized 1,323 sqft 4BR with broad buyer appeal"
+        ],
+        "rental_assessment": "Being on top of Kembangan MRT, a freehold 4BR rents readily to families; the location is the strongest rental driver here.",
+        "appreciation_assessment": "Unverifiable without URA data, but freehold directly at an MRT station should at least track the D14 market; the catalyst is the location, not data-evidenced momentum.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "D14 RCR baseline — no project URA data; freehold-at-MRT supports the floor"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-road-500115472",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

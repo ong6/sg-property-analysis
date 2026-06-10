@@ -1,0 +1,61 @@
+{
+  "condo": "Qube Suites",
+  "slug": "qube-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 764 sqft 2BR in a tiny 21-unit 2017 boutique walk-up off Geylang (D14, near Kaki Bukit). The algo's headline -25.6% cheap signal is a data quirk: it rests on only 12 appreciation txns, psf_cohort_txns=0, and a negative -2.68% CAGR. Verified data shows the project trades around $1,510 median psf, so $1,440 psf is mildly below median but the -25.6% bargain is illusory.",
+      "rating_rationale": "The standout -25.6% age-adjusted cheapness does not survive scrutiny: Qube Suites is a 21-unit project with ~18 lifetime sale transactions, only 12 appreciation comps, and psf_cohort_txns=0 — far too thin to trust a 25% discount read. Verified web data puts the median at ~$1,510 psf (highest $1,656 psf for a 420sqft unit), so the $1,440 psf asking on a 764 sqft 2BR is at best modestly below median, NOT a quarter cheaper. Trailing appreciation is negative (-2.68%). Freehold is not a forward edge per the backtest. The fundamental problem is liquidity: a 21-unit walk-up with no facilities-driven appeal and Kaki Bukit (not city-fringe MRT) as the nearest station has very thin resale demand, a serious risk for a 5-7yr exit. The verdict is a quirk-driven cheap signal masking an illiquid micro-project.",
+      "red_flags": [
+        "-25.6% cheap signal is a data quirk: only 12 appreciation txns, psf_cohort_txns=0, negative -2.68% trailing CAGR",
+        "Tiny 21-unit boutique walk-up — very thin resale liquidity, hard 5-7yr exit",
+        "Verified median ~$1,510 psf means $1,440 asking is only modestly below median, not -25.6% cheap",
+        "Geylang-area locale near Kaki Bukit (not a prime MRT); no lifestyle facilities to anchor demand"
+      ],
+      "catalysts": [
+        "Freehold tenure (long-hold appeal, but not a forward price edge per backtest)",
+        "D14 / Paya Lebar-Geylang regeneration provides a regional backdrop"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1439.79,
+        "beds": 2,
+        "sqft": 764
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Freehold 764 sqft 2BR in a tiny 21-unit 2017 boutique walk-up off Geylang (D14, near Kaki Bukit). The algo's headline -25.6% cheap signal is a data quirk: it rests on only 12 appreciation txns, psf_cohort_txns=0, and a negative -2.68% CAGR. Verified data shows the project trades around $1,510 median psf, so $1,440 psf is mildly below median but the -25.6% bargain is illusory.",
+        "rating_rationale": "The standout -25.6% age-adjusted cheapness does not survive scrutiny: Qube Suites is a 21-unit project with ~18 lifetime sale transactions, only 12 appreciation comps, and psf_cohort_txns=0 — far too thin to trust a 25% discount read. Verified web data puts the median at ~$1,510 psf (highest $1,656 psf for a 420sqft unit), so the $1,440 psf asking on a 764 sqft 2BR is at best modestly below median, NOT a quarter cheaper. Trailing appreciation is negative (-2.68%). Freehold is not a forward edge per the backtest. The fundamental problem is liquidity: a 21-unit walk-up with no facilities-driven appeal and Kaki Bukit (not city-fringe MRT) as the nearest station has very thin resale demand, a serious risk for a 5-7yr exit. The verdict is a quirk-driven cheap signal masking an illiquid micro-project.",
+        "red_flags": [
+          "-25.6% cheap signal is a data quirk: only 12 appreciation txns, psf_cohort_txns=0, negative -2.68% trailing CAGR",
+          "Tiny 21-unit boutique walk-up — very thin resale liquidity, hard 5-7yr exit",
+          "Verified median ~$1,510 psf means $1,440 asking is only modestly below median, not -25.6% cheap",
+          "Geylang-area locale near Kaki Bukit (not a prime MRT); no lifestyle facilities to anchor demand"
+        ],
+        "catalysts": [
+          "Freehold tenure (long-hold appeal, but not a forward price edge per backtest)",
+          "D14 / Paya Lebar-Geylang regeneration provides a regional backdrop"
+        ],
+        "rental_assessment": "Niche. ~4.3% gross yield is cited, and a freehold 2BR rents to couples, but the lack of facilities and a far-from-MRT Kaki Bukit location limit tenant pool breadth.",
+        "appreciation_assessment": "Poor outlook. Trailing CAGR is negative (-2.68%) and the cheap signal is a thin-data artifact, not a genuine value entry; freehold offers no forward edge, and the micro-project's illiquidity is a material drag on any 5-7yr capital outcome."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-qube-suites-500048864",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

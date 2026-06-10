@@ -1,0 +1,61 @@
+{
+  "condo": "Dairy Farm Residences",
+  "slug": "dairy-farm-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 710 sqft 2BR at Dairy Farm Residences, a 2023-TOP D23 (Hillview/Bukit Panjang) 99yr mixed development, at $1.17M / $1,648 psf vs a $1,790 project median. Low quantum and below-median pricing are attractive, but a negative resale-only trend, 1.12km/13-min MRT walk, and incoming nearby supply weigh on it.",
+      "rating_rationale": "The deciding tension: the listing's $1,648 psf is ~8% below the $1,790 project median (research confirms 12-month avg ~$1,839 psf) — so this is priced attractively for the project, and the $1.17M quantum is highly liquid. But the resale-only CAGR is negative (-1.23%) with a new_launch_bias flag and score_1000 of 350, signalling the project's resale prices have softened off launch highs — a real concern for a 2023-TOP development. Web research flags incoming supply (Narra Residences ~540 units Q1 2026 + another ~480-unit GLS site on Dairy Farm Walk), which will compete on resale. Offsetting: 2BR is the widest-pool format and the entry is sub-$1.2M and below median. The cheap entry roughly balances the soft trend and supply overhang — Neutral.",
+      "red_flags": [
+        "Negative resale-only CAGR (-1.2%) — prices softened off launch",
+        "Incoming nearby supply (Narra ~540 units + ~480-unit GLS) will compete on resale",
+        "1.12km / 13-min walk to Hillview MRT — not a true MRT-adjacent unit"
+      ],
+      "catalysts": [
+        "Listed ~8% below project median PSF; cheap sub-$1.2M entry",
+        "2BR — widest tenant and resale buyer pool",
+        "Mixed development with retail (HillV2-area amenities); low-density Dairy Farm enclave"
+      ],
+      "as_of": {
+        "price": 1170000,
+        "psf": 1647.89,
+        "beds": 2,
+        "sqft": 710.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 710 sqft 2BR at Dairy Farm Residences, a 2023-TOP D23 (Hillview/Bukit Panjang) 99yr mixed development, at $1.17M / $1,648 psf vs a $1,790 project median. Low quantum and below-median pricing are attractive, but a negative resale-only trend, 1.12km/13-min MRT walk, and incoming nearby supply weigh on it.",
+        "rating": "Neutral",
+        "rating_rationale": "The deciding tension: the listing's $1,648 psf is ~8% below the $1,790 project median (research confirms 12-month avg ~$1,839 psf) — so this is priced attractively for the project, and the $1.17M quantum is highly liquid. But the resale-only CAGR is negative (-1.23%) with a new_launch_bias flag and score_1000 of 350, signalling the project's resale prices have softened off launch highs — a real concern for a 2023-TOP development. Web research flags incoming supply (Narra Residences ~540 units Q1 2026 + another ~480-unit GLS site on Dairy Farm Walk), which will compete on resale. Offsetting: 2BR is the widest-pool format and the entry is sub-$1.2M and below median. The cheap entry roughly balances the soft trend and supply overhang — Neutral.",
+        "red_flags": [
+          "Negative resale-only CAGR (-1.2%) — prices softened off launch",
+          "Incoming nearby supply (Narra ~540 units + ~480-unit GLS) will compete on resale",
+          "1.12km / 13-min walk to Hillview MRT — not a true MRT-adjacent unit"
+        ],
+        "catalysts": [
+          "Listed ~8% below project median PSF; cheap sub-$1.2M entry",
+          "2BR — widest tenant and resale buyer pool",
+          "Mixed development with retail (HillV2-area amenities); low-density Dairy Farm enclave"
+        ],
+        "rental_assessment": "2BR in a mixed development draws steady demand from the Bukit Panjang/Hillview catchment, but the area is not a prime rental node; yield around 3%, occupancy decent.",
+        "appreciation_assessment": "Negative resale-only trend and a fresh wave of nearby new supply cap near-term upside; the new_launch_bias flag means the blended 1.7% figure is optimistic. The below-median entry provides some downside cushion but no clear growth driver.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-dairy-farm-residences-25534711",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

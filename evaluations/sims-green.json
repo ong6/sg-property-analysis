@@ -1,0 +1,119 @@
+{
+  "condo": "Sims Green",
+  "slug": "sims-green",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A large 1,625sqft 99-yr leasehold 3BR at Sims Green, D14, asking just $985 psf — a striking ~15% below the $1,164 URA median — for $1.6M total, 490m from Aljunied MRT. The deep discount, low absolute price, generous size and strong MRT access make this a value-led entry, with 4.2%/yr appreciation and ~78 years of lease remaining.",
+      "rating_rationale": "Asking $985 psf vs a $1,164 URA median is a genuine ~15% discount — worth a quick due-diligence on why (low floor / facing / urgency) but a clear value signal on a 21-txn series. A $1.6M, 1,625sqft 3BR squarely in the liquid band, 490m from Aljunied EW MRT, in the Paya Lebar Central catchment, with ~78 years of lease left (2004 build) and 4.2%/yr appreciation. The high score_1000 (833) and undefeated-on-draws arena record reinforce the value case. A solid Buy at this discount.",
+      "red_flags": [
+        "~15% below median — verify cause (low floor/facing/renovation needed)",
+        "99-yr leasehold, built 2004 (~78 yrs left)",
+        "Only 21 URA txn — rate moderately reliable",
+        "Older, mid-sized development — moderate amenity depth"
+      ],
+      "catalysts": [
+        "~15% discount to URA median PSF",
+        "490m to Aljunied EW MRT, D14 Paya Lebar Central catchment",
+        "Large 1,625sqft 3BR at a liquid $1.6M price point"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 984.62,
+        "beds": 3,
+        "sqft": 1625.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,625sqft 99-yr leasehold 3BR at Sims Green, D14, asking just $985 psf — a striking ~15% below the $1,164 URA median — for $1.6M total, 490m from Aljunied MRT. The deep discount, low absolute price, generous size and strong MRT access make this a value-led entry, with 4.2%/yr appreciation and ~78 years of lease remaining.",
+        "rating": "Buy",
+        "rating_rationale": "Asking $985 psf vs a $1,164 URA median is a genuine ~15% discount — worth a quick due-diligence on why (low floor / facing / urgency) but a clear value signal on a 21-txn series. A $1.6M, 1,625sqft 3BR squarely in the liquid band, 490m from Aljunied EW MRT, in the Paya Lebar Central catchment, with ~78 years of lease left (2004 build) and 4.2%/yr appreciation. The high score_1000 (833) and undefeated-on-draws arena record reinforce the value case. A solid Buy at this discount.",
+        "red_flags": [
+          "~15% below median — verify cause (low floor/facing/renovation needed)",
+          "99-yr leasehold, built 2004 (~78 yrs left)",
+          "Only 21 URA txn — rate moderately reliable",
+          "Older, mid-sized development — moderate amenity depth"
+        ],
+        "catalysts": [
+          "~15% discount to URA median PSF",
+          "490m to Aljunied EW MRT, D14 Paya Lebar Central catchment",
+          "Large 1,625sqft 3BR at a liquid $1.6M price point"
+        ],
+        "rental_assessment": "Large 3BR steps from Aljunied MRT rents readily to families and sharers; the low entry price gives an above-average gross yield for the area.",
+        "appreciation_assessment": "4.2%/yr on 21 txn is plausible for a leasehold D14 project near the MRT; the below-median entry adds a margin of safety and room for mean-reversion upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.2,
+        "appreciation_rate_source": "URA resale-only series, 21 txn"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-green-60105254",
+        "review_file": "cov_batch_14.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Verified-cheap large 3BR ~280m from Aljunied MRT, but a 22-year-old 99LH with lease decay capping a 5-7yr exit.",
+      "rating_rationale": "Asking $984.62 psf is genuinely below the verified recent band ($905-$1,183 psf, avg ~$1,111), so the very_low_psf flag is a real bargain not a mis-scrape; the size (1,625 sqft) explains part of the PSF gap. age_adj_premium -37.8% confirms it screens cheap for its age, and D14 is a favorable OCR/RCR forward region with Aljunied MRT just ~280m away. Two real drags lower conviction: psf_cohort_txns is 0 (no same-size comp at all, so the cohort discount is unverified) and at built-2004 the 99LH has ~77 years left and decay accelerates over a 5-7yr hold, capping upside. The bargain is real but the lease and thin cohort keep this a low-confidence Buy.",
+      "red_flags": [
+        "very_old_property: built 2004, ~77yr lease remaining and decaying",
+        "psf_cohort_txns = 0: no same-size transaction to verify the cohort discount",
+        "Geylang/Lorong 27A locale (older neighbourhood, some buyer aversion)"
+      ],
+      "catalysts": [
+        "~280m to Aljunied MRT (EWL) — strong walkability",
+        "Verified below-market PSF vs recent resales gives a real value cushion",
+        "Paya Lebar Quarter / Paya Lebar commercial growth nearby"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 984.62,
+        "beds": 3,
+        "sqft": 1625
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "low",
+        "summary": "Verified-cheap large 3BR ~280m from Aljunied MRT, but a 22-year-old 99LH with lease decay capping a 5-7yr exit.",
+        "rating_rationale": "Asking $984.62 psf is genuinely below the verified recent band ($905-$1,183 psf, avg ~$1,111), so the very_low_psf flag is a real bargain not a mis-scrape; the size (1,625 sqft) explains part of the PSF gap. age_adj_premium -37.8% confirms it screens cheap for its age, and D14 is a favorable OCR/RCR forward region with Aljunied MRT just ~280m away. Two real drags lower conviction: psf_cohort_txns is 0 (no same-size comp at all, so the cohort discount is unverified) and at built-2004 the 99LH has ~77 years left and decay accelerates over a 5-7yr hold, capping upside. The bargain is real but the lease and thin cohort keep this a low-confidence Buy.",
+        "red_flags": [
+          "very_old_property: built 2004, ~77yr lease remaining and decaying",
+          "psf_cohort_txns = 0: no same-size transaction to verify the cohort discount",
+          "Geylang/Lorong 27A locale (older neighbourhood, some buyer aversion)"
+        ],
+        "catalysts": [
+          "~280m to Aljunied MRT (EWL) — strong walkability",
+          "Verified below-market PSF vs recent resales gives a real value cushion",
+          "Paya Lebar Quarter / Paya Lebar commercial growth nearby"
+        ],
+        "appreciation_assessment": "4.21% CAGR on 21 txns is moderate and near-zero forward predictive per backtest; lease decay is the more material forward driver and works against appreciation here.",
+        "rental_assessment": "Large unit 280m from Aljunied MRT rents well to families/sharers in a mature area; gross yield on a $1.6M / 1,625 sqft unit is decent but lease age will weigh on tenant financing-linked demand over time."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-green-60105254",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

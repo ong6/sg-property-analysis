@@ -1,0 +1,113 @@
+{
+  "condo": "The Alps Residences",
+  "slug": "the-alps-residences",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 689 sqft 99yr 2BR at The Alps Residences (D18 Tampines) at a low $976K / $1417 PSF — entry ~6% below the $1505 district median. Affordable quantum and a deep 209-txn data series, but a modest 3.36% CAGR and OCR location with no MRT-on-doorstep keep upside ordinary.",
+      "rating_rationale": "The sub-$1M quantum and below-median $1417 PSF (vs $1505, 209 txns) give a wide, liquid buyer pool and an efficient 2BR with the broadest tenant base. But the 3.36% URA resale CAGR is OCR-baseline-grade, there's no listed MRT proximity, and Tampines has heavy competing supply. A safe, liquid, low-quantum hold — sound but not a standout.",
+      "red_flags": [
+        "3.36% CAGR — modest, near OCR baseline with no project catalyst",
+        "No MRT listed nearby — transit access likely mediocre",
+        "Tampines/Pasir Ris has substantial competing OCR supply"
+      ],
+      "catalysts": [
+        "Sub-$1M entry below district median — deep, liquid buyer pool",
+        "Efficient 2BR — widest tenant demand for rental",
+        "CRL + DTL extension lifting D18 connectivity over the hold"
+      ],
+      "as_of": {
+        "price": 976491,
+        "psf": 1417.26,
+        "beds": 2,
+        "sqft": 689.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 689 sqft 99yr 2BR at The Alps Residences (D18 Tampines) at a low $976K / $1417 PSF — entry ~6% below the $1505 district median. Affordable quantum and a deep 209-txn data series, but a modest 3.36% CAGR and OCR location with no MRT-on-doorstep keep upside ordinary.",
+        "rating": "Neutral",
+        "rating_rationale": "The sub-$1M quantum and below-median $1417 PSF (vs $1505, 209 txns) give a wide, liquid buyer pool and an efficient 2BR with the broadest tenant base. But the 3.36% URA resale CAGR is OCR-baseline-grade, there's no listed MRT proximity, and Tampines has heavy competing supply. A safe, liquid, low-quantum hold — sound but not a standout.",
+        "red_flags": [
+          "3.36% CAGR — modest, near OCR baseline with no project catalyst",
+          "No MRT listed nearby — transit access likely mediocre",
+          "Tampines/Pasir Ris has substantial competing OCR supply"
+        ],
+        "catalysts": [
+          "Sub-$1M entry below district median — deep, liquid buyer pool",
+          "Efficient 2BR — widest tenant demand for rental",
+          "CRL + DTL extension lifting D18 connectivity over the hold"
+        ],
+        "rental_assessment": "Solid. Compact 2BR in a large Tampines development draws a broad, steady tenant pool, though OCR rents and yields are modest.",
+        "appreciation_assessment": "3.36% resale CAGR (209 txns, reliable) is OCR-typical; CRL/Tampines regional-centre growth offers some optionality but no near-term re-rating.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-alps-residences-500046533",
+        "review_file": "cov_batch_12.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely cheap 2BR in a 2019 OCR (D18 Tampines) condo by MCC Land; asking $1,417 psf sits a real ~7% below recent transacted prices, and OCR is the strongest forward region in the v3.4 backtest.",
+      "rating_rationale": "Asking $1,417 psf for this 689 sqft 2BR is verifiably below the project's recent reality: 2025-26 transactions averaged ~$1,523 psf (range $1,398-$1,701), with two 2BR-style 936 sqft units selling at $1,506-$1,516 psf and Dec-2025 deals at $1,506-$1,565 psf. The algo's -11.8% age-adj cheapness and -4.6% vs-cohort discount are corroborated by the web, not a quirk, and rest on healthy depth (209 appreciation txns, 25 cohort txns). D18 is OCR, the best realized forward region (~+4.0%) in the v3.4 backtest, and the asking price is near the bottom of the live PSF range ($1,417-$1,742). 2019 completion, MCC Land (ISO-certified, Universal Studios/Keppel track record). Confidence held to medium since the listing appears to be at the very floor of recent psf and the trailing CAGR (3.36%) carries no forward weight.",
+      "red_flags": [
+        "Asking is at the bottom of the live PSF range, so part of the apparent discount may reflect a less desirable stack/facing or condition rather than pure bargain",
+        "Mass-market OCR with large pipeline supply in Tampines/Pasir Ris can cap rental upside",
+        "Many Alps units sacrificed balconies for internal space — verify this unit's layout/facing"
+      ],
+      "catalysts": [
+        "Tampines North / Cross Island Line build-out improving long-term connectivity",
+        "Tampines regional centre and Jewel/Changi employment catchment supporting OCR rental demand"
+      ],
+      "as_of": {
+        "price": 976491,
+        "psf": 1417.26,
+        "beds": 2,
+        "sqft": 689
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely cheap 2BR in a 2019 OCR (D18 Tampines) condo by MCC Land; asking $1,417 psf sits a real ~7% below recent transacted prices, and OCR is the strongest forward region in the v3.4 backtest.",
+        "rating_rationale": "Asking $1,417 psf for this 689 sqft 2BR is verifiably below the project's recent reality: 2025-26 transactions averaged ~$1,523 psf (range $1,398-$1,701), with two 2BR-style 936 sqft units selling at $1,506-$1,516 psf and Dec-2025 deals at $1,506-$1,565 psf. The algo's -11.8% age-adj cheapness and -4.6% vs-cohort discount are corroborated by the web, not a quirk, and rest on healthy depth (209 appreciation txns, 25 cohort txns). D18 is OCR, the best realized forward region (~+4.0%) in the v3.4 backtest, and the asking price is near the bottom of the live PSF range ($1,417-$1,742). 2019 completion, MCC Land (ISO-certified, Universal Studios/Keppel track record). Confidence held to medium since the listing appears to be at the very floor of recent psf and the trailing CAGR (3.36%) carries no forward weight.",
+        "red_flags": [
+          "Asking is at the bottom of the live PSF range, so part of the apparent discount may reflect a less desirable stack/facing or condition rather than pure bargain",
+          "Mass-market OCR with large pipeline supply in Tampines/Pasir Ris can cap rental upside",
+          "Many Alps units sacrificed balconies for internal space — verify this unit's layout/facing"
+        ],
+        "catalysts": [
+          "Tampines North / Cross Island Line build-out improving long-term connectivity",
+          "Tampines regional centre and Jewel/Changi employment catchment supporting OCR rental demand"
+        ],
+        "appreciation_assessment": "Trailing 5yr URA CAGR of 3.36% is solid for OCR but is treated as story-only (no forward power). Forward case rests on value: buying ~7% under recent comparable transactions in the best forward region.",
+        "rental_assessment": "OCR 2BR near Tampines amenities and MRT supports steady tenant demand; sub-$1m entry at <$1,420 psf keeps yield competitive for the district."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-alps-residences-500046533",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

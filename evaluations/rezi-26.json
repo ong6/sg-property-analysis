@@ -1,0 +1,115 @@
+{
+  "condo": "Rezi 26",
+  "slug": "rezi-26",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 807 sqft 1BR at $1.15M in D14, 660m from Aljunied MRT, with a clean resale-only 4.23%/yr CAGR and a $1,425 PSF that is essentially at the URA median ($1,570). Freehold + low quantum + city-fringe location are solid, though 807 sqft is unusually large for a 1BR (size masking PSF) and the 24-txn sample is modest.",
+      "rating_rationale": "A clean, no-red-flag profile: freehold, resale-only 4.23%/yr (no new-launch bias), $1.15M deep-pool quantum, and D14's Paya Lebar growth corridor with Aljunied EWL 660m away. Two reasons it stays Neutral rather than Buy: (1) an 807 sqft '1BR' is oversized for the type — the low $1,425 PSF partly reflects size, and per-dollar appreciation on a large 1BR is diluted; and (2) 24 URA txns is a modest sample. PSF sits ~9% under median $1,570, which helps. A steady, fairly-priced hold rather than a standout.",
+      "red_flags": [
+        "807 sqft is very large for a 1BR — low PSF is partly a size effect, dilutes per-dollar growth",
+        "Only 24 URA txns — moderate-confidence appreciation rate",
+        "660m to Aljunied is a walk; not MRT-fronting"
+      ],
+      "catalysts": [
+        "Freehold in D14 Paya Lebar growth corridor (airbase relocation, Paya Lebar Central)",
+        "$1.15M low quantum keeps buyer pool wide",
+        "PSF ~9% below URA median $1,570"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1425.03,
+        "beds": 1,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 807 sqft 1BR at $1.15M in D14, 660m from Aljunied MRT, with a clean resale-only 4.23%/yr CAGR and a $1,425 PSF that is essentially at the URA median ($1,570). Freehold + low quantum + city-fringe location are solid, though 807 sqft is unusually large for a 1BR (size masking PSF) and the 24-txn sample is modest.",
+        "rating": "Neutral",
+        "rating_rationale": "A clean, no-red-flag profile: freehold, resale-only 4.23%/yr (no new-launch bias), $1.15M deep-pool quantum, and D14's Paya Lebar growth corridor with Aljunied EWL 660m away. Two reasons it stays Neutral rather than Buy: (1) an 807 sqft '1BR' is oversized for the type — the low $1,425 PSF partly reflects size, and per-dollar appreciation on a large 1BR is diluted; and (2) 24 URA txns is a modest sample. PSF sits ~9% under median $1,570, which helps. A steady, fairly-priced hold rather than a standout.",
+        "red_flags": [
+          "807 sqft is very large for a 1BR — low PSF is partly a size effect, dilutes per-dollar growth",
+          "Only 24 URA txns — moderate-confidence appreciation rate",
+          "660m to Aljunied is a walk; not MRT-fronting"
+        ],
+        "catalysts": [
+          "Freehold in D14 Paya Lebar growth corridor (airbase relocation, Paya Lebar Central)",
+          "$1.15M low quantum keeps buyer pool wide",
+          "PSF ~9% below URA median $1,570"
+        ],
+        "rental_assessment": "Good — city-fringe freehold near Aljunied EWL rents readily; large 1BR appeals to couples, yield ~3.3%.",
+        "appreciation_assessment": "Clean resale-only 4.23%/yr is credible if modest; freehold + D14 tailwinds support steady, market-rate growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-26-25483888",
+        "review_file": "cov_batch_11.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 2015 project in Geylang/Eunos (D14) where the asking $1,425 psf is verifiably ~9-10% below real recent transactions (avg ~$1,577 psf over 12 months, with a Nov-2025 print at $1,648 psf). The value is corroborated by actual sales, not just the algo, which lifts confidence above the thin-cohort names. Main caveats are modest transaction volume (49 sales since 2015) and Geylang's location stigma capping liquidity.",
+      "rating_rationale": "Verified recent transactions average S$1,577 psf (6mo S$1,571, range S$1,541-S$1,648 to Nov 2025); the S$1,425 asking is a genuine ~9-10% discount to live comps, consistent with the algo's -24.2% age_adj_premium and -9.2% cohort signal. D14 is an RCR/OCR-edge district with solid forward realized returns per v3.4 priors. appreciation_pct=4.23% on 24 ura txns is real-ish but per v3.4 carries ~0 forward weight - I lean on the verified cheap-vs-comps instead. psf_cohort_txns=0 means the same-size band is unverified by the algo, so I cap at medium confidence despite the favorable web evidence.",
+      "red_flags": [
+        "psf_cohort_txns=0: no same-size comparable in the algo - cohort discount is from project pool, verify the 1BR band specifically",
+        "Only ~49 sale transactions since 2015 across 106 units = thin volume, slower exit",
+        "Geylang address carries a persistent location stigma that can cap buyer pool and resale liquidity"
+      ],
+      "catalysts": [
+        "Aljunied MRT (~7 min) and Paya Lebar interchange / commercial node nearby supports rental demand",
+        "Freehold tenure (durability, though not a forward price driver per v3.4)",
+        "Verified asking is below live recent transactions - room for mean-reversion upside"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1425.03,
+        "beds": 1,
+        "sqft": 807
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Freehold 2015 project in Geylang/Eunos (D14) where the asking $1,425 psf is verifiably ~9-10% below real recent transactions (avg ~$1,577 psf over 12 months, with a Nov-2025 print at $1,648 psf). The value is corroborated by actual sales, not just the algo, which lifts confidence above the thin-cohort names. Main caveats are modest transaction volume (49 sales since 2015) and Geylang's location stigma capping liquidity.",
+        "rating_rationale": "Verified recent transactions average S$1,577 psf (6mo S$1,571, range S$1,541-S$1,648 to Nov 2025); the S$1,425 asking is a genuine ~9-10% discount to live comps, consistent with the algo's -24.2% age_adj_premium and -9.2% cohort signal. D14 is an RCR/OCR-edge district with solid forward realized returns per v3.4 priors. appreciation_pct=4.23% on 24 ura txns is real-ish but per v3.4 carries ~0 forward weight - I lean on the verified cheap-vs-comps instead. psf_cohort_txns=0 means the same-size band is unverified by the algo, so I cap at medium confidence despite the favorable web evidence.",
+        "red_flags": [
+          "psf_cohort_txns=0: no same-size comparable in the algo - cohort discount is from project pool, verify the 1BR band specifically",
+          "Only ~49 sale transactions since 2015 across 106 units = thin volume, slower exit",
+          "Geylang address carries a persistent location stigma that can cap buyer pool and resale liquidity"
+        ],
+        "catalysts": [
+          "Aljunied MRT (~7 min) and Paya Lebar interchange / commercial node nearby supports rental demand",
+          "Freehold tenure (durability, though not a forward price driver per v3.4)",
+          "Verified asking is below live recent transactions - room for mean-reversion upside"
+        ],
+        "appreciation_assessment": "appreciation_pct 4.23% (ura_5yr_cagr, 24 txns) is a reasonable but forward-uninformative number per v3.4. The actionable signal is the verified ~9-10% gap between the $1,425 asking and the ~$1,577 psf live market, which is a value (not momentum) thesis - the strongest robust signal class.",
+        "rental_assessment": "Rezi 26 has heavy rental demand (503 rental vs 49 sale txns), typical for Geylang/Paya Lebar investor stock. An 807 sqft unit at $1.15M renting ~$3.5-3.8k/mo gives ~3.7-4.0% gross, supportive of an investment hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-26-25483888",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

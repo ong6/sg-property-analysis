@@ -1,0 +1,117 @@
+{
+  "condo": "The Midas",
+  "slug": "the-midas",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A genuinely large 1561sqft freehold 3BR in D14 (Paya Lebar) at a very low $1089 psf — roughly 11% below the project's $1222 URA median, a meaningful discount for a freehold near Aljunied MRT. The headline 6.6% resale CAGR rests on only 6 transactions so it is statistically unreliable, but the absolute value and freehold tenure are real.",
+      "rating_rationale": "$1.7M for a 1561sqft freehold 3BR in a Paya Lebar Central district works out to $1089 psf vs $1222 median — about an 11% PSF discount. Freehold + sub-$1.8M (liquid band) + D14 airbase-relocation/PLC catalyst. The oversize means a buyer is getting land-banked freehold space cheaply; even if the 6-txn appreciation rate is noise, the entry PSF gives margin of safety. Built 2007 (19yr, dated but not problematic).",
+      "red_flags": [
+        "Appreciation rate from only 6 transactions — unreliable, treat as illiquid resale market",
+        "Large 1561sqft pushes quantum but tenant rent won't scale with size (yield drag on a 3BR resale)",
+        "19-year-old development — maintenance/refurb costs, less modern facilities"
+      ],
+      "catalysts": [
+        "Freehold tenure at $1089 psf — well below district new-launch PSF",
+        "Paya Lebar Central commercial hub and Paya Lebar airbase relocation unlocking land long-term",
+        "Discount to project median PSF gives entry margin"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1089.05,
+        "beds": 3,
+        "sqft": 1561.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A genuinely large 1561sqft freehold 3BR in D14 (Paya Lebar) at a very low $1089 psf — roughly 11% below the project's $1222 URA median, a meaningful discount for a freehold near Aljunied MRT. The headline 6.6% resale CAGR rests on only 6 transactions so it is statistically unreliable, but the absolute value and freehold tenure are real.",
+        "rating": "Buy",
+        "rating_rationale": "$1.7M for a 1561sqft freehold 3BR in a Paya Lebar Central district works out to $1089 psf vs $1222 median — about an 11% PSF discount. Freehold + sub-$1.8M (liquid band) + D14 airbase-relocation/PLC catalyst. The oversize means a buyer is getting land-banked freehold space cheaply; even if the 6-txn appreciation rate is noise, the entry PSF gives margin of safety. Built 2007 (19yr, dated but not problematic).",
+        "red_flags": [
+          "Appreciation rate from only 6 transactions — unreliable, treat as illiquid resale market",
+          "Large 1561sqft pushes quantum but tenant rent won't scale with size (yield drag on a 3BR resale)",
+          "19-year-old development — maintenance/refurb costs, less modern facilities"
+        ],
+        "catalysts": [
+          "Freehold tenure at $1089 psf — well below district new-launch PSF",
+          "Paya Lebar Central commercial hub and Paya Lebar airbase relocation unlocking land long-term",
+          "Discount to project median PSF gives entry margin"
+        ],
+        "rental_assessment": "D14/Aljunied has a deep tenant pool (city-fringe, MRT-served). A 1561sqft 3BR rents to families but yield is modest given the quantum; rent does not scale with the oversized floor area.",
+        "appreciation_assessment": "6-txn resale rate is unreliable; lean on tenure + entry discount rather than the 6.6% figure. Freehold D14 at this PSF should track RCR ~5%, with downside cushioned by the below-median entry.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Discounted from 6.6% (only 6 txns) to a conservative freehold-RCR estimate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-midas-500088274",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Genuinely below the going 3BR rate ($1,089 vs ~$1,307 PSF), but the discount is largely size-driven (a big 1561 sqft unit) on a 19-year-old, 28-unit Geylang freehold with very thin transaction depth, so the 'value' is soft and liquidity is the binding constraint.",
+      "rating_rationale": "Asking $1,089 PSF (1561 sqft, $1.7M). Verified 3BR pricing at The Midas averages ~$1,307 PSF (listings $1,193-$1,446; a 1141 sqft 3BR recently at $1,446 PSF), so $1,089 is real-cheap on PSF — but a 1561 sqft unit is at the large end and large units structurally trade at lower PSF, so the v3.4 cohort comparison overstates the bargain. Critically, the appreciation is a regional_baseline fallback on just 6 txns and psf_cohort_txns=1, so the -34.6% age-adj and -6% cohort figures rest on near-zero comparables (data quirk territory). Built 2007 (old_property flag) and only 28 units = very thin, illiquid market with wide bid-ask. Freehold and D14 location are pluses but neither is a forward edge. A patient own-stay-style buyer could find real space value here; as a 5-7yr investment the illiquidity and absent catalyst cap it at Neutral with low confidence.",
+      "red_flags": [
+        "Cheapness partly an artifact of large 1561 sqft unit vs pooled 3BR PSF; size-adjusted discount is smaller",
+        "Appreciation is a regional_baseline fallback on only 6 txns; psf_cohort_txns=1 (single comparable)",
+        "Tiny 28-unit, 2007-built project = very low liquidity and wide spreads",
+        "Geylang sub-locale can drag financing/resale demand"
+      ],
+      "catalysts": [
+        "Freehold tenure on a large 3BR floor plate (space value for own-stay/long hold)",
+        "Walkable to Aljunied MRT in an established D14 estate"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1089.05,
+        "beds": 3,
+        "sqft": 1561
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Genuinely below the going 3BR rate ($1,089 vs ~$1,307 PSF), but the discount is largely size-driven (a big 1561 sqft unit) on a 19-year-old, 28-unit Geylang freehold with very thin transaction depth, so the 'value' is soft and liquidity is the binding constraint.",
+        "rating_rationale": "Asking $1,089 PSF (1561 sqft, $1.7M). Verified 3BR pricing at The Midas averages ~$1,307 PSF (listings $1,193-$1,446; a 1141 sqft 3BR recently at $1,446 PSF), so $1,089 is real-cheap on PSF — but a 1561 sqft unit is at the large end and large units structurally trade at lower PSF, so the v3.4 cohort comparison overstates the bargain. Critically, the appreciation is a regional_baseline fallback on just 6 txns and psf_cohort_txns=1, so the -34.6% age-adj and -6% cohort figures rest on near-zero comparables (data quirk territory). Built 2007 (old_property flag) and only 28 units = very thin, illiquid market with wide bid-ask. Freehold and D14 location are pluses but neither is a forward edge. A patient own-stay-style buyer could find real space value here; as a 5-7yr investment the illiquidity and absent catalyst cap it at Neutral with low confidence.",
+        "red_flags": [
+          "Cheapness partly an artifact of large 1561 sqft unit vs pooled 3BR PSF; size-adjusted discount is smaller",
+          "Appreciation is a regional_baseline fallback on only 6 txns; psf_cohort_txns=1 (single comparable)",
+          "Tiny 28-unit, 2007-built project = very low liquidity and wide spreads",
+          "Geylang sub-locale can drag financing/resale demand"
+        ],
+        "catalysts": [
+          "Freehold tenure on a large 3BR floor plate (space value for own-stay/long hold)",
+          "Walkable to Aljunied MRT in an established D14 estate"
+        ],
+        "appreciation_assessment": "3.7% is only a regional baseline (6 txns, 1 cohort comp) with no project-specific signal; treat forward appreciation as unknown rather than a strength.",
+        "rental_assessment": "Large freehold 3BR near Aljunied MRT can rent to families, but per-sqft rental efficiency is weak for a unit this size and the small project limits comparables."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-midas-500088274",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

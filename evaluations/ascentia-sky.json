@@ -1,0 +1,63 @@
+{
+  "condo": "Ascentia Sky",
+  "slug": "ascentia-sky",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1001 sqft 2BR at Ascentia Sky (D03 Redhill) for $2.28M / $2278 PSF, with a strong 5.9%/yr appreciation on a reliable 83-txn series and 310m to Redhill MRT — but the asking PSF is ~12% above the $2030 district median, which offsets much of the upside. Good location and appreciation track record, overpriced entry, nets to Neutral.",
+      "rating_rationale": "Strong fundamentals — 5.9%/yr appreciation (83 txn, reliable), 310m to EW18 Redhill MRT, RCR D03 with Greater Southern Waterfront/TEL upside, and a $2.28M price in the liquid band. But $2278 PSF is ~12% over the $2030.5 median, a meaningful overpay that erodes the appreciation advantage at entry; score_1000 of 549 is only market-typical. The location is buy-grade but the price is not.",
+      "red_flags": [
+        "Asking PSF ~12% above district median — overpriced entry",
+        "Only market-typical algo score (549)",
+        "Leasehold from 2014 — lease decay clock running against a high entry PSF"
+      ],
+      "catalysts": [
+        "310m to EW18 Redhill MRT (EWL, direct to CBD)",
+        "D03 RCR with Greater Southern Waterfront + TEL upside",
+        "5.9%/yr URA appreciation on a reliable 83-txn series"
+      ],
+      "as_of": {
+        "price": 2280000,
+        "psf": 2277.72,
+        "beds": 2,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1001 sqft 2BR at Ascentia Sky (D03 Redhill) for $2.28M / $2278 PSF, with a strong 5.9%/yr appreciation on a reliable 83-txn series and 310m to Redhill MRT — but the asking PSF is ~12% above the $2030 district median, which offsets much of the upside. Good location and appreciation track record, overpriced entry, nets to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong fundamentals — 5.9%/yr appreciation (83 txn, reliable), 310m to EW18 Redhill MRT, RCR D03 with Greater Southern Waterfront/TEL upside, and a $2.28M price in the liquid band. But $2278 PSF is ~12% over the $2030.5 median, a meaningful overpay that erodes the appreciation advantage at entry; score_1000 of 549 is only market-typical. The location is buy-grade but the price is not.",
+        "red_flags": [
+          "Asking PSF ~12% above district median — overpriced entry",
+          "Only market-typical algo score (549)",
+          "Leasehold from 2014 — lease decay clock running against a high entry PSF"
+        ],
+        "catalysts": [
+          "310m to EW18 Redhill MRT (EWL, direct to CBD)",
+          "D03 RCR with Greater Southern Waterfront + TEL upside",
+          "5.9%/yr URA appreciation on a reliable 83-txn series"
+        ],
+        "rental_assessment": "2BR steps from Redhill MRT and near the city/GSW corridor rents strongly to professionals; the 1001 sqft 2BR is well-sized and marketable. Yield is modest at the high $2278 PSF entry.",
+        "appreciation_assessment": "5.9%/yr on 83 transactions is genuinely strong and RCR-typical, but buying ~12% over median means paying forward much of that gain; net appreciation to the buyer is muted unless the GSW catalyst accelerates.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only CAGR (83 txn), slight haircut for above-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ascentia-sky-25264878",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

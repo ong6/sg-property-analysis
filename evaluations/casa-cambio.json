@@ -1,0 +1,61 @@
+{
+  "condo": "Casa Cambio",
+  "slug": "casa-cambio",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small 506 sqft freehold 1BR at Casa Cambio (D19 Serangoon) at $868K / $1715 PSF, just below the $1752 median, with a steady 3.83% CAGR over a reliable 45-txn series and 710m to Serangoon MRT (NE12). Low quantum and freehold are positives, but a 1BR is a niche, shallow-pool asset and the boutique block's weak Elo (1252) signals limited resale strength.",
+      "rating_rationale": "Sub-$900K freehold near a major interchange (NE12, NEL/CCL) is genuinely affordable and the 3.83% CAGR (45 txns) is dependable. But 1BR units have the shallowest buyer/tenant pool, the development's 1252 Elo and 162-141 record indicate it loses most head-to-head matchups, and entry is at-median (no discount). Fine as a low-ticket yield play, but the niche unit type and weak competitive profile cap it at Neutral.",
+      "red_flags": [
+        "1BR — shallowest buyer and tenant pool, niche exit",
+        "Weak Elo (1252) and near-even record — soft competitive standing",
+        "Entry at district median PSF — no value cushion"
+      ],
+      "catalysts": [
+        "Freehold sub-$900K quantum near Serangoon interchange (NE12, NEL+CCL)",
+        "3.83% reliable resale CAGR (45 txns)",
+        "PDD/CRL lifting the broader D19 over the hold"
+      ],
+      "as_of": {
+        "price": 868000,
+        "psf": 1715.42,
+        "beds": 1,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Small 506 sqft freehold 1BR at Casa Cambio (D19 Serangoon) at $868K / $1715 PSF, just below the $1752 median, with a steady 3.83% CAGR over a reliable 45-txn series and 710m to Serangoon MRT (NE12). Low quantum and freehold are positives, but a 1BR is a niche, shallow-pool asset and the boutique block's weak Elo (1252) signals limited resale strength.",
+        "rating": "Neutral",
+        "rating_rationale": "Sub-$900K freehold near a major interchange (NE12, NEL/CCL) is genuinely affordable and the 3.83% CAGR (45 txns) is dependable. But 1BR units have the shallowest buyer/tenant pool, the development's 1252 Elo and 162-141 record indicate it loses most head-to-head matchups, and entry is at-median (no discount). Fine as a low-ticket yield play, but the niche unit type and weak competitive profile cap it at Neutral.",
+        "red_flags": [
+          "1BR — shallowest buyer and tenant pool, niche exit",
+          "Weak Elo (1252) and near-even record — soft competitive standing",
+          "Entry at district median PSF — no value cushion"
+        ],
+        "catalysts": [
+          "Freehold sub-$900K quantum near Serangoon interchange (NE12, NEL+CCL)",
+          "3.83% reliable resale CAGR (45 txns)",
+          "PDD/CRL lifting the broader D19 over the hold"
+        ],
+        "rental_assessment": "Decent yield on a low quantum — compact freehold 1BR near a major interchange rents readily to singles/young professionals, though the tenant pool is shallower than 2BR.",
+        "appreciation_assessment": "3.83% resale CAGR (45 txns) is reliable and OCR-baseline-grade; expect steady, unspectacular appreciation, with NEL interchange supporting demand.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-cambio-25369050",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "D'Casita",
+  "slug": "d-casita",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 1,851 sqft freehold 3BR at D'Casita (2011) near Kembangan, asking $2.95M. Freehold and a decent location, but the $2.95M price is well above the liquid band, the unit is oversized for a 3BR, and there is no URA price signal — a niche, expensive investment proposition.",
+      "rating_rationale": "$1,594 psf is moderate for FH D14, but 1,851 sqft drives the price to $2.95M — squarely above the band where the buyer pool thins. An 1,851 sqft 3BR is oversized (own-stay-oriented), and there is no URA series to confirm appreciation. Freehold + Kembangan MRT (650m) provide a floor, but at $2.95M this is a slow, buyer-specific exit rather than a liquid investment.",
+      "red_flags": [
+        "$2.95M is above the liquid band — shallow buyer pool",
+        "Oversized 1,851 sqft 3BR skews own-stay; niche resale",
+        "No URA transaction data — no appreciation/liquidity read",
+        "Boutique-scale development typical of the Kembangan FH belt — limited liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D14",
+        "650m to Kembangan MRT (EWL)",
+        "Spacious layout appeals to upgrader families if priced right"
+      ],
+      "as_of": {
+        "price": 2950000,
+        "psf": 1593.73,
+        "beds": 3,
+        "sqft": 1851.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,851 sqft freehold 3BR at D'Casita (2011) near Kembangan, asking $2.95M. Freehold and a decent location, but the $2.95M price is well above the liquid band, the unit is oversized for a 3BR, and there is no URA price signal — a niche, expensive investment proposition.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,594 psf is moderate for FH D14, but 1,851 sqft drives the price to $2.95M — squarely above the band where the buyer pool thins. An 1,851 sqft 3BR is oversized (own-stay-oriented), and there is no URA series to confirm appreciation. Freehold + Kembangan MRT (650m) provide a floor, but at $2.95M this is a slow, buyer-specific exit rather than a liquid investment.",
+        "red_flags": [
+          "$2.95M is above the liquid band — shallow buyer pool",
+          "Oversized 1,851 sqft 3BR skews own-stay; niche resale",
+          "No URA transaction data — no appreciation/liquidity read",
+          "Boutique-scale development typical of the Kembangan FH belt — limited liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D14",
+          "650m to Kembangan MRT (EWL)",
+          "Spacious layout appeals to upgrader families if priced right"
+        ],
+        "rental_assessment": "Large FH 3BR near Kembangan rents to families; per-sqft rent on 1,851 sqft is inefficient and yield on $2.95M is thin.",
+        "appreciation_assessment": "No data; FH D14 baseline is decent but the oversized/high-price profile caps liquidity-driven upside. Flat-to-modest base case.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "FH D14 baseline discounted for oversized/high-price illiquidity; no project URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-casita-500094651",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

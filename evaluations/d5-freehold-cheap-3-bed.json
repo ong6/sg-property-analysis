@@ -1,0 +1,63 @@
+{
+  "condo": "D5 freehold cheap 3 bed",
+  "slug": "d5-freehold-cheap-3-bed",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A keyword-titled 'D5 freehold cheap 3 bed' — a 2027-TOP freehold 3BR essentially at Haw Par Villa MRT (the '1m' is a data artefact, but the project is clearly MRT-adjacent) at $2.48M / $2259 PSF. Freehold + doorstep MRT in D05 is a genuinely strong location pairing, but $2259 PSF is full new-launch pricing and the project identity is masked, so there is no value cushion or URA data to confirm the rate.",
+      "rating_rationale": "Genuine strengths: freehold tenure, doorstep Haw Par Villa MRT (CC line), D05/West Coast in the One-North/GSW corridor. But $2259 PSF is full launch price with no margin, the project name is hidden behind a 'cheap' marketing hook (and $2259 PSF is not actually cheap for the unit), built 2027 means TOP/market risk before exit, and there is no URA appreciation/txn data. Score 572 is moderately above market. A fair-priced freehold near MRT, not a discounted buy.",
+      "red_flags": [
+        "Project identity masked behind 'cheap' marketing title; '1m to MRT' is a data artefact",
+        "$2259 PSF is full launch pricing — 'cheap' claim unsupported",
+        "2027 TOP — construction/market risk before any exit",
+        "No URA appreciation/txn/median data"
+      ],
+      "catalysts": [
+        "Freehold + doorstep Haw Par Villa MRT (CC line) — strong location pairing",
+        "D05 One-North employment / West Coast & Greater Southern Waterfront corridor",
+        "Brand-new build (2027)"
+      ],
+      "as_of": {
+        "price": 2480000,
+        "psf": 2258.65,
+        "beds": 3,
+        "sqft": 1098.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A keyword-titled 'D5 freehold cheap 3 bed' — a 2027-TOP freehold 3BR essentially at Haw Par Villa MRT (the '1m' is a data artefact, but the project is clearly MRT-adjacent) at $2.48M / $2259 PSF. Freehold + doorstep MRT in D05 is a genuinely strong location pairing, but $2259 PSF is full new-launch pricing and the project identity is masked, so there is no value cushion or URA data to confirm the rate.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine strengths: freehold tenure, doorstep Haw Par Villa MRT (CC line), D05/West Coast in the One-North/GSW corridor. But $2259 PSF is full launch price with no margin, the project name is hidden behind a 'cheap' marketing hook (and $2259 PSF is not actually cheap for the unit), built 2027 means TOP/market risk before exit, and there is no URA appreciation/txn data. Score 572 is moderately above market. A fair-priced freehold near MRT, not a discounted buy.",
+        "red_flags": [
+          "Project identity masked behind 'cheap' marketing title; '1m to MRT' is a data artefact",
+          "$2259 PSF is full launch pricing — 'cheap' claim unsupported",
+          "2027 TOP — construction/market risk before any exit",
+          "No URA appreciation/txn/median data"
+        ],
+        "catalysts": [
+          "Freehold + doorstep Haw Par Villa MRT (CC line) — strong location pairing",
+          "D05 One-North employment / West Coast & Greater Southern Waterfront corridor",
+          "Brand-new build (2027)"
+        ],
+        "rental_assessment": "Strong location for letting — doorstep MRT in the One-North-adjacent corridor draws tenants; a 3BR freehold near MRT lets reliably, though yield at $2259 PSF is modest.",
+        "appreciation_assessment": "Freehold + MRT-doorstep supports value retention, but full launch PSF pre-pays much of the upside and there is no URA data to confirm a rate. Treat as district-average freehold appreciation.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d5-freehold-cheap-3-bed-500141111",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

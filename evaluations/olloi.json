@@ -1,0 +1,61 @@
+{
+  "condo": "Olloi",
+  "slug": "olloi",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,625 sqft 4BR at Olloi, a tiny 34-unit D15 (Joo Chiat/Eunos) boutique completed 2022, at $3.18M / $1,957 psf. Freehold East Coast location is the appeal, but a 34-unit block, a $3.18M quantum, and an unreliable 5-txn rate make exit risk high.",
+      "rating_rationale": "Web research confirms Olloi is only 34 units, freehold, TOP 2022, with recent resale ~$2,227 psf. The listing's $1,957 psf looks ~12% below that average, but that's because this is one of the larger 1,625 sqft 4BR units — large-unit PSF is naturally lower, so it isn't the bargain it appears. The 34-unit scale means very thin liquidity and no facilities of scale; new_launch_bias is flagged and the rate rests on just 5 txns (unreliable). At $3.18M the quantum is well above the deep buyer band. Freehold + prime D15/Joo Chiat is a genuine long-term land-value positive, which keeps this at Neutral rather than Avoid.",
+      "red_flags": [
+        "34-unit boutique — very thin liquidity, no facilities of scale",
+        "$3.18M quantum well above the deep buyer band",
+        "Rate from only 5 txns + new_launch_bias flag — unreliable; low PSF is a large-unit artefact"
+      ],
+      "catalysts": [
+        "Freehold in prime D15 Joo Chiat/East Coast (durable land value)",
+        "Recent 2022 build, modern spec",
+        "Walkable to Eunos MRT / Joo Chiat lifestyle belt"
+      ],
+      "as_of": {
+        "price": 3180000,
+        "psf": 1956.92,
+        "beds": 4,
+        "sqft": 1625.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,625 sqft 4BR at Olloi, a tiny 34-unit D15 (Joo Chiat/Eunos) boutique completed 2022, at $3.18M / $1,957 psf. Freehold East Coast location is the appeal, but a 34-unit block, a $3.18M quantum, and an unreliable 5-txn rate make exit risk high.",
+        "rating": "Neutral",
+        "rating_rationale": "Web research confirms Olloi is only 34 units, freehold, TOP 2022, with recent resale ~$2,227 psf. The listing's $1,957 psf looks ~12% below that average, but that's because this is one of the larger 1,625 sqft 4BR units — large-unit PSF is naturally lower, so it isn't the bargain it appears. The 34-unit scale means very thin liquidity and no facilities of scale; new_launch_bias is flagged and the rate rests on just 5 txns (unreliable). At $3.18M the quantum is well above the deep buyer band. Freehold + prime D15/Joo Chiat is a genuine long-term land-value positive, which keeps this at Neutral rather than Avoid.",
+        "red_flags": [
+          "34-unit boutique — very thin liquidity, no facilities of scale",
+          "$3.18M quantum well above the deep buyer band",
+          "Rate from only 5 txns + new_launch_bias flag — unreliable; low PSF is a large-unit artefact"
+        ],
+        "catalysts": [
+          "Freehold in prime D15 Joo Chiat/East Coast (durable land value)",
+          "Recent 2022 build, modern spec",
+          "Walkable to Eunos MRT / Joo Chiat lifestyle belt"
+        ],
+        "rental_assessment": "Large freehold 4BR in Joo Chiat draws affluent family/expat tenants, but the pool for a $3.18M 4BR is shallow; yield will be sub-3%.",
+        "appreciation_assessment": "Freehold D15 land supports long-term value, but the 5-txn rate is unreliable and the boutique scale dampens liquidity-driven re-rating. Expect freehold-typical, modest appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-olloi-500099373",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "condo": "Alexis",
+  "slug": "alexis",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Freehold 'large 1BR' (764sqft) at Alexis in D03 Queenstown for $1.1M / $1,440 PSF, a big discount to the $1,870 development median, with a reliable 4.80%/yr resale CAGR over 67 transactions and 540m to Queenstown MRT. Freehold, RCR, MRT-adjacent — a strong city-fringe value entry.",
+      "rating_rationale": "Alexis is freehold in a prime-fringe RCR district (D03 Queenstown), 540m from Queenstown MRT (EWL), with a well-supported 4.80%/yr over 67 resale txns. The $1,440 PSF is ~23% under the $1,870 development median — even allowing that the generous 764sqft inflates the discount slightly, that gap is meaningful and suggests upside on convergence. $1.1M quantum is liquid, the unit is flexible (large 1BR / 1+study), and freehold protects the long hold. GSW/TEL momentum in the Queenstown corridor adds a catalyst. High technical score (915) corroborates.",
+      "red_flags": [
+        "764sqft '1BR' — verify layout; cheap PSF is partly a size effect",
+        "Alexis sits above the AYE — check unit facing for road noise",
+        "1BR-class label narrows the resale buyer pool somewhat despite the size"
+      ],
+      "catalysts": [
+        "Freehold in D03 Queenstown — Greater Southern Waterfront corridor",
+        "540m to Queenstown MRT (EWL)",
+        "~23% discount to the $1,870 development median PSF",
+        "Reliable 4.80%/yr resale appreciation (67 txns)"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1439.79,
+        "beds": 1,
+        "sqft": 764.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 'large 1BR' (764sqft) at Alexis in D03 Queenstown for $1.1M / $1,440 PSF, a big discount to the $1,870 development median, with a reliable 4.80%/yr resale CAGR over 67 transactions and 540m to Queenstown MRT. Freehold, RCR, MRT-adjacent — a strong city-fringe value entry.",
+        "rating": "Buy",
+        "rating_rationale": "Alexis is freehold in a prime-fringe RCR district (D03 Queenstown), 540m from Queenstown MRT (EWL), with a well-supported 4.80%/yr over 67 resale txns. The $1,440 PSF is ~23% under the $1,870 development median — even allowing that the generous 764sqft inflates the discount slightly, that gap is meaningful and suggests upside on convergence. $1.1M quantum is liquid, the unit is flexible (large 1BR / 1+study), and freehold protects the long hold. GSW/TEL momentum in the Queenstown corridor adds a catalyst. High technical score (915) corroborates.",
+        "red_flags": [
+          "764sqft '1BR' — verify layout; cheap PSF is partly a size effect",
+          "Alexis sits above the AYE — check unit facing for road noise",
+          "1BR-class label narrows the resale buyer pool somewhat despite the size"
+        ],
+        "catalysts": [
+          "Freehold in D03 Queenstown — Greater Southern Waterfront corridor",
+          "540m to Queenstown MRT (EWL)",
+          "~23% discount to the $1,870 development median PSF",
+          "Reliable 4.80%/yr resale appreciation (67 txns)"
+        ],
+        "rental_assessment": "Queenstown/Redhill is a strong rental belt (city access, mature estate); a large 1BR rents well to couples/professionals — good gross yield at a $1.1M freehold basis.",
+        "appreciation_assessment": "4.80%/yr over 67 transactions is reliable and near the RCR baseline; freehold plus a deep discount to development median gives genuine convergence upside.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alexis-60212443",
+        "review_file": "cov_batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A real, deep-data project (67 appreciation txns) in a good forward region (D03/Queenstown, RCR ~+3.5%), and the $1,433 psf asking sits at the very bottom of the verified $1,571-$2,131 recent range - so the cheapness is plausibly real, not a quirk. But the 872 sqft 'beds:1' mismatch, thin same-size cohort (3), and documented build/quality cons (noise, mould, poor maintenance) hold this to Neutral.",
+      "rating_rationale": "Listing $1,250,000 / 872 sqft = $1,433 psf. Web confirms Alexis (FH, 2012, 293 units, 356 Alexandra Rd, D03) recent-12mo transactions $1,571-$2,131 psf (avg ~$1,859), with current PSF range $1,433-$2,180 - so $1,433 is the floor of the live range and a genuine discount to the average, supporting the -35.8% age-adj signal at the project level. D03 is a desirable RCR location atop Redhill/Tiong Bahru with ~+3.5% realized forward. Caveats: 872 sqft is large for a '1-bed' (bedroom_sqft_mismatch) suggesting a 1+study/dual-key or mis-tag; psf_cohort_txns=3 is thin so the same-size comp is weak; and reviews repeatedly cite road noise, humidity/mould and poor maintenance, plus the well-connected-but-stigma-free location is offset by an aging 2012 development.",
+      "red_flags": [
+        "872 sqft 'beds:1' mismatch - likely a 1+study/dual-key or mis-tag; verify actual layout",
+        "psf_cohort_txns=3: same-size discount rests on only 3 comparables - thin",
+        "Documented quality cons: road noise, humidity/mould, poor maintenance per resident reviews",
+        "Aging 2012 development; MCST/maintenance condition needs on-site verification"
+      ],
+      "catalysts": [
+        "D03 Queenstown/Alexandra: strong RCR location, good forward region (~+3.5%)",
+        "$1,433 psf is the bottom of the live $1,433-$2,180 range - real entry value if condition holds",
+        "Well-connected to the city; large 293-unit project gives deeper resale liquidity than small Geylang peers",
+        "Freehold tenure preserves long-hold optionality"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1433.49,
+        "beds": 1,
+        "sqft": 872
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A real, deep-data project (67 appreciation txns) in a good forward region (D03/Queenstown, RCR ~+3.5%), and the $1,433 psf asking sits at the very bottom of the verified $1,571-$2,131 recent range - so the cheapness is plausibly real, not a quirk. But the 872 sqft 'beds:1' mismatch, thin same-size cohort (3), and documented build/quality cons (noise, mould, poor maintenance) hold this to Neutral.",
+        "rating_rationale": "Listing $1,250,000 / 872 sqft = $1,433 psf. Web confirms Alexis (FH, 2012, 293 units, 356 Alexandra Rd, D03) recent-12mo transactions $1,571-$2,131 psf (avg ~$1,859), with current PSF range $1,433-$2,180 - so $1,433 is the floor of the live range and a genuine discount to the average, supporting the -35.8% age-adj signal at the project level. D03 is a desirable RCR location atop Redhill/Tiong Bahru with ~+3.5% realized forward. Caveats: 872 sqft is large for a '1-bed' (bedroom_sqft_mismatch) suggesting a 1+study/dual-key or mis-tag; psf_cohort_txns=3 is thin so the same-size comp is weak; and reviews repeatedly cite road noise, humidity/mould and poor maintenance, plus the well-connected-but-stigma-free location is offset by an aging 2012 development.",
+        "red_flags": [
+          "872 sqft 'beds:1' mismatch - likely a 1+study/dual-key or mis-tag; verify actual layout",
+          "psf_cohort_txns=3: same-size discount rests on only 3 comparables - thin",
+          "Documented quality cons: road noise, humidity/mould, poor maintenance per resident reviews",
+          "Aging 2012 development; MCST/maintenance condition needs on-site verification"
+        ],
+        "catalysts": [
+          "D03 Queenstown/Alexandra: strong RCR location, good forward region (~+3.5%)",
+          "$1,433 psf is the bottom of the live $1,433-$2,180 range - real entry value if condition holds",
+          "Well-connected to the city; large 293-unit project gives deeper resale liquidity than small Geylang peers",
+          "Freehold tenure preserves long-hold optionality"
+        ],
+        "appreciation_assessment": "appreciation_pct 4.8% (URA 5yr CAGR over a solid 67 txns) is the most data-rich of this batch, but per v3.4 trailing CAGR is not forward-predictive; the durable positives are region (D03 RCR) and verified bottom-of-range pricing, not the past CAGR.",
+        "rental_assessment": "Avg rent ~$3.59k over past 6 months; on $1.25M that is a thin ~3.4% gross yield. Central location supports steady tenancy, but income is unexceptional - the case rests on value/region, not yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alexis-23468296",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Costa Del Sol",
+  "slug": "costa-del-sol",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large 1475 sqft 99yr 4BR at Costa Del Sol (D16) at $3.0M / $2034 PSF, 240m from the new Bayshore MRT (TE29). Standout 6.68% URA resale CAGR over a deep 168-txn series, with the just-opened Bayshore station finally fixing this seafront estate's long-standing accessibility gap.",
+      "rating_rationale": "The low 415 score_1000 is misleading — it penalizes the $3M quantum and 99yr lease, but the fundamentals are strong: 6.68% resale CAGR backed by 168 transactions (very high confidence), 240m to the new Bayshore MRT (a genuine re-rating catalyst), seafront living, and entry only ~2% above the $1999 median. The real risk is supply — two adjacent 1,000+ unit estates (Bayshore Park, The Bayshore) compete for tenants/buyers — and $3M thins the pool. On balance the transit catalyst plus proven appreciation outweigh these.",
+      "red_flags": [
+        "$3.0M quantum sits above the deepest buyer band — slower exit",
+        "Heavy nearby supply (Bayshore Park, The Bayshore, new Bayshore precinct launches) competes for tenants/buyers",
+        "2004 99yr lease (~78yr left) — lease decay on the back end"
+      ],
+      "catalysts": [
+        "Bayshore MRT (TE29) 240m away — direct TEL access, resolves the estate's accessibility weakness",
+        "6.68% URA resale CAGR over 168 txns — among the strongest, best-evidenced in the batch",
+        "Seafront/East Coast lifestyle premium and Bayshore precinct rejuvenation"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 2033.9,
+        "beds": 4,
+        "sqft": 1475.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1475 sqft 99yr 4BR at Costa Del Sol (D16) at $3.0M / $2034 PSF, 240m from the new Bayshore MRT (TE29). Standout 6.68% URA resale CAGR over a deep 168-txn series, with the just-opened Bayshore station finally fixing this seafront estate's long-standing accessibility gap.",
+        "rating": "Buy",
+        "rating_rationale": "The low 415 score_1000 is misleading — it penalizes the $3M quantum and 99yr lease, but the fundamentals are strong: 6.68% resale CAGR backed by 168 transactions (very high confidence), 240m to the new Bayshore MRT (a genuine re-rating catalyst), seafront living, and entry only ~2% above the $1999 median. The real risk is supply — two adjacent 1,000+ unit estates (Bayshore Park, The Bayshore) compete for tenants/buyers — and $3M thins the pool. On balance the transit catalyst plus proven appreciation outweigh these.",
+        "red_flags": [
+          "$3.0M quantum sits above the deepest buyer band — slower exit",
+          "Heavy nearby supply (Bayshore Park, The Bayshore, new Bayshore precinct launches) competes for tenants/buyers",
+          "2004 99yr lease (~78yr left) — lease decay on the back end"
+        ],
+        "catalysts": [
+          "Bayshore MRT (TE29) 240m away — direct TEL access, resolves the estate's accessibility weakness",
+          "6.68% URA resale CAGR over 168 txns — among the strongest, best-evidenced in the batch",
+          "Seafront/East Coast lifestyle premium and Bayshore precinct rejuvenation"
+        ],
+        "rental_assessment": "Improving sharply with Bayshore MRT now open; large seafront 4BR appeals to expat families, though incoming Bayshore supply will pressure rents.",
+        "appreciation_assessment": "6.68% resale CAGR (168 txns) is highly reliable and the MRT opening is a real near-term catalyst; supply overhang is the main brake on continuing that pace.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-costa-del-sol-500075840",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Livia",
+  "slug": "livia",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Right-sized 1,346sqft 4BR in Pasir Ris at $1.798M, sitting just inside the liquid band, with a strong, reliable 6.32%/yr resale CAGR over 163 transactions. PSF 1336 is slightly above the 1299 median but justified by a properly sized family unit with deep demonstrated demand.",
+      "rating_rationale": "Unlike the oversized D18 4BRs in this batch, Livia is sensibly sized (1,346sqft) and priced at $1.798M — the upper edge of the deep $1.8-2.5M buyer band, broadly appealing to upgrading families. 6.32%/yr over a robust 163-txn series is reliable and well above the OCR baseline. PSF 1336 vs 1299 median is a modest ~3% premium, reasonable for the size efficiency. 720m to Pasir Ris MRT (CRL interchange by ~2030) is a real future catalyst. The best-balanced 4BR investment case in the batch.",
+      "red_flags": [
+        "720m / 9-min walk to MRT",
+        "99LH from 2011 — lease decay over a long hold",
+        "Slight PSF premium to median (1336 vs 1299)"
+      ],
+      "catalysts": [
+        "Pasir Ris becomes a CRL interchange (~2030) — connectivity uplift within 720m",
+        "Strong, reliable 6.32%/yr resale appreciation (163 txns)",
+        "$1.798M quantum and efficient 4BR size = broad upgrader demand"
+      ],
+      "as_of": {
+        "price": 1798000,
+        "psf": 1335.81,
+        "beds": 4,
+        "sqft": 1346.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Right-sized 1,346sqft 4BR in Pasir Ris at $1.798M, sitting just inside the liquid band, with a strong, reliable 6.32%/yr resale CAGR over 163 transactions. PSF 1336 is slightly above the 1299 median but justified by a properly sized family unit with deep demonstrated demand.",
+        "rating": "Buy",
+        "rating_rationale": "Unlike the oversized D18 4BRs in this batch, Livia is sensibly sized (1,346sqft) and priced at $1.798M — the upper edge of the deep $1.8-2.5M buyer band, broadly appealing to upgrading families. 6.32%/yr over a robust 163-txn series is reliable and well above the OCR baseline. PSF 1336 vs 1299 median is a modest ~3% premium, reasonable for the size efficiency. 720m to Pasir Ris MRT (CRL interchange by ~2030) is a real future catalyst. The best-balanced 4BR investment case in the batch.",
+        "red_flags": [
+          "720m / 9-min walk to MRT",
+          "99LH from 2011 — lease decay over a long hold",
+          "Slight PSF premium to median (1336 vs 1299)"
+        ],
+        "catalysts": [
+          "Pasir Ris becomes a CRL interchange (~2030) — connectivity uplift within 720m",
+          "Strong, reliable 6.32%/yr resale appreciation (163 txns)",
+          "$1.798M quantum and efficient 4BR size = broad upgrader demand"
+        ],
+        "rental_assessment": "Family-sized 4BR in Pasir Ris rents to families relocating east; tenant pool is moderate and yield modest, but this is primarily an appreciation/upgrader-exit play.",
+        "appreciation_assessment": "6.32%/yr over 163 resale transactions is one of the strongest reliable rates in the batch; CRL catalyst plus efficient sizing supports continued outperformance.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-livia-500031669",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

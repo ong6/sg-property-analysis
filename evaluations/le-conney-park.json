@@ -1,0 +1,61 @@
+{
+  "condo": "Le Conney Park",
+  "slug": "le-conney-park",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 1,227 sqft 3BR in East Coast (D15) at $1,548 PSF — ~6% below the $1,642 URA median — with TEL access at Marine Terrace. Freehold tenure, sub-median entry and a deep D15 buyer pool are genuine positives, but the eye-catching 9.17% appreciation rests on just 17 txns and the development is a small 1992-vintage block.",
+      "rating_rationale": "Freehold, $1,548 PSF below the $1,642 median, in deep-pool East Coast with TE27 Marine Terrace (~950m) — a solid value-and-location combination. The 9.17% headline CAGR is over only 17 txns so I discount it heavily, but even at a conservative D15 freehold growth rate the entry value and TEL catalyst justify a Buy. Small/older development is the main caveat.",
+      "red_flags": [
+        "9.17% rate from only 17 txns — treat as indicative, not reliable",
+        "1992 small development, dated fittings/limited facilities",
+        "Marine Terrace MRT ~950m, not immediate"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "TE27 Marine Terrace MRT (TEL) ~950m",
+        "Sub-median PSF entry in deep-pool D15"
+      ],
+      "as_of": {
+        "price": 1900000,
+        "psf": 1548.49,
+        "beds": 3,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1,227 sqft 3BR in East Coast (D15) at $1,548 PSF — ~6% below the $1,642 URA median — with TEL access at Marine Terrace. Freehold tenure, sub-median entry and a deep D15 buyer pool are genuine positives, but the eye-catching 9.17% appreciation rests on just 17 txns and the development is a small 1992-vintage block.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold, $1,548 PSF below the $1,642 median, in deep-pool East Coast with TE27 Marine Terrace (~950m) — a solid value-and-location combination. The 9.17% headline CAGR is over only 17 txns so I discount it heavily, but even at a conservative D15 freehold growth rate the entry value and TEL catalyst justify a Buy. Small/older development is the main caveat.",
+        "red_flags": [
+          "9.17% rate from only 17 txns — treat as indicative, not reliable",
+          "1992 small development, dated fittings/limited facilities",
+          "Marine Terrace MRT ~950m, not immediate"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "TE27 Marine Terrace MRT (TEL) ~950m",
+          "Sub-median PSF entry in deep-pool D15"
+        ],
+        "rental_assessment": "Freehold East Coast 3BR with TEL access rents steadily to families; D15 tenant demand is reliable.",
+        "appreciation_assessment": "Discounting the 17-txn 9.17% headline, freehold D15 with TEL still supports above-baseline growth; the value entry provides downside protection.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-conney-park-500088688",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "Jansen House",
+  "slug": "jansen-house",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,012 sqft 999-year 3BR at Jansen House, a 21-unit boutique new launch (TOP ~2027) in D19 Serangoon/Kovan at $2.038M ($2,014 PSF). Near-freehold tenure in a landed enclave is the pitch, but it's a tiny single-block development 1.35km from MRT at full new-launch PSF.",
+      "rating_rationale": "Jansen House is a single 5-storey, 21-unit boutique block — inherently illiquid on exit — at $2,014 PSF (the URA 'median' of $2,050 is essentially this project's own new-launch transactions, 19 txns, bias flagged, so no independent price anchor). It is 1.35km (16-min walk) from Kovan MRT, i.e. effectively car-dependent, and minimal facilities. 999-yr tenure is nice but doesn't offset a thin-data micro-development bought at peak PSF with a shallow resale pool. score_1000 just 460. This is the boutique-illiquidity profile to avoid for investment.",
+      "red_flags": [
+        "21-unit single-block boutique — very shallow resale liquidity",
+        "1.35km (16-min) from MRT — car-dependent",
+        "$2,014 PSF is full new-launch pricing; URA median is the project itself (bias flagged)",
+        "Minimal facilities; investor-rental-focused unit mix dilutes scarcity",
+        "TOP ~2027 — capital locked with developer/progress risk"
+      ],
+      "catalysts": [
+        "999-year leasehold in a freehold landed enclave",
+        "NEX mall and Serangoon/Kovan amenities nearby",
+        "Macly boutique product appeals to landed right-sizers"
+      ],
+      "as_of": {
+        "price": 2038000,
+        "psf": 2013.83,
+        "beds": 3,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,012 sqft 999-year 3BR at Jansen House, a 21-unit boutique new launch (TOP ~2027) in D19 Serangoon/Kovan at $2.038M ($2,014 PSF). Near-freehold tenure in a landed enclave is the pitch, but it's a tiny single-block development 1.35km from MRT at full new-launch PSF.",
+        "rating": "Avoid",
+        "rating_rationale": "Jansen House is a single 5-storey, 21-unit boutique block — inherently illiquid on exit — at $2,014 PSF (the URA 'median' of $2,050 is essentially this project's own new-launch transactions, 19 txns, bias flagged, so no independent price anchor). It is 1.35km (16-min walk) from Kovan MRT, i.e. effectively car-dependent, and minimal facilities. 999-yr tenure is nice but doesn't offset a thin-data micro-development bought at peak PSF with a shallow resale pool. score_1000 just 460. This is the boutique-illiquidity profile to avoid for investment.",
+        "red_flags": [
+          "21-unit single-block boutique — very shallow resale liquidity",
+          "1.35km (16-min) from MRT — car-dependent",
+          "$2,014 PSF is full new-launch pricing; URA median is the project itself (bias flagged)",
+          "Minimal facilities; investor-rental-focused unit mix dilutes scarcity",
+          "TOP ~2027 — capital locked with developer/progress risk"
+        ],
+        "catalysts": [
+          "999-year leasehold in a freehold landed enclave",
+          "NEX mall and Serangoon/Kovan amenities nearby",
+          "Macly boutique product appeals to landed right-sizers"
+        ],
+        "rental_assessment": "Designed as a rental play, but a 3BR 1.35km from MRT in a 21-unit block competes weakly for tenants against transit-adjacent stock; yield ~2.5-3% on a $2.04M base.",
+        "appreciation_assessment": "Entering at peak new-launch PSF in a micro-development with no resale track record and poor connectivity leaves little appreciation headroom once the launch premium normalizes.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jansen-house-25208944",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

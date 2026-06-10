@@ -1,0 +1,63 @@
+{
+  "condo": "Urban Treasures",
+  "slug": "urban-treasures",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A tiny 452 sqft freehold 1BR (shoebox) in D14 at $1,903 psf, 870m from Kaki Bukit MRT. The bias-adjusted appreciation is weak (1.33%) and the project carries new-launch bias (TOP 2023), with a long 870m MRT walk — a fairly priced shoebox with no growth thesis.",
+      "rating_rationale": "has_new_launch_bias=true means the headline rate was discounted to a thin 1.33%/yr (resale-only 2.30%) — both below baseline, so this recently-completed (2023) project has not demonstrated real appreciation yet. The 452 sqft shoebox is the smallest unit in the batch (narrow resale appeal, weak per-sqft livability), and Kaki Bukit MRT at 870m is a 10-min walk, not true MRT-doorstep. Asking $1,903 psf is below the $2,061 median, and freehold D14 tenure gives downside support — enough to avoid Avoid, but with no appreciation evidence and a shoebox format, there is no buy case.",
+      "red_flags": [
+        "new_launch_bias true + bias-adjusted 1.33%/yr — no proven appreciation, recent 2023 TOP",
+        "452 sqft shoebox — smallest, most niche unit, weakest livability and resale breadth",
+        "Kaki Bukit MRT 870m / 10-min walk — not genuine MRT proximity",
+        "$1,903 psf is high in absolute PSF for a fringe-D14 shoebox"
+      ],
+      "catalysts": [
+        "Freehold tenure in D14",
+        "Below project median PSF ($1,903 vs $2,061)",
+        "New (2023) unit — minimal near-term maintenance"
+      ],
+      "as_of": {
+        "price": 860000,
+        "psf": 1902.65,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A tiny 452 sqft freehold 1BR (shoebox) in D14 at $1,903 psf, 870m from Kaki Bukit MRT. The bias-adjusted appreciation is weak (1.33%) and the project carries new-launch bias (TOP 2023), with a long 870m MRT walk — a fairly priced shoebox with no growth thesis.",
+        "rating": "Neutral",
+        "rating_rationale": "has_new_launch_bias=true means the headline rate was discounted to a thin 1.33%/yr (resale-only 2.30%) — both below baseline, so this recently-completed (2023) project has not demonstrated real appreciation yet. The 452 sqft shoebox is the smallest unit in the batch (narrow resale appeal, weak per-sqft livability), and Kaki Bukit MRT at 870m is a 10-min walk, not true MRT-doorstep. Asking $1,903 psf is below the $2,061 median, and freehold D14 tenure gives downside support — enough to avoid Avoid, but with no appreciation evidence and a shoebox format, there is no buy case.",
+        "red_flags": [
+          "new_launch_bias true + bias-adjusted 1.33%/yr — no proven appreciation, recent 2023 TOP",
+          "452 sqft shoebox — smallest, most niche unit, weakest livability and resale breadth",
+          "Kaki Bukit MRT 870m / 10-min walk — not genuine MRT proximity",
+          "$1,903 psf is high in absolute PSF for a fringe-D14 shoebox"
+        ],
+        "catalysts": [
+          "Freehold tenure in D14",
+          "Below project median PSF ($1,903 vs $2,061)",
+          "New (2023) unit — minimal near-term maintenance"
+        ],
+        "rental_assessment": "Shoebox freehold rents to a single tenant; D14 demand is decent but the 870m walk and tiny size cap rent. Yield ordinary.",
+        "appreciation_assessment": "Bias-adjusted 1.33% and resale-only 2.30% both below baseline; a 2023 project with no track record. No appreciation thesis — fairly priced at best.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-treasures-25076809",
+        "review_file": "cov_batch_02.json"
+      }
+    }
+  ]
+}

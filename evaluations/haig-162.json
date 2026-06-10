@@ -1,0 +1,57 @@
+{
+  "condo": "Haig 162",
+  "slug": "haig-162",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D15 1BR at $1,090,000 ($1,985 psf), a touch above the $1,940 median, in the East Coast lifestyle belt. 4.9%/yr URA rate on a healthy 35-txn sample is credible, but a 549 sqft 1BR is the narrowest tenant/buyer pool and over $1M quantum for a shoebox is rich.",
+      "rating_rationale": "Solid freehold East Coast location with a reliable ~4.9% appreciation rate (35 txns) supports the case, and 1BR rental demand in Katong/Tanjong Katong is real. But $1,985 psf is above median, the 1BR is niche on exit, and at 1.06 km the TEL station is a long walk. Strengths and concerns balance.",
+      "red_flags": [
+        "1BR at $1.09M — premium PSF for a shoebox, narrow resale pool",
+        "Asking PSF above district median",
+        "TEL station >1km — weak walkability"
+      ],
+      "catalysts": [
+        "Freehold D15 East Coast with deep lifestyle/rental demand",
+        "TEL fully operational improves area connectivity"
+      ],
+      "as_of": {
+        "price": 1090000,
+        "psf": 1985.43,
+        "beds": 1,
+        "sqft": 549.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D15 1BR at $1,090,000 ($1,985 psf), a touch above the $1,940 median, in the East Coast lifestyle belt. 4.9%/yr URA rate on a healthy 35-txn sample is credible, but a 549 sqft 1BR is the narrowest tenant/buyer pool and over $1M quantum for a shoebox is rich.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid freehold East Coast location with a reliable ~4.9% appreciation rate (35 txns) supports the case, and 1BR rental demand in Katong/Tanjong Katong is real. But $1,985 psf is above median, the 1BR is niche on exit, and at 1.06 km the TEL station is a long walk. Strengths and concerns balance.",
+        "red_flags": [
+          "1BR at $1.09M — premium PSF for a shoebox, narrow resale pool",
+          "Asking PSF above district median",
+          "TEL station >1km — weak walkability"
+        ],
+        "catalysts": [
+          "Freehold D15 East Coast with deep lifestyle/rental demand",
+          "TEL fully operational improves area connectivity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-haig-162-60021925",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

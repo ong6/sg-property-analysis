@@ -190,10 +190,6 @@ class DistrictScorer:
 
         return result
 
-    def _score_historical(self, profile: dict) -> float:
-        """Score historical appreciation from a profile dict (0-100)."""
-        return self._score_historical_rate(profile.get("historical_appreciation", 0.02))
-
     @staticmethod
     def _score_historical_rate(rate: float) -> float:
         """Score an appreciation rate (decimal) on the 0-100 axis.
@@ -332,13 +328,21 @@ class DistrictScorer:
         line_info = mrt_lines.get(code, {})
         return line_info.get("name", code)
 
+    # v3.4: mirror future_scorer.RECENT_OPERATIONAL_YEARS — a just-opened line is
+    # still a connectivity catalyst. Kept in sync with scoring/future_scorer.py.
+    RECENT_OPERATIONAL_YEARS = 2
+
     def _filter_future_mrt_lines(self, lines: list[str]) -> list[str]:
-        """Filter MRT lines to only those not yet operational and not past completion."""
+        """Filter MRT lines to those completing soon or opened within the last ~2yr.
+
+        v3.4: matches future_scorer — a recently-operational line (e.g. TEL 2025)
+        still counts as a connectivity catalyst rather than being dropped, so district
+        discovery doesn't undercount areas that just got a new line.
+        """
         current_year = datetime.now().year
         filtered = []
         for code in lines:
             line_info = self.infra_data.get("mrt_lines", {}).get(code, {})
-            status = (line_info.get("status") or "").lower()
             completion = line_info.get("completion", "")
             completion_year = None
             try:
@@ -346,9 +350,8 @@ class DistrictScorer:
             except (ValueError, TypeError):
                 completion_year = None
 
-            if status == "operational":
-                continue
-            if completion_year is not None and completion_year < current_year:
+            # recently-operational lines still count (no status auto-exclude)
+            if completion_year is not None and completion_year < current_year - self.RECENT_OPERATIONAL_YEARS:
                 continue
             filtered.append(code)
         return filtered
@@ -375,19 +378,3 @@ class DistrictScorer:
             all_scores = [s for s in all_scores if s.region != "CCR"]
 
         return [s.district for s in all_scores[:top_n]]
-
-    def print_ranking(self, top_n: int = 10, region_filter: Optional[str] = None):
-        """Print district ranking table."""
-        scores = self.score_all_districts(region_filter)[:top_n]
-
-        print("\nAI-Recommended Districts for Investment:")
-        print("=" * 80)
-        print(f"{'Rank':<6}{'District':<30}{'Score':<8}{'Key Catalysts'}")
-        print("-" * 80)
-
-        for i, score in enumerate(scores, 1):
-            district_str = f"D{score.district:02d} - {score.name}"
-            catalysts = ", ".join(score.key_catalysts) if score.key_catalysts else "-"
-            print(f"{i:<6}{district_str:<30}{score.total_score:<8.1f}{catalysts}")
-
-        print("=" * 80)

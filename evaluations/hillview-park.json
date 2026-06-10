@@ -1,0 +1,61 @@
+{
+  "condo": "Hillview Park",
+  "slug": "hillview-park",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large freehold 3BR (1,432sqft) at $1,563 PSF, 340m from Hillview MRT (DTL) in D23, priced right on the $1,569 URA median. Strong resale-only appreciation of 6.5%/yr on a credible 22-txn series, with a generous spread-out floorplate.",
+      "rating_rationale": "Genuinely strong fundamentals for a value 3BR: freehold, 340m to Hillview MRT, $1,563 PSF at the URA median, and a clean resale-only 6.5%/yr CAGR backed by 22 transactions (not new-launch-biased). The $2.24M entry sits in a liquid family band. Caveat is age (1995, ~31yr) which lifts maintenance and slightly dampens resale velocity, but the large freehold floorplate near MRT is the durable appeal.",
+      "red_flags": [
+        "Built 1995 (~31yr) — older fittings, higher maintenance, longer resale timeline",
+        "D23 Hillview is a quieter OCR sub-market with shallower buyer pool than RCR"
+      ],
+      "catalysts": [
+        "Freehold + 340m to Hillview MRT (Downtown Line)",
+        "6.5%/yr resale-only appreciation on solid 22-txn base",
+        "HillV2 / Rail Corridor / nature-fringe lifestyle draw"
+      ],
+      "as_of": {
+        "price": 2238000,
+        "psf": 1562.85,
+        "beds": 3,
+        "sqft": 1432.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large freehold 3BR (1,432sqft) at $1,563 PSF, 340m from Hillview MRT (DTL) in D23, priced right on the $1,569 URA median. Strong resale-only appreciation of 6.5%/yr on a credible 22-txn series, with a generous spread-out floorplate.",
+        "rating": "Buy",
+        "rating_rationale": "Genuinely strong fundamentals for a value 3BR: freehold, 340m to Hillview MRT, $1,563 PSF at the URA median, and a clean resale-only 6.5%/yr CAGR backed by 22 transactions (not new-launch-biased). The $2.24M entry sits in a liquid family band. Caveat is age (1995, ~31yr) which lifts maintenance and slightly dampens resale velocity, but the large freehold floorplate near MRT is the durable appeal.",
+        "red_flags": [
+          "Built 1995 (~31yr) — older fittings, higher maintenance, longer resale timeline",
+          "D23 Hillview is a quieter OCR sub-market with shallower buyer pool than RCR"
+        ],
+        "catalysts": [
+          "Freehold + 340m to Hillview MRT (Downtown Line)",
+          "6.5%/yr resale-only appreciation on solid 22-txn base",
+          "HillV2 / Rail Corridor / nature-fringe lifestyle draw"
+        ],
+        "rental_assessment": "Large 1,432sqft 3BR rents to families wanting space near Hillview MRT; gross yield is moderate given the $2.24M price but tenant demand is stable.",
+        "appreciation_assessment": "Clean resale-only 6.5%/yr on 22 txns is reliable and above the OCR baseline — freehold-near-MRT scarcity in Hillview supports continued upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only 6.5%/yr (22 txns) trimmed for age and OCR liquidity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-park-25215607",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

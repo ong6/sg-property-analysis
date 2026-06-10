@@ -1,0 +1,113 @@
+{
+  "condo": "Stratum",
+  "slug": "stratum",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 1,722 sqft 4BR in Pasir Ris (D18) at $2.25M and $1,307 psf — ~5% below the $1,382 median, in the more digestible sub-$2.5M band, with the future CRL Elias station 380m away. Solid 4.48% appreciation on 123 txns; the CRL proximity is the standout catalyst.",
+      "rating_rationale": "The CP2 Elias station (Cross Island Line, ~2030) at just 380m is the strongest forward catalyst among the 4BR entries — future-MRT-within-500m gives the largest uplift per the rubric. $2.25M keeps it inside the more liquid sub-$2.5M band (vs the $2.98M Ripple Bay), $1,307 psf is ~5% under median, and 4.48% resale-only on a reliable 123-txn series is solid for OCR. Elo 1918, on frontier. The 1,722 sqft 4BR is still a family-only niche, but the CRL catalyst plus reasonable quantum and below-median entry justify a Buy.",
+      "red_flags": [
+        "1,722 sqft 4BR — family-only, narrower buyer pool",
+        "Far-east Pasir Ris location, OCR price ceiling",
+        "CRL uplift is years out (~2030) and partly anticipated"
+      ],
+      "catalysts": [
+        "Future CRL Elias station 380m — within-500m future MRT, strongest uplift driver",
+        "Below-median PSF and digestible $2.25M quantum (deeper liquidity than $3M peers)",
+        "Reliable 4.48%/yr resale-only on 123 txns"
+      ],
+      "as_of": {
+        "price": 2250000,
+        "psf": 1306.62,
+        "beds": 4,
+        "sqft": 1722.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,722 sqft 4BR in Pasir Ris (D18) at $2.25M and $1,307 psf — ~5% below the $1,382 median, in the more digestible sub-$2.5M band, with the future CRL Elias station 380m away. Solid 4.48% appreciation on 123 txns; the CRL proximity is the standout catalyst.",
+        "rating": "Buy",
+        "rating_rationale": "The CP2 Elias station (Cross Island Line, ~2030) at just 380m is the strongest forward catalyst among the 4BR entries — future-MRT-within-500m gives the largest uplift per the rubric. $2.25M keeps it inside the more liquid sub-$2.5M band (vs the $2.98M Ripple Bay), $1,307 psf is ~5% under median, and 4.48% resale-only on a reliable 123-txn series is solid for OCR. Elo 1918, on frontier. The 1,722 sqft 4BR is still a family-only niche, but the CRL catalyst plus reasonable quantum and below-median entry justify a Buy.",
+        "red_flags": [
+          "1,722 sqft 4BR — family-only, narrower buyer pool",
+          "Far-east Pasir Ris location, OCR price ceiling",
+          "CRL uplift is years out (~2030) and partly anticipated"
+        ],
+        "catalysts": [
+          "Future CRL Elias station 380m — within-500m future MRT, strongest uplift driver",
+          "Below-median PSF and digestible $2.25M quantum (deeper liquidity than $3M peers)",
+          "Reliable 4.48%/yr resale-only on 123 txns"
+        ],
+        "rental_assessment": "4BR Pasir Ris draws family tenants; pool shallow but CRL access will lift desirability. Yield modest for the quantum.",
+        "appreciation_assessment": "4.48% resale-only is dependable for OCR; the 380m CRL station is a concrete re-rating catalyst over the hold. Best risk/reward of the 4BR group.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-stratum-500085570",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "99yr 2016 1BR in Pasir Ris (D18, OCR). Algo flags it cheap (-6.2% age-adj, -4.5% cohort) but a same-size 581sqft 1BR transacted Mar-2025 at $1,308 PSF, so this $1,442 PSF asking is actually ~10% ABOVE verified comparable resale. CRL 2029 is a real catalyst but the entry price already captures fair value, not a bargain.",
+      "rating_rationale": "The decisive fact is a verified same-size comparable: a 581 sqft 1BR sold Mar-2025 at $760,000 = $1,308 PSF, while this unit asks $838,000 = $1,442 PSF (~10% higher). Stratum's 12-month average is ~$1,302-1,367 PSF, so the asking is at the top of the range, not below it. The algo's cheap signals (psf_cohort_txns=6, thin) don't survive web verification. OCR gives the best forward regional prior (+4.0%) and the Cross Island Line interchange at Pasir Ris (2029) is a genuine medium-term catalyst, which keeps this from an Avoid, but at this asking there is no value edge today.",
+      "red_flags": [
+        "Asking $1,442 PSF is ~10% above a verified same-size 581sqft 1BR resale at $1,308 PSF (Mar-2025)",
+        "Algo cheapness rests on a thin 6-transaction cohort that web data contradicts",
+        "Far-east location with long CBD commute pending CRL completion (2029)"
+      ],
+      "catalysts": [
+        "Cross Island Line interchange at Pasir Ris MRT (~2029) adding to existing East-West Line",
+        "OCR region carries the strongest realized forward appreciation prior (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 838000,
+        "psf": 1442.34,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "99yr 2016 1BR in Pasir Ris (D18, OCR). Algo flags it cheap (-6.2% age-adj, -4.5% cohort) but a same-size 581sqft 1BR transacted Mar-2025 at $1,308 PSF, so this $1,442 PSF asking is actually ~10% ABOVE verified comparable resale. CRL 2029 is a real catalyst but the entry price already captures fair value, not a bargain.",
+        "rating_rationale": "The decisive fact is a verified same-size comparable: a 581 sqft 1BR sold Mar-2025 at $760,000 = $1,308 PSF, while this unit asks $838,000 = $1,442 PSF (~10% higher). Stratum's 12-month average is ~$1,302-1,367 PSF, so the asking is at the top of the range, not below it. The algo's cheap signals (psf_cohort_txns=6, thin) don't survive web verification. OCR gives the best forward regional prior (+4.0%) and the Cross Island Line interchange at Pasir Ris (2029) is a genuine medium-term catalyst, which keeps this from an Avoid, but at this asking there is no value edge today.",
+        "red_flags": [
+          "Asking $1,442 PSF is ~10% above a verified same-size 581sqft 1BR resale at $1,308 PSF (Mar-2025)",
+          "Algo cheapness rests on a thin 6-transaction cohort that web data contradicts",
+          "Far-east location with long CBD commute pending CRL completion (2029)"
+        ],
+        "catalysts": [
+          "Cross Island Line interchange at Pasir Ris MRT (~2029) adding to existing East-West Line",
+          "OCR region carries the strongest realized forward appreciation prior (~+4.0%)"
+        ],
+        "appreciation_assessment": "Trailing 4.48% URA 5yr CAGR (123 txns) is robust historically but has ~0 forward power; treat as background, not a forecast. CRL is the real forward story but is 3 years out.",
+        "rental_assessment": "581 sqft 1BR in Pasir Ris draws tenants from Changi Business Park / Loyang industrial; reasonable yield but OCR 1BR rents are modest, so income is fair rather than standout."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-stratum-60235072",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

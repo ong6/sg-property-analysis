@@ -1,0 +1,67 @@
+{
+  "condo": "FIRE SALE🔥FREEHOLD RCR⭐District 14⭐Immediate Rental Income",
+  "slug": "fire-sale-freehold-rcr-district-14-immediate-rental-income",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 484sqft freehold shoebox 1BR right at Aljunied MRT (40m), built 2025, listed under a 'FIRE SALE' marketing title at $2,004 psf with no URA appreciation, txn count or median PSF in the dossier. The arena record is a losing 152-156-7 despite the high score_1000, and 40m from an above-ground MRT line typically means train noise.",
+      "rating_rationale": "No verifiable URA data (no rate, no txn count, no median PSF) plus a clickbait 'FIRE SALE' title and a sub-.500 arena record (152-156) undercut the headline score_1000 of 734. A brand-new 2025 shoebox at $2,004 psf is developer/launch pricing, and 40m from the elevated EW line is a real noise liability that suppresses both rental quality and resale. Premium PSF on unverifiable data — pass.",
+      "red_flags": [
+        "No URA appreciation/txn/median data — unverifiable",
+        "Marketing-placeholder 'FIRE SALE' listing name",
+        "40m from elevated MRT line — likely train noise",
+        "Losing arena record 152-156-7 despite high score",
+        "$2,004 psf on a brand-new shoebox — launch-inflated pricing"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Steps from Aljunied EW MRT — strong commuter tenant draw",
+        "Immediate rental income (already tenanted/completed 2025)"
+      ],
+      "as_of": {
+        "price": 969999,
+        "psf": 2004.13,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 484sqft freehold shoebox 1BR right at Aljunied MRT (40m), built 2025, listed under a 'FIRE SALE' marketing title at $2,004 psf with no URA appreciation, txn count or median PSF in the dossier. The arena record is a losing 152-156-7 despite the high score_1000, and 40m from an above-ground MRT line typically means train noise.",
+        "rating": "Avoid",
+        "rating_rationale": "No verifiable URA data (no rate, no txn count, no median PSF) plus a clickbait 'FIRE SALE' title and a sub-.500 arena record (152-156) undercut the headline score_1000 of 734. A brand-new 2025 shoebox at $2,004 psf is developer/launch pricing, and 40m from the elevated EW line is a real noise liability that suppresses both rental quality and resale. Premium PSF on unverifiable data — pass.",
+        "red_flags": [
+          "No URA appreciation/txn/median data — unverifiable",
+          "Marketing-placeholder 'FIRE SALE' listing name",
+          "40m from elevated MRT line — likely train noise",
+          "Losing arena record 152-156-7 despite high score",
+          "$2,004 psf on a brand-new shoebox — launch-inflated pricing"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Steps from Aljunied EW MRT — strong commuter tenant draw",
+          "Immediate rental income (already tenanted/completed 2025)"
+        ],
+        "rental_assessment": "Location at the MRT exit gives genuine shoebox rental demand, but train noise at 40m and the high entry PSF compress net yield.",
+        "appreciation_assessment": "No URA series to anchor on; a new 2025 shoebox bought at launch-level $2,004 psf has limited near-term upside as the developer premium unwinds.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "No URA data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-fire-sale-freehold-rcr-district-14-immediate-rental-income-500108591",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

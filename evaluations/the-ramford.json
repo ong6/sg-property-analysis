@@ -1,0 +1,65 @@
+{
+  "condo": "The Ramford",
+  "slug": "the-ramford",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A freehold 1,044 sqft 3BR (The Ramford, D15 East Coast, 2022) at $2.188M / $2,096 psf — a steep ~14% premium to the $1,837 URA median on a near-meaningless 6-transaction base showing a slightly negative resale rate. A boutique freehold paying well above area value with no liquidity to support exit.",
+      "rating_rationale": "$2,096 psf is ~14% above the $1,837 URA median — a large premium, not a discount — and the only project data is 6 transactions with a -0.3% resale rate, i.e. no reliable appreciation signal and essentially no liquidity. The low score (458) and off-frontier status confirm it is overpriced. D15 freehold and the new 2022 build are positives, but 1.27km to Marine Parade TE26 and a boutique block paying a 14% premium with a 6-txn history is a poor 5-7yr investment — clear Avoid.",
+      "red_flags": [
+        "~14% above URA median ($2,096 vs $1,837) — large overpayment",
+        "Only 6 URA txns and a -0.3% resale rate — no liquidity or upside signal",
+        "Boutique development — thin exit",
+        "Off-frontier, lowest score in batch (458)",
+        "1.27km / 15-min to Marine Parade MRT"
+      ],
+      "catalysts": [
+        "Freehold D15 East Coast lifestyle district with deep owner-occupier base",
+        "New 2022 build — low maintenance, modern fittings",
+        "Marine Parade TEL station (TE26) opened, improving connectivity over time"
+      ],
+      "as_of": {
+        "price": 2188001,
+        "psf": 2095.79,
+        "beds": 3,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,044 sqft 3BR (The Ramford, D15 East Coast, 2022) at $2.188M / $2,096 psf — a steep ~14% premium to the $1,837 URA median on a near-meaningless 6-transaction base showing a slightly negative resale rate. A boutique freehold paying well above area value with no liquidity to support exit.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,096 psf is ~14% above the $1,837 URA median — a large premium, not a discount — and the only project data is 6 transactions with a -0.3% resale rate, i.e. no reliable appreciation signal and essentially no liquidity. The low score (458) and off-frontier status confirm it is overpriced. D15 freehold and the new 2022 build are positives, but 1.27km to Marine Parade TE26 and a boutique block paying a 14% premium with a 6-txn history is a poor 5-7yr investment — clear Avoid.",
+        "red_flags": [
+          "~14% above URA median ($2,096 vs $1,837) — large overpayment",
+          "Only 6 URA txns and a -0.3% resale rate — no liquidity or upside signal",
+          "Boutique development — thin exit",
+          "Off-frontier, lowest score in batch (458)",
+          "1.27km / 15-min to Marine Parade MRT"
+        ],
+        "catalysts": [
+          "Freehold D15 East Coast lifestyle district with deep owner-occupier base",
+          "New 2022 build — low maintenance, modern fittings",
+          "Marine Parade TEL station (TE26) opened, improving connectivity over time"
+        ],
+        "rental_assessment": "D15 has good tenant demand, but yield on a $2.19M 3BR paying above-market psf is ~3% and the premium entry undermines total return.",
+        "appreciation_assessment": "6 txns with a negative rate is no basis for upside; paying 14% over median means the appreciation must first absorb the overpayment — unattractive.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-ramford-500131424",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

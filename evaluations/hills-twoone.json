@@ -1,0 +1,61 @@
+{
+  "condo": "Hills TwoOne",
+  "slug": "hills-twoone",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2016 freehold 3BR in D23 (Hillview/Bukit Panjang) at $1.528M / $1595 PSF — slightly below the project URA median of $1645 — in the liquid sub-$1.6M band. The resale-only appreciation of 3.7%/yr on 26 transactions is honest but unremarkable OCR-fringe growth, and the listing carries no MRT proximity, a known D23 Hillview weakness.",
+      "rating_rationale": "Positives: freehold, $1595 PSF is ~3% under the project median ($1645), liquid price band, resale-only 3.7%/yr with no new-launch bias on a reasonable 26 txns, and a solid 594/1000 score. But D23 Hillview is an OCR-fringe location with no MRT distance listed (Hillview MRT/DTL is the realistic option but not at the doorstep), and 3.7%/yr is below RCR alternatives. A fair, fully-priced freehold hold rather than a standout buy.",
+      "red_flags": [
+        "No MRT proximity listed — D23 Hillview is car-dependent for many blocks",
+        "3.7%/yr appreciation is modest OCR-fringe growth",
+        "D23 sits below RCR districts on the demand/appreciation curve"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Priced slightly under project URA median PSF",
+        "Hillview/Rail Corridor amenity and DTL Hillview MRT in the wider area"
+      ],
+      "as_of": {
+        "price": 1528000,
+        "psf": 1594.99,
+        "beds": 3,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2016 freehold 3BR in D23 (Hillview/Bukit Panjang) at $1.528M / $1595 PSF — slightly below the project URA median of $1645 — in the liquid sub-$1.6M band. The resale-only appreciation of 3.7%/yr on 26 transactions is honest but unremarkable OCR-fringe growth, and the listing carries no MRT proximity, a known D23 Hillview weakness.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: freehold, $1595 PSF is ~3% under the project median ($1645), liquid price band, resale-only 3.7%/yr with no new-launch bias on a reasonable 26 txns, and a solid 594/1000 score. But D23 Hillview is an OCR-fringe location with no MRT distance listed (Hillview MRT/DTL is the realistic option but not at the doorstep), and 3.7%/yr is below RCR alternatives. A fair, fully-priced freehold hold rather than a standout buy.",
+        "red_flags": [
+          "No MRT proximity listed — D23 Hillview is car-dependent for many blocks",
+          "3.7%/yr appreciation is modest OCR-fringe growth",
+          "D23 sits below RCR districts on the demand/appreciation curve"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Priced slightly under project URA median PSF",
+          "Hillview/Rail Corridor amenity and DTL Hillview MRT in the wider area"
+        ],
+        "rental_assessment": "Moderate — Hillview is a quieter residential pocket; a freehold 3BR lets to families but the tenant pool is shallower than central districts and yield is average.",
+        "appreciation_assessment": "Honest 3.7%/yr resale-only (26 txns, no bias) — dependable but unexciting; D23 freehold holds value rather than outperforming. No strong upside catalyst.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hills-twoone-500139831",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

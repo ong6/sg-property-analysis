@@ -1,0 +1,61 @@
+{
+  "condo": "The Parc Condominium",
+  "slug": "the-parc-condominium",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A large 1,927 sqft freehold 3BR in a 659-unit Clementi development with a future West Coast CRL station ~6min walk away. The headline-low $1,557 PSF (vs $1,919 URA median) reflects an oversized unit, and the $3M quantum sits at the thin end of the buyer pool.",
+      "rating_rationale": "Strong bones: freehold, 659 units (deep liquidity, 90 URA txns), resale CAGR 5.1%/yr, and a genuine CRL Phase 2 (West Coast MRT, ~2032) catalyst plus Clementi interchange upgrade. But the low PSF is a size illusion: at 1,927 sqft this is a sprawling unit, so the $3M quantum (not PSF) is what a buyer pays, and $3M+ thins the resale pool. Per-sqft appreciation will be diluted by the oversized floor area. Solid but not cheap on a quantum basis.",
+      "red_flags": [
+        "$3M quantum sits above the $1.8-2.5M deepest-pool band, narrowing exit",
+        "Oversized 1,927 sqft unit means low PSF overstates value; appreciation diluted per dollar",
+        "1.19km to current Clementi MRT is a bus-ride, not walkable today"
+      ],
+      "catalysts": [
+        "West Coast MRT (CRL Phase 2, ~2032) ~6min walk",
+        "Clementi becomes EWL interchange ~2032",
+        "Freehold tenure + strong school belt (Nan Hua, NUS High, NUS) sustains family demand"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 1556.82,
+        "beds": 3,
+        "sqft": 1927.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,927 sqft freehold 3BR in a 659-unit Clementi development with a future West Coast CRL station ~6min walk away. The headline-low $1,557 PSF (vs $1,919 URA median) reflects an oversized unit, and the $3M quantum sits at the thin end of the buyer pool.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong bones: freehold, 659 units (deep liquidity, 90 URA txns), resale CAGR 5.1%/yr, and a genuine CRL Phase 2 (West Coast MRT, ~2032) catalyst plus Clementi interchange upgrade. But the low PSF is a size illusion: at 1,927 sqft this is a sprawling unit, so the $3M quantum (not PSF) is what a buyer pays, and $3M+ thins the resale pool. Per-sqft appreciation will be diluted by the oversized floor area. Solid but not cheap on a quantum basis.",
+        "red_flags": [
+          "$3M quantum sits above the $1.8-2.5M deepest-pool band, narrowing exit",
+          "Oversized 1,927 sqft unit means low PSF overstates value; appreciation diluted per dollar",
+          "1.19km to current Clementi MRT is a bus-ride, not walkable today"
+        ],
+        "catalysts": [
+          "West Coast MRT (CRL Phase 2, ~2032) ~6min walk",
+          "Clementi becomes EWL interchange ~2032",
+          "Freehold tenure + strong school belt (Nan Hua, NUS High, NUS) sustains family demand"
+        ],
+        "rental_assessment": "Decent tenant base from NUS/one-north/Ngee Ann Poly, but a 1,927 sqft 3BR is a high-rent niche; gross yield on $3M will be sub-3%, weak for the quantum.",
+        "appreciation_assessment": "Resale-only 5.1%/yr CAGR on 90 txns is reliable and above OCR baseline; CRL is a real medium-term uplift, but the oversized unit dilutes per-dollar capital growth.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-parc-condominium-60148088",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Uber 388",
+  "slug": "uber-388",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2015 freehold 'oversized 2BR' at Uber 388 (D16), 1,314 sqft at $2.28M / $1,735 psf, 520m from the new Bayshore TEL MRT. PSF reads ~6% below the $1,843 median but only because 1,314 sqft is enormous for a 2BR — the real signal is a $2.28M quantum for a 2BR, a tough exit. Freehold and a new TEL station nearby are genuine positives, netting to a fair hold.",
+      "rating_rationale": "Below-median PSF ($1,735 vs $1,843) is an oversized-unit artefact — $2.28M is a very high quantum for a 2BR, well above the segment's natural buyer pool. Appreciation 6.3%/yr is unreliable (only 17 txn). Offsetting: freehold tenure, and 520m to the new Bayshore TE29 (TEL) station within the Bayshore precinct transformation. Even arena record (197-216) and middling score 557.",
+      "red_flags": [
+        "$2.28M quantum is very high for a 2BR — narrow buyer pool, hard exit",
+        "Below-median PSF is driven by the oversized 1,314 sqft, not true value",
+        "6.3%/yr appreciation unreliable on just 17 txn",
+        "Even 197-216 arena record"
+      ],
+      "catalysts": [
+        "520m to new Bayshore TE29 (Thomson-East Coast Line) MRT",
+        "Freehold tenure in the transforming D16 Bayshore precinct",
+        "Below district-median PSF and a spacious dual-key-capable layout"
+      ],
+      "as_of": {
+        "price": 2280000,
+        "psf": 1735.16,
+        "beds": 2,
+        "sqft": 1314.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2015 freehold 'oversized 2BR' at Uber 388 (D16), 1,314 sqft at $2.28M / $1,735 psf, 520m from the new Bayshore TEL MRT. PSF reads ~6% below the $1,843 median but only because 1,314 sqft is enormous for a 2BR — the real signal is a $2.28M quantum for a 2BR, a tough exit. Freehold and a new TEL station nearby are genuine positives, netting to a fair hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Below-median PSF ($1,735 vs $1,843) is an oversized-unit artefact — $2.28M is a very high quantum for a 2BR, well above the segment's natural buyer pool. Appreciation 6.3%/yr is unreliable (only 17 txn). Offsetting: freehold tenure, and 520m to the new Bayshore TE29 (TEL) station within the Bayshore precinct transformation. Even arena record (197-216) and middling score 557.",
+        "red_flags": [
+          "$2.28M quantum is very high for a 2BR — narrow buyer pool, hard exit",
+          "Below-median PSF is driven by the oversized 1,314 sqft, not true value",
+          "6.3%/yr appreciation unreliable on just 17 txn",
+          "Even 197-216 arena record"
+        ],
+        "catalysts": [
+          "520m to new Bayshore TE29 (Thomson-East Coast Line) MRT",
+          "Freehold tenure in the transforming D16 Bayshore precinct",
+          "Below district-median PSF and a spacious dual-key-capable layout"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-uber-388-25039253",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

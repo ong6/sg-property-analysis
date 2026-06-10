@@ -1,0 +1,65 @@
+{
+  "condo": "1km to Hong Wen and St Andrews. Minutes to MRT",
+  "slug": "1km-to-hong-wen-and-st-andrews-minutes-to-mrt",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A freehold 3BR near Boon Keng MRT in D12, school-marketed (Hong Wen, St Andrew's), asking $3.279M / $2,560 psf with no built year and no project transaction data. The PSF is aggressive new-launch-tier pricing on a 1,281 sqft unit at a $3.28M quantum that thins the buyer pool.",
+      "rating_rationale": "$2,560 psf is steep even for freehold D12 near an MRT, and $3.28M for a 3BR is above the liquid band — narrow exit. No built_year and no URA appreciation/txn data leave value unverifiable. The pitch is school + MRT proximity (own-stay), not an investment edge. score_1000 = 479, poor win record (221-345). The 380m MRT proximity is the one genuine plus, but it's already priced in.",
+      "red_flags": [
+        "Aggressive $2,560 psf — top-tier pricing leaves little headroom",
+        "$3.28M 3BR quantum above the deep buyer band",
+        "Missing built_year and zero URA transaction data — value unverifiable",
+        "Listing-name marketed (schools/MRT) — own-stay framing"
+      ],
+      "catalysts": [
+        "380m to Boon Keng NE9 MRT — genuine transit convenience",
+        "Freehold tenure in city-fringe D12",
+        "Hong Wen / St Andrew's school proximity"
+      ],
+      "as_of": {
+        "price": 3279000,
+        "psf": 2559.72,
+        "beds": 3,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 3BR near Boon Keng MRT in D12, school-marketed (Hong Wen, St Andrew's), asking $3.279M / $2,560 psf with no built year and no project transaction data. The PSF is aggressive new-launch-tier pricing on a 1,281 sqft unit at a $3.28M quantum that thins the buyer pool.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,560 psf is steep even for freehold D12 near an MRT, and $3.28M for a 3BR is above the liquid band — narrow exit. No built_year and no URA appreciation/txn data leave value unverifiable. The pitch is school + MRT proximity (own-stay), not an investment edge. score_1000 = 479, poor win record (221-345). The 380m MRT proximity is the one genuine plus, but it's already priced in.",
+        "red_flags": [
+          "Aggressive $2,560 psf — top-tier pricing leaves little headroom",
+          "$3.28M 3BR quantum above the deep buyer band",
+          "Missing built_year and zero URA transaction data — value unverifiable",
+          "Listing-name marketed (schools/MRT) — own-stay framing"
+        ],
+        "catalysts": [
+          "380m to Boon Keng NE9 MRT — genuine transit convenience",
+          "Freehold tenure in city-fringe D12",
+          "Hong Wen / St Andrew's school proximity"
+        ],
+        "rental_assessment": "City-fringe near MRT supports rental, but a $3.28M 3BR yields thinly (<3%).",
+        "appreciation_assessment": "Bought at ~$2,560 psf the unit is priced to perfection; without txn data assume market-tracking at best with downside from the high quantum on exit.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D12 freehold city-fringe prior — no project data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1km-to-hong-wen-and-st-andrews-minutes-to-mrt-500151420",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

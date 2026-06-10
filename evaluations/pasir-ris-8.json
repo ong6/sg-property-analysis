@@ -1,0 +1,63 @@
+{
+  "condo": "Pasir Ris 8",
+  "slug": "pasir-ris-8",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Brand-new (2025) integrated 1BR at Pasir Ris 8 for $1.0M / $1859 PSF — ~11% below the $2099 median — directly above CP1 Pasir Ris MRT and bus interchange with mall connectivity. Backed by an enormous 538-transaction series and a ~5.3%/yr resale-only rate, the integrated-transit-mall location plus CRL/DTL interchange upside make this a Buy despite a 1BR's narrower pool.",
+      "rating_rationale": "Asking PSF $1859 is ~11% under the $2099 median on a very deep 538-txn dataset (high confidence), resale-only rate ~5.3%/yr is strong for OCR, and the unit sits 360m from Pasir Ris MRT inside an integrated mall/bus-interchange development — a structurally premium, highly liquid format. Cross Island Line interchange at Pasir Ris (~2030) is a concrete catalyst. has_new_launch_bias flags the headline rate, but resale-only is computed too and the value gap to median is real.",
+      "red_flags": [
+        "has_new_launch_bias true on the blended rate (lean on resale-only ~5.3%)",
+        "1BR is the narrowest owner-occupier segment",
+        "$1859 PSF is high in absolute OCR terms for a shoebox"
+      ],
+      "catalysts": [
+        "Integrated development atop CP1 Pasir Ris MRT + bus interchange + mall",
+        "Cross Island Line interchange at Pasir Ris ~2030",
+        "~11% below district median PSF on a 538-txn dataset"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1858.74,
+        "beds": 1,
+        "sqft": 538.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new (2025) integrated 1BR at Pasir Ris 8 for $1.0M / $1859 PSF — ~11% below the $2099 median — directly above CP1 Pasir Ris MRT and bus interchange with mall connectivity. Backed by an enormous 538-transaction series and a ~5.3%/yr resale-only rate, the integrated-transit-mall location plus CRL/DTL interchange upside make this a Buy despite a 1BR's narrower pool.",
+        "rating": "Buy",
+        "rating_rationale": "Asking PSF $1859 is ~11% under the $2099 median on a very deep 538-txn dataset (high confidence), resale-only rate ~5.3%/yr is strong for OCR, and the unit sits 360m from Pasir Ris MRT inside an integrated mall/bus-interchange development — a structurally premium, highly liquid format. Cross Island Line interchange at Pasir Ris (~2030) is a concrete catalyst. has_new_launch_bias flags the headline rate, but resale-only is computed too and the value gap to median is real.",
+        "red_flags": [
+          "has_new_launch_bias true on the blended rate (lean on resale-only ~5.3%)",
+          "1BR is the narrowest owner-occupier segment",
+          "$1859 PSF is high in absolute OCR terms for a shoebox"
+        ],
+        "catalysts": [
+          "Integrated development atop CP1 Pasir Ris MRT + bus interchange + mall",
+          "Cross Island Line interchange at Pasir Ris ~2030",
+          "~11% below district median PSF on a 538-txn dataset"
+        ],
+        "rental_assessment": "Integrated-transit 1BR rents very efficiently — direct MRT/mall access is exactly what shoebox tenants pay for. Yield at $1.0M is among the better in the band given the location format.",
+        "appreciation_assessment": "Resale-only ~5.3%/yr on a deep 538-txn series is credible for OCR; the integrated format and CRL interchange support continued outperformance. Discount the blended new-launch-biased figure.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR (538 txn), modest haircut for new-launch maturity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pasir-ris-8-500157273",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Place-8",
+  "slug": "place-8",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The eye-catching $1176 PSF is a mirage: this is a 3401 sqft oversized unit (penthouse/strata or dual-key type) at a $4.0M absolute quantum in D19. Cheap PSF on a huge freehold unit does not translate to a liquid or appreciating investment — the $4M ticket sits in an extremely thin buyer pool.",
+      "rating_rationale": "Classic oversized-unit-as-cheap-PSF trap. $1176 PSF looks cheap only because the unit is 3401 sqft; the $4.0M absolute price is far above the liquid sweet spot, in an OCR D19 location 1.1km from Serangoon MRT — a combination with a very shallow resale market. No URA data, freehold but huge and niche. Investment fundamentals (liquidity, yield on $4M, exit) are poor; this is an own-stay/lifestyle unit, not an investment buy.",
+      "red_flags": [
+        "Oversized 3401 sqft unit — low PSF masks a $4.0M absolute quantum in OCR D19",
+        "$4M is deep in the thin-buyer-pool zone; exit liquidity is severely limited",
+        "1.1km / 13 min to Serangoon MRT — no station premium",
+        "No URA data; large bespoke units have very few comparables to price against"
+      ],
+      "catalysts": [
+        "Freehold tenure and a 2018 build preserve long-run value",
+        "Generous space appeals to a niche large-family/multi-gen own-stay buyer (not investors)"
+      ],
+      "as_of": {
+        "price": 4000000,
+        "psf": 1176.12,
+        "beds": 4,
+        "sqft": 3401.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The eye-catching $1176 PSF is a mirage: this is a 3401 sqft oversized unit (penthouse/strata or dual-key type) at a $4.0M absolute quantum in D19. Cheap PSF on a huge freehold unit does not translate to a liquid or appreciating investment — the $4M ticket sits in an extremely thin buyer pool.",
+        "rating": "Avoid",
+        "rating_rationale": "Classic oversized-unit-as-cheap-PSF trap. $1176 PSF looks cheap only because the unit is 3401 sqft; the $4.0M absolute price is far above the liquid sweet spot, in an OCR D19 location 1.1km from Serangoon MRT — a combination with a very shallow resale market. No URA data, freehold but huge and niche. Investment fundamentals (liquidity, yield on $4M, exit) are poor; this is an own-stay/lifestyle unit, not an investment buy.",
+        "red_flags": [
+          "Oversized 3401 sqft unit — low PSF masks a $4.0M absolute quantum in OCR D19",
+          "$4M is deep in the thin-buyer-pool zone; exit liquidity is severely limited",
+          "1.1km / 13 min to Serangoon MRT — no station premium",
+          "No URA data; large bespoke units have very few comparables to price against"
+        ],
+        "catalysts": [
+          "Freehold tenure and a 2018 build preserve long-run value",
+          "Generous space appeals to a niche large-family/multi-gen own-stay buyer (not investors)"
+        ],
+        "rental_assessment": "A 3401 sqft unit at $4M rents at a very low gross yield (~2% or below) with a tiny tenant pool — poor rental investment.",
+        "appreciation_assessment": "No URA series; oversized OCR units appreciate slowly and illiquidly as the buyer pool at $4M is thin. Below-baseline expectation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "Discounted OCR estimate — oversized/high-quantum niche unit, no URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-place-8-500027570",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

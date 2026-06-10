@@ -1,0 +1,64 @@
+{
+  "condo": "MEYER BLUE",
+  "slug": "meyer-blue",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Meyer Blue (D15, FH, 2028 TOP) 4BR, 1,518 sqft at $4.4M / $2,899 psf near Katong Park MRT — a premium freehold new launch priced ~9% below the project's $3,190 URA median. Strong location and tenure, but the >$4.4M quantum and new-launch bias make it a poor 5–7yr investment despite the sub-median PSF.",
+      "rating_rationale": "Listed PSF ($2,899) is ~9% below the project's robust 176-transaction URA median ($3,190), which is the one genuinely attractive feature — and 570m to the new Katong Park MRT (TEL) in freehold East Coast is prime. But the $4.4M quantum sits well into the >$3M zone where the buyer pool thins sharply for resale, new_launch_bias is flagged (paying a fresh-launch premium), completion is 2028 (capital tied up, SSD window), and score_1000 of 416 reflects weak risk-adjusted value at this entry. A trophy own-stay candidate more than a 5–7yr investment — Neutral.",
+      "red_flags": [
+        "$4.4M quantum — buyer pool thins sharply on resale above $3M",
+        "New-launch bias flagged; 2028 completion ties up capital and starts the SSD clock late",
+        "PSF below median but still a fresh-launch premium absolute level",
+        "score_1000 416 — weak risk-adjusted value as an investment"
+      ],
+      "catalysts": [
+        "~9% below the project's 176-txn URA median ($2,899 vs $3,190)",
+        "Freehold prime D15 Meyer/Amber, 570m to new Katong Park MRT (TEL)",
+        "Greater Southern Waterfront / East Coast lifestyle premium"
+      ],
+      "as_of": {
+        "price": 4400000,
+        "psf": 2898.55,
+        "beds": 4,
+        "sqft": 1518.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Meyer Blue (D15, FH, 2028 TOP) 4BR, 1,518 sqft at $4.4M / $2,899 psf near Katong Park MRT — a premium freehold new launch priced ~9% below the project's $3,190 URA median. Strong location and tenure, but the >$4.4M quantum and new-launch bias make it a poor 5–7yr investment despite the sub-median PSF.",
+        "rating": "Neutral",
+        "rating_rationale": "Listed PSF ($2,899) is ~9% below the project's robust 176-transaction URA median ($3,190), which is the one genuinely attractive feature — and 570m to the new Katong Park MRT (TEL) in freehold East Coast is prime. But the $4.4M quantum sits well into the >$3M zone where the buyer pool thins sharply for resale, new_launch_bias is flagged (paying a fresh-launch premium), completion is 2028 (capital tied up, SSD window), and score_1000 of 416 reflects weak risk-adjusted value at this entry. A trophy own-stay candidate more than a 5–7yr investment — Neutral.",
+        "red_flags": [
+          "$4.4M quantum — buyer pool thins sharply on resale above $3M",
+          "New-launch bias flagged; 2028 completion ties up capital and starts the SSD clock late",
+          "PSF below median but still a fresh-launch premium absolute level",
+          "score_1000 416 — weak risk-adjusted value as an investment"
+        ],
+        "catalysts": [
+          "~9% below the project's 176-txn URA median ($2,899 vs $3,190)",
+          "Freehold prime D15 Meyer/Amber, 570m to new Katong Park MRT (TEL)",
+          "Greater Southern Waterfront / East Coast lifestyle premium"
+        ],
+        "rental_assessment": "A 4BR at $4.4M rents only to a narrow expat-family segment; gross yield is poor (well under 3%) for an investment — not a yield play.",
+        "appreciation_assessment": "Prime freehold with strong comps, but entering at a new-launch premium with capital locked to 2028 limits the 5–7yr return; sub-median entry is the only cushion.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-meyer-blue-25350629",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

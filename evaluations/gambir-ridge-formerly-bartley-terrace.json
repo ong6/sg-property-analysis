@@ -1,0 +1,65 @@
+{
+  "condo": "Gambir Ridge (Formerly Bartley Terrace",
+  "slug": "gambir-ridge-formerly-bartley-terrace",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR near Bartley MRT (CCL) at $1764 PSF — a respectable freehold tenure and a tight, liquid quantum ($1.33M), but the PSF is full for a 2015 boutique-ish project in this pocket and there is no URA data to anchor the trend. Weak arena record (146-273) and below-frontier placement signal the algorithm sees it as mediocre value.",
+      "rating_rationale": "$1.328M / $1764 PSF puts a 753 sqft freehold 2BR in the deep, liquid sub-$1.5M band with broad buyer appeal, and Bartley MRT (Circle Line, one stop to Serangoon NEX) is a real plus. But $1764 PSF is on the higher side for a 2015 D19 development, the project is small, and the loss-heavy arena record (Elo 1016, 146-273-5, not on frontier) reflects that the price leaves little margin. Freehold protects long-term value but the entry is fully priced.",
+      "red_flags": [
+        "$1764 PSF is full for a 2015 D19 project — limited margin of safety",
+        "Poor arena record (146-273-5, Elo 1016) and below frontier",
+        "No URA appreciation/txn data — trend unverified",
+        "Small development implies shallower resale liquidity than a 400+ unit project"
+      ],
+      "catalysts": [
+        "Freehold tenure in an OCR/RCR-edge location preserves long-run value",
+        "510m to Bartley MRT (Circle Line) — strong connectivity to Serangoon/NEX and CBD",
+        "Tight $1.33M quantum keeps the 2BR broadly sellable and rentable"
+      ],
+      "as_of": {
+        "price": 1328000,
+        "psf": 1763.61,
+        "beds": 2,
+        "sqft": 753.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR near Bartley MRT (CCL) at $1764 PSF — a respectable freehold tenure and a tight, liquid quantum ($1.33M), but the PSF is full for a 2015 boutique-ish project in this pocket and there is no URA data to anchor the trend. Weak arena record (146-273) and below-frontier placement signal the algorithm sees it as mediocre value.",
+        "rating": "Neutral",
+        "rating_rationale": "$1.328M / $1764 PSF puts a 753 sqft freehold 2BR in the deep, liquid sub-$1.5M band with broad buyer appeal, and Bartley MRT (Circle Line, one stop to Serangoon NEX) is a real plus. But $1764 PSF is on the higher side for a 2015 D19 development, the project is small, and the loss-heavy arena record (Elo 1016, 146-273-5, not on frontier) reflects that the price leaves little margin. Freehold protects long-term value but the entry is fully priced.",
+        "red_flags": [
+          "$1764 PSF is full for a 2015 D19 project — limited margin of safety",
+          "Poor arena record (146-273-5, Elo 1016) and below frontier",
+          "No URA appreciation/txn data — trend unverified",
+          "Small development implies shallower resale liquidity than a 400+ unit project"
+        ],
+        "catalysts": [
+          "Freehold tenure in an OCR/RCR-edge location preserves long-run value",
+          "510m to Bartley MRT (Circle Line) — strong connectivity to Serangoon/NEX and CBD",
+          "Tight $1.33M quantum keeps the 2BR broadly sellable and rentable"
+        ],
+        "rental_assessment": "2BR near a Circle Line station rents reasonably to young professionals; gross yield likely ~3.3-3.6% at this quantum. Solid, unspectacular.",
+        "appreciation_assessment": "No project URA series; freehold near an MRT in D19 should track the OCR/RCR-edge ~4%/yr, but the high entry PSF limits headroom.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D19 freehold-near-MRT estimate — no project URA data in dossier"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-gambir-ridge-formerly-bartley-terrace-500138243",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

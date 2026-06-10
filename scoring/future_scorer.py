@@ -21,6 +21,12 @@ from utils.geo import normalize_district
 # Data directory path
 _DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 
+# v3.4: a line that opened within this many years still counts as a connectivity
+# catalyst. Previously any `status:"operational"` (or past-completion) line was
+# dropped, so a unit beside a just-opened TEL station (operational 2025) scored 0
+# on "future MRT" and was pushed NEGATIVE — penalized for its own upgrade.
+RECENT_OPERATIONAL_YEARS = 2
+
 # Module-level caches (loaded once, shared across all FutureScorer instances)
 _infra_cache: Optional[dict] = None
 _zones_cache: Optional[dict] = None
@@ -122,7 +128,6 @@ class FutureScorer:
 
         for line_code, line_data in mrt_lines.items():
             completion = line_data.get("completion", "2099")
-            status = (line_data.get("status") or "").lower()
             try:
                 completion_year = int(completion[:4])
             except (ValueError, TypeError):
@@ -130,10 +135,12 @@ class FutureScorer:
 
             if completion_year > 2030:
                 continue
-            if completion_year < current_year:
+            # v3.4: keep lines opened within the last RECENT_OPERATIONAL_YEARS as a
+            # still-relevant connectivity catalyst (don't drop a just-opened line).
+            if completion_year < current_year - RECENT_OPERATIONAL_YEARS:
                 continue
-            if status == "operational":
-                continue
+            # NOTE: status=="operational" is no longer an auto-exclude — completion
+            # year is the gate, so a recently-operational line still qualifies.
 
             line_name = line_data.get("name", line_code)
             for station in line_data.get("stations", []):
@@ -268,16 +275,14 @@ class FutureScorer:
         filtered = []
         for code in lines:
             line_info = self.infra_data.get("mrt_lines", {}).get(code, {})
-            status = (line_info.get("status") or "").lower()
             completion = line_info.get("completion", "")
             try:
                 completion_year = int(str(completion)[:4])
             except (ValueError, TypeError):
                 completion_year = None
 
-            if status == "operational":
-                continue
-            if completion_year is not None and completion_year < current_year:
+            # v3.4: recently-operational lines still count (see RECENT_OPERATIONAL_YEARS).
+            if completion_year is not None and completion_year < current_year - RECENT_OPERATIONAL_YEARS:
                 continue
             filtered.append(code)
         return filtered

@@ -1,0 +1,63 @@
+{
+  "condo": "Changi Green",
+  "slug": "changi-green",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 1,216 sqft freehold 3BR at Changi Green (D16, 2001) at $1.6M / $1,316 PSF — right at the project's $1,323.5 URA median and backed by a solid 45-txn series showing 4.64%/yr appreciation. Fairly-priced, well-supported, with Upper Changi DTL MRT 570m away and Bayshore/CAG growth in the district.",
+      "rating_rationale": "This is the cleanest data set in the batch: 45 URA transactions (high confidence), 4.64%/yr resale appreciation (healthy for OCR/D16), and the $1,316 PSF listing is essentially at the $1,323.5 median — fair value, no overpricing. $1.6M for a freehold 1,216 sqft 3BR is a liquid, deep-buyer-pool quantum, 570m to Upper Changi DTL MRT, and the district benefits from the Bayshore precinct and Changi Airport/aviation-park expansion. Solid, well-evidenced fundamentals with minor age concern only.",
+      "red_flags": [
+        "2001 build (25 yrs) — mid-life condo, watch maintenance/sinking fund",
+        "D16 OCR baseline growth without a 500m-radius new MRT catalyst",
+        "Below-50 arena win rate (265-285-19) reflects ordinary, not standout, profile"
+      ],
+      "catalysts": [
+        "45-txn URA series confirming a healthy 4.64%/yr appreciation",
+        "Priced at the $1,323.5 URA median — fair, not overpaying",
+        "Freehold 1,216 sqft 3BR at liquid $1.6M family quantum",
+        "570m to Upper Changi DTL MRT; Bayshore precinct and aviation-park growth in D16"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1315.79,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft freehold 3BR at Changi Green (D16, 2001) at $1.6M / $1,316 PSF — right at the project's $1,323.5 URA median and backed by a solid 45-txn series showing 4.64%/yr appreciation. Fairly-priced, well-supported, with Upper Changi DTL MRT 570m away and Bayshore/CAG growth in the district.",
+        "rating": "Buy",
+        "rating_rationale": "This is the cleanest data set in the batch: 45 URA transactions (high confidence), 4.64%/yr resale appreciation (healthy for OCR/D16), and the $1,316 PSF listing is essentially at the $1,323.5 median — fair value, no overpricing. $1.6M for a freehold 1,216 sqft 3BR is a liquid, deep-buyer-pool quantum, 570m to Upper Changi DTL MRT, and the district benefits from the Bayshore precinct and Changi Airport/aviation-park expansion. Solid, well-evidenced fundamentals with minor age concern only.",
+        "red_flags": [
+          "2001 build (25 yrs) — mid-life condo, watch maintenance/sinking fund",
+          "D16 OCR baseline growth without a 500m-radius new MRT catalyst",
+          "Below-50 arena win rate (265-285-19) reflects ordinary, not standout, profile"
+        ],
+        "catalysts": [
+          "45-txn URA series confirming a healthy 4.64%/yr appreciation",
+          "Priced at the $1,323.5 URA median — fair, not overpaying",
+          "Freehold 1,216 sqft 3BR at liquid $1.6M family quantum",
+          "570m to Upper Changi DTL MRT; Bayshore precinct and aviation-park growth in D16"
+        ],
+        "rental_assessment": "Freehold 3BR near Changi Business Park, the airport, SUTD and Expo draws a deep working tenant pool; reliable, defensible rental demand in the East.",
+        "appreciation_assessment": "4.64%/yr over 45 txns is reliable and above the OCR baseline; fair entry PSF gives room to ride the trend. Favorable.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-green-25094940",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

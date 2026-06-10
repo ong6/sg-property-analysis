@@ -206,6 +206,9 @@ def save_evaluations_from_review(reviewed_path: str, run_dir: Optional[str] = No
     today = _today()
     saved = 0
 
+    from scoring.models import verdict_from_rating
+
+    skipped = 0
     for entry in listings:
         ae = entry.get("agent_evaluation") or {}
         rating = ae.get("rating")
@@ -216,14 +219,32 @@ def save_evaluations_from_review(reviewed_path: str, run_dir: Optional[str] = No
         if not condo:
             continue
 
+        # v3.4 validation: don't commit malformed AI fields to git-tracked memory.
+        # verdict_from_rating degrades fuzzily (anything containing buy/sell/hold/
+        # neutral still maps), so only truly unrecognizable text (e.g. "asdf", "") is
+        # skipped here; confidence is normalized to high/medium/low; list fields are
+        # coerced so a stray string can't poison downstream joins/arena.
+        if verdict_from_rating(rating) is None:
+            print(f"  ⚠ skipping {condo}: unrecognized rating {rating!r} "
+                  "(expected Strong Buy / Buy / Neutral / Avoid)")
+            skipped += 1
+            continue
+        conf = ae.get("confidence")
+        if conf is not None and str(conf).strip().lower() not in ("high", "medium", "low"):
+            print(f"  ⚠ {condo}: confidence {conf!r} not in high/medium/low — storing as None")
+            conf = None
+
+        def _as_list(v):
+            return [] if v is None else (v if isinstance(v, list) else [v])
+
         history_entry = {
             "evaluated_at": today,
             "rating": rating,
-            "confidence": ae.get("confidence"),
+            "confidence": conf,
             "summary": ae.get("summary"),
             "rating_rationale": ae.get("rating_rationale"),
-            "red_flags": ae.get("red_flags", []),
-            "catalysts": ae.get("catalysts", []),
+            "red_flags": _as_list(ae.get("red_flags")),
+            "catalysts": _as_list(ae.get("catalysts")),
             "as_of": {
                 "price": entry.get("price"),
                 "psf": entry.get("psf"),
@@ -241,6 +262,8 @@ def save_evaluations_from_review(reviewed_path: str, run_dir: Optional[str] = No
         save_evaluation(condo, entry.get("district"), history_entry)
         saved += 1
 
+    if skipped:
+        print(f"  ⚠ {skipped} evaluation(s) skipped (malformed rating)")
     if saved:
         rebuild_index()
     return saved

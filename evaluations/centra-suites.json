@@ -1,0 +1,61 @@
+{
+  "condo": "Centra Suites",
+  "slug": "centra-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 420 sqft freehold shoebox in Lorong 25A Geylang (D14) asking $1,726 psf - which is ABOVE the project's recent transactions, so the dossier's 'cheap' label is a thin-cohort quirk, not a bargain.",
+      "rating_rationale": "The web checks invert the dossier's value story: EdgeProp shows Centra Suites' last-12-month sales at ~$1,592 psf with a Jan-2024 high of $1,672 psf for a 420-sqft unit (exactly this size), yet this listing asks $1,726 psf - i.e. ABOVE realized recent transactions. The dossier's -8.2% age_adj_premium and +9.1% cohort premium rest on only 11 cohort txns in a tiny 62-unit boutique block, so the 'cheap' signal is statistical noise, not verified value. v3.4 explicitly warns freehold is not a forward edge and to be skeptical of thin cohorts. Geylang freehold projects have a documented record of more unprofitable than profitable resales, and a 62-unit no-facilities block (gym/jacuzzi/parking only) has weak resale liquidity and stigma drag. The ~4.6% project yield is the one positive, but it does not offset paying above-market on a thin-data, low-liquidity asset.",
+      "red_flags": [
+        "Asking $1,726 psf is ABOVE verified recent transactions (~$1,592-$1,672 psf) - not cheap",
+        "'Cheap' age_adj signal rests on only 11 cohort txns in a 62-unit boutique block (data quirk)",
+        "Geylang freehold has a documented pattern of more unprofitable than profitable resales",
+        "62-unit no-frills development (gym/jacuzzi/parking only) = weak resale liquidity; Geylang locale stigma"
+      ],
+      "catalysts": [
+        "Freehold tenure (but v3.4: not a forward edge)",
+        "~4.6% project rental yield, supported by Aljunied/Dakota MRT access and rental demand"
+      ],
+      "as_of": {
+        "price": 725000,
+        "psf": 1726.19,
+        "beds": 1,
+        "sqft": 420
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "A 420 sqft freehold shoebox in Lorong 25A Geylang (D14) asking $1,726 psf - which is ABOVE the project's recent transactions, so the dossier's 'cheap' label is a thin-cohort quirk, not a bargain.",
+        "rating_rationale": "The web checks invert the dossier's value story: EdgeProp shows Centra Suites' last-12-month sales at ~$1,592 psf with a Jan-2024 high of $1,672 psf for a 420-sqft unit (exactly this size), yet this listing asks $1,726 psf - i.e. ABOVE realized recent transactions. The dossier's -8.2% age_adj_premium and +9.1% cohort premium rest on only 11 cohort txns in a tiny 62-unit boutique block, so the 'cheap' signal is statistical noise, not verified value. v3.4 explicitly warns freehold is not a forward edge and to be skeptical of thin cohorts. Geylang freehold projects have a documented record of more unprofitable than profitable resales, and a 62-unit no-facilities block (gym/jacuzzi/parking only) has weak resale liquidity and stigma drag. The ~4.6% project yield is the one positive, but it does not offset paying above-market on a thin-data, low-liquidity asset.",
+        "red_flags": [
+          "Asking $1,726 psf is ABOVE verified recent transactions (~$1,592-$1,672 psf) - not cheap",
+          "'Cheap' age_adj signal rests on only 11 cohort txns in a 62-unit boutique block (data quirk)",
+          "Geylang freehold has a documented pattern of more unprofitable than profitable resales",
+          "62-unit no-frills development (gym/jacuzzi/parking only) = weak resale liquidity; Geylang locale stigma"
+        ],
+        "catalysts": [
+          "Freehold tenure (but v3.4: not a forward edge)",
+          "~4.6% project rental yield, supported by Aljunied/Dakota MRT access and rental demand"
+        ],
+        "rental_assessment": "~4.6% yield is the strongest attribute - a 420 sqft shoebox near Aljunied/Dakota MRT rents readily; but yield alone does not justify an above-market entry on a thin-liquidity asset.",
+        "appreciation_assessment": "3.42% trailing CAGR on only 11 txns is unreliable and ~0 forward signal; with the asking above realized transactions and freehold giving no forward edge, the forward value case is negative, not positive."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centra-suites-60109586",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

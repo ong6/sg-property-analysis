@@ -1,0 +1,61 @@
+{
+  "condo": "The Sunny Spring",
+  "slug": "the-sunny-spring",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 1,023sqft 3BR at $1.698M / $1,660 PSF near Dakota MRT (D14), trading just above the $1,634 URA median on a solid 6.71% CAGR over 43 transactions. Freehold tenure plus a strong 6.71% data-backed rate is appealing, though the low 438 score_1000 and a tight 1,023sqft 3BR layout temper it.",
+      "rating_rationale": "Freehold in D14 (Paya Lebar Central / airbase-relocation catalyst zone) with a credible, well-sampled 6.71%/yr URA CAGR (43 txns) and pricing right at median is a genuinely good combination — freehold removes lease-decay risk and the appreciation track record is real. The 1,023sqft 3BR is compact (efficient for investment, modest per-room), and the low score_1000 of 438 appears driven by yield/cost mechanics rather than appreciation, so the fundamentals support a Buy with the size as the main caveat.",
+      "red_flags": [
+        "1,023sqft is small for a 3BR — compact rooms",
+        "Older 1998 building (maintenance/finishes)",
+        "Priced slightly above URA median, limited value cushion"
+      ],
+      "catalysts": [
+        "Freehold tenure — no lease decay",
+        "Credible 6.71% URA CAGR over 43 txns",
+        "D14 Paya Lebar Central + airbase relocation; Dakota CCL access"
+      ],
+      "as_of": {
+        "price": 1698000,
+        "psf": 1659.82,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,023sqft 3BR at $1.698M / $1,660 PSF near Dakota MRT (D14), trading just above the $1,634 URA median on a solid 6.71% CAGR over 43 transactions. Freehold tenure plus a strong 6.71% data-backed rate is appealing, though the low 438 score_1000 and a tight 1,023sqft 3BR layout temper it.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold in D14 (Paya Lebar Central / airbase-relocation catalyst zone) with a credible, well-sampled 6.71%/yr URA CAGR (43 txns) and pricing right at median is a genuinely good combination — freehold removes lease-decay risk and the appreciation track record is real. The 1,023sqft 3BR is compact (efficient for investment, modest per-room), and the low score_1000 of 438 appears driven by yield/cost mechanics rather than appreciation, so the fundamentals support a Buy with the size as the main caveat.",
+        "red_flags": [
+          "1,023sqft is small for a 3BR — compact rooms",
+          "Older 1998 building (maintenance/finishes)",
+          "Priced slightly above URA median, limited value cushion"
+        ],
+        "catalysts": [
+          "Freehold tenure — no lease decay",
+          "Credible 6.71% URA CAGR over 43 txns",
+          "D14 Paya Lebar Central + airbase relocation; Dakota CCL access"
+        ],
+        "rental_assessment": "Compact freehold 3BR near Dakota CCL and Paya Lebar employment has solid family-tenant demand.",
+        "appreciation_assessment": "6.71% is well-supported by 43 txns; freehold + D14 catalysts justify a 5-6% forward view.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sunny-spring-60219280",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Leville iSuites",
+  "slug": "leville-isuites",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2016 freehold 1BR in D15 near the new Marine Parade TEL station (630m), but priced at $1,858 PSF — a ~6% premium over the $1,754 median — for a $1.36M quantum that is high for a one-bedder. Weak 2.2%/yr resale appreciation on just 6 txns and a losing arena record (139-174) undercut it.",
+      "rating_rationale": "Asking $1,858 PSF is ~6% above the $1,754 district median with no offsetting data strength — only 6 txns and a poor 2.24%/yr resale rate. Elo 1082 / 139-174-2 is the weakest record in the batch. $1.36M for a 1BR is a steep quantum that thins the buyer pool. The Marine Parade TEL station is the only redeeming factor and it's already priced in.",
+      "red_flags": [
+        "Priced ~6% above district median PSF with no data support",
+        "Weak 2.24%/yr appreciation on only 6 txns",
+        "$1.36M quantum very high for a 1BR — narrow exit pool",
+        "Losing arena record (139-174-2), Elo 1082"
+      ],
+      "catalysts": [
+        "Marine Parade TEL MRT 630m away",
+        "Freehold in D15 East Coast lifestyle belt"
+      ],
+      "as_of": {
+        "price": 1360000,
+        "psf": 1857.92,
+        "beds": 1,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2016 freehold 1BR in D15 near the new Marine Parade TEL station (630m), but priced at $1,858 PSF — a ~6% premium over the $1,754 median — for a $1.36M quantum that is high for a one-bedder. Weak 2.2%/yr resale appreciation on just 6 txns and a losing arena record (139-174) undercut it.",
+        "rating": "Avoid",
+        "rating_rationale": "Asking $1,858 PSF is ~6% above the $1,754 district median with no offsetting data strength — only 6 txns and a poor 2.24%/yr resale rate. Elo 1082 / 139-174-2 is the weakest record in the batch. $1.36M for a 1BR is a steep quantum that thins the buyer pool. The Marine Parade TEL station is the only redeeming factor and it's already priced in.",
+        "red_flags": [
+          "Priced ~6% above district median PSF with no data support",
+          "Weak 2.24%/yr appreciation on only 6 txns",
+          "$1.36M quantum very high for a 1BR — narrow exit pool",
+          "Losing arena record (139-174-2), Elo 1082"
+        ],
+        "catalysts": [
+          "Marine Parade TEL MRT 630m away",
+          "Freehold in D15 East Coast lifestyle belt"
+        ],
+        "rental_assessment": "Marine Parade location rents reasonably to singles/couples, but at $1.36M the yield is thin (~2.5-3%) and the premium PSF caps it.",
+        "appreciation_assessment": "2.24%/yr resale (6 txns) is poor and unreliable; nothing in the data suggests this overpriced one-bedder will outperform.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-leville-isuites-24549557",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

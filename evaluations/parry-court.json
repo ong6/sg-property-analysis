@@ -1,0 +1,63 @@
+{
+  "condo": "Parry Court",
+  "slug": "parry-court",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2,303 sqft 999-year unit at Parry Court (2005) near Kovan, asking $2.45M. The low headline PSF ($1,064) is purely a size artifact — this is a $2.45M oversized unit above the liquid band in an older small Kovan development with essentially no URA price signal (1 txn).",
+      "rating_rationale": "$1,064 psf looks cheap but 2,303 sqft drives the price to $2.45M, above the deepest buyer band and into a small-development, 12-min-from-MRT context. Only 1 URA txn means no reliable appreciation read. 999-yr tenure and the low PSF give some floor value, but the oversized layout narrows the resale pool to family own-stayers, not investors.",
+      "red_flags": [
+        "Oversized 2,303 sqft unit — low PSF is a size artifact, total price $2.45M sits above liquid band",
+        "Only 1 URA transaction — no usable appreciation signal",
+        "12 min / 1.03 km from Kovan MRT — weak transit pull",
+        "Older 2005 development, likely small/boutique with limited facilities"
+      ],
+      "catalysts": [
+        "999-year tenure (quasi-freehold)",
+        "Low PSF leaves headroom if a family buyer values the space"
+      ],
+      "as_of": {
+        "price": 2450000,
+        "psf": 1063.83,
+        "beds": 3,
+        "sqft": 2303.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2,303 sqft 999-year unit at Parry Court (2005) near Kovan, asking $2.45M. The low headline PSF ($1,064) is purely a size artifact — this is a $2.45M oversized unit above the liquid band in an older small Kovan development with essentially no URA price signal (1 txn).",
+        "rating": "Neutral",
+        "rating_rationale": "$1,064 psf looks cheap but 2,303 sqft drives the price to $2.45M, above the deepest buyer band and into a small-development, 12-min-from-MRT context. Only 1 URA txn means no reliable appreciation read. 999-yr tenure and the low PSF give some floor value, but the oversized layout narrows the resale pool to family own-stayers, not investors.",
+        "red_flags": [
+          "Oversized 2,303 sqft unit — low PSF is a size artifact, total price $2.45M sits above liquid band",
+          "Only 1 URA transaction — no usable appreciation signal",
+          "12 min / 1.03 km from Kovan MRT — weak transit pull",
+          "Older 2005 development, likely small/boutique with limited facilities"
+        ],
+        "catalysts": [
+          "999-year tenure (quasi-freehold)",
+          "Low PSF leaves headroom if a family buyer values the space"
+        ],
+        "rental_assessment": "Large unit far from MRT rents inefficiently per sqft; Kovan tenant demand is moderate. Yield on $2.45M will be thin.",
+        "appreciation_assessment": "No reliable data (1 txn). District D19 OCR baseline ~3.7%, but boutique + oversized + transit distance argue for below-baseline liquidity-constrained appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "OCR baseline discounted for oversized/illiquid unit; no project-specific URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parry-court-25635326",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

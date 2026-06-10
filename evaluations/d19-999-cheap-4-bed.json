@@ -1,0 +1,65 @@
+{
+  "condo": "⭐️ D19 999, cheap 4 bed ⭐️",
+  "slug": "d19-999-cheap-4-bed",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2027-completion 999-year-leasehold 4BR in D19 (Hougang/Kovan area) at $2.4M / $1939 PSF, marketed with a promotional 'cheap' name. Near-freehold tenure and a family-sized layout are positives, but it's 1.16km from Kovan MRT, has no URA track record, and $1939 PSF is full developer/new-launch pricing for OCR D19.",
+      "rating_rationale": "999yr tenure is effectively freehold and the $2.4M quantum is at the upper edge of the still-workable family band. But this is an unbuilt 2027 new launch with no resale history, $1939 PSF is rich for D19 OCR, and 1.16km to Kovan means no walkable-MRT premium. The clickbait listing name and below-frontier 429 score reinforce that the price leaves little upside. Punggol Digital District/CRL benefit D19 broadly but this pocket is not at the centre of it.",
+      "red_flags": [
+        "New launch (TOP 2027) — no resale URA data; appreciation rate unverifiable and likely developer-inflated",
+        "$1939 PSF is full pricing for OCR D19",
+        "1.16km / 14 min to Kovan MRT — no station-proximity premium",
+        "Promotional listing title and below-frontier score (429) suggest weak relative value"
+      ],
+      "catalysts": [
+        "999-year leasehold — near-freehold value retention vs typical 99yr OCR stock",
+        "Brand-new completion (2027) commands a freshness premium and full tenancy appeal",
+        "D19 broadly benefits from Punggol Digital District and Cross Island Line (~2030)"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1938.61,
+        "beds": 4,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2027-completion 999-year-leasehold 4BR in D19 (Hougang/Kovan area) at $2.4M / $1939 PSF, marketed with a promotional 'cheap' name. Near-freehold tenure and a family-sized layout are positives, but it's 1.16km from Kovan MRT, has no URA track record, and $1939 PSF is full developer/new-launch pricing for OCR D19.",
+        "rating": "Neutral",
+        "rating_rationale": "999yr tenure is effectively freehold and the $2.4M quantum is at the upper edge of the still-workable family band. But this is an unbuilt 2027 new launch with no resale history, $1939 PSF is rich for D19 OCR, and 1.16km to Kovan means no walkable-MRT premium. The clickbait listing name and below-frontier 429 score reinforce that the price leaves little upside. Punggol Digital District/CRL benefit D19 broadly but this pocket is not at the centre of it.",
+        "red_flags": [
+          "New launch (TOP 2027) — no resale URA data; appreciation rate unverifiable and likely developer-inflated",
+          "$1939 PSF is full pricing for OCR D19",
+          "1.16km / 14 min to Kovan MRT — no station-proximity premium",
+          "Promotional listing title and below-frontier score (429) suggest weak relative value"
+        ],
+        "catalysts": [
+          "999-year leasehold — near-freehold value retention vs typical 99yr OCR stock",
+          "Brand-new completion (2027) commands a freshness premium and full tenancy appeal",
+          "D19 broadly benefits from Punggol Digital District and Cross Island Line (~2030)"
+        ],
+        "rental_assessment": "4BR rents to families in the Hougang/Serangoon catchment; yield modest (~3%) at $2.4M, and distance from MRT slightly caps rent. Family-only tenant pool.",
+        "appreciation_assessment": "No URA series; as a new launch at full pricing, near-term appreciation is likely muted until the developer premium is absorbed — model around the OCR ~3.7%/yr baseline.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR/D19 baseline — new launch with no resale URA data, full developer pricing"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d19-999-cheap-4-bed-500012815",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

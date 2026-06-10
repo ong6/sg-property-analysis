@@ -1,0 +1,61 @@
+{
+  "condo": "Hilbre28",
+  "slug": "hilbre28",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,410 sqft 4BR at Hilbre28, a small 999-year-tenure D19 (Serangoon/Kovan fringe) development, at $2.3M / $1,631 psf. Near-freehold tenure is a plus, but only 9 URA txns makes the 4.3%/yr rate unreliable and the boutique scale limits liquidity.",
+      "rating_rationale": "999-year tenure (effectively freehold) and a reasonable $2.3M quantum at $1,631 psf vs a $1,649 median are the positives. But the appreciation rate rests on just 9 transactions — statistically unreliable, so the 4.3%/yr can't be trusted. Hilbre28 is a small boutique development (~69 units) with no MRT listed in the dossier, meaning shallow resale liquidity and limited amenities. A 4BR in a niche small dev is a hard, family-only resale.",
+      "red_flags": [
+        "Only 9 URA txns — appreciation rate unreliable",
+        "Small boutique development — thin liquidity, limited facilities",
+        "No MRT proximity listed; 4BR niche family-only resale"
+      ],
+      "catalysts": [
+        "999-year tenure, near-freehold (no meaningful lease decay)",
+        "Listing roughly at project median PSF (fairly priced)",
+        "D19 broad growth story (PDD/CRL) in the wider region"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1631.21,
+        "beds": 4,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,410 sqft 4BR at Hilbre28, a small 999-year-tenure D19 (Serangoon/Kovan fringe) development, at $2.3M / $1,631 psf. Near-freehold tenure is a plus, but only 9 URA txns makes the 4.3%/yr rate unreliable and the boutique scale limits liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "999-year tenure (effectively freehold) and a reasonable $2.3M quantum at $1,631 psf vs a $1,649 median are the positives. But the appreciation rate rests on just 9 transactions — statistically unreliable, so the 4.3%/yr can't be trusted. Hilbre28 is a small boutique development (~69 units) with no MRT listed in the dossier, meaning shallow resale liquidity and limited amenities. A 4BR in a niche small dev is a hard, family-only resale.",
+        "red_flags": [
+          "Only 9 URA txns — appreciation rate unreliable",
+          "Small boutique development — thin liquidity, limited facilities",
+          "No MRT proximity listed; 4BR niche family-only resale"
+        ],
+        "catalysts": [
+          "999-year tenure, near-freehold (no meaningful lease decay)",
+          "Listing roughly at project median PSF (fairly priced)",
+          "D19 broad growth story (PDD/CRL) in the wider region"
+        ],
+        "rental_assessment": "4BR family-let in a small Kovan/Serangoon-fringe dev; moderate demand, modest yield. Tenant pool not deep.",
+        "appreciation_assessment": "Rate is unreliable on 9 txns. Near-freehold tenure provides downside protection but no specific catalyst; treat as market-rate at best.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hilbre28-60037111",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

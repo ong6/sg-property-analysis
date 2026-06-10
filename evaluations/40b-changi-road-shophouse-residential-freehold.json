@@ -1,0 +1,64 @@
+{
+  "condo": "40B Changi Road. Shophouse residential! Freehold!",
+  "slug": "40b-changi-road-shophouse-residential-freehold",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold residential shophouse on Changi Road (D14), 2,293 sqft at $2.45M / $1,068 psf — not a condo. The low PSF is a strip-format artifact; shophouses are an illiquid, specialist asset class the condo framework can't properly price, with no built_year and no URA condo comps.",
+      "rating_rationale": "This is a freehold shophouse, not a stratified condo — the $1,068 psf cannot be compared to apartment PSF, and the 2,293 sqft / $2.45M quantum sits in a niche, illiquid commercial-residential market with a very narrow buyer pool. No built_year and no URA transaction match means the algorithm is essentially guessing (score_1000 691 is unreliable here). Shophouses can be excellent assets for the right specialist buyer, but as an investment graded on the condo rubric this is out-of-scope and uncertain — Neutral with low confidence.",
+      "red_flags": [
+        "Shophouse, not a condo — outside the comparable framework",
+        "No built_year, no URA comps — algorithm scoring unreliable",
+        "Illiquid niche asset class with a narrow specialist buyer pool",
+        "PSF not comparable to apartment stock"
+      ],
+      "catalysts": [
+        "Freehold conservation/shophouse scarcity in a central-east location",
+        "Eunos MRT within ~860m",
+        "Mixed-use/commercial-residential flexibility"
+      ],
+      "as_of": {
+        "price": 2450000,
+        "psf": 1068.47,
+        "beds": 3,
+        "sqft": 2293.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold residential shophouse on Changi Road (D14), 2,293 sqft at $2.45M / $1,068 psf — not a condo. The low PSF is a strip-format artifact; shophouses are an illiquid, specialist asset class the condo framework can't properly price, with no built_year and no URA condo comps.",
+        "rating": "Neutral",
+        "rating_rationale": "This is a freehold shophouse, not a stratified condo — the $1,068 psf cannot be compared to apartment PSF, and the 2,293 sqft / $2.45M quantum sits in a niche, illiquid commercial-residential market with a very narrow buyer pool. No built_year and no URA transaction match means the algorithm is essentially guessing (score_1000 691 is unreliable here). Shophouses can be excellent assets for the right specialist buyer, but as an investment graded on the condo rubric this is out-of-scope and uncertain — Neutral with low confidence.",
+        "red_flags": [
+          "Shophouse, not a condo — outside the comparable framework",
+          "No built_year, no URA comps — algorithm scoring unreliable",
+          "Illiquid niche asset class with a narrow specialist buyer pool",
+          "PSF not comparable to apartment stock"
+        ],
+        "catalysts": [
+          "Freehold conservation/shophouse scarcity in a central-east location",
+          "Eunos MRT within ~860m",
+          "Mixed-use/commercial-residential flexibility"
+        ],
+        "rental_assessment": "Shophouse rental depends heavily on use class and condition; not comparable to condo yield and harder to assess without inspection.",
+        "appreciation_assessment": "Shophouse values move on their own (conservation status, commercial demand) — no condo URA basis applies; cannot confidently project.",
+        "stack_notes": null,
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-40b-changi-road-shophouse-residential-freehold-25476859",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

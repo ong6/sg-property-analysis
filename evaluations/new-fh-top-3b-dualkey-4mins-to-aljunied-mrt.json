@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️ new FH, TOP, 3b dualkey, 4mins to Aljunied MRT ⭐️",
+  "slug": "new-fh-top-3b-dualkey-4mins-to-aljunied-mrt",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 3BR dual-key, just-TOP (2025), 300m / 4-min walk to Aljunied MRT (EW9) in D14 at $2.18M / $1793 PSF. Strong location and tenure, but it's an anonymized small-boutique Geylang-fringe listing with zero URA appreciation/transaction data to verify pricing or resale liquidity.",
+      "rating_rationale": "Genuine positives: freehold, brand-new, 300m to EW9, dual-key flexibility for rental yield, and Paya Lebar Central catalyst nearby. But the entire technical block is null (no ura_txn_count, no median PSF, no appreciation) — this is a thin, unverifiable boutique with a marketing-spun listing name, typical of small Geylang-fringe FH blocks that are illiquid on exit. $1793 PSF for the location is fair, not cheap. Can't rate Buy without resale comps.",
+      "red_flags": [
+        "No URA appreciation, transaction count, or median PSF — pricing unverifiable",
+        "Likely small boutique block — limited liquidity and amenities",
+        "Geylang-fringe location carries some stigma and uneven resale demand"
+      ],
+      "catalysts": [
+        "300m to Aljunied MRT (EW9) — strong transit access",
+        "Freehold tenure plus Paya Lebar Central redevelopment nearby",
+        "Dual-key layout supports rental income / multigen flexibility"
+      ],
+      "as_of": {
+        "price": 2180000,
+        "psf": 1792.76,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3BR dual-key, just-TOP (2025), 300m / 4-min walk to Aljunied MRT (EW9) in D14 at $2.18M / $1793 PSF. Strong location and tenure, but it's an anonymized small-boutique Geylang-fringe listing with zero URA appreciation/transaction data to verify pricing or resale liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold, brand-new, 300m to EW9, dual-key flexibility for rental yield, and Paya Lebar Central catalyst nearby. But the entire technical block is null (no ura_txn_count, no median PSF, no appreciation) — this is a thin, unverifiable boutique with a marketing-spun listing name, typical of small Geylang-fringe FH blocks that are illiquid on exit. $1793 PSF for the location is fair, not cheap. Can't rate Buy without resale comps.",
+        "red_flags": [
+          "No URA appreciation, transaction count, or median PSF — pricing unverifiable",
+          "Likely small boutique block — limited liquidity and amenities",
+          "Geylang-fringe location carries some stigma and uneven resale demand"
+        ],
+        "catalysts": [
+          "300m to Aljunied MRT (EW9) — strong transit access",
+          "Freehold tenure plus Paya Lebar Central redevelopment nearby",
+          "Dual-key layout supports rental income / multigen flexibility"
+        ],
+        "rental_assessment": "Strong on paper — dual-key near MRT close to CBD/Paya Lebar draws a deep tenant pool; the widest demand of any unit here.",
+        "appreciation_assessment": "Unquantifiable from the dossier. Freehold near-MRT D14 should hold value, but boutique scale and Geylang fringe cap upside; treat as own-stay-grade rather than a conviction investment buy.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-new-fh-top-3b-dualkey-4mins-to-aljunied-mrt-500012657",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "Vibes @ Upper Serangoon",
+  "slug": "vibes-upper-serangoon",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold shoebox 1BR (431sqft) at Vibes @ Upper Serangoon, a 2016 boutique D19 development, at $735k / $1,705 PSF. Small ticket and freehold tenure near Serangoon MRT, but $1,705 PSF is high for a tiny OCR shoebox and the arena profile is dismal (Elo 946, 87-212-16). Niche investor product with weak liquidity.",
+      "rating_rationale": "$1,705 PSF is rich for a 431sqft OCR shoebox, and 1BR shoebox in Upper Serangoon is a narrow, yield-only product with thin resale liquidity. No URA appreciation/median data (regional prior). One of the worst records in the batch — Elo 946 with 87-212-16. Serangoon MRT 650m and freehold tenure are positives, but shoebox capital growth consistently lags and the entry PSF leaves no margin. As an investment hold the appreciation case is absent and the exit pool is shallow.",
+      "red_flags": [
+        "$1,705 PSF high for a 431sqft OCR shoebox",
+        "Shoebox 1BR — narrow, yield-only resale pool",
+        "No URA appreciation/median data",
+        "Very weak arena record (87-212-16, Elo 946)",
+        "Boutique-scale development — thin liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Serangoon MRT (NEL/CCL interchange, 650m)"
+      ],
+      "as_of": {
+        "price": 735000,
+        "psf": 1705.34,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold shoebox 1BR (431sqft) at Vibes @ Upper Serangoon, a 2016 boutique D19 development, at $735k / $1,705 PSF. Small ticket and freehold tenure near Serangoon MRT, but $1,705 PSF is high for a tiny OCR shoebox and the arena profile is dismal (Elo 946, 87-212-16). Niche investor product with weak liquidity.",
+        "rating": "Avoid",
+        "rating_rationale": "$1,705 PSF is rich for a 431sqft OCR shoebox, and 1BR shoebox in Upper Serangoon is a narrow, yield-only product with thin resale liquidity. No URA appreciation/median data (regional prior). One of the worst records in the batch — Elo 946 with 87-212-16. Serangoon MRT 650m and freehold tenure are positives, but shoebox capital growth consistently lags and the entry PSF leaves no margin. As an investment hold the appreciation case is absent and the exit pool is shallow.",
+        "red_flags": [
+          "$1,705 PSF high for a 431sqft OCR shoebox",
+          "Shoebox 1BR — narrow, yield-only resale pool",
+          "No URA appreciation/median data",
+          "Very weak arena record (87-212-16, Elo 946)",
+          "Boutique-scale development — thin liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Serangoon MRT (NEL/CCL interchange, 650m)"
+        ],
+        "rental_assessment": "Shoebox near Serangoon interchange rents to singles — yield is the only real strength, but small absolute rent.",
+        "appreciation_assessment": "Shoebox appreciation lags larger units; high entry PSF and no data point to flat-to-modest growth.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.8,
+        "appreciation_rate_source": "OCR shoebox prior (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vibes-upper-serangoon-500087530",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

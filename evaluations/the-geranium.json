@@ -1,0 +1,63 @@
+{
+  "condo": "The Geranium",
+  "slug": "the-geranium",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 646 sqft freehold 1BR in D15 at $1857 PSF / $1.2M, but 1.08km from the nearest MRT and asking ~16% ABOVE the project's $1595 URA median. The flagged ~10.1% CAGR (19 txns) is implausibly high and almost certainly a small-sample artifact.",
+      "rating_rationale": "The asking $1857 PSF is ~16% above the project median of $1595 — a clear overpricing on a 1BR. The headline 10.1% CAGR (19 txns) is statistically dubious and shouldn't be underwritten as forward growth. Poor MRT access (1.08km, 13-min walk) weakens both rental and resale, and $1.2M is a steep quantum for a 1BR. Losing Elo record (144-170). Overpriced + 1BR + far from MRT — Avoid.",
+      "red_flags": [
+        "Asking ~16% above project URA median ($1857 vs $1595)",
+        "10.1% CAGR on 19 txns is implausible — small-sample distortion, not a reliable rate",
+        "1.08km / 13-min walk to MRT — weak connectivity for a 1BR",
+        "$1.2M is a high quantum for a single-bedroom unit",
+        "2007 build — 19 years old"
+      ],
+      "catalysts": [
+        "Freehold D15 East Coast lifestyle district",
+        "East Coast owner-occupier demand depth"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1857.59,
+        "beds": 1,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 646 sqft freehold 1BR in D15 at $1857 PSF / $1.2M, but 1.08km from the nearest MRT and asking ~16% ABOVE the project's $1595 URA median. The flagged ~10.1% CAGR (19 txns) is implausibly high and almost certainly a small-sample artifact.",
+        "rating": "Avoid",
+        "rating_rationale": "The asking $1857 PSF is ~16% above the project median of $1595 — a clear overpricing on a 1BR. The headline 10.1% CAGR (19 txns) is statistically dubious and shouldn't be underwritten as forward growth. Poor MRT access (1.08km, 13-min walk) weakens both rental and resale, and $1.2M is a steep quantum for a 1BR. Losing Elo record (144-170). Overpriced + 1BR + far from MRT — Avoid.",
+        "red_flags": [
+          "Asking ~16% above project URA median ($1857 vs $1595)",
+          "10.1% CAGR on 19 txns is implausible — small-sample distortion, not a reliable rate",
+          "1.08km / 13-min walk to MRT — weak connectivity for a 1BR",
+          "$1.2M is a high quantum for a single-bedroom unit",
+          "2007 build — 19 years old"
+        ],
+        "catalysts": [
+          "Freehold D15 East Coast lifestyle district",
+          "East Coast owner-occupier demand depth"
+        ],
+        "rental_assessment": "Distance from MRT and the 1BR format cap tenant appeal; rents won't justify the $1.2M quantum, implying a sub-3.5% yield.",
+        "appreciation_assessment": "Disregard the 10.1% headline; paying ~16% over median for a poorly-connected 1BR is the wrong setup — expect underperformance versus better-located D15 stock.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-geranium-60030397",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

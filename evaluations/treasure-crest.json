@@ -1,0 +1,63 @@
+{
+  "condo": "Treasure Crest",
+  "slug": "treasure-crest",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An efficient 958 sqft 99-year 3BR at Treasure Crest (a 2018 EC) in D19 Sengkang at $1.53M ($1,597 PSF), just 180m from Cheng Lim LRT. Well-sized, newish, large-development EC at an accessible quantum — the cleanest value profile in a weak batch, though appreciation upside is EC-capped.",
+      "rating_rationale": "Treasure Crest is a large former Executive Condo (well over 500 units) in Sengkang, 180m from Cheng Lim LRT, with an efficient 958 sqft 3BR at a sensible $1.53M / $1,597 PSF — comfortably in the deep HDB-upgrader demand band. High score_1000 (636) and cost-frontier status reflect good value-for-price. The offsetting factors are LRT-only access, an EC's appreciation ceiling, and no URA data to confirm the trend. The best risk-reward in the batch but still a measured Neutral given OCR/EC ceiling.",
+      "red_flags": [
+        "Former EC — appreciation tends to plateau after privatisation gains",
+        "LRT-only immediate access (Cheng Lim SW1)",
+        "No URA appreciation/txn data; arena record sub-.500 (281-284)",
+        "OCR Sengkang — modest standalone catalysts"
+      ],
+      "catalysts": [
+        "Large-development EC — strong liquidity and broad upgrader buyer pool",
+        "180m to Cheng Lim LRT — rare immediate transit access",
+        "Efficient 958 sqft 3BR at $1.53M — deep-demand quantum and good value-for-price (score 636, on frontier)"
+      ],
+      "as_of": {
+        "price": 1530000,
+        "psf": 1597.08,
+        "beds": 3,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An efficient 958 sqft 99-year 3BR at Treasure Crest (a 2018 EC) in D19 Sengkang at $1.53M ($1,597 PSF), just 180m from Cheng Lim LRT. Well-sized, newish, large-development EC at an accessible quantum — the cleanest value profile in a weak batch, though appreciation upside is EC-capped.",
+        "rating": "Neutral",
+        "rating_rationale": "Treasure Crest is a large former Executive Condo (well over 500 units) in Sengkang, 180m from Cheng Lim LRT, with an efficient 958 sqft 3BR at a sensible $1.53M / $1,597 PSF — comfortably in the deep HDB-upgrader demand band. High score_1000 (636) and cost-frontier status reflect good value-for-price. The offsetting factors are LRT-only access, an EC's appreciation ceiling, and no URA data to confirm the trend. The best risk-reward in the batch but still a measured Neutral given OCR/EC ceiling.",
+        "red_flags": [
+          "Former EC — appreciation tends to plateau after privatisation gains",
+          "LRT-only immediate access (Cheng Lim SW1)",
+          "No URA appreciation/txn data; arena record sub-.500 (281-284)",
+          "OCR Sengkang — modest standalone catalysts"
+        ],
+        "catalysts": [
+          "Large-development EC — strong liquidity and broad upgrader buyer pool",
+          "180m to Cheng Lim LRT — rare immediate transit access",
+          "Efficient 958 sqft 3BR at $1.53M — deep-demand quantum and good value-for-price (score 636, on frontier)"
+        ],
+        "rental_assessment": "Sengkang family rental demand is steady; an efficient 3BR in a large amenity-rich EC rents reliably to families/upgrader tenants with reasonable yield for the band.",
+        "appreciation_assessment": "ECs in large developments appreciate steadily but cap out as the private premium is realized; expect dependable OCR-tracking growth rather than outperformance, supported by good entry value.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasure-crest-500148020",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

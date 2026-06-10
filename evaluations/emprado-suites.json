@@ -1,0 +1,61 @@
+{
+  "condo": "Emprado Suites",
+  "slug": "emprado-suites",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold but very large 1,249 sqft 2BR in a small D15 block at $1,585 PSF (below the $1,702 median) priced at $1.98M, with appreciation backed by only 6 txns. The freehold tenure and sub-median PSF look cheap, but the unit is heavily oversized for a 2BR and the data is too thin to trust.",
+      "rating_rationale": "The sub-median $1,585 PSF is flattering only because 1,249 sqft is enormous for a 2BR — absolute price is a stiff $1.98M for two bedrooms, which is poor liquidity. The 5.45% rate rests on just 6 txns (unreliable) in a small boutique development. Freehold and Marine Terrace TEL (~690m) are positives but don't rescue the niche format.",
+      "red_flags": [
+        "Only 6 txns — appreciation unreliable",
+        "1,249 sqft oversized 2BR; $1.98M quantum for 2BR is illiquid",
+        "Small boutique development, shallow buyer pool"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "TE27 Marine Terrace MRT (TEL) ~690m",
+        "Sub-median PSF entry vs URA $1,702"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 1585.27,
+        "beds": 2,
+        "sqft": 1249.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold but very large 1,249 sqft 2BR in a small D15 block at $1,585 PSF (below the $1,702 median) priced at $1.98M, with appreciation backed by only 6 txns. The freehold tenure and sub-median PSF look cheap, but the unit is heavily oversized for a 2BR and the data is too thin to trust.",
+        "rating": "Neutral",
+        "rating_rationale": "The sub-median $1,585 PSF is flattering only because 1,249 sqft is enormous for a 2BR — absolute price is a stiff $1.98M for two bedrooms, which is poor liquidity. The 5.45% rate rests on just 6 txns (unreliable) in a small boutique development. Freehold and Marine Terrace TEL (~690m) are positives but don't rescue the niche format.",
+        "red_flags": [
+          "Only 6 txns — appreciation unreliable",
+          "1,249 sqft oversized 2BR; $1.98M quantum for 2BR is illiquid",
+          "Small boutique development, shallow buyer pool"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "TE27 Marine Terrace MRT (TEL) ~690m",
+          "Sub-median PSF entry vs URA $1,702"
+        ],
+        "rental_assessment": "Large freehold 2BR in East Coast rents to couples/small families with TEL access, but the high quantum yields poorly.",
+        "appreciation_assessment": "6-txn 5.45% rate is not dependable; freehold East Coast should track district averages, with the oversized format capping resale demand.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-emprado-suites-60077079",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

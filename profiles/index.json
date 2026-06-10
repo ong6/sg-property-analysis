@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-06-09",
+  "condos": {
+    "the-luxurie": {
+      "condo": "The Luxurie",
+      "district": "D19",
+      "confidence": "medium",
+      "stack_count": 0,
+      "layout_count": 6,
+      "researched_at": "2026-06-08"
+    }
+  }
+}

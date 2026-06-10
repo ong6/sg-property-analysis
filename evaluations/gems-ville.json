@@ -1,0 +1,65 @@
+{
+  "condo": "Gems Ville",
+  "slug": "gems-ville",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Newly-completed (2025) freehold 4BR (1,216sqft) at $1,956 PSF in D14 Geylang/Sims, 820m from Aljunied MRT, priced just below the $1,996 median. A compact 1,216sqft '4BR' is a tightly-stacked layout, and the resale-only trend is sharply negative at -5.2%/yr on 12 txns — a clear warning on a small new-launch boutique.",
+      "rating_rationale": "The negative resale-only appreciation (-5.2%/yr on 12 txns) is the decisive signal: early resales at Gems Ville are coming below developer launch prices, a classic small-boutique new-launch giveback. A 1,216sqft '4BR' is a squeezed layout, Gems Ville is a small development (thin liquidity), and at $1,956 PSF in Geylang-fringe D14 you'd be buying into a falling early-resale market. Freehold doesn't offset a structurally weak liquidity/appreciation profile.",
+      "red_flags": [
+        "Resale-only appreciation -5.2%/yr — early resales below launch price",
+        "Small boutique development — thin liquidity (12 txns, new-launch-biased)",
+        "1,216sqft for a 4BR is a compact, tightly-stacked layout",
+        "D14 Geylang/Sims fringe stigma; 820m from MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Brand-new (2025) build",
+        "820m to Aljunied MRT; city-fringe location"
+      ],
+      "as_of": {
+        "price": 2378000,
+        "psf": 1955.59,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Newly-completed (2025) freehold 4BR (1,216sqft) at $1,956 PSF in D14 Geylang/Sims, 820m from Aljunied MRT, priced just below the $1,996 median. A compact 1,216sqft '4BR' is a tightly-stacked layout, and the resale-only trend is sharply negative at -5.2%/yr on 12 txns — a clear warning on a small new-launch boutique.",
+        "rating": "Avoid",
+        "rating_rationale": "The negative resale-only appreciation (-5.2%/yr on 12 txns) is the decisive signal: early resales at Gems Ville are coming below developer launch prices, a classic small-boutique new-launch giveback. A 1,216sqft '4BR' is a squeezed layout, Gems Ville is a small development (thin liquidity), and at $1,956 PSF in Geylang-fringe D14 you'd be buying into a falling early-resale market. Freehold doesn't offset a structurally weak liquidity/appreciation profile.",
+        "red_flags": [
+          "Resale-only appreciation -5.2%/yr — early resales below launch price",
+          "Small boutique development — thin liquidity (12 txns, new-launch-biased)",
+          "1,216sqft for a 4BR is a compact, tightly-stacked layout",
+          "D14 Geylang/Sims fringe stigma; 820m from MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Brand-new (2025) build",
+          "820m to Aljunied MRT; city-fringe location"
+        ],
+        "rental_assessment": "A compact freehold 4BR in the Geylang fringe rents to families/sharers, but the squeezed layout and location cap rent and yield.",
+        "appreciation_assessment": "Negative early resale trend is a strong caution — small new-launch boutiques like this commonly underperform as developer pricing unwinds; not a bankable appreciation story.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 0.0,
+        "appreciation_rate_source": "URA resale-only -5.2%/yr (12 txns) signals giveback; held near flat as best case"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-gems-ville-60003821",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

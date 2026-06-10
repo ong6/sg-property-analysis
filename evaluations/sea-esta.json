@@ -1,0 +1,117 @@
+{
+  "condo": "Sea Esta",
+  "slug": "sea-esta",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A large 1787sqft 4BR in Sea Esta, D18 (Pasir Ris/Tampines East) at $2.3M / $1287 psf — about 3% below the $1327 median, with a reliable 4.6% CAGR over 103 transactions. Solid OCR fundamentals with CRL/DTL-extension catalysts; the constraints are a high quantum for a 4BR and no MRT proximity listed.",
+      "rating_rationale": "$1287 psf is ~3% under median and the 4.6% appreciation is reliable (103 txns) and above the OCR baseline — D18 benefits from Tampines Regional Centre and the CRL + DTL extension. $2.3M for a genuine 1787sqft 4BR is a fair family-quantum (not an oversized-PSF trick — it's a real large 4BR). Liquidity caveats: $2.3M and 4BR narrow the buyer pool, and no MRT is listed (Pasir Ris fringe). On balance the verified appreciation, below-median entry and D18 catalysts make it a Buy for a family-targeted hold.",
+      "red_flags": [
+        "$2.3M + 4BR — narrower (family-only) buyer pool above the deepest-liquidity band",
+        "No MRT proximity listed — Pasir Ris fringe location, transit-dependent on bus/car",
+        "99yr leasehold (2016) at OCR PSF"
+      ],
+      "catalysts": [
+        "Reliable 4.6% CAGR (103 txns), ~3% below project median",
+        "Cross Island Line + Downtown Line extension and Tampines Regional Centre (D18)",
+        "Pasir Ris coastal/Bayshore-adjacent precinct growth"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1287.07,
+        "beds": 4,
+        "sqft": 1787.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1787sqft 4BR in Sea Esta, D18 (Pasir Ris/Tampines East) at $2.3M / $1287 psf — about 3% below the $1327 median, with a reliable 4.6% CAGR over 103 transactions. Solid OCR fundamentals with CRL/DTL-extension catalysts; the constraints are a high quantum for a 4BR and no MRT proximity listed.",
+        "rating": "Buy",
+        "rating_rationale": "$1287 psf is ~3% under median and the 4.6% appreciation is reliable (103 txns) and above the OCR baseline — D18 benefits from Tampines Regional Centre and the CRL + DTL extension. $2.3M for a genuine 1787sqft 4BR is a fair family-quantum (not an oversized-PSF trick — it's a real large 4BR). Liquidity caveats: $2.3M and 4BR narrow the buyer pool, and no MRT is listed (Pasir Ris fringe). On balance the verified appreciation, below-median entry and D18 catalysts make it a Buy for a family-targeted hold.",
+        "red_flags": [
+          "$2.3M + 4BR — narrower (family-only) buyer pool above the deepest-liquidity band",
+          "No MRT proximity listed — Pasir Ris fringe location, transit-dependent on bus/car",
+          "99yr leasehold (2016) at OCR PSF"
+        ],
+        "catalysts": [
+          "Reliable 4.6% CAGR (103 txns), ~3% below project median",
+          "Cross Island Line + Downtown Line extension and Tampines Regional Centre (D18)",
+          "Pasir Ris coastal/Bayshore-adjacent precinct growth"
+        ],
+        "rental_assessment": "4BR is family-only (narrower tenant pool), but D18 Pasir Ris/Tampines has steady HDB-upgrader and family-tenant demand; yield modest on the $2.3M quantum.",
+        "appreciation_assessment": "4.6% over 103 txns is reliable and above OCR baseline; D18 infrastructure catalysts support continuation. Below-median entry adds cushion.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.6,
+        "appreciation_rate_source": "URA resale-only, 103 txns (reliable)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sea-esta-500019512",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 3BR at Sea Esta (Pasir Ris, OCR) asking ~S$1,205 psf against a verified 12-month transacted average of ~S$1,325-1,347 psf — a genuine, web-confirmed discount of roughly 9-10%, backed by a deep 103-transaction history.",
+      "rating_rationale": "The algo's very_low_psf flag and -21.6% age-adjusted premium hold up against real transactions: SRX/EdgeProp show 12-month sales averaging S$1,325-1,347 psf (Nov 2025 high of S$1,608 psf for a same-size 1,119 sqft unit), so the S$1,205 psf ask is ~9-10% below recent comps rather than a mis-scrape. The appreciation signal rests on 103 transactions (robust, not a quirk), and the unit sits in the OCR — the strongest forward region under v3.4 priors (realized fwd OCR ~+4.0%). The -13.3% cohort premium on 13 txns adds corroboration. Confidence is medium not high because the catalyst is generic (mature Pasir Ris, no dated MRT/zone trigger) and the model explains <10% of forward variance; the edge here is verified relative value, which is the robust signal.",
+      "red_flags": [
+        "99-year leasehold from 2012 (TOP 2015) — ~86 years left, lease decay begins to weigh over a 5-7yr hold",
+        "very_low_psf flag — verified as real here, but Pasir Ris is a softer OCR pocket with limited price-growth catalysts",
+        "Pasir Ris is far from CBD; rental tenant pool is narrower than central OCR estates"
+      ],
+      "catalysts": [
+        "Asking ~9-10% below verified recent same-size transactions (real cheap-vs-comp value)",
+        "OCR location — best realized forward-return region under v3.4 backtest priors",
+        "Pasir Ris town centre / Pasir Ris MRT (EWL + future CRL Cross Island Line interchange) precinct rejuvenation"
+      ],
+      "as_of": {
+        "price": 1348888,
+        "psf": 1205.44,
+        "beds": 3,
+        "sqft": 1119
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 3BR at Sea Esta (Pasir Ris, OCR) asking ~S$1,205 psf against a verified 12-month transacted average of ~S$1,325-1,347 psf — a genuine, web-confirmed discount of roughly 9-10%, backed by a deep 103-transaction history.",
+        "rating_rationale": "The algo's very_low_psf flag and -21.6% age-adjusted premium hold up against real transactions: SRX/EdgeProp show 12-month sales averaging S$1,325-1,347 psf (Nov 2025 high of S$1,608 psf for a same-size 1,119 sqft unit), so the S$1,205 psf ask is ~9-10% below recent comps rather than a mis-scrape. The appreciation signal rests on 103 transactions (robust, not a quirk), and the unit sits in the OCR — the strongest forward region under v3.4 priors (realized fwd OCR ~+4.0%). The -13.3% cohort premium on 13 txns adds corroboration. Confidence is medium not high because the catalyst is generic (mature Pasir Ris, no dated MRT/zone trigger) and the model explains <10% of forward variance; the edge here is verified relative value, which is the robust signal.",
+        "red_flags": [
+          "99-year leasehold from 2012 (TOP 2015) — ~86 years left, lease decay begins to weigh over a 5-7yr hold",
+          "very_low_psf flag — verified as real here, but Pasir Ris is a softer OCR pocket with limited price-growth catalysts",
+          "Pasir Ris is far from CBD; rental tenant pool is narrower than central OCR estates"
+        ],
+        "catalysts": [
+          "Asking ~9-10% below verified recent same-size transactions (real cheap-vs-comp value)",
+          "OCR location — best realized forward-return region under v3.4 backtest priors",
+          "Pasir Ris town centre / Pasir Ris MRT (EWL + future CRL Cross Island Line interchange) precinct rejuvenation"
+        ],
+        "rental_assessment": "OCR 3BR; gross yield likely in the ~3.0-3.5% range typical for Pasir Ris family stock — adequate but not standout. Larger 3BR units rent slower than 1-2BR.",
+        "appreciation_assessment": "Trailing 4.62% 5yr CAGR is for story only (near-zero forward power). The forward case rests on verified relative cheapness plus OCR region tailwind — modest, not a high-CAGR bet."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sea-esta-500161290",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

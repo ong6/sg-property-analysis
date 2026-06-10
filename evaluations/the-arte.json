@@ -1,0 +1,61 @@
+{
+  "condo": "The Arte",
+  "slug": "the-arte",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 2BR in Balestier/Toa Payoh fringe (D12), 750m from the future-completed TE10 Mount Pleasant TEL station, listed at $2,026 psf — ~5% below the $2,137 URA median. Freehold city-fringe with a 39-txn series at 6.4%/yr; the modest discount and TEL proximity make a reasonable but not standout case.",
+      "rating_rationale": "PSF $2,026 is ~5% under the $2,137 URA median — a small genuine discount on a freehold city-fringe asset, and the 1,055 sqft 2BR is a generous-but-usable size. The 6.4%/yr URA rate rests on 39 transactions (acceptable reliability). Location is the swing factor: D12 Balestier is an established central-fringe locale 750m from TE10 Mount Pleasant on the Thomson-East Coast Line, giving solid CBD/Orchard connectivity. But $2.14M for a fringe 2BR is at the upper end of the 2BR liquidity band, Balestier is a busy/dense pocket (some main-road noise depending on stack), and 6.4% is good-not-exceptional. Balanced — a Neutral with a slight positive tilt from freehold + below-median pricing.",
+      "red_flags": [
+        "$2.14M is high for a 2BR — upper edge of the liquid band",
+        "Balestier density/main-road noise risk on lower or road-facing stacks",
+        "39-txn series — moderate reliability"
+      ],
+      "catalysts": [
+        "TE10 Mount Pleasant TEL station 750m — central connectivity",
+        "Freehold city-fringe location near Novena medical hub and CBD",
+        "~5% below URA median entry"
+      ],
+      "as_of": {
+        "price": 2138000,
+        "psf": 2026.54,
+        "beds": 2,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR in Balestier/Toa Payoh fringe (D12), 750m from the future-completed TE10 Mount Pleasant TEL station, listed at $2,026 psf — ~5% below the $2,137 URA median. Freehold city-fringe with a 39-txn series at 6.4%/yr; the modest discount and TEL proximity make a reasonable but not standout case.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $2,026 is ~5% under the $2,137 URA median — a small genuine discount on a freehold city-fringe asset, and the 1,055 sqft 2BR is a generous-but-usable size. The 6.4%/yr URA rate rests on 39 transactions (acceptable reliability). Location is the swing factor: D12 Balestier is an established central-fringe locale 750m from TE10 Mount Pleasant on the Thomson-East Coast Line, giving solid CBD/Orchard connectivity. But $2.14M for a fringe 2BR is at the upper end of the 2BR liquidity band, Balestier is a busy/dense pocket (some main-road noise depending on stack), and 6.4% is good-not-exceptional. Balanced — a Neutral with a slight positive tilt from freehold + below-median pricing.",
+        "red_flags": [
+          "$2.14M is high for a 2BR — upper edge of the liquid band",
+          "Balestier density/main-road noise risk on lower or road-facing stacks",
+          "39-txn series — moderate reliability"
+        ],
+        "catalysts": [
+          "TE10 Mount Pleasant TEL station 750m — central connectivity",
+          "Freehold city-fringe location near Novena medical hub and CBD",
+          "~5% below URA median entry"
+        ],
+        "rental_assessment": "Strong city-fringe 2BR tenant demand (Novena hospitals, CBD commuters); freehold and TEL support steady rental.",
+        "appreciation_assessment": "6.4%/yr URA on freehold city-fringe is credible; modest below-median entry adds a small cushion, expect around district-typical forward.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-arte-500064225",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

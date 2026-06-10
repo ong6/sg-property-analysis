@@ -1,0 +1,65 @@
+{
+  "condo": "The Amery",
+  "slug": "the-amery",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 4BR (1528sqft) at The Amery, a 2012 D15 development, at $3.30M / $2,160 PSF — priced ~14% above the $1,888 URA median, above the liquid band, with the worst technical score in the batch (374). The 8.4% URA rate is built on only 7 txns and cannot be trusted.",
+      "rating_rationale": "$2,160 PSF vs $1,888 URA median is a ~14% premium, and $3.30M pushes past the liquid sweet spot into a thinner buyer pool. Score 374 / Elo 1214 is the lowest in the batch. The headline 8.43%/yr rests on just 7 transactions — statistically meaningless. Marine Terrace MRT is 1.18km (not walkable). Freehold + East Coast are genuine, but you are overpaying versus the district's own median for an aging large unit with weak liquidity signals — poor risk/reward.",
+      "red_flags": [
+        "$2,160 PSF ~14% above project URA median (overpriced)",
+        "$3.3M above liquid band — thinner exit pool",
+        "URA 8.4% from only 7 txns — unreliable",
+        "Lowest technical score in batch (374)",
+        "MRT 1.18km, not walkable"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15",
+        "East Coast lifestyle / eventual TEL access"
+      ],
+      "as_of": {
+        "price": 3300000,
+        "psf": 2159.69,
+        "beds": 4,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 4BR (1528sqft) at The Amery, a 2012 D15 development, at $3.30M / $2,160 PSF — priced ~14% above the $1,888 URA median, above the liquid band, with the worst technical score in the batch (374). The 8.4% URA rate is built on only 7 txns and cannot be trusted.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,160 PSF vs $1,888 URA median is a ~14% premium, and $3.30M pushes past the liquid sweet spot into a thinner buyer pool. Score 374 / Elo 1214 is the lowest in the batch. The headline 8.43%/yr rests on just 7 transactions — statistically meaningless. Marine Terrace MRT is 1.18km (not walkable). Freehold + East Coast are genuine, but you are overpaying versus the district's own median for an aging large unit with weak liquidity signals — poor risk/reward.",
+        "red_flags": [
+          "$2,160 PSF ~14% above project URA median (overpriced)",
+          "$3.3M above liquid band — thinner exit pool",
+          "URA 8.4% from only 7 txns — unreliable",
+          "Lowest technical score in batch (374)",
+          "MRT 1.18km, not walkable"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15",
+          "East Coast lifestyle / eventual TEL access"
+        ],
+        "rental_assessment": "Large 4BR rents to families in East Coast but the high quantum makes yield poor; demand is fine, value is not.",
+        "appreciation_assessment": "Overpriced vs median with thin data; little headroom and real downside if the seller's premium does not hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 FH prior, discounted for above-median entry; URA 8.4% rejected (7 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-amery-500088884",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Crystal Lodge",
+  "slug": "crystal-lodge",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,184 sqft freehold 3BR in D14 (near Aljunied) at $1.5M ($1,267 PSF). Attractive freehold pricing and a healthy arena record, but only 2 URA transactions means almost no reliable appreciation signal for this small/old development.",
+      "rating_rationale": "Freehold 3BR at $1,267 PSF and a $1.5M total is genuinely affordable for D14 and sits in a liquid price band, and the 307-199 arena record/elo 1343 are solid. But this is a 2001-vintage (24-year-old) development with only 2 URA transactions — a classic thin-data, low-liquidity boutique where exit could be slow. 830m (10-min) to Aljunied (EW9) is workable but not prime. Decent value, but the illiquidity and age keep it from a Buy.",
+      "red_flags": [
+        "Only 2 URA transactions — appreciation entirely unverifiable",
+        "24-year-old building (2001); likely small/dated development",
+        "Low transaction velocity implies slow exit"
+      ],
+      "catalysts": [
+        "Freehold 3BR at sub-$1,300 PSF in D14 is cheap",
+        "$1.5M total in deep-demand band",
+        "Walkable to Aljunied MRT (EW line)"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1266.89,
+        "beds": 3,
+        "sqft": 1184.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,184 sqft freehold 3BR in D14 (near Aljunied) at $1.5M ($1,267 PSF). Attractive freehold pricing and a healthy arena record, but only 2 URA transactions means almost no reliable appreciation signal for this small/old development.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold 3BR at $1,267 PSF and a $1.5M total is genuinely affordable for D14 and sits in a liquid price band, and the 307-199 arena record/elo 1343 are solid. But this is a 2001-vintage (24-year-old) development with only 2 URA transactions — a classic thin-data, low-liquidity boutique where exit could be slow. 830m (10-min) to Aljunied (EW9) is workable but not prime. Decent value, but the illiquidity and age keep it from a Buy.",
+        "red_flags": [
+          "Only 2 URA transactions — appreciation entirely unverifiable",
+          "24-year-old building (2001); likely small/dated development",
+          "Low transaction velocity implies slow exit"
+        ],
+        "catalysts": [
+          "Freehold 3BR at sub-$1,300 PSF in D14 is cheap",
+          "$1.5M total in deep-demand band",
+          "Walkable to Aljunied MRT (EW line)"
+        ],
+        "rental_assessment": "D14 Geylang/Aljunied fringe has strong rental demand from CBD-adjacent tenants; a $1.5M freehold 3BR should yield reasonably (~3.5%+).",
+        "appreciation_assessment": "No usable URA rate (2 txns). Freehold D14 RCR baseline is supportive but the specific asset is old; expect market-average appreciation with execution risk on exit.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-crystal-lodge-500161698",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "condo": "Grandview Suites @ Geylang",
+  "slug": "grandview-suites-geylang",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Listed as a 957 sqft '1BR' freehold in Geylang, but the unit is actually a 2BR in a tiny 75-unit Lorong 22 boutique — the low $1,149 psf reflects the oversize and Geylang location, not value. Null URA data, off-frontier, and Geylang-stigma make this a thin-data boutique to avoid on investment grounds.",
+      "rating_rationale": "All URA fields are null, so the inflated score_1000 of 946 is built on neutral-filled blanks rather than evidence, and the listing is off the value frontier. Web check confirms Grandview Suites is a 75-unit freehold boutique on Lorong 22 Geylang, and this 957 sqft unit is a 2BR (misclassified as 1BR) — the cheap PSF is a size/location artifact. A 75-unit dev gives very thin liquidity, the Geylang red-light-district adjacency carries financing and resale stigma for many buyers, and there is no transaction or appreciation data to underwrite an investment case. No verifiable thesis plus stigma equals Avoid.",
+      "red_flags": [
+        "Null URA appreciation and transaction data — high score is hollow, off-frontier",
+        "Tiny 75-unit boutique — very thin liquidity and exit risk",
+        "Geylang (Lorong 22) red-light-district adjacency — financing and resale stigma",
+        "957 sqft is a 2BR misclassified as 1BR; low PSF is a size/location artifact, not value"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "EW9 Aljunied MRT 510m, central-east location"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1149.43,
+        "beds": 1,
+        "sqft": 957.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Listed as a 957 sqft '1BR' freehold in Geylang, but the unit is actually a 2BR in a tiny 75-unit Lorong 22 boutique — the low $1,149 psf reflects the oversize and Geylang location, not value. Null URA data, off-frontier, and Geylang-stigma make this a thin-data boutique to avoid on investment grounds.",
+        "rating": "Avoid",
+        "rating_rationale": "All URA fields are null, so the inflated score_1000 of 946 is built on neutral-filled blanks rather than evidence, and the listing is off the value frontier. Web check confirms Grandview Suites is a 75-unit freehold boutique on Lorong 22 Geylang, and this 957 sqft unit is a 2BR (misclassified as 1BR) — the cheap PSF is a size/location artifact. A 75-unit dev gives very thin liquidity, the Geylang red-light-district adjacency carries financing and resale stigma for many buyers, and there is no transaction or appreciation data to underwrite an investment case. No verifiable thesis plus stigma equals Avoid.",
+        "red_flags": [
+          "Null URA appreciation and transaction data — high score is hollow, off-frontier",
+          "Tiny 75-unit boutique — very thin liquidity and exit risk",
+          "Geylang (Lorong 22) red-light-district adjacency — financing and resale stigma",
+          "957 sqft is a 2BR misclassified as 1BR; low PSF is a size/location artifact, not value"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "EW9 Aljunied MRT 510m, central-east location"
+        ],
+        "rental_assessment": "Aljunied has tenant demand, but Geylang adjacency narrows the acceptable-tenant pool and a 75-unit dev offers no scale. Investment rental case unverifiable without data.",
+        "appreciation_assessment": "Cannot be assessed — URA appreciation and txn count are null. Geylang stigma and boutique scale argue against reliable appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandview-suites-geylang-500160253",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "The algo's 928 score and -38.9% 'cheapness' are a data artifact: this 957 sqft 'unit' is a PENTHOUSE mislabeled as a 1-bedroom (Grandview's 1BRs are 355-635 sqft; only its 7 penthouses span 958-2024 sqft). Comparing a penthouse PSF against small-unit PSFs manufactures a fake discount.",
+      "rating_rationale": "Listing is $1,100,000 / 957 sqft = $1,149 psf, flagged 'very_low_psf' and 'bedroom_sqft_mismatch'. Web confirms Grandview Suites (52 units, 2016, FH, Lorong 22 Geylang) has 1BRs of 355-635 sqft and penthouses of 958-2024 sqft, so this 957 sqft 'beds:1' entry is a penthouse. Penthouses structurally trade far below small-unit PSF, so the -38.9% age-adj and -7.7% cohort premium (on psf_cohort_txns=1, a single comparable) are quirks, not value. Recent small-unit transactions print ~$1,540 psf but that is not the right comp. D14 Geylang freehold averages only ~$1,516 psf vs ~$1,706 East region and ~$1,953 islandwide, with the seedy-area stigma and slow price growth; small Geylang projects often see <5 transactions/year, hurting resale valuation.",
+      "red_flags": [
+        "957 sqft '1-bed' is actually a penthouse - bedroom_sqft_mismatch confirmed against floor-plan data",
+        "psf_cohort_txns=1: the -7.7% cohort discount is computed on a single comparable (statistically meaningless)",
+        "very_low_psf flag is an artifact of comparing penthouse PSF to small-unit PSF, not a real bargain",
+        "Geylang stigma: D14 FH ~$1,516 psf lags East ~$1,706 and islandwide ~$1,953 with slow growth",
+        "Thin liquidity: small (52-unit) Geylang developments often transact <5x/yr, weak exit/valuation"
+      ],
+      "catalysts": [
+        "Walkable to Aljunied (EW9) and Mountbatten (CC7) MRT; abundant F&B and buses",
+        "Freehold tenure (not a forward edge per v3.4, but preserves optionality)"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1149.43,
+        "beds": 1,
+        "sqft": 957
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "low",
+        "summary": "The algo's 928 score and -38.9% 'cheapness' are a data artifact: this 957 sqft 'unit' is a PENTHOUSE mislabeled as a 1-bedroom (Grandview's 1BRs are 355-635 sqft; only its 7 penthouses span 958-2024 sqft). Comparing a penthouse PSF against small-unit PSFs manufactures a fake discount.",
+        "rating_rationale": "Listing is $1,100,000 / 957 sqft = $1,149 psf, flagged 'very_low_psf' and 'bedroom_sqft_mismatch'. Web confirms Grandview Suites (52 units, 2016, FH, Lorong 22 Geylang) has 1BRs of 355-635 sqft and penthouses of 958-2024 sqft, so this 957 sqft 'beds:1' entry is a penthouse. Penthouses structurally trade far below small-unit PSF, so the -38.9% age-adj and -7.7% cohort premium (on psf_cohort_txns=1, a single comparable) are quirks, not value. Recent small-unit transactions print ~$1,540 psf but that is not the right comp. D14 Geylang freehold averages only ~$1,516 psf vs ~$1,706 East region and ~$1,953 islandwide, with the seedy-area stigma and slow price growth; small Geylang projects often see <5 transactions/year, hurting resale valuation.",
+        "red_flags": [
+          "957 sqft '1-bed' is actually a penthouse - bedroom_sqft_mismatch confirmed against floor-plan data",
+          "psf_cohort_txns=1: the -7.7% cohort discount is computed on a single comparable (statistically meaningless)",
+          "very_low_psf flag is an artifact of comparing penthouse PSF to small-unit PSF, not a real bargain",
+          "Geylang stigma: D14 FH ~$1,516 psf lags East ~$1,706 and islandwide ~$1,953 with slow growth",
+          "Thin liquidity: small (52-unit) Geylang developments often transact <5x/yr, weak exit/valuation"
+        ],
+        "catalysts": [
+          "Walkable to Aljunied (EW9) and Mountbatten (CC7) MRT; abundant F&B and buses",
+          "Freehold tenure (not a forward edge per v3.4, but preserves optionality)"
+        ],
+        "appreciation_assessment": "appreciation_pct 3.7% is the regional_baseline fallback (not project-realized) over 15 txns; D14 Geylang FH has documented slow growth and more losses than gains, so forward upside is structurally capped. Trailing figure carries ~0 forward power here.",
+        "rental_assessment": "Project-level rental yields are cited as healthy (~7.4% on small units), but that applies to 355-377 sqft units, not this penthouse; a large penthouse in a stigmatised small project rents thinly and at lower yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandview-suites-geylang-500160253",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

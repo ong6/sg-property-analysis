@@ -1,0 +1,61 @@
+{
+  "condo": "Laurel Tree",
+  "slug": "laurel-tree",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "An 818 sqft '1BR' freehold in D23 (Hillview/Bukit Batok fringe) at $990K / $1,210 PSF. The below-median PSF is partly a large-unit artifact (818 sqft is oversized for 1BR), the resale appreciation is weak (+1.73%/yr over just 22 txns), and the MRT is 1.86km / 22 min away — a poor location and lagging appreciation outweigh the freehold tenure.",
+      "rating_rationale": "Resale-only appreciation is only +1.73%/yr — the weakest in the batch — and on a thin 22-txn base. The $1,210 vs $1,556 median 'discount' is inflated by the oversized 818 sqft format, not genuine value. Bukit Gombak MRT is 1.86km (22-min walk), so there is no transit support, and D23 here has no near-term catalyst. Freehold is the only real positive and does not offset stagnant prices plus weak connectivity.",
+      "red_flags": [
+        "Resale appreciation only +1.73%/yr (22 txns) — stagnant and unreliable",
+        "MRT 1.86km / 22-min walk — effectively non-transit-served",
+        "818 sqft oversized for a 1BR — below-median PSF is a size artifact, not value",
+        "Boutique/small D23 development — limited liquidity, no catalyst"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Quiet Hillview/Bukit Batok greenery appeals to an own-stay niche"
+      ],
+      "as_of": {
+        "price": 990000,
+        "psf": 1210.27,
+        "beds": 1,
+        "sqft": 818.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An 818 sqft '1BR' freehold in D23 (Hillview/Bukit Batok fringe) at $990K / $1,210 PSF. The below-median PSF is partly a large-unit artifact (818 sqft is oversized for 1BR), the resale appreciation is weak (+1.73%/yr over just 22 txns), and the MRT is 1.86km / 22 min away — a poor location and lagging appreciation outweigh the freehold tenure.",
+        "rating": "Avoid",
+        "rating_rationale": "Resale-only appreciation is only +1.73%/yr — the weakest in the batch — and on a thin 22-txn base. The $1,210 vs $1,556 median 'discount' is inflated by the oversized 818 sqft format, not genuine value. Bukit Gombak MRT is 1.86km (22-min walk), so there is no transit support, and D23 here has no near-term catalyst. Freehold is the only real positive and does not offset stagnant prices plus weak connectivity.",
+        "red_flags": [
+          "Resale appreciation only +1.73%/yr (22 txns) — stagnant and unreliable",
+          "MRT 1.86km / 22-min walk — effectively non-transit-served",
+          "818 sqft oversized for a 1BR — below-median PSF is a size artifact, not value",
+          "Boutique/small D23 development — limited liquidity, no catalyst"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Quiet Hillview/Bukit Batok greenery appeals to an own-stay niche"
+        ],
+        "rental_assessment": "Far from MRT and in a low-tenant-demand pocket; an oversized 1BR rents slowly and at a modest yield — weak rental case.",
+        "appreciation_assessment": "URA resale data shows near-flat +1.73%/yr; no catalyst to change the trajectory. Expect this to lag the market over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-laurel-tree-25522103",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

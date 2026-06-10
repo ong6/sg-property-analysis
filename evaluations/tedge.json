@@ -1,0 +1,65 @@
+{
+  "condo": "Tedge",
+  "slug": "tedge",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "New freehold (2024 TOP) compact 4BR at Tedge (D14) for $2.2M / $1777 PSF, sitting slightly below the $1811 new-launch-skewed median. With has_new_launch_bias true and a developer-pricing-inflated 2.8%/yr appreciation, this is a recently-launched unit where most of the value is already in the price; efficient 4BR at a sub-$2.5M freehold entry keeps it Neutral.",
+      "rating_rationale": "1238 sqft for a 4BR is very efficient (compact, likely a 'shoebox 4BR' layout) but freehold and in the deep-pool $2.2M band. The 2.8%/yr rate is flagged as new-launch-biased (developer inflation already baked into the $1811 median), so forward upside is limited until the project seasons. Only 25 txn and a brand-new resale market mean no proven resale track record — balanced, not a buy yet.",
+      "red_flags": [
+        "has_new_launch_bias true — appreciation rate inflated by developer pricing",
+        "Brand-new 2024 project, no resale track record yet",
+        "1238 sqft 4BR is compact — bedrooms will be small",
+        "Only 25 txn (mostly launch sales)"
+      ],
+      "catalysts": [
+        "Freehold in D14 with Paya Lebar Central / airbase-relocation upside",
+        "EW6 Kembangan MRT 690m",
+        "Efficient 4BR at a sub-$2.5M freehold price point"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1777.06,
+        "beds": 4,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "New freehold (2024 TOP) compact 4BR at Tedge (D14) for $2.2M / $1777 PSF, sitting slightly below the $1811 new-launch-skewed median. With has_new_launch_bias true and a developer-pricing-inflated 2.8%/yr appreciation, this is a recently-launched unit where most of the value is already in the price; efficient 4BR at a sub-$2.5M freehold entry keeps it Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "1238 sqft for a 4BR is very efficient (compact, likely a 'shoebox 4BR' layout) but freehold and in the deep-pool $2.2M band. The 2.8%/yr rate is flagged as new-launch-biased (developer inflation already baked into the $1811 median), so forward upside is limited until the project seasons. Only 25 txn and a brand-new resale market mean no proven resale track record — balanced, not a buy yet.",
+        "red_flags": [
+          "has_new_launch_bias true — appreciation rate inflated by developer pricing",
+          "Brand-new 2024 project, no resale track record yet",
+          "1238 sqft 4BR is compact — bedrooms will be small",
+          "Only 25 txn (mostly launch sales)"
+        ],
+        "catalysts": [
+          "Freehold in D14 with Paya Lebar Central / airbase-relocation upside",
+          "EW6 Kembangan MRT 690m",
+          "Efficient 4BR at a sub-$2.5M freehold price point"
+        ],
+        "rental_assessment": "A compact freehold 4BR near Kembangan MRT appeals to small families; rentable but the squeezed layout limits premium. Yield typical for a new freehold at $2.2M.",
+        "appreciation_assessment": "Reported 2.8%/yr is new-launch-biased; do not treat as forward return. As the project seasons, resale appreciation will reset toward genuine D14 freehold trend (~4-5%), but that is unproven here.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "URA rate flagged new-launch-biased; held conservative pending resale seasoning"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tedge-60222415",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

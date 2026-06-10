@@ -1,0 +1,117 @@
+{
+  "condo": "St Patrick's Residences",
+  "slug": "st-patrick-s-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 3,186 sqft freehold unit in East Coast literally 100m from the new TEL Marine Terrace station, listed at $1,177 psf — far below the $1,861 URA median because the headline price reflects an oversized (likely penthouse/ground-duplex) layout. The TEL-on-doorstep location is excellent, but the $3.75M quantum sits in a thin, niche buyer band.",
+      "rating_rationale": "The $1,177 psf looks like a ~37% discount to the $1,861 URA median, but that is the classic oversized-unit illusion: at 3,186 sqft this is roughly double a normal 4BR, so the low PSF reflects size, not value — the $3.75M absolute quantum is what a buyer pays. Above $3M the buyer pool thins sharply, and an enormous floorplate narrows it further to a niche of large families/multi-gen buyers. Positives are real: freehold, 100m to TE27 Marine Terrace MRT (top-tier connectivity), prime D15 East Coast lifestyle. But appreciation is only 3.9%/yr URA (below the RCR/D15 norm) on a thin 23-txn series, and large freehold quantums historically appreciate slowly because the freehold premium is already capitalized. Net: a fine own-stay trophy, a middling 5-7yr investment.",
+      "red_flags": [
+        "Oversized 3,186 sqft unit — low PSF is a size artifact, not a discount; judge on $3.75M quantum",
+        ">$3M niche quantum with a very large floorplate shrinks the exit buyer pool",
+        "Below-norm 3.9%/yr appreciation on a thin 23-txn series"
+      ],
+      "catalysts": [
+        "TE27 Marine Terrace MRT 100m away — TEL fully connects East Coast to CBD/Orchard/Woodlands",
+        "Freehold prime D15 East Coast lifestyle address",
+        "Bayshore/East Coast precinct uplift"
+      ],
+      "as_of": {
+        "price": 3750000,
+        "psf": 1177.02,
+        "beds": 4,
+        "sqft": 3186.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 3,186 sqft freehold unit in East Coast literally 100m from the new TEL Marine Terrace station, listed at $1,177 psf — far below the $1,861 URA median because the headline price reflects an oversized (likely penthouse/ground-duplex) layout. The TEL-on-doorstep location is excellent, but the $3.75M quantum sits in a thin, niche buyer band.",
+        "rating": "Neutral",
+        "rating_rationale": "The $1,177 psf looks like a ~37% discount to the $1,861 URA median, but that is the classic oversized-unit illusion: at 3,186 sqft this is roughly double a normal 4BR, so the low PSF reflects size, not value — the $3.75M absolute quantum is what a buyer pays. Above $3M the buyer pool thins sharply, and an enormous floorplate narrows it further to a niche of large families/multi-gen buyers. Positives are real: freehold, 100m to TE27 Marine Terrace MRT (top-tier connectivity), prime D15 East Coast lifestyle. But appreciation is only 3.9%/yr URA (below the RCR/D15 norm) on a thin 23-txn series, and large freehold quantums historically appreciate slowly because the freehold premium is already capitalized. Net: a fine own-stay trophy, a middling 5-7yr investment.",
+        "red_flags": [
+          "Oversized 3,186 sqft unit — low PSF is a size artifact, not a discount; judge on $3.75M quantum",
+          ">$3M niche quantum with a very large floorplate shrinks the exit buyer pool",
+          "Below-norm 3.9%/yr appreciation on a thin 23-txn series"
+        ],
+        "catalysts": [
+          "TE27 Marine Terrace MRT 100m away — TEL fully connects East Coast to CBD/Orchard/Woodlands",
+          "Freehold prime D15 East Coast lifestyle address",
+          "Bayshore/East Coast precinct uplift"
+        ],
+        "rental_assessment": "A 3,186 sqft unit commands high absolute rent but a narrow tenant pool; gross yield on $3.75M will be thin (likely sub-3%). Not a yield play.",
+        "appreciation_assessment": "3.9%/yr URA understates D15's potential but reflects large-freehold sluggishness; expect modest appreciation, with TEL providing some support.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-st-patrick-s-residences-500095999",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The 'very_low_psf' and huge -44% discount are explained by format, not a bargain: 3,186 sqft matches St Patrick's 4+study-with-private-pool / penthouse units (3,111-3,423 sqft), which structurally sit at the very bottom of the PSF band ($1,177 is the project's low). Freehold D15 is appealing, but a $3.75M, 3,186 sqft penthouse is a thin, illiquid, own-stay-flavored asset, not a value-investment play.",
+      "rating_rationale": "Asking $1,177 psf is literally the floor of the project's verified PSF range ($1,177-$2,432) — large penthouse/private-pool formats (3,111-3,423 sqft) always carry the lowest PSF because buyers price the quantum, so the very_low_psf flag and -44.4% age_adj_premium are a size effect, not a mis-scrape or a steal. The bedroom_sqft_mismatch flag and thin data (appreciation_txns=23, psf_cohort_txns=10) reinforce that the cheap-PSF signal isn't a reliable forward edge. Freehold in Katong/D15 (RCR, decent realized forward returns) and the East-Coast/Thomson-East-Coast-Line catalyst are genuine positives, but a $3.75M 3,186 sqft penthouse has a tiny buyer pool and weak rental yield (large luxury units rent poorly per sqft), so exit liquidity over a 5-7yr hold is the binding risk. Net Neutral — quality asset, but the algo's value ranking overstates the investment case.",
+      "red_flags": [
+        "very_low_psf is a large-penthouse size artifact (3,186 sqft), not a genuine per-sqft bargain",
+        "bedroom_sqft_mismatch flag — atypical large/penthouse format inflates strata area and deflates PSF",
+        "$3.75M quantum + 3,186 sqft = very thin resale buyer pool; poor exit liquidity for an investment hold",
+        "Large luxury units deliver weak rental yield per sqft — investment economics are unfavorable"
+      ],
+      "catalysts": [
+        "Freehold tenure in established Katong/Marine Parade (D15)",
+        "Thomson-East-Coast-Line (Marine Parade / Marine Terrace stations) improves connectivity",
+        "Private-pool penthouse format appeals to a niche own-stay buyer, supporting eventual resale price floor"
+      ],
+      "as_of": {
+        "price": 3750000,
+        "psf": 1177.02,
+        "beds": 4,
+        "sqft": 3186
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The 'very_low_psf' and huge -44% discount are explained by format, not a bargain: 3,186 sqft matches St Patrick's 4+study-with-private-pool / penthouse units (3,111-3,423 sqft), which structurally sit at the very bottom of the PSF band ($1,177 is the project's low). Freehold D15 is appealing, but a $3.75M, 3,186 sqft penthouse is a thin, illiquid, own-stay-flavored asset, not a value-investment play.",
+        "rating_rationale": "Asking $1,177 psf is literally the floor of the project's verified PSF range ($1,177-$2,432) — large penthouse/private-pool formats (3,111-3,423 sqft) always carry the lowest PSF because buyers price the quantum, so the very_low_psf flag and -44.4% age_adj_premium are a size effect, not a mis-scrape or a steal. The bedroom_sqft_mismatch flag and thin data (appreciation_txns=23, psf_cohort_txns=10) reinforce that the cheap-PSF signal isn't a reliable forward edge. Freehold in Katong/D15 (RCR, decent realized forward returns) and the East-Coast/Thomson-East-Coast-Line catalyst are genuine positives, but a $3.75M 3,186 sqft penthouse has a tiny buyer pool and weak rental yield (large luxury units rent poorly per sqft), so exit liquidity over a 5-7yr hold is the binding risk. Net Neutral — quality asset, but the algo's value ranking overstates the investment case.",
+        "red_flags": [
+          "very_low_psf is a large-penthouse size artifact (3,186 sqft), not a genuine per-sqft bargain",
+          "bedroom_sqft_mismatch flag — atypical large/penthouse format inflates strata area and deflates PSF",
+          "$3.75M quantum + 3,186 sqft = very thin resale buyer pool; poor exit liquidity for an investment hold",
+          "Large luxury units deliver weak rental yield per sqft — investment economics are unfavorable"
+        ],
+        "catalysts": [
+          "Freehold tenure in established Katong/Marine Parade (D15)",
+          "Thomson-East-Coast-Line (Marine Parade / Marine Terrace stations) improves connectivity",
+          "Private-pool penthouse format appeals to a niche own-stay buyer, supporting eventual resale price floor"
+        ],
+        "rental_assessment": "A 3,186 sqft penthouse rents to a very narrow expat-family segment at a low per-sqft rate, yielding far below a standard unit — poor investment yield, better suited to own-stay.",
+        "appreciation_assessment": "Trailing ~3.9% CAGR rests on only 23 txns and is project-pooled across very different unit sizes; with no robust forward signal and the cheapness being a size artifact, appreciation upside is unproven."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-st-patrick-s-residences-500095999",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

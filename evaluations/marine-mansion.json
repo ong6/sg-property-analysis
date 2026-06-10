@@ -1,0 +1,61 @@
+{
+  "condo": "Marine Mansion",
+  "slug": "marine-mansion",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,381 sqft 9999-year-leasehold (effectively freehold) 4BR in D15 Marine Parade at $2.18M ($1,579 PSF), 420m from the new Marine Parade TE26 MRT. Strong location and tenure but no URA data and a missing build year leave the asset's age and condition unverified.",
+      "rating_rationale": "The location is the headline: 420m (5-min walk) to the brand-new Marine Parade TEL station in coveted D15, with effectively-freehold 9999-yr tenure and a large 4BR at a reasonable $1,579 PSF and liquid $2.18M price. Strong arena elo (1438). But built_year is missing and there's zero URA appreciation/txn data — Marine Mansion is likely an older walk-up/boutique block, which raises maintenance, en-bloc-dependency and resale questions. The TEL catalyst is real and lifts it to the top of Neutral, but unverified age caps confidence.",
+      "red_flags": [
+        "Missing build year — likely an older/dated development",
+        "No URA appreciation or transaction data",
+        "Probable small boutique block; en-bloc-dependent upside"
+      ],
+      "catalysts": [
+        "420m to new Marine Parade TE26 MRT (TEL) — strong connectivity uplift",
+        "Prime D15 East Coast with deep buyer pool",
+        "9999-year tenure ~ freehold; large 4BR at $1,579 PSF is fair value"
+      ],
+      "as_of": {
+        "price": 2180000,
+        "psf": 1578.57,
+        "beds": 4,
+        "sqft": 1381.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "9999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,381 sqft 9999-year-leasehold (effectively freehold) 4BR in D15 Marine Parade at $2.18M ($1,579 PSF), 420m from the new Marine Parade TE26 MRT. Strong location and tenure but no URA data and a missing build year leave the asset's age and condition unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "The location is the headline: 420m (5-min walk) to the brand-new Marine Parade TEL station in coveted D15, with effectively-freehold 9999-yr tenure and a large 4BR at a reasonable $1,579 PSF and liquid $2.18M price. Strong arena elo (1438). But built_year is missing and there's zero URA appreciation/txn data — Marine Mansion is likely an older walk-up/boutique block, which raises maintenance, en-bloc-dependency and resale questions. The TEL catalyst is real and lifts it to the top of Neutral, but unverified age caps confidence.",
+        "red_flags": [
+          "Missing build year — likely an older/dated development",
+          "No URA appreciation or transaction data",
+          "Probable small boutique block; en-bloc-dependent upside"
+        ],
+        "catalysts": [
+          "420m to new Marine Parade TE26 MRT (TEL) — strong connectivity uplift",
+          "Prime D15 East Coast with deep buyer pool",
+          "9999-year tenure ~ freehold; large 4BR at $1,579 PSF is fair value"
+        ],
+        "rental_assessment": "D15 Marine Parade with TEL on the doorstep has excellent tenant demand; a large 4BR suits families, with moderate-but-stable yield given the $2.18M base.",
+        "appreciation_assessment": "TEL opening is a genuine re-rating catalyst for the immediate area. Without project data the rate is unknown, but freehold-equivalent tenure + transit upgrade supports above-average potential if the building is sound.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-marine-mansion-500137828",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

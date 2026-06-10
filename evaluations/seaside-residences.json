@@ -1,0 +1,119 @@
+{
+  "condo": "Seaside Residences",
+  "slug": "seaside-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1BR at Seaside Residences (D15 East Coast/Siglap) for $1.15M / $2054 PSF — ~10% below the $2287 median — 410m from the new TE28 Siglap MRT. The value gap and TEL station are attractive, but a weak 2.4%/yr appreciation (172 txn, reliable) and a poor 1260 Elo / 117-117 W-L record flag soft demand; nets to Neutral.",
+      "rating_rationale": "Positives: asking PSF ~10% under the $2287 median on a deep 172-txn series (genuine discount), 410m to the operational TE28 Siglap TEL station, and a strong East Coast lifestyle location. Negatives: appreciation only 2.4%/yr (reliable but weak), and the arena Elo of 1260 with a 117-81-117 record signals the market views this unit type/price as middling. Value + TEL vs weak growth balance to Neutral.",
+      "red_flags": [
+        "Appreciation only 2.4%/yr despite reliable 172-txn data",
+        "Weak arena performance (Elo 1260, 117-117 W-L)",
+        "1BR niche segment; $2054 PSF is high in absolute terms",
+        "Leasehold seafront premium may already be priced in"
+      ],
+      "catalysts": [
+        "410m to TE28 Siglap MRT (Thomson-East Coast Line, operational)",
+        "~10% below district median PSF",
+        "Prime East Coast lifestyle address with sea/park proximity"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 2053.57,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1BR at Seaside Residences (D15 East Coast/Siglap) for $1.15M / $2054 PSF — ~10% below the $2287 median — 410m from the new TE28 Siglap MRT. The value gap and TEL station are attractive, but a weak 2.4%/yr appreciation (172 txn, reliable) and a poor 1260 Elo / 117-117 W-L record flag soft demand; nets to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: asking PSF ~10% under the $2287 median on a deep 172-txn series (genuine discount), 410m to the operational TE28 Siglap TEL station, and a strong East Coast lifestyle location. Negatives: appreciation only 2.4%/yr (reliable but weak), and the arena Elo of 1260 with a 117-81-117 record signals the market views this unit type/price as middling. Value + TEL vs weak growth balance to Neutral.",
+        "red_flags": [
+          "Appreciation only 2.4%/yr despite reliable 172-txn data",
+          "Weak arena performance (Elo 1260, 117-117 W-L)",
+          "1BR niche segment; $2054 PSF is high in absolute terms",
+          "Leasehold seafront premium may already be priced in"
+        ],
+        "catalysts": [
+          "410m to TE28 Siglap MRT (Thomson-East Coast Line, operational)",
+          "~10% below district median PSF",
+          "Prime East Coast lifestyle address with sea/park proximity"
+        ],
+        "rental_assessment": "1BR near Siglap MRT and East Coast Park rents well to singles and couples seeking the lifestyle locale; yield modest at $2054 PSF but tenant demand is reliable.",
+        "appreciation_assessment": "2.4%/yr on 172 transactions is reliable but clearly underwhelming — the TEL benefit appears largely priced in and seafront leasehold has limited further upside. Buying below median is the main edge.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.4,
+        "appreciation_rate_source": "URA resale-only CAGR, 172 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seaside-residences-25365106",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Frasers/Sekisui East Coast waterfront (2021) with a confirmed value gap and a live MRT catalyst: asking $2,054 psf for a 560 sqft 1BR vs a matching 560 sqft unit that sold at $2,213 psf (Dec-2025) and 1BRs trading $2,190-$2,220 — a real ~7-8% discount.",
+      "rating_rationale": "Verification supports the algo's -12.0% age-adj cheapness and -6.3% vs-cohort discount on solid depth (172 appreciation txns, 19 cohort txns). A like-for-like 560 sqft 1BR transacted at $2,213 psf in Dec-2025, a 506 sqft at $2,192 psf in Jan-2026, and small units broadly traded $2,190-$2,220 psf into early 2026 (project average ~$2,389-$2,474 psf in 2025-26). The asking $2,053 psf is clearly below the directly comparable 560 sqft print — genuine value, not a quirk. The Siglap TEL MRT station (3-min walk) is now operational, a concrete connectivity catalyst the v3.4 priors reward. D15 is RCR (realized fwd ~+3.5%). Developer JV (Frasers Centrepoint / Sekisui House / Keong Hong), 2021 completion, established East Coast lifestyle. High confidence given a verified discount on an identical unit size plus a dated, now-live MRT catalyst.",
+      "red_flags": [
+        "Some inbuilt appliances reported as poor quality with bugs by residents — budget for replacements",
+        "Sea-facing/ECP-adjacent stacks carry highway noise; non-sea stacks lose the view premium — verify this unit's facing",
+        "Small 1BR competes within a large 843-unit project with a deep small-unit pool"
+      ],
+      "catalysts": [
+        "Siglap MRT (Thomson-East Coast Line) now operational, 3-min walk — ~20 min to city",
+        "Long-term Greater Southern Waterfront and East Coast rejuvenation",
+        "Established East Coast lifestyle/amenity draw underpinning rental demand"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 2053.57,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "Frasers/Sekisui East Coast waterfront (2021) with a confirmed value gap and a live MRT catalyst: asking $2,054 psf for a 560 sqft 1BR vs a matching 560 sqft unit that sold at $2,213 psf (Dec-2025) and 1BRs trading $2,190-$2,220 — a real ~7-8% discount.",
+        "rating_rationale": "Verification supports the algo's -12.0% age-adj cheapness and -6.3% vs-cohort discount on solid depth (172 appreciation txns, 19 cohort txns). A like-for-like 560 sqft 1BR transacted at $2,213 psf in Dec-2025, a 506 sqft at $2,192 psf in Jan-2026, and small units broadly traded $2,190-$2,220 psf into early 2026 (project average ~$2,389-$2,474 psf in 2025-26). The asking $2,053 psf is clearly below the directly comparable 560 sqft print — genuine value, not a quirk. The Siglap TEL MRT station (3-min walk) is now operational, a concrete connectivity catalyst the v3.4 priors reward. D15 is RCR (realized fwd ~+3.5%). Developer JV (Frasers Centrepoint / Sekisui House / Keong Hong), 2021 completion, established East Coast lifestyle. High confidence given a verified discount on an identical unit size plus a dated, now-live MRT catalyst.",
+        "red_flags": [
+          "Some inbuilt appliances reported as poor quality with bugs by residents — budget for replacements",
+          "Sea-facing/ECP-adjacent stacks carry highway noise; non-sea stacks lose the view premium — verify this unit's facing",
+          "Small 1BR competes within a large 843-unit project with a deep small-unit pool"
+        ],
+        "catalysts": [
+          "Siglap MRT (Thomson-East Coast Line) now operational, 3-min walk — ~20 min to city",
+          "Long-term Greater Southern Waterfront and East Coast rejuvenation",
+          "Established East Coast lifestyle/amenity draw underpinning rental demand"
+        ],
+        "appreciation_assessment": "Trailing 2.35% CAGR is unremarkable and not forward-weighted; the forward case is value plus a now-live MRT catalyst — buying below the project's own recent 560 sqft transacted price in RCR.",
+        "rental_assessment": "1BR by a now-open MRT in a lifestyle East Coast project rents strongly to singles/expats; entry ~7-8% under recent comps protects yield despite the high absolute psf."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seaside-residences-25365106",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

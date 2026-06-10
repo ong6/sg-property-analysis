@@ -1,0 +1,59 @@
+{
+  "condo": "East View 18",
+  "slug": "east-view-18",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An older (2002) freehold boutique in D15 with only 3 URA transactions on file — too thin to trust appreciation or exit. The $1,449 PSF on a roomy 1,173 sqft 3BR is reasonable for the district, but the tiny, illiquid development and 1km+ walk to MRT cap the investment case.",
+      "rating_rationale": "D15 freehold at $1,449 PSF / $1.7M is fair value and sits in the liquid price band, but ura_txn_count of 3 makes appreciation unknowable and signals a thin-trading micro-development. Score_1000 of 554 is only market-typical. 13-min walk to Eunos MRT and a 24-year-old build limit tenant and resale appeal.",
+      "red_flags": [
+        "Only 3 URA transactions — appreciation rate and exit liquidity both unverifiable",
+        "Likely small boutique development (illiquid, limited facilities)",
+        "24-year-old build, 1.06km from nearest MRT"
+      ],
+      "catalysts": [
+        "D15 freehold tenure and deep East Coast buyer pool",
+        "Lifestyle district with sustained owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1449.28,
+        "beds": 3,
+        "sqft": 1173.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An older (2002) freehold boutique in D15 with only 3 URA transactions on file — too thin to trust appreciation or exit. The $1,449 PSF on a roomy 1,173 sqft 3BR is reasonable for the district, but the tiny, illiquid development and 1km+ walk to MRT cap the investment case.",
+        "rating": "Neutral",
+        "rating_rationale": "D15 freehold at $1,449 PSF / $1.7M is fair value and sits in the liquid price band, but ura_txn_count of 3 makes appreciation unknowable and signals a thin-trading micro-development. Score_1000 of 554 is only market-typical. 13-min walk to Eunos MRT and a 24-year-old build limit tenant and resale appeal.",
+        "red_flags": [
+          "Only 3 URA transactions — appreciation rate and exit liquidity both unverifiable",
+          "Likely small boutique development (illiquid, limited facilities)",
+          "24-year-old build, 1.06km from nearest MRT"
+        ],
+        "catalysts": [
+          "D15 freehold tenure and deep East Coast buyer pool",
+          "Lifestyle district with sustained owner-occupier demand"
+        ],
+        "rental_assessment": "D15 has steady tenant demand, but a 1km+ MRT walk and older finishes put it mid-pack; expect ~3% gross yield typical of older freehold here.",
+        "appreciation_assessment": "No reliable URA data (3 txns). D15 freehold tracks the ~5.8% RCR baseline at best, but a thin-trading boutique typically lags the district median.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-east-view-18-500128610",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

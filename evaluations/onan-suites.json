@@ -1,0 +1,61 @@
+{
+  "condo": "Onan Suites",
+  "slug": "onan-suites",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,389 sqft 3BR at $2.288M in Onan Suites, D15 Joo Chiat/Eunos area, 1.39km from Eunos MRT. Freehold and a reasonable $1,647 PSF (~2% under median) are positives, but the appreciation rate rests on just 5 URA transactions — essentially no statistical basis — and the project is a small, MRT-distant boutique.",
+      "rating_rationale": "Freehold in a desirable D15 Joo Chiat enclave at $1,647 PSF (~2% below the $1,683 median) and a workable $2.288M quantum are the case for it. But the appreciation data is effectively unusable — 3.3%/yr on only 5 transactions is noise, not a trend — and the development is a small boutique 1.39km/17min from Eunos MRT, so liquidity is shallow and the location lacks transit pull. A 1,389 sqft freehold 3BR has own-stay charm but for a 5-7yr investment hold the thin data and weak connectivity keep this firmly Neutral, leaning cautious.",
+      "red_flags": [
+        "Only 5 URA txns — appreciation rate is statistically meaningless",
+        "Small boutique development — shallow resale liquidity",
+        "1.39km / 17min to Eunos MRT — poor transit access weakens rental and resale"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15 Joo Chiat/Katong lifestyle enclave",
+        "Generous 1,389 sqft layout appeals to own-stay/family buyers on resale",
+        "PSF ~2% below URA median"
+      ],
+      "as_of": {
+        "price": 2288000,
+        "psf": 1647.23,
+        "beds": 3,
+        "sqft": 1389.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,389 sqft 3BR at $2.288M in Onan Suites, D15 Joo Chiat/Eunos area, 1.39km from Eunos MRT. Freehold and a reasonable $1,647 PSF (~2% under median) are positives, but the appreciation rate rests on just 5 URA transactions — essentially no statistical basis — and the project is a small, MRT-distant boutique.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold in a desirable D15 Joo Chiat enclave at $1,647 PSF (~2% below the $1,683 median) and a workable $2.288M quantum are the case for it. But the appreciation data is effectively unusable — 3.3%/yr on only 5 transactions is noise, not a trend — and the development is a small boutique 1.39km/17min from Eunos MRT, so liquidity is shallow and the location lacks transit pull. A 1,389 sqft freehold 3BR has own-stay charm but for a 5-7yr investment hold the thin data and weak connectivity keep this firmly Neutral, leaning cautious.",
+        "red_flags": [
+          "Only 5 URA txns — appreciation rate is statistically meaningless",
+          "Small boutique development — shallow resale liquidity",
+          "1.39km / 17min to Eunos MRT — poor transit access weakens rental and resale"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15 Joo Chiat/Katong lifestyle enclave",
+          "Generous 1,389 sqft layout appeals to own-stay/family buyers on resale",
+          "PSF ~2% below URA median"
+        ],
+        "rental_assessment": "Moderate — Joo Chiat is liveable and characterful, but the 1.39km MRT gap limits tenant premium; yield ~2.5-3% on the quantum.",
+        "appreciation_assessment": "No reliable basis (5 txns); freehold D15 generally holds value but the specific trend is unverifiable, assume market-rate at best.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-onan-suites-60183066",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

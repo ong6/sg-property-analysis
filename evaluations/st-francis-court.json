@@ -1,0 +1,63 @@
+{
+  "condo": "St Francis Court",
+  "slug": "st-francis-court",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "1,270 sqft 4BR at St Francis Court, a tiny 71-unit, 99yr-from-1992 leasehold completed 1994 (32 years old) near Boon Keng. The headline 9.1%/yr CAGR is unreliable (only 22 txns) and the listing at $1,268 psf sits above the $1,185 median; score_1000 is just 398.",
+      "rating_rationale": "This is an old (1994), small 71-unit leasehold with ~66 years of lease left — financing and resale both tighten as lease decays. The 9.1%/yr rate is a thin-data artefact (22 txns) and the asking $1,268 psf is ~7% ABOVE the $1,185 URA median. Web research confirms recent transactions at $1,002-$1,192 psf, so this listing is priced above the market. Score_1000 of 398 is a clear value/quality warning. En-bloc is the only real catalyst and it is speculative (the development has been floated for collective sale but nothing committed).",
+      "red_flags": [
+        "Listed ~7% above URA median PSF and above all verified recent transactions ($1,002-$1,192 psf)",
+        "Tiny 71-unit, 32-year-old leasehold (~66yr lease left) — illiquid, lease-decay risk",
+        "9.1%/yr appreciation is a 22-txn statistical artefact, not a reliable trend",
+        "score_1000 only 398"
+      ],
+      "catalysts": [
+        "Speculative en-bloc potential (floated, not committed)",
+        "Central D12 location near Boon Keng NEL and City Square Mall"
+      ],
+      "as_of": {
+        "price": 1610000,
+        "psf": 1267.72,
+        "beds": 4,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1,270 sqft 4BR at St Francis Court, a tiny 71-unit, 99yr-from-1992 leasehold completed 1994 (32 years old) near Boon Keng. The headline 9.1%/yr CAGR is unreliable (only 22 txns) and the listing at $1,268 psf sits above the $1,185 median; score_1000 is just 398.",
+        "rating": "Avoid",
+        "rating_rationale": "This is an old (1994), small 71-unit leasehold with ~66 years of lease left — financing and resale both tighten as lease decays. The 9.1%/yr rate is a thin-data artefact (22 txns) and the asking $1,268 psf is ~7% ABOVE the $1,185 URA median. Web research confirms recent transactions at $1,002-$1,192 psf, so this listing is priced above the market. Score_1000 of 398 is a clear value/quality warning. En-bloc is the only real catalyst and it is speculative (the development has been floated for collective sale but nothing committed).",
+        "red_flags": [
+          "Listed ~7% above URA median PSF and above all verified recent transactions ($1,002-$1,192 psf)",
+          "Tiny 71-unit, 32-year-old leasehold (~66yr lease left) — illiquid, lease-decay risk",
+          "9.1%/yr appreciation is a 22-txn statistical artefact, not a reliable trend",
+          "score_1000 only 398"
+        ],
+        "catalysts": [
+          "Speculative en-bloc potential (floated, not committed)",
+          "Central D12 location near Boon Keng NEL and City Square Mall"
+        ],
+        "rental_assessment": "Dated 1994 4BR with no modern facilities; rents to budget families only, weak rental appeal.",
+        "appreciation_assessment": "Headline 9.1%/yr is unreliable on 22 txns; real verified transactions cluster $1,002-$1,192 psf, below this listing — overpriced with lease decay dragging the long-term trajectory.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "Web-verified recent txns $1,002-$1,192 psf; discounted for lease decay and overpricing vs the unreliable 9.1% headline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-st-francis-court-25470908",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Verticus",
+  "slug": "verticus",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new 2024 463 sqft 1BR freehold at Verticus in Balestier (D12), $2,117 psf vs $2,315 median. Freehold tenure and sub-median PSF are positives, but appreciation is weak (2.1%/yr resale-only after bias adjustment), the MRT is a poor 1.35km/16-min walk, and Balestier has heavy 1BR supply.",
+      "rating_rationale": "Freehold and a sub-median entry ($2,117 vs $2,315) give some support, but the negatives stack up: honest resale-only appreciation only 2.1%/yr (new-launch bias flagged), a poor 1.35km walk to Toa Payoh MRT, and Balestier's well-known glut of shoebox/1BR units competing for the same tenants. Score_1000 of 504 (market-typical) and weak elo (1006). Freehold cushions downside but the location and supply dynamics cap upside.",
+      "red_flags": [
+        "Weak 2.1%/yr resale-only appreciation; new-launch bias flagged",
+        "1.35km/16-min walk to MRT — poor connectivity",
+        "Balestier 1BR/shoebox oversupply competing for tenants"
+      ],
+      "catalysts": [
+        "Freehold tenure — no lease decay, downside protection",
+        "Central Balestier location near Novena medical hub and CBD fringe"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 2116.63,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new 2024 463 sqft 1BR freehold at Verticus in Balestier (D12), $2,117 psf vs $2,315 median. Freehold tenure and sub-median PSF are positives, but appreciation is weak (2.1%/yr resale-only after bias adjustment), the MRT is a poor 1.35km/16-min walk, and Balestier has heavy 1BR supply.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a sub-median entry ($2,117 vs $2,315) give some support, but the negatives stack up: honest resale-only appreciation only 2.1%/yr (new-launch bias flagged), a poor 1.35km walk to Toa Payoh MRT, and Balestier's well-known glut of shoebox/1BR units competing for the same tenants. Score_1000 of 504 (market-typical) and weak elo (1006). Freehold cushions downside but the location and supply dynamics cap upside.",
+        "red_flags": [
+          "Weak 2.1%/yr resale-only appreciation; new-launch bias flagged",
+          "1.35km/16-min walk to MRT — poor connectivity",
+          "Balestier 1BR/shoebox oversupply competing for tenants"
+        ],
+        "catalysts": [
+          "Freehold tenure — no lease decay, downside protection",
+          "Central Balestier location near Novena medical hub and CBD fringe"
+        ],
+        "rental_assessment": "Balestier has chronic shoebox oversupply; 1BR rental demand exists from Novena/CBD-fringe workers but competition is intense and the far MRT walk hurts.",
+        "appreciation_assessment": "Resale-only 2.1%/yr after stripping developer pricing; freehold helps long-term but near-term upside is limited by supply and connectivity.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA resale-only 2.1%/yr (post bias adjustment), small FH uplift"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-verticus-60222406",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

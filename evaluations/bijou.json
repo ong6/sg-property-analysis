@@ -1,0 +1,63 @@
+{
+  "condo": "Bijou",
+  "slug": "bijou",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 504sqft 1BR essentially on top of Pasir Panjang MRT (170m, Circle Line) in D05, near One-North/Mapletree Business City, at $1040k / $2063 psf. The 4.6% CAGR rests on only 13 transactions (low confidence), but freehold + doorstep-MRT + One-North-adjacent rental location is a strong combination for a shoebox.",
+      "rating_rationale": "For a 1BR, the two things that matter most are MRT proximity and rental demand — this has 170m to Pasir Panjang MRT and sits beside the One-North/MBC employment cluster, an ideal small-unit rental location. Freehold at $2063 psf in D05, and the listing PSF appears well below the $2561 median (some of that gap is unit-mix, but the location quality is real). The 13-txn appreciation rate is the main caveat (low statistical confidence). Strong location + freehold tip it to a Buy at medium confidence.",
+      "red_flags": [
+        "Only 13 URA transactions — appreciation rate low-confidence, boutique liquidity",
+        "504sqft shoebox — investor-niche resale pool",
+        "PSF gap to $2561 median likely partly unit-mix, not pure discount"
+      ],
+      "catalysts": [
+        "Freehold tenure with 170m doorstep access to Pasir Panjang MRT (Circle Line)",
+        "Adjacent to One-North / Mapletree Business City / Science Park — deep professional tenant pool",
+        "Greater Southern Waterfront transformation in the D05 corridor"
+      ],
+      "as_of": {
+        "price": 1040000,
+        "psf": 2063.49,
+        "beds": 1,
+        "sqft": 504.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 504sqft 1BR essentially on top of Pasir Panjang MRT (170m, Circle Line) in D05, near One-North/Mapletree Business City, at $1040k / $2063 psf. The 4.6% CAGR rests on only 13 transactions (low confidence), but freehold + doorstep-MRT + One-North-adjacent rental location is a strong combination for a shoebox.",
+        "rating": "Buy",
+        "rating_rationale": "For a 1BR, the two things that matter most are MRT proximity and rental demand — this has 170m to Pasir Panjang MRT and sits beside the One-North/MBC employment cluster, an ideal small-unit rental location. Freehold at $2063 psf in D05, and the listing PSF appears well below the $2561 median (some of that gap is unit-mix, but the location quality is real). The 13-txn appreciation rate is the main caveat (low statistical confidence). Strong location + freehold tip it to a Buy at medium confidence.",
+        "red_flags": [
+          "Only 13 URA transactions — appreciation rate low-confidence, boutique liquidity",
+          "504sqft shoebox — investor-niche resale pool",
+          "PSF gap to $2561 median likely partly unit-mix, not pure discount"
+        ],
+        "catalysts": [
+          "Freehold tenure with 170m doorstep access to Pasir Panjang MRT (Circle Line)",
+          "Adjacent to One-North / Mapletree Business City / Science Park — deep professional tenant pool",
+          "Greater Southern Waterfront transformation in the D05 corridor"
+        ],
+        "rental_assessment": "Excellent for a 1BR — doorstep MRT plus the MBC/One-North/Science Park job cluster gives a deep, reliable tenant pool; freehold shoebox here rents and holds well.",
+        "appreciation_assessment": "4.6% is plausible for freehold D05 but rests on only 13 txns (low confidence). Freehold + transit + GSW corridor support a steady hold even if the precise rate is uncertain.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale 4.6% (only 13 txns) — treated as indicative, freehold-D05 supported"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bijou-500058878",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

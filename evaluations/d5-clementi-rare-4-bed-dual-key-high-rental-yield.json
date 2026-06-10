@@ -1,0 +1,63 @@
+{
+  "condo": "⭐️ D5 Clementi Rare 4 Bed Dual Key High Rental Yield",
+  "slug": "d5-clementi-rare-4-bed-dual-key-high-rental-yield",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "This is ELTA (Clementi Avenue 1, 99LH new launch, D05) — a 4-bed dual-key, 1,313 sqft, $2.9M / $2,209 psf, ~640m from Clementi MRT (which gains a future Cross Island Line interchange, CR17). Strong location and CRL catalyst, and the dual-key format aids rental flexibility, but it's a $2.9M new-launch quantum at full pricing.",
+      "rating_rationale": "ELTA sits on top of Clementi's transport node — existing EWL plus the upcoming Cross Island Line interchange (CR17) — a genuine appreciation catalyst, and the dual-key layout supports the 'high rental yield' pitch (one key let, one occupied). But $2,209 psf is full new-launch pricing with the upside largely priced in, the $2.9M quantum sits above the deepest buyer band, and there's no resale track. Score_1000 444 reflects the rich entry. A quality, well-located asset but not a value buy — Neutral.",
+      "red_flags": [
+        "$2,209 psf is full new-launch pricing — limited near-term appreciation margin",
+        "$2.9M 4BR quantum above the deepest resale buyer band",
+        "No URA resale history (new launch); dual-key premium baked into ask"
+      ],
+      "catalysts": [
+        "Clementi MRT (640m) gaining a Cross Island Line interchange (CR17) — strong connectivity uplift",
+        "Dual-key format enables flexible rental income / multi-gen use",
+        "D05 One-North / NUS / education-belt rental demand and mature-town amenities"
+      ],
+      "as_of": {
+        "price": 2900000,
+        "psf": 2208.68,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "This is ELTA (Clementi Avenue 1, 99LH new launch, D05) — a 4-bed dual-key, 1,313 sqft, $2.9M / $2,209 psf, ~640m from Clementi MRT (which gains a future Cross Island Line interchange, CR17). Strong location and CRL catalyst, and the dual-key format aids rental flexibility, but it's a $2.9M new-launch quantum at full pricing.",
+        "rating": "Neutral",
+        "rating_rationale": "ELTA sits on top of Clementi's transport node — existing EWL plus the upcoming Cross Island Line interchange (CR17) — a genuine appreciation catalyst, and the dual-key layout supports the 'high rental yield' pitch (one key let, one occupied). But $2,209 psf is full new-launch pricing with the upside largely priced in, the $2.9M quantum sits above the deepest buyer band, and there's no resale track. Score_1000 444 reflects the rich entry. A quality, well-located asset but not a value buy — Neutral.",
+        "red_flags": [
+          "$2,209 psf is full new-launch pricing — limited near-term appreciation margin",
+          "$2.9M 4BR quantum above the deepest resale buyer band",
+          "No URA resale history (new launch); dual-key premium baked into ask"
+        ],
+        "catalysts": [
+          "Clementi MRT (640m) gaining a Cross Island Line interchange (CR17) — strong connectivity uplift",
+          "Dual-key format enables flexible rental income / multi-gen use",
+          "D05 One-North / NUS / education-belt rental demand and mature-town amenities"
+        ],
+        "rental_assessment": "Dual-key in Clementi taps strong NUS/One-North/family tenant demand and can run a higher blended yield than a standard 4BR — the listing's yield claim is plausible.",
+        "appreciation_assessment": "Clementi's CRL interchange supports above-baseline RCR-fringe appreciation, but entry at full new-launch PSF means much of that is already captured for a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "D05/Clementi CRL-interchange prior, discounted for full new-launch entry PSF; ELTA has no resale history"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d5-clementi-rare-4-bed-dual-key-high-rental-yield-500060117",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

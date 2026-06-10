@@ -1,0 +1,63 @@
+{
+  "condo": "71 Seng Poh Road",
+  "slug": "71-seng-poh-road",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1938-built, 99-year leasehold pre-war walk-up in the Tiong Bahru conservation belt (D03), asking $1.299M. Charming heritage location but the lowest score in the batch (156) reflects a near-90-year-old leasehold with severe lease-decay, financing and resale constraints.",
+      "rating_rationale": "Built 1938 on a 99-year lease — remaining lease is critically short, triggering CPF-usage and bank-financing restrictions that gut the buyer pool. Tiong Bahru heritage charm supports own-stay demand but not investment math: lease decay works against you every year of a 5-7yr hold, and no URA series confirms any appreciation. Score 156 is the floor of the batch for good reason.",
+      "red_flags": [
+        "1938 build on 99-yr lease — critically low remaining lease, CPF/financing restrictions",
+        "Pre-war walk-up: maintenance, no facilities, lift-less",
+        "Lease decay actively erodes value over the hold",
+        "No URA data; lowest technical score in batch (156)"
+      ],
+      "catalysts": [
+        "Tiong Bahru conservation-district desirability (own-stay/lifestyle)",
+        "520m to Havelock TEL MRT"
+      ],
+      "as_of": {
+        "price": 1299000,
+        "psf": 1325.51,
+        "beds": 3,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1938-built, 99-year leasehold pre-war walk-up in the Tiong Bahru conservation belt (D03), asking $1.299M. Charming heritage location but the lowest score in the batch (156) reflects a near-90-year-old leasehold with severe lease-decay, financing and resale constraints.",
+        "rating": "Avoid",
+        "rating_rationale": "Built 1938 on a 99-year lease — remaining lease is critically short, triggering CPF-usage and bank-financing restrictions that gut the buyer pool. Tiong Bahru heritage charm supports own-stay demand but not investment math: lease decay works against you every year of a 5-7yr hold, and no URA series confirms any appreciation. Score 156 is the floor of the batch for good reason.",
+        "red_flags": [
+          "1938 build on 99-yr lease — critically low remaining lease, CPF/financing restrictions",
+          "Pre-war walk-up: maintenance, no facilities, lift-less",
+          "Lease decay actively erodes value over the hold",
+          "No URA data; lowest technical score in batch (156)"
+        ],
+        "catalysts": [
+          "Tiong Bahru conservation-district desirability (own-stay/lifestyle)",
+          "520m to Havelock TEL MRT"
+        ],
+        "rental_assessment": "Tiong Bahru rents well to lifestyle tenants, but a low-lease walk-up commands no premium and yield won't offset lease decay.",
+        "appreciation_assessment": "Lease decay dominates; old leasehold conservation walk-ups typically flat-to-down in real terms absent an en-bloc/SERS event, which is not indicated here.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 0.0,
+        "appreciation_rate_source": "Lease-decay dominated; old 99yr leasehold near lease tail"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-71-seng-poh-road-500065999",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

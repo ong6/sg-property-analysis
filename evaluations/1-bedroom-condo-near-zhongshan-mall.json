@@ -1,0 +1,61 @@
+{
+  "condo": "1 bedroom condo near Zhongshan mall",
+  "slug": "1-bedroom-condo-near-zhongshan-mall",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 377 sqft shoebox 1BR at $1,936 PSF in D12 Balestier, anonymously listed with no project name, no built year, and no URA data. A tiny mosquito unit far from MRT (1.15km/14min walk) with no liquidity or appreciation evidence — pure speculation.",
+      "rating_rationale": "377 sqft shoebox is the most oversupplied, weakest-resale unit type in SG; $1,936 PSF is steep for D12 Balestier with no MRT proximity. Generic unnamed listing means no project track record, no URA txn count, score_1000 only 489 and a weak 81-224-10 arena record (elo 856). Nothing here supports an investment buy.",
+      "red_flags": [
+        "Shoebox 377 sqft — thinnest resale demand, MOP oversupply",
+        "No project name / no built year / no URA appreciation or txn data",
+        "1.15km (14 min walk) from nearest MRT",
+        "High $1,936 PSF for a non-prime Balestier shoebox"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Sub-$750k absolute quantum keeps it within reach of a wide buyer pool"
+      ],
+      "as_of": {
+        "price": 730000,
+        "psf": 1936.34,
+        "beds": 1,
+        "sqft": 377.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 377 sqft shoebox 1BR at $1,936 PSF in D12 Balestier, anonymously listed with no project name, no built year, and no URA data. A tiny mosquito unit far from MRT (1.15km/14min walk) with no liquidity or appreciation evidence — pure speculation.",
+        "rating": "Avoid",
+        "rating_rationale": "377 sqft shoebox is the most oversupplied, weakest-resale unit type in SG; $1,936 PSF is steep for D12 Balestier with no MRT proximity. Generic unnamed listing means no project track record, no URA txn count, score_1000 only 489 and a weak 81-224-10 arena record (elo 856). Nothing here supports an investment buy.",
+        "red_flags": [
+          "Shoebox 377 sqft — thinnest resale demand, MOP oversupply",
+          "No project name / no built year / no URA appreciation or txn data",
+          "1.15km (14 min walk) from nearest MRT",
+          "High $1,936 PSF for a non-prime Balestier shoebox"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Sub-$750k absolute quantum keeps it within reach of a wide buyer pool"
+        ],
+        "rental_assessment": "Shoebox near Novena medical hub has some tenant demand, but 1.15km walk and 377 sqft cap rents; yield does not offset weak capital prospects.",
+        "appreciation_assessment": "No project-specific URA data; shoeboxes historically lag larger units on appreciation. Unfavorable.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1-bedroom-condo-near-zhongshan-mall-500095556",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "condo": "Rezi 3Two",
+  "slug": "rezi-3two",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR (463sqft) at Rezi 3Two, D14 Geylang/Dakota, at $748k / $1,616 PSF — small-ticket freehold near Dakota MRT with the batch's top score (735, on-frontier). Listing PSF essentially matches the $1,602 URA median, so it is fairly priced rather than cheap; 1BR is a niche, shoebox-investor product.",
+      "rating_rationale": "$1,616 PSF vs $1,602 URA median = priced at market, no built-in discount. URA rate 2.13%/yr is honest (resale, no new-launch bias) but modest, and rests on only 11 txns. Freehold tenure and Paya Lebar Central proximity (D14 airbase-relocation catalyst) plus Dakota MRT 730m are genuine positives, and the small $748k ticket is liquid. But shoebox 1BR is a narrower exit pool and the appreciation history here is low-single-digit. Strong score reflects efficient yield, not appreciation.",
+      "red_flags": [
+        "URA rate only 2.1%/yr and from 11 txns",
+        "Shoebox 1BR — niche resale pool",
+        "Priced at URA median, no value entry"
+      ],
+      "catalysts": [
+        "Paya Lebar Central commercial hub + airbase relocation (long-term D14 uplift)",
+        "Dakota MRT (Circle Line, 730m)",
+        "Freehold tenure"
+      ],
+      "as_of": {
+        "price": 748000,
+        "psf": 1615.55,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR (463sqft) at Rezi 3Two, D14 Geylang/Dakota, at $748k / $1,616 PSF — small-ticket freehold near Dakota MRT with the batch's top score (735, on-frontier). Listing PSF essentially matches the $1,602 URA median, so it is fairly priced rather than cheap; 1BR is a niche, shoebox-investor product.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,616 PSF vs $1,602 URA median = priced at market, no built-in discount. URA rate 2.13%/yr is honest (resale, no new-launch bias) but modest, and rests on only 11 txns. Freehold tenure and Paya Lebar Central proximity (D14 airbase-relocation catalyst) plus Dakota MRT 730m are genuine positives, and the small $748k ticket is liquid. But shoebox 1BR is a narrower exit pool and the appreciation history here is low-single-digit. Strong score reflects efficient yield, not appreciation.",
+        "red_flags": [
+          "URA rate only 2.1%/yr and from 11 txns",
+          "Shoebox 1BR — niche resale pool",
+          "Priced at URA median, no value entry"
+        ],
+        "catalysts": [
+          "Paya Lebar Central commercial hub + airbase relocation (long-term D14 uplift)",
+          "Dakota MRT (Circle Line, 730m)",
+          "Freehold tenure"
+        ],
+        "rental_assessment": "1BR near Dakota MRT rents well to singles/young professionals; yield is the strength here given the low entry price.",
+        "appreciation_assessment": "Modest — URA shows ~2%/yr; D14 catalysts could lift it but shoebox capital growth typically lags larger units.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "URA resale 2.1% plus modest D14 catalyst uplift"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-3two-60056871",
+        "review_file": "cov_batch_26.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The dossier's -16.5% 'cheap' read is age/district-relative, not project-relative: at the project level this 1+study at S$1,616 psf is at/above the verified median (1+1 median ~S$1,541; 12-mo range S$1,527-1,600). Strong ~4.5% yield and twin-MRT access are the real draws; freehold-but-Geylang and full pricing cap it.",
+      "rating_rationale": "Web-verified Rezi 3Two 1+1 median is ~S$1,541 psf with a 12-month band of S$1,527-1,600 (high S$1,659 in Oct 2024). The S$1,616 psf ask therefore sits at the top of/above the same-cohort range — i.e. full price, not a bargain — even though the dossier's age_adj of -16.5% (vs district new-launch peers) and psf_premium_vs_cohort of just +1.0% (6 txns) reflect fair-to-full at project level. Per v3.4 value leads and there isn't a project-level value edge here. Positives are concrete: ~4.5% gross yield (strong for a freehold 1BR) and a walkable spot between Aljunied (EWL) and Dakota (CCL). Geylang carries the usual stigma/financing/tenant-mix caveats. Freehold is not a forward edge. Net: a fairly-priced, well-yielding unit in a mixed location — Neutral.",
+      "red_flags": [
+        "S$1,616 psf ask is at/above the verified 1+1 cohort median (~S$1,541; band S$1,527-1,600) — paying full price",
+        "Geylang location: red-light-district adjacency, financing/valuation and tenant-mix caveats",
+        "appreciation_txns=11 (thin) — 2.13% CAGR not meaningful",
+        "65-unit boutique block — modest liquidity"
+      ],
+      "catalysts": [
+        "Strong ~4.5% gross rental yield for a freehold 1BR",
+        "Between Aljunied (EWL) and Dakota (CCL) MRT; RCR forward region ~+3.5% (v3.4)",
+        "Freehold (durable, not a forward price edge per v3.4)"
+      ],
+      "as_of": {
+        "price": 748000,
+        "psf": 1615.55,
+        "beds": 1,
+        "sqft": 463
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "The dossier's -16.5% 'cheap' read is age/district-relative, not project-relative: at the project level this 1+study at S$1,616 psf is at/above the verified median (1+1 median ~S$1,541; 12-mo range S$1,527-1,600). Strong ~4.5% yield and twin-MRT access are the real draws; freehold-but-Geylang and full pricing cap it.",
+        "rating_rationale": "Web-verified Rezi 3Two 1+1 median is ~S$1,541 psf with a 12-month band of S$1,527-1,600 (high S$1,659 in Oct 2024). The S$1,616 psf ask therefore sits at the top of/above the same-cohort range — i.e. full price, not a bargain — even though the dossier's age_adj of -16.5% (vs district new-launch peers) and psf_premium_vs_cohort of just +1.0% (6 txns) reflect fair-to-full at project level. Per v3.4 value leads and there isn't a project-level value edge here. Positives are concrete: ~4.5% gross yield (strong for a freehold 1BR) and a walkable spot between Aljunied (EWL) and Dakota (CCL). Geylang carries the usual stigma/financing/tenant-mix caveats. Freehold is not a forward edge. Net: a fairly-priced, well-yielding unit in a mixed location — Neutral.",
+        "red_flags": [
+          "S$1,616 psf ask is at/above the verified 1+1 cohort median (~S$1,541; band S$1,527-1,600) — paying full price",
+          "Geylang location: red-light-district adjacency, financing/valuation and tenant-mix caveats",
+          "appreciation_txns=11 (thin) — 2.13% CAGR not meaningful",
+          "65-unit boutique block — modest liquidity"
+        ],
+        "catalysts": [
+          "Strong ~4.5% gross rental yield for a freehold 1BR",
+          "Between Aljunied (EWL) and Dakota (CCL) MRT; RCR forward region ~+3.5% (v3.4)",
+          "Freehold (durable, not a forward price edge per v3.4)"
+        ],
+        "appreciation_assessment": "Dossier 2.13% 5yr CAGR on 11 txns is low and not forward-predictive; the case is yield + connectivity, not appreciation.",
+        "rental_assessment": "~4.5% gross yield is genuinely strong for a small freehold unit; compact 1+study near two MRT lines leases easily to singles/couples — the standout positive of this listing."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-3two-60056871",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

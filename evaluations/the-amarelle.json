@@ -1,0 +1,63 @@
+{
+  "condo": "The Amarelle",
+  "slug": "the-amarelle",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 613 sqft 1BR at $1.08M / $1,762 PSF, 640m from Paya Lebar MRT (EW/Circle interchange). Strong interchange access and freehold tenure, but it is a boutique 1BR with only 12 URA transactions, so both the 5.42% rate and the $1,748 median are statistically thin.",
+      "rating_rationale": "PSF $1,762 is essentially at the $1,748 median (no margin). The headline 5.42% CAGR rests on just 12 txns — below any reliability threshold — and a boutique 1BR resale market is lumpy. Offsetting that: dual-line Paya Lebar interchange 640m away, Paya Lebar Central commercial growth, freehold, and a manageable $1.08M quantum.",
+      "red_flags": [
+        "Only 12 URA txns — 5.42% rate and $1,748 median both statistically unreliable",
+        "Boutique 1BR — shallow, lumpy resale liquidity",
+        "Priced at the median, no entry discount"
+      ],
+      "catalysts": [
+        "640m to EW8/CC9 Paya Lebar interchange — dual-line connectivity",
+        "Paya Lebar Central commercial hub + airbase relocation long-term",
+        "Freehold tenure at an accessible $1.08M"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 1761.83,
+        "beds": 1,
+        "sqft": 613.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 613 sqft 1BR at $1.08M / $1,762 PSF, 640m from Paya Lebar MRT (EW/Circle interchange). Strong interchange access and freehold tenure, but it is a boutique 1BR with only 12 URA transactions, so both the 5.42% rate and the $1,748 median are statistically thin.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $1,762 is essentially at the $1,748 median (no margin). The headline 5.42% CAGR rests on just 12 txns — below any reliability threshold — and a boutique 1BR resale market is lumpy. Offsetting that: dual-line Paya Lebar interchange 640m away, Paya Lebar Central commercial growth, freehold, and a manageable $1.08M quantum.",
+        "red_flags": [
+          "Only 12 URA txns — 5.42% rate and $1,748 median both statistically unreliable",
+          "Boutique 1BR — shallow, lumpy resale liquidity",
+          "Priced at the median, no entry discount"
+        ],
+        "catalysts": [
+          "640m to EW8/CC9 Paya Lebar interchange — dual-line connectivity",
+          "Paya Lebar Central commercial hub + airbase relocation long-term",
+          "Freehold tenure at an accessible $1.08M"
+        ],
+        "rental_assessment": "Paya Lebar is a solid rental node (offices, interchange); a FH 1BR should let well to single professionals, the deepest part of the 1BR tenant pool.",
+        "appreciation_assessment": "5.4% is plausible for FH near a dual-line interchange in a growth corridor, but 12 txns make it indicative only — treat as district-typical until more trades confirm.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.8,
+        "appreciation_rate_source": "URA resale 5.4% discounted for 12-txn sample"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-amarelle-21726818",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

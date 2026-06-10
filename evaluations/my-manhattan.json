@@ -1,0 +1,117 @@
+{
+  "condo": "My Manhattan",
+  "slug": "my-manhattan",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A generously-sized 646 sqft 1BR at My Manhattan, a D18 (Simei) mixed-development leasehold directly at Simei MRT (110m), asking $999k / $1,546 psf vs a $1,586 median. MRT-on-doorstep, sub-$1M entry, and a reliable 4.6%/yr CAGR make this a solid yield-plus-liquidity buy.",
+      "rating_rationale": "Strong investment profile for a 1BR: 110m to Simei MRT (EWL) and integrated with retail (Eastpoint Mall vicinity / mixed development) gives genuine convenience and tenant pull; 646 sqft is a roomy 1BR (not a tight shoebox), broadening appeal. 81 URA txns support a reliable 4.6%/yr resale CAGR — above the OCR baseline — and the listing PSF is ~2.5% below the project median. Sub-$1M quantum keeps the buyer pool deep. Tampines Regional Centre / CRL+DTL extension catchment nearby supports demand. 99yr from 2014 is the main caveat. Clear Buy on liquidity and yield.",
+      "red_flags": [
+        "99yr leasehold from 2014 — lease decay over hold",
+        "OCR (D18) ceiling — appreciation capped vs central districts",
+        "1BR remains a single-tenant format despite the larger size"
+      ],
+      "catalysts": [
+        "110m to Simei MRT + integrated retail — strong tenant/owner pull",
+        "Reliable 4.6%/yr resale CAGR on 81 txns, listed below project median",
+        "Sub-$1M quantum (deep buyer pool); Tampines Regional Centre / CRL catchment"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1546.44,
+        "beds": 1,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A generously-sized 646 sqft 1BR at My Manhattan, a D18 (Simei) mixed-development leasehold directly at Simei MRT (110m), asking $999k / $1,546 psf vs a $1,586 median. MRT-on-doorstep, sub-$1M entry, and a reliable 4.6%/yr CAGR make this a solid yield-plus-liquidity buy.",
+        "rating": "Buy",
+        "rating_rationale": "Strong investment profile for a 1BR: 110m to Simei MRT (EWL) and integrated with retail (Eastpoint Mall vicinity / mixed development) gives genuine convenience and tenant pull; 646 sqft is a roomy 1BR (not a tight shoebox), broadening appeal. 81 URA txns support a reliable 4.6%/yr resale CAGR — above the OCR baseline — and the listing PSF is ~2.5% below the project median. Sub-$1M quantum keeps the buyer pool deep. Tampines Regional Centre / CRL+DTL extension catchment nearby supports demand. 99yr from 2014 is the main caveat. Clear Buy on liquidity and yield.",
+        "red_flags": [
+          "99yr leasehold from 2014 — lease decay over hold",
+          "OCR (D18) ceiling — appreciation capped vs central districts",
+          "1BR remains a single-tenant format despite the larger size"
+        ],
+        "catalysts": [
+          "110m to Simei MRT + integrated retail — strong tenant/owner pull",
+          "Reliable 4.6%/yr resale CAGR on 81 txns, listed below project median",
+          "Sub-$1M quantum (deep buyer pool); Tampines Regional Centre / CRL catchment"
+        ],
+        "rental_assessment": "Strong: MRT-at-doorstep mixed development in Simei draws a deep tenant pool (SUTD, Changi Business Park, airport workers); expect ~4%+ gross yield with high occupancy.",
+        "appreciation_assessment": "4.6%/yr resale CAGR on 81 txns is reliable and above the OCR baseline; below-median pricing and MRT integration support continued tracking of the market.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-my-manhattan-25532171",
+        "review_file": "cov_batch_20.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "My Manhattan (Simei, mixed development directly atop Simei MRT / Eastpoint Mall, TOP 2014) 1BR at $888k / $1,586 psf. The location is genuinely good for 1BR rental, but the unit is NOT cheap — algo shows age_adj +6.3% (slightly above fair) — and resident reviews repeatedly cite structural workmanship issues (rain ingress, mould, peeling paint), a real build-quality concern for a buy-and-hold.",
+      "rating_rationale": "This is the rare cohort name with solid real data: 81 URA transactions, 5yr CAGR 4.55%, and a tight PSF cohort of 8 txns showing the unit at -2.8% vs cohort (essentially at-market). But at-market is not a value edge, and age_adj_premium of +6.3% says it's mildly expensive against age-peers. D18 is favourable OCR, and a 1BR over Simei MRT in a mixed-use block rents well (the investment-friendliest attribute here), but the documented structural/leak complaints are a forward liability for maintenance and resale narrative. With no value discount and a build-quality overhang, it nets to Neutral — the location/rentability and the lack of a discount roughly cancel.",
+      "red_flags": [
+        "Not cheap: age_adj_premium +6.3% (above fair for its age); psf_cohort -2.8% on only 8 txns is at-market, not a bargain",
+        "Multiple resident reviews report poor structural workmanship — rain leakage, mould, peeling paint",
+        "Trailing 4.55% CAGR has ~0 forward power per v3.4 priors — story only, not a forward guarantee",
+        "99-yr leasehold (TOP 2014) — lease decay over the hold",
+        "Small 560 sqft 1BR — tenant-dependent income, more cyclical than family units"
+      ],
+      "catalysts": [
+        "Mixed-use development directly above Simei MRT (EWL) and Eastpoint Mall — strong, durable 1BR tenant demand",
+        "~10 min to Changi Airport/Jewel and proximity to Changi Business Park / SUTD employment nodes",
+        "Deep real transaction base (81 txns) gives the price discovery more reliability than thin-cohort peers"
+      ],
+      "as_of": {
+        "price": 888000,
+        "psf": 1585.71,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "My Manhattan (Simei, mixed development directly atop Simei MRT / Eastpoint Mall, TOP 2014) 1BR at $888k / $1,586 psf. The location is genuinely good for 1BR rental, but the unit is NOT cheap — algo shows age_adj +6.3% (slightly above fair) — and resident reviews repeatedly cite structural workmanship issues (rain ingress, mould, peeling paint), a real build-quality concern for a buy-and-hold.",
+        "rating_rationale": "This is the rare cohort name with solid real data: 81 URA transactions, 5yr CAGR 4.55%, and a tight PSF cohort of 8 txns showing the unit at -2.8% vs cohort (essentially at-market). But at-market is not a value edge, and age_adj_premium of +6.3% says it's mildly expensive against age-peers. D18 is favourable OCR, and a 1BR over Simei MRT in a mixed-use block rents well (the investment-friendliest attribute here), but the documented structural/leak complaints are a forward liability for maintenance and resale narrative. With no value discount and a build-quality overhang, it nets to Neutral — the location/rentability and the lack of a discount roughly cancel.",
+        "red_flags": [
+          "Not cheap: age_adj_premium +6.3% (above fair for its age); psf_cohort -2.8% on only 8 txns is at-market, not a bargain",
+          "Multiple resident reviews report poor structural workmanship — rain leakage, mould, peeling paint",
+          "Trailing 4.55% CAGR has ~0 forward power per v3.4 priors — story only, not a forward guarantee",
+          "99-yr leasehold (TOP 2014) — lease decay over the hold",
+          "Small 560 sqft 1BR — tenant-dependent income, more cyclical than family units"
+        ],
+        "catalysts": [
+          "Mixed-use development directly above Simei MRT (EWL) and Eastpoint Mall — strong, durable 1BR tenant demand",
+          "~10 min to Changi Airport/Jewel and proximity to Changi Business Park / SUTD employment nodes",
+          "Deep real transaction base (81 txns) gives the price discovery more reliability than thin-cohort peers"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-my-manhattan-500163618",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

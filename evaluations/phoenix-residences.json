@@ -1,0 +1,61 @@
+{
+  "condo": "Phoenix Residences",
+  "slug": "phoenix-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A new (2024) 3BR compact at 861 sqft, $1.5M, in D23 Bukit Panjang served by Phoenix LRT (650m, not MRT). $1,742 PSF is ~8% under the $1,887 URA median, and the $1.5M quantum is liquid, but the 5.99%/yr appreciation carries a new-launch bias flag and the only rail is the LRT feeder.",
+      "rating_rationale": "Positives: low $1.5M quantum (deep buyer pool), brand-new 2024 build, $1,742 PSF ~8% below URA median $1,887, and a 5.99%/yr rate. But that rate is flagged has_new_launch_bias=true with no resale-only counterpart and only 68 txns, so it is inflated by developer pricing and should be discounted toward the OCR ~3.7% baseline. D23 Bukit Panjang is OCR with only LRT (BP5, 650m) feeding to the DTL — weaker connectivity than MRT-fronting peers. An 861 sqft 3BR is also tight, limiting family appeal. Fairly priced but no standout catalyst.",
+      "red_flags": [
+        "5.99%/yr rate flagged new-launch biased with no resale-only basis — likely overstated",
+        "Only LRT access (Phoenix BP5, 650m); no direct MRT, weaker D23 connectivity",
+        "861 sqft is cramped for a 3BR — compromises family-buyer resale appeal"
+      ],
+      "catalysts": [
+        "Brand-new 2024 completion — minimal maintenance, modern layout",
+        "$1.5M quantum sits in the deep-resale band",
+        "Priced ~8% below URA project median PSF"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1742.16,
+        "beds": 3,
+        "sqft": 861.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new (2024) 3BR compact at 861 sqft, $1.5M, in D23 Bukit Panjang served by Phoenix LRT (650m, not MRT). $1,742 PSF is ~8% under the $1,887 URA median, and the $1.5M quantum is liquid, but the 5.99%/yr appreciation carries a new-launch bias flag and the only rail is the LRT feeder.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: low $1.5M quantum (deep buyer pool), brand-new 2024 build, $1,742 PSF ~8% below URA median $1,887, and a 5.99%/yr rate. But that rate is flagged has_new_launch_bias=true with no resale-only counterpart and only 68 txns, so it is inflated by developer pricing and should be discounted toward the OCR ~3.7% baseline. D23 Bukit Panjang is OCR with only LRT (BP5, 650m) feeding to the DTL — weaker connectivity than MRT-fronting peers. An 861 sqft 3BR is also tight, limiting family appeal. Fairly priced but no standout catalyst.",
+        "red_flags": [
+          "5.99%/yr rate flagged new-launch biased with no resale-only basis — likely overstated",
+          "Only LRT access (Phoenix BP5, 650m); no direct MRT, weaker D23 connectivity",
+          "861 sqft is cramped for a 3BR — compromises family-buyer resale appeal"
+        ],
+        "catalysts": [
+          "Brand-new 2024 completion — minimal maintenance, modern layout",
+          "$1.5M quantum sits in the deep-resale band",
+          "Priced ~8% below URA project median PSF"
+        ],
+        "rental_assessment": "Modest — Bukit Panjang is a residential OCR pocket with LRT feeder; 3BR yield ~3%, tenant demand local rather than premium.",
+        "appreciation_assessment": "Discount the 5.99% (new-launch biased) toward OCR ~3.7-4%; no major MRT or govt-zone catalyst in immediate vicinity to drive outperformance.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-phoenix-residences-25258435",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

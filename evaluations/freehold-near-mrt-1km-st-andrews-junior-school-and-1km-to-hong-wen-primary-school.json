@@ -1,0 +1,63 @@
+{
+  "condo": "Freehold, Near MRT, 1km St Andrews Junior School and 1km to Hong Wen Primary School",
+  "slug": "freehold-near-mrt-1km-st-andrews-junior-school-and-1km-to-hong-wen-primary-school",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "An anonymously-listed 969 sqft 3BR in D12 (Boon Keng) at $2.35M / $2,425 PSF, with no project name, no confirmed tenure, and no built year. Right next to Boon Keng MRT (40m) but a very high PSF on a small unit with zero verifiable project data.",
+      "rating_rationale": "$2,425 PSF for a 969 sqft 3BR in D12 Boon Keng is aggressive — above most resale norms for the area and a $2.35M quantum that thins the buyer pool. The listing hides the project name, leaves tenure blank, and has no built year or URA data, so neither appreciation nor liquidity can be assessed. A 40m MRT walk is the only clear positive; not enough to justify a full-price, data-blind buy.",
+      "red_flags": [
+        "Very high $2,425 PSF on a small 969 sqft 3BR",
+        "No project name, tenure blank, no built year — listing obscures basics",
+        "No URA appreciation or txn data",
+        "$2.35M quantum reduces buyer pool for a compact unit"
+      ],
+      "catalysts": [
+        "40m (1 min) to Boon Keng NEL MRT — exceptional transit",
+        "Within 1km of St Andrew's Junior and Hong Wen Primary — schooling draw",
+        "Listed as freehold city-fringe D12"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 2425.18,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An anonymously-listed 969 sqft 3BR in D12 (Boon Keng) at $2.35M / $2,425 PSF, with no project name, no confirmed tenure, and no built year. Right next to Boon Keng MRT (40m) but a very high PSF on a small unit with zero verifiable project data.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,425 PSF for a 969 sqft 3BR in D12 Boon Keng is aggressive — above most resale norms for the area and a $2.35M quantum that thins the buyer pool. The listing hides the project name, leaves tenure blank, and has no built year or URA data, so neither appreciation nor liquidity can be assessed. A 40m MRT walk is the only clear positive; not enough to justify a full-price, data-blind buy.",
+        "red_flags": [
+          "Very high $2,425 PSF on a small 969 sqft 3BR",
+          "No project name, tenure blank, no built year — listing obscures basics",
+          "No URA appreciation or txn data",
+          "$2.35M quantum reduces buyer pool for a compact unit"
+        ],
+        "catalysts": [
+          "40m (1 min) to Boon Keng NEL MRT — exceptional transit",
+          "Within 1km of St Andrew's Junior and Hong Wen Primary — schooling draw",
+          "Listed as freehold city-fringe D12"
+        ],
+        "rental_assessment": "On-top-of-MRT location near city fringe rents well, but the steep $2.35M entry on 969 sqft gives a thin yield. Tenant demand fine; economics poor.",
+        "appreciation_assessment": "No data; high entry PSF leaves little room for upside. Buying at the top for the area without verifiable support.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-near-mrt-1km-st-andrews-junior-school-and-1km-to-hong-wen-primary-school-25439523",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

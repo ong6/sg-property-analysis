@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️ cheap new FH, D15, TOP 2026, 1km haig girls ⭐️",
+  "slug": "cheap-new-fh-d15-top-2026-1km-haig-girls",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Likely Ardor Residence (or a comparable Haig Rd FH boutique), a tiny ~35-unit freehold project in D15 with a $3.2M 4BR at $2,477 psf, TOP 2026. The freehold/D15/Haig-Girls combination is appealing for own-stay, but as an investment it's a >$3M ticket in a thin-liquidity boutique with no resale track and a 1km+ MRT walk.",
+      "rating_rationale": "score_1000 347 flags the problem: a $3.2M entry sits above the deep-pool band, the development is a sub-40-unit boutique (shallow resale liquidity), and at $2,477 psf the new-launch appreciation is largely priced in. 1.06km to TE26 is a mediocre walk. Freehold and a 1km-to-Haig-Girls catch help own-stay, but the investment case — exit liquidity, yield on $3.2M, capped near-term upside — is weak.",
+      "red_flags": [
+        "Boutique development (~35 units) — shallow resale liquidity",
+        ">$3M ticket sits above the deepest buyer band",
+        "Full new-launch PSF $2,477 leaves limited appreciation headroom; 1.06km MRT walk"
+      ],
+      "catalysts": [
+        "Freehold in established D15 East Coast with school catchment (Haig Girls within 1km)",
+        "Brand-new TOP-2026 unit with no immediate capex"
+      ],
+      "as_of": {
+        "price": 3200000,
+        "psf": 2476.78,
+        "beds": 4,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Likely Ardor Residence (or a comparable Haig Rd FH boutique), a tiny ~35-unit freehold project in D15 with a $3.2M 4BR at $2,477 psf, TOP 2026. The freehold/D15/Haig-Girls combination is appealing for own-stay, but as an investment it's a >$3M ticket in a thin-liquidity boutique with no resale track and a 1km+ MRT walk.",
+        "rating": "Avoid",
+        "rating_rationale": "score_1000 347 flags the problem: a $3.2M entry sits above the deep-pool band, the development is a sub-40-unit boutique (shallow resale liquidity), and at $2,477 psf the new-launch appreciation is largely priced in. 1.06km to TE26 is a mediocre walk. Freehold and a 1km-to-Haig-Girls catch help own-stay, but the investment case — exit liquidity, yield on $3.2M, capped near-term upside — is weak.",
+        "red_flags": [
+          "Boutique development (~35 units) — shallow resale liquidity",
+          ">$3M ticket sits above the deepest buyer band",
+          "Full new-launch PSF $2,477 leaves limited appreciation headroom; 1.06km MRT walk"
+        ],
+        "catalysts": [
+          "Freehold in established D15 East Coast with school catchment (Haig Girls within 1km)",
+          "Brand-new TOP-2026 unit with no immediate capex"
+        ],
+        "rental_assessment": "A $3.2M 4BR rents to a narrow family/expat band; gross yield on this quantum is thin, and a small boutique offers no facilities draw for tenants.",
+        "appreciation_assessment": "No resale history and entry at full new-launch PSF; freehold supports long-run value but a small project at >$3M is unlikely to outperform on a 5-7yr investment horizon.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 freehold prior discounted for boutique illiquidity and full new-launch entry PSF; no project resale data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-new-fh-d15-top-2026-1km-haig-girls-500012787",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

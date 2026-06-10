@@ -1,0 +1,61 @@
+{
+  "condo": "ELTA",
+  "slug": "elta",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Brand-new Clementi GLS launch (CSC Land/MCL, ~501 units) whose 4BR at $2,345 PSF is priced at/below the development's own $2,363+ PSF launch range and beneath the $2,576 district new-launch median. Top-tier school belt and a CRL interchange at Clementi by ~2032 give a clear catalyst, but $3.08M for a 4BR sits in the thinner high-price band.",
+      "rating_rationale": "This 4BR at $2,345 PSF is keenly priced — web-verified ELTA 4BR launch starts ~$2,363 PSF and resale Clavon (5yr) already trades ~$2,393 PSF, so you buy a 0-year-old unit at parity-or-below. CRL Clementi interchange (~2032), Nan Hua/NUS High school belt and 404-txn district liquidity support it. New-launch bias means no reliable resale CAGR yet, and $3.08M narrows the buyer pool.",
+      "red_flags": [
+        "New launch — no resale-to-resale appreciation track; entry pricing already full",
+        "$3.08M 4BR sits in thinner liquidity band",
+        "Clementi MRT ~1km, not walk-up; CRL benefit is 2032"
+      ],
+      "catalysts": [
+        "Cross Island Line — Clementi becomes interchange ~2032",
+        "Prime school belt (Nan Hua, NUS High, Pei Tong)",
+        "Priced at/below own launch range and district new-launch median"
+      ],
+      "as_of": {
+        "price": 3080000,
+        "psf": 2345.77,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new Clementi GLS launch (CSC Land/MCL, ~501 units) whose 4BR at $2,345 PSF is priced at/below the development's own $2,363+ PSF launch range and beneath the $2,576 district new-launch median. Top-tier school belt and a CRL interchange at Clementi by ~2032 give a clear catalyst, but $3.08M for a 4BR sits in the thinner high-price band.",
+        "rating": "Buy",
+        "rating_rationale": "This 4BR at $2,345 PSF is keenly priced — web-verified ELTA 4BR launch starts ~$2,363 PSF and resale Clavon (5yr) already trades ~$2,393 PSF, so you buy a 0-year-old unit at parity-or-below. CRL Clementi interchange (~2032), Nan Hua/NUS High school belt and 404-txn district liquidity support it. New-launch bias means no reliable resale CAGR yet, and $3.08M narrows the buyer pool.",
+        "red_flags": [
+          "New launch — no resale-to-resale appreciation track; entry pricing already full",
+          "$3.08M 4BR sits in thinner liquidity band",
+          "Clementi MRT ~1km, not walk-up; CRL benefit is 2032"
+        ],
+        "catalysts": [
+          "Cross Island Line — Clementi becomes interchange ~2032",
+          "Prime school belt (Nan Hua, NUS High, Pei Tong)",
+          "Priced at/below own launch range and district new-launch median"
+        ],
+        "rental_assessment": "Strong tenant catchment from NUS/one-north and schools; 4BR is family-only but Clementi family demand is deep.",
+        "appreciation_assessment": "No resale CAGR available; thesis rests on sub-median launch pricing plus the CRL interchange catalyst rather than realized data.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-elta-500009053",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

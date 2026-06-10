@@ -1,0 +1,115 @@
+{
+  "condo": "NoMa",
+  "slug": "noma",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR shoebox (452sqft) near Dakota MRT in D14 Geylang fringe, priced at $1,726 PSF roughly in line with the $1,693 URA median. Small boutique-scale shoebox with negative resale-only appreciation (-2.0%/yr on a thin 8-txn series) and a niche single-buyer pool.",
+      "rating_rationale": "PSF is fair vs median ($1,726 vs $1,693) and freehold + Dakota MRT proximity support tenant demand, but a 452sqft shoebox is a niche, capital-light asset: thin 8-txn URA history, negative resale-only trend (-2.0%/yr), and a shallow owner-occupier buyer pool cap upside. Low absolute price ($780k) limits downside but this is a hold-for-yield play, not appreciation.",
+      "red_flags": [
+        "452sqft shoebox — niche buyer pool, weak owner-occupier appeal",
+        "Negative resale-only appreciation -2.0%/yr on thin 8-txn series",
+        "D14 Geylang fringe stigma can cap resale"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Dakota MRT (CCL) ~640m supports rental",
+        "Paya Lebar Central transformation in broader D14"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1725.66,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR shoebox (452sqft) near Dakota MRT in D14 Geylang fringe, priced at $1,726 PSF roughly in line with the $1,693 URA median. Small boutique-scale shoebox with negative resale-only appreciation (-2.0%/yr on a thin 8-txn series) and a niche single-buyer pool.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF is fair vs median ($1,726 vs $1,693) and freehold + Dakota MRT proximity support tenant demand, but a 452sqft shoebox is a niche, capital-light asset: thin 8-txn URA history, negative resale-only trend (-2.0%/yr), and a shallow owner-occupier buyer pool cap upside. Low absolute price ($780k) limits downside but this is a hold-for-yield play, not appreciation.",
+        "red_flags": [
+          "452sqft shoebox — niche buyer pool, weak owner-occupier appeal",
+          "Negative resale-only appreciation -2.0%/yr on thin 8-txn series",
+          "D14 Geylang fringe stigma can cap resale"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Dakota MRT (CCL) ~640m supports rental",
+          "Paya Lebar Central transformation in broader D14"
+        ],
+        "rental_assessment": "Shoebox near Dakota MRT/Paya Lebar has steady single-tenant demand and decent gross yield given the low $780k entry, but rents are capped by the small floorplate.",
+        "appreciation_assessment": "Resale-only data is negative (-2.0%/yr) and the new-launch-biased blended rate is near zero; expect modest, below-market appreciation for a shoebox.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 1.0,
+        "appreciation_rate_source": "URA resale-only trend (thin 8-txn) discounted toward flat; shoebox segment lags"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-noma-25362688",
+        "review_file": "cov_batch_36.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new (2024) freehold 1BR in D14 near Aljunied/Mountbatten MRT, asking $1,726 psf vs a project that has averaged ~$1,836 psf over the past year. The asking is genuinely a touch below recent project deals, but it's a small, shoebox 452 sqft unit in a boutique 50-unit dev — fine, not compelling.",
+      "rating_rationale": "Web check confirms NoMa is a 50-unit Macly Group freehold that TOP'd 2024, ~5 min to Aljunied MRT, with project trailing-12m average ~$1,836 psf. This 1BR at $1,725.66 psf ($780k) sits modestly below that, broadly consistent with the algo's -18% age-adj-cheap read, though the cohort is thin (psf_cohort_txns=3, appreciation_txns=8). D14 is a solid RCR/OCR-fringe forward region per v3.4 priors. But a 452 sqft shoebox in a boutique block carries limited tenant pool diversity and weaker exit liquidity, and the -2% trailing appreciation is just new-launch noise with no forward signal. No decisive catalyst; near-market value with thin comps keeps this a Neutral.",
+      "red_flags": [
+        "Boutique 50-unit development limits resale liquidity",
+        "452 sqft shoebox 1BR — narrow buyer/tenant pool",
+        "Thin cohort: only 3 psf comps and 8 appreciation transactions behind the cheap read"
+      ],
+      "catalysts": [
+        "~5 min walk to Aljunied MRT (EWL); Mountbatten/Dakota (Circle Line) nearby",
+        "Brand-new freehold — no lease decay, low maintenance for first cycle"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1725.66,
+        "beds": 1,
+        "sqft": 452
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Brand-new (2024) freehold 1BR in D14 near Aljunied/Mountbatten MRT, asking $1,726 psf vs a project that has averaged ~$1,836 psf over the past year. The asking is genuinely a touch below recent project deals, but it's a small, shoebox 452 sqft unit in a boutique 50-unit dev — fine, not compelling.",
+        "rating_rationale": "Web check confirms NoMa is a 50-unit Macly Group freehold that TOP'd 2024, ~5 min to Aljunied MRT, with project trailing-12m average ~$1,836 psf. This 1BR at $1,725.66 psf ($780k) sits modestly below that, broadly consistent with the algo's -18% age-adj-cheap read, though the cohort is thin (psf_cohort_txns=3, appreciation_txns=8). D14 is a solid RCR/OCR-fringe forward region per v3.4 priors. But a 452 sqft shoebox in a boutique block carries limited tenant pool diversity and weaker exit liquidity, and the -2% trailing appreciation is just new-launch noise with no forward signal. No decisive catalyst; near-market value with thin comps keeps this a Neutral.",
+        "red_flags": [
+          "Boutique 50-unit development limits resale liquidity",
+          "452 sqft shoebox 1BR — narrow buyer/tenant pool",
+          "Thin cohort: only 3 psf comps and 8 appreciation transactions behind the cheap read"
+        ],
+        "catalysts": [
+          "~5 min walk to Aljunied MRT (EWL); Mountbatten/Dakota (Circle Line) nearby",
+          "Brand-new freehold — no lease decay, low maintenance for first cycle"
+        ],
+        "appreciation_assessment": "Trailing -2.03% is regional/new-launch noise (8 txns) with ~0 forward power per backtest; no catalyst to underwrite outsized appreciation. Expect market-typical D14 fringe trajectory.",
+        "rental_assessment": "Shoebox 1BR near Aljunied/Mountbatten rents well to singles/couples; yield likely market-typical (~3.5-4%) but tenant pool is shallower than a 2BR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-noma-25362688",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

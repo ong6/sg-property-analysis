@@ -1,0 +1,63 @@
+{
+  "condo": "Twin Waterfalls",
+  "slug": "twin-waterfalls",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2,174 sqft 4BR EC in Punggol (Twin Waterfalls, D19) at $2.8M / $1,288 psf — a high quantum into a thin, family-only buyer band with LRT-only connectivity. No URA appreciation data and an oversized layout that inflates the absolute ticket make this a difficult 5-7yr investment exit.",
+      "rating_rationale": "$2.8M for a 4BR sits well above the $1.8-2.5M deepest-liquidity band, and the 2,174 sqft is genuinely oversized for the bedroom count — the low $1,288 psf is a function of size, not value. 850m to Soo Teck LRT (not MRT) plus OCR Punggol means a transit-dependent, niche resale pool. No project URA appreciation/txn data to anchor an upside case. Punggol Digital District is a real catalyst but does not rescue a $2.8M quantum.",
+      "red_flags": [
+        "$2.8M is well above the deep buyer band — narrow family-only exit",
+        "Oversized 2,174 sqft 4BR inflates the ticket; low psf is a size artifact",
+        "LRT-only (850m), no MRT — transit-dependent in OCR Punggol",
+        "No URA appreciation or transaction data to support upside"
+      ],
+      "catalysts": [
+        "Punggol Digital District + SIT campus driving precinct demand",
+        "99LH EC, fully privatised pricing in a maturing estate",
+        "Large dual-key-capable layout appeals to multi-gen families"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 1287.95,
+        "beds": 4,
+        "sqft": 2174.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2,174 sqft 4BR EC in Punggol (Twin Waterfalls, D19) at $2.8M / $1,288 psf — a high quantum into a thin, family-only buyer band with LRT-only connectivity. No URA appreciation data and an oversized layout that inflates the absolute ticket make this a difficult 5-7yr investment exit.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.8M for a 4BR sits well above the $1.8-2.5M deepest-liquidity band, and the 2,174 sqft is genuinely oversized for the bedroom count — the low $1,288 psf is a function of size, not value. 850m to Soo Teck LRT (not MRT) plus OCR Punggol means a transit-dependent, niche resale pool. No project URA appreciation/txn data to anchor an upside case. Punggol Digital District is a real catalyst but does not rescue a $2.8M quantum.",
+        "red_flags": [
+          "$2.8M is well above the deep buyer band — narrow family-only exit",
+          "Oversized 2,174 sqft 4BR inflates the ticket; low psf is a size artifact",
+          "LRT-only (850m), no MRT — transit-dependent in OCR Punggol",
+          "No URA appreciation or transaction data to support upside"
+        ],
+        "catalysts": [
+          "Punggol Digital District + SIT campus driving precinct demand",
+          "99LH EC, fully privatised pricing in a maturing estate",
+          "Large dual-key-capable layout appeals to multi-gen families"
+        ],
+        "rental_assessment": "Punggol rental demand is steady but rents on a 2,174 sqft unit yield poorly against a $2.8M base — sub-3% gross; tenant pool for very large units is shallow.",
+        "appreciation_assessment": "No project URA data; D19 OCR baseline ~3.7%/yr. PDD provides upside but the oversized 4BR format is the weakest-appreciating configuration in any estate.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-twin-waterfalls-60103110",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

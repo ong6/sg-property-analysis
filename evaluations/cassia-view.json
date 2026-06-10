@@ -1,0 +1,65 @@
+{
+  "condo": "Cassia View",
+  "slug": "cassia-view",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Cassia View is a 72-unit freehold condo (2001) at Guillemard Rd, D14, 560m from Dakota MRT — 3BR 1,205 sqft at $1.949M / $1,617 psf, just below the $1,650 median. Freehold, sub-$2M quantum near MRT and a high ~6.3% URA rate are appealing, though the rate rests on only 14 transactions.",
+      "rating_rationale": "Freehold, $1.949M (in the liquid band), $1,617 psf below the $1,650 median, and 560m from Dakota MRT (Circle Line) is a strong combination. URA resale CAGR is ~6.3% — encouraging, though the 14-txn base means treat as indicative, not certain. At 72 units it has modest but real en-bloc optionality (appears on en-bloc-potential lists) given freehold status and age. D14/Paya Lebar Central transformation supports demand. A solid value-buy; I trim the rate for the thin sample.",
+      "red_flags": [
+        "URA rate ~6.3% rests on only 14 transactions — indicative, not statistically firm",
+        "2001 build — older property, higher maintenance and some resale age discount",
+        "72-unit development — moderate, not deep, liquidity; en-bloc is optionality not a plan"
+      ],
+      "catalysts": [
+        "560m to Dakota CC8 MRT (Circle Line)",
+        "Freehold below district median PSF, $1.949M in the liquid band",
+        "Paya Lebar Central commercial transformation lifts D14 demand",
+        "Freehold + 2001 age gives genuine en-bloc optionality (72 units)"
+      ],
+      "as_of": {
+        "price": 1948888,
+        "psf": 1617.33,
+        "beds": 3,
+        "sqft": 1205.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Cassia View is a 72-unit freehold condo (2001) at Guillemard Rd, D14, 560m from Dakota MRT — 3BR 1,205 sqft at $1.949M / $1,617 psf, just below the $1,650 median. Freehold, sub-$2M quantum near MRT and a high ~6.3% URA rate are appealing, though the rate rests on only 14 transactions.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold, $1.949M (in the liquid band), $1,617 psf below the $1,650 median, and 560m from Dakota MRT (Circle Line) is a strong combination. URA resale CAGR is ~6.3% — encouraging, though the 14-txn base means treat as indicative, not certain. At 72 units it has modest but real en-bloc optionality (appears on en-bloc-potential lists) given freehold status and age. D14/Paya Lebar Central transformation supports demand. A solid value-buy; I trim the rate for the thin sample.",
+        "red_flags": [
+          "URA rate ~6.3% rests on only 14 transactions — indicative, not statistically firm",
+          "2001 build — older property, higher maintenance and some resale age discount",
+          "72-unit development — moderate, not deep, liquidity; en-bloc is optionality not a plan"
+        ],
+        "catalysts": [
+          "560m to Dakota CC8 MRT (Circle Line)",
+          "Freehold below district median PSF, $1.949M in the liquid band",
+          "Paya Lebar Central commercial transformation lifts D14 demand",
+          "Freehold + 2001 age gives genuine en-bloc optionality (72 units)"
+        ],
+        "rental_assessment": "Good — D14 near Dakota MRT and Paya Lebar offices supports steady 3BR family/professional rental; yield ~3-3.5%.",
+        "appreciation_assessment": "Freehold near an MRT in a transforming district; URA suggests ~6.3% but on a thin sample, so underwrite a conservative ~5% — still above the freehold norm.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale ~6.3% on 14 txns, trimmed for small sample toward verifiable D14 freehold range"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cassia-view-500122562",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

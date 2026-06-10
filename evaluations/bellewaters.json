@@ -1,0 +1,61 @@
+{
+  "condo": "Bellewaters",
+  "slug": "bellewaters",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1,216 sqft 4BR at Bellewaters, a 651-unit Sengkang EC (TOP 2017, 99yr from 2013) priced at $1,439 psf — right at the project's ~$1,467 psf 12-month resale average. Privatising EC in D19 with strong recent momentum (+6.9% y-o-y, +23.9% since 2022 per market data), liquid $1.75M family quantum.",
+      "rating_rationale": "Web-verified: Bellewaters is a large 651-unit EC transacting at avg ~$1,467 psf over the last 12 months, so this $1,439 psf listing is fairly-to-keenly priced. EC fundamentals are favourable — entry priced below comparable private condos, strong +6.9% y-o-y / +23.9% since-2022 appreciation, and a liquid $1.75M 4BR family quantum well within the deep-buyer band. 320m to Farmway LRT (Sengkang LRT loop, two stops to Sengkang NEL/town centre). Score 644, on frontier. Dossier had null URA data; web research fills the gap.",
+      "red_flags": [
+        "LRT (Farmway) not heavy-rail MRT — connectivity one notch below an MRT-adjacent project",
+        "99yr from 2013 leasehold; EC resale demand softens once novelty of privatisation passes"
+      ],
+      "catalysts": [
+        "EC-to-private appreciation runway as MOP/privatisation matures",
+        "Punggol Digital District and CRL Sengkang-area growth in D19",
+        "Strong recent momentum: +23.9% since 2022"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1439.14,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1,216 sqft 4BR at Bellewaters, a 651-unit Sengkang EC (TOP 2017, 99yr from 2013) priced at $1,439 psf — right at the project's ~$1,467 psf 12-month resale average. Privatising EC in D19 with strong recent momentum (+6.9% y-o-y, +23.9% since 2022 per market data), liquid $1.75M family quantum.",
+        "rating": "Buy",
+        "rating_rationale": "Web-verified: Bellewaters is a large 651-unit EC transacting at avg ~$1,467 psf over the last 12 months, so this $1,439 psf listing is fairly-to-keenly priced. EC fundamentals are favourable — entry priced below comparable private condos, strong +6.9% y-o-y / +23.9% since-2022 appreciation, and a liquid $1.75M 4BR family quantum well within the deep-buyer band. 320m to Farmway LRT (Sengkang LRT loop, two stops to Sengkang NEL/town centre). Score 644, on frontier. Dossier had null URA data; web research fills the gap.",
+        "red_flags": [
+          "LRT (Farmway) not heavy-rail MRT — connectivity one notch below an MRT-adjacent project",
+          "99yr from 2013 leasehold; EC resale demand softens once novelty of privatisation passes"
+        ],
+        "catalysts": [
+          "EC-to-private appreciation runway as MOP/privatisation matures",
+          "Punggol Digital District and CRL Sengkang-area growth in D19",
+          "Strong recent momentum: +23.9% since 2022"
+        ],
+        "rental_assessment": "Family-oriented EC; rental pool moderate (LRT location, mostly own-stay HDB-upgrader profile) but 4BR rents to families when leased.",
+        "appreciation_assessment": "Web data shows robust momentum (+6.9% y-o-y, +23.9% since 2022); EC privatisation premium and D19 growth support a 4.5-5%/yr forward view.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "EdgeProp/PropertyGuru: +6.9% y-o-y, +23.9% since 2022; EC privatisation premium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bellewaters-60079633",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

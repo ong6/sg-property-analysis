@@ -1,0 +1,115 @@
+{
+  "condo": "Stars of Kovan",
+  "slug": "stars-of-kovan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Compact 506sqft 1BR at Stars of Kovan, a 2020 mixed-use development literally on top of Kovan NEL MRT (350m), $900K at $1,778 PSF — ~8% below the $1,933 URA median. Excellent transit-integrated location, but a low Elo (1382) and tepid 2.8%/yr appreciation make it a steady-yield play rather than a growth one.",
+      "rating_rationale": "350m to Kovan MRT plus integrated retail is a genuine rental-magnet location, and $900K is firmly in the liquid entry band with below-median PSF. But the URA appreciation is only 2.81%/yr (110 txns, reliable but low — below OCR baseline), the arena Elo is the lowest in the batch (1382), and 1BR is a niche resale unit. This is a defensible income/yield hold near an MRT, not a capital-growth pick.",
+      "red_flags": [
+        "Low 2.81%/yr appreciation on 110 txns — below OCR baseline",
+        "Weakest arena Elo in batch (1382)",
+        "1BR niche resale; mixed-use can carry higher maintenance/noise"
+      ],
+      "catalysts": [
+        "350m to Kovan NEL MRT, integrated retail — strong rental pull",
+        "Sub-$1M entry, liquid price band",
+        "Priced ~8% below URA median"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1778.66,
+        "beds": 1,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 506sqft 1BR at Stars of Kovan, a 2020 mixed-use development literally on top of Kovan NEL MRT (350m), $900K at $1,778 PSF — ~8% below the $1,933 URA median. Excellent transit-integrated location, but a low Elo (1382) and tepid 2.8%/yr appreciation make it a steady-yield play rather than a growth one.",
+        "rating": "Neutral",
+        "rating_rationale": "350m to Kovan MRT plus integrated retail is a genuine rental-magnet location, and $900K is firmly in the liquid entry band with below-median PSF. But the URA appreciation is only 2.81%/yr (110 txns, reliable but low — below OCR baseline), the arena Elo is the lowest in the batch (1382), and 1BR is a niche resale unit. This is a defensible income/yield hold near an MRT, not a capital-growth pick.",
+        "red_flags": [
+          "Low 2.81%/yr appreciation on 110 txns — below OCR baseline",
+          "Weakest arena Elo in batch (1382)",
+          "1BR niche resale; mixed-use can carry higher maintenance/noise"
+        ],
+        "catalysts": [
+          "350m to Kovan NEL MRT, integrated retail — strong rental pull",
+          "Sub-$1M entry, liquid price band",
+          "Priced ~8% below URA median"
+        ],
+        "rental_assessment": "Transit-integrated 1BR rents fast in Hougang/Kovan; likely the strongest gross yield in the batch given the $900K ticket.",
+        "appreciation_assessment": "History shows modest ~2.8%/yr; expect income, not appreciation. No specific catalyst beyond the existing MRT.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.8,
+        "appreciation_rate_source": "URA 110-txn resale series (reliable, low)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-stars-of-kovan-24548602",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely under-priced 1BR in a mixed development 2-3 min from Kovan MRT (NEL), in the strongest forward region (D19/OCR). Web comps confirm the asking PSF is well below recent resale levels — the rare case where the algo's 'cheap' is real.",
+      "rating_rationale": "Asking 1,778.66 PSF vs verified 12-month resale range 1,650-2,042 (avg ~1,920; 6-month ~1,875). The ask is ~7% below the trailing average and near the bottom of the range — a real discount that corroborates the -2.9% age-adj and -3.0% vs-cohort signals. Direct 2-3 min walk to Kovan MRT and integrated retail underpins strong, durable rental demand (~3.4% historical yield). D19/OCR is the best-realized forward region in the v3.4 backtest. Confidence held at medium because the 1BR cohort is thin (psf_cohort_txns 5), so the exact discount magnitude carries noise.",
+      "red_flags": [
+        "Thin 1BR size-cohort (psf_cohort_txns 5) — discount magnitude has measurement noise",
+        "Small 506 sqft unit is investor-grade, more cyclical exit liquidity than larger formats"
+      ],
+      "catalysts": [
+        "2-3 min walk to Kovan MRT (NEL), one stop from Serangoon interchange",
+        "Integrated mixed development (retail at doorstep) supports rental demand",
+        "D19/OCR — strongest realized forward returns (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1778.66,
+        "beds": 1,
+        "sqft": 506
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely under-priced 1BR in a mixed development 2-3 min from Kovan MRT (NEL), in the strongest forward region (D19/OCR). Web comps confirm the asking PSF is well below recent resale levels — the rare case where the algo's 'cheap' is real.",
+        "rating_rationale": "Asking 1,778.66 PSF vs verified 12-month resale range 1,650-2,042 (avg ~1,920; 6-month ~1,875). The ask is ~7% below the trailing average and near the bottom of the range — a real discount that corroborates the -2.9% age-adj and -3.0% vs-cohort signals. Direct 2-3 min walk to Kovan MRT and integrated retail underpins strong, durable rental demand (~3.4% historical yield). D19/OCR is the best-realized forward region in the v3.4 backtest. Confidence held at medium because the 1BR cohort is thin (psf_cohort_txns 5), so the exact discount magnitude carries noise.",
+        "red_flags": [
+          "Thin 1BR size-cohort (psf_cohort_txns 5) — discount magnitude has measurement noise",
+          "Small 506 sqft unit is investor-grade, more cyclical exit liquidity than larger formats"
+        ],
+        "catalysts": [
+          "2-3 min walk to Kovan MRT (NEL), one stop from Serangoon interchange",
+          "Integrated mixed development (retail at doorstep) supports rental demand",
+          "D19/OCR — strongest realized forward returns (~+4.0%)"
+        ],
+        "appreciation_assessment": "2.81% 5yr CAGR (110 txns) is modest and only contextual; the forward thesis rests on verified current cheapness vs recent comps, not on trailing momentum.",
+        "rental_assessment": "Compact 1BR on top of an MRT with retail below is a prime short-let/rental product; historical ~3.4% gross yield is attractive for an OCR leasehold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-stars-of-kovan-24548602",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

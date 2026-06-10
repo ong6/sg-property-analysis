@@ -356,11 +356,6 @@ class QuickScorer:
         return None
 
 
-def quick_score_listing(listing: dict) -> QuickScore:
-    """Convenience function to score a single listing."""
-    return QuickScorer().score(listing)
-
-
 def filter_listings(
     listings: list[dict],
     min_tier: int = 2,

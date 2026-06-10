@@ -1,0 +1,63 @@
+{
+  "condo": "Arc at Tampines",
+  "slug": "arc-at-tampines",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "2BR (807sqft) at Arc at Tampines, a 2014 99yr development in D18, at $1.12M / $1,388 PSF — sits in the most liquid sub-$1.2M entry band with broad HDB-upgrader appeal. No URA project data and no MRT info listed; a sound, unexciting OCR holder rather than an outperformer.",
+      "rating_rationale": "$1,388 PSF for a 12-year-old D18 leasehold 2BR is reasonable and the $1.12M ticket sits in the deepest, most liquid Tampines price band. But no URA appreciation/median data is available (rate is a regional prior), no MRT proximity is captured in the dossier, and the score (601) / losing 158-251 arena record are middling. Tampines Regional Centre + CRL/DTL are real D18 catalysts but already largely priced.",
+      "red_flags": [
+        "No URA appreciation or median PSF data (regional prior only)",
+        "No MRT distance captured — Arc at Tampines is not MRT-adjacent",
+        "Aging leasehold (2014), 12yo"
+      ],
+      "catalysts": [
+        "Tampines Regional Centre employment hub",
+        "Cross Island Line + Downtown Line extension connectivity",
+        "Deep HDB-upgrader buyer pool in D18"
+      ],
+      "as_of": {
+        "price": 1120000,
+        "psf": 1387.86,
+        "beds": 2,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "2BR (807sqft) at Arc at Tampines, a 2014 99yr development in D18, at $1.12M / $1,388 PSF — sits in the most liquid sub-$1.2M entry band with broad HDB-upgrader appeal. No URA project data and no MRT info listed; a sound, unexciting OCR holder rather than an outperformer.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,388 PSF for a 12-year-old D18 leasehold 2BR is reasonable and the $1.12M ticket sits in the deepest, most liquid Tampines price band. But no URA appreciation/median data is available (rate is a regional prior), no MRT proximity is captured in the dossier, and the score (601) / losing 158-251 arena record are middling. Tampines Regional Centre + CRL/DTL are real D18 catalysts but already largely priced.",
+        "red_flags": [
+          "No URA appreciation or median PSF data (regional prior only)",
+          "No MRT distance captured — Arc at Tampines is not MRT-adjacent",
+          "Aging leasehold (2014), 12yo"
+        ],
+        "catalysts": [
+          "Tampines Regional Centre employment hub",
+          "Cross Island Line + Downtown Line extension connectivity",
+          "Deep HDB-upgrader buyer pool in D18"
+        ],
+        "rental_assessment": "2BR widest tenant pool; Tampines has steady regional-centre rental demand, yield ordinary.",
+        "appreciation_assessment": "Expect OCR-baseline appreciation; no project-specific signal to suggest outperformance.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR D18 baseline (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-arc-at-tampines-60121916",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "The Vision",
+  "slug": "the-vision",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 5,349sqft strata villa at The Vision, West Coast (D05), at $3.4M — the headline $635 psf and score_1000 of 989 are an artefact of the enormous floor area, not a bargain. As a $3.4M, 5,349sqft leasehold strata villa it is one of the most illiquid product types in Singapore, with a buyer pool measured in handfuls.",
+      "rating_rationale": "The score is a PSF illusion: $635 psf looks cheap only because the 5,349sqft denominator is a strata villa, the rarest and hardest-to-exit residential format. URA's $1,584 median PSF applies to normal apartments, not villas, so the comparison is meaningless. At $3.4M and 99-yr leasehold (~88 yrs left, built 2015), the buyer pool is tiny, appreciation is a pedestrian 3.4%/yr, and exit could take many months to years. Wrong product for a 5-7yr investment hold regardless of the flattering metrics.",
+      "red_flags": [
+        "5,349sqft strata villa — extremely shallow buyer pool, very slow exit",
+        "$635 psf and score_1000 989 are denominator artefacts, not value",
+        "$3.4M well above the liquid band",
+        "URA median PSF not comparable to a villa format",
+        "No MRT info in dossier"
+      ],
+      "catalysts": [
+        "One-North / West Coast employment catchment",
+        "99-yr leasehold with ~88 yrs still remaining"
+      ],
+      "as_of": {
+        "price": 3400000,
+        "psf": 635.63,
+        "beds": 4,
+        "sqft": 5349.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 5,349sqft strata villa at The Vision, West Coast (D05), at $3.4M — the headline $635 psf and score_1000 of 989 are an artefact of the enormous floor area, not a bargain. As a $3.4M, 5,349sqft leasehold strata villa it is one of the most illiquid product types in Singapore, with a buyer pool measured in handfuls.",
+        "rating": "Avoid",
+        "rating_rationale": "The score is a PSF illusion: $635 psf looks cheap only because the 5,349sqft denominator is a strata villa, the rarest and hardest-to-exit residential format. URA's $1,584 median PSF applies to normal apartments, not villas, so the comparison is meaningless. At $3.4M and 99-yr leasehold (~88 yrs left, built 2015), the buyer pool is tiny, appreciation is a pedestrian 3.4%/yr, and exit could take many months to years. Wrong product for a 5-7yr investment hold regardless of the flattering metrics.",
+        "red_flags": [
+          "5,349sqft strata villa — extremely shallow buyer pool, very slow exit",
+          "$635 psf and score_1000 989 are denominator artefacts, not value",
+          "$3.4M well above the liquid band",
+          "URA median PSF not comparable to a villa format",
+          "No MRT info in dossier"
+        ],
+        "catalysts": [
+          "One-North / West Coast employment catchment",
+          "99-yr leasehold with ~88 yrs still remaining"
+        ],
+        "rental_assessment": "A 5,349sqft villa has almost no rental market at a yield that works on $3.4M — tenant demand for this size/format is negligible.",
+        "appreciation_assessment": "3.4%/yr on 61 txn is reliable but unexciting, and strata villas typically lag apartment appreciation due to thin demand. Liquidity, not growth rate, is the disqualifier.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.4,
+        "appreciation_rate_source": "URA resale-only series, 61 txn"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-vision-24321681",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

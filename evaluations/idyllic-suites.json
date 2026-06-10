@@ -1,0 +1,119 @@
+{
+  "condo": "Idyllic Suites",
+  "slug": "idyllic-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact 463 sqft freehold 1BR in D14 at the lowest quantum in the batch ($738k), priced slightly below the $1,615 district median. Low absolute outlay and Dakota MRT access support rentability, but it's a shoebox in a small development with only 12 URA txns.",
+      "rating_rationale": "$738k quantum and $1,594 PSF (just under the $1,615 median) make this efficient and accessible, with 4.2%/yr URA appreciation — decent for D14. But 463 sqft is a true shoebox (narrow resale pool, owner-occupiers skip it), only 12 txns underpin the rate, and 800m to Dakota MRT is acceptable not great. Score_1000 of 746 reflects low-quantum efficiency; the bracket is niche.",
+      "red_flags": [
+        "463 sqft shoebox — niche, investor-only resale pool",
+        "Only 12 URA transactions supporting the 4.2% rate",
+        "Small/older boutique development"
+      ],
+      "catalysts": [
+        "Low $738k quantum widens investor buyer pool and supports yield",
+        "D14 Paya Lebar Central transformation and airbase relocation",
+        "Freehold with Dakota CCL MRT 800m away"
+      ],
+      "as_of": {
+        "price": 738000,
+        "psf": 1593.95,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 463 sqft freehold 1BR in D14 at the lowest quantum in the batch ($738k), priced slightly below the $1,615 district median. Low absolute outlay and Dakota MRT access support rentability, but it's a shoebox in a small development with only 12 URA txns.",
+        "rating": "Neutral",
+        "rating_rationale": "$738k quantum and $1,594 PSF (just under the $1,615 median) make this efficient and accessible, with 4.2%/yr URA appreciation — decent for D14. But 463 sqft is a true shoebox (narrow resale pool, owner-occupiers skip it), only 12 txns underpin the rate, and 800m to Dakota MRT is acceptable not great. Score_1000 of 746 reflects low-quantum efficiency; the bracket is niche.",
+        "red_flags": [
+          "463 sqft shoebox — niche, investor-only resale pool",
+          "Only 12 URA transactions supporting the 4.2% rate",
+          "Small/older boutique development"
+        ],
+        "catalysts": [
+          "Low $738k quantum widens investor buyer pool and supports yield",
+          "D14 Paya Lebar Central transformation and airbase relocation",
+          "Freehold with Dakota CCL MRT 800m away"
+        ],
+        "rental_assessment": "Shoebox near Dakota MRT and Paya Lebar/CBD-fringe rents well to singles; low quantum drives one of the better gross yields in this batch (likely 3.5%+).",
+        "appreciation_assessment": "4.2%/yr (12 txns) is reasonable for D14 freehold; shoebox appreciation typically trails larger formats but the Paya Lebar catalyst is supportive.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-idyllic-suites-500050533",
+        "review_file": "cov_batch_16.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A shoebox priced ABOVE its own recent transactions - the algo's age-adjusted 'cheap' read is contradicted by real comps and its own psf_above_market flag.",
+      "rating_rationale": "Asking $1,594 psf for a 463 sqft 1-bed is above the project's recent-transaction average of ~$1,460 psf (range $1,436-1,483 in last 12 months). The algo's own psf_premium_vs_cohort_pct of +13.3% and psf_above_market flag both confirm an overpayment, directly contradicting the -14.0% age-adjusted 'cheapness'. With only 12 thin cohort transactions, this is a price quirk, not a bargain. Freehold is not a forward edge, and a 463 sqft shoebox has a narrow resale buyer pool and limited capital-appreciation runway. Decent location (Lorong 30 Geylang, ~Dakota MRT 650m) does not offset paying ~9% above the market clearing price going in. On a 5-7yr investment hold, entering above comps caps upside; this is an Avoid.",
+      "red_flags": [
+        "Asking $1,594 psf is ~9% ABOVE the project's recent ~$1,460 psf transactions - overpriced, not cheap",
+        "psf_above_market and +13.3% cohort-premium flags both confirm the overpayment",
+        "Age-adjusted -14.0% 'cheapness' is a data quirk on only 12 thin transactions",
+        "463 sqft shoebox - narrow resale pool, limited appreciation runway",
+        "Geylang location stigma can weigh on resale liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure (long-term value preservation, not a price driver)",
+        "Proximity to Dakota MRT (~650m) supports rental demand",
+        "Low $738k quantum is accessible, the only mild positive"
+      ],
+      "as_of": {
+        "price": 738000,
+        "psf": 1593.95,
+        "beds": 1,
+        "sqft": 463
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "A shoebox priced ABOVE its own recent transactions - the algo's age-adjusted 'cheap' read is contradicted by real comps and its own psf_above_market flag.",
+        "rating_rationale": "Asking $1,594 psf for a 463 sqft 1-bed is above the project's recent-transaction average of ~$1,460 psf (range $1,436-1,483 in last 12 months). The algo's own psf_premium_vs_cohort_pct of +13.3% and psf_above_market flag both confirm an overpayment, directly contradicting the -14.0% age-adjusted 'cheapness'. With only 12 thin cohort transactions, this is a price quirk, not a bargain. Freehold is not a forward edge, and a 463 sqft shoebox has a narrow resale buyer pool and limited capital-appreciation runway. Decent location (Lorong 30 Geylang, ~Dakota MRT 650m) does not offset paying ~9% above the market clearing price going in. On a 5-7yr investment hold, entering above comps caps upside; this is an Avoid.",
+        "red_flags": [
+          "Asking $1,594 psf is ~9% ABOVE the project's recent ~$1,460 psf transactions - overpriced, not cheap",
+          "psf_above_market and +13.3% cohort-premium flags both confirm the overpayment",
+          "Age-adjusted -14.0% 'cheapness' is a data quirk on only 12 thin transactions",
+          "463 sqft shoebox - narrow resale pool, limited appreciation runway",
+          "Geylang location stigma can weigh on resale liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure (long-term value preservation, not a price driver)",
+          "Proximity to Dakota MRT (~650m) supports rental demand",
+          "Low $738k quantum is accessible, the only mild positive"
+        ],
+        "appreciation_assessment": "URA 5yr CAGR 4.2% on 12 txns is fragile and non-predictive; given the unit is priced above recent comps, no forward value edge exists.",
+        "rental_assessment": "Shoeboxes near Dakota MRT rent readily, but buying ~9% above market PSF erodes the gross yield that would otherwise justify a small unit."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-idyllic-suites-500050533",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

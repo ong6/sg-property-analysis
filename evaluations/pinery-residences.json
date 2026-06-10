@@ -1,0 +1,61 @@
+{
+  "condo": "Pinery Residences",
+  "slug": "pinery-residences",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A compact 1,227sqft 4BR at $2.459M / $2,004 PSF, 170m from Tampines West DTL (D18), in a new-launch development (no built_year, new-launch bias) priced ~21% below the $2,548 district median PSF. Outstanding MRT proximity and an apparent discount, but the missing built_year/appreciation data and new-launch pricing dynamics warrant caution.",
+      "rating_rationale": "The 170m walk to Tampines West DTL is the best connectivity in the batch and a $2,004 PSF that is ~21% below the $2,548 district median looks compelling — but the district median is dominated by the surrounding new-launch comps (548 txns, new-launch bias), so part of that 'discount' reflects this specific unit/stack rather than a market gap, and a 1,227sqft 4BR is tight (likely a compact/dual-key layout). With no built_year and no project-specific appreciation rate to verify, plus a $2.46M absolute in the thinner band, I can't confidently call it a Buy. The Tampines Regional Centre + CRL location keeps it firmly Neutral with upside.",
+      "red_flags": [
+        "Missing built_year and no URA appreciation rate — can't verify trajectory",
+        "1,227sqft for 4BR is compact (likely dual-key/efficient layout)",
+        "New-launch bias in median; $2.46M is in the thinner buyer band"
+      ],
+      "catalysts": [
+        "170m to Tampines West DTL — best connectivity in batch",
+        "Tampines Regional Centre + CRL/DTL hub, Jewel/Changi proximity",
+        "Apparent PSF discount vs district median if it holds"
+      ],
+      "as_of": {
+        "price": 2458885,
+        "psf": 2003.98,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 1,227sqft 4BR at $2.459M / $2,004 PSF, 170m from Tampines West DTL (D18), in a new-launch development (no built_year, new-launch bias) priced ~21% below the $2,548 district median PSF. Outstanding MRT proximity and an apparent discount, but the missing built_year/appreciation data and new-launch pricing dynamics warrant caution.",
+        "rating": "Neutral",
+        "rating_rationale": "The 170m walk to Tampines West DTL is the best connectivity in the batch and a $2,004 PSF that is ~21% below the $2,548 district median looks compelling — but the district median is dominated by the surrounding new-launch comps (548 txns, new-launch bias), so part of that 'discount' reflects this specific unit/stack rather than a market gap, and a 1,227sqft 4BR is tight (likely a compact/dual-key layout). With no built_year and no project-specific appreciation rate to verify, plus a $2.46M absolute in the thinner band, I can't confidently call it a Buy. The Tampines Regional Centre + CRL location keeps it firmly Neutral with upside.",
+        "red_flags": [
+          "Missing built_year and no URA appreciation rate — can't verify trajectory",
+          "1,227sqft for 4BR is compact (likely dual-key/efficient layout)",
+          "New-launch bias in median; $2.46M is in the thinner buyer band"
+        ],
+        "catalysts": [
+          "170m to Tampines West DTL — best connectivity in batch",
+          "Tampines Regional Centre + CRL/DTL hub, Jewel/Changi proximity",
+          "Apparent PSF discount vs district median if it holds"
+        ],
+        "rental_assessment": "4BR steps from DTL in the Tampines hub has good family/relocation tenant demand; yield modest at $2.46M.",
+        "appreciation_assessment": "No project rate available; D18 OCR baseline (~3.7%) plus the Tampines/CRL catalyst, but new-launch pricing already embeds some of that — treat 3-4% as the working view.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pinery-residences-500124867",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

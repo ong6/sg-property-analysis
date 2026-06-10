@@ -23,27 +23,66 @@ For own-stay, several algorithmic red flags invert or vanish: `oversized_unit` i
 *feature*, low yield is irrelevant, and a quiet low-liquidity boutique development
 can be a fine home. Say explicitly which rubric you applied.
 
+## What the data actually predicts (backtest-calibrated priors, v3.4)
+
+Read this BEFORE the per-factor sections below — it overrides older intuitions
+baked into them. From point-in-time URA backtests (`backtest.py` / `backtest_ext.py`,
+65k txns, 2021–26, mean-reversion corrected). Forward = realized 2yr resale-PSF
+appreciation:
+
+- **Cheap vs district peers is the strongest robust forward signal** (ρ≈−0.26;
+  the one signal that survives controlling for region). Lead your appreciation
+  view with `factual_data.relative_value.premium_vs_age_adjusted_median_pct`
+  (negative = cheap for its age) and `psf_premium_vs_ura_median_pct`.
+- **Region matters and the old priors were INVERTED.** Realized forward returns
+  were **OCR ≈ +4.0%/yr > RCR ≈ +3.5% ≫ CCR ≈ +0.7%** — the *opposite* of the
+  retired "CCR>RCR>OCR" baselines. Do **not** treat CCR/prestige as a forward
+  edge. (Caveat: one bull regime; CCR can mean-revert — don't over-bet OCR either.)
+- **Absolute price "cheapness" is mostly the region effect in disguise** — once
+  you control for region it nearly vanishes (std_β −0.14 → −0.04). A low PSF is
+  not an independent buy signal; it's mostly "this is OCR." Don't double-count it.
+- **Trailing CAGR has ~0 forward power and momentum is flat-to-contrarian.** Use
+  `annual_rate_pct` / `momentum` only to understand the *story/catalyst*, never as
+  the forward number. A high past CAGR is not a forward guarantee.
+- **Freehold is NOT a forward edge** — ~0 cross-sectional PSF premium (controlling
+  region+size) and it mildly *underperforms* forward (ρ −0.09…−0.14). Weigh tenure
+  only as own-stay/optionality and as short-remaining-lease *downside*, not upside.
+- **Liquidity is an exit-risk gate, not a forward driver** (ρ≈0 once value is in).
+  Penalize genuinely thin names; don't push a fairly-priced, liquid-enough unit up.
+- **The ceiling is low: the full model explains <10% of forward variance (R²≈0.06–0.09).**
+  Small `score_1000` gaps are noise. Reserve **high** confidence for cases where
+  physical/catalyst evidence (not the score) is decisive; treat near-ties as Neutral.
+
 ## Investment rubric (5–7 year hold)
 
-### 1. Capital appreciation (most important)
+### 1. Value first, then appreciation (see the priors section above)
 
-From `factual_data.appreciation`:
-- `annual_rate_pct` + `data_source` — `ura_*` sources are reliable; `regional_baseline`
-  means no project data: research it yourself before trusting any number
-- `transaction_count` / `data_confidence` — more transactions = more reliable
-- `momentum` — positive = accelerating
+The forward signal is **value (cheap vs district peers) + region**, NOT trailing
+appreciation. Lead with value; use the appreciation rate only for the story.
+
+From `factual_data` — value (primary):
+- `relative_value.premium_vs_age_adjusted_median_pct` — negative = cheap for its
+  age vs district peers (the strongest robust forward signal). Also
+  `relative_value.premium_vs_new_launch_implied_pct`.
+- `psf_premium_vs_ura_median_pct` (signed) and `psf_cohort_txns` — how cheap/dear
+  vs same-size sales, and how many sales back that read (thin cohort → low trust).
+
+From `factual_data.appreciation` — story/context (secondary, ~0 forward power):
+- `annual_rate_pct` + `data_source` — `ura_*` reliable; `regional_baseline` means no
+  project data (research it). **Trailing CAGR does not predict forward returns** —
+  read it for the narrative, not as the forward number.
+- `momentum` — flat-to-contrarian; informational only.
 - `raw_rate_before_bias_adjustment_pct` — if present, the system already discounted
   new-launch developer-pricing inflation. **Do not override the adjusted rate with a
-  headline CAGR from a portal — that re-introduces the inflation the adjustment removed.**
-  Only override with resale-to-resale evidence.
+  portal headline CAGR.** Only override with resale-to-resale evidence (and a stated
+  catalyst with a date).
 
-Research: recent URA/PropertyGuru transactions and direction, catalysts (MRT, govt
-zones, en-bloc), developer reputation, whether launch pricing is inflated.
+Research: catalysts (MRT, govt zones, en-bloc), supply, developer reputation.
 
-Context (2024 URA index baselines — verify currency before leaning on them):
-CCR ~4.5%/yr, RCR ~5.8%/yr, OCR ~3.7%/yr. These are *priors, not destiny* — a
-specific OCR project with a catalyst can outperform a generic RCR one. Judge the
-project, not the region label.
+Regional forward priors (realized 2024–26, replaces the old inverted table):
+**OCR ≈ +4.0%/yr ≥ RCR ≈ +3.5% ≫ CCR ≈ +0.7%.** Region is a strong but
+regime-bound prior — judge the specific project, and don't treat CCR/prestige as a
+forward edge (nor over-bet OCR; CCR can mean-revert).
 
 ### 2. Liquidity & exit risk
 
@@ -75,9 +114,11 @@ tax. SSD is why holds are modeled at 5–7yr.
 
 - `new_launch_median_psf` — what new launches (≤3yr) actually transact at in
   this district: the current new-launch market price
-- `implied_fair_psf_from_new_launch` — new-launch median minus the age slope
-  (~$50/psf per year of age; CCR $60 / RCR $50 / OCR $40, freehold ×0.6 —
-  heuristics in config, verify against the market)
+- `implied_fair_psf_from_new_launch` — new-launch median minus the age slope.
+  v3.4: recalibrated to the hedonic ~**1.6%/yr** (≈ CCR $34 / RCR $27 / OCR $23
+  per psf-yr, freehold ×0.6) — about half the old $40–60 folk-rule, which
+  over-discounted old leaseholds and made them look spuriously cheap-for-age.
+  Still a heuristic — verify against the market.
 - `premium_vs_new_launch_implied_pct` — subject asking PSF vs that implied
   fair value; negative = priced below what new-launch pricing implies
 - `premium_vs_age_adjusted_median_pct` — vs the age-normalized median of ALL

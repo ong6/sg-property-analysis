@@ -1,0 +1,63 @@
+{
+  "condo": "The Hillshore",
+  "slug": "the-hillshore",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A new-launch freehold 3BR at The Hillshore (Fraxtor/FRX, 59 units, TOP Q2 2027) in Pasir Panjang D05, 460m to Haw Par Villa MRT with GSW upside. Strong arena showing, but a tiny 59-unit boutique with new-launch developer pricing ($2,358 PSF), no appreciation data (7 txns) and a $2.49M 3BR makes the exit risk too high for a confident buy.",
+      "rating_rationale": "Confirmed via search: 59-unit boutique freehold by Fraxtor Capital (ex-Gloria Mansion en-bloc), TOP Q2 2027, GSW-adjacent. Positives: 460m (6 min) to CC25 Haw Par Villa, Greater Southern Waterfront catalyst, freehold, on_frontier with a strong 341-227 arena record. Negatives are structural: only 59 units = thin resale liquidity; new_launch_bias=true with no usable appreciation rate (7 txns); $2,358 PSF and a $2.49M absolute price for a 1,055 sqft 3BR is developer-launch pricing where the early premium is paid by the buyer, not earned. Boutique illiquidity + launch pricing cap a 5-7yr investment case.",
+      "red_flags": [
+        "59-unit boutique — shallow resale liquidity / limited amenities",
+        "new-launch developer pricing, no usable appreciation data (7 txns, bias=true)",
+        "$2,358 PSF / $2.49M for a 1,055 sqft 3BR — early-mover premium",
+        "TOP only Q2 2027 — holding/financing through completion"
+      ],
+      "catalysts": [
+        "460m to CC25 Haw Par Villa MRT (Circle Line)",
+        "Greater Southern Waterfront transformation through Pasir Panjang",
+        "freehold tenure; established en-bloc redevelopment site"
+      ],
+      "as_of": {
+        "price": 2488000,
+        "psf": 2358.29,
+        "beds": 3,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new-launch freehold 3BR at The Hillshore (Fraxtor/FRX, 59 units, TOP Q2 2027) in Pasir Panjang D05, 460m to Haw Par Villa MRT with GSW upside. Strong arena showing, but a tiny 59-unit boutique with new-launch developer pricing ($2,358 PSF), no appreciation data (7 txns) and a $2.49M 3BR makes the exit risk too high for a confident buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Confirmed via search: 59-unit boutique freehold by Fraxtor Capital (ex-Gloria Mansion en-bloc), TOP Q2 2027, GSW-adjacent. Positives: 460m (6 min) to CC25 Haw Par Villa, Greater Southern Waterfront catalyst, freehold, on_frontier with a strong 341-227 arena record. Negatives are structural: only 59 units = thin resale liquidity; new_launch_bias=true with no usable appreciation rate (7 txns); $2,358 PSF and a $2.49M absolute price for a 1,055 sqft 3BR is developer-launch pricing where the early premium is paid by the buyer, not earned. Boutique illiquidity + launch pricing cap a 5-7yr investment case.",
+        "red_flags": [
+          "59-unit boutique — shallow resale liquidity / limited amenities",
+          "new-launch developer pricing, no usable appreciation data (7 txns, bias=true)",
+          "$2,358 PSF / $2.49M for a 1,055 sqft 3BR — early-mover premium",
+          "TOP only Q2 2027 — holding/financing through completion"
+        ],
+        "catalysts": [
+          "460m to CC25 Haw Par Villa MRT (Circle Line)",
+          "Greater Southern Waterfront transformation through Pasir Panjang",
+          "freehold tenure; established en-bloc redevelopment site"
+        ],
+        "rental_assessment": "Once completed, One-North/NUS/Pasir Panjang tenant demand is solid, but a 59-unit project offers limited rental scale and competition from larger nearby stock.",
+        "appreciation_assessment": "No reliable rate; new-launch pricing means much of the GSW upside is pre-paid. Boutique size also dampens future liquidity-driven appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-hillshore-24963855",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

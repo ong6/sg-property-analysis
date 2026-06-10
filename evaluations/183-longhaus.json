@@ -1,0 +1,63 @@
+{
+  "condo": "183 Longhaus",
+  "slug": "183-longhaus",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Young freehold (2020) mixed-use boutique at Upper Thomson MRT, asking $2,152 psf — ~11% above the $1,936 median — for a compact 947 sqft 3BR. Good TEL location and a 4.9%/yr resale rate, but a 12-txn series and tiny boutique liquidity make pricing and exit uncertain.",
+      "rating_rationale": "Freehold, only 6 years old, and 410m to Upper Thomson MRT (TEL) in a trendy F&B enclave are real strengths, and the 4.9%/yr resale-only rate is healthy. But $2,152 psf is ~11% above the $1,936 URA median, the 947 sqft 3BR is a tight compact format, and the 12-txn series plus boutique scale make both fair value and resale liquidity hard to pin down.",
+      "red_flags": [
+        "$2,152 psf is ~11% above $1,936 URA median",
+        "Thin 12-txn series — appreciation and value estimates unreliable",
+        "Boutique mixed-use block — shallow resale liquidity",
+        "Compact 947 sqft for a 3BR"
+      ],
+      "catalysts": [
+        "Freehold and young (2020 build)",
+        "410m to Upper Thomson MRT (Thomson-East Coast Line)",
+        "Upper Thomson F&B/lifestyle enclave supports rental demand"
+      ],
+      "as_of": {
+        "price": 2038000,
+        "psf": 2152.06,
+        "beds": 3,
+        "sqft": 947.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Young freehold (2020) mixed-use boutique at Upper Thomson MRT, asking $2,152 psf — ~11% above the $1,936 median — for a compact 947 sqft 3BR. Good TEL location and a 4.9%/yr resale rate, but a 12-txn series and tiny boutique liquidity make pricing and exit uncertain.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, only 6 years old, and 410m to Upper Thomson MRT (TEL) in a trendy F&B enclave are real strengths, and the 4.9%/yr resale-only rate is healthy. But $2,152 psf is ~11% above the $1,936 URA median, the 947 sqft 3BR is a tight compact format, and the 12-txn series plus boutique scale make both fair value and resale liquidity hard to pin down.",
+        "red_flags": [
+          "$2,152 psf is ~11% above $1,936 URA median",
+          "Thin 12-txn series — appreciation and value estimates unreliable",
+          "Boutique mixed-use block — shallow resale liquidity",
+          "Compact 947 sqft for a 3BR"
+        ],
+        "catalysts": [
+          "Freehold and young (2020 build)",
+          "410m to Upper Thomson MRT (Thomson-East Coast Line)",
+          "Upper Thomson F&B/lifestyle enclave supports rental demand"
+        ],
+        "rental_assessment": "TEL access and the Thomson dining scene drive solid tenant interest; compact 3BR rents efficiently. Yield ~3%.",
+        "appreciation_assessment": "4.9%/yr resale rate is encouraging but on only 12 txns; FH + TEL support growth, but above-median entry limits the margin.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-183-longhaus-60234880",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "condo": "The Stellar",
+  "slug": "the-stellar",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,420 sqft 4BR freehold in D05 West Coast (The Stellar, TOP 2008) at $2.75M / $1,937 PSF, with no MRT within walking distance listed. Resale-only appreciation is a reasonable 4.65%/yr off a solid 22-transaction base, but the asking $1,937 PSF is a steep ~12% above the $1,728 URA median and the score_1000 of 349 is the weakest in the batch.",
+      "rating_rationale": "The data is the most reliable in the batch (22 URA txns, 4.65%/yr resale-only) but it works against the listing: the asking $1,937 PSF stands ~12% over the $1,728 URA median, so the buyer is materially overpaying for the block. No walkable MRT, a high $2.75M quantum near the liquidity ceiling, and a niche 4BR format compound the problem. The very low technical score (349) confirms the weak risk/reward. Freehold and One-North/NUS rental adjacency are positives, but the overpricing relative to actual transacted PSF makes this an avoid.",
+      "red_flags": [
+        "Asking $1,937 PSF is ~12% above $1,727.50 URA median — overpriced",
+        "Lowest technical score in batch (score_1000 349)",
+        "No MRT within walking distance",
+        "$2.75M quantum on a niche 4BR format near the liquidity ceiling"
+      ],
+      "catalysts": [
+        "Freehold tenure in D05 with One-North/NUS/science-park rental catchment",
+        "Reliable 22-transaction URA base showing ~4.65%/yr resale appreciation"
+      ],
+      "as_of": {
+        "price": 2750000,
+        "psf": 1936.62,
+        "beds": 4,
+        "sqft": 1420.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,420 sqft 4BR freehold in D05 West Coast (The Stellar, TOP 2008) at $2.75M / $1,937 PSF, with no MRT within walking distance listed. Resale-only appreciation is a reasonable 4.65%/yr off a solid 22-transaction base, but the asking $1,937 PSF is a steep ~12% above the $1,728 URA median and the score_1000 of 349 is the weakest in the batch.",
+        "rating": "Avoid",
+        "rating_rationale": "The data is the most reliable in the batch (22 URA txns, 4.65%/yr resale-only) but it works against the listing: the asking $1,937 PSF stands ~12% over the $1,728 URA median, so the buyer is materially overpaying for the block. No walkable MRT, a high $2.75M quantum near the liquidity ceiling, and a niche 4BR format compound the problem. The very low technical score (349) confirms the weak risk/reward. Freehold and One-North/NUS rental adjacency are positives, but the overpricing relative to actual transacted PSF makes this an avoid.",
+        "red_flags": [
+          "Asking $1,937 PSF is ~12% above $1,727.50 URA median — overpriced",
+          "Lowest technical score in batch (score_1000 349)",
+          "No MRT within walking distance",
+          "$2.75M quantum on a niche 4BR format near the liquidity ceiling"
+        ],
+        "catalysts": [
+          "Freehold tenure in D05 with One-North/NUS/science-park rental catchment",
+          "Reliable 22-transaction URA base showing ~4.65%/yr resale appreciation"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-stellar-500071117",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

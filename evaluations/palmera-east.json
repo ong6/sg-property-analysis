@@ -1,0 +1,59 @@
+{
+  "condo": "Palmera East",
+  "slug": "palmera-east",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 431 sqft freehold shoebox 1BR at Palmera East, a small D14 boutique block (built 2013) just 330m from EW6 Kembangan MRT, at $800k / $1,856 psf. The MRT proximity is excellent, but with only 3 URA transactions there is effectively no reliable appreciation signal, and asking PSF is ~7% above the $1,742 median.",
+      "rating_rationale": "Just 3 URA transactions makes this a data-blind boutique with no meaningful appreciation or liquidity evidence — exactly the thin-data shoebox to skip. Asking $1,856 psf is ~7% above the district median on a 431 sqft format that already lags on growth, in a small block where resale can stall for months. Good MRT distance doesn't offset the premium price + shallow liquidity + unproven track record.",
+      "red_flags": [
+        "Only 3 URA transactions — no reliable appreciation or liquidity read",
+        "Asking PSF ~7% above district median",
+        "Tiny boutique block + 431 sqft shoebox — very shallow resale demand",
+        "Premium price for an unproven, illiquid unit"
+      ],
+      "catalysts": [
+        "330m to Kembangan MRT — strong rental convenience",
+        "Freehold, sub-$1M quantum in mature D14 estate"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1856.15,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 431 sqft freehold shoebox 1BR at Palmera East, a small D14 boutique block (built 2013) just 330m from EW6 Kembangan MRT, at $800k / $1,856 psf. The MRT proximity is excellent, but with only 3 URA transactions there is effectively no reliable appreciation signal, and asking PSF is ~7% above the $1,742 median.",
+        "rating": "Avoid",
+        "rating_rationale": "Just 3 URA transactions makes this a data-blind boutique with no meaningful appreciation or liquidity evidence — exactly the thin-data shoebox to skip. Asking $1,856 psf is ~7% above the district median on a 431 sqft format that already lags on growth, in a small block where resale can stall for months. Good MRT distance doesn't offset the premium price + shallow liquidity + unproven track record.",
+        "red_flags": [
+          "Only 3 URA transactions — no reliable appreciation or liquidity read",
+          "Asking PSF ~7% above district median",
+          "Tiny boutique block + 431 sqft shoebox — very shallow resale demand",
+          "Premium price for an unproven, illiquid unit"
+        ],
+        "catalysts": [
+          "330m to Kembangan MRT — strong rental convenience",
+          "Freehold, sub-$1M quantum in mature D14 estate"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-palmera-east-500124547",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Sanctuary Green",
+  "slug": "sanctuary-green",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large 1399 sqft 99yr 3BR at Sanctuary Green (D15), 240m / 3-min walk to Tanjong Rhu MRT (TE23), at $2.28M / $1630 PSF — bang on the $1650 district median. Excellent TEL connectivity and a 4.69% resale CAGR over a deep 109-txn series make this a credible, if unspectacular, RCR hold.",
+      "rating_rationale": "Strong on the metrics that matter: 240m to a TEL station, 4.69% URA resale CAGR backed by 109 transactions (high confidence), large established development with deep liquidity, and $2.28M sits in the prime buyer-pool band. Entry at $1630 PSF is at-median, so no discount, and it's a 2003 99yr lease (~76yr left) which caps long-run upside — but the location, data quality and quantum make it a solid investment.",
+      "red_flags": [
+        "2003 99yr lease (~76yr remaining) — lease decay starts to matter on a 5-7yr hold's exit",
+        "Entry at district median PSF — no value discount",
+        "Oversized 1399 sqft 3BR raises absolute quantum"
+      ],
+      "catalysts": [
+        "240m to Tanjong Rhu MRT (TE23) — direct TEL access to CBD/Marina",
+        "Tanjong Rhu / Kallang Basin rejuvenation and waterfront precinct",
+        "Deep, liquid D15 development with 109-txn resale depth"
+      ],
+      "as_of": {
+        "price": 2280000,
+        "psf": 1629.74,
+        "beds": 3,
+        "sqft": 1399.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1399 sqft 99yr 3BR at Sanctuary Green (D15), 240m / 3-min walk to Tanjong Rhu MRT (TE23), at $2.28M / $1630 PSF — bang on the $1650 district median. Excellent TEL connectivity and a 4.69% resale CAGR over a deep 109-txn series make this a credible, if unspectacular, RCR hold.",
+        "rating": "Buy",
+        "rating_rationale": "Strong on the metrics that matter: 240m to a TEL station, 4.69% URA resale CAGR backed by 109 transactions (high confidence), large established development with deep liquidity, and $2.28M sits in the prime buyer-pool band. Entry at $1630 PSF is at-median, so no discount, and it's a 2003 99yr lease (~76yr left) which caps long-run upside — but the location, data quality and quantum make it a solid investment.",
+        "red_flags": [
+          "2003 99yr lease (~76yr remaining) — lease decay starts to matter on a 5-7yr hold's exit",
+          "Entry at district median PSF — no value discount",
+          "Oversized 1399 sqft 3BR raises absolute quantum"
+        ],
+        "catalysts": [
+          "240m to Tanjong Rhu MRT (TE23) — direct TEL access to CBD/Marina",
+          "Tanjong Rhu / Kallang Basin rejuvenation and waterfront precinct",
+          "Deep, liquid D15 development with 109-txn resale depth"
+        ],
+        "rental_assessment": "Strong. TEL-on-doorstep, close to CBD/Stadium/Kallang; large 3BR draws families and expats. D15 tenant demand is among the deepest in the RCR.",
+        "appreciation_assessment": "4.69% resale CAGR (109 txns) is reliable and near the RCR baseline; TEL maturation supports it, though lease decay tempers the back end.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sanctuary-green-500077267",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

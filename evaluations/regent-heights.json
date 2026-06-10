@@ -1,0 +1,63 @@
+{
+  "condo": "Regent Heights",
+  "slug": "regent-heights",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Listed as a 1BR but 1033sqft — this is a bedroom/sqft mismatch; it is almost certainly a 3BR (or large 2BR) misclassified by the scraper, which makes the low $929 psf look deceptively cheap. Taken as the larger unit it actually is, $960k for a 1033sqft 99yr unit in D23 with a reliable 5.4% CAGR (139 txns) at ~11% below median PSF is a solid value entry.",
+      "rating_rationale": "1033sqft cannot be a 1BR — the listing is misclassified, so judge it as a ~3BR. On that basis $929 psf vs $1046 median is ~11% cheap, the 5.4% CAGR is reliable over 139 txns (strong for OCR D23), and $960k quantum is highly liquid. Caveat: 1999 build (27 years old) with ~72yr lease remaining is the main drag — aging but not yet financing-impaired. The value and verified appreciation outweigh the age for a value buy.",
+      "red_flags": [
+        "Bedroom/sqft mismatch — 1033sqft listed as 1BR, almost certainly a misclassified 3BR; verify actual layout",
+        "1999 build (~27yr old, ~72yr lease left) — aging facilities, lease-decay accelerating",
+        "930m to Bukit Gombak MRT — walkable but not doorstep"
+      ],
+      "catalysts": [
+        "~11% below project median PSF — value entry",
+        "Reliable 5.4% CAGR over 139 txns — strong for an OCR resale",
+        "Low $960k quantum keeps it broadly liquid"
+      ],
+      "as_of": {
+        "price": 960000,
+        "psf": 929.33,
+        "beds": 1,
+        "sqft": 1033.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Listed as a 1BR but 1033sqft — this is a bedroom/sqft mismatch; it is almost certainly a 3BR (or large 2BR) misclassified by the scraper, which makes the low $929 psf look deceptively cheap. Taken as the larger unit it actually is, $960k for a 1033sqft 99yr unit in D23 with a reliable 5.4% CAGR (139 txns) at ~11% below median PSF is a solid value entry.",
+        "rating": "Buy",
+        "rating_rationale": "1033sqft cannot be a 1BR — the listing is misclassified, so judge it as a ~3BR. On that basis $929 psf vs $1046 median is ~11% cheap, the 5.4% CAGR is reliable over 139 txns (strong for OCR D23), and $960k quantum is highly liquid. Caveat: 1999 build (27 years old) with ~72yr lease remaining is the main drag — aging but not yet financing-impaired. The value and verified appreciation outweigh the age for a value buy.",
+        "red_flags": [
+          "Bedroom/sqft mismatch — 1033sqft listed as 1BR, almost certainly a misclassified 3BR; verify actual layout",
+          "1999 build (~27yr old, ~72yr lease left) — aging facilities, lease-decay accelerating",
+          "930m to Bukit Gombak MRT — walkable but not doorstep"
+        ],
+        "catalysts": [
+          "~11% below project median PSF — value entry",
+          "Reliable 5.4% CAGR over 139 txns — strong for an OCR resale",
+          "Low $960k quantum keeps it broadly liquid"
+        ],
+        "rental_assessment": "If a 3BR, family tenant demand in Bukit Batok/Gombak is steady though not premium; yield on the low quantum is reasonable. Tenant pool is HDB-upgrader-adjacent.",
+        "appreciation_assessment": "5.4% over 139 txns is reliable and strong for D23 OCR; the below-median entry adds cushion. Lease decay (1999) is the offsetting headwind on a 5-7yr horizon.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale 5.4% (139 txns), trimmed for lease-decay headwind"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regent-heights-500122033",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

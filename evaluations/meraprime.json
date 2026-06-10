@@ -1,0 +1,61 @@
+{
+  "condo": "Meraprime",
+  "slug": "meraprime",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1,119 sqft 3BR at $2.4M in Meraprime, D03 Tiong Bahru, 250m from Tiong Bahru MRT (EWL). Clean resale-only 6.94%/yr CAGR on 31 txns and a $2,145 PSF ~4% under the $2,228 URA median, in a prime RCR city-fringe location — a strong combination despite the 2006-vintage leasehold.",
+      "rating_rationale": "The numbers line up well: resale-only 6.94%/yr (no new-launch bias) on 31 txns is above the 30-txn confidence floor and well over the RCR ~5.8% baseline; $2,145 PSF is ~4% below the URA median; the $2.4M quantum is near the top of the deep band but still workable; and 250m to Tiong Bahru MRT in a perennially-desirable D03/Tiong Bahru location underpins both rental and exit. Watch-items are the 2006 lease (now ~80yrs remaining, decay accelerates over a 5-7yr hold) and a $2.4M 3BR being mid-tier rather than mass-market. On balance, the appreciation track record + location + sub-median pricing justify a Buy.",
+      "red_flags": [
+        "2006 build, 99yr lease ~80yrs remaining — lease decay over the hold period",
+        "$2.4M quantum at the upper edge of the deep buyer band",
+        "31 txns is just above the confidence floor — credible but not abundant"
+      ],
+      "catalysts": [
+        "250m to Tiong Bahru MRT (EWL) in prime RCR city-fringe",
+        "Tiong Bahru's enduring lifestyle/heritage appeal sustains demand and rents",
+        "PSF ~4% below URA median with a 6.94% resale CAGR track record"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 2144.77,
+        "beds": 3,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,119 sqft 3BR at $2.4M in Meraprime, D03 Tiong Bahru, 250m from Tiong Bahru MRT (EWL). Clean resale-only 6.94%/yr CAGR on 31 txns and a $2,145 PSF ~4% under the $2,228 URA median, in a prime RCR city-fringe location — a strong combination despite the 2006-vintage leasehold.",
+        "rating": "Buy",
+        "rating_rationale": "The numbers line up well: resale-only 6.94%/yr (no new-launch bias) on 31 txns is above the 30-txn confidence floor and well over the RCR ~5.8% baseline; $2,145 PSF is ~4% below the URA median; the $2.4M quantum is near the top of the deep band but still workable; and 250m to Tiong Bahru MRT in a perennially-desirable D03/Tiong Bahru location underpins both rental and exit. Watch-items are the 2006 lease (now ~80yrs remaining, decay accelerates over a 5-7yr hold) and a $2.4M 3BR being mid-tier rather than mass-market. On balance, the appreciation track record + location + sub-median pricing justify a Buy.",
+        "red_flags": [
+          "2006 build, 99yr lease ~80yrs remaining — lease decay over the hold period",
+          "$2.4M quantum at the upper edge of the deep buyer band",
+          "31 txns is just above the confidence floor — credible but not abundant"
+        ],
+        "catalysts": [
+          "250m to Tiong Bahru MRT (EWL) in prime RCR city-fringe",
+          "Tiong Bahru's enduring lifestyle/heritage appeal sustains demand and rents",
+          "PSF ~4% below URA median with a 6.94% resale CAGR track record"
+        ],
+        "rental_assessment": "Strong — Tiong Bahru is a high-demand rental locale (CBD-adjacent, lifestyle); a well-sized 3BR commands solid rent, yield ~3-3.3%.",
+        "appreciation_assessment": "Resale-only 6.94%/yr on adequate sample is the most reliable strong rate in this batch; prime D03 location supports continued outperformance, tempered by lease age.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-meraprime-60160101",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

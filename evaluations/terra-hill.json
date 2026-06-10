@@ -1,0 +1,63 @@
+{
+  "condo": "Terra Hill",
+  "slug": "terra-hill",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 2BR (840 sqft) at Terra Hill, Pasir Panjang (D05), a recently-TOP'd Hoi Hup/Sunway project on the West Coast corridor, listed at $2,478 psf — below the project's ~$2,650-2,690 transacting average. Freehold RCR with GSW/One-North tailwinds and a below-median entry make a reasonable case; the new-launch pricing bias and ~$2.08M 2BR quantum temper it.",
+      "rating_rationale": "Web research confirms Terra Hill is a freehold luxury project (Hoi Hup/Sunway, Yew Siang Road) with 12-month transactions averaging ~$2,650 psf (range $2,234-$2,857) and a $2,795k median. This 2BR at $2,478 psf is below that average and ~8% under the $2,690 URA median — a genuine entry discount on a freehold asset, with an efficient 840 sqft 2BR layout (not oversized) and a liquid ~$2.08M quantum. D05 West Coast/Pasir Panjang is a real RCR growth corridor: Greater Southern Waterfront transformation, One-North/NUS proximity, and Pasir Panjang/Kent Ridge connectivity. Freehold removes lease risk. Two checks keep this a Buy not Strong Buy: has_new_launch_bias is true (the $2,690 median is fresh developer/early-resale pricing, not a seasoned series, despite 192 txns), and the absolute psf is high so forward appreciation must come from the GSW/One-North story rather than cheapness. On balance a below-market freehold RCR entry with strong structural tailwinds — Buy.",
+      "red_flags": [
+        "New-launch pricing bias — the $2,690 median reflects fresh developer/early-resale pricing, no seasoned resale track record",
+        "High absolute psf (~$2,478) — limited cheapness cushion; upside depends on the GSW/One-North story",
+        "790m MRT walk — accessible but not doorstep",
+        "Missing built_year in dossier (recently TOP'd new project)"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D4/D5) — multi-decade RCR catalyst",
+        "One-North tech hub / NUS / West Coast corridor demand",
+        "Freehold tenure in a growth RCR district; below-median entry price"
+      ],
+      "as_of": {
+        "price": 2082000,
+        "psf": 2478.57,
+        "beds": 2,
+        "sqft": 840.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (840 sqft) at Terra Hill, Pasir Panjang (D05), a recently-TOP'd Hoi Hup/Sunway project on the West Coast corridor, listed at $2,478 psf — below the project's ~$2,650-2,690 transacting average. Freehold RCR with GSW/One-North tailwinds and a below-median entry make a reasonable case; the new-launch pricing bias and ~$2.08M 2BR quantum temper it.",
+        "rating": "Buy",
+        "rating_rationale": "Web research confirms Terra Hill is a freehold luxury project (Hoi Hup/Sunway, Yew Siang Road) with 12-month transactions averaging ~$2,650 psf (range $2,234-$2,857) and a $2,795k median. This 2BR at $2,478 psf is below that average and ~8% under the $2,690 URA median — a genuine entry discount on a freehold asset, with an efficient 840 sqft 2BR layout (not oversized) and a liquid ~$2.08M quantum. D05 West Coast/Pasir Panjang is a real RCR growth corridor: Greater Southern Waterfront transformation, One-North/NUS proximity, and Pasir Panjang/Kent Ridge connectivity. Freehold removes lease risk. Two checks keep this a Buy not Strong Buy: has_new_launch_bias is true (the $2,690 median is fresh developer/early-resale pricing, not a seasoned series, despite 192 txns), and the absolute psf is high so forward appreciation must come from the GSW/One-North story rather than cheapness. On balance a below-market freehold RCR entry with strong structural tailwinds — Buy.",
+        "red_flags": [
+          "New-launch pricing bias — the $2,690 median reflects fresh developer/early-resale pricing, no seasoned resale track record",
+          "High absolute psf (~$2,478) — limited cheapness cushion; upside depends on the GSW/One-North story",
+          "790m MRT walk — accessible but not doorstep",
+          "Missing built_year in dossier (recently TOP'd new project)"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D4/D5) — multi-decade RCR catalyst",
+          "One-North tech hub / NUS / West Coast corridor demand",
+          "Freehold tenure in a growth RCR district; below-median entry price"
+        ],
+        "rental_assessment": "Strong tenant demand from One-North, NUS, science park and the West Coast corridor; an efficient freehold 2BR rents well — among the better rental profiles in the batch.",
+        "appreciation_assessment": "No seasoned resale series yet, but freehold RCR with GSW/One-North structural tailwinds and a below-median entry support above-OCR, around-RCR forward appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-terra-hill-60240850",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

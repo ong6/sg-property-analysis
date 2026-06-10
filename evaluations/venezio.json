@@ -1,0 +1,61 @@
+{
+  "condo": "Venezio",
+  "slug": "venezio",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,755 sqft 3BR at Venezio, a small 40-unit D16 (Upper East Coast) development built 2006, at $2.7M / $1,538 psf. Freehold and the TEL Bayshore catalyst are positives, but the 14.1%/yr rate is meaningless on 4 txns and the 40-unit scale + $2.7M quantum mean thin liquidity.",
+      "rating_rationale": "Web research confirms Venezio is a 40-unit freehold block (built 2006) with recent transactions around $1,515 psf — the listing's $1,538 psf is right at market. The headline 14.1%/yr appreciation is a statistical artefact of just 4 transactions and must be disregarded. The real case is: freehold land in Upper East Coast, ~580m to the upcoming Bayshore MRT (TEL) — a genuine catalyst, and the Bayshore precinct redevelopment nearby. Against that: a 40-unit boutique (thin liquidity, no facilities of scale), an oversized 1,755 sqft 3BR, and a $2.7M quantum above the deep buyer band. Balanced to Neutral; the TEL/Bayshore upside is real but the format and quantum cap liquidity.",
+      "red_flags": [
+        "14.1%/yr rate on 4 txns — disregard, statistically meaningless",
+        "40-unit boutique — thin liquidity, no facilities of scale",
+        "Oversized 1,755 sqft 3BR at $2.7M, above the deep buyer band"
+      ],
+      "catalysts": [
+        "Freehold land in Upper East Coast (D16)",
+        "Bayshore MRT (TEL) ~580m + Bayshore precinct redevelopment",
+        "Listing priced at recent transacted PSF (fair, not stretched)"
+      ],
+      "as_of": {
+        "price": 2700000,
+        "psf": 1538.46,
+        "beds": 3,
+        "sqft": 1755.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,755 sqft 3BR at Venezio, a small 40-unit D16 (Upper East Coast) development built 2006, at $2.7M / $1,538 psf. Freehold and the TEL Bayshore catalyst are positives, but the 14.1%/yr rate is meaningless on 4 txns and the 40-unit scale + $2.7M quantum mean thin liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "Web research confirms Venezio is a 40-unit freehold block (built 2006) with recent transactions around $1,515 psf — the listing's $1,538 psf is right at market. The headline 14.1%/yr appreciation is a statistical artefact of just 4 transactions and must be disregarded. The real case is: freehold land in Upper East Coast, ~580m to the upcoming Bayshore MRT (TEL) — a genuine catalyst, and the Bayshore precinct redevelopment nearby. Against that: a 40-unit boutique (thin liquidity, no facilities of scale), an oversized 1,755 sqft 3BR, and a $2.7M quantum above the deep buyer band. Balanced to Neutral; the TEL/Bayshore upside is real but the format and quantum cap liquidity.",
+        "red_flags": [
+          "14.1%/yr rate on 4 txns — disregard, statistically meaningless",
+          "40-unit boutique — thin liquidity, no facilities of scale",
+          "Oversized 1,755 sqft 3BR at $2.7M, above the deep buyer band"
+        ],
+        "catalysts": [
+          "Freehold land in Upper East Coast (D16)",
+          "Bayshore MRT (TEL) ~580m + Bayshore precinct redevelopment",
+          "Listing priced at recent transacted PSF (fair, not stretched)"
+        ],
+        "rental_assessment": "Large 3BR family-let near East Coast; demand moderate, lifted somewhat by upcoming Bayshore MRT. Yield modest at $2.7M.",
+        "appreciation_assessment": "No reliable URA rate (4 txns). Forward case rests on the Bayshore/TEL catalyst and freehold land value, which are real but the boutique scale dampens liquidity-driven re-rating.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-venezio-500082928",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

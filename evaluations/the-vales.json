@@ -1,0 +1,63 @@
+{
+  "condo": "The Vales",
+  "slug": "the-vales",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The Vales is a 2017 99LH Executive Condominium in Sengkang (D19) — a 3BR at $1.55M / $1,715 psf, 240m from Cheng Lim LRT. As a fully-privatising-track EC the value proposition is decent for own-stay/upgraders, but $1,715 psf is high for a Sengkang EC and there's no URA data in the dossier.",
+      "rating_rationale": "score_1000 572 is the batch's strongest among the data-light entries, reflecting a liquid $1.55M family quantum and LRT-doorstep convenience (240m). The Vales is an EC, so it benefits from the post-MOP/privatisation price step-up that lifts EC appreciation. Caveats: $1,715 psf is toward the top of the Sengkang EC range (limited headroom), no URA appreciation/txn data, and 99LH from 2017. PDD/CRL in greater Punggol is a regional tailwind but not at this doorstep. Net Neutral, top-of-band.",
+      "red_flags": [
+        "No URA appreciation/transaction data in dossier",
+        "$1,715 psf is high for a Sengkang EC — limited upside headroom",
+        "LRT (not MRT) connectivity; transfer needed for NE-line/CBD trips"
+      ],
+      "catalysts": [
+        "Executive Condo privatisation/full-private status lifting price ceiling",
+        "240m to Cheng Lim LRT and a liquid $1.55M family quantum",
+        "Greater Punggol (PDD) and CRL momentum supporting D19 demand"
+      ],
+      "as_of": {
+        "price": 1550000,
+        "psf": 1714.6,
+        "beds": 3,
+        "sqft": 904.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The Vales is a 2017 99LH Executive Condominium in Sengkang (D19) — a 3BR at $1.55M / $1,715 psf, 240m from Cheng Lim LRT. As a fully-privatising-track EC the value proposition is decent for own-stay/upgraders, but $1,715 psf is high for a Sengkang EC and there's no URA data in the dossier.",
+        "rating": "Neutral",
+        "rating_rationale": "score_1000 572 is the batch's strongest among the data-light entries, reflecting a liquid $1.55M family quantum and LRT-doorstep convenience (240m). The Vales is an EC, so it benefits from the post-MOP/privatisation price step-up that lifts EC appreciation. Caveats: $1,715 psf is toward the top of the Sengkang EC range (limited headroom), no URA appreciation/txn data, and 99LH from 2017. PDD/CRL in greater Punggol is a regional tailwind but not at this doorstep. Net Neutral, top-of-band.",
+        "red_flags": [
+          "No URA appreciation/transaction data in dossier",
+          "$1,715 psf is high for a Sengkang EC — limited upside headroom",
+          "LRT (not MRT) connectivity; transfer needed for NE-line/CBD trips"
+        ],
+        "catalysts": [
+          "Executive Condo privatisation/full-private status lifting price ceiling",
+          "240m to Cheng Lim LRT and a liquid $1.55M family quantum",
+          "Greater Punggol (PDD) and CRL momentum supporting D19 demand"
+        ],
+        "rental_assessment": "Sengkang 3BR ECs rent steadily to local families; tenant pool is decent but not premium, yield ordinary at the entry PSF.",
+        "appreciation_assessment": "EC status typically supports above-baseline appreciation post-privatisation, but the already-high entry PSF and lease tempering keep the realistic rate moderate.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D19 EC prior (privatisation uplift) tempered by high entry PSF; no project URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-vales-500153625",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

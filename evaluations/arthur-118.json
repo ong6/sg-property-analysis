@@ -1,0 +1,61 @@
+{
+  "condo": "Arthur 118",
+  "slug": "arthur-118",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold D15 unit 220m from the new TEL Katong Park station, listed at $1,557 psf against a $2,373 URA median — but the 1,605 sqft floor area for a '2BR' is far too large, so this is an oversized unit and the cheap PSF is a size artifact. Only 11 URA transactions make the project's rate unreliable.",
+      "rating_rationale": "1,605 sqft is enormous for a 2BR (a normal D15 2BR is 700-950 sqft), so the $1,557 psf 'discount' to the $2,373 median is the oversized-unit illusion again — the real comparison is the $2.5M quantum for a large, niche unit. The 6.9%/yr URA rate sits on just 11 transactions, far too thin to trust. On the plus side it is freehold with TE24 Katong Park MRT 220m away and prime D15 Tanjong Katong location. But $2.5M for an unusually large 2BR is a narrow proposition: too big for typical 2BR investors/tenants, too few bedrooms for families paying $2.5M. The unit-type/size mismatch (possible misclassification — could be a 2BR+study/dual-key or a generous old-stock layout) needs verification before any conviction.",
+      "red_flags": [
+        "1,605 sqft for a '2BR' — oversized/mislabel; the low PSF is a size artifact not a value discount",
+        "Only 11 URA transactions — 6.9%/yr rate is statistically unreliable",
+        "Awkward unit positioning: large floor area but few bedrooms narrows the buyer pool"
+      ],
+      "catalysts": [
+        "TE24 Katong Park MRT 220m away — strong walkability",
+        "Freehold prime D15 Tanjong Katong / East Coast location",
+        "TEL connectivity uplift to the wider area"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1557.63,
+        "beds": 2,
+        "sqft": 1605.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold D15 unit 220m from the new TEL Katong Park station, listed at $1,557 psf against a $2,373 URA median — but the 1,605 sqft floor area for a '2BR' is far too large, so this is an oversized unit and the cheap PSF is a size artifact. Only 11 URA transactions make the project's rate unreliable.",
+        "rating": "Neutral",
+        "rating_rationale": "1,605 sqft is enormous for a 2BR (a normal D15 2BR is 700-950 sqft), so the $1,557 psf 'discount' to the $2,373 median is the oversized-unit illusion again — the real comparison is the $2.5M quantum for a large, niche unit. The 6.9%/yr URA rate sits on just 11 transactions, far too thin to trust. On the plus side it is freehold with TE24 Katong Park MRT 220m away and prime D15 Tanjong Katong location. But $2.5M for an unusually large 2BR is a narrow proposition: too big for typical 2BR investors/tenants, too few bedrooms for families paying $2.5M. The unit-type/size mismatch (possible misclassification — could be a 2BR+study/dual-key or a generous old-stock layout) needs verification before any conviction.",
+        "red_flags": [
+          "1,605 sqft for a '2BR' — oversized/mislabel; the low PSF is a size artifact not a value discount",
+          "Only 11 URA transactions — 6.9%/yr rate is statistically unreliable",
+          "Awkward unit positioning: large floor area but few bedrooms narrows the buyer pool"
+        ],
+        "catalysts": [
+          "TE24 Katong Park MRT 220m away — strong walkability",
+          "Freehold prime D15 Tanjong Katong / East Coast location",
+          "TEL connectivity uplift to the wider area"
+        ],
+        "rental_assessment": "Good D15 tenant demand near MRT, but a 1,605 sqft 2-bedder rents inefficiently per sqft — yield on $2.5M likely modest.",
+        "appreciation_assessment": "Cannot rely on the 6.9%/yr rate (11 txns); freehold + TEL support modest appreciation, but the unusual layout is a liquidity/appreciation drag.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-arthur-118-500079751",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

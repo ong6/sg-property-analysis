@@ -430,6 +430,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25360193",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A fairly-priced 1BR at a well-regarded Bartley project — the algo's discount is marginal once judged against real 1BR comps rather than the project-pooled median.",
+      "rating_rationale": "Recent 517 sqft 1BR units transacted at $920k-$922k (~1781-1785 psf) in late 2025, so this 1760 psf / $910k asking is essentially at-market, only ~1-2% below true same-type comps. The algo's -2.9% age and -3.6% cohort discounts are real but small, and the headline ~1913 psf project average is inflated by larger 2-3BR stacks, so it overstates the 1BR bargain (v3.2 size-relative caution). It is OCR D19 (favorable forward region) with ~93 years of lease (2019 completion), and the project is well maintained near Bartley MRT, but a small 1BR at a full price with no dated catalyst is a hold, not a buy. Trailing 5.31% CAGR (264 txns) is solid context but per v3.4 not a forward edge.",
+      "red_flags": [
+        "Asking is at-market vs verified 1BR comps (1781-1785 psf) — the project-pooled discount is largely a size-mix artifact",
+        "Smallest unit type (517 sqft 1BR) carries weaker capital-growth and resale-pool dynamics than 2-3BR",
+        "No specific catalyst beyond the already-operational Bartley MRT"
+      ],
+      "catalysts": [
+        "Bartley MRT (Circle Line) within walking distance supports tenant demand",
+        "OCR D19 region tailwind under v3.4 priors"
+      ],
+      "as_of": {
+        "price": 910000,
+        "psf": 1760.15,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A fairly-priced 1BR at a well-regarded Bartley project — the algo's discount is marginal once judged against real 1BR comps rather than the project-pooled median.",
+        "rating_rationale": "Recent 517 sqft 1BR units transacted at $920k-$922k (~1781-1785 psf) in late 2025, so this 1760 psf / $910k asking is essentially at-market, only ~1-2% below true same-type comps. The algo's -2.9% age and -3.6% cohort discounts are real but small, and the headline ~1913 psf project average is inflated by larger 2-3BR stacks, so it overstates the 1BR bargain (v3.2 size-relative caution). It is OCR D19 (favorable forward region) with ~93 years of lease (2019 completion), and the project is well maintained near Bartley MRT, but a small 1BR at a full price with no dated catalyst is a hold, not a buy. Trailing 5.31% CAGR (264 txns) is solid context but per v3.4 not a forward edge.",
+        "red_flags": [
+          "Asking is at-market vs verified 1BR comps (1781-1785 psf) — the project-pooled discount is largely a size-mix artifact",
+          "Smallest unit type (517 sqft 1BR) carries weaker capital-growth and resale-pool dynamics than 2-3BR",
+          "No specific catalyst beyond the already-operational Bartley MRT"
+        ],
+        "catalysts": [
+          "Bartley MRT (Circle Line) within walking distance supports tenant demand",
+          "OCR D19 region tailwind under v3.4 priors"
+        ],
+        "rental_assessment": "517 sqft 1BR near Bartley MRT rents readily to singles/couples; yield on a ~$910k 1BR is decent but the small base limits absolute rent and capital upside.",
+        "appreciation_assessment": "1BR units here stabilised around ~1790 psf by 2025 with modest growth versus larger units; 5.31% trailing CAGR is treated as story only — no forward premium assumed."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botanique-at-bartley-25237409",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

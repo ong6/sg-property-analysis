@@ -1,0 +1,117 @@
+{
+  "condo": "Avant Residences",
+  "slug": "avant-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 700 sqft 1BR near Aljunied MRT (360m) at a low $999 psf and $699k quantum — the cheapest entry in the batch and well below the $1,572 median. But the headline 9.78% appreciation rests on just 7 transactions, far below any reliability threshold, so the value signal is unverified.",
+      "rating_rationale": "The attractive surface — $999 psf vs $1,572 median, $699k entry (low quantum = broad buyer pool), Aljunied EW9 360m — is undercut by the data quality: only 7 URA transactions underpin both the 9.78% CAGR and the $1,572 median, so neither figure is dependable (the rubric flags <10 txns as concerning and reliability needs 50+). The roomy 700 sqft for a '1BR' and very low PSF suggest a non-standard/older-stock layout that explains part of the discount. Low quantum and good transit keep it off Avoid, but a 7-txn series means I cannot confirm this is genuine value rather than a thinly-traded outlier — Neutral pending real transaction depth.",
+      "red_flags": [
+        "Only 7 URA txns — both the 9.78% rate and the $1,572 median are statistically unreliable",
+        "Low $999 psf / roomy 700 sqft 1BR suggests non-standard or older stock driving the discount",
+        "Thin trading history implies weak, lumpy liquidity despite low quantum"
+      ],
+      "catalysts": [
+        "Low $699k quantum — broadest, most accessible buyer pool in the batch",
+        "EW9 Aljunied MRT 360m — strong transit in central-east D14",
+        "Headline PSF far below median (but unverified on 7 txns)"
+      ],
+      "as_of": {
+        "price": 699000,
+        "psf": 998.57,
+        "beds": 1,
+        "sqft": 700.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 700 sqft 1BR near Aljunied MRT (360m) at a low $999 psf and $699k quantum — the cheapest entry in the batch and well below the $1,572 median. But the headline 9.78% appreciation rests on just 7 transactions, far below any reliability threshold, so the value signal is unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "The attractive surface — $999 psf vs $1,572 median, $699k entry (low quantum = broad buyer pool), Aljunied EW9 360m — is undercut by the data quality: only 7 URA transactions underpin both the 9.78% CAGR and the $1,572 median, so neither figure is dependable (the rubric flags <10 txns as concerning and reliability needs 50+). The roomy 700 sqft for a '1BR' and very low PSF suggest a non-standard/older-stock layout that explains part of the discount. Low quantum and good transit keep it off Avoid, but a 7-txn series means I cannot confirm this is genuine value rather than a thinly-traded outlier — Neutral pending real transaction depth.",
+        "red_flags": [
+          "Only 7 URA txns — both the 9.78% rate and the $1,572 median are statistically unreliable",
+          "Low $999 psf / roomy 700 sqft 1BR suggests non-standard or older stock driving the discount",
+          "Thin trading history implies weak, lumpy liquidity despite low quantum"
+        ],
+        "catalysts": [
+          "Low $699k quantum — broadest, most accessible buyer pool in the batch",
+          "EW9 Aljunied MRT 360m — strong transit in central-east D14",
+          "Headline PSF far below median (but unverified on 7 txns)"
+        ],
+        "rental_assessment": "Aljunied 360m to MRT supports steady 1BR rental demand; low quantum aids yield arithmetic. Reasonable rental case despite thin sales data.",
+        "appreciation_assessment": "9.78% is not trustworthy on 7 txns; treat as unproven. Low entry offers downside cushion but no reliable appreciation thesis.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-60191425",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Algo's #1 (979/1000) on a -46% age-adjusted discount, but the cheapness is a data artifact: the listing's 700sqft/$998psf does not fit a 50-unit project where 1-beds are 377-484sqft and recent resales average ~$1,507psf ($999-$1,814 range). psf_cohort_txns=1 = no real comparable.",
+      "rating_rationale": "Recent Avant Residences resales average ~$1,507 psf (range $999-$1,814 over the last 12 months); this listing's $998.57 psf sits at the absolute floor of that range. A 700 sqft '1-bed' is inconsistent with the project's actual 1-bed sizes (377-484 sqft) - 700sqft is a 2-bed/2+1 format here, so the unit is being scored against the wrong (1-bed) cohort, producing the -34.4% psf_premium_vs_cohort on just 1 comparable txn. The -46.1% age-adjusted discount and 9.78% CAGR ride on only 7 txns. It is 99LH from 2012 (~85yrs left). D14 is OCR-adjacent (favorable forward region prior ~+4%), and if the $998psf and 700sqft are both real this is a genuinely cheap 2-bed-sized unit near Aljunied/Mountbatten MRT - but the sqft/bed mismatch and thin cohort mean I cannot confirm the bargain. Neutral, low confidence pending verification of actual unit size on the listing.",
+      "red_flags": [
+        "very_low_psf flag: $998psf is at the floor of the $999-$1,814 recent-resale range, suspicious for a mis-scrape",
+        "700sqft labelled 1-bed inconsistent with project 1-bed sizes of 377-484sqft (likely a 2-bed mislabelled, distorting cohort comparison)",
+        "psf_cohort_txns=1 and appreciation_txns=7 - thin data, the -34.4% cohort discount rests on a single comparable",
+        "99-year leasehold from 2012 (no freehold edge; ~85yrs remaining)",
+        "Small 50-unit boutique block, low facilities, thinner exit liquidity"
+      ],
+      "catalysts": [
+        "Walking distance to Aljunied EW9 MRT and Old Airport Road Food Centre",
+        "D14 / OCR-adjacent location carries a favorable forward region prior (~+4%)"
+      ],
+      "as_of": {
+        "price": 699000,
+        "psf": 998.57,
+        "beds": 1,
+        "sqft": 700
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Algo's #1 (979/1000) on a -46% age-adjusted discount, but the cheapness is a data artifact: the listing's 700sqft/$998psf does not fit a 50-unit project where 1-beds are 377-484sqft and recent resales average ~$1,507psf ($999-$1,814 range). psf_cohort_txns=1 = no real comparable.",
+        "rating_rationale": "Recent Avant Residences resales average ~$1,507 psf (range $999-$1,814 over the last 12 months); this listing's $998.57 psf sits at the absolute floor of that range. A 700 sqft '1-bed' is inconsistent with the project's actual 1-bed sizes (377-484 sqft) - 700sqft is a 2-bed/2+1 format here, so the unit is being scored against the wrong (1-bed) cohort, producing the -34.4% psf_premium_vs_cohort on just 1 comparable txn. The -46.1% age-adjusted discount and 9.78% CAGR ride on only 7 txns. It is 99LH from 2012 (~85yrs left). D14 is OCR-adjacent (favorable forward region prior ~+4%), and if the $998psf and 700sqft are both real this is a genuinely cheap 2-bed-sized unit near Aljunied/Mountbatten MRT - but the sqft/bed mismatch and thin cohort mean I cannot confirm the bargain. Neutral, low confidence pending verification of actual unit size on the listing.",
+        "red_flags": [
+          "very_low_psf flag: $998psf is at the floor of the $999-$1,814 recent-resale range, suspicious for a mis-scrape",
+          "700sqft labelled 1-bed inconsistent with project 1-bed sizes of 377-484sqft (likely a 2-bed mislabelled, distorting cohort comparison)",
+          "psf_cohort_txns=1 and appreciation_txns=7 - thin data, the -34.4% cohort discount rests on a single comparable",
+          "99-year leasehold from 2012 (no freehold edge; ~85yrs remaining)",
+          "Small 50-unit boutique block, low facilities, thinner exit liquidity"
+        ],
+        "catalysts": [
+          "Walking distance to Aljunied EW9 MRT and Old Airport Road Food Centre",
+          "D14 / OCR-adjacent location carries a favorable forward region prior (~+4%)"
+        ],
+        "rental_assessment": "Project rents $1,000-$3,700 across unit types; gross yield on a sub-$700k entry is reasonable but the headline depends on the true unit size which is unverified.",
+        "appreciation_assessment": "9.78% trailing CAGR is on only 7 txns and has ~0 forward power per backtest priors; do not extrapolate. No specific dated catalyst found."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-60191425",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

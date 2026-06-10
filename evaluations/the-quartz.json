@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quartz-60056427",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A jumbo 2,906 sqft unit in Sengkang (D19) asking $1,032 psf vs a verified ~$1,495 psf project average — a large nominal discount, but it is a size artefact: jumbo units structurally trade far lower psf, the algo has ZERO same-size comparables, and the ~$3M quantum on a 99-yr (2005) lease has narrow exit liquidity.",
+      "rating_rationale": "Web-verified recent Quartz transactions average ~$1,495 psf (range $1,417-$1,584), so the $1,032 psf headline looks like a ~31% bargain and drives the algo's -35.7% age-adj signal and the 'very_low_psf' flag. But psf_cohort_txns=0 — there is no same-size band to compare against, so the -32.2% vs-cohort number is a data quirk, exactly the trap to be skeptical of. This is a 2,906 sqft jumbo (a comparable jumbo is asking $3.3M), and giant units always carry a deep psf discount versus the regular-sized units that set the $1,495 average — so the discount is largely mechanical, not free value. Lease is 99-yr from 2005 (~78 yrs left, built 2009). Catalyst is limited to existing Buangkok/Hougang MRT. For a 5-7yr investment, the ~$3M quantum + jumbo format means a small buyer pool and slow exit; the abundant space is a feature mainly for own-stay, not investment. Net: fairly priced for what it is, but not an investment bargain — Neutral.",
+      "red_flags": [
+        "psf_cohort_txns=0 — the -32.2% vs-cohort discount has no same-size comparable and is a data quirk",
+        "Jumbo 2,906 sqft + ~$3M quantum = narrow buyer pool and weak exit liquidity for a 5-7yr investment",
+        "99-yr leasehold from 2005 (~78 yrs remaining) on an aging 2009 development — lease decay accelerates within hold",
+        "Dossier built_year (2010) is off; actual TOP ~2009, lease from 2005"
+      ],
+      "catalysts": [
+        "Buangkok (NE15) and Hougang (NE14) MRT access — already in place, no new catalyst",
+        "Genuine value for an own-stay buyer seeking large space at a low absolute psf"
+      ],
+      "as_of": {
+        "price": 2999000,
+        "psf": 1032,
+        "beds": 4,
+        "sqft": 2906
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A jumbo 2,906 sqft unit in Sengkang (D19) asking $1,032 psf vs a verified ~$1,495 psf project average — a large nominal discount, but it is a size artefact: jumbo units structurally trade far lower psf, the algo has ZERO same-size comparables, and the ~$3M quantum on a 99-yr (2005) lease has narrow exit liquidity.",
+        "rating_rationale": "Web-verified recent Quartz transactions average ~$1,495 psf (range $1,417-$1,584), so the $1,032 psf headline looks like a ~31% bargain and drives the algo's -35.7% age-adj signal and the 'very_low_psf' flag. But psf_cohort_txns=0 — there is no same-size band to compare against, so the -32.2% vs-cohort number is a data quirk, exactly the trap to be skeptical of. This is a 2,906 sqft jumbo (a comparable jumbo is asking $3.3M), and giant units always carry a deep psf discount versus the regular-sized units that set the $1,495 average — so the discount is largely mechanical, not free value. Lease is 99-yr from 2005 (~78 yrs left, built 2009). Catalyst is limited to existing Buangkok/Hougang MRT. For a 5-7yr investment, the ~$3M quantum + jumbo format means a small buyer pool and slow exit; the abundant space is a feature mainly for own-stay, not investment. Net: fairly priced for what it is, but not an investment bargain — Neutral.",
+        "red_flags": [
+          "psf_cohort_txns=0 — the -32.2% vs-cohort discount has no same-size comparable and is a data quirk",
+          "Jumbo 2,906 sqft + ~$3M quantum = narrow buyer pool and weak exit liquidity for a 5-7yr investment",
+          "99-yr leasehold from 2005 (~78 yrs remaining) on an aging 2009 development — lease decay accelerates within hold",
+          "Dossier built_year (2010) is off; actual TOP ~2009, lease from 2005"
+        ],
+        "catalysts": [
+          "Buangkok (NE15) and Hougang (NE14) MRT access — already in place, no new catalyst",
+          "Genuine value for an own-stay buyer seeking large space at a low absolute psf"
+        ],
+        "appreciation_assessment": "Trailing 6.38% CAGR (120 txns) is project-wide and not jumbo-specific; treated as story only. No dated forward catalyst, and jumbo units lag the project on appreciation due to thin demand.",
+        "rental_assessment": "A 2,906 sqft unit is hard to rent efficiently — gross rent is capped by what families will pay, so yield on a ~$3M quantum is poor. Rental does not support an investment thesis here."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quartz-60224605",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

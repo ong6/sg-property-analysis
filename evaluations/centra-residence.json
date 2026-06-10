@@ -56,6 +56,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-centra-residence-500153951",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A real, fairly-priced large freehold 2BR in boutique Geylang (D14) — but the algo's 'deep discount' is mostly a size effect plus a 1-transaction cohort, and Geylang location/financing stigma caps the upside.",
+      "rating_rationale": "The listing is verified (99.co shows the same 1,066 sqft 2BR around $1,300-1,400k), so the price is real — not a mis-scrape. But the dossier's -32.7% age_adj and -21.1% psf_premium rest on psf_cohort_txns = 1 and appreciation_txns = 16, which the v3.4 prior says to treat skeptically. The project's 12-month average is ~$1,444 psf (range $1,145-$1,657); this 1,066 sqft unit at $1,248 psf is below average largely because it is one of the LARGEST layouts — Centra's small 398-506 sqft units trade up to ~$1,657-1,881 psf and pull the average up. So a big chunk of the apparent 'cheapness' is the normal large-unit PSF discount, not alpha. Freehold is a genuine plus for own-stay/long hold but per v3.4 is not a forward return edge. Negatives: Lorong 7 Geylang carries red-light-district adjacency stigma and known bank financing/LTV haircuts, a tiny 78-unit project (thin liquidity), and the boutique D14 segment has only ~8 txns in 3 years. Fair value, not a bargain — Neutral.",
+      "red_flags": [
+        "psf_cohort_txns = 1 and appreciation_txns = 16 — the discount/CAGR rest on almost no comparables; likely overstated",
+        "Lorong 7 Geylang location carries stigma and known mortgage financing/LTV restrictions that depress resale liquidity",
+        "Tiny 78-unit boutique project — thin transaction volume (~8 sales in 3 years) means slow, lumpy exit",
+        "Low PSF is substantially a large-unit size effect, not a true bargain vs same-size peers"
+      ],
+      "catalysts": [
+        "Freehold tenure supports a long hold and own-stay appeal (not a forward investment edge per backtest)",
+        "City-fringe D14 with Aljunied/Kallang/Paya Lebar MRT access and the broader Paya Lebar redevelopment masterplan nearby"
+      ],
+      "as_of": {
+        "price": 1330000,
+        "psf": 1247.65,
+        "beds": 2,
+        "sqft": 1066
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "A real, fairly-priced large freehold 2BR in boutique Geylang (D14) — but the algo's 'deep discount' is mostly a size effect plus a 1-transaction cohort, and Geylang location/financing stigma caps the upside.",
+        "rating_rationale": "The listing is verified (99.co shows the same 1,066 sqft 2BR around $1,300-1,400k), so the price is real — not a mis-scrape. But the dossier's -32.7% age_adj and -21.1% psf_premium rest on psf_cohort_txns = 1 and appreciation_txns = 16, which the v3.4 prior says to treat skeptically. The project's 12-month average is ~$1,444 psf (range $1,145-$1,657); this 1,066 sqft unit at $1,248 psf is below average largely because it is one of the LARGEST layouts — Centra's small 398-506 sqft units trade up to ~$1,657-1,881 psf and pull the average up. So a big chunk of the apparent 'cheapness' is the normal large-unit PSF discount, not alpha. Freehold is a genuine plus for own-stay/long hold but per v3.4 is not a forward return edge. Negatives: Lorong 7 Geylang carries red-light-district adjacency stigma and known bank financing/LTV haircuts, a tiny 78-unit project (thin liquidity), and the boutique D14 segment has only ~8 txns in 3 years. Fair value, not a bargain — Neutral.",
+        "red_flags": [
+          "psf_cohort_txns = 1 and appreciation_txns = 16 — the discount/CAGR rest on almost no comparables; likely overstated",
+          "Lorong 7 Geylang location carries stigma and known mortgage financing/LTV restrictions that depress resale liquidity",
+          "Tiny 78-unit boutique project — thin transaction volume (~8 sales in 3 years) means slow, lumpy exit",
+          "Low PSF is substantially a large-unit size effect, not a true bargain vs same-size peers"
+        ],
+        "catalysts": [
+          "Freehold tenure supports a long hold and own-stay appeal (not a forward investment edge per backtest)",
+          "City-fringe D14 with Aljunied/Kallang/Paya Lebar MRT access and the broader Paya Lebar redevelopment masterplan nearby"
+        ],
+        "appreciation_assessment": "Reported 6.23% 5yr CAGR is on only 16 txns and a 1-unit PSF cohort — I treat it as noise, not signal, consistent with v3.4 (trailing appreciation ~0 forward power, thin samples unreliable). No credible forward momentum case.",
+        "rental_assessment": "D14 city-fringe rental demand is decent and a large 2BR (1,066 sqft) at this quantum could yield reasonably, but Geylang's reputation narrows the tenant pool and the boutique project lacks full facilities."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centra-residence-500153951",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

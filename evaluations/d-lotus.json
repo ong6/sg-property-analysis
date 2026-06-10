@@ -1,0 +1,63 @@
+{
+  "condo": "D'Lotus",
+  "slug": "d-lotus",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2007 freehold 4BR in Balestier/Toa Payoh fringe (D12), a large 2,121 sqft at $2.8M / $1,320 psf. The low headline PSF is purely a function of the oversized unit — total quantum $2.8M is well above the deep-liquidity band, and weak 2.9%/yr appreciation on a thin 28-txn series makes this an illiquid, slow-growth hold.",
+      "rating_rationale": "Headline $1,320 psf sits ~19% below the $1,624 district median, but that gap is driven by the 2,121 sqft size, not a bargain. $2.8M quantum thins the buyer pool sharply, appreciation is a soft 2.9%/yr (only 28 txn), and 1.43km/17-min to Toa Payoh MRT is a poor walk. Freehold tenure is the lone real positive; score_1000 485 is below market-typical.",
+      "red_flags": [
+        "$2.8M quantum is well above the deep-liquidity band — narrow buyer pool",
+        "Low PSF is an oversized-unit artefact, not genuine value",
+        "Weak 2.9%/yr appreciation on a thin 28-txn series",
+        "1.43km / 17-min walk to nearest MRT (Toa Payoh)",
+        "2007 build — 19 years old, dated finishes likely"
+      ],
+      "catalysts": [
+        "Freehold tenure in central-fringe D12",
+        "Large 2,121 sqft layout suits multi-gen families seeking space",
+        "Balestier/Novena medical-hub and CBD proximity"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 1320.13,
+        "beds": 4,
+        "sqft": 2121.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2007 freehold 4BR in Balestier/Toa Payoh fringe (D12), a large 2,121 sqft at $2.8M / $1,320 psf. The low headline PSF is purely a function of the oversized unit — total quantum $2.8M is well above the deep-liquidity band, and weak 2.9%/yr appreciation on a thin 28-txn series makes this an illiquid, slow-growth hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Headline $1,320 psf sits ~19% below the $1,624 district median, but that gap is driven by the 2,121 sqft size, not a bargain. $2.8M quantum thins the buyer pool sharply, appreciation is a soft 2.9%/yr (only 28 txn), and 1.43km/17-min to Toa Payoh MRT is a poor walk. Freehold tenure is the lone real positive; score_1000 485 is below market-typical.",
+        "red_flags": [
+          "$2.8M quantum is well above the deep-liquidity band — narrow buyer pool",
+          "Low PSF is an oversized-unit artefact, not genuine value",
+          "Weak 2.9%/yr appreciation on a thin 28-txn series",
+          "1.43km / 17-min walk to nearest MRT (Toa Payoh)",
+          "2007 build — 19 years old, dated finishes likely"
+        ],
+        "catalysts": [
+          "Freehold tenure in central-fringe D12",
+          "Large 2,121 sqft layout suits multi-gen families seeking space",
+          "Balestier/Novena medical-hub and CBD proximity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-lotus-25515378",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "condo": "D'Pavilion",
+  "slug": "d-pavilion",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold (2011) 1,238 sqft 3BR near Kovan MRT in D19's Serangoon belt, $1.79M / $1,446 psf — below the URA median ($1,493.5) with a strong resale-only 7.1%/yr CAGR. Attractive FH value at a liquid quantum near a mature MRT, with the only caveat being a thin 9-transaction sample.",
+      "rating_rationale": "Listed PSF ($1,446) is ~3% below the URA median ($1,493.5) for a freehold 3BR with a strong 7.1%/yr resale-only appreciation, 670m from Kovan MRT (NE line) in the well-established, owner-occupier-heavy Serangoon Gardens area. $1.79M quantum is in the deep buyer band and the efficient-enough FH 3BR appeals to upgrader families. The main caveat is only 9 URA transactions, so the 7.1% rate is directional rather than firm; even discounted it supports a Buy given the discount-to-median and tenure.",
+      "red_flags": [
+        "Only 9 URA transactions — 7.1% appreciation rate is directional, not firm",
+        "1,238 sqft is moderately large for a 3BR",
+        "Kovan MRT a 670m walk, mature/lower-growth Serangoon micro-market"
+      ],
+      "catalysts": [
+        "Freehold priced ~3% below URA median",
+        "Strong resale-only 7.1%/yr appreciation",
+        "Kovan MRT (NE line) and stable Serangoon Gardens owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 1790000,
+        "psf": 1445.88,
+        "beds": 3,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold (2011) 1,238 sqft 3BR near Kovan MRT in D19's Serangoon belt, $1.79M / $1,446 psf — below the URA median ($1,493.5) with a strong resale-only 7.1%/yr CAGR. Attractive FH value at a liquid quantum near a mature MRT, with the only caveat being a thin 9-transaction sample.",
+        "rating": "Buy",
+        "rating_rationale": "Listed PSF ($1,446) is ~3% below the URA median ($1,493.5) for a freehold 3BR with a strong 7.1%/yr resale-only appreciation, 670m from Kovan MRT (NE line) in the well-established, owner-occupier-heavy Serangoon Gardens area. $1.79M quantum is in the deep buyer band and the efficient-enough FH 3BR appeals to upgrader families. The main caveat is only 9 URA transactions, so the 7.1% rate is directional rather than firm; even discounted it supports a Buy given the discount-to-median and tenure.",
+        "red_flags": [
+          "Only 9 URA transactions — 7.1% appreciation rate is directional, not firm",
+          "1,238 sqft is moderately large for a 3BR",
+          "Kovan MRT a 670m walk, mature/lower-growth Serangoon micro-market"
+        ],
+        "catalysts": [
+          "Freehold priced ~3% below URA median",
+          "Strong resale-only 7.1%/yr appreciation",
+          "Kovan MRT (NE line) and stable Serangoon Gardens owner-occupier demand"
+        ],
+        "rental_assessment": "Family-oriented Serangoon location rents a 3BR steadily to local families; yield around the ~3% norm with a deep owner-occupier resale fallback.",
+        "appreciation_assessment": "Resale-only 7.1%/yr (thin sample) plus a discount-to-median entry points to continued outperformance for the area; treat the rate as indicative.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-pavilion-500093900",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

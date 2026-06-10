@@ -1,0 +1,63 @@
+{
+  "condo": "Freehold at boon keng",
+  "slug": "freehold-at-boon-keng",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A generically-named D12 Boon Keng freehold 3BR (1,087sqft) at a steep $2,556 psf / $2.78M, with no URA appreciation, no transaction count, no median PSF and no built year in the dossier. The listing title is a marketing placeholder rather than a real project name, so there is no verifiable comparable data to underwrite a $2.78M entry.",
+      "rating_rationale": "Total data void on the metrics that matter — no URA rate, no txn count, no median PSF, no built year — combined with an aggressive $2,556 psf and a $2.78M price that sits past the liquid sweet spot. The placeholder name ('Freehold at boon keng') signals a new-launch/marketing listing where pricing is developer-set, not market-tested. Cannot responsibly rate this a buy on zero supporting data at a premium PSF.",
+      "red_flags": [
+        "No URA appreciation, txn count, median PSF or built year — unverifiable",
+        "$2,556 psf is steep for D12 Boon Keng",
+        "$2.78M above the deepest-liquidity band",
+        "Generic placeholder project name — likely developer-priced new launch"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "510m to Boon Keng NE line, near-city RCR-adjacent location"
+      ],
+      "as_of": {
+        "price": 2778000,
+        "psf": 2555.66,
+        "beds": 3,
+        "sqft": 1087.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A generically-named D12 Boon Keng freehold 3BR (1,087sqft) at a steep $2,556 psf / $2.78M, with no URA appreciation, no transaction count, no median PSF and no built year in the dossier. The listing title is a marketing placeholder rather than a real project name, so there is no verifiable comparable data to underwrite a $2.78M entry.",
+        "rating": "Avoid",
+        "rating_rationale": "Total data void on the metrics that matter — no URA rate, no txn count, no median PSF, no built year — combined with an aggressive $2,556 psf and a $2.78M price that sits past the liquid sweet spot. The placeholder name ('Freehold at boon keng') signals a new-launch/marketing listing where pricing is developer-set, not market-tested. Cannot responsibly rate this a buy on zero supporting data at a premium PSF.",
+        "red_flags": [
+          "No URA appreciation, txn count, median PSF or built year — unverifiable",
+          "$2,556 psf is steep for D12 Boon Keng",
+          "$2.78M above the deepest-liquidity band",
+          "Generic placeholder project name — likely developer-priced new launch"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "510m to Boon Keng NE line, near-city RCR-adjacent location"
+        ],
+        "rental_assessment": "Boon Keng has decent city-fringe tenant demand, but at $2.78M the yield will be thin and unverifiable without a real project benchmark.",
+        "appreciation_assessment": "No URA data of any kind; cannot establish a trajectory. Premium PSF on an unidentified project is a downside-skewed bet.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "No URA data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-at-boon-keng-500144845",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

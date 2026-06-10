@@ -1,0 +1,63 @@
+{
+  "condo": "The Esta",
+  "slug": "the-esta",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,593sqft freehold 4BR at The Esta, D15, asking $4.15M / $2,605 psf — a slight premium to the $2,542 URA median — with a healthy 6.6%/yr appreciation on a solid 59-txn series. The fundamentals are good but the $4.15M price sits well above the liquid sweet spot, which is what the low score_1000 (339) is flagging.",
+      "rating_rationale": "Genuinely strong appreciation (6.6%/yr on 59 txn, high confidence), freehold, established seafront-adjacent D15 project, 640m to Tanjong Katong TEL — all real positives. The offsets are the $4.15M price (a thin >$3M buyer pool that lengthens exit time), a slight +2.5% premium to median, and a compact 1,593sqft for a 4BR. Good asset, but the exit-liquidity drag at this price keeps it at Neutral for a 5-7yr investment hold.",
+      "red_flags": [
+        "$4.15M — well past the deepest-liquidity band, longer exit",
+        "+2.5% PSF premium to URA median",
+        "1,593sqft is compact for a 4BR"
+      ],
+      "catalysts": [
+        "Strong 6.6%/yr appreciation on a deep 59-txn series",
+        "Freehold, established D15 lifestyle project",
+        "Tanjong Katong TEL 640m"
+      ],
+      "as_of": {
+        "price": 4150000,
+        "psf": 2605.15,
+        "beds": 4,
+        "sqft": 1593.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,593sqft freehold 4BR at The Esta, D15, asking $4.15M / $2,605 psf — a slight premium to the $2,542 URA median — with a healthy 6.6%/yr appreciation on a solid 59-txn series. The fundamentals are good but the $4.15M price sits well above the liquid sweet spot, which is what the low score_1000 (339) is flagging.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely strong appreciation (6.6%/yr on 59 txn, high confidence), freehold, established seafront-adjacent D15 project, 640m to Tanjong Katong TEL — all real positives. The offsets are the $4.15M price (a thin >$3M buyer pool that lengthens exit time), a slight +2.5% premium to median, and a compact 1,593sqft for a 4BR. Good asset, but the exit-liquidity drag at this price keeps it at Neutral for a 5-7yr investment hold.",
+        "red_flags": [
+          "$4.15M — well past the deepest-liquidity band, longer exit",
+          "+2.5% PSF premium to URA median",
+          "1,593sqft is compact for a 4BR"
+        ],
+        "catalysts": [
+          "Strong 6.6%/yr appreciation on a deep 59-txn series",
+          "Freehold, established D15 lifestyle project",
+          "Tanjong Katong TEL 640m"
+        ],
+        "rental_assessment": "Large 4BR East Coast units rent to expat families but the tenant pool at this size/price is narrow; gross yield on $4.15M will be sub-3%.",
+        "appreciation_assessment": "6.6%/yr on 59 txn is reliable and among the best in this batch — the freehold East Coast location supports it. Price ceiling is the constraint, not the growth rate.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only series, 59 txn (lightly trimmed)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-esta-500079788",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

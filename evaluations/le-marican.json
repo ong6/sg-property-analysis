@@ -1,0 +1,61 @@
+{
+  "condo": "Le Marican",
+  "slug": "le-marican",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 570 sqft freehold 1BR in D14/D15-fringe at $1456 PSF / $830k, but 1.05km (13-min walk) from Kembangan MRT and backed by only 2 URA transactions with no median PSF. Modest PSF and freehold tenure, but no reliable data to underwrite.",
+      "rating_rationale": "$1456 PSF is on the lower end for a freehold 1BR and the sub-$840k quantum is accessible, but only 2 URA txns and no median mean there is no project-specific evidence of value or growth. The 1.05km/13-min walk to MRT weakens both rental and resale. Boutique freehold with a thin data trail — defaults to Neutral pending verification; not enough to confirm a Buy or condemn to Avoid.",
+      "red_flags": [
+        "Only 2 URA transactions, no median PSF — value/appreciation unverifiable",
+        "1.05km / 13-min walk to MRT — weak connectivity",
+        "Likely a small boutique development — thin liquidity",
+        "2010 build — 16 years old"
+      ],
+      "catalysts": [
+        "Freehold tenure at a modest $1456 PSF and sub-$840k quantum",
+        "D14 location with broad East-side appeal"
+      ],
+      "as_of": {
+        "price": 830000,
+        "psf": 1456.14,
+        "beds": 1,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 570 sqft freehold 1BR in D14/D15-fringe at $1456 PSF / $830k, but 1.05km (13-min walk) from Kembangan MRT and backed by only 2 URA transactions with no median PSF. Modest PSF and freehold tenure, but no reliable data to underwrite.",
+        "rating": "Neutral",
+        "rating_rationale": "$1456 PSF is on the lower end for a freehold 1BR and the sub-$840k quantum is accessible, but only 2 URA txns and no median mean there is no project-specific evidence of value or growth. The 1.05km/13-min walk to MRT weakens both rental and resale. Boutique freehold with a thin data trail — defaults to Neutral pending verification; not enough to confirm a Buy or condemn to Avoid.",
+        "red_flags": [
+          "Only 2 URA transactions, no median PSF — value/appreciation unverifiable",
+          "1.05km / 13-min walk to MRT — weak connectivity",
+          "Likely a small boutique development — thin liquidity",
+          "2010 build — 16 years old"
+        ],
+        "catalysts": [
+          "Freehold tenure at a modest $1456 PSF and sub-$840k quantum",
+          "D14 location with broad East-side appeal"
+        ],
+        "rental_assessment": "Distance from MRT limits tenant appeal; a freehold 1BR here rents adequately to budget singles but without a standout demand driver.",
+        "appreciation_assessment": "No usable URA series (2 txns); cannot anchor a rate. Freehold D14 baseline applies with no project confirmation — treat growth as unproven.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-marican-500094097",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

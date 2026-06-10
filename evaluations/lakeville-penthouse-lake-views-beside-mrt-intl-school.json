@@ -1,0 +1,65 @@
+{
+  "condo": "Lakeville Penthouse (Lake Views, beside MRT & Intl School)",
+  "slug": "lakeville-penthouse-lake-views-beside-mrt-intl-school",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "JLD penthouse (Lakeville, TOP 2017/2018, Lakeside MRT) at $1,317 psf, genuinely below the project's ~$1,776 psf average even allowing for a penthouse discount, with a real, dated Jurong Lake District catalyst (Jurong Region Line 2029, Cross Island Line Phase 2 2032, largest business district outside the central area). The drag is the asset type: a 2,278 sqft penthouse at a $3.0M absolute quantum is a thin, slow-to-exit segment, and the headline -30.9% age-adjusted cheapness is inflated by comparing a penthouse PSF against the project-pooled median.",
+      "rating_rationale": "Value signal is the strongest of the cohort on paper (age_adj -30.9%, $1,317 psf vs Lakeville recent average ~$1,776 psf), and D05/OCR is the favoured forward region (~+4% realized) with a concrete infrastructure catalyst, not a portal-headline CAGR (appreciation_pct 3.7% is only a regional_baseline with 0 txns, so it carries no forward weight). But penthouses structurally trade below the project median PSF, so a large slice of the -30.9% is a measurement artefact rather than a true bargain (psf_cohort_txns is null — no penthouse comparables verified). At a $3.0M quantum in a leasehold OCR district, exit liquidity for a 2,278 sqft unit is weak over a 5-7yr hold, which offsets the genuine catalyst. Net Neutral: real location upside but unfavourable asset type and an over-stated cheapness number.",
+      "red_flags": [
+        "Penthouse PSF (1,317) compared to project-pooled median overstates the -30.9% age-adjusted bargain; no same-size cohort comparables (psf_cohort_txns null)",
+        "$3.0M quantum + 2,278 sqft = thin penthouse resale segment, weak exit liquidity over a 5-7yr hold",
+        "appreciation_pct 3.7% is regional_baseline with 0 transactions — no project-level forward evidence",
+        "99-yr leasehold (TOP ~2017), lease decay over hold period",
+        "Listing-title cheapness ('Huge Size') is exactly the oversized-unit feature that flips to a flag for an investment hold"
+      ],
+      "catalysts": [
+        "Jurong Lake District: largest business district outside central area, 100k jobs / 20k homes by 2040-2050",
+        "Jurong Region Line (~2029) and Cross Island Line Phase 2 (~2032) adding two MRT lines to JLD",
+        "5-min walk to Lakeside MRT and adjacency to Jurong Lake Gardens / international school supports tenant demand",
+        "Asking PSF below Lakeville's project average leaves headroom if penthouse discount narrows"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 1316.94,
+        "beds": 4,
+        "sqft": 2278
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "JLD penthouse (Lakeville, TOP 2017/2018, Lakeside MRT) at $1,317 psf, genuinely below the project's ~$1,776 psf average even allowing for a penthouse discount, with a real, dated Jurong Lake District catalyst (Jurong Region Line 2029, Cross Island Line Phase 2 2032, largest business district outside the central area). The drag is the asset type: a 2,278 sqft penthouse at a $3.0M absolute quantum is a thin, slow-to-exit segment, and the headline -30.9% age-adjusted cheapness is inflated by comparing a penthouse PSF against the project-pooled median.",
+        "rating_rationale": "Value signal is the strongest of the cohort on paper (age_adj -30.9%, $1,317 psf vs Lakeville recent average ~$1,776 psf), and D05/OCR is the favoured forward region (~+4% realized) with a concrete infrastructure catalyst, not a portal-headline CAGR (appreciation_pct 3.7% is only a regional_baseline with 0 txns, so it carries no forward weight). But penthouses structurally trade below the project median PSF, so a large slice of the -30.9% is a measurement artefact rather than a true bargain (psf_cohort_txns is null — no penthouse comparables verified). At a $3.0M quantum in a leasehold OCR district, exit liquidity for a 2,278 sqft unit is weak over a 5-7yr hold, which offsets the genuine catalyst. Net Neutral: real location upside but unfavourable asset type and an over-stated cheapness number.",
+        "red_flags": [
+          "Penthouse PSF (1,317) compared to project-pooled median overstates the -30.9% age-adjusted bargain; no same-size cohort comparables (psf_cohort_txns null)",
+          "$3.0M quantum + 2,278 sqft = thin penthouse resale segment, weak exit liquidity over a 5-7yr hold",
+          "appreciation_pct 3.7% is regional_baseline with 0 transactions — no project-level forward evidence",
+          "99-yr leasehold (TOP ~2017), lease decay over hold period",
+          "Listing-title cheapness ('Huge Size') is exactly the oversized-unit feature that flips to a flag for an investment hold"
+        ],
+        "catalysts": [
+          "Jurong Lake District: largest business district outside central area, 100k jobs / 20k homes by 2040-2050",
+          "Jurong Region Line (~2029) and Cross Island Line Phase 2 (~2032) adding two MRT lines to JLD",
+          "5-min walk to Lakeside MRT and adjacency to Jurong Lake Gardens / international school supports tenant demand",
+          "Asking PSF below Lakeville's project average leaves headroom if penthouse discount narrows"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-move-in-ready-penthouse-w-lake-views-huge-size-beside-mrt-top-international-school-500132085",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

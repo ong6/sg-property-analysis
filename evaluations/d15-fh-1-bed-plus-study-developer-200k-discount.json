@@ -1,0 +1,62 @@
+{
+  "condo": "❤️ D15, FH, 1 bed plus study, developer $200k discount ❤️",
+  "slug": "d15-fh-1-bed-plus-study-developer-200k-discount",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A new-launch (2027 TOP) freehold 1BR+study, 530 sqft at $1.33M / $2,509 psf in D15 — extreme PSF for a shoebox even with the advertised '$200k developer discount'. The lowest Elo (991) and worst record (111-202) in the batch reflect a badly overpriced, niche unit.",
+      "rating_rationale": "$2,509 psf for a 530 sqft 1BR+study is paying CCR-prime money for an OCR/RCR-fringe shoebox 830m from Dakota MRT; the '$200k developer discount' is marketing framing off an inflated list, not value. Arena Elo of 991 with a 111-202 record is the clearest loser in the set, score_1000 of 509 is barely market-typical despite the value-tilt, and 1BR+study at a $1.33M quantum is a thin resale segment. New-launch bias with no resale floor and no URA data to anchor — high overpay risk.",
+      "red_flags": [
+        "$2,509 psf for a shoebox 1BR+study — severe overpricing",
+        "Worst arena record in batch (111-202, Elo 991)",
+        "'Developer discount' is marketing off an inflated list price",
+        "New-launch, no resale comps, 1BR+study niche segment, Dakota MRT 830m"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15",
+        "Brand-new 2027 completion"
+      ],
+      "as_of": {
+        "price": 1330000,
+        "psf": 2509.43,
+        "beds": 1,
+        "sqft": 530.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new-launch (2027 TOP) freehold 1BR+study, 530 sqft at $1.33M / $2,509 psf in D15 — extreme PSF for a shoebox even with the advertised '$200k developer discount'. The lowest Elo (991) and worst record (111-202) in the batch reflect a badly overpriced, niche unit.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,509 psf for a 530 sqft 1BR+study is paying CCR-prime money for an OCR/RCR-fringe shoebox 830m from Dakota MRT; the '$200k developer discount' is marketing framing off an inflated list, not value. Arena Elo of 991 with a 111-202 record is the clearest loser in the set, score_1000 of 509 is barely market-typical despite the value-tilt, and 1BR+study at a $1.33M quantum is a thin resale segment. New-launch bias with no resale floor and no URA data to anchor — high overpay risk.",
+        "red_flags": [
+          "$2,509 psf for a shoebox 1BR+study — severe overpricing",
+          "Worst arena record in batch (111-202, Elo 991)",
+          "'Developer discount' is marketing off an inflated list price",
+          "New-launch, no resale comps, 1BR+study niche segment, Dakota MRT 830m"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15",
+          "Brand-new 2027 completion"
+        ],
+        "rental_assessment": "Even a strong D15 rental market cannot produce an acceptable yield at $2,509 psf / $1.33M for a 1BR+study — sub-3% likely.",
+        "appreciation_assessment": "Entering at a deeply inflated new-launch PSF leaves no headroom; resale is likely to mean-revert downward — negative real-terms risk.",
+        "stack_notes": null,
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d15-fh-1-bed-plus-study-developer-200k-discount-500013424",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

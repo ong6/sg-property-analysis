@@ -1,0 +1,61 @@
+{
+  "condo": "Waterfront @ Faber",
+  "slug": "waterfront-faber",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact 1,281 sqft 4BR in a D05 leasehold completed 2018, asking $1,639 psf vs a $1,554 project median. Decent $2.1M quantum within the liquid band, but weak 2.2%/yr appreciation and no listed MRT proximity hold it back.",
+      "rating_rationale": "$2.1M sits in the deeper buyer band and the 1,281 sqft 4BR is efficiently sized (not oversized), supporting a slightly broader exit pool than most 4BRs. However the URA series, while a usable 53 txns, shows only 2.2%/yr — below the RCR/OCR baseline — and the listing is ~5% above the project median PSF. No strong MRT adjacency listed. D05 (West Coast/Clementi) benefits from One-North/Pasir Panjang but this specific pocket is car-dependent.",
+      "red_flags": [
+        "Weak 2.2%/yr resale CAGR, below regional baseline",
+        "Listing ~5% above project URA median PSF",
+        "No MRT within easy walk per dossier; car-dependent location"
+      ],
+      "catalysts": [
+        "$2.1M quantum inside the deepest buyer band",
+        "D05 One-North / Pasir Panjang employment catchment",
+        "Efficient 1,281 sqft 4BR layout, broader appeal than oversized 4BRs"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1639.34,
+        "beds": 4,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 1,281 sqft 4BR in a D05 leasehold completed 2018, asking $1,639 psf vs a $1,554 project median. Decent $2.1M quantum within the liquid band, but weak 2.2%/yr appreciation and no listed MRT proximity hold it back.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.1M sits in the deeper buyer band and the 1,281 sqft 4BR is efficiently sized (not oversized), supporting a slightly broader exit pool than most 4BRs. However the URA series, while a usable 53 txns, shows only 2.2%/yr — below the RCR/OCR baseline — and the listing is ~5% above the project median PSF. No strong MRT adjacency listed. D05 (West Coast/Clementi) benefits from One-North/Pasir Panjang but this specific pocket is car-dependent.",
+        "red_flags": [
+          "Weak 2.2%/yr resale CAGR, below regional baseline",
+          "Listing ~5% above project URA median PSF",
+          "No MRT within easy walk per dossier; car-dependent location"
+        ],
+        "catalysts": [
+          "$2.1M quantum inside the deepest buyer band",
+          "D05 One-North / Pasir Panjang employment catchment",
+          "Efficient 1,281 sqft 4BR layout, broader appeal than oversized 4BRs"
+        ],
+        "rental_assessment": "4BR family-let in D05 has moderate demand from One-North and NUS/science-park households; gross yield modest at this quantum but better than larger 4BRs.",
+        "appreciation_assessment": "2.2%/yr is soft; reflects a mid-tier leasehold without a near-term catalyst. Expect below-average price growth over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-faber-24560670",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

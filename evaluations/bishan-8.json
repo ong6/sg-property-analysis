@@ -1,0 +1,63 @@
+{
+  "condo": "Bishan 8",
+  "slug": "bishan-8",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Established 99LH 3BR near Bishan MRT/interchange in a top schools belt, showing a strong 9.1%/yr URA rate but on a thin 35-txn base and at $2,094 psf — ~8% above the $1,935 median. Solid location, but a 26-year-old leasehold asking above market median caps the investment case.",
+      "rating_rationale": "Bishan's MRT interchange, Junction 8 and elite schools (Catholic High, Raffles) give genuine liquidity and tenant demand. But the headline 9.1%/yr rests on only 35 transactions, the unit asks 8% over the $1,935 URA median, and a 99LH built in 2000 has ~73yrs lease remaining — appreciation will face lease decay over a 5-7yr hold.",
+      "red_flags": [
+        "$2,094 psf is ~8% above $1,935 URA median",
+        "9.1%/yr rate based on thin 35-txn series — unreliable",
+        "26-year-old leasehold; lease-decay headwind on resale"
+      ],
+      "catalysts": [
+        "Bishan MRT interchange (NS/Circle) and Junction 8 connectivity",
+        "Premier schools belt (Catholic High, Raffles Institution) supports family demand",
+        "Mature estate with deep owner-occupier buyer pool"
+      ],
+      "as_of": {
+        "price": 2480000,
+        "psf": 2094.59,
+        "beds": 3,
+        "sqft": 1184.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Established 99LH 3BR near Bishan MRT/interchange in a top schools belt, showing a strong 9.1%/yr URA rate but on a thin 35-txn base and at $2,094 psf — ~8% above the $1,935 median. Solid location, but a 26-year-old leasehold asking above market median caps the investment case.",
+        "rating": "Neutral",
+        "rating_rationale": "Bishan's MRT interchange, Junction 8 and elite schools (Catholic High, Raffles) give genuine liquidity and tenant demand. But the headline 9.1%/yr rests on only 35 transactions, the unit asks 8% over the $1,935 URA median, and a 99LH built in 2000 has ~73yrs lease remaining — appreciation will face lease decay over a 5-7yr hold.",
+        "red_flags": [
+          "$2,094 psf is ~8% above $1,935 URA median",
+          "9.1%/yr rate based on thin 35-txn series — unreliable",
+          "26-year-old leasehold; lease-decay headwind on resale"
+        ],
+        "catalysts": [
+          "Bishan MRT interchange (NS/Circle) and Junction 8 connectivity",
+          "Premier schools belt (Catholic High, Raffles Institution) supports family demand",
+          "Mature estate with deep owner-occupier buyer pool"
+        ],
+        "rental_assessment": "Strong and stable — interchange access plus schools draw family tenants; 3BR is a broad-appeal format. Yield modest at this price (~3%).",
+        "appreciation_assessment": "Location supports steady growth but the 9.1% URA figure is statistically thin; treat ~4-5%/yr as the realistic basis given lease age and above-median entry.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Discounted from thin 35-txn URA 9.1% for lease age and above-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bishan-8-500145592",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

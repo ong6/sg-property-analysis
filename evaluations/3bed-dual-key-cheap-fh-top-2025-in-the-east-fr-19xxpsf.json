@@ -1,0 +1,61 @@
+{
+  "condo": "❤️ 3bed dual key, cheap FH, TOP 2025, in the east, fr 19xxpsf ❤️",
+  "slug": "3bed-dual-key-cheap-fh-top-2025-in-the-east-fr-19xxpsf",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft freehold 3BR dual-key in D14 (Geylang/Aljunied, TOP 2025), 610m from EW9 Aljunied MRT, at $2.29M / $1,883 psf. Freshly completed freehold dual-key flexibility and city-fringe location are the draw, but $1,883 psf is a full new-completion price for D14, dual-key is an investor-niche format, and there is no URA resale data to validate appreciation.",
+      "rating_rationale": "Just-TOP'd freehold in city-fringe D14 with dual-key dual-income flexibility and decent Aljunied MRT access has a clear rental thesis. But $1,883 psf reflects new-completion developer pricing (resale won't repeat the new-launch lift), the dual-key layout narrows the resale buyer pool to investors, and $2.29M is at the upper edge of the liquid band. No URA series to confirm a trend. Reasonable rental hold, unproven as a capital play.",
+      "red_flags": [
+        "$1,883 psf is new-completion pricing — limited resale re-rating headroom",
+        "Dual-key format narrows resale demand to investors",
+        "No URA appreciation/transaction data (TOP 2025, no resale history)",
+        "Geylang-fringe location stigma can cap broad buyer appeal"
+      ],
+      "catalysts": [
+        "Freehold, brand-new (TOP 2025) — low maintenance, full lease",
+        "610m to Aljunied MRT, city-fringe to CBD",
+        "Dual-key dual-income / multi-gen flexibility"
+      ],
+      "as_of": {
+        "price": 2290000,
+        "psf": 1883.22,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft freehold 3BR dual-key in D14 (Geylang/Aljunied, TOP 2025), 610m from EW9 Aljunied MRT, at $2.29M / $1,883 psf. Freshly completed freehold dual-key flexibility and city-fringe location are the draw, but $1,883 psf is a full new-completion price for D14, dual-key is an investor-niche format, and there is no URA resale data to validate appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "Just-TOP'd freehold in city-fringe D14 with dual-key dual-income flexibility and decent Aljunied MRT access has a clear rental thesis. But $1,883 psf reflects new-completion developer pricing (resale won't repeat the new-launch lift), the dual-key layout narrows the resale buyer pool to investors, and $2.29M is at the upper edge of the liquid band. No URA series to confirm a trend. Reasonable rental hold, unproven as a capital play.",
+        "red_flags": [
+          "$1,883 psf is new-completion pricing — limited resale re-rating headroom",
+          "Dual-key format narrows resale demand to investors",
+          "No URA appreciation/transaction data (TOP 2025, no resale history)",
+          "Geylang-fringe location stigma can cap broad buyer appeal"
+        ],
+        "catalysts": [
+          "Freehold, brand-new (TOP 2025) — low maintenance, full lease",
+          "610m to Aljunied MRT, city-fringe to CBD",
+          "Dual-key dual-income / multi-gen flexibility"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-3bed-dual-key-cheap-fh-top-2025-in-the-east-fr-19xxpsf-500013505",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

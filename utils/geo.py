@@ -112,32 +112,6 @@ def find_nearest_mrt(
     return None
 
 
-def find_nearby_mrt_stations(
-    latitude: float, longitude: float, max_distance: int = 1000
-) -> list[tuple[MRTStation, int]]:
-    """
-    Find all MRT stations within a given distance.
-
-    Args:
-        latitude: Property latitude
-        longitude: Property longitude
-        max_distance: Maximum distance (meters)
-
-    Returns:
-        List of (MRTStation, distance_in_meters) tuples, sorted by distance
-    """
-    stations = _load_mrt_stations()
-    nearby = []
-
-    for station in stations:
-        dist = haversine_distance(latitude, longitude, station.latitude, station.longitude)
-        if dist <= max_distance:
-            nearby.append((station, int(dist)))
-
-    nearby.sort(key=lambda x: x[1])
-    return nearby
-
-
 def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
     """
     Get MRT distance for a listing.
@@ -185,17 +159,6 @@ def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
             return station_name, int(min_match.group(1)) * 80
 
     return None
-
-
-def is_near_location(
-    lat1: float,
-    lon1: float,
-    lat2: float,
-    lon2: float,
-    max_distance: int = 500,
-) -> bool:
-    """Check if two points are within a given distance."""
-    return haversine_distance(lat1, lon1, lat2, lon2) <= max_distance
 
 
 # Key locations for tenant pool scoring

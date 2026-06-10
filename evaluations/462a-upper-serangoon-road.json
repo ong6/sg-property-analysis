@@ -1,0 +1,61 @@
+{
+  "condo": "462a upper Serangoon road",
+  "slug": "462a-upper-serangoon-road",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "9999-year leasehold (effectively freehold) 1,100sqft 2BR on Upper Serangoon Road, D19, 520m from Woodleigh MRT, at $1.4M / $1,273 PSF. The generous size, near-freehold tenure, low PSF and batch-high score_1000 (630) are appealing, but the listing has no project name, no built year and no URA data to verify.",
+      "rating_rationale": "Best score_1000 in the batch (630), and on paper attractive: 9999yr LH (effectively FH), a roomy 1,100sqft 2BR at a low $1,273 PSF and only $1.4M — a liquid, broadly-appealing price band, 520m to Woodleigh MRT. But there is no project name, no built year and zero URA appreciation/txn/median data, so I can't verify age, value or liquidity. The 1,100sqft for a 2BR also hints at an older walk-up/apartment. Strong indicators but unverifiable identity keep it at Neutral rather than Buy.",
+      "red_flags": [
+        "No project name, built year or URA data — identity and value unverifiable",
+        "1,100sqft for a 2BR suggests an older walk-up/apartment block (lower liquidity)",
+        "Address-style listing — likely small/boutique block"
+      ],
+      "catalysts": [
+        "9999-year (near-freehold) tenure at a low $1,273 PSF",
+        "520m to Woodleigh MRT (NE11); $1.4M liquid entry band",
+        "Bidadari/Woodleigh precinct growth"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1272.73,
+        "beds": 2,
+        "sqft": 1100.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "9999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "9999-year leasehold (effectively freehold) 1,100sqft 2BR on Upper Serangoon Road, D19, 520m from Woodleigh MRT, at $1.4M / $1,273 PSF. The generous size, near-freehold tenure, low PSF and batch-high score_1000 (630) are appealing, but the listing has no project name, no built year and no URA data to verify.",
+        "rating": "Neutral",
+        "rating_rationale": "Best score_1000 in the batch (630), and on paper attractive: 9999yr LH (effectively FH), a roomy 1,100sqft 2BR at a low $1,273 PSF and only $1.4M — a liquid, broadly-appealing price band, 520m to Woodleigh MRT. But there is no project name, no built year and zero URA appreciation/txn/median data, so I can't verify age, value or liquidity. The 1,100sqft for a 2BR also hints at an older walk-up/apartment. Strong indicators but unverifiable identity keep it at Neutral rather than Buy.",
+        "red_flags": [
+          "No project name, built year or URA data — identity and value unverifiable",
+          "1,100sqft for a 2BR suggests an older walk-up/apartment block (lower liquidity)",
+          "Address-style listing — likely small/boutique block"
+        ],
+        "catalysts": [
+          "9999-year (near-freehold) tenure at a low $1,273 PSF",
+          "520m to Woodleigh MRT (NE11); $1.4M liquid entry band",
+          "Bidadari/Woodleigh precinct growth"
+        ],
+        "rental_assessment": "Roomy 2BR near Woodleigh MRT at $1.4M should yield reasonably and attract a broad tenant pool if the block is sound.",
+        "appreciation_assessment": "No URA series; near-freehold tenure and low PSF are supportive, but unverifiable project identity caps confidence in any trajectory.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-462a-upper-serangoon-road-25512820",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

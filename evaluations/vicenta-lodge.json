@@ -1,0 +1,65 @@
+{
+  "condo": "Vicenta Lodge",
+  "slug": "vicenta-lodge",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 4BR (1,260sqft) at $1,492 PSF, 430m from Kembangan MRT in D14, at a reasonable $1.88M quantum. Genuinely appealing MRT-proximate freehold family unit, but built 1993 (~33yr) and backed by only a 2-txn URA series, so value vs the $1,244 median can't be reliably judged.",
+      "rating_rationale": "Attractive on paper — freehold, 430m to Kembangan MRT (EWL), liquid $1.88M quantum, and a usable 1,260sqft 4BR for families. But it asks $1,492 PSF vs a $1,244 median (a ~20% premium, though the 2-txn median is thin and unreliable), the building is ~33 years old, and there's no real appreciation series. Boutique-scale (Vicenta Lodge is a small development), which caps liquidity. The location strength offsets the age/premium to a balanced Neutral.",
+      "red_flags": [
+        "Built 1993 (~33yr) — aging building, higher maintenance",
+        "Asking PSF ~20% above the (thin 2-txn) URA median",
+        "Only 2 URA txns — boutique/illiquid, value unverifiable",
+        "Small-development scale limits buyer pool"
+      ],
+      "catalysts": [
+        "Freehold + 430m to Kembangan MRT (EWL)",
+        "$1.88M family-sized freehold in the liquid band",
+        "Established East-side residential pocket"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1492.06,
+        "beds": 4,
+        "sqft": 1260.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 4BR (1,260sqft) at $1,492 PSF, 430m from Kembangan MRT in D14, at a reasonable $1.88M quantum. Genuinely appealing MRT-proximate freehold family unit, but built 1993 (~33yr) and backed by only a 2-txn URA series, so value vs the $1,244 median can't be reliably judged.",
+        "rating": "Neutral",
+        "rating_rationale": "Attractive on paper — freehold, 430m to Kembangan MRT (EWL), liquid $1.88M quantum, and a usable 1,260sqft 4BR for families. But it asks $1,492 PSF vs a $1,244 median (a ~20% premium, though the 2-txn median is thin and unreliable), the building is ~33 years old, and there's no real appreciation series. Boutique-scale (Vicenta Lodge is a small development), which caps liquidity. The location strength offsets the age/premium to a balanced Neutral.",
+        "red_flags": [
+          "Built 1993 (~33yr) — aging building, higher maintenance",
+          "Asking PSF ~20% above the (thin 2-txn) URA median",
+          "Only 2 URA txns — boutique/illiquid, value unverifiable",
+          "Small-development scale limits buyer pool"
+        ],
+        "catalysts": [
+          "Freehold + 430m to Kembangan MRT (EWL)",
+          "$1.88M family-sized freehold in the liquid band",
+          "Established East-side residential pocket"
+        ],
+        "rental_assessment": "Freehold 4BR near Kembangan MRT rents to families; yield is moderate on the $1.88M base, demand stable in the established eastern belt.",
+        "appreciation_assessment": "No reliable trend (2 txns); an older small freehold near MRT should track market-level appreciation, no clear catalyst for outperformance.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "No usable URA series (2 txns); D14 freehold market baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vicenta-lodge-60114218",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

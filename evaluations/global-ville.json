@@ -1,0 +1,61 @@
+{
+  "condo": "Global Ville",
+  "slug": "global-ville",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,195 sqft 3BR at Global Ville (D12, Balestier/Mount Pleasant area), built 2000, at $2.0M / $1,674 psf. Freehold and a clean $2.0M quantum are positives, but the 4.8%/yr rate rests on only 11 txns and the listing is ~4% above the project median.",
+      "rating_rationale": "Freehold tenure, a $2.0M quantum right in the liquid band, and a usable 1,195 sqft 3BR layout are the strengths. But the 4.8%/yr appreciation is built on only 11 URA transactions — thin and unreliable — and the listing PSF is ~3.6% above the project's $1,615 median. Built 2000, so a 26-year-old development with older facilities. The Mount Pleasant MRT (TEL) at 870m is a modest convenience but the walk is 11 min. A balanced profile that lands at Neutral.",
+      "red_flags": [
+        "4.8%/yr rate on only 11 txns — unreliable",
+        "Listing ~3.6% above project median PSF",
+        "Built 2000 — ageing, dated facilities; 870m/11-min to MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure in central-fringe D12",
+        "Mount Pleasant MRT (Thomson-East Coast Line) within ~870m",
+        "Clean $2.0M quantum in the liquid band"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1673.64,
+        "beds": 3,
+        "sqft": 1195.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,195 sqft 3BR at Global Ville (D12, Balestier/Mount Pleasant area), built 2000, at $2.0M / $1,674 psf. Freehold and a clean $2.0M quantum are positives, but the 4.8%/yr rate rests on only 11 txns and the listing is ~4% above the project median.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold tenure, a $2.0M quantum right in the liquid band, and a usable 1,195 sqft 3BR layout are the strengths. But the 4.8%/yr appreciation is built on only 11 URA transactions — thin and unreliable — and the listing PSF is ~3.6% above the project's $1,615 median. Built 2000, so a 26-year-old development with older facilities. The Mount Pleasant MRT (TEL) at 870m is a modest convenience but the walk is 11 min. A balanced profile that lands at Neutral.",
+        "red_flags": [
+          "4.8%/yr rate on only 11 txns — unreliable",
+          "Listing ~3.6% above project median PSF",
+          "Built 2000 — ageing, dated facilities; 870m/11-min to MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure in central-fringe D12",
+          "Mount Pleasant MRT (Thomson-East Coast Line) within ~870m",
+          "Clean $2.0M quantum in the liquid band"
+        ],
+        "rental_assessment": "3BR family-let near Balestier/Novena gives moderate, steady demand; yield modest at $2.0M for an older block.",
+        "appreciation_assessment": "Rate unreliable on 11 txns. Freehold central-fringe land underpins value; TEL adds modest support, but no strong catalyst — expect market-rate growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-global-ville-60217890",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

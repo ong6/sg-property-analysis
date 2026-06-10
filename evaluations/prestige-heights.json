@@ -1,0 +1,59 @@
+{
+  "condo": "Prestige Heights",
+  "slug": "prestige-heights",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Bracket and sqft are inconsistent — a 1,119 sqft unit labelled '1BR' is a misclassification (this is a large multi-room unit), so the 'cheap' $1,162 PSF is an artefact of size, not value. Even so, D12 appreciation is weak at 2.1%/yr over 50 txns and the unit is a 20-minute walk from MRT.",
+      "rating_rationale": "URA shows just 2.08%/yr appreciation on a solid 50-txn series — well below the ~5.8% RCR baseline and a genuine drag. Listing PSF ($1,162) is far below the $1,775 district median, which on a 1,119 sqft unit reflects an oversized/older-stack discount, not a bargain. 1.67km / 20-min MRT walk is poor for both rental and resale. Score_1000 of 709 leans on the low absolute PSF, which the sizing distorts.",
+      "red_flags": [
+        "Bracket/size mismatch — 1,119 sqft is not a 1BR; sub-median PSF is a size artefact",
+        "Weak appreciation 2.08%/yr despite reliable 50-txn data",
+        "20-min (1.67km) walk to Toa Payoh MRT hurts liquidity and rental"
+      ],
+      "catalysts": [
+        "Freehold tenure in city-fringe D12",
+        "Below-median PSF leaves some cushion if priced for the real (larger) unit type"
+      ],
+      "as_of": {
+        "price": 1299999,
+        "psf": 1161.75,
+        "beds": 1,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Bracket and sqft are inconsistent — a 1,119 sqft unit labelled '1BR' is a misclassification (this is a large multi-room unit), so the 'cheap' $1,162 PSF is an artefact of size, not value. Even so, D12 appreciation is weak at 2.1%/yr over 50 txns and the unit is a 20-minute walk from MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "URA shows just 2.08%/yr appreciation on a solid 50-txn series — well below the ~5.8% RCR baseline and a genuine drag. Listing PSF ($1,162) is far below the $1,775 district median, which on a 1,119 sqft unit reflects an oversized/older-stack discount, not a bargain. 1.67km / 20-min MRT walk is poor for both rental and resale. Score_1000 of 709 leans on the low absolute PSF, which the sizing distorts.",
+        "red_flags": [
+          "Bracket/size mismatch — 1,119 sqft is not a 1BR; sub-median PSF is a size artefact",
+          "Weak appreciation 2.08%/yr despite reliable 50-txn data",
+          "20-min (1.67km) walk to Toa Payoh MRT hurts liquidity and rental"
+        ],
+        "catalysts": [
+          "Freehold tenure in city-fringe D12",
+          "Below-median PSF leaves some cushion if priced for the real (larger) unit type"
+        ],
+        "rental_assessment": "D12 has decent tenant flow near Balestier/Toa Payoh, but the long MRT walk limits premium; yield likely 3% or below given the high absolute quantum for the bracket.",
+        "appreciation_assessment": "Direct URA read of 2.08%/yr (50 txns) is the most reliable signal in this entry and it is poor — D12 here is appreciating at well under half the RCR baseline.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prestige-heights-21078017",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

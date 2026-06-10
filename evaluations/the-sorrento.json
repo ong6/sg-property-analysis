@@ -1,0 +1,119 @@
+{
+  "condo": "The Sorrento",
+  "slug": "the-sorrento",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An Allgreen freehold (2015) in West Coast D05 with a strong 722 score and a large 1,259 sqft 2BR asking only $1,493 PSF — a 16% discount to the $1,782 median. The catch: at 1,259 sqft this is an oversized 2BR (low efficiency) whose cheap PSF partly reflects size, and appreciation is a soft 1.28%/yr.",
+      "rating_rationale": "score_1000 722 (top of batch) and on_frontier=true flag good value, and $1,493 vs $1,782 median is -16%. But 1,259 sqft for a 2BR is unusually large — the low PSF is partly a size artefact, and the $1.88M absolute price for a 2BR is high. Allgreen is an established developer with ~95% profitable resales reported, supporting downside protection. Appreciation of 1.28%/yr on 26 txns is weak. Net: solid quality and value, capped growth — a balanced Neutral.",
+      "red_flags": [
+        "oversized 1,259 sqft 2BR — cheap PSF partly reflects size, not bargain",
+        "1.28%/yr appreciation on a thin 26-txn series",
+        "$1.88M is a high absolute price for a 2BR",
+        "no MRT within easy walk per dossier"
+      ],
+      "catalysts": [
+        "established Allgreen freehold with strong resale profitability track record",
+        "score 722 / on value frontier",
+        "West Coast D05 near One-North / NUS rental demand"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1493.25,
+        "beds": 2,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An Allgreen freehold (2015) in West Coast D05 with a strong 722 score and a large 1,259 sqft 2BR asking only $1,493 PSF — a 16% discount to the $1,782 median. The catch: at 1,259 sqft this is an oversized 2BR (low efficiency) whose cheap PSF partly reflects size, and appreciation is a soft 1.28%/yr.",
+        "rating": "Neutral",
+        "rating_rationale": "score_1000 722 (top of batch) and on_frontier=true flag good value, and $1,493 vs $1,782 median is -16%. But 1,259 sqft for a 2BR is unusually large — the low PSF is partly a size artefact, and the $1.88M absolute price for a 2BR is high. Allgreen is an established developer with ~95% profitable resales reported, supporting downside protection. Appreciation of 1.28%/yr on 26 txns is weak. Net: solid quality and value, capped growth — a balanced Neutral.",
+        "red_flags": [
+          "oversized 1,259 sqft 2BR — cheap PSF partly reflects size, not bargain",
+          "1.28%/yr appreciation on a thin 26-txn series",
+          "$1.88M is a high absolute price for a 2BR",
+          "no MRT within easy walk per dossier"
+        ],
+        "catalysts": [
+          "established Allgreen freehold with strong resale profitability track record",
+          "score 722 / on value frontier",
+          "West Coast D05 near One-North / NUS rental demand"
+        ],
+        "rental_assessment": "West Coast catchment (NUS, science park, One-North) gives steady tenant flow; the generous size appeals to families willing to rent space.",
+        "appreciation_assessment": "1.28%/yr is modest; the discount to median and Allgreen quality provide a floor more than an upside engine.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sorrento-60160516",
+        "review_file": "cov_batch_22.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2015 DUPLEX PENTHOUSE (2-bed + study + bomb shelter, corner) in D05 West Coast by Allgreen. The algo's -18.1% age-adj cheapness and -15.1% cohort discount are largely the structural PSF discount that penthouses/duplexes carry, not a clean district bargain.",
+      "rating_rationale": "Asking $1.88M at $1,493 psf for a 1,259 sqft freehold duplex penthouse. Web-verified: this is a 2-bed+study corner duplex (the bedroom_sqft_mismatch flag = duplex layout, not a data error). Project 12-month transactions average ~$1,702 psf (range $1,306-$1,864), so the asking sits ~12% below the project pool - but penthouse/duplex stock structurally trades at a lower PSF than stacked typical units, so this is the expected large-format discount rather than evidence of underpricing. The -15.1% psf_premium_vs_cohort rests on just 3 cohort txns - thin and unreliable. D05 is RCR-ish/OCR-fringe with reasonable ~+3.5% realized forward, Allgreen is a credible developer, and West Coast benefits from the broader Greater Southern Waterfront / one-north spillover narrative. Quality FH penthouse but at a $1.88M quantum with the usual penthouse liquidity/holding-cost drag - a fair-value hold, not an obvious value buy.",
+      "red_flags": [
+        "psf_premium_vs_cohort (-15.1%) rests on only 3 cohort transactions - statistically thin",
+        "Duplex penthouse = lower liquidity and longer time-to-sell on a 5-7yr exit",
+        "Low 5yr URA CAGR (+1.28%) - muted recent capital performance",
+        "$1.88M quantum is high for a 2-bedroom configuration"
+      ],
+      "catalysts": [
+        "Freehold corner duplex penthouse by reputable developer (Allgreen)",
+        "West Coast / one-north & Greater Southern Waterfront spillover narrative",
+        "High historic resale profitability for the project (~95% profitable resales per URA-based data)"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1493.25,
+        "beds": 2,
+        "sqft": 1259
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 2015 DUPLEX PENTHOUSE (2-bed + study + bomb shelter, corner) in D05 West Coast by Allgreen. The algo's -18.1% age-adj cheapness and -15.1% cohort discount are largely the structural PSF discount that penthouses/duplexes carry, not a clean district bargain.",
+        "rating_rationale": "Asking $1.88M at $1,493 psf for a 1,259 sqft freehold duplex penthouse. Web-verified: this is a 2-bed+study corner duplex (the bedroom_sqft_mismatch flag = duplex layout, not a data error). Project 12-month transactions average ~$1,702 psf (range $1,306-$1,864), so the asking sits ~12% below the project pool - but penthouse/duplex stock structurally trades at a lower PSF than stacked typical units, so this is the expected large-format discount rather than evidence of underpricing. The -15.1% psf_premium_vs_cohort rests on just 3 cohort txns - thin and unreliable. D05 is RCR-ish/OCR-fringe with reasonable ~+3.5% realized forward, Allgreen is a credible developer, and West Coast benefits from the broader Greater Southern Waterfront / one-north spillover narrative. Quality FH penthouse but at a $1.88M quantum with the usual penthouse liquidity/holding-cost drag - a fair-value hold, not an obvious value buy.",
+        "red_flags": [
+          "psf_premium_vs_cohort (-15.1%) rests on only 3 cohort transactions - statistically thin",
+          "Duplex penthouse = lower liquidity and longer time-to-sell on a 5-7yr exit",
+          "Low 5yr URA CAGR (+1.28%) - muted recent capital performance",
+          "$1.88M quantum is high for a 2-bedroom configuration"
+        ],
+        "catalysts": [
+          "Freehold corner duplex penthouse by reputable developer (Allgreen)",
+          "West Coast / one-north & Greater Southern Waterfront spillover narrative",
+          "High historic resale profitability for the project (~95% profitable resales per URA-based data)"
+        ],
+        "appreciation_assessment": "5yr URA CAGR is low (+1.28% on 26 txns) - a solid sample, so the muted-growth read is credible; trailing appreciation in any case carries ~0 forward predictive power.",
+        "rental_assessment": "Project rents ~$3,400-$5,900/month; a large duplex would sit at the top end. At $1.88M even ~$5,000/month is only ~3.2% gross - capital-play unit, not a yield play."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sorrento-60160516",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -116,6 +116,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500085889",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Not actually cheap — the asking PSF is at/above recent same-project transactions; the algo's big age-adjusted discount is an age artifact, not a real bargain.",
+      "rating_rationale": "Rio Vista's last-12-month range is 1050-1293 psf (avg ~1200), so the 1220 psf asking is at-to-slightly-above the recent average, not a discount. This is confirmed by the algo's own psf_premium_vs_cohort of +1.1% — i.e. it is priced in line with its same-size cohort (26 txns). The eye-catching -16.8% age_adj_premium is purely a function of the 2004 build being compared to younger district stock (age-relative math at ~$50/psf/yr); it does not translate into cheap-vs-real-comps, which is the only robust forward signal under v3.4. It is OCR D19 with a large 1055 sqft 2BR layout near Hougang (shuttle to MRT), which is fine, but with no genuine entry discount, ~78yr lease (99yr from 2001), a 2004 vintage and no dated catalyst, there is no edge — Neutral. The $1.288m quantum is also full for a 2004 mass-market 2BR.",
+      "red_flags": [
+        "Asking 1220 psf is at/above recent avg ~1200 psf and cohort premium is +1.1% — no real discount despite the large age-adjusted figure",
+        "very_old_property (2004) with ~78yr lease remaining and aging facilities",
+        "Full $1.288m quantum for a mass-market 2BR with no catalyst limits exit liquidity"
+      ],
+      "catalysts": [
+        "Large efficient 1055 sqft 2BR layout appeals to right-sizers / small families",
+        "OCR D19 region tailwind, though no project-specific re-rating trigger"
+      ],
+      "as_of": {
+        "price": 1288000,
+        "psf": 1220.85,
+        "beds": 2,
+        "sqft": 1055
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Not actually cheap — the asking PSF is at/above recent same-project transactions; the algo's big age-adjusted discount is an age artifact, not a real bargain.",
+        "rating_rationale": "Rio Vista's last-12-month range is 1050-1293 psf (avg ~1200), so the 1220 psf asking is at-to-slightly-above the recent average, not a discount. This is confirmed by the algo's own psf_premium_vs_cohort of +1.1% — i.e. it is priced in line with its same-size cohort (26 txns). The eye-catching -16.8% age_adj_premium is purely a function of the 2004 build being compared to younger district stock (age-relative math at ~$50/psf/yr); it does not translate into cheap-vs-real-comps, which is the only robust forward signal under v3.4. It is OCR D19 with a large 1055 sqft 2BR layout near Hougang (shuttle to MRT), which is fine, but with no genuine entry discount, ~78yr lease (99yr from 2001), a 2004 vintage and no dated catalyst, there is no edge — Neutral. The $1.288m quantum is also full for a 2004 mass-market 2BR.",
+        "red_flags": [
+          "Asking 1220 psf is at/above recent avg ~1200 psf and cohort premium is +1.1% — no real discount despite the large age-adjusted figure",
+          "very_old_property (2004) with ~78yr lease remaining and aging facilities",
+          "Full $1.288m quantum for a mass-market 2BR with no catalyst limits exit liquidity"
+        ],
+        "catalysts": [
+          "Large efficient 1055 sqft 2BR layout appeals to right-sizers / small families",
+          "OCR D19 region tailwind, though no project-specific re-rating trigger"
+        ],
+        "rental_assessment": "Spacious 1055 sqft 2BR with shuttle to Hougang MRT rents to families; yield is ordinary-OCR and the full asking price compresses it.",
+        "appreciation_assessment": "Trailing 6.46% CAGR (125 txns) is context only; with the unit priced in line with comps and no catalyst, no forward outperformance is justified under v3.4."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rio-vista-500074517",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

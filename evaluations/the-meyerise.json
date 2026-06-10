@@ -1,0 +1,61 @@
+{
+  "condo": "The Meyerise",
+  "slug": "the-meyerise",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold compact 2BR at The Meyerise, D15 Meyer Road, $2.488M at a very high $2,817 PSF (roughly at the $2,795 URA median). Lowest score in the batch (439): you're paying top-of-market PSF for an 883sqft 2BR with a $2.5M ticket, and despite a respectable 5.5%/yr on 48 txns the value case is weak.",
+      "rating_rationale": "$2,817 PSF is near the steepest end of D15 pricing and the $2.488M ticket for an 883sqft 2BR is expensive — buyer pool thins sharply above $2.4M for a two-bedder. 860m to Tanjong Katong TEL is decent but not prime. The 5.52%/yr appreciation (48 txns) is fine but already priced in; no discount, no near catalyst to justify entering at market-top PSF. Score 439 reflects poor risk-adjusted value. Better D15 entries exist.",
+      "red_flags": [
+        "Very high $2,817 PSF with no discount to median — paying full market top",
+        "$2.488M for an 883sqft 2BR — thin buyer pool above $2.4M",
+        "Lowest technical score in batch (439)"
+      ],
+      "catalysts": [
+        "Meyer Road prestige address, freehold",
+        "860m to Tanjong Katong (Thomson-East Coast Line)"
+      ],
+      "as_of": {
+        "price": 2488000,
+        "psf": 2817.67,
+        "beds": 2,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold compact 2BR at The Meyerise, D15 Meyer Road, $2.488M at a very high $2,817 PSF (roughly at the $2,795 URA median). Lowest score in the batch (439): you're paying top-of-market PSF for an 883sqft 2BR with a $2.5M ticket, and despite a respectable 5.5%/yr on 48 txns the value case is weak.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,817 PSF is near the steepest end of D15 pricing and the $2.488M ticket for an 883sqft 2BR is expensive — buyer pool thins sharply above $2.4M for a two-bedder. 860m to Tanjong Katong TEL is decent but not prime. The 5.52%/yr appreciation (48 txns) is fine but already priced in; no discount, no near catalyst to justify entering at market-top PSF. Score 439 reflects poor risk-adjusted value. Better D15 entries exist.",
+        "red_flags": [
+          "Very high $2,817 PSF with no discount to median — paying full market top",
+          "$2.488M for an 883sqft 2BR — thin buyer pool above $2.4M",
+          "Lowest technical score in batch (439)"
+        ],
+        "catalysts": [
+          "Meyer Road prestige address, freehold",
+          "860m to Tanjong Katong (Thomson-East Coast Line)"
+        ],
+        "rental_assessment": "Prestige Meyer location rents to expats, but yield is compressed at this PSF; gross yield likely sub-3%.",
+        "appreciation_assessment": "5.5%/yr is in line with D15 but already reflected in the rich PSF; limited margin of safety.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA 48-txn series, trimmed for rich entry PSF"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-meyerise-500130702",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

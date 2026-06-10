@@ -1,0 +1,119 @@
+{
+  "condo": "Watercolours",
+  "slug": "watercolours",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 99LH 4BR EC (Watercolours, D18 Pasir Ris) at $1.97M / $1,188 psf for a large 1,658 sqft layout. The sub-$2M quantum and a strong arena record (257-157) help, but no URA data, no listed MRT, and a family-only 4BR format in OCR Pasir Ris make it a transit-dependent, niche-exit Neutral.",
+      "rating_rationale": "Watercolours is a Pasir Ris EC; $1.97M / $1,188 psf for 1,658 sqft is a fair OCR family quantum just under the $2M line. The CRL/DTL-extension and Pasir Ris precinct upgrades (CP1 interchange, Pasir Ris Mall) are real D18 catalysts. But there is no URA appreciation/transaction data to validate price or trend, no MRT proximity listed (Pasir Ris fringe, transit-dependent), and a 4BR is a family-only resale pool. The decent arena Elo (1,341) reflects the value quantum but the data gaps and niche format hold it to Neutral.",
+      "red_flags": [
+        "No URA appreciation/transaction data — unverified pricing",
+        "No MRT proximity listed — Pasir Ris fringe, transit-dependent",
+        "4BR family-only resale pool",
+        "99-year leasehold EC (2016)"
+      ],
+      "catalysts": [
+        "CRL interchange at Pasir Ris (~2030) + Pasir Ris Mall integrated hub re-rating the precinct",
+        "Sub-$2M for a large 1,658 sqft 4BR — value family quantum",
+        "Downtown Line extension and Tampines Regional Centre nearby"
+      ],
+      "as_of": {
+        "price": 1968888,
+        "psf": 1187.51,
+        "beds": 4,
+        "sqft": 1658.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99LH 4BR EC (Watercolours, D18 Pasir Ris) at $1.97M / $1,188 psf for a large 1,658 sqft layout. The sub-$2M quantum and a strong arena record (257-157) help, but no URA data, no listed MRT, and a family-only 4BR format in OCR Pasir Ris make it a transit-dependent, niche-exit Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Watercolours is a Pasir Ris EC; $1.97M / $1,188 psf for 1,658 sqft is a fair OCR family quantum just under the $2M line. The CRL/DTL-extension and Pasir Ris precinct upgrades (CP1 interchange, Pasir Ris Mall) are real D18 catalysts. But there is no URA appreciation/transaction data to validate price or trend, no MRT proximity listed (Pasir Ris fringe, transit-dependent), and a 4BR is a family-only resale pool. The decent arena Elo (1,341) reflects the value quantum but the data gaps and niche format hold it to Neutral.",
+        "red_flags": [
+          "No URA appreciation/transaction data — unverified pricing",
+          "No MRT proximity listed — Pasir Ris fringe, transit-dependent",
+          "4BR family-only resale pool",
+          "99-year leasehold EC (2016)"
+        ],
+        "catalysts": [
+          "CRL interchange at Pasir Ris (~2030) + Pasir Ris Mall integrated hub re-rating the precinct",
+          "Sub-$2M for a large 1,658 sqft 4BR — value family quantum",
+          "Downtown Line extension and Tampines Regional Centre nearby"
+        ],
+        "rental_assessment": "Pasir Ris family-rental demand is moderate; large 4BR yields ~3% and the tenant pool for big units is shallow.",
+        "appreciation_assessment": "No project data; D18 OCR baseline ~3.7% with CRL upside if it materialises. The oversized 4BR format is the weakest appreciator in the estate.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-watercolours-500138635",
+        "review_file": "cov_batch_21.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A Pasir Ris ex-EC priced at market with real privatization and Cross Island Line catalysts, but the 'very_low_psf' cheapness flag is a false positive driven by EC pricing structure.",
+      "rating_rationale": "Asking $1,235 psf for a 915 sqft 2-bed is essentially AT the project's recent-transaction average of ~$1,229 psf (range $1,019-1,370 in last 12 months) - not cheap. The very_low_psf flag and -19.7% age-adjusted read are misleading: this is an Executive Condominium, which structurally trades at a lower PSF than private condos, and the appreciation figure is a regional_baseline placeholder (appreciation_txns=0, psf cohort null), so there is no real project-specific value or trend evidence in the dossier. The genuine positives are catalysts: the EC reaches full privatization around its 10-year mark (a known re-rating event) and the Cross Island Line with a Pasir Ris EWL interchange completes ~2030, both in the OCR region that posted the best realized forward returns. But entering at market PSF with no value undercut, plus reviews of narrow carpark access and water seepage, makes this a balanced hold rather than a buy - an honest Neutral.",
+      "red_flags": [
+        "very_low_psf flag is a false positive - ECs structurally price below private condos; asking is at the ~$1,229 psf market average, not cheap",
+        "Appreciation = regional_baseline with 0 transactions and null psf cohort - no real project value/trend data behind the score",
+        "Reviews cite narrow carpark turns/entry and water seepage in some units",
+        "99-yr leasehold from 2012 - lease decay ongoing"
+      ],
+      "catalysts": [
+        "EC full privatization around the 10-year mark (~2026) - a recognized value re-rating event opening the buyer pool to foreigners/companies",
+        "Cross Island Line (CRL1) ~2030 with Pasir Ris EWL interchange - dated transit catalyst",
+        "D18 Pasir Ris sits in the OCR region with the strongest realized forward appreciation (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 1130000,
+        "psf": 1234.97,
+        "beds": 2,
+        "sqft": 915
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A Pasir Ris ex-EC priced at market with real privatization and Cross Island Line catalysts, but the 'very_low_psf' cheapness flag is a false positive driven by EC pricing structure.",
+        "rating_rationale": "Asking $1,235 psf for a 915 sqft 2-bed is essentially AT the project's recent-transaction average of ~$1,229 psf (range $1,019-1,370 in last 12 months) - not cheap. The very_low_psf flag and -19.7% age-adjusted read are misleading: this is an Executive Condominium, which structurally trades at a lower PSF than private condos, and the appreciation figure is a regional_baseline placeholder (appreciation_txns=0, psf cohort null), so there is no real project-specific value or trend evidence in the dossier. The genuine positives are catalysts: the EC reaches full privatization around its 10-year mark (a known re-rating event) and the Cross Island Line with a Pasir Ris EWL interchange completes ~2030, both in the OCR region that posted the best realized forward returns. But entering at market PSF with no value undercut, plus reviews of narrow carpark access and water seepage, makes this a balanced hold rather than a buy - an honest Neutral.",
+        "red_flags": [
+          "very_low_psf flag is a false positive - ECs structurally price below private condos; asking is at the ~$1,229 psf market average, not cheap",
+          "Appreciation = regional_baseline with 0 transactions and null psf cohort - no real project value/trend data behind the score",
+          "Reviews cite narrow carpark turns/entry and water seepage in some units",
+          "99-yr leasehold from 2012 - lease decay ongoing"
+        ],
+        "catalysts": [
+          "EC full privatization around the 10-year mark (~2026) - a recognized value re-rating event opening the buyer pool to foreigners/companies",
+          "Cross Island Line (CRL1) ~2030 with Pasir Ris EWL interchange - dated transit catalyst",
+          "D18 Pasir Ris sits in the OCR region with the strongest realized forward appreciation (~+4.0%)"
+        ],
+        "appreciation_assessment": "No project-specific appreciation data (regional_baseline 4.0%, 0 txns); rely on the dated privatization + CRL catalysts rather than any trailing trend.",
+        "rental_assessment": "Quoted current yield ~3.8%; large family-friendly EC layout near future CRL should hold steady rental demand in Pasir Ris."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-watercolours-500054330",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

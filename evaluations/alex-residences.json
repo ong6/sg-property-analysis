@@ -1,0 +1,113 @@
+{
+  "condo": "Alex Residences",
+  "slug": "alex-residences",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 474 sqft 1BR at Alex Residences (SC Global, D03 Redhill, 99LH built 2017), integrated with / 270m from EW18 Redhill MRT, at $960k / $2,025 psf — a striking ~13% below the $2,330 median on a deep 111-txn series. High-quality developer, doorstep MRT, RCR D03 with GSW catalysts, and a sub-$1M quantum make this one of the stronger 1BR entries.",
+      "rating_rationale": "PSF ~13% under the $2,330 median on 111 transactions is a real, well-evidenced value gap; pair that with SC Global build quality, 270m to Redhill MRT, RCR D03 (GSW/Alexandra rejuvenation), and a deep-pool sub-$1M quantum, and the risk/reward is favorable. The 3.79%/yr realized CAGR is moderate but measured over a credible series, and the discount-to-median gives mean-reversion headroom. Excellent rental location near CBD/One-North access.",
+      "red_flags": [
+        "99LH — lease decay over a long hold (~9 years elapsed)",
+        "3.79%/yr appreciation is moderate, not exceptional",
+        "1BR niche owner-occupier demand"
+      ],
+      "catalysts": [
+        "PSF ~13% below district median on a deep 111-txn base — clear value",
+        "SC Global build quality + 270m to Redhill MRT",
+        "RCR D03 — Greater Southern Waterfront, Alexandra corridor rejuvenation"
+      ],
+      "as_of": {
+        "price": 960000,
+        "psf": 2025.32,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 474 sqft 1BR at Alex Residences (SC Global, D03 Redhill, 99LH built 2017), integrated with / 270m from EW18 Redhill MRT, at $960k / $2,025 psf — a striking ~13% below the $2,330 median on a deep 111-txn series. High-quality developer, doorstep MRT, RCR D03 with GSW catalysts, and a sub-$1M quantum make this one of the stronger 1BR entries.",
+        "rating": "Buy",
+        "rating_rationale": "PSF ~13% under the $2,330 median on 111 transactions is a real, well-evidenced value gap; pair that with SC Global build quality, 270m to Redhill MRT, RCR D03 (GSW/Alexandra rejuvenation), and a deep-pool sub-$1M quantum, and the risk/reward is favorable. The 3.79%/yr realized CAGR is moderate but measured over a credible series, and the discount-to-median gives mean-reversion headroom. Excellent rental location near CBD/One-North access.",
+        "red_flags": [
+          "99LH — lease decay over a long hold (~9 years elapsed)",
+          "3.79%/yr appreciation is moderate, not exceptional",
+          "1BR niche owner-occupier demand"
+        ],
+        "catalysts": [
+          "PSF ~13% below district median on a deep 111-txn base — clear value",
+          "SC Global build quality + 270m to Redhill MRT",
+          "RCR D03 — Greater Southern Waterfront, Alexandra corridor rejuvenation"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alex-residences-60017929",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 474 sqft 1BR at $2,025 psf sits ~10% below Alex Residences' verified 2025 resale mean (~$2,243 psf, 26 deals), in a Redhill-MRT-fronting RCR project with deep transaction support — a real, web-confirmed entry discount.",
+      "rating_rationale": "At $960k / 474 sqft ($2,025 psf) this is below the project's 2025 mean of ~$2,243 psf (26 resale transactions) and below the trailing 6-12 month average ~$2,240-$2,257 psf. Because it is the smallest unit type, the relevant benchmark is its own cohort, and the algo backs the cheapness with real depth — appreciation_txns=111 and psf_cohort_txns=6 — so unlike Radix/77 this discount is not a thin-data quirk. D3 (RCR) carries a respectable forward realized drift (~+3.5%, well above CCR's ~+0.7%), and the unit is directly above/next to Redhill MRT (EWL) with the Greater Southern Waterfront and Alexandra rejuvenation as longer-dated tailwinds. Small 1BR is the most liquid, most rentable format. Trailing 3.79% CAGR is treated as story only. Verified cheap vs real recent comps plus a strong location supports Buy; capped at medium confidence because the discount is moderate (~10%) and the model explains <10% of forward variance.",
+      "red_flags": [
+        "99-yr lease from ~2014; lease decay over a 5-7yr hold is a mild drag",
+        "1BR-heavy stack (87 of 429 units) means competing supply on resale/rental",
+        "Discount is moderate (~10%), not a deep bargain"
+      ],
+      "catalysts": [
+        "Directly beside Redhill MRT (EWL) — strong rental and resale liquidity",
+        "Greater Southern Waterfront / Alexandra-Redhill rejuvenation corridor",
+        "Smallest, most liquid unit type — easy exit and steady tenant demand"
+      ],
+      "as_of": {
+        "price": 960000,
+        "psf": 2025.32,
+        "beds": 1,
+        "sqft": 474
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 474 sqft 1BR at $2,025 psf sits ~10% below Alex Residences' verified 2025 resale mean (~$2,243 psf, 26 deals), in a Redhill-MRT-fronting RCR project with deep transaction support — a real, web-confirmed entry discount.",
+        "rating_rationale": "At $960k / 474 sqft ($2,025 psf) this is below the project's 2025 mean of ~$2,243 psf (26 resale transactions) and below the trailing 6-12 month average ~$2,240-$2,257 psf. Because it is the smallest unit type, the relevant benchmark is its own cohort, and the algo backs the cheapness with real depth — appreciation_txns=111 and psf_cohort_txns=6 — so unlike Radix/77 this discount is not a thin-data quirk. D3 (RCR) carries a respectable forward realized drift (~+3.5%, well above CCR's ~+0.7%), and the unit is directly above/next to Redhill MRT (EWL) with the Greater Southern Waterfront and Alexandra rejuvenation as longer-dated tailwinds. Small 1BR is the most liquid, most rentable format. Trailing 3.79% CAGR is treated as story only. Verified cheap vs real recent comps plus a strong location supports Buy; capped at medium confidence because the discount is moderate (~10%) and the model explains <10% of forward variance.",
+        "red_flags": [
+          "99-yr lease from ~2014; lease decay over a 5-7yr hold is a mild drag",
+          "1BR-heavy stack (87 of 429 units) means competing supply on resale/rental",
+          "Discount is moderate (~10%), not a deep bargain"
+        ],
+        "catalysts": [
+          "Directly beside Redhill MRT (EWL) — strong rental and resale liquidity",
+          "Greater Southern Waterfront / Alexandra-Redhill rejuvenation corridor",
+          "Smallest, most liquid unit type — easy exit and steady tenant demand"
+        ],
+        "appreciation_assessment": "Trailing 3.79% CAGR (111 txns) is credible but not extrapolated; forward case rests on RCR drift plus a verified entry discount to the 2025 mean, which is the robust value signal favored by the backtest.",
+        "rental_assessment": "474 sqft 1BR next to Redhill MRT is a prime rental product; at $960k entry the yield should be near the top of the project range, making this a solid yield-plus-liquidity hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alex-residences-60017929",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

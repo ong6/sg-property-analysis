@@ -1,0 +1,115 @@
+{
+  "condo": "77 @ East Coast",
+  "slug": "77-east-coast",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Freehold 4BR (1346sqft) in East Coast D15 at $1,486 PSF — a genuine discount to the project's $1,918 URA median PSF and well within the $1.8M-2.5M liquid band. Strong fundamentals: top-batch score 715, on-frontier, deep D15 buyer pool, Siglap TE MRT walkable.",
+      "rating_rationale": "$2.00M for a freehold 1346sqft 4BR works out to $1,486 PSF vs URA median $1,918 — a ~23% discount, partly because it is a larger/efficient family layout but still attractive value for FH in D15. Score 715 / Elo 1457 with a strong 261-111 record and on-frontier. URA rate 2.0%/yr is depressed by new-launch bias flag (built 2022, only 23 txns); the real D15 freehold trajectory is better. Thomson-East Coast Line (Siglap 680m) plus East Coast lifestyle support both rental and resale.",
+      "red_flags": [
+        "URA rate carries new-launch bias (built 2022, 23 txns) — treat 2.0% as unreliable",
+        "4BR family unit = narrower (though deep in D15) buyer pool than 2-3BR"
+      ],
+      "catalysts": [
+        "TEL Siglap MRT (operational, 680m)",
+        "East Coast / Bayshore precinct lifestyle and continued D15 demand",
+        "Freehold tenure premium in a leasehold-heavy resale market"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1485.88,
+        "beds": 4,
+        "sqft": 1346.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 4BR (1346sqft) in East Coast D15 at $1,486 PSF — a genuine discount to the project's $1,918 URA median PSF and well within the $1.8M-2.5M liquid band. Strong fundamentals: top-batch score 715, on-frontier, deep D15 buyer pool, Siglap TE MRT walkable.",
+        "rating": "Buy",
+        "rating_rationale": "$2.00M for a freehold 1346sqft 4BR works out to $1,486 PSF vs URA median $1,918 — a ~23% discount, partly because it is a larger/efficient family layout but still attractive value for FH in D15. Score 715 / Elo 1457 with a strong 261-111 record and on-frontier. URA rate 2.0%/yr is depressed by new-launch bias flag (built 2022, only 23 txns); the real D15 freehold trajectory is better. Thomson-East Coast Line (Siglap 680m) plus East Coast lifestyle support both rental and resale.",
+        "red_flags": [
+          "URA rate carries new-launch bias (built 2022, 23 txns) — treat 2.0% as unreliable",
+          "4BR family unit = narrower (though deep in D15) buyer pool than 2-3BR"
+        ],
+        "catalysts": [
+          "TEL Siglap MRT (operational, 680m)",
+          "East Coast / Bayshore precinct lifestyle and continued D15 demand",
+          "Freehold tenure premium in a leasehold-heavy resale market"
+        ],
+        "rental_assessment": "East Coast is a strong rental district; 4BR appeals to families and expats, solid demand near TEL and beach.",
+        "appreciation_assessment": "FH D15 at a clear discount to median PSF gives margin of safety; expect mid-single-digit appreciation once the new-launch premium normalises.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.8,
+        "appreciation_rate_source": "D15 freehold RCR prior, discounting the new-launch-biased 2.0% URA figure"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-77-east-coast-500062318",
+        "review_file": "cov_batch_26.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The algo's bargain is a data artifact: the same listing URL is now marketed at $2.39M ($1,776 psf), not the $2.0M / $1,486 psf in the dossier, so the -37.4% age-adj 'cheapness' largely evaporates once the live price is used.",
+      "rating_rationale": "The dossier's $2.0M / 1,346 sqft ($1,485.88 psf) does not match the live listing, which is now $2,390,000 ($1,776 psf) for this exact 1,346 sqft penthouse corner unit. Project recent resale runs ~$1,857-$2,409 psf (avg ~$1,962), so at the corrected $1,776 psf it is still somewhat below pool average — but that pool is dominated by small high-psf units, while this is a large penthouse that structurally trades lower psf; psf_cohort_txns=2 makes the -16.2% cohort discount unreliable. Once the stale price is corrected, the score-765 'deep value' thesis collapses, and per v3.4 priors a freehold tag is not a forward edge. With the bargain illusory and the contender being an atypical penthouse on a 2-transaction cohort, this is an Avoid rather than a buy.",
+      "red_flags": [
+        "Stale/incorrect dossier price: live asking is $2.39M ($1,776 psf), ~20% above the $2.0M used to score it",
+        "psf_cohort_txns=2 — cohort-discount signal unreliable",
+        "Penthouse corner unit (atypical layout) — psf not comparable to the broader pool",
+        "Once repriced, the deep-value rationale that earned score 765 no longer holds"
+      ],
+      "catalysts": [
+        "Future Siglap TEL MRT (~490m) is a genuine location catalyst for the project",
+        "Freehold new-ish (2022) build in established East Coast enclave"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1485.88,
+        "beds": 4,
+        "sqft": 1346
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The algo's bargain is a data artifact: the same listing URL is now marketed at $2.39M ($1,776 psf), not the $2.0M / $1,486 psf in the dossier, so the -37.4% age-adj 'cheapness' largely evaporates once the live price is used.",
+        "rating_rationale": "The dossier's $2.0M / 1,346 sqft ($1,485.88 psf) does not match the live listing, which is now $2,390,000 ($1,776 psf) for this exact 1,346 sqft penthouse corner unit. Project recent resale runs ~$1,857-$2,409 psf (avg ~$1,962), so at the corrected $1,776 psf it is still somewhat below pool average — but that pool is dominated by small high-psf units, while this is a large penthouse that structurally trades lower psf; psf_cohort_txns=2 makes the -16.2% cohort discount unreliable. Once the stale price is corrected, the score-765 'deep value' thesis collapses, and per v3.4 priors a freehold tag is not a forward edge. With the bargain illusory and the contender being an atypical penthouse on a 2-transaction cohort, this is an Avoid rather than a buy.",
+        "red_flags": [
+          "Stale/incorrect dossier price: live asking is $2.39M ($1,776 psf), ~20% above the $2.0M used to score it",
+          "psf_cohort_txns=2 — cohort-discount signal unreliable",
+          "Penthouse corner unit (atypical layout) — psf not comparable to the broader pool",
+          "Once repriced, the deep-value rationale that earned score 765 no longer holds"
+        ],
+        "catalysts": [
+          "Future Siglap TEL MRT (~490m) is a genuine location catalyst for the project",
+          "Freehold new-ish (2022) build in established East Coast enclave"
+        ],
+        "appreciation_assessment": "Trailing 2.02% CAGR (23 txns) is low and forward-irrelevant; the project's real story is the Siglap MRT catalyst, but that is already partly priced and does not rescue a unit bought at $1,776 psf as a 'discount'.",
+        "rental_assessment": "Project yield ~3.2%; a large penthouse at $2.39M will yield below that and rent is thin for 4BR penthouses. Not a yield case."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-77-east-coast-500062318",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

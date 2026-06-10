@@ -1,0 +1,61 @@
+{
+  "condo": "WhiteHaven",
+  "slug": "whitehaven",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact 839 sqft \"3BR\" freehold in D05 Pasir Panjang/West Coast (WhiteHaven, TOP 2017) at $1.5M / $1,788 PSF. Asking PSF is slightly below the $1,798 median, but a reliable 27-transaction URA base shows weak 1.02%/yr appreciation — the development has barely moved.",
+      "rating_rationale": "WhiteHaven is fairly priced versus its block (asking $1,788 PSF just under the $1,798 URA median) and the $1.5M quantum is accessible and liquid. But the standout fact is the soft 1.02%/yr appreciation on a solid 27-transaction base — this freehold has materially lagged the RCR norm, a genuine red flag for capital growth. An 839 sqft 3BR is a squeezed shoebox-3BR layout that limits the family-buyer pool, and the 990m MRT walk is unremarkable. West Coast/One-North rental support and freehold tenure keep it Neutral rather than Avoid, but appreciation prospects look subpar.",
+      "red_flags": [
+        "Weak 1.02%/yr URA appreciation on a reliable 27-txn base — has lagged the market",
+        "Compact 839 sqft for a 3BR — squeezed layout, narrower buyer pool",
+        "990m to Haw Par Villa MRT",
+        "Below-average technical score (468) and sub-.500 arena record (241-323)"
+      ],
+      "catalysts": [
+        "Freehold tenure at an accessible $1.5M quantum",
+        "D05 West Coast / One-North / NUS rental catchment",
+        "Priced at/below its own URA median PSF"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1787.84,
+        "beds": 3,
+        "sqft": 839.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 839 sqft \"3BR\" freehold in D05 Pasir Panjang/West Coast (WhiteHaven, TOP 2017) at $1.5M / $1,788 PSF. Asking PSF is slightly below the $1,798 median, but a reliable 27-transaction URA base shows weak 1.02%/yr appreciation — the development has barely moved.",
+        "rating": "Neutral",
+        "rating_rationale": "WhiteHaven is fairly priced versus its block (asking $1,788 PSF just under the $1,798 URA median) and the $1.5M quantum is accessible and liquid. But the standout fact is the soft 1.02%/yr appreciation on a solid 27-transaction base — this freehold has materially lagged the RCR norm, a genuine red flag for capital growth. An 839 sqft 3BR is a squeezed shoebox-3BR layout that limits the family-buyer pool, and the 990m MRT walk is unremarkable. West Coast/One-North rental support and freehold tenure keep it Neutral rather than Avoid, but appreciation prospects look subpar.",
+        "red_flags": [
+          "Weak 1.02%/yr URA appreciation on a reliable 27-txn base — has lagged the market",
+          "Compact 839 sqft for a 3BR — squeezed layout, narrower buyer pool",
+          "990m to Haw Par Villa MRT",
+          "Below-average technical score (468) and sub-.500 arena record (241-323)"
+        ],
+        "catalysts": [
+          "Freehold tenure at an accessible $1.5M quantum",
+          "D05 West Coast / One-North / NUS rental catchment",
+          "Priced at/below its own URA median PSF"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-whitehaven-25203442",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

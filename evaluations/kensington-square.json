@@ -1,0 +1,117 @@
+{
+  "condo": "Kensington Square",
+  "slug": "kensington-square",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR at Kensington Square, D19 (Bartley), 760m from CC12 Bartley MRT, asking $978k at $1,356 PSF for an efficient 721 sqft. Reasonable 46-txn URA base supports a credible (if modest) 4.87%/yr rate; PSF sits ~20% under the $1,707 median.",
+      "rating_rationale": "Solid fundamentals but unexciting: freehold, MRT-connected, mixed-use convenience, and an honest 46-txn appreciation series — but at only 4.87%/yr, below the RCR/OCR-blend you'd want. $978k for a 1BR is at the upper end for the bed count, and the catalyst story (Bartley is mature, no major new govt zone) is thin. A safe hold, not a growth play.",
+      "red_flags": [
+        "4.87%/yr appreciation is middling",
+        "$978k is high for a 1BR — narrows resale to investors",
+        "Mature area, limited new catalysts"
+      ],
+      "catalysts": [
+        "Freehold near Bartley MRT (Circle Line)",
+        "Mixed-use development convenience",
+        "Efficient 721 sqft layout, broad rental appeal"
+      ],
+      "as_of": {
+        "price": 978000,
+        "psf": 1356.45,
+        "beds": 1,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR at Kensington Square, D19 (Bartley), 760m from CC12 Bartley MRT, asking $978k at $1,356 PSF for an efficient 721 sqft. Reasonable 46-txn URA base supports a credible (if modest) 4.87%/yr rate; PSF sits ~20% under the $1,707 median.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid fundamentals but unexciting: freehold, MRT-connected, mixed-use convenience, and an honest 46-txn appreciation series — but at only 4.87%/yr, below the RCR/OCR-blend you'd want. $978k for a 1BR is at the upper end for the bed count, and the catalyst story (Bartley is mature, no major new govt zone) is thin. A safe hold, not a growth play.",
+        "red_flags": [
+          "4.87%/yr appreciation is middling",
+          "$978k is high for a 1BR — narrows resale to investors",
+          "Mature area, limited new catalysts"
+        ],
+        "catalysts": [
+          "Freehold near Bartley MRT (Circle Line)",
+          "Mixed-use development convenience",
+          "Efficient 721 sqft layout, broad rental appeal"
+        ],
+        "rental_assessment": "Bartley/Serangoon has steady tenant demand on the Circle Line; efficient 1BR yields ~3.5%.",
+        "appreciation_assessment": "46-txn URA series credible at ~4.9%/yr — reliable but modest for an investment hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.9,
+        "appreciation_rate_source": "URA 46-txn series (reliable)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kensington-square-25490394",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold mixed-use 1BR near Bartley/Serangoon MRT, asking $1,356 psf sits at/below the verified recent transaction range, making the algo's cheapness real but tempered by a thin 141-unit liquidity profile.",
+      "rating_rationale": "Asking $1,356 psf ($978k, 721 sqft FH) is at the very bottom of the verified last-12-month range of $1,360-$1,773 psf (avg ~$1,656 over 49 sales) per EdgeProp/PropertyGuru — so the -23.2% age-adj cheapness is corroborated by real transactions, not a quirk. Freehold tenure plus the 2030 Cross Island Line build-out around Hougang/Serangoon adds a dated catalyst. Confidence held to medium because psf_cohort_txns is only 5 and the 141-unit mixed-use development is small, so resale liquidity at exit is thinner than the large mass-market peers; trailing appreciation (4.87%) is discounted per the backtest prior.",
+      "red_flags": [
+        "Small 141-unit mixed-use development implies thinner resale liquidity at exit",
+        "psf_cohort_txns only 5 - cheapness signal rests on a modest comparable set",
+        "Mixed-use (commercial podium) can mean noise/footfall and a narrower buyer pool"
+      ],
+      "catalysts": [
+        "Cross Island Line stations around Hougang/Serangoon North targeted 2030",
+        "Freehold tenure in a leasehold-heavy district",
+        "Asking below the entire recent resale range = built-in entry discount"
+      ],
+      "as_of": {
+        "price": 978000,
+        "psf": 1356.45,
+        "beds": 1,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Freehold mixed-use 1BR near Bartley/Serangoon MRT, asking $1,356 psf sits at/below the verified recent transaction range, making the algo's cheapness real but tempered by a thin 141-unit liquidity profile.",
+        "rating_rationale": "Asking $1,356 psf ($978k, 721 sqft FH) is at the very bottom of the verified last-12-month range of $1,360-$1,773 psf (avg ~$1,656 over 49 sales) per EdgeProp/PropertyGuru — so the -23.2% age-adj cheapness is corroborated by real transactions, not a quirk. Freehold tenure plus the 2030 Cross Island Line build-out around Hougang/Serangoon adds a dated catalyst. Confidence held to medium because psf_cohort_txns is only 5 and the 141-unit mixed-use development is small, so resale liquidity at exit is thinner than the large mass-market peers; trailing appreciation (4.87%) is discounted per the backtest prior.",
+        "red_flags": [
+          "Small 141-unit mixed-use development implies thinner resale liquidity at exit",
+          "psf_cohort_txns only 5 - cheapness signal rests on a modest comparable set",
+          "Mixed-use (commercial podium) can mean noise/footfall and a narrower buyer pool"
+        ],
+        "catalysts": [
+          "Cross Island Line stations around Hougang/Serangoon North targeted 2030",
+          "Freehold tenure in a leasehold-heavy district",
+          "Asking below the entire recent resale range = built-in entry discount"
+        ],
+        "appreciation_assessment": "Trailing 5yr CAGR 4.87% over 46 txns is decent and reasonably evidenced, but per v3.4 priors trailing appreciation has ~0 forward power; the forward thesis rests on the verified entry discount and CRL, not the past CAGR.",
+        "rental_assessment": "D19 mixed-use 1BR near two MRT corridors rents well to the Serangoon/Bartley working crowd; freehold quantum under $1M keeps it accessible, supporting a typical ~3.5-4% gross yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kensington-square-25490394",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

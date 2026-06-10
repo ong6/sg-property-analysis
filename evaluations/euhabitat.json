@@ -1,0 +1,115 @@
+{
+  "condo": "Euhabitat",
+  "slug": "euhabitat",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "99-yr leasehold 1BR at Euhabitat, D14 (Eunos/Ubi), asking $780k at $1,343 PSF for an efficient 581 sqft. Huge 210-txn URA base is reliable, but the rate it certifies is a weak 2.66%/yr — and the unit is 1.08km from MRT.",
+      "rating_rationale": "Data is trustworthy (210 txns) but tells an unexciting story: 2.66%/yr appreciation is below OCR baseline and well under inflation-adjusted targets. PSF ($1,343) sits below the $1,429 median but the slim discount plus poor MRT access (1.08km, 13-min walk) and lease decay cap upside. Low entry quantum is the main plus. A neutral hold — reliable but flat.",
+      "red_flags": [
+        "2.66%/yr appreciation is weak despite reliable 210-txn data",
+        "1.08km from MRT — soft connectivity",
+        "99-yr leasehold, 2016 build"
+      ],
+      "catalysts": [
+        "Low $780k entry, efficient 581 sqft 1BR",
+        "Paya Lebar Central regional upside (diffuse)"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1342.51,
+        "beds": 1,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 1BR at Euhabitat, D14 (Eunos/Ubi), asking $780k at $1,343 PSF for an efficient 581 sqft. Huge 210-txn URA base is reliable, but the rate it certifies is a weak 2.66%/yr — and the unit is 1.08km from MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "Data is trustworthy (210 txns) but tells an unexciting story: 2.66%/yr appreciation is below OCR baseline and well under inflation-adjusted targets. PSF ($1,343) sits below the $1,429 median but the slim discount plus poor MRT access (1.08km, 13-min walk) and lease decay cap upside. Low entry quantum is the main plus. A neutral hold — reliable but flat.",
+        "red_flags": [
+          "2.66%/yr appreciation is weak despite reliable 210-txn data",
+          "1.08km from MRT — soft connectivity",
+          "99-yr leasehold, 2016 build"
+        ],
+        "catalysts": [
+          "Low $780k entry, efficient 581 sqft 1BR",
+          "Paya Lebar Central regional upside (diffuse)"
+        ],
+        "rental_assessment": "Eunos/Ubi has functional tenant demand; small efficient unit yields ~3.5%, but no premium driver.",
+        "appreciation_assessment": "210-txn URA series is reliable and prints only 2.66%/yr — a genuine, not artefactual, low-growth signal. Don't expect outperformance.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.7,
+        "appreciation_rate_source": "URA 210-txn series (high confidence, genuinely low)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-euhabitat-20998432",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Lowest quantum of the batch ($780k) in D14 Eunos with the deepest cohort data (37 cohort + 210 appreciation txns); asking $1,342 is modestly below the 1BR average, a credible if not dramatic value edge near the Paya Lebar growth corridor.",
+      "rating_rationale": "Asking $1,342 psf ($780k, 581 sqft) is below the project's ~$1,425 psf 1BR average per EdgeProp, a modest ~6% discount. Critically, the honest cohort signal (psf_premium_vs_cohort -5.3% on a deep 37-txn cohort) is far smaller than the headline age-adj -29.6%, so I lead with the smaller, better-evidenced number - this is a fair-to-slightly-cheap entry, not a steal. Deep data (210 appreciation txns) removes quirk risk. D14 sits in the Paya Lebar Central/PLQ decentralised-CBD catchment, an OCR/RCR-edge location. Buy at medium: the value edge is real but modest and offset by documented build-quality gripes (poor noise insulation, blocks built close together).",
+      "red_flags": [
+        "Resident reviews cite weak noise insulation and blocks built very close (privacy/ventilation)",
+        "Discount is modest (~6% vs 1BR avg); honest cohort premium only -5.3%",
+        "99-yr leasehold from 2010 - no tenure edge, pure yield play"
+      ],
+      "catalysts": [
+        "Paya Lebar Central / PLQ decentralised CBD growth corridor nearby",
+        "Lowest absolute quantum ($780k) widens the resale/rental buyer pool",
+        "Eunos MRT access on the EWL"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1342.51,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Lowest quantum of the batch ($780k) in D14 Eunos with the deepest cohort data (37 cohort + 210 appreciation txns); asking $1,342 is modestly below the 1BR average, a credible if not dramatic value edge near the Paya Lebar growth corridor.",
+        "rating_rationale": "Asking $1,342 psf ($780k, 581 sqft) is below the project's ~$1,425 psf 1BR average per EdgeProp, a modest ~6% discount. Critically, the honest cohort signal (psf_premium_vs_cohort -5.3% on a deep 37-txn cohort) is far smaller than the headline age-adj -29.6%, so I lead with the smaller, better-evidenced number - this is a fair-to-slightly-cheap entry, not a steal. Deep data (210 appreciation txns) removes quirk risk. D14 sits in the Paya Lebar Central/PLQ decentralised-CBD catchment, an OCR/RCR-edge location. Buy at medium: the value edge is real but modest and offset by documented build-quality gripes (poor noise insulation, blocks built close together).",
+        "red_flags": [
+          "Resident reviews cite weak noise insulation and blocks built very close (privacy/ventilation)",
+          "Discount is modest (~6% vs 1BR avg); honest cohort premium only -5.3%",
+          "99-yr leasehold from 2010 - no tenure edge, pure yield play"
+        ],
+        "catalysts": [
+          "Paya Lebar Central / PLQ decentralised CBD growth corridor nearby",
+          "Lowest absolute quantum ($780k) widens the resale/rental buyer pool",
+          "Eunos MRT access on the EWL"
+        ],
+        "appreciation_assessment": "Trailing 2.66% CAGR is the most muted of the batch but well-evidenced over 210 txns; consistent with a fairly-priced (not deeply discounted) entry. No forward weight per v3.4 priors.",
+        "rental_assessment": "Stated ~4.1% rental yield is the strongest in this batch; 581 sqft 1BR at $780k near Eunos MRT and the PLQ employment node supports solid, liquid rental demand."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-euhabitat-20998432",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

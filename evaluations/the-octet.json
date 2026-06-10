@@ -1,0 +1,118 @@
+{
+  "condo": "The Octet",
+  "slug": "the-octet",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold (2017) 431 sqft 1BR shoebox in D14 Geylang/Aljunied at $700k / $1,624 psf — above the URA median ($1,556) with a weak resale-only 1.9%/yr appreciation. Low quantum and freehold tenure are the only draws; the segment and location cap upside.",
+      "rating_rationale": "Resale-only appreciation of just 1.9%/yr is poor and the listing PSF ($1,624) is ~4% above the URA median ($1,556), so you'd be paying up for a freehold shoebox that has barely appreciated. 431 sqft 1BR is the thinnest resale segment, the boutique-ish project sits in the Geylang fringe of D14 (some stigma/transience), and the arena record is losing (142-158). $700k quantum and freehold are genuine positives that hold a Neutral rather than Avoid, on yield grounds.",
+      "red_flags": [
+        "Weak 1.9%/yr resale appreciation — minimal capital growth",
+        "Priced ~4% above URA median for a shoebox",
+        "431 sqft 1BR — niche resale, Geylang-fringe location and transience stigma",
+        "Losing arena record (142-158), only 14 txns"
+      ],
+      "catalysts": [
+        "Freehold tenure on a low $700k quantum",
+        "530m to Aljunied MRT (EW line) supports rental",
+        "Paya Lebar Central / airbase relocation longer-term D14 upside"
+      ],
+      "as_of": {
+        "price": 700000,
+        "psf": 1624.13,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold (2017) 431 sqft 1BR shoebox in D14 Geylang/Aljunied at $700k / $1,624 psf — above the URA median ($1,556) with a weak resale-only 1.9%/yr appreciation. Low quantum and freehold tenure are the only draws; the segment and location cap upside.",
+        "rating": "Neutral",
+        "rating_rationale": "Resale-only appreciation of just 1.9%/yr is poor and the listing PSF ($1,624) is ~4% above the URA median ($1,556), so you'd be paying up for a freehold shoebox that has barely appreciated. 431 sqft 1BR is the thinnest resale segment, the boutique-ish project sits in the Geylang fringe of D14 (some stigma/transience), and the arena record is losing (142-158). $700k quantum and freehold are genuine positives that hold a Neutral rather than Avoid, on yield grounds.",
+        "red_flags": [
+          "Weak 1.9%/yr resale appreciation — minimal capital growth",
+          "Priced ~4% above URA median for a shoebox",
+          "431 sqft 1BR — niche resale, Geylang-fringe location and transience stigma",
+          "Losing arena record (142-158), only 14 txns"
+        ],
+        "catalysts": [
+          "Freehold tenure on a low $700k quantum",
+          "530m to Aljunied MRT (EW line) supports rental",
+          "Paya Lebar Central / airbase relocation longer-term D14 upside"
+        ],
+        "rental_assessment": "Aljunied/Geylang shoeboxes rent easily to budget tenants on a low quantum; yield is the main return driver but appreciation is absent.",
+        "appreciation_assessment": "Proven 1.9%/yr resale CAGR is well below RCR/CCR baselines — this is a yield asset, not a growth one.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-octet-60121561",
+        "review_file": "cov_batch_17.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Geylang shoebox 1BR priced ~10% ABOVE the project's own recent transactions. The algo's high score masks a genuine overpricing red flag in a district with documented weak freehold appreciation.",
+      "rating_rationale": "Listing is $1,624 psf vs the project's last-12-month average of ~$1,478 psf (range $1,423-$1,533) — roughly +10% over market, corroborating both the 'psf_above_market' flag and the +12.4% premium-vs-cohort on 14 real txns. This is not a data quirk; the cohort is deep. It is an all-shoebox (431-527 sqft) boutique in Geylang, a freehold segment specifically flagged in coverage as seeing 'more losses than gains.' Trailing appreciation 1.88% is weak and (per v3.4) non-predictive anyway. The 4.8% project yield is the only positive, but buying ~10% above last comps erodes the entry margin for a 5-7yr hold. Better to wait for an at-market $1,450-ish psf entry or pass.",
+      "red_flags": [
+        "Asking $1,624 psf is ~10% above the project's recent transacted average (~$1,478) — overpriced, confirmed on 14 txns",
+        "psf_above_market flag + +12.4% vs cohort, both verified",
+        "Geylang freehold shoebox segment documented to see more capital losses than gains",
+        "All-shoebox 56-unit boutique: thin liquidity and capital-growth-poor profile"
+      ],
+      "catalysts": [
+        "~4.8% rental yield (strong for the quantum) if held purely for cashflow",
+        "Walkable to Aljunied/Dakota/Mountbatten MRT"
+      ],
+      "as_of": {
+        "price": 700000,
+        "psf": 1624.13,
+        "beds": 1,
+        "sqft": 431
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Geylang shoebox 1BR priced ~10% ABOVE the project's own recent transactions. The algo's high score masks a genuine overpricing red flag in a district with documented weak freehold appreciation.",
+        "rating_rationale": "Listing is $1,624 psf vs the project's last-12-month average of ~$1,478 psf (range $1,423-$1,533) — roughly +10% over market, corroborating both the 'psf_above_market' flag and the +12.4% premium-vs-cohort on 14 real txns. This is not a data quirk; the cohort is deep. It is an all-shoebox (431-527 sqft) boutique in Geylang, a freehold segment specifically flagged in coverage as seeing 'more losses than gains.' Trailing appreciation 1.88% is weak and (per v3.4) non-predictive anyway. The 4.8% project yield is the only positive, but buying ~10% above last comps erodes the entry margin for a 5-7yr hold. Better to wait for an at-market $1,450-ish psf entry or pass.",
+        "red_flags": [
+          "Asking $1,624 psf is ~10% above the project's recent transacted average (~$1,478) — overpriced, confirmed on 14 txns",
+          "psf_above_market flag + +12.4% vs cohort, both verified",
+          "Geylang freehold shoebox segment documented to see more capital losses than gains",
+          "All-shoebox 56-unit boutique: thin liquidity and capital-growth-poor profile"
+        ],
+        "catalysts": [
+          "~4.8% rental yield (strong for the quantum) if held purely for cashflow",
+          "Walkable to Aljunied/Dakota/Mountbatten MRT"
+        ],
+        "appreciation_assessment": "Trailing 1.88% (14 txns) is both weak and non-predictive; the segment's history of losses plus the +10% entry premium point to limited-to-negative forward capital growth.",
+        "rental_assessment": "Project yield ~4.8% is the lone strength, attractive for a cashflow buyer — but does not rescue a unit bought ~10% above last comps for a capital-appreciation hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-octet-60121561",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

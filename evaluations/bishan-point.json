@@ -1,0 +1,61 @@
+{
+  "condo": "Bishan Point",
+  "slug": "bishan-point",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1485 sqft 99yr 4BR at Bishan Point (D20) at $2.78M / $1872 PSF, ~3% over the $1811 median, just 340m from Bright Hill MRT (TE7). Strong 7.71% URA resale CAGR over an adequate 35-txn series and a high Elo (1684) — a well-located, well-performing TEL-corridor family unit.",
+      "rating_rationale": "340m to a TEL station, a 7.71% resale CAGR over 35 txns (reasonably reliable), strong Elo (1684, 327-88 record), and the Bishan/Upper Thomson catchment with top schools nearby. Entry is only slightly above median and the $2.78M quantum, while above the deepest band, is supported by genuine 4BR family/own-stay demand in a prized district. The 2005 99yr lease (~78yr left) is the main caveat. Solid investment with a real transit catalyst.",
+      "red_flags": [
+        "$2.78M quantum above the deepest buyer band — slower exit",
+        "2005 99yr lease (~78yr remaining) — lease decay on the back end",
+        "Entry slightly above district median PSF"
+      ],
+      "catalysts": [
+        "340m to Bright Hill MRT (TE7) — direct TEL access",
+        "7.71% URA resale CAGR (35 txns) — strong, reasonably evidenced",
+        "Bishan/Upper Thomson school catchment and mature-estate desirability"
+      ],
+      "as_of": {
+        "price": 2780000,
+        "psf": 1872.05,
+        "beds": 4,
+        "sqft": 1485.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1485 sqft 99yr 4BR at Bishan Point (D20) at $2.78M / $1872 PSF, ~3% over the $1811 median, just 340m from Bright Hill MRT (TE7). Strong 7.71% URA resale CAGR over an adequate 35-txn series and a high Elo (1684) — a well-located, well-performing TEL-corridor family unit.",
+        "rating": "Buy",
+        "rating_rationale": "340m to a TEL station, a 7.71% resale CAGR over 35 txns (reasonably reliable), strong Elo (1684, 327-88 record), and the Bishan/Upper Thomson catchment with top schools nearby. Entry is only slightly above median and the $2.78M quantum, while above the deepest band, is supported by genuine 4BR family/own-stay demand in a prized district. The 2005 99yr lease (~78yr left) is the main caveat. Solid investment with a real transit catalyst.",
+        "red_flags": [
+          "$2.78M quantum above the deepest buyer band — slower exit",
+          "2005 99yr lease (~78yr remaining) — lease decay on the back end",
+          "Entry slightly above district median PSF"
+        ],
+        "catalysts": [
+          "340m to Bright Hill MRT (TE7) — direct TEL access",
+          "7.71% URA resale CAGR (35 txns) — strong, reasonably evidenced",
+          "Bishan/Upper Thomson school catchment and mature-estate desirability"
+        ],
+        "rental_assessment": "Good. Family-oriented 4BR in a sought-after school district with TEL-on-doorstep draws stable expat/family tenants; a 4BR pool is narrower but well-supported here.",
+        "appreciation_assessment": "7.71% resale CAGR (35 txns) is credible and the TEL line plus Bishan desirability support continued strength, moderated by lease decay over a long hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bishan-point-500092093",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

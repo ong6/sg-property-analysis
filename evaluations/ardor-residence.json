@@ -1,0 +1,61 @@
+{
+  "condo": "Ardor Residence",
+  "slug": "ardor-residence",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A $4.128M freehold 4BR+study (1,776 sqft) in Ardor Residence, a 35-unit, 5-storey Nanshan boutique at Haig Road, TOP Oct 2026. The tiny project size means thin liquidity, the $4.1M quantum sits well outside the deep buyer band, and it is 1.09km (a bus-ride) from the nearest MRT — the lowest technical score in the batch at 412.",
+      "rating_rationale": "This is the textbook illiquid boutique to avoid for investment: only 35 units total (no resale depth, few comparables to anchor price), a $4.128M quantum that sits far above the $1.8-2.5M deep-pool band where exits are reliable, and 1.09km/13min to Tanjong Katong MRT (not walkable). Freehold and a recognized D15 address are the only real positives. The $2,324 PSF is below the $2,543 URA median, but in a 35-unit project the 'median' rests on a handful of developer sales (new-launch biased), so the discount is not meaningful. Score 412 (worst in batch) aligns with the fundamentals. As a 5-7yr investment, exit risk is the dominant problem.",
+      "red_flags": [
+        "Only 35 units, 5-storey boutique — very shallow resale liquidity and few price comparables",
+        "$4.128M quantum far outside the deep buyer band; >$3M materially thins exit pool",
+        "1.09km / 13min to MRT — not transit-walkable",
+        "Low score 412 (worst in batch); thin 30-txn, new-launch-biased data"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D15 Tanjong Katong/Haig Road enclave",
+        "Brand-new (TOP 2026) with exclusivity appeal to a narrow own-stay segment"
+      ],
+      "as_of": {
+        "price": 4128000,
+        "psf": 2324.32,
+        "beds": 4,
+        "sqft": 1776.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A $4.128M freehold 4BR+study (1,776 sqft) in Ardor Residence, a 35-unit, 5-storey Nanshan boutique at Haig Road, TOP Oct 2026. The tiny project size means thin liquidity, the $4.1M quantum sits well outside the deep buyer band, and it is 1.09km (a bus-ride) from the nearest MRT — the lowest technical score in the batch at 412.",
+        "rating": "Avoid",
+        "rating_rationale": "This is the textbook illiquid boutique to avoid for investment: only 35 units total (no resale depth, few comparables to anchor price), a $4.128M quantum that sits far above the $1.8-2.5M deep-pool band where exits are reliable, and 1.09km/13min to Tanjong Katong MRT (not walkable). Freehold and a recognized D15 address are the only real positives. The $2,324 PSF is below the $2,543 URA median, but in a 35-unit project the 'median' rests on a handful of developer sales (new-launch biased), so the discount is not meaningful. Score 412 (worst in batch) aligns with the fundamentals. As a 5-7yr investment, exit risk is the dominant problem.",
+        "red_flags": [
+          "Only 35 units, 5-storey boutique — very shallow resale liquidity and few price comparables",
+          "$4.128M quantum far outside the deep buyer band; >$3M materially thins exit pool",
+          "1.09km / 13min to MRT — not transit-walkable",
+          "Low score 412 (worst in batch); thin 30-txn, new-launch-biased data"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D15 Tanjong Katong/Haig Road enclave",
+          "Brand-new (TOP 2026) with exclusivity appeal to a narrow own-stay segment"
+        ],
+        "rental_assessment": "Weak for investment — a $4.1M 4BR rents to a tiny pool; gross yield will be ~2% or below, poor for the capital outlay.",
+        "appreciation_assessment": "No reliable resale basis; boutique 35-unit freeholds can be sticky to sell and price discovery is poor, capping realizable appreciation.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ardor-residence-25040827",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

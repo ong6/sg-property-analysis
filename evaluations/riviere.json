@@ -1,0 +1,63 @@
+{
+  "condo": "Riviere",
+  "slug": "riviere",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 560 sqft 1BR at Riviere (Frasers' riverfront luxury project off Havelock/Great World), $1.49M / $2,661 PSF — ~6% below the $2,842 URA median, with a reliable resale-only appreciation of +5.67%/yr over 349 transactions. A premium CCR-edge address with a Greater Southern Waterfront catalyst; the constraint is the high $1.49M quantum and $2,661 PSF for a 1BR.",
+      "rating_rationale": "Resale-only appreciation is +5.67%/yr on a deep, reliable 349-txn base (the headline 0.81% is a new-launch-bias artifact the system corrected — use the resale figure). PSF $2,661 is ~6% under the $2,842 median, a fair entry for a young (2023) leasehold luxury project by a top developer on the Singapore River. Havelock MRT (TEL) 580m plus the GSW transformation are strong forward catalysts. Caveat: $1.49M for a 560 sqft 1BR is a steep quantum/PSF that narrows the buyer pool to investors and well-heeled singles.",
+      "red_flags": [
+        "High $1.49M quantum and $2,661 PSF for a 560 sqft 1BR — niche, investor-dependent buyer pool",
+        "New-launch bias flagged — headline 0.81% is inflated/distorted; rely on the +5.67% resale-only figure",
+        "99yr leasehold (premium CCR-edge pricing means freehold-like quantum without freehold tenure)"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D03/major govt zone) — strong long-run uplift",
+        "580m to Havelock MRT (Thomson-East Coast Line), walkable to Great World and River Valley",
+        "Reliable +5.67%/yr resale appreciation (349 txns) and reputable Frasers developer",
+        "Below-median entry PSF"
+      ],
+      "as_of": {
+        "price": 1490000,
+        "psf": 2660.71,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 560 sqft 1BR at Riviere (Frasers' riverfront luxury project off Havelock/Great World), $1.49M / $2,661 PSF — ~6% below the $2,842 URA median, with a reliable resale-only appreciation of +5.67%/yr over 349 transactions. A premium CCR-edge address with a Greater Southern Waterfront catalyst; the constraint is the high $1.49M quantum and $2,661 PSF for a 1BR.",
+        "rating": "Buy",
+        "rating_rationale": "Resale-only appreciation is +5.67%/yr on a deep, reliable 349-txn base (the headline 0.81% is a new-launch-bias artifact the system corrected — use the resale figure). PSF $2,661 is ~6% under the $2,842 median, a fair entry for a young (2023) leasehold luxury project by a top developer on the Singapore River. Havelock MRT (TEL) 580m plus the GSW transformation are strong forward catalysts. Caveat: $1.49M for a 560 sqft 1BR is a steep quantum/PSF that narrows the buyer pool to investors and well-heeled singles.",
+        "red_flags": [
+          "High $1.49M quantum and $2,661 PSF for a 560 sqft 1BR — niche, investor-dependent buyer pool",
+          "New-launch bias flagged — headline 0.81% is inflated/distorted; rely on the +5.67% resale-only figure",
+          "99yr leasehold (premium CCR-edge pricing means freehold-like quantum without freehold tenure)"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D03/major govt zone) — strong long-run uplift",
+          "580m to Havelock MRT (Thomson-East Coast Line), walkable to Great World and River Valley",
+          "Reliable +5.67%/yr resale appreciation (349 txns) and reputable Frasers developer",
+          "Below-median entry PSF"
+        ],
+        "rental_assessment": "Riverfront luxury 1BR near Great World/River Valley and the CBD fringe commands strong expat/professional tenant demand at premium rents; occupancy strong though gross yield is modest on the high quantum.",
+        "appreciation_assessment": "Reliable resale-only +5.67%/yr, GSW catalyst and prime riverfront location support continued mid-to-high single-digit appreciation over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riviere-500046464",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

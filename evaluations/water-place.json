@@ -1,0 +1,65 @@
+{
+  "condo": "Water Place",
+  "slug": "water-place",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "99-yr leasehold 1BR at Water Place, D15 (Tanjong Rhu), literally 120m (1 min) from TE23 Tanjong Rhu MRT, asking $1.35M at $1,844 PSF for an efficient 732 sqft. Reliable 91-txn URA base prints a strong 6.75%/yr; PSF is ~4% under the $1,920 median.",
+      "rating_rationale": "Best location attribute in the batch — 120m to a TEL station is a rare, durable premium. Backed by a credible 91-txn URA series at 6.75%/yr (above RCR baseline), efficient 732 sqft layout, and slight PSF discount to median. $1.35M quantum is workable for D15. Offsets: 2004 build (~77yr lease remaining) and waterfront 99-yr lease decay, but the transit advantage and proven appreciation outweigh them.",
+      "red_flags": [
+        "2004 build, ~77yr lease remaining — lease decay over hold",
+        "$1,844 PSF is full price for the location",
+        "Waterfront leasehold — long-term lease sensitivity"
+      ],
+      "catalysts": [
+        "120m to TE23 Tanjong Rhu MRT (TEL) — exceptional transit access",
+        "Reliable 6.75%/yr URA appreciation on 91 txns",
+        "Tanjong Rhu / Kallang Basin transformation, GSW-adjacent",
+        "Deep D15 buyer pool, efficient layout"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1844.26,
+        "beds": 1,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 1BR at Water Place, D15 (Tanjong Rhu), literally 120m (1 min) from TE23 Tanjong Rhu MRT, asking $1.35M at $1,844 PSF for an efficient 732 sqft. Reliable 91-txn URA base prints a strong 6.75%/yr; PSF is ~4% under the $1,920 median.",
+        "rating": "Buy",
+        "rating_rationale": "Best location attribute in the batch — 120m to a TEL station is a rare, durable premium. Backed by a credible 91-txn URA series at 6.75%/yr (above RCR baseline), efficient 732 sqft layout, and slight PSF discount to median. $1.35M quantum is workable for D15. Offsets: 2004 build (~77yr lease remaining) and waterfront 99-yr lease decay, but the transit advantage and proven appreciation outweigh them.",
+        "red_flags": [
+          "2004 build, ~77yr lease remaining — lease decay over hold",
+          "$1,844 PSF is full price for the location",
+          "Waterfront leasehold — long-term lease sensitivity"
+        ],
+        "catalysts": [
+          "120m to TE23 Tanjong Rhu MRT (TEL) — exceptional transit access",
+          "Reliable 6.75%/yr URA appreciation on 91 txns",
+          "Tanjong Rhu / Kallang Basin transformation, GSW-adjacent",
+          "Deep D15 buyer pool, efficient layout"
+        ],
+        "rental_assessment": "1-min-to-MRT waterfront 1BR is a prime rental product; strong tenant demand, yield ~3.5-4%.",
+        "appreciation_assessment": "91-txn URA series at 6.75%/yr is reliable and above RCR baseline — the transit and waterfront combination supports it.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA 91-txn series (reliable), modest haircut for lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-water-place-500161824",
+        "review_file": "cov_batch_01.json"
+      }
+    }
+  ]
+}

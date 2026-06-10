@@ -1,0 +1,61 @@
+{
+  "condo": "Cheap city fringe 2 bed , high rental",
+  "slug": "cheap-city-fringe-2-bed-high-rental",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A marketing-named listing (\"Cheap city fringe 2 bed, high rental\") at $1.6M / $2,477 PSF for a 646 sqft 2BR essentially on top of One-North MRT — this is a new-launch-tier PSF (almost certainly One-North Eden / Blossoms by the Park territory). Genuinely strong tenant demand from the One-North tech/biomed cluster, but the PSF is rich and the dossier carries no project name, no built_year and no URA data.",
+      "rating_rationale": "Location is excellent for rental: One-North MRT at the doorstep, deep tenant pool from biomedical/tech employers, D05 RCR (~5.8%/yr baseline). But $2,477 PSF is new-launch pricing, leaving little appreciation headroom once developer premium is paid, and 99LH erodes from a high base. The opaque marketing name, missing built_year and absent URA transaction data prevent a confident buy call. The 2BR/646 sqft format is liquid and rentable, but at $1.6M the entry is full.",
+      "red_flags": [
+        "$2,477 PSF is full new-launch pricing — thin appreciation margin",
+        "No project name, no built_year, no URA data in dossier",
+        "99-year leasehold bought at a premium PSF",
+        "Listing title is marketing copy, not a verified development"
+      ],
+      "catalysts": [
+        "One-North MRT at the doorstep — One-North biomedical/tech jobs drive consistent rental demand",
+        "D05 RCR with One-North/Greater One-North growth narrative",
+        "Compact 2BR is the most liquid rental format"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 2476.78,
+        "beds": 2,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A marketing-named listing (\"Cheap city fringe 2 bed, high rental\") at $1.6M / $2,477 PSF for a 646 sqft 2BR essentially on top of One-North MRT — this is a new-launch-tier PSF (almost certainly One-North Eden / Blossoms by the Park territory). Genuinely strong tenant demand from the One-North tech/biomed cluster, but the PSF is rich and the dossier carries no project name, no built_year and no URA data.",
+        "rating": "Neutral",
+        "rating_rationale": "Location is excellent for rental: One-North MRT at the doorstep, deep tenant pool from biomedical/tech employers, D05 RCR (~5.8%/yr baseline). But $2,477 PSF is new-launch pricing, leaving little appreciation headroom once developer premium is paid, and 99LH erodes from a high base. The opaque marketing name, missing built_year and absent URA transaction data prevent a confident buy call. The 2BR/646 sqft format is liquid and rentable, but at $1.6M the entry is full.",
+        "red_flags": [
+          "$2,477 PSF is full new-launch pricing — thin appreciation margin",
+          "No project name, no built_year, no URA data in dossier",
+          "99-year leasehold bought at a premium PSF",
+          "Listing title is marketing copy, not a verified development"
+        ],
+        "catalysts": [
+          "One-North MRT at the doorstep — One-North biomedical/tech jobs drive consistent rental demand",
+          "D05 RCR with One-North/Greater One-North growth narrative",
+          "Compact 2BR is the most liquid rental format"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-city-fringe-2-bed-high-rental-500163538",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

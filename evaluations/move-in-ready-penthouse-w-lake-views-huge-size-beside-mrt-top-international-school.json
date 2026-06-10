@@ -1,0 +1,65 @@
+{
+  "condo": "⭐️ Move-In Ready Penthouse /w Lake Views | Huge Size | Beside MRT & Top International School⭐",
+  "slug": "move-in-ready-penthouse-w-lake-views-huge-size-beside-mrt-top-international-school",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2278 sqft 4BR penthouse (identified as Lakefront Residences, 99-yr leasehold, next to Lakeside MRT) for $3M / $1317 PSF in the Jurong Lake District catchment. The low PSF is an oversized-penthouse artefact and the $3M absolute price sits well above the liquid band; with all URA appreciation/liquidity data null, the JLD catalyst alone cannot offset the exit-risk and missing-data concerns.",
+      "rating_rationale": "Web research identifies this as a Lakefront Residences penthouse — 99-yr leasehold, beside EW26 Lakeside MRT, in the Jurong Lake District ('2nd CBD') growth zone, which is a genuine long-term catalyst. But every URA field (appreciation, txn count, median PSF, bias) is null, so there is no quantitative support; 2278 sqft for $3M is an oversized penthouse where the $1317 PSF looks cheap only because of size, and $3M penthouses have a thin buyer pool. JLD upside vs missing-data + exit risk nets to Neutral.",
+      "red_flags": [
+        "All URA data null — no appreciation, txn count or median to verify value",
+        "2278 sqft penthouse — oversized, low PSF is a size artefact",
+        "$3M absolute price with a shallow penthouse buyer pool",
+        "Listing title is a marketing blurb; tenure blank in dossier (leasehold per research)"
+      ],
+      "catalysts": [
+        "Jurong Lake District 'second CBD' transformation (long-term major uplift)",
+        "Beside EW26 Lakeside MRT (~570m) plus future JRL connectivity",
+        "Lake views and proximity to Canadian International School (rental draw)"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 1316.94,
+        "beds": 4,
+        "sqft": 2278.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2278 sqft 4BR penthouse (identified as Lakefront Residences, 99-yr leasehold, next to Lakeside MRT) for $3M / $1317 PSF in the Jurong Lake District catchment. The low PSF is an oversized-penthouse artefact and the $3M absolute price sits well above the liquid band; with all URA appreciation/liquidity data null, the JLD catalyst alone cannot offset the exit-risk and missing-data concerns.",
+        "rating": "Neutral",
+        "rating_rationale": "Web research identifies this as a Lakefront Residences penthouse — 99-yr leasehold, beside EW26 Lakeside MRT, in the Jurong Lake District ('2nd CBD') growth zone, which is a genuine long-term catalyst. But every URA field (appreciation, txn count, median PSF, bias) is null, so there is no quantitative support; 2278 sqft for $3M is an oversized penthouse where the $1317 PSF looks cheap only because of size, and $3M penthouses have a thin buyer pool. JLD upside vs missing-data + exit risk nets to Neutral.",
+        "red_flags": [
+          "All URA data null — no appreciation, txn count or median to verify value",
+          "2278 sqft penthouse — oversized, low PSF is a size artefact",
+          "$3M absolute price with a shallow penthouse buyer pool",
+          "Listing title is a marketing blurb; tenure blank in dossier (leasehold per research)"
+        ],
+        "catalysts": [
+          "Jurong Lake District 'second CBD' transformation (long-term major uplift)",
+          "Beside EW26 Lakeside MRT (~570m) plus future JRL connectivity",
+          "Lake views and proximity to Canadian International School (rental draw)"
+        ],
+        "rental_assessment": "A large penthouse near Lakeside MRT and an international school can attract expat-family tenants, but the high absolute rent for 2278 sqft narrows the pool and depresses yield. Rental is a JLD-dependent story.",
+        "appreciation_assessment": "No URA data to anchor a rate. JLD is a strong structural catalyst over a 5-7yr horizon, but a leasehold penthouse bought at a $3M premium-size point may not capture it efficiently; treat upside as catalyst-driven and uncertain.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "No URA data; JLD-catalyst-based estimate for Lakefront Residences leasehold"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-move-in-ready-penthouse-w-lake-views-huge-size-beside-mrt-top-international-school-500132085",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

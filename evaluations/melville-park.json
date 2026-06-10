@@ -1,0 +1,117 @@
+{
+  "condo": "Melville Park",
+  "slug": "melville-park",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A large, mature 99-year leasehold mass-market condo in Simei priced at the low absolute entry of $920k with a deep 243-transaction URA series showing 6.1%/yr appreciation. The cheap quantum and strong liquidity are real, but 30 years of age (only ~69 years lease left) and a 1km-plus walk to MRT cap the upside.",
+      "rating_rationale": "PSF $983 sits right at the URA median of $966 (essentially fair value), and 243 transactions confirm a deep buyer pool — this is one of Tampines/Simei's most liquid resale estates with strong HDB-upgrader appeal. The 6.1%/yr URA resale rate is robust on a large sample. But lease decay is now the dominant risk: built 1996, ~69 years remaining, so financing/CPF restrictions begin to bite over a 5-7yr hold and resale buyers will price in further decay. 936 sqft 2BR is generously sized (good livability) but the 1.04km MRT walk and aging facilities limit appreciation versus newer Simei/Tampines stock.",
+      "red_flags": [
+        "Lease ~69 years remaining and falling — CPF/financing haircuts intensify over the hold",
+        "1.04km to Upper Changi MRT — not walkable",
+        "30-year-old development, dated facilities and higher maintenance"
+      ],
+      "catalysts": [
+        "Deep HDB-upgrader buyer pool keeps it liquid",
+        "Low $920k quantum widens the affordability-driven buyer base",
+        "CRL/DTL connectivity improving the wider Tampines region"
+      ],
+      "as_of": {
+        "price": 920000,
+        "psf": 982.91,
+        "beds": 2,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large, mature 99-year leasehold mass-market condo in Simei priced at the low absolute entry of $920k with a deep 243-transaction URA series showing 6.1%/yr appreciation. The cheap quantum and strong liquidity are real, but 30 years of age (only ~69 years lease left) and a 1km-plus walk to MRT cap the upside.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $983 sits right at the URA median of $966 (essentially fair value), and 243 transactions confirm a deep buyer pool — this is one of Tampines/Simei's most liquid resale estates with strong HDB-upgrader appeal. The 6.1%/yr URA resale rate is robust on a large sample. But lease decay is now the dominant risk: built 1996, ~69 years remaining, so financing/CPF restrictions begin to bite over a 5-7yr hold and resale buyers will price in further decay. 936 sqft 2BR is generously sized (good livability) but the 1.04km MRT walk and aging facilities limit appreciation versus newer Simei/Tampines stock.",
+        "red_flags": [
+          "Lease ~69 years remaining and falling — CPF/financing haircuts intensify over the hold",
+          "1.04km to Upper Changi MRT — not walkable",
+          "30-year-old development, dated facilities and higher maintenance"
+        ],
+        "catalysts": [
+          "Deep HDB-upgrader buyer pool keeps it liquid",
+          "Low $920k quantum widens the affordability-driven buyer base",
+          "CRL/DTL connectivity improving the wider Tampines region"
+        ],
+        "rental_assessment": "Solid mass-market rental demand from Changi Business Park / SUTD / airport workers; 2BR is the widest tenant pool. Yield is decent at this quantum but rent growth is capped by abundant nearby stock.",
+        "appreciation_assessment": "6.1%/yr URA resale on 243 txns is reliable and reflects past mass-market reflation, but forward appreciation is constrained by accelerating lease decay; expect below-trend going forward.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-melville-park-500118023",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 1,313 sqft 3BR in an old (1996, 99yr-from-1992) Simei mass-market condo. Asking $914 psf sits right at the verified market (avg $911-925 psf last 12mo), so the algo's -14.5% cheap signal is mostly a tenure/age artifact, not a true bargain. Good entry quantum and yield, but lease decay caps a 5-7yr investment upside.",
+      "rating_rationale": "Verified URA-backed transactions show Melville Park traded $885-1,080 psf over the last 12 months (avg ~$911-925), so the $914 psf asking is at-market, NOT a -14.5% discount. With ~65yr lease remaining and a 1996 vintage, the unit faces accelerating lease-decay drag over a 5-7yr hold. OCR/D18 region is a forward tailwind (realized fwd OCR ~+4%) and rental yield is solid at 4.1-4.5% on a low quantum, but a large 1,313 sqft floorplate sells at a structurally lower PSF and is the slowest-moving unit type in an old project. Appreciation 6.14% is well-supported (243 txns) but trailing CAGR has ~0 forward power. Fair, liquid, income-friendly, but no clear value edge.",
+      "red_flags": [
+        "~65yr lease remaining (built 1996, 99yr from 1992) — lease decay drag over a 5-7yr hold",
+        "Asking $914 psf is at-market vs verified $911-925 psf avg, so -14.5% cheap signal is an age/tenure artifact not a real discount",
+        "Old development (very_old_property, very_low_psf flags) with mixed resident reviews on living standards",
+        "Large 1,313 sqft 3BR is the slowest-moving unit type / lower-PSF floorplate"
+      ],
+      "catalysts": [
+        "Simei MRT (EWL) and Eastpoint Mall within reach; mature Tampines/Simei amenities",
+        "Low quantum ($1.2M) with 4.1-4.5% rental yield supports cashflow",
+        "OCR/D18 region carries the strongest realized forward appreciation (~+4%)"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 913.94,
+        "beds": 3,
+        "sqft": 1313
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large 1,313 sqft 3BR in an old (1996, 99yr-from-1992) Simei mass-market condo. Asking $914 psf sits right at the verified market (avg $911-925 psf last 12mo), so the algo's -14.5% cheap signal is mostly a tenure/age artifact, not a true bargain. Good entry quantum and yield, but lease decay caps a 5-7yr investment upside.",
+        "rating_rationale": "Verified URA-backed transactions show Melville Park traded $885-1,080 psf over the last 12 months (avg ~$911-925), so the $914 psf asking is at-market, NOT a -14.5% discount. With ~65yr lease remaining and a 1996 vintage, the unit faces accelerating lease-decay drag over a 5-7yr hold. OCR/D18 region is a forward tailwind (realized fwd OCR ~+4%) and rental yield is solid at 4.1-4.5% on a low quantum, but a large 1,313 sqft floorplate sells at a structurally lower PSF and is the slowest-moving unit type in an old project. Appreciation 6.14% is well-supported (243 txns) but trailing CAGR has ~0 forward power. Fair, liquid, income-friendly, but no clear value edge.",
+        "red_flags": [
+          "~65yr lease remaining (built 1996, 99yr from 1992) — lease decay drag over a 5-7yr hold",
+          "Asking $914 psf is at-market vs verified $911-925 psf avg, so -14.5% cheap signal is an age/tenure artifact not a real discount",
+          "Old development (very_old_property, very_low_psf flags) with mixed resident reviews on living standards",
+          "Large 1,313 sqft 3BR is the slowest-moving unit type / lower-PSF floorplate"
+        ],
+        "catalysts": [
+          "Simei MRT (EWL) and Eastpoint Mall within reach; mature Tampines/Simei amenities",
+          "Low quantum ($1.2M) with 4.1-4.5% rental yield supports cashflow",
+          "OCR/D18 region carries the strongest realized forward appreciation (~+4%)"
+        ],
+        "rental_assessment": "Strong and reliable: documented 4.1-4.5% gross yield on a $1.2M quantum, backed by steady Simei/Tampines tenant demand and proximity to Simei MRT and the Changi Business Park employment belt.",
+        "appreciation_assessment": "Capped. Trailing 6.14% CAGR (well-supported, 243 txns) has ~0 forward power, and with only ~65yr lease left, lease decay structurally limits capital appreciation over a 5-7yr hold despite the favourable OCR region tailwind."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-melville-park-500112302",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

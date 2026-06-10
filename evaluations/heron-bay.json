@@ -1,0 +1,63 @@
+{
+  "condo": "Heron Bay",
+  "slug": "heron-bay",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 99LH 4BR EC (Heron Bay, D19 Upper Serangoon/Hougang) at $1.988M / $1,251 psf for a large 1,589 sqft unit. The $1,251 psf sits mid-range of recent $1,202-$1,557 project transactions and the arena Elo is strong (1,478), but a near-$2M 4BR with LRT-only access (1.24km) in OCR Hougang is a niche, transit-dependent exit.",
+      "rating_rationale": "Web check: Heron Bay is a 394-unit privatised EC (2016) transacting $1,202-$1,557 psf over the last year — so the $1,251 psf asking is fair/mid-range, not a discount. The strong arena record (287-124, Elo 1,478) reflects the value quantum and large EC format. But there is no URA appreciation data, the unit relies on Kangkar LRT (1.24km, not MRT), and a $1.988M 4BR is a family-only pool at the upper edge of the deep band. EC liquidity is decent once privatised, but the transit gap and format keep this Neutral.",
+      "red_flags": [
+        "LRT-only (1.24km Kangkar), no MRT — transit-dependent OCR Hougang",
+        "$1.99M 4BR — family-only resale pool at the band's upper edge",
+        "No URA appreciation/transaction data to anchor upside",
+        "99-year leasehold EC (2016)"
+      ],
+      "catalysts": [
+        "394-unit privatised EC — reasonable liquidity for the segment",
+        "Fair $1,251 psf within the recent transacted range",
+        "Hougang/Serangoon mature-estate amenities; Cross Island Line spillover in D19"
+      ],
+      "as_of": {
+        "price": 1988000,
+        "psf": 1251.1,
+        "beds": 4,
+        "sqft": 1589.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99LH 4BR EC (Heron Bay, D19 Upper Serangoon/Hougang) at $1.988M / $1,251 psf for a large 1,589 sqft unit. The $1,251 psf sits mid-range of recent $1,202-$1,557 project transactions and the arena Elo is strong (1,478), but a near-$2M 4BR with LRT-only access (1.24km) in OCR Hougang is a niche, transit-dependent exit.",
+        "rating": "Neutral",
+        "rating_rationale": "Web check: Heron Bay is a 394-unit privatised EC (2016) transacting $1,202-$1,557 psf over the last year — so the $1,251 psf asking is fair/mid-range, not a discount. The strong arena record (287-124, Elo 1,478) reflects the value quantum and large EC format. But there is no URA appreciation data, the unit relies on Kangkar LRT (1.24km, not MRT), and a $1.988M 4BR is a family-only pool at the upper edge of the deep band. EC liquidity is decent once privatised, but the transit gap and format keep this Neutral.",
+        "red_flags": [
+          "LRT-only (1.24km Kangkar), no MRT — transit-dependent OCR Hougang",
+          "$1.99M 4BR — family-only resale pool at the band's upper edge",
+          "No URA appreciation/transaction data to anchor upside",
+          "99-year leasehold EC (2016)"
+        ],
+        "catalysts": [
+          "394-unit privatised EC — reasonable liquidity for the segment",
+          "Fair $1,251 psf within the recent transacted range",
+          "Hougang/Serangoon mature-estate amenities; Cross Island Line spillover in D19"
+        ],
+        "rental_assessment": "Hougang family-rental demand is moderate; a large 4BR with only LRT access yields ~3% and draws a shallow tenant pool.",
+        "appreciation_assessment": "No project URA data; privatised D19 EC should track OCR mid-single-digits, but LRT-only access and the 4BR format temper upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-heron-bay-24845427",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

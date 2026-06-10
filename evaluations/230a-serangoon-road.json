@@ -1,0 +1,63 @@
+{
+  "condo": "230A Serangoon road",
+  "slug": "230a-serangoon-road",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A freehold shophouse/walk-up strata unit on Serangoon Road in Little India, tagged '4BR' in just 775 sqft — a subdivided older property with no condo facilities and no URA price series. High Elo is a freehold-plus-location proxy artifact; the actual product is an illiquid niche walk-up.",
+      "rating_rationale": "Address resolves to a shophouse/walk-up in Little India, not a facilities condo. '4BR in 775 sqft' is a crammed subdivision; $1,780 psf is steep for an old no-facility walk-up. Missing built_year and zero URA transactions mean no appreciation or liquidity read. Walk-up/shophouse strata exits are slow and buyer-specific. Elo 1399 overstates it because the model rewards FH + central location without seeing the product type.",
+      "red_flags": [
+        "Shophouse/walk-up product, not a condo — no facilities, illiquid niche exit",
+        "Missing built_year — likely an old property with financing/maintenance concerns",
+        "No URA transaction data — no appreciation or liquidity signal",
+        "'4BR' in 775 sqft is an implausible subdivision; high Elo is a proxy artifact"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "370m to Farrer Park MRT, Little India location"
+      ],
+      "as_of": {
+        "price": 1380000,
+        "psf": 1780.65,
+        "beds": 4,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold shophouse/walk-up strata unit on Serangoon Road in Little India, tagged '4BR' in just 775 sqft — a subdivided older property with no condo facilities and no URA price series. High Elo is a freehold-plus-location proxy artifact; the actual product is an illiquid niche walk-up.",
+        "rating": "Avoid",
+        "rating_rationale": "Address resolves to a shophouse/walk-up in Little India, not a facilities condo. '4BR in 775 sqft' is a crammed subdivision; $1,780 psf is steep for an old no-facility walk-up. Missing built_year and zero URA transactions mean no appreciation or liquidity read. Walk-up/shophouse strata exits are slow and buyer-specific. Elo 1399 overstates it because the model rewards FH + central location without seeing the product type.",
+        "red_flags": [
+          "Shophouse/walk-up product, not a condo — no facilities, illiquid niche exit",
+          "Missing built_year — likely an old property with financing/maintenance concerns",
+          "No URA transaction data — no appreciation or liquidity signal",
+          "'4BR' in 775 sqft is an implausible subdivision; high Elo is a proxy artifact"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "370m to Farrer Park MRT, Little India location"
+        ],
+        "rental_assessment": "Walk-up units near Little India rent to budget tenants; demand exists but a cramped 4-room split at $1.38M offers weak per-sqft economics.",
+        "appreciation_assessment": "No data. Old freehold central walk-ups can hold value but rarely outperform; illiquidity caps realizable upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "No project data; conservative for old illiquid walk-up despite FH/central location"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-230a-serangoon-road-60130365",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

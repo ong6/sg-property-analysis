@@ -54,6 +54,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-boathouse-residences-60243553",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Low-quantum ($800k) 1BR in a well-reviewed D19 project, asking $1,282 psf near the bottom of the verified $1,247-1,557 psf range — a modest but real discount with steady demonstrated appreciation and a 2030 CRL catalyst.",
+      "rating_rationale": "The web verifies the algo's cheapness as real-but-modest: Boathouse's 12-month range is $1,247-$1,557 psf (avg ~$1,406), and this 624 sqft 1BR asks $1,282.05 psf ($800k) — toward the low end, and notably a 1BR (smaller units normally command HIGHER psf), so $1,282 for a 1BR is genuinely on the cheaper side. The dossier's psf_premium_vs_cohort of -4.7% on 10 txns is honest and well-supported (decent cohort depth, modest discount), and age_adj_premium of -25.1% reflects a fairly-priced 2015 leasehold. Project quality is good (8.3/10, higher ceilings, resort facilities, no major defects). D19 is OCR with stronger realized forward returns than CCR (v3.4 region prior), demonstrated +10.76% PSF growth 2023-26, and the Cross Island Line (Hougang NEL interchange, ~2030) is a confirmed dated catalyst. The $800k quantum keeps liquidity and yield healthy for a 1BR. Not Strong Buy because the discount is only modest (~5% vs cohort) — this is fair-to-slightly-cheap rather than a steal — but the combination of low quantum, verified pricing, region tailwind and a real MRT catalyst justifies a Buy.",
+      "red_flags": [
+        "Discount vs same-size cohort is modest (-4.7%) — this is fairly priced, not a deep bargain",
+        "99-year lease from 2011 (~84 yrs left) — lease decay clock is running",
+        "624 sqft 1BR — smaller exit segment, though low $800k quantum mitigates liquidity risk"
+      ],
+      "catalysts": [
+        "Cross Island Line Phase 1 (~2030) with Hougang NEL interchange — confirmed, dated regional connectivity upgrade for D19",
+        "Verified asking near the bottom of the project range ($1,282 vs ~$1,406 psf avg) for a 1BR",
+        "Demonstrated steady appreciation (+10.76% PSF 2023-26) and OCR region with stronger forward returns than CCR"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1282.05,
+        "beds": 1,
+        "sqft": 624
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Low-quantum ($800k) 1BR in a well-reviewed D19 project, asking $1,282 psf near the bottom of the verified $1,247-1,557 psf range — a modest but real discount with steady demonstrated appreciation and a 2030 CRL catalyst.",
+        "rating_rationale": "The web verifies the algo's cheapness as real-but-modest: Boathouse's 12-month range is $1,247-$1,557 psf (avg ~$1,406), and this 624 sqft 1BR asks $1,282.05 psf ($800k) — toward the low end, and notably a 1BR (smaller units normally command HIGHER psf), so $1,282 for a 1BR is genuinely on the cheaper side. The dossier's psf_premium_vs_cohort of -4.7% on 10 txns is honest and well-supported (decent cohort depth, modest discount), and age_adj_premium of -25.1% reflects a fairly-priced 2015 leasehold. Project quality is good (8.3/10, higher ceilings, resort facilities, no major defects). D19 is OCR with stronger realized forward returns than CCR (v3.4 region prior), demonstrated +10.76% PSF growth 2023-26, and the Cross Island Line (Hougang NEL interchange, ~2030) is a confirmed dated catalyst. The $800k quantum keeps liquidity and yield healthy for a 1BR. Not Strong Buy because the discount is only modest (~5% vs cohort) — this is fair-to-slightly-cheap rather than a steal — but the combination of low quantum, verified pricing, region tailwind and a real MRT catalyst justifies a Buy.",
+        "red_flags": [
+          "Discount vs same-size cohort is modest (-4.7%) — this is fairly priced, not a deep bargain",
+          "99-year lease from 2011 (~84 yrs left) — lease decay clock is running",
+          "624 sqft 1BR — smaller exit segment, though low $800k quantum mitigates liquidity risk"
+        ],
+        "catalysts": [
+          "Cross Island Line Phase 1 (~2030) with Hougang NEL interchange — confirmed, dated regional connectivity upgrade for D19",
+          "Verified asking near the bottom of the project range ($1,282 vs ~$1,406 psf avg) for a 1BR",
+          "Demonstrated steady appreciation (+10.76% PSF 2023-26) and OCR region with stronger forward returns than CCR"
+        ],
+        "appreciation_assessment": "Reported 5.41% 5yr CAGR on 139 txns is a robust sample and corroborated by the independent +10.76% 2023-26 PSF print; per v3.4 I treat trailing appreciation as ~0 forward power but here it confirms genuine, liquid demand rather than a thin-data quirk.",
+        "rental_assessment": "624 sqft 1BR at $800k in an established D19 project with resort facilities supports a competitive gross yield; Hougang/Sengkang rental demand is steady and the low quantum keeps the yield math favorable."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-boathouse-residences-60157772",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "condo": "Hundred Palms Residences",
+  "slug": "hundred-palms-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Hundred Palms Residences is an EC in D19 Hougang/Serangoon North (TOP 2020), 3BR 1,001 sqft at $1.87M / $1,868 psf, with the future CR9 Serangoon North MRT (CRL ~2030) ~990m away. A well-regarded sold-out EC, but $1,868 psf is already high for a 5-yr-old EC and the MRT is a 990m walk.",
+      "rating_rationale": "Hundred Palms is a popular EC that sold out fast; ECs re-rate on privatization (~2027 for this 2020 TOP) which is a real catalyst. $1.87M quantum is in the liquid band and efficient 1,001 sqft 3BR has broad upgrader appeal. But $1,868 psf has already captured much of the EC re-rating, the future CR9 station is ~990m (12-min walk, outside the strong-uplift 500m band), and no URA series is attached. Balanced — a sound but fully-priced hold.",
+      "red_flags": [
+        "$1,868 psf already rich for a 5-yr-old EC — much of the privatization premium captured",
+        "Future CR9 MRT ~990m away — outside the 500m strong-uplift band, long walk",
+        "99-yr leasehold; no URA transaction data attached to the dossier"
+      ],
+      "catalysts": [
+        "EC privatization re-rating (full open market ~2027)",
+        "Future CR9 Serangoon North MRT (Cross Island Line ~2030) in the vicinity",
+        "$1.87M in the liquid band; efficient 3BR with strong HDB-upgrader appeal",
+        "Established, well-built, oversubscribed EC with good estate quality"
+      ],
+      "as_of": {
+        "price": 1870000,
+        "psf": 1868.13,
+        "beds": 3,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Hundred Palms Residences is an EC in D19 Hougang/Serangoon North (TOP 2020), 3BR 1,001 sqft at $1.87M / $1,868 psf, with the future CR9 Serangoon North MRT (CRL ~2030) ~990m away. A well-regarded sold-out EC, but $1,868 psf is already high for a 5-yr-old EC and the MRT is a 990m walk.",
+        "rating": "Neutral",
+        "rating_rationale": "Hundred Palms is a popular EC that sold out fast; ECs re-rate on privatization (~2027 for this 2020 TOP) which is a real catalyst. $1.87M quantum is in the liquid band and efficient 1,001 sqft 3BR has broad upgrader appeal. But $1,868 psf has already captured much of the EC re-rating, the future CR9 station is ~990m (12-min walk, outside the strong-uplift 500m band), and no URA series is attached. Balanced — a sound but fully-priced hold.",
+        "red_flags": [
+          "$1,868 psf already rich for a 5-yr-old EC — much of the privatization premium captured",
+          "Future CR9 MRT ~990m away — outside the 500m strong-uplift band, long walk",
+          "99-yr leasehold; no URA transaction data attached to the dossier"
+        ],
+        "catalysts": [
+          "EC privatization re-rating (full open market ~2027)",
+          "Future CR9 Serangoon North MRT (Cross Island Line ~2030) in the vicinity",
+          "$1.87M in the liquid band; efficient 3BR with strong HDB-upgrader appeal",
+          "Established, well-built, oversubscribed EC with good estate quality"
+        ],
+        "rental_assessment": "Reasonable — Serangoon/Hougang family rental demand is steady once MOP-unrestricted; yield ~3-3.5%.",
+        "appreciation_assessment": "EC privatization and eventual CRL provide upside, but at $1,868 psf much is priced in; expect moderate appreciation around OCR-plus (~4%).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D19 EC post-privatization prior + CR9 future-MRT vicinity, tempered by rich entry PSF"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hundred-palms-residences-500107047",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

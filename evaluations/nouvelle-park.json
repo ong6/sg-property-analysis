@@ -1,0 +1,63 @@
+{
+  "condo": "Nouvelle Park",
+  "slug": "nouvelle-park",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 32-year-old freehold 3BR in D19 priced at $1,803 PSF — a 27% premium to the project's $1,419 URA median PSF with no clear justification. Old age, sub-100 score, walkability concerns to the future CRL station and a thin 21-txn series make this an easy pass.",
+      "rating_rationale": "Asking $1,803 PSF vs $1,419 URA median = +27% over recent transactions, a steep premium for a 1994-built freehold. score_1000 of just 126 is the worst in the batch. 900m/11-min walk to the future CR9 Serangoon North (CRL ~2030) is too far to capture the MRT uplift. At $2.0M for a dated 3BR the unit competes against far newer D19 stock.",
+      "red_flags": [
+        "+27% asking PSF over URA median with no catalyst",
+        "32-year-old building — maintenance and resale drag",
+        "900m to MRT — outside the uplift radius",
+        "lowest technical score in batch (126)",
+        "thin 21-transaction appreciation series"
+      ],
+      "catalysts": [
+        "Cross Island Line CR9 ~2030 (but 900m away)",
+        "freehold tenure preserves long-term optionality"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1803.43,
+        "beds": 3,
+        "sqft": 1109.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 32-year-old freehold 3BR in D19 priced at $1,803 PSF — a 27% premium to the project's $1,419 URA median PSF with no clear justification. Old age, sub-100 score, walkability concerns to the future CRL station and a thin 21-txn series make this an easy pass.",
+        "rating": "Avoid",
+        "rating_rationale": "Asking $1,803 PSF vs $1,419 URA median = +27% over recent transactions, a steep premium for a 1994-built freehold. score_1000 of just 126 is the worst in the batch. 900m/11-min walk to the future CR9 Serangoon North (CRL ~2030) is too far to capture the MRT uplift. At $2.0M for a dated 3BR the unit competes against far newer D19 stock.",
+        "red_flags": [
+          "+27% asking PSF over URA median with no catalyst",
+          "32-year-old building — maintenance and resale drag",
+          "900m to MRT — outside the uplift radius",
+          "lowest technical score in batch (126)",
+          "thin 21-transaction appreciation series"
+        ],
+        "catalysts": [
+          "Cross Island Line CR9 ~2030 (but 900m away)",
+          "freehold tenure preserves long-term optionality"
+        ],
+        "rental_assessment": "Mature residential pocket with modest tenant demand; yield is unremarkable for a $2M outlay on aged stock.",
+        "appreciation_assessment": "URA shows 4.66%/yr but on only 21 transactions; the +27% asking premium effectively front-loads any future gain, capping upside.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nouvelle-park-500162402",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

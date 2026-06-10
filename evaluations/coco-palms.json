@@ -60,6 +60,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-coco-palms-25592742",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "The cleanest name of the cohort: a cheap small unit in a proven-outperforming OCR mega-condo with deep, trustworthy transaction data and a dated MRT catalyst. Value, liquidity and region all align.",
+      "rating_rationale": "Asking $1,391 psf for a 624 sqft unit sits well below the project's recent small-unit prints — a 463 sqft unit hit $1,836 psf (Jun 2025) and a 743 sqft unit went for $1,696 psf (Jan 2026), with a 12-month project avg of ~$1,684 psf. So the -13.4% age-adj and -17.7% cohort premiums are backed by real, recent, same-size comparables. Crucially the data is deep — 234 appreciation txns and 18 cohort txns — so this is not a thin-data quirk; confidence is high. D18 is OCR, the strongest forward region under v3.4 priors (realized fwd ~+4.0%), and Coco Palms has independently been documented as a top-performing 99LH condo 2014-2025. The +6.3% trailing CAGR is treated as story not guarantee, but here it is corroborated by a confirmed catalyst.",
+      "red_flags": [
+        "99-year leasehold from 2008 (~82 years left) — fine now but the clock matters on a 5-7yr hold-and-exit",
+        "944-unit mega-development means heavy internal supply competition on both resale and rental at any given time",
+        "Asking $1,391 psf is at/near the bottom of the recent range — verify the specific unit's facing/floor isn't the reason for the discount"
+      ],
+      "catalysts": [
+        "Cross Island Line Pasir Ris interchange (CR5, Phase 1 ~2030) plus CRL-Punggol Extension (~2032), both confirmed and under/approaching construction",
+        "Verified ~17% discount to recent same-size transactions on deep liquidity",
+        "OCR region with the strongest realized forward appreciation in the v3.4 backtest",
+        "Documented top-quartile historical ROI vs 99LH peers; resort-style amenities support rental demand"
+      ],
+      "as_of": {
+        "price": 868000,
+        "psf": 1391.03,
+        "beds": 1,
+        "sqft": 624
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "The cleanest name of the cohort: a cheap small unit in a proven-outperforming OCR mega-condo with deep, trustworthy transaction data and a dated MRT catalyst. Value, liquidity and region all align.",
+        "rating_rationale": "Asking $1,391 psf for a 624 sqft unit sits well below the project's recent small-unit prints — a 463 sqft unit hit $1,836 psf (Jun 2025) and a 743 sqft unit went for $1,696 psf (Jan 2026), with a 12-month project avg of ~$1,684 psf. So the -13.4% age-adj and -17.7% cohort premiums are backed by real, recent, same-size comparables. Crucially the data is deep — 234 appreciation txns and 18 cohort txns — so this is not a thin-data quirk; confidence is high. D18 is OCR, the strongest forward region under v3.4 priors (realized fwd ~+4.0%), and Coco Palms has independently been documented as a top-performing 99LH condo 2014-2025. The +6.3% trailing CAGR is treated as story not guarantee, but here it is corroborated by a confirmed catalyst.",
+        "red_flags": [
+          "99-year leasehold from 2008 (~82 years left) — fine now but the clock matters on a 5-7yr hold-and-exit",
+          "944-unit mega-development means heavy internal supply competition on both resale and rental at any given time",
+          "Asking $1,391 psf is at/near the bottom of the recent range — verify the specific unit's facing/floor isn't the reason for the discount"
+        ],
+        "catalysts": [
+          "Cross Island Line Pasir Ris interchange (CR5, Phase 1 ~2030) plus CRL-Punggol Extension (~2032), both confirmed and under/approaching construction",
+          "Verified ~17% discount to recent same-size transactions on deep liquidity",
+          "OCR region with the strongest realized forward appreciation in the v3.4 backtest",
+          "Documented top-quartile historical ROI vs 99LH peers; resort-style amenities support rental demand"
+        ],
+        "appreciation_assessment": "Trailing +6.3% on 234 txns is robust data; I discount its forward predictiveness per v3.4 but here it is reinforced by the dated CRL catalyst and OCR tailwind, making the upside case structurally sound rather than momentum-driven.",
+        "rental_assessment": "3.5% gross yield with strong tenant demand from Pasir Ris/Changi Business Park/airport catchment; resort facilities and the coming CRL link support sustained rentability. Solid for the region."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-coco-palms-500159718",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

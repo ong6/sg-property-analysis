@@ -56,6 +56,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-residences-88-500113769",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Tiny 28-unit freehold boutique block at 88 Lorong Marican, D14. The eye-catching -18.9% 'cheap' signal rests on essentially no data (1 cohort txn, regional-baseline appreciation, 9 txns) and is most likely a data quirk.",
+      "rating_rationale": "psf_cohort_txns = 1 and appreciation is a regional_baseline fallback (not real project CAGR) over just 9 txns — exactly the thin-data quirk v3.4 says to distrust. Web data shows the project trades roughly $1,087-$1,575 psf with a recent high of $1,575 psf (Dec 2025, a 441 sqft unit); the larger 742 sqft 2BR at $1,481 psf ($1,099k) is plausible but far from a screaming bargain once you account for small units pulling PSF up. Freehold is not a forward edge. 28-unit boutique = thin liquidity and weak facilities. No dated catalyst; D14 RCR baseline (~+3.5%) is the realistic forward.",
+      "red_flags": [
+        "psf_cohort_txns = 1 and appreciation_source = regional_baseline (9 txns) — the -18.9% cheapness is statistically unreliable",
+        "28-unit boutique block: thin resale liquidity, minimal facilities, exit risk on a 5-7yr hold",
+        "Project's recent realized PSF (~$1,087-$1,575) does not corroborate a deep discount at $1,481 psf",
+        "Geylang fringe (Lorong Marican) locale; financing/stigma considerations"
+      ],
+      "catalysts": [
+        "Freehold and quiet boutique setting (livability appeal, not a price edge)",
+        "Kembangan/Eunos EWL access ~ walkable; broad Paya Lebar rejuvenation"
+      ],
+      "as_of": {
+        "price": 1099000,
+        "psf": 1481.13,
+        "beds": 2,
+        "sqft": 742
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Tiny 28-unit freehold boutique block at 88 Lorong Marican, D14. The eye-catching -18.9% 'cheap' signal rests on essentially no data (1 cohort txn, regional-baseline appreciation, 9 txns) and is most likely a data quirk.",
+        "rating_rationale": "psf_cohort_txns = 1 and appreciation is a regional_baseline fallback (not real project CAGR) over just 9 txns — exactly the thin-data quirk v3.4 says to distrust. Web data shows the project trades roughly $1,087-$1,575 psf with a recent high of $1,575 psf (Dec 2025, a 441 sqft unit); the larger 742 sqft 2BR at $1,481 psf ($1,099k) is plausible but far from a screaming bargain once you account for small units pulling PSF up. Freehold is not a forward edge. 28-unit boutique = thin liquidity and weak facilities. No dated catalyst; D14 RCR baseline (~+3.5%) is the realistic forward.",
+        "red_flags": [
+          "psf_cohort_txns = 1 and appreciation_source = regional_baseline (9 txns) — the -18.9% cheapness is statistically unreliable",
+          "28-unit boutique block: thin resale liquidity, minimal facilities, exit risk on a 5-7yr hold",
+          "Project's recent realized PSF (~$1,087-$1,575) does not corroborate a deep discount at $1,481 psf",
+          "Geylang fringe (Lorong Marican) locale; financing/stigma considerations"
+        ],
+        "catalysts": [
+          "Freehold and quiet boutique setting (livability appeal, not a price edge)",
+          "Kembangan/Eunos EWL access ~ walkable; broad Paya Lebar rejuvenation"
+        ],
+        "rental_assessment": "Reported avg rent ~$3k and ~3.4% current yield — sub-par for the $1.1M outlay.",
+        "appreciation_assessment": "Appreciation figure is a regional baseline placeholder, not evidence; treat forward as district-typical (~+3.5%) with extra discount for boutique illiquidity."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-residences-88-500113769",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

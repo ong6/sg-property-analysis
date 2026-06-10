@@ -1,0 +1,61 @@
+{
+  "condo": "Varsity Park Condominium",
+  "slug": "varsity-park-condominium",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 1,894sqft 4BR in D05 (One-North/Clementi RCR) priced at $1,510 PSF, right on the $1,504 URA median, with a strong 6.42% resale CAGR over 84 transactions. Honest, well-supported value but the $2.86M ticket and oversized family layout sit outside the deep buyer band.",
+      "rating_rationale": "Appreciation is genuine and reliable (6.42%/yr, 84 resale txns, no new-launch bias) and PSF is exactly market (1510 vs 1504 median). However the 1,894sqft size makes the per-PSF look cheaper than it is — the $2.86M absolute price puts it above the $1.8-2.5M liquid sweet spot, narrowing exit to family buyers only. 99LH from 2008 (~81yr remaining) is fine. Yield on a large old-ish leasehold 4BR is modest. Solid hold, not a standout buy.",
+      "red_flags": [
+        "$2.86M ticket above the deepest buyer band; 4BR family-only exit pool",
+        "No MRT info captured — D05 accessibility varies by exact location",
+        "Oversized unit makes PSF look cheaper than the absolute price implies"
+      ],
+      "catalysts": [
+        "One-North tech-hub employment demand in D05",
+        "TEL connectivity in the broader Clementi/West Coast corridor",
+        "Strong demonstrated resale appreciation track record (6.42%/yr)"
+      ],
+      "as_of": {
+        "price": 2860000,
+        "psf": 1510.03,
+        "beds": 4,
+        "sqft": 1894.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,894sqft 4BR in D05 (One-North/Clementi RCR) priced at $1,510 PSF, right on the $1,504 URA median, with a strong 6.42% resale CAGR over 84 transactions. Honest, well-supported value but the $2.86M ticket and oversized family layout sit outside the deep buyer band.",
+        "rating": "Neutral",
+        "rating_rationale": "Appreciation is genuine and reliable (6.42%/yr, 84 resale txns, no new-launch bias) and PSF is exactly market (1510 vs 1504 median). However the 1,894sqft size makes the per-PSF look cheaper than it is — the $2.86M absolute price puts it above the $1.8-2.5M liquid sweet spot, narrowing exit to family buyers only. 99LH from 2008 (~81yr remaining) is fine. Yield on a large old-ish leasehold 4BR is modest. Solid hold, not a standout buy.",
+        "red_flags": [
+          "$2.86M ticket above the deepest buyer band; 4BR family-only exit pool",
+          "No MRT info captured — D05 accessibility varies by exact location",
+          "Oversized unit makes PSF look cheaper than the absolute price implies"
+        ],
+        "catalysts": [
+          "One-North tech-hub employment demand in D05",
+          "TEL connectivity in the broader Clementi/West Coast corridor",
+          "Strong demonstrated resale appreciation track record (6.42%/yr)"
+        ],
+        "rental_assessment": "D05 has steady tenant demand from One-North and NUS, but a large 4BR is a narrow rental segment with modest gross yield at a $2.86M basis.",
+        "appreciation_assessment": "6.42%/yr resale CAGR over 84 transactions is reliable and above the RCR baseline; PSF at median leaves room but the large format caps upside relative to right-sized units.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-varsity-park-condominium-60089478",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

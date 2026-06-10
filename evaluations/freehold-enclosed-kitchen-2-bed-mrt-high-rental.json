@@ -1,0 +1,65 @@
+{
+  "condo": "⭐️FREEHOLD, ENCLOSED KITCHEN 2 BED , MRT, HIGH RENTAL",
+  "slug": "freehold-enclosed-kitchen-2-bed-mrt-high-rental",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 2BR (764 sqft) near Boon Keng MRT in D12, asking $1.59M ($2,081 psf), listed under a marketing title that masks the actual project and built_year. The PSF is high for an unspecified older FH 2BR, though it sits below new-launch The Arcady (~$2,650 psf) nearby.",
+      "rating_rationale": "$2,081 psf is a punchy price for a 764 sqft 2BR with no disclosed project name or built_year — hard to verify quality, age or the development's track record. It is cheaper than the adjacent new launch (The Arcady ~$2,650 psf), and 460m to Boon Keng MRT supports rental demand. But missing built_year and no URA series are real data gaps; the title's 'high rental' claim is unverified. Fairly priced at best, not a clear value.",
+      "red_flags": [
+        "Marketing title hides actual project name and built_year — quality/age unverifiable",
+        "$2,081 psf is high for an undisclosed older FH 2BR",
+        "No URA transaction data — no appreciation/liquidity signal",
+        "Low Elo (1029) / weak arena record despite the FH+MRT story"
+      ],
+      "catalysts": [
+        "Freehold tenure, 460m to Boon Keng MRT (NEL)",
+        "City-fringe rental catchment; below adjacent new-launch PSF",
+        "2BR has the widest tenant pool"
+      ],
+      "as_of": {
+        "price": 1590000,
+        "psf": 2081.15,
+        "beds": 2,
+        "sqft": 764.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (764 sqft) near Boon Keng MRT in D12, asking $1.59M ($2,081 psf), listed under a marketing title that masks the actual project and built_year. The PSF is high for an unspecified older FH 2BR, though it sits below new-launch The Arcady (~$2,650 psf) nearby.",
+        "rating": "Neutral",
+        "rating_rationale": "$2,081 psf is a punchy price for a 764 sqft 2BR with no disclosed project name or built_year — hard to verify quality, age or the development's track record. It is cheaper than the adjacent new launch (The Arcady ~$2,650 psf), and 460m to Boon Keng MRT supports rental demand. But missing built_year and no URA series are real data gaps; the title's 'high rental' claim is unverified. Fairly priced at best, not a clear value.",
+        "red_flags": [
+          "Marketing title hides actual project name and built_year — quality/age unverifiable",
+          "$2,081 psf is high for an undisclosed older FH 2BR",
+          "No URA transaction data — no appreciation/liquidity signal",
+          "Low Elo (1029) / weak arena record despite the FH+MRT story"
+        ],
+        "catalysts": [
+          "Freehold tenure, 460m to Boon Keng MRT (NEL)",
+          "City-fringe rental catchment; below adjacent new-launch PSF",
+          "2BR has the widest tenant pool"
+        ],
+        "rental_assessment": "A compact FH 2BR 460m from Boon Keng MRT should rent steadily to city-fringe professionals; gross yield likely ~3-3.5% at this price.",
+        "appreciation_assessment": "No data and unknown age cap confidence; city-fringe FH near MRT holds value but the high entry PSF limits upside. Flat-to-modest.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "City-fringe FH baseline; no project URA data and unknown build year"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-enclosed-kitchen-2-bed-mrt-high-rental-24885560",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

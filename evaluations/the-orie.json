@@ -1,0 +1,65 @@
+{
+  "condo": "The Orie",
+  "slug": "the-orie",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A new-launch 99-yr leasehold 4BR at The Orie, Toa Payoh (D12), 1,367sqft at $2,484 psf — about 7% below the $2,669 launch median — sitting on a huge 740-transaction base and just 410m from Braddell MRT. The strong arena Elo (1,666, 323-92 record) and below-median pricing make it the best-positioned premium entry here, though the $3.4M price and leasehold tenure cap conviction.",
+      "rating_rationale": "A rare new launch where the listing is ~7% under the project's own median PSF ($2,484 vs $2,669) on an enormous 740-txn base — strong demonstrated demand and a relative-value entry rather than a top-of-market one. Toa Payoh is a highly-sought mature central estate, Braddell MRT is 410m, and the unit is a sensible 1,367sqft 4BR. The offsets — 99-yr leasehold, $3.4M past the deepest liquidity band, and new-launch bias on the rate — keep it a Buy rather than Strong Buy, but the below-median pricing in a heavily-transacted, well-located launch is a genuinely good position.",
+      "red_flags": [
+        "$3.4M above the deepest-liquidity band",
+        "99-yr leasehold (new launch)",
+        "New-launch bias — headline appreciation not yet resale-proven",
+        "No built year confirmed in dossier"
+      ],
+      "catalysts": [
+        "Listed ~7% below the project's own median PSF",
+        "410m to Braddell NS-line MRT in mature Toa Payoh",
+        "Deep demand — 740 txn and a 323-92 arena record (Elo 1,666)"
+      ],
+      "as_of": {
+        "price": 3394987,
+        "psf": 2483.53,
+        "beds": 4,
+        "sqft": 1367.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new-launch 99-yr leasehold 4BR at The Orie, Toa Payoh (D12), 1,367sqft at $2,484 psf — about 7% below the $2,669 launch median — sitting on a huge 740-transaction base and just 410m from Braddell MRT. The strong arena Elo (1,666, 323-92 record) and below-median pricing make it the best-positioned premium entry here, though the $3.4M price and leasehold tenure cap conviction.",
+        "rating": "Buy",
+        "rating_rationale": "A rare new launch where the listing is ~7% under the project's own median PSF ($2,484 vs $2,669) on an enormous 740-txn base — strong demonstrated demand and a relative-value entry rather than a top-of-market one. Toa Payoh is a highly-sought mature central estate, Braddell MRT is 410m, and the unit is a sensible 1,367sqft 4BR. The offsets — 99-yr leasehold, $3.4M past the deepest liquidity band, and new-launch bias on the rate — keep it a Buy rather than Strong Buy, but the below-median pricing in a heavily-transacted, well-located launch is a genuinely good position.",
+        "red_flags": [
+          "$3.4M above the deepest-liquidity band",
+          "99-yr leasehold (new launch)",
+          "New-launch bias — headline appreciation not yet resale-proven",
+          "No built year confirmed in dossier"
+        ],
+        "catalysts": [
+          "Listed ~7% below the project's own median PSF",
+          "410m to Braddell NS-line MRT in mature Toa Payoh",
+          "Deep demand — 740 txn and a 323-92 arena record (Elo 1,666)"
+        ],
+        "rental_assessment": "Toa Payoh's central location and family appeal give a 4BR steady rental demand from professionals/families, though yield on $3.4M will be sub-3%.",
+        "appreciation_assessment": "No clean resale series yet (new launch, bias flagged), but Toa Payoh's scarcity of new condos and central location historically support above-OCR growth; entering below the launch median improves the odds.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Central D12 new-launch estimate; no resale series available yet"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-orie-500107836",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

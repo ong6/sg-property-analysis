@@ -56,6 +56,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500010564",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Aging (2002) Sengkang MRT-linked leasehold priced at the top of its own recent range, not below it — asking $1,430 psf vs recent comparable transactions of $1,379-$1,409; the high trailing CAGR carries no forward weight.",
+      "rating_rationale": "The value signal is weak/absent. Recent deals (Nov-2025 to Jan-2026) printed $1,379-$1,409 psf, and the current PSF range tops out near $1,496; the asking $1,430 psf is at the upper end of recent transactions, not a discount. The algo's age-adj premium is only -1.0% (essentially fairly priced), and the +9.3% vs-cohort premium rests on just 3 cohort txns, so there's no robust cheapness to lead with. The headline 7.65% trailing CAGR (and +20% 2023-26 PSF) is exactly the trailing momentum the v3.4 backtest shows has ~0 forward power — story only. Physically it's a 24-year-old 99yr-from-2000 leasehold (~74 years left), described as dated with outdated gym/dark lift lobbies, pest issues, and pneumatic-waste noise. The one genuine merit is direct integration with Sengkang MRT and Compass One mall (D19 OCR, a favourable forward region), which keeps it from an Avoid but does not justify paying near the top of the range.",
+      "red_flags": [
+        "Asking $1,430 psf is at the high end of recent transactions ($1,379-$1,409), so no real value cushion",
+        "vs-cohort +9.3% premium based on only 3 txns — thin, unreliable",
+        "Trailing 7.65% CAGR is non-predictive momentum, not a forward edge",
+        "24-year-old leasehold (~74 yrs left); dated facilities, pest and pneumatic-waste noise complaints",
+        "very_old_property flag"
+      ],
+      "catalysts": [
+        "Direct connection to Sengkang MRT and Compass One mall (existing convenience, not a new catalyst)",
+        "D19 OCR location with broader Sengkang/Punggol growth, but no fresh project-specific catalyst"
+      ],
+      "as_of": {
+        "price": 985000,
+        "psf": 1429.61,
+        "beds": 1,
+        "sqft": 689
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Aging (2002) Sengkang MRT-linked leasehold priced at the top of its own recent range, not below it — asking $1,430 psf vs recent comparable transactions of $1,379-$1,409; the high trailing CAGR carries no forward weight.",
+        "rating_rationale": "The value signal is weak/absent. Recent deals (Nov-2025 to Jan-2026) printed $1,379-$1,409 psf, and the current PSF range tops out near $1,496; the asking $1,430 psf is at the upper end of recent transactions, not a discount. The algo's age-adj premium is only -1.0% (essentially fairly priced), and the +9.3% vs-cohort premium rests on just 3 cohort txns, so there's no robust cheapness to lead with. The headline 7.65% trailing CAGR (and +20% 2023-26 PSF) is exactly the trailing momentum the v3.4 backtest shows has ~0 forward power — story only. Physically it's a 24-year-old 99yr-from-2000 leasehold (~74 years left), described as dated with outdated gym/dark lift lobbies, pest issues, and pneumatic-waste noise. The one genuine merit is direct integration with Sengkang MRT and Compass One mall (D19 OCR, a favourable forward region), which keeps it from an Avoid but does not justify paying near the top of the range.",
+        "red_flags": [
+          "Asking $1,430 psf is at the high end of recent transactions ($1,379-$1,409), so no real value cushion",
+          "vs-cohort +9.3% premium based on only 3 txns — thin, unreliable",
+          "Trailing 7.65% CAGR is non-predictive momentum, not a forward edge",
+          "24-year-old leasehold (~74 yrs left); dated facilities, pest and pneumatic-waste noise complaints",
+          "very_old_property flag"
+        ],
+        "catalysts": [
+          "Direct connection to Sengkang MRT and Compass One mall (existing convenience, not a new catalyst)",
+          "D19 OCR location with broader Sengkang/Punggol growth, but no fresh project-specific catalyst"
+        ],
+        "appreciation_assessment": "The strong trailing CAGR is the weakest forward predictor per the v3.4 backtest and should not be extrapolated; with no verified discount, there is no robust forward edge.",
+        "rental_assessment": "MRT/mall-integrated location supports steady tenancy and is the main investment merit, but the dated, aging leasehold caps both rent growth and exit appeal."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500148161",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

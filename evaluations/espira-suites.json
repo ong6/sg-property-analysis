@@ -1,0 +1,119 @@
+{
+  "condo": "Espira Suites",
+  "slug": "espira-suites",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR at Espira Suites, D15 Kembangan (600m to EW6), at $1,492 PSF — ~10% below the $1,654 URA median. The catch: 1206sqft is very large for a 2BR, so this is an oversized layout inflating the absolute price, and the appreciation rate rests on a thin 14-txn series.",
+      "rating_rationale": "Freehold + 600m to MRT + D15 are genuine positives, and $1,492 PSF reads cheap vs median — but at 1206sqft this 2BR is oversized, so $1.8M is a heavy ticket for two bedrooms and PSF is flattered by the large floorplate. The 3.14%/yr appreciation comes from only 14 transactions (unreliable, and low even at face value). Boutique scale means thinner liquidity. Net: fine fundamentals, no compelling upside.",
+      "red_flags": [
+        "Oversized 1206sqft 2BR — high $1.8M ticket for the bedroom count; PSF flattered",
+        "Appreciation from only 14 URA txns — unreliable, and low (3.1%) at face value",
+        "Boutique/small development implies thinner resale liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D15",
+        "600m to Kembangan EW MRT",
+        "Below-median PSF entry"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1492.54,
+        "beds": 2,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR at Espira Suites, D15 Kembangan (600m to EW6), at $1,492 PSF — ~10% below the $1,654 URA median. The catch: 1206sqft is very large for a 2BR, so this is an oversized layout inflating the absolute price, and the appreciation rate rests on a thin 14-txn series.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold + 600m to MRT + D15 are genuine positives, and $1,492 PSF reads cheap vs median — but at 1206sqft this 2BR is oversized, so $1.8M is a heavy ticket for two bedrooms and PSF is flattered by the large floorplate. The 3.14%/yr appreciation comes from only 14 transactions (unreliable, and low even at face value). Boutique scale means thinner liquidity. Net: fine fundamentals, no compelling upside.",
+        "red_flags": [
+          "Oversized 1206sqft 2BR — high $1.8M ticket for the bedroom count; PSF flattered",
+          "Appreciation from only 14 URA txns — unreliable, and low (3.1%) at face value",
+          "Boutique/small development implies thinner resale liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D15",
+          "600m to Kembangan EW MRT",
+          "Below-median PSF entry"
+        ],
+        "rental_assessment": "Kembangan/East Coast 2BR rents well, but the large size suits a small family more than a couple; tenant pool moderate.",
+        "appreciation_assessment": "Thin data; treat as ~3-4% D15 freehold baseline with no specific catalyst.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 freehold baseline; 14-txn URA rate too thin to trust"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-espira-suites-23997470",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D15 boutique with a large 1,206 sqft 2BR. The algo's deep 'cheap' read is a size-mix artifact: the project's high average PSF is driven by 431-sqft shoeboxes, while for large units this asking is actually at the top, not a bargain.",
+      "rating_rationale": "The headline -28.6% age-adj / -8.2% cohort 'cheap' signal does not survive a same-size check. The project's ~$1,656 average PSF is set by tiny 1BRs ($1,656-$1,719 psf on 431 sqft). For large units the relevant comp is a 1,066 sqft unit that sold Sep 2025 at $1,321 psf; this listing asks $1,492 psf on an even larger 1,206 sqft — i.e. above, not below, the large-unit market. The -8.2% cohort discount rests on just 2 txns (a quirk), and the 'bedroom_sqft_mismatch' flag is the oddly large 2BR layout. Positives are real: freehold, D15 (RCR ~+3.5% fwd, Katong/East Coast desirability, Telok Kurau). But at $1.8M for a 2BR with no verified value edge and thin large-unit liquidity, it is a fair-priced freehold, not a bargain → Neutral.",
+      "red_flags": [
+        "'Cheap' signal is a size-mix artifact: project avg PSF (~$1,656) is set by 431-sqft shoeboxes; large-unit comp was $1,321 psf (1,066 sqft, Sep 2025) vs this $1,492 psf",
+        "psf_cohort_txns = 2 — the -8.2% cohort discount is statistically unreliable",
+        "bedroom_sqft_mismatch: 1,206 sqft labelled 2BR is an unusual/inefficient layout that narrows the buyer pool",
+        "$1.8M for a 2BR is a high quantum with thin resale depth for the large-unit cohort"
+      ],
+      "catalysts": [
+        "Freehold tenure in sought-after D15 (Katong / East Coast / Telok Kurau)",
+        "RCR district with steady owner-occupier demand",
+        "Large floor area suits an own-stay buyer wanting freehold space near the East Coast"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1492.54,
+        "beds": 2,
+        "sqft": 1206
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold D15 boutique with a large 1,206 sqft 2BR. The algo's deep 'cheap' read is a size-mix artifact: the project's high average PSF is driven by 431-sqft shoeboxes, while for large units this asking is actually at the top, not a bargain.",
+        "rating_rationale": "The headline -28.6% age-adj / -8.2% cohort 'cheap' signal does not survive a same-size check. The project's ~$1,656 average PSF is set by tiny 1BRs ($1,656-$1,719 psf on 431 sqft). For large units the relevant comp is a 1,066 sqft unit that sold Sep 2025 at $1,321 psf; this listing asks $1,492 psf on an even larger 1,206 sqft — i.e. above, not below, the large-unit market. The -8.2% cohort discount rests on just 2 txns (a quirk), and the 'bedroom_sqft_mismatch' flag is the oddly large 2BR layout. Positives are real: freehold, D15 (RCR ~+3.5% fwd, Katong/East Coast desirability, Telok Kurau). But at $1.8M for a 2BR with no verified value edge and thin large-unit liquidity, it is a fair-priced freehold, not a bargain → Neutral.",
+        "red_flags": [
+          "'Cheap' signal is a size-mix artifact: project avg PSF (~$1,656) is set by 431-sqft shoeboxes; large-unit comp was $1,321 psf (1,066 sqft, Sep 2025) vs this $1,492 psf",
+          "psf_cohort_txns = 2 — the -8.2% cohort discount is statistically unreliable",
+          "bedroom_sqft_mismatch: 1,206 sqft labelled 2BR is an unusual/inefficient layout that narrows the buyer pool",
+          "$1.8M for a 2BR is a high quantum with thin resale depth for the large-unit cohort"
+        ],
+        "catalysts": [
+          "Freehold tenure in sought-after D15 (Katong / East Coast / Telok Kurau)",
+          "RCR district with steady owner-occupier demand",
+          "Large floor area suits an own-stay buyer wanting freehold space near the East Coast"
+        ],
+        "appreciation_assessment": "Trailing 3.14% (14 txns) is non-predictive; once corrected for size mix there is no verified value edge, so forward expectation is roughly market-rate for a D15 freehold.",
+        "rental_assessment": "Project yield ~3.8%, but a $1.8M large 2BR likely yields below that; rental appeal of an oversized, oddly-configured 2BR is modest. More an own-stay/space play than a yield hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-espira-suites-23997470",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

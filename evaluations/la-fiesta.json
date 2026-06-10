@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-la-fiesta-500073607",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A genuinely under-priced 3BR in a deep, liquid OCR project right beside Sengkang/Buangkok MRT — the cheapness checks out against real recent transactions, and OCR is the strongest forward-return region in the v3.4 priors.",
+      "rating_rationale": "Asking $1,610 psf sits below La Fiesta's actual last-12-month 3BR transaction band of $1,724-1,882 psf (avg ~1,724-1,882) and below the cohort, supporting the algo's -7.6% age-adj and -5.4% vs-cohort premiums. Unlike the thin-data names in this batch, the cheapness rests on a deep base: 190 appreciation txns and 10 same-size cohort txns, so the discount is real rather than a 1-comparable quirk. D19/OCR realizes ~+4.0% forward (the best region in the priors), and the unit has fully sheltered 3-min MRT access plus full facilities. Trailing 6.7% CAGR is treated as story only. Score 1000=790.",
+      "red_flags": [
+        "99-yr leasehold from 2012 — ~85 yrs left, no freehold cushion (though FH is not a forward edge anyway)",
+        "Early construction defects historically (believed resolved) and recurring resident complaints about estate management/security",
+        "Sengkang has heavy future condo supply that can cap appreciation and rental pricing power"
+      ],
+      "catalysts": [
+        "Direct sheltered ~3-min walk to Sengkang/Buangkok MRT and Compass One / Sengkang Grand mall ecosystem",
+        "Asking below verified recent resale band gives margin of safety at entry",
+        "OCR forward-return premium per backtest priors (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 1820000,
+        "psf": 1610.62,
+        "beds": 3,
+        "sqft": 1130
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A genuinely under-priced 3BR in a deep, liquid OCR project right beside Sengkang/Buangkok MRT — the cheapness checks out against real recent transactions, and OCR is the strongest forward-return region in the v3.4 priors.",
+        "rating_rationale": "Asking $1,610 psf sits below La Fiesta's actual last-12-month 3BR transaction band of $1,724-1,882 psf (avg ~1,724-1,882) and below the cohort, supporting the algo's -7.6% age-adj and -5.4% vs-cohort premiums. Unlike the thin-data names in this batch, the cheapness rests on a deep base: 190 appreciation txns and 10 same-size cohort txns, so the discount is real rather than a 1-comparable quirk. D19/OCR realizes ~+4.0% forward (the best region in the priors), and the unit has fully sheltered 3-min MRT access plus full facilities. Trailing 6.7% CAGR is treated as story only. Score 1000=790.",
+        "red_flags": [
+          "99-yr leasehold from 2012 — ~85 yrs left, no freehold cushion (though FH is not a forward edge anyway)",
+          "Early construction defects historically (believed resolved) and recurring resident complaints about estate management/security",
+          "Sengkang has heavy future condo supply that can cap appreciation and rental pricing power"
+        ],
+        "catalysts": [
+          "Direct sheltered ~3-min walk to Sengkang/Buangkok MRT and Compass One / Sengkang Grand mall ecosystem",
+          "Asking below verified recent resale band gives margin of safety at entry",
+          "OCR forward-return premium per backtest priors (~+4.0%)"
+        ],
+        "rental_assessment": "Family-sized 3BR near MRT and malls rents well to HDB-upgrader-adjacent and expat-lite tenant pool; large 810-unit project keeps rental comps liquid, though abundant nearby supply limits yield upside.",
+        "appreciation_assessment": "Forward upside driven by verified value (cheap vs recent transactions) plus OCR regional tailwind rather than the 6.7% trailing CAGR, which has ~0 forward power; expect steady mid-single-digit total returns absent a new catalyst."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-la-fiesta-500073607",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

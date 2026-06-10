@@ -1,0 +1,63 @@
+{
+  "condo": "Queens",
+  "slug": "queens",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 2,230 sqft 4BR at Queens, a 2002 D03 leasehold literally on top of Queenstown MRT (170m). Excellent 6.0%/yr resale CAGR on 99 txns and priced below median at $1,785 psf, but the $3.98M quantum sits well above the liquid sweet spot, which the low score_1000 (480) reflects.",
+      "rating_rationale": "The development fundamentals are strong — 6.0%/yr resale CAGR (99 txns), 170m to Queenstown MRT, GSW catalyst, sub-median PSF ($1,785 vs $1,886) — and the high elo 1551 reflects that. But this specific $3.98M large-4BR unit sits far above the $1.8-2.5M deep-liquidity band; the buyer pool for a near-$4M 24-year-old leasehold 4BR is thin, which is exactly why score_1000 is only 480. Strong asset, weak exit liquidity at this quantum.",
+      "red_flags": [
+        "$3.98M quantum far above the liquid sweet spot; shallow buyer pool for large 4BR",
+        "2002 build (24 years old) with 99yr lease — lease decay accelerating",
+        "Large-unit illiquidity caps re-sale optionality"
+      ],
+      "catalysts": [
+        "170m to Queenstown EW MRT — top-tier connectivity",
+        "Greater Southern Waterfront transformation of D03/D04",
+        "Strong 6.0%/yr historical resale appreciation"
+      ],
+      "as_of": {
+        "price": 3980000,
+        "psf": 1784.75,
+        "beds": 4,
+        "sqft": 2230.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 2,230 sqft 4BR at Queens, a 2002 D03 leasehold literally on top of Queenstown MRT (170m). Excellent 6.0%/yr resale CAGR on 99 txns and priced below median at $1,785 psf, but the $3.98M quantum sits well above the liquid sweet spot, which the low score_1000 (480) reflects.",
+        "rating": "Neutral",
+        "rating_rationale": "The development fundamentals are strong — 6.0%/yr resale CAGR (99 txns), 170m to Queenstown MRT, GSW catalyst, sub-median PSF ($1,785 vs $1,886) — and the high elo 1551 reflects that. But this specific $3.98M large-4BR unit sits far above the $1.8-2.5M deep-liquidity band; the buyer pool for a near-$4M 24-year-old leasehold 4BR is thin, which is exactly why score_1000 is only 480. Strong asset, weak exit liquidity at this quantum.",
+        "red_flags": [
+          "$3.98M quantum far above the liquid sweet spot; shallow buyer pool for large 4BR",
+          "2002 build (24 years old) with 99yr lease — lease decay accelerating",
+          "Large-unit illiquidity caps re-sale optionality"
+        ],
+        "catalysts": [
+          "170m to Queenstown EW MRT — top-tier connectivity",
+          "Greater Southern Waterfront transformation of D03/D04",
+          "Strong 6.0%/yr historical resale appreciation"
+        ],
+        "rental_assessment": "Large 4BR rents only to families/expats; rental quantum high and tenant pool narrow despite excellent MRT access.",
+        "appreciation_assessment": "Development has appreciated strongly at 6.0%/yr, but at $3.98M further upside is gated by quantum-driven liquidity and accelerating lease decay on a 2002 99yr unit.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA 6.0%/yr discounted for quantum-driven exit risk and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-queens-25481499",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "⭐Freehold 1Km to Hong Wen School. Walk to MRT",
+  "slug": "freehold-1km-to-hong-wen-school-walk-to-mrt",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "This is The Arcady at Boon Keng (freehold, D12, 460m to NE9), a 3BR compact at $1.98M / $2,592 psf. The freehold tenure and MRT-doorstep location are attractive, but a 764 sqft 'compact' 3BR at near-$2,600 psf is full new-launch pricing with the appreciation already priced in.",
+      "rating_rationale": "The Arcady is a quality 172-unit freehold project right at Boon Keng MRT (460m) and 1km to Hong Wen — strong fundamentals. But $2,592 psf is at the top of the D12 new-launch range, and a 764 sqft compact 3BR is small for the bracket (yield/livability trade-off). No resale track record (new project). At $1.98M the ticket is liquid and freehold protects long-term value, so it balances to Neutral rather than a clear buy.",
+      "red_flags": [
+        "$2,592 psf is full new-launch pricing — little appreciation margin left",
+        "764 sqft for a '3BR' is compact, limiting family-buyer appeal at resale",
+        "No URA resale history; new launch with developer pricing baked in"
+      ],
+      "catalysts": [
+        "Freehold tenure in city-fringe D12 (rare, RCR location)",
+        "460m to NE9 Boon Keng MRT and within 1km of Hong Wen Primary",
+        "City-fringe gentrification and proximity to CBD support tenant demand"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 2591.62,
+        "beds": 3,
+        "sqft": 764.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "This is The Arcady at Boon Keng (freehold, D12, 460m to NE9), a 3BR compact at $1.98M / $2,592 psf. The freehold tenure and MRT-doorstep location are attractive, but a 764 sqft 'compact' 3BR at near-$2,600 psf is full new-launch pricing with the appreciation already priced in.",
+        "rating": "Neutral",
+        "rating_rationale": "The Arcady is a quality 172-unit freehold project right at Boon Keng MRT (460m) and 1km to Hong Wen — strong fundamentals. But $2,592 psf is at the top of the D12 new-launch range, and a 764 sqft compact 3BR is small for the bracket (yield/livability trade-off). No resale track record (new project). At $1.98M the ticket is liquid and freehold protects long-term value, so it balances to Neutral rather than a clear buy.",
+        "red_flags": [
+          "$2,592 psf is full new-launch pricing — little appreciation margin left",
+          "764 sqft for a '3BR' is compact, limiting family-buyer appeal at resale",
+          "No URA resale history; new launch with developer pricing baked in"
+        ],
+        "catalysts": [
+          "Freehold tenure in city-fringe D12 (rare, RCR location)",
+          "460m to NE9 Boon Keng MRT and within 1km of Hong Wen Primary",
+          "City-fringe gentrification and proximity to CBD support tenant demand"
+        ],
+        "rental_assessment": "Boon Keng is a solid rental micro-market (close to CBD, Novena, NE line); a compact 3BR rents well to small families and sharers, yield around market-typical given the high entry PSF.",
+        "appreciation_assessment": "Freehold city-fringe near MRT has durable appreciation potential, but buying at ~$2,600 psf new-launch level means much of the near-term upside is already captured.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "RCR/D12 freehold near-MRT prior, discounted for high new-launch entry PSF; The Arcady has no resale history"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-1km-to-hong-wen-school-walk-to-mrt-500130617",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

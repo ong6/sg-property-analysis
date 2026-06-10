@@ -1,0 +1,117 @@
+{
+  "condo": "Kent Ridge Hill Residences",
+  "slug": "kent-ridge-hill-residences",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Newly completed (2024) 1BR in D05 at $958k and $1,589 PSF, a steep discount to the $1,972 development median — but the appreciation rate is new-launch-biased and weak (1.2-1.9%/yr), as expected for a project still digesting its launch premium. Sub-$1M near One-North with upside if it converges to median.",
+      "rating_rationale": "The $1,589 PSF vs $1,972 median looks like a ~19% discount, but the project just TOP'd in 2024 so early resale prints are noisy and the rate carries new-launch bias (system already flags it). 161 txns give decent volume but the early-cycle data understates the eventual stabilized rate. Sub-$1M, 99LH 1BR near Pasir Panjang/One-North has steady rental support. Greater Southern Waterfront is a long-dated catalyst. A fair hold; the median gap is the upside, the weak/biased rate and 1BR niche are the brakes.",
+      "red_flags": [
+        "New-launch bias flagged — appreciation rate (1.2-1.9%/yr) is unreliable this early in the cycle",
+        "1BR shoebox — narrow resale demand",
+        "730m to Pasir Panjang MRT",
+        "99LH starting fresh but at a 1BR niche"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D4/5 corridor) — long-dated uplift",
+        "One-North/NUS/science-park employment demand for rentals",
+        "Discount to development median PSF leaves convergence room"
+      ],
+      "as_of": {
+        "price": 958000,
+        "psf": 1588.72,
+        "beds": 1,
+        "sqft": 603.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Newly completed (2024) 1BR in D05 at $958k and $1,589 PSF, a steep discount to the $1,972 development median — but the appreciation rate is new-launch-biased and weak (1.2-1.9%/yr), as expected for a project still digesting its launch premium. Sub-$1M near One-North with upside if it converges to median.",
+        "rating": "Neutral",
+        "rating_rationale": "The $1,589 PSF vs $1,972 median looks like a ~19% discount, but the project just TOP'd in 2024 so early resale prints are noisy and the rate carries new-launch bias (system already flags it). 161 txns give decent volume but the early-cycle data understates the eventual stabilized rate. Sub-$1M, 99LH 1BR near Pasir Panjang/One-North has steady rental support. Greater Southern Waterfront is a long-dated catalyst. A fair hold; the median gap is the upside, the weak/biased rate and 1BR niche are the brakes.",
+        "red_flags": [
+          "New-launch bias flagged — appreciation rate (1.2-1.9%/yr) is unreliable this early in the cycle",
+          "1BR shoebox — narrow resale demand",
+          "730m to Pasir Panjang MRT",
+          "99LH starting fresh but at a 1BR niche"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D4/5 corridor) — long-dated uplift",
+          "One-North/NUS/science-park employment demand for rentals",
+          "Discount to development median PSF leaves convergence room"
+        ],
+        "rental_assessment": "Strong rental fundamentals — One-North, NUS, science park, and Pasir Panjang MRT support consistent demand for compact units near $958k; good gross yield potential.",
+        "appreciation_assessment": "Reported 1.2-1.9%/yr is new-launch-biased and early-cycle; the real test is convergence toward the $1,972 median as the project matures — plausible but unproven.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kent-ridge-hill-residences-500018797",
+        "review_file": "cov_batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely under-priced 1BR in a quality 2024 Oxley project in OCR-fringe D5 — asking $1,589 psf sits at the very bottom of the project range and ~18% below the verified 1BR average of ~$1,941 psf.",
+      "rating_rationale": "The algo's cheapness is corroborated by the web: 1BR units here average ~$1,941 psf with a project range of $1,575-$2,310, and recent 2025 1BR resales printed $1,929-$2,039 psf, yet this unit asks only $1,588.72 psf ($958k). That is a real ~18% discount to its own size cohort (dossier psf_premium_vs_cohort -20.3% across 27 txns — a respectable, non-thin cohort), not a one-comparable quirk. age_adj_premium of -23.1% is the strongest robust value signal here and it holds up. D5 (Pasir Panjang) is OCR-fringe where realized forward returns are stronger (~+4%) than CCR, supporting the v3.4 region prior. Developer Oxley has no major defect history and the project won architectural awards (2024 TOP, fresh lease). I discount the low trailing appreciation_pct of 1.91% as near-meaningless (new project, ~0 forward power per backtest). Main caveats: 99-yr lease, Oxley is a high-gearing developer, and 603 sqft 1BR is a thinner exit segment. Not Strong Buy because the discount may partly reflect a less desirable stack/facing I cannot verify, but the value case is solid.",
+      "red_flags": [
+        "99-year leasehold (lease just started 2024 — full term but no FH premium)",
+        "Oxley Holdings carries high gearing / large unsold inventory; balance-sheet developer risk",
+        "603 sqft 1BR is a smaller exit segment; verify the discount isn't a poor stack/low floor/west-facing penalty"
+      ],
+      "catalysts": [
+        "Asking ~18% below verified 1BR average ($1,589 vs ~$1,941 psf) — immediate value gap if stack/facing is acceptable",
+        "OCR-fringe D5 (Pasir Panjang / one-north / Kent Ridge / NUS) — stronger realized forward returns than CCR, employment + research-hub rental demand",
+        "Fresh 2024 lease and award-winning design support resale/rental appeal"
+      ],
+      "as_of": {
+        "price": 958000,
+        "psf": 1588.72,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely under-priced 1BR in a quality 2024 Oxley project in OCR-fringe D5 — asking $1,589 psf sits at the very bottom of the project range and ~18% below the verified 1BR average of ~$1,941 psf.",
+        "rating_rationale": "The algo's cheapness is corroborated by the web: 1BR units here average ~$1,941 psf with a project range of $1,575-$2,310, and recent 2025 1BR resales printed $1,929-$2,039 psf, yet this unit asks only $1,588.72 psf ($958k). That is a real ~18% discount to its own size cohort (dossier psf_premium_vs_cohort -20.3% across 27 txns — a respectable, non-thin cohort), not a one-comparable quirk. age_adj_premium of -23.1% is the strongest robust value signal here and it holds up. D5 (Pasir Panjang) is OCR-fringe where realized forward returns are stronger (~+4%) than CCR, supporting the v3.4 region prior. Developer Oxley has no major defect history and the project won architectural awards (2024 TOP, fresh lease). I discount the low trailing appreciation_pct of 1.91% as near-meaningless (new project, ~0 forward power per backtest). Main caveats: 99-yr lease, Oxley is a high-gearing developer, and 603 sqft 1BR is a thinner exit segment. Not Strong Buy because the discount may partly reflect a less desirable stack/facing I cannot verify, but the value case is solid.",
+        "red_flags": [
+          "99-year leasehold (lease just started 2024 — full term but no FH premium)",
+          "Oxley Holdings carries high gearing / large unsold inventory; balance-sheet developer risk",
+          "603 sqft 1BR is a smaller exit segment; verify the discount isn't a poor stack/low floor/west-facing penalty"
+        ],
+        "catalysts": [
+          "Asking ~18% below verified 1BR average ($1,589 vs ~$1,941 psf) — immediate value gap if stack/facing is acceptable",
+          "OCR-fringe D5 (Pasir Panjang / one-north / Kent Ridge / NUS) — stronger realized forward returns than CCR, employment + research-hub rental demand",
+          "Fresh 2024 lease and award-winning design support resale/rental appeal"
+        ],
+        "appreciation_assessment": "Trailing appreciation_pct of 1.91% is reported on 161 txns but is essentially a new-project artifact and per the v3.4 backtest has ~0 forward power; I do not credit it. Forward thesis rests on the value gap and OCR-fringe region effect, not momentum.",
+        "rental_assessment": "603 sqft 1BR near NUS, one-north and Kent Ridge biomedical/research employment supports steady rental demand; sub-$1M entry keeps the absolute quantum and yield workable for a city-fringe 1BR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kent-ridge-hill-residences-500018797",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

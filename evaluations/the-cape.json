@@ -1,0 +1,113 @@
+{
+  "condo": "The Cape",
+  "slug": "the-cape",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 646 sqft 1BR at $1.14M in D15 East Coast, 450m to Tanjong Katong MRT (TEL). Resale-only 6.7%/yr CAGR and a $1,762 PSF ~16% under the $2,096 URA median look strong, but the rate rests on just 14 transactions, which is statistically thin.",
+      "rating_rationale": "Genuinely attractive surface: freehold, deep D15 buyer pool, 450m to a now-operational TEL station, low $1.14M quantum, and PSF ~16% below URA median $2,096. The catch is reliability — the 6.7% resale CAGR sits on only 14 URA transactions, well below the 30+ threshold for confidence, so the appreciation number is noisy and could mean-revert. A larger 646 sqft 1BR is on the bigger side for the type. Good location and entry price, but I won't rate Buy on a 14-txn rate; treat the discount-to-median as the real signal.",
+      "red_flags": [
+        "6.7%/yr CAGR from only 14 URA txns — statistically unreliable, may overstate trend",
+        "1BR in a small/older boutique stack; verify total units and rental competition",
+        "646 sqft is large for a 1BR, so absolute rent ceiling vs PSF is modest"
+      ],
+      "catalysts": [
+        "Freehold in D15 East Coast — deep, durable buyer pool",
+        "450m to Tanjong Katong MRT (TEL, operational) — transit uplift",
+        "PSF ~16% below URA median suggests room to the area mean"
+      ],
+      "as_of": {
+        "price": 1138000,
+        "psf": 1761.61,
+        "beds": 1,
+        "sqft": 646.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 646 sqft 1BR at $1.14M in D15 East Coast, 450m to Tanjong Katong MRT (TEL). Resale-only 6.7%/yr CAGR and a $1,762 PSF ~16% under the $2,096 URA median look strong, but the rate rests on just 14 transactions, which is statistically thin.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely attractive surface: freehold, deep D15 buyer pool, 450m to a now-operational TEL station, low $1.14M quantum, and PSF ~16% below URA median $2,096. The catch is reliability — the 6.7% resale CAGR sits on only 14 URA transactions, well below the 30+ threshold for confidence, so the appreciation number is noisy and could mean-revert. A larger 646 sqft 1BR is on the bigger side for the type. Good location and entry price, but I won't rate Buy on a 14-txn rate; treat the discount-to-median as the real signal.",
+        "red_flags": [
+          "6.7%/yr CAGR from only 14 URA txns — statistically unreliable, may overstate trend",
+          "1BR in a small/older boutique stack; verify total units and rental competition",
+          "646 sqft is large for a 1BR, so absolute rent ceiling vs PSF is modest"
+        ],
+        "catalysts": [
+          "Freehold in D15 East Coast — deep, durable buyer pool",
+          "450m to Tanjong Katong MRT (TEL, operational) — transit uplift",
+          "PSF ~16% below URA median suggests room to the area mean"
+        ],
+        "rental_assessment": "Good — East Coast lifestyle + TEL access keeps compact units in demand; yield ~3.5% at this quantum.",
+        "appreciation_assessment": "Discount to median is real, but the 6.7% rate is unreliable on 14 txns; assume D15 freehold mid-single-digits rather than the headline figure.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-cape-60181878",
+        "review_file": "cov_batch_11.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 2014 SOHO 1BR (3.35m ceilings) at 25 Amber Road, D15. Near the new Amber & Marine Parade TEL MRT stations (genuine catalyst). Asking $1,761 PSF sits at the low end of the project's $1,160K-$1,860K range. BUT the algo's cheap signals (-16% cohort, -17.8% age-adj) rest on psf_cohort_txns=1 and appreciation_txns=14 — too thin to verify as a real bargain.",
+      "rating_rationale": "The story is attractive: freehold, distinctive high-ceiling SOHO format, and the Thomson-East Coast Line (Amber/Marine Parade stations) is a real, recently-realized connectivity catalyst in a prime D15 (RCR) belt. However, I could not verify the algo's cheapness against actual recent 1BR transactions — the cohort signal is built on a single comparable and only 14 appreciation transactions, and the 76-unit project is too small for reliable price discovery or exit liquidity. Per v3.4 priors, a big negative premium on 1-2 comparables is likely a data quirk, and freehold is not itself a forward edge. The catalyst keeps it out of Avoid, but thin data caps this at a low-confidence Neutral.",
+      "red_flags": [
+        "Cheapness signal rests on psf_cohort_txns=1 and only 14 appreciation txns — likely a data quirk, unverifiable",
+        "Tiny 76-unit project = thin liquidity and poor exit price discovery",
+        "Could not confirm recent 1BR transaction PSF on the web to validate the discount"
+      ],
+      "catalysts": [
+        "Amber & Marine Parade Thomson-East Coast Line MRT stations (recently opened) lift Amber Road connectivity",
+        "Freehold tenure with rare high-ceiling SOHO layout in prime D15"
+      ],
+      "as_of": {
+        "price": 1138000,
+        "psf": 1761.61,
+        "beds": 1,
+        "sqft": 646
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Freehold 2014 SOHO 1BR (3.35m ceilings) at 25 Amber Road, D15. Near the new Amber & Marine Parade TEL MRT stations (genuine catalyst). Asking $1,761 PSF sits at the low end of the project's $1,160K-$1,860K range. BUT the algo's cheap signals (-16% cohort, -17.8% age-adj) rest on psf_cohort_txns=1 and appreciation_txns=14 — too thin to verify as a real bargain.",
+        "rating_rationale": "The story is attractive: freehold, distinctive high-ceiling SOHO format, and the Thomson-East Coast Line (Amber/Marine Parade stations) is a real, recently-realized connectivity catalyst in a prime D15 (RCR) belt. However, I could not verify the algo's cheapness against actual recent 1BR transactions — the cohort signal is built on a single comparable and only 14 appreciation transactions, and the 76-unit project is too small for reliable price discovery or exit liquidity. Per v3.4 priors, a big negative premium on 1-2 comparables is likely a data quirk, and freehold is not itself a forward edge. The catalyst keeps it out of Avoid, but thin data caps this at a low-confidence Neutral.",
+        "red_flags": [
+          "Cheapness signal rests on psf_cohort_txns=1 and only 14 appreciation txns — likely a data quirk, unverifiable",
+          "Tiny 76-unit project = thin liquidity and poor exit price discovery",
+          "Could not confirm recent 1BR transaction PSF on the web to validate the discount"
+        ],
+        "catalysts": [
+          "Amber & Marine Parade Thomson-East Coast Line MRT stations (recently opened) lift Amber Road connectivity",
+          "Freehold tenure with rare high-ceiling SOHO layout in prime D15"
+        ],
+        "appreciation_assessment": "Trailing 6.71% CAGR is the highest of the five but is computed on only 14 transactions, so it is statistically fragile and carries ~0 forward weight — do not extrapolate.",
+        "rental_assessment": "D15/Amber 1BR with TEL access has solid tenant appeal, but the small project and SOHO niche format narrow the rental pool somewhat."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-cape-60181878",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "The Linear",
+  "slug": "the-linear",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1227 sqft 999-year leasehold 3BR in D23 Bukit Panjang at $1621 PSF / $1.99M, just 310m from DT1 Bukit Panjang MRT. The URA series is the most robust in this batch (31 txns, ~5.2% CAGR), but the asking PSF is a notable ~11% ABOVE the project's $1458 median.",
+      "rating_rationale": "Genuinely strong fundamentals — 999-yr tenure (effectively freehold), 310m to Downtown Line, a 31-txn URA series with ~5.2% CAGR, and large 1227 sqft 3BR layout. But the asking $1621 PSF is ~11% above the $1458 project median, eroding the margin of safety, and Bukit Panjang (D23 OCR) has a more limited appreciation ceiling than RCR. Sub-$2M quantum keeps liquidity reasonable. The overpricing offsets the otherwise solid case — Neutral.",
+      "red_flags": [
+        "Asking ~11% above project URA median PSF ($1621 vs $1458)",
+        "D23 Bukit Panjang OCR — lower appreciation ceiling than RCR districts",
+        "2006 build — 20 years old, ageing despite 999-yr tenure",
+        "$1.99M for a D23 3BR is near the top of what the location supports"
+      ],
+      "catalysts": [
+        "310m to DT1 Bukit Panjang MRT (Downtown Line + LRT interchange)",
+        "999-year leasehold — effectively freehold value retention",
+        "Strong 31-txn URA series showing ~5.2% historical CAGR"
+      ],
+      "as_of": {
+        "price": 1988888,
+        "psf": 1620.94,
+        "beds": 3,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1227 sqft 999-year leasehold 3BR in D23 Bukit Panjang at $1621 PSF / $1.99M, just 310m from DT1 Bukit Panjang MRT. The URA series is the most robust in this batch (31 txns, ~5.2% CAGR), but the asking PSF is a notable ~11% ABOVE the project's $1458 median.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely strong fundamentals — 999-yr tenure (effectively freehold), 310m to Downtown Line, a 31-txn URA series with ~5.2% CAGR, and large 1227 sqft 3BR layout. But the asking $1621 PSF is ~11% above the $1458 project median, eroding the margin of safety, and Bukit Panjang (D23 OCR) has a more limited appreciation ceiling than RCR. Sub-$2M quantum keeps liquidity reasonable. The overpricing offsets the otherwise solid case — Neutral.",
+        "red_flags": [
+          "Asking ~11% above project URA median PSF ($1621 vs $1458)",
+          "D23 Bukit Panjang OCR — lower appreciation ceiling than RCR districts",
+          "2006 build — 20 years old, ageing despite 999-yr tenure",
+          "$1.99M for a D23 3BR is near the top of what the location supports"
+        ],
+        "catalysts": [
+          "310m to DT1 Bukit Panjang MRT (Downtown Line + LRT interchange)",
+          "999-year leasehold — effectively freehold value retention",
+          "Strong 31-txn URA series showing ~5.2% historical CAGR"
+        ],
+        "rental_assessment": "Bukit Panjang 3BR rents to families wanting MRT access; demand is steady but not premium, with yields in the low-3% range typical for large OCR units.",
+        "appreciation_assessment": "~5.2% CAGR on a solid 31-txn series is the best-supported rate here, but buying ~11% over median forfeits much of that edge over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-linear-500103713",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

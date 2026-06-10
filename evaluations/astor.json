@@ -1,0 +1,117 @@
+{
+  "condo": "Astor",
+  "slug": "astor",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "99yr leasehold 1,087sqft 3BR at The Astor, D14 Kembangan/Frankel area, at $1.42M / $1,306 PSF — an affordable, liquid-band 3BR with a strong 5.63%/yr resale CAGR and the only on_frontier=true entry in the batch. The sub-$1.5M price for a full 3BR in D14 is the core attraction.",
+      "rating_rationale": "Best risk/reward in the batch: 5.63%/yr resale-only CAGR (above RCR baseline), top score_1000 (585), highest Elo (1254) and on_frontier=true. $1,306 PSF is ~5% above the $1,244 median but the absolute $1.42M for a 3BR sits in a very deep buyer-pool band attractive to HDB upgraders. Caveats: 16-txn series is moderate, 99yr LH from 2006, and 960m to Kembangan MRT. The combination of low entry, solid appreciation and broad appeal warrants a Buy.",
+      "red_flags": [
+        "960m (12-min walk) to Kembangan MRT",
+        "Appreciation from a moderate 16-transaction series",
+        "99yr leasehold from 2006 — ongoing lease decay"
+      ],
+      "catalysts": [
+        "Sub-$1.5M full 3BR in D14 — deep HDB-upgrader demand and broad resale pool",
+        "Proven 5.63%/yr resale CAGR; on_frontier=true with batch-best technicals",
+        "Established Frankel/Siglap landed-enclave surrounds support values"
+      ],
+      "as_of": {
+        "price": 1420000,
+        "psf": 1306.35,
+        "beds": 3,
+        "sqft": 1087.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99yr leasehold 1,087sqft 3BR at The Astor, D14 Kembangan/Frankel area, at $1.42M / $1,306 PSF — an affordable, liquid-band 3BR with a strong 5.63%/yr resale CAGR and the only on_frontier=true entry in the batch. The sub-$1.5M price for a full 3BR in D14 is the core attraction.",
+        "rating": "Buy",
+        "rating_rationale": "Best risk/reward in the batch: 5.63%/yr resale-only CAGR (above RCR baseline), top score_1000 (585), highest Elo (1254) and on_frontier=true. $1,306 PSF is ~5% above the $1,244 median but the absolute $1.42M for a 3BR sits in a very deep buyer-pool band attractive to HDB upgraders. Caveats: 16-txn series is moderate, 99yr LH from 2006, and 960m to Kembangan MRT. The combination of low entry, solid appreciation and broad appeal warrants a Buy.",
+        "red_flags": [
+          "960m (12-min walk) to Kembangan MRT",
+          "Appreciation from a moderate 16-transaction series",
+          "99yr leasehold from 2006 — ongoing lease decay"
+        ],
+        "catalysts": [
+          "Sub-$1.5M full 3BR in D14 — deep HDB-upgrader demand and broad resale pool",
+          "Proven 5.63%/yr resale CAGR; on_frontier=true with batch-best technicals",
+          "Established Frankel/Siglap landed-enclave surrounds support values"
+        ],
+        "rental_assessment": "D14 east-side 3BR at $1.42M offers a healthy yield and family-tenant demand; good rentability despite the MRT walk.",
+        "appreciation_assessment": "5.63%/yr resale CAGR is strong; the low absolute price provides headroom. Moderate txn count is the main uncertainty.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-astor-500076277",
+        "review_file": "cov_batch_37.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "99-yr D14 3BR (1,087sqft, 2006) priced mid-range within its own recent transactions — at market, not the bargain the -20.2% age_adj_premium implies. Decent RCR region, near Kembangan MRT, but no value cushion.",
+      "rating_rationale": "Astor's recent 12-month transactions run $1,161-1,380 psf (avg ~$1,252, high $1,380 in Mar 2025). This unit asks $1,306 psf — mid-to-upper within that band, i.e. fairly priced, not cheap. The dossier's -20.2% age_adj_premium overstates the discount (16 appreciation txns and only 5 cohort txns are on the thin side), so I weight the verified transaction band over the model. Positives are real: a roomy 1,087sqft 3BR, D14 (RCR, ~+3.5% realized fwd), boutique 55-unit project near Kembangan EW MRT. But with no value margin, a 2006 lease (~79yrs left) and a small/illiquid development, it's a hold-rate name rather than an outperformer.",
+      "red_flags": [
+        "Asking $1,306 psf is mid/upper of the $1,161-1,380 psf recent band — at market, not a discount",
+        "-20.2% age_adj_premium rests on thin data (16 appreciation txns, 5 cohort txns) and overstates cheapness",
+        "Boutique 55-unit, 99-yr (~79yrs left) — thinner liquidity and gradual lease decay",
+        "old_property flag (completed 2006)"
+      ],
+      "catalysts": [
+        "D14 RCR (realized fwd region ~+3.5%), near Kembangan MRT (EW) with Kaki Bukit DTL nearby",
+        "Large 1,087sqft 3BR family layout at ~$1.42M quantum",
+        "Paya Lebar/Geylang regeneration spillover over a 5-7yr horizon"
+      ],
+      "as_of": {
+        "price": 1420000,
+        "psf": 1306.35,
+        "beds": 3,
+        "sqft": 1087
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "99-yr D14 3BR (1,087sqft, 2006) priced mid-range within its own recent transactions — at market, not the bargain the -20.2% age_adj_premium implies. Decent RCR region, near Kembangan MRT, but no value cushion.",
+        "rating_rationale": "Astor's recent 12-month transactions run $1,161-1,380 psf (avg ~$1,252, high $1,380 in Mar 2025). This unit asks $1,306 psf — mid-to-upper within that band, i.e. fairly priced, not cheap. The dossier's -20.2% age_adj_premium overstates the discount (16 appreciation txns and only 5 cohort txns are on the thin side), so I weight the verified transaction band over the model. Positives are real: a roomy 1,087sqft 3BR, D14 (RCR, ~+3.5% realized fwd), boutique 55-unit project near Kembangan EW MRT. But with no value margin, a 2006 lease (~79yrs left) and a small/illiquid development, it's a hold-rate name rather than an outperformer.",
+        "red_flags": [
+          "Asking $1,306 psf is mid/upper of the $1,161-1,380 psf recent band — at market, not a discount",
+          "-20.2% age_adj_premium rests on thin data (16 appreciation txns, 5 cohort txns) and overstates cheapness",
+          "Boutique 55-unit, 99-yr (~79yrs left) — thinner liquidity and gradual lease decay",
+          "old_property flag (completed 2006)"
+        ],
+        "catalysts": [
+          "D14 RCR (realized fwd region ~+3.5%), near Kembangan MRT (EW) with Kaki Bukit DTL nearby",
+          "Large 1,087sqft 3BR family layout at ~$1.42M quantum",
+          "Paya Lebar/Geylang regeneration spillover over a 5-7yr horizon"
+        ],
+        "appreciation_assessment": "5.63% trailing CAGR on only 16 txns is thinly sampled and per v3.4 not predictive; no dated catalyst to extend it.",
+        "rental_assessment": "Project yield ~3.8%; a 3BR near Kembangan MRT rents to families, but the at-market entry leaves yield ordinary."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-astor-500076277",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

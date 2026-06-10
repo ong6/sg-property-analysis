@@ -1,0 +1,61 @@
+{
+  "condo": "Silahis Apartments",
+  "slug": "silahis-apartments",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 33-year-old (TOP 1993) 1,280 sqft 3BR freehold in D15 near Kembangan at $2.1M / $1,641 PSF. Old-vintage block ~990m from MRT, only 4 URA transactions and no usable appreciation rate; asking PSF is ~5% above the $1,562 median.",
+      "rating_rationale": "Silahis is a dated 1993 freehold apartment in the East Coast belt — D15's deep buyer pool and freehold land are genuine supports (strong arena record 331-234, Elo 1267), and the $2.1M quantum sits in a liquid band. But at 33 years old the building faces rising maintenance and limited financing appeal, no usable URA appreciation rate exists (only 4 transactions), and the $1,641 asking PSF is ~5% over the $1,562 median. The 990m MRT walk is mediocre. Land/redevelopment optionality and freehold East Coast pedigree balance the age and thin data — a genuine Neutral.",
+      "red_flags": [
+        "33-year-old building (TOP 1993) — high maintenance, weaker financing/resale appeal",
+        "Only 4 URA transactions, no reliable appreciation rate",
+        "Asking PSF ~5% above $1,562 URA median",
+        "990m to Kembangan MRT — beyond prime walk band"
+      ],
+      "catalysts": [
+        "Freehold land in D15 East Coast with deep buyer pool",
+        "Long-run en-bloc/redevelopment optionality for an old freehold site",
+        "Liquid $2.1M quantum"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1640.62,
+        "beds": 3,
+        "sqft": 1280.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 33-year-old (TOP 1993) 1,280 sqft 3BR freehold in D15 near Kembangan at $2.1M / $1,641 PSF. Old-vintage block ~990m from MRT, only 4 URA transactions and no usable appreciation rate; asking PSF is ~5% above the $1,562 median.",
+        "rating": "Neutral",
+        "rating_rationale": "Silahis is a dated 1993 freehold apartment in the East Coast belt — D15's deep buyer pool and freehold land are genuine supports (strong arena record 331-234, Elo 1267), and the $2.1M quantum sits in a liquid band. But at 33 years old the building faces rising maintenance and limited financing appeal, no usable URA appreciation rate exists (only 4 transactions), and the $1,641 asking PSF is ~5% over the $1,562 median. The 990m MRT walk is mediocre. Land/redevelopment optionality and freehold East Coast pedigree balance the age and thin data — a genuine Neutral.",
+        "red_flags": [
+          "33-year-old building (TOP 1993) — high maintenance, weaker financing/resale appeal",
+          "Only 4 URA transactions, no reliable appreciation rate",
+          "Asking PSF ~5% above $1,562 URA median",
+          "990m to Kembangan MRT — beyond prime walk band"
+        ],
+        "catalysts": [
+          "Freehold land in D15 East Coast with deep buyer pool",
+          "Long-run en-bloc/redevelopment optionality for an old freehold site",
+          "Liquid $2.1M quantum"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-silahis-apartments-500092189",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

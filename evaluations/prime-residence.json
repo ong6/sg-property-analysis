@@ -1,0 +1,123 @@
+{
+  "condo": "Prime Residence",
+  "slug": "prime-residence",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact 527 sqft freehold '2BR' at Prime Residence (D14 Geylang/Aljunied) for $800k / $1518 PSF, right at the $1510 district median. Sub-$1M freehold entry near Aljunied MRT is attractive on price, but only 7 URA transactions make the 5.2%/yr rate unreliable and 527 sqft for a 2BR is very cramped — a Neutral on thin data and unit quality.",
+      "rating_rationale": "Only 7 URA txn — the 5.2%/yr appreciation is statistically unreliable. PSF $1518 vs $1510 median is fair (not a discount). 527 sqft for a '2BR' is a small/compact layout (bedroom_sqft_mismatch), and the Aljunied/Geylang locale carries some stigma that caps owner-occupier appeal. The sub-$1M freehold price and broad rental demand keep it from Avoid, but thin data and cramped unit prevent a Buy.",
+      "red_flags": [
+        "Only 7 URA txn — appreciation rate unreliable",
+        "527 sqft for a '2BR' — cramped, likely mismatch",
+        "Geylang/Aljunied fringe carries some stigma capping resale appeal",
+        "PSF at median — no value cushion"
+      ],
+      "catalysts": [
+        "Sub-$1M freehold entry near EW9 Aljunied MRT",
+        "Strong rental demand in the Geylang/city-fringe corridor",
+        "Freehold tenure with broad investor buyer pool at the price point"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1518.03,
+        "beds": 2,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 527 sqft freehold '2BR' at Prime Residence (D14 Geylang/Aljunied) for $800k / $1518 PSF, right at the $1510 district median. Sub-$1M freehold entry near Aljunied MRT is attractive on price, but only 7 URA transactions make the 5.2%/yr rate unreliable and 527 sqft for a 2BR is very cramped — a Neutral on thin data and unit quality.",
+        "rating": "Neutral",
+        "rating_rationale": "Only 7 URA txn — the 5.2%/yr appreciation is statistically unreliable. PSF $1518 vs $1510 median is fair (not a discount). 527 sqft for a '2BR' is a small/compact layout (bedroom_sqft_mismatch), and the Aljunied/Geylang locale carries some stigma that caps owner-occupier appeal. The sub-$1M freehold price and broad rental demand keep it from Avoid, but thin data and cramped unit prevent a Buy.",
+        "red_flags": [
+          "Only 7 URA txn — appreciation rate unreliable",
+          "527 sqft for a '2BR' — cramped, likely mismatch",
+          "Geylang/Aljunied fringe carries some stigma capping resale appeal",
+          "PSF at median — no value cushion"
+        ],
+        "catalysts": [
+          "Sub-$1M freehold entry near EW9 Aljunied MRT",
+          "Strong rental demand in the Geylang/city-fringe corridor",
+          "Freehold tenure with broad investor buyer pool at the price point"
+        ],
+        "rental_assessment": "City-fringe freehold near Aljunied MRT rents readily to budget tenants; yield is supported by the low $800k entry. The compact size suits the rental rather than own-stay market.",
+        "appreciation_assessment": "5.2%/yr is computed on just 7 transactions — not bankable. The location trend is broadly positive but the project-specific rate is noise; assume district-trend appreciation at best.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "7-txn series unreliable; held to a conservative D14 freehold trend"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prime-residence-7124438",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small freehold Geylang unit priced essentially at market; the algo's 'cheap' read is contradicted by recent transactions, and reviews flag management/maintenance issues.",
+      "rating_rationale": "Asking $1,518 psf is right on top of the project's recent-transaction average of ~$1,511 psf (range $1,507-1,514 in last 12 months) - so the -18.1% age-adjusted 'cheapness' is NOT borne out by actual comps; it is at market. The 527 sqft 'two-bed' triggers a bedroom_sqft_mismatch flag (this is effectively a compact 1BR-plus), and appreciation rests on only 7 transactions, too thin to trust. Freehold is not a forward edge per the backtest. Web reviews cite poor MCST management, mold and corridor odor. Location is decent (D14 Geylang/Mountbatten fringe, ~Aljunied/Dakota MRT) and the $800k quantum keeps it liquid, but with no real value undercut and no dated catalyst this is a hold-neutral, not a buy.",
+      "red_flags": [
+        "Asking $1,518 psf is at the recent ~$1,511 psf transaction average - the -18.1% age-adj cheapness is a data quirk, not a real bargain",
+        "bedroom_sqft_mismatch: 527 sqft marketed as 2-bed is really a compact unit; layout efficiency questionable",
+        "Thin evidence base - only 7 appreciation transactions in a 39-unit project",
+        "Negative reviews: poor MCST management, moldy walls, corridor odor",
+        "Geylang location carries some red-light-fringe stigma that can cap resale demand"
+      ],
+      "catalysts": [
+        "Low $800k quantum keeps the unit liquid and accessible to entry-level investors",
+        "Freehold tenure (value-preserving long-term, though not a forward price driver)",
+        "D14 Paya Lebar/Geylang regeneration and proximity to Dakota/Aljunied MRT"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1518.03,
+        "beds": 2,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Small freehold Geylang unit priced essentially at market; the algo's 'cheap' read is contradicted by recent transactions, and reviews flag management/maintenance issues.",
+        "rating_rationale": "Asking $1,518 psf is right on top of the project's recent-transaction average of ~$1,511 psf (range $1,507-1,514 in last 12 months) - so the -18.1% age-adjusted 'cheapness' is NOT borne out by actual comps; it is at market. The 527 sqft 'two-bed' triggers a bedroom_sqft_mismatch flag (this is effectively a compact 1BR-plus), and appreciation rests on only 7 transactions, too thin to trust. Freehold is not a forward edge per the backtest. Web reviews cite poor MCST management, mold and corridor odor. Location is decent (D14 Geylang/Mountbatten fringe, ~Aljunied/Dakota MRT) and the $800k quantum keeps it liquid, but with no real value undercut and no dated catalyst this is a hold-neutral, not a buy.",
+        "red_flags": [
+          "Asking $1,518 psf is at the recent ~$1,511 psf transaction average - the -18.1% age-adj cheapness is a data quirk, not a real bargain",
+          "bedroom_sqft_mismatch: 527 sqft marketed as 2-bed is really a compact unit; layout efficiency questionable",
+          "Thin evidence base - only 7 appreciation transactions in a 39-unit project",
+          "Negative reviews: poor MCST management, moldy walls, corridor odor",
+          "Geylang location carries some red-light-fringe stigma that can cap resale demand"
+        ],
+        "catalysts": [
+          "Low $800k quantum keeps the unit liquid and accessible to entry-level investors",
+          "Freehold tenure (value-preserving long-term, though not a forward price driver)",
+          "D14 Paya Lebar/Geylang regeneration and proximity to Dakota/Aljunied MRT"
+        ],
+        "appreciation_assessment": "URA 5yr CAGR 5.23% on just 7 txns is statistically fragile and has ~0 forward predictive power; do not extrapolate.",
+        "rental_assessment": "Project has strong rental history (226 rental txns); a small unit near MRT should rent steadily, but yield at ~$1,518 psf entry is unremarkable."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prime-residence-7124438",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

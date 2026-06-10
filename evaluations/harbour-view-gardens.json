@@ -1,0 +1,65 @@
+{
+  "condo": "Harbour View Gardens",
+  "slug": "harbour-view-gardens",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Compact 570 sqft freehold '2BR' at Harbour View Gardens (D05 West Coast) for $999k / $1753 PSF, in a small boutique block with only 10 URA transactions and a near-zero 0.4%/yr appreciation rate. The thin data and flat price history are disqualifying for an investment hold despite the sub-$1M freehold entry and high algo score.",
+      "rating_rationale": "Only 10 URA transactions (thin, unreliable) and a 0.41%/yr resale rate that signals essentially no appreciation. 570 sqft for a '2BR' is cramped (likely a compact/dual-key — bedroom_sqft_mismatch territory), the boutique block is illiquid, and PSF $1753 vs a $1961 median reflects a small-development discount, not value. The 754 algo score is driven by the cheap freehold price, not by appreciation or liquidity fundamentals.",
+      "red_flags": [
+        "Only 10 URA txn — appreciation rate is unreliable",
+        "0.4%/yr appreciation — flat price history",
+        "570 sqft for a '2BR' — cramped, likely mismatch",
+        "Boutique/small development — illiquid exit"
+      ],
+      "catalysts": [
+        "One-North / West Coast employment proximity (rental floor)",
+        "Sub-$1M freehold entry",
+        "CC25 Haw Par Villa MRT 660m"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1752.63,
+        "beds": 2,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 570 sqft freehold '2BR' at Harbour View Gardens (D05 West Coast) for $999k / $1753 PSF, in a small boutique block with only 10 URA transactions and a near-zero 0.4%/yr appreciation rate. The thin data and flat price history are disqualifying for an investment hold despite the sub-$1M freehold entry and high algo score.",
+        "rating": "Avoid",
+        "rating_rationale": "Only 10 URA transactions (thin, unreliable) and a 0.41%/yr resale rate that signals essentially no appreciation. 570 sqft for a '2BR' is cramped (likely a compact/dual-key — bedroom_sqft_mismatch territory), the boutique block is illiquid, and PSF $1753 vs a $1961 median reflects a small-development discount, not value. The 754 algo score is driven by the cheap freehold price, not by appreciation or liquidity fundamentals.",
+        "red_flags": [
+          "Only 10 URA txn — appreciation rate is unreliable",
+          "0.4%/yr appreciation — flat price history",
+          "570 sqft for a '2BR' — cramped, likely mismatch",
+          "Boutique/small development — illiquid exit"
+        ],
+        "catalysts": [
+          "One-North / West Coast employment proximity (rental floor)",
+          "Sub-$1M freehold entry",
+          "CC25 Haw Par Villa MRT 660m"
+        ],
+        "rental_assessment": "Small freehold near One-North and West Coast rents to singles/couples, providing a yield floor; but a 570 sqft '2BR' is functionally a compact unit with limited tenant appeal.",
+        "appreciation_assessment": "0.4%/yr over 10 transactions indicates a stalled-price boutique with no demonstrated upside; thin data makes any forward rate speculative. Not an appreciation play.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "Thin 10-txn series unreliable; held to a conservative small-dev assumption"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-harbour-view-gardens-60134201",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

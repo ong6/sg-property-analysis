@@ -1,0 +1,121 @@
+{
+  "condo": "#1 Loft",
+  "slug": "1-loft",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2015 freehold 2BR loft in Geylang/Aljunied (D14), 614 sqft at $780K / $1,270 psf, just 440m from Aljunied MRT. Low quantum, freehold tenure and a 5-min MRT walk make this an efficient, liquid entry-level investment — the standout score (684) here — though it's a small boutique loft block with Geylang-fringe stigma.",
+      "rating_rationale": "$780K freehold 2BR at $1,270 psf is genuinely cheap for a transit-adjacent (440m Aljunied MRT) city-fringe unit — quantum sits in the most liquid entry band and 2BR has the widest tenant pool. score_1000 684 and on-frontier status confirm value. Caveats: no project URA series, small boutique loft development, and Geylang-fringe location stigma, but the price/transit/tenure combination is compelling.",
+      "red_flags": [
+        "Boutique loft development — thinner liquidity than large condos",
+        "Geylang/Aljunied fringe carries some vice/late-night stigma",
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "Loft format (high ceiling, mezzanine) suits niche tenants more than families",
+        "Near-even 197-226 arena record despite high algorithmic score"
+      ],
+      "catalysts": [
+        "440m / 5-min walk to Aljunied EWL MRT — strong rental and resale draw",
+        "Freehold + sub-$800K quantum = deep buyer/tenant pool and easy exit",
+        "D14 Paya Lebar Central / airbase-relocation long-run transformation",
+        "2BR is the widest-demand rental segment near the CBD"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1270.36,
+        "beds": 2,
+        "sqft": 614.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2015 freehold 2BR loft in Geylang/Aljunied (D14), 614 sqft at $780K / $1,270 psf, just 440m from Aljunied MRT. Low quantum, freehold tenure and a 5-min MRT walk make this an efficient, liquid entry-level investment — the standout score (684) here — though it's a small boutique loft block with Geylang-fringe stigma.",
+        "rating": "Buy",
+        "rating_rationale": "$780K freehold 2BR at $1,270 psf is genuinely cheap for a transit-adjacent (440m Aljunied MRT) city-fringe unit — quantum sits in the most liquid entry band and 2BR has the widest tenant pool. score_1000 684 and on-frontier status confirm value. Caveats: no project URA series, small boutique loft development, and Geylang-fringe location stigma, but the price/transit/tenure combination is compelling.",
+        "red_flags": [
+          "Boutique loft development — thinner liquidity than large condos",
+          "Geylang/Aljunied fringe carries some vice/late-night stigma",
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "Loft format (high ceiling, mezzanine) suits niche tenants more than families",
+          "Near-even 197-226 arena record despite high algorithmic score"
+        ],
+        "catalysts": [
+          "440m / 5-min walk to Aljunied EWL MRT — strong rental and resale draw",
+          "Freehold + sub-$800K quantum = deep buyer/tenant pool and easy exit",
+          "D14 Paya Lebar Central / airbase-relocation long-run transformation",
+          "2BR is the widest-demand rental segment near the CBD"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1-loft-24813982",
+        "review_file": "cov_batch_24.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The algo's huge 'cheapness' is a data artifact: this 614sqft 'unit' is a penthouse duplex (560sqft + 54sqft loft) with no comparable cohort, so the -32.5% premium and very_low_psf flag are distortions. At ~$1,270 psf it's roughly at market for a FH Geylang-edge unit, not a bargain.",
+      "rating_rationale": "The dossier's standout signals are quirks, not value. psf_cohort_txns=0 means there is NO same-size comparable, which is exactly why age_adj_premium reads an extreme -32.5% and the very_low_psf flag fires — the model is comparing a one-off lofted penthouse against the project pool. Web confirms the unit is a duplex: 560sqft living + a 54sqft loft, marketed as a 614sqft '2BR'. Against the actual project 12-mo transaction band of $1,304-$1,340 psf (avg ~$1,318), the $1,270 asking is only marginally below market — a real but small discount, and the loft layout (low ceiling, less usable) typically hurts both resale liquidity and rentability. Positives: freehold, 7-min walk to Aljunied MRT (EWL), and Lorong 24 sits at the edge of — not inside — the worst red-light stretch. appreciation_pct -0.09% over 21 txns shows no momentum either way. Net: a fairly-priced niche unit, not the bargain the score implies; thin/distorted data forces low confidence.",
+      "red_flags": [
+        "psf_cohort_txns=0 and very_low_psf flag are data artifacts — the -32.5% age-adj premium is NOT real cheapness",
+        "Unit is a penthouse duplex (560+54 loft), an illiquid niche layout that narrows the buyer/tenant pool",
+        "Lorong 24 Geylang — edge of red-light belt; some banks restrict financing in parts of Geylang, hurting resale liquidity",
+        "Only ~$50 psf below project average — not a meaningful discount once the artifact is stripped out"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay) — note v3.4 treats FH as no forward edge, just a hold-quality positive",
+        "7-min walk to Aljunied MRT (EWL); ~13 min to Dakota (CCL) — reasonable connectivity",
+        "D14 strong rental yields (3.5-4.5%) and en-bloc optionality on small FH Geylang plots over the long run"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1270.36,
+        "beds": 2,
+        "sqft": 614
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The algo's huge 'cheapness' is a data artifact: this 614sqft 'unit' is a penthouse duplex (560sqft + 54sqft loft) with no comparable cohort, so the -32.5% premium and very_low_psf flag are distortions. At ~$1,270 psf it's roughly at market for a FH Geylang-edge unit, not a bargain.",
+        "rating_rationale": "The dossier's standout signals are quirks, not value. psf_cohort_txns=0 means there is NO same-size comparable, which is exactly why age_adj_premium reads an extreme -32.5% and the very_low_psf flag fires — the model is comparing a one-off lofted penthouse against the project pool. Web confirms the unit is a duplex: 560sqft living + a 54sqft loft, marketed as a 614sqft '2BR'. Against the actual project 12-mo transaction band of $1,304-$1,340 psf (avg ~$1,318), the $1,270 asking is only marginally below market — a real but small discount, and the loft layout (low ceiling, less usable) typically hurts both resale liquidity and rentability. Positives: freehold, 7-min walk to Aljunied MRT (EWL), and Lorong 24 sits at the edge of — not inside — the worst red-light stretch. appreciation_pct -0.09% over 21 txns shows no momentum either way. Net: a fairly-priced niche unit, not the bargain the score implies; thin/distorted data forces low confidence.",
+        "red_flags": [
+          "psf_cohort_txns=0 and very_low_psf flag are data artifacts — the -32.5% age-adj premium is NOT real cheapness",
+          "Unit is a penthouse duplex (560+54 loft), an illiquid niche layout that narrows the buyer/tenant pool",
+          "Lorong 24 Geylang — edge of red-light belt; some banks restrict financing in parts of Geylang, hurting resale liquidity",
+          "Only ~$50 psf below project average — not a meaningful discount once the artifact is stripped out"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay) — note v3.4 treats FH as no forward edge, just a hold-quality positive",
+          "7-min walk to Aljunied MRT (EWL); ~13 min to Dakota (CCL) — reasonable connectivity",
+          "D14 strong rental yields (3.5-4.5%) and en-bloc optionality on small FH Geylang plots over the long run"
+        ],
+        "rental_assessment": "D14 yields are strong, but the loft/duplex layout and Geylang-edge location narrow the tenant pool; rentable but not a premium-rent unit.",
+        "appreciation_assessment": "Flat trailing (-0.09%, 21 txns) and no catalyst; the apparent deep value is a cohort artifact. Forward capital growth likely market-typical at best, with the niche layout a drag on exit."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1-loft-24813982",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

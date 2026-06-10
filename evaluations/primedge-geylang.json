@@ -1,0 +1,113 @@
+{
+  "condo": "Primedge @ Geylang",
+  "slug": "primedge-geylang",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 474 sqft shoebox 1BR in a small Geylang block near Dakota MRT at $1,624 PSF, with no URA appreciation or median data available. Freehold tenure and a sub-$800K entry are mild positives, but a tiny shoebox in a small development with zero project-level data is a low-conviction, niche investment.",
+      "rating_rationale": "No URA appreciation, txn count or median PSF is available (fallback data), so there is no quantitative case — the high score_1000 of 794 is unreliable on missing data. It is freehold, near CC8 Dakota (~600m), at a low $770K absolute, but 474 sqft is a true shoebox in a small Geylang development with shallow resale demand and possible locale stigma.",
+      "red_flags": [
+        "No URA appreciation/median/txn data — thesis unverifiable",
+        "474 sqft shoebox, niche resale demand",
+        "Small development; Geylang locale can carry buyer stigma"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "CC8 Dakota MRT ~600m",
+        "Low $770K absolute entry"
+      ],
+      "as_of": {
+        "price": 770000,
+        "psf": 1624.47,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 474 sqft shoebox 1BR in a small Geylang block near Dakota MRT at $1,624 PSF, with no URA appreciation or median data available. Freehold tenure and a sub-$800K entry are mild positives, but a tiny shoebox in a small development with zero project-level data is a low-conviction, niche investment.",
+        "rating": "Neutral",
+        "rating_rationale": "No URA appreciation, txn count or median PSF is available (fallback data), so there is no quantitative case — the high score_1000 of 794 is unreliable on missing data. It is freehold, near CC8 Dakota (~600m), at a low $770K absolute, but 474 sqft is a true shoebox in a small Geylang development with shallow resale demand and possible locale stigma.",
+        "red_flags": [
+          "No URA appreciation/median/txn data — thesis unverifiable",
+          "474 sqft shoebox, niche resale demand",
+          "Small development; Geylang locale can carry buyer stigma"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "CC8 Dakota MRT ~600m",
+          "Low $770K absolute entry"
+        ],
+        "rental_assessment": "Shoebox near Dakota MRT rents to singles with decent yield on low quantum, but tenant turnover and Geylang perception temper demand.",
+        "appreciation_assessment": "Unknowable from the dossier; freehold Geylang shoeboxes historically appreciate modestly and lag larger formats on resale.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-primedge-geylang-25579901",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The 'cheapness' is fabricated from a regional baseline with zero project transactions — and a real transaction check shows the $1,624 psf asking is ABOVE Primedge's recent resale range, so it's priced rich, not cheap.",
+      "rating_rationale": "The algo's -16.0% age-adj premium is unreliable: appreciation_source is regional_baseline with appreciation_txns=0 and psf_cohort_txns=null, meaning there were no project comps behind the score. Verified data contradicts it — Primedge's last-12-month transactions ran $1,353-1,602 psf (avg ~$1,469), so the $1,624 psf / $760-770k ask is at the top of and above the project's recent range. Paying above recent comps for a 474 sqft 1+1 shoebox in a 36-unit boutique on a busy Geylang road, with no dated catalyst, is the opposite of the value the score implies. Freehold is not a forward edge per the priors. Score 1000=789 is not supported by the unit-level evidence.",
+      "red_flags": [
+        "Appreciation from regional_baseline with 0 project txns and null cohort — no real comparable behind the score",
+        "Asking $1,624 psf exceeds the project's recent transaction range ($1,353-1,602, avg ~$1,469) — priced above market",
+        "474 sqft 1+1 shoebox in a 36-unit boutique on a busy Geylang road — thin liquidity, vice-belt address",
+        "No dated MRT/zone/en-bloc catalyst to justify the premium entry"
+      ],
+      "catalysts": [
+        "Walkable to Dakota/Aljunied MRT; freehold tenure (livability only, not a forward edge)"
+      ],
+      "as_of": {
+        "price": 770000,
+        "psf": 1624.47,
+        "beds": 1,
+        "sqft": 474
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The 'cheapness' is fabricated from a regional baseline with zero project transactions — and a real transaction check shows the $1,624 psf asking is ABOVE Primedge's recent resale range, so it's priced rich, not cheap.",
+        "rating_rationale": "The algo's -16.0% age-adj premium is unreliable: appreciation_source is regional_baseline with appreciation_txns=0 and psf_cohort_txns=null, meaning there were no project comps behind the score. Verified data contradicts it — Primedge's last-12-month transactions ran $1,353-1,602 psf (avg ~$1,469), so the $1,624 psf / $760-770k ask is at the top of and above the project's recent range. Paying above recent comps for a 474 sqft 1+1 shoebox in a 36-unit boutique on a busy Geylang road, with no dated catalyst, is the opposite of the value the score implies. Freehold is not a forward edge per the priors. Score 1000=789 is not supported by the unit-level evidence.",
+        "red_flags": [
+          "Appreciation from regional_baseline with 0 project txns and null cohort — no real comparable behind the score",
+          "Asking $1,624 psf exceeds the project's recent transaction range ($1,353-1,602, avg ~$1,469) — priced above market",
+          "474 sqft 1+1 shoebox in a 36-unit boutique on a busy Geylang road — thin liquidity, vice-belt address",
+          "No dated MRT/zone/en-bloc catalyst to justify the premium entry"
+        ],
+        "catalysts": [
+          "Walkable to Dakota/Aljunied MRT; freehold tenure (livability only, not a forward edge)"
+        ],
+        "rental_assessment": "Compact 1+1 rents to budget singles near Dakota MRT (~$3k/mo), but buying above recent transacted PSF erodes the yield that the low quantum would otherwise deliver.",
+        "appreciation_assessment": "Negative-to-neutral forward case: entry sits above the project's own recent transactions, the appreciation figure is a regional placeholder with 0 comps, and there is no catalyst — likely to underperform until the ask is repriced toward the ~$1,469 psf market."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-primedge-geylang-25579901",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

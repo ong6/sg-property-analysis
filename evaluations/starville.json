@@ -1,0 +1,117 @@
+{
+  "condo": "Starville",
+  "slug": "starville",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A genuine 2,260 sqft freehold 4BR in D14 (Kembangan) at $3.08M / $1,363 PSF — fairly priced at the $1,383 URA median, with a strong, reliable +5.39%/yr appreciation over 42 transactions and the highest arena Elo in the batch (1726). A solid freehold family asset; the main caveat is that the $3.08M quantum thins the buyer pool on exit.",
+      "rating_rationale": "PSF $1,363 sits right at the $1,383 median — fair value for a real 4BR (2,260 sqft is appropriate, not an oversized PSF illusion). URA +5.39%/yr (42 txns) is reliable and strong, and the dominant arena record (Elo 1726, 326-86-6) reflects robust fundamentals. Freehold tenure and the Paya Lebar/airbase-relocation corridor support long-term value. The $3.08M quantum is the constraint — above the deepest liquidity band — but for a freehold family-sized unit it remains a defensible buy.",
+      "red_flags": [
+        "$3.08M quantum exceeds the deepest ($1.8-2.5M) liquidity band — slower exit, family-only buyer pool",
+        "Older 2006 development — facilities/finishes dated vs newer comps",
+        "Kembangan MRT 840m / 10-min walk — adequate, not doorstep"
+      ],
+      "catalysts": [
+        "Freehold large-format 4BR — scarce, durable family product",
+        "Reliable +5.39%/yr URA appreciation (42 txns)",
+        "Paya Lebar Central and airbase-relocation land release lift the D14 corridor",
+        "Strongest arena Elo (1726) in the batch"
+      ],
+      "as_of": {
+        "price": 3080000,
+        "psf": 1362.83,
+        "beds": 4,
+        "sqft": 2260.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A genuine 2,260 sqft freehold 4BR in D14 (Kembangan) at $3.08M / $1,363 PSF — fairly priced at the $1,383 URA median, with a strong, reliable +5.39%/yr appreciation over 42 transactions and the highest arena Elo in the batch (1726). A solid freehold family asset; the main caveat is that the $3.08M quantum thins the buyer pool on exit.",
+        "rating": "Buy",
+        "rating_rationale": "PSF $1,363 sits right at the $1,383 median — fair value for a real 4BR (2,260 sqft is appropriate, not an oversized PSF illusion). URA +5.39%/yr (42 txns) is reliable and strong, and the dominant arena record (Elo 1726, 326-86-6) reflects robust fundamentals. Freehold tenure and the Paya Lebar/airbase-relocation corridor support long-term value. The $3.08M quantum is the constraint — above the deepest liquidity band — but for a freehold family-sized unit it remains a defensible buy.",
+        "red_flags": [
+          "$3.08M quantum exceeds the deepest ($1.8-2.5M) liquidity band — slower exit, family-only buyer pool",
+          "Older 2006 development — facilities/finishes dated vs newer comps",
+          "Kembangan MRT 840m / 10-min walk — adequate, not doorstep"
+        ],
+        "catalysts": [
+          "Freehold large-format 4BR — scarce, durable family product",
+          "Reliable +5.39%/yr URA appreciation (42 txns)",
+          "Paya Lebar Central and airbase-relocation land release lift the D14 corridor",
+          "Strongest arena Elo (1726) in the batch"
+        ],
+        "rental_assessment": "A 4BR rents to families/expats at a high absolute rent but to a narrow pool; yield on a $3.08M quantum is modest, so the case rests on appreciation more than yield.",
+        "appreciation_assessment": "Reliable +5.39%/yr URA over 42 txns, freehold, with a real district catalyst — a credible above-baseline appreciation path over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-starville-500074480",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2006 freehold shoebox at Lengkong Tiga (Bedok side of D14) asking $1,532 psf — above the project's actual realized band of $1,317-$1,506 psf over the last 12 months. The algo's 'cheap-vs-district' signal is a quirk of comparing against a project-pooled median that mixes in larger low-psf stacks; for the 581 sqft shoebox cohort the asking is a ~10% premium, consistent with the dossier's own psf_above_market flag.",
+      "rating_rationale": "Asking $1,531.84 psf is ABOVE the verified 12-month transacted range of $1,317-$1,506 psf (avg ~$1,383) — web comps even show a similar 581 sqft 1BR listed at only $1,583 and another at $1,583. So this is not a bargain; the dossier's age_adj_premium of -6.5% is contradicted by the psf_premium_vs_cohort of +11.6% on 0 cohort txns. Property is 20 years old, a long walk from Kembangan EW6 (residents complain of the MRT distance, noise and dust), and a shoebox in an ageing development with limited owner-occupier appeal. Score of 730 is driven by pooled-median cheapness that does not survive a same-size comp check.",
+      "red_flags": [
+        "Asking $1,532 psf is above realized 12-mo band of $1,317-$1,506 psf (overpriced, not cheap)",
+        "psf_cohort_txns = 0 — the -6.5% age-adj cheapness is a pooled-median artifact, not a verified same-size bargain",
+        "20-year-old development; long walk to Kembangan MRT; resident reviews cite noise/dust",
+        "Shoebox 1BR with limited owner-occupier demand on resale exit"
+      ],
+      "catalysts": [
+        "Kaki Bukit DT28 (Downtown Line) within the vicinity adds a second-line option",
+        "Freehold tenure preserves long-horizon optionality"
+      ],
+      "as_of": {
+        "price": 890000,
+        "psf": 1531.84,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "A 2006 freehold shoebox at Lengkong Tiga (Bedok side of D14) asking $1,532 psf — above the project's actual realized band of $1,317-$1,506 psf over the last 12 months. The algo's 'cheap-vs-district' signal is a quirk of comparing against a project-pooled median that mixes in larger low-psf stacks; for the 581 sqft shoebox cohort the asking is a ~10% premium, consistent with the dossier's own psf_above_market flag.",
+        "rating_rationale": "Asking $1,531.84 psf is ABOVE the verified 12-month transacted range of $1,317-$1,506 psf (avg ~$1,383) — web comps even show a similar 581 sqft 1BR listed at only $1,583 and another at $1,583. So this is not a bargain; the dossier's age_adj_premium of -6.5% is contradicted by the psf_premium_vs_cohort of +11.6% on 0 cohort txns. Property is 20 years old, a long walk from Kembangan EW6 (residents complain of the MRT distance, noise and dust), and a shoebox in an ageing development with limited owner-occupier appeal. Score of 730 is driven by pooled-median cheapness that does not survive a same-size comp check.",
+        "red_flags": [
+          "Asking $1,532 psf is above realized 12-mo band of $1,317-$1,506 psf (overpriced, not cheap)",
+          "psf_cohort_txns = 0 — the -6.5% age-adj cheapness is a pooled-median artifact, not a verified same-size bargain",
+          "20-year-old development; long walk to Kembangan MRT; resident reviews cite noise/dust",
+          "Shoebox 1BR with limited owner-occupier demand on resale exit"
+        ],
+        "catalysts": [
+          "Kaki Bukit DT28 (Downtown Line) within the vicinity adds a second-line option",
+          "Freehold tenure preserves long-horizon optionality"
+        ],
+        "appreciation_assessment": "Dossier shows 5.39% 5yr CAGR on 42 txns, but trailing appreciation has ~0 forward power per v3.4 priors and the realized PSF band is currently soft ($1,317-$1,506). No forward edge.",
+        "rental_assessment": "Project rents span $1,500-$4,600; a 581 sqft 1BR likely rents ~$2,400-$2,800, implying a modest ~3.5% gross yield on the $890K quantum — district-typical, not a standout given the above-market entry price."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-starville-24800580",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

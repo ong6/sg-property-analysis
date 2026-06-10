@@ -1,0 +1,57 @@
+{
+  "condo": "Freehold Penthouse",
+  "slug": "freehold-penthouse",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 2,220 sqft penthouse listed under a generic 'Freehold Penthouse' name with no identifiable project, no built_year and zero URA data — the dossier cannot establish appreciation, comps or liquidity. The $1,140 psf looks cheap only because penthouse void/roof area is included; the $2.53M quantum is a thin-pool penthouse, the hardest sub-segment to exit.",
+      "rating_rationale": "Unidentifiable project with no URA appreciation, no median PSF and missing built_year — there is no verifiable investment case. Penthouses are the most illiquid format, optically-low PSF is inflated by non-living area, and $2.53M sits above the deep buyer band. As an investment this is uninvestable on the data given.",
+      "red_flags": [
+        "No project identity, no built_year, no URA appreciation/median/txn data",
+        "Penthouse — thinnest resale pool, hardest exit",
+        "Low PSF distorted by large void/roof terrace area",
+        "$2.53M quantum above deep-pool band"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15 East Coast"
+      ],
+      "as_of": {
+        "price": 2530000,
+        "psf": 1139.64,
+        "beds": 3,
+        "sqft": 2220.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2,220 sqft penthouse listed under a generic 'Freehold Penthouse' name with no identifiable project, no built_year and zero URA data — the dossier cannot establish appreciation, comps or liquidity. The $1,140 psf looks cheap only because penthouse void/roof area is included; the $2.53M quantum is a thin-pool penthouse, the hardest sub-segment to exit.",
+        "rating": "Avoid",
+        "rating_rationale": "Unidentifiable project with no URA appreciation, no median PSF and missing built_year — there is no verifiable investment case. Penthouses are the most illiquid format, optically-low PSF is inflated by non-living area, and $2.53M sits above the deep buyer band. As an investment this is uninvestable on the data given.",
+        "red_flags": [
+          "No project identity, no built_year, no URA appreciation/median/txn data",
+          "Penthouse — thinnest resale pool, hardest exit",
+          "Low PSF distorted by large void/roof terrace area",
+          "$2.53M quantum above deep-pool band"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15 East Coast"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-penthouse-500163401",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

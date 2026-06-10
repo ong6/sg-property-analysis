@@ -1,0 +1,61 @@
+{
+  "condo": "Jalan Suka Ground Floor Apartment",
+  "slug": "jalan-suka-ground-floor-apartment",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,800 sqft ground-floor unit in a 1960-built walk-up apartment off Jalan Suka (D14, Geylang/Aljunied), at $2.65M. Near-freehold 9999yr tenure is the one plus; otherwise this is an old, facility-less, illiquid boutique block with no URA data — a poor investment vehicle.",
+      "rating_rationale": "A 1960-built walk-up apartment is the opposite of a liquid investment asset: no condo facilities, no pool/security/gym, tiny block, and a $2.65M quantum that is very hard to exit for a non-condo product. The dossier has no URA appreciation rate, txn count or median PSF — the value and growth case is entirely unverifiable. score_1000 of 349 reflects these weaknesses. The only positive is the 9999-year (effectively freehold) tenure and 550m to Aljunied MRT, but ground-floor + 60-year-old building + niche format = high exit risk. Buyers at $2.65M expect a modern condo; this is an own-stay/en-bloc-hope product, not a 5-7yr investment.",
+      "red_flags": [
+        "1960-built walk-up, no condo facilities — very niche resale",
+        "No URA data — appreciation and value entirely unverified",
+        "$2.65M quantum for a facility-less old apartment; ground-floor; high exit risk"
+      ],
+      "catalysts": [
+        "9999-year tenure (effectively freehold land)",
+        "550m to Aljunied MRT (EWL)",
+        "Long-shot collective-sale/redevelopment optionality"
+      ],
+      "as_of": {
+        "price": 2650000,
+        "psf": 1472.22,
+        "beds": 3,
+        "sqft": 1800.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "9999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,800 sqft ground-floor unit in a 1960-built walk-up apartment off Jalan Suka (D14, Geylang/Aljunied), at $2.65M. Near-freehold 9999yr tenure is the one plus; otherwise this is an old, facility-less, illiquid boutique block with no URA data — a poor investment vehicle.",
+        "rating": "Avoid",
+        "rating_rationale": "A 1960-built walk-up apartment is the opposite of a liquid investment asset: no condo facilities, no pool/security/gym, tiny block, and a $2.65M quantum that is very hard to exit for a non-condo product. The dossier has no URA appreciation rate, txn count or median PSF — the value and growth case is entirely unverifiable. score_1000 of 349 reflects these weaknesses. The only positive is the 9999-year (effectively freehold) tenure and 550m to Aljunied MRT, but ground-floor + 60-year-old building + niche format = high exit risk. Buyers at $2.65M expect a modern condo; this is an own-stay/en-bloc-hope product, not a 5-7yr investment.",
+        "red_flags": [
+          "1960-built walk-up, no condo facilities — very niche resale",
+          "No URA data — appreciation and value entirely unverified",
+          "$2.65M quantum for a facility-less old apartment; ground-floor; high exit risk"
+        ],
+        "catalysts": [
+          "9999-year tenure (effectively freehold land)",
+          "550m to Aljunied MRT (EWL)",
+          "Long-shot collective-sale/redevelopment optionality"
+        ],
+        "rental_assessment": "An old walk-up with no facilities rents at a discount; tenant demand is thin relative to modern condos. Yield poor against the $2.65M outlay.",
+        "appreciation_assessment": "Unverifiable (no URA data). Old walk-ups appreciate mainly on en-bloc speculation, which is uncertain and outside a reliable 5-7yr horizon.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jalan-suka-ground-floor-apartment-60184075",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

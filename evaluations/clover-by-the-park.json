@@ -1,0 +1,61 @@
+{
+  "condo": "Clover By The Park",
+  "slug": "clover-by-the-park",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2,174 sqft 99-yr leasehold 3BR in Bishan-fringe D20 at $3.18M — the $1,463 PSF looks cheap only because the unit is oversized, and the $3.18M quantum sits well above the liquid band. Strong data (82 txns, 5.11%/yr) and the future Cross Island Line (Teck Ghee) are real positives offset by the punishing quantum.",
+      "rating_rationale": "82 txns and 5.11%/yr URA appreciation are solid, and a future CRL station (Teck Ghee, ~2030) is a catalyst. But at $3.18M the quantum is far above the $1.8-2.5M deep-liquidity band — buyer pool thins sharply, and the low $1,463 PSF is an oversized-unit artefact (2,174 sqft), not value. Score_1000 of 508 reflects the quantum/liquidity drag. The big unit suits own-stay more than a 5-7yr investment flip.",
+      "red_flags": [
+        "$3.18M quantum well above the liquid band — slow, shallow exit",
+        "Low PSF is a function of a 2,174 sqft oversized unit, not value",
+        "99-yr leasehold (2012)"
+      ],
+      "catalysts": [
+        "Future Cross Island Line at Teck Ghee (~2030) — connectivity uplift",
+        "Bishan-fringe/Ang Mo Kio with strong schools and amenities",
+        "82-txn-verified 5.11%/yr appreciation"
+      ],
+      "as_of": {
+        "price": 3180000,
+        "psf": 1462.74,
+        "beds": 3,
+        "sqft": 2174.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2,174 sqft 99-yr leasehold 3BR in Bishan-fringe D20 at $3.18M — the $1,463 PSF looks cheap only because the unit is oversized, and the $3.18M quantum sits well above the liquid band. Strong data (82 txns, 5.11%/yr) and the future Cross Island Line (Teck Ghee) are real positives offset by the punishing quantum.",
+        "rating": "Neutral",
+        "rating_rationale": "82 txns and 5.11%/yr URA appreciation are solid, and a future CRL station (Teck Ghee, ~2030) is a catalyst. But at $3.18M the quantum is far above the $1.8-2.5M deep-liquidity band — buyer pool thins sharply, and the low $1,463 PSF is an oversized-unit artefact (2,174 sqft), not value. Score_1000 of 508 reflects the quantum/liquidity drag. The big unit suits own-stay more than a 5-7yr investment flip.",
+        "red_flags": [
+          "$3.18M quantum well above the liquid band — slow, shallow exit",
+          "Low PSF is a function of a 2,174 sqft oversized unit, not value",
+          "99-yr leasehold (2012)"
+        ],
+        "catalysts": [
+          "Future Cross Island Line at Teck Ghee (~2030) — connectivity uplift",
+          "Bishan-fringe/Ang Mo Kio with strong schools and amenities",
+          "82-txn-verified 5.11%/yr appreciation"
+        ],
+        "rental_assessment": "A 2,174 sqft unit at high quantum yields poorly (~2.5%); large-format rental demand is thinner than for efficient 2-3BR.",
+        "appreciation_assessment": "5.11%/yr on 82 txns is reliable and above the OCR baseline, helped by the future CRL; but the large quantum makes capturing that appreciation on exit harder.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-clover-by-the-park-60077734",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

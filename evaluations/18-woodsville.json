@@ -1,0 +1,63 @@
+{
+  "condo": "18 Woodsville",
+  "slug": "18-woodsville",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2015 freehold unit at 18 Woodsville (D13), tagged '1BR' but an 861 sqft / $1.45M / $1,684 psf listing — almost certainly a larger/dual-key format (true 1BRs here are ~500sqft / ~$0.9M), so the bedroom label is mismatched. Sits just 180m from Potong Pasir NEL MRT, is freehold, and at $1,684 psf is ~6.5% below the $1,802 median with a solid 5.8%/yr rate — a well-located value entry, tempered by the misclassification and thin 19-txn data.",
+      "rating_rationale": "Strong fundamentals — freehold, 180m to Potong Pasir MRT, $1,684 psf ~6.5% below the $1,802 URA median, 5.8%/yr appreciation — but the '1BR' tag on an 861sqft/$1.45M unit is a clear bedroom-sqft mismatch (likely 2BR/dual-key), and the rate rests on a thin 19-txn series. The weak 114-195 arena record and 963 Elo reflect the high quantum relative to its 1BR label. Net Neutral leaning positive pending unit-type confirmation.",
+      "red_flags": [
+        "Bedroom-sqft mismatch — 861sqft/$1.45M is not a true 1BR (likely 2BR/dual-key)",
+        "Appreciation rate from a thin 19-txn series",
+        "Weak 114-195 arena record / 963 Elo",
+        "$1.45M quantum is high for the marketed 1BR segment"
+      ],
+      "catalysts": [
+        "180m to Potong Pasir NEL MRT — top-tier doorstep transit",
+        "Freehold tenure and ~6.5% below district-median PSF",
+        "5.8%/yr URA appreciation — above OCR/RCR baselines",
+        "Central-fringe D13 near Bidadari estate transformation"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1684.09,
+        "beds": 1,
+        "sqft": 861.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2015 freehold unit at 18 Woodsville (D13), tagged '1BR' but an 861 sqft / $1.45M / $1,684 psf listing — almost certainly a larger/dual-key format (true 1BRs here are ~500sqft / ~$0.9M), so the bedroom label is mismatched. Sits just 180m from Potong Pasir NEL MRT, is freehold, and at $1,684 psf is ~6.5% below the $1,802 median with a solid 5.8%/yr rate — a well-located value entry, tempered by the misclassification and thin 19-txn data.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong fundamentals — freehold, 180m to Potong Pasir MRT, $1,684 psf ~6.5% below the $1,802 URA median, 5.8%/yr appreciation — but the '1BR' tag on an 861sqft/$1.45M unit is a clear bedroom-sqft mismatch (likely 2BR/dual-key), and the rate rests on a thin 19-txn series. The weak 114-195 arena record and 963 Elo reflect the high quantum relative to its 1BR label. Net Neutral leaning positive pending unit-type confirmation.",
+        "red_flags": [
+          "Bedroom-sqft mismatch — 861sqft/$1.45M is not a true 1BR (likely 2BR/dual-key)",
+          "Appreciation rate from a thin 19-txn series",
+          "Weak 114-195 arena record / 963 Elo",
+          "$1.45M quantum is high for the marketed 1BR segment"
+        ],
+        "catalysts": [
+          "180m to Potong Pasir NEL MRT — top-tier doorstep transit",
+          "Freehold tenure and ~6.5% below district-median PSF",
+          "5.8%/yr URA appreciation — above OCR/RCR baselines",
+          "Central-fringe D13 near Bidadari estate transformation"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-18-woodsville-23768059",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

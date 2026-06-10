@@ -1,0 +1,61 @@
+{
+  "condo": "Villa Marina",
+  "slug": "villa-marina",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A large 1,560 sqft 99-yr-leasehold 3BR (built 1999, ~72yr lease left) at $1.999M / $1,281 PSF in D15, 860m from Siglap MRT (TEL). The low PSF is a function of age and decaying lease, not value — reliable URA data (74 txns) prints just 2.38%/yr appreciation, the weakest in the batch.",
+      "rating_rationale": "2.38% CAGR on a reliable 74-txn series is well below OCR/RCR baselines and barely tracks inflation — a poor 5-7yr investment. ~72 years of lease remaining means accelerating lease-decay drag and financing limits as it ages. The roomy 1,560 sqft inflates quantum to $2.0M while rent won't scale with size, capping yield (~2.7%). Lowest technical score in batch (381).",
+      "red_flags": [
+        "2.38%/yr appreciation on a reliable 74-txn base — bottom of the batch",
+        "27-year-old 99-yr lease (~72yr left) — lease decay drag accelerating",
+        "Oversized 1,560 sqft pushes quantum to $2.0M with no yield benefit"
+      ],
+      "catalysts": [
+        "Siglap MRT (TEL) 860m — modest transit upside",
+        "Large family layout in established East Coast estate"
+      ],
+      "as_of": {
+        "price": 1998800,
+        "psf": 1281.28,
+        "beds": 3,
+        "sqft": 1560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,560 sqft 99-yr-leasehold 3BR (built 1999, ~72yr lease left) at $1.999M / $1,281 PSF in D15, 860m from Siglap MRT (TEL). The low PSF is a function of age and decaying lease, not value — reliable URA data (74 txns) prints just 2.38%/yr appreciation, the weakest in the batch.",
+        "rating": "Avoid",
+        "rating_rationale": "2.38% CAGR on a reliable 74-txn series is well below OCR/RCR baselines and barely tracks inflation — a poor 5-7yr investment. ~72 years of lease remaining means accelerating lease-decay drag and financing limits as it ages. The roomy 1,560 sqft inflates quantum to $2.0M while rent won't scale with size, capping yield (~2.7%). Lowest technical score in batch (381).",
+        "red_flags": [
+          "2.38%/yr appreciation on a reliable 74-txn base — bottom of the batch",
+          "27-year-old 99-yr lease (~72yr left) — lease decay drag accelerating",
+          "Oversized 1,560 sqft pushes quantum to $2.0M with no yield benefit"
+        ],
+        "catalysts": [
+          "Siglap MRT (TEL) 860m — modest transit upside",
+          "Large family layout in established East Coast estate"
+        ],
+        "rental_assessment": "A big 3BR in East Coast rents to families, but at $2.0M the gross yield is thin and large units don't command proportionally higher rent.",
+        "appreciation_assessment": "Reliable URA data shows 2.38%/yr — the lease decay and age are structural headwinds; expect continued underperformance vs district.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.4,
+        "appreciation_rate_source": "URA resale-only, 74 txns — reliable"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-villa-marina-500056133",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

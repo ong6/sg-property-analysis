@@ -1,0 +1,63 @@
+{
+  "condo": "Bartley Residences",
+  "slug": "bartley-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 1,378sqft 4BR at Bartley Residences for $2.8M / $2,032 PSF — a ~10% premium to the $1,849 development median, with the lowest technical score in the batch (480). 410m to Bartley MRT and 6.0%/yr resale growth (198 txns) are positives, but the asking PSF is at the top of the transacted band and the $2.8M quantum thins the buyer pool.",
+      "rating_rationale": "Web check confirms 4BR transacted ~$1,800 PSF over the past year and listings average ~$2,097 PSF — so this $2,032 asking is above the transacted median ($1,849) and only justifiable for a top-floor/renovated unit. 410m to Bartley MRT (CCL) and a strong 6.0%/yr over 198 txns are genuine strengths, and Bidadari's maturation helps. But score 480 reflects the premium pricing and a $2.8M quantum above the deepest band. Negotiation back toward ~$1,900 PSF would make this a Buy; at ask it is a fair Neutral.",
+      "red_flags": [
+        "$2,032 PSF asking is ~10% above the $1,849 development median and above the ~$1,800 transacted level",
+        "$2.8M quantum sits above the deepest buyer band",
+        "Lowest technical score in the batch (480)",
+        "99LH from 2011/2015 — lease decay over the hold"
+      ],
+      "catalysts": [
+        "410m to Bartley MRT (Circle Line) — strong connectivity",
+        "Bidadari new-town maturation lifting the surrounding area",
+        "6.0%/yr reliable resale appreciation (198 txns)"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 2031.93,
+        "beds": 4,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,378sqft 4BR at Bartley Residences for $2.8M / $2,032 PSF — a ~10% premium to the $1,849 development median, with the lowest technical score in the batch (480). 410m to Bartley MRT and 6.0%/yr resale growth (198 txns) are positives, but the asking PSF is at the top of the transacted band and the $2.8M quantum thins the buyer pool.",
+        "rating": "Neutral",
+        "rating_rationale": "Web check confirms 4BR transacted ~$1,800 PSF over the past year and listings average ~$2,097 PSF — so this $2,032 asking is above the transacted median ($1,849) and only justifiable for a top-floor/renovated unit. 410m to Bartley MRT (CCL) and a strong 6.0%/yr over 198 txns are genuine strengths, and Bidadari's maturation helps. But score 480 reflects the premium pricing and a $2.8M quantum above the deepest band. Negotiation back toward ~$1,900 PSF would make this a Buy; at ask it is a fair Neutral.",
+        "red_flags": [
+          "$2,032 PSF asking is ~10% above the $1,849 development median and above the ~$1,800 transacted level",
+          "$2.8M quantum sits above the deepest buyer band",
+          "Lowest technical score in the batch (480)",
+          "99LH from 2011/2015 — lease decay over the hold"
+        ],
+        "catalysts": [
+          "410m to Bartley MRT (Circle Line) — strong connectivity",
+          "Bidadari new-town maturation lifting the surrounding area",
+          "6.0%/yr reliable resale appreciation (198 txns)"
+        ],
+        "rental_assessment": "Bartley/Serangoon is a solid rental location with CCL access; a 4BR rents to families with moderate yield, fine but not the driver at $2.8M.",
+        "appreciation_assessment": "6.0%/yr over 198 transactions is reliable, but buying ~10% above median PSF gives back much of that edge — entry price is the issue, not the asset.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bartley-residences-500134984",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

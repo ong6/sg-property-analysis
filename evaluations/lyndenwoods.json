@@ -1,0 +1,65 @@
+{
+  "condo": "Lyndenwoods",
+  "slug": "lyndenwoods",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Lyndenwoods is CapitaLand's 343-unit 99yr new launch at Science Park Drive (D05, TOP ~2029) — the first Science Park residential project in 40 years. This 4BR at $3.435M / $2659 PSF sits at the very top of the project's range (URA median $2583) and at $3.4M absolute on a leasehold tenure, exit liquidity is the binding constraint.",
+      "rating_rationale": "$2659 PSF is above even the project's own median of $2583 — you're paying top-of-stack for a new-launch 4BR — and $3.435M absolute on a 99yr lease pushes well past the liquid band; CCR freehold becomes a direct competitor at that price. The 342-txn count reflects launch sell-down, and the rate carries new-launch bias (inflated developer pricing). Score 436/1000 despite a respectable Elo. Reputable developer (CapitaLand) and One-North/Science Park employment are real positives, but a $3.4M leasehold 4BR bought above project median has little appreciation headroom and a thin resale pool.",
+      "red_flags": [
+        "$2659 PSF above project URA median ($2583) — paying top-of-stack",
+        "$3.435M absolute on 99yr lease — competes with CCR freehold, thin buyer pool",
+        "New-launch bias in the rate (developer pricing inflation)",
+        "TOP ~2029 — construction/market risk before any exit window opens",
+        "Low score 436/1000"
+      ],
+      "catalysts": [
+        "CapitaLand developer (strong track record)",
+        "First Science Park residential in 40 years — scarcity narrative",
+        "650m to Kent Ridge MRT; One-North/NUS/Science Park employment catchment"
+      ],
+      "as_of": {
+        "price": 3435000,
+        "psf": 2658.67,
+        "beds": 4,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Lyndenwoods is CapitaLand's 343-unit 99yr new launch at Science Park Drive (D05, TOP ~2029) — the first Science Park residential project in 40 years. This 4BR at $3.435M / $2659 PSF sits at the very top of the project's range (URA median $2583) and at $3.4M absolute on a leasehold tenure, exit liquidity is the binding constraint.",
+        "rating": "Avoid",
+        "rating_rationale": "$2659 PSF is above even the project's own median of $2583 — you're paying top-of-stack for a new-launch 4BR — and $3.435M absolute on a 99yr lease pushes well past the liquid band; CCR freehold becomes a direct competitor at that price. The 342-txn count reflects launch sell-down, and the rate carries new-launch bias (inflated developer pricing). Score 436/1000 despite a respectable Elo. Reputable developer (CapitaLand) and One-North/Science Park employment are real positives, but a $3.4M leasehold 4BR bought above project median has little appreciation headroom and a thin resale pool.",
+        "red_flags": [
+          "$2659 PSF above project URA median ($2583) — paying top-of-stack",
+          "$3.435M absolute on 99yr lease — competes with CCR freehold, thin buyer pool",
+          "New-launch bias in the rate (developer pricing inflation)",
+          "TOP ~2029 — construction/market risk before any exit window opens",
+          "Low score 436/1000"
+        ],
+        "catalysts": [
+          "CapitaLand developer (strong track record)",
+          "First Science Park residential in 40 years — scarcity narrative",
+          "650m to Kent Ridge MRT; One-North/NUS/Science Park employment catchment"
+        ],
+        "rental_assessment": "Tenant demand from Science Park/One-North/NUS is strong, but a $3.4M 4BR is family-let with a shallow pool and a sub-3% gross yield at this PSF — weak income relative to outlay.",
+        "appreciation_assessment": "Limited headroom: bought above the project's own median PSF at full new-launch pricing on a leasehold tenure, much of the upside is pre-paid. Do not override the new-launch-biased rate upward.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lyndenwoods-60028615",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

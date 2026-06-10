@@ -1,0 +1,63 @@
+{
+  "condo": "OLA",
+  "slug": "ola",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 4BR (1389sqft) at OLA EC, Sengkang, at $2.30M / $1,656 PSF — a strong price for a young (2023) 99yr EC and at the upper edge of the liquid band. Excellent Cheng Lim LRT proximity (170m) and on-frontier score, but $2.3M for a Sengkang EC tests the local buyer ceiling.",
+      "rating_rationale": "$1,656 PSF for a 4BR EC is on the higher side for Sengkang and $2.30M sits at the top of where Sengkang EC buyers transact, thinning the resale pool. No URA project rate available (null txns) so appreciation is a regional OCR/EC prior, not project-verified. Score 623 / Elo 1382 with a solid 260-152 record and on-frontier are positives. 170m to Cheng Lim LRT (one stop to Sengkang interchange) is a genuine convenience plus.",
+      "red_flags": [
+        "No URA appreciation data — rate is a regional prior only",
+        "$2.3M is near the Sengkang EC price ceiling, narrowing exit pool",
+        "$1,656 PSF is rich for a leasehold EC"
+      ],
+      "catalysts": [
+        "Cheng Lim LRT 170m (Sengkang interchange one stop away)",
+        "Punggol Digital District / NE growth corridor",
+        "Young EC heading toward MOP/privatisation upside"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1655.87,
+        "beds": 4,
+        "sqft": 1389.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 4BR (1389sqft) at OLA EC, Sengkang, at $2.30M / $1,656 PSF — a strong price for a young (2023) 99yr EC and at the upper edge of the liquid band. Excellent Cheng Lim LRT proximity (170m) and on-frontier score, but $2.3M for a Sengkang EC tests the local buyer ceiling.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,656 PSF for a 4BR EC is on the higher side for Sengkang and $2.30M sits at the top of where Sengkang EC buyers transact, thinning the resale pool. No URA project rate available (null txns) so appreciation is a regional OCR/EC prior, not project-verified. Score 623 / Elo 1382 with a solid 260-152 record and on-frontier are positives. 170m to Cheng Lim LRT (one stop to Sengkang interchange) is a genuine convenience plus.",
+        "red_flags": [
+          "No URA appreciation data — rate is a regional prior only",
+          "$2.3M is near the Sengkang EC price ceiling, narrowing exit pool",
+          "$1,656 PSF is rich for a leasehold EC"
+        ],
+        "catalysts": [
+          "Cheng Lim LRT 170m (Sengkang interchange one stop away)",
+          "Punggol Digital District / NE growth corridor",
+          "Young EC heading toward MOP/privatisation upside"
+        ],
+        "rental_assessment": "Sengkang family rental demand is moderate; large 4BR EC rents adequately but yield is unremarkable at this price.",
+        "appreciation_assessment": "EC privatisation can add upside but entry PSF is already high; expect OCR-baseline appreciation, not outperformance.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR/D19 EC baseline (no project URA data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ola-24190981",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

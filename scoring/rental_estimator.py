@@ -60,10 +60,6 @@ class RentalEstimator:
         self.condo_medians = condo_rental_data or {}
         self.district_data = _load_district_data()
 
-    def update_condo_data(self, condo_name: str, rent_psf: float):
-        """Add or update condo rental data."""
-        self.condo_medians[condo_name.lower()] = rent_psf
-
     def estimate(self, listing: dict[str, Any]) -> dict:
         """
         Estimate rental for a listing.
@@ -176,35 +172,3 @@ class RentalEstimator:
             "source": rental["source"],
         }
 
-
-def estimate_rental(listing: dict, condo_data: Optional[dict] = None) -> dict:
-    """Convenience function to estimate rental for a single listing."""
-    estimator = RentalEstimator(condo_data)
-    return estimator.estimate(listing)
-
-
-def estimate_gross_yield(
-    price: int, sqft: float, district: Optional[str] = None
-) -> float:
-    """
-    Quick estimate of gross yield without full listing data.
-
-    Args:
-        price: Purchase price
-        sqft: Floor area in square feet
-        district: Optional district code (e.g., "D05")
-
-    Returns:
-        Estimated gross yield percentage
-    """
-    district_data = _load_district_data()
-
-    rent_psf = RentalEstimator.DEFAULT_RENTAL_PSF
-    if district:
-        d = normalize_district(district)
-        medians = district_data.get("medians", {})
-        if d in medians:
-            rent_psf = medians[d].get("rental_psf", rent_psf)
-
-    annual_rent = sqft * rent_psf * 12
-    return (annual_rent / price) * 100 if price > 0 else 0

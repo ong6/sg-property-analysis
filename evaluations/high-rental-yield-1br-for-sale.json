@@ -1,0 +1,63 @@
+{
+  "condo": "High Rental Yield 1Br for Sale",
+  "slug": "high-rental-yield-1br-for-sale",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Generic listing title masks what is almost certainly The Tre Ver (UOL, 729-unit 99-yr leasehold, TOP 2022) — 260m to Potong Pasir MRT in D13. A sub-$1M, well-built, highly-liquid large-development 1BR right beside an MRT is a strong rental/exit proposition; the highest non-anomalous score in the batch (694) backs it.",
+      "rating_rationale": "Identified via location (260m to NE10, 99-yr, 2022, 495 sqft) as The Tre Ver — UOL's 729-unit riverfront project, a large, liquid, well-regarded development. score_1000 694 is the strongest credible score in the batch. $899,999 ($1,818 PSF) is an accessible, deep-pool entry; 260m (3 min) to Potong Pasir MRT and city-fringe D13 location drive both rental yield and resale demand. URA fields are null only because the generic listing title broke the project match, not a data hole on the project itself.",
+      "red_flags": [
+        "null URA data in dossier (title-match failure, not a real project gap)",
+        "1BR — narrower resale pool",
+        "99-yr leasehold from 2022",
+        "listing title is generic — confirm the project is The Tre Ver before committing"
+      ],
+      "catalysts": [
+        "260m to NE10 Potong Pasir MRT (NEL, direct to city/Dhoby Ghaut)",
+        "large 729-unit UOL development — strong liquidity and management",
+        "sub-$1M entry — broadest buyer/tenant pool"
+      ],
+      "as_of": {
+        "price": 899999,
+        "psf": 1818.18,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Generic listing title masks what is almost certainly The Tre Ver (UOL, 729-unit 99-yr leasehold, TOP 2022) — 260m to Potong Pasir MRT in D13. A sub-$1M, well-built, highly-liquid large-development 1BR right beside an MRT is a strong rental/exit proposition; the highest non-anomalous score in the batch (694) backs it.",
+        "rating": "Buy",
+        "rating_rationale": "Identified via location (260m to NE10, 99-yr, 2022, 495 sqft) as The Tre Ver — UOL's 729-unit riverfront project, a large, liquid, well-regarded development. score_1000 694 is the strongest credible score in the batch. $899,999 ($1,818 PSF) is an accessible, deep-pool entry; 260m (3 min) to Potong Pasir MRT and city-fringe D13 location drive both rental yield and resale demand. URA fields are null only because the generic listing title broke the project match, not a data hole on the project itself.",
+        "red_flags": [
+          "null URA data in dossier (title-match failure, not a real project gap)",
+          "1BR — narrower resale pool",
+          "99-yr leasehold from 2022",
+          "listing title is generic — confirm the project is The Tre Ver before committing"
+        ],
+        "catalysts": [
+          "260m to NE10 Potong Pasir MRT (NEL, direct to city/Dhoby Ghaut)",
+          "large 729-unit UOL development — strong liquidity and management",
+          "sub-$1M entry — broadest buyer/tenant pool"
+        ],
+        "rental_assessment": "City-fringe D13 beside an MRT with the marketed 'high rental yield' angle — 1BR tenant demand is strong; a genuinely attractive yield play.",
+        "appreciation_assessment": "No project URA rate in-dossier, but a new (2022), large, MRT-adjacent UOL development in transforming Potong Pasir should track or beat the OCR/RCR-fringe baseline.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-high-rental-yield-1br-for-sale-60155316",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

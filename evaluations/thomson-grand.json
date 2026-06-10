@@ -1,0 +1,115 @@
+{
+  "condo": "Thomson Grand",
+  "slug": "thomson-grand",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 5,317 sqft unit at Thomson Grand (D20 Sin Ming, 99LH, built 2015) at $4.08M / $767 psf — confirmed via project data to be a strata terrace house (the 5,102–6,566 sqft / 22-unit landed tier), not an apartment. The $767 'cheap' PSF is purely the landed format; the $1,819 development median applies to apartments, not this unit, so the comparison is apples-to-oranges.",
+      "rating_rationale": "Strata terrace at $4.08M is a niche, illiquid format: only 22 such units exist, the 99LH (~11 years elapsed) makes a landed-style product less compelling than freehold landed, and the $4M+ quantum sits far outside the liquid band. The 4.67%/yr CAGR and $1,819 median both reflect the apartment stock, not strata-landed, so they overstate the case for this unit. 400m to Bright Hill CRL is a genuine plus, but as a 5–7yr investment the exit risk on a $4M leasehold strata terrace is too high.",
+      "red_flags": [
+        "Strata terrace house — niche, illiquid format (only 22 units), not an apartment",
+        "$767 psf is misleadingly low — reflects landed sqft, not value",
+        "$4.08M quantum far outside the liquid band",
+        "99LH strata-landed competes poorly against freehold landed alternatives",
+        "Headline appreciation/median reflect apartment stock, not this unit type"
+      ],
+      "catalysts": [
+        "400m to CR13 Bright Hill (Cross Island Line ~2030)",
+        "Spacious landed-style living in established Thomson/Sin Ming locale"
+      ],
+      "as_of": {
+        "price": 4080000,
+        "psf": 767.35,
+        "beds": 4,
+        "sqft": 5317.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 5,317 sqft unit at Thomson Grand (D20 Sin Ming, 99LH, built 2015) at $4.08M / $767 psf — confirmed via project data to be a strata terrace house (the 5,102–6,566 sqft / 22-unit landed tier), not an apartment. The $767 'cheap' PSF is purely the landed format; the $1,819 development median applies to apartments, not this unit, so the comparison is apples-to-oranges.",
+        "rating": "Avoid",
+        "rating_rationale": "Strata terrace at $4.08M is a niche, illiquid format: only 22 such units exist, the 99LH (~11 years elapsed) makes a landed-style product less compelling than freehold landed, and the $4M+ quantum sits far outside the liquid band. The 4.67%/yr CAGR and $1,819 median both reflect the apartment stock, not strata-landed, so they overstate the case for this unit. 400m to Bright Hill CRL is a genuine plus, but as a 5–7yr investment the exit risk on a $4M leasehold strata terrace is too high.",
+        "red_flags": [
+          "Strata terrace house — niche, illiquid format (only 22 units), not an apartment",
+          "$767 psf is misleadingly low — reflects landed sqft, not value",
+          "$4.08M quantum far outside the liquid band",
+          "99LH strata-landed competes poorly against freehold landed alternatives",
+          "Headline appreciation/median reflect apartment stock, not this unit type"
+        ],
+        "catalysts": [
+          "400m to CR13 Bright Hill (Cross Island Line ~2030)",
+          "Spacious landed-style living in established Thomson/Sin Ming locale"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-grand-500137207",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The algo's 'cheap 4BR' is a mislabel: this 5,317 sqft unit is a strata terrace house, and its $767 psf is actually slightly ABOVE recent terrace transactions — no real discount.",
+      "rating_rationale": "The dossier's -62.5% age-adj and -57.0% vs cohort are artifacts: psf_cohort_txns=0 and both 'very_low_psf' and 'bedroom_sqft_mismatch' flags fired. Web confirms Thomson Grand has 22 strata terrace units of 5,102-6,566 sqft — this 5,317 sqft listing is a strata terrace, NOT a 4BR apartment. Recent strata-terrace transactions run $688-731 psf (avg $711, high $731 in Mar 2025), so $767 psf is a small premium to market, not a bargain; the algo compared it against $1,809 psf 4BR condos, which is invalid. With no genuine value edge, a $4.08M quantum that limits the buyer pool, 99yr leasehold decay on a niche strata-landed format, and thin/illiquid resale, the lead value signal evaporates. Avoid for a 5-7yr investment hold.",
+      "red_flags": [
+        "Mislabeled 'beds':4 — actually a ~5,317 sqft strata terrace house",
+        "psf_cohort_txns=0; cohort comparison invalid (mismatch + very_low_psf flags)",
+        "$767 psf is slightly above recent terrace transactions ($688-731), not cheap",
+        "$4.08M quantum + niche strata-landed format = thin liquidity",
+        "99yr leasehold decay on a landed-format unit"
+      ],
+      "catalysts": [
+        "Upper Thomson/Bishan area amenity (weak relative to mispricing)"
+      ],
+      "as_of": {
+        "price": 4080000,
+        "psf": 767.35,
+        "beds": 4,
+        "sqft": 5317
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The algo's 'cheap 4BR' is a mislabel: this 5,317 sqft unit is a strata terrace house, and its $767 psf is actually slightly ABOVE recent terrace transactions — no real discount.",
+        "rating_rationale": "The dossier's -62.5% age-adj and -57.0% vs cohort are artifacts: psf_cohort_txns=0 and both 'very_low_psf' and 'bedroom_sqft_mismatch' flags fired. Web confirms Thomson Grand has 22 strata terrace units of 5,102-6,566 sqft — this 5,317 sqft listing is a strata terrace, NOT a 4BR apartment. Recent strata-terrace transactions run $688-731 psf (avg $711, high $731 in Mar 2025), so $767 psf is a small premium to market, not a bargain; the algo compared it against $1,809 psf 4BR condos, which is invalid. With no genuine value edge, a $4.08M quantum that limits the buyer pool, 99yr leasehold decay on a niche strata-landed format, and thin/illiquid resale, the lead value signal evaporates. Avoid for a 5-7yr investment hold.",
+        "appreciation_assessment": "4.67% reported CAGR (100 txns) blends apartments and terraces and is not unit-type-specific; per v3.4 it carries ~0 forward weight here and the cohort comparison is corrupted.",
+        "rental_assessment": "A 5,300 sqft strata terrace at $4M+ has a very thin tenant pool and weak gross yield; rental return is poor relative to quantum.",
+        "red_flags": [
+          "Mislabeled 'beds':4 — actually a ~5,317 sqft strata terrace house",
+          "psf_cohort_txns=0; cohort comparison invalid (mismatch + very_low_psf flags)",
+          "$767 psf is slightly above recent terrace transactions ($688-731), not cheap",
+          "$4.08M quantum + niche strata-landed format = thin liquidity",
+          "99yr leasehold decay on a landed-format unit"
+        ],
+        "catalysts": [
+          "Upper Thomson/Bishan area amenity (weak relative to mispricing)"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-grand-500137207",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -120,6 +120,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500145461",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large family-sized unit (1,367 sqft is effectively a 3BR) in prime Bishan/Sin Ming priced at the bottom of the project range; genuine large-quantum value, tempered by 2004 age.",
+      "rating_rationale": "1,367 sqft at '2 beds' is a mismatch (the bedroom_sqft_mismatch flag) - this is really a large 3BR. Asking $1,243 psf is below even the low end of the verified last-12-month range ($1,257-$1,890 psf, avg ~$1,744), confirming the -27.3% age-adj / -31.0% cohort signals are directionally real and not a mis-scrape, though the discount is partly a large-unit and old-age effect rather than pure alpha. $1.7M for 1,367 sqft in Bishan (top-school belt, near Bishan MRT interchange and AMK/Thomson amenities) is a rare big-floorplate entry; D20 sits in the favourable RCR band.",
+      "red_flags": [
+        "Completed 2004 (~78 yrs lease left) - lease decay and older facilities weigh on a 5-7yr exit",
+        "Low psf is substantially a large-floorplate / old-stock effect, so headline cheapness overstates the true bargain",
+        "Cohort only 16 txns; mixed resident reviews on management and parking",
+        "Large $1.7M quantum narrows the buyer pool versus compact units"
+      ],
+      "catalysts": [
+        "Prime Bishan location near Bishan MRT interchange (NSL/CCL) and strong primary-school catchment",
+        "Below-range asking psf on a scarce large-floorplate unit offers genuine value cushion",
+        "Family-sized layout in a tight large-unit segment supports owner-occupier resale demand"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1243.6,
+        "beds": 2,
+        "sqft": 1367
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large family-sized unit (1,367 sqft is effectively a 3BR) in prime Bishan/Sin Ming priced at the bottom of the project range; genuine large-quantum value, tempered by 2004 age.",
+        "rating_rationale": "1,367 sqft at '2 beds' is a mismatch (the bedroom_sqft_mismatch flag) - this is really a large 3BR. Asking $1,243 psf is below even the low end of the verified last-12-month range ($1,257-$1,890 psf, avg ~$1,744), confirming the -27.3% age-adj / -31.0% cohort signals are directionally real and not a mis-scrape, though the discount is partly a large-unit and old-age effect rather than pure alpha. $1.7M for 1,367 sqft in Bishan (top-school belt, near Bishan MRT interchange and AMK/Thomson amenities) is a rare big-floorplate entry; D20 sits in the favourable RCR band.",
+        "red_flags": [
+          "Completed 2004 (~78 yrs lease left) - lease decay and older facilities weigh on a 5-7yr exit",
+          "Low psf is substantially a large-floorplate / old-stock effect, so headline cheapness overstates the true bargain",
+          "Cohort only 16 txns; mixed resident reviews on management and parking",
+          "Large $1.7M quantum narrows the buyer pool versus compact units"
+        ],
+        "catalysts": [
+          "Prime Bishan location near Bishan MRT interchange (NSL/CCL) and strong primary-school catchment",
+          "Below-range asking psf on a scarce large-floorplate unit offers genuine value cushion",
+          "Family-sized layout in a tight large-unit segment supports owner-occupier resale demand"
+        ],
+        "rental_assessment": "Bishan commands steady family-tenant demand; rents around $3.75-5.00 psf/month for 2-3BR. On a large 1,367 sqft unit the gross yield is modest (~2.6-3.0%) given the high quantum, so this is an appreciation/own-stay value play more than a yield play.",
+        "appreciation_assessment": "Trailing 7.02% CAGR on 137 txns is strong but v3.4-discounted; forward upside rests on the deep Bishan value gap and location quality, offset by lease decay from a 2004 build."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-gardens-at-bishan-500146707",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

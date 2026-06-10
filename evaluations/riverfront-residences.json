@@ -56,6 +56,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-riverfront-residences-500150240",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely cheap 1BR in a large, well-located D19 (OCR) project — asking $1,547 psf vs a verified project average of ~$1,732 psf — in the highest-realized-forward-return region. The discount looks real and is the cheapest of this batch with deep, trustworthy data.",
+      "rating_rationale": "Asking $1,547 psf sits clearly below the verified last-12-month project range of $1,495-$1,928 psf (avg ~$1,732), so the algo's age_adj_premium of -19.7% and psf_premium_vs_cohort of -4.5% are backed by real transactions, not a quirk. Data depth is the strongest in this batch: 573 appreciation txns and a 40-unit psf cohort, no red flags. It sits in OCR (D19), the region with the best realized forward returns (~+4.0%) under v3.4 priors, and the small $800k quantum keeps it liquid. The ~4.5% URA 5yr CAGR is story only (de-emphasized), but the value case stands on verified comps.",
+      "red_flags": [
+        "517 sqft 1BR is a compact format with no study — narrower tenant pool than a 1+study",
+        "1,472-unit mega-development means high concurrent resale supply competing on exit",
+        "99-yr lease from 2018 — lease decay clock running, though young"
+      ],
+      "catalysts": [
+        "OCR (D19) is the strongest realized forward-return region in the v3.4 backtest",
+        "Verified discount to project average (~$185 psf below avg) gives margin of safety",
+        "Riverside/serene setting near Hougang/Sengkang amenities supports rental demand (~3.7% yield)"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1547.39,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely cheap 1BR in a large, well-located D19 (OCR) project — asking $1,547 psf vs a verified project average of ~$1,732 psf — in the highest-realized-forward-return region. The discount looks real and is the cheapest of this batch with deep, trustworthy data.",
+        "rating_rationale": "Asking $1,547 psf sits clearly below the verified last-12-month project range of $1,495-$1,928 psf (avg ~$1,732), so the algo's age_adj_premium of -19.7% and psf_premium_vs_cohort of -4.5% are backed by real transactions, not a quirk. Data depth is the strongest in this batch: 573 appreciation txns and a 40-unit psf cohort, no red flags. It sits in OCR (D19), the region with the best realized forward returns (~+4.0%) under v3.4 priors, and the small $800k quantum keeps it liquid. The ~4.5% URA 5yr CAGR is story only (de-emphasized), but the value case stands on verified comps.",
+        "red_flags": [
+          "517 sqft 1BR is a compact format with no study — narrower tenant pool than a 1+study",
+          "1,472-unit mega-development means high concurrent resale supply competing on exit",
+          "99-yr lease from 2018 — lease decay clock running, though young"
+        ],
+        "catalysts": [
+          "OCR (D19) is the strongest realized forward-return region in the v3.4 backtest",
+          "Verified discount to project average (~$185 psf below avg) gives margin of safety",
+          "Riverside/serene setting near Hougang/Sengkang amenities supports rental demand (~3.7% yield)"
+        ],
+        "rental_assessment": "Project rental yield reported ~3.7%, healthy for a young OCR leasehold 1BR; compact 517 sqft suits single-tenant rental in the NE.",
+        "appreciation_assessment": "Trailing ~4.5% CAGR is robustly sampled (573 txns) but de-weighted under v3.4 — forward edge rests on the verified value discount and OCR location, not the past CAGR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riverfront-residences-500144034",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "condo": "Pebble Bay",
+  "slug": "pebble-bay",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 850sqft '1BR' at Pebble Bay, D15 Tanjong Rhu, at $1.59M / $1,871 PSF — note the size suggests this is really a generous 1+study or mislabelled larger unit. Strong 4.7%/yr resale CAGR on a deep 103-transaction series and 270m to the new Tanjong Rhu TEL station are the standout positives.",
+      "rating_rationale": "This is the data-richest entry in the batch: 4.67%/yr resale-only CAGR on 103 URA transactions (high confidence) and PSF ($1,871) only ~1% over the $1,846 median. 99yr leasehold from 1998 (~71yrs left) is the main drag, but 270m to the brand-new TE23 Tanjong Rhu MRT is a concrete catalyst in the Greater Southern Waterfront orbit. The 850sqft size for a '1BR' means real living space and broad resale appeal, not a shoebox. Genuine value at $1.59M.",
+      "red_flags": [
+        "99yr leasehold from 1998 — ~71 years remaining, lease decay will weigh over a 5-7yr hold",
+        "Unusual 850sqft for a '1BR' — verify actual layout/bedroom count",
+        "Aging 1998 development — maintenance/facilities dated"
+      ],
+      "catalysts": [
+        "270m to new TE23 Tanjong Rhu MRT (Thomson-East Coast Line)",
+        "Greater Southern Waterfront / Kallang Riverside transformation nearby",
+        "Deep 103-txn liquidity with proven 4.7%/yr resale appreciation"
+      ],
+      "as_of": {
+        "price": 1590000,
+        "psf": 1870.59,
+        "beds": 1,
+        "sqft": 850.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 850sqft '1BR' at Pebble Bay, D15 Tanjong Rhu, at $1.59M / $1,871 PSF — note the size suggests this is really a generous 1+study or mislabelled larger unit. Strong 4.7%/yr resale CAGR on a deep 103-transaction series and 270m to the new Tanjong Rhu TEL station are the standout positives.",
+        "rating": "Buy",
+        "rating_rationale": "This is the data-richest entry in the batch: 4.67%/yr resale-only CAGR on 103 URA transactions (high confidence) and PSF ($1,871) only ~1% over the $1,846 median. 99yr leasehold from 1998 (~71yrs left) is the main drag, but 270m to the brand-new TE23 Tanjong Rhu MRT is a concrete catalyst in the Greater Southern Waterfront orbit. The 850sqft size for a '1BR' means real living space and broad resale appeal, not a shoebox. Genuine value at $1.59M.",
+        "red_flags": [
+          "99yr leasehold from 1998 — ~71 years remaining, lease decay will weigh over a 5-7yr hold",
+          "Unusual 850sqft for a '1BR' — verify actual layout/bedroom count",
+          "Aging 1998 development — maintenance/facilities dated"
+        ],
+        "catalysts": [
+          "270m to new TE23 Tanjong Rhu MRT (Thomson-East Coast Line)",
+          "Greater Southern Waterfront / Kallang Riverside transformation nearby",
+          "Deep 103-txn liquidity with proven 4.7%/yr resale appreciation"
+        ],
+        "rental_assessment": "Waterfront D15 location beside a new MRT and near the CBD/Kallang supports steady rental demand; the larger floor area appeals to couples, widening the tenant pool versus a true shoebox.",
+        "appreciation_assessment": "4.67%/yr resale CAGR on 103 transactions is reliable and solid; TEL station opening provides forward uplift, partially offset by lease decay.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pebble-bay-500128455",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

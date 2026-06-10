@@ -1,0 +1,65 @@
+{
+  "condo": "Highest rental yield in District 3, city fringe, ideal for ownstay and investment",
+  "slug": "highest-rental-yield-in-district-3-city-fringe-ideal-for-ownstay-and-investment",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Generic-titled 99-yr 2BR (700sqft) at a steep $2,600 PSF / $1.82M, 270m from Outram Park MRT (a triple-line interchange: NEL/EWL/TEL) in D3. The location is excellent for rental, but $2,600 PSF on a 99-yr lease is full premium pricing with no built_year and no URA data to verify the project or trend.",
+      "rating_rationale": "Outram Park is one of the best-connected MRT nodes in Singapore (270m, triple interchange) right on the city/GSW fringe, so the rental thesis is real and the $1.82M sits in the liquid band. But $2,600 PSF is aggressive for a 99-yr 2BR, the missing built_year and absent URA series mean lease/age and trend are unverified, and the listing title is marketing rather than a known project. Strong location, unproven value — Neutral.",
+      "red_flags": [
+        "$2,600 PSF is full premium pricing on a 99-yr lease",
+        "Missing built_year — lease decay/age unverifiable",
+        "No URA appreciation/txn data; generic marketing title",
+        "Small 700sqft 2BR at a high quantum"
+      ],
+      "catalysts": [
+        "270m to Outram Park MRT — NEL/EWL/TEL triple interchange",
+        "Greater Southern Waterfront transformation on the doorstep",
+        "CBD-fringe location drives strong professional rental demand"
+      ],
+      "as_of": {
+        "price": 1820000,
+        "psf": 2600.0,
+        "beds": 2,
+        "sqft": 700.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Generic-titled 99-yr 2BR (700sqft) at a steep $2,600 PSF / $1.82M, 270m from Outram Park MRT (a triple-line interchange: NEL/EWL/TEL) in D3. The location is excellent for rental, but $2,600 PSF on a 99-yr lease is full premium pricing with no built_year and no URA data to verify the project or trend.",
+        "rating": "Neutral",
+        "rating_rationale": "Outram Park is one of the best-connected MRT nodes in Singapore (270m, triple interchange) right on the city/GSW fringe, so the rental thesis is real and the $1.82M sits in the liquid band. But $2,600 PSF is aggressive for a 99-yr 2BR, the missing built_year and absent URA series mean lease/age and trend are unverified, and the listing title is marketing rather than a known project. Strong location, unproven value — Neutral.",
+        "red_flags": [
+          "$2,600 PSF is full premium pricing on a 99-yr lease",
+          "Missing built_year — lease decay/age unverifiable",
+          "No URA appreciation/txn data; generic marketing title",
+          "Small 700sqft 2BR at a high quantum"
+        ],
+        "catalysts": [
+          "270m to Outram Park MRT — NEL/EWL/TEL triple interchange",
+          "Greater Southern Waterfront transformation on the doorstep",
+          "CBD-fringe location drives strong professional rental demand"
+        ],
+        "rental_assessment": "Outram Park's connectivity and CBD/SGH proximity give genuinely strong, deep tenant demand — the high-yield claim is plausible and is the main support for the price.",
+        "appreciation_assessment": "GSW is a real long-run catalyst, but $2,600 PSF on a 99-yr lease likely prices much of it in; expect city-fringe appreciation net of lease decay.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "No URA data; RCR/GSW-fringe baseline trimmed for high PSF and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-highest-rental-yield-in-district-3-city-fringe-ideal-for-ownstay-and-investment-23892010",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

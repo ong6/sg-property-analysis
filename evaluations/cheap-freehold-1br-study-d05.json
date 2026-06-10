@@ -1,0 +1,61 @@
+{
+  "condo": "Cheap Freehold 1br+Study (D05)",
+  "slug": "cheap-freehold-1br-study-d05",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2010 freehold 1BR+study in D05 at $820k / $1,657 psf. Despite the 'Cheap Freehold' marketing, the algo itself puts age-adjusted premium at only -1.9% — i.e. priced essentially at market for its age, not a bargain. Freehold carries no forward edge in the v3.4 priors, and there is no real project-level data (appreciation is a regional baseline on 0 transactions, no PSF cohort).",
+      "rating_rationale": "The 'cheap' claim doesn't survive scrutiny: age_adj_premium of -1.9% means it's within ~2% of fair for its age — a near-tie, not a value play. Freehold is explicitly not a forward edge, so the headline tenure adds little. There's zero project-level forward signal (appreciation_pct 3.7% = regional_baseline, 0 txns; psf_cohort_txns null), and the old_property flag (2010) means lease/age is fine but build is mid-cycle. A small 495 sqft 1BR in D05 has decent rentability near the education/JLD belt, which keeps it off Avoid, but with no verified cheapness and no decisive catalyst this is a thin-data Neutral at low confidence.",
+      "red_flags": [
+        "Marketing says 'Cheap' but age_adj_premium is only -1.9% — priced at market, not a bargain",
+        "appreciation_pct 3.7% is a regional_baseline on 0 transactions — no real forward signal",
+        "No same-size PSF cohort (psf_cohort_txns null) — cannot confirm the asking PSF vs true 1BR comps",
+        "old_property flag (built 2010); freehold provides no forward edge per v3.4 priors",
+        "Unverified specific project — generic listing title makes web price-comp confirmation impossible"
+      ],
+      "catalysts": [
+        "D05 / OCR-RCR education-and-JLD belt supports steady 1BR tenant demand",
+        "Small quantum ($820k) is accessible and easier to exit than larger units"
+      ],
+      "as_of": {
+        "price": 820000,
+        "psf": 1656.57,
+        "beds": 1,
+        "sqft": 495
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "A 2010 freehold 1BR+study in D05 at $820k / $1,657 psf. Despite the 'Cheap Freehold' marketing, the algo itself puts age-adjusted premium at only -1.9% — i.e. priced essentially at market for its age, not a bargain. Freehold carries no forward edge in the v3.4 priors, and there is no real project-level data (appreciation is a regional baseline on 0 transactions, no PSF cohort).",
+        "rating_rationale": "The 'cheap' claim doesn't survive scrutiny: age_adj_premium of -1.9% means it's within ~2% of fair for its age — a near-tie, not a value play. Freehold is explicitly not a forward edge, so the headline tenure adds little. There's zero project-level forward signal (appreciation_pct 3.7% = regional_baseline, 0 txns; psf_cohort_txns null), and the old_property flag (2010) means lease/age is fine but build is mid-cycle. A small 495 sqft 1BR in D05 has decent rentability near the education/JLD belt, which keeps it off Avoid, but with no verified cheapness and no decisive catalyst this is a thin-data Neutral at low confidence.",
+        "red_flags": [
+          "Marketing says 'Cheap' but age_adj_premium is only -1.9% — priced at market, not a bargain",
+          "appreciation_pct 3.7% is a regional_baseline on 0 transactions — no real forward signal",
+          "No same-size PSF cohort (psf_cohort_txns null) — cannot confirm the asking PSF vs true 1BR comps",
+          "old_property flag (built 2010); freehold provides no forward edge per v3.4 priors",
+          "Unverified specific project — generic listing title makes web price-comp confirmation impossible"
+        ],
+        "catalysts": [
+          "D05 / OCR-RCR education-and-JLD belt supports steady 1BR tenant demand",
+          "Small quantum ($820k) is accessible and easier to exit than larger units"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-freehold-1br-plus-study-for-sale-high-rental-yield-500082628",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

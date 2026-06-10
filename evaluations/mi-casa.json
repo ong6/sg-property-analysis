@@ -1,0 +1,119 @@
+{
+  "condo": "Mi Casa",
+  "slug": "mi-casa",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 1,259 sqft 99-yr-leasehold 3BR (built 2013) at $1.688M / $1,341 PSF, just 380m from Choa Chu Kang MRT/bus interchange in D23. Reliable URA data (66 txns) prints a healthy 5.22%/yr, the quantum sits in the deep HDB-upgrader sweet spot, and the listing is on the value frontier — the strongest entry in the batch.",
+      "rating_rationale": "5.22% CAGR on a reliable 66-txn base is solid for OCR and beats the regional baseline. $1.688M is squarely in the $1.8M-and-below deep-liquidity band where CCK's large HDB-upgrader pool buys. 380m to NS4 CCK MRT (with bus interchange) is excellent connectivity, the 1,259 sqft 3BR is family-efficient (not oversized), and it sits on the value frontier (score 640).",
+      "red_flags": [
+        "99-yr leasehold (built 2013, ~86yr left) — modest decay, not yet a concern",
+        "D23 OCR — appreciation depends on continued upgrader demand, not a major catalyst",
+        "PSF $1,341 essentially at median — fair value, not a discount"
+      ],
+      "catalysts": [
+        "380m to NS4 Choa Chu Kang MRT + bus interchange — strong transit",
+        "$1.688M in the deepest HDB-upgrader liquidity band with broad family appeal",
+        "Reliable 5.22%/yr URA appreciation (66 txns)"
+      ],
+      "as_of": {
+        "price": 1688000,
+        "psf": 1340.75,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft 99-yr-leasehold 3BR (built 2013) at $1.688M / $1,341 PSF, just 380m from Choa Chu Kang MRT/bus interchange in D23. Reliable URA data (66 txns) prints a healthy 5.22%/yr, the quantum sits in the deep HDB-upgrader sweet spot, and the listing is on the value frontier — the strongest entry in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "5.22% CAGR on a reliable 66-txn base is solid for OCR and beats the regional baseline. $1.688M is squarely in the $1.8M-and-below deep-liquidity band where CCK's large HDB-upgrader pool buys. 380m to NS4 CCK MRT (with bus interchange) is excellent connectivity, the 1,259 sqft 3BR is family-efficient (not oversized), and it sits on the value frontier (score 640).",
+        "red_flags": [
+          "99-yr leasehold (built 2013, ~86yr left) — modest decay, not yet a concern",
+          "D23 OCR — appreciation depends on continued upgrader demand, not a major catalyst",
+          "PSF $1,341 essentially at median — fair value, not a discount"
+        ],
+        "catalysts": [
+          "380m to NS4 Choa Chu Kang MRT + bus interchange — strong transit",
+          "$1.688M in the deepest HDB-upgrader liquidity band with broad family appeal",
+          "Reliable 5.22%/yr URA appreciation (66 txns)"
+        ],
+        "rental_assessment": "CCK is a mature upgrader town with steady family-tenant demand near the interchange; a well-sized 3BR should let reliably, yield ~3%.",
+        "appreciation_assessment": "5.22% on 66 reliable txns is genuinely good for OCR — interchange proximity and broad upgrader demand support it continuing.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only, 66 txns — reliable, lightly trimmed"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-500074469",
+        "review_file": "cov_batch_15.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 99-yr OCR family condo with a real JRL catalyst (Choa Chu Kang becoming an interchange, Mi Casa explicitly named beneficiary), but the asking sits at the top of its own recent range, so the entry is full despite the algo's 'cheap' read.",
+      "rating_rationale": "Genuine forward positives: OCR (best v3.4 forward region ~+4.0%), deep transaction base (41 in 3yr / 66 in algo), and a dated catalyst — JRL phases from 2027 with Choa Chu Kang becoming an interchange and Mi Casa named among the beneficiaries. But the value claim is weaker than the score implies: asking $1,341 psf is at the TOP of the last-12-month range ($1,129-$1,346, avg ~$1,267), i.e. ~6% above the project average, not cheap. The algo's -11.3% age-adj and +1.1% cohort are district/pool-relative, not unit-level discounts. Yield is only ~3.3% and it is a 99-yr lease (2008, ~81 yrs left, no decay alarm yet but not a tailwind). Real catalyst + deep data, full price → Neutral.",
+      "red_flags": [
+        "Asking $1,341 psf is at the ceiling of the recent transacted range (avg ~$1,267) — paying up, not buying cheap",
+        "Low ~3.3% rental yield for OCR",
+        "99-yr leasehold from 2008 (~81 yrs left) — no near-term decay issue but no tenure tailwind",
+        "457-unit project: catalyst is largely priced-in once JRL completion nears"
+      ],
+      "catalysts": [
+        "Jurong Region Line opening from 2027 — Choa Chu Kang becomes an interchange; Mi Casa explicitly named a beneficiary",
+        "OCR district (most favorable forward region in v3.4 backtest, ~+4.0%)",
+        "Tengah New Town / Jurong Lake District transformation lifting D23 demand"
+      ],
+      "as_of": {
+        "price": 1688000,
+        "psf": 1340.75,
+        "beds": 3,
+        "sqft": 1259
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large 99-yr OCR family condo with a real JRL catalyst (Choa Chu Kang becoming an interchange, Mi Casa explicitly named beneficiary), but the asking sits at the top of its own recent range, so the entry is full despite the algo's 'cheap' read.",
+        "rating_rationale": "Genuine forward positives: OCR (best v3.4 forward region ~+4.0%), deep transaction base (41 in 3yr / 66 in algo), and a dated catalyst — JRL phases from 2027 with Choa Chu Kang becoming an interchange and Mi Casa named among the beneficiaries. But the value claim is weaker than the score implies: asking $1,341 psf is at the TOP of the last-12-month range ($1,129-$1,346, avg ~$1,267), i.e. ~6% above the project average, not cheap. The algo's -11.3% age-adj and +1.1% cohort are district/pool-relative, not unit-level discounts. Yield is only ~3.3% and it is a 99-yr lease (2008, ~81 yrs left, no decay alarm yet but not a tailwind). Real catalyst + deep data, full price → Neutral.",
+        "red_flags": [
+          "Asking $1,341 psf is at the ceiling of the recent transacted range (avg ~$1,267) — paying up, not buying cheap",
+          "Low ~3.3% rental yield for OCR",
+          "99-yr leasehold from 2008 (~81 yrs left) — no near-term decay issue but no tenure tailwind",
+          "457-unit project: catalyst is largely priced-in once JRL completion nears"
+        ],
+        "catalysts": [
+          "Jurong Region Line opening from 2027 — Choa Chu Kang becomes an interchange; Mi Casa explicitly named a beneficiary",
+          "OCR district (most favorable forward region in v3.4 backtest, ~+4.0%)",
+          "Tengah New Town / Jurong Lake District transformation lifting D23 demand"
+        ],
+        "appreciation_assessment": "Trailing 5.22% on 66 txns is the most data-backed of the five but per v3.4 is not forward-predictive. The JRL interchange is a real forward driver, partly offset by an entry price already at the top of range — net market-to-modestly-above-market expectation.",
+        "rental_assessment": "~3.3% yield is soft; demand should firm with JRL connectivity to NTU/Jurong, but a 1,259 sqft 3BR at $1.69M is a value/own-stay-leaning hold rather than a yield play."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-500074469",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

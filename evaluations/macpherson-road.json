@@ -1,0 +1,63 @@
+{
+  "condo": "MacPherson road",
+  "slug": "macpherson-road",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Generic 'MacPherson road' freehold 2BR at $1387 PSF / $1.15M — a cheap, liquid quantum with freehold tenure, but a null built_year, a non-specific project name, and an 870m (11-min) walk to Mattar MRT all point to a small/older freehold apartment rather than a full-facility condo. Mid-pack score with a loss-heavy record.",
+      "rating_rationale": "$1.15M / $1387 PSF for an 829 sqft freehold 2BR is affordable and broadly sellable, and freehold + D13 (Potong Pasir/MacPherson, near future and existing MRT corridors) is decent. But the listing is opaque — no project name, null built_year, no URA series — and 11 min from the nearest MRT it lacks a connectivity premium. Likely a modest older freehold walk-up/apartment; fine to hold and rent, no clear growth edge. Elo 1029, 157-233-34, below frontier.",
+      "red_flags": [
+        "Null built_year and generic 'MacPherson road' name — likely small/old freehold apartment, not a facility condo",
+        "870m / 11 min to Mattar MRT — no walkable-station premium",
+        "No URA appreciation or transaction data to verify trend",
+        "Below-frontier with a losing arena record (157-233-34)"
+      ],
+      "catalysts": [
+        "Freehold tenure and a low $1.15M quantum keep it liquid and broadly affordable",
+        "D13 sits on the DTL corridor with Paya Lebar Central and city-fringe access nearby"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1387.21,
+        "beds": 2,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Generic 'MacPherson road' freehold 2BR at $1387 PSF / $1.15M — a cheap, liquid quantum with freehold tenure, but a null built_year, a non-specific project name, and an 870m (11-min) walk to Mattar MRT all point to a small/older freehold apartment rather than a full-facility condo. Mid-pack score with a loss-heavy record.",
+        "rating": "Neutral",
+        "rating_rationale": "$1.15M / $1387 PSF for an 829 sqft freehold 2BR is affordable and broadly sellable, and freehold + D13 (Potong Pasir/MacPherson, near future and existing MRT corridors) is decent. But the listing is opaque — no project name, null built_year, no URA series — and 11 min from the nearest MRT it lacks a connectivity premium. Likely a modest older freehold walk-up/apartment; fine to hold and rent, no clear growth edge. Elo 1029, 157-233-34, below frontier.",
+        "red_flags": [
+          "Null built_year and generic 'MacPherson road' name — likely small/old freehold apartment, not a facility condo",
+          "870m / 11 min to Mattar MRT — no walkable-station premium",
+          "No URA appreciation or transaction data to verify trend",
+          "Below-frontier with a losing arena record (157-233-34)"
+        ],
+        "catalysts": [
+          "Freehold tenure and a low $1.15M quantum keep it liquid and broadly affordable",
+          "D13 sits on the DTL corridor with Paya Lebar Central and city-fringe access nearby"
+        ],
+        "rental_assessment": "City-fringe 2BR rents acceptably, but distance from MRT and uncertain facilities cap rent; yield likely ~3.3%.",
+        "appreciation_assessment": "No project data; freehold city-fringe should track ~4%/yr but the unverified, facility-light unit limits conviction.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D13 freehold city-fringe estimate — no project URA data; built_year unknown"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-macpherson-road-25114548",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

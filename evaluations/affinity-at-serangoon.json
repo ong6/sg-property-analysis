@@ -1,0 +1,119 @@
+{
+  "condo": "Affinity At Serangoon",
+  "slug": "affinity-at-serangoon",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "99-yr leasehold 1BR at Affinity At Serangoon, D19, a large recently-completed (2024) development, asking $858,888 at $1,534 PSF for an efficient 560 sqft, 950m from CR9 Serangoon North (Cross Island Line, future). Very deep 513-txn base, but resale-only appreciation is just 1.35%/yr vs a 3.46% headline.",
+      "rating_rationale": "The 513-txn base is excellent for liquidity confidence, but the headline 3.46%/yr is inflated by launch-phase pricing — the resale-only figure is a weak 1.35%/yr, the honest signal for a 2024 project where developer pricing has worked through. At $1,534 PSF, near-term upside is limited until the CRL Serangoon North station (future) materializes. Large liquid development and efficient layout are real pluses; flat resale appreciation and full launch pricing hold it to Neutral.",
+      "red_flags": [
+        "Resale-only appreciation just 1.35%/yr — launch pricing inflates the 3.46% headline",
+        "950m from future MRT (CRL not yet operational)",
+        "2024 completion — recent launch pricing already in the asking price",
+        "99-yr leasehold"
+      ],
+      "catalysts": [
+        "CR9 Serangoon North (Cross Island Line, ~2030) within ~1km",
+        "Large, liquid 513-txn development — strong exit depth",
+        "Efficient 560 sqft 1BR, sub-$900k entry in D19"
+      ],
+      "as_of": {
+        "price": 858888,
+        "psf": 1533.73,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 1BR at Affinity At Serangoon, D19, a large recently-completed (2024) development, asking $858,888 at $1,534 PSF for an efficient 560 sqft, 950m from CR9 Serangoon North (Cross Island Line, future). Very deep 513-txn base, but resale-only appreciation is just 1.35%/yr vs a 3.46% headline.",
+        "rating": "Neutral",
+        "rating_rationale": "The 513-txn base is excellent for liquidity confidence, but the headline 3.46%/yr is inflated by launch-phase pricing — the resale-only figure is a weak 1.35%/yr, the honest signal for a 2024 project where developer pricing has worked through. At $1,534 PSF, near-term upside is limited until the CRL Serangoon North station (future) materializes. Large liquid development and efficient layout are real pluses; flat resale appreciation and full launch pricing hold it to Neutral.",
+        "red_flags": [
+          "Resale-only appreciation just 1.35%/yr — launch pricing inflates the 3.46% headline",
+          "950m from future MRT (CRL not yet operational)",
+          "2024 completion — recent launch pricing already in the asking price",
+          "99-yr leasehold"
+        ],
+        "catalysts": [
+          "CR9 Serangoon North (Cross Island Line, ~2030) within ~1km",
+          "Large, liquid 513-txn development — strong exit depth",
+          "Efficient 560 sqft 1BR, sub-$900k entry in D19"
+        ],
+        "rental_assessment": "Serangoon family/young-professional rental demand is steady; efficient new 1BR yields ~3.5%.",
+        "appreciation_assessment": "Use the resale-only 1.35%/yr as the honest base — launch inflation distorts the headline. CRL could lift this toward 2030, but it's flat near-term.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA resale-only 1.35%/yr (de-inflated), modest uplift for future CRL"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-60085703",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Strong Buy",
+      "confidence": "high",
+      "summary": "Genuinely cheap OCR 1BR with a verified, dated MRT catalyst. Asking $1,534 psf sits well below verified recent 1BR transactions of $1,793-$1,999 psf, and the Serangoon North CRL station (4-5 min walk, ~2030) is a hard, dated catalyst.",
+      "rating_rationale": "The algo's cheapness is real and web-verified: this 560sqft 1BR asks $1,534 psf while recent (2025) 1BR transactions at the project printed $1,793-$1,999 psf and the project 12-mo average is ~$1,823 psf (project-wide range $1,455-$2,233). That is a ~15-20% discount to the actual 1BR cohort, not a thin-data quirk — appreciation_txns=513 and psf_cohort_txns=37 are deep. age_adj_premium -20.4% and psf_premium_vs_cohort -10.8% both corroborate. Region aligns with the v3.4 prior (OCR ≈ +4.0% realized forward, the best bracket). The catalyst is decisive: the Cross-Island Line Serangoon North station (CR9) is a confirmed ~4-5 min walk and targeted ~2030, and the project was cited as 'the most immediate beneficiary' of the CRL announcement. Build by Oxley/Lian Beng with Bosch/Grohe fittings; reasonable quality. The discount is the edge; the MRT is the kicker.",
+      "red_flags": [
+        "99-yr leasehold from 2024 — lease decay long-dated but not a forward edge",
+        "Asking is a notable discount to cohort — confirm the specific unit isn't a poor stack/low floor/west-facing that justifies the gap before committing",
+        "Large project (1,000+ units) — internal 1BR resale competition can cap upside"
+      ],
+      "catalysts": [
+        "Serangoon North MRT (Cross-Island Line CR9), ~4-5 min walk, targeted ~2030 — dated, confirmed connectivity catalyst",
+        "Within 1km of Rosyth School — supports owner-occupier/rental demand",
+        "OCR location aligns with v3.4 best-realized-forward-return bracket"
+      ],
+      "as_of": {
+        "price": 858888,
+        "psf": 1533.73,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Strong Buy",
+        "confidence": "high",
+        "summary": "Genuinely cheap OCR 1BR with a verified, dated MRT catalyst. Asking $1,534 psf sits well below verified recent 1BR transactions of $1,793-$1,999 psf, and the Serangoon North CRL station (4-5 min walk, ~2030) is a hard, dated catalyst.",
+        "rating_rationale": "The algo's cheapness is real and web-verified: this 560sqft 1BR asks $1,534 psf while recent (2025) 1BR transactions at the project printed $1,793-$1,999 psf and the project 12-mo average is ~$1,823 psf (project-wide range $1,455-$2,233). That is a ~15-20% discount to the actual 1BR cohort, not a thin-data quirk — appreciation_txns=513 and psf_cohort_txns=37 are deep. age_adj_premium -20.4% and psf_premium_vs_cohort -10.8% both corroborate. Region aligns with the v3.4 prior (OCR ≈ +4.0% realized forward, the best bracket). The catalyst is decisive: the Cross-Island Line Serangoon North station (CR9) is a confirmed ~4-5 min walk and targeted ~2030, and the project was cited as 'the most immediate beneficiary' of the CRL announcement. Build by Oxley/Lian Beng with Bosch/Grohe fittings; reasonable quality. The discount is the edge; the MRT is the kicker.",
+        "red_flags": [
+          "99-yr leasehold from 2024 — lease decay long-dated but not a forward edge",
+          "Asking is a notable discount to cohort — confirm the specific unit isn't a poor stack/low floor/west-facing that justifies the gap before committing",
+          "Large project (1,000+ units) — internal 1BR resale competition can cap upside"
+        ],
+        "catalysts": [
+          "Serangoon North MRT (Cross-Island Line CR9), ~4-5 min walk, targeted ~2030 — dated, confirmed connectivity catalyst",
+          "Within 1km of Rosyth School — supports owner-occupier/rental demand",
+          "OCR location aligns with v3.4 best-realized-forward-return bracket"
+        ],
+        "rental_assessment": "D19 1BR near a future MRT and Rosyth supports steady tenant demand; entry price under $860k keeps gross yield competitive for the region.",
+        "appreciation_assessment": "Trailing 3.46% CAGR is unremarkable, but I'm not leaning on it. The forward case rests on the verified discount-to-cohort closing plus the 2030 MRT re-rating, both robust signals under the v3.4 priors."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-60085703",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

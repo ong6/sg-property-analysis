@@ -1,0 +1,55 @@
+{
+  "condo": "78 Guan Chuan Street",
+  "slug": "78-guan-chuan-street",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "This is a conserved Tiong Bahru heritage walk-up apartment on a 99-yr lease from 1967 — roughly 40 years of lease remaining and no en-bloc path due to URA conservation status. At $1.12M / $1,224 psf it carries severe financing limits (sub-60yr lease restricts LTV/CPF) and is a niche heritage product, not an investment vehicle.",
+      "rating_rationale": "~40-year remaining lease (1967 + 99yr) triggers low-lease financing constraints — limited LTV, restricted CPF use — and accelerating lease decay over a 5–7yr hold. Conservation status removes en-bloc upside, no URA comp data, score 301 (bottom decile). Buyer pool is heritage-niche owner-occupiers; this fails the investment liquidity and appreciation tests outright.",
+      "red_flags": [
+        "~40yr remaining lease — low-lease financing/CPF restrictions, steep decay",
+        "Conserved heritage walk-up — no en-bloc, niche buyer pool",
+        "No URA appreciation/comp data, score 301 (bottom decile)"
+      ],
+      "catalysts": [
+        "Tiong Bahru heritage charm — own-stay appeal only, not investment"
+      ],
+      "as_of": {
+        "price": 1120000,
+        "psf": 1224.04,
+        "beds": 3,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "This is a conserved Tiong Bahru heritage walk-up apartment on a 99-yr lease from 1967 — roughly 40 years of lease remaining and no en-bloc path due to URA conservation status. At $1.12M / $1,224 psf it carries severe financing limits (sub-60yr lease restricts LTV/CPF) and is a niche heritage product, not an investment vehicle.",
+        "rating": "Avoid",
+        "rating_rationale": "~40-year remaining lease (1967 + 99yr) triggers low-lease financing constraints — limited LTV, restricted CPF use — and accelerating lease decay over a 5–7yr hold. Conservation status removes en-bloc upside, no URA comp data, score 301 (bottom decile). Buyer pool is heritage-niche owner-occupiers; this fails the investment liquidity and appreciation tests outright.",
+        "red_flags": [
+          "~40yr remaining lease — low-lease financing/CPF restrictions, steep decay",
+          "Conserved heritage walk-up — no en-bloc, niche buyer pool",
+          "No URA appreciation/comp data, score 301 (bottom decile)"
+        ],
+        "catalysts": [
+          "Tiong Bahru heritage charm — own-stay appeal only, not investment"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-78-guan-chuan-street-60092910",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

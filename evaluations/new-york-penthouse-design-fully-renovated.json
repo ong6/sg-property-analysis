@@ -1,0 +1,109 @@
+{
+  "condo": "New York Penthouse Design Fully Renovated",
+  "slug": "new-york-penthouse-design-fully-renovated",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A renovation-marketed listing ('New York Penthouse Design'), a 732 sqft freehold 1BR-bracket unit in D14 (Kallang fringe, 720m to EW10 Kallang) at $1.09M / $1,489 psf. The marketing title and missing project identity/URA data make this an opaque entry; the renovation premium is baked into the asking price and won't be recovered on resale.",
+      "rating_rationale": "No project name, no URA appreciation or transaction data, and a price clearly inflated by a 'fully renovated' reno premium ($1,489 psf on a 1BR-bracket D14 unit). For investment you pay for someone else's renovation taste that depreciates immediately, with no measurable growth or liquidity case. Opaque, premium-priced, and small-unit — not an investment buy.",
+      "red_flags": [
+        "Marketing-title listing, no identifiable project or URA data",
+        "Renovation premium embedded in price, non-recoverable on resale",
+        "1BR-bracket at $1.09M is a rich quantum for the unit type",
+        "No appreciation/liquidity data to underwrite the call"
+      ],
+      "catalysts": [
+        "Freehold, D14 near Kallang MRT and city fringe"
+      ],
+      "as_of": {
+        "price": 1090000,
+        "psf": 1489.07,
+        "beds": 1,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A renovation-marketed listing ('New York Penthouse Design'), a 732 sqft freehold 1BR-bracket unit in D14 (Kallang fringe, 720m to EW10 Kallang) at $1.09M / $1,489 psf. The marketing title and missing project identity/URA data make this an opaque entry; the renovation premium is baked into the asking price and won't be recovered on resale.",
+        "rating": "Avoid",
+        "rating_rationale": "No project name, no URA appreciation or transaction data, and a price clearly inflated by a 'fully renovated' reno premium ($1,489 psf on a 1BR-bracket D14 unit). For investment you pay for someone else's renovation taste that depreciates immediately, with no measurable growth or liquidity case. Opaque, premium-priced, and small-unit — not an investment buy.",
+        "red_flags": [
+          "Marketing-title listing, no identifiable project or URA data",
+          "Renovation premium embedded in price, non-recoverable on resale",
+          "1BR-bracket at $1.09M is a rich quantum for the unit type",
+          "No appreciation/liquidity data to underwrite the call"
+        ],
+        "catalysts": [
+          "Freehold, D14 near Kallang MRT and city fringe"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-new-york-penthouse-design-fully-renovated-500052831",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "This is a marketing listing title, not an identifiable project; the algo could not match it to any URA comps (0 appreciation txns, null cohort), so there is no reliable basis to certify the claimed value.",
+      "rating_rationale": "The 'project_name' is a renovation-driven sales title, not a development the model could map to URA data: appreciation_txns is 0, the source is only regional_baseline (3.7%), and both psf_premium_vs_cohort and psf_cohort_txns are null. The -19.7% age-adj premium is computed against a district average with no project-level or same-size comps behind it, so it is not trustworthy as evidence of cheapness. Web search could not isolate the actual underlying D14 freehold project. Freehold is not a forward edge per v3.4. Without identifying the building and pulling its real recent transactions, I cannot certify either the cheapness or the resale liquidity. $1.49k psf for a 732sqft FH 1BR in D14 is plausible-to-fair but unremarkable. Honest call with the data available is Neutral at low confidence pending identification of the actual project.",
+      "red_flags": [
+        "Not an identifiable project - 0 appreciation transactions and null size-cohort means no comp support",
+        "Cheapness signal (-19.7%) rests entirely on a district baseline, not project/size comps",
+        "A heavily-renovated unit's PSF reflects reno premium, not the building's underlying market value"
+      ],
+      "catalysts": [
+        "Freehold tenure (value-retention only, not a forward return edge)",
+        "Renovation may shorten time-to-let if priced sensibly"
+      ],
+      "as_of": {
+        "price": 1090000,
+        "psf": 1489.07,
+        "beds": 1,
+        "sqft": 732
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "This is a marketing listing title, not an identifiable project; the algo could not match it to any URA comps (0 appreciation txns, null cohort), so there is no reliable basis to certify the claimed value.",
+        "rating_rationale": "The 'project_name' is a renovation-driven sales title, not a development the model could map to URA data: appreciation_txns is 0, the source is only regional_baseline (3.7%), and both psf_premium_vs_cohort and psf_cohort_txns are null. The -19.7% age-adj premium is computed against a district average with no project-level or same-size comps behind it, so it is not trustworthy as evidence of cheapness. Web search could not isolate the actual underlying D14 freehold project. Freehold is not a forward edge per v3.4. Without identifying the building and pulling its real recent transactions, I cannot certify either the cheapness or the resale liquidity. $1.49k psf for a 732sqft FH 1BR in D14 is plausible-to-fair but unremarkable. Honest call with the data available is Neutral at low confidence pending identification of the actual project.",
+        "red_flags": [
+          "Not an identifiable project - 0 appreciation transactions and null size-cohort means no comp support",
+          "Cheapness signal (-19.7%) rests entirely on a district baseline, not project/size comps",
+          "A heavily-renovated unit's PSF reflects reno premium, not the building's underlying market value"
+        ],
+        "catalysts": [
+          "Freehold tenure (value-retention only, not a forward return edge)",
+          "Renovation may shorten time-to-let if priced sensibly"
+        ],
+        "appreciation_assessment": "No transaction history matched; only a 3.7% regional baseline applies, which has ~0 forward predictive power - effectively no appreciation read.",
+        "rental_assessment": "A renovated 732sqft 1BR in D14 should let reasonably, but with no comp set the yield cannot be benchmarked, hence low confidence."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-new-york-penthouse-design-fully-renovated-500052831",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

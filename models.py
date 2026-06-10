@@ -16,26 +16,6 @@ class SearchParams:
     order: str = "desc"
     freetext: Optional[str] = None
 
-    def to_query_params(self, page: int = 1) -> dict:
-        """Return params as a dict (for JSON serialization)."""
-        params = {
-            "listingType": self.listing_type,
-            "propertyTypeGroup": self.property_type,
-        }
-        if self.min_price is not None:
-            params["minPrice"] = str(self.min_price)
-        if self.max_price is not None:
-            params["maxPrice"] = str(self.max_price)
-        if self.beds:
-            params["bedrooms"] = ",".join(str(b) for b in self.beds)
-        if self.districts:
-            params["districtCode"] = ",".join(f"D{d:02d}" for d in self.districts)
-        if page > 1:
-            params["page"] = str(page)
-        if self.freetext:
-            params["freetext"] = self.freetext
-        return params
-
     def to_url_path(self, page: int = 1) -> str:
         """Build URL path using PropertyGuru's path-based format.
 

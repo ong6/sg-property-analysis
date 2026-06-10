@@ -1,0 +1,65 @@
+{
+  "condo": "Le Crescendo",
+  "slug": "le-crescendo",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A huge 3390 sqft freehold 4BR at Le Crescendo (D14 MacPherson) for $4.5M / $1327 PSF. The low PSF is entirely a size artefact, and $4.5M is far above the liquid band — the buyer pool for a $4.5M leasehold-area freehold of this size is very thin, making exit risk the dominant concern despite a 5.1%/yr rate.",
+      "rating_rationale": "$4.5M absolute price is roughly double the $2.5M liquidity ceiling — the buyer pool at this level is extremely shallow, and a 3390 sqft unit is a niche, slow-moving asset. The $1327 PSF 'discount' vs the $1720 median is pure oversized-unit artefact, not value. 5.1%/yr appreciation rests on only 25 transactions (thin), and CC10 MacPherson is a non-premium location for a $4.5M ticket. Investment exit risk too high.",
+      "red_flags": [
+        "$4.5M absolute — buyer pool extremely thin (>>$2.5M)",
+        "3390 sqft — oversized, low PSF is a size artefact not value",
+        "Only 25 txn — appreciation rate unreliable",
+        "MacPherson is a modest address for a $4.5M ticket"
+      ],
+      "catalysts": [
+        "Freehold land in central-fringe D14",
+        "500m to CC10 MacPherson MRT (Circle Line)",
+        "Rarity of very large freehold floor plates (niche appeal)"
+      ],
+      "as_of": {
+        "price": 4500000,
+        "psf": 1327.43,
+        "beds": 4,
+        "sqft": 3390.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A huge 3390 sqft freehold 4BR at Le Crescendo (D14 MacPherson) for $4.5M / $1327 PSF. The low PSF is entirely a size artefact, and $4.5M is far above the liquid band — the buyer pool for a $4.5M leasehold-area freehold of this size is very thin, making exit risk the dominant concern despite a 5.1%/yr rate.",
+        "rating": "Avoid",
+        "rating_rationale": "$4.5M absolute price is roughly double the $2.5M liquidity ceiling — the buyer pool at this level is extremely shallow, and a 3390 sqft unit is a niche, slow-moving asset. The $1327 PSF 'discount' vs the $1720 median is pure oversized-unit artefact, not value. 5.1%/yr appreciation rests on only 25 transactions (thin), and CC10 MacPherson is a non-premium location for a $4.5M ticket. Investment exit risk too high.",
+        "red_flags": [
+          "$4.5M absolute — buyer pool extremely thin (>>$2.5M)",
+          "3390 sqft — oversized, low PSF is a size artefact not value",
+          "Only 25 txn — appreciation rate unreliable",
+          "MacPherson is a modest address for a $4.5M ticket"
+        ],
+        "catalysts": [
+          "Freehold land in central-fringe D14",
+          "500m to CC10 MacPherson MRT (Circle Line)",
+          "Rarity of very large freehold floor plates (niche appeal)"
+        ],
+        "rental_assessment": "A 3390 sqft unit rents at a very high absolute monthly figure that few tenants pay, giving a poor yield and shallow tenant pool; rental is not a supporting factor here.",
+        "appreciation_assessment": "5.1%/yr on just 25 transactions is unreliable, and at a $4.5M entry the SSD-window and exit-liquidity risks dwarf the appreciation case. Not an efficient way to capture D14 growth.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA rate (25 txn) discounted for thin data and oversized-unit exit drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-crescendo-25242798",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

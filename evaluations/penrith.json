@@ -1,0 +1,61 @@
+{
+  "condo": "PENRITH",
+  "slug": "penrith",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Penrith is a strong, well-received Queenstown new launch (Hong Leong/GuocoLand, 462 units, 97% sold day one, 450m to Queenstown MRT) — but this specific 614 sqft 2BR at $1.7M / $2,768 PSF is priced well above the project's own $2,437 PSF launch guide and is a TOP-2029 uncompleted unit. You'd be buying the most expensive end of a good project. Neutral on the listing, even though the development itself is sound.",
+      "rating_rationale": "The development is genuinely attractive — first Queenstown private launch in 7 years, RCR/city-fringe location, reputable developer, near-sellout. However this listing's $2,768 PSF is ~14% above the $2,437 launch guide and only ~7% below the $2,975 incoming median, so most of the easy uplift is already priced in at this sub-sale level. $1.7M for 614 sqft is a high PSF for a 2BR with no completed track record (TOP 2029) and no realisable URA appreciation series yet (null rate).",
+      "red_flags": [
+        "Listing PSF $2,768 vs $2,437 project launch guide — buying ~14% above benchmark pricing",
+        "Uncompleted, TOP 2029 — no rental income or resale liquidity for years; SSD clock and completion risk",
+        "No URA appreciation rate available (new launch); median $2,975 reflects launch pricing, not proven resale gains"
+      ],
+      "catalysts": [
+        "Queenstown's first private launch in 7 years — scarcity premium, 97% day-one sales",
+        "450m to Queenstown MRT (EW line), AYE/CTE access, ~10-15 min to CBD",
+        "Greater Southern Waterfront and D03 RCR transformation underpin medium-term demand"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 2768.73,
+        "beds": 2,
+        "sqft": 614.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Penrith is a strong, well-received Queenstown new launch (Hong Leong/GuocoLand, 462 units, 97% sold day one, 450m to Queenstown MRT) — but this specific 614 sqft 2BR at $1.7M / $2,768 PSF is priced well above the project's own $2,437 PSF launch guide and is a TOP-2029 uncompleted unit. You'd be buying the most expensive end of a good project. Neutral on the listing, even though the development itself is sound.",
+        "rating": "Neutral",
+        "rating_rationale": "The development is genuinely attractive — first Queenstown private launch in 7 years, RCR/city-fringe location, reputable developer, near-sellout. However this listing's $2,768 PSF is ~14% above the $2,437 launch guide and only ~7% below the $2,975 incoming median, so most of the easy uplift is already priced in at this sub-sale level. $1.7M for 614 sqft is a high PSF for a 2BR with no completed track record (TOP 2029) and no realisable URA appreciation series yet (null rate).",
+        "red_flags": [
+          "Listing PSF $2,768 vs $2,437 project launch guide — buying ~14% above benchmark pricing",
+          "Uncompleted, TOP 2029 — no rental income or resale liquidity for years; SSD clock and completion risk",
+          "No URA appreciation rate available (new launch); median $2,975 reflects launch pricing, not proven resale gains"
+        ],
+        "catalysts": [
+          "Queenstown's first private launch in 7 years — scarcity premium, 97% day-one sales",
+          "450m to Queenstown MRT (EW line), AYE/CTE access, ~10-15 min to CBD",
+          "Greater Southern Waterfront and D03 RCR transformation underpin medium-term demand"
+        ],
+        "rental_assessment": "On completion, a 2BR at Queenstown MRT will rent well to CBD/one-North professionals — but no income until ~2029, so rental supports exit value rather than near-term yield.",
+        "appreciation_assessment": "Project should appreciate with the Queenstown story, but at $2,768 PSF the buyer is paying above launch pricing, compressing the upside that day-one subscribers captured. Returns over a 5-7yr hold likely modest from this entry.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-penrith-500152457",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

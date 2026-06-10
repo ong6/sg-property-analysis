@@ -1,0 +1,117 @@
+{
+  "condo": "The Ebony",
+  "slug": "the-ebony",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 1152sqft 2BR near Kembangan MRT (510m) at a strikingly low $1292 psf — but 1152sqft is very large for a 2BR (likely a generous 2+study or dual-key), and the appreciation data rests on only 4 transactions, so the rate is unusable. The $1292 psf vs $1918 median gap is partly a function of the oversized unit, not pure undervaluation.",
+      "rating_rationale": "Freehold near an MRT in D14 at $1.49M is attractive on paper, but two things hold it to Neutral: (1) 1152sqft for a 2BR is oversized — the low $1292 psf is inflated by the size, so the apparent ~33% discount to the $1918 median overstates the bargain; (2) only 4 URA transactions means the development is illiquid and the appreciation case is unverifiable. Good tenure and location, but thin-data boutique with size-distorted PSF — can't confidently call a Buy.",
+      "red_flags": [
+        "Only 4 URA transactions — illiquid, appreciation rate unusable, hard investor exit",
+        "1152sqft is oversized for a 2BR — low PSF partly a size artifact, not pure value",
+        "Large quantum-for-format means weaker yield (rent won't scale with the extra space)"
+      ],
+      "catalysts": [
+        "Freehold tenure near Kembangan MRT (510m, EWL) in D14",
+        "Low absolute PSF if the size is genuinely usable (2+study/dual-key flexibility)",
+        "City-fringe East rental demand"
+      ],
+      "as_of": {
+        "price": 1488000,
+        "psf": 1291.67,
+        "beds": 2,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1152sqft 2BR near Kembangan MRT (510m) at a strikingly low $1292 psf — but 1152sqft is very large for a 2BR (likely a generous 2+study or dual-key), and the appreciation data rests on only 4 transactions, so the rate is unusable. The $1292 psf vs $1918 median gap is partly a function of the oversized unit, not pure undervaluation.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold near an MRT in D14 at $1.49M is attractive on paper, but two things hold it to Neutral: (1) 1152sqft for a 2BR is oversized — the low $1292 psf is inflated by the size, so the apparent ~33% discount to the $1918 median overstates the bargain; (2) only 4 URA transactions means the development is illiquid and the appreciation case is unverifiable. Good tenure and location, but thin-data boutique with size-distorted PSF — can't confidently call a Buy.",
+        "red_flags": [
+          "Only 4 URA transactions — illiquid, appreciation rate unusable, hard investor exit",
+          "1152sqft is oversized for a 2BR — low PSF partly a size artifact, not pure value",
+          "Large quantum-for-format means weaker yield (rent won't scale with the extra space)"
+        ],
+        "catalysts": [
+          "Freehold tenure near Kembangan MRT (510m, EWL) in D14",
+          "Low absolute PSF if the size is genuinely usable (2+study/dual-key flexibility)",
+          "City-fringe East rental demand"
+        ],
+        "rental_assessment": "Kembangan/East D14 has decent tenant demand, but a 1152sqft 2BR rents close to a normal 2BR while costing more — yield is diluted by the oversize.",
+        "appreciation_assessment": "Cannot verify — 4 txns is noise. Freehold near MRT is a reasonable hold but the illiquidity and lack of comps keep confidence low.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "Only 4 txns — no reliable rate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-ebony-500163003",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold, very large 2BR (1,152 sqft) at Lor Marican (Eunos/Kembangan, D14) asking $1,292 PSF. The 'very_low_psf' flag plus psf_cohort_txns=0 and appreciation_txns=4 makes this a thin-data case: the low PSF is mostly large-unit compression in a tiny 32-unit project, not a clear bargain.",
+      "rating_rationale": "The headline cheapness (-29.3% age_adj, very_low_psf flag) is largely a data artefact of unit size: at 1,152 sqft this is an unusually large 2BR, and large units always trade at a structurally lower PSF — comparing it to the project pool (which includes 334 sqft units that hit $1,918 PSF) overstates the discount. Real verification is weak: only ~9 total project transactions ever (avg $1,571/sqft), psf_cohort_txns=0 for this size band, and appreciation_txns=4 — there is essentially no same-size comp to anchor value, so I cannot certify the bargain. The 32-unit project is illiquid by construction. Freehold and a spacious efficient layout are genuine positives (own-stay appeal), but for a 5-7yr investment hold the absolute quantum ($1.488M) for a 2BR, weak rental ($6.87-$7.49 PSF/month implies modest yield on this large floorplate), and near-zero comp depth keep this at Neutral with low confidence. Honest read: thin data, not a verified bargain.",
+      "red_flags": [
+        "very_low_psf flag is mostly large-unit (1,152 sqft) PSF compression, not genuine underpricing",
+        "psf_cohort_txns=0 and appreciation_txns=4 → essentially no same-size comparable to verify value; project has only ~9 lifetime transactions",
+        "Tiny 32-unit freehold block → very thin resale liquidity over a 5-7yr exit",
+        "$1.488M for a 2BR with low rent PSF → soft gross yield for an investment hold"
+      ],
+      "catalysts": [
+        "Freehold tenure with a spacious, efficient 1,152 sqft layout (own-stay / family appeal)",
+        "Eunos (EW7) and Kembangan (EW6) MRT within reach"
+      ],
+      "as_of": {
+        "price": 1488000,
+        "psf": 1291.67,
+        "beds": 2,
+        "sqft": 1152
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Freehold, very large 2BR (1,152 sqft) at Lor Marican (Eunos/Kembangan, D14) asking $1,292 PSF. The 'very_low_psf' flag plus psf_cohort_txns=0 and appreciation_txns=4 makes this a thin-data case: the low PSF is mostly large-unit compression in a tiny 32-unit project, not a clear bargain.",
+        "rating_rationale": "The headline cheapness (-29.3% age_adj, very_low_psf flag) is largely a data artefact of unit size: at 1,152 sqft this is an unusually large 2BR, and large units always trade at a structurally lower PSF — comparing it to the project pool (which includes 334 sqft units that hit $1,918 PSF) overstates the discount. Real verification is weak: only ~9 total project transactions ever (avg $1,571/sqft), psf_cohort_txns=0 for this size band, and appreciation_txns=4 — there is essentially no same-size comp to anchor value, so I cannot certify the bargain. The 32-unit project is illiquid by construction. Freehold and a spacious efficient layout are genuine positives (own-stay appeal), but for a 5-7yr investment hold the absolute quantum ($1.488M) for a 2BR, weak rental ($6.87-$7.49 PSF/month implies modest yield on this large floorplate), and near-zero comp depth keep this at Neutral with low confidence. Honest read: thin data, not a verified bargain.",
+        "red_flags": [
+          "very_low_psf flag is mostly large-unit (1,152 sqft) PSF compression, not genuine underpricing",
+          "psf_cohort_txns=0 and appreciation_txns=4 → essentially no same-size comparable to verify value; project has only ~9 lifetime transactions",
+          "Tiny 32-unit freehold block → very thin resale liquidity over a 5-7yr exit",
+          "$1.488M for a 2BR with low rent PSF → soft gross yield for an investment hold"
+        ],
+        "catalysts": [
+          "Freehold tenure with a spacious, efficient 1,152 sqft layout (own-stay / family appeal)",
+          "Eunos (EW7) and Kembangan (EW6) MRT within reach"
+        ],
+        "rental_assessment": "Rents reported at $6.87-$7.49 PSF/month, but on a 1,152 sqft floorplate the absolute rent is unattractive relative to the $1.488M outlay — likely sub-3% gross yield. Better suited to an owner-occupier than a yield investor.",
+        "appreciation_assessment": "appreciation_pct=3.7% is regional_baseline on just 4 txns — no forward signal and statistically meaningless. With no catalyst and no comp depth, treat forward return as district-baseline at best, with elevated uncertainty."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-ebony-500163003",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "condo": "The Quinn",
+  "slug": "the-quinn",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,733 sqft freehold 4BR near Woodleigh MRT (700m) at $2.99M and $1,724 psf — but that asking PSF is ~11% ABOVE the $1,551 project median, and the unit sits at the >$3M illiquidity threshold. Strong 7.94% appreciation, but on a thin 40-txn series, and the listing is off the value frontier.",
+      "rating_rationale": "This is the overpriced entry of the batch: $1,724 psf is ~11% above the $1,551 median, score_1000 is a weak 593, and it is NOT on the frontier — the only such listing here. $2.99M parks it at the top of the >$3M zone where the 4BR buyer pool is thinnest. The 7.94% CAGR looks attractive but rests on only 40 transactions (below the 50-txn reliability floor), so it is not dependable. Paying an above-median premium for an illiquid high-quantum 4BR on an unreliable appreciation figure is a clear no-buy on investment grounds, freehold notwithstanding.",
+      "red_flags": [
+        "Asking PSF ~11% ABOVE project median — overpriced entry",
+        "Not on the value frontier; weak score_1000 593",
+        "$2.99M at the top of the >$3M illiquid band for a niche 4BR",
+        "Appreciation 7.94% rests on only 40 txns — below reliability threshold"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "NE11 Woodleigh MRT 700m, Bidadari estate maturing nearby",
+        "Headline appreciation high (but unreliable at 40 txns)"
+      ],
+      "as_of": {
+        "price": 2988000,
+        "psf": 1724.18,
+        "beds": 4,
+        "sqft": 1733.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,733 sqft freehold 4BR near Woodleigh MRT (700m) at $2.99M and $1,724 psf — but that asking PSF is ~11% ABOVE the $1,551 project median, and the unit sits at the >$3M illiquidity threshold. Strong 7.94% appreciation, but on a thin 40-txn series, and the listing is off the value frontier.",
+        "rating": "Avoid",
+        "rating_rationale": "This is the overpriced entry of the batch: $1,724 psf is ~11% above the $1,551 median, score_1000 is a weak 593, and it is NOT on the frontier — the only such listing here. $2.99M parks it at the top of the >$3M zone where the 4BR buyer pool is thinnest. The 7.94% CAGR looks attractive but rests on only 40 transactions (below the 50-txn reliability floor), so it is not dependable. Paying an above-median premium for an illiquid high-quantum 4BR on an unreliable appreciation figure is a clear no-buy on investment grounds, freehold notwithstanding.",
+        "red_flags": [
+          "Asking PSF ~11% ABOVE project median — overpriced entry",
+          "Not on the value frontier; weak score_1000 593",
+          "$2.99M at the top of the >$3M illiquid band for a niche 4BR",
+          "Appreciation 7.94% rests on only 40 txns — below reliability threshold"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "NE11 Woodleigh MRT 700m, Bidadari estate maturing nearby",
+          "Headline appreciation high (but unreliable at 40 txns)"
+        ],
+        "rental_assessment": "Large freehold 4BR near Woodleigh draws family tenants but a shallow pool; yield poor against a $2.99M quantum.",
+        "appreciation_assessment": "Headline 7.94% is unreliable on 40 txns and does not justify paying ~11% over median. Overpaying for thin-data upside.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quinn-25503034",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D19 1BR (506sqft) at Bartley Road priced ABOVE its own recent market. The algo's 750 score is propped up by a 7.94% trailing CAGR that has ~0 forward power, while the unit is genuinely dear vs comparables.",
+      "rating_rationale": "Recent 12-month transactions at The Quinn average ~$1,587 psf (range $1,530-1,694), yet this unit asks $1,729 psf — roughly 9% above the market it trades in, corroborated by the dossier's +11.5% psf_premium_vs_cohort (7 txns) and the psf_above_market red flag. Freehold and a tidy 506sqft 1BR in D19 (a solid OCR forward region) are positives, but value leads the v3.4 prior and here value is negative: you are paying a premium, not a discount. The 7.94% appreciation_pct (40 txns) is a story, not a forward edge. Net: a livable small freehold unit but no margin of safety at this ask.",
+      "red_flags": [
+        "Asking $1,729 psf is ~9% above the project's ~$1,587 psf recent average (psf_above_market)",
+        "+11.5% psf_premium_vs_cohort on thin 7-txn cohort still points the wrong way (overpriced)",
+        "High score_1000 (750) is largely a function of trailing 7.94% CAGR, which v3.4 backtest shows has no forward power"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay)",
+        "Bartley/Woodleigh area, walkable to Woodleigh NE/Bartley CC MRT and NEX",
+        "Small absolute quantum (~$875k) keeps liquidity reasonable"
+      ],
+      "as_of": {
+        "price": 875000,
+        "psf": 1729.25,
+        "beds": 1,
+        "sqft": 506
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold D19 1BR (506sqft) at Bartley Road priced ABOVE its own recent market. The algo's 750 score is propped up by a 7.94% trailing CAGR that has ~0 forward power, while the unit is genuinely dear vs comparables.",
+        "rating_rationale": "Recent 12-month transactions at The Quinn average ~$1,587 psf (range $1,530-1,694), yet this unit asks $1,729 psf — roughly 9% above the market it trades in, corroborated by the dossier's +11.5% psf_premium_vs_cohort (7 txns) and the psf_above_market red flag. Freehold and a tidy 506sqft 1BR in D19 (a solid OCR forward region) are positives, but value leads the v3.4 prior and here value is negative: you are paying a premium, not a discount. The 7.94% appreciation_pct (40 txns) is a story, not a forward edge. Net: a livable small freehold unit but no margin of safety at this ask.",
+        "red_flags": [
+          "Asking $1,729 psf is ~9% above the project's ~$1,587 psf recent average (psf_above_market)",
+          "+11.5% psf_premium_vs_cohort on thin 7-txn cohort still points the wrong way (overpriced)",
+          "High score_1000 (750) is largely a function of trailing 7.94% CAGR, which v3.4 backtest shows has no forward power"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay)",
+          "Bartley/Woodleigh area, walkable to Woodleigh NE/Bartley CC MRT and NEX",
+          "Small absolute quantum (~$875k) keeps liquidity reasonable"
+        ],
+        "appreciation_assessment": "Trailing 7.94% 5yr CAGR (40 txns) is reasonably well-supported as history but is not predictive per v3.4; no fresh dated catalyst to extend it.",
+        "rental_assessment": "Project rental yield ~3.9%; a freehold 1BR near Woodleigh/Bartley rents readily, but the above-market entry compresses net yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quinn-500100173",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Sandy Eight",
+  "slug": "sandy-eight",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Sandy Eight is a freehold boutique 1BR (506 sqft) in D15 near Paya Lebar, $980K / $1,937 psf — slightly above the $1,899 median, on only 6 URA transactions making the ~5.1% rate unreliable. The lowest Elo in the batch (836) and a 70-241 record flag this as a weak, illiquid boutique shoebox.",
+      "rating_rationale": "Only 6 URA txns — the ~5.1% CAGR is statistically meaningless. Listed $1,937 psf is above the $1,899 median (no value cushion). Sandy Eight is a small boutique block (very low Elo 836, 70-241 record reflects persistent competitive weakness), and a 506 sqft freehold shoebox in a no-facilities boutique is hard to exit. 10-min/840m MRT walk removes transit appeal. Missing built_year too.",
+      "red_flags": [
+        "Only 6 URA txns — appreciation rate unreliable",
+        "Listed PSF above district median — no value cushion",
+        "Boutique shoebox, lowest Elo in batch (836) — structurally illiquid",
+        "Missing built_year; 10 min / 840m to MRT"
+      ],
+      "catalysts": [
+        "Freehold under $1M in D15",
+        "Paya Lebar Central commercial growth in the broader vicinity"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1936.76,
+        "beds": 1,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Sandy Eight is a freehold boutique 1BR (506 sqft) in D15 near Paya Lebar, $980K / $1,937 psf — slightly above the $1,899 median, on only 6 URA transactions making the ~5.1% rate unreliable. The lowest Elo in the batch (836) and a 70-241 record flag this as a weak, illiquid boutique shoebox.",
+        "rating": "Avoid",
+        "rating_rationale": "Only 6 URA txns — the ~5.1% CAGR is statistically meaningless. Listed $1,937 psf is above the $1,899 median (no value cushion). Sandy Eight is a small boutique block (very low Elo 836, 70-241 record reflects persistent competitive weakness), and a 506 sqft freehold shoebox in a no-facilities boutique is hard to exit. 10-min/840m MRT walk removes transit appeal. Missing built_year too.",
+        "red_flags": [
+          "Only 6 URA txns — appreciation rate unreliable",
+          "Listed PSF above district median — no value cushion",
+          "Boutique shoebox, lowest Elo in batch (836) — structurally illiquid",
+          "Missing built_year; 10 min / 840m to MRT"
+        ],
+        "catalysts": [
+          "Freehold under $1M in D15",
+          "Paya Lebar Central commercial growth in the broader vicinity"
+        ],
+        "rental_assessment": "Modest — boutique 1BR away from the MRT has weaker tenant pull than larger condos; yield ~3-3.5%.",
+        "appreciation_assessment": "Cannot trust the 6-txn ~5.1% rate; boutique illiquidity and above-median pricing argue for flat-to-market appreciation with exit risk.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "Discounted from unreliable 6-txn series to D15 boutique freehold norm"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sandy-eight-24046417",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

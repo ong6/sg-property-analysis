@@ -1,0 +1,61 @@
+{
+  "condo": "Hazel Park Condo",
+  "slug": "hazel-park-condo",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 999-year leasehold 4BR (1,528 sqft) in a 696-unit Bukit Panjang development with a covered walkway straight to Cashew MRT (DT2, ~280m). Excellent transit and quasi-freehold tenure, but $2.7M at $1,767 PSF is at the top of the recent transacted range and a 4BR in D23 is a thin buyer band.",
+      "rating_rationale": "Web-verified recent Hazel Park txns run ~$1,546-$1,804 PSF, so $1,767 is near the top — not a value entry. The 999-yr lease, 696-unit scale and 280m covered link to Cashew DT2 are strong, and the score_1000 of 395 is depressed only by missing URA data, not real weakness. But $2.7M for a 4BR in OCR Bukit Panjang has a shallow buyer pool and a soft exit.",
+      "red_flags": [
+        "$1,767 PSF at the top of recent transacted range — little value cushion",
+        "$2.7M 4BR in D23 is a thin, niche buyer pool",
+        "No URA appreciation data in dossier (verified externally instead)"
+      ],
+      "catalysts": [
+        "Covered walkway to Cashew MRT (DT2) ~280m",
+        "999-year leasehold (quasi-freehold)",
+        "Large 696-unit development supports liquidity within its segment"
+      ],
+      "as_of": {
+        "price": 2700000,
+        "psf": 1767.02,
+        "beds": 4,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 999-year leasehold 4BR (1,528 sqft) in a 696-unit Bukit Panjang development with a covered walkway straight to Cashew MRT (DT2, ~280m). Excellent transit and quasi-freehold tenure, but $2.7M at $1,767 PSF is at the top of the recent transacted range and a 4BR in D23 is a thin buyer band.",
+        "rating": "Neutral",
+        "rating_rationale": "Web-verified recent Hazel Park txns run ~$1,546-$1,804 PSF, so $1,767 is near the top — not a value entry. The 999-yr lease, 696-unit scale and 280m covered link to Cashew DT2 are strong, and the score_1000 of 395 is depressed only by missing URA data, not real weakness. But $2.7M for a 4BR in OCR Bukit Panjang has a shallow buyer pool and a soft exit.",
+        "red_flags": [
+          "$1,767 PSF at the top of recent transacted range — little value cushion",
+          "$2.7M 4BR in D23 is a thin, niche buyer pool",
+          "No URA appreciation data in dossier (verified externally instead)"
+        ],
+        "catalysts": [
+          "Covered walkway to Cashew MRT (DT2) ~280m",
+          "999-year leasehold (quasi-freehold)",
+          "Large 696-unit development supports liquidity within its segment"
+        ],
+        "rental_assessment": "Direct sheltered MRT access aids rental, but a 1,528 sqft 4BR in Bukit Panjang rents to a narrow family segment at modest yield.",
+        "appreciation_assessment": "No URA series available; D23 OCR with DT-line access has appreciated moderately, but buying at the top of the range limits upside over the hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hazel-park-condo-24823732",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Hillion Residences",
+  "slug": "hillion-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Integrated mixed-use 1BR atop Bukit Panjang MRT/LRT and Hillion Mall, priced at $1,730 psf (just under the $1,754 median) on a liquid 144-txn base. Excellent transit/retail connectivity and low $820K entry, but a soft 2.7%/yr 99LH appreciation and niche 1BR segment make it Neutral.",
+      "rating_rationale": "$820K entry with on-site MRT/LRT interchange and Hillion Mall is a genuinely convenient, lettable asset, and PSF $1,730 is fair against the $1,754 median on a deep 144-txn series. But 99LH appreciation is just 2.7%/yr, the weak arena record (81-205-29, Elo 953) reflects a thin-upside profile, and 474 sqft 1BR appeals only to singles/investors.",
+      "red_flags": [
+        "Soft 2.7%/yr URA appreciation on 99LH",
+        "474 sqft 1BR — niche, investor-driven resale pool",
+        "Weak arena performance (Elo 953, 81-205-29)"
+      ],
+      "catalysts": [
+        "On-site Bukit Panjang MRT (DTL) + LRT interchange and Hillion Mall",
+        "Low $820K entry quantum keeps it lettable and liquid",
+        "PSF below district median"
+      ],
+      "as_of": {
+        "price": 820000,
+        "psf": 1729.96,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Integrated mixed-use 1BR atop Bukit Panjang MRT/LRT and Hillion Mall, priced at $1,730 psf (just under the $1,754 median) on a liquid 144-txn base. Excellent transit/retail connectivity and low $820K entry, but a soft 2.7%/yr 99LH appreciation and niche 1BR segment make it Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "$820K entry with on-site MRT/LRT interchange and Hillion Mall is a genuinely convenient, lettable asset, and PSF $1,730 is fair against the $1,754 median on a deep 144-txn series. But 99LH appreciation is just 2.7%/yr, the weak arena record (81-205-29, Elo 953) reflects a thin-upside profile, and 474 sqft 1BR appeals only to singles/investors.",
+        "red_flags": [
+          "Soft 2.7%/yr URA appreciation on 99LH",
+          "474 sqft 1BR — niche, investor-driven resale pool",
+          "Weak arena performance (Elo 953, 81-205-29)"
+        ],
+        "catalysts": [
+          "On-site Bukit Panjang MRT (DTL) + LRT interchange and Hillion Mall",
+          "Low $820K entry quantum keeps it lettable and liquid",
+          "PSF below district median"
+        ],
+        "rental_assessment": "Integrated transit and mall give strong, reliable 1BR rental demand; yield decent (~3.5-4%) at the low quantum.",
+        "appreciation_assessment": "2.7%/yr URA on a robust 144 txns is reliable but modest; expect transit-anchored stability rather than meaningful capital growth.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillion-residences-60094990",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

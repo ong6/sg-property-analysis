@@ -1,0 +1,61 @@
+{
+  "condo": "Mill Creek",
+  "slug": "mill-creek",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Efficient 775 sqft freehold 2BR at Mill Creek (D14 Kembangan) at a low $1.23M / $1587 PSF, just 450m / 5-min walk to Kembangan MRT (EW6). Attractive quantum, efficient layout and freehold near-MRT, but only 3 URA transactions leave appreciation and fair value unverified.",
+      "rating_rationale": "Lots to like: sub-$1.25M quantum (deep buyer pool), efficient 775 sqft 2BR (widest tenant base), freehold tenure, and 450m to an EW-line MRT. The high 723 score_1000 reflects those clean fundamentals. But with only 3 URA txns there is no reliable appreciation rate or median PSF, and Mill Creek is a small development — so liquidity and price discovery are uncertain. Strong profile, thin evidence, lands at the top of Neutral.",
+      "red_flags": [
+        "Only 3 URA transactions — appreciation and fair value unverifiable",
+        "Small/boutique development — limited resale liquidity",
+        "Geylang/Kembangan-fringe location"
+      ],
+      "catalysts": [
+        "450m to Kembangan MRT (EW6) — strong transit access",
+        "Freehold tenure with an efficient, liquid 2BR layout",
+        "Low $1.23M quantum keeps the buyer pool deep"
+      ],
+      "as_of": {
+        "price": 1230000,
+        "psf": 1587.1,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Efficient 775 sqft freehold 2BR at Mill Creek (D14 Kembangan) at a low $1.23M / $1587 PSF, just 450m / 5-min walk to Kembangan MRT (EW6). Attractive quantum, efficient layout and freehold near-MRT, but only 3 URA transactions leave appreciation and fair value unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "Lots to like: sub-$1.25M quantum (deep buyer pool), efficient 775 sqft 2BR (widest tenant base), freehold tenure, and 450m to an EW-line MRT. The high 723 score_1000 reflects those clean fundamentals. But with only 3 URA txns there is no reliable appreciation rate or median PSF, and Mill Creek is a small development — so liquidity and price discovery are uncertain. Strong profile, thin evidence, lands at the top of Neutral.",
+        "red_flags": [
+          "Only 3 URA transactions — appreciation and fair value unverifiable",
+          "Small/boutique development — limited resale liquidity",
+          "Geylang/Kembangan-fringe location"
+        ],
+        "catalysts": [
+          "450m to Kembangan MRT (EW6) — strong transit access",
+          "Freehold tenure with an efficient, liquid 2BR layout",
+          "Low $1.23M quantum keeps the buyer pool deep"
+        ],
+        "rental_assessment": "Good. Efficient freehold 2BR near an EW-line MRT close to the CBD corridor draws a broad, steady tenant pool — the best rental profile of the sub-$1.3M entries here.",
+        "appreciation_assessment": "Unverifiable from 3 txns. Freehold near-MRT D14 should at least track RCR baseline, but the lack of data prevents a confident appreciation call.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mill-creek-500080887",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

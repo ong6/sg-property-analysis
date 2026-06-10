@@ -1,0 +1,64 @@
+{
+  "condo": "super cheap freehold 1br. High rental yield",
+  "slug": "super-cheap-freehold-1br-high-rental-yield",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 452 sqft 1BR in D14 Aljunied/Geylang at $779k / $1,723 psf, marketed on 'high rental yield' — a shoebox yield play with no built_year, no URA data, and a losing arena record (Elo 1098, 116-147). Low quantum is the draw; appreciation prospects are weak.",
+      "rating_rationale": "The $779k quantum and freehold tenure make this an accessible yield asset 580m from Aljunied MRT, but 452 sqft 1BR is the thinnest resale segment, there's no built_year and no URA match (so appreciation is unverifiable), and the arena Elo of 1098 with a 116-147 losing record signals weak head-to-head standing. $1,723 psf is full for a Geylang-fringe shoebox. Buy it for cashflow, not growth — Neutral.",
+      "red_flags": [
+        "No built_year and no URA data — appreciation/age unverifiable",
+        "452 sqft 1BR shoebox — niche resale, Geylang-fringe transience stigma",
+        "Losing arena record (116-147, Elo 1098)",
+        "$1,723 psf full for the segment/location"
+      ],
+      "catalysts": [
+        "Freehold on a low $779k quantum",
+        "580m to Aljunied MRT (EW line) supports rental",
+        "Longer-term Paya Lebar Central D14 upside"
+      ],
+      "as_of": {
+        "price": 779000,
+        "psf": 1723.45,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 452 sqft 1BR in D14 Aljunied/Geylang at $779k / $1,723 psf, marketed on 'high rental yield' — a shoebox yield play with no built_year, no URA data, and a losing arena record (Elo 1098, 116-147). Low quantum is the draw; appreciation prospects are weak.",
+        "rating": "Neutral",
+        "rating_rationale": "The $779k quantum and freehold tenure make this an accessible yield asset 580m from Aljunied MRT, but 452 sqft 1BR is the thinnest resale segment, there's no built_year and no URA match (so appreciation is unverifiable), and the arena Elo of 1098 with a 116-147 losing record signals weak head-to-head standing. $1,723 psf is full for a Geylang-fringe shoebox. Buy it for cashflow, not growth — Neutral.",
+        "red_flags": [
+          "No built_year and no URA data — appreciation/age unverifiable",
+          "452 sqft 1BR shoebox — niche resale, Geylang-fringe transience stigma",
+          "Losing arena record (116-147, Elo 1098)",
+          "$1,723 psf full for the segment/location"
+        ],
+        "catalysts": [
+          "Freehold on a low $779k quantum",
+          "580m to Aljunied MRT (EW line) supports rental",
+          "Longer-term Paya Lebar Central D14 upside"
+        ],
+        "rental_assessment": "Genuinely rentable to budget single tenants near Aljunied; gross yield likely ~3.5–4% on the low quantum, the entire investment case here.",
+        "appreciation_assessment": "No data to support an appreciation thesis; shoebox FH in Geylang fringe historically lags — treat as a yield, not growth, hold.",
+        "stack_notes": null,
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-super-cheap-freehold-1br-high-rental-yield-500159646",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

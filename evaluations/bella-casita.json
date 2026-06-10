@@ -1,0 +1,61 @@
+{
+  "condo": "Bella Casita",
+  "slug": "bella-casita",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Bella Casita is a 57-unit freehold boutique block at 7 Ipoh Lane (Geylang/Joo Chiat fringe, addressed D15 here, physically D14), TOP 2013. This 1,098 sqft \"2BR\" is oversized for a 2-bedder and is being asked at $1,931 PSF — an ~11% premium over the $1,739 URA median — in a thin 7-transaction, low-liquidity boutique.",
+      "rating_rationale": "Three problems compound: (1) tiny 57-unit development means shallow buyer pool and weak liquidity (record 151-267, score 472); (2) the asking PSF of $1,931 sits ~11% above the $1,739 URA median on only 7 transactions, so it is dear for the block; (3) resale-only appreciation is a soft 3.05%/yr. The 1,098 sqft footprint is oversized for a 2BR, depressing PSF-efficiency and making the $2.12M quantum hard to justify against larger, more liquid FH stock in the genuine East Coast core. Freehold tenure is the only real positive and doesn't offset the boutique illiquidity and premium pricing.",
+      "red_flags": [
+        "Boutique 57-unit development — shallow buyer pool, weak exit liquidity",
+        "Asking $1,931 PSF is ~11% above $1,739 URA median",
+        "Thin 7-transaction series — unreliable price discovery",
+        "Oversized 1,098 sqft for a 2BR inflates quantum, weak PSF efficiency",
+        "Geylang/Ipoh Lane fringe location, not prime East Coast"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Paya Lebar Central regeneration ~830m away offers some long-run uplift"
+      ],
+      "as_of": {
+        "price": 2120000,
+        "psf": 1930.78,
+        "beds": 2,
+        "sqft": 1098.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Bella Casita is a 57-unit freehold boutique block at 7 Ipoh Lane (Geylang/Joo Chiat fringe, addressed D15 here, physically D14), TOP 2013. This 1,098 sqft \"2BR\" is oversized for a 2-bedder and is being asked at $1,931 PSF — an ~11% premium over the $1,739 URA median — in a thin 7-transaction, low-liquidity boutique.",
+        "rating": "Avoid",
+        "rating_rationale": "Three problems compound: (1) tiny 57-unit development means shallow buyer pool and weak liquidity (record 151-267, score 472); (2) the asking PSF of $1,931 sits ~11% above the $1,739 URA median on only 7 transactions, so it is dear for the block; (3) resale-only appreciation is a soft 3.05%/yr. The 1,098 sqft footprint is oversized for a 2BR, depressing PSF-efficiency and making the $2.12M quantum hard to justify against larger, more liquid FH stock in the genuine East Coast core. Freehold tenure is the only real positive and doesn't offset the boutique illiquidity and premium pricing.",
+        "red_flags": [
+          "Boutique 57-unit development — shallow buyer pool, weak exit liquidity",
+          "Asking $1,931 PSF is ~11% above $1,739 URA median",
+          "Thin 7-transaction series — unreliable price discovery",
+          "Oversized 1,098 sqft for a 2BR inflates quantum, weak PSF efficiency",
+          "Geylang/Ipoh Lane fringe location, not prime East Coast"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Paya Lebar Central regeneration ~830m away offers some long-run uplift"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bella-casita-500109054",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

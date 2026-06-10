@@ -1,0 +1,65 @@
+{
+  "condo": "Sea Pavilion Residences",
+  "slug": "sea-pavilion-residences",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2023 freehold 1BR in Upper East Coast (D16) at $890k / $1969 PSF, sitting below the $2175 URA median — but on only 2 transactions, so the median is meaningless. It's a niche shoebox in a small boutique block; the Bayshore TEL precinct is a real long-term catalyst, but 1BR exit liquidity is the weak link.",
+      "rating_rationale": "The $890k quantum is accessible and the asking $1969 PSF looks ~9% under the quoted median — but that median rests on just 2 URA txns and is unreliable. Sea Pavilion is a small freehold development, and the 1BR is the most niche, narrowest-buyer-pool unit type. Arena record is poor (Elo 941, 100-214). The genuine upside is the maturing Bayshore precinct and TEL station 630m away. On balance: a freehold + catalyst story offset by shoebox illiquidity and a tiny development.",
+      "red_flags": [
+        "Only 2 URA transactions — quoted median PSF is statistically meaningless",
+        "1BR shoebox = narrowest buyer/tenant pool and weakest resale liquidity",
+        "Small boutique development — shallow secondary market",
+        "Weak arena record (Elo 941, 100-214-1)"
+      ],
+      "catalysts": [
+        "Bayshore precinct (new HDB + private housing) and Bayshore TEL station 630m away — multi-year area transformation",
+        "Freehold tenure in a 2023 (new) building near East Coast lifestyle",
+        "Greater East Coast / TEL connectivity uplift"
+      ],
+      "as_of": {
+        "price": 890000,
+        "psf": 1969.03,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2023 freehold 1BR in Upper East Coast (D16) at $890k / $1969 PSF, sitting below the $2175 URA median — but on only 2 transactions, so the median is meaningless. It's a niche shoebox in a small boutique block; the Bayshore TEL precinct is a real long-term catalyst, but 1BR exit liquidity is the weak link.",
+        "rating": "Neutral",
+        "rating_rationale": "The $890k quantum is accessible and the asking $1969 PSF looks ~9% under the quoted median — but that median rests on just 2 URA txns and is unreliable. Sea Pavilion is a small freehold development, and the 1BR is the most niche, narrowest-buyer-pool unit type. Arena record is poor (Elo 941, 100-214). The genuine upside is the maturing Bayshore precinct and TEL station 630m away. On balance: a freehold + catalyst story offset by shoebox illiquidity and a tiny development.",
+        "red_flags": [
+          "Only 2 URA transactions — quoted median PSF is statistically meaningless",
+          "1BR shoebox = narrowest buyer/tenant pool and weakest resale liquidity",
+          "Small boutique development — shallow secondary market",
+          "Weak arena record (Elo 941, 100-214-1)"
+        ],
+        "catalysts": [
+          "Bayshore precinct (new HDB + private housing) and Bayshore TEL station 630m away — multi-year area transformation",
+          "Freehold tenure in a 2023 (new) building near East Coast lifestyle",
+          "Greater East Coast / TEL connectivity uplift"
+        ],
+        "rental_assessment": "1BR near a new TEL station rents to singles/young couples; East Coast tenant demand is decent, gross yield likely ~3.5-3.8% at this quantum. Tenant pool is shallow but consistent.",
+        "appreciation_assessment": "No reliable URA series (2 txns); freehold near a maturing TEL precinct could outperform OCR baseline if Bayshore delivers, but conviction is low.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Bayshore/D16 freehold-near-TEL estimate — URA series too thin (2 txns) to use"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sea-pavilion-residences-500025154",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

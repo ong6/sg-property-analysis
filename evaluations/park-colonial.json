@@ -1,0 +1,117 @@
+{
+  "condo": "Park Colonial",
+  "slug": "park-colonial",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 667 sqft 1BR at Park Colonial (Woodleigh), $1.22M / $1,829 PSF, directly above Woodleigh MRT (370m). A reputable, newer (2022) leasehold project with reliable +3.57%/yr appreciation over 220 transactions and a doorstep MRT — a solid, liquid 1BR with a defensible value case.",
+      "rating_rationale": "370m to Woodleigh MRT (NE line, direct to CBD) is a prime transit location that underpins rental and resale demand. URA +3.57%/yr is reliable (220 txns), and at $1,829 PSF the 1BR sits well under the $2,332 blended project median (1BRs run higher PSF than the median, so part of this is mix, but it remains a fair entry). New-ish 2022 build means minimal maintenance and a long 99yr lease. Quantum $1.22M is liquid for a city-fringe 1BR.",
+      "red_flags": [
+        "$1,829 PSF is a high absolute PSF for a 1BR — buyer must rely on continued city-fringe demand",
+        "1BR is niche for own-stay; investment-grade but tenant-dependent",
+        "D13 had heavy new 1BR supply (Bartley/Woodleigh cluster) — watch rental competition"
+      ],
+      "catalysts": [
+        "370m to Woodleigh MRT (NE line) — doorstep transit",
+        "Bidadari estate maturation and Woodleigh Mall integration",
+        "Reputable developer (CDL/CEL) and newer 2022 build",
+        "Reliable +3.57%/yr URA appreciation (220 txns)"
+      ],
+      "as_of": {
+        "price": 1220000,
+        "psf": 1829.09,
+        "beds": 1,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 667 sqft 1BR at Park Colonial (Woodleigh), $1.22M / $1,829 PSF, directly above Woodleigh MRT (370m). A reputable, newer (2022) leasehold project with reliable +3.57%/yr appreciation over 220 transactions and a doorstep MRT — a solid, liquid 1BR with a defensible value case.",
+        "rating": "Buy",
+        "rating_rationale": "370m to Woodleigh MRT (NE line, direct to CBD) is a prime transit location that underpins rental and resale demand. URA +3.57%/yr is reliable (220 txns), and at $1,829 PSF the 1BR sits well under the $2,332 blended project median (1BRs run higher PSF than the median, so part of this is mix, but it remains a fair entry). New-ish 2022 build means minimal maintenance and a long 99yr lease. Quantum $1.22M is liquid for a city-fringe 1BR.",
+        "red_flags": [
+          "$1,829 PSF is a high absolute PSF for a 1BR — buyer must rely on continued city-fringe demand",
+          "1BR is niche for own-stay; investment-grade but tenant-dependent",
+          "D13 had heavy new 1BR supply (Bartley/Woodleigh cluster) — watch rental competition"
+        ],
+        "catalysts": [
+          "370m to Woodleigh MRT (NE line) — doorstep transit",
+          "Bidadari estate maturation and Woodleigh Mall integration",
+          "Reputable developer (CDL/CEL) and newer 2022 build",
+          "Reliable +3.57%/yr URA appreciation (220 txns)"
+        ],
+        "rental_assessment": "Doorstep MRT and Bidadari/city-fringe location give strong, broad 1BR tenant demand to young professionals; healthy occupancy with a competitive (if not top) yield given the higher PSF entry.",
+        "appreciation_assessment": "Reliable +3.57%/yr URA read, supported by Bidadari estate maturation and transit; expect steady mid-single-digit appreciation over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-colonial-25157233",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 667 sqft (2+study format) unit at Woodleigh MRT asking $1,829 psf against a verified project average of ~$2,289 psf and 667-sqft comps near ~$2,541 psf — a large, real-looking discount in a strong RCR-adjacent location, though the size/bed label warrants a viewing.",
+      "rating_rationale": "Verified comps make the cheapness credible: 463 sqft 1BRs trade $2,030-$2,376 psf and 667 sqft units near $2,541 psf, so asking $1,829 psf is well under the cohort and the algo's psf_premium_vs_cohort of -20.2% is plausible rather than a one-comp fluke (psf_cohort_txns=26, appreciation_txns=220 are reasonably deep). Park Colonial sits 50m from Woodleigh MRT in the Bidadari estate (D13), a desirable RCR-ish location with realized forward returns (~+3.5%) far above CCR. The $1.22M quantum is liquid. The 667 sqft listed as '1 bed' is really a 2+study format — verify the actual config and whether the discount reflects a low floor, poor facing, or tenancy.",
+      "red_flags": [
+        "667 sqft labeled 1-bed is actually the 2+study type — confirm config and reason for the steep discount",
+        "A ~20% gap below cohort PSF can signal a problem unit (low floor/west sun/tenanted) as easily as a bargain",
+        "99-yr lease from 2018; young but decaying"
+      ],
+      "catalysts": [
+        "50m sheltered walk to Woodleigh MRT (NEL) in maturing Bidadari estate",
+        "Verified discount of ~$700 psf vs same-size comps if the unit is sound",
+        "D13/RCR realized forward returns materially exceed CCR under v3.4 priors"
+      ],
+      "as_of": {
+        "price": 1220000,
+        "psf": 1829.09,
+        "beds": 1,
+        "sqft": 667
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 667 sqft (2+study format) unit at Woodleigh MRT asking $1,829 psf against a verified project average of ~$2,289 psf and 667-sqft comps near ~$2,541 psf — a large, real-looking discount in a strong RCR-adjacent location, though the size/bed label warrants a viewing.",
+        "rating_rationale": "Verified comps make the cheapness credible: 463 sqft 1BRs trade $2,030-$2,376 psf and 667 sqft units near $2,541 psf, so asking $1,829 psf is well under the cohort and the algo's psf_premium_vs_cohort of -20.2% is plausible rather than a one-comp fluke (psf_cohort_txns=26, appreciation_txns=220 are reasonably deep). Park Colonial sits 50m from Woodleigh MRT in the Bidadari estate (D13), a desirable RCR-ish location with realized forward returns (~+3.5%) far above CCR. The $1.22M quantum is liquid. The 667 sqft listed as '1 bed' is really a 2+study format — verify the actual config and whether the discount reflects a low floor, poor facing, or tenancy.",
+        "red_flags": [
+          "667 sqft labeled 1-bed is actually the 2+study type — confirm config and reason for the steep discount",
+          "A ~20% gap below cohort PSF can signal a problem unit (low floor/west sun/tenanted) as easily as a bargain",
+          "99-yr lease from 2018; young but decaying"
+        ],
+        "catalysts": [
+          "50m sheltered walk to Woodleigh MRT (NEL) in maturing Bidadari estate",
+          "Verified discount of ~$700 psf vs same-size comps if the unit is sound",
+          "D13/RCR realized forward returns materially exceed CCR under v3.4 priors"
+        ],
+        "rental_assessment": "667 sqft 2+study near Woodleigh MRT and Bidadari rents well to couples/small families; strong transit access underpins demand.",
+        "appreciation_assessment": "1BR/small units here reportedly gained 17-27% since launch, but that trailing momentum carries ~0 forward weight; the forward case is the verified value gap plus the transit catalyst."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-colonial-25157233",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

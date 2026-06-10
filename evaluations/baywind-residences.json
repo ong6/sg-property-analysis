@@ -1,0 +1,63 @@
+{
+  "condo": "Baywind Residences",
+  "slug": "baywind-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A tiny 24-unit freehold boutique in Telok Kurau (TOP 2025) reselling at $2,513 psf / $3.3M — versus a 2022 launch price of ~$1,953 psf for 4BR. The markup is steep, liquidity is minimal (24 units), and new-launch bias inflates the data; this is an Avoid for investment.",
+      "rating_rationale": "Baywind launched in 2022 at ~$1,953 psf for 4BR; the current $2,513 psf ask is ~6% above the $2,378 URA median and a heavy premium to its own launch basis on a flagged new-launch-bias series of only 26 txns. A 24-unit boutique offers very shallow resale liquidity, the $3.3M quantum sits well outside the liquid band, and the 730m walk to Marine Terrace MRT is the only modest catalyst. Score_1000 392 confirms a sub-market profile.",
+      "red_flags": [
+        "24-unit boutique — minimal resale liquidity",
+        "$2,513 psf is above the $2,378 median and a steep markup vs ~$1,953 psf 2022 launch",
+        "$3.3M quantum well outside the liquid buyer band",
+        "New-launch bias flagged on a thin 26-txn series"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15 East Coast",
+        "730m to Marine Terrace MRT (Thomson-East Coast Line)",
+        "Brand-new (2025 TOP) with modern facilities"
+      ],
+      "as_of": {
+        "price": 3300000,
+        "psf": 2513.33,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A tiny 24-unit freehold boutique in Telok Kurau (TOP 2025) reselling at $2,513 psf / $3.3M — versus a 2022 launch price of ~$1,953 psf for 4BR. The markup is steep, liquidity is minimal (24 units), and new-launch bias inflates the data; this is an Avoid for investment.",
+        "rating": "Avoid",
+        "rating_rationale": "Baywind launched in 2022 at ~$1,953 psf for 4BR; the current $2,513 psf ask is ~6% above the $2,378 URA median and a heavy premium to its own launch basis on a flagged new-launch-bias series of only 26 txns. A 24-unit boutique offers very shallow resale liquidity, the $3.3M quantum sits well outside the liquid band, and the 730m walk to Marine Terrace MRT is the only modest catalyst. Score_1000 392 confirms a sub-market profile.",
+        "red_flags": [
+          "24-unit boutique — minimal resale liquidity",
+          "$2,513 psf is above the $2,378 median and a steep markup vs ~$1,953 psf 2022 launch",
+          "$3.3M quantum well outside the liquid buyer band",
+          "New-launch bias flagged on a thin 26-txn series"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15 East Coast",
+          "730m to Marine Terrace MRT (Thomson-East Coast Line)",
+          "Brand-new (2025 TOP) with modern facilities"
+        ],
+        "rental_assessment": "East Coast tenant demand exists, but a $3.3M, 1,313 sqft 4BR rents to a narrow pool; yield poor (~2.5-3%) at this quantum.",
+        "appreciation_assessment": "No reliable URA rate; entry above median and above own-launch basis leaves little headroom — appreciation likely lags peers over 5-7yrs.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-baywind-residences-25564734",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

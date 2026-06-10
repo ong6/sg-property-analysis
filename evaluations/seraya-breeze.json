@@ -1,0 +1,64 @@
+{
+  "condo": "Seraya Breeze",
+  "slug": "seraya-breeze",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Older (2001) freehold 1,281 sqft 4BR boutique in D15 East Coast at $2.5M / $1,952 psf, ~3% above the URA median ($1,898). The 7.9%/yr appreciation rests on only 4 transactions (unreliable), and the boutique scale plus 950m to Marine Parade MRT keep it Neutral.",
+      "rating_rationale": "Freehold D15 East Coast 4BR at a $2.5M quantum is reasonably positioned, and the new Marine Parade MRT (TEL) within ~950m is a real catalyst, but the headline 7.9%/yr appreciation is built on just 4 URA transactions and so cannot be trusted, the listing sits ~3% above median ($1,952 vs $1,898), and it's a 2001 boutique with the limited liquidity/amenities that implies. score_1000 of 450 reflects modest risk-adjusted value. A fair freehold East Coast hold, but nothing in the data pushes it to Buy.",
+      "red_flags": [
+        "Only 4 URA transactions — 7.9% appreciation rate is unreliable",
+        "Listed ~3% above URA median",
+        "2001 boutique development — limited liquidity/amenities",
+        "Marine Parade MRT a 950m walk"
+      ],
+      "catalysts": [
+        "Freehold in established D15 East Coast lifestyle belt",
+        "New Marine Parade MRT (TEL) within ~950m",
+        "$2.5M quantum still within a workable buyer band"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1951.6,
+        "beds": 4,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Older (2001) freehold 1,281 sqft 4BR boutique in D15 East Coast at $2.5M / $1,952 psf, ~3% above the URA median ($1,898). The 7.9%/yr appreciation rests on only 4 transactions (unreliable), and the boutique scale plus 950m to Marine Parade MRT keep it Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold D15 East Coast 4BR at a $2.5M quantum is reasonably positioned, and the new Marine Parade MRT (TEL) within ~950m is a real catalyst, but the headline 7.9%/yr appreciation is built on just 4 URA transactions and so cannot be trusted, the listing sits ~3% above median ($1,952 vs $1,898), and it's a 2001 boutique with the limited liquidity/amenities that implies. score_1000 of 450 reflects modest risk-adjusted value. A fair freehold East Coast hold, but nothing in the data pushes it to Buy.",
+        "red_flags": [
+          "Only 4 URA transactions — 7.9% appreciation rate is unreliable",
+          "Listed ~3% above URA median",
+          "2001 boutique development — limited liquidity/amenities",
+          "Marine Parade MRT a 950m walk"
+        ],
+        "catalysts": [
+          "Freehold in established D15 East Coast lifestyle belt",
+          "New Marine Parade MRT (TEL) within ~950m",
+          "$2.5M quantum still within a workable buyer band"
+        ],
+        "rental_assessment": "East Coast freehold 4BR rents to families on the lifestyle appeal; yield modest (~3% or below) given the $2.5M quantum.",
+        "appreciation_assessment": "Cannot rely on the 7.9% figure (4 txns); D15 East Coast freehold with TEL nearby supports steady, not exceptional, growth — treat as indicative.",
+        "stack_notes": null,
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seraya-breeze-500102668",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

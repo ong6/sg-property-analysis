@@ -110,6 +110,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500079229",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A large 1,130 sqft 2BR in Ang Mo Kio Central asking $1,416 psf — verifiably below the project's 12-month average of $1,469 psf — backed by a deep transaction cohort (23 same-size, 88 appreciation txns). Genuine value in a well-connected RCR/OCR location, with the main caveat being an ageing 99-year lease (commenced 2002, ~75-76 years left).",
+      "rating_rationale": "Asking $1,415.93 psf sits below the verified last-12-month average of $1,469 psf (range $1,224-$1,677), and the age-adjusted premium of -20% rests on a robust cohort (psf_cohort_txns=23, psf_premium_vs_cohort -0.9%) rather than a thin quirk — the cheapness is real and well-evidenced. The 1,130 sqft 2BR is a usable, family-sized layout in AMK Central, walkable to AMK Hub and the AMK MRT/bus interchange. Per v3.4 priors, value-vs-peers is the strongest forward signal and this clears it; D20 is a healthy RCR/OCR district. The lease (from 2002) is the real risk and caps appreciation, but the entry discount and large floor area give a reasonable 5-7yr hold.",
+      "red_flags": [
+        "99-year lease commenced 2002 — roughly 75-76 years remaining, lease decay accelerates over a 5-7yr hold",
+        "very_old_property flag (2005 completion); will need to compete with newer Bishan/Thomson stock on resale",
+        "Large quantum ($1.6M) narrows the buyer pool vs compact units"
+      ],
+      "catalysts": [
+        "Ang Mo Kio MRT interchange and AMK Hub within walking distance",
+        "Established mature-estate amenities support steady rental demand",
+        "Entry below project 12-mo average leaves room to capture the discount on exit"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1415.93,
+        "beds": 2,
+        "sqft": 1130
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A large 1,130 sqft 2BR in Ang Mo Kio Central asking $1,416 psf — verifiably below the project's 12-month average of $1,469 psf — backed by a deep transaction cohort (23 same-size, 88 appreciation txns). Genuine value in a well-connected RCR/OCR location, with the main caveat being an ageing 99-year lease (commenced 2002, ~75-76 years left).",
+        "rating_rationale": "Asking $1,415.93 psf sits below the verified last-12-month average of $1,469 psf (range $1,224-$1,677), and the age-adjusted premium of -20% rests on a robust cohort (psf_cohort_txns=23, psf_premium_vs_cohort -0.9%) rather than a thin quirk — the cheapness is real and well-evidenced. The 1,130 sqft 2BR is a usable, family-sized layout in AMK Central, walkable to AMK Hub and the AMK MRT/bus interchange. Per v3.4 priors, value-vs-peers is the strongest forward signal and this clears it; D20 is a healthy RCR/OCR district. The lease (from 2002) is the real risk and caps appreciation, but the entry discount and large floor area give a reasonable 5-7yr hold.",
+        "red_flags": [
+          "99-year lease commenced 2002 — roughly 75-76 years remaining, lease decay accelerates over a 5-7yr hold",
+          "very_old_property flag (2005 completion); will need to compete with newer Bishan/Thomson stock on resale",
+          "Large quantum ($1.6M) narrows the buyer pool vs compact units"
+        ],
+        "catalysts": [
+          "Ang Mo Kio MRT interchange and AMK Hub within walking distance",
+          "Established mature-estate amenities support steady rental demand",
+          "Entry below project 12-mo average leaves room to capture the discount on exit"
+        ],
+        "appreciation_assessment": "Dossier 6.53% 5yr CAGR on 88 txns is the deepest data set in this batch, but per v3.4 priors trailing CAGR is not a forward guarantee — lease decay will be a structural headwind. The investable thesis is the verified entry discount, not momentum.",
+        "rental_assessment": "A 1,130 sqft 2BR in AMK Central rents roughly $3,800-$4,500, implying ~3.0-3.3% gross yield — district-typical for a mature-estate 2BR; supports holding cost without being a yield standout."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500123966",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

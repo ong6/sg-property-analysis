@@ -54,6 +54,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-trevista-500119113",
         "review_file": "batch_09.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1,442 sqft 3BR at $1,664 psf sits clearly below Trevista's verified 12-month range ($1,728-$2,197 psf, avg ~$2,042 across 134 deals), in a large, liquid, MRT-served RCR project — a genuine value entry on deep data.",
+      "rating_rationale": "$2.4M / 1,442 sqft ($1,664 psf) is below the bottom of Trevista's last-12-month transaction band ($1,728-$2,197 psf, avg ~$2,042); even allowing that large 3BRs trade at lower psf than the pool, this is a real discount, and another 1,442 sqft unit is listed higher at $2.6M. The signal is well-supported: appreciation_txns=134 and psf_cohort_txns=8, so the -11.2% age-adj / -14.6% cohort discount is not thin-data noise. Trevista is a 590-unit project a few minutes from Braddell and Toa Payoh MRT in D12 (RCR, ~+3.5% forward realized), giving strong family-resale and rental liquidity. Per v3.4 priors I weight the verified value gap over the trailing 5.64% CAGR (story only). A large, well-located family unit bought below recent comps on deep data is a Buy; medium confidence because the discount partly reflects the larger-unit psf structure and lease decay (1999/2008-vintage 99yr).",
+      "red_flags": [
+        "99-yr leasehold (completed ~2011) — lease decay over a 5-7yr hold",
+        "Part of the cohort discount reflects normal large-unit psf compression, not pure bargain",
+        "$2.4M is a high absolute quantum, narrowing the buyer pool on exit"
+      ],
+      "catalysts": [
+        "Few minutes to Braddell (NSL) and Toa Payoh (NSL) MRT — city-fringe convenience",
+        "Large 590-unit project = strong, liquid resale and rental market for 3BR families",
+        "Established Toa Payoh estate amenities; consistent owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1664.36,
+        "beds": 3,
+        "sqft": 1442
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 1,442 sqft 3BR at $1,664 psf sits clearly below Trevista's verified 12-month range ($1,728-$2,197 psf, avg ~$2,042 across 134 deals), in a large, liquid, MRT-served RCR project — a genuine value entry on deep data.",
+        "rating_rationale": "$2.4M / 1,442 sqft ($1,664 psf) is below the bottom of Trevista's last-12-month transaction band ($1,728-$2,197 psf, avg ~$2,042); even allowing that large 3BRs trade at lower psf than the pool, this is a real discount, and another 1,442 sqft unit is listed higher at $2.6M. The signal is well-supported: appreciation_txns=134 and psf_cohort_txns=8, so the -11.2% age-adj / -14.6% cohort discount is not thin-data noise. Trevista is a 590-unit project a few minutes from Braddell and Toa Payoh MRT in D12 (RCR, ~+3.5% forward realized), giving strong family-resale and rental liquidity. Per v3.4 priors I weight the verified value gap over the trailing 5.64% CAGR (story only). A large, well-located family unit bought below recent comps on deep data is a Buy; medium confidence because the discount partly reflects the larger-unit psf structure and lease decay (1999/2008-vintage 99yr).",
+        "red_flags": [
+          "99-yr leasehold (completed ~2011) — lease decay over a 5-7yr hold",
+          "Part of the cohort discount reflects normal large-unit psf compression, not pure bargain",
+          "$2.4M is a high absolute quantum, narrowing the buyer pool on exit"
+        ],
+        "catalysts": [
+          "Few minutes to Braddell (NSL) and Toa Payoh (NSL) MRT — city-fringe convenience",
+          "Large 590-unit project = strong, liquid resale and rental market for 3BR families",
+          "Established Toa Payoh estate amenities; consistent owner-occupier demand"
+        ],
+        "appreciation_assessment": "Trailing 5.64% CAGR (134 txns) is solid but treated as narrative, not a forward guarantee; the forward case is the verified sub-band entry price plus RCR drift, the value signal the backtest rewards.",
+        "rental_assessment": "Large 3BR near two MRT lines rents readily to families; yield on a $2.4M quantum is modest, so this is a value-and-liquidity hold rather than a yield maximiser."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-trevista-500119113",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

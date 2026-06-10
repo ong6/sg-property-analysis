@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500162064",
         "review_file": "batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 2BR in established Siglap/East Coast asking $1,673 psf — genuinely below the project's ~$1,752 psf 12-month average, on deep transaction support (109 txns). Real cheapness vs verified recent comps, the strongest forward signal under v3.4.",
+      "rating_rationale": "This is the cleanest value case of the five. Asking $1,673 psf is ~5% under Flamingo Valley's trailing-12-month average of $1,752 psf (range $1,296-$1,972), and the cheapness is corroborated by depth: appreciation drawn from 109 URA txns (4.62% CAGR) and a -9.7% premium vs the size cohort on a respectable 10 cohort txns — not a 1-2 comp quirk. The dossier carries zero red flags. Physically it is a well-regarded, low-density freehold (393 units, Japanese-architect design, resort landscaping) in a sticky, owner-occupier East Coast/Siglap micromarket, RCR-adjacent. Region matters: RCR realized fwd ~+3.5% is solidly positive (the old CCR-prestige prior is inverted). I am not crediting the 4.62% trailing CAGR as forward guarantee, but the combination of verified sub-market entry + freehold + established demand justifies a Buy. Confidence is medium not high: quantum is at $2.0M for a 2BR (rich absolute), transport is bus-reliant (Bedok/future Marine Parade TE not at the doorstep), and en-bloc hopes are unrealistic in the current 35%-ABSD developer environment.",
+      "red_flags": [
+        "High absolute quantum ($2.0M) for a 2-bedroom narrows the resale buyer pool",
+        "Transport is bus-reliant; no MRT within easy walking distance",
+        "Freehold premium is already paid in — not a forward return edge by itself"
+      ],
+      "catalysts": [
+        "Asking ~5% below the project's own 12-mo average PSF — verified real value",
+        "Thomson-East Coast Line build-out improving D15 connectivity over the hold",
+        "East Coast/Siglap owner-occupier demand keeps the floor firm; freehold scarcity"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1673.64,
+        "beds": 2,
+        "sqft": 1195
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A freehold 2BR in established Siglap/East Coast asking $1,673 psf — genuinely below the project's ~$1,752 psf 12-month average, on deep transaction support (109 txns). Real cheapness vs verified recent comps, the strongest forward signal under v3.4.",
+        "rating_rationale": "This is the cleanest value case of the five. Asking $1,673 psf is ~5% under Flamingo Valley's trailing-12-month average of $1,752 psf (range $1,296-$1,972), and the cheapness is corroborated by depth: appreciation drawn from 109 URA txns (4.62% CAGR) and a -9.7% premium vs the size cohort on a respectable 10 cohort txns — not a 1-2 comp quirk. The dossier carries zero red flags. Physically it is a well-regarded, low-density freehold (393 units, Japanese-architect design, resort landscaping) in a sticky, owner-occupier East Coast/Siglap micromarket, RCR-adjacent. Region matters: RCR realized fwd ~+3.5% is solidly positive (the old CCR-prestige prior is inverted). I am not crediting the 4.62% trailing CAGR as forward guarantee, but the combination of verified sub-market entry + freehold + established demand justifies a Buy. Confidence is medium not high: quantum is at $2.0M for a 2BR (rich absolute), transport is bus-reliant (Bedok/future Marine Parade TE not at the doorstep), and en-bloc hopes are unrealistic in the current 35%-ABSD developer environment.",
+        "red_flags": [
+          "High absolute quantum ($2.0M) for a 2-bedroom narrows the resale buyer pool",
+          "Transport is bus-reliant; no MRT within easy walking distance",
+          "Freehold premium is already paid in — not a forward return edge by itself"
+        ],
+        "catalysts": [
+          "Asking ~5% below the project's own 12-mo average PSF — verified real value",
+          "Thomson-East Coast Line build-out improving D15 connectivity over the hold",
+          "East Coast/Siglap owner-occupier demand keeps the floor firm; freehold scarcity"
+        ],
+        "appreciation_assessment": "Trailing 4.62% CAGR is backed by 109 transactions (credible data), but per v3.4 I treat it as story not forecast. The forward case rests on verified relative cheapness plus RCR-region positive drift (~+3.5%), not on extrapolating past CAGR.",
+        "rental_assessment": "Established East Coast rental demand from families and expats; a freehold 2BR of this size rents steadily, though the high entry price keeps gross yield modest (low-to-mid 3% range typical for the project)."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flamingo-valley-500162064",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

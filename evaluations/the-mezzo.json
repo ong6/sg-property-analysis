@@ -1,0 +1,61 @@
+{
+  "condo": "The Mezzo",
+  "slug": "the-mezzo",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 560 sqft 1BR at The Mezzo (D12 Balestier, freehold, 2014) at $888k / $1,586 PSF — listed ~6% below the URA median of $1,691 PSF. Honest resale-to-resale appreciation is only 2.75%/yr over 30 transactions, a soft growth rate that defines the case.",
+      "rating_rationale": "Priced $1,586 PSF vs $1,691 URA median is a genuine ~6% discount and the 560 sqft is a usable 1BR (not a shoebox), with a credible 30-txn data series. But the resale-only appreciation of 2.75%/yr is well below the RCR/CCR ~4.5-5.8% range — capital upside is the binding constraint. Freehold and sub-$900k quantum support liquidity, but the weak appreciation keeps it Neutral.",
+      "red_flags": [
+        "Resale appreciation only 2.75%/yr — below regional baselines",
+        "970m (12 min) walk to Farrer Park MRT",
+        "1BR tenant-dependent; arena record weak at 93-211-11 (elo 894)"
+      ],
+      "catalysts": [
+        "Listed ~6% under $1,691 URA median PSF — room to the area's going rate",
+        "Freehold + central D12 Balestier near Novena medical hub",
+        "Generous 560 sqft 1BR layout aids resale vs typical shoeboxes"
+      ],
+      "as_of": {
+        "price": 888000,
+        "psf": 1585.71,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 560 sqft 1BR at The Mezzo (D12 Balestier, freehold, 2014) at $888k / $1,586 PSF — listed ~6% below the URA median of $1,691 PSF. Honest resale-to-resale appreciation is only 2.75%/yr over 30 transactions, a soft growth rate that defines the case.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced $1,586 PSF vs $1,691 URA median is a genuine ~6% discount and the 560 sqft is a usable 1BR (not a shoebox), with a credible 30-txn data series. But the resale-only appreciation of 2.75%/yr is well below the RCR/CCR ~4.5-5.8% range — capital upside is the binding constraint. Freehold and sub-$900k quantum support liquidity, but the weak appreciation keeps it Neutral.",
+        "red_flags": [
+          "Resale appreciation only 2.75%/yr — below regional baselines",
+          "970m (12 min) walk to Farrer Park MRT",
+          "1BR tenant-dependent; arena record weak at 93-211-11 (elo 894)"
+        ],
+        "catalysts": [
+          "Listed ~6% under $1,691 URA median PSF — room to the area's going rate",
+          "Freehold + central D12 Balestier near Novena medical hub",
+          "Generous 560 sqft 1BR layout aids resale vs typical shoeboxes"
+        ],
+        "rental_assessment": "560 sqft 1BR near Novena/Farrer Park medical and city fringe has steady tenant demand; yield reasonable but the walk to MRT caps premium rents.",
+        "appreciation_assessment": "URA resale-only 2.75%/yr over 30 txns is reliable and soft. Discount to median offers some cushion but trend is muted.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-mezzo-500074705",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

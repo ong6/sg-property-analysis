@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️BEST PRICE WEST PROJECT , EASY ENTRY PRICE",
+  "slug": "best-price-west-project-easy-entry-price",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A spam-titled D23 4BR new build (2025) at $1,631 psf / $2.3M near Phoenix LRT, with no tenure and no URA data to verify pricing or lease risk. The quantum is reasonable but the missing identity and data leave nothing to underwrite — Avoid.",
+      "rating_rationale": "No tenure disclosed (lease risk unknown) and a null URA appreciation/median series mean fair value and appreciation are unverifiable. The marketing-keyword title ('BEST PRICE', 'EASY ENTRY') signals a bait listing rather than an identified project, and proximity to an LRT (not MRT) is a weaker transit anchor. Without project identity and data, no confident positive call is possible.",
+      "red_flags": [
+        "No tenure disclosed — lease/freehold status unknown",
+        "No URA data — appreciation and fair value unverifiable",
+        "Marketing-keyword title; project not identifiable",
+        "LRT-only access (Phoenix BP5), not MRT"
+      ],
+      "catalysts": [
+        "230m to Phoenix LRT (feeds Bukit Panjang DTL interchange)",
+        "Reasonable $2.3M quantum for a 4BR"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1631.21,
+        "beds": 4,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spam-titled D23 4BR new build (2025) at $1,631 psf / $2.3M near Phoenix LRT, with no tenure and no URA data to verify pricing or lease risk. The quantum is reasonable but the missing identity and data leave nothing to underwrite — Avoid.",
+        "rating": "Avoid",
+        "rating_rationale": "No tenure disclosed (lease risk unknown) and a null URA appreciation/median series mean fair value and appreciation are unverifiable. The marketing-keyword title ('BEST PRICE', 'EASY ENTRY') signals a bait listing rather than an identified project, and proximity to an LRT (not MRT) is a weaker transit anchor. Without project identity and data, no confident positive call is possible.",
+        "red_flags": [
+          "No tenure disclosed — lease/freehold status unknown",
+          "No URA data — appreciation and fair value unverifiable",
+          "Marketing-keyword title; project not identifiable",
+          "LRT-only access (Phoenix BP5), not MRT"
+        ],
+        "catalysts": [
+          "230m to Phoenix LRT (feeds Bukit Panjang DTL interchange)",
+          "Reasonable $2.3M quantum for a 4BR"
+        ],
+        "rental_assessment": "Unassessable without project identity; D23/Bukit Panjang family tenant demand is moderate at best.",
+        "appreciation_assessment": "Unverifiable — null URA series, unknown tenure.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-best-price-west-project-easy-entry-price-25363279",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

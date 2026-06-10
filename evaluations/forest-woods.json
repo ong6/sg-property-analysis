@@ -1,0 +1,63 @@
+{
+  "condo": "Forest Woods",
+  "slug": "forest-woods",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact 657 sqft 99-year leasehold 2BR in D19 Serangoon at $2207 PSF / $1.45M, 420m from Serangoon MRT interchange (NEL/Circle Line + NEX mall). Strong location and a solid 128-txn URA series (~4.3% CAGR), but the asking is ~5% ABOVE the $2095 project median.",
+      "rating_rationale": "Excellent location — 420m to Serangoon interchange and NEX mall, young 2021 build, 128-txn URA series showing a healthy ~4.3% CAGR. Offsetting that, the asking $2207 PSF is ~5% above the $2095 median, the unit is a compact 657 sqft 2BR, 99-yr leasehold caps tenure value, and $2207 PSF is a high absolute number for D19 OCR. Good fundamentals neutralized by an above-median asking price — a fair-value hold, not a bargain.",
+      "red_flags": [
+        "Asking ~5% above project URA median ($2207 vs $2095)",
+        "657 sqft is compact for a 2BR",
+        "99-year leasehold (2021) — no freehold cushion",
+        "$2207 PSF is high for D19 OCR, leaning on the interchange premium"
+      ],
+      "catalysts": [
+        "420m to NE12 Serangoon interchange (NEL + Circle Line) and NEX mall",
+        "Young 2021 build, well-regarded project",
+        "Solid 128-txn URA series with ~4.3% CAGR"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 2207.0,
+        "beds": 2,
+        "sqft": 657.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 657 sqft 99-year leasehold 2BR in D19 Serangoon at $2207 PSF / $1.45M, 420m from Serangoon MRT interchange (NEL/Circle Line + NEX mall). Strong location and a solid 128-txn URA series (~4.3% CAGR), but the asking is ~5% ABOVE the $2095 project median.",
+        "rating": "Neutral",
+        "rating_rationale": "Excellent location — 420m to Serangoon interchange and NEX mall, young 2021 build, 128-txn URA series showing a healthy ~4.3% CAGR. Offsetting that, the asking $2207 PSF is ~5% above the $2095 median, the unit is a compact 657 sqft 2BR, 99-yr leasehold caps tenure value, and $2207 PSF is a high absolute number for D19 OCR. Good fundamentals neutralized by an above-median asking price — a fair-value hold, not a bargain.",
+        "red_flags": [
+          "Asking ~5% above project URA median ($2207 vs $2095)",
+          "657 sqft is compact for a 2BR",
+          "99-year leasehold (2021) — no freehold cushion",
+          "$2207 PSF is high for D19 OCR, leaning on the interchange premium"
+        ],
+        "catalysts": [
+          "420m to NE12 Serangoon interchange (NEL + Circle Line) and NEX mall",
+          "Young 2021 build, well-regarded project",
+          "Solid 128-txn URA series with ~4.3% CAGR"
+        ],
+        "rental_assessment": "Serangoon interchange + NEX gives a 2BR strong, broad tenant demand; expect a competitive ~3.5-4% gross yield with low vacancy.",
+        "appreciation_assessment": "~4.3% on 128 txns is well-supported and respectable for OCR, but paying ~5% over median consumes part of that edge over the hold period.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-forest-woods-500020733",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

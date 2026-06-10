@@ -1,0 +1,63 @@
+{
+  "condo": "The Arcady At Boon Keng",
+  "slug": "the-arcady-at-boon-keng",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold new launch (2028 TOP) 3BR at Boon Keng for $2.34M / $2,415 PSF, a discount to the $2,656 project median, 500m from Boon Keng MRT. Freehold city-fringe with NEL access is attractive, but it's an unbuilt new launch with no resale appreciation history and the rate carries new-launch bias.",
+      "rating_rationale": "Genuine positives: freehold (rare for a new launch), 500m to Boon Keng MRT (NEL, near CBD/Novena), a right-sized 969sqft 3BR at $2.34M in the liquid band, and an asking PSF (2415) below the $2,656 project median. But there is no resale-to-resale appreciation data (null rate), new-launch bias is flagged, and TOP is 2028 — so a 5-7yr hold doesn't start clearing SSD until ~2031+ and entry is at full launch pricing. Freehold floor and location keep it from Avoid; lack of proven growth and launch-premium entry keep it from Buy.",
+      "red_flags": [
+        "Unbuilt new launch (2028 TOP) — no resale track record, new-launch-bias flagged",
+        "Entry at launch pricing; $2,415 PSF is rich for city-fringe even with freehold",
+        "Long runway before SSD-clear resale (hold effectively starts post-2028)"
+      ],
+      "catalysts": [
+        "Freehold tenure in a city-fringe RCR district — rare for a new launch",
+        "500m to Boon Keng MRT (NEL) — strong connectivity to CBD/Novena",
+        "Discount to the $2,656 project median asking PSF",
+        "Brand-new unit with full warranty/no lease decay"
+      ],
+      "as_of": {
+        "price": 2340000,
+        "psf": 2414.86,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold new launch (2028 TOP) 3BR at Boon Keng for $2.34M / $2,415 PSF, a discount to the $2,656 project median, 500m from Boon Keng MRT. Freehold city-fringe with NEL access is attractive, but it's an unbuilt new launch with no resale appreciation history and the rate carries new-launch bias.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold (rare for a new launch), 500m to Boon Keng MRT (NEL, near CBD/Novena), a right-sized 969sqft 3BR at $2.34M in the liquid band, and an asking PSF (2415) below the $2,656 project median. But there is no resale-to-resale appreciation data (null rate), new-launch bias is flagged, and TOP is 2028 — so a 5-7yr hold doesn't start clearing SSD until ~2031+ and entry is at full launch pricing. Freehold floor and location keep it from Avoid; lack of proven growth and launch-premium entry keep it from Buy.",
+        "red_flags": [
+          "Unbuilt new launch (2028 TOP) — no resale track record, new-launch-bias flagged",
+          "Entry at launch pricing; $2,415 PSF is rich for city-fringe even with freehold",
+          "Long runway before SSD-clear resale (hold effectively starts post-2028)"
+        ],
+        "catalysts": [
+          "Freehold tenure in a city-fringe RCR district — rare for a new launch",
+          "500m to Boon Keng MRT (NEL) — strong connectivity to CBD/Novena",
+          "Discount to the $2,656 project median asking PSF",
+          "Brand-new unit with full warranty/no lease decay"
+        ],
+        "rental_assessment": "Boon Keng is a strong rental belt (NEL, near CBD/hospitals); a new freehold 3BR will rent well on completion, though yield is compressed at $2,415 PSF.",
+        "appreciation_assessment": "No resale history exists; new-launch bias means any reported rate is inflated. Freehold + location argue for steady long-run appreciation, but it is unproven and entry is at peak launch pricing.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-arcady-at-boon-keng-24935469",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

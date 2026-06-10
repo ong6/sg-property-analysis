@@ -1,0 +1,61 @@
+{
+  "condo": "Aston Mansions",
+  "slug": "aston-mansions",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Spacious 1,302 sqft 3BR steps from Paya Lebar MRT interchange at $1,244 PSF — below the $1,304 URA median — in a district riding the Paya Lebar Central transformation. Strong location and value entry, tempered by a thin 31-txn appreciation series and ageing 1998 99-yr lease.",
+      "rating_rationale": "$1,244 PSF is ~5% under the $1,304 URA median, the CC9 Paya Lebar interchange is 550m, and Paya Lebar Central (airbase relocation) is a concrete catalyst. 6.65% URA appreciation is attractive but rests on only 31 txns so treat as indicative; 1998 lease (~71yr) is the main drag.",
+      "red_flags": [
+        "Only 31 txns underpinning the 6.65% rate",
+        "1998 99-yr lease ~71yr remaining",
+        "Older development, higher maintenance/resale friction"
+      ],
+      "catalysts": [
+        "CC9 Paya Lebar interchange 550m (Circle + East-West)",
+        "Paya Lebar Central commercial hub + airbase relocation land",
+        "Sub-median PSF entry"
+      ],
+      "as_of": {
+        "price": 1620000,
+        "psf": 1244.24,
+        "beds": 3,
+        "sqft": 1302.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Spacious 1,302 sqft 3BR steps from Paya Lebar MRT interchange at $1,244 PSF — below the $1,304 URA median — in a district riding the Paya Lebar Central transformation. Strong location and value entry, tempered by a thin 31-txn appreciation series and ageing 1998 99-yr lease.",
+        "rating": "Buy",
+        "rating_rationale": "$1,244 PSF is ~5% under the $1,304 URA median, the CC9 Paya Lebar interchange is 550m, and Paya Lebar Central (airbase relocation) is a concrete catalyst. 6.65% URA appreciation is attractive but rests on only 31 txns so treat as indicative; 1998 lease (~71yr) is the main drag.",
+        "red_flags": [
+          "Only 31 txns underpinning the 6.65% rate",
+          "1998 99-yr lease ~71yr remaining",
+          "Older development, higher maintenance/resale friction"
+        ],
+        "catalysts": [
+          "CC9 Paya Lebar interchange 550m (Circle + East-West)",
+          "Paya Lebar Central commercial hub + airbase relocation land",
+          "Sub-median PSF entry"
+        ],
+        "rental_assessment": "Excellent tenant demand near a major interchange and Paya Lebar commercial cluster; 3BR appeals to families and sharers.",
+        "appreciation_assessment": "6.65% resale CAGR is strong for D14 but the 31-txn base lowers confidence; the Paya Lebar zone and interchange proximity support continued outperformance.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-aston-mansions-500078651",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

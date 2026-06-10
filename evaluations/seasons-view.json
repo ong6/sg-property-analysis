@@ -1,0 +1,61 @@
+{
+  "condo": "Seasons View",
+  "slug": "seasons-view",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 26-year-old 99-year leasehold 2BR in Bishan/Marymount (D20), 670m from CC16 Marymount MRT, listed at $1,453 psf — about 7% below the $1,559 URA median. Reasonable value with MRT access, but accelerating lease decay (~73 years left) and a moderate 28-txn series temper it.",
+      "rating_rationale": "Listed PSF $1,453 is ~7% under the $1,559 URA median, a modest genuine discount, and the 969 sqft 2BR is a normal, efficient size. CC16 Marymount MRT at 670m gives Circle Line access to Bishan/MacRitchie amenities — a desirable, supply-constrained central-north location. The 6.2%/yr URA rate (28 txns, moderately reliable) reflects past strength. But this is a 99-year leasehold built in 2000 (~73 years remaining), so lease decay becomes a tangible resale headwind over the next 5-7 years, and D20 leasehold appreciation will lag freehold peers from here. Quantum $1.41M is liquid. A balanced hold, not a conviction buy.",
+      "red_flags": [
+        "99-year leasehold from 2000 — ~73 years left, lease decay an emerging resale drag",
+        "Moderate 28-txn URA series",
+        "8-min/670m MRT walk — accessible but not doorstep"
+      ],
+      "catalysts": [
+        "CC16 Marymount Circle Line MRT 670m away",
+        "Supply-constrained central Bishan/Marymount location with good schools",
+        "Liquid sub-$1.5M 2BR quantum"
+      ],
+      "as_of": {
+        "price": 1408000,
+        "psf": 1453.04,
+        "beds": 2,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 26-year-old 99-year leasehold 2BR in Bishan/Marymount (D20), 670m from CC16 Marymount MRT, listed at $1,453 psf — about 7% below the $1,559 URA median. Reasonable value with MRT access, but accelerating lease decay (~73 years left) and a moderate 28-txn series temper it.",
+        "rating": "Neutral",
+        "rating_rationale": "Listed PSF $1,453 is ~7% under the $1,559 URA median, a modest genuine discount, and the 969 sqft 2BR is a normal, efficient size. CC16 Marymount MRT at 670m gives Circle Line access to Bishan/MacRitchie amenities — a desirable, supply-constrained central-north location. The 6.2%/yr URA rate (28 txns, moderately reliable) reflects past strength. But this is a 99-year leasehold built in 2000 (~73 years remaining), so lease decay becomes a tangible resale headwind over the next 5-7 years, and D20 leasehold appreciation will lag freehold peers from here. Quantum $1.41M is liquid. A balanced hold, not a conviction buy.",
+        "red_flags": [
+          "99-year leasehold from 2000 — ~73 years left, lease decay an emerging resale drag",
+          "Moderate 28-txn URA series",
+          "8-min/670m MRT walk — accessible but not doorstep"
+        ],
+        "catalysts": [
+          "CC16 Marymount Circle Line MRT 670m away",
+          "Supply-constrained central Bishan/Marymount location with good schools",
+          "Liquid sub-$1.5M 2BR quantum"
+        ],
+        "rental_assessment": "Central D20 with Circle Line access and good schools draws steady 2BR tenant demand; yield decent at this quantum.",
+        "appreciation_assessment": "6.2%/yr URA reflects past mass-market reflation; forward appreciation more muted as leasehold decay weighs.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seasons-view-60052528",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

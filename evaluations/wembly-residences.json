@@ -1,0 +1,63 @@
+{
+  "condo": "Wembly Residences",
+  "slug": "wembly-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Boutique 33-unit freehold whose apparent cheapness is a data artifact. Asking $1,162 psf is in line with the project's median (~$1,180 psf, range $1,090-$1,461), not below it. The algo's -29.7% age-adjusted and -13.3% cohort discounts rest on 1 cohort txn and 5 baseline-imputed appreciation txns, plus a bedroom/sqft mismatch (947 sqft is the top of the 1BR band, not a 1BR's true footprint). No real bargain and very thin liquidity.",
+      "rating_rationale": "Verified project median PSF is ~$1,180 (range $1,090-$1,461); the $1,161.56 asking is mid-market, so the -29.7% age_adj_premium and -13.3% cohort discount are NOT real value once measured against actual transactions. Both signals are built on essentially 1 comparable (psf_cohort_txns=1) and a regional_baseline appreciation with only 5 txns, which per v3.4 priors is a likely DATA QUIRK rather than a bargain. Two red flags (very_low_psf, bedroom_sqft_mismatch) and a 33-unit boutique means very thin resale liquidity for a 5-7yr exit. Freehold is not a forward edge.",
+      "red_flags": [
+        "psf_cohort_txns=1 and appreciation from regional_baseline on only 5 txns - cheapness signal is statistically empty",
+        "bedroom_sqft_mismatch: 947 sqft listed as 1BR (Wembly 1BR runs 560-947 sqft; this is the very top of band, possibly mis-tagged)",
+        "Asking $1,162 psf is at the project median (~$1,180), not below it - the -29.7% age_adj discount is an artifact",
+        "33-unit boutique = very thin transaction volume and poor exit liquidity",
+        "very_low_psf flag is not corroborated by actual recent transactions"
+      ],
+      "catalysts": [
+        "Freehold tenure in D19 (mild durability plus, not a forward price edge)",
+        "Yio Chu Kang Road location with bus connectivity and nearby amenities"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1161.56,
+        "beds": 1,
+        "sqft": 947
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Boutique 33-unit freehold whose apparent cheapness is a data artifact. Asking $1,162 psf is in line with the project's median (~$1,180 psf, range $1,090-$1,461), not below it. The algo's -29.7% age-adjusted and -13.3% cohort discounts rest on 1 cohort txn and 5 baseline-imputed appreciation txns, plus a bedroom/sqft mismatch (947 sqft is the top of the 1BR band, not a 1BR's true footprint). No real bargain and very thin liquidity.",
+        "rating_rationale": "Verified project median PSF is ~$1,180 (range $1,090-$1,461); the $1,161.56 asking is mid-market, so the -29.7% age_adj_premium and -13.3% cohort discount are NOT real value once measured against actual transactions. Both signals are built on essentially 1 comparable (psf_cohort_txns=1) and a regional_baseline appreciation with only 5 txns, which per v3.4 priors is a likely DATA QUIRK rather than a bargain. Two red flags (very_low_psf, bedroom_sqft_mismatch) and a 33-unit boutique means very thin resale liquidity for a 5-7yr exit. Freehold is not a forward edge.",
+        "red_flags": [
+          "psf_cohort_txns=1 and appreciation from regional_baseline on only 5 txns - cheapness signal is statistically empty",
+          "bedroom_sqft_mismatch: 947 sqft listed as 1BR (Wembly 1BR runs 560-947 sqft; this is the very top of band, possibly mis-tagged)",
+          "Asking $1,162 psf is at the project median (~$1,180), not below it - the -29.7% age_adj discount is an artifact",
+          "33-unit boutique = very thin transaction volume and poor exit liquidity",
+          "very_low_psf flag is not corroborated by actual recent transactions"
+        ],
+        "catalysts": [
+          "Freehold tenure in D19 (mild durability plus, not a forward price edge)",
+          "Yio Chu Kang Road location with bus connectivity and nearby amenities"
+        ],
+        "appreciation_assessment": "appreciation_pct of 4.0% is a regional_baseline imputation on just 5 txns, not a project signal - effectively no information. Per v3.4, trailing appreciation has ~0 forward power; here it is not even project-specific. The project's own recent PSF (median ~$1,180) shows no standout momentum.",
+        "rental_assessment": "Boutique freehold near Yio Chu Kang; a ~947 sqft unit at $1.1M would need ~$3.3-3.6k/mo for ~3.6-3.9% gross yield, plausible but unremarkable for D19. Exit liquidity, not rent, is the binding constraint here."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-wembly-residences-24165911",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

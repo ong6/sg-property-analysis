@@ -1,0 +1,174 @@
+{
+ "listings": [
+  {
+   "priority": 1717,
+   "bracket": "4BR+",
+   "bracket_rank": 417,
+   "project_name": "The Seafront on Meyer",
+   "district": "D15",
+   "beds": 4,
+   "price": 6000000,
+   "psf": 2592.91,
+   "sqft": 2314.0,
+   "tenure": "Freehold",
+   "built_year": 2011,
+   "mrt_info": "3 min (210 m) from TE24 Katong Park MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-seafront-on-meyer-500161340",
+   "technical": {
+    "score_1000": 32,
+    "elo": 2,
+    "record": "5-410-3",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 0.20704111062641584,
+    "ura_resale_only_pct_yr": 0.20704111062641584,
+    "ura_txn_count": 57,
+    "ura_median_psf": 1944.0,
+    "has_new_launch_bias": false
+   },
+   "agent_evaluation": {
+    "summary": null,
+    "rating": null,
+    "rating_rationale": null,
+    "red_flags": [],
+    "catalysts": [],
+    "confidence": null
+   }
+  },
+  {
+   "priority": 1719,
+   "bracket": "1BR",
+   "bracket_rank": 315,
+   "project_name": "Parc Haven",
+   "district": "D12",
+   "beds": 1,
+   "price": 1318000,
+   "psf": 1912.92,
+   "sqft": 689.0,
+   "tenure": "Freehold",
+   "built_year": 2005,
+   "mrt_info": "17 min (1.39 km) from NE9 Boon Keng MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-haven-22363121",
+   "technical": {
+    "score_1000": 29,
+    "elo": -47,
+    "record": "1-313-1",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": -5.220329588512406,
+    "ura_resale_only_pct_yr": -5.220329588512406,
+    "ura_txn_count": 13,
+    "ura_median_psf": 940.0,
+    "has_new_launch_bias": false
+   },
+   "agent_evaluation": {
+    "summary": null,
+    "rating": null,
+    "rating_rationale": null,
+    "red_flags": [],
+    "catalysts": [],
+    "confidence": null
+   }
+  },
+  {
+   "priority": 1722,
+   "bracket": "1BR",
+   "bracket_rank": 316,
+   "project_name": "Bagnall Court",
+   "district": "D16",
+   "beds": 1,
+   "price": 1367000,
+   "psf": 2761.62,
+   "sqft": 495.0,
+   "tenure": "Freehold",
+   "built_year": 1991,
+   "mrt_info": "9 min (720 m) from DT37 Sungei Bedok MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-bagnall-court-500132151",
+   "technical": {
+    "score_1000": 32,
+    "elo": -86,
+    "record": "0-315-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": null,
+    "ura_resale_only_pct_yr": null,
+    "ura_txn_count": 1,
+    "ura_median_psf": null,
+    "has_new_launch_bias": false
+   },
+   "agent_evaluation": {
+    "summary": null,
+    "rating": null,
+    "rating_rationale": null,
+    "red_flags": [],
+    "catalysts": [],
+    "confidence": null
+   }
+  },
+  {
+   "priority": 1726,
+   "bracket": "4BR+",
+   "bracket_rank": 414,
+   "project_name": "King's Mansion",
+   "district": "D15",
+   "beds": 4,
+   "price": 6000000,
+   "psf": 2194.59,
+   "sqft": 2734.0,
+   "tenure": "Freehold",
+   "built_year": 1980,
+   "mrt_info": "1 min (50 m) from TE25 Tanjong Katong MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-king-s-mansion-60133563",
+   "technical": {
+    "score_1000": 25,
+    "elo": 73,
+    "record": "8-410-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": null,
+    "ura_resale_only_pct_yr": 5.115816393905281,
+    "ura_txn_count": 21,
+    "ura_median_psf": 1989.0,
+    "has_new_launch_bias": false
+   },
+   "agent_evaluation": {
+    "summary": null,
+    "rating": null,
+    "rating_rationale": null,
+    "red_flags": [],
+    "catalysts": [],
+    "confidence": null
+   }
+  },
+  {
+   "priority": 1730,
+   "bracket": "4BR+",
+   "bracket_rank": 419,
+   "project_name": "The Sovereign",
+   "district": "D15",
+   "beds": 4,
+   "price": 10000000,
+   "psf": 3025.72,
+   "sqft": 3305.0,
+   "tenure": "Freehold",
+   "built_year": 1993,
+   "mrt_info": "6 min (480 m) from TE25 Tanjong Katong MRT Station",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sovereign-500039525",
+   "technical": {
+    "score_1000": 15,
+    "elo": -112,
+    "record": "2-416-0",
+    "on_frontier": false,
+    "ura_appreciation_pct_yr": 3.0990693707851014,
+    "ura_resale_only_pct_yr": 3.0990693707851014,
+    "ura_txn_count": 11,
+    "ura_median_psf": 2579.0,
+    "has_new_launch_bias": false
+   },
+   "agent_evaluation": {
+    "summary": null,
+    "rating": null,
+    "rating_rationale": null,
+    "red_flags": [],
+    "catalysts": [],
+    "confidence": null
+   }
+  }
+ ]
+}
