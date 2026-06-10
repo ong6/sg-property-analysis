@@ -88,7 +88,7 @@ def load_with_floor():
     """Like bt.load_txns but keeps Floor Level + parsed freehold (for the hedonic)."""
     out = []
     for p in sorted(glob.glob(bt.DATA_GLOB)):
-        with open(p) as fh:
+        with bt._open_csv(p) as fh:
             for row in csv.DictReader(fh):
                 t = bt._parse_date(row.get("Sale Date", ""))
                 psf = bt._num(row.get("Unit Price ($ PSF)"))
@@ -291,7 +291,7 @@ def part4_composite(rows, split_sample):
     print("PART 4 — COMPOSITE-SCORE VALIDATION  | does the ASSEMBLED score predict?")
     print("=" * 78)
     from config import (MMR_APPRECIATION_SLOPE, MMR_MOMENTUM_WEIGHT,
-                        MMR_RELVALUE_SLOPE)
+                        MMR_RELVALUE_SLOPE, MMR_TXN_VOLUME_WEIGHT)
     fwd = [r["forward_cagr"] for r in rows]
 
     # (a) current-weight MMR-like composite from as-of-T features.
@@ -307,7 +307,7 @@ def part4_composite(rows, split_sample):
         if r.get("psf_vs_dist") is not None:
             s += -MMR_RELVALUE_SLOPE * (r["psf_vs_dist"] * 100)
         if r.get("txn_vol") is not None:
-            s += 10.0 * math.tanh(r["txn_vol"] / 40.0)
+            s += MMR_TXN_VOLUME_WEIGHT * math.tanh(r["txn_vol"] / 40.0)
         cur.append(s)
     rho_cur, n_cur = bt._spearman(cur, fwd)
     print(f"\n  (a) CURRENT config weights  -> forward rho = "
@@ -333,6 +333,551 @@ def part4_composite(rows, split_sample):
     print("  a big gap = the composite is leaving signal on the table.\n")
 
 
+# ============================================================================
+# PART 5 — UN-TESTED LEVERS (district-level joins) + floor magnitude + age +
+#          joint out-of-split re-fit of every joinable MMR component proxy.
+# Added v3.5: validates `future` (govt zones / transformation / supply — the
+# production future score is EXACTLY these district-level parts for the
+# coordinate-less listings that dominate the DB), `buyer_pool`, the age curve,
+# and the stored floor_factors magnitude. `yield` and `dev_size` remain
+# UNTESTABLE here: no real per-project rental series exists in the repo
+# (district median_rental_psf / PSF is just inverse-PSF = region in disguise),
+# and total_units is absent from both the URA panel and 6348/6349 listings.
+# ============================================================================
+
+import json as _json
+import os as _os
+
+_DATA_DIR = _os.path.join(_os.path.dirname(__file__), "data")
+
+
+def _load_json(name):
+    with open(_os.path.join(_DATA_DIR, name)) as f:
+        return _json.load(f)
+
+
+def _district_future_signals(asof):
+    """Per-district, point-in-time future-potential sub-scores, mirroring
+    scoring/future_scorer.py for a coordinate-less listing (mrt part = 0):
+      zone (0-6, max score_points of zones containing the district),
+      transformation (0-4, counts of future MRT lines + govt zones),
+      supply (0-4 from the static label).
+    A line counts as 'future' at T if completion_year > T - 2 (the production
+    RECENT_OPERATIONAL_YEARS window, applied point-in-time)."""
+    infra = _load_json("future_infrastructure.json").get("mrt_lines", {})
+    zones = _load_json("government_zones.json").get("development_zones", {})
+    profiles = _load_json("district_profiles.json").get("districts", {})
+
+    def _line_is_future(code):
+        try:
+            cy = int(str(infra.get(code, {}).get("completion", ""))[:4])
+        except (ValueError, TypeError):
+            return True  # unknown completion -> keep (mirrors production)
+        return cy > asof - 2
+
+    out = {}
+    for dnum_s, prof in profiles.items():
+        dnum = int(dnum_s)
+        zone_pts = 0.0
+        nz = 0
+        for z in zones.values():
+            if dnum in z.get("districts", []):
+                nz += 1
+                zone_pts = max(zone_pts, float(z.get("score_points", 0)))
+        zone_pts = min(zone_pts, 6.0)
+        fut_lines = [c for c in prof.get("future_mrt", []) if _line_is_future(c)]
+        transf = (2 if len(fut_lines) >= 2 else (1 if len(fut_lines) == 1 else 0)) \
+            + (2 if nz >= 2 else (1 if nz == 1 else 0))
+        transf = min(transf, 4)
+        supply = {"very_high": 4, "high": 3, "medium": 2, "low": 1}.get(
+            prof.get("supply_constraint", "medium"), 2)
+        fp = zone_pts + transf + supply  # production future_potential (mrt=0)
+        out[dnum] = {
+            "future_potential": fp,
+            "future_mmr_comp": max(0.0, fp - 4.0) * 0.7,  # the actual MMR component
+            "buyer_pool": {"very_deep": 7.0, "deep": 4.5, "moderate": 1.5,
+                           "shallow": -3.0}.get(prof.get("buyer_pool_depth"), 0.0),
+        }
+    return out
+
+
+def _dnum(district):
+    try:
+        return int(str(district).replace("D", "").strip())
+    except ValueError:
+        return None
+
+
+def part5_levers(rows, txns, asof):
+    print("=" * 78)
+    print("PART 5 — UN-TESTED LEVERS  | district-level point-in-time joins")
+    print("  `future` here = the EXACT production future score for a coordinate-less")
+    print("  listing (zone+transformation+supply; mrt sub-score requires lat/lng the")
+    print("  listings DB does not have). buyer_pool = the MMR point values.")
+    print("=" * 78)
+    fwd = [r["forward_cagr"] for r in rows]
+
+    # join district signals (as-of the earliest split is fine: zone/supply static,
+    # line gating barely moves across the 0.5yr split spread)
+    sig = _district_future_signals(asof)
+    fut, fmc, bp = [], [], []
+    for r in rows:
+        s = sig.get(_dnum(r["district"]))
+        fut.append(s["future_potential"] if s else None)
+        fmc.append(s["future_mmr_comp"] if s else None)
+        bp.append(s["buyer_pool"] if s else None)
+
+    rho_f, n_f = bt._spearman(fut, fwd)
+    rho_b, n_b = bt._spearman(bp, fwd)
+    print(f"\n  univariate Spearman vs forward {2.0:.0f}yr return:")
+    print(f"    future_potential (0-14)   rho {rho_f:+.3f}  n={n_f}")
+    print(f"    buyer_pool pts (-3..7)    rho {rho_b:+.3f}  n={n_b}")
+
+    # within-region read (region is the dominant confounder at district level)
+    for reg in ("RCR", "OCR"):
+        sub = [i for i, r in enumerate(rows) if r["region"] == reg]
+        rho_fr, n_fr = bt._spearman([fut[i] for i in sub], [fwd[i] for i in sub])
+        rho_br, n_br = bt._spearman([bp[i] for i in sub], [fwd[i] for i in sub])
+        print(f"    within {reg}: future rho {f'{rho_fr:+.3f}' if rho_fr is not None else ' n/a'} (n={n_fr})"
+              f"   buyer_pool rho {f'{rho_br:+.3f}' if rho_br is not None else ' n/a'} (n={n_br})")
+
+    # multivariate: does future/buyer_pool survive region + value + liquidity?
+    feats = ["psf_vs_dist", "txn_vol", "freehold"]
+    good = [i for i, r in enumerate(rows)
+            if all(r.get(f) is not None for f in feats)
+            and fut[i] is not None and bp[i] is not None]
+    X = [[rows[i][f] for f in feats]
+         + [fut[i], bp[i],
+            1.0 if rows[i]["region"] == "RCR" else 0.0,
+            1.0 if rows[i]["region"] == "CCR" else 0.0]
+         for i in good]
+    names = feats + ["future_potential", "buyer_pool", "region_RCR", "region_CCR"]
+    coef, r2, n = _ols(X, [fwd[i] for i in good], names)
+    print(f"\n  multivariate (n={n}, R2={r2:.3f}) — std_beta (survives collinearity):")
+    for nm, c, sb in sorted(coef, key=lambda t: -abs(t[2])):
+        print(f"    {nm:<18}{sb:>+10.3f}")
+    print("  CAVEAT: 13 districts -> ~13 distinct future/buyer_pool values; treat as")
+    print("  a coarse screen, not a per-listing validation.\n")
+
+
+def part5_floor(asof, lookback=2.0):
+    """Within-project floor premium (project fixed effects) vs the stored
+    ura_cache floor_factors (which are all district-basis and ~1.4% low->high)."""
+    print("=" * 78)
+    print("PART 5b — FLOOR-FACTOR MAGNITUDE  | within-project (FE) vs stored cache")
+    print("=" * 78)
+    # load_with_floor drops project names, so read the CSVs keeping them
+    by_proj = defaultdict(list)
+    for pth in sorted(glob.glob(bt.DATA_GLOB)):
+        with bt._open_csv(pth) as fh:
+            for row in csv.DictReader(fh):
+                t = bt._parse_date(row.get("Sale Date", ""))
+                psf = bt._num(row.get("Unit Price ($ PSF)"))
+                if t is None or not psf:
+                    continue
+                if not (asof - lookback < t <= asof):
+                    continue
+                if row.get("Type of Sale", "").strip() not in ("Resale", "Sub Sale"):
+                    continue
+                ft = _floor_tier(row.get("Floor Level", ""))
+                if ft is None:
+                    continue
+                by_proj[row["Project Name"].strip().upper()].append((ft, math.log(psf)))
+    # project-demeaned regression of log psf on tier (= project FE)
+    xs, ys = [], []
+    used = 0
+    for proj, obs in by_proj.items():
+        tiers = {t for t, _ in obs}
+        if len(obs) < 6 or len(tiers) < 2:
+            continue
+        used += 1
+        mt = sum(t for t, _ in obs) / len(obs)
+        mp = sum(p for _, p in obs) / len(obs)
+        for t, p in obs:
+            xs.append(t - mt)
+            ys.append(p - mp)
+    if len(xs) > 200:
+        xs_a, ys_a = np.array(xs), np.array(ys)
+        beta = float((xs_a * ys_a).sum() / (xs_a * xs_a).sum())
+        print(f"\n  within-project premium: {(math.exp(beta)-1)*100:+.2f}%/tier "
+              f"(low->high {(math.exp(2*beta)-1)*100:+.2f}%)  "
+              f"[{used} projects, {len(xs):,} txns]")
+    # stored cache factors for comparison
+    cache = _load_json("ura_cache.json").get("projects", {})
+    spreads = [ff["high"] / ff["low"] - 1 for ff in
+               (p.get("floor_factors") or {} for p in cache.values())
+               if ff.get("high") and ff.get("low")]
+    bases = {}
+    for p in cache.values():
+        b = (p.get("floor_factors") or {}).get("basis")
+        if b:
+            bases[b] = bases.get(b, 0) + 1
+    if spreads:
+        print(f"  stored ura_cache factors: basis={bases}, median low->high spread "
+              f"{float(np.median(spreads))*100:+.2f}%  (compare to the FE estimate above)\n")
+
+
+def part5_age(rows, txns):
+    """Age-at-T vs forward return (tests the MMR age sweet-spot curve's sign)."""
+    print("=" * 78)
+    print("PART 5c — PROPERTY AGE vs FORWARD RETURN  | leasehold, age at split")
+    print("=" * 78)
+    commence = {}
+    for x in txns:
+        if x["project"] not in commence:
+            cy = _commence_year(x["tenure"])
+            if cy:
+                commence[x["project"]] = cy
+    ages, fwds = [], []
+    for r in rows:
+        cy = commence.get(r["project"])
+        if cy and r.get("forward_cagr") is not None:
+            # split year isn't carried on the row; ages from pooled splits differ
+            # by <=0.5yr, irrelevant at this resolution. Use the mid split.
+            age = 2024.0 - cy
+            if 0 <= age <= 60:
+                ages.append(age)
+                fwds.append(r["forward_cagr"])
+    rho, n = bt._spearman(ages, fwds)
+    print(f"\n  age_at_T vs forward: rho {rho:+.3f}  (n={n})")
+    # quintiles for shape (the MMR curve says 3-7yr is the sweet spot)
+    pairs = sorted(zip(ages, fwds))
+    q = 5
+    print("  age quintiles -> forward mean:")
+    for i in range(q):
+        chunk = pairs[i * len(pairs) // q:(i + 1) * len(pairs) // q]
+        a = [c[0] for c in chunk]
+        f = [c[1] for c in chunk]
+        print(f"    age [{min(a):4.1f},{max(a):4.1f}]  fwd mean {np.mean(f)*100:+.2f}%  n={len(chunk)}")
+    print()
+
+
+def _haversine_m(lat1, lon1, lat2, lon2):
+    r = 6371000.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dp = math.radians(lat2 - lat1)
+    dl = math.radians(lon2 - lon1)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def part5f_devsize_mrt(rows):
+    """dev_size (total dwelling units) and MRT distance vs forward returns.
+
+    Joins data/project_units.json (URA "No of Dwelling Units" GIS layer:
+    per-project unit totals + block-centroid WGS84 coords) and
+    data/mrt_stations.csv (operational network). Tests the two remaining
+    un-validated MMR components: dev_size (6·tanh((units-150)/300)) and
+    mrt (9·tanh((700-d)/600)). Coords are per-PROJECT (not per-listing) —
+    fine, since the panel rows are projects.
+    """
+    print("=" * 78)
+    print("PART 5f — DEV SIZE + MRT DISTANCE  | project_units.json + mrt_stations.csv")
+    print("=" * 78)
+    try:
+        pu = _load_json("project_units.json")["projects"]
+    except FileNotFoundError:
+        print("  data/project_units.json missing — run build_project_units.py first\n")
+        return
+    stations = []
+    with open(_os.path.join(_DATA_DIR, "mrt_stations.csv")) as fh:
+        for r in csv.DictReader(fh):
+            try:
+                stations.append((float(r["latitude"]), float(r["longitude"])))
+            except (KeyError, ValueError):
+                continue
+
+    joined = []
+    for r in rows:
+        e = pu.get(r["project"].lower())
+        if not e or e.get("landed_only"):
+            continue
+        d = min((_haversine_m(e["lat"], e["lng"], sl, so) for sl, so in stations),
+                default=None)
+        joined.append((r, e, d))
+
+    fwd = [r["forward_cagr"] for r, _, _ in joined]
+    units = [e["total_units"] for _, e, _ in joined]
+    mrt_d = [d for _, _, d in joined]
+    dev_comp = [6.0 * math.tanh((u - 150.0) / 300.0) for u in units]
+    mrt_comp = [9.0 * math.tanh((700.0 - d) / 600.0) if d is not None else None
+                for d in mrt_d]
+
+    print(f"\n  joined {len(joined)}/{len(rows)} panel rows to project_units")
+    for nm, x in (("total_units", units), ("dev_size MMR comp", dev_comp),
+                  ("mrt_distance_m", mrt_d), ("mrt MMR comp", mrt_comp)):
+        rho, n = bt._spearman(x, fwd)
+        print(f"    {nm:<20} rho {f'{rho:+.3f}' if rho is not None else '  n/a'}  (n={n})")
+
+    # multivariate with the usual controls (value, region, liquidity)
+    feats_rows, y = [], []
+    for (r, e, d) in joined:
+        if r.get("psf_vs_dist") is None or d is None:
+            continue
+        feats_rows.append([
+            r["psf_vs_dist"],
+            math.tanh((r.get("txn_vol") or 0) / 40.0),
+            math.log(max(50, e["total_units"])),
+            math.log(max(80.0, d)),
+            1.0 if r["region"] == "RCR" else 0.0,
+            1.0 if r["region"] == "CCR" else 0.0,
+        ])
+        y.append(r["forward_cagr"])
+    if len(feats_rows) >= 80:
+        names = ["psf_vs_dist", "txn_vol", "log_units", "log_mrt_dist",
+                 "region_RCR", "region_CCR"]
+        coef, r2, n = _ols(feats_rows, y, names)
+        print(f"\n  multivariate (n={n}, R2={r2:.3f}) — std_beta:")
+        for nm, c, sb in sorted(coef, key=lambda t: -abs(t[2])):
+            print(f"    {nm:<14}{sb:>+10.3f}")
+    print()
+
+
+def _load_rentals(glob_pat="ura_rental_D*_202301_202406.csv"):
+    """Load URA rental contracts (as-of slice). Returns rows with project,
+    district, t (float year), monthly_rent, sqft_mid, beds."""
+    out = []
+    for p in sorted(glob.glob(_os.path.join(_DATA_DIR, glob_pat))):
+        with bt._open_csv(p) as fh:
+            for r in csv.DictReader(fh):
+                t = bt._parse_date(r.get("Lease Commencement Date", ""))
+                rent = bt._num(r.get("Monthly Rent ($)"))
+                band = (r.get("Floor Area (SQFT)") or "").replace(",", "")
+                m = re.findall(r"\d+", band)
+                sqft_mid = (float(m[0]) + float(m[1])) / 2 if len(m) >= 2 else None
+                if t is None or not rent or not sqft_mid:
+                    continue
+                out.append({
+                    "project": (r.get("Project Name") or "").strip().upper(),
+                    "district": (r.get("Postal District") or "").strip(),
+                    "t": t,
+                    "rent": rent,
+                    "sqft_mid": sqft_mid,
+                    "rent_psf": rent / sqft_mid,
+                })
+    return out
+
+
+def part5g_yield(rows, split_hint=2024.0):
+    """REAL-rent gross yield (as-of-T) vs forward returns — the yield lever.
+
+    Numerator: per-project median rental PSF from actual URA rental contracts
+    commencing in (T-1, T] (data/ura_rental_D*_202301_202406.csv — the
+    point-in-time slice; the default 60-month export is capped at the 10k most
+    recent rows, so a dedicated historical fetch is required).
+    Denominator: the panel's as-of-T resale PSF level. This is the first test
+    of `yield` with real rents — the district-constant rent estimate used in
+    production is mechanically const/PSF (inverse price), which is why it was
+    never testable before."""
+    print("=" * 78)
+    print("PART 5g — REAL-RENT GROSS YIELD vs FORWARD RETURN  | URA rental contracts")
+    print("=" * 78)
+    rentals = _load_rentals()
+    if not rentals:
+        print("  no data/ura_rental_D*_202301_202406.csv files — run "
+              "fetch_ura_rentals.py --from 2023-01 --to 2024-06 first\n")
+        return
+    def _dkey(d):
+        return str(d).replace("D", "").lstrip("0")
+
+    by_proj = defaultdict(list)
+    for r in rentals:
+        if split_hint - 1 < r["t"] <= split_hint:
+            # key on (project, district) — name-only joins collide across districts
+            by_proj[(r["project"], _dkey(r["district"]))].append(r["rent_psf"])
+    rent_psf = {k: float(np.median(v)) for k, v in by_proj.items() if len(v) >= 3}
+    print(f"\n  {len(rentals):,} rental contracts loaded; "
+          f"{len(rent_psf):,} projects with >=3 contracts in ({split_hint-1}, {split_hint}]")
+
+    fwd, gy = [], []
+    matched = 0
+    for r in rows:
+        rp = rent_psf.get((r["project"], _dkey(r["district"])))
+        if rp is None or not r.get("psf_level"):
+            continue
+        matched += 1
+        fwd.append(r["forward_cagr"])
+        gy.append(12.0 * rp / r["psf_level"] * 100)  # gross yield %
+    rho, n = bt._spearman(gy, fwd)
+    print(f"  panel rows matched: {matched}")
+    if rho is None:
+        print("  too few matched rows\n")
+        return
+    print(f"  univariate: gross_yield vs forward rho {rho:+.3f}  (n={n})")
+
+    # multivariate: does yield survive value + region + liquidity?
+    feats_rows, y = [], []
+    for r in rows:
+        rp = rent_psf.get((r["project"], _dkey(r["district"])))
+        if rp is None or not r.get("psf_level") or r.get("psf_vs_dist") is None:
+            continue
+        feats_rows.append([
+            12.0 * rp / r["psf_level"] * 100,
+            r["psf_vs_dist"],
+            math.tanh((r.get("txn_vol") or 0) / 40.0),
+            1.0 if r["region"] == "RCR" else 0.0,
+            1.0 if r["region"] == "CCR" else 0.0,
+        ])
+        y.append(r["forward_cagr"])
+    if len(feats_rows) >= 80:
+        names = ["gross_yield", "psf_vs_dist", "txn_vol", "region_RCR", "region_CCR"]
+        coef, r2, n2 = _ols(feats_rows, y, names)
+        print(f"\n  multivariate (n={n2}, R2={r2:.3f}) — std_beta:")
+        for nm, c, sb in sorted(coef, key=lambda t: -abs(t[2])):
+            print(f"    {nm:<14}{sb:>+10.3f}")
+    print("  NOTE: yield numerator is real rents, denominator is the same as-of-T")
+    print("  price as the value features — a positive yield read that survives")
+    print("  psf_vs_dist is genuine rental-carry signal, not re-skinned cheapness.\n")
+
+
+def part5h_regime():
+    """Region tilt across PAST cycles — the single-regime caveat, addressed.
+
+    Uses URA's non-landed price index by locality (data.gov.sg
+    d_f65e490a8ad430f60a9a3d9df2bff2a0, quarterly 2004->now,
+    data/ppi_nonlanded_locality.csv). For every quarter with a 2yr forward
+    window, computes each region's forward 2yr return and groups by market
+    regime (mean of the three regions' forward returns): does the v3.4/v3.5
+    OCR>RCR>CCR forward tilt hold outside the 2021-26 bull run?"""
+    print("=" * 78)
+    print("PART 5h — REGION TILT ACROSS REGIMES  | URA price index 2004-now")
+    print("=" * 78)
+    path = _os.path.join(_DATA_DIR, "ppi_nonlanded_locality.csv")
+    if not _os.path.exists(path):
+        print("  data/ppi_nonlanded_locality.csv missing (data.gov.sg "
+              "d_f65e490a8ad430f60a9a3d9df2bff2a0)\n")
+        return
+    idx = defaultdict(dict)  # quarter_float -> region -> index
+    reg_map = {"Core Central Region": "CCR", "Rest of Central Region": "RCR",
+               "Outside Central Region": "OCR"}
+    with open(path) as fh:
+        for r in csv.DictReader(fh):
+            try:
+                y, q = r["quarter"].split("-Q")
+                t = int(y) + (int(q) - 0.5) / 4.0
+                idx[t][reg_map[r["market_segment"]]] = float(r["price_index"])
+            except (KeyError, ValueError):
+                continue
+    ts = sorted(idx)
+    rows = []
+    for t in ts:
+        t_fwd = t + 2.0
+        if t_fwd not in idx:
+            continue
+        if not all(g in idx[t] and g in idx[t_fwd] for g in ("CCR", "RCR", "OCR")):
+            continue
+        fwd = {g: (idx[t_fwd][g] / idx[t][g]) ** 0.5 - 1 for g in ("CCR", "RCR", "OCR")}
+        rows.append((t, fwd))
+    print(f"\n  {len(rows)} quarters with a 2yr forward window "
+          f"({ts[0]:.2f} -> {ts[-1]:.2f})")
+
+    buckets = {"down (mkt fwd < 0)": [], "flat (0..3%/yr)": [], "bull (>3%/yr)": []}
+    for t, fwd in rows:
+        mkt = sum(fwd.values()) / 3
+        key = ("down (mkt fwd < 0)" if mkt < 0
+               else "flat (0..3%/yr)" if mkt < 0.03 else "bull (>3%/yr)")
+        buckets[key].append(fwd)
+    print(f"\n  {'regime':<22}{'n':>4}{'CCR':>8}{'RCR':>8}{'OCR':>8}   OCR-CCR gap")
+    for k, v in buckets.items():
+        if not v:
+            continue
+        m = {g: float(np.mean([f[g] for f in v])) * 100 for g in ("CCR", "RCR", "OCR")}
+        print(f"  {k:<22}{len(v):>4}{m['CCR']:>+8.2f}{m['RCR']:>+8.2f}{m['OCR']:>+8.2f}"
+              f"   {m['OCR']-m['CCR']:+.2f} pp/yr")
+    # who wins quarter by quarter
+    wins = defaultdict(int)
+    for _, fwd in rows:
+        wins[max(fwd, key=fwd.get)] += 1
+    print(f"\n  quarter-by-quarter forward winner: {dict(wins)}")
+    print("  Read: if OCR's edge exists ONLY in the bull bucket, the regional")
+    print("  baselines' OCR tilt is regime-bound — keep it compressed.\n")
+
+
+def part5_joint_refit(txns, window, min_txn, split_sample, asof):
+    """Joint ridge re-fit of every joinable MMR-component proxy, with an
+    OUT-OF-SPLIT evaluation (fit on T=2023.75+2024.0, evaluate on T=2024.25).
+    This is the honest version of PART 4(b): no shared in-sample fit."""
+    print("=" * 78)
+    print("PART 5d — JOINT RIDGE RE-FIT (out-of-split)  | all joinable components")
+    print("=" * 78)
+    sig = _district_future_signals(asof)
+    commence = {}
+    for x in txns:
+        if x["project"] not in commence:
+            cy = _commence_year(x["tenure"])
+            if cy:
+                commence[x["project"]] = cy
+
+    def featurize(split):
+        rows = bt.build_panel(txns, split, window, min_txn, False, split_sample)
+        out = []
+        for r in rows:
+            r = dict(r)
+            r["region"] = _region_of(r["district"])
+            s = sig.get(_dnum(r["district"])) or {}
+            cy = commence.get(r["project"])
+            age = (split - cy) if cy else None
+            out.append({
+                "trailing_cagr": r.get("trailing_cagr"),
+                "momentum": r.get("momentum"),
+                "psf_vs_dist": r.get("psf_vs_dist"),
+                "txn_vol": math.tanh((r.get("txn_vol") or 0) / 40.0),
+                "new_sale_share": r.get("new_sale_share"),
+                "freehold": r.get("freehold"),
+                "log_psf": math.log(r["psf_level"]) if r.get("psf_level") else None,
+                "future_potential": s.get("future_potential"),
+                "buyer_pool": s.get("buyer_pool"),
+                "age": age if (age is None or 0 <= age <= 60) else None,
+                "region_RCR": 1.0 if r["region"] == "RCR" else 0.0,
+                "region_CCR": 1.0 if r["region"] == "CCR" else 0.0,
+                "forward_cagr": r["forward_cagr"],
+            })
+        return out
+
+    feats = ["trailing_cagr", "momentum", "psf_vs_dist", "txn_vol", "new_sale_share",
+             "freehold", "log_psf", "future_potential", "buyer_pool", "age",
+             "region_RCR", "region_CCR"]
+    train = featurize(2023.75) + featurize(2024.0)
+    test = featurize(2024.25)
+    tr = [r for r in train if all(r.get(f) is not None for f in feats)]
+    te = [r for r in test if all(r.get(f) is not None for f in feats)]
+    if len(tr) < 80 or len(te) < 40:
+        print(f"  too few complete rows (train {len(tr)}, test {len(te)})\n")
+        return
+    mu = {f: float(np.mean([r[f] for r in tr])) for f in feats}
+    sd = {f: float(np.std([r[f] for r in tr])) or 1.0 for f in feats}
+
+    def Z(rows_):
+        return np.array([[(r[f] - mu[f]) / sd[f] for f in feats] for r in rows_])
+
+    Ztr, ytr = Z(tr), np.array([r["forward_cagr"] for r in tr])
+    Zte, yte = Z(te), np.array([r["forward_cagr"] for r in te])
+    for lam in (1.0, 10.0):
+        A = Ztr.T @ Ztr + lam * np.eye(len(feats))
+        b = Ztr.T @ (ytr - ytr.mean())
+        w = np.linalg.solve(A, b)
+        rho_te, n_te = bt._spearman(list(Zte @ w), list(yte))
+        print(f"\n  ridge lam={lam:g}: out-of-split forward rho = {rho_te:+.3f} (n={n_te})")
+        for f, wi in sorted(zip(feats, w), key=lambda t: -abs(t[1])):
+            print(f"    {f:<18}{wi:>+9.5f}")
+    # current-config composite on the SAME test split, for an apples comparison
+    from config import (MMR_APPRECIATION_SLOPE, MMR_MOMENTUM_WEIGHT,
+                        MMR_RELVALUE_SLOPE, MMR_TXN_VOLUME_WEIGHT)
+    cur = []
+    for r in te:
+        s_ = 0.0
+        if r.get("trailing_cagr") is not None:
+            s_ += MMR_APPRECIATION_SLOPE * (r["trailing_cagr"] * 100 - 4.0)
+        if r.get("momentum") is not None:
+            s_ += MMR_MOMENTUM_WEIGHT * (r["momentum"] * 100)
+        if r.get("psf_vs_dist") is not None:
+            s_ += -MMR_RELVALUE_SLOPE * (r["psf_vs_dist"] * 100)
+        s_ += MMR_TXN_VOLUME_WEIGHT * r["txn_vol"]
+        cur.append(s_)
+    rho_cur, n_cur = bt._spearman(cur, list(yte))
+    print(f"\n  current-config composite on the same test split: rho {rho_cur:+.3f} (n={n_cur})\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split-sample", action="store_true")
@@ -356,6 +901,13 @@ def main():
     part2_univariate(rows)
     part3_multivariate(rows)
     part4_composite(rows, args.split_sample)
+    part5_levers(rows, txns, splits[0])
+    part5_floor(asof)
+    part5_age(rows, txns)
+    part5f_devsize_mrt(rows)
+    part5g_yield(rows)
+    part5h_regime()
+    part5_joint_refit(txns, args.window, args.min_txn, args.split_sample, splits[0])
 
 
 if __name__ == "__main__":

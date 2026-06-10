@@ -143,13 +143,15 @@ class CostCalculator:
         net yield. Owner-occupied rates are lower (kept simplified; investment focus).
         """
         if is_owner_occupied:
-            # Simplified owner-occupied rates
-            if annual_value <= 8_000:
+            # Simplified owner-occupied rates (IRAS 2025+: 0% band raised to
+            # $12k AV; schedule kept 2-tier — this path is unused by the
+            # investment flows, which always price non-owner-occupied tax)
+            if annual_value <= 12_000:
                 return 0
             elif annual_value <= 55_000:
-                return (annual_value - 8_000) * 0.04
+                return (annual_value - 12_000) * 0.04
             else:
-                return 1_880 + (annual_value - 55_000) * 0.06
+                return 1_720 + (annual_value - 55_000) * 0.06
 
         # Non-owner-occupied rates (IRAS 2024+; top 36%)
         tax = 0.0

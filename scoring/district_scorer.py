@@ -50,7 +50,7 @@ class DistrictScorer:
         """Median URA-measured appreciation per district, where coverage allows.
 
         The static profile `historical_appreciation` values are regional
-        baselines restated (every RCR district = 5.8%, every OCR = 3.7%), so
+        baselines restated (post-v3.4: every RCR district = 3.7%, OCR = 4.0%), so
         the 30% 'historical' axis was a disguised region prior that double-
         counted region. Where the URA cache and listings DB overlap on >=3
         projects, use measured per-district data instead.

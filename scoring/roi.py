@@ -11,10 +11,12 @@ try:
     from config import (
         ROI_SENSITIVITY_RENT_DELTA_PCT,
         ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
+        ROI_RENT_GROWTH_PER_YEAR,
     )
 except ImportError:
     ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
     ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
+    ROI_RENT_GROWTH_PER_YEAR = 0.02
 from scoring.models import ROIResult
 from scoring.rental_estimator import RentalEstimator
 
@@ -125,18 +127,26 @@ class ROICalculator:
             vacancy_months_per_year=vacancy_months_per_year,
         )
 
-        # Annual rental income (gross)
+        # Annual rental income (gross, year 1)
         annual_rent_gross = monthly_rent * 12
 
         # Annual holding costs
         annual_holding_costs = cost_breakdown.annual_holding
 
-        # Net annual rental income
+        # Net annual rental income (year 1)
         annual_rent_net = annual_rent_gross - annual_holding_costs
 
-        # Total rental income over holding period
-        total_rental_net = annual_rent_net * hold_years
+        # Total rental income over holding period.
+        # v3.5b: rent compounds at ROI_RENT_GROWTH_PER_YEAR (was held flat,
+        # which understated 5-7yr rental income by ~5-7%). Holding costs are
+        # kept flat — property tax does scale with rent, but it's a second-
+        # order effect at these magnitudes.
+        total_rent_gross = sum(
+            annual_rent_gross * (1 + ROI_RENT_GROWTH_PER_YEAR) ** y
+            for y in range(hold_years)
+        )
         total_holding_costs = annual_holding_costs * hold_years
+        total_rental_net = total_rent_gross - total_holding_costs
 
         # Exit costs
         exit_costs = self.cost_calc.calculate_exit_costs(exit_price, hold_years)

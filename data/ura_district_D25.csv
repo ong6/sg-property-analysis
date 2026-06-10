@@ -1,0 +1,904 @@
+Project Name,Transacted Price ($),Area (SQFT),Unit Price ($ PSF),Sale Date,Street Name,Type of Sale,Type of Area,Area (SQM),Unit Price ($ PSM),Nett Price($),Property Type,Number of Units,Tenure,Postal District,Market Segment,Floor Level
+WOODHAVEN,"1,847,970","1,173.28","1,575",May-26,WOODGROVE AVENUE,Resale,Strata,109,"16,954",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,280,000","1,119.46","1,143",May-26,ROSEWOOD DRIVE,Resale,Strata,104,"12,308",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,778,000","1,334.74","2,081",May-26,CHAMPIONS WAY,New Sale,Strata,124,"22,403",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,668,000","1,313.21","2,032",May-26,CHAMPIONS WAY,New Sale,Strata,122,"21,869",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,320,000","1,173.28","1,125",May-26,ROSEWOOD DRIVE,Resale,Strata,109,"12,110",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,752,000","1,334.74","2,062",May-26,CHAMPIONS WAY,New Sale,Strata,124,"22,194",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+CASABLANCA,"1,380,000","1,184.04","1,166",May-26,ROSEWOOD DRIVE,Resale,Strata,110,"12,545",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD,"1,280,000","1,173.28","1,091",May-26,ROSEWOOD DRIVE,Resale,Strata,109,"11,743",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+WOODHAVEN,"1,805,940","1,173.28","1,539",May-26,WOODGROVE AVENUE,Resale,Strata,109,"16,568",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"660,000",430.56,"1,533",May-26,ROSEWOOD DRIVE,Resale,Strata,40,"16,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,786,000","1,313.21","2,122",May-26,CHAMPIONS WAY,New Sale,Strata,122,"22,836",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"1,680,000","1,625.36","1,034",Apr-26,ROSEWOOD DRIVE,Resale,Strata,151,"11,126",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,712,000","1,334.74","2,032",Apr-26,CHAMPIONS WAY,New Sale,Strata,124,"21,871",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+CASABLANCA,"996,000",893.41,"1,115",Apr-26,ROSEWOOD DRIVE,Resale,Strata,83,"12,000",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"693,888",527.44,"1,316",Apr-26,ROSEWOOD DRIVE,Resale,Strata,49,"14,161",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,930,000","2,325.02",830,Apr-26,ROSEWOOD DRIVE,Resale,Strata,216,"8,935",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"658,000",430.56,"1,528",Apr-26,ROSEWOOD DRIVE,Resale,Strata,40,"16,450",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,645,000","1,765.3",932,Apr-26,ROSEWOOD DRIVE,Resale,Strata,164,"10,030",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,270,000","1,194.8","1,063",Apr-26,ROSEWOOD DRIVE,Resale,Strata,111,"11,441",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,600,000","1,474.67","1,085",Apr-26,ROSEWOOD DRIVE,Resale,Strata,137,"11,679",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"900,000",775.01,"1,161",Apr-26,ROSEWOOD DRIVE,Resale,Strata,72,"12,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"968,000","1,033.34",937,Apr-26,WOODGROVE DRIVE,Resale,Strata,96,"10,083",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+WOODHAVEN,"1,600,000","1,173.28","1,364",Mar-26,WOODGROVE AVENUE,Resale,Strata,109,"14,679",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",527.44,"1,289",Mar-26,ROSEWOOD DRIVE,Resale,Strata,49,"13,878",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,650,000","1,173.28","1,406",Mar-26,WOODGROVE AVENUE,Resale,Strata,109,"15,138",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,694,000","1,313.21","2,051",Mar-26,CHAMPIONS WAY,New Sale,Strata,122,"22,082",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+ROSEWOOD,"2,420,000","2,744.82",882,Mar-26,ROSEWOOD DRIVE,Resale,Strata,255,"9,490",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+CASABLANCA,"1,288,888","1,119.46","1,151",Mar-26,ROSEWOOD DRIVE,Resale,Strata,104,"12,393",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,760,000","1,313.21","2,102",Mar-26,CHAMPIONS WAY,New Sale,Strata,122,"22,623",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+CASABLANCA,"1,280,000","1,119.46","1,143",Mar-26,ROSEWOOD DRIVE,Resale,Strata,104,"12,308",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"668,000",505.91,"1,320",Mar-26,ROSEWOOD DRIVE,Resale,Strata,47,"14,213",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"655,000",505.91,"1,295",Mar-26,ROSEWOOD DRIVE,Resale,Strata,47,"13,936",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,180,000","1,184.04",997,Feb-26,WOODGROVE DRIVE,Resale,Strata,110,"10,727",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,650,000","1,173.28","1,406",Feb-26,WOODGROVE AVENUE,Resale,Strata,109,"15,138",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"640,000",430.56,"1,486",Feb-26,ROSEWOOD DRIVE,Resale,Strata,40,"16,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,608,888","1,851.41",869,Feb-26,ROSEWOOD DRIVE,Resale,Strata,172,"9,354",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,280,000","1,108.69","1,155",Feb-26,ROSEWOOD DRIVE,Resale,Strata,103,"12,427",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+WOODGROVE CONDOMINIUM,"2,138,000","2,034.4","1,051",Feb-26,WOODGROVE DRIVE,Resale,Strata,189,"11,312",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,786,000","1,313.21","2,122",Feb-26,CHAMPIONS WAY,New Sale,Strata,122,"22,836",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+WOODHAVEN,"1,100,000",850.36,"1,294",Feb-26,WOODGROVE AVENUE,Resale,Strata,79,"13,924",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",Feb-26,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,220,000","1,162.51","1,049",Jan-26,ROSEWOOD DRIVE,Resale,Strata,108,"11,296",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"850,000",645.84,"1,316",Jan-26,WOODGROVE AVENUE,Resale,Strata,60,"14,167",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,208,888","1,205.57","1,003",Jan-26,WOODGROVE DRIVE,Resale,Strata,112,"10,794",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,920,000","2,249.68",853,Jan-26,ROSEWOOD DRIVE,Resale,Strata,209,"9,187",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,378,000","1,184.04","1,164",Jan-26,ROSEWOOD DRIVE,Resale,Strata,110,"12,527",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+THE WOODGROVE,"825,000",871.88,946,Dec-25,WOODGROVE DRIVE,Resale,Strata,81,"10,185",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,180,000","1,334.74",884,Dec-25,ROSEWOOD DRIVE,Resale,Strata,124,"9,516",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,585,000","1,517.72","1,044",Dec-25,WOODGROVE DRIVE,Resale,Strata,141,"11,241",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"838,000",602.78,"1,390",Dec-25,ROSEWOOD DRIVE,Resale,Strata,56,"14,964",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,550,000","1,173.28","1,321",Dec-25,WOODGROVE AVENUE,Resale,Strata,109,"14,220",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"865,000",602.78,"1,435",Nov-25,ROSEWOOD DRIVE,Resale,Strata,56,"15,446",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"820,000",581.26,"1,411",Nov-25,ROSEWOOD DRIVE,Resale,Strata,54,"15,185",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,350,000","1,173.28","1,151",Nov-25,ROSEWOOD DRIVE,Resale,Strata,109,"12,385",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"690,000",516.67,"1,335",Nov-25,ROSEWOOD DRIVE,Resale,Strata,48,"14,375",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,681,000","1,313.21","2,042",Nov-25,CHAMPIONS WAY,New Sale,Strata,122,"21,975",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+WOODHAVEN,"808,888",592.02,"1,366",Nov-25,WOODGROVE AVENUE,Resale,Strata,55,"14,707",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,773,000","1,313.21","2,112",Nov-25,CHAMPIONS WAY,New Sale,Strata,122,"22,730",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,725,000","1,334.74","2,042",Nov-25,CHAMPIONS WAY,New Sale,Strata,124,"21,976",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+ROSEWOOD,"1,278,000","1,173.28","1,089",Oct-25,ROSEWOOD DRIVE,Resale,Strata,109,"11,725",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"680,000",430.56,"1,579",Oct-25,ROSEWOOD DRIVE,Resale,Strata,40,"17,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,586,000","1,539.25","1,030",Oct-25,ROSEWOOD DRIVE,Resale,Strata,143,"11,091",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"893,000",742.72,"1,202",Oct-25,ROSEWOOD DRIVE,Resale,Strata,69,"12,942",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,060,000","1,011.82","1,048",Oct-25,ROSEWOOD DRIVE,Resale,Strata,94,"11,277",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"665,000",505.91,"1,314",Oct-25,ROSEWOOD DRIVE,Resale,Strata,47,"14,149",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"685,000",430.56,"1,591",Oct-25,ROSEWOOD DRIVE,Resale,Strata,40,"17,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",Oct-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,130,000","1,259.39",897,Oct-25,ROSEWOOD DRIVE,Resale,Strata,117,"9,658",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,276,888","1,184.04","1,078",Oct-25,ROSEWOOD DRIVE,Resale,Strata,110,"11,608",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"930,000",753.48,"1,234",Oct-25,ROSEWOOD DRIVE,Resale,Strata,70,"13,286",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"900,000",893.41,"1,007",Oct-25,WOODGROVE DRIVE,Resale,Strata,83,"10,843",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,707,000","1,313.21","2,061",Oct-25,CHAMPIONS WAY,New Sale,Strata,122,"22,189",-,Apartment,1,99 years leasehold,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,773,000","1,313.21","2,112",Oct-25,CHAMPIONS WAY,New Sale,Strata,122,"22,730",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+CASABLANCA,"1,040,000",936.47,"1,111",Oct-25,ROSEWOOD DRIVE,Resale,Strata,87,"11,954",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+ROSEWOOD,"1,568,888","1,625.36",965,Oct-25,ROSEWOOD DRIVE,Resale,Strata,151,"10,390",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+CASABLANCA,"1,280,000","1,194.8","1,071",Oct-25,ROSEWOOD DRIVE,Resale,Strata,111,"11,532",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"900,000",742.72,"1,212",Oct-25,ROSEWOOD DRIVE,Resale,Strata,69,"13,043",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,070,000",968.76,"1,105",Sep-25,ROSEWOOD DRIVE,Resale,Strata,90,"11,889",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,270,000","1,173.28","1,082",Sep-25,ROSEWOOD DRIVE,Resale,Strata,109,"11,651",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+WOODHAVEN,"988,000",731.95,"1,350",Sep-25,WOODGROVE AVENUE,Resale,Strata,68,"14,529",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,070,000",990.29,"1,080",Sep-25,ROSEWOOD DRIVE,Resale,Strata,92,"11,630",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,000",505.91,"1,324",Sep-25,ROSEWOOD DRIVE,Resale,Strata,47,"14,255",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,161,000","1,184.04",981,Sep-25,WOODGROVE DRIVE,Resale,Strata,110,"10,555",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+THE WOODGROVE,"860,000",828.83,"1,038",Sep-25,WOODGROVE DRIVE,Resale,Strata,77,"11,169",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+CASABLANCA,"1,331,000","1,194.8","1,114",Sep-25,ROSEWOOD DRIVE,Resale,Strata,111,"11,991",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+CASABLANCA,"1,241,000","1,119.46","1,109",Sep-25,ROSEWOOD DRIVE,Resale,Strata,104,"11,933",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+CASABLANCA,"1,303,000","1,184.04","1,100",Sep-25,ROSEWOOD DRIVE,Resale,Strata,110,"11,845",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+THE WOODGROVE,"900,555",893.41,"1,008",Aug-25,WOODGROVE DRIVE,Resale,Strata,83,"10,850",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,739,000","1,334.74","2,052",Aug-25,CHAMPIONS WAY,New Sale,Strata,124,"22,089",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+THE WOODGROVE,"862,888",871.88,990,Aug-25,WOODGROVE DRIVE,Resale,Strata,81,"10,653",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,756,000","1,313.21","2,099",Aug-25,CHAMPIONS WAY,New Sale,Strata,122,"22,590",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"845,000",602.78,"1,402",Aug-25,ROSEWOOD DRIVE,Resale,Strata,56,"15,089",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"663,000",430.56,"1,540",Aug-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,575",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,059,000",947.23,"1,118",Aug-25,ROSEWOOD DRIVE,Resale,Strata,88,"12,034",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,752,000","1,334.74","2,062",Aug-25,CHAMPIONS WAY,New Sale,Strata,124,"22,194",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"805,000",656.6,"1,226",Jul-25,ROSEWOOD DRIVE,Resale,Strata,61,"13,197",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+THE WOODGROVE,"843,000",871.88,967,Jul-25,WOODGROVE DRIVE,Resale,Strata,81,"10,407",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"665,000",430.56,"1,545",Jul-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,671,000","1,313.21","2,034",Jul-25,CHAMPIONS WAY,New Sale,Strata,122,"21,893",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,658,000","1,313.21","2,024",Jul-25,CHAMPIONS WAY,New Sale,Strata,122,"21,787",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"815,000",581.26,"1,402",Jul-25,ROSEWOOD DRIVE,Resale,Strata,54,"15,093",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",Jul-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",Jun-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"988,000",731.95,"1,350",Jun-25,WOODGROVE AVENUE,Resale,Strata,68,"14,529",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"675,000",430.56,"1,568",Jun-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,150,000","1,323.97",869,Jun-25,ROSEWOOD DRIVE,Resale,Strata,123,"9,350",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"668,000",430.56,"1,551",Jun-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,700",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,928,000","2,152.8",896,Jun-25,ROSEWOOD DRIVE,Resale,Strata,200,"9,640",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+ROSEWOOD SUITES,"1,108,000","1,065.64","1,040",Jun-25,ROSEWOOD DRIVE,Resale,Strata,99,"11,192",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"1,380,000","1,184.04","1,166",Jun-25,ROSEWOOD DRIVE,Resale,Strata,110,"12,545",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,720,000","1,313.21","2,071",Jun-25,CHAMPIONS WAY,New Sale,Strata,122,"22,295",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+WOODGROVE CONDOMINIUM,"1,240,000","1,237.86","1,002",May-25,WOODGROVE DRIVE,Resale,Strata,115,"10,783",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,630,000","1,614.6","1,010",May-25,WOODGROVE DRIVE,Resale,Strata,150,"10,867",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,520,000","1,119.46","1,358",May-25,WOODGROVE AVENUE,Resale,Strata,104,"14,615",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"630,000",430.56,"1,463",May-25,ROSEWOOD DRIVE,Resale,Strata,40,"15,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,320,000","1,194.8","1,105",May-25,ROSEWOOD DRIVE,Resale,Strata,111,"11,892",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,400,000","1,270.15","1,102",May-25,ROSEWOOD DRIVE,Resale,Strata,118,"11,864",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",May-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"938,000",699.66,"1,341",Apr-25,WOODGROVE AVENUE,Resale,Strata,65,"14,431",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,488,000","1,550.02",960,Apr-25,ROSEWOOD DRIVE,Resale,Strata,144,"10,333",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"668,000",505.91,"1,320",Apr-25,ROSEWOOD DRIVE,Resale,Strata,47,"14,213",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,085,000","1,011.82","1,072",Apr-25,ROSEWOOD DRIVE,Resale,Strata,94,"11,543",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+CASABLANCA,"1,288,000","1,184.04","1,088",Apr-25,ROSEWOOD DRIVE,Resale,Strata,110,"11,709",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,585,000","1,765.3",898,Apr-25,ROSEWOOD DRIVE,Resale,Strata,164,"9,665",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"810,000",602.78,"1,344",Apr-25,ROSEWOOD DRIVE,Resale,Strata,56,"14,464",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,010,000",893.41,"1,130",Apr-25,ROSEWOOD DRIVE,Resale,Strata,83,"12,169",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"668,888",430.56,"1,554",Apr-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,722",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"700,000",505.91,"1,384",Apr-25,ROSEWOOD DRIVE,Resale,Strata,47,"14,894",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"840,000",602.78,"1,394",Apr-25,ROSEWOOD DRIVE,Resale,Strata,56,"15,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"870,000",925.7,940,Apr-25,ROSEWOOD DRIVE,Resale,Strata,86,"10,116",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"870,000",807.3,"1,078",Apr-25,ROSEWOOD DRIVE,Resale,Strata,75,"11,600",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,086,000",850.36,"1,277",Mar-25,WOODGROVE AVENUE,Resale,Strata,79,"13,747",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"690,000",430.56,"1,603",Mar-25,ROSEWOOD DRIVE,Resale,Strata,40,"17,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,270,000","1,173.28","1,082",Mar-25,ROSEWOOD DRIVE,Resale,Strata,109,"11,651",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"830,000",581.26,"1,428",Mar-25,ROSEWOOD DRIVE,Resale,Strata,54,"15,370",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"668,000",505.91,"1,320",Mar-25,ROSEWOOD DRIVE,Resale,Strata,47,"14,213",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"950,000","1,033.34",919,Mar-25,WOODGROVE DRIVE,Resale,Strata,96,"9,896",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,000",430.56,"1,556",Feb-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,707,000","1,313.21","2,061",Feb-25,CHAMPIONS WAY,New Sale,Strata,122,"22,189",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"652,000",430.56,"1,514",Feb-25,ROSEWOOD DRIVE,Resale,Strata,40,"16,300",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,088,000","1,259.39",864,Feb-25,ROSEWOOD DRIVE,Resale,Strata,117,"9,299",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",516.67,"1,316",Feb-25,ROSEWOOD DRIVE,Resale,Strata,48,"14,167",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,880,000","1,894.46",992,Feb-25,ROSEWOOD DRIVE,Resale,Strata,176,"10,682",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"825,000",602.78,"1,369",Feb-25,ROSEWOOD DRIVE,Resale,Strata,56,"14,732",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,171,000","1,184.04",989,Feb-25,WOODGROVE DRIVE,Resale,Strata,110,"10,645",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,580,000","1,614.6",979,Jan-25,WOODGROVE DRIVE,Resale,Strata,150,"10,533",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"1,320,000","1,184.04","1,115",Jan-25,ROSEWOOD DRIVE,Resale,Strata,110,"12,000",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"1,160,000",968.76,"1,197",Jan-25,ROSEWOOD DRIVE,Resale,Strata,90,"12,889",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,950,000","1,980.58",985,Jan-25,WOODGROVE DRIVE,Resale,Strata,184,"10,598",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"1,035,000",925.7,"1,118",Dec-24,ROSEWOOD DRIVE,Resale,Strata,86,"12,035",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"640,800",430.56,"1,488",Dec-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,020",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"665,000",430.56,"1,545",Dec-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,200,000","1,184.04","1,013",Dec-24,WOODGROVE DRIVE,Resale,Strata,110,"10,909",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODHAVEN,"890,000",699.66,"1,272",Dec-24,WOODGROVE AVENUE,Resale,Strata,65,"13,692",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,240,000","1,130.22","1,097",Dec-24,ROSEWOOD DRIVE,Resale,Strata,105,"11,810",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"780,000",581.26,"1,342",Dec-24,ROSEWOOD DRIVE,Resale,Strata,54,"14,444",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,060,000",990.29,"1,070",Dec-24,ROSEWOOD DRIVE,Resale,Strata,92,"11,522",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,142,000","1,044.11","2,052",Dec-24,CHAMPIONS WAY,New Sale,Strata,97,"22,082",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"640,000",430.56,"1,486",Nov-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,331,000","1,173.28","1,987",Nov-24,CHAMPIONS WAY,New Sale,Strata,109,"21,385",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+CASABLANCA,"980,000",925.7,"1,059",Nov-24,ROSEWOOD DRIVE,Resale,Strata,86,"11,395",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+CASABLANCA,"1,200,000","1,130.22","1,062",Nov-24,ROSEWOOD DRIVE,Resale,Strata,105,"11,429",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODHAVEN,"785,000",624.31,"1,257",Nov-24,WOODGROVE AVENUE,Resale,Strata,58,"13,534",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,150,000","1,130.22","1,018",Nov-24,ROSEWOOD DRIVE,Resale,Strata,105,"10,952",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"690,000",430.56,"1,603",Nov-24,ROSEWOOD DRIVE,Resale,Strata,40,"17,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,650,000","1,603.84","1,029",Nov-24,WOODGROVE DRIVE,Resale,Strata,149,"11,074",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,090,000","1,011.82","1,077",Nov-24,ROSEWOOD DRIVE,Resale,Strata,94,"11,596",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"1,140,000",968.76,"1,177",Oct-24,ROSEWOOD DRIVE,Resale,Strata,90,"12,667",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"980,000",893.41,"1,097",Oct-24,ROSEWOOD DRIVE,Resale,Strata,83,"11,807",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,657,000","1,313.21","2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,779",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+CASABLANCA,"1,358,000","1,184.04","1,147",Oct-24,ROSEWOOD DRIVE,Resale,Strata,110,"12,345",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+ROSEWOOD,"1,480,888","1,550.02",955,Oct-24,ROSEWOOD DRIVE,Resale,Strata,144,"10,284",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"660,000",430.56,"1,533",Oct-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,300,000","1,625.36",800,Oct-24,WOODGROVE DRIVE,Resale,Strata,151,"8,609",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,342,000",624.31,"2,150",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,796,000",882.65,"2,035",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"21,902",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,330,000","1,173.28","1,986",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,376",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,079,000",495.14,"2,179",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,457",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,283,000",624.31,"2,055",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,121",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,057,000","1,044.11","1,970",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,206",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,057,000","1,044.11","1,970",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,206",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,321,000",624.31,"2,116",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,776",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,747,000",871.88,"2,004",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,568",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,283,000",624.31,"2,055",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,121",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,291,000",624.31,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,259",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,068,000","1,044.11","1,981",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,320",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,068,000","1,044.11","1,981",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,320",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,052,000",495.14,"2,125",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,870",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,329,000",624.31,"2,129",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,914",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,756,000",871.88,"2,014",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,679",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,291,000",624.31,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,259",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,299,000",624.31,"2,081",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,397",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,079,000","1,044.11","1,991",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,433",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,337,000",624.31,"2,142",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,052",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,765,000",871.88,"2,024",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,790",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,299,000",624.31,"2,081",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,397",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,307,000",624.31,"2,094",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,534",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,090,000","1,044.11","2,002",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,546",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,090,000","1,044.11","2,002",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,546",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,066,000",495.14,"2,153",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,174",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,774,000",871.88,"2,035",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,901",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,307,000",624.31,"2,094",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,534",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,073,000",495.14,"2,167",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,326",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,788,000",871.88,"2,051",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,074",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,315,000",624.31,"2,106",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,672",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,323,000",624.31,"2,119",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,810",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,112,000","1,044.11","2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,773",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,112,000","1,044.11","2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,773",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,080,000",495.14,"2,181",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,478",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,361,000",624.31,"2,180",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,466",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,797,000",871.88,"2,061",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,185",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,323,000",624.31,"2,119",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,810",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,339,000",624.31,"2,145",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,086",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,133,000","1,044.11","2,043",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,990",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,123,000","1,044.11","2,033",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,887",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,087,000",495.14,"2,195",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,630",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,369,000",624.31,"2,193",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,603",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,811,000",871.88,"2,077",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,358",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,339,000",624.31,"2,145",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,086",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,347,000",624.31,"2,158",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,224",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,134,000","1,044.11","2,044",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,000",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,094,000",495.14,"2,209",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,783",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,681,000","1,313.21","2,042",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,975",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,828,000",871.88,"2,097",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,568",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,347,000",624.31,"2,158",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,224",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,145,000","1,044.11","2,054",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,113",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,837,000",871.88,"2,107",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,679",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,166,000","1,044.11","2,074",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,330",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,156,000","1,044.11","2,065",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,227",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,108,000",495.14,"2,238",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"24,087",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,384,000",624.31,"2,217",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,862",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,177,000","1,044.11","2,085",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,443",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,167,000","1,044.11","2,075",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,340",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,115,000",495.14,"2,252",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"24,239",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,855,000",871.88,"2,128",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,901",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,384,000",624.31,"2,217",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,862",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,469,000",710.42,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,258",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,698,000",882.65,"1,924",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"20,707",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"988,000",495.14,"1,995",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"21,478",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,238,000",624.31,"1,983",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,345",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,238,000","1,173.28","1,907",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"20,532",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,628,000","1,313.21","2,001",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,541",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,490,000",710.42,"2,097",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,576",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,477,000",710.42,"2,079",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,379",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,488,000","1,313.21","1,895",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"20,393",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"997,000",495.14,"2,014",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"21,674",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,255,000",624.31,"2,010",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,638",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,498,000",710.42,"2,109",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,697",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,485,000",710.42,"2,090",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,500",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,527,000","1,313.21","1,924",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"20,713",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,769,000",882.65,"2,004",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"21,573",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,006,000",495.14,"2,032",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"21,870",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,265,000",624.31,"2,026",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,810",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,286,000","1,173.28","1,948",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"20,972",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,654,000","1,313.21","2,021",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,754",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,506,000",710.42,"2,120",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,818",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,493,000",710.42,"2,102",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,621",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,553,000","1,313.21","1,944",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"20,926",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,015,000",495.14,"2,050",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,065",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,311,000","1,173.28","1,970",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,202",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,514,000",710.42,"2,131",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,939",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,579,000","1,313.21","1,964",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,139",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,024,000",495.14,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,261",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,522,000",710.42,"2,142",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,061",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,509,000",710.42,"2,124",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,864",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,592,000","1,313.21","1,974",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,246",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,826,000",882.65,"2,069",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,268",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,033,000",495.14,"2,086",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,457",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,318,000",624.31,"2,111",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,724",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,530,000",710.42,"2,154",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,182",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,517,000",710.42,"2,135",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,985",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,605,000","1,313.21","1,984",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,352",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,837,000",882.65,"2,081",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,402",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,042,000",495.14,"2,104",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,652",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,326,000",624.31,"2,124",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,862",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,361,000","1,173.28","2,012",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,661",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,706,000","1,313.21","2,061",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"22,180",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,538,000",710.42,"2,165",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,303",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,525,000",710.42,"2,147",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,106",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,618,000","1,313.21","1,994",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,459",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,848,000",882.65,"2,094",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,537",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,051,000",495.14,"2,123",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,848",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,374,000","1,173.28","2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,780",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,719,000","1,313.21","2,071",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"22,287",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,546,000",710.42,"2,176",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,424",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,533,000",710.42,"2,158",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,227",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,060,000",495.14,"2,141",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,043",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,387,000","1,173.28","2,034",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,899",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,554,000",710.42,"2,187",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,545",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,541,000",710.42,"2,169",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,348",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,069,000",495.14,"2,159",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,239",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,400,000","1,173.28","2,046",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"22,018",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,562,000",710.42,"2,199",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,667",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,549,000",710.42,"2,180",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,470",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,078,000",495.14,"2,177",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,435",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,413,000","1,173.28","2,057",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"22,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,570,000",710.42,"2,210",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,788",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,483,000",710.42,"2,087",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,470",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,283,000","1,173.28","1,946",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"20,945",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,271,000",624.31,"2,036",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,914",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,338,000",667.37,"2,005",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"21,581",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,845,000",904.18,"2,041",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,964",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,491,000",710.42,"2,099",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,591",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,296,000","1,173.28","1,957",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,064",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,279,000",624.31,"2,049",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,052",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,022,000",495.14,"2,064",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,217",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,348,000",667.37,"2,020",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"21,742",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,855,000",904.18,"2,052",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,083",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,499,000",710.42,"2,110",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,712",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,309,000","1,173.28","1,968",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,183",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,287,000",624.31,"2,061",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,190",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,029,000",495.14,"2,078",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,370",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,356,000",667.37,"2,032",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"21,871",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,646,000","1,334.74","1,982",Oct-24,CHAMPIONS WAY,New Sale,Strata,124,"21,339",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,865,000",904.18,"2,063",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,202",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,507,000",710.42,"2,121",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,833",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,667,000","1,313.21","2,031",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"21,861",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,322,000","1,173.28","1,979",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,303",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,295,000",624.31,"2,074",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,328",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,364,000",667.37,"2,044",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,000",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,875,000",904.18,"2,074",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,321",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,515,000",710.42,"2,133",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,955",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,043,000",495.14,"2,106",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,674",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,372,000",667.37,"2,056",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,129",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,885,000",904.18,"2,085",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,440",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,523,000",710.42,"2,144",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,076",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,693,000","1,313.21","2,051",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"22,074",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,348,000","1,173.28","2,001",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,541",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,311,000",624.31,"2,100",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,603",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,050,000",495.14,"2,121",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,826",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,380,000",667.37,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,258",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,531,000",710.42,"2,155",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,197",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,706,000","1,313.21","2,061",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"22,180",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,361,000","1,173.28","2,012",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,661",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,388,000",667.37,"2,080",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,387",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,905,000",904.18,"2,107",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,679",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,539,000",710.42,"2,166",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,318",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,719,000","1,313.21","2,071",Oct-24,CHAMPIONS WAY,New Sale,Strata,122,"22,287",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,374,000","1,173.28","2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,780",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,327,000",624.31,"2,126",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,879",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,064,000",495.14,"2,149",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,130",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,396,000",667.37,"2,092",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,516",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,915,000",904.18,"2,118",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,798",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,387,000","1,173.28","2,034",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,899",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,335,000",624.31,"2,138",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,017",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,071,000",495.14,"2,163",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,283",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,404,000",667.37,"2,104",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,645",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,555,000",710.42,"2,189",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,561",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,400,000","1,173.28","2,046",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"22,018",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,343,000",624.31,"2,151",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,155",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,078,000",495.14,"2,177",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,435",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,412,000",667.37,"2,116",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,774",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,935,000",904.18,"2,140",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"23,036",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,563,000",710.42,"2,200",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,682",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,413,000","1,173.28","2,057",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"22,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,351,000",624.31,"2,164",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,293",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,085,000",495.14,"2,191",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,587",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,420,000",667.37,"2,128",Oct-24,CHAMPIONS WAY,New Sale,Strata,62,"22,903",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,945,000",904.18,"2,151",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"23,155",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,283,000",624.31,"2,055",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,121",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,764,000",871.88,"2,023",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,778",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,798,000",904.18,"1,989",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,405",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,620,000","1,334.74","1,963",Oct-24,CHAMPIONS WAY,New Sale,Strata,124,"21,129",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,998,000","1,044.11","1,914",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"20,598",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,276,000",624.31,"2,044",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,000",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,291,000",624.31,"2,068",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,259",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,428,000",710.42,"2,010",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"21,636",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,817,000",904.18,"2,010",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,631",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,014,000","1,044.11","1,929",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"20,763",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,284,000",624.31,"2,057",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,299,000",624.31,"2,081",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,397",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,782,000",871.88,"2,044",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,000",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,452,000",710.42,"2,044",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,000",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,827,000",904.18,"2,021",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,750",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,030,000","1,044.11","1,944",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"20,928",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,292,000",624.31,"2,069",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,276",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,307,000",624.31,"2,094",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,534",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,791,000",871.88,"2,054",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,111",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,465,000",710.42,"2,062",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,197",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,046,000","1,044.11","1,960",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,093",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,300,000",624.31,"2,082",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,414",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,315,000",624.31,"2,106",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,672",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,806,000",871.88,"2,071",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,296",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,473,000",710.42,"2,073",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,318",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,847,000",904.18,"2,043",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,988",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,672,000","1,334.74","2,002",Oct-24,CHAMPIONS WAY,New Sale,Strata,124,"21,548",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,308,000",624.31,"2,095",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,552",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,323,000",624.31,"2,119",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,810",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,857,000",904.18,"2,054",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,107",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,078,000","1,044.11","1,990",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,423",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,316,000",624.31,"2,108",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,690",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,339,000",624.31,"2,145",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,086",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,489,000",710.42,"2,096",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,561",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,867,000",904.18,"2,065",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,226",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,099,000","1,044.11","2,010",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,639",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,347,000",624.31,"2,158",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,224",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,497,000",710.42,"2,107",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,682",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,877,000",904.18,"2,076",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,345",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,340,000",624.31,"2,146",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,103",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,505,000",710.42,"2,118",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,803",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,887,000",904.18,"2,087",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,464",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,131,000","1,044.11","2,041",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,969",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,513,000",710.42,"2,130",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,924",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,897,000",904.18,"2,098",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,583",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,371,000",624.31,"2,196",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,638",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,521,000",710.42,"2,141",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,045",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,907,000",904.18,"2,109",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,702",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"2,163,000","1,044.11","2,072",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,299",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,364,000",624.31,"2,185",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,517",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,052,000",495.14,"2,125",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,870",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,327,000",624.31,"2,126",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,879",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,090,000","1,044.11","2,002",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,546",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,101,000","1,044.11","2,012",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,660",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,335,000",624.31,"2,138",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,017",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,127,000","1,044.11","2,037",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,928",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,352,000",624.31,"2,166",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,310",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,342,000",624.31,"2,150",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,145,000","1,044.11","2,054",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,113",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,088,000",495.14,"2,197",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"23,652",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,367,000",624.31,"2,190",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,569",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,342,000",624.31,"2,150",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,138",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,353,000",624.31,"2,167",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,328",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,375,000",624.31,"2,202",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,707",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,827,000",871.88,"2,095",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,556",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,353,000",624.31,"2,167",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,328",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,383,000",624.31,"2,215",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,845",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,777,000",882.65,"2,013",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"21,671",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,268,000",624.31,"2,031",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,862",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,494,000",710.42,"2,103",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,636",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,792,000",882.65,"2,030",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"21,854",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,274,000",624.31,"2,041",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"21,966",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,348,000","1,173.28","2,001",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,541",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,308,000",624.31,"2,095",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,552",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,840,000",882.65,"2,085",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,439",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,318,000",624.31,"2,111",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,724",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,851,000",882.65,"2,097",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,573",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,328,000",624.31,"2,127",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,897",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,862,000",882.65,"2,110",Oct-24,CHAMPIONS WAY,New Sale,Strata,82,"22,707",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,338,000",624.31,"2,143",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,069",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+NORWOOD GRAND,"1,036,000",495.14,"2,092",Oct-24,CHAMPIONS WAY,New Sale,Strata,46,"22,522",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,331,000","1,173.28","1,987",Oct-24,CHAMPIONS WAY,New Sale,Strata,109,"21,385",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,303,000",624.31,"2,087",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,466",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,895,000",904.18,"2,096",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,560",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,313,000",624.31,"2,103",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,638",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,547,000",710.42,"2,178",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"23,439",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,925,000",904.18,"2,129",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"22,917",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,747,000",871.88,"2,004",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,568",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,837,000",904.18,"2,032",Oct-24,CHAMPIONS WAY,New Sale,Strata,84,"21,869",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"2,058,000","1,044.11","1,971",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,216",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,01 to 05
+NORWOOD GRAND,"1,779,000",871.88,"2,040",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"21,963",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,473,000",710.42,"2,073",Oct-24,CHAMPIONS WAY,New Sale,Strata,66,"22,318",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,787,000",871.88,"2,050",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,062",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,306,000",624.31,"2,092",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"22,517",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,807,000",871.88,"2,073",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,309",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,108,000","1,044.11","2,019",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"21,732",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,335,000",624.31,"2,138",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,017",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,823,000",871.88,"2,091",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,506",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,335,000",624.31,"2,138",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,017",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,343,000",624.31,"2,151",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,155",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,832,000",871.88,"2,101",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,617",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"2,147,000","1,044.11","2,056",Oct-24,CHAMPIONS WAY,New Sale,Strata,97,"22,134",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,343,000",624.31,"2,151",Oct-24,CHAMPIONS WAY,New Sale,Strata,58,"23,155",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,06 to 10
+NORWOOD GRAND,"1,841,000",871.88,"2,112",Oct-24,CHAMPIONS WAY,New Sale,Strata,81,"22,728",-,Apartment,1,99 yrs lease commencing from 2023,25,Outside Central Region,11 to 15
+WOODGROVE CONDOMINIUM,"1,200,000","1,194.8","1,004",Oct-24,WOODGROVE DRIVE,Resale,Strata,111,"10,811",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"615,000",430.56,"1,428",Oct-24,ROSEWOOD DRIVE,Resale,Strata,40,"15,375",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,620,000","1,474.67","1,099",Oct-24,ROSEWOOD DRIVE,Resale,Strata,137,"11,825",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"688,888",430.56,"1,600",Oct-24,ROSEWOOD DRIVE,Resale,Strata,40,"17,222",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,610,000","1,711.48",941,Oct-24,ROSEWOOD DRIVE,Resale,Strata,159,"10,126",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"675,000",430.56,"1,568",Oct-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"653,000",430.56,"1,517",Oct-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,325",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,398,000","1,119.46","1,249",Sep-24,WOODGROVE AVENUE,Resale,Strata,104,"13,442",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"638,888",430.56,"1,484",Sep-24,ROSEWOOD DRIVE,Resale,Strata,40,"15,972",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"890,000",699.66,"1,272",Sep-24,WOODGROVE AVENUE,Resale,Strata,65,"13,692",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,888",505.91,"1,326",Sep-24,ROSEWOOD DRIVE,Resale,Strata,47,"14,274",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",516.67,"1,316",Sep-24,ROSEWOOD DRIVE,Resale,Strata,48,"14,167",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"806,000",602.78,"1,337",Sep-24,ROSEWOOD DRIVE,Resale,Strata,56,"14,393",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,400,888","1,173.28","1,194",Sep-24,WOODGROVE AVENUE,Resale,Strata,109,"12,852",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"2,130,000","2,357.32",904,Sep-24,WOODGROVE DRIVE,Resale,Strata,219,"9,726",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"810,000",656.6,"1,234",Sep-24,ROSEWOOD DRIVE,Resale,Strata,61,"13,279",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"668,000",430.56,"1,551",Sep-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,700",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,650,000","1,614.6","1,022",Sep-24,WOODGROVE DRIVE,Resale,Strata,150,"11,000",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"930,000",936.47,993,Sep-24,ROSEWOOD DRIVE,Resale,Strata,87,"10,690",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+ROSEWOOD,"1,200,000","1,173.28","1,023",Sep-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,009",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"692,000",527.44,"1,312",Sep-24,ROSEWOOD DRIVE,Resale,Strata,49,"14,122",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"970,000","1,033.34",939,Sep-24,WOODGROVE DRIVE,Resale,Strata,96,"10,104",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+WOODHAVEN,"841,400",645.84,"1,303",Sep-24,WOODGROVE AVENUE,Resale,Strata,60,"14,023",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,280,000","1,173.28","1,091",Sep-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,743",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+WOODHAVEN,"1,075,000",850.36,"1,264",Aug-24,WOODGROVE AVENUE,Resale,Strata,79,"13,608",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"645,000",430.56,"1,498",Aug-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,180,000","1,108.69","1,064",Aug-24,ROSEWOOD DRIVE,Resale,Strata,103,"11,456",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+WOODGROVE CONDOMINIUM,"1,860,000","2,012.87",924,Aug-24,WOODGROVE DRIVE,Resale,Strata,187,"9,947",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"661,888",516.67,"1,281",Aug-24,ROSEWOOD DRIVE,Resale,Strata,48,"13,789",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,185,000","1,130.22","1,048",Aug-24,ROSEWOOD DRIVE,Resale,Strata,105,"11,286",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,068,000",850.36,"1,256",Aug-24,WOODGROVE AVENUE,Resale,Strata,79,"13,519",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"772,000",592.02,"1,304",Aug-24,WOODGROVE AVENUE,Resale,Strata,55,"14,036",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,170,000","1,130.22","1,035",Aug-24,ROSEWOOD DRIVE,Resale,Strata,105,"11,143",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,070,000",850.36,"1,258",Aug-24,WOODGROVE AVENUE,Resale,Strata,79,"13,544",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,078,000","1,011.82","1,065",Aug-24,ROSEWOOD DRIVE,Resale,Strata,94,"11,468",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+WOODHAVEN,"1,058,000",850.36,"1,244",Aug-24,WOODGROVE AVENUE,Resale,Strata,79,"13,392",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,200,000","1,097.93","1,093",Aug-24,ROSEWOOD DRIVE,Resale,Strata,102,"11,765",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,250,000","1,119.46","1,117",Jul-24,ROSEWOOD DRIVE,Resale,Strata,104,"12,019",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"996,000",936.47,"1,064",Jul-24,ROSEWOOD DRIVE,Resale,Strata,87,"11,448",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"670,000",430.56,"1,556",Jul-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"660,000",516.67,"1,277",Jul-24,ROSEWOOD DRIVE,Resale,Strata,48,"13,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,268,888","1,173.28","1,081",Jul-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,641",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"648,000",430.56,"1,505",Jul-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,200",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,070,000","1,011.82","1,058",Jul-24,ROSEWOOD DRIVE,Resale,Strata,94,"11,383",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+WOODHAVEN,"770,000",592.02,"1,301",Jul-24,WOODGROVE AVENUE,Resale,Strata,55,"14,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,385,000","1,302.44","1,063",Jul-24,WOODGROVE AVENUE,Resale,Strata,121,"11,446",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"865,000",764.24,"1,132",Jul-24,ROSEWOOD DRIVE,Resale,Strata,71,"12,183",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,235,000","1,173.28","1,053",Jun-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,330",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,200,000","1,270.15",945,Jun-24,ROSEWOOD DRIVE,Resale,Strata,118,"10,169",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,000,000",936.47,"1,068",Jun-24,ROSEWOOD DRIVE,Resale,Strata,87,"11,494",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"664,000",505.91,"1,312",Jun-24,ROSEWOOD DRIVE,Resale,Strata,47,"14,128",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,120,000","1,173.28",955,Jun-24,ROSEWOOD DRIVE,Resale,Strata,109,"10,275",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+WOODHAVEN,"898,888",699.66,"1,285",Jun-24,WOODGROVE AVENUE,Resale,Strata,65,"13,829",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"2,412,888","2,755.58",876,Jun-24,ROSEWOOD DRIVE,Resale,Strata,256,"9,425",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"868,000",807.3,"1,075",May-24,ROSEWOOD DRIVE,Resale,Strata,75,"11,573",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"783,000",667.37,"1,173",May-24,ROSEWOOD DRIVE,Resale,Strata,62,"12,629",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,525,000","1,550.02",984,May-24,ROSEWOOD DRIVE,Resale,Strata,144,"10,590",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"790,000",581.26,"1,359",May-24,ROSEWOOD DRIVE,Resale,Strata,54,"14,630",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"990,000",925.7,"1,069",May-24,ROSEWOOD DRIVE,Resale,Strata,86,"11,512",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"643,000",430.56,"1,493",May-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,075",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,278,888","1,184.04","1,080",May-24,ROSEWOOD DRIVE,Resale,Strata,110,"11,626",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"635,000",430.56,"1,475",May-24,ROSEWOOD DRIVE,Resale,Strata,40,"15,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,200,000","1,184.04","1,013",May-24,ROSEWOOD DRIVE,Resale,Strata,110,"10,909",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"950,000",828.83,"1,146",May-24,ROSEWOOD DRIVE,Resale,Strata,77,"12,338",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",430.56,"1,394",Apr-24,ROSEWOOD DRIVE,Resale,Strata,40,"15,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,160,000","1,173.28",989,Apr-24,ROSEWOOD DRIVE,Resale,Strata,109,"10,642",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+CASABLANCA,"980,000",893.41,"1,097",Apr-24,ROSEWOOD DRIVE,Resale,Strata,83,"11,807",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"1,370,000","1,550.02",884,Apr-24,ROSEWOOD DRIVE,Resale,Strata,144,"9,514",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",505.91,"1,344",Apr-24,ROSEWOOD DRIVE,Resale,Strata,47,"14,468",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"648,000",430.56,"1,505",Apr-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,200",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,000",430.56,"1,556",Apr-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",548.96,"1,184",Apr-24,ROSEWOOD DRIVE,Resale,Strata,51,"12,745",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,220,000","1,108.69","1,100",Apr-24,ROSEWOOD DRIVE,Resale,Strata,103,"11,845",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"642,888",430.56,"1,493",Apr-24,ROSEWOOD DRIVE,Resale,Strata,40,"16,072",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"2,660,000","3,132.32",849,Apr-24,WOODGROVE DRIVE,Resale,Strata,291,"9,141",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,520,000","1,517.72","1,001",Mar-24,WOODGROVE DRIVE,Resale,Strata,141,"10,780",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"828,000",807.3,"1,026",Mar-24,ROSEWOOD DRIVE,Resale,Strata,75,"11,040",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,600,000","1,517.72","1,054",Mar-24,WOODGROVE DRIVE,Resale,Strata,141,"11,348",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"625,000",430.56,"1,452",Mar-24,ROSEWOOD DRIVE,Resale,Strata,40,"15,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,220,000","1,173.28","1,040",Mar-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,193",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+WOODGROVE CONDOMINIUM,"1,900,000","2,045.16",929,Mar-24,WOODGROVE DRIVE,Resale,Strata,190,"10,000",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,200,000","1,173.28","1,023",Mar-24,ROSEWOOD DRIVE,Resale,Strata,109,"11,009",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+ROSEWOOD SUITES,"1,328,000","1,313.21","1,011",Mar-24,ROSEWOOD DRIVE,Resale,Strata,122,"10,885",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"1,438,000","1,313.21","1,095",Mar-24,ROSEWOOD DRIVE,Resale,Strata,122,"11,787",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"808,000",602.78,"1,340",Feb-24,ROSEWOOD DRIVE,Resale,Strata,56,"14,429",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,368,000","1,765.3",775,Feb-24,ROSEWOOD DRIVE,Resale,Strata,164,"8,341",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,160,000","1,119.46","1,036",Feb-24,ROSEWOOD DRIVE,Resale,Strata,104,"11,154",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODHAVEN,"1,020,000",850.36,"1,199",Feb-24,WOODGROVE AVENUE,Resale,Strata,79,"12,911",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,128,888","1,065.64","1,059",Feb-24,ROSEWOOD DRIVE,Resale,Strata,99,"11,403",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"1,180,000","1,119.46","1,054",Feb-24,ROSEWOOD DRIVE,Resale,Strata,104,"11,346",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD,"1,500,000","1,625.36",923,Jan-24,ROSEWOOD DRIVE,Resale,Strata,151,"9,934",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+CASABLANCA,"950,000",936.47,"1,014",Jan-24,ROSEWOOD DRIVE,Resale,Strata,87,"10,920",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODHAVEN,"890,888",699.66,"1,273",Jan-24,WOODGROVE AVENUE,Resale,Strata,65,"13,706",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"778,000",592.02,"1,314",Dec-23,WOODGROVE AVENUE,Resale,Strata,55,"14,145",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,550,000","1,517.72","1,021",Dec-23,ROSEWOOD DRIVE,Resale,Strata,141,"10,993",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"760,000",581.26,"1,308",Dec-23,ROSEWOOD DRIVE,Resale,Strata,54,"14,074",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,428,888","1,313.21","1,088",Dec-23,ROSEWOOD DRIVE,Resale,Strata,122,"11,712",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+CASABLANCA,"1,190,000","1,130.22","1,053",Dec-23,ROSEWOOD DRIVE,Resale,Strata,105,"11,333",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,160,000",968.76,"1,197",Dec-23,ROSEWOOD DRIVE,Resale,Strata,90,"12,889",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,100,000","1,173.28",938,Dec-23,ROSEWOOD DRIVE,Resale,Strata,109,"10,092",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+CASABLANCA,"1,150,000","1,108.69","1,037",Dec-23,ROSEWOOD DRIVE,Resale,Strata,103,"11,165",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD,"1,040,000","1,173.28",886,Dec-23,ROSEWOOD DRIVE,Resale,Strata,109,"9,541",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+WOODHAVEN,"900,000",699.66,"1,286",Nov-23,WOODGROVE AVENUE,Resale,Strata,65,"13,846",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"810,000",602.78,"1,344",Nov-23,ROSEWOOD DRIVE,Resale,Strata,56,"14,464",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"662,672",430.56,"1,539",Nov-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,567",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"638,000",430.56,"1,482",Nov-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,950",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"933,000",893.41,"1,044",Nov-23,ROSEWOOD DRIVE,Resale,Strata,83,"11,241",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+CASABLANCA,"983,000",936.47,"1,050",Nov-23,ROSEWOOD DRIVE,Resale,Strata,87,"11,299",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"658,500",430.56,"1,529",Nov-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,463",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,420,000","1,474.67",963,Nov-23,ROSEWOOD DRIVE,Resale,Strata,137,"10,365",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"815,000",753.48,"1,082",Nov-23,ROSEWOOD DRIVE,Resale,Strata,70,"11,643",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"980,000",925.7,"1,059",Oct-23,ROSEWOOD DRIVE,Resale,Strata,86,"11,395",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"645,000",430.56,"1,498",Oct-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"966,888","1,011.82",956,Oct-23,ROSEWOOD DRIVE,Resale,Strata,94,"10,286",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+WOODHAVEN,"800,000",624.31,"1,281",Oct-23,WOODGROVE AVENUE,Resale,Strata,58,"13,793",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",527.44,"1,289",Oct-23,ROSEWOOD DRIVE,Resale,Strata,49,"13,878",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"640,000",430.56,"1,486",Oct-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,820,000","2,314.26",786,Oct-23,ROSEWOOD DRIVE,Resale,Strata,215,"8,465",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,500,000","1,679.18",893,Oct-23,ROSEWOOD DRIVE,Resale,Strata,156,"9,615",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",430.56,"1,510",Oct-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"658,000",430.56,"1,528",Oct-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,450",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,025,000",807.3,"1,270",Oct-23,WOODGROVE AVENUE,Resale,Strata,75,"13,667",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"935,000",828.83,"1,128",Oct-23,ROSEWOOD DRIVE,Resale,Strata,77,"12,143",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,000,000",828.83,"1,207",Oct-23,ROSEWOOD DRIVE,Resale,Strata,77,"12,987",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,500,000","1,700.71",882,Sep-23,ROSEWOOD DRIVE,Resale,Strata,158,"9,494",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,240,000","1,173.28","1,057",Sep-23,ROSEWOOD DRIVE,Resale,Strata,109,"11,376",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"640,888",430.56,"1,488",Sep-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,022",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"920,000",893.41,"1,030",Sep-23,ROSEWOOD DRIVE,Resale,Strata,83,"11,084",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+CASABLANCA,"1,150,000","1,119.46","1,027",Aug-23,ROSEWOOD DRIVE,Resale,Strata,104,"11,058",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD,"930,000","1,011.82",919,Aug-23,ROSEWOOD DRIVE,Resale,Strata,94,"9,894",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"800,000",602.78,"1,327",Aug-23,ROSEWOOD DRIVE,Resale,Strata,56,"14,286",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,330,000","1,571.54",846,Aug-23,ROSEWOOD DRIVE,Resale,Strata,146,"9,110",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,000,000",850.36,"1,176",Aug-23,WOODGROVE AVENUE,Resale,Strata,79,"12,658",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"841,000",742.72,"1,132",Aug-23,ROSEWOOD DRIVE,Resale,Strata,69,"12,188",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"760,000",581.26,"1,308",Aug-23,ROSEWOOD DRIVE,Resale,Strata,54,"14,074",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"850,000",699.66,"1,215",Aug-23,WOODGROVE AVENUE,Resale,Strata,65,"13,077",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"970,000",936.47,"1,036",Aug-23,ROSEWOOD DRIVE,Resale,Strata,87,"11,149",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"640,000",430.56,"1,486",Jul-23,ROSEWOOD DRIVE,Resale,Strata,40,"16,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"975,000",925.7,"1,053",Jul-23,ROSEWOOD DRIVE,Resale,Strata,86,"11,337",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+CASABLANCA,"1,090,000","1,108.69",983,Jul-23,ROSEWOOD DRIVE,Resale,Strata,103,"10,583",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"638,000",430.56,"1,482",Jul-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,950",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"820,000",645.84,"1,270",Jul-23,WOODGROVE AVENUE,Resale,Strata,60,"13,667",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,400,000","1,571.54",891,Jul-23,ROSEWOOD DRIVE,Resale,Strata,146,"9,589",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"760,000",602.78,"1,261",Jul-23,WOODGROVE AVENUE,Resale,Strata,56,"13,571",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,288,000","1,173.28","1,098",Jul-23,WOODGROVE AVENUE,Resale,Strata,109,"11,817",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,950,000","2,152.8",906,Jul-23,ROSEWOOD DRIVE,Resale,Strata,200,"9,750",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+CASABLANCA,"980,000",925.7,"1,059",Jul-23,ROSEWOOD DRIVE,Resale,Strata,86,"11,395",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD,"975,000","1,011.82",964,Jul-23,ROSEWOOD DRIVE,Resale,Strata,94,"10,372",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"655,000",505.91,"1,295",Jul-23,ROSEWOOD DRIVE,Resale,Strata,47,"13,936",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"646,800",505.91,"1,278",Jun-23,ROSEWOOD DRIVE,Resale,Strata,47,"13,762",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"730,000",592.02,"1,233",Jun-23,WOODGROVE AVENUE,Resale,Strata,55,"13,273",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"622,000",430.56,"1,445",Jun-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,550",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"965,000","1,033.34",934,Jun-23,ROSEWOOD DRIVE,Resale,Strata,96,"10,052",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+CASABLANCA,"942,000",904.18,"1,042",Jun-23,ROSEWOOD DRIVE,Resale,Strata,84,"11,214",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+CASABLANCA,"930,000",936.47,993,Jun-23,ROSEWOOD DRIVE,Resale,Strata,87,"10,690",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+WOODHAVEN,"725,000",592.02,"1,225",Jun-23,WOODGROVE AVENUE,Resale,Strata,55,"13,182",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,010,000",850.36,"1,188",Jun-23,WOODGROVE AVENUE,Resale,Strata,79,"12,785",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,500,000","1,550.02",968,Jun-23,WOODGROVE DRIVE,Resale,Strata,144,"10,417",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"960,000","1,011.82",949,May-23,ROSEWOOD DRIVE,Resale,Strata,94,"10,213",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+CASABLANCA,"1,200,000","1,184.04","1,013",May-23,ROSEWOOD DRIVE,Resale,Strata,110,"10,909",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODHAVEN,"980,000",850.36,"1,152",May-23,WOODGROVE AVENUE,Resale,Strata,79,"12,405",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"998,000",904.18,"1,104",May-23,ROSEWOOD DRIVE,Resale,Strata,84,"11,881",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+WOODGROVE CONDOMINIUM,"1,900,000","2,152.8",883,May-23,WOODGROVE DRIVE,Resale,Strata,200,"9,500",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"958,000","1,011.82",947,May-23,ROSEWOOD DRIVE,Resale,Strata,94,"10,191",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+WOODHAVEN,"740,000",592.02,"1,250",May-23,WOODGROVE AVENUE,Resale,Strata,55,"13,455",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,138,000","1,108.69","1,026",May-23,ROSEWOOD DRIVE,Resale,Strata,103,"11,049",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODGROVE CONDOMINIUM,"1,080,000","1,237.86",872,May-23,WOODGROVE DRIVE,Resale,Strata,115,"9,391",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"955,000",925.7,"1,032",May-23,ROSEWOOD DRIVE,Resale,Strata,86,"11,105",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"929,000",828.83,"1,121",May-23,ROSEWOOD DRIVE,Resale,Strata,77,"12,065",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"639,000",430.56,"1,484",May-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,975",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"610,000",430.56,"1,417",May-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,150,000","1,130.22","1,018",May-23,ROSEWOOD DRIVE,Resale,Strata,105,"10,952",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"760,000",602.78,"1,261",May-23,ROSEWOOD DRIVE,Resale,Strata,56,"13,571",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"630,000",430.56,"1,463",May-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,350,000","1,517.72",889,Apr-23,WOODGROVE DRIVE,Resale,Strata,141,"9,574",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,500,000","1,700.71",882,Apr-23,ROSEWOOD DRIVE,Resale,Strata,158,"9,494",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"832,000",893.41,931,Apr-23,WOODGROVE DRIVE,Resale,Strata,83,"10,024",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"620,000",430.56,"1,440",Apr-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,095,000","1,130.22",969,Apr-23,ROSEWOOD DRIVE,Resale,Strata,105,"10,429",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"640,000",505.91,"1,265",Apr-23,ROSEWOOD DRIVE,Resale,Strata,47,"13,617",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,420,000","1,474.67",963,Apr-23,ROSEWOOD DRIVE,Resale,Strata,137,"10,365",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"631,000",430.56,"1,466",Apr-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,775",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,180,000","1,184.04",997,Apr-23,ROSEWOOD DRIVE,Resale,Strata,110,"10,727",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,135,000",968.76,"1,172",Apr-23,ROSEWOOD DRIVE,Resale,Strata,90,"12,611",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,300,000","1,431.61",908,Apr-23,ROSEWOOD DRIVE,Resale,Strata,133,"9,774",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+WOODGROVE CONDOMINIUM,"1,970,000","2,152.8",915,Apr-23,WOODGROVE DRIVE,Resale,Strata,200,"9,850",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"1,160,000","1,184.04",980,Mar-23,ROSEWOOD DRIVE,Resale,Strata,110,"10,545",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+WOODHAVEN,"738,000",592.02,"1,247",Mar-23,WOODGROVE AVENUE,Resale,Strata,55,"13,418",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"920,000",828.83,"1,110",Mar-23,ROSEWOOD DRIVE,Resale,Strata,77,"11,948",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"805,000",635.08,"1,268",Mar-23,WOODGROVE AVENUE,Resale,Strata,59,"13,644",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,160,000","1,119.46","1,036",Mar-23,ROSEWOOD DRIVE,Resale,Strata,104,"11,154",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+CASABLANCA,"1,040,000","1,119.46",929,Mar-23,ROSEWOOD DRIVE,Resale,Strata,104,"10,000",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+CASABLANCA,"1,100,000","1,184.04",929,Feb-23,ROSEWOOD DRIVE,Resale,Strata,110,"10,000",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,300,000","1,625.36",800,Feb-23,ROSEWOOD DRIVE,Resale,Strata,151,"8,609",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"775,000",602.78,"1,286",Feb-23,ROSEWOOD DRIVE,Resale,Strata,56,"13,839",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"835,000",871.88,958,Feb-23,WOODGROVE DRIVE,Resale,Strata,81,"10,309",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+THE WOODGROVE,"862,000",893.41,965,Feb-23,WOODGROVE DRIVE,Resale,Strata,83,"10,386",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"605,000",430.56,"1,405",Feb-23,ROSEWOOD DRIVE,Resale,Strata,40,"15,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,095,000","1,130.22",969,Jan-23,ROSEWOOD DRIVE,Resale,Strata,105,"10,429",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,380,000","1,474.67",936,Jan-23,ROSEWOOD DRIVE,Resale,Strata,137,"10,073",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"1,680,000","1,517.72","1,107",Jan-23,ROSEWOOD DRIVE,Resale,Strata,141,"11,915",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"980,000","1,097.93",893,Jan-23,ROSEWOOD DRIVE,Resale,Strata,102,"9,608",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,200,000","1,237.86",969,Jan-23,ROSEWOOD DRIVE,Resale,Strata,115,"10,435",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"935,000",925.7,"1,010",Jan-23,ROSEWOOD DRIVE,Resale,Strata,86,"10,872",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,16 to 20
+ROSEWOOD,"1,060,000","1,173.28",903,Dec-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,725",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+CASABLANCA,"910,000",936.47,972,Dec-22,ROSEWOOD DRIVE,Resale,Strata,87,"10,460",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"620,000",430.56,"1,440",Dec-22,ROSEWOOD DRIVE,Resale,Strata,40,"15,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,350,000","1,431.61",943,Dec-22,ROSEWOOD DRIVE,Resale,Strata,133,"10,150",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+ROSEWOOD,"938,000","1,022.58",917,Dec-22,ROSEWOOD DRIVE,Resale,Strata,95,"9,874",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"668,000",516.67,"1,293",Dec-22,ROSEWOOD DRIVE,Resale,Strata,48,"13,917",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"835,888",753.48,"1,109",Dec-22,ROSEWOOD DRIVE,Resale,Strata,70,"11,941",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"717,000",592.02,"1,211",Dec-22,WOODGROVE AVENUE,Resale,Strata,55,"13,036",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,060,000","1,173.28",903,Nov-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,725",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+ROSEWOOD,"1,705,000","1,959.05",870,Nov-22,ROSEWOOD DRIVE,Resale,Strata,182,"9,368",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+THE WOODGROVE,"820,000",828.83,989,Nov-22,WOODGROVE DRIVE,Resale,Strata,77,"10,649",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+ROSEWOOD,"1,421,888","1,463.9",971,Oct-22,ROSEWOOD DRIVE,Resale,Strata,136,"10,455",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"615,000",430.56,"1,428",Oct-22,ROSEWOOD DRIVE,Resale,Strata,40,"15,375",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,450,000","1,915.99",757,Oct-22,ROSEWOOD DRIVE,Resale,Strata,178,"8,146",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",516.67,"1,161",Oct-22,ROSEWOOD DRIVE,Resale,Strata,48,"12,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"760,000",624.31,"1,217",Oct-22,WOODGROVE AVENUE,Resale,Strata,58,"13,103",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"880,000",947.23,929,Oct-22,ROSEWOOD DRIVE,Resale,Strata,88,"10,000",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"755,000",602.78,"1,253",Oct-22,ROSEWOOD DRIVE,Resale,Strata,56,"13,482",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,100,000","1,097.93","1,002",Oct-22,ROSEWOOD DRIVE,Resale,Strata,102,"10,784",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"1,150,000","1,119.46","1,027",Oct-22,ROSEWOOD DRIVE,Resale,Strata,104,"11,058",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,050,000","1,237.86",848,Oct-22,WOODGROVE DRIVE,Resale,Strata,115,"9,130",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,060,000","1,173.28",903,Sep-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,725",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+CASABLANCA,"1,155,000","1,194.8",967,Sep-22,ROSEWOOD DRIVE,Resale,Strata,111,"10,405",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"788,000",753.48,"1,046",Sep-22,ROSEWOOD DRIVE,Resale,Strata,70,"11,257",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"828,000","1,033.34",801,Sep-22,WOODGROVE DRIVE,Resale,Strata,96,"8,625",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",430.56,"1,394",Sep-22,ROSEWOOD DRIVE,Resale,Strata,40,"15,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"950,000","1,173.28",810,Sep-22,ROSEWOOD DRIVE,Resale,Strata,109,"8,716",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"590,000",430.56,"1,370",Sep-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,120,000","1,119.46","1,000",Sep-22,ROSEWOOD DRIVE,Resale,Strata,104,"10,769",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,490,000","1,646.89",905,Aug-22,ROSEWOOD DRIVE,Resale,Strata,153,"9,739",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,599,599","2,325.02",688,Aug-22,ROSEWOOD DRIVE,Resale,Strata,216,"7,406",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,100,000","1,119.46",983,Aug-22,ROSEWOOD DRIVE,Resale,Strata,104,"10,577",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"585,000",430.56,"1,359",Aug-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,000,000","1,173.28",852,Aug-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,174",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"605,000",430.56,"1,405",Aug-22,ROSEWOOD DRIVE,Resale,Strata,40,"15,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,058,000","1,130.22",936,Aug-22,ROSEWOOD DRIVE,Resale,Strata,105,"10,076",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODHAVEN,"945,000",850.36,"1,111",Aug-22,WOODGROVE AVENUE,Resale,Strata,79,"11,962",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"583,000",430.56,"1,354",Aug-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,575",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"2,000,000","2,755.58",726,Aug-22,ROSEWOOD DRIVE,Resale,Strata,256,"7,813",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD,"980,000","1,173.28",835,Jul-22,ROSEWOOD DRIVE,Resale,Strata,109,"8,991",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,620,000","2,314.26",700,Jul-22,ROSEWOOD DRIVE,Resale,Strata,215,"7,535",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"743,000",624.31,"1,190",Jul-22,WOODGROVE AVENUE,Resale,Strata,58,"12,810",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,338,888","1,625.36",824,Jul-22,WOODGROVE DRIVE,Resale,Strata,151,"8,867",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+CASABLANCA,"1,250,000","1,313.21",952,Jul-22,ROSEWOOD DRIVE,Resale,Strata,122,"10,246",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+WOODHAVEN,"788,000",688.9,"1,144",Jul-22,WOODGROVE AVENUE,Resale,Strata,64,"12,313",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"710,000",602.78,"1,178",Jul-22,ROSEWOOD DRIVE,Resale,Strata,56,"12,679",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"610,000",516.67,"1,181",Jul-22,ROSEWOOD DRIVE,Resale,Strata,48,"12,708",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,088,800","1,022.58","1,065",Jul-22,WOODGROVE AVENUE,Resale,Strata,95,"11,461",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"565,000",430.56,"1,312",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"568,000",430.56,"1,319",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,200",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,130,000","1,184.04",954,Jun-22,ROSEWOOD DRIVE,Resale,Strata,110,"10,273",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"721,000",602.78,"1,196",Jun-22,ROSEWOOD DRIVE,Resale,Strata,56,"12,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"575,000",430.56,"1,335",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,375",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,340,000","1,765.3",759,Jun-22,ROSEWOOD DRIVE,Resale,Strata,164,"8,171",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"570,000",430.56,"1,324",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"745,000",645.84,"1,154",Jun-22,WOODGROVE AVENUE,Resale,Strata,60,"12,417",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",505.91,"1,186",Jun-22,ROSEWOOD DRIVE,Resale,Strata,47,"12,766",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"588,000",430.56,"1,366",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,700",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,010,000","1,184.04",853,Jun-22,ROSEWOOD DRIVE,Resale,Strata,110,"9,182",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+WOODHAVEN,"926,000",850.36,"1,089",Jun-22,WOODGROVE AVENUE,Resale,Strata,79,"11,722",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"570,000",430.56,"1,324",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"568,000",430.56,"1,319",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,200",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,050,000","1,119.46",938,Jun-22,ROSEWOOD DRIVE,Resale,Strata,104,"10,096",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+ROSEWOOD,"1,000,000","1,184.04",845,Jun-22,ROSEWOOD DRIVE,Resale,Strata,110,"9,091",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"555,000",430.56,"1,289",Jun-22,ROSEWOOD DRIVE,Resale,Strata,40,"13,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,100,000","1,119.46",983,Jun-22,ROSEWOOD DRIVE,Resale,Strata,104,"10,577",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"686,000",602.78,"1,138",May-22,ROSEWOOD DRIVE,Resale,Strata,56,"12,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,310,000","1,474.67",888,May-22,ROSEWOOD DRIVE,Resale,Strata,137,"9,562",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"608,000",527.44,"1,153",May-22,ROSEWOOD DRIVE,Resale,Strata,49,"12,408",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,800,000","2,152.8",836,May-22,ROSEWOOD DRIVE,Resale,Strata,200,"9,000",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"1,070,000","1,270.15",842,May-22,ROSEWOOD DRIVE,Resale,Strata,118,"9,068",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"690,000",592.02,"1,166",May-22,WOODGROVE AVENUE,Resale,Strata,55,"12,545",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,658,000","2,249.68",737,May-22,ROSEWOOD DRIVE,Resale,Strata,209,"7,933",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"685,000",592.02,"1,157",May-22,WOODGROVE AVENUE,Resale,Strata,55,"12,455",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"998,000","1,119.46",892,Apr-22,ROSEWOOD DRIVE,Resale,Strata,104,"9,596",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"550,000",430.56,"1,277",Apr-22,ROSEWOOD DRIVE,Resale,Strata,40,"13,750",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"830,000",731.95,"1,134",Apr-22,WOODGROVE AVENUE,Resale,Strata,68,"12,206",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,280,000","1,765.3",725,Apr-22,ROSEWOOD DRIVE,Resale,Strata,164,"7,805",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,020,000","1,173.28",869,Apr-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,358",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+WOODHAVEN,"688,000",635.08,"1,083",Apr-22,WOODGROVE AVENUE,Resale,Strata,59,"11,661",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,200,000","1,323.97",906,Apr-22,ROSEWOOD DRIVE,Resale,Strata,123,"9,756",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,308,000","1,851.41",706,Apr-22,ROSEWOOD DRIVE,Resale,Strata,172,"7,605",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"815,000",947.23,860,Apr-22,ROSEWOOD DRIVE,Resale,Strata,88,"9,261",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,200,000","1,259.39",953,Apr-22,ROSEWOOD DRIVE,Resale,Strata,117,"10,256",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"588,000",430.56,"1,366",Apr-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,700",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,128,000","1,270.15",888,Apr-22,ROSEWOOD DRIVE,Resale,Strata,118,"9,559",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"565,000",430.56,"1,312",Mar-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,125",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"610,000",505.91,"1,206",Mar-22,ROSEWOOD DRIVE,Resale,Strata,47,"12,979",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"800,000",893.41,895,Mar-22,WOODGROVE DRIVE,Resale,Strata,83,"9,639",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"570,000",430.56,"1,324",Mar-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"998,000","1,173.28",851,Mar-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,156",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"1,045,000","1,270.15",823,Mar-22,ROSEWOOD DRIVE,Resale,Strata,118,"8,856",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"840,000",828.83,"1,013",Mar-22,ROSEWOOD DRIVE,Resale,Strata,77,"10,909",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"585,000",430.56,"1,359",Mar-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"970,000","1,130.22",858,Mar-22,ROSEWOOD DRIVE,Resale,Strata,105,"9,238",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"574,000",430.56,"1,333",Mar-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,350",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,020,000","1,259.39",810,Mar-22,ROSEWOOD DRIVE,Resale,Strata,117,"8,718",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,044,000","1,323.97",789,Mar-22,ROSEWOOD DRIVE,Resale,Strata,123,"8,488",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,490,000","2,249.68",662,Mar-22,ROSEWOOD DRIVE,Resale,Strata,209,"7,129",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"980,000","1,205.57",813,Mar-22,ROSEWOOD DRIVE,Resale,Strata,112,"8,750",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,000,000","1,184.04",845,Mar-22,ROSEWOOD DRIVE,Resale,Strata,110,"9,091",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+PARC ROSEWOOD,"580,000",430.56,"1,347",Feb-22,ROSEWOOD DRIVE,Resale,Strata,40,"14,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,115,000","1,560.78",714,Feb-22,ROSEWOOD DRIVE,Resale,Strata,145,"7,690",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+THE WOODGROVE,"710,000",871.88,814,Feb-22,WOODGROVE DRIVE,Resale,Strata,81,"8,765",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,030,000","1,194.8",862,Feb-22,ROSEWOOD DRIVE,Resale,Strata,111,"9,279",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,025,000","1,033.34",992,Jan-22,WOODGROVE AVENUE,Resale,Strata,96,"10,677",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"930,000","1,173.28",793,Jan-22,ROSEWOOD DRIVE,Resale,Strata,109,"8,532",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,280,000","1,765.3",725,Jan-22,ROSEWOOD DRIVE,Resale,Strata,164,"7,805",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"680,000",581.26,"1,170",Jan-22,ROSEWOOD DRIVE,Resale,Strata,54,"12,593",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,260,088","1,786.82",705,Jan-22,ROSEWOOD DRIVE,Resale,Strata,166,"7,591",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"618,000",516.67,"1,196",Jan-22,ROSEWOOD DRIVE,Resale,Strata,48,"12,875",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,010,000","1,323.97",763,Jan-22,ROSEWOOD DRIVE,Resale,Strata,123,"8,211",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"910,000","1,173.28",776,Jan-22,ROSEWOOD DRIVE,Resale,Strata,109,"8,349",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+WOODHAVEN,"790,000",699.66,"1,129",Jan-22,WOODGROVE AVENUE,Resale,Strata,65,"12,154",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",505.91,"1,186",Jan-22,ROSEWOOD DRIVE,Resale,Strata,47,"12,766",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"656,000",678.13,967,Jan-22,ROSEWOOD DRIVE,Resale,Strata,63,"10,413",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"695,000",602.78,"1,153",Jan-22,ROSEWOOD DRIVE,Resale,Strata,56,"12,411",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"678,000",602.78,"1,125",Jan-22,ROSEWOOD DRIVE,Resale,Strata,56,"12,107",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"812,000","1,011.82",803,Jan-22,ROSEWOOD DRIVE,Resale,Strata,94,"8,638",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+ROSEWOOD,"750,000","1,001.05",749,Jan-22,ROSEWOOD DRIVE,Resale,Strata,93,"8,065",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"1,250,000","1,711.48",730,Jan-22,ROSEWOOD DRIVE,Resale,Strata,159,"7,862",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"993,000","1,173.28",846,Jan-22,ROSEWOOD DRIVE,Resale,Strata,109,"9,110",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"545,000",430.56,"1,266",Dec-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"690,000",828.83,833,Dec-21,WOODGROVE DRIVE,Resale,Strata,77,"8,961",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"570,000",430.56,"1,324",Dec-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"603,000",516.67,"1,167",Dec-21,ROSEWOOD DRIVE,Resale,Strata,48,"12,563",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,180,000","1,431.61",824,Dec-21,ROSEWOOD DRIVE,Resale,Strata,133,"8,872",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"710,000",807.3,879,Dec-21,ROSEWOOD DRIVE,Resale,Strata,75,"9,467",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"670,000",592.02,"1,132",Dec-21,WOODGROVE AVENUE,Resale,Strata,55,"12,182",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"595,000",505.91,"1,176",Dec-21,ROSEWOOD DRIVE,Resale,Strata,47,"12,660",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"770,000",893.41,862,Dec-21,WOODGROVE DRIVE,Resale,Strata,83,"9,277",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"1,340,000","1,926.76",695,Dec-21,ROSEWOOD DRIVE,Resale,Strata,179,"7,486",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"745,000",624.31,"1,193",Dec-21,WOODGROVE AVENUE,Resale,Strata,58,"12,845",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"800,000",936.47,854,Dec-21,ROSEWOOD DRIVE,Resale,Strata,87,"9,195",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"545,000",430.56,"1,266",Dec-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,460,000","2,034.4",718,Nov-21,WOODGROVE DRIVE,Resale,Strata,189,"7,725",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"670,000",688.9,973,Nov-21,ROSEWOOD DRIVE,Resale,Strata,64,"10,469",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODHAVEN,"683,000",602.78,"1,133",Nov-21,WOODGROVE AVENUE,Resale,Strata,56,"12,196",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+THE WOODGROVE,"772,000","1,033.34",747,Nov-21,WOODGROVE DRIVE,Resale,Strata,96,"8,042",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"1,150,000","1,625.36",708,Nov-21,ROSEWOOD DRIVE,Resale,Strata,151,"7,616",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"693,000",635.08,"1,091",Nov-21,WOODGROVE AVENUE,Resale,Strata,59,"11,746",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"980,000","1,173.28",835,Nov-21,ROSEWOOD DRIVE,Resale,Strata,109,"8,991",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+ROSEWOOD,"925,000","1,173.28",788,Nov-21,ROSEWOOD DRIVE,Resale,Strata,109,"8,486",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,11 to 15
+ROSEWOOD,"910,000","1,173.28",776,Nov-21,ROSEWOOD DRIVE,Resale,Strata,109,"8,349",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"980,000","1,270.15",772,Nov-21,ROSEWOOD DRIVE,Resale,Strata,118,"8,305",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,535,000","1,969.81",779,Nov-21,WOODGROVE DRIVE,Resale,Strata,183,"8,388",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODHAVEN,"905,000",850.36,"1,064",Nov-21,WOODGROVE AVENUE,Resale,Strata,79,"11,456",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"800,000",828.83,965,Nov-21,ROSEWOOD DRIVE,Resale,Strata,77,"10,390",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"566,888",430.56,"1,317",Nov-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,172",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"820,000",753.48,"1,088",Nov-21,ROSEWOOD DRIVE,Resale,Strata,70,"11,714",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"1,216,000","1,119.46","1,086",Nov-21,WOODGROVE AVENUE,Resale,Strata,104,"11,692",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"563,888",430.56,"1,310",Nov-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,097",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"640,000",667.37,959,Nov-21,ROSEWOOD DRIVE,Resale,Strata,62,"10,323",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,200,000","1,517.72",791,Oct-21,WOODGROVE DRIVE,Resale,Strata,141,"8,511",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+WOODHAVEN,"810,000",699.66,"1,158",Oct-21,WOODGROVE AVENUE,Resale,Strata,65,"12,462",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"815,000",828.83,983,Oct-21,ROSEWOOD DRIVE,Resale,Strata,77,"10,584",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"560,000",430.56,"1,301",Oct-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,290,000","1,915.99",673,Oct-21,ROSEWOOD DRIVE,Resale,Strata,178,"7,247",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"1,050,000","1,184.04",887,Oct-21,ROSEWOOD DRIVE,Resale,Strata,110,"9,545",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"655,000",581.26,"1,127",Oct-21,ROSEWOOD DRIVE,Resale,Strata,54,"12,130",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"995,000","1,270.15",783,Oct-21,ROSEWOOD DRIVE,Resale,Strata,118,"8,432",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"855,000",850.36,"1,005",Oct-21,WOODGROVE AVENUE,Resale,Strata,79,"10,823",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"588,000",505.91,"1,162",Oct-21,ROSEWOOD DRIVE,Resale,Strata,47,"12,511",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"762,000",893.41,853,Oct-21,ROSEWOOD DRIVE,Resale,Strata,83,"9,181",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"560,000",430.56,"1,301",Oct-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"815,000",936.47,870,Sep-21,ROSEWOOD DRIVE,Resale,Strata,87,"9,368",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+WOODHAVEN,"1,260,000","1,173.28","1,074",Sep-21,WOODGROVE AVENUE,Resale,Strata,109,"11,560",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,180,000","1,517.72",777,Sep-21,WOODGROVE DRIVE,Resale,Strata,141,"8,369",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+THE WOODGROVE,"815,000","1,022.58",797,Sep-21,WOODGROVE DRIVE,Resale,Strata,95,"8,579",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"523,000",430.56,"1,215",Sep-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,075",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,170,000","1,625.36",720,Sep-21,ROSEWOOD DRIVE,Resale,Strata,151,"7,748",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"908,888",968.76,938,Sep-21,ROSEWOOD DRIVE,Resale,Strata,90,"10,099",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"660,000",592.02,"1,115",Sep-21,WOODGROVE AVENUE,Resale,Strata,55,"12,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"1,160,000","1,517.72",764,Sep-21,WOODGROVE DRIVE,Resale,Strata,141,"8,227",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,539,000","2,249.68",684,Sep-21,ROSEWOOD DRIVE,Resale,Strata,209,"7,364",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODHAVEN,"655,000",592.02,"1,106",Sep-21,WOODGROVE AVENUE,Resale,Strata,55,"11,909",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,100,000","1,270.15",866,Sep-21,ROSEWOOD DRIVE,Resale,Strata,118,"9,322",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"542,000",430.56,"1,259",Sep-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,550",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,030,000","1,259.39",818,Sep-21,ROSEWOOD DRIVE,Resale,Strata,117,"8,803",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"775,000",936.47,828,Sep-21,ROSEWOOD DRIVE,Resale,Strata,87,"8,908",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,11 to 15
+PARC ROSEWOOD,"707,000",742.72,952,Aug-21,ROSEWOOD DRIVE,Resale,Strata,69,"10,246",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,000",602.78,"1,112",Aug-21,ROSEWOOD DRIVE,Resale,Strata,56,"11,964",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"855,000",968.76,883,Aug-21,ROSEWOOD DRIVE,Resale,Strata,90,"9,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,170,000","1,765.3",663,Aug-21,ROSEWOOD DRIVE,Resale,Strata,164,"7,134",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"539,888",430.56,"1,254",Aug-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,497",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"780,000","1,011.82",771,Aug-21,ROSEWOOD DRIVE,Resale,Strata,94,"8,298",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"1,180,000","1,905.23",619,Aug-21,ROSEWOOD DRIVE,Resale,Strata,177,"6,667",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",548.96,"1,093",Aug-21,ROSEWOOD DRIVE,Resale,Strata,51,"11,765",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"570,000",430.56,"1,324",Aug-21,ROSEWOOD DRIVE,Resale,Strata,40,"14,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"860,000","1,173.28",733,Aug-21,ROSEWOOD DRIVE,Resale,Strata,109,"7,890",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,06 to 10
+THE WOODGROVE,"675,000",893.41,756,Aug-21,WOODGROVE DRIVE,Resale,Strata,83,"8,133",-,Apartment,1,99 yrs lease commencing from 1996,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"899,000",990.29,908,Aug-21,ROSEWOOD DRIVE,Resale,Strata,92,"9,772",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"530,000",430.56,"1,231",Aug-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"520,000",430.56,"1,208",Aug-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"760,000",925.7,821,Aug-21,ROSEWOOD DRIVE,Resale,Strata,86,"8,837",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"530,000",430.56,"1,231",Aug-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"750,000",936.47,801,Aug-21,ROSEWOOD DRIVE,Resale,Strata,87,"8,621",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+ROSEWOOD SUITES,"1,080,000","1,399.32",772,Jul-21,ROSEWOOD DRIVE,Resale,Strata,130,"8,308",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"542,000",430.56,"1,259",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,550",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"670,000",764.24,877,Jul-21,ROSEWOOD DRIVE,Resale,Strata,71,"9,437",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"755,000",936.47,806,Jul-21,ROSEWOOD DRIVE,Resale,Strata,87,"8,678",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"632,000",581.26,"1,087",Jul-21,ROSEWOOD DRIVE,Resale,Strata,54,"11,704",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"549,000",430.56,"1,275",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,725",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"538,000",430.56,"1,250",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,450",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"748,888",742.72,"1,008",Jul-21,ROSEWOOD DRIVE,Resale,Strata,69,"10,853",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"580,000",516.67,"1,123",Jul-21,ROSEWOOD DRIVE,Resale,Strata,48,"12,083",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,090,000","1,259.39",865,Jul-21,ROSEWOOD DRIVE,Resale,Strata,117,"9,316",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"965,000","1,184.04",815,Jul-21,ROSEWOOD DRIVE,Resale,Strata,110,"8,773",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"870,000",828.83,"1,050",Jul-21,ROSEWOOD DRIVE,Resale,Strata,77,"11,299",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"530,000",430.56,"1,231",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,250",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"545,000",430.56,"1,266",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,625",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"890,000","1,119.46",795,Jul-21,ROSEWOOD DRIVE,Resale,Strata,104,"8,558",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"538,000",430.56,"1,250",Jul-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,450",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,250,000","1,517.72",824,Jul-21,ROSEWOOD DRIVE,Resale,Strata,141,"8,865",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"878,000","1,237.86",709,Jul-21,WOODGROVE DRIVE,Resale,Strata,115,"7,635",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,141,000","1,625.36",702,Jul-21,ROSEWOOD DRIVE,Resale,Strata,151,"7,556",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+WOODGROVE CONDOMINIUM,"815,000","1,184.04",688,Jul-21,WOODGROVE DRIVE,Resale,Strata,110,"7,409",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"630,000",656.6,959,Jul-21,ROSEWOOD DRIVE,Resale,Strata,61,"10,328",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"1,230,000","1,765.3",697,Jun-21,ROSEWOOD DRIVE,Resale,Strata,164,"7,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD SUITES,"1,300,000","1,700.71",764,Jun-21,ROSEWOOD DRIVE,Resale,Strata,158,"8,228",-,Condominium,1,99 yrs lease commencing from 2008,25,Outside Central Region,01 to 05
+CASABLANCA,"765,000",936.47,817,Jun-21,ROSEWOOD DRIVE,Resale,Strata,87,"8,793",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODHAVEN,"760,000",699.66,"1,086",Jun-21,WOODGROVE AVENUE,Resale,Strata,65,"11,692",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"650,000",602.78,"1,078",Jun-21,ROSEWOOD DRIVE,Resale,Strata,56,"11,607",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,050,000","1,550.02",677,Jun-21,ROSEWOOD DRIVE,Resale,Strata,144,"7,292",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"600,000",516.67,"1,161",Jun-21,ROSEWOOD DRIVE,Resale,Strata,48,"12,500",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"545,000",516.67,"1,055",Jun-21,ROSEWOOD DRIVE,Resale,Strata,48,"11,354",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"530,000",505.91,"1,048",Jun-21,ROSEWOOD DRIVE,Resale,Strata,47,"11,277",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"562,000",516.67,"1,088",Jun-21,ROSEWOOD DRIVE,Resale,Strata,48,"11,708",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"850,000","1,119.46",759,Jun-21,ROSEWOOD DRIVE,Resale,Strata,104,"8,173",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"720,000",764.24,942,Jun-21,ROSEWOOD DRIVE,Resale,Strata,71,"10,141",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+CASABLANCA,"855,000","1,119.46",764,Jun-21,ROSEWOOD DRIVE,Resale,Strata,104,"8,221",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+WOODGROVE CONDOMINIUM,"1,040,000","1,517.72",685,Jun-21,WOODGROVE DRIVE,Resale,Strata,141,"7,376",-,Condominium,1,99 yrs lease commencing from 1997,25,Outside Central Region,01 to 05
+ROSEWOOD,"1,500,000","2,152.8",697,Jun-21,ROSEWOOD DRIVE,Resale,Strata,200,"7,500",-,Condominium,1,99 yrs lease commencing from 2000,25,Outside Central Region,16 to 20
+CASABLANCA,"830,000","1,119.46",741,Jun-21,ROSEWOOD DRIVE,Resale,Strata,104,"7,981",-,Condominium,1,99 yrs lease commencing from 2001,25,Outside Central Region,06 to 10
+PARC ROSEWOOD,"528,000",430.56,"1,226",Jun-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,200",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05
+PARC ROSEWOOD,"520,000",430.56,"1,208",Jun-21,ROSEWOOD DRIVE,Resale,Strata,40,"13,000",-,Condominium,1,99 yrs lease commencing from 2011,25,Outside Central Region,01 to 05

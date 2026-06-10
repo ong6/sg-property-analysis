@@ -194,7 +194,6 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
         or listing.agent_stack_notes
         or listing.agent_rental_assessment
         or listing.agent_appreciation_assessment
-        or listing.agent_score_adjustment != 0
     )
     if has_ai_review:
         lines.append("#### AI Research & Opinion")
@@ -231,12 +230,6 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
             lines.append(listing.agent_appreciation_assessment)
             lines.append("")
 
-        if listing.agent_score_adjustment != 0:
-            adj = listing.agent_score_adjustment
-            sign = "+" if adj > 0 else ""
-            reason = f" ({listing.agent_adjustment_reason})" if listing.agent_adjustment_reason else ""
-            lines.append(f"**Score Adjustment:** {sign}{adj:.1f}{reason}")
-            lines.append("")
 
         if listing.agent_confidence:
             lines.append(f"**Confidence:** {listing.agent_confidence}")

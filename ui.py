@@ -17,7 +17,7 @@ import json
 import os
 import urllib.parse
 import webbrowser
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 ARENA_CSV = os.path.join(DATA_DIR, "arena_results.csv")
@@ -292,7 +292,8 @@ def main():
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
 
-    server = HTTPServer(("127.0.0.1", args.port), Handler)
+    # Threading: an idle browser preconnect must not block the accept loop
+    server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     url = f"http://127.0.0.1:{args.port}"
     print(f"Condo arena UI: {url}  (Ctrl-C to stop)")
     if not args.no_browser:

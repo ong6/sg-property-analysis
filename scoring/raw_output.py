@@ -163,6 +163,15 @@ def _build_roi_projections(listing: ScoredListing) -> dict:
                 "roi_pct": round(roi.roi_percent, 2),
                 "annualized_roi": round(roi.annualized_roi, 2),
             }
+    if projections:
+        # v3.5b: the model basis was previously undisclosed and easy to misread
+        # as a leveraged equity return.
+        projections["basis"] = (
+            "ALL-CASH (no mortgage): returns are on full purchase price + "
+            "upfront costs. Rent compounds at ~2%/yr; appreciation rate decays "
+            "3%/yr toward mean. A 75% LTV buyer's equity returns scale very "
+            "differently — do not compare these numbers to leveraged ROI."
+        )
     return projections
 
 
@@ -462,15 +471,20 @@ def generate_raw_analysis(
             + mode_notes[mode]
         ),
         "forward_signal_priors": (
-            "Backtest-calibrated (v3.4 — see docs/evaluation-rubric.md 'What the data "
-            "actually predicts'): the robust forward signals are CHEAP-VS-DISTRICT-PEERS "
-            "(factual_data.relative_value, psf_premium_vs_ura_median_pct) and REGION (realized "
-            "forward OCR +4.0% ≥ RCR +3.5% ≫ CCR +0.7% — the OPPOSITE of old CCR-leads priors). "
-            "Trailing appreciation_rate has ~0 forward power and momentum is flat-to-contrarian — "
-            "use them for the STORY/catalyst, not as the forward number. Freehold is NOT a forward "
-            "edge. Absolute low PSF is mostly the region effect — don't double-count it. The model "
-            "explains <10% of forward variance: small score_1000 gaps are noise — reserve HIGH "
-            "confidence for decisive physical/catalyst evidence, treat near-ties as Neutral."
+            "Backtest-calibrated (v3.5, full 28-district URA panel — see "
+            "docs/evaluation-rubric.md 'What the data actually predicts'): the robust forward "
+            "signals are CHEAP-VS-DISTRICT-PEERS (factual_data.relative_value, "
+            "psf_premium_vs_ura_median_pct), REGION (realized forward OCR +3.7% > RCR +3.1% "
+            "≫ CCR +1.9% — the OPPOSITE of old CCR-leads priors), and district buyer-pool "
+            "depth. Trailing appreciation_rate has little forward power (~+0.03 marginal) and "
+            "momentum is unstable across samples — use them for the STORY/catalyst, not as the "
+            "forward number. Freehold is NOT a forward edge (it does carry a ~5% PSF level "
+            "premium — already in the price, not a return driver). The future-infrastructure "
+            "score has NO measured forward power — treat 'transformation upside' as narrative, "
+            "not edge. Absolute low PSF is mostly the region effect — don't double-count it. "
+            "The model explains <10% of forward variance: small score_1000 gaps are noise — "
+            "reserve HIGH confidence for decisive physical/catalyst evidence, treat near-ties "
+            "as Neutral."
         ),
         "steps": steps_by_mode[mode],
         "agent_field_guide": {

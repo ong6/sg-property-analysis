@@ -1,14 +1,9 @@
-"""Data models for scoring system.
+"""Data models for the scoring system.
 
-Scoring System v2.1 (100 pts max, no URA bias):
-- Rental Yield: 15 pts
-- Capital Appreciation: 30 pts (uses real transaction data for ALL properties)
-- Future Potential: 20 pts
-- Liquidity: 25 pts
-- Cost Efficiency: 10 pts
-- Red Flags: -10 pts max
-
-Max possible: 100 pts for ALL properties equally.
+The ranking signal is MMR (scoring/mmr.py — continuous, uncapped, displayed
+as score_1000). The legacy /100 category points are still populated on
+ScoredListing for report context, but they do not drive ranking or tiers
+whenever an MMR score is present (see final_tier).
 """
 
 from dataclasses import dataclass, field
@@ -261,7 +256,6 @@ class ScoredListing:
     liquidity_score: float = 0  # 25 pts max
     cost_efficiency_score: float = 0  # 10 pts max
     red_flag_deductions: float = 0  # -10 pts max
-    ura_bonus_score: float = 0  # DEPRECATED - kept for compatibility, always 0
 
     # Future score details
     future_score_details: Optional[FutureScore] = None
@@ -291,8 +285,7 @@ class ScoredListing:
             + self.cost_efficiency_score
             - self.red_flag_deductions
         )
-        clamped_adj = max(-8.0, min(8.0, self.agent_score_adjustment))
-        return base + clamped_adj
+        return base
 
     @property
     def final_tier(self) -> int:
@@ -368,7 +361,6 @@ class ScoredListing:
     agent_summary: Optional[str] = None
     agent_red_flags: list[str] = field(default_factory=list)
     agent_catalysts: list[str] = field(default_factory=list)
-    agent_score_adjustment: float = 0.0
     agent_adjustment_reason: Optional[str] = None
     agent_rental_assessment: Optional[str] = None
     agent_appreciation_assessment: Optional[str] = None
@@ -481,7 +473,6 @@ class ScoredListing:
             or self.agent_summary is not None
             or self.agent_red_flags
             or self.agent_catalysts
-            or self.agent_score_adjustment != 0
             or self.agent_confidence is not None
             or self.agent_appreciation_rate_pct is not None
         )
@@ -493,7 +484,6 @@ class ScoredListing:
                 "summary": self.agent_summary,
                 "red_flags": self.agent_red_flags,
                 "catalysts": self.agent_catalysts,
-                "score_adjustment": self.agent_score_adjustment,
                 "adjustment_reason": self.agent_adjustment_reason,
                 "rental_assessment": self.agent_rental_assessment,
                 "appreciation_assessment": self.agent_appreciation_assessment,
