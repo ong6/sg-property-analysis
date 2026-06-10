@@ -112,6 +112,197 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-60191425",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-10",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The volume product of this 50-unit block: studios/1BR+S from 377-700sqft, ~$690-790k quantum, 320m to Aljunied MRT. Real URA rents give ~4.6% gross yield and the asking psf sits ~10% under the age-adjusted district median — but the project has 7 resales in 5 years and small-unit psf is still below its 2018 peak, so this is a yield hold with no demonstrated capital growth.",
+      "rating_rationale": "Honest yield play, not a growth asset. The MMR 768 leans on a 9.78% CAGR that is a mix artifact (ground-floor $986psf 2021 base); the verifiable small-unit trend is ~3%/yr off a 2024 base and $1,572 Apr-2026 < $1,826 Jun-2018 peak. ~4.6% yield near MRT is solid for D14, but exit liquidity (~2.8%/yr turnover) and Geylang-fringe stigma mean you may give back the discount on exit. The -9.6% relative-value cushion is fair compensation, not an edge.",
+      "red_flags": [
+        "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+        "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+        "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+        "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+        "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+        "$999psf/700sqft listings are plausibly real ground-floor/PES 1BR+S units — the low psf buys outdoor space, not value"
+      ],
+      "catalysts": [
+        "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+        "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+        "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+      ],
+      "as_of": {
+        "price": 708000,
+        "psf": 1605.44,
+        "beds": 1,
+        "sqft": 441.0
+      },
+      "key_facts": {
+        "appreciation_pct": 9.78,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.63,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "The volume product of this 50-unit block: studios/1BR+S from 377-700sqft, ~$690-790k quantum, 320m to Aljunied MRT. Real URA rents give ~4.6% gross yield and the asking psf sits ~10% under the age-adjusted district median — but the project has 7 resales in 5 years and small-unit psf is still below its 2018 peak, so this is a yield hold with no demonstrated capital growth.",
+        "rating": "Neutral",
+        "rating_rationale": "Honest yield play, not a growth asset. The MMR 768 leans on a 9.78% CAGR that is a mix artifact (ground-floor $986psf 2021 base); the verifiable small-unit trend is ~3%/yr off a 2024 base and $1,572 Apr-2026 < $1,826 Jun-2018 peak. ~4.6% yield near MRT is solid for D14, but exit liquidity (~2.8%/yr turnover) and Geylang-fringe stigma mean you may give back the discount on exit. The -9.6% relative-value cushion is fair compensation, not an edge.",
+        "red_flags": [
+          "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+          "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+          "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+          "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+          "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+          "$999psf/700sqft listings are plausibly real ground-floor/PES 1BR+S units — the low psf buys outdoor space, not value"
+        ],
+        "catalysts": [
+          "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+          "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+          "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+        ],
+        "rental_assessment": "Strong tenant demand fundamentals: 320m to Aljunied EW9, food/transport-rich. SRX shows 1BR rents $2,700-3,400/mo — the $2,734 URA estimate is conservative-realistic. Expect investor-grade tenants (singles/couples); vacancy risk low, but no facilities limits rent ceiling.",
+        "appreciation_assessment": "Verifiable trend ~3%/yr (Nov 2024 $1,507 -> Apr 2026 $1,572, cross-unit small-band), in line with D14 district 3.7%. Long-run flat: 2026 psf below the 2018 peak. Override the 9.78% data rate to 3.0%.",
+        "stack_notes": "50 units over 8 floors, single block. Prefer high floors (#06-08) away from Aljunied Road frontage for noise; the Apr 2026 $1,572psf resale was a top-floor #08 420sqft. Among 1BR types the 484sqft 1BR+S (18 units, biggest cohort) is the most defensible buy/exit; avoid paying full psf for 700sqft 1BR+S ground-floor/PES variants (outdoor space in the sqft). Stack-facing map unverified — check unit orientation vs Aljunied Rd on viewing.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "SRX resale trend small-unit band Nov 2024 $1,507psf -> Apr 2026 $1,572psf (~3%/yr) + D14 district 3.7%; 2018 peak $1,826psf still unrecovered"
+      },
+      "source": {
+        "run_dir": "output/run_035_avant-residences",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-25627400",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-10",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Eight compact 2BRs (527-764sqft); the listed 527sqft units at ~$800k are micro-2BRs below the 600sqft norm. Best yield of the project on paper (4.89% on real URA project rent) and -14.6% vs age-adjusted median, but same thin-exit, no-growth project story.",
+      "rating_rationale": "The 4.89% yield and 14.6% age-adjusted discount are attractive, but a 527sqft 2BR is an investor-only product in a Geylang-fringe boutique block — the resale exit depends on finding another yield investor, and the project transacts ~1-2 units a year. The scorer's bedroom_sqft_mismatch flag is correct in spirit: this competes with 1BRs at rent time ($2,900-3,600/mo per SRX, overlapping 1BR rents).",
+      "red_flags": [
+        "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+        "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+        "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+        "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+        "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+        "527sqft '2BR' micro-split — competes with 1BRs for tenants and exit buyers"
+      ],
+      "catalysts": [
+        "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+        "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+        "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+      ],
+      "as_of": {
+        "price": 799999,
+        "psf": 1518.02,
+        "beds": 2,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": 9.78,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.89,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "Eight compact 2BRs (527-764sqft); the listed 527sqft units at ~$800k are micro-2BRs below the 600sqft norm. Best yield of the project on paper (4.89% on real URA project rent) and -14.6% vs age-adjusted median, but same thin-exit, no-growth project story.",
+        "rating": "Neutral",
+        "rating_rationale": "The 4.89% yield and 14.6% age-adjusted discount are attractive, but a 527sqft 2BR is an investor-only product in a Geylang-fringe boutique block — the resale exit depends on finding another yield investor, and the project transacts ~1-2 units a year. The scorer's bedroom_sqft_mismatch flag is correct in spirit: this competes with 1BRs at rent time ($2,900-3,600/mo per SRX, overlapping 1BR rents).",
+        "red_flags": [
+          "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+          "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+          "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+          "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+          "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+          "527sqft '2BR' micro-split — competes with 1BRs for tenants and exit buyers"
+        ],
+        "catalysts": [
+          "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+          "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+          "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+        ],
+        "rental_assessment": "SRX 2BR rents $2,900-3,600/mo support the $3,257 estimate. The second 'bedroom' in 527sqft is small — rent premium over a 1BR+S is thin ($200-400/mo), so the yield edge over the 1BR is more about price than product.",
+        "appreciation_assessment": "Same project trend applies: ~3%/yr verifiable, flat since 2018 peak. No 2BR-specific resale cohort to read (psf_cohort_txns=6 is mostly the small-unit band). Override to 3.0%.",
+        "stack_notes": "Only 8 true 2BRs — cohort is tiny. Prefer the 764sqft variant over the 527sqft micro if available (more exit-defensible), high floor, away from Aljunied Road. At ~$800k for 527sqft you are paying $1,518psf for a micro-split — negotiate toward $1,450psf or below where the discount genuinely compensates.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "SRX resale trend small-unit band Nov 2024 -> Apr 2026 ~3%/yr + D14 district 3.7%; 2018 peak unrecovered"
+      },
+      "source": {
+        "run_dir": "output/run_035_avant-residences",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-60119374",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-10",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Portal-labelled 3BR is actually the 936sqft 2BR+Study DUAL-KEY (two self-contained sub-units), of which only 4 exist (#02-02 to #05-02, stack 02 floors 2-5). The $1.29M listing at $1,378psf is the cheapest psf in the project and -17.9% vs age-adjusted median; the dual-key format can out-earn the single-tenancy rent estimate, but a 4-unit cohort means there is essentially no resale market to price against.",
+      "rating_rationale": "Cheapest psf entry with a real dual-key income angle (two tenancies near MRT could beat the $5,784 single-let estimate, which itself looks optimistic vs SRX large-unit psf rents). But the entire thesis rests on 4 units with zero recent transactions — psf_cohort_txns=0 — so both the 'discount' and the exit price are unpriceable. A $1.3-1.4M quantum locked into a no-facility Geylang-fringe boutique with ~no comparables is a liquidity trap even if the carry is good. Only worth pursuing at a clear discount ($1,378psf end, not $1,496) and with dual-key rent evidence in hand.",
+      "red_flags": [
+        "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+        "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+        "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+        "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+        "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+        "Only 4 dual-key units exist; psf_cohort_txns=0 — no price discovery for entry or exit",
+        "Rent estimate $5,784/mo is project-pooled psf x sqft — likely overstated for a large unit single-let"
+      ],
+      "catalysts": [
+        "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+        "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+        "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1495.73,
+        "beds": 3,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": 9.78,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.96,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "Portal-labelled 3BR is actually the 936sqft 2BR+Study DUAL-KEY (two self-contained sub-units), of which only 4 exist (#02-02 to #05-02, stack 02 floors 2-5). The $1.29M listing at $1,378psf is the cheapest psf in the project and -17.9% vs age-adjusted median; the dual-key format can out-earn the single-tenancy rent estimate, but a 4-unit cohort means there is essentially no resale market to price against.",
+        "rating": "Neutral",
+        "rating_rationale": "Cheapest psf entry with a real dual-key income angle (two tenancies near MRT could beat the $5,784 single-let estimate, which itself looks optimistic vs SRX large-unit psf rents). But the entire thesis rests on 4 units with zero recent transactions — psf_cohort_txns=0 — so both the 'discount' and the exit price are unpriceable. A $1.3-1.4M quantum locked into a no-facility Geylang-fringe boutique with ~no comparables is a liquidity trap even if the carry is good. Only worth pursuing at a clear discount ($1,378psf end, not $1,496) and with dual-key rent evidence in hand.",
+        "red_flags": [
+          "Headline 9.78%/yr 5yr CAGR is mix-distorted: base includes a $986psf ground-floor 700sqft sale (Jun 2021); actual small-unit resales went $1,507psf (Nov 2024) -> $1,572psf (Apr 2026), ~3%/yr, and remain BELOW the Jun 2018 peak of $1,826psf",
+          "7 URA transactions in 5 years on 50 units (~2.8%/yr turnover) — genuinely thin exit; the 'very_deep' buyer_pool field is district-level, not project-level",
+          "Boutique 50-unit block on a ~907sqm plot with effectively no facilities (EdgeProp lists 0); resident reviews cite poor management and pest issues",
+          "Geylang-fringe / Aljunied Road arterial frontage: traffic noise + owner-occupier stigma caps the resale buyer pool to investors (financing itself is normal — not a restricted lorong)",
+          "One-off SPV developer (Avant At Aljunied Pte Ltd) — no track record, no brand premium",
+          "Only 4 dual-key units exist; psf_cohort_txns=0 — no price discovery for entry or exit",
+          "Rent estimate $5,784/mo is project-pooled psf x sqft — likely overstated for a large unit single-let"
+        ],
+        "catalysts": [
+          "Aljunied MRT (EW9) ~320m — genuine rental-demand anchor; real URA rents support ~4.6-5.0% gross yields",
+          "RCR forward prior ~+3.1%/yr (v3.5 backtest) and 10-18% discount vs age-adjusted district median — the value cushion is real even if project-specific growth is absent",
+          "Paya Lebar Quarter / Kinex precinct ~1.2km — mild spillover demand for city-fringe rentals (narrative, not measured edge)"
+        ],
+        "rental_assessment": "Treat the $5,784/mo estimate with suspicion — it is project-pooled $6.1psf x 936sqft, while SRX shows larger units rent at the LOWER end of the psf range ($5.00-5.69). Single-let realistic: $4,700-5,300. Dual-key (studio ~$2,000-2,400 + 2BR ~$2,900-3,300) could reach $5,000-5,700 with two tenancies' management overhead. Yield ~4.3-4.9% at $1.29M.",
+        "appreciation_assessment": "No cohort data at all for this type (psf_cohort_txns=0). Project trend ~3%/yr applies at best; dual-keys resell to a narrow investor niche. Override to 3.0%.",
+        "stack_notes": "All four units are stack 02, floors 2-5 (low floors). #05-02 is the best of the four (highest of the dual-keys); #02-02 likely takes the most road/street noise. Facing unverified — inspect for Aljunied Road exposure. Prefer the $1.29M/$1,378psf listing over the $1.40M/$1,496psf one; the 8.5% psf gap is the whole margin in a cohort with no price discovery.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "No type-specific resales (4-unit cohort); project small-unit trend ~3%/yr + D14 district 3.7% used as ceiling"
+      },
+      "source": {
+        "run_dir": "output/run_035_avant-residences",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-avant-residences-24235534",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
