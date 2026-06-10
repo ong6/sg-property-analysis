@@ -22,6 +22,172 @@ This doc answers four questions you asked:
 
 ---
 
+## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
+
+A systematic pass over every remaining known gap. Composite forward-ρ unchanged
+at **+0.288**; raw-MMR mean 1512.0 = the norm center exactly (no recalibration);
+122/122 tests.
+
+| Gap | What was done |
+|---|---|
+| **MRT source regression (self-inflicted, caught in review)** | The v3.5b centroid backfill silently overrode `mrt_info` walking distances with straight-line estimates (`get_mrt_distance` preferred coords). Fixed priority: listing coords > portal walking distance > project centroid (`utils/geo.py`). |
+| **MRT station list** | Added Punggol Coast (NE18, Dec-2024) and Hume (DT4, Feb-2025); TEL stage 4 verified present; Founders' Memorial correctly excluded (opens 2028). 142 stations. |
+| **District benchmarks were 7 hand-set districts, stale** | New `build_district_benchmarks.py`: psf (12mo URA resale medians), rental_psf + per-bed rents (12mo real contracts), avg_yield for **27 districts**, written to `district_medians.json` + refreshed `district_profiles.json` price/rent fields. Old folk values were up to ~30% off (D19 rent 3.60 hand-set vs 4.77 measured). |
+| **Single-listing flows scored with cohort_stats={} (audit 4.12)** | `FullScorer` now seeds cohort distributions from the 6k-listing DB when no batch is supplied (module-cached, ~0.1s). |
+| **project_units join misses** | Safe normalization (apostrophes, @/at, punctuation) + slash-split aliases for the GIS layer's shared-site names ("THE PALETTE/D'NEST", units flagged `shared_site`). DB coverage 4,629 → **5,050/6,349 (80%)**. Remaining misses are new launches not yet in the dwelling-units layer (structural). |
+| **Floor factors: one curve per district** | Per-project FE curve where a project's own txns carry >=40 cross-tier contrast obs (`project_floor_factors`); 132 projects now self-calibrated (median spread 7.2%, p10–p90 1.9–14.2% — real heterogeneity, e.g. Parc Esta ~0.9%/tier vs district ~3%). District FE fallback otherwise. |
+| **"Single bull regime" caveat** | **PART 5h** (new): URA non-landed price index by locality, 81 rolling 2yr windows 2004–2026. **OCR out-returned CCR in every regime** — down +1.75pp/yr (and falls less), flat +4.9pp, bull +1.6pp; OCR won 43/81 quarters. The OCR>CCR tilt is structural → baselines widened CCR 3.0→2.8 / OCR 4.0→**4.2** (spread 1.4pp, still ~70% of the all-regime ~2pp average). Profiles synced. |
+| **ROI rent flat + basis undisclosed** | Rent now compounds at `ROI_RENT_GROWTH_PER_YEAR` (2%/yr, config); `roi_projections` carries an explicit ALL-CASH basis note so the AI can't misread it as leveraged ROI. |
+
+**Genuinely unclosable (documented, not hidden):** per-listing coords (centroid
+is the floor until detail-page enrichment runs); new-launch units/coords (enter
+the GIS layer at TOP); D24 condo rentals (none exist); `mmr_history` forward
+calibration (needs ~9 more months); leveraged-ROI modelling (needs buyer
+financing inputs the flows don't collect).
+
+## v3.5b — data-gap closure: full 28-district panel, real rents, units+coords (2026-06-10)
+
+This pass went after the §"Still open / data gaps" list directly. New data + harnesses:
+
+**1. Full 28-district URA panel.** `fetch_ura_districts.py` pulled the 15 missing
+districts (incl. all of CCR); `ura_cache.json` rebuilt → **2,293 projects** (was
+1,337). A windows-1252 encoding crash (ENCHANTÉ, D11) was silently dropping a whole
+district during cache builds — fixed in every CSV loader. Re-validation on the
+expanded panel (106,749 txns; forward panel 1,460 rows, CCR n=270):
+- Composite forward-ρ with shipped v3.5 weights: **+0.288** (beats the in-sample
+  optimal linear +0.241 — the weights generalize).
+- Region de-inversion CONFIRMED at scale: realized fwd **OCR +3.7 > RCR +3.1 ≫
+  CCR +1.9%/yr**; compressed baselines (3.0/3.7/4.0) well calibrated, unchanged.
+- **Freehold's forward underperformance was a 13-district artifact** — full panel:
+  univariate −0.007, marginal +0.002 ≈ exactly neutral. v3.4's +1.0 treatment
+  stands. (Hedonically freehold = +5.5% PSF LEVEL premium — in the price, not a
+  return edge.)
+- `future` still ≈0/negative marginal; `buyer_pool` STRENGTHENED (std_β +0.16 —
+  real content beyond region; its ±7 weight is now evidence-backed).
+- trailing CAGR/momentum turn mildly positive (+0.03/+0.06 marginal) on the full
+  panel — supports appreciation slope 3.0 (not lower); momentum stays 0 (sign
+  flips across panels = not robust).
+
+**2. `dev_size` + `mrt` validated and turned ON in production.** New
+`build_project_units.py` ingests the public URA "No of Dwelling Units" GIS layer
+(data.gov.sg `d_be71daeab5930f96b90ad2857454d876`) → `data/project_units.json`:
+**total units + WGS84 centroid for 3,048 projects** (spot-checked exact: Parc Esta
+1,399, Florence 1,410, JadeScape 1,206, Treasure 2,203; 93% URA-cache coverage).
+Backtest PART 5f (97% panel join): **MRT distance std_β −0.157** (a real forward
+signal — closer wins, suppressed univariately by CCR), dev_size marginal +0.045
+(direction right). Production: `FullScorer` now backfills `total_units` and
+lat/lng (`coords_source: project_centroid`) from this file — the dev_size
+component and the future-MRT proximity sub-score were silently dead for ~every
+listing (6,348/6,349 had no units, none had coords). Exact-name join only.
+
+**3. `yield` finally testable — REAL rents.** New `fetch_ura_rentals.py` scrapes
+URA PMI rental contracts per postal district (same portal as transactions;
+property type label differs: "Non-Landed Housing Development"; CSV export caps at
+the 10k most-recent rows, so a `--from/--to` lease-commencement range fetches
+point-in-time slices). Backtest PART 5g joins as-of-2023/24 per-project median
+rental PSF to the panel: **real-rent gross yield has ~0/mildly NEGATIVE forward
+PRICE signal** (univariate −0.11, marginal −0.06 on the partial join — classic
+yield compression). Yield's value is **carry** (~1pp yield ≈ 1pp/yr total return),
+which is what the MMR component prices for a 5-7yr hold — not appreciation.
+Production: `build_rental_cache.py` → `data/rental_cache.json` (per-project,
+bed-matched 12-24mo median rents); `rental_estimator` now serves them as
+`ura_project_bed` (conf 0.95) / `ura_project` (0.8) ahead of the synthetic
+district constants — the v3.4 yield-circularity fix now happens at the SOURCE.
+
+**4. Shipped-score calibration harness wired.** `calibrate_forward.py` joins
+`mmr_history.csv` snapshots to later realized URA PSF per project (cohort-level
+Spearman + tier tables). Runs now, correctly reports the 2026-06 cohort needs
+~9 months of forward window; re-run quarterly (zero new wiring needed).
+
+**Final state of this pass (all shipped):** 122/122 tests pass. Yield slope
+compressed 18.75→**10 pts/pp** (`MMR_YIELD_SLOPE_PTS_PER_PP`, PART 5g: +1pp
+yield → −0.75pp/yr forward price growth → net total-return edge ~+0.25pp/pp;
+compression not elimination — the price-drag estimate is one bull regime).
+Real-rent coverage: **4,629/6,349 DB listings (73%)** now price rents from
+actual URA contracts (`ura_project_bed` conf 0.95 / `ura_project` 0.8) — e.g.
+Botanique 2BR $3,843/mo real vs $2,884 synthetic (district constant was 33%
+low). dev_size + future-MRT proximity now live via `project_units.json`
+(units + centroids). Full DB re-scored; raw-MMR mean 1504→1512.3 (dev_size
+activation + real rents) → `MMR_NORM_CENTER` recalibrated to **1512**
+(score_1000 mean 505 / sd 168, tiers stable). Composite forward-ρ on the full
+28-district panel: **+0.288**. Data artifacts: `data/ura_rental_D*.csv`
+(227k contracts, current + 2023-01→2024-06 as-of slices),
+`data/rental_cache.json` (2,226 projects), `data/project_units.json` (3,048
+projects). Remaining gaps: D24 has no condo rental contracts; per-listing
+(vs project-centroid) coords; the `mmr_history` forward join needs ~9 more
+months; all conclusions remain single-regime (2021–26 bull) until a downturn
+is in the panel.
+
+## v3.5 — un-tested levers validated + floor de-attenuation + joint re-fit (2026-06-10)
+
+**Backtest first** (`backtest_ext.py` PART 5, new this pass — runs with the main
+report): district-level point-in-time joins now cover the levers §3d flagged as
+un-tested, plus a within-project floor measurement and an out-of-split joint re-fit.
+
+| Lever | Result | Action |
+|---|---|---|
+| `future` (govt zone+transformation+supply — the EXACT production score for the coordinate-less listings that dominate the DB) | univ ρ +0.07 = region in disguise; **multivariate std_β −0.003 ≈ 0** | left at the v3.4 reined-in slope; do NOT widen (now measured, not just suspected) |
+| `buyer_pool` | std_β +0.03 (weak, mostly region; +0.15 within OCR) | kept at ±7; no evidence to grow or kill |
+| Property age (leasehold, age at T) | univ ρ **+0.21** (old = cheap = the value channel), but marginal ≈ −0.002 once value+region controlled | age curve left unchanged — its penalty direction is marginally supported; the univariate positive is already captured by `age_value` |
+| Floor | within-project FE: **+3.12%/tier (+6.35% low→high)**; stored cache factors were **+1.44%** | **fixed — see below** |
+| `yield`, `dev_size` | **still untestable** (no real per-project rental series in the repo; `total_units` absent from URA panel and 6348/6349 listings) | data gap — see §3d |
+| Joint re-fit (ridge, trained T=2023.75+2024.0, **evaluated on held-out T=2024.25**) | ρ **+0.26–0.27** vs current composite +0.235 on the same split; signed weights: value & region dominate; trailing_cagr/momentum/freehold ≈ 0; txn_vol **negative** | appreciation slope 4→3, liquidity weight 10→6 (below) |
+
+**Floor-factor de-attenuation** (`scrapers/ura_scraper.py:district_floor_factors`):
+the old estimator divided each txn's PSF by its project+band median *pooled across
+floors* — in cells dominated by one tier, that tier's ratio ≈ 1.0 by construction,
+so the dominant tier anchored to 1 and the premium collapsed (~1.4% stored vs
+~6.4% real). Replaced with a within-(project × size-band) fixed-effects slope
+(immune to tier-composition anchoring, ±8% sanity clamp), and `ura_cache.json`
+floor_factors were surgically recomputed for all 13 districts (now 1.1–5.6%/tier,
+`basis: district_fe`). High-floor listings are no longer systematically over-penalized
+(≈2–4 MMR pts swing between a low- and high-floor unit at the same ask).
+
+**Config reweight** (both config-tunable, comments cite PART 5d):
+`MMR_APPRECIATION_SLOPE` 4.0→**3.0** (trailing CAGR marginal ≈ 0/negative; kept as
+a desirability proxy only) and new `MMR_TXN_VOLUME_WEIGHT` 10→**6** (volume's
+univariate +0.10 is value/region in disguise; marginal β negative — it stays only
+as exit-risk insurance). Composite forward-ρ with shipped weights: **+0.242**
+(was +0.240); 117/117 tests pass; raw-MMR mean drift re-checked (see norm center).
+
+**Bug fixes this pass** (each verified against code + data before fixing):
+- `mmr.py` psf_value confidence: the no-size-data fallback used the project-wide
+  txn count, so a size-MIXED pooled-median premium could earn full confidence while
+  a confirmed-thin band was damped — inverted. Fallback now capped at 15 (≈0.75
+  weight). Blast radius today: 13/1337 projects, ~2 listings — invariant fix.
+- `invest.py --from-review`: the legacy /100 recompute read the obsolete
+  `algo_breakdown` key, so `prev_rate_pct` was always None for modern files and the
+  appreciation-score recompute silently dropped every non-rate sub-component. Now
+  falls back to `factual_data.appreciation.annual_rate_pct`. (MMR path was correct.)
+- `data/district_profiles.json` D3 claimed `greater_southern_waterfront` while the
+  zone master says GSW = D4/D5 → D3 was over-scored ~16/100 in district discovery
+  and +1 transformation for all D3 listings. Removed (D3 is GSW-adjacent, not in-zone).
+- `data/government_zones.json` Tengah now includes D24 (the namesake district;
+  profiles already claimed it — the two files disagreed).
+- `full_scorer.py`: removed the dead `scored.costs` write (never serialized or read,
+  and it used a divergent flat-2% exit-price path — a foot-gun for future readers).
+- `costs.py`: owner-occupied 0% property-tax band $8k→$12k AV (IRAS 2025+; path
+  currently unused by the investment flows).
+- `district_scorer.py` docstring still described the pre-v3.4 inverted baselines.
+
+**Findings investigated and NOT acted on** (don't re-litigate):
+- "Young `ura_resale_only` projects get double-discounted" — REFUTED as a bug: the
+  <5yr discount of resale-only rates is a documented deliberate choice (early
+  "resales" are sub-sale flips bought at developer prices); the `excess<=0` guard
+  bounds it, and the backtest can't adjudicate the residual. Left as designed.
+- Age sweet-spot curve reshaping — rejected: marginal age effect is ≈0/slightly
+  negative once value+region are controlled, so the penalty's direction stands;
+  reshaping to chase the +0.21 univariate would double-count the value channel.
+- Absolute-price component — still rejected (PART 5d: `log_psf` flips *positive*
+  once psf_vs_dist + region are in the model; it has no stable independent sign).
+- Arena Elo math, PSF guard, verdict mapping, BSD/ABSD/SSD schedules, rental-
+  estimator units, URA fuzzy-join, listings-db dedup — audited, all clean.
+
+**Still open / data gaps:** real rental series (to test `yield`), `total_units`
+(to test `dev_size`), only 13/28 districts in the panel (CCR is n=47 — regional
+reads are OCR/RCR-dominated), and the `mmr_history` forward-calibration join
+(needs scores to age ≥1yr; started Jun 2026).
+
 ## v3.4.1 — size-aware relative value (2026-06-10)
 
 `relative_value`/`age_value` is now **size-aware**: each district peer is compared on

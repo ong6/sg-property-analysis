@@ -71,8 +71,10 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1507  # v3.4 recalibration: mean raw MMR of 6,338-listing DB = 1507.0
-MMR_NORM_SCALE = 29     # v3.4: score_1000 mean≈502, sd≈172, tiers (450/650) stable
+MMR_NORM_CENTER = 1512  # v3.5b recalibration: mean raw MMR of 6,338-listing DB = 1512.3
+                        # (dev_size now live via project_units.json, real-rent yields,
+                        # yield slope 18.75→10, expanded 2,293-project URA cache)
+MMR_NORM_SCALE = 29     # v3.5b: score_1000 sd≈167, tiers (450/650) stable
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
 SCORE1000_TIER2_MIN = 450  # Consider
@@ -94,9 +96,32 @@ SCORE1000_TIER2_MIN = 450  # Consider
 # relvalue cap raised 20→28 so the strongest region-robust signal is no longer throttled
 # in its high-conviction (deep-discount) tail. Appreciation slope kept low at 4.0.
 # Caveat: single bull regime (2021-26) — magnitudes are de-emphasis, not laws.
-MMR_APPRECIATION_SLOPE = 4.0       # pts per %-pt of annual appreciation above center
+# v3.5 (joint out-of-split re-fit, backtest_ext.py PART 5d): a ridge fit of ALL
+# joinable component proxies trained on T=2023.75+2024.0 and evaluated on the
+# held-out T=2024.25 split reaches forward ρ≈0.26-0.27 vs the current composite's
+# 0.232 on the same split. The fit's signed weights: psf_vs_dist (value) and
+# region dominate; trailing_cagr ≈ 0 (slightly NEGATIVE marginal), txn_vol
+# NEGATIVE marginal (its univariate +0.10 is value/region in disguise), future
+# and buyer_pool ≈ 0. So: appreciation slope trimmed 4.0→3.0 (kept as a
+# desirability proxy, not a return signal) and liquidity weight 10→6 (kept as
+# EXIT-RISK insurance, not a return signal — see MMR_TXN_VOLUME_WEIGHT).
+# Composite pooled forward-ρ after this reweight: +0.242 (was +0.240).
+MMR_APPRECIATION_SLOPE = 3.0       # pts per %-pt of annual appreciation above center
 MMR_APPRECIATION_CENTER_PCT = 4.0  # %/yr treated as neutral
 MMR_MOMENTUM_WEIGHT = 0.0          # v3.4: 0 — backtest ρ≈-0.03 (flat/contrarian); surfaced as meta only
+# Liquidity (resale txn volume): justified by exit risk over a 5-7yr hold, NOT
+# by forward returns (PART 3 std_β -0.05, PART 5d ridge negative). v3.5: 10→6.
+MMR_TXN_VOLUME_WEIGHT = 6.0
+# Yield: v3.5b, measured on REAL URA rental contracts (backtest_ext PART 5g,
+# 113k contracts, n=1438 panel rows): +1pp gross yield -> -0.75pp/yr forward
+# PRICE growth (value/region/liquidity controlled) -> net total return only
+# ~+0.25pp/yr per +1pp yield. Carry is mostly priced in. Slope compressed
+# 18.75 -> 10 pts per %-pt of yield (not lower: the price-drag estimate is one
+# bull regime where growth assets beat carry; in flat markets carry wins).
+# Confidence-weighted in mmr.py — real-rent sources (ura_project_bed 0.95 /
+# ura_project 0.8) replace the synthetic district constants (0.5).
+MMR_YIELD_SLOPE_PTS_PER_PP = 10.0
+MMR_YIELD_CENTER_PCT = 3.2
 MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district median
 # Relative value is a heuristic (age slope × district-peer median) with heavy
 # tails — a single bad peer-median estimate or a mis-tagged sqft can imply a
@@ -243,6 +268,11 @@ DEFAULT_APPRECIATION_RATE = 0.02  # 2% per year
 ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10  # +/-10% rent
 ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015  # +/-1.5% appreciation rate
 
+# v3.5b: rents were held FLAT over the whole hold, understating rental income
+# on 5-7yr horizons. SG private rents grew ~2-4%/yr over the last decade
+# (URA rental index); 2%/yr is the conservative end. Config-tunable.
+ROI_RENT_GROWTH_PER_YEAR = 0.02
+
 # Data freshness thresholds (days) for local datasets
 DATA_FRESHNESS_THRESHOLDS_DAYS = {
     "district_medians.json": 180,
@@ -276,14 +306,17 @@ DATA_FRESHNESS_THRESHOLDS_DAYS = {
 # in the panel (std_β -0.19). The old baselines therefore propped up CCR (the worst
 # forward performer) and discounted OCR (the best), wrong-signing every fallback and
 # new-launch-floor that used them.
-# We DE-INVERT but deliberately COMPRESS toward the ~3.5% market mean rather than
-# adopt the raw realized spread: region predictiveness is strong but regime-bound
-# (2021-26 was one bull cycle; CCR can mean-revert), so we remove the wrong bet
-# without making the opposite over-fit bet. Mild OCR>RCR>CCR tilt only.
+# We DE-INVERT and keep the spread BELOW the raw realized gap, but v3.5b
+# REGIME-TESTED the tilt (backtest_ext PART 5h, URA non-landed price index by
+# locality, 81 rolling 2yr windows 2004-2026): OCR out-returned CCR in EVERY
+# regime — down markets +1.75pp/yr (OCR also falls less), flat +4.9pp, bull
+# +1.6pp; OCR won 43/81 quarters outright. The OCR>CCR tilt is structural,
+# not a 2021-26 bull artifact, so the spread was widened 1.0 -> 1.4pp (still
+# ~70% of the ~2pp all-regime average — headroom for mean reversion).
 REGIONAL_APPRECIATION_BASELINES = {
-    "CCR": 0.030,  # 3.0%/yr - Core Central (realized fwd ~0.7%; compressed up, regime caution)
-    "RCR": 0.037,  # 3.7%/yr - Rest of Central (realized fwd ~3.5%)
-    "OCR": 0.040,  # 4.0%/yr - Outside Central (realized fwd ~4.0%, best forward performer)
+    "CCR": 0.028,  # 2.8%/yr - Core Central (realized fwd 2024-26 ~1.9%; worst in every regime since 2004)
+    "RCR": 0.037,  # 3.7%/yr - Rest of Central (realized fwd ~3.1%)
+    "OCR": 0.042,  # 4.2%/yr - Outside Central (realized fwd ~3.7%; best in every regime since 2004)
 }
 DEFAULT_REGIONAL_APPRECIATION = 0.035  # ~market median forward (was 0.04)
 

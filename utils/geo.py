@@ -116,25 +116,27 @@ def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
     """
     Get MRT distance for a listing.
 
-    First tries to use listing's coordinates to calculate distance,
-    then falls back to parsing mrt_info string.
-
-    Args:
-        listing: Listing dictionary
-
-    Returns:
-        Tuple of (station_name, distance_in_meters) or None
+    Source priority:
+    1. Listing-level coordinates (true unit location, from detail enrichment).
+    2. The portal's mrt_info string (an actual WALKING distance to the
+       named nearest station — more faithful than straight-line math).
+    3. Project-centroid coordinates (v3.5b backfill from project_units.json,
+       coords_source == "project_centroid") — straight-line estimate, used
+       only when the listing carries no mrt_info at all. Without this guard
+       the centroid backfill silently replaced every listing's walking
+       distance with a shorter straight-line one.
     """
     lat = listing.get("latitude")
     lon = listing.get("longitude")
+    centroid_coords = listing.get("coords_source") == "project_centroid"
 
-    if lat is not None and lon is not None:
+    if lat is not None and lon is not None and not centroid_coords:
         result = find_nearest_mrt(lat, lon)
         if result:
             station, distance = result
             return station.name, distance
 
-    # Fallback: parse mrt_info string
+    # Parse mrt_info string (portal walking distance)
     mrt_info = listing.get("mrt_info", "")
     if mrt_info:
         import re
@@ -157,6 +159,13 @@ def get_mrt_distance(listing: dict) -> Optional[tuple[str, int]]:
         min_match = re.search(r"(\d+)\s*min", mrt_info.lower())
         if min_match:
             return station_name, int(min_match.group(1)) * 80
+
+    # Last resort: project-centroid straight-line distance
+    if lat is not None and lon is not None and centroid_coords:
+        result = find_nearest_mrt(lat, lon)
+        if result:
+            station, distance = result
+            return station.name, distance
 
     return None
 

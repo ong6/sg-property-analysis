@@ -2,19 +2,15 @@
 """Unified property investment analysis CLI with URA integration.
 
 AI-friendly interface for the complete investment analysis flow:
-1. Auto-discover best districts (v2.2)
+1. Auto-discover best districts
 2. Scrape listings from PropertyGuru
-3. Automatically use URA appreciation data (5 years historical)
-4. Score properties with v2.2 scoring (includes future potential)
+3. Enrich with URA appreciation data (5 years historical)
+4. Score with MMR (v3.5 — continuous, backtest-calibrated, /1000 display;
+   the legacy /100 breakdown is retained for report context only)
 5. Generate investment reports
 
-SCORING SYSTEM v2.2:
-- Rental Yield: 15 pts (reduced - yields low at $2M+)
-- Capital Appreciation: 30 pts (bias-adjusted URA rates)
-- Future Potential: 20 pts (NEW - MRT, govt zones)
-- Liquidity: 25 pts
-- Cost Efficiency: 10 pts
-- Red Flags: -10 pts max
+The MMR components and weights live in config.py / scoring/mmr.py; weight
+changes must be justified by backtest_ext.py (see docs/IMPROVEMENT_PLAN.md).
 
 Usage:
     # AUTOMATIC MODE (NEW - recommended)
@@ -266,7 +262,7 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
             # (each CSV is one district) and denormalized onto each project — the
             # listing-side floor coverage is thin, so a stable district curve
             # beats noisy per-project floor premia.
-            from scrapers.ura_scraper import district_floor_factors
+            from scrapers.ura_scraper import district_floor_factors, project_floor_factors
             floor_factors = district_floor_factors(histories)
             for history in histories:
                 if not history.transactions:
@@ -321,8 +317,10 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
                     "by_size": history.size_band_metrics(),
                     # Floor-tier multipliers (size-confound removed) — a low-floor
                     # unit is benchmarked below the all-floor band median, a high
-                    # one above. District-level; applied in _check_psf_overpricing.
-                    "floor_factors": floor_factors,
+                    # one above. Per-project FE curve when the project has enough
+                    # cross-tier contrast (v3.5b), else the district FE curve.
+                    # Applied in _check_psf_overpricing.
+                    "floor_factors": project_floor_factors(history) or floor_factors,
                 }
                 cache[project_key] = cache_entry
 
@@ -1083,8 +1081,6 @@ Examples:
                        help="Recall past evaluations for a condo by name (fuzzy)")
     parser.add_argument("--list-evals", action="store_true",
                        help="List all stored evaluations (condo, rating, date)")
-    parser.add_argument("--save-eval", type=str, metavar="REVIEWED_JSON",
-                       help="Save agent evaluations from a reviewed analysis JSON into memory")
     parser.add_argument("--no-save-eval", action="store_true",
                        help="Do not auto-save evaluations during --from-review")
 
@@ -1388,12 +1384,6 @@ Examples:
         eval_memory.print_index()
         return
 
-    if args.save_eval:
-        import eval_memory
-        count = eval_memory.save_evaluations_from_review(args.save_eval)
-        print(f"Saved {count} evaluation(s) to {eval_memory.EVAL_DIR}")
-        return
-
     # --- Listings sheet/database handlers ---
     if args.search_db:
         import listings_db
@@ -1545,7 +1535,6 @@ Examples:
             listing.agent_summary = ae.get("summary") or entry.get("agent_summary")
             listing.agent_red_flags = ae.get("red_flags") or entry.get("agent_red_flags", [])
             listing.agent_catalysts = ae.get("catalysts") or entry.get("agent_catalysts", [])
-            listing.agent_score_adjustment = entry.get("agent_score_adjustment", 0)  # kept at top level for backward compat
             listing.agent_adjustment_reason = entry.get("agent_adjustment_reason")
             listing.agent_rental_assessment = ae.get("rental_assessment") or entry.get("agent_rental_assessment")
             listing.agent_appreciation_assessment = ae.get("appreciation_assessment") or entry.get("agent_appreciation_assessment")
@@ -1610,8 +1599,16 @@ Examples:
                             agent_rate_pct,
                             listing.appreciation_source,
                         )
+                        # Modern raw_analysis files have no algo_breakdown — the
+                        # pre-override rate lives in factual_data.appreciation
+                        # (annual_rate_pct). Without this fallback prev_rate_pct
+                        # was always None for them and the legacy /100 recompute
+                        # silently dropped every non-rate sub-component.
                         prev_rate_pct = cap_info.get("rate_pct")
-                        prev_source = cap_info.get("source") or listing.appreciation_source
+                        if prev_rate_pct is None:
+                            prev_rate_pct = cap_fd.get("annual_rate_pct")
+                        prev_source = (cap_info.get("source") or cap_fd.get("source")
+                                       or listing.appreciation_source)
                         try:
                             prev_rate_points = (
                                 FullScorer.score_appreciation_rate_points(float(prev_rate_pct), prev_source)
@@ -1694,9 +1691,7 @@ Examples:
 
         # Count agent-reviewed listings
         reviewed_count = sum(1 for s in scored if s.agent_summary is not None)
-        adjusted_count = sum(1 for s in scored if s.agent_score_adjustment != 0)
         print(f"  Agent-reviewed: {reviewed_count}/{len(scored)}", file=sys.stderr)
-        print(f"  Score adjustments: {adjusted_count}", file=sys.stderr)
 
         # Generate output
         output_base = args.output or str(Path(args.from_review).with_suffix(""))

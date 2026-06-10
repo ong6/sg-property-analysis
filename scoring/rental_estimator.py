@@ -12,6 +12,26 @@ _DISTRICT_MEDIANS_FILE = os.path.join(_DATA_DIR, "district_medians.json")
 
 _district_data: dict = {}
 
+_RENTAL_CACHE_FILE = os.path.join(_DATA_DIR, "rental_cache.json")
+_rental_cache: "dict | None" = None
+
+
+def _load_rental_cache() -> dict:
+    """Real per-project rental medians from URA rental contracts
+    (data/rental_cache.json, built by build_rental_cache.py from
+    fetch_ura_rentals.py CSVs). Keyed '<project lower>|<district num>'.
+
+    v3.5: replaces the synthetic district-constant rents that made the yield
+    component mechanically const/PSF (re-skinned cheapness). Module-level cache."""
+    global _rental_cache
+    if _rental_cache is None:
+        if os.path.exists(_RENTAL_CACHE_FILE):
+            with open(_RENTAL_CACHE_FILE) as f:
+                _rental_cache = json.load(f).get("projects", {})
+        else:
+            _rental_cache = {}
+    return _rental_cache
+
 
 def _load_district_data() -> dict:
     """Load district median data."""
@@ -116,9 +136,25 @@ class RentalEstimator:
                 if condo_name in normalized or normalized in condo_name:
                     return rent_psf, "same_condo"
 
-        # Priority 2: Bedroom-specific district rental PSF
         district = listing.get("district", "")
         beds = listing.get("beds")
+
+        # Priority 1b (v3.5): REAL rents — URA rental-contract medians for this
+        # exact project (data/rental_cache.json). Bedroom-matched median when
+        # >=3 contracts of that bed type, else the project median. Exact
+        # project+district key only (no fuzzy: a wrong project poisons rent).
+        if project_name:
+            cache = _load_rental_cache()
+            if cache:
+                dnum = (normalize_district(district) or "").replace("D", "").lstrip("0")
+                entry = cache.get(f"{project_name.lower().strip()}|{dnum}")
+                if entry:
+                    bed_entry = entry.get("by_beds", {}).get(str(beds)) if beds else None
+                    if bed_entry:
+                        return bed_entry["rent_psf"], "ura_project_bed"
+                    return entry["rent_psf"], "ura_project"
+
+        # Priority 2: Bedroom-specific district rental PSF
         if district:
             d = normalize_district(district)
             bedroom_rates = self.district_data.get("bedroom_rental_psf", {})

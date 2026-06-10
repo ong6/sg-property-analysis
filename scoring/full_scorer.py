@@ -59,7 +59,7 @@ try:
     )
 except ImportError:
     # Fallbacks mirror config.py (v3.4 de-inverted baselines; sync if config changes).
-    REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.030, "RCR": 0.037, "OCR": 0.040}
+    REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.028, "RCR": 0.037, "OCR": 0.042}
     DEFAULT_REGIONAL_APPRECIATION = 0.035
     NEW_LAUNCH_DISCOUNT_CURVE = {1: 0.60, 3: 0.45, 5: 0.30, 7: 0.15}
     NEW_SALE_PROPORTION_THRESHOLD = 0.20
@@ -91,6 +91,54 @@ def _load_district_data() -> dict:
         else:
             _district_data_cache = {"medians": {}, "district_info": {}}
     return _district_data_cache
+
+
+_PROJECT_UNITS_FILE = os.path.join(_DATA_DIR, "project_units.json")
+_project_units_cache: dict | None = None
+_project_units_norm_index: dict | None = None
+
+
+def _pu_normalize(name: str) -> str:
+    """Conservative name normalization for the project-units join: apostrophe
+    variants, '@' vs ' at ', punctuation/whitespace. Recovers portal-vs-URA
+    spelling drift ('Skysuites @ Anson' vs 'SKYSUITES@ANSON') without fuzzy
+    matching — distinct projects still normalize to distinct strings."""
+    s = (name or "").lower().strip()
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s*@\s*", " at ", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
+    return s
+
+
+def _project_units_lookup(project_name: str | None) -> dict | None:
+    """Per-project total dwelling units + WGS84 centroid from the URA GIS layer
+    (data/project_units.json, built by build_project_units.py).
+
+    v3.5: scraped listings almost never carry total_units (6,348/6,349 missing —
+    detail-page enrichment is off by default) or lat/lng, which left the
+    dev_size component silently 0 and the future-MRT proximity sub-score blind.
+    Both signals were validated on the URA panel (PART 5f: mrt std_β −0.16,
+    dev_size +0.05 with controls), so this fallback turns them on for real.
+    Exact normalized-name match only — no fuzzy join (a wrong project would
+    poison coords + units)."""
+    global _project_units_cache, _project_units_norm_index
+    if _project_units_cache is None:
+        if os.path.exists(_PROJECT_UNITS_FILE):
+            with open(_PROJECT_UNITS_FILE) as f:
+                _project_units_cache = json.load(f).get("projects", {})
+        else:
+            _project_units_cache = {}
+        _project_units_norm_index = {}
+        for k, v in _project_units_cache.items():
+            _project_units_norm_index.setdefault(_pu_normalize(k), v)
+    if not project_name:
+        return None
+    entry = _project_units_cache.get(project_name.strip().lower())
+    if entry is None:
+        entry = (_project_units_norm_index or {}).get(_pu_normalize(project_name))
+    if entry and not entry.get("landed_only"):
+        return entry
+    return None
 
 
 def build_cohort_stats(listings: list[dict]) -> dict:
@@ -137,6 +185,30 @@ def build_cohort_stats(listings: list[dict]) -> dict:
         "age_by_district": age_by_district,
         "mrt_distances": mrt_distances,
     }
+
+
+_default_cohort_cache: dict | None = None
+
+
+def _default_cohort_stats() -> dict:
+    """Cohort distributions from the full listings DB (module-level cache).
+
+    v3.5b (audit 4.12): single-listing flows used to score with
+    cohort_stats={}, silently degrading every percentile-based comparison to
+    its threshold fallback. The 6k-listing DB is a far better cohort than an
+    empty one — seed from it whenever the caller doesn't supply a batch."""
+    global _default_cohort_cache
+    if _default_cohort_cache is None:
+        db_path = os.path.join(_DATA_DIR, "listings_db.json")
+        listings: list[dict] = []
+        if os.path.exists(db_path):
+            try:
+                with open(db_path) as f:
+                    listings = list(json.load(f).get("listings", {}).values())
+            except (OSError, ValueError):
+                listings = []
+        _default_cohort_cache = build_cohort_stats(listings) if listings else {}
+    return _default_cohort_cache
 
 
 class FullScorer:
@@ -209,7 +281,8 @@ class FullScorer:
         # inert: live PropertyGuru appreciation scraping was removed in favour of
         # the URA cache as the single appreciation source.
         self._appreciation_cache: dict[str, tuple[float, str]] = {}
-        self.cohort_stats = cohort_stats or {}
+        # No batch supplied (single-listing flows) -> seed from the listings DB
+        self.cohort_stats = cohort_stats or _default_cohort_stats()
 
     @staticmethod
     def _load_district_profiles() -> dict:
@@ -546,6 +619,20 @@ class FullScorer:
             listing = dict(listing)
             listing["district"] = normalize_district(listing.get("district", "")) or listing.get("district")
 
+        # v3.5: fill total_units + coordinates from the URA dwelling-units GIS
+        # layer when the scrape didn't provide them (it almost never does) —
+        # activates the dev_size component and the future-MRT proximity score.
+        pu = _project_units_lookup(listing.get("project_name") or listing.get("title"))
+        if pu and (not listing.get("total_units")
+                   or not listing.get("latitude") or not listing.get("longitude")):
+            listing = dict(listing)
+            if not listing.get("total_units"):
+                listing["total_units"] = pu["total_units"]
+            if not listing.get("latitude") or not listing.get("longitude"):
+                listing["latitude"] = pu["lat"]
+                listing["longitude"] = pu["lng"]
+                listing["coords_source"] = "project_centroid"
+
         # Start with quick score
         quick_score = self.quick_scorer.score(listing)
 
@@ -639,9 +726,6 @@ class FullScorer:
         scored.red_flag_deductions = red_flag_scores["total"]
         breakdown["red_flags"] = red_flag_scores
 
-        # URA bonus removed in v2.1 — no bias for having cached data
-        scored.ura_bonus_score = 0
-
         scored.score_breakdown = breakdown
 
         # Age-adjusted relative value vs district peers (None when data thin)
@@ -669,14 +753,6 @@ class FullScorer:
             scored.roi_5yr = roi_results.get(5)
             scored.roi_6yr = roi_results.get(6)
             scored.roi_7yr = roi_results.get(7)
-
-            # Create cost breakdown
-            scored.costs = self.cost_calculator.create_cost_breakdown(
-                purchase_price=scored.price,
-                sqft=scored.sqft,
-                monthly_rent=scored.estimated_monthly_rent,
-                hold_years=5,
-            )
 
             # ROI sensitivity scenarios (downside/base/upside)
             sensitivity = self.roi_calculator.calculate_sensitivity(

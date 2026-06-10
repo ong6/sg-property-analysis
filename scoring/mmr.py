@@ -40,6 +40,9 @@ try:
         MMR_MOMENTUM_WEIGHT,
         MMR_RELVALUE_SLOPE,
         MMR_RELVALUE_CAP,
+        MMR_TXN_VOLUME_WEIGHT,
+        MMR_YIELD_SLOPE_PTS_PER_PP,
+        MMR_YIELD_CENTER_PCT,
     )
 except ImportError:
     # Fallbacks mirror config.py (kept in sync; only used if config import fails).
@@ -49,11 +52,14 @@ except ImportError:
     MIN_BAND_TXNS = 5
     COHORT_FLOOR_APPRECIATION = 0.55
     COHORT_FLOOR_LIQUIDITY = 0.40
-    MMR_APPRECIATION_SLOPE = 4.0
+    MMR_APPRECIATION_SLOPE = 3.0
     MMR_APPRECIATION_CENTER_PCT = 4.0
     MMR_MOMENTUM_WEIGHT = 0.0
     MMR_RELVALUE_SLOPE = 0.8
     MMR_RELVALUE_CAP = 28.0
+    MMR_TXN_VOLUME_WEIGHT = 6.0
+    MMR_YIELD_SLOPE_PTS_PER_PP = 10.0
+    MMR_YIELD_CENTER_PCT = 3.2
 
 # Red flags that are NOT already expressed as continuous MMR components.
 # (old_property/small_dev/low_lease/psf_overpriced are continuous here.)
@@ -160,7 +166,12 @@ def compute_mmr(scored: Any) -> dict:
         # set behind it. Weight by the SAME-SIZE cohort count (the premium is now
         # measured against similar-size units); fall back to project txns when a
         # project has no size data.
-        psf_conf_n = cohort_txns if cohort_txns is not None else txn
+        # v3.5: cap the no-size-data fallback. When cohort_txns is None the
+        # premium was measured against a size-MIXED pooled median, which must not
+        # earn more confidence than a genuine size-matched cohort would (a large
+        # project with 300 pooled txns previously hit full confidence on a
+        # size-polluted reading, while a confirmed-thin band was damped to ~0.5).
+        psf_conf_n = cohort_txns if cohort_txns is not None else min(txn, 15)
         psf_value *= 0.5 + 0.5 * min(1.0, psf_conf_n / 30.0)
     else:
         ratio = sb_cap.get("psf_vs_median", {}).get("ratio")
@@ -209,12 +220,23 @@ def compute_mmr(scored: Any) -> dict:
     # resulting gross_yield ≈ const/PSF — a re-skin of the cheap-vs-peers value
     # signal, not independent rental evidence. Down-weight them hard so yield does
     # not double-count value (was district_median 0.75 / fallback 0.4).
+    # v3.5: ura_project_bed/ura_project are REAL URA rental-contract medians for
+    # the exact project (rental_cache.json) — genuine rental evidence, near-full
+    # weight. (Backtest PART 5g: real-rent yield has ~0 forward PRICE signal —
+    # the component prices CARRY over the hold, not appreciation.)
     rent_conf = {
         "same_condo": 1.0,
+        "ura_project_bed": 0.95,
+        "ura_project": 0.8,
         "district_bedroom": 0.9,
         "district_median": 0.5,
     }.get(rent_source, 0.15 if rent_source.startswith("fallback") else 0.6)
-    comps["yield"] = round(15.0 * ((gross_yield - 3.2) / 0.8) * rent_conf, 2) if gross_yield > 0 else 0.0
+    # v3.5b: slope 18.75→10 pts/pp — real-rent backtest (PART 5g) shows +1pp
+    # yield costs ~0.75pp/yr forward price growth, so yield's NET total-return
+    # edge is small; it stays weighted as (regime-hedged) carry. (config)
+    comps["yield"] = round(
+        MMR_YIELD_SLOPE_PTS_PER_PP * (gross_yield - MMR_YIELD_CENTER_PCT) * rent_conf, 2
+    ) if gross_yield > 0 else 0.0
 
     # --- MRT proximity (smooth saturation, no bucket cliffs) ---
     mrt_dist = scored.mrt_distance_m
@@ -223,8 +245,12 @@ def compute_mmr(scored: Any) -> dict:
     # --- Liquidity ---
     # Resale depth is project-wide, but a unit type that rarely trades is hard
     # to exit regardless of the building's total volume — damp by cohort depth.
+    # v3.5: weight 10→6 (config). Volume's forward-return content is ~0/negative
+    # once value+region are controlled (backtest_ext PART 3/5d); what remains is
+    # exit-risk insurance for the 5-7yr hold, which doesn't justify outweighing
+    # genuinely predictive components.
     liq_txn = sb_liq.get("transaction_volume", {}).get("count") or txn or 0
-    comps["txn_volume"] = round(10.0 * math.tanh(liq_txn / 40.0) * cohort_liq_factor, 2)
+    comps["txn_volume"] = round(MMR_TXN_VOLUME_WEIGHT * math.tanh(liq_txn / 40.0) * cohort_liq_factor, 2)
 
     depth = sb_liq.get("buyer_pool_depth", {}).get("depth")
     comps["buyer_pool"] = _BUYER_POOL_PTS.get(depth, 0.0)

@@ -168,7 +168,8 @@
       "short_name": "TG",
       "districts": [
         22,
-        23
+        23,
+        24
       ],
       "priority": "low",
       "description": "Singapore's first car-lite HDB town (mainly HDB)",

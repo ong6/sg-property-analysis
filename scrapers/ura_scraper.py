@@ -350,23 +350,62 @@ def district_floor_factors(histories: list, recency_years: int = 2,
 
     Floor is a real price driver, but the raw floor-PSF gap in a project is badly
     confounded with size — ground/low-floor units are often large PES units that
-    trade at a low psf for SIZE reasons, not floor. We isolate the floor effect by
-    dividing each transaction's psf by its own project's SAME-SIZE-band median
-    (over the same recent window the band medians use, so time-decay cancels too),
-    then taking the median ratio per floor tier. Result ~1.0 = no premium; e.g.
-    high-rise districts show high>1.0>low, mid-rise districts ~flat.
+    trade at a low psf for SIZE reasons, not floor.
 
-    Returns {"low", "mid", "high", "txn_count", "basis"} — tiers with < 20
-    comparable transactions are omitted (scorer treats a missing tier as 1.0).
-    District-level (not per-project) for robustness; the listing coverage is thin,
-    so a stable district curve beats noisy per-project floor premia.
+    v3.5 estimator: within-(project × size-band) fixed effects. The old approach
+    divided each txn's psf by its project+band median POOLED ACROSS FLOORS and
+    medianed the ratios per tier. In cells dominated by one tier, that tier's
+    ratio is ~1.0 by construction, so the dominant tier anchors to 1 and the
+    measured premium collapses (stored spreads were ~1.4% low->high while a
+    project-demeaned regression on the same URA panel measures ~+3.1%/tier,
+    ~+6.4% low->high — backtest_ext.py PART 5b). Here we regress demeaned
+    log(psf) on the demeaned tier ordinal WITHIN each (project, band) cell that
+    spans >=2 tiers, which is immune to tier-composition anchoring, then emit
+    factors exp(beta*(tier-1)) centered on mid.
+
+    Returns {"low", "mid", "high", "txn_count", "basis"} — omitted tiers are
+    treated as 1.0 by the scorer. District-level by default; projects with
+    enough of their own cross-tier contrast get a per-project curve via
+    project_floor_factors() (v3.5b).
     """
+    sxx, sxy, n_used = _floor_fe_accumulate(histories, recency_years, current_year)
+    out: dict = {"basis": "district_fe", "txn_count": n_used}
+    # Need a real contrast base before trusting the slope (same spirit as the
+    # old >=20-per-tier gate). Below it, omit tiers -> scorer treats as 1.0.
+    if n_used >= 60 and sxx > 0:
+        _emit_floor_tiers(out, sxy / sxx)
+    return out
+
+
+def project_floor_factors(history, recency_years: int = 2,
+                          current_year: Optional[int] = None) -> "dict | None":
+    """Per-project FE floor factors when the project's OWN txns carry enough
+    cross-tier contrast (>=40 within-cell txns). Same estimator as the
+    district curve, restricted to one project — more faithful for big
+    developments whose floor premium differs from the district norm (v3.5b).
+    Returns None when too thin (caller falls back to the district curve)."""
+    sxx, sxy, n_used = _floor_fe_accumulate([history], recency_years, current_year)
+    if n_used < 40 or sxx <= 0:
+        return None
+    out: dict = {"basis": "project_fe", "txn_count": n_used}
+    _emit_floor_tiers(out, sxy / sxx)
+    return out
+
+
+_FLOOR_TIER_ORD = {"low": 0.0, "mid": 1.0, "high": 2.0}
+
+
+def _floor_fe_accumulate(histories: list, recency_years: int,
+                         current_year: Optional[int]) -> tuple[float, float, int]:
+    """Accumulate the demeaned within-(project x size-band) regression sums."""
+    import math
     import config
     from collections import defaultdict
     cy = current_year or datetime.now().year
     cutoff = cy - max(0, recency_years - 1)
-    tier_ratios: dict[str, list[float]] = defaultdict(list)
 
+    sxx = sxy = 0.0
+    n_used = 0
     for h in histories:
         def _clean(txns):
             return [t for t in txns if getattr(t, "num_units", 1) <= 1
@@ -376,26 +415,34 @@ def district_floor_factors(histories: list, recency_years: int = 2,
             recent = _clean(h.transactions)
         if not recent:
             continue
-        band_psfs: dict[str, list[float]] = defaultdict(list)
-        for t in recent:
-            k = config.size_band_key(t.area_sqft)
-            if k:
-                band_psfs[k].append(t.psf)
-        band_median = {k: median(v) for k, v in band_psfs.items()}
+        cells: dict[str, list[tuple[float, float]]] = defaultdict(list)
         for t in recent:
             tier = config.normalize_floor_tier(t.floor_level)
             key = config.size_band_key(t.area_sqft)
-            med = band_median.get(key)
-            if tier and med and med > 0:
-                tier_ratios[tier].append(t.psf / med)
+            if tier and key:
+                cells[key].append((_FLOOR_TIER_ORD[tier], math.log(t.psf)))
+        for obs in cells.values():
+            tiers_present = {o[0] for o in obs}
+            if len(obs) < 2 or len(tiers_present) < 2:
+                continue  # no within-cell floor contrast
+            mx = sum(o[0] for o in obs) / len(obs)
+            my = sum(o[1] for o in obs) / len(obs)
+            for x, y in obs:
+                sxx += (x - mx) ** 2
+                sxy += (x - mx) * (y - my)
+            n_used += len(obs)
+    return sxx, sxy, n_used
 
-    out: dict = {"basis": "district",
-                 "txn_count": sum(len(v) for v in tier_ratios.values())}
-    for tier in ("low", "mid", "high"):
-        vals = tier_ratios.get(tier, [])
-        if len(vals) >= 20:
-            out[tier] = round(median(vals), 4)
-    return out
+
+def _emit_floor_tiers(out: dict, beta: float) -> None:
+    """Write low/mid/high multipliers for a log-psf-per-tier slope.
+
+    Sanity clamp: hedonic/FE estimates run ~2-5%/tier; a slope outside +-8%
+    is an artifact (tiny cells, data errors), not a premium."""
+    import math
+    beta = max(-0.08, min(0.08, beta))
+    for tier, ordv in _FLOOR_TIER_ORD.items():
+        out[tier] = round(math.exp(beta * (ordv - 1.0)), 4)
 
 
 def parse_ura_csv(csv_content: str) -> list[URATransaction]:
@@ -571,10 +618,15 @@ class URAScraper:
 
             download = download_info.value
 
-            # Read CSV content
+            # Read CSV content (URA exports are windows-1252 when a project
+            # name carries an accent, e.g. ENCHANTÉ)
             csv_path = download.path()
-            with open(csv_path, 'r', encoding='utf-8') as f:
-                csv_content = f.read()
+            try:
+                with open(csv_path, 'r', encoding='utf-8') as f:
+                    csv_content = f.read()
+            except UnicodeDecodeError:
+                with open(csv_path, 'r', encoding='windows-1252') as f:
+                    csv_content = f.read()
 
             return csv_content
 
@@ -671,8 +723,12 @@ def load_ura_csv(csv_path: str) -> URATransactionHistory:
     Returns:
         URATransactionHistory with transactions and metrics
     """
-    with open(csv_path, 'r', encoding='utf-8') as f:
-        csv_content = f.read()
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            csv_content = f.read()
+    except UnicodeDecodeError:
+        with open(csv_path, 'r', encoding='windows-1252') as f:
+            csv_content = f.read()
 
     transactions = parse_ura_csv(csv_content)
 
@@ -706,8 +762,14 @@ def load_ura_csv_grouped(csv_path: str) -> list[URATransactionHistory]:
     averaged every project's PSF together and cached it under one arbitrary
     name — silently corrupting appreciation for the whole district.
     """
-    with open(csv_path, 'r', encoding='utf-8') as f:
-        csv_content = f.read()
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            csv_content = f.read()
+    except UnicodeDecodeError:
+        # URA exports are windows-1252 when a project name carries an accent
+        # (e.g. ENCHANTÉ in D11) — a single bad byte must not drop a district
+        with open(csv_path, 'r', encoding='windows-1252') as f:
+            csv_content = f.read()
 
     transactions = parse_ura_csv(csv_content)
 

@@ -65,6 +65,22 @@ used, and ask if intent is unclear.
   **Absolute cheapness is mostly the region effect** — don't double-count it. The
   full model explains **<10% of forward variance** — calibrate confidence; small
   `score_1000` gaps are noise. Re-run `backtest_ext.py` as the panel grows.
+- **v3.5 (backtest PART 5, then re-validated on the FULL 28-district panel —
+  106k txns, CCR n=270):** composite forward-ρ **+0.288** on the expanded panel.
+  Realized forward **OCR +3.7% > RCR +3.1% ≫ CCR +1.9%** (de-inversion confirmed
+  at scale; compressed baselines 3.0/3.7/4.0 well calibrated). **Freehold's
+  apparent forward underperformance was a 13-district artifact** — on the full
+  panel it is exactly neutral (marginal ≈0); it does carry a ~5% PSF *level*
+  premium (in the price, not a return edge). The `future` infra score has **no
+  measured forward power** (marginal ≈0/negative — "transformation upside" is
+  narrative, not edge), while **`buyer_pool` strengthened** (std_β +0.16, real
+  content beyond region). Liquidity's univariate signal is value/region in
+  disguise (txn-volume weight 10→6, exit-risk only); appreciation slope 4→3.
+  **Floor factors de-attenuated** (~1.4%→~3%/tier, within-project FE): don't
+  hand-adjust for floor on top of `psf_value` — it's now properly normalized.
+  `yield` and `dev_size` remain unvalidated (rental fetch in progress / no
+  total_units data). Shipped-score calibration harness: `calibrate_forward.py`
+  (joins `mmr_history.csv` to later URA PSF; meaningful from ~mid-2027).
 
 Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**.
 Full audit + change rationale: **`docs/IMPROVEMENT_PLAN.md`**.
@@ -95,6 +111,11 @@ Each run also writes a timestamped archive (`output/arena_<ts>.md`) since
 `arena_latest.md` is overwritten per run. **Local rankings UI**:
 `python ui.py` → http://127.0.0.1:8642 — sortable/filterable table with
 one-click PropertyGuru listing + Google Maps links per contender.
+**System dashboard**: `python dashboard.py` → http://127.0.0.1:8643 — the
+whole engine state on one page (forward signals, regime analysis, score
+distribution, coverage, district benchmarks, top projects) with per-condo
+ANALYZE buttons that spawn `claude "analyze <condo>"` in a Terminal window
+and VIEW links into eval memory.
 
 Supporting data backbone (CSV, append-only — grep/analyze freely):
 `data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`

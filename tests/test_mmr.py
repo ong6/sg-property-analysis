@@ -109,9 +109,12 @@ class TestOverride:
     def test_zero_override_is_honored(self):
         s = _score(BASE)
         result = apply_appreciation_override({"mmr": s.mmr, "components": s.mmr_components}, 0.0)
-        # 0% appreciation must produce a strongly negative component, not be
-        # ignored (v3.3 slope 4.0/pp at full confidence: 4*(0-4) = -16)
-        assert result["components"]["appreciation"] <= -15
+        # 0% appreciation must produce a clearly negative component, not be
+        # ignored (slope·(0-center) at full confidence; slope is config-tunable)
+        from config import MMR_APPRECIATION_SLOPE, MMR_APPRECIATION_CENTER_PCT
+        expected = MMR_APPRECIATION_SLOPE * (0.0 - MMR_APPRECIATION_CENTER_PCT)
+        assert result["components"]["appreciation"] <= expected + 0.01
+        assert result["components"]["appreciation"] < -8
 
 
 class TestSizeCohort:

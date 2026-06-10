@@ -61,12 +61,24 @@ def _num(s: str):
         return None
 
 
+def _open_csv(path):
+    """URA exports are windows-1252 when a project name carries an accent
+    (e.g. ENCHANTÉ) — try utf-8 first, fall back instead of crashing."""
+    try:
+        fh = open(path, encoding="utf-8")
+        fh.read(1 << 20)
+        fh.seek(0)
+        return fh
+    except UnicodeDecodeError:
+        return open(path, encoding="windows-1252")
+
+
 def load_txns(paths=None):
     """Load resale-relevant URA transactions as dicts."""
     paths = paths or sorted(glob.glob(DATA_GLOB))
     out = []
     for p in paths:
-        with open(p) as fh:
+        with _open_csv(p) as fh:
             for row in csv.DictReader(fh):
                 t = _parse_date(row.get("Sale Date", ""))
                 psf = _num(row.get("Unit Price ($ PSF)"))

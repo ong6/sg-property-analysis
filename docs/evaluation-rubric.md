@@ -23,33 +23,51 @@ For own-stay, several algorithmic red flags invert or vanish: `oversized_unit` i
 *feature*, low yield is irrelevant, and a quiet low-liquidity boutique development
 can be a fine home. Say explicitly which rubric you applied.
 
-## What the data actually predicts (backtest-calibrated priors, v3.4)
+## What the data actually predicts (backtest-calibrated priors, v3.5 — full 28-district panel)
 
 Read this BEFORE the per-factor sections below — it overrides older intuitions
 baked into them. From point-in-time URA backtests (`backtest.py` / `backtest_ext.py`,
-65k txns, 2021–26, mean-reversion corrected). Forward = realized 2yr resale-PSF
-appreciation:
+**106k txns, all 28 districts**, 2021–26, mean-reversion corrected). Forward =
+realized 2yr resale-PSF appreciation:
 
-- **Cheap vs district peers is the strongest robust forward signal** (ρ≈−0.26;
+- **Cheap vs district peers is the strongest robust forward signal** (ρ≈−0.25;
   the one signal that survives controlling for region). Lead your appreciation
   view with `factual_data.relative_value.premium_vs_age_adjusted_median_pct`
   (negative = cheap for its age) and `psf_premium_vs_ura_median_pct`.
 - **Region matters and the old priors were INVERTED.** Realized forward returns
-  were **OCR ≈ +4.0%/yr > RCR ≈ +3.5% ≫ CCR ≈ +0.7%** — the *opposite* of the
-  retired "CCR>RCR>OCR" baselines. Do **not** treat CCR/prestige as a forward
-  edge. (Caveat: one bull regime; CCR can mean-revert — don't over-bet OCR either.)
+  on the full panel: **OCR ≈ +3.7%/yr > RCR ≈ +3.1% ≫ CCR ≈ +1.9%** (CCR n=270 —
+  confirmed at scale, not a small-sample artifact). Do **not** treat CCR/prestige
+  as a forward edge. **Regime-tested (v3.5b):** across 81 rolling 2yr windows
+  2004–2026, OCR out-returned CCR in *every* regime — down markets (+1.75pp/yr,
+  OCR also falls less), flat (+4.9pp), bull (+1.6pp). The tilt is structural,
+  not a bull-market artifact.
+- **MRT proximity is a real forward signal** (std_β ≈ −0.16 with region+value
+  controls — closer wins; it looks weak univariately only because central
+  near-MRT stock underperformed). Weigh `mrt_distance_m` seriously.
+- **District buyer-pool depth carries real content beyond region** (std_β ≈ +0.16).
+  Bigger developments also tilt mildly positive (dev_size marginal ≈ +0.05).
 - **Absolute price "cheapness" is mostly the region effect in disguise** — once
-  you control for region it nearly vanishes (std_β −0.14 → −0.04). A low PSF is
-  not an independent buy signal; it's mostly "this is OCR." Don't double-count it.
-- **Trailing CAGR has ~0 forward power and momentum is flat-to-contrarian.** Use
-  `annual_rate_pct` / `momentum` only to understand the *story/catalyst*, never as
-  the forward number. A high past CAGR is not a forward guarantee.
-- **Freehold is NOT a forward edge** — ~0 cross-sectional PSF premium (controlling
-  region+size) and it mildly *underperforms* forward (ρ −0.09…−0.14). Weigh tenure
-  only as own-stay/optionality and as short-remaining-lease *downside*, not upside.
-- **Liquidity is an exit-risk gate, not a forward driver** (ρ≈0 once value is in).
-  Penalize genuinely thin names; don't push a fairly-priced, liquid-enough unit up.
-- **The ceiling is low: the full model explains <10% of forward variance (R²≈0.06–0.09).**
+  region is controlled it vanishes (ridge weight ≈ 0). A low PSF is not an
+  independent buy signal; it's mostly "this is OCR." Don't double-count it.
+- **Trailing CAGR has little forward power (marginal ≈ +0.03) and momentum is
+  unstable across samples.** Use `annual_rate_pct` / `momentum` for the
+  *story/catalyst*, never as the forward number.
+- **Freehold is NOT a forward edge** — exactly neutral forward on the full panel
+  (marginal ≈ 0; the earlier "freehold underperforms" was a 13-district artifact).
+  It carries a ~5% PSF *level* premium — already in the price you pay. Weigh
+  tenure only as own-stay/optionality and short-remaining-lease *downside*.
+- **Real-rent yield predicts CARRY, not price.** Joined actual URA rental
+  contracts show high gross yield has ~0/mildly negative forward *price* signal
+  (yield compression). A 1pp yield edge is still ~1pp/yr of total return — count
+  it as income, not as an appreciation argument. Rents now come from real URA
+  contracts where available (`rent_source: ura_project_bed` / `ura_project`).
+- **The future-infrastructure score has NO measured forward power** (marginal ≈ 0
+  district-level). "Transformation upside" is narrative until proven — don't let
+  it carry a rating.
+- **Liquidity is an exit-risk gate, not a forward driver** (marginal ≈ 0/negative
+  once value is in). Penalize genuinely thin names; don't push a fairly-priced,
+  liquid-enough unit up.
+- **The ceiling is low: the full model explains ~6–13% of forward variance.**
   Small `score_1000` gaps are noise. Reserve **high** confidence for cases where
   physical/catalyst evidence (not the score) is decisive; treat near-ties as Neutral.
 
