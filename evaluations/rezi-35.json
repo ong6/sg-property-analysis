@@ -1,0 +1,121 @@
+{
+  "condo": "Rezi 35",
+  "slug": "rezi-35",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A spacious 1,647sqft freehold 4BR at Rezi 35, D14, asking $1,700 psf — a ~5% premium to the $1,626 URA median — within 610m of Paya Lebar interchange. Tenure, size and location are good, but the resale rate is negative (-0.31%/yr) on an extremely thin 10-txn series, so there is no reliable price-trend signal to underwrite a $2.8M entry.",
+      "rating_rationale": "Genuine merits — freehold, a generous 1,647sqft 4BR layout, and 610m to the Paya Lebar EW/CC interchange in an airbase-relocation district. But the only resale data is -0.31%/yr on just 10 transactions (too thin to trust either way), the asking is ~5% above median, and $2.8M sits above the deepest-liquidity band for a 4BR. Reasonable freehold family asset without demonstrated momentum — Neutral.",
+      "red_flags": [
+        "Resale series only 10 txn (negative rate, but unreliable)",
+        "+5% asking premium to URA median",
+        "$2.8M above the deepest-liquidity band",
+        "Boutique-scale development — moderate liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure with a large 1,647sqft 4BR",
+        "610m to Paya Lebar EW/CC interchange",
+        "D14 Paya Lebar Central / airbase-relocation upside"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 1700.06,
+        "beds": 4,
+        "sqft": 1647.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spacious 1,647sqft freehold 4BR at Rezi 35, D14, asking $1,700 psf — a ~5% premium to the $1,626 URA median — within 610m of Paya Lebar interchange. Tenure, size and location are good, but the resale rate is negative (-0.31%/yr) on an extremely thin 10-txn series, so there is no reliable price-trend signal to underwrite a $2.8M entry.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine merits — freehold, a generous 1,647sqft 4BR layout, and 610m to the Paya Lebar EW/CC interchange in an airbase-relocation district. But the only resale data is -0.31%/yr on just 10 transactions (too thin to trust either way), the asking is ~5% above median, and $2.8M sits above the deepest-liquidity band for a 4BR. Reasonable freehold family asset without demonstrated momentum — Neutral.",
+        "red_flags": [
+          "Resale series only 10 txn (negative rate, but unreliable)",
+          "+5% asking premium to URA median",
+          "$2.8M above the deepest-liquidity band",
+          "Boutique-scale development — moderate liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure with a large 1,647sqft 4BR",
+          "610m to Paya Lebar EW/CC interchange",
+          "D14 Paya Lebar Central / airbase-relocation upside"
+        ],
+        "rental_assessment": "Large freehold 4BR steps from Paya Lebar interchange and Singpost/PLQ offices rents well to families and corporate tenants; the location is the strongest part of the case.",
+        "appreciation_assessment": "10-txn series is too thin to read; assume roughly D14 freehold baseline (~4-5%) supported by Paya Lebar Central rather than the negative headline figure.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA series too thin (10 txn); set to D14 freehold baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-35-500111340",
+        "review_file": "cov_batch_14.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Young (2020) freehold boutique in city-fringe D14, 7-min walk to Paya Lebar interchange, asking ~6% below the project's own recent average PSF. The best value/location combination of the five.",
+      "rating_rationale": "Listing is $1,592 psf vs the project's last-12-month average of ~$1,698 psf (range $1,659-$1,736) — a genuine ~6% discount confirmed against actual same-project comps, not just the algo's age-adjusted -21%. Freehold, completed 2020 (still young), built by TEE Land + KSH (credible developers). Location is strong: 7-min walk to Paya Lebar EW/Circle interchange, RCR (forward ~+3.5%). At 1,162 sqft this is a large 3BR (project typical 3BR ~797 sqft), so it is a premium layout; the $1.85M absolute quantum is high for D14, which caps the rental-yield case (~3.8% project yield). I do not lean on the trailing 3.7% appreciation (regional baseline, only 10 txns, ~0 forward power) — the verdict rests on verified relative value, freehold tenure and the interchange catalyst.",
+      "red_flags": [
+        "psf_cohort_txns = 0: no same-size-band comps in the algo, so the -2.7% cohort signal is unverifiable internally (mitigated by web-checked project average)",
+        "appreciation from regional_baseline on only 10 txns — story only, no forward weight",
+        "$1.85M absolute quantum is high for D14, limiting buyer pool and yield (~3.8%)",
+        "Large 1,162 sqft 3BR is an outlier format vs the project's typical ~797 sqft 3BR — verify floor plan and that sqft is not mis-scraped"
+      ],
+      "catalysts": [
+        "7-min walk to Paya Lebar interchange (EW + Circle lines), within Paya Lebar Central commercial growth corridor",
+        "Freehold tenure in a city-fringe district where most stock is leasehold",
+        "Asking ~6% under the project's own recent transacted average"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1592.08,
+        "beds": 3,
+        "sqft": 1162
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Young (2020) freehold boutique in city-fringe D14, 7-min walk to Paya Lebar interchange, asking ~6% below the project's own recent average PSF. The best value/location combination of the five.",
+        "rating_rationale": "Listing is $1,592 psf vs the project's last-12-month average of ~$1,698 psf (range $1,659-$1,736) — a genuine ~6% discount confirmed against actual same-project comps, not just the algo's age-adjusted -21%. Freehold, completed 2020 (still young), built by TEE Land + KSH (credible developers). Location is strong: 7-min walk to Paya Lebar EW/Circle interchange, RCR (forward ~+3.5%). At 1,162 sqft this is a large 3BR (project typical 3BR ~797 sqft), so it is a premium layout; the $1.85M absolute quantum is high for D14, which caps the rental-yield case (~3.8% project yield). I do not lean on the trailing 3.7% appreciation (regional baseline, only 10 txns, ~0 forward power) — the verdict rests on verified relative value, freehold tenure and the interchange catalyst.",
+        "red_flags": [
+          "psf_cohort_txns = 0: no same-size-band comps in the algo, so the -2.7% cohort signal is unverifiable internally (mitigated by web-checked project average)",
+          "appreciation from regional_baseline on only 10 txns — story only, no forward weight",
+          "$1.85M absolute quantum is high for D14, limiting buyer pool and yield (~3.8%)",
+          "Large 1,162 sqft 3BR is an outlier format vs the project's typical ~797 sqft 3BR — verify floor plan and that sqft is not mis-scraped"
+        ],
+        "catalysts": [
+          "7-min walk to Paya Lebar interchange (EW + Circle lines), within Paya Lebar Central commercial growth corridor",
+          "Freehold tenure in a city-fringe district where most stock is leasehold",
+          "Asking ~6% under the project's own recent transacted average"
+        ],
+        "appreciation_assessment": "Trailing 3.7% is a regional-baseline placeholder on thin (10) txns, so it carries no forward signal. Forward case is district (RCR) + interchange proximity + freehold; treat as market-rate, not above.",
+        "rental_assessment": "Project yield ~3.8%; on a large 1,162 sqft 3BR at $1.85M the effective yield is likely a touch below that. Adequate but not a yield play — this is a value/location hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-35-25641477",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

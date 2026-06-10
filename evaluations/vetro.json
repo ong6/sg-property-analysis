@@ -1,0 +1,123 @@
+{
+  "condo": "Vetro",
+  "slug": "vetro",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "999-yr (quasi-freehold) unit at Vetro, D12 (Boon Keng/Balestier), asking $799k at $964 PSF for 829 sqft (labelled 1BR but oversized — likely a 2BR or jumbo). Very low PSF vs $1,615 median, but only 12 URA txns and 1.17km from MRT.",
+      "rating_rationale": "$964 PSF is a striking ~40% discount to median and 999-yr tenure is effectively freehold, but the 829 sqft '1BR' is misclassified (judge on real layout), the 6.16%/yr rate rests on just 12 txns (not credible), the development is small/boutique, and 1.17km to Boon Keng MRT (14-min walk) is weak. Low entry quantum and near-city D12 location are the genuine pluses; thin data and poor connectivity hold it to Neutral.",
+      "red_flags": [
+        "Only 12 URA txns — appreciation rate unreliable",
+        "829 sqft '1BR' is a misclassification — verify layout",
+        "1.17km from MRT, small development",
+        "Balestier/Boon Keng pocket has mixed appeal"
+      ],
+      "catalysts": [
+        "999-yr tenure (effectively freehold)",
+        "Sub-$800k entry into near-city D12",
+        "Low PSF leaves headroom if genuinely a 2BR"
+      ],
+      "as_of": {
+        "price": 799000,
+        "psf": 963.81,
+        "beds": 1,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "999-yr (quasi-freehold) unit at Vetro, D12 (Boon Keng/Balestier), asking $799k at $964 PSF for 829 sqft (labelled 1BR but oversized — likely a 2BR or jumbo). Very low PSF vs $1,615 median, but only 12 URA txns and 1.17km from MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "$964 PSF is a striking ~40% discount to median and 999-yr tenure is effectively freehold, but the 829 sqft '1BR' is misclassified (judge on real layout), the 6.16%/yr rate rests on just 12 txns (not credible), the development is small/boutique, and 1.17km to Boon Keng MRT (14-min walk) is weak. Low entry quantum and near-city D12 location are the genuine pluses; thin data and poor connectivity hold it to Neutral.",
+        "red_flags": [
+          "Only 12 URA txns — appreciation rate unreliable",
+          "829 sqft '1BR' is a misclassification — verify layout",
+          "1.17km from MRT, small development",
+          "Balestier/Boon Keng pocket has mixed appeal"
+        ],
+        "catalysts": [
+          "999-yr tenure (effectively freehold)",
+          "Sub-$800k entry into near-city D12",
+          "Low PSF leaves headroom if genuinely a 2BR"
+        ],
+        "rental_assessment": "Near-city Balestier rents steadily; if a true 2BR, yield ~3.5-4% at this low quantum.",
+        "appreciation_assessment": "D12 city-fringe baseline ~5%; the 6.16% URA reading is not usable on 12 txns.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D12 city-fringe baseline; URA 6.16% rejected (12 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vetro-500025206",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "The algo's #1-of-batch score (774) rests entirely on a mis-scraped PSF. Web-verified recent Vetro transactions are S$1,467-1,496 psf (avg ~S$1,477), not the S$964 psf in the dossier. The -47.1% 'cheap' signal and very_low_psf flag are pure data artifacts (psf_cohort_txns=0).",
+      "rating_rationale": "Dossier shows psf S$964 and age_adj_premium -47.1% (deeply cheap), but actual 12-month resale at Vetro ran S$1,467-1,496 psf (avg ~S$1,477, e.g. S$1,496 for a 614 sqft unit in Jul 2025). A real 829 sqft unit at S$1,477 psf would be ~S$1.22M, not S$799K, so either the price/sqft pairing is wrong or the listing is stale/mis-fed. psf_cohort_txns=0 means the -30.1% cohort discount has zero real comparables behind it. The 829 sqft 'oversized 1BR' is also a label error: Vetro 1+1 units are 473-796 sqft, so 829 sqft is a 2-room. With the core value signal unverifiable and contradicted by real transactions, this fails verification.",
+      "red_flags": [
+        "psf S$964 contradicted by verified recent transactions of S$1,467-1,496 psf — likely mis-scrape",
+        "psf_cohort_txns=0: -30.1% cohort discount has no real comparables",
+        "very_low_psf flag is a data artifact, not a genuine bargain",
+        "829 sqft labelled 1BR but Vetro 1+1 is 473-796 sqft (likely a 2-room, bed count mislabeled)",
+        "32-unit boutique block (1 tower) = thin liquidity for exit",
+        "old_property (built 2010, 16 yrs)"
+      ],
+      "catalysts": [
+        "Walkable to Boon Keng / Potong Pasir MRT (RCR-fringe location)",
+        "999-year tenure (near-freehold), though tenure is not a forward edge per v3.4"
+      ],
+      "as_of": {
+        "price": 799000,
+        "psf": 963.81,
+        "beds": 1,
+        "sqft": 829
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "low",
+        "summary": "The algo's #1-of-batch score (774) rests entirely on a mis-scraped PSF. Web-verified recent Vetro transactions are S$1,467-1,496 psf (avg ~S$1,477), not the S$964 psf in the dossier. The -47.1% 'cheap' signal and very_low_psf flag are pure data artifacts (psf_cohort_txns=0).",
+        "rating_rationale": "Dossier shows psf S$964 and age_adj_premium -47.1% (deeply cheap), but actual 12-month resale at Vetro ran S$1,467-1,496 psf (avg ~S$1,477, e.g. S$1,496 for a 614 sqft unit in Jul 2025). A real 829 sqft unit at S$1,477 psf would be ~S$1.22M, not S$799K, so either the price/sqft pairing is wrong or the listing is stale/mis-fed. psf_cohort_txns=0 means the -30.1% cohort discount has zero real comparables behind it. The 829 sqft 'oversized 1BR' is also a label error: Vetro 1+1 units are 473-796 sqft, so 829 sqft is a 2-room. With the core value signal unverifiable and contradicted by real transactions, this fails verification.",
+        "red_flags": [
+          "psf S$964 contradicted by verified recent transactions of S$1,467-1,496 psf — likely mis-scrape",
+          "psf_cohort_txns=0: -30.1% cohort discount has no real comparables",
+          "very_low_psf flag is a data artifact, not a genuine bargain",
+          "829 sqft labelled 1BR but Vetro 1+1 is 473-796 sqft (likely a 2-room, bed count mislabeled)",
+          "32-unit boutique block (1 tower) = thin liquidity for exit",
+          "old_property (built 2010, 16 yrs)"
+        ],
+        "catalysts": [
+          "Walkable to Boon Keng / Potong Pasir MRT (RCR-fringe location)",
+          "999-year tenure (near-freehold), though tenure is not a forward edge per v3.4"
+        ],
+        "appreciation_assessment": "Dossier 6.16% 5yr CAGR on only 12 txns is mid-pack and not forward-predictive per v3.4 priors; cannot be relied on given the underlying PSF data is broken.",
+        "rental_assessment": "Not assessable with confidence given price/sqft integrity issue; Balestier 1+1/2-room rentals are modest, so even at a corrected ~S$1.2M valuation yield would be unremarkable."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vetro-500025206",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

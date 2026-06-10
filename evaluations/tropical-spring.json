@@ -1,0 +1,59 @@
+{
+  "condo": "Tropical Spring",
+  "slug": "tropical-spring",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,066 sqft 3BR at Tropical Spring, a 99LH Simei (D18) condo built 2003, just 400m from EW3 Simei MRT, at $1.45M / $1,360 psf. Strong realized appreciation (6.7%/yr over a solid 46-txn series) and excellent MRT proximity are offset by an aging 99LH (~22 years gone) and an asking PSF ~8% above the $1,263 median.",
+      "rating_rationale": "The 6.7%/yr CAGR on 46 transactions is genuinely strong for OCR D18 and 400m-to-MRT is a real liquidity/rental anchor near Tampines Regional Centre and Changi Business Park. But the 99LH is now ~22 years old (lease decay accelerates from here on a 5–7yr hold), and $1,360 psf is an ~8% premium to the median — paying up for a lease that's running down. The catalysts (CRL Tampines, mature estate) support a hold but the entry is full.",
+      "red_flags": [
+        "99LH built 2003 — ~22 years elapsed, lease decay a growing headwind",
+        "Asking PSF ~8% above district median",
+        "Older development — higher maintenance, dated facilities vs new launches"
+      ],
+      "catalysts": [
+        "400m to Simei MRT — strong rental/exit liquidity",
+        "Proximity to Changi Business Park, SUTD, Tampines Regional Centre + CRL",
+        "Documented 6.7%/yr appreciation on a credible 46-txn series"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1360.23,
+        "beds": 3,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,066 sqft 3BR at Tropical Spring, a 99LH Simei (D18) condo built 2003, just 400m from EW3 Simei MRT, at $1.45M / $1,360 psf. Strong realized appreciation (6.7%/yr over a solid 46-txn series) and excellent MRT proximity are offset by an aging 99LH (~22 years gone) and an asking PSF ~8% above the $1,263 median.",
+        "rating": "Neutral",
+        "rating_rationale": "The 6.7%/yr CAGR on 46 transactions is genuinely strong for OCR D18 and 400m-to-MRT is a real liquidity/rental anchor near Tampines Regional Centre and Changi Business Park. But the 99LH is now ~22 years old (lease decay accelerates from here on a 5–7yr hold), and $1,360 psf is an ~8% premium to the median — paying up for a lease that's running down. The catalysts (CRL Tampines, mature estate) support a hold but the entry is full.",
+        "red_flags": [
+          "99LH built 2003 — ~22 years elapsed, lease decay a growing headwind",
+          "Asking PSF ~8% above district median",
+          "Older development — higher maintenance, dated facilities vs new launches"
+        ],
+        "catalysts": [
+          "400m to Simei MRT — strong rental/exit liquidity",
+          "Proximity to Changi Business Park, SUTD, Tampines Regional Centre + CRL",
+          "Documented 6.7%/yr appreciation on a credible 46-txn series"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tropical-spring-500071912",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

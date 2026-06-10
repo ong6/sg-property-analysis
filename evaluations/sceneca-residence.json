@@ -1,0 +1,63 @@
+{
+  "condo": "Sceneca Residence",
+  "slug": "sceneca-residence",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A near-new (2026/27 TOP) 99-yr leasehold 4BR at Sceneca Residence (D16), 1,518 sqft at $3.1M / $2,042 psf, with direct sheltered access to Tanah Merah MRT (50m). Asking sits at the bottom of the current $2,042–$2,657 psf range and just under the $2,065 unit median, on a deep 269-txn base — a genuinely well-priced, MRT-integrated unit. The $3.1M quantum on a 4BR is the main constraint.",
+      "rating_rationale": "$2,042 psf is the floor of Sceneca's current transacting range (verified ~$2,042–$2,657, recent avg ~$2,044) and ~1% below the $2,065 unit median — attractive entry for a brand-new, directly MRT-connected unit. 50m to Tanah Merah EWL (one stop to Expo/DTL interchange) is a top-tier connectivity catalyst, and the 269-txn base gives real liquidity. Tempered by $3.1M quantum (above the deepest band, 4BR niche) and new-launch appreciation not yet resale-proven.",
+      "red_flags": [
+        "$3.1M quantum on a 4BR thins the buyer pool above the deep-liquidity band",
+        "New-launch bias — appreciation not yet resale-validated",
+        "99-yr leasehold at a premium absolute price",
+        "4BR is only ~9% of the development — niche segment"
+      ],
+      "catalysts": [
+        "50m sheltered direct access to Tanah Merah EWL MRT — one stop to Expo/DTL interchange",
+        "Asking at the bottom of the project's current PSF range, ~1% below unit median",
+        "D16 Bedok/Upper East Coast — TEL Bayshore precinct and East Coast transformation",
+        "Deep 269-txn liquidity base for a new project"
+      ],
+      "as_of": {
+        "price": 3100000,
+        "psf": 2042.16,
+        "beds": 4,
+        "sqft": 1518.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A near-new (2026/27 TOP) 99-yr leasehold 4BR at Sceneca Residence (D16), 1,518 sqft at $3.1M / $2,042 psf, with direct sheltered access to Tanah Merah MRT (50m). Asking sits at the bottom of the current $2,042–$2,657 psf range and just under the $2,065 unit median, on a deep 269-txn base — a genuinely well-priced, MRT-integrated unit. The $3.1M quantum on a 4BR is the main constraint.",
+        "rating": "Buy",
+        "rating_rationale": "$2,042 psf is the floor of Sceneca's current transacting range (verified ~$2,042–$2,657, recent avg ~$2,044) and ~1% below the $2,065 unit median — attractive entry for a brand-new, directly MRT-connected unit. 50m to Tanah Merah EWL (one stop to Expo/DTL interchange) is a top-tier connectivity catalyst, and the 269-txn base gives real liquidity. Tempered by $3.1M quantum (above the deepest band, 4BR niche) and new-launch appreciation not yet resale-proven.",
+        "red_flags": [
+          "$3.1M quantum on a 4BR thins the buyer pool above the deep-liquidity band",
+          "New-launch bias — appreciation not yet resale-validated",
+          "99-yr leasehold at a premium absolute price",
+          "4BR is only ~9% of the development — niche segment"
+        ],
+        "catalysts": [
+          "50m sheltered direct access to Tanah Merah EWL MRT — one stop to Expo/DTL interchange",
+          "Asking at the bottom of the project's current PSF range, ~1% below unit median",
+          "D16 Bedok/Upper East Coast — TEL Bayshore precinct and East Coast transformation",
+          "Deep 269-txn liquidity base for a new project"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sceneca-residence-500074466",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

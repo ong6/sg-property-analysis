@@ -1,0 +1,61 @@
+{
+  "condo": "79 Chay Yan Street",
+  "slug": "79-chay-yan-street",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1967 Tiong Bahru SIT walk-up flat on a 99-year lease from 1967 — roughly 40 years of lease remaining — gazetted for conservation in 2003, so no en-bloc is possible. At $1.15M / $1319 PSF for a depreciating, hard-to-finance ~40yr-lease walk-up, this is a heritage/own-stay piece, not an investment.",
+      "rating_rationale": "The 99yr lease from 1967 leaves ~40 years — banks cap LTV and tenor on sub-60yr leases, shrinking the buyer pool and guaranteeing lease-decay drag on price. Conservation gazette removes any en-bloc upside. Walk-up (no lift), no facilities, 780m to MRT. Score 340/1000 and 164-253 arena record confirm a weak technical case. Lease decay over a 5-7yr hold works directly against capital appreciation.",
+      "red_flags": [
+        "~40 years lease remaining — financing restricted, accelerating lease decay",
+        "Conservation-gazetted — no en-bloc upside possible",
+        "1967 build, walk-up, no facilities — high maintenance, narrow buyer pool",
+        "No URA data; very weak score 340"
+      ],
+      "catalysts": [
+        "Tiong Bahru heritage charm appeals to a niche own-stay/lifestyle buyer",
+        "Central D03 location near Greater Southern Waterfront"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1318.81,
+        "beds": 2,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1967 Tiong Bahru SIT walk-up flat on a 99-year lease from 1967 — roughly 40 years of lease remaining — gazetted for conservation in 2003, so no en-bloc is possible. At $1.15M / $1319 PSF for a depreciating, hard-to-finance ~40yr-lease walk-up, this is a heritage/own-stay piece, not an investment.",
+        "rating": "Avoid",
+        "rating_rationale": "The 99yr lease from 1967 leaves ~40 years — banks cap LTV and tenor on sub-60yr leases, shrinking the buyer pool and guaranteeing lease-decay drag on price. Conservation gazette removes any en-bloc upside. Walk-up (no lift), no facilities, 780m to MRT. Score 340/1000 and 164-253 arena record confirm a weak technical case. Lease decay over a 5-7yr hold works directly against capital appreciation.",
+        "red_flags": [
+          "~40 years lease remaining — financing restricted, accelerating lease decay",
+          "Conservation-gazetted — no en-bloc upside possible",
+          "1967 build, walk-up, no facilities — high maintenance, narrow buyer pool",
+          "No URA data; very weak score 340"
+        ],
+        "catalysts": [
+          "Tiong Bahru heritage charm appeals to a niche own-stay/lifestyle buyer",
+          "Central D03 location near Greater Southern Waterfront"
+        ],
+        "rental_assessment": "Tiong Bahru is rentable to lifestyle tenants, but a walk-up with no facilities commands a discount and a sub-40yr lease limits the eventual exit.",
+        "appreciation_assessment": "Negative bias from lease decay on a ~40yr leasehold with no en-bloc escape; conservation status caps redevelopment value. Expect erosion, not appreciation, over the hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-79-chay-yan-street-500128660",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

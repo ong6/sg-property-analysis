@@ -1,0 +1,57 @@
+{
+  "condo": "Crystal Rhu",
+  "slug": "crystal-rhu",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D15 2BR (1,055 sqft) at $2.08M / $1,972 psf, 6 min from Katong Park TEL, in a year-2000 boutique. The headline 6.42%/yr URA rate rests on just 8 transactions (unreliable) and the weak Elo 962 / 144-278 arena record plus a 412 score point to underlying problems.",
+      "rating_rationale": "Freehold East Coast near the new TEL station is a sound backdrop, but the case is shaky: 8-txn appreciation can't be trusted, $1,972 psf is above the $1,922 median (paying up), and $2.08M for a 2BR is a full quantum for an ageing 2000-vintage boutique. The poor 412 score and 144-278 record reflect that weakness. Location floor offsets the data problems to a Neutral, not better.",
+      "red_flags": [
+        "Only 8 URA txns — 6.42% rate unreliable",
+        "PSF above median, $2.08M full quantum for a 2BR",
+        "Year-2000 boutique, weak Elo 962 / score 412"
+      ],
+      "catalysts": [
+        "6 min to Katong Park TEL",
+        "Freehold D15 East Coast lifestyle belt"
+      ],
+      "as_of": {
+        "price": 2080000,
+        "psf": 1971.56,
+        "beds": 2,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D15 2BR (1,055 sqft) at $2.08M / $1,972 psf, 6 min from Katong Park TEL, in a year-2000 boutique. The headline 6.42%/yr URA rate rests on just 8 transactions (unreliable) and the weak Elo 962 / 144-278 arena record plus a 412 score point to underlying problems.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold East Coast near the new TEL station is a sound backdrop, but the case is shaky: 8-txn appreciation can't be trusted, $1,972 psf is above the $1,922 median (paying up), and $2.08M for a 2BR is a full quantum for an ageing 2000-vintage boutique. The poor 412 score and 144-278 record reflect that weakness. Location floor offsets the data problems to a Neutral, not better.",
+        "red_flags": [
+          "Only 8 URA txns — 6.42% rate unreliable",
+          "PSF above median, $2.08M full quantum for a 2BR",
+          "Year-2000 boutique, weak Elo 962 / score 412"
+        ],
+        "catalysts": [
+          "6 min to Katong Park TEL",
+          "Freehold D15 East Coast lifestyle belt"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-crystal-rhu-60116909",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

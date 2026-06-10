@@ -1,0 +1,57 @@
+{
+  "condo": "D' Almira",
+  "slug": "d-almira",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D13 3BR at $1,494 psf, ~5% below the $1,580 median, in a small boutique development near Woodleigh. PSF looks cheap because the 1,539 sqft unit is oversized for a 3BR, and the 6.88%/yr URA rate rests on only 6 transactions, so it is statistically unreliable.",
+      "rating_rationale": "$2.3M entry sits in the broad-buyer band and freehold D13 near NEL/Woodleigh has decent fundamentals, but 1,539 sqft inflates the absolute price for a 3BR and dampens PSF appeal — exit pricing is set by quantum, not the optically-low PSF. 6-txn appreciation series cannot be trusted; boutique block means thin liquidity. Balanced positives and concerns.",
+      "red_flags": [
+        "Only 6 URA transactions — appreciation rate unreliable",
+        "Oversized 1,539 sqft 3BR inflates quantum and depresses PSF optics",
+        "Boutique development — limited liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in maturing D13 Woodleigh/Bidadari corridor",
+        "Listed below district median PSF"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1494.48,
+        "beds": 3,
+        "sqft": 1539.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D13 3BR at $1,494 psf, ~5% below the $1,580 median, in a small boutique development near Woodleigh. PSF looks cheap because the 1,539 sqft unit is oversized for a 3BR, and the 6.88%/yr URA rate rests on only 6 transactions, so it is statistically unreliable.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.3M entry sits in the broad-buyer band and freehold D13 near NEL/Woodleigh has decent fundamentals, but 1,539 sqft inflates the absolute price for a 3BR and dampens PSF appeal — exit pricing is set by quantum, not the optically-low PSF. 6-txn appreciation series cannot be trusted; boutique block means thin liquidity. Balanced positives and concerns.",
+        "red_flags": [
+          "Only 6 URA transactions — appreciation rate unreliable",
+          "Oversized 1,539 sqft 3BR inflates quantum and depresses PSF optics",
+          "Boutique development — limited liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in maturing D13 Woodleigh/Bidadari corridor",
+          "Listed below district median PSF"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-almira-500115884",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

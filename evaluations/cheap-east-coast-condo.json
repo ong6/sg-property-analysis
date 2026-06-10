@@ -1,0 +1,57 @@
+{
+  "condo": "Cheap East Coast Condo",
+  "slug": "cheap-east-coast-condo",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Garbled, mislabelled listing: titled 'Cheap East Coast Condo' and tagged D15, but the MRT field shows SW1 Cheng Lim LRT — which is in Sengkang (D19), not East Coast. At $1.48M / $2,643 PSF for 560sqft 99yr LH with no built year and no URA data, this is incoherent and one of the worst-scoring entries in the batch.",
+      "rating_rationale": "score_1000 is just 247 — the lowest in the batch — and the dossier is internally contradictory (D15 label vs Cheng Lim LRT in Sengkang). $2,643 PSF for a 560sqft leasehold shoebox is extremely expensive with no project identity, no built year and zero URA data to justify it. Unidentifiable, mispriced and inconsistent: a clear Avoid.",
+      "red_flags": [
+        "Contradictory data — D15 label but Cheng Lim LRT is in D19 Sengkang",
+        "$2,643 PSF for a 560sqft LH shoebox with no identifiable project or built year",
+        "Lowest score_1000 in the batch (247); zero URA data"
+      ],
+      "catalysts": [
+        "60m to an LRT station (if accurate) is the only nominal positive"
+      ],
+      "as_of": {
+        "price": 1480000,
+        "psf": 2642.86,
+        "beds": 2,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Garbled, mislabelled listing: titled 'Cheap East Coast Condo' and tagged D15, but the MRT field shows SW1 Cheng Lim LRT — which is in Sengkang (D19), not East Coast. At $1.48M / $2,643 PSF for 560sqft 99yr LH with no built year and no URA data, this is incoherent and one of the worst-scoring entries in the batch.",
+        "rating": "Avoid",
+        "rating_rationale": "score_1000 is just 247 — the lowest in the batch — and the dossier is internally contradictory (D15 label vs Cheng Lim LRT in Sengkang). $2,643 PSF for a 560sqft leasehold shoebox is extremely expensive with no project identity, no built year and zero URA data to justify it. Unidentifiable, mispriced and inconsistent: a clear Avoid.",
+        "red_flags": [
+          "Contradictory data — D15 label but Cheng Lim LRT is in D19 Sengkang",
+          "$2,643 PSF for a 560sqft LH shoebox with no identifiable project or built year",
+          "Lowest score_1000 in the batch (247); zero URA data"
+        ],
+        "catalysts": [
+          "60m to an LRT station (if accurate) is the only nominal positive"
+        ],
+        "rental_assessment": "Cannot assess — project and even district are unverifiable; a $1.48M LH shoebox at $2,643 PSF would have poor yield regardless.",
+        "appreciation_assessment": "No data and contradictory location; uninvestable as presented.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-east-coast-condo-500135317",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

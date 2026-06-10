@@ -1,0 +1,61 @@
+{
+  "condo": "Casafina",
+  "slug": "casafina",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Large, spacious 1,378 sqft 3BR in Bedok South at $1,269 PSF — squarely in line with the last-12-month transacted average (~$1,258 PSF) — with a 6.67% appreciation rate over a credible 55 txns and TEL access via Siglap/Bayshore. Solid value with a real infrastructure catalyst, capped by the ageing 99-yr lease and large-unit liquidity.",
+      "rating_rationale": "Web-verified Casafina 3BR transactions average ~$1,258 PSF, so $1,269 is fair, not stretched. 6.67% URA CAGR on 55 txns is both strong and reliable, and the TEL (Siglap/Bayshore) plus Bayshore precinct are concrete catalysts. The 2000-vintage 99-yr lease and 1,378 sqft size (pushing price to $1.75M) are the main caveats.",
+      "red_flags": [
+        "2000 99-yr lease, ~74yr remaining and eroding",
+        "1,378 sqft 3BR is large, narrowing buyer pool at $1.75M",
+        "Siglap MRT is ~990m, not walk-up close"
+      ],
+      "catalysts": [
+        "Thomson-East Coast Line (Siglap/Bayshore TEL) within walking distance",
+        "Bayshore residential precinct development nearby",
+        "6.67% appreciation backed by 55 txns"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1269.96,
+        "beds": 3,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large, spacious 1,378 sqft 3BR in Bedok South at $1,269 PSF — squarely in line with the last-12-month transacted average (~$1,258 PSF) — with a 6.67% appreciation rate over a credible 55 txns and TEL access via Siglap/Bayshore. Solid value with a real infrastructure catalyst, capped by the ageing 99-yr lease and large-unit liquidity.",
+        "rating": "Buy",
+        "rating_rationale": "Web-verified Casafina 3BR transactions average ~$1,258 PSF, so $1,269 is fair, not stretched. 6.67% URA CAGR on 55 txns is both strong and reliable, and the TEL (Siglap/Bayshore) plus Bayshore precinct are concrete catalysts. The 2000-vintage 99-yr lease and 1,378 sqft size (pushing price to $1.75M) are the main caveats.",
+        "red_flags": [
+          "2000 99-yr lease, ~74yr remaining and eroding",
+          "1,378 sqft 3BR is large, narrowing buyer pool at $1.75M",
+          "Siglap MRT is ~990m, not walk-up close"
+        ],
+        "catalysts": [
+          "Thomson-East Coast Line (Siglap/Bayshore TEL) within walking distance",
+          "Bayshore residential precinct development nearby",
+          "6.67% appreciation backed by 55 txns"
+        ],
+        "rental_assessment": "Quiet, spacious East Coast family condo with TEL access; rents steadily to families though yield is modest at $1.75M.",
+        "appreciation_assessment": "6.67% resale CAGR over 55 txns is credible; the TEL build-out and Bayshore precinct should sustain above-baseline growth into the hold window.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casafina-25403528",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

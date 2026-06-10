@@ -1,0 +1,63 @@
+{
+  "condo": "Parc Central Residences",
+  "slug": "parc-central-residences",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Parc Central Residences is a 99yr Executive Condominium in Tampines (D18, TOP 2025); this 1109 sqft 4BR at $1.9M / $1713 PSF. EC PSF at $1713 is rich, and as a brand-new EC it is locked under the 5-year Minimum Occupation Period — it cannot be resold on the open market for ~5 years, which is fatal to a 5-7yr investment hold.",
+      "rating_rationale": "As a 2025-TOP EC, the MOP runs ~5 years from key collection, so an investor buying now cannot sell within most of a 5-7yr horizon and EC subletting of the whole unit is restricted during MOP — gutting both exit and rental income, the two pillars of the investment case. $1713 PSF is also high for a D18 EC. No MRT distance listed and no URA data. The compact 1109 sqft 4BR squeezes four bedrooms into a small plate, signalling efficiency over livability.",
+      "red_flags": [
+        "EC under MOP — cannot resell on open market for ~5yrs; whole-unit subletting restricted during MOP",
+        "$1713 PSF is high for a D18 EC",
+        "1109 sqft 4BR is very compact — tight, niche layout",
+        "No MRT proximity listed; no URA data"
+      ],
+      "catalysts": [
+        "Tampines Regional Centre + Cross Island Line catchment",
+        "Post-MOP privatisation eventually opens the buyer pool to PRs",
+        "Brand-new (2025) build quality"
+      ],
+      "as_of": {
+        "price": 1900000,
+        "psf": 1713.26,
+        "beds": 4,
+        "sqft": 1109.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Parc Central Residences is a 99yr Executive Condominium in Tampines (D18, TOP 2025); this 1109 sqft 4BR at $1.9M / $1713 PSF. EC PSF at $1713 is rich, and as a brand-new EC it is locked under the 5-year Minimum Occupation Period — it cannot be resold on the open market for ~5 years, which is fatal to a 5-7yr investment hold.",
+        "rating": "Avoid",
+        "rating_rationale": "As a 2025-TOP EC, the MOP runs ~5 years from key collection, so an investor buying now cannot sell within most of a 5-7yr horizon and EC subletting of the whole unit is restricted during MOP — gutting both exit and rental income, the two pillars of the investment case. $1713 PSF is also high for a D18 EC. No MRT distance listed and no URA data. The compact 1109 sqft 4BR squeezes four bedrooms into a small plate, signalling efficiency over livability.",
+        "red_flags": [
+          "EC under MOP — cannot resell on open market for ~5yrs; whole-unit subletting restricted during MOP",
+          "$1713 PSF is high for a D18 EC",
+          "1109 sqft 4BR is very compact — tight, niche layout",
+          "No MRT proximity listed; no URA data"
+        ],
+        "catalysts": [
+          "Tampines Regional Centre + Cross Island Line catchment",
+          "Post-MOP privatisation eventually opens the buyer pool to PRs",
+          "Brand-new (2025) build quality"
+        ],
+        "rental_assessment": "Effectively zero rental viability during the MOP for an investor (only rooms, not the whole unit, can be sublet); post-MOP a compact 4BR EC in Tampines lets to families at modest yield.",
+        "appreciation_assessment": "ECs do appreciate at privatisation, but the MOP lockup means this does not fit a 5-7yr investment exit, and $1713 PSF leaves little headroom. No URA data to support an override.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-central-residences-25320586",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "St Michael's Condo",
+  "slug": "st-michael-s-condo",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2002 freehold 3BR in D12 (Balestier/Boon Keng fringe), large at 1463 sqft, priced $2.5M / $1709 PSF — the price is driven up by sheer size, not a premium per-foot. Freehold and generous space are pluses, but the 1.05km MRT walk, 24-year age and absent URA data make this a middling hold rather than a value buy.",
+      "rating_rationale": "Freehold and 1463 sqft give an own-stay-friendly profile, but as an investment the $2.5M price is inflated by size (cheaper $1709 PSF is a function of a big floor plate, not a bargain). 1.05km/13-min to Boon Keng MRT is poor, the 2002 build is aging, and there is no URA appreciation/txn data to confirm the trajectory. D12 Balestier is a slow-appreciation district. Score 434/1000.",
+      "red_flags": [
+        "$2.5M price inflated by 1463 sqft size — low PSF is not a discount",
+        "1.05km / 13-min walk to MRT",
+        "2002 build, 24 years old — maintenance and dated facilities",
+        "No URA appreciation/txn data; D12 Balestier appreciates slowly"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "City-fringe D12 location, ~2-3km to CBD",
+        "Boon Keng/Balestier rejuvenation over time"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1708.82,
+        "beds": 3,
+        "sqft": 1463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2002 freehold 3BR in D12 (Balestier/Boon Keng fringe), large at 1463 sqft, priced $2.5M / $1709 PSF — the price is driven up by sheer size, not a premium per-foot. Freehold and generous space are pluses, but the 1.05km MRT walk, 24-year age and absent URA data make this a middling hold rather than a value buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and 1463 sqft give an own-stay-friendly profile, but as an investment the $2.5M price is inflated by size (cheaper $1709 PSF is a function of a big floor plate, not a bargain). 1.05km/13-min to Boon Keng MRT is poor, the 2002 build is aging, and there is no URA appreciation/txn data to confirm the trajectory. D12 Balestier is a slow-appreciation district. Score 434/1000.",
+        "red_flags": [
+          "$2.5M price inflated by 1463 sqft size — low PSF is not a discount",
+          "1.05km / 13-min walk to MRT",
+          "2002 build, 24 years old — maintenance and dated facilities",
+          "No URA appreciation/txn data; D12 Balestier appreciates slowly"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "City-fringe D12 location, ~2-3km to CBD",
+          "Boon Keng/Balestier rejuvenation over time"
+        ],
+        "rental_assessment": "Decent — large freehold 3BR near the city fringe lets to families, but the 1km MRT walk and Balestier's older stock cap the achievable rent and yield.",
+        "appreciation_assessment": "No URA data; D12 Balestier is a historically slow appreciator and the large-unit pricing limits upside. Expect modest, freehold-supported but unexciting growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-st-michael-s-condo-25128641",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

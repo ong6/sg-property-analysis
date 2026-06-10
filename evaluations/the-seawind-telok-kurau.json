@@ -1,0 +1,57 @@
+{
+  "condo": "The Seawind @ Telok Kurau",
+  "slug": "the-seawind-telok-kurau",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 3,346 sqft 4BR penthouse at The Seawind (FH, Far East-built, Telok Kurau D15) at $4.5M / $1,345 psf. This is an oversized penthouse — regular 4BR units there are ~2,000–2,265 sqft — so the low headline PSF reflects size, not value; the $4.5M absolute price sits in a thin, illiquid buyer band with no URA rate available.",
+      "rating_rationale": "$4.5M quantum is well above the deep $1.8–2.5M pool; oversized PH at 3,346 sqft appeals to a tiny niche of buyers, and large penthouse sqft notoriously fails to command full per-sqft value on resale (the PSF discount is the market telling you). No URA appreciation/txn data for this unit type means no measurable growth case. Far East build quality is solid and FH/D15 are fine, but as a 5–7yr investment the exit risk and capital lock-up are disqualifying.",
+      "red_flags": [
+        "$4.5M quantum far outside the liquid band — very shallow buyer pool",
+        "3,346 sqft oversized penthouse — PSF masks weak per-sqft resale value",
+        "No URA appreciation or transaction data for this unit type",
+        "Penthouses in boutique D15 blocks turn over slowly"
+      ],
+      "catalysts": [
+        "Freehold, Far East build quality, D15 East Coast lifestyle"
+      ],
+      "as_of": {
+        "price": 4500000,
+        "psf": 1344.89,
+        "beds": 4,
+        "sqft": 3346.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 3,346 sqft 4BR penthouse at The Seawind (FH, Far East-built, Telok Kurau D15) at $4.5M / $1,345 psf. This is an oversized penthouse — regular 4BR units there are ~2,000–2,265 sqft — so the low headline PSF reflects size, not value; the $4.5M absolute price sits in a thin, illiquid buyer band with no URA rate available.",
+        "rating": "Avoid",
+        "rating_rationale": "$4.5M quantum is well above the deep $1.8–2.5M pool; oversized PH at 3,346 sqft appeals to a tiny niche of buyers, and large penthouse sqft notoriously fails to command full per-sqft value on resale (the PSF discount is the market telling you). No URA appreciation/txn data for this unit type means no measurable growth case. Far East build quality is solid and FH/D15 are fine, but as a 5–7yr investment the exit risk and capital lock-up are disqualifying.",
+        "red_flags": [
+          "$4.5M quantum far outside the liquid band — very shallow buyer pool",
+          "3,346 sqft oversized penthouse — PSF masks weak per-sqft resale value",
+          "No URA appreciation or transaction data for this unit type",
+          "Penthouses in boutique D15 blocks turn over slowly"
+        ],
+        "catalysts": [
+          "Freehold, Far East build quality, D15 East Coast lifestyle"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-seawind-telok-kurau-24535368",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Kim Keat Gardens",
+  "slug": "kim-keat-gardens",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Older 99LH D12 development priced well below district median PSF, but the headline 14.3% URA appreciation rests on just 5 transactions and is not trustworthy. The 1399sqft 'cheap-PSF' 3BR is an oversized unit, so the $1,036 PSF flatters the absolute $1.45M ticket more than it signals value.",
+      "rating_rationale": "$1,036 PSF vs $1,057 URA median is roughly fair, not a bargain once you account for the large 1399sqft floorplate inflating absolute price. The 14.3%/yr appreciation is statistically meaningless at only 5 txns. A 2003-built leasehold (~76yrs left) in Toa Payoh fringe with no listed MRT and no near catalyst — decent liquidity from D12 demand but no clear upside thesis.",
+      "red_flags": [
+        "Appreciation rate from only 5 URA transactions — unreliable",
+        "Oversized 1399sqft 3BR inflates absolute price; PSF looks cheap but ticket is not",
+        "2003 leasehold, ~76yrs remaining and shrinking",
+        "No MRT listed within walking distance"
+      ],
+      "catalysts": [
+        "Toa Payoh/Balestier fringe gentrification",
+        "Sub-$1.5M entry keeps buyer pool reasonably deep"
+      ],
+      "as_of": {
+        "price": 1450000,
+        "psf": 1036.45,
+        "beds": 3,
+        "sqft": 1399.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Older 99LH D12 development priced well below district median PSF, but the headline 14.3% URA appreciation rests on just 5 transactions and is not trustworthy. The 1399sqft 'cheap-PSF' 3BR is an oversized unit, so the $1,036 PSF flatters the absolute $1.45M ticket more than it signals value.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,036 PSF vs $1,057 URA median is roughly fair, not a bargain once you account for the large 1399sqft floorplate inflating absolute price. The 14.3%/yr appreciation is statistically meaningless at only 5 txns. A 2003-built leasehold (~76yrs left) in Toa Payoh fringe with no listed MRT and no near catalyst — decent liquidity from D12 demand but no clear upside thesis.",
+        "red_flags": [
+          "Appreciation rate from only 5 URA transactions — unreliable",
+          "Oversized 1399sqft 3BR inflates absolute price; PSF looks cheap but ticket is not",
+          "2003 leasehold, ~76yrs remaining and shrinking",
+          "No MRT listed within walking distance"
+        ],
+        "catalysts": [
+          "Toa Payoh/Balestier fringe gentrification",
+          "Sub-$1.5M entry keeps buyer pool reasonably deep"
+        ],
+        "rental_assessment": "D12 has steady tenant demand from Novena/CBD commuters; a large 3BR is family-oriented with a narrower pool than 2BR.",
+        "appreciation_assessment": "Cannot rely on the 14.3% figure (5 txns). Treat as district baseline ~4%; no specific catalyst to push above it.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D12 RCR-fringe baseline; URA 5-txn rate discarded as unreliable"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kim-keat-gardens-500134994",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

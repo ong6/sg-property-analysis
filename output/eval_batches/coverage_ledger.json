@@ -1,0 +1,253 @@
+{
+ "batches": {
+  "cov_batch_01": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_02": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_03": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_04": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_05": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_06": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_07": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_08": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_09": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_10": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_11": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_12": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_13": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_14": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_15": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_16": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_17": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_18": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_19": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_20": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_21": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_22": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_23": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_24": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_25": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_26": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_27": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_28": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_29": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_30": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_31": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_32": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_33": {
+   "status": "done",
+   "count": 15
+  },
+  "cov_batch_34": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_35": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_36": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_37": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_38": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_39": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_40": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_41": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_42": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_43": {
+   "status": "running",
+   "count": 15
+  },
+  "cov_batch_44": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_45": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_46": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_47": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_48": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_49": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_50": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_51": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_52": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_53": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_54": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_55": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_56": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_57": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_58": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_59": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_60": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_61": {
+   "status": "pending",
+   "count": 15
+  },
+  "cov_batch_62": {
+   "status": "pending",
+   "count": 5
+  }
+ },
+ "total_condos": 920
+}

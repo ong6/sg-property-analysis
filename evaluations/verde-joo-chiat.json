@@ -1,0 +1,61 @@
+{
+  "condo": "Verde Joo Chiat",
+  "slug": "verde-joo-chiat",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A micro 18-unit freehold new launch (TOP 2029) by a small developer in Joo Chiat, 4BR at $2,390 psf / $2.93M with zero URA history. The freehold D15 address is the only draw; boutique scale, small-developer execution risk, an 11-min MRT walk and uncompleted status make it an Avoid for investment.",
+      "rating_rationale": "Verde is an 18-unit boutique by MNG 108 (small developer) completing only in 2029, so there is no transacted track record and no URA series to underwrite value; $2,390 psf is in line with launch pricing but a $2.93M quantum in an 18-unit block means almost no resale liquidity. The 910m/11-min walk to Eunos MRT is mediocre, and buying off a 2029 TOP ties up capital with SSD/holding risk through most of a 5-7yr window. Score_1000 399 reflects a sub-market profile.",
+      "red_flags": [
+        "18-unit micro-development — negligible resale liquidity",
+        "Small developer (MNG 108) — execution/quality track record unproven",
+        "No URA data; uncompleted (TOP 2029) — capital tied up before any data exists",
+        "910m/11-min walk to MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure in the desirable Joo Chiat / D15 enclave",
+        "Brand-new dual-key/penthouse formats with premium fit-out"
+      ],
+      "as_of": {
+        "price": 2933021,
+        "psf": 2390.4,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A micro 18-unit freehold new launch (TOP 2029) by a small developer in Joo Chiat, 4BR at $2,390 psf / $2.93M with zero URA history. The freehold D15 address is the only draw; boutique scale, small-developer execution risk, an 11-min MRT walk and uncompleted status make it an Avoid for investment.",
+        "rating": "Avoid",
+        "rating_rationale": "Verde is an 18-unit boutique by MNG 108 (small developer) completing only in 2029, so there is no transacted track record and no URA series to underwrite value; $2,390 psf is in line with launch pricing but a $2.93M quantum in an 18-unit block means almost no resale liquidity. The 910m/11-min walk to Eunos MRT is mediocre, and buying off a 2029 TOP ties up capital with SSD/holding risk through most of a 5-7yr window. Score_1000 399 reflects a sub-market profile.",
+        "red_flags": [
+          "18-unit micro-development — negligible resale liquidity",
+          "Small developer (MNG 108) — execution/quality track record unproven",
+          "No URA data; uncompleted (TOP 2029) — capital tied up before any data exists",
+          "910m/11-min walk to MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure in the desirable Joo Chiat / D15 enclave",
+          "Brand-new dual-key/penthouse formats with premium fit-out"
+        ],
+        "rental_assessment": "Joo Chiat is a strong rental enclave, but leasing only begins after 2029 TOP; $2.93M 4BR rents to a narrow pool.",
+        "appreciation_assessment": "No URA basis; boutique new-launch FH at full launch pricing with thin liquidity typically appreciates slowly post-TOP.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-verde-joo-chiat-500148302",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

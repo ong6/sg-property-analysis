@@ -1,0 +1,65 @@
+{
+  "condo": "Promenade Peak",
+  "slug": "promenade-peak",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1BR at Promenade Peak, Allgreen's 99LH 596-unit new launch on Zion Road (D03 River Valley), TOP ~2029, $1.43M at $2,713 PSF — below the $3,090 project median, and 410m to Great World TEL. Prime location and strong launch demand (53.7% sold at launch), but it's an unbuilt new launch with developer-inflated pricing and a niche 1BR resale profile.",
+      "rating_rationale": "Web check: launched Aug 2025 at avg $2,894–$3,343 PSF, world's tallest PPVC tower, 410m to Great World/Havelock MRT, TOP ~2029. This $2,713 PSF 1BR is below project median (likely a lower-floor stack), in genuinely prime D03 with GSW/TEL tailwinds. But the URA appreciation is null (no resale history — new launch), has_new_launch_bias is on, you carry ~3yrs of construction/SSD-clock risk, and 1BR has the narrowest resale/tenant pool. Location is excellent; the entry premium and unproven price trend make it a hold-with-caution, not a clear buy.",
+      "red_flags": [
+        "New launch, TOP ~2029 — no resale price history, developer-inflated pricing",
+        "1BR niche unit — narrowest resale and tenant pool",
+        "99LH on prime ground where freehold comps exist",
+        "~3yr construction window before any exit"
+      ],
+      "catalysts": [
+        "410m to Great World MRT (Thomson-East Coast Line)",
+        "Greater Southern Waterfront transformation (D3/D4/D5)",
+        "Prime River Valley address, Allgreen developer; strong 53.7% launch take-up"
+      ],
+      "as_of": {
+        "price": 1430000,
+        "psf": 2713.47,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1BR at Promenade Peak, Allgreen's 99LH 596-unit new launch on Zion Road (D03 River Valley), TOP ~2029, $1.43M at $2,713 PSF — below the $3,090 project median, and 410m to Great World TEL. Prime location and strong launch demand (53.7% sold at launch), but it's an unbuilt new launch with developer-inflated pricing and a niche 1BR resale profile.",
+        "rating": "Neutral",
+        "rating_rationale": "Web check: launched Aug 2025 at avg $2,894–$3,343 PSF, world's tallest PPVC tower, 410m to Great World/Havelock MRT, TOP ~2029. This $2,713 PSF 1BR is below project median (likely a lower-floor stack), in genuinely prime D03 with GSW/TEL tailwinds. But the URA appreciation is null (no resale history — new launch), has_new_launch_bias is on, you carry ~3yrs of construction/SSD-clock risk, and 1BR has the narrowest resale/tenant pool. Location is excellent; the entry premium and unproven price trend make it a hold-with-caution, not a clear buy.",
+        "red_flags": [
+          "New launch, TOP ~2029 — no resale price history, developer-inflated pricing",
+          "1BR niche unit — narrowest resale and tenant pool",
+          "99LH on prime ground where freehold comps exist",
+          "~3yr construction window before any exit"
+        ],
+        "catalysts": [
+          "410m to Great World MRT (Thomson-East Coast Line)",
+          "Greater Southern Waterfront transformation (D3/D4/D5)",
+          "Prime River Valley address, Allgreen developer; strong 53.7% launch take-up"
+        ],
+        "rental_assessment": "River Valley/Great World is a top expat rental micro-market; a 1BR here rents readily once completed, supporting yield.",
+        "appreciation_assessment": "Prime location supports appreciation, but new-launch entry PSF is rich; expect CCR-baseline ~4.5% net of the launch premium, not the headline.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "CCR baseline net of new-launch premium; no resale history exists yet"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-promenade-peak-25635223",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

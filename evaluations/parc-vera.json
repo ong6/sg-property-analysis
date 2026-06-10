@@ -114,6 +114,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-vera-500145773",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The headline 'bargain' is a data quirk — the dossier sqft is roughly double the real 4BR size, so the low PSF and deep negative premium are artifacts, not value.",
+      "rating_rationale": "Both red flags (very_low_psf, bedroom_sqft_mismatch) are correct and disqualifying. The dossier lists 2,971 sqft for a 4BR, but Parc Vera's actual 4-bedroom units are 1,410-1,550 sqft — the recorded size is ~2x reality, almost certainly a strata/mis-scrape. That bad sqft fabricates the entire value case: the -36.8% age-adj, the -27.0% cohort premium (on only 2 comparable txns), and the S$1,087 'very low' PSF all dissolve once size is corrected. Against the real 4BR average of ~S$1,452 psf, a S$3.23M price on a true ~1,500-sqft unit implies ~S$2,150 psf — far ABOVE market, not below it (and if the unit genuinely were ~2,971 sqft it would be an atypical penthouse with thin liquidity and the same broken comps). Per the v3.4 priors, a big negative premium resting on 2 transactions plus a sqft mismatch is a quirk to flag, not a bargain to buy. The 8.23% CAGR (82 txns) is real history but forward-irrelevant. Stats cannot be trusted as listed → Avoid pending physical re-verification.",
+      "red_flags": [
+        "Dossier sqft (2,971) is ~double the actual Parc Vera 4BR size (1,410-1,550 sqft) — bedroom_sqft_mismatch is real",
+        "very_low_psf is an artifact of the inflated sqft; corrected to real size, S$3.23M implies ~S$2,150 psf vs ~S$1,452 market — overpriced",
+        "Cohort premium rests on only 2 transactions — statistically meaningless",
+        "Resident reviews cite persistent loud fogging/grass-trimming/alarm noise"
+      ],
+      "catalysts": [
+        "Upcoming Defu MRT (Cross Island Line) and adjacent neighbourhood-centre/PCN amenities benefit the project broadly",
+        "OCR/D19 is the strongest forward region per the backtest"
+      ],
+      "as_of": {
+        "price": 3230000,
+        "psf": 1087.18,
+        "beds": 4,
+        "sqft": 2971
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The headline 'bargain' is a data quirk — the dossier sqft is roughly double the real 4BR size, so the low PSF and deep negative premium are artifacts, not value.",
+        "rating_rationale": "Both red flags (very_low_psf, bedroom_sqft_mismatch) are correct and disqualifying. The dossier lists 2,971 sqft for a 4BR, but Parc Vera's actual 4-bedroom units are 1,410-1,550 sqft — the recorded size is ~2x reality, almost certainly a strata/mis-scrape. That bad sqft fabricates the entire value case: the -36.8% age-adj, the -27.0% cohort premium (on only 2 comparable txns), and the S$1,087 'very low' PSF all dissolve once size is corrected. Against the real 4BR average of ~S$1,452 psf, a S$3.23M price on a true ~1,500-sqft unit implies ~S$2,150 psf — far ABOVE market, not below it (and if the unit genuinely were ~2,971 sqft it would be an atypical penthouse with thin liquidity and the same broken comps). Per the v3.4 priors, a big negative premium resting on 2 transactions plus a sqft mismatch is a quirk to flag, not a bargain to buy. The 8.23% CAGR (82 txns) is real history but forward-irrelevant. Stats cannot be trusted as listed → Avoid pending physical re-verification.",
+        "red_flags": [
+          "Dossier sqft (2,971) is ~double the actual Parc Vera 4BR size (1,410-1,550 sqft) — bedroom_sqft_mismatch is real",
+          "very_low_psf is an artifact of the inflated sqft; corrected to real size, S$3.23M implies ~S$2,150 psf vs ~S$1,452 market — overpriced",
+          "Cohort premium rests on only 2 transactions — statistically meaningless",
+          "Resident reviews cite persistent loud fogging/grass-trimming/alarm noise"
+        ],
+        "catalysts": [
+          "Upcoming Defu MRT (Cross Island Line) and adjacent neighbourhood-centre/PCN amenities benefit the project broadly",
+          "OCR/D19 is the strongest forward region per the backtest"
+        ],
+        "rental_assessment": "Large 4BR units are a thin rental market in Hougang; absolute rents are high but yields on a S$3.23M outlay would be weak — this is an owner-occupier product, not an investment-grade rental.",
+        "appreciation_assessment": "8.23% trailing CAGR is real but forward-irrelevant per the backtest; more importantly the entire value premise is broken by the sqft error, so no reliable appreciation case can be made until the unit is physically verified."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-vera-500033644",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

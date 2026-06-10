@@ -1,0 +1,61 @@
+{
+  "condo": "The Amore",
+  "slug": "the-amore",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2016 99-yr leasehold 4BR (former EC) in Punggol (D19), 1,227 sqft at $2.0M / $1,630 psf, 510m from Kadaloor LRT. Right at the $2M psychological/liquidity ceiling for a 4BR, LRT-only access and no project URA data make it a fair-value family hold rather than an investment standout.",
+      "rating_rationale": "$1,630 psf for a 10-year-old 99-yr LH 4BR in Punggol is at the upper edge of fair. $2.0M is a hard ceiling for a 4BR buyer pool. Kadaloor LRT (510m) is convenient but still LRT-only. No project URA series; score_1000 547, even 236-176 arena record. Regional D19 PDD/CRL tailwind is the main upside.",
+      "red_flags": [
+        "$2.0M tops the comfortable price band for a 4BR niche unit",
+        "LRT-only connectivity (Kadaloor LRT) — feeder ride to Punggol MRT",
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "Former-EC stock — large supply of comparable units caps scarcity"
+      ],
+      "catalysts": [
+        "Punggol Digital District + Cross Island Line regional growth",
+        "510m to Kadaloor LRT — walkable transit within Punggol",
+        "Spacious 1,227 sqft family layout for HDB upgraders"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1629.99,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2016 99-yr leasehold 4BR (former EC) in Punggol (D19), 1,227 sqft at $2.0M / $1,630 psf, 510m from Kadaloor LRT. Right at the $2M psychological/liquidity ceiling for a 4BR, LRT-only access and no project URA data make it a fair-value family hold rather than an investment standout.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,630 psf for a 10-year-old 99-yr LH 4BR in Punggol is at the upper edge of fair. $2.0M is a hard ceiling for a 4BR buyer pool. Kadaloor LRT (510m) is convenient but still LRT-only. No project URA series; score_1000 547, even 236-176 arena record. Regional D19 PDD/CRL tailwind is the main upside.",
+        "red_flags": [
+          "$2.0M tops the comfortable price band for a 4BR niche unit",
+          "LRT-only connectivity (Kadaloor LRT) — feeder ride to Punggol MRT",
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "Former-EC stock — large supply of comparable units caps scarcity"
+        ],
+        "catalysts": [
+          "Punggol Digital District + Cross Island Line regional growth",
+          "510m to Kadaloor LRT — walkable transit within Punggol",
+          "Spacious 1,227 sqft family layout for HDB upgraders"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-amore-60181751",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

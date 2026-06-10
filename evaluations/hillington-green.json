@@ -1,0 +1,63 @@
+{
+  "condo": "Hillington Green",
+  "slug": "hillington-green",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Spacious 1927sqft 4BR at Hillington Green, a 999-year-leasehold D23 Hillview development 450m from DT3 Hillview MRT, $2.8M at $1,453 PSF — ~14% below the $1,688 URA median, with a strong 5.89%/yr appreciation on a solid 54-txn series. Dominant arena record (382-33-3, Elo 2006, top of batch). The constraint is the $2.8M ticket for a large 4BR.",
+      "rating_rationale": "999-yr tenure (effectively freehold), 450m to Hillview DTL MRT, and 5.89%/yr appreciation on a reliable 54-txn series is a strong package, and $1,453 PSF is ~14% below median. The 1927sqft 4BR is genuinely large but priced sensibly per-foot; $2.8M is a chunky ticket that narrows the pool to upgrader families, which is the main liquidity caveat. Hillview is a quiet, greenery-rich, low-supply enclave near Bukit Timah nature — durable demand. Highest arena Elo in batch backs the value read.",
+      "red_flags": [
+        "$2.8M for a large 4BR — buyer pool narrows to upgrader families",
+        "2003 building (~23yrs) — older finishes, higher maintenance",
+        "Hillview is a quieter market — adequate but not deep liquidity"
+      ],
+      "catalysts": [
+        "999-year tenure (near-freehold) at $1,453 PSF, ~14% below median",
+        "450m to Hillview Downtown Line MRT",
+        "5.89%/yr appreciation on a reliable 54-txn series; low-supply Bukit Timah-fringe enclave"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 1453.04,
+        "beds": 4,
+        "sqft": 1927.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Spacious 1927sqft 4BR at Hillington Green, a 999-year-leasehold D23 Hillview development 450m from DT3 Hillview MRT, $2.8M at $1,453 PSF — ~14% below the $1,688 URA median, with a strong 5.89%/yr appreciation on a solid 54-txn series. Dominant arena record (382-33-3, Elo 2006, top of batch). The constraint is the $2.8M ticket for a large 4BR.",
+        "rating": "Buy",
+        "rating_rationale": "999-yr tenure (effectively freehold), 450m to Hillview DTL MRT, and 5.89%/yr appreciation on a reliable 54-txn series is a strong package, and $1,453 PSF is ~14% below median. The 1927sqft 4BR is genuinely large but priced sensibly per-foot; $2.8M is a chunky ticket that narrows the pool to upgrader families, which is the main liquidity caveat. Hillview is a quiet, greenery-rich, low-supply enclave near Bukit Timah nature — durable demand. Highest arena Elo in batch backs the value read.",
+        "red_flags": [
+          "$2.8M for a large 4BR — buyer pool narrows to upgrader families",
+          "2003 building (~23yrs) — older finishes, higher maintenance",
+          "Hillview is a quieter market — adequate but not deep liquidity"
+        ],
+        "catalysts": [
+          "999-year tenure (near-freehold) at $1,453 PSF, ~14% below median",
+          "450m to Hillview Downtown Line MRT",
+          "5.89%/yr appreciation on a reliable 54-txn series; low-supply Bukit Timah-fringe enclave"
+        ],
+        "rental_assessment": "Hillview rents to families wanting space and greenery near Bukit Timah/German European School; large-4BR tenant pool is narrower but stable.",
+        "appreciation_assessment": "5.89%/yr is well-supported and above OCR baseline; 999-yr tenure and scarcity support continuation.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA 54-txn resale series, lightly trimmed for large-ticket liquidity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillington-green-500136793",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

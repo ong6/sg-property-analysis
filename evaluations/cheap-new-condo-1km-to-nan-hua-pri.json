@@ -1,0 +1,53 @@
+{
+  "condo": "❤️ Cheap new condo 1km to Nan Hua pri ❤️",
+  "slug": "cheap-new-condo-1km-to-nan-hua-pri",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A spam-titled D05 4BR listing at $1,932 psf with no tenure, no built year, no MRT and zero URA data — the dossier provides nothing to underwrite. Uninvestable on the information available.",
+      "rating_rationale": "No tenure, no built_year, no MRT, and a null URA appreciation/PSF series mean there is no factual basis to assess appreciation, lease risk, or relative value. The marketing-keyword title ('Cheap', school-distance hook) signals a buyer-bait listing rather than a verified project, and score_1000 of 471 is below market-typical.",
+      "red_flags": [
+        "No tenure or built_year disclosed",
+        "No URA transaction data — appreciation and fair value unverifiable",
+        "Marketing-keyword title with no identifiable project"
+      ],
+      "catalysts": [],
+      "as_of": {
+        "price": 2454000,
+        "psf": 1932.28,
+        "beds": 4,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spam-titled D05 4BR listing at $1,932 psf with no tenure, no built year, no MRT and zero URA data — the dossier provides nothing to underwrite. Uninvestable on the information available.",
+        "rating": "Avoid",
+        "rating_rationale": "No tenure, no built_year, no MRT, and a null URA appreciation/PSF series mean there is no factual basis to assess appreciation, lease risk, or relative value. The marketing-keyword title ('Cheap', school-distance hook) signals a buyer-bait listing rather than a verified project, and score_1000 of 471 is below market-typical.",
+        "red_flags": [
+          "No tenure or built_year disclosed",
+          "No URA transaction data — appreciation and fair value unverifiable",
+          "Marketing-keyword title with no identifiable project"
+        ],
+        "catalysts": [],
+        "rental_assessment": "Unassessable — no project identity or location precision to estimate rent.",
+        "appreciation_assessment": "Unassessable — null URA series, no resale basis.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-new-condo-1km-to-nan-hua-pri-60105368",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

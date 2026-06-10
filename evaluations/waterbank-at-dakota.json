@@ -108,6 +108,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterbank-at-dakota-500103851",
         "review_file": "batch_09.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1BR priced clearly below verified recent comps at a city-fringe MRT-doorstep location; the cheapness is real even though the cohort is thin.",
+      "rating_rationale": "Asking $1,686 psf for this 581 sqft 1BR is well under the verified Feb-2025 sale of an identical 581 sqft 1BR at $1,858 psf and below the project's last-12-month range of $1,885-$2,242 psf (avg ~$2,075). That makes the -7.7% age-adj and -17.8% cohort signals genuine despite the thin 4-txn cohort. Dakota MRT (CCL) is on the doorstep, city-fringe D14 location, sub-$1M quantum, 2013 build with reasonable ~86 yrs lease left.",
+      "red_flags": [
+        "psf cohort is very thin (4 txns) - the precise discount magnitude is noisy and one outlier could move it",
+        "Reviews flag loud military-jet noise on weekdays/Saturdays from nearby airbase, which can deter tenants/buyers",
+        "1BR is investor-grade stock; exit liquidity depends on rental-yield buyers"
+      ],
+      "catalysts": [
+        "Dakota MRT (Circle Line) essentially at the doorstep - strong, durable connectivity catalyst",
+        "Asking psf ~9% below the most recent identical 1BR comp gives immediate value margin",
+        "City-fringe D14 with mature amenities and sub-$1M entry supports rental and resale demand"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1686.75,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "1BR priced clearly below verified recent comps at a city-fringe MRT-doorstep location; the cheapness is real even though the cohort is thin.",
+        "rating_rationale": "Asking $1,686 psf for this 581 sqft 1BR is well under the verified Feb-2025 sale of an identical 581 sqft 1BR at $1,858 psf and below the project's last-12-month range of $1,885-$2,242 psf (avg ~$2,075). That makes the -7.7% age-adj and -17.8% cohort signals genuine despite the thin 4-txn cohort. Dakota MRT (CCL) is on the doorstep, city-fringe D14 location, sub-$1M quantum, 2013 build with reasonable ~86 yrs lease left.",
+        "red_flags": [
+          "psf cohort is very thin (4 txns) - the precise discount magnitude is noisy and one outlier could move it",
+          "Reviews flag loud military-jet noise on weekdays/Saturdays from nearby airbase, which can deter tenants/buyers",
+          "1BR is investor-grade stock; exit liquidity depends on rental-yield buyers"
+        ],
+        "catalysts": [
+          "Dakota MRT (Circle Line) essentially at the doorstep - strong, durable connectivity catalyst",
+          "Asking psf ~9% below the most recent identical 1BR comp gives immediate value margin",
+          "City-fringe D14 with mature amenities and sub-$1M entry supports rental and resale demand"
+        ],
+        "rental_assessment": "Dakota MRT proximity and CBD-fringe location drive solid 1BR tenant demand; at sub-$1M entry the gross yield should land around ~3.5-3.8%, a key support for this investor-oriented unit.",
+        "appreciation_assessment": "Trailing 5.28% CAGR on 144 txns is healthy history but v3.4-discounted forward; the case rests on verified cheap-vs-comps value plus the established Dakota MRT catalyst rather than momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterbank-at-dakota-500114931",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

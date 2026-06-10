@@ -1,0 +1,63 @@
+{
+  "condo": "The Rivervale",
+  "slug": "the-rivervale",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,259 sqft 99-year 3BR at The Rivervale (2001) in D19 Sengkang at $1.36M ($1,080 PSF), served only by Ranggung LRT (610m). Cheap entry and large layout, but an aging 99-yr leasehold with LRT-only access and no URA data is a thin, OCR-mass-market profile.",
+      "rating_rationale": "The appeal is affordability: $1,080 PSF and a $1.36M total for a 1,259 sqft 3BR is cheap and broadly liquid to HDB upgraders in Sengkang. But this is a 2001 (24-year-old) 99-year leasehold — lease decay is now a factor — with only LRT (Ranggung SE5, 610m) connectivity and no URA appreciation/txn data. Mass-market OCR with no specific catalyst; a serviceable but unexciting hold rather than a value buy.",
+      "red_flags": [
+        "24-year-old 99-yr leasehold — lease decay begins to bite",
+        "LRT-only access (no MRT within walking distance)",
+        "No URA appreciation or transaction data",
+        "OCR mass-market with no specific catalyst"
+      ],
+      "catalysts": [
+        "Low $1,080 PSF and $1.36M entry appeal to broad HDB-upgrader pool",
+        "Large 3BR layout suits families",
+        "Sengkang amenities and future Cross Island Line connectivity in the region"
+      ],
+      "as_of": {
+        "price": 1360000,
+        "psf": 1080.22,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft 99-year 3BR at The Rivervale (2001) in D19 Sengkang at $1.36M ($1,080 PSF), served only by Ranggung LRT (610m). Cheap entry and large layout, but an aging 99-yr leasehold with LRT-only access and no URA data is a thin, OCR-mass-market profile.",
+        "rating": "Neutral",
+        "rating_rationale": "The appeal is affordability: $1,080 PSF and a $1.36M total for a 1,259 sqft 3BR is cheap and broadly liquid to HDB upgraders in Sengkang. But this is a 2001 (24-year-old) 99-year leasehold — lease decay is now a factor — with only LRT (Ranggung SE5, 610m) connectivity and no URA appreciation/txn data. Mass-market OCR with no specific catalyst; a serviceable but unexciting hold rather than a value buy.",
+        "red_flags": [
+          "24-year-old 99-yr leasehold — lease decay begins to bite",
+          "LRT-only access (no MRT within walking distance)",
+          "No URA appreciation or transaction data",
+          "OCR mass-market with no specific catalyst"
+        ],
+        "catalysts": [
+          "Low $1,080 PSF and $1.36M entry appeal to broad HDB-upgrader pool",
+          "Large 3BR layout suits families",
+          "Sengkang amenities and future Cross Island Line connectivity in the region"
+        ],
+        "rental_assessment": "Sengkang rental demand is family/HDB-upgrader driven and modest; a large 3BR rents to families but yield is unremarkable given the LRT-only location.",
+        "appreciation_assessment": "No project data; OCR Sengkang baseline (~3.7%/yr) with lease decay as a headwind on an aging 99-yr asset. Expect market-average at best.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rivervale-500106521",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

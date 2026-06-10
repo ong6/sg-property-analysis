@@ -42,17 +42,18 @@ try:
         MMR_RELVALUE_CAP,
     )
 except ImportError:
+    # Fallbacks mirror config.py (kept in sync; only used if config import fails).
     MMR_BASE = 1500
-    MMR_NORM_CENTER = 1500
-    MMR_NORM_SCALE = 55
+    MMR_NORM_CENTER = 1507
+    MMR_NORM_SCALE = 29
     MIN_BAND_TXNS = 5
     COHORT_FLOOR_APPRECIATION = 0.55
     COHORT_FLOOR_LIQUIDITY = 0.40
     MMR_APPRECIATION_SLOPE = 4.0
     MMR_APPRECIATION_CENTER_PCT = 4.0
-    MMR_MOMENTUM_WEIGHT = 3.0
+    MMR_MOMENTUM_WEIGHT = 0.0
     MMR_RELVALUE_SLOPE = 0.8
-    MMR_RELVALUE_CAP = 20.0
+    MMR_RELVALUE_CAP = 28.0
 
 # Red flags that are NOT already expressed as continuous MMR components.
 # (old_property/small_dev/low_lease/psf_overpriced are continuous here.)
@@ -175,13 +176,20 @@ def compute_mmr(scored: Any) -> dict:
         psf_value *= 0.5
     comps["psf_value"] = round(psf_value, 2)
 
-    # --- Lease / tenure (continuous decay for 99yr) ---
+    # --- Lease / tenure ---
+    # v3.4: tenure is NOT a forward-return edge. The backtest shows freehold carries
+    # ~0 cross-sectional PSF premium (controlling for region+size) and mildly
+    # UNDERperforms forward (ρ -0.09..-0.14). What genuinely matters is the DOWNSIDE
+    # of a short remaining lease (financing/CPF caps, exit liquidity). So this
+    # component is ~flat for any healthy lease and only PENALIZES short ones.
+    # (Was: freehold +4.0 and a fresh 99yr up to +7.6 — an unearned tenure upside.)
     tenure = (scored.tenure or "").lower()
     remaining = scored.remaining_lease
     if "freehold" in tenure or "999" in tenure:
-        comps["lease"] = 4.0
+        comps["lease"] = 1.0  # no lease risk, but not a forward edge (own-stay/optionality only)
     elif remaining is not None:
-        comps["lease"] = round(max(-25.0, (remaining - 80) * 0.4), 2)
+        # flat small positive for healthy leases; steepening penalty below ~80yr
+        comps["lease"] = round(min(1.0, max(-25.0, (remaining - 80) * 0.4)), 2)
     else:
         comps["lease"] = 0.0
 
@@ -197,11 +205,15 @@ def compute_mmr(scored: Any) -> dict:
     # weight (same principle as appreciation confidence).
     gross_yield = scored.estimated_gross_yield or 0.0
     rent_source = scored.rent_source or ""
+    # v3.4: district/fallback rents are a district·bed CONSTANT × sqft, so the
+    # resulting gross_yield ≈ const/PSF — a re-skin of the cheap-vs-peers value
+    # signal, not independent rental evidence. Down-weight them hard so yield does
+    # not double-count value (was district_median 0.75 / fallback 0.4).
     rent_conf = {
         "same_condo": 1.0,
         "district_bedroom": 0.9,
-        "district_median": 0.75,
-    }.get(rent_source, 0.4 if rent_source.startswith("fallback") else 0.6)
+        "district_median": 0.5,
+    }.get(rent_source, 0.15 if rent_source.startswith("fallback") else 0.6)
     comps["yield"] = round(15.0 * ((gross_yield - 3.2) / 0.8) * rent_conf, 2) if gross_yield > 0 else 0.0
 
     # --- MRT proximity (smooth saturation, no bucket cliffs) ---
@@ -220,19 +232,31 @@ def compute_mmr(scored: Any) -> dict:
     units = scored.total_units
     comps["dev_size"] = round(6.0 * math.tanh((units - 150.0) / 300.0), 2) if units else 0.0
 
+    # --- Price band (EXIT LIQUIDITY only — not a value/forward signal) ---
+    # v3.4: reshaped. The old curve REWARDED higher quantum ($2.5M → +5.0 vs
+    # $1.5M → +4.0), the opposite of any forward signal and a confound with value.
+    # Price band now models ONLY buyer-pool depth / exit risk: neutral (0) across
+    # the broad-demand band up to ~$2.2M, declining above as the pool thins.
+    # Absolute cheapness is intentionally NOT rewarded here — the backtest showed
+    # that signal is mostly the region effect (already in the appreciation
+    # baselines); rewarding it again would double-count region.
     price = scored.price or 0
-    if price <= 0:
-        comps["price_band"] = 0.0
-    elif price < 1_800_000:
-        comps["price_band"] = 4.0
-    elif price <= 2_500_000:
-        comps["price_band"] = 5.0
+    if price <= 0 or price <= 2_200_000:
+        comps["price_band"] = 0.0  # broad-demand band — neutral, no quantum reward
     else:
         # Buyer pool thins continuously above the sweet spot (uncapped decline)
-        comps["price_band"] = round(5.0 - (price - 2_500_000) / 500_000 * 2.5, 2)
+        comps["price_band"] = round(-(price - 2_200_000) / 500_000 * 2.5, 2)
 
-    # --- Future potential (recentred from the 0-20 future score) ---
-    comps["future"] = round((scored.future_potential_score - 8.0) * 1.2, 2)
+    # --- Future potential (UPSIDE-ONLY catalyst) ---
+    # v3.4: two fixes. (1) Was (score-8.0)*1.2 — a ±24-pt swing that PENALIZED
+    # data-poor listings: no coords/profile defaults the sub-scores to ~4, mapping
+    # to -4.8, violating "missing data is neutral, never penalized". (2) The future
+    # heuristics (MRT/zone/transformation/supply point tables) are un-backtested, so
+    # the magnitude is reined in. Now: neutral at the no-signal floor (4), strictly
+    # NON-NEGATIVE (a catalyst is upside; its absence is neutral), slope 1.2→0.7.
+    # Range 0..~+11. Re-validate the future score against forward returns before
+    # widening this again (it is currently the largest un-validated lever).
+    comps["future"] = round(max(0.0, scored.future_potential_score - 4.0) * 0.7, 2)
 
     # --- Cost efficiency (recentred from the 0-10 score) ---
     comps["cost"] = round(scored.cost_efficiency_score - 5.0, 2)
@@ -256,11 +280,13 @@ def compute_mmr(scored: Any) -> dict:
             -MMR_RELVALUE_SLOPE * rel_premium / MMR_RELVALUE_CAP)
     else:
         age_value = 0.0
-    # v3.1: thin peer sets make the age-adjusted median unreliable —
-    # scale toward neutral below ~15 peers (floor 0.4 at the 5-peer minimum).
+    # v3.1: thin peer sets make the age-adjusted median unreliable — scale toward
+    # neutral when peers are few. v3.4: softened (floor 0.4→0.5, full weight at 10
+    # peers not 15) so the strongest region-robust forward signal is not throttled
+    # in normally-covered districts.
     peer_count = rel.get("peer_count") or 0
     if peer_count:
-        age_value *= max(0.4, min(1.0, peer_count / 15.0))
+        age_value *= max(0.5, min(1.0, peer_count / 10.0))
     if oversized and age_value > 0:
         age_value *= 0.5  # same size-artifact damping as psf_value
     comps["age_value"] = round(age_value, 2)
@@ -279,19 +305,27 @@ def compute_mmr(scored: Any) -> dict:
     }
 
 
-def apply_appreciation_override(mmr_result: dict, new_rate_pct: float) -> dict:
-    """Recompute the MMR after an agent appreciation override (conf=1.0).
+def apply_appreciation_override(
+    mmr_result: dict, new_rate_pct: float, cohort_appr_factor: float = 1.0
+) -> dict:
+    """Recompute the MMR after an agent appreciation override.
 
     Used by --from-review where the full breakdown may not be reconstructable.
+
+    The human asserts the *rate* (so rate-reliability confidence = 1.0), but the
+    v3.2 cohort-depth damping models EXIT/TREND depth for a thin size-cohort, which
+    an override does not change — so it is still applied (pass `cohort_appr_factor`
+    from psf_cohort_txns when available). Defaults to 1.0 (no damping) when unknown.
     """
     comps = dict(mmr_result.get("components", {}))
     old = comps.get("appreciation", 0.0)
-    new = round(MMR_APPRECIATION_SLOPE * (new_rate_pct - MMR_APPRECIATION_CENTER_PCT) * 1.0, 2)
+    conf = 1.0 * max(0.0, min(1.0, cohort_appr_factor))
+    new = round(MMR_APPRECIATION_SLOPE * (new_rate_pct - MMR_APPRECIATION_CENTER_PCT) * conf, 2)
     comps["appreciation"] = new
     mmr = mmr_result["mmr"] - old + new
     return {
         "mmr": round(mmr, 1),
         "score_1000": normalize_mmr(mmr),
         "components": comps,
-        "meta": {"appreciation_confidence": 1.0, "appreciation_rate_pct": round(new_rate_pct, 2)},
+        "meta": {"appreciation_confidence": round(conf, 2), "appreciation_rate_pct": round(new_rate_pct, 2)},
     }

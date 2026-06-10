@@ -1,0 +1,59 @@
+{
+  "condo": "Normanton Park, 2 bed + Loft, Sea view, move in ready",
+  "slug": "normanton-park-2-bed-loft-sea-view-move-in-ready",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "2BR+Loft sea-view unit (786 sqft) at $1.5M / $1,908 psf in Normanton Park, Kingsford's ~1,862-unit D05 mega-development completed 2023. The PSF sits a touch below recent 2BR resale (~$2,100/psf), but the sheer size of the development means heavy concurrent resale supply that caps near-term appreciation.",
+      "rating_rationale": "D05 RCR location near One-North/West Coast with sea views and a sub-median entry PSF is genuinely attractive, and 2BR is the deepest rental/resale segment. But ~1,862 units create persistent internal resale and rental competition, Kingsford has a mixed build-quality reputation worth diligence, and 99-yr LH from a 2023 TOP means the early appreciation window competes against ongoing developer/subsale stock. Balanced.",
+      "red_flags": [
+        "~1,862-unit mega-project — heavy internal resale/rental supply caps appreciation",
+        "Kingsford developer — mixed build-quality reputation, verify on viewing",
+        "99-yr leasehold"
+      ],
+      "catalysts": [
+        "D05 RCR near One-North tech hub and West Coast, strong rental demand",
+        "Sea-view 2BR priced below recent ~$2,100/psf resale comps",
+        "Move-in-ready 2BR in the deepest buyer segment"
+      ],
+      "as_of": {
+        "price": 1499999,
+        "psf": 1908.4,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "2BR+Loft sea-view unit (786 sqft) at $1.5M / $1,908 psf in Normanton Park, Kingsford's ~1,862-unit D05 mega-development completed 2023. The PSF sits a touch below recent 2BR resale (~$2,100/psf), but the sheer size of the development means heavy concurrent resale supply that caps near-term appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "D05 RCR location near One-North/West Coast with sea views and a sub-median entry PSF is genuinely attractive, and 2BR is the deepest rental/resale segment. But ~1,862 units create persistent internal resale and rental competition, Kingsford has a mixed build-quality reputation worth diligence, and 99-yr LH from a 2023 TOP means the early appreciation window competes against ongoing developer/subsale stock. Balanced.",
+        "red_flags": [
+          "~1,862-unit mega-project — heavy internal resale/rental supply caps appreciation",
+          "Kingsford developer — mixed build-quality reputation, verify on viewing",
+          "99-yr leasehold"
+        ],
+        "catalysts": [
+          "D05 RCR near One-North tech hub and West Coast, strong rental demand",
+          "Sea-view 2BR priced below recent ~$2,100/psf resale comps",
+          "Move-in-ready 2BR in the deepest buyer segment"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-normanton-park-2-bed-loft-sea-view-move-in-ready-500159119",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

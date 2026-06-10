@@ -1,0 +1,65 @@
+{
+  "condo": "Piermont Grand",
+  "slug": "piermont-grand",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 4BR at Piermont Grand, a large 820-unit Punggol EC (TOP 2023, CDL/TID) just 300m from Sumang LRT, asking $1.8M ($1,724 psf). The project has already re-rated from a ~$1,100-1,200 psf launch to a $1,724-1,786 psf resale range, and this listing sits at the bottom of that band with Punggol Digital District and CRL as forward catalysts.",
+      "rating_rationale": "Strongest fundamentals in the batch: large 820-unit EC (deep, liquid), 300m to Sumang LRT, TOP 2023 so MOP completes ~2028 opening it to the open resale market and eventual privatization. $1,724 psf is the floor of the current $1,724-1,786 resale band, and the project already proved ~50% appreciation off launch. $1.8M sits in a workable family band, with PDD jobs and CRL connectivity as durable demand drivers.",
+      "red_flags": [
+        "Still within EC MOP window — open-market resale fully unlocks ~2028",
+        "99-yr leasehold; Punggol has competing EC/new-launch supply",
+        "ABSD/EC eligibility rules narrow the near-term resale pool until MOP"
+      ],
+      "catalysts": [
+        "Punggol Digital District jobs + SIT campus driving tenant/buyer demand",
+        "Cross Island Line connectivity (~2030)",
+        "Post-MOP open-market access + long-run privatization premium",
+        "Large 820-unit development = liquidity"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1724.14,
+        "beds": 4,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 4BR at Piermont Grand, a large 820-unit Punggol EC (TOP 2023, CDL/TID) just 300m from Sumang LRT, asking $1.8M ($1,724 psf). The project has already re-rated from a ~$1,100-1,200 psf launch to a $1,724-1,786 psf resale range, and this listing sits at the bottom of that band with Punggol Digital District and CRL as forward catalysts.",
+        "rating": "Buy",
+        "rating_rationale": "Strongest fundamentals in the batch: large 820-unit EC (deep, liquid), 300m to Sumang LRT, TOP 2023 so MOP completes ~2028 opening it to the open resale market and eventual privatization. $1,724 psf is the floor of the current $1,724-1,786 resale band, and the project already proved ~50% appreciation off launch. $1.8M sits in a workable family band, with PDD jobs and CRL connectivity as durable demand drivers.",
+        "red_flags": [
+          "Still within EC MOP window — open-market resale fully unlocks ~2028",
+          "99-yr leasehold; Punggol has competing EC/new-launch supply",
+          "ABSD/EC eligibility rules narrow the near-term resale pool until MOP"
+        ],
+        "catalysts": [
+          "Punggol Digital District jobs + SIT campus driving tenant/buyer demand",
+          "Cross Island Line connectivity (~2030)",
+          "Post-MOP open-market access + long-run privatization premium",
+          "Large 820-unit development = liquidity"
+        ],
+        "rental_assessment": "Punggol family rental demand is solid and growing with PDD; EC yields are modest but the 4BR appeals to relocating families. Income is secondary to the appreciation/privatization thesis.",
+        "appreciation_assessment": "Proven post-launch re-rating (~$1,150 to ~$1,750 psf) plus MOP-unlock and PDD/CRL catalysts support continued OCR-leading appreciation; entry at band floor improves the setup.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Punggol EC post-MOP re-rating pattern + PDD/CRL catalysts; above OCR baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-piermont-grand-24162532",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

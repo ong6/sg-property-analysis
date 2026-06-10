@@ -1,0 +1,115 @@
+{
+  "condo": "Viento",
+  "slug": "viento",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 452sqft freehold shoebox 1BR at Viento, D14, asking $1,582 psf — essentially at the $1,593 URA median — for a low $715k absolute. Strong $/psf value with a ~6%/yr rate, but on only 14 transactions and 760m from Dakota MRT, so it is a sensibly-priced niche shoebox rather than a conviction buy.",
+      "rating_rationale": "The cheapest entry in the batch at $715k, fairly priced at-median, freehold, in a Paya Lebar Central / airbase-relocation district — all positives. But it's a 452sqft shoebox (niche buyer pool), the 6%/yr appreciation rests on a thin 14-txn series, and 760m to Dakota is a moderate walk. Fair value with a clear yield angle; not enough conviction or data depth to upgrade past Neutral.",
+      "red_flags": [
+        "452sqft shoebox — niche resale/buyer pool",
+        "Only 14 URA txn — appreciation rate low-confidence",
+        "760m to Dakota MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure at a low $715k entry",
+        "D14 Paya Lebar Central / airbase-relocation upside",
+        "Priced right at URA median"
+      ],
+      "as_of": {
+        "price": 715000,
+        "psf": 1581.86,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 452sqft freehold shoebox 1BR at Viento, D14, asking $1,582 psf — essentially at the $1,593 URA median — for a low $715k absolute. Strong $/psf value with a ~6%/yr rate, but on only 14 transactions and 760m from Dakota MRT, so it is a sensibly-priced niche shoebox rather than a conviction buy.",
+        "rating": "Neutral",
+        "rating_rationale": "The cheapest entry in the batch at $715k, fairly priced at-median, freehold, in a Paya Lebar Central / airbase-relocation district — all positives. But it's a 452sqft shoebox (niche buyer pool), the 6%/yr appreciation rests on a thin 14-txn series, and 760m to Dakota is a moderate walk. Fair value with a clear yield angle; not enough conviction or data depth to upgrade past Neutral.",
+        "red_flags": [
+          "452sqft shoebox — niche resale/buyer pool",
+          "Only 14 URA txn — appreciation rate low-confidence",
+          "760m to Dakota MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure at a low $715k entry",
+          "D14 Paya Lebar Central / airbase-relocation upside",
+          "Priced right at URA median"
+        ],
+        "rental_assessment": "Geylang/Dakota fringe has steady shoebox tenant demand; the low entry price gives a healthy gross yield, which is the core return driver here.",
+        "appreciation_assessment": "~6%/yr is encouraging and consistent with D14 RCR, but the 14-txn base means treat it as indicative; Paya Lebar Central provides genuine longer-term support.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA series (14 txn), lightly trimmed toward D14 RCR baseline for thin volume"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-viento-60039032",
+        "review_file": "cov_batch_14.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small freehold Geylang 1BR priced at market, not below it — freehold is not a forward edge and the cheap signal does not survive verification.",
+      "rating_rationale": "The algo flags -15.9% age-adj value, but that is the freehold age-adjustment doing the work, not a real discount: this 452-sqft unit at S$1,582 psf sits right on Viento's recent transaction average of ~S$1,593 psf, consistent with the +6.0% vs-cohort premium. Both the appreciation (6.24% CAGR) and cohort rest on only 14 transactions — a tiny, illiquid 48-unit boutique block — so the high CAGR is a low-confidence data point, not a momentum signal. Freehold tenure is not a forward edge per the v3.4 priors. No MRT integration (Dakota/Aljunied a walk away), small floor plate, and D14 Geylang carries a perception/financing discount. Fairly priced with no decisive catalyst → Neutral.",
+      "red_flags": [
+        "Only ~14 transactions / 48-unit boutique block — thin liquidity makes both the CAGR and the value read low-confidence",
+        "Geylang (D14) location carries lender LTV caution and resale-perception drag",
+        "Priced essentially at recent market average — no margin of safety"
+      ],
+      "catalysts": [
+        "Freehold tenure (durability, not a forward price edge)",
+        "Paya Lebar regional centre redevelopment is a broad area tailwind, not unit-specific"
+      ],
+      "as_of": {
+        "price": 715000,
+        "psf": 1581.86,
+        "beds": 1,
+        "sqft": 452
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Small freehold Geylang 1BR priced at market, not below it — freehold is not a forward edge and the cheap signal does not survive verification.",
+        "rating_rationale": "The algo flags -15.9% age-adj value, but that is the freehold age-adjustment doing the work, not a real discount: this 452-sqft unit at S$1,582 psf sits right on Viento's recent transaction average of ~S$1,593 psf, consistent with the +6.0% vs-cohort premium. Both the appreciation (6.24% CAGR) and cohort rest on only 14 transactions — a tiny, illiquid 48-unit boutique block — so the high CAGR is a low-confidence data point, not a momentum signal. Freehold tenure is not a forward edge per the v3.4 priors. No MRT integration (Dakota/Aljunied a walk away), small floor plate, and D14 Geylang carries a perception/financing discount. Fairly priced with no decisive catalyst → Neutral.",
+        "red_flags": [
+          "Only ~14 transactions / 48-unit boutique block — thin liquidity makes both the CAGR and the value read low-confidence",
+          "Geylang (D14) location carries lender LTV caution and resale-perception drag",
+          "Priced essentially at recent market average — no margin of safety"
+        ],
+        "catalysts": [
+          "Freehold tenure (durability, not a forward price edge)",
+          "Paya Lebar regional centre redevelopment is a broad area tailwind, not unit-specific"
+        ],
+        "rental_assessment": "Reported ~4.4% gross yield is decent for a compact freehold unit, but the 48-unit block has limited tenant-facing amenities and is a walk from the MRT; rental demand is adequate, not strong.",
+        "appreciation_assessment": "6.24% trailing CAGR on just 14 txns is statistically fragile and, per the backtest, near-zero forward power; the unit is priced at market so no value-driven upside is locked in."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-viento-60039032",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

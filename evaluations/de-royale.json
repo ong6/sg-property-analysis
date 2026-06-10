@@ -1,0 +1,59 @@
+{
+  "condo": "De Royale",
+  "slug": "de-royale",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1,259sqft 3BR at De Royale, D12 Balestier/Toa Payoh fringe, $2.49M / $1,977 PSF. Has a strong 5.68%/yr resale CAGR but on only 13 transactions, a weak score_1000 of 419, and is over 1km from the nearest MRT.",
+      "rating_rationale": "Resale-only CAGR of 5.68%/yr is attractive but rests on just 13 URA transactions, so it is indicative not bankable. Asking $1,977 PSF is ~4% above the $1,904 median. The biggest drag is location: 1.08km / 13-min walk to Toa Payoh MRT is poor for a 3BR at $2.49M, and the arena record (220-327-22, Elo 1071, score 419) reflects below-average competitiveness. Freehold tenure and a useful 3BR size hold it at Neutral.",
+      "red_flags": [
+        "1.08km (13-min walk) to nearest MRT — weak connectivity for the price",
+        "Strong CAGR but only 13 transactions — low reliability",
+        "$2.49M sits above the deepest 3BR buyer-pool band; weak score_1000 (419)"
+      ],
+      "catalysts": [
+        "Freehold tenure in central-fringe D12",
+        "Balestier/Toa Payoh rejuvenation and city-fringe location"
+      ],
+      "as_of": {
+        "price": 2488888,
+        "psf": 1976.88,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1,259sqft 3BR at De Royale, D12 Balestier/Toa Payoh fringe, $2.49M / $1,977 PSF. Has a strong 5.68%/yr resale CAGR but on only 13 transactions, a weak score_1000 of 419, and is over 1km from the nearest MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "Resale-only CAGR of 5.68%/yr is attractive but rests on just 13 URA transactions, so it is indicative not bankable. Asking $1,977 PSF is ~4% above the $1,904 median. The biggest drag is location: 1.08km / 13-min walk to Toa Payoh MRT is poor for a 3BR at $2.49M, and the arena record (220-327-22, Elo 1071, score 419) reflects below-average competitiveness. Freehold tenure and a useful 3BR size hold it at Neutral.",
+        "red_flags": [
+          "1.08km (13-min walk) to nearest MRT — weak connectivity for the price",
+          "Strong CAGR but only 13 transactions — low reliability",
+          "$2.49M sits above the deepest 3BR buyer-pool band; weak score_1000 (419)"
+        ],
+        "catalysts": [
+          "Freehold tenure in central-fringe D12",
+          "Balestier/Toa Payoh rejuvenation and city-fringe location"
+        ],
+        "rental_assessment": "D12 city-fringe attracts tenants, but distance from MRT limits premium; 3BR FH at $2.5M offers modest gross yield.",
+        "appreciation_assessment": "5.68%/yr resale rate is encouraging but thin-data; FH city-fringe should hold value, with MRT distance capping upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-de-royale-25222547",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "condo": "Hillsta",
+  "slug": "hillsta",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 624 sqft 99-yr-leasehold 2BR (built 2016) at $875k / $1,402 PSF in D23, 560m from Phoenix LRT. Low and accessible quantum on the value frontier with a reliable 123-txn URA base, but a compact 2BR served only by LRT (not heavy rail) and 3.55%/yr appreciation that just tracks the OCR baseline.",
+      "rating_rationale": "Reliable data (123 txns) shows 3.55%/yr — fair but only OCR-baseline, not outperformance. The $875k quantum gives the broadest, most liquid buyer pool in the batch and PSF is near the $1,389 median. But access is via Phoenix LRT (a feeder line, one interchange to the NSL at Bukit Panjang) rather than direct MRT, which caps the transit premium, and a 624 sqft 2BR is on the compact side. Solidly average — frontier on price efficiency, not catalysts.",
+      "red_flags": [
+        "Served by Phoenix LRT (feeder), not direct MRT — limited transit premium",
+        "3.55%/yr appreciation is only OCR-baseline despite reliable data",
+        "Compact 624 sqft 2BR — functional but not generous"
+      ],
+      "catalysts": [
+        "$875k quantum — broadest, most accessible/liquid buyer pool in the batch",
+        "Reliable 123-txn URA base (good liquidity confidence)",
+        "560m to BP5 Phoenix LRT, one stop to Bukit Panjang interchange (NSL/DTL)"
+      ],
+      "as_of": {
+        "price": 875000,
+        "psf": 1402.24,
+        "beds": 2,
+        "sqft": 624.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 624 sqft 99-yr-leasehold 2BR (built 2016) at $875k / $1,402 PSF in D23, 560m from Phoenix LRT. Low and accessible quantum on the value frontier with a reliable 123-txn URA base, but a compact 2BR served only by LRT (not heavy rail) and 3.55%/yr appreciation that just tracks the OCR baseline.",
+        "rating": "Neutral",
+        "rating_rationale": "Reliable data (123 txns) shows 3.55%/yr — fair but only OCR-baseline, not outperformance. The $875k quantum gives the broadest, most liquid buyer pool in the batch and PSF is near the $1,389 median. But access is via Phoenix LRT (a feeder line, one interchange to the NSL at Bukit Panjang) rather than direct MRT, which caps the transit premium, and a 624 sqft 2BR is on the compact side. Solidly average — frontier on price efficiency, not catalysts.",
+        "red_flags": [
+          "Served by Phoenix LRT (feeder), not direct MRT — limited transit premium",
+          "3.55%/yr appreciation is only OCR-baseline despite reliable data",
+          "Compact 624 sqft 2BR — functional but not generous"
+        ],
+        "catalysts": [
+          "$875k quantum — broadest, most accessible/liquid buyer pool in the batch",
+          "Reliable 123-txn URA base (good liquidity confidence)",
+          "560m to BP5 Phoenix LRT, one stop to Bukit Panjang interchange (NSL/DTL)"
+        ],
+        "rental_assessment": "Bukit Panjang is a mature town with steady local-tenant demand; a low-quantum 2BR yields reasonably (~3.5%+) given the cheap entry.",
+        "appreciation_assessment": "3.55% on 123 reliable txns is dependable OCR-baseline performance — no special catalyst to push it higher, but no decay concern either.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "URA resale-only, 123 txns — reliable"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillsta-500154338",
+        "review_file": "cov_batch_15.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 570 sqft 1BR at $1,403 psf in a 416-unit Bukit Panjang (D23/OCR) condo; asking is a small premium to the project's recent average and the location lacks heavy-rail MRT, leaving it a market-typical hold.",
+      "rating_rationale": "Asking $1,403 psf is a touch ABOVE the verified last-12-month average (~$1,366 psf; range $1,303-$1,426), so the dossier's -11.2% age_adj_premium overstates cheapness - the +2.7% cohort premium on 13 txns is the more honest read (roughly fair, marginally rich). OCR is the best forward region (~+4.0%), which keeps this from an Avoid. But the negatives are structural: Phoenix Road / Bukit Panjang is served by the Bukit Panjang LRT (light rail), not a heavy-rail line at the doorstep, capping rental and resale pull; the 23-block 416-unit project is described as generic; and a 570 sqft 1BR at $800K in CCK/Bukit Panjang competes against ample shoebox supply. Past 3.55% CAGR (123 txns, data-robust) is story only with ~0 forward power. No dated catalyst. A fair-priced unit in an unremarkable OCR pocket = Neutral.",
+      "red_flags": [
+        "Asking $1,403 psf is above the recent project average (~$1,366 psf) - not actually cheap",
+        "-11.2% age_adj 'cheapness' contradicted by +2.7% cohort premium (13 txns) and verified comps",
+        "Bukit Panjang LRT (light rail) only - no heavy-rail MRT at the doorstep",
+        "Generic 416-unit project with abundant competing shoebox supply"
+      ],
+      "catalysts": [
+        "OCR forward-return tailwind (~+4.0% per v3.4 backtest)",
+        "Sub-$1M quantum keeps the unit accessible to first-timers/investors"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1403.51,
+        "beds": 1,
+        "sqft": 570
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A 570 sqft 1BR at $1,403 psf in a 416-unit Bukit Panjang (D23/OCR) condo; asking is a small premium to the project's recent average and the location lacks heavy-rail MRT, leaving it a market-typical hold.",
+        "rating_rationale": "Asking $1,403 psf is a touch ABOVE the verified last-12-month average (~$1,366 psf; range $1,303-$1,426), so the dossier's -11.2% age_adj_premium overstates cheapness - the +2.7% cohort premium on 13 txns is the more honest read (roughly fair, marginally rich). OCR is the best forward region (~+4.0%), which keeps this from an Avoid. But the negatives are structural: Phoenix Road / Bukit Panjang is served by the Bukit Panjang LRT (light rail), not a heavy-rail line at the doorstep, capping rental and resale pull; the 23-block 416-unit project is described as generic; and a 570 sqft 1BR at $800K in CCK/Bukit Panjang competes against ample shoebox supply. Past 3.55% CAGR (123 txns, data-robust) is story only with ~0 forward power. No dated catalyst. A fair-priced unit in an unremarkable OCR pocket = Neutral.",
+        "red_flags": [
+          "Asking $1,403 psf is above the recent project average (~$1,366 psf) - not actually cheap",
+          "-11.2% age_adj 'cheapness' contradicted by +2.7% cohort premium (13 txns) and verified comps",
+          "Bukit Panjang LRT (light rail) only - no heavy-rail MRT at the doorstep",
+          "Generic 416-unit project with abundant competing shoebox supply"
+        ],
+        "catalysts": [
+          "OCR forward-return tailwind (~+4.0% per v3.4 backtest)",
+          "Sub-$1M quantum keeps the unit accessible to first-timers/investors"
+        ],
+        "rental_assessment": "Project rents average ~$3.26K/month; a 570 sqft 1BR offers a serviceable OCR yield, but Bukit Panjang LRT-only access and heavy shoebox competition limit rental tension.",
+        "appreciation_assessment": "3.55% trailing CAGR on 123 txns is data-robust but ~0 forward signal; with the asking marginally above realized comps there is no verified value edge, leaving forward expectation at roughly market (OCR-aided)."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillsta-23871788",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

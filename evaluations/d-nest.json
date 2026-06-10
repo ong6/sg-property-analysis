@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500005812",
         "review_file": "batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely cheap OCR 1BR in Pasir Ris with a confirmed dated MRT catalyst; the algo's cheapness checks out against real recent transactions.",
+      "rating_rationale": "Asking $1,403 psf sits below D'Nest's verified last-12-month average of ~$1,496 psf (range $1,252-$1,614, with a 484 sqft unit hitting $1,672 psf in Mar 2025), so the -10.1% age-adj and -12.8% cohort premium are real, not a scrape error, even though the 1BR cohort is thin (5 txns). Sub-$800k quantum, OCR location (realized fwd OCR ~+4.0% is the best region under v3.4), 912-unit project with deep liquidity (260 appreciation txns) and a confirmed Cross Island Line Pasir Ris interchange landing ~2030 give a concrete forward catalyst. Trailing 5.95% CAGR is treated as story only.",
+      "red_flags": [
+        "1BR psf cohort is thin (only 5 txns) so the precise -12.8% cohort discount is noisy",
+        "99-yr leasehold from 2010 means ~83 yrs left; OCR far-east location has structurally lower prestige/rent ceiling",
+        "1BR exit demand in a 912-unit project is mostly investor/single-tenant, not owner-occupier"
+      ],
+      "catalysts": [
+        "Cross Island Line Pasir Ris interchange targeted ~2030 (Phase 1) directly lifts connectivity",
+        "Asking psf below verified recent project average leaves immediate margin",
+        "Low absolute quantum (<$800k) widens the buyer pool and supports liquidity"
+      ],
+      "as_of": {
+        "price": 799999,
+        "psf": 1403.51,
+        "beds": 1,
+        "sqft": 570
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely cheap OCR 1BR in Pasir Ris with a confirmed dated MRT catalyst; the algo's cheapness checks out against real recent transactions.",
+        "rating_rationale": "Asking $1,403 psf sits below D'Nest's verified last-12-month average of ~$1,496 psf (range $1,252-$1,614, with a 484 sqft unit hitting $1,672 psf in Mar 2025), so the -10.1% age-adj and -12.8% cohort premium are real, not a scrape error, even though the 1BR cohort is thin (5 txns). Sub-$800k quantum, OCR location (realized fwd OCR ~+4.0% is the best region under v3.4), 912-unit project with deep liquidity (260 appreciation txns) and a confirmed Cross Island Line Pasir Ris interchange landing ~2030 give a concrete forward catalyst. Trailing 5.95% CAGR is treated as story only.",
+        "red_flags": [
+          "1BR psf cohort is thin (only 5 txns) so the precise -12.8% cohort discount is noisy",
+          "99-yr leasehold from 2010 means ~83 yrs left; OCR far-east location has structurally lower prestige/rent ceiling",
+          "1BR exit demand in a 912-unit project is mostly investor/single-tenant, not owner-occupier"
+        ],
+        "catalysts": [
+          "Cross Island Line Pasir Ris interchange targeted ~2030 (Phase 1) directly lifts connectivity",
+          "Asking psf below verified recent project average leaves immediate margin",
+          "Low absolute quantum (<$800k) widens the buyer pool and supports liquidity"
+        ],
+        "rental_assessment": "Project rents ~$4.5-4.56 psf/month (range $2,700-$5,950); a 570 sqft 1BR at sub-$800k entry should yield a healthy ~3.8-4.0% gross, supported by Pasir Ris tenant demand and nearby business/industrial nodes.",
+        "appreciation_assessment": "Trailing 5yr CAGR of 5.95% on 260 txns is robust history but per v3.4 carries ~0 forward power; the forward case rests on cheap-vs-comps value plus the CRL 2030 catalyst, not on extrapolating past growth."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500152563",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

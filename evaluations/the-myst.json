@@ -1,0 +1,63 @@
+{
+  "condo": "The Myst",
+  "slug": "the-myst",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,518 sqft 99-yr-leasehold 4BR at CDL's The Myst (TOP ~2029, D23) for $2.89M / $1,904 PSF, 420m from Cashew MRT (Downtown Line). It is a 408-unit launch by a reputable developer at a reasonable PSF (below the $2,041 area median), but a $2.89M leasehold 4BR in OCR sits at the top of D23's price ceiling, thinning the exit pool.",
+      "rating_rationale": "Positives: CDL build quality, 408 units (liquid for OCR), 420m to DT2 Cashew on the Downtown Line, and $1,904 PSF is below the $2,041 median (web confirms project entry ~$1,862 PSF). Negatives: at $2.89M this 4BR is at the upper end of what D23 OCR buyers pay — a narrow resale pool above ~$2.5M out here — and the new-launch bias flag plus uncrystallized 2029 completion mean limited near-term appreciation. Fair launch, full quantum.",
+      "red_flags": [
+        "$2.89M leasehold 4BR is at D23's price ceiling — shallow OCR exit pool above $2.5M",
+        "New-launch pricing (bias flagged) — limited immediate appreciation headroom",
+        "TOP ~2029 — capital tied up pre-completion, no rental income until then"
+      ],
+      "catalysts": [
+        "420m to DT2 Cashew MRT (Downtown Line) — strong transit",
+        "CDL developer + 408 units — credible build, OCR-liquid scale",
+        "Below area median PSF; Sungei Kadut/DTL extension mid-2030s upside"
+      ],
+      "as_of": {
+        "price": 2890000,
+        "psf": 1903.82,
+        "beds": 4,
+        "sqft": 1518.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,518 sqft 99-yr-leasehold 4BR at CDL's The Myst (TOP ~2029, D23) for $2.89M / $1,904 PSF, 420m from Cashew MRT (Downtown Line). It is a 408-unit launch by a reputable developer at a reasonable PSF (below the $2,041 area median), but a $2.89M leasehold 4BR in OCR sits at the top of D23's price ceiling, thinning the exit pool.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: CDL build quality, 408 units (liquid for OCR), 420m to DT2 Cashew on the Downtown Line, and $1,904 PSF is below the $2,041 median (web confirms project entry ~$1,862 PSF). Negatives: at $2.89M this 4BR is at the upper end of what D23 OCR buyers pay — a narrow resale pool above ~$2.5M out here — and the new-launch bias flag plus uncrystallized 2029 completion mean limited near-term appreciation. Fair launch, full quantum.",
+        "red_flags": [
+          "$2.89M leasehold 4BR is at D23's price ceiling — shallow OCR exit pool above $2.5M",
+          "New-launch pricing (bias flagged) — limited immediate appreciation headroom",
+          "TOP ~2029 — capital tied up pre-completion, no rental income until then"
+        ],
+        "catalysts": [
+          "420m to DT2 Cashew MRT (Downtown Line) — strong transit",
+          "CDL developer + 408 units — credible build, OCR-liquid scale",
+          "Below area median PSF; Sungei Kadut/DTL extension mid-2030s upside"
+        ],
+        "rental_assessment": "Once complete, a large 4BR near Cashew MRT rents to families/expats, but $2.89M cost makes yield modest (~2.7%) and there is no income until 2029.",
+        "appreciation_assessment": "New-launch entry below median PSF is fair, but Upper Bukit Timah OCR appreciation is moderate and developer pricing limits upside — expect district-typical, not outperformance.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR baseline; new-launch bias caps near-term resale-driven gains"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-myst-500128308",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

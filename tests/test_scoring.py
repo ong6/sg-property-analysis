@@ -6,9 +6,9 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scoring.quick_scorer import QuickScorer, quick_score_listing, filter_listings
+from scoring.quick_scorer import QuickScorer, filter_listings
 from scoring.full_scorer import FullScorer, score_listings
-from scoring.rental_estimator import RentalEstimator, estimate_rental
+from scoring.rental_estimator import RentalEstimator
 
 
 class TestQuickScorer:

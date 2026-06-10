@@ -54,6 +54,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500018326",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 1,356 sqft 3BR in a 642-unit Pasir Ris (D18/OCR) condo at $1,386 psf, fairly priced within the verified recent range and backed by a dated Cross Island Line 2030 catalyst.",
+      "rating_rationale": "Asking $1,386 psf sits comfortably inside the verified last-12-month transaction band ($1,106-$1,532 psf, avg ~$1,329) on deep data (178 appreciation txns), so the dossier's age_adj_premium of -5.6% reflects a real, mild discount rather than a thin-cohort quirk. OCR is the strongest forward region in the v3.4 backtest (~+4.0% realized fwd), and the location has a decisive physical catalyst: Pasir Ris becomes a Cross Island Line interchange in 2030 plus an integrated mall/bus-interchange/residential development next door. 3.6% project rental yield is OCR-typical. A large 3BR floorplate also supports own-stay/family resale demand. The 7.27% trailing CAGR is story only (v3.4: ~0 forward power). Main reservations: $1.88M quantum and $1,386 psf is at the upper-middle of the range, so entry price is not a steal, and the 2008-vintage 99-LH has ~81 years left.",
+      "red_flags": [
+        "Asking psf ($1,386) is at the upper-middle of the recent band, not a deep discount",
+        "Trailing 7.27% CAGR carries ~0 forward predictive power; do not extrapolate",
+        "$1.88M quantum is sizeable for OCR Pasir Ris, narrowing the buyer pool"
+      ],
+      "catalysts": [
+        "Pasir Ris Cross Island Line interchange opening 2030 (CRL Punggol branch by 2032)",
+        "Integrated mixed-use development (mall, bus interchange, residences) next to Pasir Ris MRT",
+        "Large family-sized 3BR supports own-stay resale demand in a maturing estate"
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1386.43,
+        "beds": 3,
+        "sqft": 1356
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large 1,356 sqft 3BR in a 642-unit Pasir Ris (D18/OCR) condo at $1,386 psf, fairly priced within the verified recent range and backed by a dated Cross Island Line 2030 catalyst.",
+        "rating_rationale": "Asking $1,386 psf sits comfortably inside the verified last-12-month transaction band ($1,106-$1,532 psf, avg ~$1,329) on deep data (178 appreciation txns), so the dossier's age_adj_premium of -5.6% reflects a real, mild discount rather than a thin-cohort quirk. OCR is the strongest forward region in the v3.4 backtest (~+4.0% realized fwd), and the location has a decisive physical catalyst: Pasir Ris becomes a Cross Island Line interchange in 2030 plus an integrated mall/bus-interchange/residential development next door. 3.6% project rental yield is OCR-typical. A large 3BR floorplate also supports own-stay/family resale demand. The 7.27% trailing CAGR is story only (v3.4: ~0 forward power). Main reservations: $1.88M quantum and $1,386 psf is at the upper-middle of the range, so entry price is not a steal, and the 2008-vintage 99-LH has ~81 years left.",
+        "red_flags": [
+          "Asking psf ($1,386) is at the upper-middle of the recent band, not a deep discount",
+          "Trailing 7.27% CAGR carries ~0 forward predictive power; do not extrapolate",
+          "$1.88M quantum is sizeable for OCR Pasir Ris, narrowing the buyer pool"
+        ],
+        "catalysts": [
+          "Pasir Ris Cross Island Line interchange opening 2030 (CRL Punggol branch by 2032)",
+          "Integrated mixed-use development (mall, bus interchange, residences) next to Pasir Ris MRT",
+          "Large family-sized 3BR supports own-stay resale demand in a maturing estate"
+        ],
+        "rental_assessment": "Project rental yield ~3.6% (rents ~$2,950-$6,200; ~$3.99 psf/yr), OCR-typical; rentable to Changi/airport and east-side workers but not a yield standout.",
+        "appreciation_assessment": "Trailing 5yr CAGR 7.27% on 178 txns is robust as data but near-zero forward signal per v3.4; the real forward edge is the verified mild cheapness (-5.6% age-adj) plus the 2030 CRL catalyst, not extrapolated momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500018326",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

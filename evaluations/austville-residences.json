@@ -1,0 +1,115 @@
+{
+  "condo": "Austville Residences",
+  "slug": "austville-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2014 99-yr leasehold 4BR EC-style condo in Sengkang (D19), 1,227 sqft at $1.85M / $1,508 psf, near Kangkar LRT. Sub-$2M and in the deep-liquidity band, but it's an LRT-only (no MRT) location, a 4BR niche unit and lacks project-specific URA data — a fair OCR hold, not a growth play.",
+      "rating_rationale": "$1,508 psf for a 12-year-old 99-yr LH 4BR in Sengkang is market-typical. Connectivity is LRT-only (Kangkar LRT 750m, needs feeder to Sengkang MRT). No project URA series; score_1000 539, even-ish 243-172 record. D19/PDD/CRL gives a regional tailwind but this specific stack has no standout catalyst.",
+      "red_flags": [
+        "LRT-only access (Kangkar LRT) — no direct MRT, weaker connectivity premium",
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "4BR niche family-only segment",
+        "2014 build — mid-life leasehold with ~88 years remaining"
+      ],
+      "catalysts": [
+        "D19 Punggol Digital District + Cross Island Line regional uplift",
+        "Sub-$2M 4BR entry in the deep-liquidity band for HDB upgraders",
+        "Large family-format unit with EC-style spacious layout"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1507.74,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2014 99-yr leasehold 4BR EC-style condo in Sengkang (D19), 1,227 sqft at $1.85M / $1,508 psf, near Kangkar LRT. Sub-$2M and in the deep-liquidity band, but it's an LRT-only (no MRT) location, a 4BR niche unit and lacks project-specific URA data — a fair OCR hold, not a growth play.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,508 psf for a 12-year-old 99-yr LH 4BR in Sengkang is market-typical. Connectivity is LRT-only (Kangkar LRT 750m, needs feeder to Sengkang MRT). No project URA series; score_1000 539, even-ish 243-172 record. D19/PDD/CRL gives a regional tailwind but this specific stack has no standout catalyst.",
+        "red_flags": [
+          "LRT-only access (Kangkar LRT) — no direct MRT, weaker connectivity premium",
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "4BR niche family-only segment",
+          "2014 build — mid-life leasehold with ~88 years remaining"
+        ],
+        "catalysts": [
+          "D19 Punggol Digital District + Cross Island Line regional uplift",
+          "Sub-$2M 4BR entry in the deep-liquidity band for HDB upgraders",
+          "Large family-format unit with EC-style spacious layout"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-austville-residences-500117512",
+        "review_file": "cov_batch_24.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 1,475 sqft 3BR in a 2014 Sengkang EC (Executive Condo) at $1,180 psf. The algo's -30.5% age-adj 'very cheap' read is mostly an EC-vs-private structural discount, not a true bargain — but $1,180 psf for a big fully-privatising EC family unit in a strong OCR region is fair value.",
+      "rating_rationale": "Critical correction the algo missed: Austville is an EXECUTIVE CONDOMINIUM, which structurally trades 20-30% below private condos, so the -30.5% age-adj premium and 'very_low_psf' flag are largely the EC discount, not alpha. Web check: trailing-12m resales $1,033-1,468 psf, avg ~$1,354, with a Dec-2025 1,227 sqft at $1,345 psf. At $1,180 psf this listing is at the LOW end of its own project's range — modestly cheap for the project, decent for a large 1,475 sqft unit, but the asking total $1.74m is rich for a Sengkang EC 3BR. appreciation_txns=0 (regional baseline, no forward signal). D19 is a top forward region (OCR ~+4%). It's a fair, liveable family unit with no glaring overpay, but no decisive edge — Neutral.",
+      "red_flags": [
+        "It's an EC — the 'very_low_psf' flag overstates cheapness vs private comps",
+        "Appreciation derived from regional baseline (0 project transactions in the signal)",
+        "$1.74m asking is at the upper bound of recent Austville total prices"
+      ],
+      "catalysts": [
+        "Fully privatised EC (post-10yr) — open to all buyers and foreigners on resale",
+        "D19/Sengkang is a leading OCR forward-appreciation region per v3.4 backtest",
+        "Large 1,475 sqft layout suits the family-upgrader resale market"
+      ],
+      "as_of": {
+        "price": 1740000,
+        "psf": 1179.66,
+        "beds": 3,
+        "sqft": 1475
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large 1,475 sqft 3BR in a 2014 Sengkang EC (Executive Condo) at $1,180 psf. The algo's -30.5% age-adj 'very cheap' read is mostly an EC-vs-private structural discount, not a true bargain — but $1,180 psf for a big fully-privatising EC family unit in a strong OCR region is fair value.",
+        "rating_rationale": "Critical correction the algo missed: Austville is an EXECUTIVE CONDOMINIUM, which structurally trades 20-30% below private condos, so the -30.5% age-adj premium and 'very_low_psf' flag are largely the EC discount, not alpha. Web check: trailing-12m resales $1,033-1,468 psf, avg ~$1,354, with a Dec-2025 1,227 sqft at $1,345 psf. At $1,180 psf this listing is at the LOW end of its own project's range — modestly cheap for the project, decent for a large 1,475 sqft unit, but the asking total $1.74m is rich for a Sengkang EC 3BR. appreciation_txns=0 (regional baseline, no forward signal). D19 is a top forward region (OCR ~+4%). It's a fair, liveable family unit with no glaring overpay, but no decisive edge — Neutral.",
+        "red_flags": [
+          "It's an EC — the 'very_low_psf' flag overstates cheapness vs private comps",
+          "Appreciation derived from regional baseline (0 project transactions in the signal)",
+          "$1.74m asking is at the upper bound of recent Austville total prices"
+        ],
+        "catalysts": [
+          "Fully privatised EC (post-10yr) — open to all buyers and foreigners on resale",
+          "D19/Sengkang is a leading OCR forward-appreciation region per v3.4 backtest",
+          "Large 1,475 sqft layout suits the family-upgrader resale market"
+        ],
+        "appreciation_assessment": "appreciation_pct=4.0 is just the regional baseline (0 txns) — no project-specific forward read. As a fully-privatised EC in a strong OCR district, expect roughly market trajectory, not a value-driven outperformer.",
+        "rental_assessment": "Large 3BR EC in Sengkang rents to families; project yield ~3.6% per web — solid, mass-market demand, but large unit dilutes psf-yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-austville-residences-500162211",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

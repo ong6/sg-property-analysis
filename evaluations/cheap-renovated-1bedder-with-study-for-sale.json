@@ -1,0 +1,113 @@
+{
+  "condo": "Cheap renovated 1bedder with study for sale",
+  "slug": "cheap-renovated-1bedder-with-study-for-sale",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 484 sqft 1BR+study at $700k literally on top of Aljunied MRT (40m) in D14, the airbase-relocation/Paya Lebar Central growth corridor. Attractive low quantum and unbeatable transit, but the listing has zero URA data attached (no appreciation rate, no txn count, no median PSF), so the value read is unverified.",
+      "rating_rationale": "The pull is real: sub-$700k entry, 40m to Aljunied EWL, D14 catalyst (Paya Lebar airbase relocation, Paya Lebar Central commercial hub) and a strong tenant corridor make a compact 1BR easy to rent and exit. But the dossier carries NO URA appreciation, txn count, or median PSF for this generic listing-name entry, so I can't confirm the $1,446 PSF is fair or that price trend is positive. 1BR+study is also the niche end of the buyer pool. Promising profile, unverifiable value.",
+      "red_flags": [
+        "No URA appreciation rate, transaction count, or median PSF in dossier — value unverifiable",
+        "Generic listing title (no real project name) suggests thin/incomplete data mapping",
+        "1BR+study is a niche resale segment; investor-heavy stack may face rental competition"
+      ],
+      "catalysts": [
+        "40m to Aljunied MRT (EW9) — top-tier transit-oriented rental demand",
+        "Paya Lebar Central commercial hub + airbase relocation land release (D14)",
+        "Low $700k quantum keeps buyer pool wide for a 1BR"
+      ],
+      "as_of": {
+        "price": 699999,
+        "psf": 1446.28,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 484 sqft 1BR+study at $700k literally on top of Aljunied MRT (40m) in D14, the airbase-relocation/Paya Lebar Central growth corridor. Attractive low quantum and unbeatable transit, but the listing has zero URA data attached (no appreciation rate, no txn count, no median PSF), so the value read is unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "The pull is real: sub-$700k entry, 40m to Aljunied EWL, D14 catalyst (Paya Lebar airbase relocation, Paya Lebar Central commercial hub) and a strong tenant corridor make a compact 1BR easy to rent and exit. But the dossier carries NO URA appreciation, txn count, or median PSF for this generic listing-name entry, so I can't confirm the $1,446 PSF is fair or that price trend is positive. 1BR+study is also the niche end of the buyer pool. Promising profile, unverifiable value.",
+        "red_flags": [
+          "No URA appreciation rate, transaction count, or median PSF in dossier — value unverifiable",
+          "Generic listing title (no real project name) suggests thin/incomplete data mapping",
+          "1BR+study is a niche resale segment; investor-heavy stack may face rental competition"
+        ],
+        "catalysts": [
+          "40m to Aljunied MRT (EW9) — top-tier transit-oriented rental demand",
+          "Paya Lebar Central commercial hub + airbase relocation land release (D14)",
+          "Low $700k quantum keeps buyer pool wide for a 1BR"
+        ],
+        "rental_assessment": "Excellent — MRT-adjacent compact 1BR in a city-fringe rental corridor rents fast; yield likely 3.5-4%+ at this quantum.",
+        "appreciation_assessment": "Unknown — no project-specific URA data supplied; D14 regional tailwinds are favorable but the specific unit's trend cannot be confirmed.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-renovated-1bedder-with-study-for-sale-500154210",
+        "review_file": "cov_batch_11.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Generic marketing-title listing (no named project) — a 484 sqft 1BR+study in D14 asking $1,446 PSF. appreciation_txns=0, psf_cohort_txns=null, psf_premium_vs_cohort=null: the algo has NO comparable data, and the project could not be identified via web search. Unratable as a bargain — a pure data void.",
+      "rating_rationale": "Every value signal here is empty: appreciation_txns=0, psf_cohort_txns=null, psf_premium_vs_cohort_pct=null, and appreciation_source falls back to regional_baseline — so the score_1000 of 862 is driven by sub-component priors, not by any verified cheapness. The listing carries only a marketing title ('Cheap renovated 1bedder with study'), not a project name, and focused web searches could not identify the underlying development to verify the asking PSF against real recent transactions. Per the v3.4 prior, a high score on null/zero cohort data is exactly the data-quirk pattern to distrust, not reward. The $700k quantum and 484 sqft 1BR+study format are reasonable for a D14 investment 1BR, and the asking $1,446 PSF is plausible for the district — but with zero comps and an unidentifiable project I cannot certify it as cheap or assess build quality, liquidity, or catalyst. Honest outcome: Neutral, low confidence — would require identifying the actual project and pulling its transaction history before any Buy call.",
+      "red_flags": [
+        "No named project — generic marketing title; underlying development unidentifiable via web search",
+        "appreciation_txns=0, psf_cohort_txns=null, psf_premium null → zero comparable data; cheapness cannot be verified",
+        "High score_1000 (862) rests on neutral priors over empty data — classic data-void over-rank pattern to distrust",
+        "Cannot assess build quality, developer, tenure decay, or liquidity without project identity"
+      ],
+      "catalysts": [
+        "Low absolute quantum (~$700k) and compact 1BR+study format typical of an investment-grade D14 small unit (if the underlying project proves sound on identification)"
+      ],
+      "as_of": {
+        "price": 699999,
+        "psf": 1446.28,
+        "beds": 1,
+        "sqft": 484
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Generic marketing-title listing (no named project) — a 484 sqft 1BR+study in D14 asking $1,446 PSF. appreciation_txns=0, psf_cohort_txns=null, psf_premium_vs_cohort=null: the algo has NO comparable data, and the project could not be identified via web search. Unratable as a bargain — a pure data void.",
+        "rating_rationale": "Every value signal here is empty: appreciation_txns=0, psf_cohort_txns=null, psf_premium_vs_cohort_pct=null, and appreciation_source falls back to regional_baseline — so the score_1000 of 862 is driven by sub-component priors, not by any verified cheapness. The listing carries only a marketing title ('Cheap renovated 1bedder with study'), not a project name, and focused web searches could not identify the underlying development to verify the asking PSF against real recent transactions. Per the v3.4 prior, a high score on null/zero cohort data is exactly the data-quirk pattern to distrust, not reward. The $700k quantum and 484 sqft 1BR+study format are reasonable for a D14 investment 1BR, and the asking $1,446 PSF is plausible for the district — but with zero comps and an unidentifiable project I cannot certify it as cheap or assess build quality, liquidity, or catalyst. Honest outcome: Neutral, low confidence — would require identifying the actual project and pulling its transaction history before any Buy call.",
+        "red_flags": [
+          "No named project — generic marketing title; underlying development unidentifiable via web search",
+          "appreciation_txns=0, psf_cohort_txns=null, psf_premium null → zero comparable data; cheapness cannot be verified",
+          "High score_1000 (862) rests on neutral priors over empty data — classic data-void over-rank pattern to distrust",
+          "Cannot assess build quality, developer, tenure decay, or liquidity without project identity"
+        ],
+        "catalysts": [
+          "Low absolute quantum (~$700k) and compact 1BR+study format typical of an investment-grade D14 small unit (if the underlying project proves sound on identification)"
+        ],
+        "rental_assessment": "Cannot assess — without the project name there is no rental comp set. A 484 sqft 1BR+study in D14 would typically yield ~3.5-4% gross if near an MRT, but this is unverified.",
+        "appreciation_assessment": "appreciation_pct=3.7% is a pure regional_baseline placeholder on zero transactions — carries no information. No basis to project forward return until the project is identified."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-renovated-1bedder-with-study-for-sale-500154210",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

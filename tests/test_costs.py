@@ -6,7 +6,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scoring.costs import CostCalculator, calculate_bsd, calculate_property_tax
+from scoring.costs import CostCalculator
 
 
 class TestBSDCalculation:
@@ -129,21 +129,21 @@ class TestPropertyTaxCalculation:
         assert self.calc.calculate_property_tax(30_000) == 3_600
 
     def test_property_tax_second_bracket(self):
-        """$30k-$45k at 14%."""
-        # AV = $45,000 -> Tax = $3,600 + $2,100 = $5,700
-        assert self.calc.calculate_property_tax(45_000) == 5_700
+        """$30k-$45k at 20% (IRAS 2024+ non-owner-occupied)."""
+        # AV = $45,000 -> Tax = $3,600 + 15k*0.20 = $3,600 + $3,000 = $6,600
+        assert self.calc.calculate_property_tax(45_000) == 6_600
 
     def test_property_tax_typical_investment(self):
-        """Test typical investment property AV."""
+        """Test typical investment property AV (IRAS 2024+ schedule)."""
         # Monthly rent ~$5,000 = AV $60,000
-        # Tax = $3,600 + $2,100 + $2,400 = $8,100
-        assert self.calc.calculate_property_tax(60_000) == 8_100
+        # Tax = $3,600 + 15k*0.20 + 15k*0.28 = $3,600 + $3,000 + $4,200 = $10,800
+        assert self.calc.calculate_property_tax(60_000) == 10_800
 
     def test_property_tax_high_av(self):
-        """Test high annual value property."""
+        """Test high annual value property (top marginal 36%, IRAS 2024+)."""
         # AV = $85,000
-        # Tax = $3,600 + $2,100 + $2,400 + $4,500 = $12,600
-        assert self.calc.calculate_property_tax(85_000) == 12_600
+        # Tax = $3,600 + $3,000 + $4,200 + 25k*0.36 = $10,800 + $9,000 = $19,800
+        assert self.calc.calculate_property_tax(85_000) == 19_800
 
 
 class TestMCSTCalculation:

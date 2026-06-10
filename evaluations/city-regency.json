@@ -1,0 +1,64 @@
+{
+  "condo": "City Regency",
+  "slug": "city-regency",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold (2009) 990 sqft 3BR in D12 Boon Keng/Balestier at $1.64M / $1,655 psf — ~7% above the URA median ($1,548) with a moderate 4.0%/yr resale appreciation. Efficient FH 3BR at a friendly quantum, but the above-median price and a 960m MRT walk balance it to Neutral.",
+      "rating_rationale": "An efficient 990 sqft freehold 3BR at a $1.64M quantum is well-positioned for the deep buyer band, but at $1,655 psf it's ~7% above the URA median ($1,548) and the resale-only appreciation of 4.0%/yr is only middling for a freehold (below RCR baseline). Boon Keng MRT is a 960m walk and D12 Balestier is a stable but unspectacular city-fringe micro-market. 15 txns is a usable sample. No catalyst to push it past Neutral, no flaw to drop it to Avoid.",
+      "red_flags": [
+        "Listed ~7% above URA median ($1,655 vs $1,548)",
+        "Moderate 4.0%/yr appreciation, below freehold/RCR expectations",
+        "Boon Keng MRT a 960m walk",
+        "Older 2009 boutique-scale building"
+      ],
+      "catalysts": [
+        "Freehold, efficient 990 sqft 3BR layout",
+        "City-fringe D12 with CBD/Novena access",
+        "$1.64M quantum in the liquid band"
+      ],
+      "as_of": {
+        "price": 1638888,
+        "psf": 1655.44,
+        "beds": 3,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold (2009) 990 sqft 3BR in D12 Boon Keng/Balestier at $1.64M / $1,655 psf — ~7% above the URA median ($1,548) with a moderate 4.0%/yr resale appreciation. Efficient FH 3BR at a friendly quantum, but the above-median price and a 960m MRT walk balance it to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "An efficient 990 sqft freehold 3BR at a $1.64M quantum is well-positioned for the deep buyer band, but at $1,655 psf it's ~7% above the URA median ($1,548) and the resale-only appreciation of 4.0%/yr is only middling for a freehold (below RCR baseline). Boon Keng MRT is a 960m walk and D12 Balestier is a stable but unspectacular city-fringe micro-market. 15 txns is a usable sample. No catalyst to push it past Neutral, no flaw to drop it to Avoid.",
+        "red_flags": [
+          "Listed ~7% above URA median ($1,655 vs $1,548)",
+          "Moderate 4.0%/yr appreciation, below freehold/RCR expectations",
+          "Boon Keng MRT a 960m walk",
+          "Older 2009 boutique-scale building"
+        ],
+        "catalysts": [
+          "Freehold, efficient 990 sqft 3BR layout",
+          "City-fringe D12 with CBD/Novena access",
+          "$1.64M quantum in the liquid band"
+        ],
+        "rental_assessment": "Balestier/Boon Keng rents steadily to city workers; an efficient FH 3BR achieves around the ~3% yield norm.",
+        "appreciation_assessment": "Proven 4.0%/yr resale CAGR is unremarkable and entry is above median, so limited near-term upside — a hold-neutral.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-city-regency-500105433",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

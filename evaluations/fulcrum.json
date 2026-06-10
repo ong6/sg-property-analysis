@@ -1,0 +1,111 @@
+{
+  "condo": "Fulcrum",
+  "slug": "fulcrum",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold D15 1BR (818 sqft) at $1.5M / $1,834 psf, 200m from Katong Park TEL — but the URA series shows a negative -1.05%/yr over 27 transactions, meaning this project has actually lost value. An 818 sqft '1BR' at $1.5M is a very large, expensive shoebox with weak demonstrated appreciation.",
+      "rating_rationale": "Negative -1.05%/yr appreciation on a reliable 27-txn series is the decisive fact — capital depreciation over a 5–7yr hold is the opposite of the investment goal. $1.5M for a 1BR (even at 818 sqft) is poor quantum efficiency, and despite the 200m TEL access the project has underperformed. Premium-priced freehold near MRT that still loses value is a clear pass.",
+      "red_flags": [
+        "Negative -1.05%/yr URA appreciation (27 txns) — demonstrated value loss",
+        "$1.5M for a 1BR — weak quantum efficiency",
+        "PSF below $2,069 median yet still falling — structural underperformance"
+      ],
+      "catalysts": [
+        "200m to Katong Park TEL",
+        "Freehold D15 East Coast"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1833.74,
+        "beds": 1,
+        "sqft": 818.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D15 1BR (818 sqft) at $1.5M / $1,834 psf, 200m from Katong Park TEL — but the URA series shows a negative -1.05%/yr over 27 transactions, meaning this project has actually lost value. An 818 sqft '1BR' at $1.5M is a very large, expensive shoebox with weak demonstrated appreciation.",
+        "rating": "Avoid",
+        "rating_rationale": "Negative -1.05%/yr appreciation on a reliable 27-txn series is the decisive fact — capital depreciation over a 5–7yr hold is the opposite of the investment goal. $1.5M for a 1BR (even at 818 sqft) is poor quantum efficiency, and despite the 200m TEL access the project has underperformed. Premium-priced freehold near MRT that still loses value is a clear pass.",
+        "red_flags": [
+          "Negative -1.05%/yr URA appreciation (27 txns) — demonstrated value loss",
+          "$1.5M for a 1BR — weak quantum efficiency",
+          "PSF below $2,069 median yet still falling — structural underperformance"
+        ],
+        "catalysts": [
+          "200m to Katong Park TEL",
+          "Freehold D15 East Coast"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-fulcrum-60060573",
+        "review_file": "cov_batch_27.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold D15 1BR loft (818sqft, Fort Road) priced ~12-15% below its own verified recent transactions. Value, the strongest forward signal, lines up here — the cheapness is real, not a data quirk.",
+      "rating_rationale": "Fulcrum 818sqft one-bedder lofts have transacted at ~$2,054-2,139 psf (March 2023 sale at $2,139; 2024-25 listings $2,054-2,262), with the project averaging ~$2,033 psf over the past year. This unit asks $1,834 psf — a genuine ~12-15% discount, consistent with both the -16.6% age_adj_premium and -16.5% psf_premium_vs_cohort (the 4-txn cohort is thin but I web-verified the discount against actual sales). Freehold, D15 (RCR, ~+3.5% realized fwd), and the unusual 818sqft loft layout that trades at a discount to flat 1BRs. Katong Park MRT (TE24) is ~200m away but already opened June 2024, so treat it as a realized amenity, not a forward re-rating catalyst. Verdict: real value in a strong region; medium confidence because the loft format is a niche, slower-moving resale.",
+      "red_flags": [
+        "818sqft loft is a niche layout (double-volume, mezzanine) — thinner buyer pool and slower exit than a flat 1BR",
+        "psf_cohort_txns only 4 — discount verified on the web rather than from a deep cohort",
+        "Katong Park MRT already open (June 2024), so that upside is largely priced in, not forward"
+      ],
+      "catalysts": [
+        "~12-15% below verified recent transactions (real value, the leading v3.4 signal)",
+        "Freehold tenure in D15 RCR (realized fwd region ~+3.5%)",
+        "Walkable to Katong Park MRT (TE24) and East Coast Park; established Tanjong Rhu/Fort Road enclave"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1833.74,
+        "beds": 1,
+        "sqft": 818
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Freehold D15 1BR loft (818sqft, Fort Road) priced ~12-15% below its own verified recent transactions. Value, the strongest forward signal, lines up here — the cheapness is real, not a data quirk.",
+        "rating_rationale": "Fulcrum 818sqft one-bedder lofts have transacted at ~$2,054-2,139 psf (March 2023 sale at $2,139; 2024-25 listings $2,054-2,262), with the project averaging ~$2,033 psf over the past year. This unit asks $1,834 psf — a genuine ~12-15% discount, consistent with both the -16.6% age_adj_premium and -16.5% psf_premium_vs_cohort (the 4-txn cohort is thin but I web-verified the discount against actual sales). Freehold, D15 (RCR, ~+3.5% realized fwd), and the unusual 818sqft loft layout that trades at a discount to flat 1BRs. Katong Park MRT (TE24) is ~200m away but already opened June 2024, so treat it as a realized amenity, not a forward re-rating catalyst. Verdict: real value in a strong region; medium confidence because the loft format is a niche, slower-moving resale.",
+        "red_flags": [
+          "818sqft loft is a niche layout (double-volume, mezzanine) — thinner buyer pool and slower exit than a flat 1BR",
+          "psf_cohort_txns only 4 — discount verified on the web rather than from a deep cohort",
+          "Katong Park MRT already open (June 2024), so that upside is largely priced in, not forward"
+        ],
+        "catalysts": [
+          "~12-15% below verified recent transactions (real value, the leading v3.4 signal)",
+          "Freehold tenure in D15 RCR (realized fwd region ~+3.5%)",
+          "Walkable to Katong Park MRT (TE24) and East Coast Park; established Tanjong Rhu/Fort Road enclave"
+        ],
+        "appreciation_assessment": "Trailing -1.05% CAGR (27 txns) is uninspiring but per v3.4 is not predictive; the forward case rests on the verified entry discount closing toward the ~$2,000 psf project level, not on momentum.",
+        "rental_assessment": "Project yield ~3.3%; a freehold 818sqft loft near East Coast/Katong rents well to singles/couples, and the low entry psf supports a healthier-than-headline net yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-fulcrum-60060573",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

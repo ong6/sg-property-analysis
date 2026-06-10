@@ -1,0 +1,61 @@
+{
+  "condo": "⭐❤️Freehold Walk Up Enbloc",
+  "slug": "freehold-walk-up-enbloc",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A freehold walk-up apartment in D13 marketed purely on en-bloc hope at $1.3M / $1589 PSF, with no project name, no built_year and no URA data. En-bloc is a binary, low-probability lottery — paying $1589 PSF for an old walk-up on that bet, without facilities or a lift, is a speculative wager, not an investment thesis.",
+      "rating_rationale": "The entire pitch is 'Enbloc', which is speculative and rarely materialises within a 5-7yr hold; meanwhile you hold an old freehold walk-up with no lift, no facilities, 930m to Mattar MRT, and $1589 PSF is a full price for that profile. No project name, no built_year, no URA appreciation/txn data — nothing to underwrite value or trajectory. Weak Elo 1092 and 149-246 record. Holding cost with no rental efficiency and no confirmed en-bloc reserve price = poor risk/reward.",
+      "red_flags": [
+        "En-bloc is the only thesis — speculative, low base rate, no confirmed reserve price",
+        "No project name, no built_year, no URA data",
+        "Old walk-up, no lift/facilities; 930m to MRT",
+        "$1589 PSF is full price for an aging walk-up"
+      ],
+      "catalysts": [
+        "Freehold land — collective-sale optionality if a developer bites",
+        "D13 city-fringe redevelopment over the long run"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1589.24,
+        "beds": 2,
+        "sqft": 818.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold walk-up apartment in D13 marketed purely on en-bloc hope at $1.3M / $1589 PSF, with no project name, no built_year and no URA data. En-bloc is a binary, low-probability lottery — paying $1589 PSF for an old walk-up on that bet, without facilities or a lift, is a speculative wager, not an investment thesis.",
+        "rating": "Avoid",
+        "rating_rationale": "The entire pitch is 'Enbloc', which is speculative and rarely materialises within a 5-7yr hold; meanwhile you hold an old freehold walk-up with no lift, no facilities, 930m to Mattar MRT, and $1589 PSF is a full price for that profile. No project name, no built_year, no URA appreciation/txn data — nothing to underwrite value or trajectory. Weak Elo 1092 and 149-246 record. Holding cost with no rental efficiency and no confirmed en-bloc reserve price = poor risk/reward.",
+        "red_flags": [
+          "En-bloc is the only thesis — speculative, low base rate, no confirmed reserve price",
+          "No project name, no built_year, no URA data",
+          "Old walk-up, no lift/facilities; 930m to MRT",
+          "$1589 PSF is full price for an aging walk-up"
+        ],
+        "catalysts": [
+          "Freehold land — collective-sale optionality if a developer bites",
+          "D13 city-fringe redevelopment over the long run"
+        ],
+        "rental_assessment": "Weak as an income asset — walk-up with no facilities discounts rent, and the unit is bought for redevelopment optionality rather than yield.",
+        "appreciation_assessment": "Binary and unmodelable: appreciation depends almost entirely on an en-bloc that may never come. Absent that, an old walk-up at $1589 PSF stagnates. Avoid on risk/reward.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-walk-up-enbloc-500028862",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

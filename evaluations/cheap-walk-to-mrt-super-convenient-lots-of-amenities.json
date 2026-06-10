@@ -1,0 +1,64 @@
+{
+  "condo": "CHEAP !!! WALK TO MRT!!! SUPER CONVENIENT!!! LOTS OF AMENITIES",
+  "slug": "cheap-walk-to-mrt-super-convenient-lots-of-amenities",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A newer (2023) 99LH 1BR, 495 sqft, 50m from Potong Pasir MRT at $890k / $1,798 psf — almost certainly a Sennett/Poiz-style city-fringe shoebox marketed with a spammy title. Low quantum and MRT-doorstep make it rentable, but shoebox 1BR is the most cyclical, niche resale segment.",
+      "rating_rationale": "The $890k quantum is accessible and 50m to Potong Pasir MRT (NE line, direct CBD access) supports rental demand, but 1BR/495 sqft is a thin, investor-saturated resale segment with the weakest appreciation and broadest competition in city-fringe new-ish stock. Arena Elo of 1173 (151-163 record, losing) confirms it underperforms head-to-head despite a high value-tilted score_1000. No URA data matched — appreciation unverified. Yield-and-convenience play, not an appreciation play.",
+      "red_flags": [
+        "Shoebox 1BR/495 sqft — niche, investor-heavy resale segment, weak appreciation",
+        "Marketing-spam listing title obscures the actual project — verify identity/MCST",
+        "No URA data matched — appreciation/value unverified",
+        "Losing arena record (151-163)"
+      ],
+      "catalysts": [
+        "50m to Potong Pasir MRT (NE line) — strong rental convenience",
+        "Low $890k quantum widens buyer/tenant entry",
+        "Newer 2023 build, full remaining lease"
+      ],
+      "as_of": {
+        "price": 890000,
+        "psf": 1797.98,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A newer (2023) 99LH 1BR, 495 sqft, 50m from Potong Pasir MRT at $890k / $1,798 psf — almost certainly a Sennett/Poiz-style city-fringe shoebox marketed with a spammy title. Low quantum and MRT-doorstep make it rentable, but shoebox 1BR is the most cyclical, niche resale segment.",
+        "rating": "Neutral",
+        "rating_rationale": "The $890k quantum is accessible and 50m to Potong Pasir MRT (NE line, direct CBD access) supports rental demand, but 1BR/495 sqft is a thin, investor-saturated resale segment with the weakest appreciation and broadest competition in city-fringe new-ish stock. Arena Elo of 1173 (151-163 record, losing) confirms it underperforms head-to-head despite a high value-tilted score_1000. No URA data matched — appreciation unverified. Yield-and-convenience play, not an appreciation play.",
+        "red_flags": [
+          "Shoebox 1BR/495 sqft — niche, investor-heavy resale segment, weak appreciation",
+          "Marketing-spam listing title obscures the actual project — verify identity/MCST",
+          "No URA data matched — appreciation/value unverified",
+          "Losing arena record (151-163)"
+        ],
+        "catalysts": [
+          "50m to Potong Pasir MRT (NE line) — strong rental convenience",
+          "Low $890k quantum widens buyer/tenant entry",
+          "Newer 2023 build, full remaining lease"
+        ],
+        "rental_assessment": "MRT-doorstep city-fringe shoebox rents readily to single CBD professionals; gross yield likely a respectable ~3.5–4% on the low quantum, the main attraction here.",
+        "appreciation_assessment": "Shoebox appreciation lags larger formats; no project-specific URA rate, so assume modest city-fringe RCR-edge growth with heavy 1BR competition capping upside.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-walk-to-mrt-super-convenient-lots-of-amenities-60161048",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

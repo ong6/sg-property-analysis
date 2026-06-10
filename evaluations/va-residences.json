@@ -1,0 +1,61 @@
+{
+  "condo": "VA Residences",
+  "slug": "va-residences",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 507 sqft 1BR at VA Residences (D12, 2016) for $850k / $1,676 psf, with modest 2.64%/yr URA appreciation over a thin 19-txn base and a poor 1.32km MRT walk. Freehold and a low ticket are the only real positives against weak momentum and a far-from-transit boutique location.",
+      "rating_rationale": "Weak Elo (607, 47-260 record) and score_1000 461 reflect the negatives: 2.64%/yr resale CAGR is sub-RCR over only 19 txns, the 1.32km/16-min MRT walk hurts rental and resale, and a 507 sqft shoebox is a niche exit. Freehold tenure and a sub-$900k entry keep it liquid for cash buyers. PSF sits right at median, so it's fairly priced but not compelling.",
+      "red_flags": [
+        "Poor transit access — 1.32km / 16-min walk to Toa Payoh MRT",
+        "Soft 2.64%/yr appreciation over a thin 19-txn series",
+        "507 sqft shoebox 1BR is a niche resale/rental segment"
+      ],
+      "catalysts": [
+        "Freehold tenure on a sub-$900k entry",
+        "City-fringe D12 location with CBD/Novena access by bus/car"
+      ],
+      "as_of": {
+        "price": 849888,
+        "psf": 1676.31,
+        "beds": 1,
+        "sqft": 507.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 507 sqft 1BR at VA Residences (D12, 2016) for $850k / $1,676 psf, with modest 2.64%/yr URA appreciation over a thin 19-txn base and a poor 1.32km MRT walk. Freehold and a low ticket are the only real positives against weak momentum and a far-from-transit boutique location.",
+        "rating": "Neutral",
+        "rating_rationale": "Weak Elo (607, 47-260 record) and score_1000 461 reflect the negatives: 2.64%/yr resale CAGR is sub-RCR over only 19 txns, the 1.32km/16-min MRT walk hurts rental and resale, and a 507 sqft shoebox is a niche exit. Freehold tenure and a sub-$900k entry keep it liquid for cash buyers. PSF sits right at median, so it's fairly priced but not compelling.",
+        "red_flags": [
+          "Poor transit access — 1.32km / 16-min walk to Toa Payoh MRT",
+          "Soft 2.64%/yr appreciation over a thin 19-txn series",
+          "507 sqft shoebox 1BR is a niche resale/rental segment"
+        ],
+        "catalysts": [
+          "Freehold tenure on a sub-$900k entry",
+          "City-fringe D12 location with CBD/Novena access by bus/car"
+        ],
+        "rental_assessment": "Shoebox rental demand is muted by the long MRT walk; rents lean on bus connectivity and the freehold appeal — yield is ordinary for the segment.",
+        "appreciation_assessment": "2.64%/yr resale CAGR is below the RCR norm; freehold cushions downside but the location and unit size cap upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.64,
+        "appreciation_rate_source": "URA resale-only 2.64%/yr over 19 transactions (thin but project-specific)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-va-residences-500064894",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

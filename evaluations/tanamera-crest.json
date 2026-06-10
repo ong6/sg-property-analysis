@@ -112,6 +112,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500110751",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Tanamera Crest (Tanah Merah, TOP 2004) 3BR 1,173 sqft at $1,385k / $1,181 psf. Web comps confirm the cheapness is real: the project's current asking-PSF range is ~$1,212-$1,425, so this unit at $1,181 sits at or below the bottom of the live range — the very_low_psf flag is a genuine discount, not a mis-scrape. Backed by 68 URA transactions and an OCR/East location near Tanah Merah MRT.",
+      "rating_rationale": "Value leads in v3.4 and this is the strongest verified-value name in the cohort: age_adj_premium -19.4% AND independent web evidence ($1,181 psf vs project live range $1,212-$1,425, recent 6-mo avg sale ~$1.33M) both point to a true sub-market entry. psf_cohort -1.3% on 9 txns and 68 transaction base make the price discovery credible (not a 1-comp quirk). District 16 East / Tanah Merah is OCR-favoured (~+4% realized forward), with quiet, low-density family appeal and ~3.5% rental yield. The honest caveats are age (very_old_property, TOP 2004 → ~77yr lease left) and that the trailing 7.1% CAGR carries no forward weight — but the buy case rests on verified relative value plus a usable family layout in a liquid 3BR segment, not on past appreciation. That earns a Buy at medium confidence (held back from high only by lease age and the absence of a fresh, dated catalyst).",
+      "red_flags": [
+        "very_old_property (TOP 2004) — ~77 years of lease remaining, accelerating decay over a 5-7yr hold",
+        "Trailing 7.1% CAGR (68 txns) has ~0 forward predictive power — treat as story, not guarantee",
+        "Only ~4 sale txns in last 12 months — moderate, not deep, recent liquidity",
+        "No fresh dated catalyst (no new MRT/zone announcement) to re-rate the project"
+      ],
+      "catalysts": [
+        "Verified cheap: $1,181 psf vs live project range $1,212-$1,425 and ~$1.33M 6-mo avg sale price",
+        "Tanah Merah MRT (EWL) access; quiet low-density estate with strong owner-occupier/family appeal",
+        "OCR East location in the favoured forward-return region; ~3.5% rental yield",
+        "Large 1,173 sqft 3BR at a sub-$1.4M quantum — value-for-space relative to newer East stock"
+      ],
+      "as_of": {
+        "price": 1385000,
+        "psf": 1180.73,
+        "beds": 3,
+        "sqft": 1173
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Tanamera Crest (Tanah Merah, TOP 2004) 3BR 1,173 sqft at $1,385k / $1,181 psf. Web comps confirm the cheapness is real: the project's current asking-PSF range is ~$1,212-$1,425, so this unit at $1,181 sits at or below the bottom of the live range — the very_low_psf flag is a genuine discount, not a mis-scrape. Backed by 68 URA transactions and an OCR/East location near Tanah Merah MRT.",
+        "rating_rationale": "Value leads in v3.4 and this is the strongest verified-value name in the cohort: age_adj_premium -19.4% AND independent web evidence ($1,181 psf vs project live range $1,212-$1,425, recent 6-mo avg sale ~$1.33M) both point to a true sub-market entry. psf_cohort -1.3% on 9 txns and 68 transaction base make the price discovery credible (not a 1-comp quirk). District 16 East / Tanah Merah is OCR-favoured (~+4% realized forward), with quiet, low-density family appeal and ~3.5% rental yield. The honest caveats are age (very_old_property, TOP 2004 → ~77yr lease left) and that the trailing 7.1% CAGR carries no forward weight — but the buy case rests on verified relative value plus a usable family layout in a liquid 3BR segment, not on past appreciation. That earns a Buy at medium confidence (held back from high only by lease age and the absence of a fresh, dated catalyst).",
+        "red_flags": [
+          "very_old_property (TOP 2004) — ~77 years of lease remaining, accelerating decay over a 5-7yr hold",
+          "Trailing 7.1% CAGR (68 txns) has ~0 forward predictive power — treat as story, not guarantee",
+          "Only ~4 sale txns in last 12 months — moderate, not deep, recent liquidity",
+          "No fresh dated catalyst (no new MRT/zone announcement) to re-rate the project"
+        ],
+        "catalysts": [
+          "Verified cheap: $1,181 psf vs live project range $1,212-$1,425 and ~$1.33M 6-mo avg sale price",
+          "Tanah Merah MRT (EWL) access; quiet low-density estate with strong owner-occupier/family appeal",
+          "OCR East location in the favoured forward-return region; ~3.5% rental yield",
+          "Large 1,173 sqft 3BR at a sub-$1.4M quantum — value-for-space relative to newer East stock"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500110751",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

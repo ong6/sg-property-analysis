@@ -1,0 +1,65 @@
+{
+  "condo": "Tenet",
+  "slug": "tenet",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Tenet is an executive condo in Tampines North (TOP 2026), 4BR 1,098 sqft at $1,800,000 / $1,639 psf, 470m from the future CR6 Tampines North MRT (CRL ~2030). EC pricing plus a within-500m future-MRT catalyst at the deep-pool $1.8M quantum make this the strongest 4BR in the batch.",
+      "rating_rationale": "Tenet is an EC — entry pricing below private comparables, and ECs structurally re-rate on privatization (10yr). $1,639 psf is reasonable; $1.8M quantum sits right in the liquid sweet spot. 470m from CR6 Tampines North (Cross Island Line ~2030) is the single best uplift catalyst in this batch. Tampines Regional Centre adds demand depth. Highest Elo (1289) and record in the batch. Efficient 1,098 sqft 4BR. Main caveat is no URA series yet (new TOP).",
+      "red_flags": [
+        "No URA transaction history yet (new TOP 2026) — appreciation modeled, not observed",
+        "EC resale restricted by MOP until ~2031 for some buyers; check eligibility/timeline",
+        "CRL operational date (~2030) is a multi-year wait for the catalyst to land"
+      ],
+      "catalysts": [
+        "470m to future CR6 Tampines North MRT (Cross Island Line ~2030) — within the 500m strong-uplift band",
+        "EC-to-private privatization re-rating at year 10",
+        "Tampines Regional Centre + Tampines North growth area",
+        "$1.8M quantum in the deepest buyer band; efficient 4BR layout"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1639.34,
+        "beds": 4,
+        "sqft": 1098.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Tenet is an executive condo in Tampines North (TOP 2026), 4BR 1,098 sqft at $1,800,000 / $1,639 psf, 470m from the future CR6 Tampines North MRT (CRL ~2030). EC pricing plus a within-500m future-MRT catalyst at the deep-pool $1.8M quantum make this the strongest 4BR in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "Tenet is an EC — entry pricing below private comparables, and ECs structurally re-rate on privatization (10yr). $1,639 psf is reasonable; $1.8M quantum sits right in the liquid sweet spot. 470m from CR6 Tampines North (Cross Island Line ~2030) is the single best uplift catalyst in this batch. Tampines Regional Centre adds demand depth. Highest Elo (1289) and record in the batch. Efficient 1,098 sqft 4BR. Main caveat is no URA series yet (new TOP).",
+        "red_flags": [
+          "No URA transaction history yet (new TOP 2026) — appreciation modeled, not observed",
+          "EC resale restricted by MOP until ~2031 for some buyers; check eligibility/timeline",
+          "CRL operational date (~2030) is a multi-year wait for the catalyst to land"
+        ],
+        "catalysts": [
+          "470m to future CR6 Tampines North MRT (Cross Island Line ~2030) — within the 500m strong-uplift band",
+          "EC-to-private privatization re-rating at year 10",
+          "Tampines Regional Centre + Tampines North growth area",
+          "$1.8M quantum in the deepest buyer band; efficient 4BR layout"
+        ],
+        "rental_assessment": "EC rental is restricted during MOP, limiting near-term yield, but Tampines tenant demand is healthy once unlocked.",
+        "appreciation_assessment": "Strong structural case: EC discount + future-MRT proximity + regional-centre growth typically delivers above-OCR-baseline appreciation; underwrite ~5%.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "EC privatization re-rating + CR6 future-MRT proximity (D18 OCR catalyst)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tenet-25142736",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

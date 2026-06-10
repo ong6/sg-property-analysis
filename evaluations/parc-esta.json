@@ -1,0 +1,113 @@
+{
+  "condo": "Parc Esta",
+  "slug": "parc-esta",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 517 sqft 1BR at $1,972 psf, 220m from Eunos MRT, in a 1,399-unit MCL Land development with a deep 474-transaction history. Strong location and liquidity offset a modest 2.49% resale-only appreciation and the inherent 1BR niche.",
+      "rating_rationale": "EW7 Eunos at 220m is the best transit in the batch, and 474 URA txns (resale-only CAGR 2.49% on a huge series, very reliable) give exceptional liquidity for a 1BR. Asking $1,972 psf is ~14% below the $2,294 project median — real value. D14 Paya Lebar Central / airbase-relocation catalyst supports the medium term. Held to Buy not Strong Buy by sub-baseline 2.49% appreciation and the 1BR investor-segment competition typical of large D14 launches.",
+      "red_flags": [
+        "Resale-only appreciation 2.49%/yr is below the RCR ~5.8% prior",
+        "1BR in a 1,399-unit mega-development means heavy internal rental/resale competition",
+        "$1.02M crosses into the higher 1BR price band, trimming the buyer pool"
+      ],
+      "catalysts": [
+        "EW7 Eunos MRT 220m — top-tier transit, prime rental driver",
+        "~14% below project median PSF gives margin of safety",
+        "D14 Paya Lebar Central commercial growth and airbase relocation"
+      ],
+      "as_of": {
+        "price": 1020000,
+        "psf": 1972.92,
+        "beds": 1,
+        "sqft": 517.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 517 sqft 1BR at $1,972 psf, 220m from Eunos MRT, in a 1,399-unit MCL Land development with a deep 474-transaction history. Strong location and liquidity offset a modest 2.49% resale-only appreciation and the inherent 1BR niche.",
+        "rating": "Buy",
+        "rating_rationale": "EW7 Eunos at 220m is the best transit in the batch, and 474 URA txns (resale-only CAGR 2.49% on a huge series, very reliable) give exceptional liquidity for a 1BR. Asking $1,972 psf is ~14% below the $2,294 project median — real value. D14 Paya Lebar Central / airbase-relocation catalyst supports the medium term. Held to Buy not Strong Buy by sub-baseline 2.49% appreciation and the 1BR investor-segment competition typical of large D14 launches.",
+        "red_flags": [
+          "Resale-only appreciation 2.49%/yr is below the RCR ~5.8% prior",
+          "1BR in a 1,399-unit mega-development means heavy internal rental/resale competition",
+          "$1.02M crosses into the higher 1BR price band, trimming the buyer pool"
+        ],
+        "catalysts": [
+          "EW7 Eunos MRT 220m — top-tier transit, prime rental driver",
+          "~14% below project median PSF gives margin of safety",
+          "D14 Paya Lebar Central commercial growth and airbase relocation"
+        ],
+        "rental_assessment": "Excellent — 220m to MRT in tenant-dense D14 Geylang/Eunos corridor gives one of the widest 1BR tenant pools in the batch. Yield should be near typical-to-good.",
+        "appreciation_assessment": "Modest 2.49% resale-only but on an extremely reliable 474-txn base; transit and below-median entry support steady, low-risk appreciation.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-esta-500058264",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "99yr 2022 1BR, 2-min walk to Eunos MRT (D14, RCR). Verified genuinely cheap: recent 1BR resales transacted $2,205 PSF (Dec-2025, 527sqft) and $2,417 PSF (Jan-2026, 581sqft) vs this $1,973 PSF asking, i.e. ~12-18% below comparable recent transactions. Deep, trustworthy data (474 appreciation txns, 46-unit cohort).",
+      "rating_rationale": "This is the strongest of the five. The algo's -10.7% cohort cheapness is corroborated by web transactions: two recent 1BR sales at $2,205 and $2,417 PSF make the $1,973 PSF asking a clear discount to verified comparables, not a data quirk. The signal rests on a deep 46-transaction cohort and 474 appreciation transactions, so confidence is high. Eunos MRT 2-min and a large 1,399-unit project give excellent rental and exit liquidity (54 sales / 138 rental txns recently). RCR forward prior (~+3.5%) is favourable. The only modest concern is a high absolute PSF for a small 517sqft unit, but it is cheap relative to its own size band.",
+      "red_flags": [
+        "High absolute PSF (~$1,973) typical of a small 517 sqft unit — quantum is reasonable but PSF-sensitive buyers should note",
+        "99yr leasehold so age decay applies, though only 4 years old"
+      ],
+      "catalysts": [
+        "2-minute walk to Eunos MRT (East-West Line) underpins durable rental demand",
+        "Large 1,399-unit project = deep liquidity for both rental and exit",
+        "Verified ~12-18% discount to recent 1BR transactions provides immediate value cushion"
+      ],
+      "as_of": {
+        "price": 1020000,
+        "psf": 1972.92,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "99yr 2022 1BR, 2-min walk to Eunos MRT (D14, RCR). Verified genuinely cheap: recent 1BR resales transacted $2,205 PSF (Dec-2025, 527sqft) and $2,417 PSF (Jan-2026, 581sqft) vs this $1,973 PSF asking, i.e. ~12-18% below comparable recent transactions. Deep, trustworthy data (474 appreciation txns, 46-unit cohort).",
+        "rating_rationale": "This is the strongest of the five. The algo's -10.7% cohort cheapness is corroborated by web transactions: two recent 1BR sales at $2,205 and $2,417 PSF make the $1,973 PSF asking a clear discount to verified comparables, not a data quirk. The signal rests on a deep 46-transaction cohort and 474 appreciation transactions, so confidence is high. Eunos MRT 2-min and a large 1,399-unit project give excellent rental and exit liquidity (54 sales / 138 rental txns recently). RCR forward prior (~+3.5%) is favourable. The only modest concern is a high absolute PSF for a small 517sqft unit, but it is cheap relative to its own size band.",
+        "red_flags": [
+          "High absolute PSF (~$1,973) typical of a small 517 sqft unit — quantum is reasonable but PSF-sensitive buyers should note",
+          "99yr leasehold so age decay applies, though only 4 years old"
+        ],
+        "catalysts": [
+          "2-minute walk to Eunos MRT (East-West Line) underpins durable rental demand",
+          "Large 1,399-unit project = deep liquidity for both rental and exit",
+          "Verified ~12-18% discount to recent 1BR transactions provides immediate value cushion"
+        ],
+        "appreciation_assessment": "Trailing 3.55% CAGR is reliable (474 txns) but used only for story; the real edge is verified relative cheapness, the most robust forward signal in the v3.4 priors.",
+        "rental_assessment": "Eunos MRT 2-min plus brisk rental market (138 rental txns/6mo) supports steady ~3% gross yield; small 1BR is the most rentable format in this corridor."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-esta-500058264",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

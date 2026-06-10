@@ -54,6 +54,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-radix-25548777",
         "review_file": "batch_09.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 3BR in D15 asking $1,309 psf that screens cheap vs recent project comps (~$1,386-$1,505 psf), but the signal rests on near-zero comparable depth and the project is a tiny, illiquid 19-year-old boutique.",
+      "rating_rationale": "The $2.0M / 1,528 sqft asking ($1,309 psf) does sit below recent Radix transactions (2024 deals ~$1,386-$1,505 psf), and a comparable 1,528 sqft listing is marketed at $2.08M-$2.10M, so the unit is genuinely at the low end of its own project. But the algo's headline cheapness (-32.7% age-adj, score 766) is built on essentially no support: psf_cohort_txns=0 and appreciation_txns=4. Per v3.4 priors, a large negative premium on near-zero comparables is a data quirk, not a verified bargain, and trailing 7.49% CAGR carries no forward weight. Radix is only 21 units and built 2007, so resale liquidity is thin and the freehold tenure is not itself a forward edge. D15 (RCR) forward realized ~+3.5% is decent but not exceptional. Real-ish cheapness, but thin data and weak liquidity cap this at Neutral.",
+      "red_flags": [
+        "psf_cohort_txns=0 — cohort cheapness signal has no comparable basis",
+        "appreciation_txns=4 — trailing CAGR statistically meaningless",
+        "Tiny 21-unit boutique development = poor resale liquidity for exit",
+        "19-year-old building (old_property flag); maintenance/CapEx risk on hold"
+      ],
+      "catalysts": [
+        "Walkable to Dakota/Mountbatten and East Coast amenities (D15 desirability)",
+        "Freehold large-format 3BR scarce in immediate area (own-stay appeal supports floor price)"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1308.9,
+        "beds": 3,
+        "sqft": 1528
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "A freehold 3BR in D15 asking $1,309 psf that screens cheap vs recent project comps (~$1,386-$1,505 psf), but the signal rests on near-zero comparable depth and the project is a tiny, illiquid 19-year-old boutique.",
+        "rating_rationale": "The $2.0M / 1,528 sqft asking ($1,309 psf) does sit below recent Radix transactions (2024 deals ~$1,386-$1,505 psf), and a comparable 1,528 sqft listing is marketed at $2.08M-$2.10M, so the unit is genuinely at the low end of its own project. But the algo's headline cheapness (-32.7% age-adj, score 766) is built on essentially no support: psf_cohort_txns=0 and appreciation_txns=4. Per v3.4 priors, a large negative premium on near-zero comparables is a data quirk, not a verified bargain, and trailing 7.49% CAGR carries no forward weight. Radix is only 21 units and built 2007, so resale liquidity is thin and the freehold tenure is not itself a forward edge. D15 (RCR) forward realized ~+3.5% is decent but not exceptional. Real-ish cheapness, but thin data and weak liquidity cap this at Neutral.",
+        "red_flags": [
+          "psf_cohort_txns=0 — cohort cheapness signal has no comparable basis",
+          "appreciation_txns=4 — trailing CAGR statistically meaningless",
+          "Tiny 21-unit boutique development = poor resale liquidity for exit",
+          "19-year-old building (old_property flag); maintenance/CapEx risk on hold"
+        ],
+        "catalysts": [
+          "Walkable to Dakota/Mountbatten and East Coast amenities (D15 desirability)",
+          "Freehold large-format 3BR scarce in immediate area (own-stay appeal supports floor price)"
+        ],
+        "appreciation_assessment": "Trailing 7.49% CAGR is on only 4 transactions and carries ~0 forward predictive power; ignored as a guarantee. Forward upside hinges on D15/RCR drift (~+3.5%) plus any genuine entry discount, not on past momentum.",
+        "rental_assessment": "Large freehold 3BR in East Coast rents to families but yields are modest at this price; not a yield play. Liquidity-on-exit is the bigger concern than rent."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-radix-25548777",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

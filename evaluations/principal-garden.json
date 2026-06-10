@@ -1,0 +1,113 @@
+{
+  "condo": "Principal Garden",
+  "slug": "principal-garden",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 506 sqft 1BR at Principal Garden, a well-regarded large UOL/Kheng Leong 99LH project in D03 (Alexandra/Tanglin fringe, built 2019), at $999k / $1,974 psf — a clear ~11% below the $2,211 median on a very deep 218-txn series. RCR D03 location near the Greater Southern Waterfront with strong developer pedigree; the sub-$1M quantum and below-median PSF make it an attractive 1BR entry despite modest 3.0%/yr realized growth.",
+      "rating_rationale": "A genuinely high-confidence entry: 218 URA transactions (deep liquidity), PSF ~11% under the $2,211 median, reputable developer, full-facility large development, and RCR D03 with GSW + TEL/CCL catalysts. The 2.98%/yr CAGR is soft, but it's measured over a deep series and the discount-to-median plus prime-adjacent location give appreciation runway. Sub-$1M quantum keeps the buyer pool wide. Strongest 1BR in the batch.",
+      "red_flags": [
+        "99LH — lease decay, though only ~6 years elapsed",
+        "Realized appreciation 3.0%/yr is modest",
+        "1.02km to Redhill MRT — not doorstep"
+      ],
+      "catalysts": [
+        "PSF ~11% below district median on a deep 218-txn base — real value",
+        "Reputable UOL/Kheng Leong large development with full facilities",
+        "RCR D03 — Greater Southern Waterfront, Alexandra/Queenstown rejuvenation"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1974.31,
+        "beds": 1,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 506 sqft 1BR at Principal Garden, a well-regarded large UOL/Kheng Leong 99LH project in D03 (Alexandra/Tanglin fringe, built 2019), at $999k / $1,974 psf — a clear ~11% below the $2,211 median on a very deep 218-txn series. RCR D03 location near the Greater Southern Waterfront with strong developer pedigree; the sub-$1M quantum and below-median PSF make it an attractive 1BR entry despite modest 3.0%/yr realized growth.",
+        "rating": "Buy",
+        "rating_rationale": "A genuinely high-confidence entry: 218 URA transactions (deep liquidity), PSF ~11% under the $2,211 median, reputable developer, full-facility large development, and RCR D03 with GSW + TEL/CCL catalysts. The 2.98%/yr CAGR is soft, but it's measured over a deep series and the discount-to-median plus prime-adjacent location give appreciation runway. Sub-$1M quantum keeps the buyer pool wide. Strongest 1BR in the batch.",
+        "red_flags": [
+          "99LH — lease decay, though only ~6 years elapsed",
+          "Realized appreciation 3.0%/yr is modest",
+          "1.02km to Redhill MRT — not doorstep"
+        ],
+        "catalysts": [
+          "PSF ~11% below district median on a deep 218-txn base — real value",
+          "Reputable UOL/Kheng Leong large development with full facilities",
+          "RCR D03 — Greater Southern Waterfront, Alexandra/Queenstown rejuvenation"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-principal-garden-60089118",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "UOL-developed large condo (99yr from 2014) on Prince Charles Crescent, D3/Bukit Merah-Alexandra. 1BR at $1,974 psf ($999k) screens cheap with the deepest data in this batch (218 appreciation txns, 19 cohort txns), and D3 is a strong RCR rental belt.",
+      "rating_rationale": "This is the most data-credible 'cheap' in the batch: age_adj_premium -16.7% with 218 appreciation txns and 19 cohort txns (not a thin-data quirk). Recent 12-month transactions span $1,859-$2,699 psf (avg $2,158); a small 1BR at $1,974 psf is at/below that average despite small units normally commanding the HIGHEST psf — so the asking looks genuinely under-market. UOL build quality is well regarded and the Alexandra/Redhill corridor is a deep rental market (CBD/Mapletree/one-north tenants), supporting RCR forward (~+3.5%). Trailing 2.98% CAGR is non-predictive but the value signal (the robust forward driver per v3.4) is the real edge here. Held to Buy (not Strong Buy) because I lack a same-size 1BR comp to confirm the discount, leasehold from 2014 means ~87yrs left, and D3 is RCR not OCR (the best forward region).",
+      "red_flags": [
+        "No verified same-size 1BR resale comp found; the discount is inferred from a pooled $1,859-$2,699 range that mixes in larger units",
+        "99-yr leasehold from 2014 (~87 yrs remaining) — mild decay drag over a long hold",
+        "1BR is investor-grade product; D3 1BR rental pool is solid but exit competes with abundant small units"
+      ],
+      "catalysts": [
+        "Deep, trusted developer (UOL) and large full-facility project — strong resale liquidity",
+        "Alexandra/Redhill/one-north employment + Greater Southern Waterfront long-term redevelopment underpins D3 demand",
+        "Walkable to Redhill/Tiong Bahru amenities; RCR rental belt with steady tenant demand"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1974.31,
+        "beds": 1,
+        "sqft": 506
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "UOL-developed large condo (99yr from 2014) on Prince Charles Crescent, D3/Bukit Merah-Alexandra. 1BR at $1,974 psf ($999k) screens cheap with the deepest data in this batch (218 appreciation txns, 19 cohort txns), and D3 is a strong RCR rental belt.",
+        "rating_rationale": "This is the most data-credible 'cheap' in the batch: age_adj_premium -16.7% with 218 appreciation txns and 19 cohort txns (not a thin-data quirk). Recent 12-month transactions span $1,859-$2,699 psf (avg $2,158); a small 1BR at $1,974 psf is at/below that average despite small units normally commanding the HIGHEST psf — so the asking looks genuinely under-market. UOL build quality is well regarded and the Alexandra/Redhill corridor is a deep rental market (CBD/Mapletree/one-north tenants), supporting RCR forward (~+3.5%). Trailing 2.98% CAGR is non-predictive but the value signal (the robust forward driver per v3.4) is the real edge here. Held to Buy (not Strong Buy) because I lack a same-size 1BR comp to confirm the discount, leasehold from 2014 means ~87yrs left, and D3 is RCR not OCR (the best forward region).",
+        "red_flags": [
+          "No verified same-size 1BR resale comp found; the discount is inferred from a pooled $1,859-$2,699 range that mixes in larger units",
+          "99-yr leasehold from 2014 (~87 yrs remaining) — mild decay drag over a long hold",
+          "1BR is investor-grade product; D3 1BR rental pool is solid but exit competes with abundant small units"
+        ],
+        "catalysts": [
+          "Deep, trusted developer (UOL) and large full-facility project — strong resale liquidity",
+          "Alexandra/Redhill/one-north employment + Greater Southern Waterfront long-term redevelopment underpins D3 demand",
+          "Walkable to Redhill/Tiong Bahru amenities; RCR rental belt with steady tenant demand"
+        ],
+        "rental_assessment": "D3 1BRs in this corridor rent strongly to CBD/one-north professionals; expect a healthy ~3.5-4% gross yield on $999k, with low vacancy.",
+        "appreciation_assessment": "Lead signal is value (cheap vs verified district peers), which v3.4 ranks as the best forward predictor; RCR baseline ~+3.5% with upside if the sub-market discount closes."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-principal-garden-60089118",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

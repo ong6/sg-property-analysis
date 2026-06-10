@@ -1,0 +1,61 @@
+{
+  "condo": "Urban Heritage",
+  "slug": "urban-heritage",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A compact 538 sqft freehold 2BR in D12 at sub-$1M, but it's a dual-key/compact format walking 18 minutes (1.48km) from Boon Keng MRT, with only 2 URA transactions on file. Low quantum is the only real draw against thin data and poor connectivity.",
+      "rating_rationale": "538 sqft for a 2BR is a very compact/shoebox-grade layout at $1,673 PSF, and the 1.48km / 18-min MRT walk is the worst connectivity in the batch. Only 2 URA txns means no usable appreciation or value benchmark. Score_1000 of 527 is just market-typical. Sub-$1M freehold quantum keeps it from Avoid, but there's no investment edge here.",
+      "red_flags": [
+        "Only 2 URA transactions — value and appreciation unverifiable",
+        "1.48km / 18-min walk to MRT — weak for rental and resale",
+        "538 sqft compact 2BR — cramped layout, niche appeal",
+        "Likely small boutique development"
+      ],
+      "catalysts": [
+        "Sub-$1M freehold quantum widens the affordability-driven buyer pool",
+        "City-fringe D12 near Balestier amenities"
+      ],
+      "as_of": {
+        "price": 899999,
+        "psf": 1672.86,
+        "beds": 2,
+        "sqft": 538.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 538 sqft freehold 2BR in D12 at sub-$1M, but it's a dual-key/compact format walking 18 minutes (1.48km) from Boon Keng MRT, with only 2 URA transactions on file. Low quantum is the only real draw against thin data and poor connectivity.",
+        "rating": "Neutral",
+        "rating_rationale": "538 sqft for a 2BR is a very compact/shoebox-grade layout at $1,673 PSF, and the 1.48km / 18-min MRT walk is the worst connectivity in the batch. Only 2 URA txns means no usable appreciation or value benchmark. Score_1000 of 527 is just market-typical. Sub-$1M freehold quantum keeps it from Avoid, but there's no investment edge here.",
+        "red_flags": [
+          "Only 2 URA transactions — value and appreciation unverifiable",
+          "1.48km / 18-min walk to MRT — weak for rental and resale",
+          "538 sqft compact 2BR — cramped layout, niche appeal",
+          "Likely small boutique development"
+        ],
+        "catalysts": [
+          "Sub-$1M freehold quantum widens the affordability-driven buyer pool",
+          "City-fringe D12 near Balestier amenities"
+        ],
+        "rental_assessment": "Compact unit at low quantum can yield reasonably on absolute rent, but the long MRT walk caps tenant appeal in a competitive city-fringe rental market.",
+        "appreciation_assessment": "No usable URA data (2 txns); a small compact-format freehold this far from MRT typically tracks or lags the modest D12 trajectory.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-urban-heritage-60058665",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

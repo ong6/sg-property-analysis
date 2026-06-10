@@ -1,0 +1,59 @@
+{
+  "condo": "Fruition",
+  "slug": "fruition",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 3BR (1023 sqft) in D15 at $1.69M / $1652 PSF, an attractive quantum, but Fruition is a tiny boutique block with only 3 URA transactions and an 11-min/940m walk to Eunos MRT. Thin data and illiquidity make this hard to rate with conviction.",
+      "rating_rationale": "$1.69M / $1652 PSF freehold in D15 is in a liquid quantum band and the East Coast location is desirable, but with only 3 URA txns and no median PSF, appreciation and exit liquidity are unverifiable. Boutique scale (few units), no MRT-on-doorstep (940m to Eunos), and no specific catalyst keep this at Neutral — the price is the main draw, not the fundamentals.",
+      "red_flags": [
+        "Only 3 URA transactions — appreciation and fair value unverifiable",
+        "Small boutique development — limited resale liquidity and amenities",
+        "940m / 11-min walk to Eunos MRT — weak transit access"
+      ],
+      "catalysts": [
+        "Freehold tenure in deep-buyer-pool D15 East Coast",
+        "Sub-$1.7M quantum keeps the unit broadly affordable"
+      ],
+      "as_of": {
+        "price": 1690000,
+        "psf": 1652.0,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3BR (1023 sqft) in D15 at $1.69M / $1652 PSF, an attractive quantum, but Fruition is a tiny boutique block with only 3 URA transactions and an 11-min/940m walk to Eunos MRT. Thin data and illiquidity make this hard to rate with conviction.",
+        "rating": "Neutral",
+        "rating_rationale": "$1.69M / $1652 PSF freehold in D15 is in a liquid quantum band and the East Coast location is desirable, but with only 3 URA txns and no median PSF, appreciation and exit liquidity are unverifiable. Boutique scale (few units), no MRT-on-doorstep (940m to Eunos), and no specific catalyst keep this at Neutral — the price is the main draw, not the fundamentals.",
+        "red_flags": [
+          "Only 3 URA transactions — appreciation and fair value unverifiable",
+          "Small boutique development — limited resale liquidity and amenities",
+          "940m / 11-min walk to Eunos MRT — weak transit access"
+        ],
+        "catalysts": [
+          "Freehold tenure in deep-buyer-pool D15 East Coast",
+          "Sub-$1.7M quantum keeps the unit broadly affordable"
+        ],
+        "rental_assessment": "Moderate. D15 has solid tenant demand, but distance from MRT and boutique profile limit pull; a freehold 3BR suits families more than the transient rental market.",
+        "appreciation_assessment": "Cannot be quantified — 3 txns is statistically meaningless. D15 freehold should at least hold value, but boutique illiquidity is a real drag; assume RCR-baseline at best.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-fruition-60096422",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

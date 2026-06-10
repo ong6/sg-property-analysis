@@ -58,6 +58,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-river-isles-60052764",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Large 1,647 sqft Punggol unit at a low $1,214 psf — but the cheapness is mostly a big-unit size effect on a thin 4-transaction cohort, and the $2.0M quantum sits at the illiquid top end of leasehold Punggol.",
+      "rating_rationale": "River Isles' 12-month range is $1,310-$1,695 psf (avg ~$1,520), so on PSF this 1,647 sqft unit at $1,214 psf does screen cheap. But two things temper it: (1) psf_cohort_txns = 4 — a thin cohort the v3.4 prior says to distrust, and (2) at 1,647 sqft this is an unusually large layout (likely 4BR/dual-key or premium), and large units structurally trade at lower PSF, so much of the -30.4% age_adj and -18.4% psf_premium is a size artifact rather than true alpha. The $1,999,999 absolute quantum is the real concern: it is at the very top of the Punggol leasehold market, where 3BRs commonly transact around $1.2-1.5M — buyers at $2.0M in OCR leasehold are scarce, so exit liquidity is weak and price discovery thin. Project quality is fine (large land, full facilities, 2015 TOP) and the Cross Island Line (~2030, Hougang/Punggol connectivity) is a genuine regional catalyst, and OCR D19 has the strongest forward region prior. But a high-quantum, large-format unit on a 4-txn cohort is a near-tie with too much uncertainty to call a Buy. Neutral, low confidence.",
+      "red_flags": [
+        "psf_cohort_txns = 4 — low PSF rests on very few comparables; the -18.4% discount is likely overstated",
+        "$1,999,999 quantum is at the illiquid top end of Punggol leasehold (typical 3BRs ~$1.2-1.5M) — weak exit liquidity",
+        "1,647 sqft is an oversized layout; low PSF is largely a size effect, not a genuine per-unit bargain",
+        "99-year lease from 2012 — lease decay plus far-OCR location compounds resale risk at a high quantum"
+      ],
+      "catalysts": [
+        "Cross Island Line (~2030, Hougang interchange) — confirmed dated connectivity catalyst for Punggol/D19",
+        "OCR D19 carries the strongest realized forward-return region prior; large family layout with full facilities on a big site",
+        "If a genuine dual-key, the layout could support rental flexibility (rent one key, occupy the other)"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1214.33,
+        "beds": 3,
+        "sqft": 1647
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Large 1,647 sqft Punggol unit at a low $1,214 psf — but the cheapness is mostly a big-unit size effect on a thin 4-transaction cohort, and the $2.0M quantum sits at the illiquid top end of leasehold Punggol.",
+        "rating_rationale": "River Isles' 12-month range is $1,310-$1,695 psf (avg ~$1,520), so on PSF this 1,647 sqft unit at $1,214 psf does screen cheap. But two things temper it: (1) psf_cohort_txns = 4 — a thin cohort the v3.4 prior says to distrust, and (2) at 1,647 sqft this is an unusually large layout (likely 4BR/dual-key or premium), and large units structurally trade at lower PSF, so much of the -30.4% age_adj and -18.4% psf_premium is a size artifact rather than true alpha. The $1,999,999 absolute quantum is the real concern: it is at the very top of the Punggol leasehold market, where 3BRs commonly transact around $1.2-1.5M — buyers at $2.0M in OCR leasehold are scarce, so exit liquidity is weak and price discovery thin. Project quality is fine (large land, full facilities, 2015 TOP) and the Cross Island Line (~2030, Hougang/Punggol connectivity) is a genuine regional catalyst, and OCR D19 has the strongest forward region prior. But a high-quantum, large-format unit on a 4-txn cohort is a near-tie with too much uncertainty to call a Buy. Neutral, low confidence.",
+        "red_flags": [
+          "psf_cohort_txns = 4 — low PSF rests on very few comparables; the -18.4% discount is likely overstated",
+          "$1,999,999 quantum is at the illiquid top end of Punggol leasehold (typical 3BRs ~$1.2-1.5M) — weak exit liquidity",
+          "1,647 sqft is an oversized layout; low PSF is largely a size effect, not a genuine per-unit bargain",
+          "99-year lease from 2012 — lease decay plus far-OCR location compounds resale risk at a high quantum"
+        ],
+        "catalysts": [
+          "Cross Island Line (~2030, Hougang interchange) — confirmed dated connectivity catalyst for Punggol/D19",
+          "OCR D19 carries the strongest realized forward-return region prior; large family layout with full facilities on a big site",
+          "If a genuine dual-key, the layout could support rental flexibility (rent one key, occupy the other)"
+        ],
+        "appreciation_assessment": "Reported 7.66% 5yr CAGR on 154 txns is a real, liquid sample at the PROJECT level, but the specific large-unit PSF cohort is only 4 txns; per v3.4 trailing appreciation has ~0 forward power, so I do not extrapolate the 7.66% — the forward case rests on the CRL catalyst, which is offset by the high quantum.",
+        "rental_assessment": "A 1,647 sqft unit (possible dual-key) could rent well for a large family or split-rental in Punggol, but the high purchase price compresses gross yield versus smaller D19 units, weakening the investment math."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-river-isles-60052764",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

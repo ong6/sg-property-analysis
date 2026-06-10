@@ -1,0 +1,63 @@
+{
+  "condo": "Super Cheap Freehold 4 Bedroom Mins walk to MRT",
+  "slug": "super-cheap-freehold-4-bedroom-mins-walk-to-mrt",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A young (2021) freehold 4BR of 1281 sqft at $2029 PSF / $2.6M, 510m from the new TE26 Marine Parade MRT in D15 East Coast. No URA appreciation/median data is attached, so the value case rests on the location and the East Coast freehold premium rather than project-specific evidence.",
+      "rating_rationale": "Strong location (freehold East Coast, 6 min to a TEL station that opened the area up) and a compact-but-functional 1281 sqft 4BR. But $2.6M sits above the deepest liquidity band, $2029 PSF is full price for the area, and the listing carries zero URA appreciation/txn data — no project-specific evidence of price trajectory. The spammy 'Super Cheap' title is agent marketing, not a verified discount. Mid-pack score (564). Balanced risk/reward.",
+      "red_flags": [
+        "No URA appreciation, median PSF or txn count attached — value claim unverifiable from dossier",
+        "$2.6M quantum is above the $1.8-2.5M deep-liquidity band; 4BR is family-only niche",
+        "1281 sqft for 4 bedrooms is tight, may deter family buyers on resale",
+        "Generic 'Super Cheap' marketing title — no independent confirmation of a real discount"
+      ],
+      "catalysts": [
+        "TE26 Marine Parade MRT (TEL) now operational — improved connectivity uplift",
+        "Freehold East Coast lifestyle district with deep owner-occupier demand",
+        "Young 2021 build, low maintenance risk"
+      ],
+      "as_of": {
+        "price": 2600000,
+        "psf": 2029.66,
+        "beds": 4,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A young (2021) freehold 4BR of 1281 sqft at $2029 PSF / $2.6M, 510m from the new TE26 Marine Parade MRT in D15 East Coast. No URA appreciation/median data is attached, so the value case rests on the location and the East Coast freehold premium rather than project-specific evidence.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong location (freehold East Coast, 6 min to a TEL station that opened the area up) and a compact-but-functional 1281 sqft 4BR. But $2.6M sits above the deepest liquidity band, $2029 PSF is full price for the area, and the listing carries zero URA appreciation/txn data — no project-specific evidence of price trajectory. The spammy 'Super Cheap' title is agent marketing, not a verified discount. Mid-pack score (564). Balanced risk/reward.",
+        "red_flags": [
+          "No URA appreciation, median PSF or txn count attached — value claim unverifiable from dossier",
+          "$2.6M quantum is above the $1.8-2.5M deep-liquidity band; 4BR is family-only niche",
+          "1281 sqft for 4 bedrooms is tight, may deter family buyers on resale",
+          "Generic 'Super Cheap' marketing title — no independent confirmation of a real discount"
+        ],
+        "catalysts": [
+          "TE26 Marine Parade MRT (TEL) now operational — improved connectivity uplift",
+          "Freehold East Coast lifestyle district with deep owner-occupier demand",
+          "Young 2021 build, low maintenance risk"
+        ],
+        "rental_assessment": "East Coast 4BR rents to families; demand exists but the pool is narrower than for 2BR. A $2.6M quantum implies a sub-3.5% gross yield typical of large freehold units.",
+        "appreciation_assessment": "No URA data to anchor; D15 East Coast freehold near a new MRT is a sound long-run hold, but $2029 PSF is already a full price with limited evident discount.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-super-cheap-freehold-4-bedroom-mins-walk-to-mrt-500158261",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

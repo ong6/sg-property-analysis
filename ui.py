@@ -15,7 +15,6 @@ import csv
 import html
 import json
 import os
-import sys
 import urllib.parse
 import webbrowser
 from http.server import HTTPServer, BaseHTTPRequestHandler

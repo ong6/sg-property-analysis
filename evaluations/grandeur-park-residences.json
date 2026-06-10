@@ -67,6 +67,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-500153648",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "710 sqft unit at Grandeur Park (Tanah Merah, D16/OCR) asking $1,504 PSF — verifiably cheap vs the project's $1,769/sqft blended and ~$2,007-$2,083 PSF recent 2BR transacted level. Cheapness is real and well-comped (psf_cohort_txns=18, appreciation_txns=186). Caveat: 710 sqft doesn't match Grandeur Park's 1BR sizes (420-560 sqft) — likely a 2BR/2BR+study mislabeled as 1BR.",
+      "rating_rationale": "Asking $1,504 PSF is the lowest current PSF in the project and sits ~25% below the ~$2,007 PSF 12-month average and ~$2,083 PSF 2BR average — the algo's -24.4% psf_premium_vs_cohort is corroborated by web transaction data and rests on a deep 18-txn cohort and 186-txn appreciation base, so this is a genuine bargain, not a thin-data quirk. The unit is essentially at the foot of Tanah Merah MRT (EWL) with Bedok South TE30 (Thomson-East Coast Line) adding a second line — a confirmed dual-MRT connectivity catalyst. D16 is OCR, the region with the strongest realized forward returns (~+4.0%) under the v3.4 prior. The bed-count is the open question: 710 sqft exceeds all listed 1BR layouts (max 560 sqft) and 2BR+Study (667 sqft), so it is probably a 2BR mislabeled — which if anything strengthens the value (more sqft for the price). Confidence is medium, not high, because the discount is partly explained by larger-unit PSF compression and the listing's bed/size data is internally inconsistent, which warrants viewing before committing.",
+      "red_flags": [
+        "710 sqft is inconsistent with Grandeur Park's actual 1BR (420-560 sqft) and 2BR+study (667 sqft) layouts — bed-count likely mislabeled; verify unit type on viewing",
+        "Part of the PSF discount is structural large-unit compression, not pure underpricing — true bargain margin is narrower than the headline -24.4%",
+        "99-yr leasehold; newer (TOP 2021) so lease risk is low near-term but factor into 5-7yr exit"
+      ],
+      "catalysts": [
+        "Directly adjacent to Tanah Merah MRT (East-West Line)",
+        "Bedok South TE30 (Thomson-East Coast Line) provides confirmed second-line access — dual-MRT connectivity",
+        "OCR location aligns with v3.4 prior's strongest realized forward-return region (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 1068000,
+        "psf": 1504.23,
+        "beds": 1,
+        "sqft": 710
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "710 sqft unit at Grandeur Park (Tanah Merah, D16/OCR) asking $1,504 PSF — verifiably cheap vs the project's $1,769/sqft blended and ~$2,007-$2,083 PSF recent 2BR transacted level. Cheapness is real and well-comped (psf_cohort_txns=18, appreciation_txns=186). Caveat: 710 sqft doesn't match Grandeur Park's 1BR sizes (420-560 sqft) — likely a 2BR/2BR+study mislabeled as 1BR.",
+        "rating_rationale": "Asking $1,504 PSF is the lowest current PSF in the project and sits ~25% below the ~$2,007 PSF 12-month average and ~$2,083 PSF 2BR average — the algo's -24.4% psf_premium_vs_cohort is corroborated by web transaction data and rests on a deep 18-txn cohort and 186-txn appreciation base, so this is a genuine bargain, not a thin-data quirk. The unit is essentially at the foot of Tanah Merah MRT (EWL) with Bedok South TE30 (Thomson-East Coast Line) adding a second line — a confirmed dual-MRT connectivity catalyst. D16 is OCR, the region with the strongest realized forward returns (~+4.0%) under the v3.4 prior. The bed-count is the open question: 710 sqft exceeds all listed 1BR layouts (max 560 sqft) and 2BR+Study (667 sqft), so it is probably a 2BR mislabeled — which if anything strengthens the value (more sqft for the price). Confidence is medium, not high, because the discount is partly explained by larger-unit PSF compression and the listing's bed/size data is internally inconsistent, which warrants viewing before committing.",
+        "red_flags": [
+          "710 sqft is inconsistent with Grandeur Park's actual 1BR (420-560 sqft) and 2BR+study (667 sqft) layouts — bed-count likely mislabeled; verify unit type on viewing",
+          "Part of the PSF discount is structural large-unit compression, not pure underpricing — true bargain margin is narrower than the headline -24.4%",
+          "99-yr leasehold; newer (TOP 2021) so lease risk is low near-term but factor into 5-7yr exit"
+        ],
+        "catalysts": [
+          "Directly adjacent to Tanah Merah MRT (East-West Line)",
+          "Bedok South TE30 (Thomson-East Coast Line) provides confirmed second-line access — dual-MRT connectivity",
+          "OCR location aligns with v3.4 prior's strongest realized forward-return region (~+4.0%)"
+        ],
+        "rental_assessment": "Newer 2021 development next to an MRT interchange-grade node supports solid leasing; District 16 / Bedok-Tanah Merah draws Changi Business Park and airport-adjacent tenants. At $1,068,000 for ~710 sqft, gross yield likely ~3.5-3.8%, healthy for OCR.",
+        "appreciation_assessment": "URA 5yr CAGR 4.43% on 186 txns is statistically solid but treated as ~0 forward signal per v3.4. The investable thesis is verified value (lowest PSF in a well-located 2021 project) plus the durable dual-MRT catalyst, not trailing CAGR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-park-residences-25468126",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,117 @@
+{
+  "condo": "The Tennery",
+  "slug": "the-tennery",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "1BR at The Tennery, an integrated mixed-use 99LH project directly above Hillion Mall and the Bukit Panjang MRT/LRT interchange. Sound transport-connected entry at $800k/$1,303 psf, but D23 OCR appreciation is pedestrian (3.4%/yr CAGR over 128 txns) and the unit is leasehold and 13 years old.",
+      "rating_rationale": "Strong liquidity anchors (230m to DT1 Bukit Panjang, integrated with Hillion Mall, 128 URA txns) and PSF $1,303 sits below the $1,369 district median — fair value. But 3.4%/yr appreciation is OCR-baseline-tier, the 99LH started 2010 so lease decay is now active, and 1BR in suburban D23 has a shallow owner-occupier buyer pool. Decent yield play, not a capital-growth pick.",
+      "red_flags": [
+        "99-year leasehold, ~13 years gone — lease decay drag on a long hold",
+        "D23 1BR appreciation only 3.4%/yr, OCR-typical with no standout catalyst",
+        "Niche suburban 1BR — investor/rental-dependent demand, thinner resale pool"
+      ],
+      "catalysts": [
+        "Integrated with Hillion Mall + Bukit Panjang MRT/LRT interchange — best-in-class connectivity for D23",
+        "PSF below district median leaves modest room",
+        "Bukit Panjang precinct rejuvenation"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1302.93,
+        "beds": 1,
+        "sqft": 614.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1BR at The Tennery, an integrated mixed-use 99LH project directly above Hillion Mall and the Bukit Panjang MRT/LRT interchange. Sound transport-connected entry at $800k/$1,303 psf, but D23 OCR appreciation is pedestrian (3.4%/yr CAGR over 128 txns) and the unit is leasehold and 13 years old.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong liquidity anchors (230m to DT1 Bukit Panjang, integrated with Hillion Mall, 128 URA txns) and PSF $1,303 sits below the $1,369 district median — fair value. But 3.4%/yr appreciation is OCR-baseline-tier, the 99LH started 2010 so lease decay is now active, and 1BR in suburban D23 has a shallow owner-occupier buyer pool. Decent yield play, not a capital-growth pick.",
+        "red_flags": [
+          "99-year leasehold, ~13 years gone — lease decay drag on a long hold",
+          "D23 1BR appreciation only 3.4%/yr, OCR-typical with no standout catalyst",
+          "Niche suburban 1BR — investor/rental-dependent demand, thinner resale pool"
+        ],
+        "catalysts": [
+          "Integrated with Hillion Mall + Bukit Panjang MRT/LRT interchange — best-in-class connectivity for D23",
+          "PSF below district median leaves modest room",
+          "Bukit Panjang precinct rejuvenation"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tennery-500163216",
+        "review_file": "cov_batch_13.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Bukit Panjang 1BR asking $1,302 psf looks cheap but is cheap for documented structural reasons - a closed LRT station, loss to the DTL-connected Hillion Residences, and a long record of unprofitable resales.",
+      "rating_rationale": "The dossier's -13.8% age-adj-cheap reads as a bargain, but deep data (psf_cohort_txns=32, appreciation_txns=128) confirms the discount is the market's settled verdict, not a mispricing. Stacked Homes documents 33 unprofitable transactions (avg loss -$72.7k) and identifies the cause: the Ten Mile Junction LRT at the doorstep was permanently shut in 2019 (Singapore's first station closure ever), and the project was structurally out-competed by Hillion Residences, which sits on the Downtown Line MRT with a larger mall. Asking $1,302 is at the floor of the band ($1,303-1,485) and below the 12-month avg ($1,355) - confirming softness. It is an OCR asset (favorable region per v3.4), but the region tailwind cannot offset a documented locational defect and weak demand. A 614sf leasehold 1BR here is a value trap.",
+      "red_flags": [
+        "Ten Mile Junction LRT (at the development) permanently closed in 2019 - transit access materially worse than at launch",
+        "Structurally out-competed by Hillion Residences (Downtown Line MRT + larger mall)",
+        "33 documented unprofitable resales (avg loss -$72.7k) - poor capital-appreciation track record",
+        "Investor-skewed project with weak holding power; asking at the bottom of the band and below 12-month avg",
+        "99-yr leasehold (2013) 614sf small unit - limited owner-occupier appeal"
+      ],
+      "catalysts": [
+        "OCR location (D23) carries the most favorable realized forward base rate per backtest",
+        "Mature Bukit Panjang amenities (supermarket/dining below, MRT + bus interchange across the road) support rental floor",
+        "Post-rectification works reportedly improved the development's condition"
+      ],
+      "as_of": {
+        "price": 800000,
+        "psf": 1302.93,
+        "beds": 1,
+        "sqft": 614
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Bukit Panjang 1BR asking $1,302 psf looks cheap but is cheap for documented structural reasons - a closed LRT station, loss to the DTL-connected Hillion Residences, and a long record of unprofitable resales.",
+        "rating_rationale": "The dossier's -13.8% age-adj-cheap reads as a bargain, but deep data (psf_cohort_txns=32, appreciation_txns=128) confirms the discount is the market's settled verdict, not a mispricing. Stacked Homes documents 33 unprofitable transactions (avg loss -$72.7k) and identifies the cause: the Ten Mile Junction LRT at the doorstep was permanently shut in 2019 (Singapore's first station closure ever), and the project was structurally out-competed by Hillion Residences, which sits on the Downtown Line MRT with a larger mall. Asking $1,302 is at the floor of the band ($1,303-1,485) and below the 12-month avg ($1,355) - confirming softness. It is an OCR asset (favorable region per v3.4), but the region tailwind cannot offset a documented locational defect and weak demand. A 614sf leasehold 1BR here is a value trap.",
+        "red_flags": [
+          "Ten Mile Junction LRT (at the development) permanently closed in 2019 - transit access materially worse than at launch",
+          "Structurally out-competed by Hillion Residences (Downtown Line MRT + larger mall)",
+          "33 documented unprofitable resales (avg loss -$72.7k) - poor capital-appreciation track record",
+          "Investor-skewed project with weak holding power; asking at the bottom of the band and below 12-month avg",
+          "99-yr leasehold (2013) 614sf small unit - limited owner-occupier appeal"
+        ],
+        "catalysts": [
+          "OCR location (D23) carries the most favorable realized forward base rate per backtest",
+          "Mature Bukit Panjang amenities (supermarket/dining below, MRT + bus interchange across the road) support rental floor",
+          "Post-rectification works reportedly improved the development's condition"
+        ],
+        "appreciation_assessment": "Trailing +3.38% CAGR on 128 txns, but the documented unprofitable-resale history and lost LRT make forward appreciation a poor bet; the OCR base rate is real but insufficient against the locational defect.",
+        "rental_assessment": "~4% gross yield with MRT/bus interchange across the road gives a stable rental floor - the only real strength, but not enough to justify a buy when capital downside risk is structural."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tennery-500163216",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

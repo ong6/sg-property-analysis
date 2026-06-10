@@ -305,6 +305,64 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500134933",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1BR shoebox at Waterfront Isle (Bedok Reservoir, D16) priced at roughly fair value — the verified 12-month average is ~S$1,633 psf, so the S$1,549 ask looks cheap on a pooled basis but is essentially fair once shoebox PSF premium is accounted for.",
+      "rating_rationale": "Verified transactions show a 12-month range of S$1,292-1,915 psf (avg ~S$1,633), and the S$1,549 psf ask sits below that average. But small 1BR units structurally command higher PSF than the pooled mix (which includes larger units like the 1,227 sqft Oct 2025 sale at S$1,915 psf), so a 581 sqft shoebox at S$1,549 psf is closer to fair value than a bargain — consistent with the algo's near-zero +0.1% cohort premium. The age-adjusted -9.5% rests on a decent 129-txn appreciation base, but the size cohort is thin (5 txns), so I discount the cohort read. RCR/D16 region carries a moderate forward prior (~+3.5%). With aging facilities noted in reviews, no dated catalyst, and only fair (not cheap) pricing, this is a Neutral — a fine hold but not an edge.",
+      "red_flags": [
+        "1BR shoebox (581 sqft) — narrower resale buyer pool, more cyclical demand",
+        "Size cohort only 5 transactions — cohort PSF read is thin",
+        "Resident reviews note aging facilities needing upgrading/maintenance (TOP 2015)",
+        "99-year leasehold from 2009 — lease clock running",
+        "Not a true discount: ask is roughly fair once shoebox PSF premium is netted out"
+      ],
+      "catalysts": [
+        "Near Bedok Reservoir MRT (DT30) on the Downtown Line",
+        "Bedok Reservoir waterfront amenity / lifestyle appeal",
+        "RCR/D16 region — moderate forward-return prior under v3.4"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1549.05,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A 1BR shoebox at Waterfront Isle (Bedok Reservoir, D16) priced at roughly fair value — the verified 12-month average is ~S$1,633 psf, so the S$1,549 ask looks cheap on a pooled basis but is essentially fair once shoebox PSF premium is accounted for.",
+        "rating_rationale": "Verified transactions show a 12-month range of S$1,292-1,915 psf (avg ~S$1,633), and the S$1,549 psf ask sits below that average. But small 1BR units structurally command higher PSF than the pooled mix (which includes larger units like the 1,227 sqft Oct 2025 sale at S$1,915 psf), so a 581 sqft shoebox at S$1,549 psf is closer to fair value than a bargain — consistent with the algo's near-zero +0.1% cohort premium. The age-adjusted -9.5% rests on a decent 129-txn appreciation base, but the size cohort is thin (5 txns), so I discount the cohort read. RCR/D16 region carries a moderate forward prior (~+3.5%). With aging facilities noted in reviews, no dated catalyst, and only fair (not cheap) pricing, this is a Neutral — a fine hold but not an edge.",
+        "red_flags": [
+          "1BR shoebox (581 sqft) — narrower resale buyer pool, more cyclical demand",
+          "Size cohort only 5 transactions — cohort PSF read is thin",
+          "Resident reviews note aging facilities needing upgrading/maintenance (TOP 2015)",
+          "99-year leasehold from 2009 — lease clock running",
+          "Not a true discount: ask is roughly fair once shoebox PSF premium is netted out"
+        ],
+        "catalysts": [
+          "Near Bedok Reservoir MRT (DT30) on the Downtown Line",
+          "Bedok Reservoir waterfront amenity / lifestyle appeal",
+          "RCR/D16 region — moderate forward-return prior under v3.4"
+        ],
+        "rental_assessment": "Shoebox near Bedok Reservoir MRT rents reasonably to single professionals; yield likely ~3.5-4%. Demand steady but tied to a smaller tenant niche than central locations.",
+        "appreciation_assessment": "Trailing 7.36% CAGR is story-only with near-zero forward power; with the unit priced near fair value there is no relative-value edge. Expect roughly market-typical RCR forward returns."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-25593161",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

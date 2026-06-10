@@ -116,6 +116,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-500157920",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "603 sqft 1BR in a 2022 development with Mattar MRT (DTL) at the doorstep, D14. Asking $1,907 psf sits at the very bottom of the verified $1,885-2,213 psf recent range (avg ~$2,070), a real ~8% discount — supported by well-populated resale data (191 txns) and a -8.9% cohort read on 20 comps.",
+      "rating_rationale": "This is one of the better-supported value cases in the batch: recent transactions ran $1,885-2,213 psf (avg ~$2,070) and this unit asks $1,907 psf — a genuine ~8% discount to the trailing average, corroborated by the algo's -7.0% age-adjusted and -8.9% cohort signals on a solid 20-txn cohort (191 total resale comps, the deepest in this batch). Mattar MRT (Downtown Line) is a doorstep, dated catalyst, and the RCR/RCR-adjacent Paya Lebar/MacPherson location benefits from the Paya Lebar Central regeneration. RCR realized forward appreciation (~+3.5%) is solid. High absolute PSF and a small 603 sqft 1BR compress yield, and the area is still maturing, so confidence is medium not high.",
+      "red_flags": [
+        "High absolute PSF ($1,907) on a small 603 sqft 1BR compresses gross rental yield",
+        "Geylang-fringe / MacPherson locale still maturing with limited immediate amenities per reviews",
+        "99-year leasehold (2022) — fine now but a recent new-launch resale, modest 1.73% trailing appreciation"
+      ],
+      "catalysts": [
+        "Mattar MRT (Downtown Line) at the doorstep — decisive, confirmed connectivity catalyst",
+        "Paya Lebar Central / MacPherson regeneration and employment growth",
+        "Verified ~8% discount to trailing average PSF on a deep (191-txn) comp set",
+        "RCR region with solid realized forward appreciation (~+3.5%)"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1907.13,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "603 sqft 1BR in a 2022 development with Mattar MRT (DTL) at the doorstep, D14. Asking $1,907 psf sits at the very bottom of the verified $1,885-2,213 psf recent range (avg ~$2,070), a real ~8% discount — supported by well-populated resale data (191 txns) and a -8.9% cohort read on 20 comps.",
+        "rating_rationale": "This is one of the better-supported value cases in the batch: recent transactions ran $1,885-2,213 psf (avg ~$2,070) and this unit asks $1,907 psf — a genuine ~8% discount to the trailing average, corroborated by the algo's -7.0% age-adjusted and -8.9% cohort signals on a solid 20-txn cohort (191 total resale comps, the deepest in this batch). Mattar MRT (Downtown Line) is a doorstep, dated catalyst, and the RCR/RCR-adjacent Paya Lebar/MacPherson location benefits from the Paya Lebar Central regeneration. RCR realized forward appreciation (~+3.5%) is solid. High absolute PSF and a small 603 sqft 1BR compress yield, and the area is still maturing, so confidence is medium not high.",
+        "red_flags": [
+          "High absolute PSF ($1,907) on a small 603 sqft 1BR compresses gross rental yield",
+          "Geylang-fringe / MacPherson locale still maturing with limited immediate amenities per reviews",
+          "99-year leasehold (2022) — fine now but a recent new-launch resale, modest 1.73% trailing appreciation"
+        ],
+        "catalysts": [
+          "Mattar MRT (Downtown Line) at the doorstep — decisive, confirmed connectivity catalyst",
+          "Paya Lebar Central / MacPherson regeneration and employment growth",
+          "Verified ~8% discount to trailing average PSF on a deep (191-txn) comp set",
+          "RCR region with solid realized forward appreciation (~+3.5%)"
+        ],
+        "rental_assessment": "Solid demand, modest yield. A brand-new 1BR next to Mattar DTL with quick city/CBD access rents readily to professionals, but the high $1,907 psf entry keeps gross yield compressed for the type.",
+        "appreciation_assessment": "Favourable on value, not momentum. Trailing 1.73% appreciation is unremarkable (treated as story only), but the verified entry below the trailing-average PSF plus a confirmed Mattar MRT catalyst and RCR tailwind support a constructive 5-7yr outlook."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-25204652",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

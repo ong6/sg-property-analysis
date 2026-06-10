@@ -1,0 +1,111 @@
+{
+  "condo": "The Poiz Residences",
+  "slug": "the-poiz-residences",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Mixed-use 1BR right on top of Potong Pasir MRT (170m) with a 213-transaction liquid base and PSF ($1,689) well below the URA median of $1,962. Excellent location and entry price but only 2.4%/yr appreciation and the niche 1BR tenant/buyer pool cap upside.",
+      "rating_rationale": "PSF $1,689 sits ~14% under the $1,962.5 URA median on a deep 213-txn series, and integrated MRT/retail access is a genuine rental draw. But 99LH appreciation is a soft 2.45%/yr, the 1BR/592sqft format is the most cyclical segment, and at $1M the resale pool is investors/singles only.",
+      "red_flags": [
+        "1BR niche segment with shallow owner-occupier demand",
+        "Soft 2.45%/yr URA appreciation despite prime transit location",
+        "Mixed-use developments carry higher maintenance and commercial-noise exposure"
+      ],
+      "catalysts": [
+        "Direct NE-line connectivity 170m to Potong Pasir MRT",
+        "Below-median entry PSF leaves room to the $1,962 median",
+        "Integrated retail mall supports rental occupancy"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1689.19,
+        "beds": 1,
+        "sqft": 592.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Mixed-use 1BR right on top of Potong Pasir MRT (170m) with a 213-transaction liquid base and PSF ($1,689) well below the URA median of $1,962. Excellent location and entry price but only 2.4%/yr appreciation and the niche 1BR tenant/buyer pool cap upside.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $1,689 sits ~14% under the $1,962.5 URA median on a deep 213-txn series, and integrated MRT/retail access is a genuine rental draw. But 99LH appreciation is a soft 2.45%/yr, the 1BR/592sqft format is the most cyclical segment, and at $1M the resale pool is investors/singles only.",
+        "red_flags": [
+          "1BR niche segment with shallow owner-occupier demand",
+          "Soft 2.45%/yr URA appreciation despite prime transit location",
+          "Mixed-use developments carry higher maintenance and commercial-noise exposure"
+        ],
+        "catalysts": [
+          "Direct NE-line connectivity 170m to Potong Pasir MRT",
+          "Below-median entry PSF leaves room to the $1,962 median",
+          "Integrated retail mall supports rental occupancy"
+        ],
+        "rental_assessment": "Strong tenant appeal from on-site MRT and mall; 1BR rents efficiently but to a thin singles/expat pool. Yield likely a respectable ~3.5-4% at this $1M entry.",
+        "appreciation_assessment": "URA-backed 2.45%/yr on 213 txns is reliable but below RCR norms; expect modest capital growth driven mostly by transit premium rather than catalysts.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-poiz-residences-500133740",
+        "review_file": "cov_batch_25.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "RCR (D13) MRT-integrated 1BR whose cheap-vs-peers signal is verified real against deep transaction data — the standout of this batch on a value basis.",
+      "rating_rationale": "The algo's value signal (-15.1% age-adj, -14.4% vs same-size cohort over a healthy 29-txn cohort, score 804) checks out against the web: The Poiz averaged S$2,036-2,071 psf over the trailing 6-12 months across a deep 213-transaction base, and a comparable 592-sqft 1BR is also listed at ~S$1,655 psf. This unit at S$1,689 psf is a genuine ~15-18% discount to project pricing (the true 1BR-specific gap is narrower than the pooled average since larger units lift it, but the -14.4% same-cohort figure rests on real depth). The unit sits directly atop Potong Pasir MRT (NE10) with Poiz Centre retail at the doorstep — durable rental and resale demand in a region (RCR ~+3.5% realized fwd) that backtests better than CCR. Trailing CAGR is only 2.45% so the case is value, not momentum, which is exactly what the v3.4 priors reward.",
+      "red_flags": [
+        "Resident reviews cite poor sound insulation and frequently broken escalators/doors at the integrated podium",
+        "99-yr leasehold from 2014/2018 TOP — lease decay clock running on a small unit"
+      ],
+      "catalysts": [
+        "Direct integration with Potong Pasir MRT (NE10) and Poiz Centre retail — built-in tenant pool",
+        "RCR location with NEL access to Dhoby Ghaut/CBD supports stable resale liquidity"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1689.19,
+        "beds": 1,
+        "sqft": 592
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "RCR (D13) MRT-integrated 1BR whose cheap-vs-peers signal is verified real against deep transaction data — the standout of this batch on a value basis.",
+        "rating_rationale": "The algo's value signal (-15.1% age-adj, -14.4% vs same-size cohort over a healthy 29-txn cohort, score 804) checks out against the web: The Poiz averaged S$2,036-2,071 psf over the trailing 6-12 months across a deep 213-transaction base, and a comparable 592-sqft 1BR is also listed at ~S$1,655 psf. This unit at S$1,689 psf is a genuine ~15-18% discount to project pricing (the true 1BR-specific gap is narrower than the pooled average since larger units lift it, but the -14.4% same-cohort figure rests on real depth). The unit sits directly atop Potong Pasir MRT (NE10) with Poiz Centre retail at the doorstep — durable rental and resale demand in a region (RCR ~+3.5% realized fwd) that backtests better than CCR. Trailing CAGR is only 2.45% so the case is value, not momentum, which is exactly what the v3.4 priors reward.",
+        "red_flags": [
+          "Resident reviews cite poor sound insulation and frequently broken escalators/doors at the integrated podium",
+          "99-yr leasehold from 2014/2018 TOP — lease decay clock running on a small unit"
+        ],
+        "catalysts": [
+          "Direct integration with Potong Pasir MRT (NE10) and Poiz Centre retail — built-in tenant pool",
+          "RCR location with NEL access to Dhoby Ghaut/CBD supports stable resale liquidity"
+        ],
+        "rental_assessment": "Small MRT-integrated 1BR in an RCR fringe is a reliable rental product; project-level yields on 1BR units here run roughly 3.5-4%, with strong occupancy from the direct MRT link.",
+        "appreciation_assessment": "Trailing 5yr CAGR of only 2.45% (deep 213 txns) carries ~0 forward signal per the backtest; do not extrapolate. The forward case rests on buying ~15% below verified recent transactions, which is the robust value edge."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-poiz-residences-500133740",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

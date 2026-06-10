@@ -63,13 +63,6 @@ def load_cache(force: bool = False) -> dict:
     return _cache
 
 
-def save_cache(cache: dict) -> None:
-    global _cache
-    with open(_CACHE_FILE, "w") as f:
-        json.dump(cache, f, indent=2, ensure_ascii=False)
-    _cache = cache
-
-
 def get_attribution(project_name: str) -> Optional[dict]:
     """Developer attribution for a project (exact then normalized match)."""
     attr = load_cache().get("attribution", {})

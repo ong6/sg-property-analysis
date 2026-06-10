@@ -1,0 +1,63 @@
+{
+  "condo": "Windy Heights",
+  "slug": "windy-heights",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1978 freehold 4BR at Windy Heights (D14 Eunos/Kembangan), a huge 2,476 sqft unit at $3.58M / $1,446 psf, with a 5.05%/yr URA CAGR (19 txns). The 47-year-old building, $3.58M quantum, and very low score_1000 (155) outweigh the freehold-en-bloc angle for a 5-7yr investment hold.",
+      "rating_rationale": "score_1000 of 155 is the batch's lowest and is justified: a 1978 (47-year-old) building carries heavy maintenance/obsolescence and harder financing, the $3.58M quantum is well above the liquid band, and the 2,476 sqft size makes the low PSF a size artefact (not cheap). The 5.05%/yr URA rate (19 txns) and freehold/en-bloc optionality are the bull case, but en-bloc is speculative and slow. For a defined 5-7yr investment hold, the age, quantum, and illiquidity make this an Avoid.",
+      "red_flags": [
+        "1978 building (47 years old) — major maintenance/obsolescence and resale friction",
+        "$3.58M quantum far above the deep-pool band; oversized 2,476 sqft niche exit",
+        "Thin 19-txn URA series; low score_1000 (155)"
+      ],
+      "catalysts": [
+        "Freehold with en-bloc/redevelopment optionality (older D14 estate)",
+        "730m to EW6 Kembangan MRT in established East-side D14",
+        "5.05%/yr URA appreciation if redevelopment story plays out"
+      ],
+      "as_of": {
+        "price": 3580000,
+        "psf": 1445.88,
+        "beds": 4,
+        "sqft": 2476.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1978 freehold 4BR at Windy Heights (D14 Eunos/Kembangan), a huge 2,476 sqft unit at $3.58M / $1,446 psf, with a 5.05%/yr URA CAGR (19 txns). The 47-year-old building, $3.58M quantum, and very low score_1000 (155) outweigh the freehold-en-bloc angle for a 5-7yr investment hold.",
+        "rating": "Avoid",
+        "rating_rationale": "score_1000 of 155 is the batch's lowest and is justified: a 1978 (47-year-old) building carries heavy maintenance/obsolescence and harder financing, the $3.58M quantum is well above the liquid band, and the 2,476 sqft size makes the low PSF a size artefact (not cheap). The 5.05%/yr URA rate (19 txns) and freehold/en-bloc optionality are the bull case, but en-bloc is speculative and slow. For a defined 5-7yr investment hold, the age, quantum, and illiquidity make this an Avoid.",
+        "red_flags": [
+          "1978 building (47 years old) — major maintenance/obsolescence and resale friction",
+          "$3.58M quantum far above the deep-pool band; oversized 2,476 sqft niche exit",
+          "Thin 19-txn URA series; low score_1000 (155)"
+        ],
+        "catalysts": [
+          "Freehold with en-bloc/redevelopment optionality (older D14 estate)",
+          "730m to EW6 Kembangan MRT in established East-side D14",
+          "5.05%/yr URA appreciation if redevelopment story plays out"
+        ],
+        "rental_assessment": "A 2,476 sqft 4BR in a dated 1978 block rents to families wanting space but at low gross yield; the ageing facilities limit tenant appeal at the high quantum.",
+        "appreciation_assessment": "The 5.05%/yr rate is partly an en-bloc/scarcity premium on freehold land; absent a redevelopment event, an ageing large-quantum unit is more likely to lag on a fixed 5-7yr horizon.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA 5.05%/yr (19 txns) discounted for building age and en-bloc speculation; not reliable for a fixed 5-7yr hold"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-windy-heights-500113556",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

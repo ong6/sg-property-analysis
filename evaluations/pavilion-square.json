@@ -1,0 +1,117 @@
+{
+  "condo": "Pavilion Square",
+  "slug": "pavilion-square",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 398 sqft 1BR shoebox (Pavilion Square, D14) 680m from Aljunied MRT at $629k / $1,580 psf — a very low entry quantum with a modest 3.3% CAGR. Affordable freehold city-fringe shoebox with decent transit, but tiny size and a niche 1BR exit cap it.",
+      "rating_rationale": "The low $629k quantum and freehold tenure make this an accessible city-fringe rental shoebox, and 680m to Aljunied EW9 supports tenant demand. But the psf ($1,580) is ~2% above the $1,552 URA median (no discount), the 398 sqft is a tight shoebox with a niche resale/exit pool, and the 3.3% CAGR (only 20 txns) is modest and not bankable. Yield is the draw, not appreciation — a balanced Neutral.",
+      "red_flags": [
+        "398 sqft shoebox — niche resale pool, exit depends on investors",
+        "PSF ~2% above URA median — no value cushion",
+        "3.3% CAGR on only 20 txns — modest and unreliable",
+        "Geylang/Aljunied perception sensitivity"
+      ],
+      "catalysts": [
+        "Freehold at a low $629k quantum — accessible entry",
+        "680m to Aljunied EW9 MRT",
+        "Paya Lebar Central transformation supporting the precinct"
+      ],
+      "as_of": {
+        "price": 629000,
+        "psf": 1580.4,
+        "beds": 1,
+        "sqft": 398.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 398 sqft 1BR shoebox (Pavilion Square, D14) 680m from Aljunied MRT at $629k / $1,580 psf — a very low entry quantum with a modest 3.3% CAGR. Affordable freehold city-fringe shoebox with decent transit, but tiny size and a niche 1BR exit cap it.",
+        "rating": "Neutral",
+        "rating_rationale": "The low $629k quantum and freehold tenure make this an accessible city-fringe rental shoebox, and 680m to Aljunied EW9 supports tenant demand. But the psf ($1,580) is ~2% above the $1,552 URA median (no discount), the 398 sqft is a tight shoebox with a niche resale/exit pool, and the 3.3% CAGR (only 20 txns) is modest and not bankable. Yield is the draw, not appreciation — a balanced Neutral.",
+        "red_flags": [
+          "398 sqft shoebox — niche resale pool, exit depends on investors",
+          "PSF ~2% above URA median — no value cushion",
+          "3.3% CAGR on only 20 txns — modest and unreliable",
+          "Geylang/Aljunied perception sensitivity"
+        ],
+        "catalysts": [
+          "Freehold at a low $629k quantum — accessible entry",
+          "680m to Aljunied EW9 MRT",
+          "Paya Lebar Central transformation supporting the precinct"
+        ],
+        "rental_assessment": "Shoeboxes near Aljunied MRT rent well to singles/young professionals; gross yield is the strongest metric here (~4%).",
+        "appreciation_assessment": "3.3% on 20 txns is modest; shoebox appreciation lags larger formats. This is a yield play, not a growth play.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pavilion-square-500062773",
+        "review_file": "cov_batch_21.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The -17.2% cheapness does not survive a transaction check — asking $1,580 psf is at-to-above the project's recent $1,380-1,632 psf range — and it carries a bedroom/sqft data flag on a tiny 398 sqft Geylang shoebox.",
+      "rating_rationale": "Pavilion Square's last-12-month transactions ran $1,380-1,632 psf (avg ~$1,530), so the $1,580 psf asking is roughly at market and above average, not the -17.2% age-adj discount the algo reports — the cheapness appears to be a scoring artifact rather than a verified bargain. The dossier also carries a bedroom_sqft_mismatch red flag and the cohort is thin (4 txns), further weakening the value read. It's a 398 sqft freehold shoebox in a 42-unit Geylang block (a vice-belt with mixed management/occupancy reviews); freehold is not a forward edge and D14 has no dated catalyst here. Score 1000=789 but the underlying value claim is unconfirmed.",
+      "red_flags": [
+        "Asking $1,580 psf is at/above the project's actual recent transaction range ($1,380-1,632) — discount not verified",
+        "bedroom_sqft_mismatch data flag plus only 4 cohort txns — value signal unreliable",
+        "398 sqft shoebox: most volatile, owner-occupier-thin segment with weak resale liquidity",
+        "Geylang vice-belt address; mixed reviews on management and occupancy can weigh on resale/rental"
+      ],
+      "catalysts": [
+        "Walkable to Aljunied/Dakota MRT and Paya Lebar Central regional hub",
+        "Low absolute quantum (~$629k) keeps the buyer pool wide for entry-level/rental investors"
+      ],
+      "as_of": {
+        "price": 629000,
+        "psf": 1580.4,
+        "beds": 1,
+        "sqft": 398
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The -17.2% cheapness does not survive a transaction check — asking $1,580 psf is at-to-above the project's recent $1,380-1,632 psf range — and it carries a bedroom/sqft data flag on a tiny 398 sqft Geylang shoebox.",
+        "rating_rationale": "Pavilion Square's last-12-month transactions ran $1,380-1,632 psf (avg ~$1,530), so the $1,580 psf asking is roughly at market and above average, not the -17.2% age-adj discount the algo reports — the cheapness appears to be a scoring artifact rather than a verified bargain. The dossier also carries a bedroom_sqft_mismatch red flag and the cohort is thin (4 txns), further weakening the value read. It's a 398 sqft freehold shoebox in a 42-unit Geylang block (a vice-belt with mixed management/occupancy reviews); freehold is not a forward edge and D14 has no dated catalyst here. Score 1000=789 but the underlying value claim is unconfirmed.",
+        "red_flags": [
+          "Asking $1,580 psf is at/above the project's actual recent transaction range ($1,380-1,632) — discount not verified",
+          "bedroom_sqft_mismatch data flag plus only 4 cohort txns — value signal unreliable",
+          "398 sqft shoebox: most volatile, owner-occupier-thin segment with weak resale liquidity",
+          "Geylang vice-belt address; mixed reviews on management and occupancy can weigh on resale/rental"
+        ],
+        "catalysts": [
+          "Walkable to Aljunied/Dakota MRT and Paya Lebar Central regional hub",
+          "Low absolute quantum (~$629k) keeps the buyer pool wide for entry-level/rental investors"
+        ],
+        "rental_assessment": "Shoebox near Aljunied/Paya Lebar rents to budget singles and yields decently on low quantum (~$3k/mo on a ~$629k entry), but Geylang tenant-quality and high shoebox supply cap pricing power.",
+        "appreciation_assessment": "No verified forward edge: priced at-to-above its own recent comps, with a low 3.3% trailing CAGR that has ~0 predictive power and no concrete catalyst — expect market-tracking at best."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pavilion-square-500062773",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

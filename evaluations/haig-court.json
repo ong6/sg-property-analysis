@@ -1,0 +1,65 @@
+{
+  "condo": "Haig Court",
+  "slug": "haig-court",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR at Haig Court (D15 East Coast) at $2.35M / $2184 PSF, with a strong 6.7%/yr URA appreciation rate on a moderate 41-txn series and a low technical score (433). Listing is ~3% above the $2126 district median; freehold tenure and the deep East Coast buyer pool support it, but the 2004 age, 950m MRT walk and weak Elo/score temper the case to Neutral.",
+      "rating_rationale": "Appreciation 6.7%/yr is the headline strength (41 txn — moderate reliability), and freehold D15 with deep buyer pool is structurally liquid. But score_1000 of 433 is well below market-typical (500), the unit is 22 years old, MRT is a 950m/11-min walk, and PSF sits ~3% over median with no fresh catalyst. Mixed signals net to Neutral.",
+      "red_flags": [
+        "Very low technical score (433) despite high Elo",
+        "2004 build — 22 years old, dated facilities",
+        "950m / 11-min walk to nearest MRT",
+        "41 txn — moderate, not high-confidence appreciation"
+      ],
+      "catalysts": [
+        "Freehold tenure in deep-buyer-pool D15 East Coast",
+        "6.7%/yr URA appreciation (resale-only)",
+        "Lifestyle district with durable owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 2184.01,
+        "beds": 2,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR at Haig Court (D15 East Coast) at $2.35M / $2184 PSF, with a strong 6.7%/yr URA appreciation rate on a moderate 41-txn series and a low technical score (433). Listing is ~3% above the $2126 district median; freehold tenure and the deep East Coast buyer pool support it, but the 2004 age, 950m MRT walk and weak Elo/score temper the case to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Appreciation 6.7%/yr is the headline strength (41 txn — moderate reliability), and freehold D15 with deep buyer pool is structurally liquid. But score_1000 of 433 is well below market-typical (500), the unit is 22 years old, MRT is a 950m/11-min walk, and PSF sits ~3% over median with no fresh catalyst. Mixed signals net to Neutral.",
+        "red_flags": [
+          "Very low technical score (433) despite high Elo",
+          "2004 build — 22 years old, dated facilities",
+          "950m / 11-min walk to nearest MRT",
+          "41 txn — moderate, not high-confidence appreciation"
+        ],
+        "catalysts": [
+          "Freehold tenure in deep-buyer-pool D15 East Coast",
+          "6.7%/yr URA appreciation (resale-only)",
+          "Lifestyle district with durable owner-occupier demand"
+        ],
+        "rental_assessment": "2BR freehold in East Coast rents well to professionals and expat couples; the 1076 sqft 2BR is generously sized and marketable. Yield modest at $2.35M but tenant demand is reliable.",
+        "appreciation_assessment": "6.7%/yr is attractive but rests on only 41 transactions and a 22-year-old freehold where much of the freehold premium is already priced in; treat the rate as plausible but not bankable.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only CAGR (41 txn) discounted for age and thin-ish series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-haig-court-60201130",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

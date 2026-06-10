@@ -1,0 +1,59 @@
+{
+  "condo": "Coastarina",
+  "slug": "coastarina",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "An 840 sqft \"3BR\" freehold in D15 East Coast (Coastarina, TOP 2006) at $1.8M / $2,143 PSF. The asking PSF is a striking ~16% above the $1,853 URA median, the layout is a squeezed 840 sqft 3BR, and the technical score (302) is near the bottom of the batch.",
+      "rating_rationale": "The pricing is the issue: $2,143 asking PSF stands ~16% above the $1,853 URA median (10 transactions) — a clear overpricing on a 2006 boutique-scale block. An 840 sqft 3BR is an unusually tight format that compresses the buyer pool, and the resale appreciation of 4.0%/yr is only district-typical. Lowest-cluster technical score (302) and a sub-.500 arena record (255-308) confirm weak relative value. The new Marine Terrace TEL station (~870m) is a modest long-term positive, but it does not justify paying a 16% premium over transacted PSF — avoid.",
+      "red_flags": [
+        "Asking $2,143 PSF is ~16% above $1,853 URA median — clearly overpriced",
+        "Squeezed 840 sqft 3BR layout limits buyer pool",
+        "Near-bottom technical score (302) and sub-.500 arena record",
+        "Only district-typical ~4%/yr appreciation despite the premium ask"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15 East Coast",
+        "New Marine Terrace TEL station ~870m improves long-term connectivity"
+      ],
+      "as_of": {
+        "price": 1799999,
+        "psf": 2142.86,
+        "beds": 3,
+        "sqft": 840.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An 840 sqft \"3BR\" freehold in D15 East Coast (Coastarina, TOP 2006) at $1.8M / $2,143 PSF. The asking PSF is a striking ~16% above the $1,853 URA median, the layout is a squeezed 840 sqft 3BR, and the technical score (302) is near the bottom of the batch.",
+        "rating": "Avoid",
+        "rating_rationale": "The pricing is the issue: $2,143 asking PSF stands ~16% above the $1,853 URA median (10 transactions) — a clear overpricing on a 2006 boutique-scale block. An 840 sqft 3BR is an unusually tight format that compresses the buyer pool, and the resale appreciation of 4.0%/yr is only district-typical. Lowest-cluster technical score (302) and a sub-.500 arena record (255-308) confirm weak relative value. The new Marine Terrace TEL station (~870m) is a modest long-term positive, but it does not justify paying a 16% premium over transacted PSF — avoid.",
+        "red_flags": [
+          "Asking $2,143 PSF is ~16% above $1,853 URA median — clearly overpriced",
+          "Squeezed 840 sqft 3BR layout limits buyer pool",
+          "Near-bottom technical score (302) and sub-.500 arena record",
+          "Only district-typical ~4%/yr appreciation despite the premium ask"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15 East Coast",
+          "New Marine Terrace TEL station ~870m improves long-term connectivity"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-coastarina-500132889",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

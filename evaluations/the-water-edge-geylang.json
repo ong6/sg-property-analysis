@@ -1,0 +1,117 @@
+{
+  "condo": "The Water Edge @ Geylang",
+  "slug": "the-water-edge-geylang",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 98-unit freehold boutique in Lorong 38 Geylang (D14), TOP 2013, listed as a '1BR' at 850 sqft / $1,117 psf — but the project's true 12-month resale average is ~$1,645 psf, so either the unit is oversized/mislabelled or the deep discount masks a problem. The score of 964 is inflated by the artificially low PSF.",
+      "rating_rationale": "The headline that drives the 964 score — $1,117 psf — is roughly 32% below the project's actual ~$1,645 psf 12-month resale average (per market data). An 850 sqft 'freehold 1BR' priced this far below market is a textbook oversized-unit-masquerading-as-cheap-PSF / mislabel case, or it reflects a defect/orientation/Geylang-locale stigma issue: D14 Lorong 38 sits in the Geylang red-light fringe, which carries real resale stigma and a narrower owner-occupier buyer pool. Add a 98-unit boutique (very shallow liquidity), no project URA series in the dossier, and a 780m MRT walk, and the investment case does not hold up. The score is a data artifact, not a signal — Avoid.",
+      "red_flags": [
+        "$1,117 psf is ~32% below the ~$1,645 psf actual resale average — oversized/mislabel or hidden defect",
+        "Very small 98-unit boutique — extremely shallow resale liquidity",
+        "Geylang (Lorong 38) red-light-fringe stigma narrows owner-occupier demand",
+        "No URA appreciation/transaction data in dossier to underwrite a rate"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "CC8 Dakota MRT and Geylang amenities within reach (rental support only)"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1117.65,
+        "beds": 1,
+        "sqft": 850.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 98-unit freehold boutique in Lorong 38 Geylang (D14), TOP 2013, listed as a '1BR' at 850 sqft / $1,117 psf — but the project's true 12-month resale average is ~$1,645 psf, so either the unit is oversized/mislabelled or the deep discount masks a problem. The score of 964 is inflated by the artificially low PSF.",
+        "rating": "Avoid",
+        "rating_rationale": "The headline that drives the 964 score — $1,117 psf — is roughly 32% below the project's actual ~$1,645 psf 12-month resale average (per market data). An 850 sqft 'freehold 1BR' priced this far below market is a textbook oversized-unit-masquerading-as-cheap-PSF / mislabel case, or it reflects a defect/orientation/Geylang-locale stigma issue: D14 Lorong 38 sits in the Geylang red-light fringe, which carries real resale stigma and a narrower owner-occupier buyer pool. Add a 98-unit boutique (very shallow liquidity), no project URA series in the dossier, and a 780m MRT walk, and the investment case does not hold up. The score is a data artifact, not a signal — Avoid.",
+        "red_flags": [
+          "$1,117 psf is ~32% below the ~$1,645 psf actual resale average — oversized/mislabel or hidden defect",
+          "Very small 98-unit boutique — extremely shallow resale liquidity",
+          "Geylang (Lorong 38) red-light-fringe stigma narrows owner-occupier demand",
+          "No URA appreciation/transaction data in dossier to underwrite a rate"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "CC8 Dakota MRT and Geylang amenities within reach (rental support only)"
+        ],
+        "rental_assessment": "Geylang has strong transient/rental demand and the area rents well, but the stigma caps owner-occupier resale; an investment here is a yield-only play with weak exit.",
+        "appreciation_assessment": "No reliable project series; boutique scale plus Geylang stigma point to below-average appreciation and a difficult resale exit.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-water-edge-geylang-500103946",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The $1,117.65psf sits BELOW the entire current PSF range ($1,118-$1,859, recent resales avg ~$1,645psf), and the 850sqft '1-bed' is implausible (real 1-beds are 388-495sqft). Either a mis-scrape or a very atypical large unit - the cheapness cannot be trusted on psf_cohort_txns=0.",
+      "rating_rationale": "The Water Edge is a 98-unit freehold (2014) where recent resales average ~$1,645 psf (12-mo range $1,524-$1,742; current listing range $1,118-$1,859), with strong rental activity (14 rentals vs 1 sale in last 6-12mo). This listing's $1,117.65 psf is literally at/below the floor of the entire current range, which is a red flag for a data quirk - and an 850sqft '1-bed' does not match the project's real 1-bed sizes (~388-495sqft). If genuinely an 850sqft unit at $1,117psf it would be a ~32% discount to the ~$1,645 average and a real bargain, but the -33.4% psf_premium_vs_cohort rests on 0 cohort txns and the sqft/bed combination is suspect. Maintenance fees are noted as high for limited facilities. D14/OCR region prior is favorable. The value case is potentially strong but entirely contingent on verifying the actual unit size/price - hence Neutral, low confidence.",
+      "red_flags": [
+        "$1,117.65psf is BELOW the project's entire current PSF range ($1,118-$1,859) - strong signal of a mis-scrape or atypical unit",
+        "850sqft labelled 1-bed vs real 1-bed sizes of 388-495sqft - sqft/bed mismatch",
+        "psf_cohort_txns=0: the -33.4% cohort discount has no real comparable",
+        "Reviews cite high maintenance fees for limited facilities and security issues",
+        "Only 1 sale txn in last 12 months - thin sale liquidity (rental-dominated)"
+      ],
+      "catalysts": [
+        "Freehold; near Dakota MRT (730m) and Paya Lebar MRT (810m)",
+        "Strong rental demand (14 rentals/6mo) supports yield; OCR-adjacent region prior favorable"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1117.65,
+        "beds": 1,
+        "sqft": 850
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The $1,117.65psf sits BELOW the entire current PSF range ($1,118-$1,859, recent resales avg ~$1,645psf), and the 850sqft '1-bed' is implausible (real 1-beds are 388-495sqft). Either a mis-scrape or a very atypical large unit - the cheapness cannot be trusted on psf_cohort_txns=0.",
+        "rating_rationale": "The Water Edge is a 98-unit freehold (2014) where recent resales average ~$1,645 psf (12-mo range $1,524-$1,742; current listing range $1,118-$1,859), with strong rental activity (14 rentals vs 1 sale in last 6-12mo). This listing's $1,117.65 psf is literally at/below the floor of the entire current range, which is a red flag for a data quirk - and an 850sqft '1-bed' does not match the project's real 1-bed sizes (~388-495sqft). If genuinely an 850sqft unit at $1,117psf it would be a ~32% discount to the ~$1,645 average and a real bargain, but the -33.4% psf_premium_vs_cohort rests on 0 cohort txns and the sqft/bed combination is suspect. Maintenance fees are noted as high for limited facilities. D14/OCR region prior is favorable. The value case is potentially strong but entirely contingent on verifying the actual unit size/price - hence Neutral, low confidence.",
+        "red_flags": [
+          "$1,117.65psf is BELOW the project's entire current PSF range ($1,118-$1,859) - strong signal of a mis-scrape or atypical unit",
+          "850sqft labelled 1-bed vs real 1-bed sizes of 388-495sqft - sqft/bed mismatch",
+          "psf_cohort_txns=0: the -33.4% cohort discount has no real comparable",
+          "Reviews cite high maintenance fees for limited facilities and security issues",
+          "Only 1 sale txn in last 12 months - thin sale liquidity (rental-dominated)"
+        ],
+        "catalysts": [
+          "Freehold; near Dakota MRT (730m) and Paya Lebar MRT (810m)",
+          "Strong rental demand (14 rentals/6mo) supports yield; OCR-adjacent region prior favorable"
+        ],
+        "rental_assessment": "Rental-dominated project (14 rentals vs 1 sale in 6mo) signals healthy tenant demand, supportive for a buy-to-let hold if the entry price is verified.",
+        "appreciation_assessment": "Project PSF +2.79% 2023-2025 (modest); 3.24% trailing CAGR on 20 txns. Flat momentum, no dated catalyst - do not extrapolate appreciation."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-water-edge-geylang-500103946",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

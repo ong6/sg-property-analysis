@@ -1,0 +1,115 @@
+{
+  "condo": "Ripple Bay",
+  "slug": "ripple-bay",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2,336 sqft 4BR at Pasir Ris (D18) for $2.98M — near the top of the price band where the buyer pool thins sharply, with no MRT walkable. Solid 5.81% appreciation on 211 txns and a below-median $1,276 psf are positives, but the quantum and far-flung location make exit risk the dominant concern.",
+      "rating_rationale": "Resale-only 5.81%/yr on 211 txns is genuinely strong and the $1,276 psf is ~11% under the $1,431 median, so on fundamentals it screens well. But $2.98M is right at the >$3M threshold where the buyer pool shrinks, this is a 2,336 sqft 4BR (family-only, niche), and the blank MRT field on a far-eastern Pasir Ris site means weak transit support. Tampines CRL/DTL and the broader east narrative help, but the quantum + exit-liquidity risk on a large OCR unit balances the strong appreciation to Neutral.",
+      "red_flags": [
+        "$2.98M at the edge of the >$3M illiquid zone for an OCR 4BR",
+        "No walkable MRT (blank mrt_info) — far Pasir Ris location",
+        "2,336 sqft 4BR = narrow family-only buyer pool, slow exit"
+      ],
+      "catalysts": [
+        "Resale-only 5.81%/yr on a deep 211-txn series — reliable and above OCR baseline",
+        "~11% below project median PSF",
+        "Pasir Ris/Tampines regional growth, CRL+DTL connectivity in the wider area"
+      ],
+      "as_of": {
+        "price": 2980000,
+        "psf": 1275.68,
+        "beds": 4,
+        "sqft": 2336.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2,336 sqft 4BR at Pasir Ris (D18) for $2.98M — near the top of the price band where the buyer pool thins sharply, with no MRT walkable. Solid 5.81% appreciation on 211 txns and a below-median $1,276 psf are positives, but the quantum and far-flung location make exit risk the dominant concern.",
+        "rating": "Neutral",
+        "rating_rationale": "Resale-only 5.81%/yr on 211 txns is genuinely strong and the $1,276 psf is ~11% under the $1,431 median, so on fundamentals it screens well. But $2.98M is right at the >$3M threshold where the buyer pool shrinks, this is a 2,336 sqft 4BR (family-only, niche), and the blank MRT field on a far-eastern Pasir Ris site means weak transit support. Tampines CRL/DTL and the broader east narrative help, but the quantum + exit-liquidity risk on a large OCR unit balances the strong appreciation to Neutral.",
+        "red_flags": [
+          "$2.98M at the edge of the >$3M illiquid zone for an OCR 4BR",
+          "No walkable MRT (blank mrt_info) — far Pasir Ris location",
+          "2,336 sqft 4BR = narrow family-only buyer pool, slow exit"
+        ],
+        "catalysts": [
+          "Resale-only 5.81%/yr on a deep 211-txn series — reliable and above OCR baseline",
+          "~11% below project median PSF",
+          "Pasir Ris/Tampines regional growth, CRL+DTL connectivity in the wider area"
+        ],
+        "rental_assessment": "Large 4BR in far-east Pasir Ris draws a shallow family tenant pool; yield weak against the $2.98M quantum.",
+        "appreciation_assessment": "5.81% resale-only is strong and reliable, but high quantum and poor transit cap how much of that re-rates over a 5–7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ripple-bay-500097687",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Modestly cheap OCR 1BR in Pasir Ris with a real but distance-limited CRL catalyst. Asking $1,365 psf is below the ~$1,432 12-mo average, region is favourable, but the nearest MRT is far and finishing reviews are mixed.",
+      "rating_rationale": "Asking $1,365 psf vs a verified 12-mo project average ~$1,432 psf (range $1,223-$1,721) is a genuine ~5% discount, supported by age_adj_premium -11.3% and psf_premium_vs_cohort -2.8% on a respectable base (appreciation_txns=211, psf_cohort_txns=25). OCR aligns with the strongest v3.4 forward bracket. The Pasir Ris East CRL station (CR2-area, ~2030) is a confirmed catalyst for the broader area. The discount is modest rather than dramatic, the current nearest MRT (Pasir Ris EW1) is ~22-min walk, and resident reviews flag weak interior finishing — so this is a value-plus-catalyst Buy, not a Strong Buy. Lower confidence than Affinity because the cheapness margin is smaller and the catalyst is less proximate.",
+      "red_flags": [
+        "Nearest existing MRT (Pasir Ris EW1) ~22-min walk — poor current connectivity",
+        "Resident reviews describe interior finishing as poor/impractical",
+        "Discount to cohort is only ~5% — modest margin of safety"
+      ],
+      "catalysts": [
+        "Pasir Ris East MRT (Cross-Island Line), targeted ~2030 — area connectivity uplift",
+        "OCR location aligns with v3.4 best-realized-forward-return bracket",
+        "Sub-$840k entry in the far east keeps the price accessible for resale and rental"
+      ],
+      "as_of": {
+        "price": 838000,
+        "psf": 1364.82,
+        "beds": 1,
+        "sqft": 614
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Modestly cheap OCR 1BR in Pasir Ris with a real but distance-limited CRL catalyst. Asking $1,365 psf is below the ~$1,432 12-mo average, region is favourable, but the nearest MRT is far and finishing reviews are mixed.",
+        "rating_rationale": "Asking $1,365 psf vs a verified 12-mo project average ~$1,432 psf (range $1,223-$1,721) is a genuine ~5% discount, supported by age_adj_premium -11.3% and psf_premium_vs_cohort -2.8% on a respectable base (appreciation_txns=211, psf_cohort_txns=25). OCR aligns with the strongest v3.4 forward bracket. The Pasir Ris East CRL station (CR2-area, ~2030) is a confirmed catalyst for the broader area. The discount is modest rather than dramatic, the current nearest MRT (Pasir Ris EW1) is ~22-min walk, and resident reviews flag weak interior finishing — so this is a value-plus-catalyst Buy, not a Strong Buy. Lower confidence than Affinity because the cheapness margin is smaller and the catalyst is less proximate.",
+        "red_flags": [
+          "Nearest existing MRT (Pasir Ris EW1) ~22-min walk — poor current connectivity",
+          "Resident reviews describe interior finishing as poor/impractical",
+          "Discount to cohort is only ~5% — modest margin of safety"
+        ],
+        "catalysts": [
+          "Pasir Ris East MRT (Cross-Island Line), targeted ~2030 — area connectivity uplift",
+          "OCR location aligns with v3.4 best-realized-forward-return bracket",
+          "Sub-$840k entry in the far east keeps the price accessible for resale and rental"
+        ],
+        "rental_assessment": "Pasir Ris draws Changi/Loyang industrial and airport tenants; a 614sqft 1BR under $840k should achieve a sound gross yield, though the distance to MRT caps tenant pool until CRL opens.",
+        "appreciation_assessment": "Trailing 5.81% CAGR (211 txns) is healthy but I treat it as story not forward guarantee. The forward thesis leans on the modest verified discount and the 2030 CRL re-rating; both credible but less decisive than a 4-min-walk catalyst."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ripple-bay-60219768",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

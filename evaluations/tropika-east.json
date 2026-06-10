@@ -1,0 +1,115 @@
+{
+  "condo": "Tropika East",
+  "slug": "tropika-east",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR (840 sqft) in a small D14 development near Kaki Bukit, priced at $1,583 psf, above the $1,526 URA median. Freehold tenure is a plus but appreciation is anaemic at 1.4%/yr on a thin 25-txn series and the MRT is a 11-min walk.",
+      "rating_rationale": "Freehold and a liquid $1.33M quantum are the positives, but the appreciation case is weak: 1.4%/yr resale CAGR on only 25 txns, priced ~4% above the $1,526 median, and a sub-par 11-min walk to Kaki Bukit DTL. Score 570 (~market-typical). Paya Lebar Central is too far to be a direct catalyst here.",
+      "red_flags": [
+        "Very weak 1.4%/yr appreciation on thin 25-txn data",
+        "Priced above URA median PSF",
+        "960m to MRT is below the prime catchment threshold"
+      ],
+      "catalysts": [
+        "Freehold tenure provides downside protection on resale",
+        "Broader D14 rejuvenation around Paya Lebar (indirect)"
+      ],
+      "as_of": {
+        "price": 1330000,
+        "psf": 1583.33,
+        "beds": 2,
+        "sqft": 840.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR (840 sqft) in a small D14 development near Kaki Bukit, priced at $1,583 psf, above the $1,526 URA median. Freehold tenure is a plus but appreciation is anaemic at 1.4%/yr on a thin 25-txn series and the MRT is a 11-min walk.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a liquid $1.33M quantum are the positives, but the appreciation case is weak: 1.4%/yr resale CAGR on only 25 txns, priced ~4% above the $1,526 median, and a sub-par 11-min walk to Kaki Bukit DTL. Score 570 (~market-typical). Paya Lebar Central is too far to be a direct catalyst here.",
+        "red_flags": [
+          "Very weak 1.4%/yr appreciation on thin 25-txn data",
+          "Priced above URA median PSF",
+          "960m to MRT is below the prime catchment threshold"
+        ],
+        "catalysts": [
+          "Freehold tenure provides downside protection on resale",
+          "Broader D14 rejuvenation around Paya Lebar (indirect)"
+        ],
+        "rental_assessment": "2BR has the widest tenant pool, but Kaki Bukit is an industrial-adjacent pocket with moderate residential rental demand.",
+        "appreciation_assessment": "Flat trajectory — 1.4%/yr resale on 25 txns is below even OCR baselines; freehold cushions downside but offers little upside spark.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "URA resale 1.4%/yr on thin 25 txns; modest FH support"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tropika-east-500087191",
+        "review_file": "cov_batch_19.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR shoebox (527sqft) at a small FH project off Foo Kim Lin Rd (Eunos/Kaki Bukit, near Ubi/Kaki Bukit DT MRT). Asking $1,670 psf sits near the TOP of the project's actual recent shoebox range, not the bargain the algo implies.",
+      "rating_rationale": "The algo flags this as cheap (age_adj_premium -12.5%, score 713), but that rests on a single comparable (psf_cohort_txns=1) and is contradicted by real transactions: the last-12-month range is $1,298-$1,699 psf (avg ~$1,555), with the $1,699 high set by a tiny 441sqft unit. At $1,670 psf this 527sqft unit is asking near the ceiling, so the 'cheapness' is a thin-data quirk, not verified value. Positives are real: freehold, a deep rental record (387 rental txns vs 36 sales since 2016) supporting decent shoebox yield, and District 14 sits in the favorable RCR/OCR forward band. But trailing appreciation is flat (1.37% CAGR over 25 txns, ~0 forward power) with no dated catalyst, and the price gives no margin of safety. Near-fair, not a buy.",
+      "red_flags": [
+        "Asking $1,670 psf is at the top of the actual recent transacted range ($1,298-$1,699, avg ~$1,555)",
+        "psf_cohort_txns=1 — the -12.5% age-adjusted 'cheap' signal rests on a single comparable (data quirk)",
+        "Project is dominated by 3BR/5BR units; 1BR shoebox is a thin, illiquid sub-segment here",
+        "Flat trailing appreciation (1.37% CAGR) with no identified forward catalyst"
+      ],
+      "catalysts": [
+        "Freehold tenure with strong proven rental demand (387 rental transactions)",
+        "Walkable to Kaki Bukit / Ubi Downtown Line MRT stations"
+      ],
+      "as_of": {
+        "price": 880000,
+        "psf": 1669.83,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 1BR shoebox (527sqft) at a small FH project off Foo Kim Lin Rd (Eunos/Kaki Bukit, near Ubi/Kaki Bukit DT MRT). Asking $1,670 psf sits near the TOP of the project's actual recent shoebox range, not the bargain the algo implies.",
+        "rating_rationale": "The algo flags this as cheap (age_adj_premium -12.5%, score 713), but that rests on a single comparable (psf_cohort_txns=1) and is contradicted by real transactions: the last-12-month range is $1,298-$1,699 psf (avg ~$1,555), with the $1,699 high set by a tiny 441sqft unit. At $1,670 psf this 527sqft unit is asking near the ceiling, so the 'cheapness' is a thin-data quirk, not verified value. Positives are real: freehold, a deep rental record (387 rental txns vs 36 sales since 2016) supporting decent shoebox yield, and District 14 sits in the favorable RCR/OCR forward band. But trailing appreciation is flat (1.37% CAGR over 25 txns, ~0 forward power) with no dated catalyst, and the price gives no margin of safety. Near-fair, not a buy.",
+        "red_flags": [
+          "Asking $1,670 psf is at the top of the actual recent transacted range ($1,298-$1,699, avg ~$1,555)",
+          "psf_cohort_txns=1 — the -12.5% age-adjusted 'cheap' signal rests on a single comparable (data quirk)",
+          "Project is dominated by 3BR/5BR units; 1BR shoebox is a thin, illiquid sub-segment here",
+          "Flat trailing appreciation (1.37% CAGR) with no identified forward catalyst"
+        ],
+        "catalysts": [
+          "Freehold tenure with strong proven rental demand (387 rental transactions)",
+          "Walkable to Kaki Bukit / Ubi Downtown Line MRT stations"
+        ],
+        "appreciation_assessment": "1.37% 5yr URA CAGR on 25 txns — weak and, per v3.4 priors, ~0 forward predictive power. No dated MRT/zone/en-bloc catalyst to lift the forward rate.",
+        "rental_assessment": "Strong rental backbone (387 rentals) typical of a shoebox-friendly D14 location near DTL; supports a respectable gross yield (~4%+), the main investment case here."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tropika-east-60223509",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

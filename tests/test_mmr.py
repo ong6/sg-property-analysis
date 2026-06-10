@@ -1,7 +1,7 @@
 """Tests for the MMR scoring system (v3)."""
 
 from scoring.full_scorer import FullScorer
-from scoring.mmr import compute_mmr, normalize_mmr, apply_appreciation_override
+from scoring.mmr import normalize_mmr, apply_appreciation_override
 
 
 def _score(listing, ura=None):

@@ -1,0 +1,63 @@
+{
+  "condo": "Palm Gardens",
+  "slug": "palm-gardens",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Efficiently sized 1,216sqft 4BR in Choa Chu Kang (D23) at just $1.26M and $1,036 PSF (below the $1,062 median), with a strong 6.37%/yr resale CAGR over 138 transactions and 220m to Keat Hong LRT. The highest arena Elo in the batch (2037) — a low-quantum, high-liquidity family unit.",
+      "rating_rationale": "This is a rare cheap-and-genuine 4BR: $1.26M absolute is far below the band-ceiling so the upgrader buyer pool is very deep, PSF 1036 is at/under the 1062 median, and 6.37%/yr over 138 txns is reliable. 220m to Keat Hong LRT (links to NSL at Choa Chu Kang) is convenient. Built 2000 (99LH, ~73yr remaining) is the main caveat — lease decay matters over a long hold — but the value, liquidity and demonstrated appreciation are clearly positive. Top arena performer (Elo 2037, 379-39-0) corroborates.",
+      "red_flags": [
+        "Built 2000 — 99LH with ~73yr remaining, lease decay over a 5-7yr hold and beyond",
+        "D23 Choa Chu Kang is deep OCR — appreciation depends on broad market, fewer project-specific catalysts",
+        "LRT (not MRT) for the immediate connection"
+      ],
+      "catalysts": [
+        "6.37%/yr reliable resale appreciation (138 txns) above OCR baseline",
+        "$1.26M low quantum = very deep upgrader buyer pool and easy exit",
+        "220m to Keat Hong LRT feeding Choa Chu Kang NSL interchange",
+        "Efficient 4BR sizing keeps PSF honest"
+      ],
+      "as_of": {
+        "price": 1260000,
+        "psf": 1036.18,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Efficiently sized 1,216sqft 4BR in Choa Chu Kang (D23) at just $1.26M and $1,036 PSF (below the $1,062 median), with a strong 6.37%/yr resale CAGR over 138 transactions and 220m to Keat Hong LRT. The highest arena Elo in the batch (2037) — a low-quantum, high-liquidity family unit.",
+        "rating": "Buy",
+        "rating_rationale": "This is a rare cheap-and-genuine 4BR: $1.26M absolute is far below the band-ceiling so the upgrader buyer pool is very deep, PSF 1036 is at/under the 1062 median, and 6.37%/yr over 138 txns is reliable. 220m to Keat Hong LRT (links to NSL at Choa Chu Kang) is convenient. Built 2000 (99LH, ~73yr remaining) is the main caveat — lease decay matters over a long hold — but the value, liquidity and demonstrated appreciation are clearly positive. Top arena performer (Elo 2037, 379-39-0) corroborates.",
+        "red_flags": [
+          "Built 2000 — 99LH with ~73yr remaining, lease decay over a 5-7yr hold and beyond",
+          "D23 Choa Chu Kang is deep OCR — appreciation depends on broad market, fewer project-specific catalysts",
+          "LRT (not MRT) for the immediate connection"
+        ],
+        "catalysts": [
+          "6.37%/yr reliable resale appreciation (138 txns) above OCR baseline",
+          "$1.26M low quantum = very deep upgrader buyer pool and easy exit",
+          "220m to Keat Hong LRT feeding Choa Chu Kang NSL interchange",
+          "Efficient 4BR sizing keeps PSF honest"
+        ],
+        "rental_assessment": "CCK family rental demand is steady but yields are average for the region; the case here is low-quantum appreciation and liquidity rather than yield.",
+        "appreciation_assessment": "6.37%/yr over 138 resale transactions is strong and reliable; the lease age is the offsetting drag, but value entry below median PSF supports continued gains.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-gardens-500128846",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

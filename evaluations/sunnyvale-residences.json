@@ -1,0 +1,61 @@
+{
+  "condo": "Sunnyvale Residences",
+  "slug": "sunnyvale-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A freehold 1,119 sqft 4BR (built 2018) at $2.28M / $2,038 PSF in D15, 900m from Kembangan MRT. Only 3 URA transactions exist — a boutique development with essentially no liquidity signal — and a compact 1,119 sqft for a 4BR points to small bedrooms with limited family appeal.",
+      "rating_rationale": "3 URA txns means no usable appreciation rate, no reliable median and a near-untradeable resale history — exit risk is the dominant concern. $2,038 PSF for a tight 1,119 sqft 4BR is a compressed layout that neither family buyers nor investors prize, and the 900m walk to Kembangan is mediocre. The high Elo masks the thin underlying data.",
+      "red_flags": [
+        "Only 3 URA txns — no usable appreciation/median, near-untradeable resale market",
+        "1,119 sqft 4BR is cramped — small bedrooms, weak family appeal at $2.28M",
+        "900m to MRT — mediocre transit for the quantum"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D15 East Coast",
+        "Relatively new (2018) build — modern facilities"
+      ],
+      "as_of": {
+        "price": 2280000,
+        "psf": 2037.53,
+        "beds": 4,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,119 sqft 4BR (built 2018) at $2.28M / $2,038 PSF in D15, 900m from Kembangan MRT. Only 3 URA transactions exist — a boutique development with essentially no liquidity signal — and a compact 1,119 sqft for a 4BR points to small bedrooms with limited family appeal.",
+        "rating": "Avoid",
+        "rating_rationale": "3 URA txns means no usable appreciation rate, no reliable median and a near-untradeable resale history — exit risk is the dominant concern. $2,038 PSF for a tight 1,119 sqft 4BR is a compressed layout that neither family buyers nor investors prize, and the 900m walk to Kembangan is mediocre. The high Elo masks the thin underlying data.",
+        "red_flags": [
+          "Only 3 URA txns — no usable appreciation/median, near-untradeable resale market",
+          "1,119 sqft 4BR is cramped — small bedrooms, weak family appeal at $2.28M",
+          "900m to MRT — mediocre transit for the quantum"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D15 East Coast",
+          "Relatively new (2018) build — modern facilities"
+        ],
+        "rental_assessment": "A compact 4BR at $2.28M yields poorly (~3%) and competes against better-laid-out stock; tenant appeal is limited by the squeezed layout.",
+        "appreciation_assessment": "Unverifiable — 3 txns. Boutique freehold here is illiquid; I assume district-typical at best with real exit risk.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D15 baseline — only 3 txns, no project-specific rate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sunnyvale-residences-500136254",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

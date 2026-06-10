@@ -1,0 +1,63 @@
+{
+  "condo": "Clavon",
+  "slug": "clavon",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A recently-completed (2024) 1BR in Clavon, D05 Clementi/West Coast, near the future Clementi CRL station (670m) at $1100k / $2087 psf — about 3% below the $2160 median, with a reliable 4.3% resale CAGR over 281 transactions. Strong One-North/Clementi tenant location with a genuine future-MRT catalyst.",
+      "rating_rationale": "D05 has real demand drivers: One-North tech cluster, NUS/Clementi, and the upcoming Cross Island Line at Clementi (CR17, ~670m) — a 500m-ish future-MRT uplift candidate. $2087 psf is ~3% under median, the resale-only 4.3% (well above the OCR baseline) is reliable over 281 txns, and $1.1M is liquid. 1BR is investor-niche and the resale-vs-new-launch-biased headline (5.6%) is correctly discounted to 4.3%, but fundamentals and the CRL catalyst support a Buy.",
+      "red_flags": [
+        "1BR investor-niche format",
+        "99yr leasehold from 2024 — new lease but still leasehold at a high PSF",
+        "Headline 5.6% carries new-launch bias; trust the 4.3% resale figure"
+      ],
+      "catalysts": [
+        "Cross Island Line CR17 Clementi station (~670m) — future-MRT uplift",
+        "One-North tech cluster + NUS/Clementi tenant demand in D05 RCR",
+        "Reliable 4.3% resale CAGR (281 txns), ~3% below project median"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 2087.29,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A recently-completed (2024) 1BR in Clavon, D05 Clementi/West Coast, near the future Clementi CRL station (670m) at $1100k / $2087 psf — about 3% below the $2160 median, with a reliable 4.3% resale CAGR over 281 transactions. Strong One-North/Clementi tenant location with a genuine future-MRT catalyst.",
+        "rating": "Buy",
+        "rating_rationale": "D05 has real demand drivers: One-North tech cluster, NUS/Clementi, and the upcoming Cross Island Line at Clementi (CR17, ~670m) — a 500m-ish future-MRT uplift candidate. $2087 psf is ~3% under median, the resale-only 4.3% (well above the OCR baseline) is reliable over 281 txns, and $1.1M is liquid. 1BR is investor-niche and the resale-vs-new-launch-biased headline (5.6%) is correctly discounted to 4.3%, but fundamentals and the CRL catalyst support a Buy.",
+        "red_flags": [
+          "1BR investor-niche format",
+          "99yr leasehold from 2024 — new lease but still leasehold at a high PSF",
+          "Headline 5.6% carries new-launch bias; trust the 4.3% resale figure"
+        ],
+        "catalysts": [
+          "Cross Island Line CR17 Clementi station (~670m) — future-MRT uplift",
+          "One-North tech cluster + NUS/Clementi tenant demand in D05 RCR",
+          "Reliable 4.3% resale CAGR (281 txns), ~3% below project median"
+        ],
+        "rental_assessment": "Strong for a 1BR — Clementi/One-North/NUS draws a deep professional and student-adjacent tenant pool; new (2024) unit commands fresh-condo rent.",
+        "appreciation_assessment": "4.3% resale-only over 281 txns is reliable and above OCR baseline; the CRL Clementi station adds upside on a 5-7yr horizon. Use 4.3%, not the bias-inflated 5.6%.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.3,
+        "appreciation_rate_source": "URA resale-only, 281 txns (new-launch bias removed)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-clavon-60094389",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

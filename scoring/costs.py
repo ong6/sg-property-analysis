@@ -2,7 +2,6 @@
 
 import json
 import os
-from dataclasses import dataclass
 from typing import Optional
 
 from scoring.models import CostBreakdown
@@ -131,16 +130,17 @@ class CostCalculator:
         """
         Calculate annual property tax based on Annual Value (AV).
 
-        Non-owner-occupied (investment) rates:
+        Non-owner-occupied (investment) rates — IRAS schedule effective 1 Jan 2024
+        (top marginal rate raised to 36%; last_verified 2026-06, CONFIRM at
+        https://www.iras.gov.sg/taxes/property-tax/ as bands are revised yearly):
         - First $30,000: 12%
-        - Next $15,000 ($30k-$45k): 14%
-        - Next $15,000 ($45k-$60k): 16%
-        - Next $25,000 ($60k-$85k): 18%
-        - Next $15,000 ($85k-$100k): 20%
-        - Next $30,000 ($100k-$130k): 22%
-        - Above $130,000: 24%
+        - Next $15,000 ($30k-$45k): 20%
+        - Next $15,000 ($45k-$60k): 28%
+        - Above $60,000: 36%
 
-        Owner-occupied rates are lower (not implemented as this is for investment).
+        v3.4: was a stale 7-band schedule capping at 24% — it understated tax on
+        higher-AV (high-rent) units by up to 12 percentage points, overstating their
+        net yield. Owner-occupied rates are lower (kept simplified; investment focus).
         """
         if is_owner_occupied:
             # Simplified owner-occupied rates
@@ -151,18 +151,15 @@ class CostCalculator:
             else:
                 return 1_880 + (annual_value - 55_000) * 0.06
 
-        # Non-owner-occupied rates
+        # Non-owner-occupied rates (IRAS 2024+; top 36%)
         tax = 0.0
         remaining = annual_value
 
         brackets = [
             (30_000, 0.12),
-            (15_000, 0.14),
-            (15_000, 0.16),
-            (25_000, 0.18),
             (15_000, 0.20),
-            (30_000, 0.22),
-            (float("inf"), 0.24),
+            (15_000, 0.28),
+            (float("inf"), 0.36),
         ]
 
         for bracket_size, rate in brackets:
@@ -271,14 +268,3 @@ class CostCalculator:
             agent_sale_commission=exit_costs["agent_commission"],
             legal_fee_sell=exit_costs["legal_fee"],
         )
-
-
-# Convenience functions
-def calculate_bsd(price: int) -> int:
-    """Calculate BSD for a given price."""
-    return CostCalculator().calculate_bsd(price)
-
-
-def calculate_property_tax(annual_value: float) -> float:
-    """Calculate property tax for a given annual value."""
-    return CostCalculator().calculate_property_tax(annual_value)

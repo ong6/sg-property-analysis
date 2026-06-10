@@ -1,0 +1,63 @@
+{
+  "condo": "Faber Residence",
+  "slug": "faber-residence",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Faber Residence is a GuocoLand-led 399-unit new launch (TOP Q1 2029) at Faber Walk, Clementi (D05), 99-year leasehold. This 4BR at $2,114 psf is below the project's $2,240 median and below Clementi's 2025 new-launch average, but the project has a key weakness — no MRT within walking distance — and the appreciation data carries new-launch bias.",
+      "rating_rationale": "Web research confirms a credible new launch: reputable developer (GuocoLand/Hong Leong/TID), 399 units, TOP Q1 2029, launched from $1,995 psf and positioned ~20% below Clementi's 2025 new-launch average — a deliberate value play. This 4BR at $2,114 psf / $2.55M sits below the $2,240 project median, and at 1,206 sqft is an efficiently sized 4BR (not oversized), so the quantum is reasonable for a family unit. D05 is a genuine RCR growth district (One-North, future GSW spillover). The offsetting concerns: (1) no MRT within walking distance — the project's well-documented weakness, capping appreciation and rental appeal versus MRT-adjacent Clementi stock; (2) has_new_launch_bias is true, so the $2,240 'median' reflects developer pricing, not seasoned resale — there is no resale track record to underwrite; (3) buyers face holding through construction to 2029 before the hold clock effectively starts. A fairly priced new launch in a good district with a real transport gap — Neutral.",
+      "red_flags": [
+        "No MRT within walking distance — the project's primary weakness",
+        "New-launch pricing bias — no resale track record; $2,240 'median' is developer pricing",
+        "Long runway to TOP Q1 2029 before resale/rental can be realized",
+        "99-year leasehold"
+      ],
+      "catalysts": [
+        "Reputable GuocoLand-led consortium; priced ~20% below Clementi 2025 new-launch average — value entry",
+        "D05 RCR growth (One-North tech hub, West Coast corridor)",
+        "Riverfront (Ulu Pandan) low-rise setting, scarce new stock in Faber Hills"
+      ],
+      "as_of": {
+        "price": 2550000,
+        "psf": 2114.43,
+        "beds": 4,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Faber Residence is a GuocoLand-led 399-unit new launch (TOP Q1 2029) at Faber Walk, Clementi (D05), 99-year leasehold. This 4BR at $2,114 psf is below the project's $2,240 median and below Clementi's 2025 new-launch average, but the project has a key weakness — no MRT within walking distance — and the appreciation data carries new-launch bias.",
+        "rating": "Neutral",
+        "rating_rationale": "Web research confirms a credible new launch: reputable developer (GuocoLand/Hong Leong/TID), 399 units, TOP Q1 2029, launched from $1,995 psf and positioned ~20% below Clementi's 2025 new-launch average — a deliberate value play. This 4BR at $2,114 psf / $2.55M sits below the $2,240 project median, and at 1,206 sqft is an efficiently sized 4BR (not oversized), so the quantum is reasonable for a family unit. D05 is a genuine RCR growth district (One-North, future GSW spillover). The offsetting concerns: (1) no MRT within walking distance — the project's well-documented weakness, capping appreciation and rental appeal versus MRT-adjacent Clementi stock; (2) has_new_launch_bias is true, so the $2,240 'median' reflects developer pricing, not seasoned resale — there is no resale track record to underwrite; (3) buyers face holding through construction to 2029 before the hold clock effectively starts. A fairly priced new launch in a good district with a real transport gap — Neutral.",
+        "red_flags": [
+          "No MRT within walking distance — the project's primary weakness",
+          "New-launch pricing bias — no resale track record; $2,240 'median' is developer pricing",
+          "Long runway to TOP Q1 2029 before resale/rental can be realized",
+          "99-year leasehold"
+        ],
+        "catalysts": [
+          "Reputable GuocoLand-led consortium; priced ~20% below Clementi 2025 new-launch average — value entry",
+          "D05 RCR growth (One-North tech hub, West Coast corridor)",
+          "Riverfront (Ulu Pandan) low-rise setting, scarce new stock in Faber Hills"
+        ],
+        "rental_assessment": "Clementi/One-North draws strong tenant demand, but the no-MRT location is a real handicap for tenants; rental upside is moderate, not strong.",
+        "appreciation_assessment": "Cannot rely on the biased new-launch figure; value entry below Clementi new-launch average gives some upside, but the transport gap and leasehold cap it to district-typical.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-faber-residence-500053616",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Tresalveo",
+  "slug": "tresalveo",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 592 sqft freehold 1BR in D20 (Bishan/Marymount) at $1.22M ($2,061 PSF). Despite a strong-looking 6.8%/yr URA rate, the very weak arena record (95-220, elo 868) and a $1.22M one-bedder at $2,061 PSF flag this as an expensive, niche unit with a shallow exit pool.",
+      "rating_rationale": "$2,061 PSF for a 1BR is high even for freehold D20, and $1.22M is a lot to pay for a single-bedroom in a non-prime location 930m (11-min walk) from Marymount MRT. The 6.8%/yr rate rests on only 17 transactions and equals the project median PSF — no discount on offer. The arena's brutal 95-220 record and 868 elo reflect poor relative value; this is a price-taker, not a deal. Niche 1BR buyer pool plus full-price entry = weak exit risk.",
+      "red_flags": [
+        "$2,061 PSF for a 1BR is expensive for non-prime D20",
+        "Worst arena record in batch (95-220, elo 868)",
+        "Only 17 URA txns; rate not robust",
+        "11-min walk to MRT; 1BR has the shallowest buyer pool"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Bishan/Thomson area has good schools and amenities"
+      ],
+      "as_of": {
+        "price": 1220000,
+        "psf": 2060.81,
+        "beds": 1,
+        "sqft": 592.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 592 sqft freehold 1BR in D20 (Bishan/Marymount) at $1.22M ($2,061 PSF). Despite a strong-looking 6.8%/yr URA rate, the very weak arena record (95-220, elo 868) and a $1.22M one-bedder at $2,061 PSF flag this as an expensive, niche unit with a shallow exit pool.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,061 PSF for a 1BR is high even for freehold D20, and $1.22M is a lot to pay for a single-bedroom in a non-prime location 930m (11-min walk) from Marymount MRT. The 6.8%/yr rate rests on only 17 transactions and equals the project median PSF — no discount on offer. The arena's brutal 95-220 record and 868 elo reflect poor relative value; this is a price-taker, not a deal. Niche 1BR buyer pool plus full-price entry = weak exit risk.",
+        "red_flags": [
+          "$2,061 PSF for a 1BR is expensive for non-prime D20",
+          "Worst arena record in batch (95-220, elo 868)",
+          "Only 17 URA txns; rate not robust",
+          "11-min walk to MRT; 1BR has the shallowest buyer pool"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Bishan/Thomson area has good schools and amenities"
+        ],
+        "rental_assessment": "1BR in Bishan/Marymount has some tenant demand but $1.22M entry depresses yield to ~3% or below; not a yield play.",
+        "appreciation_assessment": "Headline 6.8%/yr is thin-data and not reflected in any pricing discount (listed at median PSF). Paying full freight on an overpriced 1BR caps realistic upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tresalveo-500117188",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

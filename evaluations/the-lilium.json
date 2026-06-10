@@ -1,0 +1,63 @@
+{
+  "condo": "The Lilium",
+  "slug": "the-lilium",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 710 sqft freehold 2BR at The Lilium (2022) in D19 Bartley at $1.528M ($2,152 PSF), 670m from Bartley CC12 MRT. Freehold, new-ish, MRT-walkable and the widest 2BR tenant pool — but $2,152 PSF is full freehold-launch pricing with new-launch bias flagged.",
+      "rating_rationale": "Solid fundamentals: freehold tenure, 2022 build, 670m to Bartley MRT (CC line), efficient 2BR with deep rental demand, and a healthy 72-txn base. The catch is price — $2,152 PSF reflects new-launch pricing (bias flagged), so the buyer enters near peak with limited near-term upside. $1.528M is in the liquid band. A fair, defensible Neutral: good asset, fully-priced entry.",
+      "red_flags": [
+        "$2,152 PSF is full freehold new-launch pricing; bias flagged",
+        "Bought near launch peak — limited near-term capital headroom",
+        "Bartley is a quieter D19 pocket vs prime catalysts"
+      ],
+      "catalysts": [
+        "Freehold tenure in D19 city-fringe",
+        "670m to Bartley CC12 MRT (Circle Line)",
+        "Efficient 2BR — widest tenant pool and resale buyer base",
+        "2022 build — minimal capex needs"
+      ],
+      "as_of": {
+        "price": 1528000,
+        "psf": 2152.11,
+        "beds": 2,
+        "sqft": 710.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 710 sqft freehold 2BR at The Lilium (2022) in D19 Bartley at $1.528M ($2,152 PSF), 670m from Bartley CC12 MRT. Freehold, new-ish, MRT-walkable and the widest 2BR tenant pool — but $2,152 PSF is full freehold-launch pricing with new-launch bias flagged.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid fundamentals: freehold tenure, 2022 build, 670m to Bartley MRT (CC line), efficient 2BR with deep rental demand, and a healthy 72-txn base. The catch is price — $2,152 PSF reflects new-launch pricing (bias flagged), so the buyer enters near peak with limited near-term upside. $1.528M is in the liquid band. A fair, defensible Neutral: good asset, fully-priced entry.",
+        "red_flags": [
+          "$2,152 PSF is full freehold new-launch pricing; bias flagged",
+          "Bought near launch peak — limited near-term capital headroom",
+          "Bartley is a quieter D19 pocket vs prime catalysts"
+        ],
+        "catalysts": [
+          "Freehold tenure in D19 city-fringe",
+          "670m to Bartley CC12 MRT (Circle Line)",
+          "Efficient 2BR — widest tenant pool and resale buyer base",
+          "2022 build — minimal capex needs"
+        ],
+        "rental_assessment": "Good — new freehold 2BR near Bartley MRT rents readily to professionals; yield ~3-3.5% on the $1.528M base, one of the steadier rental cases in the batch.",
+        "appreciation_assessment": "Freehold + Circle Line access supports durable value, but entry at new-launch PSF means appreciation is back-loaded; expect market-tracking over the hold rather than outperformance.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-lilium-500050174",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

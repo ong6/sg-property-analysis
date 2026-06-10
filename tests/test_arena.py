@@ -1,6 +1,6 @@
 """Tests for the condo arena tournament."""
 
-from scoring.arena import run_arena, format_arena_report, _dimension_scores, DIMENSIONS
+from scoring.arena import run_arena, format_arena_report, DIMENSIONS
 from scoring.models import ScoredListing
 
 

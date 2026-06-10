@@ -1,0 +1,61 @@
+{
+  "condo": "The Bayshore",
+  "slug": "the-bayshore",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1,001sqft 2BR at $1.24M / $1,239 PSF just 270m from the new Bayshore TEL station (D16), priced ~10% below the $1,372 median on an exceptionally reliable 5.75% CAGR (232 txns). A genuine TEL-proximity catalyst at a liquid sub-$1.3M price, with the 1996 leasehold age as the main offset.",
+      "rating_rationale": "This pairs the batch's most reliable appreciation data (5.75%/yr over 232 transactions — very high confidence) with a real, near-term catalyst: 270m to the newly opened Bayshore TEL station in the up-and-coming Bayshore precinct. It's priced ~10% below URA median at a deeply liquid $1.24M / $1,239 PSF with a sensible 2BR size. The clear caveat is age — a 1996 99yr lease has ~69yr left — but the TEL station opening, the strong discount, and the deep transaction base make this a favourable risk-reward and arguably the best leasehold catalyst play in the batch.",
+      "red_flags": [
+        "30-year-old 99yr leasehold — ~69yr left, decay/financing watch",
+        "Older 1996 build — finishes/maintenance",
+        "score_1000 (554) reflects lease-age drag despite strong fundamentals"
+      ],
+      "catalysts": [
+        "270m to newly opened Bayshore TEL station — direct uplift catalyst",
+        "Bayshore precinct redevelopment (upper East Coast growth corridor)",
+        "~10% below median; very reliable 5.75% CAGR on 232 txns; liquid $1.24M / 2BR"
+      ],
+      "as_of": {
+        "price": 1240000,
+        "psf": 1238.76,
+        "beds": 2,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,001sqft 2BR at $1.24M / $1,239 PSF just 270m from the new Bayshore TEL station (D16), priced ~10% below the $1,372 median on an exceptionally reliable 5.75% CAGR (232 txns). A genuine TEL-proximity catalyst at a liquid sub-$1.3M price, with the 1996 leasehold age as the main offset.",
+        "rating": "Buy",
+        "rating_rationale": "This pairs the batch's most reliable appreciation data (5.75%/yr over 232 transactions — very high confidence) with a real, near-term catalyst: 270m to the newly opened Bayshore TEL station in the up-and-coming Bayshore precinct. It's priced ~10% below URA median at a deeply liquid $1.24M / $1,239 PSF with a sensible 2BR size. The clear caveat is age — a 1996 99yr lease has ~69yr left — but the TEL station opening, the strong discount, and the deep transaction base make this a favourable risk-reward and arguably the best leasehold catalyst play in the batch.",
+        "red_flags": [
+          "30-year-old 99yr leasehold — ~69yr left, decay/financing watch",
+          "Older 1996 build — finishes/maintenance",
+          "score_1000 (554) reflects lease-age drag despite strong fundamentals"
+        ],
+        "catalysts": [
+          "270m to newly opened Bayshore TEL station — direct uplift catalyst",
+          "Bayshore precinct redevelopment (upper East Coast growth corridor)",
+          "~10% below median; very reliable 5.75% CAGR on 232 txns; liquid $1.24M / 2BR"
+        ],
+        "rental_assessment": "2BR steps from a new TEL station in the East Coast has a broad, deepening tenant pool; yield solid for the band.",
+        "appreciation_assessment": "5.75% is the most data-backed in the batch (232 txns); TEL opening + Bayshore precinct support a 4-5% forward even net of lease decay.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-bayshore-60114546",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

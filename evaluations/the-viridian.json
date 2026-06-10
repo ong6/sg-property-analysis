@@ -1,0 +1,63 @@
+{
+  "condo": "The Viridian",
+  "slug": "the-viridian",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Unusually large '1BR' (883sqft) freehold at $1,563 PSF in D12, listed ~9% below the $1,713 URA median, with a robust 28-txn series but a soft 2.2%/yr resale-only appreciation rate. The 883sqft size for a 1-bedder suggests a generous/dual-key or mislabelled layout, and 1.46km to MRT is a real walkability problem.",
+      "rating_rationale": "The discount-to-median ($1,563 vs $1,713 PSF, ~9% below) is the most interesting feature and is backed by a credible 28-txn series — that cushions downside. But appreciation is weak at 2.2%/yr, the building sits 1.46km/18-min from Toa Payoh MRT (poor connectivity), and an 883sqft '1BR' is an odd configuration that complicates resale positioning. Freehold and the below-median entry keep it from Avoid; the soft growth and walkability keep it from Buy.",
+      "red_flags": [
+        "1.46km/18-min from Toa Payoh MRT — poor walkability",
+        "Soft 2.2%/yr resale-only appreciation",
+        "883sqft '1BR' — unusual layout, ambiguous resale positioning"
+      ],
+      "catalysts": [
+        "Listed ~9% below URA median PSF on a solid 28-txn base",
+        "Freehold tenure",
+        "Generous floorplate within the bedroom count"
+      ],
+      "as_of": {
+        "price": 1380000,
+        "psf": 1562.85,
+        "beds": 1,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Unusually large '1BR' (883sqft) freehold at $1,563 PSF in D12, listed ~9% below the $1,713 URA median, with a robust 28-txn series but a soft 2.2%/yr resale-only appreciation rate. The 883sqft size for a 1-bedder suggests a generous/dual-key or mislabelled layout, and 1.46km to MRT is a real walkability problem.",
+        "rating": "Neutral",
+        "rating_rationale": "The discount-to-median ($1,563 vs $1,713 PSF, ~9% below) is the most interesting feature and is backed by a credible 28-txn series — that cushions downside. But appreciation is weak at 2.2%/yr, the building sits 1.46km/18-min from Toa Payoh MRT (poor connectivity), and an 883sqft '1BR' is an odd configuration that complicates resale positioning. Freehold and the below-median entry keep it from Avoid; the soft growth and walkability keep it from Buy.",
+        "red_flags": [
+          "1.46km/18-min from Toa Payoh MRT — poor walkability",
+          "Soft 2.2%/yr resale-only appreciation",
+          "883sqft '1BR' — unusual layout, ambiguous resale positioning"
+        ],
+        "catalysts": [
+          "Listed ~9% below URA median PSF on a solid 28-txn base",
+          "Freehold tenure",
+          "Generous floorplate within the bedroom count"
+        ],
+        "rental_assessment": "Large freehold unit far from MRT rents to space-valuing tenants at a moderate yield; the distance-to-transit caps premium rent.",
+        "appreciation_assessment": "2.2%/yr on 28 txns is reliable but below market; the below-median entry is the value angle, not the growth rate.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.2,
+        "appreciation_rate_source": "URA resale-only 2.2%/yr (28 txns) accepted as-is"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-viridian-500114303",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

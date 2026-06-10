@@ -106,6 +106,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterview-500050916",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely under-priced 2BR in an OCR (D18) lakeside project with a deep transaction base and a long lease runway.",
+      "rating_rationale": "Asking 1399 psf sits clearly below the project's last-12-month average of ~1479 psf (recent range 1174-1655 psf), so the algo's -4.7% age-adjusted and -9.1% cohort discounts are corroborated by real recent resale evidence (psf_cohort_txns 7 is thin but the broader 178-txn project base is deep). It is OCR, the region with the strongest realized forward returns (~+4.0%) under the v3.4 priors, with ~88 years of lease left (2014 completion, 99yr from 2010) and a sub-$1.1m quantum that keeps the 2BR liquid. Trailing 7.36% CAGR (178 txns) is credible but treated as story, not a forward guarantee. The discount-to-comps plus region tailwind justify a Buy; medium confidence because there is no specific dated catalyst and the bargain rests on a modest 5% gap.",
+      "red_flags": [
+        "Thin same-size cohort (psf_cohort_txns 7) means the 9.1% cohort discount rests on few direct comps",
+        "Busy 4-lane road frontage and ~15-min walk to nearest supermarket / no direct reservoir access (per reviews) cap livability and rental pull",
+        "No dated MRT or zoning catalyst to drive re-rating"
+      ],
+      "catalysts": [
+        "Bedok Reservoir / Tampines Quarry waterfront amenity and ongoing Tampines North precinct build-out",
+        "OCR region tailwind (~+4.0% realized forward vs CCR ~+0.7%)"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1399.49,
+        "beds": 2,
+        "sqft": 786
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely under-priced 2BR in an OCR (D18) lakeside project with a deep transaction base and a long lease runway.",
+        "rating_rationale": "Asking 1399 psf sits clearly below the project's last-12-month average of ~1479 psf (recent range 1174-1655 psf), so the algo's -4.7% age-adjusted and -9.1% cohort discounts are corroborated by real recent resale evidence (psf_cohort_txns 7 is thin but the broader 178-txn project base is deep). It is OCR, the region with the strongest realized forward returns (~+4.0%) under the v3.4 priors, with ~88 years of lease left (2014 completion, 99yr from 2010) and a sub-$1.1m quantum that keeps the 2BR liquid. Trailing 7.36% CAGR (178 txns) is credible but treated as story, not a forward guarantee. The discount-to-comps plus region tailwind justify a Buy; medium confidence because there is no specific dated catalyst and the bargain rests on a modest 5% gap.",
+        "red_flags": [
+          "Thin same-size cohort (psf_cohort_txns 7) means the 9.1% cohort discount rests on few direct comps",
+          "Busy 4-lane road frontage and ~15-min walk to nearest supermarket / no direct reservoir access (per reviews) cap livability and rental pull",
+          "No dated MRT or zoning catalyst to drive re-rating"
+        ],
+        "catalysts": [
+          "Bedok Reservoir / Tampines Quarry waterfront amenity and ongoing Tampines North precinct build-out",
+          "OCR region tailwind (~+4.0% realized forward vs CCR ~+0.7%)"
+        ],
+        "rental_assessment": "786 sqft 2BR at ~$1.1m in an established mass-market estate near Bedok Reservoir supports steady tenant demand; yield is typical-OCR, not exceptional.",
+        "appreciation_assessment": "Trailing 7.36% CAGR on a deep 178-txn base is credible but per v3.4 carries ~0 forward power; the forward case rests on verified cheap-vs-comps plus OCR region effect, not on extrapolating past CAGR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterview-500050916",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "condo": "Luxury Living Near East Coast – 2BR Amber Park",
+  "slug": "luxury-living-near-east-coast-2br-amber-park",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR (829sqft) at Amber Park, D15 East Coast, asking $3,076 PSF / $2.55M, 710m from Tanjong Katong MRT (TEL). Amber Park is a large, liquid 592-unit Far East freehold project (recently TOP'd) transacting ~$2,684-3,257 PSF, so this asking sits at the upper end of the recent range.",
+      "rating_rationale": "Strong development: 592 units (deep liquidity), freehold, sea-fringe D15 lifestyle, and the new TEL Tanjong Katong/Marine Parade stations are real catalysts. But the $3,076 PSF asking is at the top of the verified ~$2,894 avg / up-to-$3,257 recent range, and the $2.55M quantum sits above the deepest-liquidity band — so you'd be buying near peak pricing. The location and liquidity are genuinely good; the stretched entry PSF balances it to Neutral.",
+      "red_flags": [
+        "$3,076 PSF is at the top of Amber Park's recent ~$2,894 avg transacted range",
+        "$2.55M quantum above the deepest-liquidity sweet spot",
+        "Recently-TOP'd new-launch pricing — limited near-term re-rating headroom"
+      ],
+      "catalysts": [
+        "592-unit Far East freehold — deep buyer pool and liquidity",
+        "New TEL stations (Tanjong Katong/Marine Parade) within walking distance",
+        "East Coast / Marine Parade lifestyle and beachfront amenity"
+      ],
+      "as_of": {
+        "price": 2550000,
+        "psf": 3076.0,
+        "beds": 2,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 2BR (829sqft) at Amber Park, D15 East Coast, asking $3,076 PSF / $2.55M, 710m from Tanjong Katong MRT (TEL). Amber Park is a large, liquid 592-unit Far East freehold project (recently TOP'd) transacting ~$2,684-3,257 PSF, so this asking sits at the upper end of the recent range.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong development: 592 units (deep liquidity), freehold, sea-fringe D15 lifestyle, and the new TEL Tanjong Katong/Marine Parade stations are real catalysts. But the $3,076 PSF asking is at the top of the verified ~$2,894 avg / up-to-$3,257 recent range, and the $2.55M quantum sits above the deepest-liquidity band — so you'd be buying near peak pricing. The location and liquidity are genuinely good; the stretched entry PSF balances it to Neutral.",
+        "red_flags": [
+          "$3,076 PSF is at the top of Amber Park's recent ~$2,894 avg transacted range",
+          "$2.55M quantum above the deepest-liquidity sweet spot",
+          "Recently-TOP'd new-launch pricing — limited near-term re-rating headroom"
+        ],
+        "catalysts": [
+          "592-unit Far East freehold — deep buyer pool and liquidity",
+          "New TEL stations (Tanjong Katong/Marine Parade) within walking distance",
+          "East Coast / Marine Parade lifestyle and beachfront amenity"
+        ],
+        "rental_assessment": "D15 East Coast 2BR has a wide, deep tenant pool (expats/professionals) and Amber Park is a desirable address, but the high $2.55M base compresses gross yield to the low-3% range.",
+        "appreciation_assessment": "D15 freehold near new TEL stations should appreciate at/above the RCR baseline long-run, but buying at the top of the current transacted range limits near-term upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "D15 freehold/TEL-adjacent baseline; trimmed for top-of-range entry PSF"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-luxury-living-near-east-coast-2br-amber-park-500122221",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "condo": "Park Residences Kovan",
+  "slug": "park-residences-kovan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D19 1BR (657 sqft) at $980k / $1,492 psf, 6 min from Kovan NEL — but the unit is asking ~20% below the $1,862 median and the URA rate is just 0.82%/yr on a thin 11-txn series. The deep median discount plus near-zero appreciation and a weak Elo (891, 97-212 record) flag a problem, not a bargain.",
+      "rating_rationale": "Freehold near Kovan MRT at a low $980k quantum is the positive, but the score_1000 of 678 is misleading — Elo 891 and a 97-212 arena record are poor, the 0.82%/yr appreciation is essentially flat, and a 20% gap below median PSF usually signals a compromised unit (low floor, poor facing, or layout). 657 sqft is also large for a 1BR, suggesting the cheap PSF is partly size. Concerns offset the freehold/location appeal.",
+      "red_flags": [
+        "0.82%/yr appreciation — effectively flat, on thin 11 txns",
+        "Asking ~20% below median — likely a compromised/low-quality stack",
+        "Weak Elo 891 / 97-212 record despite high score_1000",
+        "657 sqft oversized for 1BR inflating low-PSF optics"
+      ],
+      "catalysts": [
+        "Freehold 6 min from Kovan NEL",
+        "Low $980k entry quantum"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1491.63,
+        "beds": 1,
+        "sqft": 657.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D19 1BR (657 sqft) at $980k / $1,492 psf, 6 min from Kovan NEL — but the unit is asking ~20% below the $1,862 median and the URA rate is just 0.82%/yr on a thin 11-txn series. The deep median discount plus near-zero appreciation and a weak Elo (891, 97-212 record) flag a problem, not a bargain.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold near Kovan MRT at a low $980k quantum is the positive, but the score_1000 of 678 is misleading — Elo 891 and a 97-212 arena record are poor, the 0.82%/yr appreciation is essentially flat, and a 20% gap below median PSF usually signals a compromised unit (low floor, poor facing, or layout). 657 sqft is also large for a 1BR, suggesting the cheap PSF is partly size. Concerns offset the freehold/location appeal.",
+        "red_flags": [
+          "0.82%/yr appreciation — effectively flat, on thin 11 txns",
+          "Asking ~20% below median — likely a compromised/low-quality stack",
+          "Weak Elo 891 / 97-212 record despite high score_1000",
+          "657 sqft oversized for 1BR inflating low-PSF optics"
+        ],
+        "catalysts": [
+          "Freehold 6 min from Kovan NEL",
+          "Low $980k entry quantum"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-residences-kovan-500163749",
+        "review_file": "cov_batch_27.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "There is a genuine-looking discount — S$1,492 psf vs a project average of ~S$1,767 (range S$1,295-1,928) — but it rests on razor-thin data (psf_cohort_txns=1, appreciation_txns=11) in a 41-unit boutique freehold with poor exit liquidity. The 657 sqft '1BR' label is also suspect (Kovan 1BRs are 355 sqft).",
+      "rating_rationale": "Web data shows Park Residences Kovan averaging ~S$1,767 psf (S$1,295-1,928 across only 13 lifetime-window transactions), so the S$1,492 psf ask does look cheaper than the project mean, loosely supporting the dossier's -10.9% age_adj and -17.2% cohort premium. But per v3.4 I must be skeptical of big negatives built on tiny samples: psf_cohort_txns=1 and appreciation_txns=11 make the cohort discount statistically fragile, and a 41-unit boutique block trades infrequently (illiquid exit over a 5-7yr hold). The 657 sqft unit is likely a 2BR or dual-key, not the 355 sqft 1BR the dossier labels — so the comparison band may be mismatched. Freehold is not a forward edge (v3.4). Real-but-uncertain value plus thin liquidity nets to a low-confidence Neutral.",
+      "red_flags": [
+        "psf_cohort_txns=1 — the -17.2% cohort discount has a single comparable behind it",
+        "appreciation_txns=11 — thin history for the 0.82% CAGR and the value read",
+        "41-unit boutique project = low transaction volume / weak exit liquidity",
+        "657 sqft labelled 1BR but project 1BRs are 355 sqft — likely a 2BR/dual-key, band mismatch"
+      ],
+      "catalysts": [
+        "Freehold tenure (durable, though not a forward price edge per v3.4)",
+        "Near Kovan MRT (NEL) and Heartland Mall; D19/OCR forward region ~+4%"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1491.63,
+        "beds": 1,
+        "sqft": 657
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "There is a genuine-looking discount — S$1,492 psf vs a project average of ~S$1,767 (range S$1,295-1,928) — but it rests on razor-thin data (psf_cohort_txns=1, appreciation_txns=11) in a 41-unit boutique freehold with poor exit liquidity. The 657 sqft '1BR' label is also suspect (Kovan 1BRs are 355 sqft).",
+        "rating_rationale": "Web data shows Park Residences Kovan averaging ~S$1,767 psf (S$1,295-1,928 across only 13 lifetime-window transactions), so the S$1,492 psf ask does look cheaper than the project mean, loosely supporting the dossier's -10.9% age_adj and -17.2% cohort premium. But per v3.4 I must be skeptical of big negatives built on tiny samples: psf_cohort_txns=1 and appreciation_txns=11 make the cohort discount statistically fragile, and a 41-unit boutique block trades infrequently (illiquid exit over a 5-7yr hold). The 657 sqft unit is likely a 2BR or dual-key, not the 355 sqft 1BR the dossier labels — so the comparison band may be mismatched. Freehold is not a forward edge (v3.4). Real-but-uncertain value plus thin liquidity nets to a low-confidence Neutral.",
+        "red_flags": [
+          "psf_cohort_txns=1 — the -17.2% cohort discount has a single comparable behind it",
+          "appreciation_txns=11 — thin history for the 0.82% CAGR and the value read",
+          "41-unit boutique project = low transaction volume / weak exit liquidity",
+          "657 sqft labelled 1BR but project 1BRs are 355 sqft — likely a 2BR/dual-key, band mismatch"
+        ],
+        "catalysts": [
+          "Freehold tenure (durable, though not a forward price edge per v3.4)",
+          "Near Kovan MRT (NEL) and Heartland Mall; D19/OCR forward region ~+4%"
+        ],
+        "appreciation_assessment": "Dossier 0.82% 5yr CAGR is low and on only 11 txns — neither reliable nor forward-predictive; the investment case rests on the verified discount-to-project-average, not on momentum.",
+        "rental_assessment": "Freehold unit near Kovan MRT should lease steadily, but boutique scale and uncertain true bed-count make yield estimation imprecise at this S$980K entry."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-residences-kovan-500163749",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

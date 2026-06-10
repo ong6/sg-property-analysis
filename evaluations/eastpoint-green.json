@@ -1,0 +1,61 @@
+{
+  "condo": "Eastpoint Green",
+  "slug": "eastpoint-green",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 958 sqft 2BR at Simei (D18) for $1,130k — a roomy, well-sized 2BR in the deep $1.8M-and-under liquid band, with a strong 7.54% appreciation on 147 txns. The offset is age: built 1998, so the 99LH has only ~71 years left and lease decay is the key risk over the hold.",
+      "rating_rationale": "The 7.54% resale-only CAGR over 147 txns is the highest reliable rate in the batch and the 958 sqft 2BR at $1,179 psf (just under the $1,199.5 median) sits in the deepest-liquidity quantum band — both strongly positive. But the development is 28 years old (TOP 1998) with ~71 years of lease remaining, and over a 5–7yr hold lease decay below 70 years starts to bite on financing and resale. The high historical CAGR partly reflects an old-leasehold rebound off a low base that is not guaranteed to repeat. Strong yield/liquidity vs lease-decay headwind nets to Neutral.",
+      "red_flags": [
+        "Built 1998 — ~71 years lease left, decay accelerates and approaches the 70yr financing threshold during the hold",
+        "Old development: higher maintenance, dated facilities",
+        "High past CAGR off a low old-leasehold base may not persist as lease shortens"
+      ],
+      "catalysts": [
+        "Strong 7.54%/yr resale-only appreciation on a reliable 147-txn series",
+        "Well-sized 958 sqft 2BR in the deepest-liquidity sub-$1.2M band",
+        "Simei EW3 MRT 610m, near Changi Business Park / SUTD tenant demand"
+      ],
+      "as_of": {
+        "price": 1130000,
+        "psf": 1179.54,
+        "beds": 2,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 958 sqft 2BR at Simei (D18) for $1,130k — a roomy, well-sized 2BR in the deep $1.8M-and-under liquid band, with a strong 7.54% appreciation on 147 txns. The offset is age: built 1998, so the 99LH has only ~71 years left and lease decay is the key risk over the hold.",
+        "rating": "Neutral",
+        "rating_rationale": "The 7.54% resale-only CAGR over 147 txns is the highest reliable rate in the batch and the 958 sqft 2BR at $1,179 psf (just under the $1,199.5 median) sits in the deepest-liquidity quantum band — both strongly positive. But the development is 28 years old (TOP 1998) with ~71 years of lease remaining, and over a 5–7yr hold lease decay below 70 years starts to bite on financing and resale. The high historical CAGR partly reflects an old-leasehold rebound off a low base that is not guaranteed to repeat. Strong yield/liquidity vs lease-decay headwind nets to Neutral.",
+        "red_flags": [
+          "Built 1998 — ~71 years lease left, decay accelerates and approaches the 70yr financing threshold during the hold",
+          "Old development: higher maintenance, dated facilities",
+          "High past CAGR off a low old-leasehold base may not persist as lease shortens"
+        ],
+        "catalysts": [
+          "Strong 7.54%/yr resale-only appreciation on a reliable 147-txn series",
+          "Well-sized 958 sqft 2BR in the deepest-liquidity sub-$1.2M band",
+          "Simei EW3 MRT 610m, near Changi Business Park / SUTD tenant demand"
+        ],
+        "rental_assessment": "2BR near Simei MRT, Changi Business Park and SUTD has a solid, deep tenant pool — the widest of any unit type. Good occupancy and yield for the quantum.",
+        "appreciation_assessment": "Historical 7.54% is real and reliable, but lease decay on a 1998 99LH is a structural drag that caps forward appreciation. Treat the past rate as a ceiling, not a forecast.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eastpoint-green-500067351",
+        "review_file": "cov_batch_02.json"
+      }
+    }
+  ]
+}

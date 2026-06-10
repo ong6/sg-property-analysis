@@ -1,0 +1,67 @@
+{
+  "condo": "Casa Emerald",
+  "slug": "casa-emerald",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 3BR (1,119 sqft) at Casa Emerald (2002) near Dakota MRT in D14, asking $1.65M ($1,475 psf). Sensible price band, efficient size, freehold and a city-fringe location near Dakota — a reasonable but unremarkable hold, limited by thin data (3 txns) and boutique scale.",
+      "rating_rationale": "$1,475 psf for a FH D14 3BR is fair-to-attractive, and $1.65M sits in the liquid family band with an efficient 1,119 sqft layout. Freehold + 620m to Dakota MRT (CCL) and the Paya Lebar Central catchment are real positives. Held back by only 3 URA txns (no reliable rate), a 2002 build, and likely boutique scale limiting liquidity. A solid hold rather than a standout — squarely Neutral.",
+      "red_flags": [
+        "Only 3 URA txns — no reliable appreciation rate",
+        "2002 build — mid-aged, dated facilities",
+        "Likely boutique development — moderate liquidity",
+        "No URA median PSF to benchmark the asking price"
+      ],
+      "catalysts": [
+        "Freehold tenure in city-fringe D14",
+        "620m to Dakota MRT (Circle Line)",
+        "Paya Lebar Central transformation and airbase relocation upside",
+        "Liquid price band and efficient 3BR size"
+      ],
+      "as_of": {
+        "price": 1650000,
+        "psf": 1474.53,
+        "beds": 3,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 3BR (1,119 sqft) at Casa Emerald (2002) near Dakota MRT in D14, asking $1.65M ($1,475 psf). Sensible price band, efficient size, freehold and a city-fringe location near Dakota — a reasonable but unremarkable hold, limited by thin data (3 txns) and boutique scale.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,475 psf for a FH D14 3BR is fair-to-attractive, and $1.65M sits in the liquid family band with an efficient 1,119 sqft layout. Freehold + 620m to Dakota MRT (CCL) and the Paya Lebar Central catchment are real positives. Held back by only 3 URA txns (no reliable rate), a 2002 build, and likely boutique scale limiting liquidity. A solid hold rather than a standout — squarely Neutral.",
+        "red_flags": [
+          "Only 3 URA txns — no reliable appreciation rate",
+          "2002 build — mid-aged, dated facilities",
+          "Likely boutique development — moderate liquidity",
+          "No URA median PSF to benchmark the asking price"
+        ],
+        "catalysts": [
+          "Freehold tenure in city-fringe D14",
+          "620m to Dakota MRT (Circle Line)",
+          "Paya Lebar Central transformation and airbase relocation upside",
+          "Liquid price band and efficient 3BR size"
+        ],
+        "rental_assessment": "FH 3BR near Dakota/Paya Lebar has steady family and professional tenant demand; gross yield ~3-3.5% is realistic at this price.",
+        "appreciation_assessment": "No reliable rate (3 txns), but FH D14 near a Circle Line station with Paya Lebar catalysts should track around the RCR/city-fringe baseline. Modest, dependable rather than outsized.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "FH city-fringe D14 baseline near Dakota MRT; thin URA so baseline-anchored"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-emerald-60071197",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "One Pearl Bank",
+  "slug": "one-pearl-bank",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2024 99-yr leasehold compact 1BR at One Pearl Bank (D03 Outram), 431 sqft at $1.0M / $2,320 psf, 480m from Outram Park triple-line interchange. At $2,320 psf it is ~11% below the $2,601 median and near the bottom of the project's $2,279–$3,828 range — a rare sub-$1M entry into prime D03 with a 390-txn-deep, highly liquid 774-unit development. Flat post-TOP resale appreciation (0.0%) is the main caveat.",
+      "rating_rationale": "$2,320 psf is ~11% under the $2,601 URA median and at the low end of the verified $2,279–$3,828 transacting range — genuine value for a 2024 unit. $1.0M absolute entry into prime D03 is rare and keeps the studio in a deep, liquid band; Outram Park (NEL/EWL/TEL interchange, ~480m), SGH medical hub and the Greater Southern Waterfront drive durable rental demand. Reliable 390-txn data confirms liquidity; the 0.0% resale-only appreciation reflects normal post-completion plateau rather than weakness, and 431sqft is the niche compact-studio segment.",
+      "red_flags": [
+        "Flat resale-only appreciation (0.0%) — price has plateaued post-TOP",
+        "431sqft compact studio/1BR — niche segment",
+        "99-yr leasehold; new-launch bias still in the headline rate",
+        "Weak 65-165-85 arena record (quantum/yield-driven, not location)"
+      ],
+      "catalysts": [
+        "~11% below the $2,601 URA median — clear value entry",
+        "480m to Outram Park NEL/EWL/TEL triple-line interchange",
+        "Prime D03, SGH medical hub + Greater Southern Waterfront transformation",
+        "Sub-$1M prime-district entry — deep buyer and tenant pool, easy exit"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 2320.19,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2024 99-yr leasehold compact 1BR at One Pearl Bank (D03 Outram), 431 sqft at $1.0M / $2,320 psf, 480m from Outram Park triple-line interchange. At $2,320 psf it is ~11% below the $2,601 median and near the bottom of the project's $2,279–$3,828 range — a rare sub-$1M entry into prime D03 with a 390-txn-deep, highly liquid 774-unit development. Flat post-TOP resale appreciation (0.0%) is the main caveat.",
+        "rating": "Buy",
+        "rating_rationale": "$2,320 psf is ~11% under the $2,601 URA median and at the low end of the verified $2,279–$3,828 transacting range — genuine value for a 2024 unit. $1.0M absolute entry into prime D03 is rare and keeps the studio in a deep, liquid band; Outram Park (NEL/EWL/TEL interchange, ~480m), SGH medical hub and the Greater Southern Waterfront drive durable rental demand. Reliable 390-txn data confirms liquidity; the 0.0% resale-only appreciation reflects normal post-completion plateau rather than weakness, and 431sqft is the niche compact-studio segment.",
+        "red_flags": [
+          "Flat resale-only appreciation (0.0%) — price has plateaued post-TOP",
+          "431sqft compact studio/1BR — niche segment",
+          "99-yr leasehold; new-launch bias still in the headline rate",
+          "Weak 65-165-85 arena record (quantum/yield-driven, not location)"
+        ],
+        "catalysts": [
+          "~11% below the $2,601 URA median — clear value entry",
+          "480m to Outram Park NEL/EWL/TEL triple-line interchange",
+          "Prime D03, SGH medical hub + Greater Southern Waterfront transformation",
+          "Sub-$1M prime-district entry — deep buyer and tenant pool, easy exit"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-one-pearl-bank-500164698",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

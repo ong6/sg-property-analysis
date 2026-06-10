@@ -1,0 +1,63 @@
+{
+  "condo": "City Suites",
+  "slug": "city-suites",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 527sqft 1BR in D12 (Balestier/Boon Keng fringe) at $898k — but the eye-catching 11.8% appreciation rests on only 5 transactions and is statistically meaningless, while the location is poor for the format (1.4km / 17min to the nearest MRT). Boutique freehold shoebox with no transit and unverifiable upside.",
+      "rating_rationale": "The 11.8% CAGR is a 5-transaction artifact — ignore it. On fundamentals: freehold and low quantum are the pluses, but a 1BR shoebox 1.4km from any MRT is a weak rental/resale proposition (small-unit tenants prize MRT proximity above all), and the development is a thin-data boutique. At-or-below the $1877 median PSF doesn't rescue a poorly-located shoebox. Freehold keeps it off Avoid; everything else caps it at Neutral.",
+      "red_flags": [
+        "11.8% appreciation from only 5 transactions — meaningless, do not rely on it",
+        "1.4km (17min) from nearest MRT — poor transit for a shoebox that needs it most",
+        "Boutique development, thin liquidity — hard investor exit"
+      ],
+      "catalysts": [
+        "Freehold tenure at a low $898k quantum",
+        "Balestier/Novena fringe — proximity to medical hub (Novena) for tenant demand",
+        "Below project median PSF entry"
+      ],
+      "as_of": {
+        "price": 898000,
+        "psf": 1703.98,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 527sqft 1BR in D12 (Balestier/Boon Keng fringe) at $898k — but the eye-catching 11.8% appreciation rests on only 5 transactions and is statistically meaningless, while the location is poor for the format (1.4km / 17min to the nearest MRT). Boutique freehold shoebox with no transit and unverifiable upside.",
+        "rating": "Neutral",
+        "rating_rationale": "The 11.8% CAGR is a 5-transaction artifact — ignore it. On fundamentals: freehold and low quantum are the pluses, but a 1BR shoebox 1.4km from any MRT is a weak rental/resale proposition (small-unit tenants prize MRT proximity above all), and the development is a thin-data boutique. At-or-below the $1877 median PSF doesn't rescue a poorly-located shoebox. Freehold keeps it off Avoid; everything else caps it at Neutral.",
+        "red_flags": [
+          "11.8% appreciation from only 5 transactions — meaningless, do not rely on it",
+          "1.4km (17min) from nearest MRT — poor transit for a shoebox that needs it most",
+          "Boutique development, thin liquidity — hard investor exit"
+        ],
+        "catalysts": [
+          "Freehold tenure at a low $898k quantum",
+          "Balestier/Novena fringe — proximity to medical hub (Novena) for tenant demand",
+          "Below project median PSF entry"
+        ],
+        "rental_assessment": "Weak-to-moderate: a 1BR far from MRT struggles for the young-professional tenant who wants transit; the Novena medical-hub spillover provides some demand but the walk is long.",
+        "appreciation_assessment": "Unverifiable — 5 txns. Freehold helps value retention but the location works against appreciation for the shoebox format.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "Discarded 11.8% (5 txns); conservative freehold-D12 fringe estimate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-city-suites-60083022",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

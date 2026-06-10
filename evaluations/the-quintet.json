@@ -1,0 +1,65 @@
+{
+  "condo": "The Quintet",
+  "slug": "the-quintet",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The Quintet is a 99-yr leasehold (2006) condo in D23 Yew Tee, 4BR 1,571 sqft at $1.78M / $1,133 psf, 480m from Yew Tee MRT. Low PSF and a $1.78M quantum in the liquid band are attractive, but it's an aging 99-yr lease (~79yrs left) in a slow OCR submarket with no URA data attached.",
+      "rating_rationale": "$1,133 psf is genuinely low and $1.78M for a 1,571 sqft 4BR near Yew Tee MRT (480m) appeals to HDB upgraders — broad buyer pool in band, and it sits on the value frontier. Offsetting: 99-yr lease from 2006 leaves ~79 years (lease decay clock running), D23 Yew Tee is a slow-appreciating OCR fringe, and no URA txn/appreciation data is provided. A fair value-buy for an upgrader, balanced for investment.",
+      "red_flags": [
+        "99-yr leasehold from 2006 — ~79 years left, lease decay accelerates over a 5-7yr hold",
+        "D23 Yew Tee is a slow OCR submarket with limited catalysts",
+        "No URA appreciation/transaction data to verify the rate",
+        "Large 1,571 sqft leasehold unit dilutes per-sqft appreciation"
+      ],
+      "catalysts": [
+        "480m to Yew Tee NS5 MRT — strong transit proximity",
+        "$1.78M for a big 4BR appeals to HDB upgraders; on the value frontier",
+        "Low $1,133 psf entry with quantum in the liquid band"
+      ],
+      "as_of": {
+        "price": 1780000,
+        "psf": 1133.04,
+        "beds": 4,
+        "sqft": 1571.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The Quintet is a 99-yr leasehold (2006) condo in D23 Yew Tee, 4BR 1,571 sqft at $1.78M / $1,133 psf, 480m from Yew Tee MRT. Low PSF and a $1.78M quantum in the liquid band are attractive, but it's an aging 99-yr lease (~79yrs left) in a slow OCR submarket with no URA data attached.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,133 psf is genuinely low and $1.78M for a 1,571 sqft 4BR near Yew Tee MRT (480m) appeals to HDB upgraders — broad buyer pool in band, and it sits on the value frontier. Offsetting: 99-yr lease from 2006 leaves ~79 years (lease decay clock running), D23 Yew Tee is a slow-appreciating OCR fringe, and no URA txn/appreciation data is provided. A fair value-buy for an upgrader, balanced for investment.",
+        "red_flags": [
+          "99-yr leasehold from 2006 — ~79 years left, lease decay accelerates over a 5-7yr hold",
+          "D23 Yew Tee is a slow OCR submarket with limited catalysts",
+          "No URA appreciation/transaction data to verify the rate",
+          "Large 1,571 sqft leasehold unit dilutes per-sqft appreciation"
+        ],
+        "catalysts": [
+          "480m to Yew Tee NS5 MRT — strong transit proximity",
+          "$1.78M for a big 4BR appeals to HDB upgraders; on the value frontier",
+          "Low $1,133 psf entry with quantum in the liquid band"
+        ],
+        "rental_assessment": "Moderate — Yew Tee mass-market family rental demand exists; a large 4BR yields ~3% at this quantum.",
+        "appreciation_assessment": "OCR baseline at best (~3-3.7%), dragged by lease decay on a 2006 99-yr unit; value is in the cheap entry, not strong upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "D23 OCR leasehold prior, discounted for lease decay (~79yrs left)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quintet-500163179",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "condo": "Freehold in D14, within 1km to Kong Hwa Primary",
+  "slug": "freehold-in-d14-within-1km-to-kong-hwa-primary",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 3BR in D14 at $2.0M / $1955 PSF — squarely in the deepest-liquidity quantum band, 300m from Aljunied MRT and within 1km of Kong Hwa Primary (a genuine school-catchment demand driver). Strongest arena record in the batch (Elo 1316, 339-224-6). The PSF is full for D14 and the listing is somewhat opaque (null built_year, generic name, compact 1023 sqft for a 3BR).",
+      "rating_rationale": "Several investment positives align: freehold tenure, a $2.0M quantum at the heart of the liquid sweet spot, 300m walkable to Aljunied MRT (East-West Line), a recognized primary-school catchment that sustains family demand, and Paya Lebar Central regeneration as a district catalyst. The arena agrees — best Elo (1316) and win record (339-224-6) in the batch. Caveats: $1955 PSF is on the full side for D14/Geylang and the listing lacks a built_year and project name, so this is a conviction on the location/tenure/quantum profile rather than a specific verified project. Net positive enough for a Buy at medium confidence.",
+      "red_flags": [
+        "$1955 PSF is full for D14/Geylang — limited value cushion",
+        "Null built_year and generic listing name — specific project/age unverified",
+        "1023 sqft is compact for a 3BR — efficient but could be a 'small 3BR' that rents/sells closer to a large 2BR",
+        "No URA appreciation/txn data to confirm trend"
+      ],
+      "catalysts": [
+        "Freehold + $2.0M quantum in the deepest liquidity band — broad buyer appeal",
+        "300m to Aljunied MRT (EWL) — strong walkable connectivity to CBD and Paya Lebar",
+        "Within 1km of Kong Hwa Primary — durable school-catchment demand",
+        "Paya Lebar Central commercial regeneration and airbase relocation lift D14 over the next decade"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1955.03,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3BR in D14 at $2.0M / $1955 PSF — squarely in the deepest-liquidity quantum band, 300m from Aljunied MRT and within 1km of Kong Hwa Primary (a genuine school-catchment demand driver). Strongest arena record in the batch (Elo 1316, 339-224-6). The PSF is full for D14 and the listing is somewhat opaque (null built_year, generic name, compact 1023 sqft for a 3BR).",
+        "rating": "Buy",
+        "rating_rationale": "Several investment positives align: freehold tenure, a $2.0M quantum at the heart of the liquid sweet spot, 300m walkable to Aljunied MRT (East-West Line), a recognized primary-school catchment that sustains family demand, and Paya Lebar Central regeneration as a district catalyst. The arena agrees — best Elo (1316) and win record (339-224-6) in the batch. Caveats: $1955 PSF is on the full side for D14/Geylang and the listing lacks a built_year and project name, so this is a conviction on the location/tenure/quantum profile rather than a specific verified project. Net positive enough for a Buy at medium confidence.",
+        "red_flags": [
+          "$1955 PSF is full for D14/Geylang — limited value cushion",
+          "Null built_year and generic listing name — specific project/age unverified",
+          "1023 sqft is compact for a 3BR — efficient but could be a 'small 3BR' that rents/sells closer to a large 2BR",
+          "No URA appreciation/txn data to confirm trend"
+        ],
+        "catalysts": [
+          "Freehold + $2.0M quantum in the deepest liquidity band — broad buyer appeal",
+          "300m to Aljunied MRT (EWL) — strong walkable connectivity to CBD and Paya Lebar",
+          "Within 1km of Kong Hwa Primary — durable school-catchment demand",
+          "Paya Lebar Central commercial regeneration and airbase relocation lift D14 over the next decade"
+        ],
+        "rental_assessment": "3BR near Aljunied MRT and the city fringe rents well to families and sharers; gross yield ~3.3-3.6% at $2.0M. Wide tenant pool given MRT proximity and CBD access.",
+        "appreciation_assessment": "No project URA series, but freehold + walkable MRT + school catchment + Paya Lebar regeneration supports an above-RCR-edge view; model ~4.5%, with the full entry PSF as the main limiter.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "D14 freehold-near-MRT + school-catchment estimate — no project-specific URA data in dossier"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-in-d14-within-1km-to-kong-hwa-primary-500083642",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Kovan Jewel",
+  "slug": "kovan-jewel",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A $4.25M 4BR penthouse (2153sqft) in Kovan Jewel — a brand-new (2025) 34-unit boutique freehold in D19. The ticket sits far above the liquid band in an OCR location with an extremely shallow buyer pool, and the new-launch-biased URA data overstates appreciation. Wrong product, wrong price band for an investment exit.",
+      "rating_rationale": "Only 34 units total (boutique = illiquid) and a $4.25M penthouse is a tiny, niche exit pool — Hougang/Kovan buyers rarely transact at >$4M. $1,975 PSF looks below the $2,236 median only because penthouse PSF runs low; the absolute quantum is the problem. URA carries a new-launch bias flag (built 2025, 19 txns) so any headline rate is inflated developer pricing, not resale trajectory. Weak score 465 / losing 241-173 record. Freehold + 5-min Kovan MRT (one stop to future Hougang CRL interchange) are the only positives, nowhere near enough to offset a $4.25M boutique OCR penthouse.",
+      "red_flags": [
+        "34-unit boutique — structurally illiquid",
+        "$4.25M quantum far above OCR/D19 liquid band — very shallow exit pool",
+        "New-launch pricing bias (2025 TOP, 19 txns) inflates appreciation signal",
+        "Penthouse = narrowest possible buyer segment"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Kovan MRT (one stop to future Hougang Cross Island Line interchange)"
+      ],
+      "as_of": {
+        "price": 4252800,
+        "psf": 1975.29,
+        "beds": 4,
+        "sqft": 2153.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A $4.25M 4BR penthouse (2153sqft) in Kovan Jewel — a brand-new (2025) 34-unit boutique freehold in D19. The ticket sits far above the liquid band in an OCR location with an extremely shallow buyer pool, and the new-launch-biased URA data overstates appreciation. Wrong product, wrong price band for an investment exit.",
+        "rating": "Avoid",
+        "rating_rationale": "Only 34 units total (boutique = illiquid) and a $4.25M penthouse is a tiny, niche exit pool — Hougang/Kovan buyers rarely transact at >$4M. $1,975 PSF looks below the $2,236 median only because penthouse PSF runs low; the absolute quantum is the problem. URA carries a new-launch bias flag (built 2025, 19 txns) so any headline rate is inflated developer pricing, not resale trajectory. Weak score 465 / losing 241-173 record. Freehold + 5-min Kovan MRT (one stop to future Hougang CRL interchange) are the only positives, nowhere near enough to offset a $4.25M boutique OCR penthouse.",
+        "red_flags": [
+          "34-unit boutique — structurally illiquid",
+          "$4.25M quantum far above OCR/D19 liquid band — very shallow exit pool",
+          "New-launch pricing bias (2025 TOP, 19 txns) inflates appreciation signal",
+          "Penthouse = narrowest possible buyer segment"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Kovan MRT (one stop to future Hougang Cross Island Line interchange)"
+        ],
+        "rental_assessment": "Penthouse rents are a thin niche in Hougang; recent project rentals were modest ($3.1k-$4.5k) — poor yield against a $4.25M basis.",
+        "appreciation_assessment": "Boutique OCR penthouse bought at new-launch pricing has weak resale liquidity and downside risk once developer premium fades.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "OCR boutique penthouse, discounting new-launch-biased URA"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-jewel-500001532",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

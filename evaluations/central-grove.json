@@ -1,0 +1,115 @@
+{
+  "condo": "Central Grove",
+  "slug": "central-grove",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A large 1,399 sqft 3BR at Aljunied MRT's doorstep (150m), priced at $1.69M / $1,208 PSF — ~13% below the $1,381 URA median. The unbeatable MRT proximity and family-sized layout are real strengths, offset by an ageing 99yr lease (built 2001, ~74yr left) and a 38-txn appreciation read.",
+      "rating_rationale": "150m to Aljunied MRT (EW line, two stops to the CBD fringe) is a premier transit location that anchors both rental and resale demand. PSF $1,208 is ~13% under the $1,381 median, and the $1.69M quantum sits in the liquid sweet spot for a genuine 3-bedder. URA +4.07%/yr over 38 txns is a moderately reliable, healthy rate. Main caveat: 99yr from 2001 means lease decay starts to matter on a 5-7yr exit (~67yr left at sale).",
+      "red_flags": [
+        "99yr LH from 2001 — ~74yr remaining now, ~67yr at a 5-7yr exit; lease-decay drag grows",
+        "Older 2001 development — maintenance/facilities dated vs newer comps",
+        "Aljunied/Geylang fringe location carries some buyer-perception stigma"
+      ],
+      "catalysts": [
+        "150m to Aljunied MRT — rare doorstep transit for a sub-$1.7M 3BR",
+        "Below-median PSF and liquid family quantum",
+        "Paya Lebar Central transformation supports the broader D14 corridor"
+      ],
+      "as_of": {
+        "price": 1690000,
+        "psf": 1208.01,
+        "beds": 3,
+        "sqft": 1399.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,399 sqft 3BR at Aljunied MRT's doorstep (150m), priced at $1.69M / $1,208 PSF — ~13% below the $1,381 URA median. The unbeatable MRT proximity and family-sized layout are real strengths, offset by an ageing 99yr lease (built 2001, ~74yr left) and a 38-txn appreciation read.",
+        "rating": "Buy",
+        "rating_rationale": "150m to Aljunied MRT (EW line, two stops to the CBD fringe) is a premier transit location that anchors both rental and resale demand. PSF $1,208 is ~13% under the $1,381 median, and the $1.69M quantum sits in the liquid sweet spot for a genuine 3-bedder. URA +4.07%/yr over 38 txns is a moderately reliable, healthy rate. Main caveat: 99yr from 2001 means lease decay starts to matter on a 5-7yr exit (~67yr left at sale).",
+        "red_flags": [
+          "99yr LH from 2001 — ~74yr remaining now, ~67yr at a 5-7yr exit; lease-decay drag grows",
+          "Older 2001 development — maintenance/facilities dated vs newer comps",
+          "Aljunied/Geylang fringe location carries some buyer-perception stigma"
+        ],
+        "catalysts": [
+          "150m to Aljunied MRT — rare doorstep transit for a sub-$1.7M 3BR",
+          "Below-median PSF and liquid family quantum",
+          "Paya Lebar Central transformation supports the broader D14 corridor"
+        ],
+        "rental_assessment": "Doorstep MRT plus a true 3BR layout rents well to families and sharers heading to the CBD/Paya Lebar; strong, broad tenant demand.",
+        "appreciation_assessment": "+4.07%/yr URA (38 txns) is credible; MRT proximity supports it, but ageing lease will increasingly cap upside, so expect modest mid-single-digit returns net of lease drag.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-central-grove-60170036",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A genuinely-cheap large 1,399sqft 3BR in D14 - asking PSF verifiably below the project's recent transactions - but the ageing 99-yr-from-1997 lease tempers the case to a value Buy, not a strong one.",
+      "rating_rationale": "The cheapness is real: asking $1,208 psf vs project 12-month average ~$1,416 psf (3BR listings $1,318-$1,809 psf, high of $1,517 in Jul 2025) is roughly 15% below market, corroborating the -19.6% age-adj and -12.8% psf-vs-cohort figures (cohort of 7 txns - thin-ish but not a single-comp quirk). A large 1,399sqft 3BR at a sub-$1.7m absolute quantum is a rare entry point in central-fringe D14, near Aljunied (EW9) and Paya Lebar interchange (CC/EW). The 'very_low_psf' flag here reads as genuine value given verified comps, not a mis-scrape. The offset is the 'very_old_property' flag: 99-yr lease from 1997 leaves only ~70 yrs, so lease decay and financing/CPF limits will weigh on exit liquidity over a 5-7yr hold, and the 2001-vintage building lacks modern facilities. On balance the verified discount and large quantum-efficient layout outweigh the lease concern for a value buyer, but the decay is why this is a measured Buy at medium confidence rather than higher.",
+      "red_flags": [
+        "99-year lease from 1997 (~70 yrs left) - lease decay and CPF/financing restrictions cloud the 5-7yr exit",
+        "2001-vintage development with dated facilities vs newer D14 competition",
+        "psf_cohort of 7 txns is moderate, so the precise -12.8% same-size discount carries some uncertainty"
+      ],
+      "catalysts": [
+        "Verified ~15% discount to the project's own recent 3BR transactions provides a real margin of safety",
+        "Large 1,399sqft 3BR at sub-$1.7m is a scarce, quantum-efficient entry in central-fringe D14",
+        "Walkable to Aljunied MRT and the Paya Lebar interchange / commercial node"
+      ],
+      "as_of": {
+        "price": 1690000,
+        "psf": 1208.01,
+        "beds": 3,
+        "sqft": 1399
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A genuinely-cheap large 1,399sqft 3BR in D14 - asking PSF verifiably below the project's recent transactions - but the ageing 99-yr-from-1997 lease tempers the case to a value Buy, not a strong one.",
+        "rating_rationale": "The cheapness is real: asking $1,208 psf vs project 12-month average ~$1,416 psf (3BR listings $1,318-$1,809 psf, high of $1,517 in Jul 2025) is roughly 15% below market, corroborating the -19.6% age-adj and -12.8% psf-vs-cohort figures (cohort of 7 txns - thin-ish but not a single-comp quirk). A large 1,399sqft 3BR at a sub-$1.7m absolute quantum is a rare entry point in central-fringe D14, near Aljunied (EW9) and Paya Lebar interchange (CC/EW). The 'very_low_psf' flag here reads as genuine value given verified comps, not a mis-scrape. The offset is the 'very_old_property' flag: 99-yr lease from 1997 leaves only ~70 yrs, so lease decay and financing/CPF limits will weigh on exit liquidity over a 5-7yr hold, and the 2001-vintage building lacks modern facilities. On balance the verified discount and large quantum-efficient layout outweigh the lease concern for a value buyer, but the decay is why this is a measured Buy at medium confidence rather than higher.",
+        "red_flags": [
+          "99-year lease from 1997 (~70 yrs left) - lease decay and CPF/financing restrictions cloud the 5-7yr exit",
+          "2001-vintage development with dated facilities vs newer D14 competition",
+          "psf_cohort of 7 txns is moderate, so the precise -12.8% same-size discount carries some uncertainty"
+        ],
+        "catalysts": [
+          "Verified ~15% discount to the project's own recent 3BR transactions provides a real margin of safety",
+          "Large 1,399sqft 3BR at sub-$1.7m is a scarce, quantum-efficient entry in central-fringe D14",
+          "Walkable to Aljunied MRT and the Paya Lebar interchange / commercial node"
+        ],
+        "appreciation_assessment": "4.07% trailing 5yr CAGR (38 txns) is modest and forward-discounted to ~0; the real edge is the verified entry discount, while lease decay caps long-run upside.",
+        "rental_assessment": "A large 3BR near Paya Lebar/Aljunied should attract family/sharing tenants; low entry PSF supports an above-average gross yield, partly offsetting the older building's appeal gap."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-central-grove-60170036",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

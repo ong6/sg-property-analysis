@@ -1,0 +1,119 @@
+{
+  "condo": "The Promenade @ Pelikat",
+  "slug": "the-promenade-pelikat",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 936 sqft freehold 2BR at The Promenade @ Pelikat (2016) in D19 Kovan/Hougang at $1.23M ($1,314 PSF), 820m from Kovan NE13 MRT. A freehold 2BR at a low PSF and accessible quantum, but this is a mixed-use development with a reputation for retail-podium vacancy that can weigh on the residential.",
+      "rating_rationale": "Positives: freehold tenure, $1,314 PSF is cheap for a freehold 2BR, $1.23M is a very liquid quantum, and it's on the cost-frontier. The 936 sqft 2BR is generous (slightly oversized). Concerns: The Promenade @ Pelikat is a mixed commercial/residential project whose retail podium has had well-documented occupancy struggles, which can dampen ambience and resale appeal, and the sub-.500 arena record (193-223) reflects that. 820m to Kovan MRT is a 10-min walk. Cheap freehold entry vs mixed-use stigma nets to Neutral.",
+      "red_flags": [
+        "Mixed-use development with a troubled/under-occupied retail podium",
+        "Sub-.500 arena record (193-223)",
+        "10-min walk to Kovan MRT",
+        "No URA appreciation/txn data to confirm trajectory"
+      ],
+      "catalysts": [
+        "Freehold 2BR at a low $1,314 PSF",
+        "$1.23M in the deepest-demand price band",
+        "Cost-frontier listing; Kovan/Hougang amenities and NE line nearby"
+      ],
+      "as_of": {
+        "price": 1230000,
+        "psf": 1314.1,
+        "beds": 2,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 936 sqft freehold 2BR at The Promenade @ Pelikat (2016) in D19 Kovan/Hougang at $1.23M ($1,314 PSF), 820m from Kovan NE13 MRT. A freehold 2BR at a low PSF and accessible quantum, but this is a mixed-use development with a reputation for retail-podium vacancy that can weigh on the residential.",
+        "rating": "Neutral",
+        "rating_rationale": "Positives: freehold tenure, $1,314 PSF is cheap for a freehold 2BR, $1.23M is a very liquid quantum, and it's on the cost-frontier. The 936 sqft 2BR is generous (slightly oversized). Concerns: The Promenade @ Pelikat is a mixed commercial/residential project whose retail podium has had well-documented occupancy struggles, which can dampen ambience and resale appeal, and the sub-.500 arena record (193-223) reflects that. 820m to Kovan MRT is a 10-min walk. Cheap freehold entry vs mixed-use stigma nets to Neutral.",
+        "red_flags": [
+          "Mixed-use development with a troubled/under-occupied retail podium",
+          "Sub-.500 arena record (193-223)",
+          "10-min walk to Kovan MRT",
+          "No URA appreciation/txn data to confirm trajectory"
+        ],
+        "catalysts": [
+          "Freehold 2BR at a low $1,314 PSF",
+          "$1.23M in the deepest-demand price band",
+          "Cost-frontier listing; Kovan/Hougang amenities and NE line nearby"
+        ],
+        "rental_assessment": "Kovan rental demand is decent; a freehold 2BR rents to professionals/couples, though the commercial-podium character and walk to MRT temper the premium. Yield ~3.5%.",
+        "appreciation_assessment": "No project data; the mixed-use stigma is a structural drag on appreciation despite freehold tenure. Expect at-or-below-market growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-promenade-pelikat-21334482",
+        "review_file": "cov_batch_23.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold but in a mixed commercial/residential development (270 retail + 164 resi) with softening prices, management complaints, and an asking that sits right at the project average — the 'cheap' read is a district age artifact, not a real discount.",
+      "rating_rationale": "Asking $1,314 psf is essentially AT the project's last-12-month average (~$1,315 psf, range $1,188-$1,532), so the algo's -24.6% age-adj 'cheap vs district' is a district/age artifact, not a unit-level bargain — the +8.9% cohort premium (on only 3 txns) actually says it is slightly rich within its band. More important, this is a mixed development (270 commercial + 164 residential units), a structure that historically lags pure-residential on capital appreciation; project PSF has SOFTENED ~-4.83% over 2023-2026, and reviews flag a poorly-regarded managing council. D19 OCR is a forward positive, and freehold + Kovan MRT proximity help, but the mixed-dev drag, falling prices and absence of any verified value edge outweigh that for a 5-7yr appreciation hold.",
+      "red_flags": [
+        "Mixed development (270 retail + 164 residential units) — structurally weaker capital-appreciation profile and harder financing",
+        "Project PSF softened ~-4.83% over 2023-2026 — negative recent trend",
+        "Asking ~at project average; the -24.6% 'cheap' is a district-age artifact, and +8.9% vs cohort (3 txns) suggests it is slightly rich in-band",
+        "Resident reviews flag a disliked/poorly-managed managing council"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "OCR district (favorable v3.4 forward region) and walkable to Kovan MRT",
+        "Retail directly below offers convenience for an own-stay buyer"
+      ],
+      "as_of": {
+        "price": 1230000,
+        "psf": 1314.1,
+        "beds": 2,
+        "sqft": 936
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Freehold but in a mixed commercial/residential development (270 retail + 164 resi) with softening prices, management complaints, and an asking that sits right at the project average — the 'cheap' read is a district age artifact, not a real discount.",
+        "rating_rationale": "Asking $1,314 psf is essentially AT the project's last-12-month average (~$1,315 psf, range $1,188-$1,532), so the algo's -24.6% age-adj 'cheap vs district' is a district/age artifact, not a unit-level bargain — the +8.9% cohort premium (on only 3 txns) actually says it is slightly rich within its band. More important, this is a mixed development (270 commercial + 164 residential units), a structure that historically lags pure-residential on capital appreciation; project PSF has SOFTENED ~-4.83% over 2023-2026, and reviews flag a poorly-regarded managing council. D19 OCR is a forward positive, and freehold + Kovan MRT proximity help, but the mixed-dev drag, falling prices and absence of any verified value edge outweigh that for a 5-7yr appreciation hold.",
+        "red_flags": [
+          "Mixed development (270 retail + 164 residential units) — structurally weaker capital-appreciation profile and harder financing",
+          "Project PSF softened ~-4.83% over 2023-2026 — negative recent trend",
+          "Asking ~at project average; the -24.6% 'cheap' is a district-age artifact, and +8.9% vs cohort (3 txns) suggests it is slightly rich in-band",
+          "Resident reviews flag a disliked/poorly-managed managing council"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "OCR district (favorable v3.4 forward region) and walkable to Kovan MRT",
+          "Retail directly below offers convenience for an own-stay buyer"
+        ],
+        "appreciation_assessment": "Trailing 1.57% is weak and non-predictive; the more telling signal is the project's recent -4.83% PSF decline plus the mixed-dev appreciation drag. Forward expectation is below pure-residential peers.",
+        "rental_assessment": "No clear yield edge; mixed-dev units near retail can rent steadily but the falling capital values and management issues make this a cashflow-at-best, capital-at-risk hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-promenade-pelikat-21334482",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

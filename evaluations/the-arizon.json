@@ -1,0 +1,63 @@
+{
+  "condo": "The Arizon",
+  "slug": "the-arizon",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 829 sqft 'freehold 1BR' in D14 at $1544 PSF / $1.28M — but 829 sqft for a single bedroom is highly anomalous (likely a misclassified 2BR or a jumbo/loft unit). With only 2 URA transactions and no median, there is essentially no reliable project data to underwrite this.",
+      "rating_rationale": "Only 2 URA txns and no median PSF — appreciation is unmeasurable from the dossier. The 829 sqft / 1BR mismatch means the listing classification is unreliable; at $1.28M the quantum is high for a 1BR and the per-sqft of $1544 is reasonable for a 2BR-equivalent. Freehold near Aljunied is decent, but the data void prevents any confident value or growth call. Withhold to Neutral pending verification.",
+      "red_flags": [
+        "Only 2 URA transactions and no median PSF — appreciation unverifiable",
+        "829 sqft for a 1BR is a strong size/bedroom mismatch — likely misclassified",
+        "$1.28M quantum is high if genuinely a 1BR; layout ambiguity hurts resale clarity",
+        "2009 build — 17 years old"
+      ],
+      "catalysts": [
+        "Freehold tenure near Aljunied MRT",
+        "If actually a large 2BR/loft, $1544 PSF would be competitive for the area",
+        "Paya Lebar/Aljunied transformation zone"
+      ],
+      "as_of": {
+        "price": 1280000,
+        "psf": 1544.03,
+        "beds": 1,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 829 sqft 'freehold 1BR' in D14 at $1544 PSF / $1.28M — but 829 sqft for a single bedroom is highly anomalous (likely a misclassified 2BR or a jumbo/loft unit). With only 2 URA transactions and no median, there is essentially no reliable project data to underwrite this.",
+        "rating": "Neutral",
+        "rating_rationale": "Only 2 URA txns and no median PSF — appreciation is unmeasurable from the dossier. The 829 sqft / 1BR mismatch means the listing classification is unreliable; at $1.28M the quantum is high for a 1BR and the per-sqft of $1544 is reasonable for a 2BR-equivalent. Freehold near Aljunied is decent, but the data void prevents any confident value or growth call. Withhold to Neutral pending verification.",
+        "red_flags": [
+          "Only 2 URA transactions and no median PSF — appreciation unverifiable",
+          "829 sqft for a 1BR is a strong size/bedroom mismatch — likely misclassified",
+          "$1.28M quantum is high if genuinely a 1BR; layout ambiguity hurts resale clarity",
+          "2009 build — 17 years old"
+        ],
+        "catalysts": [
+          "Freehold tenure near Aljunied MRT",
+          "If actually a large 2BR/loft, $1544 PSF would be competitive for the area",
+          "Paya Lebar/Aljunied transformation zone"
+        ],
+        "rental_assessment": "Layout ambiguity makes rental hard to forecast; a large freehold unit near Aljunied would rent fine, but the unclear configuration is a tenant-targeting question mark.",
+        "appreciation_assessment": "No usable URA series (2 txns). Cannot underwrite a rate; freehold D14 baseline applies but with no project-specific confirmation.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-arizon-500019357",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

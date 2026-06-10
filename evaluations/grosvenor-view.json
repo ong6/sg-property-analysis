@@ -1,0 +1,61 @@
+{
+  "condo": "Grosvenor View",
+  "slug": "grosvenor-view",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 883 sqft 2BR near Kembangan MRT at $1,574 PSF — ~9% below the $1,736 URA median — in a small D14 boutique block. The freehold tenure and sub-median pricing are attractive, but the 7.6% appreciation rests on just 10 transactions, which is too thin to trust and the development is illiquid.",
+      "rating_rationale": "Freehold and a $1,574 PSF entry below the $1,736 median are genuine positives, and the price ($1.39M) sits in a liquid band. But the headline 7.65% CAGR is built on only 10 txns (unreliable), Kembangan is ~790m, and the small boutique scale means slow exit. Fair value, not a clear edge.",
+      "red_flags": [
+        "Only 10 txns — appreciation rate unreliable",
+        "Small boutique development, shallow buyer pool/illiquid exit",
+        "Kembangan MRT ~790m walk"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay)",
+        "Sub-median PSF entry vs URA $1,736",
+        "Established East-West Line corridor"
+      ],
+      "as_of": {
+        "price": 1390000,
+        "psf": 1574.18,
+        "beds": 2,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 883 sqft 2BR near Kembangan MRT at $1,574 PSF — ~9% below the $1,736 URA median — in a small D14 boutique block. The freehold tenure and sub-median pricing are attractive, but the 7.6% appreciation rests on just 10 transactions, which is too thin to trust and the development is illiquid.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a $1,574 PSF entry below the $1,736 median are genuine positives, and the price ($1.39M) sits in a liquid band. But the headline 7.65% CAGR is built on only 10 txns (unreliable), Kembangan is ~790m, and the small boutique scale means slow exit. Fair value, not a clear edge.",
+        "red_flags": [
+          "Only 10 txns — appreciation rate unreliable",
+          "Small boutique development, shallow buyer pool/illiquid exit",
+          "Kembangan MRT ~790m walk"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay)",
+          "Sub-median PSF entry vs URA $1,736",
+          "Established East-West Line corridor"
+        ],
+        "rental_assessment": "Freehold 2BR near Kembangan draws steady tenants but the small development limits visibility; yield ordinary.",
+        "appreciation_assessment": "10-txn CAGR cannot be relied on; freehold East-side 2BR should track district averages rather than the inflated 7.6% headline.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grosvenor-view-500162542",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

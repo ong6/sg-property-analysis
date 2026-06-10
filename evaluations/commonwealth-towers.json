@@ -1,0 +1,117 @@
+{
+  "condo": "Commonwealth Towers",
+  "slug": "commonwealth-towers",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 452 sqft 99-yr-leasehold 1BR (built 2017) at Commonwealth Towers, D03, for $968k / $2,142 PSF — just 220m from Queenstown MRT (East-West Line). A large, highly liquid development (250 reliable URA txns) priced ~5% below the $2,264 median, in the RCR with GSW/One-North adjacency; the main drag is a tiny 452 sqft shoebox and modest 3.48% appreciation.",
+      "rating_rationale": "220m to Queenstown MRT (direct EW line, one stop from the future GSW corridor and near One-North) is excellent, and the 250-txn URA base gives high liquidity confidence — easy entry and exit. Asking $2,142 PSF is ~5% under the $2,264 median (real entry margin) at a sub-$1M quantum, the broadest investor buyer band. 3.48%/yr appreciation is reliable RCR-baseline, not stellar, and 452 sqft is a true shoebox — but for a city-fringe 1BR investment the transit, liquidity and below-median entry make a coherent case.",
+      "red_flags": [
+        "452 sqft shoebox — niche unit, smallest in the batch",
+        "3.48%/yr appreciation is RCR-baseline, not a standout rate",
+        "99-yr leasehold (2017) — modest long-term lease decay"
+      ],
+      "catalysts": [
+        "220m to EW19 Queenstown MRT — excellent direct-line transit",
+        "Below-median entry (~5% under $2,264) at a sub-$1M quantum; 250-txn deep liquidity",
+        "Queenstown/One-North/Greater Southern Waterfront RCR growth corridor"
+      ],
+      "as_of": {
+        "price": 968000,
+        "psf": 2141.59,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 452 sqft 99-yr-leasehold 1BR (built 2017) at Commonwealth Towers, D03, for $968k / $2,142 PSF — just 220m from Queenstown MRT (East-West Line). A large, highly liquid development (250 reliable URA txns) priced ~5% below the $2,264 median, in the RCR with GSW/One-North adjacency; the main drag is a tiny 452 sqft shoebox and modest 3.48% appreciation.",
+        "rating": "Buy",
+        "rating_rationale": "220m to Queenstown MRT (direct EW line, one stop from the future GSW corridor and near One-North) is excellent, and the 250-txn URA base gives high liquidity confidence — easy entry and exit. Asking $2,142 PSF is ~5% under the $2,264 median (real entry margin) at a sub-$1M quantum, the broadest investor buyer band. 3.48%/yr appreciation is reliable RCR-baseline, not stellar, and 452 sqft is a true shoebox — but for a city-fringe 1BR investment the transit, liquidity and below-median entry make a coherent case.",
+        "red_flags": [
+          "452 sqft shoebox — niche unit, smallest in the batch",
+          "3.48%/yr appreciation is RCR-baseline, not a standout rate",
+          "99-yr leasehold (2017) — modest long-term lease decay"
+        ],
+        "catalysts": [
+          "220m to EW19 Queenstown MRT — excellent direct-line transit",
+          "Below-median entry (~5% under $2,264) at a sub-$1M quantum; 250-txn deep liquidity",
+          "Queenstown/One-North/Greater Southern Waterfront RCR growth corridor"
+        ],
+        "rental_assessment": "Queenstown is a strong rental node — minutes to One-North, the CBD fringe and Mapletree Business City; a shoebox right at the MRT lets quickly and yields ~3.7%+ at this entry, healthy for the segment.",
+        "appreciation_assessment": "3.48% on 250 reliable txns is dependable RCR performance; below-median entry plus the GSW/One-North corridor give modest upside on top of a solid floor.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale-only 3.48% (250 txns, reliable), nudged for below-median entry + RCR catalysts"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-commonwealth-towers-500087228",
+        "review_file": "cov_batch_15.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Top-tier leasehold project, 3min walk to Queenstown MRT (EW19) with full facilities — but this specific 1BR listing at $2,142 psf is at the top of its own shoebox band, with cheaper comparable units currently available.",
+      "rating_rationale": "The development is genuinely excellent (TOP 2017, integrated/near-MRT, robust data: appreciation_txns=250, psf_cohort_txns=32), and District 3 Queenstown is a strong RCR location. But the algo's -7.5% 'cheap' is measured against the project-pooled median (~$2,253 psf avg, which is dragged up by large 3-4BR units); judged against its OWN 1BR/452sqft cohort, this listing is NOT cheap. Live verification found comparable 452sqft 1BRs asking $880,000 (~$1,947 psf) and $955,000 (~$2,113 psf) — both below this $968,000 (~$2,142 psf) ask. So a buyer is paying at/above the shoebox band, not below it (per v3.2 size-relative principle). Quality and liquidity are real, but with zero entry discount, flat-to-modest forward prospects (3.48% trailing CAGR has ~0 forward power), and a high absolute psf, there is no margin of safety. A buy at one of the cheaper comps would be defensible; this exact unit is fully priced — Neutral.",
+      "red_flags": [
+        "Listing at $2,142 psf is above comparable 1BR/452sqft units currently asking ~$1,947 and ~$2,113 psf",
+        "Algo's -7.5% 'cheap' uses the project-pooled median (inflated by large units); v3.2 size-cohort shows this 1BR is not cheap vs its own band",
+        "High absolute entry psf (~$2,142) leaves no margin of safety",
+        "99-yr leasehold from 2017 — lease decay clock running"
+      ],
+      "catalysts": [
+        "3-minute walk to Queenstown MRT (EW19); near Redhill, one-north, CBD",
+        "Established, high-liquidity development (250 appreciation txns, 32 in 1BR cohort) with strong facilities and 1:1 carpark"
+      ],
+      "as_of": {
+        "price": 968000,
+        "psf": 2141.59,
+        "beds": 1,
+        "sqft": 452
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "high",
+        "summary": "Top-tier leasehold project, 3min walk to Queenstown MRT (EW19) with full facilities — but this specific 1BR listing at $2,142 psf is at the top of its own shoebox band, with cheaper comparable units currently available.",
+        "rating_rationale": "The development is genuinely excellent (TOP 2017, integrated/near-MRT, robust data: appreciation_txns=250, psf_cohort_txns=32), and District 3 Queenstown is a strong RCR location. But the algo's -7.5% 'cheap' is measured against the project-pooled median (~$2,253 psf avg, which is dragged up by large 3-4BR units); judged against its OWN 1BR/452sqft cohort, this listing is NOT cheap. Live verification found comparable 452sqft 1BRs asking $880,000 (~$1,947 psf) and $955,000 (~$2,113 psf) — both below this $968,000 (~$2,142 psf) ask. So a buyer is paying at/above the shoebox band, not below it (per v3.2 size-relative principle). Quality and liquidity are real, but with zero entry discount, flat-to-modest forward prospects (3.48% trailing CAGR has ~0 forward power), and a high absolute psf, there is no margin of safety. A buy at one of the cheaper comps would be defensible; this exact unit is fully priced — Neutral.",
+        "red_flags": [
+          "Listing at $2,142 psf is above comparable 1BR/452sqft units currently asking ~$1,947 and ~$2,113 psf",
+          "Algo's -7.5% 'cheap' uses the project-pooled median (inflated by large units); v3.2 size-cohort shows this 1BR is not cheap vs its own band",
+          "High absolute entry psf (~$2,142) leaves no margin of safety",
+          "99-yr leasehold from 2017 — lease decay clock running"
+        ],
+        "catalysts": [
+          "3-minute walk to Queenstown MRT (EW19); near Redhill, one-north, CBD",
+          "Established, high-liquidity development (250 appreciation txns, 32 in 1BR cohort) with strong facilities and 1:1 carpark"
+        ],
+        "appreciation_assessment": "3.48% 5yr CAGR on a deep 250-txn base — credible as history but, per v3.4, ~0 forward power; no fresh dated catalyst to re-rate from here.",
+        "rental_assessment": "Prime near-MRT Queenstown shoebox rents well (1BRs around ~$4,400/mo per live listings), but the high entry price compresses gross yield to roughly the mid-4% range — adequate, not standout."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-commonwealth-towers-500087228",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

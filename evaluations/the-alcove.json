@@ -1,0 +1,61 @@
+{
+  "condo": "The Alcove",
+  "slug": "the-alcove",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The algo's -22.8% cheapness and 'very_low_psf' flag are a data quirk — the asking $1,222 psf is actually ABOVE the project's recent transacted prices (avg ~$1,057 psf, max ~$1,161). This is the opposite of a bargain.",
+      "rating_rationale": "Web verification inverts the algo's signal: The Alcove (D14, completed 2004) transacted over the last 12 months at S$874-$1,148 psf, averaging ~$1,057 psf, with the highest recent deal at ~$1,161 psf (Feb-2025, 1,356 sqft). The asking of $1,222 psf is therefore ABOVE every recent comparable, not -22.8% below district peers — the negative age-adj premium and 'very_low_psf' flag are artifacts of a thin cohort (psf_cohort_txns=3) and old/mixed comps, exactly the data quirk the v3.4 priors warn about. Worse, residents report the units feel smaller than their paper size (\"despite larger than 1000 sqft on paper the actual size is only comparable to 800-900 sqft\") and note heavy subletting/noise, so $1.75m for nominal 1,432 sqft may be buying inflated GFA. 22-year-old 99yr leasehold with ~77 years left and a dated, sublet-heavy profile. No forward edge.",
+      "red_flags": [
+        "Asking $1,222 psf is ABOVE recent transacted prices (~$1,057 avg / $1,161 max) — cheapness signal is a data quirk, not real",
+        "psf_cohort_txns=3 and appreciation_txns=22 — thin data driving the -22.8% premium",
+        "Residents report effective area far below paper size (~800-900 sqft feel for >1,000 sqft on paper)",
+        "Heavy subletting and tenant noise; aging 2004 leasehold",
+        "very_old_property flag combined with a misleading very_low_psf flag"
+      ],
+      "catalysts": [
+        "Proximity to Dakota/Mountbatten/Aljunied MRT (existing, not a fresh catalyst)"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1222.07,
+        "beds": 3,
+        "sqft": 1432
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The algo's -22.8% cheapness and 'very_low_psf' flag are a data quirk — the asking $1,222 psf is actually ABOVE the project's recent transacted prices (avg ~$1,057 psf, max ~$1,161). This is the opposite of a bargain.",
+        "rating_rationale": "Web verification inverts the algo's signal: The Alcove (D14, completed 2004) transacted over the last 12 months at S$874-$1,148 psf, averaging ~$1,057 psf, with the highest recent deal at ~$1,161 psf (Feb-2025, 1,356 sqft). The asking of $1,222 psf is therefore ABOVE every recent comparable, not -22.8% below district peers — the negative age-adj premium and 'very_low_psf' flag are artifacts of a thin cohort (psf_cohort_txns=3) and old/mixed comps, exactly the data quirk the v3.4 priors warn about. Worse, residents report the units feel smaller than their paper size (\"despite larger than 1000 sqft on paper the actual size is only comparable to 800-900 sqft\") and note heavy subletting/noise, so $1.75m for nominal 1,432 sqft may be buying inflated GFA. 22-year-old 99yr leasehold with ~77 years left and a dated, sublet-heavy profile. No forward edge.",
+        "red_flags": [
+          "Asking $1,222 psf is ABOVE recent transacted prices (~$1,057 avg / $1,161 max) — cheapness signal is a data quirk, not real",
+          "psf_cohort_txns=3 and appreciation_txns=22 — thin data driving the -22.8% premium",
+          "Residents report effective area far below paper size (~800-900 sqft feel for >1,000 sqft on paper)",
+          "Heavy subletting and tenant noise; aging 2004 leasehold",
+          "very_old_property flag combined with a misleading very_low_psf flag"
+        ],
+        "catalysts": [
+          "Proximity to Dakota/Mountbatten/Aljunied MRT (existing, not a fresh catalyst)"
+        ],
+        "appreciation_assessment": "Trailing 4.02% CAGR rests on only 22 txns and is not forward-predictive; the supposed value edge fails verification, so there is no robust forward signal.",
+        "rental_assessment": "Already a sublet-heavy block with noise complaints; gross yield may look optically fine but the inflated paper sqft overstates the asset and tenant quality is mixed."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-alcove-500161544",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

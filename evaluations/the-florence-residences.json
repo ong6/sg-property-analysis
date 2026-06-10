@@ -60,6 +60,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-florence-residences-60061771",
         "review_file": "batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1BR priced below its own size-cohort in a young D19 project with a dated Cross Island Line interchange catalyst and robust supporting data.",
+      "rating_rationale": "Asking $1,567 psf is genuinely below the 1BR cohort: launch 1BRs were ~$1,729 psf and resale small units now trade ~$1,700-$1,734 psf, so the -15.8% psf_premium_vs_cohort is credible, not a mis-scrape. Critically the data is robust — appreciation rests on 753 txns and the psf cohort on 51 txns — so this is one of the few non-thin names in this batch. age_adj_premium -17.7% confirms it screens cheap for a 2023 build. D19 is a favorable OCR forward region, and Hougang MRT becoming an NEL x Cross Island Line interchange (CRL operational ~2029-2032) is a concrete, dated catalyst that supports the location. The main caveats are the leasehold start (no FH premium) and that 1BR exit depends on investor/sharer demand.",
+      "red_flags": [
+        "1BR exit liquidity hinges on investor demand, more cyclical than family units",
+        "99LH started 2023 — no scarcity premium",
+        "Large project (~1,400 units) means competing 1BR resale/rental supply"
+      ],
+      "catalysts": [
+        "Hougang MRT to become NEL x Cross Island Line interchange (~2029-2032)",
+        "Priced below verified 1BR cohort PSF — genuine relative value",
+        "Young 2023 build, full facilities (80m lagoon), low maintenance risk"
+      ],
+      "as_of": {
+        "price": 945000,
+        "psf": 1567.16,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "1BR priced below its own size-cohort in a young D19 project with a dated Cross Island Line interchange catalyst and robust supporting data.",
+        "rating_rationale": "Asking $1,567 psf is genuinely below the 1BR cohort: launch 1BRs were ~$1,729 psf and resale small units now trade ~$1,700-$1,734 psf, so the -15.8% psf_premium_vs_cohort is credible, not a mis-scrape. Critically the data is robust — appreciation rests on 753 txns and the psf cohort on 51 txns — so this is one of the few non-thin names in this batch. age_adj_premium -17.7% confirms it screens cheap for a 2023 build. D19 is a favorable OCR forward region, and Hougang MRT becoming an NEL x Cross Island Line interchange (CRL operational ~2029-2032) is a concrete, dated catalyst that supports the location. The main caveats are the leasehold start (no FH premium) and that 1BR exit depends on investor/sharer demand.",
+        "red_flags": [
+          "1BR exit liquidity hinges on investor demand, more cyclical than family units",
+          "99LH started 2023 — no scarcity premium",
+          "Large project (~1,400 units) means competing 1BR resale/rental supply"
+        ],
+        "catalysts": [
+          "Hougang MRT to become NEL x Cross Island Line interchange (~2029-2032)",
+          "Priced below verified 1BR cohort PSF — genuine relative value",
+          "Young 2023 build, full facilities (80m lagoon), low maintenance risk"
+        ],
+        "appreciation_assessment": "4.49% on resale-only over 753 txns is well-supported but near-zero forward per priors; the real forward edge is the verified cohort discount plus the dated CRL interchange catalyst.",
+        "rental_assessment": "603 sqft 1BR near Hougang/Kovan MRT in OCR rents readily to singles/couples; $945k entry implies a healthy gross yield and the CRL upgrade should firm tenant demand toward 2029."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-florence-residences-25570730",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

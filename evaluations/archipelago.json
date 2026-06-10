@@ -1,0 +1,117 @@
+{
+  "condo": "Archipelago",
+  "slug": "archipelago",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "99-yr leasehold 1BR at Archipelago, a large D16 (Bedok Reservoir) development 680m from DT29 Bedok North, asking $888,888 at $1,333 PSF for 667 sqft. Strong 150-txn URA base gives a highly reliable 7.06%/yr rate, and PSF is ~19% under the $1,638 median.",
+      "rating_rationale": "The standout liquidity profile of the batch: 150 URA txns make the 7.06%/yr appreciation credible (not a thin-data illusion), it's a large development (deep buyer pool), efficient 667 sqft 1BR, sub-$900k entry, and DTL connectivity. PSF discount to median plus reliable above-baseline appreciation is a genuinely good investment setup. Leasehold and 2015 build are minor offsets.",
+      "red_flags": [
+        "99-yr leasehold (lease decay over long horizon)",
+        "Bedok Reservoir is OCR-fringe — appreciation depends on TEL/Bayshore precinct momentum"
+      ],
+      "catalysts": [
+        "TEL + Bayshore precinct development in Upper East Coast",
+        "Large liquid development with proven 150-txn resale depth",
+        "Reliable 7%/yr URA appreciation, ~19% PSF discount to median",
+        "DTL Bedok North access, sub-$900k entry"
+      ],
+      "as_of": {
+        "price": 888888,
+        "psf": 1332.67,
+        "beds": 1,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 1BR at Archipelago, a large D16 (Bedok Reservoir) development 680m from DT29 Bedok North, asking $888,888 at $1,333 PSF for 667 sqft. Strong 150-txn URA base gives a highly reliable 7.06%/yr rate, and PSF is ~19% under the $1,638 median.",
+        "rating": "Buy",
+        "rating_rationale": "The standout liquidity profile of the batch: 150 URA txns make the 7.06%/yr appreciation credible (not a thin-data illusion), it's a large development (deep buyer pool), efficient 667 sqft 1BR, sub-$900k entry, and DTL connectivity. PSF discount to median plus reliable above-baseline appreciation is a genuinely good investment setup. Leasehold and 2015 build are minor offsets.",
+        "red_flags": [
+          "99-yr leasehold (lease decay over long horizon)",
+          "Bedok Reservoir is OCR-fringe — appreciation depends on TEL/Bayshore precinct momentum"
+        ],
+        "catalysts": [
+          "TEL + Bayshore precinct development in Upper East Coast",
+          "Large liquid development with proven 150-txn resale depth",
+          "Reliable 7%/yr URA appreciation, ~19% PSF discount to median",
+          "DTL Bedok North access, sub-$900k entry"
+        ],
+        "rental_assessment": "Bedok has steady HDB-upgrader and tenant demand; efficient 1BR near DTL yields ~3.5-4%.",
+        "appreciation_assessment": "150-txn URA series at 7.06%/yr is the most reliable appreciation signal in the batch — above OCR baseline, well-supported.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 6.5,
+        "appreciation_rate_source": "URA 150-txn series (high confidence), modest haircut for lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-archipelago-500087029",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely-cheap 667sqft 1BR at a well-built UOL/SingLand resort-style D16 development; asking PSF verifiably sits below the project's own recent transactions, in an OCR location the v3.4 prior favours.",
+      "rating_rationale": "Asking $1,332 psf is real value: verified Archipelago transactions over the past 12 months averaged ~$1,457-1,504 psf (range ~$1,103-1,701), so the -22.1% age-adj cheapness is corroborated, not a single-comp artifact. Developer is UOL Group + Singapore Land (strong build quality, well-maintained, responsive MC per reviews); 2015 completion leaves ~88 yrs lease. D16 (OCR) carries the better realized forward return (~+4.0%) under the v3.4 region prior. The 7.06% 5yr CAGR (150 txns) is robust enough to be a real story but I weight it only lightly per backtest. Main caveats: 667sqft is large for a '1BR' (likely 1+study, slightly oddly-positioned for pure rental yield), and the size-cohort behind the -17.6% psf-vs-cohort figure is thin (only 2 txns), so the precise cohort discount is less reliable than the project-level cheapness.",
+      "red_flags": [
+        "psf_cohort_txns of only 2 makes the -17.6% same-size discount statistically thin",
+        "667sqft is oversized for a 1BR (likely 1+study), narrowing the tenant/buyer pool vs a compact 1BR",
+        "Bedok Reservoir location is not directly MRT-adjacent (walk to Bedok Reservoir MRT)"
+      ],
+      "catalysts": [
+        "Asking PSF below the project's own verified 12-month transaction average leaves room to exit at market",
+        "OCR/East rental demand and resort-style facilities support tenancy",
+        "Strong UOL/SingLand build quality underpins long-term value retention"
+      ],
+      "as_of": {
+        "price": 888888,
+        "psf": 1332.67,
+        "beds": 1,
+        "sqft": 667
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely-cheap 667sqft 1BR at a well-built UOL/SingLand resort-style D16 development; asking PSF verifiably sits below the project's own recent transactions, in an OCR location the v3.4 prior favours.",
+        "rating_rationale": "Asking $1,332 psf is real value: verified Archipelago transactions over the past 12 months averaged ~$1,457-1,504 psf (range ~$1,103-1,701), so the -22.1% age-adj cheapness is corroborated, not a single-comp artifact. Developer is UOL Group + Singapore Land (strong build quality, well-maintained, responsive MC per reviews); 2015 completion leaves ~88 yrs lease. D16 (OCR) carries the better realized forward return (~+4.0%) under the v3.4 region prior. The 7.06% 5yr CAGR (150 txns) is robust enough to be a real story but I weight it only lightly per backtest. Main caveats: 667sqft is large for a '1BR' (likely 1+study, slightly oddly-positioned for pure rental yield), and the size-cohort behind the -17.6% psf-vs-cohort figure is thin (only 2 txns), so the precise cohort discount is less reliable than the project-level cheapness.",
+        "red_flags": [
+          "psf_cohort_txns of only 2 makes the -17.6% same-size discount statistically thin",
+          "667sqft is oversized for a 1BR (likely 1+study), narrowing the tenant/buyer pool vs a compact 1BR",
+          "Bedok Reservoir location is not directly MRT-adjacent (walk to Bedok Reservoir MRT)"
+        ],
+        "catalysts": [
+          "Asking PSF below the project's own verified 12-month transaction average leaves room to exit at market",
+          "OCR/East rental demand and resort-style facilities support tenancy",
+          "Strong UOL/SingLand build quality underpins long-term value retention"
+        ],
+        "appreciation_assessment": "7.06% trailing 5yr CAGR over 150 txns is a credible historical figure but treated as ~0 forward signal per backtest; forward case rests on OCR baseline (~+4%) plus the verified entry discount.",
+        "rental_assessment": "Compact-ish OCR unit near Bedok Reservoir with strong facilities should rent well to couples/professionals; 667sqft gives livable space, though the larger footprint slightly dilutes gross yield vs a true 1BR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-archipelago-500087029",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

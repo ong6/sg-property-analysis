@@ -1,0 +1,59 @@
+{
+  "condo": "Edenz Loft",
+  "slug": "edenz-loft",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Tiny 42-unit freehold project on Lorong 24 Geylang. The asking $1,644 psf is roughly 20% ABOVE what the project actually transacts at — the algo's 'cheap' tag is a data quirk and is overridden by verified evidence.",
+      "rating_rationale": "Web verification flatly contradicts the algo's age_adj_premium of -12.6%: actual recent Edenz Loft transactions cluster around ~$1,360 psf (the highest psf on record was ~$1,394 back in May 2019), so the $1,644 psf ask is ~20% above realistic value. The algo's OWN psf_premium_vs_cohort of +15.1% (its 'psf_overpriced' flag) is the accurate signal here, and appreciation_txns=7 (thin) makes the 2.73% CAGR unreliable. Independent reporting (EdgeProp/Yahoo 'Project Spotlight') singles out this cluster of Geylang freehold condos for having MORE loss-making than profitable resales — Edenz Loft itself showed 8 unprofitable vs 7 profitable exits. Add a 42-unit micro-project (poor liquidity), a Geylang address with resale/financing stigma, and no catalyst. Overpriced, illiquid, and with a documented loss history — a clear Avoid at high confidence.",
+      "red_flags": [
+        "Asking $1,644 psf vs actual transacted ~$1,360 psf — roughly 20% overpriced",
+        "Algo's own psf_overpriced flag (+15.1% vs cohort) is the correct read; the -12.6% 'cheap' is a data quirk",
+        "Documented track record of more loss-making than profitable resales (8 vs 7)",
+        "42-unit micro-project — very thin resale liquidity",
+        "Geylang locale carries resale/financing/tenant-profile stigma",
+        "appreciation_pct (2.73%) rests on only 7 txns — unreliable"
+      ],
+      "catalysts": [],
+      "as_of": {
+        "price": 850000,
+        "psf": 1644.1,
+        "beds": 1,
+        "sqft": 517
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "high",
+        "summary": "Tiny 42-unit freehold project on Lorong 24 Geylang. The asking $1,644 psf is roughly 20% ABOVE what the project actually transacts at — the algo's 'cheap' tag is a data quirk and is overridden by verified evidence.",
+        "rating_rationale": "Web verification flatly contradicts the algo's age_adj_premium of -12.6%: actual recent Edenz Loft transactions cluster around ~$1,360 psf (the highest psf on record was ~$1,394 back in May 2019), so the $1,644 psf ask is ~20% above realistic value. The algo's OWN psf_premium_vs_cohort of +15.1% (its 'psf_overpriced' flag) is the accurate signal here, and appreciation_txns=7 (thin) makes the 2.73% CAGR unreliable. Independent reporting (EdgeProp/Yahoo 'Project Spotlight') singles out this cluster of Geylang freehold condos for having MORE loss-making than profitable resales — Edenz Loft itself showed 8 unprofitable vs 7 profitable exits. Add a 42-unit micro-project (poor liquidity), a Geylang address with resale/financing stigma, and no catalyst. Overpriced, illiquid, and with a documented loss history — a clear Avoid at high confidence.",
+        "red_flags": [
+          "Asking $1,644 psf vs actual transacted ~$1,360 psf — roughly 20% overpriced",
+          "Algo's own psf_overpriced flag (+15.1% vs cohort) is the correct read; the -12.6% 'cheap' is a data quirk",
+          "Documented track record of more loss-making than profitable resales (8 vs 7)",
+          "42-unit micro-project — very thin resale liquidity",
+          "Geylang locale carries resale/financing/tenant-profile stigma",
+          "appreciation_pct (2.73%) rests on only 7 txns — unreliable"
+        ],
+        "catalysts": [],
+        "appreciation_assessment": "2.73% CAGR over just 7 txns — statistically noisy and, per v3.4, no forward predictive value. History shows realized losses, not gains, for many sellers.",
+        "rental_assessment": "~4.2% quoted yield is mediocre for a freehold shoebox and does not compensate for the ~20% overpaying on entry; would-be yield is eroded by buying above market."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-edenz-loft-24177799",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

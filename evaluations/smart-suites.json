@@ -1,0 +1,119 @@
+{
+  "condo": "Smart Suites",
+  "slug": "smart-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A freehold 2BR (Smart Suites, D14) just 260m from Aljunied MRT at $1.25M / $1,416 psf — about 10% below the $1,567 URA median, an efficient 883 sqft layout in the deep sub-$1.3M buyer band. The standout is doorstep MRT and a genuine PSF discount; the catch is a weak 1.35% face-value CAGR on a thin 17-txn series.",
+      "rating_rationale": "Doorstep MRT (260m to Aljunied EW9), freehold tenure, an efficient 883 sqft 2BR (no size bloat), and a real ~10% discount to the $1,567 URA median at a liquid $1.25M quantum — this is a clean, broadly saleable, rentable package. The 1.35% appreciation is low but it is resale-only and from only 17 txns, so it understates likely performance for a doorstep-MRT freehold in gentrifying Geylang/Aljunied. The strong frontier position (score 774) and below-median entry give margin of safety.",
+      "red_flags": [
+        "1.35% face-value CAGR is low (thin 17-txn series — understates likely)",
+        "Geylang/Aljunied locale carries some perception sensitivity",
+        "Boutique/smaller development — modest facilities"
+      ],
+      "catalysts": [
+        "260m to Aljunied EW9 MRT — doorstep connectivity",
+        "Freehold at ~10% below URA median — real value cushion",
+        "Sub-$1.3M efficient 2BR sits in the deepest buyer/tenant band",
+        "Paya Lebar Central transformation nearby (airbase relocation)"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1415.63,
+        "beds": 2,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (Smart Suites, D14) just 260m from Aljunied MRT at $1.25M / $1,416 psf — about 10% below the $1,567 URA median, an efficient 883 sqft layout in the deep sub-$1.3M buyer band. The standout is doorstep MRT and a genuine PSF discount; the catch is a weak 1.35% face-value CAGR on a thin 17-txn series.",
+        "rating": "Buy",
+        "rating_rationale": "Doorstep MRT (260m to Aljunied EW9), freehold tenure, an efficient 883 sqft 2BR (no size bloat), and a real ~10% discount to the $1,567 URA median at a liquid $1.25M quantum — this is a clean, broadly saleable, rentable package. The 1.35% appreciation is low but it is resale-only and from only 17 txns, so it understates likely performance for a doorstep-MRT freehold in gentrifying Geylang/Aljunied. The strong frontier position (score 774) and below-median entry give margin of safety.",
+        "red_flags": [
+          "1.35% face-value CAGR is low (thin 17-txn series — understates likely)",
+          "Geylang/Aljunied locale carries some perception sensitivity",
+          "Boutique/smaller development — modest facilities"
+        ],
+        "catalysts": [
+          "260m to Aljunied EW9 MRT — doorstep connectivity",
+          "Freehold at ~10% below URA median — real value cushion",
+          "Sub-$1.3M efficient 2BR sits in the deepest buyer/tenant band",
+          "Paya Lebar Central transformation nearby (airbase relocation)"
+        ],
+        "rental_assessment": "Doorstep-MRT efficient 2BR is prime rental stock — broad tenant pool, ~3.5-4% gross at this price; strongest of the value props here.",
+        "appreciation_assessment": "The 1.35% rate is depressed by sparse data; a doorstep-MRT freehold near a transforming Paya Lebar Central should track RCR-fringe better than the headline implies.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-smart-suites-500032329",
+        "review_file": "cov_batch_21.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A real but thinly-evidenced discount on a 3BR penthouse in a tiny 72-unit Geylang-fringe freehold project — cheap, but illiquid and data-quirky, so Neutral.",
+      "rating_rationale": "Asking $1.5M / $1,290 psf for the 1,163 sqft unit is below the project's 12mo transacted range of $1,529-$1,586 psf (avg ~$1,558), so the -30.4% age-adj and -13.6% vs cohort point to a genuine discount — but the evidence is thin: psf_cohort_txns=0, appreciation_txns=17, the project has only 72 units, and the unit is a 3BR penthouse (1,163 sqft is tight for 3BR, hence the 'very_low_psf' flag context). Per v3.4 I down-weight a big negative premium built on so few comparables and cut confidence. D14 Sims Ave is Geylang-fringe — usable RCR location but with red-light-proximity sentiment drag on resale and tenant mix. Freehold is not a forward edge per v3.4. Real value is offset by illiquidity, thin data, and location stigma — Neutral, low confidence.",
+      "red_flags": [
+        "psf_cohort_txns=0 and only 17 appreciation txns — discount is thinly evidenced",
+        "Tiny 72-unit project — low resale liquidity",
+        "1,163 sqft 3BR penthouse — tight layout, niche resale",
+        "D14 Sims Ave — Geylang red-light proximity sentiment/tenant drag"
+      ],
+      "catalysts": [
+        "Freehold tenure (durability, but not a forward edge per v3.4)",
+        "Below recent transacted PSF if the discount holds",
+        "Walkable to Aljunied/Paya Lebar amenities"
+      ],
+      "as_of": {
+        "price": 1499999,
+        "psf": 1289.77,
+        "beds": 3,
+        "sqft": 1163
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "A real but thinly-evidenced discount on a 3BR penthouse in a tiny 72-unit Geylang-fringe freehold project — cheap, but illiquid and data-quirky, so Neutral.",
+        "rating_rationale": "Asking $1.5M / $1,290 psf for the 1,163 sqft unit is below the project's 12mo transacted range of $1,529-$1,586 psf (avg ~$1,558), so the -30.4% age-adj and -13.6% vs cohort point to a genuine discount — but the evidence is thin: psf_cohort_txns=0, appreciation_txns=17, the project has only 72 units, and the unit is a 3BR penthouse (1,163 sqft is tight for 3BR, hence the 'very_low_psf' flag context). Per v3.4 I down-weight a big negative premium built on so few comparables and cut confidence. D14 Sims Ave is Geylang-fringe — usable RCR location but with red-light-proximity sentiment drag on resale and tenant mix. Freehold is not a forward edge per v3.4. Real value is offset by illiquidity, thin data, and location stigma — Neutral, low confidence.",
+        "appreciation_assessment": "1.35% reported CAGR on only 17 txns is statistically weak and ~0 forward power; not a basis for a rating either way.",
+        "rental_assessment": "Freehold 3BR/penthouse near Aljunied/Paya Lebar rents adequately, but the Geylang-fringe tenant pool and penthouse premium cap yield; mid-3% gross at best.",
+        "red_flags": [
+          "psf_cohort_txns=0 and only 17 appreciation txns — discount is thinly evidenced",
+          "Tiny 72-unit project — low resale liquidity",
+          "1,163 sqft 3BR penthouse — tight layout, niche resale",
+          "D14 Sims Ave — Geylang red-light proximity sentiment/tenant drag"
+        ],
+        "catalysts": [
+          "Freehold tenure (durability, but not a forward edge per v3.4)",
+          "Below recent transacted PSF if the discount holds",
+          "Walkable to Aljunied/Paya Lebar amenities"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-smart-suites-500013848",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

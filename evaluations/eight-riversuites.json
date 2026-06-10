@@ -1,0 +1,115 @@
+{
+  "condo": "Eight Riversuites",
+  "slug": "eight-riversuites",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Listed as a 1BR but at 936sqft this is really a large 1BR+study/compact-2BR layout at $1.15M, with a very low $1,229 PSF versus the $1,858 development median. 440m to Boon Keng MRT, 4.46%/yr on a strong 280-transaction series — a genuinely cheap, large, well-located city-fringe unit.",
+      "rating_rationale": "The PSF (1229 vs 1858 median, a ~34% discount) is real here, not just a size illusion — even adjusting for the generous 936sqft, this is well below the development's transacted median, suggesting a motivated seller or an unrenovated unit worth investigating. 280 URA txns make the 4.46%/yr rate highly reliable. 440m to Boon Keng (NEL, two stops to Little India/Dhoby Ghaut), large 990+ unit development = deep liquidity, $1.15M sits inside the liquid band. The bedroom/size mismatch is a feature for resale flexibility, not a red flag.",
+      "red_flags": [
+        "Large 936sqft for a '1BR' label — verify actual layout (likely 1+study or compact 2BR)",
+        "PSF far below median — investigate whether unit is unrenovated/low-floor/poor-facing",
+        "99LH from 2016"
+      ],
+      "catalysts": [
+        "~34% PSF discount to the $1,858 development median",
+        "440m to Boon Keng MRT on the NEL — strong city-fringe connectivity",
+        "Large 990+ unit development = deep liquidity and reliable comps (280 txns)",
+        "Riverfront setting along Kallang River"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1228.63,
+        "beds": 1,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Listed as a 1BR but at 936sqft this is really a large 1BR+study/compact-2BR layout at $1.15M, with a very low $1,229 PSF versus the $1,858 development median. 440m to Boon Keng MRT, 4.46%/yr on a strong 280-transaction series — a genuinely cheap, large, well-located city-fringe unit.",
+        "rating": "Buy",
+        "rating_rationale": "The PSF (1229 vs 1858 median, a ~34% discount) is real here, not just a size illusion — even adjusting for the generous 936sqft, this is well below the development's transacted median, suggesting a motivated seller or an unrenovated unit worth investigating. 280 URA txns make the 4.46%/yr rate highly reliable. 440m to Boon Keng (NEL, two stops to Little India/Dhoby Ghaut), large 990+ unit development = deep liquidity, $1.15M sits inside the liquid band. The bedroom/size mismatch is a feature for resale flexibility, not a red flag.",
+        "red_flags": [
+          "Large 936sqft for a '1BR' label — verify actual layout (likely 1+study or compact 2BR)",
+          "PSF far below median — investigate whether unit is unrenovated/low-floor/poor-facing",
+          "99LH from 2016"
+        ],
+        "catalysts": [
+          "~34% PSF discount to the $1,858 development median",
+          "440m to Boon Keng MRT on the NEL — strong city-fringe connectivity",
+          "Large 990+ unit development = deep liquidity and reliable comps (280 txns)",
+          "Riverfront setting along Kallang River"
+        ],
+        "rental_assessment": "Boon Keng is a strong rental location (NEL, near CBD/Novena); a large 1BR/flex layout rents to couples and sharers — solid gross yield at this entry PSF.",
+        "appreciation_assessment": "4.46%/yr over 280 transactions is reliable and near the RCR/city-fringe baseline; buying ~34% under median PSF gives genuine room to converge upward.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eight-riversuites-60210597",
+        "review_file": "cov_batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline 'very cheap 1BR at $1,229 psf' is almost certainly a data error — 936 sqft is a 2-3BR size, not a 1BR, and the asking PSF is ~$575 below the project's verified $1,803-1,814 psf 12-month average, a gap too large to be a genuine market deal.",
+      "rating_rationale": "Two dossier red flags (very_low_psf + bedroom_sqft_mismatch) both fire, and the web confirms the problem: Eight Riversuites traded at an average ~$1,814 psf over the last 12 months and ~$1,803 over 6 months, with recent 2025 prints $1,540-$2,015 psf. A $1,228.63 psf asking ($1.15M / 936 sqft) is ~32% below trailing average — implausible for a live, correctly-listed unit in a well-regarded city-fringe project. The most likely explanations are a mislabelled bedroom count (this is a 2BR/3BR, not a 1BR), a stale/under-priced listing, or a sqft mis-scrape. The algo's huge -38.0% age_adj_premium and -32.5% psf_premium_vs_cohort are therefore measuring an input error, not a bargain. Project quality is fine (8.7/10 reviews, Green Mark Gold, well-built) and D12 city-fringe is decent, but I cannot underwrite a Buy on a price that doesn't reconcile with verified transactions. Neutral / low confidence pending verification of the actual unit type and that the price is real and current.",
+      "red_flags": [
+        "bedroom_sqft_mismatch: 936 sqft labelled '1BR' — real 1BRs here are ~441 sqft; this is likely a 2-3BR mis-categorized",
+        "very_low_psf: $1,229 psf vs verified ~$1,803-1,814 psf 12-month average (~32% below) — too large to be a genuine deal; likely stale or mis-scraped",
+        "If the listing is accurate, such a deep discount usually signals a forced/urgent sale or a defective unit — needs investigation"
+      ],
+      "catalysts": [
+        "IF the price is real and current, a 936 sqft city-fringe unit at $1.15M would be a genuine value vs ~$1,800 psf comps — but this must be verified first",
+        "D12 (Whampoa/Boon Keng) city-fringe with NEL access and Kallang River frontage"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1228.63,
+        "beds": 1,
+        "sqft": 936
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline 'very cheap 1BR at $1,229 psf' is almost certainly a data error — 936 sqft is a 2-3BR size, not a 1BR, and the asking PSF is ~$575 below the project's verified $1,803-1,814 psf 12-month average, a gap too large to be a genuine market deal.",
+        "rating_rationale": "Two dossier red flags (very_low_psf + bedroom_sqft_mismatch) both fire, and the web confirms the problem: Eight Riversuites traded at an average ~$1,814 psf over the last 12 months and ~$1,803 over 6 months, with recent 2025 prints $1,540-$2,015 psf. A $1,228.63 psf asking ($1.15M / 936 sqft) is ~32% below trailing average — implausible for a live, correctly-listed unit in a well-regarded city-fringe project. The most likely explanations are a mislabelled bedroom count (this is a 2BR/3BR, not a 1BR), a stale/under-priced listing, or a sqft mis-scrape. The algo's huge -38.0% age_adj_premium and -32.5% psf_premium_vs_cohort are therefore measuring an input error, not a bargain. Project quality is fine (8.7/10 reviews, Green Mark Gold, well-built) and D12 city-fringe is decent, but I cannot underwrite a Buy on a price that doesn't reconcile with verified transactions. Neutral / low confidence pending verification of the actual unit type and that the price is real and current.",
+        "red_flags": [
+          "bedroom_sqft_mismatch: 936 sqft labelled '1BR' — real 1BRs here are ~441 sqft; this is likely a 2-3BR mis-categorized",
+          "very_low_psf: $1,229 psf vs verified ~$1,803-1,814 psf 12-month average (~32% below) — too large to be a genuine deal; likely stale or mis-scraped",
+          "If the listing is accurate, such a deep discount usually signals a forced/urgent sale or a defective unit — needs investigation"
+        ],
+        "catalysts": [
+          "IF the price is real and current, a 936 sqft city-fringe unit at $1.15M would be a genuine value vs ~$1,800 psf comps — but this must be verified first",
+          "D12 (Whampoa/Boon Keng) city-fringe with NEL access and Kallang River frontage"
+        ],
+        "appreciation_assessment": "Reported 4.46% 5yr CAGR on 280 txns is a healthy real sample, but per the v3.4 backtest trailing appreciation has ~0 forward power; I use it only to confirm the project is liquid, not as a forward edge. The forward case is moot until the price/unit-type discrepancy is resolved.",
+        "rental_assessment": "Eight Riversuites is a strong rental performer (city-fringe, NEL, river views), so if the unit is genuinely a 2-3BR at this price the yield would be attractive — but the rental thesis is contingent on the unit being what it claims to be."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eight-riversuites-60210597",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

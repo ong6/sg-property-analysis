@@ -1,0 +1,119 @@
+{
+  "condo": "Atrium Residences",
+  "slug": "atrium-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2,271 sqft 'cheap-PSF' freehold unit billed as a 3BR at $1,114 PSF — but that headline PSF is flattered by huge size; the absolute price is $2.53M near Dakota MRT. Freehold and a 6.37% rate are appealing, but the enormous floor area and 20-txn data make this a niche, low-liquidity buy.",
+      "rating_rationale": "The $1,114 PSF looks like a steal versus the $1,575 median, but it is an artefact of the 2,271 sqft size (likely a penthouse/dual-level) — the $2.53M quantum is what matters and it sits in a thin, niche band for a 3-bed. The 6.37% rate rests on only 20 txns. Freehold and CC8 Dakota (~740m) are real positives, but this is an oversized-unit-as-cheap-PSF trap for an investment hold.",
+      "red_flags": [
+        "2,271 sqft is far oversized for a 3BR — cheap PSF is misleading",
+        "$2.53M quantum is niche/illiquid for a 3-bed",
+        "Only 20 txns underpinning the 6.37% rate"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "CC8 Dakota MRT ~740m (Circle Line)",
+        "Paya Lebar/Geylang corridor proximity"
+      ],
+      "as_of": {
+        "price": 2530000,
+        "psf": 1114.05,
+        "beds": 3,
+        "sqft": 2271.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2,271 sqft 'cheap-PSF' freehold unit billed as a 3BR at $1,114 PSF — but that headline PSF is flattered by huge size; the absolute price is $2.53M near Dakota MRT. Freehold and a 6.37% rate are appealing, but the enormous floor area and 20-txn data make this a niche, low-liquidity buy.",
+        "rating": "Neutral",
+        "rating_rationale": "The $1,114 PSF looks like a steal versus the $1,575 median, but it is an artefact of the 2,271 sqft size (likely a penthouse/dual-level) — the $2.53M quantum is what matters and it sits in a thin, niche band for a 3-bed. The 6.37% rate rests on only 20 txns. Freehold and CC8 Dakota (~740m) are real positives, but this is an oversized-unit-as-cheap-PSF trap for an investment hold.",
+        "red_flags": [
+          "2,271 sqft is far oversized for a 3BR — cheap PSF is misleading",
+          "$2.53M quantum is niche/illiquid for a 3-bed",
+          "Only 20 txns underpinning the 6.37% rate"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "CC8 Dakota MRT ~740m (Circle Line)",
+          "Paya Lebar/Geylang corridor proximity"
+        ],
+        "rental_assessment": "A 2,271 sqft unit is hard to rent efficiently; rent-per-sqft will be low and the tenant pool for such a large layout is shallow.",
+        "appreciation_assessment": "20-txn 6.37% is only indicative; the unusual size means this unit trades on its own idiosyncratic demand rather than the development trend.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-atrium-residences-500159753",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 2008 3-bedroom PENTHOUSE (2,271 sqft, inside the 1,819-2,303 sqft penthouse band) in Geylang. Every 'value' signal the algo fired - age_adj -34.2%, very_low_psf, -29.6% cohort - is an artifact of comparing a huge penthouse PSF against normal stacked units, NOT a real bargain.",
+      "rating_rationale": "Asking $2.53M at $1,114 psf for a 2,271 sqft 3BR penthouse. Web-verified: typical Atrium units transact at ~$1,538-$1,594 psf (12-month avg ~$1,571), and 2,271 sqft is a confirmed penthouse size (20 such units). The $1,114 psf asking is the standard penthouse quantum/PSF discount - large penthouses always sell far below typical-unit PSF - so the -34.2% age-adj and -29.6% cohort 'discounts' (the cohort has ZERO transactions) are pure size/format artifacts, not district underpricing. On top of that: 2008 vintage (18yr-old freehold, depreciating fittings), Geylang location with its red-light-district stigma, financing/MAS LTV constraints and weaker tenant/resale demand, only ~3.2% project rental yield, and a $2.53M quantum on a hard-to-exit penthouse. The model explains <10% of forward variance and here even its value signals are corrupted - this is an Avoid for a 5-7yr hold.",
+      "red_flags": [
+        "All value signals (age_adj -34.2%, very_low_psf, -29.6% cohort) are penthouse PSF artifacts, not real discounts",
+        "psf_premium_vs_cohort computed on ZERO cohort transactions - no valid comparable",
+        "2008 build (18yr-old freehold) with oversized_unit + bedroom_sqft_mismatch flags",
+        "Geylang location stigma: financing/LTV limits, weaker tenant pool and resale liquidity",
+        "$2.53M quantum on an illiquid penthouse format - difficult exit",
+        "Low project rental yield (~3.2%)"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Aljunied/Dakota MRT access and Paya Lebar commercial proximity (weak offsets given the negatives)"
+      ],
+      "as_of": {
+        "price": 2530000,
+        "psf": 1114.05,
+        "beds": 3,
+        "sqft": 2271
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Freehold 2008 3-bedroom PENTHOUSE (2,271 sqft, inside the 1,819-2,303 sqft penthouse band) in Geylang. Every 'value' signal the algo fired - age_adj -34.2%, very_low_psf, -29.6% cohort - is an artifact of comparing a huge penthouse PSF against normal stacked units, NOT a real bargain.",
+        "rating_rationale": "Asking $2.53M at $1,114 psf for a 2,271 sqft 3BR penthouse. Web-verified: typical Atrium units transact at ~$1,538-$1,594 psf (12-month avg ~$1,571), and 2,271 sqft is a confirmed penthouse size (20 such units). The $1,114 psf asking is the standard penthouse quantum/PSF discount - large penthouses always sell far below typical-unit PSF - so the -34.2% age-adj and -29.6% cohort 'discounts' (the cohort has ZERO transactions) are pure size/format artifacts, not district underpricing. On top of that: 2008 vintage (18yr-old freehold, depreciating fittings), Geylang location with its red-light-district stigma, financing/MAS LTV constraints and weaker tenant/resale demand, only ~3.2% project rental yield, and a $2.53M quantum on a hard-to-exit penthouse. The model explains <10% of forward variance and here even its value signals are corrupted - this is an Avoid for a 5-7yr hold.",
+        "red_flags": [
+          "All value signals (age_adj -34.2%, very_low_psf, -29.6% cohort) are penthouse PSF artifacts, not real discounts",
+          "psf_premium_vs_cohort computed on ZERO cohort transactions - no valid comparable",
+          "2008 build (18yr-old freehold) with oversized_unit + bedroom_sqft_mismatch flags",
+          "Geylang location stigma: financing/LTV limits, weaker tenant pool and resale liquidity",
+          "$2.53M quantum on an illiquid penthouse format - difficult exit",
+          "Low project rental yield (~3.2%)"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Aljunied/Dakota MRT access and Paya Lebar commercial proximity (weak offsets given the negatives)"
+        ],
+        "appreciation_assessment": "5yr URA CAGR +6.37% but on only 20 txns and dominated by the broad project pool, not this penthouse cohort (0 cohort txns). Trailing appreciation has ~0 forward power - I assign no forward weight, especially with Geylang demand headwinds.",
+        "rental_assessment": "Project yield ~3.2%; a $2.53M penthouse at perhaps ~$5,500-$6,500/month is only ~2.6-3.1% gross - poor yield for the quantum and location risk."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-atrium-residences-500159753",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

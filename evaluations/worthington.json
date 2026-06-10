@@ -1,0 +1,64 @@
+{
+  "condo": "Worthington",
+  "slug": "worthington",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold (2008) 969 sqft 3BR boutique near the Paya Lebar/Geylang border at $1.8M / $1,858 psf. Only 4 URA transactions means no reliable appreciation read; an efficient FH 3BR at a liquid quantum is decent, but the thin data and fringe location keep it Neutral.",
+      "rating_rationale": "A 969 sqft freehold 3BR is efficiently sized (good for resale) and $1.8M is in the deep buyer band, but only 4 URA transactions makes any appreciation estimate unreliable, score_1000 of 498 is dead-market-typical, and $1,858 psf is full for a 2008 boutique on the Geylang fringe of D15 (810m to Paya Lebar). Freehold tenure and efficient layout are real, but there's no data edge and no clear catalyst — a hold-neutral.",
+      "red_flags": [
+        "Only 4 URA transactions — appreciation unverifiable, thin liquidity",
+        "Boutique development on the Geylang/Paya Lebar fringe",
+        "$1,858 psf is full for a 2008 build",
+        "Paya Lebar MRT 810m walk"
+      ],
+      "catalysts": [
+        "Freehold, efficient 969 sqft 3BR layout aids resale",
+        "Paya Lebar Central commercial hub and airbase relocation upside",
+        "$1.8M quantum in the liquid band"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1857.59,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold (2008) 969 sqft 3BR boutique near the Paya Lebar/Geylang border at $1.8M / $1,858 psf. Only 4 URA transactions means no reliable appreciation read; an efficient FH 3BR at a liquid quantum is decent, but the thin data and fringe location keep it Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "A 969 sqft freehold 3BR is efficiently sized (good for resale) and $1.8M is in the deep buyer band, but only 4 URA transactions makes any appreciation estimate unreliable, score_1000 of 498 is dead-market-typical, and $1,858 psf is full for a 2008 boutique on the Geylang fringe of D15 (810m to Paya Lebar). Freehold tenure and efficient layout are real, but there's no data edge and no clear catalyst — a hold-neutral.",
+        "red_flags": [
+          "Only 4 URA transactions — appreciation unverifiable, thin liquidity",
+          "Boutique development on the Geylang/Paya Lebar fringe",
+          "$1,858 psf is full for a 2008 build",
+          "Paya Lebar MRT 810m walk"
+        ],
+        "catalysts": [
+          "Freehold, efficient 969 sqft 3BR layout aids resale",
+          "Paya Lebar Central commercial hub and airbase relocation upside",
+          "$1.8M quantum in the liquid band"
+        ],
+        "rental_assessment": "Efficient FH 3BR rents to families near Paya Lebar's commercial cluster; yield around the ~3% norm, nothing exceptional.",
+        "appreciation_assessment": "No reliable URA rate (4 txns); lean on D14/15 fringe priors with Paya Lebar Central as a slow-burn catalyst — uncertain.",
+        "stack_notes": null,
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-worthington-500099735",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

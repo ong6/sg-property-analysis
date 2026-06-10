@@ -1,0 +1,63 @@
+{
+  "condo": "🌟 1km Nan Hua Primary School 🌟",
+  "slug": "1km-nan-hua-primary-school",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "An own-stay/school-zone-marketed 4BR in Clementi (D05) priced at $2.58M / $2032 PSF, but the listing hides the actual project name behind a Nan Hua school hook and carries no URA appreciation, transaction or median-PSF data. As an investment with the project identity and price history unverifiable, this is a thin, school-buyer-niche entry rather than a yield/exit-driven buy.",
+      "rating_rationale": "$2032 PSF for a 99yr 4BR in D05 is mid-market, not a bargain, and the 840m walk to Clementi MRT is mediocre. Score 471/1000 and Elo 1325 are below-market. The Nan Hua school-zone angle drives own-stay demand, not investment appreciation, and the 4BR/$2.58M band has a shallower resale pool than 2-3BR. No URA data to confirm the rate or that PSF is fair.",
+      "red_flags": [
+        "Project name masked behind school-zone marketing — identity/price-history unverifiable",
+        "No URA appreciation/txn/median data",
+        "Missing built_year",
+        "4BR at $2.58M is a niche, school-buyer-dependent exit",
+        "840m to MRT"
+      ],
+      "catalysts": [
+        "1km to Nan Hua Primary (P1 priority demand from families)",
+        "D05 One-North/Science Park employment base supports tenant demand"
+      ],
+      "as_of": {
+        "price": 2580000,
+        "psf": 2031.5,
+        "beds": 4,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An own-stay/school-zone-marketed 4BR in Clementi (D05) priced at $2.58M / $2032 PSF, but the listing hides the actual project name behind a Nan Hua school hook and carries no URA appreciation, transaction or median-PSF data. As an investment with the project identity and price history unverifiable, this is a thin, school-buyer-niche entry rather than a yield/exit-driven buy.",
+        "rating": "Neutral",
+        "rating_rationale": "$2032 PSF for a 99yr 4BR in D05 is mid-market, not a bargain, and the 840m walk to Clementi MRT is mediocre. Score 471/1000 and Elo 1325 are below-market. The Nan Hua school-zone angle drives own-stay demand, not investment appreciation, and the 4BR/$2.58M band has a shallower resale pool than 2-3BR. No URA data to confirm the rate or that PSF is fair.",
+        "red_flags": [
+          "Project name masked behind school-zone marketing — identity/price-history unverifiable",
+          "No URA appreciation/txn/median data",
+          "Missing built_year",
+          "4BR at $2.58M is a niche, school-buyer-dependent exit",
+          "840m to MRT"
+        ],
+        "catalysts": [
+          "1km to Nan Hua Primary (P1 priority demand from families)",
+          "D05 One-North/Science Park employment base supports tenant demand"
+        ],
+        "rental_assessment": "D05 has steady tenant demand from One-North/NUS/Science Park, but a 4BR is family-let only and the deepest rental pool is 2BR. Yield at $2.58M is unremarkable.",
+        "appreciation_assessment": "No project-specific URA data; D05 RCR baseline ~5%/yr but the school-zone premium is largely own-stay and already priced in. Treat appreciation as district-average at best.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1km-nan-hua-primary-school-500146661",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "The Clearwater",
+  "slug": "the-clearwater",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "99-yr leasehold 4BR at The Clearwater, D16 (Bedok Reservoir), an excellent 350m (4 min) from DT30 Bedok Reservoir MRT, asking $2.15M at $1,398 PSF for 1,538 sqft. Quantum is in the liquid band; reliable 70-txn URA base at 5.72%/yr; PSF ~1% under median.",
+      "rating_rationale": "Solid family-investment profile: $2.15M in the deep buyer band, efficient 1,538 sqft 4BR for HDB-upgrader demand, strong transit (350m to DTL), and a reliable 70-txn URA appreciation series at 5.72%/yr (above OCR baseline). Score_1000 of 585 understates it — the underlying liquidity and appreciation data are good. Main offsets: 2002 build (~75yr lease remaining) and no PSF discount, but transit + quantum + reliable rate carry it.",
+      "red_flags": [
+        "2002 build, ~75yr lease remaining — lease decay over hold",
+        "No PSF discount (at median)",
+        "Bedok Reservoir OCR-fringe — depends on TEL/Bayshore momentum"
+      ],
+      "catalysts": [
+        "350m to DT30 Bedok Reservoir MRT (DTL) — strong transit",
+        "$2.15M in deep liquid band, family 4BR for upgraders",
+        "Reliable 70-txn URA appreciation (5.72%/yr)",
+        "Bayshore precinct / Upper East Coast transformation"
+      ],
+      "as_of": {
+        "price": 2150000,
+        "psf": 1397.92,
+        "beds": 4,
+        "sqft": 1538.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 4BR at The Clearwater, D16 (Bedok Reservoir), an excellent 350m (4 min) from DT30 Bedok Reservoir MRT, asking $2.15M at $1,398 PSF for 1,538 sqft. Quantum is in the liquid band; reliable 70-txn URA base at 5.72%/yr; PSF ~1% under median.",
+        "rating": "Buy",
+        "rating_rationale": "Solid family-investment profile: $2.15M in the deep buyer band, efficient 1,538 sqft 4BR for HDB-upgrader demand, strong transit (350m to DTL), and a reliable 70-txn URA appreciation series at 5.72%/yr (above OCR baseline). Score_1000 of 585 understates it — the underlying liquidity and appreciation data are good. Main offsets: 2002 build (~75yr lease remaining) and no PSF discount, but transit + quantum + reliable rate carry it.",
+        "red_flags": [
+          "2002 build, ~75yr lease remaining — lease decay over hold",
+          "No PSF discount (at median)",
+          "Bedok Reservoir OCR-fringe — depends on TEL/Bayshore momentum"
+        ],
+        "catalysts": [
+          "350m to DT30 Bedok Reservoir MRT (DTL) — strong transit",
+          "$2.15M in deep liquid band, family 4BR for upgraders",
+          "Reliable 70-txn URA appreciation (5.72%/yr)",
+          "Bayshore precinct / Upper East Coast transformation"
+        ],
+        "rental_assessment": "Bedok family rental demand is steady; 4BR yield modest (~3%) but MRT-side exit liquidity is the strength.",
+        "appreciation_assessment": "70-txn URA series at 5.72%/yr is reliable and above OCR baseline; older lease tempers net return slightly.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.3,
+        "appreciation_rate_source": "URA 70-txn series (reliable), modest haircut for ~75yr lease"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-clearwater-25392133",
+        "review_file": "cov_batch_01.json"
+      }
+    }
+  ]
+}

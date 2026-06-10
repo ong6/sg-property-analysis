@@ -1,0 +1,63 @@
+{
+  "condo": "Guillemard View",
+  "slug": "guillemard-view",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,163 sqft freehold 3BR at Guillemard View (D14, 1994) at $1.8M / $1,548 PSF — but the URA median for the project is just $1,256 PSF, putting this listing ~23% above the project's transacted norm. The strong 5.54%/yr appreciation rests on only 6 transactions, and score_1000 is a very low 309.",
+      "rating_rationale": "The listing's $1,548 PSF is roughly 23% above the $1,256 URA project median — a clear overprice flag, which is why score_1000 collapses to 309 despite a respectable elo. The headline 5.54%/yr appreciation is built on only 6 txns (unreliable), and the development is a 1994 (32-year-old) freehold with aging fundamentals. 730m to Dakota MRT is fine, but paying a 23% premium to the project's own transactions over a 5-7yr hold is poor value.",
+      "red_flags": [
+        "Listed ~23% above the $1,256 URA project median PSF — overpriced",
+        "Appreciation rate from only 6 txns — unreliable",
+        "1994 build (32 yrs) — aging condo, higher maintenance",
+        "score_1000 just 309 driven by PSF-above-market detection"
+      ],
+      "catalysts": [
+        "Freehold tenure in D14 (Paya Lebar Central wider catchment)",
+        "730m to Dakota CCL MRT",
+        "Large 1,163 sqft 3BR family layout"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1547.72,
+        "beds": 3,
+        "sqft": 1163.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,163 sqft freehold 3BR at Guillemard View (D14, 1994) at $1.8M / $1,548 PSF — but the URA median for the project is just $1,256 PSF, putting this listing ~23% above the project's transacted norm. The strong 5.54%/yr appreciation rests on only 6 transactions, and score_1000 is a very low 309.",
+        "rating": "Avoid",
+        "rating_rationale": "The listing's $1,548 PSF is roughly 23% above the $1,256 URA project median — a clear overprice flag, which is why score_1000 collapses to 309 despite a respectable elo. The headline 5.54%/yr appreciation is built on only 6 txns (unreliable), and the development is a 1994 (32-year-old) freehold with aging fundamentals. 730m to Dakota MRT is fine, but paying a 23% premium to the project's own transactions over a 5-7yr hold is poor value.",
+        "red_flags": [
+          "Listed ~23% above the $1,256 URA project median PSF — overpriced",
+          "Appreciation rate from only 6 txns — unreliable",
+          "1994 build (32 yrs) — aging condo, higher maintenance",
+          "score_1000 just 309 driven by PSF-above-market detection"
+        ],
+        "catalysts": [
+          "Freehold tenure in D14 (Paya Lebar Central wider catchment)",
+          "730m to Dakota CCL MRT",
+          "Large 1,163 sqft 3BR family layout"
+        ],
+        "rental_assessment": "Freehold 3BR near Dakota/Paya Lebar has steady family tenant demand, but the inflated entry price depresses effective yield.",
+        "appreciation_assessment": "6-txn rate is statistically thin; more importantly the listing already sits 23% over the project median, leaving negative room to grow. Unfavorable.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guillemard-view-24896883",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

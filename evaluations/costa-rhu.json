@@ -1,0 +1,61 @@
+{
+  "condo": "Costa Rhu",
+  "slug": "costa-rhu",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Large 990 sqft 2BR in a mature waterfront D15 development with a TEL catalyst at Tanjong Rhu, but priced at $1,515 PSF against a $1,663 URA median with only 3.6% appreciation. A liquid, well-known name with deep transaction history, but middling growth and an ageing 99-yr lease cap the upside.",
+      "rating_rationale": "Listing PSF $1,515 sits ~9% below the $1,663 URA median (room for value), and 131 txns give high liquidity confidence. But 3.56% appreciation is below the RCR baseline, the unit is oversized for a 2BR (990 sqft inflates absolute price to $1.5M), and 1998 99-yr lease has ~71 years remaining and erodes from here.",
+      "red_flags": [
+        "Modest 3.56% appreciation, below RCR norm",
+        "990 sqft is large for a 2BR, lifting entry price",
+        "1998 lease ~71yr remaining and declining"
+      ],
+      "catalysts": [
+        "TE23 Tanjong Rhu MRT (TEL) ~770m",
+        "Waterfront/Kallang Riverside transformation",
+        "Sub-median PSF entry vs URA $1,663"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1515.15,
+        "beds": 2,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 990 sqft 2BR in a mature waterfront D15 development with a TEL catalyst at Tanjong Rhu, but priced at $1,515 PSF against a $1,663 URA median with only 3.6% appreciation. A liquid, well-known name with deep transaction history, but middling growth and an ageing 99-yr lease cap the upside.",
+        "rating": "Neutral",
+        "rating_rationale": "Listing PSF $1,515 sits ~9% below the $1,663 URA median (room for value), and 131 txns give high liquidity confidence. But 3.56% appreciation is below the RCR baseline, the unit is oversized for a 2BR (990 sqft inflates absolute price to $1.5M), and 1998 99-yr lease has ~71 years remaining and erodes from here.",
+        "red_flags": [
+          "Modest 3.56% appreciation, below RCR norm",
+          "990 sqft is large for a 2BR, lifting entry price",
+          "1998 lease ~71yr remaining and declining"
+        ],
+        "catalysts": [
+          "TE23 Tanjong Rhu MRT (TEL) ~770m",
+          "Waterfront/Kallang Riverside transformation",
+          "Sub-median PSF entry vs URA $1,663"
+        ],
+        "rental_assessment": "Waterfront D15 with TEL access supports steady tenant demand; large 2BR rents well to couples/small families but yield is thin at $1.5M entry.",
+        "appreciation_assessment": "3.56% URA resale CAGR over 131 txns is reliable but unremarkable; lease decay will weigh on a 5-7yr exit.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-costa-rhu-60073206",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

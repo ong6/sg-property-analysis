@@ -1,0 +1,57 @@
+{
+  "condo": "Bougainvilla Apartments",
+  "slug": "bougainvilla-apartments",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold D14 3BR (1,001 sqft) at $1.38M / $1,379 psf, 8 min from Aljunied EWL, in a small 1998 boutique block. Only 2 URA transactions and no median PSF mean appreciation and fair value are unverifiable — this is a thin-data boutique where liquidity is the central risk.",
+      "rating_rationale": "Reasonable freehold quantum ($1.38M, deep band) and efficient-for-3BR sizing in maturing D14 Paya Lebar (airbase relocation catalyst) keep it off Avoid, but 2 transactions give no reliable appreciation read, the 1998 boutique is illiquid with a shallow buyer pool, and there is no median to anchor whether $1,379 psf is fair. Insufficient data for conviction either way — Neutral, low confidence.",
+      "red_flags": [
+        "Only 2 URA transactions — appreciation and fair value unverifiable",
+        "Small 1998 boutique — thin liquidity, shallow buyer pool",
+        "No median PSF to benchmark pricing"
+      ],
+      "catalysts": [
+        "Freehold D14 within Paya Lebar Central / airbase-relocation corridor",
+        "$1.38M in the deep buyer band, 8 min to Aljunied EWL"
+      ],
+      "as_of": {
+        "price": 1380000,
+        "psf": 1378.62,
+        "beds": 3,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D14 3BR (1,001 sqft) at $1.38M / $1,379 psf, 8 min from Aljunied EWL, in a small 1998 boutique block. Only 2 URA transactions and no median PSF mean appreciation and fair value are unverifiable — this is a thin-data boutique where liquidity is the central risk.",
+        "rating": "Neutral",
+        "rating_rationale": "Reasonable freehold quantum ($1.38M, deep band) and efficient-for-3BR sizing in maturing D14 Paya Lebar (airbase relocation catalyst) keep it off Avoid, but 2 transactions give no reliable appreciation read, the 1998 boutique is illiquid with a shallow buyer pool, and there is no median to anchor whether $1,379 psf is fair. Insufficient data for conviction either way — Neutral, low confidence.",
+        "red_flags": [
+          "Only 2 URA transactions — appreciation and fair value unverifiable",
+          "Small 1998 boutique — thin liquidity, shallow buyer pool",
+          "No median PSF to benchmark pricing"
+        ],
+        "catalysts": [
+          "Freehold D14 within Paya Lebar Central / airbase-relocation corridor",
+          "$1.38M in the deep buyer band, 8 min to Aljunied EWL"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bougainvilla-apartments-60056225",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

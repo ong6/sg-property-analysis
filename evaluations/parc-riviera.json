@@ -1,0 +1,117 @@
+{
+  "condo": "Parc Riviera",
+  "slug": "parc-riviera",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Parc Riviera 2BR in D05 West Coast, $1,540K at $1,663 PSF — about 6% below the $1,761 URA median, with a credible 4.58%/yr appreciation on a very deep 301-txn series. Highest score in the batch context (757) reflects strong value-for-data; the weak point is the 1.49km distance to the nearest (future JRL Pandan Reservoir) MRT.",
+      "rating_rationale": "Priced ~6% under URA median with a well-supported 4.58%/yr over 301 txns — strong, reliable data. 2020-built (modern, ~93yrs lease), large 926sqft 2BR. D05 One-North/West Coast benefits from the tech-job corridor and JRL (~2028). Liquidity is excellent (huge transaction base). Main drag: 1.49km to MRT is a real walkability gap that caps the location premium.",
+      "red_flags": [
+        "1.49km to nearest MRT (future JRL Pandan Reservoir) — poor walkability",
+        "West Coast supply pipeline could pressure rents/prices"
+      ],
+      "catalysts": [
+        "Jurong Region Line (~2028) Pandan Reservoir station",
+        "One-North / West Coast tech-employment corridor",
+        "Priced below median with deep 301-txn support"
+      ],
+      "as_of": {
+        "price": 1540000,
+        "psf": 1663.07,
+        "beds": 2,
+        "sqft": 926.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Parc Riviera 2BR in D05 West Coast, $1,540K at $1,663 PSF — about 6% below the $1,761 URA median, with a credible 4.58%/yr appreciation on a very deep 301-txn series. Highest score in the batch context (757) reflects strong value-for-data; the weak point is the 1.49km distance to the nearest (future JRL Pandan Reservoir) MRT.",
+        "rating": "Buy",
+        "rating_rationale": "Priced ~6% under URA median with a well-supported 4.58%/yr over 301 txns — strong, reliable data. 2020-built (modern, ~93yrs lease), large 926sqft 2BR. D05 One-North/West Coast benefits from the tech-job corridor and JRL (~2028). Liquidity is excellent (huge transaction base). Main drag: 1.49km to MRT is a real walkability gap that caps the location premium.",
+        "red_flags": [
+          "1.49km to nearest MRT (future JRL Pandan Reservoir) — poor walkability",
+          "West Coast supply pipeline could pressure rents/prices"
+        ],
+        "catalysts": [
+          "Jurong Region Line (~2028) Pandan Reservoir station",
+          "One-North / West Coast tech-employment corridor",
+          "Priced below median with deep 301-txn support"
+        ],
+        "rental_assessment": "Strong tenant demand from NUS, science park and one-north employers; 2BR is the widest pool. MRT distance is a minor tenant negative.",
+        "appreciation_assessment": "4.58%/yr is reliable and near RCR-ish levels for a large-supply project; JRL is the upside lever.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA 301-txn resale series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-riviera-25572141",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "D5 West Coast 2BR asking $1,663 psf - genuinely below verified recent transactions ($1,730 12-mo avg, $1,760 6-mo) - in a large, well-managed project with a real Jurong Lake District catalyst.",
+      "rating_rationale": "This is the clearest buy in the batch and meets the v3.4 bar for high confidence: a verified value gap plus a dated catalyst in a favorable region. Asking $1,663 psf is below both the 12-month avg ($1,730, range $1,205-1,868) and the 6-month avg ($1,760), and below a Feb-2026 comp at $1,868 - so the -15.5% age-adj-cheap tag is corroborated by actual recent transactions, not a mis-scrape. D5 sits in the top realized-forward band (OCR/RCR ~+3.5-4%, far above CCR). The catalyst is concrete and policy-backed: Jurong Lake District is being built into Singapore's second CBD, directly supporting West Coast Vale pricing. 752-unit project with brisk rental activity (95 rentals in 6 months) gives strong liquidity and tenant demand; well-maintained per reviews; efficient 926sf 2BR. Leasehold (2020) is young with minimal decay. Value + catalyst + liquidity align.",
+      "red_flags": [
+        "psf_cohort_txns=11 is adequate but not deep; only ~13 sale txns in 12 months despite the large project size",
+        "99-yr leasehold (lease decay clock, though ~93 yrs left = immaterial near-term)",
+        "Some units face PIE/expressway or West Coast Highway - facing/noise must be checked on the specific stack"
+      ],
+      "catalysts": [
+        "Jurong Lake District developing into Singapore's second CBD - major employment/price catalyst nearby",
+        "Asking $1,663 psf verified below recent transactions ($1,730 12-mo / $1,760 6-mo) - real entry discount",
+        "Proximity to Clementi MRT, Sungei Ulu Pandan park connector, and Pandan Reservoir",
+        "Large 752-unit project = strong rental demand (95 rentals/6 mo) and resale liquidity"
+      ],
+      "as_of": {
+        "price": 1540000,
+        "psf": 1663.07,
+        "beds": 2,
+        "sqft": 926
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "D5 West Coast 2BR asking $1,663 psf - genuinely below verified recent transactions ($1,730 12-mo avg, $1,760 6-mo) - in a large, well-managed project with a real Jurong Lake District catalyst.",
+        "rating_rationale": "This is the clearest buy in the batch and meets the v3.4 bar for high confidence: a verified value gap plus a dated catalyst in a favorable region. Asking $1,663 psf is below both the 12-month avg ($1,730, range $1,205-1,868) and the 6-month avg ($1,760), and below a Feb-2026 comp at $1,868 - so the -15.5% age-adj-cheap tag is corroborated by actual recent transactions, not a mis-scrape. D5 sits in the top realized-forward band (OCR/RCR ~+3.5-4%, far above CCR). The catalyst is concrete and policy-backed: Jurong Lake District is being built into Singapore's second CBD, directly supporting West Coast Vale pricing. 752-unit project with brisk rental activity (95 rentals in 6 months) gives strong liquidity and tenant demand; well-maintained per reviews; efficient 926sf 2BR. Leasehold (2020) is young with minimal decay. Value + catalyst + liquidity align.",
+        "red_flags": [
+          "psf_cohort_txns=11 is adequate but not deep; only ~13 sale txns in 12 months despite the large project size",
+          "99-yr leasehold (lease decay clock, though ~93 yrs left = immaterial near-term)",
+          "Some units face PIE/expressway or West Coast Highway - facing/noise must be checked on the specific stack"
+        ],
+        "catalysts": [
+          "Jurong Lake District developing into Singapore's second CBD - major employment/price catalyst nearby",
+          "Asking $1,663 psf verified below recent transactions ($1,730 12-mo / $1,760 6-mo) - real entry discount",
+          "Proximity to Clementi MRT, Sungei Ulu Pandan park connector, and Pandan Reservoir",
+          "Large 752-unit project = strong rental demand (95 rentals/6 mo) and resale liquidity"
+        ],
+        "appreciation_assessment": "Trailing +4.58% CAGR on a deep 301 txns is robust, but per backtest the forward case leans on the verified value gap and the JLD catalyst rather than the headline CAGR; both point the same direction here.",
+        "rental_assessment": "~4% gross yield with very brisk leasing (95 rentals in 6 months) confirms strong, durable tenant demand from Clementi/one-north/JLD workforce - rental backstop is genuinely strong, complementing the capital-growth thesis."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-riviera-25572141",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

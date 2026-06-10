@@ -1,0 +1,59 @@
+{
+  "condo": "Edenz Suites",
+  "slug": "edenz-suites",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 2014 shoebox 1BR in a tiny 34-unit Geylang project. The algo's -15.0% age-adj cheapness is contradicted by the listing being priced clearly ABOVE recent verified transactions - this is an over-asked unit, not a bargain.",
+      "rating_rationale": "Asking $780k at $1,576 psf for 495 sqft. Web-verified Edenz Suites 1BR transactions in Feb 2026 cleared at $680k-$710k ($1,497-$1,548 psf), with the 12-month average around $1,368 psf and an all-time high of only $722k (Apr 2023, 495 sqft). This asking price is ~8-15% above where comparable units actually sell and above the project's historic high - the algo's psf_above_market red flag is correct and the negative age-adj premium is an artifact of age-normalization, not real value. appreciation_pct (3.7%) is only a regional_baseline placeholder (13 txns), so no genuine growth signal. Tiny 34-unit pool means thin resale liquidity. Overpriced entry into a small Geylang shoebox = Avoid for a 5-7yr investment hold.",
+      "red_flags": [
+        "Asking $780k exceeds project all-time high (~$722k) and recent comps of $680k-$710k",
+        "Asking ~$1,576 psf vs verified ~$1,368-$1,548 psf actual transactions - over-asked",
+        "Tiny 34-unit development = thin liquidity and few comparables",
+        "appreciation_pct is a regional_baseline placeholder, not real project data"
+      ],
+      "catalysts": [
+        "Freehold + walkability to Paya Lebar/Aljunied MRT supports rental tenancy"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1575.76,
+        "beds": 1,
+        "sqft": 495
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Freehold 2014 shoebox 1BR in a tiny 34-unit Geylang project. The algo's -15.0% age-adj cheapness is contradicted by the listing being priced clearly ABOVE recent verified transactions - this is an over-asked unit, not a bargain.",
+        "rating_rationale": "Asking $780k at $1,576 psf for 495 sqft. Web-verified Edenz Suites 1BR transactions in Feb 2026 cleared at $680k-$710k ($1,497-$1,548 psf), with the 12-month average around $1,368 psf and an all-time high of only $722k (Apr 2023, 495 sqft). This asking price is ~8-15% above where comparable units actually sell and above the project's historic high - the algo's psf_above_market red flag is correct and the negative age-adj premium is an artifact of age-normalization, not real value. appreciation_pct (3.7%) is only a regional_baseline placeholder (13 txns), so no genuine growth signal. Tiny 34-unit pool means thin resale liquidity. Overpriced entry into a small Geylang shoebox = Avoid for a 5-7yr investment hold.",
+        "red_flags": [
+          "Asking $780k exceeds project all-time high (~$722k) and recent comps of $680k-$710k",
+          "Asking ~$1,576 psf vs verified ~$1,368-$1,548 psf actual transactions - over-asked",
+          "Tiny 34-unit development = thin liquidity and few comparables",
+          "appreciation_pct is a regional_baseline placeholder, not real project data"
+        ],
+        "catalysts": [
+          "Freehold + walkability to Paya Lebar/Aljunied MRT supports rental tenancy"
+        ],
+        "appreciation_assessment": "No reliable appreciation signal - source is regional_baseline (not URA project CAGR) over only 13 txns. Trailing momentum has ~0 forward power regardless; this is purely a placeholder.",
+        "rental_assessment": "Reported ~5.1% gross yield is the only real positive, but it is computed off a lower fair value (~$700k) not the $780k ask; at the ask the realistic yield drops toward ~4.3-4.5%."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-edenz-suites-500051237",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

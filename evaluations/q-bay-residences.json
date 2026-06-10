@@ -1,0 +1,111 @@
+{
+  "condo": "Q Bay Residences",
+  "slug": "q-bay-residences",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Q Bay Residences 3BR in Tampines/D18, priced at $1,522 PSF essentially at the $1,515 URA median, with a healthy 5.2%/yr appreciation on a deep 183-txn series. Strong-data Tampines play with CRL and Tampines Regional Centre catalysts, but the $1.95M ticket for a 3BR sits at the upper end of the OCR family band.",
+      "rating_rationale": "5.23%/yr URA appreciation over a robust 183 transactions is genuinely reliable and above OCR baseline (~3.7%). PSF at $1,522 vs $1,515 median is fair, not overpaying. D18 benefits from Cross Island Line + DTL extension and Tampines Regional Centre. 2017-built (good condition, ~90yrs lease) large 1281sqft 3BR. Main caveat: $1.95M is a chunky ticket for OCR, narrowing the buyer pool to families.",
+      "red_flags": [
+        "$1.95M is high for an OCR 3BR — buyer pool narrows above district norms",
+        "1281sqft is generous; resale depends on family demand"
+      ],
+      "catalysts": [
+        "Cross Island Line (~2030) and DTL extension serving Tampines",
+        "Tampines Regional Centre commercial growth",
+        "Reliable 5.2%/yr appreciation on 183 txns"
+      ],
+      "as_of": {
+        "price": 1950000,
+        "psf": 1522.25,
+        "beds": 3,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Q Bay Residences 3BR in Tampines/D18, priced at $1,522 PSF essentially at the $1,515 URA median, with a healthy 5.2%/yr appreciation on a deep 183-txn series. Strong-data Tampines play with CRL and Tampines Regional Centre catalysts, but the $1.95M ticket for a 3BR sits at the upper end of the OCR family band.",
+        "rating": "Buy",
+        "rating_rationale": "5.23%/yr URA appreciation over a robust 183 transactions is genuinely reliable and above OCR baseline (~3.7%). PSF at $1,522 vs $1,515 median is fair, not overpaying. D18 benefits from Cross Island Line + DTL extension and Tampines Regional Centre. 2017-built (good condition, ~90yrs lease) large 1281sqft 3BR. Main caveat: $1.95M is a chunky ticket for OCR, narrowing the buyer pool to families.",
+        "red_flags": [
+          "$1.95M is high for an OCR 3BR — buyer pool narrows above district norms",
+          "1281sqft is generous; resale depends on family demand"
+        ],
+        "catalysts": [
+          "Cross Island Line (~2030) and DTL extension serving Tampines",
+          "Tampines Regional Centre commercial growth",
+          "Reliable 5.2%/yr appreciation on 183 txns"
+        ],
+        "rental_assessment": "Tampines has deep tenant demand from the regional centre, IKEA/Tampines hubs and good schools; 3BR appeals to families.",
+        "appreciation_assessment": "5.2%/yr is well-supported and above OCR baseline; catalysts support continuation.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA 183-txn resale series, lightly trimmed"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-q-bay-residences-500044502",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Low-quantum ($788k) D18/OCR 1BR priced slightly below the verified recent 1BR average on a deep cohort - modest genuine value in the strongest forward region.",
+      "rating_rationale": "Asking $1,495 PSF is verified at/just below market: project 1BR average is ~$1,504-1,518 PSF and project-wide last-12-month average ~$1,504 PSF, so this is a small real discount rather than a quirk. The signal is trustworthy - 183 appreciation txns and 16 cohort txns give a solid anchor (contrast the thin names in this batch). D18 is OCR, the best verified forward region (~+4.0%), and the low $788k quantum keeps entry accessible and the buyer/tenant pool broad near Tampines St 86. No red flags. Trailing CAGR 5.23% is background only. The +3.7% vs-cohort means it is not a screaming discount, so this is a measured Buy at medium confidence - good region and clean data, but value edge is modest and yield is ordinary.",
+      "red_flags": [
+        "psf_premium_vs_cohort +3.7% - priced essentially at, not below, the 1BR cohort; discount is small",
+        "527 sqft shoebox 1BR competes with abundant Tampines mass-market supply for resale/rental"
+      ],
+      "catalysts": [
+        "D18 (OCR) - strongest verified forward-appreciation region in the backtest",
+        "Low absolute quantum ($788k) widens the resale buyer pool and supports liquidity"
+      ],
+      "as_of": {
+        "price": 788000,
+        "psf": 1495.26,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Low-quantum ($788k) D18/OCR 1BR priced slightly below the verified recent 1BR average on a deep cohort - modest genuine value in the strongest forward region.",
+        "rating_rationale": "Asking $1,495 PSF is verified at/just below market: project 1BR average is ~$1,504-1,518 PSF and project-wide last-12-month average ~$1,504 PSF, so this is a small real discount rather than a quirk. The signal is trustworthy - 183 appreciation txns and 16 cohort txns give a solid anchor (contrast the thin names in this batch). D18 is OCR, the best verified forward region (~+4.0%), and the low $788k quantum keeps entry accessible and the buyer/tenant pool broad near Tampines St 86. No red flags. Trailing CAGR 5.23% is background only. The +3.7% vs-cohort means it is not a screaming discount, so this is a measured Buy at medium confidence - good region and clean data, but value edge is modest and yield is ordinary.",
+        "red_flags": [
+          "psf_premium_vs_cohort +3.7% - priced essentially at, not below, the 1BR cohort; discount is small",
+          "527 sqft shoebox 1BR competes with abundant Tampines mass-market supply for resale/rental"
+        ],
+        "catalysts": [
+          "D18 (OCR) - strongest verified forward-appreciation region in the backtest",
+          "Low absolute quantum ($788k) widens the resale buyer pool and supports liquidity"
+        ],
+        "appreciation_assessment": "Trailing 5yr CAGR 5.23% on 183 txns is well-evidenced but given ~0 forward weight; the case is region (OCR) plus deep-cohort fair-to-cheap pricing, not CAGR extrapolation.",
+        "rental_assessment": "Project 1BR rents imply ~$2,500-2,900/mo; at $788k that is roughly 3.8-4.4% gross before costs - a respectable OCR shoebox yield that underpins the hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-q-bay-residences-60220710",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

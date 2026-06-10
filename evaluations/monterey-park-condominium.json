@@ -1,0 +1,63 @@
+{
+  "condo": "Monterey Park Condominium",
+  "slug": "monterey-park-condominium",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 999LH 2006 4BR at Monterey Park (D05 West Coast/Clementi) for $2.65M / $1,940 psf, with a strong 6.79%/yr URA resale CAGR (28 txns) but priced ~7% ABOVE the $1,819 district median and a poor 1.29km MRT walk. Quasi-freehold tenure and One-North/JLR catalysts are real, but the very low score_1000 (295) flags the rich pricing.",
+      "rating_rationale": "Tension here: appreciation is genuinely good (6.79%/yr over 28 txns) and 999-year tenure removes lease risk, with D05 backed by One-North and the future Jurong Region Line. But the listing PSF $1,940 is ~7% above the $1,819 median, the 1.29km/15-min walk to JE7 Pandan Reservoir is weak, and the $2.65M 4BR quantum thins the pool — driving the very low score_1000 of 295. The location/tenure/appreciation pull up against an over-median ask; nets to Neutral, contingent on negotiating closer to median PSF.",
+      "red_flags": [
+        "Listed PSF ~7% above the $1,819 URA district median (paying up)",
+        "Poor transit — 1.29km / 15-min walk to JE7 Pandan Reservoir MRT",
+        "$2.65M 4BR quantum reduces resale buyer pool"
+      ],
+      "catalysts": [
+        "Strong 6.79%/yr URA resale appreciation over 28 txns",
+        "999-year tenure (effectively freehold) in RCR-fringe D05",
+        "One-North tech-hub demand and future Jurong Region Line connectivity"
+      ],
+      "as_of": {
+        "price": 2650000,
+        "psf": 1939.97,
+        "beds": 4,
+        "sqft": 1366.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 999LH 2006 4BR at Monterey Park (D05 West Coast/Clementi) for $2.65M / $1,940 psf, with a strong 6.79%/yr URA resale CAGR (28 txns) but priced ~7% ABOVE the $1,819 district median and a poor 1.29km MRT walk. Quasi-freehold tenure and One-North/JLR catalysts are real, but the very low score_1000 (295) flags the rich pricing.",
+        "rating": "Neutral",
+        "rating_rationale": "Tension here: appreciation is genuinely good (6.79%/yr over 28 txns) and 999-year tenure removes lease risk, with D05 backed by One-North and the future Jurong Region Line. But the listing PSF $1,940 is ~7% above the $1,819 median, the 1.29km/15-min walk to JE7 Pandan Reservoir is weak, and the $2.65M 4BR quantum thins the pool — driving the very low score_1000 of 295. The location/tenure/appreciation pull up against an over-median ask; nets to Neutral, contingent on negotiating closer to median PSF.",
+        "red_flags": [
+          "Listed PSF ~7% above the $1,819 URA district median (paying up)",
+          "Poor transit — 1.29km / 15-min walk to JE7 Pandan Reservoir MRT",
+          "$2.65M 4BR quantum reduces resale buyer pool"
+        ],
+        "catalysts": [
+          "Strong 6.79%/yr URA resale appreciation over 28 txns",
+          "999-year tenure (effectively freehold) in RCR-fringe D05",
+          "One-North tech-hub demand and future Jurong Region Line connectivity"
+        ],
+        "rental_assessment": "West Coast 4BR rents to families and One-North professionals, but the long MRT walk and high quantum keep gross yield modest.",
+        "appreciation_assessment": "6.79%/yr resale CAGR over 28 txns is a strong, reasonably-confident rate; quasi-freehold tenure supports durability, though buying above median PSF trims realized upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only 6.79%/yr (28 txns) trimmed for above-median entry PSF"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-monterey-park-condominium-23299236",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

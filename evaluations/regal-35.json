@@ -1,0 +1,115 @@
+{
+  "condo": "Regal 35",
+  "slug": "regal-35",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The $833 PSF looks like a steal versus the $1,299 median, but that is a size illusion: 2,400 sqft for a '3BR' is a penthouse/maisonette-class unit, and the cheap PSF reflects the large floor area, not value. Freehold near Paya Lebar is a plus, but the $2M quantum for an oversized, niche unit plus a 6-txn appreciation read makes this a thin, hard-to-exit investment.",
+      "rating_rationale": "PSF $833 vs $1,299 median screams cheap, but 2,400 sqft is roughly double a normal 3BR — large units always carry a PSF discount, so the headline gap is not real value. The inflated score_1000 of 874 is driven by this PSF illusion. Appreciation +4.45%/yr rests on just 6 URA txns (unreliable). At $2M for a niche, oversized freehold unit, the buyer pool is shallow and exit is slow despite the Paya Lebar location.",
+      "red_flags": [
+        "2,400 sqft 'oversized unit' — large-format PSF discount masquerading as value",
+        "Appreciation rate from only 6 URA txns — statistically meaningless",
+        "Niche big-quantum format ($2M) — shallow buyer pool, slow exit",
+        "Older 2006 freehold boutique block — likely small development, thin liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure near Paya Lebar Central / airbase relocation corridor",
+        "670m to Paya Lebar MRT (EW/CC interchange)",
+        "Generous space appeals to a multi-gen family own-stay niche (not investment)"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 833.33,
+        "beds": 3,
+        "sqft": 2400.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "The $833 PSF looks like a steal versus the $1,299 median, but that is a size illusion: 2,400 sqft for a '3BR' is a penthouse/maisonette-class unit, and the cheap PSF reflects the large floor area, not value. Freehold near Paya Lebar is a plus, but the $2M quantum for an oversized, niche unit plus a 6-txn appreciation read makes this a thin, hard-to-exit investment.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $833 vs $1,299 median screams cheap, but 2,400 sqft is roughly double a normal 3BR — large units always carry a PSF discount, so the headline gap is not real value. The inflated score_1000 of 874 is driven by this PSF illusion. Appreciation +4.45%/yr rests on just 6 URA txns (unreliable). At $2M for a niche, oversized freehold unit, the buyer pool is shallow and exit is slow despite the Paya Lebar location.",
+        "red_flags": [
+          "2,400 sqft 'oversized unit' — large-format PSF discount masquerading as value",
+          "Appreciation rate from only 6 URA txns — statistically meaningless",
+          "Niche big-quantum format ($2M) — shallow buyer pool, slow exit",
+          "Older 2006 freehold boutique block — likely small development, thin liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure near Paya Lebar Central / airbase relocation corridor",
+          "670m to Paya Lebar MRT (EW/CC interchange)",
+          "Generous space appeals to a multi-gen family own-stay niche (not investment)"
+        ],
+        "rental_assessment": "A 2,400 sqft unit rents at a high absolute figure but to a very small tenant pool, so gross yield on the $2M quantum is low — weak for an investment thesis.",
+        "appreciation_assessment": "6-txn URA sample makes the +4.45%/yr rate unreliable; freehold supports baseline value but the oversized niche format limits broad-market appreciation. Treat as flat-to-modest.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regal-35-60110246",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline 'cheapness' is a jumbo-unit size discount and illiquidity artifact, not a true bargain; boutique 40-unit FH with weak exit.",
+      "rating_rationale": "The $833 psf looks dramatically cheap (age_adj -47.4%, psf_premium -31.7%) but it is for a 2,400 sqft unit, flagged oversized_unit + bedroom_sqft_mismatch. Verified recent transactions ran ~$1,299 psf (947 sqft, Mar 2026); jumbo units structurally trade far below project PSF, so almost all of the discount is the size effect, not a forward edge. The supporting data is thin — appreciation_txns = 6 and psf_cohort_txns = 0 — exactly the data-quirk profile the priors warn against. It is a 40-unit boutique freehold: very few comparable trades and a $2M / 2,400 sqft unit has a tiny buyer pool, so exit liquidity over 5-7yr is poor. Freehold is not itself a forward edge. Net: not an Avoid (real FH asset near Paya Lebar, holds value), but not a value bargain either.",
+      "red_flags": [
+        "oversized_unit + bedroom_sqft_mismatch: 2,400 sqft drives the low PSF, not value",
+        "appreciation_txns = 6 and psf_cohort_txns = 0: data too thin to trust the discount",
+        "40-unit boutique = poor liquidity; large jumbo unit very hard to exit"
+      ],
+      "catalysts": [
+        "Freehold tenure (value preservation, but not a forward return driver)",
+        "~8 min walk to Paya Lebar MRT interchange"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 833.33,
+        "beds": 3,
+        "sqft": 2400
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline 'cheapness' is a jumbo-unit size discount and illiquidity artifact, not a true bargain; boutique 40-unit FH with weak exit.",
+        "rating_rationale": "The $833 psf looks dramatically cheap (age_adj -47.4%, psf_premium -31.7%) but it is for a 2,400 sqft unit, flagged oversized_unit + bedroom_sqft_mismatch. Verified recent transactions ran ~$1,299 psf (947 sqft, Mar 2026); jumbo units structurally trade far below project PSF, so almost all of the discount is the size effect, not a forward edge. The supporting data is thin — appreciation_txns = 6 and psf_cohort_txns = 0 — exactly the data-quirk profile the priors warn against. It is a 40-unit boutique freehold: very few comparable trades and a $2M / 2,400 sqft unit has a tiny buyer pool, so exit liquidity over 5-7yr is poor. Freehold is not itself a forward edge. Net: not an Avoid (real FH asset near Paya Lebar, holds value), but not a value bargain either.",
+        "red_flags": [
+          "oversized_unit + bedroom_sqft_mismatch: 2,400 sqft drives the low PSF, not value",
+          "appreciation_txns = 6 and psf_cohort_txns = 0: data too thin to trust the discount",
+          "40-unit boutique = poor liquidity; large jumbo unit very hard to exit"
+        ],
+        "catalysts": [
+          "Freehold tenure (value preservation, but not a forward return driver)",
+          "~8 min walk to Paya Lebar MRT interchange"
+        ],
+        "appreciation_assessment": "4.45% CAGR on only 6 txns is statistically meaningless and near-zero forward power; the big negative premiums are size/data artifacts, not a bargain signal.",
+        "rental_assessment": "A 2,400 sqft unit at ~$2M will have low gross yield and a narrow tenant pool; rental economics are weak relative to right-sized units in the same district."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regal-35-60110246",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

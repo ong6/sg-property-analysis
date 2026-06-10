@@ -1,0 +1,63 @@
+{
+  "condo": "E Maisons (The Maisons)",
+  "slug": "e-maisons-the-maisons",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 667 sqft 1BR in D13 at exactly $1.0M / $1,499 PSF, 670m from Woodleigh MRT (NEL). The $1M quantum and freehold tenure are accessible, but there is zero URA appreciation, transaction or median data on the project — a boutique/thin-liquidity profile that the high technical score (driven by neutral-scored missing data) overstates.",
+      "rating_rationale": "No URA appreciation rate, no transaction count and no median PSF means the value and liquidity case is unverified — the 686 score is inflated by missing data scoring neutral, not by demonstrated strength. The 667 sqft FH 1BR at $1M near Woodleigh/Bidadari is a fair entry, but a 1BR is a niche resale unit and the absent trading history points to lumpy liquidity.",
+      "red_flags": [
+        "No URA appreciation, txn count or median PSF — value and liquidity unverified",
+        "1BR is a niche resale segment with a shallow buyer pool",
+        "Likely small/boutique block — thin, lumpy resale market"
+      ],
+      "catalysts": [
+        "Freehold tenure at an accessible $1.0M quantum",
+        "Bidadari estate maturing + 670m to NE11 Woodleigh MRT",
+        "D13 central-east location with reasonable rental demand"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1499.25,
+        "beds": 1,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 667 sqft 1BR in D13 at exactly $1.0M / $1,499 PSF, 670m from Woodleigh MRT (NEL). The $1M quantum and freehold tenure are accessible, but there is zero URA appreciation, transaction or median data on the project — a boutique/thin-liquidity profile that the high technical score (driven by neutral-scored missing data) overstates.",
+        "rating": "Neutral",
+        "rating_rationale": "No URA appreciation rate, no transaction count and no median PSF means the value and liquidity case is unverified — the 686 score is inflated by missing data scoring neutral, not by demonstrated strength. The 667 sqft FH 1BR at $1M near Woodleigh/Bidadari is a fair entry, but a 1BR is a niche resale unit and the absent trading history points to lumpy liquidity.",
+        "red_flags": [
+          "No URA appreciation, txn count or median PSF — value and liquidity unverified",
+          "1BR is a niche resale segment with a shallow buyer pool",
+          "Likely small/boutique block — thin, lumpy resale market"
+        ],
+        "catalysts": [
+          "Freehold tenure at an accessible $1.0M quantum",
+          "Bidadari estate maturing + 670m to NE11 Woodleigh MRT",
+          "D13 central-east location with reasonable rental demand"
+        ],
+        "rental_assessment": "Bidadari/Woodleigh draws steady tenant interest and a compact FH 1BR should let, but 1BR has the narrowest tenant pool and yield at $1,499 PSF is modest.",
+        "appreciation_assessment": "Cannot be substantiated — no URA series. Bidadari maturation is a mild tailwind, but without transaction evidence I assume district-baseline, not outperformance.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D13 RCR baseline — no project-specific URA data available"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-e-maisons-the-maisons-500008566",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

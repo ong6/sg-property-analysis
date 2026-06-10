@@ -1,0 +1,63 @@
+{
+  "condo": "iResidences",
+  "slug": "iresidences",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 2BR (iResidences, D12 Novena-fringe) at $1.98M / $2,020 psf — ~3% above the $1,961 URA median and a near-$2M ticket for a 980 sqft 2BR. Decent Novena-belt fundamentals but the above-median entry, $1,000+/sqft premium pricing, and a thin 14-txn data base leave little upside margin.",
+      "rating_rationale": "$2,020 psf is ~3% over the $1,961 URA median — a premium, not a discount — and $1.98M is a very high quantum for a 2BR, which thins the resale pool. The 4.8% CAGR is from only 14 txns (unreliable) and the score (568, off-frontier, losing arena record 191-207) signals it is fully to over-priced. Freehold and 710m to Novena are positives but do not justify paying above median for a small 2BR.",
+      "red_flags": [
+        "~$2M quantum for a 2BR — narrow resale pool",
+        "PSF ~3% above URA median — no value cushion",
+        "4.8% CAGR on only 14 txns — unreliable",
+        "Off-frontier with a losing arena record (191-207)"
+      ],
+      "catalysts": [
+        "Freehold in the Novena medical/CBD-fringe belt",
+        "710m to Novena NS-line MRT",
+        "Novena healthcare hub supports stable tenant demand"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 2020.41,
+        "beds": 2,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (iResidences, D12 Novena-fringe) at $1.98M / $2,020 psf — ~3% above the $1,961 URA median and a near-$2M ticket for a 980 sqft 2BR. Decent Novena-belt fundamentals but the above-median entry, $1,000+/sqft premium pricing, and a thin 14-txn data base leave little upside margin.",
+        "rating": "Neutral",
+        "rating_rationale": "$2,020 psf is ~3% over the $1,961 URA median — a premium, not a discount — and $1.98M is a very high quantum for a 2BR, which thins the resale pool. The 4.8% CAGR is from only 14 txns (unreliable) and the score (568, off-frontier, losing arena record 191-207) signals it is fully to over-priced. Freehold and 710m to Novena are positives but do not justify paying above median for a small 2BR.",
+        "red_flags": [
+          "~$2M quantum for a 2BR — narrow resale pool",
+          "PSF ~3% above URA median — no value cushion",
+          "4.8% CAGR on only 14 txns — unreliable",
+          "Off-frontier with a losing arena record (191-207)"
+        ],
+        "catalysts": [
+          "Freehold in the Novena medical/CBD-fringe belt",
+          "710m to Novena NS-line MRT",
+          "Novena healthcare hub supports stable tenant demand"
+        ],
+        "rental_assessment": "Novena tenant demand is solid (medical hub), but yield on a near-$2M 2BR is ~3% — unexciting at this price.",
+        "appreciation_assessment": "Above-median entry caps appreciation; 4.8% on 14 txns is not bankable. Expect Novena-fringe freehold mid-single-digits at best, with the premium already paid.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-iresidences-60205239",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "condo": "Freehold, Ground Floor unit at Woodleigh, 6mins to the MRT.",
+  "slug": "freehold-ground-floor-unit-at-woodleigh-6mins-to-the-mrt",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Anonymous FH ground-floor 3BR (1,421sqft) near Woodleigh MRT, D13, at $2.89M / $2,033 PSF. No project name, no built year and zero URA data; the large 1,421sqft makes the PSF look moderate but pushes total price near $2.9M, and ground-floor units carry privacy/resale-discount issues.",
+      "rating_rationale": "Unidentifiable listing with null project name, built year, and all URA fields — value cannot be verified. The $2,033 PSF reads moderate only because the 1,421sqft unit is oversized, lifting total price to $2.89M (shallow buyer band). Ground-floor units typically trade at a discount and appeal to a narrower buyer set. With no project identity and a weak score_1000 (483), the thin-data + near-$3M combination warrants Avoid.",
+      "red_flags": [
+        "No project name, built year or any URA data — unverifiable",
+        "Ground-floor unit — privacy/security concerns and typical resale discount",
+        "Oversized 1,421sqft lifts total to $2.89M into the shallow buyer band"
+      ],
+      "catalysts": [
+        "540m to Woodleigh MRT (NE11); freehold tenure",
+        "Woodleigh/Bidadari precinct amenities"
+      ],
+      "as_of": {
+        "price": 2888888,
+        "psf": 2033.0,
+        "beds": 3,
+        "sqft": 1421.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Anonymous FH ground-floor 3BR (1,421sqft) near Woodleigh MRT, D13, at $2.89M / $2,033 PSF. No project name, no built year and zero URA data; the large 1,421sqft makes the PSF look moderate but pushes total price near $2.9M, and ground-floor units carry privacy/resale-discount issues.",
+        "rating": "Avoid",
+        "rating_rationale": "Unidentifiable listing with null project name, built year, and all URA fields — value cannot be verified. The $2,033 PSF reads moderate only because the 1,421sqft unit is oversized, lifting total price to $2.89M (shallow buyer band). Ground-floor units typically trade at a discount and appeal to a narrower buyer set. With no project identity and a weak score_1000 (483), the thin-data + near-$3M combination warrants Avoid.",
+        "red_flags": [
+          "No project name, built year or any URA data — unverifiable",
+          "Ground-floor unit — privacy/security concerns and typical resale discount",
+          "Oversized 1,421sqft lifts total to $2.89M into the shallow buyer band"
+        ],
+        "catalysts": [
+          "540m to Woodleigh MRT (NE11); freehold tenure",
+          "Woodleigh/Bidadari precinct amenities"
+        ],
+        "rental_assessment": "Bidadari/Woodleigh rents reasonably, but a ground-floor near-$3M FH 3BR has a narrow tenant pool and modest yield.",
+        "appreciation_assessment": "No URA series and no project identity; cannot establish a trajectory — default to caution.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-ground-floor-unit-at-woodleigh-6mins-to-the-mrt-500052714",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "condo": "The Venue Residences and Shoppes",
+  "slug": "the-venue-residences-and-shoppes",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "CDL city-fringe mixed development at Potong Pasir MRT, $1.8M for a large 1,119 sqft 2BR at $1,609 psf — below the development's recent ~$1,905 psf average, suggesting either a motivated seller or a less desirable stack. Quality CDL finishes and a genuine MRT-adjacent D13 location are real positives.",
+      "rating_rationale": "The Venue transacted in the last 12 months at $1,694–$2,194 psf (avg ~$1,905, Nov-2025 high $2,194); this listing at $1,608 psf is ~15% below the average, a meaningful discount on a CDL development 400m from Potong Pasir MRT. 99LH from 2017 (~90 yrs left), city-fringe D13 with Orchard/CBD in minutes, and the $1.8M quantum sits in the deep buyer band. The 1,119 sqft is generous for a 2BR so verify it isn't a low-floor/expressway-facing stack, but the PSF gap gives margin.",
+      "red_flags": [
+        "Listed PSF ~15% below development average — confirm it isn't a poor-facing or low-floor stack (PIE/CTE noise)",
+        "1,119 sqft is large for a 2BR, raising quantum for the bedroom count",
+        "Mixed-development maintenance fees and retail-podium footfall noise"
+      ],
+      "catalysts": [
+        "Direct Potong Pasir MRT (NE line) connectivity to CBD/Orchard",
+        "Below-average entry PSF vs proven $1,905 transacted average",
+        "CDL build quality and Green Mark Platinum, established 2017 development"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1608.58,
+        "beds": 2,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "CDL city-fringe mixed development at Potong Pasir MRT, $1.8M for a large 1,119 sqft 2BR at $1,609 psf — below the development's recent ~$1,905 psf average, suggesting either a motivated seller or a less desirable stack. Quality CDL finishes and a genuine MRT-adjacent D13 location are real positives.",
+        "rating": "Buy",
+        "rating_rationale": "The Venue transacted in the last 12 months at $1,694–$2,194 psf (avg ~$1,905, Nov-2025 high $2,194); this listing at $1,608 psf is ~15% below the average, a meaningful discount on a CDL development 400m from Potong Pasir MRT. 99LH from 2017 (~90 yrs left), city-fringe D13 with Orchard/CBD in minutes, and the $1.8M quantum sits in the deep buyer band. The 1,119 sqft is generous for a 2BR so verify it isn't a low-floor/expressway-facing stack, but the PSF gap gives margin.",
+        "red_flags": [
+          "Listed PSF ~15% below development average — confirm it isn't a poor-facing or low-floor stack (PIE/CTE noise)",
+          "1,119 sqft is large for a 2BR, raising quantum for the bedroom count",
+          "Mixed-development maintenance fees and retail-podium footfall noise"
+        ],
+        "catalysts": [
+          "Direct Potong Pasir MRT (NE line) connectivity to CBD/Orchard",
+          "Below-average entry PSF vs proven $1,905 transacted average",
+          "CDL build quality and Green Mark Platinum, established 2017 development"
+        ],
+        "rental_assessment": "Strong city-fringe rental appeal to CBD professionals via the NE line; a large 2BR rents well to couples/sharers, supporting a typical ~3–3.5% yield.",
+        "appreciation_assessment": "No URA rate matched, but proven resale at $1,694–$2,194 psf shows a healthy, liquid pricing band; entry below the average gives room to the mean.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-venue-residences-and-shoppes-500137243",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

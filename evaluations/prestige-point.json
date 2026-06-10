@@ -1,0 +1,65 @@
+{
+  "condo": "Prestige Point",
+  "slug": "prestige-point",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 3BR at Prestige Point, a small 2016 freehold boutique near Serangoon (D19), asking $1.58M ($1,688 psf). Freehold and a compact efficient 936 sqft help, but the thin URA series (5 txns) shows -5%/yr and the asking sits ~12% above the development's $1,508 median PSF.",
+      "rating_rationale": "$1,688 psf vs URA median $1,508 psf means the listing is ~12% above the project's recent transacted level, into a (thin, 5-txn, so low-confidence) -5%/yr reading. Freehold + a sensibly-sized 936 sqft 3BR keep it from Avoid, but boutique scale limits liquidity and the price/appreciation signals are unfavorable. Needs a price closer to ~$1,508 psf to be compelling.",
+      "red_flags": [
+        "Asking ~12% above development median PSF ($1,688 vs $1,508)",
+        "Thin URA series (5 txns) reads -5%/yr — low confidence but directionally negative",
+        "Small boutique development — limited liquidity",
+        "960m / 12 min from Serangoon MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Efficient 936 sqft 3BR layout fits the liquid sub-$1.6M family band",
+        "Serangoon/NEX retail catchment"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1688.03,
+        "beds": 3,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 3BR at Prestige Point, a small 2016 freehold boutique near Serangoon (D19), asking $1.58M ($1,688 psf). Freehold and a compact efficient 936 sqft help, but the thin URA series (5 txns) shows -5%/yr and the asking sits ~12% above the development's $1,508 median PSF.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,688 psf vs URA median $1,508 psf means the listing is ~12% above the project's recent transacted level, into a (thin, 5-txn, so low-confidence) -5%/yr reading. Freehold + a sensibly-sized 936 sqft 3BR keep it from Avoid, but boutique scale limits liquidity and the price/appreciation signals are unfavorable. Needs a price closer to ~$1,508 psf to be compelling.",
+        "red_flags": [
+          "Asking ~12% above development median PSF ($1,688 vs $1,508)",
+          "Thin URA series (5 txns) reads -5%/yr — low confidence but directionally negative",
+          "Small boutique development — limited liquidity",
+          "960m / 12 min from Serangoon MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Efficient 936 sqft 3BR layout fits the liquid sub-$1.6M family band",
+          "Serangoon/NEX retail catchment"
+        ],
+        "rental_assessment": "Compact FH 3BR near Serangoon has steady family/tenant demand; yield is average for a freehold at this PSF.",
+        "appreciation_assessment": "Thin data leans negative and the asking is above the project's own median — value is contingent on a price cut; flat-to-modest base case.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "Thin URA (5 txns) negative read tempered toward FH boutique baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prestige-point-24918793",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

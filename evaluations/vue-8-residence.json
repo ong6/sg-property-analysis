@@ -1,0 +1,65 @@
+{
+  "condo": "Vue 8 Residence",
+  "slug": "vue-8-residence",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "99-yr leasehold 4BR at Vue 8 Residence, D18 (Pasir Ris), 440m from CP2 Elias MRT (Cross Island Line), asking $2.361M at $1,424 PSF for 1,658 sqft. Quantum sits in the deep liquid band; reliable 126-txn URA base prints 5.19%/yr; PSF ~5% under median.",
+      "rating_rationale": "A clean family-investment setup: $2.361M is squarely in the deepest buyer band, the 1,658 sqft 4BR appeals to HDB upgraders (D18 core demand), reliable 126-txn URA appreciation at 5.19%/yr, and a genuine future-MRT catalyst — CP2 Elias on the Cross Island Line (~2030) is only 440m away (within the 500m strongest-uplift radius). Efficient 4BR sizing, slight PSF discount. Leasehold and 2017 build are normal for the segment.",
+      "red_flags": [
+        "99-yr leasehold",
+        "CRL Elias is ~2030 — catalyst is several years out",
+        "Pasir Ris is OCR-edge — relies on CRL/Tampines momentum"
+      ],
+      "catalysts": [
+        "CP2 Elias MRT (Cross Island Line, ~2030) just 440m away — strongest-uplift radius",
+        "$2.361M in the deep liquid band, family 4BR with broad HDB-upgrader appeal",
+        "Reliable 126-txn URA appreciation (5.19%/yr)",
+        "Tampines Regional Centre / Pasir Ris growth"
+      ],
+      "as_of": {
+        "price": 2361000,
+        "psf": 1424.0,
+        "beds": 4,
+        "sqft": 1658.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 4BR at Vue 8 Residence, D18 (Pasir Ris), 440m from CP2 Elias MRT (Cross Island Line), asking $2.361M at $1,424 PSF for 1,658 sqft. Quantum sits in the deep liquid band; reliable 126-txn URA base prints 5.19%/yr; PSF ~5% under median.",
+        "rating": "Buy",
+        "rating_rationale": "A clean family-investment setup: $2.361M is squarely in the deepest buyer band, the 1,658 sqft 4BR appeals to HDB upgraders (D18 core demand), reliable 126-txn URA appreciation at 5.19%/yr, and a genuine future-MRT catalyst — CP2 Elias on the Cross Island Line (~2030) is only 440m away (within the 500m strongest-uplift radius). Efficient 4BR sizing, slight PSF discount. Leasehold and 2017 build are normal for the segment.",
+        "red_flags": [
+          "99-yr leasehold",
+          "CRL Elias is ~2030 — catalyst is several years out",
+          "Pasir Ris is OCR-edge — relies on CRL/Tampines momentum"
+        ],
+        "catalysts": [
+          "CP2 Elias MRT (Cross Island Line, ~2030) just 440m away — strongest-uplift radius",
+          "$2.361M in the deep liquid band, family 4BR with broad HDB-upgrader appeal",
+          "Reliable 126-txn URA appreciation (5.19%/yr)",
+          "Tampines Regional Centre / Pasir Ris growth"
+        ],
+        "rental_assessment": "Pasir Ris family rental demand is steady; 4BR yield modest (~3%) but exit liquidity (upgrader demand) is the real strength here.",
+        "appreciation_assessment": "126-txn URA series at 5.19%/yr is reliable; CRL uplift could push the realized figure higher as 2030 approaches.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA 126-txn series (reliable), slight uplift for CRL Elias proximity"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vue-8-residence-60197107",
+        "review_file": "cov_batch_01.json"
+      }
+    }
+  ]
+}

@@ -110,6 +110,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-minton-500000478",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 1,145-unit Hougang condo with deep transaction history; asking $1,357 psf is verifiably below the recent average, a real value edge sitting directly on the 2030 Cross Island Line catalyst.",
+      "rating_rationale": "Asking $1,357 psf ($950k, 700 sqft) is below the verified last-12-month average of $1,517-$1,568 psf (range $1,113-$1,819) per EdgeProp/SRX, confirming the -20.1% age-adj cheapness with real transactions. The development is a deep, liquid 1,145-unit project (292 appreciation txns), so the headline signal is well-supported. D19 OCR sits in the strongest realized forward-return region and the Cross Island Line through Hougang (2030) is a dated, concrete catalyst. Confidence held to medium because psf_cohort_txns is only 7 (the same-size 1BR comparable set is thin even though the project overall is deep), and the strong 7.46% trailing CAGR earns no forward credit per the backtest prior.",
+      "red_flags": [
+        "psf_cohort_txns only 7 - same-size 1BR comparable set is thin despite a deep project",
+        "99-yr leasehold from ~2011, no tenure edge",
+        "Very large 1,145-unit project means high competing supply on resale/rental"
+      ],
+      "catalysts": [
+        "Cross Island Line through Hougang targeted 2030 (dated, concrete)",
+        "Asking below verified recent average = genuine entry discount",
+        "OCR D19 aligns with the strongest realized forward-return region"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1357.14,
+        "beds": 1,
+        "sqft": 700
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large 1,145-unit Hougang condo with deep transaction history; asking $1,357 psf is verifiably below the recent average, a real value edge sitting directly on the 2030 Cross Island Line catalyst.",
+        "rating_rationale": "Asking $1,357 psf ($950k, 700 sqft) is below the verified last-12-month average of $1,517-$1,568 psf (range $1,113-$1,819) per EdgeProp/SRX, confirming the -20.1% age-adj cheapness with real transactions. The development is a deep, liquid 1,145-unit project (292 appreciation txns), so the headline signal is well-supported. D19 OCR sits in the strongest realized forward-return region and the Cross Island Line through Hougang (2030) is a dated, concrete catalyst. Confidence held to medium because psf_cohort_txns is only 7 (the same-size 1BR comparable set is thin even though the project overall is deep), and the strong 7.46% trailing CAGR earns no forward credit per the backtest prior.",
+        "red_flags": [
+          "psf_cohort_txns only 7 - same-size 1BR comparable set is thin despite a deep project",
+          "99-yr leasehold from ~2011, no tenure edge",
+          "Very large 1,145-unit project means high competing supply on resale/rental"
+        ],
+        "catalysts": [
+          "Cross Island Line through Hougang targeted 2030 (dated, concrete)",
+          "Asking below verified recent average = genuine entry discount",
+          "OCR D19 aligns with the strongest realized forward-return region"
+        ],
+        "appreciation_assessment": "Trailing 7.46% CAGR over a deep 292 txns is the best-evidenced in the batch, but per v3.4 it carries ~0 forward weight; the forward thesis rests on verified cheapness plus CRL, not the past run.",
+        "rental_assessment": "Large amenity-rich Hougang condo near the future CRL; 700 sqft 1BR at $950k rents steadily to the north-east workforce, though heavy in-project supply caps rent upside."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-minton-500060767",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

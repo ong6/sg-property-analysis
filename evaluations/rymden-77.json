@@ -1,0 +1,63 @@
+{
+  "condo": "Rymden 77",
+  "slug": "rymden-77",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,539sqft 3BR at $2.50M / $1,624 PSF in a 2022 D15 boutique near Kembangan, priced ~18% below the $1,991 area median. Freehold, near-new and apparently cheap per-PSF, but the discount partly reflects a generously-sized unit, a new-launch-biased rate, and a small boutique block.",
+      "rating_rationale": "The headline ~18% discount to median PSF is flattered by the 1,539sqft size — at $2.50M absolute this is a large freehold 3BR, not a cheap one, and the per-unit price sits in the thinner >$2.4M band. The 3.52% rate carries new-launch bias and only 32 txns, and Rymden 77 is a small boutique (limited liquidity, fewer facilities). Freehold + near-new + D15 East Coast keep it a respectable hold, but nothing here pushes it past Neutral.",
+      "red_flags": [
+        "1,539sqft inflates the 'cheap PSF' — $2.50M absolute is in a thinner band",
+        "3.52% rate has new-launch bias and only 32 txns",
+        "Boutique development — limited liquidity and facilities",
+        "780m to Kembangan is a moderate walk"
+      ],
+      "catalysts": [
+        "Freehold, completed 2022 (minimal lease/condition risk)",
+        "D15 East Coast deep buyer pool and lifestyle appeal",
+        "Large family layout differentiates from small new-launch stock"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1624.43,
+        "beds": 3,
+        "sqft": 1539.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,539sqft 3BR at $2.50M / $1,624 PSF in a 2022 D15 boutique near Kembangan, priced ~18% below the $1,991 area median. Freehold, near-new and apparently cheap per-PSF, but the discount partly reflects a generously-sized unit, a new-launch-biased rate, and a small boutique block.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline ~18% discount to median PSF is flattered by the 1,539sqft size — at $2.50M absolute this is a large freehold 3BR, not a cheap one, and the per-unit price sits in the thinner >$2.4M band. The 3.52% rate carries new-launch bias and only 32 txns, and Rymden 77 is a small boutique (limited liquidity, fewer facilities). Freehold + near-new + D15 East Coast keep it a respectable hold, but nothing here pushes it past Neutral.",
+        "red_flags": [
+          "1,539sqft inflates the 'cheap PSF' — $2.50M absolute is in a thinner band",
+          "3.52% rate has new-launch bias and only 32 txns",
+          "Boutique development — limited liquidity and facilities",
+          "780m to Kembangan is a moderate walk"
+        ],
+        "catalysts": [
+          "Freehold, completed 2022 (minimal lease/condition risk)",
+          "D15 East Coast deep buyer pool and lifestyle appeal",
+          "Large family layout differentiates from small new-launch stock"
+        ],
+        "rental_assessment": "Large freehold 3BR in East Coast appeals to family tenants/expats; yield is modest on a $2.5M base.",
+        "appreciation_assessment": "New-launch-biased 3.52% is the honest anchor; freehold East Coast supports ~3-4% forward, no more given the price band.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rymden-77-500068446",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Whitewater",
+  "slug": "whitewater",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2005 99LH 4BR at Whitewater in Pasir Ris (D18) for $1.63M / $1,202 psf, with a generous 1,356 sqft and a future Cross Island Line catalyst (CP2 Elias, ~820m). Low PSF and the CRL story are real positives, but no URA data, ~78yr lease, and a far-east location with abundant supply temper it.",
+      "rating_rationale": "The CRL Punggol-extension station CP2 Elias (~820m, ~2032) is a genuine future-uplift catalyst, and $1,202 psf for a roomy 1,356 sqft family 4BR is an affordable, liquid OCR ticket at $1.63M. Against that: no URA appreciation/txn data in the dossier, a 2005 lease (~78yr left) decaying into resale, and Pasir Ris has heavy competing supply. Score_1000 414 reflects the mixed picture. Balances to Neutral with a watch on CRL progress.",
+      "red_flags": [
+        "No URA appreciation/transaction data to anchor value",
+        "99LH 2005 — ~78yr lease, decay drag on a hold-and-resell",
+        "Far-east Pasir Ris with substantial competing/new supply"
+      ],
+      "catalysts": [
+        "Cross Island Line CP2 Elias station ~820m (future connectivity uplift)",
+        "Low $1,202 psf for a generous 1,356 sqft family 4BR — affordable, liquid quantum",
+        "Pasir Ris waterfront/Allapine Gardens master-plan rejuvenation"
+      ],
+      "as_of": {
+        "price": 1630000,
+        "psf": 1202.06,
+        "beds": 4,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2005 99LH 4BR at Whitewater in Pasir Ris (D18) for $1.63M / $1,202 psf, with a generous 1,356 sqft and a future Cross Island Line catalyst (CP2 Elias, ~820m). Low PSF and the CRL story are real positives, but no URA data, ~78yr lease, and a far-east location with abundant supply temper it.",
+        "rating": "Neutral",
+        "rating_rationale": "The CRL Punggol-extension station CP2 Elias (~820m, ~2032) is a genuine future-uplift catalyst, and $1,202 psf for a roomy 1,356 sqft family 4BR is an affordable, liquid OCR ticket at $1.63M. Against that: no URA appreciation/txn data in the dossier, a 2005 lease (~78yr left) decaying into resale, and Pasir Ris has heavy competing supply. Score_1000 414 reflects the mixed picture. Balances to Neutral with a watch on CRL progress.",
+        "red_flags": [
+          "No URA appreciation/transaction data to anchor value",
+          "99LH 2005 — ~78yr lease, decay drag on a hold-and-resell",
+          "Far-east Pasir Ris with substantial competing/new supply"
+        ],
+        "catalysts": [
+          "Cross Island Line CP2 Elias station ~820m (future connectivity uplift)",
+          "Low $1,202 psf for a generous 1,356 sqft family 4BR — affordable, liquid quantum",
+          "Pasir Ris waterfront/Allapine Gardens master-plan rejuvenation"
+        ],
+        "rental_assessment": "Large 4BR rents to families wanting space and the future MRT; far-east location limits tenant pool and keeps yield modest at the low entry PSF.",
+        "appreciation_assessment": "Absent URA data, lean on OCR baseline plus CRL optionality; lease decay caps the rate, so expect moderate appreciation contingent on the CRL timeline.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR D18 baseline with modest CRL CP2 Elias uplift; lease-decay discount, no project resale data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-whitewater-500053795",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

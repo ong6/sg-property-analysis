@@ -1,0 +1,61 @@
+{
+  "condo": "Central Imperial",
+  "slug": "central-imperial",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very compact 786sqft '3BR' freehold at $1.18M / $1,501 PSF near Aljunied (D14 Geylang-fringe), priced ~13% above the $1,326 median. Freehold at a low $1.18M absolute is appealing, but 786sqft for a 3BR is cramped (mini-units), the 9.27% CAGR rests on just 19 txns, and Aljunied/Geylang carries locational stigma.",
+      "rating_rationale": "Freehold and a low $1.18M entry are the positives, but the case is undercut on three fronts: 786sqft for a 3BR is an unusually tiny 'compact 3BR' (cramped rooms, narrower buyer appeal); the headline 9.27% appreciation comes from only 19 transactions (unreliable, likely small-base noise); and the unit is priced ~13% ABOVE the district median PSF while sitting on the Geylang fringe near Aljunied, which carries stigma that weighs on resale. The combination of premium PSF, thin data and a squeezed layout offsets the freehold/low-price appeal.",
+      "red_flags": [
+        "786sqft for a 3BR — very cramped 'mini' layout",
+        "9.27% rate from only 19 txns — unreliable, small-base noise",
+        "Priced ~13% above URA median; Geylang-fringe (Aljunied) stigma"
+      ],
+      "catalysts": [
+        "Freehold at low $1.18M absolute",
+        "D14 Paya Lebar Central + airbase relocation; Aljunied EWL",
+        "Compact freehold units have a low entry ticket"
+      ],
+      "as_of": {
+        "price": 1180000,
+        "psf": 1501.27,
+        "beds": 3,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very compact 786sqft '3BR' freehold at $1.18M / $1,501 PSF near Aljunied (D14 Geylang-fringe), priced ~13% above the $1,326 median. Freehold at a low $1.18M absolute is appealing, but 786sqft for a 3BR is cramped (mini-units), the 9.27% CAGR rests on just 19 txns, and Aljunied/Geylang carries locational stigma.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a low $1.18M entry are the positives, but the case is undercut on three fronts: 786sqft for a 3BR is an unusually tiny 'compact 3BR' (cramped rooms, narrower buyer appeal); the headline 9.27% appreciation comes from only 19 transactions (unreliable, likely small-base noise); and the unit is priced ~13% ABOVE the district median PSF while sitting on the Geylang fringe near Aljunied, which carries stigma that weighs on resale. The combination of premium PSF, thin data and a squeezed layout offsets the freehold/low-price appeal.",
+        "red_flags": [
+          "786sqft for a 3BR — very cramped 'mini' layout",
+          "9.27% rate from only 19 txns — unreliable, small-base noise",
+          "Priced ~13% above URA median; Geylang-fringe (Aljunied) stigma"
+        ],
+        "catalysts": [
+          "Freehold at low $1.18M absolute",
+          "D14 Paya Lebar Central + airbase relocation; Aljunied EWL",
+          "Compact freehold units have a low entry ticket"
+        ],
+        "rental_assessment": "Small freehold near Aljunied EWL and Paya Lebar has steady budget-tenant demand; layout limits family appeal.",
+        "appreciation_assessment": "9.27% is unreliable (19 txns); a premium-to-median entry on the Geylang fringe argues for a cautious ~3-4% forward.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-central-imperial-500096625",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

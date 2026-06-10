@@ -1,0 +1,119 @@
+{
+  "condo": "Royce Residences",
+  "slug": "royce-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 1BR at Royce Residences (D14) for $1.08M / $1475 PSF, with a high algo score (814) but only 8 URA transactions, no district median PSF, and an oversized-for-1BR 732 sqft footprint. The thin-data boutique profile and weak fundamentals behind the score push this to Neutral-to-Avoid; I rate Avoid on data unreliability.",
+      "rating_rationale": "Only 8 URA transactions and a null median PSF mean both the 5.9%/yr rate and any value judgement are unreliable. 732 sqft for a 1BR is unusually large (oversized — the low $1475 PSF is partly a size artefact), $1.08M for a 1BR is a thin resale segment, and Kallang MRT is a 810m/10-min walk. The 814 score rests on cheap freehold PSF over a big unit, not on liquidity or verified appreciation — exactly the thin-data boutique the rubric says to avoid.",
+      "red_flags": [
+        "Only 8 URA txn and null median PSF — data unreliable",
+        "732 sqft for a 1BR — oversized, low PSF is a size artefact",
+        "$1.08M for a 1BR — niche, shallow resale segment",
+        "810m / 10-min walk to MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure in D14 (Paya Lebar/Geylang fringe)",
+        "Generous unit size if reclassified/used as flexible 1BR+study"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 1475.41,
+        "beds": 1,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR at Royce Residences (D14) for $1.08M / $1475 PSF, with a high algo score (814) but only 8 URA transactions, no district median PSF, and an oversized-for-1BR 732 sqft footprint. The thin-data boutique profile and weak fundamentals behind the score push this to Neutral-to-Avoid; I rate Avoid on data unreliability.",
+        "rating": "Avoid",
+        "rating_rationale": "Only 8 URA transactions and a null median PSF mean both the 5.9%/yr rate and any value judgement are unreliable. 732 sqft for a 1BR is unusually large (oversized — the low $1475 PSF is partly a size artefact), $1.08M for a 1BR is a thin resale segment, and Kallang MRT is a 810m/10-min walk. The 814 score rests on cheap freehold PSF over a big unit, not on liquidity or verified appreciation — exactly the thin-data boutique the rubric says to avoid.",
+        "red_flags": [
+          "Only 8 URA txn and null median PSF — data unreliable",
+          "732 sqft for a 1BR — oversized, low PSF is a size artefact",
+          "$1.08M for a 1BR — niche, shallow resale segment",
+          "810m / 10-min walk to MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure in D14 (Paya Lebar/Geylang fringe)",
+          "Generous unit size if reclassified/used as flexible 1BR+study"
+        ],
+        "rental_assessment": "A large freehold 1BR near the city fringe rents adequately to professionals, but $1.08M against achievable 1BR rents gives a thin yield; tenant pool for an oversized 1BR is limited.",
+        "appreciation_assessment": "5.9%/yr is computed on just 8 transactions — statistically unreliable and not bankable. Without a district median there is no anchor to judge value either.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "8-txn series unreliable; held to a conservative D14 freehold assumption"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-royce-residences-60200930",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A small freehold Geylang unit asking $1,475 psf — well above the project's own ~$1,222 psf 12-month average. The algo's -20.4% 'cheap-for-age' signal is contradicted by real building transactions; this unit is priced rich, not cheap.",
+      "rating_rationale": "Asking $1,475 psf sits far above Royce's own trailing-12-month average of ~$1,222 psf, and the dossier itself flags psf_above_market with a +13.2% premium vs the size cohort (on just 2 cohort txns). The -20.4% age-adjusted 'cheap' score is a district-baseline artifact that does not survive a building-level check — the strongest robust forward signal (genuinely cheap vs verified recent comps) is absent here. Appreciation 3.7% is only a regional baseline (8 txns, no real CAGR), so there is no value AND no momentum support. The 732 sqft unit is the largest/'1+study' type in a 40-unit boutique block, fine physically, but D14 Geylang carries a real red-light-district stigma that drags exit liquidity. Freehold is not a forward edge per v3.4 priors. Paying a premium for a small unit in a stigma-adjacent micromarket with thin cohort data is the wrong side of the value trade.",
+      "red_flags": [
+        "Asking $1,475 psf vs project 12-mo avg ~$1,222 psf (paying above building market)",
+        "psf_above_market flag; +13.2% cohort premium on only 2 cohort transactions",
+        "appreciation_pct 3.7% is regional baseline only, 8 txns — no real CAGR/momentum",
+        "D14 Geylang red-light-district stigma weighs on resale liquidity and tenant profile",
+        "-20.4% age-adj 'cheap' signal is a district-baseline artifact, not real cheapness"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay) — defensive but not a forward return driver",
+        "Walkable to multiple MRT lines (Aljunied/Mountbatten/Kallang) for rental demand"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 1475.41,
+        "beds": 1,
+        "sqft": 732
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "A small freehold Geylang unit asking $1,475 psf — well above the project's own ~$1,222 psf 12-month average. The algo's -20.4% 'cheap-for-age' signal is contradicted by real building transactions; this unit is priced rich, not cheap.",
+        "rating_rationale": "Asking $1,475 psf sits far above Royce's own trailing-12-month average of ~$1,222 psf, and the dossier itself flags psf_above_market with a +13.2% premium vs the size cohort (on just 2 cohort txns). The -20.4% age-adjusted 'cheap' score is a district-baseline artifact that does not survive a building-level check — the strongest robust forward signal (genuinely cheap vs verified recent comps) is absent here. Appreciation 3.7% is only a regional baseline (8 txns, no real CAGR), so there is no value AND no momentum support. The 732 sqft unit is the largest/'1+study' type in a 40-unit boutique block, fine physically, but D14 Geylang carries a real red-light-district stigma that drags exit liquidity. Freehold is not a forward edge per v3.4 priors. Paying a premium for a small unit in a stigma-adjacent micromarket with thin cohort data is the wrong side of the value trade.",
+        "red_flags": [
+          "Asking $1,475 psf vs project 12-mo avg ~$1,222 psf (paying above building market)",
+          "psf_above_market flag; +13.2% cohort premium on only 2 cohort transactions",
+          "appreciation_pct 3.7% is regional baseline only, 8 txns — no real CAGR/momentum",
+          "D14 Geylang red-light-district stigma weighs on resale liquidity and tenant profile",
+          "-20.4% age-adj 'cheap' signal is a district-baseline artifact, not real cheapness"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay) — defensive but not a forward return driver",
+          "Walkable to multiple MRT lines (Aljunied/Mountbatten/Kallang) for rental demand"
+        ],
+        "appreciation_assessment": "No reliable forward signal: appreciation is a regional baseline placeholder (3.7%, 8 txns), not a building CAGR. Trailing appreciation has ~0 forward power regardless, and there is no value or catalyst to underwrite upside.",
+        "rental_assessment": "Project-level rental yield is quoted around 6.5% on small units, attractive on paper, but at this elevated entry PSF the effective yield compresses; tenant pool is decent given MRT access despite the Geylang setting."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-royce-residences-60200930",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

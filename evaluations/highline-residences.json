@@ -1,0 +1,63 @@
+{
+  "condo": "Highline Residences",
+  "slug": "highline-residences",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1BR in a well-regarded D03 Tiong Bahru development (550m to MRT, city-fringe) at $1190k / $2352 psf — roughly 9% below the $2596 project median, with a reliable 4.6% CAGR over 99 transactions. Strong location fundamentals; the constraint is that it is a high-PSF shoebox.",
+      "rating_rationale": "Tiong Bahru is one of the most resilient city-fringe rental and resale locations in RCR. $2352 psf is ~9% under the $2596 median (real discount), the 4.6% appreciation is reliable (99 txns), and the $1.19M quantum is liquid. Downside: 1BR shoebox at $2352 psf is a high absolute PSF, so the buyer pool is investor-led, and yield must justify the price. Location quality plus the below-median entry carry it to a Buy.",
+      "red_flags": [
+        "High PSF ($2352) for a 506sqft shoebox — investor-only buyer pool",
+        "1BR niche resale appeal versus owner-occupier units",
+        "99yr leasehold (2018) — fine for now but not freehold"
+      ],
+      "catalysts": [
+        "~9% below project median PSF entry",
+        "Tiong Bahru city-fringe — strong, durable rental/resale demand near CBD",
+        "550m to Tiong Bahru MRT (EWL)"
+      ],
+      "as_of": {
+        "price": 1190000,
+        "psf": 2351.78,
+        "beds": 1,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1BR in a well-regarded D03 Tiong Bahru development (550m to MRT, city-fringe) at $1190k / $2352 psf — roughly 9% below the $2596 project median, with a reliable 4.6% CAGR over 99 transactions. Strong location fundamentals; the constraint is that it is a high-PSF shoebox.",
+        "rating": "Buy",
+        "rating_rationale": "Tiong Bahru is one of the most resilient city-fringe rental and resale locations in RCR. $2352 psf is ~9% under the $2596 median (real discount), the 4.6% appreciation is reliable (99 txns), and the $1.19M quantum is liquid. Downside: 1BR shoebox at $2352 psf is a high absolute PSF, so the buyer pool is investor-led, and yield must justify the price. Location quality plus the below-median entry carry it to a Buy.",
+        "red_flags": [
+          "High PSF ($2352) for a 506sqft shoebox — investor-only buyer pool",
+          "1BR niche resale appeal versus owner-occupier units",
+          "99yr leasehold (2018) — fine for now but not freehold"
+        ],
+        "catalysts": [
+          "~9% below project median PSF entry",
+          "Tiong Bahru city-fringe — strong, durable rental/resale demand near CBD",
+          "550m to Tiong Bahru MRT (EWL)"
+        ],
+        "rental_assessment": "Excellent for a 1BR — Tiong Bahru/Outram is prime for young professionals and CBD commuters; consistently strong tenant demand and rent.",
+        "appreciation_assessment": "4.6% over 99 txns is reliable and healthy for RCR; the below-median entry adds margin. City-fringe location supports continued outperformance vs OCR.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.6,
+        "appreciation_rate_source": "URA resale-only, 99 txns (reliable)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-highline-residences-24489159",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

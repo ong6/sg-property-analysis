@@ -1,0 +1,61 @@
+{
+  "condo": "Cheap brand new 3br in D15",
+  "slug": "cheap-brand-new-3br-in-d15",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A marketing-named brand-new (TOP 2026) 990 sqft 3BR 99LH in D15 near Tanjong Katong TEL (830m) at $2.69M / $2,717 PSF. The PSF is top-tier new-launch pricing, the unit is a compact 990 sqft 3BR, and the dossier carries no URA data — \"cheap\" is a marketing claim, not a value verdict.",
+      "rating_rationale": "A brand-new D15 East Coast 99LH near the new Tanjong Katong TEL station has a real demand story — D15's deep buyer pool, new-build appeal, and the East Coast lifestyle premium. But $2,717 PSF is full new-launch pricing on a 99-year lease, and the early years of a new launch already capitalize the developer premium, so appreciation headroom from this base is thin. A 990 sqft 3BR is compact, and there is no URA transaction history to anchor value. The location quality balances the rich PSF and leasehold-at-premium concern — Neutral, leaning cautious.",
+      "red_flags": [
+        "$2,717 PSF is top-tier new-launch pricing on a 99-year lease",
+        "Compact 990 sqft for a 3BR",
+        "No URA data; \"cheap\" is a marketing claim",
+        "New-launch developer premium already in the price — limited appreciation margin"
+      ],
+      "catalysts": [
+        "Brand-new (TOP 2026) with new-build appeal in D15 East Coast",
+        "830m to new Tanjong Katong TEL station",
+        "D15 East Coast deep buyer pool and lifestyle premium"
+      ],
+      "as_of": {
+        "price": 2690000,
+        "psf": 2717.17,
+        "beds": 3,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A marketing-named brand-new (TOP 2026) 990 sqft 3BR 99LH in D15 near Tanjong Katong TEL (830m) at $2.69M / $2,717 PSF. The PSF is top-tier new-launch pricing, the unit is a compact 990 sqft 3BR, and the dossier carries no URA data — \"cheap\" is a marketing claim, not a value verdict.",
+        "rating": "Neutral",
+        "rating_rationale": "A brand-new D15 East Coast 99LH near the new Tanjong Katong TEL station has a real demand story — D15's deep buyer pool, new-build appeal, and the East Coast lifestyle premium. But $2,717 PSF is full new-launch pricing on a 99-year lease, and the early years of a new launch already capitalize the developer premium, so appreciation headroom from this base is thin. A 990 sqft 3BR is compact, and there is no URA transaction history to anchor value. The location quality balances the rich PSF and leasehold-at-premium concern — Neutral, leaning cautious.",
+        "red_flags": [
+          "$2,717 PSF is top-tier new-launch pricing on a 99-year lease",
+          "Compact 990 sqft for a 3BR",
+          "No URA data; \"cheap\" is a marketing claim",
+          "New-launch developer premium already in the price — limited appreciation margin"
+        ],
+        "catalysts": [
+          "Brand-new (TOP 2026) with new-build appeal in D15 East Coast",
+          "830m to new Tanjong Katong TEL station",
+          "D15 East Coast deep buyer pool and lifestyle premium"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-brand-new-3br-in-d15-500159635",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

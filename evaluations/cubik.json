@@ -1,0 +1,57 @@
+{
+  "condo": "Cubik",
+  "slug": "cubik",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact freehold 1BR (484 sqft) at Cubik, a small D15 boutique block in Geylang/East Coast fringe. Asking $1,746 psf is ~4% above the $1,682 median on a very thin 11-txn series, so the 4.2%/yr appreciation rate is statistically unreliable.",
+      "rating_rationale": "Freehold and D15 deep buyer pool are pluses, but this is a boutique development with only 11 URA transactions — the 4.2%/yr rate carries low confidence. PSF $1,746 is a premium to the $1,682 median, and 1.08km to Marine Terrace MRT is a long walk. Small freehold 1BR rents adequately but offers no clear appreciation edge; fairly-to-slightly-richly priced.",
+      "red_flags": [
+        "Thin 11-txn URA series — appreciation rate unreliable",
+        "Asking PSF ~4% above district median",
+        "Boutique block, 1.08km from MRT — shallow liquidity for a 1BR"
+      ],
+      "catalysts": [
+        "Freehold tenure in deep-buyer-pool D15",
+        "East Coast lifestyle / TEL Marine Terrace within walkable-ish distance"
+      ],
+      "as_of": {
+        "price": 845000,
+        "psf": 1745.87,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact freehold 1BR (484 sqft) at Cubik, a small D15 boutique block in Geylang/East Coast fringe. Asking $1,746 psf is ~4% above the $1,682 median on a very thin 11-txn series, so the 4.2%/yr appreciation rate is statistically unreliable.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and D15 deep buyer pool are pluses, but this is a boutique development with only 11 URA transactions — the 4.2%/yr rate carries low confidence. PSF $1,746 is a premium to the $1,682 median, and 1.08km to Marine Terrace MRT is a long walk. Small freehold 1BR rents adequately but offers no clear appreciation edge; fairly-to-slightly-richly priced.",
+        "red_flags": [
+          "Thin 11-txn URA series — appreciation rate unreliable",
+          "Asking PSF ~4% above district median",
+          "Boutique block, 1.08km from MRT — shallow liquidity for a 1BR"
+        ],
+        "catalysts": [
+          "Freehold tenure in deep-buyer-pool D15",
+          "East Coast lifestyle / TEL Marine Terrace within walkable-ish distance"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cubik-500025866",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

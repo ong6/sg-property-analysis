@@ -1,0 +1,61 @@
+{
+  "condo": "The Taipan",
+  "slug": "the-taipan",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 26-unit freehold boutique in Siglap (confirmed via search) where the $1,295 PSF looks cheap only because the 1,776 sqft unit is oversized. The 6.4%/yr URA rate rests on just 5 transactions and the micro-development is inherently illiquid despite the new Siglap TEL station.",
+      "rating_rationale": "Only 26 units total and ura_txn_count of 5 — appreciation (6.4%) is statistically unreliable and exit risk is high. $2.3M quantum on a 1,776 sqft unit means $1,295 PSF, below the $1,473 median, but the discount is for the large/older format, not a steal. Score_1000 of 494 is sub-market. Siglap MRT (730m, TEL) is a real plus that keeps this from Avoid.",
+      "red_flags": [
+        "26-unit boutique — very thin liquidity, no facilities scale",
+        "Only 5 URA transactions — 6.4% rate unreliable",
+        "$2.3M quantum on an oversized unit narrows the buyer pool"
+      ],
+      "catalysts": [
+        "Siglap TEL MRT 730m away (opened/recent) — connectivity uplift",
+        "D16 Bayshore precinct transformation nearby",
+        "Freehold in established Upper East Coast enclave"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1295.05,
+        "beds": 3,
+        "sqft": 1776.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 26-unit freehold boutique in Siglap (confirmed via search) where the $1,295 PSF looks cheap only because the 1,776 sqft unit is oversized. The 6.4%/yr URA rate rests on just 5 transactions and the micro-development is inherently illiquid despite the new Siglap TEL station.",
+        "rating": "Neutral",
+        "rating_rationale": "Only 26 units total and ura_txn_count of 5 — appreciation (6.4%) is statistically unreliable and exit risk is high. $2.3M quantum on a 1,776 sqft unit means $1,295 PSF, below the $1,473 median, but the discount is for the large/older format, not a steal. Score_1000 of 494 is sub-market. Siglap MRT (730m, TEL) is a real plus that keeps this from Avoid.",
+        "red_flags": [
+          "26-unit boutique — very thin liquidity, no facilities scale",
+          "Only 5 URA transactions — 6.4% rate unreliable",
+          "$2.3M quantum on an oversized unit narrows the buyer pool"
+        ],
+        "catalysts": [
+          "Siglap TEL MRT 730m away (opened/recent) — connectivity uplift",
+          "D16 Bayshore precinct transformation nearby",
+          "Freehold in established Upper East Coast enclave"
+        ],
+        "rental_assessment": "Upper East Coast draws family tenants and the new TEL station helps, but a large boutique unit at high quantum yields modestly (~2.5-3%).",
+        "appreciation_assessment": "URA 6.4%/yr is flattering but built on 5 txns; the Siglap TEL station is a genuine catalyst, though boutique illiquidity typically caps realized appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-taipan-500007011",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

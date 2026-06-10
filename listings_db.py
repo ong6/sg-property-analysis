@@ -29,7 +29,7 @@ import os
 import re
 from datetime import datetime
 from difflib import SequenceMatcher
-from typing import Any, Optional
+from typing import Optional
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 DB_FILE = os.path.join(_DATA_DIR, "listings_db.json")
@@ -182,30 +182,6 @@ def upsert_listings(listings: list[dict], source: Optional[dict] = None) -> dict
         "skipped": skipped,
         "total": len(store),
     }
-
-
-def mark_stale(active_keys: set[str], scope_district: Optional[str] = None,
-               older_than_days: int = 30) -> int:
-    """Mark listings not seen in a refresh as 'stale' (likely sold/withdrawn).
-
-    Only affects records last seen more than `older_than_days` ago, optionally
-    limited to a district. Returns the number newly marked stale.
-    """
-    db = load_db()
-    marked = 0
-    for key, rec in db["listings"].items():
-        if key in active_keys or rec.get("status") == "stale":
-            continue
-        if scope_district and (rec.get("district") or "") != scope_district:
-            continue
-        age = _days_since(rec.get("last_seen"))
-        if age is not None and age >= older_than_days:
-            rec["status"] = "stale"
-            marked += 1
-    if marked:
-        save_db(db)
-        export_sheet(db=db)
-    return marked
 
 
 def _record_to_row(rec: dict) -> dict:

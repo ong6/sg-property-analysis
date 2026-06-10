@@ -1,0 +1,61 @@
+{
+  "condo": "Hillbrooks",
+  "slug": "hillbrooks",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An older (1999) freehold in Hillview D23 with a large 1,270 sqft 2BR asking only $1,252 PSF — a striking 19% under the $1,542 median, with a solid 4.54%/yr rate on 49 transactions. The deep discount is partly explained by the oversized unit and 27-year age, but the value and decent appreciation make it a defensible Neutral leaning constructive.",
+      "rating_rationale": "$1,252 vs $1,542 median = -19% is the deepest discount in the batch, and 4.54%/yr on a robust 49-txn series is genuinely good. But 1,270 sqft for a 2BR is oversized, so part of the cheap PSF is size, not bargain; the 1999 building age adds maintenance/resale drag. Hillview is a quiet, low-liquidity D23 pocket 810m from DT3. At $1.59M absolute the entry is reasonable and freehold. Good fundamentals offset by age and location softness.",
+      "red_flags": [
+        "27-year-old building (1999) — maintenance and resale drag",
+        "oversized 1,270 sqft 2BR — cheap PSF partly reflects size",
+        "810m to MRT in a low-liquidity Hillview pocket"
+      ],
+      "catalysts": [
+        "freehold at -19% to URA median — clear value",
+        "4.54%/yr appreciation on a solid 49-txn series",
+        "Hillview's green, low-density appeal supports owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 1590000,
+        "psf": 1251.97,
+        "beds": 2,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An older (1999) freehold in Hillview D23 with a large 1,270 sqft 2BR asking only $1,252 PSF — a striking 19% under the $1,542 median, with a solid 4.54%/yr rate on 49 transactions. The deep discount is partly explained by the oversized unit and 27-year age, but the value and decent appreciation make it a defensible Neutral leaning constructive.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,252 vs $1,542 median = -19% is the deepest discount in the batch, and 4.54%/yr on a robust 49-txn series is genuinely good. But 1,270 sqft for a 2BR is oversized, so part of the cheap PSF is size, not bargain; the 1999 building age adds maintenance/resale drag. Hillview is a quiet, low-liquidity D23 pocket 810m from DT3. At $1.59M absolute the entry is reasonable and freehold. Good fundamentals offset by age and location softness.",
+        "red_flags": [
+          "27-year-old building (1999) — maintenance and resale drag",
+          "oversized 1,270 sqft 2BR — cheap PSF partly reflects size",
+          "810m to MRT in a low-liquidity Hillview pocket"
+        ],
+        "catalysts": [
+          "freehold at -19% to URA median — clear value",
+          "4.54%/yr appreciation on a solid 49-txn series",
+          "Hillview's green, low-density appeal supports owner-occupier demand"
+        ],
+        "rental_assessment": "Hillview is a quieter, family-oriented rental market — steady but not strong demand; the large size suits families over yield-seekers.",
+        "appreciation_assessment": "4.54%/yr on 49 transactions is credible and healthy for D23; the discount entry adds margin, though age caps the ceiling.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillbrooks-60016166",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

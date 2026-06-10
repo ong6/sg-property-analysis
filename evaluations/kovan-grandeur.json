@@ -1,0 +1,117 @@
+{
+  "condo": "Kovan Grandeur",
+  "slug": "kovan-grandeur",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2BR at Kovan Grandeur priced at $1,147 PSF, a striking ~16% below the $1,372 URA median — but the URA 5yr rate is negative (-0.6%/yr over 34 txns), so the discount may reflect a genuinely weak price trend rather than a bargain. Sub-$1.1M ticket near Kovan MRT keeps it liquid, but appreciation is the worry.",
+      "rating_rationale": "Negative -0.59%/yr appreciation across a credible 34-txn sample is the core problem — this development has not appreciated. The 16% gap below median PSF could be a motivated seller or could be the unit/stack being inferior; worth scrutiny. 810m to Kovan NEL MRT is walkable-ish but not prime. Affordable D19 entry with a deep HDB-upgrader pool supports liquidity, but no catalyst to reverse the flat trend.",
+      "red_flags": [
+        "Negative URA 5yr appreciation (-0.59%/yr) on a reliable 34-txn series",
+        "Listed 16% below URA median — investigate why (stack, condition, or motivated seller)",
+        "810m to MRT — beyond the prime 500m uplift band"
+      ],
+      "catalysts": [
+        "Cheap sub-$1.1M entry deepens buyer pool",
+        "Kovan/Hougang amenity-rich, steady rental demand"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1147.54,
+        "beds": 2,
+        "sqft": 915.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2BR at Kovan Grandeur priced at $1,147 PSF, a striking ~16% below the $1,372 URA median — but the URA 5yr rate is negative (-0.6%/yr over 34 txns), so the discount may reflect a genuinely weak price trend rather than a bargain. Sub-$1.1M ticket near Kovan MRT keeps it liquid, but appreciation is the worry.",
+        "rating": "Neutral",
+        "rating_rationale": "Negative -0.59%/yr appreciation across a credible 34-txn sample is the core problem — this development has not appreciated. The 16% gap below median PSF could be a motivated seller or could be the unit/stack being inferior; worth scrutiny. 810m to Kovan NEL MRT is walkable-ish but not prime. Affordable D19 entry with a deep HDB-upgrader pool supports liquidity, but no catalyst to reverse the flat trend.",
+        "red_flags": [
+          "Negative URA 5yr appreciation (-0.59%/yr) on a reliable 34-txn series",
+          "Listed 16% below URA median — investigate why (stack, condition, or motivated seller)",
+          "810m to MRT — beyond the prime 500m uplift band"
+        ],
+        "catalysts": [
+          "Cheap sub-$1.1M entry deepens buyer pool",
+          "Kovan/Hougang amenity-rich, steady rental demand"
+        ],
+        "rental_assessment": "Solid 2BR tenant demand in Kovan from the NEL corridor; widest tenant pool of the bedroom types.",
+        "appreciation_assessment": "Trend has been flat-to-negative; do not expect this to outperform. District baseline at best.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 1.5,
+        "appreciation_rate_source": "URA 34-txn series shows ~flat/negative; haircut to low-positive"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-grandeur-60217916",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "The algo's headline 'deep bargain' (-30.5% age-adj, -22% cohort, very_low_psf) is a DATA QUIRK built on a 2-transaction cohort. Verified comps show the ask is actually a slight PREMIUM, not a discount — and the project carries real quality and liquidity problems.",
+      "rating_rationale": "This is exactly the thin-cohort trap v3.4 warns about: psf_cohort_txns=2 and a -22% cohort premium are not trustworthy. The decisive verification: a 915 sqft unit at Kovan Grandeur transacted on 5 Dec 2025 at S$1,038 psf / S$950,000 — so the S$1,147 psf / S$1,050,000 ask is roughly a 10% PREMIUM to the most recent same-size comp, the opposite of the algo's claim. The project's overall recent average (~S$1,522 psf) is inflated by tiny 388/431/570 sqft units; pooling those into the 915 sqft cohort manufactured the phantom discount. On top of the false value signal: resident reviews cite poor management, unrepaired defects and paint peeling onto cars; it is a small 74-unit development (thin resale liquidity and weak en-bloc/AGM governance); and it is 99-yr leasehold from 2010, not freehold. The appreciation_pct of -0.59% on 34 txns also flags weak momentum. No catalyst justifies overriding all of this.",
+      "red_flags": [
+        "DATA QUIRK: -22% cohort discount rests on only 2 transactions; not a real bargain",
+        "Ask S$1,147 psf is ~10% ABOVE the verified 5 Dec 2025 same-size (915 sqft) transaction at S$1,038 psf",
+        "Resident reviews: poor management, broken/unfixed facilities, paint peeling onto parked cars",
+        "Tiny 74-unit development — thin resale liquidity and weak governance",
+        "99-year leasehold from 2010 (algo/listing context implied freehold — it is NOT freehold)",
+        "Negative trailing appreciation (-0.59%) — weak local momentum"
+      ],
+      "catalysts": [
+        "Near Kovan MRT and Heartland Mall (the only genuine plus)"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1147.54,
+        "beds": 2,
+        "sqft": 915
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "The algo's headline 'deep bargain' (-30.5% age-adj, -22% cohort, very_low_psf) is a DATA QUIRK built on a 2-transaction cohort. Verified comps show the ask is actually a slight PREMIUM, not a discount — and the project carries real quality and liquidity problems.",
+        "rating_rationale": "This is exactly the thin-cohort trap v3.4 warns about: psf_cohort_txns=2 and a -22% cohort premium are not trustworthy. The decisive verification: a 915 sqft unit at Kovan Grandeur transacted on 5 Dec 2025 at S$1,038 psf / S$950,000 — so the S$1,147 psf / S$1,050,000 ask is roughly a 10% PREMIUM to the most recent same-size comp, the opposite of the algo's claim. The project's overall recent average (~S$1,522 psf) is inflated by tiny 388/431/570 sqft units; pooling those into the 915 sqft cohort manufactured the phantom discount. On top of the false value signal: resident reviews cite poor management, unrepaired defects and paint peeling onto cars; it is a small 74-unit development (thin resale liquidity and weak en-bloc/AGM governance); and it is 99-yr leasehold from 2010, not freehold. The appreciation_pct of -0.59% on 34 txns also flags weak momentum. No catalyst justifies overriding all of this.",
+        "red_flags": [
+          "DATA QUIRK: -22% cohort discount rests on only 2 transactions; not a real bargain",
+          "Ask S$1,147 psf is ~10% ABOVE the verified 5 Dec 2025 same-size (915 sqft) transaction at S$1,038 psf",
+          "Resident reviews: poor management, broken/unfixed facilities, paint peeling onto parked cars",
+          "Tiny 74-unit development — thin resale liquidity and weak governance",
+          "99-year leasehold from 2010 (algo/listing context implied freehold — it is NOT freehold)",
+          "Negative trailing appreciation (-0.59%) — weak local momentum"
+        ],
+        "catalysts": [
+          "Near Kovan MRT and Heartland Mall (the only genuine plus)"
+        ],
+        "rental_assessment": "Project-level yield is quoted ~4.6%, but that is buoyed by very small high-PSF units; a 915 sqft 2BR bought at a premium to comps would deliver a weaker effective yield. Poor maintenance also pressures achievable rent.",
+        "appreciation_assessment": "Trailing -0.59% CAGR signals flat-to-negative momentum, and there is no relative-value edge (the unit is priced above comps). With small-development illiquidity and maintenance issues, forward appreciation is below-average — Avoid."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-grandeur-60217916",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

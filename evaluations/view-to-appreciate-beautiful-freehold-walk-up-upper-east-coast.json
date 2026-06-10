@@ -1,0 +1,67 @@
+{
+  "condo": "View to appreciate! Beautiful Freehold Walk Up - Upper East Coast",
+  "slug": "view-to-appreciate-beautiful-freehold-walk-up-upper-east-coast",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold walk-up 3BR (1,244 sqft) in Upper East Coast (D15), asking $1.8M ($1,447 psf), listed under a marketing title with no project name or built_year. Freehold D15 near the new Siglap TEL station is genuinely attractive, but it's a no-facility walk-up with no URA data and an unverifiable building.",
+      "rating_rationale": "$1,447 psf for a FH D15 3BR in the desirable Upper East Coast belt, 750m from the new Siglap TEL station, is reasonable and the TEL opening is a real catalyst. But this is a walk-up (no facilities, lift-less, older), the listing hides project name and built_year, and there is no URA series — the 'View to appreciate' framing is marketing. Freehold + location + TEL keep it balanced; the walk-up format and data gaps stop it short of Buy.",
+      "red_flags": [
+        "Walk-up, no facilities — narrower buyer pool, likely older building",
+        "Marketing title hides project name and built_year",
+        "No URA transaction data — no pricing/appreciation signal",
+        "Walk-up resale liquidity slower than facilities condos"
+      ],
+      "catalysts": [
+        "Freehold in prime-lifestyle Upper East Coast D15",
+        "750m to Siglap MRT (Thomson-East Coast Line) — recent connectivity uplift",
+        "Bayshore precinct and East Coast lifestyle demand",
+        "Deep D15 buyer pool, $1.8M in the liquid band"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1446.95,
+        "beds": 3,
+        "sqft": 1244.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold walk-up 3BR (1,244 sqft) in Upper East Coast (D15), asking $1.8M ($1,447 psf), listed under a marketing title with no project name or built_year. Freehold D15 near the new Siglap TEL station is genuinely attractive, but it's a no-facility walk-up with no URA data and an unverifiable building.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,447 psf for a FH D15 3BR in the desirable Upper East Coast belt, 750m from the new Siglap TEL station, is reasonable and the TEL opening is a real catalyst. But this is a walk-up (no facilities, lift-less, older), the listing hides project name and built_year, and there is no URA series — the 'View to appreciate' framing is marketing. Freehold + location + TEL keep it balanced; the walk-up format and data gaps stop it short of Buy.",
+        "red_flags": [
+          "Walk-up, no facilities — narrower buyer pool, likely older building",
+          "Marketing title hides project name and built_year",
+          "No URA transaction data — no pricing/appreciation signal",
+          "Walk-up resale liquidity slower than facilities condos"
+        ],
+        "catalysts": [
+          "Freehold in prime-lifestyle Upper East Coast D15",
+          "750m to Siglap MRT (Thomson-East Coast Line) — recent connectivity uplift",
+          "Bayshore precinct and East Coast lifestyle demand",
+          "Deep D15 buyer pool, $1.8M in the liquid band"
+        ],
+        "rental_assessment": "Freehold East Coast units rent well to expat/local families drawn to the lifestyle belt; a walk-up trims the premium slightly. Yield ~3-3.5%.",
+        "appreciation_assessment": "FH D15 near a newly-opened TEL station has a credible appreciation tailwind, but the walk-up format and unverifiable age/condition cap confidence; base case around the RCR/D15 baseline.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "FH D15 near Siglap TEL baseline; no project URA data, walk-up discount, unverified age"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-view-to-appreciate-beautiful-freehold-walk-up-upper-east-coast-500106660",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

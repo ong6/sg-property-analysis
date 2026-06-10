@@ -1,0 +1,117 @@
+{
+  "condo": "Le Regal",
+  "slug": "le-regal",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR at Le Regal, a small D14 development 770m from Aljunied MRT, asking $770k ($1,118 PSF). Entry quantum is low and PSF sits well below the $1,500 URA median, but it's a boutique series with only 23 txns.",
+      "rating_rationale": "$770k entry and freehold tenure are attractive, and $1,118 PSF is a ~25% discount to the $1,500 median. But the 689 sqft '1BR' is oversized for one bedroom (possible misclassification / inefficient layout), the 7.5%/yr URA rate rests on just 23 txns, and Le Regal is a small development — limiting liquidity. Paya Lebar Central catalyst is genuine and supports the area.",
+      "red_flags": [
+        "Only 23 URA txns — thin appreciation series",
+        "689 sqft for a 1BR is oversized — possible mislabel / inefficient",
+        "Boutique development, limited resale depth"
+      ],
+      "catalysts": [
+        "Paya Lebar Central commercial hub + airbase relocation",
+        "Freehold tenure in an RCR district",
+        "Sub-$800k entry into D14 near Aljunied MRT"
+      ],
+      "as_of": {
+        "price": 770000,
+        "psf": 1117.56,
+        "beds": 1,
+        "sqft": 689.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR at Le Regal, a small D14 development 770m from Aljunied MRT, asking $770k ($1,118 PSF). Entry quantum is low and PSF sits well below the $1,500 URA median, but it's a boutique series with only 23 txns.",
+        "rating": "Neutral",
+        "rating_rationale": "$770k entry and freehold tenure are attractive, and $1,118 PSF is a ~25% discount to the $1,500 median. But the 689 sqft '1BR' is oversized for one bedroom (possible misclassification / inefficient layout), the 7.5%/yr URA rate rests on just 23 txns, and Le Regal is a small development — limiting liquidity. Paya Lebar Central catalyst is genuine and supports the area.",
+        "red_flags": [
+          "Only 23 URA txns — thin appreciation series",
+          "689 sqft for a 1BR is oversized — possible mislabel / inefficient",
+          "Boutique development, limited resale depth"
+        ],
+        "catalysts": [
+          "Paya Lebar Central commercial hub + airbase relocation",
+          "Freehold tenure in an RCR district",
+          "Sub-$800k entry into D14 near Aljunied MRT"
+        ],
+        "rental_assessment": "Aljunied/Geylang has steady tenant demand; freehold 1BR at low quantum rents reasonably, yield likely ~3.5-4%.",
+        "appreciation_assessment": "D14 Paya Lebar transformation supports RCR-grade appreciation (~5%); the 7.5% URA figure is unreliable on 23 txns.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D14 RCR baseline; URA 7.5% discounted for 23-txn sample"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-regal-21158664",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "The cleanest of the five: $1,117.56psf is at the low end of the verified $1,103-$1,500 recent-resale range (avg ~$1,304), and unlike its peers it has a REAL size-cohort (psf_cohort_txns=11) sitting only +6.7% above its own band. Genuine, defensible value plus a strong ~6% rental yield.",
+      "rating_rationale": "Le Regal is an 88-unit freehold (2015) on Geylang Road, 820m to Aljunied MRT. Recent resales average ~$1,304 psf (12-mo range $1,103-$1,500; current asks $1,110-$1,781). This listing's $1,117.56 psf is near the floor of the actual transacted range - a real discount to the average, and critically it is the ONLY dossier here with a credible size-cohort: psf_cohort_txns=11 and psf_premium_vs_cohort only +6.7%, meaning the 689sqft/sub-$800k entry is fairly priced (slightly above) within its own size band, not a thin-data illusion. The -41.4% age-adjusted premium is corroborated by genuine cheap-vs-district evidence. Portal-quoted rental yield ~6.1% is strong. D14/OCR-adjacent carries the favorable v3.4 forward region prior (~+4%). Caveats: it is a mixed-use block (88 residential units above 48 commercial shops, street-facing => noise, and a mixed-use building can carry slightly thinner financing/exit). On balance the value + verified cohort + yield justify a Buy at medium confidence; the model explains <10% of forward variance so I withhold high.",
+      "red_flags": [
+        "Mixed commercial/residential development - units sit above 48 shops, street-facing on Geylang Road (noise; some lenders cap LTV on mixed-use)",
+        "very_low_psf flag present (but here corroborated by real txns, not a mis-scrape)",
+        "Most recent residential resale comp on some sources dates to Apr 2024 - verify a fresh 2025/26 comp before committing"
+      ],
+      "catalysts": [
+        "Genuine value: $1,117psf vs ~$1,304 recent-resale average on a credible 11-txn cohort",
+        "Strong ~6.1% gross rental yield on a sub-$800k freehold entry",
+        "820m to Aljunied EW9 MRT; D14/OCR-adjacent favorable forward region prior (~+4%)"
+      ],
+      "as_of": {
+        "price": 770000,
+        "psf": 1117.56,
+        "beds": 1,
+        "sqft": 689
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "The cleanest of the five: $1,117.56psf is at the low end of the verified $1,103-$1,500 recent-resale range (avg ~$1,304), and unlike its peers it has a REAL size-cohort (psf_cohort_txns=11) sitting only +6.7% above its own band. Genuine, defensible value plus a strong ~6% rental yield.",
+        "rating_rationale": "Le Regal is an 88-unit freehold (2015) on Geylang Road, 820m to Aljunied MRT. Recent resales average ~$1,304 psf (12-mo range $1,103-$1,500; current asks $1,110-$1,781). This listing's $1,117.56 psf is near the floor of the actual transacted range - a real discount to the average, and critically it is the ONLY dossier here with a credible size-cohort: psf_cohort_txns=11 and psf_premium_vs_cohort only +6.7%, meaning the 689sqft/sub-$800k entry is fairly priced (slightly above) within its own size band, not a thin-data illusion. The -41.4% age-adjusted premium is corroborated by genuine cheap-vs-district evidence. Portal-quoted rental yield ~6.1% is strong. D14/OCR-adjacent carries the favorable v3.4 forward region prior (~+4%). Caveats: it is a mixed-use block (88 residential units above 48 commercial shops, street-facing => noise, and a mixed-use building can carry slightly thinner financing/exit). On balance the value + verified cohort + yield justify a Buy at medium confidence; the model explains <10% of forward variance so I withhold high.",
+        "red_flags": [
+          "Mixed commercial/residential development - units sit above 48 shops, street-facing on Geylang Road (noise; some lenders cap LTV on mixed-use)",
+          "very_low_psf flag present (but here corroborated by real txns, not a mis-scrape)",
+          "Most recent residential resale comp on some sources dates to Apr 2024 - verify a fresh 2025/26 comp before committing"
+        ],
+        "catalysts": [
+          "Genuine value: $1,117psf vs ~$1,304 recent-resale average on a credible 11-txn cohort",
+          "Strong ~6.1% gross rental yield on a sub-$800k freehold entry",
+          "820m to Aljunied EW9 MRT; D14/OCR-adjacent favorable forward region prior (~+4%)"
+        ],
+        "rental_assessment": "Portal-quoted ~6.1% gross yield is among the highest of the batch and supports the investment case on a $770k entry; small-format units in Geylang rent readily.",
+        "appreciation_assessment": "7.46% trailing CAGR on 23 txns - discount per backtest priors, but the value (cheap-vs-cohort) signal here is the robust forward driver. No specific dated catalyst, so growth thesis rests on value + yield, not momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-regal-21158664",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

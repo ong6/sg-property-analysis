@@ -1,0 +1,59 @@
+{
+  "condo": "The Glacier",
+  "slug": "the-glacier",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 1335 sqft 3BR at The Glacier (D15) at $2.25M / $1685 PSF, ~5% above the $1610 median. The eye-catching 9.59% CAGR is built on just 7 transactions — too thin to trust — and the development is 1km / 12-min from Eunos MRT.",
+      "rating_rationale": "Freehold in deep-pool D15 at a liquid $2.25M quantum is a sound base, but the standout 9.59% CAGR rests on only 7 txns and should be heavily discounted — likely noise, not a real trend. Entry sits above the $1610 district median (no discount), and the 1km walk to Eunos is mediocre transit. A decent freehold D15 hold, but nothing in the data justifies a Buy; the headline appreciation is a statistical mirage.",
+      "red_flags": [
+        "9.59% CAGR rests on only 7 txns — statistically unreliable, do not anchor on it",
+        "Entry ~5% above district median PSF — no value discount",
+        "1.01km / 12-min walk to Eunos MRT — weak transit access"
+      ],
+      "catalysts": [
+        "Freehold tenure in deep-buyer-pool D15 East Coast",
+        "$2.25M sits in a liquid quantum band"
+      ],
+      "as_of": {
+        "price": 2250000,
+        "psf": 1685.39,
+        "beds": 3,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1335 sqft 3BR at The Glacier (D15) at $2.25M / $1685 PSF, ~5% above the $1610 median. The eye-catching 9.59% CAGR is built on just 7 transactions — too thin to trust — and the development is 1km / 12-min from Eunos MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold in deep-pool D15 at a liquid $2.25M quantum is a sound base, but the standout 9.59% CAGR rests on only 7 txns and should be heavily discounted — likely noise, not a real trend. Entry sits above the $1610 district median (no discount), and the 1km walk to Eunos is mediocre transit. A decent freehold D15 hold, but nothing in the data justifies a Buy; the headline appreciation is a statistical mirage.",
+        "red_flags": [
+          "9.59% CAGR rests on only 7 txns — statistically unreliable, do not anchor on it",
+          "Entry ~5% above district median PSF — no value discount",
+          "1.01km / 12-min walk to Eunos MRT — weak transit access"
+        ],
+        "catalysts": [
+          "Freehold tenure in deep-buyer-pool D15 East Coast",
+          "$2.25M sits in a liquid quantum band"
+        ],
+        "rental_assessment": "Moderate. D15 tenant demand is solid, but distance from MRT and a large freehold 3BR skew toward family own-stay over the transient rental pool.",
+        "appreciation_assessment": "Discount the 9.59% (7 txns) heavily; realistic expectation is around the RCR baseline for a freehold D15 mid-block. No specific catalyst to drive outperformance.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-glacier-500132025",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

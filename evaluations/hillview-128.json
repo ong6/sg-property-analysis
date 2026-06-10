@@ -1,0 +1,65 @@
+{
+  "condo": "Hillview 128",
+  "slug": "hillview-128",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Old (2001) 999-yr 3BR in Hillview D23 at $1.60M / $1,533 PSF — the 9.4%/yr URA rate is built on just 9 transactions and is unreliable, and the technical score is weak (467, losing 215-263-91 record). Quasi-freehold tenure is the main redeeming feature.",
+      "rating_rationale": "25-year-old development; $1,533 PSF is slightly above the $1,475 URA median. The headline 9.37%/yr appreciation rests on only 9 txns — far below the ~30 needed for confidence — so it cannot be trusted as a forward rate. Hillview MRT is 1.16km (14 min walk), not walkable. Score 467 / Elo 1062 with a clearly losing record. 999-yr tenure and the established Hillview/Bukit Batok nature-fringe lifestyle are the positives, but D23 is OCR with modest appreciation priors and no near-term catalyst.",
+      "red_flags": [
+        "URA rate from only 9 txns — statistically unreliable",
+        "Built 2001 (25yo) — higher maintenance, aging facilities",
+        "MRT 1.16km — not walkable",
+        "Weak technical score and losing arena record"
+      ],
+      "catalysts": [
+        "999-year tenure (quasi-freehold)",
+        "Hillview nature/greenery lifestyle appeal",
+        "Established low-density enclave"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1532.57,
+        "beds": 3,
+        "sqft": 1044.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Old (2001) 999-yr 3BR in Hillview D23 at $1.60M / $1,533 PSF — the 9.4%/yr URA rate is built on just 9 transactions and is unreliable, and the technical score is weak (467, losing 215-263-91 record). Quasi-freehold tenure is the main redeeming feature.",
+        "rating": "Neutral",
+        "rating_rationale": "25-year-old development; $1,533 PSF is slightly above the $1,475 URA median. The headline 9.37%/yr appreciation rests on only 9 txns — far below the ~30 needed for confidence — so it cannot be trusted as a forward rate. Hillview MRT is 1.16km (14 min walk), not walkable. Score 467 / Elo 1062 with a clearly losing record. 999-yr tenure and the established Hillview/Bukit Batok nature-fringe lifestyle are the positives, but D23 is OCR with modest appreciation priors and no near-term catalyst.",
+        "red_flags": [
+          "URA rate from only 9 txns — statistically unreliable",
+          "Built 2001 (25yo) — higher maintenance, aging facilities",
+          "MRT 1.16km — not walkable",
+          "Weak technical score and losing arena record"
+        ],
+        "catalysts": [
+          "999-year tenure (quasi-freehold)",
+          "Hillview nature/greenery lifestyle appeal",
+          "Established low-density enclave"
+        ],
+        "rental_assessment": "Hillview rental demand is moderate and car-dependent; 3BR rents to families but tenant pool is thinner without walkable MRT.",
+        "appreciation_assessment": "Ignore the 9.4% figure (thin data); expect OCR-baseline ~3.5-4% for an aging D23 resale with no catalyst.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "OCR D23 baseline; URA 9.4% discarded as <30 txn unreliable"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-128-500109846",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

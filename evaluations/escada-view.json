@@ -1,0 +1,61 @@
+{
+  "condo": "Escada View",
+  "slug": "escada-view",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "29-year-old (1997) freehold 3BR in Bedok/Lengkong Empat (not Geylang as the district tag implies) at $1,152 psf for a large 1,206 sqft. Absolute PSF is at the low end of the project's $1,244-1,595 range, so it screens cheap, but it is an aged, run-down, MRT-distant development with thin comps (cohort 2 txns).",
+      "rating_rationale": "At $1,151.65 psf the unit is below the project's verified PSF range ($1,244-1,595), and a $1.39M large FH 3BR has real own-stay/family appeal — that is a genuine value angle. But the cheapness is heavily age-driven (built 1997, 'very_old_property' flag) and quality-discounted: reviews describe run-down, poorly maintained facilities, a remote location 13-14 min walk from the nearest MRT (Kembangan/Kaki Bukit/Bedok North), and small cramped units. psf_cohort_txns is only 2, so the +9.3% cohort premium and the appreciation figure are both thin. Freehold is not a forward edge per v3.4. A large old 3BR in a low-liquidity pocket is hard to exit on a 5-7yr investment horizon. Net Neutral: real but quality- and liquidity-impaired value.",
+      "red_flags": [
+        "built 1997 (29 yrs) with reviews citing run-down, poorly maintained facilities",
+        "13-14 min walk to nearest MRT — no station within comfortable distance",
+        "psf_cohort_txns = 2 — cohort premium and appreciation rest on very thin data",
+        "large 1,206 sqft 3BR in a low-liquidity micro-market — slow, wide-spread exit"
+      ],
+      "catalysts": [
+        "Freehold large 3BR layout appeals to own-stay/family upgraders seeking space below $1.4M",
+        "Bedok/Kembangan landed-enclave amenities (Bedok Reservoir, schools) support owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 1388888,
+        "psf": 1151.65,
+        "beds": 3,
+        "sqft": 1206
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "29-year-old (1997) freehold 3BR in Bedok/Lengkong Empat (not Geylang as the district tag implies) at $1,152 psf for a large 1,206 sqft. Absolute PSF is at the low end of the project's $1,244-1,595 range, so it screens cheap, but it is an aged, run-down, MRT-distant development with thin comps (cohort 2 txns).",
+        "rating_rationale": "At $1,151.65 psf the unit is below the project's verified PSF range ($1,244-1,595), and a $1.39M large FH 3BR has real own-stay/family appeal — that is a genuine value angle. But the cheapness is heavily age-driven (built 1997, 'very_old_property' flag) and quality-discounted: reviews describe run-down, poorly maintained facilities, a remote location 13-14 min walk from the nearest MRT (Kembangan/Kaki Bukit/Bedok North), and small cramped units. psf_cohort_txns is only 2, so the +9.3% cohort premium and the appreciation figure are both thin. Freehold is not a forward edge per v3.4. A large old 3BR in a low-liquidity pocket is hard to exit on a 5-7yr investment horizon. Net Neutral: real but quality- and liquidity-impaired value.",
+        "red_flags": [
+          "built 1997 (29 yrs) with reviews citing run-down, poorly maintained facilities",
+          "13-14 min walk to nearest MRT — no station within comfortable distance",
+          "psf_cohort_txns = 2 — cohort premium and appreciation rest on very thin data",
+          "large 1,206 sqft 3BR in a low-liquidity micro-market — slow, wide-spread exit"
+        ],
+        "catalysts": [
+          "Freehold large 3BR layout appeals to own-stay/family upgraders seeking space below $1.4M",
+          "Bedok/Kembangan landed-enclave amenities (Bedok Reservoir, schools) support owner-occupier demand"
+        ],
+        "rental_assessment": "Aged 3BR away from MRT rents to value-seeking families at modest PSF; yield is unremarkable and the large layout suits owners more than investors.",
+        "appreciation_assessment": "ura_5yr_cagr 4.71% (13 txns) is the better-supported figure here, but backtest says trailing CAGR has ~0 forward power and the discount is age-driven, not a mispricing — do not extrapolate."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-escada-view-25552771",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

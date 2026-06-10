@@ -1,0 +1,61 @@
+{
+  "condo": "Blue Horizon",
+  "slug": "blue-horizon",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A well-sized 936 sqft 2BR at Blue Horizon, a large D05 (West Coast) leasehold completed 2005, at $1.39M / $1,484 psf. Wide 2BR buyer pool, deep 96-txn history and a solid 4.9%/yr resale CAGR make this a sound mid-quantum investment.",
+      "rating_rationale": "This hits the investment sweet spots: a 2BR (widest tenant and resale pool), a $1.39M quantum that is highly liquid, 96 URA txns supporting a reliable 4.9%/yr resale CAGR (above the regional baseline), and a 936 sqft size that's genuinely usable (not shoebox, not oversized). Listing PSF ($1,484) is only ~1.7% above the project median — fairly priced. Blue Horizon is a large West Coast development with One-North / NUS / Kent Ridge employment demand nearby. Main caveat: no MRT within easy walk per dossier and the development is 99yr from 2005 (lease decay), but the fundamentals clearly support a Buy.",
+      "red_flags": [
+        "No MRT within easy walk per dossier (West Coast pocket)",
+        "99yr leasehold from 2005 — ~20yrs of lease consumed",
+        "West Coast location is somewhat car-dependent"
+      ],
+      "catalysts": [
+        "4.9%/yr resale CAGR on 96 txns — reliable and above baseline",
+        "Liquid $1.39M quantum + widest-pool 2BR format",
+        "D05 One-North / NUS / West Coast employment catchment; fairly priced vs median"
+      ],
+      "as_of": {
+        "price": 1388888,
+        "psf": 1483.85,
+        "beds": 2,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A well-sized 936 sqft 2BR at Blue Horizon, a large D05 (West Coast) leasehold completed 2005, at $1.39M / $1,484 psf. Wide 2BR buyer pool, deep 96-txn history and a solid 4.9%/yr resale CAGR make this a sound mid-quantum investment.",
+        "rating": "Buy",
+        "rating_rationale": "This hits the investment sweet spots: a 2BR (widest tenant and resale pool), a $1.39M quantum that is highly liquid, 96 URA txns supporting a reliable 4.9%/yr resale CAGR (above the regional baseline), and a 936 sqft size that's genuinely usable (not shoebox, not oversized). Listing PSF ($1,484) is only ~1.7% above the project median — fairly priced. Blue Horizon is a large West Coast development with One-North / NUS / Kent Ridge employment demand nearby. Main caveat: no MRT within easy walk per dossier and the development is 99yr from 2005 (lease decay), but the fundamentals clearly support a Buy.",
+        "red_flags": [
+          "No MRT within easy walk per dossier (West Coast pocket)",
+          "99yr leasehold from 2005 — ~20yrs of lease consumed",
+          "West Coast location is somewhat car-dependent"
+        ],
+        "catalysts": [
+          "4.9%/yr resale CAGR on 96 txns — reliable and above baseline",
+          "Liquid $1.39M quantum + widest-pool 2BR format",
+          "D05 One-North / NUS / West Coast employment catchment; fairly priced vs median"
+        ],
+        "rental_assessment": "Strong 2BR demand from One-North/NUS/science-park tenants; gross yield likely ~3.5%+ at this quantum, with a deep tenant pool.",
+        "appreciation_assessment": "4.9%/yr resale-only CAGR on 96 txns is reliable and healthy for a mature leasehold; below-median-ish pricing leaves room to track the market.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-blue-horizon-60154410",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

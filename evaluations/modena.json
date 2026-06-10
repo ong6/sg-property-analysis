@@ -1,0 +1,61 @@
+{
+  "condo": "Modena",
+  "slug": "modena",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A genuinely large 2,680 sqft 4BR at Simei MRT whose 'cheap' $1,078 psf is a function of size, not value — total quantum is $2.89M. URA appreciation is an OCR-typical 3.8%/yr on a reasonable 41 txns, but the oversized format and $2.9M quantum in D18 make this a slow, niche exit.",
+      "rating_rationale": "Low PSF ($1,078 vs $1,183 median) looks like value but reflects a 2,680 sqft oversized unit — buyers pay quantum, and $2.89M is heavy for a 24-year-old D18 leasehold. URA 3.8%/yr on 41 txns is reliable but unexciting; Simei MRT (310m) and Eastpoint mall give it a floor.",
+      "red_flags": [
+        "Oversized 2,680 sqft inflates apparent value; true metric is $2.89M quantum",
+        "24-year-old 99LH — lease decay over the hold",
+        "$2.9M quantum in OCR D18 thins the resale pool significantly"
+      ],
+      "catalysts": [
+        "310m to Simei MRT (EWL) and Eastpoint Mall",
+        "Below-median PSF offers a discount for own-stay space buyers",
+        "Near Changi Business Park / SUTD tenant catchment"
+      ],
+      "as_of": {
+        "price": 2890000,
+        "psf": 1078.36,
+        "beds": 4,
+        "sqft": 2680.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A genuinely large 2,680 sqft 4BR at Simei MRT whose 'cheap' $1,078 psf is a function of size, not value — total quantum is $2.89M. URA appreciation is an OCR-typical 3.8%/yr on a reasonable 41 txns, but the oversized format and $2.9M quantum in D18 make this a slow, niche exit.",
+        "rating": "Neutral",
+        "rating_rationale": "Low PSF ($1,078 vs $1,183 median) looks like value but reflects a 2,680 sqft oversized unit — buyers pay quantum, and $2.89M is heavy for a 24-year-old D18 leasehold. URA 3.8%/yr on 41 txns is reliable but unexciting; Simei MRT (310m) and Eastpoint mall give it a floor.",
+        "red_flags": [
+          "Oversized 2,680 sqft inflates apparent value; true metric is $2.89M quantum",
+          "24-year-old 99LH — lease decay over the hold",
+          "$2.9M quantum in OCR D18 thins the resale pool significantly"
+        ],
+        "catalysts": [
+          "310m to Simei MRT (EWL) and Eastpoint Mall",
+          "Below-median PSF offers a discount for own-stay space buyers",
+          "Near Changi Business Park / SUTD tenant catchment"
+        ],
+        "rental_assessment": "Decent tenant base from Changi Business Park and SUTD, but a 2,680 sqft 4BR rents to a narrow family pool; yield weak on $2.89M quantum (~3%).",
+        "appreciation_assessment": "URA 3.8%/yr on 41 txns is a credible OCR-baseline rate; expect steady but modest growth, dragged by lease age and high quantum.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-modena-500021609",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "condo": "77 Seng Poh Lane",
+  "slug": "77-seng-poh-lane",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A $1.0M / $1056 PSF 3BR in Tiong Bahru (D03) is implausibly cheap — prime D03 condos transact well above $2,000 PSF — pointing to a walk-up / old apartment block, a leasehold with very short remaining lease, or an incomplete listing. The score_1000 of 759 is an artifact of that abnormally low PSF and should not be trusted at face value.",
+      "rating_rationale": "The headline numbers don't add up: $1056 PSF in Tiong Bahru is roughly half the going condo rate, built_year is null, and there is zero URA data. This is almost certainly a small old walk-up apartment (Seng Poh Lane is the Tiong Bahru pre-war/SIT estate area), not a liquid condo. The 759 technical score is purely a cheap-PSF artifact. Location (Tiong Bahru, Havelock TEL) is genuinely strong, but the unit is too opaque and likely too lease-impaired or character-restricted to underwrite confidently as an investment.",
+      "red_flags": [
+        "$1056 PSF is far below D03 condo market (~$2,000+) — likely old walk-up / short lease, not a comparable condo",
+        "Null built_year and zero URA data — cannot verify lease remaining or trend",
+        "Inflated score_1000 (759) driven entirely by anomalously low PSF — misleading",
+        "Tiong Bahru conservation/SIT estates carry restrictions and tiny buyer pools"
+      ],
+      "catalysts": [
+        "Tiong Bahru is a premium lifestyle enclave; Havelock TEL station adds connectivity",
+        "If genuinely a sub-$1.1M D03 entry, the price band is broadly accessible"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1055.97,
+        "beds": 3,
+        "sqft": 947.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A $1.0M / $1056 PSF 3BR in Tiong Bahru (D03) is implausibly cheap — prime D03 condos transact well above $2,000 PSF — pointing to a walk-up / old apartment block, a leasehold with very short remaining lease, or an incomplete listing. The score_1000 of 759 is an artifact of that abnormally low PSF and should not be trusted at face value.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline numbers don't add up: $1056 PSF in Tiong Bahru is roughly half the going condo rate, built_year is null, and there is zero URA data. This is almost certainly a small old walk-up apartment (Seng Poh Lane is the Tiong Bahru pre-war/SIT estate area), not a liquid condo. The 759 technical score is purely a cheap-PSF artifact. Location (Tiong Bahru, Havelock TEL) is genuinely strong, but the unit is too opaque and likely too lease-impaired or character-restricted to underwrite confidently as an investment.",
+        "red_flags": [
+          "$1056 PSF is far below D03 condo market (~$2,000+) — likely old walk-up / short lease, not a comparable condo",
+          "Null built_year and zero URA data — cannot verify lease remaining or trend",
+          "Inflated score_1000 (759) driven entirely by anomalously low PSF — misleading",
+          "Tiong Bahru conservation/SIT estates carry restrictions and tiny buyer pools"
+        ],
+        "catalysts": [
+          "Tiong Bahru is a premium lifestyle enclave; Havelock TEL station adds connectivity",
+          "If genuinely a sub-$1.1M D03 entry, the price band is broadly accessible"
+        ],
+        "rental_assessment": "Tiong Bahru rents well to young professionals/expats, but an old walk-up commands lower rent and the yield depends entirely on the unverified true unit type.",
+        "appreciation_assessment": "Cannot assess reliably — no URA series, anomalous PSF, unknown lease. Conservation-area walk-ups appreciate but illiquidly.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Placeholder RCR estimate — data too thin/anomalous to derive a real rate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-77-seng-poh-lane-25581117",
+        "review_file": "cov_batch_30.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A 1937 pre-war Tiong Bahru SIT conservation walk-up — a niche heritage asset, not a standard condo. The 'very_low_psf' cheapness is unverifiable: zero transaction data, regional-baseline appreciation, and null premiums across the board.",
+      "rating_rationale": "This is not an investment-grade condo for a 5-7yr hold; it is a conserved pre-war walk-up (built ~1937) in the Tiong Bahru SIT estate. The dossier flags it as cheap (very_low_psf, $1,056 psf) but has NO basis: appreciation_txns=0, appreciation_source=regional_baseline (3.7% default), age_adj_premium=null, psf_premium_vs_cohort=null, built_year=null. Per the v3.4 prior, a very_low_psf flag with no comparable transactions is a data gap to distrust, not a confirmed bargain. Practical risks are heavy: no lift (walk-up), conservation restrictions on renovation, ambiguous/short remaining lease (many SIT flats have ~50-70yrs or are 99-yr from the 1930s-60s), and an illiquid, idiosyncratic resale market. Heritage charm can command a premium with the right owner-occupier, but as a yield/appreciation play the case is unverified and the exit is thin. Avoid for investment.",
+      "red_flags": [
+        "Zero transaction data: appreciation_txns=0, regional_baseline rate, age_adj_premium and psf_premium both null — cheapness is unverifiable",
+        "Pre-war 1937 SIT walk-up: no lift, conservation/renovation restrictions, idiosyncratic and illiquid resale",
+        "Ambiguous and likely short/expired remaining lease typical of SIT-era flats (built_year null in dossier)",
+        "very_low_psf flag with no comparables is a classic data-quirk, not a confirmed bargain"
+      ],
+      "catalysts": [
+        "Tiong Bahru conservation district cachet (heritage premium for owner-occupiers)",
+        "Walkable to Tiong Bahru MRT (EW), Tiong Bahru Market and the cafe enclave",
+        "Central D3/RCR location near the CBD"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1055.97,
+        "beds": 3,
+        "sqft": 947
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "low",
+        "summary": "A 1937 pre-war Tiong Bahru SIT conservation walk-up — a niche heritage asset, not a standard condo. The 'very_low_psf' cheapness is unverifiable: zero transaction data, regional-baseline appreciation, and null premiums across the board.",
+        "rating_rationale": "This is not an investment-grade condo for a 5-7yr hold; it is a conserved pre-war walk-up (built ~1937) in the Tiong Bahru SIT estate. The dossier flags it as cheap (very_low_psf, $1,056 psf) but has NO basis: appreciation_txns=0, appreciation_source=regional_baseline (3.7% default), age_adj_premium=null, psf_premium_vs_cohort=null, built_year=null. Per the v3.4 prior, a very_low_psf flag with no comparable transactions is a data gap to distrust, not a confirmed bargain. Practical risks are heavy: no lift (walk-up), conservation restrictions on renovation, ambiguous/short remaining lease (many SIT flats have ~50-70yrs or are 99-yr from the 1930s-60s), and an illiquid, idiosyncratic resale market. Heritage charm can command a premium with the right owner-occupier, but as a yield/appreciation play the case is unverified and the exit is thin. Avoid for investment.",
+        "red_flags": [
+          "Zero transaction data: appreciation_txns=0, regional_baseline rate, age_adj_premium and psf_premium both null — cheapness is unverifiable",
+          "Pre-war 1937 SIT walk-up: no lift, conservation/renovation restrictions, idiosyncratic and illiquid resale",
+          "Ambiguous and likely short/expired remaining lease typical of SIT-era flats (built_year null in dossier)",
+          "very_low_psf flag with no comparables is a classic data-quirk, not a confirmed bargain"
+        ],
+        "catalysts": [
+          "Tiong Bahru conservation district cachet (heritage premium for owner-occupiers)",
+          "Walkable to Tiong Bahru MRT (EW), Tiong Bahru Market and the cafe enclave",
+          "Central D3/RCR location near the CBD"
+        ],
+        "appreciation_assessment": "No project-level data; 3.7% is a regional-baseline placeholder, not an observed rate. Forward appreciation for an illiquid pre-war walk-up is unpredictable.",
+        "rental_assessment": "No reliable yield data; a no-lift heritage walk-up draws a narrow tenant pool (lifestyle renters), making rental income unreliable for underwriting."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-77-seng-poh-lane-25581117",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

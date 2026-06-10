@@ -1,0 +1,115 @@
+{
+  "condo": "The Crest",
+  "slug": "the-crest",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A well-located D03 leasehold 1BR (Wing Tai/Toll, 2017) at $1,890 PSF — a genuine ~6% discount to the $2,014 URA median on a deep 90-transaction series. Good Alexandra/RCR address near the Greater Southern Waterfront, but a weak 1.2%/yr appreciation rate keeps it Neutral rather than a buy.",
+      "rating_rationale": "Listed at $1,890 PSF vs $2,014.5 URA median = -6%, supported by a strong 90-txn count — priced below recent deals. Score 612 is solid. The drag is appreciation: URA resale-only is only 1.20%/yr, well below the RCR ~5.8% baseline, suggesting the project has lagged. D03/GSW and One-North proximity give a rental floor, but a $1.2M 1BR is a niche, shallow-pool unit type for a 5-7yr investment.",
+      "red_flags": [
+        "1.2%/yr appreciation — far below RCR baseline, project has underperformed",
+        "1BR is the shallowest resale buyer pool",
+        "99-yr leasehold from 2017 — decay clock running"
+      ],
+      "catalysts": [
+        "Greater Southern Waterfront transformation (D03)",
+        "priced ~6% below URA median on deep data",
+        "Redhill EW18 + good city access drive tenant demand"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1889.76,
+        "beds": 1,
+        "sqft": 635.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A well-located D03 leasehold 1BR (Wing Tai/Toll, 2017) at $1,890 PSF — a genuine ~6% discount to the $2,014 URA median on a deep 90-transaction series. Good Alexandra/RCR address near the Greater Southern Waterfront, but a weak 1.2%/yr appreciation rate keeps it Neutral rather than a buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Listed at $1,890 PSF vs $2,014.5 URA median = -6%, supported by a strong 90-txn count — priced below recent deals. Score 612 is solid. The drag is appreciation: URA resale-only is only 1.20%/yr, well below the RCR ~5.8% baseline, suggesting the project has lagged. D03/GSW and One-North proximity give a rental floor, but a $1.2M 1BR is a niche, shallow-pool unit type for a 5-7yr investment.",
+        "red_flags": [
+          "1.2%/yr appreciation — far below RCR baseline, project has underperformed",
+          "1BR is the shallowest resale buyer pool",
+          "99-yr leasehold from 2017 — decay clock running"
+        ],
+        "catalysts": [
+          "Greater Southern Waterfront transformation (D03)",
+          "priced ~6% below URA median on deep data",
+          "Redhill EW18 + good city access drive tenant demand"
+        ],
+        "rental_assessment": "Strong tenant catchment (city fringe, One-North, hospitals); 1BR rents reliably, supporting yield even if capital growth is soft.",
+        "appreciation_assessment": "1.2%/yr on 90 transactions is reliable and weak — capital upside is the main concern; entry below median partly offsets.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-crest-21667683",
+        "review_file": "cov_batch_22.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Below-market 1BR in a Toyo Ito-designed quality development in D03 (RCR), 10 min from Redhill MRT. Verified comps confirm the asking PSF is below recent resale levels, and the unit is unusually large for a 1BR (635 sqft), aiding livability and exit.",
+      "rating_rationale": "Asking 1,889.76 PSF vs verified 6-month avg ~1,992.76 and 12-month avg ~1,988 — the ask is ~5% below trailing comps, supporting the large -18.4% age-adj and -4.2% vs-cohort discount (cohort 11, reasonable depth). Built 2017 by Wing Tai, Pritzker-laureate Toyo Ito architecture with strong ventilation/large units — a quality asset, not a cookie-cutter project. D03 is RCR (realized forward ~+3.5%, second-best region; this is NOT the inverted-CCR trap). The 635 sqft 1BR is roomier than typical investor units, improving own-stay/resale optionality. Confidence medium: the -18.4% is partly age-pooling against newer launches and the catalyst (Redhill is a 10-min walk, not at-door) is not decisive.",
+      "red_flags": [
+        "Redhill MRT is ~10 min walk, not at-door — connectivity is good, not exceptional",
+        "-18.4% age-adj partly reflects pooling vs newer launches; true discount vs same-vintage comps is closer to ~5%",
+        "Flat trailing appreciation (1.2% CAGR) signals no recent price momentum"
+      ],
+      "catalysts": [
+        "Toyo Ito / Wing Tai quality build — design and large-unit premium",
+        "Verified ~5% discount to recent resale comps",
+        "D03/RCR — second-strongest realized forward region (~+3.5%)"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1889.76,
+        "beds": 1,
+        "sqft": 635
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Below-market 1BR in a Toyo Ito-designed quality development in D03 (RCR), 10 min from Redhill MRT. Verified comps confirm the asking PSF is below recent resale levels, and the unit is unusually large for a 1BR (635 sqft), aiding livability and exit.",
+        "rating_rationale": "Asking 1,889.76 PSF vs verified 6-month avg ~1,992.76 and 12-month avg ~1,988 — the ask is ~5% below trailing comps, supporting the large -18.4% age-adj and -4.2% vs-cohort discount (cohort 11, reasonable depth). Built 2017 by Wing Tai, Pritzker-laureate Toyo Ito architecture with strong ventilation/large units — a quality asset, not a cookie-cutter project. D03 is RCR (realized forward ~+3.5%, second-best region; this is NOT the inverted-CCR trap). The 635 sqft 1BR is roomier than typical investor units, improving own-stay/resale optionality. Confidence medium: the -18.4% is partly age-pooling against newer launches and the catalyst (Redhill is a 10-min walk, not at-door) is not decisive.",
+        "red_flags": [
+          "Redhill MRT is ~10 min walk, not at-door — connectivity is good, not exceptional",
+          "-18.4% age-adj partly reflects pooling vs newer launches; true discount vs same-vintage comps is closer to ~5%",
+          "Flat trailing appreciation (1.2% CAGR) signals no recent price momentum"
+        ],
+        "catalysts": [
+          "Toyo Ito / Wing Tai quality build — design and large-unit premium",
+          "Verified ~5% discount to recent resale comps",
+          "D03/RCR — second-strongest realized forward region (~+3.5%)"
+        ],
+        "appreciation_assessment": "1.2% 5yr CAGR (90 txns) is robust data but flat; this is a value play, not a momentum play — appropriate under v3.4 where value, not trailing CAGR, leads.",
+        "rental_assessment": "Larger 635 sqft 1BR near Redhill/CBD belt rents well to professionals; RCR yields typically low-3%, with the discounted entry price improving the yield-on-cost."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-crest-21667683",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

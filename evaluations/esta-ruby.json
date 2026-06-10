@@ -1,0 +1,61 @@
+{
+  "condo": "Esta Ruby",
+  "slug": "esta-ruby",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 958 sqft freehold 2BR in D14 at $1710 PSF, listed ~5% below the project's URA median of $1808 PSF, and only 530m from Paya Lebar interchange (EW/Circle Line). The generous 958 sqft for a 2BR is dual-key/large-format and keeps absolute quantum at $1.64M.",
+      "rating_rationale": "Freehold 2BR at a Paya Lebar interchange (530m, dual MRT lines) with a ~5% discount to project median PSF and a healthy URA resale CAGR of ~4.9% (12 txns). $1.64M sits inside the liquid band; 2BR is the widest tenant/buyer pool. Paya Lebar Central + airbase relocation is a tangible catalyst. The 958 sqft size is large for 2BR (slightly inflates the bedroom count's PSF) but supports own-stay-quality resale demand.",
+      "red_flags": [
+        "12 URA txns — moderate confidence on the 4.9% rate",
+        "958 sqft is large for a 2BR, so PSF understates true value-per-bedroom somewhat",
+        "2010 build — 16 years old, mid-life maintenance and renovation considerations"
+      ],
+      "catalysts": [
+        "Paya Lebar interchange (East-West + Circle Line) 530m away",
+        "Paya Lebar Central commercial transformation and airbase relocation",
+        "Listed ~5% below project URA median PSF"
+      ],
+      "as_of": {
+        "price": 1638000,
+        "psf": 1709.81,
+        "beds": 2,
+        "sqft": 958.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 958 sqft freehold 2BR in D14 at $1710 PSF, listed ~5% below the project's URA median of $1808 PSF, and only 530m from Paya Lebar interchange (EW/Circle Line). The generous 958 sqft for a 2BR is dual-key/large-format and keeps absolute quantum at $1.64M.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold 2BR at a Paya Lebar interchange (530m, dual MRT lines) with a ~5% discount to project median PSF and a healthy URA resale CAGR of ~4.9% (12 txns). $1.64M sits inside the liquid band; 2BR is the widest tenant/buyer pool. Paya Lebar Central + airbase relocation is a tangible catalyst. The 958 sqft size is large for 2BR (slightly inflates the bedroom count's PSF) but supports own-stay-quality resale demand.",
+        "red_flags": [
+          "12 URA txns — moderate confidence on the 4.9% rate",
+          "958 sqft is large for a 2BR, so PSF understates true value-per-bedroom somewhat",
+          "2010 build — 16 years old, mid-life maintenance and renovation considerations"
+        ],
+        "catalysts": [
+          "Paya Lebar interchange (East-West + Circle Line) 530m away",
+          "Paya Lebar Central commercial transformation and airbase relocation",
+          "Listed ~5% below project URA median PSF"
+        ],
+        "rental_assessment": "Paya Lebar interchange is a strong rental location with CBD access and commercial offices nearby; a freehold 2BR here has deep tenant demand and should achieve a competitive 3.5-4% gross yield.",
+        "appreciation_assessment": "URA resale CAGR ~4.9% (12 txns) is solid for freehold D14; the Paya Lebar transformation underpins continued appreciation, and the discount to median offers a buffer.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-esta-ruby-60205909",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

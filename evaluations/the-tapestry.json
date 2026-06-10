@@ -1,0 +1,111 @@
+{
+  "condo": "The Tapestry",
+  "slug": "the-tapestry",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Relatively new (2021) 603 sqft 1BR in a large Tampines development, priced at $1,575 PSF — ~11% below the $1,767 URA median — with deep 264-txn liquidity. The discount and modern, large 1-bed are positives, but 3.0% appreciation is uninspiring and the listing reports no nearby MRT.",
+      "rating_rationale": "$1,575 PSF is well below the $1,767 median and 264 txns make pricing/liquidity high-confidence, while 2021 build keeps the unit modern. But 3.03% URA CAGR is low (OCR-typical), 1BR is a niche family-district unit, and the blank MRT field signals no walk-up station — Tampines CRL/DTL benefit is not direct here.",
+      "red_flags": [
+        "Low 3.03% appreciation",
+        "1BR is niche in a family-oriented OCR district",
+        "No nearby MRT listed — limited transit pull for a 1BR"
+      ],
+      "catalysts": [
+        "Sub-median PSF (~11% under URA $1,767)",
+        "Modern 2021 build, large 603 sqft 1BR",
+        "Tampines Regional Centre / CRL+DTL extension in the wider district"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1575.46,
+        "beds": 1,
+        "sqft": 603.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Relatively new (2021) 603 sqft 1BR in a large Tampines development, priced at $1,575 PSF — ~11% below the $1,767 URA median — with deep 264-txn liquidity. The discount and modern, large 1-bed are positives, but 3.0% appreciation is uninspiring and the listing reports no nearby MRT.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,575 PSF is well below the $1,767 median and 264 txns make pricing/liquidity high-confidence, while 2021 build keeps the unit modern. But 3.03% URA CAGR is low (OCR-typical), 1BR is a niche family-district unit, and the blank MRT field signals no walk-up station — Tampines CRL/DTL benefit is not direct here.",
+        "red_flags": [
+          "Low 3.03% appreciation",
+          "1BR is niche in a family-oriented OCR district",
+          "No nearby MRT listed — limited transit pull for a 1BR"
+        ],
+        "catalysts": [
+          "Sub-median PSF (~11% under URA $1,767)",
+          "Modern 2021 build, large 603 sqft 1BR",
+          "Tampines Regional Centre / CRL+DTL extension in the wider district"
+        ],
+        "rental_assessment": "1BR in Tampines rents to singles/young couples but tenant pool is thinner than 2BR; lack of close MRT weakens rental appeal.",
+        "appreciation_assessment": "3.03% over 264 txns is reliable but soft; expect district-average growth with the sub-median entry providing a small cushion.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tapestry-500140462",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely under-priced CDL 1BR in Tampines West (D18/OCR), asking PSF verified ~8% below recent transacted average on a deep, real cohort.",
+      "rating_rationale": "Asking $1,575 PSF is verified cheap: the project transacted at an average of ~$1,722 PSF over the last 12 months (range $1,559-1,809), so this is roughly 8% below recent comps, consistent with the algo's -5.4% age-adj premium and -9.7% vs-cohort. The cheapness is credible because it sits on a deep panel (264 appreciation txns, 32 cohort txns), not a thin-data quirk. D18 is OCR, the strongest realized forward region (~+4.0%). Built 2021 by CDL with 50+ facilities supports build quality and rental demand near Tampines West MRT (DT31). No red flags. Trailing CAGR of 3.0% is just background, not the case. Held to medium confidence because 1BR yield/exit in mass-market Tampines is competitive and the edge is value, not a dated catalyst.",
+      "red_flags": [
+        "1BR in a 861-unit mass-market project competes with high resale/rental supply",
+        "99-yr leasehold from 2021 - no freehold cushion (neutral, not a forward edge)"
+      ],
+      "catalysts": [
+        "Tampines West MRT (Downtown Line) within walking distance",
+        "OCR region (D18) carries the strongest verified forward appreciation in the backtest"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1575.46,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely under-priced CDL 1BR in Tampines West (D18/OCR), asking PSF verified ~8% below recent transacted average on a deep, real cohort.",
+        "rating_rationale": "Asking $1,575 PSF is verified cheap: the project transacted at an average of ~$1,722 PSF over the last 12 months (range $1,559-1,809), so this is roughly 8% below recent comps, consistent with the algo's -5.4% age-adj premium and -9.7% vs-cohort. The cheapness is credible because it sits on a deep panel (264 appreciation txns, 32 cohort txns), not a thin-data quirk. D18 is OCR, the strongest realized forward region (~+4.0%). Built 2021 by CDL with 50+ facilities supports build quality and rental demand near Tampines West MRT (DT31). No red flags. Trailing CAGR of 3.0% is just background, not the case. Held to medium confidence because 1BR yield/exit in mass-market Tampines is competitive and the edge is value, not a dated catalyst.",
+        "red_flags": [
+          "1BR in a 861-unit mass-market project competes with high resale/rental supply",
+          "99-yr leasehold from 2021 - no freehold cushion (neutral, not a forward edge)"
+        ],
+        "catalysts": [
+          "Tampines West MRT (Downtown Line) within walking distance",
+          "OCR region (D18) carries the strongest verified forward appreciation in the backtest"
+        ],
+        "appreciation_assessment": "Trailing 5yr CAGR 3.03% on 264 txns is robust data but ~0 forward predictive power per v3.4 priors; used only as background. The forward case rests on verified value + OCR region, not on extrapolating past CAGR.",
+        "rental_assessment": "Project 1BR rents ~$2,700-3,000/mo; at $950k that is roughly 3.4-3.8% gross before costs - average for an OCR mass-market 1BR, neither a standout nor a drag."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tapestry-500140462",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

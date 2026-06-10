@@ -1,0 +1,59 @@
+{
+  "condo": "Echelon",
+  "slug": "echelon",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "99-yr LH D03 1BR (452 sqft) at $998k / $2,208 psf, literally 30m from Redhill EW MRT, with a robust 137-transaction URA series — the most reliable data in this batch. Asking PSF ($2,208) sits right on the $2,214 median; sub-$1M shoebox quantum plus EWL-on-doorstep gives this strong rentability.",
+      "rating_rationale": "30m to Redhill MRT on the East-West Line is a premium rental driver, and 137 txns make the 3.48%/yr rate and $2,214 median highly reliable. Priced at the median with no premium, sub-$1M entry, and excellent connectivity in the GSW/TEL-adjacent D03 corridor. Caveat: 1BR is a narrow buyer pool and 3.48% appreciation is moderate, so this is a yield/rentability play more than a capital-growth one — but on data quality and location it earns a Buy.",
+      "red_flags": [
+        "1BR shoebox — narrowest resale pool",
+        "Moderate 3.48%/yr appreciation — yield play, not high growth",
+        "99-yr leasehold"
+      ],
+      "catalysts": [
+        "30m to Redhill EWL MRT — top-tier rental/exit driver",
+        "137-txn reliable data, priced at median (no premium)",
+        "D03 RCR near Greater Southern Waterfront and city fringe"
+      ],
+      "as_of": {
+        "price": 998000,
+        "psf": 2207.96,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr LH D03 1BR (452 sqft) at $998k / $2,208 psf, literally 30m from Redhill EW MRT, with a robust 137-transaction URA series — the most reliable data in this batch. Asking PSF ($2,208) sits right on the $2,214 median; sub-$1M shoebox quantum plus EWL-on-doorstep gives this strong rentability.",
+        "rating": "Buy",
+        "rating_rationale": "30m to Redhill MRT on the East-West Line is a premium rental driver, and 137 txns make the 3.48%/yr rate and $2,214 median highly reliable. Priced at the median with no premium, sub-$1M entry, and excellent connectivity in the GSW/TEL-adjacent D03 corridor. Caveat: 1BR is a narrow buyer pool and 3.48% appreciation is moderate, so this is a yield/rentability play more than a capital-growth one — but on data quality and location it earns a Buy.",
+        "red_flags": [
+          "1BR shoebox — narrowest resale pool",
+          "Moderate 3.48%/yr appreciation — yield play, not high growth",
+          "99-yr leasehold"
+        ],
+        "catalysts": [
+          "30m to Redhill EWL MRT — top-tier rental/exit driver",
+          "137-txn reliable data, priced at median (no premium)",
+          "D03 RCR near Greater Southern Waterfront and city fringe"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-echelon-60162328",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

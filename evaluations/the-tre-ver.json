@@ -1,0 +1,119 @@
+{
+  "condo": "The Tre Ver",
+  "slug": "the-tre-ver",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 99LH 1BR (The Tre Ver, D13 Potong Pasir, 2023) at $850k / $1,717 psf — exactly on the $1,717 URA median, with very reliable data (295 txns) but a modest 2.87% CAGR. A high-quality, well-located riverfront condo near MRT, fairly priced with steady but unspectacular shoebox appreciation.",
+      "rating_rationale": "The Tre Ver is a well-regarded UOL riverfront project; the data is the most robust in the batch (295 URA txns) and the $1,717 psf asking sits exactly on the $1,717 median — fair value, no discount. 750m to Potong Pasir NE10 MRT and a new 2023 build are real positives, and the score (708) reflects quality. But the 2.87% CAGR is modest, it is a niche 1BR shoebox at a fair-value entry, and 99LH lease clock is running — steady, not standout. A solid-quality Neutral leaning positive on yield.",
+      "red_flags": [
+        "2.87% CAGR is modest despite reliable data",
+        "Priced at URA median ($1,717) — no value cushion",
+        "1BR shoebox — niche resale pool",
+        "99-year leasehold (2023)"
+      ],
+      "catalysts": [
+        "Reputable UOL riverfront development — strong build quality and demand",
+        "750m to Potong Pasir NE10 MRT",
+        "Deep 295-txn liquidity and city-fringe D13 location",
+        "Low $850k quantum keeps the buyer pool deep"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1717.17,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99LH 1BR (The Tre Ver, D13 Potong Pasir, 2023) at $850k / $1,717 psf — exactly on the $1,717 URA median, with very reliable data (295 txns) but a modest 2.87% CAGR. A high-quality, well-located riverfront condo near MRT, fairly priced with steady but unspectacular shoebox appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "The Tre Ver is a well-regarded UOL riverfront project; the data is the most robust in the batch (295 URA txns) and the $1,717 psf asking sits exactly on the $1,717 median — fair value, no discount. 750m to Potong Pasir NE10 MRT and a new 2023 build are real positives, and the score (708) reflects quality. But the 2.87% CAGR is modest, it is a niche 1BR shoebox at a fair-value entry, and 99LH lease clock is running — steady, not standout. A solid-quality Neutral leaning positive on yield.",
+        "red_flags": [
+          "2.87% CAGR is modest despite reliable data",
+          "Priced at URA median ($1,717) — no value cushion",
+          "1BR shoebox — niche resale pool",
+          "99-year leasehold (2023)"
+        ],
+        "catalysts": [
+          "Reputable UOL riverfront development — strong build quality and demand",
+          "750m to Potong Pasir NE10 MRT",
+          "Deep 295-txn liquidity and city-fringe D13 location",
+          "Low $850k quantum keeps the buyer pool deep"
+        ],
+        "rental_assessment": "Quality riverfront project near MRT in city-fringe D13 rents readily to professionals; ~3.5% gross with strong tenant appeal — its best feature.",
+        "appreciation_assessment": "2.87% on 295 txns is reliable and city-fringe-typical; expect steady value retention rather than outperformance from a median-priced shoebox.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tre-ver-500147820",
+        "review_file": "cov_batch_21.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "High-quality 2023 UOL/SingLand riverfront project (WOHA-designed) in D13 with a verified, meaningful value gap: asking $1,717 psf for a 495 sqft 1BR vs recent 1BR transactions of $1,898-$2,061 psf — a real ~10%+ discount.",
+      "rating_rationale": "This is value confirmed by transactions, the strongest forward signal in v3.4. Recent (Dec-2025/Jan-2026) 1BR deals printed $1,898 psf (506 sqft) up to $2,061 psf (689 sqft), and 6-month average is ~$1,971 psf; the median across 402 txns is ~$1,847. The asking $1,717 psf is materially below all of these, validating the algo's -19.2% age-adj cheapness and -6.1% vs-cohort discount — and that signal rests on real depth (295 appreciation txns, 17 cohort txns), not a quirk. Quality is top-tier: UOL Group + Singapore Land JV, WOHA Architects, two Asia-Pacific Property Awards, completed 2023 (fresh leasehold, ~96 years left). D13 (Potong Pasir/Macpherson) is RCR/OCR-adjacent with good central-line access. Confidence is high because both legs — verified cheap-vs-recent-transactions and decisive physical/developer quality — line up; the sub-$850k absolute quantum also aids exit liquidity.",
+      "red_flags": [
+        "Small 495 sqft 1BR — narrowest tenant pool and most exposed to small-unit oversupply",
+        "Asking well below recent comps may signal a lower floor or less-preferred (non-river) facing — verify stack/view",
+        "Mass 1BR cohort means many competing sellers within the 729-unit project"
+      ],
+      "catalysts": [
+        "2023 completion in an established UOL riverfront project still ramping its resale price discovery",
+        "Bidadari estate maturation and Woodleigh/Potong Pasir amenity growth nearby supporting D13 demand",
+        "Strong rental catchment from central employment nodes via NEL"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1717.17,
+        "beds": 1,
+        "sqft": 495
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "high",
+        "summary": "High-quality 2023 UOL/SingLand riverfront project (WOHA-designed) in D13 with a verified, meaningful value gap: asking $1,717 psf for a 495 sqft 1BR vs recent 1BR transactions of $1,898-$2,061 psf — a real ~10%+ discount.",
+        "rating_rationale": "This is value confirmed by transactions, the strongest forward signal in v3.4. Recent (Dec-2025/Jan-2026) 1BR deals printed $1,898 psf (506 sqft) up to $2,061 psf (689 sqft), and 6-month average is ~$1,971 psf; the median across 402 txns is ~$1,847. The asking $1,717 psf is materially below all of these, validating the algo's -19.2% age-adj cheapness and -6.1% vs-cohort discount — and that signal rests on real depth (295 appreciation txns, 17 cohort txns), not a quirk. Quality is top-tier: UOL Group + Singapore Land JV, WOHA Architects, two Asia-Pacific Property Awards, completed 2023 (fresh leasehold, ~96 years left). D13 (Potong Pasir/Macpherson) is RCR/OCR-adjacent with good central-line access. Confidence is high because both legs — verified cheap-vs-recent-transactions and decisive physical/developer quality — line up; the sub-$850k absolute quantum also aids exit liquidity.",
+        "red_flags": [
+          "Small 495 sqft 1BR — narrowest tenant pool and most exposed to small-unit oversupply",
+          "Asking well below recent comps may signal a lower floor or less-preferred (non-river) facing — verify stack/view",
+          "Mass 1BR cohort means many competing sellers within the 729-unit project"
+        ],
+        "catalysts": [
+          "2023 completion in an established UOL riverfront project still ramping its resale price discovery",
+          "Bidadari estate maturation and Woodleigh/Potong Pasir amenity growth nearby supporting D13 demand",
+          "Strong rental catchment from central employment nodes via NEL"
+        ],
+        "appreciation_assessment": "Trailing 2.87% CAGR is modest and not forward-weighted; the forward thesis is pure value — entering ~10%+ under the project's own recent 1BR transacted prices in a quality, fresh-leasehold asset.",
+        "rental_assessment": "Compact 1BR in a well-regarded UOL project near NEL and city fringe rents readily; sub-$1,720 psf entry keeps yield healthy for a 2023 development."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tre-ver-500147820",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Nanhua Pri School, within 1km ! Let me help you to find the most suitable unit for your family !",
+  "slug": "nanhua-pri-school-within-1km-let-me-help-you-to-find-the-most-suitable-unit-for-your-family",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2023 99-yr leasehold 4BR in Clementi/West Coast (D05), 1,206 sqft at $2.5M / $2,073 psf, marketed on Nanhua Primary 1km proximity but a long 1.17km/14-min walk to Clementi MRT. The listing title obscures the actual project name, the school angle is an own-stay (not investment) draw, and at $2,073 psf for a $2.5M 4BR with no project URA data it's a fair-value, school-driven hold.",
+      "rating_rationale": "$2,073 psf for a 2023 99-yr LH 4BR is full pricing, and $2.5M sits above the deep-liquidity band for a niche 4BR. The headline pitch is Nanhua Primary balloting — an own-stay/family driver, not investment value. 1.17km to Clementi MRT is a weak walk. No project-specific URA series (regional-baseline). The spam-style title also obscures the real development, lowering data confidence. D05 One-North/TEL and CRL Clementi interchange are the regional offsets.",
+      "red_flags": [
+        "Obscured project name in listing title — reduced data confidence",
+        "1.17km / 14-min walk to Clementi MRT — weak connectivity",
+        "$2.5M 4BR quantum above the deep-liquidity band",
+        "School-proximity pitch is an own-stay driver, not an investment catalyst",
+        "No project-specific URA appreciation data — regional-baseline fallback"
+      ],
+      "catalysts": [
+        "1km to Nanhua Primary — sustained family/own-stay demand",
+        "D05 One-North tech hub + Cross Island Line Clementi interchange (~2030)",
+        "Near-new 2023 build at sub-$2.5M for a 4BR"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 2072.97,
+        "beds": 4,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2023 99-yr leasehold 4BR in Clementi/West Coast (D05), 1,206 sqft at $2.5M / $2,073 psf, marketed on Nanhua Primary 1km proximity but a long 1.17km/14-min walk to Clementi MRT. The listing title obscures the actual project name, the school angle is an own-stay (not investment) draw, and at $2,073 psf for a $2.5M 4BR with no project URA data it's a fair-value, school-driven hold.",
+        "rating": "Neutral",
+        "rating_rationale": "$2,073 psf for a 2023 99-yr LH 4BR is full pricing, and $2.5M sits above the deep-liquidity band for a niche 4BR. The headline pitch is Nanhua Primary balloting — an own-stay/family driver, not investment value. 1.17km to Clementi MRT is a weak walk. No project-specific URA series (regional-baseline). The spam-style title also obscures the real development, lowering data confidence. D05 One-North/TEL and CRL Clementi interchange are the regional offsets.",
+        "red_flags": [
+          "Obscured project name in listing title — reduced data confidence",
+          "1.17km / 14-min walk to Clementi MRT — weak connectivity",
+          "$2.5M 4BR quantum above the deep-liquidity band",
+          "School-proximity pitch is an own-stay driver, not an investment catalyst",
+          "No project-specific URA appreciation data — regional-baseline fallback"
+        ],
+        "catalysts": [
+          "1km to Nanhua Primary — sustained family/own-stay demand",
+          "D05 One-North tech hub + Cross Island Line Clementi interchange (~2030)",
+          "Near-new 2023 build at sub-$2.5M for a 4BR"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nanhua-pri-school-within-1km-let-me-help-you-to-find-the-most-suitable-unit-for-your-family-23771509",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

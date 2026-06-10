@@ -1,0 +1,115 @@
+{
+  "condo": "Tivoli Grande",
+  "slug": "tivoli-grande",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR at Tivoli Grande, D15 (Eunos/Frankel side), asking $900k at $1,607 PSF for an efficient 560 sqft. PSF sits right at the $1,602 median (no discount), and the 6.51%/yr URA rate rests on a modest 30-txn boutique sample.",
+      "rating_rationale": "Freehold and a reasonable D15 entry quantum are pluses, but the case is undifferentiated: priced at the median (no value gap), 30 txns make the 6.51% rate only borderline reliable, 1.03km from Eunos MRT (12-min walk) is soft, and it's a small/boutique development with limited liquidity. Decent freehold hold, no investment edge.",
+      "red_flags": [
+        "No PSF discount — at median",
+        "Only 30 URA txns — borderline reliability",
+        "1.03km from MRT, boutique development = thinner liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15",
+        "Deep East Coast buyer pool",
+        "Efficient 560 sqft 1BR, sub-$1M entry"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1607.14,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR at Tivoli Grande, D15 (Eunos/Frankel side), asking $900k at $1,607 PSF for an efficient 560 sqft. PSF sits right at the $1,602 median (no discount), and the 6.51%/yr URA rate rests on a modest 30-txn boutique sample.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a reasonable D15 entry quantum are pluses, but the case is undifferentiated: priced at the median (no value gap), 30 txns make the 6.51% rate only borderline reliable, 1.03km from Eunos MRT (12-min walk) is soft, and it's a small/boutique development with limited liquidity. Decent freehold hold, no investment edge.",
+        "red_flags": [
+          "No PSF discount — at median",
+          "Only 30 URA txns — borderline reliability",
+          "1.03km from MRT, boutique development = thinner liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15",
+          "Deep East Coast buyer pool",
+          "Efficient 560 sqft 1BR, sub-$1M entry"
+        ],
+        "rental_assessment": "East Coast rental demand is solid; small freehold 1BR yields ~3.5%, but MRT distance caps premium.",
+        "appreciation_assessment": "30-txn series at 6.51% is plausible for FH D15 but not robust; treat ~5% as the dependable base.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D15 FH baseline; URA 6.51% lightly discounted (30-txn sample)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tivoli-grande-500137338",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR in D15 (Marine Parade/Koon Seng) priced fairly at $1,607 psf vs verified project average ~$1,593 psf — the algo's -25% cheapness signal is a data quirk (psf_cohort_txns=0), not a real bargain.",
+      "rating_rationale": "Web-verified last-12-month transactions average ~$1,593 psf with a high of $1,740 psf; the $1,607 asking is essentially at-market, NOT the -25% bargain the dossier implies. Critically, psf_cohort_txns is 0, so the age_adj_premium of -25.0% is computed off district peers with no same-size comp — exactly the thin-data quirk the v3.4 prior warns against, so I lower confidence in the cheapness claim. The asset itself is sound: freehold, 5-min walk to Eunos MRT, ~3.6% yield, desirable East Coast lifestyle. But with no verified discount and the value signal unreliable, there's no margin of safety to justify a Buy. Fairly-priced freehold in a good district = hold/Neutral.",
+      "red_flags": [
+        "psf_cohort_txns=0 — the headline -25% cheapness is unverified/likely a data artefact",
+        "Asking $1,607 psf is at or slightly above verified project average (~$1,593 psf)",
+        "Small 82-unit boutique project limits resale liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D15 East Coast belt",
+        "5-min walk to Eunos MRT and near Parkway Parade / future amenities"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1607.14,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 1BR in D15 (Marine Parade/Koon Seng) priced fairly at $1,607 psf vs verified project average ~$1,593 psf — the algo's -25% cheapness signal is a data quirk (psf_cohort_txns=0), not a real bargain.",
+        "rating_rationale": "Web-verified last-12-month transactions average ~$1,593 psf with a high of $1,740 psf; the $1,607 asking is essentially at-market, NOT the -25% bargain the dossier implies. Critically, psf_cohort_txns is 0, so the age_adj_premium of -25.0% is computed off district peers with no same-size comp — exactly the thin-data quirk the v3.4 prior warns against, so I lower confidence in the cheapness claim. The asset itself is sound: freehold, 5-min walk to Eunos MRT, ~3.6% yield, desirable East Coast lifestyle. But with no verified discount and the value signal unreliable, there's no margin of safety to justify a Buy. Fairly-priced freehold in a good district = hold/Neutral.",
+        "red_flags": [
+          "psf_cohort_txns=0 — the headline -25% cheapness is unverified/likely a data artefact",
+          "Asking $1,607 psf is at or slightly above verified project average (~$1,593 psf)",
+          "Small 82-unit boutique project limits resale liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D15 East Coast belt",
+          "5-min walk to Eunos MRT and near Parkway Parade / future amenities"
+        ],
+        "rental_assessment": "Yield ~3.6% is solid for the East Coast; lifestyle location (beach, dining, Parkway) supports consistent tenant demand.",
+        "appreciation_assessment": "Trailing 6.51% CAGR (30 txns) is moderate but lightly weighted per backtest; with no verified present discount, there's no forward edge to underwrite."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tivoli-grande-500137338",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

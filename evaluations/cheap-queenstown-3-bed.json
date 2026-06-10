@@ -1,0 +1,65 @@
+{
+  "condo": "Cheap Queenstown 3 bed",
+  "slug": "cheap-queenstown-3-bed",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 99-year 3BR (1,023 sqft) at the One-North MRT doorstep in D05, asking $2.45M ($2,395 psf) under a 'cheap' marketing title that is not actually cheap. The PSF is full new-launch pricing for the One-North area, with no disclosed project, built_year, or URA data to underwrite it.",
+      "rating_rationale": "$2,395 psf at $2.45M is top-of-market for a leasehold One-North 3BR — the 'cheap' label is marketing. The location (literally at One-North MRT, in the One-North/Fusionopolis R&D job belt) is genuinely strong for rental and resale, which is what keeps it off Avoid. But you are paying a full premium PSF with no project name, no built_year and no URA series to verify the appreciation or what you're actually buying. Strong location, unconvincing price/data.",
+      "red_flags": [
+        "$2,395 psf at full new-launch pricing despite 'cheap' title",
+        "Missing project name and built_year — cannot verify the development",
+        "99-yr leasehold; no URA appreciation/liquidity data",
+        "$2.45M sits at the upper edge of the liquid band"
+      ],
+      "catalysts": [
+        "At One-North MRT (CCL) — One-North/Fusionopolis/biopolis R&D and tech employment",
+        "TEL/One-north connectivity, strong professional tenant base",
+        "D05 RCR location with durable rental demand"
+      ],
+      "as_of": {
+        "price": 2450000,
+        "psf": 2394.92,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99-year 3BR (1,023 sqft) at the One-North MRT doorstep in D05, asking $2.45M ($2,395 psf) under a 'cheap' marketing title that is not actually cheap. The PSF is full new-launch pricing for the One-North area, with no disclosed project, built_year, or URA data to underwrite it.",
+        "rating": "Neutral",
+        "rating_rationale": "$2,395 psf at $2.45M is top-of-market for a leasehold One-North 3BR — the 'cheap' label is marketing. The location (literally at One-North MRT, in the One-North/Fusionopolis R&D job belt) is genuinely strong for rental and resale, which is what keeps it off Avoid. But you are paying a full premium PSF with no project name, no built_year and no URA series to verify the appreciation or what you're actually buying. Strong location, unconvincing price/data.",
+        "red_flags": [
+          "$2,395 psf at full new-launch pricing despite 'cheap' title",
+          "Missing project name and built_year — cannot verify the development",
+          "99-yr leasehold; no URA appreciation/liquidity data",
+          "$2.45M sits at the upper edge of the liquid band"
+        ],
+        "catalysts": [
+          "At One-North MRT (CCL) — One-North/Fusionopolis/biopolis R&D and tech employment",
+          "TEL/One-north connectivity, strong professional tenant base",
+          "D05 RCR location with durable rental demand"
+        ],
+        "rental_assessment": "One-North is one of Singapore's strongest professional rental catchments; a 3BR at the MRT door rents well. But entry PSF is high, compressing yield.",
+        "appreciation_assessment": "Location supports RCR-class appreciation, but paying full premium PSF at entry limits the margin; base case is RCR-baseline-ish with little discount captured.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "RCR/One-North baseline; no project URA data, full-premium entry caps upside"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-queenstown-3-bed-500163544",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

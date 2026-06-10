@@ -1,0 +1,117 @@
+{
+  "condo": "Natura @ Hillview",
+  "slug": "natura-hillview",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A small 193-unit freehold boutique in Hillview (D23), TOP 2016, with no MRT walkability and null URA appreciation data in the dossier. The listing is a '1BR' at 936 sqft / $1,378 psf, but that floor area implies a mislabelled larger unit, and the $1.29M quantum is high for a shallow-buyer-pool Hillview boutique.",
+      "rating_rationale": "Web research shows Natura @ Hillview is a 193-unit boutique (small-development illiquidity), freehold, with 12-month resale averaging ~$1,478 psf and ~4.3% rental yield. The $1,378 psf listing isn't overpriced on PSF, but several investment negatives stack up: (1) only 193 units = shallow buyer pool and thin resale liquidity; (2) no MRT within walking distance — Hillview MRT and Hillview Rise stock are the area's draw, and this sits off that; (3) the 936 sqft '1BR' label is anomalous for a $1.29M quantum, signalling a mislabel or an oddly large unit that narrows demand; (4) the dossier carries no URA appreciation/transaction data, so there is no reliable rate to underwrite. D23 OCR with no station and boutique scale is a weak 5-7yr investment proposition despite freehold.",
+      "red_flags": [
+        "Small 193-unit boutique — shallow buyer pool, thin resale liquidity",
+        "No MRT within walking distance (blank mrt_info confirmed)",
+        "936 sqft '1BR' at $1.29M — anomalous size/quantum, likely mislabel narrowing demand",
+        "No URA appreciation/transaction data to underwrite the rate"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Quiet greenery/nature-fringe Hillview lifestyle appeal (own-stay, not investment)"
+      ],
+      "as_of": {
+        "price": 1290000,
+        "psf": 1378.21,
+        "beds": 1,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A small 193-unit freehold boutique in Hillview (D23), TOP 2016, with no MRT walkability and null URA appreciation data in the dossier. The listing is a '1BR' at 936 sqft / $1,378 psf, but that floor area implies a mislabelled larger unit, and the $1.29M quantum is high for a shallow-buyer-pool Hillview boutique.",
+        "rating": "Avoid",
+        "rating_rationale": "Web research shows Natura @ Hillview is a 193-unit boutique (small-development illiquidity), freehold, with 12-month resale averaging ~$1,478 psf and ~4.3% rental yield. The $1,378 psf listing isn't overpriced on PSF, but several investment negatives stack up: (1) only 193 units = shallow buyer pool and thin resale liquidity; (2) no MRT within walking distance — Hillview MRT and Hillview Rise stock are the area's draw, and this sits off that; (3) the 936 sqft '1BR' label is anomalous for a $1.29M quantum, signalling a mislabel or an oddly large unit that narrows demand; (4) the dossier carries no URA appreciation/transaction data, so there is no reliable rate to underwrite. D23 OCR with no station and boutique scale is a weak 5-7yr investment proposition despite freehold.",
+        "red_flags": [
+          "Small 193-unit boutique — shallow buyer pool, thin resale liquidity",
+          "No MRT within walking distance (blank mrt_info confirmed)",
+          "936 sqft '1BR' at $1.29M — anomalous size/quantum, likely mislabel narrowing demand",
+          "No URA appreciation/transaction data to underwrite the rate"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Quiet greenery/nature-fringe Hillview lifestyle appeal (own-stay, not investment)"
+        ],
+        "rental_assessment": "~4.3% gross yield per market data is decent, but Hillview tenant demand is car-dependent without close MRT; tenant pool is moderate, not deep.",
+        "appreciation_assessment": "No project URA series available; D23 OCR baseline (~3.7%) with no station catalyst and boutique scale suggests below-average appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-natura-hillview-500021954",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2016 2-bedroom PENTHOUSE (1,098 sqft sits inside the project's 990-1,324 sqft 2BR-penthouse band) in D23 Hillview. The very_low_psf flag and -20.5% cohort discount are mostly the penthouse-vs-typical-unit PSF gap, not a verified district bargain.",
+      "rating_rationale": "Asking $1.39M at $1,266 psf for a 1,098 sqft freehold 2BR penthouse. Web-verified: 1,098 sqft is a genuine penthouse size (2BR penthouses run 990-1,324 sqft), so very_low_psf is NOT a mis-scrape but a real large-format unit. Project 12-month transactions average ~$1,478 psf (range $1,076-$1,682), so $1,266 psf is below pool - but penthouses structurally carry a lower PSF, and the -20.5% psf_premium_vs_cohort rests on only 2 cohort txns, so I discount that 'cheapness'. D23 is OCR (~+4.0% best realized forward region - a genuine tailwind), it's freehold, and the Hillview area has the Hillview DTL / Rail Corridor amenity narrative (nearest stations Hillview DTL / Bukit Gombak). Reasonable FH OCR penthouse at fair value, but the data 'bargain' is an artifact of size mixing and a 2-txn cohort - Neutral, not Buy.",
+      "red_flags": [
+        "very_low_psf and -20.5% cohort discount are largely a penthouse-vs-typical PSF artifact",
+        "psf_premium_vs_cohort rests on only 2 cohort transactions - unreliable",
+        "Penthouse format = thinner buyer pool / longer exit on a 5-7yr horizon",
+        "$1.39M quantum is high for a 2BR in a suburban Hillview project"
+      ],
+      "catalysts": [
+        "OCR location (~+4.0% best realized forward regional appreciation)",
+        "Freehold tenure in an area dominated by 99yr leasehold launches",
+        "Hillview DTL / Rail Corridor greenery & amenity narrative"
+      ],
+      "as_of": {
+        "price": 1390000,
+        "psf": 1265.94,
+        "beds": 2,
+        "sqft": 1098
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 2016 2-bedroom PENTHOUSE (1,098 sqft sits inside the project's 990-1,324 sqft 2BR-penthouse band) in D23 Hillview. The very_low_psf flag and -20.5% cohort discount are mostly the penthouse-vs-typical-unit PSF gap, not a verified district bargain.",
+        "rating_rationale": "Asking $1.39M at $1,266 psf for a 1,098 sqft freehold 2BR penthouse. Web-verified: 1,098 sqft is a genuine penthouse size (2BR penthouses run 990-1,324 sqft), so very_low_psf is NOT a mis-scrape but a real large-format unit. Project 12-month transactions average ~$1,478 psf (range $1,076-$1,682), so $1,266 psf is below pool - but penthouses structurally carry a lower PSF, and the -20.5% psf_premium_vs_cohort rests on only 2 cohort txns, so I discount that 'cheapness'. D23 is OCR (~+4.0% best realized forward region - a genuine tailwind), it's freehold, and the Hillview area has the Hillview DTL / Rail Corridor amenity narrative (nearest stations Hillview DTL / Bukit Gombak). Reasonable FH OCR penthouse at fair value, but the data 'bargain' is an artifact of size mixing and a 2-txn cohort - Neutral, not Buy.",
+        "red_flags": [
+          "very_low_psf and -20.5% cohort discount are largely a penthouse-vs-typical PSF artifact",
+          "psf_premium_vs_cohort rests on only 2 cohort transactions - unreliable",
+          "Penthouse format = thinner buyer pool / longer exit on a 5-7yr horizon",
+          "$1.39M quantum is high for a 2BR in a suburban Hillview project"
+        ],
+        "catalysts": [
+          "OCR location (~+4.0% best realized forward regional appreciation)",
+          "Freehold tenure in an area dominated by 99yr leasehold launches",
+          "Hillview DTL / Rail Corridor greenery & amenity narrative"
+        ],
+        "appreciation_assessment": "5yr URA CAGR +4.85% on a healthy 50-txn sample is the strongest data point here, but trailing appreciation has ~0 forward power - I treat it as supportive context, not a forward guarantee. OCR region tailwind is the more durable positive.",
+        "rental_assessment": "Suburban 2BR penthouse; likely ~$3,500-$4,000/month. At $1.39M that is ~3.0-3.5% gross - modest, consistent with a freehold capital-preservation play rather than a yield buy."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-natura-hillview-500106643",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

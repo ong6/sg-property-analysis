@@ -1,0 +1,65 @@
+{
+  "condo": "❤️ 5bed, clementi cheap buy, 1-2 nanhua pri ❤️",
+  "slug": "5bed-clementi-cheap-buy-1-2-nanhua-pri",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 5BR (1776 sqft) at ELTA, the 501-unit MCL Land/CSC 99yr new launch at Clementi Ave 1 (TOP ~2028), priced at $3.78M / $2128 PSF — below ELTA's ~$2,537 PSF launch average because big units price lower per sqft. ELTA is a strong, well-located D05 project, but a $3.78M large unit sits in a very thin buyer pool, which is the dominant exit risk.",
+      "rating_rationale": "ELTA has real fundamentals: D05/One-North-adjacent, 501 units (liquid project), MCL Land/CSC, near Clementi MRT interchange and top schools (Nan Hua, NUS High), and it sold ~65% on launch weekend at ~$2,537 PSF — so $2128 PSF on this large unit is genuinely below average. But $3.78M is well above the liquid sweet spot; large 5BR units have a narrow buyer base and slow resale, and as a new launch there's no resale track record. The fundamentals say Buy on the project, the quantum/unit-type says Neutral on this specific listing.",
+      "red_flags": [
+        "$3.78M is in a very thin >$3M buyer pool — slow, niche resale",
+        "5BR is the narrowest family unit type",
+        "New launch (TOP ~2028) — no resale URA data; appreciation unverifiable",
+        "Below-frontier score (420) reflects the high absolute quantum"
+      ],
+      "catalysts": [
+        "ELTA is a 501-unit project with strong launch take-up (~65%, ~$2,537 PSF avg) — large unit at $2128 PSF is below average",
+        "D05/Clementi: One-North tech hub, Clementi MRT interchange, top schools (Nan Hua, NUS High) — deep underlying demand",
+        "West Coast / Greater One-North employment growth supports long-run appreciation"
+      ],
+      "as_of": {
+        "price": 3780000,
+        "psf": 2128.38,
+        "beds": 4,
+        "sqft": 1776.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 5BR (1776 sqft) at ELTA, the 501-unit MCL Land/CSC 99yr new launch at Clementi Ave 1 (TOP ~2028), priced at $3.78M / $2128 PSF — below ELTA's ~$2,537 PSF launch average because big units price lower per sqft. ELTA is a strong, well-located D05 project, but a $3.78M large unit sits in a very thin buyer pool, which is the dominant exit risk.",
+        "rating": "Neutral",
+        "rating_rationale": "ELTA has real fundamentals: D05/One-North-adjacent, 501 units (liquid project), MCL Land/CSC, near Clementi MRT interchange and top schools (Nan Hua, NUS High), and it sold ~65% on launch weekend at ~$2,537 PSF — so $2128 PSF on this large unit is genuinely below average. But $3.78M is well above the liquid sweet spot; large 5BR units have a narrow buyer base and slow resale, and as a new launch there's no resale track record. The fundamentals say Buy on the project, the quantum/unit-type says Neutral on this specific listing.",
+        "red_flags": [
+          "$3.78M is in a very thin >$3M buyer pool — slow, niche resale",
+          "5BR is the narrowest family unit type",
+          "New launch (TOP ~2028) — no resale URA data; appreciation unverifiable",
+          "Below-frontier score (420) reflects the high absolute quantum"
+        ],
+        "catalysts": [
+          "ELTA is a 501-unit project with strong launch take-up (~65%, ~$2,537 PSF avg) — large unit at $2128 PSF is below average",
+          "D05/Clementi: One-North tech hub, Clementi MRT interchange, top schools (Nan Hua, NUS High) — deep underlying demand",
+          "West Coast / Greater One-North employment growth supports long-run appreciation"
+        ],
+        "rental_assessment": "Large units near One-North/NUS rent to families and expat households; gross yield thin (~3%) at $3.78M. Tenant pool for 5BR is limited but the location is a genuine draw.",
+        "appreciation_assessment": "ELTA the project should appreciate well given location and demand, but as a new launch at full pricing the large-unit premium limits near-term upside; model ~RCR/OCR-edge 4-5% on the project, discounted for the quantum.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "ELTA / D05 new launch estimate — strong location, but new-launch pricing; no resale URA data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-5bed-clementi-cheap-buy-1-2-nanhua-pri-500014499",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

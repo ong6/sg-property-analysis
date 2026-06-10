@@ -1,0 +1,61 @@
+{
+  "condo": "The Glades",
+  "slug": "the-glades",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A large 1,948 sqft 4BR at The Glades, a well-located 99yr development directly linked to Tanah Merah MRT. Priced at $1,514 psf — roughly 13% below the project's $1,731 URA median — but the $2.95M quantum and 1,948 sqft size push it into a thin, family-only buyer pool.",
+      "rating_rationale": "Solid 219-txn series with a reliable 3.4%/yr resale CAGR and a deep-liquidity address by Tanah Merah MRT. The listing PSF sits well under the project median, which is the value attraction, but that discount partly reflects an oversized 4BR (1,948 sqft) that appeals only to large families. At $2.95M the quantum is above the $1.8-2.5M deep-pool band, capping exit liquidity for a 5-7yr hold.",
+      "red_flags": [
+        "$2.95M quantum above the deepest buyer band, narrowing exit pool",
+        "1,948 sqft oversized 4BR is family-only, niche resale",
+        "99yr leasehold, lease decay accelerates over hold"
+      ],
+      "catalysts": [
+        "Direct covered link to Tanah Merah MRT (EW + Changi/East-West interchange)",
+        "Listing ~13% below project URA median PSF",
+        "Established 726-unit development with deep transaction history"
+      ],
+      "as_of": {
+        "price": 2950000,
+        "psf": 1514.37,
+        "beds": 4,
+        "sqft": 1948.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,948 sqft 4BR at The Glades, a well-located 99yr development directly linked to Tanah Merah MRT. Priced at $1,514 psf — roughly 13% below the project's $1,731 URA median — but the $2.95M quantum and 1,948 sqft size push it into a thin, family-only buyer pool.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid 219-txn series with a reliable 3.4%/yr resale CAGR and a deep-liquidity address by Tanah Merah MRT. The listing PSF sits well under the project median, which is the value attraction, but that discount partly reflects an oversized 4BR (1,948 sqft) that appeals only to large families. At $2.95M the quantum is above the $1.8-2.5M deep-pool band, capping exit liquidity for a 5-7yr hold.",
+        "red_flags": [
+          "$2.95M quantum above the deepest buyer band, narrowing exit pool",
+          "1,948 sqft oversized 4BR is family-only, niche resale",
+          "99yr leasehold, lease decay accelerates over hold"
+        ],
+        "catalysts": [
+          "Direct covered link to Tanah Merah MRT (EW + Changi/East-West interchange)",
+          "Listing ~13% below project URA median PSF",
+          "Established 726-unit development with deep transaction history"
+        ],
+        "rental_assessment": "4BR units are family-let only with a shallow tenant pool; rental is a weak point and yield will be modest at this quantum. Tanah Merah connectivity and Changi/airport-adjacent demand provide some support.",
+        "appreciation_assessment": "3.4%/yr resale CAGR on 219 txns is reliable and in line with a mature OCR/RCR-fringe leasehold. No strong forward catalyst; expect market-rate appreciation.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-glades-500012534",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

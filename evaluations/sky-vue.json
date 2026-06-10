@@ -1,0 +1,59 @@
+{
+  "condo": "Sky Vue",
+  "slug": "sky-vue",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "495 sqft 1BR at Sky Vue, a large well-regarded D20 leasehold 540m from Bishan MRT (NSL interchange with CCL nearby). Priced at $2,020 psf, ~7% below the $2,168 median, with a healthy 3.8%/yr resale CAGR on a deep 162-txn base.",
+      "rating_rationale": "Bishan is one of the most liquid OCR-fringe locations: direct NSL access, top schools (Catholic High, Raffles), and a large development (694 units) with a deep 162-txn history. 3.8%/yr resale appreciation, sub-median PSF entry ($2,020 vs $2,168), and $1M round quantum make this a liquid, well-supported 1BR. Score 622.",
+      "red_flags": [
+        "1BR tenant pool narrower than 2BR",
+        "Leasehold from 2014; clock running but ample lease remaining"
+      ],
+      "catalysts": [
+        "Bishan NSL interchange and established town-centre amenities",
+        "Premier school catchment (Catholic High, Kuo Chuan, Raffles) supports demand"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 2020.2,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "495 sqft 1BR at Sky Vue, a large well-regarded D20 leasehold 540m from Bishan MRT (NSL interchange with CCL nearby). Priced at $2,020 psf, ~7% below the $2,168 median, with a healthy 3.8%/yr resale CAGR on a deep 162-txn base.",
+        "rating": "Buy",
+        "rating_rationale": "Bishan is one of the most liquid OCR-fringe locations: direct NSL access, top schools (Catholic High, Raffles), and a large development (694 units) with a deep 162-txn history. 3.8%/yr resale appreciation, sub-median PSF entry ($2,020 vs $2,168), and $1M round quantum make this a liquid, well-supported 1BR. Score 622.",
+        "red_flags": [
+          "1BR tenant pool narrower than 2BR",
+          "Leasehold from 2014; clock running but ample lease remaining"
+        ],
+        "catalysts": [
+          "Bishan NSL interchange and established town-centre amenities",
+          "Premier school catchment (Catholic High, Kuo Chuan, Raffles) supports demand"
+        ],
+        "rental_assessment": "Strong tenant demand from Bishan's central location, MRT access and school proximity; 1BR rents well to single professionals.",
+        "appreciation_assessment": "Reliable 3.8%/yr resale CAGR on 162 txns — high confidence; sub-median entry leaves room for upside.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "URA resale 3.8%/yr on deep 162-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-vue-500136224",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

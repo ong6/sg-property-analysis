@@ -1,0 +1,65 @@
+{
+  "condo": "The Rainforest",
+  "slug": "the-rainforest",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Very large 99-yr EC-style 4BR (2,476sqft) at $1,292 PSF, 510m from Choa Chu Kang MRT in D23, priced at $3.2M. The low PSF is purely a size artifact — a $3.2M quantum for a 99-yr OCR/Choa Chu Kang unit is well outside the liquid band, and there is no URA series to verify any trend.",
+      "rating_rationale": "A $3.2M, 99-yr leasehold, 2,476sqft unit in Choa Chu Kang is a fundamentally illiquid investment: the OCR buyer pool at $3M+ is extremely shallow, the cheap $1,292 PSF is just the huge floorplate, and 99-yr lease decay erodes the hold. No appreciation/txn data to underwrite it. MRT proximity (510m) and TOP 2015 are fine, but they don't fix a quantum/lease/location mismatch. For investment, avoid.",
+      "red_flags": [
+        "$3.2M quantum in Choa Chu Kang OCR — very shallow buyer pool",
+        "99-yr leasehold; lease decay over the hold",
+        "Oversized 2,476sqft inflates apparent PSF value",
+        "No URA appreciation/txn data to verify"
+      ],
+      "catalysts": [
+        "510m to Choa Chu Kang MRT (NSL, future JRL interchange nearby)",
+        "Large layout for multi-gen families",
+        "TOP 2015 — relatively young building"
+      ],
+      "as_of": {
+        "price": 3200000,
+        "psf": 1292.41,
+        "beds": 4,
+        "sqft": 2476.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Very large 99-yr EC-style 4BR (2,476sqft) at $1,292 PSF, 510m from Choa Chu Kang MRT in D23, priced at $3.2M. The low PSF is purely a size artifact — a $3.2M quantum for a 99-yr OCR/Choa Chu Kang unit is well outside the liquid band, and there is no URA series to verify any trend.",
+        "rating": "Avoid",
+        "rating_rationale": "A $3.2M, 99-yr leasehold, 2,476sqft unit in Choa Chu Kang is a fundamentally illiquid investment: the OCR buyer pool at $3M+ is extremely shallow, the cheap $1,292 PSF is just the huge floorplate, and 99-yr lease decay erodes the hold. No appreciation/txn data to underwrite it. MRT proximity (510m) and TOP 2015 are fine, but they don't fix a quantum/lease/location mismatch. For investment, avoid.",
+        "red_flags": [
+          "$3.2M quantum in Choa Chu Kang OCR — very shallow buyer pool",
+          "99-yr leasehold; lease decay over the hold",
+          "Oversized 2,476sqft inflates apparent PSF value",
+          "No URA appreciation/txn data to verify"
+        ],
+        "catalysts": [
+          "510m to Choa Chu Kang MRT (NSL, future JRL interchange nearby)",
+          "Large layout for multi-gen families",
+          "TOP 2015 — relatively young building"
+        ],
+        "rental_assessment": "A $3.2M Choa Chu Kang unit rents at a very low yield; oversized family layout has a narrow tenant pool. Not a yield play.",
+        "appreciation_assessment": "No data; a 99-yr OCR unit at a $3M+ quantum typically lags — JRL interchange potential is the only mild upside, insufficient to overcome the quantum/lease drag.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "No URA data; OCR 99-yr baseline discounted for high quantum and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rainforest-60104647",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

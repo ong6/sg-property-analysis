@@ -1,0 +1,63 @@
+{
+  "condo": "Blossoms By The Park",
+  "slug": "blossoms-by-the-park",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A brand-new (2026 TOP) 99-yr leasehold 2BR in an integrated development just 430m from Buona Vista interchange, at the heart of One-North. Excellent location, but asking $2,469 PSF is ~3% above the $2,390 new-launch median, the appreciation data carries new-launch bias, and the 99-yr clock starts now at a premium PSF.",
+      "rating_rationale": "Top-tier location — integrated mixed-use, 430m to Buona Vista (EWL+CCL interchange), in the One-North job hub — and a deep 275-txn series confirm strong demand. But asking $2,469 PSF is ~3% above the $2,390 median (per search, 2BR average ~$2,250, so this stack is rich), has_new_launch_bias=true means the appreciation is developer-inflated, and a fresh 99-yr lease at peak pricing leaves limited 5-7yr upside. Score_1000 of 602 is good but the entry price already captures the catalyst.",
+      "red_flags": [
+        "Asking $2,469 PSF above the $2,390 new-launch median — paying top of market",
+        "New-launch bias on appreciation — headline rate is developer-inflated, not resale-proven",
+        "Fresh 99-yr lease entered at premium PSF — thin appreciation headroom",
+        "$1.78M for a 721 sqft 2BR is a high PSF entry"
+      ],
+      "catalysts": [
+        "Integrated development 430m from Buona Vista interchange (EWL+CCL)",
+        "One-North tech/biomedical hub — strongest job-driven demand in the west",
+        "New, well-located product with deep buyer interest (275 txns)"
+      ],
+      "as_of": {
+        "price": 1780000,
+        "psf": 2468.79,
+        "beds": 2,
+        "sqft": 721.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new (2026 TOP) 99-yr leasehold 2BR in an integrated development just 430m from Buona Vista interchange, at the heart of One-North. Excellent location, but asking $2,469 PSF is ~3% above the $2,390 new-launch median, the appreciation data carries new-launch bias, and the 99-yr clock starts now at a premium PSF.",
+        "rating": "Neutral",
+        "rating_rationale": "Top-tier location — integrated mixed-use, 430m to Buona Vista (EWL+CCL interchange), in the One-North job hub — and a deep 275-txn series confirm strong demand. But asking $2,469 PSF is ~3% above the $2,390 median (per search, 2BR average ~$2,250, so this stack is rich), has_new_launch_bias=true means the appreciation is developer-inflated, and a fresh 99-yr lease at peak pricing leaves limited 5-7yr upside. Score_1000 of 602 is good but the entry price already captures the catalyst.",
+        "red_flags": [
+          "Asking $2,469 PSF above the $2,390 new-launch median — paying top of market",
+          "New-launch bias on appreciation — headline rate is developer-inflated, not resale-proven",
+          "Fresh 99-yr lease entered at premium PSF — thin appreciation headroom",
+          "$1.78M for a 721 sqft 2BR is a high PSF entry"
+        ],
+        "catalysts": [
+          "Integrated development 430m from Buona Vista interchange (EWL+CCL)",
+          "One-North tech/biomedical hub — strongest job-driven demand in the west",
+          "New, well-located product with deep buyer interest (275 txns)"
+        ],
+        "rental_assessment": "Prime One-North location rents strongly to professionals and researchers; a new 2BR at the doorstep of the interchange should achieve good rent, but the high entry PSF compresses yield to ~3%.",
+        "appreciation_assessment": "Appreciation data is new-launch biased and the asking PSF is already above the new-launch median — the One-North catalyst is largely priced in, so upside over a 5-7yr hold is modest unless bought below ask.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-blossoms-by-the-park-500042558",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

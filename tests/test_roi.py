@@ -6,7 +6,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from scoring.roi import ROICalculator, calculate_roi, quick_roi_estimate
+from scoring.roi import ROICalculator, quick_roi_estimate
 
 
 class TestROICalculator:

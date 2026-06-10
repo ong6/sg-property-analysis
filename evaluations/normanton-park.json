@@ -1,0 +1,117 @@
+{
+  "condo": "Normanton Park",
+  "slug": "normanton-park",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 2023-completed 1BR in the very large Normanton Park (D05, near One-North/Kent Ridge) at a low $850k / $1613 psf — but the resale-only rate is NEGATIVE (-1.3%) over a massive, highly-reliable 1225 transactions, signalling post-completion price softness as the huge unit supply gets absorbed. Deep liquidity, but the data says owners are currently selling flat-to-down.",
+      "rating_rationale": "The 1225-txn series is the most reliable in this batch, and it shows resale-only at -1.3% — the mega-development's own supply is weighing on prices post-TOP. $1613 psf is well below the $1994 median (the discount reflects this softness, not a steal). Pros: very liquid (huge dev), low $850k quantum, real D05/One-North/CRL location. But buying into a project actively printing flat-to-negative resale is a Neutral, not a Buy — wait for the supply overhang to clear.",
+      "red_flags": [
+        "Resale-only appreciation is NEGATIVE (-1.3%) over a reliable 1225 txns — current price softness",
+        "Mega-development supply overhang depressing resale post-2023 TOP",
+        "1BR investor-niche; large number of competing identical units for resale/rental"
+      ],
+      "catalysts": [
+        "One-North / Kent Ridge / Science Park tenant demand; future CRL access in the corridor",
+        "Very deep liquidity (huge development) and low $850k quantum",
+        "PSF well below median — entry point if the supply overhang clears"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1612.9,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2023-completed 1BR in the very large Normanton Park (D05, near One-North/Kent Ridge) at a low $850k / $1613 psf — but the resale-only rate is NEGATIVE (-1.3%) over a massive, highly-reliable 1225 transactions, signalling post-completion price softness as the huge unit supply gets absorbed. Deep liquidity, but the data says owners are currently selling flat-to-down.",
+        "rating": "Neutral",
+        "rating_rationale": "The 1225-txn series is the most reliable in this batch, and it shows resale-only at -1.3% — the mega-development's own supply is weighing on prices post-TOP. $1613 psf is well below the $1994 median (the discount reflects this softness, not a steal). Pros: very liquid (huge dev), low $850k quantum, real D05/One-North/CRL location. But buying into a project actively printing flat-to-negative resale is a Neutral, not a Buy — wait for the supply overhang to clear.",
+        "red_flags": [
+          "Resale-only appreciation is NEGATIVE (-1.3%) over a reliable 1225 txns — current price softness",
+          "Mega-development supply overhang depressing resale post-2023 TOP",
+          "1BR investor-niche; large number of competing identical units for resale/rental"
+        ],
+        "catalysts": [
+          "One-North / Kent Ridge / Science Park tenant demand; future CRL access in the corridor",
+          "Very deep liquidity (huge development) and low $850k quantum",
+          "PSF well below median — entry point if the supply overhang clears"
+        ],
+        "rental_assessment": "Tenant demand is strong (One-North/NUS/Science Park), but the huge unit count means heavy rental competition within the same development, capping rent growth.",
+        "appreciation_assessment": "Reliable data shows -1.3% resale — the development is digesting its own supply. Medium-term it should stabilise with the location, but near-term momentum is negative; do not pay up for headline 'discount'.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 1.0,
+        "appreciation_rate_source": "URA resale-only is -1.3% (1225 txns); modest positive assumed post-absorption"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-normanton-park-500113675",
+        "review_file": "cov_batch_05.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Cheap, verified 1BR in a young D05 (OCR) mega-project near one-north/Kent Ridge — asking $1,613 psf sits at the very bottom of the project's $1,613-$2,446 PSF range, with the deepest dataset in this batch (1,225 resale txns). OCR location plus a real entry-PSF discount carry the case.",
+      "rating_rationale": "The asking $1,613 psf is exactly at the floor of the current project PSF range ($1,613-$2,446) and well under the 6-12 month average of ~$2,064-$2,093 psf, so age_adj_premium of -20.5% and psf_premium_vs_cohort of -13.7% are credible. Crucially the appreciation_source is ura_resale_only over 1,225 txns — the deepest, cleanest signal here — so even the slightly negative -1.27% reads as honest resale-to-resale data rather than a launch-inflated CAGR. D05 is OCR/RCR-fringe (best realized forward returns under v3.4), the $850k quantum is liquid, and there are no red flags. The negative trailing number is de-weighted; the value entry and location drive the Buy.",
+      "red_flags": [
+        "Slightly negative trailing resale appreciation (-1.27%) shows the project has not been a price outperformer recently",
+        "~1,862-unit mega-development — heavy concurrent 1BR resale/rental supply on exit",
+        "527 sqft compact 1BR; tenant pool limited to singles/couples"
+      ],
+      "catalysts": [
+        "D05/OCR-RCR fringe is among the strongest realized forward-return regions (v3.4)",
+        "Entry at the floor of the project PSF range gives a verified margin of safety",
+        "Proximity to one-north, Kent Ridge, NUS and Science Park supports tenant demand"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1612.9,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Cheap, verified 1BR in a young D05 (OCR) mega-project near one-north/Kent Ridge — asking $1,613 psf sits at the very bottom of the project's $1,613-$2,446 PSF range, with the deepest dataset in this batch (1,225 resale txns). OCR location plus a real entry-PSF discount carry the case.",
+        "rating_rationale": "The asking $1,613 psf is exactly at the floor of the current project PSF range ($1,613-$2,446) and well under the 6-12 month average of ~$2,064-$2,093 psf, so age_adj_premium of -20.5% and psf_premium_vs_cohort of -13.7% are credible. Crucially the appreciation_source is ura_resale_only over 1,225 txns — the deepest, cleanest signal here — so even the slightly negative -1.27% reads as honest resale-to-resale data rather than a launch-inflated CAGR. D05 is OCR/RCR-fringe (best realized forward returns under v3.4), the $850k quantum is liquid, and there are no red flags. The negative trailing number is de-weighted; the value entry and location drive the Buy.",
+        "red_flags": [
+          "Slightly negative trailing resale appreciation (-1.27%) shows the project has not been a price outperformer recently",
+          "~1,862-unit mega-development — heavy concurrent 1BR resale/rental supply on exit",
+          "527 sqft compact 1BR; tenant pool limited to singles/couples"
+        ],
+        "catalysts": [
+          "D05/OCR-RCR fringe is among the strongest realized forward-return regions (v3.4)",
+          "Entry at the floor of the project PSF range gives a verified margin of safety",
+          "Proximity to one-north, Kent Ridge, NUS and Science Park supports tenant demand"
+        ],
+        "rental_assessment": "Compact 1BR near one-north/NUS/Science Park has a deep professional-and-student rental base, supporting steady occupancy despite large in-project supply.",
+        "appreciation_assessment": "Trailing -1.27% (resale-only, 1,225 txns) is the most trustworthy appreciation read in this batch and correctly de-emphasized; forward thesis rests on the verified entry discount and OCR location, not momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-normanton-park-500113675",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

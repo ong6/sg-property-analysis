@@ -1,0 +1,63 @@
+{
+  "condo": "⭐️ Cheap 1km hong wen, st andrew junior, FH, 5mins to mrt ⭐️",
+  "slug": "cheap-1km-hong-wen-st-andrew-junior-fh-5mins-to-mrt",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2027-TOP freehold 3BR in Balestier/Boon Keng (D12), 969 sqft at $2.39M / $2,466 psf, 460m from Boon Keng MRT (NEL), marketed on Hong Wen / St Andrew's school proximity. Freehold and a 5-min MRT walk are real strengths, but $2,466 psf is rich, the 969sqft 3BR is compact, the listing obscures the project name, and there's no project URA data — a fully-priced new launch rather than value.",
+      "rating_rationale": "$2,466 psf is high for a D12 3BR, and at a near-new 2027 freehold the price likely embeds new-launch developer pricing (no project URA series to verify). 969sqft is compact for a 3BR. The spam-style title obscures the actual development, lowering data confidence, and the 278-287 arena record is below-even. Offsetting positives — freehold tenure, 460m to Boon Keng NEL MRT, and school-belt demand — keep it Neutral.",
+      "red_flags": [
+        "$2,466 psf is rich for a D12 3BR — likely new-launch developer pricing",
+        "969sqft is compact for a 3BR",
+        "Obscured project name in listing title — reduced data confidence",
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "Below-even 278-287 arena record"
+      ],
+      "catalysts": [
+        "Freehold tenure 460m from Boon Keng NEL MRT (5-min walk)",
+        "1km to Hong Wen / near St Andrew's — school-belt family demand",
+        "Central-fringe D12 near Novena medical hub and CBD"
+      ],
+      "as_of": {
+        "price": 2390000,
+        "psf": 2466.46,
+        "beds": 3,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2027-TOP freehold 3BR in Balestier/Boon Keng (D12), 969 sqft at $2.39M / $2,466 psf, 460m from Boon Keng MRT (NEL), marketed on Hong Wen / St Andrew's school proximity. Freehold and a 5-min MRT walk are real strengths, but $2,466 psf is rich, the 969sqft 3BR is compact, the listing obscures the project name, and there's no project URA data — a fully-priced new launch rather than value.",
+        "rating": "Neutral",
+        "rating_rationale": "$2,466 psf is high for a D12 3BR, and at a near-new 2027 freehold the price likely embeds new-launch developer pricing (no project URA series to verify). 969sqft is compact for a 3BR. The spam-style title obscures the actual development, lowering data confidence, and the 278-287 arena record is below-even. Offsetting positives — freehold tenure, 460m to Boon Keng NEL MRT, and school-belt demand — keep it Neutral.",
+        "red_flags": [
+          "$2,466 psf is rich for a D12 3BR — likely new-launch developer pricing",
+          "969sqft is compact for a 3BR",
+          "Obscured project name in listing title — reduced data confidence",
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "Below-even 278-287 arena record"
+        ],
+        "catalysts": [
+          "Freehold tenure 460m from Boon Keng NEL MRT (5-min walk)",
+          "1km to Hong Wen / near St Andrew's — school-belt family demand",
+          "Central-fringe D12 near Novena medical hub and CBD"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-1km-hong-wen-st-andrew-junior-fh-5mins-to-mrt-500014063",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

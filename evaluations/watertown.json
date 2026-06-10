@@ -1,0 +1,115 @@
+{
+  "condo": "Watertown",
+  "slug": "watertown",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 603 sqft 1BR at $1,572 psf in Watertown, an integrated mixed-use development directly atop Punggol MRT (30m) and Waterway Point mall. Best-in-batch transit/retail integration and the Punggol Digital District catalyst, with steady 3.72% appreciation on 259 txns.",
+      "rating_rationale": "Watertown sits on top of NE17 Punggol MRT and Waterway Point — 30m to MRT is unbeatable transit/retail integration that anchors both rental demand and resale. 259 txns and an integrated 992-unit dev give deep liquidity. PSF $1,572 is exactly at the project median (fairly priced, no premium). Punggol Digital District (PDD, with SIT campus) and CRL Punggol extension are concrete demand catalysts. Appreciation 3.72% on a reliable series is solid for OCR. Buy rather than Strong Buy because pricing is fair (not a discount) and 1BR is the niche end.",
+      "red_flags": [
+        "1BR niche segment with abundant Punggol/Sengkang supply competing for tenants",
+        "PSF at median — fairly priced, no value cushion",
+        "OCR Punggol absolute price ceiling lower than central districts"
+      ],
+      "catalysts": [
+        "NE17 Punggol MRT 30m + Waterway Point integrated mall — top connectivity/retail",
+        "Punggol Digital District + SIT campus driving tenant and resident demand",
+        "CRL Punggol extension improving regional connectivity"
+      ],
+      "as_of": {
+        "price": 948000,
+        "psf": 1572.14,
+        "beds": 1,
+        "sqft": 603.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 603 sqft 1BR at $1,572 psf in Watertown, an integrated mixed-use development directly atop Punggol MRT (30m) and Waterway Point mall. Best-in-batch transit/retail integration and the Punggol Digital District catalyst, with steady 3.72% appreciation on 259 txns.",
+        "rating": "Buy",
+        "rating_rationale": "Watertown sits on top of NE17 Punggol MRT and Waterway Point — 30m to MRT is unbeatable transit/retail integration that anchors both rental demand and resale. 259 txns and an integrated 992-unit dev give deep liquidity. PSF $1,572 is exactly at the project median (fairly priced, no premium). Punggol Digital District (PDD, with SIT campus) and CRL Punggol extension are concrete demand catalysts. Appreciation 3.72% on a reliable series is solid for OCR. Buy rather than Strong Buy because pricing is fair (not a discount) and 1BR is the niche end.",
+        "red_flags": [
+          "1BR niche segment with abundant Punggol/Sengkang supply competing for tenants",
+          "PSF at median — fairly priced, no value cushion",
+          "OCR Punggol absolute price ceiling lower than central districts"
+        ],
+        "catalysts": [
+          "NE17 Punggol MRT 30m + Waterway Point integrated mall — top connectivity/retail",
+          "Punggol Digital District + SIT campus driving tenant and resident demand",
+          "CRL Punggol extension improving regional connectivity"
+        ],
+        "rental_assessment": "Strong — MRT-on-doorstep integrated dev next to PDD/SIT gives one of the deepest 1BR tenant pools in the batch. Reliable occupancy, typical-to-good yield.",
+        "appreciation_assessment": "3.72% resale-only on 259 txns is steady and reliable; PDD build-out is the forward driver. Fair entry, dependable rather than explosive.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-watertown-500071066",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 1BR in Watertown, Punggol's integrated transit-mall development (atop Waterway Point + Punggol MRT/LRT), with a real but modest discount and a genuine, dated catalyst in Punggol Digital District.",
+      "rating_rationale": "Watertown is an integrated mixed-use development sitting directly above Waterway Point mall and the Punggol MRT/LRT interchange — a structural liquidity and rentability advantage that the raw PSF doesn't capture. The S$1,572 psf ask sits within the verified 12-month range (overall avg ~S$1,782 psf is inflated by larger/duplex units; 1BR small units command higher PSF, so this looks fair-to-slightly-cheap). The -11.0% age-adjusted premium rests on a deep 259-transaction base (robust), though the size cohort is thin at 12 txns. It is OCR (favourable forward region) with a concrete catalyst: the Punggol Digital District (NUS campus + JTC business park, ramping through 2026+) directly lifts the local rental tenant pool. Confidence is medium: the discount is modest and 1BR shoebox demand is sentiment-sensitive.",
+      "red_flags": [
+        "1BR shoebox (603 sqft) — narrower resale buyer pool and more cyclical demand on exit",
+        "Size-cohort only 12 transactions — the cohort PSF comparison is thin",
+        "99-year leasehold from ~2011 (TOP 2017); lease clock running"
+      ],
+      "catalysts": [
+        "Integrated development: direct connection to Waterway Point mall + Punggol MRT/LRT interchange (rental and liquidity premium)",
+        "Punggol Digital District (NUS + JTC business park) ramping nearby — direct boost to 1BR rental demand",
+        "OCR region — favourable forward-return prior under v3.4 backtest"
+      ],
+      "as_of": {
+        "price": 948000,
+        "psf": 1572.14,
+        "beds": 1,
+        "sqft": 603
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 1BR in Watertown, Punggol's integrated transit-mall development (atop Waterway Point + Punggol MRT/LRT), with a real but modest discount and a genuine, dated catalyst in Punggol Digital District.",
+        "rating_rationale": "Watertown is an integrated mixed-use development sitting directly above Waterway Point mall and the Punggol MRT/LRT interchange — a structural liquidity and rentability advantage that the raw PSF doesn't capture. The S$1,572 psf ask sits within the verified 12-month range (overall avg ~S$1,782 psf is inflated by larger/duplex units; 1BR small units command higher PSF, so this looks fair-to-slightly-cheap). The -11.0% age-adjusted premium rests on a deep 259-transaction base (robust), though the size cohort is thin at 12 txns. It is OCR (favourable forward region) with a concrete catalyst: the Punggol Digital District (NUS campus + JTC business park, ramping through 2026+) directly lifts the local rental tenant pool. Confidence is medium: the discount is modest and 1BR shoebox demand is sentiment-sensitive.",
+        "red_flags": [
+          "1BR shoebox (603 sqft) — narrower resale buyer pool and more cyclical demand on exit",
+          "Size-cohort only 12 transactions — the cohort PSF comparison is thin",
+          "99-year leasehold from ~2011 (TOP 2017); lease clock running"
+        ],
+        "catalysts": [
+          "Integrated development: direct connection to Waterway Point mall + Punggol MRT/LRT interchange (rental and liquidity premium)",
+          "Punggol Digital District (NUS + JTC business park) ramping nearby — direct boost to 1BR rental demand",
+          "OCR region — favourable forward-return prior under v3.4 backtest"
+        ],
+        "rental_assessment": "Best-in-class for the format: integrated transit-and-mall location drives strong, easy 1BR rental demand; PDD tenant inflow is a forward tailwind. Likely among the more rentable shoeboxes in the OCR.",
+        "appreciation_assessment": "Trailing 3.72% CAGR is story-only. Forward case is the PDD catalyst + integrated-dev moat plus a modest verified relative-value edge — a reasonable, not aggressive, appreciation thesis."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-watertown-500071066",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

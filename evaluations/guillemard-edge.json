@@ -1,0 +1,119 @@
+{
+  "condo": "Guillemard Edge",
+  "slug": "guillemard-edge",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold 775 sqft '1BR' (likely 1+study/dual-key given the size) in a shoebox-dominated Geylang block, listed at $1,160 PSF — roughly the URA median and below the ~$1,715 current 12-month average, but the development shows a negative 6.1% appreciation over 62 txns. The discounted entry can't offset a genuinely deteriorating price trend and shoebox/locale headwinds.",
+      "rating_rationale": "URA shows -6.1% annual appreciation over a meaningful 62 txns — this development is losing value, the strongest possible negative signal. Web data confirms a shoebox-heavy mix with mixed reviews ('shoebox size') and a Geylang locale that carries resale stigma. Although $1,160 PSF looks cheap vs a ~$1,715 average, the bigger 775 sqft format and the falling-price trend make this a poor 5-7yr investment.",
+      "red_flags": [
+        "Negative -6.1% appreciation over 62 txns — value actively declining",
+        "Shoebox-dominated development with Geylang locale stigma",
+        "775 sqft as a '1BR' is an awkward format for resale"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "CC8 Dakota MRT ~770m",
+        "Low absolute quantum ($899K)"
+      ],
+      "as_of": {
+        "price": 899000,
+        "psf": 1160.0,
+        "beds": 1,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 775 sqft '1BR' (likely 1+study/dual-key given the size) in a shoebox-dominated Geylang block, listed at $1,160 PSF — roughly the URA median and below the ~$1,715 current 12-month average, but the development shows a negative 6.1% appreciation over 62 txns. The discounted entry can't offset a genuinely deteriorating price trend and shoebox/locale headwinds.",
+        "rating": "Avoid",
+        "rating_rationale": "URA shows -6.1% annual appreciation over a meaningful 62 txns — this development is losing value, the strongest possible negative signal. Web data confirms a shoebox-heavy mix with mixed reviews ('shoebox size') and a Geylang locale that carries resale stigma. Although $1,160 PSF looks cheap vs a ~$1,715 average, the bigger 775 sqft format and the falling-price trend make this a poor 5-7yr investment.",
+        "red_flags": [
+          "Negative -6.1% appreciation over 62 txns — value actively declining",
+          "Shoebox-dominated development with Geylang locale stigma",
+          "775 sqft as a '1BR' is an awkward format for resale"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "CC8 Dakota MRT ~770m",
+          "Low absolute quantum ($899K)"
+        ],
+        "rental_assessment": "Geylang shoeboxes rent on yield, but high supply of similar units and locale perception suppress rent growth.",
+        "appreciation_assessment": "62-txn -6.1% CAGR is a reliable signal of decline; no catalyst in view to reverse it within the hold window.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guillemard-edge-60037559",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely cheap freehold SOHO/penthouse unit in Geylang, but the discount partly reflects the Geylang vice-belt stigma and a niche product format. Real value, real caveats.",
+      "rating_rationale": "Asking $1,160 psf for the 775 sqft '1-BR Penthouse + Home Office' format vs a verified comparable 775 sqft transaction at $1,050k / $1,355 psf (May 2025) and a project 12-month avg of ~$1,479-1,715 psf. That is a ~15% discount to its own-size recent comps, so the algo's very_low_psf flag and -38.3% age-adj premium are corroborated by real transactions, not a mis-scrape. Freehold is not itself a forward edge (v3.4), but the verified intra-project discount on a deep 62-txn appreciation base is the buy case. Held to medium confidence (not high) because psf_cohort_txns=2 is thin and the discount may encode a weaker stack/facing or the Geylang owner-occupier/financing discount rather than pure mispricing.",
+      "red_flags": [
+        "Geylang (D14) location carries vice-belt stigma, weaker owner-occupier demand and financing restrictions in parts of the area, which depresses both exit liquidity and the discount's reliability",
+        "Niche SOHO / 1-BR-penthouse-plus-home-office product (only 29 such units) is a thin sub-market with fewer natural buyers",
+        "psf_cohort_txns=2 — own-size band is shallow; the discount could be stack/facing-specific",
+        "Trailing 5yr appreciation is negative (-5.0%); momentum offers no support",
+        "275-unit project but the large-format stack is small and less liquid"
+      ],
+      "catalysts": [
+        "Verified ~15% discount to its own 775 sqft recent transaction ($1,160 vs $1,355 psf)",
+        "Freehold tenure plus full facilities (pools, gym) is rare in the price band, supporting downside floor",
+        "Walkable to Dakota CC8 / Aljunied EW9; Paya Lebar Central commercial rejuvenation nearby"
+      ],
+      "as_of": {
+        "price": 899000,
+        "psf": 1160,
+        "beds": 1,
+        "sqft": 775
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely cheap freehold SOHO/penthouse unit in Geylang, but the discount partly reflects the Geylang vice-belt stigma and a niche product format. Real value, real caveats.",
+        "rating_rationale": "Asking $1,160 psf for the 775 sqft '1-BR Penthouse + Home Office' format vs a verified comparable 775 sqft transaction at $1,050k / $1,355 psf (May 2025) and a project 12-month avg of ~$1,479-1,715 psf. That is a ~15% discount to its own-size recent comps, so the algo's very_low_psf flag and -38.3% age-adj premium are corroborated by real transactions, not a mis-scrape. Freehold is not itself a forward edge (v3.4), but the verified intra-project discount on a deep 62-txn appreciation base is the buy case. Held to medium confidence (not high) because psf_cohort_txns=2 is thin and the discount may encode a weaker stack/facing or the Geylang owner-occupier/financing discount rather than pure mispricing.",
+        "red_flags": [
+          "Geylang (D14) location carries vice-belt stigma, weaker owner-occupier demand and financing restrictions in parts of the area, which depresses both exit liquidity and the discount's reliability",
+          "Niche SOHO / 1-BR-penthouse-plus-home-office product (only 29 such units) is a thin sub-market with fewer natural buyers",
+          "psf_cohort_txns=2 — own-size band is shallow; the discount could be stack/facing-specific",
+          "Trailing 5yr appreciation is negative (-5.0%); momentum offers no support",
+          "275-unit project but the large-format stack is small and less liquid"
+        ],
+        "catalysts": [
+          "Verified ~15% discount to its own 775 sqft recent transaction ($1,160 vs $1,355 psf)",
+          "Freehold tenure plus full facilities (pools, gym) is rare in the price band, supporting downside floor",
+          "Walkable to Dakota CC8 / Aljunied EW9; Paya Lebar Central commercial rejuvenation nearby"
+        ],
+        "appreciation_assessment": "Trailing -5.0% over 5yr on 62 txns is genuine but per v3.4 priors has ~0 forward power; I do not extrapolate it negatively. Forward thesis rests on the value gap, not momentum. D14 is RCR — a middling forward region (RCR≈+3.5%), neither tailwind nor headwind.",
+        "rental_assessment": "SOHO/large 1-BR format in Geylang rents to a value tenant pool; the freehold+facilities mix supports a workable yield but the niche layout caps rental upside. Adequate, not a draw."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guillemard-edge-60037559",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

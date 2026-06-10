@@ -1,0 +1,63 @@
+{
+  "condo": "Crystal Heights",
+  "slug": "crystal-heights",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,205 sqft 2BR (built 2010) at $1.999M / $1,659 PSF in D05, 790m from Haw Par Villa MRT (Circle Line). The very generous 1,205 sqft for a 2BR depresses headline PSF, but the $2.0M quantum is high for a 2BR, and the 7.56% appreciation rests on just 3 URA transactions — statistically meaningless.",
+      "rating_rationale": "The eye-catching 7.56% CAGR is built on only 3 txns — unusable. The 1,205 sqft 2BR is oversized: it makes PSF ($1,659) look modest but pushes quantum to $2.0M for a unit that rents like a 2BR, capping yield. PSF is ~5.7% above the (also-thin) $1,569 median. Offsetting: freehold, One-North/West Coast (D05) growth corridor, and Circle Line access 790m away. Mixed — decent location and tenure, but thin data and quantum/size mismatch.",
+      "red_flags": [
+        "7.56% appreciation on only 3 URA txns — statistically meaningless",
+        "Oversized 1,205 sqft 2BR pushes quantum to $2.0M with no rental upside (yield drag)",
+        "PSF ~5.7% above the (thin) URA median; record shows many draws (uncertain Elo)"
+      ],
+      "catalysts": [
+        "Freehold in D05 near One-North / West Coast tech-employment growth corridor",
+        "790m to CC25 Haw Par Villa MRT (Circle Line)",
+        "Generous layout appeals to space-seeking owner-occupier resale buyers"
+      ],
+      "as_of": {
+        "price": 1999000,
+        "psf": 1658.92,
+        "beds": 2,
+        "sqft": 1205.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,205 sqft 2BR (built 2010) at $1.999M / $1,659 PSF in D05, 790m from Haw Par Villa MRT (Circle Line). The very generous 1,205 sqft for a 2BR depresses headline PSF, but the $2.0M quantum is high for a 2BR, and the 7.56% appreciation rests on just 3 URA transactions — statistically meaningless.",
+        "rating": "Neutral",
+        "rating_rationale": "The eye-catching 7.56% CAGR is built on only 3 txns — unusable. The 1,205 sqft 2BR is oversized: it makes PSF ($1,659) look modest but pushes quantum to $2.0M for a unit that rents like a 2BR, capping yield. PSF is ~5.7% above the (also-thin) $1,569 median. Offsetting: freehold, One-North/West Coast (D05) growth corridor, and Circle Line access 790m away. Mixed — decent location and tenure, but thin data and quantum/size mismatch.",
+        "red_flags": [
+          "7.56% appreciation on only 3 URA txns — statistically meaningless",
+          "Oversized 1,205 sqft 2BR pushes quantum to $2.0M with no rental upside (yield drag)",
+          "PSF ~5.7% above the (thin) URA median; record shows many draws (uncertain Elo)"
+        ],
+        "catalysts": [
+          "Freehold in D05 near One-North / West Coast tech-employment growth corridor",
+          "790m to CC25 Haw Par Villa MRT (Circle Line)",
+          "Generous layout appeals to space-seeking owner-occupier resale buyers"
+        ],
+        "rental_assessment": "D05 draws One-North and NUS-linked tenants; a roomy 2BR lets well, but at $2.0M the gross yield (~2.7%) is thin since rent reflects 2BR demand, not the extra floor area.",
+        "appreciation_assessment": "Cannot rely on 7.56% (3 txns). D05's One-North corridor supports above-OCR appreciation, but I treat the rate as district-typical RCR until more trades confirm.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D05/RCR baseline — 3-txn rate unusable, One-North corridor supports mid-single-digit"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-crystal-heights-23957157",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

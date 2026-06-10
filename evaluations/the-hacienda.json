@@ -1,0 +1,63 @@
+{
+  "condo": "The Hacienda",
+  "slug": "the-hacienda",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,206 sqft freehold 3BR at The Hacienda (D15 Siglap, 1985) at $2.5M / $2,073 PSF — but the project's URA median is just $1,796 PSF, so the listing is ~15% above the project's transacted norm. A 41-year-old development priced rich, hence the rock-bottom score_1000 of 124.",
+      "rating_rationale": "The $2,073 PSF listing sits ~15% above the project's own $1,796 URA median (15 txns), which is exactly why score_1000 craters to 124. The development is from 1985 (41 years old) — old enough to raise maintenance and financing concerns — and at $2.5M the buyer pool is thin. Even though Siglap TEL MRT (760m) and freehold D15 are attractive, paying a ~15% premium to the project's transactions on an aging block is a poor entry for a 5-7yr hold. En-bloc optionality is the only real upside but is speculative.",
+      "red_flags": [
+        "Listed ~15% above the $1,796 URA project median PSF — overpriced",
+        "1985 build (41 yrs) — old, maintenance/financing and lease-of-building-age risk",
+        "$2.5M quantum thins the buyer pool",
+        "score_1000 just 124 — strongly flagged on PSF-above-market"
+      ],
+      "catalysts": [
+        "Freehold D15 Siglap near East Coast — desirable lifestyle location",
+        "760m to Siglap TEL MRT (Thomson-East Coast Line)",
+        "En-bloc/redevelopment optionality for an old freehold block (speculative)"
+      ],
+      "as_of": {
+        "price": 2499999,
+        "psf": 2072.97,
+        "beds": 3,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,206 sqft freehold 3BR at The Hacienda (D15 Siglap, 1985) at $2.5M / $2,073 PSF — but the project's URA median is just $1,796 PSF, so the listing is ~15% above the project's transacted norm. A 41-year-old development priced rich, hence the rock-bottom score_1000 of 124.",
+        "rating": "Avoid",
+        "rating_rationale": "The $2,073 PSF listing sits ~15% above the project's own $1,796 URA median (15 txns), which is exactly why score_1000 craters to 124. The development is from 1985 (41 years old) — old enough to raise maintenance and financing concerns — and at $2.5M the buyer pool is thin. Even though Siglap TEL MRT (760m) and freehold D15 are attractive, paying a ~15% premium to the project's transactions on an aging block is a poor entry for a 5-7yr hold. En-bloc optionality is the only real upside but is speculative.",
+        "red_flags": [
+          "Listed ~15% above the $1,796 URA project median PSF — overpriced",
+          "1985 build (41 yrs) — old, maintenance/financing and lease-of-building-age risk",
+          "$2.5M quantum thins the buyer pool",
+          "score_1000 just 124 — strongly flagged on PSF-above-market"
+        ],
+        "catalysts": [
+          "Freehold D15 Siglap near East Coast — desirable lifestyle location",
+          "760m to Siglap TEL MRT (Thomson-East Coast Line)",
+          "En-bloc/redevelopment optionality for an old freehold block (speculative)"
+        ],
+        "rental_assessment": "Old freehold 3BR in Siglap rents to East-Coast families, but a 1985 block commands below-market rent and the inflated price further depresses yield.",
+        "appreciation_assessment": "Project 4.47%/yr (15 txns) is decent, but the listing already sits ~15% above the project median, leaving little room and a likely negotiate-down. Unfavorable at ask.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-hacienda-500111032",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

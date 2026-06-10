@@ -1,0 +1,61 @@
+{
+  "condo": "Double Bay Residences",
+  "slug": "double-bay-residences",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A large 646-unit 99-year leasehold condo in Simei (D18), 550m from EW3 Simei MRT, with a deep 139-txn URA series and 6.0%/yr appreciation. This 4BR at $1,568 psf sits ~7% above the $1,468 median, and a $2.45M leasehold 4BR is a narrower exit than the dossier's liquidity suggests.",
+      "rating_rationale": "Double Bay is a large, well-known Simei development with genuine liquidity — 139 URA transactions and 646 units underpin a 6.0%/yr resale rate you can trust, and EW3 Simei MRT at 550m plus the upcoming Eastern Region amenities support demand. The reservations: this specific 4BR is listed at $1,568 psf, ~7% ABOVE the $1,468 project median (so you're paying a premium, not getting a discount), and at $2.45M for a 99-year leasehold (2012, ~85 years left but OCR) the 4BR buyer pool in Simei is thinner than the 2-3BR resale market. Large family units in OCR appreciate more slowly per sqft. Solid asset, but priced above median and the wrong unit type for maximum liquidity — Neutral.",
+      "red_flags": [
+        "Listed ~7% above the project URA median — paying a premium",
+        "$2.45M 4BR is a narrower OCR exit than the dev's 2-3BR market",
+        "Leasehold; OCR large-family units appreciate slower per sqft"
+      ],
+      "catalysts": [
+        "EW3 Simei MRT 550m, near Changi Business Park / SUTD / Eastern General Hospital (opening)",
+        "Large 646-unit development = deep buyer pool and amenities",
+        "Reliable 6.0%/yr URA on 139 txns"
+      ],
+      "as_of": {
+        "price": 2448000,
+        "psf": 1568.23,
+        "beds": 4,
+        "sqft": 1561.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 646-unit 99-year leasehold condo in Simei (D18), 550m from EW3 Simei MRT, with a deep 139-txn URA series and 6.0%/yr appreciation. This 4BR at $1,568 psf sits ~7% above the $1,468 median, and a $2.45M leasehold 4BR is a narrower exit than the dossier's liquidity suggests.",
+        "rating": "Neutral",
+        "rating_rationale": "Double Bay is a large, well-known Simei development with genuine liquidity — 139 URA transactions and 646 units underpin a 6.0%/yr resale rate you can trust, and EW3 Simei MRT at 550m plus the upcoming Eastern Region amenities support demand. The reservations: this specific 4BR is listed at $1,568 psf, ~7% ABOVE the $1,468 project median (so you're paying a premium, not getting a discount), and at $2.45M for a 99-year leasehold (2012, ~85 years left but OCR) the 4BR buyer pool in Simei is thinner than the 2-3BR resale market. Large family units in OCR appreciate more slowly per sqft. Solid asset, but priced above median and the wrong unit type for maximum liquidity — Neutral.",
+        "red_flags": [
+          "Listed ~7% above the project URA median — paying a premium",
+          "$2.45M 4BR is a narrower OCR exit than the dev's 2-3BR market",
+          "Leasehold; OCR large-family units appreciate slower per sqft"
+        ],
+        "catalysts": [
+          "EW3 Simei MRT 550m, near Changi Business Park / SUTD / Eastern General Hospital (opening)",
+          "Large 646-unit development = deep buyer pool and amenities",
+          "Reliable 6.0%/yr URA on 139 txns"
+        ],
+        "rental_assessment": "Good demand from CBP/SUTD/airport and (forthcoming) Eastern General Hospital; but a 1,561 sqft 4BR rents inefficiently per sqft versus smaller units.",
+        "appreciation_assessment": "6.0%/yr URA is reliable, but the above-median entry price eats into forward return; expect district-typical at best.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-double-bay-residences-500069013",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

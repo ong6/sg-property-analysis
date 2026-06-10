@@ -1,0 +1,61 @@
+{
+  "condo": "Botannia",
+  "slug": "botannia",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2009 999-yr leasehold 2BR (1,076 sqft, a generous size for the bracket) in West Coast D05 near One-North, with a solid 72-txn URA series at 4.66%/yr. Asking $1,848 PSF is modestly above the $1,807 median, and the ~$2M quantum sits at the edge of the liquid band, but the One-North job-hub catalyst and near-freehold tenure are genuine.",
+      "rating_rationale": "Reliable data (72 txns, 4.66%/yr above the implied baseline), 999-yr near-freehold tenure, on_frontier=true, and a roomy 1,076 sqft 2BR in the One-North/West Coast growth corridor. Asking $1,848 PSF is only ~2% over the $1,807 median — fair. The ~$2.0M quantum is the main caution (top of the liquid band) and the listing shows no MRT proximity, but D05's tech-job demand underpins both rent and resale.",
+      "red_flags": [
+        "~$2.0M quantum at the top edge of the deep-liquidity band",
+        "No MRT proximity listed — verify walking distance to Clementi/Dover",
+        "Asking ~2% above district median PSF"
+      ],
+      "catalysts": [
+        "One-North / West Coast tech and biomedical job hub driving tenant and buyer demand",
+        "999-yr near-freehold tenure (minimal decay)",
+        "72-txn-verified 4.66%/yr appreciation, on appreciation frontier"
+      ],
+      "as_of": {
+        "price": 1988888,
+        "psf": 1848.41,
+        "beds": 2,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2009 999-yr leasehold 2BR (1,076 sqft, a generous size for the bracket) in West Coast D05 near One-North, with a solid 72-txn URA series at 4.66%/yr. Asking $1,848 PSF is modestly above the $1,807 median, and the ~$2M quantum sits at the edge of the liquid band, but the One-North job-hub catalyst and near-freehold tenure are genuine.",
+        "rating": "Buy",
+        "rating_rationale": "Reliable data (72 txns, 4.66%/yr above the implied baseline), 999-yr near-freehold tenure, on_frontier=true, and a roomy 1,076 sqft 2BR in the One-North/West Coast growth corridor. Asking $1,848 PSF is only ~2% over the $1,807 median — fair. The ~$2.0M quantum is the main caution (top of the liquid band) and the listing shows no MRT proximity, but D05's tech-job demand underpins both rent and resale.",
+        "red_flags": [
+          "~$2.0M quantum at the top edge of the deep-liquidity band",
+          "No MRT proximity listed — verify walking distance to Clementi/Dover",
+          "Asking ~2% above district median PSF"
+        ],
+        "catalysts": [
+          "One-North / West Coast tech and biomedical job hub driving tenant and buyer demand",
+          "999-yr near-freehold tenure (minimal decay)",
+          "72-txn-verified 4.66%/yr appreciation, on appreciation frontier"
+        ],
+        "rental_assessment": "West Coast near One-North and NUS/science park has deep professional and academic tenant demand; a roomy 2BR rents well, ~3-3.5% yield.",
+        "appreciation_assessment": "4.66%/yr on 72 txns is reliable and the One-North expansion is a durable demand catalyst — a well-supported, above-baseline appreciation case.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-botannia-60204318",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

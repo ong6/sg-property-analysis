@@ -62,6 +62,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 1,356 sqft 3BR in Bukit Batok (D23/OCR) at $1,106 psf, genuinely a touch below the project's recent average, but on a 23-year-old 99-LH where lease decay is the dominant risk over a 5-7yr hold.",
+      "rating_rationale": "The asking $1,106 psf is mildly below the project's verified last-12-month average ($1,180-$1,200 psf; range $911-$1,260), and the -8.7% psf_premium rests on a reasonable 16-txn cohort, so the discount is real but modest - consistent with a large 3BR's natural PSF compression rather than a deep bargain. OCR is the best forward region (~+4.0%). The decisive offset is age: built 2003 on a 99-LH from 2000 means only ~77 years remaining, and over a 5-7yr hold the asset crosses further into the zone where lease-decay drag and CPF-usage/financing tightening compress buyer demand. Location is decent (Bukit Batok / near Bukit Gombak) but no fresh dated catalyst. Net: a fairly priced large unit whose age caps the forward upside to roughly market - a genuine near-tie that lands Neutral.",
+      "red_flags": [
+        "23-year-old 99-LH (from 2000), ~77yrs left - lease decay is the main 5-7yr risk",
+        "'very_old_property' + 'very_low_psf' flags both driven by age, not a hidden bargain",
+        "Discount vs project avg is modest (~8%) and partly just large-unit PSF compression",
+        "No fresh dated catalyst to drive re-rating"
+      ],
+      "catalysts": [
+        "OCR forward-return tailwind (~+4.0% per v3.4 backtest)",
+        "Low $1.5M quantum for a 1,356 sqft 3BR appeals to value/own-stay buyers"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1106.19,
+        "beds": 3,
+        "sqft": 1356
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Large 1,356 sqft 3BR in Bukit Batok (D23/OCR) at $1,106 psf, genuinely a touch below the project's recent average, but on a 23-year-old 99-LH where lease decay is the dominant risk over a 5-7yr hold.",
+        "rating_rationale": "The asking $1,106 psf is mildly below the project's verified last-12-month average ($1,180-$1,200 psf; range $911-$1,260), and the -8.7% psf_premium rests on a reasonable 16-txn cohort, so the discount is real but modest - consistent with a large 3BR's natural PSF compression rather than a deep bargain. OCR is the best forward region (~+4.0%). The decisive offset is age: built 2003 on a 99-LH from 2000 means only ~77 years remaining, and over a 5-7yr hold the asset crosses further into the zone where lease-decay drag and CPF-usage/financing tightening compress buyer demand. Location is decent (Bukit Batok / near Bukit Gombak) but no fresh dated catalyst. Net: a fairly priced large unit whose age caps the forward upside to roughly market - a genuine near-tie that lands Neutral.",
+        "red_flags": [
+          "23-year-old 99-LH (from 2000), ~77yrs left - lease decay is the main 5-7yr risk",
+          "'very_old_property' + 'very_low_psf' flags both driven by age, not a hidden bargain",
+          "Discount vs project avg is modest (~8%) and partly just large-unit PSF compression",
+          "No fresh dated catalyst to drive re-rating"
+        ],
+        "catalysts": [
+          "OCR forward-return tailwind (~+4.0% per v3.4 backtest)",
+          "Low $1.5M quantum for a 1,356 sqft 3BR appeals to value/own-stay buyers"
+        ],
+        "rental_assessment": "Rents ~$3.47-$3.53 psf/yr; a large 3BR at $1.5M gives a serviceable but unremarkable OCR yield; HDB-upgrader own-stay demand supports the unit type.",
+        "appreciation_assessment": "5.92% trailing CAGR on 71 txns is data-fine but ~0 forward signal; the modest verified discount is the only mild value edge, and accelerating lease decay over the hold offsets it - forward expectation roughly market."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

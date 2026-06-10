@@ -1,0 +1,55 @@
+{
+  "condo": "Regent Residences",
+  "slug": "regent-residences",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Freehold D12 2BR (807 sqft) at $1.39M / $1,721 psf, just above the $1,699 median, an 8-min walk to Boon Keng NEL. Well-sized 2BR at a sub-$1.5M quantum hits the deepest buyer band, but the 3.57%/yr URA rate (48 txns, reliable) is modest for an RCR-fringe freehold.",
+      "rating_rationale": "Best liquidity profile in this batch — proper-sized 2BR, $1.39M quantum in the deep band, 48-txn reliable data, MRT-proximate. Offset by only 3.57%/yr appreciation (below RCR norm) and PSF marginally over median, so upside is capped. Net balanced; a steady hold, not a standout.",
+      "red_flags": [
+        "Modest 3.57%/yr appreciation, below RCR baseline",
+        "PSF slightly above district median"
+      ],
+      "catalysts": [
+        "Freehold city-fringe D12 within walk of Boon Keng NEL",
+        "Efficient 2BR at deep-pool $1.39M quantum"
+      ],
+      "as_of": {
+        "price": 1388888,
+        "psf": 1721.05,
+        "beds": 2,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold D12 2BR (807 sqft) at $1.39M / $1,721 psf, just above the $1,699 median, an 8-min walk to Boon Keng NEL. Well-sized 2BR at a sub-$1.5M quantum hits the deepest buyer band, but the 3.57%/yr URA rate (48 txns, reliable) is modest for an RCR-fringe freehold.",
+        "rating": "Neutral",
+        "rating_rationale": "Best liquidity profile in this batch — proper-sized 2BR, $1.39M quantum in the deep band, 48-txn reliable data, MRT-proximate. Offset by only 3.57%/yr appreciation (below RCR norm) and PSF marginally over median, so upside is capped. Net balanced; a steady hold, not a standout.",
+        "red_flags": [
+          "Modest 3.57%/yr appreciation, below RCR baseline",
+          "PSF slightly above district median"
+        ],
+        "catalysts": [
+          "Freehold city-fringe D12 within walk of Boon Keng NEL",
+          "Efficient 2BR at deep-pool $1.39M quantum"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regent-residences-500103411",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

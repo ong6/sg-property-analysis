@@ -1,0 +1,59 @@
+{
+  "condo": "Freehold, Woodleigh MRT, Woodleigh Mall, D13",
+  "slug": "freehold-woodleigh-mrt-woodleigh-mall-d13",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Generic, unidentifiable D13 Woodleigh listing at $2.79M / $2,313 PSF with no project name, no built year and zero URA appreciation/transaction data. The location near Woodleigh MRT and Mall is decent, but the dossier provides nothing to verify value, age or liquidity, and the price is firmly in the thinning >$2.5M band for a 3BR.",
+      "rating_rationale": "No project_name, no built_year, and null on every URA field (appreciation, txn count, median PSF) — the quantitative case cannot be built. $2,313 PSF for a 3BR at $2.79M sits above the deepest liquidity band, and score_1000 of 504 with a 226-338-5 arena record is market-typical-to-poor. Unverifiable boutique/anonymous FH listings are exactly the thin-data entry the rubric says to avoid without hesitation.",
+      "red_flags": [
+        "No project name or built year — cannot verify age, quality or which development this is",
+        "Zero URA appreciation/transaction data — appreciation and liquidity unverifiable",
+        "$2.79M 3BR sits above the deepest buyer-pool band"
+      ],
+      "catalysts": [
+        "Woodleigh MRT (NE11, 380m) and Woodleigh Mall walkability",
+        "Freehold tenure"
+      ],
+      "as_of": {
+        "price": 2790000,
+        "psf": 2313.43,
+        "beds": 3,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Generic, unidentifiable D13 Woodleigh listing at $2.79M / $2,313 PSF with no project name, no built year and zero URA appreciation/transaction data. The location near Woodleigh MRT and Mall is decent, but the dossier provides nothing to verify value, age or liquidity, and the price is firmly in the thinning >$2.5M band for a 3BR.",
+        "rating": "Avoid",
+        "rating_rationale": "No project_name, no built_year, and null on every URA field (appreciation, txn count, median PSF) — the quantitative case cannot be built. $2,313 PSF for a 3BR at $2.79M sits above the deepest liquidity band, and score_1000 of 504 with a 226-338-5 arena record is market-typical-to-poor. Unverifiable boutique/anonymous FH listings are exactly the thin-data entry the rubric says to avoid without hesitation.",
+        "red_flags": [
+          "No project name or built year — cannot verify age, quality or which development this is",
+          "Zero URA appreciation/transaction data — appreciation and liquidity unverifiable",
+          "$2.79M 3BR sits above the deepest buyer-pool band"
+        ],
+        "catalysts": [
+          "Woodleigh MRT (NE11, 380m) and Woodleigh Mall walkability",
+          "Freehold tenure"
+        ],
+        "rental_assessment": "Woodleigh/Bidadari is a reasonable rental catchment with MRT and mall, but with no project identity or rent data the yield is unverifiable.",
+        "appreciation_assessment": "No URA series at all; cannot establish a trajectory. Defaulting to caution given anonymous listing.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-woodleigh-mrt-woodleigh-mall-d13-500160805",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

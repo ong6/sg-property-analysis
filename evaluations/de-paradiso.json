@@ -1,0 +1,65 @@
+{
+  "condo": "De Paradiso",
+  "slug": "de-paradiso",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 3BR (1130sqft) at De Paradiso, a 2005 boutique development in D12 Balestier/Novena fringe, at $1.999M / $1,769 PSF — priced ~11% above the $1,593 URA median, with thin data (4.6% on 7 txns) and a weak score (437). Freehold + Novena proximity are the appeal; aging boutique and above-median entry are the drag.",
+      "rating_rationale": "$1,769 PSF vs $1,593 URA median = ~11% premium for a 21-year-old boutique block. The 4.56%/yr URA rate is from only 7 txns (low confidence). Score 437 / Elo 1192 with a near-.500 but draw-heavy 260-263-46 record. Novena MRT is 1.21km (not walkable) — Balestier is a transit-light fringe. $1.999M sits at the upper edge of the liquid band. Freehold and the central-fringe Novena/medical-hub location give some resale support, but you are paying above median for an aging small development.",
+      "red_flags": [
+        "$1,769 PSF ~11% above URA median (above-market entry)",
+        "URA 4.6% from only 7 txns — low confidence",
+        "Aging (2005) boutique development — thinner liquidity",
+        "Novena MRT 1.21km, not walkable"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Novena medical hub / central-fringe location",
+        "Health City Novena precinct development"
+      ],
+      "as_of": {
+        "price": 1999000,
+        "psf": 1769.03,
+        "beds": 3,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3BR (1130sqft) at De Paradiso, a 2005 boutique development in D12 Balestier/Novena fringe, at $1.999M / $1,769 PSF — priced ~11% above the $1,593 URA median, with thin data (4.6% on 7 txns) and a weak score (437). Freehold + Novena proximity are the appeal; aging boutique and above-median entry are the drag.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,769 PSF vs $1,593 URA median = ~11% premium for a 21-year-old boutique block. The 4.56%/yr URA rate is from only 7 txns (low confidence). Score 437 / Elo 1192 with a near-.500 but draw-heavy 260-263-46 record. Novena MRT is 1.21km (not walkable) — Balestier is a transit-light fringe. $1.999M sits at the upper edge of the liquid band. Freehold and the central-fringe Novena/medical-hub location give some resale support, but you are paying above median for an aging small development.",
+        "red_flags": [
+          "$1,769 PSF ~11% above URA median (above-market entry)",
+          "URA 4.6% from only 7 txns — low confidence",
+          "Aging (2005) boutique development — thinner liquidity",
+          "Novena MRT 1.21km, not walkable"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Novena medical hub / central-fringe location",
+          "Health City Novena precinct development"
+        ],
+        "rental_assessment": "Novena/Balestier fringe rents to medical-hub and CBD-adjacent tenants; 3BR demand fine, yield modest at this PSF.",
+        "appreciation_assessment": "Above-median entry plus thin data cap upside; expect low-to-mid single digit for an aging FH boutique.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "D12 central-fringe FH prior; URA 4.6% (7 txns) treated as soft"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-de-paradiso-500123747",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

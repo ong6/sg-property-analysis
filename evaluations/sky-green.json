@@ -1,0 +1,63 @@
+{
+  "condo": "Sky Green",
+  "slug": "sky-green",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1BR (463 sqft) at Sky Green, D13, near Tai Seng MRT, asking $830K / $1,793 psf — below the district median $1,858 on a deep 53-txn series with a reliable ~3.5% CAGR. Low quantum, freehold and a healthy transaction base make it a serviceable entry-level investment despite a modest appreciation rate.",
+      "rating_rationale": "Strong data quality (53 URA txns, ~3.5% resale CAGR, freehold) and listed $1,793 psf below the $1,858 median give a real value cushion. But the rate is only ~3.5% (mid), and a 463 sqft 1BR has a niche resale pool. Tai Seng/Paya Lebar Central commercial demand supports rental. score_1000 = 614 sits in the upper-middle. A solid hold, not a standout — Neutral leaning positive.",
+      "red_flags": [
+        "Compact 463 sqft 1BR — niche resale and dispreferenced by family buyers",
+        "Appreciation ~3.5%/yr is only middling for an RCR-fringe freehold",
+        "Elo 945 / weak win record reflects small-format competitive disadvantage"
+      ],
+      "catalysts": [
+        "Freehold near Tai Seng MRT and Paya Lebar Central commercial growth",
+        "Listed below district median PSF — entry-level value cushion",
+        "Low $830K quantum keeps the buyer pool broad for a shoebox"
+      ],
+      "as_of": {
+        "price": 830000,
+        "psf": 1792.66,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1BR (463 sqft) at Sky Green, D13, near Tai Seng MRT, asking $830K / $1,793 psf — below the district median $1,858 on a deep 53-txn series with a reliable ~3.5% CAGR. Low quantum, freehold and a healthy transaction base make it a serviceable entry-level investment despite a modest appreciation rate.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong data quality (53 URA txns, ~3.5% resale CAGR, freehold) and listed $1,793 psf below the $1,858 median give a real value cushion. But the rate is only ~3.5% (mid), and a 463 sqft 1BR has a niche resale pool. Tai Seng/Paya Lebar Central commercial demand supports rental. score_1000 = 614 sits in the upper-middle. A solid hold, not a standout — Neutral leaning positive.",
+        "red_flags": [
+          "Compact 463 sqft 1BR — niche resale and dispreferenced by family buyers",
+          "Appreciation ~3.5%/yr is only middling for an RCR-fringe freehold",
+          "Elo 945 / weak win record reflects small-format competitive disadvantage"
+        ],
+        "catalysts": [
+          "Freehold near Tai Seng MRT and Paya Lebar Central commercial growth",
+          "Listed below district median PSF — entry-level value cushion",
+          "Low $830K quantum keeps the buyer pool broad for a shoebox"
+        ],
+        "rental_assessment": "Good — Tai Seng's office/industrial cluster and MRT access drive steady 1BR tenant demand; yield likely 3.5-4% at this quantum.",
+        "appreciation_assessment": "Reliable ~3.5% CAGR on 53 transactions; freehold and below-median pricing argue for steady, unspectacular appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "URA resale-only 53-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-green-500107871",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

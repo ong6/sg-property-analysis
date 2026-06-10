@@ -1,0 +1,113 @@
+{
+  "condo": "Cosmo",
+  "slug": "cosmo",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 743 sqft freehold 1BR in D14 Mountbatten at $1.2M ($1,615 PSF). The listed PSF sits notably below the project's URA median of $1,830, but a $1.2M 1BR is an oversized/expensive one-bed that competes against far cheaper 1BRs and entry 2BRs in the same band.",
+      "rating_rationale": "Freehold D14 near Mountbatten (CC7, 570m) is a respectable location with steady ~3.8%/yr resale appreciation, and the $1,615 PSF is ~12% under the $1,830 URA median — but only 7 URA transactions make that rate thin. At 743 sqft this is a large 1BR; $1.2M for a one-bedroom narrows the buyer pool to investors and singles, and the high elo masks weak exit liquidity for a $1.2M 1BR. Yield is the saving grace; appreciation case is average.",
+      "red_flags": [
+        "$1.2M entry for a 1BR narrows resale buyer pool",
+        "Only 7 URA transactions — appreciation rate unreliable",
+        "743 sqft is oversized for a 1BR, weakening PSF-comparability"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D14 RCR location",
+        "Walkable to Mountbatten MRT (CC line, ~570m)",
+        "Listed ~12% below URA median PSF suggests room/motivated seller"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1615.07,
+        "beds": 1,
+        "sqft": 743.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 743 sqft freehold 1BR in D14 Mountbatten at $1.2M ($1,615 PSF). The listed PSF sits notably below the project's URA median of $1,830, but a $1.2M 1BR is an oversized/expensive one-bed that competes against far cheaper 1BRs and entry 2BRs in the same band.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold D14 near Mountbatten (CC7, 570m) is a respectable location with steady ~3.8%/yr resale appreciation, and the $1,615 PSF is ~12% under the $1,830 URA median — but only 7 URA transactions make that rate thin. At 743 sqft this is a large 1BR; $1.2M for a one-bedroom narrows the buyer pool to investors and singles, and the high elo masks weak exit liquidity for a $1.2M 1BR. Yield is the saving grace; appreciation case is average.",
+        "red_flags": [
+          "$1.2M entry for a 1BR narrows resale buyer pool",
+          "Only 7 URA transactions — appreciation rate unreliable",
+          "743 sqft is oversized for a 1BR, weakening PSF-comparability"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D14 RCR location",
+          "Walkable to Mountbatten MRT (CC line, ~570m)",
+          "Listed ~12% below URA median PSF suggests room/motivated seller"
+        ],
+        "rental_assessment": "1BR near Mountbatten/Old Airport Road has solid tenant demand from young professionals; gross yield on a $1.2M 1BR is the strongest part of the case, likely ~3.5-4%.",
+        "appreciation_assessment": "~3.8%/yr resale CAGR is OCR-like despite RCR location; freehold premium already embedded, so upside is moderate. Thin txn count caps confidence.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cosmo-60222142",
+        "review_file": "cov_batch_23.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Quirky 743 sqft freehold maisonette (not a true 1BR) in a tiny 45-unit D14 project; modest discount but very thin data and split-level layout limit liquidity.",
+      "rating_rationale": "The unit is mislabeled: at 743 sqft this is a Cosmo Maisonette (built-up 743-818 sqft), a split-level layout, not a flat 1BR. Maisonettes list at ~$1,700-1,750 PSF and a 710 sqft unit transacted at $1,830 PSF in Sep 2025, so the asking $1,615 PSF is genuinely a touch below comps - supporting the -10.3% age-adj direction. But every supporting signal is thin: appreciation_txns = 7 and psf_cohort_txns = 4 in a 45-unit development, so confidence in the discount being real (vs a quirky-layout discount) is low. Freehold is NOT a forward edge per v3.4. D14 is RCR-adjacent (mid forward region). Maisonettes have a narrower buyer pool and weaker exit liquidity. Modest value plus quirky, illiquid format and thin data nets to Neutral, low confidence.",
+      "red_flags": [
+        "743 sqft unit is a split-level maisonette, not a standard 1BR - narrow buyer pool, weaker exit",
+        "Only 45 units total; appreciation_txns = 7 and psf_cohort_txns = 4 - very thin price discovery",
+        "Older Geylang-fringe (Guillemard) location - rental tenant pool and resale sentiment can be patchy"
+      ],
+      "catalysts": [
+        "Freehold tenure (a livability plus, but not a forward-return edge)",
+        "Within MRT reach of Mountbatten/Aljunied; ~10-15min to CBD"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1615.07,
+        "beds": 1,
+        "sqft": 743
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Quirky 743 sqft freehold maisonette (not a true 1BR) in a tiny 45-unit D14 project; modest discount but very thin data and split-level layout limit liquidity.",
+        "rating_rationale": "The unit is mislabeled: at 743 sqft this is a Cosmo Maisonette (built-up 743-818 sqft), a split-level layout, not a flat 1BR. Maisonettes list at ~$1,700-1,750 PSF and a 710 sqft unit transacted at $1,830 PSF in Sep 2025, so the asking $1,615 PSF is genuinely a touch below comps - supporting the -10.3% age-adj direction. But every supporting signal is thin: appreciation_txns = 7 and psf_cohort_txns = 4 in a 45-unit development, so confidence in the discount being real (vs a quirky-layout discount) is low. Freehold is NOT a forward edge per v3.4. D14 is RCR-adjacent (mid forward region). Maisonettes have a narrower buyer pool and weaker exit liquidity. Modest value plus quirky, illiquid format and thin data nets to Neutral, low confidence.",
+        "red_flags": [
+          "743 sqft unit is a split-level maisonette, not a standard 1BR - narrow buyer pool, weaker exit",
+          "Only 45 units total; appreciation_txns = 7 and psf_cohort_txns = 4 - very thin price discovery",
+          "Older Geylang-fringe (Guillemard) location - rental tenant pool and resale sentiment can be patchy"
+        ],
+        "catalysts": [
+          "Freehold tenure (a livability plus, but not a forward-return edge)",
+          "Within MRT reach of Mountbatten/Aljunied; ~10-15min to CBD"
+        ],
+        "appreciation_assessment": "Trailing CAGR 3.77% rests on only 7 txns - essentially noise and given ~0 forward weight. The discount-vs-comps is the only real signal and it is small and thinly evidenced.",
+        "rental_assessment": "A 743 sqft maisonette near Aljunied/Mountbatten likely rents ~$3,300-3,800/mo, ~3.3-3.8% gross at $1.2M - acceptable but unexceptional; split-level units can be slightly harder to lease."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cosmo-60222142",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

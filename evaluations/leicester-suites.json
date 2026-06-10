@@ -1,0 +1,59 @@
+{
+  "condo": "Leicester Suites",
+  "slug": "leicester-suites",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 452sqft 1BR in D13 Potong Pasir at $899.9k / $1,991 PSF, with a solid ~4.9%/yr resale CAGR and excellent 360m MRT proximity. Sub-$900k entry and FH tenure are positives, but it is a niche shoebox in a boutique block with a very weak arena record.",
+      "rating_rationale": "Resale-only CAGR of 4.9%/yr is healthy and PSF ($1,991) is right at the URA median ($1,980), so it is fairly priced. But it is a 452sqft 1BR — the narrowest tenant/buyer pool — and the arena record is a dismal 55-251-9 (Elo 702), reflecting how shoeboxes underperform on liquidity and broad appeal. Good location and price hold it at Neutral rather than Avoid.",
+      "red_flags": [
+        "452sqft 1BR — niche unit, narrowest buyer/tenant pool",
+        "Very weak arena record (55-251-9, Elo 702)",
+        "Appreciation rate from only 10 transactions"
+      ],
+      "catalysts": [
+        "360m to Potong Pasir MRT (NE10) — strong commuter rental draw",
+        "Freehold and sub-$900k entry"
+      ],
+      "as_of": {
+        "price": 899900,
+        "psf": 1990.93,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 452sqft 1BR in D13 Potong Pasir at $899.9k / $1,991 PSF, with a solid ~4.9%/yr resale CAGR and excellent 360m MRT proximity. Sub-$900k entry and FH tenure are positives, but it is a niche shoebox in a boutique block with a very weak arena record.",
+        "rating": "Neutral",
+        "rating_rationale": "Resale-only CAGR of 4.9%/yr is healthy and PSF ($1,991) is right at the URA median ($1,980), so it is fairly priced. But it is a 452sqft 1BR — the narrowest tenant/buyer pool — and the arena record is a dismal 55-251-9 (Elo 702), reflecting how shoeboxes underperform on liquidity and broad appeal. Good location and price hold it at Neutral rather than Avoid.",
+        "red_flags": [
+          "452sqft 1BR — niche unit, narrowest buyer/tenant pool",
+          "Very weak arena record (55-251-9, Elo 702)",
+          "Appreciation rate from only 10 transactions"
+        ],
+        "catalysts": [
+          "360m to Potong Pasir MRT (NE10) — strong commuter rental draw",
+          "Freehold and sub-$900k entry"
+        ],
+        "rental_assessment": "Shoebox next to Potong Pasir MRT rents readily to singles/young professionals; yield on $900k entry is reasonable, but it is a thin, single-tenant-profile market.",
+        "appreciation_assessment": "4.9%/yr resale CAGR is respectable for D13 FH; thin 10-txn series means treat as indicative. Priced at median, so limited discount upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-leicester-suites-60089643",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

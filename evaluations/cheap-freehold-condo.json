@@ -1,0 +1,59 @@
+{
+  "condo": "Cheap Freehold condo",
+  "slug": "cheap-freehold-condo",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "This is a 2BR at The Arcady at Boon Keng (D12, FH, 172 units, TOP Dec 2028) — a small new-launch project — listed at $1.945M / a steep $2,869 PSF for just 678sqft. The 'Cheap Freehold condo' title is misleading: this is near-peak new-launch pricing in a small development, the opposite of cheap.",
+      "rating_rationale": "Confirmed as The Arcady at Boon Keng (KSH/SLB/Ho Lee, 172 units, FH, TOP 2028). $2,869 PSF is well above the project's ~$24xx launch average, so this resale/sub-sale ask is over-priced even for a new launch. Only 172 units = shallow liquidity; new-launch buyers pay a developer premium that compresses 5-7yr resale upside; and a $1.95M 2BR shoebox-ish 678sqft at near-$2,900 PSF is squarely the inflated entry the rubric says to avoid.",
+      "red_flags": [
+        "$2,869 PSF is above The Arcady's ~$24xx launch average — over-priced",
+        "Only 172 units — shallow liquidity and limited amenities",
+        "New-launch developer-premium pricing compresses 5-7yr resale upside; misleading 'cheap' title"
+      ],
+      "catalysts": [
+        "Freehold tenure near Boon Keng MRT (510m), city-fringe D12",
+        "1km to St Andrew's Junior / Hong Wen schools"
+      ],
+      "as_of": {
+        "price": 1945000,
+        "psf": 2868.73,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "This is a 2BR at The Arcady at Boon Keng (D12, FH, 172 units, TOP Dec 2028) — a small new-launch project — listed at $1.945M / a steep $2,869 PSF for just 678sqft. The 'Cheap Freehold condo' title is misleading: this is near-peak new-launch pricing in a small development, the opposite of cheap.",
+        "rating": "Avoid",
+        "rating_rationale": "Confirmed as The Arcady at Boon Keng (KSH/SLB/Ho Lee, 172 units, FH, TOP 2028). $2,869 PSF is well above the project's ~$24xx launch average, so this resale/sub-sale ask is over-priced even for a new launch. Only 172 units = shallow liquidity; new-launch buyers pay a developer premium that compresses 5-7yr resale upside; and a $1.95M 2BR shoebox-ish 678sqft at near-$2,900 PSF is squarely the inflated entry the rubric says to avoid.",
+        "red_flags": [
+          "$2,869 PSF is above The Arcady's ~$24xx launch average — over-priced",
+          "Only 172 units — shallow liquidity and limited amenities",
+          "New-launch developer-premium pricing compresses 5-7yr resale upside; misleading 'cheap' title"
+        ],
+        "catalysts": [
+          "Freehold tenure near Boon Keng MRT (510m), city-fringe D12",
+          "1km to St Andrew's Junior / Hong Wen schools"
+        ],
+        "rental_assessment": "City-fringe FH near Boon Keng MRT rents acceptably, but at $1.95M for 678sqft the gross yield is thin.",
+        "appreciation_assessment": "Buying at/above peak new-launch PSF in a 172-unit project leaves little room; expect flat-to-modest over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-freehold-condo-500144594",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

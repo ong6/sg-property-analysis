@@ -1,0 +1,61 @@
+{
+  "condo": "12 DUNMAN ROAD",
+  "slug": "12-dunman-road",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A $1.728M 1BR at Grand Dunman (12 Dunman Road), a 99LH mega-project in D15, asking a steep $2,434 psf for a 710 sqft one-bedder. The price is new-launch level for a niche unit type with weak yield and no appreciation track record yet.",
+      "rating_rationale": "$2,434 psf and a $1.728M ticket for a 1BR is very rich — that's larger-2BR money for the smallest, most rental-dependent unit type. No URA appreciation/txn data (built_year null, fallback dossier), weak Elo (814, 80-235 record) and score_1000 466. Exit pool for a $1.7M one-bedder is narrow; the development is fine but this stack/price is overpriced for investment.",
+      "red_flags": [
+        "$2,434 psf is steep new-launch pricing for a 1BR",
+        "$1.728M for a 1-bedder pushes well past the niche tenant/buyer pool",
+        "No URA appreciation or transaction data to support price; missing built_year"
+      ],
+      "catalysts": [
+        "Prime D15 East Coast location with deep overall buyer demand",
+        "Large well-amenitised development (Grand Dunman) near Dakota MRT and future supply"
+      ],
+      "as_of": {
+        "price": 1728000,
+        "psf": 2433.8,
+        "beds": 1,
+        "sqft": 710.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A $1.728M 1BR at Grand Dunman (12 Dunman Road), a 99LH mega-project in D15, asking a steep $2,434 psf for a 710 sqft one-bedder. The price is new-launch level for a niche unit type with weak yield and no appreciation track record yet.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,434 psf and a $1.728M ticket for a 1BR is very rich — that's larger-2BR money for the smallest, most rental-dependent unit type. No URA appreciation/txn data (built_year null, fallback dossier), weak Elo (814, 80-235 record) and score_1000 466. Exit pool for a $1.7M one-bedder is narrow; the development is fine but this stack/price is overpriced for investment.",
+        "red_flags": [
+          "$2,434 psf is steep new-launch pricing for a 1BR",
+          "$1.728M for a 1-bedder pushes well past the niche tenant/buyer pool",
+          "No URA appreciation or transaction data to support price; missing built_year"
+        ],
+        "catalysts": [
+          "Prime D15 East Coast location with deep overall buyer demand",
+          "Large well-amenitised development (Grand Dunman) near Dakota MRT and future supply"
+        ],
+        "rental_assessment": "D15 1BR rents are healthy, but at $2,434 psf the gross yield is thin (~3% or below) and the unit competes with abundant new 1BR supply in the precinct.",
+        "appreciation_assessment": "No resale history; entry at full new-launch PSF leaves limited margin for appreciation, and 1BR units typically lag the family-sized stacks in capital growth.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "RCR baseline discounted for 1BR niche entering at full new-launch PSF; no project resale data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-12-dunman-road-500145342",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Cheap, Freehold 1br @ Pasir Panjang Rd! High Rental Yield!",
+  "slug": "cheap-freehold-1br-pasir-panjang-rd-high-rental-yield",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 495 sqft freehold 1BR at $828k right at Pasir Panjang MRT (30m), pitched on rental yield. Low quantum and freehold tenure are attractive, but the dossier carries zero URA appreciation/transaction data, so the appreciation case is unverified.",
+      "rating_rationale": "Strong points: freehold, low $828k quantum (broad affordability), and a 30m walk to Pasir Panjang MRT (CCL) with One-North/Mapletree Business City and NUS rental demand nearby supporting yield. But the dossier has no URA appreciation rate, no txn count and no median PSF — the appreciation thesis is entirely unverified, and small shoebox 1BRs face a narrow resale pool and shoebox PSF that lags larger formats. The high score_1000 (731) is yield-driven, not appreciation-proven. The generic clickbait listing title also reduces confidence in the framing.",
+      "red_flags": [
+        "No URA appreciation/transaction data — appreciation unverified",
+        "Shoebox 495 sqft 1BR — narrow resale buyer pool, capital growth typically lags",
+        "Listing title is generic marketing; project not identifiable from dossier"
+      ],
+      "catalysts": [
+        "Freehold at a low $828k quantum",
+        "30m to Pasir Panjang MRT (Circle Line)",
+        "One-North / MBC / NUS tenant catchment supports rental yield"
+      ],
+      "as_of": {
+        "price": 828000,
+        "psf": 1672.73,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 495 sqft freehold 1BR at $828k right at Pasir Panjang MRT (30m), pitched on rental yield. Low quantum and freehold tenure are attractive, but the dossier carries zero URA appreciation/transaction data, so the appreciation case is unverified.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong points: freehold, low $828k quantum (broad affordability), and a 30m walk to Pasir Panjang MRT (CCL) with One-North/Mapletree Business City and NUS rental demand nearby supporting yield. But the dossier has no URA appreciation rate, no txn count and no median PSF — the appreciation thesis is entirely unverified, and small shoebox 1BRs face a narrow resale pool and shoebox PSF that lags larger formats. The high score_1000 (731) is yield-driven, not appreciation-proven. The generic clickbait listing title also reduces confidence in the framing.",
+        "red_flags": [
+          "No URA appreciation/transaction data — appreciation unverified",
+          "Shoebox 495 sqft 1BR — narrow resale buyer pool, capital growth typically lags",
+          "Listing title is generic marketing; project not identifiable from dossier"
+        ],
+        "catalysts": [
+          "Freehold at a low $828k quantum",
+          "30m to Pasir Panjang MRT (Circle Line)",
+          "One-North / MBC / NUS tenant catchment supports rental yield"
+        ],
+        "rental_assessment": "Genuine rental strength: MRT-at-doorstep plus One-North/NUS catchment gives a deep single-tenant/expat pool; gross yield likely 4%+ at this quantum, the main reason to hold.",
+        "appreciation_assessment": "Unverifiable from the dossier (no URA data). Freehold + MRT-adjacency is a structural support, but shoebox capital growth historically trails the broader market; treat appreciation as a yield-play, not a growth-play.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-freehold-1br-pasir-panjang-rd-high-rental-yield-500148015",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

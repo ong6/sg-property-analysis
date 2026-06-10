@@ -1,0 +1,117 @@
+{
+  "condo": "Kingsford Hillview Peak",
+  "slug": "kingsford-hillview-peak",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,086sqft unit (far too large for a 1BR — likely a mislabelled 2BR) at $1.15M / $1,059 PSF in D23 Hillview, in a development with a documented poor track record. The score_1000 of 838 is unreliable here because all URA appreciation/txn data is missing.",
+      "rating_rationale": "Web research confirms Kingsford Hillview Peak has well-documented construction defects (seepage, busted pipes), the developer was fined $130,000 for repeated safety lapses with construction suspended, and resale has been poor — roughly as many unprofitable as profitable transactions and little appreciation since launch despite a market-wide uplift. Kingsford's broader reputation (Normanton Park sales ban) compounds the developer-risk. With no URA data to anchor and a 1,086sqft 'beds:1' likely a misclassification, the high algo score should be disregarded.",
+      "red_flags": [
+        "Documented construction defects — seepage, burst pipes, poor finishing",
+        "Developer fined $130k for safety lapses; construction was suspended",
+        "Many unprofitable resale transactions; flat/loss appreciation since launch",
+        "Bedroom/sqft mismatch (1,086sqft labelled 1BR) and all URA data missing",
+        "Kingsford developer reputation risk (Normanton Park sales ban)"
+      ],
+      "catalysts": [
+        "Hillview DTL connectivity and HillV2/rail-mall amenity",
+        "Greenery/nature (Bukit Batok Nature Park, Rail Corridor) appeal"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1058.93,
+        "beds": 1,
+        "sqft": 1086.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,086sqft unit (far too large for a 1BR — likely a mislabelled 2BR) at $1.15M / $1,059 PSF in D23 Hillview, in a development with a documented poor track record. The score_1000 of 838 is unreliable here because all URA appreciation/txn data is missing.",
+        "rating": "Avoid",
+        "rating_rationale": "Web research confirms Kingsford Hillview Peak has well-documented construction defects (seepage, busted pipes), the developer was fined $130,000 for repeated safety lapses with construction suspended, and resale has been poor — roughly as many unprofitable as profitable transactions and little appreciation since launch despite a market-wide uplift. Kingsford's broader reputation (Normanton Park sales ban) compounds the developer-risk. With no URA data to anchor and a 1,086sqft 'beds:1' likely a misclassification, the high algo score should be disregarded.",
+        "red_flags": [
+          "Documented construction defects — seepage, burst pipes, poor finishing",
+          "Developer fined $130k for safety lapses; construction was suspended",
+          "Many unprofitable resale transactions; flat/loss appreciation since launch",
+          "Bedroom/sqft mismatch (1,086sqft labelled 1BR) and all URA data missing",
+          "Kingsford developer reputation risk (Normanton Park sales ban)"
+        ],
+        "catalysts": [
+          "Hillview DTL connectivity and HillV2/rail-mall amenity",
+          "Greenery/nature (Bukit Batok Nature Park, Rail Corridor) appeal"
+        ],
+        "rental_assessment": "DTL access supports some tenant demand, but defect stigma and developer reputation weigh on both rent and resale.",
+        "appreciation_assessment": "Documented loss-making resale and flat pricing since launch; not a credible appreciation play.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kingsford-hillview-peak-24886289",
+        "review_file": "cov_batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "The headline -33% cheapness is a data quirk, not a bargain: a 1086 sqft '1-bedroom' at $1,059 PSF contradicts the project's real $1,367-$1,600 PSF range and is almost certainly a mis-scrape, compounded by Kingsford's documented build-defect and BCA-fine history.",
+      "rating_rationale": "Asking $1,059 PSF vs verified project transactions of $1,367-$1,600 PSF (median ~$1,389 over 192 txns, last-12-mo avg ~$1,490). A 1086 sqft unit labelled '1 bedroom' is inconsistent with the project's typical 517-850 sqft layouts, and the dossier itself flags both very_low_psf and bedroom_sqft_mismatch. The -33% age-adj and -32.4% cohort premium therefore reflect a sqft/config mis-scrape, not real value (psf_cohort_txns=5). Developer Kingsford has a poor reputation: $130k fine for repeated construction safety lapses, BCA inspection failure delaying handover, and documented post-completion defects (seepage, cracked marble, parquet, broken panes, poor sound isolation); multiple owners report 5-yr holding losses. Even if a buyer normalised the price, the quality and resale-overhang risks dominate. Bukit Batok/Hillview (D23, OCR) region is fine per v3.4 priors, but that cannot rescue this name.",
+      "red_flags": [
+        "1086 sqft '1BR' at $1,059 PSF is a likely mis-scrape; real transactions are $1,367-$1,600 PSF",
+        "Both algo flags (very_low_psf, bedroom_sqft_mismatch) confirmed as data quirks, not value",
+        "Kingsford fined $130k for construction safety lapses; failed BCA inspection; chronic post-handover defects",
+        "Documented 5-year holding losses for owners; resale overhang from reputation"
+      ],
+      "catalysts": [
+        "Hillview MRT (DTL) within the estate aids rentability",
+        "OCR/D23 region carries the strongest realized forward-return prior (but not enough to offset quality/data risk)"
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1058.93,
+        "beds": 1,
+        "sqft": 1086
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "high",
+        "summary": "The headline -33% cheapness is a data quirk, not a bargain: a 1086 sqft '1-bedroom' at $1,059 PSF contradicts the project's real $1,367-$1,600 PSF range and is almost certainly a mis-scrape, compounded by Kingsford's documented build-defect and BCA-fine history.",
+        "rating_rationale": "Asking $1,059 PSF vs verified project transactions of $1,367-$1,600 PSF (median ~$1,389 over 192 txns, last-12-mo avg ~$1,490). A 1086 sqft unit labelled '1 bedroom' is inconsistent with the project's typical 517-850 sqft layouts, and the dossier itself flags both very_low_psf and bedroom_sqft_mismatch. The -33% age-adj and -32.4% cohort premium therefore reflect a sqft/config mis-scrape, not real value (psf_cohort_txns=5). Developer Kingsford has a poor reputation: $130k fine for repeated construction safety lapses, BCA inspection failure delaying handover, and documented post-completion defects (seepage, cracked marble, parquet, broken panes, poor sound isolation); multiple owners report 5-yr holding losses. Even if a buyer normalised the price, the quality and resale-overhang risks dominate. Bukit Batok/Hillview (D23, OCR) region is fine per v3.4 priors, but that cannot rescue this name.",
+        "red_flags": [
+          "1086 sqft '1BR' at $1,059 PSF is a likely mis-scrape; real transactions are $1,367-$1,600 PSF",
+          "Both algo flags (very_low_psf, bedroom_sqft_mismatch) confirmed as data quirks, not value",
+          "Kingsford fined $130k for construction safety lapses; failed BCA inspection; chronic post-handover defects",
+          "Documented 5-year holding losses for owners; resale overhang from reputation"
+        ],
+        "catalysts": [
+          "Hillview MRT (DTL) within the estate aids rentability",
+          "OCR/D23 region carries the strongest realized forward-return prior (but not enough to offset quality/data risk)"
+        ],
+        "appreciation_assessment": "2.27% trailing CAGR; reputation-driven discount and defect history argue against above-market appreciation regardless of the unreliable cheapness signal.",
+        "rental_assessment": "Hillview MRT and Bukit Batok demand support leasing, but build-quality defects and possible sqft mislabel make the listing itself untrustworthy."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kingsford-hillview-peak-24886289",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

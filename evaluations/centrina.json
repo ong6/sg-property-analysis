@@ -1,0 +1,63 @@
+{
+  "condo": "Centrina",
+  "slug": "centrina",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 700 sqft freehold 2BR in D15 (Eunos/Geylang fringe) at $1571 PSF / $1.1M, 640m from Eunos MRT. The asking is ~18% ABOVE the thin $1327 URA median, but that median rests on only 3 transactions, so the comparison is unreliable.",
+      "rating_rationale": "Freehold 2BR in D15 at a deep-liquidity sub-$1.1M quantum with a workable 700 sqft layout is structurally attractive. But the only value anchor — a $1327 median on just 3 txns — is too thin to trust, and at face value the asking sits ~18% above it. No reliable appreciation series exists. The sound quantum/format and freehold tenure balance against the unverifiable value picture — Neutral pending current comparable transactions.",
+      "red_flags": [
+        "Only 3 URA transactions — median PSF ($1327) and any rate are unreliable",
+        "Asking ~18% above the (thin) median at face value",
+        "640m to Eunos on the Geylang-fringe side of D15 — location is decent but not premium East Coast",
+        "2011 build — 15 years old"
+      ],
+      "catalysts": [
+        "Freehold 2BR at a sub-$1.1M deep-liquidity quantum",
+        "D15 East-side appeal with EW7 Eunos MRT access",
+        "2BR is the widest tenant/buyer pool"
+      ],
+      "as_of": {
+        "price": 1099999,
+        "psf": 1571.43,
+        "beds": 2,
+        "sqft": 700.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 700 sqft freehold 2BR in D15 (Eunos/Geylang fringe) at $1571 PSF / $1.1M, 640m from Eunos MRT. The asking is ~18% ABOVE the thin $1327 URA median, but that median rests on only 3 transactions, so the comparison is unreliable.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold 2BR in D15 at a deep-liquidity sub-$1.1M quantum with a workable 700 sqft layout is structurally attractive. But the only value anchor — a $1327 median on just 3 txns — is too thin to trust, and at face value the asking sits ~18% above it. No reliable appreciation series exists. The sound quantum/format and freehold tenure balance against the unverifiable value picture — Neutral pending current comparable transactions.",
+        "red_flags": [
+          "Only 3 URA transactions — median PSF ($1327) and any rate are unreliable",
+          "Asking ~18% above the (thin) median at face value",
+          "640m to Eunos on the Geylang-fringe side of D15 — location is decent but not premium East Coast",
+          "2011 build — 15 years old"
+        ],
+        "catalysts": [
+          "Freehold 2BR at a sub-$1.1M deep-liquidity quantum",
+          "D15 East-side appeal with EW7 Eunos MRT access",
+          "2BR is the widest tenant/buyer pool"
+        ],
+        "rental_assessment": "A freehold 2BR near Eunos rents steadily to couples and sharers commuting to the CBD; expect a typical ~3.5% gross yield with a broad tenant base.",
+        "appreciation_assessment": "No reliable URA series (3 txns); cannot underwrite a rate. Freehold D15 baseline applies, but verify against fresh comparables before assuming the asking is fair.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centrina-25188826",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Grand Dunman",
+  "slug": "grand-dunman",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 581 sqft 1BR at $1.456M in Grand Dunman, a 1,008-unit mega-development 200m from Dakota MRT (CCL), TOP 2028. $2,506 PSF is roughly in line with the $2,458 URA project median (~+2%), and the huge unit count gives strong liquidity, though it is a leasehold new launch with forward pricing.",
+      "rating_rationale": "Strong fundamentals on liquidity and location: 200m to Dakota MRT (Circle Line), one of the largest new developments in D15 (911 txns logged, very deep pool), prime East Coast/Dakota positioning, and a manageable $1.456M 1BR quantum. But $2,506 PSF prices it slightly ABOVE the project median ($2,458, ~+2%) rather than at a discount, and the rate carries new-launch bias with no resale basis. A 581 sqft 1BR in a 1,000+ unit project also faces heavy same-project rental/resale competition at TOP. Good asset, but bought at-or-above median with no margin of safety.",
+      "red_flags": [
+        "$2,506 PSF is ~2% above the project URA median — no entry discount",
+        "1BR in a 1,000+ unit project faces intense intra-project rental/resale competition at TOP 2028",
+        "New-launch forward pricing (has_new_launch_bias true); capital locked until 2028"
+      ],
+      "catalysts": [
+        "200m to Dakota MRT (Circle Line) — premier transit adjacency",
+        "Mega-development scale (~1,008 units) = strong long-run liquidity",
+        "Prime D15 Dakota/East Coast location with deep owner-occupier and tenant demand"
+      ],
+      "as_of": {
+        "price": 1456000,
+        "psf": 2506.02,
+        "beds": 1,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 581 sqft 1BR at $1.456M in Grand Dunman, a 1,008-unit mega-development 200m from Dakota MRT (CCL), TOP 2028. $2,506 PSF is roughly in line with the $2,458 URA project median (~+2%), and the huge unit count gives strong liquidity, though it is a leasehold new launch with forward pricing.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong fundamentals on liquidity and location: 200m to Dakota MRT (Circle Line), one of the largest new developments in D15 (911 txns logged, very deep pool), prime East Coast/Dakota positioning, and a manageable $1.456M 1BR quantum. But $2,506 PSF prices it slightly ABOVE the project median ($2,458, ~+2%) rather than at a discount, and the rate carries new-launch bias with no resale basis. A 581 sqft 1BR in a 1,000+ unit project also faces heavy same-project rental/resale competition at TOP. Good asset, but bought at-or-above median with no margin of safety.",
+        "red_flags": [
+          "$2,506 PSF is ~2% above the project URA median — no entry discount",
+          "1BR in a 1,000+ unit project faces intense intra-project rental/resale competition at TOP 2028",
+          "New-launch forward pricing (has_new_launch_bias true); capital locked until 2028"
+        ],
+        "catalysts": [
+          "200m to Dakota MRT (Circle Line) — premier transit adjacency",
+          "Mega-development scale (~1,008 units) = strong long-run liquidity",
+          "Prime D15 Dakota/East Coast location with deep owner-occupier and tenant demand"
+        ],
+        "rental_assessment": "Strong demand corridor, but 1,000+ units releasing simultaneously risks rental compression at TOP; yield ~3%.",
+        "appreciation_assessment": "Location is best-in-class for leasehold D15, but buying at/above median on new-launch pricing leaves little near-term upside; expect market-rate growth, not outperformance.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grand-dunman-60189754",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

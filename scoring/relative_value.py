@@ -26,10 +26,15 @@ from statistics import median
 from typing import Any, Optional
 
 try:
-    from config import AGE_PSF_SLOPE_BY_REGION, FREEHOLD_SLOPE_FACTOR
+    from config import AGE_PSF_SLOPE_BY_REGION, FREEHOLD_SLOPE_FACTOR, MIN_BAND_TXNS, size_band_key
 except ImportError:
-    AGE_PSF_SLOPE_BY_REGION = {"CCR": 60.0, "RCR": 50.0, "OCR": 40.0}
+    # Fallbacks mirror config.py (v3.4 hedonic-calibrated ~1.6%/yr; sync if config changes).
+    AGE_PSF_SLOPE_BY_REGION = {"CCR": 34.0, "RCR": 27.0, "OCR": 23.0}
     FREEHOLD_SLOPE_FACTOR = 0.6
+    MIN_BAND_TXNS = 5
+
+    def size_band_key(sqft):
+        return None
 
 # Lease start (land acquisition) precedes TOP by ~3 years — same offset the
 # lease calculators use.
@@ -70,8 +75,16 @@ def compute_relative_value(
     tenure: Optional[str],
     ura_data: dict,
     current_year: int,
+    subject_sqft: Optional[float] = None,
 ) -> Optional[dict[str, Any]]:
     """Age-adjusted relative value of a subject unit vs its district peers.
+
+    v3.4 size-aware: when `subject_sqft` is given, each peer is compared on its
+    SAME-SIZE-BAND median PSF (a 1BR vs other small units), not its size-mixed
+    project median — so a small unit no longer reads as artificially "cheap"
+    against a district median dominated by larger formats. Peers without a deep
+    enough same-band cohort fall back to their pooled median; `band_peer_count`
+    reports how many peers were true like-for-like.
 
     Returns None when inputs or peer coverage are insufficient (missing data
     is neutral — the caller must not penalize a None).
@@ -84,15 +97,29 @@ def compute_relative_value(
         district = f"D{int(district):02d}" if district.isdigit() else district
     region = _region_for_district(district)
     subject_slope = _slope_for(region, tenure)
+    band = size_band_key(subject_sqft) if subject_sqft else None
 
     # --- Collect peers: same district, with transacted PSF and derivable age ---
     peers = []
+    band_used = 0
     for entry in ura_data.values():
         if not isinstance(entry, dict) or entry.get("district") != district:
             continue
-        psf = entry.get("median_psf") or entry.get("avg_psf_current")
         lease_start = entry.get("lease_start_year")
-        if not psf or psf <= 0 or not lease_start:
+        if not lease_start:
+            continue
+        # Size-aware: prefer the peer's same-size-band median; fall back to pooled.
+        psf = None
+        used_band = False
+        if band:
+            bands = (entry.get("by_size") or {}).get("bands") or {}
+            b = bands.get(band)
+            if b and (b.get("txn_count") or 0) >= MIN_BAND_TXNS and b.get("median_psf"):
+                psf = b["median_psf"]
+                used_band = True
+        if psf is None:
+            psf = entry.get("median_psf") or entry.get("avg_psf_current")
+        if not psf or psf <= 0:
             continue
         peer_age = current_year - (lease_start + _LEASE_TO_TOP_OFFSET)
         if peer_age < 0:
@@ -107,6 +134,8 @@ def compute_relative_value(
         adjusted_psf = psf - peer_slope * age_gap
         if adjusted_psf <= 0:
             continue
+        if used_band:
+            band_used += 1
         peers.append({
             "name": entry.get("project_name"),
             "raw_psf": psf,
@@ -120,6 +149,7 @@ def compute_relative_value(
 
     adjusted_median = median(p["adjusted_psf"] for p in peers)
     premium_pct = (subject_psf / adjusted_median - 1) * 100
+    basis = (f"size_band:{band}" if band and band_used else "pooled")
 
     result: dict[str, Any] = {
         "district": district,
@@ -127,14 +157,18 @@ def compute_relative_value(
         "subject_psf": round(subject_psf),
         "subject_age_years": round(subject_age, 1),
         "peer_count": len(peers),
+        "band_peer_count": band_used,
+        "comparison_basis": basis,
         "age_adjusted_district_median_psf": round(adjusted_median),
         "premium_vs_age_adjusted_median_pct": round(premium_pct, 1),
         "psf_age_slope_per_year": round(subject_slope, 1),
         "note": (
             "Peers' transacted PSF normalized to the subject's age at "
             f"~${subject_slope:.0f}/psf/yr ({region}"
-            f"{', freehold-adjusted' if tenure and 'freehold' in tenure.lower() else ''}). "
-            "Negative premium = cheap for its age. Slope is a heuristic — verify."
+            f"{', freehold-adjusted' if tenure and 'freehold' in tenure.lower() else ''})"
+            + (f", same-size band {band} for {band_used}/{len(peers)} peers" if band and band_used
+               else ", project-pooled (size-mixed)")
+            + ". Negative premium = cheap for its age. Slope is a heuristic — verify."
         ),
     }
 
@@ -167,4 +201,5 @@ def relative_value_for_listing(scored: Any, ura_data: dict, current_year: int) -
         tenure=scored.tenure,
         ura_data=ura_data,
         current_year=current_year,
+        subject_sqft=scored.sqft,
     )

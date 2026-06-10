@@ -1,0 +1,61 @@
+{
+  "condo": "The Infiniti",
+  "slug": "the-infiniti",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Freehold 1,367 sqft 4BR in West Coast (D05) at $1,778 PSF, just above the $1,724 URA median, with a solid 6.56% appreciation over 47 txns. Freehold tenure plus a One-North/NUS catchment is appealing, but $2.43M for a 4BR is a thinner buyer band and the listing reports no nearby MRT.",
+      "rating_rationale": "Freehold, 6.56% URA CAGR on a credible 47 txns, and D05 benefits from One-North/NUS and the wider West Coast growth corridor. PSF $1,778 is only ~3% over the $1,724 median (fair). The 4BR $2.43M quantum narrows liquidity and the absent MRT field signals it isn't walk-up to a station.",
+      "red_flags": [
+        "$2.43M 4BR is a thinner buyer pool",
+        "No nearby MRT listed",
+        "Older 2008 build (though freehold offsets lease concern)"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "One-North tech hub / NUS tenant and buyer catchment",
+        "6.56% appreciation over 47 txns"
+      ],
+      "as_of": {
+        "price": 2431143,
+        "psf": 1778.45,
+        "beds": 4,
+        "sqft": 1367.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1,367 sqft 4BR in West Coast (D05) at $1,778 PSF, just above the $1,724 URA median, with a solid 6.56% appreciation over 47 txns. Freehold tenure plus a One-North/NUS catchment is appealing, but $2.43M for a 4BR is a thinner buyer band and the listing reports no nearby MRT.",
+        "rating": "Buy",
+        "rating_rationale": "Freehold, 6.56% URA CAGR on a credible 47 txns, and D05 benefits from One-North/NUS and the wider West Coast growth corridor. PSF $1,778 is only ~3% over the $1,724 median (fair). The 4BR $2.43M quantum narrows liquidity and the absent MRT field signals it isn't walk-up to a station.",
+        "red_flags": [
+          "$2.43M 4BR is a thinner buyer pool",
+          "No nearby MRT listed",
+          "Older 2008 build (though freehold offsets lease concern)"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "One-North tech hub / NUS tenant and buyer catchment",
+          "6.56% appreciation over 47 txns"
+        ],
+        "rental_assessment": "West Coast 4BR draws NUS/one-north families and academics; freehold large unit rents steadily though yield is modest at $2.43M.",
+        "appreciation_assessment": "6.56% resale CAGR over 47 txns is credible and above the OCR baseline; freehold West Coast supported by One-North should sustain solid growth.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-infiniti-500149912",
+        "review_file": "cov_batch_08.json"
+      }
+    }
+  ]
+}

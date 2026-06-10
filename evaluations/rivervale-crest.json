@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-25282406",
         "review_file": "batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Not actually cheap: $1,111 psf is ABOVE the project's 12mo avg ($1,057), on a 2002/2003 unit with ~76yrs lease left near an LRT (not MRT). The 'cheap' signal is a leasehold-decay/thin-data artifact.",
+      "rating_rationale": "The dossier's -23.1% age-adj reads as a bargain, but it's a leasehold-decay artifact: this unit is from 2002/2003 (~23-24yrs old, ~76yrs lease left) and the 'very_old_property' + 'very_low_psf' flags fired. Web shows 12mo transactions of $953-$1,112 psf (avg $1,057), so the asking $1,111 psf is at the TOP of recent range — and psf_premium_vs_cohort is +6.2% on just 3 cohort txns. So it is not cheap vs real comparables; the model's value signal is corrupted by age-adjustment and thin data. Location is Sengkang OCR near Rumbia LRT (not MRT) — modest connectivity. OCR is the better forward region per v3.4, but that doesn't rescue a unit priced above its own recent comps with a decaying lease and no catalyst. Avoid for a 5-7yr hold.",
+      "red_flags": [
+        "$1,111 psf is above the 12mo project avg ($1,057) — not cheap vs real comps",
+        "Built 2002/2003 — ~76yrs lease left, accelerating decay",
+        "psf_premium +6.2% on only 3 cohort txns — thin, unreliable",
+        "Rumbia LRT only (no direct MRT) — limited connectivity"
+      ],
+      "catalysts": [
+        "D19 OCR — favorable forward region in v3.4 priors (but insufficient alone)",
+        "Behind Rivervale Mall — daily amenities at the doorstep"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1111.11,
+        "beds": 2,
+        "sqft": 990
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Not actually cheap: $1,111 psf is ABOVE the project's 12mo avg ($1,057), on a 2002/2003 unit with ~76yrs lease left near an LRT (not MRT). The 'cheap' signal is a leasehold-decay/thin-data artifact.",
+        "rating_rationale": "The dossier's -23.1% age-adj reads as a bargain, but it's a leasehold-decay artifact: this unit is from 2002/2003 (~23-24yrs old, ~76yrs lease left) and the 'very_old_property' + 'very_low_psf' flags fired. Web shows 12mo transactions of $953-$1,112 psf (avg $1,057), so the asking $1,111 psf is at the TOP of recent range — and psf_premium_vs_cohort is +6.2% on just 3 cohort txns. So it is not cheap vs real comparables; the model's value signal is corrupted by age-adjustment and thin data. Location is Sengkang OCR near Rumbia LRT (not MRT) — modest connectivity. OCR is the better forward region per v3.4, but that doesn't rescue a unit priced above its own recent comps with a decaying lease and no catalyst. Avoid for a 5-7yr hold.",
+        "appreciation_assessment": "6.23% reported CAGR (93 txns) is real history but ~0 forward power; the unit's lease decay is a structural headwind that trailing CAGR understates.",
+        "rental_assessment": "990 sqft 2BR in Sengkang rents to family/HDB-upgrader tenants; yield is mediocre at ~$1.1M entry and the LRT-only access caps tenant appeal vs MRT-adjacent stock.",
+        "red_flags": [
+          "$1,111 psf is above the 12mo project avg ($1,057) — not cheap vs real comps",
+          "Built 2002/2003 — ~76yrs lease left, accelerating decay",
+          "psf_premium +6.2% on only 3 cohort txns — thin, unreliable",
+          "Rumbia LRT only (no direct MRT) — limited connectivity"
+        ],
+        "catalysts": [
+          "D19 OCR — favorable forward region in v3.4 priors (but insufficient alone)",
+          "Behind Rivervale Mall — daily amenities at the doorstep"
+        ]
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-25282406",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

@@ -1,0 +1,63 @@
+{
+  "condo": "CityLife @ Tampines",
+  "slug": "citylife-tampines",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2788 sqft penthouse-class unit in CityLife @ Tampines — a 99yr Executive Condominium (TOP 2016) — at $3.2M / $1148 PSF. The low PSF is purely a function of huge size; at $3.2M absolute this is one of the priciest OCR units around, with a very thin resale pool, and EC penthouses in Tampines rarely command $3M-plus on exit.",
+      "rating_rationale": "$3.2M for an OCR (D18 Tampines) EC unit pushes far above the liquid band — buyers at that level overwhelmingly choose RCR/CCR, not a 10-year-old Tampines EC penthouse. The cheap $1148 PSF masks a $3.2M absolute price set by 2788 sqft. Recent CityLife resales average ~$1522 PSF for normal units; a $3.2M penthouse is an outlier with few comparable buyers, so exit risk is the dominant factor. 590m to Tampines MRT and the Tampines Regional Centre/CRL are genuine pluses, but they don't offset a $3.2M illiquid penthouse over a 5-7yr investment hold.",
+      "red_flags": [
+        "$3.2M absolute is far above the OCR liquid band — very shallow buyer pool",
+        "Penthouse/oversized unit — niche, hard to resell at this price",
+        "EC re-sale ceiling in Tampines well below $3M for typical units",
+        "No URA appreciation/txn data; low PSF is just size, not value"
+      ],
+      "catalysts": [
+        "590m to Tampines MRT (DTL/EWL interchange)",
+        "Tampines Regional Centre + Cross Island Line",
+        "Privatised EC status (post-10yr) opens to all buyers including PRs"
+      ],
+      "as_of": {
+        "price": 3200000,
+        "psf": 1147.78,
+        "beds": 4,
+        "sqft": 2788.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2788 sqft penthouse-class unit in CityLife @ Tampines — a 99yr Executive Condominium (TOP 2016) — at $3.2M / $1148 PSF. The low PSF is purely a function of huge size; at $3.2M absolute this is one of the priciest OCR units around, with a very thin resale pool, and EC penthouses in Tampines rarely command $3M-plus on exit.",
+        "rating": "Avoid",
+        "rating_rationale": "$3.2M for an OCR (D18 Tampines) EC unit pushes far above the liquid band — buyers at that level overwhelmingly choose RCR/CCR, not a 10-year-old Tampines EC penthouse. The cheap $1148 PSF masks a $3.2M absolute price set by 2788 sqft. Recent CityLife resales average ~$1522 PSF for normal units; a $3.2M penthouse is an outlier with few comparable buyers, so exit risk is the dominant factor. 590m to Tampines MRT and the Tampines Regional Centre/CRL are genuine pluses, but they don't offset a $3.2M illiquid penthouse over a 5-7yr investment hold.",
+        "red_flags": [
+          "$3.2M absolute is far above the OCR liquid band — very shallow buyer pool",
+          "Penthouse/oversized unit — niche, hard to resell at this price",
+          "EC re-sale ceiling in Tampines well below $3M for typical units",
+          "No URA appreciation/txn data; low PSF is just size, not value"
+        ],
+        "catalysts": [
+          "590m to Tampines MRT (DTL/EWL interchange)",
+          "Tampines Regional Centre + Cross Island Line",
+          "Privatised EC status (post-10yr) opens to all buyers including PRs"
+        ],
+        "rental_assessment": "A 2788 sqft unit is family-let only with a tiny tenant pool in Tampines; gross yield on a $3.2M outlay is poor, well under what a 2-3BR would return.",
+        "appreciation_assessment": "Capped by the absolute price ceiling — Tampines EC penthouses face a thin buyer pool at $3M+, so appreciation is constrained by exit liquidity more than by the district trend. No URA data to suggest otherwise.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-citylife-tampines-60213180",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

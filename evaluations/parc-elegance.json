@@ -1,0 +1,119 @@
+{
+  "condo": "Parc Elegance",
+  "slug": "parc-elegance",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold unit at Parc Elegance, D15 Kembangan (770m to EW6), listed as 1BR but 786sqft at $1,272 PSF — almost certainly a 1BR+study or compact 2BR, not a true shoebox. Sub-$1M freehold entry at well below the $1,604 URA median; the top score (886) is real value, though the 43-txn appreciation series is moderate.",
+      "rating_rationale": "$999,999 freehold in established D15 with PSF ($1,272) ~21% below the $1,604 URA median is a standout entry — even allowing that the 786sqft '1BR' is really a 1BR+study/small 2BR, the absolute ticket stays in the deepest liquidity band. 770m to Kembangan MRT, freehold tenure, 2013-built. The 3.88%/yr appreciation (43 txns) is moderate and reliable enough. Boutique scale is the main liquidity caveat. Genuinely good risk-adjusted value.",
+      "red_flags": [
+        "Bedroom label likely understated — 786sqft is large for '1BR' (verify it's 1+study/2BR)",
+        "Boutique development — thinner resale liquidity",
+        "Moderate 3.88%/yr appreciation on a 43-txn series"
+      ],
+      "catalysts": [
+        "Freehold sub-$1M entry, ~21% below URA median PSF",
+        "770m to Kembangan EW MRT, established D15",
+        "Versatile 786sqft layout broadens buyer/tenant appeal"
+      ],
+      "as_of": {
+        "price": 999999,
+        "psf": 1272.26,
+        "beds": 1,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold unit at Parc Elegance, D15 Kembangan (770m to EW6), listed as 1BR but 786sqft at $1,272 PSF — almost certainly a 1BR+study or compact 2BR, not a true shoebox. Sub-$1M freehold entry at well below the $1,604 URA median; the top score (886) is real value, though the 43-txn appreciation series is moderate.",
+        "rating": "Buy",
+        "rating_rationale": "$999,999 freehold in established D15 with PSF ($1,272) ~21% below the $1,604 URA median is a standout entry — even allowing that the 786sqft '1BR' is really a 1BR+study/small 2BR, the absolute ticket stays in the deepest liquidity band. 770m to Kembangan MRT, freehold tenure, 2013-built. The 3.88%/yr appreciation (43 txns) is moderate and reliable enough. Boutique scale is the main liquidity caveat. Genuinely good risk-adjusted value.",
+        "red_flags": [
+          "Bedroom label likely understated — 786sqft is large for '1BR' (verify it's 1+study/2BR)",
+          "Boutique development — thinner resale liquidity",
+          "Moderate 3.88%/yr appreciation on a 43-txn series"
+        ],
+        "catalysts": [
+          "Freehold sub-$1M entry, ~21% below URA median PSF",
+          "770m to Kembangan EW MRT, established D15",
+          "Versatile 786sqft layout broadens buyer/tenant appeal"
+        ],
+        "rental_assessment": "A 786sqft freehold near Kembangan MRT rents well to couples/small families; better tenant flexibility than a true shoebox.",
+        "appreciation_assessment": "Reliable ~3.9%/yr; below-median entry plus freehold provide a margin of safety.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.9,
+        "appreciation_rate_source": "URA 43-txn resale series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-elegance-500061461",
+        "review_file": "cov_batch_06.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline 'cheap freehold' signal rests on a zero-transaction cohort and a size-class mismatch. Once compared to the right (2-BR-sized) comps, the discount mostly evaporates. Honest Neutral.",
+      "rating_rationale": "psf_cohort_txns=0 means the -24.9% cohort premium has literally no same-size comparable behind it — exactly the v3.4 data-quirk pattern to be skeptical of. The 786 sqft unit is labelled 1-BR but is a 2-BR footprint, and the project's 2-BR median is ~$1,090 psf while only the tiny 398 sqft units fetch $1,400-$1,722 psf. So at $1,272 psf the unit is cheap versus small-unit prints but roughly fair-to-slightly-cheap versus its actual 2-BR-sized comps. Freehold is not a forward edge (v3.4). With the discount ambiguous, the developer being a budget builder, and the region (D15) only RCR-typical forward, there is no decisive edge — Neutral at low confidence is the honest call.",
+      "red_flags": [
+        "psf_cohort_txns=0 — the cheapness signal has no same-size transaction support; classic thin-data quirk",
+        "Size-class mismatch: a 786 sqft '1-BR' is a 2-BR footprint; comparing it to 398 sqft small-unit PSF overstates the bargain",
+        "Fragrance Realty is a budget/mass developer with a mixed build-quality reputation",
+        "Telok Kurau is ~10min walk to Kembangan MRT — not MRT-fronting; commute is a mild drag",
+        "$999,999 asking is priced right at the psychological/ABSD-relevant ceiling, leaving little headroom"
+      ],
+      "catalysts": [
+        "Freehold tenure in the desirable D15 East Coast belt (downside floor, not a forward edge)",
+        "East Coast Integrated Transport / TEL East Coast stations broadly lift the district, though not unit-specific here"
+      ],
+      "as_of": {
+        "price": 999999,
+        "psf": 1272.26,
+        "beds": 1,
+        "sqft": 786
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline 'cheap freehold' signal rests on a zero-transaction cohort and a size-class mismatch. Once compared to the right (2-BR-sized) comps, the discount mostly evaporates. Honest Neutral.",
+        "rating_rationale": "psf_cohort_txns=0 means the -24.9% cohort premium has literally no same-size comparable behind it — exactly the v3.4 data-quirk pattern to be skeptical of. The 786 sqft unit is labelled 1-BR but is a 2-BR footprint, and the project's 2-BR median is ~$1,090 psf while only the tiny 398 sqft units fetch $1,400-$1,722 psf. So at $1,272 psf the unit is cheap versus small-unit prints but roughly fair-to-slightly-cheap versus its actual 2-BR-sized comps. Freehold is not a forward edge (v3.4). With the discount ambiguous, the developer being a budget builder, and the region (D15) only RCR-typical forward, there is no decisive edge — Neutral at low confidence is the honest call.",
+        "red_flags": [
+          "psf_cohort_txns=0 — the cheapness signal has no same-size transaction support; classic thin-data quirk",
+          "Size-class mismatch: a 786 sqft '1-BR' is a 2-BR footprint; comparing it to 398 sqft small-unit PSF overstates the bargain",
+          "Fragrance Realty is a budget/mass developer with a mixed build-quality reputation",
+          "Telok Kurau is ~10min walk to Kembangan MRT — not MRT-fronting; commute is a mild drag",
+          "$999,999 asking is priced right at the psychological/ABSD-relevant ceiling, leaving little headroom"
+        ],
+        "catalysts": [
+          "Freehold tenure in the desirable D15 East Coast belt (downside floor, not a forward edge)",
+          "East Coast Integrated Transport / TEL East Coast stations broadly lift the district, though not unit-specific here"
+        ],
+        "appreciation_assessment": "Trailing +3.88% on 43 txns is modest and, per v3.4, near-zero forward signal. With no cohort depth and an ambiguous discount, there is nothing to lift the forward view above region-typical RCR (~+3.5%).",
+        "rental_assessment": "A 2-BR-sized unit in East Coast rents reasonably to families/expats, but no MRT frontage and a budget-build profile cap the premium. Average."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-elegance-500061461",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -60,6 +60,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-straits-residences-500151300",
         "review_file": "batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The eye-catching -31.8% cheapness is almost certainly a data quirk: the algo's read rests on a single cohort transaction (a 344 sqft micro-unit) in a 30-unit boutique, so the 'bargain' cannot be verified against real 2BR comps.",
+      "rating_rationale": "The signal collapses under scrutiny: appreciation_txns=7 and psf_cohort_txns=1, and the one verified last-12-month transaction was $1,852 psf for a 344 sqft unit — micro-units always trade at a far higher PSF than a 1,012 sqft 2BR, so comparing the $1,442 psf asking against it manufactures the -31.8% and +11.0% figures. Per the v3.4 priors these tiny-cohort extremes are flagged as quirks, not bargains. The 30-unit project means thin resale liquidity, and freehold is not a forward edge. D15/RCR is a respectable ~+3.5% forward region, and ~$1,442 psf for a real Joo Chiat 2BR is plausibly fair value — but 'fair' is not the verified discount the score implies. Score 1000=789.",
+      "red_flags": [
+        "Cohort depth of 1 transaction and only 7 appreciation txns — headline cheapness is a single-comparable artifact",
+        "344 sqft micro-unit used as the comp inflates the -31.8% premium and 11% CAGR",
+        "30-unit boutique: very thin resale liquidity and volatile measured PSF",
+        "Asking below valuation 'almost sold' style listings in the area can mask lease/condition issues — unverified"
+      ],
+      "catalysts": [
+        "Freehold tenure and walkable Joo Chiat / i12 Katong lifestyle belt (livability, not a forward edge)",
+        "Thomson-East Coast Line (Marine Parade) improves the broader Katong accessibility"
+      ],
+      "as_of": {
+        "price": 1460000,
+        "psf": 1442.69,
+        "beds": 2,
+        "sqft": 1012
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The eye-catching -31.8% cheapness is almost certainly a data quirk: the algo's read rests on a single cohort transaction (a 344 sqft micro-unit) in a 30-unit boutique, so the 'bargain' cannot be verified against real 2BR comps.",
+        "rating_rationale": "The signal collapses under scrutiny: appreciation_txns=7 and psf_cohort_txns=1, and the one verified last-12-month transaction was $1,852 psf for a 344 sqft unit — micro-units always trade at a far higher PSF than a 1,012 sqft 2BR, so comparing the $1,442 psf asking against it manufactures the -31.8% and +11.0% figures. Per the v3.4 priors these tiny-cohort extremes are flagged as quirks, not bargains. The 30-unit project means thin resale liquidity, and freehold is not a forward edge. D15/RCR is a respectable ~+3.5% forward region, and ~$1,442 psf for a real Joo Chiat 2BR is plausibly fair value — but 'fair' is not the verified discount the score implies. Score 1000=789.",
+        "red_flags": [
+          "Cohort depth of 1 transaction and only 7 appreciation txns — headline cheapness is a single-comparable artifact",
+          "344 sqft micro-unit used as the comp inflates the -31.8% premium and 11% CAGR",
+          "30-unit boutique: very thin resale liquidity and volatile measured PSF",
+          "Asking below valuation 'almost sold' style listings in the area can mask lease/condition issues — unverified"
+        ],
+        "catalysts": [
+          "Freehold tenure and walkable Joo Chiat / i12 Katong lifestyle belt (livability, not a forward edge)",
+          "Thomson-East Coast Line (Marine Parade) improves the broader Katong accessibility"
+        ],
+        "rental_assessment": "Joo Chiat/Katong is a strong, durable rental micro-market for a 2BR, but the boutique scale and single-comp data make a reliable yield estimate impossible without pulling actual unit-level transactions.",
+        "appreciation_assessment": "No credible forward read: the trailing CAGR is built on ~one transaction and carries ~0 predictive power. Treat as fairly-priced-at-best until verified against genuine same-size 2BR resale evidence."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-straits-residences-500151300",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

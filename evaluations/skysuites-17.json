@@ -1,0 +1,61 @@
+{
+  "condo": "SkySuites 17",
+  "slug": "skysuites-17",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 355 sqft freehold shoebox 1BR in Balestier/D12 at $1,972 psf, far (1.13km) from Toa Payoh MRT, with no URA data to validate pricing. Tiny format, high PSF, weak transit and a weak arena record (Elo 952) make this a low-conviction Avoid for investment.",
+      "rating_rationale": "355 sqft is a true shoebox with the most volatile resale demand and a high $1,972 psf despite a poor 1.13km MRT walk; there is no URA series to confirm the asking price is supportable. Balestier shoeboxes have lagged on capital growth, and the arena record (91-214-10, Elo 952) confirms a weak competitive profile. Freehold and a low $700K quantum are the only positives.",
+      "red_flags": [
+        "355 sqft shoebox — most cyclical, narrowest resale demand",
+        "High $1,972 psf for the format with no URA validation",
+        "1.13km / 14-min walk to MRT — weak transit anchor",
+        "Weak arena record (Elo 952)"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Low $700K quantum and central Balestier location keep it lettable"
+      ],
+      "as_of": {
+        "price": 700000,
+        "psf": 1971.83,
+        "beds": 1,
+        "sqft": 355.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 355 sqft freehold shoebox 1BR in Balestier/D12 at $1,972 psf, far (1.13km) from Toa Payoh MRT, with no URA data to validate pricing. Tiny format, high PSF, weak transit and a weak arena record (Elo 952) make this a low-conviction Avoid for investment.",
+        "rating": "Avoid",
+        "rating_rationale": "355 sqft is a true shoebox with the most volatile resale demand and a high $1,972 psf despite a poor 1.13km MRT walk; there is no URA series to confirm the asking price is supportable. Balestier shoeboxes have lagged on capital growth, and the arena record (91-214-10, Elo 952) confirms a weak competitive profile. Freehold and a low $700K quantum are the only positives.",
+        "red_flags": [
+          "355 sqft shoebox — most cyclical, narrowest resale demand",
+          "High $1,972 psf for the format with no URA validation",
+          "1.13km / 14-min walk to MRT — weak transit anchor",
+          "Weak arena record (Elo 952)"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Low $700K quantum and central Balestier location keep it lettable"
+        ],
+        "rental_assessment": "Balestier shoeboxes let to singles/expats and yield can look high on the low quantum (~4%), but tenant turnover and the poor MRT walk weigh on demand.",
+        "appreciation_assessment": "No URA series; Balestier freehold shoeboxes have historically shown weak capital appreciation — muted outlook.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-skysuites-17-24488749",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "Seraya Serenity",
+  "slug": "seraya-serenity",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,066 sqft freehold 'large-format' unit (listed 4BR) at Seraya Serenity, a tiny new freehold boutique in D15 Seraya Lane (TOP ~2030) at $2.77M ($2,600 PSF). The PSF is far above what nearby Seraya-Lane boutiques actually transact at (~$1,650-1,900), and it sits 1.1km from MRT — an overpriced micro-development.",
+      "rating_rationale": "$2,600 PSF is a steep new-launch premium: comparable Seraya Lane boutiques (e.g. Seraya Residences, 2022) transact around $1,650-1,900 PSF, so the buyer pays a large markup for newness in a development likely under ~20 units. The $2.77M price exceeds the deep-liquidity band, MRT is 1.1km (13-min walk) away, and the score_1000 is the lowest in the batch (335). Tiny freehold boutiques are illiquid on exit, and there's no transaction history to anchor value. Overpriced + illiquid = Avoid.",
+      "red_flags": [
+        "$2,600 PSF is far above area resale (~$1,650-1,900 PSF) — heavy new-launch premium",
+        "Micro boutique development — very shallow resale liquidity",
+        "1.1km (13-min walk) from nearest MRT",
+        "$2.77M above the deepest-demand price band; lowest score_1000 (335) in batch",
+        "2030 TOP — capital locked, lease-of-progress/developer risk"
+      ],
+      "catalysts": [
+        "Freehold tenure in prime D15",
+        "Brand-new build (TOP ~2030)",
+        "Marine Parade/East Coast lifestyle area"
+      ],
+      "as_of": {
+        "price": 2772000,
+        "psf": 2600.38,
+        "beds": 4,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,066 sqft freehold 'large-format' unit (listed 4BR) at Seraya Serenity, a tiny new freehold boutique in D15 Seraya Lane (TOP ~2030) at $2.77M ($2,600 PSF). The PSF is far above what nearby Seraya-Lane boutiques actually transact at (~$1,650-1,900), and it sits 1.1km from MRT — an overpriced micro-development.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,600 PSF is a steep new-launch premium: comparable Seraya Lane boutiques (e.g. Seraya Residences, 2022) transact around $1,650-1,900 PSF, so the buyer pays a large markup for newness in a development likely under ~20 units. The $2.77M price exceeds the deep-liquidity band, MRT is 1.1km (13-min walk) away, and the score_1000 is the lowest in the batch (335). Tiny freehold boutiques are illiquid on exit, and there's no transaction history to anchor value. Overpriced + illiquid = Avoid.",
+        "red_flags": [
+          "$2,600 PSF is far above area resale (~$1,650-1,900 PSF) — heavy new-launch premium",
+          "Micro boutique development — very shallow resale liquidity",
+          "1.1km (13-min walk) from nearest MRT",
+          "$2.77M above the deepest-demand price band; lowest score_1000 (335) in batch",
+          "2030 TOP — capital locked, lease-of-progress/developer risk"
+        ],
+        "catalysts": [
+          "Freehold tenure in prime D15",
+          "Brand-new build (TOP ~2030)",
+          "Marine Parade/East Coast lifestyle area"
+        ],
+        "rental_assessment": "Will rent in D15, but at $2.77M / $2,600 PSF the gross yield is poor (~2.5-3%), and 1.1km from MRT limits the premium-tenant appeal versus transit-adjacent rivals.",
+        "appreciation_assessment": "Buying at a peak new-launch PSF in a micro-project with no track record leaves negative-to-flat near-term headroom once the new-launch premium normalizes against established freehold stock.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seraya-serenity-500159204",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

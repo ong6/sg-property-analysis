@@ -1,0 +1,65 @@
+{
+  "condo": "The Continuum",
+  "slug": "the-continuum",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1BR at The Continuum, the large freehold new launch in D15 (TOP ~2027), $1.368M at $2,443 PSF — below the $2,801 URA median. Rare freehold scale in East Coast with strong launch demand, but it's an unbuilt new launch (null URA appreciation, new-launch bias) and a niche 1BR, with the nearest MRT a soft 830m away.",
+      "rating_rationale": "The Continuum's freehold land in a leasehold-dominated East Coast is its genuine differentiator, and $2,443 PSF is below the project median (~$2,801), so this is likely a lower-floor stack at a relatively sensible entry. But appreciation is null (no resale history — TOP ~2027), has_new_launch_bias is on, 1BR is the narrowest resale/tenant segment, and 830m to Dakota MRT is mediocre for a city-fringe project. Freehold + D15 deep buyer pool support a hold; the new-launch premium and niche unit cap the upside to Neutral.",
+      "red_flags": [
+        "New launch, TOP ~2027 — no resale price history; developer-inflated pricing",
+        "1BR niche resale and tenant segment",
+        "830m to Dakota MRT — soft walkability for the price",
+        "~1yr+ construction/SSD clock before any exit"
+      ],
+      "catalysts": [
+        "Rare large freehold development in leasehold-heavy East Coast (D15)",
+        "Deep D15 buyer pool and lifestyle demand",
+        "Below project-median entry PSF"
+      ],
+      "as_of": {
+        "price": 1368000,
+        "psf": 2442.86,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "1BR at The Continuum, the large freehold new launch in D15 (TOP ~2027), $1.368M at $2,443 PSF — below the $2,801 URA median. Rare freehold scale in East Coast with strong launch demand, but it's an unbuilt new launch (null URA appreciation, new-launch bias) and a niche 1BR, with the nearest MRT a soft 830m away.",
+        "rating": "Neutral",
+        "rating_rationale": "The Continuum's freehold land in a leasehold-dominated East Coast is its genuine differentiator, and $2,443 PSF is below the project median (~$2,801), so this is likely a lower-floor stack at a relatively sensible entry. But appreciation is null (no resale history — TOP ~2027), has_new_launch_bias is on, 1BR is the narrowest resale/tenant segment, and 830m to Dakota MRT is mediocre for a city-fringe project. Freehold + D15 deep buyer pool support a hold; the new-launch premium and niche unit cap the upside to Neutral.",
+        "red_flags": [
+          "New launch, TOP ~2027 — no resale price history; developer-inflated pricing",
+          "1BR niche resale and tenant segment",
+          "830m to Dakota MRT — soft walkability for the price",
+          "~1yr+ construction/SSD clock before any exit"
+        ],
+        "catalysts": [
+          "Rare large freehold development in leasehold-heavy East Coast (D15)",
+          "Deep D15 buyer pool and lifestyle demand",
+          "Below project-median entry PSF"
+        ],
+        "rental_assessment": "East Coast 1BR rents to singles/couples; freehold and brand-new condition help, but yield is modest at $2,443 PSF.",
+        "appreciation_assessment": "Freehold D15 supports long-run appreciation, but new-launch entry PSF is rich; expect ~RCR baseline net of the launch premium, not a headline rate.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "RCR/freehold baseline net of new-launch premium; no resale history yet"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-continuum-60190895",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

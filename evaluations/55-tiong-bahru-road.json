@@ -1,0 +1,67 @@
+{
+  "condo": "55 Tiong Bahru Road",
+  "slug": "55-tiong-bahru-road",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1967 99-year leasehold 3BR walk-up (1,087 sqft) in Tiong Bahru, asking $999k ($919 psf) — by far the cheapest entry in the batch and on the cost frontier. Low absolute price and Tiong Bahru desirability are real, but a near-60-year-old leasehold carries heavy lease-decay and financing risk.",
+      "rating_rationale": "At $999k / $919 psf this is a genuinely low entry price for prime-fringe Tiong Bahru, 450m from Havelock TEL MRT, which is why it sits on the frontier. But built 1967 on a 99-yr lease leaves ~40 years, triggering CPF/financing limits that shrink the buyer pool, and walk-ups carry no facilities. The cheap price partially offsets lease risk for a cash buyer/landlord; not for a leveraged investor. A speculative low-ticket hold, balanced — Neutral.",
+      "red_flags": [
+        "1967 build on 99-yr lease — ~40 yrs left, CPF/financing restrictions, lease decay",
+        "Walk-up, no facilities, lift-less",
+        "No URA data to confirm pricing or appreciation",
+        "Lease tail caps the holding horizon and exit options"
+      ],
+      "catalysts": [
+        "Low $999k absolute entry — cash-buyer / landlord friendly",
+        "Tiong Bahru conservation-area lifestyle desirability",
+        "450m to Havelock MRT (Thomson-East Coast Line)",
+        "En-bloc/SERS optionality for older Tiong Bahru blocks (speculative)"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 919.04,
+        "beds": 3,
+        "sqft": 1087.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1967 99-year leasehold 3BR walk-up (1,087 sqft) in Tiong Bahru, asking $999k ($919 psf) — by far the cheapest entry in the batch and on the cost frontier. Low absolute price and Tiong Bahru desirability are real, but a near-60-year-old leasehold carries heavy lease-decay and financing risk.",
+        "rating": "Neutral",
+        "rating_rationale": "At $999k / $919 psf this is a genuinely low entry price for prime-fringe Tiong Bahru, 450m from Havelock TEL MRT, which is why it sits on the frontier. But built 1967 on a 99-yr lease leaves ~40 years, triggering CPF/financing limits that shrink the buyer pool, and walk-ups carry no facilities. The cheap price partially offsets lease risk for a cash buyer/landlord; not for a leveraged investor. A speculative low-ticket hold, balanced — Neutral.",
+        "red_flags": [
+          "1967 build on 99-yr lease — ~40 yrs left, CPF/financing restrictions, lease decay",
+          "Walk-up, no facilities, lift-less",
+          "No URA data to confirm pricing or appreciation",
+          "Lease tail caps the holding horizon and exit options"
+        ],
+        "catalysts": [
+          "Low $999k absolute entry — cash-buyer / landlord friendly",
+          "Tiong Bahru conservation-area lifestyle desirability",
+          "450m to Havelock MRT (Thomson-East Coast Line)",
+          "En-bloc/SERS optionality for older Tiong Bahru blocks (speculative)"
+        ],
+        "rental_assessment": "Tiong Bahru rents strongly to lifestyle tenants; on a $999k basis the gross yield can be attractive (~4%+) even for a walk-up, the main investment merit here.",
+        "appreciation_assessment": "Lease decay is the dominant drag; capital upside depends on en-bloc/redevelopment optionality rather than organic appreciation. Rental carry, not capital growth, is the case.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 1.5,
+        "appreciation_rate_source": "Lease-decay constrained; low base price offers some cushion, en-bloc optionality speculative"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-55-tiong-bahru-road-60156650",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

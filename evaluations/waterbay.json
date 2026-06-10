@@ -1,0 +1,61 @@
+{
+  "condo": "Waterbay",
+  "slug": "waterbay",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A large 2,056 sqft 4BR at Waterbay, a D19 Punggol waterway-front leasehold (TOP 2016), at $2.48M / $1,206 psf. The low PSF is a function of the oversized unit, and at $2.48M in Punggol the buyer pool for a jumbo 4BR is shallow; no URA data to verify the rate.",
+      "rating_rationale": "Like Riverparc, the $1,206 psf headline is cheap mainly because the unit is oversized (2,056 sqft), not because it's genuinely underpriced. At $2.48M the quantum sits near the top of Punggol's upgrader-constrained range, thinning the exit pool for a 4BR. No URA appreciation rate, txn count or median in the dossier — growth unverified. Positives are real but diffuse: Punggol Digital District and CRL (~2030) regional uplift, 430m to Cove LRT, waterway frontage. The strong arena score (662 / Elo 1440) reflects favourable cost/PSF scoring, but liquidity and the missing data hold this to Neutral.",
+      "red_flags": [
+        "Oversized 2,056 sqft drives the low PSF — not genuine value",
+        "$2.48M quantum near the Punggol ceiling — shallow 4BR exit pool",
+        "No URA appreciation/txn data; growth unverified"
+      ],
+      "catalysts": [
+        "Punggol Digital District (PDD) buildout",
+        "Cross Island Line (~2030) regional uplift",
+        "430m to Cove LRT, waterway-front position"
+      ],
+      "as_of": {
+        "price": 2480000,
+        "psf": 1206.23,
+        "beds": 4,
+        "sqft": 2056.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 2,056 sqft 4BR at Waterbay, a D19 Punggol waterway-front leasehold (TOP 2016), at $2.48M / $1,206 psf. The low PSF is a function of the oversized unit, and at $2.48M in Punggol the buyer pool for a jumbo 4BR is shallow; no URA data to verify the rate.",
+        "rating": "Neutral",
+        "rating_rationale": "Like Riverparc, the $1,206 psf headline is cheap mainly because the unit is oversized (2,056 sqft), not because it's genuinely underpriced. At $2.48M the quantum sits near the top of Punggol's upgrader-constrained range, thinning the exit pool for a 4BR. No URA appreciation rate, txn count or median in the dossier — growth unverified. Positives are real but diffuse: Punggol Digital District and CRL (~2030) regional uplift, 430m to Cove LRT, waterway frontage. The strong arena score (662 / Elo 1440) reflects favourable cost/PSF scoring, but liquidity and the missing data hold this to Neutral.",
+        "red_flags": [
+          "Oversized 2,056 sqft drives the low PSF — not genuine value",
+          "$2.48M quantum near the Punggol ceiling — shallow 4BR exit pool",
+          "No URA appreciation/txn data; growth unverified"
+        ],
+        "catalysts": [
+          "Punggol Digital District (PDD) buildout",
+          "Cross Island Line (~2030) regional uplift",
+          "430m to Cove LRT, waterway-front position"
+        ],
+        "rental_assessment": "Large 4BR family-let in Punggol; tenant pool modest, PDD demand still ramping. Yield likely below 3%.",
+        "appreciation_assessment": "No URA data to anchor a rate. PDD/CRL support the long-term story but the high quantum caps near-term upside, as Punggol pricing is set by HDB-upgrader budgets.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterbay-500125694",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

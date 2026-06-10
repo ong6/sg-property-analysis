@@ -1,0 +1,61 @@
+{
+  "condo": "Vibes @ Kovan",
+  "slug": "vibes-kovan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 786 sqft 2BR in Kovan at $1.2M / $1,527 PSF, marginally under the $1,559 URA median. Decent fundamentals and a useful 2BR format, but Vibes @ Kovan is a small boutique block and the appreciation rate rests on only 12 transactions, so the case is solid-but-thin rather than compelling.",
+      "rating_rationale": "Freehold and a broad-appeal 2BR are positives, and PSF is ~2% below the $1,559 median. But the +3.42%/yr URA CAGR comes from just 12 transactions (unreliable), and Vibes @ Kovan is a small freehold development with limited facilities and shallower liquidity. Serangoon MRT is 810m (10 min walk) — usable but not doorstep. Net: a fair, unexciting hold.",
+      "red_flags": [
+        "Appreciation rate from only 12 URA txns — low confidence",
+        "Small boutique development — limited amenities and thinner resale liquidity",
+        "Serangoon MRT 810m away, not within tight walking distance"
+      ],
+      "catalysts": [
+        "Freehold tenure preserves long-term value",
+        "Kovan/Serangoon mature estate with strong owner-occupier and tenant demand",
+        "2BR format has the widest buyer/tenant pool"
+      ],
+      "as_of": {
+        "price": 1200000,
+        "psf": 1526.72,
+        "beds": 2,
+        "sqft": 786.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 786 sqft 2BR in Kovan at $1.2M / $1,527 PSF, marginally under the $1,559 URA median. Decent fundamentals and a useful 2BR format, but Vibes @ Kovan is a small boutique block and the appreciation rate rests on only 12 transactions, so the case is solid-but-thin rather than compelling.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold and a broad-appeal 2BR are positives, and PSF is ~2% below the $1,559 median. But the +3.42%/yr URA CAGR comes from just 12 transactions (unreliable), and Vibes @ Kovan is a small freehold development with limited facilities and shallower liquidity. Serangoon MRT is 810m (10 min walk) — usable but not doorstep. Net: a fair, unexciting hold.",
+        "red_flags": [
+          "Appreciation rate from only 12 URA txns — low confidence",
+          "Small boutique development — limited amenities and thinner resale liquidity",
+          "Serangoon MRT 810m away, not within tight walking distance"
+        ],
+        "catalysts": [
+          "Freehold tenure preserves long-term value",
+          "Kovan/Serangoon mature estate with strong owner-occupier and tenant demand",
+          "2BR format has the widest buyer/tenant pool"
+        ],
+        "rental_assessment": "2BR in a mature Serangoon/Kovan estate rents reliably to young professionals and small families; freehold and walkable amenities support steady occupancy at a typical ~3-3.5% gross yield.",
+        "appreciation_assessment": "URA shows +3.4%/yr but on a 12-txn base — treat as indicative only. Freehold city-fringe should track district averages; no specific catalyst to lift it above.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vibes-kovan-21773522",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "condo": "Claydence",
+  "slug": "claydence",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Brand-new (2026 TOP) 28-unit freehold boutique at $3.28M / $2,500 psf for a 1,313 sqft large unit — likely a duplex penthouse given Claydence's stated mix tops out at 3BR/penthouses. Ultra-boutique scale, new-launch top-of-market PSF, and a >$3M quantum make this a weak 5–7yr investment despite the freehold D15 address.",
+      "rating_rationale": "Only 28 units means very thin secondary liquidity, and the $2,500 psf sits right at the new-launch median ($2,501) with explicit new-launch bias — there is no resale discount to capture and exit depends on the next buyer paying a fresh-launch premium for an aging unit. The >$3.28M quantum thins the buyer pool sharply, score_1000 of 401 reflects poor risk-adjusted value, and Eunos MRT is a 840m walk. Freehold D15 is desirable but the entry price already capitalizes it.",
+      "red_flags": [
+        "28-unit boutique — minimal resale liquidity and amenities",
+        "New-launch top PSF ($2,500 vs $2,501 median) with new_launch_bias flag — buying at peak",
+        "Quantum >$3.28M shrinks buyer pool",
+        "1,313 sqft 4BR/duplex is niche; Eunos MRT 840m away"
+      ],
+      "catalysts": [
+        "Freehold tenure in established D15 East Coast lifestyle belt",
+        "Brand-new 2026 completion, no immediate capex"
+      ],
+      "as_of": {
+        "price": 3282500,
+        "psf": 2500.0,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Brand-new (2026 TOP) 28-unit freehold boutique at $3.28M / $2,500 psf for a 1,313 sqft large unit — likely a duplex penthouse given Claydence's stated mix tops out at 3BR/penthouses. Ultra-boutique scale, new-launch top-of-market PSF, and a >$3M quantum make this a weak 5–7yr investment despite the freehold D15 address.",
+        "rating": "Avoid",
+        "rating_rationale": "Only 28 units means very thin secondary liquidity, and the $2,500 psf sits right at the new-launch median ($2,501) with explicit new-launch bias — there is no resale discount to capture and exit depends on the next buyer paying a fresh-launch premium for an aging unit. The >$3.28M quantum thins the buyer pool sharply, score_1000 of 401 reflects poor risk-adjusted value, and Eunos MRT is a 840m walk. Freehold D15 is desirable but the entry price already capitalizes it.",
+        "red_flags": [
+          "28-unit boutique — minimal resale liquidity and amenities",
+          "New-launch top PSF ($2,500 vs $2,501 median) with new_launch_bias flag — buying at peak",
+          "Quantum >$3.28M shrinks buyer pool",
+          "1,313 sqft 4BR/duplex is niche; Eunos MRT 840m away"
+        ],
+        "catalysts": [
+          "Freehold tenure in established D15 East Coast lifestyle belt",
+          "Brand-new 2026 completion, no immediate capex"
+        ],
+        "rental_assessment": "Boutique freehold rents to a narrow tenant set; on a >$3.2M outlay the gross yield is poor (well under 3%) for an investment hold.",
+        "appreciation_assessment": "Buying at the new-launch median with bias flagged leaves no margin; future appreciation must overcome a fresh-launch premium and boutique illiquidity — unattractive.",
+        "stack_notes": null,
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-claydence-60080490",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

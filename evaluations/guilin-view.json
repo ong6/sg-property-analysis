@@ -1,0 +1,63 @@
+{
+  "condo": "Guilin View",
+  "slug": "guilin-view",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 3,025 sqft 4BR at a headline-low $853 psf — but that PSF is cheap mainly because the unit is oversized and the 99LH is 26 years old (lease ~73 yrs left). Strong 5.35% appreciation and Bukit Gombak MRT 460m are real positives, weighed against lease decay and the quantum/size niche.",
+      "rating_rationale": "The $853 psf looks like a bargain vs the $1,207 median but that gap is an artifact of size (3,025 sqft) and age — this is the classic oversized-unit/low-PSF trap, not genuine value. 99LH from 2000 means ~73 years remaining and accelerating lease decay over a 5–7yr hold, which caps appreciation despite the historical 5.35% CAGR (101 txns, reliable). $2.58M for a 3,025 sqft 4BR is a thin, niche buyer pool (large-family/multigen only) in OCR D23. NS3 Bukit Gombak 460m and the strong record keep it from Avoid.",
+      "red_flags": [
+        "99LH from 2000 — ~73 years remaining, lease decay accelerates over the hold",
+        "3,025 sqft oversized unit: low PSF is a size artifact, not real value",
+        "$2.58M for an OCR mega-unit = very narrow buyer pool, weak exit liquidity",
+        "Built 2000 — 26-year-old development, higher maintenance/dated finishes"
+      ],
+      "catalysts": [
+        "NS3 Bukit Gombak MRT 460m — solid transit",
+        "Historical 5.35%/yr appreciation on 101 txns",
+        "Space-per-dollar appeal to large/multigen families if priced to move"
+      ],
+      "as_of": {
+        "price": 2580000,
+        "psf": 852.89,
+        "beds": 4,
+        "sqft": 3025.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 3,025 sqft 4BR at a headline-low $853 psf — but that PSF is cheap mainly because the unit is oversized and the 99LH is 26 years old (lease ~73 yrs left). Strong 5.35% appreciation and Bukit Gombak MRT 460m are real positives, weighed against lease decay and the quantum/size niche.",
+        "rating": "Neutral",
+        "rating_rationale": "The $853 psf looks like a bargain vs the $1,207 median but that gap is an artifact of size (3,025 sqft) and age — this is the classic oversized-unit/low-PSF trap, not genuine value. 99LH from 2000 means ~73 years remaining and accelerating lease decay over a 5–7yr hold, which caps appreciation despite the historical 5.35% CAGR (101 txns, reliable). $2.58M for a 3,025 sqft 4BR is a thin, niche buyer pool (large-family/multigen only) in OCR D23. NS3 Bukit Gombak 460m and the strong record keep it from Avoid.",
+        "red_flags": [
+          "99LH from 2000 — ~73 years remaining, lease decay accelerates over the hold",
+          "3,025 sqft oversized unit: low PSF is a size artifact, not real value",
+          "$2.58M for an OCR mega-unit = very narrow buyer pool, weak exit liquidity",
+          "Built 2000 — 26-year-old development, higher maintenance/dated finishes"
+        ],
+        "catalysts": [
+          "NS3 Bukit Gombak MRT 460m — solid transit",
+          "Historical 5.35%/yr appreciation on 101 txns",
+          "Space-per-dollar appeal to large/multigen families if priced to move"
+        ],
+        "rental_assessment": "Huge unit rents poorly per sqft; 4BR OCR tenant pool is shallow. Gross yield weak given the $2.58M quantum on OCR rents.",
+        "appreciation_assessment": "Past 5.35% is real, but lease decay below 75 years and the size/quantum niche make forward appreciation riskier than the headline suggests.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guilin-view-500016775",
+        "review_file": "cov_batch_02.json"
+      }
+    }
+  ]
+}

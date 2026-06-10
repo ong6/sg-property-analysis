@@ -1,0 +1,115 @@
+{
+  "condo": "R Maisons (The Maisons)",
+  "slug": "r-maisons-the-maisons",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2015 freehold 1BR (689 sqft) in D13 at $938k with strong Woodleigh MRT access (590m), but the dossier has no URA appreciation, median PSF or transaction count — all null. Reasonable on quantum and location, but the value case is unverifiable from data.",
+      "rating_rationale": "$1,361 PSF / $938k is a sensible city-fringe entry and 590m to Woodleigh (NEL + future cross-line interchange area) is a real plus. But ura_appreciation, median_psf and txn_count are all null — no government data to confirm value or trajectory. Score_1000 of 722 leans on low quantum and location; with zero URA grounding it can't rate above Neutral.",
+      "red_flags": [
+        "No URA data at all (appreciation, median PSF, txn count all null) — value unverifiable",
+        "Likely small boutique development given the 'Maisons' format",
+        "689 sqft 1BR is a niche resale segment"
+      ],
+      "catalysts": [
+        "Woodleigh MRT 590m (NEL) and Bidadari estate maturation nearby",
+        "Freehold tenure at sub-$1M quantum",
+        "Proximity to Bidadari new-town amenities lifting D13 demand"
+      ],
+      "as_of": {
+        "price": 938000,
+        "psf": 1361.39,
+        "beds": 1,
+        "sqft": 689.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2015 freehold 1BR (689 sqft) in D13 at $938k with strong Woodleigh MRT access (590m), but the dossier has no URA appreciation, median PSF or transaction count — all null. Reasonable on quantum and location, but the value case is unverifiable from data.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,361 PSF / $938k is a sensible city-fringe entry and 590m to Woodleigh (NEL + future cross-line interchange area) is a real plus. But ura_appreciation, median_psf and txn_count are all null — no government data to confirm value or trajectory. Score_1000 of 722 leans on low quantum and location; with zero URA grounding it can't rate above Neutral.",
+        "red_flags": [
+          "No URA data at all (appreciation, median PSF, txn count all null) — value unverifiable",
+          "Likely small boutique development given the 'Maisons' format",
+          "689 sqft 1BR is a niche resale segment"
+        ],
+        "catalysts": [
+          "Woodleigh MRT 590m (NEL) and Bidadari estate maturation nearby",
+          "Freehold tenure at sub-$1M quantum",
+          "Proximity to Bidadari new-town amenities lifting D13 demand"
+        ],
+        "rental_assessment": "Bidadari/Woodleigh is increasingly tenant-friendly with the new HDB town and NEL access; a 689 sqft freehold unit should rent steadily (~3-3.5%).",
+        "appreciation_assessment": "No URA data; D13/Bidadari has benefited from estate transformation, so mid-single-digit appreciation is plausible but cannot be confirmed here.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-r-maisons-the-maisons-500114662",
+        "review_file": "cov_batch_16.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold 689 sqft 1BR in D13 (Potong Pasir/Woodleigh fringe) with a striking -28.7% age-adjusted discount, but the value signal is unverifiable — psf_cohort_txns is null/0 and appreciation is regional_baseline, and comparable Maisons-series projects actually transact at $1,499-1,754 psf, so the $1,361 asking may be cheap or may be a name/comp-matching artifact.",
+      "rating_rationale": "The headline -28.7% discount is unsupported by real data: psf_cohort_txns is null/0 and appreciation_source is regional_baseline (0 txns), so the algo never measured a true comp. Adjacent Maisons-series freehold projects (R Maison at Sommerville Walk ~$1,514 psf; E Maisons The Maisons on Braddell Rd $1,499-1,754 psf) trade above the $1,361 asking, which is mildly supportive of cheapness — but I could not confirm the exact project's own recent transactions, and the -28.7% figure looks too large to be a clean read. D13 RCR location near Woodleigh/Potong Pasir MRT and the Bidadari estate is a genuine support. Per v3.4, value must lead and FH is not an edge; with value unverified this is Neutral at low confidence pending real same-project comps.",
+      "red_flags": [
+        "psf_cohort_txns null/0 and appreciation = regional_baseline — the -28.7% discount has no measured comparable behind it",
+        "name ambiguity across the Maisons series (R Maison / E Maisons / The Maisons) risks comp-matching error",
+        "689 sqft 1BR — narrow exit pool dependent on single tenants/investors",
+        "freehold premium does not convert to forward appreciation per backtest"
+      ],
+      "catalysts": [
+        "Woodleigh/Potong Pasir MRT and Bidadari estate maturation supporting rental and owner demand",
+        "If same-project comps confirm ~$1,500 psf, the $1,361 asking would be a real ~9% discount (unconfirmed)"
+      ],
+      "as_of": {
+        "price": 938000,
+        "psf": 1361.39,
+        "beds": 1,
+        "sqft": 689
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Freehold 689 sqft 1BR in D13 (Potong Pasir/Woodleigh fringe) with a striking -28.7% age-adjusted discount, but the value signal is unverifiable — psf_cohort_txns is null/0 and appreciation is regional_baseline, and comparable Maisons-series projects actually transact at $1,499-1,754 psf, so the $1,361 asking may be cheap or may be a name/comp-matching artifact.",
+        "rating_rationale": "The headline -28.7% discount is unsupported by real data: psf_cohort_txns is null/0 and appreciation_source is regional_baseline (0 txns), so the algo never measured a true comp. Adjacent Maisons-series freehold projects (R Maison at Sommerville Walk ~$1,514 psf; E Maisons The Maisons on Braddell Rd $1,499-1,754 psf) trade above the $1,361 asking, which is mildly supportive of cheapness — but I could not confirm the exact project's own recent transactions, and the -28.7% figure looks too large to be a clean read. D13 RCR location near Woodleigh/Potong Pasir MRT and the Bidadari estate is a genuine support. Per v3.4, value must lead and FH is not an edge; with value unverified this is Neutral at low confidence pending real same-project comps.",
+        "red_flags": [
+          "psf_cohort_txns null/0 and appreciation = regional_baseline — the -28.7% discount has no measured comparable behind it",
+          "name ambiguity across the Maisons series (R Maison / E Maisons / The Maisons) risks comp-matching error",
+          "689 sqft 1BR — narrow exit pool dependent on single tenants/investors",
+          "freehold premium does not convert to forward appreciation per backtest"
+        ],
+        "catalysts": [
+          "Woodleigh/Potong Pasir MRT and Bidadari estate maturation supporting rental and owner demand",
+          "If same-project comps confirm ~$1,500 psf, the $1,361 asking would be a real ~9% discount (unconfirmed)"
+        ],
+        "rental_assessment": "Central-fringe FH 1BR near Woodleigh/Bidadari should rent steadily to young professionals; yield unconfirmed but likely market-typical for a D13 shoebox.",
+        "appreciation_assessment": "Regional_baseline 3.7% with 0 txns — pure placeholder, no forward signal. The Buy case hinges entirely on a vs-cohort discount that the data does not actually substantiate."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-r-maisons-the-maisons-500114662",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

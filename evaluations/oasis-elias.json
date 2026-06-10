@@ -58,6 +58,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-oasis-elias-25307344",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 99-LH Pasir Ris 3BR with a genuine dated catalyst — the future Elias MRT (Cross Island Line, ~2030) is within walking distance. But asking $1,213 psf is at the TOP of the project's 12-month range, so the algo's 'cheap' signals are misleading.",
+      "rating_rationale": "Two findings pull in opposite directions. Positive: a real, dated catalyst — LTA's Cross Island Line Elias station (CRL Phase 1, est. completion ~2030, walking distance), the kind of physical evidence v3.4 says can support a stronger call. D18 is OCR (favorable realized fwd ~+4.0%), and the development is large (388 units), well-landscaped and family-friendly. Negative, and decisive for confidence: the dossier's -16.1% age-adj 'cheap' and 'very_low_psf' flag do NOT survive a building-level check. Recent 12-month transactions average ~$1,158 psf (range $1,100-$1,222), so the asking $1,213 psf is at the upper end of the range — this unit is priced rich for the building, not cheap. The strongest robust forward signal (verified cheapness vs recent comps) is therefore absent; the case rests almost entirely on the CRL catalyst, which is 4+ years out and partly already in the price. With ~80 yrs lease left and an entry at the top of the band, the catalyst and the rich pricing roughly cancel. Trailing 8.87% CAGR (82 txns) is credible data but ~0 forward power, so I do not lean on it. Net: a defensible hold for the MRT story, but not a value buy — Neutral, leaning mildly positive.",
+      "red_flags": [
+        "Asking $1,213 psf is at the TOP of the 12-mo range (~$1,100-$1,222, avg ~$1,158) — not cheap",
+        "Algo 'very_low_psf' / -16.1% age-adj 'cheap' signal contradicted by real transactions",
+        "99-yr leasehold from 2008; lease decay over a 5-7yr hold",
+        "CRL Elias station is ~2030 and partly priced in; execution/timing risk"
+      ],
+      "catalysts": [
+        "Future Elias MRT (Cross Island Line Phase 1, ~2030) within walking distance — dated catalyst",
+        "Pasir Ris set to become an Eastern interchange, lifting connectivity premium",
+        "OCR/D18 region with favorable realized forward drift (~+4.0%)"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1213.52,
+        "beds": 3,
+        "sqft": 1302
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A 99-LH Pasir Ris 3BR with a genuine dated catalyst — the future Elias MRT (Cross Island Line, ~2030) is within walking distance. But asking $1,213 psf is at the TOP of the project's 12-month range, so the algo's 'cheap' signals are misleading.",
+        "rating_rationale": "Two findings pull in opposite directions. Positive: a real, dated catalyst — LTA's Cross Island Line Elias station (CRL Phase 1, est. completion ~2030, walking distance), the kind of physical evidence v3.4 says can support a stronger call. D18 is OCR (favorable realized fwd ~+4.0%), and the development is large (388 units), well-landscaped and family-friendly. Negative, and decisive for confidence: the dossier's -16.1% age-adj 'cheap' and 'very_low_psf' flag do NOT survive a building-level check. Recent 12-month transactions average ~$1,158 psf (range $1,100-$1,222), so the asking $1,213 psf is at the upper end of the range — this unit is priced rich for the building, not cheap. The strongest robust forward signal (verified cheapness vs recent comps) is therefore absent; the case rests almost entirely on the CRL catalyst, which is 4+ years out and partly already in the price. With ~80 yrs lease left and an entry at the top of the band, the catalyst and the rich pricing roughly cancel. Trailing 8.87% CAGR (82 txns) is credible data but ~0 forward power, so I do not lean on it. Net: a defensible hold for the MRT story, but not a value buy — Neutral, leaning mildly positive.",
+        "red_flags": [
+          "Asking $1,213 psf is at the TOP of the 12-mo range (~$1,100-$1,222, avg ~$1,158) — not cheap",
+          "Algo 'very_low_psf' / -16.1% age-adj 'cheap' signal contradicted by real transactions",
+          "99-yr leasehold from 2008; lease decay over a 5-7yr hold",
+          "CRL Elias station is ~2030 and partly priced in; execution/timing risk"
+        ],
+        "catalysts": [
+          "Future Elias MRT (Cross Island Line Phase 1, ~2030) within walking distance — dated catalyst",
+          "Pasir Ris set to become an Eastern interchange, lifting connectivity premium",
+          "OCR/D18 region with favorable realized forward drift (~+4.0%)"
+        ],
+        "appreciation_assessment": "Trailing 8.87% CAGR is well-supported (82 txns) but per v3.4 carries ~0 forward power; I use it as story only. Forward upside hinges on the CRL catalyst materializing, offset by an above-average entry PSF that has already captured part of that optionality.",
+        "rental_assessment": "Project rental yield ~3.5%; family-oriented Pasir Ris tenant demand is steady and should strengthen as the CRL station progresses, but yield is modest at this quantum/entry price."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-oasis-elias-25307344",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

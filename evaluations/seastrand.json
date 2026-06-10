@@ -1,0 +1,117 @@
+{
+  "condo": "Seastrand",
+  "slug": "seastrand",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 710sqft 1BR at $880k / $1,239 PSF in D18 Pasir Ris, priced ~4% below the $1,289 URA median on a very reliable 114-txn 3.70% CAGR. Low entry price and strong data, but it is 1.25km from the nearest (future CRL) station and OCR appreciation is modest.",
+      "rating_rationale": "The 3.70% rate is backed by an excellent 114-transaction sample (high confidence) and the ~4% discount to median plus sub-$900k price keep it liquid. But 1.25km to the still-future CR4 Pasir Ris East station is a poor walk, OCR appreciation here is baseline-grade, and a 1BR has the narrowest tenant pool. The CRL (2030) opening is the swing factor — without proximity benefit it stays a steady, unexciting hold.",
+      "red_flags": [
+        "1.25km / 15-min walk to MRT, and that station is the not-yet-open CRL",
+        "OCR baseline appreciation (3.70%) — modest",
+        "1BR has the narrowest tenant/buyer pool"
+      ],
+      "catalysts": [
+        "Reliable 3.70% rate on 114 txns; ~4% below median",
+        "CRL Pasir Ris East (~2030) area uplift",
+        "Sub-$900k entry, near beach/Pasir Ris Park lifestyle"
+      ],
+      "as_of": {
+        "price": 880000,
+        "psf": 1239.44,
+        "beds": 1,
+        "sqft": 710.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 710sqft 1BR at $880k / $1,239 PSF in D18 Pasir Ris, priced ~4% below the $1,289 URA median on a very reliable 114-txn 3.70% CAGR. Low entry price and strong data, but it is 1.25km from the nearest (future CRL) station and OCR appreciation is modest.",
+        "rating": "Neutral",
+        "rating_rationale": "The 3.70% rate is backed by an excellent 114-transaction sample (high confidence) and the ~4% discount to median plus sub-$900k price keep it liquid. But 1.25km to the still-future CR4 Pasir Ris East station is a poor walk, OCR appreciation here is baseline-grade, and a 1BR has the narrowest tenant pool. The CRL (2030) opening is the swing factor — without proximity benefit it stays a steady, unexciting hold.",
+        "red_flags": [
+          "1.25km / 15-min walk to MRT, and that station is the not-yet-open CRL",
+          "OCR baseline appreciation (3.70%) — modest",
+          "1BR has the narrowest tenant/buyer pool"
+        ],
+        "catalysts": [
+          "Reliable 3.70% rate on 114 txns; ~4% below median",
+          "CRL Pasir Ris East (~2030) area uplift",
+          "Sub-$900k entry, near beach/Pasir Ris Park lifestyle"
+        ],
+        "rental_assessment": "1BR in Pasir Ris has limited but stable tenant demand (Changi/airport workers); yield supported by the low base.",
+        "appreciation_assessment": "3.70% is well-evidenced; CRL could lift it modestly but distance limits the benefit — ~3-4% forward.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seastrand-25479064",
+        "review_file": "cov_batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 710 sqft 1BR in a 2014 Pasir Ris condo, asking $1,239 psf vs verified $1,185-1,389 psf (avg $1,284) over the last 12 months — genuinely at the bottom of the recent range. OCR/D18 region is the strongest forward-appreciation bucket, and the upcoming Cross Island Line adds a real catalyst.",
+      "rating_rationale": "The cheapness here is verifiable: recent Seastrand transactions ran $1,185-1,389 psf (avg $1,284) and this unit asks $1,239 psf — a real ~3-4% discount to the trailing average, consistent with the algo's -16.9% age-adjusted signal and -3.2% cohort read. A 710 sqft 1BR is unusually large/livable for the type, supporting both rental and resale demand. D18 is the top realized forward-appreciation region (~+4%). The Cross Island Line (Pasir Ris East / Loyang stations) is a dated, decisive catalyst for the Pasir Ris locale. Confidence held at medium because psf_cohort_txns=0 means the exact-size comp is thin and the appreciation read (3.7% CAGR) is unremarkable.",
+      "red_flags": [
+        "psf_cohort_txns=0 — no exact same-size comparable, so the -3.2% cohort premium is unverified at the unit level",
+        "99-year leasehold from 2011 (~84yr left) — fine now but a long-run consideration",
+        "Pasir Ris is a far-east locale; reviews note very windy NS-facing stacks with no afternoon sun"
+      ],
+      "catalysts": [
+        "Cross Island Line — Pasir Ris East (CR4) / Loyang (CR3) stations improving connectivity",
+        "Pasir Ris Central redevelopment and integrated transport/retail hub",
+        "OCR/D18 is the strongest realized forward-appreciation region (~+4%)",
+        "Verified asking PSF at the bottom of the recent transaction range"
+      ],
+      "as_of": {
+        "price": 880000,
+        "psf": 1239.44,
+        "beds": 1,
+        "sqft": 710
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large 710 sqft 1BR in a 2014 Pasir Ris condo, asking $1,239 psf vs verified $1,185-1,389 psf (avg $1,284) over the last 12 months — genuinely at the bottom of the recent range. OCR/D18 region is the strongest forward-appreciation bucket, and the upcoming Cross Island Line adds a real catalyst.",
+        "rating_rationale": "The cheapness here is verifiable: recent Seastrand transactions ran $1,185-1,389 psf (avg $1,284) and this unit asks $1,239 psf — a real ~3-4% discount to the trailing average, consistent with the algo's -16.9% age-adjusted signal and -3.2% cohort read. A 710 sqft 1BR is unusually large/livable for the type, supporting both rental and resale demand. D18 is the top realized forward-appreciation region (~+4%). The Cross Island Line (Pasir Ris East / Loyang stations) is a dated, decisive catalyst for the Pasir Ris locale. Confidence held at medium because psf_cohort_txns=0 means the exact-size comp is thin and the appreciation read (3.7% CAGR) is unremarkable.",
+        "red_flags": [
+          "psf_cohort_txns=0 — no exact same-size comparable, so the -3.2% cohort premium is unverified at the unit level",
+          "99-year leasehold from 2011 (~84yr left) — fine now but a long-run consideration",
+          "Pasir Ris is a far-east locale; reviews note very windy NS-facing stacks with no afternoon sun"
+        ],
+        "catalysts": [
+          "Cross Island Line — Pasir Ris East (CR4) / Loyang (CR3) stations improving connectivity",
+          "Pasir Ris Central redevelopment and integrated transport/retail hub",
+          "OCR/D18 is the strongest realized forward-appreciation region (~+4%)",
+          "Verified asking PSF at the bottom of the recent transaction range"
+        ],
+        "rental_assessment": "Healthy. A large, well-appointed 710 sqft 1BR near Pasir Ris amenities and the future CRL appeals to single/couple tenants; East-side and Changi/airport employment demand underpins occupancy. Sub-$900k quantum keeps the yield competitive.",
+        "appreciation_assessment": "Constructive. The value entry (asking below the trailing average) plus the OCR region tailwind and a confirmed CRL catalyst support modest upside; trailing 3.7% CAGR (114 txns) is well-supported but treated only as story, not a forward guarantee."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seastrand-25479064",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

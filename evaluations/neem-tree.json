@@ -1,0 +1,65 @@
+{
+  "condo": "Neem Tree",
+  "slug": "neem-tree",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold 420sqft shoebox 1BR at $1,786 PSF in D12 Balestier, priced right at the $1,792 URA median, with a very weak 1.1%/yr resale-only appreciation rate on 24 txns and 1.22km from Toa Payoh MRT. Lowest Elo in the batch (713) — a small, capital-light shoebox with little growth and poor walkability.",
+      "rating_rationale": "Weakest combination in the batch for appreciation: 1.1%/yr resale-only on a solid 24-txn base means the trend is reliable and reliably flat. A 420sqft shoebox has the narrowest owner-occupier pool, it's 1.22km/15-min from MRT, and PSF is already at median (no value gap). The only positives are freehold and a low $750k entry, which make it a pure yield/parking play — not an investment with upside. Avoid for a 5-7yr appreciation hold.",
+      "red_flags": [
+        "1.1%/yr resale-only appreciation — essentially flat on a reliable 24-txn base",
+        "420sqft shoebox — narrowest buyer pool",
+        "1.22km from Toa Payoh MRT — poor walkability",
+        "PSF at median — no value cushion"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Low $750k entry — accessible quantum",
+        "Balestier/Novena-fringe rental demand"
+      ],
+      "as_of": {
+        "price": 750000,
+        "psf": 1785.71,
+        "beds": 1,
+        "sqft": 420.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 420sqft shoebox 1BR at $1,786 PSF in D12 Balestier, priced right at the $1,792 URA median, with a very weak 1.1%/yr resale-only appreciation rate on 24 txns and 1.22km from Toa Payoh MRT. Lowest Elo in the batch (713) — a small, capital-light shoebox with little growth and poor walkability.",
+        "rating": "Avoid",
+        "rating_rationale": "Weakest combination in the batch for appreciation: 1.1%/yr resale-only on a solid 24-txn base means the trend is reliable and reliably flat. A 420sqft shoebox has the narrowest owner-occupier pool, it's 1.22km/15-min from MRT, and PSF is already at median (no value gap). The only positives are freehold and a low $750k entry, which make it a pure yield/parking play — not an investment with upside. Avoid for a 5-7yr appreciation hold.",
+        "red_flags": [
+          "1.1%/yr resale-only appreciation — essentially flat on a reliable 24-txn base",
+          "420sqft shoebox — narrowest buyer pool",
+          "1.22km from Toa Payoh MRT — poor walkability",
+          "PSF at median — no value cushion"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Low $750k entry — accessible quantum",
+          "Balestier/Novena-fringe rental demand"
+        ],
+        "rental_assessment": "420sqft shoebox rents to single tenants at a decent gross yield on the $750k base, but distance from MRT limits rent ceiling.",
+        "appreciation_assessment": "1.1%/yr on 24 txns is a reliable signal of near-zero real appreciation; shoebox + poor walkability give no catalyst for improvement.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 1.1,
+        "appreciation_rate_source": "URA resale-only 1.1%/yr (24 txns) accepted as-is"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-neem-tree-25215835",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

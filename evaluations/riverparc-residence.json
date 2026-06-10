@@ -1,0 +1,61 @@
+{
+  "condo": "Riverparc Residence",
+  "slug": "riverparc-residence",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2,282 sqft 4BR (likely an EC-style/Punggol exec format) at $2.8M / $1,227 psf in D19. Low PSF looks cheap but is driven by the oversized floor area, and at $2.8M quantum in Punggol the buyer pool is shallow.",
+      "rating_rationale": "The $1,227 psf headline is the lowest in the batch but that is a function of the 2,282 sqft size, not genuine cheapness — this is an oversized unit masquerading as cheap PSF. At $2.8M the quantum is at the very top of what Punggol/D19 absorbs, where the buyer pool is thin; D19 ceiling prices are HDB-upgrader-constrained. No URA appreciation or txn data in the dossier, so the growth rate is unverified. Plus side: Punggol Digital District and CRL (~2030) are real long-term catalysts, and 170m to Kadaloor LRT adds convenience, but those accrue more to mid-quantum units than to a $2.8M jumbo.",
+      "red_flags": [
+        "Oversized 2,282 sqft drives the low PSF — not genuine value",
+        "$2.8M quantum near the D19/Punggol price ceiling, shallow exit pool",
+        "No URA appreciation/txn data; growth unverified"
+      ],
+      "catalysts": [
+        "Punggol Digital District (PDD) tech-hub buildout",
+        "Cross Island Line (~2030) regional uplift",
+        "170m to Kadaloor LRT, waterway-fronting location"
+      ],
+      "as_of": {
+        "price": 2800000,
+        "psf": 1226.99,
+        "beds": 4,
+        "sqft": 2282.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2,282 sqft 4BR (likely an EC-style/Punggol exec format) at $2.8M / $1,227 psf in D19. Low PSF looks cheap but is driven by the oversized floor area, and at $2.8M quantum in Punggol the buyer pool is shallow.",
+        "rating": "Neutral",
+        "rating_rationale": "The $1,227 psf headline is the lowest in the batch but that is a function of the 2,282 sqft size, not genuine cheapness — this is an oversized unit masquerading as cheap PSF. At $2.8M the quantum is at the very top of what Punggol/D19 absorbs, where the buyer pool is thin; D19 ceiling prices are HDB-upgrader-constrained. No URA appreciation or txn data in the dossier, so the growth rate is unverified. Plus side: Punggol Digital District and CRL (~2030) are real long-term catalysts, and 170m to Kadaloor LRT adds convenience, but those accrue more to mid-quantum units than to a $2.8M jumbo.",
+        "red_flags": [
+          "Oversized 2,282 sqft drives the low PSF — not genuine value",
+          "$2.8M quantum near the D19/Punggol price ceiling, shallow exit pool",
+          "No URA appreciation/txn data; growth unverified"
+        ],
+        "catalysts": [
+          "Punggol Digital District (PDD) tech-hub buildout",
+          "Cross Island Line (~2030) regional uplift",
+          "170m to Kadaloor LRT, waterway-fronting location"
+        ],
+        "rental_assessment": "Large 4BR family-let in Punggol; tenant pool is modest and PDD demand is still ramping. Yield likely below 3% at this quantum.",
+        "appreciation_assessment": "No URA data to anchor a rate; PDD/CRL support the long-term story but the high quantum caps near-term upside since D19 pricing is set by upgrader budgets.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riverparc-residence-500019641",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

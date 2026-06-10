@@ -1,0 +1,63 @@
+{
+  "condo": "Tanglin View",
+  "slug": "tanglin-view",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Generously-sized 1130 sqft 2BR at Tanglin View (D03 Redhill) for $1.98M / $1752 PSF — ~7% below the $1875 district median — 360m from Redhill MRT, with a solid 5.1%/yr appreciation on a reliable 69-txn series. Sub-median pricing in the liquid band plus doorstep MRT and RCR/GSW upside make this a modest Buy, tempered by the 2002 age and lease decay.",
+      "rating_rationale": "Asking PSF $1752 is ~7% below the $1875 median on a reliable 69-txn series, $1.98M sits in the deepest buyer-pool band, and 360m to EW18 Redhill MRT plus D03's Greater Southern Waterfront/TEL upside support demand. 5.1%/yr appreciation is RCR-grade. The 2002 build (24 years, lease ~76yr remaining) and a middling 563 score are the offsets, but a below-median, well-located, well-sized 2BR is a sound value entry.",
+      "red_flags": [
+        "2002 build — 24 years old, ~76yr lease remaining (decay clock)",
+        "Only market-typical score (563) and modest Elo",
+        "Leasehold age will increasingly weigh on financing/resale"
+      ],
+      "catalysts": [
+        "360m to EW18 Redhill MRT (EWL, direct to CBD)",
+        "~7% below district median PSF in the liquid band",
+        "D03 RCR with Greater Southern Waterfront + TEL upside"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 1752.21,
+        "beds": 2,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Generously-sized 1130 sqft 2BR at Tanglin View (D03 Redhill) for $1.98M / $1752 PSF — ~7% below the $1875 district median — 360m from Redhill MRT, with a solid 5.1%/yr appreciation on a reliable 69-txn series. Sub-median pricing in the liquid band plus doorstep MRT and RCR/GSW upside make this a modest Buy, tempered by the 2002 age and lease decay.",
+        "rating": "Buy",
+        "rating_rationale": "Asking PSF $1752 is ~7% below the $1875 median on a reliable 69-txn series, $1.98M sits in the deepest buyer-pool band, and 360m to EW18 Redhill MRT plus D03's Greater Southern Waterfront/TEL upside support demand. 5.1%/yr appreciation is RCR-grade. The 2002 build (24 years, lease ~76yr remaining) and a middling 563 score are the offsets, but a below-median, well-located, well-sized 2BR is a sound value entry.",
+        "red_flags": [
+          "2002 build — 24 years old, ~76yr lease remaining (decay clock)",
+          "Only market-typical score (563) and modest Elo",
+          "Leasehold age will increasingly weigh on financing/resale"
+        ],
+        "catalysts": [
+          "360m to EW18 Redhill MRT (EWL, direct to CBD)",
+          "~7% below district median PSF in the liquid band",
+          "D03 RCR with Greater Southern Waterfront + TEL upside"
+        ],
+        "rental_assessment": "A roomy 1130 sqft 2BR steps from Redhill MRT and near the city rents reliably to professionals and small families; generous size is a marketable feature. Yield reasonable for the band.",
+        "appreciation_assessment": "5.1%/yr on 69 transactions is reliable and RCR-typical; buying ~7% below median provides an entry cushion, though the aging 99-yr lease caps long-run upside relative to freehold peers.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR, 69 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tanglin-view-500116738",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

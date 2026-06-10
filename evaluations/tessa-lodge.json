@@ -1,0 +1,61 @@
+{
+  "condo": "Tessa Lodge",
+  "slug": "tessa-lodge",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 2008 3BR at Tessa Lodge (D15) for $2.78M, but the 1,851 sqft floor area makes the headline $1,502 psf misleading — this is a very large unit at a high absolute quantum. Thin URA data (2 txns) and a >$2.7M ticket in a boutique make the investment case soft despite freehold and TEL access.",
+      "rating_rationale": "The low-looking $1,502 psf is a size artefact — an oversized 1,851 sqft 3BR — so it's not actually cheap; the absolute $2.78M sits above the deepest buyer band. URA data is unusable (only 2 txns), and PSF is ~8% below the $1,630 median, plausibly because large old units trade down on PSF. Positives: freehold, 520m to TE25 Tanjong Katong (Thomson-East Coast Line) in desirable D15. For investment, the heavy quantum, thin liquidity for an outsized layout, and weak data hold it at Neutral.",
+      "red_flags": [
+        "Oversized 1,851 sqft inflates value perception — $1,502 psf is not genuinely cheap",
+        "$2.78M quantum above the deepest buyer pool; outsized layout narrows demand",
+        "Only 2 URA transactions — appreciation rate unreliable"
+      ],
+      "catalysts": [
+        "Freehold in prime D15, 520m to TE25 Tanjong Katong (TEL)",
+        "Large livable layout appeals to own-stay families if priced right"
+      ],
+      "as_of": {
+        "price": 2780000,
+        "psf": 1501.89,
+        "beds": 3,
+        "sqft": 1851.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2008 3BR at Tessa Lodge (D15) for $2.78M, but the 1,851 sqft floor area makes the headline $1,502 psf misleading — this is a very large unit at a high absolute quantum. Thin URA data (2 txns) and a >$2.7M ticket in a boutique make the investment case soft despite freehold and TEL access.",
+        "rating": "Neutral",
+        "rating_rationale": "The low-looking $1,502 psf is a size artefact — an oversized 1,851 sqft 3BR — so it's not actually cheap; the absolute $2.78M sits above the deepest buyer band. URA data is unusable (only 2 txns), and PSF is ~8% below the $1,630 median, plausibly because large old units trade down on PSF. Positives: freehold, 520m to TE25 Tanjong Katong (Thomson-East Coast Line) in desirable D15. For investment, the heavy quantum, thin liquidity for an outsized layout, and weak data hold it at Neutral.",
+        "red_flags": [
+          "Oversized 1,851 sqft inflates value perception — $1,502 psf is not genuinely cheap",
+          "$2.78M quantum above the deepest buyer pool; outsized layout narrows demand",
+          "Only 2 URA transactions — appreciation rate unreliable"
+        ],
+        "catalysts": [
+          "Freehold in prime D15, 520m to TE25 Tanjong Katong (TEL)",
+          "Large livable layout appeals to own-stay families if priced right"
+        ],
+        "rental_assessment": "A 1,851 sqft FH 3BR rents to families but the high quantum yields below-market gross yield; TEL proximity helps tenant access.",
+        "appreciation_assessment": "Insufficient URA data (2 txns) to trust; freehold D15 + TEL gives a moderate baseline, but oversized large-quantum units typically appreciate at PSF-laggard pace.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "D15 freehold/TEL baseline; URA 2-txn rate (3.18%) too thin to rely on"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tessa-lodge-60102637",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

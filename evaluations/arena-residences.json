@@ -1,0 +1,65 @@
+{
+  "condo": "Arena Residences",
+  "slug": "arena-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 893sqft freehold 3BR at the recently-completed (2023) Arena Residences, D14, asking $2,016 psf — a touch below the $2,036 URA median. The unit is fairly priced and freehold, but resale appreciation is essentially flat (0.83%/yr on 22 txn) and 893sqft is compact for a 3BR, so it reads as a fair-value hold rather than a growth play.",
+      "rating_rationale": "Freehold, slightly below median PSF (-1%), and near Mountbatten/Old Airport Road amenities are positives, but the resale-only rate is only 0.83%/yr on a thin 22-txn series — minimal demonstrated post-completion momentum. A 893sqft 3BR is tight, and as a 2023 project much of the freshness premium is already in the price. Fairly priced, low-growth-signal — a balanced Neutral.",
+      "red_flags": [
+        "Flat resale appreciation 0.83%/yr on only 22 txn",
+        "893sqft is compact for a 3BR",
+        "740m to Mountbatten MRT",
+        "Newer project — limited resale track record"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Priced ~1% below URA median",
+        "D14 / Old Airport Road / East Coast fringe amenities"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 2015.68,
+        "beds": 3,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 893sqft freehold 3BR at the recently-completed (2023) Arena Residences, D14, asking $2,016 psf — a touch below the $2,036 URA median. The unit is fairly priced and freehold, but resale appreciation is essentially flat (0.83%/yr on 22 txn) and 893sqft is compact for a 3BR, so it reads as a fair-value hold rather than a growth play.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, slightly below median PSF (-1%), and near Mountbatten/Old Airport Road amenities are positives, but the resale-only rate is only 0.83%/yr on a thin 22-txn series — minimal demonstrated post-completion momentum. A 893sqft 3BR is tight, and as a 2023 project much of the freshness premium is already in the price. Fairly priced, low-growth-signal — a balanced Neutral.",
+        "red_flags": [
+          "Flat resale appreciation 0.83%/yr on only 22 txn",
+          "893sqft is compact for a 3BR",
+          "740m to Mountbatten MRT",
+          "Newer project — limited resale track record"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Priced ~1% below URA median",
+          "D14 / Old Airport Road / East Coast fringe amenities"
+        ],
+        "rental_assessment": "Compact freehold 3BR near Mountbatten and Dakota rents reasonably to small families/sharers; yield is moderate at $1.8M.",
+        "appreciation_assessment": "0.83%/yr resale (22 txn) is weak and low-confidence; expect roughly D14-baseline growth (~4-5%) over time once the post-completion period normalises, but no near-term catalyst.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale series very thin (22 txn); set to a conservative D14 freehold estimate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-arena-residences-60206158",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

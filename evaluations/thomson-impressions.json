@@ -1,0 +1,115 @@
+{
+  "condo": "Thomson Impressions",
+  "slug": "thomson-impressions",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Compact 463 sqft 1BR at Thomson Impressions, 470m from Bright Hill TEL station in D20. Sub-$850k quantum, priced at $1,836 psf vs $1,969 median (~7% below), with a respectable 3.3%/yr resale CAGR on 91 txns.",
+      "rating_rationale": "Strong Thomson-East Coast Line access (470m to Bright Hill), low $850k entry quantum, sub-median PSF ($1,836 vs $1,969), and a reliable 3.3%/yr resale CAGR on a 91-txn base. Score 662 with healthy elo 1218. The TEL connectivity to the city and Marina Bay is a durable demand driver for this Bishan/Upper Thomson pocket.",
+      "red_flags": [
+        "1BR niche tenant pool",
+        "Upper Thomson is somewhat removed from major employment nodes"
+      ],
+      "catalysts": [
+        "Thomson-East Coast Line direct access via Bright Hill (470m)",
+        "Upper Thomson lifestyle/F&B belt and school catchment"
+      ],
+      "as_of": {
+        "price": 849888,
+        "psf": 1835.61,
+        "beds": 1,
+        "sqft": 463.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 463 sqft 1BR at Thomson Impressions, 470m from Bright Hill TEL station in D20. Sub-$850k quantum, priced at $1,836 psf vs $1,969 median (~7% below), with a respectable 3.3%/yr resale CAGR on 91 txns.",
+        "rating": "Buy",
+        "rating_rationale": "Strong Thomson-East Coast Line access (470m to Bright Hill), low $850k entry quantum, sub-median PSF ($1,836 vs $1,969), and a reliable 3.3%/yr resale CAGR on a 91-txn base. Score 662 with healthy elo 1218. The TEL connectivity to the city and Marina Bay is a durable demand driver for this Bishan/Upper Thomson pocket.",
+        "red_flags": [
+          "1BR niche tenant pool",
+          "Upper Thomson is somewhat removed from major employment nodes"
+        ],
+        "catalysts": [
+          "Thomson-East Coast Line direct access via Bright Hill (470m)",
+          "Upper Thomson lifestyle/F&B belt and school catchment"
+        ],
+        "rental_assessment": "Good tenant demand from TEL connectivity and the Upper Thomson lifestyle area; sub-$850k entry supports healthy yield.",
+        "appreciation_assessment": "Reliable 3.3%/yr resale CAGR on 91 txns; sub-median entry plus full TEL operation supports continued upside.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.3,
+        "appreciation_rate_source": "URA resale 3.3%/yr on 91-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-impressions-500146445",
+        "review_file": "cov_batch_19.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2019 463 sqft 1BR at Thomson Impressions asking $1,836 psf — verifiably at/below the most recent comparable (an identical 463 sqft unit sold $858,000 / $1,854 psf in Sep 2025) and well under the project's 12-month average of $2,046 psf. Sits ~5 min from Bright Hill MRT on the Thomson-East Coast Line in a healthy D20 location, with above-district rental yield (~3.6%). The standout of this batch.",
+      "rating_rationale": "The cheapness is verified against real same-size transactions: a 463 sqft 1BR transacted at $858K ($1,854 psf) in Sep 2025, so the $849,888 / $1,835.61 psf asking is actually below the latest comparable and far below the project-wide 12-mo avg of $2,046 psf. Cohort depth is solid (psf_cohort_txns=12, appreciation_txns=91, psf_premium_vs_cohort -2.2%), so the -14.2% age-adj cheapness is robust, not a quirk. Dated physical catalyst: Bright Hill CR13 / Sin Ming TE7 on the TEL (~5 min walk), which materially improved connectivity post-2021. Rental yield ~3.6% beats the district average ~2.89%. D20 is an RCR/OCR district where v3.4 priors favor forward returns, and value-vs-peers (the strongest robust signal) is decisively met here.",
+      "red_flags": [
+        "99-year lease from ~2015 with 2019 completion — leasehold decay over the hold horizon (still ~88 years, minor)",
+        "Shoebox 1BR — resale buyer pool skews investor, more cyclical than family units",
+        "Entry near the top of the absolute psf range means upside is the verified discount, not headline momentum"
+      ],
+      "catalysts": [
+        "Bright Hill MRT (TEL) ~5 min walk — confirmed, operational connectivity catalyst",
+        "Below latest same-size comp ($1,854 psf) and well below project avg ($2,046 psf) — verified entry discount",
+        "Above-district rental yield (~3.6% vs ~2.89%) supports holding economics",
+        "Healthy D20 RCR/OCR positioning aligns with stronger realized forward-return cohort"
+      ],
+      "as_of": {
+        "price": 849888,
+        "psf": 1835.61,
+        "beds": 1,
+        "sqft": 463
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A 2019 463 sqft 1BR at Thomson Impressions asking $1,836 psf — verifiably at/below the most recent comparable (an identical 463 sqft unit sold $858,000 / $1,854 psf in Sep 2025) and well under the project's 12-month average of $2,046 psf. Sits ~5 min from Bright Hill MRT on the Thomson-East Coast Line in a healthy D20 location, with above-district rental yield (~3.6%). The standout of this batch.",
+        "rating_rationale": "The cheapness is verified against real same-size transactions: a 463 sqft 1BR transacted at $858K ($1,854 psf) in Sep 2025, so the $849,888 / $1,835.61 psf asking is actually below the latest comparable and far below the project-wide 12-mo avg of $2,046 psf. Cohort depth is solid (psf_cohort_txns=12, appreciation_txns=91, psf_premium_vs_cohort -2.2%), so the -14.2% age-adj cheapness is robust, not a quirk. Dated physical catalyst: Bright Hill CR13 / Sin Ming TE7 on the TEL (~5 min walk), which materially improved connectivity post-2021. Rental yield ~3.6% beats the district average ~2.89%. D20 is an RCR/OCR district where v3.4 priors favor forward returns, and value-vs-peers (the strongest robust signal) is decisively met here.",
+        "red_flags": [
+          "99-year lease from ~2015 with 2019 completion — leasehold decay over the hold horizon (still ~88 years, minor)",
+          "Shoebox 1BR — resale buyer pool skews investor, more cyclical than family units",
+          "Entry near the top of the absolute psf range means upside is the verified discount, not headline momentum"
+        ],
+        "catalysts": [
+          "Bright Hill MRT (TEL) ~5 min walk — confirmed, operational connectivity catalyst",
+          "Below latest same-size comp ($1,854 psf) and well below project avg ($2,046 psf) — verified entry discount",
+          "Above-district rental yield (~3.6% vs ~2.89%) supports holding economics",
+          "Healthy D20 RCR/OCR positioning aligns with stronger realized forward-return cohort"
+        ],
+        "appreciation_assessment": "Dossier 3.29% 5yr CAGR on 91 txns is moderate; per v3.4 priors I weight the verified value gap and the MRT catalyst over trailing CAGR. The forward thesis rests on the discount-to-comp closing, not on extrapolating past growth.",
+        "rental_assessment": "Project rental yield ~3.6% (above district ~2.89%); a 463 sqft 1BR near Bright Hill MRT should rent ~$2,500-$2,800, giving a strong ~3.5-3.9% gross yield on the $850K quantum — best risk-adjusted income profile in this batch."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-impressions-500146445",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

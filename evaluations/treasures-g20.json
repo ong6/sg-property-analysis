@@ -1,0 +1,119 @@
+{
+  "condo": "Treasures @ G20",
+  "slug": "treasures-g20",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold unit at Treasures @ G20, D14, 720m from Aljunied MRT, asking $958k at $1,012 PSF for 947 sqft (labelled 1BR but clearly larger — likely a 2BR or jumbo unit). PSF is a steep ~32% discount to the $1,495 median, but the series has only 10 URA txns.",
+      "rating_rationale": "Very low $1,012 PSF and freehold tenure are appealing, but 947 sqft for a '1BR' confirms a misclassification — value should be judged on actual layout, not the headline bed count. Critically, only 10 URA txns means the 9.75%/yr appreciation rate is statistically meaningless. Boutique development limits liquidity. Paya Lebar Central is a real catalyst but doesn't rescue thin data.",
+      "red_flags": [
+        "Only 10 URA txns — appreciation rate not credible",
+        "947 sqft '1BR' is a misclassification — verify actual layout",
+        "Small/boutique development, shallow resale market"
+      ],
+      "catalysts": [
+        "Paya Lebar Central + airbase relocation upside",
+        "Freehold in RCR D14",
+        "Low PSF leaves headroom if layout is genuinely a 2BR"
+      ],
+      "as_of": {
+        "price": 958000,
+        "psf": 1011.62,
+        "beds": 1,
+        "sqft": 947.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold unit at Treasures @ G20, D14, 720m from Aljunied MRT, asking $958k at $1,012 PSF for 947 sqft (labelled 1BR but clearly larger — likely a 2BR or jumbo unit). PSF is a steep ~32% discount to the $1,495 median, but the series has only 10 URA txns.",
+        "rating": "Neutral",
+        "rating_rationale": "Very low $1,012 PSF and freehold tenure are appealing, but 947 sqft for a '1BR' confirms a misclassification — value should be judged on actual layout, not the headline bed count. Critically, only 10 URA txns means the 9.75%/yr appreciation rate is statistically meaningless. Boutique development limits liquidity. Paya Lebar Central is a real catalyst but doesn't rescue thin data.",
+        "red_flags": [
+          "Only 10 URA txns — appreciation rate not credible",
+          "947 sqft '1BR' is a misclassification — verify actual layout",
+          "Small/boutique development, shallow resale market"
+        ],
+        "catalysts": [
+          "Paya Lebar Central + airbase relocation upside",
+          "Freehold in RCR D14",
+          "Low PSF leaves headroom if layout is genuinely a 2BR"
+        ],
+        "rental_assessment": "If a true 2BR, decent tenant pool near Aljunied; yield ~3.5-4% at this quantum.",
+        "appreciation_assessment": "Use D14 RCR baseline ~5%; the 9.75% URA reading is unusable on 10 txns.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D14 RCR baseline; URA 9.75% rejected (10-txn sample)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasures-g20-25199113",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Freehold and below the ~$1,290psf recent average, but the 947sqft unit is the project's largest format (penthouse) being scored against a 1-bed cohort (psf_cohort_txns=0). The -47% age-adjusted 'discount' is mostly a size effect, not a true bargain.",
+      "rating_rationale": "Treasures @ G20 is a 38-unit freehold (2015) where 1-beds start at 420sqft and run up to a 947sqft 1-bed penthouse. Recent resales average ~$1,290 psf (range $1,012-$1,543). This listing at $1,011.62 psf is at the bottom of the range precisely because it is the 947sqft top-floor large-format unit - large units structurally trade at lower PSF (v3.2 size-relative principle), so the -21% psf_premium_vs_cohort on 0 cohort txns and the -47% age-adjusted premium overstate the value. The $958k price matches the top of the project's current $648k-$958k range, so the price is real. Freehold is not a forward edge (v3.4). It carries the bedroom_sqft_mismatch flag. D14/OCR region prior is favorable, and a large freehold floor area for under $1m has some own-stay appeal, but as an investment the 'cheapness' is largely a measurement artifact and exit liquidity for an atypical large 1-bed is narrower.",
+      "red_flags": [
+        "947sqft scored as a 1-bed against a 1-bed cohort - this is the largest/penthouse format; PSF is low because of size, not value (psf_cohort_txns=0)",
+        "bedroom_sqft_mismatch + very_low_psf flags both present",
+        "$1,011psf is the floor of the $1,012-$1,543 recent-resale range, consistent with the large-unit size discount",
+        "appreciation 9.75% on 10 txns - thin, ~0 forward power",
+        "Tiny 38-unit boutique block; atypical large unit = thinner resale demand"
+      ],
+      "catalysts": [
+        "Freehold tenure (livability/own-stay appeal, not a forward investment edge)",
+        "D14 location near Aljunied MRT; OCR-adjacent favorable region prior"
+      ],
+      "as_of": {
+        "price": 958000,
+        "psf": 1011.62,
+        "beds": 1,
+        "sqft": 947
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Freehold and below the ~$1,290psf recent average, but the 947sqft unit is the project's largest format (penthouse) being scored against a 1-bed cohort (psf_cohort_txns=0). The -47% age-adjusted 'discount' is mostly a size effect, not a true bargain.",
+        "rating_rationale": "Treasures @ G20 is a 38-unit freehold (2015) where 1-beds start at 420sqft and run up to a 947sqft 1-bed penthouse. Recent resales average ~$1,290 psf (range $1,012-$1,543). This listing at $1,011.62 psf is at the bottom of the range precisely because it is the 947sqft top-floor large-format unit - large units structurally trade at lower PSF (v3.2 size-relative principle), so the -21% psf_premium_vs_cohort on 0 cohort txns and the -47% age-adjusted premium overstate the value. The $958k price matches the top of the project's current $648k-$958k range, so the price is real. Freehold is not a forward edge (v3.4). It carries the bedroom_sqft_mismatch flag. D14/OCR region prior is favorable, and a large freehold floor area for under $1m has some own-stay appeal, but as an investment the 'cheapness' is largely a measurement artifact and exit liquidity for an atypical large 1-bed is narrower.",
+        "red_flags": [
+          "947sqft scored as a 1-bed against a 1-bed cohort - this is the largest/penthouse format; PSF is low because of size, not value (psf_cohort_txns=0)",
+          "bedroom_sqft_mismatch + very_low_psf flags both present",
+          "$1,011psf is the floor of the $1,012-$1,543 recent-resale range, consistent with the large-unit size discount",
+          "appreciation 9.75% on 10 txns - thin, ~0 forward power",
+          "Tiny 38-unit boutique block; atypical large unit = thinner resale demand"
+        ],
+        "catalysts": [
+          "Freehold tenure (livability/own-stay appeal, not a forward investment edge)",
+          "D14 location near Aljunied MRT; OCR-adjacent favorable region prior"
+        ],
+        "rental_assessment": "Project average rent ~$2.3k/6mo, ~4% gross yield per portal; on a $958k entry for a large unit the effective yield is unremarkable.",
+        "appreciation_assessment": "9.75% trailing CAGR on 10 txns - discount per backtest priors. No dated catalyst (no MRT/en-bloc/zone driver) identified."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasures-g20-25199113",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

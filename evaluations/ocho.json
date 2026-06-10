@@ -1,0 +1,59 @@
+{
+  "condo": "Ocho",
+  "slug": "ocho",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "New freehold 4BR (1205 sqft) at Ocho, a small Geylang (D14) boutique development not completing until 2033, at $2.18M / $1813 PSF. Freehold near Aljunied is appealing, but a 7-year build-out, no resale data, and a Geylang-fringe boutique profile make this speculative as an investment.",
+      "rating_rationale": "Freehold, ~700m to Aljunied MRT (EW9), and a Paya Lebar Central backdrop are real positives, but completion in 2033 means capital is tied up for years before any 5-7yr hold even starts, and there is zero URA appreciation/transaction data to verify the $1813 PSF. Small boutique Geylang blocks are illiquid and carry location stigma. The strong Elo reflects price/spec, not verified fundamentals.",
+      "red_flags": [
+        "Completion 2033 — capital locked for ~7 years before the hold clock starts",
+        "No URA appreciation, txn count, or median PSF — value unverifiable",
+        "Small boutique Geylang-fringe development — limited liquidity and some stigma"
+      ],
+      "catalysts": [
+        "Freehold tenure near Aljunied MRT and Paya Lebar Central transformation",
+        "New-build product with modern layout"
+      ],
+      "as_of": {
+        "price": 2184533,
+        "psf": 1812.89,
+        "beds": 4,
+        "sqft": 1205.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "New freehold 4BR (1205 sqft) at Ocho, a small Geylang (D14) boutique development not completing until 2033, at $2.18M / $1813 PSF. Freehold near Aljunied is appealing, but a 7-year build-out, no resale data, and a Geylang-fringe boutique profile make this speculative as an investment.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, ~700m to Aljunied MRT (EW9), and a Paya Lebar Central backdrop are real positives, but completion in 2033 means capital is tied up for years before any 5-7yr hold even starts, and there is zero URA appreciation/transaction data to verify the $1813 PSF. Small boutique Geylang blocks are illiquid and carry location stigma. The strong Elo reflects price/spec, not verified fundamentals.",
+        "red_flags": [
+          "Completion 2033 — capital locked for ~7 years before the hold clock starts",
+          "No URA appreciation, txn count, or median PSF — value unverifiable",
+          "Small boutique Geylang-fringe development — limited liquidity and some stigma"
+        ],
+        "catalysts": [
+          "Freehold tenure near Aljunied MRT and Paya Lebar Central transformation",
+          "New-build product with modern layout"
+        ],
+        "rental_assessment": "Not relevant until ~2033; on completion, near-MRT D14 proximity to CBD supports moderate demand, but a 4BR is family-only and boutique scale limits pull.",
+        "appreciation_assessment": "Unverifiable. Freehold D14 should hold value long-term, but the long construction lag and boutique illiquidity make near-term appreciation speculative.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ocho-500060920",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

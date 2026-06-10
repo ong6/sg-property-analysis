@@ -1,0 +1,63 @@
+{
+  "condo": "Optima @ Tanah Merah",
+  "slug": "optima-tanah-merah",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1959 sqft '3BR' at Optima @ Tanah Merah for $2.78M / $1419 PSF, 250m from Tanah Merah MRT. The low PSF reflects an oversized unit (likely dual-key/PES) rather than value, and the $2.78M absolute price sits above the liquid band; 4.5%/yr appreciation (58 txn) and doorstep MRT keep it Neutral despite the size/price drag.",
+      "rating_rationale": "1959 sqft for a 3BR is oversized — $1419 PSF looks cheap vs the $1566.5 median only because it's spread over a big footprint, and $2.78M absolute is above the $2.5M liquidity ceiling, thinning the buyer pool. Offsetting: 250m to CG Tanah Merah MRT (interchange to Changi/Expo, future TEL Bayshore precinct nearby), solid 4.5%/yr on a reliable 58-txn series, and D16 Bedok/Upper East Coast TEL upside. Net Neutral.",
+      "red_flags": [
+        "Oversized 1959 sqft for a 3BR — low PSF is a size artefact",
+        "$2.78M absolute above the liquid buyer-pool band",
+        "Tanah Merah branch line adds an interchange step to the city"
+      ],
+      "catalysts": [
+        "250m to CG Tanah Merah MRT (interchange, Changi/Expo access)",
+        "D16 TEL / Bayshore precinct transformation nearby",
+        "4.5%/yr URA appreciation on a reliable 58-txn series"
+      ],
+      "as_of": {
+        "price": 2780000,
+        "psf": 1419.09,
+        "beds": 3,
+        "sqft": 1959.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1959 sqft '3BR' at Optima @ Tanah Merah for $2.78M / $1419 PSF, 250m from Tanah Merah MRT. The low PSF reflects an oversized unit (likely dual-key/PES) rather than value, and the $2.78M absolute price sits above the liquid band; 4.5%/yr appreciation (58 txn) and doorstep MRT keep it Neutral despite the size/price drag.",
+        "rating": "Neutral",
+        "rating_rationale": "1959 sqft for a 3BR is oversized — $1419 PSF looks cheap vs the $1566.5 median only because it's spread over a big footprint, and $2.78M absolute is above the $2.5M liquidity ceiling, thinning the buyer pool. Offsetting: 250m to CG Tanah Merah MRT (interchange to Changi/Expo, future TEL Bayshore precinct nearby), solid 4.5%/yr on a reliable 58-txn series, and D16 Bedok/Upper East Coast TEL upside. Net Neutral.",
+        "red_flags": [
+          "Oversized 1959 sqft for a 3BR — low PSF is a size artefact",
+          "$2.78M absolute above the liquid buyer-pool band",
+          "Tanah Merah branch line adds an interchange step to the city"
+        ],
+        "catalysts": [
+          "250m to CG Tanah Merah MRT (interchange, Changi/Expo access)",
+          "D16 TEL / Bayshore precinct transformation nearby",
+          "4.5%/yr URA appreciation on a reliable 58-txn series"
+        ],
+        "rental_assessment": "Large 3BR by Tanah Merah MRT suits families and Changi-airport-linked tenants; rental is steady but the big size caps yield at a high absolute rent. MRT proximity is the main rental draw.",
+        "appreciation_assessment": "4.5%/yr on 58 transactions is reliable and roughly OCR-plus; the oversized unit may lag the project median on resale, so expect district-trend rather than premium appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA resale-only CAGR, 58 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-optima-tanah-merah-500102557",
+        "review_file": "cov_batch_09.json"
+      }
+    }
+  ]
+}

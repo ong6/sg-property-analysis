@@ -1,0 +1,63 @@
+{
+  "condo": "The Lenox",
+  "slug": "the-lenox",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small freehold boutique 2BR (76-unit project) on Changi Road, D14. The algo's -12.9% 'cheap-vs-district' is likely a district-median artifact (D14 median lifted by newer launches), not a verified bargain on the unit itself.",
+      "rating_rationale": "Asking $1,568 psf ($928k) sits at the HIGH end of The Lenox's own band — project PSF range is ~$1,358-$1,765 and the 6-month average sale price is only ~$760k (smaller units). A directly comparable 592 sqft 2BR is separately listed at $1,604 psf, so the asking is fair-to-rich within the project, not cheap. Trailing appreciation 3.43% (19 txns) is unremarkable and has ~0 forward power per v3.4. Freehold is not a forward edge. Cohort depth is thin (8 txns) and a 'bedroom_sqft_mismatch' flag is open. D14 is RCR-ish (~+3.5% realized fwd) which is fine, but there is no dated catalyst to lift this specific unit.",
+      "red_flags": [
+        "Asking $1,568 psf is at the top of the project's $1,358-$1,765 band, not cheap within the development",
+        "'bedroom_sqft_mismatch' flag in dossier — 592 sqft for a 2BR is tight, possibly a 1+study mislabel",
+        "Only 8 psf-cohort txns; -12.9% district cheapness is likely a district-median artifact",
+        "Geylang/Changi Road locale carries resale stigma and financing-quota considerations near the red-light zone",
+        "Nearest MRT (Kembangan/Eunos) is ~10 min away — not a transit-adjacent premium"
+      ],
+      "catalysts": [
+        "Freehold tenure (livability/long-hold appeal, but not a forward price edge)",
+        "Paya Lebar Central / Airport-area URA rejuvenation broadly supports D14 demand"
+      ],
+      "as_of": {
+        "price": 928000,
+        "psf": 1567.57,
+        "beds": 2,
+        "sqft": 592
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Small freehold boutique 2BR (76-unit project) on Changi Road, D14. The algo's -12.9% 'cheap-vs-district' is likely a district-median artifact (D14 median lifted by newer launches), not a verified bargain on the unit itself.",
+        "rating_rationale": "Asking $1,568 psf ($928k) sits at the HIGH end of The Lenox's own band — project PSF range is ~$1,358-$1,765 and the 6-month average sale price is only ~$760k (smaller units). A directly comparable 592 sqft 2BR is separately listed at $1,604 psf, so the asking is fair-to-rich within the project, not cheap. Trailing appreciation 3.43% (19 txns) is unremarkable and has ~0 forward power per v3.4. Freehold is not a forward edge. Cohort depth is thin (8 txns) and a 'bedroom_sqft_mismatch' flag is open. D14 is RCR-ish (~+3.5% realized fwd) which is fine, but there is no dated catalyst to lift this specific unit.",
+        "red_flags": [
+          "Asking $1,568 psf is at the top of the project's $1,358-$1,765 band, not cheap within the development",
+          "'bedroom_sqft_mismatch' flag in dossier — 592 sqft for a 2BR is tight, possibly a 1+study mislabel",
+          "Only 8 psf-cohort txns; -12.9% district cheapness is likely a district-median artifact",
+          "Geylang/Changi Road locale carries resale stigma and financing-quota considerations near the red-light zone",
+          "Nearest MRT (Kembangan/Eunos) is ~10 min away — not a transit-adjacent premium"
+        ],
+        "catalysts": [
+          "Freehold tenure (livability/long-hold appeal, but not a forward price edge)",
+          "Paya Lebar Central / Airport-area URA rejuvenation broadly supports D14 demand"
+        ],
+        "rental_assessment": "Rents historically $3,500-$4,700; on $928k that is roughly a ~4% gross yield, decent for a small freehold unit but not standout.",
+        "appreciation_assessment": "Trailing 3.43% CAGR over 19 txns is typical and non-predictive; no dated catalyst, so I expect district-baseline (~+3.5%) forward, not outperformance."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-lenox-25583852",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

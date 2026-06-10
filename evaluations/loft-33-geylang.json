@@ -1,0 +1,65 @@
+{
+  "condo": "Loft 33 @ Geylang",
+  "slug": "loft-33-geylang",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Large freehold 3BR asking $1,354 psf - at the very bottom of the project's range - but extreme thin-cohort data (1 comp), tiny 30-unit illiquid boutique, and maintenance complaints make the 'cheap' tag a likely data quirk.",
+      "rating_rationale": "Asking $1,354 psf is at the absolute floor of the project's PSF band ($1,354-1,714) and well below the Sep-2025 high ($1,460,000), so on paper it looks like a bargain large 1,238sf 3BR. But the signals are fragile: psf_cohort_txns=1 and appreciation_txns=7, so the eye-catching -29% age-adj premium and -7.2% cohort discount rest on a single comparable - exactly the data quirk v3.4 priors warn against. The development is a 30-unit boutique with only ~13 lifetime sales (very poor exit liquidity), trailing appreciation is negative (-0.49%), and reviews flag MCST maintenance/safety concerns. Freehold is not a forward edge and D14 (RCR) lags OCR on realized forward returns. The large quantum (~$1.68m) in Geylang narrows the buyer pool further. Cheap-looking but not a defensible bargain.",
+      "red_flags": [
+        "psf_cohort_txns=1 and appreciation_txns=7 - both extremely thin; the -29% cheapness is a likely data artifact, not a real discount",
+        "Only ~13 lifetime sales in a 30-unit boutique - very poor resale liquidity",
+        "Negative trailing appreciation (-0.49% CAGR)",
+        "Reviews cite MCST maintenance and safety concerns",
+        "Large ~$1.68m quantum for a 3BR in Geylang narrows the buyer pool"
+      ],
+      "catalysts": [
+        "Walking distance to two MRT stations and Geylang amenities",
+        "Freehold tenure with no lease decay",
+        "Large 1,238sf 3BR layout rare in the price band if owner-occupier demand emerges"
+      ],
+      "as_of": {
+        "price": 1676491,
+        "psf": 1354.19,
+        "beds": 3,
+        "sqft": 1238
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "Large freehold 3BR asking $1,354 psf - at the very bottom of the project's range - but extreme thin-cohort data (1 comp), tiny 30-unit illiquid boutique, and maintenance complaints make the 'cheap' tag a likely data quirk.",
+        "rating_rationale": "Asking $1,354 psf is at the absolute floor of the project's PSF band ($1,354-1,714) and well below the Sep-2025 high ($1,460,000), so on paper it looks like a bargain large 1,238sf 3BR. But the signals are fragile: psf_cohort_txns=1 and appreciation_txns=7, so the eye-catching -29% age-adj premium and -7.2% cohort discount rest on a single comparable - exactly the data quirk v3.4 priors warn against. The development is a 30-unit boutique with only ~13 lifetime sales (very poor exit liquidity), trailing appreciation is negative (-0.49%), and reviews flag MCST maintenance/safety concerns. Freehold is not a forward edge and D14 (RCR) lags OCR on realized forward returns. The large quantum (~$1.68m) in Geylang narrows the buyer pool further. Cheap-looking but not a defensible bargain.",
+        "red_flags": [
+          "psf_cohort_txns=1 and appreciation_txns=7 - both extremely thin; the -29% cheapness is a likely data artifact, not a real discount",
+          "Only ~13 lifetime sales in a 30-unit boutique - very poor resale liquidity",
+          "Negative trailing appreciation (-0.49% CAGR)",
+          "Reviews cite MCST maintenance and safety concerns",
+          "Large ~$1.68m quantum for a 3BR in Geylang narrows the buyer pool"
+        ],
+        "catalysts": [
+          "Walking distance to two MRT stations and Geylang amenities",
+          "Freehold tenure with no lease decay",
+          "Large 1,238sf 3BR layout rare in the price band if owner-occupier demand emerges"
+        ],
+        "appreciation_assessment": "Negative trailing CAGR on just 7 txns - no forward signal. No identifiable dated catalyst. Treat as flat-to-negative.",
+        "rental_assessment": "Project rentals reported ~$1,900-3,000 (small-unit skew); a 3BR would command more but yield is unremarkable and the boutique scale limits rental comps. Not a yield play."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-loft-33-geylang-500066217",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "The Warren",
+  "slug": "the-warren",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 2,519 sqft 4BR at $2.75M in The Warren, D23 Choa Chu Kang, 330m from Choa Chu Kang MRT/LRT interchange (JS1 — Jurong Region Line). Clean resale-only 4.73%/yr on a healthy 89 txns and a $1,092 PSF ~8% under median, but the low PSF is heavily a size effect and the $2.75M OCR quantum is steep for the location.",
+      "rating_rationale": "Mixed. Strengths: 330m to Choa Chu Kang interchange now on the Jurong Region Line (JRL ~2028 catalyst), reliable 4.73% resale CAGR on a solid 89-txn sample, and PSF ~8% below median. But the headline-cheap $1,092 PSF is an illusion of size — at 2,519 sqft this is an enormous unit, and the $2.75M quantum is very high for OCR Choa Chu Kang, where buyers at that price point are scarce (HDB-upgrader budgets cap out well below). A 2004 leasehold (~78yrs left) compounds the exit problem. The JRL is a real positive and a genuine family would value the space, but for investment the $2.75M-in-OCR exit risk dominates.",
+      "red_flags": [
+        "$2.75M quantum is very high for OCR Choa Chu Kang — thin local buyer pool at that price",
+        "Low $1,092 PSF is a size illusion (2,519 sqft); per-dollar value not as cheap as it looks",
+        "2004 leasehold (~78yrs remaining) — lease decay over a 5-7yr hold"
+      ],
+      "catalysts": [
+        "330m to Choa Chu Kang interchange — Jurong Region Line (JRL ~2028) uplift",
+        "Reliable 4.73% resale CAGR on 89 txns; PSF ~8% below median",
+        "Large layout appeals to multi-gen family buyers seeking space cheaply"
+      ],
+      "as_of": {
+        "price": 2750000,
+        "psf": 1091.7,
+        "beds": 4,
+        "sqft": 2519.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 2,519 sqft 4BR at $2.75M in The Warren, D23 Choa Chu Kang, 330m from Choa Chu Kang MRT/LRT interchange (JS1 — Jurong Region Line). Clean resale-only 4.73%/yr on a healthy 89 txns and a $1,092 PSF ~8% under median, but the low PSF is heavily a size effect and the $2.75M OCR quantum is steep for the location.",
+        "rating": "Neutral",
+        "rating_rationale": "Mixed. Strengths: 330m to Choa Chu Kang interchange now on the Jurong Region Line (JRL ~2028 catalyst), reliable 4.73% resale CAGR on a solid 89-txn sample, and PSF ~8% below median. But the headline-cheap $1,092 PSF is an illusion of size — at 2,519 sqft this is an enormous unit, and the $2.75M quantum is very high for OCR Choa Chu Kang, where buyers at that price point are scarce (HDB-upgrader budgets cap out well below). A 2004 leasehold (~78yrs left) compounds the exit problem. The JRL is a real positive and a genuine family would value the space, but for investment the $2.75M-in-OCR exit risk dominates.",
+        "red_flags": [
+          "$2.75M quantum is very high for OCR Choa Chu Kang — thin local buyer pool at that price",
+          "Low $1,092 PSF is a size illusion (2,519 sqft); per-dollar value not as cheap as it looks",
+          "2004 leasehold (~78yrs remaining) — lease decay over a 5-7yr hold"
+        ],
+        "catalysts": [
+          "330m to Choa Chu Kang interchange — Jurong Region Line (JRL ~2028) uplift",
+          "Reliable 4.73% resale CAGR on 89 txns; PSF ~8% below median",
+          "Large layout appeals to multi-gen family buyers seeking space cheaply"
+        ],
+        "rental_assessment": "Weak for investment — a 2,519 sqft unit in CCK rents to a tiny pool; gross yield likely ~2.5%, the space does not command proportional rent.",
+        "appreciation_assessment": "JRL is a genuine catalyst and the 4.73% track record is dependable, but the oversized + high-quantum-in-OCR combination caps realizable upside and resilience.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-warren-500094861",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "condo": "Seahill",
+  "slug": "seahill",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Compact 667 sqft 2BR in West Coast (D05) at a low $1.0M quantum and $1,499 PSF, just under the $1,548 URA median, but with a weak 1.16% appreciation over a reliable 104 txns. The low entry price and One-North catchment help, but flat price history is a real drag for a 5-7yr hold.",
+      "rating_rationale": "1.16% URA CAGR over 104 txns is well-evidenced and genuinely weak — this development has barely appreciated. Offsets: $1.0M quantum is highly liquid, $1,499 PSF sits just below the $1,548 median, and D05/One-North supports tenant demand. Cheap and liquid, but the growth case is poor.",
+      "red_flags": [
+        "Very low 1.16% appreciation over 104 txns (well-evidenced weakness)",
+        "667 sqft efficient but no MRT listed nearby",
+        "Price stagnation suggests limited upside on exit"
+      ],
+      "catalysts": [
+        "Low $1.0M quantum — deep buyer pool",
+        "Sub-median PSF entry",
+        "One-North / NUS tenant catchment"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1499.25,
+        "beds": 2,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 667 sqft 2BR in West Coast (D05) at a low $1.0M quantum and $1,499 PSF, just under the $1,548 URA median, but with a weak 1.16% appreciation over a reliable 104 txns. The low entry price and One-North catchment help, but flat price history is a real drag for a 5-7yr hold.",
+        "rating": "Neutral",
+        "rating_rationale": "1.16% URA CAGR over 104 txns is well-evidenced and genuinely weak — this development has barely appreciated. Offsets: $1.0M quantum is highly liquid, $1,499 PSF sits just below the $1,548 median, and D05/One-North supports tenant demand. Cheap and liquid, but the growth case is poor.",
+        "red_flags": [
+          "Very low 1.16% appreciation over 104 txns (well-evidenced weakness)",
+          "667 sqft efficient but no MRT listed nearby",
+          "Price stagnation suggests limited upside on exit"
+        ],
+        "catalysts": [
+          "Low $1.0M quantum — deep buyer pool",
+          "Sub-median PSF entry",
+          "One-North / NUS tenant catchment"
+        ],
+        "rental_assessment": "Efficient 2BR near One-North rents well to tech workers and students; yield is the main attraction given the low quantum.",
+        "appreciation_assessment": "1.16% over 104 txns is a reliable signal of stagnation; do not expect material capital gain over the hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seahill-500088859",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A modestly real discount on a well-built Far East 1BR in a favorable West Coast (D5) region, but Seahill is a documented strong-yield/weak-resale name with no MRT and flat capital appreciation, so it's a rental play rather than a capital-growth buy.",
+      "rating_rationale": "Asking $1,510 PSF (635 sqft, $959k) verifies as modestly cheap: comparable 1BR listings are $1,575-$1,599 PSF and recent 1BR transactions $1,543-$1,656 PSF, against a project median ~$1,484 over 133 txns. So roughly 2-4% below current 1BR comps — real but small (psf_cohort_txns=8, age_adj -19.6%). Developer Far East Organization gives good build quality (positive). D5/West Coast sits in the favored OCR-RCR forward-return band under v3.4 priors (+3.5-4.0% vs CCR ~0.7%). However, Seahill is well-documented for 'good rental yield but poor resale performance' with many owner losses, no MRT within walking distance, and only ~1.16% trailing CAGR — the capital-appreciation story is absent. 45 rentals in 6 months shows brisk leasing demand. Net: fair-to-slightly-cheap entry with reliable rental but weak exit appreciation = Neutral, leaning to a yield buyer.",
+      "red_flags": [
+        "Documented poor resale performance / owner losses despite good rental yield",
+        "No MRT within walking distance (key liquidity/demand drag)",
+        "Only ~1.16% trailing CAGR; flat capital appreciation history",
+        "Discount vs comps is real but small (~2-4%)"
+      ],
+      "catalysts": [
+        "Far East build quality and large-amenity 338-unit development",
+        "D5/West Coast region in the favored OCR-RCR forward-return band",
+        "Strong, brisk rental market (45 lets in 6 months) supports yield"
+      ],
+      "as_of": {
+        "price": 959000,
+        "psf": 1510.24,
+        "beds": 1,
+        "sqft": 635
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A modestly real discount on a well-built Far East 1BR in a favorable West Coast (D5) region, but Seahill is a documented strong-yield/weak-resale name with no MRT and flat capital appreciation, so it's a rental play rather than a capital-growth buy.",
+        "rating_rationale": "Asking $1,510 PSF (635 sqft, $959k) verifies as modestly cheap: comparable 1BR listings are $1,575-$1,599 PSF and recent 1BR transactions $1,543-$1,656 PSF, against a project median ~$1,484 over 133 txns. So roughly 2-4% below current 1BR comps — real but small (psf_cohort_txns=8, age_adj -19.6%). Developer Far East Organization gives good build quality (positive). D5/West Coast sits in the favored OCR-RCR forward-return band under v3.4 priors (+3.5-4.0% vs CCR ~0.7%). However, Seahill is well-documented for 'good rental yield but poor resale performance' with many owner losses, no MRT within walking distance, and only ~1.16% trailing CAGR — the capital-appreciation story is absent. 45 rentals in 6 months shows brisk leasing demand. Net: fair-to-slightly-cheap entry with reliable rental but weak exit appreciation = Neutral, leaning to a yield buyer.",
+        "red_flags": [
+          "Documented poor resale performance / owner losses despite good rental yield",
+          "No MRT within walking distance (key liquidity/demand drag)",
+          "Only ~1.16% trailing CAGR; flat capital appreciation history",
+          "Discount vs comps is real but small (~2-4%)"
+        ],
+        "catalysts": [
+          "Far East build quality and large-amenity 338-unit development",
+          "D5/West Coast region in the favored OCR-RCR forward-return band",
+          "Strong, brisk rental market (45 lets in 6 months) supports yield"
+        ],
+        "appreciation_assessment": "~1.16% trailing CAGR and a track record of resale losses; forward capital growth looks below-market, so returns must come from yield, not appreciation.",
+        "rental_assessment": "Strongest part of the case: heavy rental turnover near one-north/Science Park/NUS supports steady occupancy and yield for a 1BR."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-seahill-500072919",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

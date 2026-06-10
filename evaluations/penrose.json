@@ -116,6 +116,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-500072822",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A fresh-TOP (2025) 484 sqft 1BR at $1,942 psf sits at the very floor of Penrose's current $1,942-$2,465 psf range, by CDL/Hong Leong, 6 min from Aljunied MRT in OCR-leaning D14 — the most robustly supported of the five.",
+      "rating_rationale": "$940k / 484 sqft ($1,942 psf) is literally at the bottom of Penrose's live psf range ($1,942-$2,465), below recent sub-sale ~$2,136 psf, so this 1BR is priced at the project floor rather than a mis-scrape. The data depth is the best in this batch: appreciation_txns=330 and psf_cohort_txns=12, so the -8.9% age-adj / -0.9% cohort read is reliable, not a quirk. Penrose is a 566-unit CDL/Hong Leong development (strong build quality, low defect risk) that just TOP'd in 2025 with a fresh 99-yr lease, 6 minutes from Aljunied MRT (one stop to Paya Lebar interchange). Per v3.4 priors, D14 sits toward the OCR end where forward realized returns were strongest (~+4%), and the value-at-project-floor signal is the kind the backtest favors over trailing CAGR (4.35% is story only). Modest 1BR quantum maximises rental and resale liquidity. Genuine floor-price entry, strong sponsor, MRT and OCR tailwinds support Buy; medium confidence because the cohort discount is small (-0.9%) so this is a fair-to-slightly-cheap entry rather than a deep bargain.",
+      "red_flags": [
+        "Cohort discount is only -0.9% — fairly priced rather than deeply cheap",
+        "Large 1BR supply in a 566-unit project plus nearby new launches = rental/resale competition",
+        "99-yr leasehold; high recent sub-sale churn (78 sub-sales) signals flipper presence"
+      ],
+      "catalysts": [
+        "6-min walk to Aljunied MRT (EWL), one stop to Paya Lebar (EWL/CCL interchange)",
+        "Brand-new 2025 TOP, fresh 99-yr lease, CDL/Hong Leong build quality",
+        "D14/OCR-leaning location — strongest forward-realized region in the backtest (~+4%)"
+      ],
+      "as_of": {
+        "price": 940000,
+        "psf": 1942.15,
+        "beds": 1,
+        "sqft": 484
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A fresh-TOP (2025) 484 sqft 1BR at $1,942 psf sits at the very floor of Penrose's current $1,942-$2,465 psf range, by CDL/Hong Leong, 6 min from Aljunied MRT in OCR-leaning D14 — the most robustly supported of the five.",
+        "rating_rationale": "$940k / 484 sqft ($1,942 psf) is literally at the bottom of Penrose's live psf range ($1,942-$2,465), below recent sub-sale ~$2,136 psf, so this 1BR is priced at the project floor rather than a mis-scrape. The data depth is the best in this batch: appreciation_txns=330 and psf_cohort_txns=12, so the -8.9% age-adj / -0.9% cohort read is reliable, not a quirk. Penrose is a 566-unit CDL/Hong Leong development (strong build quality, low defect risk) that just TOP'd in 2025 with a fresh 99-yr lease, 6 minutes from Aljunied MRT (one stop to Paya Lebar interchange). Per v3.4 priors, D14 sits toward the OCR end where forward realized returns were strongest (~+4%), and the value-at-project-floor signal is the kind the backtest favors over trailing CAGR (4.35% is story only). Modest 1BR quantum maximises rental and resale liquidity. Genuine floor-price entry, strong sponsor, MRT and OCR tailwinds support Buy; medium confidence because the cohort discount is small (-0.9%) so this is a fair-to-slightly-cheap entry rather than a deep bargain.",
+        "red_flags": [
+          "Cohort discount is only -0.9% — fairly priced rather than deeply cheap",
+          "Large 1BR supply in a 566-unit project plus nearby new launches = rental/resale competition",
+          "99-yr leasehold; high recent sub-sale churn (78 sub-sales) signals flipper presence"
+        ],
+        "catalysts": [
+          "6-min walk to Aljunied MRT (EWL), one stop to Paya Lebar (EWL/CCL interchange)",
+          "Brand-new 2025 TOP, fresh 99-yr lease, CDL/Hong Leong build quality",
+          "D14/OCR-leaning location — strongest forward-realized region in the backtest (~+4%)"
+        ],
+        "appreciation_assessment": "Trailing 4.35% (resale-only, 330 txns) is credible and well-supported but not extrapolated; forward case is OCR drift plus floor-price entry into a fresh, MRT-served CDL project — the robust value setup the backtest prefers.",
+        "rental_assessment": "484 sqft 1BR 6 min from Aljunied MRT is a strong rental product at a low $940k entry; yield should be among the better in this batch, with easy tenant turnover and resale liquidity."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-24959349",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

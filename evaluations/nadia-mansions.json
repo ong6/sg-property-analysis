@@ -1,0 +1,67 @@
+{
+  "condo": "Nadia Mansions",
+  "slug": "nadia-mansions",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Huge freehold 4BR (2,282sqft) at $1,534 PSF in D12, but priced at a $3.5M quantum, 41 years old (1985), 1.2km from Toa Payoh MRT, with an essentially unusable 4-txn appreciation series. Low PSF reflects sheer size, not value, and the price/age combination makes this a narrow, illiquid asset.",
+      "rating_rationale": "Multiple investment negatives stack: $3.5M quantum is well above the liquid band, the building is ~41 years old (1985) with en-bloc-or-bust dynamics rather than organic appreciation, the 6.9% URA rate is meaningless on only 4 transactions, and 1.2km to MRT is poor walkability. The cheap $1,534 PSF is an artifact of the oversized 2,282sqft floorplate. As a 5-7yr investment this is illiquid and risk-heavy.",
+      "red_flags": [
+        "$3.5M quantum — very shallow buyer pool",
+        "Built 1985 (~41yr) — aging, maintenance/financing headwinds",
+        "4-txn URA series — appreciation rate unusable",
+        "Oversized 2,282sqft inflates apparent PSF value",
+        "1.2km from Toa Payoh MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Potential en-bloc upside for an old D12 estate (speculative)",
+        "Large floorplate for multi-gen families"
+      ],
+      "as_of": {
+        "price": 3500000,
+        "psf": 1533.74,
+        "beds": 4,
+        "sqft": 2282.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Huge freehold 4BR (2,282sqft) at $1,534 PSF in D12, but priced at a $3.5M quantum, 41 years old (1985), 1.2km from Toa Payoh MRT, with an essentially unusable 4-txn appreciation series. Low PSF reflects sheer size, not value, and the price/age combination makes this a narrow, illiquid asset.",
+        "rating": "Avoid",
+        "rating_rationale": "Multiple investment negatives stack: $3.5M quantum is well above the liquid band, the building is ~41 years old (1985) with en-bloc-or-bust dynamics rather than organic appreciation, the 6.9% URA rate is meaningless on only 4 transactions, and 1.2km to MRT is poor walkability. The cheap $1,534 PSF is an artifact of the oversized 2,282sqft floorplate. As a 5-7yr investment this is illiquid and risk-heavy.",
+        "red_flags": [
+          "$3.5M quantum — very shallow buyer pool",
+          "Built 1985 (~41yr) — aging, maintenance/financing headwinds",
+          "4-txn URA series — appreciation rate unusable",
+          "Oversized 2,282sqft inflates apparent PSF value",
+          "1.2km from Toa Payoh MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Potential en-bloc upside for an old D12 estate (speculative)",
+          "Large floorplate for multi-gen families"
+        ],
+        "rental_assessment": "Large old freehold unit far from MRT rents slowly at a low yield on a $3.5M base; not a yield play.",
+        "appreciation_assessment": "No reliable trend (4 txns); future hinges on speculative en-bloc rather than market appreciation — high variance, not bankable.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "4-txn series unusable; defaulted toward old-freehold OCR-fringe baseline"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nadia-mansions-500084919",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

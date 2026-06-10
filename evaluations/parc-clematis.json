@@ -112,6 +112,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-clematis-500029072",
         "review_file": "batch_09.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Strong Buy",
+      "confidence": "medium",
+      "summary": "Verified deep discount: lowest-priced 893 sqft 2BR in a sought-after young D05 project, well below recent 2BR resales, on robust data.",
+      "rating_rationale": "Asking $1,679 psf is far below the verified 2BR resale band — 2025 transactions ran $1,828-$2,618 psf (avg ~$2,212) — and the $1.5M listing is real (PropertyGuru shows comparable 893 sqft 2BRs at $1.58M-$1.75M, so this is the cheapest motivated-seller/low-floor unit, not a mis-scrape). psf_premium_vs_cohort -26.8% and age_adj_premium -17.3% are both backed by deep data (632 appreciation txns, 35 cohort txns), so this is a high-quality value signal, not a thin-cohort quirk. D05 (Clementi / one-north / NUS) is a strong RCR-leaning rental and resale market. A genuine cheap-vs-verified-comp gap plus a robust, liquid project is exactly the value-led profile the priors reward. Confidence is medium not high only because the discount partly reflects an undisclosed low-floor/orientation, which I could not confirm on the web.",
+      "red_flags": [
+        "Discount may partly reflect a low floor / poorer facing not visible online",
+        "99LH from 2023, no FH premium",
+        "Very large project (~1,468 units) means steady competing 2BR supply"
+      ],
+      "catalysts": [
+        "Priced ~24% below verified recent 2BR resale PSF — strong margin of safety",
+        "Clementi / one-north / NUS / science-park employment base drives rental demand",
+        "Future Clementi-area redevelopment and good MRT/expressway access"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1679.73,
+        "beds": 2,
+        "sqft": 893
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Strong Buy",
+        "confidence": "medium",
+        "summary": "Verified deep discount: lowest-priced 893 sqft 2BR in a sought-after young D05 project, well below recent 2BR resales, on robust data.",
+        "rating_rationale": "Asking $1,679 psf is far below the verified 2BR resale band — 2025 transactions ran $1,828-$2,618 psf (avg ~$2,212) — and the $1.5M listing is real (PropertyGuru shows comparable 893 sqft 2BRs at $1.58M-$1.75M, so this is the cheapest motivated-seller/low-floor unit, not a mis-scrape). psf_premium_vs_cohort -26.8% and age_adj_premium -17.3% are both backed by deep data (632 appreciation txns, 35 cohort txns), so this is a high-quality value signal, not a thin-cohort quirk. D05 (Clementi / one-north / NUS) is a strong RCR-leaning rental and resale market. A genuine cheap-vs-verified-comp gap plus a robust, liquid project is exactly the value-led profile the priors reward. Confidence is medium not high only because the discount partly reflects an undisclosed low-floor/orientation, which I could not confirm on the web.",
+        "red_flags": [
+          "Discount may partly reflect a low floor / poorer facing not visible online",
+          "99LH from 2023, no FH premium",
+          "Very large project (~1,468 units) means steady competing 2BR supply"
+        ],
+        "catalysts": [
+          "Priced ~24% below verified recent 2BR resale PSF — strong margin of safety",
+          "Clementi / one-north / NUS / science-park employment base drives rental demand",
+          "Future Clementi-area redevelopment and good MRT/expressway access"
+        ],
+        "appreciation_assessment": "4.5% resale-only over 632 txns is well-supported but near-zero forward per priors; the forward case rests on the large, verified cheap-vs-comp gap in a liquid, in-demand project.",
+        "rental_assessment": "893 sqft 2BR in Clementi near NUS/one-north/Science Park enjoys deep tenant demand; the low entry price meaningfully lifts gross yield versus same-stack units bought at $2,200+ psf."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-clematis-500109485",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

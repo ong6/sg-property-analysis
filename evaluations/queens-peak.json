@@ -1,0 +1,115 @@
+{
+  "condo": "Queens Peak",
+  "slug": "queens-peak",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 484 sqft 99-year leasehold 1BR in D03 Queenstown at $2165 PSF / $1.048M, essentially on top of EW19 Queenstown MRT (90m). The URA series is robust (202 txns) and the asking is ~3.4% BELOW the $2241 project median — a rare genuine discount on a well-located RCR asset.",
+      "rating_rationale": "Doorstep to Queenstown MRT (90m) in RCR D03, which benefits from the Greater Southern Waterfront and TEL corridor. The 202-txn URA series gives high confidence; asking $2165 PSF is ~3.4% under the $2241 median (a real discount, not marketing). The ~2.85% CAGR is modest, but it's reliably measured and reflects a large mature project. Shoebox format and 99-yr tenure cap upside, but location + discount + sub-$1.05M quantum in a sought-after RCR district make this a sound entry-level Buy.",
+      "red_flags": [
+        "484 sqft shoebox — narrower resale pool",
+        "99-year leasehold (2020) — lease clock running",
+        "~2.85% measured CAGR is modest growth",
+        "$2165 PSF is a high absolute PSF, leaning on Queenstown's premium"
+      ],
+      "catalysts": [
+        "90m to EW19 Queenstown MRT — doorstep connectivity",
+        "RCR D03: Greater Southern Waterfront + TEL transformation",
+        "Listed ~3.4% below project URA median on a robust 202-txn series"
+      ],
+      "as_of": {
+        "price": 1048000,
+        "psf": 2165.29,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 484 sqft 99-year leasehold 1BR in D03 Queenstown at $2165 PSF / $1.048M, essentially on top of EW19 Queenstown MRT (90m). The URA series is robust (202 txns) and the asking is ~3.4% BELOW the $2241 project median — a rare genuine discount on a well-located RCR asset.",
+        "rating": "Buy",
+        "rating_rationale": "Doorstep to Queenstown MRT (90m) in RCR D03, which benefits from the Greater Southern Waterfront and TEL corridor. The 202-txn URA series gives high confidence; asking $2165 PSF is ~3.4% under the $2241 median (a real discount, not marketing). The ~2.85% CAGR is modest, but it's reliably measured and reflects a large mature project. Shoebox format and 99-yr tenure cap upside, but location + discount + sub-$1.05M quantum in a sought-after RCR district make this a sound entry-level Buy.",
+        "red_flags": [
+          "484 sqft shoebox — narrower resale pool",
+          "99-year leasehold (2020) — lease clock running",
+          "~2.85% measured CAGR is modest growth",
+          "$2165 PSF is a high absolute PSF, leaning on Queenstown's premium"
+        ],
+        "catalysts": [
+          "90m to EW19 Queenstown MRT — doorstep connectivity",
+          "RCR D03: Greater Southern Waterfront + TEL transformation",
+          "Listed ~3.4% below project URA median on a robust 202-txn series"
+        ],
+        "rental_assessment": "A shoebox on top of Queenstown MRT with CBD and one-north access has excellent, durable tenant demand; likely a healthy ~4% gross yield given the sub-$1.05M quantum.",
+        "appreciation_assessment": "~2.85% on 202 txns is reliable if unspectacular; GSW and TEL catalysts plus the below-median entry give realistic upside over a 5-7yr hold despite the leasehold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-queens-peak-500122910",
+        "review_file": "cov_batch_18.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Mildly under-priced 1BR directly connected to Queenstown MRT (best-in-class connectivity), in D03/RCR, with Greater Southern Waterfront upside. Robust transaction data and a decisive physical catalyst (at-door MRT) support a forward edge.",
+      "rating_rationale": "Asking 2,165.29 PSF vs verified 12-month range 2,019-2,405 (avg ~2,231) — the ask sits modestly below the trailing average, consistent with the -9.7% age-adj and -2.5% vs-cohort signals on solid data (202 appreciation txns, 19-txn cohort). The standout is the physical catalyst: Queenstown MRT (EW line, ~15 min to Raffles Place) is directly opposite, with unblocked views and longer-run Greater Southern Waterfront redevelopment upside. D03/RCR is the second-strongest realized forward region. Confidence medium rather than high because the discount is modest (~3%) and high absolute PSF (2,165) limits the value margin for a 484 sqft unit.",
+      "red_flags": [
+        "High absolute PSF (2,165) on a small 484 sqft unit — limited value cushion if the RCR market softens",
+        "Discount to comps is modest (~3%), so the edge leans on the MRT/GSW catalyst rather than price"
+      ],
+      "catalysts": [
+        "Directly connected/opposite Queenstown MRT (EW line) — exceptional, decisive connectivity",
+        "Greater Southern Waterfront long-run redevelopment upside; many units enjoy unblocked views",
+        "D03/RCR — second-strongest realized forward region (~+3.5%)"
+      ],
+      "as_of": {
+        "price": 1048000,
+        "psf": 2165.29,
+        "beds": 1,
+        "sqft": 484
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Mildly under-priced 1BR directly connected to Queenstown MRT (best-in-class connectivity), in D03/RCR, with Greater Southern Waterfront upside. Robust transaction data and a decisive physical catalyst (at-door MRT) support a forward edge.",
+        "rating_rationale": "Asking 2,165.29 PSF vs verified 12-month range 2,019-2,405 (avg ~2,231) — the ask sits modestly below the trailing average, consistent with the -9.7% age-adj and -2.5% vs-cohort signals on solid data (202 appreciation txns, 19-txn cohort). The standout is the physical catalyst: Queenstown MRT (EW line, ~15 min to Raffles Place) is directly opposite, with unblocked views and longer-run Greater Southern Waterfront redevelopment upside. D03/RCR is the second-strongest realized forward region. Confidence medium rather than high because the discount is modest (~3%) and high absolute PSF (2,165) limits the value margin for a 484 sqft unit.",
+        "red_flags": [
+          "High absolute PSF (2,165) on a small 484 sqft unit — limited value cushion if the RCR market softens",
+          "Discount to comps is modest (~3%), so the edge leans on the MRT/GSW catalyst rather than price"
+        ],
+        "catalysts": [
+          "Directly connected/opposite Queenstown MRT (EW line) — exceptional, decisive connectivity",
+          "Greater Southern Waterfront long-run redevelopment upside; many units enjoy unblocked views",
+          "D03/RCR — second-strongest realized forward region (~+3.5%)"
+        ],
+        "appreciation_assessment": "2.85% 5yr CAGR on a deep 202-txn base is reliable context but not a forward driver; the forward case rests on the at-door MRT catalyst and verified mild discount.",
+        "rental_assessment": "At-MRT 1BR with branded fittings (Smeg/Kohler) is a top rental product; project gross yields cited ~3.9-4%, strong for a city-fringe leasehold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-queens-peak-500122910",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

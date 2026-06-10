@@ -1,0 +1,65 @@
+{
+  "condo": "Haig Residences",
+  "slug": "haig-residences",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Compact freehold 3BR (only 872sqft) at Haig Residences, a small 2011 D15 development, at $1.70M / $1,950 PSF — a high PSF for a squeezed 3-bed layout, with an unreliable 8.1% URA rate (5 txns) and a weak score (451). Freehold + East Coast location are the appeal; size efficiency and thin data are the concerns.",
+      "rating_rationale": "$1,950 PSF is well above the project's $1,682 URA median and high for a small 872sqft '3BR' (cramped per-room). The 8.13%/yr URA figure rests on just 5 txns — essentially noise, not a forward rate. Score 451 / Elo 1215 with a losing 321-243 record. Marine Parade MRT is 1.1km (not walkable). Freehold tenure and deep D15 demand support resale, but the PSF premium over median and tiny size temper upside.",
+      "red_flags": [
+        "URA 8.1% rate from only 5 txns — unreliable",
+        "$1,950 PSF is ~16% above project URA median",
+        "872sqft is small for a 3BR (per-room squeeze)",
+        "Small/older (2011) boutique-scale development — thinner liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure in D15",
+        "East Coast / Marine Parade lifestyle and TEL access",
+        "Deep D15 buyer pool"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1949.54,
+        "beds": 3,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact freehold 3BR (only 872sqft) at Haig Residences, a small 2011 D15 development, at $1.70M / $1,950 PSF — a high PSF for a squeezed 3-bed layout, with an unreliable 8.1% URA rate (5 txns) and a weak score (451). Freehold + East Coast location are the appeal; size efficiency and thin data are the concerns.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,950 PSF is well above the project's $1,682 URA median and high for a small 872sqft '3BR' (cramped per-room). The 8.13%/yr URA figure rests on just 5 txns — essentially noise, not a forward rate. Score 451 / Elo 1215 with a losing 321-243 record. Marine Parade MRT is 1.1km (not walkable). Freehold tenure and deep D15 demand support resale, but the PSF premium over median and tiny size temper upside.",
+        "red_flags": [
+          "URA 8.1% rate from only 5 txns — unreliable",
+          "$1,950 PSF is ~16% above project URA median",
+          "872sqft is small for a 3BR (per-room squeeze)",
+          "Small/older (2011) boutique-scale development — thinner liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure in D15",
+          "East Coast / Marine Parade lifestyle and TEL access",
+          "Deep D15 buyer pool"
+        ],
+        "rental_assessment": "East Coast rental demand is strong, but a compact 3BR at this price yields modestly; families may prefer larger layouts.",
+        "appreciation_assessment": "Discard the 8.1% (5 txns); FH D15 supports mid-single-digit at best, capped by the above-median entry PSF.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D15 FH RCR prior; URA 8.1% discarded (5 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-haig-residences-500084279",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

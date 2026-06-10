@@ -1,0 +1,63 @@
+{
+  "condo": "Trilive",
+  "slug": "trilive",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 904sqft 3BR at Trilive Kovan, listed at $1,769 psf — a ~6% discount to the $1,890 URA median, on a respectable 46-transaction series appreciating ~3.7%/yr. Roxy-Pacific build is acceptable but the development is ~80% dual-key/shoebox stock that skews the resale pool toward yield-chasing investors rather than family upgraders.",
+      "rating_rationale": "Priced below URA median ($1,769 vs $1,890 psf) on solid txn depth (46), freehold tenure, and 770m to Kovan NE line — genuine positives. But D19 OCR appreciation of only 3.7%/yr is below the RCR alternatives in this batch, the dual-key-heavy development is a niche resale product, and a 904sqft 3BR is compact. Fair value, not a standout.",
+      "red_flags": [
+        "Development is ~80% dual-key/shoebox — narrower family-buyer resale pool",
+        "OCR appreciation 3.7%/yr, below RCR peers",
+        "904sqft is tight for a true 3BR"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Listed ~6% below URA median PSF",
+        "Kovan/Hougang amenities and NE line access"
+      ],
+      "as_of": {
+        "price": 1600000,
+        "psf": 1769.91,
+        "beds": 3,
+        "sqft": 904.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 904sqft 3BR at Trilive Kovan, listed at $1,769 psf — a ~6% discount to the $1,890 URA median, on a respectable 46-transaction series appreciating ~3.7%/yr. Roxy-Pacific build is acceptable but the development is ~80% dual-key/shoebox stock that skews the resale pool toward yield-chasing investors rather than family upgraders.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced below URA median ($1,769 vs $1,890 psf) on solid txn depth (46), freehold tenure, and 770m to Kovan NE line — genuine positives. But D19 OCR appreciation of only 3.7%/yr is below the RCR alternatives in this batch, the dual-key-heavy development is a niche resale product, and a 904sqft 3BR is compact. Fair value, not a standout.",
+        "red_flags": [
+          "Development is ~80% dual-key/shoebox — narrower family-buyer resale pool",
+          "OCR appreciation 3.7%/yr, below RCR peers",
+          "904sqft is tight for a true 3BR"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Listed ~6% below URA median PSF",
+          "Kovan/Hougang amenities and NE line access"
+        ],
+        "rental_assessment": "Dual-key configs rent well to multi-tenant arrangements; Kovan has steady HDB-adjacent tenant demand. Yield is the development's selling point rather than capital growth.",
+        "appreciation_assessment": "URA resale series (46 txn) supports ~3.7%/yr, a reliable OCR figure. No major catalyst to lift it above baseline.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "URA resale-only series, 46 txn"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-trilive-500072569",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

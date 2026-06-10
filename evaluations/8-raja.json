@@ -1,0 +1,63 @@
+{
+  "condo": "8 Raja",
+  "slug": "8-raja",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A large 2,024 sqft 4BR freehold in D12 (8 Raja, Whampoa/Serangoon Rd fringe, TOP 2013) at $3.28M / $1,621 PSF. Quantum is well above the $3M liquidity ceiling, the 4.80%/yr rate rests on only 2 URA transactions, and the PSF sits just above the $1,597 median in a niche large-format segment.",
+      "rating_rationale": "At $3.28M this is past the point where the buyer pool thins sharply, and a 2,024 sqft 4BR is a niche large-family product with limited demand and weak rental yield per dollar. The 4.80%/yr appreciation figure is derived from just 2 transactions, so it carries no statistical weight, and the asking $1,621 PSF is already above the $1,597 URA median. Score 463 and a sub-.500 arena record (189-217) reflect the poor risk/reward. Freehold and generous space suit own-stay, but as a 5-7yr investment the quantum, illiquidity and unreliable data make this one to avoid.",
+      "red_flags": [
+        "$3.28M quantum well above the $3M liquidity ceiling — shallow buyer pool",
+        "Appreciation from only 2 URA transactions — statistically meaningless",
+        "Large 2,024 sqft 4BR is a niche, slow-moving format",
+        "Asking PSF above URA median in a thin segment",
+        "Low rental yield on a large high-quantum unit"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Generous 2,024 sqft for the family own-stay buyer",
+        "Future Mount Pleasant TEL station ~850m provides long-term connectivity"
+      ],
+      "as_of": {
+        "price": 3280000,
+        "psf": 1620.55,
+        "beds": 4,
+        "sqft": 2024.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 2,024 sqft 4BR freehold in D12 (8 Raja, Whampoa/Serangoon Rd fringe, TOP 2013) at $3.28M / $1,621 PSF. Quantum is well above the $3M liquidity ceiling, the 4.80%/yr rate rests on only 2 URA transactions, and the PSF sits just above the $1,597 median in a niche large-format segment.",
+        "rating": "Avoid",
+        "rating_rationale": "At $3.28M this is past the point where the buyer pool thins sharply, and a 2,024 sqft 4BR is a niche large-family product with limited demand and weak rental yield per dollar. The 4.80%/yr appreciation figure is derived from just 2 transactions, so it carries no statistical weight, and the asking $1,621 PSF is already above the $1,597 URA median. Score 463 and a sub-.500 arena record (189-217) reflect the poor risk/reward. Freehold and generous space suit own-stay, but as a 5-7yr investment the quantum, illiquidity and unreliable data make this one to avoid.",
+        "red_flags": [
+          "$3.28M quantum well above the $3M liquidity ceiling — shallow buyer pool",
+          "Appreciation from only 2 URA transactions — statistically meaningless",
+          "Large 2,024 sqft 4BR is a niche, slow-moving format",
+          "Asking PSF above URA median in a thin segment",
+          "Low rental yield on a large high-quantum unit"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Generous 2,024 sqft for the family own-stay buyer",
+          "Future Mount Pleasant TEL station ~850m provides long-term connectivity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-8-raja-500151188",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "condo": "Blossom Residences",
+  "slug": "blossom-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Mass-market 99yr leasehold 4BR in Bukit Panjang at a sub-$1.4k PSF entry that is genuinely affordable for a family-size unit. But D23 is a low-appreciation OCR fringe with no near-term catalyst, served only by an LRT feeder, so upside is capped.",
+      "rating_rationale": "$1.75M / $1401 PSF for a 1249 sqft 4BR is reasonable value and sits inside the deep $1.8M-and-below family band, supporting decent exit liquidity for HDB upgraders. However D23 Bukit Panjang appreciates at the OCR ~3.7%/yr baseline with no MRT (LRT feeder only) and no government-zone catalyst; the 2014 build is mid-aged. Score 573 / Elo 1222 is mid-pack. A hold-and-rent play, not a growth play.",
+      "red_flags": [
+        "No URA appreciation/txn data supplied — rate inferred from district baseline",
+        "Only LRT (Segar BP11) connectivity; D23 is an OCR fringe with weak appreciation history",
+        "12yr-old leasehold; depreciation accelerates as lease ages toward the 60yr mark"
+      ],
+      "catalysts": [
+        "Affordable 4BR entry well below $1.8M attracts a broad HDB-upgrader buyer pool",
+        "Bukit Panjang Integrated Transport Hub / Hillion amenities support rental tenancy"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1401.12,
+        "beds": 4,
+        "sqft": 1249.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Mass-market 99yr leasehold 4BR in Bukit Panjang at a sub-$1.4k PSF entry that is genuinely affordable for a family-size unit. But D23 is a low-appreciation OCR fringe with no near-term catalyst, served only by an LRT feeder, so upside is capped.",
+        "rating": "Neutral",
+        "rating_rationale": "$1.75M / $1401 PSF for a 1249 sqft 4BR is reasonable value and sits inside the deep $1.8M-and-below family band, supporting decent exit liquidity for HDB upgraders. However D23 Bukit Panjang appreciates at the OCR ~3.7%/yr baseline with no MRT (LRT feeder only) and no government-zone catalyst; the 2014 build is mid-aged. Score 573 / Elo 1222 is mid-pack. A hold-and-rent play, not a growth play.",
+        "red_flags": [
+          "No URA appreciation/txn data supplied — rate inferred from district baseline",
+          "Only LRT (Segar BP11) connectivity; D23 is an OCR fringe with weak appreciation history",
+          "12yr-old leasehold; depreciation accelerates as lease ages toward the 60yr mark"
+        ],
+        "catalysts": [
+          "Affordable 4BR entry well below $1.8M attracts a broad HDB-upgrader buyer pool",
+          "Bukit Panjang Integrated Transport Hub / Hillion amenities support rental tenancy"
+        ],
+        "rental_assessment": "2BR-equivalent demand is thin out here; 4BR rents to families and the gross yield is modest (~3-3.5%). Tenant pool is local, not expat. Adequate, not a draw.",
+        "appreciation_assessment": "OCR baseline ~3.7%/yr with no project-specific URA series and no catalyst; expect market-tracking, low-single-digit appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR/D23 regional baseline — no project-specific URA data in dossier"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-blossom-residences-500137365",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

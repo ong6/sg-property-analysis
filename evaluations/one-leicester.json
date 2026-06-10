@@ -1,0 +1,63 @@
+{
+  "condo": "One Leicester",
+  "slug": "one-leicester",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,249 sqft 3BR (One Leicester, D13) just 300m from Potong Pasir MRT at $2.499M / $2,001 psf. Doorstep MRT and freehold are genuine strengths, but the asking sits at the very top of the project's recent $1,602-$2,013 psf transacted range, and the headline 11% CAGR is small-sample (22 txns) inflation — fully priced, not cheap.",
+      "rating_rationale": "Web check: One Leicester (194-unit FH, 2009) transacted $1,602-$2,013 psf over the last year, avg ~$1,854. The $2,001 psf asking is at the top of that range and ~0.7% above the $1,987 URA median — no discount. The eye-catching 11% CAGR is a 22-txn artifact and not bankable. Doorstep Potong Pasir MRT (300m) and freehold tenure are real positives, and the strong frontier score (799) reflects them, but at $2.5M for a 3BR you are paying full price into the upper liquidity band — the upside is already in the price.",
+      "red_flags": [
+        "$2,001 psf asking is at the TOP of the recent $1,602-$2,013 transacted range",
+        "11% CAGR from only 22 txns — small-sample inflation, not reliable",
+        "$2.5M quantum at the upper edge of the deep buyer band",
+        "Priced slightly above URA median — no value cushion"
+      ],
+      "catalysts": [
+        "300m to Potong Pasir NE10 MRT — doorstep connectivity",
+        "Freehold tenure in city-fringe D13",
+        "Mature Potong Pasir/Macpherson estate with steady owner-occupier demand"
+      ],
+      "as_of": {
+        "price": 2499000,
+        "psf": 2000.8,
+        "beds": 3,
+        "sqft": 1249.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,249 sqft 3BR (One Leicester, D13) just 300m from Potong Pasir MRT at $2.499M / $2,001 psf. Doorstep MRT and freehold are genuine strengths, but the asking sits at the very top of the project's recent $1,602-$2,013 psf transacted range, and the headline 11% CAGR is small-sample (22 txns) inflation — fully priced, not cheap.",
+        "rating": "Neutral",
+        "rating_rationale": "Web check: One Leicester (194-unit FH, 2009) transacted $1,602-$2,013 psf over the last year, avg ~$1,854. The $2,001 psf asking is at the top of that range and ~0.7% above the $1,987 URA median — no discount. The eye-catching 11% CAGR is a 22-txn artifact and not bankable. Doorstep Potong Pasir MRT (300m) and freehold tenure are real positives, and the strong frontier score (799) reflects them, but at $2.5M for a 3BR you are paying full price into the upper liquidity band — the upside is already in the price.",
+        "red_flags": [
+          "$2,001 psf asking is at the TOP of the recent $1,602-$2,013 transacted range",
+          "11% CAGR from only 22 txns — small-sample inflation, not reliable",
+          "$2.5M quantum at the upper edge of the deep buyer band",
+          "Priced slightly above URA median — no value cushion"
+        ],
+        "catalysts": [
+          "300m to Potong Pasir NE10 MRT — doorstep connectivity",
+          "Freehold tenure in city-fringe D13",
+          "Mature Potong Pasir/Macpherson estate with steady owner-occupier demand"
+        ],
+        "rental_assessment": "Doorstep-MRT 3BR in a city-fringe estate rents well to families; ~3% gross at $2.5M — modest but stable demand.",
+        "appreciation_assessment": "Discount the 11% — true rate is more like mid-single-digit FH city-fringe. With the asking at the top of the transacted range, near-term upside is limited.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-one-leicester-500119262",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

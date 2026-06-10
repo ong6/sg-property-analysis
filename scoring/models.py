@@ -67,11 +67,6 @@ class QuickScore:
     reason: Optional[str] = None
     breakdown: dict = field(default_factory=dict)
 
-    @property
-    def tier_label(self) -> str:
-        labels = {1: "Tier 1 (Keep)", 2: "Tier 2 (Maybe)", 3: "Rejected"}
-        return labels.get(self.tier, "Unknown")
-
 
 @dataclass
 class FutureScore:
@@ -189,10 +184,6 @@ class CostBreakdown:
             + self.vacancy_cost
             + self.repairs_insurance
         )
-
-    @property
-    def total_exit(self) -> float:
-        return self.ssd + self.agent_sale_commission + self.legal_fee_sell
 
 
 @dataclass

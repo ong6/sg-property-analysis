@@ -1,0 +1,65 @@
+{
+  "condo": "Rare dual key 3b3b, vacant unit, walk to Pasir Ris Mrt",
+  "slug": "rare-dual-key-3b3b-vacant-unit-walk-to-pasir-ris-mrt",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft dual-key 99yr-leasehold 3BR (likely NV Residences, Pasir Ris, ~2013) at $1.7M / $1,398 PSF — above the project's ~$1,329 PSF 12-month average — and 1.09km (13 min) from Pasir Ris MRT. Dual-key niche format plus a leasehold OCR location with leasehold decay underway.",
+      "rating_rationale": "$1,398 PSF sits above the ~$1,329 PSF recent project average, so it's priced a touch full, and the 1.09km MRT walk weakens what the listing markets as a transit play. Dual-key is a niche format (narrower resale pool) and the 99yr lease (from ~2008) is past its first decade. Against that: $1.7M quantum is liquid, the development is large (~642 units) and well-amenitied, and CRL Pasir Ris (~2030) is a future catalyst. Balanced — fine but unexciting investment.",
+      "red_flags": [
+        "~$1,398 PSF above project's ~$1,329 PSF recent average — priced full",
+        "1.09km (13 min) walk to MRT despite 'walk to MRT' framing",
+        "Dual-key — niche resale demand",
+        "99yr leasehold (from ~2008) with decay underway; OCR baseline growth"
+      ],
+      "catalysts": [
+        "Large ~642-unit full-facility development — good liquidity for OCR",
+        "CRL Pasir Ris station (~2030) future transit uplift",
+        "Dual-key suits multi-gen families / rental-plus-own-stay buyers",
+        "Liquid $1.7M quantum, vacant unit (immediate possession)"
+      ],
+      "as_of": {
+        "price": 1699999,
+        "psf": 1398.03,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft dual-key 99yr-leasehold 3BR (likely NV Residences, Pasir Ris, ~2013) at $1.7M / $1,398 PSF — above the project's ~$1,329 PSF 12-month average — and 1.09km (13 min) from Pasir Ris MRT. Dual-key niche format plus a leasehold OCR location with leasehold decay underway.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,398 PSF sits above the ~$1,329 PSF recent project average, so it's priced a touch full, and the 1.09km MRT walk weakens what the listing markets as a transit play. Dual-key is a niche format (narrower resale pool) and the 99yr lease (from ~2008) is past its first decade. Against that: $1.7M quantum is liquid, the development is large (~642 units) and well-amenitied, and CRL Pasir Ris (~2030) is a future catalyst. Balanced — fine but unexciting investment.",
+        "red_flags": [
+          "~$1,398 PSF above project's ~$1,329 PSF recent average — priced full",
+          "1.09km (13 min) walk to MRT despite 'walk to MRT' framing",
+          "Dual-key — niche resale demand",
+          "99yr leasehold (from ~2008) with decay underway; OCR baseline growth"
+        ],
+        "catalysts": [
+          "Large ~642-unit full-facility development — good liquidity for OCR",
+          "CRL Pasir Ris station (~2030) future transit uplift",
+          "Dual-key suits multi-gen families / rental-plus-own-stay buyers",
+          "Liquid $1.7M quantum, vacant unit (immediate possession)"
+        ],
+        "rental_assessment": "Dual-key enables dual rental streams and the large development is tenant-friendly, but Pasir Ris is a softer, supply-heavy OCR rental market; yield moderate.",
+        "appreciation_assessment": "No project URA data here, and listing is above the recent project average; leasehold decay plus OCR baseline cap upside despite CRL optionality. Neutral.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rare-dual-key-3b3b-vacant-unit-walk-to-pasir-ris-mrt-60223270",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

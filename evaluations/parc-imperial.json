@@ -1,0 +1,115 @@
+{
+  "condo": "Parc Imperial",
+  "slug": "parc-imperial",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 495 sqft 1BR freehold shoebox in D05 Pasir Panjang (Parc Imperial, TOP 2010) at $820k / $1,657 PSF — well below the $1,757 URA median, just 300m from Haw Par Villa MRT. The fatal flaw: a reliable 36-transaction base shows the development has appreciated only 0.41%/yr, essentially flat for over a decade.",
+      "rating_rationale": "Parc Imperial looks cheap (asking $1,657 PSF vs $1,757 median) and the 300m MRT walk plus freehold tenure are genuine positives, but the dominant fact is the 0.41%/yr appreciation on a robust 36-transaction base — the development has been effectively dead money for years, and the low PSF reflects that persistent weakness rather than a bargain. A 495 sqft shoebox 1BR is the narrowest buyer segment, the weak arena record (92-220, Elo 898) is the worst in the batch, and there is no catalyst to reverse the flat trajectory. For a 5-7yr investment hold this is an avoid despite the low quantum.",
+      "red_flags": [
+        "0.41%/yr appreciation on a reliable 36-txn base — effectively flat for over a decade",
+        "495 sqft shoebox 1BR — narrowest buyer/tenant pool",
+        "Worst arena record in batch (92-220-3, Elo 898)",
+        "Low PSF reflects chronic underperformance, not a bargain"
+      ],
+      "catalysts": [
+        "Freehold and 300m to Haw Par Villa MRT supports steady rental occupancy",
+        "Low $820k quantum keeps entry friction and ABSD base low"
+      ],
+      "as_of": {
+        "price": 820000,
+        "psf": 1656.57,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 495 sqft 1BR freehold shoebox in D05 Pasir Panjang (Parc Imperial, TOP 2010) at $820k / $1,657 PSF — well below the $1,757 URA median, just 300m from Haw Par Villa MRT. The fatal flaw: a reliable 36-transaction base shows the development has appreciated only 0.41%/yr, essentially flat for over a decade.",
+        "rating": "Avoid",
+        "rating_rationale": "Parc Imperial looks cheap (asking $1,657 PSF vs $1,757 median) and the 300m MRT walk plus freehold tenure are genuine positives, but the dominant fact is the 0.41%/yr appreciation on a robust 36-transaction base — the development has been effectively dead money for years, and the low PSF reflects that persistent weakness rather than a bargain. A 495 sqft shoebox 1BR is the narrowest buyer segment, the weak arena record (92-220, Elo 898) is the worst in the batch, and there is no catalyst to reverse the flat trajectory. For a 5-7yr investment hold this is an avoid despite the low quantum.",
+        "red_flags": [
+          "0.41%/yr appreciation on a reliable 36-txn base — effectively flat for over a decade",
+          "495 sqft shoebox 1BR — narrowest buyer/tenant pool",
+          "Worst arena record in batch (92-220-3, Elo 898)",
+          "Low PSF reflects chronic underperformance, not a bargain"
+        ],
+        "catalysts": [
+          "Freehold and 300m to Haw Par Villa MRT supports steady rental occupancy",
+          "Low $820k quantum keeps entry friction and ABSD base low"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-imperial-500057333",
+        "review_file": "cov_batch_32.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Freehold 1BR (495sqft) at Pasir Panjang Rd, D05, near Pasir Panjang/Haw Par Villa Circle Line MRT. Asking $1,657 psf is genuinely below the project's recent average — the most credible value of the five.",
+      "rating_rationale": "This is the one case where the algo's 'cheap' read is corroborated by real transactions, not a thin-cohort quirk (psf_cohort_txns=5, appreciation_txns=36). Verified last-12-month range is $1,193-$1,984 psf at avg ~$1,750, with the $1,984 high set by a 398sqft micro-unit; this 495sqft unit at $1,657 psf is ~5% under the average and well inside the band — a real, if modest, discount. District 5 (West Coast/Pasir Panjang corridor) sits in the favorable OCR/RCR forward region per the v3.4 backtest, the opposite of the discredited CCR-prestige prior. Quoted ~5.2% gross rental yield is strong for a freehold shoebox. Tempering factors: built 2010 (old_property flag, 16yrs), shoebox-heavy 138-unit project, and flat trailing appreciation (0.41% CAGR — discount for story only, not a forward guarantee). Net: verified cheap-vs-peers + strong yield + favorable region outweigh the age; a defensible Buy at medium confidence.",
+      "red_flags": [
+        "Built 2010 (old_property) — 16-year-old freehold, dated finishes likely",
+        "Shoebox-dominated small project; resale liquidity concentrated in 1BR sub-market",
+        "Trailing appreciation near zero (0.41% CAGR) — no momentum tailwind"
+      ],
+      "catalysts": [
+        "Verified asking PSF (~$1,657) below project 12-month average (~$1,750)",
+        "Strong ~5.2% gross rental yield on a freehold shoebox",
+        "District 5 OCR/RCR — favorable forward-return region per v3.4 backtest",
+        "Circle Line access (Pasir Panjang / Haw Par Villa); Greater Southern Waterfront longer-term upside"
+      ],
+      "as_of": {
+        "price": 820000,
+        "psf": 1656.57,
+        "beds": 1,
+        "sqft": 495
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Freehold 1BR (495sqft) at Pasir Panjang Rd, D05, near Pasir Panjang/Haw Par Villa Circle Line MRT. Asking $1,657 psf is genuinely below the project's recent average — the most credible value of the five.",
+        "rating_rationale": "This is the one case where the algo's 'cheap' read is corroborated by real transactions, not a thin-cohort quirk (psf_cohort_txns=5, appreciation_txns=36). Verified last-12-month range is $1,193-$1,984 psf at avg ~$1,750, with the $1,984 high set by a 398sqft micro-unit; this 495sqft unit at $1,657 psf is ~5% under the average and well inside the band — a real, if modest, discount. District 5 (West Coast/Pasir Panjang corridor) sits in the favorable OCR/RCR forward region per the v3.4 backtest, the opposite of the discredited CCR-prestige prior. Quoted ~5.2% gross rental yield is strong for a freehold shoebox. Tempering factors: built 2010 (old_property flag, 16yrs), shoebox-heavy 138-unit project, and flat trailing appreciation (0.41% CAGR — discount for story only, not a forward guarantee). Net: verified cheap-vs-peers + strong yield + favorable region outweigh the age; a defensible Buy at medium confidence.",
+        "red_flags": [
+          "Built 2010 (old_property) — 16-year-old freehold, dated finishes likely",
+          "Shoebox-dominated small project; resale liquidity concentrated in 1BR sub-market",
+          "Trailing appreciation near zero (0.41% CAGR) — no momentum tailwind"
+        ],
+        "catalysts": [
+          "Verified asking PSF (~$1,657) below project 12-month average (~$1,750)",
+          "Strong ~5.2% gross rental yield on a freehold shoebox",
+          "District 5 OCR/RCR — favorable forward-return region per v3.4 backtest",
+          "Circle Line access (Pasir Panjang / Haw Par Villa); Greater Southern Waterfront longer-term upside"
+        ],
+        "appreciation_assessment": "0.41% 5yr CAGR on a solid 36-txn base — flat trailing, treated as near-zero forward signal. The investment case is value + yield + region, not momentum.",
+        "rental_assessment": "Quoted ~5.2% gross yield is among the strongest in this cohort; freehold shoebox near Circle Line and one-north/NUS catchment underpins steady tenant demand."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-imperial-500057333",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

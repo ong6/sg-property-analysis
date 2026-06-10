@@ -1,0 +1,63 @@
+{
+  "condo": "AMO Residence",
+  "slug": "amo-residence",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Compact 678sqft 2BR at AMO Residence, the just-completed (2026) UOL development in Ang Mo Kio, listed $1.5M at $2,212 PSF — notably BELOW recent resale of $2,359–$2,618 PSF (avg ~$2,513). Backed by a deep 401-txn URA series and a strong 6.18% resale-only rate; the sub-median pricing on a quality, park-facing TE-line project is the most attractive entry in the batch.",
+      "rating_rationale": "Web check confirms AMO resale transacts $2,359–$2,618 PSF (avg $2,513), so this $2,212 PSF listing is ~12% under market — a real discount, not a mispriced oversized unit (678sqft is efficient). Resale-only appreciation 6.18%/yr over 401 txns is highly reliable. UOL build quality, Bishan-AMK park views, 550m to Mayflower TE6, and a sub-$1.5M ticket = deep buyer pool. has_new_launch_bias flag is on but the 678sqft unit at $1.5M is squarely in the liquid sweet spot. Verify the listing isn't a problem stack given the discount.",
+      "red_flags": [
+        "~12% below resale median — confirm no defect/low-floor/poor-facing reason for the discount",
+        "TOP 2026 means initial rental/resale supply wave from the project's own MMR"
+      ],
+      "catalysts": [
+        "Priced ~12% under recent AMO resale transactions",
+        "6.18%/yr resale appreciation on a deep 401-txn series",
+        "550m to Mayflower (Thomson-East Coast Line)",
+        "Bishan-AMK Park frontage; UOL developer reputation"
+      ],
+      "as_of": {
+        "price": 1499999,
+        "psf": 2212.39,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact 678sqft 2BR at AMO Residence, the just-completed (2026) UOL development in Ang Mo Kio, listed $1.5M at $2,212 PSF — notably BELOW recent resale of $2,359–$2,618 PSF (avg ~$2,513). Backed by a deep 401-txn URA series and a strong 6.18% resale-only rate; the sub-median pricing on a quality, park-facing TE-line project is the most attractive entry in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "Web check confirms AMO resale transacts $2,359–$2,618 PSF (avg $2,513), so this $2,212 PSF listing is ~12% under market — a real discount, not a mispriced oversized unit (678sqft is efficient). Resale-only appreciation 6.18%/yr over 401 txns is highly reliable. UOL build quality, Bishan-AMK park views, 550m to Mayflower TE6, and a sub-$1.5M ticket = deep buyer pool. has_new_launch_bias flag is on but the 678sqft unit at $1.5M is squarely in the liquid sweet spot. Verify the listing isn't a problem stack given the discount.",
+        "red_flags": [
+          "~12% below resale median — confirm no defect/low-floor/poor-facing reason for the discount",
+          "TOP 2026 means initial rental/resale supply wave from the project's own MMR"
+        ],
+        "catalysts": [
+          "Priced ~12% under recent AMO resale transactions",
+          "6.18%/yr resale appreciation on a deep 401-txn series",
+          "550m to Mayflower (Thomson-East Coast Line)",
+          "Bishan-AMK Park frontage; UOL developer reputation"
+        ],
+        "rental_assessment": "AMK/Bishan has strong tenant demand (schools, TEL to CBD); compact efficient 2BR is highly rentable with good yield at this price.",
+        "appreciation_assessment": "6.18% resale-only is robust; entering below market adds a margin of safety on top.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA resale-only 401-txn series, modestly trimmed for new-completion supply"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-amo-residence-60028002",
+        "review_file": "cov_batch_06.json"
+      }
+    }
+  ]
+}

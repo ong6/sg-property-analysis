@@ -56,6 +56,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-a-treasure-trove-60236135",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Best data depth of the batch (215 appreciation txns, 15 cohort) and a strong OCR location (Punggol MRT walkable, Waterway Point opposite), but the S$1,645 psf 2BR ask is near the top of the verified S$1,085-1,676 range — close to fair/full, not a bargain. Cosmetic estate-condition concerns temper it.",
+      "rating_rationale": "Web-verified 12-month range was S$1,085-1,676 psf (avg ~S$1,560), high S$1,676 in Feb 2026. At S$1,645 psf this 2BR is near the ceiling — consistent with the dossier's roughly-fair signals (age_adj -4.4%, psf_premium +1.1% on a solid 15-txn cohort), so the modest 'discount' is real but small. Per v3.4, value leads and there's only a slim cushion here; the genuine positive is region (OCR forward ~+4%) plus excellent connectivity. Reviews flag estate cosmetic wear (yellowing walls, cracks, damaged water features) which can weigh on a 5-7yr resale narrative. Net: a defensible hold, not a clear buy.",
+      "red_flags": [
+        "S$1,645 psf ask near top of verified S$1,085-1,676 range — limited value cushion",
+        "Reported estate-condition issues (yellowing walls, cracks, vandalism, damaged water features)",
+        "882-unit mega-project — supply competition on resale/leasing within the same development"
+      ],
+      "catalysts": [
+        "Punggol MRT within walking distance; Waterway Point mall directly opposite",
+        "OCR forward region realized ~+4% (v3.4); 70% MOAT score for convenience"
+      ],
+      "as_of": {
+        "price": 1275000,
+        "psf": 1645.16,
+        "beds": 2,
+        "sqft": 775
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Best data depth of the batch (215 appreciation txns, 15 cohort) and a strong OCR location (Punggol MRT walkable, Waterway Point opposite), but the S$1,645 psf 2BR ask is near the top of the verified S$1,085-1,676 range — close to fair/full, not a bargain. Cosmetic estate-condition concerns temper it.",
+        "rating_rationale": "Web-verified 12-month range was S$1,085-1,676 psf (avg ~S$1,560), high S$1,676 in Feb 2026. At S$1,645 psf this 2BR is near the ceiling — consistent with the dossier's roughly-fair signals (age_adj -4.4%, psf_premium +1.1% on a solid 15-txn cohort), so the modest 'discount' is real but small. Per v3.4, value leads and there's only a slim cushion here; the genuine positive is region (OCR forward ~+4%) plus excellent connectivity. Reviews flag estate cosmetic wear (yellowing walls, cracks, damaged water features) which can weigh on a 5-7yr resale narrative. Net: a defensible hold, not a clear buy.",
+        "red_flags": [
+          "S$1,645 psf ask near top of verified S$1,085-1,676 range — limited value cushion",
+          "Reported estate-condition issues (yellowing walls, cracks, vandalism, damaged water features)",
+          "882-unit mega-project — supply competition on resale/leasing within the same development"
+        ],
+        "catalysts": [
+          "Punggol MRT within walking distance; Waterway Point mall directly opposite",
+          "OCR forward region realized ~+4% (v3.4); 70% MOAT score for convenience"
+        ],
+        "appreciation_assessment": "Dossier 6.97% 5yr CAGR on a deep 215 txns is the most credible in the batch historically, but discount forward per v3.4; the OCR/connectivity story is the durable driver, not the trailing CAGR.",
+        "rental_assessment": "Compact 2BR next to Punggol MRT and a mall leases readily; yield at this entry price is roughly market-typical for OCR — adequate but not standout."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-a-treasure-trove-60236135",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

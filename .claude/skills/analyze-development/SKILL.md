@@ -18,6 +18,7 @@ hints at own-stay or is ambiguous, ask the user before rating
    ```bash
    python invest.py --recall "<condo name>"
    python invest.py --search-db "<condo name>"
+   python invest.py --profile "<condo name>"   # existing stack/facing/layout profile
    ```
 
 2. **Gather**:
@@ -27,6 +28,15 @@ hints at own-stay or is ambiguous, ask the user before rating
    ```
    Creates `output/run_NNN/raw_analysis.json` (one entry per unit type).
 
+**Forward-signal priors (v3.4 — backtested; full list in the rubric).** Lead with
+VALUE, not trailing appreciation. Strongest robust signals: **cheap-vs-district-peers**
+(`relative_value.premium_vs_age_adjusted_median_pct`, `psf_premium_vs_ura_median_pct`)
+and **region** (realized fwd OCR≈+4.0% ≥ RCR≈+3.5% ≫ CCR≈+0.7% — the old "CCR leads"
+prior was inverted). Trailing `appreciation.annual_rate_pct`/`momentum` ≈0 forward power
+(story/catalyst only); freehold is **not** a forward edge; absolute low PSF is mostly the
+region effect. Model explains <10% of forward variance → small `score_1000` gaps are
+noise; reserve **high** confidence for decisive physical/catalyst evidence.
+
 3. **Research & evaluate** (form your own view BEFORE looking at algo_reference):
    - Web search: `"<name> Singapore review"` (build quality, developer, defects),
      `"<name> price trend transactions"` (resale PSF direction),
@@ -35,12 +45,20 @@ hints at own-stay or is ambiguous, ask the user before rating
    - Optional sanity-check: `python invest.py --score '{...}'` — remember it
      takes your inputs at face value; it is not independent confirmation.
 
-4. **Fill `agent_evaluation`** for each unit type in `raw_analysis.json`. Put
+4. **Persist the physical findings to a profile** — this flow already researches
+   the site plan/stacks/facings, so don't let it evaporate into freeform notes:
+   run **`/research-development "<name>"`** (or build the profile JSON and
+   `python invest.py --save-profile <file>`) so every future listing in this
+   condo auto-joins to real stack data. Cite sources; set `confidence` honestly;
+   never invent a stack. This is the structured home for what used to go only in
+   `stack_notes`.
+
+5. **Fill `agent_evaluation`** for each unit type in `raw_analysis.json`. Put
    stack/facing/floor guidance in `stack_notes`; overall development verdict in
    `report_level.agent_executive_summary`. Always set `rating`, `confidence`,
    `rating_rationale`.
 
-5. **Report** (auto-saves evaluation memory; commit `evaluations/`):
+6. **Report** (auto-saves evaluation memory; commit `evaluations/` and `profiles/`):
    ```bash
    python invest.py --from-review output/run_NNN/raw_analysis.json --output output/run_NNN/final
    ```

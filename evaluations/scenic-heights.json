@@ -1,0 +1,61 @@
+{
+  "condo": "Scenic Heights",
+  "slug": "scenic-heights",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,335 sqft 4BR at Scenic Heights (D12, Balestier/Toa Payoh fringe) for $2.38M / $1,783 psf. Freehold and a strong-looking 6.5%/yr rate are attractive, but the rate sits on only 9 txns and the listing is ~7% above the project median, with no MRT listed.",
+      "rating_rationale": "Freehold tenure and a fair $2.38M quantum are positives, and the high arena Elo (1502) reflects favourable cost/value scoring. But the headline 6.5%/yr appreciation is built on just 9 URA transactions — too thin to rely on. The listing PSF ($1,783) is ~7.5% above the project's $1,659 median, i.e. priced toward the top of the project's range. No MRT within easy walk per dossier, and a built-2005 4BR in a smaller D12 development is a niche family resale. Mixed picture nets to Neutral.",
+      "red_flags": [
+        "6.5%/yr rate from only 9 txns — unreliable",
+        "Listing ~7.5% above project median PSF",
+        "No MRT proximity listed; older (2005) 4BR, niche resale"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "D12 central-fringe location (Balestier/Novena catchment)",
+        "Reasonable $2.38M quantum"
+      ],
+      "as_of": {
+        "price": 2380000,
+        "psf": 1782.77,
+        "beds": 4,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,335 sqft 4BR at Scenic Heights (D12, Balestier/Toa Payoh fringe) for $2.38M / $1,783 psf. Freehold and a strong-looking 6.5%/yr rate are attractive, but the rate sits on only 9 txns and the listing is ~7% above the project median, with no MRT listed.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold tenure and a fair $2.38M quantum are positives, and the high arena Elo (1502) reflects favourable cost/value scoring. But the headline 6.5%/yr appreciation is built on just 9 URA transactions — too thin to rely on. The listing PSF ($1,783) is ~7.5% above the project's $1,659 median, i.e. priced toward the top of the project's range. No MRT within easy walk per dossier, and a built-2005 4BR in a smaller D12 development is a niche family resale. Mixed picture nets to Neutral.",
+        "red_flags": [
+          "6.5%/yr rate from only 9 txns — unreliable",
+          "Listing ~7.5% above project median PSF",
+          "No MRT proximity listed; older (2005) 4BR, niche resale"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "D12 central-fringe location (Balestier/Novena catchment)",
+          "Reasonable $2.38M quantum"
+        ],
+        "rental_assessment": "4BR family-let near Balestier/Novena medical hub gives moderate demand; yield modest given the high entry PSF.",
+        "appreciation_assessment": "The 6.5% figure is not dependable on 9 txns. Freehold central-fringe land holds value, but pricing already at the top of the project range limits the re-rating margin.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-scenic-heights-60220017",
+        "review_file": "cov_batch_20.json"
+      }
+    }
+  ]
+}

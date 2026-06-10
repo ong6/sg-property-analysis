@@ -1,0 +1,65 @@
+{
+  "condo": "Wow! C.H.E.A.P! Move-In Ready Brand New Freehold",
+  "slug": "wow-c-h-e-a-p-move-in-ready-brand-new-freehold",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "low",
+      "summary": "A 'brand new freehold' 3BR in D15 at $2.905M / $2,700 psf — despite the 'C.H.E.A.P' headline, $2,700 psf is among the highest PSF in the batch on a 1,076 sqft unit. No built year, no transaction data, weak score (341); the marketing copy is a red flag, not a discount.",
+      "rating_rationale": "$2,700 psf is full top-of-market new-launch pricing — the 'cheap' headline is contradicted by the number. $2.905M 3BR is above the liquid band; 10-min/820m walk to MRT removes any transit premium. No built_year and no URA data make value unverifiable. score_1000 = 341 (near the batch floor) and a losing record (239-327). Nothing here supports an investment buy.",
+      "red_flags": [
+        "$2,700 psf is top-of-market — 'cheap' marketing is misleading",
+        "$2.905M 3BR above deep buyer band",
+        "Missing built_year and zero URA transaction data",
+        "10 min / 820m to MRT — no transit advantage",
+        "Gimmicky listing title signals a hard sell"
+      ],
+      "catalysts": [
+        "Freehold, brand-new condition in desirable D15",
+        "Move-in-ready appeals to own-stay buyers"
+      ],
+      "as_of": {
+        "price": 2905200,
+        "psf": 2700.0,
+        "beds": 3,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 'brand new freehold' 3BR in D15 at $2.905M / $2,700 psf — despite the 'C.H.E.A.P' headline, $2,700 psf is among the highest PSF in the batch on a 1,076 sqft unit. No built year, no transaction data, weak score (341); the marketing copy is a red flag, not a discount.",
+        "rating": "Avoid",
+        "rating_rationale": "$2,700 psf is full top-of-market new-launch pricing — the 'cheap' headline is contradicted by the number. $2.905M 3BR is above the liquid band; 10-min/820m walk to MRT removes any transit premium. No built_year and no URA data make value unverifiable. score_1000 = 341 (near the batch floor) and a losing record (239-327). Nothing here supports an investment buy.",
+        "red_flags": [
+          "$2,700 psf is top-of-market — 'cheap' marketing is misleading",
+          "$2.905M 3BR above deep buyer band",
+          "Missing built_year and zero URA transaction data",
+          "10 min / 820m to MRT — no transit advantage",
+          "Gimmicky listing title signals a hard sell"
+        ],
+        "catalysts": [
+          "Freehold, brand-new condition in desirable D15",
+          "Move-in-ready appeals to own-stay buyers"
+        ],
+        "rental_assessment": "Weak for investment — a $2.9M 3BR at $2,700 psf yields well under 3%.",
+        "appreciation_assessment": "Priced at the top of the D15 freehold range with no data to justify it; appreciation headroom is minimal and exit competes against fresh launches.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "D15 freehold new-build priced-to-top assumption"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-wow-c-h-e-a-p-move-in-ready-brand-new-freehold-500099852",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "condo": "Twin VEW",
+  "slug": "twin-vew",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Modern (2021) efficient 570 sqft 2BR in West Coast at a low $1.0M quantum and $1,754 PSF — ~8% below the $1,902 URA median — with a sound 4.14% appreciation over 147 txns and a future Jurong Region Line station nearby. Good value and liquidity, with the soft point being the ~1.1km MRT distance and OCR-typical growth.",
+      "rating_rationale": "$1,754 PSF is meaningfully below the $1,902 median and 147 txns make both pricing and the 4.14% CAGR high-confidence. The $1.0M quantum is highly liquid, the 2021 build is modern, and JRL (Pandan Reservoir, ~2028) plus Jurong Lake District add OCR-leading catalysts. Main caveat is the ~1.09km walk to the station.",
+      "red_flags": [
+        "JE7 Pandan Reservoir ~1.09km — not walk-up close",
+        "4.14% appreciation is solid but not exceptional",
+        "Jurong-area new-launch supply could compete on resale"
+      ],
+      "catalysts": [
+        "Jurong Region Line (Pandan Reservoir, ~2028)",
+        "Jurong Lake District '2nd CBD' transformation",
+        "Sub-median PSF entry at a liquid $1.0M quantum"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1754.39,
+        "beds": 2,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Modern (2021) efficient 570 sqft 2BR in West Coast at a low $1.0M quantum and $1,754 PSF — ~8% below the $1,902 URA median — with a sound 4.14% appreciation over 147 txns and a future Jurong Region Line station nearby. Good value and liquidity, with the soft point being the ~1.1km MRT distance and OCR-typical growth.",
+        "rating": "Buy",
+        "rating_rationale": "$1,754 PSF is meaningfully below the $1,902 median and 147 txns make both pricing and the 4.14% CAGR high-confidence. The $1.0M quantum is highly liquid, the 2021 build is modern, and JRL (Pandan Reservoir, ~2028) plus Jurong Lake District add OCR-leading catalysts. Main caveat is the ~1.09km walk to the station.",
+        "red_flags": [
+          "JE7 Pandan Reservoir ~1.09km — not walk-up close",
+          "4.14% appreciation is solid but not exceptional",
+          "Jurong-area new-launch supply could compete on resale"
+        ],
+        "catalysts": [
+          "Jurong Region Line (Pandan Reservoir, ~2028)",
+          "Jurong Lake District '2nd CBD' transformation",
+          "Sub-median PSF entry at a liquid $1.0M quantum"
+        ],
+        "rental_assessment": "Efficient 2BR at low quantum near the Jurong growth zone rents well to young professionals; yield is a genuine strength here.",
+        "appreciation_assessment": "4.14% over 147 txns is reliable; JRL and JLD provide upside catalysts that could push above the OCR baseline through the hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-twin-vew-23635886",
+        "review_file": "cov_batch_08.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Newer (TOP 2021) 520-unit leasehold at West Coast Vale, D05, by CSC Land. Asking $1,754 psf is meaningfully below the project's recent average, and a dated MRT catalyst (West Coast CRL/JRL by 2032) supports the forward case.",
+      "rating_rationale": "Verified value plus a real catalyst. Twin VEW's last-12-month transactions run $1,699-$2,008 psf (avg ~$1,877); this listing at $1,754 psf is ~7% below average and near the floor of the recent band — a genuine discount, consistent with the algo's age_adj_premium -12.1% (here corroborated, not a quirk). The forward catalyst is concrete and dated: the new West Coast MRT (Cross Island Line Phase 2 + Jurong Region Line interchange) is slated to open by 2032 within the West Coast Vale corridor, plus proximity to Clementi, NUS and one-north. District 5 sits in the favorable OCR/RCR forward-return band per the v3.4 backtest. Main caveat is the 'bedroom_sqft_mismatch' flag: 570sqft is shoebox/1BR-sized, so the '2BR' label is likely a compact dual-key or 2BR-compact (or a mislabel) — this affects rentability/exit nuance and the cohort is thin (psf_cohort_txns=4), so confidence is medium not high. On verified cheapness + dated MRT catalyst + favorable region, a measured Buy.",
+      "red_flags": [
+        "bedroom_sqft_mismatch — 570sqft is shoebox-sized for a '2BR'; likely compact/dual-key or a label error to confirm on viewing",
+        "psf_cohort_txns=4 — same-size comparison set is thin",
+        "99-yr leasehold; large 520-unit project means concurrent-supply competition at resale/rental",
+        "Trailing 4.14% CAGR is the highest here but, per v3.4, carries ~0 forward weight on its own"
+      ],
+      "catalysts": [
+        "West Coast MRT (Cross Island Line Phase 2 + Jurong Region Line interchange) opening by 2032 — concrete dated catalyst",
+        "Asking ~$1,754 psf vs project 12-month avg ~$1,877 (~7% below) — verified discount",
+        "District 5 OCR/RCR — favorable forward-return region per v3.4 backtest",
+        "Near Clementi, NUS, one-north and Jurong Lake District growth corridor"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 1754.39,
+        "beds": 2,
+        "sqft": 570
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Newer (TOP 2021) 520-unit leasehold at West Coast Vale, D05, by CSC Land. Asking $1,754 psf is meaningfully below the project's recent average, and a dated MRT catalyst (West Coast CRL/JRL by 2032) supports the forward case.",
+        "rating_rationale": "Verified value plus a real catalyst. Twin VEW's last-12-month transactions run $1,699-$2,008 psf (avg ~$1,877); this listing at $1,754 psf is ~7% below average and near the floor of the recent band — a genuine discount, consistent with the algo's age_adj_premium -12.1% (here corroborated, not a quirk). The forward catalyst is concrete and dated: the new West Coast MRT (Cross Island Line Phase 2 + Jurong Region Line interchange) is slated to open by 2032 within the West Coast Vale corridor, plus proximity to Clementi, NUS and one-north. District 5 sits in the favorable OCR/RCR forward-return band per the v3.4 backtest. Main caveat is the 'bedroom_sqft_mismatch' flag: 570sqft is shoebox/1BR-sized, so the '2BR' label is likely a compact dual-key or 2BR-compact (or a mislabel) — this affects rentability/exit nuance and the cohort is thin (psf_cohort_txns=4), so confidence is medium not high. On verified cheapness + dated MRT catalyst + favorable region, a measured Buy.",
+        "red_flags": [
+          "bedroom_sqft_mismatch — 570sqft is shoebox-sized for a '2BR'; likely compact/dual-key or a label error to confirm on viewing",
+          "psf_cohort_txns=4 — same-size comparison set is thin",
+          "99-yr leasehold; large 520-unit project means concurrent-supply competition at resale/rental",
+          "Trailing 4.14% CAGR is the highest here but, per v3.4, carries ~0 forward weight on its own"
+        ],
+        "catalysts": [
+          "West Coast MRT (Cross Island Line Phase 2 + Jurong Region Line interchange) opening by 2032 — concrete dated catalyst",
+          "Asking ~$1,754 psf vs project 12-month avg ~$1,877 (~7% below) — verified discount",
+          "District 5 OCR/RCR — favorable forward-return region per v3.4 backtest",
+          "Near Clementi, NUS, one-north and Jurong Lake District growth corridor"
+        ],
+        "appreciation_assessment": "4.14% 5yr CAGR on a healthy 147-txn base — best trailing of the five, but used only as story support; the forward thesis rests on the verified discount and the 2032 CRL/JRL MRT catalyst.",
+        "rental_assessment": "West Coast Vale near NUS/one-north/Science Park draws steady tenant demand; a sub-$1,754psf entry on a 2021 unit supports a competitive gross yield, though the large unit count means active rental competition."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-twin-vew-23635886",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

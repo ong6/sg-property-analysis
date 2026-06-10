@@ -1,0 +1,63 @@
+{
+  "condo": "Treasure at Tampines",
+  "slug": "treasure-at-tampines",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A compact 484 sqft 1BR at Treasure at Tampines, $795K / $1,643 PSF — ~9% below the $1,806 URA median, on a huge 1,007-txn series (resale-adjusted +4.25%/yr). Sub-$800K quantum and mega-development liquidity are pluses, but the 2,203-unit scale creates persistent internal resale competition and the 1.12km MRT walk is poor.",
+      "rating_rationale": "PSF $1,643 is ~9% under the $1,806 median and the appreciation read is the most data-rich in the batch (1,007 txns; system already discounted new-launch bias to +4.25%/yr resale-only). But Treasure is Singapore's largest condo (2,203 units) — there is always supply on the resale market, so individual units compete hard on price and a tiny 484 sqft 1BR is the most commoditised stack. Simei MRT 1.12km (13-min walk) is weak. Liquid and fairly priced, but not differentiated.",
+      "red_flags": [
+        "2,203-unit mega-development — constant internal resale supply caps per-unit pricing power",
+        "Simei MRT 1.12km / 13-min walk — poor connectivity for a 1BR tenant",
+        "Small 484 sqft shoebox — most commoditised unit type with the project",
+        "New-launch bias flagged (raw 4.96% trimmed to 4.25% resale-only)"
+      ],
+      "catalysts": [
+        "CRL + DTL extension and Tampines Regional Centre strengthen the broader OCR demand",
+        "Extensive resort-style facilities and family demand from the mega-project scale",
+        "Below-median entry PSF on a deep, reliable data series"
+      ],
+      "as_of": {
+        "price": 795000,
+        "psf": 1642.56,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 484 sqft 1BR at Treasure at Tampines, $795K / $1,643 PSF — ~9% below the $1,806 URA median, on a huge 1,007-txn series (resale-adjusted +4.25%/yr). Sub-$800K quantum and mega-development liquidity are pluses, but the 2,203-unit scale creates persistent internal resale competition and the 1.12km MRT walk is poor.",
+        "rating": "Neutral",
+        "rating_rationale": "PSF $1,643 is ~9% under the $1,806 median and the appreciation read is the most data-rich in the batch (1,007 txns; system already discounted new-launch bias to +4.25%/yr resale-only). But Treasure is Singapore's largest condo (2,203 units) — there is always supply on the resale market, so individual units compete hard on price and a tiny 484 sqft 1BR is the most commoditised stack. Simei MRT 1.12km (13-min walk) is weak. Liquid and fairly priced, but not differentiated.",
+        "red_flags": [
+          "2,203-unit mega-development — constant internal resale supply caps per-unit pricing power",
+          "Simei MRT 1.12km / 13-min walk — poor connectivity for a 1BR tenant",
+          "Small 484 sqft shoebox — most commoditised unit type with the project",
+          "New-launch bias flagged (raw 4.96% trimmed to 4.25% resale-only)"
+        ],
+        "catalysts": [
+          "CRL + DTL extension and Tampines Regional Centre strengthen the broader OCR demand",
+          "Extensive resort-style facilities and family demand from the mega-project scale",
+          "Below-median entry PSF on a deep, reliable data series"
+        ],
+        "rental_assessment": "Shoebox in a far-from-MRT mega-project rents to budget single tenants but competes with hundreds of identical units; occupancy fine, but rent and yield are pressured by internal supply.",
+        "appreciation_assessment": "Resale-adjusted +4.25%/yr is reliable, but the sheer unit count means appreciation lags better-located OCR projects; expect the project to track, not beat, the district.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasure-at-tampines-60142262",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

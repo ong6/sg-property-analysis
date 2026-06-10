@@ -1,0 +1,59 @@
+{
+  "condo": "Ceylon Crest",
+  "slug": "ceylon-crest",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1,206sqft 3BR at Ceylon Crest, D15 Marine Parade, at $2.5M / $2,073 PSF near the new TE26 Marine Parade MRT. The eye-catching 9.0%/yr URA rate rests on just 3 transactions — statistically meaningless — and the $2,073 PSF ask is ~19% above the $1,742 median.",
+      "rating_rationale": "Discard the 9.0%/yr figure: 3 transactions is far below any reliability threshold. The hard fact is the ask of $2,073 PSF sits ~19% above the $1,742 URA median, so this is a full-to-rich price; score_1000 of 433 reflects that. Offsetting: freehold, established D15 Marine Parade, and 790m to the new TE26 TEL station. A fairly-priced FH 3BR near new MRT is fine, but at this premium-to-median and $2.5M it is Neutral, not a buy.",
+      "red_flags": [
+        "Appreciation rate based on only 3 transactions — statistically unreliable",
+        "$2,073 PSF is ~19% above the $1,742 URA median — priced rich",
+        "$2.5M 3BR at the edge of the thinning buyer band; weak score_1000 (433)"
+      ],
+      "catalysts": [
+        "790m to new TE26 Marine Parade MRT (Thomson-East Coast Line)",
+        "Freehold in established, well-regarded D15 Marine Parade/East Coast"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 2072.97,
+        "beds": 3,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1,206sqft 3BR at Ceylon Crest, D15 Marine Parade, at $2.5M / $2,073 PSF near the new TE26 Marine Parade MRT. The eye-catching 9.0%/yr URA rate rests on just 3 transactions — statistically meaningless — and the $2,073 PSF ask is ~19% above the $1,742 median.",
+        "rating": "Neutral",
+        "rating_rationale": "Discard the 9.0%/yr figure: 3 transactions is far below any reliability threshold. The hard fact is the ask of $2,073 PSF sits ~19% above the $1,742 URA median, so this is a full-to-rich price; score_1000 of 433 reflects that. Offsetting: freehold, established D15 Marine Parade, and 790m to the new TE26 TEL station. A fairly-priced FH 3BR near new MRT is fine, but at this premium-to-median and $2.5M it is Neutral, not a buy.",
+        "red_flags": [
+          "Appreciation rate based on only 3 transactions — statistically unreliable",
+          "$2,073 PSF is ~19% above the $1,742 URA median — priced rich",
+          "$2.5M 3BR at the edge of the thinning buyer band; weak score_1000 (433)"
+        ],
+        "catalysts": [
+          "790m to new TE26 Marine Parade MRT (Thomson-East Coast Line)",
+          "Freehold in established, well-regarded D15 Marine Parade/East Coast"
+        ],
+        "rental_assessment": "Marine Parade is a strong rental location near the new TEL station; a FH 3BR should let well, but the high purchase PSF compresses yield.",
+        "appreciation_assessment": "No reliable URA rate (3 txns); the TEL opening supports the area, but buying ~19% above median limits near-term upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ceylon-crest-500087994",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

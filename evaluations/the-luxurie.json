@@ -54,6 +54,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-luxurie-60158015",
         "review_file": "batch_01.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,001 sqft 2BR at The Luxurie (Sengkang, Keppel-built) priced at fair value — ask is essentially in line with recent 2BR comps, so the modest -9.4% age-adjusted signal is not a meaningful bargain.",
+      "rating_rationale": "Verified transactions show The Luxurie 2BR units trading at S$1,610-1,626 psf (732 sqft) and a 969 sqft unit at S$1,610 psf (Sep 2025), so the S$1,558 psf ask on a slightly larger 1,001 sqft unit is roughly fair, not cheap — larger units correctly carry slightly lower PSF. The -9.4% age premium and -1.9% cohort premium (15 txns) describe a fairly-priced unit, not an edge. It is a well-regarded Keppel Land development with good architecture near Buangkok MRT, OCR (favourable region), but there is no dated catalyst and yield is only ~3-3.5%. Under v3.4 priors, a near-fair price plus no decisive physical catalyst lands at Neutral, not the score-827 Buy the algo implies. This is the 2BR (not the over-ranking small high-PSF 1BR that the v3.2 cohort fix targeted), so the score is more credible — but still not a bargain.",
+      "red_flags": [
+        "Ask is at/near recent transacted PSF — the 'cheap' signal is essentially fair value, not a discount",
+        "Gross rental yield only ~3.0-3.5%",
+        "Noise from nearby traffic and aircraft operations noted in resident reviews",
+        "99-year leasehold from 2011"
+      ],
+      "catalysts": [
+        "Keppel Land build, well-regarded architecture, near Buangkok MRT",
+        "OCR region — favourable forward-return prior",
+        "Mature Sengkang/Compassvale estate with full amenities"
+      ],
+      "as_of": {
+        "price": 1560000,
+        "psf": 1558.44,
+        "beds": 2,
+        "sqft": 1001
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A 1,001 sqft 2BR at The Luxurie (Sengkang, Keppel-built) priced at fair value — ask is essentially in line with recent 2BR comps, so the modest -9.4% age-adjusted signal is not a meaningful bargain.",
+        "rating_rationale": "Verified transactions show The Luxurie 2BR units trading at S$1,610-1,626 psf (732 sqft) and a 969 sqft unit at S$1,610 psf (Sep 2025), so the S$1,558 psf ask on a slightly larger 1,001 sqft unit is roughly fair, not cheap — larger units correctly carry slightly lower PSF. The -9.4% age premium and -1.9% cohort premium (15 txns) describe a fairly-priced unit, not an edge. It is a well-regarded Keppel Land development with good architecture near Buangkok MRT, OCR (favourable region), but there is no dated catalyst and yield is only ~3-3.5%. Under v3.4 priors, a near-fair price plus no decisive physical catalyst lands at Neutral, not the score-827 Buy the algo implies. This is the 2BR (not the over-ranking small high-PSF 1BR that the v3.2 cohort fix targeted), so the score is more credible — but still not a bargain.",
+        "red_flags": [
+          "Ask is at/near recent transacted PSF — the 'cheap' signal is essentially fair value, not a discount",
+          "Gross rental yield only ~3.0-3.5%",
+          "Noise from nearby traffic and aircraft operations noted in resident reviews",
+          "99-year leasehold from 2011"
+        ],
+        "catalysts": [
+          "Keppel Land build, well-regarded architecture, near Buangkok MRT",
+          "OCR region — favourable forward-return prior",
+          "Mature Sengkang/Compassvale estate with full amenities"
+        ],
+        "rental_assessment": "Mid-pack: ~3-3.5% gross yield on a solid 2BR; steady family/tenant demand near Buangkok MRT but no rental standout.",
+        "appreciation_assessment": "Trailing 7.31% CAGR (184 txns) is robust history but near-zero forward power — and since the unit is priced at fair value, there is no relative-value edge to drive outperformance. Expect roughly market-typical OCR forward returns."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-luxurie-60158015",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

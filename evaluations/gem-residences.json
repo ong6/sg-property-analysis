@@ -1,0 +1,119 @@
+{
+  "condo": "Gem Residences",
+  "slug": "gem-residences",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "Efficient 980 sqft 3BR at Gem Residences (D12, Toa Payoh) priced at $1.85M / $1888 PSF — notably ~7% below the $2036 district median — in the $1.8M-2.5M deepest-liquidity band, near Braddell MRT. Appreciation is a modest 3.9%/yr but on a very reliable 188-transaction series; price discount and strong liquidity make this a solid value entry.",
+      "rating_rationale": "Asking PSF $1888 is ~7% under the $2036.5 URA median on a deep 188-txn dataset — genuinely cheap for the project. Price $1.85M lands in the deepest buyer-pool band, 980 sqft 3BR is efficient and family-marketable, and Toa Payoh is a perennially liquid mature estate with NSL access. The modest 3.9%/yr appreciation is the main drag, but value + liquidity carry it.",
+      "red_flags": [
+        "Appreciation only 3.9%/yr — below RCR baseline",
+        "Toa Payoh fringe has limited new catalysts",
+        "590m to MRT is a 7-min walk, not doorstep"
+      ],
+      "catalysts": [
+        "Priced ~7% below district median PSF (value gap)",
+        "Deep, central, liquid mature estate near city fringe",
+        "Efficient 3BR layout in the deepest-liquidity price band"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1887.76,
+        "beds": 3,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Efficient 980 sqft 3BR at Gem Residences (D12, Toa Payoh) priced at $1.85M / $1888 PSF — notably ~7% below the $2036 district median — in the $1.8M-2.5M deepest-liquidity band, near Braddell MRT. Appreciation is a modest 3.9%/yr but on a very reliable 188-transaction series; price discount and strong liquidity make this a solid value entry.",
+        "rating": "Buy",
+        "rating_rationale": "Asking PSF $1888 is ~7% under the $2036.5 URA median on a deep 188-txn dataset — genuinely cheap for the project. Price $1.85M lands in the deepest buyer-pool band, 980 sqft 3BR is efficient and family-marketable, and Toa Payoh is a perennially liquid mature estate with NSL access. The modest 3.9%/yr appreciation is the main drag, but value + liquidity carry it.",
+        "red_flags": [
+          "Appreciation only 3.9%/yr — below RCR baseline",
+          "Toa Payoh fringe has limited new catalysts",
+          "590m to MRT is a 7-min walk, not doorstep"
+        ],
+        "catalysts": [
+          "Priced ~7% below district median PSF (value gap)",
+          "Deep, central, liquid mature estate near city fringe",
+          "Efficient 3BR layout in the deepest-liquidity price band"
+        ],
+        "rental_assessment": "3BR in central D12 near Braddell MRT draws families and sharers; rental demand is steady given proximity to town and good schools. Yield typical for the price band.",
+        "appreciation_assessment": "3.9%/yr on 188 transactions is reliable but unexciting; the value comes from buying below median PSF rather than from above-average growth. Expect stable, liquidity-supported appreciation.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.9,
+        "appreciation_rate_source": "URA resale-only CAGR, 188 transactions"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-gem-residences-500046664",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuine value: a 3BR asking $1,887 psf in a large, liquid Toa Payoh project where recent comparable units transacted $2,000-2,260 psf, next to two MRT lines.",
+      "rating_rationale": "This is the standout of the cohort. Asking $1,887 psf for a 980 sqft 3-bed is verifiably below recent transactions: the project's last-12-month average is ~$2,006 psf, with 1,055 sqft units transacting $2,228-2,264 psf (Apr 2026) and a Dec 2025 sale at $2,350,000 - so the -8.9% vs-cohort and -9.7% age-adjusted reads are corroborated by real, deep data (188 appreciation txns, 16 cohort txns). Unlike the thin-cohort names in this batch, the cheapness here is real and well-evidenced. Liquidity is excellent (578 units), and the location (Lorong 5 Toa Payoh, Braddell NS18 / Toa Payoh NS19 nearby, mature D12 RCR/OCR town) sits in the favorable forward-return band. Risks are modest: 99-yr lease and some negative MCST/security reviews. Value-led case justifies a Buy, capped at medium confidence because the model explains <10% of forward variance and the undercut, while real, is single-digit.",
+      "red_flags": [
+        "Negative reviews on MCST/security enforcement",
+        "99-year leasehold (from ~2016) - lease decay is a long-run drag",
+        "Discount vs comps is single-digit (~9%), a cushion rather than a deep bargain"
+      ],
+      "catalysts": [
+        "Verified ~9% PSF discount to recent same-project transactions ($1,887 vs ~$2,006 avg, comps at $2,228-2,264 psf)",
+        "Deep liquidity: 578-unit project with 188 transactions - easy to price and exit",
+        "Braddell (NS18) and Toa Payoh (NS19) MRT access in a mature, well-amenitized D12 town",
+        "RCR/OCR location band with the strongest realized forward appreciation"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1887.76,
+        "beds": 3,
+        "sqft": 980
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuine value: a 3BR asking $1,887 psf in a large, liquid Toa Payoh project where recent comparable units transacted $2,000-2,260 psf, next to two MRT lines.",
+        "rating_rationale": "This is the standout of the cohort. Asking $1,887 psf for a 980 sqft 3-bed is verifiably below recent transactions: the project's last-12-month average is ~$2,006 psf, with 1,055 sqft units transacting $2,228-2,264 psf (Apr 2026) and a Dec 2025 sale at $2,350,000 - so the -8.9% vs-cohort and -9.7% age-adjusted reads are corroborated by real, deep data (188 appreciation txns, 16 cohort txns). Unlike the thin-cohort names in this batch, the cheapness here is real and well-evidenced. Liquidity is excellent (578 units), and the location (Lorong 5 Toa Payoh, Braddell NS18 / Toa Payoh NS19 nearby, mature D12 RCR/OCR town) sits in the favorable forward-return band. Risks are modest: 99-yr lease and some negative MCST/security reviews. Value-led case justifies a Buy, capped at medium confidence because the model explains <10% of forward variance and the undercut, while real, is single-digit.",
+        "red_flags": [
+          "Negative reviews on MCST/security enforcement",
+          "99-year leasehold (from ~2016) - lease decay is a long-run drag",
+          "Discount vs comps is single-digit (~9%), a cushion rather than a deep bargain"
+        ],
+        "catalysts": [
+          "Verified ~9% PSF discount to recent same-project transactions ($1,887 vs ~$2,006 avg, comps at $2,228-2,264 psf)",
+          "Deep liquidity: 578-unit project with 188 transactions - easy to price and exit",
+          "Braddell (NS18) and Toa Payoh (NS19) MRT access in a mature, well-amenitized D12 town",
+          "RCR/OCR location band with the strongest realized forward appreciation"
+        ],
+        "appreciation_assessment": "URA 5yr CAGR 3.9% rests on a robust 188 txns; trailing CAGR is not predictive, but the deep dataset makes the relative-value signal (the real driver) trustworthy.",
+        "rental_assessment": "Large, well-located project near two MRT lines should sustain healthy 3BR rental demand; entry below market PSF improves achievable gross yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-gem-residences-500046664",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

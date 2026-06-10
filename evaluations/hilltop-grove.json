@@ -1,0 +1,61 @@
+{
+  "condo": "Hilltop Grove",
+  "slug": "hilltop-grove",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A spacious 1,076 sqft 2BR 99LH in D23 Bukit Batok/Gombak (Hilltop Grove, TOP 2002) at $1.148M / $1,067 PSF — slightly under the $1,085 URA median, with a reliable 47-transaction base showing a solid 4.35%/yr appreciation. The drag is the 1.68km / 20-min walk to Bukit Gombak MRT and a 99LH now ~24 years into its term.",
+      "rating_rationale": "This is the best-supported value case in the batch's OCR leasehold cohort: 47 URA transactions (the most reliable series here), 4.35%/yr appreciation slightly above OCR baseline, and asking $1,067 PSF just below the $1,085 median — fairly priced and well-evidenced. The low $1.148M quantum gives a deep, HDB-upgrader buyer pool. Offsetting: the unit is 1.68km from MRT (poor connectivity, bus-dependent), it is a 99LH from 2002 (~75yrs left, lease decay accelerating over a 5-7yr hold), and the 1,076 sqft \"2BR\" is oversized so PSF efficiency is soft. Fairly priced with good data but no growth catalyst — Neutral.",
+      "red_flags": [
+        "1.68km / 20-min walk to MRT — poor connectivity, bus-dependent",
+        "99-year leasehold from 2002 — lease decay over the hold period",
+        "Oversized 1,076 sqft 2BR softens PSF efficiency",
+        "No near-term catalyst within range"
+      ],
+      "catalysts": [
+        "Reliable 47-txn URA base with 4.35%/yr appreciation, priced below median PSF",
+        "Low $1.148M quantum — deep HDB-upgrader buyer pool, strong liquidity",
+        "Spacious layout appeals to value-conscious families"
+      ],
+      "as_of": {
+        "price": 1148000,
+        "psf": 1066.91,
+        "beds": 2,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spacious 1,076 sqft 2BR 99LH in D23 Bukit Batok/Gombak (Hilltop Grove, TOP 2002) at $1.148M / $1,067 PSF — slightly under the $1,085 URA median, with a reliable 47-transaction base showing a solid 4.35%/yr appreciation. The drag is the 1.68km / 20-min walk to Bukit Gombak MRT and a 99LH now ~24 years into its term.",
+        "rating": "Neutral",
+        "rating_rationale": "This is the best-supported value case in the batch's OCR leasehold cohort: 47 URA transactions (the most reliable series here), 4.35%/yr appreciation slightly above OCR baseline, and asking $1,067 PSF just below the $1,085 median — fairly priced and well-evidenced. The low $1.148M quantum gives a deep, HDB-upgrader buyer pool. Offsetting: the unit is 1.68km from MRT (poor connectivity, bus-dependent), it is a 99LH from 2002 (~75yrs left, lease decay accelerating over a 5-7yr hold), and the 1,076 sqft \"2BR\" is oversized so PSF efficiency is soft. Fairly priced with good data but no growth catalyst — Neutral.",
+        "red_flags": [
+          "1.68km / 20-min walk to MRT — poor connectivity, bus-dependent",
+          "99-year leasehold from 2002 — lease decay over the hold period",
+          "Oversized 1,076 sqft 2BR softens PSF efficiency",
+          "No near-term catalyst within range"
+        ],
+        "catalysts": [
+          "Reliable 47-txn URA base with 4.35%/yr appreciation, priced below median PSF",
+          "Low $1.148M quantum — deep HDB-upgrader buyer pool, strong liquidity",
+          "Spacious layout appeals to value-conscious families"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hilltop-grove-25552478",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "The Acacias",
+  "slug": "the-acacias",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold D13 1BR (2009) near Woodleigh/Bidadari asking $1,654 PSF — bang on the $1,523 median (roughly +8.5%) — with the batch's highest URA rate at 5.84%/yr, though on a thin 18 transactions. Bidadari estate maturation is a real catalyst, but a weak 77-199 arena record and 820m MRT walk balance it to Neutral.",
+      "rating_rationale": "Headline 5.84%/yr appreciation is the strongest in the batch and resale-only, but rests on only 18 transactions, so reliability is modest. Asking $1,654 vs $1,523 median is about +8.5% — a premium that eats into the appreciation edge. Freehold and a $1.05M entry are liquid. The poor arena record (77-199-39, Elo 993) and 820m walk to NE11 Woodleigh temper it. Bidadari's ongoing transformation is a genuine upside driver. Net Neutral.",
+      "red_flags": [
+        "+8.5% asking vs URA median",
+        "5.84% rate rests on only 18 transactions — low reliability",
+        "weak arena record (77-199, Elo 993)",
+        "820m to MRT",
+        "1BR niche pool"
+      ],
+      "catalysts": [
+        "highest URA appreciation in batch (5.84%/yr, resale-only)",
+        "Bidadari estate maturation near Woodleigh",
+        "freehold D13 city-fringe at sub-$1.1M"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1653.54,
+        "beds": 1,
+        "sqft": 635.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold D13 1BR (2009) near Woodleigh/Bidadari asking $1,654 PSF — bang on the $1,523 median (roughly +8.5%) — with the batch's highest URA rate at 5.84%/yr, though on a thin 18 transactions. Bidadari estate maturation is a real catalyst, but a weak 77-199 arena record and 820m MRT walk balance it to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Headline 5.84%/yr appreciation is the strongest in the batch and resale-only, but rests on only 18 transactions, so reliability is modest. Asking $1,654 vs $1,523 median is about +8.5% — a premium that eats into the appreciation edge. Freehold and a $1.05M entry are liquid. The poor arena record (77-199-39, Elo 993) and 820m walk to NE11 Woodleigh temper it. Bidadari's ongoing transformation is a genuine upside driver. Net Neutral.",
+        "red_flags": [
+          "+8.5% asking vs URA median",
+          "5.84% rate rests on only 18 transactions — low reliability",
+          "weak arena record (77-199, Elo 993)",
+          "820m to MRT",
+          "1BR niche pool"
+        ],
+        "catalysts": [
+          "highest URA appreciation in batch (5.84%/yr, resale-only)",
+          "Bidadari estate maturation near Woodleigh",
+          "freehold D13 city-fringe at sub-$1.1M"
+        ],
+        "rental_assessment": "Woodleigh/Bidadari is increasingly tenant-attractive as the new town matures; freehold 1BR near NEL lets reasonably.",
+        "appreciation_assessment": "5.84%/yr is the batch's best signal but thin (18 txns); the Bidadari catalyst supports it, though the entry premium offsets some upside.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-acacias-500105221",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

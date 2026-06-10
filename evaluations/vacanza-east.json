@@ -118,6 +118,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-vacanza-east-500102514",
         "review_file": "batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Decent freehold D14 shoebox by a reputable developer, but the algo's -14.5% cheapness is a pooled-median artifact: the $1,586 asking PSF is at-to-above actual recent 1BR comps, so there is no real value edge for a 5-7yr hold.",
+      "rating_rationale": "Asking $1,586 PSF (560 sqft, $888k). Verified recent 1BR transactions/listings sit at ~$1,503-$1,554 PSF (project 12-mo avg ~$1,583 PSF across all sizes), so this 1BR is priced at or slightly above its own size cohort, not -14.5% cheap as the age-adjusted premium suggests (that figure is distorted by the project pooling larger, lower-PSF units). Appreciation 5.31% CAGR rests on a healthy 122 txns but v3.4 priors give trailing appreciation ~0 forward weight. psf_cohort_txns is only 6. Freehold is not a forward edge. Hoi Hup Sunway is a credible developer (positive), but residents cite poor management and PIE-facing units getting 10+ hrs direct sun/noise/dust. Kembangan MRT is a ~15-min walk (no dated catalyst). Net: fairly priced, no decisive value or catalyst.",
+      "red_flags": [
+        "Algo -14.5% age-adj cheapness is a pooled-median artifact; asking $1,586 PSF is at/above real 1BR comps ($1,503-$1,554)",
+        "Thin size cohort (psf_cohort_txns=6)",
+        "Resident reports of poor management and hot/noisy/dusty PIE-facing stacks",
+        "~15-min walk to Kembangan MRT; no near-term catalyst"
+      ],
+      "catalysts": [
+        "Freehold tenure preserves long-run optionality (but not a forward price edge)",
+        "Established D14 east-side location near Eunos/Paya Lebar amenities"
+      ],
+      "as_of": {
+        "price": 888000,
+        "psf": 1585.71,
+        "beds": 1,
+        "sqft": 560
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Decent freehold D14 shoebox by a reputable developer, but the algo's -14.5% cheapness is a pooled-median artifact: the $1,586 asking PSF is at-to-above actual recent 1BR comps, so there is no real value edge for a 5-7yr hold.",
+        "rating_rationale": "Asking $1,586 PSF (560 sqft, $888k). Verified recent 1BR transactions/listings sit at ~$1,503-$1,554 PSF (project 12-mo avg ~$1,583 PSF across all sizes), so this 1BR is priced at or slightly above its own size cohort, not -14.5% cheap as the age-adjusted premium suggests (that figure is distorted by the project pooling larger, lower-PSF units). Appreciation 5.31% CAGR rests on a healthy 122 txns but v3.4 priors give trailing appreciation ~0 forward weight. psf_cohort_txns is only 6. Freehold is not a forward edge. Hoi Hup Sunway is a credible developer (positive), but residents cite poor management and PIE-facing units getting 10+ hrs direct sun/noise/dust. Kembangan MRT is a ~15-min walk (no dated catalyst). Net: fairly priced, no decisive value or catalyst.",
+        "red_flags": [
+          "Algo -14.5% age-adj cheapness is a pooled-median artifact; asking $1,586 PSF is at/above real 1BR comps ($1,503-$1,554)",
+          "Thin size cohort (psf_cohort_txns=6)",
+          "Resident reports of poor management and hot/noisy/dusty PIE-facing stacks",
+          "~15-min walk to Kembangan MRT; no near-term catalyst"
+        ],
+        "catalysts": [
+          "Freehold tenure preserves long-run optionality (but not a forward price edge)",
+          "Established D14 east-side location near Eunos/Paya Lebar amenities"
+        ],
+        "appreciation_assessment": "5.31% trailing CAGR on 122 txns is statistically solid but carries ~0 forward predictive power under v3.4 priors; no catalyst to underwrite future capital growth.",
+        "rental_assessment": "Compact freehold 1BR in an established east-side estate supports steady tenant demand; rental yield is the main, but unremarkable, return driver."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-vacanza-east-60206958",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

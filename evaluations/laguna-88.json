@@ -1,0 +1,62 @@
+{
+  "condo": "Laguna 88",
+  "slug": "laguna-88",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Older (2000) 99LH 3BR steps from the new Sungei Bedok MRT interchange (190m), $1.86M / $1,339 psf — exactly at the URA median ($1,335) with a healthy resale-only 5.6%/yr appreciation. The standout is genuine interchange-adjacency (DTL + TEL/future) in the Bayshore growth precinct, offset by a ~74-year remaining lease and a large 1,389 sqft unit.",
+      "rating_rationale": "190m to Sungei Bedok MRT (Downtown Line terminus, future Thomson-East Coast interchange) is a top-tier connectivity catalyst in D16's Bayshore transformation zone, and the resale-only 5.6%/yr CAGR is strong for OCR/D16. Priced at the median ($1,339 vs $1,335) so no overpay. Caveats: built 2000 = ~74 yrs lease left (financing/depreciation pressure as it ages) and 1,389 sqft is large, but the location premium and proven appreciation justify a Buy. 14 txns is modest but acceptable.",
+      "red_flags": [
+        "~74-year remaining lease (2000 build) — lease decay accelerates over a 5–7yr hold",
+        "Only 14 URA transactions — appreciation rate moderately reliable",
+        "1,389 sqft 3BR is sizeable, lifting quantum"
+      ],
+      "catalysts": [
+        "190m to Sungei Bedok MRT — DTL terminus and future TEL interchange",
+        "Bayshore precinct redevelopment and Bedok/Upper East Coast growth",
+        "Resale-only appreciation 5.6%/yr, priced at URA median"
+      ],
+      "as_of": {
+        "price": 1860000,
+        "psf": 1339.09,
+        "beds": 3,
+        "sqft": 1389.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Older (2000) 99LH 3BR steps from the new Sungei Bedok MRT interchange (190m), $1.86M / $1,339 psf — exactly at the URA median ($1,335) with a healthy resale-only 5.6%/yr appreciation. The standout is genuine interchange-adjacency (DTL + TEL/future) in the Bayshore growth precinct, offset by a ~74-year remaining lease and a large 1,389 sqft unit.",
+        "rating": "Buy",
+        "rating_rationale": "190m to Sungei Bedok MRT (Downtown Line terminus, future Thomson-East Coast interchange) is a top-tier connectivity catalyst in D16's Bayshore transformation zone, and the resale-only 5.6%/yr CAGR is strong for OCR/D16. Priced at the median ($1,339 vs $1,335) so no overpay. Caveats: built 2000 = ~74 yrs lease left (financing/depreciation pressure as it ages) and 1,389 sqft is large, but the location premium and proven appreciation justify a Buy. 14 txns is modest but acceptable.",
+        "red_flags": [
+          "~74-year remaining lease (2000 build) — lease decay accelerates over a 5–7yr hold",
+          "Only 14 URA transactions — appreciation rate moderately reliable",
+          "1,389 sqft 3BR is sizeable, lifting quantum"
+        ],
+        "catalysts": [
+          "190m to Sungei Bedok MRT — DTL terminus and future TEL interchange",
+          "Bayshore precinct redevelopment and Bedok/Upper East Coast growth",
+          "Resale-only appreciation 5.6%/yr, priced at URA median"
+        ],
+        "rental_assessment": "Interchange-adjacency makes this highly rentable to families and east-side commuters; a large 3BR draws a steady family tenant pool.",
+        "appreciation_assessment": "Resale-only 5.6%/yr with strong infrastructure catalysts supports continued outperformance, tempered by lease decay over time.",
+        "stack_notes": null,
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-laguna-88-500058942",
+        "review_file": "cov_batch_17.json"
+      }
+    }
+  ]
+}

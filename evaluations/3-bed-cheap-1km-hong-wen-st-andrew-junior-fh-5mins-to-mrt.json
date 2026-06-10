@@ -1,0 +1,59 @@
+{
+  "condo": "⭐️ 3 bed Cheap 1km hong wen, st andrew junior, FH, 5mins to mrt ⭐️",
+  "slug": "3-bed-cheap-1km-hong-wen-st-andrew-junior-fh-5mins-to-mrt",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Another The Arcady at Boon Keng listing (D12, FH, 172 units, TOP 2027/2028) — this time a 3BR at $2.98M / $2,494 PSF dressed up with a 'Cheap' emoji title. At nearly $3M with developer-premium new-launch pricing in a 172-unit project, the investment case is weak.",
+      "rating_rationale": "Confirmed The Arcady at Boon Keng. $2,494 PSF for a new-launch 3BR pushes total price to $2.98M — into the shallow >$2.5M buyer band where exit liquidity drops sharply, and on top of a developer premium that limits 5-7yr resale upside. Only 172 units, no URA series to anchor value, and a weak 229-339-1 arena record. The school-catchment angle is an own-stay feature, not an investment catalyst. Avoid for a 5-7yr investment hold.",
+      "red_flags": [
+        "$2.98M total at ~$2,494 PSF new-launch pricing — shallow >$2.5M buyer pool",
+        "Only 172 units; developer premium compresses resale upside",
+        "No URA data; weak arena record (229-339-1)"
+      ],
+      "catalysts": [
+        "Freehold near Boon Keng MRT (460m), city-fringe D12",
+        "Within 1km of Hong Wen / St Andrew's Junior (own-stay school appeal)"
+      ],
+      "as_of": {
+        "price": 2980000,
+        "psf": 2493.72,
+        "beds": 3,
+        "sqft": 1195.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Another The Arcady at Boon Keng listing (D12, FH, 172 units, TOP 2027/2028) — this time a 3BR at $2.98M / $2,494 PSF dressed up with a 'Cheap' emoji title. At nearly $3M with developer-premium new-launch pricing in a 172-unit project, the investment case is weak.",
+        "rating": "Avoid",
+        "rating_rationale": "Confirmed The Arcady at Boon Keng. $2,494 PSF for a new-launch 3BR pushes total price to $2.98M — into the shallow >$2.5M buyer band where exit liquidity drops sharply, and on top of a developer premium that limits 5-7yr resale upside. Only 172 units, no URA series to anchor value, and a weak 229-339-1 arena record. The school-catchment angle is an own-stay feature, not an investment catalyst. Avoid for a 5-7yr investment hold.",
+        "red_flags": [
+          "$2.98M total at ~$2,494 PSF new-launch pricing — shallow >$2.5M buyer pool",
+          "Only 172 units; developer premium compresses resale upside",
+          "No URA data; weak arena record (229-339-1)"
+        ],
+        "catalysts": [
+          "Freehold near Boon Keng MRT (460m), city-fringe D12",
+          "Within 1km of Hong Wen / St Andrew's Junior (own-stay school appeal)"
+        ],
+        "rental_assessment": "A near-$3M FH 3BR yields poorly on rent; tenant demand at this price point is limited.",
+        "appreciation_assessment": "Buying at peak new-launch PSF near $3M in a small project leaves minimal headroom over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-3-bed-cheap-1km-hong-wen-st-andrew-junior-fh-5mins-to-mrt-500014065",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

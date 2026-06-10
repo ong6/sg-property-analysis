@@ -1,0 +1,61 @@
+{
+  "condo": "1km to Fairfield, 5min walk to Buona Vista mrt, top rental yield in D5",
+  "slug": "1km-to-fairfield-5min-walk-to-buona-vista-mrt-top-rental-yield-in-d5",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2026-TOP 99yr 3BR marketed on Fairfield school zone + One-North MRT proximity at $2.5M / $2345 PSF, but the project name is hidden behind a keyword-stuffed listing title and there is no URA appreciation, txn or median data. Location (410m to One-North MRT, One-North tech employment) is genuinely strong, but $2345 PSF for a 99yr unit demands the appreciation that can't be verified here.",
+      "rating_rationale": "Location is the strength: 410m to One-North MRT, in the One-North tech/biomedical employment cluster (deep tenant demand), 1km to Fairfield Methodist. But $2345 PSF on a 99yr lease is a full new-launch price with no value cushion, project identity is masked, and there is no URA data to confirm rate or PSF fairness. Score 546 is only marginally above market.",
+      "red_flags": [
+        "Project name hidden behind keyword-stuffed marketing title",
+        "No URA appreciation/txn/median data to verify rate or PSF",
+        "$2345 PSF is full new-launch price on a 99yr lease — no margin"
+      ],
+      "catalysts": [
+        "410m to One-North MRT (CC line)",
+        "One-North tech/biomedical employment cluster — strong rental demand",
+        "1km to Fairfield Methodist Primary"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 2345.22,
+        "beds": 3,
+        "sqft": 1066.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2026-TOP 99yr 3BR marketed on Fairfield school zone + One-North MRT proximity at $2.5M / $2345 PSF, but the project name is hidden behind a keyword-stuffed listing title and there is no URA appreciation, txn or median data. Location (410m to One-North MRT, One-North tech employment) is genuinely strong, but $2345 PSF for a 99yr unit demands the appreciation that can't be verified here.",
+        "rating": "Neutral",
+        "rating_rationale": "Location is the strength: 410m to One-North MRT, in the One-North tech/biomedical employment cluster (deep tenant demand), 1km to Fairfield Methodist. But $2345 PSF on a 99yr lease is a full new-launch price with no value cushion, project identity is masked, and there is no URA data to confirm rate or PSF fairness. Score 546 is only marginally above market.",
+        "red_flags": [
+          "Project name hidden behind keyword-stuffed marketing title",
+          "No URA appreciation/txn/median data to verify rate or PSF",
+          "$2345 PSF is full new-launch price on a 99yr lease — no margin"
+        ],
+        "catalysts": [
+          "410m to One-North MRT (CC line)",
+          "One-North tech/biomedical employment cluster — strong rental demand",
+          "1km to Fairfield Methodist Primary"
+        ],
+        "rental_assessment": "Genuinely strong — One-North is one of D05's best tenant catchments (Biopolis, Fusionopolis, NUS, INSEAD), which substantiates the 'top rental yield in D5' claim for a 3BR near the MRT.",
+        "appreciation_assessment": "No project-specific URA data; D05/One-North enjoys structural demand but the unit is bought at full launch PSF, so much of the upside is pre-paid. Treat as district-average appreciation.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1km-to-fairfield-5min-walk-to-buona-vista-mrt-top-rental-yield-in-d5-25133365",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

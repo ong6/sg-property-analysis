@@ -1,0 +1,119 @@
+{
+  "condo": "Nin Residence",
+  "slug": "nin-residence",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2357 sqft '3BR' at Nin Residence for $3.1M / $1315 PSF — the low PSF is a function of an oversized unit (likely dual-key or with large balcony/PES), not genuine cheapness, and the $3.1M absolute price sits well above the liquid band where the buyer pool thins sharply. Strong 5.7%/yr appreciation and Potong Pasir MRT proximity are positives, but the size/price combination is the dominant risk.",
+      "rating_rationale": "2357 sqft for a 3BR is anomalously large (oversized_unit pattern) — the $1315 PSF looks cheap only because it's spread over an unusually big footprint; $3.1M absolute is the real constraint and lands above the $2.5M liquidity ceiling. URA median is $1729 so the PSF discount is partly the size effect. Appreciation 5.7%/yr (67 txn) and 330m to Potong Pasir MRT are genuinely good, balancing the exit-risk concern to Neutral.",
+      "red_flags": [
+        "Oversized 2357 sqft for a 3BR — low PSF is a size artefact, not value",
+        "$3.1M absolute price above the liquid buyer-pool band",
+        "67 txn is moderate; size makes this unit type harder to comp/resell"
+      ],
+      "catalysts": [
+        "330m to NE10 Potong Pasir MRT (NEL, direct to CBD)",
+        "5.7%/yr URA appreciation, above RCR baseline",
+        "City-fringe D13 location with stable demand"
+      ],
+      "as_of": {
+        "price": 3100000,
+        "psf": 1315.23,
+        "beds": 3,
+        "sqft": 2357.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2357 sqft '3BR' at Nin Residence for $3.1M / $1315 PSF — the low PSF is a function of an oversized unit (likely dual-key or with large balcony/PES), not genuine cheapness, and the $3.1M absolute price sits well above the liquid band where the buyer pool thins sharply. Strong 5.7%/yr appreciation and Potong Pasir MRT proximity are positives, but the size/price combination is the dominant risk.",
+        "rating": "Neutral",
+        "rating_rationale": "2357 sqft for a 3BR is anomalously large (oversized_unit pattern) — the $1315 PSF looks cheap only because it's spread over an unusually big footprint; $3.1M absolute is the real constraint and lands above the $2.5M liquidity ceiling. URA median is $1729 so the PSF discount is partly the size effect. Appreciation 5.7%/yr (67 txn) and 330m to Potong Pasir MRT are genuinely good, balancing the exit-risk concern to Neutral.",
+        "red_flags": [
+          "Oversized 2357 sqft for a 3BR — low PSF is a size artefact, not value",
+          "$3.1M absolute price above the liquid buyer-pool band",
+          "67 txn is moderate; size makes this unit type harder to comp/resell"
+        ],
+        "catalysts": [
+          "330m to NE10 Potong Pasir MRT (NEL, direct to CBD)",
+          "5.7%/yr URA appreciation, above RCR baseline",
+          "City-fringe D13 location with stable demand"
+        ],
+        "rental_assessment": "A very large unit at $3.1M will rent at a yield-depressing absolute rent; tenant pool for 2357 sqft is thin. MRT proximity helps but the size works against rental efficiency.",
+        "appreciation_assessment": "5.7%/yr on 67 transactions is solid, but those transactions span the normal unit mix — an oversized unit may not track the project median and is harder to exit at a premium.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "URA resale-only CAGR (67 txn) discounted for oversized-unit exit drag"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nin-residence-500109780",
+        "review_file": "cov_batch_09.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Well-located D13 (RCR) 2BR three minutes from Potong Pasir MRT, asking $1,630 psf in line with verified recent transactions, with the deepest and most credible value signal of this batch.",
+      "rating_rationale": "This is the standout on data quality: 67 appreciation txns and 11 cohort comps (vs 1-3 for the boutiques here), so the -13.4% age-adj-cheap and -6.1% cohort discount are statistically credible rather than artifacts. Asking $1,630 psf sits right around the 12-month average ($1,617, range $1,262-1,823) - confirmed cheap-but-real, not a mis-scrape. Per v3.4 priors, verified cheap-vs-district peers is the strongest forward signal, and D13 sits in the RCR band (realized forward ~+3.5%, well above CCR). Trailing +5.75% CAGR is a positive story (though discounted as forward proof). Three-minute walk to Potong Pasir NE10 with Woodleigh NE11 nearby, a 219-unit project (adequate liquidity), and a ~1,012sf efficient 2BR. The single-block high-density layout is a minor negative but doesn't offset a robust value + location case.",
+      "red_flags": [
+        "Single 19-storey block with 219 units = higher density / less exclusivity",
+        "99-yr leasehold from 2014 - lease decay clock running (though ~88 yrs left, immaterial near-term)",
+        "Asking is at-market (~$1,630 vs avg $1,617), so the discount is to district peers, not to the project's own recent comps"
+      ],
+      "catalysts": [
+        "3-minute walk to Potong Pasir MRT (NE10), Woodleigh (NE11) nearby - strong transit",
+        "RCR location (D13) with above-CCR realized forward returns",
+        "Bidadari estate maturation and Woodleigh Mall/transport-hub upgrades support area demand",
+        "Deep, credible value discount vs district peers (-13.4% age-adj on 67 txns)"
+      ],
+      "as_of": {
+        "price": 1650000,
+        "psf": 1630.43,
+        "beds": 2,
+        "sqft": 1012
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Well-located D13 (RCR) 2BR three minutes from Potong Pasir MRT, asking $1,630 psf in line with verified recent transactions, with the deepest and most credible value signal of this batch.",
+        "rating_rationale": "This is the standout on data quality: 67 appreciation txns and 11 cohort comps (vs 1-3 for the boutiques here), so the -13.4% age-adj-cheap and -6.1% cohort discount are statistically credible rather than artifacts. Asking $1,630 psf sits right around the 12-month average ($1,617, range $1,262-1,823) - confirmed cheap-but-real, not a mis-scrape. Per v3.4 priors, verified cheap-vs-district peers is the strongest forward signal, and D13 sits in the RCR band (realized forward ~+3.5%, well above CCR). Trailing +5.75% CAGR is a positive story (though discounted as forward proof). Three-minute walk to Potong Pasir NE10 with Woodleigh NE11 nearby, a 219-unit project (adequate liquidity), and a ~1,012sf efficient 2BR. The single-block high-density layout is a minor negative but doesn't offset a robust value + location case.",
+        "red_flags": [
+          "Single 19-storey block with 219 units = higher density / less exclusivity",
+          "99-yr leasehold from 2014 - lease decay clock running (though ~88 yrs left, immaterial near-term)",
+          "Asking is at-market (~$1,630 vs avg $1,617), so the discount is to district peers, not to the project's own recent comps"
+        ],
+        "catalysts": [
+          "3-minute walk to Potong Pasir MRT (NE10), Woodleigh (NE11) nearby - strong transit",
+          "RCR location (D13) with above-CCR realized forward returns",
+          "Bidadari estate maturation and Woodleigh Mall/transport-hub upgrades support area demand",
+          "Deep, credible value discount vs district peers (-13.4% age-adj on 67 txns)"
+        ],
+        "appreciation_assessment": "Trailing +5.75% CAGR on 67 txns is genuine and the best-supported in this batch, but per backtest is discounted as forward proof; the forward case rests on the verified value gap and RCR base rate, not the headline CAGR.",
+        "rental_assessment": "Central D13 with direct MRT access supports steady tenant demand; a sub-$2,000-psf 1,012sf 2BR should yield broadly in line with RCR norms (~3.5-4%). Rental adequate, capital value the primary thesis."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nin-residence-60191710",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

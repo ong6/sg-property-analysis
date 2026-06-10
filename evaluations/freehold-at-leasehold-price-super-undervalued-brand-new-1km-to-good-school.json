@@ -1,0 +1,63 @@
+{
+  "condo": "FREEHOLD AT LEASEHOLD PRICE! SUPER UNDERVALUED! BRAND NEW ⭐️ 1KM TO GOOD SCHOOL",
+  "slug": "freehold-at-leasehold-price-super-undervalued-brand-new-1km-to-good-school",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Again The Arcady at Boon Keng (freehold, D12, 390m to NE9) — a larger 970 sqft 3BR at $2.4M / $2,474 psf. The 'super undervalued' framing is marketing hyperbole: $2,474 psf is squarely in the project's normal new-launch range, not a discount. Quality freehold near-MRT unit but priced at fair-to-full value.",
+      "rating_rationale": "Same development as #1014, here a more usable 970 sqft 3BR right at Boon Keng MRT (390m) for $2.4M. Freehold city-fringe near MRT is a durable profile, and 970 sqft is a more sellable 3BR than the 764 sqft variant. But $2,474 psf is full new-launch pricing (the 'undervalued' claim is not supported), there's no resale history, and the $2.4M quantum starts to thin the buyer pool. Net Neutral — sound asset, little appreciation margin already.",
+      "red_flags": [
+        "'Super undervalued' is marketing spin — $2,474 psf is normal Arcady new-launch pricing",
+        "No URA resale history; developer pricing fully baked in",
+        "$2.4M for a 970 sqft 3BR narrows the resale buyer pool somewhat"
+      ],
+      "catalysts": [
+        "Freehold tenure 390m from NE9 Boon Keng MRT — rare city-fringe combination",
+        "Within 1km of a good primary school (catchment demand)",
+        "City-fringe gentrification and CBD/Novena proximity"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 2474.23,
+        "beds": 3,
+        "sqft": 970.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Again The Arcady at Boon Keng (freehold, D12, 390m to NE9) — a larger 970 sqft 3BR at $2.4M / $2,474 psf. The 'super undervalued' framing is marketing hyperbole: $2,474 psf is squarely in the project's normal new-launch range, not a discount. Quality freehold near-MRT unit but priced at fair-to-full value.",
+        "rating": "Neutral",
+        "rating_rationale": "Same development as #1014, here a more usable 970 sqft 3BR right at Boon Keng MRT (390m) for $2.4M. Freehold city-fringe near MRT is a durable profile, and 970 sqft is a more sellable 3BR than the 764 sqft variant. But $2,474 psf is full new-launch pricing (the 'undervalued' claim is not supported), there's no resale history, and the $2.4M quantum starts to thin the buyer pool. Net Neutral — sound asset, little appreciation margin already.",
+        "red_flags": [
+          "'Super undervalued' is marketing spin — $2,474 psf is normal Arcady new-launch pricing",
+          "No URA resale history; developer pricing fully baked in",
+          "$2.4M for a 970 sqft 3BR narrows the resale buyer pool somewhat"
+        ],
+        "catalysts": [
+          "Freehold tenure 390m from NE9 Boon Keng MRT — rare city-fringe combination",
+          "Within 1km of a good primary school (catchment demand)",
+          "City-fringe gentrification and CBD/Novena proximity"
+        ],
+        "rental_assessment": "Boon Keng's CBD-adjacent NE-line location rents a 3BR steadily to families/sharers; yield is ordinary given the high entry PSF.",
+        "appreciation_assessment": "Freehold near-MRT supports long-run value, but entry at ~$2,500 psf new-launch level means near-term upside is largely captured.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D12 freehold near-MRT prior discounted for full new-launch entry PSF; The Arcady has no resale history"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-freehold-at-leasehold-price-super-undervalued-brand-new-1km-to-good-school-25605515",
+        "review_file": "cov_batch_35.json"
+      }
+    }
+  ]
+}

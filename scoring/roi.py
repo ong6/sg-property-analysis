@@ -15,7 +15,7 @@ try:
 except ImportError:
     ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
     ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
-from scoring.models import CostBreakdown, ROIResult
+from scoring.models import ROIResult
 from scoring.rental_estimator import RentalEstimator
 
 
@@ -135,7 +135,6 @@ class ROICalculator:
         annual_rent_net = annual_rent_gross - annual_holding_costs
 
         # Total rental income over holding period
-        total_rental_gross = annual_rent_gross * hold_years
         total_rental_net = annual_rent_net * hold_years
         total_holding_costs = annual_holding_costs * hold_years
 
@@ -256,34 +255,6 @@ class ROICalculator:
                 )
         return results
 
-    def find_optimal_hold_period(
-        self,
-        listing: dict,
-        min_years: int = 4,
-        max_years: int = 10,
-    ) -> tuple[int, ROIResult]:
-        """
-        Find optimal holding period for best annualized ROI.
-
-        Args:
-            listing: Listing dictionary
-            min_years: Minimum holding period (4 to avoid SSD)
-            max_years: Maximum holding period to consider
-
-        Returns:
-            Tuple of (optimal_years, ROIResult)
-        """
-        best_years = min_years
-        best_result = self.calculate(listing, min_years)
-
-        for years in range(min_years + 1, max_years + 1):
-            result = self.calculate(listing, years)
-            if result.annualized_roi > best_result.annualized_roi:
-                best_years = years
-                best_result = result
-
-        return best_years, best_result
-
     def _empty_result(self, hold_years: int, purchase_price: int) -> ROIResult:
         """Return empty ROI result for invalid inputs."""
         return ROIResult(
@@ -301,20 +272,6 @@ class ROICalculator:
             roi_percent=0,
             annualized_roi=0,
         )
-
-
-def calculate_roi(
-    listing: dict,
-    hold_years: int = 5,
-    monthly_rent: Optional[float] = None,
-) -> ROIResult:
-    """
-    Convenience function to calculate ROI for a listing.
-
-    Assumes Singapore Citizen, first property.
-    """
-    calc = ROICalculator()
-    return calc.calculate(listing, hold_years, monthly_rent)
 
 
 def quick_roi_estimate(

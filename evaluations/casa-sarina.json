@@ -1,0 +1,61 @@
+{
+  "condo": "Casa Sarina",
+  "slug": "casa-sarina",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1998 freehold 1BR (667 sqft) in D14 with excellent Eunos MRT access (510m) and a strong-looking 5.96%/yr URA rate, but built on only 9 transactions. At $1,601 PSF it's ~8% above the $1,488 median, and a 28-year-old boutique limits appreciation and exit.",
+      "rating_rationale": "510m to Eunos MRT and freehold D14 tenure are genuine positives, but the $1,601 PSF is ~8% above the $1,488 median and the 5.96% rate rests on just 9 txns (unreliable). At 28 years old the building faces rising maintenance and weaker resale. Score_1000 of 582 and a break-even arena record (100-98-117) confirm a middling profile.",
+      "red_flags": [
+        "Priced ~8% above district median PSF",
+        "5.96% appreciation built on only 9 txns — unreliable",
+        "1998 build (28 years) — ageing boutique, higher maintenance"
+      ],
+      "catalysts": [
+        "Eunos MRT 510m — strong connectivity for rental",
+        "D14 Paya Lebar Central / airbase relocation transformation",
+        "Freehold tenure"
+      ],
+      "as_of": {
+        "price": 1068000,
+        "psf": 1601.2,
+        "beds": 1,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1998 freehold 1BR (667 sqft) in D14 with excellent Eunos MRT access (510m) and a strong-looking 5.96%/yr URA rate, but built on only 9 transactions. At $1,601 PSF it's ~8% above the $1,488 median, and a 28-year-old boutique limits appreciation and exit.",
+        "rating": "Neutral",
+        "rating_rationale": "510m to Eunos MRT and freehold D14 tenure are genuine positives, but the $1,601 PSF is ~8% above the $1,488 median and the 5.96% rate rests on just 9 txns (unreliable). At 28 years old the building faces rising maintenance and weaker resale. Score_1000 of 582 and a break-even arena record (100-98-117) confirm a middling profile.",
+        "red_flags": [
+          "Priced ~8% above district median PSF",
+          "5.96% appreciation built on only 9 txns — unreliable",
+          "1998 build (28 years) — ageing boutique, higher maintenance"
+        ],
+        "catalysts": [
+          "Eunos MRT 510m — strong connectivity for rental",
+          "D14 Paya Lebar Central / airbase relocation transformation",
+          "Freehold tenure"
+        ],
+        "rental_assessment": "Excellent MRT proximity in tenant-heavy D14 supports steady demand; modest quantum gives a decent ~3.3% yield despite the older building.",
+        "appreciation_assessment": "Headline 5.96%/yr (9 txns) is optically strong but statistically thin; an ageing freehold boutique typically realizes less than the district median.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-sarina-500094553",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

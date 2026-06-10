@@ -1,0 +1,61 @@
+{
+  "condo": "Blossom Mansions",
+  "slug": "blossom-mansions",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,109 sqft freehold 4BR at Blossom Mansions (D14 Paya Lebar, 1995) at $1.48M / $1,335 PSF, right at the $1,330 reference median and 630m from Paya Lebar MRT interchange. Fairly priced and well-located, but only 1 URA txn and a small 1995 development limit conviction.",
+      "rating_rationale": "$1,335 PSF essentially matches the $1,330 median (no overpricing), and $1.48M for a freehold 1,109 sqft 4BR near the Paya Lebar EWL/CCL interchange is a liquid, attractive quantum with a genuine Paya Lebar Central catalyst. But only 1 URA transaction means appreciation is unverifiable, and a small 1995 (31-yr) mansion block has shallow resale liquidity. Good location and fair price offset by thin data and age — a balanced Neutral leaning constructive.",
+      "red_flags": [
+        "Only 1 URA transaction — appreciation unverifiable",
+        "1995 build (31 yrs) — aging block, maintenance risk",
+        "Small boutique mansion development — limited resale liquidity"
+      ],
+      "catalysts": [
+        "630m to Paya Lebar EWL/CCL interchange — dual-line transit",
+        "Paya Lebar Central commercial hub + airbase relocation land release (D14 transformation)",
+        "Fairly priced at the ~$1,330 median; freehold 4BR at liquid $1.48M quantum"
+      ],
+      "as_of": {
+        "price": 1480000,
+        "psf": 1334.54,
+        "beds": 4,
+        "sqft": 1109.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,109 sqft freehold 4BR at Blossom Mansions (D14 Paya Lebar, 1995) at $1.48M / $1,335 PSF, right at the $1,330 reference median and 630m from Paya Lebar MRT interchange. Fairly priced and well-located, but only 1 URA txn and a small 1995 development limit conviction.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,335 PSF essentially matches the $1,330 median (no overpricing), and $1.48M for a freehold 1,109 sqft 4BR near the Paya Lebar EWL/CCL interchange is a liquid, attractive quantum with a genuine Paya Lebar Central catalyst. But only 1 URA transaction means appreciation is unverifiable, and a small 1995 (31-yr) mansion block has shallow resale liquidity. Good location and fair price offset by thin data and age — a balanced Neutral leaning constructive.",
+        "red_flags": [
+          "Only 1 URA transaction — appreciation unverifiable",
+          "1995 build (31 yrs) — aging block, maintenance risk",
+          "Small boutique mansion development — limited resale liquidity"
+        ],
+        "catalysts": [
+          "630m to Paya Lebar EWL/CCL interchange — dual-line transit",
+          "Paya Lebar Central commercial hub + airbase relocation land release (D14 transformation)",
+          "Fairly priced at the ~$1,330 median; freehold 4BR at liquid $1.48M quantum"
+        ],
+        "rental_assessment": "Freehold 4BR steps from Paya Lebar interchange and commercial hub draws families and professionals; solid tenant demand, reasonable yield for size.",
+        "appreciation_assessment": "Single-txn data prevents a firm read, but the Paya Lebar Central catalyst and fair entry price are supportive. Cautiously neutral.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-blossom-mansions-60066494",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

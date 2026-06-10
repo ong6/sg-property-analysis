@@ -1,0 +1,63 @@
+{
+  "condo": "D'Weave",
+  "slug": "d-weave",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 420 sqft shoebox freehold 1BR in D14 at $1869 PSF / $785k, 520m from Paya Lebar interchange. The asking PSF is ~12% ABOVE the project URA median of $1673, and the resale-only CAGR is a weak ~2.0% — a poor value/growth combination despite the good location.",
+      "rating_rationale": "$1869 PSF is ~12% above the project's own $1673 URA median, while resale-only appreciation is only ~2.0%/yr (15 txns) — below OCR baseline and well below D14 peers in this batch. A 420 sqft true shoebox has the shallowest exit pool and weakest appreciation profile. Paying a premium for a slow-growing shoebox is the wrong side of the value equation; low Elo (1039) and losing record (111-179) corroborate.",
+      "red_flags": [
+        "Asking PSF ~12% above project URA median",
+        "Resale-only CAGR only ~2.0%/yr — below OCR baseline",
+        "420 sqft true shoebox — shallowest buyer pool and weakest resale",
+        "Negative Elo record (111-179-25)"
+      ],
+      "catalysts": [
+        "Paya Lebar interchange 520m — supports rental demand",
+        "Freehold tenure",
+        "Low absolute quantum ($785k) keeps entry affordable"
+      ],
+      "as_of": {
+        "price": 785000,
+        "psf": 1869.05,
+        "beds": 1,
+        "sqft": 420.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 420 sqft shoebox freehold 1BR in D14 at $1869 PSF / $785k, 520m from Paya Lebar interchange. The asking PSF is ~12% ABOVE the project URA median of $1673, and the resale-only CAGR is a weak ~2.0% — a poor value/growth combination despite the good location.",
+        "rating": "Avoid",
+        "rating_rationale": "$1869 PSF is ~12% above the project's own $1673 URA median, while resale-only appreciation is only ~2.0%/yr (15 txns) — below OCR baseline and well below D14 peers in this batch. A 420 sqft true shoebox has the shallowest exit pool and weakest appreciation profile. Paying a premium for a slow-growing shoebox is the wrong side of the value equation; low Elo (1039) and losing record (111-179) corroborate.",
+        "red_flags": [
+          "Asking PSF ~12% above project URA median",
+          "Resale-only CAGR only ~2.0%/yr — below OCR baseline",
+          "420 sqft true shoebox — shallowest buyer pool and weakest resale",
+          "Negative Elo record (111-179-25)"
+        ],
+        "catalysts": [
+          "Paya Lebar interchange 520m — supports rental demand",
+          "Freehold tenure",
+          "Low absolute quantum ($785k) keeps entry affordable"
+        ],
+        "rental_assessment": "Shoebox near Paya Lebar interchange rents readily to single professionals; gross yield may look optically high on the small quantum, but tenant churn and shoebox oversupply cap rent growth.",
+        "appreciation_assessment": "Resale-only ~2.0%/yr is the tell — shoeboxes in D14 have underperformed, and paying above-median PSF for one offers little upside over a 5-7yr hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-weave-500097716",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

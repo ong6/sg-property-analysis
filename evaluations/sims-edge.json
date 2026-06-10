@@ -1,0 +1,63 @@
+{
+  "condo": "Sims Edge",
+  "slug": "sims-edge",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Compact freehold 2BR (506sqft) at $1,854 PSF near Aljunied MRT in D14, priced at the $1,837 URA median with a sub-$1M entry. Clean resale-only appreciation of 3.8%/yr on a usable 17-txn series and a low quantum that keeps the asset liquid.",
+      "rating_rationale": "Solid, unspectacular city-fringe rental asset: freehold, 700m to Aljunied MRT, $938k entry keeps it liquid, and 3.8%/yr resale-only appreciation on 17 txns is credible. But 506sqft is a small 2BR (effectively a compact unit), PSF is at-median (no value gap), and 3.8% only matches the OCR-ish baseline. Reliable but no edge — a textbook Neutral.",
+      "red_flags": [
+        "506sqft is a small/compact 2BR — limited family appeal",
+        "PSF at median ($1,854 vs $1,837) — no discount",
+        "D14 Geylang/Sims fringe location stigma"
+      ],
+      "catalysts": [
+        "Freehold + 700m to Aljunied MRT (EWL)",
+        "Sub-$1M entry — deep upgrader/investor pool",
+        "Paya Lebar Central / city-fringe rejuvenation"
+      ],
+      "as_of": {
+        "price": 938000,
+        "psf": 1853.75,
+        "beds": 2,
+        "sqft": 506.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Compact freehold 2BR (506sqft) at $1,854 PSF near Aljunied MRT in D14, priced at the $1,837 URA median with a sub-$1M entry. Clean resale-only appreciation of 3.8%/yr on a usable 17-txn series and a low quantum that keeps the asset liquid.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid, unspectacular city-fringe rental asset: freehold, 700m to Aljunied MRT, $938k entry keeps it liquid, and 3.8%/yr resale-only appreciation on 17 txns is credible. But 506sqft is a small 2BR (effectively a compact unit), PSF is at-median (no value gap), and 3.8% only matches the OCR-ish baseline. Reliable but no edge — a textbook Neutral.",
+        "red_flags": [
+          "506sqft is a small/compact 2BR — limited family appeal",
+          "PSF at median ($1,854 vs $1,837) — no discount",
+          "D14 Geylang/Sims fringe location stigma"
+        ],
+        "catalysts": [
+          "Freehold + 700m to Aljunied MRT (EWL)",
+          "Sub-$1M entry — deep upgrader/investor pool",
+          "Paya Lebar Central / city-fringe rejuvenation"
+        ],
+        "rental_assessment": "Compact 2BR near Aljunied MRT and the CBD fringe rents readily to young professionals/couples; decent yield on the sub-$1M base.",
+        "appreciation_assessment": "3.8%/yr resale-only on 17 txns is reliable but unexceptional; expect steady, market-level appreciation.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "URA resale-only 3.8%/yr (17 txns) accepted as-is"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-edge-500040337",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

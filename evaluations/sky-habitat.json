@@ -1,0 +1,61 @@
+{
+  "condo": "Sky Habitat",
+  "slug": "sky-habitat",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A very large 1,378sqft '2BR' at $2.49M / $1,807 PSF in Sky Habitat (D20 Bishan, 510m to interchange), priced ~9% below the $1,992 median on a reliable 4.39% CAGR (115 txns). Iconic Safdie-designed development near Bishan, but $2.49M for a 2BR is a steep absolute price into a thinner buyer band.",
+      "rating_rationale": "Strong location (510m to Bishan NSL/CCL interchange, top schools, D20 central) and a reliable 4.39% rate on 115 txns are real positives, and the ~9% discount to median is legitimate. But the 1,378sqft size makes this a $2.49M 2BR — an unusually high absolute for two bedrooms, pushing it into the >$2.4M band where the buyer pool thins, and the per-unit price/PSF is not actually cheap. Quality, central, liquid as a development, but priced like a 3BR for a 2BR count — a fair hold, not a value buy.",
+      "red_flags": [
+        "$2.49M for a 2BR is a high absolute — thinner buyer band",
+        "1,378sqft is oversized for 2BR, inflating apparent PSF value",
+        "Leasehold from 2015; mid-tier CCR-fringe appreciation (4.39%)"
+      ],
+      "catalysts": [
+        "510m to Bishan NSL+CCL interchange; Raffles Institution / top schools",
+        "Reliable 4.39% on a large 115-txn sample",
+        "Iconic Safdie architecture, full facilities, strong development liquidity"
+      ],
+      "as_of": {
+        "price": 2490000,
+        "psf": 1806.97,
+        "beds": 2,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A very large 1,378sqft '2BR' at $2.49M / $1,807 PSF in Sky Habitat (D20 Bishan, 510m to interchange), priced ~9% below the $1,992 median on a reliable 4.39% CAGR (115 txns). Iconic Safdie-designed development near Bishan, but $2.49M for a 2BR is a steep absolute price into a thinner buyer band.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong location (510m to Bishan NSL/CCL interchange, top schools, D20 central) and a reliable 4.39% rate on 115 txns are real positives, and the ~9% discount to median is legitimate. But the 1,378sqft size makes this a $2.49M 2BR — an unusually high absolute for two bedrooms, pushing it into the >$2.4M band where the buyer pool thins, and the per-unit price/PSF is not actually cheap. Quality, central, liquid as a development, but priced like a 3BR for a 2BR count — a fair hold, not a value buy.",
+        "red_flags": [
+          "$2.49M for a 2BR is a high absolute — thinner buyer band",
+          "1,378sqft is oversized for 2BR, inflating apparent PSF value",
+          "Leasehold from 2015; mid-tier CCR-fringe appreciation (4.39%)"
+        ],
+        "catalysts": [
+          "510m to Bishan NSL+CCL interchange; Raffles Institution / top schools",
+          "Reliable 4.39% on a large 115-txn sample",
+          "Iconic Safdie architecture, full facilities, strong development liquidity"
+        ],
+        "rental_assessment": "Spacious unit near Bishan interchange and top schools draws family tenants; yield modest on the $2.49M base.",
+        "appreciation_assessment": "4.39% is well-evidenced for this central leasehold; ~4% forward is reasonable, capped by the high 2BR absolute.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-habitat-60226910",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

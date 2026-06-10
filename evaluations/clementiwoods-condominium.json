@@ -1,0 +1,115 @@
+{
+  "condo": "ClementiWoods Condominium",
+  "slug": "clementiwoods-condominium",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 678 sqft 1BR in Clementi at $850K / $1,254 PSF — a low, accessible quantum sitting ~14% below the $1,462 URA median, backed by a credible +4.49%/yr CAGR over 51 transactions. Clementi's One-North/NUS/science-hub demand and the cheap entry make this one of the cleaner value plays in the batch.",
+      "rating_rationale": "PSF $1,254 is ~14% under the $1,462 URA median — a real discount, not a size artifact (678 sqft is a normal 1BR). URA appreciation +4.49%/yr on a solid 51-txn sample is reliable and above the OCR/RCR-fringe baseline. Sub-$1M quantum keeps the buyer pool deep and entry costs low. 99yr LH from 2010 leaves a comfortable lease runway.",
+      "red_flags": [
+        "1BR is a niche own-stay product, though liquid as an investment unit",
+        "No explicit MRT distance in dossier — Clementi/Dover access needs verification"
+      ],
+      "catalysts": [
+        "Clementi proximity to NUS, One-North, and Singapore Science Park — durable tenant base",
+        "Below-median PSF leaves room for mean-reversion upside",
+        "Reliable +4.49%/yr URA appreciation (51 txns)"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1253.69,
+        "beds": 1,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 678 sqft 1BR in Clementi at $850K / $1,254 PSF — a low, accessible quantum sitting ~14% below the $1,462 URA median, backed by a credible +4.49%/yr CAGR over 51 transactions. Clementi's One-North/NUS/science-hub demand and the cheap entry make this one of the cleaner value plays in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "PSF $1,254 is ~14% under the $1,462 URA median — a real discount, not a size artifact (678 sqft is a normal 1BR). URA appreciation +4.49%/yr on a solid 51-txn sample is reliable and above the OCR/RCR-fringe baseline. Sub-$1M quantum keeps the buyer pool deep and entry costs low. 99yr LH from 2010 leaves a comfortable lease runway.",
+        "red_flags": [
+          "1BR is a niche own-stay product, though liquid as an investment unit",
+          "No explicit MRT distance in dossier — Clementi/Dover access needs verification"
+        ],
+        "catalysts": [
+          "Clementi proximity to NUS, One-North, and Singapore Science Park — durable tenant base",
+          "Below-median PSF leaves room for mean-reversion upside",
+          "Reliable +4.49%/yr URA appreciation (51 txns)"
+        ],
+        "rental_assessment": "Strong: NUS students/staff and One-North professionals give Clementi 1BRs deep, year-round rental demand; low quantum supports an attractive gross yield.",
+        "appreciation_assessment": "Reliable URA data (+4.49%/yr, 51 txns) plus a below-median entry PSF gives a credible mid-single-digit appreciation path over a 5-7yr hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-clementiwoods-condominium-60059808",
+        "review_file": "cov_batch_10.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A verifiably cheap unit in a Frasers-built Clementi leasehold with a credible long-horizon catalyst and a solid yield. The intra-project discount is real; lease age and thin cohort keep it at medium confidence.",
+      "rating_rationale": "Asking $1,253 psf vs a project 12-month range of $1,394-$1,600 psf (avg ~$1,494) — the unit is ~16% below its own project's recent average, corroborating the very_low_psf flag and -25.8% age-adj / -16.4% cohort premiums with real web-verified transactions rather than a mis-scrape. Built by Frasers Centrepoint (FCL), a credible developer, mitigating build-quality risk. 3.8% gross yield is strong for a city-fringe condo. D5 (West Coast/Clementi) is a favourable RCR/OCR-adjacent region under v3.4 priors, and the area benefits from NUS/one-north/Clementi job nodes plus the Greater Southern Waterfront transformation thesis. Medium not high because psf_cohort_txns=2 is thin and the 2006 lease (~80yr left) is the oldest of the cohort.",
+      "red_flags": [
+        "old_property + 99LH from 2006 (~80 years remaining) — lease decay is the real long-term drag on a leasehold this age",
+        "psf_cohort_txns=2 — own-size band shallow; verify the listing isn't a low-floor/poor-facing reason for the discount",
+        "Greater Southern Waterfront upside is a long-dated, multi-decade thesis, not a 5-7yr certainty"
+      ],
+      "catalysts": [
+        "Verified ~16% discount to the project's recent 12-month average PSF ($1,253 vs ~$1,494)",
+        "Reputable Frasers Centrepoint build quality lowers defect risk",
+        "Clementi / one-north / NUS employment catchment underpins resilient rental demand (3.8% yield)",
+        "Greater Southern Waterfront and West Coast rejuvenation as a long-horizon district uplift"
+      ],
+      "as_of": {
+        "price": 850000,
+        "psf": 1253.69,
+        "beds": 1,
+        "sqft": 678
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "A verifiably cheap unit in a Frasers-built Clementi leasehold with a credible long-horizon catalyst and a solid yield. The intra-project discount is real; lease age and thin cohort keep it at medium confidence.",
+        "rating_rationale": "Asking $1,253 psf vs a project 12-month range of $1,394-$1,600 psf (avg ~$1,494) — the unit is ~16% below its own project's recent average, corroborating the very_low_psf flag and -25.8% age-adj / -16.4% cohort premiums with real web-verified transactions rather than a mis-scrape. Built by Frasers Centrepoint (FCL), a credible developer, mitigating build-quality risk. 3.8% gross yield is strong for a city-fringe condo. D5 (West Coast/Clementi) is a favourable RCR/OCR-adjacent region under v3.4 priors, and the area benefits from NUS/one-north/Clementi job nodes plus the Greater Southern Waterfront transformation thesis. Medium not high because psf_cohort_txns=2 is thin and the 2006 lease (~80yr left) is the oldest of the cohort.",
+        "red_flags": [
+          "old_property + 99LH from 2006 (~80 years remaining) — lease decay is the real long-term drag on a leasehold this age",
+          "psf_cohort_txns=2 — own-size band shallow; verify the listing isn't a low-floor/poor-facing reason for the discount",
+          "Greater Southern Waterfront upside is a long-dated, multi-decade thesis, not a 5-7yr certainty"
+        ],
+        "catalysts": [
+          "Verified ~16% discount to the project's recent 12-month average PSF ($1,253 vs ~$1,494)",
+          "Reputable Frasers Centrepoint build quality lowers defect risk",
+          "Clementi / one-north / NUS employment catchment underpins resilient rental demand (3.8% yield)",
+          "Greater Southern Waterfront and West Coast rejuvenation as a long-horizon district uplift"
+        ],
+        "appreciation_assessment": "Trailing +4.49% on 51 txns is reasonable but per v3.4 carries little forward weight; the forward case leans on the verified value gap and the favourable West/Clementi region rather than momentum. Lease decay partially offsets district tailwind over a long hold.",
+        "rental_assessment": "3.8% gross yield is among the best in the cohort, supported by NUS/one-north tenant demand and West Coast Road accessibility. A genuine strength here."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-clementiwoods-condominium-60059808",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

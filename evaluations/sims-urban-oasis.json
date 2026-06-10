@@ -60,6 +60,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-urban-oasis-24237046",
         "review_file": "batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Well-located RCR-fringe unit (829 sqft is a 3BR-compact, not a 2BR) priced near the closest comp and below the project average, with a strong Paya Lebar transformation catalyst.",
+      "rating_rationale": "The 829 sqft layout is actually Sims Urban Oasis' 3-bedroom Compact (818-829 sqft), so the dossier's '2 beds' undercounts its utility. Asking $1,688 psf is roughly in line with the most-comparable recent 829 sqft sale (~$1,605 psf) and well under the project-wide last-12-month average of ~$1,945 psf (range $1,499-$2,226), supporting the -12.7% age-adj / -15.5% cohort signals on a deep 41-txn cohort and 347-txn appreciation base. GuocoLand-built, 1,024 units, 2017, walkable to Aljunied MRT and the Paya Lebar Central regional-centre redevelopment.",
+      "red_flags": [
+        "Documented traffic noise; towers facing Aljunied Road junction / PIE should be avoided and could cap resale",
+        "Asking $1,688 psf is slightly above the closest 829 sqft comp (~$1,605) so the immediate discount is modest, not deep",
+        "Geylang/Sims fringe carries a perception discount versus core D14 Katong/Joo Chiat"
+      ],
+      "catalysts": [
+        "Paya Lebar Central regional-centre transformation (offices, retail, URA master plan) lifts the micro-market",
+        "Walkable to Aljunied MRT (EWL); large GuocoLand project with strong rental track record",
+        "829 sqft 3BR-compact entry at $1.4M is an efficient family/rental layout for the location"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1688.78,
+        "beds": 2,
+        "sqft": 829
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Well-located RCR-fringe unit (829 sqft is a 3BR-compact, not a 2BR) priced near the closest comp and below the project average, with a strong Paya Lebar transformation catalyst.",
+        "rating_rationale": "The 829 sqft layout is actually Sims Urban Oasis' 3-bedroom Compact (818-829 sqft), so the dossier's '2 beds' undercounts its utility. Asking $1,688 psf is roughly in line with the most-comparable recent 829 sqft sale (~$1,605 psf) and well under the project-wide last-12-month average of ~$1,945 psf (range $1,499-$2,226), supporting the -12.7% age-adj / -15.5% cohort signals on a deep 41-txn cohort and 347-txn appreciation base. GuocoLand-built, 1,024 units, 2017, walkable to Aljunied MRT and the Paya Lebar Central regional-centre redevelopment.",
+        "red_flags": [
+          "Documented traffic noise; towers facing Aljunied Road junction / PIE should be avoided and could cap resale",
+          "Asking $1,688 psf is slightly above the closest 829 sqft comp (~$1,605) so the immediate discount is modest, not deep",
+          "Geylang/Sims fringe carries a perception discount versus core D14 Katong/Joo Chiat"
+        ],
+        "catalysts": [
+          "Paya Lebar Central regional-centre transformation (offices, retail, URA master plan) lifts the micro-market",
+          "Walkable to Aljunied MRT (EWL); large GuocoLand project with strong rental track record",
+          "829 sqft 3BR-compact entry at $1.4M is an efficient family/rental layout for the location"
+        ],
+        "rental_assessment": "Project is known for strong rental demand given Aljunied MRT access and CBD proximity; a 3BR-compact should attract sharers and small families, underpinning a competitive gross yield in the ~3.3-3.6% range.",
+        "appreciation_assessment": "Trailing 4.23% CAGR on 347 txns is solid liquidity evidence but forward-discounted under v3.4; the buy case leans on RCR-fringe value and the Paya Lebar catalyst rather than past momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sims-urban-oasis-24237046",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

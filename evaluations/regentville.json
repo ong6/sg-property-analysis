@@ -112,6 +112,56 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500157715",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Aging 99-yr (from 1996) Hougang condo where the asking $1,118 psf is essentially at the verified market average (~$1,167 psf), so there is no real bargain — the 'very_low_psf' flag is an age artefact, and a ~73-yr remaining lease that decays over the hold makes this a weak investment.",
+      "rating_rationale": "Web-verified recent Regentville transactions average ~$1,167 psf (range $791-$1,259), so the $1,118 psf ask is roughly at-market, not cheap — consistent with the algo's modest -18.5% age-adj and -6.6% vs-cohort (cohort 21 txns, so reliable). The 'very_low_psf' flag simply reflects that this is a 1999-built, 99-yr-from-1996 development; its low psf is the market correctly pricing an old, decaying lease, not a discount to capture. With ~73 years left and built 1999, lease decay (and approaching the 60-yr financing/CPF-usage thresholds within a 5-7yr hold's resale window) is a structural headwind. No en-bloc (marked 'No') and no dated MRT/zone catalyst. The $1.3M quantum buys a large but dated 2BR with limited forward upside — Avoid for investment.",
+      "red_flags": [
+        "Very old leasehold: built 1999, 99-yr from 1996 (~73 yrs left) — lease decay is a binding forward headwind",
+        "Asking $1,118 psf is at the ~$1,167 psf market average — no genuine discount; 'very_low_psf' flag is an age artefact, not a bargain",
+        "No en-bloc prospect and no dated MRT/redevelopment catalyst identified"
+      ],
+      "catalysts": [
+        "Hougang/Buangkok MRT and Hougang town amenities (existing, no new catalyst)"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1117.8,
+        "beds": 2,
+        "sqft": 1163
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Aging 99-yr (from 1996) Hougang condo where the asking $1,118 psf is essentially at the verified market average (~$1,167 psf), so there is no real bargain — the 'very_low_psf' flag is an age artefact, and a ~73-yr remaining lease that decays over the hold makes this a weak investment.",
+        "rating_rationale": "Web-verified recent Regentville transactions average ~$1,167 psf (range $791-$1,259), so the $1,118 psf ask is roughly at-market, not cheap — consistent with the algo's modest -18.5% age-adj and -6.6% vs-cohort (cohort 21 txns, so reliable). The 'very_low_psf' flag simply reflects that this is a 1999-built, 99-yr-from-1996 development; its low psf is the market correctly pricing an old, decaying lease, not a discount to capture. With ~73 years left and built 1999, lease decay (and approaching the 60-yr financing/CPF-usage thresholds within a 5-7yr hold's resale window) is a structural headwind. No en-bloc (marked 'No') and no dated MRT/zone catalyst. The $1.3M quantum buys a large but dated 2BR with limited forward upside — Avoid for investment.",
+        "red_flags": [
+          "Very old leasehold: built 1999, 99-yr from 1996 (~73 yrs left) — lease decay is a binding forward headwind",
+          "Asking $1,118 psf is at the ~$1,167 psf market average — no genuine discount; 'very_low_psf' flag is an age artefact, not a bargain",
+          "No en-bloc prospect and no dated MRT/redevelopment catalyst identified"
+        ],
+        "catalysts": [
+          "Hougang/Buangkok MRT and Hougang town amenities (existing, no new catalyst)"
+        ],
+        "appreciation_assessment": "Trailing 7.59% CAGR (131 txns) is real but down-weighted; forward upside is constrained by accelerating lease decay on a ~73-yr-remaining 99-yr property. No catalyst to offset.",
+        "rental_assessment": "Large 1,163 sqft 2BR rents to families in Hougang, but yield on a $1.3M aging-leasehold quantum is unremarkable and does not offset the lease-decay capital risk."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-25625664",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

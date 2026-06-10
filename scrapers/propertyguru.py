@@ -4,13 +4,11 @@ import time
 import logging
 import random
 import hashlib
-from collections import Counter
 from copy import deepcopy
 from patchright.sync_api import BrowserContext, Page, TimeoutError as PlaywrightTimeout
 
 from config import (
     PROPERTYGURU_BASE_URL,
-    PROPERTYGURU_SEARCH_PATH,
     PAGE_LOAD_TIMEOUT,
     NEXT_DATA_WAIT_TIMEOUT,
     DOM_CONTENT_WAIT_TIMEOUT,
@@ -357,19 +355,13 @@ SCRIPT_JSON_EXTRACT_JS = """
 
 
 class PropertyGuruScraper:
-    def __init__(self, context: BrowserContext, save_raw: bool = False):
+    def __init__(self, context: BrowserContext):
         self._context = context
         self._page: Page | None = None
-        self._save_raw = save_raw
-        self._raw_pages: list[dict] = []
         self._intercepted_data: list[dict] = []
         self._seen_ids: set[str] = set()
         self._stats = ScrapeStats()
         self._interception_page: Page | None = None
-
-    @property
-    def raw_pages(self) -> list[dict]:
-        return self._raw_pages
 
     @property
     def stats(self) -> ScrapeStats:
@@ -939,9 +931,6 @@ class PropertyGuruScraper:
             self._record_page_stats(result, "dom")
             return result
 
-        # Strategy 5: dump page HTML for debugging
-        self._save_debug_html(page_num)
-
         return None
 
     def _record_page_stats(self, result: ScrapedPage, strategy: str):
@@ -966,13 +955,6 @@ class PropertyGuruScraper:
             raw = self._page.locator(NEXT_DATA_SELECTOR).text_content()
             next_data = json.loads(raw)
 
-            if self._save_raw:
-                self._raw_pages.append({
-                    "page_number": page_num,
-                    "strategy": "__NEXT_DATA__",
-                    "data": next_data,
-                })
-
             return self._parse_next_data(next_data, page_num)
         except (PlaywrightTimeout, json.JSONDecodeError, Exception) as e:
             logger.debug("__NEXT_DATA__ not available: %s", e)
@@ -987,13 +969,6 @@ class PropertyGuruScraper:
 
             for entry in script_data:
                 data = entry.get("data", {})
-
-                if self._save_raw:
-                    self._raw_pages.append({
-                        "page_number": page_num,
-                        "strategy": f"script_json ({entry.get('type', 'unknown')})",
-                        "data": data,
-                    })
 
                 # Try parsing as __NEXT_DATA__ format
                 if isinstance(data, dict) and "props" in data:
@@ -1017,13 +992,6 @@ class PropertyGuruScraper:
 
         for entry in self._intercepted_data:
             data = entry.get("data", {})
-
-            if self._save_raw:
-                self._raw_pages.append({
-                    "page_number": page_num,
-                    "strategy": f"intercepted_api ({entry.get('url', 'unknown')[:80]})",
-                    "data": data,
-                })
 
             result = self._search_for_listings(data, page_num)
             if result and result.listings:
@@ -1057,13 +1025,6 @@ class PropertyGuruScraper:
                 logger.debug("DOM extraction returned empty results")
                 return None
 
-            if self._save_raw:
-                self._raw_pages.append({
-                    "page_number": page_num,
-                    "strategy": "dom_extraction",
-                    "data": dom_listings,
-                })
-
             # Get pagination info from DOM
             try:
                 pagination = self._page.evaluate(PAGINATION_EXTRACT_JS)
@@ -1090,25 +1051,6 @@ class PropertyGuruScraper:
             logger.warning("DOM extraction failed: %s", e)
 
         return None
-
-    def _save_debug_html(self, page_num: int):
-        """Save page HTML for debugging when all strategies fail."""
-        if not self._save_raw:
-            return
-        try:
-            html = self._page.content()
-            title = self._page.title()
-            self._raw_pages.append({
-                "page_number": page_num,
-                "strategy": "debug_html",
-                "title": title,
-                "url": self._page.url,
-                "html_length": len(html),
-                "html_preview": html[:5000],
-            })
-            logger.debug("Saved debug HTML (title: %s, length: %d)", title, len(html))
-        except Exception:
-            pass
 
     def _search_for_listings(self, data: dict, page_num: int, _depth: int = 0) -> ScrapedPage | None:
         """Recursively search a JSON structure for listing arrays."""

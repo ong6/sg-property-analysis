@@ -31,12 +31,11 @@ import argparse
 import json
 import sys
 import time
-from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from scrapers.ura_scraper import parse_ura_csv, URATransactionHistory
+from scrapers.ura_scraper import parse_ura_csv
 
 DATA_DIR = Path(__file__).parent / "data"
 URA_CACHE_FILE = DATA_DIR / "ura_cache.json"

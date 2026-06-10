@@ -1,0 +1,61 @@
+{
+  "condo": "Simsville",
+  "slug": "simsville",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 28-year-old 99-year leasehold 4BR in Geylang/Paya Lebar (D14), 330m from CC9/EW8 Paya Lebar MRT interchange, listed at $1,570 psf — ~7% above the $1,469 URA median. Excellent interchange location and the Paya Lebar Central catalyst, but a leasehold from 1998 (~71 years left) plus an above-median 4BR price drag it down.",
+      "rating_rationale": "Location is genuinely strong: 330m to the Paya Lebar CC9/EW8 interchange (dual-line), inside the Paya Lebar Central commercial transformation zone (airbase relocation creating new land) — a real future catalyst. The 5.6%/yr URA rate on 49 txns is reliable. But several negatives explain the very low 361 score and cap this to Neutral: (1) it is a 1998 99-year leasehold, ~71 years remaining, so lease decay is a material forward drag and CPF/financing limits loom; (2) the 4BR is listed ~7% ABOVE the $1,469 median — paying up, not a discount; (3) $2.4M for an aging leasehold 4BR is a narrower exit than the 2-3BR market. The interchange + Paya Lebar Central upside is real but partly offset by lease decay over a 5-7yr hold. Balanced Neutral — location saves it from Avoid, lease/price prevent a Buy.",
+      "red_flags": [
+        "1998 99-year leasehold — ~71 years left, lease decay is a real forward resale/financing drag",
+        "Listed ~7% above the URA median for the unit",
+        "$2.4M aging leasehold 4BR — narrower exit than 2-3BR resale market"
+      ],
+      "catalysts": [
+        "330m to Paya Lebar CC9/EW8 MRT interchange — top-tier dual-line connectivity",
+        "Paya Lebar Central commercial hub + airbase relocation land release",
+        "Reliable 5.6%/yr URA on 49 txns"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1570.68,
+        "beds": 4,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 28-year-old 99-year leasehold 4BR in Geylang/Paya Lebar (D14), 330m from CC9/EW8 Paya Lebar MRT interchange, listed at $1,570 psf — ~7% above the $1,469 URA median. Excellent interchange location and the Paya Lebar Central catalyst, but a leasehold from 1998 (~71 years left) plus an above-median 4BR price drag it down.",
+        "rating": "Neutral",
+        "rating_rationale": "Location is genuinely strong: 330m to the Paya Lebar CC9/EW8 interchange (dual-line), inside the Paya Lebar Central commercial transformation zone (airbase relocation creating new land) — a real future catalyst. The 5.6%/yr URA rate on 49 txns is reliable. But several negatives explain the very low 361 score and cap this to Neutral: (1) it is a 1998 99-year leasehold, ~71 years remaining, so lease decay is a material forward drag and CPF/financing limits loom; (2) the 4BR is listed ~7% ABOVE the $1,469 median — paying up, not a discount; (3) $2.4M for an aging leasehold 4BR is a narrower exit than the 2-3BR market. The interchange + Paya Lebar Central upside is real but partly offset by lease decay over a 5-7yr hold. Balanced Neutral — location saves it from Avoid, lease/price prevent a Buy.",
+        "red_flags": [
+          "1998 99-year leasehold — ~71 years left, lease decay is a real forward resale/financing drag",
+          "Listed ~7% above the URA median for the unit",
+          "$2.4M aging leasehold 4BR — narrower exit than 2-3BR resale market"
+        ],
+        "catalysts": [
+          "330m to Paya Lebar CC9/EW8 MRT interchange — top-tier dual-line connectivity",
+          "Paya Lebar Central commercial hub + airbase relocation land release",
+          "Reliable 5.6%/yr URA on 49 txns"
+        ],
+        "rental_assessment": "Strong rental demand from the Paya Lebar commercial belt and interchange; among the better rental locations in the batch, though a large 4BR rents inefficiently per sqft.",
+        "appreciation_assessment": "5.6%/yr URA is reliable and Paya Lebar Central is a real catalyst, but lease decay and the above-median entry cap forward appreciation.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-simsville-500105365",
+        "review_file": "cov_batch_03.json"
+      }
+    }
+  ]
+}

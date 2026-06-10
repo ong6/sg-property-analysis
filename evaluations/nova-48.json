@@ -1,0 +1,63 @@
+{
+  "condo": "Nova 48",
+  "slug": "nova-48",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A large 2,002 sqft freehold 4BR at Nova 48 (D12 Balestier, 2012) at $3.59M / $1,793 PSF — slightly above the $1,768 project median — on a thin 10-txn series with only 3.88%/yr resale appreciation. The $3.59M quantum sits well above the liquid band, sharply narrowing the exit pool.",
+      "rating_rationale": "At $3.59M this is firmly in the thin-liquidity zone (>$3M buyer pool shrinks markedly), and it's a 4BR in D12 Balestier — not prime CCR — where ultra-large quantum demand is limited. Resale appreciation is a soft 3.88%/yr on just 10 txns, the listing is slightly above the $1,768 project median, and it's 1.09km (13 min) from Novena MRT. score_1000 of 428 reflects the weak risk/reward. The freehold and size are nice for own-stay, but as a 5-7yr investment the exit risk and mediocre growth make it unattractive.",
+      "red_flags": [
+        "$3.59M quantum — well above the liquid band, thin exit pool",
+        "Resale appreciation only 3.88%/yr on a thin 10-txn series",
+        "Listed slightly above $1,768 project median",
+        "1.09km (13 min) walk to Novena MRT; non-prime D12 Balestier for ultra-large 4BR"
+      ],
+      "catalysts": [
+        "Freehold, large 2,002 sqft 4BR — scarce family-size layout",
+        "Central D12 location near Novena medical hub and city fringe",
+        "2012 build — relatively modern for the resale market"
+      ],
+      "as_of": {
+        "price": 3588888,
+        "psf": 1792.65,
+        "beds": 4,
+        "sqft": 2002.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 2,002 sqft freehold 4BR at Nova 48 (D12 Balestier, 2012) at $3.59M / $1,793 PSF — slightly above the $1,768 project median — on a thin 10-txn series with only 3.88%/yr resale appreciation. The $3.59M quantum sits well above the liquid band, sharply narrowing the exit pool.",
+        "rating": "Avoid",
+        "rating_rationale": "At $3.59M this is firmly in the thin-liquidity zone (>$3M buyer pool shrinks markedly), and it's a 4BR in D12 Balestier — not prime CCR — where ultra-large quantum demand is limited. Resale appreciation is a soft 3.88%/yr on just 10 txns, the listing is slightly above the $1,768 project median, and it's 1.09km (13 min) from Novena MRT. score_1000 of 428 reflects the weak risk/reward. The freehold and size are nice for own-stay, but as a 5-7yr investment the exit risk and mediocre growth make it unattractive.",
+        "red_flags": [
+          "$3.59M quantum — well above the liquid band, thin exit pool",
+          "Resale appreciation only 3.88%/yr on a thin 10-txn series",
+          "Listed slightly above $1,768 project median",
+          "1.09km (13 min) walk to Novena MRT; non-prime D12 Balestier for ultra-large 4BR"
+        ],
+        "catalysts": [
+          "Freehold, large 2,002 sqft 4BR — scarce family-size layout",
+          "Central D12 location near Novena medical hub and city fringe",
+          "2012 build — relatively modern for the resale market"
+        ],
+        "rental_assessment": "A $3.59M 4BR yields poorly on rent and the tenant pool for 2,000 sqft units is small; rental economics are weak for an investment.",
+        "appreciation_assessment": "3.88%/yr (10 txns) is below central baselines and the high quantum constrains the next buyer's budget. Limited upside for the capital deployed.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nova-48-500081065",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

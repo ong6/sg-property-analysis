@@ -1,0 +1,121 @@
+{
+  "condo": "Treasures @ G6",
+  "slug": "treasures-g6",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold shoebox 1BR at Treasures @ G6, D14, asking $680k at $1,578 PSF for a tiny 431 sqft, 920m from Kallang MRT. The dossier has NO URA data at all (null appreciation, txn count, median) — a blind, unverifiable boutique entry.",
+      "rating_rationale": "No URA appreciation, no transaction count, no median PSF — there is no factual basis to underwrite appreciation or even confirm the asking PSF is fair. The arena record (229-43-43, 43 draws) signals an unstable/thin sample. A 431 sqft freehold shoebox is a niche, illiquid product with the smallest buyer pool, and the score_1000 of 870 rests entirely on missing-data-scores-neutral mechanics, not evidence. Easy Avoid on data grounds alone.",
+      "red_flags": [
+        "No URA data whatsoever — appreciation and fair-value unverifiable",
+        "431 sqft shoebox — niche, illiquid, narrowest buyer pool",
+        "Boutique development, 43 arena draws = unstable signal",
+        "920m from MRT"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Low $680k entry near Kallang/Paya Lebar"
+      ],
+      "as_of": {
+        "price": 680000,
+        "psf": 1577.73,
+        "beds": 1,
+        "sqft": 431.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold shoebox 1BR at Treasures @ G6, D14, asking $680k at $1,578 PSF for a tiny 431 sqft, 920m from Kallang MRT. The dossier has NO URA data at all (null appreciation, txn count, median) — a blind, unverifiable boutique entry.",
+        "rating": "Avoid",
+        "rating_rationale": "No URA appreciation, no transaction count, no median PSF — there is no factual basis to underwrite appreciation or even confirm the asking PSF is fair. The arena record (229-43-43, 43 draws) signals an unstable/thin sample. A 431 sqft freehold shoebox is a niche, illiquid product with the smallest buyer pool, and the score_1000 of 870 rests entirely on missing-data-scores-neutral mechanics, not evidence. Easy Avoid on data grounds alone.",
+        "red_flags": [
+          "No URA data whatsoever — appreciation and fair-value unverifiable",
+          "431 sqft shoebox — niche, illiquid, narrowest buyer pool",
+          "Boutique development, 43 arena draws = unstable signal",
+          "920m from MRT"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Low $680k entry near Kallang/Paya Lebar"
+        ],
+        "rental_assessment": "Shoebox near Kallang rents to singles, but yield gains don't offset the illiquid, data-blind resale risk.",
+        "appreciation_assessment": "Cannot be assessed — no URA series. The absence of data is itself the disqualifier for an investment hold.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "No data — D14 regional baseline floor only, not project-specific"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasures-g6-500076282",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Despite an 848 score, this is not cheap — it's priced at the top of the project's current $1,578-$1,667 psf range and carries a +8.9% cohort premium. A 431sqft Geylang shoebox with financing/liquidity baggage and a thin-data appreciation story.",
+      "rating_rationale": "The high score is misleading here. Asking $1,578 psf sits at the very bottom-but-still-inside the current project band of $1,578-$1,667 psf, and crucially psf_premium_vs_cohort is +8.9% — a PREMIUM to its own size cohort, not a discount. The eye-catching 11.6% appreciation_pct rests on just 15 transactions, which under the v3.4 priors I treat as noise, not forward signal. The age_adj_premium -18.5% conflicts with the positive cohort premium and the at-market web pricing, so the 'cheap' read is unreliable. Substantively this is a 431sqft shoebox in Geylang on Lorong 6 — closer to the red-light belt than the safer even-Lorong 24-38 stretch — where banks restrict or refuse financing in parts, materially hurting resale liquidity. Shoebox + Geylang stigma + at/above-market entry + thin data is a poor combination for a 5-7yr investment hold. The only real positives (freehold, D14 yield) don't offset paying a premium for an illiquid asset.",
+      "red_flags": [
+        "Not cheap: psf_premium_vs_cohort +8.9% — a premium to its own size cohort; asking is at the top of the live $1,578-$1,667 band",
+        "11.6% CAGR built on only 15 txns — likely data quirk, not durable trend (v3.4: trailing appreciation ~0 forward power)",
+        "431sqft shoebox — narrow buyer pool, MAS shoebox sensitivity, weaker financing",
+        "Lorong 6 Geylang — near red-light belt; documented bank-financing restrictions and harder resale liquidity",
+        "Conflicting signals (age_adj -18.5% vs cohort +8.9%) undermine the cheapness thesis"
+      ],
+      "catalysts": [
+        "Freehold tenure (no lease decay) — but not a forward return edge under v3.4",
+        "D14 strong rental yields (3.5-4.5%) for income-only holds",
+        "Very long-run en-bloc optionality if the Geylang red-light designation recedes — speculative"
+      ],
+      "as_of": {
+        "price": 680000,
+        "psf": 1577.73,
+        "beds": 1,
+        "sqft": 431
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "Despite an 848 score, this is not cheap — it's priced at the top of the project's current $1,578-$1,667 psf range and carries a +8.9% cohort premium. A 431sqft Geylang shoebox with financing/liquidity baggage and a thin-data appreciation story.",
+        "rating_rationale": "The high score is misleading here. Asking $1,578 psf sits at the very bottom-but-still-inside the current project band of $1,578-$1,667 psf, and crucially psf_premium_vs_cohort is +8.9% — a PREMIUM to its own size cohort, not a discount. The eye-catching 11.6% appreciation_pct rests on just 15 transactions, which under the v3.4 priors I treat as noise, not forward signal. The age_adj_premium -18.5% conflicts with the positive cohort premium and the at-market web pricing, so the 'cheap' read is unreliable. Substantively this is a 431sqft shoebox in Geylang on Lorong 6 — closer to the red-light belt than the safer even-Lorong 24-38 stretch — where banks restrict or refuse financing in parts, materially hurting resale liquidity. Shoebox + Geylang stigma + at/above-market entry + thin data is a poor combination for a 5-7yr investment hold. The only real positives (freehold, D14 yield) don't offset paying a premium for an illiquid asset.",
+        "red_flags": [
+          "Not cheap: psf_premium_vs_cohort +8.9% — a premium to its own size cohort; asking is at the top of the live $1,578-$1,667 band",
+          "11.6% CAGR built on only 15 txns — likely data quirk, not durable trend (v3.4: trailing appreciation ~0 forward power)",
+          "431sqft shoebox — narrow buyer pool, MAS shoebox sensitivity, weaker financing",
+          "Lorong 6 Geylang — near red-light belt; documented bank-financing restrictions and harder resale liquidity",
+          "Conflicting signals (age_adj -18.5% vs cohort +8.9%) undermine the cheapness thesis"
+        ],
+        "catalysts": [
+          "Freehold tenure (no lease decay) — but not a forward return edge under v3.4",
+          "D14 strong rental yields (3.5-4.5%) for income-only holds",
+          "Very long-run en-bloc optionality if the Geylang red-light designation recedes — speculative"
+        ],
+        "rental_assessment": "A 431sqft FH shoebox in Geylang can rent well on yield given the low absolute price, but tenant quality/turnover and the area stigma weigh on it; income is the only real merit and doesn't justify a premium entry.",
+        "appreciation_assessment": "I assign no weight to the 11.6% trailing CAGR (15 txns). Paying a cohort premium for a shoebox in a financing-constrained, stigmatized micro-location points to below-market forward capital growth and a difficult exit."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasures-g6-500076282",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

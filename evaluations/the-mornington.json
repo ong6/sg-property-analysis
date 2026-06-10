@@ -1,0 +1,61 @@
+{
+  "condo": "The Mornington",
+  "slug": "the-mornington",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft 3BR freehold at $1.85M / $1,521 PSF in D12 Boon Keng (TOP 2005, ~910m to Boon Keng MRT). The headline 6.0%/yr appreciation rests on only 3 URA transactions so is unreliable, but the asking PSF sits ~12.5% above the $1,352 median, and the $1.85M quantum lands in a liquid band.",
+      "rating_rationale": "The fundamentals are middling-positive: freehold, a healthy 3BR size for families, a $1.85M quantum inside the deep $1.8-2.5M band, and a positive arena Elo (1273, 285 wins). But the 5.998%/yr URA rate is built on just 3 transactions — too thin to trust — and the $1,521 asking PSF is a meaningful ~12.5% premium to the $1,352 URA median, so the buyer is paying up. A 2005-vintage block ~910m from MRT in Boon Keng is solid city-fringe stock but not a standout; the value case is fair, not cheap.",
+      "red_flags": [
+        "Appreciation rate from only 3 URA transactions — unreliable",
+        "Asking $1,521 PSF is ~12.5% above $1,352 URA median",
+        "21-year-old development — rising maintenance, no new-build appeal",
+        "910m to MRT — beyond the prime sub-500m uplift band"
+      ],
+      "catalysts": [
+        "Freehold tenure in city-fringe D12",
+        "Liquid $1.85M quantum and family-friendly 1,216 sqft 3BR",
+        "Boon Keng / city-fringe proximity to CBD supports steady rental"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1521.38,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft 3BR freehold at $1.85M / $1,521 PSF in D12 Boon Keng (TOP 2005, ~910m to Boon Keng MRT). The headline 6.0%/yr appreciation rests on only 3 URA transactions so is unreliable, but the asking PSF sits ~12.5% above the $1,352 median, and the $1.85M quantum lands in a liquid band.",
+        "rating": "Neutral",
+        "rating_rationale": "The fundamentals are middling-positive: freehold, a healthy 3BR size for families, a $1.85M quantum inside the deep $1.8-2.5M band, and a positive arena Elo (1273, 285 wins). But the 5.998%/yr URA rate is built on just 3 transactions — too thin to trust — and the $1,521 asking PSF is a meaningful ~12.5% premium to the $1,352 URA median, so the buyer is paying up. A 2005-vintage block ~910m from MRT in Boon Keng is solid city-fringe stock but not a standout; the value case is fair, not cheap.",
+        "red_flags": [
+          "Appreciation rate from only 3 URA transactions — unreliable",
+          "Asking $1,521 PSF is ~12.5% above $1,352 URA median",
+          "21-year-old development — rising maintenance, no new-build appeal",
+          "910m to MRT — beyond the prime sub-500m uplift band"
+        ],
+        "catalysts": [
+          "Freehold tenure in city-fringe D12",
+          "Liquid $1.85M quantum and family-friendly 1,216 sqft 3BR",
+          "Boon Keng / city-fringe proximity to CBD supports steady rental"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-mornington-25405135",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

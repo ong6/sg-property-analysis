@@ -118,6 +118,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trumps-500061041",
         "review_file": "batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Mature 99LH 1BR near Kembangan MRT, modestly priced but with no fresh catalyst and a thin transaction base behind its headline appreciation. A fair hold, not an edge.",
+      "rating_rationale": "Asking $1,471 psf vs a verified 12-mo project average ~$1,545 psf (range $952-$1,868) is only a slight discount, and age_adj_premium is just -8.7%. The standout 7.14% appreciation_pct rests on only 45 transactions, and psf_cohort_txns=2 — far too thin to trust as a forward signal under the v3.4 priors, so I discount it heavily. The 'very_old_property' flag is real: built 2005 (21 years), a 99LH with ~78 years left and accelerating lease decay, which caps forward upside. Connectivity is fine (Kembangan EWL, walkable) but it's an existing line — no dated catalyst to re-rate the unit. D14 does carry strong rental yield (3.5-4.5%), which keeps it from an Avoid, but the value gap is too small and the data too thin to call a Buy.",
+      "red_flags": [
+        "very_old_property: built 2005, 99LH with ~78 yrs remaining — lease decay headwind on a 5-7yr hold",
+        "Headline 7.14% CAGR built on only 45 txns; psf_cohort_txns=2 — unreliable, likely data quirk",
+        "Discount to 12-mo average is small (~5%) — thin margin of safety",
+        "No new catalyst — served by an existing MRT line only"
+      ],
+      "catalysts": [
+        "Walkable to Kembangan MRT (East-West Line) — existing connectivity, supports rentability",
+        "D14 carries strong rental yields (3.5-4.5%) for income-focused holds"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1470.59,
+        "beds": 1,
+        "sqft": 646
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Mature 99LH 1BR near Kembangan MRT, modestly priced but with no fresh catalyst and a thin transaction base behind its headline appreciation. A fair hold, not an edge.",
+        "rating_rationale": "Asking $1,471 psf vs a verified 12-mo project average ~$1,545 psf (range $952-$1,868) is only a slight discount, and age_adj_premium is just -8.7%. The standout 7.14% appreciation_pct rests on only 45 transactions, and psf_cohort_txns=2 — far too thin to trust as a forward signal under the v3.4 priors, so I discount it heavily. The 'very_old_property' flag is real: built 2005 (21 years), a 99LH with ~78 years left and accelerating lease decay, which caps forward upside. Connectivity is fine (Kembangan EWL, walkable) but it's an existing line — no dated catalyst to re-rate the unit. D14 does carry strong rental yield (3.5-4.5%), which keeps it from an Avoid, but the value gap is too small and the data too thin to call a Buy.",
+        "red_flags": [
+          "very_old_property: built 2005, 99LH with ~78 yrs remaining — lease decay headwind on a 5-7yr hold",
+          "Headline 7.14% CAGR built on only 45 txns; psf_cohort_txns=2 — unreliable, likely data quirk",
+          "Discount to 12-mo average is small (~5%) — thin margin of safety",
+          "No new catalyst — served by an existing MRT line only"
+        ],
+        "catalysts": [
+          "Walkable to Kembangan MRT (East-West Line) — existing connectivity, supports rentability",
+          "D14 carries strong rental yields (3.5-4.5%) for income-focused holds"
+        ],
+        "rental_assessment": "D14 rental demand is strong and the unit is MRT-walkable; income is the main attraction here, with a competitive gross yield offsetting limited capital upside.",
+        "appreciation_assessment": "I do not credit the 7.14% trailing CAGR — 45 txns and a 2-txn cohort make it noise, and v3.4 gives trailing appreciation ~0 forward power. With aging lease and no catalyst, forward capital growth is likely below-average."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-trumps-500128501",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

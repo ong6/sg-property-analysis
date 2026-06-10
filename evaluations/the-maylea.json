@@ -1,0 +1,61 @@
+{
+  "condo": "The Maylea",
+  "slug": "the-maylea",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1BR (2008) in West Coast D05, 450m to Haw Par Villa MRT, asking $1,803 PSF (~5% above the $1,721 median) at a sub-$1M $950k entry. Decent 4.36%/yr appreciation and on_frontier value, sitting in the Greater Southern Waterfront / One-North catchment — a fair Neutral.",
+      "rating_rationale": "score 626, on_frontier=true, and 4.36%/yr on 28 txns are constructive. Freehold and a $950k entry are liquid. Mild negative: $1,803 vs $1,721 median = +5% premium, and 28 txns is a thinnish series. 450m (5 min) to CC25 Haw Par Villa is a real plus, and the GSW transformation runs through this stretch of Pasir Panjang. Small boutique 1BR caps the buyer pool. Balanced.",
+      "red_flags": [
+        "+5% asking vs URA median",
+        "1BR boutique unit — limited resale depth",
+        "28-txn series — moderate reliability"
+      ],
+      "catalysts": [
+        "450m to CC25 Haw Par Villa MRT (Circle Line)",
+        "Greater Southern Waterfront transformation through Pasir Panjang",
+        "freehold sub-$1M entry, One-North/NUS rental catchment"
+      ],
+      "as_of": {
+        "price": 950000,
+        "psf": 1802.66,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1BR (2008) in West Coast D05, 450m to Haw Par Villa MRT, asking $1,803 PSF (~5% above the $1,721 median) at a sub-$1M $950k entry. Decent 4.36%/yr appreciation and on_frontier value, sitting in the Greater Southern Waterfront / One-North catchment — a fair Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "score 626, on_frontier=true, and 4.36%/yr on 28 txns are constructive. Freehold and a $950k entry are liquid. Mild negative: $1,803 vs $1,721 median = +5% premium, and 28 txns is a thinnish series. 450m (5 min) to CC25 Haw Par Villa is a real plus, and the GSW transformation runs through this stretch of Pasir Panjang. Small boutique 1BR caps the buyer pool. Balanced.",
+        "red_flags": [
+          "+5% asking vs URA median",
+          "1BR boutique unit — limited resale depth",
+          "28-txn series — moderate reliability"
+        ],
+        "catalysts": [
+          "450m to CC25 Haw Par Villa MRT (Circle Line)",
+          "Greater Southern Waterfront transformation through Pasir Panjang",
+          "freehold sub-$1M entry, One-North/NUS rental catchment"
+        ],
+        "rental_assessment": "West Coast/One-North tenant base (science park, NUS, business hubs) makes a freehold 1BR near the MRT a reliable letting unit.",
+        "appreciation_assessment": "4.36%/yr is reasonable; the GSW catalyst could lift the area, but the slight premium and thin series keep expectations measured.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-maylea-25640193",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

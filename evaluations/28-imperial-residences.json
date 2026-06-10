@@ -1,0 +1,117 @@
+{
+  "condo": "28 Imperial Residences",
+  "slug": "28-imperial-residences",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Sub-$1M freehold 2BR in D14 at $1,346 PSF, a notable discount to the $1,632 development median — but on a thin 10-transaction series showing only 0.55%/yr appreciation. Boutique freehold with an attractive entry price but weak demonstrated growth and shallow liquidity.",
+      "rating_rationale": "The $999,999 ticket is highly liquid for HDB upgraders and the freehold + D14 (Paya Lebar Central) location is a genuine plus. But the resale rate is just 0.55%/yr on only 10 txns — too thin to trust, and what data exists is weak. PSF 1346 vs 1632 median looks cheap, though small boutique projects (28 Imperial is a tiny development) trade at structural discounts and exit slowly. Freehold floor protects downside; lack of growth caps it.",
+      "red_flags": [
+        "Only 10 URA transactions — appreciation rate unreliable",
+        "0.55%/yr demonstrated growth is very weak",
+        "Boutique/small development — shallow buyer pool and slow exit",
+        "760m to Aljunied MRT is a moderate walk"
+      ],
+      "catalysts": [
+        "Freehold tenure floor in a city-fringe RCR district",
+        "Paya Lebar Central commercial transformation and airbase relocation",
+        "Sub-$1M entry keeps the upgrader buyer pool wide"
+      ],
+      "as_of": {
+        "price": 999999,
+        "psf": 1345.89,
+        "beds": 2,
+        "sqft": 743.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Sub-$1M freehold 2BR in D14 at $1,346 PSF, a notable discount to the $1,632 development median — but on a thin 10-transaction series showing only 0.55%/yr appreciation. Boutique freehold with an attractive entry price but weak demonstrated growth and shallow liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "The $999,999 ticket is highly liquid for HDB upgraders and the freehold + D14 (Paya Lebar Central) location is a genuine plus. But the resale rate is just 0.55%/yr on only 10 txns — too thin to trust, and what data exists is weak. PSF 1346 vs 1632 median looks cheap, though small boutique projects (28 Imperial is a tiny development) trade at structural discounts and exit slowly. Freehold floor protects downside; lack of growth caps it.",
+        "red_flags": [
+          "Only 10 URA transactions — appreciation rate unreliable",
+          "0.55%/yr demonstrated growth is very weak",
+          "Boutique/small development — shallow buyer pool and slow exit",
+          "760m to Aljunied MRT is a moderate walk"
+        ],
+        "catalysts": [
+          "Freehold tenure floor in a city-fringe RCR district",
+          "Paya Lebar Central commercial transformation and airbase relocation",
+          "Sub-$1M entry keeps the upgrader buyer pool wide"
+        ],
+        "rental_assessment": "Compact 743sqft 2BR near Aljunied has a workable tenant pool (city-fringe, MRT-adjacent); yield is decent on a sub-$1M basis but tempered by the 760m walk.",
+        "appreciation_assessment": "0.55%/yr on 10 transactions is statistically meaningless and directionally poor; the freehold + cheap-PSF entry is the value story, not demonstrated momentum.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-28-imperial-residences-500111738",
+        "review_file": "cov_batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 2BR (743 sqft) in Geylang (Lor 26, D14) asking $1,346 PSF vs verified recent transacted $1,588-$1,755 PSF (avg $1,673). The discount is real, but the location is the Geylang red-light fringe — a structural liquidity/tenant-quality drag that justifies a discount and caps the upside. Sub-$1M FH entry is the appeal.",
+      "rating_rationale": "Asking $999,999 ($1,346 PSF) is verifiably below the $1,673 PSF 12-month average from web data, so the algo's -29.5% age_adj_premium points to a genuine discount — but I weight it down because psf_cohort_txns=1 and appreciation_source=regional_baseline (not project-specific CAGR), meaning the cohort signal is thin and the discount is partly the market correctly pricing the Geylang lorong location. The development is small (42 units), which thins resale liquidity, and Geylang's red-light association narrows the owner-occupier and premium-tenant pool. Counterweights: freehold tenure, sub-$1M entry, decent transit (Aljunied EWL / Dakota CC), ~3.6% rental yield and 65% profitable resales over 17 txns. Per v3.4, freehold is NOT a forward edge and trailing appreciation carries no weight, so the case reduces to 'cheap freehold in a discounted micro-location' — a fair value buy, not an outperformer. Net Neutral: legitimately priced for what it is, with no decisive forward catalyst.",
+      "red_flags": [
+        "Geylang lorong (red-light district fringe) — persistent drag on resale liquidity, financing, and premium-tenant demand",
+        "Small 42-unit development → thin resale pool and lumpy transaction history",
+        "psf_cohort_txns=1 and appreciation_source=regional_baseline → cheapness signal is thin; -29.5% partly reflects correctly-priced location risk, not pure upside"
+      ],
+      "catalysts": [
+        "Freehold tenure with sub-$1M entry quantum (rare for a 2BR)",
+        "Aljunied (EWL) and Dakota (Circle Line) MRT access within reach",
+        "~3.6% rental yield supports a hold while waiting for any Paya Lebar / Geylang rejuvenation"
+      ],
+      "as_of": {
+        "price": 999999,
+        "psf": 1345.89,
+        "beds": 2,
+        "sqft": 743
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 2BR (743 sqft) in Geylang (Lor 26, D14) asking $1,346 PSF vs verified recent transacted $1,588-$1,755 PSF (avg $1,673). The discount is real, but the location is the Geylang red-light fringe — a structural liquidity/tenant-quality drag that justifies a discount and caps the upside. Sub-$1M FH entry is the appeal.",
+        "rating_rationale": "Asking $999,999 ($1,346 PSF) is verifiably below the $1,673 PSF 12-month average from web data, so the algo's -29.5% age_adj_premium points to a genuine discount — but I weight it down because psf_cohort_txns=1 and appreciation_source=regional_baseline (not project-specific CAGR), meaning the cohort signal is thin and the discount is partly the market correctly pricing the Geylang lorong location. The development is small (42 units), which thins resale liquidity, and Geylang's red-light association narrows the owner-occupier and premium-tenant pool. Counterweights: freehold tenure, sub-$1M entry, decent transit (Aljunied EWL / Dakota CC), ~3.6% rental yield and 65% profitable resales over 17 txns. Per v3.4, freehold is NOT a forward edge and trailing appreciation carries no weight, so the case reduces to 'cheap freehold in a discounted micro-location' — a fair value buy, not an outperformer. Net Neutral: legitimately priced for what it is, with no decisive forward catalyst.",
+        "red_flags": [
+          "Geylang lorong (red-light district fringe) — persistent drag on resale liquidity, financing, and premium-tenant demand",
+          "Small 42-unit development → thin resale pool and lumpy transaction history",
+          "psf_cohort_txns=1 and appreciation_source=regional_baseline → cheapness signal is thin; -29.5% partly reflects correctly-priced location risk, not pure upside"
+        ],
+        "catalysts": [
+          "Freehold tenure with sub-$1M entry quantum (rare for a 2BR)",
+          "Aljunied (EWL) and Dakota (Circle Line) MRT access within reach",
+          "~3.6% rental yield supports a hold while waiting for any Paya Lebar / Geylang rejuvenation"
+        ],
+        "rental_assessment": "~3.6% gross yield with Aljunied/Dakota access is workable, and Geylang's affordability draws a steady budget-tenant pool. But tenant quality and turnover risk are higher than mainstream D14, and the small project offers no facilities premium to lift rents.",
+        "appreciation_assessment": "appreciation_pct=3.7% is a regional_baseline placeholder (not project CAGR) — no forward signal. Freehold gives no forward edge per v3.4. With no dated catalyst, expect roughly district-baseline appreciation, discounted for the location."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-28-imperial-residences-500111738",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

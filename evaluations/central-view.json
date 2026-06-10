@@ -1,0 +1,61 @@
+{
+  "condo": "Central View",
+  "slug": "central-view",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 980sqft 2BR at $1.30M / $1,327 PSF near Serangoon (NEX, NE12) priced ~5% below the $1,398 URA median, in a 24-year-old leasehold development. Solid value entry with a low absolute price band, but the 7.95% CAGR rests on only 26 transactions and lease decay is now a real headwind at 24 years.",
+      "rating_rationale": "Priced below district median ($1,327 vs $1,398) and in the liquid sub-$1.5M band that HDB upgraders favour, with NEX/Serangoon connectivity supporting tenant demand. But the 7.95% appreciation is built on a thin 26-txn series (unreliable), the 99yr lease from a 2002 build leaves ~75yr and decay accelerates from here, and the 980sqft generous size means PSF is not as cheap as it looks per-unit.",
+      "red_flags": [
+        "Appreciation rate from only 26 URA transactions — low confidence",
+        "24-year-old 99yr leasehold, lease decay now material",
+        "740m to MRT is a moderate, not prime, walk"
+      ],
+      "catalysts": [
+        "~5% below URA median PSF leaves room",
+        "NEX mega-mall and Serangoon interchange (NEL+CCL) anchor tenant/buyer demand",
+        "Sub-$1.5M price keeps buyer pool deep"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1326.53,
+        "beds": 2,
+        "sqft": 980.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 980sqft 2BR at $1.30M / $1,327 PSF near Serangoon (NEX, NE12) priced ~5% below the $1,398 URA median, in a 24-year-old leasehold development. Solid value entry with a low absolute price band, but the 7.95% CAGR rests on only 26 transactions and lease decay is now a real headwind at 24 years.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced below district median ($1,327 vs $1,398) and in the liquid sub-$1.5M band that HDB upgraders favour, with NEX/Serangoon connectivity supporting tenant demand. But the 7.95% appreciation is built on a thin 26-txn series (unreliable), the 99yr lease from a 2002 build leaves ~75yr and decay accelerates from here, and the 980sqft generous size means PSF is not as cheap as it looks per-unit.",
+        "red_flags": [
+          "Appreciation rate from only 26 URA transactions — low confidence",
+          "24-year-old 99yr leasehold, lease decay now material",
+          "740m to MRT is a moderate, not prime, walk"
+        ],
+        "catalysts": [
+          "~5% below URA median PSF leaves room",
+          "NEX mega-mall and Serangoon interchange (NEL+CCL) anchor tenant/buyer demand",
+          "Sub-$1.5M price keeps buyer pool deep"
+        ],
+        "rental_assessment": "2BR near a major interchange and NEX retail hub has a broad tenant pool; yield likely in the 3.3-3.7% range typical for the band.",
+        "appreciation_assessment": "Headline 7.95% is overstated by a thin sample; a 4-5% forward rate is more defensible for a maturing leasehold trading near district median.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-central-view-25370254",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

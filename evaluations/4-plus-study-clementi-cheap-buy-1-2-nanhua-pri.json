@@ -1,0 +1,65 @@
+{
+  "condo": "❤️ 4 plus study, clementi cheap buy, 1-2 nanhua pri ❤️",
+  "slug": "4-plus-study-clementi-cheap-buy-1-2-nanhua-pri",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A new-launch 4+study (Clavon/Clement Canopy-area type product, TOP 2027) in D05 priced at $3.48M / $2,309 psf, marketed on Nan Hua Primary proximity. The quantum and PSF are full new-launch pricing on a leasehold large unit, with weak score (409) and no project transaction history attached.",
+      "rating_rationale": "$3.48M for a 99-yr leasehold 4BR is well above the liquid $1.8-2.5M band — exit pool is thin. $2,309 psf is top-of-market new-launch pricing on a large unit, so the appreciation runway is already largely priced in. 1km to Nan Hua appeals to a narrow own-stay family buyer, not an investment thesis; 12-min walk to MRT removes the transit premium. score_1000 = 409 (below market-typical).",
+      "red_flags": [
+        "$3.48M quantum far above liquid band — narrow resale pool",
+        "Full new-launch PSF ($2,309) leaves little appreciation headroom",
+        "Leasehold large-format unit (1,507 sqft) at high quantum is hard to exit",
+        "12 min / 1km from MRT",
+        "Listing-name driven (school proximity) — own-stay niche, not investment"
+      ],
+      "catalysts": [
+        "One-North / D05 employment catchment supports underlying demand",
+        "Nan Hua Primary 1km appeal for own-stay families"
+      ],
+      "as_of": {
+        "price": 3480000,
+        "psf": 2309.22,
+        "beds": 4,
+        "sqft": 1507.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new-launch 4+study (Clavon/Clement Canopy-area type product, TOP 2027) in D05 priced at $3.48M / $2,309 psf, marketed on Nan Hua Primary proximity. The quantum and PSF are full new-launch pricing on a leasehold large unit, with weak score (409) and no project transaction history attached.",
+        "rating": "Avoid",
+        "rating_rationale": "$3.48M for a 99-yr leasehold 4BR is well above the liquid $1.8-2.5M band — exit pool is thin. $2,309 psf is top-of-market new-launch pricing on a large unit, so the appreciation runway is already largely priced in. 1km to Nan Hua appeals to a narrow own-stay family buyer, not an investment thesis; 12-min walk to MRT removes the transit premium. score_1000 = 409 (below market-typical).",
+        "red_flags": [
+          "$3.48M quantum far above liquid band — narrow resale pool",
+          "Full new-launch PSF ($2,309) leaves little appreciation headroom",
+          "Leasehold large-format unit (1,507 sqft) at high quantum is hard to exit",
+          "12 min / 1km from MRT",
+          "Listing-name driven (school proximity) — own-stay niche, not investment"
+        ],
+        "catalysts": [
+          "One-North / D05 employment catchment supports underlying demand",
+          "Nan Hua Primary 1km appeal for own-stay families"
+        ],
+        "rental_assessment": "A $3.48M large leasehold unit rents poorly relative to price; yield likely well under 3%, and 4BR has the smallest tenant pool.",
+        "appreciation_assessment": "Bought at full new-launch pricing near $2,300 psf, upside is capped; resale of an expensive leasehold 4BR competes against the next launch cycle.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "D05 leasehold new-launch priced-to-perfection assumption"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-4-plus-study-clementi-cheap-buy-1-2-nanhua-pri-500014501",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

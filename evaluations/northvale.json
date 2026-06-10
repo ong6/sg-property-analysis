@@ -60,6 +60,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-25292807",
         "review_file": "batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A real PSF discount on a large unit beside CCK MRT, but accelerating lease decay (~68yrs left), 1998 vintage and a mis-tagged bed count offset the cheapness.",
+      "rating_rationale": "Asking 928 psf sits below the project's entire last-12-month range (966-1198 psf, avg ~1098), so the algo's -16.6% age and -15.7% cohort discounts are real against recent resale evidence (21-txn cohort is reasonable). It is OCR D23 next to Choa Chu Kang MRT/Lot One. However the value is materially offset by lease risk: 99yr from 1995 leaves only ~68 years, where decay and financing/CPF restrictions begin to bite (low_lease and very_old_property flags are genuine, not quirks). The bedroom_sqft_mismatch is explained — a 1055 sqft unit is not a true 1BR but a mis-tagged larger (likely 3BR) layout, so the listing metadata is unreliable and must be re-verified. Cheapness real but lease-shortened: a Neutral hold, not a buy, until the lease/exit math is confirmed for a 5-7yr horizon.",
+      "red_flags": [
+        "Only ~68 years lease remaining (99yr from 1995) — lease decay and CPF/financing limits will weigh on resale within the hold window",
+        "bedroom_sqft_mismatch: 1055 sqft tagged as 1-bed is almost certainly a mis-tagged 3BR — listing metadata unreliable, verify actual layout",
+        "1998 build (very_old_property) implies aging facilities and higher maintenance"
+      ],
+      "catalysts": [
+        "Adjacent to Choa Chu Kang MRT (NSL + LRT) and Lot One mall — strong everyday convenience",
+        "Verified PSF below the recent transaction range gives entry-price cushion"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 928.91,
+        "beds": 1,
+        "sqft": 1055
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "A real PSF discount on a large unit beside CCK MRT, but accelerating lease decay (~68yrs left), 1998 vintage and a mis-tagged bed count offset the cheapness.",
+        "rating_rationale": "Asking 928 psf sits below the project's entire last-12-month range (966-1198 psf, avg ~1098), so the algo's -16.6% age and -15.7% cohort discounts are real against recent resale evidence (21-txn cohort is reasonable). It is OCR D23 next to Choa Chu Kang MRT/Lot One. However the value is materially offset by lease risk: 99yr from 1995 leaves only ~68 years, where decay and financing/CPF restrictions begin to bite (low_lease and very_old_property flags are genuine, not quirks). The bedroom_sqft_mismatch is explained — a 1055 sqft unit is not a true 1BR but a mis-tagged larger (likely 3BR) layout, so the listing metadata is unreliable and must be re-verified. Cheapness real but lease-shortened: a Neutral hold, not a buy, until the lease/exit math is confirmed for a 5-7yr horizon.",
+        "red_flags": [
+          "Only ~68 years lease remaining (99yr from 1995) — lease decay and CPF/financing limits will weigh on resale within the hold window",
+          "bedroom_sqft_mismatch: 1055 sqft tagged as 1-bed is almost certainly a mis-tagged 3BR — listing metadata unreliable, verify actual layout",
+          "1998 build (very_old_property) implies aging facilities and higher maintenance"
+        ],
+        "catalysts": [
+          "Adjacent to Choa Chu Kang MRT (NSL + LRT) and Lot One mall — strong everyday convenience",
+          "Verified PSF below the recent transaction range gives entry-price cushion"
+        ],
+        "rental_assessment": "A large (~1055 sqft) family-sized unit beside CCK MRT/mall rents to families; absolute rent is healthy but the short remaining lease caps capital exit and narrows the future buyer pool.",
+        "appreciation_assessment": "Trailing 7.32% CAGR (112 txns) is credible context but per v3.4 has ~0 forward power; for a ~68yr-lease 1998 unit, lease decay is the dominant forward driver and works against price growth over a 5-7yr hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-60220179",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

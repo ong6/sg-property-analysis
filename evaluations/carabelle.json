@@ -1,0 +1,61 @@
+{
+  "condo": "Carabelle",
+  "slug": "carabelle",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 1819 sqft 4BR in D05 West Coast at $1748 PSF — 8% below the $1900 resale median — on a near-perpetual 999yr lease, with a solid 5.76% URA resale CAGR (41 txns). One-North/TEL proximity supports the area, but the low PSF is partly the function of an oversized unit and the $3.18M quantum thins the buyer pool.",
+      "rating_rationale": "Frontier entry (Elo 1718, on_frontier) with genuine value: $1748 PSF vs $1900 median (41 resale txns) on 999yr tenure that behaves like freehold. 5.76% resale CAGR is RCR-baseline-grade and credible. Build-quality reviews are mixed (rusting gates, average finishes), and at $3.18M the 4BR exits to a narrower pool — but the discount, near-freehold tenure and One-North/Clementi location make this a solid investment hold.",
+      "red_flags": [
+        "Mixed build quality — rusting metalwork and average interior finishes per reviews",
+        "$3.18M quantum sits above the deepest $1.8-2.5M buyer band",
+        "Low PSF partly reflects an oversized 1819 sqft unit, not pure underpricing"
+      ],
+      "catalysts": [
+        "One-North tech-hub and TEL/Clementi connectivity demand",
+        "999yr tenure preserves value vs ageing 99yr peers",
+        "Entry 8% under district resale median"
+      ],
+      "as_of": {
+        "price": 3180000,
+        "psf": 1748.21,
+        "beds": 4,
+        "sqft": 1819.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1819 sqft 4BR in D05 West Coast at $1748 PSF — 8% below the $1900 resale median — on a near-perpetual 999yr lease, with a solid 5.76% URA resale CAGR (41 txns). One-North/TEL proximity supports the area, but the low PSF is partly the function of an oversized unit and the $3.18M quantum thins the buyer pool.",
+        "rating": "Buy",
+        "rating_rationale": "Frontier entry (Elo 1718, on_frontier) with genuine value: $1748 PSF vs $1900 median (41 resale txns) on 999yr tenure that behaves like freehold. 5.76% resale CAGR is RCR-baseline-grade and credible. Build-quality reviews are mixed (rusting gates, average finishes), and at $3.18M the 4BR exits to a narrower pool — but the discount, near-freehold tenure and One-North/Clementi location make this a solid investment hold.",
+        "red_flags": [
+          "Mixed build quality — rusting metalwork and average interior finishes per reviews",
+          "$3.18M quantum sits above the deepest $1.8-2.5M buyer band",
+          "Low PSF partly reflects an oversized 1819 sqft unit, not pure underpricing"
+        ],
+        "catalysts": [
+          "One-North tech-hub and TEL/Clementi connectivity demand",
+          "999yr tenure preserves value vs ageing 99yr peers",
+          "Entry 8% under district resale median"
+        ],
+        "rental_assessment": "Good. West Coast/One-North draws tech professionals and NUS-adjacent tenants; large 4BR yields a thinner but stable family/expat pool.",
+        "appreciation_assessment": "5.76% resale CAGR over 41 txns is reliable and matches the RCR baseline; near-freehold tenure and One-North maturation support continued steady appreciation.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-carabelle-22886106",
+        "review_file": "cov_batch_12.json"
+      }
+    }
+  ]
+}

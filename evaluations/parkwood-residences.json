@@ -1,0 +1,63 @@
+{
+  "condo": "Parkwood Residences",
+  "slug": "parkwood-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "936 sqft 3BR at Parkwood Residences — web research confirms this is a tiny 18-UNIT boutique freehold-style development (99yr from 2018) on Yio Chu Kang Road, TOP 2023. Priced at $1,667 psf with new-launch bias flagged and only 17 URA txns; the future Serangoon North CRL station (580m) is the one upside.",
+      "rating_rationale": "An 18-unit development is structurally illiquid — no resale depth, no facilities scale, and exit depends entirely on finding one of very few comparable buyers. New-launch bias is flagged and only 17 txns exist, so the implied pricing is developer-set and unproven on resale. At $1,667 psf in OCR D19 this is rich for a boutique with no amenities. The future CRL station is real but does not rescue a fundamentally illiquid micro-development for a 5-7yr investment exit.",
+      "red_flags": [
+        "Tiny 18-unit boutique — structurally illiquid, no resale depth",
+        "New-launch bias flagged; only 17 txns, developer-set pricing unproven on resale",
+        "$1,667 psf rich for an amenity-light OCR boutique",
+        "No meaningful URA median to anchor value"
+      ],
+      "catalysts": [
+        "Future Serangoon North CRL station ~580m (CRL ~2030)",
+        "Brand-new 2023 build"
+      ],
+      "as_of": {
+        "price": 1560000,
+        "psf": 1666.67,
+        "beds": 3,
+        "sqft": 936.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "936 sqft 3BR at Parkwood Residences — web research confirms this is a tiny 18-UNIT boutique freehold-style development (99yr from 2018) on Yio Chu Kang Road, TOP 2023. Priced at $1,667 psf with new-launch bias flagged and only 17 URA txns; the future Serangoon North CRL station (580m) is the one upside.",
+        "rating": "Avoid",
+        "rating_rationale": "An 18-unit development is structurally illiquid — no resale depth, no facilities scale, and exit depends entirely on finding one of very few comparable buyers. New-launch bias is flagged and only 17 txns exist, so the implied pricing is developer-set and unproven on resale. At $1,667 psf in OCR D19 this is rich for a boutique with no amenities. The future CRL station is real but does not rescue a fundamentally illiquid micro-development for a 5-7yr investment exit.",
+        "red_flags": [
+          "Tiny 18-unit boutique — structurally illiquid, no resale depth",
+          "New-launch bias flagged; only 17 txns, developer-set pricing unproven on resale",
+          "$1,667 psf rich for an amenity-light OCR boutique",
+          "No meaningful URA median to anchor value"
+        ],
+        "catalysts": [
+          "Future Serangoon North CRL station ~580m (CRL ~2030)",
+          "Brand-new 2023 build"
+        ],
+        "rental_assessment": "Small boutique with minimal facilities; 3BR rents to families but the development's micro-scale gives no rental-management or amenity advantage.",
+        "appreciation_assessment": "No resale track record (17 txns, new-launch bias); boutique illiquidity makes price discovery and exit unreliable despite the CRL catalyst.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "No reliable resale data; boutique illiquidity discount despite CRL catalyst"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parkwood-residences-60146988",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

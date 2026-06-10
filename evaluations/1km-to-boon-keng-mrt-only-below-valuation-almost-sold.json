@@ -1,0 +1,63 @@
+{
+  "condo": "1KM To Boon Keng MRT Only! Below Valuation! Almost Sold!",
+  "slug": "1km-to-boon-keng-mrt-only-below-valuation-almost-sold",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,410 sqft 999-year 3BR in D12 (near Boon Keng) at $1.89M ($1,340 PSF). The clickbait listing title ('Below Valuation! Almost Sold!') and complete absence of URA appreciation/txn data make this a low-information entry that must be judged on fundamentals alone.",
+      "rating_rationale": "999-year tenure (near-freehold) and a fair $1,340 PSF for a roomy 1,410 sqft 3BR in city-fringe D12 are positives, and the $1.89M price sits in the liquid sweet spot. But the dossier has zero URA appreciation/txn data, the project isn't even named (listing title is a marketing slogan), and 710m to Boon Keng (NE9) is a 9-min walk. 2005 vintage means a 20-year-old block. Without a project identity to research, this stays a hold-grade Neutral.",
+      "red_flags": [
+        "No URA appreciation or transaction data at all",
+        "Project name unidentifiable from listing — pure marketing title",
+        "20-year-old building (2005); maintenance/dated finishes risk",
+        "9-min walk to MRT, not truly MRT-adjacent"
+      ],
+      "catalysts": [
+        "999-year leasehold ~ freehold value retention",
+        "Reasonable $1,340 PSF for large 3BR in city-fringe D12",
+        "$1.89M in the deepest-demand price band"
+      ],
+      "as_of": {
+        "price": 1889999,
+        "psf": 1340.42,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,410 sqft 999-year 3BR in D12 (near Boon Keng) at $1.89M ($1,340 PSF). The clickbait listing title ('Below Valuation! Almost Sold!') and complete absence of URA appreciation/txn data make this a low-information entry that must be judged on fundamentals alone.",
+        "rating": "Neutral",
+        "rating_rationale": "999-year tenure (near-freehold) and a fair $1,340 PSF for a roomy 1,410 sqft 3BR in city-fringe D12 are positives, and the $1.89M price sits in the liquid sweet spot. But the dossier has zero URA appreciation/txn data, the project isn't even named (listing title is a marketing slogan), and 710m to Boon Keng (NE9) is a 9-min walk. 2005 vintage means a 20-year-old block. Without a project identity to research, this stays a hold-grade Neutral.",
+        "red_flags": [
+          "No URA appreciation or transaction data at all",
+          "Project name unidentifiable from listing — pure marketing title",
+          "20-year-old building (2005); maintenance/dated finishes risk",
+          "9-min walk to MRT, not truly MRT-adjacent"
+        ],
+        "catalysts": [
+          "999-year leasehold ~ freehold value retention",
+          "Reasonable $1,340 PSF for large 3BR in city-fringe D12",
+          "$1.89M in the deepest-demand price band"
+        ],
+        "rental_assessment": "City-fringe D12 (Boon Keng/Bendemeer) has decent tenant demand given proximity to town; large 3BR is family/co-tenancy oriented with moderate yield.",
+        "appreciation_assessment": "No project-specific data; D12 RCR baseline is reasonable but the asset is old and generic. Expect market-average appreciation at best.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-1km-to-boon-keng-mrt-only-below-valuation-almost-sold-500124300",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "condo": "Nuovo",
+  "slug": "nuovo",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,389 sqft 4BR at Nuovo (D20 Yio Chu Kang, 99yr from 2004) at $1.98M / $1,425 PSF, well-located 480m from Yio Chu Kang MRT. Aging leasehold with ~77 years left and no URA appreciation data; decent location but unexciting fundamentals.",
+      "rating_rationale": "22-year-old 99yr leasehold means ~77yrs remaining — lease decay starts to weigh on financing and resale over a 5-7yr hold. $1,425 PSF is fair for D20 but appreciation will be capped by the depreciating lease and OCR-baseline growth. 480m MRT walk and ~$2M family quantum support liquidity, but score_1000 469 and no catalysts make this a hold-not-buy.",
+      "red_flags": [
+        "99yr lease from 2004 — ~77yrs left, decay accelerating over hold",
+        "No URA appreciation/txn data for the development",
+        "OCR D20 with no major govt-zone or new-MRT catalyst nearby"
+      ],
+      "catalysts": [
+        "480m (6 min) to Yio Chu Kang NSL MRT — genuine MRT proximity",
+        "Large 4BR family layout with broad upgrader appeal at ~$2M"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 1425.49,
+        "beds": 4,
+        "sqft": 1389.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,389 sqft 4BR at Nuovo (D20 Yio Chu Kang, 99yr from 2004) at $1.98M / $1,425 PSF, well-located 480m from Yio Chu Kang MRT. Aging leasehold with ~77 years left and no URA appreciation data; decent location but unexciting fundamentals.",
+        "rating": "Neutral",
+        "rating_rationale": "22-year-old 99yr leasehold means ~77yrs remaining — lease decay starts to weigh on financing and resale over a 5-7yr hold. $1,425 PSF is fair for D20 but appreciation will be capped by the depreciating lease and OCR-baseline growth. 480m MRT walk and ~$2M family quantum support liquidity, but score_1000 469 and no catalysts make this a hold-not-buy.",
+        "red_flags": [
+          "99yr lease from 2004 — ~77yrs left, decay accelerating over hold",
+          "No URA appreciation/txn data for the development",
+          "OCR D20 with no major govt-zone or new-MRT catalyst nearby"
+        ],
+        "catalysts": [
+          "480m (6 min) to Yio Chu Kang NSL MRT — genuine MRT proximity",
+          "Large 4BR family layout with broad upgrader appeal at ~$2M"
+        ],
+        "rental_assessment": "4BR in OCR Yio Chu Kang draws mainly families; modest tenant pool. Yield typical for the area, not a standout.",
+        "appreciation_assessment": "No project URA data; lease decay on a 2004 99yr unit will offset OCR baseline growth. Flat-to-modest outlook.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nuovo-500157895",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

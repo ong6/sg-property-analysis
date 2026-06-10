@@ -1,0 +1,59 @@
+{
+  "condo": "Whitescape",
+  "slug": "whitescape",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An 807 sqft freehold 2BR at Whitescape, a boutique D15 (Marine Parade/East Coast) block built 2012, 700m from TE27 Marine Terrace MRT, at $1.58M / $1,958 psf. Freehold 2BR in deep-buyer-pool D15 with TEL access is the right format, but the 7.3%/yr appreciation rests on just 6 transactions (unreliable) and asking PSF is ~5% above the $1,870 median.",
+      "rating_rationale": "The format and location are sound — freehold 2BR (widest tenant/buyer pool) in D15 with TEL Marine Terrace 700m away and East Coast lifestyle. But the headline 7.3%/yr CAGR is built on only 6 URA transactions, so it can't be trusted, and $1,958 psf is a ~5% premium to median in a small boutique block with limited liquidity. Reasonable hold, but you're paying above median on thin data — Neutral.",
+      "red_flags": [
+        "Only 6 URA transactions — 7.3%/yr appreciation rate is unreliable",
+        "Asking PSF ~5% above district median",
+        "Boutique block — thinner resale liquidity than large developments"
+      ],
+      "catalysts": [
+        "Freehold 2BR in deep-pool D15 — widest buyer/tenant demand",
+        "700m to TE27 Marine Terrace (Thomson-East Coast Line)",
+        "East Coast lifestyle precinct"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1957.87,
+        "beds": 2,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An 807 sqft freehold 2BR at Whitescape, a boutique D15 (Marine Parade/East Coast) block built 2012, 700m from TE27 Marine Terrace MRT, at $1.58M / $1,958 psf. Freehold 2BR in deep-buyer-pool D15 with TEL access is the right format, but the 7.3%/yr appreciation rests on just 6 transactions (unreliable) and asking PSF is ~5% above the $1,870 median.",
+        "rating": "Neutral",
+        "rating_rationale": "The format and location are sound — freehold 2BR (widest tenant/buyer pool) in D15 with TEL Marine Terrace 700m away and East Coast lifestyle. But the headline 7.3%/yr CAGR is built on only 6 URA transactions, so it can't be trusted, and $1,958 psf is a ~5% premium to median in a small boutique block with limited liquidity. Reasonable hold, but you're paying above median on thin data — Neutral.",
+        "red_flags": [
+          "Only 6 URA transactions — 7.3%/yr appreciation rate is unreliable",
+          "Asking PSF ~5% above district median",
+          "Boutique block — thinner resale liquidity than large developments"
+        ],
+        "catalysts": [
+          "Freehold 2BR in deep-pool D15 — widest buyer/tenant demand",
+          "700m to TE27 Marine Terrace (Thomson-East Coast Line)",
+          "East Coast lifestyle precinct"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-whitescape-500128669",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

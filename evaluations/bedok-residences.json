@@ -1,0 +1,115 @@
+{
+  "condo": "Bedok Residences",
+  "slug": "bedok-residences",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "An integrated mixed-use 99-yr development directly above Bedok MRT and Bedok Mall, with a robust 109-txn URA series showing 4.26%/yr appreciation. The 2BR (1,055 sqft) is asking $1,611 PSF — a striking ~13% below the $1,858 median — making this one of the better risk-adjusted entries in the batch.",
+      "rating_rationale": "Best-in-batch combination of location and data: integrated mall + MRT (590m, effectively connected), 109 txns, 4.26%/yr appreciation, and a $1,611 PSF that is ~13% under the $1,858 median. A roomy 1,055 sqft 2BR at $1.7M sits in the liquid sweet spot with deep HDB-upgrader demand. Score_1000 of 652 and Elo 1346 confirm a strong profile; the sub-median PSF warrants a quick check on the specific stack/floor but the value gap is real.",
+      "red_flags": [
+        "99-yr leasehold (2015) — decay clock running",
+        "Asking ~13% below median — verify stack/facing/floor isn't the reason (low floor, road/MRT noise)",
+        "OCR/D16 appreciation baseline below RCR"
+      ],
+      "catalysts": [
+        "Integrated with Bedok Mall and directly linked to Bedok MRT and bus interchange — top-tier convenience",
+        "Deep HDB-upgrader and family demand in mature Bedok town",
+        "Sub-median PSF entry with 109-txn-verified 4.26% appreciation"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1611.37,
+        "beds": 2,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An integrated mixed-use 99-yr development directly above Bedok MRT and Bedok Mall, with a robust 109-txn URA series showing 4.26%/yr appreciation. The 2BR (1,055 sqft) is asking $1,611 PSF — a striking ~13% below the $1,858 median — making this one of the better risk-adjusted entries in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "Best-in-batch combination of location and data: integrated mall + MRT (590m, effectively connected), 109 txns, 4.26%/yr appreciation, and a $1,611 PSF that is ~13% under the $1,858 median. A roomy 1,055 sqft 2BR at $1.7M sits in the liquid sweet spot with deep HDB-upgrader demand. Score_1000 of 652 and Elo 1346 confirm a strong profile; the sub-median PSF warrants a quick check on the specific stack/floor but the value gap is real.",
+        "red_flags": [
+          "99-yr leasehold (2015) — decay clock running",
+          "Asking ~13% below median — verify stack/facing/floor isn't the reason (low floor, road/MRT noise)",
+          "OCR/D16 appreciation baseline below RCR"
+        ],
+        "catalysts": [
+          "Integrated with Bedok Mall and directly linked to Bedok MRT and bus interchange — top-tier convenience",
+          "Deep HDB-upgrader and family demand in mature Bedok town",
+          "Sub-median PSF entry with 109-txn-verified 4.26% appreciation"
+        ],
+        "rental_assessment": "Mall + MRT integration makes this a prime rental product in mature Bedok; 2BR rents readily to families and professionals, ~3-3.5% yield.",
+        "appreciation_assessment": "4.26%/yr on 109 txns is reliable and the ~13% sub-median asking gives genuine upside headroom if the unit is sound — strong appreciation case.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bedok-residences-60182625",
+        "review_file": "cov_batch_16.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Integrated 99LH condo sitting directly above Bedok MRT and Bedok Mall — a large 1,055 sqft 2BR at $1,611 psf vs a 2BR project average of ~$1,834 psf (range $1,442-2,035). Genuinely below-market on deep, real transaction data, with the integrated-MRT/mall durability that holds value and rents fast.",
+      "rating_rationale": "This is the standout of the five and the cheapness is REAL, not a quirk: web check shows Bedok Residences 2BR trailing-12m sales avg ~$1,834 psf with a tight $1,442-2,035 range, so $1,611.37 psf is clearly at the low end. That corroborates the algo's -5.9% age-adj and -18.9% psf-vs-cohort reads, and crucially these sit on DEEP data (appreciation_txns=109) — the most credible value signal in this batch per v3.4 (value leads, thin-comp skepticism not needed here). It's a CapitaLand integrated development directly atop Bedok MRT (EWL) with Bedok Mall downstairs — the strongest liquidity/rental profile of the group — in D16 (OCR, ~+4% forward region). 1,055 sqft for a 2BR is generously sized for the family-upgrader/rental market. Risks: 99LH (TOP 2015, ~88 yrs left — fine for a 5-7yr hold) and the large sqft means total $1.7m. Below-market entry + integrated-transit durability + strong forward region = Buy.",
+      "red_flags": [
+        "99-year leasehold (TOP 2015) — lease decay is a long-term drag, though minor over 5-7yr",
+        "$1.7m total on a 1,055 sqft 2BR — large unit lifts the absolute ticket",
+        "psf_cohort_txns=5 in the size band (but backed by 109 project appreciation txns — data is deep overall)"
+      ],
+      "catalysts": [
+        "Direct integration with Bedok MRT (EWL) and Bedok Mall — top-tier convenience and rental demand",
+        "D16 OCR — leading forward-appreciation region per v3.4 backtest",
+        "Verified below-market entry ($1,611 vs ~$1,834 2BR avg) on deep transaction data"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1611.37,
+        "beds": 2,
+        "sqft": 1055
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Integrated 99LH condo sitting directly above Bedok MRT and Bedok Mall — a large 1,055 sqft 2BR at $1,611 psf vs a 2BR project average of ~$1,834 psf (range $1,442-2,035). Genuinely below-market on deep, real transaction data, with the integrated-MRT/mall durability that holds value and rents fast.",
+        "rating_rationale": "This is the standout of the five and the cheapness is REAL, not a quirk: web check shows Bedok Residences 2BR trailing-12m sales avg ~$1,834 psf with a tight $1,442-2,035 range, so $1,611.37 psf is clearly at the low end. That corroborates the algo's -5.9% age-adj and -18.9% psf-vs-cohort reads, and crucially these sit on DEEP data (appreciation_txns=109) — the most credible value signal in this batch per v3.4 (value leads, thin-comp skepticism not needed here). It's a CapitaLand integrated development directly atop Bedok MRT (EWL) with Bedok Mall downstairs — the strongest liquidity/rental profile of the group — in D16 (OCR, ~+4% forward region). 1,055 sqft for a 2BR is generously sized for the family-upgrader/rental market. Risks: 99LH (TOP 2015, ~88 yrs left — fine for a 5-7yr hold) and the large sqft means total $1.7m. Below-market entry + integrated-transit durability + strong forward region = Buy.",
+        "red_flags": [
+          "99-year leasehold (TOP 2015) — lease decay is a long-term drag, though minor over 5-7yr",
+          "$1.7m total on a 1,055 sqft 2BR — large unit lifts the absolute ticket",
+          "psf_cohort_txns=5 in the size band (but backed by 109 project appreciation txns — data is deep overall)"
+        ],
+        "catalysts": [
+          "Direct integration with Bedok MRT (EWL) and Bedok Mall — top-tier convenience and rental demand",
+          "D16 OCR — leading forward-appreciation region per v3.4 backtest",
+          "Verified below-market entry ($1,611 vs ~$1,834 2BR avg) on deep transaction data"
+        ],
+        "appreciation_assessment": "Trailing +4.26% (109 txns) is modest but, more importantly, the value gap (-18.9% vs cohort) on deep data is the robust forward signal v3.4 rewards; integrated-transit assets defend value well. Expect at-or-above OCR market forward returns.",
+        "rental_assessment": "Above-MRT, above-mall 2BR is among the easiest-to-rent profiles in the East; strong, dependable tenant demand and stable occupancy underpin yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bedok-residences-60182625",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

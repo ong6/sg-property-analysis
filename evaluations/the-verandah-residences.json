@@ -1,0 +1,65 @@
+{
+  "condo": "The Verandah Residences",
+  "slug": "the-verandah-residences",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1BR (474 sqft) at The Verandah Residences, D05 (Pasir Panjang), $948K / $2,000 psf — below the $2,039 median on a 30-txn series, but the resale CAGR is a weak ~2.4%. Freehold and sub-$1M quantum are pluses; the low appreciation rate and shoebox format hold it to Neutral.",
+      "rating_rationale": "Freehold, $948K (broad buyer pool for a shoebox), and listed $2,000 psf below the $2,039 median give a small cushion on a serviceable 30-txn series. But ~2.4% resale CAGR is the weakest reliable rate in the batch, and a 474 sqft 1BR is a niche resale. D05/One-North and Greater Southern Waterfront proximity support rental demand. Net: a steady freehold income unit, not an appreciation play.",
+      "red_flags": [
+        "~2.4% resale CAGR — low appreciation even for freehold RCR",
+        "474 sqft shoebox — niche resale, no family appeal",
+        "9 min / 770m to MRT — not transit-doorstep",
+        "Weak arena record (94-210)"
+      ],
+      "catalysts": [
+        "Freehold under $1M — rare, keeps buyer pool broad",
+        "One-North employment + Greater Southern Waterfront (D4/5) transformation nearby",
+        "Listed below district median PSF"
+      ],
+      "as_of": {
+        "price": 948000,
+        "psf": 2000.0,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1BR (474 sqft) at The Verandah Residences, D05 (Pasir Panjang), $948K / $2,000 psf — below the $2,039 median on a 30-txn series, but the resale CAGR is a weak ~2.4%. Freehold and sub-$1M quantum are pluses; the low appreciation rate and shoebox format hold it to Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold, $948K (broad buyer pool for a shoebox), and listed $2,000 psf below the $2,039 median give a small cushion on a serviceable 30-txn series. But ~2.4% resale CAGR is the weakest reliable rate in the batch, and a 474 sqft 1BR is a niche resale. D05/One-North and Greater Southern Waterfront proximity support rental demand. Net: a steady freehold income unit, not an appreciation play.",
+        "red_flags": [
+          "~2.4% resale CAGR — low appreciation even for freehold RCR",
+          "474 sqft shoebox — niche resale, no family appeal",
+          "9 min / 770m to MRT — not transit-doorstep",
+          "Weak arena record (94-210)"
+        ],
+        "catalysts": [
+          "Freehold under $1M — rare, keeps buyer pool broad",
+          "One-North employment + Greater Southern Waterfront (D4/5) transformation nearby",
+          "Listed below district median PSF"
+        ],
+        "rental_assessment": "Good — Pasir Panjang/One-North professional tenant base supports 1BR demand; yield likely ~3.5-4% at this quantum.",
+        "appreciation_assessment": "Reliable but slow (~2.4% on 30 txns); freehold floor protects downside but upside is limited unless GSW catalysts accelerate.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA resale-only 30-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-verandah-residences-500128443",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

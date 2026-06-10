@@ -1,0 +1,63 @@
+{
+  "condo": "Aurelle of Tampines",
+  "slug": "aurelle-of-tampines",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 4BR subsale at Aurelle of Tampines, a fully-sold EC that TOPs in 2028, asking $1.8M ($1,760 psf). The launch sold out at an avg $1,766 psf, so this subsale is essentially flat to launch — the buyer captures no EC discount and inherits full ABSD/MOP-style timing risk before the post-MOP privatization upside.",
+      "rating_rationale": "Aurelle launched and fully sold in 2025 at avg $1,766 psf; this $1,760 psf subsale prices in zero buffer versus the new-launch price already paid by first-hand buyers. ECs do appreciate strongly post-MOP, but as a resale buyer you pay near-launch PSF and wait through TOP (2028) + 5yr MOP with no rental income until completion. Pasir Ris MRT is 970m / 12 min. The thesis works only if EC PSF re-rates well above $1,766 by ~2033.",
+      "red_flags": [
+        "Subsale at ~$1,760 psf vs $1,766 psf launch average — no EC entry discount captured",
+        "TOP only 2028; no rental income and capital locked until completion plus 5yr MOP",
+        "EC subsale buyers face eligibility/income-ceiling constraints, thinning the resale pool",
+        "970m from MRT in an OCR location"
+      ],
+      "catalysts": [
+        "EC post-MOP privatization premium (ECs historically re-rate up materially after 10 years)",
+        "Tampines/Pasir Ris regional growth, CRL connectivity"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1759.53,
+        "beds": 4,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 4BR subsale at Aurelle of Tampines, a fully-sold EC that TOPs in 2028, asking $1.8M ($1,760 psf). The launch sold out at an avg $1,766 psf, so this subsale is essentially flat to launch — the buyer captures no EC discount and inherits full ABSD/MOP-style timing risk before the post-MOP privatization upside.",
+        "rating": "Neutral",
+        "rating_rationale": "Aurelle launched and fully sold in 2025 at avg $1,766 psf; this $1,760 psf subsale prices in zero buffer versus the new-launch price already paid by first-hand buyers. ECs do appreciate strongly post-MOP, but as a resale buyer you pay near-launch PSF and wait through TOP (2028) + 5yr MOP with no rental income until completion. Pasir Ris MRT is 970m / 12 min. The thesis works only if EC PSF re-rates well above $1,766 by ~2033.",
+        "red_flags": [
+          "Subsale at ~$1,760 psf vs $1,766 psf launch average — no EC entry discount captured",
+          "TOP only 2028; no rental income and capital locked until completion plus 5yr MOP",
+          "EC subsale buyers face eligibility/income-ceiling constraints, thinning the resale pool",
+          "970m from MRT in an OCR location"
+        ],
+        "catalysts": [
+          "EC post-MOP privatization premium (ECs historically re-rate up materially after 10 years)",
+          "Tampines/Pasir Ris regional growth, CRL connectivity"
+        ],
+        "rental_assessment": "No rental until 2028 TOP, then strong family rental demand in Tampines but EC rental yields are typically modest. Not an income play.",
+        "appreciation_assessment": "EC upside is real but back-loaded to post-MOP; entering at launch-equivalent PSF removes the usual EC bargain and pushes the payoff to 7+ years out.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "EC post-MOP appreciation pattern, discounted for near-launch entry PSF"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-aurelle-of-tampines-25482478",
+        "review_file": "cov_batch_28.json"
+      }
+    }
+  ]
+}

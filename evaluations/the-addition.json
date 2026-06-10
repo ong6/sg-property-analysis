@@ -1,0 +1,63 @@
+{
+  "condo": "The Addition",
+  "slug": "the-addition",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 797 sqft freehold 3BR (compact) at The Addition (D13 Potong Pasir, Oxley, ~26 units) at $1.708M / $2,143 PSF, just 250m from Potong Pasir MRT. Superb transit but a tiny boutique development with only 6 URA txns and a high PSF above the area's resale norm.",
+      "rating_rationale": "250m to Potong Pasir NEL MRT and freehold are real positives, and score_1000 619 / on_frontier reflect that. But this is a ~26-unit boutique (former 8-unit en-bloc by Oxley) — thin liquidity, only a 6-txn series, and at $2,143 PSF it sits above recent project transactions (~$2,030 PSF avg) and the $2,130 median. The 797 sqft 'compact 3BR' commands a quantum-friendly $1.7M but at a rich PSF; resale-only appreciation is just 2.66%/yr. Location-led but priced full for a small dev.",
+      "red_flags": [
+        "~26-unit boutique development — shallow resale liquidity",
+        "$2,143 PSF above ~$2,030 recent project txns and $2,130 median",
+        "Thin 6-txn URA series; resale appreciation only 2.66%/yr",
+        "797 sqft squeezed into a 3BR — efficient but tight layout"
+      ],
+      "catalysts": [
+        "250m (3 min) to Potong Pasir NEL MRT — direct line to CBD/Orchard",
+        "Freehold, near-new 2020-completion build",
+        "City-fringe D13 with St Andrew's / SJI International schools nearby"
+      ],
+      "as_of": {
+        "price": 1708000,
+        "psf": 2143.04,
+        "beds": 3,
+        "sqft": 797.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 797 sqft freehold 3BR (compact) at The Addition (D13 Potong Pasir, Oxley, ~26 units) at $1.708M / $2,143 PSF, just 250m from Potong Pasir MRT. Superb transit but a tiny boutique development with only 6 URA txns and a high PSF above the area's resale norm.",
+        "rating": "Neutral",
+        "rating_rationale": "250m to Potong Pasir NEL MRT and freehold are real positives, and score_1000 619 / on_frontier reflect that. But this is a ~26-unit boutique (former 8-unit en-bloc by Oxley) — thin liquidity, only a 6-txn series, and at $2,143 PSF it sits above recent project transactions (~$2,030 PSF avg) and the $2,130 median. The 797 sqft 'compact 3BR' commands a quantum-friendly $1.7M but at a rich PSF; resale-only appreciation is just 2.66%/yr. Location-led but priced full for a small dev.",
+        "red_flags": [
+          "~26-unit boutique development — shallow resale liquidity",
+          "$2,143 PSF above ~$2,030 recent project txns and $2,130 median",
+          "Thin 6-txn URA series; resale appreciation only 2.66%/yr",
+          "797 sqft squeezed into a 3BR — efficient but tight layout"
+        ],
+        "catalysts": [
+          "250m (3 min) to Potong Pasir NEL MRT — direct line to CBD/Orchard",
+          "Freehold, near-new 2020-completion build",
+          "City-fringe D13 with St Andrew's / SJI International schools nearby"
+        ],
+        "rental_assessment": "Near-new freehold 3BR a 3-min walk to MRT on the NEL rents well to families/professionals; tenant demand is healthy for the location.",
+        "appreciation_assessment": "Only 6 txns and 2.66%/yr resale; the location is excellent but the high entry PSF and boutique illiquidity cap upside. Buying full price.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-addition-25622855",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

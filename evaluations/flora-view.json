@@ -1,0 +1,61 @@
+{
+  "condo": "Flora View",
+  "slug": "flora-view",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A freehold 2BR (Flora View, D20) at $1.05M / $1,394 psf — a low, liquid quantum and an efficient 753 sqft layout, but 1.5km / 18-min from Yio Chu Kang MRT and with no URA appreciation/transaction data. A boutique freehold value entry whose main drawback is poor transit and an unverified price.",
+      "rating_rationale": "The sub-$1.1M quantum keeps the buyer pool deep and the freehold/efficient layout are positives, but the 1.5km (18-min) walk to MRT is a real demerit for a 2BR that leans on rental/investor demand, and there is no project URA data to validate the $1,394 psf or any appreciation trend. Likely a small boutique block (thinner liquidity). D20 (Bishan/Ang Mo Kio belt) is a stable mature estate but this specific Flora Road pocket is transit-poor — a balanced Neutral.",
+      "red_flags": [
+        "1.5km / 18-min to Yio Chu Kang MRT — weak connectivity",
+        "No URA appreciation or transaction data — unverified pricing",
+        "Likely boutique development — thinner resale liquidity"
+      ],
+      "catalysts": [
+        "Freehold tenure at a low, liquid $1.05M quantum",
+        "Efficient 753 sqft 2BR — broad affordability appeal",
+        "Mature D20 (Ang Mo Kio/Bishan) estate amenities and schools"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1394.42,
+        "beds": 2,
+        "sqft": 753.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 2BR (Flora View, D20) at $1.05M / $1,394 psf — a low, liquid quantum and an efficient 753 sqft layout, but 1.5km / 18-min from Yio Chu Kang MRT and with no URA appreciation/transaction data. A boutique freehold value entry whose main drawback is poor transit and an unverified price.",
+        "rating": "Neutral",
+        "rating_rationale": "The sub-$1.1M quantum keeps the buyer pool deep and the freehold/efficient layout are positives, but the 1.5km (18-min) walk to MRT is a real demerit for a 2BR that leans on rental/investor demand, and there is no project URA data to validate the $1,394 psf or any appreciation trend. Likely a small boutique block (thinner liquidity). D20 (Bishan/Ang Mo Kio belt) is a stable mature estate but this specific Flora Road pocket is transit-poor — a balanced Neutral.",
+        "red_flags": [
+          "1.5km / 18-min to Yio Chu Kang MRT — weak connectivity",
+          "No URA appreciation or transaction data — unverified pricing",
+          "Likely boutique development — thinner resale liquidity"
+        ],
+        "catalysts": [
+          "Freehold tenure at a low, liquid $1.05M quantum",
+          "Efficient 753 sqft 2BR — broad affordability appeal",
+          "Mature D20 (Ang Mo Kio/Bishan) estate amenities and schools"
+        ],
+        "rental_assessment": "Far from MRT in a primarily owner-occupier estate — rental pull is limited; demand is more own-stay than tenant-driven.",
+        "appreciation_assessment": "No project data; D20 freehold fringe likely tracks low-to-mid single digits. The transit gap and boutique scale cap upside.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flora-view-60084695",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

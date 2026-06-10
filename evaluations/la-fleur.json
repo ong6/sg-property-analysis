@@ -1,0 +1,119 @@
+{
+  "condo": "La Fleur",
+  "slug": "la-fleur",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 667 sqft freehold 1BR in D14 priced at $1258 PSF — roughly 16% below the project's own URA median of $1499 PSF — making it the cheapest entry in the batch on a relative-value basis. The 667 sqft footprint is large for a 1BR (likely a 1+study or jumbo one-bedder), which dampens per-sqft cheapness somewhat but keeps the absolute quantum under $840k.",
+      "rating_rationale": "$1258 PSF vs $1499 URA median is a genuine ~16% discount on a freehold near Aljunied MRT, with a low sub-$840k quantum that keeps the buyer pool deep. URA resale CAGR ~4.0% on 12 txns is moderate-confidence but consistent with RCR-adjacent D14. Aljunied/Paya Lebar benefits from the Paya Lebar Central transformation and airbase relocation catalyst. Highest score_1000 (887) and on-frontier.",
+      "red_flags": [
+        "Only 12 URA transactions — appreciation rate is moderate confidence",
+        "667 sqft is oversized for a 1BR, so the headline PSF discount partly reflects size, not pure bargain",
+        "1BR has the narrowest tenant/buyer pool of unit types"
+      ],
+      "catalysts": [
+        "Paya Lebar Central commercial hub and Paya Lebar airbase relocation",
+        "Freehold tenure at sub-$840k quantum — rare in D14",
+        "Listed ~16% below project URA median PSF"
+      ],
+      "as_of": {
+        "price": 838888,
+        "psf": 1257.7,
+        "beds": 1,
+        "sqft": 667.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 667 sqft freehold 1BR in D14 priced at $1258 PSF — roughly 16% below the project's own URA median of $1499 PSF — making it the cheapest entry in the batch on a relative-value basis. The 667 sqft footprint is large for a 1BR (likely a 1+study or jumbo one-bedder), which dampens per-sqft cheapness somewhat but keeps the absolute quantum under $840k.",
+        "rating": "Buy",
+        "rating_rationale": "$1258 PSF vs $1499 URA median is a genuine ~16% discount on a freehold near Aljunied MRT, with a low sub-$840k quantum that keeps the buyer pool deep. URA resale CAGR ~4.0% on 12 txns is moderate-confidence but consistent with RCR-adjacent D14. Aljunied/Paya Lebar benefits from the Paya Lebar Central transformation and airbase relocation catalyst. Highest score_1000 (887) and on-frontier.",
+        "red_flags": [
+          "Only 12 URA transactions — appreciation rate is moderate confidence",
+          "667 sqft is oversized for a 1BR, so the headline PSF discount partly reflects size, not pure bargain",
+          "1BR has the narrowest tenant/buyer pool of unit types"
+        ],
+        "catalysts": [
+          "Paya Lebar Central commercial hub and Paya Lebar airbase relocation",
+          "Freehold tenure at sub-$840k quantum — rare in D14",
+          "Listed ~16% below project URA median PSF"
+        ],
+        "rental_assessment": "D14 near Aljunied MRT has steady tenant demand from CBD commuters; a 667 sqft freehold unit at sub-$840k should yield comfortably in the 3.5-4% range with a broad single-professional/couple tenant base.",
+        "appreciation_assessment": "URA resale CAGR ~4.0% (12 txns) is credible for freehold D14; Paya Lebar transformation provides a real medium-term catalyst. Discount to project median gives a margin of safety.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-la-fleur-25128413",
+        "review_file": "cov_batch_18.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Project-level cheapness looks real - $1,257 psf is the floor of the live $1,258-$1,638 range and ~16% under the recent ~$1,499 transacted average - but the same-size cohort is empty (psf_cohort_txns=0), the 667 sqft 'beds:1' is a mismatch, and La Fleur sits squarely in the Geylang FH cohort that media has flagged for 'more losses than gains' and slow growth. Genuine value, but capped exit upside keeps it Neutral.",
+      "rating_rationale": "Listing $838,888 / 667 sqft = $1,257 psf. Web confirms La Fleur (FH, 2014, 58 units, Lorong 26 Geylang) current PSF range $1,258-$1,638 and recent-12mo transactions averaging ~$1,499 psf (high $1,516 in Dec 2024), with rental yield ~4.6%. So $1,257 is at the bottom of the live range and a real discount to recent prints, supporting the -33.1% age-adj signal at project level. But psf_cohort_txns=0 means no same-size comp behind the -14.2% cohort figure; the 667 sqft 'beds:1' (very_low_psf + likely a large 1BR/2BR) suggests a mislabel; and an EdgeProp/Yahoo spotlight specifically flagged Geylang freehold condos (including La Fleur's peers) for more losses than gains, with D14 FH ~$1,516 psf trailing East ~$1,706 and islandwide ~$1,953 - structural slow growth and thin liquidity in a 58-unit project.",
+      "red_flags": [
+        "psf_cohort_txns=0: the -14.2% cohort discount has zero same-size comparables",
+        "667 sqft 'beds:1' mismatch (very_low_psf flag) - verify whether it is a large 1BR/2BR mis-tag",
+        "Geylang FH cohort flagged by media for 'more losses than gains' and slow price growth",
+        "Thin liquidity: 58-unit project; D14 FH lags East/islandwide PSF, weak exit comps"
+      ],
+      "catalysts": [
+        "$1,257 psf is the floor of the live $1,258-$1,638 range - genuine entry discount to ~$1,499 recent average",
+        "Aljunied (EW9) / Dakota (CC8) MRT and Geylang F&B catchment support rental demand",
+        "Healthy ~4.6% rental yield underpins a hold-for-income thesis",
+        "Freehold + low quantum ($839k) broadens exit buyer pool"
+      ],
+      "as_of": {
+        "price": 838888,
+        "psf": 1257.7,
+        "beds": 1,
+        "sqft": 667
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Project-level cheapness looks real - $1,257 psf is the floor of the live $1,258-$1,638 range and ~16% under the recent ~$1,499 transacted average - but the same-size cohort is empty (psf_cohort_txns=0), the 667 sqft 'beds:1' is a mismatch, and La Fleur sits squarely in the Geylang FH cohort that media has flagged for 'more losses than gains' and slow growth. Genuine value, but capped exit upside keeps it Neutral.",
+        "rating_rationale": "Listing $838,888 / 667 sqft = $1,257 psf. Web confirms La Fleur (FH, 2014, 58 units, Lorong 26 Geylang) current PSF range $1,258-$1,638 and recent-12mo transactions averaging ~$1,499 psf (high $1,516 in Dec 2024), with rental yield ~4.6%. So $1,257 is at the bottom of the live range and a real discount to recent prints, supporting the -33.1% age-adj signal at project level. But psf_cohort_txns=0 means no same-size comp behind the -14.2% cohort figure; the 667 sqft 'beds:1' (very_low_psf + likely a large 1BR/2BR) suggests a mislabel; and an EdgeProp/Yahoo spotlight specifically flagged Geylang freehold condos (including La Fleur's peers) for more losses than gains, with D14 FH ~$1,516 psf trailing East ~$1,706 and islandwide ~$1,953 - structural slow growth and thin liquidity in a 58-unit project.",
+        "red_flags": [
+          "psf_cohort_txns=0: the -14.2% cohort discount has zero same-size comparables",
+          "667 sqft 'beds:1' mismatch (very_low_psf flag) - verify whether it is a large 1BR/2BR mis-tag",
+          "Geylang FH cohort flagged by media for 'more losses than gains' and slow price growth",
+          "Thin liquidity: 58-unit project; D14 FH lags East/islandwide PSF, weak exit comps"
+        ],
+        "catalysts": [
+          "$1,257 psf is the floor of the live $1,258-$1,638 range - genuine entry discount to ~$1,499 recent average",
+          "Aljunied (EW9) / Dakota (CC8) MRT and Geylang F&B catchment support rental demand",
+          "Healthy ~4.6% rental yield underpins a hold-for-income thesis",
+          "Freehold + low quantum ($839k) broadens exit buyer pool"
+        ],
+        "appreciation_assessment": "appreciation_pct 4.0% (URA 5yr CAGR, but only 12 txns) is thin and not forward-predictive per v3.4; Geylang FH's documented loss-prone, slow-growth profile means capital upside is the weakest part of the case - the thesis rests on entry value and yield, not appreciation.",
+        "rental_assessment": "~4.6% project yield is solid for a freehold 1BR; MRT proximity and F&B give a deep tenant pool, so rental income is the most reliable return component, partly offsetting the weak capital-growth outlook."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-la-fleur-25128413",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

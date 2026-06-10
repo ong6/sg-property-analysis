@@ -1,0 +1,119 @@
+{
+  "condo": "Rezi 24",
+  "slug": "rezi-24",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2022 freehold 1BR (452 sqft) in Geylang/Aljunied (D14) at $779K / $1,723 psf, 610m from Aljunied MRT. Low quantum, freehold and near-new, but a tiny 452sqft 1BR, near-flat appreciation (1.6%/yr headline, 0.5% resale-only on just 20 txn) and a PSF slightly above the $1,665 median make it a fair-value rental play, not a growth one.",
+      "rating_rationale": "$1,723 psf is ~3.5% above the $1,665 URA median for a niche 452sqft 1BR. Appreciation is essentially flat — resale-only 0.5%/yr on a thin 20-txn series. Freehold, near-new (2022) and 610m to Aljunied MRT support rental yield, but 1BR is the narrowest segment and the arena record (123-187) is weak despite a 662 score.",
+      "red_flags": [
+        "Near-flat appreciation — resale-only 0.5%/yr on thin 20-txn series",
+        "Tiny 452sqft 1BR — niche buyer/tenant segment",
+        "PSF ~3.5% above URA median",
+        "Weak 123-187 arena record",
+        "Geylang-fringe stigma"
+      ],
+      "catalysts": [
+        "Freehold + 2022 build at sub-$800K — easy-to-finance entry",
+        "610m to Aljunied EWL MRT — solid city-fringe rental demand",
+        "D14 Paya Lebar Central long-run transformation"
+      ],
+      "as_of": {
+        "price": 779000,
+        "psf": 1723.45,
+        "beds": 1,
+        "sqft": 452.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2022 freehold 1BR (452 sqft) in Geylang/Aljunied (D14) at $779K / $1,723 psf, 610m from Aljunied MRT. Low quantum, freehold and near-new, but a tiny 452sqft 1BR, near-flat appreciation (1.6%/yr headline, 0.5% resale-only on just 20 txn) and a PSF slightly above the $1,665 median make it a fair-value rental play, not a growth one.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,723 psf is ~3.5% above the $1,665 URA median for a niche 452sqft 1BR. Appreciation is essentially flat — resale-only 0.5%/yr on a thin 20-txn series. Freehold, near-new (2022) and 610m to Aljunied MRT support rental yield, but 1BR is the narrowest segment and the arena record (123-187) is weak despite a 662 score.",
+        "red_flags": [
+          "Near-flat appreciation — resale-only 0.5%/yr on thin 20-txn series",
+          "Tiny 452sqft 1BR — niche buyer/tenant segment",
+          "PSF ~3.5% above URA median",
+          "Weak 123-187 arena record",
+          "Geylang-fringe stigma"
+        ],
+        "catalysts": [
+          "Freehold + 2022 build at sub-$800K — easy-to-finance entry",
+          "610m to Aljunied EWL MRT — solid city-fringe rental demand",
+          "D14 Paya Lebar Central long-run transformation"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-24-500147466",
+        "review_file": "cov_batch_24.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "New (2022) freehold boutique 1BR in Geylang asking $1,723 psf, at the low end of recent transactions but a thin-cohort 'cheap' tag and small-format mass-market exposure cap the upside.",
+      "rating_rationale": "Asking $1,723 psf sits at the bottom of the project's 12-month transaction band (avg ~$1,697, range $1,503-1,767, with a Jun-2025 #05 unit at $1,753), so the discount is modest and real but not dramatic. The dossier's -16% age-adj-cheap premium is overstated: psf_cohort_txns is only 3, so the comp base is thin. Per v3.4 priors freehold is not a forward edge and trailing appreciation (+1.6% on 20 txns) is near-zero. D14 (RCR) realized forward sits below OCR. Walk to 3 MRTs (Aljunied/Mountbatten/Dakota ~7min) and 4.6% gross yield support rental, but a 452sf 1BR in a 110-unit FH project competes with abundant similar stock. Fair value, not a clear bargain.",
+      "red_flags": [
+        "psf_cohort_txns only 3 - the -16% cheapness signal rests on a thin comp base",
+        "Asking $1,723 psf is only marginally below recent average ~$1,697-1,753, so headline discount is overstated",
+        "452sf 1BR in mass-market Geylang FH segment - heavy competing supply, capped exit liquidity",
+        "Geylang location stigma may weigh on resale demand"
+      ],
+      "catalysts": [
+        "Walkable to 3 MRT stations (Aljunied/Mountbatten/Dakota) ~7 min",
+        "Direct bus to Paya Lebar Quarter / Orchard / Bugis; PLQ regional centre nearby",
+        "Freehold tenure preserves long-term hold optionality (no lease decay)"
+      ],
+      "as_of": {
+        "price": 779000,
+        "psf": 1723.45,
+        "beds": 1,
+        "sqft": 452
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "New (2022) freehold boutique 1BR in Geylang asking $1,723 psf, at the low end of recent transactions but a thin-cohort 'cheap' tag and small-format mass-market exposure cap the upside.",
+        "rating_rationale": "Asking $1,723 psf sits at the bottom of the project's 12-month transaction band (avg ~$1,697, range $1,503-1,767, with a Jun-2025 #05 unit at $1,753), so the discount is modest and real but not dramatic. The dossier's -16% age-adj-cheap premium is overstated: psf_cohort_txns is only 3, so the comp base is thin. Per v3.4 priors freehold is not a forward edge and trailing appreciation (+1.6% on 20 txns) is near-zero. D14 (RCR) realized forward sits below OCR. Walk to 3 MRTs (Aljunied/Mountbatten/Dakota ~7min) and 4.6% gross yield support rental, but a 452sf 1BR in a 110-unit FH project competes with abundant similar stock. Fair value, not a clear bargain.",
+        "red_flags": [
+          "psf_cohort_txns only 3 - the -16% cheapness signal rests on a thin comp base",
+          "Asking $1,723 psf is only marginally below recent average ~$1,697-1,753, so headline discount is overstated",
+          "452sf 1BR in mass-market Geylang FH segment - heavy competing supply, capped exit liquidity",
+          "Geylang location stigma may weigh on resale demand"
+        ],
+        "catalysts": [
+          "Walkable to 3 MRT stations (Aljunied/Mountbatten/Dakota) ~7 min",
+          "Direct bus to Paya Lebar Quarter / Orchard / Bugis; PLQ regional centre nearby",
+          "Freehold tenure preserves long-term hold optionality (no lease decay)"
+        ],
+        "appreciation_assessment": "Trailing +1.6% CAGR on 20 txns is effectively flat and per backtest carries ~0 forward power. No specific dated catalyst; treat appreciation as neutral.",
+        "rental_assessment": "Reported ~4.6% gross yield with rents ~$4,000-7,000 across types; strong transit access supports tenant demand for a compact unit. Rental is the main return driver here, not capital growth."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-24-500147466",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

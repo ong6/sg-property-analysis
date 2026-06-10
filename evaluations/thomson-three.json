@@ -62,6 +62,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-three-25483460",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Quality UOL/SingLand 1BR priced clearly below the project's recent transaction average, sitting on top of two concrete catalysts — the $810M Thomson Reserve redevelopment next door and the coming Bright Hill TEL x CRL interchange.",
+      "rating_rationale": "Asking $1,790 psf is well under Thomson Three's last-12-month transaction average of ~$2,094 psf (range $1,773-2,356), consistent with the -14.5% age-adj premium; even allowing that 1BR carries a structurally higher PSF, the entry is below project comps. The catalyst is decisive and dated, which earns medium (not low) confidence despite a thin 5-txn 1BR cohort: Bright Hill becomes a TEL x Cross Island Line interchange in 2030, and the adjacent former Thomson View site sold en bloc for $810M (sale order Jul 2025) to become the 1,240-unit Thomson Reserve, whose higher launch PSF re-rates the micro-market. Score 1000=790.",
+      "red_flags": [
+        "Thin 1BR same-size cohort (5 txns) — single-comp PSF read should be treated cautiously",
+        "Small 500 sqft 1BR is the most cyclical, owner-occupier-thin segment; resale liquidity narrower than larger units",
+        "1,240-unit Thomson Reserve will add direct competing supply at TOP (~2030) for both resale and rental"
+      ],
+      "catalysts": [
+        "Bright Hill MRT becomes TEL x Cross Island Line interchange in 2030",
+        "$810M Thomson View en bloc -> Thomson Reserve (1,240 units) re-prices the Bright Hill corridor upward",
+        "Entry below verified recent project transaction average provides margin of safety"
+      ],
+      "as_of": {
+        "price": 895000,
+        "psf": 1790,
+        "beds": 1,
+        "sqft": 500
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Quality UOL/SingLand 1BR priced clearly below the project's recent transaction average, sitting on top of two concrete catalysts — the $810M Thomson Reserve redevelopment next door and the coming Bright Hill TEL x CRL interchange.",
+        "rating_rationale": "Asking $1,790 psf is well under Thomson Three's last-12-month transaction average of ~$2,094 psf (range $1,773-2,356), consistent with the -14.5% age-adj premium; even allowing that 1BR carries a structurally higher PSF, the entry is below project comps. The catalyst is decisive and dated, which earns medium (not low) confidence despite a thin 5-txn 1BR cohort: Bright Hill becomes a TEL x Cross Island Line interchange in 2030, and the adjacent former Thomson View site sold en bloc for $810M (sale order Jul 2025) to become the 1,240-unit Thomson Reserve, whose higher launch PSF re-rates the micro-market. Score 1000=790.",
+        "red_flags": [
+          "Thin 1BR same-size cohort (5 txns) — single-comp PSF read should be treated cautiously",
+          "Small 500 sqft 1BR is the most cyclical, owner-occupier-thin segment; resale liquidity narrower than larger units",
+          "1,240-unit Thomson Reserve will add direct competing supply at TOP (~2030) for both resale and rental"
+        ],
+        "catalysts": [
+          "Bright Hill MRT becomes TEL x Cross Island Line interchange in 2030",
+          "$810M Thomson View en bloc -> Thomson Reserve (1,240 units) re-prices the Bright Hill corridor upward",
+          "Entry below verified recent project transaction average provides margin of safety"
+        ],
+        "rental_assessment": "Compact 1BR near Upper Thomson MRT and the Thomson medical/lifestyle belt appeals to singles and healthcare-cluster professionals; ~$2,094 psf-area economics on a 500 sqft unit support a workable but not standout yield.",
+        "appreciation_assessment": "Upside leans on the verified discount plus the interchange and en-bloc re-rating rather than the 5.5% trailing CAGR; construction-period demand around Thomson Reserve and CRL completion are the realistic re-rating triggers."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-thomson-three-500060761",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

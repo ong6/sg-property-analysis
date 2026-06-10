@@ -1,0 +1,61 @@
+{
+  "condo": "Heritage View",
+  "slug": "heritage-view",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A large 99-yr leasehold development (2000) in Dover/One-North D05 — a 969 sqft 2BR asking $1,587 PSF (~2% below the $1,624 median) with a strong 5.14%/yr URA rate on a deep, reliable 101-transaction series. One-North tech/rental catchment plus a normally-sized, liquid unit make this the most data-backed pick in the batch.",
+      "rating_rationale": "Best data quality in the batch: 5.14%/yr appreciation on 101 transactions (high confidence), and asking $1,587 vs $1,624 median = -2% (priced at/below market). 969 sqft is an efficient, normal 2BR — no oversize distortion — at a liquid $1.54M. on_frontier=true, deep buyer pool, 840m to CC23 One-North in the science-park/Fusionopolis tech corridor drives both rental and resale demand. The 99-yr lease from 2000 (decay clock) and a low 465 score are the caveats, but the appreciation evidence and One-North fundamentals outweigh them.",
+      "red_flags": [
+        "99-yr leasehold from 2000 — ~73 years left, lease-decay accelerating",
+        "low score_1000 (465) despite strong fundamentals",
+        "840m to MRT — moderate walk"
+      ],
+      "catalysts": [
+        "5.14%/yr appreciation on a deep, reliable 101-txn series",
+        "One-North / Fusionopolis tech corridor — strong rental and resale demand",
+        "priced ~2% below URA median; efficient liquid 2BR at $1.54M"
+      ],
+      "as_of": {
+        "price": 1538000,
+        "psf": 1587.2,
+        "beds": 2,
+        "sqft": 969.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 99-yr leasehold development (2000) in Dover/One-North D05 — a 969 sqft 2BR asking $1,587 PSF (~2% below the $1,624 median) with a strong 5.14%/yr URA rate on a deep, reliable 101-transaction series. One-North tech/rental catchment plus a normally-sized, liquid unit make this the most data-backed pick in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "Best data quality in the batch: 5.14%/yr appreciation on 101 transactions (high confidence), and asking $1,587 vs $1,624 median = -2% (priced at/below market). 969 sqft is an efficient, normal 2BR — no oversize distortion — at a liquid $1.54M. on_frontier=true, deep buyer pool, 840m to CC23 One-North in the science-park/Fusionopolis tech corridor drives both rental and resale demand. The 99-yr lease from 2000 (decay clock) and a low 465 score are the caveats, but the appreciation evidence and One-North fundamentals outweigh them.",
+        "red_flags": [
+          "99-yr leasehold from 2000 — ~73 years left, lease-decay accelerating",
+          "low score_1000 (465) despite strong fundamentals",
+          "840m to MRT — moderate walk"
+        ],
+        "catalysts": [
+          "5.14%/yr appreciation on a deep, reliable 101-txn series",
+          "One-North / Fusionopolis tech corridor — strong rental and resale demand",
+          "priced ~2% below URA median; efficient liquid 2BR at $1.54M"
+        ],
+        "rental_assessment": "One-North/Buona Vista is one of the strongest tenant catchments in the west (biopolis, fusionopolis, NUS); an efficient 2BR here lets very well, supporting yield.",
+        "appreciation_assessment": "5.14%/yr backed by 101 transactions is the most credible growth signal in the batch; lease decay is the offsetting risk over a long hold.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-heritage-view-500090635",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

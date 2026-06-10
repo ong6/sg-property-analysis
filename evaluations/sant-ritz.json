@@ -1,0 +1,113 @@
+{
+  "condo": "Sant Ritz",
+  "slug": "sant-ritz",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "570 sqft 1BR (generous for a 1BR) at Sant Ritz, 330m from Potong Pasir MRT in D13. Priced bang on the $1,719 median, with a solid 4.1%/yr resale CAGR on 70 txns and a sub-$1M quantum in a central, well-connected RCR-fringe location.",
+      "rating_rationale": "Excellent MRT proximity (330m to Potong Pasir NEL — one stop from Boon Keng/Serangoon), a healthy 4.1%/yr resale CAGR on 70 txns, fairly priced at the $1,719 median, and a generous 570 sqft 1BR that doubles as a small-2BR-substitute for tenants. D13 is centrally located with City Square Mall and CBD a few NEL stops away. Score 668.",
+      "red_flags": [
+        "Small development (Sant Ritz ~214 units) — adequate but not deep liquidity",
+        "Low elo 1002 reflects weaker head-to-head record despite good fundamentals"
+      ],
+      "catalysts": [
+        "330m to Potong Pasir NEL — direct line to CBD/Dhoby Ghaut",
+        "Central D13 location near Bidadari estate transformation"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1719.3,
+        "beds": 1,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "570 sqft 1BR (generous for a 1BR) at Sant Ritz, 330m from Potong Pasir MRT in D13. Priced bang on the $1,719 median, with a solid 4.1%/yr resale CAGR on 70 txns and a sub-$1M quantum in a central, well-connected RCR-fringe location.",
+        "rating": "Buy",
+        "rating_rationale": "Excellent MRT proximity (330m to Potong Pasir NEL — one stop from Boon Keng/Serangoon), a healthy 4.1%/yr resale CAGR on 70 txns, fairly priced at the $1,719 median, and a generous 570 sqft 1BR that doubles as a small-2BR-substitute for tenants. D13 is centrally located with City Square Mall and CBD a few NEL stops away. Score 668.",
+        "red_flags": [
+          "Small development (Sant Ritz ~214 units) — adequate but not deep liquidity",
+          "Low elo 1002 reflects weaker head-to-head record despite good fundamentals"
+        ],
+        "catalysts": [
+          "330m to Potong Pasir NEL — direct line to CBD/Dhoby Ghaut",
+          "Central D13 location near Bidadari estate transformation"
+        ],
+        "rental_assessment": "Strong demand — large 570 sqft 1BR appeals to couples; NEL access to CBD and proximity to Bidadari drive tenant interest.",
+        "appreciation_assessment": "Solid 4.1%/yr resale CAGR on 70 txns; Bidadari estate maturation and central connectivity support continued appreciation.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.1,
+        "appreciation_rate_source": "URA resale 4.1%/yr on 70-txn series"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sant-ritz-25005883",
+        "review_file": "cov_batch_19.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline 'cheapness' is almost certainly a data/labeling quirk: a 1,248 sqft unit tagged '2-bed' at $1,322 psf is really a 3BR/penthouse/row-house format, and its PSF is structurally low for that reason — actual Sant Ritz transactions run $1,742-$2,051 psf. Thin cohort (3 txns) plus a bedroom_sqft_mismatch flag mean the algo's -31.7% discount is unreliable.",
+      "rating_rationale": "Asking $1,322 psf is ~30% below the verified project transaction range of $1,742-$2,051 psf (avg ~$1,850), which is too large to be a genuine bargain on a 2016 leasehold next to Potong Pasir MRT — it almost certainly reflects a large-format unit (Sant Ritz 3BR penthouses are 1,323-1,420 sqft; a comparable 3BR transacted at $1,894 psf for 1,098 sqft) whose strata area includes void/PES/roof space, mechanically deflating PSF. The bedroom_sqft_mismatch red flag and psf_cohort_txns of just 3 confirm the comp is statistically unsafe. Without verifying the exact floor plan, the -31.7% age_adj_premium and -27.0% cohort premium are likely artifacts, not value. Location (1-min walk Potong Pasir MRT, D13) is genuinely good, which keeps this Neutral rather than Avoid.",
+      "red_flags": [
+        "bedroom_sqft_mismatch — 1,248 sqft is far too large for a true 2BR; likely a 3BR/penthouse/row-house mislabel",
+        "psf_cohort_txns = 3 — the -27% cohort discount rests on near-empty data",
+        "$1,322 psf is ~30% below the verified $1,742-$2,051 project range, signaling a strata-area quirk not a bargain",
+        "$1.65M quantum sits well above the project's ~$1.33M 6-month average sale price — atypical, less liquid unit"
+      ],
+      "catalysts": [
+        "1-minute walk to Potong Pasir MRT (NEL) is a real, durable location anchor",
+        "If a viewing confirms a genuine large 3BR/PH with usable space at this PSF, value case could improve"
+      ],
+      "as_of": {
+        "price": 1650000,
+        "psf": 1322.12,
+        "beds": 2,
+        "sqft": 1248
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline 'cheapness' is almost certainly a data/labeling quirk: a 1,248 sqft unit tagged '2-bed' at $1,322 psf is really a 3BR/penthouse/row-house format, and its PSF is structurally low for that reason — actual Sant Ritz transactions run $1,742-$2,051 psf. Thin cohort (3 txns) plus a bedroom_sqft_mismatch flag mean the algo's -31.7% discount is unreliable.",
+        "rating_rationale": "Asking $1,322 psf is ~30% below the verified project transaction range of $1,742-$2,051 psf (avg ~$1,850), which is too large to be a genuine bargain on a 2016 leasehold next to Potong Pasir MRT — it almost certainly reflects a large-format unit (Sant Ritz 3BR penthouses are 1,323-1,420 sqft; a comparable 3BR transacted at $1,894 psf for 1,098 sqft) whose strata area includes void/PES/roof space, mechanically deflating PSF. The bedroom_sqft_mismatch red flag and psf_cohort_txns of just 3 confirm the comp is statistically unsafe. Without verifying the exact floor plan, the -31.7% age_adj_premium and -27.0% cohort premium are likely artifacts, not value. Location (1-min walk Potong Pasir MRT, D13) is genuinely good, which keeps this Neutral rather than Avoid.",
+        "red_flags": [
+          "bedroom_sqft_mismatch — 1,248 sqft is far too large for a true 2BR; likely a 3BR/penthouse/row-house mislabel",
+          "psf_cohort_txns = 3 — the -27% cohort discount rests on near-empty data",
+          "$1,322 psf is ~30% below the verified $1,742-$2,051 project range, signaling a strata-area quirk not a bargain",
+          "$1.65M quantum sits well above the project's ~$1.33M 6-month average sale price — atypical, less liquid unit"
+        ],
+        "catalysts": [
+          "1-minute walk to Potong Pasir MRT (NEL) is a real, durable location anchor",
+          "If a viewing confirms a genuine large 3BR/PH with usable space at this PSF, value case could improve"
+        ],
+        "rental_assessment": "A large, atypically-configured unit (row house/penthouse) is harder to rent at competitive yield than standard stacks; transit proximity helps but format limits the tenant pool.",
+        "appreciation_assessment": "Trailing ~4.1% CAGR (70 txns) is project-pooled and not specific to this odd unit; with the cheap-PSF signal being a likely artifact, there is no reliable forward value edge here."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sant-ritz-500164790",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "condo": "Artisan 8",
+  "slug": "artisan-8",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 4BR at Artisan 8, a tiny 34-unit (+8 shop) freehold mixed-use new launch at 8 Sin Ming Rd, 280m from Upper Thomson MRT (TOP ~2028). Priced at $3.0M / $2285 PSF, below the $2,340-2,610 launch range — but a 34-unit boutique means very thin resale liquidity, the binding constraint for a $3M unit.",
+      "rating_rationale": "Genuine positives: freehold tenure (rare in D20 new launches), 280m to Upper Thomson MRT (TEL) plus Marymount CCL, MacRitchie/Thomson Plaza amenities, and $2285 PSF is below the launch range. But only 34 residential units = a structurally shallow secondary market, and at $3.0M the 4BR sits above the liquid band with a narrow buyer pool. The 20-txn URA figure carries new-launch bias (district-pooled), so the 4.1% isn't a clean read. Strong location, but boutique illiquidity caps it at Neutral.",
+      "red_flags": [
+        "Only 34 residential units — structurally thin resale liquidity for a $3M unit",
+        "$3.0M 4BR sits above the liquid sweet spot — narrow buyer pool",
+        "URA data flagged with new-launch bias (district-pooled, 20 txns) — appreciation not cleanly verified",
+        "Mixed-use with retail below can mean higher footfall/noise and broader maintenance scope"
+      ],
+      "catalysts": [
+        "Freehold tenure — scarce in D20; the prior comparable freehold launch was 183 Longhaus (2016)",
+        "280m to Upper Thomson MRT (TEL) + Marymount (CCL) — dual-line walkable connectivity",
+        "Upper Thomson/Sin Ming lifestyle, MacRitchie Reservoir, Thomson Plaza — durable owner-occupier appeal"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 2284.84,
+        "beds": 4,
+        "sqft": 1313.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 4BR at Artisan 8, a tiny 34-unit (+8 shop) freehold mixed-use new launch at 8 Sin Ming Rd, 280m from Upper Thomson MRT (TOP ~2028). Priced at $3.0M / $2285 PSF, below the $2,340-2,610 launch range — but a 34-unit boutique means very thin resale liquidity, the binding constraint for a $3M unit.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold tenure (rare in D20 new launches), 280m to Upper Thomson MRT (TEL) plus Marymount CCL, MacRitchie/Thomson Plaza amenities, and $2285 PSF is below the launch range. But only 34 residential units = a structurally shallow secondary market, and at $3.0M the 4BR sits above the liquid band with a narrow buyer pool. The 20-txn URA figure carries new-launch bias (district-pooled), so the 4.1% isn't a clean read. Strong location, but boutique illiquidity caps it at Neutral.",
+        "red_flags": [
+          "Only 34 residential units — structurally thin resale liquidity for a $3M unit",
+          "$3.0M 4BR sits above the liquid sweet spot — narrow buyer pool",
+          "URA data flagged with new-launch bias (district-pooled, 20 txns) — appreciation not cleanly verified",
+          "Mixed-use with retail below can mean higher footfall/noise and broader maintenance scope"
+        ],
+        "catalysts": [
+          "Freehold tenure — scarce in D20; the prior comparable freehold launch was 183 Longhaus (2016)",
+          "280m to Upper Thomson MRT (TEL) + Marymount (CCL) — dual-line walkable connectivity",
+          "Upper Thomson/Sin Ming lifestyle, MacRitchie Reservoir, Thomson Plaza — durable owner-occupier appeal"
+        ],
+        "rental_assessment": "Upper Thomson rents well to professionals/families near the TEL; 4BR yield ~3% at $3M. Small block limits rental scale but tenancy demand is healthy.",
+        "appreciation_assessment": "Freehold + walkable dual-line MRT in an established district supports above-OCR appreciation, but full launch pricing and boutique illiquidity temper near-term upside; ~4.5%.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "D20 freehold-near-TEL new-launch estimate; URA 20-txn figure carries new-launch bias"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-artisan-8-500156552",
+        "review_file": "cov_batch_30.json"
+      }
+    }
+  ]
+}

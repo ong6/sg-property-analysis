@@ -1,0 +1,67 @@
+{
+  "condo": "Hillview Heights",
+  "slug": "hillview-heights",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 360-unit CDL development at Hillview MRT, 30 years old, asking $1,787 psf — bang on the $1,787 URA median but at the top of recent transacted range ($1,585-$1,910 psf). The 5.6%/yr URA rate is solid but thin (37 txns), and the $3M quantum for an aging 1,679 sqft FH 4BR points to a slow exit.",
+      "rating_rationale": "Freehold tenure and a real DT-line station (480m) plus a sizeable 360-unit base are genuine positives, and the 5.6%/yr URA rate beats OCR norms. But the unit asks at the very top of the $1,585-$1,910 psf transacted band, the building is 30 years old (maintenance/dated layouts), and $3M for a 1,679 sqft 4BR in D23 is a heavy, niche quantum. The very low score_1000 (193) reflects the age/quantum drag, not a fatal flaw.",
+      "red_flags": [
+        "30-year-old building — maintenance and dated layout risk",
+        "$1,787 psf at the top of the $1,585-$1,910 transacted range",
+        "$3M quantum for an aging D23 4BR thins the resale pool",
+        "5.6%/yr rate on a thin 37-txn series"
+      ],
+      "catalysts": [
+        "Freehold tenure with no lease decay",
+        "480m to Hillview MRT (Downtown Line) and Hillview/HillV2 amenities",
+        "Established 360-unit CDL development with deep buyer base",
+        "Rail Corridor and nature-fringe lifestyle appeal"
+      ],
+      "as_of": {
+        "price": 2999999,
+        "psf": 1786.78,
+        "beds": 4,
+        "sqft": 1679.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 360-unit CDL development at Hillview MRT, 30 years old, asking $1,787 psf — bang on the $1,787 URA median but at the top of recent transacted range ($1,585-$1,910 psf). The 5.6%/yr URA rate is solid but thin (37 txns), and the $3M quantum for an aging 1,679 sqft FH 4BR points to a slow exit.",
+        "rating": "Neutral",
+        "rating_rationale": "Freehold tenure and a real DT-line station (480m) plus a sizeable 360-unit base are genuine positives, and the 5.6%/yr URA rate beats OCR norms. But the unit asks at the very top of the $1,585-$1,910 psf transacted band, the building is 30 years old (maintenance/dated layouts), and $3M for a 1,679 sqft 4BR in D23 is a heavy, niche quantum. The very low score_1000 (193) reflects the age/quantum drag, not a fatal flaw.",
+        "red_flags": [
+          "30-year-old building — maintenance and dated layout risk",
+          "$1,787 psf at the top of the $1,585-$1,910 transacted range",
+          "$3M quantum for an aging D23 4BR thins the resale pool",
+          "5.6%/yr rate on a thin 37-txn series"
+        ],
+        "catalysts": [
+          "Freehold tenure with no lease decay",
+          "480m to Hillview MRT (Downtown Line) and Hillview/HillV2 amenities",
+          "Established 360-unit CDL development with deep buyer base",
+          "Rail Corridor and nature-fringe lifestyle appeal"
+        ],
+        "rental_assessment": "Hillview is a quieter residential pocket; 4BR rents to families on the DT line but the tenant pool is moderate. Yield weak on a $3M FH quantum (~2.5-3%).",
+        "appreciation_assessment": "URA 5.6%/yr is encouraging but thin; freehold and DT-line access support steady growth, though top-of-range entry pricing limits near-term upside.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "URA 5.6% (37 txns) tempered for top-of-range entry and building age"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-heights-500153377",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

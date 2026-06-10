@@ -58,6 +58,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500161555",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "OCR Punggol 3BR priced slightly ABOVE recent comps — the value signal is an age-adjustment artifact, not a real bargain.",
+      "rating_rationale": "The algo's -11.2% age-adj implies cheapness, but verification flips it: FLO's recent 3BR/969-sqft transactions averaged ~S$1,441 psf and even the top trade (a 969-sqft unit, Feb 2026) was S$1,519 psf — this listing at S$1,548 psf is at the high end, slightly above recent market, consistent with the +7.0% vs-cohort premium. So there is no margin of safety; the 'cheap' is purely the leasehold-age discount math. The 8.23% trailing CAGR (130 txns, genuinely deep) is real history but per the v3.4 backtest carries ~0 forward weight. OCR/D19 is the best forward region (~+4.0% realized) and the Cross Island Line / Defu area improvements help broadly, but buying at the top of the recent range neutralizes that edge. Fairly-to-fully priced → Neutral.",
+      "red_flags": [
+        "Listing PSF (1,548) sits above the trailing 12-month average (~1,441) and the recent high (1,519) — paying a premium, not a discount",
+        "Algo 'cheap' read is driven by leasehold age adjustment, not verified transaction evidence",
+        "99-yr leasehold from 2016 TOP in a 530-unit suburban block — exit competes with abundant OCR supply"
+      ],
+      "catalysts": [
+        "OCR/D19 is the strongest forward region per the backtest (~+4.0% realized fwd)",
+        "Cross Island Line and Punggol/Defu connectivity upgrades support the broader area"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1547.99,
+        "beds": 3,
+        "sqft": 969
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "OCR Punggol 3BR priced slightly ABOVE recent comps — the value signal is an age-adjustment artifact, not a real bargain.",
+        "rating_rationale": "The algo's -11.2% age-adj implies cheapness, but verification flips it: FLO's recent 3BR/969-sqft transactions averaged ~S$1,441 psf and even the top trade (a 969-sqft unit, Feb 2026) was S$1,519 psf — this listing at S$1,548 psf is at the high end, slightly above recent market, consistent with the +7.0% vs-cohort premium. So there is no margin of safety; the 'cheap' is purely the leasehold-age discount math. The 8.23% trailing CAGR (130 txns, genuinely deep) is real history but per the v3.4 backtest carries ~0 forward weight. OCR/D19 is the best forward region (~+4.0% realized) and the Cross Island Line / Defu area improvements help broadly, but buying at the top of the recent range neutralizes that edge. Fairly-to-fully priced → Neutral.",
+        "red_flags": [
+          "Listing PSF (1,548) sits above the trailing 12-month average (~1,441) and the recent high (1,519) — paying a premium, not a discount",
+          "Algo 'cheap' read is driven by leasehold age adjustment, not verified transaction evidence",
+          "99-yr leasehold from 2016 TOP in a 530-unit suburban block — exit competes with abundant OCR supply"
+        ],
+        "catalysts": [
+          "OCR/D19 is the strongest forward region per the backtest (~+4.0% realized fwd)",
+          "Cross Island Line and Punggol/Defu connectivity upgrades support the broader area"
+        ],
+        "rental_assessment": "3BR rents of S$4,200-5,500/mo give roughly 3.4-4.4% gross yield — solid family-rental demand in Punggol, but no standout edge versus peer OCR projects.",
+        "appreciation_assessment": "Deep 130-txn 8.23% trailing CAGR is well-measured but, per the backtest, not forward-predictive; with the unit priced above recent comps, no value-based forward upside is captured."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500161555",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

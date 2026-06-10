@@ -1,0 +1,65 @@
+{
+  "condo": "Cote D'Azur",
+  "slug": "cote-d-azur",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "99-yr leasehold 1BR at Cote D'Azur, D15 (Marine Parade), 600m from the new TE26 Marine Parade MRT, asking $1.688M at $1,705 PSF for a large 990 sqft. PSF is ~11% under the $1,914 median and the 104-txn URA base (5.76%/yr) is reliable, but the $1.688M quantum for a 1BR is steep.",
+      "rating_rationale": "Genuine positives — deep D15 buyer pool, reliable 104-txn URA appreciation at 5.76%/yr (RCR-grade), brand-new TEL station 600m away, and a PSF discount to median. But $1.688M for a 990 sqft '1BR' is a demanding quantum (oversized for the bed count, likely a jumbo/loft), 2005 build with 99-yr lease now ~79 years remaining, and the high entry price narrows the buyer base. TEL catalyst already substantially priced in.",
+      "red_flags": [
+        "$1.688M for a 1BR is high — narrows resale pool",
+        "990 sqft oversized for 1BR — verify layout",
+        "2005 build, ~79yr lease remaining",
+        "TEL Marine Parade uplift largely priced in"
+      ],
+      "catalysts": [
+        "TE26 Marine Parade MRT (TEL) 600m away — now operational",
+        "Deep D15 East Coast buyer pool",
+        "Reliable 5.76%/yr URA appreciation on 104 txns"
+      ],
+      "as_of": {
+        "price": 1688000,
+        "psf": 1705.05,
+        "beds": 1,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99-yr leasehold 1BR at Cote D'Azur, D15 (Marine Parade), 600m from the new TE26 Marine Parade MRT, asking $1.688M at $1,705 PSF for a large 990 sqft. PSF is ~11% under the $1,914 median and the 104-txn URA base (5.76%/yr) is reliable, but the $1.688M quantum for a 1BR is steep.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives — deep D15 buyer pool, reliable 104-txn URA appreciation at 5.76%/yr (RCR-grade), brand-new TEL station 600m away, and a PSF discount to median. But $1.688M for a 990 sqft '1BR' is a demanding quantum (oversized for the bed count, likely a jumbo/loft), 2005 build with 99-yr lease now ~79 years remaining, and the high entry price narrows the buyer base. TEL catalyst already substantially priced in.",
+        "red_flags": [
+          "$1.688M for a 1BR is high — narrows resale pool",
+          "990 sqft oversized for 1BR — verify layout",
+          "2005 build, ~79yr lease remaining",
+          "TEL Marine Parade uplift largely priced in"
+        ],
+        "catalysts": [
+          "TE26 Marine Parade MRT (TEL) 600m away — now operational",
+          "Deep D15 East Coast buyer pool",
+          "Reliable 5.76%/yr URA appreciation on 104 txns"
+        ],
+        "rental_assessment": "Marine Parade/East Coast is a strong rental district; a large 1BR by the new MRT rents well, but yield on $1.688M is thin (~3%).",
+        "appreciation_assessment": "104-txn URA series at 5.76%/yr is credible and RCR-typical; lease decay and high entry temper the net return.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.5,
+        "appreciation_rate_source": "URA 104-txn series (reliable), slight haircut for lease/quantum"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cote-d-azur-500144384",
+        "review_file": "cov_batch_01.json"
+      }
+    }
+  ]
+}

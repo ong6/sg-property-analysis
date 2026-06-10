@@ -1,0 +1,63 @@
+{
+  "condo": "Regent Park",
+  "slug": "regent-park",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 904 sqft 2BR in Clementi at $1.3M / $1,438 PSF, slightly above the $1,380 URA median but on the strength of a notable +6.08%/yr appreciation over 47 transactions — the best rate in the batch. The offset is an ageing 99yr lease (built 1998, ~71yr left) and a 1.04km MRT walk, which is why the technical score is low (478) despite strong appreciation.",
+      "rating_rationale": "The headline draw is a reliable +6.08%/yr URA CAGR (47 txns) — genuinely strong, reflecting Clementi/One-North demand. But PSF $1,438 is ~4% ABOVE the $1,380 median (not a discount), the lease is decaying (99yr from 1998, ~71yr now and ~64yr at a 5-7yr exit), and Clementi MRT is 1.04km (13-min walk). The low score_1000 of 478 captures these lease/location drags. Strong past appreciation vs ageing-lease headwind nets to a balanced Neutral.",
+      "red_flags": [
+        "99yr LH from 1998 — ~71yr left, lease decay accelerates and weighs on a 5-7yr exit",
+        "PSF ~4% above URA median — paying up, no value discount",
+        "Clementi MRT 1.04km / 13-min walk — weak connectivity",
+        "Low technical score (478) flags lease/location concerns"
+      ],
+      "catalysts": [
+        "Strong reliable +6.08%/yr URA appreciation (47 txns) driven by Clementi/One-North/NUS demand",
+        "2BR format with the widest tenant and buyer pool",
+        "Clementi mature-estate amenities"
+      ],
+      "as_of": {
+        "price": 1299900,
+        "psf": 1437.94,
+        "beds": 2,
+        "sqft": 904.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 904 sqft 2BR in Clementi at $1.3M / $1,438 PSF, slightly above the $1,380 URA median but on the strength of a notable +6.08%/yr appreciation over 47 transactions — the best rate in the batch. The offset is an ageing 99yr lease (built 1998, ~71yr left) and a 1.04km MRT walk, which is why the technical score is low (478) despite strong appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline draw is a reliable +6.08%/yr URA CAGR (47 txns) — genuinely strong, reflecting Clementi/One-North demand. But PSF $1,438 is ~4% ABOVE the $1,380 median (not a discount), the lease is decaying (99yr from 1998, ~71yr now and ~64yr at a 5-7yr exit), and Clementi MRT is 1.04km (13-min walk). The low score_1000 of 478 captures these lease/location drags. Strong past appreciation vs ageing-lease headwind nets to a balanced Neutral.",
+        "red_flags": [
+          "99yr LH from 1998 — ~71yr left, lease decay accelerates and weighs on a 5-7yr exit",
+          "PSF ~4% above URA median — paying up, no value discount",
+          "Clementi MRT 1.04km / 13-min walk — weak connectivity",
+          "Low technical score (478) flags lease/location concerns"
+        ],
+        "catalysts": [
+          "Strong reliable +6.08%/yr URA appreciation (47 txns) driven by Clementi/One-North/NUS demand",
+          "2BR format with the widest tenant and buyer pool",
+          "Clementi mature-estate amenities"
+        ],
+        "rental_assessment": "2BR in Clementi rents well to NUS/One-North professionals and families, giving steady occupancy; yield is moderate given the $1.3M quantum.",
+        "appreciation_assessment": "Past URA appreciation is strong (+6.08%/yr), but forward returns are tempered by accelerating lease decay on a 1998 99yr block — momentum likely moderates over the hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regent-park-60122733",
+        "review_file": "cov_batch_10.json"
+      }
+    }
+  ]
+}

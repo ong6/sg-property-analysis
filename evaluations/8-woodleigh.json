@@ -1,0 +1,61 @@
+{
+  "condo": "8 @ Woodleigh",
+  "slug": "8-woodleigh",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "99LH 1BR at $999k and a high $1,784 PSF near Woodleigh MRT, but the dossier has zero URA data — no appreciation rate, no transaction count, no median to benchmark. A near-$1M shoebox at a rich PSF with no supporting evidence is uninvestable on this data.",
+      "rating_rationale": "No URA appreciation, no transaction count, and no median PSF — the entire quantitative case is absent, and the algo Elo of 1400 (record 202-101-12) is the weakest in the batch. $1,784 PSF is high for a leasehold 1BR shoebox, and at $999k it is priced like a 2BR without the size or flexibility. Bidadari/Woodleigh is a genuine growth area, but at this PSF on a 560sqft 99LH unit with no data to validate value, the risk-reward is poor.",
+      "red_flags": [
+        "Complete absence of URA data — no appreciation, txn count, or median PSF",
+        "High $1,784 PSF for a 99LH 1BR shoebox",
+        "Weakest arena record in the batch (Elo 1400)",
+        "Near-$1M quantum for 560sqft — buyer gets a 2BR price for a 1BR"
+      ],
+      "catalysts": [
+        "Bidadari estate maturation around Woodleigh",
+        "520m to Woodleigh MRT (NEL) supports rental"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1783.93,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99LH 1BR at $999k and a high $1,784 PSF near Woodleigh MRT, but the dossier has zero URA data — no appreciation rate, no transaction count, no median to benchmark. A near-$1M shoebox at a rich PSF with no supporting evidence is uninvestable on this data.",
+        "rating": "Avoid",
+        "rating_rationale": "No URA appreciation, no transaction count, and no median PSF — the entire quantitative case is absent, and the algo Elo of 1400 (record 202-101-12) is the weakest in the batch. $1,784 PSF is high for a leasehold 1BR shoebox, and at $999k it is priced like a 2BR without the size or flexibility. Bidadari/Woodleigh is a genuine growth area, but at this PSF on a 560sqft 99LH unit with no data to validate value, the risk-reward is poor.",
+        "red_flags": [
+          "Complete absence of URA data — no appreciation, txn count, or median PSF",
+          "High $1,784 PSF for a 99LH 1BR shoebox",
+          "Weakest arena record in the batch (Elo 1400)",
+          "Near-$1M quantum for 560sqft — buyer gets a 2BR price for a 1BR"
+        ],
+        "catalysts": [
+          "Bidadari estate maturation around Woodleigh",
+          "520m to Woodleigh MRT (NEL) supports rental"
+        ],
+        "rental_assessment": "Woodleigh/Bidadari location gives a reasonable tenant pool, but the high purchase PSF compresses gross yield on a 1BR.",
+        "appreciation_assessment": "Cannot be assessed — no URA data at all; absence of evidence at this rich PSF is itself the verdict driver.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-8-woodleigh-60147393",
+        "review_file": "cov_batch_04.json"
+      }
+    }
+  ]
+}

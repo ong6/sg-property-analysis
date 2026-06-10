@@ -1,0 +1,61 @@
+{
+  "condo": "E-Space",
+  "slug": "e-space",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A mixed-use / SOHO-style freehold development in D15 with effectively no appreciation data (1 URA transaction) and a 2BR asking 11% above the project's $1,564 median PSF. Thin data plus a non-standard, less-liquid building format make this a Neutral-to-cautious pass.",
+      "rating_rationale": "URA appreciation is null on a single transaction — no reliable basis to project growth. Asking $1,736 PSF vs $1,564 median = +11% premium. E-Space is a small commercial/SOHO-flavoured project near Changi Road, an awkward, niche format that thins the resale pool. 930m to Kembangan is a soft walk. Freehold D15 is the only real positive; not enough to outweigh thin data and the premium.",
+      "red_flags": [
+        "only 1 URA transaction — appreciation unknowable",
+        "+11% asking vs project median PSF",
+        "SOHO/mixed-use format — niche, illiquid resale",
+        "930m to MRT"
+      ],
+      "catalysts": [
+        "freehold East Coast D15 address",
+        "established lifestyle district with deep owner-occupier base"
+      ],
+      "as_of": {
+        "price": 1420000,
+        "psf": 1735.94,
+        "beds": 2,
+        "sqft": 818.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A mixed-use / SOHO-style freehold development in D15 with effectively no appreciation data (1 URA transaction) and a 2BR asking 11% above the project's $1,564 median PSF. Thin data plus a non-standard, less-liquid building format make this a Neutral-to-cautious pass.",
+        "rating": "Avoid",
+        "rating_rationale": "URA appreciation is null on a single transaction — no reliable basis to project growth. Asking $1,736 PSF vs $1,564 median = +11% premium. E-Space is a small commercial/SOHO-flavoured project near Changi Road, an awkward, niche format that thins the resale pool. 930m to Kembangan is a soft walk. Freehold D15 is the only real positive; not enough to outweigh thin data and the premium.",
+        "red_flags": [
+          "only 1 URA transaction — appreciation unknowable",
+          "+11% asking vs project median PSF",
+          "SOHO/mixed-use format — niche, illiquid resale",
+          "930m to MRT"
+        ],
+        "catalysts": [
+          "freehold East Coast D15 address",
+          "established lifestyle district with deep owner-occupier base"
+        ],
+        "rental_assessment": "D15 supports tenant demand, but the unusual unit format narrows the rental audience versus a conventional 2BR.",
+        "appreciation_assessment": "No usable URA signal; the District is healthy but project-specific liquidity and format risk dominate.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-e-space-500098405",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

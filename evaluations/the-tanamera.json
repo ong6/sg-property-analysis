@@ -1,0 +1,61 @@
+{
+  "condo": "The Tanamera",
+  "slug": "the-tanamera",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A spacious 1,324sqft 3BR at $1.50M / $1,133 PSF a genuine 390m from Tanah Merah MRT (EW4 interchange, D16), priced ~10% below the $1,257 URA median on a reliable 6.17% CAGR (45 txns). Excellent MRT proximity and value, offset only by the 1994 leasehold age.",
+      "rating_rationale": "This is the strongest leasehold value in the batch: a low $1.50M absolute, ~10% below URA median PSF, a credible 6.17%/yr rate over 45 txns, and a true 5-min walk to the Tanah Merah EW interchange (best-in-batch connectivity) plus a generous 1,324sqft layout. The clear caveat is age — a 1994 99yr lease has ~67yr left, which is why the score_1000 is only 563 — but the discount, location and family-sized layout in the deepening Bayshore/upper-East-Coast corridor make the risk-reward favourable.",
+      "red_flags": [
+        "32-year-old 99yr leasehold — ~67yr left, financing/decay watch",
+        "Older 1994 build — finishes and maintenance",
+        "Appreciation rate sample (45) is decent but not large"
+      ],
+      "catalysts": [
+        "390m to Tanah Merah EWL interchange — top connectivity in batch",
+        "~10% below URA median; low $1.50M absolute = deep buyer pool",
+        "D16 upper-East-Coast / TEL Bayshore precinct momentum; large family layout"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1132.93,
+        "beds": 3,
+        "sqft": 1324.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A spacious 1,324sqft 3BR at $1.50M / $1,133 PSF a genuine 390m from Tanah Merah MRT (EW4 interchange, D16), priced ~10% below the $1,257 URA median on a reliable 6.17% CAGR (45 txns). Excellent MRT proximity and value, offset only by the 1994 leasehold age.",
+        "rating": "Buy",
+        "rating_rationale": "This is the strongest leasehold value in the batch: a low $1.50M absolute, ~10% below URA median PSF, a credible 6.17%/yr rate over 45 txns, and a true 5-min walk to the Tanah Merah EW interchange (best-in-batch connectivity) plus a generous 1,324sqft layout. The clear caveat is age — a 1994 99yr lease has ~67yr left, which is why the score_1000 is only 563 — but the discount, location and family-sized layout in the deepening Bayshore/upper-East-Coast corridor make the risk-reward favourable.",
+        "red_flags": [
+          "32-year-old 99yr leasehold — ~67yr left, financing/decay watch",
+          "Older 1994 build — finishes and maintenance",
+          "Appreciation rate sample (45) is decent but not large"
+        ],
+        "catalysts": [
+          "390m to Tanah Merah EWL interchange — top connectivity in batch",
+          "~10% below URA median; low $1.50M absolute = deep buyer pool",
+          "D16 upper-East-Coast / TEL Bayshore precinct momentum; large family layout"
+        ],
+        "rental_assessment": "Large 3BR steps from an EWL interchange (Changi/Expo/airport corridor) has strong, broad tenant demand.",
+        "appreciation_assessment": "6.17% is data-backed; even discounting for lease age, location + value support ~4-5% forward.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tanamera-500081585",
+        "review_file": "cov_batch_07.json"
+      }
+    }
+  ]
+}

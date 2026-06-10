@@ -1,0 +1,61 @@
+{
+  "condo": "Park Natura",
+  "slug": "park-natura",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A freehold D23 (Bukit Panjang/Bukit Batok) project (2011) with a very large 1,528 sqft 2BR asking a low $1,374 PSF ($2.1M). The cheap PSF is almost entirely a size artefact — 1,528 sqft is huge for a 2BR — and a $2.1M 2BR in OCR D23 with no MRT in the dossier and a thin 27-txn series is a hard sell. Avoid.",
+      "rating_rationale": "$1,374 PSF looks cheap vs the $1,573 median (-13%) but 1,528 sqft for a 2BR is extreme — the low PSF reflects size, not value, and the $2.1M absolute price is far above the liquid band for a 2-bedder in a non-central district. No MRT listed, OCR D23 location, score 513, weak arena record (179-234). 4.05%/yr on 27 txns is unremarkable. A $2.1M outlay for an oversized 2BR in Bukit Panjang has a narrow buyer pool and weak exit prospects.",
+      "red_flags": [
+        "$2.1M for a 2BR — well above liquid band, thin buyer pool",
+        "1,528 sqft 2BR — cheap PSF is a size artefact, not a bargain",
+        "no MRT in dossier — weak connectivity for D23",
+        "thin 27-txn appreciation series, weak arena record"
+      ],
+      "catalysts": [
+        "freehold tenure",
+        "generous space appeals to a narrow family-buyer niche"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1374.35,
+        "beds": 2,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold D23 (Bukit Panjang/Bukit Batok) project (2011) with a very large 1,528 sqft 2BR asking a low $1,374 PSF ($2.1M). The cheap PSF is almost entirely a size artefact — 1,528 sqft is huge for a 2BR — and a $2.1M 2BR in OCR D23 with no MRT in the dossier and a thin 27-txn series is a hard sell. Avoid.",
+        "rating": "Avoid",
+        "rating_rationale": "$1,374 PSF looks cheap vs the $1,573 median (-13%) but 1,528 sqft for a 2BR is extreme — the low PSF reflects size, not value, and the $2.1M absolute price is far above the liquid band for a 2-bedder in a non-central district. No MRT listed, OCR D23 location, score 513, weak arena record (179-234). 4.05%/yr on 27 txns is unremarkable. A $2.1M outlay for an oversized 2BR in Bukit Panjang has a narrow buyer pool and weak exit prospects.",
+        "red_flags": [
+          "$2.1M for a 2BR — well above liquid band, thin buyer pool",
+          "1,528 sqft 2BR — cheap PSF is a size artefact, not a bargain",
+          "no MRT in dossier — weak connectivity for D23",
+          "thin 27-txn appreciation series, weak arena record"
+        ],
+        "catalysts": [
+          "freehold tenure",
+          "generous space appeals to a narrow family-buyer niche"
+        ],
+        "rental_assessment": "Bukit Panjang rental demand is modest and a $2.1M 2BR cannot achieve a sensible yield given the price-to-rent gap.",
+        "appreciation_assessment": "4.05%/yr is average; the real problem is exit liquidity at a $2.1M price point for an oversized 2BR in OCR.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-park-natura-500072519",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

@@ -108,6 +108,56 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-jewel-buangkok-60133208",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Fairly-priced 2BR in an OCR (D19) condo within walking distance of Buangkok MRT. The algo flags it cheap (-1.9% age-adj) but verified recent comps show the asking PSF sits at/slightly above the trailing average, so it is fair value rather than a bargain.",
+      "rating_rationale": "Asking 1,733.7 PSF vs verified 12-month range 1,459-1,956 (avg ~1,719) and 6-month avg ~1,676 — the ask is at-to-above the trailing average, so the -1.9% age-adj 'cheap' signal is marginal and not a true discount. The forward case rests on D19 being the best-realized OCR region (~+4.0%) plus robust data (6.07% 5yr CAGR on 176 txns, healthy 24-txn cohort), but with no decisive price discount or fresh catalyst this is a hold-the-market call, not an edge. 2BR at 721 sqft is a liquid, rentable size.",
+      "red_flags": [
+        "Asking PSF (1,733.7) is at/above the trailing 12-month average (~1,719), so the algo's 'cheap' label overstates the discount",
+        "No specific forward catalyst beyond existing Buangkok MRT — appreciation thesis is trailing, not forward"
+      ],
+      "catalysts": [
+        "Walking distance to Buangkok MRT (NEL)",
+        "D19/OCR region has the strongest realized forward returns (~+4.0%) in the v3.4 backtest"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1733.7,
+        "beds": 2,
+        "sqft": 721
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Fairly-priced 2BR in an OCR (D19) condo within walking distance of Buangkok MRT. The algo flags it cheap (-1.9% age-adj) but verified recent comps show the asking PSF sits at/slightly above the trailing average, so it is fair value rather than a bargain.",
+        "rating_rationale": "Asking 1,733.7 PSF vs verified 12-month range 1,459-1,956 (avg ~1,719) and 6-month avg ~1,676 — the ask is at-to-above the trailing average, so the -1.9% age-adj 'cheap' signal is marginal and not a true discount. The forward case rests on D19 being the best-realized OCR region (~+4.0%) plus robust data (6.07% 5yr CAGR on 176 txns, healthy 24-txn cohort), but with no decisive price discount or fresh catalyst this is a hold-the-market call, not an edge. 2BR at 721 sqft is a liquid, rentable size.",
+        "red_flags": [
+          "Asking PSF (1,733.7) is at/above the trailing 12-month average (~1,719), so the algo's 'cheap' label overstates the discount",
+          "No specific forward catalyst beyond existing Buangkok MRT — appreciation thesis is trailing, not forward"
+        ],
+        "catalysts": [
+          "Walking distance to Buangkok MRT (NEL)",
+          "D19/OCR region has the strongest realized forward returns (~+4.0%) in the v3.4 backtest"
+        ],
+        "appreciation_assessment": "6.07% 5yr CAGR is statistically robust (176 txns) but trailing appreciation has ~0 forward power; treat as context, not a forward guarantee.",
+        "rental_assessment": "721 sqft 2BR is a mainstream rental size; project rents roughly S$2,850-6,000 (~S$4.8 psf over 6 months), supporting an OCR-typical low-3% gross yield."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-jewel-buangkok-60133208",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

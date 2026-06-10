@@ -1,0 +1,121 @@
+{
+  "condo": "Suites @ Katong",
+  "slug": "suites-katong",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 'Suites @ Katong' unit listed as 1BR but 807 sqft at $999K / $1,238 psf — the low PSF is a function of an oversized-for-1BR layout (likely a 1+study/dual-key or mislabelled), not genuine cheapness. The 819 score is inflated by that PSF artifact; no URA data to corroborate.",
+      "rating_rationale": "The headline score_1000 = 819 is misleading: $1,238 psf looks cheap only because 807 sqft is unusually large for a '1BR' (bedroom/sqft mismatch — probably 1+study or dual-key). On absolute quantum, $999K freehold in D15 Katong is fair value, and sub-$1M keeps the buyer pool broad. But no URA appreciation/txn data, a weak arena record (104-211), and an ambiguous unit type cap confidence. Reasonable freehold hold, not a standout.",
+      "red_flags": [
+        "Bedroom/sqft mismatch — 807 sqft '1BR' likely 1+study/dual-key; PSF-driven score inflated",
+        "No URA appreciation or transaction data to verify value",
+        "10 min / 840m to Dakota MRT — not transit-doorstep",
+        "Weak arena record (104-211)"
+      ],
+      "catalysts": [
+        "Freehold under $1M in established D15 Katong lifestyle district",
+        "Generous 807 sqft layout differentiates from typical shoeboxes",
+        "Deep East Coast buyer and tenant pool"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1237.92,
+        "beds": 1,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 'Suites @ Katong' unit listed as 1BR but 807 sqft at $999K / $1,238 psf — the low PSF is a function of an oversized-for-1BR layout (likely a 1+study/dual-key or mislabelled), not genuine cheapness. The 819 score is inflated by that PSF artifact; no URA data to corroborate.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline score_1000 = 819 is misleading: $1,238 psf looks cheap only because 807 sqft is unusually large for a '1BR' (bedroom/sqft mismatch — probably 1+study or dual-key). On absolute quantum, $999K freehold in D15 Katong is fair value, and sub-$1M keeps the buyer pool broad. But no URA appreciation/txn data, a weak arena record (104-211), and an ambiguous unit type cap confidence. Reasonable freehold hold, not a standout.",
+        "red_flags": [
+          "Bedroom/sqft mismatch — 807 sqft '1BR' likely 1+study/dual-key; PSF-driven score inflated",
+          "No URA appreciation or transaction data to verify value",
+          "10 min / 840m to Dakota MRT — not transit-doorstep",
+          "Weak arena record (104-211)"
+        ],
+        "catalysts": [
+          "Freehold under $1M in established D15 Katong lifestyle district",
+          "Generous 807 sqft layout differentiates from typical shoeboxes",
+          "Deep East Coast buyer and tenant pool"
+        ],
+        "rental_assessment": "Good — Katong is a strong rental location; a large 1+study unit can command above-typical 1BR rent, supporting ~3.5% yield.",
+        "appreciation_assessment": "Freehold D15 Katong supports steady appreciation, but no project data; assume district-typical ~4-4.5% with the value sitting in the absolute quantum, not the optical PSF.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D15 freehold Katong prior — no project txn data"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-katong-21367175",
+        "review_file": "cov_batch_33.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The 807 sqft unit is the project's largest type (1BR+Study penthouse with roof terraces); its eye-catching negative premiums are mostly a size artifact against a shoebox-heavy cohort with only one comparable transaction - a data quirk, not a verified bargain.",
+      "rating_rationale": "The headline signals (-41.5% age-adj, -26.4% vs cohort) rest on psf_cohort_txns of just 1 and appreciation_txns of 10, which v3.4 priors flag as likely quirks. The mechanism is clear: this 807 sqft unit is a 1BR+Study penthouse (per EdgeProp/Stacked the largest of the 58-unit project, with dual roof terraces), and large units structurally trade at far lower psf than the project's 344 sqft shoeboxes that hit $1,682-$3,629 psf. So the -26.4% cohort discount is largely comparing a penthouse to tiny units, not a true mispricing. On absolute terms $1,238 psf freehold in D15 near Katong is fair and the quantum under $1M for a large freehold unit is reasonable, but the value edge the algo flags is inflated and the 58-unit project is illiquid. Neutral at low confidence - not an Avoid (it is a sound freehold asset) but not the bargain the score implies.",
+      "red_flags": [
+        "psf_cohort_txns = 1 and appreciation_txns = 10 - both too thin to trust the cheapness signal",
+        "Negative premiums are largely a penthouse-vs-shoebox size artifact, not true underpricing",
+        "Tiny 58-unit development = very low resale/rental liquidity",
+        "Trailing appreciation 0.65% is essentially flat"
+      ],
+      "catalysts": [
+        "Freehold in established D15 Katong/Joo Chiat district",
+        "Sub-$1M quantum for a large 807 sqft freehold unit with roof terraces",
+        "Thomson-East Coast Line (Amber/Marine Parade) improves the wider area's connectivity"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1237.92,
+        "beds": 1,
+        "sqft": 807
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The 807 sqft unit is the project's largest type (1BR+Study penthouse with roof terraces); its eye-catching negative premiums are mostly a size artifact against a shoebox-heavy cohort with only one comparable transaction - a data quirk, not a verified bargain.",
+        "rating_rationale": "The headline signals (-41.5% age-adj, -26.4% vs cohort) rest on psf_cohort_txns of just 1 and appreciation_txns of 10, which v3.4 priors flag as likely quirks. The mechanism is clear: this 807 sqft unit is a 1BR+Study penthouse (per EdgeProp/Stacked the largest of the 58-unit project, with dual roof terraces), and large units structurally trade at far lower psf than the project's 344 sqft shoeboxes that hit $1,682-$3,629 psf. So the -26.4% cohort discount is largely comparing a penthouse to tiny units, not a true mispricing. On absolute terms $1,238 psf freehold in D15 near Katong is fair and the quantum under $1M for a large freehold unit is reasonable, but the value edge the algo flags is inflated and the 58-unit project is illiquid. Neutral at low confidence - not an Avoid (it is a sound freehold asset) but not the bargain the score implies.",
+        "red_flags": [
+          "psf_cohort_txns = 1 and appreciation_txns = 10 - both too thin to trust the cheapness signal",
+          "Negative premiums are largely a penthouse-vs-shoebox size artifact, not true underpricing",
+          "Tiny 58-unit development = very low resale/rental liquidity",
+          "Trailing appreciation 0.65% is essentially flat"
+        ],
+        "catalysts": [
+          "Freehold in established D15 Katong/Joo Chiat district",
+          "Sub-$1M quantum for a large 807 sqft freehold unit with roof terraces",
+          "Thomson-East Coast Line (Amber/Marine Parade) improves the wider area's connectivity"
+        ],
+        "appreciation_assessment": "Trailing 0.65% over only 10 txns is both flat and thinly evidenced - no forward signal; the negative-premium 'value' is a size/cohort artifact, not a real discount.",
+        "rental_assessment": "Stated ~4.2% yield is healthy for D15, and an 807 sqft 1BR+study with terraces appeals to Katong tenants, but the 58-unit pool makes both rent comps and exit timing unpredictable."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-katong-21367175",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

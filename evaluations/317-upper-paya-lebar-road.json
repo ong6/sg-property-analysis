@@ -1,0 +1,63 @@
+{
+  "condo": "317 upper paya lebar road",
+  "slug": "317-upper-paya-lebar-road",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Web research reveals this is NOT a modern condo but an old WALK-UP apartment on level 4 with NO LIFT, 1,287 sqft on a 999-year lease near Bartley. The high score_1000 (681) is a fallback artefact from missing URA data and the 999yr tenure; the reality is a niche, illiquid, facility-less walk-up.",
+      "rating_rationale": "Despite the eye-catching score (681) and $1,228 psf, web research confirms this is a level-4 walk-up apartment with NO lift, no condo facilities (no pool/gym/security), in a small old block. It has zero URA project data in the dossier (all nulls) — the score is a thin-data fallback, not a real comparative signal. Walk-ups appeal to a narrow buyer set, are illiquid, and the 850m walk to Bartley is mediocre. 999yr tenure is the one genuine positive but cannot offset the illiquidity and lack of facilities for an investment hold.",
+      "red_flags": [
+        "Level-4 WALK-UP with no lift — narrow buyer pool, hard exit",
+        "No condo facilities (no pool/gym/security)",
+        "Zero URA project data — score is a missing-data fallback, not validated",
+        "Missing built_year; old block of indeterminate age"
+      ],
+      "catalysts": [
+        "999-year quasi-freehold tenure",
+        "Within 1km of Maris Stella High and PLMGS (school catchment)"
+      ],
+      "as_of": {
+        "price": 1580000,
+        "psf": 1227.66,
+        "beds": 3,
+        "sqft": 1287.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Web research reveals this is NOT a modern condo but an old WALK-UP apartment on level 4 with NO LIFT, 1,287 sqft on a 999-year lease near Bartley. The high score_1000 (681) is a fallback artefact from missing URA data and the 999yr tenure; the reality is a niche, illiquid, facility-less walk-up.",
+        "rating": "Avoid",
+        "rating_rationale": "Despite the eye-catching score (681) and $1,228 psf, web research confirms this is a level-4 walk-up apartment with NO lift, no condo facilities (no pool/gym/security), in a small old block. It has zero URA project data in the dossier (all nulls) — the score is a thin-data fallback, not a real comparative signal. Walk-ups appeal to a narrow buyer set, are illiquid, and the 850m walk to Bartley is mediocre. 999yr tenure is the one genuine positive but cannot offset the illiquidity and lack of facilities for an investment hold.",
+        "red_flags": [
+          "Level-4 WALK-UP with no lift — narrow buyer pool, hard exit",
+          "No condo facilities (no pool/gym/security)",
+          "Zero URA project data — score is a missing-data fallback, not validated",
+          "Missing built_year; old block of indeterminate age"
+        ],
+        "catalysts": [
+          "999-year quasi-freehold tenure",
+          "Within 1km of Maris Stella High and PLMGS (school catchment)"
+        ],
+        "rental_assessment": "Walk-up with no facilities and no lift rents poorly to investment tenants; niche own-stay appeal only.",
+        "appreciation_assessment": "No reliable transaction data; walk-up apartments are illiquid and appreciate erratically — speculative at best for an investment hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "No URA data; walk-up illiquidity assumption with 999yr support"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-317-upper-paya-lebar-road-60225902",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

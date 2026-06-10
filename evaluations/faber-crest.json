@@ -1,0 +1,117 @@
+{
+  "condo": "Faber Crest",
+  "slug": "faber-crest",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,033sqft 2BR at $1.35M / $1,307 PSF in D05 (Clementi/West Coast, One-North RCR), trading just above the $1,290 URA median on a healthy 48-txn 5.93% CAGR. Reasonable West-side value, but no MRT proximity is listed and the 2002 leasehold faces decay.",
+      "rating_rationale": "5.93%/yr over 48 transactions is a credible, well-sampled RCR-grade rate, and the price sits right at district median — fairly valued, not cheap. The big caveat is the blank mrt_info field: West Coast pockets of D05 are poorly served by rail, which dents both rental and resale liquidity, and the 24-year leasehold is decaying. A solid hold, not a standout.",
+      "red_flags": [
+        "No MRT proximity listed — likely a car-dependent West Coast pocket",
+        "24-year-old 99yr leasehold",
+        "Priced at/above median, so no value cushion"
+      ],
+      "catalysts": [
+        "Credible 5.93% URA CAGR on a robust 48-txn sample",
+        "D05 One-North / NUS / science park employment supports rental",
+        "West Coast amenities and future TEL West-side momentum"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1306.87,
+        "beds": 2,
+        "sqft": 1033.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,033sqft 2BR at $1.35M / $1,307 PSF in D05 (Clementi/West Coast, One-North RCR), trading just above the $1,290 URA median on a healthy 48-txn 5.93% CAGR. Reasonable West-side value, but no MRT proximity is listed and the 2002 leasehold faces decay.",
+        "rating": "Neutral",
+        "rating_rationale": "5.93%/yr over 48 transactions is a credible, well-sampled RCR-grade rate, and the price sits right at district median — fairly valued, not cheap. The big caveat is the blank mrt_info field: West Coast pockets of D05 are poorly served by rail, which dents both rental and resale liquidity, and the 24-year leasehold is decaying. A solid hold, not a standout.",
+        "red_flags": [
+          "No MRT proximity listed — likely a car-dependent West Coast pocket",
+          "24-year-old 99yr leasehold",
+          "Priced at/above median, so no value cushion"
+        ],
+        "catalysts": [
+          "Credible 5.93% URA CAGR on a robust 48-txn sample",
+          "D05 One-North / NUS / science park employment supports rental",
+          "West Coast amenities and future TEL West-side momentum"
+        ],
+        "rental_assessment": "Proximity to NUS, One-North and science park gives steady tenant demand; weak rail access slightly narrows the pool.",
+        "appreciation_assessment": "5.93% is well-supported by data; forward rate likely 4-5% as lease ages, supported by RCR employment catalysts.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-faber-crest-500095904",
+        "review_file": "cov_batch_07.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "99-yr (from 1996, ~69yrs left) D5 2BR priced slightly ABOVE its own recent transactions. The algo's -11.3% 'cheap' signal rests on a single-comparable cohort and does not survive a web check.",
+      "rating_rationale": "Faber Crest's recent transactions sit at ~$1,230-1,266 psf (avg ~$1,266, high ~$1,289), yet this unit asks $1,307 psf — slightly above, not below, market. The dossier's -11.3% age_adj_premium is built on psf_cohort_txns=1, exactly the thin-cohort data quirk the v3.4 prior warns against, so I discount it. The real issue is the lease: 99 years from 1996 leaves ~69 years, with decay and financing/CPF constraints accelerating over a 5-7yr hold. D5 is a solid OCR forward region and the 1,033sqft 2BR is a usable size, but there is no value cushion and a real lease headwind. The 5.93% trailing CAGR (48 txns) is well-sampled history but not a forward guarantee.",
+      "red_flags": [
+        "99-yr from 1996 (~69 years left) — lease decay is the dominant 5-7yr risk",
+        "Asking $1,307 psf is above the ~$1,230-1,266 psf recent transaction band (not actually cheap)",
+        "-11.3% age_adj_premium derives from psf_cohort_txns=1 — a data quirk, not a verified bargain",
+        "very_old_property red flag (completed ~2001)"
+      ],
+      "catalysts": [
+        "D5 OCR (realized fwd region ~+4.0%), near Clementi/Jurong East MRT and Jurong Lake District spillover",
+        "Large 1,033sqft 2BR layout for the quantum",
+        "1km to Nan Hua Primary catchment area (family/rental demand)"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1306.87,
+        "beds": 2,
+        "sqft": 1033
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "99-yr (from 1996, ~69yrs left) D5 2BR priced slightly ABOVE its own recent transactions. The algo's -11.3% 'cheap' signal rests on a single-comparable cohort and does not survive a web check.",
+        "rating_rationale": "Faber Crest's recent transactions sit at ~$1,230-1,266 psf (avg ~$1,266, high ~$1,289), yet this unit asks $1,307 psf — slightly above, not below, market. The dossier's -11.3% age_adj_premium is built on psf_cohort_txns=1, exactly the thin-cohort data quirk the v3.4 prior warns against, so I discount it. The real issue is the lease: 99 years from 1996 leaves ~69 years, with decay and financing/CPF constraints accelerating over a 5-7yr hold. D5 is a solid OCR forward region and the 1,033sqft 2BR is a usable size, but there is no value cushion and a real lease headwind. The 5.93% trailing CAGR (48 txns) is well-sampled history but not a forward guarantee.",
+        "red_flags": [
+          "99-yr from 1996 (~69 years left) — lease decay is the dominant 5-7yr risk",
+          "Asking $1,307 psf is above the ~$1,230-1,266 psf recent transaction band (not actually cheap)",
+          "-11.3% age_adj_premium derives from psf_cohort_txns=1 — a data quirk, not a verified bargain",
+          "very_old_property red flag (completed ~2001)"
+        ],
+        "catalysts": [
+          "D5 OCR (realized fwd region ~+4.0%), near Clementi/Jurong East MRT and Jurong Lake District spillover",
+          "Large 1,033sqft 2BR layout for the quantum",
+          "1km to Nan Hua Primary catchment area (family/rental demand)"
+        ],
+        "appreciation_assessment": "5.93% trailing CAGR (48 txns) is decently sampled but per v3.4 is not predictive; lease decay works against forward appreciation from here.",
+        "rental_assessment": "Project yield ~3.4% (avg rent ~$4.5k); rents to Clementi/one-north/NUS tenants, but lease decay caps long-run rental upside."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-faber-crest-500095904",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

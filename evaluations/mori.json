@@ -1,0 +1,67 @@
+{
+  "condo": "Mori",
+  "slug": "mori",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A brand-new (2025) freehold 4BR at Mori, D14, but only 1,023sqft — a compressed 'compact 4BR' — asking $1,906 psf, a ~4% premium to the new-launch-inflated $1,827 median. The URA rate is negative (-0.45%/yr) and flagged with new-launch bias, so the development is showing no resale momentum and the low score_1000 (306) reflects genuinely weak value.",
+      "rating_rationale": "Negative appreciation (-0.45%/yr) even on a 140-txn series, with explicit new-launch bias, means buyers who entered at launch are underwater — a poor sign for a 5-7yr hold. A 1,023sqft '4BR' is functionally cramped and a niche resale product, and the $1,906 psf still sits ~4% above the (inflated) median. Freehold and 630m to Aljunied don't rescue a development with no demonstrated price support. Lowest-conviction value pick in the batch.",
+      "red_flags": [
+        "Negative URA appreciation (-0.45%/yr) with new-launch bias",
+        "1,023sqft for a 4BR — cramped, niche layout",
+        "+4% PSF premium to an already-inflated median",
+        "Brand-new 2025 — developer premium yet to unwind",
+        "score_1000 306 — weakest in batch"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "630m to Aljunied EW MRT",
+        "D14 Paya Lebar Central long-term upside"
+      ],
+      "as_of": {
+        "price": 1950000,
+        "psf": 1906.16,
+        "beds": 4,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A brand-new (2025) freehold 4BR at Mori, D14, but only 1,023sqft — a compressed 'compact 4BR' — asking $1,906 psf, a ~4% premium to the new-launch-inflated $1,827 median. The URA rate is negative (-0.45%/yr) and flagged with new-launch bias, so the development is showing no resale momentum and the low score_1000 (306) reflects genuinely weak value.",
+        "rating": "Avoid",
+        "rating_rationale": "Negative appreciation (-0.45%/yr) even on a 140-txn series, with explicit new-launch bias, means buyers who entered at launch are underwater — a poor sign for a 5-7yr hold. A 1,023sqft '4BR' is functionally cramped and a niche resale product, and the $1,906 psf still sits ~4% above the (inflated) median. Freehold and 630m to Aljunied don't rescue a development with no demonstrated price support. Lowest-conviction value pick in the batch.",
+        "red_flags": [
+          "Negative URA appreciation (-0.45%/yr) with new-launch bias",
+          "1,023sqft for a 4BR — cramped, niche layout",
+          "+4% PSF premium to an already-inflated median",
+          "Brand-new 2025 — developer premium yet to unwind",
+          "score_1000 306 — weakest in batch"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "630m to Aljunied EW MRT",
+          "D14 Paya Lebar Central long-term upside"
+        ],
+        "rental_assessment": "A compact 4BR rents to small families but the tight layout and high $1.95M entry give a thin gross yield; better-laid-out competitors will out-let it.",
+        "appreciation_assessment": "URA shows -0.45%/yr with new-launch bias — no price support yet. Buying a freshly-completed unit at a premium PSF with negative momentum is a downside-skewed bet.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 1.0,
+        "appreciation_rate_source": "URA series flagged new-launch bias; held near-flat given no demonstrated resale support"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mori-500128836",
+        "review_file": "cov_batch_14.json"
+      }
+    }
+  ]
+}

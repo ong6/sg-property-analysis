@@ -111,6 +111,12 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     psf_premium = sb_flags.get("psf_premium_pct")
     if psf_premium is not None:
         facts["psf_premium_vs_ura_median_pct"] = round(psf_premium, 1)
+    # Same-size cohort depth behind that premium (None = no size data). Surfaced so
+    # the AI can judge how much to trust a small-unit "premium"/"discount", and so an
+    # appreciation override in --from-review can carry the same cohort damping.
+    cohort_txns = sb_flags.get("psf_cohort_txns")
+    if cohort_txns is not None:
+        facts["psf_cohort_txns"] = cohort_txns
 
     # --- Age-adjusted relative value vs district peers ---
     rel_value = listing.score_breakdown.get("relative_value")
@@ -219,6 +225,40 @@ def _build_context(listing: ScoredListing, ura_data: dict) -> dict:
     return context
 
 
+def _build_stack_profile(listing: ScoredListing) -> Optional[dict]:
+    """Join a listing to its stack/layout in the researched condo profile.
+
+    Returns the matched stack (facing/view/flags + development known-issues), or a
+    {"status": "not_researched"} signal when the condo has no profile yet — so the
+    analyze/scan flows know to run /research-development. Fully optional and
+    defensive: never raises into the scoring path.
+    """
+    name = listing.project_name or listing.title or ""
+    if not name:
+        return None
+    try:
+        import profile_memory
+        prof = profile_memory.find_profile(name)
+        if not prof:
+            return {
+                "status": "not_researched",
+                "hint": (f"no profile for '{name}' — run /research-development to add "
+                         "stacks/facings/layouts (the 'perfect info' join)"),
+            }
+        out = profile_memory.match_stack(
+            {"sqft": listing.sqft, "beds": listing.beds,
+             "facing": listing.facing, "floor_level": listing.floor_level}, prof) or {}
+        out["profile_confidence"] = prof.get("confidence")
+        issues = (prof.get("development") or {}).get("known_issues")
+        if issues:
+            out["development_known_issues"] = issues
+        if not out.get("matched"):
+            out["status"] = "profile_exists_no_unit_match"
+        return out or None
+    except Exception:
+        return None  # profile store is optional — never block scoring on it
+
+
 def _listing_to_raw(
     listing: ScoredListing,
     rank: int,
@@ -259,6 +299,13 @@ def _listing_to_raw(
         entry["floor_level"] = listing.floor_level
     if listing.facing:
         entry["facing"] = listing.facing
+
+    # Stack profile join — "perfect info" about this unit's stack/facing/view from
+    # the researched condo profile (profiles/), matched by sqft (+ beds/facing).
+    # When no profile exists yet, signal it so the flow can /research-development.
+    _sp = _build_stack_profile(listing)
+    if _sp:
+        entry["stack_profile"] = _sp
 
     # --- Factual computed data (for AI evaluation) ---
     entry["factual_data"] = _build_factual_data(listing)
@@ -414,6 +461,17 @@ def generate_raw_analysis(
             "Research lower-ranked listings too — the algo ordering is an input, not a shortlist. "
             + mode_notes[mode]
         ),
+        "forward_signal_priors": (
+            "Backtest-calibrated (v3.4 — see docs/evaluation-rubric.md 'What the data "
+            "actually predicts'): the robust forward signals are CHEAP-VS-DISTRICT-PEERS "
+            "(factual_data.relative_value, psf_premium_vs_ura_median_pct) and REGION (realized "
+            "forward OCR +4.0% ≥ RCR +3.5% ≫ CCR +0.7% — the OPPOSITE of old CCR-leads priors). "
+            "Trailing appreciation_rate has ~0 forward power and momentum is flat-to-contrarian — "
+            "use them for the STORY/catalyst, not as the forward number. Freehold is NOT a forward "
+            "edge. Absolute low PSF is mostly the region effect — don't double-count it. The model "
+            "explains <10% of forward variance: small score_1000 gaps are noise — reserve HIGH "
+            "confidence for decisive physical/catalyst evidence, treat near-ties as Neutral."
+        ),
         "steps": steps_by_mode[mode],
         "agent_field_guide": {
             "summary": "2-3 sentence investment thesis"
@@ -426,9 +484,13 @@ def generate_raw_analysis(
             "appreciation_assessment": "Price trajectory view based on data and research",
             "stack_notes": ("Best/worst STACKS, FACINGS and FLOORS for investment, and which to avoid"
                             if mode == "development" else "This unit's stack/floor/facing vs the development's best"),
-            "confidence": "high/medium/low based on data availability and conviction",
-            "appreciation_rate_override_pct": "Your researched appreciation rate if different from data (e.g. 4.5 = 4.5%/yr)",
-            "appreciation_rate_source": "Source for your override rate",
+            "confidence": ("high/medium/low. Anchor to evidence, not the score: HIGH only when "
+                           "physical/catalyst facts are decisive (model R²<0.10 — score gaps are noise)."),
+            "appreciation_rate_override_pct": ("Your researched forward rate ONLY if backed by resale-to-resale "
+                                               "evidence + a dated catalyst (e.g. 4.5 = 4.5%/yr). Scored at face "
+                                               "value (confidence 1.0) but still cohort-damped; don't re-introduce "
+                                               "new-launch CAGR inflation. Leave null to keep the data rate."),
+            "appreciation_rate_source": "Source for your override rate (resale-to-resale basis)",
         },
         "before_you_start": (
             "Check past evaluations first: `python invest.py --recall \"<condo>\"`. "

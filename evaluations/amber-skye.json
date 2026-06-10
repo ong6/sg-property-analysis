@@ -58,6 +58,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-skye-24796156",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold ~3BR (1,216 sqft) in prime D15 Amber Road, doorstep to the new Tanjong Katong TEL MRT. Asking $2,171 psf is at-to-slightly-below the project's trailing-12m average (~$2,197) — fair, not a bargain — and at a high $2.64m entry the MRT catalyst is largely already priced in.",
+      "rating_rationale": "Web check: Amber Skye is a 109-unit 2017 freehold luxury project at 8 Amber Road, with Amber Road/Tanjong Katong (TEL) MRT at the doorstep; trailing-12m sales avg ~$2,197 psf (range $1,930-2,474), 3BR avg ~$2,261 psf, and a comparable 1,216 sqft listing is up at $2,303 psf. At $2,171 psf this listing is modestly below project and 3BR averages, consistent with the algo's small -2.4% age-adj and -10% psf-vs-cohort — fair value, not deep value. The +10.26% trailing CAGR (32 txns) has ~0 forward power per v3.4 and the TEL catalyst is mature/priced-in. Low sale velocity (1 sale in 12m) and ~2.9% yield on a $2.64m ticket mean a high-capital, thin-liquidity hold. Solid prime FH asset at fair price, but no value edge and a stretched yield keep it Neutral.",
+      "red_flags": [
+        "High $2.64m capital outlay with project yield only ~2.9%",
+        "Very low sale turnover (1 sale in last 12 months) — thin exit liquidity at this price tier",
+        "+10% trailing CAGR has no forward power per v3.4; TEL MRT upside largely priced in",
+        "psf_cohort_txns=5 — modest comp depth behind the 'slightly cheap' read"
+      ],
+      "catalysts": [
+        "Doorstep Tanjong Katong (TEL) MRT — prime East Coast connectivity",
+        "Freehold, prime D15 Amber/Katong enclave with durable owner-occupier demand",
+        "Ongoing Amber Road precinct gentrification and sea-fringe positioning"
+      ],
+      "as_of": {
+        "price": 2640000,
+        "psf": 2171.05,
+        "beds": 3,
+        "sqft": 1216
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold ~3BR (1,216 sqft) in prime D15 Amber Road, doorstep to the new Tanjong Katong TEL MRT. Asking $2,171 psf is at-to-slightly-below the project's trailing-12m average (~$2,197) — fair, not a bargain — and at a high $2.64m entry the MRT catalyst is largely already priced in.",
+        "rating_rationale": "Web check: Amber Skye is a 109-unit 2017 freehold luxury project at 8 Amber Road, with Amber Road/Tanjong Katong (TEL) MRT at the doorstep; trailing-12m sales avg ~$2,197 psf (range $1,930-2,474), 3BR avg ~$2,261 psf, and a comparable 1,216 sqft listing is up at $2,303 psf. At $2,171 psf this listing is modestly below project and 3BR averages, consistent with the algo's small -2.4% age-adj and -10% psf-vs-cohort — fair value, not deep value. The +10.26% trailing CAGR (32 txns) has ~0 forward power per v3.4 and the TEL catalyst is mature/priced-in. Low sale velocity (1 sale in 12m) and ~2.9% yield on a $2.64m ticket mean a high-capital, thin-liquidity hold. Solid prime FH asset at fair price, but no value edge and a stretched yield keep it Neutral.",
+        "red_flags": [
+          "High $2.64m capital outlay with project yield only ~2.9%",
+          "Very low sale turnover (1 sale in last 12 months) — thin exit liquidity at this price tier",
+          "+10% trailing CAGR has no forward power per v3.4; TEL MRT upside largely priced in",
+          "psf_cohort_txns=5 — modest comp depth behind the 'slightly cheap' read"
+        ],
+        "catalysts": [
+          "Doorstep Tanjong Katong (TEL) MRT — prime East Coast connectivity",
+          "Freehold, prime D15 Amber/Katong enclave with durable owner-occupier demand",
+          "Ongoing Amber Road precinct gentrification and sea-fringe positioning"
+        ],
+        "appreciation_assessment": "Trailing +10.26% (32 txns) is robust history but per backtest carries ~0 forward signal; with the MRT now operational the catalyst is priced in. Expect prime-D15 market-typical forward returns, not outperformance.",
+        "rental_assessment": "Prime Amber Road 3BR rents to expat families; but project yield ~2.9% is thin — this is a capital-preservation/own-stay-leaning asset more than a yield play."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-amber-skye-24796156",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

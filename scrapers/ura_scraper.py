@@ -9,14 +9,12 @@ Source: https://eservice.ura.gov.sg/property-market-information/pmiResidentialTr
 
 import csv
 import io
-import os
 import re
 import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime
-from pathlib import Path
-from statistics import mean, median
+from statistics import median
 from typing import Optional
 
 
@@ -43,19 +41,6 @@ class URATransaction:
         if match:
             year_short = int(match.group(1))
             return 2000 + year_short if year_short < 50 else 1900 + year_short
-        return 0
-
-    @property
-    def sale_month(self) -> int:
-        """Extract month from sale_date."""
-        months = {
-            'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4,
-            'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8,
-            'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
-        }
-        for name, num in months.items():
-            if name in self.sale_date:
-                return num
         return 0
 
 
@@ -463,7 +448,7 @@ def parse_ura_csv(csv_content: str) -> list[URATransaction]:
             if txn.price > 0 and txn.psf > 0:
                 transactions.append(txn)
 
-        except (ValueError, KeyError) as e:
+        except (ValueError, KeyError):
             continue
 
     return transactions

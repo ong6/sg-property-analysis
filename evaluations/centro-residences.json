@@ -58,6 +58,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500058461",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large 3BR at Ang Mo Kio MRT priced genuinely below the project's recent resale band, in a favorable forward region (D20).",
+      "rating_rationale": "Asking $1,497 psf sits at or below the cheapest recent comp: verified 2025 transactions ran $1,503-$2,178 psf (avg ~$1,963), though the higher comps are smaller (~1,001 sqft) so a 1,356 sqft 3BR rightly trades lower. age_adj_premium -26% and psf_premium_vs_cohort -28% both flag genuine relative value, and the 6.2% appreciation rests on a robust 77 txns. D20 (Ang Mo Kio/Bishan) is an OCR/RCR-border region where realized forward returns (~+4%) beat CCR, supporting the value-led thesis. Knock against it: psf_cohort_txns is only 9 (thin same-size comparables), and a 1,356 sqft 3BR is a slower-moving unit on exit.",
+      "red_flags": [
+        "Same-size cohort thin (9 txns) so cohert-discount estimate is noisy",
+        "Large 1,356 sqft 3BR is a smaller buyer pool / slower exit",
+        "Some resident reviews note noise from nearby MRT and bus terminal"
+      ],
+      "catalysts": [
+        "~5 min walk to Ang Mo Kio MRT (NSL) and bus interchange",
+        "Mature Ang Mo Kio town with amenities; District 20 favorable forward region",
+        "Cheapest-in-band pricing relative to verified 2025 resales gives margin of safety"
+      ],
+      "as_of": {
+        "price": 2030000,
+        "psf": 1497.05,
+        "beds": 3,
+        "sqft": 1356
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large 3BR at Ang Mo Kio MRT priced genuinely below the project's recent resale band, in a favorable forward region (D20).",
+        "rating_rationale": "Asking $1,497 psf sits at or below the cheapest recent comp: verified 2025 transactions ran $1,503-$2,178 psf (avg ~$1,963), though the higher comps are smaller (~1,001 sqft) so a 1,356 sqft 3BR rightly trades lower. age_adj_premium -26% and psf_premium_vs_cohort -28% both flag genuine relative value, and the 6.2% appreciation rests on a robust 77 txns. D20 (Ang Mo Kio/Bishan) is an OCR/RCR-border region where realized forward returns (~+4%) beat CCR, supporting the value-led thesis. Knock against it: psf_cohort_txns is only 9 (thin same-size comparables), and a 1,356 sqft 3BR is a slower-moving unit on exit.",
+        "red_flags": [
+          "Same-size cohort thin (9 txns) so cohert-discount estimate is noisy",
+          "Large 1,356 sqft 3BR is a smaller buyer pool / slower exit",
+          "Some resident reviews note noise from nearby MRT and bus terminal"
+        ],
+        "catalysts": [
+          "~5 min walk to Ang Mo Kio MRT (NSL) and bus interchange",
+          "Mature Ang Mo Kio town with amenities; District 20 favorable forward region",
+          "Cheapest-in-band pricing relative to verified 2025 resales gives margin of safety"
+        ],
+        "appreciation_assessment": "6.2% 5yr CAGR on 77 txns is robust but, per backtest priors, near-zero forward signal; treat as story not forecast. Forward edge comes from the verified cheap-vs-recent-comp gap, not the trailing CAGR.",
+        "rental_assessment": "Mature Ang Mo Kio location with strong MRT access supports steady tenant demand; large 3BR yield will lag smaller units but absolute rent for a family unit near MRT is solid."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500058461",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

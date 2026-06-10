@@ -1,0 +1,119 @@
+{
+  "condo": "NEWest",
+  "slug": "newest",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 2,433 sqft '4BR' strata unit at NEWest, a 956-year quasi-freehold mixed development near Clementi. $1,228 PSF looks cheap vs the $1,576 URA median, but the $2.99M quantum sits above the deep buyer band and the low PSF is partly an artefact of an oversized/loft-type unit.",
+      "rating_rationale": "URA appreciation reads 11.1%/yr but on only 37 txns in a 136-unit boutique — unreliable and not investment-grade. $2.99M quantum thins the buyer pool, and the 2,433 sqft footprint makes this niche (large-family own-stay, not a broad resale target). One-North/TEL tailwinds are real, but 1.5km to Clementi MRT (18 min walk) blunts them. PSF discount to median is offset by quantum and liquidity drag.",
+      "red_flags": [
+        "Only 37 URA txns — appreciation rate statistically thin",
+        "Boutique 136-unit development = shallow buyer pool",
+        "$2.99M quantum above the deep liquid band",
+        "Oversized 2,433 sqft unit is niche on resale"
+      ],
+      "catalysts": [
+        "One-North tech hub proximity",
+        "TEL connectivity improving D05 access",
+        "956-yr lease = effectively freehold, no lease-decay drag"
+      ],
+      "as_of": {
+        "price": 2988000,
+        "psf": 1228.11,
+        "beds": 4,
+        "sqft": 2433.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Unknown Tenure",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 2,433 sqft '4BR' strata unit at NEWest, a 956-year quasi-freehold mixed development near Clementi. $1,228 PSF looks cheap vs the $1,576 URA median, but the $2.99M quantum sits above the deep buyer band and the low PSF is partly an artefact of an oversized/loft-type unit.",
+        "rating": "Neutral",
+        "rating_rationale": "URA appreciation reads 11.1%/yr but on only 37 txns in a 136-unit boutique — unreliable and not investment-grade. $2.99M quantum thins the buyer pool, and the 2,433 sqft footprint makes this niche (large-family own-stay, not a broad resale target). One-North/TEL tailwinds are real, but 1.5km to Clementi MRT (18 min walk) blunts them. PSF discount to median is offset by quantum and liquidity drag.",
+        "red_flags": [
+          "Only 37 URA txns — appreciation rate statistically thin",
+          "Boutique 136-unit development = shallow buyer pool",
+          "$2.99M quantum above the deep liquid band",
+          "Oversized 2,433 sqft unit is niche on resale"
+        ],
+        "catalysts": [
+          "One-North tech hub proximity",
+          "TEL connectivity improving D05 access",
+          "956-yr lease = effectively freehold, no lease-decay drag"
+        ],
+        "rental_assessment": "Large unit, modest yield; tenant pool for a 2,400+ sqft unit is thin vs efficient 2-3BR. Mixed-use retail at base helps own-stay convenience more than rental.",
+        "appreciation_assessment": "D05 (One-North, TEL) supports mid-single-digit appreciation, but the 11.1% URA figure is unreliable on 37 txns; treat ~5% as the realistic base.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 5.0,
+        "appreciation_rate_source": "D05 RCR baseline; URA 11.1% discounted for 37-txn boutique sample"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-newest-60223004",
+        "review_file": "cov_batch_01.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Large near-freehold 4BR in West Coast (D5) asking $1,228 psf against a verified 12-month project average of ~$1,386 psf, with a dated West Coast CRL MRT catalyst (2032). Value is genuine even after discounting for the unit's large size; the main reservation is the very large 2,433 sqft footprint, which narrows the resale buyer pool.",
+      "rating_rationale": "Web-verified recent NEWest transactions average ~$1,386 psf (range $1,070-$1,647), so the $1,228 psf ask is genuinely below the project's recent market, consistent with the algo's -34.6% age-adj premium and -8.4% vs-cohort (though the cohort is thin at 4 txns). Tenure is a 956-year leasehold (from 1928) — effectively freehold, despite the 'Unknown Tenure' label and the 'very_low_psf' flag. D5 sits on the RCR/OCR fringe, favorable under v3.4 realized-forward priors (OCR ~+4.0% / RCR ~+3.5% >> CCR ~+0.7%). The West Coast CRL Phase 2 station (~11 min walk, opening 2032) is a concrete, dated catalyst within a 5-7yr hold. Trailing 11.15% CAGR (37 txns) is decent but down-weighted per backtest. Held to medium confidence because the discount partly reflects the oversized 2,433 sqft unit, which has structurally lower psf and thinner exit demand.",
+      "red_flags": [
+        "Very large 2,433 sqft 4BR narrows the resale buyer pool and depresses psf vs smaller units",
+        "psf-cohort comparison rests on only 4 same-size transactions (-8.4% premium is low-confidence)",
+        "Dossier tenure shown as 'Unknown' / flagged 'very_low_psf'; actual is 956-yr leasehold from 1928 (verify on title before purchase)"
+      ],
+      "catalysts": [
+        "West Coast MRT (Cross Island Line Phase 2) opening ~2032, ~11 min walk — within hold horizon",
+        "Mixed-use development with ground-floor retail/F&B; near NUS, NUH, West Coast Park, West Coast Plaza",
+        "Near-freehold tenure provides long-run value floor vs surrounding 99-yr stock"
+      ],
+      "as_of": {
+        "price": 2988000,
+        "psf": 1228.11,
+        "beds": 4,
+        "sqft": 2433
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Unknown Tenure",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Large near-freehold 4BR in West Coast (D5) asking $1,228 psf against a verified 12-month project average of ~$1,386 psf, with a dated West Coast CRL MRT catalyst (2032). Value is genuine even after discounting for the unit's large size; the main reservation is the very large 2,433 sqft footprint, which narrows the resale buyer pool.",
+        "rating_rationale": "Web-verified recent NEWest transactions average ~$1,386 psf (range $1,070-$1,647), so the $1,228 psf ask is genuinely below the project's recent market, consistent with the algo's -34.6% age-adj premium and -8.4% vs-cohort (though the cohort is thin at 4 txns). Tenure is a 956-year leasehold (from 1928) — effectively freehold, despite the 'Unknown Tenure' label and the 'very_low_psf' flag. D5 sits on the RCR/OCR fringe, favorable under v3.4 realized-forward priors (OCR ~+4.0% / RCR ~+3.5% >> CCR ~+0.7%). The West Coast CRL Phase 2 station (~11 min walk, opening 2032) is a concrete, dated catalyst within a 5-7yr hold. Trailing 11.15% CAGR (37 txns) is decent but down-weighted per backtest. Held to medium confidence because the discount partly reflects the oversized 2,433 sqft unit, which has structurally lower psf and thinner exit demand.",
+        "red_flags": [
+          "Very large 2,433 sqft 4BR narrows the resale buyer pool and depresses psf vs smaller units",
+          "psf-cohort comparison rests on only 4 same-size transactions (-8.4% premium is low-confidence)",
+          "Dossier tenure shown as 'Unknown' / flagged 'very_low_psf'; actual is 956-yr leasehold from 1928 (verify on title before purchase)"
+        ],
+        "catalysts": [
+          "West Coast MRT (Cross Island Line Phase 2) opening ~2032, ~11 min walk — within hold horizon",
+          "Mixed-use development with ground-floor retail/F&B; near NUS, NUH, West Coast Park, West Coast Plaza",
+          "Near-freehold tenure provides long-run value floor vs surrounding 99-yr stock"
+        ],
+        "appreciation_assessment": "Trailing 11.15% 5yr CAGR (37 txns) is real but treated as story, not forward edge (backtest: ~0 forward power). Forward case rests on the 2032 CRL catalyst and D5's favorable RCR/OCR-fringe location.",
+        "rental_assessment": "Large 4BR in West Coast draws NUS/NUH/one-north tenants; absolute rent is high but yield on a ~$3M quantum will be modest. Rental is a secondary support, not the thesis."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-newest-60223004",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

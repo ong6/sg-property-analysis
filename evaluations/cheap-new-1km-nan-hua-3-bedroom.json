@@ -1,0 +1,61 @@
+{
+  "condo": "⭐️CHEAP⭐️ NEW 1km NAN HUA 3-bedroom",
+  "slug": "cheap-new-1km-nan-hua-3-bedroom",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A keyword-stuffed Clementi D05 listing ('CHEAP NEW 1km NAN HUA') with contradictory bed labels (4BR bracket vs '3-bedroom' title), no MRT info, no built_year and no URA data, priced at $2.679M / $2221 PSF. The '⭐️CHEAP⭐️' framing is marketing, not substance — $2221 PSF for a 99yr D05 unit is not cheap, and the project identity is unverifiable.",
+      "rating_rationale": "Despite the 'CHEAP' hook, $2221 PSF is full mid-market price for a D05 99yr unit, and at $2.679M / 4BR+ band the exit pool is shallow. Bed-count label conflicts with the title, MRT distance is blank, built_year is missing and there is no URA data — too many gaps to call this a buy. Score 453/1000 is below market. Nan Hua school zone is an own-stay driver, not investment appreciation.",
+      "red_flags": [
+        "Marketing-stuffed title; project identity unverifiable",
+        "Bed-count inconsistency (4BR bracket vs '3-bedroom' title)",
+        "No MRT info, no built_year, no URA data",
+        "$2221 PSF is not 'cheap' for a 99yr D05 unit; $2.679M is a niche exit"
+      ],
+      "catalysts": [
+        "1km to Nan Hua Primary (family own-stay demand)",
+        "D05 One-North/Science Park employment supports tenancy"
+      ],
+      "as_of": {
+        "price": 2679000,
+        "psf": 2221.39,
+        "beds": 4,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A keyword-stuffed Clementi D05 listing ('CHEAP NEW 1km NAN HUA') with contradictory bed labels (4BR bracket vs '3-bedroom' title), no MRT info, no built_year and no URA data, priced at $2.679M / $2221 PSF. The '⭐️CHEAP⭐️' framing is marketing, not substance — $2221 PSF for a 99yr D05 unit is not cheap, and the project identity is unverifiable.",
+        "rating": "Neutral",
+        "rating_rationale": "Despite the 'CHEAP' hook, $2221 PSF is full mid-market price for a D05 99yr unit, and at $2.679M / 4BR+ band the exit pool is shallow. Bed-count label conflicts with the title, MRT distance is blank, built_year is missing and there is no URA data — too many gaps to call this a buy. Score 453/1000 is below market. Nan Hua school zone is an own-stay driver, not investment appreciation.",
+        "red_flags": [
+          "Marketing-stuffed title; project identity unverifiable",
+          "Bed-count inconsistency (4BR bracket vs '3-bedroom' title)",
+          "No MRT info, no built_year, no URA data",
+          "$2221 PSF is not 'cheap' for a 99yr D05 unit; $2.679M is a niche exit"
+        ],
+        "catalysts": [
+          "1km to Nan Hua Primary (family own-stay demand)",
+          "D05 One-North/Science Park employment supports tenancy"
+        ],
+        "rental_assessment": "D05 tenant demand is healthy, but a large 4BR-band unit at $2.68M is family-let only with a thin pool and modest yield.",
+        "appreciation_assessment": "No URA data and an unverified project; the 'cheap' claim is unsupported by PSF. Treat appreciation as district-average and discount the school-zone premium as own-stay.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheap-new-1km-nan-hua-3-bedroom-60222113",
+        "review_file": "cov_batch_31.json"
+      }
+    }
+  ]
+}

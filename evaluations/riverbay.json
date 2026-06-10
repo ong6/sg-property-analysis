@@ -1,0 +1,61 @@
+{
+  "condo": "RiverBay",
+  "slug": "riverbay",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 516 sqft 1BR at $798k in RiverBay, D12 (near Kallang/Boon Keng), on a near-freehold 999-year lease. Clean resale-only 4.13%/yr CAGR on a solid 57 txns and a $1,547 PSF ~6% under the $1,644 URA median, with a very low quantum — but 1.19km to MRT and a low Elo (1241) temper it.",
+      "rating_rationale": "A reasonable value entry: 999-year tenure (effectively freehold) at a $798k quantum, with a credible 4.13% resale CAGR backed by a healthy 57-transaction sample (the most reliable rate-quality in the cheap segment) and PSF ~6% below URA median. What holds it to Neutral: 1.19km/14min to Boon Keng MRT is not walkable (weakens both rental pull and resale), and the project's low Elo (1241, the lowest in the batch) and middling record reflect modest competitive appeal. Fine for a low-cost yield hold, but no catalyst to drive outperformance.",
+      "red_flags": [
+        "1.19km / 14min to Boon Keng MRT — not transit-walkable",
+        "Lowest Elo in batch (1241) — weak relative competitive standing",
+        "Compact 1BR in a non-prime D12 pocket; rental appeal local rather than premium"
+      ],
+      "catalysts": [
+        "999-year lease (effectively freehold) at a low $798k quantum",
+        "PSF ~6% below URA median; reliable 4.13% CAGR on 57 txns",
+        "City-fringe D12 with reasonable access to Kallang/CBD corridor"
+      ],
+      "as_of": {
+        "price": 798000,
+        "psf": 1546.51,
+        "beds": 1,
+        "sqft": 516.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 516 sqft 1BR at $798k in RiverBay, D12 (near Kallang/Boon Keng), on a near-freehold 999-year lease. Clean resale-only 4.13%/yr CAGR on a solid 57 txns and a $1,547 PSF ~6% under the $1,644 URA median, with a very low quantum — but 1.19km to MRT and a low Elo (1241) temper it.",
+        "rating": "Neutral",
+        "rating_rationale": "A reasonable value entry: 999-year tenure (effectively freehold) at a $798k quantum, with a credible 4.13% resale CAGR backed by a healthy 57-transaction sample (the most reliable rate-quality in the cheap segment) and PSF ~6% below URA median. What holds it to Neutral: 1.19km/14min to Boon Keng MRT is not walkable (weakens both rental pull and resale), and the project's low Elo (1241, the lowest in the batch) and middling record reflect modest competitive appeal. Fine for a low-cost yield hold, but no catalyst to drive outperformance.",
+        "red_flags": [
+          "1.19km / 14min to Boon Keng MRT — not transit-walkable",
+          "Lowest Elo in batch (1241) — weak relative competitive standing",
+          "Compact 1BR in a non-prime D12 pocket; rental appeal local rather than premium"
+        ],
+        "catalysts": [
+          "999-year lease (effectively freehold) at a low $798k quantum",
+          "PSF ~6% below URA median; reliable 4.13% CAGR on 57 txns",
+          "City-fringe D12 with reasonable access to Kallang/CBD corridor"
+        ],
+        "rental_assessment": "Moderate — low quantum supports a decent yield (~3.5%+), but the 1.19km MRT walk caps tenant premium.",
+        "appreciation_assessment": "Steady 4.13%/yr on a robust 57-txn sample is dependable but unexceptional; no specific catalyst for above-trend growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riverbay-25523155",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

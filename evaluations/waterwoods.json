@@ -1,0 +1,63 @@
+{
+  "condo": "Waterwoods",
+  "slug": "waterwoods",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Privatised EC 2BR in Punggol at $1,610 PSF — meaningfully above the ~$1,449 PSF recent transacted average for the project, leaving little upside headroom on entry. Good liquidity (373 units, deep D19 HDB-upgrader pool) but the entry price is rich.",
+      "rating_rationale": "807sqft 2BR at $1.30M / $1,610 PSF vs project recent average ~$1,449 PSF (range $1,280-$1,581) — listing is at/above the top of the recent band, so it is not a value entry. 2015-built privatised EC, Coral Edge LRT 380m only (no MRT, one LRT stop from Punggol). Score 619 / Elo 1056 with a losing 175-239 record. No URA project rate available. Punggol Digital District + CRL are real long-term catalysts but already broadly priced into D19 EC values.",
+      "red_flags": [
+        "Listed ~10%+ above recent project transacted average PSF",
+        "Only LRT (380m), no direct MRT within walking distance",
+        "EC product caps prestige upside vs true private condo"
+      ],
+      "catalysts": [
+        "Punggol Digital District jobs",
+        "Cross Island Line (Punggol-area connectivity ~2030s)",
+        "Privatisation already complete (open buyer pool)"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1610.9,
+        "beds": 2,
+        "sqft": 807.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Privatised EC 2BR in Punggol at $1,610 PSF — meaningfully above the ~$1,449 PSF recent transacted average for the project, leaving little upside headroom on entry. Good liquidity (373 units, deep D19 HDB-upgrader pool) but the entry price is rich.",
+        "rating": "Neutral",
+        "rating_rationale": "807sqft 2BR at $1.30M / $1,610 PSF vs project recent average ~$1,449 PSF (range $1,280-$1,581) — listing is at/above the top of the recent band, so it is not a value entry. 2015-built privatised EC, Coral Edge LRT 380m only (no MRT, one LRT stop from Punggol). Score 619 / Elo 1056 with a losing 175-239 record. No URA project rate available. Punggol Digital District + CRL are real long-term catalysts but already broadly priced into D19 EC values.",
+        "red_flags": [
+          "Listed ~10%+ above recent project transacted average PSF",
+          "Only LRT (380m), no direct MRT within walking distance",
+          "EC product caps prestige upside vs true private condo"
+        ],
+        "catalysts": [
+          "Punggol Digital District jobs",
+          "Cross Island Line (Punggol-area connectivity ~2030s)",
+          "Privatisation already complete (open buyer pool)"
+        ],
+        "rental_assessment": "2BR has the widest tenant pool and Punggol attracts young families/PDD workers, but EC rents in Punggol are modest; yield ordinary.",
+        "appreciation_assessment": "Privatised EC appreciation already largely realised; entering above recent average PSF limits further upside over a 5-7yr hold.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR/D19 EC prior; project recent transacted PSF flat-to-modest (99.co recent 6/12mo data)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterwoods-500163864",
+        "review_file": "cov_batch_26.json"
+      }
+    }
+  ]
+}

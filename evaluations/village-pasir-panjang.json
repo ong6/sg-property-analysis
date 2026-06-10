@@ -1,0 +1,59 @@
+{
+  "condo": "Village @ Pasir Panjang",
+  "slug": "village-pasir-panjang",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A well-sized 1,410 sqft 3BR freehold in D05 Pasir Panjang (Village @ Pasir Panjang, TOP 2016) at $2.299M / $1,631 PSF — slightly below the $1,658 URA median and on the efficiency frontier. The catch is weak 2.20%/yr resale appreciation on a reliable 29-transaction base, and no walkable MRT listed.",
+      "rating_rationale": "This is the most attractively priced FH 3BR in the batch on a PSF basis: $1,631 asking sits just under the $1,658 URA median, the unit is a genuine 1,410 sqft family layout (not a squeezed shoebox), the $2.299M quantum is liquid, it is on_frontier, and the best score (552) in the batch. Tempering that, the 29-transaction URA base shows soft 2.20%/yr appreciation — D05 Pasir Panjang has lagged the broader RCR — and the absence of a walkable MRT caps upside. Fair value plus good liquidity, but muted growth keeps it Neutral rather than a Buy.",
+      "red_flags": [
+        "Soft 2.20%/yr appreciation on a reliable 29-txn base — has lagged RCR",
+        "No MRT within walking distance listed",
+        "$2.299M quantum approaching the upper liquid band"
+      ],
+      "catalysts": [
+        "Freehold, genuinely sized 1,410 sqft 3BR priced below its URA median PSF",
+        "On the efficiency frontier with the batch's top technical score (552)",
+        "Pasir Panjang/Greater Southern Waterfront and One-North long-run regeneration"
+      ],
+      "as_of": {
+        "price": 2299000,
+        "psf": 1630.5,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A well-sized 1,410 sqft 3BR freehold in D05 Pasir Panjang (Village @ Pasir Panjang, TOP 2016) at $2.299M / $1,631 PSF — slightly below the $1,658 URA median and on the efficiency frontier. The catch is weak 2.20%/yr resale appreciation on a reliable 29-transaction base, and no walkable MRT listed.",
+        "rating": "Neutral",
+        "rating_rationale": "This is the most attractively priced FH 3BR in the batch on a PSF basis: $1,631 asking sits just under the $1,658 URA median, the unit is a genuine 1,410 sqft family layout (not a squeezed shoebox), the $2.299M quantum is liquid, it is on_frontier, and the best score (552) in the batch. Tempering that, the 29-transaction URA base shows soft 2.20%/yr appreciation — D05 Pasir Panjang has lagged the broader RCR — and the absence of a walkable MRT caps upside. Fair value plus good liquidity, but muted growth keeps it Neutral rather than a Buy.",
+        "red_flags": [
+          "Soft 2.20%/yr appreciation on a reliable 29-txn base — has lagged RCR",
+          "No MRT within walking distance listed",
+          "$2.299M quantum approaching the upper liquid band"
+        ],
+        "catalysts": [
+          "Freehold, genuinely sized 1,410 sqft 3BR priced below its URA median PSF",
+          "On the efficiency frontier with the batch's top technical score (552)",
+          "Pasir Panjang/Greater Southern Waterfront and One-North long-run regeneration"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-village-pasir-panjang-25538099",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

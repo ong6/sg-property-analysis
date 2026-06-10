@@ -1,0 +1,63 @@
+{
+  "condo": "Pasir Panjang walk up apartment",
+  "slug": "pasir-panjang-walk-up-apartment",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 1,300 sqft 999-yr leasehold (quasi-freehold) 4BR walk-up apartment in D05 Pasir Panjang at $2.0M / $1,538 PSF, 460m from Pasir Panjang MRT. Walk-up (no lift/facilities) and no URA data are the swing factors against an otherwise well-located One-North-adjacent asset.",
+      "rating_rationale": "999-yr tenure is effectively freehold and $2.0M for a 1,300 sqft unit in D05 near One-North / Greater Southern Waterfront has a real catalyst angle; 460m to Pasir Panjang CCL MRT and score_1000 607 support it. But a walk-up apartment (no lift, no condo facilities, likely older with no built year) has a narrower buyer pool and weaker rental premium than a full-facility condo, and there's no URA data to confirm appreciation. Catalyst-rich location, but the walk-up format caps the case.",
+      "red_flags": [
+        "Walk-up apartment — no lift/facilities, narrower buyer pool",
+        "No built year and no URA appreciation/txn data",
+        "Walk-ups can carry en-bloc/redevelopment uncertainty and higher upkeep"
+      ],
+      "catalysts": [
+        "999-yr leasehold — quasi-freehold security",
+        "D05 Pasir Panjang near One-North tech hub and Greater Southern Waterfront transformation",
+        "460m (6 min) to Pasir Panjang CCL MRT",
+        "Large 1,300 sqft 4BR at sub-$2M quantum"
+      ],
+      "as_of": {
+        "price": 1999888,
+        "psf": 1538.38,
+        "beds": 4,
+        "sqft": 1300.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,300 sqft 999-yr leasehold (quasi-freehold) 4BR walk-up apartment in D05 Pasir Panjang at $2.0M / $1,538 PSF, 460m from Pasir Panjang MRT. Walk-up (no lift/facilities) and no URA data are the swing factors against an otherwise well-located One-North-adjacent asset.",
+        "rating": "Neutral",
+        "rating_rationale": "999-yr tenure is effectively freehold and $2.0M for a 1,300 sqft unit in D05 near One-North / Greater Southern Waterfront has a real catalyst angle; 460m to Pasir Panjang CCL MRT and score_1000 607 support it. But a walk-up apartment (no lift, no condo facilities, likely older with no built year) has a narrower buyer pool and weaker rental premium than a full-facility condo, and there's no URA data to confirm appreciation. Catalyst-rich location, but the walk-up format caps the case.",
+        "red_flags": [
+          "Walk-up apartment — no lift/facilities, narrower buyer pool",
+          "No built year and no URA appreciation/txn data",
+          "Walk-ups can carry en-bloc/redevelopment uncertainty and higher upkeep"
+        ],
+        "catalysts": [
+          "999-yr leasehold — quasi-freehold security",
+          "D05 Pasir Panjang near One-North tech hub and Greater Southern Waterfront transformation",
+          "460m (6 min) to Pasir Panjang CCL MRT",
+          "Large 1,300 sqft 4BR at sub-$2M quantum"
+        ],
+        "rental_assessment": "One-North professional and NUS/science-park tenant catchment is strong, but a walk-up commands lower rent than a facility condo. Moderate yield.",
+        "appreciation_assessment": "No URA data; GSW/One-North catalysts and 999-yr tenure are supportive, but walk-up format and unproven trend keep it neutral.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-pasir-panjang-walk-up-apartment-60082790",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

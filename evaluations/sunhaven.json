@@ -1,0 +1,59 @@
+{
+  "condo": "Sunhaven",
+  "slug": "sunhaven",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A 1,259 sqft freehold 3BR at Sunhaven (D16 Upper Changi/Bedok, built 2003), 750m from DT34 Upper Changi MRT, at $1.85M / $1,469 psf. Strong realized appreciation (5.74%/yr over a solid 49-txn series) and a $1.85M quantum right in the deep-liquidity band make this a credible 3BR investment; freehold removes lease-decay risk despite the 2003 build, though asking PSF is ~6% above the $1,392 median.",
+      "rating_rationale": "A well-evidenced 5.74%/yr CAGR on 49 transactions, freehold 3BR (no lease decay), $1.85M in the deepest liquidity band, and a strong arena record (Elo 1611, 447-122-0) line up well. D16 benefits from the DT line, Bayshore precinct development and Upper East Coast/TEL theme. The ~6% PSF premium to median and the 2003 age (dated facilities) are the trade-offs, but freehold + family-sized 3BR + documented growth justify a Buy.",
+      "red_flags": [
+        "Asking PSF ~6% above district median",
+        "Built 2003 — older facilities, higher maintenance than newer stock",
+        "750m to MRT — decent but not doorstep"
+      ],
+      "catalysts": [
+        "Freehold 3BR at $1.85M — family-sized unit in the deepest liquidity band",
+        "Documented 5.74%/yr appreciation on a credible 49-txn series",
+        "D16 Bayshore precinct development + DT34 Upper Changi / Upper East Coast TEL theme"
+      ],
+      "as_of": {
+        "price": 1850000,
+        "psf": 1469.42,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft freehold 3BR at Sunhaven (D16 Upper Changi/Bedok, built 2003), 750m from DT34 Upper Changi MRT, at $1.85M / $1,469 psf. Strong realized appreciation (5.74%/yr over a solid 49-txn series) and a $1.85M quantum right in the deep-liquidity band make this a credible 3BR investment; freehold removes lease-decay risk despite the 2003 build, though asking PSF is ~6% above the $1,392 median.",
+        "rating": "Buy",
+        "rating_rationale": "A well-evidenced 5.74%/yr CAGR on 49 transactions, freehold 3BR (no lease decay), $1.85M in the deepest liquidity band, and a strong arena record (Elo 1611, 447-122-0) line up well. D16 benefits from the DT line, Bayshore precinct development and Upper East Coast/TEL theme. The ~6% PSF premium to median and the 2003 age (dated facilities) are the trade-offs, but freehold + family-sized 3BR + documented growth justify a Buy.",
+        "red_flags": [
+          "Asking PSF ~6% above district median",
+          "Built 2003 — older facilities, higher maintenance than newer stock",
+          "750m to MRT — decent but not doorstep"
+        ],
+        "catalysts": [
+          "Freehold 3BR at $1.85M — family-sized unit in the deepest liquidity band",
+          "Documented 5.74%/yr appreciation on a credible 49-txn series",
+          "D16 Bayshore precinct development + DT34 Upper Changi / Upper East Coast TEL theme"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sunhaven-24721293",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

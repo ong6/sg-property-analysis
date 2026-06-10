@@ -1,0 +1,65 @@
+{
+  "condo": "Meralodge",
+  "slug": "meralodge",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Very large freehold 3BR (1,765sqft) at $1,467 PSF in D23, but 1.29km / 15-min walk from the new Hume MRT and built 1997 (~29yr). Low PSF is partly a function of an oversized floorplate, not genuine value, and the appreciation rate rests on a thin 9-txn series.",
+      "rating_rationale": "The headline 7.1%/yr CAGR is unreliable on only 9 transactions, and the $1,467 PSF looks cheap mainly because 1,765sqft is oversized — total quantum is $2.59M, above the liquid sweet spot for an aging OCR 3BR. Hume MRT now exists (a plus) but at 1.29km it adds little. Freehold and space are real positives, but weak walkability, age and thin liquidity keep this Neutral.",
+      "red_flags": [
+        "Oversized 1,765sqft inflates the 'cheap' PSF impression",
+        "Thin 9-txn URA series — 7.1% rate unreliable",
+        "1.29km/15-min from Hume MRT — poor walkability",
+        "Built 1997 (~29yr); $2.59M quantum thins buyer pool"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "New Hume MRT (DTL) opened in the precinct",
+        "Large layout appeals to space-seeking families"
+      ],
+      "as_of": {
+        "price": 2590000,
+        "psf": 1467.42,
+        "beds": 3,
+        "sqft": 1765.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Very large freehold 3BR (1,765sqft) at $1,467 PSF in D23, but 1.29km / 15-min walk from the new Hume MRT and built 1997 (~29yr). Low PSF is partly a function of an oversized floorplate, not genuine value, and the appreciation rate rests on a thin 9-txn series.",
+        "rating": "Neutral",
+        "rating_rationale": "The headline 7.1%/yr CAGR is unreliable on only 9 transactions, and the $1,467 PSF looks cheap mainly because 1,765sqft is oversized — total quantum is $2.59M, above the liquid sweet spot for an aging OCR 3BR. Hume MRT now exists (a plus) but at 1.29km it adds little. Freehold and space are real positives, but weak walkability, age and thin liquidity keep this Neutral.",
+        "red_flags": [
+          "Oversized 1,765sqft inflates the 'cheap' PSF impression",
+          "Thin 9-txn URA series — 7.1% rate unreliable",
+          "1.29km/15-min from Hume MRT — poor walkability",
+          "Built 1997 (~29yr); $2.59M quantum thins buyer pool"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "New Hume MRT (DTL) opened in the precinct",
+          "Large layout appeals to space-seeking families"
+        ],
+        "rental_assessment": "Far from MRT and large quantum mean modest yield; rental pool is space-seeking families rather than transit-dependent tenants.",
+        "appreciation_assessment": "9-txn rate is too thin to trust; expect OCR-baseline appreciation discounted for distance-to-MRT and age.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Thin 9-txn series discounted to near OCR baseline for age/walkability"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-meralodge-500120694",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

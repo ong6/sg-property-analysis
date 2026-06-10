@@ -1,0 +1,61 @@
+{
+  "condo": "Tree House",
+  "slug": "tree-house",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "A large 1,636 sqft 4BR in D23 Bukit Panjang at $1,424 psf — roughly 7% below the project's $1,539 median, with a strong, reliable resale-only appreciation of 6.45%/yr over 93 transactions. The catch is location: only an LRT 1.2km away and OCR fringe demand cap the absolute upside and the 4BR buyer pool.",
+      "rating_rationale": "Resale-only CAGR 6.45%/yr on a healthy 93-txn series is well above the OCR ~3.7% baseline and even the RCR ~5.8% prior — credible because it is pure resale, no new-launch bias. Asking PSF $1,424 sits ~7% under the $1,538.5 median, so there is room rather than froth. Elo 2202 / score 671 on the frontier confirms it screens well. Price $2.33M is inside the liquid band. Downside is the weak transit (Pending LRT 1.19km, no MRT) and 99LH already 12 years in.",
+      "red_flags": [
+        "No MRT within walking distance — only Pending LRT 1.19km, weakest transit in this batch",
+        "4BR resale at $2.33M is a narrower family-only buyer pool",
+        "OCR D23 fringe limits absolute price ceiling vs central districts"
+      ],
+      "catalysts": [
+        "Distinctive 'world's largest vertical garden' branding aids resale recall and rental differentiation",
+        "Below-median asking PSF leaves headroom to the project's own resale comps",
+        "Sustained 6.45% resale CAGR shows real demand depth in Bukit Panjang for large units"
+      ],
+      "as_of": {
+        "price": 2330000,
+        "psf": 1424.21,
+        "beds": 4,
+        "sqft": 1636.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,636 sqft 4BR in D23 Bukit Panjang at $1,424 psf — roughly 7% below the project's $1,539 median, with a strong, reliable resale-only appreciation of 6.45%/yr over 93 transactions. The catch is location: only an LRT 1.2km away and OCR fringe demand cap the absolute upside and the 4BR buyer pool.",
+        "rating": "Buy",
+        "rating_rationale": "Resale-only CAGR 6.45%/yr on a healthy 93-txn series is well above the OCR ~3.7% baseline and even the RCR ~5.8% prior — credible because it is pure resale, no new-launch bias. Asking PSF $1,424 sits ~7% under the $1,538.5 median, so there is room rather than froth. Elo 2202 / score 671 on the frontier confirms it screens well. Price $2.33M is inside the liquid band. Downside is the weak transit (Pending LRT 1.19km, no MRT) and 99LH already 12 years in.",
+        "red_flags": [
+          "No MRT within walking distance — only Pending LRT 1.19km, weakest transit in this batch",
+          "4BR resale at $2.33M is a narrower family-only buyer pool",
+          "OCR D23 fringe limits absolute price ceiling vs central districts"
+        ],
+        "catalysts": [
+          "Distinctive 'world's largest vertical garden' branding aids resale recall and rental differentiation",
+          "Below-median asking PSF leaves headroom to the project's own resale comps",
+          "Sustained 6.45% resale CAGR shows real demand depth in Bukit Panjang for large units"
+        ],
+        "rental_assessment": "Large 4BR in OCR Bukit Panjang draws family tenants but a shallow pool; yield modest. Branding and greenery help differentiate but absolute rents are OCR-level.",
+        "appreciation_assessment": "6.45%/yr resale-only over 93 txns is reliable and strong for OCR; below-median entry adds margin of safety. Sustainable rather than spectacular.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tree-house-24897365",
+        "review_file": "cov_batch_02.json"
+      }
+    }
+  ]
+}

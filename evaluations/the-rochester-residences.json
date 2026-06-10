@@ -56,6 +56,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rochester-residences-23216476",
         "review_file": "batch_01.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "1BR loft (1,022 sqft, double-volume) at Buona Vista, D5/RCR, asking $1,468 PSF — genuinely below the project's ~$1,535 PSF 6-month average and a directly comparable 1,023 sqft loft listing at $1,564 PSF. The bedroom_sqft_mismatch flag is a FALSE alarm: 1,022 sqft is a real Rochester 1BR loft layout, not a mislabel.",
+      "rating_rationale": "Asking $1,500,000 ($1,468 PSF) sits below the verified 6-month transacted average of ~$1,535 PSF and below a comparable 1,023 sqft 1BR loft asking $1,600,000/$1,564 PSF (PropNex), so the algo's age_adj_premium of -14.5% reflects a real discount, not a quirk — appreciation_txns=114 and the 177-txn project history give a deep, trustworthy comp base. Location is the catalyst: ~5 min walk to Buona Vista interchange (EWL + Circle Line) and the one-north tech/biomed employment cluster, supporting both rental demand (project shows 1,511 rental txns, rents $4.1k-$11k) and resale liquidity. D5 is RCR, which the v3.4 backtest prior favors over CCR for forward returns. Held back from Strong Buy by the loft format (high ceilings = lower usable yield per dollar than a flat 1BR), 99-yr lease aging from 2011 TOP, and psf_cohort_txns of only 5 for this specific loft band.",
+      "red_flags": [
+        "1BR loft format priced like a 2BR ($1.5M outlay for one bedroom) compresses rental yield vs a conventional 1BR",
+        "99-yr leasehold, ~14 yrs elapsed (TOP 2011) — lease decay accelerates over a 5-7yr hold horizon",
+        "psf_cohort_txns only 5 for the loft size band — fewer same-size comps than the 114 project-wide figure implies"
+      ],
+      "catalysts": [
+        "5-min walk to Buona Vista MRT interchange (East-West + Circle Line)",
+        "one-north / Fusionopolis tech-biomed employment cluster underpins tenant demand and exit liquidity",
+        "RCR location aligns with v3.4 prior favoring RCR/OCR forward returns over CCR"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1467.71,
+        "beds": 1,
+        "sqft": 1022
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "1BR loft (1,022 sqft, double-volume) at Buona Vista, D5/RCR, asking $1,468 PSF — genuinely below the project's ~$1,535 PSF 6-month average and a directly comparable 1,023 sqft loft listing at $1,564 PSF. The bedroom_sqft_mismatch flag is a FALSE alarm: 1,022 sqft is a real Rochester 1BR loft layout, not a mislabel.",
+        "rating_rationale": "Asking $1,500,000 ($1,468 PSF) sits below the verified 6-month transacted average of ~$1,535 PSF and below a comparable 1,023 sqft 1BR loft asking $1,600,000/$1,564 PSF (PropNex), so the algo's age_adj_premium of -14.5% reflects a real discount, not a quirk — appreciation_txns=114 and the 177-txn project history give a deep, trustworthy comp base. Location is the catalyst: ~5 min walk to Buona Vista interchange (EWL + Circle Line) and the one-north tech/biomed employment cluster, supporting both rental demand (project shows 1,511 rental txns, rents $4.1k-$11k) and resale liquidity. D5 is RCR, which the v3.4 backtest prior favors over CCR for forward returns. Held back from Strong Buy by the loft format (high ceilings = lower usable yield per dollar than a flat 1BR), 99-yr lease aging from 2011 TOP, and psf_cohort_txns of only 5 for this specific loft band.",
+        "red_flags": [
+          "1BR loft format priced like a 2BR ($1.5M outlay for one bedroom) compresses rental yield vs a conventional 1BR",
+          "99-yr leasehold, ~14 yrs elapsed (TOP 2011) — lease decay accelerates over a 5-7yr hold horizon",
+          "psf_cohort_txns only 5 for the loft size band — fewer same-size comps than the 114 project-wide figure implies"
+        ],
+        "catalysts": [
+          "5-min walk to Buona Vista MRT interchange (East-West + Circle Line)",
+          "one-north / Fusionopolis tech-biomed employment cluster underpins tenant demand and exit liquidity",
+          "RCR location aligns with v3.4 prior favoring RCR/OCR forward returns over CCR"
+        ],
+        "rental_assessment": "Strong rental backbone: 1,511 rental transactions to date, asking rents $4,100-$11,000; tenant pool from one-north and NUS/biopolis. But the ~$1.5M price for a single-bedroom loft caps gross yield around 3.3-3.6%, mid-pack for D5.",
+        "appreciation_assessment": "URA 5yr CAGR 5.33% on 114 txns is robust by sample size but per v3.4 has ~0 forward predictive power — do not extrapolate. Forward case rests on verified value (cheap vs real comps) plus the durable one-north/interchange catalyst, not trailing momentum."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rochester-residences-25472133",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

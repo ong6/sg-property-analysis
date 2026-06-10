@@ -1,0 +1,115 @@
+{
+  "condo": "Foresque Residences",
+  "slug": "foresque-residences",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 99-year leasehold unit in Foresque Residences, Dairy Farm/Hillview (D23), with a deep 110-txn URA series at 5.7%/yr. Listed as a '4BR+' at a huge 2,573 sqft for $3.0M / $1,166 psf — the low PSF is purely a size artifact, and a $3M no-MRT OCR leasehold mega-unit is a very thin exit.",
+      "rating_rationale": "The $1,166 psf vs $1,614 median looks like a ~28% discount but it is entirely the oversized-unit illusion: at 2,573 sqft this unit is roughly double a normal 4BR, so the low PSF reflects sheer size — the buyer still pays $3.0M. That quantum is the problem: $3M for a 99-year leasehold (2014), in OCR D23 Dairy Farm with NO MRT within walking distance, in a development with no station catalyst, is a deeply niche exit. Above $3M the pool thins; a 2,573 sqft leasehold family unit in a car-dependent location narrows it further to a handful of large families who could instead buy freehold or landed nearby. The 5.7%/yr URA (110 txns, reliable) is decent for the project overall, but does not rescue an oversized $3M leasehold unit with no transport catalyst. Avoid as an investment.",
+      "red_flags": [
+        "Oversized 2,573 sqft unit — low PSF is a size artifact; real test is the $3.0M quantum",
+        ">$3M leasehold OCR mega-unit — very thin, niche exit buyer pool",
+        "No MRT within walking distance (blank mrt_info)",
+        "99-year leasehold with no station/zone catalyst to drive appreciation"
+      ],
+      "catalysts": [
+        "Reliable 5.7%/yr URA on 110 txns (project-level, not unit-specific)",
+        "Nature-fringe Dairy Farm/Bukit Timah greenery appeal (own-stay, not investment)"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 1165.95,
+        "beds": 4,
+        "sqft": 2573.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99-year leasehold unit in Foresque Residences, Dairy Farm/Hillview (D23), with a deep 110-txn URA series at 5.7%/yr. Listed as a '4BR+' at a huge 2,573 sqft for $3.0M / $1,166 psf — the low PSF is purely a size artifact, and a $3M no-MRT OCR leasehold mega-unit is a very thin exit.",
+        "rating": "Avoid",
+        "rating_rationale": "The $1,166 psf vs $1,614 median looks like a ~28% discount but it is entirely the oversized-unit illusion: at 2,573 sqft this unit is roughly double a normal 4BR, so the low PSF reflects sheer size — the buyer still pays $3.0M. That quantum is the problem: $3M for a 99-year leasehold (2014), in OCR D23 Dairy Farm with NO MRT within walking distance, in a development with no station catalyst, is a deeply niche exit. Above $3M the pool thins; a 2,573 sqft leasehold family unit in a car-dependent location narrows it further to a handful of large families who could instead buy freehold or landed nearby. The 5.7%/yr URA (110 txns, reliable) is decent for the project overall, but does not rescue an oversized $3M leasehold unit with no transport catalyst. Avoid as an investment.",
+        "red_flags": [
+          "Oversized 2,573 sqft unit — low PSF is a size artifact; real test is the $3.0M quantum",
+          ">$3M leasehold OCR mega-unit — very thin, niche exit buyer pool",
+          "No MRT within walking distance (blank mrt_info)",
+          "99-year leasehold with no station/zone catalyst to drive appreciation"
+        ],
+        "catalysts": [
+          "Reliable 5.7%/yr URA on 110 txns (project-level, not unit-specific)",
+          "Nature-fringe Dairy Farm/Bukit Timah greenery appeal (own-stay, not investment)"
+        ],
+        "rental_assessment": "Car-dependent location and a 2,573 sqft family unit make for a small, slow tenant pool; yield on $3M will be poor.",
+        "appreciation_assessment": "Project-level 5.7%/yr is fine, but the oversized $3M leasehold unit with no transport catalyst will underperform and is hard to exit.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-foresque-residences-25609959",
+        "review_file": "cov_batch_03.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2,573 sqft 4BR penthouse at $3.0M in Bukit Panjang (D23/OCR); the headline 'cheap' PSF is the penthouse format discount, not a bargain, and a $3M penthouse in OCR is a thin, illiquid exit.",
+      "rating_rationale": "The -24% age_adj_premium and 'very_low_psf'/'bedroom_sqft_mismatch' flags are fully explained by unit format: this is a 4BR penthouse (project penthouses run 2,486-2,573 sqft), and large units structurally trade at a lower PSF than the project's $1,582-$1,678 psf for normal units. The psf_premium_vs_cohort of -27.5% rests on just 3 cohort txns, so the comparison is a data quirk, not verified cheapness. The real problem is the $3.0M absolute quantum for an OCR penthouse far from the MRT (Petir Road; Bukit Panjang LRT/DTL is a walk away) by a small developer (Wincheer) - penthouse buyers in Bukit Panjang are scarce, making 5-7yr exit liquidity poor. OCR's favorable forward region (~+4.0%) does not rescue a quantum/liquidity mismatch this large. Past 5.71% CAGR is story only.",
+      "red_flags": [
+        "Penthouse format: low PSF is a structural discount, not a bargain (psf_cohort only 3 txns)",
+        "$3.0M quantum for an OCR Bukit Panjang penthouse = very thin buyer pool / weak exit liquidity",
+        "Petir Road is not MRT-adjacent (Bukit Panjang LRT/DTL is a walk)",
+        "'very_low_psf' + 'bedroom_sqft_mismatch' flags reflect penthouse layout, masking true value comparison"
+      ],
+      "catalysts": [
+        "OCR is the strongest forward-return region in the v3.4 backtest (~+4.0%)",
+        "Large penthouse layout could appeal to a niche own-stay family buyer"
+      ],
+      "as_of": {
+        "price": 3000000,
+        "psf": 1165.95,
+        "beds": 4,
+        "sqft": 2573
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "A 2,573 sqft 4BR penthouse at $3.0M in Bukit Panjang (D23/OCR); the headline 'cheap' PSF is the penthouse format discount, not a bargain, and a $3M penthouse in OCR is a thin, illiquid exit.",
+        "rating_rationale": "The -24% age_adj_premium and 'very_low_psf'/'bedroom_sqft_mismatch' flags are fully explained by unit format: this is a 4BR penthouse (project penthouses run 2,486-2,573 sqft), and large units structurally trade at a lower PSF than the project's $1,582-$1,678 psf for normal units. The psf_premium_vs_cohort of -27.5% rests on just 3 cohort txns, so the comparison is a data quirk, not verified cheapness. The real problem is the $3.0M absolute quantum for an OCR penthouse far from the MRT (Petir Road; Bukit Panjang LRT/DTL is a walk away) by a small developer (Wincheer) - penthouse buyers in Bukit Panjang are scarce, making 5-7yr exit liquidity poor. OCR's favorable forward region (~+4.0%) does not rescue a quantum/liquidity mismatch this large. Past 5.71% CAGR is story only.",
+        "red_flags": [
+          "Penthouse format: low PSF is a structural discount, not a bargain (psf_cohort only 3 txns)",
+          "$3.0M quantum for an OCR Bukit Panjang penthouse = very thin buyer pool / weak exit liquidity",
+          "Petir Road is not MRT-adjacent (Bukit Panjang LRT/DTL is a walk)",
+          "'very_low_psf' + 'bedroom_sqft_mismatch' flags reflect penthouse layout, masking true value comparison"
+        ],
+        "catalysts": [
+          "OCR is the strongest forward-return region in the v3.4 backtest (~+4.0%)",
+          "Large penthouse layout could appeal to a niche own-stay family buyer"
+        ],
+        "rental_assessment": "Penthouse rents are inefficient per-sqft; a $3M outlay against modest Bukit Panjang rents (~$3,000-$6,500 project-wide) yields a poor gross figure, and large units rent slowly.",
+        "appreciation_assessment": "5.71% trailing CAGR on 110 txns is data-robust but ~0 forward signal; the -24% age-adj 'cheapness' is an artifact of penthouse PSF compression on a 3-txn cohort, not a verified discount, so no forward value edge."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-foresque-residences-25609959",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

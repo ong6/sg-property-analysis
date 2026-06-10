@@ -1,0 +1,61 @@
+{
+  "condo": "Treasures @ G19",
+  "slug": "treasures-g19",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "452 sqft FH shoebox in Geylang asking $1,549 psf — but verified recent transactions are $1,453-1,516 psf (avg $1,485), so this is priced ABOVE the market, not the cheap-for-district bargain the score implies. The algo's own psf_premium of +6.4% above cohort confirms it is dear.",
+      "rating_rationale": "Web-verified Treasures @ G19 resales over the last 12 months ran $1,453-1,516 psf (average ~$1,485); the $1,548.67 psf asking sits at/above the top of that range, directly contradicting any 'cheap' read. The dossier itself flags psf_premium_vs_cohort +6.4% (5 txns) — i.e. it is more expensive than its own cohort, and the age_adj_premium -17.7% is an artifact of pooling against pricier/larger units. Geylang location carries documented negatives in reviews (late-night noise, repair-shop din, pests, red-light adjacency) that weigh on resale liquidity, and a 452 sqft shoebox is a narrow, foreigner-tenant-dependent exit. Per v3.4 priors value must lead and here value is negative once verified — Avoid.",
+      "red_flags": [
+        "asking $1,549 psf is above verified recent transactions ($1,453-1,516 psf) — overpriced, not cheap",
+        "psf_premium_vs_cohort +6.4% confirms it trades above its own band",
+        "Geylang micro-location: reviewer reports of late-night noise, pests, red-light proximity",
+        "452 sqft shoebox — narrow buyer pool, exit depends on transient foreign tenants"
+      ],
+      "catalysts": [
+        "~4.5% gross rental yield from foreign-worker/transient tenant demand (income, not capital, story)",
+        "Aljunied/Kallang/Mountbatten MRT access for rentability"
+      ],
+      "as_of": {
+        "price": 700000,
+        "psf": 1548.67,
+        "beds": 1,
+        "sqft": 452
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Avoid",
+        "confidence": "medium",
+        "summary": "452 sqft FH shoebox in Geylang asking $1,549 psf — but verified recent transactions are $1,453-1,516 psf (avg $1,485), so this is priced ABOVE the market, not the cheap-for-district bargain the score implies. The algo's own psf_premium of +6.4% above cohort confirms it is dear.",
+        "rating_rationale": "Web-verified Treasures @ G19 resales over the last 12 months ran $1,453-1,516 psf (average ~$1,485); the $1,548.67 psf asking sits at/above the top of that range, directly contradicting any 'cheap' read. The dossier itself flags psf_premium_vs_cohort +6.4% (5 txns) — i.e. it is more expensive than its own cohort, and the age_adj_premium -17.7% is an artifact of pooling against pricier/larger units. Geylang location carries documented negatives in reviews (late-night noise, repair-shop din, pests, red-light adjacency) that weigh on resale liquidity, and a 452 sqft shoebox is a narrow, foreigner-tenant-dependent exit. Per v3.4 priors value must lead and here value is negative once verified — Avoid.",
+        "red_flags": [
+          "asking $1,549 psf is above verified recent transactions ($1,453-1,516 psf) — overpriced, not cheap",
+          "psf_premium_vs_cohort +6.4% confirms it trades above its own band",
+          "Geylang micro-location: reviewer reports of late-night noise, pests, red-light proximity",
+          "452 sqft shoebox — narrow buyer pool, exit depends on transient foreign tenants"
+        ],
+        "catalysts": [
+          "~4.5% gross rental yield from foreign-worker/transient tenant demand (income, not capital, story)",
+          "Aljunied/Kallang/Mountbatten MRT access for rentability"
+        ],
+        "rental_assessment": "Quoted ~4.5% gross yield (rents $2,900-3,300 on a $700k entry) is the genuine attraction — Geylang shoeboxes rent well to transient/foreign tenants. But yield-only with capital downside and weak exit liquidity is not an investment Buy.",
+        "appreciation_assessment": "ura_5yr_cagr -1.76% (5 txns) is already negative, and the unit is priced above current transactions — no forward value edge, consistent with the backtest that capital story here is weak."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-treasures-g19-500147070",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

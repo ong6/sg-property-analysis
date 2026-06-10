@@ -1,0 +1,63 @@
+{
+  "condo": "The Belvedere",
+  "slug": "the-belvedere",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 1,012 sqft 2BR in D15 at $2.69M / $2,656 PSF, 200m from Katong Park MRT (TEL). The transit and tenure are genuine assets and resale appreciation prints 7.5%/yr, but the $2.69M quantum sits well above the deep 2BR liquidity band and PSF is ~1.7% over the URA median.",
+      "rating_rationale": "$2.69M is steep for a 2BR — above the $1.8M-2.5M sweet spot, so the buyer pool thins to investors/right-sizers. $2,656 PSF is slightly over the $2,612 median (no entry discount). The 7.54% CAGR rests on 25 txns (moderately reliable) and the 200m TEL station is a real catalyst, but the price/quantum offsets these. Low technical score (491).",
+      "red_flags": [
+        "$2.69M quantum is above the deep 2BR liquidity band — narrower exit pool",
+        "PSF $2,656 sits ~1.7% above the $2,612 URA median, no entry margin",
+        "18-year-old development — older facilities, refurb/maintenance drag"
+      ],
+      "catalysts": [
+        "200m to TE24 Katong Park MRT (Thomson-East Coast Line) — strong transit",
+        "Freehold tenure in established D15 East Coast lifestyle district",
+        "Resale-only URA appreciation of 7.5%/yr on 25 txns"
+      ],
+      "as_of": {
+        "price": 2688000,
+        "psf": 2656.13,
+        "beds": 2,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 1,012 sqft 2BR in D15 at $2.69M / $2,656 PSF, 200m from Katong Park MRT (TEL). The transit and tenure are genuine assets and resale appreciation prints 7.5%/yr, but the $2.69M quantum sits well above the deep 2BR liquidity band and PSF is ~1.7% over the URA median.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.69M is steep for a 2BR — above the $1.8M-2.5M sweet spot, so the buyer pool thins to investors/right-sizers. $2,656 PSF is slightly over the $2,612 median (no entry discount). The 7.54% CAGR rests on 25 txns (moderately reliable) and the 200m TEL station is a real catalyst, but the price/quantum offsets these. Low technical score (491).",
+        "red_flags": [
+          "$2.69M quantum is above the deep 2BR liquidity band — narrower exit pool",
+          "PSF $2,656 sits ~1.7% above the $2,612 URA median, no entry margin",
+          "18-year-old development — older facilities, refurb/maintenance drag"
+        ],
+        "catalysts": [
+          "200m to TE24 Katong Park MRT (Thomson-East Coast Line) — strong transit",
+          "Freehold tenure in established D15 East Coast lifestyle district",
+          "Resale-only URA appreciation of 7.5%/yr on 25 txns"
+        ],
+        "rental_assessment": "D15 East Coast is a deep rental market; a 1,012 sqft 2BR near a TEL station should let well, but at $2.69M cost the gross yield is thin (~2.7%) — appreciation, not yield, has to carry this.",
+        "appreciation_assessment": "7.54% resale-only CAGR on 25 txns is encouraging and TEL completion supports it, but paying at/above median PSF limits the entry margin that usually drives forward returns.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 6.0,
+        "appreciation_rate_source": "URA resale-only 7.5% discounted for 25-txn sample and above-median entry"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-belvedere-500021973",
+        "review_file": "cov_batch_15.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "condo": "Metro Loft",
+  "slug": "metro-loft",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1BR at $780k and $1,343 PSF, 330m from Aljunied MRT — a cheap, well-located city-fringe entry but on a thin 8-transaction series with mediocre 1.9%/yr growth. Boutique freehold shoebox: low entry, niche exit.",
+      "rating_rationale": "Strong points: freehold, 330m to Aljunied (very walkable), low $780k absolute, PSF 1343 well below the 1582 median. Against it: only 8 URA txns so the 1.9%/yr rate is unreliable, it is a 1BR shoebox in a small boutique block (Metro Loft is tiny), and 1BR units have the narrowest resale demand. Good for a rental-yield play, not a conviction appreciation buy.",
+      "red_flags": [
+        "Only 8 URA transactions — rate unreliable",
+        "1BR shoebox in a small boutique development — niche, illiquid resale",
+        "1.9%/yr demonstrated growth is below baseline"
+      ],
+      "catalysts": [
+        "Freehold + 330m to Aljunied MRT supports steady rental demand",
+        "Paya Lebar Central / airbase relocation transformation in D14",
+        "Low absolute entry keeps it accessible to investors"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1342.51,
+        "beds": 1,
+        "sqft": 581.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR at $780k and $1,343 PSF, 330m from Aljunied MRT — a cheap, well-located city-fringe entry but on a thin 8-transaction series with mediocre 1.9%/yr growth. Boutique freehold shoebox: low entry, niche exit.",
+        "rating": "Neutral",
+        "rating_rationale": "Strong points: freehold, 330m to Aljunied (very walkable), low $780k absolute, PSF 1343 well below the 1582 median. Against it: only 8 URA txns so the 1.9%/yr rate is unreliable, it is a 1BR shoebox in a small boutique block (Metro Loft is tiny), and 1BR units have the narrowest resale demand. Good for a rental-yield play, not a conviction appreciation buy.",
+        "red_flags": [
+          "Only 8 URA transactions — rate unreliable",
+          "1BR shoebox in a small boutique development — niche, illiquid resale",
+          "1.9%/yr demonstrated growth is below baseline"
+        ],
+        "catalysts": [
+          "Freehold + 330m to Aljunied MRT supports steady rental demand",
+          "Paya Lebar Central / airbase relocation transformation in D14",
+          "Low absolute entry keeps it accessible to investors"
+        ],
+        "rental_assessment": "Best-in-class rental case for the batch's 1BRs — freehold, 330m to MRT, city-fringe — should achieve a solid gross yield on a $780k basis; tenant pool of singles/couples is steady near Aljunied.",
+        "appreciation_assessment": "1.9%/yr on 8 transactions is unreliable and below the RCR baseline; the value is the cheap freehold entry and rental, not demonstrated capital growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-metro-loft-18710018",
+        "review_file": "cov_batch_04.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "The cleanest of this batch: no red flags, a real same-size cohort (psf_cohort_txns=8), and a genuine, web-verified discount. Asking $1,342 psf sits ~16% below the project's real recent-12mo $1,604 psf average. Value is the strongest forward signal in v3.4 and here it is credible rather than artifactual - tempered by Geylang stigma and thin building liquidity.",
+      "rating_rationale": "Listing $780,000 / 581 sqft = $1,342 psf. Web confirms Metro Loft (FH, 2016, 31 units, Lorong 27 Geylang) recent-12mo transactions of $1,593-$1,615 psf (avg ~$1,604), with current listings $1,655-$1,769 psf and ~4.7% yield. So $1,342 psf is a real ~16% discount to actual transacted PSF - not a data quirk: psf_cohort_txns=8 and age_adj_premium_pct -28.6% both rest on genuine comparables, and there are zero red flags. The sqft (581) and PSF are internally consistent and match a real 1BR. The offset: D14 Geylang FH structurally lags (avg ~$1,516 psf vs East ~$1,706, islandwide ~$1,953) with stigma-driven slow growth, and a 31-unit project transacts thinly, so exit valuation leans on few comps.",
+      "red_flags": [
+        "Geylang stigma caps appreciation: D14 FH ~$1,516 psf lags East ~$1,706 / islandwide ~$1,953 with slow growth",
+        "Thin liquidity: 31-unit project, few annual transactions - valuation/exit depends on sparse comps",
+        "Small 1BR (581 sqft) appeals mainly to tenants/singles, narrower resale buyer pool"
+      ],
+      "catalysts": [
+        "Verified ~16% PSF discount to real recent transactions - genuine entry value",
+        "Aljunied (EW9) and Dakota (CC8) MRT within reach; strong F&B/rental catchment",
+        "Healthy rental yield (~4.7% project-level) supports holding income over a 5-7yr hold",
+        "Freehold + small absolute quantum ($780k) widens the buyer pool on exit"
+      ],
+      "as_of": {
+        "price": 780000,
+        "psf": 1342.51,
+        "beds": 1,
+        "sqft": 581
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "The cleanest of this batch: no red flags, a real same-size cohort (psf_cohort_txns=8), and a genuine, web-verified discount. Asking $1,342 psf sits ~16% below the project's real recent-12mo $1,604 psf average. Value is the strongest forward signal in v3.4 and here it is credible rather than artifactual - tempered by Geylang stigma and thin building liquidity.",
+        "rating_rationale": "Listing $780,000 / 581 sqft = $1,342 psf. Web confirms Metro Loft (FH, 2016, 31 units, Lorong 27 Geylang) recent-12mo transactions of $1,593-$1,615 psf (avg ~$1,604), with current listings $1,655-$1,769 psf and ~4.7% yield. So $1,342 psf is a real ~16% discount to actual transacted PSF - not a data quirk: psf_cohort_txns=8 and age_adj_premium_pct -28.6% both rest on genuine comparables, and there are zero red flags. The sqft (581) and PSF are internally consistent and match a real 1BR. The offset: D14 Geylang FH structurally lags (avg ~$1,516 psf vs East ~$1,706, islandwide ~$1,953) with stigma-driven slow growth, and a 31-unit project transacts thinly, so exit valuation leans on few comps.",
+        "red_flags": [
+          "Geylang stigma caps appreciation: D14 FH ~$1,516 psf lags East ~$1,706 / islandwide ~$1,953 with slow growth",
+          "Thin liquidity: 31-unit project, few annual transactions - valuation/exit depends on sparse comps",
+          "Small 1BR (581 sqft) appeals mainly to tenants/singles, narrower resale buyer pool"
+        ],
+        "catalysts": [
+          "Verified ~16% PSF discount to real recent transactions - genuine entry value",
+          "Aljunied (EW9) and Dakota (CC8) MRT within reach; strong F&B/rental catchment",
+          "Healthy rental yield (~4.7% project-level) supports holding income over a 5-7yr hold",
+          "Freehold + small absolute quantum ($780k) widens the buyer pool on exit"
+        ],
+        "appreciation_assessment": "appreciation_pct 3.7% is the regional_baseline fallback, not project-realized; per v3.4 trailing appreciation has ~0 forward power, so I lean on the verified value gap, not this number. Geylang's documented slow growth means modest, not aggressive, capital upside.",
+        "rental_assessment": "~4.7% project yield is solid for a freehold 1BR; the Aljunied/Dakota MRT and Geylang F&B catchment give a deep tenant pool, making income the most dependable part of the return."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-metro-loft-18710018",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

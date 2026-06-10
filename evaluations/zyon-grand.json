@@ -1,0 +1,63 @@
+{
+  "condo": "Zyon Grand",
+  "slug": "zyon-grand",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 474 sqft 1BR at $1.436M ($3,030 PSF) in Zyon Grand, CDL/Mitsui's 706-unit integrated development directly connected to Havelock MRT (TEL), TOP ~2030. Strong sponsor, MRT-integrated, 84% sold on launch weekend, and the $3,030 PSF sits ~7% below the $3,249 project median — but it is a sub-500 sqft shoebox at a very high absolute PSF in a crowded River Valley new-launch market.",
+      "rating_rationale": "Genuinely high-quality asset: CDL + Mitsui Fudosan sponsorship, direct basement link to Havelock MRT (TEL), retail + SA2 integration, and a strong 84% launch take-up, with this listing's $3,030 PSF ~7% under the $3,249 URA project median. The reservations for investment: $3,030 PSF is a steep absolute basis, this is a 474 sqft shoebox (narrowest resale niche), launch 1BR pricing was ~$2,738 PSF so $3,030 is a resale/sub-sale markup that compresses your entry margin, and capital is locked until ~2030 in a heavily-supplied River Valley new-launch pipeline. The integrated-MRT quality argues against Avoid, but the rich entry and shoebox format argue against Buy.",
+      "red_flags": [
+        "$3,030 PSF is well above launch 1BR pricing (~$2,738) — buying at a sub-sale markup",
+        "474 sqft shoebox — narrowest resale and tenant niche",
+        "TOP only ~2030 — long capital lock-up; heavy River Valley new-launch supply competing"
+      ],
+      "catalysts": [
+        "Direct basement connection to Havelock MRT (TEL) — rare integrated-transit asset",
+        "CDL/Mitsui Fudosan sponsorship; 84% sold launch weekend signals demand",
+        "$3,030 PSF ~7% below the $3,249 project URA median",
+        "RCR D03 city-fringe with retail integration"
+      ],
+      "as_of": {
+        "price": 1436000,
+        "psf": 3029.54,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 474 sqft 1BR at $1.436M ($3,030 PSF) in Zyon Grand, CDL/Mitsui's 706-unit integrated development directly connected to Havelock MRT (TEL), TOP ~2030. Strong sponsor, MRT-integrated, 84% sold on launch weekend, and the $3,030 PSF sits ~7% below the $3,249 project median — but it is a sub-500 sqft shoebox at a very high absolute PSF in a crowded River Valley new-launch market.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely high-quality asset: CDL + Mitsui Fudosan sponsorship, direct basement link to Havelock MRT (TEL), retail + SA2 integration, and a strong 84% launch take-up, with this listing's $3,030 PSF ~7% under the $3,249 URA project median. The reservations for investment: $3,030 PSF is a steep absolute basis, this is a 474 sqft shoebox (narrowest resale niche), launch 1BR pricing was ~$2,738 PSF so $3,030 is a resale/sub-sale markup that compresses your entry margin, and capital is locked until ~2030 in a heavily-supplied River Valley new-launch pipeline. The integrated-MRT quality argues against Avoid, but the rich entry and shoebox format argue against Buy.",
+        "red_flags": [
+          "$3,030 PSF is well above launch 1BR pricing (~$2,738) — buying at a sub-sale markup",
+          "474 sqft shoebox — narrowest resale and tenant niche",
+          "TOP only ~2030 — long capital lock-up; heavy River Valley new-launch supply competing"
+        ],
+        "catalysts": [
+          "Direct basement connection to Havelock MRT (TEL) — rare integrated-transit asset",
+          "CDL/Mitsui Fudosan sponsorship; 84% sold launch weekend signals demand",
+          "$3,030 PSF ~7% below the $3,249 project URA median",
+          "RCR D03 city-fringe with retail integration"
+        ],
+        "rental_assessment": "Good once TOP'd — MRT-integrated RCR shoebox rents to professionals; but at $3,030 PSF the yield is thin (~2.5-3%) given the high entry.",
+        "appreciation_assessment": "Quality integrated asset, but bought above launch pricing with new-launch bias means limited near-term upside; expect to ride market growth rather than capture a discount.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-zyon-grand-60190200",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

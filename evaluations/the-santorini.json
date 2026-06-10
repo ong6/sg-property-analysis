@@ -56,6 +56,60 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-santorini-500056139",
         "review_file": "batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Fairly-priced 527sqft 1BR in an OCR D18 development - asking PSF sits right at the project's verified recent transaction range, so it is market-priced rather than a bargain.",
+      "rating_rationale": "Asking $1,438 psf matches the project's reality: verified 527sqft 1BR transactions over the past 12 months ran $1,356-$1,593 psf (avg ~$1,490), with the latest (17 Dec 2025) at $1,570 psf and two Dec-2025 sales at $758,888 and $828,000. The -0.8% psf-vs-cohort (13 txns, a decent cohort) accurately tags this as at-market, not cheap, so there is no entry discount to underwrite. Positives: D18 is OCR (better forward baseline ~+4% per v3.4), 2018 completion leaves ~91 yrs lease, and 5.13% 5yr CAGR (201 txns) is a respectable but forward-discounted story. Negative: MCC Land build draws recurring quality caveats in forums. Net: a solid, liquid OCR rental unit but priced in line with peers - no margin of safety, hence Neutral.",
+      "red_flags": [
+        "No entry discount - asking PSF is essentially at the project's recent transaction average",
+        "MCC Land build quality draws recurring caveats in owner/forum reviews",
+        "Tampines Street 86 location is a moderate walk to MRT"
+      ],
+      "catalysts": [
+        "OCR/Tampines rental demand and regional-centre employment support tenancy",
+        "Deep, liquid 1BR cohort (13 same-size txns) makes exit straightforward",
+        "Tampines North MRT (DTL) accessibility in the broader area"
+      ],
+      "as_of": {
+        "price": 758000,
+        "psf": 1438.33,
+        "beds": 1,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Fairly-priced 527sqft 1BR in an OCR D18 development - asking PSF sits right at the project's verified recent transaction range, so it is market-priced rather than a bargain.",
+        "rating_rationale": "Asking $1,438 psf matches the project's reality: verified 527sqft 1BR transactions over the past 12 months ran $1,356-$1,593 psf (avg ~$1,490), with the latest (17 Dec 2025) at $1,570 psf and two Dec-2025 sales at $758,888 and $828,000. The -0.8% psf-vs-cohort (13 txns, a decent cohort) accurately tags this as at-market, not cheap, so there is no entry discount to underwrite. Positives: D18 is OCR (better forward baseline ~+4% per v3.4), 2018 completion leaves ~91 yrs lease, and 5.13% 5yr CAGR (201 txns) is a respectable but forward-discounted story. Negative: MCC Land build draws recurring quality caveats in forums. Net: a solid, liquid OCR rental unit but priced in line with peers - no margin of safety, hence Neutral.",
+        "red_flags": [
+          "No entry discount - asking PSF is essentially at the project's recent transaction average",
+          "MCC Land build quality draws recurring caveats in owner/forum reviews",
+          "Tampines Street 86 location is a moderate walk to MRT"
+        ],
+        "catalysts": [
+          "OCR/Tampines rental demand and regional-centre employment support tenancy",
+          "Deep, liquid 1BR cohort (13 same-size txns) makes exit straightforward",
+          "Tampines North MRT (DTL) accessibility in the broader area"
+        ],
+        "appreciation_assessment": "5.13% trailing 5yr CAGR over 201 txns is credible history but discounted to ~0 forward; forward case is OCR baseline only.",
+        "rental_assessment": "Compact 527sqft OCR 1BR with strong facilities and deep tenant pool should let easily; gross yield is typical for the segment, with no entry discount to boost it."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-santorini-60192457",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

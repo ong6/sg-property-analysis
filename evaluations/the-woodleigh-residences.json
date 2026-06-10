@@ -1,0 +1,65 @@
+{
+  "condo": "The Woodleigh Residences",
+  "slug": "the-woodleigh-residences",
+  "district": "D13",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Young (2023) integrated 2BR directly above Woodleigh MRT and The Woodleigh Mall, priced at $2,111 psf — ~12% below the $2,397 median — on a deep 353-txn base. Genuine transit/retail integration, a low $1.25M quantum and a healthy 3.6%/yr resale rate make this the standout entry in the batch.",
+      "rating_rationale": "353 transactions give high confidence, the 3.6%/yr resale-only rate is solid for a young 99LH, and at $2,111 psf the unit is ~12% under the $2,397 URA median. Direct NE-line connectivity (290m), Bidadari estate maturation and the on-site Japan-developer (Kajima/SPH) mall underpin both rental demand and resale liquidity; the $1.25M quantum sits in a very lettable, liquid band. Score_1000 658 reaches the recommended tier.",
+      "red_flags": [
+        "99LH with a soft 2.2%/yr blended URA rate (resale-only is better at 3.6%)",
+        "2BR/592 sqft is compact — investor/couple segment",
+        "New-launch bias flagged — entry pricing partly developer-set"
+      ],
+      "catalysts": [
+        "290m direct integration with Woodleigh MRT (NE Line) and The Woodleigh Mall",
+        "Bidadari estate maturation and amenity buildout",
+        "~12% below URA median on a deep 353-txn base",
+        "Low $1.25M quantum keeps it liquid and lettable"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 2111.49,
+        "beds": 2,
+        "sqft": 592.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Young (2023) integrated 2BR directly above Woodleigh MRT and The Woodleigh Mall, priced at $2,111 psf — ~12% below the $2,397 median — on a deep 353-txn base. Genuine transit/retail integration, a low $1.25M quantum and a healthy 3.6%/yr resale rate make this the standout entry in the batch.",
+        "rating": "Buy",
+        "rating_rationale": "353 transactions give high confidence, the 3.6%/yr resale-only rate is solid for a young 99LH, and at $2,111 psf the unit is ~12% under the $2,397 URA median. Direct NE-line connectivity (290m), Bidadari estate maturation and the on-site Japan-developer (Kajima/SPH) mall underpin both rental demand and resale liquidity; the $1.25M quantum sits in a very lettable, liquid band. Score_1000 658 reaches the recommended tier.",
+        "red_flags": [
+          "99LH with a soft 2.2%/yr blended URA rate (resale-only is better at 3.6%)",
+          "2BR/592 sqft is compact — investor/couple segment",
+          "New-launch bias flagged — entry pricing partly developer-set"
+        ],
+        "catalysts": [
+          "290m direct integration with Woodleigh MRT (NE Line) and The Woodleigh Mall",
+          "Bidadari estate maturation and amenity buildout",
+          "~12% below URA median on a deep 353-txn base",
+          "Low $1.25M quantum keeps it liquid and lettable"
+        ],
+        "rental_assessment": "Strong — integrated MRT/mall plus Bidadari/central location drive reliable 2BR tenant demand; yield ~3.5%.",
+        "appreciation_assessment": "Resale-only 3.6%/yr on 353 txns is reliable and the sub-median entry adds headroom toward $2,397; constructive 5-7yr outlook.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.6,
+        "appreciation_rate_source": "URA resale-only 3.6%/yr (353 txns), preferred over blended rate carrying new-launch bias"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-woodleigh-residences-25504431",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

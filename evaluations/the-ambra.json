@@ -1,0 +1,63 @@
+{
+  "condo": "The Ambra",
+  "slug": "the-ambra",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,820 sqft 4BR in a 25-unit freehold boutique block at Telok Kurau, asking $2.88M ($1,582 psf). The large unit dilutes PSF but the tiny development is structurally illiquid and the $2.88M quantum sits in a thin buyer band for a no-facilities boutique.",
+      "rating_rationale": "The Ambra is only 25 units (confirmed) — a boutique with no real facilities and almost no transaction depth (URA txn count = 6, resale CAGR ~5.2% off a tiny sample is unreliable). Listed PSF $1,582 is below district median $1,727, but that discount reflects the oversized layout and boutique illiquidity, not value. At $2.88M the buyer pool is narrow and exit risk is the dominant concern for a 5-7yr investment hold.",
+      "red_flags": [
+        "Boutique 25-unit development — illiquid, no facilities, shallow buyer pool",
+        "URA txn count of 6 makes the ~5.2% resale rate statistically unreliable",
+        "$2.88M quantum is niche for a low-amenity boutique",
+        "8 min walk to MRT, not a transit-adjacent advantage"
+      ],
+      "catalysts": [
+        "Freehold tenure with East Coast / D15 lifestyle desirability",
+        "Large 1,820 sqft layout appeals to a thin own-stay family segment"
+      ],
+      "as_of": {
+        "price": 2880000,
+        "psf": 1582.42,
+        "beds": 4,
+        "sqft": 1820.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,820 sqft 4BR in a 25-unit freehold boutique block at Telok Kurau, asking $2.88M ($1,582 psf). The large unit dilutes PSF but the tiny development is structurally illiquid and the $2.88M quantum sits in a thin buyer band for a no-facilities boutique.",
+        "rating": "Avoid",
+        "rating_rationale": "The Ambra is only 25 units (confirmed) — a boutique with no real facilities and almost no transaction depth (URA txn count = 6, resale CAGR ~5.2% off a tiny sample is unreliable). Listed PSF $1,582 is below district median $1,727, but that discount reflects the oversized layout and boutique illiquidity, not value. At $2.88M the buyer pool is narrow and exit risk is the dominant concern for a 5-7yr investment hold.",
+        "red_flags": [
+          "Boutique 25-unit development — illiquid, no facilities, shallow buyer pool",
+          "URA txn count of 6 makes the ~5.2% resale rate statistically unreliable",
+          "$2.88M quantum is niche for a low-amenity boutique",
+          "8 min walk to MRT, not a transit-adjacent advantage"
+        ],
+        "catalysts": [
+          "Freehold tenure with East Coast / D15 lifestyle desirability",
+          "Large 1,820 sqft layout appeals to a thin own-stay family segment"
+        ],
+        "rental_assessment": "D15 has decent tenant demand but a 1,820 sqft 4BR in a no-facilities boutique yields poorly; gross yield likely sub-3% at this quantum.",
+        "appreciation_assessment": "Freehold D15 supports gentle appreciation, but the 6-txn sample makes the headline ~5.2% rate noise. Treat as broadly market-tracking with weak liquidity-driven downside on exit.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "Discounted from unreliable 6-txn series toward D15 freehold boutique norm"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-ambra-500117455",
+        "review_file": "cov_batch_33.json"
+      }
+    }
+  ]
+}

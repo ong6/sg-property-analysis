@@ -47,18 +47,17 @@ import json
 import os
 import re
 import sys
-import time
 from datetime import datetime
 from pathlib import Path
 from glob import glob as file_glob
 from typing import Optional
 
 # Project imports
-from scoring.full_scorer import score_listings, score_and_filter
+from scoring.full_scorer import score_and_filter
 from scoring.models import ScoredListing
 from scoring.district_scorer import DistrictScorer
 from scoring.raw_output import save_raw_analysis, load_reviewed_analysis
-from utils.markdown import save_report, generate_csv_export, generate_report
+from utils.markdown import save_report, generate_csv_export
 from utils.geo import normalize_district
 from config import SCORE_TIER1_MIN, SCORE_TIER2_MIN
 try:
@@ -574,13 +573,19 @@ def score_condo(inputs: dict, ura_data: dict | None = None) -> dict:
         ura_data[project_name.lower()] = {
             "project_name": project_name,
             "annualized_appreciation": float(apr_override),
-            "transaction_count": 999,
-            "source": "agent_provided",
+            # v3.4: source 'agent_override' makes the appreciation component trust the
+            # ASSERTED rate (confidence 1.0) deliberately — that is the tool's purpose.
+            # We no longer inject a fake transaction_count (was 999), which silently
+            # also saturated the LIQUIDITY (txn_volume) and PSF-premium confidence as
+            # if 999 real sales backed the unit. Liquidity now reflects the real (none)
+            # transaction data for a manual score, instead of a spurious +10.
+            "source": "agent_override",
         }
         notes.append(
-            f"Appreciation: using AI-provided {float(apr_override):.1f}%/yr — the score "
-            "reflects this input at face value; it validates internal consistency, NOT the "
-            "rate itself. Verify the rate against URA/resale transaction data."
+            f"Appreciation: using AI-provided {float(apr_override):.1f}%/yr at face value "
+            "(confidence 1.0) — it validates internal consistency, NOT the rate itself. "
+            "Liquidity reflects the actual transaction data (none, for a manual score). "
+            "Verify the rate against URA/resale transaction data."
         )
 
     # Inject an AI-provided rent as same-condo rental data so the yield score
@@ -738,7 +743,6 @@ def group_condo_by_unit_type(scored: list[ScoredListing]) -> list[ScoredListing]
     same condo, scores are similar — price is the differentiator).
     """
     from collections import defaultdict
-    import statistics
 
     groups: dict[tuple[str, int], list[ScoredListing]] = defaultdict(list)
 
@@ -847,7 +851,6 @@ def print_results(scored: list[ScoredListing], top_n: int = 10, verbose: bool = 
     for i, s in enumerate(scored[:show_n], 1):
         apr_pct = s.appreciation_rate * 100
         ura_tag = "[URA]" if s.has_ura_data else "     "
-        roi_str = f"{s.roi_5yr.annualized_roi:.1f}%" if s.roi_5yr else "-"
 
         # Truncate title
         title = s.title[:28] + ".." if len(s.title) > 30 else s.title
@@ -1085,6 +1088,14 @@ Examples:
     parser.add_argument("--no-save-eval", action="store_true",
                        help="Do not auto-save evaluations during --from-review")
 
+    # Condo profiles (git-tracked physical facts: stacks / facings / layouts)
+    parser.add_argument("--profile", type=str, metavar="NAME",
+                       help="Show the researched stack/layout profile for a condo (fuzzy)")
+    parser.add_argument("--list-profiles", action="store_true",
+                       help="List all researched condo profiles")
+    parser.add_argument("--save-profile", type=str, metavar="PROFILE_JSON",
+                       help="Save a condo profile from a JSON file into profiles/")
+
     # Listings sheet/database (continuously-updated, AI-searchable PropertyGuru inventory)
     parser.add_argument("--search-db", type=str, metavar="QUERY",
                        help="Search the master listings sheet by condo name")
@@ -1214,7 +1225,7 @@ Examples:
     if args.fight:
         warn_if_stale_data()
         from scoring.full_scorer import FullScorer, build_cohort_stats
-        from scoring.arena import run_arena, format_arena_report
+        from scoring.arena import run_arena
 
         with open(os.path.join("data", "listings_db.json")) as f:
             db = json.load(f)
@@ -1349,6 +1360,23 @@ Examples:
               f"before trusting this ranking.", file=sys.stderr)
         return
 
+    # --- Condo profile handlers (git-tracked physical facts) ---
+    if args.profile:
+        import profile_memory
+        profile_memory.print_profile(args.profile)
+        return
+
+    if args.list_profiles:
+        import profile_memory
+        profile_memory.print_index()
+        return
+
+    if args.save_profile:
+        import profile_memory
+        slug = profile_memory.save_profile_from_file(args.save_profile)
+        print(f"Saved condo profile: profiles/{slug}.json")
+        return
+
     # --- Evaluation memory handlers (git-tracked past evaluations) ---
     if args.recall:
         import eval_memory
@@ -1470,7 +1498,18 @@ Examples:
             if rate_pct is None:
                 rate_pct = cap_info_old.get("rate_pct")
             if rate_pct is None:
-                rate_pct = 2
+                # v3.4: regional fallback (was a hardcoded 2%, inconsistent with the
+                # scorer's regional baselines and below every realized regional return).
+                from config import REGIONAL_APPRECIATION_BASELINES, DEFAULT_REGIONAL_APPRECIATION
+                _d = (entry.get("district") or "").upper().replace("D", "").strip()
+                try:
+                    _n = int(_d)
+                    _region = ("CCR" if _n in {1, 2, 6, 7, 9, 10, 11}
+                               else "RCR" if _n in {3, 4, 5, 8, 12, 13, 14, 15} else "OCR")
+                except ValueError:
+                    _region = None
+                rate_pct = 100 * REGIONAL_APPRECIATION_BASELINES.get(
+                    _region, DEFAULT_REGIONAL_APPRECIATION)
             listing.appreciation_rate = rate_pct / 100
             listing.appreciation_source = cap_fd.get("data_source") or cap_info_old.get("source") or "default"
             if entry.get("roi_sensitivity"):
@@ -1528,12 +1567,23 @@ Examples:
                     listing.appreciation_rate = agent_rate_pct / 100
                     listing.appreciation_source = "agent_override"
 
-                    # Recompute MMR with the agent's appreciation rate
+                    # Recompute MMR with the agent's appreciation rate.
+                    # v3.4: carry the v3.2 cohort-depth damping through the override —
+                    # an asserted rate doesn't make a thin size-cohort trade more, so
+                    # a thin-cohort unit must not get the full project-pooled credit.
                     if listing.mmr is not None:
                         from scoring.mmr import apply_appreciation_override
+                        from config import MIN_BAND_TXNS, COHORT_FLOOR_APPRECIATION
+                        _cohort_txns = fd.get("psf_cohort_txns")
+                        if _cohort_txns is None:
+                            _cohort_factor = 1.0
+                        else:
+                            _cohort_factor = max(
+                                COHORT_FLOOR_APPRECIATION, min(1.0, _cohort_txns / MIN_BAND_TXNS))
                         mmr_result = apply_appreciation_override(
                             {"mmr": listing.mmr, "components": listing.mmr_components},
                             agent_rate_pct,
+                            cohort_appr_factor=_cohort_factor,
                         )
                         listing.mmr = mmr_result["mmr"]
                         listing.score_1000 = mmr_result["score_1000"]

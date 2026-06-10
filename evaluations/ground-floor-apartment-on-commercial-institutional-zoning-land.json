@@ -1,0 +1,61 @@
+{
+  "condo": "Ground Floor Apartment on commercial / institutional zoning land",
+  "slug": "ground-floor-apartment-on-commercial-institutional-zoning-land",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1959-built, 1,558 sqft ground-floor unit on commercial/institutional-zoned land at $2.2M — a highly idiosyncratic, non-standard residential asset, not a comparable condo. No URA data, a sub-market score (480) and losing arena record make this uninvestable on a normal 5-7 year residential thesis.",
+      "rating_rationale": "67-year-old ground-floor unit on commercial/institutional zoning is a special-situation asset with no URA comparables (all null), the lowest score_1000 in the batch (480) and a losing record (111-121-83). The '1BR' label on a 1,558 sqft commercial-zoned ground unit signals data confusion; the $2.2M quantum is high and the buyer pool is tiny and specialist. Unsuitable for a standard residential investment hold.",
+      "red_flags": [
+        "Commercial/institutional zoning — not a standard residential investment; financing/usage restrictions likely",
+        "1959 build (67 years old)",
+        "No URA data of any kind; lowest score (480) and losing arena record",
+        "$2.2M quantum into a niche, illiquid special-situation asset"
+      ],
+      "catalysts": [
+        "9999-yr tenure (effectively freehold)",
+        "Potential commercial use / redevelopment angle for a specialist buyer"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1412.07,
+        "beds": 1,
+        "sqft": 1558.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "9999-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1959-built, 1,558 sqft ground-floor unit on commercial/institutional-zoned land at $2.2M — a highly idiosyncratic, non-standard residential asset, not a comparable condo. No URA data, a sub-market score (480) and losing arena record make this uninvestable on a normal 5-7 year residential thesis.",
+        "rating": "Avoid",
+        "rating_rationale": "67-year-old ground-floor unit on commercial/institutional zoning is a special-situation asset with no URA comparables (all null), the lowest score_1000 in the batch (480) and a losing record (111-121-83). The '1BR' label on a 1,558 sqft commercial-zoned ground unit signals data confusion; the $2.2M quantum is high and the buyer pool is tiny and specialist. Unsuitable for a standard residential investment hold.",
+        "red_flags": [
+          "Commercial/institutional zoning — not a standard residential investment; financing/usage restrictions likely",
+          "1959 build (67 years old)",
+          "No URA data of any kind; lowest score (480) and losing arena record",
+          "$2.2M quantum into a niche, illiquid special-situation asset"
+        ],
+        "catalysts": [
+          "9999-yr tenure (effectively freehold)",
+          "Potential commercial use / redevelopment angle for a specialist buyer"
+        ],
+        "rental_assessment": "Ground-floor commercial-zoned space has bespoke rental dynamics, not comparable to residential condo yield; demand is specialist and uncertain.",
+        "appreciation_assessment": "No URA data and a one-off asset type — appreciation is unforecastable and outside the standard residential framework.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-ground-floor-apartment-on-commercial-institutional-zoning-land-24995783",
+        "review_file": "cov_batch_16.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "condo": "Bliss@Kovan",
+  "slug": "bliss-kovan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Freehold 'Bliss@Kovan 2BR' listed at an improbable 1765 sqft for $2.3M / $1303 PSF — almost certainly a mislabelled/oversized strata or ground-floor/PES unit, not a normal 2BR. The seemingly cheap PSF (vs $1648 median) is an artefact of that oversized area, and the 1.30% URA CAGR is alarmingly weak.",
+      "rating_rationale": "Two red flags compound: (1) the 1.30% resale CAGR (29 txns) is far below any baseline — this development has materially underperformed; and (2) 1765 sqft for a '2BR' is a bedroom-sqft mismatch, so the $1303 'cheap' PSF is misleading and the $2.3M quantum buys very poor PSF value for the unit type. Freehold and Kovan MRT (590m) are the only positives. Weak appreciation history plus a misclassified, oversized unit at a $2.3M quantum is a poor investment.",
+      "red_flags": [
+        "1.30% URA resale CAGR — severe underperformance vs every baseline",
+        "1765 sqft '2BR' — bedroom/sqft mismatch; likely PES/strata oversized unit with niche resale demand",
+        "$2.3M quantum for a 2BR-class unit thins the buyer pool sharply"
+      ],
+      "catalysts": [
+        "Freehold tenure, 590m to Kovan MRT (NE13)"
+      ],
+      "as_of": {
+        "price": 2300000,
+        "psf": 1303.12,
+        "beds": 2,
+        "sqft": 1765.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 'Bliss@Kovan 2BR' listed at an improbable 1765 sqft for $2.3M / $1303 PSF — almost certainly a mislabelled/oversized strata or ground-floor/PES unit, not a normal 2BR. The seemingly cheap PSF (vs $1648 median) is an artefact of that oversized area, and the 1.30% URA CAGR is alarmingly weak.",
+        "rating": "Avoid",
+        "rating_rationale": "Two red flags compound: (1) the 1.30% resale CAGR (29 txns) is far below any baseline — this development has materially underperformed; and (2) 1765 sqft for a '2BR' is a bedroom-sqft mismatch, so the $1303 'cheap' PSF is misleading and the $2.3M quantum buys very poor PSF value for the unit type. Freehold and Kovan MRT (590m) are the only positives. Weak appreciation history plus a misclassified, oversized unit at a $2.3M quantum is a poor investment.",
+        "red_flags": [
+          "1.30% URA resale CAGR — severe underperformance vs every baseline",
+          "1765 sqft '2BR' — bedroom/sqft mismatch; likely PES/strata oversized unit with niche resale demand",
+          "$2.3M quantum for a 2BR-class unit thins the buyer pool sharply"
+        ],
+        "catalysts": [
+          "Freehold tenure, 590m to Kovan MRT (NE13)"
+        ],
+        "rental_assessment": "Weak for the quantum. An oversized freehold unit near Kovan rents to families, but a $2.3M outlay for ~2BR rental income gives a poor yield and a narrow tenant pool.",
+        "appreciation_assessment": "1.30% CAGR (29 txns) signals this project has lagged badly; no catalyst to reverse it. Expect continued underperformance — the freehold tenure does not compensate.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-25592005",
+        "review_file": "cov_batch_12.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 614 sqft 1BR in a 2015 boutique (140-unit) D19 project walkable to Kovan/Hougang MRT. Asking $1,531 psf is right at the verified 1BR average (~$1,549 psf, range $1,141-1,906), so the algo's -11% cheap signal is a thin-comp artifact rather than a true discount.",
+      "rating_rationale": "Web checks show Bliss@Kovan 1BR transactions averaged ~$1,549 psf over the last 12 months (range $1,141-1,906), making the $1,531 psf asking at-market, not the -11% bargain the model implies. psf_cohort_txns=0 (no exact-size comp) and only 29 appreciation txns mean both the cheap and the appreciation reads (1.3% CAGR) are low-information. Positives are genuine: freehold tenure, walkable Kovan MRT (NEL) plus Hougang interchange, mature Heartland amenities, and OCR-region forward tailwind. But freehold is not a forward edge per the backtest, the cheapness doesn't hold up against real transactions, and weak 1.3% trailing appreciation gives no momentum story. Fairly priced, decent location, no value edge.",
+      "red_flags": [
+        "Asking $1,531 psf is at-market vs verified ~$1,549 psf 1BR avg — the -11% age-adjusted cheap signal is a thin-comp artifact",
+        "psf_cohort_txns=0 and only 29 appreciation txns — low-information signals on a 140-unit boutique project",
+        "Boutique 140-unit project = thinner resale liquidity",
+        "Weak 1.3% trailing CAGR — no appreciation momentum"
+      ],
+      "catalysts": [
+        "Freehold tenure (livability/long-hold appeal, though not a forward price edge)",
+        "Walkable to Kovan MRT (NEL) and Hougang MRT interchange",
+        "Mature Kovan/Hougang heartland amenities; OCR-region forward tailwind (~+4%)"
+      ],
+      "as_of": {
+        "price": 939999,
+        "psf": 1530.94,
+        "beds": 1,
+        "sqft": 614
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Freehold 614 sqft 1BR in a 2015 boutique (140-unit) D19 project walkable to Kovan/Hougang MRT. Asking $1,531 psf is right at the verified 1BR average (~$1,549 psf, range $1,141-1,906), so the algo's -11% cheap signal is a thin-comp artifact rather than a true discount.",
+        "rating_rationale": "Web checks show Bliss@Kovan 1BR transactions averaged ~$1,549 psf over the last 12 months (range $1,141-1,906), making the $1,531 psf asking at-market, not the -11% bargain the model implies. psf_cohort_txns=0 (no exact-size comp) and only 29 appreciation txns mean both the cheap and the appreciation reads (1.3% CAGR) are low-information. Positives are genuine: freehold tenure, walkable Kovan MRT (NEL) plus Hougang interchange, mature Heartland amenities, and OCR-region forward tailwind. But freehold is not a forward edge per the backtest, the cheapness doesn't hold up against real transactions, and weak 1.3% trailing appreciation gives no momentum story. Fairly priced, decent location, no value edge.",
+        "red_flags": [
+          "Asking $1,531 psf is at-market vs verified ~$1,549 psf 1BR avg — the -11% age-adjusted cheap signal is a thin-comp artifact",
+          "psf_cohort_txns=0 and only 29 appreciation txns — low-information signals on a 140-unit boutique project",
+          "Boutique 140-unit project = thinner resale liquidity",
+          "Weak 1.3% trailing CAGR — no appreciation momentum"
+        ],
+        "catalysts": [
+          "Freehold tenure (livability/long-hold appeal, though not a forward price edge)",
+          "Walkable to Kovan MRT (NEL) and Hougang MRT interchange",
+          "Mature Kovan/Hougang heartland amenities; OCR-region forward tailwind (~+4%)"
+        ],
+        "rental_assessment": "Adequate. A freehold 1BR a short walk from Kovan NEL station draws single/couple tenants, but the high $1,531 psf entry compresses gross yield relative to leasehold OCR alternatives like Seastrand.",
+        "appreciation_assessment": "Muted. 1.3% trailing CAGR (only 29 txns) gives no momentum, and with the asking PSF at-market rather than cheap, there is no value catalyst; freehold tenure does not provide a forward appreciation edge per the backtest."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bliss-kovan-500110428",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "condo": "Beng Tong Mansion",
+  "slug": "beng-tong-mansion",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A large 1,765 sqft freehold 4BR at Beng Tong Mansion (D15) at $2.5M / $1,416 PSF, ~820m from Dakota MRT. A low PSF for freehold D15 but only 1 URA transaction, no built year, and a tiny mansion-block dev — effectively undiscoverable on liquidity.",
+      "rating_rationale": "The $1,416 PSF is genuinely low for freehold D15 East Coast and the $2.5M quantum buys a big 1,765 sqft 4BR — value on paper. But just 1 URA txn and no built year make appreciation and resale completely unverifiable; a small mansion-style block has shallow exit liquidity, and at $2.5M the buyer pool already thins. score_1000 only 503 despite a high arena elo. Cheap-for-D15 but unprovable and illiquid.",
+      "red_flags": [
+        "Only 1 URA transaction — appreciation and liquidity unverifiable",
+        "No built year (likely older mansion block)",
+        "Tiny boutique development — shallow resale market",
+        "$2.5M quantum sits where the buyer pool starts thinning"
+      ],
+      "catalysts": [
+        "Low $1,416 PSF for a freehold D15 — value entry on PSF basis",
+        "Large 1,765 sqft 4BR rare freehold family layout in the East",
+        "D15 deep buyer pool and lifestyle district; Dakota CCL MRT ~820m"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1416.43,
+        "beds": 4,
+        "sqft": 1765.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A large 1,765 sqft freehold 4BR at Beng Tong Mansion (D15) at $2.5M / $1,416 PSF, ~820m from Dakota MRT. A low PSF for freehold D15 but only 1 URA transaction, no built year, and a tiny mansion-block dev — effectively undiscoverable on liquidity.",
+        "rating": "Neutral",
+        "rating_rationale": "The $1,416 PSF is genuinely low for freehold D15 East Coast and the $2.5M quantum buys a big 1,765 sqft 4BR — value on paper. But just 1 URA txn and no built year make appreciation and resale completely unverifiable; a small mansion-style block has shallow exit liquidity, and at $2.5M the buyer pool already thins. score_1000 only 503 despite a high arena elo. Cheap-for-D15 but unprovable and illiquid.",
+        "red_flags": [
+          "Only 1 URA transaction — appreciation and liquidity unverifiable",
+          "No built year (likely older mansion block)",
+          "Tiny boutique development — shallow resale market",
+          "$2.5M quantum sits where the buyer pool starts thinning"
+        ],
+        "catalysts": [
+          "Low $1,416 PSF for a freehold D15 — value entry on PSF basis",
+          "Large 1,765 sqft 4BR rare freehold family layout in the East",
+          "D15 deep buyer pool and lifestyle district; Dakota CCL MRT ~820m"
+        ],
+        "rental_assessment": "Large freehold 4BR in D15 appeals to families; tenant demand decent but rents on a $2.5M quantum yield modestly. Niche size.",
+        "appreciation_assessment": "Unverifiable — 1 txn, no built year. Low PSF gives some cushion but no data to support an appreciation thesis.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-beng-tong-mansion-500151338",
+        "review_file": "cov_batch_29.json"
+      }
+    }
+  ]
+}

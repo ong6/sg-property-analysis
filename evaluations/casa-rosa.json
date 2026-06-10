@@ -1,0 +1,63 @@
+{
+  "condo": "Casa Rosa",
+  "slug": "casa-rosa",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2001 99-yr leasehold 4BR in Bartley (D19), 1,551 sqft at $2.5M / $1,612 psf, 560m from Bartley MRT (Circle Line). The 6.9%/yr URA rate rests on only 16 transactions (unreliable), and at $1,612 psf the asking is ~17% ABOVE the $1,381 district median — an old, above-market leasehold at a $2.5M 4BR quantum. The poor 370 score reflects this; the strong Elo overstates a unit whose absolute fundamentals are weak.",
+      "rating_rationale": "Asking $1,612 psf is ~17% above the $1,381 URA median — a clear pricing red flag for a 25-year-old 99-yr LH unit (~74 yrs lease left). The headline 6.9%/yr appreciation is unreliable on just 16 txn. $2.5M for a 4BR thins the buyer pool. score_1000 370 (well below market-typical) captures the cost/lease/quantum drag; the high Elo is a head-to-head artefact, not a fundamentals signal. Bartley CCL MRT at 560m is the one genuine strength keeping it off Avoid.",
+      "red_flags": [
+        "Asking PSF ~17% above the $1,381 URA district median — overpriced",
+        "6.9%/yr appreciation rests on only 16 txn — unreliable",
+        "2001 99-yr leasehold — ~74 years remaining, lease-decay drag",
+        "$2.5M quantum thins the 4BR buyer pool",
+        "score_1000 370 — fundamentals well below market-typical"
+      ],
+      "catalysts": [
+        "560m to Bartley Circle Line MRT — genuine transit convenience",
+        "D19 Punggol Digital District / Cross Island Line regional growth",
+        "Spacious 1,551 sqft family layout"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1611.86,
+        "beds": 4,
+        "sqft": 1551.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2001 99-yr leasehold 4BR in Bartley (D19), 1,551 sqft at $2.5M / $1,612 psf, 560m from Bartley MRT (Circle Line). The 6.9%/yr URA rate rests on only 16 transactions (unreliable), and at $1,612 psf the asking is ~17% ABOVE the $1,381 district median — an old, above-market leasehold at a $2.5M 4BR quantum. The poor 370 score reflects this; the strong Elo overstates a unit whose absolute fundamentals are weak.",
+        "rating": "Neutral",
+        "rating_rationale": "Asking $1,612 psf is ~17% above the $1,381 URA median — a clear pricing red flag for a 25-year-old 99-yr LH unit (~74 yrs lease left). The headline 6.9%/yr appreciation is unreliable on just 16 txn. $2.5M for a 4BR thins the buyer pool. score_1000 370 (well below market-typical) captures the cost/lease/quantum drag; the high Elo is a head-to-head artefact, not a fundamentals signal. Bartley CCL MRT at 560m is the one genuine strength keeping it off Avoid.",
+        "red_flags": [
+          "Asking PSF ~17% above the $1,381 URA district median — overpriced",
+          "6.9%/yr appreciation rests on only 16 txn — unreliable",
+          "2001 99-yr leasehold — ~74 years remaining, lease-decay drag",
+          "$2.5M quantum thins the 4BR buyer pool",
+          "score_1000 370 — fundamentals well below market-typical"
+        ],
+        "catalysts": [
+          "560m to Bartley Circle Line MRT — genuine transit convenience",
+          "D19 Punggol Digital District / Cross Island Line regional growth",
+          "Spacious 1,551 sqft family layout"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-rosa-25520492",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

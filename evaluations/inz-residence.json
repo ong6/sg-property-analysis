@@ -1,0 +1,59 @@
+{
+  "condo": "iNz Residence",
+  "slug": "inz-residence",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "99yr leasehold 4BR EC-style 1,216sqft unit at iNz Residence, D23 Choa Chu Kang/Bukit Panjang, at $1.8M / $1,480 PSF. Reasonable absolute price for a 4BR family unit in a 2019 development, but no URA data, an LRT-only location 950m away, and OCR-fringe positioning cap the investment case.",
+      "rating_rationale": "$1.48M-ish... actually $1.8M for a 4BR at $1,480 PSF is a sensible family entry, and the arena record (219-197-2, Elo 1209, score 568) is the better half of the batch. But there is zero URA appreciation/transaction/median data to verify value, connectivity is LRT-only (BP2 South View, 950m) feeding into Bukit Panjang, and D23 OCR appreciation tends to track the ~3.7% baseline. Solid family home, average investment — Neutral.",
+      "red_flags": [
+        "No URA appreciation/txn/median data to verify value",
+        "LRT-only access 950m away — weak rail connectivity",
+        "D23 OCR location with no specific catalyst in the dossier; 99yr leasehold"
+      ],
+      "catalysts": [
+        "Affordable 4BR family unit at $1.8M with deep HDB-upgrader demand in CCK/Bukit Panjang",
+        "Relatively young (2019) leasehold; better-than-batch arena record"
+      ],
+      "as_of": {
+        "price": 1799999,
+        "psf": 1480.26,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "99yr leasehold 4BR EC-style 1,216sqft unit at iNz Residence, D23 Choa Chu Kang/Bukit Panjang, at $1.8M / $1,480 PSF. Reasonable absolute price for a 4BR family unit in a 2019 development, but no URA data, an LRT-only location 950m away, and OCR-fringe positioning cap the investment case.",
+        "rating": "Neutral",
+        "rating_rationale": "$1.48M-ish... actually $1.8M for a 4BR at $1,480 PSF is a sensible family entry, and the arena record (219-197-2, Elo 1209, score 568) is the better half of the batch. But there is zero URA appreciation/transaction/median data to verify value, connectivity is LRT-only (BP2 South View, 950m) feeding into Bukit Panjang, and D23 OCR appreciation tends to track the ~3.7% baseline. Solid family home, average investment — Neutral.",
+        "red_flags": [
+          "No URA appreciation/txn/median data to verify value",
+          "LRT-only access 950m away — weak rail connectivity",
+          "D23 OCR location with no specific catalyst in the dossier; 99yr leasehold"
+        ],
+        "catalysts": [
+          "Affordable 4BR family unit at $1.8M with deep HDB-upgrader demand in CCK/Bukit Panjang",
+          "Relatively young (2019) leasehold; better-than-batch arena record"
+        ],
+        "rental_assessment": "4BR units are family-only with a narrower tenant pool; suburban D23 rents are modest, so yield is unremarkable.",
+        "appreciation_assessment": "No project URA series; expect tracking near the OCR ~3.7% baseline absent a named catalyst.",
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-inz-residence-500053244",
+        "review_file": "cov_batch_37.json"
+      }
+    }
+  ]
+}

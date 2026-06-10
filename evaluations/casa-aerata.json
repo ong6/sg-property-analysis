@@ -1,0 +1,63 @@
+{
+  "condo": "Casa Aerata",
+  "slug": "casa-aerata",
+  "district": "D14",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A compact 603 sqft freehold 2BR in D14 at $1625 PSF / $980k near Aljunied. The headline ~7.2% URA CAGR is eye-catching but rests on just 10 transactions, and the asking PSF is ~4% above the $1559 project median.",
+      "rating_rationale": "Attractive sub-$1M freehold 2BR quantum with a deep entry-level buyer pool and a young 2014 build. But the ~7.2% CAGR is built on only 10 txns — too thin to trust as a forward rate — and the asking is ~4% over the project median. 603 sqft is small for a 2BR (compact layout), limiting family resale appeal. Solid affordable entry but the growth claim is unreliable and there's no discount — Neutral.",
+      "red_flags": [
+        "~7.2% CAGR on only 10 URA txns — statistically unreliable, likely overstated",
+        "Asking PSF ~4% above project median",
+        "603 sqft is small for a 2BR — compact, narrower family resale appeal",
+        "8-min walk (710m) to MRT — not a doorstep location"
+      ],
+      "catalysts": [
+        "Sub-$1M freehold 2BR — broad affordable buyer pool",
+        "Paya Lebar/Aljunied transformation zone",
+        "Young 2014 build, low maintenance"
+      ],
+      "as_of": {
+        "price": 980000,
+        "psf": 1625.21,
+        "beds": 2,
+        "sqft": 603.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A compact 603 sqft freehold 2BR in D14 at $1625 PSF / $980k near Aljunied. The headline ~7.2% URA CAGR is eye-catching but rests on just 10 transactions, and the asking PSF is ~4% above the $1559 project median.",
+        "rating": "Neutral",
+        "rating_rationale": "Attractive sub-$1M freehold 2BR quantum with a deep entry-level buyer pool and a young 2014 build. But the ~7.2% CAGR is built on only 10 txns — too thin to trust as a forward rate — and the asking is ~4% over the project median. 603 sqft is small for a 2BR (compact layout), limiting family resale appeal. Solid affordable entry but the growth claim is unreliable and there's no discount — Neutral.",
+        "red_flags": [
+          "~7.2% CAGR on only 10 URA txns — statistically unreliable, likely overstated",
+          "Asking PSF ~4% above project median",
+          "603 sqft is small for a 2BR — compact, narrower family resale appeal",
+          "8-min walk (710m) to MRT — not a doorstep location"
+        ],
+        "catalysts": [
+          "Sub-$1M freehold 2BR — broad affordable buyer pool",
+          "Paya Lebar/Aljunied transformation zone",
+          "Young 2014 build, low maintenance"
+        ],
+        "rental_assessment": "A sub-$1M freehold 2BR near Aljunied rents readily to couples and sharers; optically healthy yield on the low quantum, though a 603 sqft layout caps rent ceiling.",
+        "appreciation_assessment": "The 7.2% figure should be discounted heavily (10 txns); a more defensible expectation is RCR-adjacent ~4-5%. No price discount means limited margin of safety.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-casa-aerata-11528695",
+        "review_file": "cov_batch_18.json"
+      }
+    }
+  ]
+}

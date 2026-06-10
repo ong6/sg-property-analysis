@@ -1,0 +1,63 @@
+{
+  "condo": "St Michael Regency",
+  "slug": "st-michael-regency",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Freehold 3,874 sqft '4BR' at St Michael Regency, D12 (Potong Pasir), asking $3.9M at $1,007 PSF. The very low PSF reflects an enormous strata floor area (likely penthouse/duplex with large void/PES), not a bargain — the $3.9M quantum is well outside the liquid band.",
+      "rating_rationale": "$1,007 PSF vs $1,706 median looks like a 40% discount, but 3,874 sqft is exceptionally large — the cheap PSF is a sizing artefact, and the $3.9M absolute quantum dramatically shrinks the buyer pool. Only 13 URA txns make the 9.17%/yr rate unreliable, the development is small (Potong Pasir boutique), and 1.06km to MRT is poor. As an investment with 5-7yr exit, illiquidity at this quantum is the dominant risk.",
+      "red_flags": [
+        "$3.9M quantum — very thin buyer pool, hard exit",
+        "Only 13 URA txns — appreciation rate unreliable",
+        "3,874 sqft oversized unit — low PSF is a sizing illusion",
+        "1.06km from MRT, boutique development"
+      ],
+      "catalysts": [
+        "Freehold tenure",
+        "Potong Pasir gentrification, near-city D12 location"
+      ],
+      "as_of": {
+        "price": 3900000,
+        "psf": 1006.71,
+        "beds": 4,
+        "sqft": 3874.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 3,874 sqft '4BR' at St Michael Regency, D12 (Potong Pasir), asking $3.9M at $1,007 PSF. The very low PSF reflects an enormous strata floor area (likely penthouse/duplex with large void/PES), not a bargain — the $3.9M quantum is well outside the liquid band.",
+        "rating": "Avoid",
+        "rating_rationale": "$1,007 PSF vs $1,706 median looks like a 40% discount, but 3,874 sqft is exceptionally large — the cheap PSF is a sizing artefact, and the $3.9M absolute quantum dramatically shrinks the buyer pool. Only 13 URA txns make the 9.17%/yr rate unreliable, the development is small (Potong Pasir boutique), and 1.06km to MRT is poor. As an investment with 5-7yr exit, illiquidity at this quantum is the dominant risk.",
+        "red_flags": [
+          "$3.9M quantum — very thin buyer pool, hard exit",
+          "Only 13 URA txns — appreciation rate unreliable",
+          "3,874 sqft oversized unit — low PSF is a sizing illusion",
+          "1.06km from MRT, boutique development"
+        ],
+        "catalysts": [
+          "Freehold tenure",
+          "Potong Pasir gentrification, near-city D12 location"
+        ],
+        "rental_assessment": "A 3,800+ sqft unit has a very narrow tenant pool; gross yield on $3.9M will be poor (likely <2.5%).",
+        "appreciation_assessment": "D12 is decent but large-quantum FH penthouses appreciate slowly on resale; 9.17% URA is not credible on 13 txns.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Discounted for oversized/illiquid large-quantum unit; URA 9.17% rejected (13 txns)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-st-michael-regency-20227280",
+        "review_file": "cov_batch_01.json"
+      }
+    }
+  ]
+}

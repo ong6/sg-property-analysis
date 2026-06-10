@@ -1,0 +1,61 @@
+{
+  "condo": "Cheapest 3Br! FH! Within 1km to St. Andrews",
+  "slug": "cheapest-3br-fh-within-1km-to-st-andrews",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A marketing-named listing (\"Cheapest 3Br! FH! Within 1km to St. Andrews\") at $2.767M / $2,546 PSF for a 1,087 sqft 3BR near Potong Pasir MRT (530m) — a new-launch-tier FH project (Myra / Jui Residences-type product). Strong-school proximity is the hook, but the PSF is very high, built_year and URA data are absent.",
+      "rating_rationale": "Genuine positives: freehold, within 1km of St Andrew's school (a real own-stay/rental draw), and just 530m to Potong Pasir MRT — the sub-500m-ish band that supports value. But $2,546 PSF is full new-launch pricing in D12, the $2.767M quantum on a compact 1,087 sqft 3BR is high for the city-fringe segment, and the dossier gives no project name, no built_year and no URA appreciation/transaction data to verify the trajectory. The opacity plus rich PSF prevents a buy; the school catchment and MRT proximity prevent an avoid.",
+      "red_flags": [
+        "$2,546 PSF is full new-launch pricing — limited appreciation headroom",
+        "$2.767M quantum on a compact 1,087 sqft 3BR is high for D12 city-fringe",
+        "No project name, no built_year, no URA data in dossier",
+        "Marketing-copy listing title, unverified development"
+      ],
+      "catalysts": [
+        "Freehold within 1km of St Andrew's school — school catchment demand",
+        "530m to Potong Pasir MRT supports rental and resale",
+        "City-fringe D12 location with CBD access"
+      ],
+      "as_of": {
+        "price": 2767000,
+        "psf": 2545.54,
+        "beds": 3,
+        "sqft": 1087.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A marketing-named listing (\"Cheapest 3Br! FH! Within 1km to St. Andrews\") at $2.767M / $2,546 PSF for a 1,087 sqft 3BR near Potong Pasir MRT (530m) — a new-launch-tier FH project (Myra / Jui Residences-type product). Strong-school proximity is the hook, but the PSF is very high, built_year and URA data are absent.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuine positives: freehold, within 1km of St Andrew's school (a real own-stay/rental draw), and just 530m to Potong Pasir MRT — the sub-500m-ish band that supports value. But $2,546 PSF is full new-launch pricing in D12, the $2.767M quantum on a compact 1,087 sqft 3BR is high for the city-fringe segment, and the dossier gives no project name, no built_year and no URA appreciation/transaction data to verify the trajectory. The opacity plus rich PSF prevents a buy; the school catchment and MRT proximity prevent an avoid.",
+        "red_flags": [
+          "$2,546 PSF is full new-launch pricing — limited appreciation headroom",
+          "$2.767M quantum on a compact 1,087 sqft 3BR is high for D12 city-fringe",
+          "No project name, no built_year, no URA data in dossier",
+          "Marketing-copy listing title, unverified development"
+        ],
+        "catalysts": [
+          "Freehold within 1km of St Andrew's school — school catchment demand",
+          "530m to Potong Pasir MRT supports rental and resale",
+          "City-fringe D12 location with CBD access"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-cheapest-3br-fh-within-1km-to-st-andrews-500019789",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

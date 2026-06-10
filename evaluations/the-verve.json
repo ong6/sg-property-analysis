@@ -1,0 +1,59 @@
+{
+  "condo": "The Verve",
+  "slug": "the-verve",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 623 sqft freehold 1BR at The Verve (D12 Balestier/Boon Keng, built 2012) at $899k / $1,443 psf — notably ~10% below the $1,609 district median. Freehold, sub-$1M quantum and a real PSF discount are attractive, though the 3.5%/yr appreciation (34 txns) is modest and the 1.08km MRT walk softens rental pull.",
+      "rating_rationale": "PSF $1,443 vs $1,609 median is a genuine ~10% discount on a freehold city-fringe 1BR with a credible 34-txn series — that value gap plus sub-$1M quantum and broad rental demand (city-fringe D12, Novena/CBD access) gives a sensible entry with room to close to median. Appreciation is only OCR-ish at 3.5%/yr and Toa Payoh MRT is a 1.08km walk, so it's a Buy on value/yield rather than a growth standout.",
+      "red_flags": [
+        "Modest 3.5%/yr appreciation — value play, not a growth engine",
+        "1.08km to nearest MRT — weaker rental convenience than doorstep stations",
+        "1BR niche owner-occupier demand in a city-fringe locale"
+      ],
+      "catalysts": [
+        "Freehold and ~10% below district median PSF — real value gap",
+        "Sub-$1M quantum keeps the buyer pool deep",
+        "City-fringe D12 with Novena/CBD and Balestier amenity access"
+      ],
+      "as_of": {
+        "price": 899000,
+        "psf": 1443.02,
+        "beds": 1,
+        "sqft": 623.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 623 sqft freehold 1BR at The Verve (D12 Balestier/Boon Keng, built 2012) at $899k / $1,443 psf — notably ~10% below the $1,609 district median. Freehold, sub-$1M quantum and a real PSF discount are attractive, though the 3.5%/yr appreciation (34 txns) is modest and the 1.08km MRT walk softens rental pull.",
+        "rating": "Buy",
+        "rating_rationale": "PSF $1,443 vs $1,609 median is a genuine ~10% discount on a freehold city-fringe 1BR with a credible 34-txn series — that value gap plus sub-$1M quantum and broad rental demand (city-fringe D12, Novena/CBD access) gives a sensible entry with room to close to median. Appreciation is only OCR-ish at 3.5%/yr and Toa Payoh MRT is a 1.08km walk, so it's a Buy on value/yield rather than a growth standout.",
+        "red_flags": [
+          "Modest 3.5%/yr appreciation — value play, not a growth engine",
+          "1.08km to nearest MRT — weaker rental convenience than doorstep stations",
+          "1BR niche owner-occupier demand in a city-fringe locale"
+        ],
+        "catalysts": [
+          "Freehold and ~10% below district median PSF — real value gap",
+          "Sub-$1M quantum keeps the buyer pool deep",
+          "City-fringe D12 with Novena/CBD and Balestier amenity access"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-verve-25230171",
+        "review_file": "cov_batch_13.json"
+      }
+    }
+  ]
+}

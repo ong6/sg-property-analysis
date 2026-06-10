@@ -1,0 +1,63 @@
+{
+  "condo": "Chuan Park",
+  "slug": "chuan-park",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 2BR (872 sqft) in Kingsford's 916-unit Chuan Park new launch (TOP 2028), 210m from Lorong Chuan MRT in the mature Serangoon/Bishan corridor. At $2,439 PSF it is priced ~9% below the $2,679 URA project median, with very deep liquidity (916 units, 870 txns) and direct MRT adjacency.",
+      "rating_rationale": "The 2BR ticks the strongest boxes: $2.13M quantum near the deep-pool band, 210m walk to Lorong Chuan (Circle Line), 916 units with 870 transactions = strong exit liquidity, and a $2,439 PSF that undercuts the project median of $2,679 by ~9%. Mid-launch range per market reviews ($2,200-2,700 psf), and the first comparable new launch in the Lorong Chuan area in over a decade gives pent-up upgrader demand. Kingsford build quality is the watch-item (mixed past reputation), and new-launch pricing carries forward-pricing risk, but the value-vs-median and location case is solid for a 2BR.",
+      "red_flags": [
+        "Kingsford Development has a mixed build-quality/QC track record historically",
+        "New-launch pricing carries developer forward-pricing premium (has_new_launch_bias true)",
+        "TOP only 2028 — capital tied up with no rental income until completion"
+      ],
+      "catalysts": [
+        "210m to Lorong Chuan MRT (Circle Line) — direct transit adjacency",
+        "First major new launch in Lorong Chuan in 10+ years — pent-up upgrader demand",
+        "Strong school catchment + mature Serangoon/Bishan corridor",
+        "Priced ~9% below project URA median PSF"
+      ],
+      "as_of": {
+        "price": 2126600,
+        "psf": 2438.76,
+        "beds": 2,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2BR (872 sqft) in Kingsford's 916-unit Chuan Park new launch (TOP 2028), 210m from Lorong Chuan MRT in the mature Serangoon/Bishan corridor. At $2,439 PSF it is priced ~9% below the $2,679 URA project median, with very deep liquidity (916 units, 870 txns) and direct MRT adjacency.",
+        "rating": "Buy",
+        "rating_rationale": "The 2BR ticks the strongest boxes: $2.13M quantum near the deep-pool band, 210m walk to Lorong Chuan (Circle Line), 916 units with 870 transactions = strong exit liquidity, and a $2,439 PSF that undercuts the project median of $2,679 by ~9%. Mid-launch range per market reviews ($2,200-2,700 psf), and the first comparable new launch in the Lorong Chuan area in over a decade gives pent-up upgrader demand. Kingsford build quality is the watch-item (mixed past reputation), and new-launch pricing carries forward-pricing risk, but the value-vs-median and location case is solid for a 2BR.",
+        "red_flags": [
+          "Kingsford Development has a mixed build-quality/QC track record historically",
+          "New-launch pricing carries developer forward-pricing premium (has_new_launch_bias true)",
+          "TOP only 2028 — capital tied up with no rental income until completion"
+        ],
+        "catalysts": [
+          "210m to Lorong Chuan MRT (Circle Line) — direct transit adjacency",
+          "First major new launch in Lorong Chuan in 10+ years — pent-up upgrader demand",
+          "Strong school catchment + mature Serangoon/Bishan corridor",
+          "Priced ~9% below project URA median PSF"
+        ],
+        "rental_assessment": "2BR is the widest tenant pool; MRT-adjacency and Bishan/Serangoon proximity support steady demand once TOP'd, yield ~3-3.5%.",
+        "appreciation_assessment": "No clean resale CAGR (new launch), so leaning on location and below-median entry; CCR/RCR-adjacent leasehold with MRT at door typically holds value, but 916-unit supply absorption at TOP is the risk.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-chuan-park-500145352",
+        "review_file": "cov_batch_11.json"
+      }
+    }
+  ]
+}

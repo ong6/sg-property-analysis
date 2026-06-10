@@ -1,0 +1,61 @@
+{
+  "condo": "Sol Acres",
+  "slug": "sol-acres",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 570 sqft 1BR at $868k / $1,523 PSF in a large 1,327-unit OCR executive-condo-scale mass project at Choa Chu Kang, served only by the Teck Whye LRT (520m), not heavy rail. Decent rental footprint and big-development liquidity, but D23 1BR appreciation is pedestrian and the $1,523 PSF is already full for the location.",
+      "rating_rationale": "Sol Acres (TOP 2019, 99LH, ~1,327 units) is a large, liquid development which supports the high score_1000 of 682 and gives a deep resale/rental pool. But the dossier carries no URA appreciation/txn data, the unit is LRT-fed (no MRT), and D23 Choa Chu Kang is a baseline OCR growth area (~3.7%/yr) with no near-term catalyst within 500m. $1,523 PSF for a small 1BR in Teck Whye is at the upper end of fair, leaving limited margin. Low entry price keeps it accessible but the investment case is average, not compelling.",
+      "red_flags": [
+        "Only LRT access (Teck Whye 520m), no heavy-rail MRT",
+        "No URA appreciation/transaction data in dossier to confirm trajectory",
+        "1BR is the niche, narrowest tenant/buyer segment",
+        "$1,523 PSF is full for Choa Chu Kang location"
+      ],
+      "catalysts": [
+        "Large 1,327-unit development gives strong rental and resale liquidity",
+        "Low absolute quantum ($868k) widens buyer pool and keeps ABSD/entry friction low",
+        "Established Choa Chu Kang amenities and bus connectivity"
+      ],
+      "as_of": {
+        "price": 868000,
+        "psf": 1522.81,
+        "beds": 1,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 570 sqft 1BR at $868k / $1,523 PSF in a large 1,327-unit OCR executive-condo-scale mass project at Choa Chu Kang, served only by the Teck Whye LRT (520m), not heavy rail. Decent rental footprint and big-development liquidity, but D23 1BR appreciation is pedestrian and the $1,523 PSF is already full for the location.",
+        "rating": "Neutral",
+        "rating_rationale": "Sol Acres (TOP 2019, 99LH, ~1,327 units) is a large, liquid development which supports the high score_1000 of 682 and gives a deep resale/rental pool. But the dossier carries no URA appreciation/txn data, the unit is LRT-fed (no MRT), and D23 Choa Chu Kang is a baseline OCR growth area (~3.7%/yr) with no near-term catalyst within 500m. $1,523 PSF for a small 1BR in Teck Whye is at the upper end of fair, leaving limited margin. Low entry price keeps it accessible but the investment case is average, not compelling.",
+        "red_flags": [
+          "Only LRT access (Teck Whye 520m), no heavy-rail MRT",
+          "No URA appreciation/transaction data in dossier to confirm trajectory",
+          "1BR is the niche, narrowest tenant/buyer segment",
+          "$1,523 PSF is full for Choa Chu Kang location"
+        ],
+        "catalysts": [
+          "Large 1,327-unit development gives strong rental and resale liquidity",
+          "Low absolute quantum ($868k) widens buyer pool and keeps ABSD/entry friction low",
+          "Established Choa Chu Kang amenities and bus connectivity"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sol-acres-500086685",
+        "review_file": "cov_batch_32.json"
+      }
+    }
+  ]
+}

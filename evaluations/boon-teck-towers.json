@@ -1,0 +1,55 @@
+{
+  "condo": "Boon Teck Towers",
+  "slug": "boon-teck-towers",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1984-built freehold D12 3BR (1,658 sqft) at $1,508 psf / $2.5M, 1.26 km from Toa Payoh MRT with no URA appreciation or comp data. Score 324 reflects a 40+ year-old large unit with poor walkability and a low-floor technical profile; the only real thesis here is en-bloc speculation.",
+      "rating_rationale": "42-year-old development, 1.26km from the nearest MRT, $2.5M for an oversized 1,658 sqft 3BR with no verifiable appreciation data and a bottom-decile score of 324. Investment fundamentals are weak — high quantum, ageing stock, weak liquidity. En-bloc upside is purely speculative and unpriced; not an investment buy.",
+      "red_flags": [
+        "1984 build — ageing stock, higher maintenance/resale friction",
+        "1.26km from MRT — poor walkability",
+        "$2.5M for oversized 3BR, no URA data, score 324 (bottom decile)"
+      ],
+      "catalysts": [
+        "Freehold land in D12 — long-shot en-bloc optionality only"
+      ],
+      "as_of": {
+        "price": 2500000,
+        "psf": 1507.84,
+        "beds": 3,
+        "sqft": 1658.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1984-built freehold D12 3BR (1,658 sqft) at $1,508 psf / $2.5M, 1.26 km from Toa Payoh MRT with no URA appreciation or comp data. Score 324 reflects a 40+ year-old large unit with poor walkability and a low-floor technical profile; the only real thesis here is en-bloc speculation.",
+        "rating": "Avoid",
+        "rating_rationale": "42-year-old development, 1.26km from the nearest MRT, $2.5M for an oversized 1,658 sqft 3BR with no verifiable appreciation data and a bottom-decile score of 324. Investment fundamentals are weak — high quantum, ageing stock, weak liquidity. En-bloc upside is purely speculative and unpriced; not an investment buy.",
+        "red_flags": [
+          "1984 build — ageing stock, higher maintenance/resale friction",
+          "1.26km from MRT — poor walkability",
+          "$2.5M for oversized 3BR, no URA data, score 324 (bottom decile)"
+        ],
+        "catalysts": [
+          "Freehold land in D12 — long-shot en-bloc optionality only"
+        ],
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-boon-teck-towers-500133201",
+        "review_file": "cov_batch_27.json"
+      }
+    }
+  ]
+}

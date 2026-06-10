@@ -1,0 +1,117 @@
+{
+  "condo": "Suites @ East Coast",
+  "slug": "suites-east-coast",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Listed as a '1BR' but the 1,151 sqft size is a dual-key (1+study/2-bath) layout in a small 116-unit freehold boutique — the low $1,199 psf is a size artifact, not value. With null URA appreciation/transaction data and a tiny development, this is exactly the thin-data boutique the rubric warns against.",
+      "rating_rationale": "All URA fields are null (no appreciation rate, no txn count, no median PSF), so the high score_1000 of 939 rests on neutral-filled missing data, not evidence — the technical signal here is hollow. Web check confirms Suites @ East Coast is a 116-unit freehold completed ~2012-2014 and this 1,151 sqft 'cheap-PSF 1BR' is really an oversized dual-key unit; the $1,199 psf is low only because the unit is large, not because it is good value. Tiny 116-unit dev = shallow liquidity, and $1.38M is a high quantum for a 1BR-classified unit. No verifiable appreciation evidence on an investment thesis means no basis to buy.",
+      "red_flags": [
+        "Null URA appreciation AND null transaction count — no verifiable performance data; high score is from neutral-filled blanks",
+        "1,151 sqft '1BR' is an oversized dual-key — low PSF is a size artifact, not value",
+        "Small 116-unit boutique — thin liquidity and exit risk",
+        "$1.38M quantum high for the 1BR classification, narrowing the buyer pool"
+      ],
+      "catalysts": [
+        "Freehold D15 with TEL Siglap MRT 650m",
+        "Dual-key format can suit live-in-plus-rent if own-stay (not the investment case here)"
+      ],
+      "as_of": {
+        "price": 1380000,
+        "psf": 1198.96,
+        "beds": 1,
+        "sqft": 1151.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Listed as a '1BR' but the 1,151 sqft size is a dual-key (1+study/2-bath) layout in a small 116-unit freehold boutique — the low $1,199 psf is a size artifact, not value. With null URA appreciation/transaction data and a tiny development, this is exactly the thin-data boutique the rubric warns against.",
+        "rating": "Avoid",
+        "rating_rationale": "All URA fields are null (no appreciation rate, no txn count, no median PSF), so the high score_1000 of 939 rests on neutral-filled missing data, not evidence — the technical signal here is hollow. Web check confirms Suites @ East Coast is a 116-unit freehold completed ~2012-2014 and this 1,151 sqft 'cheap-PSF 1BR' is really an oversized dual-key unit; the $1,199 psf is low only because the unit is large, not because it is good value. Tiny 116-unit dev = shallow liquidity, and $1.38M is a high quantum for a 1BR-classified unit. No verifiable appreciation evidence on an investment thesis means no basis to buy.",
+        "red_flags": [
+          "Null URA appreciation AND null transaction count — no verifiable performance data; high score is from neutral-filled blanks",
+          "1,151 sqft '1BR' is an oversized dual-key — low PSF is a size artifact, not value",
+          "Small 116-unit boutique — thin liquidity and exit risk",
+          "$1.38M quantum high for the 1BR classification, narrowing the buyer pool"
+        ],
+        "catalysts": [
+          "Freehold D15 with TEL Siglap MRT 650m",
+          "Dual-key format can suit live-in-plus-rent if own-stay (not the investment case here)"
+        ],
+        "rental_assessment": "Dual-key gives some rental flexibility, but with no transaction or yield data and a tiny dev, the investment rental case is unverifiable.",
+        "appreciation_assessment": "Cannot be assessed — URA appreciation and transaction count are both null. No basis for a 5–7yr appreciation thesis.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-east-coast-25430501",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The headline -44.1% age-adj 'cheapness' and -32.9% cohort discount are unreliable: this 1,151 sqft 'beds:1' unit is really a large unit (Suites @ East Coast 1BRs are 377 sqft; 1,151 sqft falls in the 3BR band of 904-1,787 sqft), and the cohort discount was computed on psf_cohort_txns=0 (zero comparables). A large unit's lower PSF is normal, not a verified bargain.",
+      "rating_rationale": "Listing $1,380,000 / 1,151 sqft = $1,199 psf vs project recent-12mo range $1,709-$1,967 psf (avg ~$1,847). That gap looks huge but is mostly a size effect: the project average is dominated by 355-377 sqft studios/1BRs that trade at premium PSF, while a ~1,151 sqft unit naturally prints far lower PSF. With psf_cohort_txns=0 the algo had no same-size comparable, so the -32.9% premium is against nothing. D15 is a genuinely good forward region (realized fwd RCR ~+3.5%, East Coast desirable), and freehold, which is a real positive, but I cannot certify the discount is real without a same-size resale comp. bedroom_sqft_mismatch and very_low_psf flags both fire.",
+      "red_flags": [
+        "1,151 sqft labeled 'beds:1' but matches the project's 3BR size band (904-1,787 sqft) - mislabel/mis-scrape",
+        "psf_cohort_txns=0: the -32.9% cohort discount has zero same-size comparables behind it",
+        "very_low_psf is partly a size artifact (large units trade at lower PSF than the studio-heavy project average)",
+        "appreciation_pct 6.49% over only 19 txns - thin, treat as story not forward signal"
+      ],
+      "catalysts": [
+        "D15 East Coast: strong, durable demand; good forward region (RCR ~+3.5%)",
+        "Future Thomson-East Coast Line access (Bayshore TE29 / Laguna Park TE28 nearby)",
+        "Freehold large unit appeals to own-stay families if layout/condition check out"
+      ],
+      "as_of": {
+        "price": 1380000,
+        "psf": 1198.96,
+        "beds": 1,
+        "sqft": 1151
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "low",
+        "summary": "The headline -44.1% age-adj 'cheapness' and -32.9% cohort discount are unreliable: this 1,151 sqft 'beds:1' unit is really a large unit (Suites @ East Coast 1BRs are 377 sqft; 1,151 sqft falls in the 3BR band of 904-1,787 sqft), and the cohort discount was computed on psf_cohort_txns=0 (zero comparables). A large unit's lower PSF is normal, not a verified bargain.",
+        "rating_rationale": "Listing $1,380,000 / 1,151 sqft = $1,199 psf vs project recent-12mo range $1,709-$1,967 psf (avg ~$1,847). That gap looks huge but is mostly a size effect: the project average is dominated by 355-377 sqft studios/1BRs that trade at premium PSF, while a ~1,151 sqft unit naturally prints far lower PSF. With psf_cohort_txns=0 the algo had no same-size comparable, so the -32.9% premium is against nothing. D15 is a genuinely good forward region (realized fwd RCR ~+3.5%, East Coast desirable), and freehold, which is a real positive, but I cannot certify the discount is real without a same-size resale comp. bedroom_sqft_mismatch and very_low_psf flags both fire.",
+        "red_flags": [
+          "1,151 sqft labeled 'beds:1' but matches the project's 3BR size band (904-1,787 sqft) - mislabel/mis-scrape",
+          "psf_cohort_txns=0: the -32.9% cohort discount has zero same-size comparables behind it",
+          "very_low_psf is partly a size artifact (large units trade at lower PSF than the studio-heavy project average)",
+          "appreciation_pct 6.49% over only 19 txns - thin, treat as story not forward signal"
+        ],
+        "catalysts": [
+          "D15 East Coast: strong, durable demand; good forward region (RCR ~+3.5%)",
+          "Future Thomson-East Coast Line access (Bayshore TE29 / Laguna Park TE28 nearby)",
+          "Freehold large unit appeals to own-stay families if layout/condition check out"
+        ],
+        "appreciation_assessment": "6.49% URA 5yr CAGR on just 19 txns; thin and not forward-predictive per v3.4. The real positive is region (D15/East Coast), not trailing CAGR.",
+        "rental_assessment": "A ~1,151 sqft freehold unit in East Coast rents well to families/expats, but yield on $1.38M will be modest (~3-3.5%) versus the small high-yield units that drive the project's headline numbers."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-east-coast-25430501",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

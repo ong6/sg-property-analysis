@@ -1,0 +1,61 @@
+{
+  "condo": "Coastal Cabana",
+  "slug": "coastal-cabana",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A new (2028 TOP) 99-yr leasehold 4BR in Pasir Ris at $1.95M / $1,614 psf, 1km+ from Pasir Ris MRT. The price sits inside the deep-liquidity band and D18 benefits from CRL + Pasir Ris transformation, but a 4BR niche unit, an over-1km MRT walk and no project-specific URA data keep this a middling hold.",
+      "rating_rationale": "$1,614 psf for a brand-new 99-yr LH 4BR (1,206 sqft) in OCR D18 is fair, not cheap. No project URA series (regional-baseline fallback), score_1000 519 and a near-even 229-187 arena record. 12-min/1.03km walk to Pasir Ris MRT undercuts the transit case; 4BR is a family-only, narrower buyer pool.",
+      "red_flags": [
+        "No project-specific URA appreciation data — regional-baseline fallback",
+        "1.03km / 12-min walk to Pasir Ris MRT is not a transit-premium location",
+        "4BR is a niche family-only segment with a narrower buyer pool",
+        "New OCR leasehold — appreciation not yet resale-proven"
+      ],
+      "catalysts": [
+        "Cross Island Line + Pasir Ris bus interchange/mall redevelopment in D18",
+        "Brand-new 2028 TOP unit at a sub-$2M entry within the liquid band",
+        "Pasir Ris coastal/Downtown East lifestyle appeal for families"
+      ],
+      "as_of": {
+        "price": 1947000,
+        "psf": 1614.43,
+        "beds": 4,
+        "sqft": 1206.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A new (2028 TOP) 99-yr leasehold 4BR in Pasir Ris at $1.95M / $1,614 psf, 1km+ from Pasir Ris MRT. The price sits inside the deep-liquidity band and D18 benefits from CRL + Pasir Ris transformation, but a 4BR niche unit, an over-1km MRT walk and no project-specific URA data keep this a middling hold.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,614 psf for a brand-new 99-yr LH 4BR (1,206 sqft) in OCR D18 is fair, not cheap. No project URA series (regional-baseline fallback), score_1000 519 and a near-even 229-187 arena record. 12-min/1.03km walk to Pasir Ris MRT undercuts the transit case; 4BR is a family-only, narrower buyer pool.",
+        "red_flags": [
+          "No project-specific URA appreciation data — regional-baseline fallback",
+          "1.03km / 12-min walk to Pasir Ris MRT is not a transit-premium location",
+          "4BR is a niche family-only segment with a narrower buyer pool",
+          "New OCR leasehold — appreciation not yet resale-proven"
+        ],
+        "catalysts": [
+          "Cross Island Line + Pasir Ris bus interchange/mall redevelopment in D18",
+          "Brand-new 2028 TOP unit at a sub-$2M entry within the liquid band",
+          "Pasir Ris coastal/Downtown East lifestyle appeal for families"
+        ],
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-coastal-cabana-60196178",
+        "review_file": "cov_batch_24.json"
+      }
+    }
+  ]
+}

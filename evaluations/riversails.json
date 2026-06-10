@@ -116,6 +116,62 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-riversails-25562572",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Mega 921-unit 99-LH (2016) project in Hougang/Upper Serangoon - by far the deepest data of the five (228 appreciation txns, 23 cohort txns). Asking $1,359 psf sits modestly below the project's recent avg (~$1,393 psf, 6mo ~$1,478) and the discount signals (-22.1% age_adj, -6.3% cohort) are real and well-supported rather than quirks. Liquid, ~3.8% yield, OCR with a dated CRL Punggol Extension (2032) catalyst. A solid value-and-liquidity Buy.",
+      "rating_rationale": "This is the only contender with statistically robust signals: 228 appreciation txns and 23 cohort txns make the -22.1% age_adj_premium and -6.3% cohort discount trustworthy, not artifacts. Verified 12mo project avg ~$1,393 psf (6mo ~$1,478, range $1,038-$1,548); the $1,359 asking for a 2BR is modestly below market and below the 6mo run-rate. Per v3.4, verified cheap-vs-peers in an OCR district (D19, realized fwd ~+4%) is the strongest robust signal. The 921-unit scale gives genuine resale and rental liquidity that the boutiques lack, and the Cross Island Line Punggol Extension (target 2032) is a dated medium-term catalyst. Capped at medium confidence because the discount is modest (not deep) and it is a 99-LH facing lease decay.",
+      "red_flags": [
+        "99-year leasehold from 2016 - lease decay is a long-run drag, though 2016 vintage is still young",
+        "Mega-project (921 units) means continuous internal resale supply that can cap PSF upside",
+        "Hougang/Upper Serangoon is further from the nearest MRT than the city-fringe peers (connectivity is bus-reliant until CRL)"
+      ],
+      "catalysts": [
+        "Cross Island Line - Punggol Extension (target 2032) improving Hougang/north-east connectivity (dated medium-term catalyst)",
+        "Reservoir-adjacent, extensive facilities, family-friendly - strong owner-occupier and rental demand",
+        "Deep liquidity (921 units) supports a clean 5-7yr exit",
+        "~3.8% gross yield with 2BR units reaching ~4.2% per market data"
+      ],
+      "as_of": {
+        "price": 1199999,
+        "psf": 1359,
+        "beds": 2,
+        "sqft": 883
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Mega 921-unit 99-LH (2016) project in Hougang/Upper Serangoon - by far the deepest data of the five (228 appreciation txns, 23 cohort txns). Asking $1,359 psf sits modestly below the project's recent avg (~$1,393 psf, 6mo ~$1,478) and the discount signals (-22.1% age_adj, -6.3% cohort) are real and well-supported rather than quirks. Liquid, ~3.8% yield, OCR with a dated CRL Punggol Extension (2032) catalyst. A solid value-and-liquidity Buy.",
+        "rating_rationale": "This is the only contender with statistically robust signals: 228 appreciation txns and 23 cohort txns make the -22.1% age_adj_premium and -6.3% cohort discount trustworthy, not artifacts. Verified 12mo project avg ~$1,393 psf (6mo ~$1,478, range $1,038-$1,548); the $1,359 asking for a 2BR is modestly below market and below the 6mo run-rate. Per v3.4, verified cheap-vs-peers in an OCR district (D19, realized fwd ~+4%) is the strongest robust signal. The 921-unit scale gives genuine resale and rental liquidity that the boutiques lack, and the Cross Island Line Punggol Extension (target 2032) is a dated medium-term catalyst. Capped at medium confidence because the discount is modest (not deep) and it is a 99-LH facing lease decay.",
+        "red_flags": [
+          "99-year leasehold from 2016 - lease decay is a long-run drag, though 2016 vintage is still young",
+          "Mega-project (921 units) means continuous internal resale supply that can cap PSF upside",
+          "Hougang/Upper Serangoon is further from the nearest MRT than the city-fringe peers (connectivity is bus-reliant until CRL)"
+        ],
+        "catalysts": [
+          "Cross Island Line - Punggol Extension (target 2032) improving Hougang/north-east connectivity (dated medium-term catalyst)",
+          "Reservoir-adjacent, extensive facilities, family-friendly - strong owner-occupier and rental demand",
+          "Deep liquidity (921 units) supports a clean 5-7yr exit",
+          "~3.8% gross yield with 2BR units reaching ~4.2% per market data"
+        ],
+        "appreciation_assessment": "appreciation_pct 6.04% (ura_5yr_cagr) is backed by a deep 228-txn panel - the most credible appreciation read of the five - but per v3.4 still discount its forward weight. The durable signal is the modest-but-real value plus deep liquidity; the CRL is the forward catalyst. Verified recent 6mo PSF (~$1,478) actually exceeds the 12mo avg (~$1,393), a mildly positive momentum sign.",
+        "rental_assessment": "Strong, verified rental market: 2BR units fetch ~$3.5-4.2k/mo (a 850 sqft listing asks $4,200), giving ~3.8-4.2% gross on this $1.2M / 883 sqft 2BR - solid for a liquid OCR investment hold."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversails-60231831",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

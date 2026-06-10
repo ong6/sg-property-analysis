@@ -1,0 +1,117 @@
+{
+  "condo": "Westcove Condo",
+  "slug": "westcove-condo",
+  "district": "D05",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "A 2000 99-yr leasehold 2BR in West Coast (D05), an oversized 1,130 sqft at $1.258M / $1,113 psf with no nearby MRT. The headline-low PSF and 694 score are artefacts of the large unit and low quantum; a 26-year-old leasehold (~73 yrs left), no transit and a highly uncertain arena record (124 draws) make this a cautious hold at best.",
+      "rating_rationale": "$1,113 psf looks cheap only because 1,130 sqft is oversized for a 2BR — quantum $1.258M is the real signal. 2000-built 99-yr LH means ~73 years of lease left (financing/decay drag building). No MRT within walking distance is a material liquidity handicap. The 143-157-124 record (huge draw count) flags very thin/uncertain data; D05 One-North/TEL tailwind is the main saving grace.",
+      "red_flags": [
+        "No MRT within walking distance — weak connectivity in a transit-driven market",
+        "2000-built 99-yr leasehold — ~73 years remaining, lease-decay and financing drag",
+        "Low PSF is an oversized-unit artefact, not genuine value",
+        "Arena record dominated by draws (124) — unreliable/thin comparison data"
+      ],
+      "catalysts": [
+        "D05 One-North tech hub + Thomson-East Coast Line regional growth",
+        "Sub-$1.3M quantum keeps it in the deep-liquidity band",
+        "Spacious 1,130 sqft layout appeals to space-seeking families"
+      ],
+      "as_of": {
+        "price": 1258000,
+        "psf": 1113.27,
+        "beds": 2,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2000 99-yr leasehold 2BR in West Coast (D05), an oversized 1,130 sqft at $1.258M / $1,113 psf with no nearby MRT. The headline-low PSF and 694 score are artefacts of the large unit and low quantum; a 26-year-old leasehold (~73 yrs left), no transit and a highly uncertain arena record (124 draws) make this a cautious hold at best.",
+        "rating": "Neutral",
+        "rating_rationale": "$1,113 psf looks cheap only because 1,130 sqft is oversized for a 2BR — quantum $1.258M is the real signal. 2000-built 99-yr LH means ~73 years of lease left (financing/decay drag building). No MRT within walking distance is a material liquidity handicap. The 143-157-124 record (huge draw count) flags very thin/uncertain data; D05 One-North/TEL tailwind is the main saving grace.",
+        "red_flags": [
+          "No MRT within walking distance — weak connectivity in a transit-driven market",
+          "2000-built 99-yr leasehold — ~73 years remaining, lease-decay and financing drag",
+          "Low PSF is an oversized-unit artefact, not genuine value",
+          "Arena record dominated by draws (124) — unreliable/thin comparison data"
+        ],
+        "catalysts": [
+          "D05 One-North tech hub + Thomson-East Coast Line regional growth",
+          "Sub-$1.3M quantum keeps it in the deep-liquidity band",
+          "Spacious 1,130 sqft layout appeals to space-seeking families"
+        ],
+        "confidence": "low"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-westcove-condo-500063855",
+        "review_file": "cov_batch_24.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An aging 99-LH West Coast 2BR asking $1,113 psf — within the project's 12-month range ($922-$1,306, avg ~$1,155), so fairly priced but not a deep bargain. Accelerating lease decay (~68 yrs left) caps the forward case.",
+      "rating_rationale": "Web checks resolve the dossier's data gaps: Westcove is a 99-yr-from-1995 development (~68 years remaining), and the 'very_low_psf' flag is real, not a mis-scrape — recent transactions average ~$1,155 psf. The asking $1,113 psf is slightly below that average but inside the normal band, so this is fair value rather than the cheap-vs-peers edge that v3.4 rewards. Critically, the dossier has 0 appreciation transactions and null cohort data, so the -20.6% age-adj 'cheap' signal is essentially unverified by the algo and I down-weight it. The forward drag is lease decay: a ~30-year-old 99-LH unit faces steepening depreciation, CPF-usage and financing restrictions tightening as it crosses key lease thresholds over a 5-7yr hold. Offsetting positives: West Coast/D5 is OCR (favorable fwd ~+4.0%), the estate is quiet and low-density near NUS/one-north with solid tenant demand, and the absolute quantum ($1.26M) is accessible. Net: fairly priced asset with real location merit but a structural lease headwind — a clean Neutral.",
+      "red_flags": [
+        "99-yr leasehold from 1995 — only ~68 years left; lease decay accelerates over the hold",
+        "very_old_property flag (completed 1998); ageing facilities/maintenance risk",
+        "0 appreciation txns and null cohort data — algo 'cheap' signal is unverified",
+        "Asking $1,113 psf is fair (within range) not a bargain vs ~$1,155 avg"
+      ],
+      "catalysts": [
+        "OCR/D5 location with favorable realized forward drift (~+4.0%)",
+        "Proximity to NUS, one-north and West Coast Highway supports rental demand",
+        "Accessible quantum (~$1.26M) widens the resale buyer pool"
+      ],
+      "as_of": {
+        "price": 1258000,
+        "psf": 1113.27,
+        "beds": 2,
+        "sqft": 1130
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "An aging 99-LH West Coast 2BR asking $1,113 psf — within the project's 12-month range ($922-$1,306, avg ~$1,155), so fairly priced but not a deep bargain. Accelerating lease decay (~68 yrs left) caps the forward case.",
+        "rating_rationale": "Web checks resolve the dossier's data gaps: Westcove is a 99-yr-from-1995 development (~68 years remaining), and the 'very_low_psf' flag is real, not a mis-scrape — recent transactions average ~$1,155 psf. The asking $1,113 psf is slightly below that average but inside the normal band, so this is fair value rather than the cheap-vs-peers edge that v3.4 rewards. Critically, the dossier has 0 appreciation transactions and null cohort data, so the -20.6% age-adj 'cheap' signal is essentially unverified by the algo and I down-weight it. The forward drag is lease decay: a ~30-year-old 99-LH unit faces steepening depreciation, CPF-usage and financing restrictions tightening as it crosses key lease thresholds over a 5-7yr hold. Offsetting positives: West Coast/D5 is OCR (favorable fwd ~+4.0%), the estate is quiet and low-density near NUS/one-north with solid tenant demand, and the absolute quantum ($1.26M) is accessible. Net: fairly priced asset with real location merit but a structural lease headwind — a clean Neutral.",
+        "red_flags": [
+          "99-yr leasehold from 1995 — only ~68 years left; lease decay accelerates over the hold",
+          "very_old_property flag (completed 1998); ageing facilities/maintenance risk",
+          "0 appreciation txns and null cohort data — algo 'cheap' signal is unverified",
+          "Asking $1,113 psf is fair (within range) not a bargain vs ~$1,155 avg"
+        ],
+        "catalysts": [
+          "OCR/D5 location with favorable realized forward drift (~+4.0%)",
+          "Proximity to NUS, one-north and West Coast Highway supports rental demand",
+          "Accessible quantum (~$1.26M) widens the resale buyer pool"
+        ],
+        "appreciation_assessment": "No usable forward signal — appreciation is a regional baseline (3.7%) with 0 supporting transactions. With lease decay working against the asset and only fair (not cheap) entry pricing, I expect flat-to-modest forward returns.",
+        "rental_assessment": "Steady rental demand from NUS/one-north/Science Park tenants; lower entry quantum supports a reasonable gross yield (project rental yield is healthy), partly compensating for weak capital-appreciation prospects."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-westcove-condo-500063855",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

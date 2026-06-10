@@ -1,0 +1,63 @@
+{
+  "condo": "Sengkang Grand Residences",
+  "slug": "sengkang-grand-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "high",
+      "summary": "An integrated development directly on top of Buangkok MRT (10m) with mall, hawker centre and community club — best-in-class connectivity and amenity for a D19 1BR. At $910k / $1920 psf it sits below the $2067 project median, and the 367-txn series gives a reliable ~2.9% resale CAGR.",
+      "rating_rationale": "Integrated/transit-oriented developments command durable resale and rental premiums; this one is literally on the MRT with an attached mall. $1920 psf vs $2067 median is a ~7% discount, and 367 txns make the data trustworthy. 1BR is niche but the integrated-mall location is the deepest possible tenant pool for the format. Low quantum ($910k) keeps it liquid. Downside: 1BR resale appeals mainly to investors, and the ~2.9% resale rate is OCR-typical not stellar.",
+      "red_flags": [
+        "1BR is investor/single-tenant niche — narrower owner-occupier resale pool",
+        "~2.9% resale CAGR is modest (OCR-typical), not a growth standout",
+        "High PSF for D19 (paying integrated-development premium up front)"
+      ],
+      "catalysts": [
+        "Direct integrated connection to Buangkok MRT + Sengkang Grand Mall + hawker centre",
+        "Below-median entry PSF (7% under project median)",
+        "Punggol Digital District tenant demand in the broader NE corridor"
+      ],
+      "as_of": {
+        "price": 910000,
+        "psf": 1919.83,
+        "beds": 1,
+        "sqft": 474.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "An integrated development directly on top of Buangkok MRT (10m) with mall, hawker centre and community club — best-in-class connectivity and amenity for a D19 1BR. At $910k / $1920 psf it sits below the $2067 project median, and the 367-txn series gives a reliable ~2.9% resale CAGR.",
+        "rating": "Buy",
+        "rating_rationale": "Integrated/transit-oriented developments command durable resale and rental premiums; this one is literally on the MRT with an attached mall. $1920 psf vs $2067 median is a ~7% discount, and 367 txns make the data trustworthy. 1BR is niche but the integrated-mall location is the deepest possible tenant pool for the format. Low quantum ($910k) keeps it liquid. Downside: 1BR resale appeals mainly to investors, and the ~2.9% resale rate is OCR-typical not stellar.",
+        "red_flags": [
+          "1BR is investor/single-tenant niche — narrower owner-occupier resale pool",
+          "~2.9% resale CAGR is modest (OCR-typical), not a growth standout",
+          "High PSF for D19 (paying integrated-development premium up front)"
+        ],
+        "catalysts": [
+          "Direct integrated connection to Buangkok MRT + Sengkang Grand Mall + hawker centre",
+          "Below-median entry PSF (7% under project median)",
+          "Punggol Digital District tenant demand in the broader NE corridor"
+        ],
+        "rental_assessment": "Strong — an integrated MRT/mall 1BR is the most rentable small-unit format in the area; tenant pool of singles/couples working in NE or commuting to CBD via NEL. Yield should be solid for the quantum.",
+        "appreciation_assessment": "367-txn resale rate ~2.9% is reliable and OCR-typical; the integrated location should let it hold premium and track the district rather than lag.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.9,
+        "appreciation_rate_source": "URA resale-only, 367 txns (reliable)"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sengkang-grand-residences-60224170",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}

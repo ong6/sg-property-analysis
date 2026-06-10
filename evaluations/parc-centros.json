@@ -56,6 +56,58 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500153632",
         "review_file": "batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Honest, well-supported pricing (131 appreciation txns; age_adj +1.3%, cohort +2.2%) but the S$1,765 psf ask sits at the very top of the verified S$1,405-1,772 range — you're paying peak, not a discount. Good OCR location, but ~2.8% yield and full pricing make it a hold-and-watch, not a buy.",
+      "rating_rationale": "Web-verified Parc Centros sold S$1,405-1,772 psf over 12 months (avg ~S$1,671), with the high S$1,772 set in Jan 2026 for a 463 sqft unit — the same small-1BR cohort as this 473 sqft listing. At S$1,765 psf the ask is effectively at the ceiling, consistent with the dossier's near-zero discount (age_adj +1.3%, psf_premium_vs_cohort +2.2%). Per v3.4 priors VALUE leads and there is no value edge here; D19/OCR is a favourable forward region (~+4%), but you're buying at peak PSF with a thin ~2.82% yield. Data is genuine (no quirk), which is why this is a confident Neutral rather than a quirk-driven discount.",
+      "red_flags": [
+        "Ask S$1,765 psf is at the top of the verified S$1,405-1,772 12-month range — paying peak",
+        "Low rental yield ~2.82% for a small leasehold unit",
+        "No value cushion (age_adj +1.3%, cohort +2.2%) — fairly-to-richly priced"
+      ],
+      "catalysts": [
+        "Punggol MRT walkable; OCR forward region realized ~+4% (v3.4)",
+        "Punggol Digital District / growth catchment supports rental demand"
+      ],
+      "as_of": {
+        "price": 835000,
+        "psf": 1765.33,
+        "beds": 1,
+        "sqft": 473
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Neutral",
+        "confidence": "medium",
+        "summary": "Honest, well-supported pricing (131 appreciation txns; age_adj +1.3%, cohort +2.2%) but the S$1,765 psf ask sits at the very top of the verified S$1,405-1,772 range — you're paying peak, not a discount. Good OCR location, but ~2.8% yield and full pricing make it a hold-and-watch, not a buy.",
+        "rating_rationale": "Web-verified Parc Centros sold S$1,405-1,772 psf over 12 months (avg ~S$1,671), with the high S$1,772 set in Jan 2026 for a 463 sqft unit — the same small-1BR cohort as this 473 sqft listing. At S$1,765 psf the ask is effectively at the ceiling, consistent with the dossier's near-zero discount (age_adj +1.3%, psf_premium_vs_cohort +2.2%). Per v3.4 priors VALUE leads and there is no value edge here; D19/OCR is a favourable forward region (~+4%), but you're buying at peak PSF with a thin ~2.82% yield. Data is genuine (no quirk), which is why this is a confident Neutral rather than a quirk-driven discount.",
+        "red_flags": [
+          "Ask S$1,765 psf is at the top of the verified S$1,405-1,772 12-month range — paying peak",
+          "Low rental yield ~2.82% for a small leasehold unit",
+          "No value cushion (age_adj +1.3%, cohort +2.2%) — fairly-to-richly priced"
+        ],
+        "catalysts": [
+          "Punggol MRT walkable; OCR forward region realized ~+4% (v3.4)",
+          "Punggol Digital District / growth catchment supports rental demand"
+        ],
+        "appreciation_assessment": "Dossier 6.75% 5yr CAGR on a healthy 131 txns is credible historically but ~0 forward power per v3.4; OCR region tailwind is the real (modest) forward case, not the trailing CAGR.",
+        "rental_assessment": "473 sqft 1BR in Punggol with 49 rental txns/6mo shows liquid leasing, but yield ~2.8% at this peak entry price is below-average for the risk."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500077493",
+        "review_file": "top200_reviewed.json"
+      }
     }
   ]
 }

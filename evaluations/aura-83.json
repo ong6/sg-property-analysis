@@ -1,0 +1,61 @@
+{
+  "condo": "Aura 83",
+  "slug": "aura-83",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 3BR (2015) in D15 East Coast asking $1,787 PSF (~3% over the $1,742 median) at a clean $2.0M — squarely in the liquid sweet spot. Strong arena record (352-176, Elo 1377) but only 12 URA transactions and a 1.16km MRT walk; a solid Neutral with constructive lean.",
+      "rating_rationale": "$2.0M for a freehold East Coast 3BR is in the deepest liquidity band, and the arena loves it (352-176-41, Elo 1377 — top of batch). URA 4.46%/yr is healthy but rests on just 12 transactions, so reliability is low. Asking is +3% to median — fair, not cheap. 1.16km (14 min) to TE26 Marine Parade is a weak walk. D15 freehold family unit has a deep owner-occupier base, which protects the exit. Quality and liquidity offset thin appreciation data.",
+      "red_flags": [
+        "only 12 URA transactions — appreciation rate unreliable",
+        "1.16km to MRT — poor walkability",
+        "small boutique development (lower liquidity than 400+ unit projects)"
+      ],
+      "catalysts": [
+        "freehold D15 East Coast 3BR at the liquid $2.0M sweet spot",
+        "strong arena performance (Elo 1377)",
+        "deep owner-occupier buyer pool in East Coast"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1787.31,
+        "beds": 3,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 3BR (2015) in D15 East Coast asking $1,787 PSF (~3% over the $1,742 median) at a clean $2.0M — squarely in the liquid sweet spot. Strong arena record (352-176, Elo 1377) but only 12 URA transactions and a 1.16km MRT walk; a solid Neutral with constructive lean.",
+        "rating": "Neutral",
+        "rating_rationale": "$2.0M for a freehold East Coast 3BR is in the deepest liquidity band, and the arena loves it (352-176-41, Elo 1377 — top of batch). URA 4.46%/yr is healthy but rests on just 12 transactions, so reliability is low. Asking is +3% to median — fair, not cheap. 1.16km (14 min) to TE26 Marine Parade is a weak walk. D15 freehold family unit has a deep owner-occupier base, which protects the exit. Quality and liquidity offset thin appreciation data.",
+        "red_flags": [
+          "only 12 URA transactions — appreciation rate unreliable",
+          "1.16km to MRT — poor walkability",
+          "small boutique development (lower liquidity than 400+ unit projects)"
+        ],
+        "catalysts": [
+          "freehold D15 East Coast 3BR at the liquid $2.0M sweet spot",
+          "strong arena performance (Elo 1377)",
+          "deep owner-occupier buyer pool in East Coast"
+        ],
+        "rental_assessment": "East Coast family-3BR demand is steady but yields on a $2M freehold are typically modest; this is more an owner-occupier-resale story than a yield play.",
+        "appreciation_assessment": "4.46%/yr is encouraging but only 12 transactions back it; treat the rate as indicative, with D15 freehold providing the real downside protection.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-aura-83-60181468",
+        "review_file": "cov_batch_22.json"
+      }
+    }
+  ]
+}

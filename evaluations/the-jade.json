@@ -1,0 +1,61 @@
+{
+  "condo": "The Jade",
+  "slug": "the-jade",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large 1,012 sqft 2BR at The Jade, a 2004 D23 leasehold just 160m from Bukit Batok MRT (NSL). Good 5.5%/yr resale CAGR on 39 txns, but priced at $1,482 psf vs $1,428 median (~4% above) and the unit is oversized for a 2BR, inflating quantum to $1.5M.",
+      "rating_rationale": "The 160m-to-MRT location and solid 5.5%/yr resale CAGR (39 txns) are genuine positives. However it's priced ~4% above the $1,428 median, the 2004 build is 22 years old with a ~78yr lease, and the 1,012 sqft for a 2BR makes the per-unit quantum ($1.5M) high relative to the rental a 2BR commands — depressing yield. Score_1000 of 520 reflects this balance. Liquid Bukit Batok location keeps it from Avoid, but the above-median pricing and age cap it at Neutral.",
+      "red_flags": [
+        "Priced ~4% above URA median PSF",
+        "22-year-old leasehold (2004); lease decay underway",
+        "Oversized 1,012 sqft 2BR inflates quantum and dampens yield"
+      ],
+      "catalysts": [
+        "160m to Bukit Batok NSL MRT — top-tier connectivity",
+        "Bukit Batok/Jurong proximity to Jurong Lake District growth (indirect)"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1482.21,
+        "beds": 2,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Large 1,012 sqft 2BR at The Jade, a 2004 D23 leasehold just 160m from Bukit Batok MRT (NSL). Good 5.5%/yr resale CAGR on 39 txns, but priced at $1,482 psf vs $1,428 median (~4% above) and the unit is oversized for a 2BR, inflating quantum to $1.5M.",
+        "rating": "Neutral",
+        "rating_rationale": "The 160m-to-MRT location and solid 5.5%/yr resale CAGR (39 txns) are genuine positives. However it's priced ~4% above the $1,428 median, the 2004 build is 22 years old with a ~78yr lease, and the 1,012 sqft for a 2BR makes the per-unit quantum ($1.5M) high relative to the rental a 2BR commands — depressing yield. Score_1000 of 520 reflects this balance. Liquid Bukit Batok location keeps it from Avoid, but the above-median pricing and age cap it at Neutral.",
+        "red_flags": [
+          "Priced ~4% above URA median PSF",
+          "22-year-old leasehold (2004); lease decay underway",
+          "Oversized 1,012 sqft 2BR inflates quantum and dampens yield"
+        ],
+        "catalysts": [
+          "160m to Bukit Batok NSL MRT — top-tier connectivity",
+          "Bukit Batok/Jurong proximity to Jurong Lake District growth (indirect)"
+        ],
+        "rental_assessment": "Large 2BR near Bukit Batok MRT rents reasonably to families/couples, but the high $1.5M cost relative to 2BR rent caps yield.",
+        "appreciation_assessment": "5.5%/yr resale CAGR on 39 txns is decent; MRT-adjacency supports it, but above-median entry and lease decay temper the forward view.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "URA resale 5.5%/yr discounted for above-median entry and lease decay"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-jade-25213043",
+        "review_file": "cov_batch_19.json"
+      }
+    }
+  ]
+}

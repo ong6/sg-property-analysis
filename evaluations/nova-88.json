@@ -1,0 +1,63 @@
+{
+  "condo": "Nova 88",
+  "slug": "nova-88",
+  "district": "D12",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "Freehold 1BR (603sqft — a generously sized one-bedder) at $1,657 PSF in D12 Balestier, priced slightly below the $1,683 URA median, with steady 2.9%/yr resale-only appreciation on 21 txns. Just-below-$1M freehold near Novena's medical belt, but 1.13km from MRT and a modest growth rate.",
+      "rating_rationale": "A safe, low-conviction freehold hold: 603sqft is a comfortable 1BR (better resale than a true shoebox), PSF is marginally below median ($1,657 vs $1,683), and 2.9%/yr on 21 txns is reliable. But 1.13km to Novena MRT is a real walkability drag, growth is below the city-fringe baseline, and a 1BR has a niche owner-occupier pool. Steady rental near the Novena medical hub, no real upside catalyst.",
+      "red_flags": [
+        "1.13km/14-min from Novena MRT — weak walkability",
+        "2.9%/yr appreciation below city-fringe baseline",
+        "1BR — niche owner-occupier buyer pool"
+      ],
+      "catalysts": [
+        "Freehold, sub-$1M entry",
+        "Novena medical hub (hospitals) drives healthcare-worker rental demand",
+        "Generous 603sqft layout aids resale vs shoeboxes"
+      ],
+      "as_of": {
+        "price": 999000,
+        "psf": 1656.72,
+        "beds": 1,
+        "sqft": 603.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "Freehold 1BR (603sqft — a generously sized one-bedder) at $1,657 PSF in D12 Balestier, priced slightly below the $1,683 URA median, with steady 2.9%/yr resale-only appreciation on 21 txns. Just-below-$1M freehold near Novena's medical belt, but 1.13km from MRT and a modest growth rate.",
+        "rating": "Neutral",
+        "rating_rationale": "A safe, low-conviction freehold hold: 603sqft is a comfortable 1BR (better resale than a true shoebox), PSF is marginally below median ($1,657 vs $1,683), and 2.9%/yr on 21 txns is reliable. But 1.13km to Novena MRT is a real walkability drag, growth is below the city-fringe baseline, and a 1BR has a niche owner-occupier pool. Steady rental near the Novena medical hub, no real upside catalyst.",
+        "red_flags": [
+          "1.13km/14-min from Novena MRT — weak walkability",
+          "2.9%/yr appreciation below city-fringe baseline",
+          "1BR — niche owner-occupier buyer pool"
+        ],
+        "catalysts": [
+          "Freehold, sub-$1M entry",
+          "Novena medical hub (hospitals) drives healthcare-worker rental demand",
+          "Generous 603sqft layout aids resale vs shoeboxes"
+        ],
+        "rental_assessment": "Steady single-tenant demand from the Novena hospital/medical cluster; well-sized 1BR rents reliably, moderate yield.",
+        "appreciation_assessment": "2.9%/yr resale-only on 21 txns is reliable but soft; expect below-average appreciation given distance from MRT.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 2.9,
+        "appreciation_rate_source": "URA resale-only 2.9%/yr (21 txns) accepted as-is"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nova-88-25371321",
+        "review_file": "cov_batch_36.json"
+      }
+    }
+  ]
+}

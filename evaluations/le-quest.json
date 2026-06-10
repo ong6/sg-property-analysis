@@ -1,0 +1,65 @@
+{
+  "condo": "Le Quest",
+  "slug": "le-quest",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "high",
+      "summary": "A 99LH 1BR (Le Quest, D23 Bukit Batik mixed-use) at $805k / $1,626 psf — slightly below the $1,664 URA median, with reliable data (118 txns) but a weak 1.55% CAGR and a losing arena record (117-183). An integrated-development shoebox with steady fundamentals but anaemic appreciation.",
+      "rating_rationale": "Le Quest is an integrated mixed-use development (mall + residences) which aids liquidity and rental, and the data is robust (118 txns), with the $1,626 psf ~2% below the $1,664 median — a small cushion at a low $805k quantum. But the 1.55% CAGR is genuinely weak (D23 OCR with no standout catalyst yet — JRL Tengah Park is 1.08km), and the poor arena record (Elo 1,029, 117-183) and off-frontier status flag soft demand. Reliable but low-growth; a yield/own-stay-leaning Neutral, not a growth buy.",
+      "red_flags": [
+        "Weak 1.55% CAGR despite reliable 118-txn data — low growth",
+        "Losing arena record (117-183, Elo 1,029) — soft relative demand",
+        "99LH (2021) 1BR — niche shoebox resale pool",
+        "1.08km to Tengah Park JRL station (not yet operational)"
+      ],
+      "catalysts": [
+        "Integrated mixed-use (mall + residences) — convenience aids rental/resale",
+        "JRL Tengah Park station (~2028) within ~1km",
+        "Slightly below URA median at a low $805k quantum",
+        "Tengah/Jurong precinct growth over the long run"
+      ],
+      "as_of": {
+        "price": 805000,
+        "psf": 1626.26,
+        "beds": 1,
+        "sqft": 495.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 99LH 1BR (Le Quest, D23 Bukit Batik mixed-use) at $805k / $1,626 psf — slightly below the $1,664 URA median, with reliable data (118 txns) but a weak 1.55% CAGR and a losing arena record (117-183). An integrated-development shoebox with steady fundamentals but anaemic appreciation.",
+        "rating": "Neutral",
+        "rating_rationale": "Le Quest is an integrated mixed-use development (mall + residences) which aids liquidity and rental, and the data is robust (118 txns), with the $1,626 psf ~2% below the $1,664 median — a small cushion at a low $805k quantum. But the 1.55% CAGR is genuinely weak (D23 OCR with no standout catalyst yet — JRL Tengah Park is 1.08km), and the poor arena record (Elo 1,029, 117-183) and off-frontier status flag soft demand. Reliable but low-growth; a yield/own-stay-leaning Neutral, not a growth buy.",
+        "red_flags": [
+          "Weak 1.55% CAGR despite reliable 118-txn data — low growth",
+          "Losing arena record (117-183, Elo 1,029) — soft relative demand",
+          "99LH (2021) 1BR — niche shoebox resale pool",
+          "1.08km to Tengah Park JRL station (not yet operational)"
+        ],
+        "catalysts": [
+          "Integrated mixed-use (mall + residences) — convenience aids rental/resale",
+          "JRL Tengah Park station (~2028) within ~1km",
+          "Slightly below URA median at a low $805k quantum",
+          "Tengah/Jurong precinct growth over the long run"
+        ],
+        "rental_assessment": "Integrated mall and Bukit Batok/Tengah catchment give steady shoebox rental demand (~3.5-4% gross) — the better of its metrics.",
+        "appreciation_assessment": "1.55% on a deep 118-txn base is reliably low; JRL provides eventual upside but the rate to date is OCR-laggard.",
+        "confidence": "high"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-le-quest-23185911",
+        "review_file": "cov_batch_21.json"
+      }
+    }
+  ]
+}

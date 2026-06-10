@@ -1,0 +1,63 @@
+{
+  "condo": "LIV @ MB",
+  "slug": "liv-mb",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 678 sqft 99-year 2BR at LIV @ MB (TOP 2024) in D15 at $1.7M ($2,507 PSF), 350m from Katong Park TE24 MRT. Brand-new and well-located, but the high $2,507 PSF on a leasehold with only ~0.7%/yr resale appreciation and a weak arena profile makes the entry price hard to justify.",
+      "rating_rationale": "Genuinely strong location — 350m to Katong Park TEL, prime D15, fresh 2024 development, deep 320-txn data and the widest 2BR tenant pool. But the listed $2,507 PSF is steep for a 99-year leasehold, and the resale-only series shows just ~0.7%/yr — the high median PSF ($2,708) reflects new-launch pricing, not realized appreciation. The low score_1000 (377) and 119-117 record signal poor relative value at this PSF. New + transit-rich keeps it Neutral, but pay-up risk is real.",
+      "red_flags": [
+        "$2,507 PSF on a 99-year leasehold is a rich entry",
+        "Resale-only appreciation only ~0.7%/yr — new-launch pricing inflates median",
+        "Low score_1000 (377) flags weak value-for-price",
+        "Leasehold clock starts now; freehold competitors nearby"
+      ],
+      "catalysts": [
+        "350m to Katong Park TE24 MRT (TEL) — top-tier connectivity",
+        "Brand-new 2024 TOP, no immediate capex",
+        "Prime D15 with the deepest 2BR rental demand"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 2507.37,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 678 sqft 99-year 2BR at LIV @ MB (TOP 2024) in D15 at $1.7M ($2,507 PSF), 350m from Katong Park TE24 MRT. Brand-new and well-located, but the high $2,507 PSF on a leasehold with only ~0.7%/yr resale appreciation and a weak arena profile makes the entry price hard to justify.",
+        "rating": "Neutral",
+        "rating_rationale": "Genuinely strong location — 350m to Katong Park TEL, prime D15, fresh 2024 development, deep 320-txn data and the widest 2BR tenant pool. But the listed $2,507 PSF is steep for a 99-year leasehold, and the resale-only series shows just ~0.7%/yr — the high median PSF ($2,708) reflects new-launch pricing, not realized appreciation. The low score_1000 (377) and 119-117 record signal poor relative value at this PSF. New + transit-rich keeps it Neutral, but pay-up risk is real.",
+        "red_flags": [
+          "$2,507 PSF on a 99-year leasehold is a rich entry",
+          "Resale-only appreciation only ~0.7%/yr — new-launch pricing inflates median",
+          "Low score_1000 (377) flags weak value-for-price",
+          "Leasehold clock starts now; freehold competitors nearby"
+        ],
+        "catalysts": [
+          "350m to Katong Park TE24 MRT (TEL) — top-tier connectivity",
+          "Brand-new 2024 TOP, no immediate capex",
+          "Prime D15 with the deepest 2BR rental demand"
+        ],
+        "rental_assessment": "Excellent — new 2BR steps from TEL in D15 will rent quickly to professionals/expats; among the strongest rental cases in the batch, though yield is compressed by the $1.7M price.",
+        "appreciation_assessment": "Realized resale growth is near-flat (~0.7%/yr) and the buyer is paying full new-launch PSF, so near-term capital upside is limited; story depends on broader East Coast/TEL re-rating over the hold.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-liv-mb-25608835",
+        "review_file": "cov_batch_23.json"
+      }
+    }
+  ]
+}

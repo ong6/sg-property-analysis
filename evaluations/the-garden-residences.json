@@ -1,0 +1,113 @@
+{
+  "condo": "The Garden Residences",
+  "slug": "the-garden-residences",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "A 570 sqft 1BR at $1,577 psf in a 613-unit Keppel/Wing Tai dev (TOP 2021), priced well below the $1,883 project median and the $1,864 avg of recent transactions. The flagship catalyst is the future Serangoon North CRL station 690m away, but a flat 1.12% URA CAGR shows the broader project has not appreciated since launch.",
+      "rating_rationale": "Entry PSF $1,577 is ~16% below the $1,883 median and at the low end of the $1,593–2,079 psf range the project actually transacts at (avg $1,864) — a genuine discount, not an overpriced 1BR. 613 units and 209 txns mean deep liquidity. The 1.12% CAGR reflects the post-2021 cooling-measure plateau across the whole project, not a defect, and the under-priced entry plus CRL Serangoon North (~2030) at 690m give a clear forward catalyst. Reputable developer. Held back from Strong Buy by the flat recent trajectory and sub-$900k 1BR niche.",
+      "red_flags": [
+        "1.12%/yr URA CAGR — project has essentially gone sideways since 2021 TOP",
+        "1BR is a niche, investor-heavy segment competing with abundant D19 supply",
+        "CRL uplift is years out (~2030) and partly already in expectations"
+      ],
+      "catalysts": [
+        "Future CRL Serangoon North station 690m — strongest single catalyst in this 1BR group",
+        "Asking ~16% below project median and at the floor of the recent transacted range",
+        "Large reputable 613-unit Keppel Land/Wing Tai development with deep liquidity"
+      ],
+      "as_of": {
+        "price": 899000,
+        "psf": 1577.19,
+        "beds": 1,
+        "sqft": 570.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 570 sqft 1BR at $1,577 psf in a 613-unit Keppel/Wing Tai dev (TOP 2021), priced well below the $1,883 project median and the $1,864 avg of recent transactions. The flagship catalyst is the future Serangoon North CRL station 690m away, but a flat 1.12% URA CAGR shows the broader project has not appreciated since launch.",
+        "rating": "Buy",
+        "rating_rationale": "Entry PSF $1,577 is ~16% below the $1,883 median and at the low end of the $1,593–2,079 psf range the project actually transacts at (avg $1,864) — a genuine discount, not an overpriced 1BR. 613 units and 209 txns mean deep liquidity. The 1.12% CAGR reflects the post-2021 cooling-measure plateau across the whole project, not a defect, and the under-priced entry plus CRL Serangoon North (~2030) at 690m give a clear forward catalyst. Reputable developer. Held back from Strong Buy by the flat recent trajectory and sub-$900k 1BR niche.",
+        "red_flags": [
+          "1.12%/yr URA CAGR — project has essentially gone sideways since 2021 TOP",
+          "1BR is a niche, investor-heavy segment competing with abundant D19 supply",
+          "CRL uplift is years out (~2030) and partly already in expectations"
+        ],
+        "catalysts": [
+          "Future CRL Serangoon North station 690m — strongest single catalyst in this 1BR group",
+          "Asking ~16% below project median and at the floor of the recent transacted range",
+          "Large reputable 613-unit Keppel Land/Wing Tai development with deep liquidity"
+        ],
+        "rental_assessment": "1BR near Serangoon North CRL and Serangoon Gardens rents readily to singles/couples; deep tenant base in D19. Yield typical 3–3.5%.",
+        "appreciation_assessment": "Flat 1.12% to date, but discounted entry plus 2030 CRL station is a credible re-rating path. Buy on the value gap, not on momentum.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-garden-residences-500150342",
+        "review_file": "cov_batch_02.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-06-09",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Genuinely cheap fresh-lease 1BR — asking PSF sits well below verified recent comps at a quality Keppel/Wing Tai project in OCR D19.",
+      "rating_rationale": "This is the cleanest value case of the five: a comparable 614 sqft unit transacted at ~1801 psf (Nov 2025) and the project's last-12-month average is ~1864 psf, so a 570 sqft 1BR at 1577 psf is genuinely ~12-15% below market — directly corroborating the algo's -14.9% age and -12.4% cohort discounts with real recent resale evidence. It is OCR D19 (strongest forward region), built 2021 so ~94 years of lease remain, by reputable developers (Keppel Land + Wing Tai) with strong facilities. Verified cheap-vs-comps is the strongest robust forward signal under v3.4, and here it is decisive. Held back from Strong Buy / higher confidence by the thin 13-txn same-size cohort and the inherent weaker growth/liquidity of a 1BR, plus the very low 1.12% trailing CAGR (used only as neutral context, not a negative).",
+      "red_flags": [
+        "Thin same-size cohort (psf_cohort_txns 13) — verify the specific unit's floor/facing isn't the reason for the discount before committing",
+        "Smallest 1BR type has structurally weaker capital appreciation and a shallower resale pool",
+        "Low 1.12% trailing CAGR signals limited price momentum to date (treated as story, not a forward negative)"
+      ],
+      "catalysts": [
+        "Verified ~12-15% discount to recent comps provides built-in margin of safety / re-rating room",
+        "OCR D19 region tailwind (~+4.0% realized forward) plus reputable-developer 2021 product with long lease"
+      ],
+      "as_of": {
+        "price": 899000,
+        "psf": 1577.19,
+        "beds": 1,
+        "sqft": 570
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "rating": "Buy",
+        "confidence": "medium",
+        "summary": "Genuinely cheap fresh-lease 1BR — asking PSF sits well below verified recent comps at a quality Keppel/Wing Tai project in OCR D19.",
+        "rating_rationale": "This is the cleanest value case of the five: a comparable 614 sqft unit transacted at ~1801 psf (Nov 2025) and the project's last-12-month average is ~1864 psf, so a 570 sqft 1BR at 1577 psf is genuinely ~12-15% below market — directly corroborating the algo's -14.9% age and -12.4% cohort discounts with real recent resale evidence. It is OCR D19 (strongest forward region), built 2021 so ~94 years of lease remain, by reputable developers (Keppel Land + Wing Tai) with strong facilities. Verified cheap-vs-comps is the strongest robust forward signal under v3.4, and here it is decisive. Held back from Strong Buy / higher confidence by the thin 13-txn same-size cohort and the inherent weaker growth/liquidity of a 1BR, plus the very low 1.12% trailing CAGR (used only as neutral context, not a negative).",
+        "red_flags": [
+          "Thin same-size cohort (psf_cohort_txns 13) — verify the specific unit's floor/facing isn't the reason for the discount before committing",
+          "Smallest 1BR type has structurally weaker capital appreciation and a shallower resale pool",
+          "Low 1.12% trailing CAGR signals limited price momentum to date (treated as story, not a forward negative)"
+        ],
+        "catalysts": [
+          "Verified ~12-15% discount to recent comps provides built-in margin of safety / re-rating room",
+          "OCR D19 region tailwind (~+4.0% realized forward) plus reputable-developer 2021 product with long lease"
+        ],
+        "rental_assessment": "570 sqft 1BR at a facility-rich 2021 project in Serangoon North rents well to young professionals; the low entry PSF lifts gross yield versus same-area 1BRs.",
+        "appreciation_assessment": "Trailing CAGR is only 1.12% (209 txns) — no forward extrapolation; the upside thesis rests entirely on the verified discount to current comps plus the OCR region effect."
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-garden-residences-500150342",
+        "review_file": "top200_reviewed.json"
+      }
+    }
+  ]
+}

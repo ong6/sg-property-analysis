@@ -1,0 +1,61 @@
+{
+  "condo": "Elliot at the East Coast",
+  "slug": "elliot-at-the-east-coast",
+  "district": "D15",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,615 sqft '2BR' in freehold East Coast at $1,455 psf — the bedroom/size mismatch flags an oversized or mis-classified unit, and the low PSF reflects size, not a bargain. Weak 1.6%/yr URA appreciation on just 15 txns and a $2.35M quantum for a 2BR-labelled unit make this a hard pass on investment metrics.",
+      "rating_rationale": "A 1,615 sqft 2BR is anomalous — either mis-listed or a very inefficient layout — and the $1,455 psf only looks cheap because of the bloated floor area; the $1,769.5 median tells the real story. URA appreciation is a poor 1.6%/yr on a thin 15-txn series, and Elliot is a small boutique block with shallow liquidity (record 174-247 reflects weak arena performance). Freehold + Siglap MRT/East Coast lifestyle are the only redeeming features.",
+      "red_flags": [
+        "Bedroom/sqft mismatch — 1,615 sqft for a '2BR' (mis-classification or inefficient layout)",
+        "Weak 1.6%/yr URA appreciation on thin 15 txns",
+        "Boutique low-liquidity block; $2.35M quantum for a 2BR-labelled unit is steep"
+      ],
+      "catalysts": [
+        "Freehold East Coast (D15) lifestyle address",
+        "670m to Siglap MRT (Thomson-East Coast Line)",
+        "East Coast Park and dining belt proximity"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 1455.11,
+        "beds": 2,
+        "sqft": 1615.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 1,615 sqft '2BR' in freehold East Coast at $1,455 psf — the bedroom/size mismatch flags an oversized or mis-classified unit, and the low PSF reflects size, not a bargain. Weak 1.6%/yr URA appreciation on just 15 txns and a $2.35M quantum for a 2BR-labelled unit make this a hard pass on investment metrics.",
+        "rating": "Avoid",
+        "rating_rationale": "A 1,615 sqft 2BR is anomalous — either mis-listed or a very inefficient layout — and the $1,455 psf only looks cheap because of the bloated floor area; the $1,769.5 median tells the real story. URA appreciation is a poor 1.6%/yr on a thin 15-txn series, and Elliot is a small boutique block with shallow liquidity (record 174-247 reflects weak arena performance). Freehold + Siglap MRT/East Coast lifestyle are the only redeeming features.",
+        "red_flags": [
+          "Bedroom/sqft mismatch — 1,615 sqft for a '2BR' (mis-classification or inefficient layout)",
+          "Weak 1.6%/yr URA appreciation on thin 15 txns",
+          "Boutique low-liquidity block; $2.35M quantum for a 2BR-labelled unit is steep"
+        ],
+        "catalysts": [
+          "Freehold East Coast (D15) lifestyle address",
+          "670m to Siglap MRT (Thomson-East Coast Line)",
+          "East Coast Park and dining belt proximity"
+        ],
+        "rental_assessment": "East Coast tenant demand is healthy, but a $2.35M, 1,615 sqft unit rents to a narrow pool; yield poor (~3%) at this quantum.",
+        "appreciation_assessment": "1.6%/yr URA on 15 txns is weak and unreliable; even with FH/D15 tailwinds, the entry and format argue for muted growth.",
+        "confidence": "medium"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-elliot-at-the-east-coast-24834841",
+        "review_file": "cov_batch_25.json"
+      }
+    }
+  ]
+}

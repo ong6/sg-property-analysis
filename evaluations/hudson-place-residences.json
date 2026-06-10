@@ -1,0 +1,65 @@
+{
+  "condo": "Hudson Place Residences",
+  "slug": "hudson-place-residences",
+  "district": "D03",
+  "history": [
+    {
+      "evaluated_at": "2026-06-08",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 2026-launched, 2029-TOP One-North/Media Circle new launch (Qingjian/Forsea, ~327 units) that the dossier mislabels D03 — it is Queenstown/D5 yield-first product with no MRT walkability. The $2344 psf 4BR is below the ~$2458 launch average, but it is uncompleted new-launch pricing with no resale track record and a 1152sqft 4BR that is tight for the format.",
+      "rating_rationale": "Pros: One-North employment cluster (Mediapolis/Biopolis) is a real tenant-demand engine, and $2344 psf undercuts the ~$2458 launch average. Cons: brand-new launch (no resale data, developer-inflated pricing — null URA appreciation), TOP only 2029 so a 5-7yr hold from completion stretches past most investors' SSD window, no MRT within walking distance, and 1152sqft is small for a 4BR (compact-family layout). $2.7M quantum also sits above the deepest-liquidity band. Balanced — a hold-for-One-North bet, not a value buy.",
+      "red_flags": [
+        "Uncompleted new launch (2029 TOP) with no resale history — appreciation unproven, developer pricing",
+        "No MRT within walking distance — relies on bus/drive to One-North/Queenstown",
+        "1152sqft is compact for a 4BR; quantum $2.7M above the deepest buyer pool",
+        "Mislabeled district in dossier (actually D5 Queenstown/One-North)"
+      ],
+      "catalysts": [
+        "One-North / Mediapolis / Biopolis employment cluster drives long-run tenant demand",
+        "Entry PSF ($2344) below ~$2458 launch average",
+        "Greater Southern Waterfront / Queenstown transformation in the wider area"
+      ],
+      "as_of": {
+        "price": 2700000,
+        "psf": 2343.75,
+        "beds": 4,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": null,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": null
+      },
+      "agent_evaluation": {
+        "summary": "A 2026-launched, 2029-TOP One-North/Media Circle new launch (Qingjian/Forsea, ~327 units) that the dossier mislabels D03 — it is Queenstown/D5 yield-first product with no MRT walkability. The $2344 psf 4BR is below the ~$2458 launch average, but it is uncompleted new-launch pricing with no resale track record and a 1152sqft 4BR that is tight for the format.",
+        "rating": "Neutral",
+        "rating_rationale": "Pros: One-North employment cluster (Mediapolis/Biopolis) is a real tenant-demand engine, and $2344 psf undercuts the ~$2458 launch average. Cons: brand-new launch (no resale data, developer-inflated pricing — null URA appreciation), TOP only 2029 so a 5-7yr hold from completion stretches past most investors' SSD window, no MRT within walking distance, and 1152sqft is small for a 4BR (compact-family layout). $2.7M quantum also sits above the deepest-liquidity band. Balanced — a hold-for-One-North bet, not a value buy.",
+        "red_flags": [
+          "Uncompleted new launch (2029 TOP) with no resale history — appreciation unproven, developer pricing",
+          "No MRT within walking distance — relies on bus/drive to One-North/Queenstown",
+          "1152sqft is compact for a 4BR; quantum $2.7M above the deepest buyer pool",
+          "Mislabeled district in dossier (actually D5 Queenstown/One-North)"
+        ],
+        "catalysts": [
+          "One-North / Mediapolis / Biopolis employment cluster drives long-run tenant demand",
+          "Entry PSF ($2344) below ~$2458 launch average",
+          "Greater Southern Waterfront / Queenstown transformation in the wider area"
+        ],
+        "rental_assessment": "Yield-first positioning is the project's thesis: One-North professionals are a steady tenant base. But completion is 2029, so rental income is years out, and 4BR is family-only (narrower tenant pool than the project's small units).",
+        "appreciation_assessment": "No URA resale data (new launch). Pricing is at developer levels; near-term appreciation headroom is limited until the project completes and resale comps form.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "No resale data — conservative new-launch RCR/One-North estimate"
+      },
+      "source": {
+        "run_dir": null,
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hudson-place-residences-500117830",
+        "review_file": "cov_batch_05.json"
+      }
+    }
+  ]
+}
