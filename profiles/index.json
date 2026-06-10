@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09",
+  "updated_at": "2026-06-10",
   "condos": {
     "the-luxurie": {
       "condo": "The Luxurie",
@@ -8,6 +8,14 @@
       "stack_count": 0,
       "layout_count": 6,
       "researched_at": "2026-06-08"
+    },
+    "avant-residences": {
+      "condo": "Avant Residences",
+      "district": "D14",
+      "confidence": "medium",
+      "stack_count": 1,
+      "layout_count": 6,
+      "researched_at": "2026-06-10"
     }
   }
 }

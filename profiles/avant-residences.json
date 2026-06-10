@@ -1,0 +1,131 @@
+{
+  "condo": "Avant Residences",
+  "slug": "avant-residences",
+  "district": "D14",
+  "researched_at": "2026-06-10",
+  "revision": 2,
+  "confidence": "medium",
+  "sources": [
+    {
+      "url": "https://cos.sg/product/avant-residences/",
+      "type": "listing",
+      "note": "full unit mix with per-type counts; dual-key units #02-02..#05-02"
+    },
+    {
+      "url": "https://www.edgeprop.sg/condo-apartment/avant-residences",
+      "type": "listing",
+      "note": "land area 907sqm, '0 facilities' listing, buyer mix, resident reviews (management/pest complaints), psf extremes $986 (Jun 2021, 700sqft) to $1,826 (Jun 2018, 377sqft)"
+    },
+    {
+      "url": "https://www.srx.com.sg/condo/avant-residences-71242",
+      "type": "listing",
+      "note": "recent transactions: Apr 2026 #08 420sqft $660k ($1,572psf); Nov 2024 #03 398sqft $600k ($1,507psf); rental ranges by type"
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/avant-residences",
+      "type": "listing",
+      "note": "single 8-storey block, 50 units, TOP 2012, Aljunied MRT 0.33km"
+    },
+    {
+      "url": "https://www.newlaunchesreview.com/avant-residences/",
+      "type": "review",
+      "note": "site ~911sqm, single block 8 storeys, location pros/cons"
+    }
+  ],
+  "development": {
+    "total_units": 50,
+    "blocks": 1,
+    "max_floor": 8,
+    "units_per_floor_typical": 7,
+    "developer": "Avant At Aljunied Pte Ltd (one-off SPV; no major-developer track record)",
+    "tenure": "99-year leasehold from 22 Mar 2012",
+    "top_year": 2012,
+    "address": "10 Aljunied Road, S389799",
+    "orientation_notes": "Single boutique 8-storey infill block on a tiny ~907sqm plot fronting Aljunied Road (busy 4-lane arterial), ~330m north of Aljunied MRT (EW9), between Sims Avenue and Geylang Road. Road-fronting stacks take heavy traffic noise; the block sits amid Geylang shophouses/light-commercial frontage. Per-stack numbered facing NOT verified from text sources — needs a vision pass on the site plan. Known stack fact: stack 02, floors 2-5 (#02-02, #03-02, #04-02, #05-02) are the four 936sqft 2BR+Study DUAL-KEY units (two self-contained sub-units each). 700sqft 1BR+S units exist (largest 1+S type) — a low-psf 700sqft listing is plausibly a ground-floor/PES unit, not automatically a mis-scrape ($986psf 700sqft transacted Jun 2021).",
+    "known_issues": [
+      "Effectively no facilities — EdgeProp lists '0 Facilities Available' on the 907sqm plot (marketing mentions a small pool); maintenance value proposition weak [EdgeProp]",
+      "Resident complaints: poor property management, pest issues, neighbourhood described as 'very dirty' [EdgeProp reviews]",
+      "Aljunied Road frontage = arterial traffic noise; Geylang-fringe surroundings carry owner-occupier stigma (address itself is Aljunied Rd, not a restricted lorong — bank financing normal)",
+      "Investor-dominated micro-unit mix (36/50 units are studio/1BR types ≤700sqft) — exit buyers are mostly other investors",
+      "Small-unit PSF still below its Jun 2018 peak of $1,826 as of 2026 ($1,572 Apr 2026) — long flat stretch despite headline 5yr CAGR",
+      "99-yr lease from 2012 — ~85yrs remaining, decay clock running"
+    ],
+    "pools": 1,
+    "ground_floor_pes": true
+  },
+  "stacks": [
+    {
+      "stack": "02",
+      "floors": "02-05",
+      "type": "2BR+S dual-key 936sqft",
+      "facing": null,
+      "notes": "Four dual-key units (#02-02..#05-02), two self-contained sub-units each — rentable as two tenancies. Facing unverified.",
+      "confidence": "high",
+      "source": "cos.sg unit mix",
+      "_floor_tier": "low"
+    }
+  ],
+  "layouts": [
+    {
+      "type": "Studio",
+      "sqft": [
+        377,
+        398,
+        420
+      ],
+      "efficiency": "compact",
+      "count": 10,
+      "notes": "Smallest units; the most-transacted band (both 2024-2026 resales were 398-420sqft)."
+    },
+    {
+      "type": "Studio + Study",
+      "sqft": [
+        441,
+        592
+      ],
+      "efficiency": "compact",
+      "count": 8,
+      "notes": "441sqft is a common listing size; 592sqft top of band."
+    },
+    {
+      "type": "1BR",
+      "sqft": [
+        420
+      ],
+      "efficiency": "compact",
+      "count": 2,
+      "notes": "Only 2 units — near-zero cohort."
+    },
+    {
+      "type": "1BR + Study",
+      "sqft": [
+        484,
+        700
+      ],
+      "efficiency": "compact-to-stretched",
+      "count": 18,
+      "notes": "Largest type group (18/50). The 700sqft top-of-band units likely include ground-floor/PES space — explains outlier low-psf listings/transactions."
+    },
+    {
+      "type": "2BR",
+      "sqft": [
+        527,
+        764
+      ],
+      "efficiency": "micro at 527",
+      "count": 8,
+      "notes": "527sqft '2BR' is a micro/compact split — below the 600sqft norm, flagged by scorer as bedroom_sqft_mismatch."
+    },
+    {
+      "type": "2BR + Study dual-key",
+      "sqft": [
+        936
+      ],
+      "efficiency": "dual-key",
+      "count": 4,
+      "notes": "Stack 02 floors 2-5. Often mislabelled 3BR on portals. Dual-income potential but only 4 units = no resale cohort."
+    }
+  ],
+  "stacks_note": "Stack→facing map not published in any text source; only stack 02 (dual-keys) is identified from the unit-mix listing. Block-level orientation/noise facts captured above. Upgrade to high confidence with a vision pass on the brochure site plan.",
+  "first_researched_at": "2026-06-10"
+}
