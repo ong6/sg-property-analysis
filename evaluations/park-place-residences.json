@@ -56,6 +56,37 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-park-place-residences-25629204",
         "review_file": "cov_batch_22.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 484 sqft 1BR asking $1,188,000 / $2,455 psf — roughly 9-12% above its own size-cohort verified prints (2025-26: $1.06M-$1.11M, $2,188-$2,291 psf; latest Apr 2026 $1.06M/$2,188) and above all competing 484-sqft asks ($1.10M-$1.16M), at the exact top of the project 12-month psf band (avg $2,257). The prior 2026-06-08 Buy was at $1.09M, i.e. at-band; this ask is the same product ~9% dearer. Under v3.4-v3.6 priors the only validated forward signal (cheap-vs-same-size-peers) reads negative, the interchange/PLQ-integration premium is priced in (level effect, not a forward edge), and Paya Lebar Central transformation carries no measured forward power.",
+      "rating_rationale": "Asking ~9-12% above verified same-size comps — expensive-vs-peers is the inverse of the one robust forward signal; connectivity premium is in the price; gross yield 3.5-4.1% at $1.19M is unexceptional; project momentum negative (-0.233), blended appreciation 2.76%/yr; algo 404 below threshold. Would re-rate near $1.06M-$1.10M (at-band).",
+      "red_flags": [
+        "Asking $2,455 psf vs 484-sqft cohort prints $2,188-$2,291 (2025-26) — ~9-12% premium to verified comps",
+        "Above all competing 484-sqft listings ($1.10M-$1.16M)",
+        "At the top of the 12-month project psf band (max $2,454, avg $2,257)",
+        "Negative project momentum (-0.233); blended appreciation only 2.76%/yr",
+        "99-yr leasehold from 2015 — lease decay over hold",
+        "1BR niche resale buyer pool"
+      ],
+      "catalysts": [
+        "310m to Paya Lebar EW8/CC9 interchange + PLQ mall/office integration (priced in — supports rentability, not forward edge)",
+        "D14 RCR forward baseline +3.1%/yr",
+        "Deep 100+ txn liquidity and solid 1BR rental demand ($3,500-$4,100/mo)"
+      ],
+      "as_of": {
+        "price": 1188000,
+        "psf": 2455.0,
+        "beds": 1,
+        "sqft": 484.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2019
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 15; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }

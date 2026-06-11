@@ -56,6 +56,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-pebble-bay-500128455",
         "review_file": "cov_batch_37.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "2,626sqft 4BR at $5.25M / $1,999psf re-judged under v3.4.1+ priors. Same-size comps (Sep 2025: 2,626sqft $5.75M @ $2,189psf; Dec 2025: 2,626sqft $4.90M @ $1,865psf) put the ask squarely at the same-size cohort mean (~$2,027psf) — no cheap-vs-peers edge once the pooled-median illusion is removed. Only validated positive is the RCR region baseline. Against that: ~67yr remaining lease crosses the ~60yr CPF/financing threshold during the 5-7yr hold (next buyer pool structurally shrinks at exit), and $5M+ Tanjong Rhu liquidity is thin (only 2 of 13 Pebble Bay prints in 12mo were >=$5M). The 4.67%/yr trailing CAGR that led the prior Buy is a ~0-forward-power signal and is stripped; operational TEL is priced in.",
+      "rating_rationale": "Fairly priced vs same-size comps (no value edge); ~67yr lease hits the 60yr CPF/LTV threshold exactly at the exit window; $5.25M quantum has a verified-thin exit pool (2 prints/yr >=$5M); only remaining validated positive is the RCR baseline — net negative for a 5-7yr investment hold.",
+      "red_flags": [
+        "~67yr remaining lease (99yr from ~1994) crosses the ~60yr CPF/financing threshold at exit in year 5-7 — structural buyer-pool shrinkage exactly when selling",
+        "$5.25M top-decile quantum: only 2 of ~13 Pebble Bay prints in the last 12 months were >=$5M — thin exit pool is real, not an algo artifact",
+        "No same-size value edge: ask $1,999psf sits between the two 2,626sqft prints ($1,865 and $2,189psf) — the apparent pooled-median premium/discount is size-mix noise",
+        "Prior Buy rationale (4.67%/yr trailing CAGR on 103 txns) is a ~0-forward-power signal under backtested priors",
+        "1998 build — aging facilities/maintenance for a luxury-quantum buyer"
+      ],
+      "catalysts": [
+        "D15 RCR baseline (realized fwd ~+3.1-3.7%/yr) — only backtest-validated positive",
+        "Tanjong Rhu GLS awarded $709M ($1,455 psf ppr) — new-launch benchmark uplift narrative, but weak spillover to a 28yr-old 67yr-lease large unit",
+        "270m to operational Tanjong Rhu TEL (TE23) — already priced in"
+      ],
+      "as_of": {
+        "price": 5250000,
+        "psf": 1999.0,
+        "beds": 4,
+        "sqft": 2626.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 1998
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 15; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }
