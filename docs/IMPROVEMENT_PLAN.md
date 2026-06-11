@@ -36,6 +36,28 @@ at ρ +0.288). Committed as the baseline. *Watch item:* `TestAgeSweetSpot::
 test_brand_new_scores_below_sweet_spot` failed once in a full-suite run, passed
 on two re-runs (order-dependent flake — likely shared cache state; not chased).
 
+**Iter 2 (12:54, [AUTO-SCORING] divergence audit → v3.6.1 yield cap):**
+re-ran the agent-vs-score join post-v3.6 (633/636 evals joined). Top Avoid-vs-
+high-score divergences fell into 3 buckets: (a) **residual artifact channel —
+FIXED**: The Vision (5,349sqft strata @ $636psf, agent high-conf Avoid) still
+scored 765 — v3.6's value damps worked (psf_value 2.6, age_value 0) but the
+fake-cheap price ÷ the project's REAL URA rent produced a fake ~8% yield and
+the yield component was the last UNCAPPED channel: **+46.7 pts**. Fix:
+`MMR_YIELD_CAP = 20`, tanh idiom matching psf_value/age_value (config.py,
+mmr.py); realistic 2.5–5% yields retain ≥80–97% linear credit. The Vision
+696→465 via `--score`. (b) **stale/bait prices just under the −25% knee**
+(Avenue South 1BR, ask ~24% below verified prints) — not actioned: lowering
+the knee would damp genuine 20–25% discounts; the rubric already says
+verify-first. (c) **intended divergence** (Tennery LRT closure, Regentville/
+Rivervale at-market asks) — qualitative facts; backtest says cheap-old-OCR
+outperforms, agent narrative is the override layer working as designed.
+Validation: 125/125 tests (2 new TestYieldCap); `backtest_ext.py` PART 4(a)
+composite forward-ρ **+0.288 (n=1460), unchanged**; Amber/Florence raw MMR
+byte-identical (their /1000 display shifted −33 from the concurrent session's
+v3.7 norm-recenter 1512→1516, not from this change). *Follow-up:* sheet/DB
+scores are stale until the next full rescore — The Vision still shows 765
+there.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
@@ -650,6 +672,57 @@ to 702–846. Residual divergence is the *intended* kind: qualitative facts the
 algo can't see (developer reputation, defects, format liquidity) and honest
 judgment differences (e.g. Hillview Park: agent Buy on freehold+MRT, score 229
 on 31-yr age — both defensible readings of the same facts).
+
+## 10. v3.7 — age recalibration: piecewise level curve + forward-return reshape (2026-06-11)
+
+Prompted by the user's two hypotheses: "an older condo is ~$50/psf/yr cheaper
+than a newer one" and "10+ year-old properties might appreciate slower."
+Both were measured on the panel instead of assumed.
+
+**(A) Level: the age-PSF discount is piecewise, and the $50 folk rule is right
+— but only for the first decade.** New measurement (now permanent as
+`backtest_ext.py` PART 1c): log(PSF) ~ floor + log_sqft + age-spline +
+**district FE**, 16.6k leasehold resales (last 2yr). All three regions agree
+independently on the shape:
+
+| segment | %/yr | $/psf/yr (@$1,743) |
+|---|---|---|
+| 0–5 | −2.87 | −$50 |
+| 5–10 | −3.18 | −$55 |
+| 10–15 | −0.46 | −$8 |
+| 15–20 | −2.63 | −$46 |
+| 20–30 | −1.03 | −$18 |
+| 30–45 | −1.74 | −$30 |
+
+The v3.4 flat ~1.6%/yr ($23–34 by region) under-adjusted new-vs-old
+comparisons ~2× inside 0–10yr and over-adjusted 10–15. Fix:
+`config.AGE_PSF_DECAY_SEGMENTS` (%/yr segments) + multiplicative normalization
+in `relative_value.py` (scales with each peer's own PSF level — per-region $
+constants retired; freehold ×0.6 heuristic retained, still unmeasurable).
+The 15–20 second leg may be a vintage-cohort effect (2006–11 stock), but for
+*level* adjustment vintage IS pricing — kept as measured. `_MAX_ADJUST_YEARS`
+25→35 (the piecewise curve extrapolates more credibly than a line).
+
+**(B) Returns: "older appreciates slower" is backwards below 30.** Forward 2yr
+CAGR by age-at-split (n=956, 3 splits), value/region/liquidity controlled:
+0–5yr cohort **+1.27%/yr** (worst — still amortizing the launch premium that
+(A) shows decaying at ~3%/yr) vs +3.3–4.1%/yr for everything 5–50yr; the
+age≥10 marginal is **+0.60pp/yr** (positive!); per-segment marginals are ≈0
+through 7–30 and turn negative only at 30+ (−0.24pp/yr per extra year). The
+old MMR age curve (3–7yr sweet spot, −0.6/yr after 15 → −9.6pts at 31yr)
+contradicted this and double-counted leasehold decay already carried by the
+lease component. New `_age_points`: ramp 0→5 over 0–7yr, plateau 7–30, mild
+−0.35/yr after 30 (covers non-lease aging: maintenance, fittings, en-bloc
+limbo). Caveat: one bull regime; PART 1c + 5c re-measure as the panel grows.
+
+**Validation.** 119/119 non-UI tests (3 test_ui failures belong to the
+concurrent ui.py rewrite session); composite forward-ρ **+0.288** unchanged;
+PART 1c reproduces the config segments exactly; full-DB rescore mean 533 →
+norm center recalibrated 1512→**1516** → mean 501/sd 152. Top-12 unchanged in
+character (all agent-Buy/Strong-Buy + 1 Neutral); crosstab separation
+preserved (avoid 504 / neutral 568 / buy 697). Age-band medians now: 0–7yr 492,
+**7–15yr 574** (plateau vintage leads, as the data says it should), 15–30yr
+470, 30+ 287 (driven by lease/value, not an arbitrary age penalty).
 
 ## Appendix — methodology caveats
 

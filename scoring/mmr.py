@@ -43,6 +43,7 @@ try:
         MMR_TXN_VOLUME_WEIGHT,
         MMR_YIELD_SLOPE_PTS_PER_PP,
         MMR_YIELD_CENTER_PCT,
+        MMR_YIELD_CAP,
         MMR_DISCOUNT_TRUST_KNEE_PCT,
         MMR_DISCOUNT_EXCESS_CREDIT,
         MMR_SUSPECT_VALUE_FACTOR,
@@ -63,6 +64,7 @@ except ImportError:
     MMR_TXN_VOLUME_WEIGHT = 6.0
     MMR_YIELD_SLOPE_PTS_PER_PP = 10.0
     MMR_YIELD_CENTER_PCT = 3.2
+    MMR_YIELD_CAP = 20.0
     MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0
     MMR_DISCOUNT_EXCESS_CREDIT = 0.25
     MMR_SUSPECT_VALUE_FACTOR = 0.25
@@ -282,9 +284,15 @@ def compute_mmr(scored: Any) -> dict:
     # v3.5b: slope 18.75→10 pts/pp — real-rent backtest (PART 5g) shows +1pp
     # yield costs ~0.75pp/yr forward price growth, so yield's NET total-return
     # edge is small; it stays weighted as (regime-hedged) carry. (config)
-    comps["yield"] = round(
-        MMR_YIELD_SLOPE_PTS_PER_PP * (gross_yield - MMR_YIELD_CENTER_PCT) * rent_conf, 2
-    ) if gross_yield > 0 else 0.0
+    # v3.6.1: tanh-capped — an implausible computed yield is a price/rent
+    # artifact (fake-cheap price ÷ real rent), the last uncapped channel after
+    # v3.6 capped psf_value/age_value. Real yields (2.5-5%) stay near-linear.
+    if gross_yield > 0:
+        yield_raw = MMR_YIELD_SLOPE_PTS_PER_PP * (gross_yield - MMR_YIELD_CENTER_PCT)
+        comps["yield"] = round(
+            MMR_YIELD_CAP * math.tanh(yield_raw / MMR_YIELD_CAP) * rent_conf, 2)
+    else:
+        comps["yield"] = 0.0
 
     # --- MRT proximity (smooth saturation, no bucket cliffs) ---
     mrt_dist = scored.mrt_distance_m
