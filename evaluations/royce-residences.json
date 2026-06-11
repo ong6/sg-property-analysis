@@ -114,6 +114,40 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-royce-residences-60200930",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Re-eval under v3.4.1+ priors confirms and strengthens the Avoid. The only validated forward signal (cheap-vs-same-size peers) is contradicted by the building itself: 12-mo prints avg ~$1,222 psf vs $1,475 asking (~21% rich). The 732 sqft 1BR format is real (a 742 sqft sibling exists) but the extra sqft is mostly balcony/void area — it rents at only ~$2,950/mo (~3.3% gross at $1.08M), barely above a 420 sqft unit. Critically, the block sits at 8 Lorong 6 Geylang — inside the even-lorong financing-restriction band where most banks cap LTV at 50-60% (full loans mainly via HLF/Singapura Finance), structurally thinning the exit pool of an already-illiquid 40-unit boutique block (~8 URA txns).",
+      "rating_rationale": "Asking ~21% ABOVE own-building 12-mo prints ($1,475 vs ~$1,222 psf) — the algo 667 rides a size-mix cheapness artifact, not real discount; Lorong 6 even-lorong bank LTV restrictions (50-60% cap, loading fees) gut exit liquidity; ~3.3% gross yield as oversized-1BR sqft earns no rent; freehold and D14 region baseline are not unit-specific edges.",
+      "red_flags": [
+        "Asking $1,475 psf vs building 12-mo prints ~$1,222 psf — paying ~21% above verified same-building comps",
+        "8 Lorong 6 Geylang: even-lorong (Lor 6-24) financing restrictions — most banks LTV 50-60%, 0.25% loading, full loans mainly HLF/Singapura Finance — structurally thin exit buyer pool",
+        "40-unit boutique block, ~8 URA transactions total — ultra-thin liquidity and pricing reliability",
+        "732 sqft 1BR is mostly balcony/void area: 742 sqft sibling rents ~$2,950/mo vs $2,700 for 420 sqft — extra sqft earns ~nothing; gross yield ~3.3%",
+        "Core red-light stretch (low even lorong) stigma weighs on tenant profile and resale",
+        "Algo cheap signal is a size-mix artifact (v3.6 discount-trust case: verified comps refute the discount)"
+      ],
+      "catalysts": [
+        "D14 RCR-fringe regional baseline +3.1%/yr fwd (generic, not unit-specific)",
+        "Freehold tenure — defensive level premium only, no forward edge",
+        "Gradual Geylang gentrification/rezoning narrative — unvalidated, no measured forward power"
+      ],
+      "as_of": {
+        "price": 1080000,
+        "psf": 1475.41,
+        "beds": 1,
+        "sqft": 732.0
+      },
+      "key_facts": {
+        "tenure": "Freehold",
+        "built_year": 2014,
+        "address": "8 Lorong 6 Geylang",
+        "total_units": 40,
+        "storeys": 8
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 12; supersedes 2026-06-09 pre-prior-fix Avoid)"
     }
   ]
 }

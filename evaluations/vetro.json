@@ -118,6 +118,39 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-vetro-500025206",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Mis-scrape question RESOLVED: listing 500025206 is live and real — it is a 1+1 PENTHOUSE whose 829 sqft strata area sits on a 474 sqft floor plate (agent: 'Freehold 1 Bedroom and Study Penthouse'); ~43% of the area is roof terrace/void. The $964 strata-psf vs $1,448-1,627 recent prints is format illusion, not value: on livable floor plate it is ~$1,686 psf, AT/ABOVE normal-unit prints. No cheap-vs-peers edge (the only validated signal) once format-adjusted; 999-yr tenure is no forward edge (v3.5 neutral). Exit profile is poor: 32-unit boutique block, niche terrace-penthouse buyer pool, ~1km to Potong Pasir/Boon Keng MRT, built 2010.",
+      "rating_rationale": "v3.6 fake-discount class confirmed in the wild: real listing, real sqft, but the deep discount is terrace area benchmarked against apartment medians. Livable-area pricing is at/above market with thin 32-unit liquidity and a niche resale format — Avoid, now with HIGH confidence (prior low-conf Avoid suspected mis-scrape; verified instead as terrace-heavy penthouse).",
+      "red_flags": [
+        "829 sqft strata = 474 sqft floor plate + ~355 sqft roof terrace — $964 psf is not comparable to project prints ($1,448-1,627)",
+        "Livable-area price ~$1,686/psf is at/above recent normal-unit prints — zero margin of safety",
+        "psf_cohort_txns=0: no same-format comps; v3.6 suspect-damp correctly applies",
+        "32-unit boutique block + penthouse-terrace format = very thin exit buyer pool",
+        "Listed as 1BR/829sqft on portal — feeds the algo a fake −35% discount (score 618 overstates it)",
+        "~970m-1.17km to nearest MRT; built 2010"
+      ],
+      "catalysts": [
+        "999-yr tenure (durability only — no forward edge per v3.5)",
+        "Sub-$800k absolute quantum with private roof terrace could appeal to a niche own-stay buyer (not an investment edge)"
+      ],
+      "as_of": {
+        "price": 799000,
+        "psf": 963.81,
+        "beds": 1,
+        "sqft": 829.0
+      },
+      "key_facts": {
+        "tenure": "999-year Leasehold",
+        "built_year": 2010,
+        "floor_plate_sqft": 474,
+        "format": "1+1 penthouse with roof terrace",
+        "recent_prints_psf": "1448-1627"
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 12; supersedes 2026-06-09 low-conf Avoid)"
     }
   ]
 }

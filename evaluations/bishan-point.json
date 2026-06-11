@@ -56,6 +56,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-bishan-point-500092093",
         "review_file": "cov_batch_12.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Re-eval under v3.4-v3.6 priors strips the 7.71% trailing CAGR (no forward power) and tests the one validated signal: cheap-vs-district-peers. It fails. The last same-size print (1,485 sqft, Aug 2024) was $2.18M / $1,467 psf; this asks $2.78M / $1,872 psf — ~27% above it and above the project all-time-high psf ($1,848, set by a smaller 1,184 sqft unit). Age-adjusted vs newer D20 4BR peers (Clover ~$2,085, Sky Habitat ~$2,102 asking, 2012/2015 builds), fair is ~$1,750-1,860 psf, so the entry is rich, not cheap. Bright Hill TEL (340m) is operational and already in the price. Gross yield ~2.6-2.8%. Score 430 (<450 threshold). At a negotiated ~$2.4M this becomes interesting; at $2.78M it is overpriced vs verified comps.",
+      "rating_rationale": "Asking ~27% above the only same-size comp (Aug 2024 $1,467 psf) and above the project record psf set by a smaller unit; large units trade at a psf discount, so true premium vs cohort exceeds the headline ~3%-over-median. Validated forward signals (cheap-vs-peers, region) are neutral-to-negative here; TEL is priced in; $2.78M quantum + 78yr lease + ~2.7% yield thin the exit. Prior Buy rested on trailing CAGR, which carries ~0 forward power.",
+      "red_flags": [
+        "Asking $1,872 psf vs last same-size print $1,467 psf (Aug 2024, 1,485 sqft, $2.18M) — ~27% premium",
+        "Above project all-time-high $1,848 psf, which a smaller 1,184 sqft unit set — size-cohort premium even larger",
+        "$2.78M quantum above the deepest D20 buyer band — slower exit",
+        "2005 build, ~78yr lease remaining — decay on the back end",
+        "Gross yield ~2.6-2.8% at asking"
+      ],
+      "catalysts": [
+        "340m to operational Bright Hill MRT (TE7) — real amenity, but priced in, not a future catalyst",
+        "Bishan/Upper Thomson school catchment sustains family owner-occupier demand",
+        "Material price negotiation (toward ~$2.4M) would restore the value case"
+      ],
+      "as_of": {
+        "price": 2780000,
+        "psf": 1872.05,
+        "beds": 4,
+        "sqft": 1485.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2005
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 12; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }
