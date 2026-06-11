@@ -85,6 +85,21 @@ TestAgeSweetSpot flake did not reproduce in 4 clean full-suite runs — the one
 failure coincided with the concurrent session rewriting data benchmarks
 mid-suite (FullScorer reads them live), not test-order pollution.
 
+**Iter 5 (13:06, [AUTO-SCORING] Buy-low tail audit → prior-regime tagging):**
+audited the other divergence tail on the rescored sheet (agent Buy, score
+low): Hillview Park 318, Costa del Sol 376, Cassia View 390, Carabelle 402,
+Altura 420… **Verdict: not a scoring bug.** Every big Buy-low rationale
+leans on trailing CAGR (6.3–7.7%) and/or freehold as forward edges — the
+exact priors the v3.4/v3.5 backtests measured at ≈0 — and ALL are dated
+2026-06-08, before v3.4.1 propagated the corrected priors into the flow
+skills. The agent of 06-08 was the miscalibrated side; the scores are
+applying the validated de-emphasis. Fix shipped: `eval_memory.py` now has
+`PRIORS_FIXED_DATE = 2026-06-10`; `staleness_note` appends a "pre-v3.4.1
+priors — re-judge before trusting" warning to every recall/join of an eval
+predating it (verified live on `--recall "Hillview Park"`). The honest
+residual: those ~600 pre-06-10 evals should be progressively re-evaluated;
+the tag stops silent trust in the meantime. 125/125 tests; no scoring change.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
