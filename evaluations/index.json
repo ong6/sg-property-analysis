@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-06-11",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -228,9 +228,9 @@
     "cassia-view": {
       "condo": "Cassia View",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "rivervale-crest": {
       "condo": "Rivervale Crest",
@@ -291,9 +291,9 @@
     "costa-del-sol": {
       "condo": "Costa Del Sol",
       "district": "D16",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "normanton-park": {
       "condo": "Normanton Park",
@@ -480,9 +480,9 @@
     "carabelle": {
       "condo": "Carabelle",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "whistler-grand": {
       "condo": "Whistler Grand",
@@ -1495,9 +1495,9 @@
     "altura": {
       "condo": "Altura",
       "district": "D23",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "villa-marina": {
       "condo": "Villa Marina",
@@ -2069,9 +2069,9 @@
     "hillview-park": {
       "condo": "Hillview Park",
       "district": "D23",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "radix": {
       "condo": "Radix",

@@ -24,6 +24,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -57,9 +58,29 @@ def _days_since(date_str):
         return None
 
 
+def _eval_lookup() -> dict:
+    """{normalized condo name: (latest_rating, latest_date)} from eval memory.
+
+    The fresh view is sorted by score — without the agent's verdict next to it,
+    a high-ranking listing the agent rated Avoid reads as a top pick (the
+    v3.6 divergence failure mode, at the UI layer)."""
+    try:
+        import eval_memory
+        idx = eval_memory.load_index().get("condos", {})
+    except Exception:
+        return {}
+    out = {}
+    for rec in idx.values():
+        name = re.sub(r"[^a-z0-9]", "", (rec.get("condo") or "").lower())
+        if name and rec.get("latest_rating"):
+            out[name] = (rec["latest_rating"], rec.get("latest_date") or "")
+    return out
+
+
 def load_fresh() -> dict:
     """Active listings first seen within FRESH_MAX_AGE_DAYS, score-annotated."""
     db = listings_db.load_db()
+    evals = _eval_lookup()
     rows = []
     for key, rec in db["listings"].items():
         if rec.get("status") == "stale":
@@ -91,6 +112,8 @@ def load_fresh() -> dict:
             "floor_level": rec.get("floor_level") or "",
             "mrt_info": rec.get("mrt_info") or "",
             "score_1000": rec.get("score_1000"),
+            "agent_rating": (er := evals.get(re.sub(r"[^a-z0-9]", "", name.lower()), ("", "")))[0],
+            "agent_eval_date": er[1],
             "scored_at": rec.get("scored_at") or "",
             "first_seen": rec.get("first_seen") or "",
             "days_old": days_old,
@@ -364,6 +387,7 @@ _PAGE = """<!DOCTYPE html>
       <label for="f-sortsel">Sort</label>
       <select id="f-sortsel" onchange="fSetSort(this.value)">
         <option value="score_1000" selected>Score</option>
+        <option value="agent_rating">Agent eval</option>
         <option value="days_old">Newest</option>
         <option value="price">Price</option>
         <option value="psf">PSF</option>
@@ -379,6 +403,7 @@ _PAGE = """<!DOCTYPE html>
   <table>
     <thead><tr>
       <th onclick="fSortBy('score_1000')" data-key="score_1000">Score</th>
+      <th onclick="fSortBy('agent_rating')" data-key="agent_rating">Agent eval</th>
       <th onclick="fSortBy('project_name')" data-key="project_name">Condo</th>
       <th onclick="fSortBy('beds')" data-key="beds">Type</th>
       <th onclick="fSortBy('price')" data-key="price">Price</th>
@@ -595,6 +620,7 @@ function renderFresh() {
   document.getElementById("f-rows").innerHTML = rows.map(r => `
     <tr${r.days_old === 0 ? ' class="isnew"' : ""}>
       <td>${scoreChip(r.score_1000)}</td>
+      <td>${agentBadge(r.agent_rating, r.agent_eval_date)}</td>
       <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${r.price_trend === "dropped" ? `<span class="badge drop" title="down from its peak ask">⬇ ${r.drop_pct ?? ""}%</span>` : ""}</td>
       <td>${r.beds ? r.beds + "BR" : "?"}${r.baths ? '<span class="dim">/' + r.baths + 'ba</span>' : ""}</td>
       <td>${fmtPrice(r.price)}</td>
