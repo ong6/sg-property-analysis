@@ -56,6 +56,37 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-carabelle-22886106",
         "review_file": "cov_batch_12.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1,819 sqft 4BR at $1,748 psf is at-market against same-size comps, not the 8% bargain the pooled median implied: the last ~1,819 sqft print was Feb 2024 at $1,598 psf ($2.908M), and escalating it at OCR-typical ~3.7%/yr puts fair value around $1,700-1,735 psf. The $1,900 pooled median that drove the prior Buy was set by a 947 sqft unit; large units structurally trade lower. D5/OCR region is a genuine positive, but a $3.18M 4BR quantum thins the exit pool and newer 99yr stock nearby (Parc Riviera ~$1,730, Twin Vew ~$1,650-1,935, Clavon ~$2,200) competes at exit.",
+      "rating_rationale": "Re-judged under v3.4-v3.6 priors. (1) Same-size comp check (verified via propertyforsale.com.sg transaction table): Feb 2024, 1,819 sqft, floor 11-15, $2.908M / $1,598 psf — asking $1,748 is ~9% above that print, i.e. roughly fair after 2yrs of OCR appreciation, not cheap. Nearest large-unit prints: 1,496 sqft Nov 2025 @ $1,829; 1,388-1,399 sqft May 2025 @ $1,843-1,858 — an 1,819 sqft unit sits below these on the size curve. The prior eval cheapness was a pooled-median artifact (the $1,900 was a 947 sqft Feb 2026 high print). (2) Priors strip the old thesis: 5.76% trailing CAGR has ~0 forward power; 999yr tenure is a level premium already in the price, not a forward edge. (3) What survives: D5 = OCR (best realized forward region, +3.7%/yr) — but that is the region effect, not unit-specific edge. (4) CRL West Coast station confirmed for 2032 (construction underway since 2024-2025) but lands at/after a 5-7yr exit and infra-future scored ~0 marginal in backtest. (5) $3.18M 4BR quantum in an OCR district materially thins the resale pool. No genuine same-size discount + thin exit + de-emphasized old edges = Neutral; near-ties are Neutral under <10% explainable forward variance.",
+      "red_flags": [
+        "Asking ~9% above the last same-size (1,819 sqft, Feb 2024) print — at-market/slightly rich once size-adjusted, the prior 8%-below-median claim was a pooled-median artifact",
+        "$3.18M quantum thins the 4BR OCR exit pool",
+        "Newer 99yr competition at exit: Parc Riviera ~$1,730 psf, Twin Vew ~$1,650-1,935, Clavon ~$2,200",
+        "No MRT in walking distance until CRL West Coast (~2032, at/past the hold window)",
+        "Algo score_1000 = 402, below the 450 threshold"
+      ],
+      "catalysts": [
+        "CRL Phase 2 West Coast station (target 2032; construction started, Clementi groundbreaking Jul 2025) — late but real connectivity fix",
+        "D5/OCR regional tailwind (best realized forward region in backtest)",
+        "One-north / Jurong Lake District employment catchment",
+        "999yr tenure preserves relative value vs ageing 99yr peers (level support, not a return edge)"
+      ],
+      "as_of": {
+        "price": 3180000,
+        "psf": 1748.21,
+        "beds": 4,
+        "sqft": 1819.0
+      },
+      "key_facts": {
+        "tenure": "999-year Leasehold",
+        "built_year": 2009
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 6; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }

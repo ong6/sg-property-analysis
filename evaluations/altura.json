@@ -58,6 +58,38 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-altura-24590653",
         "review_file": "cov_batch_25.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Altura is a fully-sold 360-unit Bukit Batok West EC (TOP ~Mar 2027) whose 4BR at $1,397 psf looks cheap vs Lumina Grand (~$1,587 psf) and Le Quest resale (~$1,635 psf) — but as a 2026 investment purchase it is structurally broken: EC rules bar subsale before TOP, bar whole-unit rental and resale during the 5yr MOP (to ~Mar 2032), and require the buyer to meet full new-EC eligibility (SC family nucleus, $16k income ceiling, no other property, owner occupation). Zero yield for ~6 years and first legal exit at the very edge of a 5-7yr hold make the EC-to-private re-rating un-monetizable inside the horizon.",
+      "rating_rationale": "Verified: (1) project sold out with recent prints ~$1,568 psf / $2.29M avg — this $1,397 psf listing sits ~12% below the project own trend, a v3.6 verify-first stale/bait flag on a sold-out development; (2) HDB EC rules: no subsale pre-TOP, pre-MOP resale only to new-EC-eligible buyers, no whole-unit rental during MOP — an investor owning any other property cannot even legally buy this unit; (3) MOP ends ~Mar 2032, so a 2026 buyer has zero rental income and no exit until year ~6 (SC/PR-only until year 10) — the hold-horizon math fails regardless of price; (4) the prior Buy rested on EC-to-private re-rating (real historical pattern) plus Tengah/JRL transformation, but v3.5 backtests show transformation narratives have no measured forward power, and the re-rating only pays after MOP, outside the window. Cheap-vs-peers is the one valid signal here and it cannot be monetized. Algo 412 (below threshold) directionally agrees.",
+      "red_flags": [
+        "EC pre-MOP: cannot sell at all until ~Mar 2032 (5yr from TOP) — exit blocked inside the 5-7yr hold window",
+        "No whole-unit rental during MOP — zero yield for ~6 years; owner occupation required",
+        "Buyer must meet new-EC eligibility (SC family nucleus, $16k income ceiling, no other property) — most investors ineligible to transact",
+        "Listing at $1,397 psf is ~12% below the sold-out project own recent prints (~$1,568) — likely stale/bait price (v3.6 verify-first)",
+        "SC/PR-only resale pool years 6-10; full privatization only ~2037",
+        "1.34km to Tengah Park MRT (JRL) — not a walk-up station"
+      ],
+      "catalysts": [
+        "EC-to-private price re-rating post-MOP (~2032) — real pattern, but pays outside the hold horizon",
+        "Tengah new-town buildout / JRL completion — narrative only, no backtested forward power (v3.5)",
+        "OCR region carries the strongest realized forward appreciation (+3.7%/yr) — accrues to whoever can actually hold to 2032+"
+      ],
+      "as_of": {
+        "price": 2000000,
+        "psf": 1396.65,
+        "beds": 4,
+        "sqft": 1432.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2027,
+        "property_type": "Executive Condo"
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 6; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }
