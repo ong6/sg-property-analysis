@@ -236,8 +236,8 @@
       "condo": "Rivervale Crest",
       "district": "D19",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-11",
+      "eval_count": 3
     },
     "sims-urban-oasis": {
       "condo": "Sims Urban Oasis",
@@ -908,8 +908,8 @@
       "condo": "The Tennery",
       "district": "D23",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-11",
+      "eval_count": 3
     },
     "the-waterline": {
       "condo": "The Waterline",
@@ -970,9 +970,9 @@
     "regentville": {
       "condo": "Regentville",
       "district": "D19",
-      "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 3
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-11",
+      "eval_count": 4
     },
     "loft-33-geylang": {
       "condo": "Loft 33 @ Geylang",
@@ -2014,8 +2014,8 @@
       "condo": "Avenue South Residence",
       "district": "D03",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-11",
+      "eval_count": 3
     },
     "sky-green": {
       "condo": "Sky Green",

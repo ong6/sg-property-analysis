@@ -112,6 +112,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tennery-500163216",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Re-eval under v3.4.1+ priors of a DIFFERENT, pricier unit ($900k / $1,466 psf, 614 sqft 1BR) than the 06-09 Avoid ($1,303 psf). The prior Avoid leaned partly on trailing losses (33 unprofitable resales) — a ~0-forward-power signal now discounted — and on an LRT-closure narrative that cuts little here (230m from the Bukit Panjang DTL terminus is genuinely strong connectivity). But the verdict still resolves Avoid for the opposite, validated reason: the strongest forward signal is cheap-vs-district-peers in OCR, and this ask is RICH, not cheap — $1,466 psf sits above the entire 12-month 1BR print range ($1,304–$1,418, avg ~$1,355; latest 614 sqft sale $870k Jan 2026) while multiple identical 614 sqft units in the same building list at $830k–$880k. Gross yield at asking ~4.0% ($3,000/mo recent deals) is OCR-typical, no edge.",
+      "rating_rationale": "Ask $1,466 psf is above the top of The Tennery own 12-month 1BR transaction range ($1,304–$1,418) and ~8% above the 12-month average — the validated cheap-vs-peers OCR signal points against this unit, not for it. Identical-format 614 sqft units in the same project are listed $70–100k cheaper, so even a motivated buyer of the project should not buy THIS unit at THIS price. Confidence is high because same-project same-size comps are abundant and unambiguous; this is listing-specific overpricing, not a near-tie.",
+      "red_flags": [
+        "Asking $1,466 psf exceeds the entire 12-month 1BR print range ($1,304–$1,418 psf; latest 614 sqft sale $870k Jan 2026)",
+        "Multiple identical 614 sqft 1BR listings in the same building at $830k–$880k — this is the most expensive 1BR on the market in the project",
+        "Structurally out-competed by Hillion Residences (newer, directly mall+MRT integrated, ~$1,754 psf median) for the same Bukit Panjang tenant/buyer pool",
+        "99-yr lease from ~2010 (~16 years gone) on a small investor-format 1BR — lease decay over a 5-7yr hold"
+      ],
+      "catalysts": [
+        "230m to Bukit Panjang MRT (DT1 Downtown Line terminus) + bus interchange — the 2019 Ten Mile Junction LRT closure narrative materially overstates the connectivity loss for this address",
+        "OCR/D23 carries the strongest realized forward base rate (~+3.7%/yr) per backtest",
+        "~4.0% gross yield at asking (recent 1BR deals ~$3,000/mo) supports a rental floor",
+        "Would re-rate toward Neutral if price negotiated to ~$830k (~$1,350 psf, in line with prints)"
+      ],
+      "as_of": {
+        "price": 900000,
+        "psf": 1466.0,
+        "beds": 1,
+        "sqft": 614.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2013
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 9; supersedes 2026-06-09 pre-prior-fix Avoid on a cheaper unit)"
     }
   ]
 }

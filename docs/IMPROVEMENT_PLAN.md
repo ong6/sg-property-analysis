@@ -144,6 +144,24 @@ superseded rating in recall/UI joins — Hillview Park still showed "Buy
 06-08" after the Neutral re-eval. `save_evaluation` now calls
 `rebuild_index()` (atomic, race-benign); index rebuilt. 125/125 tests.
 
+**Iter 9 (13:15, [AI-SCORING] re-judge the Avoid-high residuals under current
+priors, 4 parallel agents):** closing the divergence from the other side.
+Results: Regentville Avoid→**Neutral medium** (the 06-09 "at-market" claim was
+itself a size-pooling error — $1,118psf is ~6-7% below the same-size cohort
+median, the validated signal DOES fire, plus a dated CR9 2030 catalyst; but
+inside ±9% dispersion = near-tie); Tennery Avoid→**Avoid high** (ask above the
+project's entire 12-mo 1BR range; trailing-loss rationale rightly discarded,
+dead-LRT narrative moot 230m from the DTL terminus); Rivervale Avoid→**Avoid
+medium** (still top-of-range, value signal never fires); Avenue South
+Avoid→**Avoid high** (the bait listing is GONE — vindicating the 06-09 call —
+and the real $1.4M ask is ~15% ABOVE the latest same-size print). Re-eval
+ratings now rest on current-priors logic on both tails. **Deliberately NOT a
+scoring change:** the agents' "not cheap vs own prints" objection targets
+unit-level alpha while the backtest's cheap-vs-peers signal is PROJECT-level
+beta — both readings are defensible; no weight change without backtest
+evidence. Iter-8 index-sync fix observed working (index picked up all 4
+automatically).
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged

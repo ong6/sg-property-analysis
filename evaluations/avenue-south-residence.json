@@ -112,6 +112,35 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-avenue-south-residence-500162947",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Prior Avoid (2026-06-09) targeted a since-removed $900k/$1,707psf bait/mis-scrape listing — that call was vindicated. The current real 527sqft 1BR ask of $1.4M/$2,657psf is the opposite problem: a ~15-18% PREMIUM. Latest same-size prints: Apr 2026 $1.22M ($2,313psf), Jan 2026 $1.15M ($2,180psf); 12-mo project avg ~$2,252psf; 473sqft cohort trades $1,942-2,087psf. Five competing active asks for the identical 527sqft layout sit at $1.25M ($2,372psf), with more at $1.28-1.30M — the $1.4M unit is dominated within its own building. Validated forward signals (cheap-vs-district-peers, region) both point against: it is expensive vs peers, D03 is RCR (fwd +3.1%/yr, behind OCR +3.7%), and GSW transformation narrative has measured ~0 forward power. score_1000=299 agrees.",
+      "rating_rationale": "Ask is ~15% above the latest verified same-size URA print and ~18% above the 12-mo project average; five cheaper identical-layout asks exist concurrently; no validated signal supports paying a premium here (RCR region, infra narrative measured at zero forward power).",
+      "red_flags": [
+        "Ask $2,657psf vs latest 527sqft print $2,313psf (Apr 2026) — ~15% premium",
+        "12-mo project avg $2,252psf — ask is +18%",
+        "Five active competing asks at $1.25M ($2,372psf) for the same 527sqft layout",
+        "99-yr lease (2018 start) RCR — forward +3.1%/yr, behind OCR",
+        "GSW narrative priced in but future-infra measured ~0 forward power"
+      ],
+      "catalysts": [
+        "A negotiated price near $1.20-1.22M ($2,280-2,315psf) would merely be market-rate, not a value entry",
+        "Cantonment MRT (CC31) opening proximity already reflected in pricing"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 2657.0,
+        "beds": 1,
+        "sqft": 527.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2023
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 9; prior Avoid was on a since-removed bait-price listing)"
     }
   ]
 }
