@@ -58,6 +58,21 @@ v3.7 norm-recenter 1512→1516, not from this change). *Follow-up:* sheet/DB
 scores are stale until the next full rescore — The Vision still shows 765
 there.
 
+**Iter 3 (13:04, [AI-SCORING] recent-eval review → rubric/prompt yield-trust):**
+reviewed the 5 most recent evals (Avant ×2, Woodsville 28, Whistler Grand,
+Westcove). Quality is HIGH — mix-distorted CAGR caught (Avant's 9.78% headline
+vs ~3% real small-unit resales), size-artifact discounts rejected with
+psf_cohort_txns=0 (Woodsville 2,368sqft outlier), verify-first applied
+(Westcove). No weak rationales to fix. But all five independently re-derived
+the same cross-check the rubric never states, and iter 2 proved the gap bites:
+**rubric §4 said "4%+ yield excellent" with no artifact guard** — a fake 8%
+yield read as excellent. Tightened: (1) rubric §4 now has the implausible-yield
+verify-first rule (mirror of the deep-discount rule: >~5.5% gross ⇒ check ask
+vs project's own prints, rent_source real-vs-synthetic, format/sqft); (2)
+`raw_output.py` ai_review_instructions gained a `data_trust` block covering
+extreme discounts AND yields (the dossier shows raw gross_yield_pct even
+though v3.6.1 caps the score credit). 125/125 tests; no scoring change.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
