@@ -358,6 +358,65 @@ def print_recall(name: str) -> None:
                 print(f"      catalysts: {'; '.join(h['catalysts'])}")
 
 
+# Rating-frequency guardrails (audit, not quota). The honest-verdict rubric has
+# no fixed targets, but a healthy distribution over a broad scraped market
+# should roughly land in these bands; outside them = systematic drift worth a
+# look (gap #4: 2026-06 audit found Strong Buy 4/621 = dead, Neutral 55% =
+# central clustering, before the prior fixes).
+RATING_BANDS = {
+    "Strong Buy": (0.01, 0.08),
+    "Buy": (0.10, 0.35),
+    "Neutral": (0.30, 0.60),
+    "Avoid": (0.10, 0.40),
+}
+
+
+def print_eval_stats() -> None:
+    """Rating/confidence distribution audit — overall and post-priors-fix."""
+    from collections import Counter
+    cohorts = {"ALL": Counter(), f"≥{PRIORS_FIXED_DATE} (current priors)": Counter()}
+    conf = Counter()
+    n_total = 0
+    for fname in os.listdir(EVAL_DIR):
+        if not fname.endswith(".json") or fname == "index.json":
+            continue
+        data = load_condo(fname[:-5])
+        if not data or not data.get("history"):
+            continue
+        latest = data["history"][-1]
+        rating, date = latest.get("rating"), latest.get("evaluated_at") or ""
+        if not rating:
+            continue
+        n_total += 1
+        cohorts["ALL"][rating] += 1
+        conf[latest.get("confidence") or "?"] += 1
+        if date >= PRIORS_FIXED_DATE:
+            cohorts[f"≥{PRIORS_FIXED_DATE} (current priors)"][rating] += 1
+    print(f"\n{'='*70}\nEVALUATION CALIBRATION — latest rating per condo "
+          f"(n={n_total})\n{'='*70}")
+    for name, counts in cohorts.items():
+        n = sum(counts.values())
+        print(f"\n  {name}  (n={n})")
+        if not n:
+            print("    (no evaluations)")
+            continue
+        for rating in ("Strong Buy", "Buy", "Neutral", "Avoid"):
+            share = counts.get(rating, 0) / n
+            lo, hi = RATING_BANDS[rating]
+            flag = "" if lo <= share <= hi else ("  ⚠ above band" if share > hi
+                                                 else "  ⚠ below band (dead?)")
+            print(f"    {rating:<11} {counts.get(rating, 0):>4}  {share:>5.1%}"
+                  f"   band {lo:.0%}–{hi:.0%}{flag}")
+        other = {k: v for k, v in counts.items()
+                 if k not in RATING_BANDS}
+        if other:
+            print(f"    ⚠ invalid rating labels: {dict(other)}")
+    print(f"\n  Confidence mix: " + ", ".join(
+        f"{k} {v} ({v/max(1,n_total):.0%})" for k, v in conf.most_common()))
+    print("  Bands are drift alarms, not quotas — honest verdicts win; "
+          "see docs/evaluation-rubric.md.")
+
+
 def print_index() -> None:
     index = load_index()
     condos = index.get("condos", {})

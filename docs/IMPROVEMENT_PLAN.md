@@ -117,6 +117,18 @@ All 5 appended to `evaluations/` (validated fields, supersede markers). The
 Buy-low divergence tail is now resolved IN FAVOR OF THE SCORE — the remaining
 work is the long tail of ~600 pre-06-10 evals, tagged since iter 5.
 
+**Iter 7 (13:11, [FEATURE] gap #4 / Phase 5: rating-calibration audit):**
+new `python invest.py --eval-stats` (`eval_memory.print_eval_stats`): latest
+rating per condo, distribution vs drift bands (`RATING_BANDS` — alarms, not
+quotas), split ALL vs ≥PRIORS_FIXED_DATE cohort, plus confidence mix and
+invalid-label detection. First run confirms the audit's gap-#4 diagnosis on
+live data: **Strong Buy 2/636 = 0.3% (dead, below the 1–8% band)**, Neutral
+56.9% (top of band), confidence 69% medium. Rubric "Rating scale" now points
+to the audit and tells the agent the dead-label finding directly (a genuinely
+exceptional setup deserves Strong Buy; all-Neutral is also miscalibration).
+125/125 tests; no scoring change. Phase-5 remainder (verdict↔realized-return
+bands) still blocked on `calibrate_forward.py` maturing ~mid-2027.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
