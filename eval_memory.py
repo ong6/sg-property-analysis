@@ -220,6 +220,11 @@ def save_evaluation(condo: str, district: Optional[str], history_entry: dict) ->
         with open(tmp, "w") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         os.replace(tmp, path)
+    # Keep index.json in sync for direct save_evaluation callers (subagents,
+    # scripts) — recall/UI joins read the index, and a stale one keeps serving
+    # the superseded rating. Outside the slug lock: rebuild scans the whole
+    # dir and writes atomically; concurrent rebuilds are benign full snapshots.
+    rebuild_index()
     return slug
 
 

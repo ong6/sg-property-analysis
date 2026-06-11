@@ -129,6 +129,21 @@ exceptional setup deserves Strong Buy; all-Neutral is also miscalibration).
 125/125 tests; no scoring change. Phase-5 remainder (verdict↔realized-return
 bands) still blocked on `calibrate_forward.py` maturing ~mid-2027.
 
+**Iter 8 (13:13, [AUTO-SCORING] residual audit → verdict visibility + index
+bug):** post-rescore Avoid-high residuals are all the iter-2 "intended"
+bucket (Regentville 792, Tennery 763, Avenue South 746 — qualitative
+overrides / sub-knee stale asks; all listings seen 1×, so a staleness-based
+damp has no data yet — revisit when the DB has listing-age depth). The
+actionable gap was VISIBILITY: the fresh-listings UI tab (the primary "what's
+new, sorted by score" surface) showed no agent verdict — Regentville read as
+a top pick. Fixed: `ui.py load_fresh` joins eval memory (`_eval_lookup`,
+5,458/6,360 rows carry a verdict) with an Agent-eval badge column + sort in
+the fresh table. Found+fixed en route: **`save_evaluation` never refreshed
+`index.json`**, so direct-API saves (the iter-6 subagents) kept serving the
+superseded rating in recall/UI joins — Hillview Park still showed "Buy
+06-08" after the Neutral re-eval. `save_evaluation` now calls
+`rebuild_index()` (atomic, race-benign); index rebuilt. 125/125 tests.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
