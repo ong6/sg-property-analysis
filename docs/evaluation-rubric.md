@@ -120,6 +120,19 @@ PDD (D19), Woodlands RC (D25). CRL ~2030, JRL ~2028.
 demand drivers (CBD, hospitals, universities, MRT) and rental oversupply from
 nearby new launches. 2BR has the widest tenant pool.
 
+**An implausible yield is a verify-first signal, not a bonus** (the mirror of
+the deep-discount rule). Yield = rent ÷ price, so a mis-scraped/stale/bait
+price or a non-comparable format (strata villa, dual-key, combined unit)
+manufactures a spectacular yield from a perfectly real rent — e.g. a 5,349sqft
+strata unit at an artifact $636psf "earned" ~8% gross on the project's genuine
+URA 4BR rent. SG condo gross yields above ~5.5% are almost always a price or
+rent artifact: before crediting one, (a) check the ask against the project's
+own 12-month prints, (b) check `rent_source` — `ura_project_bed`/`ura_project`
+are real URA contracts, `district_*`/`fallback` are synthetic constants, and
+(c) check the unit's format/sqft is the thing the rent series actually priced.
+v3.6.1 tanh-caps the MMR yield credit, but the dossier still displays the raw
+`gross_yield_pct` — the number itself stays wrong until you verify it.
+
 ### 5. Costs & taxes
 
 `roi_projections` / `roi_sensitivity` already include BSD, ABSD, SSD, property

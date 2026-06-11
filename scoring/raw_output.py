@@ -486,6 +486,16 @@ def generate_raw_analysis(
             "reserve HIGH confidence for decisive physical/catalyst evidence, treat near-ties "
             "as Neutral."
         ),
+        "data_trust": (
+            "Extreme metrics are VERIFY-FIRST signals, not findings (v3.6/v3.6.1): in a "
+            "scraped DB the deepest 'discounts' and fattest 'yields' are usually artifacts — "
+            "mis-scraped sqft/beds, strata/dual-key/combined formats benchmarked against "
+            "apartment medians, stale or bait prices. A discount beyond ~-25% vs comps, a "
+            "gross yield above ~5.5%, or psf_cohort_txns=0 behind either ⇒ verify the ask "
+            "against the project's own 12-month URA prints and confirm the unit format/sqft "
+            "before crediting it. The scorer damps these channels, but the displayed "
+            "gross_yield_pct and premium percentages are raw."
+        ),
         "steps": steps_by_mode[mode],
         "agent_field_guide": {
             "summary": "2-3 sentence investment thesis"
