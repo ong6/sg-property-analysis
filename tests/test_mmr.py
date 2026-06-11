@@ -69,6 +69,33 @@ class TestSymmetry:
         assert abs(over.mmr_components["psf_value"] + under.mmr_components["psf_value"]) < 1.0
 
 
+class TestYieldCap:
+    """v3.6.1: an implausible computed yield (fake-cheap price / real rent)
+    must saturate instead of dominating the score — the last uncapped artifact
+    channel after v3.6 capped both value components."""
+
+    def test_artifact_yield_saturates_at_cap(self):
+        from config import MMR_YIELD_CAP
+        # ~8.6% gy: $635psf strata artifact with a real apartment rent
+        s = _score(dict(BASE, price=3_400_000, sqft=5349, psf=636, beds=4,
+                        monthly_rent=24_000))
+        assert s.mmr_components["yield"] <= MMR_YIELD_CAP
+
+    def test_realistic_yield_nearly_linear(self):
+        from config import (MMR_YIELD_SLOPE_PTS_PER_PP, MMR_YIELD_CENTER_PCT)
+        from scoring.mmr import compute_mmr
+        # Same listing, controlled gy values — realistic yields must keep
+        # >=90% of their linear score (the cap only bites artifacts).
+        s = _score(dict(BASE))
+        for gy, min_retention in ((2.5, 0.95), (3.8, 0.95), (4.7, 0.80)):
+            s.estimated_gross_yield = gy
+            s.rent_source = "ura_project_bed"
+            comps = compute_mmr(s)["components"]
+            linear = MMR_YIELD_SLOPE_PTS_PER_PP * (gy - MMR_YIELD_CENTER_PCT) * 0.95
+            assert abs(comps["yield"]) >= min_retention * abs(linear)
+            assert (comps["yield"] >= 0) == (linear >= 0)
+
+
 class TestAgeSweetSpot:
     def test_brand_new_scores_below_plateau(self):
         # v3.7 measured shape: young (<7yr) below plateau (launch-premium

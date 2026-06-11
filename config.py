@@ -122,6 +122,15 @@ MMR_TXN_VOLUME_WEIGHT = 6.0
 # ura_project 0.8) replace the synthetic district constants (0.5).
 MMR_YIELD_SLOPE_PTS_PER_PP = 10.0
 MMR_YIELD_CENTER_PCT = 3.2
+# v3.6.1: tanh saturation for the yield component (same idiom as RELVALUE_CAP).
+# Realistic SG condo gross yields (~2.5-5%) sit in the near-linear range; a
+# computed yield far outside it is almost always a price/rent artifact — the
+# fake-cheap price of a mis-scraped/strata listing divided into the project's
+# REAL URA rent yields a fake 7-8% gy. After v3.6 capped both value components,
+# this was the one uncapped channel left: The Vision (5,349sqft strata @
+# $636psf, agent: high-confidence Avoid) earned +46.7 yield pts and still
+# ranked 765/1000 with psf_value/age_value damped to ~0.
+MMR_YIELD_CAP = 20.0
 MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district median
 # Relative value is a heuristic (age slope × district-peer median) with heavy
 # tails — a single bad peer-median estimate or a mis-tagged sqft can imply a
