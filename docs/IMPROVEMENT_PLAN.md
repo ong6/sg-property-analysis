@@ -170,6 +170,23 @@ fresh tab (verified: Hillview Park/Carabelle/Regentville show Neutral
 2026-06-11, Costa Del Sol shows Avoid — all were stale Buys/Avoids in the
 CSV). 125/125 tests.
 
+**Iter 11 (13:20, [AUTO-SCORING] post-fix audit of v3.6.1 at DB scale —
+no action needed):** diffed the 06-10 (pre-cap) vs 06-11 (post-cap) full
+rescores in `mmr_history.csv` (6,338 joined): mean drift **−2.1** (cap is
+tail-only, as designed). All top-10 droppers fit the artifact profile —
+The Vision −384 (the target), Thomson Grand 4BRs −277/−278 (strata format,
+known v3.6 offender), Suites @ Katong/East Coast "1BRs" −267..−282.
+Spot-verified Suites @ Katong: an 807sqft "1BR" gets a sqft-driven rent
+estimate of $4,963/mo (real fringe-1BR rents ~$3k) → fake ~6% gy → pre-cap
++27pts; the cap compresses it to +9.7. A GENUINE 5% yielder loses only
+~3–5pts. Gains side (Verde Joo Chiat +191) traces to the concurrent
+session's benchmark refresh, not the cap (a cap cannot add credit).
+**Verdict: working as designed; nothing actionable — logged per the
+honest-verdict rule.** Residual idea parked: sqft-driven rent estimates for
+suspect bed/sqft combos are themselves the upstream artifact (the rent
+estimator could damp toward the BED-count rent when bedroom_sqft_mismatch
+fires) — needs rental-cache evidence, deferred.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
