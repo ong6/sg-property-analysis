@@ -56,6 +56,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-costa-del-sol-500075840",
         "review_file": "cov_batch_12.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "4BR 2,045 sqft asking $4.5M / $2,200 psf — above the project 12-month high print ($2,170, set by a 1,346 sqft unit) and ~35-48% over verified large-unit comps (1,755 sqft sold Nov 2025 at $1,482 psf / $2.6M; recent large 4BRs ~$2.8M). Under current priors the one robust signal (cheap-vs-peers) reads expensive, the $4.5M quantum thins the exit pool, and ~70yr remaining lease (from 1997) is a binding decay headwind into a 10,000+-home Bayshore supply wave.",
+      "rating_rationale": "Verified via 99.co/Homejourney/EdgeProp aggregates: 12-mo transacted PSF $1,482-$2,170 (avg ~$1,884); large units trade at the LOW end, yet this large unit asks $2,200 psf — a decisive premium, not value. Prior 06-08 Buy (different $3.0M/1,475sqft unit) leaned on 6.68% trailing CAGR, which backtests show has ~0 forward power. Bayshore MRT (operational 2024) is already priced; the pending precinct pipeline (Bayshore Drive GLS ~1,280 units, Vela Bay 515 units, ~10k homes total) adds resale/rental competition over a 5-7yr hold. Algo 201 reflects legitimate penalties. Confidence medium not high: project fundamentals are sound and a deep negotiation toward ~$1,600-1,700 psf would change the math — but at asking this is an Avoid.",
+      "red_flags": [
+        "Asking $2,200 psf exceeds the 12-mo high print and is ~35-48% above large-unit comps (1,755sqft @ $1,482 psf, Nov 2025)",
+        "$4.5M quantum materially thins the exit buyer pool",
+        "~70yr lease remaining (from 1997) — accelerating decay over hold + exit horizon",
+        "Bayshore precinct ~10,000-12,500 new homes (Bayshore Drive GLS, Vela Bay 2026) — direct supply competition",
+        "Trailing 6.68% CAGR (prior Buy rationale) has ~0 forward power under v3.4+ backtests"
+      ],
+      "catalysts": [
+        "Bayshore MRT TE29 240m away — real but operational since 2024, largely priced in",
+        "Bayshore precinct rejuvenation (retail, integrated hub) lifts the locale long-term",
+        "OCR/D16 region carries the strongest realized forward baseline (+3.7%/yr)"
+      ],
+      "as_of": {
+        "price": 4500000,
+        "psf": 2200.49,
+        "beds": 4,
+        "sqft": 2045.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2004
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 6; supersedes 2026-06-08 pre-prior-fix Buy on a different $3.0M unit)"
     }
   ]
 }

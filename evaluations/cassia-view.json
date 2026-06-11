@@ -60,6 +60,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-cassia-view-500122562",
         "review_file": "cov_batch_33.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 72-unit freehold boutique (2001) near Dakota MRT asking $1,617 psf — exactly the last transacted print (Aug 2025: 1,206 sqft @ $1.95M / $1,618 psf, possibly the same unit re-listed) and only ~1% below the trailing 12-month average of ~$1,633 psf. No verified mispricing, plain RCR baseline exposure (+3.1%/yr forward), and very thin liquidity (14 txns/5yr, no print in ~10 months).",
+      "rating_rationale": "The 2026-06-08 Buy rested on signals backtested to zero: freehold (level premium, no forward edge), 6.3% trailing CAGR on 14 txns (no forward power), and a ~2% sub-median PSF (noise). Verified via SRX/99.co/EdgeProp: last print Aug 2025 at $1,618 psf for 1,206 sqft — the ask matches it to the dollar, so there is no cheap-vs-district-peers edge, the one robust signal. Paya Lebar airbase redevelopment begins 2030+ (MINDEF), beyond a 5-7yr hold; PLQ uplift is already priced. What remains is fair-priced RCR exposure with boutique-block exit risk — Neutral. Medium confidence: facts well verified, but <10% of forward variance is explainable.",
+      "red_flags": [
+        "Ask equals the last transacted print (Aug 2025) — zero discount; possibly the same unit re-listed at its purchase price",
+        "No transaction since Aug 2025; 14 URA txns in 5yr across 72 units — thin, slow exit",
+        "2001 build (25 yrs) — rising maintenance, dated stock vs nearby new launches",
+        "Geylang-fringe address still discounts some buyer pools"
+      ],
+      "catalysts": [
+        "560m to Dakota MRT (CC8)",
+        "RCR forward baseline +3.1%/yr (backtest-validated)",
+        "Paya Lebar airbase 800ha redevelopment — but from 2030 or beyond, outside the hold horizon",
+        "Freehold 72-unit site retains long-run en-bloc optionality (optionality, not a plan)"
+      ],
+      "as_of": {
+        "price": 1948888,
+        "psf": 1617.33,
+        "beds": 3,
+        "sqft": 1205.0
+      },
+      "key_facts": {
+        "tenure": "Freehold",
+        "built_year": 2001
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 6; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }

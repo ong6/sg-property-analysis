@@ -100,6 +100,23 @@ predating it (verified live on `--recall "Hillview Park"`). The honest
 residual: those ~600 pre-06-10 evals should be progressively re-evaluated;
 the tag stops silent trust in the meantime. 125/125 tests; no scoring change.
 
+**Iter 6 (13:07, [AI-SCORING] re-evaluate the Buy-low cohort under current
+priors, 5 parallel web-research agents):** the five biggest "agent Buy, score
+low" divergences were re-judged with the v3.4.1+ priors and fresh web comps.
+**0/5 stale Buys survived:** Hillview Park Buy→**Neutral** (ask exactly at the
+verified 12-mo average; freehold/CAGR de-credited, 184-unit thin exit),
+Cassia View Buy→**Neutral** (ask = last print Aug-2025, 72-unit block, no
+edge), Carabelle Buy→**Neutral** (the "8% discount" was a pooled-median size
+artifact — last same-size print $1,598psf makes the $1,748 ask at-market),
+Costa Del Sol Buy→**Avoid** (active listing is now a $4.5M unit asking ~35-48%
+above large-unit comps + 10k-home Bayshore supply; algo's 201 was right),
+Altura Buy→**Avoid high** (EC mechanics: 2026 buyer of a 2027-TOP unit must
+qualify as a new-EC purchaser, zero rent through MOP, exit blocked to ~2032 —
+outside the 5-7yr horizon entirely; the old eval never checked transactability).
+All 5 appended to `evaluations/` (validated fields, supersede markers). The
+Buy-low divergence tail is now resolved IN FAVOR OF THE SCORE — the remaining
+work is the long tail of ~600 pre-06-10 evals, tagged since iter 5.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged

@@ -56,6 +56,37 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-park-25215607",
         "review_file": "cov_batch_36.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 1995 3BR (1,432 sqft) 340m from Hillview MRT, asking $1,563 psf — verified exactly at the 12-month transacted average (~$1,571 psf, range $1,529-$1,614, SRX/99.co) and the URA median. Under current backtested priors the prior Buy collapses: the 6.5%/yr trailing CAGR has ~0 forward power and freehold is a level premium already in the price, not a return edge. What remains is the generic OCR/D23 forward prior vs a 31-year-old, thin-liquidity 184-unit estate at a $2.24M quantum — a fair-value hold, not an edge.",
+      "rating_rationale": "Ask at the URA median / 12-mo average is fair value, not cheapness — the robust forward signal (cheap-vs-district-peers, age/size-adjusted) is absent. Prior Buy leaned on trailing 6.5% CAGR (22 txns) and freehold, both backtested ~0 forward edges. Positives: OCR region prior (+3.7%/yr realized fwd), 340m DTL access, genuine 22-txn comp base confirming the price is real (not a bait artifact). Negatives: 184 units with only ~5 sales Aug 2024-Jun 2025 (thin exit), 31-yr age/maintenance, $2.24M quantum on a 1,432 sqft 3BR narrows the D23 buyer pool, no en-bloc or area catalyst beyond existing HillV2/Rail Corridor amenity. Algo 318 overstates the negative but direction (no edge) agrees.",
+      "red_flags": [
+        "Built 1995 (~31yr) — aging fittings, rising maintenance, dated facilities",
+        "Thin liquidity: 184-unit dev, ~5 transactions Aug 2024-Jun 2025 — slow exit on a 5-7yr horizon",
+        "$2.24M quantum for an OCR D23 3BR — shallow buyer pool for large old-freehold units",
+        "Ask at median = fair value; no cheap-vs-peers edge, the one robust forward signal",
+        "No en-bloc activity or process underway"
+      ],
+      "catalysts": [
+        "OCR/D23 region prior: realized forward ~+3.7%/yr, strongest regional baseline",
+        "340m to Hillview MRT (DTL) — durable transit premium",
+        "HillV2 / Rail Corridor / nature-fringe lifestyle draw (existing amenity, not new)",
+        "Long-shot freehold en-bloc optionality on a 1995 CDL site (no current activity)"
+      ],
+      "as_of": {
+        "price": 2238000,
+        "psf": 1562.85,
+        "beds": 3,
+        "sqft": 1432.0
+      },
+      "key_facts": {
+        "tenure": "Freehold",
+        "built_year": 1995
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 6; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }
