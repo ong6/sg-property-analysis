@@ -1081,6 +1081,8 @@ Examples:
                        help="Recall past evaluations for a condo by name (fuzzy)")
     parser.add_argument("--list-evals", action="store_true",
                        help="List all stored evaluations (condo, rating, date)")
+    parser.add_argument("--eval-stats", action="store_true",
+                       help="Rating/confidence distribution audit vs calibration bands")
     parser.add_argument("--no-save-eval", action="store_true",
                        help="Do not auto-save evaluations during --from-review")
 
@@ -1382,6 +1384,11 @@ Examples:
     if args.list_evals:
         import eval_memory
         eval_memory.print_index()
+        return
+
+    if args.eval_stats:
+        import eval_memory
+        eval_memory.print_eval_stats()
         return
 
     # --- Listings sheet/database handlers ---

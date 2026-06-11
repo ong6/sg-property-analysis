@@ -208,6 +208,14 @@ Always set `rating` AND `confidence`, and explain the rating in
 `rating_rationale` (it renders directly under the verdict). **"No buys in this
 batch" is a valid scan outcome** — don't manufacture a winner.
 
+**Calibration audit:** `python invest.py --eval-stats` shows the rating and
+confidence distribution against drift bands (overall + post-2026-06-10
+current-priors cohort). The bands are alarms, not quotas — but if Strong Buy
+is at ~0% across hundreds of evals (it is, 2026-06: 0.3%), the label has gone
+dead: a genuinely exceptional setup (deep verified discount + dated catalyst +
+deep liquidity) deserves it, and grading everything Neutral is its own form of
+miscalibration. Use the full scale; reserve extremes for evidence, not vibes.
+
 ## agent_evaluation fields
 
 ```json
