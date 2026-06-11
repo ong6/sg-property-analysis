@@ -164,10 +164,16 @@ def load_rankings() -> dict:
         except (json.JSONDecodeError, OSError):
             pass
 
+    # Live eval ratings override the fight-time CSV snapshot — re-evaluations
+    # land between arena runs and the stale verdict is exactly what this
+    # column exists to prevent.
+    evals = _eval_lookup()
+
     out = []
     for r in rows:
         rec = details.get(r.get("url", ""), {})
         name = r.get("project_name") or rec.get("project_name") or rec.get("title") or "?"
+        live = evals.get(re.sub(r"[^a-z0-9]", "", name.lower()))
         maps_query = urllib.parse.quote(f"{name} condo Singapore")
         out.append({
             "bracket": r.get("bracket") or "open",
@@ -183,8 +189,8 @@ def load_rankings() -> dict:
             "price": int(float(r["price"])) if r.get("price") else None,
             "psf": float(r["psf"]) if r.get("psf") else None,
             "district": r.get("district") or rec.get("district") or "",
-            "agent_rating": r.get("agent_rating") or "",
-            "agent_eval_date": r.get("agent_eval_date") or "",
+            "agent_rating": (live[0] if live else r.get("agent_rating")) or "",
+            "agent_eval_date": (live[1] if live else r.get("agent_eval_date")) or "",
             "sqft": rec.get("sqft"),
             "built_year": rec.get("built_year"),
             "tenure": rec.get("tenure") or "",
