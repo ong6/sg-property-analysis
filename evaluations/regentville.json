@@ -162,6 +162,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-25625664",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The 06-09 Avoid rested on \"ask is at the $1,167 market average\" — but that was the size-pooled average (mixing 1,500+ sqft low-psf units). Against the correct same-size cohort (1,151-1,162 sqft, 12-mo median ~$1,198 psf, 9 prints), the $1,118 ask is a genuine ~6-7% discount, so the strongest validated forward signal (cheap-vs-peers in OCR; D19 realized fwd +3.7%/yr) does fire — and the backtest shows cheap old OCR leaseholds outperformed, contradicting the lease-decay narrative. But the cohort band spans $1,066-$1,258 (±9%) including a Mar 2026 print BELOW the ask, so the discount sits inside cohort noise; with <10% of forward variance explainable, this is a near-tie, not an edge — Neutral.",
+      "rating_rationale": "Upgrade from Avoid: the prior at-market claim was a size-pooling error — $1,118 psf is ~6-7% below the same-size 12-mo median (~$1,198, n=9), a real verified discount in the best forward region (OCR), with deep liquidity (580 units, 131 URA txns), low $1.3M quantum, and a dated CR9 Serangoon North catalyst (2030, 920m) inside the 5-7yr hold. Held back from Buy: the discount is modest and within the cohort's ±9% dispersion (Mar 2026 printed $1,066 — below the ask), the CR9 walk is marginal at 11 min, ~69-yr lease (~63 at exit) narrows the late buyer pool, and no en-bloc prospect.",
+      "red_flags": [
+        "Same-size cohort 12-mo band is wide ($1,066-$1,258 psf); Mar 2026 transacted $1,066 — the ask is a premium to the most recent low print",
+        "99-yr from 1996 (~69 yrs left, ~63 at exit) — buyer-pool narrowing is gradual but real",
+        "CR9 is 920m / 11-min walk — outer edge of MRT benefit; no rail today",
+        "No en-bloc prospect (forum chatter only, 2023)"
+      ],
+      "catalysts": [
+        "CR9 Serangoon North (Cross Island Line) opens 2030 — dated, inside the hold window",
+        "Verified ~6-7% discount to same-size 12-mo comps in OCR, the strongest backtested forward signal",
+        "Deep liquidity: 580 units, 131 URA txns, ~9 same-size prints/yr; low $1.3M quantum keeps the exit pool broad",
+        "5yr resale CAGR 7.6%/yr (no forward power per backtest, but evidences sustained demand)"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1117.8,
+        "beds": 2,
+        "sqft": 1163.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2000
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 9; supersedes 2026-06-09 pre-prior-fix Avoid)"
     }
   ]
 }

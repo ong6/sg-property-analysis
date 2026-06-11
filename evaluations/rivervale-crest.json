@@ -112,6 +112,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-25282406",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Re-verified under v3.4.1+ priors: $1,111 psf ask is STILL at the very top of the 12mo transacted range ($953-$1,112, avg $1,057) and ~8% above the 2BR-specific comp average (~$1,024-1,028 psf). The one backtest-validated forward signal (cheap-vs-district-peers in OCR) does not fire — this unit is expensive vs its own project. The algo 750 rests on a district-level age-adjusted discount contradicted by project prints; yield ~3.4-3.6% gross is unremarkable, lease ~76yr and LRT-only access unchanged.",
+      "rating_rationale": "Avoid confirmed: not cheap vs verified project/2BR comps (ask top-of-range, +5-8% over avg), so the D19 OCR regional tailwind has no unit-level value edge to ride; 2003 99-LH (~76yr) decay plus Rumbia-LRT-only connectivity cap the exit; no new Sengkang catalyst since the prior eval. Would re-rate Neutral only if transacted nearer ~$1,050 psf.",
+      "red_flags": [
+        "Ask $1,111 psf at top of 12mo range ($953-$1,112, avg $1,057) — confirmed not cheap vs real comps",
+        "2BR-specific comps average ~$1,024-1,028 psf — ask ~8% above",
+        "2003 build, ~76yr lease left — accelerating leasehold decay over hold + exit",
+        "LRT-only (Rumbia 280m), no direct MRT — narrower tenant/buyer pool",
+        "score_1000=750 driven by district age-adjusted discount contradicted by project-level prints"
+      ],
+      "catalysts": [
+        "D19 OCR — favorable forward region (+3.7%/yr realized) but requires a unit-level discount to capture",
+        "Rivervale Mall at doorstep — daily amenities",
+        "Low $1.1M quantum keeps the HDB-upgrader pool deep IF priced to comps (~$1,050 psf)"
+      ],
+      "as_of": {
+        "price": 1100000,
+        "psf": 1111.11,
+        "beds": 2,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2003
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 9; supersedes 2026-06-09 pre-prior-fix Avoid)"
     }
   ]
 }
