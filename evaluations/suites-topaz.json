@@ -60,6 +60,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-topaz-500134972",
         "review_file": "batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 388 sqft freehold shoebox asking $720k / $1,856 psf — roughly 6% ABOVE the last same-size print in the project (388 sqft at $1,752 psf / $680k) and above the entire 12-month transacted range ($1,079-$1,703 psf). Under current priors the only validated forward edges are cheap-vs-same-size-peers (fails: priced at a premium) and region (D12 RCR +3.1%, generic). Freehold is no forward edge. Gross yield ~3.8-4.3% on realistic $2,300-2,600/mo rent is not enough to carry the exit risk of a sub-400sqft unit in a 46-unit boutique block (15 URA txns ever) in a Balestier market flagged for micro-unit oversupply and shoebox financing friction.",
+      "rating_rationale": "Priced above verified same-size comps (no value edge under v3.4+ priors); thinnest-liquidity segment (sub-400sqft shoebox, 46-unit block, 15 lifetime URA txns); Balestier micro-unit oversupply/GFA-cap area with bank financing friction on shoeboxes; only tailwind is the generic D12 RCR region effect; ~4% gross yield does not compensate exit risk over a 5-7yr hold.",
+      "red_flags": [
+        "Ask $1,856 psf vs last same-size 388sqft print $1,752 psf ($680k) — ~6% premium, not a discount",
+        "Ask sits above the entire 12-month transacted psf range ($1,079-$1,703, avg $1,391 mixed sizes)",
+        "Sub-400sqft shoebox: thinnest resale demand, some banks reluctant to finance, MOP/micro-unit oversupply in Balestier (one of nine GFA-capped areas)",
+        "Boutique 46-unit block with only 15 lifetime URA transactions — structurally illiquid, trailing 7.5% CAGR statistically meaningless (and trailing appreciation has ~0 forward power)",
+        "750m to Potong Pasir MRT — walkable but not transit-doorstep"
+      ],
+      "catalysts": [
+        "D12 RCR fringe region effect (+3.1%/yr realized forward) — the one validated tailwind",
+        "Low $720k absolute quantum keeps the entry-investor buyer pool nominally wide",
+        "Freehold tenure (optionality only; no forward return edge under full-panel backtest)"
+      ],
+      "as_of": {
+        "price": 720000,
+        "psf": 1856.0,
+        "beds": 1,
+        "sqft": 388.0
+      },
+      "key_facts": {
+        "tenure": "Freehold",
+        "built_year": 2013
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 12; prior eval was a different 1,463sqft unit)"
     }
   ]
 }

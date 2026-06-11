@@ -60,6 +60,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-orie-500107836",
         "review_file": "cov_batch_14.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Re-eval under v3.4.1+ priors: the prior Buy (medium) was on a since-removed 1,367sqft 4BR at $2,484 psf (~7% below the ~$2,669 launch median) — that discount WAS the validated edge. The current 4BR (1,216 sqft, $4.10M / $3,372 psf) asks ABOVE the project entire 12-month transacted band ($2,395-3,044 psf, avg ~$2,699) and ~25% above the two other live 4BR asks in the same project ($2,691 / $2,742 psf). Price/sqft pairing is internally consistent and the listing is real, but it is a ~25% premium to own-project median: the one backtested forward signal (cheap-vs-peers) is inverted, project demand strength does not transfer to an above-band ask, and new-launch appreciation narrative carries no resale-proven forward power. Algo score_1000 = 245 (well below the 450 threshold) agrees.",
+      "rating_rationale": "Asks $3,372 psf vs project 12-mo transacted avg ~$2,699 (range $2,395-3,044) — above the entire band; ~25% over sibling 4BR asks ($2,691-2,742 psf); cheap-vs-peers edge inverted; D12 RCR baseline (+3.1%/yr) cannot absorb a ~25% entry premium over a 5-7yr hold; score_1000 245.",
+      "red_flags": [
+        "Ask $3,372 psf exceeds the project entire 12-month transacted range (max ~$3,044)",
+        "~25% above the two other live 4BR asks in the same project",
+        "99-yr leasehold new launch, TOP ~2028-2030 — no rental income for years of the hold",
+        "$4.10M quantum above the deep-liquidity band for D12",
+        "Prior Buy rationale (below-median entry) no longer applies — that unit is gone"
+      ],
+      "catalysts": [
+        "410m to Braddell MRT (NS18), mature Toa Payoh",
+        "Strong project demand base (~680/777 sold, ~740-txn base) — but priced in at this ask",
+        "D12 RCR forward baseline +3.1%/yr (accrues to fairly-priced entries, not above-band ones)"
+      ],
+      "as_of": {
+        "price": 4100000,
+        "psf": 3372.0,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": null
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 12; prior Buy was a cheaper since-removed 4BR)"
     }
   ]
 }

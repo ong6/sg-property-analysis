@@ -312,9 +312,9 @@
     "bishan-point": {
       "condo": "Bishan Point",
       "district": "D20",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "trevista": {
       "condo": "Trevista",
@@ -1986,8 +1986,8 @@
       "condo": "Suites @ Topaz",
       "district": "D12",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "hillview-heights": {
       "condo": "Hillview Heights",
@@ -3078,8 +3078,8 @@
       "condo": "Royce Residences",
       "district": "D14",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-11",
+      "eval_count": 3
     },
     "kingsford-waterbay": {
       "condo": "Kingsford Waterbay",
@@ -3603,8 +3603,8 @@
       "condo": "Vetro",
       "district": "D12",
       "latest_rating": "Avoid",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-11",
+      "eval_count": 3
     },
     "regent-grove": {
       "condo": "Regent Grove",
@@ -3616,9 +3616,9 @@
     "the-orie": {
       "condo": "The Orie",
       "district": "D12",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-06-11",
+      "eval_count": 2
     },
     "d-casita": {
       "condo": "D'Casita",

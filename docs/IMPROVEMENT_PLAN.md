@@ -187,6 +187,22 @@ suspect bed/sqft combos are themselves the upstream artifact (the rent
 estimator could damp toward the BED-count rent when bedroom_sqft_mismatch
 fires) — needs rental-cache evidence, deferred.
 
+**Iter 12 (13:21, [AI-SCORING] next-5 stale-eval batch, 5 parallel agents):**
+Vetro Avoid(low)→**Avoid high** — the open mis-scrape mystery RESOLVED: the
+listing is real but it's a 1+1 penthouse with 829 strata sqft on a 474sqft
+livable floor plate; the "$964psf / −35%" is roof-terrace illusion (~$1,686/
+psf livable, at/above the $1,448–1,627 prints). Royce Avoid→**Avoid high**
+(ask ~21% ABOVE own prints — the "cheap" read was size-mix artifact — plus
+even-lorong Geylang bank-LTV restrictions gutting the exit pool). Suites @
+Topaz →**Avoid medium** (new 388sqft unit asks above its entire 12-mo range).
+Two more pre-priors Buys fell: Bishan Point Buy→**Avoid medium** (ask ~27%
+above last same-size print; operational TEL priced in), The Orie Buy→**Avoid
+high** (active 4BR above the project's whole transacted band — the cheap
+listing the Buy relied on is gone). Running tally of the stale-eval
+re-judgments (iters 6+9+12): **14 re-evals, 0 pre-prior Buys survived, 2
+Avoids softened to Neutral; ratings now consistently keyed to ask-vs-own-
+prints + region rather than trailing CAGR/freehold/headline discounts.**
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
