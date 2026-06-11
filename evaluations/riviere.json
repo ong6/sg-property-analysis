@@ -58,6 +58,37 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-riviere-500046464",
         "review_file": "cov_batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 560 sqft 1BR asking $1.8M / $3,214 psf — the most expensive of 9 current Riviere 1BR asks (siblings $1.49M–$1.70M / $2,661–$3,034 psf) and ~18% above the project 12-mo median ($2,730 psf). All 34 1BR prints ever are 2021–23 developer new-sales topping out at $3,266 psf (31–40th floor); zero 1BR resales have ever cleared, so this ask is 2023 launch pricing into an untested exit. Gross yield ~3.4% (URA 1BR rents $4.6–5.7k, median ~$5.1k). Under current priors the only validated signals — cheap-vs-peers and region — both read negative: expensive vs own-project comps, and CCR-adjacent $3.2k psf pricing in an RCR district carries CCR-like compression risk (realized fwd CCR +1.9%/yr).",
+      "rating_rationale": "Cheap-vs-peers (the strongest validated forward signal) is strongly negative: priciest of 9 sibling 1BR asks, +18% vs 12-mo project median, asking the 2023 developer top-of-stack print. No 1BR resale has ever transacted — exit untested for a $1.8M investor-only product. ~3.4% gross yield. Prior 2026-06-08 Buy was on a different, cheaper listing ($1.49M/$2,661 psf) and led with +5.67%/yr trailing CAGR, a ~0-forward-power signal under v3.4+ priors; with that stripped and 1-yr appreciation actually -4.0% (momentum -0.96), no thesis survives.",
+      "red_flags": [
+        "Most expensive of 9 current Riviere 1BR asks; ~18% above 12-mo project median PSF",
+        "Zero 1BR resale transactions ever (all 34 prints are 2021-23 developer new-sales) — completely untested resale exit",
+        "Asks 2023 high-floor developer pricing ($3,180–$3,266 psf prints) with zero appreciation since; project 1-yr appreciation -4.0%, momentum -0.96",
+        "$1.8M quantum for a 1BR = niche investor-only buyer pool at a price where 2BRs exist elsewhere",
+        "~3.4% gross yield (median 1BR rent ~$5.1k/mo)",
+        "CCR-like $3.2k psf pricing in RCR — compression risk (realized fwd CCR only +1.9%/yr)"
+      ],
+      "catalysts": [
+        "580m to Havelock MRT (TE16), Great World adjacency",
+        "Greater Southern Waterfront long-run narrative (note: infra/future score backtests ≈0 forward power)",
+        "Frasers build quality / riverfront scarcity supports rents"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 3214.0,
+        "beds": 1,
+        "sqft": 560.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2023
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 15; supersedes 2026-06-08 pre-prior-fix Buy)"
     }
   ]
 }

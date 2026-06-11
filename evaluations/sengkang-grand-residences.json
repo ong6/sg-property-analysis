@@ -58,6 +58,36 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sengkang-grand-residences-60224170",
         "review_file": "cov_batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-11",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "4BR (1,324 sqft) asking $3.79M / $2,862 psf at an integrated D19 development whose trailing 12-month prints run $1,875-$2,210 psf (avg ~$2,027, project median $2,067 on 367 txns). The ask is +29% above the highest print in a year, +41% vs the 12-month average, and +27% above an identical-size 4BR listed in the same building at $2.99M ($2,258 psf). The MRT/mall integration is a level premium already embedded in the project base PSF; paying OCR-record pricing on top of it is the opposite of the validated cheap-vs-peers signal.",
+      "rating_rationale": "Validated forward signals are cheap-vs-district-peers and region; this listing maximally violates the first. IOD premium is priced-in (level, not a return edge). $3.79M quantum is far above the D19 4BR band - extremely thin exit pool in Buangkok. Resale CAGR ~2.9% is OCR-typical with no growth edge to grow into a ~40% entry premium over verified comps within a 5-7yr hold. Cheaper identical units in the same project dominate this one outright.",
+      "red_flags": [
+        "Asking $2,862 psf vs trailing 12-month prints $1,875-$2,210 (avg ~$2,027) - ~30-40% over verified comps",
+        "Identical-size 4BR in same project listed at $2.99M ($2,258 psf) - this unit is +27% vs its direct competitor",
+        "$3.79M quantum far above the D19 4BR resale band - very thin buyer pool at exit",
+        "Integrated-development premium is a level premium already in the project base PSF - thesis double-counts it",
+        "Algo score 215/1000 (deep below threshold); 2.9% resale CAGR offers no path to absorb the entry premium"
+      ],
+      "catalysts": [
+        "Buangkok MRT (NE15) doorstep + Sengkang Grand Mall/hawker/bus interchange underpin rental demand (at fair entry, not this one)",
+        "Hougang Central integrated GLS launching ~$2,500+ psf may reprice the micro-market upward over time",
+        "Large 4BR format is scarce in the project - could command a premium to median, but not ~40%"
+      ],
+      "as_of": {
+        "price": 3788888,
+        "psf": 2862.0,
+        "beds": 4,
+        "sqft": 1324.0
+      },
+      "key_facts": {
+        "tenure": "99-year Leasehold",
+        "built_year": 2023
+      },
+      "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 15; supersedes 2026-06-08 pre-prior-fix Buy high)"
     }
   ]
 }

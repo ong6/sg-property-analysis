@@ -235,6 +235,20 @@ yield-trust rubric + data_trust prompt block, 3 stale tests fixed
 (125/125 green throughout). Next session: continue the stale-Buy
 re-judgment queue; parked: strata-vs-livable area channel (no data field).
 
+**Iter 15 (13:29, [AI-SCORING] final batch — the 5 lowest-scoring stale
+Buys):** 5/5 fell to **Avoid**, the scores were right on every one: Park
+Place 1BR (ask 9-12% above its size-cohort prints; interchange premium
+priced-in) · Pebble Bay 4BR (fair-priced at best; ~67yr lease crosses the
+60yr CPF threshold at exit; 2 prints/12mo at $5M+) · Normanton Park
+(ANOTHER strata-terrace artifact — 22 townhouses pooled against apartment
+medians, ask above the sole same-size print) · Riviere 1BR (priciest of 9
+sibling asks, +18% over median, zero 1BR resales ever, 1yr appreciation
+−4%) · Sengkang Grand 4BR (Buy-HIGH inverted to Avoid-high: ask 30-40%
+above ALL 12-mo prints — the IOD premium charged twice). **Day total: 19
+stale evals re-judged, 0 pre-prior Buys survived.** The stale-Buy queue's
+worst offenders are cleared; remaining ~580 pre-06-10 evals carry the
+recall warning and can be re-judged opportunistically.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
