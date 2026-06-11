@@ -465,6 +465,10 @@ class PropertyGuruScraper:
 
         all_listings: list[Listing] = []
         combined_stats = ScrapeStats()
+        # One dedup set across the whole run — PropertyGuru can return the same
+        # listing in adjacent districts' results; resetting per district let
+        # those duplicates through to scoring.
+        self._seen_ids = set()
 
         for i, district in enumerate(districts):
             logger.info(
@@ -475,9 +479,8 @@ class PropertyGuruScraper:
             district_params = deepcopy(params)
             district_params.districts = [district]
 
-            # Reset per-district state
+            # Reset per-district stats (the dedup set persists across districts)
             self._stats = ScrapeStats()
-            self._seen_ids = set()
 
             district_listings = self.scrape(district_params, max_pages=max_pages)
             self._stats.per_district_counts[district] = len(district_listings)

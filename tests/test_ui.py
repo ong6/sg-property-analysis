@@ -33,18 +33,20 @@ class TestLoadRankings:
 class TestRenderIndex:
     def test_renders_rows(self):
         data = ui.load_rankings()
-        page = ui.render_index(data)
+        page = ui.render_index()
         assert "Condo Arena Rankings" in page
         if data["rows"]:
             assert data["run_date"] in page
             # data embedded as JSON for client-side render
             assert data["rows"][0]["project_name"] in page
 
-    def test_renders_empty_state(self):
-        page = ui.render_index({"run_date": None, "rows": []})
+    def test_renders_empty_state(self, monkeypatch):
+        monkeypatch.setattr(ui, "load_rankings",
+                            lambda: {"run_date": None, "rows": []})
+        page = ui.render_index()
         assert "No arena results yet" in page
 
-    def test_escapes_html_in_names(self):
+    def test_escapes_html_in_names(self, monkeypatch):
         evil = {"run_date": "2026-06-07", "rows": [{
             "bracket": "2BR",
             "rank": 1, "project_name": "<script>alert(1)</script>", "beds": 2,
@@ -53,7 +55,8 @@ class TestRenderIndex:
             "district": "D14", "sqft": 700, "built_year": 2015, "tenure": "",
             "mrt_info": "", "url": "https://x", "maps_url": "https://maps",
         }]}
-        page = ui.render_index(evil)
+        monkeypatch.setattr(ui, "load_rankings", lambda: evil)
+        page = ui.render_index()
         # The critical inline-JSON vector: a literal "</script>" coming from
         # data must never appear unescaped — it would close the script block
         # and inject markup. The embed escapes "</" as "<\/".

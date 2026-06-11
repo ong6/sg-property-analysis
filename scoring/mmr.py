@@ -43,11 +43,14 @@ try:
         MMR_TXN_VOLUME_WEIGHT,
         MMR_YIELD_SLOPE_PTS_PER_PP,
         MMR_YIELD_CENTER_PCT,
+        MMR_DISCOUNT_TRUST_KNEE_PCT,
+        MMR_DISCOUNT_EXCESS_CREDIT,
+        MMR_SUSPECT_VALUE_FACTOR,
     )
 except ImportError:
     # Fallbacks mirror config.py (kept in sync; only used if config import fails).
     MMR_BASE = 1500
-    MMR_NORM_CENTER = 1507
+    MMR_NORM_CENTER = 1516
     MMR_NORM_SCALE = 29
     MIN_BAND_TXNS = 5
     COHORT_FLOOR_APPRECIATION = 0.55
@@ -60,6 +63,9 @@ except ImportError:
     MMR_TXN_VOLUME_WEIGHT = 6.0
     MMR_YIELD_SLOPE_PTS_PER_PP = 10.0
     MMR_YIELD_CENTER_PCT = 3.2
+    MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0
+    MMR_DISCOUNT_EXCESS_CREDIT = 0.25
+    MMR_SUSPECT_VALUE_FACTOR = 0.25
 
 # Red flags that are NOT already expressed as continuous MMR components.
 # (old_property/small_dev/low_lease/psf_overpriced are continuous here.)
@@ -70,24 +76,46 @@ _UNIQUE_FLAGS = {"west_facing", "very_low_psf", "oversized_unit", "bedroom_sqft_
 _BUYER_POOL_PTS = {"very_deep": 7.0, "deep": 4.5, "moderate": 1.5, "shallow": -3.0}
 
 
-def _age_points(age: Optional[float]) -> float:
-    """Continuous age curve with the documented 3-7yr sweet spot.
+def _knee_discount(premium_pct: float) -> float:
+    """Compress an implausibly deep discount before it earns value points.
 
-    Brand new (<3yr) scores below peak so launch-premium pricing isn't
-    double-rewarded; beyond 15yr the decline is uncapped (maintenance and
-    resale drag grow with age).
+    v3.6 data-trust rule (see config): on a live open-market listing, a PSF
+    reading more than MMR_DISCOUNT_TRUST_KNEE_PCT below verified comparables is
+    far more likely a data artifact (mis-scraped sqft, non-comparable strata
+    format, stale/bait price) or a defect than genuine alpha — every such case
+    audited in Jun 2026 was rejected on web verification. Discount beyond the
+    knee earns marginal credit at MMR_DISCOUNT_EXCESS_CREDIT; premiums
+    (positive premium_pct) pass through untouched.
+    """
+    if premium_pct >= -MMR_DISCOUNT_TRUST_KNEE_PCT:
+        return premium_pct
+    excess = -premium_pct - MMR_DISCOUNT_TRUST_KNEE_PCT
+    return -(MMR_DISCOUNT_TRUST_KNEE_PCT + excess * MMR_DISCOUNT_EXCESS_CREDIT)
+
+
+def _age_points(age: Optional[float]) -> float:
+    """Continuous age curve, v3.7: reshaped to MEASURED forward returns.
+
+    Panel evidence (forward 2yr CAGR by age-at-split, value/region/liquidity
+    controlled, n=956): the 0-5yr cohort UNDERperforms (~+1.3%/yr vs +3.3-4.1%
+    for everything older — it is still paying off the launch-freshness premium,
+    which decays ~3%/yr for the first decade); ages 7-30 are flat-to-positive
+    at the margin (the 20-50 bucket was the BEST performer); only beyond ~30yr
+    does the marginal turn negative (~-0.24pp/yr per extra year). The old
+    3-7yr sweet spot + steep post-15 penalty (-0.6/yr) contradicted that data
+    and double-counted leasehold decay already carried by the lease component.
+    Post-30 slope is kept mild (0.35/yr, uncapped): it covers non-lease aging
+    (maintenance, fittings, en-bloc limbo) on top of the lease penalty.
     """
     if age is None:
         return 0.0
     if age < 0:
         age = 0
-    if age <= 2:
-        return 2.0 + age  # 2 → 4
     if age <= 7:
-        return 5.0  # sweet spot
-    if age <= 15:
-        return 5.0 - (age - 7) * 0.625  # 5 → 0 at 15
-    return -(age - 15) * 0.6  # uncapped decline
+        return age * (5.0 / 7.0)  # launch-premium drag fades: 0 → 5
+    if age <= 30:
+        return 5.0  # measured plateau (≈0/positive forward marginal)
+    return 5.0 - (age - 30) * 0.35  # mild uncapped decline (measured -0.24pp/yr)
 
 
 def normalize_mmr(mmr: float) -> int:
@@ -160,8 +188,24 @@ def compute_mmr(scored: Any) -> dict:
 
     # --- PSF vs market (SYMMETRIC: discount positive, premium negative) ---
     premium_pct = sb_flags.get("psf_premium_pct")
+    rel_premium = (sb.get("relative_value") or {}).get("premium_vs_age_adjusted_median_pct")
+    flag_names = {f.get("flag") for f in sb_flags.get("flags", [])}
+    oversized = "oversized_unit" in flag_names
+    # v3.6 data-trust: when the sqft itself is untrusted (bed/sqft mismatch) or
+    # an implausibly deep discount rests on a thin same-size cohort, the
+    # "cheapness" is presumed artifact until a human verifies it — the positive
+    # side of BOTH value components retains only MMR_SUSPECT_VALUE_FACTOR.
+    # (Premiums stay fully penalized; see config rationale.)
+    deep_discount = any(
+        p is not None and p < -MMR_DISCOUNT_TRUST_KNEE_PCT
+        for p in (premium_pct, rel_premium))
+    suspect_discount = ("bedroom_sqft_mismatch" in flag_names
+                        or (deep_discount and (cohort_txns or 0) < MIN_BAND_TXNS))
     if premium_pct is not None:
-        psf_value = -0.8 * premium_pct
+        # v3.6: knee-compressed discount + tanh saturation (same cap as
+        # age_value) — an uncapped linear -0.8/% let a -60% artifact earn +48.
+        psf_value = MMR_RELVALUE_CAP * math.tanh(
+            -0.8 * _knee_discount(premium_pct) / MMR_RELVALUE_CAP)
         # v3.1/3.2: a premium/discount is only as trustworthy as the comparable
         # set behind it. Weight by the SAME-SIZE cohort count (the premium is now
         # measured against similar-size units); fall back to project txns when a
@@ -181,10 +225,10 @@ def compute_mmr(scored: Any) -> dict:
     # a size artifact, not value (first surfaced by the arena referee). Damp
     # the positive side only; an oversized unit priced ABOVE median is
     # genuinely expensive.
-    flag_names = {f.get("flag") for f in sb_flags.get("flags", [])}
-    oversized = "oversized_unit" in flag_names
     if oversized and psf_value > 0:
         psf_value *= 0.5
+    if suspect_discount and psf_value > 0:
+        psf_value *= MMR_SUSPECT_VALUE_FACTOR
     comps["psf_value"] = round(psf_value, 2)
 
     # --- Lease / tenure ---
@@ -224,11 +268,15 @@ def compute_mmr(scored: Any) -> dict:
     # the exact project (rental_cache.json) — genuine rental evidence, near-full
     # weight. (Backtest PART 5g: real-rent yield has ~0 forward PRICE signal —
     # the component prices CARRY over the hold, not appreciation.)
+    # district_bedroom is still a district·bed constant × sqft (bed-matched but
+    # not project rental evidence) — it belongs in the synthetic tier just above
+    # district_median, not at 0.9 (a pre-v3.4 leftover that escaped the
+    # down-weighting pass and out-ranked real ura_project contracts).
     rent_conf = {
         "same_condo": 1.0,
         "ura_project_bed": 0.95,
         "ura_project": 0.8,
-        "district_bedroom": 0.9,
+        "district_bedroom": 0.55,
         "district_median": 0.5,
     }.get(rent_source, 0.15 if rent_source.startswith("fallback") else 0.6)
     # v3.5b: slope 18.75→10 pts/pp — real-rent backtest (PART 5g) shows +1pp
@@ -298,12 +346,12 @@ def compute_mmr(scored: Any) -> dict:
     # (cheap-vs-district-peers, ρ≈-0.24), so it earns more weight as appreciation
     # gives some up. Still damped by peer_count below (heuristic age slope).
     rel = sb.get("relative_value") or {}
-    rel_premium = rel.get("premium_vs_age_adjusted_median_pct")
     # tanh saturation: 0.8 slope near zero, capped at ±CAP so a heavy-tailed or
-    # artifact premium can't dominate the score (see config note).
+    # artifact premium can't dominate the score (see config note). rel_premium
+    # itself is read earlier (with psf_value) to detect a suspect deep discount.
     if rel_premium is not None:
         age_value = MMR_RELVALUE_CAP * math.tanh(
-            -MMR_RELVALUE_SLOPE * rel_premium / MMR_RELVALUE_CAP)
+            -MMR_RELVALUE_SLOPE * _knee_discount(rel_premium) / MMR_RELVALUE_CAP)
     else:
         age_value = 0.0
     # v3.1: thin peer sets make the age-adjusted median unreliable — scale toward
@@ -315,6 +363,8 @@ def compute_mmr(scored: Any) -> dict:
         age_value *= max(0.5, min(1.0, peer_count / 10.0))
     if oversized and age_value > 0:
         age_value *= 0.5  # same size-artifact damping as psf_value
+    if suspect_discount and age_value > 0:
+        age_value *= MMR_SUSPECT_VALUE_FACTOR  # v3.6 data-trust (see psf_value)
     comps["age_value"] = round(age_value, 2)
 
     # --- Unique red flags only (others are continuous components above) ---

@@ -55,12 +55,13 @@ def _num(s):
 
 
 def _open(p):
+    fh = open(p, encoding="utf-8")
     try:
-        fh = open(p, encoding="utf-8")
         fh.read(1 << 20)
         fh.seek(0)
         return fh
     except UnicodeDecodeError:
+        fh.close()
         return open(p, encoding="windows-1252")
 
 
@@ -75,7 +76,10 @@ def sale_psf_by_district(window_years=1.0):
                     continue
                 if r.get("Type of Sale", "").strip() not in ("Resale", "Sub Sale"):
                     continue
-                rows.append((r.get("Postal District", "").strip(), t, psf))
+                # URA sale CSVs zero-pad the district ("01") — strip to bare
+                # digits so D1-D9 match the "1".."28" lookups in main() (the
+                # rental CSVs are already lstripped below).
+                rows.append((r.get("Postal District", "").strip().lstrip("0"), t, psf))
     t_max = max(t for _, t, _ in rows)
     out = {}
     for d in {d for d, _, _ in rows}:

@@ -18,6 +18,13 @@ def format_percent(value: float, decimals: int = 2) -> str:
     return f"{value:.{decimals}f}%"
 
 
+def _cell(value) -> str:
+    """Escape a free-text value for use inside a markdown table cell — a stray
+    `|` from scraped data (facing, tenure, MRT names, titles) would otherwise
+    split the cell and misalign every column after it."""
+    return str(value).replace("|", "\\|")
+
+
 def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     """Generate markdown card for a single listing."""
     lines = []
@@ -57,7 +64,7 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     if listing.beds:
         lines.append(f"| Bedrooms | {listing.beds} |")
     if listing.tenure:
-        lines.append(f"| Tenure | {listing.tenure} |")
+        lines.append(f"| Tenure | {_cell(listing.tenure)} |")
     if listing.remaining_lease and listing.remaining_lease < 999:
         lines.append(f"| Remaining Lease | {listing.remaining_lease} years |")
     if listing.built_year:
@@ -65,7 +72,7 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
     if listing.nearest_mrt or listing.mrt_distance_m:
         if listing.nearest_mrt:
             dist = f" ({listing.mrt_distance_m}m)" if listing.mrt_distance_m else ""
-            lines.append(f"| Nearest MRT | {listing.nearest_mrt}{dist} |")
+            lines.append(f"| Nearest MRT | {_cell(listing.nearest_mrt)}{dist} |")
         else:
             lines.append(f"| Nearest MRT | {listing.mrt_distance_m}m |")
     lines.append("")
@@ -88,8 +95,8 @@ def generate_listing_card(listing: ScoredListing, rank: int = 0) -> str:
             v_price = format_currency(v.get("price", 0))
             v_psf = format_currency(v["psf"]) if v.get("psf") else "-"
             v_sqft = f"{v['sqft']:,.0f}" if v.get("sqft") else "-"
-            v_floor = v.get("floor_level") or "-"
-            v_facing = v.get("facing") or "-"
+            v_floor = _cell(v.get("floor_level") or "-")
+            v_facing = _cell(v.get("facing") or "-")
             v_url = f"[Link]({v['url']})" if v.get("url") else "-"
             lines.append(f"| {j} | {v_price} | {v_psf} | {v_sqft} | {v_floor} | {v_facing} | {v_url} |")
         lines.append("")
@@ -293,6 +300,7 @@ def generate_summary_table(listings: list[ScoredListing]) -> str:
 
             # Truncate title
             title = listing.title[:30] + "..." if len(listing.title) > 30 else listing.title
+            title = _cell(title)
             if listing.additional_urls:
                 title += f" (+{len(listing.additional_urls)})"
 

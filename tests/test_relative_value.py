@@ -1,6 +1,11 @@
 """Tests for the age-adjusted relative value framework."""
 
-from scoring.relative_value import compute_relative_value, _slope_for, _region_for_district
+from scoring.relative_value import (
+    compute_relative_value,
+    _cum_decay,
+    _decay_factor,
+    _region_for_district,
+)
 
 CURRENT_YEAR = 2026
 
@@ -29,7 +34,13 @@ class TestRegionSlope:
         assert _region_for_district("D16") == "OCR"
 
     def test_freehold_decays_slower(self):
-        assert _slope_for("OCR", "Freehold") < _slope_for("OCR", "99-year leasehold")
+        # Aging a price from 2yr to 10yr discounts a freehold less (factor closer to 1)
+        assert _decay_factor(2, 10, "Freehold") > _decay_factor(2, 10, "99-year leasehold")
+
+    def test_piecewise_front_loaded(self):
+        # v3.7 measured shape: the first 5 years decay much faster than the
+        # 10-15 plateau (launch-freshness premium is front-loaded)
+        assert (_cum_decay(5) - _cum_decay(0)) > 3 * (_cum_decay(15) - _cum_decay(10))
 
 
 class TestRelativeValue:

@@ -1,33 +1,49 @@
 {
-  "last_updated": "2026-06-10",
+  "last_updated": "2026-06-11",
   "source": "measured: URA resale PSF (12mo) + URA rental contracts (12mo, band-midpoint sqft) \u2014 build_district_benchmarks.py",
   "medians": {
     "D01": {
-      "rental_psf": 6.62
+      "psf": 1989,
+      "rental_psf": 6.62,
+      "avg_yield": 3.99
     },
     "D02": {
-      "rental_psf": 6.93
+      "psf": 2162,
+      "rental_psf": 6.93,
+      "avg_yield": 3.85
     },
     "D03": {
-      "rental_psf": 6.48
+      "psf": 2251,
+      "rental_psf": 6.48,
+      "avg_yield": 3.45
     },
     "D04": {
-      "rental_psf": 5.38
+      "psf": 1829,
+      "rental_psf": 5.38,
+      "avg_yield": 3.53
     },
     "D05": {
-      "rental_psf": 5.53
+      "psf": 1884,
+      "rental_psf": 5.53,
+      "avg_yield": 3.52
     },
     "D06": {
       "rental_psf": 9.75
     },
     "D07": {
-      "rental_psf": 7.16
+      "psf": 2180,
+      "rental_psf": 7.16,
+      "avg_yield": 3.94
     },
     "D08": {
-      "rental_psf": 5.54
+      "psf": 1792,
+      "rental_psf": 5.54,
+      "avg_yield": 3.71
     },
     "D09": {
-      "rental_psf": 6.0
+      "psf": 2331,
+      "rental_psf": 6.0,
+      "avg_yield": 3.09
     },
     "D10": {
       "psf": 2256,

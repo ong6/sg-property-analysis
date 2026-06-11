@@ -99,20 +99,28 @@ def main():
 
         # project-level shipped score (median across that cohort's listings)
         proj_scores = defaultdict(list)
+        proj_t0 = {}
         for r in rows:
-            proj_scores[(r["project"], r["district"])].append(r["score"])
+            key = (r["project"], r["district"])
+            proj_scores[key].append(r["score"])
+            # earliest scoring date for THIS project — the baseline window must
+            # end at it, not at the cohort median, or projects scored early in
+            # the cohort get post-score transactions in their baseline
+            # (lookahead).
+            proj_t0[key] = min(proj_t0.get(key, r["t"]), r["t"])
 
         scores, rets = [], []
         for key, ss in proj_scores.items():
             ts = by_proj.get(key)
             if not ts:
                 continue
-            base, n0 = bt._win_median(ts, t0 - 1.0, t0)
+            t0p = proj_t0[key]
+            base, n0 = bt._win_median(ts, t0p - 1.0, t0p)
             out, n1 = bt._win_median(ts, t_latest - 1.0, t_latest)
             if not base or not out or n0 < args.min_txn or n1 < args.min_txn:
                 continue
             scores.append(float(np.median(ss)))
-            rets.append((out / base) ** (1.0 / window) - 1.0)
+            rets.append((out / base) ** (1.0 / (t_latest - t0p)) - 1.0)
 
         rho, n = bt._spearman(scores, rets)
         print(f"\n== cohort {cohort}  (T0={t0:.2f}, window {window:.2f}yr, "

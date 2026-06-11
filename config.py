@@ -71,7 +71,7 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1512  # v3.5b recalibration: mean raw MMR of 6,338-listing DB = 1512.3
+MMR_NORM_CENTER = 1516  # v3.7 recalibration: mean raw MMR of 6,349-listing DB = 1516.0 (age-curve reshape lifted old condos)
                         # (dev_size now live via project_units.json, real-rent yields,
                         # yield slope 18.75→10, expanded 2,293-project URA cache)
 MMR_NORM_SCALE = 29     # v3.5b: score_1000 sd≈167, tiers (450/650) stable
@@ -132,6 +132,27 @@ MMR_RELVALUE_SLOPE = 0.8           # pts per % below age-adjusted district media
 # region-robust forward predictor, and the old cap clipped its deep-discount tail
 # (a -30% discount was throttled ~30%). Peer-count damping (mmr.py) also softened.
 MMR_RELVALUE_CAP = 28.0            # max |pts| from age-adjusted relative value
+
+# --- v3.6 discount trust (data-quality damping, not a return signal) --------
+# Diagnosis (Jun 2026, agent-vs-score divergence audit): the top of the /1000
+# ranking was dominated by listings whose "deep discount vs verified comps" was
+# a data artifact — mis-scraped sqft/beds (700-1086 sqft "1BRs"), strata
+# villas/terraces benchmarked against apartment medians (The Vision 938,
+# Thomson Grand 908), stale/bait prices ~30% below trailing prints (Eight
+# Riversuites 945). Agent evaluations rejected every one on web verification,
+# while the score kept ranking them #1-15: the fake cheapness earned up to
+# +28 (age_value) plus an UNCAPPED psf_value, against only -3/-6 from the
+# very_low_psf / bedroom_sqft_mismatch red flags.
+# Fix (mmr.py): a discount deeper than the knee earns marginal credit at
+# EXCESS_CREDIT (on a live open-market listing, >25% below verified comps is
+# far more likely bad data, a non-comparable format, or a defect than alpha);
+# and when the sqft itself is untrusted (bedroom_sqft_mismatch) or a deep
+# discount rests on a thin same-size cohort, the POSITIVE side of both value
+# components retains only SUSPECT_VALUE_FACTOR. Premiums (negative side) are
+# untouched — over-priced readings stay fully penalized (conservative).
+MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0  # % below comps where marginal credit kinks
+MMR_DISCOUNT_EXCESS_CREDIT = 0.25   # marginal credit per % of discount beyond the knee
+MMR_SUSPECT_VALUE_FACTOR = 0.25     # positive value retained when the reading is suspect
 
 # ============================================================================
 # UNIT-SIZE BANDS — like-for-like PSF comparison within a project
@@ -221,19 +242,37 @@ def size_band_key(sqft) -> "str | None":
 
 
 # ============================================================================
-# AGE-ADJUSTED RELATIVE VALUE (heuristic — verify against market data)
+# AGE-ADJUSTED RELATIVE VALUE — measured piecewise decay (v3.7)
 # ============================================================================
-# Rule of thumb: each year of age discounts PSF vs a comparable new launch by
-# roughly $50 ("every year adds $50 PSF"). Scaled by region PSF levels;
-# freehold holds value longer. Used by scoring/relative_value.py.
-# v3.4: recalibrated to the hedonic estimate. backtest_ext.py's leasehold hedonic
-# (log-PSF ~ floor + log_sqft + age + region) measured age decay at ~1.6%/yr — about
-# HALF the old $40-60 folk-rule constants, which over-discounted old leaseholds and
-# made them look spuriously "cheap for age" (inflating the age_value signal v3.4
-# leans on). Set to ~1.6% of each region's median resale PSF (panel medians ≈
-# CCR 2117 / RCR 1708 / OCR 1409 → ~34 / 27 / 23 $/psf/yr).
-AGE_PSF_SLOPE_BY_REGION = {"CCR": 34.0, "RCR": 27.0, "OCR": 23.0}  # $/psf per year of age (~1.6%/yr)
-FREEHOLD_SLOPE_FACTOR = 0.6  # freehold depreciates slower
+# History: the $50/psf/yr folk rule (v3.0) was halved by the v3.4 hedonic to a
+# single LINEAR ~1.6%/yr. v3.7 re-measured the curve SHAPE with a piecewise
+# spline + district fixed effects (16.6k leasehold resales, last 2yr, all 3
+# regions independently agree) and the truth is both of those at once — the
+# decay is strongly KINKED, not linear:
+#
+#   segment   pooled %/yr   ($/psf/yr @ $1743)   read
+#   0–10        ~3.0%           ~$50-55      launch-freshness premium decays fast
+#                                            (the folk rule is right HERE)
+#   10–15       ~0.5%            ~$8         plateau (2011-16 vintage holds value)
+#   15–20       ~2.6%           ~$46         second leg down
+#   20–30       ~1.0%           ~$18         slow drift
+#   30+         ~1.7%           ~$30         lease-decay territory
+#
+# Expressed in %/yr (not $/psf/yr): regions agree closely in % shape, and a
+# multiplicative adjustment scales automatically with each peer's PSF level —
+# the old per-region $ constants existed only because PSF levels differ.
+# A flat 1.6%/yr UNDER-adjusts new-vs-old comparisons by ~2× inside 0-10yr
+# (making young condos look dear / old ones cheap) and over-adjusts 10-15.
+# Segments are (age_from, age_to, log_decay_per_year). Re-measure with
+# `python backtest_ext.py` (PART 1c) when the panel grows.
+AGE_PSF_DECAY_SEGMENTS = [
+    (0, 10, 0.030),
+    (10, 15, 0.005),
+    (15, 20, 0.026),
+    (20, 30, 0.010),
+    (30, 99, 0.017),
+]
+FREEHOLD_SLOPE_FACTOR = 0.6  # freehold decays slower (unmeasured — age not derivable for freehold txns)
 
 # Expected score distribution
 # Before v2.0: 42-52 range, ~3 std dev

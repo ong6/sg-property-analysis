@@ -512,6 +512,7 @@ class URAScraper:
 
     def __init__(self, headless: bool = True):
         self.headless = headless
+        self._playwright = None
         self._browser = None
         self._page = None
         self._cache: dict[str, URATransactionHistory] = {}
@@ -541,12 +542,15 @@ class URAScraper:
         return self._page
 
     def close(self):
-        """Close browser."""
+        """Close browser. Browser and playwright are released independently so
+        a launch that failed between the two doesn't leak the driver process."""
         if self._browser:
             self._browser.close()
-            self._playwright.stop()
             self._browser = None
             self._page = None
+        if self._playwright:
+            self._playwright.stop()
+            self._playwright = None
 
     def search_project(
         self,
