@@ -162,6 +162,14 @@ beta — both readings are defensible; no weight change without backtest
 evidence. Iter-8 index-sync fix observed working (index picked up all 4
 automatically).
 
+**Iter 10 (13:18, [FEATURE] live verdicts in the arena tab):** the arena tab's
+Agent-eval column came from the fight-time CSV snapshot, so the day's 9
+re-evaluations stayed invisible until the next tournament. `load_rankings`
+now overrides with the live eval index via the same `_eval_lookup` as the
+fresh tab (verified: Hillview Park/Carabelle/Regentville show Neutral
+2026-06-11, Costa Del Sol shows Avoid — all were stale Buys/Avoids in the
+CSV). 125/125 tests.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
