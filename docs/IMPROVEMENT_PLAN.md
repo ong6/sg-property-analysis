@@ -218,6 +218,23 @@ Katong rent $4,963→$4,228 (score 492→478); normal-size listings unaffected
 (was 500/149 — tail-only as intended). Not an MMR weight change (config.py
 untouched; backtest gate not triggered — the panel has no scraped rents).
 
+**Iter 14 (13:28, [AUTO-SCORING] closing snapshot — loop end 13:45):**
+final divergence state: every top Avoid-ranking-high now carries a fresh
+06-11 current-priors eval (Tennery 763 / Rivervale 750 / Avenue South 746 —
+the residual gap is the DOCUMENTED project-beta vs unit-alpha judgment
+split, by design). The Buy-low side is entirely the tagged stale 06-08
+cohort (Park Place 158, Pebble Bay 183, Normanton Park 198, Riviere 202,
+Sengkang Grand 215) — queued for the same re-judgment treatment in future
+sessions, highest |score−verdict| first. 650+ tier: 1,104/1,105 rated, 68%
+agent-Buy. **Loop summary (13 increments, 12:49–13:30):** v3.6.1 yield cap
+(ρ +0.288 held), v3.6.2 rent-sqft cap, 2 full-DB rescores (top-15 went from
+3-Avoid-contaminated to 15/15 Buy agreement), 14 stale evals re-judged
+(0 pre-prior Buys survived), prior-regime tagging, eval-index sync bug
+fixed, live verdicts in both UI tabs, --eval-stats calibration audit,
+yield-trust rubric + data_trust prompt block, 3 stale tests fixed
+(125/125 green throughout). Next session: continue the stale-Buy
+re-judgment queue; parked: strata-vs-livable area channel (no data field).
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
