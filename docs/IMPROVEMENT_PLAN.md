@@ -73,6 +73,18 @@ vs project's own prints, rent_source real-vs-synthetic, format/sqft); (2)
 extreme discounts AND yields (the dossier shows raw gross_yield_pct even
 though v3.6.1 caps the score credit). 125/125 tests; no scoring change.
 
+**Iter 4 (13:04, [FEATURE] = iter-2 follow-up: full-DB rescore on v3.6.1):**
+`--score-db` over 6,349 listings (0 errors): score_1000 mean **500** / sd 149
+(tail compressed by the yield cap — was sd ~167; mean dead-center on the
+v3.7 norm 1516, no recalibration needed). The Vision sheet score 765→**554**;
+the rescored top-15 is now **15/15 agent-Buy agreement** (Coco Palms,
+Grandeur Park, Centro, Florence, Palette, Kent Ridge Hill). Remaining high
+divergences are the intended kind (Regentville 792 / Tennery 763 — qualitative
+overrides, sub-knee stale prices). Also closed iter-1's watch item: the
+TestAgeSweetSpot flake did not reproduce in 4 clean full-suite runs — the one
+failure coincided with the concurrent session rewriting data benchmarks
+mid-suite (FullScorer reads them live), not test-order pollution.
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
