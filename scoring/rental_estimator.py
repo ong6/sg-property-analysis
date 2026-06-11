@@ -69,6 +69,10 @@ class RentalEstimator:
     # systematically under-yields 1-2BR and over-yields 4BR+). Shape follows
     # covered districts' bedroom_rental_psf, set slightly conservative.
     FALLBACK_RENTAL_PSF_BY_BEDS = {1: 5.0, 2: 4.3, 3: 3.8, 4: 3.4, 5: 3.2}
+    # v3.6.2: typical livable sqft per bed count (SG condo norms; midpoints of
+    # the scorer's _BEDROOM_SQFT_RANGES, biased toward the rental stock which
+    # skews compact). Used to cap the sqft that bed-derived psf rates multiply.
+    RENT_TYPICAL_SQFT_BY_BEDS = {1: 550, 2: 800, 3: 1150, 4: 1500, 5: 1900}
 
     def __init__(self, condo_rental_data: Optional[dict] = None):
         """
@@ -105,7 +109,21 @@ class RentalEstimator:
             }
 
         rent_psf, source = self._get_rent_psf(listing)
-        monthly_rent = sqft * rent_psf
+        # v3.6.2: bed-derived psf rates come from TYPICAL-size units of that
+        # bed count and do not extrapolate linearly to oversized sqft — a
+        # 807sqft "1BR" priced at small-1BR psf rates yielded a fake $4,963/mo
+        # (real fringe-1BR rents ~$3k), which fed a fake ~6% gross yield into
+        # the MMR yield channel (and Vetro's 829 strata sqft on a 474sqft
+        # livable plate is rent-irrelevant terrace area). Cap the sqft used
+        # for rent at 1.25x the bed count's typical size for bed-matched
+        # sources; tenants pay for the livable space a bed count implies.
+        rent_sqft = sqft
+        beds = listing.get("beds")
+        if source in ("ura_project_bed", "district_bedroom", "fallback_bedroom"):
+            typical = self.RENT_TYPICAL_SQFT_BY_BEDS.get(beds)
+            if typical:
+                rent_sqft = min(sqft, typical * 1.25)
+        monthly_rent = rent_sqft * rent_psf
         annual_rent = monthly_rent * 12
         gross_yield = (annual_rent / price) * 100 if price > 0 else 0
 

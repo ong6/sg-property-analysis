@@ -203,6 +203,21 @@ re-judgments (iters 6+9+12): **14 re-evals, 0 pre-prior Buys survived, 2
 Avoids softened to Neutral; ratings now consistently keyed to ask-vs-own-
 prints + region rather than trailing CAGR/freehold/headline discounts.**
 
+**Iter 13 (13:25, [FEATURE] v3.6.2: rent-sqft cap — the upstream artifact
+source):** shipped the iter-11 parked item, now evidence-backed by two
+independent finds (Suites @ Katong's fake $4,963/mo; Vetro's 829 strata sqft
+on a 474sqft livable plate). Root cause: every estimator path computes
+`rent = bed-derived psf rate × listing sqft`, but bed-derived rates come from
+TYPICAL-size units and don't extrapolate linearly — oversized/strata sqft
+manufactures rent. Fix (`rental_estimator.py`): for bed-matched sources
+(ura_project_bed / district_bedroom / fallback_bedroom) the sqft used for
+rent is capped at 1.25× `RENT_TYPICAL_SQFT_BY_BEDS` ({1:550, 2:800, 3:1150,
+4:1500, 5:1900} — midpoints of the scorer's bed/sqft ranges). Suites @
+Katong rent $4,963→$4,228 (score 492→478); normal-size listings unaffected
+(Amber Park 576 unchanged); 125/125 tests; full-DB rescore mean 498/sd 149
+(was 500/149 — tail-only as intended). Not an MMR weight change (config.py
+untouched; backtest gate not triggered — the panel has no scraped rents).
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
