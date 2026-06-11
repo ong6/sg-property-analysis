@@ -61,15 +61,29 @@ def _norm(text: str) -> str:
     return " ".join(re.sub(r"[^a-z0-9 ]", " ", (text or "").lower()).split())
 
 
+# Evaluations written before this date predate the v3.4.1 prior corrections in
+# the flow skills/rubric — their rationales routinely credit trailing CAGR and
+# freehold as forward edges, which the backtests measured at ~0. The Buy-low
+# divergence audit (2026-06-11) traced every big "agent Buy, score low" gap to
+# this cohort, not to a scoring bug.
+PRIORS_FIXED_DATE = "2026-06-10"
+
+
 def staleness_note(date_str: Optional[str]) -> str:
     age = _days_since(date_str)
     if age is None:
         return ""
     if age <= 30:
-        return f"evaluated {age}d ago"
-    if age <= 120:
-        return f"⚠ evaluated {age}d ago — re-verify current price & market"
-    return f"⚠ STALE: evaluated {age}d ago — likely out of date, re-verify before relying on it"
+        note = f"evaluated {age}d ago"
+    elif age <= 120:
+        note = f"⚠ evaluated {age}d ago — re-verify current price & market"
+    else:
+        note = f"⚠ STALE: evaluated {age}d ago — likely out of date, re-verify before relying on it"
+    if date_str and date_str < PRIORS_FIXED_DATE:
+        note += (" · ⚠ pre-v3.4.1 priors: rationale may credit trailing CAGR/"
+                 "freehold as forward edges (backtested ≈0) — re-judge under "
+                 "current priors before trusting the rating")
+    return note
 
 
 # --------------------------------------------------------------------------- #
