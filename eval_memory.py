@@ -113,8 +113,10 @@ def rebuild_index() -> dict:
             "latest_date": latest.get("evaluated_at"),
             "eval_count": len(data["history"]),
         }
-    with open(INDEX_FILE, "w") as f:
+    tmp = INDEX_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, INDEX_FILE)
     return index
 
 
@@ -151,23 +153,35 @@ def _slug_lock(slug: str, timeout: float = 10.0):
     different units of the same condo can't lose each other's appends."""
     lock_path = _condo_path(slug) + ".lock"
     deadline = time.monotonic() + timeout
+    acquired = False
     while True:
         try:
             fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
             os.close(fd)
+            acquired = True
             break
         except FileExistsError:
             if time.monotonic() >= deadline:
-                # Stale lock (crashed process) — steal it rather than dropping the save.
+                # Stale lock (crashed process) — steal it and take it ourselves
+                # rather than dropping the save. (Previously this proceeded
+                # WITHOUT the lock and then unlinked the other process's lock.)
+                try:
+                    os.unlink(lock_path)
+                    fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                    os.close(fd)
+                    acquired = True
+                except OSError:
+                    pass  # raced another stealer — proceed rather than drop the save
                 break
             time.sleep(0.1)
     try:
         yield
     finally:
-        try:
-            os.unlink(lock_path)
-        except OSError:
-            pass
+        if acquired:
+            try:
+                os.unlink(lock_path)
+            except OSError:
+                pass
 
 
 def save_evaluation(condo: str, district: Optional[str], history_entry: dict) -> str:
@@ -184,8 +198,14 @@ def save_evaluation(condo: str, district: Optional[str], history_entry: dict) ->
         if district:
             data["district"] = district
         data.setdefault("history", []).append(history_entry)
-        with open(_condo_path(slug), "w") as f:
+        # Atomic write: a crash mid-dump must not truncate the condo's
+        # append-only history (load_condo would return None and the next save
+        # would silently start a fresh file).
+        path = _condo_path(slug)
+        tmp = path + ".tmp"
+        with open(tmp, "w") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, path)
     return slug
 
 
@@ -280,8 +300,10 @@ def recall(name: str, fuzzy: bool = True, threshold: float = 0.6) -> list[dict]:
 
     for slug, meta in index.get("condos", {}).items():
         cand = _norm(meta.get("condo") or slug)
-        if target == cand or target in cand or cand in target:
+        if target == cand:
             score = 1.0
+        elif target in cand or cand in target:
+            score = 0.95  # containment is strong but must not outrank an exact match
         elif fuzzy:
             score = SequenceMatcher(None, target, cand).ratio()
         else:

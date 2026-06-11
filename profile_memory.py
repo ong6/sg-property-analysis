@@ -109,22 +109,35 @@ def _slug_lock(slug: str, timeout: float = 10.0):
     _ensure_dir()
     lock_path = _profile_path(slug) + ".lock"
     deadline = time.monotonic() + timeout
+    acquired = False
     while True:
         try:
             fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
             os.close(fd)
+            acquired = True
             break
         except FileExistsError:
             if time.monotonic() >= deadline:
-                break  # steal a stale lock rather than drop the write
+                # Steal the stale lock and take it ourselves rather than drop
+                # the write (proceeding unlocked would also wrongly unlink the
+                # other process's lock on exit).
+                try:
+                    os.unlink(lock_path)
+                    fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                    os.close(fd)
+                    acquired = True
+                except OSError:
+                    pass  # raced another stealer — proceed rather than drop the write
+                break
             time.sleep(0.1)
     try:
         yield
     finally:
-        try:
-            os.unlink(lock_path)
-        except OSError:
-            pass
+        if acquired:
+            try:
+                os.unlink(lock_path)
+            except OSError:
+                pass
 
 
 def normalize_profile(profile: dict) -> dict:
@@ -172,8 +185,13 @@ def save_profile(profile: dict) -> str:
         else:
             p["first_researched_at"] = p["researched_at"]
         _ensure_dir()
-        with open(_profile_path(slug), "w") as f:
+        # Atomic write: a crash mid-dump must not leave a truncated profile
+        # (load_profile would return None and the research would be lost).
+        path = _profile_path(slug)
+        tmp = path + ".tmp"
+        with open(tmp, "w") as f:
             json.dump(p, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, path)
     rebuild_index()
     return slug
 
@@ -199,8 +217,10 @@ def rebuild_index() -> dict:
             "layout_count": len(data.get("layouts") or []),
             "researched_at": data.get("researched_at"),
         }
-    with open(INDEX_FILE, "w") as f:
+    tmp = INDEX_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, INDEX_FILE)
     return index
 
 
@@ -220,8 +240,13 @@ def find_profile(name: str, threshold: float = 0.6) -> Optional[dict]:
     best, best_score = None, 0.0
     for slug, meta in load_index().get("condos", {}).items():
         cand = _norm(meta.get("condo") or slug)
-        if target == cand or target in cand or cand in target:
+        if target == cand:
             score = 1.0
+        elif target in cand or cand in target:
+            # Containment is strong but not exact ("the myst" is inside
+            # "the myst at cashew") — must never outrank a true exact match,
+            # since this join silently attaches stacks/facings to listings.
+            score = 0.95
         else:
             score = SequenceMatcher(None, target, cand).ratio()
         if score > best_score:

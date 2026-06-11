@@ -81,6 +81,21 @@ used, and ask if intent is unclear.
   `yield` and `dev_size` remain unvalidated (rental fetch in progress / no
   total_units data). Shipped-score calibration harness: `calibrate_forward.py`
   (joins `mmr_history.csv` to later URA PSF; meaningful from ~mid-2027).
+- **v3.6 discount trust (agent-vs-score divergence audit, Jun 2026):** the top
+  of the /1000 ranking was dominated by *fake* deep discounts — mis-scraped
+  sqft/beds (700–1086 sqft "1BRs"), strata villas/terraces benchmarked against
+  apartment medians, stale/bait prices ~30% below trailing prints. The fake
+  cheapness earned up to +28 (`age_value`) plus an **uncapped** `psf_value`
+  against only −3/−6 in red flags, so every audited top-15 artifact the agent
+  had rated Avoid/Neutral ranked #1–15. Fix (`config.py` / `scoring/mmr.py`):
+  discounts deeper than **25% vs verified comps** earn marginal credit at 25%
+  (knee); `psf_value` now tanh-caps like `age_value`; and when
+  `bedroom_sqft_mismatch` fires or a deep discount rests on a thin same-size
+  cohort, the positive side of both value components retains only 25%
+  (premiums stay fully penalized). Backtest unchanged (ρ +0.288 — URA panel
+  data is clean; the rule only disarms scraped-listing artifacts). **A still-
+  extreme discount that survives the damping is a verify-first signal, not
+  value** — confirm sqft/format/price against URA prints before crediting it.
 
 Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**.
 Full audit + change rationale: **`docs/IMPROVEMENT_PLAN.md`**.
@@ -114,8 +129,9 @@ one-click PropertyGuru listing + Google Maps links per contender.
 **System dashboard**: `python dashboard.py` → http://127.0.0.1:8643 — the
 whole engine state on one page (forward signals, regime analysis, score
 distribution, coverage, district benchmarks, top projects) with per-condo
-ANALYZE buttons that spawn `claude "analyze <condo>"` in a Terminal window
-and VIEW links into eval memory.
+ANALYZE buttons that run `claude -p "analyze <condo>"` headless in the
+background (transcript → `output/analyze_runs/`; the verdict auto-saves to
+eval memory and surfaces as a VIEW link on the next page refresh).
 
 Supporting data backbone (CSV, append-only — grep/analyze freely):
 `data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`

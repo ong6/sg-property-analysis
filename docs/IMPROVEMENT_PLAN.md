@@ -22,6 +22,20 @@ This doc answers four questions you asked:
 
 ---
 
+## Loop iterations — 2026-06-11 (10-min improvement loop, 12:49–13:45)
+
+**Iter 1 (12:49, [FEATURE]/housekeeping):** the entire v3.5c + v3.6 +
+code-review pass (~26k changed lines incl. the ui.py tabbed rewrite, poller.py,
+dashboard.py) was sitting **uncommitted** — blocking clean per-iteration
+commits. Validated the tree: 3 stale `test_ui` tests still passed data to
+`render_index()` (now zero-arg, embeds JSON itself) — rewritten to monkeypatch
+`load_rankings`; **123/123 tests pass**. `--score` smoke (Amber Park 2BR → 609,
+Florence 2BR → 593, both sane); mmr_history last-3000 score_1000 mean 549 /
+sd 167, no blowup. No weight changes (v3.6 config was already backtest-validated
+at ρ +0.288). Committed as the baseline. *Watch item:* `TestAgeSweetSpot::
+test_brand_new_scores_below_sweet_spot` failed once in a full-suite run, passed
+on two re-runs (order-dependent flake — likely shared cache state; not chased).
+
 ## v3.5c — residual-gap sweep ("clear gaps until none left", 2026-06-10)
 
 A systematic pass over every remaining known gap. Composite forward-ρ unchanged
@@ -602,6 +616,40 @@ Common upgrades baked into all four:
 - **Reverted:** subagent edits to `scoring/raw_output.py` and
   `.claude/skills/analyze-listing/SKILL.md` — restored to HEAD. No scoring
   behavior was changed. (`data/*` and `evaluations/*` changes pre-date this session.)
+
+## 9. v3.6 — discount trust (agent-vs-score divergence audit, 2026-06-11)
+
+**Symptom.** Agent verdicts and the /1000 ranking disagreed violently at the
+top: of the 15 highest-scored projects, the agent had rated several
+high-confidence **Avoid** (The Vision 938, Thomson Grand 908, Kingsford
+Hillview Peak 894) or mis-scrape **Neutral** (Eight Riversuites 945).
+
+**Root cause.** The ranking's dominant signal is cheap-vs-comps, and the
+biggest "discounts" in a scraped DB are artifacts: mis-scraped sqft/beds
+(700–1086 sqft "1BRs"), strata villas/terraces benchmarked against apartment
+medians, stale/bait prices ~30% below trailing prints. The fake cheapness
+earned up to +28 (`age_value`, tanh-capped) **plus an uncapped `psf_value`**
+(a −60% artifact earned +48 raw), while `very_low_psf` /
+`bedroom_sqft_mismatch` cost only −3/−6 as red flags. Net: artifacts float to
+ranks #1–15, where the agent (which web-verifies) correctly shoots them down.
+
+**Fix** (`config.py` `MMR_DISCOUNT_*`, `scoring/mmr.py`):
+1. **Trust knee** — discount beyond −25% vs verified comps earns marginal
+   credit at 25% (`_knee_discount`, applied to both `psf_value` premium and
+   `age_value` rel-premium).
+2. **psf_value tanh cap** at ±28 (same idiom/cap as `age_value`).
+3. **Suspect-discount damp** — when `bedroom_sqft_mismatch` fires or a deep
+   discount rests on a thin same-size cohort (< `MIN_BAND_TXNS`), the positive
+   side of both value components retains 25%. Premiums stay fully penalized.
+
+**Validation.** 122/122 tests; full-DB rescore mean 499 (no norm shift);
+`backtest_ext.py --split-sample` composite forward-ρ unchanged at **+0.288**
+(URA panel data is clean — the rule only disarms scraped-listing artifacts).
+After rescore the top-15 is 13 Buy / 2 Strong Buy / 1 Neutral; offenders fell
+to 702–846. Residual divergence is the *intended* kind: qualitative facts the
+algo can't see (developer reputation, defects, format liquidity) and honest
+judgment differences (e.g. Hillview Park: agent Buy on freehold+MRT, score 229
+on 31-yr age — both defensible readings of the same facts).
 
 ## Appendix — methodology caveats
 

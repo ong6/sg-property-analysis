@@ -187,11 +187,14 @@ def hedonic(txns, asof, lookback=2.0):
         cy = _commence_year(r["tenure"])
         if not cy:
             continue
-        age = max(0, int(r["t"]) - cy)
+        # float year minus commencement year — int(t) truncated up to ~1yr off
+        # every transaction, attenuating the age coefficient that calibrates
+        # AGE_PSF_SLOPE_BY_REGION.
+        age = max(0.0, r["t"] - cy)
         if age > 60:
             continue
         rd = region_dummies(r)
-        Xa.append([r["ft"], math.log(r["sqft"]), float(age)] + rd)
+        Xa.append([r["ft"], math.log(r["sqft"]), age] + rd)
         ya.append(math.log(r["psf"]))
     if len(Xa) > 200:
         namesA = ["floor_tier(0-2)", "log_sqft", "age_years", "region_RCR", "region_CCR"]
@@ -207,6 +210,78 @@ def hedonic(txns, asof, lookback=2.0):
         print(f"    -> age decay ~= {abs(age_coef)*100:.2f}%/yr  "
               f"(~${abs(age_coef)*mean_psf:.0f}/psf/yr at mean PSF ${mean_psf:.0f}); "
               f"config assumes $40-60/psf/yr")
+    print()
+
+
+# ============================================================================
+# PART 1c — PIECEWISE AGE-PSF CURVE (calibrates config.AGE_PSF_DECAY_SEGMENTS)
+# ============================================================================
+_AGE_SEGS = [(0, 5), (5, 10), (10, 15), (15, 20), (20, 30), (30, 45)]
+
+
+def _age_spline(age):
+    return [max(0.0, min(age, hi) - lo) for lo, hi in _AGE_SEGS]
+
+
+def age_curve(txns, asof, lookback=2.0):
+    """log(PSF) ~ floor + log_sqft + age-spline + DISTRICT FE, leasehold resale.
+
+    Measures the SHAPE of the vintage/age discount that
+    config.AGE_PSF_DECAY_SEGMENTS encodes (v3.7): ~3%/yr to age 10 (the $50/psf
+    folk rule lives here), a 10-15 plateau, a second ~2.6%/yr leg at 15-20,
+    then slow drift. District FE matter: regions/districts differ in both PSF
+    level and age mix, and region-only controls leak that into the age coefs.
+    Update config when these move materially.
+    """
+    print("=" * 78)
+    print(f"PART 1c — PIECEWISE AGE-PSF CURVE  (leasehold resale, last {lookback:.0f}yr, district FE)")
+    print("  calibrates config.AGE_PSF_DECAY_SEGMENTS (relative_value age normalization)")
+    print("=" * 78)
+    rows = []
+    for x in txns:
+        if not (asof - lookback < x["t"] <= asof):
+            continue
+        if x["sale_type"] not in ("Resale", "Sub Sale") or x["freehold"]:
+            continue
+        if not x["psf"] or not x["sqft"] or x["sqft"] <= 0:
+            continue
+        cy = _commence_year(x["tenure"])
+        ft = _floor_tier(x.get("floor"))
+        if not cy or ft is None:
+            continue
+        age = max(0.0, x["t"] - cy - 3)  # lease-start → TOP offset, as in the pipeline
+        if age > 45:
+            continue
+        rows.append((x, age, ft))
+    if len(rows) < 1000:
+        print(f"  too few rows ({len(rows)})\n")
+        return
+    districts = sorted({x["district"] for x, *_ in rows})
+    didx = {d: i for i, d in enumerate(districts[1:])}
+    X, y = [], []
+    for x, age, ft in rows:
+        dd = [0.0] * len(didx)
+        if x["district"] in didx:
+            dd[didx[x["district"]]] = 1.0
+        X.append([ft, math.log(x["sqft"])] + _age_spline(age) + dd)
+        y.append(math.log(x["psf"]))
+    names = (["floor", "log_sqft"] + [f"age{lo}-{hi}" for lo, hi in _AGE_SEGS]
+             + [f"D{d}" for d in districts[1:]])
+    coef, r2, n = _ols(X, y, names)
+    mean_psf = float(np.mean([math.exp(v) for v in y]))
+    print(f"\n  n={n:,}, R2={r2:.3f}, mean PSF ${mean_psf:.0f}")
+    print(f"    {'segment':<10}{'%/yr':>8}{'$/psf/yr':>10}   config")
+    try:
+        from config import AGE_PSF_DECAY_SEGMENTS as cfg_segs
+    except ImportError:
+        cfg_segs = []
+    for nm, c, _ in coef:
+        if not nm.startswith("age"):
+            continue
+        lo = float(nm[3:].split("-")[0])
+        cfg = next((r for a, b, r in cfg_segs if a <= lo < b), None)
+        cfg_s = f"{cfg*100:+.1f}%/yr" if cfg is not None else "—"
+        print(f"    {nm:<10}{c*100:>+8.2f}{c*mean_psf:>+10.0f}   {cfg_s}")
     print()
 
 
@@ -892,7 +967,9 @@ def main():
 
     # latest date in panel -> hedonic as-of (uses a floor-aware reload)
     asof = max(t["t"] for t in txns)
-    hedonic(load_with_floor(), asof)
+    ftxns = load_with_floor()
+    hedonic(ftxns, asof)
+    age_curve(ftxns, asof)
 
     splits = [2023.75, 2024.0, 2024.25]
     rows = pooled_panel(txns, splits, args.window, args.min_txn, args.split_sample)

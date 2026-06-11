@@ -1,12 +1,16 @@
 """Age-adjusted relative value — is this condo cheap or dear *for its age*?
 
 Comparing a 10-year-old condo's PSF directly against a new launch is unfair:
-new launches carry a freshness premium that decays with age. The Singapore
-rule of thumb is that each year of age is worth roughly $50 PSF against a
-comparable new unit — steeper in high-PSF regions, flatter for freehold.
+new launches carry a freshness premium that decays with age.
 
-This module normalizes every peer project's PSF to the subject's age using a
-region/tenure-dependent slope, then asks two questions:
+v3.7: the decay is MEASURED and PIECEWISE (district-FE hedonic on 16.6k recent
+leasehold resales — see config.AGE_PSF_DECAY_SEGMENTS): ~3%/yr (≈$50/psf/yr)
+for the first 10 years, a 10–15yr plateau, a second leg down at 15–20, then a
+slow drift. Adjustment is multiplicative in log space, so it scales with each
+peer's own PSF level (no per-region $ constants needed).
+
+This module normalizes every peer project's PSF to the subject's age using
+that curve, then asks two questions:
 
 1. vs the area: is the subject priced above or below the age-adjusted median
    of its district peers? (premium_vs_age_adjusted_median_pct — negative
@@ -18,18 +22,21 @@ region/tenure-dependent slope, then asks two questions:
 Peer data comes from the URA cache (per-project median transacted PSF +
 lease-start year + district), i.e. real transactions, not asking prices.
 
-⚠ The slopes are HEURISTICS anchored on the $50/yr folk rule, scaled by
-regional PSF levels. Tune in config / verify against current market data.
+⚠ The freehold factor is still a heuristic (freehold age isn't derivable from
+URA tenure strings). Re-measure the curve via backtest_ext PART 1c.
 """
 
+import math
 from statistics import median
 from typing import Any, Optional
 
 try:
-    from config import AGE_PSF_SLOPE_BY_REGION, FREEHOLD_SLOPE_FACTOR, MIN_BAND_TXNS, size_band_key
+    from config import AGE_PSF_DECAY_SEGMENTS, FREEHOLD_SLOPE_FACTOR, MIN_BAND_TXNS, size_band_key
 except ImportError:
-    # Fallbacks mirror config.py (v3.4 hedonic-calibrated ~1.6%/yr; sync if config changes).
-    AGE_PSF_SLOPE_BY_REGION = {"CCR": 34.0, "RCR": 27.0, "OCR": 23.0}
+    # Fallbacks mirror config.py (v3.7 measured piecewise curve; sync if config changes).
+    AGE_PSF_DECAY_SEGMENTS = [
+        (0, 10, 0.030), (10, 15, 0.005), (15, 20, 0.026), (20, 30, 0.010), (30, 99, 0.017),
+    ]
     FREEHOLD_SLOPE_FACTOR = 0.6
     MIN_BAND_TXNS = 5
 
@@ -39,8 +46,9 @@ except ImportError:
 # Lease start (land acquisition) precedes TOP by ~3 years — same offset the
 # lease calculators use.
 _LEASE_TO_TOP_OFFSET = 3
-# Beyond this age difference, linear $/yr extrapolation is not credible.
-_MAX_ADJUST_YEARS = 25
+# Beyond this age difference, even the piecewise curve is extrapolating across
+# too many vintage cohorts to be credible (curve measured to ~45yr).
+_MAX_ADJUST_YEARS = 35
 _MIN_PEERS = 5
 _MIN_NEW_LAUNCH_PEERS = 2
 _NEW_LAUNCH_MAX_AGE = 3
@@ -61,11 +69,42 @@ def _region_for_district(district: str) -> str:
     return "OCR"
 
 
-def _slope_for(region: str, tenure: Optional[str]) -> float:
-    slope = AGE_PSF_SLOPE_BY_REGION.get(region, AGE_PSF_SLOPE_BY_REGION["OCR"])
-    if tenure and ("freehold" in tenure.lower() or "999" in tenure):
-        slope *= FREEHOLD_SLOPE_FACTOR
-    return slope
+def _is_freehold(tenure: Optional[str]) -> bool:
+    return bool(tenure and ("freehold" in tenure.lower() or "999" in tenure))
+
+
+def _cum_decay(age: float) -> float:
+    """Cumulative log-PSF decay from age 0 to `age` (measured piecewise curve)."""
+    if age <= 0:
+        return 0.0
+    total = 0.0
+    for lo, hi, rate in AGE_PSF_DECAY_SEGMENTS:
+        total += rate * max(0.0, min(age, hi) - lo)
+    return total
+
+
+def _decay_factor(from_age: float, to_age: float, tenure: Optional[str]) -> float:
+    """Multiplicative PSF factor for aging a price from `from_age` to `to_age`.
+
+    > 1 when normalizing to a younger age, < 1 to an older age. Freehold decays
+    at FREEHOLD_SLOPE_FACTOR of the measured leasehold curve (heuristic).
+    """
+    gap = _cum_decay(to_age) - _cum_decay(from_age)
+    if _is_freehold(tenure):
+        gap *= FREEHOLD_SLOPE_FACTOR
+    return math.exp(-gap)
+
+
+def _local_slope_per_year(age: float, psf: float, tenure: Optional[str]) -> float:
+    """$/psf/yr at this age and PSF level (reporting only)."""
+    rate = AGE_PSF_DECAY_SEGMENTS[-1][2]
+    for lo, hi, r in AGE_PSF_DECAY_SEGMENTS:
+        if lo <= age < hi:
+            rate = r
+            break
+    if _is_freehold(tenure):
+        rate *= FREEHOLD_SLOPE_FACTOR
+    return rate * psf
 
 
 def compute_relative_value(
@@ -96,7 +135,6 @@ def compute_relative_value(
     if not district.startswith("D"):
         district = f"D{int(district):02d}" if district.isdigit() else district
     region = _region_for_district(district)
-    subject_slope = _slope_for(region, tenure)
     band = size_band_key(subject_sqft) if subject_sqft else None
 
     # --- Collect peers: same district, with transacted PSF and derivable age ---
@@ -126,12 +164,12 @@ def compute_relative_value(
             peer_age = 0
         age_gap = subject_age - peer_age
         if abs(age_gap) > _MAX_ADJUST_YEARS:
-            continue  # too far apart for the linear heuristic
-        peer_slope = _slope_for(region, entry.get("tenure"))
-        # Normalize the peer's PSF to the subject's age: a NEWER peer is
-        # discounted (it would be cheaper at the subject's age), an OLDER
-        # peer is marked up.
-        adjusted_psf = psf - peer_slope * age_gap
+            continue  # too far apart to age-normalize credibly
+        # Normalize the peer's PSF to the subject's age along the measured
+        # piecewise curve: a NEWER peer is discounted (it would be cheaper at
+        # the subject's age), an OLDER peer is marked up. Multiplicative, so
+        # it scales with the peer's own PSF level.
+        adjusted_psf = psf * _decay_factor(peer_age, subject_age, entry.get("tenure"))
         if adjusted_psf <= 0:
             continue
         if used_band:
@@ -150,6 +188,7 @@ def compute_relative_value(
     adjusted_median = median(p["adjusted_psf"] for p in peers)
     premium_pct = (subject_psf / adjusted_median - 1) * 100
     basis = (f"size_band:{band}" if band and band_used else "pooled")
+    subject_slope = _local_slope_per_year(subject_age, subject_psf, tenure)
 
     result: dict[str, Any] = {
         "district": district,
@@ -163,12 +202,14 @@ def compute_relative_value(
         "premium_vs_age_adjusted_median_pct": round(premium_pct, 1),
         "psf_age_slope_per_year": round(subject_slope, 1),
         "note": (
-            "Peers' transacted PSF normalized to the subject's age at "
-            f"~${subject_slope:.0f}/psf/yr ({region}"
-            f"{', freehold-adjusted' if tenure and 'freehold' in tenure.lower() else ''})"
+            "Peers' transacted PSF normalized to the subject's age along the "
+            "measured piecewise decay curve (~3%/yr to 10yr, plateau 10-15, "
+            "~2.6%/yr 15-20, then slow drift"
+            f"{'; freehold ×0.6' if _is_freehold(tenure) else ''}); local slope at "
+            f"subject age ≈ ${subject_slope:.0f}/psf/yr"
             + (f", same-size band {band} for {band_used}/{len(peers)} peers" if band and band_used
                else ", project-pooled (size-mixed)")
-            + ". Negative premium = cheap for its age. Slope is a heuristic — verify."
+            + ". Negative premium = cheap for its age."
         ),
     }
 
@@ -177,7 +218,7 @@ def compute_relative_value(
     if len(new_launches) >= _MIN_NEW_LAUNCH_PEERS:
         nl_median = median(p["raw_psf"] for p in new_launches)
         nl_median_age = median(p["age"] for p in new_launches)
-        implied_fair = nl_median - subject_slope * (subject_age - nl_median_age)
+        implied_fair = nl_median * _decay_factor(nl_median_age, subject_age, tenure)
         result["new_launch_median_psf"] = round(nl_median)
         result["new_launch_count"] = len(new_launches)
         if implied_fair > 0:

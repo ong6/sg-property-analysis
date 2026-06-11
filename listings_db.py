@@ -27,6 +27,8 @@ import csv
 import json
 import os
 import re
+import time
+from contextlib import contextmanager
 from datetime import datetime
 from difflib import SequenceMatcher
 from typing import Optional
@@ -34,6 +36,7 @@ from typing import Optional
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 DB_FILE = os.path.join(_DATA_DIR, "listings_db.json")
 SHEET_FILE = os.path.join(_DATA_DIR, "listings_sheet.csv")
+_DB_LOCK_FILE = DB_FILE + ".lock"
 
 # Fields surfaced in the CSV "sheet" (the critical info an agent searches on).
 SHEET_COLUMNS = [
@@ -99,8 +102,52 @@ def load_db() -> dict:
 def save_db(db: dict) -> None:
     db["updated_at"] = _today()
     os.makedirs(_DATA_DIR, exist_ok=True)
-    with open(DB_FILE, "w") as f:
+    # Atomic write: a crash mid-dump must not truncate the DB (load_db would
+    # then silently return an empty store and the next save would erase
+    # everything ever scraped).
+    tmp = DB_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(db, f, indent=2, ensure_ascii=False)
+    os.replace(tmp, DB_FILE)
+
+
+@contextmanager
+def _db_lock(timeout: float = 30.0):
+    """Cross-process lock for the whole-DB read-modify-write cycle.
+
+    Concurrent sessions (one per listing — see CLAUDE.md) each load, mutate and
+    save the full DB; without a lock the second writer silently drops the
+    first writer's upserts. On timeout the lock is presumed stale (crashed
+    process), stolen, and re-acquired.
+    """
+    os.makedirs(_DATA_DIR, exist_ok=True)
+    deadline = time.monotonic() + timeout
+    acquired = False
+    while True:
+        try:
+            fd = os.open(_DB_LOCK_FILE, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.close(fd)
+            acquired = True
+            break
+        except FileExistsError:
+            if time.monotonic() >= deadline:
+                try:  # steal the stale lock, then take it ourselves
+                    os.unlink(_DB_LOCK_FILE)
+                    fd = os.open(_DB_LOCK_FILE, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                    os.close(fd)
+                    acquired = True
+                except OSError:
+                    pass  # raced another stealer — proceed unlocked rather than drop the save
+                break
+            time.sleep(0.1)
+    try:
+        yield
+    finally:
+        if acquired:
+            try:
+                os.unlink(_DB_LOCK_FILE)
+            except OSError:
+                pass
 
 
 def _price_trend(price_history: list[dict]) -> str:
@@ -125,6 +172,11 @@ def upsert_listings(listings: list[dict], source: Optional[dict] = None) -> dict
     Returns:
         Stats dict: {added, updated, price_changes, skipped, total}.
     """
+    with _db_lock():
+        return _upsert_listings_locked(listings, source)
+
+
+def _upsert_listings_locked(listings: list[dict], source: Optional[dict]) -> dict:
     db = load_db()
     store = db["listings"]
     today = _today()
@@ -212,11 +264,13 @@ def export_sheet(path: Optional[str] = None, db: Optional[dict] = None) -> str:
         key=lambda r: (r.get("last_seen") or "", r.get("price") or 0),
         reverse=True,
     )
-    with open(path, "w", newline="") as f:
+    tmp = path + ".tmp"
+    with open(tmp, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=SHEET_COLUMNS)
         writer.writeheader()
         for rec in rows:
             writer.writerow(_record_to_row(rec))
+    os.replace(tmp, path)
     return path
 
 
@@ -258,7 +312,12 @@ def search(
             cand = _norm(rec.get("project_name") or rec.get("title") or "")
             if not cand:
                 continue
-            match_score = 1.0 if q in cand or cand in q else SequenceMatcher(None, q, cand).ratio()
+            if q == cand:
+                match_score = 1.0
+            elif q in cand or cand in q:
+                match_score = 0.95  # containment must not outrank an exact match
+            else:
+                match_score = SequenceMatcher(None, q, cand).ratio()
             if match_score < 0.55:
                 continue
 

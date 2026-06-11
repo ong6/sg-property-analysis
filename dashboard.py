@@ -21,13 +21,14 @@ import html
 import json
 import os
 import re
-import shlex
 import statistics
 import subprocess
 import sys
+import threading
 import urllib.parse
 import webbrowser
 from collections import Counter, defaultdict
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -65,8 +66,8 @@ BACKTEST = {
 }
 
 CONFIG_WEIGHTS = [
-    ("age_value (cheap-for-age vs district)", "tanh, cap ±28", "strongest forward signal — leads"),
-    ("psf_value (vs same-size cohort)", "0.8 pts/% × conf", "size-band benchmarked, floor-corrected"),
+    ("age_value (cheap-for-age vs district)", "tanh, cap ±28", "strongest forward signal — leads · v3.6 trust knee at -25%"),
+    ("psf_value (vs same-size cohort)", "0.8 pts/% × conf, tanh cap ±28", "size-band benchmarked · v3.6: knee + suspect-discount damp ×0.25"),
     ("appreciation", "3.0 pts/pp × conf", "de-emphasized: trailing ≈ no forward power"),
     ("yield (real rents where matched)", "10 pts/pp × conf", "carry only — price drag −0.75pp/yr per +1pp"),
     ("txn_volume (liquidity)", "6·tanh(n/40)", "exit-risk insurance, not a return signal"),
@@ -82,16 +83,6 @@ CONFIG_WEIGHTS = [
 # ---------------------------------------------------------------------------
 # Live stats from data files
 # ---------------------------------------------------------------------------
-def _open_csv(path):
-    try:
-        fh = open(path, encoding="utf-8")
-        fh.read(1 << 20)
-        fh.seek(0)
-        return fh
-    except UnicodeDecodeError:
-        return open(path, encoding="windows-1252")
-
-
 def gather_stats() -> dict:
     s: dict = {}
 
@@ -242,31 +233,66 @@ def regime_rows():
 
 
 # ---------------------------------------------------------------------------
-# Spawn a local Claude analysis in a Terminal window (macOS)
+# Headless Claude analysis jobs (background `claude -p`, result → eval memory)
 # ---------------------------------------------------------------------------
 _NAME_OK = re.compile(r"^[\w @&'().,/\-+#]{2,80}$")
+RUNS_DIR = os.path.join(BASE, "output", "analyze_runs")
+
+# slug -> {name, status: running|done|failed, started, log, returncode}
+# In-memory only: jobs die with the dashboard process, but their RESULT is the
+# evaluation written to eval memory (evaluations/<slug>.json), which persists
+# and renders at /eval/<slug>.
+JOBS: dict = {}
+_JOBS_LOCK = threading.Lock()
 
 
-def spawn_claude_analysis(condo_name: str) -> tuple[bool, str]:
-    """Open Terminal.app running `claude "analyze <condo>"` in this repo.
+def start_claude_analysis(condo_name: str) -> tuple[bool, dict | str]:
+    """Run `claude -p "analyze <condo>"` headless in the background.
 
-    The prompt routes to the /analyze-development flow per CLAUDE.md. The
-    session is interactive on purpose — the user watches/answers (e.g. the
-    own-stay vs investment intent check) in the terminal.
+    The prompt routes to the /analyze-development flow per CLAUDE.md, told to
+    run non-interactively (assume investment intent — every dashboard metric
+    already assumes it) and to finish with --from-review so the verdict lands
+    in eval memory. Transcript goes to output/analyze_runs/<slug>_<ts>.log.
     """
     name = condo_name.strip()
     if not _NAME_OK.match(name):
         return False, "invalid condo name"
-    shell_cmd = f"cd {shlex.quote(BASE)} && claude {shlex.quote('analyze ' + name)}"
-    # AppleScript string: escape backslashes then double quotes
-    osa_cmd = shell_cmd.replace("\\", "\\\\").replace('"', '\\"')
-    script = f'tell application "Terminal"\nactivate\ndo script "{osa_cmd}"\nend tell'
-    try:
-        subprocess.Popen(["osascript", "-e", script],
-                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        return True, f"spawned: claude analyze {name}"
-    except OSError as e:
-        return False, str(e)
+    slug = slugify(name)
+    with _JOBS_LOCK:
+        job = JOBS.get(slug)
+        if job and job["status"] == "running":
+            return False, "already running"
+        os.makedirs(RUNS_DIR, exist_ok=True)
+        started = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_path = os.path.join(RUNS_DIR, f"{slug}_{started}.log")
+        prompt = (
+            f"analyze {name} — investment purpose (5-7yr hold), per the "
+            "/analyze-development flow. This is a non-interactive headless run: "
+            "do not ask the user anything; where the flow would ask, assume "
+            "investment intent and proceed. Finish the full flow including "
+            "--from-review so the evaluation is saved to eval memory."
+        )
+        cmd = ["claude", "-p", prompt, "--permission-mode", "bypassPermissions"]
+        try:
+            logf = open(log_path, "w")
+            proc = subprocess.Popen(cmd, cwd=BASE, stdin=subprocess.DEVNULL,
+                                    stdout=logf, stderr=subprocess.STDOUT)
+        except OSError as e:
+            return False, str(e)
+        JOBS[slug] = {"name": name, "status": "running", "started": started,
+                      "log": os.path.relpath(log_path, BASE), "returncode": None}
+    threading.Thread(target=_reap_job, args=(slug, proc, logf), daemon=True).start()
+    return True, {"slug": slug, "log": JOBS[slug]["log"]}
+
+
+def _reap_job(slug: str, proc: subprocess.Popen, logf) -> None:
+    rc = proc.wait()
+    logf.close()
+    with _JOBS_LOCK:
+        job = JOBS.get(slug)
+        if job:
+            job["status"] = "done" if rc == 0 else "failed"
+            job["returncode"] = rc
 
 
 # ---------------------------------------------------------------------------
@@ -359,9 +385,9 @@ def render(s: dict) -> str:
 
     # district benchmark strip
     dist_html = "".join(
-        f'<tr><td>{_e(d)}</td><td class="num">{f"${p:,.0f}" if p else "—"}</td>'
-        f'<td class="num">{f"${r:.2f}" if r else "—"}</td>'
-        f'<td class="num">{f"{y:.2f}%" if y else "—"}</td></tr>'
+        f'<tr><td>{_e(d)}</td><td class="num">{f"${p:,.0f}" if p is not None else "—"}</td>'
+        f'<td class="num">{f"${r:.2f}" if r is not None else "—"}</td>'
+        f'<td class="num">{f"{y:.2f}%" if y is not None else "—"}</td></tr>'
         for d, p, r, y in s["districts"])
 
     # top listings (one per project) with eval status + analyze buttons
@@ -377,12 +403,12 @@ def render(s: dict) -> str:
             eval_cell = (f'<a class="evaltag {cls}" href="/eval/{_e(slug)}" '
                          f'title="evaluated {_e(ev.get("latest_date") or "?")}">'
                          f'{_e(rating)}</a>')
-            btn = (f'<button class="act rerun" data-name="{_e(name)}" '
-                   f'title="re-run analysis in a local claude terminal">RERUN&nbsp;&#x21bb;</button>')
+            btn = (f'<button class="act rerun" data-name="{_e(name)}" data-slug="{_e(slug)}" '
+                   f'title="re-run analysis headless in the background">RERUN&nbsp;&#x21bb;</button>')
         else:
             eval_cell = '<span class="dim">—</span>'
-            btn = (f'<button class="act" data-name="{_e(name)}" '
-                   f'title="spawn a local claude terminal to analyze">ANALYZE&nbsp;&#x25b6;</button>')
+            btn = (f'<button class="act" data-name="{_e(name)}" data-slug="{_e(slug)}" '
+                   f'title="run a headless claude analysis in the background">ANALYZE&nbsp;&#x25b6;</button>')
         top_html += (
             f'<tr><td class="num dim">{i:02d}</td>'
             f'<td><a href="{_e(url)}" target="_blank">{_e(name)}</a></td>'
@@ -506,7 +532,7 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
 
 <header>
   <h1>MMR<em>/</em>DESK</h1>
-  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v3.5c</b> · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
+  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v3.6</b> · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
 </header>
 
 <div class="kpis">{kpi_html}</div>
@@ -534,7 +560,8 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
   <section>
     <h2>Top-ranked projects · click to analyze</h2>
     <div class="sub">best active unit per project, by score_1000 · {s["n_evals"]:,} condos in eval memory ·
-      ANALYZE spawns <b style="color:var(--ink)">claude "analyze &lt;condo&gt;"</b> in a Terminal window</div>
+      ANALYZE runs <b style="color:var(--ink)">claude -p "analyze &lt;condo&gt;"</b> headless in the background —
+      the verdict lands in eval memory (transcript: output/analyze_runs/)</div>
     <div class="qbar">
       <input id="qname" type="text" placeholder="any condo name… e.g. The Continuum" spellcheck="false">
       <button class="act" id="qgo">ANALYZE&nbsp;&#x25b6;</button>
@@ -602,21 +629,59 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
 
 </div>
 <script>
+const WATCHING = {{}};  // slug -> button
 async function spawn(name, btn) {{
   if (!name) return;
   const orig = btn.textContent;
-  btn.textContent = "SPAWNING…";
+  btn.textContent = "STARTING…";
   try {{
     const r = await fetch("/analyze", {{ method:"POST",
       headers: {{"Content-Type":"application/x-www-form-urlencoded"}},
       body: "name=" + encodeURIComponent(name) }});
-    const t = await r.text();
-    if (r.ok) {{ btn.textContent = "IN TERMINAL ✓"; btn.classList.add("done"); }}
-    else {{ btn.textContent = orig; alert(t); }}
+    if (r.ok) {{
+      const job = await r.json();
+      btn.textContent = "RUNNING…";
+      btn.classList.add("done");
+      WATCHING[job.slug] = btn;
+      pollJobs();
+    }} else {{ btn.textContent = orig; alert(await r.text()); }}
   }} catch (e) {{ btn.textContent = orig; alert(e); }}
+}}
+let pollTimer = null;
+async function pollJobs() {{
+  if (pollTimer) return;
+  pollTimer = setInterval(async () => {{
+    let jobs;
+    try {{ jobs = await (await fetch("/jobs")).json(); }} catch (e) {{ return; }}
+    let pending = 0;
+    for (const [slug, btn] of Object.entries(WATCHING)) {{
+      const j = jobs[slug];
+      if (!j || j.status === "running") {{ pending++; continue; }}
+      if (j.status === "done") {{
+        btn.outerHTML = `<a class="act done" href="/eval/${{slug}}">DONE ✓ VIEW</a>`;
+      }} else {{
+        btn.textContent = "FAILED ✗";
+        btn.title = "see " + j.log;
+        btn.classList.remove("done");
+      }}
+      delete WATCHING[slug];
+    }}
+    if (!pending) {{ clearInterval(pollTimer); pollTimer = null; }}
+  }}, 10000);
 }}
 document.querySelectorAll("button.act[data-name]").forEach(b =>
   b.addEventListener("click", () => spawn(b.dataset.name, b)));
+// resume watching jobs that were already running when this page loaded
+fetch("/jobs").then(r => r.json()).then(jobs => {{
+  let any = false;
+  for (const [slug, j] of Object.entries(jobs)) {{
+    if (j.status !== "running") continue;
+    const btn = document.querySelector(`button.act[data-slug="${{slug}}"]`);
+    if (btn) {{ btn.textContent = "RUNNING…"; btn.classList.add("done");
+               WATCHING[slug] = btn; any = true; }}
+  }}
+  if (any) pollJobs();
+}}).catch(() => {{}});
 const qgo = document.getElementById("qgo");
 if (qgo) {{
   const run = () => {{
@@ -694,9 +759,24 @@ section h2 {{ font-size:12px; letter-spacing:.15em; text-transform:uppercase;
 
 
 # ---------------------------------------------------------------------------
-class Handler(BaseHTTPRequestHandler):
-    page: str = ""
+# Index page cache: re-render at most every TTL so an analysis finished in the
+# background shows its verdict on the next refresh (no server restart), while
+# rapid reloads stay instant.
+_PAGE_TTL_S = 30
+_page_cache = {"html": "", "at": 0.0}
+_page_lock = threading.Lock()
 
+
+def index_page() -> str:
+    import time
+    with _page_lock:
+        if time.monotonic() - _page_cache["at"] > _PAGE_TTL_S or not _page_cache["html"]:
+            _page_cache["html"] = render(gather_stats())
+            _page_cache["at"] = time.monotonic()
+        return _page_cache["html"]
+
+
+class Handler(BaseHTTPRequestHandler):
     def _send(self, body: str, code: int = 200, ctype: str = "text/html; charset=utf-8"):
         data = body.encode()
         self.send_response(code)
@@ -707,7 +787,12 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path in ("/", "/index.html"):
-            self._send(self.page)
+            self._send(index_page())
+            return
+        if self.path == "/jobs":
+            with _JOBS_LOCK:
+                body = json.dumps(JOBS)
+            self._send(body, 200, "application/json")
             return
         if self.path.startswith("/eval/"):
             slug = urllib.parse.unquote(self.path[len("/eval/"):]).strip("/")
@@ -727,8 +812,11 @@ class Handler(BaseHTTPRequestHandler):
         length = int(self.headers.get("Content-Length") or 0)
         form = urllib.parse.parse_qs(self.rfile.read(min(length, 4096)).decode())
         name = (form.get("name") or [""])[0]
-        ok, msg = spawn_claude_analysis(name)
-        self._send(msg, 200 if ok else 400, "text/plain")
+        ok, result = start_claude_analysis(name)
+        if ok:
+            self._send(json.dumps(result), 200, "application/json")
+        else:
+            self._send(str(result), 400, "text/plain")
 
     def log_message(self, *a):
         pass
@@ -741,7 +829,7 @@ def main():
     args = ap.parse_args()
 
     print("Gathering live stats from data/ ...")
-    Handler.page = render(gather_stats())
+    index_page()  # warm the cache before opening the browser
     url = f"http://127.0.0.1:{args.port}"
     print(f"MMR dashboard → {url}   (Ctrl-C to stop)")
     if not args.no_browser:

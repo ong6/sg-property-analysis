@@ -755,9 +755,9 @@ def group_condo_by_unit_type(scored: list[ScoredListing]) -> list[ScoredListing]
             result.extend(members)
             continue
 
-        # Sort by price to pick median
+        # Sort by price to pick median (lower median for even-sized groups)
         members.sort(key=lambda s: s.price)
-        median_idx = len(members) // 2
+        median_idx = (len(members) - 1) // 2
         representative = members[median_idx]
 
         # Build unit_variants list

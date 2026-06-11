@@ -70,11 +70,13 @@ class TestSymmetry:
 
 
 class TestAgeSweetSpot:
-    def test_brand_new_scores_below_sweet_spot(self):
+    def test_brand_new_scores_below_plateau(self):
+        # v3.7 measured shape: young (<7yr) below plateau (launch-premium
+        # decay drags forward returns), flat 7-30, mild decline after 30.
         from scoring.mmr import _age_points
-        assert _age_points(0) < _age_points(5)
-        assert _age_points(5) == _age_points(7)
-        assert _age_points(25) < 0  # uncapped decline
+        assert _age_points(0) < _age_points(5) < _age_points(7)
+        assert _age_points(7) == _age_points(20) == _age_points(30)
+        assert _age_points(45) < _age_points(30)  # uncapped post-30 decline
 
 
 class TestConfidence:
