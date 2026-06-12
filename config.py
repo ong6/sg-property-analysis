@@ -1,6 +1,34 @@
-"""Configuration for Property Finder v2.2."""
+"""Configuration for Property Finder (scoring engine v3.10)."""
 
+import hashlib as _hashlib
 import os
+
+# --- Score versioning (Jun-2026 audit P0-2) -------------------------------
+# Every scored row (DB record, mmr_history.csv) carries score_version so
+# vintages from different configs are distinguishable — without it the 2026-06
+# cohort blended five config versions (same-listing drift median 178 pts) and
+# the mid-2027 calibrate_forward.py run would have been uninterpretable.
+CONFIG_VERSION = "3.10"
+
+_SCORE_VERSION_CACHE: str | None = None
+
+
+def score_version() -> str:
+    """CONFIG_VERSION + content hash of this file.
+
+    Any weight/threshold edit changes the fingerprint even when nobody bumps
+    the version string. Cached per process.
+    """
+    global _SCORE_VERSION_CACHE
+    if _SCORE_VERSION_CACHE is None:
+        try:
+            with open(__file__, "rb") as f:
+                digest = _hashlib.sha1(f.read()).hexdigest()[:8]
+        except OSError:
+            digest = "unknown"
+        _SCORE_VERSION_CACHE = f"{CONFIG_VERSION}+{digest}"
+    return _SCORE_VERSION_CACHE
+
 
 PROPERTYGURU_BASE_URL = "https://www.propertyguru.com.sg"
 PROPERTYGURU_SEARCH_PATH = "/apartment-condo-for-sale"
@@ -71,10 +99,10 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1516  # v3.7 recalibration: mean raw MMR of 6,349-listing DB = 1516.0 (age-curve reshape lifted old condos)
-                        # (dev_size now live via project_units.json, real-rent yields,
-                        # yield slope 18.75→10, expanded 2,293-project URA cache)
-MMR_NORM_SCALE = 29     # v3.5b: score_1000 sd≈167, tiers (450/650) stable
+MMR_NORM_CENTER = 1508  # v3.10 recalibration: mean raw MMR of 6,349-listing DB = 1508.0
+                        # (audit fix wave: fake yield/discount channels disarmed net −8 raw;
+                        # prior centers: 1516 v3.7, 1512 v3.5b)
+MMR_NORM_SCALE = 29     # score_1000 sd≈150 (measured Jun 2026, 6.3k-listing DB); tiers (450/650) stable
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
 SCORE1000_TIER2_MIN = 450  # Consider
@@ -163,6 +191,14 @@ MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0  # % below comps where marginal credit kinks
 MMR_DISCOUNT_EXCESS_CREDIT = 0.25   # marginal credit per % of discount beyond the knee
 MMR_SUSPECT_VALUE_FACTOR = 0.25     # positive value retained when the reading is suspect
 
+# --- price_band cap (Jun-2026 audit #4) --------------------------------------
+# price_band (exit-liquidity decline above the $2.2M broad-demand knee) was the
+# last uncapped value-side channel: the linear -2.5 pts/$500k slope read -39 raw
+# at a $10M ask. It now saturates (tanh) at this cap — same slope near the knee,
+# so normal $1-4M asks are nearly unchanged (-4.0 → -3.9 at $3M, -9.0 → -8.1 at
+# $4M), while an ultra-luxury quantum reads ~-14.8 (thin exit risk, not a veto).
+MMR_PRICE_BAND_CAP = 15.0
+
 # ============================================================================
 # UNIT-SIZE BANDS — like-for-like PSF comparison within a project
 # ============================================================================
@@ -179,9 +215,33 @@ UNIT_SIZE_BAND_EDGES_SQFT = [0, 600, 800, 1050, 1400, 1800]
 # psf benchmark; below it we fall back to the pooled median AND down-weight the
 # unit's confidence (thin cohort → we don't really have comparables).
 MIN_BAND_TXNS = 5
-# How many recent calendar years of transactions feed a band median (keeps the
-# benchmark recent; widened automatically if a band is too thin in-window).
-BAND_RECENCY_YEARS = 2
+# --- Tight same-size comps (v3.8 stack prints) — Jun-2026 audit hardening ---
+# Resale-only comp sets (audit P2 print hygiene): developer New Sale prints
+# pollute a resale's "own prints" distribution. When the in-window tight set
+# holds at least this many true Resale prints, the comp set restricts to them.
+TIGHT_COMP_MIN_RESALE_PRINTS = 4
+# Floor-basis fallback (audit #6): when a listing's floor tier is known but no
+# floor factors exist for the project/district, restrict the tight comp set to
+# prints in the listing's own tier if at least this many exist (else fall back
+# to the floor-mixed set unadjusted, the pre-fix behavior).
+TIGHT_COMP_SAME_TIER_MIN = 3
+# --- Stale-print indexing (v3.8.1) ---
+# The audit-#5 fix (24mo window anchored at today, neutral when <2 in-window
+# prints) correctly killed false flags from stale prints, but ALSO disarmed the
+# v3.8 PES protection for stale-cohort stacks — PES stacks rarely re-trade, so
+# "own-stack prints are stale" correlates with exactly the artifact v3.8
+# targets (live regression: Coco Palms 624sf PES, last same-size print 2022,
+# rode the coarse 600-800sf band back to #1). Instead of discarding stale
+# prints, time-index them to today with a district price-index ratio
+# (the audit's recommended alternative) and serve them as a LOW-TRUST comp set:
+# halved blend weight, forced-thin damping cohort, raised flag thresholds.
+STALE_INDEX_WINDOW_MONTHS = 9        # ± window around the stale prints' median date
+STALE_INDEX_RATIO_CLAMP = (0.8, 1.7)  # plausibility clamp on the index ratio
+STALE_INDEX_MIN_DISTRICT_PRINTS = 5  # min district prints PER window, else no index
+STALE_COMP_BLEND_FACTOR = 0.5        # indexed comps blend at HALF a fresh set's weight
+STALE_ABOVE_PRINTS_PCT = 15.0        # ask_above_own_stack_prints threshold (fresh: >10)
+STALE_BELOW_P10_FACTOR = 0.90        # ask_below_stack_prints below p10*0.90 (fresh: *0.97)
+STALE_PREMIUM_SUSPECT_MIN_PCT = 8.0  # indexed premium feeds the mmr damp only above this
 # A unit whose own size-cohort is thin can only partially claim the project's
 # pooled signals. cohort_factor = clamp(band_txns / MIN_BAND_TXNS, floor, 1.0):
 # normal cohorts (>= MIN_BAND_TXNS) are unaffected (1.0); thinner cohorts retain
@@ -307,9 +367,6 @@ TARGET_HOLD_YEARS = [5, 6, 7]
 # Buyer profile defaults
 DEFAULT_BUYER_TYPE = "SC"  # Singapore Citizen
 DEFAULT_PROPERTY_COUNT = 0  # First property (0% ABSD)
-
-# Appreciation estimate (annual) - used only when URA data unavailable
-DEFAULT_APPRECIATION_RATE = 0.02  # 2% per year
 
 # ROI sensitivity assumptions (used for downside/upside scenarios)
 # These are absolute deltas, not multipliers.

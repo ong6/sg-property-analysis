@@ -8,5 +8,7 @@
   "legal_fee_sell": 3000,
   "repairs_per_year": 1500,
   "insurance_per_year": 300,
-  "annual_appreciation_estimate": 0.02
+  "annual_appreciation_estimate": 0.02,
+  "marginal_income_tax_rate": 0.15,
+  "mortgage_rate_pct": 3.5
 }

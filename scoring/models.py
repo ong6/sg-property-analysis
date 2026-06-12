@@ -187,22 +187,35 @@ class ROIResult:
     hold_years: int
     purchase_price: int
     estimated_exit_price: int
-    total_rental_income: float
+    total_rental_income: float  # Net of holding costs AND rental income tax
     total_holding_costs: float
-    total_upfront_costs: int
+    total_upfront_costs: int  # Cash deployed at purchase (financed: downpayment + entry costs)
     total_exit_costs: float
 
     gross_rental_yield: float  # Annual gross rental / purchase price
-    net_rental_yield: float  # After costs
+    net_rental_yield: float  # After holding costs (pre income tax — market-comparable stat)
     capital_gain: int  # Exit price - purchase price
-    total_return: float  # Capital gain + net rental income - exit costs
-    roi_percent: float  # Total return / total investment * 100
+    total_return: float  # Capital gain + net rental - exit costs - entry costs - mortgage interest
+    roi_percent: float  # Total return / total investment * 100 (cash-on-cash when financed)
     annualized_roi: float  # Geometric mean annual return
 
     # Per-year breakdown
     monthly_rent_estimate: float = 0
     annual_rent_gross: float = 0
     annual_rent_net: float = 0
+
+    # Entry costs + rental income tax (audit #11 / income-tax fix, Jun 2026)
+    entry_costs: int = 0  # BSD + ABSD + legal (buy) — deducted from total_return
+    total_income_tax: float = 0  # Tax on net letting profit over the hold
+    marginal_income_tax_rate: float = 0  # Assumption used (0 = untaxed)
+
+    # Optional financing (ltv=0 -> all-cash; every field below stays 0)
+    ltv: float = 0
+    mortgage_rate_pct: float = 0
+    loan_amount: int = 0
+    downpayment: int = 0
+    total_mortgage_interest: float = 0
+    remaining_principal_at_exit: float = 0
 
     @property
     def total_investment(self) -> int:
@@ -321,6 +334,14 @@ class ScoredListing:
     estimated_monthly_rent: float = 0
     estimated_gross_yield: float = 0
     rent_source: str = ""  # "same_condo", "district_median", "fallback"
+    # Rent evidence (audit #4/#5): numeric confidence (estimator-emitted;
+    # MMR takes min(source map, rent_confidence)), URA contract depth and
+    # serving window behind a cache-backed rent, and whether the v3.6.2
+    # sqft cap engaged. Populated by the scorer from the estimator output.
+    rent_confidence: Optional[float] = None
+    rent_contracts: Optional[int] = None
+    rent_window_months: Optional[int] = None
+    rent_capped: bool = False
 
     # Appreciation data (for ROI calculation)
     appreciation_rate: float = 0.02  # Annual appreciation rate (decimal) — adjusted for new-launch bias
@@ -430,6 +451,10 @@ class ScoredListing:
                 "gross_yield_pct": round(self.estimated_gross_yield, 2),
                 "source": self.rent_source,
             }
+            if self.rent_confidence is not None:
+                result["rental"]["confidence"] = self.rent_confidence
+            if self.rent_contracts is not None:
+                result["rental"]["contracts"] = self.rent_contracts
 
         # Appreciation data
         appreciation_info = {

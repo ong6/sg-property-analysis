@@ -23,8 +23,10 @@ POST /poll triggers a scrape cycle (409 if one is already running).
 import argparse
 import csv
 import json
+import math
 import os
 import re
+import secrets
 import sys
 import threading
 import time
@@ -36,6 +38,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
 
+import config
 import listings_db
 import poller
 from scoring.livability import score_livability
@@ -45,6 +48,28 @@ ARENA_CSV = os.path.join(DATA_DIR, "arena_results.csv")
 DB_FILE = os.path.join(DATA_DIR, "listings_db.json")
 DEFAULT_PORT = 8642
 FRESH_MAX_AGE_DAYS = 30  # server-side cap; the client narrows further
+
+# Surfaced in /api/poll-status: module-level caches elsewhere in the engine
+# (e.g. full_scorer's raw-prints cache) live as long as this process and never
+# invalidate — the process age tells the user how stale they can be.
+_PROCESS_START_TS = time.time()
+
+# CSRF guard for mutating POSTs (audit #13): a per-process random token is
+# embedded in the served page and required as an X-Csrf-Token header. The
+# custom header forces a CORS preflight that a cross-origin page fails, so an
+# arbitrary webpage in the user's browser can't fire fetch() at 127.0.0.1.
+CSRF_TOKEN = secrets.token_hex(16)
+
+
+def _csrf_ok(headers) -> bool:
+    """Token must match; when the browser sends an Origin it must match Host."""
+    if not secrets.compare_digest(headers.get("X-Csrf-Token") or "", CSRF_TOKEN):
+        return False
+    origin = headers.get("Origin")
+    if origin and origin != "null":
+        if urllib.parse.urlparse(origin).netloc != (headers.get("Host") or "").strip():
+            return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -78,10 +103,65 @@ def _eval_lookup() -> dict:
     return out
 
 
+def _sqft_band(sqft) -> int:
+    """±1% sqft bucket — agents list the same unit at e.g. 743 vs 750 sqft."""
+    if not sqft:
+        return 0
+    return int(round(math.log(sqft) / math.log(1.02)))
+
+
+def _merge_unit_group(members: list) -> list:
+    """Collapse one identity-group of fresh rows into one row per unit.
+
+    Different KNOWN floor levels are different units; a row without a floor
+    merges into the cluster it meets. The merged row keeps the LOWEST current
+    ask (range exported as ask_min/ask_max), the EARLIEST first_seen — a
+    multi-agent unit must not look permanently NEW — and re-derives the drop
+    badge from the union of every copy's price history, since a cross-agent
+    drop (new agent, lower ask) is invisible inside any single copy.
+    """
+    clusters: list = []  # [{"floor": str, "rows": [row]}]
+    for r in members:
+        fl = (r["floor_level"] or "").strip().lower()
+        tgt = next((c for c in clusters
+                    if not fl or not c["floor"] or c["floor"] == fl), None)
+        if tgt is None:
+            clusters.append({"floor": fl, "rows": [r]})
+        else:
+            tgt["rows"].append(r)
+            if fl and not tgt["floor"]:
+                tgt["floor"] = fl
+    out = []
+    for c in clusters:
+        rows = sorted(c["rows"], key=lambda r: (r["price"] is None, r["price"] or 0))
+        best = rows[0]  # lowest current ask represents the unit
+        best["dup_count"] = len(rows)
+        if len(rows) > 1:
+            firsts = [r["first_seen"] for r in rows if r["first_seen"]]
+            if firsts:
+                best["first_seen"] = min(firsts)
+            best["days_old"] = max(r["days_old"] for r in rows)
+            asks = sorted({r["price"] for r in rows if r["price"]})
+            if len(asks) > 1:
+                best["ask_min"], best["ask_max"] = asks[0], asks[-1]
+            union = sorted((p for r in rows for p in r["_history"] if p.get("price")),
+                           key=lambda p: p.get("date") or "")
+            prices = [p["price"] for p in union]
+            cur = best["price"] or (prices[-1] if prices else None)
+            peak = max(prices, default=0)
+            if cur and peak > 0 and cur < peak:
+                best["drop_pct"] = round((cur - peak) / peak * 100, 1)
+                if best["drop_pct"] <= -0.5:
+                    best["price_trend"] = "dropped"
+        out.append(best)
+    return out
+
+
 def load_fresh() -> dict:
     """Active listings first seen within FRESH_MAX_AGE_DAYS, score-annotated."""
     db = listings_db.load_db()
     evals = _eval_lookup()
+    current_sv = config.score_version()
     rows = []
     for key, rec in db["listings"].items():
         if rec.get("status") == "stale":
@@ -98,7 +178,11 @@ def load_fresh() -> dict:
                 drop_pct = round((prices[-1] - peak) / peak * 100, 1)
         name = rec.get("project_name") or rec.get("title") or "?"
         maps_query = urllib.parse.quote(f"{name} condo Singapore")
-        liv = score_livability(rec)
+        try:
+            liv = score_livability(rec)
+        except Exception:
+            # One malformed record must not 500 the whole fresh view.
+            liv = {"score": 50, "components": {}, "signals": 0, "why": "no signals"}
         rows.append({
             "id": key,
             "project_name": name,
@@ -114,6 +198,10 @@ def load_fresh() -> dict:
             "floor_level": rec.get("floor_level") or "",
             "mrt_info": rec.get("mrt_info") or "",
             "score_1000": rec.get("score_1000"),
+            # Vintage badge: scored under a different config than the one this
+            # process runs (records pre-dating the stamp count as stale too).
+            "score_stale": (rec.get("score_1000") is not None
+                            and rec.get("score_version") != current_sv),
             "livability": liv["score"] if liv["signals"] else None,
             "liv_why": liv["why"],
             "agent_rating": (er := evals.get(re.sub(r"[^a-z0-9]", "", name.lower()), ("", "")))[0],
@@ -126,23 +214,25 @@ def load_fresh() -> dict:
             "times_seen": rec.get("times_seen", 1),
             "url": rec.get("url") or "",
             "maps_url": f"https://www.google.com/maps/search/?api=1&query={maps_query}",
+            "_history": history,
+            "_unit_group": rec.get("unit_group"),  # ingestion-stamped identity, when present
         })
-    # Same physical unit, many agents: collapse identical (project, beds,
-    # sqft, price) rows into one — five copies of one Coco Palms ask once
-    # occupied ranks 42-46 by themselves. Keep the most recently seen copy.
-    best: dict = {}
+    # Same physical unit, many agents: collapse to one row — five copies of
+    # one Coco Palms ask once occupied ranks 42-46 by themselves. Identity is
+    # the DB's unit_group when ingestion has stamped one, else (project, beds,
+    # ±1% sqft band) with floor disambiguating inside the group. Exact price
+    # is NOT identity: the same unit listed by two agents $20k apart is still
+    # one unit (lowest ask shown, range in the tooltip).
+    groups: dict = {}
     for r in rows:
-        k = (r["project_name"].lower(), r["beds"], round(r["sqft"] or 0), r["price"])
-        cur = best.get(k)
-        if cur is None:
-            r["dup_count"] = 1
-            best[k] = r
-        else:
-            cur["dup_count"] += 1
-            if (r["first_seen"] or "") > (cur["first_seen"] or ""):
-                r["dup_count"] = cur["dup_count"]
-                best[k] = r
-    rows = list(best.values())
+        k = r.pop("_unit_group", None) or (
+            r["project_name"].lower(), r["beds"], _sqft_band(r["sqft"]))
+        groups.setdefault(k, []).append(r)
+    rows = []
+    for members in groups.values():
+        rows.extend(_merge_unit_group(members))
+    for r in rows:
+        r.pop("_history", None)
 
     # Best score first, unscored last, newest as tiebreak
     rows.sort(key=lambda r: (-(r["score_1000"] if r["score_1000"] is not None else -1),
@@ -191,6 +281,7 @@ def load_rankings() -> dict:
     evals = _eval_lookup()
 
     out = []
+    current_sv = config.score_version()
     for r in rows:
         rec = details.get(r.get("url", ""), {})
         name = r.get("project_name") or rec.get("project_name") or rec.get("title") or "?"
@@ -207,6 +298,8 @@ def load_rankings() -> dict:
             "on_frontier": r.get("on_frontier") == "1",
             "mmr": float(r["mmr"]) if r.get("mmr") else None,
             "score_1000": int(float(r["score_1000"])) if r.get("score_1000") else None,
+            "score_stale": (rec.get("score_1000") is not None
+                            and rec.get("score_version") != current_sv),
             "price": int(float(r["price"])) if r.get("price") else None,
             "psf": float(r["psf"]) if r.get("psf") else None,
             "district": r.get("district") or rec.get("district") or "",
@@ -268,9 +361,11 @@ def trigger_poll() -> bool:
 def _last_run_age_s() -> "float | None":
     state = poller.load_poll_state()
     try:
-        last = datetime.strptime(state.get("last_run", ""), "%Y-%m-%d %H:%M:%S")
+        # TypeError too: a state file with "last_run": null must not break
+        # /api/poll-status (strptime(None) raises TypeError, not ValueError).
+        last = datetime.strptime(state.get("last_run") or "", "%Y-%m-%d %H:%M:%S")
         return (datetime.now() - last).total_seconds()
-    except ValueError:
+    except (ValueError, TypeError):
         return None
 
 
@@ -279,13 +374,44 @@ def _auto_poll_loop():
 
     Checks once a minute; the first poll therefore starts ~60s after launch
     (when due), so the UI always opens instantly even on a stale DB.
+    Each cycle is guarded — one raise (a scraper hiccup, a corrupt state file)
+    must not silently kill auto-polling for the rest of the process.
     """
     interval_s = POLL_CFG["interval_mins"] * 60
     while True:
         time.sleep(60)
-        age = _last_run_age_s()
-        if age is None or age >= interval_s:
-            _run_poll_guarded()
+        try:
+            age = _last_run_age_s()
+            if age is None or age >= interval_s:
+                _run_poll_guarded()
+        except Exception as e:
+            print(f"[auto-poll] cycle failed, will retry next minute: {e}",
+                  file=sys.stderr)
+
+
+_SV_HIST_CACHE = {"at": 0.0, "hist": None}
+
+
+def _score_version_hist() -> dict:
+    """{score_version: count} over scored DB records (60s cache — the client
+    polls /api/poll-status every 10s; no need to re-read the DB each time).
+    Makes mixed-vintage state observable: after a config change, fresh
+    poll-scored rows rank against stale-config bulk until --score-db re-runs.
+    """
+    now = time.time()
+    if _SV_HIST_CACHE["hist"] is None or now - _SV_HIST_CACHE["at"] > 60:
+        hist: dict = {}
+        try:
+            for rec in listings_db.load_db()["listings"].values():
+                if rec.get("score_1000") is None:
+                    continue
+                sv = rec.get("score_version") or "pre-stamp"
+                hist[sv] = hist.get(sv, 0) + 1
+        except Exception:
+            hist = {}
+        _SV_HIST_CACHE["hist"] = hist
+        _SV_HIST_CACHE["at"] = now
+    return _SV_HIST_CACHE["hist"]
 
 
 def poll_status() -> dict:
@@ -299,6 +425,13 @@ def poll_status() -> dict:
         "last_age_s": round(age) if age is not None else None,
         "auto": POLL_CFG["auto"],
         "interval_mins": POLL_CFG["interval_mins"],
+        "score_versions": _score_version_hist(),
+        "current_score_version": config.score_version(),
+        # Module-level caches (e.g. full_scorer's raw-prints cache) never
+        # invalidate inside a long-lived process — this is how old they can be.
+        "process_age_s": round(time.time() - _PROCESS_START_TS),
+        "process_started": datetime.fromtimestamp(_PROCESS_START_TS)
+                           .strftime("%Y-%m-%d %H:%M:%S"),
     }
     if POLL_CFG["auto"] and age is not None and not _POLL_STATUS["running"]:
         out["next_in_s"] = max(0, round(POLL_CFG["interval_mins"] * 60 - age))
@@ -366,6 +499,8 @@ _PAGE = """<!DOCTYPE html>
   .badge.new { background:#1c3326; color:var(--green); border:1px solid #2a4434; }
   .badge.drop { background:#33201c; color:var(--red); border:1px solid #4a2b25; }
   .badge.dup { background:#222b35; color:var(--dim); border:1px solid var(--line); }
+  .badge.vold { background:#332d1c; color:var(--gold); border:1px solid #4a4225;
+                margin-left:4px; cursor:help; }
   .links a { color:var(--blue); text-decoration:none; margin-right:10px; }
   .links a:hover { text-decoration:underline; }
   .dim { color:var(--dim); }
@@ -513,16 +648,29 @@ _PAGE = """<!DOCTYPE html>
   Data: data/listings_db.json (poller) + data/arena_results.csv ·
   APIs: <code>/api/fresh</code> · <code>/api/rankings</code> · <code>/api/poll-status</code> ·
   <code>POST /poll</code> · cron alternative: <code>python poller.py</code> ·
-  system dashboard: <code>python dashboard.py</code> → :8643
+  system dashboard: <code>python dashboard.py</code> → :8643 ·
+  scoring config <code>__SCORE_VERSION__</code><br>
+  Liv is an own-stay <b>heuristic</b> (baths / space / MRT walk / floor / facing / age) —
+  display-only, never folded into the backtested MMR money score; missing data is neutral.
 </footer>
 
 <script>
 let FRESH = __FRESH_JSON__;
 let ARENA = __ARENA_JSON__;
 let POLL = __POLL_JSON__;
+const CSRF = "__CSRF_TOKEN__";  // required header on mutating POSTs
 
-const esc = s => { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; };
+// String-replace escaping, NOT the textContent/innerHTML div trick: that one
+// leaves quotes alone, and esc() output lands inside double-quoted attributes
+// (title="...", href="...") where an unescaped " breaks out of the attribute.
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const fmtPrice = p => p ? "$" + (p/1e6).toFixed(2) + "M" : "-";
+// Drop badge: first-vs-last trend OR a real peak-vs-now drop (V-shaped paths
+// and merged cross-agent histories have flat trends but genuine drops).
+const hasDrop = r => r.price_trend === "dropped" || (r.drop_pct != null && r.drop_pct <= -0.5);
+const vChip = stale => stale
+  ? '<span class="badge vold" title="scored under an older config — re-run --score-db">v!</span>' : "";
 const fmtPsf = p => p ? "$" + Math.round(p).toLocaleString() : "-";
 const scoreColor = s => s >= 650 ? "background:#1c3326;color:#3fb950" :
                         s >= 450 ? "background:#332d1c;color:#e3b341" :
@@ -584,7 +732,7 @@ function renderPoll() {
 }
 
 async function scanNow() {
-  const r = await fetch("/poll", { method: "POST" });
+  const r = await fetch("/poll", { method: "POST", headers: { "X-Csrf-Token": CSRF } });
   if (!r.ok && r.status !== 409) { alert(await r.text()); return; }
   await refreshPollStatus();
 }
@@ -630,7 +778,7 @@ function renderFresh() {
     (!b || (b === "4" ? r.beds >= 4 : r.beds === parseInt(b))) &&
     (!mp || (r.price && r.price <= mp)) &&
     (!q || r.project_name.toLowerCase().includes(q)) &&
-    (!drops || r.price_trend === "dropped"));
+    (!drops || hasDrop(r)));
 
   rows.sort((a, c) => {
     let x = a[fSortKey], y = c[fSortKey];
@@ -656,10 +804,10 @@ function renderFresh() {
 
   document.getElementById("f-rows").innerHTML = rows.map(r => `
     <tr${r.days_old === 0 ? ' class="isnew"' : ""}>
-      <td>${scoreChip(r.score_1000)}</td>
+      <td>${scoreChip(r.score_1000)}${vChip(r.score_stale)}</td>
       <td>${livChip(r.livability, r.liv_why)}</td>
       <td>${agentBadge(r.agent_rating, r.agent_eval_date)}</td>
-      <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${r.price_trend === "dropped" ? `<span class="badge drop" title="down from its peak ask">⬇ ${r.drop_pct ?? ""}%</span>` : ""}${(r.dup_count || 1) > 1 ? `<span class="badge dup" title="same unit listed by ${r.dup_count} agents">×${r.dup_count}</span>` : ""}</td>
+      <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${hasDrop(r) ? `<span class="badge drop" title="down from its peak ask${(r.dup_count || 1) > 1 ? " (union of all agents\\u2019 asks)" : ""}">⬇ ${r.drop_pct ?? ""}%</span>` : ""}${(r.dup_count || 1) > 1 ? `<span class="badge dup" title="same unit listed by ${r.dup_count} agents${r.ask_min != null ? ` — asks ${fmtPrice(r.ask_min)}\\u2013${fmtPrice(r.ask_max)}, lowest shown` : ""}">×${r.dup_count}</span>` : ""}</td>
       <td>${r.beds ? r.beds + "BR" : "?"}${r.baths ? '<span class="dim">/' + r.baths + 'ba</span>' : ""}</td>
       <td>${fmtPrice(r.price)}</td>
       <td>${fmtPsf(r.psf)}</td>
@@ -751,7 +899,7 @@ function renderArena() {
       <td>${r.beds ? r.beds + "BR" : "?"}</td>
       <td>${r.elo ?? "-"}</td>
       <td class="dim">${r.record} (${r.win_rate_pct}%)</td>
-      <td>${scoreChip(r.score_1000)}</td>
+      <td>${scoreChip(r.score_1000)}${vChip(r.score_stale)}</td>
       <td>${fmtPrice(r.price)}</td>
       <td>${fmtPsf(r.psf)}</td>
       <td>${esc(r.district)}</td>
@@ -790,7 +938,9 @@ def render_index() -> str:
     return (_PAGE
             .replace("__FRESH_JSON__", j(load_fresh()))
             .replace("__ARENA_JSON__", j(load_rankings()))
-            .replace("__POLL_JSON__", j(poll_status())))
+            .replace("__POLL_JSON__", j(poll_status()))
+            .replace("__CSRF_TOKEN__", CSRF_TOKEN)
+            .replace("__SCORE_VERSION__", config.score_version()))
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -809,7 +959,9 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         if urllib.parse.urlparse(self.path).path == "/poll":
-            if trigger_poll():
+            if not _csrf_ok(self.headers):
+                self._send(403, "text/plain", b"missing or invalid CSRF token")
+            elif trigger_poll():
                 self._send(202, "application/json", b'{"started": true}')
             else:
                 self._send(409, "text/plain", b"a poll is already running")

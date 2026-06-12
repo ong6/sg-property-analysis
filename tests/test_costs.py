@@ -215,5 +215,14 @@ class TestCostBreakdown:
         assert breakdown.agent_rental_fee == 2_500
 
 
+class TestCostParameters:
+    """The ROI-side assumptions live in cost_parameters.json."""
+
+    def test_income_tax_and_mortgage_params_present(self):
+        params = CostCalculator().params
+        assert params.get("marginal_income_tax_rate") == 0.15
+        assert params.get("mortgage_rate_pct") == 3.5
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])

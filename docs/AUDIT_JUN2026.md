@@ -6,6 +6,35 @@ through the live scorer, measured against the 6,360-listing DB and the 28
 district CSVs; statutory rates web-verified. This file is the prioritized fix
 queue. History/context: `docs/RELEASES.md`.
 
+## STATUS (2026-06-12, v3.10 fix wave — same day)
+
+**FIXED** — every P0/P1 (#1–#14) and the listed P2s landed as v3.10 (see
+`docs/RELEASES.md` v3.10 for the change list; 324 tests, DB rescored, norm
+center recalibrated 1516→1508). One regression found and fixed in-wave: the
+stale-window fix initially disarmed v3.8 PES protection for stale-cohort
+projects (Coco Palms 624sf hit #1 at 901); stale same-size prints are now
+**time-indexed** by a district price ratio and used as low-trust comps
+(half blend weight, thin cohort, raised flag thresholds) → 901→784.
+
+**STILL OPEN after the wave:**
+- Holdout validation itself — infrastructure landed (CIs, effective-n,
+  version-stamped cohorts, protocol in calibrate_forward.py); the actual
+  out-of-sample read waits for post-2026-06 data (~mid-2027).
+- EC prints: fetch mechanism landed (`--property-types ec`) but needs a
+  network run, and `_load_district_prints` must learn the `_EC.csv` suffix
+  before tight comps see them. Strata-landed CSV re-download likewise.
+- Non-value structural floor: with ALL value/yield credit zeroed, a listing
+  still floors ~730 via future/dev_size/cost/age structure — the audit's
+  "retire or gate `future` and `cost`" improvement (both measured ≈0) is the
+  lever; weight changes need their own justification pass, not done here.
+- Poll-cycle detail enrichment (floor/format words) — fields retained +
+  flags landed; enrichment still off by default (`enrich_top=0`).
+- Improvement-opportunity items (explicit region term, repeat-sales outcome
+  construction, vacancy priors by format) — deliberate, evidence-gated.
+- ~580 stale pre-prior evaluations; re-judge opportunistically.
+- Dashboard ANALYZE now runs under a scoped `--allowedTools` list — extend
+  it if a headless run stalls on a missing tool.
+
 **Cross-cutting headline:** the v3.6–v3.9 trust layer works where it engages,
 but (a) it silently disarms for ~15% of the DB via a name-join miss, (b) the
 yield channel was never brought under it, (c) ingestion validates nothing —

@@ -51,11 +51,30 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     facts: dict[str, Any] = {}
 
     # --- Rental data ---
+    roi5 = listing.roi_5yr
     facts["rental"] = {
         "estimated_monthly_rent": round(listing.estimated_monthly_rent) if listing.estimated_monthly_rent else None,
         "gross_yield_pct": round(listing.estimated_gross_yield, 2) if listing.estimated_gross_yield else None,
+        # Net of holding costs (pre income tax) — the carry the gross number hides
+        "net_yield_pct": round(roi5.net_rental_yield, 2) if roi5 and roi5.net_rental_yield else None,
         "rent_source": listing.rent_source or None,
     }
+    # Audit #5: rent evidence — auditable the same way as PSF comps (source,
+    # URA contract depth, serving window, numeric confidence, sqft-cap flag).
+    facts["rental"]["rent_evidence"] = {
+        "source": listing.rent_source or None,
+        "monthly_rent": round(listing.estimated_monthly_rent) if listing.estimated_monthly_rent else None,
+        "contracts": getattr(listing, "rent_contracts", None),
+        "window_months": getattr(listing, "rent_window_months", None),
+        "confidence": getattr(listing, "rent_confidence", None),
+        "capped": bool(getattr(listing, "rent_capped", False)),
+    }
+    if getattr(listing, "rent_capped", False):
+        facts["rental"]["rent_evidence"]["capped_note"] = (
+            "Rent sqft was capped at 1.25x the bed count's typical size — the "
+            "strata sqft is oversized for the bed count (PES/patio/void or "
+            "mis-scrape); verify the unit format before trusting the yield."
+        )
     if (listing.rent_source or "").startswith("fallback"):
         facts["rental"]["warning"] = (
             "Rent is a generic fallback estimate (no district/condo data) — research "
@@ -165,13 +184,26 @@ def _build_roi_projections(listing: ScoredListing) -> dict:
             }
     if projections:
         # v3.5b: the model basis was previously undisclosed and easy to misread
-        # as a leveraged equity return.
+        # as a leveraged equity return. Audit #11 + income-tax fix (Jun 2026):
+        # entry costs are now deducted from the return and net letting profit
+        # is taxed — surface both assumptions.
+        first_roi = next((r for r in (listing.roi_5yr, listing.roi_6yr, listing.roi_7yr) if r), None)
+        tax_rate = getattr(first_roi, "marginal_income_tax_rate", 0) if first_roi else 0
         projections["basis"] = (
-            "ALL-CASH (no mortgage): returns are on full purchase price + "
-            "upfront costs. Rent compounds at ~2%/yr; appreciation rate decays "
-            "3%/yr toward mean. A 75% LTV buyer's equity returns scale very "
-            "differently — do not compare these numbers to leveraged ROI."
+            "ALL-CASH (no mortgage): returns are on full purchase price + entry "
+            "costs (BSD/ABSD/legal — deducted from the return, not just the "
+            "denominator). Rent compounds at ~2%/yr with rent-linked holding "
+            f"costs scaled to match; net letting profit is taxed at {tax_rate:.0%} "
+            "marginal income tax. Appreciation rate decays 3%/yr toward mean. "
+            "A 75% LTV buyer's equity returns scale very differently — do not "
+            "compare these numbers to leveraged ROI."
         )
+        if first_roi:
+            projections["assumptions"] = {
+                "marginal_income_tax_rate": tax_rate,
+                "entry_costs": getattr(first_roi, "entry_costs", 0),
+                "ltv": getattr(first_roi, "ltv", 0),
+            }
     return projections
 
 
@@ -247,7 +279,8 @@ def _build_stack_profile(listing: ScoredListing) -> Optional[dict]:
         return None
     try:
         import profile_memory
-        prof = profile_memory.find_profile(name)
+        prof = profile_memory.find_profile(
+            name, district=getattr(listing, "district", None))
         if not prof:
             return {
                 "status": "not_researched",

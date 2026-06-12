@@ -48,6 +48,7 @@ class ROICalculator:
         buyer_type: str = "SC",
         property_count: int = 0,
         annual_appreciation: Optional[float] = None,
+        marginal_income_tax_rate: Optional[float] = None,
     ):
         """
         Initialize ROI calculator.
@@ -56,12 +57,25 @@ class ROICalculator:
             buyer_type: "SC" (Singapore Citizen), "PR", or "Foreigner"
             property_count: 0 for first property, 1 for second, etc.
             annual_appreciation: Override default appreciation rate
+            marginal_income_tax_rate: Override the marginal income tax rate
+                applied to net letting profit (default from
+                cost_parameters.json, 0.15)
         """
         self.buyer_type = buyer_type
         self.property_count = property_count
         self.annual_appreciation = annual_appreciation if annual_appreciation is not None else _load_appreciation_rate()
         self.cost_calc = CostCalculator()
         self.rental_estimator = RentalEstimator()
+        # Audit fix (Jun 2026): rental income is taxable — net letting profit
+        # (rent minus deductible holding costs and mortgage interest) is taxed
+        # at the investor's marginal rate. Untaxed rent overstated after-tax
+        # carry 10-24%.
+        self.marginal_income_tax_rate = (
+            marginal_income_tax_rate
+            if marginal_income_tax_rate is not None
+            else self.cost_calc.params.get("marginal_income_tax_rate", 0.15)
+        )
+        self.default_mortgage_rate_pct = self.cost_calc.params.get("mortgage_rate_pct", 3.5)
 
     def calculate(
         self,
@@ -72,6 +86,9 @@ class ROICalculator:
         appreciation_rate: Optional[float] = None,
         agent_rental_months_per_year: Optional[float] = None,
         vacancy_months_per_year: Optional[float] = None,
+        ltv: float = 0.0,
+        mortgage_rate_pct: Optional[float] = None,
+        mortgage_term_years: int = 25,
     ) -> ROIResult:
         """
         Calculate ROI for a property investment.
@@ -82,6 +99,14 @@ class ROICalculator:
             monthly_rent: Override rental estimate
             exit_price: Override exit price estimate
             appreciation_rate: Per-listing appreciation rate (overrides default)
+            ltv: Loan-to-value ratio (0 = all-cash, the default — preserves
+                the unfinanced outputs exactly). When > 0, returns become
+                cash-on-cash: invested cash is downpayment + entry costs,
+                mortgage interest is deducted (and is tax-deductible against
+                rent), and the remaining loan principal nets off at exit.
+            mortgage_rate_pct: Annual mortgage interest rate in percent
+                (default from cost_parameters.json, ~3.5). Ignored when ltv=0.
+            mortgage_term_years: Amortization term (default 25yr).
 
         Returns:
             ROIResult with complete ROI breakdown
@@ -127,26 +152,66 @@ class ROICalculator:
             vacancy_months_per_year=vacancy_months_per_year,
         )
 
+        # Entry (transaction) costs — sunk at purchase. Audit #11: these used
+        # to inflate only the denominator while never being deducted from the
+        # return (exit costs were — the asymmetry was the bug), overstating
+        # 5yr ROI ~3.7pp (SC first property) to ~19pp (SC 2nd, 20% ABSD).
+        entry_costs = cost_breakdown.bsd + cost_breakdown.absd + cost_breakdown.legal_fee_buy
+
+        # Optional financing (audit structural item). ltv=0 (default) keeps
+        # the all-cash path identical: zero loan, zero interest, full price
+        # as invested cash.
+        ltv = max(0.0, min(0.9, ltv or 0.0))
+        loan_amount = int(purchase_price * ltv)
+        downpayment = purchase_price - loan_amount
+        rate_pct = (
+            mortgage_rate_pct if mortgage_rate_pct is not None
+            else self.default_mortgage_rate_pct
+        )
+        interest_by_year, principal_by_year, remaining_principal = self._amortize(
+            loan_amount, rate_pct, mortgage_term_years, hold_years
+        )
+        total_interest = sum(interest_by_year)
+
         # Annual rental income (gross, year 1)
         annual_rent_gross = monthly_rent * 12
 
-        # Annual holding costs
+        # Annual holding costs (year 1)
         annual_holding_costs = cost_breakdown.annual_holding
 
-        # Net annual rental income (year 1)
+        # Net annual rental income (year 1, before income tax — this is the
+        # market-comparable net yield stat)
         annual_rent_net = annual_rent_gross - annual_holding_costs
 
-        # Total rental income over holding period.
+        # Rental stream over the holding period, year by year.
         # v3.5b: rent compounds at ROI_RENT_GROWTH_PER_YEAR (was held flat,
-        # which understated 5-7yr rental income by ~5-7%). Holding costs are
-        # kept flat — property tax does scale with rent, but it's a second-
-        # order effect at these magnitudes.
-        total_rent_gross = sum(
-            annual_rent_gross * (1 + ROI_RENT_GROWTH_PER_YEAR) ** y
-            for y in range(hold_years)
-        )
-        total_holding_costs = annual_holding_costs * hold_years
-        total_rental_net = total_rent_gross - total_holding_costs
+        # which understated 5-7yr rental income by ~5-7%).
+        # Audit fix (Jun 2026): the rent-linked holding costs (property tax,
+        # agent fee, vacancy) now scale with the same rent path instead of
+        # staying flat, and net letting profit (rent minus deductible holding
+        # costs and mortgage interest) is taxed at the marginal income tax
+        # rate — untaxed rent overstated after-tax carry 10-24%.
+        fixed_costs = cost_breakdown.mcst + cost_breakdown.repairs_insurance
+        total_rent_gross = 0.0
+        total_holding_costs = 0.0
+        total_income_tax = 0.0
+        for y in range(hold_years):
+            growth = (1 + ROI_RENT_GROWTH_PER_YEAR) ** y
+            rent_y = annual_rent_gross * growth
+            holding_y = (
+                self.cost_calc.calculate_property_tax(rent_y)  # AV tracks rent
+                + cost_breakdown.agent_rental_fee * growth
+                + cost_breakdown.vacancy_cost * growth
+                + fixed_costs
+            )
+            interest_y = interest_by_year[y] if y < len(interest_by_year) else 0.0
+            taxable_y = max(0.0, rent_y - holding_y - interest_y)
+            total_rent_gross += rent_y
+            total_holding_costs += holding_y
+            total_income_tax += taxable_y * self.marginal_income_tax_rate
+
+        # Net rental income over the hold (after holding costs and income tax)
+        total_rental_net = total_rent_gross - total_holding_costs - total_income_tax
 
         # Exit costs
         exit_costs = self.cost_calc.calculate_exit_costs(exit_price, hold_years)
@@ -155,16 +220,29 @@ class ROICalculator:
         # Capital gain
         capital_gain = exit_price - purchase_price
 
-        # Total return
-        total_return = capital_gain + total_rental_net - total_exit_costs
+        # Total return = profit over all cash put in. Mortgage principal
+        # payments are equity transfers (returned via the exit netting), so
+        # the financing cost reduces to total interest paid; at exit the
+        # remaining principal nets off against the sale proceeds (already
+        # captured: capital_gain is on the full price while only the
+        # downpayment sits in the denominator).
+        total_return = (
+            capital_gain + total_rental_net - total_exit_costs
+            - entry_costs - total_interest
+        )
 
-        # Total investment (upfront costs)
-        total_investment = cost_breakdown.total_upfront
+        # Total investment = cash actually deployed at purchase
+        # (all-cash: full price + entry costs == cost_breakdown.total_upfront;
+        # financed: downpayment + entry costs -> cash-on-cash ROI).
+        total_investment = downpayment + entry_costs
 
         # ROI calculations
         roi_percent = (total_return / total_investment) * 100 if total_investment > 0 else 0
 
-        # Annualized ROI (geometric mean)
+        # Annualized ROI (geometric mean). With entry costs and interest now
+        # inside total_return, final_value is true terminal wealth (exit
+        # proceeds net of loan balance + accumulated after-tax rents) — stamp
+        # duty is no longer treated as recoverable principal.
         if total_investment > 0 and total_return > -total_investment:
             final_value = total_investment + total_return
             annualized_roi = ((final_value / total_investment) ** (1 / hold_years) - 1) * 100
@@ -192,7 +270,50 @@ class ROICalculator:
             monthly_rent_estimate=monthly_rent,
             annual_rent_gross=annual_rent_gross,
             annual_rent_net=annual_rent_net,
+            entry_costs=entry_costs,
+            total_income_tax=round(total_income_tax, 2),
+            marginal_income_tax_rate=self.marginal_income_tax_rate,
+            ltv=ltv,
+            mortgage_rate_pct=rate_pct if loan_amount > 0 else 0,
+            loan_amount=loan_amount,
+            downpayment=downpayment,
+            total_mortgage_interest=round(total_interest, 2),
+            remaining_principal_at_exit=round(remaining_principal, 2),
         )
+
+    @staticmethod
+    def _amortize(
+        loan_amount: int,
+        rate_pct: float,
+        term_years: int,
+        hold_years: int,
+    ) -> tuple[list[float], list[float], float]:
+        """Standard monthly amortization schedule, aggregated per year.
+
+        Returns (interest_by_year, principal_by_year, remaining_principal)
+        for the first `hold_years` years of a `term_years` loan.
+        """
+        if loan_amount <= 0:
+            return [0.0] * hold_years, [0.0] * hold_years, 0.0
+        r = (rate_pct / 100.0) / 12.0
+        n = max(1, term_years * 12)
+        payment = loan_amount / n if r <= 0 else loan_amount * r / (1 - (1 + r) ** (-n))
+        balance = float(loan_amount)
+        interest_by_year: list[float] = []
+        principal_by_year: list[float] = []
+        for _ in range(hold_years):
+            i_y = p_y = 0.0
+            for _m in range(12):
+                if balance <= 0:
+                    break
+                interest = balance * r
+                principal = min(payment - interest, balance)
+                balance -= principal
+                i_y += interest
+                p_y += principal
+            interest_by_year.append(i_y)
+            principal_by_year.append(p_y)
+        return interest_by_year, principal_by_year, balance
 
     def calculate_multiple_periods(
         self,
@@ -229,11 +350,16 @@ class ROICalculator:
         appreciation_rate: Optional[float] = None,
         rent_delta_pct: Optional[float] = None,
         appreciation_delta_pct: Optional[float] = None,
+        ltv: float = 0.0,
+        mortgage_rate_pct: Optional[float] = None,
+        mortgage_rate_delta_pp: float = 1.0,
     ) -> dict[str, dict[int, ROIResult]]:
         """
         Calculate ROI sensitivity scenarios (downside/base/upside).
 
-        Downside/upsides adjust rent and appreciation rate.
+        Downside/upsides adjust rent and appreciation rate. When financed
+        (ltv > 0) an interest-rate axis is added: rate_up/rate_down scenarios
+        move the mortgage rate by +/- mortgage_rate_delta_pp.
         """
         if monthly_rent is None:
             rental_data = self.rental_estimator.estimate(listing)
@@ -242,12 +368,25 @@ class ROICalculator:
         base_rate = appreciation_rate if appreciation_rate is not None else self.annual_appreciation
         rent_delta = ROI_SENSITIVITY_RENT_DELTA_PCT if rent_delta_pct is None else rent_delta_pct
         appr_delta = ROI_SENSITIVITY_APPRECIATION_DELTA_PCT if appreciation_delta_pct is None else appreciation_delta_pct
+        base_mortgage_rate = (
+            mortgage_rate_pct if mortgage_rate_pct is not None
+            else self.default_mortgage_rate_pct
+        )
 
         scenarios = {
             "downside": {"rent_mult": 1 - rent_delta, "rate_delta": -appr_delta},
             "base": {"rent_mult": 1.0, "rate_delta": 0.0},
             "upside": {"rent_mult": 1 + rent_delta, "rate_delta": appr_delta},
         }
+        if ltv > 0:
+            scenarios["rate_up"] = {
+                "rent_mult": 1.0, "rate_delta": 0.0,
+                "mortgage_delta": mortgage_rate_delta_pp,
+            }
+            scenarios["rate_down"] = {
+                "rent_mult": 1.0, "rate_delta": 0.0,
+                "mortgage_delta": -mortgage_rate_delta_pp,
+            }
 
         results: dict[str, dict[int, ROIResult]] = {}
         for name, cfg in scenarios.items():
@@ -255,6 +394,7 @@ class ROICalculator:
             adj_rate = base_rate + cfg["rate_delta"]
             # Keep within reasonable bounds (-5% to +15%/yr)
             adj_rate = max(-0.05, min(0.15, adj_rate))
+            adj_mortgage = max(0.0, base_mortgage_rate + cfg.get("mortgage_delta", 0.0))
             results[name] = {}
             for years in periods:
                 results[name][years] = self.calculate(
@@ -262,6 +402,8 @@ class ROICalculator:
                     hold_years=years,
                     monthly_rent=adj_rent,
                     appreciation_rate=adj_rate,
+                    ltv=ltv,
+                    mortgage_rate_pct=adj_mortgage,
                 )
         return results
 
@@ -322,13 +464,17 @@ def quick_roi_estimate(
     annual_costs += annual_rent * 0.15  # Property tax estimate
 
     net_annual = annual_rent - annual_costs
+    # Marginal income tax on net letting profit (matches full calculator)
+    tax_rate = CostCalculator().params.get("marginal_income_tax_rate", 0.15)
+    net_annual -= max(0.0, net_annual) * tax_rate
     total_net_rental = net_annual * hold_years
 
     capital_gain = exit_price - price
     exit_costs = int(exit_price * 0.02) + 3000  # Agent + legal
+    entry_costs = bsd + 3500  # BSD + legal (sunk at purchase — audit #11)
 
-    total_return = capital_gain + total_net_rental - exit_costs
-    total_investment = price + bsd + 3500
+    total_return = capital_gain + total_net_rental - exit_costs - entry_costs
+    total_investment = price + entry_costs
 
     roi = (total_return / total_investment) * 100
     if roi > -100:

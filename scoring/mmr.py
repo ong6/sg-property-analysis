@@ -47,6 +47,7 @@ try:
         MMR_DISCOUNT_TRUST_KNEE_PCT,
         MMR_DISCOUNT_EXCESS_CREDIT,
         MMR_SUSPECT_VALUE_FACTOR,
+        MMR_PRICE_BAND_CAP,
     )
 except ImportError:
     # Fallbacks mirror config.py (kept in sync; only used if config import fails).
@@ -68,6 +69,13 @@ except ImportError:
     MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0
     MMR_DISCOUNT_EXCESS_CREDIT = 0.25
     MMR_SUSPECT_VALUE_FACTOR = 0.25
+    MMR_PRICE_BAND_CAP = 15.0
+
+# Agent appreciation overrides get the same sanity clamp URA rates get at
+# ingestion (full_scorer caps to [-5, +15] %/yr) — Jun-2026 audit: overrides
+# were the last unclamped positive appreciation channel.
+_OVERRIDE_RATE_MIN_PCT = -5.0
+_OVERRIDE_RATE_MAX_PCT = 15.0
 
 # Red flags that are NOT already expressed as continuous MMR components.
 # (old_property/small_dev/low_lease/psf_overpriced are continuous here.)
@@ -160,19 +168,27 @@ def compute_mmr(scored: Any) -> dict:
         conf = 0.35  # baseline guess, low weight (continuous analog of the legacy cap)
     elif source == "agent_override":
         conf = 1.0
+        # Audit fix: an asserted rate gets the same sanity clamp URA rates get
+        # at ingestion (full_scorer caps to [-5, +15] %/yr) — trust the human's
+        # judgement, not an implausible magnitude.
+        apr_pct = max(_OVERRIDE_RATE_MIN_PCT, min(_OVERRIDE_RATE_MAX_PCT, apr_pct))
     else:
         conf = 0.5 + 0.5 * min(1.0, txn / 50.0)
         # v3.1 boutique-volatility haircut (referee finding: thin freehold
         # series swing wildly year to year — Suites @ Topaz showed +48% 1yr
-        # vs +7.5% annualized on 15 txns). When the series is BOTH thin and
-        # unstable, trust it less; either alone is fine.
-        if txn < 30 and momentum_val is not None and abs(momentum_val) >= 0.8:
+        # vs +7.5% annualized on 15 txns). When the series is thin AND either
+        # unstable or of UNKNOWN stability (audit #6: a missing momentum must
+        # not buy back the confidence the haircut exists to remove), trust it
+        # less; a thin series with a measured-stable momentum keeps full weight.
+        if txn < 30 and (momentum_val is None or abs(momentum_val) >= 0.8):
             conf *= 0.7
     # v3.2: the project CAGR is measured mostly on other unit sizes. For a unit
     # whose own size-cohort barely trades, that rate is weak evidence — damp it.
-    # (Not applied to an explicit agent override: the human asserted that rate.)
-    if source != "agent_override":
-        conf *= cohort_appr_factor
+    # Applied to agent overrides too (audit fix, aligned with
+    # apply_appreciation_override): the human asserts the RATE, but cohort
+    # damping models exit/trend depth for a thin size-cohort, which an asserted
+    # rate does not change.
+    conf *= cohort_appr_factor
     # v3.3: slope cut 7.5→4.0 pts/%-pt. The point-in-time URA backtest showed
     # trailing appreciation has ~0 forward predictive power (ρ≈+0.06), so it no
     # longer dominates; it stays a meaningful factor (desirability proxy) but
@@ -217,8 +233,11 @@ def compute_mmr(scored: Any) -> dict:
     if premium_pct is not None:
         # v3.6: knee-compressed discount + tanh saturation (same cap as
         # age_value) — an uncapped linear -0.8/% let a -60% artifact earn +48.
+        # Slope shared with age_value via MMR_RELVALUE_SLOPE (audit #3: a
+        # hardcoded -0.8 desynced the two halves of the value signal when the
+        # config constant was tuned).
         psf_value = MMR_RELVALUE_CAP * math.tanh(
-            -0.8 * _knee_discount(premium_pct) / MMR_RELVALUE_CAP)
+            -MMR_RELVALUE_SLOPE * _knee_discount(premium_pct) / MMR_RELVALUE_CAP)
         # v3.1/3.2: a premium/discount is only as trustworthy as the comparable
         # set behind it. Weight by the SAME-SIZE cohort count (the premium is now
         # measured against similar-size units); fall back to project txns when a
@@ -261,7 +280,7 @@ def compute_mmr(scored: Any) -> dict:
     else:
         comps["lease"] = 0.0
 
-    # --- Age (3-7yr sweet spot, uncapped old-age decline) ---
+    # --- Age (v3.7 measured curve: ramp 0-7yr, plateau 7-30, mild decline 30+) ---
     age = None
     age_info = sb_cap.get("property_age", {})
     if age_info.get("age_years") is not None:
@@ -285,13 +304,26 @@ def compute_mmr(scored: Any) -> dict:
     # not project rental evidence) — it belongs in the synthetic tier just above
     # district_median, not at 0.9 (a pre-v3.4 leftover that escaped the
     # down-weighting pass and out-ranked real ura_project contracts).
+    # Audit #5: an UNKNOWN rent source must not outrank the known synthetic
+    # tiers (the old 0.6 default beat district_bedroom 0.55 and
+    # district_median 0.5) — 0.3 ranks it below every named source but above
+    # the explicit fallbacks.
     rent_conf = {
         "same_condo": 1.0,
         "ura_project_bed": 0.95,
         "ura_project": 0.8,
         "district_bedroom": 0.55,
         "district_median": 0.5,
-    }.get(rent_source, 0.15 if rent_source.startswith("fallback") else 0.6)
+    }.get(rent_source, 0.15 if rent_source.startswith("fallback") else 0.3)
+    # When the rental estimator carried an explicit numeric confidence (copied
+    # onto the scored listing as `rent_confidence`), it can only LOWER the
+    # source-map prior, never raise it. Defensive: absent/malformed → ignored.
+    _rent_confidence = getattr(scored, "rent_confidence", None)
+    if _rent_confidence is not None:
+        try:
+            rent_conf = min(rent_conf, max(0.0, min(1.0, float(_rent_confidence))))
+        except (TypeError, ValueError):
+            pass
     # v3.5b: slope 18.75→10 pts/pp — real-rent backtest (PART 5g) shows +1pp
     # yield costs ~0.75pp/yr forward price growth, so yield's NET total-return
     # edge is small; it stays weighted as (regime-hedged) carry. (config)
@@ -300,8 +332,15 @@ def compute_mmr(scored: Any) -> dict:
     # v3.6 capped psf_value/age_value. Real yields (2.5-5%) stay near-linear.
     if gross_yield > 0:
         yield_raw = MMR_YIELD_SLOPE_PTS_PER_PP * (gross_yield - MMR_YIELD_CENTER_PCT)
-        comps["yield"] = round(
-            MMR_YIELD_CAP * math.tanh(yield_raw / MMR_YIELD_CAP) * rent_conf, 2)
+        yield_pts = MMR_YIELD_CAP * math.tanh(yield_raw / MMR_YIELD_CAP) * rent_conf
+        # Audit #8: gross_yield divides the rent by the SAME untrusted price the
+        # suspect triggers just flagged — a flagged mis-scrape must not keep its
+        # yield points after psf_value/age_value were damped (The Vision kept
+        # ~+19 yield pts this way and still scored 465). Positive side retains
+        # MMR_SUSPECT_VALUE_FACTOR; a low-yield reading stays fully penalized.
+        if suspect_discount and yield_pts > 0:
+            yield_pts *= MMR_SUSPECT_VALUE_FACTOR
+        comps["yield"] = round(yield_pts, 2)
     else:
         comps["yield"] = 0.0
 
@@ -334,11 +373,16 @@ def compute_mmr(scored: Any) -> dict:
     # that signal is mostly the region effect (already in the appreciation
     # baselines); rewarding it again would double-count region.
     price = scored.price or 0
-    if price <= 0 or price <= 2_200_000:
+    if price <= 2_200_000:
         comps["price_band"] = 0.0  # broad-demand band — neutral, no quantum reward
     else:
-        # Buyer pool thins continuously above the sweet spot (uncapped decline)
-        comps["price_band"] = round(-(price - 2_200_000) / 500_000 * 2.5, 2)
+        # Buyer pool thins continuously above the sweet spot. Audit #4: this was
+        # the last uncapped value-side channel (-39 raw at $10M); same -2.5 pts
+        # per $500k slope near the knee, saturating (tanh) at MMR_PRICE_BAND_CAP
+        # so an ultra-luxury quantum reads as thin-exit risk, not a death blow.
+        # Normal $1-4M asks are nearly unchanged (-4.0 → -3.9 at $3M).
+        raw = (price - 2_200_000) / 500_000 * 2.5
+        comps["price_band"] = round(-MMR_PRICE_BAND_CAP * math.tanh(raw / MMR_PRICE_BAND_CAP), 2)
 
     # --- Future potential (UPSIDE-ONLY catalyst) ---
     # v3.4: two fixes. (1) Was (score-8.0)*1.2 — a ±24-pt swing that PENALIZED
@@ -411,7 +455,10 @@ def apply_appreciation_override(
     v3.2 cohort-depth damping models EXIT/TREND depth for a thin size-cohort, which
     an override does not change — so it is still applied (pass `cohort_appr_factor`
     from psf_cohort_txns when available). Defaults to 1.0 (no damping) when unknown.
+    The rate is clamped to the same [-5, +15] %/yr band URA rates get at ingestion
+    (audit fix: overrides were the last unclamped positive appreciation channel).
     """
+    new_rate_pct = max(_OVERRIDE_RATE_MIN_PCT, min(_OVERRIDE_RATE_MAX_PCT, float(new_rate_pct)))
     comps = dict(mmr_result.get("components", {}))
     old = comps.get("appreciation", 0.0)
     conf = 1.0 * max(0.0, min(1.0, cohort_appr_factor))

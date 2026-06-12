@@ -43,6 +43,8 @@ import json
 import os
 import re
 import sys
+
+import config
 from datetime import datetime
 from pathlib import Path
 from glob import glob as file_glob
@@ -1186,6 +1188,7 @@ Examples:
             r["mmr"] = s.mmr
             r["score_1000"] = s.score_1000
             r["scored_at"] = today
+            r["score_version"] = config.score_version()
             if s.score_1000 is not None:
                 scored_vals.append(s.score_1000)
 
@@ -1193,21 +1196,23 @@ Examples:
         path = listings_db.export_sheet(db=db)
 
         # Append to the MMR history CSV — scores over time accumulate so the
-        # sheet always shows latest while history preserves every run.
+        # sheet always shows latest while history preserves every run. The
+        # poller appends to the same file from another process — share its lock.
         import csv as _csv
         hist_path = os.path.join("data", "mmr_history.csv")
-        write_header = not os.path.exists(hist_path)
-        with open(hist_path, "a", newline="") as f:
-            writer = _csv.writer(f)
-            if write_header:
-                writer.writerow(["scored_at", "id", "project_name", "district", "beds",
-                                 "price", "psf", "mmr", "score_1000"])
-            for r in usable:
-                if r.get("mmr") is None:
-                    continue
-                writer.writerow([today, r.get("id"), r.get("project_name"), r.get("district"),
-                                 r.get("beds"), r.get("price"), r.get("psf"),
-                                 r.get("mmr"), r.get("score_1000")])
+        with listings_db.file_lock(hist_path + ".lock"):
+            write_header = not os.path.exists(hist_path)
+            with open(hist_path, "a", newline="") as f:
+                writer = _csv.writer(f)
+                if write_header:
+                    writer.writerow(["scored_at", "id", "project_name", "district", "beds",
+                                     "price", "psf", "mmr", "score_1000", "score_version"])
+                for r in usable:
+                    if r.get("mmr") is None:
+                        continue
+                    writer.writerow([today, r.get("id"), r.get("project_name"), r.get("district"),
+                                     r.get("beds"), r.get("price"), r.get("psf"),
+                                     r.get("mmr"), r.get("score_1000"), config.score_version()])
 
         if scored_vals:
             scored_vals.sort()

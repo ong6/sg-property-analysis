@@ -39,17 +39,23 @@ used, and ask if intent is unclear.
 - **Honest verdicts.** "No buys", Avoid, and low confidence are first-class
   outcomes. Never manufacture a winner. Always fill `rating`, `confidence` and
   `rating_rationale` (the rationale renders under the verdict).
-- **Value & region lead; trailing appreciation has ~0 forward power.** Backtested
-  on the full 28-district URA panel (106k txns; in-sample, single 2021–26 bull
-  regime — see docs/AUDIT_JUN2026.md): the robust forward signals are
-  **cheap-vs-district-peers** and **region** (realized fwd OCR +3.7 > RCR +3.1 ≫
-  CCR +1.9%/yr; config baselines 2.8/3.7/4.2 — regime-tested, the OCR>CCR tilt
-  held in every 2yr window since 2004). Trailing CAGR/momentum ≈ 0; the future-
-  infra score has no measured power; **freehold is forward-neutral** (a ~5% PSF
-  *level* premium, not a return edge); absolute cheapness is mostly the region
-  effect — don't double-count. MRT proximity and buyer-pool depth are real
-  (std_β ≈ ±0.16). **The full model explains <10% of forward variance** —
-  small `score_1000` gaps are noise; calibrate confidence accordingly.
+- **Value & region lead; trailing appreciation is de-weighted.** Backtested on
+  the full 28-district URA panel (106k txns; **in-sample, single 2021–26 bull
+  regime, 563 effective projects** — see docs/AUDIT_JUN2026.md): the robust
+  forward signals are **cheap-vs-district-peers** and **region** (realized fwd
+  OCR +3.7 > RCR +3.1 ≫ CCR +1.9%/yr; config baselines 2.8/3.7/4.2). The
+  OCR>CCR tilt is long-run but **not a law** — CCR won 20/81 rolling windows
+  since 2004, incl. the 2004–08 era outright. Trailing CAGR/momentum: marginal
+  undetermined once clustered (univariate +0.13) — story, not signal. The
+  future-infra score has no measured power; **freehold is forward-neutral**
+  (a ~5% PSF *level* premium, not a return edge); absolute cheapness is mostly
+  the region effect — don't double-count. Buyer-pool depth survives clustering
+  (std_β +0.16); MRT proximity is real but weaker than first measured
+  (as-of-T std_β −0.11 — a third of the old −0.16 was unopened-station
+  look-ahead). High gross yield predicts *lower* forward price growth
+  (std_β −0.16) — count yield as carry, never as appreciation. **The full
+  model explains <10% of forward variance** (composite ρ +0.29, CI +0.21..
+  +0.36) — small `score_1000` gaps are noise; calibrate confidence accordingly.
 - **Value is age-relative — and the age curve is KINKED.** Don't compare a
   resale's PSF to a new launch's directly — use `factual_data.relative_value`,
   which normalizes peers along the measured piecewise decay (`AGE_PSF_DECAY_

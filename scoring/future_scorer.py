@@ -214,7 +214,12 @@ class FutureScorer:
         if not district:
             return 0, []
 
-        district_num = int(district.replace("D", ""))
+        # normalize_district passes non-numeric inputs through uppercased
+        # (e.g. "DISTRICT 15"), so int() can raise — guard to neutral.
+        try:
+            district_num = int(district.replace("D", ""))
+        except ValueError:
+            return 0, []
 
         zones_found = []
         best_score = 0
@@ -245,7 +250,10 @@ class FutureScorer:
         if not district:
             return 2  # Default moderate score
 
-        district_num = str(int(district.replace("D", "")))
+        try:
+            district_num = str(int(district.replace("D", "")))
+        except ValueError:
+            return 2  # non-numeric district → neutral (same as unknown)
         profile = self.district_profiles.get("districts", {}).get(district_num, {})
 
         if not profile:
@@ -296,7 +304,10 @@ class FutureScorer:
         if not district:
             return 2
 
-        district_num = str(int(district.replace("D", "")))
+        try:
+            district_num = str(int(district.replace("D", "")))
+        except ValueError:
+            return 2  # non-numeric district → neutral (same as unknown)
         profile = self.district_profiles.get("districts", {}).get(district_num, {})
 
         if not profile:

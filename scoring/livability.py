@@ -7,13 +7,18 @@ never leak into MMR. This module scores them as an explicitly heuristic,
 display-only second axis: 0–100, 50 = neutral, missing data is neutral
 (same philosophy as MMR — absence of data is not a defect).
 
-Components (each 0 when the field is missing):
-  baths      — 2b2ba lives better than 2b1ba; beds-1 baths is the SG baseline
-  space      — sqft per bedroom vs typical for the bed count
-  mrt        — walk distance parsed from the listing's mrt_info text
-  floor      — high floor +, low/ground − (only present on enriched listings)
-  facing     — N/S avoids direct sun; W catches afternoon sun (enriched only)
-  newness    — modern stack (facilities/layouts) +, >30yr maintenance drag −
+Components (absent when the field is missing). The TYPICAL band of every
+present field scores 0 — a fully-typical listing scores the same 50 as a
+sparse one, so sorting by livability ranks quality, never data completeness
+(pre-recenter, present-and-typical space+MRT alone earned +7):
+  baths      −8 under-bathed / 0 beds−1 (SG baseline) / +10 baths ≥ beds
+  space      −8 (<0.78× expected) / −3 (0.78–0.95×) / 0 (0.95–1.15× typical)
+             / +8 (≥1.15× — the own-stay oversized flip)
+  mrt        +6 (≤400m, genuine doorstep plus) / 0 (≤1km, the norm)
+             / −4 (1–1.5km) / −8 (>1.5km)
+  floor      +6 high/penthouse / 0 mid (explicit) / −8 low/ground (enriched only)
+  facing     +4 N/S (no direct sun) / 0 other / −4 W afternoon sun (enriched only)
+  newness    +4 (≤8yr modern stack) / 0 / −4 (>30yr maintenance drag)
 
 The `why` string ships with the score so the UI can show its work — a
 heuristic that can't explain itself shouldn't be trusted at all.
@@ -37,7 +42,10 @@ def _mrt_meters(mrt_info: str | None) -> int | None:
     m = re.search(r"\(([\d.]+)\s*(m|km)\)", mrt_info)
     if not m:
         return None
-    val = float(m.group(1))
+    try:
+        val = float(m.group(1))
+    except ValueError:  # "[\d.]+" also matches dotted garbage like "1.2.3"
+        return None
     return int(val * 1000) if m.group(2) == "km" else int(val)
 
 
@@ -62,22 +70,22 @@ def score_livability(rec: dict) -> dict:
         if ratio >= 1.15:
             c["space"] = 8           # the own-stay flip: oversized is a feature
         elif ratio >= 0.95:
-            c["space"] = 3
+            c["space"] = 0           # typical — present-and-typical is not a plus
         elif ratio < 0.78:
             c["space"] = -8          # shoebox layout
         else:
-            c["space"] = 0
+            c["space"] = -3          # snug
 
     meters = _mrt_meters(rec.get("mrt_info"))
     if meters is not None:
         if meters <= 400:
-            c["mrt"] = 8
-        elif meters <= 800:
-            c["mrt"] = 4
-        elif meters > 1500:
+            c["mrt"] = 6             # genuine doorstep premium
+        elif meters <= 1000:
+            c["mrt"] = 0             # the SG norm — not a plus, just present
+        elif meters <= 1500:
             c["mrt"] = -4
         else:
-            c["mrt"] = 0
+            c["mrt"] = -8
 
     floor = (rec.get("floor_level") or "").lower()
     if floor:
@@ -85,6 +93,8 @@ def score_livability(rec: dict) -> dict:
             c["floor"] = 6
         elif any(k in floor for k in _FLOOR_NEG):
             c["floor"] = -8          # harder to live with AND a thinner exit pool
+        else:
+            c["floor"] = 0           # mid floor — known and neutral, not absent
 
     facing = (rec.get("facing") or "").lower()
     if facing:
@@ -110,5 +120,8 @@ def score_livability(rec: dict) -> dict:
             pass
 
     score = max(0, min(100, 50 + sum(c.values())))
-    why = " · ".join(f"{k} {v:+d}" for k, v in c.items() if v) or "no signals"
+    # All-zero components ≠ no components: post-recentering, a fully-typical
+    # listing legitimately scores 50 with every signal present.
+    why = (" · ".join(f"{k} {v:+d}" for k, v in c.items() if v)
+           or ("all typical" if c else "no signals"))
     return {"score": score, "components": c, "signals": len(c), "why": why}

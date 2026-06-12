@@ -18,15 +18,18 @@ SVY21 -> WGS84 is the standard closed-form Transverse Mercator inverse
 
 Usage:
   python build_project_units.py /tmp/ura_dwelling_units.geojson
+  python build_project_units.py --backfill-from-db   # PG-detail units only
 """
 
 import json
 import math
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 OUT = Path(__file__).parent / "data" / "project_units.json"
+DB_FILE = Path(__file__).parent / "data" / "listings_db.json"
 
 # --- SVY21 projection constants (EPSG:3414) ---------------------------------
 _A = 6378137.0            # WGS84 semi-major
@@ -92,7 +95,75 @@ def svy21_to_wgs84(easting, northing):
     return math.degrees(lat), math.degrees(lon)
 
 
+def _norm_name(name: str) -> str:
+    """Mirrors scoring.full_scorer._pu_normalize (kept local so this script
+    stays dependency-free): apostrophes, '@' vs ' at ', punctuation."""
+    s = (name or "").lower().strip()
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s*@\s*", " at ", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
+    return s
+
+
+def backfill_from_listings_db(projects: dict) -> int:
+    """Fill GIS join misses from PG detail-page enrichment.
+
+    64% of project_units join misses are new launches — URA's GIS layer lags
+    completion by years, while PropertyGuru's detail pages carry `totalUnits`
+    (already parsed by _extract_detail_fields into the DB's `total_units`).
+    For any project the GIS build didn't cover (exact-lower AND normalized-name
+    miss), emit an entry from the most recently seen DB record carrying
+    total_units. Tagged units_basis="pg_detail" so consumers can tell portal
+    metadata from survey-grade GIS sums; lat/lng are included (possibly None —
+    FullScorer indexes pu["lat"] directly and its consumers are None-safe).
+    Mutates `projects` in place; returns the number of entries added.
+    """
+    if not DB_FILE.exists():
+        return 0
+    with open(DB_FILE) as f:
+        records = json.load(f).get("listings", {})
+
+    covered_norm = {_norm_name(k) for k in projects}
+    best: dict[str, dict] = {}
+    for rec in records.values():
+        units = rec.get("total_units")
+        name = (rec.get("project_name") or rec.get("title") or "").strip()
+        if not units or not name:
+            continue
+        key = name.lower()
+        if key in projects or _norm_name(name) in covered_norm:
+            continue
+        prev = best.get(key)
+        if prev is None or (rec.get("last_seen") or "") > (prev.get("last_seen") or ""):
+            best[key] = rec
+
+    for key, rec in best.items():
+        lat = rec.get("latitude")
+        lng = rec.get("longitude")
+        projects[key] = {
+            "project_name": (rec.get("project_name") or rec.get("title")).strip().upper(),
+            "total_units": int(rec["total_units"]),
+            "lat": round(float(lat), 6) if lat else None,
+            "lng": round(float(lng), 6) if lng else None,
+            "landed_only": False,
+            "units_basis": "pg_detail",
+        }
+    return len(best)
+
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--backfill-from-db":
+        # Update the existing file in place — no GeoJSON needed.
+        data = json.loads(OUT.read_text()) if OUT.exists() else {
+            "source": "pg_detail backfill only", "projects": {}}
+        projects = data.get("projects", {})
+        added = backfill_from_listings_db(projects)
+        data["projects"] = projects
+        data["built"] = __import__("datetime").date.today().isoformat()
+        OUT.write_text(json.dumps(data, indent=1))
+        print(f"backfilled {added} projects from listings DB (pg_detail) -> {OUT}")
+        return
+
     src = sys.argv[1] if len(sys.argv) > 1 else "/tmp/ura_dwelling_units.geojson"
     g = json.load(open(src))
     feats = g.get("features", [])
@@ -142,6 +213,10 @@ def main():
             if part and part not in out:
                 aliases[part] = entry | {"units_basis": "shared_site"}
     out.update(aliases)
+
+    backfilled = backfill_from_listings_db(out)
+    if backfilled:
+        print(f"+{backfilled} GIS-missing projects backfilled from PG detail data")
 
     OUT.write_text(json.dumps({
         "source": "data.gov.sg d_be71daeab5930f96b90ad2857454d876 (URA No of Dwelling Units)",
