@@ -10,7 +10,9 @@ which stacks/facings/floors to target or avoid. Rate each unit type too.
 
 **Purpose check first**: metrics assume investment (5–7yr hold). If the request
 hints at own-stay or is ambiguous, ask the user before rating
-(see `docs/evaluation-rubric.md` → Purpose check).
+(see `docs/evaluation-rubric.md` → Purpose check). For own-stay weight the
+0–100 livability score (`scoring/livability.py` — heuristic, never folded
+into MMR) alongside the rubric's own-stay lens.
 
 ## Steps
 
@@ -28,20 +30,20 @@ hints at own-stay or is ambiguous, ask the user before rating
    ```
    Creates `output/run_NNN/raw_analysis.json` (one entry per unit type).
 
-**Forward-signal priors (v3.4 — backtested; full list in the rubric).** Lead with
-VALUE, not trailing appreciation. Strongest robust signals: **cheap-vs-district-peers**
-(`relative_value.premium_vs_age_adjusted_median_pct`, `psf_premium_vs_ura_median_pct`)
-and **region** (realized fwd OCR≈+4.0% ≥ RCR≈+3.5% ≫ CCR≈+0.7% — the old "CCR leads"
-prior was inverted). Trailing `appreciation.annual_rate_pct`/`momentum` ≈0 forward power
-(story/catalyst only); freehold is **not** a forward edge; absolute low PSF is mostly the
-region effect. Model explains <10% of forward variance → small `score_1000` gaps are
-noise; reserve **high** confidence for decisive physical/catalyst evidence.
+**Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
+actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward
+power; model explains <10% of forward variance, so calibrate confidence.
 
 3. **Research & evaluate** (form your own view BEFORE looking at algo_reference):
    - Web search: `"<name> Singapore review"` (build quality, developer, defects),
      `"<name> price trend transactions"` (resale PSF direction),
      `"<name> floor plan site plan facing"` (stack/facing/floor quality)
    - Read `factual_data` per unit type; rubric: `docs/evaluation-rubric.md`
+   - Trust rules: if factual_data shows `ask_above_own_stack_prints`,
+     `ask_below_stack_prints`, or `stack_low_floor_share` ≥ 0.7, the unit's
+     apparent discount is a floor/PES/loft artifact — treat the stack's own
+     recent (24mo) prints as the true comp and verify before crediting any
+     deep (>25%) discount or >5.5% gross yield.
    - Optional sanity-check: `python invest.py --score '{...}'` — remember it
      takes your inputs at face value; it is not independent confirmation.
 

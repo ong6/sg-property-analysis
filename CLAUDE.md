@@ -12,7 +12,8 @@ purpose (5–7yr hold). If the user's request suggests **own-stay** — or is
 ambiguous between the two — **ask the user which it is before rating.**
 Own-stay shifts the rubric: livability, layout, facing, noise, schools and
 commute outweigh yield and exit liquidity; "oversized unit" flips from flag to
-feature. Full comparison: `docs/evaluation-rubric.md`.
+feature, and the 0–100 livability score becomes the primary lens. Full
+comparison: `docs/evaluation-rubric.md`.
 
 ## Pick the flow (each has a skill with the full runbook)
 
@@ -29,7 +30,7 @@ Requests that fit none of these (e.g. "compare these two condos", "should I
 sell?") still use the same tools — pick the closest altitude, state the rubric
 used, and ask if intent is unclear.
 
-## Evaluation principles (anti-bias)
+## Evaluation principles (current rules — history & evidence in docs/RELEASES.md)
 
 - **Your view first.** Form it from `factual_data` + web research; consult
   `algo_reference`, MMR and past evaluations to pressure-test, not to start from.
@@ -38,67 +39,51 @@ used, and ask if intent is unclear.
 - **Honest verdicts.** "No buys", Avoid, and low confidence are first-class
   outcomes. Never manufacture a winner. Always fill `rating`, `confidence` and
   `rating_rationale` (the rationale renders under the verdict).
+- **Value & region lead; trailing appreciation has ~0 forward power.** Backtested
+  on the full 28-district URA panel (106k txns; in-sample, single 2021–26 bull
+  regime — see docs/AUDIT_JUN2026.md): the robust forward signals are
+  **cheap-vs-district-peers** and **region** (realized fwd OCR +3.7 > RCR +3.1 ≫
+  CCR +1.9%/yr; config baselines 2.8/3.7/4.2 — regime-tested, the OCR>CCR tilt
+  held in every 2yr window since 2004). Trailing CAGR/momentum ≈ 0; the future-
+  infra score has no measured power; **freehold is forward-neutral** (a ~5% PSF
+  *level* premium, not a return edge); absolute cheapness is mostly the region
+  effect — don't double-count. MRT proximity and buyer-pool depth are real
+  (std_β ≈ ±0.16). **The full model explains <10% of forward variance** —
+  small `score_1000` gaps are noise; calibrate confidence accordingly.
+- **Value is age-relative — and the age curve is KINKED.** Don't compare a
+  resale's PSF to a new launch's directly — use `factual_data.relative_value`,
+  which normalizes peers along the measured piecewise decay (`AGE_PSF_DECAY_
+  SEGMENTS`): ~3%/yr (≈$50/psf/yr) ages 0–10, a 10–15yr plateau, ~2.6%/yr at
+  15–20, then slow drift. A flat $/yr rule under-adjusts new-vs-old ~2× inside
+  0–10yr.
+- **Age for *returns* plateaus 7–30yr.** Forward returns: the 0–5yr cohort is the
+  *worst* (still amortizing launch premium); 5–30yr all fine; only 30+ slows.
+  Don't discount a 15–25yr-old condo's prospects just for age, and don't stack
+  an age penalty on top of the lease component (leasehold decay is its job).
+- **Value is size-relative.** A small unit trades at a structurally higher PSF
+  than a large one in the same project — MMR benchmarks against the same-size
+  band plus **tight same-stack comps (±7% sqft, 24mo)** and damps signals on a
+  thin cohort (`psf_cohort_txns`). When a small high-PSF unit ranks well, check
+  its cohort depth before trusting it.
+- **A deep discount is a verify-first signal, not value.** The ranking *selects*
+  for artifact cheapness (mis-scraped sqft/beds, strata villas vs apartment
+  medians, PES patios, double-volume lofts, stale/bait asks). MMR already
+  kinks credit at −25%, caps psf_value/age_value/yield, and damps suspects —
+  but a still-extreme discount that survives is a flag to confirm sqft, format
+  and price against the project's own **recent (24mo)** URA prints before
+  crediting. Trust flags: `ask_above_own_stack_prints` / `stack_low_floor_share`
+  ≥ 0.7 (floor/PES artifact — the stack's own prints are the true comp),
+  `ask_below_stack_prints` (below p10 of a deep print set — loft void or bait),
+  `bedroom_sqft_mismatch`. Gross yield >~5.5% is the same artifact mirrored
+  through rent ÷ price — verify ask, `rent_source`, and format first.
 - **Override with care.** The system de-biases new-launch appreciation; don't
   override the adjusted rate with a portal headline CAGR — resale-to-resale
   evidence only.
 - **`--score` circularity.** If you feed it your own rate/rent, the result
   validates internal consistency, not your inputs.
-- **Value is age-relative.** Don't compare a resale's PSF to a new launch's
-  directly — use `factual_data.relative_value` (age-adjusted at ~1.6%/yr ≈
-  $23–34/psf/yr by region, v3.4-recalibrated from the hedonic) to judge whether
-  old vs new is the better value.
-- **Value is size-relative (v3.2).** A small unit trades at a structurally
-  higher PSF than a large one in the same project — never judge a 1BR's PSF
-  against the project-pooled median (which mixes in penthouses). MMR now
-  compares against the same-size band and damps appreciation/liquidity for a
-  unit whose own size-cohort is thin (`psf_cohort_txns`). When you see a small
-  high-PSF unit ranking well, check its cohort depth before trusting it.
-- **Value & region lead; appreciation is de-emphasized (v3.4).** Point-in-time
-  URA backtests (`backtest.py` / `backtest_ext.py`) show trailing appreciation has
-  ~0 forward power and momentum is flat-to-contrarian; the strongest *robust*
-  forward signals are **cheap-vs-district-peers** and **region**. v3.4 changes:
-  momentum slope → 0; relative-value cap 20→28 (un-throttled); **regional baselines
-  DE-INVERTED** (realized fwd OCR +4.0 ≥ RCR +3.5 ≫ CCR +0.7 — the old CCR>OCR table
-  was backwards); **freehold is not a forward edge** (lease bonus 4.0→1.0); age slope
-  halved to ~1.6%/yr; `price_band` reshaped to exit-liquidity-only (no quantum
-  reward); future score made upside-only (stops penalizing data-poor listings).
-  **Absolute cheapness is mostly the region effect** — don't double-count it. The
-  full model explains **<10% of forward variance** — calibrate confidence; small
-  `score_1000` gaps are noise. Re-run `backtest_ext.py` as the panel grows.
-- **v3.5 (backtest PART 5, then re-validated on the FULL 28-district panel —
-  106k txns, CCR n=270):** composite forward-ρ **+0.288** on the expanded panel.
-  Realized forward **OCR +3.7% > RCR +3.1% ≫ CCR +1.9%** (de-inversion confirmed
-  at scale; compressed baselines 3.0/3.7/4.0 well calibrated). **Freehold's
-  apparent forward underperformance was a 13-district artifact** — on the full
-  panel it is exactly neutral (marginal ≈0); it does carry a ~5% PSF *level*
-  premium (in the price, not a return edge). The `future` infra score has **no
-  measured forward power** (marginal ≈0/negative — "transformation upside" is
-  narrative, not edge), while **`buyer_pool` strengthened** (std_β +0.16, real
-  content beyond region). Liquidity's univariate signal is value/region in
-  disguise (txn-volume weight 10→6, exit-risk only); appreciation slope 4→3.
-  **Floor factors de-attenuated** (~1.4%→~3%/tier, within-project FE): don't
-  hand-adjust for floor on top of `psf_value` — it's now properly normalized.
-  `yield` and `dev_size` remain unvalidated (rental fetch in progress / no
-  total_units data). Shipped-score calibration harness: `calibrate_forward.py`
-  (joins `mmr_history.csv` to later URA PSF; meaningful from ~mid-2027).
-- **v3.6 discount trust (agent-vs-score divergence audit, Jun 2026):** the top
-  of the /1000 ranking was dominated by *fake* deep discounts — mis-scraped
-  sqft/beds (700–1086 sqft "1BRs"), strata villas/terraces benchmarked against
-  apartment medians, stale/bait prices ~30% below trailing prints. The fake
-  cheapness earned up to +28 (`age_value`) plus an **uncapped** `psf_value`
-  against only −3/−6 in red flags, so every audited top-15 artifact the agent
-  had rated Avoid/Neutral ranked #1–15. Fix (`config.py` / `scoring/mmr.py`):
-  discounts deeper than **25% vs verified comps** earn marginal credit at 25%
-  (knee); `psf_value` now tanh-caps like `age_value`; and when
-  `bedroom_sqft_mismatch` fires or a deep discount rests on a thin same-size
-  cohort, the positive side of both value components retains only 25%
-  (premiums stay fully penalized). Backtest unchanged (ρ +0.288 — URA panel
-  data is clean; the rule only disarms scraped-listing artifacts). **A still-
-  extreme discount that survives the damping is a verify-first signal, not
-  value** — confirm sqft/format/price against URA prints before crediting it.
 
-Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**.
-Full audit + change rationale: **`docs/IMPROVEMENT_PLAN.md`**.
+Full rubric, rating scale, and field guide: **`docs/evaluation-rubric.md`**
+(read it in step ③). Release-by-release rationale: **`docs/RELEASES.md`**.
 
 ## Technical score (MMR)
 
@@ -115,52 +100,69 @@ python invest.py --score '{"price":2300000,"sqft":958,"psf":2401,"beds":2,"distr
 `python invest.py --fight` runs a pairwise tournament over the listings DB —
 contenders are (condo × unit type), purely algorithmic (no AI in the fights).
 **Every run requires you to referee before results are trusted**: read
-`output/arena_referee_packet.json`, work through its `auto_flags` (thin
-transactions behind high appreciation, fallback-rent yield edges, extreme
-psf/age components, suspect sqft), verify the top contenders' stats are real
-(web-check if extreme), then append a **Referee verdict** to
-`output/arena_latest.md`: confirmed ranks, demoted contenders + reasons, and
-run confidence. The arena ranks stats; you certify the stats deserve to rank.
+`output/arena_referee_packet.json`, work through its `auto_flags`, verify the
+top contenders' stats are real (web-check if extreme), then append a
+**Referee verdict** to `output/arena_latest.md`: confirmed ranks, demoted
+contenders + reasons, and run confidence. The arena ranks stats; you certify
+the stats deserve to rank. Each run also writes a timestamped archive
+(`output/arena_<ts>.md`).
 
-Each run also writes a timestamped archive (`output/arena_<ts>.md`) since
-`arena_latest.md` is overwritten per run. **Local rankings UI**:
-`python ui.py` → http://127.0.0.1:8642 — sortable/filterable table with
-one-click PropertyGuru listing + Google Maps links per contender.
-**System dashboard**: `python dashboard.py` → http://127.0.0.1:8643 — the
-whole engine state on one page (forward signals, regime analysis, score
-distribution, coverage, district benchmarks, top projects) with per-condo
-ANALYZE buttons that run `claude -p "analyze <condo>"` headless in the
-background (transcript → `output/analyze_runs/`; the verdict auto-saves to
-eval memory and surfaces as a VIEW link on the next page refresh).
+## UI, dashboard, poller
 
-Supporting data backbone (CSV, append-only — grep/analyze freely):
+**Listings UI**: `python ui.py` → http://127.0.0.1:8642 — default tab is
+**Fresh listings** (new-on-market from the DB, sorted by score_1000, NEW /
+price-drop badges, min-score / recency / district / beds filters, same-unit
+dedupe ×N badge); arena table is the second tab (`#arena`). The UI auto-polls
+PropertyGuru in the background (default every 6h, `--no-poll` to disable,
+`--poll-districts/--poll-beds/--poll-interval-mins` to tune) and has a SCAN
+NOW button. Standalone/cron: `python poller.py` (one cycle) or `--loop`;
+state in `data/poll_state.json`. JSON APIs: `/api/fresh`, `/api/rankings`,
+`/api/poll-status`, `POST /poll`.
+
+The fresh view shows **two separate score axes**: `score_1000` (MMR — money,
+backtest-anchored) and a 0–100 **livability score** (`scoring/livability.py`:
+baths/bed, space/bed, MRT walk, floor, facing, age; 50 = neutral, missing data
+neutral, hover the chip for components). Livability is an explicit
+**heuristic** — URA carries none of those fields, so it can never be
+backtested and must NEVER be folded into MMR. It's the own-stay lens next to
+the money score, not evidence of returns.
+
+**System dashboard**: `python dashboard.py` → http://127.0.0.1:8643 — engine
+state on one page (forward signals, regime analysis, score distribution,
+coverage, district benchmarks, top projects) with per-condo ANALYZE buttons
+that run `claude -p "analyze <condo>"` headless (transcript →
+`output/analyze_runs/`; verdict auto-saves to eval memory).
+
+Supporting data backbone (append-only — grep/analyze freely):
 `data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`
 (every scoring run), `data/arena_results.csv` (every tournament),
-`data/ura_cache.csv` (per-project URA metrics).
+`data/ura_cache.json` (per-project URA metrics), `data/ura_district_D*.csv`
+(raw URA prints — the comp source).
 
 ## The memory systems
 
 **`evaluations/` (git-tracked)** — your past judgements, one JSON per condo,
 append-only. May be stale or wrong: re-verify price and conditions before
-relying on one. Commit this folder after evaluations.
+relying on one. Pre-2026-06-10 evals predate the current priors — re-judge
+rather than inherit. Commit this folder after evaluations.
 ```bash
 python invest.py --recall "<condo>"     # prior ratings + staleness warning
 python invest.py --list-evals
+python invest.py --eval-stats           # rating/confidence calibration audit
 ```
 
 **`profiles/` (git-tracked)** — a development's *physical facts* (stacks,
-facings, views, layouts, site plan) — researched once, reused. Unlike
-evaluations these are stable (not price-dependent). Listings auto-join to a
-stack/layout at eval time (`factual_data.stack_profile`). Never invent a stack;
-absent = not-yet-researched. Populate on-demand via `/research-development`.
+facings, views, layouts, site plan) — researched once, reused. Stable (not
+price-dependent). Listings auto-join to a stack/layout at eval time
+(`factual_data.stack_profile`). Never invent a stack; absent =
+not-yet-researched. Populate on-demand via `/research-development`.
 ```bash
 python invest.py --profile "<condo>"    # show stacks/facings/layouts (fuzzy)
 python invest.py --list-profiles
 ```
 
 **`data/listings_db.json` + `listings_sheet.csv`** — every listing ever
-scraped, deduplicated, with price history (price drops surface). Auto-upserts
-on every run.
+scraped, deduplicated, with price history (price drops surface).
 ```bash
 python invest.py --search-db "<name>"   # find listings
 python invest.py --list-db              # stats, price drops, by district
@@ -178,21 +180,29 @@ python invest.py --fetch-ura-districts 3,5,14,15
 
 ```
 invest.py              # CLI: flows, --score, --recall, --search-db, --from-review
-backtest.py            # Point-in-time URA backtest of scoring features (re-validate MMR weights)
+backtest.py            # Point-in-time URA backtest (validates MMR weights)
+backtest_ext.py        # Extended panel: lever measurement, age curve, regimes
+calibrate_forward.py   # Shipped-score vs realized-return calibration (~mid-2027+)
 config.py              # MMR calibration, weights, thresholds
 eval_memory.py         # Git-tracked evaluation memory (judgements)
-profile_memory.py      # Git-tracked condo profiles (physical facts) + listing→stack join
+profile_memory.py      # Git-tracked condo profiles + listing→stack join
 listings_db.py         # Master listings sheet
+poller.py              # PropertyGuru poll cycle (data/poll_state.json)
+ui.py                  # Fresh-listings + arena UI (:8642), auto-polls
+dashboard.py           # System dashboard (:8643) + headless ANALYZE
 scoring/
-  full_scorer.py       # Enrichment + component scoring
-  mmr.py               # MMR (uncapped, continuous) + /1000 normalization
+  full_scorer.py       # Enrichment + component scoring + tight stack comps
+  mmr.py               # MMR (uncapped, continuous) + /1000 norm + trust rules
+  livability.py        # 0–100 own-stay heuristic (NEVER folded into MMR)
   raw_output.py        # raw_analysis.json (mode-aware AI instructions)
   models.py            # ScoredListing + verdict_from_rating
   roi.py / costs.py / rental_estimator.py / future_scorer.py / district_scorer.py / quick_scorer.py
 scrapers/              # PropertyGuru + URA CSV + headless browser
 docs/evaluation-rubric.md   # Full evaluation rubric (read in step ③)
-.claude/skills/        # analyze-development / analyze-listing / market-scan / research-development
+docs/RELEASES.md            # Condensed release history + open items
+docs/AUDIT_JUN2026.md       # Jun-2026 full audit — prioritized fix queue
+.claude/skills/        # analyze-development / analyze-listing / market-scan / research-development / arena-cycle
 evaluations/           # Past evaluations — judgements (commit; may be stale)
-profiles/              # Condo profiles — physical facts: stacks/facings/layouts (commit)
+profiles/              # Condo profiles — physical facts (commit)
 output/                # Per-run reports (gitignored)
 ```

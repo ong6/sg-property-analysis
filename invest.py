@@ -10,7 +10,7 @@ AI-friendly interface for the complete investment analysis flow:
 5. Generate investment reports
 
 The MMR components and weights live in config.py / scoring/mmr.py; weight
-changes must be justified by backtest_ext.py (see docs/IMPROVEMENT_PLAN.md).
+changes must be justified by backtest_ext.py (see docs/RELEASES.md).
 
 Usage:
     # AUTOMATIC MODE (NEW - recommended)

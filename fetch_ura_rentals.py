@@ -6,7 +6,7 @@ same URA Property Market Information portal. Rental contracts give REAL
 per-project rents (monthly gross rent, bedroom count, floor-area band, lease
 commencement date) — the missing series that makes the MMR `yield` component
 testable (district median_rental_psf / PSF is just inverse-PSF, i.e. the region
-effect in disguise; see docs/IMPROVEMENT_PLAN.md v3.5).
+effect in disguise; see docs/RELEASES.md v3.5).
 
 Data source: https://eservice.ura.gov.sg/property-market-information/pmiResidentialRentalSearch
 Updated monthly on the 15th; covers contracts reported in the last 60 months.

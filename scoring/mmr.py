@@ -201,8 +201,19 @@ def compute_mmr(scored: Any) -> dict:
     deep_discount = any(
         p is not None and p < -MMR_DISCOUNT_TRUST_KNEE_PCT
         for p in (premium_pct, rel_premium))
+    # v3.8: a unit asking ABOVE its own stack's recent prints is not cheap, no
+    # matter what district/band medians say — ground-floor PES stacks read as
+    # 15-20% "cheap" against pooled benchmarks while pricing above their own
+    # comps. Prints contradicting the discount ⇒ cheapness is an artifact.
+    # v3.9: an ask BELOW the 10th percentile of a deep recent print set
+    # (ask_below_stack_prints) is the mirror artifact — bait pricing or a
+    # void-format unit (double-volume loft) whose strata sqft deflates the
+    # paper PSF. Both directions: prints disagree ⇒ verify-first, not value.
+    print_contradiction = (sb_flags.get("stack_premium_pct") or 0) > 5.0
     suspect_discount = ("bedroom_sqft_mismatch" in flag_names
-                        or (deep_discount and (cohort_txns or 0) < MIN_BAND_TXNS))
+                        or "ask_below_stack_prints" in flag_names
+                        or (deep_discount and (cohort_txns or 0) < MIN_BAND_TXNS)
+                        or print_contradiction)
     if premium_pct is not None:
         # v3.6: knee-compressed discount + tanh saturation (same cap as
         # age_value) — an uncapped linear -0.8/% let a -60% artifact earn +48.

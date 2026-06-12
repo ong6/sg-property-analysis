@@ -32,12 +32,8 @@ has verified the results** — that's the agent flow, not an optional extra.
    `output/arena_referee_packet.json`, and appends `data/arena_results.csv`.
    Past agent evaluations are auto-joined onto contenders.
 
-   **v3.4 note:** the arena is now **value-led** (fight dims: value 0.40,
-   liquidity 0.20, appreciation only 0.10 — was 0.30) and regional priors are
-   **de-inverted** (OCR≥RCR≫CCR forward). So expect cheap-vs-district names to
-   rise and CCR-prestige-on-past-CAGR names to fall vs older runs; that's the fix
-   working, not an artifact. Sanity-check that champions win on VALUE, not on a
-   high trailing appreciation component.
+   Sanity-check that champions win on VALUE, not on a high trailing
+   appreciation component.
 
 4. **REFEREE (mandatory)** — read `output/arena_referee_packet.json`:
    - Work every `auto_flags` entry: verify the stats behind it (thin
@@ -64,14 +60,15 @@ has verified the results** — that's the agent flow, not an optional extra.
      psf, beds, sqft, url, tenure, agent_evaluation: {rating, confidence,
      summary, rating_rationale, red_flags, catalysts}}]}`) and persists it:
      ```bash
-     python invest.py --save-eval <reviewed.json>
+     python invest.py --from-review <reviewed.json>   # auto-saves to eval memory
      ```
    Then RE-RUN `--fight` so the fresh evals join the rankings.
 
 6. **Surface the result** — give the user the refereed bracket champions and
    real contenders (post-demotion), each with price/PSF/age-adjusted premium
    and their agent eval. Offer `/analyze-development` on any champion they
-   care about; remind them the UI is at `python ui.py` → http://127.0.0.1:8642.
+   care about; remind them the rankings live in the arena tab of the UI:
+   `python ui.py` → http://127.0.0.1:8642/#arena (default tab is fresh listings).
 
 ## Don'ts
 

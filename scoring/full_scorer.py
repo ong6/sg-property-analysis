@@ -93,6 +93,45 @@ def _load_district_data() -> dict:
     return _district_data_cache
 
 
+# ---------------------------------------------------------------------------
+# Raw same-size comps (v3.8): per-district URA print lookup.
+# The size-band aggregates in ura_cache are too coarse for structurally-unique
+# stacks — a 600-800sf band pools ground-floor PES 1BRs (~$1,161 at Coco Palms)
+# with normal higher-floor units (~$1,700), so the PES ask reads as a deep fake
+# discount. The raw district CSVs hold the true comps; load them lazily, once
+# per district per process.
+# ---------------------------------------------------------------------------
+_raw_prints_cache: dict = {}  # "D18" -> {PROJECT NAME: [(sqft, psf, floor, sale_dt)]}
+
+
+def _load_district_prints(dcode: str) -> dict:
+    if dcode in _raw_prints_cache:
+        return _raw_prints_cache[dcode]
+    out: dict = {}
+    path = os.path.join(_DATA_DIR, f"ura_district_{dcode}.csv")
+    if os.path.exists(path):
+        import csv as _csv
+        with open(path, encoding="utf-8", errors="replace") as f:
+            for r in _csv.DictReader(f):
+                try:
+                    sqft = float(str(r.get("Area (SQFT)") or "").replace(",", ""))
+                    psf = float(str(r.get("Unit Price ($ PSF)") or "").replace(",", ""))
+                except ValueError:
+                    continue
+                if sqft <= 0 or psf <= 0:
+                    continue
+                try:
+                    sale_dt = datetime.strptime(r.get("Sale Date") or "", "%b-%y")
+                except ValueError:
+                    sale_dt = None
+                name = (r.get("Project Name") or "").strip().upper()
+                if name:
+                    out.setdefault(name, []).append(
+                        (sqft, psf, (r.get("Floor Level") or "").strip(), sale_dt))
+    _raw_prints_cache[dcode] = out
+    return out
+
+
 _PROJECT_UNITS_FILE = os.path.join(_DATA_DIR, "project_units.json")
 _project_units_cache: dict | None = None
 _project_units_norm_index: dict | None = None
@@ -1382,6 +1421,46 @@ class FullScorer:
                 })
                 total_penalty += 2
 
+        # --- v3.8: the unit's OWN stack prints (tight ±7% same-size comps) ---
+        # Exported so MMR can distrust district-level "cheapness" the stack's
+        # own prints contradict, and so the agent sees the stack's floor
+        # reality (low_floor_share ≥ 0.7 ⇒ the stack IS ground/low floor).
+        tight_med, n_tight, low_share, p10 = self._tight_size_comps(listing)
+        if tight_med and n_tight >= 2 and listing.get("psf"):
+            stack_premium = (listing["psf"] - tight_med) / tight_med * 100
+            result["stack_prints_n"] = n_tight
+            result["stack_premium_pct"] = round(stack_premium, 1)
+            if low_share is not None:
+                result["stack_low_floor_share"] = round(low_share, 2)
+            if stack_premium > 10:
+                floor_note = (f", a low-floor stack ({low_share:.0%} of prints at 01-05)"
+                              if (low_share or 0) >= 0.7 else "")
+                flags.append({
+                    "flag": "ask_above_own_stack_prints",
+                    "penalty": 2,
+                    "reason": (f"Asking {stack_premium:.0f}% above the unit's own "
+                               f"same-size prints (n={n_tight}{floor_note})"),
+                })
+                total_penalty += 2
+            # v3.9: ask BELOW (nearly) the entire recent print distribution.
+            # With a deep comp set, real sellers don't price 15-20% under every
+            # recent print — such asks are bait prices, void-format units
+            # (double-volume lofts whose strata sqft includes the void, so the
+            # paper PSF deflates exactly like ground-floor PES patios), or sqft
+            # errors. The scan's ranking SELECTS for these artifacts, so they
+            # must be verify-first, never auto-credited as value.
+            elif (p10 is not None and n_tight >= 8
+                    and listing["psf"] < p10 * 0.97):
+                flags.append({
+                    "flag": "ask_below_stack_prints",
+                    "penalty": 2,
+                    "reason": (f"Asking ${listing['psf']:,.0f} psf is below the "
+                               f"10th percentile (${p10:,.0f}) of {n_tight} recent "
+                               f"same-size prints — bait price, double-volume/PES "
+                               f"format, or sqft error; verify before crediting"),
+                })
+                total_penalty += 2
+
         # --- NEW v2.3: Bedroom/sqft mismatch validation ---
         # Flag listings where sqft doesn't match expected range for bedroom count
         mismatch = self._check_bedroom_sqft_mismatch(listing)
@@ -1428,12 +1507,67 @@ class FullScorer:
             cnt = band.get("txn_count") or 0
             if cnt >= config.MIN_BAND_TXNS and band.get("median_psf"):
                 return band["median_psf"], cnt, f"size_band:{key}"
-            # Thin band: too few same-size sales to anchor a benchmark. Use the
-            # recent pooled median for the point estimate, but report the small
-            # cohort count so confidence is down-weighted, not asserted.
+            # Thin band: too few same-size sales to fully anchor a benchmark —
+            # but DISCARDING them is worse. Structurally-unique stacks (ground-
+            # floor PES units run oversized for their bed count) have permanently
+            # thin bands that trade far below the pooled median, so the pooled
+            # fallback manufactured a fake discount: a Jun-2026 audit found 13 of
+            # the top-50 /1000 ranks were low-floor stacks, 10 of them asking
+            # ABOVE their own band's prints. Shrink the band median toward the
+            # pooled median by sample size instead (n/MIN_BAND_TXNS), so even 2-3
+            # real same-size prints anchor most of the benchmark.
+            if band.get("median_psf") and cnt > 0 and recent_pooled:
+                w = cnt / config.MIN_BAND_TXNS
+                blended = w * band["median_psf"] + (1 - w) * recent_pooled
+                return blended, cnt, f"thin_band:{key}"
             return recent_pooled, cnt, f"thin_band:{key}"
         # Unknown sqft, or a band with no recorded sales: treat as thin cohort.
         return recent_pooled, 0, "no_band_match"
+
+    # Tight-comp matching: ±7% sqft isolates a stack's true peers (PES units
+    # have distinctive floor areas); 24mo window keeps the prints current.
+    TIGHT_COMP_SQFT_TOL = 0.07
+    TIGHT_COMP_WINDOW_MONTHS = 24
+
+    def _tight_size_comps(self, listing: dict) -> tuple:
+        """Median PSF of the project's recent prints within ±7% of the listing's
+        sqft — the unit's true comp set, immune to band pooling.
+
+        Returns (median_psf, n, low_floor_share, p10_psf); (None, 0, None, None)
+        without ≥2 usable prints. low_floor_share is the fraction of comps
+        printed at floors 01-05 — ≥0.7 means the whole stack IS low floor (e.g.
+        ground-floor PES), so its pricing already embeds the floor discount.
+        p10_psf is the 10th-percentile print — an ask meaningfully below it sits
+        under (nearly) the whole recent distribution, which real sellers don't
+        do: it flags bait pricing, a void/PES format hiding in the same total
+        sqft, or a data error (v3.9).
+        """
+        sqft = listing.get("sqft")
+        name = (listing.get("project_name") or listing.get("title") or "").strip().upper()
+        dcode = normalize_district(str(listing.get("district") or ""))
+        if not (sqft and name and dcode):
+            return None, 0, None, None
+        prints = _load_district_prints(dcode).get(name)
+        if not prints:
+            return None, 0, None, None
+        same = [t for t in prints if abs(t[0] - sqft) / sqft <= self.TIGHT_COMP_SQFT_TOL]
+        if not same:
+            return None, 0, None, None
+        dated = [t for t in same if t[3] is not None]
+        if dated:
+            latest = max(t[3] for t in dated)
+            cutoff = latest.year * 12 + latest.month - self.TIGHT_COMP_WINDOW_MONTHS
+            recent = [t for t in dated if t[3].year * 12 + t[3].month >= cutoff]
+            if len(recent) >= 2:
+                same = recent
+        if len(same) < 2:
+            return None, len(same), None, None
+        import statistics
+        vals = sorted(t[1] for t in same)
+        med = statistics.median(vals)
+        p10 = vals[max(0, int(0.10 * (len(vals) - 1)))]
+        low_share = sum(1 for t in same if t[2] == "01 to 05") / len(same)
+        return med, len(same), low_share, p10
 
     def _check_psf_overpricing(self, listing: dict) -> tuple:
         """
@@ -1472,6 +1606,20 @@ class FullScorer:
         factor = (ura_entry.get("floor_factors") or {}).get(tier) if tier else None
         if factor:
             median_psf *= factor
+
+        # v3.8 ground-floor-stack fix: blend in TIGHT same-size comps from raw
+        # URA prints, weighted by print count. The band benchmark above pools a
+        # stack's true peers with differently-floored/sized units (Jun-2026
+        # audit: 13 of the top-50 /1000 ranks were low-floor PES stacks whose
+        # band made them look 15-20% "cheap" while asking ABOVE their own
+        # prints). The tight median embeds the stack's real floor mix, and
+        # reporting its count as the cohort lets the v3.2 thin-cohort damping
+        # fire for stacks that rarely trade.
+        tight_med, n_tight, _low_share, _p10 = self._tight_size_comps(listing)
+        if tight_med and n_tight >= 2:
+            w = min(1.0, n_tight / config.MIN_BAND_TXNS)
+            median_psf = w * tight_med + (1 - w) * median_psf
+            cohort_txns = n_tight
 
         premium_pct = ((psf - median_psf) / median_psf) * 100
         return premium_pct, cohort_txns

@@ -21,7 +21,10 @@ Everything the scripts compute (yield, ROI, liquidity, MMR) assumes an
 
 For own-stay, several algorithmic red flags invert or vanish: `oversized_unit` is a
 *feature*, low yield is irrelevant, and a quiet low-liquidity boutique development
-can be a fine home. Say explicitly which rubric you applied.
+can be a fine home. Say explicitly which rubric you applied. For own-stay, weigh
+the 0–100 **livability score** (`scoring/livability.py`: baths/bed, space/bed, MRT
+walk, floor, facing, age; 50 = neutral) alongside this rubric — it's an explicit
+heuristic, never folded into MMR, and never evidence of returns.
 
 ## What the data actually predicts (backtest-calibrated priors, v3.5 — full 28-district panel)
 
@@ -97,10 +100,10 @@ From `factual_data.appreciation` — story/context (secondary, ~0 forward power)
 
 Research: catalysts (MRT, govt zones, en-bloc), supply, developer reputation.
 
-Regional forward priors (realized 2024–26, replaces the old inverted table):
-**OCR ≈ +4.0%/yr ≥ RCR ≈ +3.5% ≫ CCR ≈ +0.7%.** Region is a strong but
-regime-bound prior — judge the specific project, and don't treat CCR/prestige as a
-forward edge (nor over-bet OCR; CCR can mean-revert).
+Regional forward priors: see "What the data actually predicts" above (OCR > RCR ≫
+CCR, regime-tested; config baselines CCR 2.8 / RCR 3.7 / OCR 4.2%/yr). Region is a
+strong but coarse prior — judge the specific project, and don't treat CCR/prestige
+as a forward edge (nor over-bet OCR; CCR can mean-revert).
 
 ### 2. Liquidity & exit risk
 
@@ -145,11 +148,12 @@ tax. SSD is why holds are modeled at 5–7yr.
 
 - `new_launch_median_psf` — what new launches (≤3yr) actually transact at in
   this district: the current new-launch market price
-- `implied_fair_psf_from_new_launch` — new-launch median minus the age slope.
-  v3.4: recalibrated to the hedonic ~**1.6%/yr** (≈ CCR $34 / RCR $27 / OCR $23
-  per psf-yr, freehold ×0.6) — about half the old $40–60 folk-rule, which
-  over-discounted old leaseholds and made them look spuriously cheap-for-age.
-  Still a heuristic — verify against the market.
+- `implied_fair_psf_from_new_launch` — new-launch median minus the measured age
+  decay. The decay is **piecewise** (`AGE_PSF_DECAY_SEGMENTS`, district-FE
+  hedonic, all regions agree): ~3%/yr (≈$50/psf/yr) ages 0–10, a 10–15yr plateau
+  (~0.5%/yr), ~2.6%/yr at 15–20, then slow drift; freehold ×0.6 (unmeasured
+  heuristic). A flat $/yr rule under-adjusts new-vs-old comparisons ~2× inside
+  0–10yr — don't substitute one in your own reasoning.
 - `premium_vs_new_launch_implied_pct` — subject asking PSF vs that implied
   fair value; negative = priced below what new-launch pricing implies
 - `premium_vs_age_adjusted_median_pct` — vs the age-normalized median of ALL
@@ -168,6 +172,26 @@ check each. Also research what the algorithm can't see: construction defects,
 noise sources, stigma, developer track record, competing launches.
 `psf_premium_vs_ura_median_pct` is signed: negative = listed below recent
 transactions (worth investigating why — could be motivated seller or a problem).
+
+**Discount trust (v3.6–v3.9) — a deep discount is a verify-first signal, not
+value.** The ranking *selects* for asks that look cheap by artifact, so before
+crediting any discount deeper than ~25% vs comps, verify sqft/format/price
+against the project's own URA prints. Specific flags in `factual_data`:
+
+- `ask_above_own_stack_prints` / `stack_premium_pct` > +5 / `stack_low_floor_share`
+  ≥ 0.7 — the "discount" is a ground-floor/PES artifact: patio sqft prices cheap
+  vs the coarse size band while the unit actually asks *above* its own stack's
+  prints. Treat the stack's own recent prints as the true comp; expect thin exit
+  demand.
+- `ask_below_stack_prints` — ask sits below the 10th percentile of a deep (n≥8)
+  recent same-size print set: double-volume loft (void counts in strata sqft) or
+  stale/bait pricing. Real sellers don't price 15–20% under every recent print.
+- `bedroom_sqft_mismatch` or a deep discount on a thin `psf_cohort_txns` — likely
+  mis-scrape or non-comparable format (strata villa, dual-key, combined unit).
+- An ask merely cheap-but-inside the print distribution (p10–p50) is the
+  genuine-deal zone — that's what the ranking exists to find.
+- **Always compare against recent (24mo) prints, not all-time** — stale prints
+  fake premiums (and discounts) in a moved market.
 
 ### Developer (reference, v3.3)
 

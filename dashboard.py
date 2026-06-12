@@ -43,7 +43,7 @@ from eval_memory import load_condo, load_index, slugify  # noqa: E402
 # These take ~2 min to recompute, so they're stamped here with their run date.
 # ---------------------------------------------------------------------------
 BACKTEST = {
-    "run_date": "2026-06-10",
+    "run_date": "2026-06-11",
     "composite_rho": 0.288,
     "composite_n": 1460,
     "optimal_rho": 0.241,
@@ -66,8 +66,9 @@ BACKTEST = {
 }
 
 CONFIG_WEIGHTS = [
-    ("age_value (cheap-for-age vs district)", "tanh, cap ±28", "strongest forward signal — leads · v3.6 trust knee at -25%"),
-    ("psf_value (vs same-size cohort)", "0.8 pts/% × conf, tanh cap ±28", "size-band benchmarked · v3.6: knee + suspect-discount damp ×0.25"),
+    ("age_value (cheap-for-age vs district)", "tanh, cap ±28", "strongest forward signal — leads · v3.6 trust knee at -25% · v3.7 piecewise age curve (~3%/yr to 10yr, plateau 10-15)"),
+    ("psf_value (vs same-size cohort)", "0.8 pts/% × conf, tanh cap ±28", "v3.8/3.9: tight stack prints blend the benchmark; prints contradicting the discount ⇒ damp ×0.25"),
+    ("age", "0→5 ramp to 7yr, plateau 7-30, −0.35/yr after", "v3.7 measured: 0-5yr cohort UNDERperforms; 7-30 flat; only 30+ slows"),
     ("appreciation", "3.0 pts/pp × conf", "de-emphasized: trailing ≈ no forward power"),
     ("yield (real rents where matched)", "10 pts/pp × conf", "carry only — price drag −0.75pp/yr per +1pp"),
     ("txn_volume (liquidity)", "6·tanh(n/40)", "exit-risk insurance, not a return signal"),
@@ -532,7 +533,7 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
 
 <header>
   <h1>MMR<em>/</em>DESK</h1>
-  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v3.6</b> · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
+  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v3.7</b> · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
 </header>
 
 <div class="kpis">{kpi_html}</div>
@@ -624,7 +625,8 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
   verdicts require research, not just the score. ROI figures are <b>all-cash</b> (no leverage), rent grows 2%/yr,
   appreciation decays toward mean. Regional tilt is structural (every regime since 2004) but compressed below the
   measured spread. Re-run <b>python backtest_ext.py --split-sample</b> after any data/weight change and
-  <b>python calibrate_forward.py</b> quarterly from 2027-03. Rankings UI: <b>python ui.py</b> → :8642.
+  <b>python calibrate_forward.py</b> quarterly from 2027-03. Fresh-listings + arena UI
+  (auto-polls PropertyGuru): <b>python ui.py</b> → :8642.
 </div>
 
 </div>
