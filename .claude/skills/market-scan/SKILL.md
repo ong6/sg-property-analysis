@@ -11,7 +11,9 @@ outcome** — don't manufacture a winner.
 
 **Purpose check first**: metrics assume investment (5–7yr hold). If the request
 hints at own-stay or is ambiguous, ask the user before rating
-(see `docs/evaluation-rubric.md` → Purpose check).
+(see `docs/evaluation-rubric.md` → Purpose check). For own-stay weight the
+0–100 livability score (`scoring/livability.py` — heuristic, never folded
+into MMR) alongside the rubric's own-stay lens.
 
 ## Steps
 
@@ -29,14 +31,9 @@ hints at own-stay or is ambiguous, ask the user before rating
    python invest.py --recall "<condo name>"
    ```
 
-**Forward-signal priors (v3.4 — backtested; full list in the rubric).** Lead with
-VALUE, not trailing appreciation. Strongest robust signals: **cheap-vs-district-peers**
-(`relative_value.premium_vs_age_adjusted_median_pct`, `psf_premium_vs_ura_median_pct`)
-and **region** (realized fwd OCR≈+4.0% ≥ RCR≈+3.5% ≫ CCR≈+0.7% — the old "CCR leads"
-prior was inverted). Trailing `appreciation.annual_rate_pct`/`momentum` ≈0 forward power
-(story/catalyst only); freehold is **not** a forward edge; absolute low PSF is mostly the
-region effect. Model explains <10% of forward variance → small `score_1000` gaps are
-noise; reserve **high** confidence for decisive evidence, near-ties → Neutral.
+**Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
+actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward
+power; model explains <10% of forward variance, so calibrate confidence.
 
 3. **Research & evaluate**:
    - Cover ALL shortlisted listings, not just the algo's top ranks — the
@@ -49,6 +46,11 @@ noise; reserve **high** confidence for decisive evidence, near-ties → Neutral.
      stack/facing/known-issues. Only `status: not_researched` for a **genuine
      contender** (one you'd rate Buy/Neutral) is worth a `/research-development`
      pass — don't research every candidate in a broad scan.
+   - Trust rules: if factual_data shows `ask_above_own_stack_prints`,
+     `ask_below_stack_prints`, or `stack_low_floor_share` ≥ 0.7, the unit's
+     apparent discount is a floor/PES/loft artifact — treat the stack's own
+     recent (24mo) prints as the true comp and verify before crediting any
+     deep (>25%) discount or >5.5% gross yield.
    - Rubric: `docs/evaluation-rubric.md`
 
 4. **Fill `agent_evaluation`** per listing (`rating`, `confidence`,

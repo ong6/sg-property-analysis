@@ -1,7 +1,7 @@
 """Forward-calibration of SHIPPED scores: mmr_history.csv -> realized URA PSF.
 
 backtest.py / backtest_ext.py validate score *components* against the URA panel.
-This harness closes the remaining loop (IMPROVEMENT_PLAN gap #3): it takes the
+This harness closes the remaining loop (see docs/RELEASES.md open items): it takes the
 actual score_1000 snapshots the system emitted (data/mmr_history.csv, append-only,
 one row per listing per scoring run) and asks whether they ranked realized
 forward outcomes — per project, measured on the URA resale-PSF series.

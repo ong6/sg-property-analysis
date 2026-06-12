@@ -38,6 +38,7 @@ sys.path.insert(0, BASE)
 
 import listings_db
 import poller
+from scoring.livability import score_livability
 
 DATA_DIR = os.path.join(BASE, "data")
 ARENA_CSV = os.path.join(DATA_DIR, "arena_results.csv")
@@ -97,6 +98,7 @@ def load_fresh() -> dict:
                 drop_pct = round((prices[-1] - peak) / peak * 100, 1)
         name = rec.get("project_name") or rec.get("title") or "?"
         maps_query = urllib.parse.quote(f"{name} condo Singapore")
+        liv = score_livability(rec)
         rows.append({
             "id": key,
             "project_name": name,
@@ -112,6 +114,8 @@ def load_fresh() -> dict:
             "floor_level": rec.get("floor_level") or "",
             "mrt_info": rec.get("mrt_info") or "",
             "score_1000": rec.get("score_1000"),
+            "livability": liv["score"] if liv["signals"] else None,
+            "liv_why": liv["why"],
             "agent_rating": (er := evals.get(re.sub(r"[^a-z0-9]", "", name.lower()), ("", "")))[0],
             "agent_eval_date": er[1],
             "scored_at": rec.get("scored_at") or "",
@@ -123,6 +127,23 @@ def load_fresh() -> dict:
             "url": rec.get("url") or "",
             "maps_url": f"https://www.google.com/maps/search/?api=1&query={maps_query}",
         })
+    # Same physical unit, many agents: collapse identical (project, beds,
+    # sqft, price) rows into one — five copies of one Coco Palms ask once
+    # occupied ranks 42-46 by themselves. Keep the most recently seen copy.
+    best: dict = {}
+    for r in rows:
+        k = (r["project_name"].lower(), r["beds"], round(r["sqft"] or 0), r["price"])
+        cur = best.get(k)
+        if cur is None:
+            r["dup_count"] = 1
+            best[k] = r
+        else:
+            cur["dup_count"] += 1
+            if (r["first_seen"] or "") > (cur["first_seen"] or ""):
+                r["dup_count"] = cur["dup_count"]
+                best[k] = r
+    rows = list(best.values())
+
     # Best score first, unscored last, newest as tiebreak
     rows.sort(key=lambda r: (-(r["score_1000"] if r["score_1000"] is not None else -1),
                              r["days_old"]))
@@ -212,6 +233,7 @@ POLL_CFG = {
     "districts": None,   # None -> poller defaults
     "beds": None,
     "max_pages": poller.DEFAULT_MAX_PAGES,
+    "headless": True,    # --poll-no-headless: visible Chrome passes Cloudflare
 }
 _POLL_RUN_LOCK = threading.Lock()       # one scrape at a time
 _POLL_STATUS = {"running": False, "started_at": None}
@@ -227,7 +249,7 @@ def _run_poll_guarded() -> bool:
         _POLL_STATUS["started_at"] = time.time()
     try:
         poller.run_poll(districts=POLL_CFG["districts"], beds=POLL_CFG["beds"],
-                        max_pages=POLL_CFG["max_pages"])
+                        max_pages=POLL_CFG["max_pages"], headless=POLL_CFG["headless"])
     finally:
         with _POLL_STATUS_LOCK:
             _POLL_STATUS["running"] = False
@@ -343,6 +365,7 @@ _PAGE = """<!DOCTYPE html>
            font-size:10.5px; font-weight:700; letter-spacing:.05em; vertical-align:1px; }
   .badge.new { background:#1c3326; color:var(--green); border:1px solid #2a4434; }
   .badge.drop { background:#33201c; color:var(--red); border:1px solid #4a2b25; }
+  .badge.dup { background:#222b35; color:var(--dim); border:1px solid var(--line); }
   .links a { color:var(--blue); text-decoration:none; margin-right:10px; }
   .links a:hover { text-decoration:underline; }
   .dim { color:var(--dim); }
@@ -393,6 +416,7 @@ _PAGE = """<!DOCTYPE html>
       <label for="f-sortsel">Sort</label>
       <select id="f-sortsel" onchange="fSetSort(this.value)">
         <option value="score_1000" selected>Score</option>
+        <option value="livability">Livability</option>
         <option value="agent_rating">Agent eval</option>
         <option value="days_old">Newest</option>
         <option value="price">Price</option>
@@ -408,7 +432,8 @@ _PAGE = """<!DOCTYPE html>
     <span id="f-tiers"></span></div>
   <table>
     <thead><tr>
-      <th onclick="fSortBy('score_1000')" data-key="score_1000">Score</th>
+      <th onclick="fSortBy('score_1000')" data-key="score_1000" title="MMR money score — backtest-calibrated forward-return signals">Score</th>
+      <th onclick="fSortBy('livability')" data-key="livability" title="own-stay heuristic (baths/space/MRT/floor/facing) — separate axis, never part of MMR">Liv</th>
       <th onclick="fSortBy('agent_rating')" data-key="agent_rating">Agent eval</th>
       <th onclick="fSortBy('project_name')" data-key="project_name">Condo</th>
       <th onclick="fSortBy('beds')" data-key="beds">Type</th>
@@ -502,6 +527,12 @@ const fmtPsf = p => p ? "$" + Math.round(p).toLocaleString() : "-";
 const scoreColor = s => s >= 650 ? "background:#1c3326;color:#3fb950" :
                         s >= 450 ? "background:#332d1c;color:#e3b341" :
                                    "background:#33201c;color:#f85149";
+const livColor = s => s >= 62 ? "background:#16314a;color:#58a6ff" :
+                      s >= 42 ? "background:#222b35;color:#8b98a5" :
+                                "background:#33201c;color:#f85149";
+const livChip = (s, why) => s == null
+  ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="no livability signals in this listing\\u2019s data">·</span>'
+  : `<span class="chip" style="${livColor(s)}" title="livability (own-stay heuristic, separate from the money score): ${esc(why)}">${s}</span>`;
 const scoreChip = s => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="not scored yet — poller scores new listings; run --score-db for the backlog">·</span>'
   : `<span class="chip" style="${scoreColor(s)}">${s}</span>`;
@@ -626,8 +657,9 @@ function renderFresh() {
   document.getElementById("f-rows").innerHTML = rows.map(r => `
     <tr${r.days_old === 0 ? ' class="isnew"' : ""}>
       <td>${scoreChip(r.score_1000)}</td>
+      <td>${livChip(r.livability, r.liv_why)}</td>
       <td>${agentBadge(r.agent_rating, r.agent_eval_date)}</td>
-      <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${r.price_trend === "dropped" ? `<span class="badge drop" title="down from its peak ask">⬇ ${r.drop_pct ?? ""}%</span>` : ""}</td>
+      <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${r.price_trend === "dropped" ? `<span class="badge drop" title="down from its peak ask">⬇ ${r.drop_pct ?? ""}%</span>` : ""}${(r.dup_count || 1) > 1 ? `<span class="badge dup" title="same unit listed by ${r.dup_count} agents">×${r.dup_count}</span>` : ""}</td>
       <td>${r.beds ? r.beds + "BR" : "?"}${r.baths ? '<span class="dim">/' + r.baths + 'ba</span>' : ""}</td>
       <td>${fmtPrice(r.price)}</td>
       <td>${fmtPsf(r.psf)}</td>
@@ -809,11 +841,15 @@ def main():
     parser.add_argument("--poll-beds", type=str, default=None,
                         help=f"bed counts to poll (default {poller.DEFAULT_BEDS})")
     parser.add_argument("--poll-max-pages", type=int, default=poller.DEFAULT_MAX_PAGES)
+    parser.add_argument("--poll-no-headless", action="store_true",
+                        help="scrape with a visible Chrome window (helps when "
+                             "headless polls die on Cloudflare)")
     args = parser.parse_args()
 
     POLL_CFG["auto"] = not args.no_poll
     POLL_CFG["interval_mins"] = args.poll_interval_mins
     POLL_CFG["max_pages"] = args.poll_max_pages
+    POLL_CFG["headless"] = not args.poll_no_headless
     if args.poll_districts:
         POLL_CFG["districts"] = [int(d) for d in args.poll_districts.split(",")]
     if args.poll_beds:

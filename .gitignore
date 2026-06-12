@@ -26,6 +26,9 @@ output/run_*/
 # Playwright MCP cache
 .playwright-mcp/
 
+# Poller runtime state (rewritten every cycle, machine-local)
+data/poll_state.json
+
 # data/*.csv files are tracked deliberately — they are the data backbone
 # (listings sheet, MMR/arena history, URA cache export, raw URA downloads)
 
