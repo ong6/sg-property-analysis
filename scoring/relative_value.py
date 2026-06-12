@@ -23,7 +23,10 @@ Peer data comes from the URA cache (per-project median transacted PSF +
 lease-start year + district), i.e. real transactions, not asking prices.
 
 ⚠ The freehold factor is still a heuristic (freehold age isn't derivable from
-URA tenure strings). Re-measure the curve via backtest_ext PART 1c.
+URA tenure strings). Freehold peers WITHOUT a derivable age are included at
+their raw PSF (no age normalization, flagged via freehold_unadjusted_peer_count)
+rather than dropped — excluding them biased freehold-heavy districts (Jun-2026
+audit). Re-measure the curve via backtest_ext PART 1c.
 """
 
 import math
@@ -31,7 +34,13 @@ from statistics import median
 from typing import Any, Optional
 
 try:
-    from config import AGE_PSF_DECAY_SEGMENTS, FREEHOLD_SLOPE_FACTOR, MIN_BAND_TXNS, size_band_key
+    from config import (
+        AGE_PSF_DECAY_SEGMENTS,
+        FREEHOLD_SLOPE_FACTOR,
+        MIN_BAND_TXNS,
+        NEW_SALE_PROPORTION_THRESHOLD,
+        size_band_key,
+    )
 except ImportError:
     # Fallbacks mirror config.py (v3.7 measured piecewise curve; sync if config changes).
     AGE_PSF_DECAY_SEGMENTS = [
@@ -39,6 +48,7 @@ except ImportError:
     ]
     FREEHOLD_SLOPE_FACTOR = 0.6
     MIN_BAND_TXNS = 5
+    NEW_SALE_PROPORTION_THRESHOLD = 0.20
 
     def size_band_key(sqft):
         return None
@@ -71,6 +81,16 @@ def _region_for_district(district: str) -> str:
 
 def _is_freehold(tenure: Optional[str]) -> bool:
     return bool(tenure and ("freehold" in tenure.lower() or "999" in tenure))
+
+
+def _canon_name(name: Optional[str]) -> Optional[str]:
+    """Casing/punctuation-insensitive project-name key ('SUITES@ KATONG' ==
+    'Suites @ Katong') — used to keep the subject out of its own peer set."""
+    if not name:
+        return None
+    import re
+    s = re.sub(r"[^a-z0-9]", "", str(name).lower())
+    return s or None
 
 
 def _cum_decay(age: float) -> float:
@@ -115,6 +135,7 @@ def compute_relative_value(
     ura_data: dict,
     current_year: int,
     subject_sqft: Optional[float] = None,
+    subject_name: Optional[str] = None,
 ) -> Optional[dict[str, Any]]:
     """Age-adjusted relative value of a subject unit vs its district peers.
 
@@ -124,6 +145,13 @@ def compute_relative_value(
     against a district median dominated by larger formats. Peers without a deep
     enough same-band cohort fall back to their pooled median; `band_peer_count`
     reports how many peers were true like-for-like.
+
+    Jun-2026 audit fixes: `subject_name` (when given) excludes the subject's
+    own project from the peer median (self-inclusion pulled the benchmark
+    toward the subject's own prints), and freehold peers without a derivable
+    age are INCLUDED at their raw PSF instead of dropped — the old
+    `if not lease_start: continue` silently excluded ~93% of freehold projects,
+    making freehold subjects read ~5% structurally dear in freehold districts.
 
     Returns None when inputs or peer coverage are insufficient (missing data
     is neutral — the caller must not penalize a None).
@@ -138,14 +166,37 @@ def compute_relative_value(
     band = size_band_key(subject_sqft) if subject_sqft else None
 
     # --- Collect peers: same district, with transacted PSF and derivable age ---
+    target_name = _canon_name(subject_name)
     peers = []
     band_used = 0
+    freehold_unadjusted = 0
     for entry in ura_data.values():
         if not isinstance(entry, dict) or entry.get("district") != district:
             continue
+        if target_name and _canon_name(entry.get("project_name")) == target_name:
+            continue  # the subject is not its own peer (self-inclusion bias)
         lease_start = entry.get("lease_start_year")
-        if not lease_start:
-            continue
+        age_known = True
+        if lease_start:
+            peer_age = current_year - (lease_start + _LEASE_TO_TOP_OFFSET)
+        elif _is_freehold(entry.get("tenure")):
+            # Freehold tenure strings carry no commencement year and the URA
+            # cache has no TOP/first-print field, so a freehold peer's age is
+            # usually not derivable. Derive what the entry does support:
+            #   - a project still selling a meaningful share of New Sale units
+            #     is an active launch → age ≈ 1 (post-TOP selling window);
+            #   - otherwise include the peer UNADJUSTED (treated as the
+            #     subject's age, decay factor 1.0). Freehold decays at only
+            #     FREEHOLD_SLOPE_FACTOR of the (mostly mild) measured curve, so
+            #     the unadjusted error is far smaller than the systematic bias
+            #     of dropping the peer entirely.
+            if (entry.get("new_sale_proportion") or 0) >= NEW_SALE_PROPORTION_THRESHOLD:
+                peer_age = 1.0
+            else:
+                peer_age = subject_age
+                age_known = False
+        else:
+            continue  # leasehold without a commencement year — truly underivable
         # Size-aware: prefer the peer's same-size-band median; fall back to pooled.
         psf = None
         used_band = False
@@ -159,7 +210,6 @@ def compute_relative_value(
             psf = entry.get("median_psf") or entry.get("avg_psf_current")
         if not psf or psf <= 0:
             continue
-        peer_age = current_year - (lease_start + _LEASE_TO_TOP_OFFSET)
         if peer_age < 0:
             peer_age = 0
         age_gap = subject_age - peer_age
@@ -174,10 +224,13 @@ def compute_relative_value(
             continue
         if used_band:
             band_used += 1
+        if not age_known:
+            freehold_unadjusted += 1
         peers.append({
             "name": entry.get("project_name"),
             "raw_psf": psf,
             "age": peer_age,
+            "age_known": age_known,
             "adjusted_psf": adjusted_psf,
             "txns": entry.get("transaction_count", 0),
         })
@@ -197,6 +250,7 @@ def compute_relative_value(
         "subject_age_years": round(subject_age, 1),
         "peer_count": len(peers),
         "band_peer_count": band_used,
+        "freehold_unadjusted_peer_count": freehold_unadjusted,
         "comparison_basis": basis,
         "age_adjusted_district_median_psf": round(adjusted_median),
         "premium_vs_age_adjusted_median_pct": round(premium_pct, 1),
@@ -214,7 +268,9 @@ def compute_relative_value(
     }
 
     # --- vs new launches: what should this unit cost given new-launch pricing? ---
-    new_launches = [p for p in peers if p["age"] <= _NEW_LAUNCH_MAX_AGE]
+    # Unknown-age freehold peers carry the subject's age as a placeholder, so
+    # they must never masquerade as new launches for a young subject.
+    new_launches = [p for p in peers if p["age_known"] and p["age"] <= _NEW_LAUNCH_MAX_AGE]
     if len(new_launches) >= _MIN_NEW_LAUNCH_PEERS:
         nl_median = median(p["raw_psf"] for p in new_launches)
         nl_median_age = median(p["age"] for p in new_launches)
@@ -243,4 +299,5 @@ def relative_value_for_listing(scored: Any, ura_data: dict, current_year: int) -
         ura_data=ura_data,
         current_year=current_year,
         subject_sqft=scored.sqft,
+        subject_name=getattr(scored, "project_name", None) or getattr(scored, "title", None),
     )

@@ -38,17 +38,19 @@ realized 2yr resale-PSF appreciation:
   view with `factual_data.relative_value.premium_vs_age_adjusted_median_pct`
   (negative = cheap for its age) and `psf_premium_vs_ura_median_pct`.
 - **Region matters and the old priors were INVERTED.** Realized forward returns
-  on the full panel: **OCR ≈ +3.7%/yr > RCR ≈ +3.1% ≫ CCR ≈ +1.9%** (CCR n=270 —
-  confirmed at scale, not a small-sample artifact). Do **not** treat CCR/prestige
-  as a forward edge. **Regime-tested (v3.5b):** across 81 rolling 2yr windows
-  2004–2026, OCR out-returned CCR in *every* regime — down markets (+1.75pp/yr,
-  OCR also falls less), flat (+4.9pp), bull (+1.6pp). The tilt is structural,
-  not a bull-market artifact.
-- **MRT proximity is a real forward signal** (std_β ≈ −0.16 with region+value
-  controls — closer wins; it looks weak univariately only because central
-  near-MRT stock underperformed). Weigh `mrt_distance_m` seriously.
-- **District buyer-pool depth carries real content beyond region** (std_β ≈ +0.16).
-  Bigger developments also tilt mildly positive (dev_size marginal ≈ +0.05).
+  on the full panel: **OCR ≈ +3.7%/yr > RCR ≈ +3.1% ≫ CCR ≈ +1.9%**. Do **not**
+  treat CCR/prestige as a forward edge — but the tilt is a long-run average,
+  **not a law**: at era level (v3.10 honest re-read) OCR led in 3 of 5 eras
+  and 43/81 rolling windows since 2004, while **CCR won 20/81** (2004–08
+  outright, and most recently 2023Q3→2025Q3). Expect rotation; don't over-bet
+  either side.
+- **MRT proximity is a real but modest forward signal** (as-of-T std_β ≈
+  **−0.11**, CI excludes 0; the previously-quoted −0.16 was inflated ~⅓ by
+  counting stations that hadn't opened yet). Weigh `mrt_distance_m`, but as a
+  tiebreaker, not a thesis.
+- **District buyer-pool depth carries real content beyond region** (std_β
+  +0.16, CI +0.07..+0.24 — survives clustering). Bigger developments tilt
+  mildly positive (dev_size marginal ≈ +0.05, undetermined).
 - **Absolute price "cheapness" is mostly the region effect in disguise** — once
   region is controlled it vanishes (ridge weight ≈ 0). A low PSF is not an
   independent buy signal; it's mostly "this is OCR." Don't double-count it.
@@ -59,20 +61,27 @@ realized 2yr resale-PSF appreciation:
   (marginal ≈ 0; the earlier "freehold underperforms" was a 13-district artifact).
   It carries a ~5% PSF *level* premium — already in the price you pay. Weigh
   tenure only as own-stay/optionality and short-remaining-lease *downside*.
-- **Real-rent yield predicts CARRY, not price.** Joined actual URA rental
-  contracts show high gross yield has ~0/mildly negative forward *price* signal
-  (yield compression). A 1pp yield edge is still ~1pp/yr of total return — count
-  it as income, not as an appreciation argument. Rents now come from real URA
-  contracts where available (`rent_source: ura_project_bed` / `ura_project`).
+- **Real-rent yield predicts CARRY, not price — confirmed and stronger (v3.10).**
+  Joined actual URA rental contracts: gross yield's multivariate forward-price
+  std_β is **−0.16** (CI excludes 0) — high yield predicts *lower* forward PSF
+  growth after controls. A 1pp yield edge is still ~1pp/yr of total return —
+  count it as income, never as an appreciation argument. Rents come from real
+  URA contracts where available (`rent_source: ura_project_bed` /
+  `ura_project`; check `rent_evidence` for contract depth and whether the
+  sqft was capped).
 - **The future-infrastructure score has NO measured forward power** (marginal ≈ 0
   district-level). "Transformation upside" is narrative until proven — don't let
   it carry a rating.
 - **Liquidity is an exit-risk gate, not a forward driver** (marginal ≈ 0/negative
   once value is in). Penalize genuinely thin names; don't push a fairly-priced,
   liquid-enough unit up.
-- **The ceiling is low: the full model explains ~6–13% of forward variance.**
-  Small `score_1000` gaps are noise. Reserve **high** confidence for cases where
-  physical/catalyst evidence (not the score) is decisive; treat near-ties as Neutral.
+- **The ceiling is low: the full model explains ~6–13% of forward variance**
+  (composite ρ +0.29, CI +0.21..+0.36, **563 effective projects, in-sample,
+  one bull regime** — the honest framing after the v3.10 audit; the true
+  out-of-sample read starts ~mid-2027 via calibrate_forward.py). Small
+  `score_1000` gaps are noise. Reserve **high** confidence for cases where
+  physical/catalyst evidence (not the score) is decisive; treat near-ties as
+  Neutral.
 
 ## Investment rubric (5–7 year hold)
 

@@ -234,11 +234,48 @@ def load_index() -> dict:
         return {"updated_at": None, "condos": {}}
 
 
-def find_profile(name: str, threshold: float = 0.6) -> Optional[dict]:
-    """Fuzzy-find a profile by condo name (best match, or None)."""
+# Strict-mode fuzzy floor: below this, two different developments routinely
+# collide ("Kovan Residences" vs "Avant Residences" scores 0.88).
+_STRICT_RATIO = 0.9
+
+
+def _norm_district(d) -> Optional[str]:
+    """Canonical district label ('D15') from 'D15'/'15'/15; None if unparseable."""
+    if d in (None, ""):
+        return None
+    s = str(d).strip().upper().lstrip("D").strip()
+    if not s.isdigit():
+        return None
+    return f"D{int(s):02d}"
+
+
+def find_profile(name: str, threshold: float = 0.6, *, strict: bool = True,
+                 district=None) -> Optional[dict]:
+    """Find a profile by condo name (best match, or None).
+
+    strict=True (the default — used by the AUTOMATED listing→profile join in
+    scoring/raw_output): only an exact-normalized match, a containment match,
+    or a near-exact fuzzy ratio (>= _STRICT_RATIO) qualifies, and when both
+    the caller and the candidate carry a district they must agree (pass
+    `district=` when known). A wrong profile silently joins another condo's
+    stacks/facings/known_issues into factual_data AND suppresses the
+    `not_researched` signal — strictly worse than no match (Jun-2026 audit:
+    "Kovan Residences" fuzzy-attached Avant Residences at 0.88; 100+ DB
+    projects would mis-match at the old 0.6 floor).
+
+    strict=False (the human CLI `--profile` lookup): the original loose fuzzy
+    behavior — best SequenceMatcher match >= `threshold`.
+    """
     target = _norm(name)
+    if not target:
+        return None
+    want_district = _norm_district(district)
     best, best_score = None, 0.0
     for slug, meta in load_index().get("condos", {}).items():
+        if strict and want_district:
+            cand_district = _norm_district(meta.get("district"))
+            if cand_district and cand_district != want_district:
+                continue  # both sides carry a district and they disagree
         cand = _norm(meta.get("condo") or slug)
         if target == cand:
             score = 1.0
@@ -251,7 +288,8 @@ def find_profile(name: str, threshold: float = 0.6) -> Optional[dict]:
             score = SequenceMatcher(None, target, cand).ratio()
         if score > best_score:
             best, best_score = slug, score
-    if best and best_score >= threshold:
+    min_score = _STRICT_RATIO if strict else threshold
+    if best and best_score >= min_score:
         return load_profile(best)
     return None
 
@@ -259,12 +297,54 @@ def find_profile(name: str, threshold: float = 0.6) -> Optional[dict]:
 # --------------------------------------------------------------------------- #
 # The join — match a listing to a stack/layout
 # --------------------------------------------------------------------------- #
+_FACING_TOKENS = (
+    # compound directions FIRST — "north" must not swallow "northeast"
+    ("northeast", "NE"), ("northwest", "NW"), ("southeast", "SE"), ("southwest", "SW"),
+    ("north", "N"), ("south", "S"), ("east", "E"), ("west", "W"),
+)
+_FACING_ABBREVS = {"N", "S", "E", "W", "NE", "NW", "SE", "SW"}
+
+
+def _facing_dir(raw) -> Optional[str]:
+    """Canonical 8-point compass token for a messy facing string, or None.
+
+    Whole-direction matching: 'north' → N, 'North-East'/'NE' → NE. A 'north'
+    listing therefore no longer ties to NW/NE stacks on the shared first letter.
+    """
+    if not raw:
+        return None
+    import re
+    compact = re.sub(r"[^a-z]", "", str(raw).lower())  # "north-east fac." → "northeastfac"
+    if not compact:
+        return None
+    if compact.upper() in _FACING_ABBREVS:
+        return compact.upper()
+    for word, tok in _FACING_TOKENS:
+        if compact.startswith(word):
+            return tok
+    return None
+
+
+def _stack_floor_tier(stack: dict) -> Optional[str]:
+    """The stack's floor tier ('low'/'mid'/'high') from its declared range."""
+    tier = stack.get("_floor_tier")  # derived at save time by normalize_profile
+    if tier:
+        return tier
+    fr = stack.get("floor_range") or stack.get("floors")
+    if not fr:
+        return None
+    import config
+    return config.normalize_floor_tier(fr)
+
+
 def match_stack(listing: dict, profile: dict) -> Optional[dict]:
     """Best-effort match of a listing to a stack (or layout) in the profile.
 
     sqft is the primary key — each layout has a characteristic floor area; beds
-    narrows it, and facing/floor (when the listing has them, i.e. after detail-
-    page enrichment) break ties. Ambiguous matches are returned at LOW confidence
+    narrows it. When the sqft match is ambiguous, two tiebreaks run in order:
+    facing (whole compass direction — 'north' matches N but not NE/NW), then
+    floor (the listing's floor_level tier vs each stack's declared floor range,
+    when both are known). Ambiguous matches are returned at LOW confidence
     — informative for the agent, never authoritative. Returns None when there is
     no usable match (so the caller simply omits stack info).
     """
@@ -272,7 +352,7 @@ def match_stack(listing: dict, profile: dict) -> Optional[dict]:
         return None
     sqft = listing.get("sqft")
     beds = listing.get("beds")
-    facing = (listing.get("facing") or "").strip().lower() or None
+    facing_dir = _facing_dir(listing.get("facing"))
     if not sqft:
         return None
 
@@ -308,10 +388,24 @@ def match_stack(listing: dict, profile: dict) -> Optional[dict]:
         return None
 
     close = [x for x in pool if _sqft_dist(x) <= 0.03]
-    if facing and len(close) > 1:
-        fm = [x for x in close if (x.get("facing") or "").lower().startswith(facing[0])]
+    tiebreaks = []
+    if facing_dir and len(close) > 1:
+        fm = [x for x in close if _facing_dir(x.get("facing")) == facing_dir]
         if len(fm) == 1:
             best, close = fm[0], fm
+            tiebreaks.append("facing")
+    if len(close) > 1:
+        # Floor tiebreak: only when the listing's floor and the stacks' floor
+        # ranges are both known, and exactly one candidate's tier contains it.
+        listing_tier = None
+        if listing.get("floor_level") is not None:
+            import config
+            listing_tier = config.normalize_floor_tier(listing.get("floor_level"))
+        if listing_tier:
+            fm = [x for x in close if _stack_floor_tier(x) == listing_tier]
+            if len(fm) == 1:
+                best, close = fm[0], fm
+                tiebreaks.append("floor")
 
     if d <= 0.02 and len(close) <= 1:
         conf = "high"
@@ -323,7 +417,7 @@ def match_stack(listing: dict, profile: dict) -> Optional[dict]:
     out = {
         "matched": kind,
         "confidence": conf,
-        "basis": f"sqft Δ{d*100:.1f}%" + (" + facing" if facing and kind == "stack" else ""),
+        "basis": f"sqft Δ{d*100:.1f}%" + "".join(f" + {t}" for t in tiebreaks),
         "stack": best.get("stack"),
         "layout_type": best.get("layout_type"),
         "beds": best.get("beds"),
@@ -357,7 +451,9 @@ def _beds_from_type(t: Optional[str]) -> Optional[int]:
 # CLI printing
 # --------------------------------------------------------------------------- #
 def print_profile(name: str) -> None:
-    profile = find_profile(name)
+    # Loose fuzzy lookup is fine here: a human typed the name and reads the
+    # result (the strict default protects the automated listing→profile join).
+    profile = find_profile(name, strict=False)
     print(f"\n{'='*70}\nCONDO PROFILE — '{name}'\n{'='*70}")
     print(DISCLAIMER + "\n")
     if not profile:

@@ -47,10 +47,38 @@ ALL_DISTRICTS = [
     16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
 ]
 
+# URA's compulsory property-type dropdown for postal-district searches.
+# "condo" is the historical default; "ec" lets EC prints be fetched too —
+# 250 EC listings in the DB had no URA prints at all because the fetch
+# hardcoded Apartments & Condominiums.
+PROPERTY_TYPE_LABELS = {
+    "condo": "Apartments & Condominiums",
+    "ec": "Executive Condominium",
+}
 
-def district_csv_path(district: int) -> Path:
-    """Path to saved CSV for a district."""
-    return DATA_DIR / f"ura_district_D{district:02d}.csv"
+
+def normalize_property_type(value: str) -> str:
+    """Accept short keys ('ec') or full URA labels ('Executive Condominium')."""
+    v = value.strip().lower()
+    if v in PROPERTY_TYPE_LABELS:
+        return v
+    for key, label in PROPERTY_TYPE_LABELS.items():
+        if v == label.lower():
+            return key
+    raise ValueError(
+        f"Unknown property type {value!r} — expected one of "
+        f"{sorted(PROPERTY_TYPE_LABELS)} or their full URA labels")
+
+
+def district_csv_path(district: int, property_type: str = "condo") -> Path:
+    """Path to saved CSV for a district (+ property type).
+
+    The condo CSV keeps its historical name (downstream joins read
+    ura_district_D{NN}.csv); other types get a suffix. Both shapes match the
+    cache builder's ura_district_D*.csv glob.
+    """
+    suffix = "" if property_type == "condo" else f"_{property_type.upper()}"
+    return DATA_DIR / f"ura_district_D{district:02d}{suffix}.csv"
 
 
 def is_fresh(csv_path: Path, max_age_days: int) -> bool:
@@ -62,7 +90,8 @@ def is_fresh(csv_path: Path, max_age_days: int) -> bool:
     return age_days <= max_age_days
 
 
-def fetch_district(page, district: int) -> tuple[str | None, str | None]:
+def fetch_district(page, district: int,
+                   property_type: str = "condo") -> tuple[str | None, str | None]:
     """Fetch URA CSV for one postal district.
 
     URA search popup UI structure (discovered via browser inspection):
@@ -71,11 +100,12 @@ def fetch_district(page, district: int) -> tuple[str | None, str | None]:
     - "Postal District" tab link has href="#postalDistrict"
     - District checkboxes labeled "D{NN} / {area description}"
     - Property Type dropdown is COMPULSORY for postal district searches
-    - Must select "Apartments & Condominiums" before searching
+    - Must select a type label (PROPERTY_TYPE_LABELS) before searching
 
     Returns (csv_content, error_message). One of them will be None.
     """
     district_str = f"D{district:02d}"
+    type_label = PROPERTY_TYPE_LABELS[property_type]
 
     try:
         # Navigate fresh each time (most reliable)
@@ -127,10 +157,10 @@ def fetch_district(page, district: int) -> tuple[str | None, str | None]:
         page.locator('button:has-text("Apply"):visible').click()
         page.wait_for_timeout(500)
 
-        # COMPULSORY: Set property type to "Apartments & Condominiums"
-        # for postal district searches (URA requires this)
-        page.locator('select').filter(has=page.locator('option:has-text("Apartments")')).first.select_option(
-            label="Apartments & Condominiums"
+        # COMPULSORY: set the property type for postal district searches
+        # (URA requires this; label comes from PROPERTY_TYPE_LABELS)
+        page.locator('select').filter(has=page.locator(f'option:has-text("{type_label}")')).first.select_option(
+            label=type_label
         )
         page.wait_for_timeout(300)
 
@@ -152,7 +182,7 @@ def fetch_district(page, district: int) -> tuple[str | None, str | None]:
         print(f"  {result_text}", file=sys.stderr)
 
         # Download CSV via the downloadCSV link
-        csv_path = str(district_csv_path(district))
+        csv_path = str(district_csv_path(district, property_type))
         with page.expect_download(timeout=30000) as dl_info:
             page.evaluate("document.querySelector('a.downloadCSV').scrollIntoView()")
             page.wait_for_timeout(500)
@@ -161,8 +191,15 @@ def fetch_district(page, district: int) -> tuple[str | None, str | None]:
         dl = dl_info.value
         dl.save_as(csv_path)
 
-        with open(csv_path) as f:
-            csv_content = f.read()
+        # URA exports are windows-1252 when a project name carries an accent
+        # (e.g. ENCHANTÉ in D11) — a default-encoding read here made a
+        # SUCCESSFUL download report FAILED.
+        try:
+            with open(csv_path, encoding="utf-8") as f:
+                csv_content = f.read()
+        except UnicodeDecodeError:
+            with open(csv_path, encoding="windows-1252") as f:
+                csv_content = f.read()
 
         return csv_content, None
 
@@ -182,7 +219,9 @@ def build_cache_from_district_csvs(districts: list[int] | None = None) -> dict:
     from invest import build_ura_cache_from_csv
 
     if districts:
-        patterns = [str(district_csv_path(d)) for d in districts if district_csv_path(d).exists()]
+        patterns = [str(district_csv_path(d, pt))
+                    for d in districts for pt in PROPERTY_TYPE_LABELS
+                    if district_csv_path(d, pt).exists()]
     else:
         patterns = [str(p) for p in sorted(DATA_DIR.glob("ura_district_D*.csv"))]
 
@@ -224,6 +263,13 @@ Examples:
         "--build-cache", action="store_true",
         help="Build/update ura_cache.json from district CSVs (no browser needed)",
     )
+    parser.add_argument(
+        "--property-types", type=str, default="condo",
+        help="Comma-separated property types to fetch: "
+             f"{sorted(PROPERTY_TYPE_LABELS)} or full URA labels "
+             "(default: condo). 'ec' fetches Executive Condominium prints "
+             "into ura_district_D{NN}_EC.csv.",
+    )
     args = parser.parse_args()
 
     # Parse district list
@@ -232,22 +278,28 @@ Examples:
     else:
         districts = ALL_DISTRICTS
 
+    property_types = [normalize_property_type(t)
+                      for t in args.property_types.split(",") if t.strip()]
+
     # Build cache only mode (no browser)
     if args.build_cache:
         print("\nBuilding URA cache from district CSV files...", file=sys.stderr)
         build_cache_from_district_csvs(districts)
         return
 
-    # Determine which districts to fetch
+    # Determine which (district, property_type) pairs to fetch
     to_fetch = []
     for d in districts:
-        csv_path = district_csv_path(d)
-        if args.force or not is_fresh(csv_path, args.max_age):
-            to_fetch.append(d)
+        for pt in property_types:
+            csv_path = district_csv_path(d, pt)
+            if args.force or not is_fresh(csv_path, args.max_age):
+                to_fetch.append((d, pt))
 
     print(f"\nURA District Fetch", file=sys.stderr)
     print(f"  Districts requested: {districts}", file=sys.stderr)
-    print(f"  Already cached (fresh): {len(districts) - len(to_fetch)}", file=sys.stderr)
+    print(f"  Property types: {property_types}", file=sys.stderr)
+    print(f"  Already cached (fresh): {len(districts) * len(property_types) - len(to_fetch)}",
+          file=sys.stderr)
     print(f"  To fetch: {len(to_fetch)}", file=sys.stderr)
 
     if not to_fetch:
@@ -277,9 +329,10 @@ Examples:
 
         ok = 0
         fail = 0
-        for i, district in enumerate(to_fetch, 1):
-            print(f"\n[{i}/{len(to_fetch)}] District D{district:02d}", file=sys.stderr)
-            csv_content, error = fetch_district(page, district)
+        for i, (district, ptype) in enumerate(to_fetch, 1):
+            print(f"\n[{i}/{len(to_fetch)}] District D{district:02d} "
+                  f"({PROPERTY_TYPE_LABELS[ptype]})", file=sys.stderr)
+            csv_content, error = fetch_district(page, district, property_type=ptype)
 
             if csv_content:
                 transactions = parse_ura_csv(csv_content)

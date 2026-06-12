@@ -32,6 +32,7 @@ from datetime import datetime
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
 
+import config
 import listings_db
 
 DATA_DIR = os.path.join(BASE, "data")
@@ -66,8 +67,12 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     """Score the given DB keys with the same pipeline as --score-db.
 
     Cohort stats come from the FULL usable DB so a poll-scored listing gets the
-    same number a batch re-score would give it. Returns (n_scored, scored_rows)
-    where scored_rows are compact dicts for the poll log.
+    same number a batch re-score would give it. The DB lock is NOT held while
+    scoring (it can take minutes): load a snapshot under the lock, score
+    unlocked, then re-acquire and merge ONLY the scored fields (mmr /
+    score_1000 / scored_at / score_version) by key into a fresh load — a
+    concurrent session's upserts in between survive. Returns (n_scored,
+    scored_rows) where scored_rows are compact dicts for the poll log.
     """
     if not keys:
         return 0, []
@@ -75,52 +80,67 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     from scoring.full_scorer import FullScorer, build_cohort_stats
 
     today = datetime.now().strftime("%Y-%m-%d")
-    scored_rows: list[dict] = []
-    # Hold the DB lock for the whole read-modify-write: a concurrent session's
-    # upsert between our load and save would otherwise be dropped.
-    with listings_db._db_lock():
-        db = listings_db.load_db()
-        store = db["listings"]
-        usable = [r for r in store.values() if r.get("price") and r.get("sqft") and r.get("psf")]
-        scorer = FullScorer(ura_data=load_ura_cache(), cohort_stats=build_cohort_stats(usable))
+    version = config.score_version()
 
-        for key in keys:
-            r = store.get(key)
-            if not r or not (r.get("price") and r.get("sqft") and r.get("psf")):
-                continue
-            try:
-                s = scorer.score(r)
-            except Exception:
-                continue
-            r["mmr"] = s.mmr
-            r["score_1000"] = s.score_1000
-            r["scored_at"] = today
-            scored_rows.append({
-                "id": key,
-                "project_name": r.get("project_name") or r.get("title"),
-                "district": r.get("district"),
-                "beds": r.get("beds"),
-                "price": r.get("price"),
-                "psf": r.get("psf"),
-                "score_1000": s.score_1000,
-                "url": r.get("url"),
-            })
-        if scored_rows:
-            listings_db.save_db(db)
-            listings_db.export_sheet(db=db)
+    with listings_db._db_lock():
+        snapshot = listings_db.load_db()["listings"]
+
+    usable = [r for r in snapshot.values()
+              if r.get("price") and r.get("sqft") and r.get("psf")
+              and r.get("status") != "stale"]
+    scorer = FullScorer(ura_data=load_ura_cache(), cohort_stats=build_cohort_stats(usable))
+
+    scored: dict[str, dict] = {}
+    scored_rows: list[dict] = []
+    for key in keys:
+        r = snapshot.get(key)
+        if not r or not (r.get("price") and r.get("sqft") and r.get("psf")):
+            continue
+        try:
+            s = scorer.score(r)
+        except Exception:
+            continue
+        scored[key] = {"mmr": s.mmr, "score_1000": s.score_1000,
+                       "scored_at": today, "score_version": version}
+        scored_rows.append({
+            "id": key,
+            "project_name": r.get("project_name") or r.get("title"),
+            "district": r.get("district"),
+            "beds": r.get("beds"),
+            "price": r.get("price"),
+            "psf": r.get("psf"),
+            "mmr": s.mmr,
+            "score_1000": s.score_1000,
+            "url": r.get("url"),
+        })
 
     if scored_rows:
-        write_header = not os.path.exists(MMR_HISTORY_CSV)
-        with open(MMR_HISTORY_CSV, "a", newline="") as f:
-            writer = csv.writer(f)
-            if write_header:
-                writer.writerow(["scored_at", "id", "project_name", "district", "beds",
-                                 "price", "psf", "mmr", "score_1000"])
-            for row in scored_rows:
-                rec = db["listings"].get(row["id"], {})
-                writer.writerow([today, row["id"], row["project_name"], row["district"],
-                                 row["beds"], row["price"], row["psf"],
-                                 rec.get("mmr"), row["score_1000"]])
+        with listings_db._db_lock():
+            db = listings_db.load_db()
+            store = db["listings"]
+            merged = False
+            for key, fields in scored.items():
+                rec = store.get(key)
+                if rec is not None:
+                    rec.update(fields)
+                    merged = True
+            if merged:
+                listings_db.save_db(db)
+                listings_db.export_sheet(db=db)
+
+        # invest.py appends to the same CSV from other processes — take the
+        # shared file lock so concurrent appends can't interleave mid-row.
+        with listings_db.file_lock(MMR_HISTORY_CSV + ".lock"):
+            write_header = not os.path.exists(MMR_HISTORY_CSV)
+            with open(MMR_HISTORY_CSV, "a", newline="") as f:
+                writer = csv.writer(f)
+                if write_header:
+                    writer.writerow(["scored_at", "id", "project_name", "district", "beds",
+                                     "price", "psf", "mmr", "score_1000", "score_version"])
+                for row in scored_rows:
+                    writer.writerow([today, row["id"], row["project_name"], row["district"],
+                                     row["beds"], row["price"], row["psf"],
+                                     row["mmr"], row["score_1000"], version])
     return len(scored_rows), scored_rows
 
 
@@ -154,6 +174,15 @@ def run_poll(
         )
         state["scraped"] = len(listings)
         if listings:
+            # Batch sanity gate (#14b): one PG redesign must not poison the
+            # DB. A failing batch aborts the upsert LOUDLY (poll_state.error).
+            gate_ok, gate = listings_db.check_batch_sanity(listings)
+            state["sanity_gate"] = gate
+            if not gate_ok:
+                raise listings_db.BatchSanityError(
+                    f"scrape batch failed pre-upsert invariants "
+                    f"({gate['passed']}/{gate['batch']} sane, "
+                    f"fail_reasons={gate['fail_reasons']}) — upsert aborted")
             stats = listings_db.upsert_listings(
                 listings, source={"flow": "poll", "districts": districts})
             state.update({k: stats[k] for k in ("added", "updated", "price_changes")})
@@ -166,6 +195,12 @@ def run_poll(
         state["scored"] = n_scored
         scored_rows.sort(key=lambda r: r.get("score_1000") or 0, reverse=True)
         state["new_listings"] = [r for r in scored_rows if r["id"] in set(new_keys)]
+        if listings:
+            # End-of-poll staleness sweep (#3): young listings absent from the
+            # newest pages of their own (district, beds) scope accrue misses
+            # and go stale at the threshold — kills phantom "NEW" inventory.
+            state["stale_sweep"] = listings_db.sweep_staleness(
+                listings, districts=districts, beds=beds)
         state["ok"] = True
     except Exception as e:
         state["error"] = f"{type(e).__name__}: {e}"

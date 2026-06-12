@@ -78,3 +78,84 @@ class TestRelativeValue:
         assert compute_relative_value(0, 6, "D16", None, ura, CURRENT_YEAR) is None
         assert compute_relative_value(2160, None, "D16", None, ura, CURRENT_YEAR) is None
         assert compute_relative_value(2160, 6, "", None, ura, CURRENT_YEAR) is None
+
+
+# --------------------------------------------------------------------------- #
+# Jun-2026 audit: freehold peers were dropped wholesale; subject was its own peer
+# --------------------------------------------------------------------------- #
+
+def _make_freehold_ura(district="D15", n=6, psf=2400):
+    """Freehold peers with NO lease_start_year (93% of real freehold cache)."""
+    ura = {}
+    for i in range(n):
+        ura[f"fh {i}"] = {
+            "project_name": f"FH {i}",
+            "district": district,
+            "tenure": "Freehold",
+            "lease_start_year": None,
+            "median_psf": psf,
+            "transaction_count": 30,
+            "new_sale_proportion": 0.0,
+        }
+    return ura
+
+
+class TestFreeholdPeers:
+    """`if not lease_start: continue` dropped ~93% of freehold projects from
+    the peer set, making freehold subjects read ~5% structurally dear in
+    freehold-heavy districts. They are now included: age ~1 when actively
+    selling New Sale units, else unadjusted (raw PSF, flagged)."""
+
+    def test_freehold_peers_without_lease_start_are_included(self):
+        rv = compute_relative_value(2400, 12, "D15", "Freehold",
+                                    _make_freehold_ura(), CURRENT_YEAR)
+        assert rv is not None  # pre-fix: every peer dropped → None
+        assert rv["peer_count"] == 6
+        assert rv["freehold_unadjusted_peer_count"] == 6
+        # included at raw PSF: a subject priced at the peers' level reads ~fair
+        assert abs(rv["premium_vs_age_adjusted_median_pct"]) < 1.0
+
+    def test_unknown_age_peers_never_count_as_new_launches(self):
+        # the placeholder age equals the subject's (2 ≤ 3) — without the
+        # age_known filter these would masquerade as new launches
+        rv = compute_relative_value(2400, 2, "D15", "Freehold",
+                                    _make_freehold_ura(), CURRENT_YEAR)
+        assert rv is not None
+        assert "new_launch_median_psf" not in rv
+
+    def test_actively_selling_freehold_peer_gets_young_age(self):
+        ura = _make_freehold_ura(n=5)
+        for e in ura.values():
+            e["new_sale_proportion"] = 0.6  # active launches → derived age ≈ 1
+        rv = compute_relative_value(2400, 20, "D15", "Freehold", ura, CURRENT_YEAR)
+        # launch pricing normalized DOWN to a 20yr-old subject: a subject asking
+        # launch PSF reads clearly dear (unadjusted inclusion would read ~0)
+        assert rv["premium_vs_age_adjusted_median_pct"] > 15
+        assert rv["freehold_unadjusted_peer_count"] == 0
+
+    def test_leasehold_without_lease_start_still_skipped(self):
+        ura = _make_ura(n=4)  # 4 usable peers, below _MIN_PEERS
+        ura["mystery"] = {"project_name": "Mystery", "district": "D16",
+                          "tenure": "99 yrs leasehold", "median_psf": 2000,
+                          "transaction_count": 10}
+        assert compute_relative_value(2160, 6, "D16", None, ura, CURRENT_YEAR) is None
+
+
+class TestSubjectExclusion:
+    def test_subject_project_excluded_from_peer_median(self):
+        ura = _make_ura()
+        ura["subject condo"] = {
+            "project_name": "SUBJECT CONDO", "district": "D16",
+            "tenure": "99 yrs lease commencing from 2018", "lease_start_year": 2018,
+            "median_psf": 50_000,  # absurd self-print that would drag the median
+            "transaction_count": 999,
+        }
+        with_self = compute_relative_value(
+            2160, 6, "D16", "99-year leasehold", ura, CURRENT_YEAR)
+        excl = compute_relative_value(
+            2160, 6, "D16", "99-year leasehold", ura, CURRENT_YEAR,
+            subject_name="Subject Condo")  # casing/punctuation-insensitive
+        assert excl["peer_count"] == with_self["peer_count"] - 1
+        # without the self-print the subject reads (correctly) dearer
+        assert (excl["premium_vs_age_adjusted_median_pct"]
+                > with_self["premium_vs_age_adjusted_median_pct"])

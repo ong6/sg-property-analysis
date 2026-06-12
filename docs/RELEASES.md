@@ -116,6 +116,72 @@ Relative/age value now compares each district peer on its same-size-band median 
 
 **Why / evidence:** the next ranking tier was double-volume lofts / bait asks (710sf "1BR" loft asking $1,504 vs 29 prints all ≥$1,723 — void counts in strata sqft like PES patios); real sellers don't price 15–20% under every recent print, and the ranking *selects* for asks that do. Post-fix top-10 asks sit at pctile 10–38 of their own print distributions. Comps lesson encoded: **always compare vs recent (24mo) prints** — all-time prints falsely accused Archipelago (+16% stale vs −3% recent).
 
+## v3.10 — Audit fix wave (2026-06-12)
+
+Six parallel audits (docs/AUDIT_JUN2026.md) → every P0/P1 fixed same-day.
+Norm center 1516→**1508** (fixes net −8 raw); DB rescored (mean 502, sd 151);
+324 tests (was 152 — behavioral coverage for every trust rule, replacing the
+source-grep "tests").
+
+**Scoring/trust:**
+- **Tight-comps join normalized** (`_pu_normalize` both sides) — v3.8/v3.9 had
+  silently disarmed for 14.7% of the DB (932 listings, incl. Suites @ Katong);
+  `no_ura_prints` now explicit. Comp window anchored to **today**; stale
+  (>24mo) same-size prints are **time-indexed** by a district price ratio and
+  used as low-trust comps (half blend weight, thin cohort, flags at raised
+  thresholds, `stack_prints_stale`) — kills both the stale-print false flags
+  (Casa Emerald) AND the disarm regression (Coco Palms 901→784). Tight prints
+  floor-adjusted to the listing's tier (the blend no longer erases floor
+  normalization); New-Sale/bulk/Land rows dropped from comps; n_tight 5–7
+  below-minimum-print corridor closed; blended damping cohort.
+- **Yield brought under the trust layer**: suspect-damp now hits positive
+  yield (25% retention); rent-sqft cap applies to every psf×sqft path;
+  `ura_project_bed` serves the cache's bed-matched real median rent directly
+  (fixes both the 1,086sf-"1BR" fake $5,137/mo AND genuine large units being
+  under-rented); rent confidence scales with contract depth/window/cache age
+  (`rent_evidence` in factual_data).
+- **Neutrality violations closed**: cost component (was −5 raw ≈ −43 display
+  for missing data), buyer_pool missing-district (+1.5→0), quick-filter now
+  backfills project units BEFORE the gate (907 listings — freehold/older-
+  skewed — stop being dropped for fillable data). Agent-override appreciation
+  clamped [−5,+15] + cohort-damped on both paths; price_band tanh-capped;
+  psf_value slope wired to config; profile join strict (district + ≥0.9 —
+  "Kovan→Avant" class killed); relative_value includes freehold peers +
+  self-exclusion.
+- **ROI**: entry costs (BSD/ABSD/legal) now subtracted from returns (was
+  overstating 5yr ROI ~3.7–19pp); rental income tax (15% default); optional
+  leveraged ROI (ltv/rate/term; all-cash default byte-identical).
+
+**Ingestion/serving:**
+- Staleness sweep (poll-scope misses ≥3 → stale; status machinery finally has
+  a writer); `unit_group` identity + relist linking with price-history
+  inheritance (backfilled: 6,352 records, 3,339 links); ingest_flags at upsert
+  (backfilled: 626 flagged — 597 bed/sqft, 12 cluster houses, 24 lofts);
+  pre-upsert batch sanity gate (a PG redesign now fails LOUDLY); kept fields:
+  listing_date/description/tags/land_area (PES/loft/auction keyword flags);
+  fcntl ownership locks (steal race closed), scoring outside the DB lock;
+  rent-URL refusal; studio beds=0 fix; cp1252 fetch-layer fix; EC fetch flag.
+- UI: dedup uses unit_group/min(first_seen) (multi-agent units no longer
+  permanently NEW; cross-agent ⬇ badges); livability recentered (typical=0 —
+  stops ranking data completeness) + crash guards; `score_version` stamped on
+  every scored row + "v!" stale-config chip; CSRF tokens on both servers;
+  dashboard ANALYZE de-bypassed (scoped --allowedTools); version/weights
+  rendered from config (hardcoded "v3.7" gone).
+
+**Validation honesty (measurement infra only, no weight changes):**
+- Bootstrap cluster CIs everywhere; UNDETERMINED tags for CIs crossing 0;
+  effective-n printed (1,460 rows = **563 projects**, 88% window overlap);
+  PART 4 same-rows comparison (config **+0.225 < +0.241** in-sample optimal —
+  "weights generalize" retracted); midrank Spearman (freehold/new-sale ties
+  artifact removed); era-block regimes (**CCR won 2004–08 outright** and
+  20/81 windows — "OCR won every regime" retracted); MRT as-of-T (std_β
+  −0.16→**−0.107** — ⅓ was unopened-station look-ahead); real-rent yield:
+  multivariate std_β **−0.159** (high yield predicts *lower* forward price
+  growth — carry only, confirmed); trailing CAGR univariate +0.127 (de-weight
+  stands, "≈0" evidence line corrected); calibrate_forward fixed (version
+  cohorts, no window overlap, normalized join + join-rate print; registered
+  holdout: v3.10 locked 2026-06-12, post-2026-06 URA = untouched test set).
+
 ## Open items / unvalidated levers
 
 **The Jun-2026 full-system audit (`docs/AUDIT_JUN2026.md`) is the current

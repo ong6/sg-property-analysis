@@ -23,9 +23,25 @@ across unit sizes is a known caveat -- see --size-control for a stratified
 robustness variant. Medians + resale-only + min-count filters keep v1 honest
 enough for a first read.
 
+Honesty rails (Jun-2026 audit):
+  * The default splits (2023.75/2024.0/2024.25) are 0.25yr apart with a 2yr
+    forward window -> consecutive forward windows overlap ~87.5% and ~74% of
+    projects appear in all three splits. Pooled rows are NOT independent;
+    effective n ~= unique projects, not rows. Every pooled run now prints
+    effective-n diagnostics; use --split-spacing >= --window for a clean
+    non-overlapping panel.
+  * Spearman uses proper midranks (argsort().argsort() assigned row-order
+    ranks within ties — correlated with district file order, ~±0.02 artifact
+    on binary/quantized features).
+  * Trailing-window coverage is printed per split (data starts 2021.38, so
+    the (T-3,T-2] window is truncated at the early default splits).
+  * The split-sample fallback (rows whose price-at-T base is shared between
+    features and outcome because n_recent < 2*min_txn) is counted and printed.
+
 Usage:
   python backtest.py                      # default multi-split run + report
   python backtest.py --split 2023.99 --window 2.0
+  python backtest.py --split-spacing 2.0  # non-overlapping clean mode
   python backtest.py --min-txn 5 --dump out.csv
 """
 
@@ -163,10 +179,15 @@ def build_panel(txns, split, window, min_txn=5, size_control=False, split_sample
         n_rec = len(rec_vals)
         if n_rec < min_txn or not fwd or n_fwd < min_txn:
             continue
+        ss_fallback = 0
         if split_sample and n_rec >= 2 * min_txn:
             a, b = rec_vals[0::2], rec_vals[1::2]   # interleaved halves (balanced in time)
             recent_feat, recent_out = _median(a), _median(b)
         else:
+            # NOTE: when split_sample was requested this is a silent fallback to
+            # the shared price base (features and outcome share estimation
+            # noise) — counted per split and printed (Jun-2026 audit).
+            ss_fallback = 1 if split_sample else 0
             recent_feat = recent_out = _median(rec_vals)
         recent = recent_feat
 
@@ -189,11 +210,17 @@ def build_panel(txns, split, window, min_txn=5, size_control=False, split_sample
 
         dmed = district_med.get(dist)
         psf_vs_dist = (recent / dmed - 1.0) if dmed else None
-        tenure = (ts[0]["tenure"] or "").lower()
-        freehold = 1 if ("freehold" in tenure or "999" in tenure) else 0
+        # freehold from the MODAL tenure across the project's txns — the old
+        # ts[0] read keyed the flag to whichever transaction happened to load
+        # first (file/row order), mislabeling mixed/dirty-tenure projects.
+        n_fh = sum(1 for x in ts
+                   if "freehold" in (x["tenure"] or "").lower()
+                   or "999" in (x["tenure"] or ""))
+        freehold = 1 if (n_fh > 0 and n_fh * 2 >= len(ts)) else 0
 
         rows.append({
             "project": proj, "district": dist,
+            "split": split,
             "trailing_cagr": trailing_cagr,
             "momentum": momentum,
             "psf_level": recent,
@@ -203,14 +230,41 @@ def build_panel(txns, split, window, min_txn=5, size_control=False, split_sample
             "freehold": freehold,
             "forward_cagr": forward_cagr,
             "n_recent": n_rec, "n_fwd": n_fwd,
+            "ss_fallback": ss_fallback,
         })
     return rows
 
 
 # ---- analysis helpers -------------------------------------------------------
 
+def _midranks(a):
+    """Average ranks for ties (proper Spearman midranks).
+
+    The old argsort().argsort() assigned ROW-ORDER ranks within tie groups —
+    correlated with input order (the district file order), a ~±0.02 rho
+    artifact on binary/quantized features (freehold, txn_vol, district joins).
+    """
+    a = np.asarray(a, float)
+    n = len(a)
+    if n == 0:
+        return a.astype(float)
+    order = np.argsort(a, kind="mergesort")
+    s = a[order]
+    new_grp = np.empty(n, bool)
+    new_grp[0] = True
+    new_grp[1:] = s[1:] != s[:-1]
+    grp = np.cumsum(new_grp) - 1
+    counts = np.bincount(grp)
+    ends = np.cumsum(counts)            # 1-past-the-end index of each tie group
+    starts = ends - counts
+    mid = 0.5 * (starts + ends - 1)     # average of the 0-based ranks in group
+    ranks = np.empty(n, float)
+    ranks[order] = mid[grp]
+    return ranks
+
+
 def _spearman(x, y):
-    """Spearman rho via Pearson on ranks. Returns (rho, n)."""
+    """Spearman rho via Pearson on midranks. Returns (rho, n)."""
     pairs = [(a, b) for a, b in zip(x, y) if a is not None and b is not None
              and not (isinstance(a, float) and math.isnan(a))]
     n = len(pairs)
@@ -218,12 +272,95 @@ def _spearman(x, y):
         return None, n
     xs = np.array([p[0] for p in pairs], float)
     ys = np.array([p[1] for p in pairs], float)
-    rx = xs.argsort().argsort().astype(float)
-    ry = ys.argsort().argsort().astype(float)
+    rx = _midranks(xs)
+    ry = _midranks(ys)
     if rx.std() == 0 or ry.std() == 0:
         return None, n
     rho = float(np.corrcoef(rx, ry)[0, 1])
     return rho, n
+
+
+def _cluster_boot_rho(x, y, clusters, reps=400, seed=42):
+    """95% bootstrap CI for Spearman rho, resampling whole CLUSTERS (projects)
+    with replacement — a block bootstrap over the project dimension: a
+    project's rows from overlapping splits move together, so the CI does not
+    pretend the ~87.5%-overlapping pooled rows are independent.
+
+    Returns (lo, hi, n_clusters); (None, None, k) when too thin.
+    """
+    by_c = defaultdict(list)
+    for a, b, c in zip(x, y, clusters):
+        if a is None or b is None:
+            continue
+        if isinstance(a, float) and math.isnan(a):
+            continue
+        by_c[c].append((a, b))
+    keys = sorted(by_c)
+    k = len(keys)
+    if k < 8:
+        return None, None, k
+    rng = np.random.default_rng(seed)
+    rhos = []
+    for _ in range(reps):
+        idx = rng.integers(0, k, k)
+        xs, ys = [], []
+        for i in idx:
+            for a, b in by_c[keys[i]]:
+                xs.append(a)
+                ys.append(b)
+        r, _n = _spearman(xs, ys)
+        if r is not None:
+            rhos.append(r)
+    if len(rhos) < reps * 0.5:
+        return None, None, k
+    lo, hi = np.percentile(rhos, [2.5, 97.5])
+    return float(lo), float(hi), k
+
+
+def _fmt_ci(lo, hi):
+    return f"CI[{lo:+.3f},{hi:+.3f}]" if lo is not None else "CI[ n/a ]"
+
+
+def effective_n_report(pooled_rows, splits, window):
+    """Honesty diagnostics for a pooled multi-split panel (Jun-2026 audit):
+    unique projects, windows per project, forward-window overlap. Printed on
+    every pooled run so 'n=1,460 rows' can never silently impersonate 1,460
+    independent observations again."""
+    projs = defaultdict(int)
+    for r in pooled_rows:
+        projs[(r["project"], r["district"])] += 1
+    n_rows = len(pooled_rows)
+    n_proj = len(projs)
+    print("== Effective-n diagnostics (pooled panel) ==")
+    if not n_proj:
+        print("   no rows\n")
+        return 0
+    print(f"   pooled rows {n_rows:,} | unique projects {n_proj:,} | "
+          f"mean windows/project {n_rows / n_proj:.2f}")
+    if len(splits) > 1:
+        in_all = sum(1 for v in projs.values() if v == len(splits))
+        spacing = min(b - a for a, b in zip(splits, splits[1:]))
+        overlap = max(0.0, 1.0 - spacing / window)
+        print(f"   {in_all:,}/{n_proj:,} projects ({in_all / n_proj:.0%}) appear in all "
+              f"{len(splits)} splits")
+        print(f"   split spacing {spacing:.2f}yr vs forward window {window:.2f}yr "
+              f"-> consecutive forward windows overlap {overlap:.0%}")
+        if overlap > 0:
+            print("   *** WARNING: OVERLAPPING forward windows — pooled rows are NOT")
+            print(f"   *** independent. Effective n ~= {n_proj:,} projects, not "
+                  f"{n_rows:,} rows; pooled rho/std_beta p-values that assume row")
+            print("   *** independence are overstated. Use --split-spacing >= window "
+                  "for a clean panel.")
+        else:
+            print("   non-overlapping clean mode: forward windows are disjoint across "
+                  "splits.")
+    print()
+    return n_proj
+
+
+def _window_coverage(lo, hi, data_start, data_end):
+    """Fraction of the (lo, hi] window covered by the loaded data range."""
+    return max(0.0, min(hi, data_end) - max(lo, data_start)) / (hi - lo)
 
 
 def _quintiles(rows, feat, outcome="forward_cagr", q=5):
@@ -250,10 +387,37 @@ def _fmt_pct(x):
     return f"{x*100:+.1f}%" if x is not None else "  n/a"
 
 
-def run_report(splits, window, min_txn, size_control, split_sample=False, dump=None):
+def derive_splits(txns, spacing, window):
+    """Generate splits walking back from the latest feasible split (full
+    forward window) in steps of `spacing`, down to the earliest split whose
+    recent (T-1, T] window is fully covered by data."""
+    data_start = min(x["t"] for x in txns)
+    data_end = max(x["t"] for x in txns)
+    t_hi = data_end - window
+    t_lo = data_start + 1.0
+    splits = []
+    t = t_hi
+    while t >= t_lo - 1e-9:
+        splits.append(round(t, 4))
+        t -= spacing
+    splits.sort()
+    return splits
+
+
+def run_report(splits, window, min_txn, size_control, split_sample=False, dump=None,
+               split_spacing=None):
     txns = load_txns()
     print(f"Loaded {len(txns):,} URA txns "
           f"({sum(1 for t in txns if t['sale_type'] in ('Resale','Sub Sale')):,} resale).")
+    data_start = min(x["t"] for x in txns)
+    data_end = max(x["t"] for x in txns)
+    if splits is None and split_spacing:
+        splits = derive_splits(txns, split_spacing, window)
+        mode = ("non-overlapping clean mode" if split_spacing >= window
+                else f"OVERLAPPING (spacing {split_spacing} < window {window})")
+        print(f"--split-spacing {split_spacing}: splits {splits}  [{mode}]")
+    elif splits is None:
+        splits = [2023.75, 2024.0, 2024.25]
     print(f"Window={window}yr forward, min_txn/window={min_txn}, "
           f"size_control={size_control}, split_sample={split_sample}\n")
 
@@ -262,15 +426,35 @@ def run_report(splits, window, min_txn, size_control, split_sample=False, dump=N
 
     all_corr = defaultdict(list)
     last_rows = None
+    pooled = []
     for split in splits:
         rows = build_panel(txns, split, window, min_txn, size_control, split_sample)
         last_rows = rows
         if len(rows) < 20:
             print(f"== T={split:.2f}: only {len(rows)} projects in-sample, skipping ==\n")
             continue
+        pooled.extend(rows)
         fwd = [r["forward_cagr"] for r in rows]
         print(f"== Split T={split:.2f}  (forward {split:.2f}->{split+window:.2f}) "
               f"| {len(rows)} projects ==")
+        # trailing-window coverage: data starts {data_start}; the early default
+        # splits have a truncated (T-3, T-2] window -> trailing_cagr measured
+        # over less history than its label claims (Jun-2026 audit).
+        covs = {"old (T-3,T-2]": _window_coverage(split - 3, split - 2, data_start, data_end),
+                "mid (T-2,T-1]": _window_coverage(split - 2, split - 1, data_start, data_end),
+                "recent (T-1,T]": _window_coverage(split - 1, split, data_start, data_end)}
+        cov_s = "  ".join(f"{k} {v:.0%}" for k, v in covs.items())
+        print(f"   trailing-window data coverage: {cov_s}")
+        low = [k for k, v in covs.items() if v < 0.75]
+        if low:
+            print(f"   *** FLAG: {', '.join(low)} <75% covered (data starts "
+                  f"{data_start:.2f}) — trailing features at this split are "
+                  f"computed on a truncated window")
+        if split_sample:
+            fb = sum(r.get("ss_fallback", 0) for r in rows)
+            print(f"   split-sample fallback (n_recent < {2*min_txn} -> shared "
+                  f"feature/outcome price base): {fb}/{len(rows)} rows "
+                  f"({fb/len(rows):.0%})")
         print(f"   forward annual resale-PSF return: "
               f"mean {_fmt_pct(float(np.mean(fwd)))}  "
               f"median {_fmt_pct(float(np.median(fwd)))}  "
@@ -293,13 +477,24 @@ def run_report(splits, window, min_txn, size_control, split_sample=False, dump=N
                           f"median {_fmt_pct(b['fwd_median'])}")
         print()
 
+    if len(splits) > 1 and pooled:
+        effective_n_report(pooled, splits, window)
+
     if len(splits) > 1 and all_corr:
-        print("== Stability across splits (mean Spearman rho) ==")
+        print("== Stability across splits (mean Spearman rho; pooled rho with "
+              "project-cluster bootstrap 95% CI) ==")
+        fwd_p = [r["forward_cagr"] for r in pooled]
+        cl_p = [(r["project"], r["district"]) for r in pooled]
         for f in features:
             cs = all_corr.get(f, [])
-            if cs:
-                print(f"   {f:<16}{np.mean(cs):+.3f}   "
-                      f"(per-split: {', '.join(f'{c:+.2f}' for c in cs)})")
+            if not cs:
+                continue
+            rho_p, n_p = _spearman([r.get(f) for r in pooled], fwd_p)
+            lo, hi, k = _cluster_boot_rho([r.get(f) for r in pooled], fwd_p, cl_p)
+            pooled_s = (f"pooled {rho_p:+.3f} {_fmt_ci(lo, hi)} "
+                        f"({k} projects)" if rho_p is not None else "pooled n/a")
+            print(f"   {f:<16}{np.mean(cs):+.3f}   "
+                  f"(per-split: {', '.join(f'{c:+.2f}' for c in cs)})  | {pooled_s}")
         print()
 
     if dump and last_rows:
@@ -321,12 +516,19 @@ def main():
                     help="stratify PSF to project's dominant sqft band (composition-bias check)")
     ap.add_argument("--split-sample", action="store_true",
                     help="estimate price-at-T from disjoint txn halves (removes mean-reversion artifact)")
+    ap.add_argument("--split-spacing", type=float, default=None,
+                    help="generate splits this many years apart (walking back from the "
+                         "latest feasible split). Spacing >= --window gives a clean "
+                         "NON-overlapping panel; the default 0.25yr-spaced splits "
+                         "overlap ~87.5%% and print a warning.")
     ap.add_argument("--dump", help="write last-split per-project rows to CSV")
     args = ap.parse_args()
 
-    splits = args.split or [2023.75, 2024.0, 2024.25]
-    run_report(splits, args.window, args.min_txn, args.size_control,
-               args.split_sample, args.dump)
+    if args.split and args.split_spacing:
+        print("--split given: ignoring --split-spacing")
+        args.split_spacing = None
+    run_report(args.split, args.window, args.min_txn, args.size_control,
+               args.split_sample, args.dump, args.split_spacing)
 
 
 if __name__ == "__main__":

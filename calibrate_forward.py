@@ -6,16 +6,38 @@ actual score_1000 snapshots the system emitted (data/mmr_history.csv, append-onl
 one row per listing per scoring run) and asks whether they ranked realized
 forward outcomes — per project, measured on the URA resale-PSF series.
 
-Method (per scoring cohort = snapshot month):
+Method (per scoring cohort = score_version x snapshot month):
   1. For each distinct (project, district) in the cohort, take the listing-level
      score_1000 median as the project's shipped score at T0.
   2. Baseline PSF  = project's median URA resale PSF in the 12mo window ending T0.
   3. Outcome PSF   = median resale PSF in the trailing 12mo window ending at the
      latest URA data date T1 (resale + sub-sale only, en-bloc excluded upstream).
   4. forward_ret   = annualized (outcome/baseline) over (T1-T0); requires
-     T1-T0 >= --min-window years (default 0.75) else the cohort is SKIPPED.
+     T1-T0 >= --min-window years (FLOOR 1.0 — the 12mo baseline window ending
+     T0 and the 12mo outcome window ending T1 must not overlap, or the
+     "forward return" partially measures the baseline itself).
   5. Report Spearman(score, forward_ret) + score-quintile forward means, and the
      same for the rating tiers (>=650 / 450-650 / <450).
+
+Cohorting (Jun-2026 audit P0-2): cohorts are keyed (score_version, month) from
+mmr_history.csv's `score_version` column (stamped by config.score_version()).
+Rows tagged "pre-3.10" predate the stamp and BLEND five config versions
+(v3.5b-v3.9; same-listing drift median 178 pts, 93% tier-changing) — they form
+their own labeled cohort and any read off it gets a loud warning.
+
+REGISTERED HOLDOUT PROTOCOL (Jun-2026 audit P0-1): the v3.10 weights were
+locked on 2026-06-12 against URA data through 2026-06. Every URA transaction
+dated AFTER 2026-06 is an untouched temporal test set for those weights —
+nothing in the panel after that date may be used to re-tune before this
+harness has scored it. The first valid read is the v3.10 cohort with a >=1yr
+forward window (~mid-2027). If weights change before then, the new
+score_version starts its own clock; the old cohort still scores the old
+weights honestly.
+
+Name join: history project names are normalized the same way the scorer joins
+URA prints (see scoring/full_scorer._pu_normalize) and matched to the URA
+panel per district; the join rate + unjoined samples are reported every run
+(the raw exact-string join silently matched only ~58% of keys).
 
 Scores started 2026-06 — until mid-2027 this prints "insufficient forward
 window" and exits. Re-run quarterly; it needs zero new wiring (mmr_history and
@@ -23,16 +45,35 @@ the district CSVs both append automatically).
 
 Usage:
   python calibrate_forward.py                  # all cohorts with enough window
-  python calibrate_forward.py --min-window 0.5 # accept shorter windows (noisier)
+  python calibrate_forward.py --min-window 1.5 # require longer windows
 """
 
 import argparse
 import csv
+import re
 from collections import defaultdict
 
 import numpy as np
 
 import backtest as bt
+
+# Mixed-config legacy tag: rows scored before config.score_version() existed.
+PRE_STAMP = "pre-3.10"
+
+
+def _pu_normalize(name: str) -> str:
+    """Conservative name normalization for the URA join — apostrophe variants,
+    '@' vs ' at ', punctuation/whitespace.
+
+    REPLICA of the canonical copy in scoring/full_scorer._pu_normalize (kept
+    inline so this harness never imports the scorer stack; keep the two in
+    sync). The old raw exact-upper join matched only ~58% of keys, silently.
+    """
+    s = (name or "").lower().strip()
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s*@\s*", " at ", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s).strip()
+    return s
 
 
 def load_history(path="data/mmr_history.csv"):
@@ -52,9 +93,13 @@ def load_history(path="data/mmr_history.csv"):
                 t = int(y) + (int(m) - 1 + (int(dd) - 0.5) / 30.4) / 12.0
             except (KeyError, ValueError):
                 continue
+            version = (r.get("score_version") or "").strip() or PRE_STAMP
             rows.append({
                 "t": t,
-                "cohort": r["scored_at"][:7],
+                # cohort = (score_version, month): scores from different
+                # configs are never pooled into one calibration read
+                "cohort": (version, r["scored_at"][:7]),
+                "version": version,
                 "project": r["project_name"].strip().upper(),
                 "district": d,
                 "score": score,
@@ -64,22 +109,52 @@ def load_history(path="data/mmr_history.csv"):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--min-window", type=float, default=0.75,
-                    help="min years between scoring and outcome (default 0.75)")
+    ap.add_argument("--min-window", type=float, default=1.0,
+                    help="min years between scoring and outcome (floor 1.0: the "
+                         "12mo baseline and 12mo outcome windows must not overlap)")
     ap.add_argument("--min-txn", type=int, default=5)
     args = ap.parse_args()
+    if args.min_window < 1.0:
+        print(f"--min-window {args.min_window} raised to the 1.0yr floor: the 12mo "
+              f"baseline window (ending T0) and the 12mo outcome window (ending T1) "
+              f"would overlap, making the 'forward return' partly measure the "
+              f"baseline itself.")
+        args.min_window = 1.0
 
     txns = bt.load_txns()
     t_latest = max(x["t"] for x in txns)
     by_proj = defaultdict(list)
     for x in txns:
         by_proj[(x["project"], x["district"])].append(x)
+    # normalized-name index per district (same normalization as the scorer's
+    # URA joins); first writer wins on the rare collision
+    ura_norm = {}
+    for proj, dist in by_proj:
+        ura_norm.setdefault((_pu_normalize(proj), dist), (proj, dist))
+
+    def _join(key):
+        """history (PROJECT, district) -> URA panel key, exact then normalized."""
+        if key in by_proj:
+            return key
+        return ura_norm.get((_pu_normalize(key[0]), key[1]))
 
     hist = load_history()
     if not hist:
         print("mmr_history.csv has no usable rows")
         return
-    print(f"Loaded {len(hist):,} score snapshots; URA data through {t_latest:.2f}\n")
+    print(f"Loaded {len(hist):,} score snapshots; URA data through {t_latest:.2f}")
+
+    # ---- join-rate report (every run, even when all cohorts are skipped) ----
+    all_keys = {(r["project"], r["district"]) for r in hist}
+    unjoined = sorted({k[0] for k in all_keys if _join(k) is None})
+    joined_n = len(all_keys) - len(unjoined)
+    print(f"URA name join: {joined_n}/{len(all_keys)} distinct (project, district) "
+          f"keys matched ({joined_n / len(all_keys):.0%}) "
+          f"[normalized join, see _pu_normalize]")
+    if unjoined:
+        print(f"  unjoined sample ({len(unjoined)} names): "
+              f"{', '.join(unjoined[:8])}{' …' if len(unjoined) > 8 else ''}")
+    print()
 
     cohorts = defaultdict(list)
     for r in hist:
@@ -87,11 +162,19 @@ def main():
 
     any_run = False
     for cohort in sorted(cohorts):
+        version, month = cohort
+        label = f"{month} [{version}]"
         rows = cohorts[cohort]
+        if version == PRE_STAMP:
+            print(f"cohort {label}: WARNING — rows predate the score_version "
+                  f"stamp and BLEND five config versions (v3.5b-v3.9; "
+                  f"same-listing drift median 178 pts). Any rank read off this "
+                  f"cohort mixes models — labeled legacy, not a calibration of "
+                  f"any one config.")
         t0 = float(np.median([r["t"] for r in rows]))
         window = t_latest - t0
         if window < args.min_window:
-            print(f"cohort {cohort}: forward window {window*12:.1f}mo "
+            print(f"cohort {label}: forward window {window*12:.1f}mo "
                   f"< {args.min_window*12:.0f}mo — insufficient, skipped "
                   f"(re-run after {'%.2f' % (t0 + args.min_window)})")
             continue
@@ -110,9 +193,12 @@ def main():
             proj_t0[key] = min(proj_t0.get(key, r["t"]), r["t"])
 
         scores, rets = [], []
+        n_unjoined = 0
         for key, ss in proj_scores.items():
-            ts = by_proj.get(key)
+            jkey = _join(key)
+            ts = by_proj.get(jkey) if jkey else None
             if not ts:
+                n_unjoined += 1
                 continue
             t0p = proj_t0[key]
             base, n0 = bt._win_median(ts, t0p - 1.0, t0p)
@@ -123,8 +209,8 @@ def main():
             rets.append((out / base) ** (1.0 / (t_latest - t0p)) - 1.0)
 
         rho, n = bt._spearman(scores, rets)
-        print(f"\n== cohort {cohort}  (T0={t0:.2f}, window {window:.2f}yr, "
-              f"{n} projects matched) ==")
+        print(f"\n== cohort {label}  (T0={t0:.2f}, window {window:.2f}yr, "
+              f"{n} projects matched, {n_unjoined} name-join misses) ==")
         if rho is None:
             print("   too few matched projects")
             continue

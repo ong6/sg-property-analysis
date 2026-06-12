@@ -48,10 +48,29 @@ class ProjectPageNeedsNameFallback(Exception):
         self.project_name = project_name
 
 
+class PGListing(Listing):
+    """Listing + extraction provenance. `extraction_strategy` records which of
+    the 4 fallback strategies produced the row (__NEXT_DATA__ / script_json /
+    intercepted_api / dom). The strategies disagree on price semantics for
+    range-priced listings — DOM grabs the range minimum, JSON the midpoint —
+    so the DB layer must not treat a cross-strategy price delta as a real
+    price-history event."""
+
+    extraction_strategy: str | None = None
+
+    def to_dict(self) -> dict:
+        d = super().to_dict()
+        if self.extraction_strategy:
+            d["extraction_strategy"] = self.extraction_strategy
+        return d
+
+
 def classify_pg_url(url: str) -> tuple[str, str | None]:
     """Classify a PropertyGuru URL.
 
     Returns (kind, project_name) where kind is one of:
+      - "rent"    : a RENT url (results or detail) — refused upstream; rent
+                    asks must never enter the SALE listings DB
       - "detail"  : a single listing detail page  (/listing/...)
       - "results" : a search/results/list page    (.../property-for-sale?...)
       - "project" : a project/condo directory page (best-effort name fallback)
@@ -60,7 +79,17 @@ def classify_pg_url(url: str) -> tuple[str, str | None]:
 
     parsed = urlparse(url)
     path = parsed.path.lower()
-    qkeys = {k.lower() for k in parse_qs(parsed.query)}
+    query = parse_qs(parsed.query)
+    qkeys = {k.lower() for k in query}
+
+    # 0. Rent urls win over everything: "-for-rent" results pages used to
+    # classify as scrapeable "results" and feed monthly-rent figures into the
+    # sale DB as prices. Checked before "detail" so /listing/for-rent-... is
+    # caught too.
+    qvals = {v.lower() for vs in query.values() for v in vs}
+    if any(m in path for m in ("-for-rent", "/for-rent", "/property-for-rent")) or (
+            {"listingtype", "listing_type"} & qkeys and "rent" in qvals):
+        return "rent", None
 
     # 1. Single listing detail page wins first.
     if "/listing/" in path:
@@ -72,7 +101,7 @@ def classify_pg_url(url: str) -> tuple[str, str | None]:
 
     # 3. Results / search page.
     results_markers = (
-        "-for-sale", "-for-rent", "/property-for-sale", "/property-for-rent",
+        "-for-sale", "/property-for-sale",
         "/property-search", "/listing/",
     )
     search_qkeys = {
@@ -519,6 +548,12 @@ class PropertyGuruScraper:
         kind, project_name = classify_pg_url(url)
         logger.info("URL classified as '%s': %s", kind, url)
 
+        if kind == "rent":
+            raise ValueError(
+                "This is a PropertyGuru RENT url — the listings DB stores SALE "
+                "listings only (rent asks would poison price/psf history and "
+                "comps). Paste the for-sale equivalent instead.")
+
         if kind == "project":
             raise ProjectPageNeedsNameFallback(project_name)
 
@@ -654,10 +689,12 @@ class PropertyGuruScraper:
             if isinstance(candidate, dict):
                 listing = self._parse_single_listing(candidate)
                 if listing:
+                    listing.extraction_strategy = "detail_json"
                     return listing
             # Fallback: recursively hunt for a listing object anywhere in the blob.
             sp = self._search_for_listings(raw, page_num=1)
             if sp and sp.listings:
+                sp.listings[0].extraction_strategy = "detail_json"
                 return sp.listings[0]
 
         # Last resort: run the full multi-strategy page extraction.
@@ -942,6 +979,10 @@ class PropertyGuruScraper:
         self._stats.total_cards += n
         self._stats.parsed_ok += n
         self._stats.strategy_counts[strategy] = self._stats.strategy_counts.get(strategy, 0) + 1
+        # Per-listing provenance — the DB uses this to suppress phantom price
+        # changes when the winning strategy flips between sightings.
+        for listing in result.listings:
+            listing.extraction_strategy = strategy
         # Track missing fields
         key_fields = ["district", "latitude", "longitude", "facing", "tenure",
                        "built_year", "psf", "sqft"]
@@ -1185,7 +1226,6 @@ class PropertyGuruScraper:
                     url=item.get("url", ""),
                     title=title,
                     address=item.get("address", ""),
-                    price=item.get("price", 0),
                     sqft=item.get("sqft", 0),
                 )
 
@@ -1198,7 +1238,23 @@ class PropertyGuruScraper:
                     psf = _safe_float(m.group(0))
 
             # Parse tags for tenure/property type
-            tags = item.get("tags", [])
+            tags = list(item.get("tags", []) or [])
+
+            # Replicate the JSON path's sqm guard: PG sometimes reports area
+            # in sqm. The DOM has no paired sqm field to corroborate against,
+            # so an area far below the plausible floor for the bed count is
+            # treated as sqm-suspect — converted AND flagged via tags (never
+            # silently stored as a ~10.8x-deflated sqft).
+            beds = _safe_int(item.get("beds"))
+            sqft = _safe_float(item.get("sqft"))
+            floor_area_sqm = None
+            if sqft and sqft > 0:
+                threshold = (_MIN_SQFT_BY_BEDS[beds] * 0.45
+                             if beds in _MIN_SQFT_BY_BEDS else 280.0)
+                if sqft < threshold:
+                    tags.append("area_unit_suspect_sqm")
+                    floor_area_sqm = sqft
+                    sqft = round(sqft * 10.7639, 1)
 
             # Use headline as description if available
             description = item.get("headline")
@@ -1211,16 +1267,16 @@ class PropertyGuruScraper:
                 if m:
                     listing_date = m.group(1)
 
-            return Listing(
+            return PGListing(
                 id=listing_id,
                 title=title,
                 price=item.get("price", 0),
                 url=item.get("url", ""),
                 address=item.get("address"),
                 district=normalize_district(item.get("district", "")) or item.get("district"),
-                beds=_safe_int(item.get("beds")),
+                beds=beds,
                 baths=_safe_int(item.get("baths")),
-                sqft=_safe_float(item.get("sqft")),
+                sqft=sqft,
                 psf=psf,
                 property_type=item.get("property_type"),
                 tenure=item.get("tenure"),
@@ -1234,6 +1290,7 @@ class PropertyGuruScraper:
                 listing_date=listing_date,
                 listing_agent=item.get("listing_agent"),
                 image_url=item.get("image_url"),
+                floor_area_sqm=floor_area_sqm,
                 tags=tags if tags else [],
             )
         except Exception as e:
@@ -1299,9 +1356,11 @@ class PropertyGuruScraper:
             latitude = _safe_float(item.get("latitude") or item.get("lat"))
             longitude = _safe_float(item.get("longitude") or item.get("lng"))
 
-            # Rooms — new format has bedrooms/bathrooms at top level
-            beds = _safe_int(item.get("bedrooms") or item.get("beds") or item.get("bedroom"))
-            baths = _safe_int(item.get("bathrooms") or item.get("baths") or item.get("bathroom"))
+            # Rooms — new format has bedrooms/bathrooms at top level.
+            # Explicit None checks: `or` swallowed a falsy 0, so a studio
+            # (bedrooms=0) fell through to the next key / None.
+            beds = _safe_int(_first_present(item, "bedrooms", "beds", "bedroom"))
+            baths = _safe_int(_first_present(item, "bathrooms", "baths", "bathroom"))
 
             # Area — new format has floorArea as number, area.localeStringValue as string.
             # NOTE: landArea is NOT a fallback for strata floor area — it inflated
@@ -1434,7 +1493,7 @@ class PropertyGuruScraper:
             agent_name = _extract_agent_name(item)
             agent_phone = _extract_agent_phone(item)
 
-            return Listing(
+            return PGListing(
                 id=listing_id,
                 title=title,
                 price=int(price),
@@ -1508,6 +1567,21 @@ def _safe_int(val) -> int | None:
         return None
 
 
+def _first_present(item: dict, *keys):
+    """First key whose value is not None — unlike `or`-chaining, a falsy 0
+    (studio bedrooms) is a real value, not a miss."""
+    for k in keys:
+        val = item.get(k)
+        if val is not None:
+            return val
+    return None
+
+
+# Plausible minimum strata sqft per bed count (the lower bounds of
+# FullScorer._BEDROOM_SQFT_RANGES) — used by the DOM-path sqm guard.
+_MIN_SQFT_BY_BEDS = {1: 400, 2: 600, 3: 850, 4: 1200, 5: 1600}
+
+
 def _safe_float(val) -> float | None:
     if val is None:
         return None
@@ -1562,9 +1636,14 @@ def _extract_mrt_info(item: dict) -> str | None:
     return None
 
 
-def _stable_listing_id(url: str, title: str, address: str, price: int, sqft: float) -> str:
-    """Generate a stable hash ID when listing id is missing."""
-    raw = f"{url}|{title}|{address}|{price}|{sqft}"
+def _stable_listing_id(url: str, title: str, address: str, sqft: float) -> str:
+    """Generate a stable hash ID when listing id is missing.
+
+    PRICE is deliberately excluded: with price in the hash, the same unit at a
+    new ask became a brand-new record by construction — orphaning its price
+    history and making every reprice look like fresh inventory (#3b).
+    """
+    raw = f"{url}|{title}|{address}|{sqft}"
     return hashlib.md5(raw.encode("utf-8")).hexdigest()[:12]
 
 

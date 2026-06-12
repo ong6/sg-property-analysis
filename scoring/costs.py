@@ -32,6 +32,11 @@ def _load_cost_params() -> dict:
                 "repairs_per_year": 1500,
                 "insurance_per_year": 300,
                 "annual_appreciation_estimate": 0.02,
+                # Marginal income tax on net letting profit (rent is taxable
+                # income — see ROICalculator). 0.15 ~ a $120-160k/yr earner.
+                "marginal_income_tax_rate": 0.15,
+                # Default mortgage rate for the optional leveraged-ROI path.
+                "mortgage_rate_pct": 3.5,
             }
     return _cost_params
 

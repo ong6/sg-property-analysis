@@ -101,7 +101,11 @@ def _load_district_data() -> dict:
 # discount. The raw district CSVs hold the true comps; load them lazily, once
 # per district per process.
 # ---------------------------------------------------------------------------
-_raw_prints_cache: dict = {}  # "D18" -> {PROJECT NAME: [(sqft, psf, floor, sale_dt)]}
+# Keys are _pu_normalize()d project names (audit #4: the raw exact-upper join
+# missed 14.7% of the DB — 'SUITES @ KATONG' never matched URA's
+# 'SUITES@ KATONG', silently disarming the v3.8/v3.9 print-trust rules).
+# Print tuples: (sqft, psf, floor, sale_dt, sale_type).
+_raw_prints_cache: dict = {}  # "D18" -> {normalized name: [(sqft, psf, floor, sale_dt, sale_type)]}
 
 
 def _load_district_prints(dcode: str) -> dict:
@@ -120,16 +124,77 @@ def _load_district_prints(dcode: str) -> dict:
                     continue
                 if sqft <= 0 or psf <= 0:
                     continue
+                # Print hygiene (audit P2): bulk multi-unit rows and land-area
+                # rows are not unit comps — a 4-unit block sale or a landed
+                # plot print would distort the tight median / p10.
+                try:
+                    n_units = int(float(str(r.get("Number of Units") or "1").replace(",", "")))
+                except ValueError:
+                    n_units = 1
+                if n_units != 1:
+                    continue
+                if (r.get("Type of Area") or "").strip().lower() == "land":
+                    continue
                 try:
                     sale_dt = datetime.strptime(r.get("Sale Date") or "", "%b-%y")
                 except ValueError:
                     sale_dt = None
-                name = (r.get("Project Name") or "").strip().upper()
+                name = _pu_normalize(r.get("Project Name") or "")
                 if name:
                     out.setdefault(name, []).append(
-                        (sqft, psf, (r.get("Floor Level") or "").strip(), sale_dt))
+                        (sqft, psf, (r.get("Floor Level") or "").strip(), sale_dt,
+                         (r.get("Type of Sale") or "").strip()))
     _raw_prints_cache[dcode] = out
     return out
+
+
+# Reserved key inside a district's prints dict for memoized index ratios.
+# Normalized project names are [a-z0-9 ]-only, so it can never collide; tying
+# the cache to the dict itself means replacing the district entry (tests,
+# cache rebuilds) automatically invalidates the derived ratios.
+_STALE_INDEX_CACHE_KEY = "__stale_index_ratios__"
+
+
+def _district_psf_index_ratio(dcode: str, anchor_ym: int) -> "float | None":
+    """District price-index ratio for time-indexing stale prints (v3.8.1).
+
+    ratio = median PSF of the district's prints in the trailing 24mo (all
+    sizes pooled) ÷ median PSF of the district's prints within
+    ±STALE_INDEX_WINDOW_MONTHS of `anchor_ym` (also all sizes), clamped to
+    STALE_INDEX_RATIO_CLAMP. Multiplying a stale print's PSF by it re-values
+    the print in today's terms. Returns None when either window holds fewer
+    than STALE_INDEX_MIN_DISTRICT_PRINTS prints — no index, no comps.
+    `anchor_ym` is an integer month index (year*12 + month).
+    """
+    import config
+    import statistics
+    dprints = _load_district_prints(dcode)
+    cache = dprints.setdefault(_STALE_INDEX_CACHE_KEY, {})
+    now = datetime.now()
+    now_ym = now.year * 12 + now.month
+    key = (anchor_ym, now_ym)
+    if key in cache:
+        return cache[key]
+    cutoff = now_ym - FullScorer.TIGHT_COMP_WINDOW_MONTHS
+    cur, then = [], []
+    for name, plist in dprints.items():
+        if name == _STALE_INDEX_CACHE_KEY:
+            continue
+        for t in plist:
+            if t[3] is None:
+                continue
+            ym = t[3].year * 12 + t[3].month
+            if ym >= cutoff:
+                cur.append(t[1])
+            if abs(ym - anchor_ym) <= config.STALE_INDEX_WINDOW_MONTHS:
+                then.append(t[1])
+    ratio = None
+    if (len(cur) >= config.STALE_INDEX_MIN_DISTRICT_PRINTS
+            and len(then) >= config.STALE_INDEX_MIN_DISTRICT_PRINTS):
+        lo, hi = config.STALE_INDEX_RATIO_CLAMP
+        ratio = min(hi, max(lo, statistics.median(cur) / statistics.median(then)))
+    cache[key] = ratio
+    return ratio
 
 
 _PROJECT_UNITS_FILE = os.path.join(_DATA_DIR, "project_units.json")
@@ -194,7 +259,19 @@ def build_cohort_stats(listings: list[dict]) -> dict:
     mrt_distances: list[int] = []
     current_year = datetime.now().year
 
+    # Same-unit dedupe: ingestion stamps a `unit_group` on records it has
+    # identified as the same physical unit listed by multiple agents (audit:
+    # 18.5% of rows were duplicates, distorting cohort percentiles). Count
+    # each group once; records without the field behave exactly as before.
+    seen_unit_groups: set = set()
+
     for listing in listings:
+        unit_group = listing.get("unit_group")
+        if unit_group is not None:
+            if unit_group in seen_unit_groups:
+                continue
+            seen_unit_groups.add(unit_group)
+
         district = normalize_district(listing.get("district", ""))
         if district:
             psf = listing.get("psf")
@@ -843,6 +920,13 @@ class FullScorer:
         scored.estimated_monthly_rent = rental_data["monthly_rent"]
         scored.estimated_gross_yield = rental_data["gross_yield"]
         scored.rent_source = rental_data["source"]
+        # Cross-agent contract: the rental estimator may carry a numeric
+        # `confidence` on the estimate — surface it on the scored listing when
+        # present (defensive .get: older estimator versions don't emit it).
+        rent_confidence = rental_data.get("confidence")
+        if rent_confidence is not None:
+            scored.rent_confidence = rent_confidence
+            scores["rent_confidence"] = rent_confidence
 
         # Gross Yield Score (0-6 pts) - was 0-12
         raw_yield_score = rental_data["gross_yield_score"]
@@ -1208,7 +1292,11 @@ class FullScorer:
         district = normalize_district(listing.get("district", ""))
         d_num = district.upper().replace("D", "").strip().lstrip("0") or "0"
         profile = self.district_profiles.get(d_num, {})
-        buyer_pool = profile.get("buyer_pool_depth", "moderate")
+        # Missing district/profile → depth None, NOT "moderate": MMR's
+        # _BUYER_POOL_PTS lookup maps an unknown depth to 0 (neutral), so a
+        # listing with no district no longer earns +1.5 for missing data
+        # (audit #9). The legacy /100 default of 3 pts is kept unchanged.
+        buyer_pool = profile.get("buyer_pool_depth")
         pool_score = self.BUYER_POOL_SCORES.get(buyer_pool, 3)
         scores["buyer_pool_depth"] = {"district": district, "depth": buyer_pool, "points": pool_score}
         scores["total"] += pool_score
@@ -1257,16 +1345,22 @@ class FullScorer:
         - MCST Estimate: 0-4 pts
         - Property Tax Band: 0-3 pts
         - Efficiency Ratio: 0-3 pts
+
+        Missing-data neutrality (audit #9): each sub-score contributes its
+        NEUTRAL MIDPOINT when its input is absent (MCST 2.0, tax 1.5,
+        efficiency 1.5), so an all-missing listing totals 5.0 and MMR's
+        `cost = score - 5` lands at 0 instead of -5 raw (~-43 display) —
+        missing data is neutral, never penalized.
         """
-        scores = {"total": 0}
+        scores = {"total": 0.0}
 
         sqft = listing.get("sqft", 0)
 
-        # MCST Estimate (0-4 pts)
+        # MCST Estimate (0-4 pts; 2.0 neutral when sqft unknown)
         mcst_rate = self.cost_calculator.params.get("mcst_rate_per_sqft", 0.35)
         mcst_monthly = sqft * mcst_rate if sqft else 0
-        mcst_score = 0
         if mcst_monthly > 0:
+            mcst_score = 0
             if mcst_monthly < 350:
                 mcst_score = 4
             elif mcst_monthly < 450:
@@ -1275,14 +1369,15 @@ class FullScorer:
                 mcst_score = 2
             elif mcst_monthly < 650:
                 mcst_score = 1
+        else:
+            mcst_score = 2.0  # missing sqft → neutral midpoint
         scores["mcst"] = {"monthly_estimate": round(mcst_monthly), "points": mcst_score}
         scores["total"] += mcst_score
 
-        # Property Tax Band (0-3 pts)
+        # Property Tax Band (0-3 pts; 1.5 neutral when rent unknown)
         # Based on estimated rental
         monthly_rent = scored.estimated_monthly_rent
         annual_value = monthly_rent * 12 if monthly_rent else 0
-        tax_score = 0
         if annual_value > 0:
             # Lower quartile roughly < $50k AV
             if annual_value < 50000:
@@ -1291,15 +1386,17 @@ class FullScorer:
                 tax_score = 2
             else:
                 tax_score = 1
+        else:
+            tax_score = 1.5  # no rent estimate → neutral midpoint
         scores["property_tax"] = {
             "annual_value_estimate": round(annual_value),
             "points": tax_score,
         }
         scores["total"] += tax_score
 
-        # Efficiency Ratio (0-3 pts)
+        # Efficiency Ratio (0-3 pts; 1.5 neutral when sqft/beds unknown)
         beds = listing.get("beds", 0)
-        eff_score = 0
+        eff_score = 1.5  # missing sqft or beds → neutral midpoint
         if sqft and beds:
             sqft_per_bed = sqft / beds
             # Optimal efficiency varies by bed count
@@ -1425,8 +1522,63 @@ class FullScorer:
         # Exported so MMR can distrust district-level "cheapness" the stack's
         # own prints contradict, and so the agent sees the stack's floor
         # reality (low_floor_share ≥ 0.7 ⇒ the stack IS ground/low floor).
-        tight_med, n_tight, low_share, p10 = self._tight_size_comps(listing)
-        if tight_med and n_tight >= 2 and listing.get("psf"):
+        import config
+        tight_med, n_tight, low_share, p10, prints_latest, prints_stale = \
+            self._tight_size_comps(listing)
+        # Audit #4: absence-of-comps must be VISIBLE, not a silent skip. When
+        # the project joins to zero URA prints in its district CSV (EC/strata-
+        # landed blind spots, residual name drift), say so explicitly.
+        project_prints = self._project_prints(listing)
+        if project_prints is not None and not project_prints:
+            result["no_ura_prints"] = True
+        # Audit #5: comp freshness — newest same-size print (YYYY-MM), exported
+        # even when the window leaves too few comps (that's exactly when the
+        # agent needs to see how stale the print set is).
+        if prints_latest:
+            result["stack_prints_latest"] = prints_latest
+        if tight_med and n_tight >= 2 and listing.get("psf") and prints_stale:
+            # --- v3.8.1 LOW-TRUST branch: INDEXED stale prints ---
+            # The comp set is the stack's own stale prints re-valued by the
+            # district price index — directionally right (it re-arms the v3.8
+            # PES protection for stacks that stopped trading) but noisy, so
+            # every trigger runs at a raised threshold vs the fresh path.
+            stack_premium = (listing["psf"] - tight_med) / tight_med * 100
+            result["stack_prints_n"] = n_tight
+            result["stack_prints_stale"] = True
+            result["stack_premium_pct_indexed"] = round(stack_premium, 1)
+            if low_share is not None:
+                result["stack_low_floor_share"] = round(low_share, 2)
+            # `stack_premium_pct` is what arms mmr's >+5 print-contradiction
+            # suspect damp. For an indexed set the damp must only fire above
+            # the +8 noise margin, and mmr's threshold is fixed at >5 — so the
+            # field is exported only past the margin (the raw indexed number
+            # stays visible in stack_premium_pct_indexed either way).
+            if stack_premium > config.STALE_PREMIUM_SUSPECT_MIN_PCT:
+                result["stack_premium_pct"] = round(stack_premium, 1)
+            if stack_premium > config.STALE_ABOVE_PRINTS_PCT:
+                floor_note = (f", a low-floor stack ({low_share:.0%} of prints at 01-05)"
+                              if (low_share or 0) >= 0.7 else "")
+                flags.append({
+                    "flag": "ask_above_own_stack_prints",
+                    "penalty": 2,
+                    "reason": (f"Asking {stack_premium:.0f}% above the unit's own "
+                               f"same-size prints, district-indexed to today "
+                               f"(n={n_tight}, latest {prints_latest}{floor_note})"),
+                })
+                total_penalty += 2
+            elif (p10 is not None
+                    and listing["psf"] < p10 * config.STALE_BELOW_P10_FACTOR):
+                flags.append({
+                    "flag": "ask_below_stack_prints",
+                    "penalty": 2,
+                    "reason": (f"Asking ${listing['psf']:,.0f} psf is >10% below "
+                               f"every one of the {n_tight} same-size prints "
+                               f"district-indexed to today (min ${p10:,.0f}) — "
+                               f"bait price, double-volume/PES format, or sqft "
+                               f"error; verify before crediting"),
+                })
+                total_penalty += 2
+        elif tight_med and n_tight >= 2 and listing.get("psf"):
             stack_premium = (listing["psf"] - tight_med) / tight_med * 100
             result["stack_prints_n"] = n_tight
             result["stack_premium_pct"] = round(stack_premium, 1)
@@ -1449,8 +1601,13 @@ class FullScorer:
             # paper PSF deflates exactly like ground-floor PES patios), or sqft
             # errors. The scan's ranking SELECTS for these artifacts, so they
             # must be verify-first, never auto-credited as value.
-            elif (p10 is not None and n_tight >= 8
-                    and listing["psf"] < p10 * 0.97):
+            # Audit #4-corridor: a 5-7 print set escaped BOTH this rule (needed
+            # n≥8) and the thin-cohort damp (fires at n<5) — a bait ask 20%
+            # under all 6 prints got full credit. For that corridor, an ask
+            # below the MINIMUM in-window print fires the same flag (note: for
+            # n ≤ 10 the stored p10 IS the minimum print, vals[0]).
+            elif (p10 is not None and listing["psf"] < p10 * 0.97
+                    and n_tight >= 8):
                 flags.append({
                     "flag": "ask_below_stack_prints",
                     "penalty": 2,
@@ -1460,10 +1617,26 @@ class FullScorer:
                                f"format, or sqft error; verify before crediting"),
                 })
                 total_penalty += 2
+            elif (p10 is not None and config.MIN_BAND_TXNS <= n_tight < 8
+                    and listing["psf"] < p10):
+                flags.append({
+                    "flag": "ask_below_stack_prints",
+                    "penalty": 2,
+                    "reason": (f"Asking ${listing['psf']:,.0f} psf is below every "
+                               f"one of the {n_tight} recent same-size prints "
+                               f"(min ${p10:,.0f}) — bait price, double-volume/PES "
+                               f"format, or sqft error; verify before crediting"),
+                })
+                total_penalty += 2
 
         # --- NEW v2.3: Bedroom/sqft mismatch validation ---
         # Flag listings where sqft doesn't match expected range for bedroom count
         mismatch = self._check_bedroom_sqft_mismatch(listing)
+        # Cross-agent contract: ingestion may pre-flag the same artifact in the
+        # record's `ingest_flags`; honor it exactly like our own detection
+        # (same flag name → same MMR suspect-damp semantics).
+        if not mismatch and "bedroom_sqft_mismatch" in (listing.get("ingest_flags") or []):
+            mismatch = "Bedroom/sqft mismatch flagged at ingest (scraper-side validation)"
         if mismatch:
             flags.append({
                 "flag": "bedroom_sqft_mismatch",
@@ -1529,45 +1702,155 @@ class FullScorer:
     TIGHT_COMP_SQFT_TOL = 0.07
     TIGHT_COMP_WINDOW_MONTHS = 24
 
+    def _project_prints(self, listing: dict) -> "list | None":
+        """The listing's project URA prints (normalized-name join, audit #4).
+
+        Returns None when the lookup is impossible (no name or district),
+        [] when the lookup ran but the project has zero prints — the caller
+        exports that as an explicit `no_ura_prints` flag instead of a silent
+        skip (EC + strata-landed projects structurally have no prints).
+        """
+        name = (listing.get("project_name") or listing.get("title") or "").strip()
+        dcode = normalize_district(str(listing.get("district") or ""))
+        if not (name and dcode):
+            return None
+        return _load_district_prints(dcode).get(_pu_normalize(name)) or []
+
     def _tight_size_comps(self, listing: dict) -> tuple:
         """Median PSF of the project's recent prints within ±7% of the listing's
         sqft — the unit's true comp set, immune to band pooling.
 
-        Returns (median_psf, n, low_floor_share, p10_psf); (None, 0, None, None)
-        without ≥2 usable prints. low_floor_share is the fraction of comps
-        printed at floors 01-05 — ≥0.7 means the whole stack IS low floor (e.g.
+        Returns (median_psf, n, low_floor_share, p10_psf, latest_print_ym,
+        stale); (None, n_in_window, None, None, latest, False) without ≥2
+        usable prints. low_floor_share is the fraction of comps printed at
+        floors 01-05 — ≥0.7 means the whole stack IS low floor (e.g.
         ground-floor PES), so its pricing already embeds the floor discount.
-        p10_psf is the 10th-percentile print — an ask meaningfully below it sits
-        under (nearly) the whole recent distribution, which real sellers don't
-        do: it flags bait pricing, a void/PES format hiding in the same total
-        sqft, or a data error (v3.9).
+        p10_psf is the 10th-percentile print — an ask meaningfully below it
+        sits under (nearly) the whole recent distribution, which real sellers
+        don't do: it flags bait pricing, a void/PES format hiding in the same
+        total sqft, or a data error (v3.9). latest_print_ym ("YYYY-MM") is the
+        newest same-size print, exported for comp-freshness even when the
+        window leaves no usable comps. stale=True marks an INDEXED stale comp
+        set (see below) — callers must treat it as low-trust.
+
+        Audit-hardening (Jun 2026):
+        - #5 stale window: the 24mo cutoff anchors to TODAY, not the project's
+          own latest print — raw stale prints never accuse a fairly-priced
+          2026 ask (the Archipelago lesson, reproduced in the old
+          implementation). Undated prints never anchor a benchmark.
+        - v3.8.1 stale-print indexing: discarding stale sets outright (the
+          first #5 fix) disarmed the v3.8 PES protection exactly where it
+          matters — PES stacks rarely re-trade, so their own prints go stale
+          while the project stays liquid (live regression: Coco Palms 624sf
+          PES, last same-size print 2022, rode the coarse band back to #1).
+          With <2 in-window but ≥2 dated all-time same-size prints, the stale
+          prints are re-valued in today's terms via the district price index
+          (_district_psf_index_ratio) and served with stale=True so callers
+          halve the blend weight, force the damping cohort thin, and raise
+          flag thresholds (index noise). No computable index → neutral.
+        - P2 hygiene: when ≥TIGHT_COMP_MIN_RESALE_PRINTS in-window resale
+          prints exist, the comp set restricts to them (developer New Sale
+          pricing pollutes a resale's "own prints" distribution).
+        - #6 floor basis: when the listing's floor tier is known, each print
+          is adjusted to the listing's tier via the project/district
+          floor_factors (psf × f_listing / f_print) before the median/p10 —
+          so a fairly-priced high-floor unit no longer reads "above its own
+          prints" just because the prints are floor-mixed. Without factors,
+          fall back to same-tier prints when ≥TIGHT_COMP_SAME_TIER_MIN exist,
+          else the floor-mixed set unadjusted (pre-fix behavior). PES-stack
+          detection is untouched: a low/unknown-floor listing against its
+          low-floor-dominated prints sees no adjustment, and low_floor_share
+          still reports the comp set's floor mix.
         """
+        import config
         sqft = listing.get("sqft")
-        name = (listing.get("project_name") or listing.get("title") or "").strip().upper()
         dcode = normalize_district(str(listing.get("district") or ""))
-        if not (sqft and name and dcode):
-            return None, 0, None, None
-        prints = _load_district_prints(dcode).get(name)
-        if not prints:
-            return None, 0, None, None
+        prints = self._project_prints(listing)
+        if not (sqft and dcode and prints):
+            return None, 0, None, None, None, False
         same = [t for t in prints if abs(t[0] - sqft) / sqft <= self.TIGHT_COMP_SQFT_TOL]
         if not same:
-            return None, 0, None, None
+            return None, 0, None, None, None, False
         dated = [t for t in same if t[3] is not None]
-        if dated:
-            latest = max(t[3] for t in dated)
-            cutoff = latest.year * 12 + latest.month - self.TIGHT_COMP_WINDOW_MONTHS
-            recent = [t for t in dated if t[3].year * 12 + t[3].month >= cutoff]
-            if len(recent) >= 2:
-                same = recent
-        if len(same) < 2:
-            return None, len(same), None, None
+        latest_dt = max((t[3] for t in dated), default=None)
+        latest = latest_dt.strftime("%Y-%m") if latest_dt else None
+        now = datetime.now()
+        cutoff = now.year * 12 + now.month - self.TIGHT_COMP_WINDOW_MONTHS
+        recent = [t for t in dated if t[3].year * 12 + t[3].month >= cutoff]
+        if len(recent) < 2:
+            # <2 fresh prints. v3.8.1: time-index the stale set instead of
+            # discarding it (raw stale prints still never serve as comps).
+            return self._indexed_stale_comps(dated, dcode, latest, len(recent))
+        same = recent
+        # Resale-only restriction (developer pricing is not a resale comp).
+        resales = [t for t in same if (t[4] or "").strip().lower() == "resale"]
+        if len(resales) >= config.TIGHT_COMP_MIN_RESALE_PRINTS:
+            same = resales
+        # Floor-basis adjustment / restriction (audit #6).
+        adj_vals = None
+        listing_tier = config.normalize_floor_tier(listing.get("floor_level"))
+        if listing_tier:
+            factors = {}
+            if getattr(self, "ura_data", None):
+                pname = (listing.get("project_name") or listing.get("title") or "")
+                entry = self._fuzzy_ura_lookup(pname.lower())
+                factors = (entry or {}).get("floor_factors") or {}
+            tier_f = {t: factors.get(t) for t in ("low", "mid", "high")}
+            if any(tier_f.values()):
+                f_listing = tier_f.get(listing_tier) or 1.0
+                adj_vals = [
+                    t[1] * f_listing / (tier_f.get(config.normalize_floor_tier(t[2])) or 1.0)
+                    for t in same
+                ]
+            else:
+                same_tier = [t for t in same
+                             if config.normalize_floor_tier(t[2]) == listing_tier]
+                if len(same_tier) >= config.TIGHT_COMP_SAME_TIER_MIN:
+                    same = same_tier
         import statistics
-        vals = sorted(t[1] for t in same)
+        vals = sorted(adj_vals) if adj_vals is not None else sorted(t[1] for t in same)
         med = statistics.median(vals)
         p10 = vals[max(0, int(0.10 * (len(vals) - 1)))]
         low_share = sum(1 for t in same if t[2] == "01 to 05") / len(same)
-        return med, len(same), low_share, p10
+        return med, len(vals), low_share, p10, latest, False
+
+    def _indexed_stale_comps(self, dated: list, dcode: str, latest,
+                             n_recent: int) -> tuple:
+        """LOW-TRUST comp set from stale same-size prints, re-valued in today's
+        terms via the district price index (v3.8.1 — the audit's recommended
+        alternative to both the all-time fallback and the discard).
+
+        Each stale print's PSF is multiplied by one district index ratio
+        (trailing-24mo district median ÷ district median around the stale
+        prints' median date). Returns the _tight_size_comps tuple with
+        stale=True; the neutral tuple (None, n_recent, None, None, latest,
+        False) when <2 dated prints exist or no index is computable.
+
+        Same resale-only hygiene as the fresh path. No floor adjustment: the
+        target artifact is a low-floor PES listing against its own low-floor
+        prints (no adjustment in the fresh path either), and an indexed set is
+        too low-trust to compound with a second correction — the raised
+        thresholds the callers apply absorb floor-mix noise instead.
+        """
+        import config
+        import statistics
+        if len(dated) < 2:
+            return None, n_recent, None, None, latest, False
+        resales = [t for t in dated if (t[4] or "").strip().lower() == "resale"]
+        if len(resales) >= config.TIGHT_COMP_MIN_RESALE_PRINTS:
+            dated = resales
+        months = sorted(t[3].year * 12 + t[3].month for t in dated)
+        mid = len(months) // 2
+        anchor_ym = (months[mid] if len(months) % 2
+                     else round((months[mid - 1] + months[mid]) / 2))
+        ratio = _district_psf_index_ratio(dcode, anchor_ym)
+        if ratio is None:
+            return None, n_recent, None, None, latest, False
+        vals = sorted(t[1] * ratio for t in dated)
+        med = statistics.median(vals)
+        p10 = vals[max(0, int(0.10 * (len(vals) - 1)))]
+        low_share = sum(1 for t in dated if t[2] == "01 to 05") / len(dated)
+        return med, len(vals), low_share, p10, latest, True
 
     def _check_psf_overpricing(self, listing: dict) -> tuple:
         """
@@ -1615,11 +1898,28 @@ class FullScorer:
         # prints). The tight median embeds the stack's real floor mix, and
         # reporting its count as the cohort lets the v3.2 thin-cohort damping
         # fire for stacks that rarely trade.
-        tight_med, n_tight, _low_share, _p10 = self._tight_size_comps(listing)
+        tight_med, n_tight, _low_share, _p10, _latest, prints_stale = \
+            self._tight_size_comps(listing)
         if tight_med and n_tight >= 2:
-            w = min(1.0, n_tight / config.MIN_BAND_TXNS)
-            median_psf = w * tight_med + (1 - w) * median_psf
-            cohort_txns = n_tight
+            if prints_stale:
+                # v3.8.1: indexed stale prints are a LOW-TRUST benchmark — they
+                # blend at HALF a fresh set's weight, and the reported cohort
+                # is forced thin (min(n, MIN_BAND_TXNS-1)) so the v3.2 damping
+                # and the v3.6 thin-cohort+deep-discount suspect rule stay
+                # armed no matter how many stale prints back the index.
+                w = (config.STALE_COMP_BLEND_FACTOR
+                     * min(1.0, n_tight / config.MIN_BAND_TXNS))
+                median_psf = w * tight_med + (1 - w) * median_psf
+                cohort_txns = min(n_tight, config.MIN_BAND_TXNS - 1)
+            else:
+                w = min(1.0, n_tight / config.MIN_BAND_TXNS)
+                median_psf = w * tight_med + (1 - w) * median_psf
+                # Blend-consistent cohort (audit P2): the old `cohort_txns = n_tight`
+                # let 2-3 tight prints demote a deep band cohort to "thin" even
+                # while the benchmark stayed 60% band-derived. Mix the counts with
+                # the same weight as the medians (pure-tight at w=1 keeps n_tight).
+                band_cnt = cohort_txns or 0
+                cohort_txns = round(w * n_tight + (1 - w) * band_cnt)
 
         premium_pct = ((psf - median_psf) / median_psf) * 100
         return premium_pct, cohort_txns
@@ -1780,6 +2080,23 @@ def score_and_filter(
     rejected = []
 
     for listing in listings:
+        # Audit P2 (quick-filter survivorship): the project-units backfill used
+        # to run only inside FullScorer.score(), AFTER this gate — so 907
+        # listings were rejected for missing total_units the pipeline could
+        # have filled (skewing survivors away from freehold/older projects).
+        # Run the same backfill (units + centroid coords) on every candidate
+        # BEFORE it is gated.
+        pu = _project_units_lookup(listing.get("project_name") or listing.get("title"))
+        if pu and (not listing.get("total_units")
+                   or not listing.get("latitude") or not listing.get("longitude")):
+            listing = dict(listing)
+            if not listing.get("total_units"):
+                listing["total_units"] = pu["total_units"]
+            if not listing.get("latitude") or not listing.get("longitude"):
+                listing["latitude"] = pu["lat"]
+                listing["longitude"] = pu["lng"]
+                listing["coords_source"] = "project_centroid"
+
         qs = quick_scorer.score(listing)
         # score=0 means hard-rejected (lease too short)
         if qs.score == 0 or qs.score < min_quick_score:

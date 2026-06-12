@@ -21,6 +21,7 @@ import html
 import json
 import os
 import re
+import secrets
 import statistics
 import subprocess
 import sys
@@ -36,7 +37,25 @@ DATA = os.path.join(BASE, "data")
 DEFAULT_PORT = 8643
 
 sys.path.insert(0, BASE)
+import config  # noqa: E402 — single source of truth for version + weights
 from eval_memory import load_condo, load_index, slugify  # noqa: E402
+
+# CSRF guard (audit #13): POST /analyze spawns a claude agent, so it must not
+# be reachable by a random webpage fetch()-ing 127.0.0.1. Per-process token,
+# embedded in the served page, required as an X-Csrf-Token header — the custom
+# header forces a CORS preflight that cross-origin pages fail.
+CSRF_TOKEN = secrets.token_hex(16)
+
+
+def _csrf_ok(headers) -> bool:
+    """Token must match; when the browser sends an Origin it must match Host."""
+    if not secrets.compare_digest(headers.get("X-Csrf-Token") or "", CSRF_TOKEN):
+        return False
+    origin = headers.get("Origin")
+    if origin and origin != "null":
+        if urllib.parse.urlparse(origin).netloc != (headers.get("Host") or "").strip():
+            return False
+    return True
 
 # ---------------------------------------------------------------------------
 # Headline numbers from the latest backtest run (backtest_ext.py --split-sample).
@@ -65,20 +84,42 @@ BACKTEST = {
     "region_fwd": [("OCR", 3.7), ("RCR", 3.1), ("CCR", 1.9)],
 }
 
-CONFIG_WEIGHTS = [
-    ("age_value (cheap-for-age vs district)", "tanh, cap ±28", "strongest forward signal — leads · v3.6 trust knee at -25% · v3.7 piecewise age curve (~3%/yr to 10yr, plateau 10-15)"),
-    ("psf_value (vs same-size cohort)", "0.8 pts/% × conf, tanh cap ±28", "v3.8/3.9: tight stack prints blend the benchmark; prints contradicting the discount ⇒ damp ×0.25"),
-    ("age", "0→5 ramp to 7yr, plateau 7-30, −0.35/yr after", "v3.7 measured: 0-5yr cohort UNDERperforms; 7-30 flat; only 30+ slows"),
-    ("appreciation", "3.0 pts/pp × conf", "de-emphasized: trailing ≈ no forward power"),
-    ("yield (real rents where matched)", "10 pts/pp × conf", "carry only — price drag −0.75pp/yr per +1pp"),
-    ("txn_volume (liquidity)", "6·tanh(n/40)", "exit-risk insurance, not a return signal"),
-    ("mrt proximity", "9·tanh", "validated forward signal (β −0.16)"),
-    ("buyer_pool", "−3 .. +7", "evidence-backed (β +0.16)"),
-    ("dev_size", "6·tanh", "live via project_units.json"),
-    ("future (catalyst)", "0 .. +7, upside-only", "no measured power — kept small"),
-    ("lease", "+1 freehold / − short lease", "tenure is not a forward edge"),
-    ("momentum", "0", "killed by backtest"),
-]
+def config_weights() -> list:
+    """MMR component rows with every number read off the live config module.
+
+    The dashboard must never hand-copy weights (audit #6: a hardcoded table
+    still showed v3.7 values after later configs shipped). Rows whose shape
+    lives in mmr.py rather than config.py (age curve, mrt/dev_size tanh,
+    buyer_pool/future point tables) say so explicitly.
+    """
+    c = config
+    return [
+        ("age_value (cheap-for-age vs district)",
+         f"tanh, cap ±{c.MMR_RELVALUE_CAP:g}",
+         f"strongest forward signal — leads · trust knee at -{c.MMR_DISCOUNT_TRUST_KNEE_PCT:g}% "
+         f"(excess credit ×{c.MMR_DISCOUNT_EXCESS_CREDIT:g}) · piecewise age-PSF curve"),
+        ("psf_value (vs same-size cohort)",
+         f"{c.MMR_RELVALUE_SLOPE:g} pts/% × conf, tanh cap ±{c.MMR_RELVALUE_CAP:g}",
+         f"tight stack prints blend the benchmark; prints contradicting the discount "
+         f"⇒ damp ×{c.MMR_SUSPECT_VALUE_FACTOR:g}"),
+        ("age", "0→5 ramp to 7yr, plateau 7-30, decline after (curve in mmr.py)",
+         "measured: 0-5yr cohort UNDERperforms; 7-30 flat; only 30+ slows"),
+        ("appreciation",
+         f"{c.MMR_APPRECIATION_SLOPE:g} pts/pp × conf, center {c.MMR_APPRECIATION_CENTER_PCT:g}%/yr",
+         "de-emphasized: trailing ≈ no forward power"),
+        ("yield (real rents where matched)",
+         f"{c.MMR_YIELD_SLOPE_PTS_PER_PP:g} pts/pp × conf, tanh cap ±{c.MMR_YIELD_CAP:g}",
+         "carry only — price drag −0.75pp/yr per +1pp"),
+        ("txn_volume (liquidity)", f"{c.MMR_TXN_VOLUME_WEIGHT:g}·tanh(n/40)",
+         "exit-risk insurance, not a return signal"),
+        ("mrt proximity", "9·tanh (mmr.py)", "validated forward signal (β −0.16)"),
+        ("buyer_pool", "−3 .. +7 (mmr.py)", "evidence-backed (β +0.16)"),
+        ("dev_size", "6·tanh (mmr.py)", "live via project_units.json"),
+        ("future (catalyst)", "0 .. +7, upside-only (mmr.py)",
+         "no measured power — kept small"),
+        ("lease", "+1 freehold / − short lease", "tenure is not a forward edge"),
+        ("momentum", f"{c.MMR_MOMENTUM_WEIGHT:g}", "killed by backtest"),
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -182,7 +223,9 @@ def gather_stats() -> dict:
     s["n_evals"] = len(evals)
     best_by_proj: dict = {}
     for l in db.values():
-        if l.get("score_1000") is None or l.get("status") != "active":
+        # Same status filter as ui.py: skip only explicit "stale" — records
+        # written before the staleness sweep existed carry no status at all.
+        if l.get("score_1000") is None or l.get("status") == "stale":
             continue
         key = (l.get("project_name") or l.get("title") or "").strip().lower()
         if key and (key not in best_by_proj
@@ -273,12 +316,24 @@ def start_claude_analysis(condo_name: str) -> tuple[bool, dict | str]:
             "investment intent and proceed. Finish the full flow including "
             "--from-review so the evaluation is saved to eval memory."
         )
-        cmd = ["claude", "-p", prompt, "--permission-mode", "bypassPermissions"]
+        # Scoped permissions, not bypassPermissions (audit #13): the analyze
+        # flow needs the shell (python invest.py …), repo file IO, code search,
+        # web research, and the Skill/TodoWrite tools that drive the
+        # /analyze-development runbook — nothing that warrants a blanket
+        # permission bypass on a CSRF-reachable endpoint. The server also only
+        # binds 127.0.0.1 and POST /analyze requires the per-process token.
+        allowed = ("Bash,Read,Write,Edit,Glob,Grep,"
+                   "WebSearch,WebFetch,Skill,TodoWrite")
+        cmd = ["claude", "-p", prompt, "--allowedTools", allowed]
         try:
             logf = open(log_path, "w")
+        except OSError as e:
+            return False, str(e)
+        try:
             proc = subprocess.Popen(cmd, cwd=BASE, stdin=subprocess.DEVNULL,
                                     stdout=logf, stderr=subprocess.STDOUT)
         except OSError as e:
+            logf.close()  # Popen raised — don't leak the log fd
             return False, str(e)
         JOBS[slug] = {"name": name, "status": "running", "started": started,
                       "log": os.path.relpath(log_path, BASE), "returncode": None}
@@ -378,11 +433,11 @@ def render(s: dict) -> str:
         cov("URA panel districts", s["n_districts_panel"], 28)
     )
 
-    # weights table
+    # weights table — read live off config.py, never hand-copied
     weights_html = "".join(
         f'<tr><td class="sig-name">{_e(n)}</td><td class="num">{_e(w)}</td>'
         f'<td class="note">{_e(note)}</td></tr>'
-        for n, w, note in CONFIG_WEIGHTS)
+        for n, w, note in config_weights())
 
     # district benchmark strip
     dist_html = "".join(
@@ -414,7 +469,7 @@ def render(s: dict) -> str:
             f'<tr><td class="num dim">{i:02d}</td>'
             f'<td><a href="{_e(url)}" target="_blank">{_e(name)}</a></td>'
             f'<td class="num">{_e(l.get("district") or "")}</td>'
-            f'<td class="num">{l.get("beds") or "?"}BR</td>'
+            f'<td class="num">{_e(l.get("beds") or "?")}BR</td>'
             f'<td class="num">${(l.get("price") or 0):,}</td>'
             f'<td class="num">${(l.get("psf") or 0):,.0f}</td>'
             f'<td class="num score">{l["score_1000"]}</td>'
@@ -533,7 +588,7 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
 
 <header>
   <h1>MMR<em>/</em>DESK</h1>
-  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v3.7</b> · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
+  <div class="stamp">PROPERTY FINDER · SCORING ENGINE <b>v{_e(config.CONFIG_VERSION)}</b> · CONFIG {_e(config.score_version())} · BACKTEST {_e(BACKTEST["run_date"])} · 5–7YR INVESTMENT HOLD · SG CONDO</div>
 </header>
 
 <div class="kpis">{kpi_html}</div>
@@ -550,8 +605,9 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
   </section>
 
   <section>
-    <h2>MMR component weights (shipped config)</h2>
-    <div class="sub">every weight is backtest-anchored or explicitly labeled as insurance · missing data is neutral, never penalized</div>
+    <h2>MMR component weights (live from config.py · {_e(config.score_version())})</h2>
+    <div class="sub">every weight is backtest-anchored or explicitly labeled as insurance · missing data is neutral, never penalized ·
+      raw base {config.MMR_BASE}, /1000 norm center {config.MMR_NORM_CENTER} / scale {config.MMR_NORM_SCALE}</div>
     <table>
       <tr><th>component</th><th>weight</th><th>why</th></tr>
       {weights_html}
@@ -631,6 +687,7 @@ a:hover {{ color:var(--green); text-decoration:underline; }}
 
 </div>
 <script>
+const CSRF = "{CSRF_TOKEN}";  // per-process token, required on mutating POSTs
 const WATCHING = {{}};  // slug -> button
 async function spawn(name, btn) {{
   if (!name) return;
@@ -638,7 +695,8 @@ async function spawn(name, btn) {{
   btn.textContent = "STARTING…";
   try {{
     const r = await fetch("/analyze", {{ method:"POST",
-      headers: {{"Content-Type":"application/x-www-form-urlencoded"}},
+      headers: {{"Content-Type":"application/x-www-form-urlencoded",
+                 "X-Csrf-Token": CSRF}},
       body: "name=" + encodeURIComponent(name) }});
     if (r.ok) {{
       const job = await r.json();
@@ -810,6 +868,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path != "/analyze":
             self._send("not found", 404, "text/plain")
+            return
+        if not _csrf_ok(self.headers):
+            self._send("missing or invalid CSRF token", 403, "text/plain")
             return
         length = int(self.headers.get("Content-Length") or 0)
         form = urllib.parse.parse_qs(self.rfile.read(min(length, 4096)).decode())

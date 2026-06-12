@@ -55,3 +55,6 @@ htmlcov/
 # Claude Code local config (skills ARE tracked — shared project runbooks)
 .claude/settings.local.json
 .claude/worktrees/
+
+# DB backfill safety copies
+*.bak

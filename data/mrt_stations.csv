@@ -1,142 +1,142 @@
-name,code,lines,is_interchange,latitude,longitude
-Jurong East,EW24|NS1,EWL|NSL,true,1.3329,103.7422
-Bukit Batok,NS2,NSL,false,1.3490,103.7495
-Bukit Gombak,NS3,NSL,false,1.3587,103.7519
-Choa Chu Kang,NS4|BP1,NSL|BPL,true,1.3853,103.7444
-Yew Tee,NS5,NSL,false,1.3973,103.7474
-Kranji,NS7,NSL,false,1.4251,103.7620
-Marsiling,NS8,NSL,false,1.4326,103.7741
-Woodlands,NS9|TE2,NSL|TEL,true,1.4370,103.7864
-Admiralty,NS10,NSL,false,1.4407,103.8009
-Sembawang,NS11,NSL,false,1.4491,103.8201
-Canberra,NS12,NSL,false,1.4430,103.8297
-Yishun,NS13,NSL,false,1.4295,103.8353
-Khatib,NS14,NSL,false,1.4173,103.8329
-Yio Chu Kang,NS15,NSL,false,1.3817,103.8449
-Ang Mo Kio,NS16,NSL,false,1.3699,103.8496
-Bishan,NS17|CC15,NSL|CCL,true,1.3512,103.8493
-Braddell,NS18,NSL,false,1.3404,103.8467
-Toa Payoh,NS19,NSL,false,1.3327,103.8474
-Novena,NS20,NSL,false,1.3204,103.8437
-Newton,NS21|DT11,NSL|DTL,true,1.3123,103.8384
-Orchard,NS22|TE14,NSL|TEL,true,1.3044,103.8318
-Somerset,NS23,NSL,false,1.3006,103.8389
-Dhoby Ghaut,NS24|NE6|CC1,NSL|NEL|CCL,true,1.2994,103.8455
-City Hall,NS25|EW13,NSL|EWL,true,1.2930,103.8519
-Raffles Place,NS26|EW14,NSL|EWL,true,1.2838,103.8515
-Marina Bay,NS27|CE2|TE20,NSL|CCL|TEL,true,1.2766,103.8546
-Marina South Pier,NS28,NSL,false,1.2715,103.8632
-Pasir Ris,EW1,EWL,false,1.3731,103.9493
-Tampines,EW2|DT32,EWL|DTL,true,1.3546,103.9454
-Simei,EW3,EWL,false,1.3432,103.9532
-Tanah Merah,EW4,EWL,false,1.3272,103.9465
-Bedok,EW5,EWL,false,1.3241,103.9301
-Kembangan,EW6,EWL,false,1.3209,103.9128
-Eunos,EW7,EWL,false,1.3198,103.9030
-Paya Lebar,EW8|CC9,EWL|CCL,true,1.3176,103.8932
-Aljunied,EW9,EWL,false,1.3165,103.8829
-Kallang,EW10,EWL,false,1.3114,103.8714
-Lavender,EW11,EWL,false,1.3073,103.8632
-Bugis,EW12|DT14,EWL|DTL,true,1.3008,103.8560
-Tanjong Pagar,EW15,EWL,false,1.2765,103.8456
-Outram Park,EW16|NE3|TE17,EWL|NEL|TEL,true,1.2803,103.8395
-Tiong Bahru,EW17,EWL,false,1.2863,103.8271
-Redhill,EW18,EWL,false,1.2893,103.8168
-Queenstown,EW19,EWL,false,1.2945,103.8062
-Commonwealth,EW20,EWL,false,1.3023,103.7983
-Buona Vista,EW21|CC22,EWL|CCL,true,1.3068,103.7899
-Dover,EW22,EWL,false,1.3114,103.7787
-Clementi,EW23,EWL,false,1.3151,103.7654
-Chinese Garden,EW25,EWL,false,1.3424,103.7323
-Lakeside,EW26,EWL,false,1.3444,103.7213
-Boon Lay,EW27,EWL,false,1.3385,103.7063
-Pioneer,EW28,EWL,false,1.3376,103.6972
-Joo Koon,EW29,EWL,false,1.3279,103.6789
-Gul Circle,EW30,EWL,false,1.3195,103.6606
-Tuas Crescent,EW31,EWL,false,1.3211,103.6494
-Tuas West Road,EW32,EWL,false,1.3300,103.6397
-Tuas Link,EW33,EWL,false,1.3405,103.6371
-HarbourFront,NE1|CC29,NEL|CCL,true,1.2653,103.8215
-Chinatown,NE4|DT19,NEL|DTL,true,1.2844,103.8448
-Clarke Quay,NE5,NEL,false,1.2884,103.8466
-Little India,NE7|DT12,NEL|DTL,true,1.3065,103.8492
-Farrer Park,NE8,NEL,false,1.3124,103.8549
-Boon Keng,NE9,NEL,false,1.3194,103.8617
-Potong Pasir,NE10,NEL,false,1.3314,103.8688
-Woodleigh,NE11,NEL,false,1.3390,103.8706
-Serangoon,NE12|CC13,NEL|CCL,true,1.3499,103.8736
-Kovan,NE13,NEL,false,1.3601,103.8850
-Hougang,NE14,NEL,false,1.3713,103.8926
-Buangkok,NE15,NEL,false,1.3831,103.8929
-Sengkang,NE16|STC,NEL|STCL,true,1.3916,103.8953
-Punggol,NE17|PTC,NEL|PTCL,true,1.4052,103.9024
-Bras Basah,CC2,CCL,false,1.2968,103.8505
-Esplanade,CC3,CCL,false,1.2936,103.8554
-Promenade,CC4|DT15,CCL|DTL,true,1.2931,103.8612
-Nicoll Highway,CC5,CCL,false,1.2996,103.8636
-Stadium,CC6,CCL,false,1.3027,103.8751
-Mountbatten,CC7,CCL,false,1.3061,103.8826
-Dakota,CC8,CCL,false,1.3085,103.8887
-MacPherson,CC10|DT26,CCL|DTL,true,1.3266,103.8900
-Tai Seng,CC11,CCL,false,1.3359,103.8880
-Bartley,CC12,CCL,false,1.3421,103.8800
-Lorong Chuan,CC14,CCL,false,1.3517,103.8644
-Marymount,CC16,CCL,false,1.3491,103.8395
-Caldecott,CC17|TE9,CCL|TEL,true,1.3374,103.8395
-Botanic Gardens,CC19|DT9,CCL|DTL,true,1.3224,103.8157
-Farrer Road,CC20,CCL,false,1.3178,103.8073
-Holland Village,CC21,CCL,false,1.3121,103.7959
-one-north,CC23,CCL,false,1.2996,103.7873
-Kent Ridge,CC24,CCL,false,1.2937,103.7846
-Haw Par Villa,CC25,CCL,false,1.2825,103.7820
-Pasir Panjang,CC26,CCL,false,1.2761,103.7917
-Labrador Park,CC27,CCL,false,1.2720,103.8025
-Telok Blangah,CC28,CCL,false,1.2706,103.8098
-Bukit Panjang,DT1|BP6,DTL|BPL,true,1.3786,103.7618
-Cashew,DT2,DTL,false,1.3696,103.7644
-Hillview,DT3,DTL,false,1.3626,103.7676
-Beauty World,DT5,DTL,false,1.3413,103.7760
-King Albert Park,DT6,DTL,false,1.3354,103.7833
-Sixth Avenue,DT7,DTL,false,1.3307,103.7972
-Tan Kah Kee,DT8,DTL,false,1.3257,103.8073
-Stevens,DT10|TE11,DTL|TEL,true,1.3198,103.8261
-Rochor,DT13,DTL,false,1.3037,103.8525
-Downtown,DT17,DTL,false,1.2793,103.8527
-Telok Ayer,DT18,DTL,false,1.2820,103.8485
-Fort Canning,DT20,DTL,false,1.2924,103.8444
-Bencoolen,DT21,DTL,false,1.2988,103.8498
-Jalan Besar,DT22,DTL,false,1.3055,103.8553
-Bendemeer,DT23,DTL,false,1.3135,103.8631
-Geylang Bahru,DT24,DTL,false,1.3214,103.8717
-Mattar,DT25,DTL,false,1.3268,103.8831
-Ubi,DT27,DTL,false,1.3299,103.8994
-Kaki Bukit,DT28,DTL,false,1.3349,103.9082
-Bedok North,DT29,DTL,false,1.3345,103.9181
-Bedok Reservoir,DT30,DTL,false,1.3368,103.9322
-Tampines West,DT31,DTL,false,1.3462,103.9381
-Tampines East,DT33,DTL,false,1.3561,103.9545
-Upper Changi,DT34,DTL,false,1.3417,103.9614
-Expo,DT35|CG1,DTL|CGL,true,1.3352,103.9614
-Woodlands North,TE1,TEL,false,1.4483,103.7854
-Woodlands South,TE3,TEL,false,1.4269,103.7934
-Springleaf,TE4,TEL,false,1.3975,103.8183
-Lentor,TE5,TEL,false,1.3847,103.8363
-Mayflower,TE6,TEL,false,1.3714,103.8381
-Bright Hill,TE7,TEL,false,1.3635,103.8335
-Upper Thomson,TE8,TEL,false,1.3541,103.8363
-Mount Pleasant,TE10,TEL,false,1.3273,103.8347
-Napier,TE12,TEL,false,1.3066,103.8239
-Great World,TE15,TEL,false,1.2898,103.8351
-Havelock,TE16,TEL,false,1.2847,103.8367
-Maxwell,TE18,TEL,false,1.2797,103.8447
-Shenton Way,TE19,TEL,false,1.2765,103.8503
-Gardens by the Bay,TE22,TEL,false,1.2795,103.8664
-Tanjong Rhu,TE23,TEL,false,1.2964,103.8728
-Katong Park,TE24,TEL,false,1.2973,103.8843
-Tanjong Katong,TE25,TEL,false,1.3010,103.8938
-Marine Parade,TE26,TEL,false,1.3024,103.9045
-Marine Terrace,TE27,TEL,false,1.3063,103.9137
-Siglap,TE28,TEL,false,1.3114,103.9254
-Bayshore,TE29,TEL,false,1.3152,103.9397
-Punggol Coast,NE18,NEL,false,1.4149,103.9102
-Hume,DT4,DTL,false,1.3546,103.7692
+name,code,lines,is_interchange,latitude,longitude,opened
+Jurong East,EW24|NS1,EWL|NSL,true,1.3329,103.7422,
+Bukit Batok,NS2,NSL,false,1.3490,103.7495,
+Bukit Gombak,NS3,NSL,false,1.3587,103.7519,
+Choa Chu Kang,NS4|BP1,NSL|BPL,true,1.3853,103.7444,
+Yew Tee,NS5,NSL,false,1.3973,103.7474,
+Kranji,NS7,NSL,false,1.4251,103.7620,
+Marsiling,NS8,NSL,false,1.4326,103.7741,
+Woodlands,NS9|TE2,NSL|TEL,true,1.4370,103.7864,
+Admiralty,NS10,NSL,false,1.4407,103.8009,
+Sembawang,NS11,NSL,false,1.4491,103.8201,
+Canberra,NS12,NSL,false,1.4430,103.8297,
+Yishun,NS13,NSL,false,1.4295,103.8353,
+Khatib,NS14,NSL,false,1.4173,103.8329,
+Yio Chu Kang,NS15,NSL,false,1.3817,103.8449,
+Ang Mo Kio,NS16,NSL,false,1.3699,103.8496,
+Bishan,NS17|CC15,NSL|CCL,true,1.3512,103.8493,
+Braddell,NS18,NSL,false,1.3404,103.8467,
+Toa Payoh,NS19,NSL,false,1.3327,103.8474,
+Novena,NS20,NSL,false,1.3204,103.8437,
+Newton,NS21|DT11,NSL|DTL,true,1.3123,103.8384,
+Orchard,NS22|TE14,NSL|TEL,true,1.3044,103.8318,
+Somerset,NS23,NSL,false,1.3006,103.8389,
+Dhoby Ghaut,NS24|NE6|CC1,NSL|NEL|CCL,true,1.2994,103.8455,
+City Hall,NS25|EW13,NSL|EWL,true,1.2930,103.8519,
+Raffles Place,NS26|EW14,NSL|EWL,true,1.2838,103.8515,
+Marina Bay,NS27|CE2|TE20,NSL|CCL|TEL,true,1.2766,103.8546,
+Marina South Pier,NS28,NSL,false,1.2715,103.8632,
+Pasir Ris,EW1,EWL,false,1.3731,103.9493,
+Tampines,EW2|DT32,EWL|DTL,true,1.3546,103.9454,
+Simei,EW3,EWL,false,1.3432,103.9532,
+Tanah Merah,EW4,EWL,false,1.3272,103.9465,
+Bedok,EW5,EWL,false,1.3241,103.9301,
+Kembangan,EW6,EWL,false,1.3209,103.9128,
+Eunos,EW7,EWL,false,1.3198,103.9030,
+Paya Lebar,EW8|CC9,EWL|CCL,true,1.3176,103.8932,
+Aljunied,EW9,EWL,false,1.3165,103.8829,
+Kallang,EW10,EWL,false,1.3114,103.8714,
+Lavender,EW11,EWL,false,1.3073,103.8632,
+Bugis,EW12|DT14,EWL|DTL,true,1.3008,103.8560,
+Tanjong Pagar,EW15,EWL,false,1.2765,103.8456,
+Outram Park,EW16|NE3|TE17,EWL|NEL|TEL,true,1.2803,103.8395,
+Tiong Bahru,EW17,EWL,false,1.2863,103.8271,
+Redhill,EW18,EWL,false,1.2893,103.8168,
+Queenstown,EW19,EWL,false,1.2945,103.8062,
+Commonwealth,EW20,EWL,false,1.3023,103.7983,
+Buona Vista,EW21|CC22,EWL|CCL,true,1.3068,103.7899,
+Dover,EW22,EWL,false,1.3114,103.7787,
+Clementi,EW23,EWL,false,1.3151,103.7654,
+Chinese Garden,EW25,EWL,false,1.3424,103.7323,
+Lakeside,EW26,EWL,false,1.3444,103.7213,
+Boon Lay,EW27,EWL,false,1.3385,103.7063,
+Pioneer,EW28,EWL,false,1.3376,103.6972,
+Joo Koon,EW29,EWL,false,1.3279,103.6789,
+Gul Circle,EW30,EWL,false,1.3195,103.6606,
+Tuas Crescent,EW31,EWL,false,1.3211,103.6494,
+Tuas West Road,EW32,EWL,false,1.3300,103.6397,
+Tuas Link,EW33,EWL,false,1.3405,103.6371,
+HarbourFront,NE1|CC29,NEL|CCL,true,1.2653,103.8215,
+Chinatown,NE4|DT19,NEL|DTL,true,1.2844,103.8448,
+Clarke Quay,NE5,NEL,false,1.2884,103.8466,
+Little India,NE7|DT12,NEL|DTL,true,1.3065,103.8492,
+Farrer Park,NE8,NEL,false,1.3124,103.8549,
+Boon Keng,NE9,NEL,false,1.3194,103.8617,
+Potong Pasir,NE10,NEL,false,1.3314,103.8688,
+Woodleigh,NE11,NEL,false,1.3390,103.8706,
+Serangoon,NE12|CC13,NEL|CCL,true,1.3499,103.8736,
+Kovan,NE13,NEL,false,1.3601,103.8850,
+Hougang,NE14,NEL,false,1.3713,103.8926,
+Buangkok,NE15,NEL,false,1.3831,103.8929,
+Sengkang,NE16|STC,NEL|STCL,true,1.3916,103.8953,
+Punggol,NE17|PTC,NEL|PTCL,true,1.4052,103.9024,
+Bras Basah,CC2,CCL,false,1.2968,103.8505,
+Esplanade,CC3,CCL,false,1.2936,103.8554,
+Promenade,CC4|DT15,CCL|DTL,true,1.2931,103.8612,
+Nicoll Highway,CC5,CCL,false,1.2996,103.8636,
+Stadium,CC6,CCL,false,1.3027,103.8751,
+Mountbatten,CC7,CCL,false,1.3061,103.8826,
+Dakota,CC8,CCL,false,1.3085,103.8887,
+MacPherson,CC10|DT26,CCL|DTL,true,1.3266,103.8900,
+Tai Seng,CC11,CCL,false,1.3359,103.8880,
+Bartley,CC12,CCL,false,1.3421,103.8800,
+Lorong Chuan,CC14,CCL,false,1.3517,103.8644,
+Marymount,CC16,CCL,false,1.3491,103.8395,
+Caldecott,CC17|TE9,CCL|TEL,true,1.3374,103.8395,
+Botanic Gardens,CC19|DT9,CCL|DTL,true,1.3224,103.8157,
+Farrer Road,CC20,CCL,false,1.3178,103.8073,
+Holland Village,CC21,CCL,false,1.3121,103.7959,
+one-north,CC23,CCL,false,1.2996,103.7873,
+Kent Ridge,CC24,CCL,false,1.2937,103.7846,
+Haw Par Villa,CC25,CCL,false,1.2825,103.7820,
+Pasir Panjang,CC26,CCL,false,1.2761,103.7917,
+Labrador Park,CC27,CCL,false,1.2720,103.8025,
+Telok Blangah,CC28,CCL,false,1.2706,103.8098,
+Bukit Panjang,DT1|BP6,DTL|BPL,true,1.3786,103.7618,
+Cashew,DT2,DTL,false,1.3696,103.7644,
+Hillview,DT3,DTL,false,1.3626,103.7676,
+Beauty World,DT5,DTL,false,1.3413,103.7760,
+King Albert Park,DT6,DTL,false,1.3354,103.7833,
+Sixth Avenue,DT7,DTL,false,1.3307,103.7972,
+Tan Kah Kee,DT8,DTL,false,1.3257,103.8073,
+Stevens,DT10|TE11,DTL|TEL,true,1.3198,103.8261,
+Rochor,DT13,DTL,false,1.3037,103.8525,
+Downtown,DT17,DTL,false,1.2793,103.8527,
+Telok Ayer,DT18,DTL,false,1.2820,103.8485,
+Fort Canning,DT20,DTL,false,1.2924,103.8444,
+Bencoolen,DT21,DTL,false,1.2988,103.8498,
+Jalan Besar,DT22,DTL,false,1.3055,103.8553,
+Bendemeer,DT23,DTL,false,1.3135,103.8631,
+Geylang Bahru,DT24,DTL,false,1.3214,103.8717,
+Mattar,DT25,DTL,false,1.3268,103.8831,
+Ubi,DT27,DTL,false,1.3299,103.8994,
+Kaki Bukit,DT28,DTL,false,1.3349,103.9082,
+Bedok North,DT29,DTL,false,1.3345,103.9181,
+Bedok Reservoir,DT30,DTL,false,1.3368,103.9322,
+Tampines West,DT31,DTL,false,1.3462,103.9381,
+Tampines East,DT33,DTL,false,1.3561,103.9545,
+Upper Changi,DT34,DTL,false,1.3417,103.9614,
+Expo,DT35|CG1,DTL|CGL,true,1.3352,103.9614,
+Woodlands North,TE1,TEL,false,1.4483,103.7854,
+Woodlands South,TE3,TEL,false,1.4269,103.7934,
+Springleaf,TE4,TEL,false,1.3975,103.8183,2021-08
+Lentor,TE5,TEL,false,1.3847,103.8363,2021-08
+Mayflower,TE6,TEL,false,1.3714,103.8381,2021-08
+Bright Hill,TE7,TEL,false,1.3635,103.8335,2021-08
+Upper Thomson,TE8,TEL,false,1.3541,103.8363,2021-08
+Mount Pleasant,TE10,TEL,false,1.3273,103.8347,2026-12
+Napier,TE12,TEL,false,1.3066,103.8239,2022-11
+Great World,TE15,TEL,false,1.2898,103.8351,2022-11
+Havelock,TE16,TEL,false,1.2847,103.8367,2022-11
+Maxwell,TE18,TEL,false,1.2797,103.8447,2022-11
+Shenton Way,TE19,TEL,false,1.2765,103.8503,2022-11
+Gardens by the Bay,TE22,TEL,false,1.2795,103.8664,2022-11
+Tanjong Rhu,TE23,TEL,false,1.2964,103.8728,2024-06
+Katong Park,TE24,TEL,false,1.2973,103.8843,2024-06
+Tanjong Katong,TE25,TEL,false,1.3010,103.8938,2024-06
+Marine Parade,TE26,TEL,false,1.3024,103.9045,2024-06
+Marine Terrace,TE27,TEL,false,1.3063,103.9137,2024-06
+Siglap,TE28,TEL,false,1.3114,103.9254,2024-06
+Bayshore,TE29,TEL,false,1.3152,103.9397,2024-06
+Punggol Coast,NE18,NEL,false,1.4149,103.9102,2024-12
+Hume,DT4,DTL,false,1.3546,103.7692,2025-02
