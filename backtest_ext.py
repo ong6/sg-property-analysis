@@ -1263,11 +1263,646 @@ def part5_joint_refit(txns, window, min_txn, split_sample, asof):
           f"{bt._fmt_ci(lo_c, hi_c)} (n={n_cur})\n")
 
 
+# ============================================================================
+# PART 6 — NON-VALUE COMPONENTS, PRECISELY (future / cost / dev_size)
+#          + STRUCTURAL-FLOOR QUANTIFICATION
+# Owns the weight-change wave's critical numbers: each non-value MMR component
+# as an as-of-T feature vs realized forward 2yr return, controlling for value
+# (psf_vs_dist) + region + liquidity (txn_vol). Reports univariate rho AND
+# multivariate std_beta with cluster-bootstrap CIs; tags UNDETERMINED when the
+# CI crosses 0. Then quantifies how much RAW-MMR floor each unvalidated
+# component contributes (the "non-value structural floor": a listing with all
+# value+yield credit zeroed still floors >650 because future+cost+dev_size+age
+# +appreciation pile up).
+# ============================================================================
+
+# config.SCORE_WEIGHT_COST_EFFICIENCY sub-score bands (read-only mirror of
+# full_scorer._score_cost_efficiency; see that function for the live source).
+_COST_MCST_RATE = 0.35  # data/cost_parameters.json mcst_rate_per_sqft
+
+
+def _cost_proxy(sqft, beds, monthly_rent=None):
+    """As-of-T `cost` MMR component = (cost_efficiency_score - 5.0), rebuilt
+    from the SAME inputs scoring/full_scorer._score_cost_efficiency keys on:
+    MCST (sqft*0.35 banded 0-4), property-tax band (annual value from rent,
+    0-3), efficiency ratio (sqft-per-bed banded 0-3). Pure function — neutral
+    midpoints for absent inputs, identical to the live scorer. Returns the
+    recentred MMR component in raw points (range ~-5..+5)."""
+    total = 0.0
+    # MCST (0-4; 2.0 neutral when sqft unknown)
+    mcst_monthly = sqft * _COST_MCST_RATE if sqft else 0
+    if mcst_monthly > 0:
+        if mcst_monthly < 350:
+            total += 4
+        elif mcst_monthly < 450:
+            total += 3
+        elif mcst_monthly < 550:
+            total += 2
+        elif mcst_monthly < 650:
+            total += 1
+        else:
+            total += 0
+    else:
+        total += 2.0
+    # Property-tax band (0-3; 1.5 neutral when rent unknown)
+    annual_value = monthly_rent * 12 if monthly_rent else 0
+    if annual_value > 0:
+        if annual_value < 50000:
+            total += 3
+        elif annual_value < 70000:
+            total += 2
+        else:
+            total += 1
+    else:
+        total += 1.5
+    # Efficiency ratio (0-3; 1.5 neutral when sqft/beds unknown)
+    if sqft and beds:
+        spb = sqft / beds
+        if beds == 1:
+            optimal = 500 <= sqft <= 650
+        elif beds == 2:
+            optimal = 400 <= spb <= 500
+        elif beds == 3:
+            optimal = 350 <= spb <= 420
+        else:
+            optimal = spb <= 400
+        if optimal:
+            total += 3
+        elif beds == 2 and 350 <= spb <= 550:
+            total += 2
+        elif beds == 3 and 300 <= spb <= 480:
+            total += 2
+        else:
+            total += 1
+    else:
+        total += 1.5
+    return total - 5.0  # mmr.py: comps["cost"] = cost_efficiency_score - 5.0
+
+
+def _beds_from_sqft(sqft):
+    """Crude beds inference from sqft, only for the cost proxy's efficiency
+    band. The URA panel has no bed field; production reads beds from the
+    listing. Bands chosen to match typical SG layouts (RENT_TYPICAL_SQFT_BY_BEDS
+    midpoints): <600->1, <900->2, <1300->3, <1750->4, else 5."""
+    if not sqft:
+        return None
+    if sqft < 600:
+        return 1
+    if sqft < 900:
+        return 2
+    if sqft < 1300:
+        return 3
+    if sqft < 1750:
+        return 4
+    return 5
+
+
+def _project_sqft(txns, asof, lookback=1.0):
+    """Median resale sqft per (project, district) in (asof-lookback, asof]."""
+    by = defaultdict(list)
+    for x in txns:
+        if asof - lookback < x["t"] <= asof and x["sale_type"] in ("Resale", "Sub Sale"):
+            if x.get("sqft") and x["sqft"] > 0:
+                by[(x["project"], x["district"])].append(x["sqft"])
+    return {k: float(np.median(v)) for k, v in by.items() if v}
+
+
+def part6_nonvalue(rows, txns, asof):
+    """future / cost / dev_size precisely, with CIs, controlling value+region+
+    liquidity; then the structural-floor accounting."""
+    print("=" * 78)
+    print("PART 6 — NON-VALUE COMPONENTS (future / cost / dev_size), CONTROLLED")
+    print("  each as-of-T MMR component vs forward 2yr return, univariate rho +")
+    print("  multivariate std_beta over value(psf_vs_dist)+region+liquidity(txn_vol).")
+    print("  95% CI = project-cluster bootstrap; UNDETERMINED = CI crosses 0.")
+    print("=" * 78)
+    fwd = [r["forward_cagr"] for r in rows]
+    cl = [(r["project"], r["district"]) for r in rows]
+
+    # --- join the three components as-of-T ----------------------------------
+    sig = _district_future_signals(asof)            # future (coord-less production score)
+    psqft = _project_sqft(txns, asof)               # per-project sqft for the cost proxy
+    try:
+        pu = _load_json("project_units.json")["projects"]
+    except FileNotFoundError:
+        pu = {}
+
+    fut_comp, cost_comp, dev_comp = [], [], []
+    for r in rows:
+        s = sig.get(_dnum(r["district"]))
+        fut_comp.append(s["future_mmr_comp"] if s else None)  # max(0, fp-4)*0.7 — the MMR component
+        sq = psqft.get((r["project"], r["district"]))
+        beds = _beds_from_sqft(sq)
+        cost_comp.append(_cost_proxy(sq, beds) if sq else None)
+        e = pu.get(r["project"].lower())
+        units = e["total_units"] if (e and not e.get("landed_only")) else None
+        dev_comp.append(round(6.0 * math.tanh((units - 150.0) / 300.0), 2) if units else None)
+
+    print("\n  univariate Spearman vs forward 2yr return (the MMR component values):")
+    for nm, x in (("future (mmr comp)", fut_comp), ("cost (mmr comp)", cost_comp),
+                  ("dev_size (mmr comp)", dev_comp)):
+        rho, n = bt._spearman(x, fwd)
+        lo, hi, _ = bt._cluster_boot_rho(x, fwd, cl)
+        und = "  UNDETERMINED" if (lo is None or lo <= 0 <= hi) else ""
+        print(f"    {nm:<22}rho {f'{rho:+.3f}' if rho is not None else '  n/a'}  "
+              f"{bt._fmt_ci(lo, hi)}  n={n}{und}")
+
+    # --- multivariate: each non-value comp + value + region + liquidity ------
+    def _mv(comp_name, comp_vals):
+        feats_rows, y, cls, names = [], [], [], None
+        for i, r in enumerate(rows):
+            if comp_vals[i] is None or r.get("psf_vs_dist") is None:
+                continue
+            feats_rows.append([
+                comp_vals[i],
+                r["psf_vs_dist"],
+                math.tanh((r.get("txn_vol") or 0) / 40.0),
+                1.0 if r["region"] == "RCR" else 0.0,
+                1.0 if r["region"] == "CCR" else 0.0,
+            ])
+            y.append(r["forward_cagr"])
+            cls.append((r["project"], r["district"]))
+        names = [comp_name, "psf_vs_dist", "txn_vol", "region_RCR", "region_CCR"]
+        if len(feats_rows) < 80:
+            print(f"\n  {comp_name}: too few complete rows ({len(feats_rows)})")
+            return None
+        coef, r2, n = _ols_ci(feats_rows, y, names, cls)
+        print(f"\n  multivariate w/ {comp_name} (n={n}, R2={r2:.3f}):")
+        _print_ols_ci(coef, name_w=16)
+        return next(o for o in coef if o["name"] == comp_name)
+
+    o_fut = _mv("future", fut_comp)
+    o_cost = _mv("cost", cost_comp)
+    o_dev = _mv("dev_size", dev_comp)
+
+    # --- ALL THREE jointly, with controls (collinearity among themselves) ----
+    feats_rows, y, cls = [], [], []
+    for i, r in enumerate(rows):
+        if (fut_comp[i] is None or cost_comp[i] is None or dev_comp[i] is None
+                or r.get("psf_vs_dist") is None):
+            continue
+        feats_rows.append([
+            fut_comp[i], cost_comp[i], dev_comp[i],
+            r["psf_vs_dist"], math.tanh((r.get("txn_vol") or 0) / 40.0),
+            1.0 if r["region"] == "RCR" else 0.0,
+            1.0 if r["region"] == "CCR" else 0.0,
+        ])
+        y.append(r["forward_cagr"])
+        cls.append((r["project"], r["district"]))
+    names = ["future", "cost", "dev_size", "psf_vs_dist", "txn_vol",
+             "region_RCR", "region_CCR"]
+    joint = {}
+    if len(feats_rows) >= 80:
+        coef, r2, n = _ols_ci(feats_rows, y, names, cls)
+        print(f"\n  ALL THREE jointly + controls (n={n}, R2={r2:.3f}):")
+        _print_ols_ci(coef, name_w=16)
+        joint = {o["name"]: o for o in coef}
+
+    _structural_floor(o_fut, o_cost, o_dev, joint)
+    return {"future": o_fut, "cost": o_cost, "dev_size": o_dev, "joint": joint}
+
+
+def _structural_floor(o_fut, o_cost, o_dev, joint):
+    """Quantify the non-value RAW-MMR floor: a listing with all value+yield
+    credit zeroed still floors >650 because the structural components pile up.
+    Mirrors the live config magnitudes (mmr.py + config.py) — read-only."""
+    from config import MMR_NORM_CENTER, MMR_NORM_SCALE, SCORE1000_TIER1_MIN
+
+    print("\n" + "-" * 78)
+    print("  STRUCTURAL-FLOOR ACCOUNTING — raw-MMR contributed by the non-value pile")
+    print("  (the downstream concern: value+yield zeroed, a known artifact still")
+    print(f"   floors >{SCORE1000_TIER1_MIN} Buy because these stack additively)")
+    print("-" * 78)
+    # The plausible "best case" raw points each structural component can add,
+    # for a typical mid-market OCR listing (the artifact class that ranks):
+    #   future  : production caps ~ max(0,fp-4)*0.7, fp up to ~14 -> ~+7 (OCR fp~10)
+    #   cost    : best 0-10 cost score -> +5 raw (small efficient unit)
+    #   dev_size: 6*tanh((units-150)/300), large dev -> ~+5.4 at 600 units
+    #   age     : plateau +5 raw (7-30yr)
+    #   apprec  : OCR baseline ~4.2%/yr -> slope*(4.2-4.0)=~+0.6; new-launch floor
+    #             keeps a healthy resale near baseline; cap the typical at +4
+    #   buyer_pool: deep OCR pool +4.5 (kept — it IS validated, std_beta +0.15)
+    floor_parts = [
+        ("future (max(0,fp-4)*0.7, OCR fp~10)", 4.2),
+        ("cost (small efficient unit, +5 max)", 5.0),
+        ("dev_size (large dev ~600u)", round(6.0 * math.tanh((600 - 150) / 300.0), 1)),
+        ("age (7-30yr plateau)", 5.0),
+        ("appreciation (OCR baseline ~+4%)", 4.0),
+    ]
+    from config import MMR_BASE
+    pile = sum(p for _, p in floor_parts)
+    raw = MMR_BASE + pile
+    s1000 = int(round(1000.0 / (1.0 + math.exp(-(raw - MMR_NORM_CENTER) / MMR_NORM_SCALE))))
+    print(f"  base MMR {MMR_BASE}")
+    for nm, p in floor_parts:
+        print(f"    + {nm:<40}{p:>+6.1f}")
+    print(f"  = raw {raw:.1f}  ->  score_1000 = {s1000}  "
+          f"({'>=' if s1000 >= SCORE1000_TIER1_MIN else '<'} {SCORE1000_TIER1_MIN} Buy tier)")
+    # which of these are UNVALIDATED (the gating targets)?
+    print(f"\n  of the +{pile:.1f} structural pile, the UNVALIDATED components"
+          f" (future+cost+dev_size) contribute "
+          f"+{floor_parts[0][1]+floor_parts[1][1]+floor_parts[2][1]:.1f} raw")
+    # recompute score with the three unvalidated comps zeroed (the gating effect)
+    gated = MMR_BASE + (floor_parts[3][1] + floor_parts[4][1])  # keep only age+apprec
+    s1000_g = int(round(1000.0 / (1.0 + math.exp(-(gated - MMR_NORM_CENTER) / MMR_NORM_SCALE))))
+    print(f"  zero future+cost+dev_size (keep age+apprec): raw {gated:.1f} -> "
+          f"score_1000 {s1000_g}  ({'still >=' if s1000_g >= SCORE1000_TIER1_MIN else 'now <'} "
+          f"{SCORE1000_TIER1_MIN})")
+    # per-component score_1000 deltas at the floor (marginal display impact)
+    print("\n  marginal score_1000 cost of REMOVING each unvalidated component"
+          " from the floor:")
+    for idx, (nm, p) in enumerate(floor_parts[:3]):
+        raw_wo = raw - p
+        s_wo = int(round(1000.0 / (1.0 + math.exp(-(raw_wo - MMR_NORM_CENTER) / MMR_NORM_SCALE))))
+        print(f"    -{nm:<40} score_1000 {s1000} -> {s_wo}  ({s_wo - s1000:+d})")
+    # WORST-CASE ceiling — every realistically-stackable NON-value positive
+    # channel maxed (the artifact the brief flags: value+yield zeroed, still
+    # floors well into Buy). Adds the validated-but-non-value pile too
+    # (buyer_pool deep, mrt near, future/cost/dev maxed) to show the true
+    # ceiling a known artifact can reach on structure alone.
+    ceiling_parts = [
+        ("future (fp~14 max)", round(max(0.0, 14 - 4.0) * 0.7, 1)),  # +7.0
+        ("cost (max +5)", 5.0),
+        ("dev_size (cap ~+6)", round(6.0 * math.tanh((900 - 150) / 300.0), 1)),
+        ("age (plateau +5)", 5.0),
+        ("appreciation (OCR +~4%)", 4.0),
+        ("buyer_pool (very_deep +7)", 7.0),
+        ("mrt (near, ~+8)", round(9.0 * math.tanh((700 - 100) / 600.0), 1)),
+    ]
+    ceil_raw = MMR_BASE + sum(p for _, p in ceiling_parts)
+    ceil_s = int(round(1000.0 / (1.0 + math.exp(-(ceil_raw - MMR_NORM_CENTER) / MMR_NORM_SCALE))))
+    print(f"\n  WORST-CASE ceiling (value+yield zeroed, every non-value channel maxed):")
+    for nm, p in ceiling_parts:
+        print(f"    + {nm:<40}{p:>+6.1f}")
+    print(f"  = raw {ceil_raw:.1f}  ->  score_1000 = {ceil_s}  "
+          f"({'>=' if ceil_s >= SCORE1000_TIER1_MIN else '<'} {SCORE1000_TIER1_MIN} Buy tier)"
+          f"  <- the structural-floor artifact")
+    # concrete gating cap: cap the SUM of the unvalidated non-value positives
+    # (future+cost+dev_size) so the worst case lands below the Buy threshold
+    # even with the validated pile maxed. Solve for the cap.
+    validated_pile = ceiling_parts[3][1] + ceiling_parts[4][1] + ceiling_parts[5][1] + ceiling_parts[6][1]
+    unval_max = ceiling_parts[0][1] + ceiling_parts[1][1] + ceiling_parts[2][1]
+    # raw at Buy threshold:
+    raw_buy = MMR_NORM_CENTER - MMR_NORM_SCALE * math.log(1000.0 / SCORE1000_TIER1_MIN - 1.0)
+    cap_needed = raw_buy - MMR_BASE - validated_pile
+    print(f"\n  GATING RECOMMENDATION (does NOT distort genuine listings):")
+    print(f"    raw at Buy threshold ({SCORE1000_TIER1_MIN}) = {raw_buy:.1f}; "
+          f"validated non-value pile (age+apprec+buyer_pool+mrt) = +{validated_pile:.1f}.")
+    print(f"    To keep a value-less/suspect listing < Buy on structure alone, cap")
+    print(f"    the UNVALIDATED non-value positive sum (future+cost+dev_size, "
+          f"currently up to +{unval_max:.1f}) at ~+{max(0.0, cap_needed):.1f} raw")
+    print(f"    WHEN psf_value+age_value+yield are all <= 0 or suspect.")
+    print(f"    The fix is NOT a global weight cut (a genuine large/new OCR dev")
+    print(f"    legitimately earns these); it is a CONDITIONAL cap that engages")
+    print(f"    only when no trustworthy value/yield credit is present.\n")
+
+
+# ============================================================================
+# PART 7 — EXPLICIT REGION TERM FOR DATA-RICH LISTINGS (out-of-split test)
+# The audit's #1 improvement: region is the strongest signal (std_beta ~ -0.19)
+# but for a data-rich RESALE it only enters MMR via buyer_pool + incidentally
+# via price_band; the REGIONAL_APPRECIATION_BASELINES only touch no-history
+# fallbacks. Test: add an explicit region forward-baseline delta to the
+# composite for data-rich rows. Does out-of-split forward-rho improve on a
+# CLEAN (non-overlapping, >=2yr-spaced) split? Funded by tanh-capping price_band
+# so region isn't double-counted. If it does NOT improve, recommend against.
+# ============================================================================
+
+# Compressed config baselines (config.REGIONAL_APPRECIATION_BASELINES, %/yr).
+_REGION_BASELINE_PCT = {"CCR": 2.8, "RCR": 3.7, "OCR": 4.2}
+_REGION_BASELINE_MEAN = sum(_REGION_BASELINE_PCT.values()) / 3.0
+
+
+def _region_baseline_delta(region):
+    """Region forward-baseline delta in %/yr around the 3-region mean — the
+    candidate explicit region term. CCR ~ -0.77, RCR +0.13, OCR +0.63."""
+    return _REGION_BASELINE_PCT.get(region, _REGION_BASELINE_MEAN) - _REGION_BASELINE_MEAN
+
+
+def _clean_splits(txns, window, spacing=2.0):
+    """Non-overlapping splits (>= window apart) so the train/test forward
+    windows are disjoint — the honest out-of-split panel."""
+    return bt.derive_splits(txns, spacing, window)
+
+
+def part7_region_term(txns, window, min_txn, split_sample):
+    print("=" * 78)
+    print("PART 7 — EXPLICIT REGION TERM (data-rich listings, out-of-split)")
+    print("  Does adding a region forward-baseline delta to the data-rich composite")
+    print("  improve forward-rho on a CLEAN non-overlapping split? Funded by")
+    print("  tanh-capping price_band (region already lives in the appreciation tilt).")
+    print("=" * 78)
+    splits = _clean_splits(txns, window, spacing=window)  # >= window apart => disjoint
+    if len(splits) < 2:
+        print(f"  need >=2 non-overlapping splits, got {splits}\n")
+        return None
+    # train on all but the newest disjoint split, test on the newest
+    train_splits, test_split = splits[:-1], splits[-1]
+    print(f"  clean splits {splits} (spacing {window}yr == window => DISJOINT forward windows)")
+    print(f"  train {train_splits}  ->  test {test_split}")
+
+    def featurize(split):
+        out = []
+        for r in bt.build_panel(txns, split, window, min_txn, False, split_sample):
+            r = dict(r)
+            r["region"] = _region_of(r["district"])
+            r["region_delta"] = _region_baseline_delta(r["region"])
+            out.append(r)
+        return out
+
+    train = [r for s in train_splits for r in featurize(s)]
+    test = featurize(test_split)
+    # "data-rich" = has its OWN recent print history vs the district (the rows
+    # that do NOT fall back to the regional baseline in production). That gate
+    # is psf_vs_dist present (>=min_txn recent same-project prints). trailing_cagr
+    # needs 3yr of history which a 5yr panel can't supply at a clean >=2yr-spaced
+    # split, so it is OPTIONAL here — the composite simply omits the appreciation
+    # term when absent, exactly as production does (low-confidence fallback).
+    def rich(rows):
+        return [r for r in rows if r.get("psf_vs_dist") is not None
+                and r.get("forward_cagr") is not None]
+    tr, te = rich(train), rich(test)
+    print(f"  data-rich rows: train {len(tr)}, test {len(te)} "
+          f"({len(set((r['project'], r['district']) for r in te))} test projects)")
+    if len(tr) < 80 or len(te) < 40:
+        print(f"  too few rows for a clean read\n")
+        return None
+
+    from config import (MMR_APPRECIATION_SLOPE, MMR_MOMENTUM_WEIGHT,
+                        MMR_RELVALUE_SLOPE, MMR_TXN_VOLUME_WEIGHT,
+                        MMR_PRICE_BAND_CAP)
+
+    def base_composite(r):
+        """Current-config composite proxy (the data-rich path: value+apprec+
+        liquidity; region enters ONLY via buyer_pool, which is district-level
+        and not in this panel proxy — so today's data-rich composite has NO
+        explicit region term, which is exactly the gap under test)."""
+        s = 0.0
+        if r.get("trailing_cagr") is not None:
+            s += MMR_APPRECIATION_SLOPE * (r["trailing_cagr"] * 100 - 4.0)
+        if r.get("psf_vs_dist") is not None:
+            s += -MMR_RELVALUE_SLOPE * (r["psf_vs_dist"] * 100)
+        if r.get("txn_vol") is not None:
+            s += MMR_TXN_VOLUME_WEIGHT * math.tanh(r["txn_vol"] / 40.0)
+        return s
+
+    y_te = [r["forward_cagr"] for r in te]
+    cl_te = [(r["project"], r["district"]) for r in te]
+
+    # (a) baseline composite, no explicit region term
+    base_te = [base_composite(r) for r in te]
+    rho_a, _ = bt._spearman(base_te, y_te)
+    lo_a, hi_a, _ = bt._cluster_boot_rho(base_te, y_te, cl_te)
+
+    # (b) + explicit region term. Magnitude: fit the best region-slope on TRAIN
+    # (raw pts per %/yr region delta), then apply to TEST out-of-split. We search
+    # a small grid of region-slope (pts per 1%/yr of region delta) so the
+    # recommendation is a concrete config magnitude.
+    y_tr = [r["forward_cagr"] for r in tr]
+    base_tr = [base_composite(r) for r in tr]
+    rd_tr = [r["region_delta"] for r in tr]
+    rd_te = [r["region_delta"] for r in te]
+    # train-optimal slope: regress forward on (base, region_delta), read the
+    # ratio that best aligns the combined score — but since we only rank, sweep.
+    grid = (0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 8.0, 10.0, 14.0, 20.0, 30.0)
+    best = None
+    test_by_slope = {}
+    for slope in grid:
+        comb_tr = [b + slope * d for b, d in zip(base_tr, rd_tr)]
+        r_tr, _ = bt._spearman(comb_tr, y_tr)
+        comb_te_s = [b + slope * d for b, d in zip(base_te, rd_te)]
+        r_te, _ = bt._spearman(comb_te_s, y_te)
+        test_by_slope[slope] = r_te
+        if best is None or (r_tr is not None and r_tr > best[1]):
+            best = (slope, r_tr)
+    best_slope = best[0]
+    comb_te = [b + best_slope * d for b, d in zip(base_te, rd_te)]
+    rho_b, _ = bt._spearman(comb_te, y_te)
+    lo_b, hi_b, _ = bt._cluster_boot_rho(comb_te, y_te, cl_te)
+
+    print(f"\n  OUT-OF-SPLIT (test {test_split}, disjoint forward window):")
+    print(f"    (a) data-rich composite, NO region term   rho {rho_a:+.3f}  "
+          f"{bt._fmt_ci(lo_a, hi_a)}")
+    print(f"    (b) + explicit region term (slope={best_slope:g} pts per %/yr,"
+          f" train-tuned) rho {rho_b:+.3f}  {bt._fmt_ci(lo_b, hi_b)}")
+    print(f"    test-rho sensitivity to slope (pts per %/yr region delta):")
+    print("      " + "  ".join(f"{s:g}:{test_by_slope[s]:+.3f}"
+          for s in grid if test_by_slope[s] is not None))
+    # IMPORTANT: on this single 2021-26 BULL test split, test-rho rises
+    # monotonically with slope because region_delta alone ranks +0.22 and just
+    # keeps dominating — the grid-edge "best" degenerates to region-only ranking.
+    # That is exactly the regime-bound overfit PART 5h warns against (CCR won
+    # 20/81 windows incl. the most recent independent one). The PRINCIPLED slope
+    # is the appreciation slope (MMR_APPRECIATION_SLOPE): region_delta IS a
+    # forward-appreciation baseline, so it should enter the score at the same
+    # pts-per-%/yr the realized appreciation channel does — not at whatever
+    # maximizes a one-regime backtest.
+    anchored = MMR_APPRECIATION_SLOPE  # principled, regime-robust slope
+    comb_anchor = [b + anchored * d for b, d in zip(base_te, rd_te)]
+    rho_anchor, _ = bt._spearman(comb_anchor, y_te)
+    print(f"    PRINCIPLED slope = MMR_APPRECIATION_SLOPE = {anchored:g} "
+          f"(region_delta is a fwd-appreciation baseline) -> test rho "
+          f"{rho_anchor:+.3f} (vs {rho_a:+.3f} without); grid-edge max is a "
+          f"bull-regime overfit (region-only), DO NOT ship it")
+    delta = rho_b - rho_a
+    print(f"    improvement: {delta:+.3f}  "
+          f"({'IMPROVES' if delta > 0.005 else 'no improvement' if abs(delta) <= 0.005 else 'WORSENS'} "
+          f"out-of-split)")
+    # also report: does the region delta alone rank forward on the test split?
+    rho_rd, _ = bt._spearman(rd_te, y_te)
+    lo_rd, hi_rd, _ = bt._cluster_boot_rho(rd_te, y_te, cl_te)
+    print(f"    region_delta ALONE on test: rho {rho_rd:+.3f}  "
+          f"{bt._fmt_ci(lo_rd, hi_rd)}")
+
+    # price_band double-count check, funded at the PRINCIPLED slope (not the
+    # bull-overfit grid edge): region delta spans -0.77..+0.63 %/yr; at the
+    # appreciation slope that is a modest +/-N raw swing concentrated in the
+    # OCR/CCR tails. price_band is where the region-in-disguise quantum effect
+    # currently leaks in (luxury skews CCR), so trim its cap to stay net-neutral.
+    region_swing = anchored * (max(_REGION_BASELINE_PCT.values())
+                               - min(_REGION_BASELINE_PCT.values()))
+    print(f"\n  funding (at the principled slope {anchored:g}): region term spans "
+          f"~{region_swing:.1f} raw pts (OCR-CCR). Current "
+          f"MMR_PRICE_BAND_CAP={MMR_PRICE_BAND_CAP}.")
+    print(f"  Recommend lowering MMR_PRICE_BAND_CAP {MMR_PRICE_BAND_CAP:g} -> "
+          f"~{max(8.0, MMR_PRICE_BAND_CAP - region_swing):.0f} so the explicit "
+          f"region tilt and the quantum-driven (region-correlated) price_band do"
+          f" not double-count.\n")
+    return {"rho_a": rho_a, "rho_b": rho_b, "best_slope": best_slope,
+            "anchored_slope": anchored, "rho_anchor": rho_anchor,
+            "delta": delta, "ci_b": (lo_b, hi_b), "region_swing": region_swing,
+            "n_test": len(te)}
+
+
+# ============================================================================
+# PART 8 — REPEAT-SALES OUTCOME (robustness cross-check, gated --repeat-sales)
+# The audit's P2 methodology fix: median-PSF deltas drift with unit-mix. Build
+# an alternative forward-return outcome from within-project ±5%-sqft buy/sell
+# pairs (a repeat-sales index), re-run the headline composite rho + the region
+# magnitude reads against BOTH outcomes, report whether the conclusions
+# (value+region lead; OCR>CCR; future/cost ~0) are construction-robust or flip.
+# ============================================================================
+
+def _repeat_sales_pairs(txns, t0_lo, t0_hi, t1_lo, t1_hi, sqft_tol=0.05):
+    """Within-(project,district), match a 'buy' leg dated in (t0_lo,t0_hi] to a
+    'sell' leg dated in (t1_lo,t1_hi] whose area is within +/-sqft_tol — a
+    repeat-sales pair. Returns per-(project,district) the median annualized
+    log-return across all such pairs, plus the pair count. Pure, deterministic.
+
+    A unit lacks a stable id in the URA export, so ±5% sqft within the same
+    project is the standard repeat-sales proxy (it tolerates minor area
+    re-measurement while excluding a different stack/layout). Greedy nearest-
+    sqft matching, each leg used once, to avoid double-counting a single unit.
+    """
+    by = defaultdict(lambda: {"buy": [], "sell": []})
+    for x in txns:
+        if x["sale_type"] not in ("Resale", "Sub Sale"):
+            continue
+        if not x.get("sqft") or x["sqft"] <= 0 or not x.get("psf"):
+            continue
+        k = (x["project"], x["district"])
+        if t0_lo < x["t"] <= t0_hi:
+            by[k]["buy"].append(x)
+        if t1_lo < x["t"] <= t1_hi:
+            by[k]["sell"].append(x)
+    out = {}
+    for k, legs in by.items():
+        buys = sorted(legs["buy"], key=lambda z: z["sqft"])
+        sells = sorted(legs["sell"], key=lambda z: z["sqft"])
+        used_sell = [False] * len(sells)
+        rets = []
+        for b in buys:
+            best_j, best_d = None, None
+            for j, s in enumerate(sells):
+                if used_sell[j]:
+                    continue
+                d = abs(s["sqft"] - b["sqft"]) / b["sqft"]
+                if d <= sqft_tol and (best_d is None or d < best_d):
+                    best_d, best_j = d, j
+            if best_j is not None:
+                used_sell[best_j] = True
+                s = sells[best_j]
+                dt = s["t"] - b["t"]
+                if dt > 0.25:  # need a real holding gap to annualize
+                    rets.append(math.log(s["psf"] / b["psf"]) / dt)
+        if rets:
+            out[k] = (float(np.median(rets)), len(rets))
+    return out
+
+
+def part8_repeat_sales(txns, asof):
+    """Repeat-sales forward outcome vs the median-PSF outcome — headline
+    composite rho + region reads against BOTH constructions."""
+    print("=" * 78)
+    print("PART 8 — REPEAT-SALES OUTCOME (robustness cross-check)")
+    print("  forward outcome from within-project +/-5% sqft buy/sell pairs (a")
+    print("  repeat-sales index, unit-mix-robust) vs the median-PSF delta. Are")
+    print("  the conclusions (value+region lead; OCR>CCR; future/cost ~0) robust?")
+    print("=" * 78)
+    # Use a single clean as-of split with a 2yr forward window so the buy leg
+    # (recent, T-1..T) and sell leg (forward, T+1..T+2) are disjoint.
+    split = round(asof - 2.0, 4)
+    window = 2.0
+    print(f"  split T={split:.2f}, forward {window:.0f}yr (buy leg (T-1,T], "
+          f"sell leg (T+1,T+2]); +/-5% sqft repeat-sales pairs")
+
+    # median-PSF outcome (the existing construction) for the same split
+    panel = bt.build_panel(txns, split, window, 5, False, False)
+    med_out = {(r["project"], r["district"]): r["forward_cagr"] for r in panel}
+
+    # repeat-sales outcome
+    rs = _repeat_sales_pairs(txns, split - 1, split, split + window - 1, split + window)
+    print(f"  median-PSF panel rows: {len(med_out)}  |  repeat-sales projects: "
+          f"{len(rs)} (>=1 matched pair)")
+    common = sorted(set(med_out) & set(rs))
+    print(f"  projects with BOTH outcomes: {len(common)}")
+    if len(common) < 40:
+        print("  too few overlapping projects for a robustness read\n")
+        return None
+    # how do the two outcomes agree per project?
+    mo = [med_out[k] for k in common]
+    ro = [rs[k][0] for k in common]
+    rho_oo, _ = bt._spearman(mo, ro)
+    print(f"  outcome-vs-outcome agreement (same projects): Spearman "
+          f"{rho_oo:+.3f}  (median fwd PSF {np.median(mo)*100:+.2f}%/yr vs "
+          f"repeat-sales {np.median(ro)*100:+.2f}%/yr)")
+
+    # build as-of-T features for these projects (reuse panel rows)
+    by_feat = {(r["project"], r["district"]): r for r in panel}
+    sig = _district_future_signals(split)
+    rows_med, rows_rs = [], []
+    for k in common:
+        fr = dict(by_feat[k])
+        fr["region"] = _region_of(fr["district"])
+        s = sig.get(_dnum(fr["district"]))
+        fr["future_comp"] = s["future_mmr_comp"] if s else None
+        m = dict(fr); m["outcome"] = med_out[k]; rows_med.append(m)
+        rr = dict(fr); rr["outcome"] = rs[k][0]; rows_rs.append(rr)
+
+    def composite_rho(rows):
+        from config import (MMR_APPRECIATION_SLOPE, MMR_RELVALUE_SLOPE,
+                            MMR_TXN_VOLUME_WEIGHT)
+        sc, y, cl = [], [], []
+        for r in rows:
+            if r.get("psf_vs_dist") is None:
+                continue
+            s = -MMR_RELVALUE_SLOPE * (r["psf_vs_dist"] * 100)
+            if r.get("trailing_cagr") is not None:
+                s += MMR_APPRECIATION_SLOPE * (r["trailing_cagr"] * 100 - 4.0)
+            if r.get("txn_vol") is not None:
+                s += MMR_TXN_VOLUME_WEIGHT * math.tanh(r["txn_vol"] / 40.0)
+            sc.append(s); y.append(r["outcome"]); cl.append((r["project"], r["district"]))
+        rho, n = bt._spearman(sc, y)
+        lo, hi, _ = bt._cluster_boot_rho(sc, y, cl)
+        return rho, n, lo, hi
+
+    def feat_rho(rows, feat):
+        x = [r.get(feat) for r in rows]
+        y = [r["outcome"] for r in rows]
+        cl = [(r["project"], r["district"]) for r in rows]
+        rho, n = bt._spearman(x, y)
+        lo, hi, _ = bt._cluster_boot_rho(x, y, cl)
+        return rho, n, lo, hi
+
+    print(f"\n  {'read':<26}{'median-PSF outcome':<28}{'repeat-sales outcome':<28}")
+    # composite
+    cm = composite_rho(rows_med); cr = composite_rho(rows_rs)
+    print(f"  {'composite forward-rho':<26}"
+          f"{f'{cm[0]:+.3f} {bt._fmt_ci(cm[2],cm[3])}':<28}"
+          f"{f'{cr[0]:+.3f} {bt._fmt_ci(cr[2],cr[3])}':<28}")
+    for feat, label in (("psf_vs_dist", "value (psf_vs_dist)"),
+                        ("future_comp", "future (mmr comp)"),
+                        ("region_delta", "region_delta")):
+        if feat == "region_delta":
+            for r in rows_med: r["region_delta"] = _region_baseline_delta(r["region"])
+            for r in rows_rs: r["region_delta"] = _region_baseline_delta(r["region"])
+        fm = feat_rho(rows_med, feat); fr = feat_rho(rows_rs, feat)
+        print(f"  {label:<26}"
+              f"{f'{fm[0]:+.3f} {bt._fmt_ci(fm[2],fm[3])}':<28}"
+              f"{f'{fr[0]:+.3f} {bt._fmt_ci(fr[2],fr[3])}':<28}")
+    # region means under both outcomes
+    print("\n  forward by region (OCR>CCR check):")
+    for label, rows in (("median-PSF", rows_med), ("repeat-sales", rows_rs)):
+        by = defaultdict(list)
+        for r in rows:
+            by[r["region"]].append(r["outcome"])
+        parts = "  ".join(f"{g} {np.mean(by[g])*100:+.2f}%" for g in ("CCR", "RCR", "OCR") if by.get(g))
+        print(f"    {label:<14}{parts}")
+    print("\n  VERDICT: conclusions are construction-robust if the signs + ranking")
+    print("  of value/region/future hold across both columns; a flip in the")
+    print("  composite or region ordering is a methodology warning.\n")
+    return {"composite_med": cm, "composite_rs": cr, "n_common": len(common),
+            "outcome_agreement": rho_oo}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split-sample", action="store_true")
     ap.add_argument("--window", type=float, default=2.0)
     ap.add_argument("--min-txn", type=int, default=5)
+    ap.add_argument("--repeat-sales", action="store_true",
+                    help="also run PART 8 (repeat-sales outcome construction; "
+                         "slower — pairs within-project ±5%% sqft buy/sell legs)")
     args = ap.parse_args()
 
     txns = bt.load_txns()
@@ -1300,6 +1935,13 @@ def main():
     part5g_yield(rows)
     part5h_regime()
     part5_joint_refit(txns, args.window, args.min_txn, args.split_sample, splits[0])
+    part6_nonvalue(rows, txns, splits[0])
+    part7_region_term(txns, args.window, args.min_txn, args.split_sample)
+    if args.repeat_sales:
+        part8_repeat_sales(txns, asof)
+    else:
+        print("(PART 8 repeat-sales outcome construction skipped — pass "
+              "--repeat-sales to run it; it adds ~a few seconds)\n")
 
 
 if __name__ == "__main__":

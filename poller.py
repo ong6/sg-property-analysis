@@ -43,6 +43,17 @@ DEFAULT_DISTRICTS = [3, 5, 14, 15]
 DEFAULT_BEDS = [2, 3]
 DEFAULT_MAX_PAGES = 2  # date-desc search → first pages are the newest listings
 DEFAULT_INTERVAL_MINS = 360
+# Detail-page enrichment of the genuinely-new listings each cycle. The scrape
+# only carries card-level fields, so floor_level / facing / latitude (and the
+# description that the format_pes / format_loft keyword flags key off) are 0%
+# populated without a detail visit. We enrich ONLY the new-this-cycle keys
+# (not price-changes, not the whole DB) and cap the batch so a busy cycle can't
+# spend an unbounded amount of time on detail pages at 2s each.
+DEFAULT_ENRICH_NEW = 20
+# Enrichment-target fields a detail page can fill (mirrors the scraper's
+# _apply_enrichment set). Only these are written back — never price/sqft.
+_ENRICH_FIELDS = ["latitude", "longitude", "facing", "floor_level",
+                  "furnishing", "total_units", "developer"]
 
 
 def load_poll_state() -> dict:
@@ -144,6 +155,128 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     return len(scored_rows), scored_rows
 
 
+def _enrich_one(scraper, listing) -> dict:
+    """Fetch a single detail page and return its enrichment fields.
+
+    Thin seam over the scraper's own detail primitives so the network-touching
+    step is isolated (and stubbable in tests). Navigates to the listing's
+    detail URL, then reuses the scraper's `_extract_detail_page` to pull
+    lat/lng/facing/floor_level/furnishing/total_units/developer. May raise —
+    the caller wraps every call in its own try/except so one bad page can't
+    abort the cycle.
+    """
+    from scrapers.propertyguru import (
+        PROPERTYGURU_BASE_URL, PAGE_LOAD_TIMEOUT, CLOUDFLARE_WAIT_TIMEOUT,
+    )
+    from scrapers.browser import wait_for_cloudflare
+
+    url = listing.url
+    if not url:
+        return {}
+    if not url.startswith("http"):
+        url = f"{PROPERTYGURU_BASE_URL}{url}"
+
+    page = scraper._context.pages[0] if scraper._context.pages else scraper._context.new_page()
+    scraper._page = page
+    page.goto(url, timeout=PAGE_LOAD_TIMEOUT, wait_until="domcontentloaded")
+    wait_for_cloudflare(page, timeout_ms=CLOUDFLARE_WAIT_TIMEOUT)
+    return scraper._extract_detail_page() or {}
+
+
+def _enrich_new_keys(keys: list[str], headless: bool = True,
+                     cap: int = DEFAULT_ENRICH_NEW) -> dict:
+    """Detail-enrich the given new-this-cycle DB keys (best-effort).
+
+    Opens one browser, visits each key's detail page (capped at `cap`, with the
+    standard 2s inter-detail delay), and merges only the enrichment fields back
+    into the DB record under the lock — refreshing `ingest_flags` so the
+    keyword/format flags re-fire on any newly-present field. Every detail fetch
+    is wrapped in its own try/except: a single failure increments `failed` and
+    the cycle continues. Returns {"enriched", "failed", "attempted"}.
+
+    Re-persist is a targeted field merge (NOT a re-upsert) so it never bumps
+    times_seen / last_seen or manufactures a phantom price-history event.
+    """
+    result = {"enriched": 0, "failed": 0, "attempted": 0}
+    if not keys:
+        return result
+
+    keys = keys[:cap]
+
+    # Snapshot the records we need under the lock; build lightweight Listing
+    # objects (id + url + the enrich-target fields, so _apply_enrichment's
+    # "only fill blanks" guard sees what's already known).
+    from models import Listing
+    with listings_db._db_lock():
+        store = listings_db.load_db()["listings"]
+        targets: list[tuple[str, "Listing"]] = []
+        for key in keys:
+            rec = store.get(key)
+            if not rec or not rec.get("url"):
+                continue
+            l = Listing(id=str(rec.get("id") or key),
+                        title=rec.get("title") or "",
+                        price=rec.get("price") or 0,
+                        url=rec.get("url"))
+            for fld in _ENRICH_FIELDS:
+                if rec.get(fld) is not None:
+                    setattr(l, fld, rec[fld])
+            targets.append((key, l))
+
+    if not targets:
+        return result
+
+    from scrapers.browser import BrowserManager
+    from scrapers.propertyguru import PropertyGuruScraper
+    from config import DETAIL_PAGE_DELAY
+
+    enriched_fields: dict[str, dict] = {}
+    try:
+        with BrowserManager(headless=headless) as context:
+            scraper = PropertyGuruScraper(context)
+            for i, (key, listing) in enumerate(targets):
+                result["attempted"] += 1
+                try:
+                    detail = _enrich_one(scraper, listing)
+                    changed = {f: detail[f] for f in _ENRICH_FIELDS
+                               if detail.get(f) is not None
+                               and getattr(listing, f, None) in (None, "", 0, 0.0)}
+                    if changed:
+                        enriched_fields[key] = changed
+                        result["enriched"] += 1
+                except Exception as e:  # noqa: BLE001 — best-effort per listing
+                    result["failed"] += 1
+                    print(f"  enrich failed for {key}: {type(e).__name__}: {e}",
+                          file=sys.stderr)
+                if i < len(targets) - 1:
+                    time.sleep(DETAIL_PAGE_DELAY)
+    except Exception as e:  # noqa: BLE001 — browser open / context failure
+        # Whole enrich pass failed to even start: don't lose what we collected
+        # so far, but record the remainder as failed and keep the cycle alive.
+        result["failed"] += len(targets) - result["attempted"]
+        print(f"  enrichment browser pass aborted: {type(e).__name__}: {e}",
+              file=sys.stderr)
+
+    # Merge collected fields under the lock; refresh ingest_flags per record.
+    if enriched_fields:
+        with listings_db._db_lock():
+            db = listings_db.load_db()
+            store = db["listings"]
+            merged = False
+            for key, fields in enriched_fields.items():
+                rec = store.get(key)
+                if rec is None:
+                    continue
+                rec.update(fields)
+                rec["ingest_flags"] = listings_db.compute_ingest_flags(rec)
+                merged = True
+            if merged:
+                listings_db.save_db(db)
+                listings_db.export_sheet(db=db)
+
+    return result
+
+
 def run_poll(
     districts: list[int] | None = None,
     beds: list[int] | None = None,
@@ -151,6 +284,7 @@ def run_poll(
     headless: bool = True,
     min_price: int | None = None,
     max_price: int | None = None,
+    enrich_new: int = DEFAULT_ENRICH_NEW,
 ) -> dict:
     """One full poll cycle. Never raises — errors land in the returned state."""
     districts = districts or DEFAULT_DISTRICTS
@@ -191,6 +325,18 @@ def run_poll(
         new_keys = [k for k in after if k not in before]
         changed_keys = [k for k, r in after.items()
                         if k in before and (r.get("price") or 0) != before[k]]
+
+        # Detail-enrich ONLY the genuinely-new keys BEFORE scoring, so their
+        # scores reflect floor/facing data and v3.8 floor-aware comps. Best-
+        # effort: a per-listing failure is counted, never fatal.
+        if enrich_new > 0 and new_keys:
+            enr = _enrich_new_keys(new_keys, headless=headless, cap=enrich_new)
+            state["enriched"] = enr["enriched"]
+            state["enrich_failed"] = enr["failed"]
+        else:
+            state["enriched"] = 0
+            state["enrich_failed"] = 0
+
         n_scored, scored_rows = _score_keys(new_keys + changed_keys)
         state["scored"] = n_scored
         scored_rows.sort(key=lambda r: r.get("score_1000") or 0, reverse=True)
@@ -213,6 +359,7 @@ def run_poll(
     status = "ok" if state["ok"] else f"FAILED ({state.get('error')})"
     print(f"\nPoll {status}: {state.get('scraped', 0)} scraped, "
           f"+{state.get('added', 0)} new, {state.get('price_changes', 0)} price changes, "
+          f"{state.get('enriched', 0)} enriched/{state.get('enrich_failed', 0)} failed, "
           f"{state.get('scored', 0)} scored, {n_new} new scored "
           f"({state['duration_s']}s) -> {POLL_STATE_FILE}", file=sys.stderr)
     return state
@@ -229,17 +376,24 @@ def main():
     ap.add_argument("--min-price", type=int, default=None)
     ap.add_argument("--max-price", type=int, default=None)
     ap.add_argument("--no-headless", action="store_true")
+    ap.add_argument("--enrich-new", type=int, default=DEFAULT_ENRICH_NEW,
+                    help=f"detail-enrich up to N new-this-cycle listings "
+                         f"(floor/facing/lat; default {DEFAULT_ENRICH_NEW})")
+    ap.add_argument("--no-enrich", action="store_true",
+                    help="skip detail-page enrichment of new listings")
     ap.add_argument("--loop", action="store_true", help="poll forever on an interval")
     ap.add_argument("--interval-mins", type=int, default=DEFAULT_INTERVAL_MINS)
     args = ap.parse_args()
 
     districts = [int(d) for d in args.districts.split(",")] if args.districts else None
     beds = [int(b) for b in args.beds.split(",")] if args.beds else None
+    enrich_new = 0 if args.no_enrich else args.enrich_new
 
     while True:
         run_poll(districts=districts, beds=beds, max_pages=args.max_pages,
                  headless=not args.no_headless,
-                 min_price=args.min_price, max_price=args.max_price)
+                 min_price=args.min_price, max_price=args.max_price,
+                 enrich_new=enrich_new)
         if not args.loop:
             break
         print(f"Next poll in {args.interval_mins} min (Ctrl-C to stop)", file=sys.stderr)

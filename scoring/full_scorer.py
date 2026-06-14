@@ -104,48 +104,74 @@ def _load_district_data() -> dict:
 # Keys are _pu_normalize()d project names (audit #4: the raw exact-upper join
 # missed 14.7% of the DB — 'SUITES @ KATONG' never matched URA's
 # 'SUITES@ KATONG', silently disarming the v3.8/v3.9 print-trust rules).
-# Print tuples: (sqft, psf, floor, sale_dt, sale_type).
-_raw_prints_cache: dict = {}  # "D18" -> {normalized name: [(sqft, psf, floor, sale_dt, sale_type)]}
+# Print tuples: (sqft, psf, floor, sale_dt, sale_type, is_ec).
+# v3.10 (audit #4 EC blind spot): Executive Condominium prints live in a
+# separate URA file (ura_district_D{NN}_EC.csv, fetched by
+# fetch_ura_districts.py --property-types ec) because URA's postal-district
+# search splits "Apartments & Condominiums" from "Executive Condominium". The
+# 250 EC listings in the DB had NO prints at all, so they benchmarked against
+# condo medians — the v3.6 strata/format artifact, at scale. Both files load
+# into the SAME per-district dict; each print carries is_ec so the join can
+# match an EC listing to EC prints and a condo listing to condo prints.
+_raw_prints_cache: dict = {}  # "D18" -> {normalized name: [(sqft, psf, floor, sale_dt, sale_type, is_ec)]}
+
+
+def _read_prints_csv(path: str, is_ec: bool, out: dict) -> None:
+    """Parse one URA district CSV into `out` (normalized name -> [print tuple]),
+    tagging every print with `is_ec`. Missing file is a no-op (graceful: when
+    the EC file hasn't been fetched yet, behavior is exactly the condo-only
+    pre-fix path)."""
+    if not os.path.exists(path):
+        return
+    import csv as _csv
+    with open(path, encoding="utf-8", errors="replace") as f:
+        for r in _csv.DictReader(f):
+            try:
+                sqft = float(str(r.get("Area (SQFT)") or "").replace(",", ""))
+                psf = float(str(r.get("Unit Price ($ PSF)") or "").replace(",", ""))
+            except ValueError:
+                continue
+            if sqft <= 0 or psf <= 0:
+                continue
+            # Print hygiene (audit P2): bulk multi-unit rows and land-area
+            # rows are not unit comps — a 4-unit block sale or a landed
+            # plot print would distort the tight median / p10.
+            try:
+                n_units = int(float(str(r.get("Number of Units") or "1").replace(",", "")))
+            except ValueError:
+                n_units = 1
+            if n_units != 1:
+                continue
+            if (r.get("Type of Area") or "").strip().lower() == "land":
+                continue
+            try:
+                sale_dt = datetime.strptime(r.get("Sale Date") or "", "%b-%y")
+            except ValueError:
+                sale_dt = None
+            name = _pu_normalize(r.get("Project Name") or "")
+            if name:
+                out.setdefault(name, []).append(
+                    (sqft, psf, (r.get("Floor Level") or "").strip(), sale_dt,
+                     (r.get("Type of Sale") or "").strip(), is_ec))
 
 
 def _load_district_prints(dcode: str) -> dict:
     if dcode in _raw_prints_cache:
         return _raw_prints_cache[dcode]
     out: dict = {}
-    path = os.path.join(_DATA_DIR, f"ura_district_{dcode}.csv")
-    if os.path.exists(path):
-        import csv as _csv
-        with open(path, encoding="utf-8", errors="replace") as f:
-            for r in _csv.DictReader(f):
-                try:
-                    sqft = float(str(r.get("Area (SQFT)") or "").replace(",", ""))
-                    psf = float(str(r.get("Unit Price ($ PSF)") or "").replace(",", ""))
-                except ValueError:
-                    continue
-                if sqft <= 0 or psf <= 0:
-                    continue
-                # Print hygiene (audit P2): bulk multi-unit rows and land-area
-                # rows are not unit comps — a 4-unit block sale or a landed
-                # plot print would distort the tight median / p10.
-                try:
-                    n_units = int(float(str(r.get("Number of Units") or "1").replace(",", "")))
-                except ValueError:
-                    n_units = 1
-                if n_units != 1:
-                    continue
-                if (r.get("Type of Area") or "").strip().lower() == "land":
-                    continue
-                try:
-                    sale_dt = datetime.strptime(r.get("Sale Date") or "", "%b-%y")
-                except ValueError:
-                    sale_dt = None
-                name = _pu_normalize(r.get("Project Name") or "")
-                if name:
-                    out.setdefault(name, []).append(
-                        (sqft, psf, (r.get("Floor Level") or "").strip(), sale_dt,
-                         (r.get("Type of Sale") or "").strip()))
+    _read_prints_csv(os.path.join(_DATA_DIR, f"ura_district_{dcode}.csv"), False, out)
+    _read_prints_csv(os.path.join(_DATA_DIR, f"ura_district_{dcode}_EC.csv"), True, out)
     _raw_prints_cache[dcode] = out
     return out
+
+
+def _listing_is_ec(listing: dict) -> bool:
+    """Whether a listing is an Executive Condominium (so it must benchmark
+    against EC prints, not condo medians). ECs are a distinct URA product type
+    (subsidized, 5-year MOP, privatized at year 10) that trades at its own PSF
+    level. Detection is the scraped `property_type` — the canonical signal the
+    ingest format-flag (_APARTMENT_FORMATS) and the URA fetch both key on."""
+    return (listing.get("property_type") or "").strip().lower() == "executive condominium"
 
 
 # Reserved key inside a district's prints dict for memoized index ratios.
@@ -1531,6 +1557,16 @@ class FullScorer:
         project_prints = self._project_prints(listing)
         if project_prints is not None and not project_prints:
             result["no_ura_prints"] = True
+        # v3.10 EC join: surface WHICH comp universe an EC listing landed in.
+        # `ec_benchmark` confirms it matched real EC prints (not condo medians);
+        # `ec_no_ec_prints` marks an EC listing with zero EC prints to compare
+        # against (EC file unfetched, or fetched but the project has none) — a
+        # visible verify-first state instead of a silent condo-median benchmark.
+        if _listing_is_ec(listing) and project_prints is not None:
+            if project_prints:
+                result["ec_benchmark"] = True
+            else:
+                result["ec_no_ec_prints"] = True
         # Audit #5: comp freshness — newest same-size print (YYYY-MM), exported
         # even when the window leaves too few comps (that's exactly when the
         # agent needs to see how stale the print set is).
@@ -1706,15 +1742,24 @@ class FullScorer:
         """The listing's project URA prints (normalized-name join, audit #4).
 
         Returns None when the lookup is impossible (no name or district),
-        [] when the lookup ran but the project has zero prints — the caller
-        exports that as an explicit `no_ura_prints` flag instead of a silent
-        skip (EC + strata-landed projects structurally have no prints).
+        [] when the lookup ran but the project has zero MATCHING prints — the
+        caller exports that as an explicit `no_ura_prints` flag instead of a
+        silent skip (strata-landed projects structurally have none).
+
+        v3.10 EC join: an EC listing benchmarks ONLY against EC prints and a
+        condo listing ONLY against condo prints — never the other type's
+        medians (the v3.6 cross-format artifact). When an EC listing has no EC
+        prints (EC file not fetched, or fetched but the project has none) this
+        returns [] rather than silently borrowing the project's condo prints,
+        so the caller flags a visible verify-first state (`ec_no_ec_prints`).
         """
         name = (listing.get("project_name") or listing.get("title") or "").strip()
         dcode = normalize_district(str(listing.get("district") or ""))
         if not (name and dcode):
             return None
-        return _load_district_prints(dcode).get(_pu_normalize(name)) or []
+        prints = _load_district_prints(dcode).get(_pu_normalize(name)) or []
+        want_ec = _listing_is_ec(listing)
+        return [t for t in prints if bool(t[5]) == want_ec]
 
     def _tight_size_comps(self, listing: dict) -> tuple:
         """Median PSF of the project's recent prints within ±7% of the listing's

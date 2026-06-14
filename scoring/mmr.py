@@ -9,8 +9,13 @@ a logistic transform maps it onto a stable 0-1000 display scale.
 
 Design rules (anti-bias):
 - Missing data contributes 0 (neutral), it is never treated as bad data.
-- Price-vs-market is SYMMETRIC: a discount adds, a premium subtracts
-  (the legacy scorer only ever rewarded discounts).
+- Price-vs-market is signed: a discount adds, a premium subtracts (the legacy
+  scorer only ever rewarded discounts). NOTE — since v3.6 the two sides are
+  deliberately ASYMMETRIC: discounts past MMR_DISCOUNT_TRUST_KNEE_PCT are
+  knee-compressed, and when the reading is suspect (bed/sqft mismatch, thin
+  cohort, or own-stack prints contradicting the discount) the POSITIVE side is
+  damped to MMR_SUSPECT_VALUE_FACTOR — premiums are never damped. Cheapness is
+  treated as verify-first; dearness at face value.
 - No double counting: age, lease, dev size and PSF premium are continuous
   components here, so only red flags NOT already expressed continuously
   (west facing, suspicious low PSF, oversized layout, bed/sqft mismatch)
@@ -48,6 +53,11 @@ try:
         MMR_DISCOUNT_EXCESS_CREDIT,
         MMR_SUSPECT_VALUE_FACTOR,
         MMR_PRICE_BAND_CAP,
+        MMR_FUTURE_WEIGHT,
+        MMR_COST_WEIGHT,
+        MMR_REGION_SLOPE,
+        MMR_STRUCTURAL_FLOOR_CAP,
+        REGIONAL_APPRECIATION_BASELINES,
     )
 except ImportError:
     # Fallbacks mirror config.py (kept in sync; only used if config import fails).
@@ -69,7 +79,12 @@ except ImportError:
     MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0
     MMR_DISCOUNT_EXCESS_CREDIT = 0.25
     MMR_SUSPECT_VALUE_FACTOR = 0.25
-    MMR_PRICE_BAND_CAP = 15.0
+    MMR_PRICE_BAND_CAP = 11.0
+    MMR_FUTURE_WEIGHT = 0.0
+    MMR_COST_WEIGHT = 0.5
+    MMR_REGION_SLOPE = 3.0
+    MMR_STRUCTURAL_FLOOR_CAP = 3.1
+    REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.028, "RCR": 0.037, "OCR": 0.042}
 
 # Agent appreciation overrides get the same sanity clamp URA rates get at
 # ingestion (full_scorer caps to [-5, +15] %/yr) — Jun-2026 audit: overrides
@@ -84,6 +99,31 @@ _UNIQUE_FLAGS = {"west_facing", "very_low_psf", "oversized_unit", "bedroom_sqft_
 # Buyer pool depth — recentered so a shallow pool actually costs points
 # instead of every district earning something.
 _BUYER_POOL_PTS = {"very_deep": 7.0, "deep": 4.5, "moderate": 1.5, "shallow": -3.0}
+
+# Region mapping (mirrors full_scorer._get_regional_baseline — kept in lockstep:
+# the region term below tilts toward the same CCR/RCR/OCR baselines the
+# appreciation fallback uses, so a fallback listing must NOT also get the tilt).
+_CCR_DISTRICTS = {1, 2, 6, 7, 9, 10, 11}
+_RCR_DISTRICTS = {3, 4, 5, 8, 12, 13, 14, 15}
+
+
+def _region_of(district: Optional[str]) -> Optional[str]:
+    """CCR / RCR / OCR for a 'D##' (or '##') district, None if unparseable.
+
+    Everything outside the CCR/RCR sets is OCR — identical partition to
+    full_scorer._get_regional_baseline."""
+    if not district:
+        return None
+    d = str(district).upper().replace("D", "").strip()
+    try:
+        n = int(d)
+    except ValueError:
+        return None
+    if n in _CCR_DISTRICTS:
+        return "CCR"
+    if n in _RCR_DISTRICTS:
+        return "RCR"
+    return "OCR"
 
 
 def _knee_discount(premium_pct: float) -> float:
@@ -361,6 +401,11 @@ def compute_mmr(scored: Any) -> dict:
     depth = sb_liq.get("buyer_pool_depth", {}).get("depth")
     comps["buyer_pool"] = _BUYER_POOL_PTS.get(depth, 0.0)
 
+    # dev_size — KEPT as-is. v3.10 measurement CONFIRMED it: std_β +0.130
+    # CI[+0.018,+0.239], significant in the joint model (the earlier "marginal
+    # +0.045, unvalidated" read is superseded). Larger developments exit more
+    # easily / carry more buyer-pool depth; tanh-saturated so a mega-project
+    # can't dominate.
     units = scored.total_units
     comps["dev_size"] = round(6.0 * math.tanh((units - 150.0) / 300.0), 2) if units else 0.0
 
@@ -380,7 +425,9 @@ def compute_mmr(scored: Any) -> dict:
         # the last uncapped value-side channel (-39 raw at $10M); same -2.5 pts
         # per $500k slope near the knee, saturating (tanh) at MMR_PRICE_BAND_CAP
         # so an ultra-luxury quantum reads as thin-exit risk, not a death blow.
-        # Normal $1-4M asks are nearly unchanged (-4.0 → -3.9 at $3M).
+        # Near-knee asks barely move (-3.8 at $3M); v3.10 trimmed the cap 15→11
+        # to fund the explicit region tilt (which overlaps the CCR-skewed luxury
+        # quantum penalty), so the tail saturates earlier (see config note).
         raw = (price - 2_200_000) / 500_000 * 2.5
         comps["price_band"] = round(-MMR_PRICE_BAND_CAP * math.tanh(raw / MMR_PRICE_BAND_CAP), 2)
 
@@ -389,14 +436,46 @@ def compute_mmr(scored: Any) -> dict:
     # data-poor listings: no coords/profile defaults the sub-scores to ~4, mapping
     # to -4.8, violating "missing data is neutral, never penalized". (2) The future
     # heuristics (MRT/zone/transformation/supply point tables) are un-backtested, so
-    # the magnitude is reined in. Now: neutral at the no-signal floor (4), strictly
-    # NON-NEGATIVE (a catalyst is upside; its absence is neutral), slope 1.2→0.7.
-    # Range 0..~+11. Re-validate the future score against forward returns before
-    # widening this again (it is currently the largest un-validated lever).
-    comps["future"] = round(max(0.0, scored.future_potential_score - 4.0) * 0.7, 2)
+    # the magnitude was reined in (neutral at the no-signal floor 4, NON-NEGATIVE,
+    # slope 1.2→0.7).
+    # v3.10: ZEROED via MMR_FUTURE_WEIGHT. Measured at last: univariate ρ +0.061
+    # CI[-0.013,+0.143] UNDETERMINED, multivariate std_β -0.024 (negative sign),
+    # repeat-sales -0.016 — no forward power in any construction. The
+    # future_potential_score stays computed and surfaced in factual_data for the
+    # agent's qualitative read; only its MMR contribution goes to 0. (Keep the
+    # shape so re-enabling is one weight if a future backtest ever finds signal.)
+    comps["future"] = round(max(0.0, scored.future_potential_score - 4.0) * 0.7
+                            * MMR_FUTURE_WEIGHT, 2)
 
-    # --- Cost efficiency (recentred from the 0-10 score) ---
-    comps["cost"] = round(scored.cost_efficiency_score - 5.0, 2)
+    # --- Cost efficiency (recentred from the 0-10 score, v3.10 HALVED) ---
+    # cost_efficiency is a deterministic sqft/beds function (mcst / AV / $-per-bed)
+    # — partly value-in-disguise. Measured std_β +0.122 CI[+0.018,+0.231]: survives
+    # 0 but weak, split-sample UNDETERMINED. Halved (MMR_COST_WEIGHT) from its prior
+    # ±5 swing to ±2.5.
+    comps["cost"] = round((scored.cost_efficiency_score - 5.0) * MMR_COST_WEIGHT, 2)
+
+    # --- Region tilt (v3.10: the strongest measured forward signal, made
+    # explicit for DATA-RICH listings) ---
+    # Region only reached the appreciation FALLBACK before: a regional_baseline
+    # listing got the regional rate as its appreciation input, but a listing with
+    # real project (ura_*) appreciation never saw any regional tilt. Add it as a
+    # signed component centred on the mean of the three regional baselines, scaled
+    # by MMR_REGION_SLOPE (= MMR_APPRECIATION_SLOPE, the regime-robust choice).
+    # GATE (no double-counting): apply ONLY when the appreciation data_source is
+    # real project data (not the default/regional_baseline fallback) — a fallback
+    # listing already carries the regional rate AS its rate, so tilting again would
+    # double-count. Unknown region → 0. Measured: region_delta ranks +0.219
+    # CI[+0.129,+0.299]; clean out-of-split composite ρ +0.240 → +0.249.
+    # Regime-bound (single bull regime), hence anchored to the conservative slope.
+    region = _region_of(scored.district)
+    region_uses_fallback = source in ("default", "regional_baseline")
+    if region is not None and not region_uses_fallback:
+        baselines_pct = [b * 100 for b in REGIONAL_APPRECIATION_BASELINES.values()]
+        mean_baseline_pct = sum(baselines_pct) / len(baselines_pct)
+        region_pct = REGIONAL_APPRECIATION_BASELINES[region] * 100
+        comps["region"] = round(MMR_REGION_SLOPE * (region_pct - mean_baseline_pct), 2)
+    else:
+        comps["region"] = 0.0
 
     # --- Age-adjusted relative value vs district peers (symmetric) ---
     # Distinct signal from psf_value (which compares against the SAME
@@ -434,6 +513,40 @@ def compute_mmr(scored: Any) -> dict:
     flags = sb_flags.get("flags", [])
     unique_penalty = sum(f.get("penalty", 0) for f in flags if f.get("flag") in _UNIQUE_FLAGS)
     comps["red_flags"] = round(-1.5 * unique_penalty, 2)
+
+    # --- Structural-floor GATE (v3.10b correctness fix) ---
+    # When a listing's unit-level value signal is untrustworthy — either NO
+    # positive value/yield credit at all (psf_value ≤ 0 AND age_value ≤ 0 AND
+    # yield ≤ 0) OR a suspect-damped artifact (bedroom_sqft_mismatch /
+    # ask_below_stack_prints / thin-cohort deep discount / stack_premium suspect,
+    # whose residual value the v3.6+ trust layer already cut to 25% but left
+    # slightly positive) — don't let the UNVALIDATED components add structural
+    # credit on top. Cap the SUM of the POSITIVE parts of (future, cost) at
+    # MMR_STRUCTURAL_FLOOR_CAP. future is measured ≈0 (already 0); cost is weak
+    # (std_β +0.12, split-sample UNDET).
+    #
+    # Deliberately EXCLUDES dev_size: the Jun-2026 lever measurement VALIDATED it
+    # (std_β +0.130 CI[+0.018,+0.239], significant in the joint model) and it is
+    # a PROJECT-level liquidity/exit proxy that holds regardless of one unit's
+    # value artifact — capping a validated signal is the exact anti-pattern the
+    # audit warns against. So a flagged 1BR in a genuinely strong/liquid/
+    # appreciating project (Coco Palms 624sf PES) legitimately scores at that
+    # project's quality level (~750) once its FAKE discount is damped out; it is
+    # NOT forced below 650, and the surfaced red flag is the agent's verify-first
+    # signal. This gate only stops UNVALIDATED credit piling on, and is a
+    # guardrail should future/cost ever be re-weighted up.
+    _value_untrusted = (
+        (comps["psf_value"] <= 0 and comps["age_value"] <= 0 and comps["yield"] <= 0)
+        or suspect_discount
+    )
+    if _value_untrusted:
+        _gate_keys = ("future", "cost")
+        _pos_sum = sum(comps[k] for k in _gate_keys if comps[k] > 0)
+        if _pos_sum > MMR_STRUCTURAL_FLOOR_CAP:
+            _scale = MMR_STRUCTURAL_FLOOR_CAP / _pos_sum
+            for k in _gate_keys:
+                if comps[k] > 0:
+                    comps[k] = round(comps[k] * _scale, 2)
 
     mmr = MMR_BASE + sum(comps.values())
     return {
