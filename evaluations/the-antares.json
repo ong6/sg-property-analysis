@@ -172,6 +172,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-antares-25204652",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The apparent discount is a verify-first signal: the ask sits BELOW the recent transacted floor near Mattar MRT, so it likely reflects a low-floor/poorer stack or a stale price, not a clean bargain.",
+      "rating_rationale": "Recent 12mo prints $1,885-2,213psf (avg $2,070); this unit asks ~$1,812psf — below the entire recent range floor, which the v3.9 trust rule flags as verify-first (low-floor stack, condition, or stale ask). 99LH 2022 near Mattar is decent, but credit the discount only after verifying the specific unit → Neutral.",
+      "red_flags": [
+        "ask below the recent print floor (v3.9 verify-first)",
+        "possible low-floor/poorer stack or stale price"
+      ],
+      "catalysts": [
+        "Mattar MRT walk-up",
+        "Paya Lebar fringe"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

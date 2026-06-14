@@ -110,6 +110,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-imperial-500057333",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A genuinely cheap small freehold 1BR ($820k, ~5% below the ~$1,750 avg, corroborated by real prints) but a 495sf shoebox with the thin exit liquidity that caps the investment case.",
+      "rating_rationale": "The cheapness is real (not a thin-cohort quirk), and $820k is a liquid entry — but only ~5% below average, and 495sf shoebox resale is thin. Good One-North rental unit; marginal as a capital play → Neutral leaning positive.",
+      "red_flags": [
+        "495sf shoebox — thin resale",
+        "only ~5% below average"
+      ],
+      "catalysts": [
+        "One-North rental demand",
+        "liquid $820k entry quantum"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

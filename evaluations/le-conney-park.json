@@ -56,6 +56,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-le-conney-park-500088688",
         "review_file": "cov_batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold East Coast 3BR at a modest ~6% discount with Marine Terrace TEL ~950m — reasonable, but the discount is modest and the headline CAGR rests on a thin 17-txn series.",
+      "rating_rationale": "$1,548 vs $1,642 median is a real but small edge; freehold + deep D15 pool are positives, but 9.17% CAGR on 17 txns is unreliable and TEL is ~950m (not walk-up). A sound freehold hold, not a clear outperformer → Neutral.",
+      "red_flags": [
+        "thin 17-txn appreciation series",
+        "modest ~6% discount",
+        "TEL ~950m, not walk-up"
+      ],
+      "catalysts": [
+        "freehold D15 East Coast",
+        "TE27 Marine Terrace ~950m"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

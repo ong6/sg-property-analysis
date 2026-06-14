@@ -170,6 +170,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-penrose-24959349",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Priced at the project floor on the batch's deepest data — a real signal — but it is a 484sf shoebox 1BR whose thin resale liquidity caps the upside.",
+      "rating_rationale": "$1,942psf is the bottom of Penrose's live range (below recent sub-sale ~$2,136) on deep data, so the floor pricing is genuine, not a mis-scrape. But 484sf shoebox exit demand is thin and 1BR capital appreciation lags. A fair rental/entry unit → Neutral leaning positive.",
+      "red_flags": [
+        "484sf shoebox — thin resale liquidity",
+        "1BR capital appreciation lags larger units"
+      ],
+      "catalysts": [
+        "Aljunied/Paya Lebar fringe, deep transaction data",
+        "project-floor entry price"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }
