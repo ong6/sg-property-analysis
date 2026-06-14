@@ -56,6 +56,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-meraprime-60160101",
         "review_file": "cov_batch_11.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "D03 (RCR) 3BR at a modest ~4% discount, but the Buy rested on a 6.94% trailing CAGR (≈0 forward power) and the $2.4M quantum sits at the top of the liquid band.",
+      "rating_rationale": "$2,145psf ~4% under median is within noise; trailing CAGR de-credited; $2.4M top-of-band narrows buyers. RCR region neutral. Sound hold, no forward edge → Neutral.",
+      "red_flags": [
+        "thesis = discredited trailing CAGR",
+        "$2.4M top-of-band quantum",
+        "only ~4% discount (noise)"
+      ],
+      "catalysts": [
+        "D03 RCR / GSW-adjacent corridor"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

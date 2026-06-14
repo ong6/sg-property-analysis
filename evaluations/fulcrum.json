@@ -106,6 +106,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-fulcrum-60060573",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The apparent 12-15% discount is most likely a LOFT-VOID artifact, not value: an 818sf 1BR loft's double-volume void inflates strata sqft and deflates paper PSF — exactly the v3.9 below-distribution pattern.",
+      "rating_rationale": "Asks $1,834psf vs the project's ~$2,033-2,139; but as a loft the void counts in sqft, so the low PSF overstates the discount. v3.9 trust rule flags asks below the print distribution as verify-first. Freehold D15 is a plus, but the headline value edge is an artifact → Neutral pending sqft/format verification.",
+      "red_flags": [
+        "loft double-volume void deflates PSF (v3.9 artifact)",
+        "'discount' not comparable to flat-format prints"
+      ],
+      "catalysts": [
+        "freehold D15, deep East Coast buyer pool"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

@@ -58,6 +58,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-botany-at-dairy-farm-24389574",
         "review_file": "cov_batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "Newer OCR launch near Hillview DTL, but the prior rationale describes a different (4BR) unit than the current 710sf 1BR listing, so the value read is unreliable and no clean edge is confirmable.",
+      "rating_rationale": "Current listing is a 710sf 1BR at ~$1,690psf, not the 4BR the prior assessed — the discount claim doesn't transfer. Newer launch, nature-reserve setting, DTL ~800m are fine, but no verified value edge for this unit → Neutral.",
+      "red_flags": [
+        "prior rationale/unit mismatch — value read unreliable",
+        "new-ish launch, limited resale history"
+      ],
+      "catalysts": [
+        "Hillview DTL ~800m",
+        "Dairy Farm nature-reserve setting"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

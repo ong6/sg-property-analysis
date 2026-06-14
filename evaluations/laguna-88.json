@@ -57,6 +57,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-laguna-88-500058942",
         "review_file": "cov_batch_17.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Strong connectivity (190m to Sungei Bedok, a DTL terminus + future TEL interchange) in OCR's Bayshore transformation zone — genuinely positive — but priced at median with the upside resting on the transformation narrative the backtest can't yet credit.",
+      "rating_rationale": "OCR region is favourable (already in the score) and MRT proximity is a validated signal, but the entry is at median (no value margin) and the 'future infrastructure' transformation premium measures ≈0 forward. Borderline-positive but no cheap entry → Neutral, watch for a price dip.",
+      "red_flags": [
+        "priced at median, no value margin",
+        "upside leans on transformation narrative (future-infra ≈0 forward)"
+      ],
+      "catalysts": [
+        "Sungei Bedok DTL terminus 190m + future TEL interchange",
+        "Bayshore transformation zone"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

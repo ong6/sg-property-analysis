@@ -58,6 +58,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-bijou-500058878",
         "review_file": "cov_batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Well-located freehold 1BR for rental (170m Pasir Panjang MRT, beside One-North/MBC) but no value edge, and small shoebox exit liquidity caps the investment case.",
+      "rating_rationale": "$2,063psf freehold 1BR with no discount; the strength is rental location, not capital value. 504sf shoebox = thinner resale pool. A fine rental hold, not a forward outperformer → Neutral.",
+      "red_flags": [
+        "504sf shoebox — thinner resale pool",
+        "no capital-value discount"
+      ],
+      "catalysts": [
+        "Pasir Panjang MRT 170m",
+        "One-North / MBC employment cluster (rental demand)"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

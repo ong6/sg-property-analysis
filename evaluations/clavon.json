@@ -58,6 +58,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-clavon-60094389",
         "review_file": "cov_batch_05.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Small D05 1BR at only a ~3% discount with a distant (~2032) CRL Clementi catalyst — a fine hold but no forward edge.",
+      "rating_rationale": "$2,087psf ~3% under median is within noise; 527sf 1BR; CRL is years out. Trailing 4.3% CAGR de-credited. One-North demand supports rental but not a capital-value thesis → Neutral.",
+      "red_flags": [
+        "only ~3% discount (noise)",
+        "527sf small unit",
+        "CRL catalyst ~2032 distant"
+      ],
+      "catalysts": [
+        "CRL Clementi ~670m (~2032)",
+        "One-North / NUS / Clementi demand"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

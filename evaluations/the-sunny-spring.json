@@ -56,6 +56,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-sunny-spring-60219280",
         "review_file": "cov_batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D14 in the Paya Lebar catalyst zone, but priced at median with the prior Buy resting on a 6.71% trailing CAGR that the backtest shows has ≈0 forward power.",
+      "rating_rationale": "Priced right at median = no value margin; freehold is a level-premium not a return edge; trailing CAGR de-credited. Catalyst is real but long-dated → Neutral.",
+      "red_flags": [
+        "priced at median, no value edge",
+        "thesis = discredited trailing CAGR + freehold premium"
+      ],
+      "catalysts": [
+        "Paya Lebar Central / airbase relocation"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

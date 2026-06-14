@@ -60,6 +60,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-woodleigh-residences-25504431",
         "review_file": "cov_batch_25.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Genuine floor-of-range value in a scarce integrated NE-line development: this 2BR asks $2,111psf — the exact bottom of the recent 12-month range (avg $2,469, ~14% below) — on a deep, liquid cohort with Woodleigh MRT and the on-site Japanese mall.",
+      "rating_rationale": "Recent 12mo prints $2,111-2,923psf (avg $2,469, 20 sales / 557 total); the ask sits at the range floor = a real ~14% discount, not a thin-cohort quirk. Integrated transit + Bidadari estate maturation + liquid $1.25M 2BR quantum support it. LOW confidence: a floor-of-range ask can signal a lower-floor/poorer-facing stack — verify the specific unit; 592sf is a compact 2BR.",
+      "red_flags": [
+        "floor-of-range ask may be a low-floor/poor-facing stack",
+        "compact 592sf 2BR"
+      ],
+      "catalysts": [
+        "Woodleigh NE-line MRT 290m",
+        "integrated Japanese mall (The Woodleigh Mall)",
+        "Bidadari estate maturation"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

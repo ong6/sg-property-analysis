@@ -81,9 +81,9 @@
     "the-sunny-spring": {
       "condo": "The Sunny Spring",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "d-hiro-hillside": {
       "condo": "D'hiro@Hillside",
@@ -438,9 +438,9 @@
     "terra-hill": {
       "condo": "Terra Hill",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "double-bay-residences": {
       "condo": "Double Bay Residences",
@@ -697,9 +697,9 @@
     "penrose": {
       "condo": "Penrose",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 3
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 4
     },
     "casafina": {
       "condo": "Casafina",
@@ -1019,9 +1019,9 @@
     "freehold-in-d14-within-1km-to-kong-hwa-primary": {
       "condo": "Freehold in D14, within 1km to Kong Hwa Primary",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "the-poiz-residences": {
       "condo": "The Poiz Residences",
@@ -1279,8 +1279,8 @@
       "condo": "The Woodleigh Residences",
       "district": "D13",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "stratum": {
       "condo": "Stratum",
@@ -1558,9 +1558,9 @@
     "le-conney-park": {
       "condo": "Le Conney Park",
       "district": "D15",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "cosmo": {
       "condo": "Cosmo",
@@ -2335,9 +2335,9 @@
     "the-antares": {
       "condo": "The Antares",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 3
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 4
     },
     "amber-skye": {
       "condo": "Amber Skye",
@@ -2349,9 +2349,9 @@
     "the-botany-at-dairy-farm": {
       "condo": "The Botany at Dairy Farm",
       "district": "D23",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "woodsville-28": {
       "condo": "Woodsville 28",
@@ -2377,9 +2377,9 @@
     "blue-horizon": {
       "condo": "Blue Horizon",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "zyanya": {
       "condo": "Zyanya",
@@ -2510,9 +2510,9 @@
     "bijou": {
       "condo": "Bijou",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "suites-east-coast": {
       "condo": "Suites @ East Coast",
@@ -2755,9 +2755,9 @@
     "parktown-residence": {
       "condo": "PARKTOWN Residence",
       "district": "D18",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "zyon-grand": {
       "condo": "Zyon Grand",
@@ -2804,9 +2804,9 @@
     "meraprime": {
       "condo": "Meraprime",
       "district": "D03",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "pasir-ris-8": {
       "condo": "Pasir Ris 8",
@@ -3042,9 +3042,9 @@
     "laguna-88": {
       "condo": "Laguna 88",
       "district": "D16",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "grandview-suites-geylang": {
       "condo": "Grandview Suites @ Geylang",
@@ -3126,9 +3126,9 @@
     "clavon": {
       "condo": "Clavon",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "citylife-tampines": {
       "condo": "CityLife @ Tampines",
@@ -3504,9 +3504,9 @@
     "fulcrum": {
       "condo": "Fulcrum",
       "district": "D15",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "aquarius-by-the-park": {
       "condo": "Aquarius By The Park",
@@ -4358,9 +4358,9 @@
     "parc-imperial": {
       "condo": "Parc Imperial",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "the-bronze": {
       "condo": "The Bronze",

@@ -56,6 +56,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-blue-horizon-60154410",
         "review_file": "cov_batch_20.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Liquid D05 unit in the One-North/West Coast corridor, but the prior Buy rested on a 4.9% trailing CAGR (≈0 forward power under v3.10b) rather than any genuine discount.",
+      "rating_rationale": "$1,531psf with no cheap-vs-recent-peers margin cited; value thesis was trailing-CAGR + liquidity, both de-emphasised. Decent corridor location but no forward edge → Neutral.",
+      "red_flags": [
+        "value thesis relied on discredited trailing CAGR",
+        "no below-peers margin"
+      ],
+      "catalysts": [
+        "One-North / West Coast growth corridor"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

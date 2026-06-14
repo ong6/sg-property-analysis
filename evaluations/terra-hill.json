@@ -58,6 +58,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-terra-hill-60240850",
         "review_file": "cov_batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold luxury (Hoi Hup, Yew Siang Rd) at ~8% below the project's 12-month average — a real but small edge offset by a high absolute PSF and luxury-segment illiquidity.",
+      "rating_rationale": "$2,478psf vs ~$2,650 avg is a modest discount; freehold luxury is quality, but $2,478psf / $2.08M 2BR is a high entry and the lowered price_band cap reflects thinner luxury exit demand. Sound freehold hold, no clear forward edge → Neutral.",
+      "red_flags": [
+        "high absolute PSF / luxury-segment illiquidity",
+        "only ~8% below average"
+      ],
+      "catalysts": [
+        "freehold (Hoi Hup/Sunway luxury)"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

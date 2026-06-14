@@ -58,6 +58,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parktown-residence-25497401",
         "review_file": "cov_batch_04.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Scarce true integrated development (UOL/CapitaLand/SingLand) with bus interchange, hawker centre and direct CRL Tampines North access — a durable resale advantage — but the new-launch 4BR is fully priced at $2.5M.",
+      "rating_rationale": "Integrated transit-connected developments hold value well, but the entry already capitalises that; no below-comps margin and a $2.5M 4BR quantum thins the pool. CRL is a real catalyst but multi-year out. Quality hold, not a forward edge → Neutral.",
+      "red_flags": [
+        "new-launch premium fully priced",
+        "$2.5M 4BR quantum narrows buyers",
+        "CRL benefit multi-year out"
+      ],
+      "catalysts": [
+        "integrated dev: bus interchange + hawker + CC",
+        "Tampines North CRL direct access"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }
