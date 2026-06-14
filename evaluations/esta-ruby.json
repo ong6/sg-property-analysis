@@ -56,6 +56,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-esta-ruby-60205909",
         "review_file": "cov_batch_18.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Genuinely reasonable package — freehold 2BR at the Paya Lebar dual-line interchange (530m) in the liquid sub-$1.7M band — though the value edge is modest and the appreciation series is thin.",
+      "rating_rationale": "Freehold + interchange location (an MRT-proximity signal that survives the backtest) + widest-pool 2BR + $1.64M in the deepest liquidity band is a sound hold, with Paya Lebar Central + airbase relocation as a real long-horizon catalyst. Tempered to LOW confidence: the ~5% discount is modest, the 4.9% CAGR rests on only 12 txns, and freehold is a level premium not a forward edge.",
+      "red_flags": [
+        "thin 12-txn appreciation series",
+        "only ~5% below median (modest edge)",
+        "airbase catalyst is long-dated"
+      ],
+      "catalysts": [
+        "Paya Lebar dual-line interchange 530m",
+        "Paya Lebar Central + airbase relocation"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }
