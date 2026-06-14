@@ -56,6 +56,25 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-botannia-60204318",
         "review_file": "cov_batch_16.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Fair-priced (not cheap) 999yr 2BR in D05/One-North corridor; the prior Buy rested on 4.66% trailing CAGR (now ≈0 forward power under v3.10b) and an 'on_frontier' arena signal, neither a forward edge.",
+      "rating_rationale": "Asking $1,848psf is only ~2% under median — no value edge. 1,076sf is oversized for a 2BR (PSF-flattering, thinner buyer pool). $1.99M sits at the top of the liquid band → price_band drag. Region (RCR) neutral. No dated catalyst. Quality enough to hold, but no investment edge → Neutral.",
+      "red_flags": [
+        "~$2.0M quantum at top of liquid 2BR band",
+        "oversized-for-type 2BR",
+        "value thesis relied on discredited trailing CAGR"
+      ],
+      "catalysts": [],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }

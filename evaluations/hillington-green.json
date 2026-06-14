@@ -58,6 +58,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-hillington-green-500136793",
         "review_file": "cov_batch_06.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "999yr 4BR near Hillview DTL with a reliable appreciation series, but the headline '14% below median' is largely a large-unit size-PSF effect and the $2.8M quantum thins the exit pool.",
+      "rating_rationale": "1,927sf 4BR at $1,453psf: the discount to median is mostly size (big units carry lower PSF), not a true bargain. 999yr + 450m DTL + OCR region (+) are positives, but $2.8M narrows buyers to upgraders. Sound hold, no clear forward edge → Neutral.",
+      "red_flags": [
+        "$2.8M 4BR quantum → upgrader-only pool",
+        "'14% below median' is a size-PSF artifact",
+        "large unit, slower resale"
+      ],
+      "catalysts": [
+        "Hillview DTL 450m",
+        "999-yr near-freehold tenure"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }

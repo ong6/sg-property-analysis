@@ -56,6 +56,25 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-infiniti-500149912",
         "review_file": "cov_batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D05 4BR at a fair (not cheap) PSF with no MRT walk-up; the prior Buy leaned on 6.56% trailing CAGR (≈0 forward power) and freehold, which is a price-level premium rather than a return edge.",
+      "rating_rationale": "$1,778psf is ~3% over median — fair, no margin. No station within walking distance (absent MRT field). $2.43M 4BR quantum narrows the buyer pool. Freehold already priced in. Decent hold, no investment edge.",
+      "red_flags": [
+        "no MRT walk-up",
+        "$2.43M 4BR quantum",
+        "value thesis = discredited trailing CAGR + freehold level-premium"
+      ],
+      "catalysts": [],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }

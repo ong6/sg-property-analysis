@@ -58,6 +58,29 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-chuan-park-500145352",
         "review_file": "cov_batch_11.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Quality Kingsford new launch (Circle Line 210m, 916 units, completing 2028) but priced at a full OCR new-launch premium with no genuine value edge; the prior '9% below median' was a size-PSF artifact, not a discount.",
+      "rating_rationale": "Recent 2BR prints (732-743sf, Jan-2026) transacted $2,668-2,685psf; this 872sf 2BR at $2,439psf is lower PSF only because it is larger (size-relative PSF), not cheap. $2,439-2,650psf is premium for D19/OCR (resale norm ~$1,800-2,200). New-launch pricing already capitalises future upside; engine de-credits it. Good location/liquidity keep it off Avoid.",
+      "red_flags": [
+        "full new-launch premium pricing in OCR",
+        "'discount vs median' is a size effect",
+        "completes 2028 — holding/financing risk",
+        "district new-supply pipeline"
+      ],
+      "catalysts": [
+        "Lorong Chuan Circle Line 210m",
+        "916-unit deep eventual exit liquidity"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }

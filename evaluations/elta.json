@@ -56,6 +56,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-elta-500009053",
         "review_file": "cov_batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "New-launch 4BR at parity to resale comps — no value edge — and a $3.12M quantum that materially thins the resale pool; CRL Clementi (~2032) is real but distant.",
+      "rating_rationale": "Bought at launch parity to 5yr-old Clavon (~$2,393psf), so no cheap-for-age margin. 4BR $3.12M is a thin-liquidity ticket. D05 RCR region neutral. The school belt + CRL support hold value but don't make it a forward outperformer at this entry.",
+      "red_flags": [
+        "$3.12M 4BR quantum → thin exit pool",
+        "new-launch parity pricing, no value margin",
+        "CRL benefit is ~2032, distant"
+      ],
+      "catalysts": [
+        "CRL Clementi interchange ~2032",
+        "Nan Hua / NUS High school belt"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (de-biased value+region lead, trailing CAGR≈0, deep-discount/yield trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy 2026-06-08",
+        "note": "main-loop re-judgment with web verification"
+      }
     }
   ]
 }
