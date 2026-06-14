@@ -4,6 +4,16 @@
   "agent_rental_months_per_year": 0.5,
   "agent_sale_commission": 0.02,
   "vacancy_months_per_year": 0.75,
+  "vacancy_tiers": {
+    "_comment": "Holding-cost vacancy prior tiered by (beds, price band). Flat 0.75mo (~6%) was format-blind; large/luxury formats let slower (smaller qualified-tenant pool, longer marketing, more fit-out turnover) while small mass-market units re-let fastest. Selection (full_scorer/roi pass beds+price): high tier if beds>=4 OR price>high_price_max; low tier if beds<=2 AND price<=low_price_max; else mid (== flat default). Fallback when beds OR price is absent = vacancy_months_per_year (0.75), so callers without both are unchanged. Basis: SG private non-landed occupancy ~94% small/mass-market (~0.5mo), ~92-93% mid (~0.75mo), high-quantum/large ~88-90% (~1.0-1.2mo); URA/agency void-period norms, deliberately conservative on the luxury tail.",
+    "low_months": 0.5,
+    "mid_months": 0.75,
+    "high_months": 1.2,
+    "low_beds_max": 2,
+    "low_price_max": 1500000,
+    "high_beds_min": 4,
+    "high_price_min": 3000001
+  },
   "legal_fee_buy": 3500,
   "legal_fee_sell": 3000,
   "repairs_per_year": 1500,

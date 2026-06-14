@@ -99,9 +99,9 @@ SCORE_TIER2_MIN = 45  # Consider (unchanged)
 # Raw MMR is Elo-style: base 1500, unbounded sum of continuous components.
 # score_1000 = logistic(raw MMR) on a 0-1000 display scale.
 MMR_BASE = 1500
-MMR_NORM_CENTER = 1508  # v3.10 recalibration: mean raw MMR of 6,349-listing DB = 1508.0
-                        # (audit fix wave: fake yield/discount channels disarmed net −8 raw;
-                        # prior centers: 1516 v3.7, 1512 v3.5b)
+MMR_NORM_CENTER = 1505  # v3.10b recalibration: mean raw MMR of 6,349-listing DB = 1504.6
+                        # (lever wave: future→0, cost halved, structural-floor gate, region term;
+                        # prior centers: 1508 v3.10, 1516 v3.7, 1512 v3.5b)
 MMR_NORM_SCALE = 29     # score_1000 sd≈150 (measured Jun 2026, 6.3k-listing DB); tiers (450/650) stable
 # Tier thresholds on the /1000 scale
 SCORE1000_TIER1_MIN = 650  # Recommended
@@ -191,13 +191,72 @@ MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0  # % below comps where marginal credit kinks
 MMR_DISCOUNT_EXCESS_CREDIT = 0.25   # marginal credit per % of discount beyond the knee
 MMR_SUSPECT_VALUE_FACTOR = 0.25     # positive value retained when the reading is suspect
 
-# --- price_band cap (Jun-2026 audit #4) --------------------------------------
+# --- price_band cap (Jun-2026 audit #4; v3.10 trimmed for the region term) ---
 # price_band (exit-liquidity decline above the $2.2M broad-demand knee) was the
 # last uncapped value-side channel: the linear -2.5 pts/$500k slope read -39 raw
-# at a $10M ask. It now saturates (tanh) at this cap — same slope near the knee,
-# so normal $1-4M asks are nearly unchanged (-4.0 → -3.9 at $3M, -9.0 → -8.1 at
-# $4M), while an ultra-luxury quantum reads ~-14.8 (thin exit risk, not a veto).
-MMR_PRICE_BAND_CAP = 15.0
+# at a $10M ask. It saturates (tanh) at this cap — same slope near the knee, so
+# normal $1-4M asks are nearly unchanged (-4.0 → -3.9 at $3M, -9.0 → -8.1 at
+# $4M), while an ultra-luxury quantum reads as thin-exit risk, not a veto.
+# v3.10: 15.0 → 11.0. The new explicit MMR_REGION_SLOPE tilt (below) overlaps
+# the luxury-quantum penalty — high quantum is region-correlated/CCR-skewed, so
+# part of what price_band charged the ultra-luxury tail is now charged directly
+# as the CCR region tilt (raw -2.3). Trimming the cap by ~the region swing
+# (~4.2 raw) avoids double-penalizing CCR luxury once region enters explicitly.
+MMR_PRICE_BAND_CAP = 11.0
+
+# --- v3.10 measured-lever reweights (audit AUDIT_JUN2026.md "STILL OPEN") -----
+# A measurement pass (as-of-T, forward-2yr, project-cluster bootstrap 95% CIs,
+# repeat-sales-robust) re-read the three structural levers and added an explicit
+# region term. Constants are named so the magnitudes stay traceable to the CIs.
+#
+# future → ZERO. Univariate ρ +0.061 CI[-0.013,+0.143] (UNDETERMINED — crosses
+# 0), multivariate std_β -0.024 (negative sign), repeat-sales -0.016. The
+# infra/MRT/zone/transformation heuristic has no measured forward power in any
+# construction. The future_potential_score is still computed and surfaced in
+# factual_data for the agent's qualitative read; only its MMR points go to 0.
+MMR_FUTURE_WEIGHT = 0.0
+
+# cost → HALVE. cost_efficiency is a deterministic sqft/beds function (mcst /
+# AV / $-per-bed), so it is partly value-in-disguise. Measured std_β +0.122
+# CI[+0.018,+0.231] — survives 0 but weak, and the split-sample read is
+# UNDETERMINED. Keep it at half its prior ±5 swing (now ±2.5).
+MMR_COST_WEIGHT = 0.5
+
+# region → NEW explicit tilt for DATA-RICH listings. Region is the strongest
+# measured forward signal (region_delta ranks +0.219 CI[+0.129,+0.299]; adding
+# the term lifts the clean out-of-split composite ρ +0.240 → +0.249), but it
+# only reached the FALLBACK appreciation path before — a listing with real
+# project (ura_*) appreciation never saw a regional tilt. The term is
+# MMR_REGION_SLOPE × (region baseline% − mean baseline%), with the mean of the
+# three REGIONAL_APPRECIATION_BASELINES (CCR 2.8 / RCR 3.7 / OCR 4.2 → mean
+# 3.567): raw CCR -2.3, RCR +0.4, OCR +1.9 (span ±4.2). Slope is anchored to
+# MMR_APPRECIATION_SLOPE (3.0) — the regime-robust choice, NOT a larger
+# bull-maximizing slope: the region read is single-bull-regime bound, so it is
+# de-emphasized to the same conservative pts/pp the appreciation channel uses.
+# CRITICAL (mmr.py): applied ONLY when appreciation data_source is real project
+# data (ura_*), never on a regional_baseline fallback — those listings already
+# carry the regional rate AS their appreciation input, so adding the tilt would
+# double-count region. Unknown region → 0.
+MMR_REGION_SLOPE = MMR_APPRECIATION_SLOPE  # 3.0 — regime-robust, matches appreciation
+
+# Structural-floor GATE (the v3.10 correctness fix). With ALL value+yield credit
+# zeroed (psf_value ≤ 0 AND age_value ≤ 0 AND yield ≤ 0 — i.e. NO positive
+# value/yield evidence, covering both genuinely-poor-value units and
+# suspect-damped artifacts), the validated non-value pile (age plateau +5,
+# appreciation, buyer_pool, mrt, dev_size, region, lease) plus future+cost still
+# floored known PES/loft artifacts above the 650 Buy tier (Coco Palms 624sf at
+# 784). The gate caps the SUM of the POSITIVE parts of (future + cost + dev_size)
+# at this raw value, scaling them down proportionally when their positive sum
+# exceeds it. Negatives and every validated component (age/appreciation/
+# buyer_pool/mrt/region/lease) are untouched — a genuine large/new OCR
+# development with real value credit never trips the gate (psf_value/age_value
+# > 0 disarms it). Floor math: raw at the 650 threshold ≈ 1526
+# (MMR_NORM_CENTER 1508 + MMR_NORM_SCALE 29 · logit(0.65)); the validated
+# non-value pile a value-less unit can legitimately earn already supplies up to
+# ~+22.9 raw, so capping the unvalidated structural trio at +3.1 keeps a
+# value-less/suspect listing below Buy on structure alone (1500 + 22.9 + 3.1 =
+# 1526 ≈ the 650 raw).
+MMR_STRUCTURAL_FLOOR_CAP = 3.1
 
 # ============================================================================
 # UNIT-SIZE BANDS — like-for-like PSF comparison within a project

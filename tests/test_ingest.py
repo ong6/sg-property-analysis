@@ -6,6 +6,7 @@
   #14  ingest_flags on synthetic records
   #14b batch sanity gate abort
   #7b  strategy-aware price history (DOM min vs JSON midpoint)
+  poll  poll-cycle detail enrichment of new listings (best-effort)
 """
 
 import fcntl
@@ -384,3 +385,190 @@ class TestStalenessSweep:
         rec = listings_db.load_db()["listings"]["100000001"]
         assert rec["status"] == "active"
         assert "stale_reason" not in rec and "stale_at" not in rec
+
+
+# ---------------------------------------------------------------------------
+# poll  poll-cycle detail enrichment of new listings (best-effort)
+#
+# The enrichment path opens a real browser + visits PG detail pages — neither
+# is allowed in tests. We stub the two seams: BrowserManager / scraper (so no
+# browser launches) and poller._enrich_one (so no network fetch). The behavior
+# under test is the orchestration: per-listing try/except, count bookkeeping,
+# targeted field merge that re-fires ingest_flags, and that one failure never
+# aborts the rest of the batch.
+# ---------------------------------------------------------------------------
+
+import poller  # noqa: E402  (after sandbox fixtures defined above)
+
+
+class _FakeContext:
+    """Minimal browser-context stand-in: never touches the network."""
+    pages = []
+    def new_page(self):
+        return None
+
+
+class _FakeBrowserManager:
+    """Drop-in for scrapers.browser.BrowserManager — a no-op context manager."""
+    def __init__(self, *a, **kw):
+        pass
+    def __enter__(self):
+        return _FakeContext()
+    def __exit__(self, *a):
+        return False
+
+
+class _FakeScraper:
+    def __init__(self, context):
+        self._context = context
+        self._page = None
+
+
+@pytest.fixture
+def stub_browser(monkeypatch):
+    """Replace the browser + scraper so _enrich_new_keys never launches one."""
+    import scrapers.browser
+    import scrapers.propertyguru
+    monkeypatch.setattr(scrapers.browser, "BrowserManager", _FakeBrowserManager)
+    monkeypatch.setattr(scrapers.propertyguru, "PropertyGuruScraper", _FakeScraper)
+    # No real inter-detail sleeping in tests.
+    monkeypatch.setattr(poller.time, "sleep", lambda *_a, **_k: None)
+
+
+class TestPollEnrichment:
+    def _seed_new(self, ids):
+        listings_db.upsert_listings([
+            _listing(id=i, url=f"https://pg.example/listing/for-sale-test-condo-{i}")
+            for i in ids])
+
+    def test_enrich_is_best_effort_one_failure(self, tmp_db, stub_browser, monkeypatch):
+        """A detail-fetch that raises on ONE listing must not abort the cycle:
+        the others still enrich and the failure is counted."""
+        self._seed_new(["100000001", "100000002", "100000003"])
+
+        def fake_enrich_one(scraper, listing):
+            if listing.id == "100000002":
+                raise RuntimeError("boom: detail page 502")
+            return {"floor_level": "High Floor", "facing": "North",
+                    "latitude": 1.3001, "longitude": 103.8}
+
+        monkeypatch.setattr(poller, "_enrich_one", fake_enrich_one)
+
+        result = poller._enrich_new_keys(
+            ["100000001", "100000002", "100000003"], headless=True, cap=20)
+
+        assert result["attempted"] == 3
+        assert result["enriched"] == 2          # 001 + 003
+        assert result["failed"] == 1            # 002 raised
+        # Enriched fields persisted on the survivors...
+        store = listings_db.load_db()["listings"]
+        assert store["100000001"]["floor_level"] == "High Floor"
+        assert store["100000001"]["facing"] == "North"
+        assert store["100000003"]["latitude"] == 1.3001
+        # ...and the failed listing was left untouched (no partial write).
+        assert "floor_level" not in store["100000002"]
+
+    def test_enrich_refreshes_ingest_flags(self, tmp_db, stub_browser, monkeypatch):
+        """Merging enrichment fields re-runs compute_ingest_flags so the
+        keyword/format flags reflect the now-complete record."""
+        self._seed_new(["100000001"])
+        monkeypatch.setattr(poller, "_enrich_one",
+                            lambda s, l: {"facing": "South"})
+        poller._enrich_new_keys(["100000001"], headless=True)
+        rec = listings_db.load_db()["listings"]["100000001"]
+        assert rec["facing"] == "South"
+        # ingest_flags present and consistent with the merged record.
+        assert rec["ingest_flags"] == listings_db.compute_ingest_flags(rec)
+
+    def test_enrich_respects_cap(self, tmp_db, stub_browser, monkeypatch):
+        """Only `cap` new keys hit detail pages — the rest are left for a
+        later cycle (bounds detail-page time at 2s each)."""
+        self._seed_new(["100000001", "100000002", "100000003"])
+        seen = []
+        def fake(scraper, listing):
+            seen.append(listing.id)
+            return {"facing": "East"}
+        monkeypatch.setattr(poller, "_enrich_one", fake)
+        result = poller._enrich_new_keys(
+            ["100000001", "100000002", "100000003"], cap=2)
+        assert result["attempted"] == 2
+        assert len(seen) == 2
+
+    def test_enrich_no_keys_is_noop(self, tmp_db, stub_browser):
+        assert poller._enrich_new_keys([]) == {
+            "enriched": 0, "failed": 0, "attempted": 0}
+
+    def test_enrich_skips_already_populated_field(self, tmp_db, stub_browser, monkeypatch):
+        """_apply_enrichment only fills blanks — a detail value for a field the
+        record already has must not overwrite it / count as enriched."""
+        self._seed_new(["100000001"])
+        db = listings_db.load_db()
+        db["listings"]["100000001"]["facing"] = "West"
+        listings_db.save_db(db)
+        monkeypatch.setattr(poller, "_enrich_one",
+                            lambda s, l: {"facing": "North", "floor_level": "Low"})
+        result = poller._enrich_new_keys(["100000001"])
+        rec = listings_db.load_db()["listings"]["100000001"]
+        assert rec["facing"] == "West"          # not overwritten
+        assert rec["floor_level"] == "Low"      # blank field filled
+        assert result["enriched"] == 1
+
+    def test_run_poll_enriches_new_before_scoring(self, tmp_db, stub_browser, monkeypatch):
+        """Full cycle: a genuinely-new scrape result gets detail-enriched and
+        the counts surface in poll_state; a fetch failure is best-effort."""
+        # Sandbox poll_state + history into the tmp dir.
+        monkeypatch.setattr(poller, "POLL_STATE_FILE",
+                            str(tmp_db / "poll_state.json"))
+        monkeypatch.setattr(poller, "MMR_HISTORY_CSV",
+                            str(tmp_db / "mmr_history.csv"))
+        monkeypatch.setattr(poller, "DATA_DIR", str(tmp_db))
+
+        scraped = [
+            _listing(id="100000001",
+                     url="https://pg.example/listing/for-sale-test-condo-100000001"),
+            _listing(id="100000002",
+                     url="https://pg.example/listing/for-sale-test-condo-100000002"),
+        ]
+        # Stub the network-y collaborators of run_poll.
+        import invest
+        monkeypatch.setattr(invest, "scrape_listings", lambda **kw: scraped)
+        monkeypatch.setattr(listings_db, "sweep_staleness",
+                            lambda *a, **k: {"scopes": 0, "checked": 0,
+                                             "missed": 0, "newly_stale": 0})
+        # One listing's detail fetch raises -> best-effort.
+        def fake_enrich_one(scraper, listing):
+            if listing.id == "100000002":
+                raise RuntimeError("detail 500")
+            return {"floor_level": "High Floor", "facing": "North"}
+        monkeypatch.setattr(poller, "_enrich_one", fake_enrich_one)
+        # Avoid touching the real scoring pipeline / URA cache in this test.
+        monkeypatch.setattr(poller, "_score_keys", lambda keys: (0, []))
+
+        state = poller.run_poll(districts=[15], beds=[2], enrich_new=20)
+
+        assert state["ok"] is True
+        assert state["enriched"] == 1
+        assert state["enrich_failed"] == 1
+        rec = listings_db.load_db()["listings"]["100000001"]
+        assert rec["floor_level"] == "High Floor"
+
+    def test_run_poll_no_enrich_when_disabled(self, tmp_db, stub_browser, monkeypatch):
+        """enrich_new=0 (the --no-enrich path) skips detail fetches entirely."""
+        monkeypatch.setattr(poller, "POLL_STATE_FILE",
+                            str(tmp_db / "poll_state.json"))
+        monkeypatch.setattr(poller, "MMR_HISTORY_CSV",
+                            str(tmp_db / "mmr_history.csv"))
+        monkeypatch.setattr(poller, "DATA_DIR", str(tmp_db))
+        import invest
+        monkeypatch.setattr(invest, "scrape_listings", lambda **kw: [_listing()])
+        monkeypatch.setattr(listings_db, "sweep_staleness",
+                            lambda *a, **k: {"scopes": 0, "checked": 0,
+                                             "missed": 0, "newly_stale": 0})
+        monkeypatch.setattr(poller, "_score_keys", lambda keys: (0, []))
+        called = []
+        monkeypatch.setattr(poller, "_enrich_new_keys",
+                            lambda *a, **k: called.append(1) or {})
+        state = poller.run_poll(districts=[15], beds=[2], enrich_new=0)
+        assert called == []                     # never invoked
+        assert state["enriched"] == 0
+        assert state["enrich_failed"] == 0

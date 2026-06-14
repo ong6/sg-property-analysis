@@ -113,6 +113,7 @@ class ROICalculator:
         """
         purchase_price = listing.get("price", 0)
         sqft = listing.get("sqft", 0)
+        beds = listing.get("beds")
 
         if not purchase_price or not sqft:
             return self._empty_result(hold_years, purchase_price)
@@ -139,7 +140,9 @@ class ROICalculator:
                 compounded_price *= (1 + year_rate)
             exit_price = int(compounded_price)
 
-        # Calculate costs
+        # Calculate costs. When vacancy_months_per_year is not given explicitly,
+        # the breakdown resolves it from the (beds, price) tier — large/luxury
+        # formats let more slowly (see CostCalculator.resolve_vacancy_months).
         cost_breakdown = self.cost_calc.create_cost_breakdown(
             purchase_price=purchase_price,
             sqft=sqft,
@@ -150,6 +153,14 @@ class ROICalculator:
             property_count=self.property_count,
             agent_rental_months_per_year=agent_rental_months_per_year,
             vacancy_months_per_year=vacancy_months_per_year,
+            beds=beds,
+        )
+        # The vacancy assumption actually used (resolved tier or explicit override),
+        # surfaced on the result so callers can show / vary it.
+        vacancy_months_used = (
+            vacancy_months_per_year
+            if vacancy_months_per_year is not None
+            else self.cost_calc.resolve_vacancy_months(beds, purchase_price)
         )
 
         # Entry (transaction) costs — sunk at purchase. Audit #11: these used
@@ -253,7 +264,7 @@ class ROICalculator:
         gross_yield = (annual_rent_gross / purchase_price) * 100 if purchase_price > 0 else 0
         net_yield = (annual_rent_net / purchase_price) * 100 if purchase_price > 0 else 0
 
-        return ROIResult(
+        result = ROIResult(
             hold_years=hold_years,
             purchase_price=purchase_price,
             estimated_exit_price=exit_price,
@@ -280,6 +291,13 @@ class ROICalculator:
             total_mortgage_interest=round(total_interest, 2),
             remaining_principal_at_exit=round(remaining_principal, 2),
         )
+        # Surface the vacancy assumption actually used. ROIResult is a plain
+        # (non-slots) dataclass defined elsewhere; attaching as a dynamic
+        # attribute keeps it visible to callers without touching its schema and
+        # without affecting dataclass `==` (which compares declared fields only,
+        # so ltv=0 stays exactly equal to the all-cash default).
+        result.vacancy_months_per_year = round(vacancy_months_used, 4)
+        return result
 
     @staticmethod
     def _amortize(
@@ -353,13 +371,22 @@ class ROICalculator:
         ltv: float = 0.0,
         mortgage_rate_pct: Optional[float] = None,
         mortgage_rate_delta_pp: float = 1.0,
+        vacancy_delta_months: float = 0.5,
     ) -> dict[str, dict[int, ROIResult]]:
         """
-        Calculate ROI sensitivity scenarios (downside/base/upside).
+        Calculate ROI sensitivity scenarios.
 
-        Downside/upsides adjust rent and appreciation rate. When financed
-        (ltv > 0) an interest-rate axis is added: rate_up/rate_down scenarios
-        move the mortgage rate by +/- mortgage_rate_delta_pp.
+        - downside/base/upside adjust rent and appreciation rate.
+        - vac_low/vac_high vary the vacancy assumption by
+          -/+ vacancy_delta_months around the unit's tiered base prior
+          (floored at 0). vac_low = optimistic occupancy, vac_high = pessimistic.
+        - When financed (ltv > 0) a rate axis is added: rate_up/rate_down move
+          the mortgage rate by +/- mortgage_rate_delta_pp.
+
+        The return dict also carries an `assumptions` key (deltas + the resolved
+        base/low/high vacancy months) so callers can surface what was varied.
+        The per-scenario values remain `{year: ROIResult}` dicts, so existing
+        explicit-key access (e.g. sensitivity["downside"][5]) is unaffected.
         """
         if monthly_rent is None:
             rental_data = self.rental_estimator.estimate(listing)
@@ -372,11 +399,20 @@ class ROICalculator:
             mortgage_rate_pct if mortgage_rate_pct is not None
             else self.default_mortgage_rate_pct
         )
+        # Unit's tiered vacancy prior is the centre of the vacancy axis.
+        base_vacancy = self.cost_calc.resolve_vacancy_months(
+            listing.get("beds"), listing.get("price")
+        )
+        vac_low = max(0.0, base_vacancy - vacancy_delta_months)
+        vac_high = base_vacancy + vacancy_delta_months
 
         scenarios = {
             "downside": {"rent_mult": 1 - rent_delta, "rate_delta": -appr_delta},
             "base": {"rent_mult": 1.0, "rate_delta": 0.0},
             "upside": {"rent_mult": 1 + rent_delta, "rate_delta": appr_delta},
+            # Vacancy axis (optimistic / pessimistic occupancy)
+            "vac_low": {"rent_mult": 1.0, "rate_delta": 0.0, "vacancy": vac_low},
+            "vac_high": {"rent_mult": 1.0, "rate_delta": 0.0, "vacancy": vac_high},
         }
         if ltv > 0:
             scenarios["rate_up"] = {
@@ -395,6 +431,7 @@ class ROICalculator:
             # Keep within reasonable bounds (-5% to +15%/yr)
             adj_rate = max(-0.05, min(0.15, adj_rate))
             adj_mortgage = max(0.0, base_mortgage_rate + cfg.get("mortgage_delta", 0.0))
+            adj_vacancy = cfg.get("vacancy")  # None -> calculate() resolves the tier
             results[name] = {}
             for years in periods:
                 results[name][years] = self.calculate(
@@ -402,9 +439,18 @@ class ROICalculator:
                     hold_years=years,
                     monthly_rent=adj_rent,
                     appreciation_rate=adj_rate,
+                    vacancy_months_per_year=adj_vacancy,
                     ltv=ltv,
                     mortgage_rate_pct=adj_mortgage,
                 )
+        results["assumptions"] = {
+            "rent_delta_pct": rent_delta,
+            "appreciation_delta_pct": appr_delta,
+            "vacancy_delta_months": vacancy_delta_months,
+            "vacancy_base_months": round(base_vacancy, 4),
+            "vacancy_low_months": round(vac_low, 4),
+            "vacancy_high_months": round(vac_high, 4),
+        }
         return results
 
     def _empty_result(self, hold_years: int, purchase_price: int) -> ROIResult:
@@ -459,7 +505,10 @@ def quick_roi_estimate(
 
     # Annual costs (simplified)
     annual_costs = sqft * 0.35 * 12  # MCST
-    annual_costs += monthly_rent * 1.25  # Vacancy (0.75) + agent (0.5), matches full calculator
+    # Vacancy (0.75 flat mid-tier prior) + agent (0.5). This quick path has no
+    # beds, so it uses the flat fallback the full calculator falls back to when
+    # (beds, price) can't tier the vacancy (resolve_vacancy_months).
+    annual_costs += monthly_rent * 1.25
     annual_costs += 1800  # Repairs/insurance
     annual_costs += annual_rent * 0.15  # Property tax estimate
 

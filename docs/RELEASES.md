@@ -182,6 +182,59 @@ source-grep "tests").
   cohorts, no window overlap, normalized join + join-rate print; registered
   holdout: v3.10 locked 2026-06-12, post-2026-06 URA = untouched test set).
 
+## v3.10b — Measured lever wave (2026-06-14)
+
+The "evidence-gated improvement" items from AUDIT_JUN2026 STATUS, each backed by
+a fresh CI measurement (`backtest_ext.py` PARTs 6–8, project-cluster bootstrap,
+repeat-sales cross-checked). Norm center 1508→**1505**; DB rescored (mean 502,
+sd 148); 384 tests.
+
+- **`future` → 0** (`MMR_FUTURE_WEIGHT=0.0`). Univariate ρ +0.061 CI[−0.013,+0.143]
+  UNDETERMINED, multivariate std_β −0.024 (negative), repeat-sales −0.016 — no
+  forward power, ever. `future_potential_score` still computed + shown for the
+  agent's qualitative read; only its MMR points go to 0. (MRT proximity is a
+  separate validated channel — not affected.)
+- **`cost` → halved** (`MMR_COST_WEIGHT=0.5`, ±2.5). std_β +0.122 CI[+0.018,+0.231]
+  survives controls but split-sample UNDET; a deterministic sqft/beds function,
+  partly value-in-disguise → keep at reduced weight, don't zero.
+- **`dev_size` → kept** (std_β +0.130 CI[+0.018,+0.239], significant in the joint
+  model — the audit's "+0.045 undetermined" was an underestimate).
+- **NEW region term for data-rich listings** (`MMR_REGION_SLOPE=3.0`, =appreciation
+  slope). Region is the strongest measured signal but previously only reached
+  fallback paths; for a data-rich resale it now enters explicitly as a forward
+  baseline tilt (CCR −2.3 / RCR +0.4 / OCR +1.9 raw, span ±4.2). **Gated to fire
+  only when appreciation `data_source` is real `ura_*` data** (a regional-baseline
+  fallback already encodes region in its rate — adding the term would double-count).
+  Clean out-of-split composite ρ +0.240→+0.249; regime-bound, anchored to the
+  conservative slope. **Funded by lowering `price_band` cap 15→11** (luxury
+  quantum is region-correlated/CCR-skewed; the explicit tilt overlaps it).
+- **Structural-floor gate** (`MMR_STRUCTURAL_FLOOR_CAP=3.1`): when value is
+  untrustworthy — no positive value/yield credit OR **suspect-damped** (the key
+  fix vs the first cut, which missed suspect listings retaining a small positive
+  residual) — the **unvalidated** components (future, cost) can't pile structural
+  credit on top. **Deliberately excludes the validated `dev_size`** — capping a
+  validated project-level signal is the anti-pattern the audit warns against. A
+  flagged 1BR in a genuinely strong project (Coco Palms 624sf PES) therefore
+  scores at that project's quality level (~750) once its FAKE discount is damped
+  out, rather than being force-pushed below 650 by penalising real signals — it
+  no longer TOPS the ranking (was #1 at 901; now ~#35), and the red flag is the
+  agent's verify-first cue.
+- **Vacancy priors by format** (`roi.py`/`costs.py`): tiered by (beds, price) —
+  0.5mo for small mass-market, 0.75mo default, 1.2mo for 4BR+/>$3M; vacancy axis
+  added to ROI sensitivity. (All-cash/leverage/income-tax behaviour preserved.)
+- **Poll detail enrichment** (`poller.py`): new listings each cycle are now
+  detail-enriched (floor/facing/coords/format words) best-effort before scoring
+  (`--enrich-new N`, default 20; `--no-enrich`) — closes the 0%-floor-coverage
+  gap that kept floor-aware comps + livability floor/facing inert.
+- **EC comp join** (`full_scorer.py`): EC listings benchmark against EC prints
+  (`ura_district_D{NN}_EC.csv`, `ec_benchmark`/`ec_no_ec_prints` flags), graceful
+  when the EC file is absent (= today's condo-only behaviour). **Requires the EC
+  fetch** (`python fetch_ura_districts.py --property-types ec` — interactive
+  browser + possible CAPTCHA, user-run) to populate the prints.
+- **Validation infra (no weight change):** repeat-sales outcome construction
+  (`--repeat-sales`) confirms every headline conclusion is unit-mix-robust
+  (outcome agreement ρ +0.754; value+region lead, OCR>CCR, future/cost≈0 all hold).
+
 ## Open items / unvalidated levers
 
 **The Jun-2026 full-system audit (`docs/AUDIT_JUN2026.md`) is the current

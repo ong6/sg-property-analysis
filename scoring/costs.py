@@ -183,12 +183,52 @@ class CostCalculator:
         rate = self.params.get("mcst_rate_per_sqft", 0.35)
         return sqft * rate
 
+    def resolve_vacancy_months(
+        self,
+        beds: Optional[int] = None,
+        price: Optional[float] = None,
+    ) -> float:
+        """Resolve the vacancy prior (months/yr rent lost) for a unit format.
+
+        Vacancy is tiered by (beds, price band): large/luxury formats let more
+        slowly than small mass-market units (see `vacancy_tiers` in
+        cost_parameters.json for the bands + basis). Selection:
+        - high tier  if beds >= high_beds_min  OR  price >= high_price_min
+        - low tier   if beds <= low_beds_max    AND price <= low_price_max
+        - mid tier   otherwise (== the flat default)
+
+        Fallback: when beds OR price is unknown, returns the flat
+        `vacancy_months_per_year` default so any caller without both inputs
+        is unchanged. The flat default also stands if no tier table is present.
+        """
+        flat = self.params.get("vacancy_months_per_year", 0.75)
+        tiers = self.params.get("vacancy_tiers")
+        # Need a tier table AND both inputs to tier; otherwise keep the flat prior.
+        if not tiers or beds is None or price is None:
+            return flat
+
+        mid = tiers.get("mid_months", flat)
+        high = tiers.get("high_months", flat)
+        low = tiers.get("low_months", flat)
+        high_beds_min = tiers.get("high_beds_min", 4)
+        high_price_min = tiers.get("high_price_min", 3_000_001)
+        low_beds_max = tiers.get("low_beds_max", 2)
+        low_price_max = tiers.get("low_price_max", 1_500_000)
+
+        if beds >= high_beds_min or price >= high_price_min:
+            return high
+        if beds <= low_beds_max and price <= low_price_max:
+            return low
+        return mid
+
     def calculate_annual_holding_costs(
         self,
         monthly_rent: float,
         sqft: float,
         agent_rental_months_per_year: Optional[float] = None,
         vacancy_months_per_year: Optional[float] = None,
+        beds: Optional[int] = None,
+        price: Optional[float] = None,
     ) -> dict:
         """
         Calculate all annual holding costs.
@@ -197,7 +237,11 @@ class CostCalculator:
         - property_tax: Based on annual value (rent * 12)
         - mcst: Monthly MCST * 12
         - agent_rental_fee: 0.5 months rent/year average
-        - vacancy_cost: ~0.75 months rent lost per year (from cost_parameters.json)
+        - vacancy_cost: rent lost per year. If `vacancy_months_per_year` is not
+          given explicitly, it is resolved from the (beds, price) tier
+          (`resolve_vacancy_months`); falls back to the flat ~0.75mo prior
+          when beds or price is absent.
+        - vacancy_months: the resolved vacancy assumption (surfaced for output)
         - repairs_insurance: Fixed annual cost
         """
         annual_value = monthly_rent * 12
@@ -212,7 +256,7 @@ class CostCalculator:
         vacancy_months = (
             vacancy_months_per_year
             if vacancy_months_per_year is not None
-            else self.params.get("vacancy_months_per_year", 0.75)
+            else self.resolve_vacancy_months(beds, price)
         )
         repairs = self.params.get("repairs_per_year", 1500)
         insurance = self.params.get("insurance_per_year", 300)
@@ -222,6 +266,7 @@ class CostCalculator:
             "mcst": mcst_annual,
             "agent_rental_fee": monthly_rent * agent_months,
             "vacancy_cost": monthly_rent * vacancy_months,
+            "vacancy_months": vacancy_months,
             "repairs_insurance": repairs + insurance,
         }
 
@@ -247,8 +292,14 @@ class CostCalculator:
         property_count: int = 0,
         agent_rental_months_per_year: Optional[float] = None,
         vacancy_months_per_year: Optional[float] = None,
+        beds: Optional[int] = None,
     ) -> CostBreakdown:
-        """Create a complete cost breakdown for a property investment."""
+        """Create a complete cost breakdown for a property investment.
+
+        `beds` (with `purchase_price`) selects the vacancy tier when
+        `vacancy_months_per_year` is not given explicitly; absent beds falls
+        back to the flat default (see `resolve_vacancy_months`).
+        """
         if exit_price is None:
             appreciation = self.params.get("annual_appreciation_estimate", 0.02)
             exit_price = int(purchase_price * (1 + appreciation) ** hold_years)
@@ -258,6 +309,8 @@ class CostCalculator:
             sqft,
             agent_rental_months_per_year=agent_rental_months_per_year,
             vacancy_months_per_year=vacancy_months_per_year,
+            beds=beds,
+            price=purchase_price,
         )
         exit_costs = self.calculate_exit_costs(exit_price, hold_years)
 

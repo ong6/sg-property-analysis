@@ -41,17 +41,20 @@ def _ym(months_ago):
     return datetime(m // 12, m % 12 + 1, 1)
 
 
-def _prints(entries):
-    """entries: list of (sqft, psf, floor, months_ago[, sale_type]).
+def _prints(entries, is_ec=False):
+    """entries: list of (sqft, psf, floor, months_ago[, sale_type[, is_ec]]).
 
     months_ago=None → undated print. sale_type defaults to "Resale".
+    is_ec defaults to the function-level `is_ec` (so a whole seeded project can
+    be marked EC); a per-entry 6th element overrides it.
     """
     out = []
     for e in entries:
         sqft, psf, floor, months_ago = e[:4]
         sale_type = e[4] if len(e) > 4 else "Resale"
+        ec = e[5] if len(e) > 5 else is_ec
         dt = _ym(months_ago) if months_ago is not None else None
-        out.append((sqft, psf, floor, dt, sale_type))
+        out.append((sqft, psf, floor, dt, sale_type, ec))
     return out
 
 
@@ -749,3 +752,97 @@ class TestMmrTrustTriggers:
         src = inspect.getsource(mmr)
         assert "ask_below_stack_prints" in src
         assert "stack_premium_pct" in src
+
+
+class TestEcCompJoin:
+    """v3.10 (audit #4 EC blind spot): EC prints load from ura_district_D{NN}
+    _EC.csv and an EC listing benchmarks ONLY against EC prints (a condo
+    listing ONLY against condo prints) — never the other type's medians."""
+
+    EC_LISTING = {"sqft": 700, "project_name": "Parc Life", "district": "D27",
+                  "property_type": "Executive Condominium"}
+    CONDO_LISTING = {"sqft": 700, "project_name": "Parc Life", "district": "D27",
+                     "property_type": "Condominium"}
+
+    def _seed_mixed(self, monkeypatch):
+        # Same project name has BOTH EC and condo prints in the district file
+        # set; the join must keep them separate.
+        ec = _prints([(700, 1100, "06 to 10", 5), (705, 1120, "06 to 10", 3)],
+                     is_ec=True)
+        condo = _prints([(700, 1600, "06 to 10", 5), (705, 1620, "06 to 10", 3)],
+                        is_ec=False)
+        _seed(monkeypatch, "D27", "Parc Life", ec + condo)
+
+    def test_ec_listing_benchmarks_against_ec_prints(self, scorer, monkeypatch):
+        self._seed_mixed(monkeypatch)
+        med, n, _, _, _, _ = scorer._tight_size_comps(self.EC_LISTING)
+        assert n == 2 and med == 1110  # EC prints only (not the 1610 condo med)
+
+    def test_condo_listing_benchmarks_against_condo_prints(self, scorer, monkeypatch):
+        self._seed_mixed(monkeypatch)
+        med, n, _, _, _, _ = scorer._tight_size_comps(self.CONDO_LISTING)
+        assert n == 2 and med == 1610  # condo prints only
+
+    def test_ec_benchmark_flag_exported(self, flag_scorer, monkeypatch):
+        ec = _prints([(700, 1100, "06 to 10", 5), (705, 1120, "06 to 10", 3)],
+                     is_ec=True)
+        _seed(monkeypatch, "D27", "Parc Life", ec)
+        res = flag_scorer._score_red_flags(
+            dict(self.EC_LISTING, psf=1110), _stub_scored())
+        assert res.get("ec_benchmark") is True
+        assert "ec_no_ec_prints" not in res
+        assert "no_ura_prints" not in res
+
+    def test_ec_no_ec_prints_when_only_condo_prints(self, flag_scorer, monkeypatch):
+        # EC listing, project has ONLY condo prints (EC file unfetched, or the
+        # project genuinely has no EC sales) → visible verify-first flag, NOT a
+        # silent condo-median benchmark.
+        condo = _prints([(700, 1600, "06 to 10", 5), (705, 1620, "06 to 10", 3)],
+                        is_ec=False)
+        _seed(monkeypatch, "D27", "Parc Life", condo)
+        res = flag_scorer._score_red_flags(
+            dict(self.EC_LISTING, psf=1400), _stub_scored())
+        assert res.get("ec_no_ec_prints") is True
+        assert res.get("no_ura_prints") is True  # zero MATCHING prints
+        assert "ec_benchmark" not in res
+
+    def test_condo_listing_never_gets_ec_flags(self, flag_scorer, monkeypatch):
+        self._seed_mixed(monkeypatch)
+        res = flag_scorer._score_red_flags(
+            dict(self.CONDO_LISTING, psf=1610), _stub_scored())
+        assert "ec_benchmark" not in res and "ec_no_ec_prints" not in res
+
+    def test_graceful_when_ec_file_absent(self, scorer, monkeypatch, tmp_path):
+        # No _EC.csv on disk → only the base condo CSV loads; an EC listing
+        # simply finds no matching prints (exactly today's pre-fix behavior),
+        # no crash.
+        recent = _ym(3).strftime("%b-%y")
+        csv = tmp_path / "ura_district_D27.csv"
+        csv.write_text(
+            "Project Name,Area (SQFT),Unit Price ($ PSF),Sale Date,"
+            "Type of Sale,Type of Area,Number of Units,Floor Level\n"
+            f"PARC LIFE,700,\"1,600\",{recent},Resale,Strata,1,06 to 10\n"
+            f"PARC LIFE,705,\"1,620\",{recent},Resale,Strata,1,06 to 10\n"
+        )
+        monkeypatch.setattr(fs, "_DATA_DIR", str(tmp_path))
+        monkeypatch.setattr(fs, "_raw_prints_cache", {})
+        ec_med, ec_n, _, _, _, _ = scorer._tight_size_comps(self.EC_LISTING)
+        assert ec_med is None and ec_n == 0      # EC listing: no EC prints
+        condo_med, condo_n, _, _, _, _ = scorer._tight_size_comps(self.CONDO_LISTING)
+        assert condo_n == 2 and condo_med == 1610  # condo path unchanged
+
+    def test_loader_tags_ec_from_suffix_file(self, monkeypatch, tmp_path):
+        # End-to-end through _load_district_prints: the _EC.csv prints carry
+        # is_ec=True, the base CSV prints is_ec=False.
+        recent = _ym(3).strftime("%b-%y")
+        header = ("Project Name,Area (SQFT),Unit Price ($ PSF),Sale Date,"
+                  "Type of Sale,Type of Area,Number of Units,Floor Level\n")
+        (tmp_path / "ura_district_D27.csv").write_text(
+            header + f"PARC LIFE,700,\"1,600\",{recent},Resale,Strata,1,06 to 10\n")
+        (tmp_path / "ura_district_D27_EC.csv").write_text(
+            header + f"PARC LIFE,700,\"1,100\",{recent},Resale,Strata,1,06 to 10\n")
+        monkeypatch.setattr(fs, "_DATA_DIR", str(tmp_path))
+        monkeypatch.setattr(fs, "_raw_prints_cache", {})
+        prints = fs._load_district_prints("D27")[fs._pu_normalize("Parc Life")]
+        by_ec = {t[5]: t[1] for t in prints}
+        assert by_ec[True] == 1100 and by_ec[False] == 1600

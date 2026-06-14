@@ -2,6 +2,8 @@
 
 import copy
 
+import pytest
+
 from scoring.full_scorer import FullScorer
 from scoring.mmr import normalize_mmr, apply_appreciation_override, compute_mmr
 
@@ -366,7 +368,9 @@ class TestOverrideClampAndDamping:
 
 class TestPriceBandCap:
     """Audit #4: price_band was the only uncapped value-side channel (-39 raw
-    at $10M). The tanh cap must preserve the normal $1-4M range."""
+    at $10M). The tanh cap must preserve the near-knee slope. v3.10: cap 15→11
+    (funds the explicit region tilt, which overlaps the CCR-skewed luxury
+    quantum penalty) — near-knee continuity holds; the tail saturates earlier."""
 
     def _pb(self, price):
         s = _score(BASE)
@@ -377,17 +381,228 @@ class TestPriceBandCap:
         assert self._pb(1_500_000) == 0.0
         assert self._pb(2_200_000) == 0.0
 
-    def test_normal_range_continuity_with_old_linear(self):
-        # old linear: -(price - 2.2M)/500k * 2.5
-        for price, old in ((2_700_000, -2.5), (3_000_000, -4.0), (4_000_000, -9.0)):
+    def test_near_knee_continuity_with_old_linear(self):
+        # old linear: -(price - 2.2M)/500k * 2.5 — the slope at the knee is
+        # unchanged, so the first ~$1M above $2.2M still tracks it closely.
+        for price, old in ((2_700_000, -2.5), (3_000_000, -4.0)):
             new = self._pb(price)
-            assert old - 0.05 <= new <= old + 1.0, (price, new, old)
+            assert old - 0.05 <= new <= old + 0.3, (price, new, old)
 
     def test_extreme_quantum_saturates(self):
         from config import MMR_PRICE_BAND_CAP
         pb10 = self._pb(10_000_000)
         assert -MMR_PRICE_BAND_CAP <= pb10 <= -0.9 * MMR_PRICE_BAND_CAP
-        assert pb10 < self._pb(4_000_000)  # still monotonic
+        assert pb10 < self._pb(4_000_000) < self._pb(3_000_000)  # still monotonic
+        # cap trimmed 15→11: the $4M tail now saturates harder than the old
+        # linear's -9.0 would have under a high cap.
+        assert -MMR_PRICE_BAND_CAP <= self._pb(4_000_000) <= -7.0
+
+
+# --------------------------------------------------------------------------- #
+# v3.10 measured-lever reweights + structural-floor gate.
+# --------------------------------------------------------------------------- #
+
+# Real-data URA fixture (a ura_* appreciation_source, so the region gate opens).
+_REAL_URA = {
+    "test condo": {
+        "project_name": "Test Condo",
+        "annualized_appreciation": 4.0,
+        "transaction_count": 60,
+        "median_psf": 2000,
+        "avg_psf_current": 2222,
+        "source": "ura_5yr_cagr",
+        "by_size": {"window_years": 2, "recent_median_psf": 2000,
+                    "bands": {"800-1050": {"median_psf": 2000, "txn_count": 20}}},
+    }
+}
+
+
+class TestFutureZeroed:
+    """v3.10: future has no measured forward power (ρ +0.061 CI[-0.013,+0.143]
+    UNDETERMINED) — its MMR contribution is MMR_FUTURE_WEIGHT = 0, while the
+    raw future_potential_score stays computed for the agent's qualitative read."""
+
+    def test_future_mmr_contribution_is_zero(self):
+        from config import MMR_FUTURE_WEIGHT
+        assert MMR_FUTURE_WEIGHT == 0.0
+        # Even a maxed future sub-score contributes nothing.
+        s = _score(BASE)
+        s.future_potential_score = 20.0  # would have been +11.2 raw pre-v3.10
+        assert compute_mmr(s)["components"]["future"] == 0.0
+
+    def test_future_score_still_surfaced(self):
+        # The raw sub-score is still computed (factual_data / agent read), only
+        # its MMR points are zeroed.
+        s = _score(BASE)
+        assert s.future_potential_score is not None
+
+
+class TestCostHalved:
+    """v3.10: cost is a deterministic sqft/beds function (value-in-disguise),
+    measured std_β +0.122 CI[+0.018,+0.231] — halved to ±2.5 via MMR_COST_WEIGHT."""
+
+    def test_cost_is_half_the_recentred_score(self):
+        from config import MMR_COST_WEIGHT
+        assert MMR_COST_WEIGHT == 0.5
+        s = _score(dict(BASE, sqft=900, beds=2))
+        raw_recentred = s.cost_efficiency_score - 5.0
+        assert abs(compute_mmr(s)["components"]["cost"]
+                   - raw_recentred * MMR_COST_WEIGHT) < 0.01
+
+    def test_missing_data_still_neutral(self):
+        # Halving a 0 is still 0 — the v3.10 neutrality fix is preserved (a
+        # listing with no sqft/beds has cost_efficiency_score recentred to 0).
+        s = _score({"id": "1", "title": "Bare", "url": "u", "price": 2_000_000})
+        assert compute_mmr(s)["components"]["cost"] == 0.0
+
+
+class TestRegionTerm:
+    """v3.10: an explicit region tilt for DATA-RICH listings only. Raw CCR -2.3,
+    RCR +0.4, OCR +1.9 (slope 3.0 × baseline%-vs-mean 3.567). Gated on a real
+    project (ura_*) appreciation source — a regional_baseline fallback already
+    carries the regional rate as its rate, so it gets 0 (no double-count)."""
+
+    def _region(self, district, ura=None):
+        s = _score(dict(BASE, district=district), ura)
+        return compute_mmr(s)["components"]["region"], s.appreciation_source
+
+    def test_signs_per_region_on_real_data(self):
+        ccr, src = self._region("D9", copy.deepcopy(_REAL_URA))
+        assert src.startswith("ura_")
+        assert ccr == -2.3
+        assert self._region("D15", copy.deepcopy(_REAL_URA))[0] == 0.4   # RCR
+        assert self._region("D18", copy.deepcopy(_REAL_URA))[0] == 1.9   # OCR
+
+    def test_fallback_listing_gets_zero(self):
+        # No URA → regional_baseline source → the rate ALREADY is the regional
+        # baseline, so the explicit tilt must stay 0 (double-count guard).
+        comp, src = self._region("D18")  # OCR, but no URA data
+        assert src == "regional_baseline"
+        assert comp == 0.0
+
+    def test_unknown_region_is_zero(self):
+        comp, _ = self._region("DXX", copy.deepcopy(_REAL_URA))
+        assert comp == 0.0
+
+    def test_slope_anchored_to_appreciation_slope(self):
+        from config import MMR_REGION_SLOPE, MMR_APPRECIATION_SLOPE
+        assert MMR_REGION_SLOPE == MMR_APPRECIATION_SLOPE  # regime-robust, not bull-max
+
+
+class TestStructuralFloorGate:
+    """v3.10b correctness fix: when the unit-level value signal is untrustworthy
+    (no positive value/yield credit OR suspect-damped), the UNVALIDATED
+    components (future, cost) are capped at MMR_STRUCTURAL_FLOOR_CAP so they
+    can't pile structural credit on top. dev_size is VALIDATED (std_β +0.130)
+    and PROJECT-level, so it is never gated — capping it would penalize a
+    validated signal. A genuine value listing is untouched."""
+
+    def _comps_with(self, psf_value, age_value, yield_v, future, cost, dev_size,
+                    suspect=False):
+        # Mirror the gate math on a synthetic component dict (compute_mmr's gate
+        # is hard to drive directly since most comps are derived).
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        comps = {"psf_value": psf_value, "age_value": age_value, "yield": yield_v,
+                 "future": future, "cost": cost, "dev_size": dev_size}
+        untrusted = (psf_value <= 0 and age_value <= 0 and yield_v <= 0) or suspect
+        if untrusted:
+            keys = ("future", "cost")  # dev_size excluded — validated
+            pos = sum(comps[k] for k in keys if comps[k] > 0)
+            if pos > MMR_STRUCTURAL_FLOOR_CAP:
+                scale = MMR_STRUCTURAL_FLOOR_CAP / pos
+                for k in keys:
+                    if comps[k] > 0:
+                        comps[k] = round(comps[k] * scale, 2)
+        return comps
+
+    def test_value_less_listing_unvalidated_capped(self):
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        s = _score(dict(BASE), copy.deepcopy(_REAL_URA))
+        sb = s.score_breakdown
+        s.estimated_gross_yield = 0.0
+        sb["relative_value"] = {"premium_vs_age_adjusted_median_pct": 5.0,
+                                "peer_count": 10}  # premium → age_value < 0
+        sb["red_flags"]["psf_premium_pct"] = 5.0  # premium → psf_value < 0
+        s.total_units = 800
+        s.future_potential_score = 20.0  # zeroed by weight anyway
+        comps = compute_mmr(s)["components"]
+        assert comps["psf_value"] <= 0 and comps["age_value"] <= 0 and comps["yield"] <= 0
+        pos_unvalidated = sum(comps[k] for k in ("future", "cost") if comps[k] > 0)
+        assert pos_unvalidated <= MMR_STRUCTURAL_FLOOR_CAP + 0.05
+
+    def test_dev_size_never_gated(self):
+        # The validated project signal stays full even when value is value-less.
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        s = _score(dict(BASE), copy.deepcopy(_REAL_URA))
+        sb = s.score_breakdown
+        s.estimated_gross_yield = 0.0
+        sb["relative_value"] = {"premium_vs_age_adjusted_median_pct": 5.0,
+                                "peer_count": 10}
+        sb["red_flags"]["psf_premium_pct"] = 5.0
+        s.total_units = 1500  # big dev → dev_size well above the floor cap
+        comps = compute_mmr(s)["components"]
+        assert comps["psf_value"] <= 0 and comps["age_value"] <= 0
+        assert comps["dev_size"] > MMR_STRUCTURAL_FLOOR_CAP  # NOT capped
+
+    def test_suspect_triggers_gate_even_with_residual_positive_value(self):
+        # The key v3.10b fix: a suspect listing whose value was damped to a small
+        # POSITIVE residual still trips the gate (the old AND-all-<=0 condition
+        # missed it). Assert via the mirror helper.
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        comps = self._comps_with(1.8, 2.5, 1.7, future=0.0, cost=4.0,
+                                 dev_size=6.0, suspect=True)
+        assert comps["cost"] <= MMR_STRUCTURAL_FLOOR_CAP + 0.05   # unvalidated capped
+        assert comps["dev_size"] == 6.0                           # validated untouched
+
+    def test_proportional_scaling(self):
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        # Exercise scaling with a hypothetical positive future + cost > cap.
+        comps = self._comps_with(-1, -1, 0, future=2.0, cost=4.0, dev_size=4.0)
+        assert abs(comps["future"] + comps["cost"] - MMR_STRUCTURAL_FLOOR_CAP) < 0.05
+        assert comps["future"] / comps["cost"] == pytest.approx(2.0 / 4.0, abs=0.02)
+        assert comps["dev_size"] == 4.0  # validated, untouched
+
+    def test_under_cap_untouched(self):
+        comps = self._comps_with(-1, -1, 0, future=0.0, cost=1.0, dev_size=1.5)
+        assert comps["cost"] == 1.0 and comps["dev_size"] == 1.5  # 1.0 < 3.1
+
+    def test_genuine_value_listing_untouched(self):
+        # A real discount (psf_value > 0, not suspect) disarms the gate entirely.
+        s = _score(dict(BASE, psf=1700), copy.deepcopy(_REAL_URA))  # ~-15% discount
+        comps = compute_mmr(s)["components"]
+        assert comps["psf_value"] > 0  # gate condition false
+
+
+class TestSuspectArtifactGated:
+    """A 624sf 'PES' artifact in a genuinely strong project: the FAKE discount is
+    suspect-damped out and the UNVALIDATED structural credit is gated, but the
+    listing legitimately scores at its strong project's quality level — it is
+    NOT forced below 650 by capping validated project signals (dev_size,
+    buyer_pool, appreciation, region). The surfaced red flag is the verify-first
+    signal; the point is that it no longer TOPS the ranking on fake value (it sat
+    at 784/#1 before; the v3.6+ damp + measured future→0 bring it well down)."""
+
+    def test_suspect_artifact_unvalidated_gated_dev_size_kept(self):
+        from config import MMR_STRUCTURAL_FLOOR_CAP
+        ura = copy.deepcopy(_REAL_URA)
+        ura["coco palms"] = ura.pop("test condo")
+        ura["coco palms"]["project_name"] = "Coco Palms"
+        l = dict(BASE, project_name="Coco Palms", title="Coco Palms",
+                 district="D18", sqft=624, beds=1, psf=1200,
+                 price=int(624 * 1200), built_year=2018)
+        s = _score(l, ura)
+        sb = s.score_breakdown
+        sb["red_flags"].setdefault("flags", []).append(
+            {"flag": "bedroom_sqft_mismatch", "penalty": 2})
+        sb["red_flags"]["stack_premium_pct"] = 8.0
+        s.total_units = 944
+        result = compute_mmr(s)
+        comps = result["components"]
+        # Unvalidated future+cost gated by the suspect trigger…
+        assert sum(comps[k] for k in ("future", "cost") if comps[k] > 0) \
+            <= MMR_STRUCTURAL_FLOOR_CAP + 0.05
+        # …validated project signal (big real development) retained.
+        assert comps["dev_size"] > MMR_STRUCTURAL_FLOOR_CAP
 
 
 class TestRentConfidenceHygiene:

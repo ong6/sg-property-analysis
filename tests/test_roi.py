@@ -416,10 +416,16 @@ class TestFinancedROI:
         assert roi_fin.total_income_tax < roi_cash.total_income_tax
 
     def test_sensitivity_gains_rate_axis_when_financed(self):
-        """calculate_sensitivity adds rate_up/rate_down only when ltv > 0."""
+        """calculate_sensitivity adds rate_up/rate_down only when ltv > 0.
+
+        The rent/appreciation/vacancy axes (plus the assumptions block) are
+        always present; the rate axis is financing-only.
+        """
         plain = self.calc.calculate_sensitivity(self.listing, periods=[5],
                                                 monthly_rent=5000)
-        assert set(plain.keys()) == {"downside", "base", "upside"}
+        scenario_keys = set(plain.keys()) - {"assumptions"}
+        assert scenario_keys == {"downside", "base", "upside", "vac_low", "vac_high"}
+        assert "rate_up" not in plain and "rate_down" not in plain
 
         financed = self.calc.calculate_sensitivity(self.listing, periods=[5],
                                                    monthly_rent=5000,
@@ -429,6 +435,102 @@ class TestFinancedROI:
         assert (financed["rate_up"][5].total_return
                 < financed["base"][5].total_return
                 < financed["rate_down"][5].total_return)
+
+
+class TestVacancyTiering:
+    """Vacancy prior is tiered by (beds, price) and varied in sensitivity."""
+
+    def setup_method(self):
+        self.calc = ROICalculator(buyer_type="SC", property_count=0)
+
+    def test_calculate_surfaces_tiered_vacancy_assumption(self):
+        """The vacancy months actually used is surfaced on the result."""
+        # 1BR $1.0M -> low tier (0.5mo)
+        small = self.calc.calculate(
+            {"price": 1_000_000, "sqft": 550, "beds": 1},
+            hold_years=5, monthly_rent=4000,
+        )
+        assert small.vacancy_months_per_year == 0.5
+        # 4BR $2.0M -> high tier (1.2mo)
+        large = self.calc.calculate(
+            {"price": 2_000_000, "sqft": 1600, "beds": 4},
+            hold_years=5, monthly_rent=8000,
+        )
+        assert large.vacancy_months_per_year == 1.2
+
+    def test_higher_vacancy_lowers_holding_and_return(self):
+        """A high-vacancy unit carries more holding cost than the same unit
+        priced at the low tier (rent held equal to isolate the vacancy axis)."""
+        listing = {"price": 1_000_000, "sqft": 1600}
+        low = self.calc.calculate({**listing, "beds": 1}, hold_years=5, monthly_rent=6000)
+        # Force the high tier via 4 beds (same price/rent), vacancy 0.5 -> 1.2
+        high = self.calc.calculate({**listing, "beds": 4}, hold_years=5, monthly_rent=6000)
+        assert high.vacancy_months_per_year > low.vacancy_months_per_year
+        assert high.total_holding_costs > low.total_holding_costs
+        assert high.total_return < low.total_return
+
+    def test_fallback_vacancy_equals_old_flat_value(self):
+        """A listing with no beds resolves to the legacy flat 0.75mo prior,
+        i.e. identical holding costs to the pre-tier behavior."""
+        no_beds = self.calc.calculate(
+            {"price": 1_000_000, "sqft": 1000}, hold_years=5, monthly_rent=5000,
+        )
+        assert no_beds.vacancy_months_per_year == 0.75
+        # Explicitly passing the old flat value reproduces it exactly.
+        explicit = self.calc.calculate(
+            {"price": 1_000_000, "sqft": 1000}, hold_years=5, monthly_rent=5000,
+            vacancy_months_per_year=0.75,
+        )
+        assert no_beds.total_holding_costs == explicit.total_holding_costs
+        assert no_beds.total_return == explicit.total_return
+
+    def test_explicit_vacancy_override_in_calculate(self):
+        """An explicit vacancy override beats the tier on the result."""
+        roi = self.calc.calculate(
+            {"price": 1_000_000, "sqft": 550, "beds": 1},  # would be 0.5 tier
+            hold_years=5, monthly_rent=4000, vacancy_months_per_year=1.0,
+        )
+        assert roi.vacancy_months_per_year == 1.0
+
+    def test_sensitivity_has_vacancy_axis(self):
+        """calculate_sensitivity exposes vac_low/vac_high + an assumptions block
+        with the resolved base/low/high vacancy."""
+        listing = {"price": 2_000_000, "sqft": 1000, "beds": 3}  # mid tier 0.75
+        sens = self.calc.calculate_sensitivity(listing, periods=[5], monthly_rent=5000)
+
+        assert "vac_low" in sens and "vac_high" in sens
+        assert "assumptions" in sens
+        a = sens["assumptions"]
+        assert a["vacancy_base_months"] == 0.75
+        assert a["vacancy_low_months"] == 0.75 - a["vacancy_delta_months"]
+        assert a["vacancy_high_months"] == 0.75 + a["vacancy_delta_months"]
+
+        # vac_low has less void -> higher return than base -> than vac_high
+        assert (sens["vac_low"][5].total_return
+                > sens["base"][5].total_return
+                > sens["vac_high"][5].total_return)
+        # And the surfaced per-scenario vacancy matches the axis
+        assert sens["vac_low"][5].vacancy_months_per_year == a["vacancy_low_months"]
+        assert sens["vac_high"][5].vacancy_months_per_year == a["vacancy_high_months"]
+
+    def test_sensitivity_vacancy_floored_at_zero(self):
+        """vac_low never goes negative even if the delta exceeds the base."""
+        listing = {"price": 1_000_000, "sqft": 550, "beds": 1}  # low tier 0.5
+        sens = self.calc.calculate_sensitivity(
+            listing, periods=[5], monthly_rent=4000, vacancy_delta_months=0.9,
+        )
+        assert sens["assumptions"]["vacancy_low_months"] == 0.0
+
+    def test_ltv_zero_still_equals_all_cash_with_tiering(self):
+        """The prior-wave all-cash == ltv=0 equivalence survives the tier change
+        (vacancy is resolved identically on both paths)."""
+        listing = {"price": 2_000_000, "sqft": 1000, "beds": 3}
+        default = self.calc.calculate(listing, hold_years=5, monthly_rent=5000)
+        ltv0 = self.calc.calculate(listing, hold_years=5, monthly_rent=5000,
+                                   ltv=0.0, mortgage_rate_pct=3.5)
+        assert default == ltv0  # dataclass eq over declared fields
+        assert default.loan_amount == 0
+        assert default.total_mortgage_interest == 0
 
 
 if __name__ == "__main__":

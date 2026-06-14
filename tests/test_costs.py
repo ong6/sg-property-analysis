@@ -223,6 +223,73 @@ class TestCostParameters:
         assert params.get("marginal_income_tax_rate") == 0.15
         assert params.get("mortgage_rate_pct") == 3.5
 
+    def test_vacancy_tier_table_present(self):
+        tiers = CostCalculator().params.get("vacancy_tiers")
+        assert tiers is not None
+        # The mid tier equals the legacy flat default (continuity).
+        assert tiers["mid_months"] == 0.75
+        assert tiers["low_months"] < tiers["mid_months"] < tiers["high_months"]
+
+
+class TestVacancyTiers:
+    """Vacancy prior tiered by (beds, price band) — format-aware void."""
+
+    def setup_method(self):
+        self.calc = CostCalculator()
+
+    def test_low_tier_small_mass_market(self):
+        """1-2BR at <=$1.5M let fastest -> low (0.5mo)."""
+        assert self.calc.resolve_vacancy_months(1, 1_000_000) == 0.5
+        assert self.calc.resolve_vacancy_months(2, 1_500_000) == 0.5  # boundary
+
+    def test_mid_tier_default(self):
+        """2-3BR in the $1.5-3M band -> mid (0.75mo == old flat default)."""
+        assert self.calc.resolve_vacancy_months(2, 2_000_000) == 0.75
+        assert self.calc.resolve_vacancy_months(3, 2_500_000) == 0.75
+
+    def test_high_tier_large_or_luxury(self):
+        """4BR+ OR >$3M let slowest -> high (1.2mo)."""
+        assert self.calc.resolve_vacancy_months(4, 2_000_000) == 1.2  # beds drives it
+        assert self.calc.resolve_vacancy_months(2, 3_500_000) == 1.2  # price drives it
+
+    def test_fallback_when_beds_or_price_absent_equals_flat_default(self):
+        """Missing beds or price -> the unchanged flat 0.75mo prior."""
+        flat = self.calc.params.get("vacancy_months_per_year", 0.75)
+        assert flat == 0.75
+        assert self.calc.resolve_vacancy_months(None, 1_000_000) == flat
+        assert self.calc.resolve_vacancy_months(1, None) == flat
+        assert self.calc.resolve_vacancy_months(None, None) == flat
+
+    def test_holding_costs_use_tier_when_no_override(self):
+        """calculate_annual_holding_costs resolves the tier from (beds, price)."""
+        # 1BR $1.0M -> low (0.5mo): vacancy_cost = 0.5 * rent
+        low = self.calc.calculate_annual_holding_costs(
+            monthly_rent=4000, sqft=550, beds=1, price=1_000_000
+        )
+        assert low["vacancy_months"] == 0.5
+        assert low["vacancy_cost"] == 4000 * 0.5
+        # 4BR $2.0M -> high (1.2mo)
+        high = self.calc.calculate_annual_holding_costs(
+            monthly_rent=8000, sqft=1600, beds=4, price=2_000_000
+        )
+        assert high["vacancy_months"] == 1.2
+        assert high["vacancy_cost"] == 8000 * 1.2
+
+    def test_holding_costs_explicit_override_wins(self):
+        """An explicit vacancy_months_per_year overrides the tier."""
+        out = self.calc.calculate_annual_holding_costs(
+            monthly_rent=5000, sqft=1000, beds=1, price=1_000_000,
+            vacancy_months_per_year=0.9,
+        )
+        assert out["vacancy_months"] == 0.9
+        assert out["vacancy_cost"] == 5000 * 0.9
+
+    def test_holding_costs_fallback_when_beds_price_absent(self):
+        """No beds/price (legacy callers) -> flat 0.75, unchanged behavior."""
+        out = self.calc.calculate_annual_holding_costs(monthly_rent=5000, sqft=1000)
+        assert out["vacancy_months"] == 0.75
+        assert out["vacancy_cost"] == 5000 * 0.75
+
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
