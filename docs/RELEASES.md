@@ -235,6 +235,43 @@ sd 148); 384 tests.
   (`--repeat-sales`) confirms every headline conclusion is unit-mix-robust
   (outcome agreement ρ +0.754; value+region lead, OCR>CCR, future/cost≈0 all hold).
 
+## v3.11 — Three-score system (2026-06-15)
+
+**What changed:** two more axes beside MMR, plus a purpose-weighted Overall — MMR
+stays the untouched investment-return axis; nothing here folds into it.
+- **Valuation** (`scoring/valuation.py`, 0–100): "priced right TODAY?" — built
+  from the one robustly-predictive signal (cheap-vs-peers, ρ≈−0.25) already in
+  `score_breakdown`, so it's the *backtested* sibling of the heuristic livability
+  axis. Shares MMR's artifact defences (−25% knee, suspect/oversized/print-
+  contradiction damps **cheap-side only**) so a fake-cheap reading can't top it.
+  Each comp signal is centered by its OWN measured structural ask-vs-transacted
+  premium (district peers +10.5%, same-size cohort +5.0% — medians over the
+  scored DB) so **50 = a typically-priced ask** (>50 cheaper, <50 dearer),
+  matching the system-wide "midpoint = market-typical" convention (livability 50,
+  MMR 500). Verified: median valuation = 50 across the live DB.
+- **Livability** (`scoring/livability.py`): added a **facilities** component
+  (full-facilities own-stay plus, basic/absent neutral) fed by a new detail-page
+  facilities extractor (`scrapers.propertyguru.extract_facilities`, robust to
+  PG's several JSON shapes + a renamed-key recursive fallback); N/S facing bumped
+  +4→+6, W −4→−5 (tropics sun matters more than first weighted).
+- **Overall** (`scoring/overall.py`, 0–100): purpose-weighted combine. Investment
+  Overall = 0.62·return + 0.38·valuation + a **capped** (±6) livability demand-
+  floor nudge (downside/exit-liquidity, **never** appreciation). Own-stay Overall
+  = 0.55·livability + 0.30·valuation + 0.15·return-as-resale-safety.
+
+**Wiring:** computed in `full_scorer` (defensive — a new-module error can't break
+MMR), persisted alongside `score_1000` by the backlog scorer + poller
+(`ScoredListing.three_score_fields()`), surfaced as Val/Liv/Ovr chips in the UI
+fresh view. `score_version` unchanged (MMR untouched → existing scores not stale).
+New columns populate on the next poll / `--score-db`. 50 new unit tests.
+
+**Why / evidence:** users asked two different questions of one DB — "will this
+make money?" (MMR) and "is this a good home, fairly priced?" — and the single
+money score conflated them. The clearest case: large/freehold/prime is most
+desirable to live in yet weakest measured forward return (desirability is already
+in the price), which is exactly why livability is a capped floor in the
+investment Overall, never a return term.
+
 ## Open items / unvalidated levers
 
 **The Jun-2026 full-system audit (`docs/AUDIT_JUN2026.md`) is the current

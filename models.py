@@ -100,6 +100,7 @@ class Listing:
     floor_area_sqm: Optional[float] = None
     land_area_sqft: Optional[float] = None
     tags: Optional[list[str]] = field(default_factory=list)
+    facilities: Optional[list[str]] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         d = asdict(self)

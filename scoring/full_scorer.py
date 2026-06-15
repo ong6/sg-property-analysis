@@ -884,6 +884,28 @@ class FullScorer:
         scored.mmr_components = mmr_result["components"]
         breakdown["mmr"] = mmr_result
 
+        # 3-score system (v3.11): Valuation (priced-right-today, backtested) and
+        # Livability (own-stay home quality, heuristic) beside the MMR investment
+        # axis, combined into purpose-weighted Overalls. Defensive — a new-module
+        # error must never break the core score.
+        try:
+            from scoring.valuation import score_valuation
+            from scoring.livability import score_livability
+            from scoring.overall import compute_overall
+            _val = score_valuation(scored)
+            _liv = score_livability(listing if isinstance(listing, dict) else {})
+            _ov = compute_overall(valuation=_val["score"], livability=_liv["score"],
+                                  score_1000=scored.score_1000)
+            scored.valuation_score = _val["score"]
+            scored.valuation_detail = _val
+            scored.livability_score = _liv["score"]
+            scored.livability_components = _liv["components"]
+            scored.overall_own_stay = _ov["own_stay"]
+            scored.overall_investment = _ov["investment"]
+            breakdown["three_score"] = {"valuation": _val, "livability": _liv, "overall": _ov}
+        except Exception:
+            pass
+
         # Calculate ROI for different periods
         if scored.sqft and scored.price:
             roi_results = self.roi_calculator.calculate_multiple_periods(

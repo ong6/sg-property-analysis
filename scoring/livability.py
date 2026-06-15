@@ -17,8 +17,9 @@ sparse one, so sorting by livability ranks quality, never data completeness
   mrt        +6 (≤400m, genuine doorstep plus) / 0 (≤1km, the norm)
              / −4 (1–1.5km) / −8 (>1.5km)
   floor      +6 high/penthouse / 0 mid (explicit) / −8 low/ground (enriched only)
-  facing     +4 N/S (no direct sun) / 0 other / −4 W afternoon sun (enriched only)
+  facing     +6 N/S (no direct sun, prized in the tropics) / 0 other / −5 W (enriched only)
   newness    +4 (≤8yr modern stack) / 0 / −4 (>30yr maintenance drag)
+  facilities +6 full (≥5 categories) / +3 (3–4) / 0 basic/absent (scraped list)
 
 The `why` string ships with the score so the UI can show its work — a
 heuristic that can't explain itself shouldn't be trusted at all.
@@ -33,6 +34,31 @@ _EXPECTED_SQFT = {0: 450, 1: 500, 2: 720, 3: 1000, 4: 1300, 5: 1600}
 
 _FLOOR_POS = ("high", "penthouse", "top")
 _FLOOR_NEG = ("low", "ground")
+
+# Canonical condo facility categories. A listing's scraped `facilities` list
+# (detail-page enrichment) is matched against these keyword groups; the COUNT of
+# distinct categories present grades "basic" vs "full-facilities". Full
+# facilities is an own-stay plus (and a mild demand/liquidity plus). Substring,
+# case-insensitive. Absent list → neutral (missing data is never penalized).
+_FACILITY_CATEGORIES = {
+    "pool": ("pool", "jacuzzi"),
+    "gym": ("gym", "fitness"),
+    "security": ("security", "guard", "24-hour", "24 hour", "24hr"),
+    "courts": ("tennis", "squash", "basketball"),
+    "bbq": ("bbq", "barbecue", "barbeque"),
+    "function": ("function", "clubhouse", "club house", "lounge", "pavilion"),
+    "playground": ("playground", "children", "kids"),
+    "wellness": ("sauna", "steam", "spa"),
+}
+
+
+def _facility_categories(facilities) -> int:
+    """Count distinct canonical facility categories present in a list."""
+    if not facilities:
+        return 0
+    blob = " ".join(str(f) for f in facilities).lower()
+    return sum(1 for kws in _FACILITY_CATEGORIES.values()
+               if any(k in blob for k in kws))
 
 
 def _mrt_meters(mrt_info: str | None) -> int | None:
@@ -99,9 +125,9 @@ def score_livability(rec: dict) -> dict:
     facing = (rec.get("facing") or "").lower()
     if facing:
         if "north" in facing or "south" in facing:
-            c["facing"] = 4          # N/S: no direct sun into the unit
+            c["facing"] = 6          # N/S: no direct sun — prized in the tropics
         elif "west" in facing:
-            c["facing"] = -4         # full afternoon sun
+            c["facing"] = -5         # full afternoon sun (heat + glare)
         else:
             c["facing"] = 0
 
@@ -118,6 +144,15 @@ def score_livability(rec: dict) -> dict:
                 c["newness"] = 0
         except (TypeError, ValueError):
             pass
+
+    # Facilities (own-stay plus): full-facility condos score up; basic/absent
+    # is neutral, never penalized (a walk-up can be a fine home). Populated by
+    # detail-page enrichment — absent until a listing has been enriched.
+    n_cat = _facility_categories(rec.get("facilities"))
+    if n_cat >= 5:
+        c["facilities"] = 6          # full facilities — pool/gym/security/courts/...
+    elif n_cat >= 3:
+        c["facilities"] = 3          # decent facilities
 
     score = max(0, min(100, 50 + sum(c.values())))
     # All-zero components ≠ no components: post-recentering, a fully-typical

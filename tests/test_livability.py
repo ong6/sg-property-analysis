@@ -96,3 +96,35 @@ class TestScore:
     def test_why_explains_itself(self):
         out = score_livability({"beds": 2, "baths": 2, "sqft": 720})
         assert "baths +10" in out["why"]
+
+    def test_ns_facing_bumped(self):
+        assert score_livability({"facing": "North"})["components"]["facing"] == 6
+        assert score_livability({"facing": "West"})["components"]["facing"] == -5
+
+
+class TestFacilities:
+    def test_full_facilities_scores_high(self):
+        out = score_livability({"facilities": [
+            "Swimming Pool", "Gym", "24-hour Security", "Tennis Court",
+            "BBQ Pit", "Function Room", "Playground"]})
+        assert out["components"]["facilities"] == 6
+
+    def test_decent_facilities(self):
+        out = score_livability({"facilities": ["Swimming Pool", "Gym", "BBQ Pit"]})
+        assert out["components"]["facilities"] == 3
+
+    def test_basic_facilities_neutral(self):
+        # 1-2 categories: not a plus, but not penalized either
+        out = score_livability({"facilities": ["Swimming Pool", "Covered Car Park"]})
+        assert "facilities" not in out["components"]
+
+    def test_absent_facilities_neutral(self):
+        assert "facilities" not in score_livability({"beds": 2})["components"]
+        assert "facilities" not in score_livability({"facilities": []})["components"]
+
+    def test_full_facilities_raises_score(self):
+        base = {"beds": 2, "sqft": 720}
+        full = score_livability({**base, "facilities": [
+            "Pool", "Gym", "Security Guard", "Tennis", "Sauna"]})
+        bare = score_livability(base)
+        assert full["score"] > bare["score"]

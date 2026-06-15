@@ -278,6 +278,28 @@ class ScoredListing:
     score_1000: Optional[int] = None
     mmr_components: dict = field(default_factory=dict)
 
+    # 3-score system (v3.11): two more axes beside MMR (the investment-return
+    # axis) + purpose-weighted Overalls. valuation/livability are 0-100.
+    valuation_score: Optional[int] = None       # "priced right today?" (backtested)
+    valuation_detail: dict = field(default_factory=dict)
+    livability_score: Optional[int] = None       # own-stay home quality (heuristic)
+    livability_components: dict = field(default_factory=dict)
+    overall_own_stay: Optional[int] = None       # purpose-weighted, 0-100
+    overall_investment: Optional[int] = None     # purpose-weighted, 0-100
+
+    def three_score_fields(self) -> dict:
+        """The v3.11 axes to persist into a listings-DB record, mirroring how
+        mmr/score_1000 are written back by the backlog scorer and poller. Only
+        present (non-None) values are returned, so an un-computed axis is left
+        untouched rather than overwritten with null."""
+        out = {}
+        for f in ("valuation_score", "livability_score",
+                  "overall_own_stay", "overall_investment"):
+            v = getattr(self, f, None)
+            if v is not None:
+                out[f] = v
+        return out
+
     @property
     def rank_score(self) -> float:
         """Preferred sort key: raw MMR when available, else legacy total."""
@@ -406,6 +428,16 @@ class ScoredListing:
             result["score_1000"] = self.score_1000
             if self.mmr_components:
                 result["mmr_components"] = self.mmr_components
+
+        # 3-score system axes (persisted alongside score_1000)
+        if self.valuation_score is not None:
+            result["valuation_score"] = self.valuation_score
+        if self.livability_score is not None:
+            result["livability_score"] = self.livability_score
+        if self.overall_own_stay is not None:
+            result["overall_own_stay"] = self.overall_own_stay
+        if self.overall_investment is not None:
+            result["overall_investment"] = self.overall_investment
 
         # Add optional fields if present
         optional_fields = [

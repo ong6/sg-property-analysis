@@ -125,13 +125,18 @@ NOW button. Standalone/cron: `python poller.py` (one cycle) or `--loop`;
 state in `data/poll_state.json`. JSON APIs: `/api/fresh`, `/api/rankings`,
 `/api/poll-status`, `POST /poll`.
 
-The fresh view shows **two separate score axes**: `score_1000` (MMR — money,
-backtest-anchored) and a 0–100 **livability score** (`scoring/livability.py`:
-baths/bed, space/bed, MRT walk, floor, facing, age; 50 = neutral, missing data
-neutral, hover the chip for components). Livability is an explicit
+The fresh view shows the **three-score system** (v3.11) — `score_1000` (MMR —
+forward-return money axis, backtest-anchored), plus three 0–100 axes:
+**Valuation** (`scoring/valuation.py` — "priced right today?" vs age-adjusted
+peers; backtested, 50 = typical ask, >50 cheaper, shares MMR's artifact
+defences), **Livability** (`scoring/livability.py`: baths/bed, space/bed, MRT
+walk, floor, facing, age, facilities; 50 = neutral, missing data neutral, hover
+the chip), and **Overall** (`scoring/overall.py` — purpose-weighted; the fresh
+view shows the investment-weighted one). Livability is an explicit
 **heuristic** — URA carries none of those fields, so it can never be
-backtested and must NEVER be folded into MMR. It's the own-stay lens next to
-the money score, not evidence of returns.
+backtested and must NEVER be folded into MMR; in the investment Overall it
+enters only as a capped demand-floor nudge, never as appreciation. Valuation
+and Overall populate on the next poll / `--score-db` run (like `score_1000`).
 
 **System dashboard**: `python dashboard.py` → http://127.0.0.1:8643 — engine
 state on one page (forward signals, regime analysis, score distribution,
