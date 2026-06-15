@@ -8,7 +8,7 @@ import os
 # vintages from different configs are distinguishable — without it the 2026-06
 # cohort blended five config versions (same-listing drift median 178 pts) and
 # the mid-2027 calibrate_forward.py run would have been uninterpretable.
-CONFIG_VERSION = "3.10"
+CONFIG_VERSION = "3.12"
 
 _SCORE_VERSION_CACHE: str | None = None
 
@@ -190,6 +190,21 @@ MMR_RELVALUE_CAP = 28.0            # max |pts| from age-adjusted relative value
 MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0  # % below comps where marginal credit kinks
 MMR_DISCOUNT_EXCESS_CREDIT = 0.25   # marginal credit per % of discount beyond the knee
 MMR_SUSPECT_VALUE_FACTOR = 0.25     # positive value retained when the reading is suspect
+
+# --- v3.12 ground/low-floor stacks (user-reported over-ranking) -------------
+# When a unit's tight same-size URA comps are ≥70% printed at floors 01-05, the
+# whole stack IS ground/low floor (e.g. PES patio units). Its low PSF is then a
+# STRUCTURAL floor discount, not alpha — yet it reads as "cheap vs district /
+# size-cohort" and lifts psf_value + age_value. Unlike a suspect mis-scrape the
+# number is REAL, so we don't nuke it to 0.25; we (a) halve the floor-driven
+# value credit (the cheapness isn't underpricing) and (b) apply a modest
+# exit-liquidity demotion — ground floor has a thinner buyer pool and weaker
+# resale, the investor's actual concern. Detection is URA-print only (floor_level
+# is detail-page-enrichment, ~0% on the bulk book), so this fires precisely on
+# stacks URA confirms are low-floor and never guesses.
+MMR_LOW_FLOOR_SHARE_THRESHOLD = 0.7  # ≥ this share of same-size prints at 01-05 ⇒ low-floor stack
+MMR_LOW_FLOOR_VALUE_FACTOR = 0.5     # positive psf_value/age_value retained for a low-floor stack
+MMR_LOW_FLOOR_PENALTY = 7.0          # exit-liquidity demotion (raw MMR pts) for a low-floor stack
 
 # --- price_band cap (Jun-2026 audit #4; v3.10 trimmed for the region term) ---
 # price_band (exit-liquidity decline above the $2.2M broad-demand knee) was the

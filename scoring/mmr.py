@@ -52,6 +52,9 @@ try:
         MMR_DISCOUNT_TRUST_KNEE_PCT,
         MMR_DISCOUNT_EXCESS_CREDIT,
         MMR_SUSPECT_VALUE_FACTOR,
+        MMR_LOW_FLOOR_SHARE_THRESHOLD,
+        MMR_LOW_FLOOR_VALUE_FACTOR,
+        MMR_LOW_FLOOR_PENALTY,
         MMR_PRICE_BAND_CAP,
         MMR_FUTURE_WEIGHT,
         MMR_COST_WEIGHT,
@@ -79,6 +82,9 @@ except ImportError:
     MMR_DISCOUNT_TRUST_KNEE_PCT = 25.0
     MMR_DISCOUNT_EXCESS_CREDIT = 0.25
     MMR_SUSPECT_VALUE_FACTOR = 0.25
+    MMR_LOW_FLOOR_SHARE_THRESHOLD = 0.7
+    MMR_LOW_FLOOR_VALUE_FACTOR = 0.5
+    MMR_LOW_FLOOR_PENALTY = 7.0
     MMR_PRICE_BAND_CAP = 11.0
     MMR_FUTURE_WEIGHT = 0.0
     MMR_COST_WEIGHT = 0.5
@@ -270,6 +276,12 @@ def compute_mmr(scored: Any) -> dict:
                         or "ask_below_stack_prints" in flag_names
                         or (deep_discount and (cohort_txns or 0) < MIN_BAND_TXNS)
                         or print_contradiction)
+    # v3.12: the stack IS ground/low floor (≥70% of its same-size URA prints at
+    # floors 01-05). Its low PSF is a structural floor discount, not underpricing,
+    # so the cheap-vs-peers reading must not be credited as value. Unlike a
+    # suspect mis-scrape the price is REAL (don't nuke to 0.25) — halve the
+    # floor-driven value credit; the exit-liquidity penalty is added separately.
+    low_floor_stack = (sb_flags.get("stack_low_floor_share") or 0) >= MMR_LOW_FLOOR_SHARE_THRESHOLD
     if premium_pct is not None:
         # v3.6: knee-compressed discount + tanh saturation (same cap as
         # age_value) — an uncapped linear -0.8/% let a -60% artifact earn +48.
@@ -301,6 +313,8 @@ def compute_mmr(scored: Any) -> dict:
         psf_value *= 0.5
     if suspect_discount and psf_value > 0:
         psf_value *= MMR_SUSPECT_VALUE_FACTOR
+    if low_floor_stack and psf_value > 0:
+        psf_value *= MMR_LOW_FLOOR_VALUE_FACTOR
     comps["psf_value"] = round(psf_value, 2)
 
     # --- Lease / tenure ---
@@ -507,7 +521,15 @@ def compute_mmr(scored: Any) -> dict:
         age_value *= 0.5  # same size-artifact damping as psf_value
     if suspect_discount and age_value > 0:
         age_value *= MMR_SUSPECT_VALUE_FACTOR  # v3.6 data-trust (see psf_value)
+    if low_floor_stack and age_value > 0:
+        age_value *= MMR_LOW_FLOOR_VALUE_FACTOR  # v3.12 floor-discount ≠ value
     comps["age_value"] = round(age_value, 2)
+
+    # v3.12 ground/low-floor exit-liquidity demotion: a confirmed low-floor stack
+    # has a thinner buyer pool and weaker resale — the investor's real concern.
+    # A modest fixed penalty (not return-measured; floor isn't in the live book,
+    # only in URA prints), surfaced as its own component so it's visible/tunable.
+    comps["low_floor"] = round(-MMR_LOW_FLOOR_PENALTY, 2) if low_floor_stack else 0.0
 
     # --- Unique red flags only (others are continuous components above) ---
     flags = sb_flags.get("flags", [])
@@ -538,6 +560,7 @@ def compute_mmr(scored: Any) -> dict:
     _value_untrusted = (
         (comps["psf_value"] <= 0 and comps["age_value"] <= 0 and comps["yield"] <= 0)
         or suspect_discount
+        or low_floor_stack   # v3.12: floor-driven cheapness isn't validated credit
     )
     if _value_untrusted:
         _gate_keys = ("future", "cost")

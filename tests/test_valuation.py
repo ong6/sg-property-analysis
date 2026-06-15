@@ -11,7 +11,7 @@ from types import SimpleNamespace
 from scoring.valuation import score_valuation
 
 
-def _scored(rel=None, peer=0, psf=None, cohort=None, stack=None, flags=()):
+def _scored(rel=None, peer=0, psf=None, cohort=None, stack=None, flags=(), low_floor=None):
     rv = {}
     if rel is not None:
         rv["premium_vs_age_adjusted_median_pct"] = rel
@@ -23,6 +23,8 @@ def _scored(rel=None, peer=0, psf=None, cohort=None, stack=None, flags=()):
         red["psf_cohort_txns"] = cohort
     if stack is not None:
         red["stack_premium_pct"] = stack
+    if low_floor is not None:
+        red["stack_low_floor_share"] = low_floor
     return SimpleNamespace(score_breakdown={"relative_value": rv, "red_flags": red})
 
 
@@ -65,6 +67,16 @@ def test_oversized_cheap_is_halved():
     assert over < full
     assert "oversized" in score_valuation(
         _scored(rel=-20, peer=12, flags=("oversized_unit",)))["why"]
+
+
+def test_low_floor_stack_damps_cheap():
+    # a ground/low-floor stack (≥70% prints at 01-05) is cheap for a structural
+    # reason, not a bargain — its cheap reading is halved and not sold as "cheap".
+    full = score_valuation(_scored(rel=-20, peer=12))["score"]
+    lf = score_valuation(_scored(rel=-20, peer=12, low_floor=1.0))
+    assert lf["score"] < full
+    assert "low-floor" in lf["why"]
+    assert not lf["why"].startswith("cheap")
 
 
 def test_print_contradiction_damps_cheap():

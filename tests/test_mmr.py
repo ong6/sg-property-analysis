@@ -322,6 +322,40 @@ class TestSuspectDamp:
         assert compute_mmr(s)["components"]["psf_value"] == base_psf
 
 
+class TestLowFloorStack:
+    """v3.12: a confirmed low-floor stack (≥70% of same-size prints at 01-05)
+    has its floor-driven cheapness halved (not nuked — the price is real) and
+    takes a fixed exit-liquidity penalty."""
+
+    def _baseline(self):
+        # genuine cheap-vs-peers reading on a deep cohort (not suspect)
+        l = dict(BASE, psf=1400, price=int(1400 * 900))
+        s = _score(l, copy.deepcopy(DEEP_COHORT_URA))
+        s.score_breakdown["relative_value"] = {
+            "premium_vs_age_adjusted_median_pct": -18.0, "peer_count": 10}
+        return s
+
+    def test_low_floor_halves_value_and_penalizes(self):
+        from config import MMR_LOW_FLOOR_VALUE_FACTOR, MMR_LOW_FLOOR_PENALTY
+        base = compute_mmr(self._baseline())["components"]
+        assert base["psf_value"] > 0 and base["age_value"] > 0
+        assert base.get("low_floor", 0) == 0.0
+
+        s = self._baseline()
+        s.score_breakdown["red_flags"]["stack_low_floor_share"] = 1.0
+        comps = compute_mmr(s)["components"]
+        assert abs(comps["psf_value"] - base["psf_value"] * MMR_LOW_FLOOR_VALUE_FACTOR) < 0.05
+        assert abs(comps["age_value"] - base["age_value"] * MMR_LOW_FLOOR_VALUE_FACTOR) < 0.05
+        assert comps["low_floor"] == -MMR_LOW_FLOOR_PENALTY
+        assert compute_mmr(s)["mmr"] < compute_mmr(self._baseline())["mmr"]
+
+    def test_mixed_floor_stack_not_penalized(self):
+        # below the 0.7 threshold ⇒ not a low-floor stack ⇒ untouched
+        s = self._baseline()
+        s.score_breakdown["red_flags"]["stack_low_floor_share"] = 0.4
+        assert compute_mmr(s)["components"]["low_floor"] == 0.0
+
+
 class TestOverrideClampAndDamping:
     """Audit: agent overrides were the last unclamped appreciation channel, and
     the two override paths disagreed on cohort damping."""
