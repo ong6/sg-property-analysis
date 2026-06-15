@@ -46,6 +46,8 @@ _DB_LOCK_FILE = DB_FILE + ".lock"
 SHEET_COLUMNS = [
     "project_name", "district", "region", "beds", "baths",
     "price", "psf", "sqft", "mmr", "score_1000", "scored_at",
+    # 3-score system (v3.11): valuation + livability axes and purpose-weighted overalls
+    "valuation_score", "livability_score", "overall_investment", "overall_own_stay",
     "tenure", "built_year",
     "floor_level", "facing", "mrt_info", "total_units",
     "first_seen", "last_seen", "times_seen", "last_price_change",
@@ -58,6 +60,7 @@ _TRACKED_FIELDS = [
     "beds", "baths", "sqft", "psf", "price", "property_type", "tenure",
     "floor_level", "furnishing", "facing", "built_year", "top_year",
     "latitude", "longitude", "developer", "total_units", "mrt_info",
+    "facilities",  # detail-page enrichment (list of amenity names) — own-stay livability
     "listing_agent", "agent_phone", "image_url", "url",
     # Parsed by the scraper but previously dropped here (measured 0% coverage)
     # — description/tags are where "PES"/"loft"/"auction" live in words.

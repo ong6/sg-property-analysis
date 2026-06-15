@@ -204,6 +204,11 @@ def load_fresh() -> dict:
                             and rec.get("score_version") != current_sv),
             "livability": liv["score"] if liv["signals"] else None,
             "liv_why": liv["why"],
+            # 3-score system (v3.11): valuation + purpose-weighted overall, read
+            # from the persisted scoring run (None until scored under v3.11).
+            "valuation": rec.get("valuation_score"),
+            "overall": rec.get("overall_investment"),
+            "overall_own": rec.get("overall_own_stay"),
             "agent_rating": (er := evals.get(re.sub(r"[^a-z0-9]", "", name.lower()), ("", "")))[0],
             "agent_eval_date": er[1],
             "scored_at": rec.get("scored_at") or "",
@@ -551,7 +556,9 @@ _PAGE = """<!DOCTYPE html>
       <label for="f-sortsel">Sort</label>
       <select id="f-sortsel" onchange="fSetSort(this.value)">
         <option value="score_1000" selected>Score</option>
+        <option value="valuation">Valuation</option>
         <option value="livability">Livability</option>
+        <option value="overall">Overall</option>
         <option value="agent_rating">Agent eval</option>
         <option value="days_old">Newest</option>
         <option value="price">Price</option>
@@ -568,7 +575,9 @@ _PAGE = """<!DOCTYPE html>
   <table>
     <thead><tr>
       <th onclick="fSortBy('score_1000')" data-key="score_1000" title="MMR money score — backtest-calibrated forward-return signals">Score</th>
-      <th onclick="fSortBy('livability')" data-key="livability" title="own-stay heuristic (baths/space/MRT/floor/facing) — separate axis, never part of MMR">Liv</th>
+      <th onclick="fSortBy('valuation')" data-key="valuation" title="valuation — priced right today vs age-adjusted peers (50 = typical ask, &gt;50 cheaper, &lt;50 dearer); backtested, shares MMR's artifact defences">Val</th>
+      <th onclick="fSortBy('livability')" data-key="livability" title="own-stay heuristic (baths/space/MRT/floor/facing/facilities) — separate axis, never part of MMR">Liv</th>
+      <th onclick="fSortBy('overall')" data-key="overall" title="overall (investment-weighted): forward-return + valuation, with livability only a capped demand-floor nudge — never appreciation">Ovr</th>
       <th onclick="fSortBy('agent_rating')" data-key="agent_rating">Agent eval</th>
       <th onclick="fSortBy('project_name')" data-key="project_name">Condo</th>
       <th onclick="fSortBy('beds')" data-key="beds">Type</th>
@@ -681,6 +690,21 @@ const livColor = s => s >= 62 ? "background:#16314a;color:#58a6ff" :
 const livChip = (s, why) => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="no livability signals in this listing\\u2019s data">·</span>'
   : `<span class="chip" style="${livColor(s)}" title="livability (own-stay heuristic, separate from the money score): ${esc(why)}">${s}</span>`;
+// Valuation: high = cheap-for-its-age (good for a buyer) = blue; ~50 = fairly
+// priced = grey; low = dear = red. Persisted by the scorer (not computed inline).
+const valColor = s => s >= 62 ? "background:#16314a;color:#58a6ff" :
+                      s >= 38 ? "background:#222b35;color:#8b98a5" :
+                                "background:#33201c;color:#f85149";
+const valChip = s => s == null
+  ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="valuation not scored yet — poller scores new listings; run --score-db for the backlog">·</span>'
+  : `<span class="chip" style="${valColor(s)}" title="valuation — priced right today? 50 = typical ask, &gt;50 cheaper than peers, &lt;50 dearer (age-adjusted; backtested)">${s}</span>`;
+// Overall (investment-weighted): higher = better. Typical ~50 like the inputs.
+const ovColor = s => s >= 58 ? "background:#1c3326;color:#3fb950" :
+                     s >= 44 ? "background:#332d1c;color:#e3b341" :
+                               "background:#33201c;color:#f85149";
+const ovChip = (s, own) => s == null
+  ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="overall not scored yet — run --score-db / poller">·</span>'
+  : `<span class="chip" style="${ovColor(s)}" title="overall, investment-weighted (return + valuation, livability a capped floor nudge)${own != null ? ` · own-stay overall: ${own}` : ""}">${s}</span>`;
 const scoreChip = s => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="not scored yet — poller scores new listings; run --score-db for the backlog">·</span>'
   : `<span class="chip" style="${scoreColor(s)}">${s}</span>`;
@@ -805,7 +829,9 @@ function renderFresh() {
   document.getElementById("f-rows").innerHTML = rows.map(r => `
     <tr${r.days_old === 0 ? ' class="isnew"' : ""}>
       <td>${scoreChip(r.score_1000)}${vChip(r.score_stale)}</td>
+      <td>${valChip(r.valuation)}</td>
       <td>${livChip(r.livability, r.liv_why)}</td>
+      <td>${ovChip(r.overall, r.overall_own)}</td>
       <td>${agentBadge(r.agent_rating, r.agent_eval_date)}</td>
       <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${hasDrop(r) ? `<span class="badge drop" title="down from its peak ask${(r.dup_count || 1) > 1 ? " (union of all agents\\u2019 asks)" : ""}">⬇ ${r.drop_pct ?? ""}%</span>` : ""}${(r.dup_count || 1) > 1 ? `<span class="badge dup" title="same unit listed by ${r.dup_count} agents${r.ask_min != null ? ` — asks ${fmtPrice(r.ask_min)}\\u2013${fmtPrice(r.ask_max)}, lowest shown` : ""}">×${r.dup_count}</span>` : ""}</td>
       <td>${r.beds ? r.beds + "BR" : "?"}${r.baths ? '<span class="dim">/' + r.baths + 'ba</span>' : ""}</td>

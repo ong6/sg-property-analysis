@@ -53,7 +53,7 @@ DEFAULT_ENRICH_NEW = 20
 # Enrichment-target fields a detail page can fill (mirrors the scraper's
 # _apply_enrichment set). Only these are written back — never price/sqft.
 _ENRICH_FIELDS = ["latitude", "longitude", "facing", "floor_level",
-                  "furnishing", "total_units", "developer"]
+                  "furnishing", "total_units", "developer", "facilities"]
 
 
 def load_poll_state() -> dict:
@@ -112,7 +112,8 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
         except Exception:
             continue
         scored[key] = {"mmr": s.mmr, "score_1000": s.score_1000,
-                       "scored_at": today, "score_version": version}
+                       "scored_at": today, "score_version": version,
+                       **s.three_score_fields()}  # valuation / livability / overalls
         scored_rows.append({
             "id": key,
             "project_name": r.get("project_name") or r.get("title"),

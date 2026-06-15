@@ -65,6 +65,91 @@ class PGListing(Listing):
         return d
 
 
+# --- Facilities / amenities extraction (detail-page enrichment) -------------
+# PropertyGuru's detail JSON has carried facilities under several shapes (a flat
+# list of strings, a list of {name}/{label} objects, a nested project.facilities,
+# or comma-joined text). We probe the known shapes first, then fall back to a
+# bounded recursive scan for any key matching facilit*/amenit*, so the extractor
+# keeps working when PG renames or moves the field. Absent -> [] (kept neutral,
+# never guessed — the same missing-data-is-neutral rule the scorers use).
+_FACILITY_KEY_RE = re.compile(r"facilit|amenit", re.IGNORECASE)
+_FACILITY_NAME_KEYS = ("name", "label", "title", "text", "value", "displayName")
+_FACILITY_SPLIT_RE = re.compile(r"\s*[,;|/\n•·]\s*")
+_MAX_FACILITIES = 60
+
+
+def _facility_strings(value, _depth=0):
+    """Normalize an arbitrary facilities value into a list of name strings."""
+    out = []
+    if value is None or _depth > 4:
+        return out
+    if isinstance(value, str):
+        out.extend(p.strip() for p in _FACILITY_SPLIT_RE.split(value) if p.strip())
+    elif isinstance(value, dict):
+        named = next((value[k] for k in _FACILITY_NAME_KEYS
+                      if isinstance(value.get(k), str) and value[k].strip()), None)
+        if named:
+            out.append(named.strip())
+        else:  # a category/group wrapper — recurse into its collections
+            for v in value.values():
+                if isinstance(v, (list, dict)):
+                    out.extend(_facility_strings(v, _depth + 1))
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            out.extend(_facility_strings(item, _depth + 1))
+    return out
+
+
+def _scan_for_facilities(node, _depth=0):
+    """Recursively collect values under any key matching facilit*/amenit*."""
+    found = []
+    if _depth > 5:
+        return found
+    if isinstance(node, dict):
+        for k, v in node.items():
+            if isinstance(k, str) and _FACILITY_KEY_RE.search(k):
+                found.extend(_facility_strings(v))
+            elif isinstance(v, (dict, list)):
+                found.extend(_scan_for_facilities(v, _depth + 1))
+    elif isinstance(node, (list, tuple)):
+        for item in node:
+            found.extend(_scan_for_facilities(item, _depth + 1))
+    return found
+
+
+def extract_facilities(listing_data):
+    """Pull a normalized, deduped facilities list from detail-page JSON.
+
+    Tries known PropertyGuru paths first, then a bounded recursive scan for any
+    facilit*/amenit* key. Deduped case-insensitively (first-seen order kept),
+    capped at _MAX_FACILITIES. Returns [] when nothing is found.
+    """
+    if not isinstance(listing_data, dict):
+        return []
+    names = []
+    for path in (("facilities",), ("amenities",), ("facilityList",),
+                 ("project", "facilities"), ("project", "amenities"),
+                 ("propertyOverview", "facilities"), ("details", "facilities")):
+        node = listing_data
+        for seg in path:
+            node = node.get(seg) if isinstance(node, dict) else None
+            if node is None:
+                break
+        if node is not None:
+            names.extend(_facility_strings(node))
+    if not names:  # known paths empty — let the recursive scan find a renamed key
+        names.extend(_scan_for_facilities(listing_data))
+    seen, deduped = set(), []
+    for n in names:
+        key = n.lower()
+        if key and key not in seen and len(n) <= 60:
+            seen.add(key)
+            deduped.append(n)
+        if len(deduped) >= _MAX_FACILITIES:
+            break
+    return deduped
+
+
 def classify_pg_url(url: str) -> tuple[str, str | None]:
     """Classify a PropertyGuru URL.
 
@@ -831,13 +916,16 @@ class PropertyGuruScraper:
                 fields["total_units"] = _safe_int(project["totalUnits"])
             if not fields.get("developer") and project.get("developerName"):
                 fields["developer"] = project["developerName"]
+        facilities = extract_facilities(data)
+        if facilities:
+            fields["facilities"] = facilities
         return fields
 
     def _apply_enrichment(self, listing: Listing, data: dict) -> list[str]:
         """Apply enrichment data to a listing. Returns list of changed field names."""
         changed = []
         for field_name in ["latitude", "longitude", "facing", "floor_level",
-                           "furnishing", "total_units", "developer"]:
+                           "furnishing", "total_units", "developer", "facilities"]:
             new_val = data.get(field_name)
             if new_val is not None and not getattr(listing, field_name, None):
                 setattr(listing, field_name, new_val)

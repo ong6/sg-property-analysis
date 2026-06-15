@@ -1189,6 +1189,7 @@ Examples:
             r["score_1000"] = s.score_1000
             r["scored_at"] = today
             r["score_version"] = config.score_version()
+            r.update(s.three_score_fields())  # valuation / livability / overalls
             if s.score_1000 is not None:
                 scored_vals.append(s.score_1000)
 
