@@ -275,6 +275,39 @@ desirable to live in yet weakest measured forward return (desirability is alread
 in the price), which is exactly why livability is a capped floor in the
 investment Overall, never a return term.
 
+## v3.12 — Ground/low-floor stack demotion (2026-06-15, user-reported)
+
+**What changed:** user flagged a persistent over-ranking of ground-floor units.
+Root cause: a confirmed low-floor stack's low PSF is a *structural floor
+discount*, but the value signals read it as "cheap vs district / size-cohort"
+and credited it through `psf_value` + `age_value` (and the low price inflated
+`yield`). The v3.8 work neutralized the *same-stack* fake-discount but left the
+*district/cohort-level* credit intact, so PES/01-05 stacks (Archipelago, D'Nest)
+kept ranking 820-845.
+- Detection is **URA-print only** (`stack_low_floor_share ≥ 0.7` — ≥70% of tight
+  same-size comps printed at floors 01-05). `floor_level` is detail-page
+  enrichment (~0% on the bulk book) and description/PES keywords are 0% + alias
+  project names ("The Terrace"), so they're unusable — the print signal is the
+  only reliable one, and it never guesses.
+- Treatment (mmr.py + valuation.py): the cheapness is REAL (not a mis-scrape),
+  so it's **halved, not nuked** — `MMR_LOW_FLOOR_VALUE_FACTOR` 0.5 on the
+  positive side of psf_value/age_value — plus a modest fixed exit-liquidity
+  demotion (`MMR_LOW_FLOOR_PENALTY` 7 raw pts, its own `low_floor` component) for
+  the thinner buyer pool / weaker resale, and the structural-floor gate engages
+  so unvalidated future/cost can't pile on. Yield (real carry on a cheaper unit)
+  is left alone. Valuation damps the cheap side the same way and won't label a
+  low-floor stack "cheap".
+- Effect: **top-50 low-floor share 7 → 0**, top-100 12 → 1, top-200 18 → 6;
+  Archipelago low-floor units 845/835/828 → 788/776/770 (out of the top tier,
+  not nuked — still decent-tier units in a real project), valuation 89 → 60
+  ("fair", not "cheap"). `CONFIG_VERSION` → 3.12.
+
+**Why / caveat:** the value-credit damp is a data-trust fix (floor discount ≠
+underpricing) and fully defensible. The 7-pt exit penalty is **domain-knowledge,
+not return-measured** — floor band exists in URA prints, so low-vs-high forward
+return is backtestable; until then the penalty is a tunable judgment
+(`config.MMR_LOW_FLOOR_PENALTY`), surfaced as its own component.
+
 ## Open items / unvalidated levers
 
 **The Jun-2026 full-system audit (`docs/AUDIT_JUN2026.md`) is the current

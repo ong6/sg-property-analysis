@@ -56,6 +56,7 @@ _VAL_CENTER_DISTRICT_PCT = 10.5  # median ask premium vs age-adj district transa
 _VAL_CENTER_COHORT_PCT = 5.0     # median ask premium vs same-size same-project cohort
 _DISCOUNT_EXCESS_CREDIT = 0.25   # mirrors MMR's knee — discount past the knee earns little
 _OVERSIZED_CHEAP_FACTOR = 0.5    # cheap-PSF on a big unit is mostly a size artifact
+_LOW_FLOOR_CHEAP_FACTOR = 0.5    # cheap-PSF on a ground/low-floor stack is a floor discount
 _PEER_FULL = 10.0                # district peer_count for full-confidence read
 _COHORT_FULL = 15.0              # same-size txns for full-confidence read
 _CONF_FLOOR = 0.4                # a zero-confidence read still keeps this much signal
@@ -94,6 +95,7 @@ def score_valuation(scored) -> dict:
     psf_premium = flags_block.get("psf_premium_pct")
     cohort_txns = flags_block.get("psf_cohort_txns")
     stack_premium = flags_block.get("stack_premium_pct")
+    low_floor_share = flags_block.get("stack_low_floor_share")
 
     # --- collect signed value signals (negative = cheap) with confidences ---
     # Each signal is knee'd on its RAW premium (so the artifact-discount knee and
@@ -141,11 +143,17 @@ def score_valuation(scored) -> dict:
                or (deep_discount and (cohort_txns or 0) < MIN_BAND_TXNS)
                or print_contradiction)
     oversized = "oversized_unit" in flag_names
+    # v3.12: a confirmed low-floor stack's cheapness is a structural floor
+    # discount, not a bargain — damp the cheap side (mirror of MMR).
+    low_floor = (low_floor_share or 0) >= 0.7
     damp_notes = []
     if pts > 0:
         if oversized:
             pts *= _OVERSIZED_CHEAP_FACTOR
             damp_notes.append("oversized")
+        if low_floor:
+            pts *= _LOW_FLOOR_CHEAP_FACTOR
+            damp_notes.append("low-floor")
         if suspect:
             pts *= MMR_SUSPECT_VALUE_FACTOR
             damp_notes.append("suspect→verify")
@@ -164,9 +172,9 @@ def score_valuation(scored) -> dict:
         bits.append("damped: " + "+".join(damp_notes))
     # Decisive thresholds: a barely-above-neutral score is "fair", not "cheap".
     verdict = "cheap" if score >= 62 else ("dear" if score <= 38 else "fair")
-    # A suspect reading whose residual still clears the bar must NOT be sold as
-    # cheap — the apparent discount is the artifact we just damped.
-    if suspect and verdict == "cheap":
+    # A suspect or low-floor reading whose residual still clears the bar must NOT
+    # be sold as cheap — the apparent discount is the artifact we just damped.
+    if (suspect or low_floor) and verdict == "cheap":
         verdict = "fair"
     why = f"{verdict} · " + " · ".join(bits) if bits else verdict
 
