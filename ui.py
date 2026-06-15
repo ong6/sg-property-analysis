@@ -157,8 +157,26 @@ def _merge_unit_group(members: list) -> list:
     return out
 
 
+_CCR_D = {1, 2, 6, 7, 9, 10, 11}
+_RCR_D = {3, 4, 5, 8, 12, 13, 14, 15}
+
+
+def _region_for(district) -> str:
+    """CCR / RCR / OCR from a district code ('D15' / '15') — records carry the
+    district but not the region, and the stats strip + region pill need it."""
+    try:
+        d = int(str(district).upper().replace("D", "").strip() or 0)
+    except ValueError:
+        return ""
+    if d in _CCR_D:
+        return "CCR"
+    if d in _RCR_D:
+        return "RCR"
+    return "OCR" if d else ""
+
+
 def load_fresh() -> dict:
-    """Active listings first seen within FRESH_MAX_AGE_DAYS, score-annotated."""
+    """Every active listing, score-annotated (age is a client-side filter)."""
     db = listings_db.load_db()
     evals = _eval_lookup()
     current_sv = config.score_version()
@@ -167,8 +185,12 @@ def load_fresh() -> dict:
         if rec.get("status") == "stale":
             continue
         days_old = _days_since(rec.get("first_seen"))
-        if days_old is None or days_old > FRESH_MAX_AGE_DAYS:
-            continue
+        # Show the WHOLE active book — not just new arrivals. The age is kept as
+        # a client-side filter (and drives NEW highlighting); a stale poll that
+        # adds nothing fresh must never leave the view empty. days_old None →
+        # large sentinel so it sorts/filters as "old", never crashes the sort.
+        if days_old is None:
+            days_old = 9999
         history = rec.get("price_history") or []
         prices = [p.get("price") for p in history if p.get("price")]
         drop_pct = None
@@ -192,7 +214,10 @@ def load_fresh() -> dict:
             "price": rec.get("price"),
             "psf": rec.get("psf"),
             "district": rec.get("district") or "",
-            "region": rec.get("region") or "",
+            # Market segment (CCR/RCR/OCR) — the axis the thesis cares about —
+            # derived from district. (The stored `region` is a zone label like
+            # "East Coast (D15-16)", not the segment, so don't use it here.)
+            "region": _region_for(rec.get("district")),
             "tenure": rec.get("tenure") or "",
             "built_year": rec.get("built_year"),
             "floor_level": rec.get("floor_level") or "",
@@ -243,7 +268,60 @@ def load_fresh() -> dict:
     rows.sort(key=lambda r: (-(r["score_1000"] if r["score_1000"] is not None else -1),
                              r["days_old"]))
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "max_age_days": FRESH_MAX_AGE_DAYS, "rows": rows}
+            "max_age_days": FRESH_MAX_AGE_DAYS, "rows": rows,
+            "stats": _fresh_stats(rows)}
+
+
+def _median(xs):
+    xs = sorted(x for x in xs if x is not None)
+    return xs[len(xs) // 2] if xs else None
+
+
+def _fresh_stats(rows: list) -> dict:
+    """At-a-glance overview of the browsable book — drives the stats strip.
+
+    Computed over the DEDUPED unit rows (what the user actually scans), not the
+    raw listing count. score_hist is fixed 50-wide buckets over 300–900 so the
+    client can draw a mini-histogram without knowing the range.
+    """
+    scored = [r for r in rows if r.get("score_1000") is not None]
+    s1000 = [r["score_1000"] for r in scored]
+    lo, hi, step = 300, 900, 50
+    nb = (hi - lo) // step
+    hist = [0] * nb
+    for v in s1000:
+        b = min(nb - 1, max(0, (int(v) - lo) // step))
+        hist[b] += 1
+    region = {"CCR": 0, "RCR": 0, "OCR": 0, "?": 0}
+    for r in rows:
+        region[r.get("region") if r.get("region") in region else "?"] += 1
+    beds = {}
+    for r in rows:
+        b = r.get("beds")
+        k = f"{b}BR" if b and b < 5 else ("5BR+" if b else "?")
+        beds[k] = beds.get(k, 0) + 1
+    return {
+        "units": len(rows),
+        "listings": sum(r.get("dup_count", 1) for r in rows),
+        "scored": len(scored),
+        "tiers": {
+            "rec": sum(1 for v in s1000 if v >= 650),       # recommended
+            "decent": sum(1 for v in s1000 if 550 <= v < 650),
+            "typical": sum(1 for v in s1000 if 450 <= v < 550),
+            "below": sum(1 for v in s1000 if v < 450),
+        },
+        "score_hist": {"lo": lo, "step": step, "bins": hist},
+        "median_score": _median(s1000),
+        "median_val": _median([r.get("valuation") for r in scored]),
+        "median_liv": _median([r.get("livability") for r in scored]),
+        "median_price": _median([r.get("price") for r in rows]),
+        "median_psf": _median([r.get("psf") for r in rows]),
+        "region": region,
+        "beds": beds,
+        "new_today": sum(1 for r in rows if r.get("days_old") == 0),
+        "drops": sum(1 for r in rows if (r.get("drop_pct") or 0) <= -0.5),
+        "agent_rated": sum(1 for r in rows if r.get("agent_rating")),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -510,17 +588,51 @@ _PAGE = """<!DOCTYPE html>
   .links a:hover { text-decoration:underline; }
   .dim { color:var(--dim); }
   .empty { padding:60px 24px; text-align:center; color:var(--dim); }
-  .count { padding:0 24px 4px; color:var(--dim); font-size:12.5px; }
+  .count { padding:0 24px 5px; color:var(--dim); font-size:12.5px;
+           display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; }
   .count b { color:var(--text); }
+  .axislegend { font-size:11.5px; color:var(--dim); }
+  .axislegend b { font-weight:700; }
+  .ax-score{color:var(--green);} .ax-val{color:var(--blue);} .ax-liv{color:#a9b4c0;} .ax-ovr{color:var(--green);}
   footer { padding:14px 24px 26px; color:var(--dim); font-size:12px; }
   footer code { color:var(--text); }
+
+  /* ---------- overview stats strip ---------- */
+  .statstrip { display:flex; gap:10px; padding:14px 24px 2px; flex-wrap:wrap; align-items:stretch; }
+  .statcard { background:var(--panel); border:1px solid var(--line); border-radius:9px;
+              padding:9px 13px; min-width:96px; display:flex; flex-direction:column; gap:3px; }
+  .statcard .lbl { font-size:10px; text-transform:uppercase; letter-spacing:.05em; color:var(--dim); white-space:nowrap; }
+  .statcard .big { font-size:19px; font-weight:700; color:var(--text); line-height:1.1; }
+  .statcard .sub { font-size:11px; color:var(--dim); }
+  .statcard.grow { flex:1 1 200px; }
+  /* mini score histogram */
+  .hist { display:flex; align-items:flex-end; gap:2px; height:30px; margin-top:1px; }
+  .hist .bar { flex:1; background:var(--blue); border-radius:2px 2px 0 0; min-height:2px; opacity:.85; }
+  .hist .bar.lo { background:var(--red); } .hist .bar.mid { background:var(--gold); } .hist .bar.hi { background:var(--green); }
+  .hist .bar:hover { opacity:1; }
+  /* tier / region stacked bar */
+  .sbar { display:flex; height:11px; border-radius:6px; overflow:hidden; margin-top:3px; background:#0d1217; }
+  .sbar > span { display:block; }
+  .legend { display:flex; gap:9px; flex-wrap:wrap; font-size:10.5px; color:var(--dim); margin-top:4px; }
+  .legend i { display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:3px; vertical-align:0; }
+  .seg-rec{background:var(--green);} .seg-decent{background:#2f81f7;} .seg-typical{background:var(--gold);} .seg-below{background:var(--red);}
+  .seg-ccr{background:#a371f7;} .seg-rcr{background:#2f81f7;} .seg-ocr{background:#3fb950;} .seg-na{background:#3a4654;}
+
+  /* ---------- table density + region pills ---------- */
+  .region { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.03em; padding:1px 6px;
+            border-radius:5px; }
+  .region.ccr{background:rgba(163,113,247,.16);color:#c8a6ff;} .region.rcr{background:rgba(47,129,247,.16);color:#79c0ff;}
+  .region.ocr{background:rgba(63,185,80,.15);color:#56d364;} .region.na{background:#222b35;color:var(--dim);}
+  tbody td { padding:6px 10px; }
+  td.num { font-variant-numeric:tabular-nums; }
+  .axhdr { color:#cdd6df; }
 </style>
 </head>
 <body>
 <header>
-  <h1 id="title">📡 Fresh Listings</h1>
+  <h1 id="title">🏠 Listings</h1>
   <div class="tabs">
-    <button class="tab active" id="tab-fresh" onclick="switchTab('fresh')">📡 Fresh listings</button>
+    <button class="tab active" id="tab-fresh" onclick="switchTab('fresh')">🏠 Listings</button>
     <button class="tab" id="tab-arena" onclick="switchTab('arena')">🥊 Arena rankings</button>
   </div>
 </header>
@@ -529,18 +641,20 @@ _PAGE = """<!DOCTYPE html>
 
 <!-- FRESH VIEW -->
 <div id="view-fresh">
+  <div class="statstrip" id="statstrip"></div>
   <div class="controls">
-    <select id="f-window" onchange="renderFresh()">
+    <select id="f-window" onchange="renderFresh()" title="how long it has been on the market">
+      <option value="99999" selected>All listings</option>
       <option value="1">New today</option>
-      <option value="3" selected>Last 3 days</option>
+      <option value="3">Last 3 days</option>
       <option value="7">Last 7 days</option>
       <option value="14">Last 14 days</option>
       <option value="30">Last 30 days</option>
     </select>
     <select id="f-minscore" onchange="renderFresh()">
-      <option value="">Any score</option>
+      <option value="" selected>Any score</option>
       <option value="450">≥ 450</option>
-      <option value="550" selected>≥ 550 (decent)</option>
+      <option value="550">≥ 550 (decent)</option>
       <option value="650">≥ 650 (recommended)</option>
     </select>
     <select id="f-district" onchange="renderFresh()"><option value="">All districts</option></select>
@@ -570,8 +684,14 @@ _PAGE = """<!DOCTYPE html>
       <button id="f-dirbtn" onclick="fToggleDir()" title="flip sort direction">▼</button>
     </span>
   </div>
-  <div class="count"><b id="f-shown">0</b> fresh listings shown ·
-    <span id="f-tiers"></span></div>
+  <div class="count">
+    <span><b id="f-shown">0</b> listings · <span id="f-tiers"></span></span>
+    <span class="axislegend">4 axes →
+      <b class="ax-score">Score</b> MMR money ·
+      <b class="ax-val">Val</b> priced-right today ·
+      <b class="ax-liv">Liv</b> livability ·
+      <b class="ax-ovr">Ovr</b> overall</span>
+  </div>
   <table>
     <thead><tr>
       <th onclick="fSortBy('score_1000')" data-key="score_1000" title="MMR money score — backtest-calibrated forward-return signals">Score</th>
@@ -594,8 +714,8 @@ _PAGE = """<!DOCTYPE html>
     <tbody id="f-rows"></tbody>
   </table>
   <div class="empty" id="f-empty" style="display:none">
-    Nothing fresh matches these filters.<br>
-    Widen the window / lower the score floor — or hit <b>SCAN NOW</b> above to poll PropertyGuru.
+    No listings match these filters.<br>
+    Widen the age window or lower the score floor — or hit <b>SCAN NOW</b> above to pull new listings.
   </div>
 </div>
 
@@ -702,6 +822,8 @@ const valChip = s => s == null
 const ovColor = s => s >= 58 ? "background:#1c3326;color:#3fb950" :
                      s >= 44 ? "background:#332d1c;color:#e3b341" :
                                "background:#33201c;color:#f85149";
+const regionPill = reg => { const r = (reg || "").toLowerCase(); return ["ccr","rcr","ocr"].includes(r) ? `<span class="region ${r}">${esc(reg)}</span>` : ""; };
+const fmtTenure = t => { if (!t) return "-"; const s = t.toLowerCase(); if (s.includes("freehold")) return "FH"; const m = s.match(/(\\d{2,4})/); return m ? m[1] + "y" : t.slice(0, 6); };
 const ovChip = (s, own) => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="overall not scored yet — run --score-db / poller">·</span>'
   : `<span class="chip" style="${ovColor(s)}" title="overall, investment (MMR + capped livability floor; valuation is its own column)${own != null ? ` · own-stay overall: ${own}` : ""}">${s}</span>`;
@@ -723,7 +845,7 @@ function switchTab(which) {
     document.getElementById("tab-" + t).classList.toggle("active", t === which);
   }
   document.getElementById("title").textContent =
-    which === "fresh" ? "📡 Fresh Listings" : "🥊 Condo Arena Rankings";
+    which === "fresh" ? "🏠 Listings" : "🥊 Condo Arena Rankings";
   location.hash = which;
   if (which === "arena") renderArena(); else renderFresh();
 }
@@ -738,8 +860,13 @@ function renderPoll() {
               `<span class="dim">started ${agoStr(POLL.running_for_s)}</span>`);
   } else if (last.last_run) {
     const ok = last.ok;
-    bits.push(`last poll <b>${esc(last.last_run)}</b> <span class="dim">(${agoStr(POLL.last_age_s)})</span>` +
-      (ok ? ` <span class="ok">ok</span>` : ` <span class="err" title="${esc(last.error || "")}">FAILED — ${esc(last.error || "?")}</span>`));
+    const e = last.error || "";
+    const errShort = /ERR_NAME_NOT_RESOLVED|ENOTFOUND|getaddrinfo/i.test(e) ? "network / DNS"
+      : /cloudflare|challenge|\\b403\\b/i.test(e) ? "blocked (Cloudflare)"
+      : /timeout|ERR_TIMED_OUT/i.test(e) ? "timeout"
+      : (e.split("\\n")[0] || "?").slice(0, 46);
+    bits.push(`last scan <b>${esc(last.last_run)}</b> <span class="dim">(${agoStr(POLL.last_age_s)})</span>` +
+      (ok ? ` <span class="ok">ok</span>` : ` <span class="err" title="${esc(e)}">failed · ${esc(errShort)}</span>`));
     if (ok) bits.push(`<span><b class="ok">+${last.added ?? 0}</b> new · ` +
       `<b>${last.price_changes ?? 0}</b> price changes · <b>${last.scored ?? 0}</b> scored</span>`);
     bits.push(`<span class="dim">D${(last.districts || []).join(",")} · ${(last.beds || []).join(",")}BR · ${last.duration_s ?? "?"}s</span>`);
@@ -785,6 +912,72 @@ function initFreshFilters() {
   sel.value = cur;
 }
 
+const _med = a => { const x = a.filter(v => v != null).sort((p, q) => p - q); return x.length ? x[Math.floor(x.length / 2)] : null; };
+function computeStats(rows) {
+  const scored = rows.filter(r => r.score_1000 != null);
+  const s = scored.map(r => r.score_1000);
+  const lo = 300, step = 50, nb = 12, hist = Array(nb).fill(0);
+  for (const v of s) { const b = Math.min(nb - 1, Math.max(0, Math.floor((v - lo) / step))); hist[b]++; }
+  const tier = f => s.filter(f).length;
+  const region = { CCR: 0, RCR: 0, OCR: 0, NA: 0 };
+  for (const r of rows) { const g = (r.region || "").toUpperCase(); region[g in region ? g : "NA"]++; }
+  return {
+    units: rows.length, listings: rows.reduce((a, r) => a + (r.dup_count || 1), 0), scored: scored.length,
+    rec: tier(v => v >= 650), decent: tier(v => v >= 550 && v < 650), typical: tier(v => v >= 450 && v < 550), below: tier(v => v < 450),
+    hist, histLo: lo, histStep: step, medScore: _med(s),
+    medVal: _med(scored.map(r => r.valuation)), medLiv: _med(scored.map(r => r.livability)),
+    medPrice: _med(rows.map(r => r.price)), medPsf: _med(rows.map(r => r.psf)),
+    region, newToday: rows.filter(r => r.days_old === 0).length,
+    drops: rows.filter(r => hasDrop(r)).length, rated: rows.filter(r => r.agent_rating).length,
+  };
+}
+function renderStats(rows) {
+  const st = computeStats(rows);
+  const maxH = Math.max(1, ...st.hist);
+  const bars = st.hist.map((c, i) => {
+    const center = st.histLo + (i + 0.5) * st.histStep;
+    const cls = center < 450 ? "lo" : center < 650 ? "mid" : "hi";
+    const h = Math.round(26 * c / maxH) + 2;
+    return `<div class="bar ${cls}" style="height:${h}px" title="${st.histLo + i * st.histStep}\\u2013${st.histLo + (i + 1) * st.histStep}: ${c}"></div>`;
+  }).join("");
+  const tot = st.scored || 1;
+  const seg = (cls, n, lbl) => n ? `<span class="seg-${cls}" style="width:${(100 * n / tot).toFixed(1)}%" title="${lbl}: ${n}"></span>` : "";
+  const rtot = (st.region.CCR + st.region.RCR + st.region.OCR + st.region.NA) || 1;
+  const rseg = (cls, n, lbl) => n ? `<span class="seg-${cls}" style="width:${(100 * n / rtot).toFixed(1)}%" title="${lbl}: ${n}"></span>` : "";
+  const fp = p => p ? "$" + (p / 1e6).toFixed(2) + "M" : "–";
+  document.getElementById("statstrip").innerHTML = `
+    <div class="statcard">
+      <span class="lbl">Units shown</span><span class="big">${st.units.toLocaleString()}</span>
+      <span class="sub">${st.listings.toLocaleString()} listings · ${st.scored.toLocaleString()} scored</span>
+    </div>
+    <div class="statcard grow">
+      <span class="lbl">Score distribution · MMR/1000</span>
+      <div class="hist">${bars}</div>
+      <span class="sub">median ${st.medScore ?? "–"} · 500 = market-typical</span>
+    </div>
+    <div class="statcard grow">
+      <span class="lbl">Quality tiers</span>
+      <div class="sbar">${seg("rec", st.rec, "650+ recommended")}${seg("decent", st.decent, "550–649 decent")}${seg("typical", st.typical, "450–549 typical")}${seg("below", st.below, "<450 below")}</div>
+      <div class="legend">
+        <span><i class="seg-rec"></i>650+ ${st.rec}</span><span><i class="seg-decent"></i>550+ ${st.decent}</span>
+        <span><i class="seg-typical"></i>450+ ${st.typical}</span><span><i class="seg-below"></i>&lt;450 ${st.below}</span>
+      </div>
+    </div>
+    <div class="statcard">
+      <span class="lbl">Region</span>
+      <div class="sbar">${rseg("ccr", st.region.CCR, "CCR")}${rseg("rcr", st.region.RCR, "RCR")}${rseg("ocr", st.region.OCR, "OCR")}${rseg("na", st.region.NA, "n/a")}</div>
+      <div class="legend"><span><i class="seg-ccr"></i>CCR ${st.region.CCR}</span><span><i class="seg-rcr"></i>RCR ${st.region.RCR}</span><span><i class="seg-ocr"></i>OCR ${st.region.OCR}</span></div>
+    </div>
+    <div class="statcard">
+      <span class="lbl">Median</span><span class="big">${fp(st.medPrice)}</span>
+      <span class="sub">$${st.medPsf ? Math.round(st.medPsf).toLocaleString() : "–"} psf · Val ${st.medVal ?? "–"} · Liv ${st.medLiv ?? "–"}</span>
+    </div>
+    <div class="statcard">
+      <span class="lbl">Activity</span><span class="big" style="color:var(--green)">${st.newToday}</span>
+      <span class="sub">new today · ${st.drops} price drops · ${st.rated} AI-rated</span>
+    </div>`;
+}
+
 function renderFresh() {
   initFreshFilters();
   const win = parseInt(document.getElementById("f-window").value);
@@ -803,6 +996,8 @@ function renderFresh() {
     (!mp || (r.price && r.price <= mp)) &&
     (!q || r.project_name.toLowerCase().includes(q)) &&
     (!drops || hasDrop(r)));
+
+  renderStats(rows);  // overview reflects the active filters, not just the full book
 
   rows.sort((a, c) => {
     let x = a[fSortKey], y = c[fSortKey];
@@ -836,12 +1031,12 @@ function renderFresh() {
       <td class="name">${esc(r.project_name)}${r.days_old === 0 ? '<span class="badge new">NEW</span>' : ""}${hasDrop(r) ? `<span class="badge drop" title="down from its peak ask${(r.dup_count || 1) > 1 ? " (union of all agents\\u2019 asks)" : ""}">⬇ ${r.drop_pct ?? ""}%</span>` : ""}${(r.dup_count || 1) > 1 ? `<span class="badge dup" title="same unit listed by ${r.dup_count} agents${r.ask_min != null ? ` — asks ${fmtPrice(r.ask_min)}\\u2013${fmtPrice(r.ask_max)}, lowest shown` : ""}">×${r.dup_count}</span>` : ""}</td>
       <td>${r.beds ? r.beds + "BR" : "?"}${r.baths ? '<span class="dim">/' + r.baths + 'ba</span>' : ""}</td>
       <td>${fmtPrice(r.price)}</td>
-      <td>${fmtPsf(r.psf)}</td>
-      <td class="dim">${r.sqft ? Math.round(r.sqft).toLocaleString() : "-"}</td>
-      <td>${esc(r.district)}</td>
-      <td class="dim" title="${esc(r.first_seen)}">${r.days_old === 0 ? "today" : r.days_old + "d ago"}</td>
+      <td class="num">${fmtPsf(r.psf)}</td>
+      <td class="dim num">${r.sqft ? Math.round(r.sqft).toLocaleString() : "-"}</td>
+      <td>${regionPill(r.region)} <span class="dim">${esc(r.district)}</span></td>
+      <td class="dim" title="${esc(r.first_seen)}">${r.days_old === 0 ? "today" : (r.days_old >= 9999 ? "—" : r.days_old + "d ago")}</td>
       <td class="dim">${r.built_year ?? "-"}</td>
-      <td class="dim">${esc(r.tenure || "-")}</td>
+      <td class="dim" title="${esc(r.tenure || "")}">${fmtTenure(r.tenure)}</td>
       <td class="dim">${esc(r.mrt_info || "-")}</td>
       <td class="links">
         ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Listing ↗</a>` : ""}
