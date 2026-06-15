@@ -34,12 +34,20 @@ def _patch_db(monkeypatch, recs):
 
 
 class TestLoadFresh:
-    def test_shape_and_age_cap(self):
+    def test_shape_and_full_book(self):
         data = ui.load_fresh()
+        # viewer-strip + stats inputs ship with the payload
         assert "generated_at" in data and "rows" in data
+        assert "stats" in data and "data_as_of" in data
         for r in data["rows"]:
-            assert r["days_old"] is not None
-            assert r["days_old"] <= ui.FRESH_MAX_AGE_DAYS
+            assert r["days_old"] is not None   # 9999 sentinel when first_seen unknown
+
+    def test_no_age_cap_shows_old_listings(self, monkeypatch):
+        # the 30-day server cap is gone — age is a client-side filter now, so an
+        # old-but-active listing is still part of the browsable book.
+        _patch_db(monkeypatch, [_rec("old", days_ago=400)])
+        rows = ui.load_fresh()["rows"]
+        assert len(rows) == 1 and rows[0]["days_old"] == 400
 
     def test_sorted_score_desc_nulls_last(self):
         rows = ui.load_fresh()["rows"]
@@ -206,9 +214,9 @@ class TestLoadRankings:
 class TestRenderIndex:
     def test_renders_both_views(self):
         page = ui.render_index()
-        assert "Fresh Listings" in page
+        assert "Listings" in page
         assert "Arena rankings" in page
-        assert "SCAN NOW" in page or "pollbar" in page
+        assert "pollbar" in page
 
     def test_footer_discloses_heuristic_and_config_version(self):
         page = ui.render_index()
@@ -282,7 +290,7 @@ class TestHTTPServer:
     def test_index_serves_html(self):
         status, body = self._get("/")
         assert status == 200
-        assert "Fresh Listings" in body
+        assert "🏠 Listings" in body
 
     def test_api_fresh(self):
         status, body = self._get("/api/fresh")

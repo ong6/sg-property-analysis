@@ -115,15 +115,19 @@ the stats deserve to rank. Each run also writes a timestamped archive
 
 ## UI, dashboard, poller
 
-**Listings UI**: `python ui.py` → http://127.0.0.1:8642 — default tab is
-**Fresh listings** (new-on-market from the DB, sorted by score_1000, NEW /
+**Listings UI**: `python ui.py` → http://127.0.0.1:8642 — a **viewer over the
+scored DB** (full book, sorted by score_1000; overview stats strip, NEW /
 price-drop badges, min-score / recency / district / beds filters, same-unit
-dedupe ×N badge); arena table is the second tab (`#arena`). The UI auto-polls
-PropertyGuru in the background (default every 6h, `--no-poll` to disable,
-`--poll-districts/--poll-beds/--poll-interval-mins` to tune) and has a SCAN
-NOW button. Standalone/cron: `python poller.py` (one cycle) or `--loop`;
-state in `data/poll_state.json`. JSON APIs: `/api/fresh`, `/api/rankings`,
-`/api/poll-status`, `POST /poll`.
+dedupe ×N badge, Score/Val/Liv/Ovr axis chips); arena table is the second tab
+(`#arena`). **Live scraping is OFF by default** — PropertyGuru is behind
+Cloudflare, which blocks headless background polls, so the UI never scrapes on
+its own. Refresh data with the standalone headed poller: `python poller.py`
+(one cycle) or `--loop` (solve Cloudflare once in the Chrome window; the
+clearance cookie is reused), state in `data/poll_state.json`. To opt the
+in-UI scraping back in (auto-poll + SCAN NOW): `python ui.py --poll
+--poll-no-headless` (`--poll-districts/--poll-beds/--poll-interval-mins` to
+tune). JSON APIs: `/api/fresh`, `/api/rankings`, `/api/poll-status`,
+`POST /poll`.
 
 The fresh view shows the **three-score system** (v3.11) — `score_1000` (MMR —
 forward-return money axis, backtest-anchored), plus three 0–100 axes:
