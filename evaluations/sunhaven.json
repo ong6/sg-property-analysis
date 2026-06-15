@@ -54,6 +54,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sunhaven-24721293",
         "review_file": "cov_batch_13.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold D16 3BR in the deep-liquidity band, but the Buy rested on a 5.74% trailing CAGR and an arena Elo record rather than any verified discount.",
+      "rating_rationale": "No cheap-vs-recent-peers margin cited; trailing CAGR has ≈0 forward power and the arena record isn't a forward signal. Freehold + DTL/Bayshore are fine but priced in → Neutral.",
+      "red_flags": [
+        "thesis = discredited trailing CAGR + arena record",
+        "no value margin"
+      ],
+      "catalysts": [
+        "DTL / Bayshore precinct"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

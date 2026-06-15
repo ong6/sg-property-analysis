@@ -58,6 +58,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sceneca-residence-500074466",
         "review_file": "cov_batch_24.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Brand-new OCR 1BR directly connected to Tanah Merah MRT — a durable plus — but priced essentially at market (~1% below median), so no value margin to drive outperformance.",
+      "rating_rationale": "Ask sits near the floor of a tight new-launch range and only ~1% under unit median; direct MRT connection + OCR region are positives already in the price. No cheap-vs-recent-peers edge → Neutral.",
+      "red_flags": [
+        "priced at market, no value margin",
+        "570sf 1BR — thinner resale"
+      ],
+      "catalysts": [
+        "Tanah Merah MRT 50m (directly connected)"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

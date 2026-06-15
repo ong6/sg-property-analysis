@@ -60,6 +60,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-vue-8-residence-60197107",
         "review_file": "cov_batch_01.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Family-sized OCR 4BR squarely in the upgrader band, but the Buy rested on a 5.19% trailing CAGR and a 'future MRT' premium the backtest can't credit, with no verified discount.",
+      "rating_rationale": "$2.36M / 1,658sf appeals to HDB upgraders and OCR region is favourable, but there's no cheap-vs-peers margin; trailing CAGR ≈0 forward and the future-infra premium measures ≈0. A sound family hold, not a forward edge → Neutral.",
+      "red_flags": [
+        "no verified discount",
+        "thesis = trailing CAGR + future-MRT (both ≈0 forward)",
+        "large 4BR — slower resale"
+      ],
+      "catalysts": [
+        "CP2 future MRT (Cross Island)",
+        "HDB-upgrader OCR demand"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

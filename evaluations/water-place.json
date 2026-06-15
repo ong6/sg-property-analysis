@@ -60,6 +60,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-water-place-500161824",
         "review_file": "cov_batch_01.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Rare 120m-to-TEL durable location premium, but the unit is an oversized 732sf '1BR' at only a slight discount, so the value case is thin once format is considered.",
+      "rating_rationale": "120m to a TEL station is a genuine, durable plus and the 91-txn series is credible, but 732sf is large for a 1BR (format/PSF caution) and the discount to median is only slight; the Buy leaned partly on a 6.75% trailing CAGR. Location strong, value thin → Neutral.",
+      "red_flags": [
+        "oversized 732sf '1BR' — format caution",
+        "only a slight discount",
+        "thesis partly trailing CAGR"
+      ],
+      "catalysts": [
+        "120m to TEL station (durable premium)"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

@@ -58,6 +58,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-high-rental-yield-1br-for-sale-60155316",
         "review_file": "cov_batch_22.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Identified as The Tre Ver (UOL, 729-unit riverfront, 260m to Potong Pasir NE-line) — a large, liquid, well-regarded development — but as a 495sf shoebox 1BR at fair value it's a rental hold, not a capital-value edge.",
+      "rating_rationale": "$900k / $1,818psf is fair (no verified discount); the strength is the development quality + MRT + rental yield, not a cheap entry. 495sf shoebox caps capital appreciation and resale depth → Neutral leaning positive.",
+      "red_flags": [
+        "495sf shoebox — thin resale, lagging appreciation",
+        "fair value, no discount"
+      ],
+      "catalysts": [
+        "Potong Pasir NE-line 260m",
+        "The Tre Ver: large liquid riverfront dev",
+        "strong rental yield"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

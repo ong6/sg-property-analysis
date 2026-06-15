@@ -114,6 +114,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-twin-vew-23635886",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Genuine ~7% discount near the floor of the recent band on a liquid $1M 2BR, with a real CRL Clementi catalyst — a defensible value + location entry.",
+      "rating_rationale": "Last-12mo $1,699-2,008psf (avg ~$1,877); this 2BR at $1,754psf is ~7% below average and near the floor, a real discount on the widest-pool unit type at an easy-exit $1M quantum. LOW confidence: D05 RCR region is neutral and the CRL benefit is multi-year out.",
+      "red_flags": [
+        "CRL benefit multi-year out",
+        "570sf compact 2BR"
+      ],
+      "catalysts": [
+        "~7% discount near recent floor",
+        "CRL Clementi corridor",
+        "liquid $1M 2BR quantum"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

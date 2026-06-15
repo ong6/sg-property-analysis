@@ -54,6 +54,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-verve-25230171",
         "review_file": "cov_batch_13.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "A genuine ~10% discount on a freehold city-fringe 1BR at a liquid sub-$1M quantum with broad Novena/CBD rental demand — value + liquidity + freehold align.",
+      "rating_rationale": "$1,443 vs $1,609 median is a real ~10% gap on a credible 34-txn series, not a thin-cohort quirk; freehold removes lease decay and $900k is an easy-exit ticket. LOW confidence: a 1BR's capital appreciation lags larger units, so the case leans on the discount + rental carry.",
+      "red_flags": [
+        "1BR capital appreciation lags",
+        "city-fringe (not core) location"
+      ],
+      "catalysts": [
+        "freehold city-fringe D12",
+        "Novena/CBD rental access",
+        "sub-$1M liquid quantum"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

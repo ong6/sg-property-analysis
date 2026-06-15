@@ -110,6 +110,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-26-25483888",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The apparent ~9-10% discount is suspect: an 807sf '1BR' is oversized for the type (likely a 1+study/loft/dual-key), so the PSF gap to 1BR comps isn't apples-to-apples — a verify-first signal.",
+      "rating_rationale": "Recent ~$1,577psf vs the $1,425 ask looks cheap, but 807sf far exceeds a normal 1BR (~450-550sf), so a bedroom_sqft_mismatch likely inflates the model's −24% age-adj read; the format must be confirmed before crediting the discount → Neutral.",
+      "red_flags": [
+        "807sf '1BR' oversized-for-type — format/sqft verify-first",
+        "discount may be a format artifact, not value"
+      ],
+      "catalysts": [
+        "freehold D14"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }
