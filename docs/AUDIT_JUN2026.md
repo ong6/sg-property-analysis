@@ -33,8 +33,17 @@ repeat-sales outcome cross-check (conclusions robust). Norm center →1505.
   fetched: `python fetch_ura_districts.py --property-types ec` drives a
   non-headless browser with a manual-CAPTCHA step, so it must be **user-run**
   (can't be done autonomously). Strata-landed likewise.
-- **~616 stale pre-prior evaluations** (133 stale Buys, the ones that can
-  mislead) — being re-judged in batches; see eval-rejudge progress.
+- **Stale pre-prior evaluations** — the 43 stale Buys that the fixed scorer
+  contradicted (scored <650) were re-judged with web verification on 2026-06-15:
+  **8 held as low-confidence Buy** (genuine verified same-project discounts +
+  liquidity — Esta Ruby, Woodleigh, The Verve, Twin VEW, Seaside, Rezi 35, Parc
+  Clematis, Suites 28), **35 → Neutral** (relied on discredited trailing CAGR /
+  arena signals / new-launch premium, or the "discount" was a loft-void /
+  oversized-1BR / below-print-floor / unit-mismatch artifact). Overall Buy count
+  133→99. *Remaining low-risk:* ~92 stale Buys the scorer still scores ≥650
+  (engine agrees — re-judge opportunistically) and ~480 stale Neutral/Avoid
+  (re-judging rarely flips a decision). The dashboard's per-condo ANALYZE button
+  is the purpose-built tool for the long tail.
 - Dashboard ANALYZE scoped `--allowedTools` — extend if a headless run stalls.
 
 **Cross-cutting headline:** the v3.6–v3.9 trust layer works where it engages,
