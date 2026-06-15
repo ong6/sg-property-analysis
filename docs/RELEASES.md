@@ -255,9 +255,12 @@ stays the untouched investment-return axis; nothing here folds into it.
   PG's several JSON shapes + a renamed-key recursive fallback); N/S facing bumped
   +4→+6, W −4→−5 (tropics sun matters more than first weighted).
 - **Overall** (`scoring/overall.py`, 0–100): purpose-weighted combine. Investment
-  Overall = 0.62·return + 0.38·valuation + a **capped** (±6) livability demand-
-  floor nudge (downside/exit-liquidity, **never** appreciation). Own-stay Overall
-  = 0.55·livability + 0.30·valuation + 0.15·return-as-resale-safety.
+  Overall = **MMR (the backtest-calibrated answer) + a capped (±6) livability
+  demand-floor** (downside/exit-liquidity, **never** appreciation) — valuation is
+  *not* re-blended here (it's ≈MMR's own value signal, corr ≈0.78; re-adding it
+  just double-counts value and tracks MMR at corr ≈0.94). Own-stay Overall =
+  0.55·livability + 0.30·valuation + 0.15·return-as-resale-safety. So Overall ≈
+  MMR for investors and diverges mainly in own-stay mode, where it adds real info.
 
 **Wiring:** computed in `full_scorer` (defensive — a new-module error can't break
 MMR), persisted alongside `score_1000` by the backlog scorer + poller

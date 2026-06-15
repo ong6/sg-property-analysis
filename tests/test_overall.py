@@ -20,6 +20,22 @@ def test_investor_unit_investment_beats_own_stay():
     assert o["investment"] > o["own_stay"]
 
 
+def test_valuation_not_in_investment_overall():
+    # valuation is its own axis (≈MMR's own value signal); it must NOT re-enter
+    # the investment overall (= MMR + capped livability floor). Own-stay still
+    # uses it, so changing valuation moves own_stay but not investment.
+    a = compute_overall(valuation=30, livability=60, score_1000=600)
+    b = compute_overall(valuation=90, livability=60, score_1000=600)
+    assert a["investment"] == b["investment"]
+    assert b["own_stay"] > a["own_stay"]
+
+
+def test_investment_overall_tracks_mmr_plus_floor():
+    # with neutral livability, the investment overall is just MMR rescaled
+    o = compute_overall(valuation=10, livability=50, score_1000=700)
+    assert o["investment"] == 70  # 700/10 + 0 floor; valuation 10 (dear) ignored
+
+
 def test_livability_demand_floor_is_capped():
     # going from a great-to-live (85) to a perfect (100) home must NOT raise the
     # investment overall further — livability's contribution there is capped.
@@ -38,7 +54,7 @@ def test_livability_floor_downside():
 def test_livability_never_dominates_investment():
     # max livability cannot turn a weak investment into a strong overall
     o = compute_overall(valuation=40, livability=100, score_1000=400)
-    assert o["investment"] <= 55   # capped floor (+6) on a ~42 base, not a takeover
+    assert o["investment"] <= 55   # capped floor (+6) on a 40 base (MMR), not a takeover
 
 
 def test_headline_follows_purpose():
@@ -60,4 +76,4 @@ def test_purpose_normalization():
 def test_missing_score_is_neutral_not_zero():
     # unscored investment axis must not crater the overall
     o = compute_overall(valuation=60, livability=60, score_1000=None)
-    assert o["investment"] > 50  # val 60 + neutral inv 50 + small floor
+    assert o["investment"] > 50  # neutral inv 50 + small livability floor (+2)

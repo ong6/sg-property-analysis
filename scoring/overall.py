@@ -9,8 +9,11 @@ There is no single "good property" number, because own-stay and investment
 buyers optimize different things — a great home is often a mediocre investment
 and vice versa (large / freehold / prime is the clearest case: most desirable to
 live in, weakest measured forward return, because its desirability is already in
-the price). So Overall is PURPOSE-WEIGHTED: the same three inputs combine
-differently depending on why you're buying.
+the price). So Overall is PURPOSE-WEIGHTED: the inputs combine differently
+depending on why you're buying. Own-stay leans on livability (with valuation and
+a resale-safety nod to the investment axis); investment leans on MMR — the
+backtest-calibrated answer — plus only a capped livability floor, since valuation
+is largely MMR's own value signal and re-blending it would just double-count.
 
 Crucially, livability NEVER enters the investment Overall as appreciation — a
 nicer home does not mechanically appreciate more (its niceness is priced in). It
@@ -25,10 +28,14 @@ All inputs may be None (→ treated as neutral, never penalized). Returns
 
 from __future__ import annotations
 
-# Investment Overall = weighted(investment, valuation) + capped demand-floor(livability).
-# The two backtested axes are the drivers; livability is a bounded floor nudge.
-_INV_W_INVESTMENT = 0.62
-_INV_W_VALUATION = 0.38
+# Investment Overall = MMR (the backtest-CALIBRATED investment answer) + a capped
+# livability demand-floor. Valuation is deliberately NOT re-blended here: it is
+# largely MMR's own cheap-vs-peers signal surfaced standalone (measured corr
+# ≈0.78), so adding it would re-weight value ABOVE the calibrated blend while
+# merely tracking MMR (overall-vs-MMR corr ≈0.94). MMR already prices value
+# optimally per the backtest; the only thing Overall adds for an investor is the
+# bounded livability floor (downside / exit-liquidity, never appreciation).
+# Valuation stands as its own axis/column instead.
 _DEMAND_FLOOR_K = 0.20       # livability points → floor points
 _DEMAND_FLOOR_CAP = 6.0      # max |adjustment| livability may make to the investment overall
 
@@ -65,14 +72,14 @@ def compute_overall(valuation=None, livability=None, score_1000=None,
     liv = _n(livability)
     inv100 = _clamp(_n(score_1000, 500.0) / 10.0)
 
-    # Investment Overall: value + forward-return drive it; livability is only a
-    # bounded demand-floor nudge (downside/liquidity, never appreciation).
+    # Investment Overall: MMR drives it (the calibrated answer); livability is
+    # only a bounded demand-floor nudge (downside/liquidity, never appreciation).
+    # Valuation is NOT re-blended — see the constants note above.
     demand_floor = 0.0
     if liv_present:
         demand_floor = max(-_DEMAND_FLOOR_CAP,
                            min(_DEMAND_FLOOR_CAP, (liv - 50.0) * _DEMAND_FLOOR_K))
-    investment_overall = _clamp(
-        _INV_W_INVESTMENT * inv100 + _INV_W_VALUATION * val + demand_floor)
+    investment_overall = _clamp(inv100 + demand_floor)
 
     # Own-stay Overall: home quality leads; don't-overpay (valuation) matters;
     # investment enters only as a resale-safety net.
