@@ -116,6 +116,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-whistler-grand-500083860",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Fairly priced shoebox 1BR — the ask is squarely in the verified recent transacting band, so there's no margin of safety, just market value.",
+      "rating_rationale": "441sf 1BRs trade $820-860k; the $838k ask is fair value (algo's −5.1% age-adj is accurate, not a bargain). Shoebox exit liquidity and a large-development 1BR cap the upside → Neutral.",
+      "red_flags": [
+        "fair value, no discount",
+        "441sf shoebox — thin resale"
+      ],
+      "catalysts": [
+        "Clementi / West Coast rental demand"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

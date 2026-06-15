@@ -166,6 +166,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-clematis-500109485",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "Genuinely the cheapest 2BR in a large, very liquid mega-development: the $1.5M ask undercuts the verified recent 2BR comps ($1.58-1.75M for like units), a real margin of safety with deep exit liquidity behind it.",
+      "rating_rationale": "2025 2BR transactions ran $1,828-2,618psf and comparable 893sf units list $1.58-1.75M, so $1.5M / $1,680psf is the cheapest live entry — a genuine discount, not a mis-scrape, in a 1,468-unit project with deep resale depth. LOW confidence: confirm the unit's floor/facing/condition for why it's the cheapest.",
+      "red_flags": [
+        "cheapest-in-project ask — verify floor/facing/condition",
+        "99LH (lease decay over long hold)"
+      ],
+      "catalysts": [
+        "below verified recent 2BR comps",
+        "1,468-unit mega-development — deep liquidity",
+        "Clementi CRL corridor"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

@@ -56,6 +56,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-heritage-view-500090635",
         "review_file": "cov_batch_22.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Efficient, well-evidenced D05 2BR but priced essentially at market (~2% under median), so it's a sound hold without a value edge.",
+      "rating_rationale": "High-confidence data (101 txns) but only −2% vs median = at market; the Buy leaned on a 5.14% trailing CAGR with ≈0 forward power. No discount, no standout catalyst → Neutral.",
+      "red_flags": [
+        "priced at market (−2%)",
+        "thesis leaned on trailing CAGR"
+      ],
+      "catalysts": [
+        "West Coast / One-North access"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

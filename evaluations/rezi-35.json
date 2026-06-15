@@ -116,6 +116,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rezi-35-25641477",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "A genuine ~6% discount confirmed against actual same-project comps on a freehold D14 3BR — value plus no lease-decay risk.",
+      "rating_rationale": "$1,592psf vs the project's last-12mo $1,659-1,736 (avg ~$1,698) is a real ~6% gap on same-project evidence, not just an age-adjusted model read; freehold and a family-sized 3BR support demand. LOW confidence: modest margin and D14 RCR region is neutral.",
+      "red_flags": [
+        "modest ~6% margin",
+        "RCR region neutral"
+      ],
+      "catalysts": [
+        "freehold D14",
+        "~6% discount vs same-project recent comps"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

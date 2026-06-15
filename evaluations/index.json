@@ -11,9 +11,9 @@
     "water-place": {
       "condo": "Water Place",
       "district": "D15",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "the-luxurie": {
       "condo": "The Luxurie",
@@ -102,9 +102,9 @@
     "newest": {
       "condo": "NEWest",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "terrasse": {
       "condo": "Terrasse",
@@ -487,9 +487,9 @@
     "whistler-grand": {
       "condo": "Whistler Grand",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "the-tanamera": {
       "condo": "The Tanamera",
@@ -690,9 +690,9 @@
     "high-rental-yield-1br-for-sale": {
       "condo": "High Rental Yield 1Br for Sale",
       "district": "D13",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "penrose": {
       "condo": "Penrose",
@@ -1264,9 +1264,9 @@
     "parc-clematis": {
       "condo": "Parc Clematis",
       "district": "D05",
-      "latest_rating": "Strong Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 3
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-15",
+      "eval_count": 4
     },
     "park-place-residences": {
       "condo": "Park Place Residences",
@@ -1383,9 +1383,9 @@
     "heritage-view": {
       "condo": "Heritage View",
       "district": "D05",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "the-trilinq": {
       "condo": "The Trilinq",
@@ -1544,9 +1544,9 @@
     "rezi-26": {
       "condo": "Rezi 26",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "queens": {
       "condo": "Queens",
@@ -1775,9 +1775,9 @@
     "d-pavilion": {
       "condo": "D'Pavilion",
       "district": "D19",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "the-lilium": {
       "condo": "The Lilium",
@@ -1936,9 +1936,9 @@
     "tenet": {
       "condo": "Tenet",
       "district": "D18",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "arc-at-tampines": {
       "condo": "Arc at Tampines",
@@ -2125,9 +2125,9 @@
     "sunhaven": {
       "condo": "Sunhaven",
       "district": "D16",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "austville-residences": {
       "condo": "Austville Residences",
@@ -2307,9 +2307,9 @@
     "gem-residences": {
       "condo": "Gem Residences",
       "district": "D12",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "normanton-park-2-bed-loft-sea-view-move-in-ready": {
       "condo": "Normanton Park, 2 bed + Loft, Sea view, move in ready",
@@ -2427,8 +2427,8 @@
       "condo": "Seaside Residences",
       "district": "D15",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "promenade-peak": {
       "condo": "Promenade Peak",
@@ -2525,8 +2525,8 @@
       "condo": "Suites 28",
       "district": "D14",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 1
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "heron-bay": {
       "condo": "Heron Bay",
@@ -2671,9 +2671,9 @@
     "sceneca-residence": {
       "condo": "Sceneca Residence",
       "district": "D16",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "nadia-mansions": {
       "condo": "Nadia Mansions",
@@ -3344,8 +3344,8 @@
       "condo": "Twin VEW",
       "district": "D05",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "phoenix-residences": {
       "condo": "Phoenix Residences",
@@ -3519,8 +3519,8 @@
       "condo": "The Verve",
       "district": "D12",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "3bed-dual-key-cheap-fh-top-2025-in-the-east-fr-19xxpsf": {
       "condo": "❤️ 3bed dual key, cheap FH, TOP 2025, in the east, fr 19xxpsf ❤️",
@@ -4128,8 +4128,8 @@
       "condo": "Rezi 35",
       "district": "D14",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "nuovo": {
       "condo": "Nuovo",
@@ -4169,9 +4169,9 @@
     "vue-8-residence": {
       "condo": "Vue 8 Residence",
       "district": "D18",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "westcove-condo": {
       "condo": "Westcove Condo",
@@ -4197,9 +4197,9 @@
     "piermont-grand": {
       "condo": "Piermont Grand",
       "district": "D19",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 2
     },
     "the-midas": {
       "condo": "The Midas",

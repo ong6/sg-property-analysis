@@ -114,6 +114,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-newest-60223004",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The current best listing asks ~$1,647psf — the TOP of NEWest's recent range ($1,070-1,647), not the cheap entry the prior assessed — so this specific unit carries no discount.",
+      "rating_rationale": "Recent avg ~$1,386psf; this listing at the range ceiling is fully priced, unlike the ~$1,228 unit the prior judged. 99LH mixed-use D05 is fine, but no value edge on the live unit → Neutral.",
+      "red_flags": [
+        "current ask at the top of the recent range",
+        "prior assessed a cheaper, different unit"
+      ],
+      "catalysts": [
+        "One-North / West Coast corridor"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

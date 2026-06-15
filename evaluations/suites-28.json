@@ -56,6 +56,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-28-60160175",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "A genuine ~10% discount to recent same-project prints at an ultra-liquid $699k quantum — real margin of safety with the easiest exit ticket in the cohort.",
+      "rating_rationale": "Asking $1,381psf vs the project's ~$1,527psf 12mo average is a real ~10% gap (the algo's −26.6% age-adj overstates it, but same-project comps confirm a true discount); $699k is a highly liquid entry. LOW confidence: a 506sf 1BR has lagging capital appreciation, so the case rests on the discount + carry.",
+      "red_flags": [
+        "506sf 1BR — lagging capital appreciation",
+        "city-fringe Geylang location"
+      ],
+      "catalysts": [
+        "~10% discount vs same-project recent comps",
+        "ultra-liquid $699k quantum"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

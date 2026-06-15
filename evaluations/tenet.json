@@ -60,6 +60,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-tenet-25142736",
         "review_file": "cov_batch_33.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "EC with a genuine privatisation re-rate path near CR6 Tampines North, but the current live unit is a $2.4M 4BR — top-end for an EC, which thins demand and offsets the structural upside.",
+      "rating_rationale": "EC privatisation (~10yr) and CRL proximity are real, but a $2.4M 4BR EC sits well above the EC sweet spot, narrowing the buyer pool and lengthening exit. Catalyst intact, liquidity constrained → Neutral.",
+      "red_flags": [
+        "$2.4M 4BR EC — top-end, thinner demand",
+        "EC resale/privatisation timeline"
+      ],
+      "catalysts": [
+        "EC privatisation re-rate",
+        "CR6 Tampines North 470m (CRL)"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

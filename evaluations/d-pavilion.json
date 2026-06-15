@@ -57,6 +57,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-d-pavilion-500093900",
         "review_file": "cov_batch_17.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Freehold 3BR in owner-occupier Serangoon Gardens near Kovan MRT — a stable hold — but only ~3% under median, within noise, with the Buy leaning on a discredited trailing CAGR.",
+      "rating_rationale": "$1,446 vs $1,493 median is ~3% (noise); 7.1% resale CAGR has ≈0 forward power. Freehold + Kovan NE-line + established estate are positives but priced in → Neutral.",
+      "red_flags": [
+        "only ~3% discount (noise)",
+        "thesis leaned on trailing CAGR"
+      ],
+      "catalysts": [
+        "Kovan MRT 670m (NE line)",
+        "established owner-occupier Serangoon Gardens"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

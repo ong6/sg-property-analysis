@@ -114,6 +114,27 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-seaside-residences-25365106",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "low",
+      "summary": "A genuine ~7% discount versus recent like-for-like prints on deep data, in desirable East Coast D15 near operational Siglap TEL — real value with liquidity behind it.",
+      "rating_rationale": "A 560sf 1BR transacted $2,213psf (Dec-2025); this asks ~$2,054psf — a real ~7% gap, corroborated by −6.3% vs-cohort on 19 cohort / 172 appreciation txns. Sea-facing East Coast + TEL underpin demand. LOW confidence: 1BR appreciation lags and high absolute PSF caps the margin.",
+      "red_flags": [
+        "1BR appreciation lags larger units",
+        "high absolute PSF"
+      ],
+      "catalysts": [
+        "~7% discount vs recent like-for-like (deep data)",
+        "Siglap TEL / East Coast desirability"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

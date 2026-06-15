@@ -60,6 +60,28 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-piermont-grand-24162532",
         "review_file": "cov_batch_28.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Large Punggol EC at floor-of-range pricing with a real privatisation re-rate path, but the MOP-completes-2028 resale lock and a 4BR ticket temper the near-term investment case.",
+      "rating_rationale": "$1,724psf is the range floor and EC privatisation (~10yr) is a genuine structural re-rate, with Sumang LRT 300m and Punggol Digital District support; but resale is locked until MOP (~2028) and 4BR demand is thinner. Catalyst real, liquidity constrained → Neutral leaning positive.",
+      "red_flags": [
+        "EC resale locked until MOP ~2028",
+        "4BR — thinner demand"
+      ],
+      "catalysts": [
+        "EC privatisation re-rate (~10yr)",
+        "Sumang LRT 300m",
+        "Punggol Digital District"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }

@@ -114,6 +114,26 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-gem-residences-500046664",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The prior assessed a 980sf 3BR discount, but the current live unit is a 484sf shoebox 1BR — the value read doesn't transfer and no clean edge is confirmable for this unit.",
+      "rating_rationale": "Current listing 484sf 1BR at ~$1,859psf, not the 3BR the prior judged below recent comps. Shoebox 1BR with thin resale; no verified discount for this unit → Neutral.",
+      "red_flags": [
+        "prior rationale/unit mismatch",
+        "484sf shoebox — thin resale"
+      ],
+      "catalysts": [
+        "city-fringe D12, Toa Payoh/Novena access"
+      ],
+      "as_of": "2026-06 re-judgment under v3.10b priors (value+region lead, trailing CAGR≈0, v3.6-v3.9 trust rules)",
+      "source": {
+        "flow": "rejudge-v3.10b",
+        "prior": "Buy",
+        "note": "main-loop re-judgment, web-cross-checked"
+      }
     }
   ]
 }
