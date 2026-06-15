@@ -577,7 +577,7 @@ _PAGE = """<!DOCTYPE html>
       <th onclick="fSortBy('score_1000')" data-key="score_1000" title="MMR money score — backtest-calibrated forward-return signals">Score</th>
       <th onclick="fSortBy('valuation')" data-key="valuation" title="valuation — priced right today vs age-adjusted peers (50 = typical ask, &gt;50 cheaper, &lt;50 dearer); backtested, shares MMR's artifact defences">Val</th>
       <th onclick="fSortBy('livability')" data-key="livability" title="own-stay heuristic (baths/space/MRT/floor/facing/facilities) — separate axis, never part of MMR">Liv</th>
-      <th onclick="fSortBy('overall')" data-key="overall" title="overall (investment-weighted): forward-return + valuation, with livability only a capped demand-floor nudge — never appreciation">Ovr</th>
+      <th onclick="fSortBy('overall')" data-key="overall" title="overall (investment): MMR (the calibrated answer) + a capped livability demand-floor — never appreciation; valuation shown as its own column. ≈MMR for investors; diverges mainly in own-stay mode">Ovr</th>
       <th onclick="fSortBy('agent_rating')" data-key="agent_rating">Agent eval</th>
       <th onclick="fSortBy('project_name')" data-key="project_name">Condo</th>
       <th onclick="fSortBy('beds')" data-key="beds">Type</th>
@@ -704,7 +704,7 @@ const ovColor = s => s >= 58 ? "background:#1c3326;color:#3fb950" :
                                "background:#33201c;color:#f85149";
 const ovChip = (s, own) => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="overall not scored yet — run --score-db / poller">·</span>'
-  : `<span class="chip" style="${ovColor(s)}" title="overall, investment-weighted (return + valuation, livability a capped floor nudge)${own != null ? ` · own-stay overall: ${own}` : ""}">${s}</span>`;
+  : `<span class="chip" style="${ovColor(s)}" title="overall, investment (MMR + capped livability floor; valuation is its own column)${own != null ? ` · own-stay overall: ${own}` : ""}">${s}</span>`;
 const scoreChip = s => s == null
   ? '<span class="chip" style="background:#222b35;color:#8b98a5" title="not scored yet — poller scores new listings; run --score-db for the backlog">·</span>'
   : `<span class="chip" style="${scoreColor(s)}">${s}</span>`;
