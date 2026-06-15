@@ -267,9 +267,11 @@ def load_fresh() -> dict:
     # Best score first, unscored last, newest as tiebreak
     rows.sort(key=lambda r: (-(r["score_1000"] if r["score_1000"] is not None else -1),
                              r["days_old"]))
+    data_as_of = max((rec.get("last_seen") or rec.get("first_seen") or ""
+                      for rec in db["listings"].values()), default="")
     return {"generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "max_age_days": FRESH_MAX_AGE_DAYS, "rows": rows,
-            "stats": _fresh_stats(rows)}
+            "data_as_of": data_as_of, "stats": _fresh_stats(rows)}
 
 
 def _median(xs):
@@ -404,7 +406,12 @@ def load_rankings() -> dict:
 # Poller integration: manual SCAN NOW + background auto-poll
 # ---------------------------------------------------------------------------
 POLL_CFG = {
-    "auto": True,
+    # Live scraping is OFF by default: PropertyGuru sits behind Cloudflare, which
+    # blocks headless background polls by design (managed challenge / Turnstile).
+    # The robust path is the headed standalone poller that solves the challenge
+    # once and re-uses the clearance cookie. The UI is a viewer first; opt into
+    # in-UI scraping with --poll (pair with --poll-no-headless to pass Cloudflare).
+    "auto": False,
     "interval_mins": poller.DEFAULT_INTERVAL_MINS,
     "districts": None,   # None -> poller defaults
     "beds": None,
@@ -528,7 +535,7 @@ _PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Property Finder — Fresh Listings</title>
+<title>Property Finder — Listings</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
 <style>
   :root { --bg:#0f1419; --panel:#1a2129; --line:#2b3543; --text:#dce3ea;
@@ -554,6 +561,8 @@ _PAGE = """<!DOCTYPE html>
                     cursor:pointer; }
   .pollbar button:hover { border-color:var(--green); }
   .pollbar button:disabled { opacity:.55; cursor:default; }
+  .pollbar code { color:var(--text); background:#0d1217; padding:1px 6px; border-radius:4px; font-size:11.5px; }
+  .pollbar.viewer { color:var(--dim); }
   .spin { display:inline-block; animation:spin 1s linear infinite; }
   @keyframes spin { to { transform:rotate(360deg); } }
   .controls { display:flex; gap:10px; flex-wrap:wrap; padding:12px 24px 14px; align-items:center; }
@@ -853,6 +862,18 @@ function switchTab(which) {
 /* ---------------- poll bar ---------------- */
 function renderPoll() {
   const el = document.getElementById("pollbar");
+  // Viewer mode (default): no live scraping → a clean data-freshness strip, no
+  // SCAN NOW, no Cloudflare error. Refreshing data is a deliberate headed run.
+  if (!POLL.auto) {
+    el.classList.add("viewer");
+    el.innerHTML =
+      `<span>📊 viewing <b>${(FRESH.rows ? FRESH.rows.length : 0).toLocaleString()}</b> listings · ` +
+      `data as of <b>${esc(FRESH.data_as_of || "—")}</b></span>` +
+      `<span class="dim" style="margin-left:auto">live scraping off · refresh with ` +
+      `<code>python poller.py --no-headless</code> <span title="opens a Chrome window so you can clear Cloudflare once; the clearance cookie is then reused">(solve Cloudflare once)</span></span>`;
+    return;
+  }
+  el.classList.remove("viewer");
   const last = POLL.last || {};
   let bits = [];
   if (POLL.running) {
@@ -1204,8 +1225,13 @@ def main():
     parser = argparse.ArgumentParser(description="Local fresh-listings + arena UI")
     parser.add_argument("--port", type=int, default=DEFAULT_PORT)
     parser.add_argument("--no-browser", action="store_true")
+    parser.add_argument("--poll", action="store_true",
+                        help="opt into in-UI PropertyGuru scraping (auto-poll + "
+                             "SCAN NOW). OFF by default — PG is behind Cloudflare, "
+                             "which blocks headless polls; pair with "
+                             "--poll-no-headless to solve the challenge in a window")
     parser.add_argument("--no-poll", action="store_true",
-                        help="serve only — never scrape PropertyGuru")
+                        help="(default) viewer only — never scrape PropertyGuru")
     parser.add_argument("--poll-interval-mins", type=int,
                         default=poller.DEFAULT_INTERVAL_MINS,
                         help="auto-poll interval (default %(default)s)")
@@ -1219,7 +1245,9 @@ def main():
                              "headless polls die on Cloudflare)")
     args = parser.parse_args()
 
-    POLL_CFG["auto"] = not args.no_poll
+    # Viewer-first: scraping only when explicitly opted in with --poll (and not
+    # countermanded by --no-poll). Default OFF keeps Cloudflare out of the UI.
+    POLL_CFG["auto"] = args.poll and not args.no_poll
     POLL_CFG["interval_mins"] = args.poll_interval_mins
     POLL_CFG["max_pages"] = args.poll_max_pages
     POLL_CFG["headless"] = not args.poll_no_headless
