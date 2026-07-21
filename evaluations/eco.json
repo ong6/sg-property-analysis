@@ -106,6 +106,69 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-eco-24001304",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-16",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Sound asset at a full price: a SOHO/loft-format 3BR at eCO with great Tanah Merah connectivity and deep project liquidity, asking at the format's recent PSF peak with a structurally low ~3.2% yield. Good location does not equal good entry here.",
+      "rating_rationale": "Asking $1,788,000 / $1,748 psf matches the format's recent high ($1,770 psf same-size print, Apr 2026), leaving no value cushion — the opposite of prior eCO Buys, which were units genuinely below the project range. Under current priors, value is the strongest forward signal and this is fully priced, not cheap (+6.8% vs the 800-1050 band median, partly format mix). The 1,023 sqft 'compact 3BR' is a double-volume SOHO/loft: its high PSF is paid in ceiling-height/void, but rent earns only apartment-level dollars, so gross yield is a thin ~3.2% — weak carry for a 5-7yr hold, and a narrower exit buyer pool than a conventional flat 3BR. Offsetting positives are real but not enough to lift it to Buy: OCR/RCR-border East Coast region (best realized forward region signal), doorstep Tanah Merah EWL/Changi interchange (~5-7 min walk), 748-unit liquidity, and 87yr lease. Trailing 3.89% CAGR is not credited (≈0 forward power). Net: a good development at a price that gives the buyer no edge.",
+      "red_flags": [
+        "Ask sits at the format's recent PSF peak ($1,748 vs $1,770 high) — no value cushion / no margin of safety",
+        "Double-volume SOHO/loft format: PSF inflated by void airspace, gross yield only ~3.2% (rent doesn't scale with ceiling height)",
+        "1,023 sqft is below the stated conventional 3BR floor (1,053 sqft) — niche compact-SOHO format narrows the resale/rental buyer pool",
+        "Floor and facing of THIS unit unconfirmed (Cloudflare blocked the live scrape) — a low floor or poor facing at this full ask would tilt toward Avoid",
+        "99yr leasehold (2012 commencement), decay clock running — 87yr left"
+      ],
+      "catalysts": [
+        "Doorstep Tanah Merah MRT — EWL + Changi/Airport CG interchange, top-tier east connectivity",
+        "OCR/RCR-border East Coast (D15-16) — strongest realized forward region signal in backtest",
+        "748-unit mixed-use development — deep resale/rental liquidity, on-site retail/F&B",
+        "TEL Bayshore precinct + broader East Coast transformation lift the corridor"
+      ],
+      "as_of": {
+        "price": 1788000,
+        "psf": 1747.8,
+        "beds": 3,
+        "sqft": 1023.0
+      },
+      "key_facts": {
+        "appreciation_pct": null,
+        "appreciation_source": null,
+        "gross_yield_pct": 3.22,
+        "nearest_mrt": "Tanah Merah (CG/EWL interchange)",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 87
+      },
+      "agent_evaluation": {
+        "summary": "Sound asset at a full price: a SOHO/loft-format 3BR at eCO with great Tanah Merah connectivity and deep project liquidity, asking at the format's recent PSF peak with a structurally low ~3.2% yield. Good location does not equal good entry here.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "Asking $1,788,000 / $1,748 psf matches the format's recent high ($1,770 psf same-size print, Apr 2026), leaving no value cushion — the opposite of prior eCO Buys, which were units genuinely below the project range. Under current priors, value is the strongest forward signal and this is fully priced, not cheap (+6.8% vs the 800-1050 band median, partly format mix). The 1,023 sqft 'compact 3BR' is a double-volume SOHO/loft: its high PSF is paid in ceiling-height/void, but rent earns only apartment-level dollars, so gross yield is a thin ~3.2% — weak carry for a 5-7yr hold, and a narrower exit buyer pool than a conventional flat 3BR. Offsetting positives are real but not enough to lift it to Buy: OCR/RCR-border East Coast region (best realized forward region signal), doorstep Tanah Merah EWL/Changi interchange (~5-7 min walk), 748-unit liquidity, and 87yr lease. Trailing 3.89% CAGR is not credited (≈0 forward power). Net: a good development at a price that gives the buyer no edge.",
+        "red_flags": [
+          "Ask sits at the format's recent PSF peak ($1,748 vs $1,770 high) — no value cushion / no margin of safety",
+          "Double-volume SOHO/loft format: PSF inflated by void airspace, gross yield only ~3.2% (rent doesn't scale with ceiling height)",
+          "1,023 sqft is below the stated conventional 3BR floor (1,053 sqft) — niche compact-SOHO format narrows the resale/rental buyer pool",
+          "Floor and facing of THIS unit unconfirmed (Cloudflare blocked the live scrape) — a low floor or poor facing at this full ask would tilt toward Avoid",
+          "99yr leasehold (2012 commencement), decay clock running — 87yr left"
+        ],
+        "catalysts": [
+          "Doorstep Tanah Merah MRT — EWL + Changi/Airport CG interchange, top-tier east connectivity",
+          "OCR/RCR-border East Coast (D15-16) — strongest realized forward region signal in backtest",
+          "748-unit mixed-use development — deep resale/rental liquidity, on-site retail/F&B",
+          "TEL Bayshore precinct + broader East Coast transformation lift the corridor"
+        ],
+        "rental_assessment": "Est. ~$4,800/mo → ~3.2% gross yield. Low and structural to the format; even at a generous $5,200 it is ~3.5%. Treat as carry only, not appreciation.",
+        "appreciation_assessment": "Region (OCR east) and liquidity are tailwinds, but entry at the format's PSF peak removes the value edge that drives forward returns. Do not credit the 3.89% trailing CAGR. Net expectation: market-typical, not outperformance.",
+        "stack_notes": "No researched eCO profile. Format inferred (SOHO/Loft 3BR compact). Confirm before committing: (1) exact floor and facing, (2) whether SOHO or true Loft, (3) ceiling height / usable layout, (4) condition. A high floor with unblocked/north-south facing would justify the full ask better.",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "ura_5yr_cagr_not_credited"
+      },
+      "source": {
+        "run_dir": "output/run_eco_20615336",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eco-20615336",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

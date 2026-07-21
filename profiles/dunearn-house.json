@@ -1,0 +1,83 @@
+{
+  "condo": "Dunearn House",
+  "slug": "dunearn-house",
+  "district": "D11",
+  "researched_at": "2026-07-21",
+  "revision": 1,
+  "confidence": "medium",
+  "sources": [
+    {
+      "url": "https://www.theedgesingapore.com/cityandcountry/new-launches/2799-starting-psf-380-unit-dunearn-house-district-11-start-previews-july",
+      "type": "news",
+      "note": "380 units, 99-yr LH, D11, previews 10 Jul 2026, booking 25 Jul 2026; indicative pricing 2BR from $1.475M ($2,799 psf), 3BR from $2.597M, 4BR from $3.588M; Frasers/CSC Land/Sekisui House JV; first & tallest project of Bukit Timah Turf City masterplan"
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/dunearn-house",
+      "type": "listing",
+      "note": "unit mix: 176x 2BR/2BR+S (530-680sf, 46%), 96x 3BR (870-1,010sf, 25%), 108x 4BR (1,180-1,380sf, 29%); Phoenix Dunearn Pte Ltd; zero transactions pre-launch"
+    },
+    {
+      "url": "https://propertynet.sg/new-launch-condos/dunearn-house/",
+      "type": "review",
+      "note": "760-770 Dunearn Road, Swiss Club subzone; 99-yr lease from Sep 2025; expected vacant possession 31 Dec 2030"
+    },
+    {
+      "url": "https://bukittimahcollection.sg/dunearn-house/site-plan/",
+      "type": "marketing",
+      "note": "5 blocks: 2x 19-storey (rear, toward Turf City) + 3x 10-storey (front, fronting Dunearn Rd ~15m); site elevated above surrounding GCB land; claims N/S orientation (no direct west sun) — marketing, UNVERIFIED"
+    },
+    {
+      "url": "https://www.edgeprop.sg/property-news/wing-tai-metro-jv-tops-six-bids-second-dunearn-road-gls-site-1625-psf-ppr",
+      "type": "news",
+      "note": "land basis: this site $491.45M ($1,410 psf ppr); adjacent 2nd Dunearn Rd GLS plot won 28 Apr 2026 by Wing Tai-Metro JV at $533M ($1,625 psf ppr, +15.2%); analysts expect 2nd project ~$3,150-3,300 psf launch ~2H2027"
+    }
+  ],
+  "development": {
+    "total_units": 380,
+    "blocks": 5,
+    "max_floor": 19,
+    "developer": "Phoenix Dunearn Pte Ltd — JV of Frasers Property, CSC Land Group, Sekisui House",
+    "tenure": "99-year leasehold from Sep 2025",
+    "top_year": 2030,
+    "address": "760-770 Dunearn Road (D11, Bukit Timah, Swiss Club subzone)",
+    "orientation_notes": "Five blocks by Ong & Ong: two 19-storey towers at the REAR (toward Turf City) and three 10-storey blocks at the FRONT fronting Dunearn Road at ~15m — front low-floor stacks carry Dunearn Rd/PIE traffic noise; site is elevated above surrounding GCB land so selected stacks get unblocked Bukit Timah plains views. Marketing claims all-N/S orientation (no direct west sun) — UNVERIFIED. Per-stack numbering, compass facings, and which stacks hold 2BRs are NOT verified from text sources (claim that 2BR/3BR sit exclusively in the front low-rise blocks was REFUTED in adversarial verification; 2BRs may exist in the rear towers). Needs showflat site-plan/price-list pass before any stack call. Adjacent second GLS plot (Wing Tai-Metro, launch ~2H2027) will rise next door — construction period + future view impact for stacks facing it unknown.",
+    "known_issues": [
+      "Pre-launch: zero transactions; all pricing indicative until booking day 25 Jul 2026",
+      "Expected TOP/vacant possession 31 Dec 2030 — no rental income for ~4+ years from launch purchase",
+      "District label inconsistent across sources: D11 (news, consistent) vs D10 (some agent sites)",
+      "New-launch entry ~$2,799-3,100 psf vs nearest completed 99LH comp Fourth Avenue Residences 2BR resale median $2,504 psf (URA 2025-26, n=13)"
+    ]
+  },
+  "stacks": [],
+  "layouts": [],
+  "unit_mix": [
+    {
+      "type": "2BR / 2BR+Study",
+      "sqft_range": [
+        527,
+        678
+      ],
+      "count": 176,
+      "share_pct": 46
+    },
+    {
+      "type": "3BR / 3BR+Study",
+      "sqft_range": [
+        872,
+        1001
+      ],
+      "count": 96,
+      "share_pct": 25
+    },
+    {
+      "type": "4BR / 4BR+Study",
+      "sqft_range": [
+        1184,
+        1378
+      ],
+      "count": 108,
+      "share_pct": 29
+    }
+  ],
+  "first_researched_at": "2026-07-21"
+}

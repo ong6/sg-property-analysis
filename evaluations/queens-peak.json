@@ -110,6 +110,65 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-queens-peak-500122910",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Buy (medium) — best value+income case: at-door Queenstown MRT, RCR, slightly cheap-for-age, top yield (4.2%). Shoebox-exit risk.",
+      "rating_rationale": "The cleanest value+income case in the batch. Directly AT Queenstown MRT (~90m) — a decisive, durable rental/exit catalyst — in RCR (2nd-best realized forward region), genuinely slightly cheap for its age (-2.4% vs age-adjusted district median, -6.3% vs new-launch-implied) and with the best yield here (4.2% gross / 2.88% net). Deep liquidity (202 txns, 736 units) and Greater Southern Waterfront long-run optionality. Main risks: a 441 sqft shoebox at a high $2,268 psf has a thin value cushion if RCR softens, and the exit/tenant pool is narrow (investors & singles, not families). Trailing CAGR 2.85% de-weighted. Confidence medium because of the format/cushion — but on a value+yield+location basis this is the highest-conviction pick of the four.",
+      "red_flags": [
+        "441 sqft shoebox at high absolute PSF ($2,268) — thin value cushion if RCR softens",
+        "Narrow exit/tenant pool (investors & singles), not families",
+        "Tenancy to Oct-2025 — confirm vacant possession and current in-place rent"
+      ],
+      "catalysts": [
+        "Directly at Queenstown MRT (EWL, ~90m) — decisive connectivity, durable rental demand",
+        "Greater Southern Waterfront long-run redevelopment upside",
+        "RCR — 2nd-strongest realized forward region (~+3.5%/yr)",
+        "Slightly cheap for age (-2.4% vs age-adj median) + best net yield in the batch"
+      ],
+      "as_of": {
+        "price": 1000000,
+        "psf": 2267.57,
+        "beds": 1,
+        "sqft": 441.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.85,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.2,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 88
+      },
+      "agent_evaluation": {
+        "summary": "Buy (medium) — best value+income case: at-door Queenstown MRT, RCR, slightly cheap-for-age, top yield (4.2%). Shoebox-exit risk.",
+        "rating": "Buy",
+        "rating_rationale": "The cleanest value+income case in the batch. Directly AT Queenstown MRT (~90m) — a decisive, durable rental/exit catalyst — in RCR (2nd-best realized forward region), genuinely slightly cheap for its age (-2.4% vs age-adjusted district median, -6.3% vs new-launch-implied) and with the best yield here (4.2% gross / 2.88% net). Deep liquidity (202 txns, 736 units) and Greater Southern Waterfront long-run optionality. Main risks: a 441 sqft shoebox at a high $2,268 psf has a thin value cushion if RCR softens, and the exit/tenant pool is narrow (investors & singles, not families). Trailing CAGR 2.85% de-weighted. Confidence medium because of the format/cushion — but on a value+yield+location basis this is the highest-conviction pick of the four.",
+        "red_flags": [
+          "441 sqft shoebox at high absolute PSF ($2,268) — thin value cushion if RCR softens",
+          "Narrow exit/tenant pool (investors & singles), not families",
+          "Tenancy to Oct-2025 — confirm vacant possession and current in-place rent"
+        ],
+        "catalysts": [
+          "Directly at Queenstown MRT (EWL, ~90m) — decisive connectivity, durable rental demand",
+          "Greater Southern Waterfront long-run redevelopment upside",
+          "RCR — 2nd-strongest realized forward region (~+3.5%/yr)",
+          "Slightly cheap for age (-2.4% vs age-adj median) + best net yield in the batch"
+        ],
+        "rental_assessment": "URA project-1BR rent ~$3,500/mo → 4.2% gross / 2.88% net — best of the four. At-door MRT underpins reliable shoebox tenant demand near one-north/CBD.",
+        "appreciation_assessment": "Trailing CAGR 2.85% de-weighted. Forward case = RCR tilt + at-door MRT + GSW optionality. Slightly-cheap-for-age entry gives a small margin of safety, though a shoebox's cushion is inherently thin.",
+        "stack_notes": "Stack/facing not researched. Several stacks face the MRT viaduct/expressway — verify the specific unit's facing & floor for noise/view before offering.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null
+      },
+      "source": {
+        "run_dir": "output/run_top4",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-queens-peak-500134709",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

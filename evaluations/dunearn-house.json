@@ -1,0 +1,137 @@
+{
+  "condo": "Dunearn House",
+  "slug": "dunearn-house",
+  "district": "D11",
+  "history": [
+    {
+      "evaluated_at": "2026-07-20",
+      "rating": "Avoid",
+      "confidence": "medium-high",
+      "summary": "New launch, 760-770 Dunearn Rd D11, 380 units 99LH, Frasers/CSC Land/Sekisui, TOP Dec-2030, bookings 25-Jul-2026. Priced $2,799-3,030 psf. Evaluated for investment (5-7yr hold) at two budgets: $1.6m (527sf 2BR, mid/high floor, ~$3,036 psf) and $2.597m (872sf 3BR, lowest floor, $2,978 psf). Both AVOID for investment; the 3BR is the less-bad of the two. Core problem: CCR realized only +2.1%/yr over 10yr (+3.4% over 5yr) vs OCR +5.6%/+7.9%, break-even needs +2.3-2.4%/yr to sell at TOP, and gross yield is ~2.85% on both. The closest analogue (Fourth Avenue Residences, D10 99LH, Sixth Ave MRT) returned +1.4%/yr from 2021-2026 launch prices through the strongest bull market on record.",
+      "rating_rationale": "MMR 179 (2BR) / 191 (3BR) out of 1000 - both deep below the 450 threshold. Age-adjusted (per the piecewise 0-10yr ~3%/yr PSF decay), the tightest comp - Fourth Avenue Residences, D10 99LH, same Sixth Ave MRT, $2,516 psf at age 3 - implies a fair new-build equivalent of ~$2,749 psf. On that basis the LOW-FLOOR 527sf 2BR at $2,799 is fairly priced (+1.8%), but the $1.6m mid/high-floor 527sf at $3,036 is +10.4% and the $2.597m 3BR at $2,978 is +8.3%. The raw 34-39% gap vs the D10/D11 leasehold resale pool overstates it - that pool is much older stock and must not be compared directly. TOP Dec-2030 means zero rent for 4.4yrs and no possible exit before 2031, turning a '5-7yr hold' into a 7-9yr capital lock-up. D11 is 87% freehold with only ~64 LH resales/yr - thin exit for an outlier product. At $1.6m the buyer lands in a pricing dead zone: too much for the entry 527sf 2BR (paying an ~8.5% floor premium on the project's weakest product, in the 46%-of-stock 2BR band, in the 10-storey blocks set 15m off an arterial road) and ~$120k short of the 614sf 2BR Premium. The $2.597m 3BR is exactly the lowest floor of a 20-unit scarce type, also in the road-facing Luxury blocks. Genuine bull points - land at $1,410 psf ppr vs the adjacent parcel's $1,625 (+11% re-rating headroom when site 2 launches 2H2027 at a projected $3,150-3,300), first-mover in Turf City, CRL Turf City MRT ~2032, Sixth Ave MRT 4min - are real but are a one-time step-up, not a return engine, and the developer's own public guidance ('happy with 70% take-up') signals a soft CCR launch market.",
+      "red_flags": [
+        "CCR realized +2.1%/yr (10yr) and +3.4%/yr (5yr) vs OCR +5.6%/+7.9%; CCR index down 2.9% from its 2025-Q3 peak",
+        "Closest analogue Fourth Avenue Residences (D10 99LH, Sixth Ave MRT): 2021 $2,469 psf -> 2026 $2,620 = +1.4%/yr through a bull market",
+        "Gross yield ~2.85% both scenarios (size-adjusted from URA rental contracts at Fourth Ave/Royalgreen)",
+        "Break-even appreciation +2.26%/yr (2BR) / +2.41%/yr (3BR) to sell at TOP 2031 - above CCR's 10yr realized rate",
+        "TOP Dec-2030: zero rent for 4.4yrs, no exit before 2031; 5-7yr hold becomes 7-9yr lock-up",
+        "D11 is 87% freehold; only ~64 leasehold resales/yr district-wide - thin exit for a 99LH outlier",
+        "Age-adjusted premium +10.4% ($1.6m 2BR) / +8.3% ($2.597m 3BR) over the fair new-build equivalent implied by Fourth Avenue Residences; only the LOW-FLOOR 527sf 2BR at ~$1.48-1.52m clears a fair-value test",
+        "NO primary school within MOE 1km radius (MGS Primary ~1,096m straight-line) - the school-belt marketing does not survive measurement",
+        "46% of units are 2BR in a family precinct - heaviest internal exit competition sits exactly where the $1.6m budget lands",
+        "All 2BR and the non-premium 3BR sit in the 10-storey Luxury blocks facing Dunearn Rd (arterial) at a 15m setback",
+        "Adjacent construction through ~2035 (Turf City phased build-out + CRL works)",
+        "CSC Land is both JV partner and main contractor - concentrated recourse if build-quality disputes arise",
+        "Developer guidance 'happy with 70% take-up' - CCR launches soft in 1H2026",
+        "99LH priced at freehold parity - 3BR $2,978 psf vs freehold Juniper Hill $2,929-3,147 in the same belt",
+        "Bukit Timah rental demand is expat FAMILIES on housing allowances; a 527sf 2BR does not serve that tenant, and 176 of them hit the market simultaneously at TOP 2031"
+      ],
+      "catalysts": [
+        "CCR was the ONLY region up in Q2-2026 URA flash (+2.0% vs RCR -1.4%, OCR -0.2%) - CCR has stopped underperforming, though one quarter driven by primary-sales mix is not a regime change",
+        "Land at $1,410 psf ppr vs adjacent parcel's $1,625 (+15%); site 2 projected to launch 2H2027 at $3,150-3,300 psf = ~+11% re-rating headroom",
+        "First and only completed private condo in Turf City at TOP Dec-2030 (~710 private units committed vs a 15,000-20,000 target)",
+        "Cross Island Line Turf City station (CR14) under construction, target 2032",
+        "Sixth Avenue MRT (DTL) ~4min walk from the Luxury blocks today",
+        "CCR at a decade-low relative to OCR - contrarian mean-reversion case (CCR won 20/81 rolling windows since 2004)",
+        "872sf 3BR is a scarce 20-unit type"
+      ],
+      "as_of": {
+        "price": 2597000,
+        "psf": 2978,
+        "beds": 3,
+        "sqft": 872
+      },
+      "key_facts": {
+        "appreciation_pct": 2.1,
+        "appreciation_source": "URA PPI CCR 10yr realized (2016Q1-2026Q1)",
+        "gross_yield_pct": 2.86,
+        "nearest_mrt": "Sixth Avenue (DT7), ~4min walk from Luxury blocks",
+        "tenure": "99 yrs lease",
+        "remaining_lease": 99
+      },
+      "scenarios": {
+        "budget_1_6m": {
+          "unit": "527sf 2BR, mid/high floor",
+          "psf": 3036,
+          "score_1000": 179,
+          "gross_yield_pct": 3.08,
+          "rating": "Avoid",
+          "confidence": "high",
+          "age_adjusted_premium_pct": 10.4
+        },
+        "budget_2_6m": {
+          "unit": "872sf 3BR, lowest floor",
+          "psf": 2978,
+          "score_1000": 191,
+          "gross_yield_pct": 2.86,
+          "rating": "Avoid",
+          "confidence": "medium",
+          "age_adjusted_premium_pct": 8.3
+        },
+        "alternative_entry": {
+          "unit": "527sf 2BR, LOWEST floor",
+          "price": 1475000,
+          "psf": 2799,
+          "age_adjusted_premium_pct": 1.8,
+          "note": "The only genuinely fair-valued entry in the price list. Still a weak investment on region+yield, but not overpaid."
+        }
+      },
+      "verify_before_acting": [
+        "Full agent price list - the 614sf 2BR Premium entry price is unpublished and decides whether $1.6m is viable or ~$120k short",
+        "Breakeven $2,558 psf is single-source and uncorroborated; own estimate was ~$2,300",
+        "Stack numbers and per-stack facings - site plan only released at showflat",
+        "MOE 1km school radius per block on OneMap",
+        "Balloting mechanics for 25 Jul 2026"
+      ]
+    },
+    {
+      "evaluated_at": "2026-07-21",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Dunearn House — 380-unit 99-yr LH (from Sep 2025) new launch at 760-770 Dunearn Rd, D11 (first Bukit Timah Turf City GLS plot; Frasers/CSC Land/Sekisui JV; booking 25 Jul 2026, TOP Dec 2030). Indicative: 2BR/2BR+S 527-678sf from $1.475M ($2,799 psf); 3BR from $2.597M; 4BR from $3.588M. Evaluated for a 4-7yr resale-profit mandate (SC first-timer, ceiling $2.59M, prefer <$2.2M): only the 2BR fits.",
+      "rating_rationale": "Avoid at indicative pricing for THIS mandate (4-7yr resale exit): entry $2,799-3,100 psf is 12-20% above the nearest completed 99LH comp (Fourth Avenue Residences 2BR resale median $2,504 psf, URA 2025-26 n=13) and in line with completed FREEHOLD product on Dunearn Rd (Pullman sub-sales $2,785-3,387); D10 2BR-band new-sale-over-resale premium runs ~38%. Region: D11/CCR — backtested worst forward region (+1.9%/yr realized vs OCR +3.7). Yield base case ~3.0% (large 2BR) to ~3.6% (small 2BR) vs 3.5% target, with NO income until TOP ~Dec 2030 and post-TOP exit landing at the back of (or beyond) the 4-7yr window. Manual --score sanity: 159-224/1000 (bull-case 4% rate: 180) vs the FAR resale benchmark at 384 on identical assumptions — the completed comp next door dominates. Bull case (land basis $1,410 psf ppr vs adjacent plot $1,625, analyst $3,150-3,300 psf umbrella 2H2027; Turf City masterplan/CRL) is real but analyst-inference, and buys exposure to a single-precinct transformation bet. If buying anyway (own-stay utility, umbrella conviction): small/mid 2BR only, mid-high floor, rear/side stack off Dunearn Rd — and re-judge if booking-day pricing lands materially below indicative.",
+      "red_flags": [
+        "New-launch premium: $2,799-3,100 psf vs Fourth Avenue Residences 2BR resale $2,504 psf median (completed 99LH comp at Sixth Ave MRT)",
+        "CCR/D11 — backtested worst forward-return region (+1.9%/yr realized)",
+        "Gross yield base case ~3.0-3.3% project-average, below the 3.5% fallback target; zero income until TOP ~Dec 2030",
+        "TOP 31 Dec 2030 pushes realistic post-TOP exit to year ~4.5-7+, back edge of the 4-7yr mandate",
+        "Pre-launch: zero transactions, pricing indicative; per-stack facings/2BR locations unverified (front-blocks-only claim was refuted)",
+        "Adjacent 2nd GLS plot (Wing Tai-Metro) = 1.5yr of construction next door + future competing supply at resale"
+      ],
+      "catalysts": [
+        "Land basis $1,410 psf ppr vs adjacent plot $1,625 (+15.2%) — analyst-expected $3,150-3,300 psf launch next door ~2H2027 acts as a price umbrella",
+        "First mover in the Bukit Timah Turf City masterplan; site elevated over GCB land, selected stacks unblocked",
+        "Turf City CRL station in the pipeline (timing vs 2030-33 exit window unverified)",
+        "46% 2BR mix with no shoebox/1BR segment; 176-unit 2BR cohort = deepest in-project resale pool",
+        "Small 2BR (527sf, $1.475M) yields ~3.6% and sits in the most liquid quantum band"
+      ],
+      "as_of": {
+        "price": 1475000,
+        "psf": 2799,
+        "beds": 2,
+        "sqft": 527
+      },
+      "key_facts": {
+        "appreciation_pct": 2.5,
+        "appreciation_source": "agent_estimate (CCR realized +1.9 baseline + Turf City premium; NOT transaction-derived — pre-launch)",
+        "gross_yield_pct": 3.66,
+        "nearest_mrt": "Sixth Avenue (DT7) ~1km / future Turf City CRL (timing unverified)",
+        "tenure": "99-year leasehold from Sep 2025",
+        "remaining_lease": 98
+      },
+      "agent_evaluation": {
+        "summary": "Dunearn House — 380-unit 99-yr LH (from Sep 2025) new launch at 760-770 Dunearn Rd, D11 (first Bukit Timah Turf City GLS plot; Frasers/CSC Land/Sekisui JV; booking 25 Jul 2026, TOP Dec 2030). Indicative: 2BR/2BR+S 527-678sf from $1.475M ($2,799 psf); 3BR from $2.597M; 4BR from $3.588M. Evaluated for a 4-7yr resale-profit mandate (SC first-timer, ceiling $2.59M, prefer <$2.2M): only the 2BR fits.",
+        "rating": "Avoid",
+        "confidence": "medium",
+        "rating_rationale": "Avoid at indicative pricing for THIS mandate (4-7yr resale exit): entry $2,799-3,100 psf is 12-20% above the nearest completed 99LH comp (Fourth Avenue Residences 2BR resale median $2,504 psf, URA 2025-26 n=13) and in line with completed FREEHOLD product on Dunearn Rd (Pullman sub-sales $2,785-3,387); D10 2BR-band new-sale-over-resale premium runs ~38%. Region: D11/CCR — backtested worst forward region (+1.9%/yr realized vs OCR +3.7). Yield base case ~3.0% (large 2BR) to ~3.6% (small 2BR) vs 3.5% target, with NO income until TOP ~Dec 2030 and post-TOP exit landing at the back of (or beyond) the 4-7yr window. Manual --score sanity: 159-224/1000 (bull-case 4% rate: 180) vs the FAR resale benchmark at 384 on identical assumptions — the completed comp next door dominates. Bull case (land basis $1,410 psf ppr vs adjacent plot $1,625, analyst $3,150-3,300 psf umbrella 2H2027; Turf City masterplan/CRL) is real but analyst-inference, and buys exposure to a single-precinct transformation bet. If buying anyway (own-stay utility, umbrella conviction): small/mid 2BR only, mid-high floor, rear/side stack off Dunearn Rd — and re-judge if booking-day pricing lands materially below indicative.",
+        "stack_notes": "Per-stack data UNVERIFIED (see profiles/dunearn-house.json). Verified geometry: 2x19-storey rear towers (toward Turf City, view premium) + 3x10-storey front blocks ~15m off Dunearn Rd (noise). If buying: mid-high floor 2BR/2BR+S in a rear or side-facing stack, N/S or E facing, never low-floor front-block, never first-storey/PES, never west-facing. Confirm stack map + price list at showflat before 25 Jul booking day.",
+        "unit_type_ratings": {
+          "2BR small (527-530sf, from $1.475M)": "Neutral (low confidence) — lowest psf entry, most liquid quantum, ~3.6% yield; near-shoebox size caps family-resale appeal",
+          "2BR+S large (~678sf, ~$2.0-2.1M)": "Neutral-to-Avoid — inside budget but ~$3,100 psf carries the full premium at 2.97% yield",
+          "3BR (from $2.597M)": "Avoid for this mandate — breaches the $2.59M ceiling at its cheapest; typical units well beyond",
+          "4BR (from $3.588M)": "Out of scope — far above budget"
+        }
+      }
+    }
+  ]
+}
