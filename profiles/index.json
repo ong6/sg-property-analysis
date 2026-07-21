@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-10",
+  "updated_at": "2026-07-21",
   "condos": {
     "the-luxurie": {
       "condo": "The Luxurie",
@@ -8,6 +8,22 @@
       "stack_count": 0,
       "layout_count": 6,
       "researched_at": "2026-06-08"
+    },
+    "dunearn-house": {
+      "condo": "Dunearn House",
+      "district": "D11",
+      "confidence": "medium",
+      "stack_count": 0,
+      "layout_count": 0,
+      "researched_at": "2026-07-21"
+    },
+    "treasure-at-tampines": {
+      "condo": "Treasure at Tampines",
+      "district": "D18",
+      "confidence": "medium",
+      "stack_count": 3,
+      "layout_count": 10,
+      "researched_at": "2026-07-14"
     },
     "avant-residences": {
       "condo": "Avant Residences",

@@ -1,0 +1,197 @@
+{
+  "condo": "Treasure at Tampines",
+  "slug": "treasure-at-tampines",
+  "district": "D18",
+  "researched_at": "2026-07-14",
+  "revision": 1,
+  "confidence": "medium",
+  "sources": [
+    {
+      "url": "https://directory.stackedhomes.com/condo/treasure-at-tampines/site-plan/",
+      "type": "siteplan",
+      "note": "Official site plan image read directly (downloaded from stacked-condo-database CDN). Block numbers 1-57 (odd) and per-stack numbers 1-~202 mapped by position. Basis of the facing map below."
+    },
+    {
+      "url": "https://stackedhomes.com/editorial/treasure-at-tampines-review/",
+      "type": "review",
+      "note": "'Affordable pricing at the expense of privacy'; west-sun corner stacks 123,117,116,110,7,1,92,26,27,79,186,187,199; stack 25 best privacy (faces clubhouse); expressway noise on north edge."
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/treasure-at-tampines",
+      "type": "listing",
+      "note": "Unit mix per-type counts summing to 2,203; 648,889 sqft site."
+    },
+    {
+      "url": "https://www.edgeprop.sg/condo-apartment/treasure-at-tampines",
+      "type": "listing",
+      "note": "29 blocks, 12 storeys; TOP 2023; Sim Lian."
+    }
+  ],
+  "development": {
+    "total_units": 2203,
+    "blocks": 29,
+    "max_floor": 12,
+    "developer": "Sim Lian (Treasure) Pte Ltd — Sim Lian Group (mass-market/value builder; also Tampines Trilliant, Centrale 8)",
+    "tenure": "99-year leasehold from 2018 (~91 yrs remaining)",
+    "top_year": 2023,
+    "address": "15-71 Tampines Lane / Tampines Street 11, S52xxxx (former Tampines Court en-bloc site)",
+    "site_area_sqft": 648889,
+    "orientation_notes": "Huge triangular 6ha site, 29 identical 12-storey blocks in 3 long ROWS running roughly east-west, so the vast majority of units face NORTH or SOUTH (good — avoids direct E/W sun on the broad face). PIE (Pan Island Expressway) + its slip roads run along the entire NORTH/NW top edge. Tampines Lane runs along the EAST/SE edge (open green field beyond). Tampines Street 11 runs along the SOUTH edge and carries the MAIN entrance + arrival court. Open field to the WEST. Treasure Clubhouse sits dead-center; three 50m lap pools + facilities fill the spines between the rows. THREE ROWS: (1) TOP/NORTH row blocks 43,45,47,49,51,53,55,57 — north face -> PIE expressway (noise, but north = no sun, green buffer); south face -> 50m lap pool (quiet, premium). (2) MIDDLE row blocks 15,17,19,21,23,25,27,29,31,33,35 — face internal lap pools/clubhouse on BOTH sides = best privacy, best views, buffered from expressway and road. (3) BOTTOM/SOUTH row blocks 1,3,5,7,9,11,13 — north face -> lap pool (good); south face -> Tampines Street 11 (road noise/arrival activity but nearest the entrance). WEST-END blocks (55,57,15,13,9) and their west-corner stacks take the worst afternoon sun + face open field/PIE merge. EAST-END blocks (37,41,31,33,35,1) get morning sun and face Tampines Lane / open green (open outlook, minor road).",
+    "known_issues": [
+      "2,203 units across 29 blocks = one of SG's largest condos. Deep resale liquidity BUT perpetual internal resale supply that structurally caps per-unit pricing power / appreciation.",
+      "Poor MRT walk: ~1.1km / 13 min to Simei (EW3); Tampines West (DT31) ~0.99km. No station at the doorstep. Weak for a 1BR tenant profile.",
+      "North-edge (top-row) stacks facing the PIE take expressway noise; reviewers call it audible but usually tolerable.",
+      "Tight 3-row layout: the MAJORITY of units face another block directly -> privacy is the project's headline weakness (StackedHomes).",
+      "West-corner stacks take heavy afternoon sun.",
+      "Mixed management/customer-service feedback; '1+Study' and studio-1BR layouts criticised (study is a desk niche; 1BR lacks a proper dividing wall).",
+      "0-5yr post-TOP window (2023) — the cohort that historically underperforms on forward returns while amortising launch premium (mitigant: launched cheap ~$1,346psf so premium was small)."
+    ],
+    "pools": 11,
+    "ground_floor_pes": true
+  },
+  "stacks": [
+    {
+      "stack": "25",
+      "floors": null,
+      "type": null,
+      "facing": "clubhouse",
+      "notes": "Best privacy in the project — faces the clubhouse, not another block head-on (StackedHomes).",
+      "confidence": "medium",
+      "source": "StackedHomes review"
+    },
+    {
+      "stack": "123,117,116,110,7,1,92,26,27,79,186,187,199",
+      "floors": null,
+      "type": null,
+      "facing": "SW/NW (afternoon sun)",
+      "notes": "West-sun corner stacks — hottest afternoon exposure (StackedHomes).",
+      "confidence": "medium",
+      "source": "StackedHomes review"
+    },
+    {
+      "stack": "199,200,201,202",
+      "floors": null,
+      "type": null,
+      "facing": "N/NW -> PIE",
+      "notes": "NW-corner block 55/57 stacks fronting the PIE slip road (expressway + west sun).",
+      "confidence": "medium",
+      "source": "site plan"
+    }
+  ],
+  "layouts": [
+    {
+      "type": "1BR (Type A1)",
+      "sqft": [
+        463
+      ],
+      "beds": 1,
+      "count": null,
+      "notes": "Standard 1BR, ~43sqm. Studio-style, weak living/sleeping divider. Most commoditised unit (231 1BR total)."
+    },
+    {
+      "type": "1BR+Study (Type A2)",
+      "sqft": [
+        484
+      ],
+      "beds": 1,
+      "count": null,
+      "notes": "Larger 1BR, ~45sqm. 'Study' is a desk niche. Best 1BR value when priced near the 463 quantum."
+    },
+    {
+      "type": "2BR",
+      "sqft": [
+        581,
+        592,
+        614
+      ],
+      "beds": 2,
+      "count": 265,
+      "notes": "Compact 2BR ~54-57sqm."
+    },
+    {
+      "type": "2BR Premium",
+      "sqft": [
+        657,
+        678
+      ],
+      "beds": 2,
+      "count": 160,
+      "notes": "~61-63sqm."
+    },
+    {
+      "type": "2BR+Study",
+      "sqft": [
+        678
+      ],
+      "beds": 2,
+      "count": 313,
+      "notes": "~63sqm, most numerous 2-bed type; deepest resale demand band."
+    },
+    {
+      "type": "3BR",
+      "sqft": [
+        818,
+        840,
+        850,
+        883,
+        915,
+        947
+      ],
+      "beds": 3,
+      "count": 417,
+      "notes": "~76-88sqm; 915sqft is the volume 3BR."
+    },
+    {
+      "type": "3BR Premium",
+      "sqft": [
+        1012,
+        1033,
+        1087
+      ],
+      "beds": 3,
+      "count": 344,
+      "notes": "~94-101sqm; 1033sqft is the volume 3BR-premium."
+    },
+    {
+      "type": "4BR",
+      "sqft": [
+        1238,
+        1270
+      ],
+      "beds": 4,
+      "count": 176,
+      "notes": "~115-118sqm."
+    },
+    {
+      "type": "4BR Premium",
+      "sqft": [
+        1281,
+        1324,
+        1335,
+        1346,
+        1367
+      ],
+      "beds": 4,
+      "count": 187,
+      "notes": "~119-127sqm."
+    },
+    {
+      "type": "5BR",
+      "sqft": [
+        1668,
+        1690,
+        1711,
+        1722
+      ],
+      "beds": 5,
+      "count": 110,
+      "notes": "~155-160sqm; largest format. No penthouses, no dual-key."
+    }
+  ],
+  "facing_map": {
+    "best": "Middle-row blocks (15,17,19,21,23,25,27,29,31,33,35) facing the internal 50m lap pools — pool view, buffered from both expressway and road. Stack 25 singled out as best-privacy (faces clubhouse, not another block). South-face units of the top row (43-57) also enjoy quiet pool views.",
+    "avoid": "West-corner stacks (afternoon sun): 123,117,116,110,7,1,92,26,27,79,186,187,199 per StackedHomes. North-face top-row stacks directly fronting the PIE (expressway noise). South-face bottom-row stacks directly on Tampines Street 11 (road/arrival noise). Any ground-floor/PES stack (low-floor, faces landscaping/walkway).",
+    "note": "Listings on PropertyGuru rarely publish the stack/unit number, so a specific listing can usually only be tied to its LAYOUT TYPE (via sqft) and to the SET of stacks carrying that facing — not to one stack — unless the listing text names a block/floor/facing."
+  },
+  "first_researched_at": "2026-07-14"
+}

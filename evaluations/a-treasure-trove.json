@@ -108,6 +108,67 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-a-treasure-trove-60236135",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-06-15",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Buy (medium) — OCR's deepest-liquidity 2BR right at Punggol MRT; fairly-priced (not cheap), verify estate condition.",
+      "rating_rationale": "Strongest model score of the batch (755), driven by OCR (best realized forward region), a 4-min walk to Punggol MRT with Waterway Point opposite, very deep liquidity (215 URA txns, 882 units), and a 2BR format with the broadest exit pool here. But the entry is FAIR, not a bargain: +1.6% vs district median, +6.0% vs age-adjusted median, only -3.1% vs new-launch-implied — so forward upside leans on the OCR tilt + location, not a value cushion. Gross yield 3.29% (net 2.15%) is modest carry. The trailing 6.97% 5yr CAGR is de-weighted to ~0 forward (story, not signal) and momentum is negative (-0.81); stripping it out, the high score rests on region + liquidity. Net: a durable income + modest-growth hold and a legitimate Buy, but I hold confidence at medium because it's fully priced and the score is partly CAGR-inflated.",
+      "red_flags": [
+        "Ask sits near the top of the verified resale range — limited value cushion",
+        "Documented estate-condition issues (yellowing walls, cracks, damaged water features) per resident reports — inspect the actual unit/block",
+        "882-unit mega-project — internal resale & leasing competition",
+        "Negative price momentum (-0.81); trailing CAGR is not a forward signal"
+      ],
+      "catalysts": [
+        "4-min walk to Punggol MRT (NEL) + bus interchange",
+        "Waterway Point mall directly opposite",
+        "OCR — strongest realized forward region (~+4%/yr)",
+        "Very deep liquidity (215 txns, 882 units) → easy entry/exit, stable rental demand"
+      ],
+      "as_of": {
+        "price": 1275000,
+        "psf": 1645.16,
+        "beds": 2,
+        "sqft": 775.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.97,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.29,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "Buy (medium) — OCR's deepest-liquidity 2BR right at Punggol MRT; fairly-priced (not cheap), verify estate condition.",
+        "rating": "Buy",
+        "rating_rationale": "Strongest model score of the batch (755), driven by OCR (best realized forward region), a 4-min walk to Punggol MRT with Waterway Point opposite, very deep liquidity (215 URA txns, 882 units), and a 2BR format with the broadest exit pool here. But the entry is FAIR, not a bargain: +1.6% vs district median, +6.0% vs age-adjusted median, only -3.1% vs new-launch-implied — so forward upside leans on the OCR tilt + location, not a value cushion. Gross yield 3.29% (net 2.15%) is modest carry. The trailing 6.97% 5yr CAGR is de-weighted to ~0 forward (story, not signal) and momentum is negative (-0.81); stripping it out, the high score rests on region + liquidity. Net: a durable income + modest-growth hold and a legitimate Buy, but I hold confidence at medium because it's fully priced and the score is partly CAGR-inflated.",
+        "red_flags": [
+          "Ask sits near the top of the verified resale range — limited value cushion",
+          "Documented estate-condition issues (yellowing walls, cracks, damaged water features) per resident reports — inspect the actual unit/block",
+          "882-unit mega-project — internal resale & leasing competition",
+          "Negative price momentum (-0.81); trailing CAGR is not a forward signal"
+        ],
+        "catalysts": [
+          "4-min walk to Punggol MRT (NEL) + bus interchange",
+          "Waterway Point mall directly opposite",
+          "OCR — strongest realized forward region (~+4%/yr)",
+          "Very deep liquidity (215 txns, 882 units) → easy entry/exit, stable rental demand"
+        ],
+        "rental_assessment": "URA project-2BR rent ~$3,500/mo → 3.29% gross / 2.15% net (conf 0.95). Well-evidenced; Punggol demand is stable though OCR rents are lower in absolute dollars.",
+        "appreciation_assessment": "Trailing 5yr CAGR 6.97% is OCR-bull-regime history, de-weighted to ~0 forward. Forward case = OCR region tilt + Punggol maturation, not value (priced at median). Expect modest, not outsized, appreciation.",
+        "stack_notes": "Stack/facing not researched. Verify the unit's facing (avoid west sun, road/MRT-track noise) and physical condition before offering — stack quality varies in a project this size.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null
+      },
+      "source": {
+        "run_dir": "output/run_top4",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-a-treasure-trove-60236135",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

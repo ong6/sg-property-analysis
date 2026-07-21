@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-07-21",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -242,9 +242,9 @@
     "sims-urban-oasis": {
       "condo": "Sims Urban Oasis",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "my-manhattan": {
       "condo": "My Manhattan",
@@ -564,9 +564,9 @@
     "a-treasure-trove": {
       "condo": "A Treasure Trove",
       "district": "D19",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Buy",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "1km-tao-nan-primary-chij-katong-haig-girls-tanjong-katong-primary-4-bedroom": {
       "condo": "1KM Tao Nan Primary, CHIJ Katong, Haig Girls, Tanjong Katong Primary, 4 bedroom",
@@ -627,9 +627,9 @@
     "parc-esta": {
       "condo": "Parc Esta",
       "district": "D14",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "79-chay-yan-street": {
       "condo": "79 Chay Yan Street",
@@ -756,6 +756,13 @@
       "latest_rating": "Avoid",
       "latest_date": "2026-06-08",
       "eval_count": 1
+    },
+    "dunearn-house": {
+      "condo": "Dunearn House",
+      "district": "D11",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-07-21",
+      "eval_count": 2
     },
     "katong-regency": {
       "condo": "Katong Regency",
@@ -3022,8 +3029,8 @@
       "condo": "Queens Peak",
       "district": "D03",
       "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-06-15",
+      "eval_count": 3
     },
     "palm-gardens": {
       "condo": "Palm Gardens",
@@ -3686,9 +3693,9 @@
     "eco": {
       "condo": "eCO",
       "district": "D16",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Neutral",
+      "latest_date": "2026-06-16",
+      "eval_count": 3
     },
     "1km-to-boon-keng-mrt-only-below-valuation-almost-sold": {
       "condo": "1KM To Boon Keng MRT Only! Below Valuation! Almost Sold!",
