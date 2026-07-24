@@ -1,0 +1,68 @@
+{
+  "condo": "Union Square Residences",
+  "slug": "union-square-residences",
+  "district": "D01",
+  "history": [
+    {
+      "evaluated_at": "2026-07-25",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Low-floor 990sqft 3BR in the CanningHill sequel at $2.612M/$2,638psf — the developer's own 2026-repriced schedule price for fl 01-10, ~13% below launch, sitting inside (not above) the completed-neighbour resale band. Genuine relative value for an uncompleted RCR unit; capped by a 43% developer overhang, a nearby launch wave, ~3.2% yield, and the weakest floor position in the tower.",
+      "rating_rationale": "The price is honest but the position is weak and the umbrella is falling, not rising. Value: at $2,638psf this uncompleted 3BR enters BELOW CanningHill ($3,228), Riviere ($2,903) and Martin Modern's 3BR band ($2,792) resales on the same area basis — rare for a new launch and the strongest point in its favour; RCR fwd prior (+3.1%/yr) beats the CCR alternative. Against it: the discount exists because demand failed at launch pricing — the developer cut ~13% in Q2-2026 and still holds ~158 units, so for years every resale competes with developer stock plus four fresh launches nearby; the 990-type's own launch buyer (fl 31-35, $3,292, Jul-25) is already ~13% underwater against the May-26 schedule; yield ~3.2% misses the 3.5% fallback line; no income until ~2029-30 TOP pushes the realistic exit to 2031-34 (yrs 5-8); and fl 01-10 above a retail/hotel podium is the tower's weakest resale position with no extra discount for it (ask is ON the floor curve). Within-project, fl 16-25 at $2,751-2,800psf is the better ticket for +$110-160k. Vs Dunearn House C1 (Neutral, $2,978psf harmonised, CCR): USR is ~7% cheaper per liveable sqft with 12% more space and better region/transit — on pure numbers this is the stronger of the two Neutrals; on momentum and overhang it is the weaker. Not a Buy: the value cushion is compensation for the overhang, not an edge.",
+      "red_flags": [
+        "Developer overhang: ~43% unsold (158 units) 20 months post-launch, after a ~13% Q2-2026 repricing — multi-year cap on resale pricing",
+        "Launch-buyer cohort underwater: Jul-25 990sqft print $3,292psf vs May-26 same-band $2,888 — the project's first prints are marked down, poor comp optics at exit",
+        "Low floor (inferred 01-10) above mixed-use retail+hotel podium; Clarke Quay nightlife noise; weakest position on a $260psf floor curve with zero positional discount",
+        "Est gross yield ~3.2% < 3.5% fallback line; zero income until TOP (~2029-30; Mar-2031 contractual)",
+        "Supply wave: River Green / Robertson Opus / Promenade Peak / Zion Residences (2025-26) compete for the same exit buyer and tenant",
+        "$2.612M quantum above the $2.2M deep-liquidity knee; floor/stack unverified from listing (confirm before offer)"
+      ],
+      "catalysts": [
+        "Enters below completed-neighbour resale band (CanningHill $3,228 / Riviere $2,903) on the same area basis — uncompleted product at completed-resale pricing",
+        "RCR (URA-confirmed) +3.1%/yr realized forward baseline; 3 MRT stations walkable incl. Clarke Quay 274m; within 1km River Valley Primary",
+        "SDI-linked CanningHill/Union Square precinct upgrade + Singapore River rejuvenation; 28-unit 3BR cohort is genuinely scarce within the project",
+        "Post-repricing velocity is real: 11 of 28 990sqft 3BRs sold Mar-May 2026 — the cut found the market-clearing level"
+      ],
+      "as_of": {
+        "price": 2612000,
+        "psf": 2638.38,
+        "beds": 3,
+        "sqft": 990.0
+      },
+      "key_facts": {
+        "appreciation_pct": 3.1,
+        "appreciation_source": "agent_override_rcr_baseline (project's own trajectory is NEGATIVE: launch avg $3,200psf Nov-24 → Q2-26 avg $2,817; no resale-to-resale evidence exists)",
+        "gross_yield_pct": 3.22,
+        "nearest_mrt": "Clarke Quay NE5 (274m); Chinatown NE4/DT19 289m; Fort Canning DT20 walkable",
+        "tenure": "99 yrs lease commencing from 2024",
+        "remaining_lease": 97
+      },
+      "agent_evaluation": {
+        "summary": "Low-floor 990sqft 3BR in the CanningHill sequel at $2.612M/$2,638psf — the developer's own 2026-repriced schedule price for fl 01-10, ~13% below launch, sitting inside (not above) the completed-neighbour resale band. Genuine relative value for an uncompleted RCR unit; capped by a 43% developer overhang, a nearby launch wave, ~3.2% yield, and the weakest floor position in the tower.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "The price is honest but the position is weak and the umbrella is falling, not rising. Value: at $2,638psf this uncompleted 3BR enters BELOW CanningHill ($3,228), Riviere ($2,903) and Martin Modern's 3BR band ($2,792) resales on the same area basis — rare for a new launch and the strongest point in its favour; RCR fwd prior (+3.1%/yr) beats the CCR alternative. Against it: the discount exists because demand failed at launch pricing — the developer cut ~13% in Q2-2026 and still holds ~158 units, so for years every resale competes with developer stock plus four fresh launches nearby; the 990-type's own launch buyer (fl 31-35, $3,292, Jul-25) is already ~13% underwater against the May-26 schedule; yield ~3.2% misses the 3.5% fallback line; no income until ~2029-30 TOP pushes the realistic exit to 2031-34 (yrs 5-8); and fl 01-10 above a retail/hotel podium is the tower's weakest resale position with no extra discount for it (ask is ON the floor curve). Within-project, fl 16-25 at $2,751-2,800psf is the better ticket for +$110-160k. Vs Dunearn House C1 (Neutral, $2,978psf harmonised, CCR): USR is ~7% cheaper per liveable sqft with 12% more space and better region/transit — on pure numbers this is the stronger of the two Neutrals; on momentum and overhang it is the weaker. Not a Buy: the value cushion is compensation for the overhang, not an edge.",
+        "red_flags": [
+          "Developer overhang: ~43% unsold (158 units) 20 months post-launch, after a ~13% Q2-2026 repricing — multi-year cap on resale pricing",
+          "Launch-buyer cohort underwater: Jul-25 990sqft print $3,292psf vs May-26 same-band $2,888 — the project's first prints are marked down, poor comp optics at exit",
+          "Low floor (inferred 01-10) above mixed-use retail+hotel podium; Clarke Quay nightlife noise; weakest position on a $260psf floor curve with zero positional discount",
+          "Est gross yield ~3.2% < 3.5% fallback line; zero income until TOP (~2029-30; Mar-2031 contractual)",
+          "Supply wave: River Green / Robertson Opus / Promenade Peak / Zion Residences (2025-26) compete for the same exit buyer and tenant",
+          "$2.612M quantum above the $2.2M deep-liquidity knee; floor/stack unverified from listing (confirm before offer)"
+        ],
+        "catalysts": [
+          "Enters below completed-neighbour resale band (CanningHill $3,228 / Riviere $2,903) on the same area basis — uncompleted product at completed-resale pricing",
+          "RCR (URA-confirmed) +3.1%/yr realized forward baseline; 3 MRT stations walkable incl. Clarke Quay 274m; within 1km River Valley Primary",
+          "SDI-linked CanningHill/Union Square precinct upgrade + Singapore River rejuvenation; 28-unit 3BR cohort is genuinely scarce within the project",
+          "Post-repricing velocity is real: 11 of 28 990sqft 3BRs sold Mar-May 2026 — the cut found the market-clearing level"
+        ],
+        "rental_assessment": "No USR rentals exist (uncompleted). Area anchors: Riviere/CanningHill command strong central rents; est $6,800-7,200/mo for 990sqft 3BR at TOP → ~3.1-3.3% gross on this price. Deep tenant pool (CBD/Clarke Quay professionals) but hotel/nightlife adjacency skews toward tenants over owner-occupier resale buyers."
+      },
+      "source": {
+        "run_dir": "output/run_036_union-square-residences",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-union-square-residences-25256758",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
