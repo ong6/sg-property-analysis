@@ -26,6 +26,9 @@ comparison: `docs/evaluation-rubric.md`.
 
 Every flow: **① Recall → ② Gather → ③ Research & evaluate → ④ Fill
 `agent_evaluation` → ⑤ `--from-review` report (auto-saves to memory).**
+In ② Gather, pull per-project market context from realsmart.sg via the
+`/realsmart-data` skill (owner-preferred source: transaction/profitability
+stats, holding-period distribution, rental yield) alongside URA data.
 Requests that fit none of these (e.g. "compare these two condos", "should I
 sell?") still use the same tools — pick the closest altitude, state the rubric
 used, and ask if intent is unclear.
