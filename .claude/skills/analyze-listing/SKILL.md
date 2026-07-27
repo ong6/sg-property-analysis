@@ -30,7 +30,7 @@ into MMR) alongside the rubric's own-stay lens.
    ```
    Creates `output/run_NNN/raw_analysis.json` with one entry.
 
-   **If the listing is already in the DB** — always true when the daily scan
+   **If the listing is already in the DB** — always true when the weekly scan
    sent you here, and worth checking (`--search-db`) otherwise — gather from the
    DB instead and skip the scrape entirely:
    ```bash

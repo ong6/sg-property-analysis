@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-"""Daily scan — poll PropertyGuru, algo-grade everything, AI-analyze the few worth it.
+"""Weekly scan — poll PropertyGuru, algo-grade everything, AI-analyze the few worth it.
 
-The once-a-day loop, meant to fire when the machine is unlocked in the morning:
+Run by hand, once a week. Nothing auto-starts it: the reminder lives in the
+personal data store (`projects/property-finder/weekly-scan.md`, surfaced at
+session start when it comes due) and the owner drives it from there. This
+script closes the loop by stamping that note's `last_run` on success.
+
+The cycle:
 
   1. **Poll** — `poller.run_poll()` scrapes the newest listings for the configured
      districts/beds, upserts them, and MMR-scores the new / price-changed ones.
@@ -15,28 +20,29 @@ The once-a-day loop, meant to fire when the machine is unlocked in the morning:
      the repo's `/analyze-listing` flow and lands a Buy/Neutral/Avoid verdict in
      eval memory. Gather is `invest.py --from-db` — the listing is already
      scraped and enriched, so the agent never touches the network for it.
-  5. **Digest** — `output/daily/YYYY-MM-DD.md`: the full day, honestly (what was
-     seen, what was gated out and why, every verdict).
+  5. **Digest** — `output/weekly/YYYY-MM-DD.md`: the whole week, honestly (what
+     was seen, what was gated out and why, every verdict).
   6. **Store push** — only genuinely good finds (Buy/Strong Buy at >= medium
-     confidence) are appended to the personal data store's daily-finds note.
+     confidence) are appended to the personal data store's scan-finds note.
      The bar is deliberately high: an over-fed note gets ignored.
 
 Usage:
-    python daily.py                  # the real thing (headed browser — see below)
-    python daily.py --force          # re-run even though today already succeeded
-    python daily.py --dry-run        # poll + gate + digest, but spawn no agents
-    python daily.py --no-poll        # skip the scrape; grade/analyze what's already new today
-    python daily.py --max-ai 2       # tighter cap for this run
+    python weekly.py                 # the real thing (headed browser — see below)
+    python weekly.py --dry-run       # poll + gate + digest, but spawn no agents
+    python weekly.py --force         # re-run even though this week already succeeded
+    python weekly.py --no-poll       # skip the scrape; grade what arrived since the last run
+    python weekly.py --max-ai 2      # tighter cap for this run
 
 **Headed by default.** PropertyGuru sits behind Cloudflare, which blocks
 headless background polls (see CLAUDE.md). A Chrome window opens and reuses the
 persistent `chrome-profile` clearance cookie; if a challenge does appear, solve
 it once and the rest of the cycle proceeds. `--headless` is available for
-machines where that already works.
+machines where that already works. Since a human is present anyway — this is a
+hand-run script — that challenge is a prompt, not a failure mode.
 
-State lives in `data/daily_state.json`. A run that polled successfully marks the
-day done, so multiple logins do not re-scrape; a run whose poll FAILED does not,
-so a later launch retries.
+State lives in `data/weekly_state.json`. A run that polled successfully marks
+the ISO week done, so a second run that week is a no-op; a run whose poll FAILED
+does not, so the retry is just running it again.
 """
 
 from __future__ import annotations
@@ -57,9 +63,9 @@ import listings_db
 import poller
 
 DATA_DIR = os.path.join(BASE, "data")
-STATE_FILE = os.path.join(DATA_DIR, "daily_state.json")
-DIGEST_DIR = os.path.join(BASE, "output", "daily")
-RUNS_DIR = os.path.join(BASE, "output", "daily_runs")
+STATE_FILE = os.path.join(DATA_DIR, "weekly_state.json")
+DIGEST_DIR = os.path.join(BASE, "output", "weekly")
+RUNS_DIR = os.path.join(BASE, "output", "weekly_runs")
 
 # --------------------------------------------------------------------------- #
 # The knobs
@@ -71,12 +77,22 @@ RUNS_DIR = os.path.join(BASE, "output", "daily_runs")
 
 # The AI gate. 650 is the repo's own "recommended tier" (CLAUDE.md) and sits at
 # roughly the 88th percentile of the scored book — a listing below it is not
-# worth an agent run on the day it appears.
+# worth an agent run just for showing up.
 MIN_SCORE_FOR_AI = 650
 
-# Hard cap on agent runs per day. The gate alone is unbounded: a bulk relist or
-# a newly-covered district could put 40 listings over 650 in one morning.
-MAX_AI_RUNS_PER_DAY = 5
+# Hard cap on agent runs per scan. The gate alone is unbounded: a bulk relist or
+# a newly-covered district could put 40 listings over 650 in one week.
+#
+# 8, not the 5 a daily cadence used: a weekly scan sweeps ~7 days of inventory,
+# so the same cap would be ~7x stingier per listing seen. Still far below a
+# daily run's 35/week — weekly is the cheaper cadence either way.
+MAX_AI_RUNS_PER_SCAN = 8
+
+# Pages per (district, beds) to pull. PropertyGuru search is date-desc, so this
+# is really "how far back does one scan reach". The poller's default of 2 is
+# tuned for 6-hourly polling; a week of listings needs deeper pagination or the
+# older half of the week silently never gets seen.
+POLL_MAX_PAGES = 5
 
 # Don't re-analyze the same (condo, bedroom count) inside this window — a fresh
 # listing of an already-judged unit type rarely changes the call, and eval memory
@@ -90,14 +106,19 @@ AI_TIMEOUT_S = 1800
 # What the headless agent may touch — scoped, mirroring dashboard.py's ANALYZE.
 AI_ALLOWED_TOOLS = "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Skill,TodoWrite"
 
-# Store push bar: only these reach the personal data store's daily-finds note.
+# Store push bar: only these reach the personal data store's scan-finds note.
 STORE_PUSH_RATINGS = {"strong buy", "buy"}
 STORE_PUSH_CONFIDENCE = {"high", "medium"}
+_STORE = os.environ.get(
+    "PF_STORE", os.path.expanduser("~/Sideproject/personal-data-store"))
 STORE_FINDS_PATH = os.environ.get(
     "PF_STORE_FINDS",
-    os.path.expanduser(
-        "~/Sideproject/personal-data-store/projects/home-buying/daily-finds.md"),
-)
+    os.path.join(_STORE, "projects", "home-buying", "scan-finds.md"))
+# The note that reminds the owner to run this. A successful scan stamps its
+# `last_run:` so the store's session-start reminder clears itself.
+STORE_SCAN_NOTE_PATH = os.environ.get(
+    "PF_STORE_SCAN_NOTE",
+    os.path.join(_STORE, "projects", "property-finder", "weekly-scan.md"))
 
 _RATING_ICON = {"strong buy": "🟢", "buy": "🟢", "neutral": "🟡", "avoid": "🔴"}
 
@@ -121,14 +142,20 @@ def save_state(state: dict) -> None:
     os.replace(tmp, STATE_FILE)
 
 
-def already_done_today(state: dict, today: str) -> bool:
-    """True only if today's run already got a SUCCESSFUL poll in.
+def iso_week(d: datetime) -> str:
+    """ISO year-week key, e.g. '2026-W31'. Weeks start Monday."""
+    year, week, _ = d.isocalendar()
+    return f"{year}-W{week:02d}"
+
+
+def already_done_this_week(state: dict, week: str) -> bool:
+    """True only if this ISO week already got a SUCCESSFUL poll in.
 
     A failed poll (the usual cause: an unsolved Cloudflare challenge) leaves the
-    day open so the next launch retries instead of silently skipping the day.
+    week open, so re-running is the retry — no flag needed.
     """
     last = state.get("last_run") or {}
-    return last.get("date") == today and bool(last.get("poll_ok"))
+    return last.get("week") == week and bool(last.get("poll_ok"))
 
 
 # --------------------------------------------------------------------------- #
@@ -145,7 +172,7 @@ def _eval_cooldown_index(cooldown_days: int, today: datetime) -> dict:
     Eval memory is append-only and years old: some legacy entries carry `as_of`
     as a free-text note rather than the {price, beds, …} dict, and a hand-edited
     file can hold anything. Nothing in here may raise — a malformed entry
-    degrades to the wildcard, it does not stop the day's scan.
+    degrades to the wildcard, it does not stop the scan.
     """
     index: dict[tuple[str, object], str] = {}
     cutoff = (today - timedelta(days=cooldown_days)).strftime("%Y-%m-%d")
@@ -179,9 +206,9 @@ def select_candidates(
     db_listings: dict,
     cooldown_index: dict | None = None,
     min_score: int = MIN_SCORE_FOR_AI,
-    max_ai: int = MAX_AI_RUNS_PER_DAY,
+    max_ai: int = MAX_AI_RUNS_PER_SCAN,
 ) -> tuple[list[dict], list[dict]]:
-    """Split the day's new/changed listings into (shortlist, rejected).
+    """Split the scan's new/changed listings into (shortlist, rejected).
 
     Pure over its inputs so the policy is testable without a poll. `rows` are
     poll-state rows (id / project_name / score_1000 / …); each is joined to its
@@ -189,7 +216,7 @@ def select_candidates(
     `gate_reason` — the digest prints them, so the gate is never a black box.
 
     Order of checks matters: cheap data-quality rules first, then the score,
-    then the two rules that need the rest of the batch (same-day dedupe, cap).
+    then the two rules that need the rest of the batch (in-batch dedupe, cap).
     """
     cooldown_index = {} if cooldown_index is None else cooldown_index
     shortlist: list[dict] = []
@@ -222,9 +249,9 @@ def select_candidates(
         elif (blocked := _blocked_by_cooldown(cooldown_index, slug, row.get("beds"))):
             cand["gate_reason"] = f"same unit type evaluated {blocked} (cooldown)"
         elif cohort in seen_cohort:
-            cand["gate_reason"] = "same condo + bed count already shortlisted today"
+            cand["gate_reason"] = "same condo + bed count already shortlisted this scan"
         elif len(shortlist) >= max_ai:
-            cand["gate_reason"] = f"over the daily AI cap ({max_ai})"
+            cand["gate_reason"] = f"over the per-scan AI cap ({max_ai})"
         else:
             cand["slug"] = slug
             seen_cohort.add(cohort)
@@ -257,7 +284,7 @@ def _agent_prompt(cand: dict) -> str:
         f"instead of `--url` — it builds the run dir and raw_analysis.json from "
         f"the DB record with no scraping (PropertyGuru is behind Cloudflare and "
         f"this is an unattended run).{flag_note}\n\n"
-        "This is a NON-INTERACTIVE headless run in the daily scan: do not ask "
+        "This is a NON-INTERACTIVE headless run in the weekly scan: do not ask "
         "anything; where the flow would ask about purpose, assume investment "
         "(5-7yr hold) and proceed. Do the real research step — your view first, "
         "algo_reference second. An honest Neutral or Avoid is the expected "
@@ -326,7 +353,7 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
                  max_ai: int, dry_run: bool, pushed: list[dict]) -> str:
     n_new = len(poll_state.get("new_listings") or [])
     n_changed = len(poll_state.get("changed_listings") or [])
-    L = [f"# Daily scan — {day}", ""]
+    L = [f"# Weekly scan — {day} ({iso_week(datetime.strptime(day, '%Y-%m-%d'))})", ""]
 
     if poll_state.get("ok"):
         L.append(
@@ -341,11 +368,11 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
         L.append("**Poll** · skipped (`--no-poll`) — graded what was already in the DB")
     else:
         L.append(f"> ⚠️ **Poll FAILED** — `{poll_state.get('error')}`. "
-                 "Everything below is from the DB as it stands; the day was NOT "
-                 "marked done, so the next launch retries.")
+                 "Everything below is from the DB as it stands; the week was NOT "
+                 "marked done, so just run it again.")
 
     L += ["",
-          f"**Gate** · `score_1000 >= {min_score}` · max {max_ai} AI runs/day · "
+          f"**Gate** · `score_1000 >= {min_score}` · max {max_ai} AI runs/scan · "
           f"{RE_EVAL_COOLDOWN_DAYS}d re-eval cooldown",
           f"**Result** · {n_new} new + {n_changed} price-changed → "
           f"**{len(shortlist)} cleared the gate** → "
@@ -399,7 +426,7 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
         L.append("")
 
     if not shortlist and not rejected:
-        L += ["Nothing new or price-changed in scope today.", ""]
+        L += ["Nothing new or price-changed in scope this week.", ""]
 
     return "\n".join(L)
 
@@ -435,16 +462,16 @@ def _insert_rows(existing: str, rows: list[str]) -> str:
 
 def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
                   path: str = STORE_FINDS_PATH) -> list[dict]:
-    """Append Buy-grade finds to the store's daily-finds note. Returns what was added.
+    """Append Buy-grade finds to the store's scan-finds note. Returns what was added.
 
     The bar is intentionally high (Buy/Strong Buy at >= medium confidence) — the
     store note is a signal feed the owner actually reads, not a log. The full
-    day, verdicts included, is always in the digest regardless.
+    week, verdicts included, is always in the digest regardless.
 
     Never creates the file: if the note is missing the store is not where we
     think it is, and silently seeding a stray markdown file elsewhere is worse
     than skipping. Rows already present (same listing URL) are not re-added, so
-    re-running a day is safe.
+    re-running a scan is safe.
     """
     good = []
     for cand in shortlist:
@@ -492,36 +519,79 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
     if not lines:
         return []
 
-    body = _insert_rows(existing, lines)
     # Keep the note's `updated:` frontmatter honest — the store's convention.
-    if body.startswith("---\n"):
-        head, sep, rest = body.partition("\n---\n")
-        head = "\n".join(
-            f"updated: {day}" if ln.startswith("updated:") else ln
-            for ln in head.split("\n"))
-        body = head + sep + rest
+    body = _set_frontmatter(_insert_rows(existing, lines), "updated", day)
+    _atomic_write(path, body)
+    return added
+
+
+def _atomic_write(path: str, body: str) -> None:
     tmp = path + ".tmp"
     with open(tmp, "w") as f:
         f.write(body)
     os.replace(tmp, path)
-    return added
+
+
+def _set_frontmatter(text: str, key: str, value: str) -> str:
+    """Rewrite one existing frontmatter key. Adds nothing, touches nothing else.
+
+    Only rewrites a key that is already there — the store's notes own their own
+    shape, and a scan script inventing frontmatter fields in them would be
+    overreach.
+    """
+    if not text.startswith("---\n"):
+        return text
+    head, sep, rest = text.partition("\n---\n")
+    if not sep:
+        return text
+    head = "\n".join(
+        f"{key}: {value}" if ln.startswith(f"{key}:") else ln
+        for ln in head.split("\n"))
+    return head + sep + rest
+
+
+def stamp_scan_note(day: str, path: str = STORE_SCAN_NOTE_PATH) -> bool:
+    """Stamp `last_run:` on the store's reminder note so the reminder clears.
+
+    This is what makes the store the driver: the note says when the scan is due,
+    the scan says when it last ran, and the session-start hook does the
+    subtraction. Best-effort — a missing store just means the reminder stays up.
+    """
+    if not os.path.exists(path):
+        print(f"  ⚠ scan note not found at {path} — reminder not stamped",
+              file=sys.stderr)
+        return False
+    try:
+        with open(path) as f:
+            text = f.read()
+        updated = _set_frontmatter(_set_frontmatter(text, "last_run", day),
+                                   "updated", day)
+        if updated != text:
+            _atomic_write(path, updated)
+        return True
+    except OSError as e:
+        print(f"  ⚠ could not stamp {path}: {e}", file=sys.stderr)
+        return False
 
 
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Daily PropertyGuru scan + AI triage")
+    ap = argparse.ArgumentParser(description="Weekly PropertyGuru scan + AI triage")
     ap.add_argument("--force", action="store_true",
-                    help="run even if today already completed a successful poll")
+                    help="run even if this week already completed a successful poll")
     ap.add_argument("--dry-run", action="store_true",
                     help="poll, grade and write the digest, but spawn no agents")
     ap.add_argument("--no-poll", action="store_true",
-                    help="skip the scrape — grade/analyze what is already new today")
+                    help="skip the scrape — grade what already arrived since the last run")
     ap.add_argument("--headless", action="store_true",
                     help="poll headless (Cloudflare usually blocks this — see module docs)")
     ap.add_argument("--min-score", type=int, default=MIN_SCORE_FOR_AI)
-    ap.add_argument("--max-ai", type=int, default=MAX_AI_RUNS_PER_DAY)
+    ap.add_argument("--max-ai", type=int, default=MAX_AI_RUNS_PER_SCAN)
+    ap.add_argument("--max-pages", type=int, default=POLL_MAX_PAGES,
+                    help=f"pages per district — how far back one scan reaches "
+                         f"(default {POLL_MAX_PAGES})")
     ap.add_argument("--districts", type=str, default=None)
     ap.add_argument("--beds", type=str, default=None)
     ap.add_argument("--no-store-push", action="store_true",
@@ -530,12 +600,14 @@ def main() -> int:
 
     now = datetime.now()
     day = now.strftime("%Y-%m-%d")
+    week = iso_week(now)
     state = load_state()
 
-    if already_done_today(state, day) and not args.force:
+    if already_done_this_week(state, week) and not args.force:
         last = state["last_run"]
-        print(f"Daily scan already ran today ({last.get('finished_at')}) — "
-              f"digest: {last.get('digest')}. Use --force to re-run.")
+        print(f"Weekly scan already ran this week ({week}, "
+              f"{last.get('finished_at')}) — digest: {last.get('digest')}. "
+              f"Use --force to re-run.")
         return 0
 
     # 1. Poll
@@ -547,20 +619,26 @@ def main() -> int:
         poll_state = poller.run_poll(
             districts=[int(d) for d in args.districts.split(",")] if args.districts else None,
             beds=[int(b) for b in args.beds.split(",")] if args.beds else None,
+            max_pages=args.max_pages,
             headless=args.headless,
         )
 
     rows = list(poll_state.get("new_listings") or []) + \
         list(poll_state.get("changed_listings") or [])
 
-    # --no-poll still has a job to do: grade whatever first appeared today.
+    # --no-poll still has a job to do: grade everything that arrived since the
+    # last run (not just today — the whole point of a weekly cadence).
     if args.no_poll:
+        since = (state.get("last_run") or {}).get("date") \
+            or (now - timedelta(days=7)).strftime("%Y-%m-%d")
         db = listings_db.load_db()["listings"]
         rows = [{"id": k, "project_name": r.get("project_name") or r.get("title"),
                  "district": r.get("district"), "beds": r.get("beds"),
                  "price": r.get("price"), "psf": r.get("psf"),
                  "score_1000": r.get("score_1000"), "url": r.get("url")}
-                for k, r in db.items() if r.get("first_seen") == day]
+                for k, r in db.items() if (r.get("first_seen") or "") >= since]
+        print(f"--no-poll: grading {len(rows)} listing(s) first seen since {since}",
+              file=sys.stderr)
 
     # 2/3. Gate
     db_listings = listings_db.load_db()["listings"]
@@ -601,17 +679,25 @@ def main() -> int:
     digest_path = write_digest(day, digest)
     print(f"\nDigest: {digest_path}", file=sys.stderr)
 
+    # Clear the store's reminder — only on a real, successful run.
+    closed = bool(poll_state.get("ok")) and not args.dry_run
+    if closed and not args.no_store_push:
+        stamp_scan_note(day)
+
     state.setdefault("history", []).append({
-        "date": day, "poll_ok": bool(poll_state.get("ok")),
+        "date": day, "week": week, "poll_ok": bool(poll_state.get("ok")),
+        # `closed` is the one that matters for the guard: a dry run can have a
+        # perfectly good poll and still deliberately leave the week open.
+        "closed": closed, "dry_run": args.dry_run,
         "candidates": len(rows), "shortlisted": len(shortlist),
         "analyzed": len(verdicts), "pushed": len(pushed),
     })
-    state["history"] = state["history"][-90:]
+    state["history"] = state["history"][-52:]
     state["last_run"] = {
-        "date": day,
+        "date": day, "week": week,
         "finished_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        # A dry run deliberately does not close the day.
-        "poll_ok": bool(poll_state.get("ok")) and not args.dry_run,
+        # A dry run deliberately does not close the week.
+        "poll_ok": closed,
         "digest": os.path.relpath(digest_path, BASE),
         "shortlisted": len(shortlist), "analyzed": len(verdicts),
         "pushed": len(pushed), "runs": runs,
