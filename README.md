@@ -131,23 +131,23 @@ Most-used flags for `python invest.py`, grouped by purpose (`--help` for the ful
 | `--top, -n` / `--output, -o` / `--csv` / `--json` | Result count and export paths |
 | `--verbose, -v` / `--no-headless` / `--list-districts` | Score breakdowns / show browser / list districts |
 
-## Daily Scan
+## Weekly Scan
 
-`daily.py` is the unattended once-a-day loop: **poll → algo-grade every new and
+`weekly.py` is the once-a-week loop: **poll → algo-grade every new and
 price-changed listing → gate → AI-analyze only what clears the gate → digest**.
 The algo grade is free and applied to everything; the AI agent is expensive, so
-it only runs on listings scoring `>= 650` (capped at 5/day, with a 30-day
+it only runs on listings scoring `>= 650` (capped at 8 per scan, with a 30-day
 re-evaluation cooldown per condo + bed count). Everything filtered out is still
 logged, with the reason.
 
 ```bash
-python daily.py                          # the real thing (headed browser)
-python daily.py --dry-run                # poll + gate + digest, no agents
-bash scripts/install-daily-agent.sh      # run it automatically at login (macOS)
+python weekly.py              # the real thing (headed browser)
+python weekly.py --dry-run    # poll + gate + digest, no agents
 ```
 
-Digests land in `output/daily/<date>.md`; verdicts go to `evaluations/` like any
-other flow. Thresholds are at the top of `daily.py`. Full details: `CLAUDE.md`.
+Nothing auto-starts it — run it by hand when the reminder comes up. Digests land
+in `output/weekly/<date>.md`; verdicts go to `evaluations/` like any other flow.
+Thresholds are at the top of `weekly.py`. Full details: `CLAUDE.md`.
 
 ## Configuration
 

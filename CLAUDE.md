@@ -116,41 +116,44 @@ contenders + reasons, and run confidence. The arena ranks stats; you certify
 the stats deserve to rank. Each run also writes a timestamped archive
 (`output/arena_<ts>.md`).
 
-## Daily scan (`daily.py`) — auto-poll, algo-grade, AI-triage
+## Weekly scan (`weekly.py`) — poll, algo-grade, AI-triage
 
-The once-a-day loop, fired by a LaunchAgent at login (`bash
-scripts/install-daily-agent.sh`; retries 09:30 / 14:00; `--remove` to
-uninstall). It chains what already existed:
+The once-a-week loop. **Nothing auto-starts it** — the reminder lives in the
+personal data store (`projects/property-finder/weekly-scan.md`, surfaced at
+session start when due) and the owner drives it from there; a successful run
+stamps that note's `last_run` so the reminder clears itself. It chains what
+already existed:
 
 **poll → algo-grade EVERY new/changed listing → gate → AI-analyze only what
 clears the gate → digest → push the good ones to the store.**
 
 The gate is the point: `score_1000` is free, an agent run is not. Knobs live at
-the top of `daily.py` (deliberately **not** `config.py` — that file is hashed
+the top of `weekly.py` (deliberately **not** `config.py` — that file is hashed
 into `score_version`, and a scan-policy threshold must not restamp the scored
 book's vintage):
 
 | Knob | Default | Why |
 |---|---|---|
 | `MIN_SCORE_FOR_AI` | 650 | the recommended tier; ~p88 of the book |
-| `MAX_AI_RUNS_PER_DAY` | 5 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
+| `MAX_AI_RUNS_PER_SCAN` | 8 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
+| `POLL_MAX_PAGES` | 5 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
 | `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
 | store push | Buy/Strong Buy **and** ≥ medium confidence | the store note is a feed the owner reads, not a log |
 
-Same-day dupes collapse to one run per (condo, bed count), and stale /
+In-batch dupes collapse to one run per (condo, bed count), and stale /
 incomplete / unscored records never reach an agent. Every gated-out listing
 carries a `gate_reason` that the digest prints — the gate is never a black box.
 
 ```bash
-python daily.py                 # the real thing (HEADED browser — Cloudflare)
-python daily.py --dry-run       # poll + gate + digest, spawn no agents
-python daily.py --no-poll       # grade/analyze what already arrived today
-python daily.py --force         # re-run a day that already succeeded
+python weekly.py                # the real thing (HEADED browser — Cloudflare)
+python weekly.py --dry-run      # poll + gate + digest, spawn no agents
+python weekly.py --no-poll      # grade what already arrived since the last run
+python weekly.py --force        # re-run a week that already succeeded
 ```
 
-Outputs: digest `output/daily/<date>.md`, agent transcripts
-`output/daily_runs/`, state `data/daily_state.json`. A run whose **poll failed**
-does not close the day, so the next trigger retries. Verdicts land in
+Outputs: digest `output/weekly/<date>.md`, agent transcripts
+`output/weekly_runs/`, state `data/weekly_state.json`. A run whose **poll
+failed** does not close the week — just run it again. Verdicts land in
 `evaluations/` like any other flow — that, not the digest, is the durable record.
 
 The agent step gathers with **`invest.py --from-db <id>`**, which builds a run
@@ -240,8 +243,7 @@ python invest.py --fetch-ura-districts 3,5,14,15
 
 ```
 invest.py              # CLI: flows, --score, --recall, --search-db, --from-db, --from-review
-daily.py               # Daily scan: poll -> algo grade -> AI gate -> digest -> store push
-scripts/               # run-daily.sh + LaunchAgent plist + install-daily-agent.sh
+weekly.py              # Weekly scan: poll -> algo grade -> AI gate -> digest -> store push
 backtest.py            # Point-in-time URA backtest (validates MMR weights)
 backtest_ext.py        # Extended panel: lever measurement, age curve, regimes
 calibrate_forward.py   # Shipped-score vs realized-return calibration (~mid-2027+)
