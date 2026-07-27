@@ -30,6 +30,16 @@ into MMR) alongside the rubric's own-stay lens.
    ```
    Creates `output/run_NNN/raw_analysis.json` with one entry.
 
+   **If the listing is already in the DB** — always true when the daily scan
+   sent you here, and worth checking (`--search-db`) otherwise — gather from the
+   DB instead and skip the scrape entirely:
+   ```bash
+   python invest.py --from-db <listing_id>
+   ```
+   Same run dir and `raw_analysis.json`, no network, and the MMR matches the
+   score the listing already carries. Prefer it in unattended runs: PropertyGuru
+   is behind Cloudflare and a background scrape will usually just fail.
+
 **Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
 actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward
 power; model explains <10% of forward variance, so calibrate confidence.

@@ -116,6 +116,48 @@ contenders + reasons, and run confidence. The arena ranks stats; you certify
 the stats deserve to rank. Each run also writes a timestamped archive
 (`output/arena_<ts>.md`).
 
+## Daily scan (`daily.py`) — auto-poll, algo-grade, AI-triage
+
+The once-a-day loop, fired by a LaunchAgent at login (`bash
+scripts/install-daily-agent.sh`; retries 09:30 / 14:00; `--remove` to
+uninstall). It chains what already existed:
+
+**poll → algo-grade EVERY new/changed listing → gate → AI-analyze only what
+clears the gate → digest → push the good ones to the store.**
+
+The gate is the point: `score_1000` is free, an agent run is not. Knobs live at
+the top of `daily.py` (deliberately **not** `config.py` — that file is hashed
+into `score_version`, and a scan-policy threshold must not restamp the scored
+book's vintage):
+
+| Knob | Default | Why |
+|---|---|---|
+| `MIN_SCORE_FOR_AI` | 650 | the recommended tier; ~p88 of the book |
+| `MAX_AI_RUNS_PER_DAY` | 5 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
+| `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
+| store push | Buy/Strong Buy **and** ≥ medium confidence | the store note is a feed the owner reads, not a log |
+
+Same-day dupes collapse to one run per (condo, bed count), and stale /
+incomplete / unscored records never reach an agent. Every gated-out listing
+carries a `gate_reason` that the digest prints — the gate is never a black box.
+
+```bash
+python daily.py                 # the real thing (HEADED browser — Cloudflare)
+python daily.py --dry-run       # poll + gate + digest, spawn no agents
+python daily.py --no-poll       # grade/analyze what already arrived today
+python daily.py --force         # re-run a day that already succeeded
+```
+
+Outputs: digest `output/daily/<date>.md`, agent transcripts
+`output/daily_runs/`, state `data/daily_state.json`. A run whose **poll failed**
+does not close the day, so the next trigger retries. Verdicts land in
+`evaluations/` like any other flow — that, not the digest, is the durable record.
+
+The agent step gathers with **`invest.py --from-db <id>`**, which builds a run
+dir + `raw_analysis.json` straight from the DB record with **no scraping**
+(cohort stats from the full DB, so the MMR matches what the gate saw). Use it
+by hand whenever PropertyGuru is unreachable but the listing is already in the DB.
+
 ## UI, dashboard, poller
 
 **Listings UI**: `python ui.py` → http://127.0.0.1:8642 — a **viewer over the
@@ -197,7 +239,9 @@ python invest.py --fetch-ura-districts 3,5,14,15
 ## Project structure
 
 ```
-invest.py              # CLI: flows, --score, --recall, --search-db, --from-review
+invest.py              # CLI: flows, --score, --recall, --search-db, --from-db, --from-review
+daily.py               # Daily scan: poll -> algo grade -> AI gate -> digest -> store push
+scripts/               # run-daily.sh + LaunchAgent plist + install-daily-agent.sh
 backtest.py            # Point-in-time URA backtest (validates MMR weights)
 backtest_ext.py        # Extended panel: lever measurement, age curve, regimes
 calibrate_forward.py   # Shipped-score vs realized-return calibration (~mid-2027+)

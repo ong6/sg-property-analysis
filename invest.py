@@ -1043,6 +1043,10 @@ Examples:
     parser.add_argument("--score-db", action="store_true",
                        help="Batch-score every usable listing in the DB (MMR + score_1000), "
                             "write scores back into the DB, and re-export the sheet.")
+    parser.add_argument("--from-db", type=str, metavar="IDS",
+                       help="Gather WITHOUT scraping: build a run dir + raw_analysis.json from "
+                            "listings already in the DB (comma-separated listing ids). Used by "
+                            "the daily scan, and any time PropertyGuru is unreachable.")
     parser.add_argument("--url", type=str,
                        help="PropertyGuru URL: a single listing, a results/list page, or a project page")
     parser.add_argument("--url-max-pages", type=int, default=5,
@@ -1223,6 +1227,64 @@ Examples:
                   f"min={scored_vals[0]} p50={scored_vals[len(scored_vals)//2]} max={scored_vals[-1]}")
         print(f"  Sheet updated: {path}")
         print(f"  MMR history appended: {hist_path}")
+        return
+
+    # --- Gather from the listings DB (no network) — daily-scan / offline flows ---
+    if args.from_db:
+        import listings_db
+        from scoring.full_scorer import FullScorer, build_cohort_stats
+
+        wanted = [k.strip() for k in args.from_db.split(",") if k.strip()]
+        db = listings_db.load_db()
+        store = db["listings"]
+        # Accept either a DB key or a bare listing id (they coincide today, but
+        # don't bet the flow on it).
+        by_id = {str(r.get("id")): k for k, r in store.items() if r.get("id")}
+        records, missing = [], []
+        for w in wanted:
+            key = w if w in store else by_id.get(w)
+            if key is None:
+                missing.append(w)
+                continue
+            records.append(store[key])
+        if missing:
+            print(f"  ⚠ not in DB (skipped): {', '.join(missing)}", file=sys.stderr)
+        usable = [r for r in records if r.get("price") and r.get("sqft") and r.get("psf")]
+        if not usable:
+            print("Error: --from-db matched no scorable listing "
+                  "(need price + sqft + psf).", file=sys.stderr)
+            sys.exit(1)
+
+        # Cohort stats come from the FULL usable DB — same as a --score-db /
+        # poll run — so the raw analysis carries the same MMR the DB (and the
+        # daily gate) already recorded, not a one-listing cohort's number.
+        ura = load_ura_cache()
+        all_usable = [r for r in store.values()
+                      if r.get("price") and r.get("sqft") and r.get("psf")
+                      and r.get("status") != "stale"]
+        scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(all_usable))
+        scored = []
+        for r in usable:
+            try:
+                scored.append(scorer.score(r))
+            except Exception as e:  # noqa: BLE001 — one bad record must not kill the batch
+                print(f"  ⚠ scoring failed for {r.get('id')}: {type(e).__name__}: {e}",
+                      file=sys.stderr)
+        if not scored:
+            print("Error: --from-db scored nothing.", file=sys.stderr)
+            sys.exit(1)
+
+        slug = url_run_slug(usable[0].get("url") or "") if len(usable) == 1 else None
+        run_dir = next_run_dir(slug=slug)
+        raw_path = save_raw_analysis(
+            scored, str(run_dir / "raw_analysis.json"), ura,
+            {"from_db": wanted, "beds": sorted({r["beds"] for r in usable if r.get("beds")})},
+        )
+        print(f"Run directory: {run_dir}", file=sys.stderr)
+        print(f"Raw analysis saved: {raw_path}")
+        print(f"  -> {len(scored)} listing(s) scored from the DB (no scrape)")
+        print(f"  -> Then: python invest.py --from-review {raw_path} "
+              f"--output {run_dir / 'final'}")
         return
 
     # --- Condo arena: pairwise value tournament over the listings DB ---

@@ -22,12 +22,20 @@ output/*.md
 output/*.csv
 output/*.txt
 output/run_*/
+# Daily-scan digests + agent transcripts. Machine-local like every other output/
+# artifact — the durable record of a daily run is the evaluation it writes to
+# evaluations/ (tracked) and the store's daily-finds note.
+output/daily/
+output/daily_runs/
+output/analyze_runs/
 
 # Playwright MCP cache
 .playwright-mcp/
 
 # Poller runtime state (rewritten every cycle, machine-local)
 data/poll_state.json
+# Daily-scan runtime state (which days already ran — machine-local)
+data/daily_state.json
 
 # data/*.csv files are tracked deliberately — they are the data backbone
 # (listings sheet, MMR/arena history, URA cache export, raw URA downloads)
