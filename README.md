@@ -115,6 +115,7 @@ Most-used flags for `python invest.py`, grouped by purpose (`--help` for the ful
 | `--fight` | Condo arena: pairwise tournament over the DB (Elo ranking + champion) |
 | `--raw PATH` / `--from-review PATH` | Write raw analysis JSON for agent review / generate final report from it |
 | **Listings DB** | |
+| `--from-db IDS` | Build a run dir + raw analysis from listings already in the DB — **no scraping** |
 | `--search-db QUERY` / `--list-db` | Search the master sheet by condo name / show sheet stats |
 | `--update-db` | Scrape and refresh the sheet only (skip scoring) |
 | `--export-sheet` / `--no-db` | Re-export the CSV / don't upsert scraped listings |
@@ -129,6 +130,24 @@ Most-used flags for `python invest.py`, grouped by purpose (`--help` for the ful
 | **Output / misc** | |
 | `--top, -n` / `--output, -o` / `--csv` / `--json` | Result count and export paths |
 | `--verbose, -v` / `--no-headless` / `--list-districts` | Score breakdowns / show browser / list districts |
+
+## Daily Scan
+
+`daily.py` is the unattended once-a-day loop: **poll → algo-grade every new and
+price-changed listing → gate → AI-analyze only what clears the gate → digest**.
+The algo grade is free and applied to everything; the AI agent is expensive, so
+it only runs on listings scoring `>= 650` (capped at 5/day, with a 30-day
+re-evaluation cooldown per condo + bed count). Everything filtered out is still
+logged, with the reason.
+
+```bash
+python daily.py                          # the real thing (headed browser)
+python daily.py --dry-run                # poll + gate + digest, no agents
+bash scripts/install-daily-agent.sh      # run it automatically at login (macOS)
+```
+
+Digests land in `output/daily/<date>.md`; verdicts go to `evaluations/` like any
+other flow. Thresholds are at the top of `daily.py`. Full details: `CLAUDE.md`.
 
 ## Configuration
 

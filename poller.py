@@ -341,7 +341,13 @@ def run_poll(
         n_scored, scored_rows = _score_keys(new_keys + changed_keys)
         state["scored"] = n_scored
         scored_rows.sort(key=lambda r: r.get("score_1000") or 0, reverse=True)
-        state["new_listings"] = [r for r in scored_rows if r["id"] in set(new_keys)]
+        new_set, changed_set = set(new_keys), set(changed_keys)
+        state["new_listings"] = [r for r in scored_rows if r["id"] in new_set]
+        # Price-changed listings are surfaced separately (the daily scan treats a
+        # listing that dropped INTO the gate as a candidate, same as a new one).
+        # `old_price` lets a consumer show the drop without re-reading history.
+        state["changed_listings"] = [{**r, "old_price": before.get(r["id"])}
+                                     for r in scored_rows if r["id"] in changed_set]
         if listings:
             # End-of-poll staleness sweep (#3): young listings absent from the
             # newest pages of their own (district, beds) scope accrue misses
