@@ -192,6 +192,90 @@
         "built_year": 2000
       },
       "source": "re-eval under v3.4.1+ priors (2026-06-11 loop iter 9; supersedes 2026-06-09 pre-prior-fix Avoid)"
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,152 sqft 3BR at Regentville (D19 Hougang, 99yr from 1996, 69yr left) scraped at $1.28M / $1,111 psf — an ask that sits BELOW every one of the project's 31 same-size-band URA prints of the last 24 months ($1,146-$1,259 psf for the 1,152 type) while five sibling listings of the identical unit type, from five other agents, sit live at $1.35M-$1.50M. The size is real and deeply traded, so this is not a sqft mis-scrape — but an unverifiable outlier ask is not value. On its own market rather than the district median, the honest read is ~-7% vs 12-month same-size comps if $1.28M is transactable, and ~0% if the true clearing ask is the $1.35M the same unit type is otherwise offered at. Sound OCR fundamentals, spent re-rating, thin carry: Neutral.",
+      "rating_rationale": "The algo's 855 is a verdict on Regentville-vs-D19, not on this ask: re-scoring the identical unit at $1.42M still returns 709, so $140k of price is worth only ~57 points. The score's two largest positives are the two my research discounts. (1) age_value 16.5 comes from -23.7% vs the age-adjusted D19 median, but that median blends Serangoon/Sengkang/Punggol stock sitting on rail; Regentville has no operational MRT (920m to CR9 Serangoon North, U/C to ~2030 — realsmart's own note is 'plan for a bus ride or drive'), and MRT proximity is a measured as-of-T negative (std_B -0.11) while future-infra has no measured forward power. Against its OWN market the discount is ~7%, not 24%. (2) appreciation 10.8 rests on a trailing 7.59%/yr CAGR that is real and not a size-mix artifact (realsmart median PSF $784 in 2021 -> $1,174 in 2026, +8.4%/yr on PSF medians, so mix-robust) — but that IS the 2021-26 OCR bull re-rating old leaseholds, which per the backtest carries ~0 forward power. Buying now is buying after that trade has run, not into it. What genuinely fires: OCR region (realized fwd +3.7%/yr, the best region), very deep liquidity (580 units, 1,393 lifetime txns, 31 same-size prints in 24mo, buyer_pool std_B +0.16), a low $1.28-1.35M quantum into a 67%-HDB-buyer pool, and Rosyth School at 352m — a real family-demand anchor for a 3BR. What holds it down: realsmart REALSCORE 3.7/5 with only 71.5% profitable — 235 of 819 computable exits LOST money on a deep sample, against an average holding period of 9.2yrs that is LONGER than the 5-7yr hold being underwritten; 3.8% gross / 2.3% net yield (realsmart independently estimates 3.7%) is thin carry; lease at ~62-63yrs on exit; and six concurrent listings of this exact unit type means the buyer's own exit is into a crowded queue. Neutral is robust to how the price question resolves: if $1.28M is transactable on an ordinary unit it is a ~7% discount inside a cohort band that itself spans +/-5%, i.e. noise given the model explains <10% of forward variance; if it is a teaser or an inferior (low-floor/unrenovated) unit, the true ask is $1.35M+ and the discount vanishes entirely. Both paths land at or below Neutral, so no Buy — but the fundamentals are too sound for an Avoid.",
+      "red_flags": [
+        "Ask is below ALL 31 same-size-band URA prints of the last 24 months (1,152 sqft type traded $1,146-$1,259 psf); even the low-floor (01-05) prints of this type cleared $1,146-$1,198 — the $1,111 ask undercuts the floor of its own market",
+        "Five sibling listings of the identical 1,152 sqft 3BR are live at $1.35M-$1.50M from five different agents; other portals show this unit type asking $1,495,000-$1,499,999 — this ask is a 5-17% outlier",
+        "The same agent is separately shown with a 3-bed/3-bath 1,152 sqft Regentville unit at $1,390,000 (listed 10 Jun 2026) — the $1.28M could not be verified live (PropertyGuru 403/Cloudflare); treat as unconfirmed until an agent call",
+        "'Price dropped' badge is a dedupe artifact, not a seller cut: the price_history is chained across six different agents' listings sharing unit_group regentville|3|356 (relisted_from 500213924) — no evidence of a motivated seller",
+        "realsmart: only 71.5% profitable — 235 of 819 computable exits sold at a LOSS on a deep sample; REALSCORE 3.7/5 is middling, and average holding is 9.2yrs vs the 5-7yr hold underwritten here",
+        "No operational MRT: 920m/11min to CR9 Serangoon North which is under construction to ~2030; future-infra has no measured forward power, and as-of-T MRT distance is a live negative",
+        "Trailing 7.59%/yr CAGR is a spent 2021-26 OCR re-rating (median PSF $784->$1,174), not project alpha — the ROI table's 7.5%/yr and $1.81M 5yr exit are not a credible base case",
+        "3.8% gross / 2.3% net yield (realsmart est. 3.7%, median rent $4,000) — thin carry against a 26-year-old building's maintenance and sinking-fund risk",
+        "99yr from 24/04/1996: ~69yrs now, ~62-63yrs at a 5-7yr exit — gradual but compounding drag on the next buyer's own hold",
+        "Six concurrent same-type listings today implies a crowded exit queue for exactly the unit being bought",
+        "No stack/floor data on the listing and no researched profile for Regentville — the specific unit's floor, facing and condition are unknown, which is precisely what would explain (or refute) the outlier price"
+      ],
+      "catalysts": [
+        "OCR region — the strongest realized forward region in the 28-district backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Cheap-vs-peers does fire, modestly: ~-7% vs the 12-month median of the exact 1,152 sqft cohort ($1,198 psf, 9 prints) IF the $1.28M ask is transactable",
+        "Very deep liquidity and buyer-pool depth (the one lever that survives clustering, std_B +0.16): 580 units, 1,393 lifetime transactions, 31 same-size prints in 24 months, 67% HDB buyers",
+        "Rosyth School 352m (plus Hougang Pri 507m, Xinmin 584m) — a durable family-demand anchor for a 1,152 sqft 3BR with 3 baths",
+        "Low $1.28-1.35M quantum keeps the exit pool at its broadest — HDB upgraders, with >1K MOPs in town",
+        "CR9 Serangoon North (Cross Island Line) opens ~2030, inside the hold window — dated, but the backtest gives future-infra no measured forward power, so narrative not edge",
+        "Age 26yrs sits inside the 7-30yr forward-return plateau — no age discount is warranted on returns alone"
+      ],
+      "as_of": {
+        "price": 1280000,
+        "psf": 1111.11,
+        "beds": 3,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.59,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.84,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "A 1,152 sqft 3BR at Regentville (D19 Hougang, 99yr from 1996, 69yr left) scraped at $1.28M / $1,111 psf — an ask that sits BELOW every one of the project's 31 same-size-band URA prints of the last 24 months ($1,146-$1,259 psf for the 1,152 type) while five sibling listings of the identical unit type, from five other agents, sit live at $1.35M-$1.50M. The size is real and deeply traded, so this is not a sqft mis-scrape — but an unverifiable outlier ask is not value. On its own market rather than the district median, the honest read is ~-7% vs 12-month same-size comps if $1.28M is transactable, and ~0% if the true clearing ask is the $1.35M the same unit type is otherwise offered at. Sound OCR fundamentals, spent re-rating, thin carry: Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "The algo's 855 is a verdict on Regentville-vs-D19, not on this ask: re-scoring the identical unit at $1.42M still returns 709, so $140k of price is worth only ~57 points. The score's two largest positives are the two my research discounts. (1) age_value 16.5 comes from -23.7% vs the age-adjusted D19 median, but that median blends Serangoon/Sengkang/Punggol stock sitting on rail; Regentville has no operational MRT (920m to CR9 Serangoon North, U/C to ~2030 — realsmart's own note is 'plan for a bus ride or drive'), and MRT proximity is a measured as-of-T negative (std_B -0.11) while future-infra has no measured forward power. Against its OWN market the discount is ~7%, not 24%. (2) appreciation 10.8 rests on a trailing 7.59%/yr CAGR that is real and not a size-mix artifact (realsmart median PSF $784 in 2021 -> $1,174 in 2026, +8.4%/yr on PSF medians, so mix-robust) — but that IS the 2021-26 OCR bull re-rating old leaseholds, which per the backtest carries ~0 forward power. Buying now is buying after that trade has run, not into it. What genuinely fires: OCR region (realized fwd +3.7%/yr, the best region), very deep liquidity (580 units, 1,393 lifetime txns, 31 same-size prints in 24mo, buyer_pool std_B +0.16), a low $1.28-1.35M quantum into a 67%-HDB-buyer pool, and Rosyth School at 352m — a real family-demand anchor for a 3BR. What holds it down: realsmart REALSCORE 3.7/5 with only 71.5% profitable — 235 of 819 computable exits LOST money on a deep sample, against an average holding period of 9.2yrs that is LONGER than the 5-7yr hold being underwritten; 3.8% gross / 2.3% net yield (realsmart independently estimates 3.7%) is thin carry; lease at ~62-63yrs on exit; and six concurrent listings of this exact unit type means the buyer's own exit is into a crowded queue. Neutral is robust to how the price question resolves: if $1.28M is transactable on an ordinary unit it is a ~7% discount inside a cohort band that itself spans +/-5%, i.e. noise given the model explains <10% of forward variance; if it is a teaser or an inferior (low-floor/unrenovated) unit, the true ask is $1.35M+ and the discount vanishes entirely. Both paths land at or below Neutral, so no Buy — but the fundamentals are too sound for an Avoid.",
+        "red_flags": [
+          "Ask is below ALL 31 same-size-band URA prints of the last 24 months (1,152 sqft type traded $1,146-$1,259 psf); even the low-floor (01-05) prints of this type cleared $1,146-$1,198 — the $1,111 ask undercuts the floor of its own market",
+          "Five sibling listings of the identical 1,152 sqft 3BR are live at $1.35M-$1.50M from five different agents; other portals show this unit type asking $1,495,000-$1,499,999 — this ask is a 5-17% outlier",
+          "The same agent is separately shown with a 3-bed/3-bath 1,152 sqft Regentville unit at $1,390,000 (listed 10 Jun 2026) — the $1.28M could not be verified live (PropertyGuru 403/Cloudflare); treat as unconfirmed until an agent call",
+          "'Price dropped' badge is a dedupe artifact, not a seller cut: the price_history is chained across six different agents' listings sharing unit_group regentville|3|356 (relisted_from 500213924) — no evidence of a motivated seller",
+          "realsmart: only 71.5% profitable — 235 of 819 computable exits sold at a LOSS on a deep sample; REALSCORE 3.7/5 is middling, and average holding is 9.2yrs vs the 5-7yr hold underwritten here",
+          "No operational MRT: 920m/11min to CR9 Serangoon North which is under construction to ~2030; future-infra has no measured forward power, and as-of-T MRT distance is a live negative",
+          "Trailing 7.59%/yr CAGR is a spent 2021-26 OCR re-rating (median PSF $784->$1,174), not project alpha — the ROI table's 7.5%/yr and $1.81M 5yr exit are not a credible base case",
+          "3.8% gross / 2.3% net yield (realsmart est. 3.7%, median rent $4,000) — thin carry against a 26-year-old building's maintenance and sinking-fund risk",
+          "99yr from 24/04/1996: ~69yrs now, ~62-63yrs at a 5-7yr exit — gradual but compounding drag on the next buyer's own hold",
+          "Six concurrent same-type listings today implies a crowded exit queue for exactly the unit being bought",
+          "No stack/floor data on the listing and no researched profile for Regentville — the specific unit's floor, facing and condition are unknown, which is precisely what would explain (or refute) the outlier price"
+        ],
+        "catalysts": [
+          "OCR region — the strongest realized forward region in the 28-district backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Cheap-vs-peers does fire, modestly: ~-7% vs the 12-month median of the exact 1,152 sqft cohort ($1,198 psf, 9 prints) IF the $1.28M ask is transactable",
+          "Very deep liquidity and buyer-pool depth (the one lever that survives clustering, std_B +0.16): 580 units, 1,393 lifetime transactions, 31 same-size prints in 24 months, 67% HDB buyers",
+          "Rosyth School 352m (plus Hougang Pri 507m, Xinmin 584m) — a durable family-demand anchor for a 1,152 sqft 3BR with 3 baths",
+          "Low $1.28-1.35M quantum keeps the exit pool at its broadest — HDB upgraders, with >1K MOPs in town",
+          "CR9 Serangoon North (Cross Island Line) opens ~2030, inside the hold window — dated, but the backtest gives future-infra no measured forward power, so narrative not edge",
+          "Age 26yrs sits inside the 7-30yr forward-return plateau — no age discount is warranted on returns alone"
+        ],
+        "rental_assessment": "Solid but thin. realsmart's latest 12 contracts median $4,000/mo, with 3BR contracts of this size band at $3,500-$4,300 — independently confirming the $4,100 model rent (rent_source ura_project_bed, conf 0.95). 50 rental contracts in the past month across the project is genuinely deep tenant demand, helped by Rosyth School and Hougang town amenities. But $4,100 on $1.28M is 3.84% gross / 2.32% net (realsmart's own estimate: 3.7%), which is ordinary carry — and it gets worse, not better, if the true entry is $1.35M+ (3.6% gross). No MRT within walking distance caps the expat/professional tenant segment; this rents to families, at family prices. Note the prior also runs the other way: high gross yield predicts LOWER forward price growth (std_B -0.16), so a mid-3s yield is neutral, not a warning.",
+        "appreciation_assessment": "Underwrite ~4%/yr, not the data's 7.59%. The trailing number is real and mix-robust — realsmart's annual median PSF series runs $752 (2019) -> $784 (2021) -> $1,174 (2026), so this is genuine PSF re-rating, not the shoebox-mix artifact seen elsewhere. But it is the 2021-26 OCR bull revaluing cheap old leaseholds, a regime effect with ~0 measured forward power, and the +56% since 2019 means that trade has largely been run. The forward case rests on the measured levers: OCR region (+3.7%/yr realized), a modest cheap-vs-peers discount, and deep buyer-pool depth — against a live MRT-distance negative and a lease grinding from 69 to ~62yrs across the hold. That nets to roughly the D19/OCR baseline of 4.0-4.2%/yr, which is what I have overridden the rate to. The downside evidence is the sobering part: realsmart records 235 loss-making exits out of 819 here (71.5% profitable, REALSCORE 3.7/5) — this project has demonstrably lost owners money before, most likely 2008-2013 buyers exiting into 2014-2019, and the average profitable hold ran 9.2yrs, longer than the 5-7yr window.",
+        "stack_notes": "Unknown, and that is a material gap. The listing carries no floor, stack, facing or unit number, and Regentville has no researched profile yet (stack_profile: not_researched), so no join is possible — running /research-development would not resolve it either, because there is no stack identifier on the listing to join against. What the prints do show is that Regentville has real floor/format tiering: within the same 1050-1400 size band, the 1,163 sqft type printed $999-$1,067 psf on four occasions and EVERY one was floor 01-05, while the 1,152 sqft type printed $1,146-$1,259 across floors 01-15. So a genuine low-floor discount at this project is worth roughly 5-8%, not the 13-17% gap this ask shows to its live siblings. The most probable physical explanations for a real $1,111 ask are a floor 01-05 unit in original 2000-vintage condition, or a poor facing/blocked outlook — any of which would justify the price rather than represent a bargain. Confirming floor, condition and tenancy is the single highest-value question to put to the agent before this listing could be re-rated upward.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "Regional/district baseline, not a project forecast. Resale-to-resale basis: realsmart annual median PSF (URA resale prints) $784 (2021) -> $1,174 (2026) = +8.4%/yr trailing, corroborating the 7.59% URA 5yr CAGR as real and mix-robust — but explicitly REJECTED as a forward rate, since trailing CAGR/momentum has ~0 marginal forward power once clustered and that re-rating is spent. Override set to the measured forward baselines: realized forward OCR +3.7%/yr (28-district URA panel) and the D19 config baseline 4.2%/yr, split at 4.0%. CR9 Serangoon North (~2030) is a dated in-window catalyst but is NOT credited above baseline, as future-infra scores show no measured forward power.",
+        "realscore": 3.7,
+        "realsmart_pct_profitable": 71.5,
+        "realsmart_annual_return_pct": 4.7
+      },
+      "source": {
+        "run_dir": "output/run_046_500083447",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500083447",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
