@@ -756,8 +756,19 @@ def main() -> int:
 
     # 1. Poll
     if args.no_poll:
-        poll_state = {"ok": True, "skipped": True,
-                      "new_listings": [], "changed_listings": []}
+        # Reuse the LAST poll's own results rather than re-deriving from the DB
+        # — that keeps price-changed listings (which a first_seen scan can't
+        # recover, their first_seen is old) and costs PropertyGuru nothing.
+        poll_state = poller.load_poll_state() or {}
+        if poll_state.get("ok") and poll_state.get("last_run", "")[:10] == day:
+            poll_state = {**poll_state, "skipped": True, "reused": True}
+            print(f"--no-poll: reusing today's poll "
+                  f"({len(poll_state.get('new_listings') or [])} new, "
+                  f"{len(poll_state.get('changed_listings') or [])} changed)",
+                  file=sys.stderr)
+        else:
+            poll_state = {"ok": True, "skipped": True,
+                          "new_listings": [], "changed_listings": []}
     else:
         print("Polling PropertyGuru…", file=sys.stderr)
         poll_state = poller.run_poll(
@@ -775,7 +786,7 @@ def main() -> int:
     # means NEW listings *and* ones that re-priced in the window: a drop INTO
     # the gate is exactly the signal worth catching, and keying only on
     # first_seen would silently discard every one of them.
-    if args.no_poll:
+    if args.no_poll and not poll_state.get("reused"):
         since = (state.get("last_run") or {}).get("date") \
             or (now - timedelta(days=7)).strftime("%Y-%m-%d")
         db = listings_db.load_db()["listings"]
