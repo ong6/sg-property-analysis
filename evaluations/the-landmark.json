@@ -56,6 +56,164 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-landmark-500044891",
         "review_file": "cov_batch_11.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 678 sqft 2BR at The Landmark (D03, single 39-storey tower, TOP 2025) asking $1.579M / $2,329 psf after a 7% cut in 7 weeks ($1.70M -> $1.68M -> $1.579M, relisted 24 Jul). It is the cheapest of ~12 competing 678 sqft asks and sits below every 2026 same-size print in the project ($2,433 / $2,485 / $2,625 / $2,654 psf). The discount is real and artifact-free, but it is compensation for a genuinely weak project record, not alpha on top of a strong one.",
+      "rating_rationale": "The unit is cheap; the project is mediocre; the two roughly cancel. CHEAP IS REAL: 678 sqft is confirmed by four 2026 prints at exactly that size, psf_cohort_txns=12, no trust flags fire, and the -13.7% vs URA median / -15.6% age-adjusted is well inside the -25% artifact knee. Against the honest comp -- the project's own 2026 same-size prints -- the discount is ~9%, and the stepped price history ($1.70M->$1.579M over 7 weeks, relisted) reads as a motivated seller rather than bait. Cheap-vs-peers is the most robust forward signal we have, and this is the one Landmark 2BR to buy if buying at all. BUT THE PROJECT EARNS THE DISCOUNT: REALSCORE 1.7/5 (vs One Pearl Bank 2.2 and River Place 3.5 in the same district), 1.8%/yr avg annualized profit, and 2 of only 15 recorded exits sold at a LOSS -- during the 2021-26 bull regime. Project median PSF is ~6% BELOW its 2023-24 peak. The 2020 launch was richly priced (91% sold at $2,136 psf) and the premium is still being amortized -- which is exactly the backtested 0-5yr cohort penalty (the youngest cohort is the WORST forward performer), while the algo instead credits youth as age_value +11.7. Add a ~7% supply overhang (~29 live listings / 396 units, ~14 competing 2BRs) which is both why this seller had to cut and what I would face on exit in 2031-33. THE UNRESOLVED FACT CAPS CONFIDENCE: no profile exists and the listing carries no floor/facing. In a single 39-storey tower beside the CTE, floor IS the price -- the $2,433-$2,654 spread in the 2026 prints is the floor premium. If this is a mid/high floor away from the expressway, the discount is genuine alpha and this is a Buy; if it is a low-floor CTE-facing unit, $2,329 is simply the correct price for the worst unit in the tower, and one earns nothing by buying it. Unresolvable from the data available, so: Neutral. ACTIONABLE LINE: verify floor and facing, then at <= ~$1.50M ($2,210 psf) on a confirmed mid/high floor off the expressway this converts to a Buy; a low floor facing the CTE is an Avoid at any price near this ask. All-cash ROI of 3.4-3.6%/yr (downside 1.9-2.2%) against $52k entry costs does not pay for the uncertainty at $1.579M.",
+      "red_flags": [
+        "REALSCORE 1.7/5 -- low national profitability rank; D03 peers One Pearl Bank (2.2) and River Place (3.5) both rank higher",
+        "2 of 15 recorded exits sold at a LOSS despite the 2021-26 bull regime; avg annualized profit only 1.8%/yr over a 4.5yr avg hold",
+        "Project median PSF ~6% below its 2023-24 peak ($2,652 in 2023 -> $2,485 in 2026); rich 2020 launch premium still amortizing",
+        "Backtested 0-5yr age cohort is the WORST forward performer -- project is 1yr old; algo's age_value +11.7 credits youth the measured data penalizes",
+        "Supply overhang: ~29 live listings across 396 units (~7%), incl. ~14 competing 2BRs (12 at the same 678 sqft) -- crowded exit in 5-7yrs",
+        "Floor and facing UNKNOWN -- no profile, none in listing. In a single 39-storey tower the observed 2026 same-size spread ($2,433-$2,654) is the floor premium; the ask sits below the entire range",
+        "CTE runs parallel below Chin Swee Road -- confirmed expressway noise exposure on affected facings",
+        "Trailing appreciation weak (resale-only 2.82%/yr); gross yield 3.7% / net 2.38% is unremarkable carry, not a yield play",
+        "Seller already cut 7% in 7 weeks and relisted -- consistent with a slow, over-supplied resale market at this project"
+      ],
+      "catalysts": [
+        "Cheapest of ~12 competing 678 sqft asks by ~$50k, and below every 2026 same-size print in the project (~9% under the same-size median)",
+        "-15.6% vs age-adjusted D03 peers -- cheap-vs-peers is the strongest measured forward signal, and it is artifact-free here (cohort n=12, no trust flags)",
+        "Motivated seller with a credible stepped price history -- further negotiation room toward the ~$1.50M line",
+        "Genuine transit depth: Chinatown 400m (NEL+DTL), Outram Park ~456m (NEL+EWL+TEL triple interchange), Havelock 639m (TEL)",
+        "Very liquid rental market -- 177 rental contracts in a single month; deep buyer pool (277 URA txns, 396-unit development)",
+        "Fresh 2025 completion with 93-95yrs lease -- no lease-decay drag over a 5-7yr hold; Pearl's Hill City Park adjacent, CBD/SGH walkable"
+      ],
+      "as_of": {
+        "price": 1578888,
+        "psf": 2328.74,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.82,
+        "appreciation_source": "ura_resale_only",
+        "gross_yield_pct": 3.72,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 95
+      },
+      "agent_evaluation": {
+        "summary": "A 678 sqft 2BR at The Landmark (D03, single 39-storey tower, TOP 2025) asking $1.579M / $2,329 psf after a 7% cut in 7 weeks ($1.70M -> $1.68M -> $1.579M, relisted 24 Jul). It is the cheapest of ~12 competing 678 sqft asks and sits below every 2026 same-size print in the project ($2,433 / $2,485 / $2,625 / $2,654 psf). The discount is real and artifact-free, but it is compensation for a genuinely weak project record, not alpha on top of a strong one.",
+        "rating": "Neutral",
+        "rating_rationale": "The unit is cheap; the project is mediocre; the two roughly cancel. CHEAP IS REAL: 678 sqft is confirmed by four 2026 prints at exactly that size, psf_cohort_txns=12, no trust flags fire, and the -13.7% vs URA median / -15.6% age-adjusted is well inside the -25% artifact knee. Against the honest comp -- the project's own 2026 same-size prints -- the discount is ~9%, and the stepped price history ($1.70M->$1.579M over 7 weeks, relisted) reads as a motivated seller rather than bait. Cheap-vs-peers is the most robust forward signal we have, and this is the one Landmark 2BR to buy if buying at all. BUT THE PROJECT EARNS THE DISCOUNT: REALSCORE 1.7/5 (vs One Pearl Bank 2.2 and River Place 3.5 in the same district), 1.8%/yr avg annualized profit, and 2 of only 15 recorded exits sold at a LOSS -- during the 2021-26 bull regime. Project median PSF is ~6% BELOW its 2023-24 peak. The 2020 launch was richly priced (91% sold at $2,136 psf) and the premium is still being amortized -- which is exactly the backtested 0-5yr cohort penalty (the youngest cohort is the WORST forward performer), while the algo instead credits youth as age_value +11.7. Add a ~7% supply overhang (~29 live listings / 396 units, ~14 competing 2BRs) which is both why this seller had to cut and what I would face on exit in 2031-33. THE UNRESOLVED FACT CAPS CONFIDENCE: no profile exists and the listing carries no floor/facing. In a single 39-storey tower beside the CTE, floor IS the price -- the $2,433-$2,654 spread in the 2026 prints is the floor premium. If this is a mid/high floor away from the expressway, the discount is genuine alpha and this is a Buy; if it is a low-floor CTE-facing unit, $2,329 is simply the correct price for the worst unit in the tower, and one earns nothing by buying it. Unresolvable from the data available, so: Neutral. ACTIONABLE LINE: verify floor and facing, then at <= ~$1.50M ($2,210 psf) on a confirmed mid/high floor off the expressway this converts to a Buy; a low floor facing the CTE is an Avoid at any price near this ask. All-cash ROI of 3.4-3.6%/yr (downside 1.9-2.2%) against $52k entry costs does not pay for the uncertainty at $1.579M.",
+        "red_flags": [
+          "REALSCORE 1.7/5 -- low national profitability rank; D03 peers One Pearl Bank (2.2) and River Place (3.5) both rank higher",
+          "2 of 15 recorded exits sold at a LOSS despite the 2021-26 bull regime; avg annualized profit only 1.8%/yr over a 4.5yr avg hold",
+          "Project median PSF ~6% below its 2023-24 peak ($2,652 in 2023 -> $2,485 in 2026); rich 2020 launch premium still amortizing",
+          "Backtested 0-5yr age cohort is the WORST forward performer -- project is 1yr old; algo's age_value +11.7 credits youth the measured data penalizes",
+          "Supply overhang: ~29 live listings across 396 units (~7%), incl. ~14 competing 2BRs (12 at the same 678 sqft) -- crowded exit in 5-7yrs",
+          "Floor and facing UNKNOWN -- no profile, none in listing. In a single 39-storey tower the observed 2026 same-size spread ($2,433-$2,654) is the floor premium; the ask sits below the entire range",
+          "CTE runs parallel below Chin Swee Road -- confirmed expressway noise exposure on affected facings",
+          "Trailing appreciation weak (resale-only 2.82%/yr); gross yield 3.7% / net 2.38% is unremarkable carry, not a yield play",
+          "Seller already cut 7% in 7 weeks and relisted -- consistent with a slow, over-supplied resale market at this project"
+        ],
+        "catalysts": [
+          "Cheapest of ~12 competing 678 sqft asks by ~$50k, and below every 2026 same-size print in the project (~9% under the same-size median)",
+          "-15.6% vs age-adjusted D03 peers -- cheap-vs-peers is the strongest measured forward signal, and it is artifact-free here (cohort n=12, no trust flags)",
+          "Motivated seller with a credible stepped price history -- further negotiation room toward the ~$1.50M line",
+          "Genuine transit depth: Chinatown 400m (NEL+DTL), Outram Park ~456m (NEL+EWL+TEL triple interchange), Havelock 639m (TEL)",
+          "Very liquid rental market -- 177 rental contracts in a single month; deep buyer pool (277 URA txns, 396-unit development)",
+          "Fresh 2025 completion with 93-95yrs lease -- no lease-decay drag over a 5-7yr hold; Pearl's Hill City Park adjacent, CBD/SGH walkable"
+        ],
+        "rental_assessment": "Adequate carry, not a thesis. DB estimate $4,900/mo (ura_project_bed, confidence 0.95) gives 3.72% gross / 2.38% net; realsmart independently reports 3.6% est. yield at $7.54 avg psf rental, with recent 600-800 sqft 2BR contracts at $4,500-$5,000. The two sources agree, so the rent figure is trustworthy -- no yield artifact. Rental demand is the project's genuine strength: 177 contracts in one month off 396 units means a deep, fast-letting CBD-worker and SGH/medical tenant pool, so vacancy risk is low. But 3.7% gross is ordinary for RCR and the measured prior counts yield as carry only -- indeed high gross yield predicts LOWER forward price growth (std_beta -0.16). Nothing here offsets the capital-side weakness.",
+        "appreciation_assessment": "The weakest part of the case, and I am not overriding the rate upward. Trailing resale-only 2.82%/yr sits below the RCR baseline (3.7%), and realsmart's realized 1.8%/yr annualized profit over a 4.5yr avg hold corroborates it from a different direction. Per current priors I do NOT extrapolate trailing CAGR forward -- it has ~0 forward power -- but the REASON it is weak does carry forward: a richly-priced 2020 launch ($2,136 psf, 91% sold at launch) whose premium is still being digested, with project median PSF still ~6% under the 2023-24 peak. That is precisely the backtested 0-5yr cohort effect, which is a measured negative rather than a story. Working in the other direction: RCR realized forward +3.1%/yr (mid-tier, above CCR's +1.9%), and buying ~9-15% below peers is the one signal that does survive clustering. Net: I expect roughly baseline-to-slightly-below RCR performance, with the discount recovering some of what the project's own trajectory gives back. No appreciation_rate_override -- I have no resale-to-resale evidence justifying a different number than the DB's 2.82%, and inventing one from portal headlines is the error the rubric warns against.",
+        "stack_notes": "NO PROFILE EXISTS for The Landmark (stack_profile.status = not_researched), and this is the decision-critical gap rather than a footnote. Structure researched independently: a SINGLE 39-storey tower, 396 units, on an irregular parcel at 173 Chin Swee Road. Because there is only one block, there is no good-block/bad-block axis -- floor and facing are the entire intra-project price structure, which is why the four 2026 prints at the identical 678 sqft span $2,433-$2,654 psf (+9%). High floors take the city skyline and Pearl's Hill City Park outlook; low floors take surrounding HDB outlook and, on the affected facings, confirmed CTE noise (the expressway runs parallel below Chin Swee Road and merges at grade at the Outram Road junction). The subject asks BELOW that entire observed range. Two readings fit equally well on the available data -- a mid/high floor being discounted by a motivated seller (in which case the discount is real alpha), or a low CTE-facing floor priced correctly for what it is (in which case there is no edge at all). Nothing in the listing, the DB record or the URA cohort separates them. Resolving floor + facing is the single highest-value next step and would move this call in either direction; /research-development would build the reusable profile, but the unit's own floor still needs confirming with the agent.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 1.7,
+        "realsmart_pct_profitable": 86.7,
+        "realsmart_annual_return_pct": 1.8
+      },
+      "source": {
+        "run_dir": "output/run_038_500188240",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-landmark-500188240",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 678 sqft 2BR at The Landmark (Chin Swee Rd, D03/RCR, completed 2025, 93yr lease left) asking $1,578,888 / $2,329 psf — the cheapest of ~12 live 2BR asks in the project and ~8.9% below its own size-matched URA prints (four 678 sqft sub-sales Feb-Jun 2026 at $1.65-1.80M, median $1.73M / $2,555 psf). The location is genuinely strong (Chinatown NE4/DT19 ~400m linear, Outram Park EW16/NE3/TE17 ~456m, Havelock TE16 ~639m; 396 units, 50+ deals/yr, deep exit pool). But the project itself has been a demonstrably poor performer: URA 3yr appreciation -6.3%, blended 1.88%/yr, and realsmart REALSCORE 1.7/5 with 2 of 15 exits at a loss and 1.8% avg annualized profit. The discount is real but modest, and the floor/facing behind the cheapest ask in the stack could not be verified.",
+      "rating_rationale": "Two honest reads collide and roughly cancel. FOR: the ask is ~8.9% below the project's own same-size 24-month prints (n=6 band, and four actual 678 sqft sub-sales Feb-Jun 2026 corroborate the same -8.9%) with no trust flag fired — cheap-vs-peers is the strongest forward signal we measure; four MRT lines within ~700m; 93yr lease; low $1.58M quantum in a 396-unit, high-turnover project; and $2,329 psf sits ~24% under Zyon Grand's $3,050 launch ASP ~1km away, which is re-anchoring the catchment upward. AGAINST: the algo's headline value edge is roughly half-real — the -13.7% vs URA median and -15.6% vs age-adjusted district peers are inflated by the 2023-24 developer band ($2,652-2,858 psf) that no longer clears; against live 2026 prints the discount is -8.9%, so Valuation 86 and score_1000 755 (both driven mainly by psf_value +7.3 / age_value +11.7) are reading a stale comp. The project's realized record is weak from two independent sources (URA 3yr -6.3%, annualized 1.88%; realsmart REALSCORE 1.7 — below both D03 comparables One Pearl Bank 2.2 and River Place 3.5 — on 13 profitable / 2 unprofitable, 1.8%/yr avg profit, only 1 of 15 exits above 6%). It sits in the 0-5yr post-launch cohort our own backtest flags as the worst forward performer, still amortizing a rich 2020 launch. Yield is thin (3.4-3.7% gross, ~2.4% net) into a landlord-saturated project (177 rental contracts against 396 units) with Zyon Grand's 706 units TOP-ing inside the hold window. Decisively: this is the cheapest ask among ~12 live 2BRs, twice cut (-7.1% in 7 weeks) and relisted, and PropertyGuru is Cloudflare-blocked so floor, stack and facing are unverifiable — that is exactly the profile where a discount is the market correctly pricing a low-floor or blocked-outlook unit rather than an entry edge. Not an Avoid: the sub-print pricing and the transit/lease/liquidity base are real. Not a Buy: nothing here is decisive enough to overcome a project with negative 3yr appreciation, and a model that explains <10% of forward variance does not make 755 evidence. Flips to Buy on a verified mid/high floor with unblocked Pearl's Hill park outlook; flips to Avoid on a confirmed low floor or Chin Swee Rd / aircon-ledge facing without a further ~5% cut.",
+      "red_flags": [
+        "Project 3yr URA appreciation is NEGATIVE (-6.3%); blended annualized 1.88%/yr — the ROI model's 2.82% (resale-only, thin 13-txn basis) is the optimistic end of the credible band, so the projected 3.4-3.6% annualized ROI is flattering",
+        "realsmart REALSCORE 1.7/5 on 15 exits — 13 profitable / 2 unprofitable, 1.8% avg annualized profit, only 1 exit above 6%; ranks below both D03 comparables (One Pearl Bank 2.2, River Place 3.5). A LOW score on a real transaction set is the meaningful direction",
+        "Headline value edge is roughly half-real: -13.7% vs URA median and -15.6% vs age-adjusted district peers are inflated by the 2023-24 developer band ($2,652-2,858 psf) that no longer clears; against live 2026 same-size prints the discount is -8.9%",
+        "Floor, stack and facing UNVERIFIABLE — PropertyGuru blocked at every fetch rung (403 Cloudflare) and no profiles/ entry exists for The Landmark; the cheapest ask among ~12 live 2BRs is where a low-floor / blocked-outlook artifact would hide",
+        "Twice price-cut and relisted: $1.70M (7 Jun) -> $1.68M -> $1.579M (28 Jul), -7.1% in 7 weeks, relisted from listing 500152756 which is still live at $1.68M — the unit is not clearing even after the cuts",
+        "0-5yr post-launch cohort — the worst forward-return band in our own backtest; 91% sold at launch in 2020 and the project is still amortizing that premium (2024 median $2,858 psf -> 2026 $2,485)",
+        "Thin yield into a saturated rental stack: 3.42-3.72% gross / ~2.38% net; 177 rental contracts against 396 units means most owners are competing landlords with the identical 678 sqft layout",
+        "Zyon Grand (706 units, $3,050 psf ASP, ~1km at Havelock) plus the further Zion Road parcel add competing rental and resale supply that TOPs inside a 5-7yr hold",
+        "Stacked Homes review calls the 678 sqft 2BR layout tight — 4-seat dining, minimal balcony, 8 sqm common bedroom; low floors face 1970s-80s surrounds with obstructed sightlines"
+      ],
+      "catalysts": [
+        "Ask is ~8.9% below the project's own size-matched 24-month prints and ~4.3% below the cheapest of four 678 sqft sub-sales Feb-Jun 2026 ($1.65-1.80M) — the cleanest comp available, and no trust flag fired",
+        "Four MRT lines inside ~700m: Chinatown (NE4/DT19) ~400m, Outram Park (EW16/NE3/TE17) ~456m, Havelock (TE16) ~639m — genuine CBD-fringe transit depth",
+        "Zyon Grand's $3,050 psf launch ASP ~1km away re-anchors the catchment ~24% above this ask; cheap standing stock in the same catchment usually narrows that gap",
+        "Deep, liquid exit pool: 396 units, 411 total transactions, 50+ deals in the past year, buyer_pool_depth 'deep' — a signal that survives clustering in the backtest",
+        "93 years of lease remaining — no decay drag anywhere inside a 5-7yr hold",
+        "Low $1.58M quantum for a new 2BR in RCR city-fringe; RCR realized forward +3.1%/yr sits mid-tier, well above CCR",
+        "Pearl's Hill City Park frontage and a private road shared only with Hotel Re! — scarce greenery and low through-traffic for a CBD-fringe site"
+      ],
+      "as_of": {
+        "price": 1578888,
+        "psf": 2328.74,
+        "beds": 2,
+        "sqft": 678.0
+      },
+      "key_facts": {
+        "appreciation_pct": 2.82,
+        "appreciation_source": "ura_resale_only",
+        "gross_yield_pct": 3.72,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 95
+      },
+      "agent_evaluation": {
+        "summary": "A 678 sqft 2BR at The Landmark (Chin Swee Rd, D03/RCR, completed 2025, 93yr lease left) asking $1,578,888 / $2,329 psf — the cheapest of ~12 live 2BR asks in the project and ~8.9% below its own size-matched URA prints (four 678 sqft sub-sales Feb-Jun 2026 at $1.65-1.80M, median $1.73M / $2,555 psf). The location is genuinely strong (Chinatown NE4/DT19 ~400m linear, Outram Park EW16/NE3/TE17 ~456m, Havelock TE16 ~639m; 396 units, 50+ deals/yr, deep exit pool). But the project itself has been a demonstrably poor performer: URA 3yr appreciation -6.3%, blended 1.88%/yr, and realsmart REALSCORE 1.7/5 with 2 of 15 exits at a loss and 1.8% avg annualized profit. The discount is real but modest, and the floor/facing behind the cheapest ask in the stack could not be verified.",
+        "rating": "Neutral",
+        "rating_rationale": "Two honest reads collide and roughly cancel. FOR: the ask is ~8.9% below the project's own same-size 24-month prints (n=6 band, and four actual 678 sqft sub-sales Feb-Jun 2026 corroborate the same -8.9%) with no trust flag fired — cheap-vs-peers is the strongest forward signal we measure; four MRT lines within ~700m; 93yr lease; low $1.58M quantum in a 396-unit, high-turnover project; and $2,329 psf sits ~24% under Zyon Grand's $3,050 launch ASP ~1km away, which is re-anchoring the catchment upward. AGAINST: the algo's headline value edge is roughly half-real — the -13.7% vs URA median and -15.6% vs age-adjusted district peers are inflated by the 2023-24 developer band ($2,652-2,858 psf) that no longer clears; against live 2026 prints the discount is -8.9%, so Valuation 86 and score_1000 755 (both driven mainly by psf_value +7.3 / age_value +11.7) are reading a stale comp. The project's realized record is weak from two independent sources (URA 3yr -6.3%, annualized 1.88%; realsmart REALSCORE 1.7 — below both D03 comparables One Pearl Bank 2.2 and River Place 3.5 — on 13 profitable / 2 unprofitable, 1.8%/yr avg profit, only 1 of 15 exits above 6%). It sits in the 0-5yr post-launch cohort our own backtest flags as the worst forward performer, still amortizing a rich 2020 launch. Yield is thin (3.4-3.7% gross, ~2.4% net) into a landlord-saturated project (177 rental contracts against 396 units) with Zyon Grand's 706 units TOP-ing inside the hold window. Decisively: this is the cheapest ask among ~12 live 2BRs, twice cut (-7.1% in 7 weeks) and relisted, and PropertyGuru is Cloudflare-blocked so floor, stack and facing are unverifiable — that is exactly the profile where a discount is the market correctly pricing a low-floor or blocked-outlook unit rather than an entry edge. Not an Avoid: the sub-print pricing and the transit/lease/liquidity base are real. Not a Buy: nothing here is decisive enough to overcome a project with negative 3yr appreciation, and a model that explains <10% of forward variance does not make 755 evidence. Flips to Buy on a verified mid/high floor with unblocked Pearl's Hill park outlook; flips to Avoid on a confirmed low floor or Chin Swee Rd / aircon-ledge facing without a further ~5% cut.",
+        "red_flags": [
+          "Project 3yr URA appreciation is NEGATIVE (-6.3%); blended annualized 1.88%/yr — the ROI model's 2.82% (resale-only, thin 13-txn basis) is the optimistic end of the credible band, so the projected 3.4-3.6% annualized ROI is flattering",
+          "realsmart REALSCORE 1.7/5 on 15 exits — 13 profitable / 2 unprofitable, 1.8% avg annualized profit, only 1 exit above 6%; ranks below both D03 comparables (One Pearl Bank 2.2, River Place 3.5). A LOW score on a real transaction set is the meaningful direction",
+          "Headline value edge is roughly half-real: -13.7% vs URA median and -15.6% vs age-adjusted district peers are inflated by the 2023-24 developer band ($2,652-2,858 psf) that no longer clears; against live 2026 same-size prints the discount is -8.9%",
+          "Floor, stack and facing UNVERIFIABLE — PropertyGuru blocked at every fetch rung (403 Cloudflare) and no profiles/ entry exists for The Landmark; the cheapest ask among ~12 live 2BRs is where a low-floor / blocked-outlook artifact would hide",
+          "Twice price-cut and relisted: $1.70M (7 Jun) -> $1.68M -> $1.579M (28 Jul), -7.1% in 7 weeks, relisted from listing 500152756 which is still live at $1.68M — the unit is not clearing even after the cuts",
+          "0-5yr post-launch cohort — the worst forward-return band in our own backtest; 91% sold at launch in 2020 and the project is still amortizing that premium (2024 median $2,858 psf -> 2026 $2,485)",
+          "Thin yield into a saturated rental stack: 3.42-3.72% gross / ~2.38% net; 177 rental contracts against 396 units means most owners are competing landlords with the identical 678 sqft layout",
+          "Zyon Grand (706 units, $3,050 psf ASP, ~1km at Havelock) plus the further Zion Road parcel add competing rental and resale supply that TOPs inside a 5-7yr hold",
+          "Stacked Homes review calls the 678 sqft 2BR layout tight — 4-seat dining, minimal balcony, 8 sqm common bedroom; low floors face 1970s-80s surrounds with obstructed sightlines"
+        ],
+        "catalysts": [
+          "Ask is ~8.9% below the project's own size-matched 24-month prints and ~4.3% below the cheapest of four 678 sqft sub-sales Feb-Jun 2026 ($1.65-1.80M) — the cleanest comp available, and no trust flag fired",
+          "Four MRT lines inside ~700m: Chinatown (NE4/DT19) ~400m, Outram Park (EW16/NE3/TE17) ~456m, Havelock (TE16) ~639m — genuine CBD-fringe transit depth",
+          "Zyon Grand's $3,050 psf launch ASP ~1km away re-anchors the catchment ~24% above this ask; cheap standing stock in the same catchment usually narrows that gap",
+          "Deep, liquid exit pool: 396 units, 411 total transactions, 50+ deals in the past year, buyer_pool_depth 'deep' — a signal that survives clustering in the backtest",
+          "93 years of lease remaining — no decay drag anywhere inside a 5-7yr hold",
+          "Low $1.58M quantum for a new 2BR in RCR city-fringe; RCR realized forward +3.1%/yr sits mid-tier, well above CCR",
+          "Pearl's Hill City Park frontage and a private road shared only with Hotel Re! — scarce greenery and low through-traffic for a CBD-fringe site"
+        ],
+        "rental_assessment": "Adequate but unexciting, and structurally crowded. Realsmart's June 2026 contracts put 2BR at $4,500-5,000 ($4,600 for a 700-800 sqft, $4,500-5,000 for 600-700 sqft), so ~$4,600-4,700 is the honest number for this 678 sqft unit — slightly below the $4,900 the model assumed. That is 3.42-3.57% gross and ~2.4% net after costs, versus realsmart's own 3.6% project estimate. Tenant demand itself is sound: CBD/SGH/Outram employment on the doorstep with four lines within walking distance. The problem is supply, not demand — 177 active rental contracts against 396 units means this is a majority-investor project where most competitors are letting the identical 678 sqft layout, which caps pricing power; Zyon Grand's 706 units at Havelock land in the same catchment inside the hold window. Per our own prior, yield here is carry, not a growth signal.",
+        "appreciation_assessment": "Weak-to-modest, and the model's input is the optimistic end. The project's URA record is 1yr +8.5%, 3yr -6.3%, 5yr +9.8% total (1.88%/yr blended); the resale-only 2.82%/yr that drives the ROI projections rests on just 13 resale transactions and is new-launch-bias-flagged. Realsmart corroborates independently at 1.8% avg annualized profit over a 4.5yr avg hold, with 2 of 15 exits in the red. Annual medians tell the story: 2020 launch $2,136 -> 2023 $2,652 -> 2024 $2,858 -> 2026 $2,485, i.e. ~13% off the 2024 developer peak. The constructive read is that the correction has already happened and 2026 prints have been stable in a $2,433-2,654 band since February with no downtrend; the cautious read is that a project which launched rich is still finding its level, and buying 8.9% under a band that is itself 13% under the last peak is not automatically value. I have left appreciation_rate_override_pct null — two independent resale-basis sources point to ~1.8-2.3%/yr rather than 2.82%, but I have no dated catalyst to anchor an override, so the honest position is to keep the data rate and flag that the displayed ROI (3.4-3.6% annualized) sits at the top of the credible range. Directionally: expect RCR-typical at best, sub-RCR if the launch premium keeps unwinding.",
+        "stack_notes": "UNVERIFIED — treat as the main open risk. No profiles/ entry exists for The Landmark (stack_profile status: not_researched), and the listing page could not be read: PropertyGuru returned 403 at every escalation rung (plain, tls, patchright, nodriver, headed), so floor, stack and facing are unknown. What is inferable: at $2,329 psf this is the cheapest of roughly twelve live 2BR asks in the project (which run to $2,935 psf), it has been cut twice in seven weeks and relisted, and the project's own district-FE floor factors span 0.947 (low) to 1.056 (high) — a ~11% low-to-high spread that on its own accounts for most of the 8.9% discount. Stacked Homes notes low floors face 1970s-80s surrounds with obstructed sightlines, while the upper floors carry the panoramic Pearl's Hill park and city views the project is sold on; it also flags the 1BR aircon ledge sitting beside the balcony. The plausible explanations are a low floor, a blocked or road-facing outlook toward Chin Swee Road, or a motivated sub-sale seller — and only the third is an edge. Verify the storey and facing before any offer: a mid/high floor with unblocked park outlook makes this a Buy at this price, a low floor with a compromised outlook makes the discount fair value rather than a bargain.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 1.7,
+        "realsmart_pct_profitable": 86.7,
+        "realsmart_annual_return_pct": 1.8
+      },
+      "source": {
+        "run_dir": "output/run_039_500188240",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-landmark-500188240",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
