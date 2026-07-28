@@ -122,6 +122,26 @@ STORE_SCAN_NOTE_PATH = os.environ.get(
 
 _RATING_ICON = {"strong buy": "🟢", "buy": "🟢", "neutral": "🟡", "avoid": "🔴"}
 
+# realsmart.sg REALSCORE lookup. The PUBLIC /p/<slug> page carries it and needs
+# no login or browser (the /map SPA is the one that does) — so the agent reads it
+# with the store's plain fetcher. One page per shortlisted project, <=8 a week:
+# realsmart's ToS is personal-use, so this stays a research lookup and must never
+# become a per-listing pipeline feed.
+WEB_EXTRACT_FETCH = os.path.join(
+    _STORE, ".claude", "skills", "web-extract", "scripts", "fetch.py")
+
+
+def realsmart_url(project_name: str | None) -> str:
+    """Best-guess realsmart project URL from a project name.
+
+    Their slugs are lowercase, alphanumeric, hyphen-joined ('JadeScape' ->
+    'jadescape', 'The Continuum' -> 'the-continuum'). A guess, not a lookup —
+    the agent is told to verify and to leave the fields null rather than invent
+    a number if the slug 404s.
+    """
+    slug = re.sub(r"[^a-z0-9]+", "-", (project_name or "").lower()).strip("-")
+    return f"https://realsmart.sg/p/{slug}"
+
 
 # --------------------------------------------------------------------------- #
 # State
@@ -201,12 +221,74 @@ def _blocked_by_cooldown(index: dict, slug: str, beds) -> str | None:
     return index.get((slug, beds)) or index.get((slug, "*"))
 
 
+# PropertyGuru's payload does not always carry a project name; when it doesn't,
+# the scraper falls back to the listing TITLE — which is the agent's marketing
+# headline ("Cheapest💎D03💎Best Value💎Freehold💎Duplex Penthouse💎"). ~15% of
+# distinct names in the DB are these. They must never reach an agent: the URA
+# comps, realsmart lookup, eval-memory slug and cooldown key are ALL keyed on
+# project name, so the run researches nothing and permanently pollutes
+# git-tracked memory with a junk slug.
+_MARKETING_RX = re.compile(
+    r"\b(cheapest|cheap|best\s*value|best\s*buy|must\s*sell|don'?t\s*miss|urgent|"
+    r"rare(\s*find)?|below\s*valuation|undervalued?|steal|doorstep|key\s*collection|"
+    r"walk(ing)?\s*to|near\s*mrt|min(s)?\s*to|\d\s*km|1km|rental\s*yield|high\s*floor|"
+    r"brand\s*new|freehold|renovated|unblocked|bedder|bdrm|psf|amenities|"
+    r"price[d]?\s*to\s*sell|for\s*sale|value[\s.-]*buy|super\s|top\s*soon)\b",
+    re.I)
+_EMOJI_RX = re.compile("[\U0001F000-\U0001FAFF☀-➿️⭐]")
+
+
+def looks_like_marketing_title(name: str, known_projects: set | None = None) -> bool:
+    """True when `name` is a listing headline rather than a development name.
+
+    Deliberately two-sided. The heuristics alone would risk demoting a real
+    development with a loud name, so an exact match against a known URA project
+    RESCUES any name — the government's own project list outranks any guess we
+    make here. Conversely a name with no URA match is not condemned on that
+    basis alone (genuine new launches have no prints yet); it needs to actually
+    read as marketing copy.
+    """
+    n = (name or "").strip()
+    if not n:
+        return True
+    if known_projects and n.lower() in known_projects:
+        return False
+    return bool(_EMOJI_RX.search(n)) or "!" in n or len(n) > 45 \
+        or bool(_MARKETING_RX.search(n))
+
+
+def _repriced_since(rec: dict, since: str) -> bool:
+    """Did this listing record a price change on/after `since`?
+
+    Only counts as a re-price if there is more than one price_history entry —
+    the first is the listing's original ask, not a change.
+    """
+    hist = rec.get("price_history") or []
+    if not isinstance(hist, list) or len(hist) < 2:
+        return False
+    for entry in hist[1:]:
+        if isinstance(entry, dict) and str(entry.get("date") or "") >= since:
+            return True
+    return False
+
+
+def _known_projects() -> set:
+    """Lowercased URA project names — the rescue list. Never raises."""
+    try:
+        with open(os.path.join(DATA_DIR, "ura_cache.json")) as f:
+            data = json.load(f)
+        return {str(k).lower() for k in (data.get("projects") or data).keys()}
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return set()
+
+
 def select_candidates(
     rows: list[dict],
     db_listings: dict,
     cooldown_index: dict | None = None,
     min_score: int = MIN_SCORE_FOR_AI,
     max_ai: int = MAX_AI_RUNS_PER_SCAN,
+    known_projects: set | None = None,
 ) -> tuple[list[dict], list[dict]]:
     """Split the scan's new/changed listings into (shortlist, rejected).
 
@@ -246,6 +328,10 @@ def select_candidates(
             cand["gate_reason"] = "not scored"
         elif score < min_score:
             cand["gate_reason"] = f"below gate ({score} < {min_score})"
+        elif looks_like_marketing_title(name, known_projects):
+            # Not a judgement on the unit — we simply don't know which
+            # development it is, so there is nothing to research.
+            cand["gate_reason"] = "no usable project name (listing headline, not a development)"
         elif (blocked := _blocked_by_cooldown(cooldown_index, slug, row.get("beds"))):
             cand["gate_reason"] = f"same unit type evaluated {blocked} (cooldown)"
         elif cohort in seen_cohort:
@@ -284,11 +370,23 @@ def _agent_prompt(cand: dict) -> str:
         f"instead of `--url` — it builds the run dir and raw_analysis.json from "
         f"the DB record with no scraping (PropertyGuru is behind Cloudflare and "
         f"this is an unattended run).{flag_note}\n\n"
+        f"REQUIRED in step ② Gather — realsmart.sg REALSCORE for this project:\n"
+        f"    python3 {WEB_EXTRACT_FETCH} \"{realsmart_url(cand.get('project_name'))}\"\n"
+        "Public page, plain fetch, no login. Read off REALSCORE (0-5 "
+        "profitability rank), the '% Profitable' badge, avg annualized profit, "
+        "and the transaction COUNT behind them, then fill `realscore`, "
+        "`realsmart_pct_profitable` and `realsmart_annual_return_pct` in "
+        "agent_evaluation. If the slug 404s, try the project name's other "
+        "spellings once, then leave the fields null and say so — never guess a "
+        "number. Weigh it as downside evidence (has this project ever lost "
+        "owners money?), NOT as an appreciation forecast: it is backward-looking "
+        "like trailing CAGR, and a perfect score on a handful of transactions "
+        "means little. Uncompleted projects legitimately show N.A.\n\n"
         "This is a NON-INTERACTIVE headless run in the weekly scan: do not ask "
         "anything; where the flow would ask about purpose, assume investment "
         "(5-7yr hold) and proceed. Do the real research step — your view first, "
         "algo_reference second. An honest Neutral or Avoid is the expected "
-        "outcome most days; never manufacture a Buy. Finish the full flow "
+        "outcome most weeks; never manufacture a Buy. Finish the full flow "
         "including --from-review so the verdict is saved to eval memory."
     )
 
@@ -340,6 +438,32 @@ def read_verdict(cand: dict, on_or_after: str) -> dict | None:
 # --------------------------------------------------------------------------- #
 def _money(v) -> str:
     return f"${v:,.0f}" if isinstance(v, (int, float)) else "—"
+
+
+def _realsmart(v: dict) -> dict:
+    """realsmart fields out of a verdict, wherever the agent put them.
+
+    `save_evaluations_from_review` copies agent_evaluation wholesale AND lifts
+    some keys to the history entry's top level, so accept either shape.
+    """
+    ae = v.get("agent_evaluation") or {}
+    return {k: (v.get(k) if v.get(k) is not None else ae.get(k))
+            for k in ("realscore", "realsmart_pct_profitable",
+                      "realsmart_annual_return_pct")}
+
+
+def _realsmart_line(v: dict) -> str:
+    rs = _realsmart(v)
+    if rs["realscore"] is None and rs["realsmart_pct_profitable"] is None:
+        return ""
+    bits = []
+    if rs["realscore"] is not None:
+        bits.append(f"**REALSCORE {rs['realscore']}**/5")
+    if rs["realsmart_pct_profitable"] is not None:
+        bits.append(f"{rs['realsmart_pct_profitable']}% of resales profitable")
+    if rs["realsmart_annual_return_pct"] is not None:
+        bits.append(f"{rs['realsmart_annual_return_pct']}%/yr avg (past 1y)")
+    return "realsmart: " + " · ".join(bits)
 
 
 def _row(c: dict) -> str:
@@ -395,6 +519,8 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
                      f"{_money(cand.get('price'))} ({_money(cand.get('psf'))} psf) · "
                      f"{cand.get('district')} · score {cand.get('score_1000')} · "
                      f"{v.get('confidence') or '?'} confidence")
+            if (rs := _realsmart_line(v)):
+                L += ["", rs]
             if v.get("summary"):
                 L += ["", f"> {v['summary']}"]
             if v.get("rating_rationale"):
@@ -507,11 +633,15 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
         summary = summary.replace("|", "·").replace("\n", " ")
         if len(summary) > 320:
             summary = summary[:317].rstrip() + "…"
+        rs = _realsmart(v)
+        real = "—" if rs["realscore"] is None else f"{rs['realscore']}"
+        if rs["realsmart_pct_profitable"] is not None:
+            real += f" · {rs['realsmart_pct_profitable']}% prof"
         lines.append(
             f"| {day} | [{cand.get('project_name')}]({url}) | "
             f"{cand.get('beds')}BR {cand.get('sqft') or '?'} sqft | "
             f"{_money(cand.get('price'))} ({_money(cand.get('psf'))} psf) · "
-            f"{cand.get('district')} | {cand.get('score_1000')} | "
+            f"{cand.get('district')} | {cand.get('score_1000')} | {real} | "
             f"**{v.get('rating')}** ({v.get('confidence')}) | {summary} |")
         added.append({"project_name": cand.get("project_name"),
                       "rating": v.get("rating"), "confidence": v.get("confidence"),
@@ -627,7 +757,10 @@ def main() -> int:
         list(poll_state.get("changed_listings") or [])
 
     # --no-poll still has a job to do: grade everything that arrived since the
-    # last run (not just today — the whole point of a weekly cadence).
+    # last run (not just today — the whole point of a weekly cadence). That
+    # means NEW listings *and* ones that re-priced in the window: a drop INTO
+    # the gate is exactly the signal worth catching, and keying only on
+    # first_seen would silently discard every one of them.
     if args.no_poll:
         since = (state.get("last_run") or {}).get("date") \
             or (now - timedelta(days=7)).strftime("%Y-%m-%d")
@@ -636,8 +769,9 @@ def main() -> int:
                  "district": r.get("district"), "beds": r.get("beds"),
                  "price": r.get("price"), "psf": r.get("psf"),
                  "score_1000": r.get("score_1000"), "url": r.get("url")}
-                for k, r in db.items() if (r.get("first_seen") or "") >= since]
-        print(f"--no-poll: grading {len(rows)} listing(s) first seen since {since}",
+                for k, r in db.items()
+                if (r.get("first_seen") or "") >= since or _repriced_since(r, since)]
+        print(f"--no-poll: grading {len(rows)} listing(s) new or re-priced since {since}",
               file=sys.stderr)
 
     # 2/3. Gate
@@ -645,7 +779,8 @@ def main() -> int:
     cooldown = _eval_cooldown_index(RE_EVAL_COOLDOWN_DAYS, now)
     shortlist, rejected = select_candidates(
         rows, db_listings, cooldown_index=cooldown,
-        min_score=args.min_score, max_ai=args.max_ai)
+        min_score=args.min_score, max_ai=args.max_ai,
+        known_projects=_known_projects())
     print(f"\nGate: {len(rows)} new/changed → {len(shortlist)} for AI analysis "
           f"(>= {args.min_score}, cap {args.max_ai})", file=sys.stderr)
 

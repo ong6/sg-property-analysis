@@ -386,6 +386,11 @@ def _listing_to_raw(
         "confidence": None,
         "appreciation_rate_override_pct": None,
         "appreciation_rate_source": None,
+        # realsmart.sg project-level facts (owner-preferred source). Structured
+        # rather than buried in prose so scans can surface them in a column.
+        "realscore": None,
+        "realsmart_pct_profitable": None,
+        "realsmart_annual_return_pct": None,
     }
 
     return entry
@@ -548,6 +553,18 @@ def generate_raw_analysis(
                                                "value (confidence 1.0) but still cohort-damped; don't re-introduce "
                                                "new-launch CAGR inflation. Leave null to keep the data rate."),
             "appreciation_rate_source": "Source for your override rate (resale-to-resale basis)",
+            "realscore": ("realsmart.sg's 0-5 profitability rank for the PROJECT, from "
+                          "https://realsmart.sg/p/<slug> (public page, plain fetch, no login). "
+                          "A high REALSCORE means few or no unprofitable resale transactions — "
+                          "i.e. how reliably owners have exited in the black. Read it as "
+                          "DOWNSIDE evidence (has this project ever lost people money?), not as "
+                          "an appreciation forecast: it is backward-looking and, like trailing "
+                          "CAGR, carries little forward power on its own. A low score on a deep "
+                          "transaction history is a real warning; a high score on a thin one is "
+                          "close to meaningless — always report it alongside the transaction "
+                          "count you saw."),
+            "realsmart_pct_profitable": "% of that project's resale transactions sold at a profit (number, e.g. 100)",
+            "realsmart_annual_return_pct": "realsmart's avg annualized profit, past 1y (number, e.g. 5.4)",
         },
         "before_you_start": (
             "Check past evaluations first: `python invest.py --recall \"<condo>\"`. "
