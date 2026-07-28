@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25",
+  "updated_at": "2026-07-28",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -1712,9 +1712,9 @@
     "smart-suites": {
       "condo": "Smart Suites",
       "district": "D14",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_rating": "Avoid",
+      "latest_date": "2026-07-28",
+      "eval_count": 3
     },
     "nanhua-pri-school-within-1km-let-me-help-you-to-find-the-most-suitable-unit-for-your-family": {
       "condo": "Nanhua Pri School, within 1km ! Let me help you to find the most suitable unit for your family !",
