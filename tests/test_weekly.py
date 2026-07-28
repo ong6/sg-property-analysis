@@ -7,17 +7,19 @@ from datetime import datetime, timedelta
 import weekly
 
 
-def _row(rid, score=700, beds=2, name="Test Condo", **kw):
-    r = {"id": rid, "project_name": name, "district": "D15", "beds": beds,
-         "price": 1_500_000, "psf": 2000.0, "score_1000": score,
+def _row(rid, score=700, beds=3, name="Test Condo", **kw):
+    # Defaults sit INSIDE the mandate (3BR @ $1.4M = "his") so gate tests
+    # exercise the rule under test rather than tripping the mandate filter.
+    r = {"id": rid, "project_name": name, "district": "D19", "beds": beds,
+         "price": 1_400_000, "psf": 2000.0, "score_1000": score,
          "url": f"https://pg/{rid}"}
     r.update(kw)
     return r
 
 
 def _rec(rid, **kw):
-    r = {"id": rid, "price": 1_500_000, "sqft": 750.0, "psf": 2000.0,
-         "status": "active", "unit_group": "test condo|2|333", "ingest_flags": []}
+    r = {"id": rid, "price": 1_400_000, "sqft": 950.0, "psf": 2000.0,
+         "status": "active", "unit_group": "test condo|3|333", "ingest_flags": []}
     r.update(kw)
     return r
 
@@ -47,21 +49,21 @@ class TestGate:
         assert "already shortlisted this scan" in rej[0]["gate_reason"]
 
     def test_different_bed_count_is_a_separate_call(self):
-        rows = [_row("a", score=700, beds=2), _row("b", score=690, beds=3)]
+        rows = [_row("a", score=700, beds=3), _row("b", score=690, beds=4)]
         db = {"a": _rec("a"), "b": _rec("b")}
         short, _ = weekly.select_candidates(rows, db)
         assert {c["id"] for c in short} == {"a", "b"}
 
     def test_cooldown_blocks_same_unit_type_only(self):
-        rows = [_row("a", score=700, beds=2), _row("b", score=700, beds=3)]
+        rows = [_row("a", score=700, beds=3), _row("b", score=700, beds=4)]
         db = {"a": _rec("a"), "b": _rec("b")}
-        cooldown = {("test-condo", 2): "2026-07-01"}
+        cooldown = {("test-condo", 3): "2026-07-01"}
         short, rej = weekly.select_candidates(rows, db, cooldown_index=cooldown)
         assert [c["id"] for c in short] == ["b"]
         assert "cooldown" in rej[0]["gate_reason"]
 
     def test_wildcard_cooldown_blocks_every_bed_count(self):
-        rows = [_row("a", beds=2), _row("b", beds=3)]
+        rows = [_row("a", beds=3), _row("b", beds=4)]
         db = {"a": _rec("a"), "b": _rec("b")}
         short, rej = weekly.select_candidates(
             rows, db, cooldown_index={("test-condo", "*"): "2026-07-01"})
@@ -96,6 +98,98 @@ class TestGate:
         assert short[0]["ingest_flags"] == ["bedroom_sqft_mismatch"]
         assert "bedroom_sqft_mismatch" in weekly._agent_prompt(short[0])
         assert "--from-db a" in weekly._agent_prompt(short[0])
+
+
+class TestMandate:
+    """Two buyers, two budgets, one OCR region constraint (stated 2026-07-28).
+    Off-mandate listings must never reach an agent however well they score —
+    nobody can buy them."""
+
+    def test_his_budget_and_beds(self):
+        assert weekly.mandate_for(1_450_000, 3) == "his"
+        assert weekly.mandate_for(1_500_000, 3) == "his"      # exactly at budget
+
+    def test_hers_takes_what_his_cannot(self):
+        assert weekly.mandate_for(2_400_000, 3) == "hers"     # over his budget
+        assert weekly.mandate_for(1_450_000, 4) == "hers"     # 4BR: not his beds
+        assert weekly.mandate_for(2_500_000, 4) == "hers"
+
+    def test_cheapest_fitting_mandate_wins(self):
+        # A $1.4M 3BR is his find, not hers — she has better options there.
+        assert weekly.mandate_for(1_400_000, 3) == "his"
+
+    def test_off_mandate_returns_none(self):
+        assert weekly.mandate_for(2_600_000, 3) is None       # over both budgets
+        assert weekly.mandate_for(1_200_000, 2) is None       # 2BR: neither wants
+        assert weekly.mandate_for(1_200_000, 5) is None
+        assert weekly.mandate_for(None, 3) is None
+        assert weekly.mandate_for(1_200_000, None) is None
+
+    def test_gate_cuts_off_mandate_however_good_the_score(self):
+        rows = [_row("a", score=900, beds=2, name="Great 2BR"),        # 2BR
+                _row("b", score=880, beds=3, name="Pricey", price=3_000_000),
+                _row("c", score=700, beds=3, name="Parc Riviera")]
+        db = {"a": _rec("a"), "b": _rec("b", price=3_000_000), "c": _rec("c")}
+        short, rej = weekly.select_candidates(rows, db)
+        assert [c["id"] for c in short] == ["c"]
+        assert all("outside the mandate" in c["gate_reason"] for c in rej)
+
+    def test_shortlisted_candidates_carry_their_mandate(self):
+        rows = [_row("a", score=700, beds=3, price=1_400_000, name="A"),
+                _row("b", score=690, beds=4, price=2_400_000, name="B")]
+        db = {"a": _rec("a", price=1_400_000), "b": _rec("b", price=2_400_000)}
+        short, _ = weekly.select_candidates(rows, db)
+        assert {c["id"]: c["mandate"] for c in short} == {"a": "his", "b": "hers"}
+
+    def test_hers_cannot_crowd_out_his(self):
+        # Her budget is ~$1M larger, so on a raw score ranking her candidates
+        # would take every slot and his tighter budget would never be researched
+        # — his single candidate scores below all six of hers.
+        rows = [_row(f"h{i}", score=800 - i, beds=4, price=2_400_000,
+                     name=f"Hers {i}") for i in range(6)]
+        rows += [_row("m1", score=660, beds=3, price=1_400_000, name="His One")]
+        db = {r["id"]: _rec(r["id"], price=r["price"]) for r in rows}
+        short, _ = weekly.select_candidates(rows, db, max_ai=4)
+        assert "m1" in [c["id"] for c in short], "his mandate was crowded out"
+        assert len(short) == 4, "spare slots must not be wasted"
+
+    def test_a_lone_mandate_still_uses_the_whole_budget(self):
+        # Fair-share must not become a hard cap: when only one buyer has stock
+        # this week, halving the budget would just waste agent runs.
+        rows = [_row(str(i), score=700 + i, beds=3, price=1_400_000,
+                     name=f"Condo {i}") for i in range(6)]
+        db = {str(i): _rec(str(i)) for i in range(6)}
+        short, rej = weekly.select_candidates(rows, db, max_ai=4)
+        assert len(short) == 4
+        assert {c["mandate"] for c in short} == {"his"}
+        assert all("over the per-scan AI cap" in c["gate_reason"] for c in rej)
+
+    def test_region_is_enforced_at_the_gate_not_just_the_scrape(self):
+        # The DB holds thousands of older out-of-region listings; re-gating
+        # must not shortlist RCR stock just because the scrape scope changed.
+        assert weekly.in_region("D19") and weekly.in_region(28) and weekly.in_region("d16")
+        assert not weekly.in_region("D15")     # RCR
+        assert not weekly.in_region("D03")     # RCR
+        assert not weekly.in_region(None)      # unreadable fails closed
+        assert not weekly.in_region("")
+
+    def test_out_of_region_is_rejected_with_its_own_reason(self):
+        rows = [_row("a", score=900, district="D15"),   # RCR, otherwise perfect
+                _row("b", score=700, district="D19")]   # OCR
+        db = {"a": _rec("a"), "b": _rec("b")}
+        short, rej = weekly.select_candidates(rows, db)
+        assert [c["id"] for c in short] == ["b"]
+        assert "out of region" in rej[0]["gate_reason"]
+
+    def test_mandate_for_respects_district_when_given(self):
+        assert weekly.mandate_for(1_400_000, 3, "D19") == "his"
+        assert weekly.mandate_for(1_400_000, 3, "D15") is None
+        assert weekly.mandate_for(1_400_000, 3) == "his"   # district optional
+
+    def test_scan_scope_is_ocr_and_3_4br(self):
+        assert weekly.SCAN_DISTRICTS == list(range(16, 29))   # OCR only
+        assert weekly.SCAN_BEDS == [3, 4]                     # no 2BR
+        assert weekly.SCAN_MAX_PRICE == 2_500_000
 
 
 class TestMarketingTitles:

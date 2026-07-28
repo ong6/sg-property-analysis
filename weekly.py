@@ -75,6 +75,71 @@ RUNS_DIR = os.path.join(BASE, "output", "weekly_runs")
 # as a different vintage. These are scan-policy, not scoring calibration.
 # --------------------------------------------------------------------------- #
 
+# --------------------------------------------------------------------------- #
+# The search mandate — WHAT the owner is actually buying.
+#
+# Stated 2026-07-28; mirrored in the store's home-buying README. Two buyers,
+# two budgets, one shared region constraint. Everything else here is policy
+# about HOW to scan; this is the only block that says WHAT to look for, so it
+# is the first thing to change when the hunt changes.
+#
+# OCR (D16-D28) is a hard filter, not a preference. It also happens to be where
+# the backtest points: realized forward OCR +3.7%/yr > RCR +3.1 >> CCR +1.9,
+# and region is the strongest single forward signal in the model.
+# --------------------------------------------------------------------------- #
+OCR_DISTRICTS = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+
+MANDATES = [
+    # label      max_price   beds        who
+    ("his",  1_500_000, (3,),    "him — ~$1.5M, 3BR"),
+    ("hers", 2_500_000, (3, 4),  "her — ~$2.5M, 3-4BR, whichever returns most"),
+]
+# Union of the mandates, used for the scrape itself.
+SCAN_DISTRICTS = OCR_DISTRICTS
+SCAN_BEDS = sorted({b for _, _, beds, _ in MANDATES for b in beds})
+SCAN_MAX_PRICE = max(p for _, p, _, _ in MANDATES)
+# A little headroom over the top budget: an ask slightly above it is still worth
+# seeing (asks negotiate down), whereas anything far above is noise.
+SCAN_PRICE_HEADROOM = 1.06
+
+
+def district_num(district) -> int | None:
+    """'D19' / 'd19' / 19 -> 19. None when it can't be read."""
+    digits = "".join(c for c in str(district or "") if c.isdigit())
+    return int(digits) if digits else None
+
+
+def in_region(district) -> bool:
+    """True if the district is in the mandate's region (OCR).
+
+    Enforced at the GATE, not just in the scrape scope. The scrape scope only
+    controls what a fresh poll fetches; the DB also holds thousands of older
+    out-of-region listings, and re-gating without this check would happily
+    shortlist RCR stock nobody is looking for. Unknown district = not in scope:
+    the mandate is a hard filter, so an unreadable district fails closed.
+    """
+    n = district_num(district)
+    return n is not None and n in OCR_DISTRICTS
+
+
+def mandate_for(price, beds, district=None) -> str | None:
+    """Which buyer's mandate a listing fits ('his' / 'hers'), or None.
+
+    Cheapest-fitting mandate wins, so a $1.4M 3BR is tagged 'his' rather than
+    'hers' — it is the tighter budget's find, and hers has better options at
+    that price. When `district` is given it must also be in region; callers
+    that only have price/beds can omit it and check `in_region` separately.
+    """
+    if price is None or beds is None:
+        return None
+    if district is not None and not in_region(district):
+        return None
+    for label, max_price, ok_beds, _ in MANDATES:
+        if beds in ok_beds and price <= max_price:
+            return label
+    return None
+
+
 # The AI gate. 650 is the repo's own "recommended tier" (CLAUDE.md) and sits at
 # roughly the 88th percentile of the scored book — a listing below it is not
 # worth an agent run just for showing up.
@@ -312,6 +377,7 @@ def select_candidates(
 
     ranked = sorted(rows, key=lambda r: r.get("score_1000") or 0, reverse=True)
     seen_cohort: set[tuple[str, object]] = set()
+    eligible: list[dict] = []
 
     for row in ranked:
         rec = db_listings.get(row["id"]) or {}
@@ -325,6 +391,9 @@ def select_candidates(
         name = row.get("project_name") or rec.get("title") or ""
         slug = eval_memory.slugify(name) if name else ""
         cohort = (slug, row.get("beds"))
+        district = row.get("district") or rec.get("district")
+        mandate = mandate_for(row.get("price"), row.get("beds"), district)
+        cand["mandate"] = mandate
 
         if rec.get("status") == "stale":
             cand["gate_reason"] = "listing went stale this cycle"
@@ -334,6 +403,14 @@ def select_candidates(
             cand["gate_reason"] = "not scored"
         elif score < min_score:
             cand["gate_reason"] = f"below gate ({score} < {min_score})"
+        elif not in_region(district):
+            cand["gate_reason"] = (
+                f"out of region ({district or '?'} is not OCR — mandate is D16-D28)")
+        elif mandate is None:
+            # Off-mandate: nobody can buy it, so its score is irrelevant.
+            cand["gate_reason"] = (
+                f"outside the mandate ({row.get('beds')}BR @ "
+                f"{_money(row.get('price'))} — need 3BR<=$1.5M or 3-4BR<=$2.5M)")
         elif looks_like_marketing_title(name, known_projects):
             # Not a judgement on the unit — we simply don't know which
             # development it is, so there is nothing to research.
@@ -342,17 +419,58 @@ def select_candidates(
             cand["gate_reason"] = f"same unit type evaluated {blocked} (cooldown)"
         elif cohort in seen_cohort:
             cand["gate_reason"] = "same condo + bed count already shortlisted this scan"
-        elif len(shortlist) >= max_ai:
-            cand["gate_reason"] = f"over the per-scan AI cap ({max_ai})"
         else:
             cand["slug"] = slug
             seen_cohort.add(cohort)
-            shortlist.append(cand)
+            eligible.append(cand)     # budget allocated below, not here
             continue
 
         rejected.append(cand)
 
+    # --- Allocate the AI budget across the buyers -------------------------- #
+    # Two passes, because neither extreme is right on its own:
+    #   * pure score ranking lets hers (a ~$1M larger budget, so systematically
+    #     nicer stock) take every slot and his mandate never gets researched;
+    #   * a hard per-buyer cap wastes slots in the common case where only one
+    #     buyer has candidates this week.
+    # So: give each mandate its fair share first, then hand any slots nobody
+    # claimed to the best remaining listings regardless of buyer.
+    shortlist, deferred = _allocate_budget(eligible, max_ai)
+    rejected.extend(deferred)
     return shortlist, rejected
+
+
+def _allocate_budget(eligible: list[dict], max_ai: int) -> tuple[list[dict], list[dict]]:
+    """Split `max_ai` slots across mandates fairly, then fill leftovers by score.
+
+    `eligible` must already be score-ordered. Returns (shortlist, deferred);
+    deferred candidates carry a gate_reason explaining which cap they hit.
+    """
+    present = [m for m, *_ in MANDATES if any(c.get("mandate") == m for c in eligible)]
+    if not present:
+        return [], []
+    fair_share = max(1, -(-max_ai // len(present)))    # ceil, so 8/2 -> 4 each
+
+    taken: dict[str, int] = {}
+    shortlist, leftovers = [], []
+    for cand in eligible:                              # pass 1: fair share
+        m = cand.get("mandate")
+        if len(shortlist) < max_ai and taken.get(m, 0) < fair_share:
+            taken[m] = taken.get(m, 0) + 1
+            shortlist.append(cand)
+        else:
+            leftovers.append(cand)
+
+    deferred = []
+    for cand in leftovers:                             # pass 2: unclaimed slots
+        if len(shortlist) < max_ai:
+            shortlist.append(cand)
+        else:
+            cand["gate_reason"] = f"over the per-scan AI cap ({max_ai})"
+            deferred.append(cand)
+
+    shortlist.sort(key=lambda c: c.get("score_1000") or 0, reverse=True)
+    return shortlist, deferred
 
 
 # --------------------------------------------------------------------------- #
@@ -480,8 +598,13 @@ def _realsmart_line(v: dict) -> str:
     return "realsmart: " + " · ".join(bits)
 
 
+_MANDATE_TAG = {"his": "**HIS**", "hers": "**HERS**"}
+
+
 def _row(c: dict) -> str:
-    return (f"| {c.get('score_1000') or '—'} | {c.get('project_name') or '—'} | "
+    return (f"| {c.get('score_1000') or '—'} | "
+            f"{_MANDATE_TAG.get(c.get('mandate'), '—')} | "
+            f"{c.get('project_name') or '—'} | "
             f"{c.get('beds') or '—'}BR | {_money(c.get('price'))} | "
             f"{_money(c.get('psf'))} psf | {c.get('district') or '—'} |")
 
@@ -548,13 +671,13 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
 
     if dry_run and shortlist:
         L += ["## Cleared the gate (dry run — no agent spawned)", "",
-              "| Score | Project | Beds | Price | PSF | District |",
-              "|---|---|---|---|---|---|"] + [_row(c) for c in shortlist] + [""]
+              "| Score | For | Project | Beds | Price | PSF | District |",
+              "|---|---|---|---|---|---|---|"] + [_row(c) for c in shortlist] + [""]
 
     if rejected:
         L += [f"## Algo-only — {len(rejected)} not sent to the agent", "",
-              "| Score | Project | Beds | Price | PSF | District | Why |",
-              "|---|---|---|---|---|---|---|"]
+              "| Score | For | Project | Beds | Price | PSF | District | Why |",
+              "|---|---|---|---|---|---|---|---|"]
         L += [_row(c) + f" {c.get('gate_reason', '—')} |" for c in rejected]
         L.append("")
 
@@ -736,8 +859,13 @@ def main() -> int:
     ap.add_argument("--max-pages", type=int, default=POLL_MAX_PAGES,
                     help=f"pages per district — how far back one scan reaches "
                          f"(default {POLL_MAX_PAGES})")
-    ap.add_argument("--districts", type=str, default=None)
-    ap.add_argument("--beds", type=str, default=None)
+    ap.add_argument("--districts", type=str, default=None,
+                    help=f"override the mandate's districts (default OCR {SCAN_DISTRICTS})")
+    ap.add_argument("--beds", type=str, default=None,
+                    help=f"override the mandate's bed counts (default {SCAN_BEDS})")
+    ap.add_argument("--max-price", type=int,
+                    default=int(SCAN_MAX_PRICE * SCAN_PRICE_HEADROOM),
+                    help="scrape ceiling; defaults to the top mandate budget + headroom")
     ap.add_argument("--no-store-push", action="store_true",
                     help="don't append good finds to the personal data store note")
     args = ap.parse_args()
@@ -772,9 +900,11 @@ def main() -> int:
     else:
         print("Polling PropertyGuru…", file=sys.stderr)
         poll_state = poller.run_poll(
-            districts=[int(d) for d in args.districts.split(",")] if args.districts else None,
-            beds=[int(b) for b in args.beds.split(",")] if args.beds else None,
+            districts=[int(d) for d in args.districts.split(",")] if args.districts
+            else SCAN_DISTRICTS,
+            beds=[int(b) for b in args.beds.split(",")] if args.beds else SCAN_BEDS,
             max_pages=args.max_pages,
+            max_price=args.max_price,
             headless=args.headless,
         )
 
