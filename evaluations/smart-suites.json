@@ -114,6 +114,87 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-smart-suites-500013848",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,163 sqft 3BR at Smart Suites (D14 Sims Ave), $1.42M / $1,221 psf, 250m from Aljunied EW9. The algo's 809 score is built on two artifacts: a $6,780/mo rent extrapolated from a project rent-psf that is 78% 1BR shoeboxes (the project's only actual 3BR print is $4,650/mo), and an 18% 'discount' measured against a median set by 452-527 sqft units. Against the project's OWN large-unit prints ($1,121-$1,253 psf) this ask is at the top of the range, not below it — and at $1.42M it would be the highest absolute price ever transacted at this address by ~18%.",
+      "rating_rationale": "Both pillars of the high score fail verification. (1) YIELD: factual_data's $6,780/mo implies $5.83 psf, which is the project's blended rent-psf — 17 of 22 cached contracts are 1BR. The project's own by-bed gradient already decays to $4.71 psf at 2BR, and Smart Suites' single 3BR rental print is $4,650/mo (Dec-23, 1,100-1,200 sqft — this unit's exact band). D14 3BR 1,100-1,300 sqft 2025-26 contracts: median $4,800 (n=696). True gross yield ~4.1%, not 5.73% — this is the 'yield >5.5% is the discount artifact mirrored through rent/price' case exactly. Correcting rent alone costs ~60 score points and drops all-cash 5yr ROI from 2.9% to ~2.2%/yr. (2) VALUE: psf_cohort_txns=0 is literal — 1,163 sqft is LARGER than any unit ever transacted here (max 958 sqft). All 17 URA prints show a clean size gradient: 452-527 sqft at $1,466-$1,586 psf, 882-958 sqft at $1,121-$1,253 psf. The -18.2% vs project/district median is pure size-mix (the Espira Suites pattern). Versus the true comp — its own large-unit prints, mean ~$1,182 psf — $1,221 psf is a slight PREMIUM, and larger units normally trade below smaller ones. Among D14 ~1,200 sqft 3BRs it is also priced above the pack: Sims Green (same street) $1,162-$1,212 psf for 1,238 sqft, Escada View $1,152, Canberlin Lodge $1,161. So the primary forward signal per current priors (cheap-vs-peers) is absent, not positive. What remains is a weak investment case: ~4.1% gross carry, a project that has compounded ~1.0-1.5%/yr on three independent measures (URA 5yr CAGR 1.35% on 17 txns; realsmart median 2016->2025 +14.9% = ~1.55%/yr; realsmart avg annualized profit 1.0%), and REALSCORE 2.1/5 — a LOW score on a genuinely deep 112-transaction history since 2004, which the field guide treats as a real warning rather than noise. The 100% profitable badge is meaningful downside evidence (no owner has exited in the red) but it coexists with near-zero real returns. The exit is the binding problem. This is an orphan format — a 3BR in a 72-unit block realsmart describes as heavily 1BR, built for singles/couples, 5 storeys, minimal facilities, ~3.4 sales/yr project-wide. No buyer has ever paid above $1.2M at this address. Two price cuts in 7 weeks ($1.50M -> $1.42M, -5.3%) with no taker is the market saying the same thing. Real positives — Aljunied EW9 at 158-260m, 999-yr tenure, 2014 build inside the 7-30yr forward-return plateau, reachable quantum — set a floor but are not an edge (freehold is forward-neutral; MRT is a modest std_beta -0.11). Corrected forward ROI ~2.0-2.3%/yr all-cash sits below the RCR +3.1% baseline. Avoid rather than Neutral because the case against is affirmative and print-backed, and an investor acting on the 809 would be buying a mispriced signal, not a discount.",
+      "red_flags": [
+        "Yield artifact: $6,780/mo est. rent is 40%+ above the project's only 3BR print ($4,650, Dec-23, same size band); true gross yield ~4.1%, not 5.73%",
+        "Discount artifact: psf_cohort_txns=0 — 1,163 sqft exceeds the largest unit ever transacted here (958 sqft); -18.2% is measured against a shoebox-set median",
+        "Against its own large-unit prints ($1,121-$1,253 psf) the $1,221 psf ask is a premium, not a discount — and priced above D14 ~1,200 sqft 3BR peers (Sims Green $1,162-$1,212)",
+        "At $1.42M this would be the highest absolute price ever paid at Smart Suites by ~18% (prior ceiling $1.2M, Jul-23)",
+        "REALSCORE 2.1/5 on a deep 112-transaction history — low score on real data, not a thin-sample fluke; avg annualized profit just 1.0%",
+        "Orphan format: a 3BR in a 72-unit, 5-storey, predominantly-1BR block built for singles/couples — narrow resale and tenant pool",
+        "Very thin liquidity: 17 URA sale transactions in 5 years project-wide (~3.4/yr)",
+        "Two price cuts in 7 weeks (-5.3%) with no taker — market feedback on the quantum/format",
+        "Geylang / Sims Avenue red-light adjacency: persistent sentiment, tenant-mix and financing drag on a family-sized unit",
+        "~1.0-1.5%/yr realized appreciation on three independent measures, well below the RCR +3.1% baseline"
+      ],
+      "catalysts": [
+        "Aljunied EW9 MRT at 158-260m — genuinely doorstep East-West line access (measured but modest forward signal)",
+        "999-yr / freehold tenure — no lease-decay risk (forward-neutral per v3.5 priors, already in the price)",
+        "2014 build, age 12 — inside the 7-30yr plateau where forward returns are unimpaired",
+        "100% profitable transaction history over 112 deals since 2004 — real downside evidence, no owner has exited in the red",
+        "Geylang Methodist Primary 279m / Kong Hwa 617m — within 1km, supports own-stay demand for the larger format",
+        "Paya Lebar Central / airbase relocation — long-dated narrative only; future-infra has no measured forward power"
+      ],
+      "as_of": {
+        "price": 1419999,
+        "psf": 1220.98,
+        "beds": 3,
+        "sqft": 1163.0
+      },
+      "key_facts": {
+        "appreciation_pct": 1.35,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 5.73,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": 999
+      },
+      "agent_evaluation": {
+        "summary": "A 1,163 sqft 3BR at Smart Suites (D14 Sims Ave), $1.42M / $1,221 psf, 250m from Aljunied EW9. The algo's 809 score is built on two artifacts: a $6,780/mo rent extrapolated from a project rent-psf that is 78% 1BR shoeboxes (the project's only actual 3BR print is $4,650/mo), and an 18% 'discount' measured against a median set by 452-527 sqft units. Against the project's OWN large-unit prints ($1,121-$1,253 psf) this ask is at the top of the range, not below it — and at $1.42M it would be the highest absolute price ever transacted at this address by ~18%.",
+        "rating": "Avoid",
+        "rating_rationale": "Both pillars of the high score fail verification. (1) YIELD: factual_data's $6,780/mo implies $5.83 psf, which is the project's blended rent-psf — 17 of 22 cached contracts are 1BR. The project's own by-bed gradient already decays to $4.71 psf at 2BR, and Smart Suites' single 3BR rental print is $4,650/mo (Dec-23, 1,100-1,200 sqft — this unit's exact band). D14 3BR 1,100-1,300 sqft 2025-26 contracts: median $4,800 (n=696). True gross yield ~4.1%, not 5.73% — this is the 'yield >5.5% is the discount artifact mirrored through rent/price' case exactly. Correcting rent alone costs ~60 score points and drops all-cash 5yr ROI from 2.9% to ~2.2%/yr. (2) VALUE: psf_cohort_txns=0 is literal — 1,163 sqft is LARGER than any unit ever transacted here (max 958 sqft). All 17 URA prints show a clean size gradient: 452-527 sqft at $1,466-$1,586 psf, 882-958 sqft at $1,121-$1,253 psf. The -18.2% vs project/district median is pure size-mix (the Espira Suites pattern). Versus the true comp — its own large-unit prints, mean ~$1,182 psf — $1,221 psf is a slight PREMIUM, and larger units normally trade below smaller ones. Among D14 ~1,200 sqft 3BRs it is also priced above the pack: Sims Green (same street) $1,162-$1,212 psf for 1,238 sqft, Escada View $1,152, Canberlin Lodge $1,161. So the primary forward signal per current priors (cheap-vs-peers) is absent, not positive. What remains is a weak investment case: ~4.1% gross carry, a project that has compounded ~1.0-1.5%/yr on three independent measures (URA 5yr CAGR 1.35% on 17 txns; realsmart median 2016->2025 +14.9% = ~1.55%/yr; realsmart avg annualized profit 1.0%), and REALSCORE 2.1/5 — a LOW score on a genuinely deep 112-transaction history since 2004, which the field guide treats as a real warning rather than noise. The 100% profitable badge is meaningful downside evidence (no owner has exited in the red) but it coexists with near-zero real returns. The exit is the binding problem. This is an orphan format — a 3BR in a 72-unit block realsmart describes as heavily 1BR, built for singles/couples, 5 storeys, minimal facilities, ~3.4 sales/yr project-wide. No buyer has ever paid above $1.2M at this address. Two price cuts in 7 weeks ($1.50M -> $1.42M, -5.3%) with no taker is the market saying the same thing. Real positives — Aljunied EW9 at 158-260m, 999-yr tenure, 2014 build inside the 7-30yr forward-return plateau, reachable quantum — set a floor but are not an edge (freehold is forward-neutral; MRT is a modest std_beta -0.11). Corrected forward ROI ~2.0-2.3%/yr all-cash sits below the RCR +3.1% baseline. Avoid rather than Neutral because the case against is affirmative and print-backed, and an investor acting on the 809 would be buying a mispriced signal, not a discount.",
+        "red_flags": [
+          "Yield artifact: $6,780/mo est. rent is 40%+ above the project's only 3BR print ($4,650, Dec-23, same size band); true gross yield ~4.1%, not 5.73%",
+          "Discount artifact: psf_cohort_txns=0 — 1,163 sqft exceeds the largest unit ever transacted here (958 sqft); -18.2% is measured against a shoebox-set median",
+          "Against its own large-unit prints ($1,121-$1,253 psf) the $1,221 psf ask is a premium, not a discount — and priced above D14 ~1,200 sqft 3BR peers (Sims Green $1,162-$1,212)",
+          "At $1.42M this would be the highest absolute price ever paid at Smart Suites by ~18% (prior ceiling $1.2M, Jul-23)",
+          "REALSCORE 2.1/5 on a deep 112-transaction history — low score on real data, not a thin-sample fluke; avg annualized profit just 1.0%",
+          "Orphan format: a 3BR in a 72-unit, 5-storey, predominantly-1BR block built for singles/couples — narrow resale and tenant pool",
+          "Very thin liquidity: 17 URA sale transactions in 5 years project-wide (~3.4/yr)",
+          "Two price cuts in 7 weeks (-5.3%) with no taker — market feedback on the quantum/format",
+          "Geylang / Sims Avenue red-light adjacency: persistent sentiment, tenant-mix and financing drag on a family-sized unit",
+          "~1.0-1.5%/yr realized appreciation on three independent measures, well below the RCR +3.1% baseline"
+        ],
+        "catalysts": [
+          "Aljunied EW9 MRT at 158-260m — genuinely doorstep East-West line access (measured but modest forward signal)",
+          "999-yr / freehold tenure — no lease-decay risk (forward-neutral per v3.5 priors, already in the price)",
+          "2014 build, age 12 — inside the 7-30yr plateau where forward returns are unimpaired",
+          "100% profitable transaction history over 112 deals since 2004 — real downside evidence, no owner has exited in the red",
+          "Geylang Methodist Primary 279m / Kong Hwa 617m — within 1km, supports own-stay demand for the larger format",
+          "Paya Lebar Central / airbase relocation — long-dated narrative only; future-infra has no measured forward power"
+        ],
+        "rental_assessment": "Demand at Smart Suites is real but is shoebox demand. 22 cached contracts over 12mo: 1BR $2,900 median ($5.89 psf, 17 contracts), 2BR $3,700 ($4.71 psf, 5 contracts). Exactly one 3BR contract exists in the full URA D14 rental history for this project — $4,650/mo, Dec-23, 1,100-1,200 sqft. The D14 3BR 1,100-1,300 sqft market is deep and prices this unit at $4,400-$5,400 (2025-26 p25-p75, median $4,800, n=696). Expect $4,700-$5,000/mo => gross ~4.0-4.2%, net ~2.2-2.4%. The Aljunied location genuinely supports tenancy, but a $4,800 3BR in Geylang competes against far better-amenitied stock, while this project's proven tenant is a single professional paying $2,900 for a 450 sqft unit. Void risk on the large format is materially higher than the 1BR cohort.",
+        "appreciation_assessment": "Three independent measures converge on ~1.0-1.5%/yr: URA 5yr CAGR 1.35% (17 txns), realsmart annual median $1,364 psf (2016) -> $1,567 psf (2025) = +14.9% over 9yr (~1.55%/yr), and realsmart avg annualized profit 1.0%. Current priors de-weight trailing CAGR to ~zero forward power, so I am not forecasting 1.35% forward — but the corroboration across sources makes the STORY consistent: a boutique Geylang block that has reliably preserved capital (100% profitable) without compounding it. The forward signal that does carry weight — cheap-vs-district-peers — is absent here once size-mix is stripped out, and RCR region (+3.1%) is the only positive left, available in any RCR listing. Note the large-unit series specifically: $1,121 psf (Jan-22) -> $1,253 psf (Jul-23) with nothing since; a 1,163 sqft unit at $1,221 psf in 2026 is asking roughly flat-to-below the Jul-23 large-unit print, which is less a bargain than evidence the large-unit cohort here has gone nowhere for three years. Leaving the data rate in place rather than overriding: I have resale-to-resale evidence but no dated catalyst, and an override would just re-anchor on trailing CAGR.",
+        "stack_notes": "No researched profile exists for Smart Suites (stack_profile.status = not_researched), so stack/facing/floor cannot be assessed directly — weight this section lightly. What the prints do establish: all 17 URA transactions carry floor range '01 to 05', i.e. this is a 5-storey block, so there is no meaningful high-floor premium available and this unit sits somewhere in a narrow 5-floor spread. At 1,163 sqft it is the largest format in a project whose transacted sizes top out at 958 sqft and whose unit mix realsmart describes as heavily 1BR — consistent with the prior evaluation's read that this is a penthouse or top-floor combined unit. That is the crux: whatever its facing, it is a one-off within its own development with zero same-format comps, which is precisely why the cohort statistics are empty and why the exit is narrow. Sims Avenue frontage also carries traffic-noise and streetscape exposure. If the owner were to pursue this further, /research-development on Smart Suites would be the prerequisite.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 2.1,
+        "realsmart_pct_profitable": 100.0,
+        "realsmart_annual_return_pct": 1.0,
+        "realsmart_note": "realsmart.sg/p/smart-suites, data through 1 Jun 2026: REALSCORE 2.1/5, '100% Profitable' badge, avg annualized profit 1.0% (past 1y), behind 112 total transactions since 02-Dec-2004 (last 25-Jun-2025), $114.6M total transacted. Deep history, so the LOW score is signal not noise: capital has been preserved (nobody exited in the red) but not compounded. Read as downside evidence only, not an appreciation forecast."
+      },
+      "source": {
+        "run_dir": "output/run_037_500013848",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-smart-suites-500013848",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
