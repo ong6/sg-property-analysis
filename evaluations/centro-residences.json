@@ -112,6 +112,88 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500058461",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,356 sqft '3BR/2-bath' at Centro Residences asking $2.039M / $1,503 psf — the algo's headline -25.9% discount to the project median is a FORMAT artifact, not value. Centro's normal 743-1,281 sqft apartments transact and list at $1,900-$2,250 psf, but every large / low-bath unit (1,356-1,561 sqft, 2 baths) sits in a separate $1,497-$1,653 psf tier, and the format's only recent URA print (1,367 sqft, Mar-2026, floors 06-10) went at exactly $1,503 psf. This ask is AT its true comp, not below it — no margin of safety, on a 2.8-2.9% yield, into a queue of 8+ near-identical units listed simultaneously.",
+      "rating_rationale": "Score 859 (top of the book) is built almost entirely on psf_value (+10.08) and age_value (+15.76) — both fed by a phantom discount. Against the correct comp the discount is zero: the format's last print (1,367 sqft, fl 06-10, Mar-2026) was $1,503 psf and this unit asks $1,503 psf. EdgeProp's own 12-month range for Centro bottoms at exactly $1,503 psf — this listing sits on that floor, it does not undercut it. Strip the artifact and what remains is: an excellent transit position (100-140m to Ang Mo Kio NSL + future CR11 CRL interchange, integrated with AMK Hub), the favorable OCR/D20 forward region, deep project liquidity (466 lifetime txns, 50+ past year, 60 rental contracts last month) and reassuring downside evidence (realsmart 86.1% profitable on 166 matched pairs) — set against a 2.78% gross / 1.64% net yield, project median PSF flat 2025->2026 ($2,008 -> $2,014) with momentum -0.922, a narrow-buyer-pool format whose strata area is largely non-habitable, and 8-9 identical 1,356 sqft units competing right now in a 329-unit project. Fair price for a sound asset in a good location, with no edge and a crowded exit. Not a Buy; not broken enough to Avoid.",
+      "red_flags": [
+        "FORMAT ARTIFACT (primary): psf_premium_vs_ura_median_pct -25.9% and relative_value -22.3% both benchmark this unit against Centro's normal apartments. The listing book shows two distinct PSF tiers by sqft-per-bathroom: 818-1,281 sqft with 2-3 baths ask $2,044-$2,248 psf, while 1,356/1,367/1,453/1,561 sqft units with only 2 baths ask $1,497-$1,653 psf. A 1,356 sqft 3BR with 2 baths means much of that strata area is not interior living space (terrace/PES over the podium, or void) — structurally low PSF, not a bargain.",
+        "NO MARGIN OF SAFETY: ask $1,503 psf == the format's own last URA print ($1,503 psf, 1,367 sqft, floors 06 to 10, Mar-2026). The Dec-2025 print of the 1,561 sqft floor-06-10 unit was $1,511 psf. Two prints, both ~$1,505 — a consistent tier, and the ask is exactly on it.",
+        "SUPPLY OVERHANG IN THIS EXACT FORMAT: 9 listings of 1,356 sqft 3BR/2ba live at once ($1,497-$1,653 psf) plus a 1,367 and a 1,561 sqft. Out of 329 units. The format printed only twice in the entire 77-print URA history — thin demand meeting thick supply, and the same crowd will be there on exit.",
+        "WEAK CARRY: 2.78% gross / 1.64% net yield (realsmart project-level est. 2.9%). Centro 3BR rents cap out around $4,500-$5,200/mo regardless of size (Jun-2026 contracts: 900-1,000 sqft -> $4,500-$4,800; 1,100-1,200 sqft -> $5,200) — the extra ~350 sqft of non-habitable area rents for nothing, so this $2.04M unit earns no more than a $1.89M 926 sqft unit.",
+        "MOMENTUM STALLED: project median PSF 2024 $1,820 -> 2025 $2,008 -> 2026 $2,014 (flat YoY); factual_data momentum -0.922. The 6.2% trailing 5yr CAGR is backward-looking and carries ~0 forward power under current priors — do not extrapolate it.",
+        "SELLER ALREADY CUT 5.1% ($2,149,440 -> $2,038,700) and the unit is a relist (from id 500198864) — the cut is what got it TO fair value, not below it.",
+        "Only 2 bathrooms in a $2.04M 3-bedder narrows the family/upgrader buyer pool that a large unit depends on for exit.",
+        "NOISE: EdgeProp resident reviews explicitly flag MRT, bus terminal and street noise ('will disturb any resident of this building'); the format's URA prints are all on floors 06-10, the podium-adjacent levels — worst noise exposure with no compensating view.",
+        "FORMAT NOT VERIFIED FROM A FLOOR PLAN: no profile exists for Centro Residences (stack_profile.status = not_researched); PropertyGuru is Cloudflare-blocked so the listing description/floor could not be read. The two-tier pricing structure is solidly evidenced, but the mechanism (terrace vs void vs SOHO) is inferred — run /research-development before any transaction.",
+        "99yr from Dec-2007: 80 years left, ~73 at the end of a 5-7yr hold — fine, but lease decay compounds with a narrow-buyer-pool format.",
+        "psf_cohort_txns = 5 — the cohort behind every value signal on this unit is thin."
+      ],
+      "catalysts": [
+        "CR11 Ang Mo Kio Cross Island Line interchange (~2030) at ~128m — a dated, doorstep catalyst landing inside a 5-7yr hold (note: the future-infrastructure score has NO measured forward power in the backtest; treat as narrative support, not edge).",
+        "Genuinely elite transit position: 100-140m to Ang Mo Kio NSL, integrated with AMK Hub and the bus interchange — top-decile convenience, durable rental demand (60 rental contracts logged in the past month).",
+        "D20 / OCR is the favorable forward region under current priors (realized forward OCR +3.7%/yr > RCR +3.1% >> CCR +1.9%).",
+        "Deep, liquid project: 466 lifetime transactions, 50+ in the past year, 329 units — exit is slow only for THIS format, not for the project.",
+        "realsmart downside evidence: 86.1% profitable (142 of 166 matched resale pairs), avg holding 7.8yrs, $33.5M total profits — owners here have rarely lost money.",
+        "Mature Ang Mo Kio town centre with Jing Shan (432m) and Teck Ghee (628m) primary schools within 1km."
+      ],
+      "as_of": {
+        "price": 2038700,
+        "psf": 1503.47,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.2,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.78,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "A 1,356 sqft '3BR/2-bath' at Centro Residences asking $2.039M / $1,503 psf — the algo's headline -25.9% discount to the project median is a FORMAT artifact, not value. Centro's normal 743-1,281 sqft apartments transact and list at $1,900-$2,250 psf, but every large / low-bath unit (1,356-1,561 sqft, 2 baths) sits in a separate $1,497-$1,653 psf tier, and the format's only recent URA print (1,367 sqft, Mar-2026, floors 06-10) went at exactly $1,503 psf. This ask is AT its true comp, not below it — no margin of safety, on a 2.8-2.9% yield, into a queue of 8+ near-identical units listed simultaneously.",
+        "rating": "Neutral",
+        "rating_rationale": "Score 859 (top of the book) is built almost entirely on psf_value (+10.08) and age_value (+15.76) — both fed by a phantom discount. Against the correct comp the discount is zero: the format's last print (1,367 sqft, fl 06-10, Mar-2026) was $1,503 psf and this unit asks $1,503 psf. EdgeProp's own 12-month range for Centro bottoms at exactly $1,503 psf — this listing sits on that floor, it does not undercut it. Strip the artifact and what remains is: an excellent transit position (100-140m to Ang Mo Kio NSL + future CR11 CRL interchange, integrated with AMK Hub), the favorable OCR/D20 forward region, deep project liquidity (466 lifetime txns, 50+ past year, 60 rental contracts last month) and reassuring downside evidence (realsmart 86.1% profitable on 166 matched pairs) — set against a 2.78% gross / 1.64% net yield, project median PSF flat 2025->2026 ($2,008 -> $2,014) with momentum -0.922, a narrow-buyer-pool format whose strata area is largely non-habitable, and 8-9 identical 1,356 sqft units competing right now in a 329-unit project. Fair price for a sound asset in a good location, with no edge and a crowded exit. Not a Buy; not broken enough to Avoid.",
+        "red_flags": [
+          "FORMAT ARTIFACT (primary): psf_premium_vs_ura_median_pct -25.9% and relative_value -22.3% both benchmark this unit against Centro's normal apartments. The listing book shows two distinct PSF tiers by sqft-per-bathroom: 818-1,281 sqft with 2-3 baths ask $2,044-$2,248 psf, while 1,356/1,367/1,453/1,561 sqft units with only 2 baths ask $1,497-$1,653 psf. A 1,356 sqft 3BR with 2 baths means much of that strata area is not interior living space (terrace/PES over the podium, or void) — structurally low PSF, not a bargain.",
+          "NO MARGIN OF SAFETY: ask $1,503 psf == the format's own last URA print ($1,503 psf, 1,367 sqft, floors 06 to 10, Mar-2026). The Dec-2025 print of the 1,561 sqft floor-06-10 unit was $1,511 psf. Two prints, both ~$1,505 — a consistent tier, and the ask is exactly on it.",
+          "SUPPLY OVERHANG IN THIS EXACT FORMAT: 9 listings of 1,356 sqft 3BR/2ba live at once ($1,497-$1,653 psf) plus a 1,367 and a 1,561 sqft. Out of 329 units. The format printed only twice in the entire 77-print URA history — thin demand meeting thick supply, and the same crowd will be there on exit.",
+          "WEAK CARRY: 2.78% gross / 1.64% net yield (realsmart project-level est. 2.9%). Centro 3BR rents cap out around $4,500-$5,200/mo regardless of size (Jun-2026 contracts: 900-1,000 sqft -> $4,500-$4,800; 1,100-1,200 sqft -> $5,200) — the extra ~350 sqft of non-habitable area rents for nothing, so this $2.04M unit earns no more than a $1.89M 926 sqft unit.",
+          "MOMENTUM STALLED: project median PSF 2024 $1,820 -> 2025 $2,008 -> 2026 $2,014 (flat YoY); factual_data momentum -0.922. The 6.2% trailing 5yr CAGR is backward-looking and carries ~0 forward power under current priors — do not extrapolate it.",
+          "SELLER ALREADY CUT 5.1% ($2,149,440 -> $2,038,700) and the unit is a relist (from id 500198864) — the cut is what got it TO fair value, not below it.",
+          "Only 2 bathrooms in a $2.04M 3-bedder narrows the family/upgrader buyer pool that a large unit depends on for exit.",
+          "NOISE: EdgeProp resident reviews explicitly flag MRT, bus terminal and street noise ('will disturb any resident of this building'); the format's URA prints are all on floors 06-10, the podium-adjacent levels — worst noise exposure with no compensating view.",
+          "FORMAT NOT VERIFIED FROM A FLOOR PLAN: no profile exists for Centro Residences (stack_profile.status = not_researched); PropertyGuru is Cloudflare-blocked so the listing description/floor could not be read. The two-tier pricing structure is solidly evidenced, but the mechanism (terrace vs void vs SOHO) is inferred — run /research-development before any transaction.",
+          "99yr from Dec-2007: 80 years left, ~73 at the end of a 5-7yr hold — fine, but lease decay compounds with a narrow-buyer-pool format.",
+          "psf_cohort_txns = 5 — the cohort behind every value signal on this unit is thin."
+        ],
+        "catalysts": [
+          "CR11 Ang Mo Kio Cross Island Line interchange (~2030) at ~128m — a dated, doorstep catalyst landing inside a 5-7yr hold (note: the future-infrastructure score has NO measured forward power in the backtest; treat as narrative support, not edge).",
+          "Genuinely elite transit position: 100-140m to Ang Mo Kio NSL, integrated with AMK Hub and the bus interchange — top-decile convenience, durable rental demand (60 rental contracts logged in the past month).",
+          "D20 / OCR is the favorable forward region under current priors (realized forward OCR +3.7%/yr > RCR +3.1% >> CCR +1.9%).",
+          "Deep, liquid project: 466 lifetime transactions, 50+ in the past year, 329 units — exit is slow only for THIS format, not for the project.",
+          "realsmart downside evidence: 86.1% profitable (142 of 166 matched resale pairs), avg holding 7.8yrs, $33.5M total profits — owners here have rarely lost money.",
+          "Mature Ang Mo Kio town centre with Jing Shan (432m) and Teck Ghee (628m) primary schools within 1km."
+        ],
+        "rental_assessment": "Adequate but unexciting, and structurally capped. Centro has a deep rental market — 60 contracts in the past month, median $4,650/mo, range $4,100-$7,952 — driven by the doorstep MRT/AMK Hub position. But Jun-2026 3BR contracts show $4,500-$4,800 for 900-1,000 sqft and $5,200 for 1,100-1,200 sqft: rent tracks bedroom count and interior space, not strata area. This unit's ~350 sqft of non-habitable area earns nothing, so realistic rent is ~$5,000/mo -> 2.94% gross on the $2.039M ask. That is thin carry on an all-cash position and no better than the smaller, more liquid units in the same tower. Per current priors, low yield is not itself a negative appreciation signal (high yield actually predicts LOWER forward growth), so treat this as weak carry rather than a valuation red flag.",
+        "appreciation_assessment": "Overriding the 6.2% ura_5yr_cagr down to 4.0%/yr. The trailing figure is a 2021-2025 bull-regime artifact: project median PSF ran $1,494 (2021) -> $2,008 (2025) but then went FLAT into 2026 ($2,014, 12 sales), and factual_data momentum is -0.922. Forward-grounded evidence points lower: realsmart's resale-to-resale record across 166 matched pairs averages 4.5%/yr annualized over a 7.8yr mean hold, and the backtested realized forward OCR rate is +3.7%/yr (config OCR baseline 4.2%). I take 4.0% — the resale-pair record, discounted for the flat 2025->2026 print and for this format's supply overhang and narrow buyer pool, and supported by the dated CR11 CRL 2030 catalyst. At 4.0% with $5,000 rent the all-cash return is ~3.9%/yr over 5yr and ~4.0%/yr over 7yr: a fair, unremarkable outcome with no valuation edge to cushion it.",
+        "stack_notes": "No researched profile exists for Centro Residences — stack_profile.status = not_researched, so no verified stack/facing/floor join. Inferred from the transaction and listing evidence: this ~1,356 sqft 2-bath format is a distinct low-floor product. Both URA prints of the format (1,367 sqft Mar-2026, 1,561 sqft Dec-2025) are on floors 06 to 10, whereas every 1,173-1,281 sqft print at $1,989-$2,173 psf sits on floors 16-35. This is not a general low-floor effect at Centro — the 872 sqft cohort shows floors 06-10 ($1,868 psf, Jan-25) essentially level with floors 26-30 ($1,892 psf, Jun-25). So the ~26% gap is the format, not the height: a large strata area with only 2 bathrooms on the podium-adjacent levels. Best-in-project by contrast is the 1,206-1,281 sqft high-floor band ($2,000-$2,170 psf transacted, floors 21-35) — real view, real interior area, and the deepest recent print set. Run /research-development \"Centro Residences\" to confirm the exact stack, floor and whether the extra area is enclosed terrace, PES over podium, or double-volume void before transacting.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "realsmart.sg resale-to-resale record: 166 matched profit/loss pairs (142 profitable / 24 not), avg 4.5%/yr annualized over a 7.8yr mean holding period; discounted to 4.0% for the flat 2025->2026 project median PSF ($2,008 -> $2,014, 12 sales) and this format's supply overhang. Cross-checked against the backtested realized forward OCR rate (+3.7%/yr). NOT the 6.2% trailing ura_5yr_cagr, which is bull-regime and forward-uninformative.",
+        "realscore": 3.5,
+        "realsmart_pct_profitable": 86.1,
+        "realsmart_annual_return_pct": 4.5
+      },
+      "source": {
+        "run_dir": "output/run_045_500075630",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500075630",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
