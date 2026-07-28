@@ -116,6 +116,176 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-alexis-23468296",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A freehold 635sqft 2BR at Alexis (D03 Queenstown, 480m to Queenstown MRT) asking $1.05M / $1,654 psf. The ask is genuine and fairly priced — ~3% below the project's own same-size 24-month URA prints (median $1,702, n=6, latest Apr-2026 at $1,714 psf) — but it is fair value, not a bargain. The 755 score rests on a 4.8%/yr project CAGR that same-size resale-to-resale evidence contradicts: within this unit's 546-700sqft band, median PSF moved $1,691 (2021-22) to $1,702 (2024H2-2026), roughly 0.2%/yr, while the project-wide 'appreciation' came almost entirely from a mix shift (median transacted size fell 657sqft to 420sqft; shoebox share 46% to 78%). Real carry (~4.1% gross on URA-evidenced rent) and solid downside support, but no credible appreciation case.",
+      "rating_rationale": "PRICED FAIRLY, NOT CHEAPLY. The headline -22.5% vs age-adjusted D03 peers is structural, not opportunity. Against the only comp set that matters — Alexis' own 591-679sqft prints — the ask is just -2.8% (median $1,702, n=6). MMR's own v3.12 low-floor flag fired at stack_low_floor_share = 1.00 (all 6 same-size prints on floors 01-05; Alexis is a 2-block low-rise), which already halved value credit and applied -7; research explains the remaining district gap: the project fronts Alexandra Road with documented resident noise complaints (the developer's own double-glazing on the road-facing side concedes the issue), an 18-21 shop retail podium generating foot traffic and lax security, plus recurring mould/ventilation and maintenance complaints. APPRECIATION INPUT IS A MIX ARTIFACT. Project median PSF rose $1,479 (2021) to $1,870 (2026), +26%, but median transacted size collapsed from 657 to 420sqft over the same period. Band-by-band: 546-700sqft +0.7% total (~0.2%/yr), 350-545sqft shoebox +2.6% (~0.9%/yr). The exact 635sqft layout printed $1,771 psf (Jun-2022) and $1,748 psf (Oct-2023); today's ask is $1,654. This unit's size band has not participated in RCR's move. Overrode 4.8% to 2.5%/yr, which drops all-cash 5yr annualized ROI from 5.6% to ~3.5%. REALSMART CORROBORATES: REALSCORE 2.3/5 on a deep sample (295 matched resale pairs) — bottom-half nationally and well under D3 peers Queens 3.6 and Stirling Residences 4.2 — with avg annualized profit of just 1.7% over the past year. The 90.5% profitable figure (266 vs 29) is real downside evidence, not upside: it mostly reflects owners who entered at 2008-2012 launch or 2020-21 lows. NOT AVOID: freehold, 480m to EW19, a verified-fair ask, ~4.1% gross carry on real URA contracts, a low $1.05M ticket with a wide buyer pool, and 589 lifetime transactions across 293 units give genuine liquidity and downside support. NOT A BUY: strip the mix-artifact CAGR and the floor/quality-driven district discount and nothing is left to pay for the risk — a compact 2BR with a single bathroom, in a project with ~3% of stock listed for sale and ~9.5% on the rental market at once.",
+      "red_flags": [
+        "Appreciation input is a mix artifact: project CAGR 4.8%/yr is driven by median transacted size falling 657sqft (2021) to 420sqft (2026) and shoebox share rising 46% to 78% — not by same-size price growth",
+        "This unit's own size band (546-700sqft) is flat: median PSF $1,691 (2021-22, n=4) to $1,702 (2024H2-2026, n=6), ~0.2%/yr; the exact 635sqft layout printed $1,771 psf in Jun-2022 vs $1,654 asked today",
+        "stack_low_floor_share = 1.00 — all 6 same-size 24mo prints sit on floors 01-05, so the district-relative discount is partly a structural floor discount, not underpricing (MMR already applied -7 and halved value credit)",
+        "REALSCORE 2.3/5 on 295 matched resale pairs — bottom-half national profitability rank, vs D3 peers Queens 3.6 / Stirling Residences 4.2; avg annualized profit past 1y only 1.7%",
+        "Documented resident complaints: Alexandra Road traffic noise (developer fitted double-glazing on the road-facing side), mould/humidity from poor ventilation, poor maintenance, and lax security via the retail podium",
+        "Mixed-use development (293 residential + 18-21 shops) — retail foot traffic through common areas is a recurring complaint and a structural drag on the residential premium",
+        "Concurrent supply: ~9 distinct Alexis units listed for sale (~3% of 293) and ~28 units on the rental market (~9.5% of stock) — heavily investor-owned, so both exit and rental competition are live",
+        "2BR with only 1 bathroom at 635sqft — narrows both tenant and resale buyer pools; livability score 47 (below neutral 50)",
+        "Modelled rent $3,800/mo (ura_project_bed) looks ~6% high for this size: the URA contract for a 600-700sqft 2BR at Alexis was $3,600/mo (Jun-2026); true gross yield ~4.1%, not 4.34%",
+        "Momentum -0.875 (negative), consistent with the flat band",
+        "No stack profile for Alexis — this unit's floor and facing are unverified, and Alexandra-Road-facing vs inner-facing is the single biggest swing factor here (listing page unreachable behind Cloudflare on this run)"
+      ],
+      "catalysts": [
+        "Ask verified fair against the project's own prints: -2.8% vs the 591-679sqft 24mo median of $1,702 (n=6, latest Apr-2026 at $1,714 psf, 624sqft, $1.07M) — a real ask, not a bait or mis-scrape",
+        "Cheapest small-2BR ask at Alexis by a wide margin (the only other 2BR under 700sqft asks $2,040 psf at 603sqft — unrealistic vs $1,690 printed for that size in Jun-2025)",
+        "Freehold in RCR/D03 with 480m (353m straight-line) to Queenstown MRT EW19 — genuine locational quality, and freehold preserves hold optionality (though not a measured forward return edge)",
+        "90.5% of Alexis resales profitable (266 vs 29) across 295 matched pairs, avg holding 5.3yrs — deep, real downside evidence that this project rarely loses owners money",
+        "Deep liquidity for its size: 589 lifetime transactions, 50+ deals in the past year, 293 units, 67 URA prints in cache — an easy unit to exit at a price, if not at a profit",
+        "Low $1.05M absolute ticket sits in a wide buyer band; ~4.1% gross yield on URA-evidenced rent is solid carry for a freehold RCR unit",
+        "Within 1km of Queenstown Primary School (534m); Queenstown/Alexandra remains a mature, well-amenitised RCR estate"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1653.54,
+        "beds": 2,
+        "sqft": 635.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.8,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.34,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": 999
+      },
+      "agent_evaluation": {
+        "summary": "A freehold 635sqft 2BR at Alexis (D03 Queenstown, 480m to Queenstown MRT) asking $1.05M / $1,654 psf. The ask is genuine and fairly priced — ~3% below the project's own same-size 24-month URA prints (median $1,702, n=6, latest Apr-2026 at $1,714 psf) — but it is fair value, not a bargain. The 755 score rests on a 4.8%/yr project CAGR that same-size resale-to-resale evidence contradicts: within this unit's 546-700sqft band, median PSF moved $1,691 (2021-22) to $1,702 (2024H2-2026), roughly 0.2%/yr, while the project-wide 'appreciation' came almost entirely from a mix shift (median transacted size fell 657sqft to 420sqft; shoebox share 46% to 78%). Real carry (~4.1% gross on URA-evidenced rent) and solid downside support, but no credible appreciation case.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "PRICED FAIRLY, NOT CHEAPLY. The headline -22.5% vs age-adjusted D03 peers is structural, not opportunity. Against the only comp set that matters — Alexis' own 591-679sqft prints — the ask is just -2.8% (median $1,702, n=6). MMR's own v3.12 low-floor flag fired at stack_low_floor_share = 1.00 (all 6 same-size prints on floors 01-05; Alexis is a 2-block low-rise), which already halved value credit and applied -7; research explains the remaining district gap: the project fronts Alexandra Road with documented resident noise complaints (the developer's own double-glazing on the road-facing side concedes the issue), an 18-21 shop retail podium generating foot traffic and lax security, plus recurring mould/ventilation and maintenance complaints. APPRECIATION INPUT IS A MIX ARTIFACT. Project median PSF rose $1,479 (2021) to $1,870 (2026), +26%, but median transacted size collapsed from 657 to 420sqft over the same period. Band-by-band: 546-700sqft +0.7% total (~0.2%/yr), 350-545sqft shoebox +2.6% (~0.9%/yr). The exact 635sqft layout printed $1,771 psf (Jun-2022) and $1,748 psf (Oct-2023); today's ask is $1,654. This unit's size band has not participated in RCR's move. Overrode 4.8% to 2.5%/yr, which drops all-cash 5yr annualized ROI from 5.6% to ~3.5%. REALSMART CORROBORATES: REALSCORE 2.3/5 on a deep sample (295 matched resale pairs) — bottom-half nationally and well under D3 peers Queens 3.6 and Stirling Residences 4.2 — with avg annualized profit of just 1.7% over the past year. The 90.5% profitable figure (266 vs 29) is real downside evidence, not upside: it mostly reflects owners who entered at 2008-2012 launch or 2020-21 lows. NOT AVOID: freehold, 480m to EW19, a verified-fair ask, ~4.1% gross carry on real URA contracts, a low $1.05M ticket with a wide buyer pool, and 589 lifetime transactions across 293 units give genuine liquidity and downside support. NOT A BUY: strip the mix-artifact CAGR and the floor/quality-driven district discount and nothing is left to pay for the risk — a compact 2BR with a single bathroom, in a project with ~3% of stock listed for sale and ~9.5% on the rental market at once.",
+        "red_flags": [
+          "Appreciation input is a mix artifact: project CAGR 4.8%/yr is driven by median transacted size falling 657sqft (2021) to 420sqft (2026) and shoebox share rising 46% to 78% — not by same-size price growth",
+          "This unit's own size band (546-700sqft) is flat: median PSF $1,691 (2021-22, n=4) to $1,702 (2024H2-2026, n=6), ~0.2%/yr; the exact 635sqft layout printed $1,771 psf in Jun-2022 vs $1,654 asked today",
+          "stack_low_floor_share = 1.00 — all 6 same-size 24mo prints sit on floors 01-05, so the district-relative discount is partly a structural floor discount, not underpricing (MMR already applied -7 and halved value credit)",
+          "REALSCORE 2.3/5 on 295 matched resale pairs — bottom-half national profitability rank, vs D3 peers Queens 3.6 / Stirling Residences 4.2; avg annualized profit past 1y only 1.7%",
+          "Documented resident complaints: Alexandra Road traffic noise (developer fitted double-glazing on the road-facing side), mould/humidity from poor ventilation, poor maintenance, and lax security via the retail podium",
+          "Mixed-use development (293 residential + 18-21 shops) — retail foot traffic through common areas is a recurring complaint and a structural drag on the residential premium",
+          "Concurrent supply: ~9 distinct Alexis units listed for sale (~3% of 293) and ~28 units on the rental market (~9.5% of stock) — heavily investor-owned, so both exit and rental competition are live",
+          "2BR with only 1 bathroom at 635sqft — narrows both tenant and resale buyer pools; livability score 47 (below neutral 50)",
+          "Modelled rent $3,800/mo (ura_project_bed) looks ~6% high for this size: the URA contract for a 600-700sqft 2BR at Alexis was $3,600/mo (Jun-2026); true gross yield ~4.1%, not 4.34%",
+          "Momentum -0.875 (negative), consistent with the flat band",
+          "No stack profile for Alexis — this unit's floor and facing are unverified, and Alexandra-Road-facing vs inner-facing is the single biggest swing factor here (listing page unreachable behind Cloudflare on this run)"
+        ],
+        "catalysts": [
+          "Ask verified fair against the project's own prints: -2.8% vs the 591-679sqft 24mo median of $1,702 (n=6, latest Apr-2026 at $1,714 psf, 624sqft, $1.07M) — a real ask, not a bait or mis-scrape",
+          "Cheapest small-2BR ask at Alexis by a wide margin (the only other 2BR under 700sqft asks $2,040 psf at 603sqft — unrealistic vs $1,690 printed for that size in Jun-2025)",
+          "Freehold in RCR/D03 with 480m (353m straight-line) to Queenstown MRT EW19 — genuine locational quality, and freehold preserves hold optionality (though not a measured forward return edge)",
+          "90.5% of Alexis resales profitable (266 vs 29) across 295 matched pairs, avg holding 5.3yrs — deep, real downside evidence that this project rarely loses owners money",
+          "Deep liquidity for its size: 589 lifetime transactions, 50+ deals in the past year, 293 units, 67 URA prints in cache — an easy unit to exit at a price, if not at a profit",
+          "Low $1.05M absolute ticket sits in a wide buyer band; ~4.1% gross yield on URA-evidenced rent is solid carry for a freehold RCR unit",
+          "Within 1km of Queenstown Primary School (534m); Queenstown/Alexandra remains a mature, well-amenitised RCR estate"
+        ],
+        "rental_assessment": "Sound but below the modelled figure. The model uses $3,800/mo (ura_project_bed, conf 0.95), but the actual URA contract for a 600-700sqft 2BR at Alexis was $3,600/mo (Jun-2026), and the median across the latest 12 contracts is $3,150 (skewed by the shoebox-heavy mix). At $3,600 the gross yield is ~4.11%, not 4.34% — still respectable carry for a freehold RCR unit at a $1.05M ticket, and realsmart's independent estimate agrees at 4.3% project-wide / $6.60 avg PSF rental on 73 contracts in the past month. Demand drivers are real: 480m to Queenstown MRT, one stop to the CBD corridor, mature amenities. The drag is the single bathroom (couples/singles only, no shared-tenancy premium) and ~28 Alexis units competing on the rental market at once. Expect $3,400-3,700 achievable.",
+        "appreciation_assessment": "This is where the listing fails. The 4.8%/yr ura_5yr_cagr is a composition effect, not price growth: Alexis' median transacted size fell from 657sqft (2021) to 420sqft (2026) as shoebox share rose 46% to 78%, mechanically lifting median PSF from $1,479 to $1,870. Measured within size bands, the project has barely moved: 546-700sqft (this unit) $1,691 to $1,702, ~0.2%/yr; 350-545sqft shoebox $1,853 to $1,901, ~0.9%/yr. The exact 635sqft layout transacted at $1,771 psf (Jun-2022) and $1,748 psf (Oct-2023) — today's $1,654 ask is below both, four years on, in a period when RCR as a whole appreciated. Realsmart independently prints avg annualized profit of 1.7% over the past year and a REALSCORE of 2.3/5 across 295 matched pairs. Forward: I set 2.5%/yr — above the project's flat trailing band (trailing CAGR has ~0 forward power, so 0.2% would be its own error) but materially below the RCR 3.7% baseline, because the discount vs district peers is explained by floor mix, the Alexandra Road frontage and the retail podium rather than by mispricing. At 2.5% the all-cash 5yr annualized ROI is ~3.5%, not the 5.6% in the projections.",
+        "stack_notes": "No profile exists for Alexis (status: not_researched), so this unit's floor and facing are unverified — a real gap, since Alexandra-Road-facing vs inner/pool-facing is the biggest single swing on both noise and rentability here. What the prints do say: all 6 same-size (591-679sqft) 24-month prints are on floors 01-05 and stack_low_floor_share = 1.00. Alexis is a 2-block low-rise, so 01-05 is much of the building rather than a PES artifact — but it does mean the correct comp for this unit is $1,702 psf (its own band's prints), not the $2,135 age-adjusted D03 median. The 2BR/1-bath 635sqft configuration sits at the compact end of the project's 527-1,033sqft 2BR range. Before committing, verify facing (double-glazed road-facing units carry the noise), floor, and whether the unit is above the retail podium.",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "URA same-project, same-size resale-to-resale (no new-launch data): Alexis 546-700sqft band median PSF $1,691 (2021-22, n=4) to $1,702 (2024H2-2026, n=6) = ~0.2%/yr; 350-545sqft band $1,853 to $1,901 = ~0.9%/yr; the exact 635sqft layout $1,771 psf (Jun-2022) / $1,748 psf (Oct-2023) vs $1,654 asked now. Corroborated by realsmart avg annualized profit 1.7% (past 1y) and REALSCORE 2.3 on 295 matched pairs. Set at 2.5% rather than the trailing ~0.2% because trailing CAGR has ~0 forward power; 2.5% discounts the RCR 3.7% baseline for a project that demonstrably did not participate in its region's move. Downward override only — no new-launch inflation reintroduced.",
+        "realscore": 2.3,
+        "realsmart_pct_profitable": 90.5,
+        "realsmart_annual_return_pct": 1.7
+      },
+      "source": {
+        "run_dir": "output/run_040_500190924",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alexis-500190924",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-07-28",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 635sqft 2BR/1-bath at Alexis, a 293-unit freehold LOW-RISE mixed development (293 homes + 18 shops) 400-520m from Queenstown MRT, asking $1.05M / $1,654 psf. The carry is genuinely good (a signed Jun-2026 2BR 600-700sqft contract at $3,600/mo = 4.1% gross) and the downside record is deep and protective (realsmart 90.5% profitable on 295 matched pairs, 50+ deals/yr on 293 units). But the ask is at market, not below it, and this unit's own size band is the one band at Alexis that has not participated in the 2021-26 bull market at all - so you are buying carry and liquidity, not an entry discount that re-rates.",
+      "rating_rationale": "The 755 score and the -22.5% 'cheap vs age-adjusted D03 peers' reading both overstate the value case, for two separate reasons I could verify. (1) THE APPRECIATION INPUT IS A MIX ARTIFACT. The 4.8%/yr ura_5yr_cagr over 67 prints is composition, not price growth: Alexis's transacting mix shifted from 900+sqft units (median $1,263psf, 8 prints pre-2023) to sub-550sqft shoeboxes ($1,900-2,100psf, nearly all of 2025-26), with ZERO 900+sqft prints since 2023. Split by size band, the subject's own 590-700sqft band went $1,703 (pre-2023) -> $1,702 (2024+), -0.1%, while shoebox +6.7%, 450-590 +10.9%, 700-900 +9.6%. Exact-size evidence is starker: 635sqft printed $1,771 in Jun-22 and $1,748 in Oct-23 - today's $1,654 ask is BELOW both, four years on. (2) THE DISCOUNT VS D03 PEERS IS STRUCTURAL AND PERMANENT. All 67 URA prints sit on floors 01-10 (52 of 67 on 01-05) because Alexis is low-rise; its D03 comparators (Alex Residences, Stirling Residences, Queens Peak) are high-rise towers. MMR correctly fires stack_low_floor_share>=0.7 (low_floor -7.0, psf_value halved) but still credits +7.94 age_value off that same structural gap - I discount most of it, because a low-rise mixed-use project does not re-rate to tower PSF. Against its OWN tight comps the unit is merely fair: -2.8% vs the six 590-700sqft prints in 24mo (Apr-26 624sqft went at $1,714). Layered on that: documented, specific maintenance failure (mouldy walls, peeling paint, leaking carpark pipes, power/water outages, dead facilities, dormitory-narrow corridors; SingaporeExpats 6.9/10 on 14 reviews) plus workshop and Alexandra Road noise - a credible mechanism for why the band is stuck, since shoebox investors never live there while 600-700sqft 2BR buyers do. A 2BR with ONE bathroom narrows both the tenant and resale pool (livability 47). It is not an Avoid: the ask is at market rather than above it, the yield is real, and 90.5%-profitable on 295 pairs is genuine downside protection. It is simply a fair price for a project whose mid-size stock has gone nowhere. At ~$1,500-1,550psf ($955k-985k) the entry discount would start paying for the maintenance risk; at $1,654 it does not.",
+      "red_flags": [
+        "Subject's own 590-700sqft band is FLAT: pre-2023 median $1,703psf -> 2024+ median $1,702psf (-0.1%), while every other size band at Alexis rose 6.7-10.9%",
+        "Exact-size comps went DOWN: 635sqft printed $1,771psf (Jun-22) and $1,748psf (Oct-23) vs today's $1,654psf ask",
+        "The 4.8%/yr ura_5yr_cagr is a composition artifact - transacting mix shifted from 900+sqft ($1,263psf) to shoeboxes ($1,900-2,100psf); zero 900+sqft prints since 2023",
+        "stack_low_floor_share>=0.7 fires, but it is a whole-development property: all 67 URA prints are floors 01-10 (52 of 67 on 01-05). The -22.5% vs age-adjusted D03 peers is a permanent low-rise-vs-tower gap, not an entry edge",
+        "Documented maintenance/build failures: mouldy walls, peeling paint, leaking carpark pipes, power outages, water supply cuts, non-working facilities, dark/wet carpark, narrow dormitory-like corridors (SingaporeExpats 6.9/10, 14 reviews)",
+        "Noise: workshop/factory noise to the rear, plus speeding vehicles and road noise on Alexandra Road; facing not disclosed in the listing",
+        "2BR with only ONE bathroom at 635sqft - compromised layout, narrows tenant and resale buyer pool (livability_score 47, below neutral 50)",
+        "REALSCORE 2.3/5 (below-average national profitability rank) and avg annualized profit of just 1.7% over the past year; MMR momentum -0.875",
+        "Mixed-use with 18 shops and a shoebox-heavy unit mix (366sqft minimum) - transient owner/tenant base, and the MCST's track record on upkeep is poor",
+        "Floor, facing and unit condition all undisclosed, and no researched profile exists for Alexis - though the low-rise ceiling caps how much a good floor could help",
+        "Penrith @ Queenstown (462 units, Margaret Drive) and Margaret Drive Residences add competing rental stock on completion, inside a 5-7yr hold window",
+        "Built-year conflict: PropertyGuru tags 2014, URA/realsmart show 2012 completion (age 12 vs 14 - minor, but the DB uses the later one)"
+      ],
+      "catalysts": [
+        "Strong, real carry: signed Jun-2026 contract for a 2BR 600-700sqft at $3,600/mo = 4.1% gross / ~2.9% net - well above typical D03 stock at 3-3.5%",
+        "400-520m walk to Queenstown MRT (EW19); RCR is the second-best forward region in the backtest (+3.1%/yr realized) behind OCR",
+        "Deep downside record: realsmart 90.5% profitable on 295 matched pairs (266 profitable / 29 unprofitable), $55.5M total profits, avg holding 5.3yrs - this project has rarely lost owners money",
+        "Unusual exit liquidity: 589 lifetime transactions and 50+ deals in the past year against just 293 units; buyer_pool_depth 'deep'",
+        "Priced at/just under its own tight comps (-2.8% vs six 590-700sqft prints in 24mo) and well under the competing live 603sqft 2BR ask at Alexis ($2,040psf)",
+        "Freehold - preserves optionality and removes lease-decay risk (a ~5% PSF level premium already in the price, not a forward return edge)",
+        "Queenstown Primary 534m; Greater Southern Waterfront corridor over the long horizon"
+      ],
+      "as_of": {
+        "price": 1050000,
+        "psf": 1653.54,
+        "beds": 2,
+        "sqft": 635.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.8,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.34,
+        "nearest_mrt": null,
+        "tenure": "Freehold",
+        "remaining_lease": 999
+      },
+      "agent_evaluation": {
+        "summary": "A 635sqft 2BR/1-bath at Alexis, a 293-unit freehold LOW-RISE mixed development (293 homes + 18 shops) 400-520m from Queenstown MRT, asking $1.05M / $1,654 psf. The carry is genuinely good (a signed Jun-2026 2BR 600-700sqft contract at $3,600/mo = 4.1% gross) and the downside record is deep and protective (realsmart 90.5% profitable on 295 matched pairs, 50+ deals/yr on 293 units). But the ask is at market, not below it, and this unit's own size band is the one band at Alexis that has not participated in the 2021-26 bull market at all - so you are buying carry and liquidity, not an entry discount that re-rates.",
+        "rating": "Neutral",
+        "rating_rationale": "The 755 score and the -22.5% 'cheap vs age-adjusted D03 peers' reading both overstate the value case, for two separate reasons I could verify. (1) THE APPRECIATION INPUT IS A MIX ARTIFACT. The 4.8%/yr ura_5yr_cagr over 67 prints is composition, not price growth: Alexis's transacting mix shifted from 900+sqft units (median $1,263psf, 8 prints pre-2023) to sub-550sqft shoeboxes ($1,900-2,100psf, nearly all of 2025-26), with ZERO 900+sqft prints since 2023. Split by size band, the subject's own 590-700sqft band went $1,703 (pre-2023) -> $1,702 (2024+), -0.1%, while shoebox +6.7%, 450-590 +10.9%, 700-900 +9.6%. Exact-size evidence is starker: 635sqft printed $1,771 in Jun-22 and $1,748 in Oct-23 - today's $1,654 ask is BELOW both, four years on. (2) THE DISCOUNT VS D03 PEERS IS STRUCTURAL AND PERMANENT. All 67 URA prints sit on floors 01-10 (52 of 67 on 01-05) because Alexis is low-rise; its D03 comparators (Alex Residences, Stirling Residences, Queens Peak) are high-rise towers. MMR correctly fires stack_low_floor_share>=0.7 (low_floor -7.0, psf_value halved) but still credits +7.94 age_value off that same structural gap - I discount most of it, because a low-rise mixed-use project does not re-rate to tower PSF. Against its OWN tight comps the unit is merely fair: -2.8% vs the six 590-700sqft prints in 24mo (Apr-26 624sqft went at $1,714). Layered on that: documented, specific maintenance failure (mouldy walls, peeling paint, leaking carpark pipes, power/water outages, dead facilities, dormitory-narrow corridors; SingaporeExpats 6.9/10 on 14 reviews) plus workshop and Alexandra Road noise - a credible mechanism for why the band is stuck, since shoebox investors never live there while 600-700sqft 2BR buyers do. A 2BR with ONE bathroom narrows both the tenant and resale pool (livability 47). It is not an Avoid: the ask is at market rather than above it, the yield is real, and 90.5%-profitable on 295 pairs is genuine downside protection. It is simply a fair price for a project whose mid-size stock has gone nowhere. At ~$1,500-1,550psf ($955k-985k) the entry discount would start paying for the maintenance risk; at $1,654 it does not.",
+        "red_flags": [
+          "Subject's own 590-700sqft band is FLAT: pre-2023 median $1,703psf -> 2024+ median $1,702psf (-0.1%), while every other size band at Alexis rose 6.7-10.9%",
+          "Exact-size comps went DOWN: 635sqft printed $1,771psf (Jun-22) and $1,748psf (Oct-23) vs today's $1,654psf ask",
+          "The 4.8%/yr ura_5yr_cagr is a composition artifact - transacting mix shifted from 900+sqft ($1,263psf) to shoeboxes ($1,900-2,100psf); zero 900+sqft prints since 2023",
+          "stack_low_floor_share>=0.7 fires, but it is a whole-development property: all 67 URA prints are floors 01-10 (52 of 67 on 01-05). The -22.5% vs age-adjusted D03 peers is a permanent low-rise-vs-tower gap, not an entry edge",
+          "Documented maintenance/build failures: mouldy walls, peeling paint, leaking carpark pipes, power outages, water supply cuts, non-working facilities, dark/wet carpark, narrow dormitory-like corridors (SingaporeExpats 6.9/10, 14 reviews)",
+          "Noise: workshop/factory noise to the rear, plus speeding vehicles and road noise on Alexandra Road; facing not disclosed in the listing",
+          "2BR with only ONE bathroom at 635sqft - compromised layout, narrows tenant and resale buyer pool (livability_score 47, below neutral 50)",
+          "REALSCORE 2.3/5 (below-average national profitability rank) and avg annualized profit of just 1.7% over the past year; MMR momentum -0.875",
+          "Mixed-use with 18 shops and a shoebox-heavy unit mix (366sqft minimum) - transient owner/tenant base, and the MCST's track record on upkeep is poor",
+          "Floor, facing and unit condition all undisclosed, and no researched profile exists for Alexis - though the low-rise ceiling caps how much a good floor could help",
+          "Penrith @ Queenstown (462 units, Margaret Drive) and Margaret Drive Residences add competing rental stock on completion, inside a 5-7yr hold window",
+          "Built-year conflict: PropertyGuru tags 2014, URA/realsmart show 2012 completion (age 12 vs 14 - minor, but the DB uses the later one)"
+        ],
+        "catalysts": [
+          "Strong, real carry: signed Jun-2026 contract for a 2BR 600-700sqft at $3,600/mo = 4.1% gross / ~2.9% net - well above typical D03 stock at 3-3.5%",
+          "400-520m walk to Queenstown MRT (EW19); RCR is the second-best forward region in the backtest (+3.1%/yr realized) behind OCR",
+          "Deep downside record: realsmart 90.5% profitable on 295 matched pairs (266 profitable / 29 unprofitable), $55.5M total profits, avg holding 5.3yrs - this project has rarely lost owners money",
+          "Unusual exit liquidity: 589 lifetime transactions and 50+ deals in the past year against just 293 units; buyer_pool_depth 'deep'",
+          "Priced at/just under its own tight comps (-2.8% vs six 590-700sqft prints in 24mo) and well under the competing live 603sqft 2BR ask at Alexis ($2,040psf)",
+          "Freehold - preserves optionality and removes lease-decay risk (a ~5% PSF level premium already in the price, not a forward return edge)",
+          "Queenstown Primary 534m; Greater Southern Waterfront corridor over the long horizon"
+        ],
+        "rental_assessment": "The strongest part of this listing. Alexis is a proven rental machine - 73 contracts in the past month alone, avg $6.60 psf, realsmart's estimated yield 4.3%. For this exact band a 2BR 600-700sqft signed at $3,600/mo on 1 Jun 2026, and a live 635sqft 2BR/1-bath is asking $3,900. I use $3,600 as the defensible number (the DB's $3,800 is at the top of plausible; the $6.60 avg psf is inflated by shoeboxes leasing at ~$7.65 psf). That gives 4.11% gross / ~2.9% net - genuinely good for RCR. Demand is MRT-and-CBD-access driven and should hold. Two caveats: the single bathroom rules out unrelated co-tenants sharing, which is the main 2BR rental use case at this size; and Penrith (462u) plus Margaret Drive Residences add competing stock on completion inside the hold window. Per the backtest priors, count this yield as CARRY only - high gross yield predicts LOWER forward price growth (std_beta -0.16), and Alexis's own history is exactly that pattern.",
+        "appreciation_assessment": "I override the 4.8%/yr data rate down to 2.5%/yr on resale-to-resale evidence within the subject's own size band. The 4.8% is a Simpson's-paradox mix effect, not price growth: the pooled project median rose $1,479psf (2021) -> $1,870psf (2026) purely because the transacting mix moved from 900+sqft units at ~$1,263psf to sub-550sqft shoeboxes at $1,900-2,100psf, with no 900+sqft print since 2023. Band-by-band over the same window: shoebox <450sqft +6.7%, 450-590 +10.9%, 700-900 +9.6%, and the subject's 590-700sqft band -0.1% ($1,703 -> $1,702). The exact-size series is the cleanest read available: 635sqft at $1,771psf (Jun-22), $1,748psf (Oct-23), and now asking $1,654psf. Four years of a strong bull market produced nothing here. Corroborated independently by realsmart's REALSCORE 2.3/5 and 1.7% avg annualized profit over the past year, and by MMR momentum -0.875. I do not go to zero - four years is a short window, Jun-22 was the band's local peak, and RCR's realized forward baseline is ~3.1%/yr - so 2.5%/yr is my haircut for the demonstrated structural drag. At 2.5% appreciation and $3,600 rent the all-cash 5yr annualized ROI is ~3.5% (vs the run's 5.56% at the unadjusted rate): positive, but thin compensation for a project with this maintenance record.",
+        "stack_notes": "No researched profile exists for Alexis (stack_profile: not_researched) and the listing discloses neither floor nor facing - but the ceiling is low either way. Every one of the 67 URA prints at Alexis is on floors 01-10, with 52 of 67 on 01-05: this is a low-rise mixed development (293 homes over 18 shops), so there is no high-floor or view stock to aspire to and little floor premium to capture. That is why stack_low_floor_share>=0.7 fires here as a property of the WHOLE development rather than of one bad stack - and why I treat the -22.5% gap to age-adjusted D03 peers (all high-rise towers) as permanent rather than as an entry discount. The material unknowns that remain are facing and condition: rear-facing units catch workshop noise, Alexandra Road-facing units catch traffic noise, and residents report mould in units. Any of those would move the call - worth confirming on a viewing before acting, and worth running /research-development on Alexis if the owner wants to transact here.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "Resale-to-resale within the subject's own size band at Alexis (URA prints): 590-700sqft band median $1,703psf pre-2023 vs $1,702psf 2024+ (-0.1%); exact-635sqft prints $1,771psf Jun-22 and $1,748psf Oct-23 vs $1,654psf ask today. The pooled 4.8%/yr ura_5yr_cagr is a size-mix artifact (mix moved from 900+sqft at $1,263psf to shoeboxes at $1,900-2,100psf; no 900+sqft print since 2023). 2.5% = RCR realized forward baseline (~3.1%) haircut for the band's demonstrated non-participation; corroborated by realsmart REALSCORE 2.3 and 1.7% avg annualized profit past 1y.",
+        "realscore": 2.3,
+        "realsmart_pct_profitable": 90.5,
+        "realsmart_annual_return_pct": 1.7
+      },
+      "source": {
+        "run_dir": "output/run_041_500190924",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-alexis-500190924",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
