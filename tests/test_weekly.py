@@ -373,13 +373,21 @@ class TestStorePush:
 
 
 class TestRealsmart:
-    def test_slug_from_project_name(self):
-        assert weekly.realsmart_url("JadeScape") == "https://realsmart.sg/p/jadescape"
-        assert weekly.realsmart_url("The Continuum") == \
-            "https://realsmart.sg/p/the-continuum"
-        assert weekly.realsmart_url("8 @ Mount Sophia") == \
-            "https://realsmart.sg/p/8-mount-sophia"
-        assert weekly.realsmart_url(None) == "https://realsmart.sg/p/"
+    def test_url_resolves_against_the_sitemap_index(self, monkeypatch):
+        import realsmart
+        idx = {"slugs": ["jadescape", "west-bay-condominium", "the-continuum"]}
+        monkeypatch.setattr(realsmart, "load_slugs", lambda: idx)
+        assert weekly.realsmart_url("JadeScape") == \
+            ("https://realsmart.sg/p/jadescape", True)
+        # the case guessing gets wrong: PG abbreviates, realsmart spells it out
+        assert weekly.realsmart_url("West Bay Condo") == \
+            ("https://realsmart.sg/p/west-bay-condominium", True)
+
+    def test_unresolved_name_falls_back_and_says_so(self, monkeypatch):
+        import realsmart
+        monkeypatch.setattr(realsmart, "load_slugs", lambda: {"slugs": ["other"]})
+        url, ok = weekly.realsmart_url("Totally New Launch")
+        assert url == "https://realsmart.sg/p/totally-new-launch" and ok is False
 
     def test_prompt_requires_the_lookup_with_a_real_url(self):
         cand = {"id": "a", "project_name": "JadeScape", "score_1000": 700,
@@ -387,6 +395,13 @@ class TestRealsmart:
         p = weekly._agent_prompt(cand)
         assert "realsmart.sg/p/jadescape" in p
         assert "REALSCORE" in p and "never guess a number" in p
+
+    def test_prompt_flags_an_unresolved_url_as_a_guess(self, monkeypatch):
+        import realsmart
+        monkeypatch.setattr(realsmart, "load_slugs", lambda: {"slugs": []})
+        cand = {"id": "a", "project_name": "Unknown Place", "score_1000": 700,
+                "url": "https://pg/a", "ingest_flags": []}
+        assert "GUESS" in weekly._agent_prompt(cand)
 
     def test_fields_read_from_either_shape(self):
         top = {"realscore": 4.6, "realsmart_pct_profitable": 100,

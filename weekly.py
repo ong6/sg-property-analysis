@@ -131,16 +131,22 @@ WEB_EXTRACT_FETCH = os.path.join(
     _STORE, ".claude", "skills", "web-extract", "scripts", "fetch.py")
 
 
-def realsmart_url(project_name: str | None) -> str:
-    """Best-guess realsmart project URL from a project name.
+def realsmart_url(project_name: str | None) -> tuple[str, bool]:
+    """(url, resolved) for a project's realsmart page.
 
-    Their slugs are lowercase, alphanumeric, hyphen-joined ('JadeScape' ->
-    'jadescape', 'The Continuum' -> 'the-continuum'). A guess, not a lookup —
-    the agent is told to verify and to leave the fields null rather than invent
-    a number if the slug 404s.
+    Resolved against the cached sitemap slug index (`realsmart.py`), because
+    guessing gets it wrong often enough to matter — PropertyGuru writes "West
+    Bay Condo" where realsmart has "west-bay-condominium", and the guess 404s.
+    Falls back to the naive guess with resolved=False, which the prompt then
+    labels as unverified so the agent knows to check the page identity before
+    trusting a score.
     """
-    slug = re.sub(r"[^a-z0-9]+", "-", (project_name or "").lower()).strip("-")
-    return f"https://realsmart.sg/p/{slug}"
+    try:
+        import realsmart
+        return realsmart.url_for(project_name or "")
+    except Exception:  # noqa: BLE001 — a missing/broken index must not stop a scan
+        slug = re.sub(r"[^a-z0-9]+", "-", (project_name or "").lower()).strip("-")
+        return f"https://realsmart.sg/p/{slug}", False
 
 
 # --------------------------------------------------------------------------- #
@@ -360,6 +366,10 @@ def _agent_prompt(cand: dict) -> str:
         "own recent (24mo) prints, per the trust rules in CLAUDE.md."
         if flags else ""
     )
+    rs_url, rs_resolved = realsmart_url(cand.get("project_name"))
+    rs_note = "" if rs_resolved else (
+        "(NOTE: this URL is a GUESS — the project is not in realsmart's sitemap "
+        "index, so verify the page is actually this development, or skip it.)\n")
     return (
         f"Analyze this PropertyGuru listing per the /analyze-listing flow: "
         f"{cand.get('url')}\n\n"
@@ -371,17 +381,21 @@ def _agent_prompt(cand: dict) -> str:
         f"the DB record with no scraping (PropertyGuru is behind Cloudflare and "
         f"this is an unattended run).{flag_note}\n\n"
         f"REQUIRED in step ② Gather — realsmart.sg REALSCORE for this project:\n"
-        f"    python3 {WEB_EXTRACT_FETCH} \"{realsmart_url(cand.get('project_name'))}\"\n"
+        f"    python3 {WEB_EXTRACT_FETCH} \"{rs_url}\"\n"
+        f"{rs_note}"
         "Public page, plain fetch, no login. Read off REALSCORE (0-5 "
         "profitability rank), the '% Profitable' badge, avg annualized profit, "
         "and the transaction COUNT behind them, then fill `realscore`, "
         "`realsmart_pct_profitable` and `realsmart_annual_return_pct` in "
-        "agent_evaluation. If the slug 404s, try the project name's other "
-        "spellings once, then leave the fields null and say so — never guess a "
-        "number. Weigh it as downside evidence (has this project ever lost "
-        "owners money?), NOT as an appreciation forecast: it is backward-looking "
-        "like trailing CAGR, and a perfect score on a handful of transactions "
-        "means little. Uncompleted projects legitimately show N.A.\n\n"
+        "agent_evaluation. Confirm the page's title really is this development "
+        "before reading numbers off it. If it 404s or is a different project, "
+        "leave the fields null and say so — never guess a number, and never "
+        "attach another project's score to this listing. Weigh it as downside "
+        "evidence (has this project ever lost owners money?), NOT as an "
+        "appreciation forecast: it is backward-looking like trailing CAGR, and "
+        "a perfect score on a handful of transactions means little — always "
+        "report the transaction count with it. Uncompleted projects "
+        "legitimately show N.A.\n\n"
         "This is a NON-INTERACTIVE headless run in the weekly scan: do not ask "
         "anything; where the flow would ask about purpose, assume investment "
         "(5-7yr hold) and proceed. Do the real research step — your view first, "
