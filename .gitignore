@@ -66,3 +66,6 @@ htmlcov/
 
 # DB backfill safety copies
 *.bak
+
+# realsmart slug index (regenerable: python realsmart.py --refresh)
+data/realsmart_slugs.json
