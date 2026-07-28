@@ -107,12 +107,13 @@ class TestMandate:
 
     def test_his_budget_and_beds(self):
         assert weekly.mandate_for(1_450_000, 3) == "his"
-        assert weekly.mandate_for(1_500_000, 3) == "his"      # exactly at budget
+        assert weekly.mandate_for(1_800_000, 3) == "his"      # exactly at budget
 
     def test_hers_takes_what_his_cannot(self):
         assert weekly.mandate_for(2_400_000, 3) == "hers"     # over his budget
         assert weekly.mandate_for(1_450_000, 4) == "hers"     # 4BR: not his beds
         assert weekly.mandate_for(2_500_000, 4) == "hers"
+        assert weekly.mandate_for(1_850_000, 3) == "hers"     # just over his
 
     def test_cheapest_fitting_mandate_wins(self):
         # A $1.4M 3BR is his find, not hers — she has better options there.
@@ -186,10 +187,18 @@ class TestMandate:
         assert weekly.mandate_for(1_400_000, 3, "D15") is None
         assert weekly.mandate_for(1_400_000, 3) == "his"   # district optional
 
-    def test_scan_scope_is_ocr_and_3_4br(self):
-        assert weekly.SCAN_DISTRICTS == list(range(16, 29))   # OCR only
+    def test_scan_scope_is_pruned_ocr_and_3_4br(self):
         assert weekly.SCAN_BEDS == [3, 4]                     # no 2BR
         assert weekly.SCAN_MAX_PRICE == 2_500_000
+        # OCR minus the four ruled out as too far / no resale market.
+        assert set(weekly.SCAN_DISTRICTS) == set(range(16, 29)) - {17, 24, 25, 27}
+        assert set(weekly.OCR_EXCLUDED) == {17, 24, 25, 27}
+
+    def test_excluded_ocr_districts_are_out_of_region(self):
+        for d in (17, 24, 25, 27):
+            assert not weekly.in_region(f"D{d}"), d
+        for d in (16, 18, 19, 20, 21, 22, 23, 26, 28):
+            assert weekly.in_region(f"D{d}"), d
 
 
 class TestMarketingTitles:

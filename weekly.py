@@ -87,11 +87,38 @@ RUNS_DIR = os.path.join(BASE, "output", "weekly_runs")
 # the backtest points: realized forward OCR +3.7%/yr > RCR +3.1 >> CCR +1.9,
 # and region is the strongest single forward signal in the model.
 # --------------------------------------------------------------------------- #
-OCR_DISTRICTS = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+# OCR is D16-D28, minus four the owner ruled out as "too far and never make
+# money" (2026-07-28). Which four is a measured call, not a vibe — from the
+# repo's own URA resale prints (data/ura_district_D*.csv, resale-only):
+#
+#   D24 Lim Chu Kang/Tengah — 860 prints, ALL New Sale, ZERO resales. No resale
+#       market exists, so there is no exit liquidity and no evidence anyone has
+#       ever resold at a profit. Disqualifying for a resale-profit mandate.
+#   D25 Woodlands/Admiralty — 591 resales across just 7 projects, the thinnest
+#       book in OCR, and the lowest median psf (~$1,151).
+#   D27 Sembawang/Yishun — weakest trailing 3y (+3.0%/yr) of any OCR district.
+#   D17 Changi/Loyang — far east, thin (33 projects), low psf (~$1,254), +4.4%.
+#
+# Honesty about the evidence: trailing CAGR is WEAK grounds on its own — the
+# repo's backtest puts its marginal forward power near zero once clustered
+# ("story, not signal"). The load-bearing argument here is DEPTH, which does
+# survive clustering (buyer-pool std_β +0.16): D24 and D25 are excluded because
+# their resale markets are absent or tiny, which is a liquidity fact, not a
+# forecast. D27 and D17 are the softer calls, resting more on the trailing
+# numbers — revisit them if the search comes up empty.
+#
+# Kept despite a low trailing print: D16 Bedok (+3.9%) — it is not "far", and
+# it is one of the deepest books in OCR (3,309 resales, 70 projects), so exit
+# liquidity is excellent. Depth outranks a 3-year window.
+OCR_DISTRICTS = [16, 18, 19, 20, 21, 22, 23, 26, 28]
+OCR_EXCLUDED = {17: "far east, thin, low psf",
+                24: "no resale market at all (Tengah)",
+                25: "thinnest book in OCR (7 projects)",
+                27: "weakest trailing returns in OCR"}
 
 MANDATES = [
     # label      max_price   beds        who
-    ("his",  1_500_000, (3,),    "him — ~$1.5M, 3BR"),
+    ("his",  1_800_000, (3,),    "him — up to ~$1.8M (flexible), 3BR"),
     ("hers", 2_500_000, (3, 4),  "her — ~$2.5M, 3-4BR, whichever returns most"),
 ]
 # Union of the mandates, used for the scrape itself.
