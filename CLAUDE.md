@@ -27,8 +27,13 @@ comparison: `docs/evaluation-rubric.md`.
 Every flow: **① Recall → ② Gather → ③ Research & evaluate → ④ Fill
 `agent_evaluation` → ⑤ `--from-review` report (auto-saves to memory).**
 In ② Gather, pull per-project market context from realsmart.sg via the
-`/realsmart-data` skill (owner-preferred source: transaction/profitability
-stats, holding-period distribution, rental yield) alongside URA data.
+`/realsmart-data` skill (owner-preferred source: **REALSCORE**, transaction/
+profitability stats, holding-period distribution, rental yield) alongside URA
+data. The public `/p/<slug>` page carries all of it on a plain fetch — no login.
+Record REALSCORE, `realsmart_pct_profitable` and `realsmart_annual_return_pct`
+in `agent_evaluation`; read a high score as *downside* evidence (nobody has lost
+money here), never as an appreciation forecast, and always report the
+transaction count behind it — a 5.0 on six resales is noise.
 Requests that fit none of these (e.g. "compare these two condos", "should I
 sell?") still use the same tools — pick the closest altitude, state the rubric
 used, and ask if intent is unclear.
@@ -143,6 +148,12 @@ book's vintage):
 In-batch dupes collapse to one run per (condo, bed count), and stale /
 incomplete / unscored records never reach an agent. Every gated-out listing
 carries a `gate_reason` that the digest prints — the gate is never a black box.
+
+Each shortlisted project also gets a **realsmart.sg REALSCORE** lookup in the
+agent step (public `/p/<slug>`, plain fetch), surfaced in the digest and the
+store row. This sits *after* the gate on purpose: realsmart's ToS is
+personal-use, so ≤8 project lookups a week is a research source — never a
+per-listing feed.
 
 ```bash
 python weekly.py                # the real thing (HEADED browser — Cloudflare)

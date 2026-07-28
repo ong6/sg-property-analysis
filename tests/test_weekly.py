@@ -98,6 +98,80 @@ class TestGate:
         assert "--from-db a" in weekly._agent_prompt(short[0])
 
 
+class TestMarketingTitles:
+    """PropertyGuru sometimes has no project name and the scraper falls back to
+    the listing headline. Those must never reach an agent — every downstream key
+    (URA comps, realsmart slug, eval memory, cooldown) is the project name."""
+
+    REAL = ["JadeScape", "The Continuum", "Parc Riviera", "Alexis", "Artra",
+            "Sims Green", "d'Leedon", "8 @ Mount Sophia", "West Bay Condo"]
+    JUNK = [
+        "Cheapest\U0001F48ED03\U0001F48EBest Value\U0001F48EFreehold\U0001F48EDuplex Penthouse\U0001F48E",
+        "Cheapest 3Br! FH! Within 1km to St. Andrews",
+        "CHEAP !!! WALK TO MRT!!! SUPER CONVENIENT!!! LOTS OF AMENITIES",
+        "1km to Temasek Pri Sch. Bayshore MRT. Unblocked Sea View.",
+        "Key Collection This Year! West Side's Cheapest New Launch",
+        "Brand New Freehold Conservation Apartment - Vintage Charm, Modern Ease",
+        "$5280/mth rent! Freehold Dual Key - Super High Rental Yield Condo",
+        "",
+    ]
+
+    def test_real_project_names_pass(self):
+        for n in self.REAL:
+            assert not weekly.looks_like_marketing_title(n), n
+
+    def test_marketing_headlines_are_caught(self):
+        for n in self.JUNK:
+            assert weekly.looks_like_marketing_title(n), n
+
+    def test_ura_match_rescues_a_loud_but_real_name(self):
+        # The government's project list outranks our heuristics: a real
+        # development must never be demoted for having a shouty name.
+        loud = "Cheap Freehold Suites!"
+        assert weekly.looks_like_marketing_title(loud)
+        assert not weekly.looks_like_marketing_title(
+            loud, known_projects={"cheap freehold suites!"})
+
+    def test_no_ura_match_alone_does_not_condemn(self):
+        # Genuine new launches have no URA prints yet — absence of a match is
+        # not evidence of a junk name.
+        assert not weekly.looks_like_marketing_title(
+            "Some New Launch", known_projects={"other project"})
+
+    def test_gate_rejects_them_with_a_clear_reason(self):
+        rows = [_row("a", score=800, name="Cheapest 3Br! FH! Within 1km"),
+                _row("b", score=700, name="Parc Riviera")]
+        db = {"a": _rec("a"), "b": _rec("b")}
+        short, rej = weekly.select_candidates(rows, db)
+        assert [c["id"] for c in short] == ["b"]     # 800 outranked, still cut
+        assert "no usable project name" in rej[0]["gate_reason"]
+
+    def test_known_projects_loader_survives_a_missing_cache(self, monkeypatch):
+        monkeypatch.setattr(weekly, "DATA_DIR", "/nonexistent")
+        assert weekly._known_projects() == set()
+
+
+class TestRepricedSince:
+    def test_first_entry_is_the_original_ask_not_a_change(self):
+        rec = {"price_history": [{"date": "2026-07-28", "price": 1e6}]}
+        assert not weekly._repriced_since(rec, "2026-07-20")
+
+    def test_later_entry_in_window_counts(self):
+        rec = {"price_history": [{"date": "2026-06-01", "price": 1.1e6},
+                                 {"date": "2026-07-25", "price": 1e6}]}
+        assert weekly._repriced_since(rec, "2026-07-20")
+
+    def test_change_before_the_window_does_not(self):
+        rec = {"price_history": [{"date": "2026-06-01", "price": 1.1e6},
+                                 {"date": "2026-06-10", "price": 1e6}]}
+        assert not weekly._repriced_since(rec, "2026-07-20")
+
+    def test_missing_or_junk_history_is_safe(self):
+        for rec in ({}, {"price_history": None}, {"price_history": "x"},
+                    {"price_history": [{"date": None}, "junk"]}):
+            assert not weekly._repriced_since(rec, "2026-07-20")
+
+
 class TestCooldownIndex:
     def test_index_reads_recent_evals_and_ignores_old_ones(self, monkeypatch):
         now = datetime(2026, 7, 27)
@@ -278,7 +352,58 @@ class TestStorePush:
                    "summary": "a | b\nc"}}, path=path)
         row = [l for l in open(path).read().splitlines() if "https://pg/a" in l]
         assert len(row) == 1 and "\n" not in row[0]
-        assert row[0].count("|") == 8   # 7 columns -> 8 delimiters, no injected cell
+        assert row[0].count("|") == 9   # 8 columns -> 9 delimiters, no injected cell
+
+    def test_realscore_lands_in_its_column(self, tmp_path):
+        path = self._note(tmp_path)
+        weekly.push_to_store(
+            "2026-07-27", [self._cand("a")],
+            {"a": {"rating": "Buy", "confidence": "high", "summary": "s",
+                   "realscore": 4.6, "realsmart_pct_profitable": 100}}, path=path)
+        row = [l for l in open(path).read().splitlines() if "https://pg/a" in l][0]
+        assert "| 4.6 · 100% prof |" in row
+
+    def test_missing_realscore_is_a_dash_not_a_blank_cell(self, tmp_path):
+        path = self._note(tmp_path)
+        weekly.push_to_store(
+            "2026-07-27", [self._cand("a")],
+            {"a": {"rating": "Buy", "confidence": "high", "summary": "s"}}, path=path)
+        row = [l for l in open(path).read().splitlines() if "https://pg/a" in l][0]
+        assert "| — |" in row and row.count("|") == 9
+
+
+class TestRealsmart:
+    def test_slug_from_project_name(self):
+        assert weekly.realsmart_url("JadeScape") == "https://realsmart.sg/p/jadescape"
+        assert weekly.realsmart_url("The Continuum") == \
+            "https://realsmart.sg/p/the-continuum"
+        assert weekly.realsmart_url("8 @ Mount Sophia") == \
+            "https://realsmart.sg/p/8-mount-sophia"
+        assert weekly.realsmart_url(None) == "https://realsmart.sg/p/"
+
+    def test_prompt_requires_the_lookup_with_a_real_url(self):
+        cand = {"id": "a", "project_name": "JadeScape", "score_1000": 700,
+                "url": "https://pg/a", "ingest_flags": []}
+        p = weekly._agent_prompt(cand)
+        assert "realsmart.sg/p/jadescape" in p
+        assert "REALSCORE" in p and "never guess a number" in p
+
+    def test_fields_read_from_either_shape(self):
+        top = {"realscore": 4.6, "realsmart_pct_profitable": 100,
+               "realsmart_annual_return_pct": 5.4}
+        nested = {"agent_evaluation": top}
+        assert weekly._realsmart(top) == weekly._realsmart(nested) == top
+
+    def test_line_renders_what_is_present(self):
+        assert weekly._realsmart_line({"realscore": 4.6}) == "realsmart: **REALSCORE 4.6**/5"
+        assert "100% of resales profitable" in weekly._realsmart_line(
+            {"realsmart_pct_profitable": 100})
+        assert weekly._realsmart_line({}) == ""
+
+    def test_annual_return_alone_is_not_enough_to_claim_a_score(self):
+        # A return figure without a score or profitability split isn't the
+        # signal the owner asked for — don't imply we looked it up.
+        assert weekly._realsmart_line({"realsmart_annual_return_pct": 5.4}) == ""
 
 
 class TestDigest:

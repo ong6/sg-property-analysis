@@ -11,7 +11,21 @@ lodged transactions, so cross-check any load-bearing number against `--raw` URA 
 
 ## Fetch
 
-Rendered via the personal-data-store's Patchright reader (persistent logged-in profile):
+**Default — the public project page. No login, no browser, one plain HTTP fetch:**
+
+```bash
+python3 /Users/bytedance/Sideproject/personal-data-store/.claude/skills/web-extract/scripts/fetch.py \
+  "https://realsmart.sg/p/<slug>"
+```
+
+Slug is the project name lowercased, non-alphanumerics collapsed to hyphens
+(`JadeScape` → `jadescape`, `The Continuum` → `the-continuum`). It carries
+REALSCORE, the % Profitable badge, annual returns, transaction stats, unit mix,
+MRT/schools and project facts — verified 2026-07-28. If a slug 404s, try the
+name's other spellings; don't fall through to the SPA just for a score.
+
+**Only if you need something the `/p/` page genuinely lacks** (e.g. per-block
+profitability), use the login-gated map SPA via the Patchright reader:
 
 ```bash
 python3 /Users/bytedance/Sideproject/personal-data-store/.claude/skills/web-extract/scripts/reader.py \
@@ -22,13 +36,25 @@ Project name is URL-encoded uppercase as URA spells it (e.g. `UNION%20SQUARE%20R
 
 ## What a project page returns
 
-- **REALSCORE** (their profitability rank) + avg annualized profit past 1y
+- **REALSCORE** (0–5 profitability rank) + avg annualized profit past 1y
 - **Transactions**: count, total value, first/last transacted, % sold at launch,
   % profitable, profitable/unprofitable split, >6% annualized count, avg holding
 - **Holding-period distribution** (counts per bucket — resale-timing evidence)
 - **Rental**: avg psf rental, number of rentals, est. gross yield
 - **Unit distribution**: count + size range per bedroom type
 - **Profitability by block**, nearest MRT with distance, tenure/completion facts
+
+## How to read REALSCORE
+
+Their 0–5 profitability rank: a high score means few or no resales sold at a loss.
+Read it as **downside evidence** — *has this project ever lost owners money?* — not as
+an appreciation forecast. It is backward-looking, so the repo's forward-signal priors
+apply: like trailing CAGR, it is story rather than measured forward edge.
+
+**Always pair it with the transaction count.** 4.8 across 300 resales is a real
+statement about how this project has treated sellers; 5.0 across 6 is noise wearing a
+number. A *low* score on a deep history is the more actionable signal of the two, and
+the one worth acting on.
 
 ## Caveats
 
