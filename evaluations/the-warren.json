@@ -56,6 +56,82 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-warren-500094861",
         "review_file": "cov_batch_11.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A genuine 1,238 sqft 3BR at The Warren (D23 Choa Chu Kang, 99yr from 2001, 74yrs left, 699 units, ~320m to Choa Chu Kang NS4/BP1 which becomes JRL JS1 interchange in mid-2027). The project itself is sound and liquid, but the $1.40M ask is the problem: it is $178k-$208k (11-13%) below EVERY other 1,200-1,300 sqft 3BR ask in the same project (nine live listings, all $1.578M-$1.608M) and has sat unchanged and unsold since 7 Jun 2026. In a project that printed 36 resales in 24 months, a real unit priced that far under the live book clears in days, not seven weeks. The ask is unverifiable (PropertyGuru returns 403; no floor_level in the feed) and is the single fact the whole case rests on.",
+      "rating_rationale": "Not a Buy because the headline cheapness does not survive verification on two separate axes. (1) THE ASK IS ANOMALOUS AND UNCONFIRMED: $1.40M/$1,131psf vs nine competing same-size asks at $1,279-$1,304psf, unmoved for ~7 weeks - consistent with a bait/teaser price, a stale post, or an undisclosed defect (low floor / condition). The project's own 24mo prints for this exact 1,238 sqft size run $1.40M-$1.575M with 2026 band prints at $1.45M-$1.53M, so $1.40M is the BOTTOM of achieved prices, i.e. the low-floor/worst-unit level, not a discount to fair value. (2) THE MMR 790 IS INFLATED BY A PERSISTENT SUBMARKET LEVEL, NOT A DISLOCATION: the -13.3% 'cheap for its age vs D23' is mostly the Choa Chu Kang vs Hillview/Dairy Farm split - D23 bifurcates into a $1,500-2,270psf Hillview cluster (Narra, Hillhaven, The Myst, Botany, Arden) and a $1,000-1,330psf CCK cluster. Within the CCK cluster The Warren at $1,230psf (2025-26, n=10) is mid-pack (Mi Casa 1,326, Montrosa 1,242, Guilin View 1,239, Madeira 1,212), not cheap. age_value 10.16 is the largest single MMR component and is largely this artifact; against the project's OWN comps the ask is only ~5-8% under. Carry is also thin and structurally capped: URA rent is $4,200/mo median on 125 contracts in the 1,200-1,300 sqft band and has been FLAT at $4,100-$4,250 since 2023 while the same band's prices rose ~19% - 3.6% gross / 2.15% net, with the yield compression already spent. Re-running ROI on the backtested OCR forward rate (+3.7%) instead of the 4.73% trailing CAGR (which has ~0 forward power) drops all-cash returns from 4.9-5.0%/yr to ~4.0-4.2%/yr. Not an Avoid because the underlying asset is genuinely decent: OCR is the best forward region, the bedroom count verifies as a real 3BR against URA's own band (1,150-1,350 sqft on 214 rental contracts), liquidity is deep (699 units, 89 prints in 5yrs, deep buyer pool), the $1.4-1.6M quantum sits in the deepest OCR band, and the project's same-size band compounded ~+6%/yr 2021-25 - which survives a size-band decomposition, so it is not a pooled size-mix artifact. If the $1.40M verifies as a real, firm ask on a mid-floor unit in reasonable condition, this upgrades to a Buy; that verification is a phone call and a viewing, and it has not happened. Treat the 790 as unearned until then.",
+      "red_flags": [
+        "Ask is $178k-$208k (11-13%) below every other comparable 3BR ask in the same project (9 live listings at $1.578M-$1.608M) - unverified and unexplained",
+        "Unchanged $1.40M since 7 Jun 2026 (~7 weeks) with no sale, in a project printing 36 resales/24mo - a genuinely-priced unit this far under the book would clear immediately",
+        "PropertyGuru returns HTTP 403 (Cloudflare) and floor_level/facing are absent from the feed - condition, floor and stack are unknown; two of the project's $1,131psf prints were floor 01-05",
+        "MMR's -13.3% age-adjusted cheapness is largely the persistent Choa Chu Kang vs Hillview submarket level in D23, not a project dislocation - double-counted in age_value (10.16, the largest component)",
+        "Rent flat at $4,100-$4,250/mo since 2023 (144 URA 3BR contracts) while prices rose ~19% - 3.6% gross / 2.15% net; yield compression already spent, no rental support for further gains",
+        "22-year-old leasehold, 74yrs remaining (~68 at a 5-7yr exit) - lease decay plus maintenance/AGM levy risk on 2004 stock",
+        "Project band median softened 2025 $1,241psf -> 2026 $1,191psf (n=3) and momentum reads -0.91 - tape is flat-to-soft, not accelerating",
+        "realsmart.sg REALSCORE unavailable - page confirmed as The Warren but serves the lite template with no score; profitability track record could not be checked"
+      ],
+      "catalysts": [
+        "Choa Chu Kang MRT (NS4/BP1) ~208-330m becomes a Jurong Region Line JS1 interchange, JRL Stage 1 targeted mid-2027 - narrative support, but future-infrastructure has NO measured forward power in the backtest, so not counted as edge",
+        "OCR is the strongest forward region in the panel (realized +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Deep liquidity: 699 units, 89 URA prints in 5 years, 125 rental contracts in this exact size band - easy to price and to exit",
+        "$1.4-1.6M quantum sits in the deepest OCR buyer band (HDB upgraders), and the layout is a verified full 3BR at 1,238 sqft",
+        "Project's own same-size band compounded ~+6%/yr 2021-25 (969 -> 1,241 psf), and this survives size-band decomposition - real appreciation, not a mix artifact",
+        "IF the ask is real and firm, entry ~5-8% below the project's own 24mo prints with the seller already anchored low"
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1130.86,
+        "beds": 3,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.73,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.6,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "A genuine 1,238 sqft 3BR at The Warren (D23 Choa Chu Kang, 99yr from 2001, 74yrs left, 699 units, ~320m to Choa Chu Kang NS4/BP1 which becomes JRL JS1 interchange in mid-2027). The project itself is sound and liquid, but the $1.40M ask is the problem: it is $178k-$208k (11-13%) below EVERY other 1,200-1,300 sqft 3BR ask in the same project (nine live listings, all $1.578M-$1.608M) and has sat unchanged and unsold since 7 Jun 2026. In a project that printed 36 resales in 24 months, a real unit priced that far under the live book clears in days, not seven weeks. The ask is unverifiable (PropertyGuru returns 403; no floor_level in the feed) and is the single fact the whole case rests on.",
+        "rating": "Neutral",
+        "rating_rationale": "Not a Buy because the headline cheapness does not survive verification on two separate axes. (1) THE ASK IS ANOMALOUS AND UNCONFIRMED: $1.40M/$1,131psf vs nine competing same-size asks at $1,279-$1,304psf, unmoved for ~7 weeks - consistent with a bait/teaser price, a stale post, or an undisclosed defect (low floor / condition). The project's own 24mo prints for this exact 1,238 sqft size run $1.40M-$1.575M with 2026 band prints at $1.45M-$1.53M, so $1.40M is the BOTTOM of achieved prices, i.e. the low-floor/worst-unit level, not a discount to fair value. (2) THE MMR 790 IS INFLATED BY A PERSISTENT SUBMARKET LEVEL, NOT A DISLOCATION: the -13.3% 'cheap for its age vs D23' is mostly the Choa Chu Kang vs Hillview/Dairy Farm split - D23 bifurcates into a $1,500-2,270psf Hillview cluster (Narra, Hillhaven, The Myst, Botany, Arden) and a $1,000-1,330psf CCK cluster. Within the CCK cluster The Warren at $1,230psf (2025-26, n=10) is mid-pack (Mi Casa 1,326, Montrosa 1,242, Guilin View 1,239, Madeira 1,212), not cheap. age_value 10.16 is the largest single MMR component and is largely this artifact; against the project's OWN comps the ask is only ~5-8% under. Carry is also thin and structurally capped: URA rent is $4,200/mo median on 125 contracts in the 1,200-1,300 sqft band and has been FLAT at $4,100-$4,250 since 2023 while the same band's prices rose ~19% - 3.6% gross / 2.15% net, with the yield compression already spent. Re-running ROI on the backtested OCR forward rate (+3.7%) instead of the 4.73% trailing CAGR (which has ~0 forward power) drops all-cash returns from 4.9-5.0%/yr to ~4.0-4.2%/yr. Not an Avoid because the underlying asset is genuinely decent: OCR is the best forward region, the bedroom count verifies as a real 3BR against URA's own band (1,150-1,350 sqft on 214 rental contracts), liquidity is deep (699 units, 89 prints in 5yrs, deep buyer pool), the $1.4-1.6M quantum sits in the deepest OCR band, and the project's same-size band compounded ~+6%/yr 2021-25 - which survives a size-band decomposition, so it is not a pooled size-mix artifact. If the $1.40M verifies as a real, firm ask on a mid-floor unit in reasonable condition, this upgrades to a Buy; that verification is a phone call and a viewing, and it has not happened. Treat the 790 as unearned until then.",
+        "red_flags": [
+          "Ask is $178k-$208k (11-13%) below every other comparable 3BR ask in the same project (9 live listings at $1.578M-$1.608M) - unverified and unexplained",
+          "Unchanged $1.40M since 7 Jun 2026 (~7 weeks) with no sale, in a project printing 36 resales/24mo - a genuinely-priced unit this far under the book would clear immediately",
+          "PropertyGuru returns HTTP 403 (Cloudflare) and floor_level/facing are absent from the feed - condition, floor and stack are unknown; two of the project's $1,131psf prints were floor 01-05",
+          "MMR's -13.3% age-adjusted cheapness is largely the persistent Choa Chu Kang vs Hillview submarket level in D23, not a project dislocation - double-counted in age_value (10.16, the largest component)",
+          "Rent flat at $4,100-$4,250/mo since 2023 (144 URA 3BR contracts) while prices rose ~19% - 3.6% gross / 2.15% net; yield compression already spent, no rental support for further gains",
+          "22-year-old leasehold, 74yrs remaining (~68 at a 5-7yr exit) - lease decay plus maintenance/AGM levy risk on 2004 stock",
+          "Project band median softened 2025 $1,241psf -> 2026 $1,191psf (n=3) and momentum reads -0.91 - tape is flat-to-soft, not accelerating",
+          "realsmart.sg REALSCORE unavailable - page confirmed as The Warren but serves the lite template with no score; profitability track record could not be checked"
+        ],
+        "catalysts": [
+          "Choa Chu Kang MRT (NS4/BP1) ~208-330m becomes a Jurong Region Line JS1 interchange, JRL Stage 1 targeted mid-2027 - narrative support, but future-infrastructure has NO measured forward power in the backtest, so not counted as edge",
+          "OCR is the strongest forward region in the panel (realized +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Deep liquidity: 699 units, 89 URA prints in 5 years, 125 rental contracts in this exact size band - easy to price and to exit",
+          "$1.4-1.6M quantum sits in the deepest OCR buyer band (HDB upgraders), and the layout is a verified full 3BR at 1,238 sqft",
+          "Project's own same-size band compounded ~+6%/yr 2021-25 (969 -> 1,241 psf), and this survives size-band decomposition - real appreciation, not a mix artifact",
+          "IF the ask is real and firm, entry ~5-8% below the project's own 24mo prints with the seller already anchored low"
+        ],
+        "rental_assessment": "Well-evidenced but unexciting. URA rental filings give $4,200/mo median for the 1,200-1,300 sqft 3BR band on 125 contracts (144 3BR contracts overall) - high confidence, no estimation needed. The critical feature is that rent has been FLAT since 2023 ($4,250 / $4,100 / $4,200 / $4,250 for 2023/24/25/26) while band prices climbed ~19%, so gross yield has compressed from ~4.8% to 3.6% (2.15% net). Tenant demand is steady - Choa Chu Kang is a mature HDB-heavy town with direct NSL access and the unit is a genuine family-sized 3BR - but there is no evidence of rental upside to underwrite, and at 2.15% net the carry barely covers holding costs on an all-cash basis.",
+        "appreciation_assessment": "Moderate, and lower than the trailing number suggests. The project's own 1,150-1,350 sqft band compounded from $969psf (2021) to $1,241psf (2025), roughly +6%/yr, and that holds up when decomposed by size band rather than pooled - so the 4.73% pooled CAGR is real history, not a mix artifact. But trailing CAGR has ~0 forward power in the backtest, and the recent tape is flat-to-soft: 2026 band median $1,191psf on 3 prints, below 2025's $1,241, with momentum at -0.91. The honest forward number is the OCR regional baseline of ~3.7-3.9%/yr, not 4.73%. The value signal that would justify more - cheap vs district peers - is mostly the persistent Choa Chu Kang vs Hillview level within D23 rather than a closing gap, and that gap has been permanent, not mean-reverting. JRL JS1 in mid-2027 is a genuine convenience upgrade but the backtest gives future-infrastructure no measured forward power, so it is story, not edge. Expect ~3.5-4%/yr with the lease at 74yrs and falling.",
+        "stack_notes": "No profile exists for The Warren (status: not_researched) and the listing feed carries no floor_level or facing - PropertyGuru is 403 to this run, so the unit's stack, floor and orientation are entirely unknown. This matters more than usual here, because the project's own URA prints show floor is exactly what separates $1,131psf from $1,272psf at this size: the two prints matching this ask ($1,400,000 / $1,131psf, Dec-24 and Sep-25) were floor 01-05 and 06-10 respectively, while floor 11-15 prints of the identical 1,238 sqft ran $1,520,000-$1,575,000 ($1,228-$1,272psf). So the ask is fully consistent with a low-floor unit priced at market rather than a mid/high-floor unit at a discount. Resolving this is the single highest-value next step: run /research-development \"The Warren\" for the stack map, and establish the actual floor before crediting any discount.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "OCR regional forward baseline (+3.7%/yr realized, backtested) with a small nod to the project's verified same-size-band history and deep liquidity; deliberately NOT the 4.73% trailing URA CAGR (trailing appreciation has ~0 forward power) and NOT crediting the JRL JS1 catalyst (future-infrastructure has no measured forward power in the panel).",
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_073_500098869",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-warren-500098869",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
