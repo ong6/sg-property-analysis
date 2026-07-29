@@ -112,6 +112,88 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500152563",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,259 sqft '3BR' at D'Nest asking $1.66M / $1,319 psf. The headline -13.4% discount to the D18 median is a format artifact: D'Nest's 1,200-1,300 sqft strata band is dominated by the 4-bedroom compact type (34 of 45 URA rental filings; 20 of 23 sale prints sit at 1,270 sqft), and a 2-bath 3BR at 1,259 sqft is the rare enlarged/PES variant that has only ever transacted three times in five years - at $1.33M (2022), $1.64M (Dec 2024) and $1.55M (Dec 2025). The $1.66M ask is above every price this format has ever achieved, +7.1% over its most recent print seven months ago, on 2.96% gross yield.",
+      "rating_rationale": "The entire investment case rests on cheapness that disappears under the correct comp. psf_value (+6.99) and age_value (+8.81) supply ~35% of MMR's lift above base, and both benchmark this 1,259 sqft strata area against 1,050-1,400 sqft D18 apartment peers and against D'Nest's own 1,270 sqft 4BR-compact tier ($1,480-1,614 psf, 20 prints) - the wrong cohort. Comped against its own format the ask is not a discount at all: it is a record price. What is left after removing the phantom discount is a below-average asset: 2.96% gross / 1.76% net yield (rent $4,100 from 68 contracts is solid, but a patio/enlarged 3BR rents like a 1,130 sqft 3BR, so the extra ~130 sqft is bought and never earns); D'Nest's 3BR line is its weakest performer (1,130 sqft same-size CAGR 4.0% vs 6.5-6.9% for the 753/1,270/1,410 types) and is down in 2026 ($1,522 -> $1,494 psf); project momentum is negative (-0.775) with five of nine deep size-types flat-to-down this year; and this specific format is near-illiquid on exit (3 prints in 5 years vs 32 for the 936 sqft 3BR compact). The project itself is sound - 912 units, 260 clean resale prints, 1,354 lifetime transactions, real same-size appreciation of 4-8.8%/yr, a dated CRL Pasir Ris interchange in 2030 at ~600m, 83 years of lease - but D'Nest's own 3BR compacts at $1.44-1.50M (938-969 sqft) sit in the same DB with 30+ prints of exit evidence and $300k of budget headroom. Buying the illiquid variant at a record price is the worst trade available in this project.",
+      "red_flags": [
+        "Ask ($1.66M) exceeds every transacted price for this format at D'Nest: $1.33M (2022, 1,227sf), $1.64M (Dec-2024, 1,238sf), $1.55M (Dec-2025, 1,238sf) - +7.1% above the most recent print, 7 months old. The ask_above_own_stack_prints trust rule did not fire only because 3 prints is too thin to trip it",
+        "The -13.4% vs district median and -11.4% vs age-adjusted peers are cohort mismeasurement: the 1,200-1,300 sqft band at D'Nest is predominantly the 4BR-compact type (34 of 45 URA rental filings), which trades at $1,480-1,614 psf; the 3BR variant in that band structurally trades ~15% lower",
+        "Near-illiquid format: 3 sale prints in 5 years (1,227/1,237/1,238 sqft), all on floors 01-05, vs 32 prints for the 936 sqft 3BR compact and 20 for the 1,270 sqft 4BR compact",
+        "Gross yield 2.96% / net 1.76% - the hold is financed entirely by appreciation; the enlarged area adds price but not rent",
+        "D'Nest's 3BR line is the project's weakest: 1,130 sqft same-size CAGR 4.0% vs 6.5-6.9% for 753/1,270/1,410 sqft, and 2026 median psf is DOWN ($1,522 -> $1,494)",
+        "Negative project momentum (-0.775): 484, 936, 1130 and 1270 sqft types are all flat-to-down in 2026 after the 2021-24 run",
+        "Format unverified from the listing itself - PropertyGuru is Cloudflare-blocked (403 on all five fetch rungs), so PES/enlarged-3BR is inferred from size + 2 baths + psf tier + URA rental filings, not from a floor plan or the agent's description",
+        "New precinct supply competes for the same CRL catalyst: Pasir Ris 8 (487 units, integrated at Pasir Ris MRT, TOP Jun 2026) and Pinery Residences (~587 units at $2,100-2,400 psf); a 2017 project 750m from the station captures less of it",
+        "DATA ERROR: factual_data.total_units = 1,804; D'Nest actually has 912 units (realsmart.sg + developer sources) - inflates the dev_size MMR component",
+        "DATA ERROR: remaining_lease shown as 87 yrs; the 99-yr lease commenced 20 Oct 2010 (not the 2017 build year), so ~83 yrs remain",
+        "realsmart.sg REALSCORE unavailable - /p/d-nest serves the lite template with no score at any depth, and the /map fallback returned nothing (no logged-in session in this unattended run). No downside-history evidence either way",
+        "No researched profile for D'Nest (stack_profile: not_researched) - no stack/facing evidence to confirm or refute the ground-floor read"
+      ],
+      "catalysts": [
+        "Cross Island Line Pasir Ris interchange confirmed for 2030 (Phase 1), ~597m away, with the CRL-Punggol extension in 2032 - dated and inside a 5-7yr hold, though announced in 2019 and largely priced in, and the backtest finds no measured forward power in the future-infrastructure signal",
+        "OCR is the strongest forward region in the panel (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Genuinely deep project-level liquidity: 912 units, 260 resale-only URA prints, 1,354 lifetime transactions ($1.4B), latest 26 Jun 2026 - the project is easy to trade, just not this format",
+        "13,480 HDB flats reach MOP in 2026 (nearly double 2025), concentrated partly in Tampines - a real upgrader demand pool for $1.4-1.7M OCR 3BRs",
+        "Same-size appreciation is real, not a size-mix artifact: 484/753/936/1270/1410 sqft all show 4.7-6.9%/yr 2021-26 on their own size series"
+      ],
+      "as_of": {
+        "price": 1660000,
+        "psf": 1318.51,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.95,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.96,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 87
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft '3BR' at D'Nest asking $1.66M / $1,319 psf. The headline -13.4% discount to the D18 median is a format artifact: D'Nest's 1,200-1,300 sqft strata band is dominated by the 4-bedroom compact type (34 of 45 URA rental filings; 20 of 23 sale prints sit at 1,270 sqft), and a 2-bath 3BR at 1,259 sqft is the rare enlarged/PES variant that has only ever transacted three times in five years - at $1.33M (2022), $1.64M (Dec 2024) and $1.55M (Dec 2025). The $1.66M ask is above every price this format has ever achieved, +7.1% over its most recent print seven months ago, on 2.96% gross yield.",
+        "rating": "Avoid",
+        "rating_rationale": "The entire investment case rests on cheapness that disappears under the correct comp. psf_value (+6.99) and age_value (+8.81) supply ~35% of MMR's lift above base, and both benchmark this 1,259 sqft strata area against 1,050-1,400 sqft D18 apartment peers and against D'Nest's own 1,270 sqft 4BR-compact tier ($1,480-1,614 psf, 20 prints) - the wrong cohort. Comped against its own format the ask is not a discount at all: it is a record price. What is left after removing the phantom discount is a below-average asset: 2.96% gross / 1.76% net yield (rent $4,100 from 68 contracts is solid, but a patio/enlarged 3BR rents like a 1,130 sqft 3BR, so the extra ~130 sqft is bought and never earns); D'Nest's 3BR line is its weakest performer (1,130 sqft same-size CAGR 4.0% vs 6.5-6.9% for the 753/1,270/1,410 types) and is down in 2026 ($1,522 -> $1,494 psf); project momentum is negative (-0.775) with five of nine deep size-types flat-to-down this year; and this specific format is near-illiquid on exit (3 prints in 5 years vs 32 for the 936 sqft 3BR compact). The project itself is sound - 912 units, 260 clean resale prints, 1,354 lifetime transactions, real same-size appreciation of 4-8.8%/yr, a dated CRL Pasir Ris interchange in 2030 at ~600m, 83 years of lease - but D'Nest's own 3BR compacts at $1.44-1.50M (938-969 sqft) sit in the same DB with 30+ prints of exit evidence and $300k of budget headroom. Buying the illiquid variant at a record price is the worst trade available in this project.",
+        "red_flags": [
+          "Ask ($1.66M) exceeds every transacted price for this format at D'Nest: $1.33M (2022, 1,227sf), $1.64M (Dec-2024, 1,238sf), $1.55M (Dec-2025, 1,238sf) - +7.1% above the most recent print, 7 months old. The ask_above_own_stack_prints trust rule did not fire only because 3 prints is too thin to trip it",
+          "The -13.4% vs district median and -11.4% vs age-adjusted peers are cohort mismeasurement: the 1,200-1,300 sqft band at D'Nest is predominantly the 4BR-compact type (34 of 45 URA rental filings), which trades at $1,480-1,614 psf; the 3BR variant in that band structurally trades ~15% lower",
+          "Near-illiquid format: 3 sale prints in 5 years (1,227/1,237/1,238 sqft), all on floors 01-05, vs 32 prints for the 936 sqft 3BR compact and 20 for the 1,270 sqft 4BR compact",
+          "Gross yield 2.96% / net 1.76% - the hold is financed entirely by appreciation; the enlarged area adds price but not rent",
+          "D'Nest's 3BR line is the project's weakest: 1,130 sqft same-size CAGR 4.0% vs 6.5-6.9% for 753/1,270/1,410 sqft, and 2026 median psf is DOWN ($1,522 -> $1,494)",
+          "Negative project momentum (-0.775): 484, 936, 1130 and 1270 sqft types are all flat-to-down in 2026 after the 2021-24 run",
+          "Format unverified from the listing itself - PropertyGuru is Cloudflare-blocked (403 on all five fetch rungs), so PES/enlarged-3BR is inferred from size + 2 baths + psf tier + URA rental filings, not from a floor plan or the agent's description",
+          "New precinct supply competes for the same CRL catalyst: Pasir Ris 8 (487 units, integrated at Pasir Ris MRT, TOP Jun 2026) and Pinery Residences (~587 units at $2,100-2,400 psf); a 2017 project 750m from the station captures less of it",
+          "DATA ERROR: factual_data.total_units = 1,804; D'Nest actually has 912 units (realsmart.sg + developer sources) - inflates the dev_size MMR component",
+          "DATA ERROR: remaining_lease shown as 87 yrs; the 99-yr lease commenced 20 Oct 2010 (not the 2017 build year), so ~83 yrs remain",
+          "realsmart.sg REALSCORE unavailable - /p/d-nest serves the lite template with no score at any depth, and the /map fallback returned nothing (no logged-in session in this unattended run). No downside-history evidence either way",
+          "No researched profile for D'Nest (stack_profile: not_researched) - no stack/facing evidence to confirm or refute the ground-floor read"
+        ],
+        "catalysts": [
+          "Cross Island Line Pasir Ris interchange confirmed for 2030 (Phase 1), ~597m away, with the CRL-Punggol extension in 2032 - dated and inside a 5-7yr hold, though announced in 2019 and largely priced in, and the backtest finds no measured forward power in the future-infrastructure signal",
+          "OCR is the strongest forward region in the panel (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Genuinely deep project-level liquidity: 912 units, 260 resale-only URA prints, 1,354 lifetime transactions ($1.4B), latest 26 Jun 2026 - the project is easy to trade, just not this format",
+          "13,480 HDB flats reach MOP in 2026 (nearly double 2025), concentrated partly in Tampines - a real upgrader demand pool for $1.4-1.7M OCR 3BRs",
+          "Same-size appreciation is real, not a size-mix artifact: 484/753/936/1270/1410 sqft all show 4.7-6.9%/yr 2021-26 on their own size series"
+        ],
+        "rental_assessment": "Rent of $4,100/mo is well-evidenced - 68 URA project+bedroom contracts over 12 months, confidence 0.95, and D'Nest has 902 rental filings in the D18 book, so tenant demand is deep and proven. The problem is the denominator, not the numerator: at $1.66M that is 2.96% gross and 1.76% net, below what an OCR leasehold 3BR should carry. Critically, the enlarged area does not command a rent premium - tenants pay for interior and bedrooms, not for a patio or terrace - so a 1,259 sqft unit rents at roughly the same $4,100 as the 1,130 sqft 3BR that would cost less to buy. Pasir Ris tenant demand skews to Changi Business Park / airport and Loyang industrial staff and is stable, but the rent ceiling in the far east is structurally low. Carry is negative through the hold.",
+        "appreciation_assessment": "Trailing evidence is honest and I verified it is not the pooled size-mix artifact: every deep size type at D'Nest shows genuine same-size growth 2021-26 (484: 4.7%, 753: 6.5%, 936: 5.4%, 1130: 4.0%, 1270: 6.7%, 1410: 6.9%), so the 5.95% pooled figure over 260 resale-only prints is real history. But two things cut it down for this unit. First, the 3BR line specifically is the laggard at 4.0%/yr and has turned negative in 2026 ($1,522 -> $1,494 psf median), alongside project-wide momentum of -0.775 and four of the deep types flat-to-down this year - the 2021-24 repricing looks spent. Second, the backtest priors say trailing CAGR carries ~0 forward power anyway, so 5.95% is story, not a forward number; the defensible forward rate is the bed-line's own 4.0%, which is close to the OCR baseline of 3.7-4.2%. Substituting 4.0% drops the all-cash 5yr annualized ROI from 5.69% to 3.96%. And that rate applies to a unit bought at the top of its format's price history rather than below it, so the first few years of growth go to recovering the entry premium.",
+        "stack_notes": "No researched profile exists for D'Nest, so this is reconstructed from URA rather than stack data - weight it accordingly. D'Nest's transacted sizes are discrete: 484, 570, 753, 775, 936, 947, 968, 1130, 1227/1237/1238, 1270, 1410, 1431, 1765, 1776, 2723. There is no 1,259 sqft type in 260 prints. The 1,270 sqft units print across floors 01-05, 06-10 and 11-15 at $1,480-1,614 psf and are filed as 4-bedroom in 34 of 45 URA rental contracts for the band - that is the 4BR-compact base type (83 units in the developer's mix). The 1,227-1,238 sqft units, by contrast, have printed three times in five years, every single one on floor 01 to 05, at $1,084 / $1,252 / $1,325 psf. A size that only ever appears on the lowest floor band and always ~15% below the neighbouring type is the signature of a ground-floor 3BR (1,130 sqft base) whose strata area is inflated by a private enclosed space; a top-floor unit with a roof terrace would read the same way. This unit's 2 bathrooms fits a 3BR and rules out the 3-bath 4BR compact, and its $1,319 psf ask lands inside the PES tier's range, not the 4BR-compact tier's - so the format read is consistent across size, baths, price and rental filings. Buyers should assume ground floor with patio until the floor plan says otherwise, with the usual privacy, security and pest trade-offs, and note that the true comp is $1.55-1.64M, not $1,500 psf x 1,259 sqft.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "D'Nest's own resale-to-resale same-size series for the 3-bedroom line: 1,130 sqft median psf 2021 $1,228 -> 2026 $1,494 = 4.0%/yr across 18 prints, all Type of Sale = Resale (no new-launch bias). Replaces the pooled 5.95% which blends the faster 753/1,270/1,410 sqft lines. Dated catalyst: CRL Pasir Ris interchange 2030 at ~597m. Consistent with the OCR forward baseline of 3.7-4.2%.",
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_072_500170157",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500170157",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
