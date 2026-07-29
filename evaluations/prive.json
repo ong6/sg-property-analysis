@@ -115,6 +115,82 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-prive-500121432",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,604 sqft ground-floor/PES-format 3BR at Prive (ex-EC, Punggol, 99yr from 2010) asking $1.99M / $1,241 psf. The apparent 20% 'discount for its age' is a floor-area artifact, not value: every one of the 6 caveats ever lodged for this 1,603 sqft type at Prive sits in floor band 01-05, and the format structurally trades ~25% below the project's apartment PSF ($1,500-1,670) because the strata area includes a large private enclosed patio. Marked against the only recent same-format print (Sep-2025, 1,603 sqft, 01-05, $1,900,000) and the project's own +2.0% PSF drift since, fair value today is ~$1.94M - the $1.99M ask carries no margin of safety at all.",
+      "rating_rationale": "Avoid for a 5-7yr investment hold: fairly-to-slightly-over priced, weak carry, and a format-specific exit problem. (1) VALUE - the strongest forward lever - is neutral-to-negative once the artifact is corrected. The algo's -20.0% vs the age-adjusted D19 size-band median compares an ex-EC ground-floor PES unit against private apartments; against Prive's own caveats the true comp is the Sep-2025 1,603 sqft 01-05 print at $1,900,000, which marks to ~$1.94M at the project's realized +2.0% drift (core-apartment median PSF $1,562 Jun-Nov 2025 -> $1,593 Feb-Jul 2026). Ask $1.99M is ~+2.7% ABOVE that, and the seller has already cut from $2,188,000 (7 Jun) to $1,990,000 (28 Jul), -9%, without clearing. (2) EXIT LIQUIDITY for this format is genuinely thin: 6 prints in 15 years for the 1,603 sqft type (four in 2018, one 2020, one Sep-2025) versus 95 for the 1,097 sqft and 60 for the 1,054 sqft. The algo's 'very_deep' buyer pool is a 680-unit development read, not a read on this unit - at exit you need one specific buyer who will pay $2.3M+ for a big ground-floor patio in Punggol. (3) CARRY is weak: real IRAS-stamped Prive 3BR rents run a $4,300 median (41 leases, 12mo, range $3,400-$4,900), large 1,300-1,500 sqft units $4,100-$5,300 - roughly 2.7-3.0% gross, not the 3.51% the district_bedroom fallback assumed (conf 0.55); net ~1.6-1.8%. (4) The project's re-rating is DONE: core-apartment median PSF ran $1,270 (2023H1) -> $1,566 (2025H1) on privatisation, then flatlined to $1,593 (2026H1) - +1.7% y/y. Buying the least liquid format in a plateauing project at no discount is negative selection. Region (OCR, realized fwd +3.7%/yr) and the 84-year lease are genuine positives, and nothing here is broken - at ~$1.85M this would be a Neutral - but at $1.99M there is no edge to pay for. The algo's 753 / valuation 92 rests entirely on the mis-comparison described above, and it had zero project transactions to defend itself with (URA's private-condo pull excludes ECs, so ura_transaction_count=0, psf_value=0, txn_volume=0 and age_value +14.46 carried the score).",
+      "red_flags": [
+        "The -20% 'cheap for its age' signal is a PES/ground-floor strata artifact: 6/6 caveats ever for the 1,603 sqft type at Prive are floor band 01-05, as are 4/4 of the 1,722 sqft and all 1,313/1,334/1,388 sqft prints - the format trades $1,073-$1,385 psf against $1,500-$1,670 psf for the project's apartments",
+        "Ask $1.99M is ~2.7% above the Sep-2025 same-format print ($1,900,000) marked forward at the project's own +2.0% PSF drift - no discount, no margin of safety",
+        "Price already cut 9% ($2,188,000 -> $1,990,000) between 7 Jun and 28 Jul 2026 without clearing; DB links it to an earlier $1.80M listing of the same unit group (relisted_from 500121432), so the ask may be an escalation on a unit that previously asked less",
+        "Format exit liquidity is very thin - 1 print in the last 5 years for this size (6 ever), vs 95 for the project's 1,097 sqft type; a $2.3M+ exit in 2031-33 needs one specific ground-floor buyer",
+        "Real gross yield ~2.7-3.0% (Prive 3BR median rent $4,300, 41 leases; large units $4,100-$5,300), not the 3.51% modelled from the D19 district_bedroom fallback (rent confidence 0.55)",
+        "Project price index has plateaued: core-apartment median PSF $1,566 (2025H1) -> $1,593 (2026H1), +1.7% y/y, after the +23%/2yr EC-privatisation re-rating - that catalyst is spent and in the price",
+        "MMR had zero project transactions to work with (URA private-condo data excludes ECs): appreciation from regional_baseline, psf_value/txn_volume/momentum all 0, so none of the v3.6/v3.8 discount-trust defences could fire",
+        "Scraped as 3 bed / 2 bath at 1,604 sqft (802 sqft per bath) while the two sibling 1,604 sqft listings show 3 baths - unverified listing detail; PropertyGuru page not reachable (Cloudflare) to confirm floor, PES size or condition",
+        "$1.99M quantum is the highest of all 15 current Prive listings' 3BR asks and competes with new EC/private launches in the Punggol-Sengkang pipeline"
+      ],
+      "catalysts": [
+        "OCR region - the panel's best realized forward segment (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Fully privatised ex-EC: open to all buyers including foreigners and companies (already reflected in the 2023-25 re-rating)",
+        "84 years of lease remaining - no lease-decay drag over a 5-7yr hold",
+        "Punggol Digital District / SIT campus employment build-out and Cross Island Line (Punggol, ~2032) - narrative only; the future-infrastructure lever has no measured forward power",
+        "3 min (240m) to Cove LRT with Punggol NEL interchange one stop away; 680-unit development supports development-level trading depth"
+      ],
+      "as_of": {
+        "price": 1990000,
+        "psf": 1240.65,
+        "beds": 3,
+        "sqft": 1604.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.51,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "A 1,604 sqft ground-floor/PES-format 3BR at Prive (ex-EC, Punggol, 99yr from 2010) asking $1.99M / $1,241 psf. The apparent 20% 'discount for its age' is a floor-area artifact, not value: every one of the 6 caveats ever lodged for this 1,603 sqft type at Prive sits in floor band 01-05, and the format structurally trades ~25% below the project's apartment PSF ($1,500-1,670) because the strata area includes a large private enclosed patio. Marked against the only recent same-format print (Sep-2025, 1,603 sqft, 01-05, $1,900,000) and the project's own +2.0% PSF drift since, fair value today is ~$1.94M - the $1.99M ask carries no margin of safety at all.",
+        "rating": "Avoid",
+        "rating_rationale": "Avoid for a 5-7yr investment hold: fairly-to-slightly-over priced, weak carry, and a format-specific exit problem. (1) VALUE - the strongest forward lever - is neutral-to-negative once the artifact is corrected. The algo's -20.0% vs the age-adjusted D19 size-band median compares an ex-EC ground-floor PES unit against private apartments; against Prive's own caveats the true comp is the Sep-2025 1,603 sqft 01-05 print at $1,900,000, which marks to ~$1.94M at the project's realized +2.0% drift (core-apartment median PSF $1,562 Jun-Nov 2025 -> $1,593 Feb-Jul 2026). Ask $1.99M is ~+2.7% ABOVE that, and the seller has already cut from $2,188,000 (7 Jun) to $1,990,000 (28 Jul), -9%, without clearing. (2) EXIT LIQUIDITY for this format is genuinely thin: 6 prints in 15 years for the 1,603 sqft type (four in 2018, one 2020, one Sep-2025) versus 95 for the 1,097 sqft and 60 for the 1,054 sqft. The algo's 'very_deep' buyer pool is a 680-unit development read, not a read on this unit - at exit you need one specific buyer who will pay $2.3M+ for a big ground-floor patio in Punggol. (3) CARRY is weak: real IRAS-stamped Prive 3BR rents run a $4,300 median (41 leases, 12mo, range $3,400-$4,900), large 1,300-1,500 sqft units $4,100-$5,300 - roughly 2.7-3.0% gross, not the 3.51% the district_bedroom fallback assumed (conf 0.55); net ~1.6-1.8%. (4) The project's re-rating is DONE: core-apartment median PSF ran $1,270 (2023H1) -> $1,566 (2025H1) on privatisation, then flatlined to $1,593 (2026H1) - +1.7% y/y. Buying the least liquid format in a plateauing project at no discount is negative selection. Region (OCR, realized fwd +3.7%/yr) and the 84-year lease are genuine positives, and nothing here is broken - at ~$1.85M this would be a Neutral - but at $1.99M there is no edge to pay for. The algo's 753 / valuation 92 rests entirely on the mis-comparison described above, and it had zero project transactions to defend itself with (URA's private-condo pull excludes ECs, so ura_transaction_count=0, psf_value=0, txn_volume=0 and age_value +14.46 carried the score).",
+        "red_flags": [
+          "The -20% 'cheap for its age' signal is a PES/ground-floor strata artifact: 6/6 caveats ever for the 1,603 sqft type at Prive are floor band 01-05, as are 4/4 of the 1,722 sqft and all 1,313/1,334/1,388 sqft prints - the format trades $1,073-$1,385 psf against $1,500-$1,670 psf for the project's apartments",
+          "Ask $1.99M is ~2.7% above the Sep-2025 same-format print ($1,900,000) marked forward at the project's own +2.0% PSF drift - no discount, no margin of safety",
+          "Price already cut 9% ($2,188,000 -> $1,990,000) between 7 Jun and 28 Jul 2026 without clearing; DB links it to an earlier $1.80M listing of the same unit group (relisted_from 500121432), so the ask may be an escalation on a unit that previously asked less",
+          "Format exit liquidity is very thin - 1 print in the last 5 years for this size (6 ever), vs 95 for the project's 1,097 sqft type; a $2.3M+ exit in 2031-33 needs one specific ground-floor buyer",
+          "Real gross yield ~2.7-3.0% (Prive 3BR median rent $4,300, 41 leases; large units $4,100-$5,300), not the 3.51% modelled from the D19 district_bedroom fallback (rent confidence 0.55)",
+          "Project price index has plateaued: core-apartment median PSF $1,566 (2025H1) -> $1,593 (2026H1), +1.7% y/y, after the +23%/2yr EC-privatisation re-rating - that catalyst is spent and in the price",
+          "MMR had zero project transactions to work with (URA private-condo data excludes ECs): appreciation from regional_baseline, psf_value/txn_volume/momentum all 0, so none of the v3.6/v3.8 discount-trust defences could fire",
+          "Scraped as 3 bed / 2 bath at 1,604 sqft (802 sqft per bath) while the two sibling 1,604 sqft listings show 3 baths - unverified listing detail; PropertyGuru page not reachable (Cloudflare) to confirm floor, PES size or condition",
+          "$1.99M quantum is the highest of all 15 current Prive listings' 3BR asks and competes with new EC/private launches in the Punggol-Sengkang pipeline"
+        ],
+        "catalysts": [
+          "OCR region - the panel's best realized forward segment (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Fully privatised ex-EC: open to all buyers including foreigners and companies (already reflected in the 2023-25 re-rating)",
+          "84 years of lease remaining - no lease-decay drag over a 5-7yr hold",
+          "Punggol Digital District / SIT campus employment build-out and Cross Island Line (Punggol, ~2032) - narrative only; the future-infrastructure lever has no measured forward power",
+          "3 min (240m) to Cove LRT with Punggol NEL interchange one stop away; 680-unit development supports development-level trading depth"
+        ],
+        "rental_assessment": "Real evidence beats the model here. IRAS-stamped Prive leases (last 12mo): 3BR median $4,300/mo across 41 contracts, range $3,400-$4,900; 2BR median $3,600 (22); large 1,300-1,500 sqft units $4,100-$5,300. A 1,604 sqft ground-floor 3BR realistically lets at $4,500-$5,000 - tenants pay for bedrooms and floor, not patio area. That is 2.7-3.0% gross on $1.99M (~1.6-1.8% net), against the raw_analysis figure of $5,822 / 3.51% which came from the D19 district_bedroom fallback (confidence 0.55) and is inflated by private Serangoon/Kovan stock. Carry does not compensate for the flat capital picture.",
+        "appreciation_assessment": "Resale-to-resale, from Prive's own caveats: core-apartment (<=1,250 sqft) median PSF $1,270 (2023H1) -> $1,392 (2024H1) -> $1,566 (2025H1) -> $1,593 (2026H1). The 2023-25 leg was the EC-privatisation re-rating and is spent; the last 12 months are +1.7%. The 1,603 sqft PES format specifically: $1,160,000 (Oct-2020) -> $1,900,000 (Sep-2025), strong on paper but on a single pair of prints in the 2021-26 bull regime, and it has never closed its gap to the 1,442 sqft 4BR (which printed $2.26M Jun-2025 and $2.35M Jan-2026 despite being 11% smaller). Forward I use ~3.0%/yr for this unit - the OCR panel prior (+3.7%) haircut for a plateauing post-catalyst project and a format dependent on a very thin buyer set - versus the 4.2% regional baseline the model applied. Trailing figures are story, not signal.",
+        "stack_notes": "No researched profile for Prive (status: not_researched), so no stack/facing join. The caveat record substitutes for the physical read: the 1,603 / 1,722 / 1,765 sqft types are exclusively floor band 01-05 (11 prints, zero above the 5th floor) - i.e. ground-floor units whose strata area includes a large private enclosed space. Within Prive, the desirable investment formats are the mid-to-high-floor 1,054-1,130 sqft apartments (60/35 prints, $1,600-$1,670 psf in 2026) and the 1,442 sqft 4BR on floors 11-15 ($1,629 psf, $2.35M Jan-2026). Worth a /research-development pass before any further Prive work.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "resale-to-resale only (Prive caveats, propertyforsale.com.sg, updated 29 Jul 2026): core-apartment median PSF $1,566 (2025H1) -> $1,593 (2026H1), +1.7% y/y after the 2023-25 privatisation re-rating; OCR panel prior +3.7% haircut for the plateau and the thin ground-floor PES format",
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_064_500153964",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-prive-500153964",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
