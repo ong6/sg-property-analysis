@@ -14,16 +14,31 @@ _SCORE_VERSION_CACHE: str | None = None
 
 
 def score_version() -> str:
-    """CONFIG_VERSION + content hash of this file.
+    """CONFIG_VERSION + a hash of this file's CALIBRATION, comments excluded.
 
-    Any weight/threshold edit changes the fingerprint even when nobody bumps
-    the version string. Cached per process.
+    Any weight/threshold edit changes the fingerprint even when nobody bumps the
+    version string. Cached per process.
+
+    Full-line comments and blank lines are stripped before hashing, so editing
+    the prose does NOT restamp the vintage of every scored listing. That
+    matters: the fingerprint exists to say "these scores came from different
+    calibration", and a documentation fix is not a recalibration — restamping
+    for one would assert a change that did not happen, and (worse) it makes
+    correcting a misleading comment expensive enough that nobody does it. This
+    file's stale comments cost real debugging time in Jul 2026.
+
+    Only whole-line comments are stripped, never trailing ones: a `#` inside a
+    string literal would otherwise silently alter the hashed content. Blank
+    lines go too, so reflowing a comment block is free.
     """
     global _SCORE_VERSION_CACHE
     if _SCORE_VERSION_CACHE is None:
         try:
-            with open(__file__, "rb") as f:
-                digest = _hashlib.sha1(f.read()).hexdigest()[:8]
+            with open(__file__, "r") as f:
+                calibration = "\n".join(
+                    ln for ln in f.read().splitlines()
+                    if ln.strip() and not ln.lstrip().startswith("#"))
+            digest = _hashlib.sha1(calibration.encode()).hexdigest()[:8]
         except OSError:
             digest = "unknown"
         _SCORE_VERSION_CACHE = f"{CONFIG_VERSION}+{digest}"
@@ -265,12 +280,35 @@ MMR_REGION_SLOPE = MMR_APPRECIATION_SLOPE  # 3.0 — regime-robust, matches appr
 # exceeds it. Negatives and every validated component (age/appreciation/
 # buyer_pool/mrt/region/lease) are untouched — a genuine large/new OCR
 # development with real value credit never trips the gate (psf_value/age_value
-# > 0 disarms it). Floor math: raw at the 650 threshold ≈ 1526
+# > 0 disarms it).
+#
+# Floor math AS ORIGINALLY SOLVED (v3.10a): raw at the 650 threshold ≈ 1526
 # (MMR_NORM_CENTER 1508 + MMR_NORM_SCALE 29 · logit(0.65)); the validated
 # non-value pile a value-less unit can legitimately earn already supplies up to
-# ~+22.9 raw, so capping the unvalidated structural trio at +3.1 keeps a
-# value-less/suspect listing below Buy on structure alone (1500 + 22.9 + 3.1 =
-# 1526 ≈ the 650 raw).
+# ~+22.9 raw, so capping unvalidated structural credit at +3.1 keeps a
+# value-less/suspect listing below Buy on structure alone.
+#
+# TWO THINGS HAVE SINCE MOVED. Read this before "correcting" the constant by
+# re-running the arithmetic above:
+#
+#   1. MMR_NORM_CENTER is now 1505, not 1508 (v3.10b). Raw at the 650 tier is
+#      therefore 1523, and the old formula re-solves the cap to ~0.1.
+#   2. The gate no longer covers a "trio". mmr.py's _gate_keys is
+#      ("future", "cost") — dev_size was EXCLUDED when v3.10b measured it as
+#      validated (std_β +0.130), because capping a validated signal is the
+#      exact anti-pattern the Jun-2026 audit warns against.
+#
+# So the old derivation no longer describes this gate, and re-solving it to 0.1
+# would clamp `cost` on a large share of listings on stale arithmetic rather
+# than evidence.
+#
+# MEASURED 2026-07-29, 600-listing sample: 253 were value-untrusted (the only
+# ones the gate can touch) and ZERO reached the cap — positive future+cost sums
+# max at 2.50 (p90 2.00), because MMR_FUTURE_WEIGHT is 0 so the sum is really
+# just `cost`, which MMR_COST_WEIGHT 0.5 bounds. The gate is currently INERT,
+# and 3.1 is the dormant guardrail the block above describes ("should
+# future/cost ever be re-weighted up"). Re-measure before changing it; re-solve
+# only if future or cost regain weight.
 MMR_STRUCTURAL_FLOOR_CAP = 3.1
 
 # ============================================================================
