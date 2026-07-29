@@ -1,0 +1,87 @@
+{
+  "condo": "The Lakeshore",
+  "slug": "the-lakeshore",
+  "district": "D22",
+  "history": [
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 926 sqft compact 3BR at The Lakeshore (2007, 848 units, 77yr lease left) asking $1.36M / $1,469 psf, 160-190m from Lakeside MRT (EW26) in D22/OCR. The asset is sound and liquid, but the price carries no edge: the exact same 926 sqft type transacted at $1,360,000 / $1,469 psf in Oct-2025, and the cohort's last-12mo median is $1,464 psf. Worse, this compact sub-cohort is the project's laggard — flat since 2024 ($1,499 -> $1,486 -> $1,459 median psf) while the 1,109-1,227 sqft 3BRs ran from $1,443 to $1,533 psf.",
+      "rating_rationale": "Priced exactly at its own cohort's market, in the cohort that has stopped moving. Verified against 154 URA prints for the project (64 in the last 24mo): the 900-1,000 sqft band's 24mo median is $1,486 psf and its last-12mo median $1,464 psf vs this $1,469 psf ask — a dead-on-market price, not a discount. An identical 926 sqft unit printed at $1,360,000 / $1,469 psf in Oct-2025, so the ask is literally last October's price. `relative_value` agrees: +3.0% vs the age-adjusted D22 median for its 800-1,050 size band. The single robust forward signal in the backtest — cheap-vs-peers — is therefore neutral-to-negative here, and a Buy needs it. The algo's score_1000 = 812 is built mostly on channels the priors de-weight or invert: appreciation +7.39 is the trailing 5yr URA CAGR (6.46%), which has ~0 forward power and whose own momentum field reads -1.0; yield +11.95 is the largest single component and high gross yield predicts LOWER forward price growth (std_beta -0.16), so it is carry, not appreciation. That yield is also overstated for THIS unit: the $5,300 rent is a project x 3BR average dominated by the 1,109-1,227 sqft pool (97 of 154 prints), while the live 926 sqft rental ask at The Lakeshore is $4,800 — re-scoring at $4,800 drops score_1000 to ~794 and gross yield to 4.24%. What is genuinely real and forward-relevant: OCR region (+3.7%/yr baseline, the strongest), exceptional transit (160-190m to Lakeside EW26), deep exit liquidity (848 units, 1,628 lifetime transactions, 64 prints in 24mo, a $1.36M quantum in the deepest buyer band), and 77 years of lease with no decay cliff inside a 5-7yr hold. That combination makes this a safe, easy-to-exit hold — it does not make it an outperformer bought at market. Against it: 2027-28 completions land inside the hold window — The LakeGarden Residences (306 units, TOP Aug-2027) and Sora, both on Yuan Ching Rd minutes away — competing for the same Lakeside tenant and resale story; and the JLD build-out is a narrative with no measured forward power plus proven execution risk (the 2024 master-developer tender drew no award; the 1,200-unit Town Hall Link White Site only reached the Confirmed List in Jul-2026, tender closing 17-Nov-2026). Neutral: a fine asset at a fair price is a hold-quality Neutral, not a Buy. It would become interesting nearer $1.28-1.30M (~$1,390 psf), which the cohort has printed as recently as Nov-2025.",
+      "red_flags": [
+        "No value edge: $1,469 psf ask vs $1,464 psf last-12mo median and $1,486 psf 24mo median for the same 900-1,000 sqft band; an identical 926 sqft unit printed at exactly $1,360,000 / $1,469 psf in Oct-2025",
+        "This compact sub-cohort is the project's laggard — 900-1,000 sqft median psf flat/down 2024-2026 ($1,499 -> $1,486 -> $1,459) while the 1,100-1,250 sqft 3BRs rose $1,443 -> $1,533; algo momentum reads -1.0",
+        "Dossier rent of $5,300/mo is a project-level 3BR average biased up by the 1,109-1,227 sqft pool; live 926 sqft rental ask is $4,800 -> true gross yield ~4.2%, not 4.68% (score_1000 812 -> ~794 on the corrected rent)",
+        "Score_1000 = 812 is driven mainly by trailing CAGR (~0 forward power) and yield (predicts LOWER forward growth) — the backtested value signal contributes ~nothing (psf_value +0.46, age_value -2.39)",
+        "Nearby 2027-28 supply lands inside the hold: The LakeGarden Residences (306 units, TOP Aug-2027) and Sora on Yuan Ching Rd — new-completion competition for Lakeside tenants and buyers",
+        "JLD execution risk is documented, not hypothetical: the 2024 master-developer tender closed with NO award; the 1,200-unit Town Hall Link White Site tender only closes 17-Nov-2026",
+        "926 sqft for 3BR / 2 bath = ~309 sqft per bedroom — tight; a resident review flags units as 'quite small and easily cluttered', and the 1,109 sqft alternative rents for only ~$600/mo more",
+        "99-yr lease from Nov-2002 (77yr left) — no cliff in a 5-7yr hold, but the exit buyer in 2032 faces a ~70yr lease",
+        "No condo profile researched and the listing record carries no floor/facing/stack — the unit's specific floor and outlook (lake vs HDB) are unverified"
+      ],
+      "catalysts": [
+        "160-190m to Lakeside MRT (EW26) — a 2-min walk, among the strongest transit positions in D22",
+        "OCR region: the best-realized forward baseline in the backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Deep, proven liquidity: 848 units, 1,628 lifetime transactions, 64 URA prints in the last 24 months, latest 24-Jun-2026 — a $1.36M quantum sits in the deepest buyer band",
+        "Jurong Lake District: 1,200-unit / 186,000 sqm GFA White Site at Town Hall Link moved to the 2H2026 Confirmed List, launched 3-Jul-2026, tender closes 17-Nov-2026 (narrative, not measured edge)",
+        "Cheapest of the live 926 sqft asks — the competing same-size unit is listed at $1,438,000 / $1,553 psf",
+        "Jurong East Integrated Transport Hub targeted 2027; Jurong Lake Gardens / Science Centre relocation continue to upgrade the precinct",
+        "EdgeProp (May-2024): 702 profitable of 926 sub-sale/resale transactions (75.8%), only 37 losses (4%) — moderate, not exceptional, downside evidence on a deep history"
+      ],
+      "as_of": {
+        "price": 1360000,
+        "psf": 1468.68,
+        "beds": 3,
+        "sqft": 926.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.46,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.68,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 77
+      },
+      "agent_evaluation": {
+        "summary": "A 926 sqft compact 3BR at The Lakeshore (2007, 848 units, 77yr lease left) asking $1.36M / $1,469 psf, 160-190m from Lakeside MRT (EW26) in D22/OCR. The asset is sound and liquid, but the price carries no edge: the exact same 926 sqft type transacted at $1,360,000 / $1,469 psf in Oct-2025, and the cohort's last-12mo median is $1,464 psf. Worse, this compact sub-cohort is the project's laggard — flat since 2024 ($1,499 -> $1,486 -> $1,459 median psf) while the 1,109-1,227 sqft 3BRs ran from $1,443 to $1,533 psf.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced exactly at its own cohort's market, in the cohort that has stopped moving. Verified against 154 URA prints for the project (64 in the last 24mo): the 900-1,000 sqft band's 24mo median is $1,486 psf and its last-12mo median $1,464 psf vs this $1,469 psf ask — a dead-on-market price, not a discount. An identical 926 sqft unit printed at $1,360,000 / $1,469 psf in Oct-2025, so the ask is literally last October's price. `relative_value` agrees: +3.0% vs the age-adjusted D22 median for its 800-1,050 size band. The single robust forward signal in the backtest — cheap-vs-peers — is therefore neutral-to-negative here, and a Buy needs it. The algo's score_1000 = 812 is built mostly on channels the priors de-weight or invert: appreciation +7.39 is the trailing 5yr URA CAGR (6.46%), which has ~0 forward power and whose own momentum field reads -1.0; yield +11.95 is the largest single component and high gross yield predicts LOWER forward price growth (std_beta -0.16), so it is carry, not appreciation. That yield is also overstated for THIS unit: the $5,300 rent is a project x 3BR average dominated by the 1,109-1,227 sqft pool (97 of 154 prints), while the live 926 sqft rental ask at The Lakeshore is $4,800 — re-scoring at $4,800 drops score_1000 to ~794 and gross yield to 4.24%. What is genuinely real and forward-relevant: OCR region (+3.7%/yr baseline, the strongest), exceptional transit (160-190m to Lakeside EW26), deep exit liquidity (848 units, 1,628 lifetime transactions, 64 prints in 24mo, a $1.36M quantum in the deepest buyer band), and 77 years of lease with no decay cliff inside a 5-7yr hold. That combination makes this a safe, easy-to-exit hold — it does not make it an outperformer bought at market. Against it: 2027-28 completions land inside the hold window — The LakeGarden Residences (306 units, TOP Aug-2027) and Sora, both on Yuan Ching Rd minutes away — competing for the same Lakeside tenant and resale story; and the JLD build-out is a narrative with no measured forward power plus proven execution risk (the 2024 master-developer tender drew no award; the 1,200-unit Town Hall Link White Site only reached the Confirmed List in Jul-2026, tender closing 17-Nov-2026). Neutral: a fine asset at a fair price is a hold-quality Neutral, not a Buy. It would become interesting nearer $1.28-1.30M (~$1,390 psf), which the cohort has printed as recently as Nov-2025.",
+        "red_flags": [
+          "No value edge: $1,469 psf ask vs $1,464 psf last-12mo median and $1,486 psf 24mo median for the same 900-1,000 sqft band; an identical 926 sqft unit printed at exactly $1,360,000 / $1,469 psf in Oct-2025",
+          "This compact sub-cohort is the project's laggard — 900-1,000 sqft median psf flat/down 2024-2026 ($1,499 -> $1,486 -> $1,459) while the 1,100-1,250 sqft 3BRs rose $1,443 -> $1,533; algo momentum reads -1.0",
+          "Dossier rent of $5,300/mo is a project-level 3BR average biased up by the 1,109-1,227 sqft pool; live 926 sqft rental ask is $4,800 -> true gross yield ~4.2%, not 4.68% (score_1000 812 -> ~794 on the corrected rent)",
+          "Score_1000 = 812 is driven mainly by trailing CAGR (~0 forward power) and yield (predicts LOWER forward growth) — the backtested value signal contributes ~nothing (psf_value +0.46, age_value -2.39)",
+          "Nearby 2027-28 supply lands inside the hold: The LakeGarden Residences (306 units, TOP Aug-2027) and Sora on Yuan Ching Rd — new-completion competition for Lakeside tenants and buyers",
+          "JLD execution risk is documented, not hypothetical: the 2024 master-developer tender closed with NO award; the 1,200-unit Town Hall Link White Site tender only closes 17-Nov-2026",
+          "926 sqft for 3BR / 2 bath = ~309 sqft per bedroom — tight; a resident review flags units as 'quite small and easily cluttered', and the 1,109 sqft alternative rents for only ~$600/mo more",
+          "99-yr lease from Nov-2002 (77yr left) — no cliff in a 5-7yr hold, but the exit buyer in 2032 faces a ~70yr lease",
+          "No condo profile researched and the listing record carries no floor/facing/stack — the unit's specific floor and outlook (lake vs HDB) are unverified"
+        ],
+        "catalysts": [
+          "160-190m to Lakeside MRT (EW26) — a 2-min walk, among the strongest transit positions in D22",
+          "OCR region: the best-realized forward baseline in the backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Deep, proven liquidity: 848 units, 1,628 lifetime transactions, 64 URA prints in the last 24 months, latest 24-Jun-2026 — a $1.36M quantum sits in the deepest buyer band",
+          "Jurong Lake District: 1,200-unit / 186,000 sqm GFA White Site at Town Hall Link moved to the 2H2026 Confirmed List, launched 3-Jul-2026, tender closes 17-Nov-2026 (narrative, not measured edge)",
+          "Cheapest of the live 926 sqft asks — the competing same-size unit is listed at $1,438,000 / $1,553 psf",
+          "Jurong East Integrated Transport Hub targeted 2027; Jurong Lake Gardens / Science Centre relocation continue to upgrade the precinct",
+          "EdgeProp (May-2024): 702 profitable of 926 sub-sale/resale transactions (75.8%), only 37 losses (4%) — moderate, not exceptional, downside evidence on a deep history"
+        ],
+        "rental_assessment": "Solid but overstated in the dossier. Live Lakeshore 3BR asks: 926 sqft $4,800/mo, 1,109 sqft $5,400-5,500, 1,173 sqft $5,800. The $5,300 in factual_data is a project x 3BR average pulled up by the large-unit pool, so treat ~$4,600-4,800 achieved as the working number -> ~4.1-4.2% gross, ~2.5% net. Tenant demand is real (NTU/NUS staff, Jurong industrial and IBP employment, 2-min MRT walk), but a 926 sqft 3BR is the weak product in its own project: the 1,109 sqft unit costs a tenant only ~$600/mo more, and 2027-28 completions at LakeGarden and Sora will add newer stock to the same catchment.",
+        "appreciation_assessment": "The headline 6.46% 5yr CAGR is real at project level and NOT a size-mix artifact — decomposed by band, 2BR ran ~6.1%/yr, the compact 3BR ~6.5%/yr and the large 3BR ~9.4%/yr from 21/22 to 25/26. But nearly all of it was booked by 2024, and the subject's own band has since stalled: median psf 1,499 (2024) -> 1,486 (2025) -> 1,459 (2026), last-12mo $1,464 vs prior-12mo $1,491, even as the 1,100-1,250 band kept climbing to $1,533. Forward, the trailing number carries ~0 predictive weight; what remains is the OCR baseline (+3.7%/yr) minus a cohort that is not participating and 2027-28 supply arriving in the window. I carry ~3.8%/yr, below the dossier's 6.46%, which cuts the modelled 5yr annualized ROI from ~6.9% toward ~5%.",
+        "stack_notes": "Unresearched — no profile exists for The Lakeshore and the listing record carries no floor, facing or stack, so no stack join was possible. What the prints do show: 926 sqft is a genuine Lakeshore type (27 all-time prints in the 900-1,000 band, sizes 926/936/947), so this is NOT a mis-scraped sqft or bedroom-count artifact. Floor is not a large swing factor in this cohort — recent prints run $1,404-1,531 psf across floors 6-10, 11-15 and 16-20 with no clean gradient. Unverified and worth checking before any offer: which block/outlook (Jurong Lake / pool vs Jurong West HDB and the Boon Lay Way traffic side).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.8,
+        "appreciation_rate_source": "Resale-to-resale URA evidence, not portal headline: 154 project prints decomposed by size band. Subject's 900-1,000 sqft band median psf 1,499 (2024) -> 1,486 (2025) -> 1,459 (2026); last-12mo $1,464 vs prior-12mo $1,491 = flat-to-down, while the project's 1,100-1,250 band rose $1,443 -> $1,533. Forward rate set to roughly the OCR realized baseline (+3.7%/yr), with the MRT/JLD positives offset by the cohort plateau and by 2027-28 competing completions (LakeGarden TOP Aug-2027, Sora). Replaces the 6.46% trailing 5yr CAGR, which is backward-loaded to the 2021-24 run-up and carries ~0 forward power.",
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_062_500181549",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-lakeshore-500181549",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
