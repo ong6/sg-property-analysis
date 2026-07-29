@@ -334,9 +334,24 @@ def run_poll(
             enr = _enrich_new_keys(new_keys, headless=headless, cap=enrich_new)
             state["enriched"] = enr["enriched"]
             state["enrich_failed"] = enr["failed"]
+            # `attempted` distinguishes the two ways enrichment reports zero:
+            # never visited a detail page, vs visited and extracted nothing.
+            # Without it both look like "0 enriched / 0 failed" and a silently
+            # broken extractor is indistinguishable from a no-op — which is how
+            # floor_level/facing sat at 0% coverage across 9k listings while the
+            # poll reported success every cycle.
+            state["enrich_attempted"] = enr["attempted"]
+            if enr["attempted"] and not enr["enriched"]:
+                msg = (f"enrichment extracted NOTHING from {enr['attempted']} "
+                       f"detail page(s) — the detail extractor is likely broken "
+                       f"(PG markup change). floor_level/facing stay empty, and "
+                       f"the v3.12 low-floor demotion cannot fire without them.")
+                state["enrich_warning"] = msg
+                print(f"  ⚠ {msg}", file=sys.stderr)
         else:
             state["enriched"] = 0
             state["enrich_failed"] = 0
+            state["enrich_attempted"] = 0
 
         n_scored, scored_rows = _score_keys(new_keys + changed_keys)
         state["scored"] = n_scored
