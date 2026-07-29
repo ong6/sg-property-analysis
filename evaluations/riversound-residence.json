@@ -114,6 +114,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-riversound-residence-500143929",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A genuine 1,475 sqft 4BR in a sound, deeply-traded Sengkang project — but the ask sits 8-12% above every price-adjusted print this oversized format has ever achieved, and it is the project's thinnest-liquidity unit type (3 sales in 14 years).",
+      "rating_rationale": "The 775 score is inflated by two identifiable artifacts, and the unit's own comps say the ask is too high.\n\nCOMP WORK (the crux). MMR reads this as -13.0% cheap vs age-adjusted D19 peers in the 1400-1800 sqft band. That band is the wrong comp: at Riversound, 1400-1800 sqft is not a normal apartment, it is the oversized/dual-key/PES format, and it trades at a structural discount to the project's core stock. Holding FLOOR CONSTANT (all comparisons within floors 01-05), the 1450-1600 sqft format printed 12.1% below core 900-1400 sqft units in 2021, 9.0% below in 2022, and 12.8% below in 2025 - a -9% to -13% format discount replicated across three separate years. Indexing the project's own core-size PSF ($1,078 in 2021 -> $1,455 in 2026) onto the format's three prints puts them at $1,213-$1,263 psf in 2026 money = $1.79M-$1.86M on 1,475 sqft. The ask is $2.00M / $1,356 psf, i.e. +8% to +12% over its own format's adjusted level.\n\nThe floor cannot rescue it. Within core sizes the entire floor premium is small: fl 01-05 $1,334 -> fl 16-20 $1,441 psf (+8% bottom to top tier, 2024-26). Applying the format discount to a floor-matched base gives fair value of ~$1.81M (low floor) to ~$1.95M (top tier, 2026 vintage). Even the most generous assumption only reaches the ask - it never beats it.\n\nLIQUIDITY IS THE SECOND STRIKE. The 1450-1600 sqft format has THREE recorded sales in the project's 14-year history (all floors 01-05, 100% low-floor share) against 61 project prints in 24 months alone. This is the type nobody trades. Layer on a $2.0M quantum in Sengkang where realsmart shows 65% of buyers are HDB upgraders - that ceiling thins the exit pool exactly where this unit sits.\n\nSCORE ARTIFACTS. (1) The size-band comp above drives age_value +9.95, the largest single positive MMR component. (2) mrt +4.16 credits '400m to MRT' - but the listing's own field reads '420m from SE4 Kangkar LRT'. This is LRT, not MRT; Buangkok NE15 is not walkable. A known scorer issue that adds roughly +100 score_1000 on Sengkang/Punggol stock.\n\nWHAT IS GENUINELY GOOD, and it is not nothing. realsmart REALSCORE 3.9/5 with 99.6% of resales profitable - 275 profitable vs 1 unprofitable across 276 resales, avg holding 7.7 yrs, avg annualized return 4.8%. That is a deep, trustworthy book (well past the 150-resale trust bar) and it is real downside evidence: almost nobody has lost money owning here. Add OCR/D19 (the strongest realized forward-return region), 590 units with a very deep buyer pool, ~85 yrs lease remaining, and a bedroom count that checks out (bed_bands 'ok': 4BR band 1150-1550 sqft on 35 URA rental contracts - not a relabel). But that record was earned by owners entering at $936-$1,174 psf. It does not underwrite a $1,356 psf entry into the format's own premium.\n\nTHE ARITHMETIC. A ~10% entry premium plus ~$73k of entry costs is roughly three years of this project's own historical 4.8% annualized return consumed before breakeven - on 2.67% gross / 1.44% net yield, so the carry does not fund the wait. The repo's ROI projections (5.9-6.0% annualized) run off a 6.5% trailing URA CAGR that the backtest says has ~zero forward power, and momentum is already negative (-0.684).\n\nThis revises the 2026-06-09 Neutral on this same unit at the same price. That call benchmarked the ask against the project's ~$1,406 psf 12-month average - a size-mix error, since that average is set by 900-1400 sqft stock. Format-controlled, the right comp is ~$1,260 psf, and the verdict moves down.\n\nConfidence is medium, not high: the unit's floor is undisclosed (PropertyGuru optional field, absent here) and would move fair value by ~8%, and the format discount rests on 3 prints. But that thinness is itself the liquidity argument, and the -9/-12/-13% replication across three years is consistent. At ~$1.85M this is a different conversation; at $2.00M it is a pass.",
+      "red_flags": [
+        "Ask $1,356 psf is +8% to +12% above the 2026-indexed level of every print this 1450-1600 sqft format has ever achieved ($1,213-$1,263 psf)",
+        "Format discount is real and floor-controlled: -12.1% (2021), -9.0% (2022), -12.8% (2025) vs core 900-1400 sqft units on the SAME floor tier",
+        "Thinnest-liquidity unit type in the project: 3 sales in 14 years, 100% of them floors 01-05, vs 61 project prints in 24 months",
+        "score_1000 775 is artifact-inflated: relative_value benchmarks a PES/oversized/dual-key format against normal D19 1400-1800 sqft apartments (age_value +9.95)",
+        "MRT component credits a 420m walk to Kangkar SE4 LRT as MRT (~+100 score_1000 on Sengkang stock); Buangkok NE15 is not walkable",
+        "Weak carry: 2.67% gross / 1.44% net yield on a $2.0M all-cash outlay - the hold does not pay while you wait out the entry premium",
+        "$2.0M quantum near the Sengkang ceiling with 65% HDB-upgrader buyer base (realsmart) - thin exit pool at this price point",
+        "Floor level undisclosed - the single fact that would most change fair value (~8% swing) is not in the listing",
+        "Trailing 6.5% URA CAGR drives the ROI projections but has ~zero forward power per backtest; momentum already negative (-0.684)"
+      ],
+      "catalysts": [
+        "realsmart REALSCORE 3.9/5, 99.6% of resales profitable (275 of 276, only 1 loss), avg holding 7.7 yrs - deep, trustworthy downside evidence well past the 150-resale trust bar",
+        "OCR / D19 - the strongest realized forward-return region in the backtest (+3.7%/yr realized forward)",
+        "Deep liquidity at project level: 590 units, 860 lifetime transactions, 137 URA prints, buyer_pool very_deep",
+        "Long runway: 99-yr lease from 2011, ~85 yrs remaining; age 11yr sits in the 7-30yr forward-return plateau",
+        "Bedroom count verified genuine (bed_bands 'ok' - 4BR band 1150-1550 sqft on 35 URA rental contracts), not a 3BR relabel",
+        "Cross Island Line Defu station ~1.2km and Punggol Digital District support the wider D19 story (narrative, not measured edge)"
+      ],
+      "as_of": {
+        "price": 1999999,
+        "psf": 1355.93,
+        "beds": 4,
+        "sqft": 1475.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.5,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.67,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "A genuine 1,475 sqft 4BR in a sound, deeply-traded Sengkang project — but the ask sits 8-12% above every price-adjusted print this oversized format has ever achieved, and it is the project's thinnest-liquidity unit type (3 sales in 14 years).",
+        "rating": "Avoid",
+        "rating_rationale": "The 775 score is inflated by two identifiable artifacts, and the unit's own comps say the ask is too high.\n\nCOMP WORK (the crux). MMR reads this as -13.0% cheap vs age-adjusted D19 peers in the 1400-1800 sqft band. That band is the wrong comp: at Riversound, 1400-1800 sqft is not a normal apartment, it is the oversized/dual-key/PES format, and it trades at a structural discount to the project's core stock. Holding FLOOR CONSTANT (all comparisons within floors 01-05), the 1450-1600 sqft format printed 12.1% below core 900-1400 sqft units in 2021, 9.0% below in 2022, and 12.8% below in 2025 - a -9% to -13% format discount replicated across three separate years. Indexing the project's own core-size PSF ($1,078 in 2021 -> $1,455 in 2026) onto the format's three prints puts them at $1,213-$1,263 psf in 2026 money = $1.79M-$1.86M on 1,475 sqft. The ask is $2.00M / $1,356 psf, i.e. +8% to +12% over its own format's adjusted level.\n\nThe floor cannot rescue it. Within core sizes the entire floor premium is small: fl 01-05 $1,334 -> fl 16-20 $1,441 psf (+8% bottom to top tier, 2024-26). Applying the format discount to a floor-matched base gives fair value of ~$1.81M (low floor) to ~$1.95M (top tier, 2026 vintage). Even the most generous assumption only reaches the ask - it never beats it.\n\nLIQUIDITY IS THE SECOND STRIKE. The 1450-1600 sqft format has THREE recorded sales in the project's 14-year history (all floors 01-05, 100% low-floor share) against 61 project prints in 24 months alone. This is the type nobody trades. Layer on a $2.0M quantum in Sengkang where realsmart shows 65% of buyers are HDB upgraders - that ceiling thins the exit pool exactly where this unit sits.\n\nSCORE ARTIFACTS. (1) The size-band comp above drives age_value +9.95, the largest single positive MMR component. (2) mrt +4.16 credits '400m to MRT' - but the listing's own field reads '420m from SE4 Kangkar LRT'. This is LRT, not MRT; Buangkok NE15 is not walkable. A known scorer issue that adds roughly +100 score_1000 on Sengkang/Punggol stock.\n\nWHAT IS GENUINELY GOOD, and it is not nothing. realsmart REALSCORE 3.9/5 with 99.6% of resales profitable - 275 profitable vs 1 unprofitable across 276 resales, avg holding 7.7 yrs, avg annualized return 4.8%. That is a deep, trustworthy book (well past the 150-resale trust bar) and it is real downside evidence: almost nobody has lost money owning here. Add OCR/D19 (the strongest realized forward-return region), 590 units with a very deep buyer pool, ~85 yrs lease remaining, and a bedroom count that checks out (bed_bands 'ok': 4BR band 1150-1550 sqft on 35 URA rental contracts - not a relabel). But that record was earned by owners entering at $936-$1,174 psf. It does not underwrite a $1,356 psf entry into the format's own premium.\n\nTHE ARITHMETIC. A ~10% entry premium plus ~$73k of entry costs is roughly three years of this project's own historical 4.8% annualized return consumed before breakeven - on 2.67% gross / 1.44% net yield, so the carry does not fund the wait. The repo's ROI projections (5.9-6.0% annualized) run off a 6.5% trailing URA CAGR that the backtest says has ~zero forward power, and momentum is already negative (-0.684).\n\nThis revises the 2026-06-09 Neutral on this same unit at the same price. That call benchmarked the ask against the project's ~$1,406 psf 12-month average - a size-mix error, since that average is set by 900-1400 sqft stock. Format-controlled, the right comp is ~$1,260 psf, and the verdict moves down.\n\nConfidence is medium, not high: the unit's floor is undisclosed (PropertyGuru optional field, absent here) and would move fair value by ~8%, and the format discount rests on 3 prints. But that thinness is itself the liquidity argument, and the -9/-12/-13% replication across three years is consistent. At ~$1.85M this is a different conversation; at $2.00M it is a pass.",
+        "red_flags": [
+          "Ask $1,356 psf is +8% to +12% above the 2026-indexed level of every print this 1450-1600 sqft format has ever achieved ($1,213-$1,263 psf)",
+          "Format discount is real and floor-controlled: -12.1% (2021), -9.0% (2022), -12.8% (2025) vs core 900-1400 sqft units on the SAME floor tier",
+          "Thinnest-liquidity unit type in the project: 3 sales in 14 years, 100% of them floors 01-05, vs 61 project prints in 24 months",
+          "score_1000 775 is artifact-inflated: relative_value benchmarks a PES/oversized/dual-key format against normal D19 1400-1800 sqft apartments (age_value +9.95)",
+          "MRT component credits a 420m walk to Kangkar SE4 LRT as MRT (~+100 score_1000 on Sengkang stock); Buangkok NE15 is not walkable",
+          "Weak carry: 2.67% gross / 1.44% net yield on a $2.0M all-cash outlay - the hold does not pay while you wait out the entry premium",
+          "$2.0M quantum near the Sengkang ceiling with 65% HDB-upgrader buyer base (realsmart) - thin exit pool at this price point",
+          "Floor level undisclosed - the single fact that would most change fair value (~8% swing) is not in the listing",
+          "Trailing 6.5% URA CAGR drives the ROI projections but has ~zero forward power per backtest; momentum already negative (-0.684)"
+        ],
+        "catalysts": [
+          "realsmart REALSCORE 3.9/5, 99.6% of resales profitable (275 of 276, only 1 loss), avg holding 7.7 yrs - deep, trustworthy downside evidence well past the 150-resale trust bar",
+          "OCR / D19 - the strongest realized forward-return region in the backtest (+3.7%/yr realized forward)",
+          "Deep liquidity at project level: 590 units, 860 lifetime transactions, 137 URA prints, buyer_pool very_deep",
+          "Long runway: 99-yr lease from 2011, ~85 yrs remaining; age 11yr sits in the 7-30yr forward-return plateau",
+          "Bedroom count verified genuine (bed_bands 'ok' - 4BR band 1150-1550 sqft on 35 URA rental contracts), not a 3BR relabel",
+          "Cross Island Line Defu station ~1.2km and Punggol Digital District support the wider D19 story (narrative, not measured edge)"
+        ],
+        "rental_assessment": "$4,450/mo estimated from 10 URA project-level 4BR contracts (confidence 0.95) = 2.67% gross, 1.44% net. Weak carry for a $2.0M outlay and correctly penalized by MMR (yield -4.92). If the unit is in fact a 4BR Dual Key (the 1421-1776 sqft type overlapping this size), splitting the keys could lift gross rent somewhat - but dual-key is also the narrower resale format, so that upside trades against exit liquidity rather than adding to it.",
+        "appreciation_assessment": "Do not use the 6.5% trailing URA 5yr CAGR: the backtest gives trailing CAGR ~zero forward power, momentum here is already negative (-0.684), and pooled project CAGR at Riversound is partly size-mix. The grounded numbers are realsmart's 4.8% realized annualized return over 275 profitable resales (avg 7.7yr holds, resale-to-resale) and the OCR forward baseline of +3.7%/yr. I use 4.0% as the working rate. Against that, a ~10% entry premium is ~3 years of return surrendered at purchase.",
+        "stack_notes": "No researched profile for Riversound Residence - stack_profile status is not_researched, so no facing/stack join. Published unit mix (buycondo.sg) shows 1,475 sqft sits ambiguously across 4BR Compact (1163-1572), 4BR Utility (1292-1690), 4BR Dual Key (1421-1776) and even 3BR Dual Key (1184-1550) - and a live Riversound RENTAL listing advertises 1,475 sqft as '3 Bedrooms', consistent with a dual-key. The URA prints resolve what the brochure cannot: every 1450-1600 sqft sale ever recorded is floors 01-05 at a 9-13% floor-controlled discount to core stock, so whatever the type is called, the market prices it as the project's weak format. Running /research-development on Riversound would pin the stack and floor and is the cheapest way to firm this call up.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "realsmart resale-to-resale realized return (4.8%/yr over 275 profitable resales, avg 7.7yr holding) blended toward the backtested OCR forward baseline (+3.7%/yr); trailing 6.5% URA CAGR de-weighted per v3.4.1+ priors (no forward power, negative momentum, size-mix risk).",
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 99.6,
+        "realsmart_annual_return_pct": 4.8
+      },
+      "source": {
+        "run_dir": "output/run_079_500143929",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-riversound-residence-500143929",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
