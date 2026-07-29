@@ -368,12 +368,11 @@ class ScoredListing:
     # serving window behind a cache-backed rent, and whether the v3.6.2
     # sqft cap engaged.
     rent_confidence: Optional[float] = None
-    # KNOWN GAP: the three fields below are never written. RentalEstimator
-    # .estimate_yield_score does emit contracts/window_months/capped, but
-    # FullScorer._score_rental_yield copies only `confidence`, so these stay
-    # None/False and raw_output's rent_evidence reports them as null/false
-    # (its `capped_note` branch is therefore unreachable). Wiring them up
-    # changes raw_analysis.json output — do it deliberately, not in passing.
+    # Populated since 2026-07-29. These are METADATA about the rent basis, never
+    # an input to it — the agent reads them to judge whether a yield is worth
+    # trusting, which is what makes the repo's "gross yield >5.5% is a
+    # verify-first artifact" rule actionable. A 4.3% yield behind 354 URA
+    # contracts and a 7.5% yield behind none are otherwise indistinguishable.
     rent_contracts: Optional[int] = None
     rent_window_months: Optional[int] = None
     rent_capped: bool = False

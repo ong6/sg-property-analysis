@@ -951,6 +951,19 @@ class FullScorer:
         if rent_confidence is not None:
             scored.rent_confidence = rent_confidence
             scores["rent_confidence"] = rent_confidence
+        # Audit #5: the EVIDENCE behind that confidence — URA contract depth,
+        # the serving window those contracts came from, and whether the v3.6.2
+        # sqft cap engaged. raw_output surfaces them as factual_data.rental
+        # .rent_evidence so a yield can be audited the same way a PSF comp is
+        # (a >5.5% gross yield is a verify-first artifact signal, and "90 real
+        # contracts" vs "no contracts at all" is the difference that decides
+        # it). Metadata ONLY — nothing here feeds a component or the MMR; the
+        # rent basis itself was already fixed upstream in the estimator.
+        # Defensive .get for the same reason as confidence: an older estimator
+        # may not emit them, and absent evidence must read as None/False.
+        scored.rent_contracts = rental_data.get("contracts")
+        scored.rent_window_months = rental_data.get("window_months")
+        scored.rent_capped = bool(rental_data.get("capped", False))
 
         # Gross Yield Score (0-6 pts) - was 0-12
         raw_yield_score = rental_data["gross_yield_score"]

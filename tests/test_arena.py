@@ -1,5 +1,8 @@
 """Tests for the condo arena tournament."""
 
+import pytest
+
+import scoring.arena as arena_mod
 from scoring.arena import run_arena, format_arena_report, DIMENSIONS
 from scoring.models import ScoredListing
 
@@ -77,6 +80,66 @@ class TestArena:
         ]
         report = format_arena_report(run_arena(listings))
         assert "Champion" in report and "Alpha" in report
+
+
+class TestDimensionWeights:
+    """The arena contests MMR components — a dimension the MMR has zeroed is
+    not a dimension, it is dead weight split evenly across every fight."""
+
+    def test_live_weights_sum_to_one(self):
+        assert sum(w for _keys, w in DIMENSIONS.values()) == pytest.approx(1.0)
+
+    def test_no_dimension_is_structurally_dead(self):
+        """`future` is out while config.MMR_FUTURE_WEIGHT is 0.0 — mmr emits
+        exactly 0.0 for it on every listing, so it could only ever tie."""
+        from config import MMR_FUTURE_WEIGHT
+        assert ("future" in DIMENSIONS) == bool(MMR_FUTURE_WEIGHT)
+        assert all(w > 0 for _keys, w in DIMENSIONS.values())
+
+    def test_future_returns_if_the_mmr_ever_pays_for_it(self):
+        """Re-enabling stays ONE weight in ONE file (config.py)."""
+        live = arena_mod.build_dimensions(0.35)
+        assert "future" in live
+        assert live["future"][1] == pytest.approx(0.10)
+        assert sum(w for _keys, w in live.values()) == pytest.approx(1.0)
+
+    def test_renormalisation_preserves_relative_shares(self):
+        """Dropping the dead dimension must not re-rank the live ones."""
+        with_future = arena_mod.build_dimensions(0.35)
+        for other in ("liquidity", "appreciation", "yield", "condition"):
+            assert (DIMENSIONS["value"][1] / DIMENSIONS[other][1]
+                    == pytest.approx(with_future["value"][1] / with_future[other][1]))
+
+    def test_dropping_the_dead_dimension_preserves_the_ranking(self, monkeypatch):
+        """Empirical version of the monotone-rescale argument: the whole
+        tournament (order AND Elo) is identical with the dead dimension in or
+        out — verified, not assumed, because Elo is path-dependent."""
+        listings = [
+            _fighter_listing(f"C{i}", _comps(appreciation=i * 3 - 7, psf_value=6 - i * 2,
+                                             txn_volume=i - 3, age=2 - i, future=0.0),
+                             mmr=1500 + i)
+            for i in range(8)
+        ]
+        monkeypatch.setattr(arena_mod, "DIMENSIONS", arena_mod.build_dimensions(0.10))
+        with_dead = [(f.key, f.elo, f.wins, f.losses, f.draws) for f in run_arena(listings)]
+        monkeypatch.setattr(arena_mod, "DIMENSIONS", arena_mod.build_dimensions(0.0))
+        without = [(f.key, f.elo, f.wins, f.losses, f.draws) for f in run_arena(listings)]
+        assert with_dead == without
+
+    # Each case splits the weight exactly evenly (one 1-share dimension each,
+    # everything else tied) yet lands 0.5 vs 0.5000000000000001 in float —
+    # `yield` under the shipped weights, `appreciation` under the renormalised
+    # ones. 4.5% of fights on the live book are exact draws like these.
+    @pytest.mark.parametrize("a_wins", ["appreciation", "yield"])
+    def test_equal_share_of_the_weight_is_a_draw(self, a_wins):
+        """A fight where each side takes an equal SHARE of the weight is a
+        draw. Point totals are float sums, so `==` does not deliver that — it
+        hands the whole fight to whichever side happened to round up."""
+        a = _fighter_listing("A", _comps(**{a_wins: 1.0}))
+        b = _fighter_listing("B", _comps(age=1.0))            # wins `condition`
+        fighters = run_arena([a, b])
+        assert all(f.draws == 1 and f.wins == 0 and f.losses == 0 for f in fighters)
+        assert all(f.elo == arena_mod.ELO_START for f in fighters)
 
 
 class TestBrackets:

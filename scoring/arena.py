@@ -1,9 +1,10 @@
 """Condo arena — pairwise round-robin value tournament.
 
-Every condo fights every other condo. A fight contests six weighted
-dimensions built from MMR components; whoever takes the larger weighted share
-wins the fight and gains Elo. The output is an Elo ranking, per-condo win
-rates, and the Pareto-efficient frontier.
+Every condo fights every other condo. A fight contests the weighted dimensions
+built from MMR components (which dimensions are live follows the MMR's own
+weights — see build_dimensions); whoever takes the larger weighted share wins
+the fight and gains Elo, an equal share is a draw. The output is an Elo
+ranking, per-condo win rates, and the Pareto-efficient frontier.
 
 Why not just sort by MMR? MMR is a weighted SUM — a single extreme component
 can carry an otherwise mediocre condo. The arena rewards breadth: a condo
@@ -20,14 +21,22 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any, Optional
 
-# Dimension -> (component keys summed, weight in a fight)
+try:
+    from config import MMR_FUTURE_WEIGHT
+except ImportError:  # mirrors mmr.py's fallback; only if config is unimportable
+    MMR_FUTURE_WEIGHT = 0.0
+
+# Dimension -> (component keys summed, RELATIVE weight)
 # v3.4: re-weighted to MATCH the MMR / backtest philosophy. The old weights gave
 # the `appreciation` dimension 0.30 (the HIGHEST) — handing back exactly the weight
 # the v3.3/v3.4 backtest stripped from the MMR (trailing appreciation ρ≈0, momentum
 # flat-to-contrarian). That made the arena's headline ranking lean on the weakest
 # forward feature and contradict the MMR. Now value (the strongest region-robust
-# forward signal) leads; appreciation is small. Weights sum to 1.0.
-DIMENSIONS: dict[str, tuple[list[str], float]] = {
+# forward signal) leads; appreciation is small.
+#
+# These are RELATIVE shares — the live set is renormalized to 1.0 below, because
+# `future` is only live when the MMR actually pays for it (see build_dimensions).
+_BASE_DIMENSIONS: dict[str, tuple[list[str], float]] = {
     "value": (["psf_value", "age_value"], 0.40),
     "liquidity": (["txn_volume", "buyer_pool", "dev_size", "price_band"], 0.20),
     "appreciation": (["appreciation", "momentum"], 0.10),
@@ -36,10 +45,58 @@ DIMENSIONS: dict[str, tuple[list[str], float]] = {
     "condition": (["age", "lease", "mrt", "cost", "red_flags"], 0.10),
 }
 
+
+def build_dimensions(future_weight: float) -> dict[str, tuple[list[str], float]]:
+    """The live dimension set, weights renormalized to sum to 1.0.
+
+    The arena contests MMR components, so a dimension the MMR has zeroed is not
+    a dimension — it is dead weight. `MMR_FUTURE_WEIGHT` has been 0.0 since
+    v3.10 (measured: univariate ρ +0.061 CI[-0.013,+0.143], multivariate std_β
+    -0.024 — no forward power in any construction), which makes mmr's `future`
+    component exactly 0.0 on EVERY listing. As a fight dimension that is a
+    guaranteed tie: both fighters banked weight/2, so 10% of the total weight
+    was awarded to both sides of every fight and decided nothing.
+
+    Adding the same constant to both sides never flips a fight in exact
+    arithmetic, so this was not a wrong-winner bug — it was a *misdescribed*
+    tournament: `value` really carried 40/90 = 44% of the contested weight
+    while the report printed 40%, and the Pareto frontier compared a column
+    that was constant for everyone. Dropping the dead dimension and
+    renormalizing makes the printed weights the real ones, and (measured over
+    the full 2.17M-fight book) leaves every Elo bit-identical — PROVIDED drawn
+    fights are recognised as draws rather than settled by float rounding, which
+    is what POINTS_EPS is for. Renormalized weights are repeating binaries, so
+    without that tolerance this rescale would have re-decided ~26k drawn fights
+    instead of none.
+
+    Derived from config rather than hardcoded so the MMR stays the single source
+    of truth: re-enabling `future` remains ONE weight in ONE file (config.py),
+    exactly as mmr.py's v3.10 note promises — the arena follows automatically
+    instead of silently ignoring a re-armed component.
+    """
+    live = {d: (keys, w) for d, (keys, w) in _BASE_DIMENSIONS.items()
+            if d != "future" or future_weight}
+    total = sum(w for _keys, w in live.values())
+    return {d: (keys, w / total) for d, (keys, w) in live.items()}
+
+
+DIMENSIONS: dict[str, tuple[list[str], float]] = build_dimensions(MMR_FUTURE_WEIGHT)
+
 ELO_START = 1200.0
 ELO_K = 32.0
 EPOCHS = 3          # passes over all pairs; Elo converges, order effects wash out
 TIE_MARGIN = 0.75   # dimension scores closer than this are a split
+# Weighted-points equality tolerance. A fight's point totals are short sums of
+# dimension weights, so a genuinely drawn fight — each side taking an equal
+# SHARE of the weight, 96,868 of 2,166,321 fights (4.5%) on the current book —
+# must compare equal. Bare `==` on floats does not deliver that: the two sums
+# add different weights in a different order and can land 0.5 vs
+# 0.5000000000000001, which silently awarded the whole fight (and full Elo) to
+# whichever side happened to round up — 2,034 fights on the current book.
+# The smallest genuinely different pair of totals differs by half the smallest
+# weight (~0.055 of the total), so an epsilon many orders below that separates
+# "drawn" from "won" without ever masking a real margin.
+POINTS_EPS = 1e-9
 
 
 @dataclass
@@ -95,11 +152,11 @@ def _fight(a: Fighter, b: Fighter) -> float:
         else:
             a_pts += weight / 2
             b_pts += weight / 2
-    if a_pts > b_pts:
+    if a_pts > b_pts + POINTS_EPS:
         return 1.0
-    if a_pts < b_pts:
+    if a_pts < b_pts - POINTS_EPS:
         return 0.0
-    return 0.5
+    return 0.5  # equal share of the weight — an honest draw (see POINTS_EPS)
 
 
 def _update_elo(a: Fighter, b: Fighter, a_score: float) -> None:
@@ -336,7 +393,9 @@ def format_arena_report(
     lines = [f"{H} {title}", ""]
     n = len(fighters)
     lines.append(f"{n} contenders (condo × unit type), {n*(n-1)//2} fights (round-robin), "
-                 f"dimensions: {', '.join(f'{d} {int(w*100)}%' for d, (_k, w) in DIMENSIONS.items())}")
+                 # one decimal: the live weights are renormalized shares (40/90,
+                 # 20/90, …), so integer % would print a set summing to 99
+                 f"dimensions: {', '.join(f'{d} {w:.1%}' for d, (_k, w) in DIMENSIONS.items())}")
     lines.append("")
     lines.append("| Rank | Condo | Type | Elo | W-L-D | Win% | MMR/1000 | Price | PSF | Age-adj premium | Agent eval | Frontier |")
     lines.append("|------|-------|------|-----|-------|------|----------|-------|-----|-----------------|-----------|----------|")

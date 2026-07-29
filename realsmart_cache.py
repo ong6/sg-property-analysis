@@ -124,7 +124,22 @@ _TILES = {
     "Last Transacted": ("last_transacted", str),
     "Sold At Launch": ("pct_sold_at_launch", _num),
     "HDB Buyers": ("pct_hdb_buyers", _num),
+    # Rental block. A second, independent rent basis per project — the repo's
+    # own rent comes from URA contracts via rental_cache.json, so having
+    # realsmart's alongside it turns an unverifiable single number into two
+    # sources that can agree or disagree. Exposed for cross-checking, NOT fed
+    # into MMR: realsmart aggregates lodged contracts and CLAUDE.md is explicit
+    # that load-bearing numbers get cross-checked against URA, not replaced by it.
+    "Avg PSF Rental": ("rent_psf", _num),
+    "No. of Rentals": ("rental_contracts", _count),
+    "Est. Rental Yield": ("est_rental_yield_pct", _num),
 }
+
+# Prose lines carrying numbers no tile exposes.
+_MEDIAN_RENT_RX = re.compile(
+    r"median monthly rent was S\$([\d,]+).*?ranging from S\$([\d,]+) to S\$([\d,]+)",
+    re.I | re.S)
+_RENT_WINDOW_RX = re.compile(r"latest (\d+) recorded rental contracts", re.I)
 # Label -> key for the label/subtitle/value header stats.
 _HEADERS = {r"^REALSCORE": "realscore", r"^Annual Returns$": "annual_return_pct"}
 # Plain label/value rows in the project-details table.
@@ -169,6 +184,19 @@ def parse_project_page(text: str) -> dict:
     # handful of resales is noise, so callers need the count to judge it.
     p, u = out.get("profitable_txns"), out.get("unprofitable_txns")
     out["resale_txns"] = int(p + u) if p is not None and u is not None else None
+
+    # The median rent and its spread live only in prose, not in any tile — and
+    # the spread is the useful part: a $4,000 median across $3,100-$6,500 says
+    # the unit mix matters more than the median does.
+    blob = "\n".join(lines)
+    m = _MEDIAN_RENT_RX.search(blob)
+    if m:
+        out["median_rent"] = _num(m.group(1))
+        out["rent_low"] = _num(m.group(2))
+        out["rent_high"] = _num(m.group(3))
+    w = _RENT_WINDOW_RX.search(blob)
+    if w:
+        out["rent_contracts_quoted"] = _num(w.group(1))
     return out
 
 
