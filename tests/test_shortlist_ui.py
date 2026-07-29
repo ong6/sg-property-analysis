@@ -94,22 +94,6 @@ class TestAlgoCutoff:
         assert sui.algo_cutoff([_row(score_1000=None)]) == 0.0
 
 
-class TestDivergence:
-    def test_algo_favourite_with_the_worst_record_scores_highest(self):
-        rows = [
-            _row("Trap", score_1000=900, pct_profitable=71.0, resale_txns=800),
-            _row("Mid", score_1000=800, pct_profitable=90.5, resale_txns=800),
-            _row("Good", score_1000=700, pct_profitable=99.0, resale_txns=800),
-        ]
-        gaps = sui.divergence(rows)
-        assert gaps["Trap"] == 2 and gaps["Good"] == -2
-
-    def test_unrecorded_projects_are_not_ranked_at_all(self):
-        rows = [_row("Known"), _row("Unknown", pct_profitable=None,
-                                    resale_txns=None)]
-        assert "Unknown" not in sui.divergence(rows)
-
-
 class TestPearson:
     def test_detects_the_inverse_relationship(self):
         r = sui.pearson([1.0, 2.0, 3.0, 4.0], [4.0, 3.0, 2.0, 1.0])
@@ -149,11 +133,13 @@ class TestVisitList:
         assert [r["condo"] for r in sui.blocked_by_beds(rows)] == ["Fake 3BR"]
 
     def test_oversize_is_not_treated_as_a_mislabel(self, monkeypatch):
-        # bed_bands is explicit that a penthouse being roomy is not a relabel.
+        # bed_bands is explicit that a penthouse being roomy is not a relabel,
+        # so it neither blocks a viewing nor earns a warning chip.
         monkeypatch.setattr(sui.bed_bands, "check",
                             lambda p, b, s: {"verdict": "oversize"})
         rows = [_row("Penthouse stack", pct_profitable=99.0, resale_txns=500)]
         assert len(sui.visit_list(rows)) == 1
+        assert sui._bed_chip(rows[0]) == ""
 
     def test_a_broken_bed_bands_file_does_not_break_the_viewer(self, monkeypatch):
         def boom(*a):
@@ -209,11 +195,14 @@ class TestFlagFormatting:
 class TestProfitCell:
     def test_thin_sample_is_labelled_thin_and_says_so(self):
         cell = sui._profit_cell(_row(pct_profitable=100.0, resale_txns=6))
-        assert 'class="depth thin">THIN<' in cell
+        assert 'class="depth">THIN<' in cell
+        assert "of 6 resales" in cell
 
-    def test_deep_sample_is_labelled_deep(self):
+    def test_a_trustworthy_sample_gets_no_badge_only_its_count(self):
+        # The badge is a warning, not a rating: "of 600 resales" already says
+        # the sample is deep, so a DEEP chip was decoration on the safe rows.
         cell = sui._profit_cell(_row(pct_profitable=98.0, resale_txns=600))
-        assert 'class="depth deep">DEEP<' in cell
+        assert "depth" not in cell and "of 600 resales" in cell
 
     def test_losses_are_expressed_in_owners_not_just_a_percentage(self):
         cell = sui._profit_cell(_row(pct_profitable=71.5, resale_txns=819))
@@ -222,27 +211,6 @@ class TestProfitCell:
     def test_absent_record_reads_as_unknown_not_as_zero(self):
         cell = sui._profit_cell(_row(pct_profitable=None, resale_txns=None))
         assert "no realsmart record" in cell and "0%" not in cell
-
-
-class TestScatter:
-    def test_quadrants_use_the_same_rule_as_the_chips(self):
-        rows = [_row(f"P{i}", score_1000=700 + i * 40,
-                     pct_profitable=100.0 - i * 8, resale_txns=400)
-                for i in range(5)]
-        svg = sui.scatter_svg(rows, sui.algo_cutoff(rows))
-        for i, r in enumerate(rows):
-            kind = sui.classify(r, sui.algo_cutoff(rows))
-            assert f'<g id="p{i}" class="pt {kind}"' in svg
-
-    def test_unrecorded_projects_are_not_plotted(self):
-        rows = [_row(f"P{i}", pct_profitable=97.0, resale_txns=400)
-                for i in range(4)]
-        rows.append(_row("Ghost", pct_profitable=None, resale_txns=None))
-        svg = sui.scatter_svg(rows, 800.0)
-        assert '<g id="p4"' not in svg and "Ghost" not in svg
-
-    def test_no_chart_is_drawn_from_too_few_points(self):
-        assert sui.scatter_svg([_row("A"), _row("B")], 800.0) == ""
 
 
 class TestRender:
@@ -288,19 +256,31 @@ class TestRender:
         assert "Nothing researched in this window" in page
         assert "Nothing clears the Buy bar" not in page
 
-    def test_filter_and_sort_state_is_carried_on_every_row(self):
+    def test_only_the_two_controls_that_survive_carry_row_state(self):
+        # One reader, seventeen rows: "who is it for" and "cheapest first" are
+        # the only re-orderings that change a weekend plan, so those are the
+        # only data-* the rows still pay for.
         page = self._page([_row("A", district="D19", price=1_400_000)])
-        for attr in ("data-mandate=", "data-verdict=", "data-read=",
-                     "data-district=", "data-price=", "data-algo=", "data-pct=",
-                     "data-txns=", "data-gap=", "data-thin=", "data-bedflag="):
+        for attr in ("data-mandate=", "data-price=", "data-rank="):
             assert attr in page
+        for gone in ("data-verdict=", "data-read=", "data-district=",
+                     "data-algo=", "data-pct=", "data-txns=", "data-gap=",
+                     "data-thin=", "data-bedflag="):
+            assert gone not in page
 
-    def test_hide_thin_filter_targets_thin_and_absent_records_alike(self):
-        page = self._page([_row("Thin", pct_profitable=100.0, resale_txns=6),
-                           _row("Absent", pct_profitable=None, resale_txns=None),
-                           _row("Deep", pct_profitable=98.0, resale_txns=600)])
-        assert page.count('data-thin="1"') == 2
-        assert page.count('data-thin="0"') == 1
+    def test_the_page_carries_no_chart_and_no_kpi_strip(self):
+        page = self._page([_row(f"P{i}", score_1000=700 + i * 40,
+                                pct_profitable=100.0 - i * 8, resale_txns=400)
+                           for i in range(5)])
+        assert "<svg" not in page
+        assert 'class="kpi' not in page
+
+    def test_the_trap_count_is_stated_in_the_call_rather_than_boxed(self):
+        page = self._page([_row("Trap", score_1000=900, pct_profitable=72.0,
+                                resale_txns=800),
+                           _row("Holds", score_1000=600, pct_profitable=99.0,
+                                resale_txns=800)])
+        assert "1 are value traps" in page or "1 is a value trap" in page
 
     def test_names_and_summaries_are_escaped(self):
         page = self._page([_row('<img src=x onerror=alert(1)>',
@@ -313,10 +293,10 @@ class TestRender:
         n_cols = page.split("<thead>")[1].split("</thead>")[0].count("<th")
         assert f'colspan="{n_cols}"' in page
 
-    def test_district_filter_is_populated_from_the_data(self):
-        page = self._page([_row("A", district="D19"), _row("B", district="D23")])
-        opts = page.split('id="f-district"')[1].split("</select>")[0]
-        assert '<option value="D19">' in opts and '<option value="D23">' in opts
+    def test_district_and_size_stay_on_the_row_even_without_a_filter(self):
+        page = self._page([_row("A", district="D19", beds=3, sqft=1100.0,
+                                price=1_400_000)])
+        assert "D19 · 3BR · 1100 sqft · $1,273 psf" in page
 
 
 class TestLiveData:

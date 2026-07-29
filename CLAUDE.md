@@ -29,7 +29,9 @@ Every flow: **① Recall → ② Gather → ③ Research & evaluate → ④ Fill
 In ② Gather, pull per-project market context from realsmart.sg via the
 `/realsmart-data` skill (owner-preferred source: **REALSCORE**, transaction/
 profitability stats, holding-period distribution, rental yield) alongside URA
-data. The public `/p/<slug>` page carries all of it on a plain fetch — no login.
+data. The public `/p/<slug>` page carries all of it on a plain fetch — no login;
+resolve the slug with `realsmart.py` (never guess it) or just read the cached
+answer with `python realsmart_cache.py --show "<condo>"`.
 Record REALSCORE, `realsmart_pct_profitable` and `realsmart_annual_return_pct`
 in `agent_evaluation`; read a high score as *downside* evidence (nobody has lost
 money here), never as an appreciation forecast, and always report the
@@ -123,19 +125,50 @@ the stats deserve to rank. Each run also writes a timestamped archive
 
 ## Weekly scan (`weekly.py`) — poll, algo-grade, AI-triage
 
-The once-a-week loop. **Nothing auto-starts it** — the reminder lives in the
-personal data store (`projects/property-finder/weekly-scan.md`, surfaced at
-session start when due) and the owner drives it from there; a successful run
-stamps that note's `last_run` so the reminder clears itself. It chains what
-already existed:
+The once-a-week loop. **Nothing auto-starts it** — there is no daily job, no
+LaunchAgent, no cron. The reminder lives in the personal data store
+(`projects/property-finder/weekly-scan.md`, surfaced at session start when due)
+and the owner drives it from there; a successful run stamps that note's
+`last_run` so the reminder clears itself. It chains what already existed:
 
 **poll → algo-grade EVERY new/changed listing → gate → AI-analyze only what
 clears the gate → digest → push the good ones to the store.**
 
-The gate is the point: `score_1000` is free, an agent run is not. Knobs live at
-the top of `weekly.py` (deliberately **not** `config.py` — that file is hashed
-into `score_version`, and a scan-policy threshold must not restamp the scored
-book's vintage):
+### The mandate — WHAT is being bought
+
+The `MANDATES` block at the top of `weekly.py` is the only part that says what
+to look for; everything else is policy about *how* to scan. Two buyers, two
+budgets, one shared region:
+
+| Mandate | Budget | Beds |
+|---|---|---|
+| `his` | ≤ $1.8M (flexible) | 3BR |
+| `hers` | ≈ $2.5M | 3–4BR |
+
+Region is a **hard filter, not a preference**: OCR only, `OCR_DISTRICTS =
+[16, 18, 19, 20, 21, 22, 23, 26, 28]` — D16–D28 minus D17/D24/D25/D27, each
+excluded for a reason recorded in `OCR_EXCLUDED` and argued from the repo's own
+URA resale prints (D24 has *zero* resales, D25 the thinnest book; D17/D27 are
+the softer trailing-return calls). The scrape ceiling is the top budget ×
+`SCAN_PRICE_HEADROOM` (1.06) — an ask slightly over budget still negotiates.
+
+Region and mandate are enforced **at the gate**, not just in the scrape scope:
+the DB holds thousands of older out-of-region rows, and an unreadable district
+fails closed.
+
+### The gate
+
+`score_1000` is free, an agent run is not. Checks run cheapest-first and the
+first failure wins: stale → incomplete (price/sqft/psf) → unscored → below
+`MIN_SCORE_FOR_AI` → out of region → outside the mandate → no usable project
+name (a marketing headline, not a development) → **bedroom relabel**
+(`bed_bands`, below) → re-eval cooldown → same (condo, beds) already
+shortlisted this scan. Every rejected listing carries a `gate_reason` that the
+digest prints — the gate is never a black box.
+
+Knobs live at the top of `weekly.py` (deliberately **not** `config.py` — that
+file is hashed into `score_version`, and a scan-policy threshold must not
+restamp the scored book's vintage):
 
 | Knob | Default | Why |
 |---|---|---|
@@ -143,24 +176,40 @@ book's vintage):
 | `MAX_AI_RUNS_PER_SCAN` | 8 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
 | `POLL_MAX_PAGES` | 5 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
 | `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
+| `AI_TIMEOUT_S` | 1800 | per-agent wall clock; past it something is stuck |
 | store push | Buy/Strong Buy **and** ≥ medium confidence | the store note is a feed the owner reads, not a log |
 
-In-batch dupes collapse to one run per (condo, bed count), and stale /
-incomplete / unscored records never reach an agent. Every gated-out listing
-carries a `gate_reason` that the digest prints — the gate is never a black box.
+**Budget allocation is per-mandate, not pure score rank.** Hers is a ~$1M
+larger budget and therefore systematically nicer stock, so a straight ranking
+would spend every slot on her and never research his. `_allocate_budget()` gives
+each mandate present a fair share first (`ceil(max_ai / mandates_present)`, so
+4 + 4 of 8), then hands unclaimed slots to the best remaining listings
+regardless of buyer. Anything left over is deferred with a cap reason.
 
 Each shortlisted project also gets a **realsmart.sg REALSCORE** lookup in the
-agent step (public `/p/<slug>`, plain fetch), surfaced in the digest and the
-store row. This sits *after* the gate on purpose: realsmart's ToS is
-personal-use, so ≤8 project lookups a week is a research source — never a
-per-listing feed.
+agent step (public `/p/<slug>`, plain fetch, slug resolved by `realsmart.py`),
+surfaced in the digest and the store row. This sits *after* the gate on purpose:
+realsmart's ToS is personal-use, so ≤8 project lookups a week is a research
+source — never a per-listing feed.
 
 ```bash
 python weekly.py                # the real thing (HEADED browser — Cloudflare)
 python weekly.py --dry-run      # poll + gate + digest, spawn no agents
 python weekly.py --no-poll      # grade what already arrived since the last run
+python weekly.py --full-book    # gate the WHOLE active book, not just the delta
 python weekly.py --force        # re-run a week that already succeeded
 ```
+
+**`--full-book` answers a different question.** The default delta view ("what
+arrived or re-priced this week?") is right for monitoring, but the owner is
+buying ONE property out of everything currently for sale, and standing inventory
+is invisible to a delta scan *forever* — Treasure at Tampines had 103 rows in the
+DB and could never surface, because none of them were new in a later cycle.
+`--full-book` re-gates every non-stale listing in the DB instead.
+
+Other flags: `--headless` (Cloudflare usually blocks it), `--min-score`,
+`--max-ai`, `--max-pages`, `--districts` / `--beds` / `--max-price` (override the
+mandate for one run), `--no-store-push`.
 
 Outputs: digest `output/weekly/<date>.md`, agent transcripts
 `output/weekly_runs/`, state `data/weekly_state.json`. A run whose **poll
@@ -171,6 +220,92 @@ The agent step gathers with **`invest.py --from-db <id>`**, which builds a run
 dir + `raw_analysis.json` straight from the DB record with **no scraping**
 (cohort stats from the full DB, so the MMR matches what the gate saw). Use it
 by hand whenever PropertyGuru is unreachable but the listing is already in the DB.
+
+## Bedroom bands (`bed_bands.py`) — catching relabelled unit types
+
+A listing's bedroom count comes from the marketing agent, not a registry, and
+agents relabel: a Waterview 926 sqft unit was listed as "3BR" when the developer's
+own mix and URA's filings call that size a 2-bedder (real 3BRs there start at
+1,109 sqft / $1.78M+). `listings_db`'s global 850–1800 sqft sanity table waves
+that through, so the check has to be **per project**.
+
+URA *rental* contracts are the authority available to us — unlike sale prints
+they carry "No of Bedroom" beside a floor-area band, filed by the landlord
+against the actual unit. `bed_bands.py --build` learns each project's
+bedroom→size bands from `data/ura_rental_D*.csv`.
+
+```bash
+python bed_bands.py --build                 # rebuild data/bed_bands.json (gitignored)
+python bed_bands.py --check "Waterview" 3 926
+```
+
+Verdicts: `ok` / `mismatch` / `oversize` / `undersize` / `unknown`. **Only
+`mismatch` blocks** — the size is below the project's own band for that bed count
+*and* lands in a smaller one. `oversize` passes (penthouses and dual-keys are
+genuinely bigger), and a band needs `MIN_CONTRACTS = 8` filings before it may
+contradict a listing, with `TOLERANCE = 0.12` slack for URA's 100 sqft buckets.
+`unknown` is honest, not a failure — most projects have no rental history.
+
+## realsmart.sg — slug resolution and the project cache
+
+Two modules, one source:
+
+- **`realsmart.py`** resolves a project name to its real `/p/<slug>` URL against
+  realsmart's own **sitemap** (12.8k slugs cached in `data/realsmart_slugs.json`,
+  gitignored/regenerable). Guessing is wrong often enough to matter — PropertyGuru
+  writes "West Bay Condo" where realsmart has "west-bay-condominium" and the guess
+  404s. `resolve()` returning **None is a first-class answer**: a guessed URL that
+  happens to 200 on a *different* project would attach the wrong REALSCORE.
+  ```bash
+  python realsmart.py --refresh              # one sitemap request, ~monthly
+  python realsmart.py "West Bay Condo"       # resolve one name
+  ```
+- **`realsmart_cache.py`** holds per-**project** facts (REALSCORE, % profitable,
+  profitable/unprofitable counts, avg holding, annual return, tenure/completion)
+  in `data/realsmart_projects.json` with a **45-day TTL** — these are properties
+  of the development, so twenty listings in one condo share one answer and a
+  normal run fetches nothing. Writes are merged under a file lock (two parallel
+  warms previously overwrote each other and silently lost ten fetches).
+  ```bash
+  python realsmart_cache.py --from-db --districts 16,18,19 --min-score 600
+  python realsmart_cache.py --show "Regentville"
+  ```
+  Fetching is two rungs: the plain public `/p/<slug>` page first, and — **only
+  when that page carries no REALSCORE** — a rendered `/map` fallback. realsmart
+  serves two `/p` templates and the lite one has no score at any depth, so this
+  is a genuine escalation, not a retry. The `/map` rung needs the logged-in
+  browser profile; an expired session just records no score.
+
+Parsing is deliberately paranoid: the page mixes *value-then-label* stat tiles
+with *label-subtitle-value* headers whose subtitles contain digits, and a
+highlights badge reading "100% / Profitable" sits above the real count tile.
+A naive read returns confident wrong numbers rather than failing.
+
+## Shortlist (`shortlist.py`, `shortlist_ui.py`) — the ranked buy-list
+
+`shortlist.py` joins eval memory + the realsmart cache + the listings DB into one
+ranked table (newest verdict per condo, filtered to the mandate).
+
+```bash
+python shortlist.py                  # everything evaluated since --since
+python shortlist.py --mandate his    # one buyer  (--json for the raw rows)
+python shortlist_ui.py               # http://127.0.0.1:8644 — same data, one page
+```
+
+**It ranks on evidence of exit, not on the algo score** — verdict first, then
+% of resales sold at a profit (only trusted at `MIN_RESALES_FOR_TRUST = 150`
+resales), then REALSCORE, and `score_1000` *last*. That ordering is deliberate:
+across this batch `score_1000` and % profitable correlated around **−0.7**. MMR
+rewards "cheap versus district peers", and a project is often cheap precisely
+because the market has learned it underperforms — so the score selects value
+traps. Until that is measured across the full book, transaction history is the
+more trustworthy sort key. **Treat this as a warning about MMR, not a proven
+law: it is one batch, not the full panel.**
+
+`shortlist_ui.py` computes that pairing into one READ chip per row — TRAP /
+HOLDS / WEAK / UNPROVEN — rather than leaving the arithmetic to the reader, and
+opens with the two or three projects actually worth visiting. It is a **viewer**:
+nothing there scrapes, scores, or spends an agent run.
 
 ## UI, dashboard, poller
 
@@ -207,11 +342,37 @@ coverage, district benchmarks, top projects) with per-condo ANALYZE buttons
 that run `claude -p "analyze <condo>"` headless (transcript →
 `output/analyze_runs/`; verdict auto-saves to eval memory).
 
+**Shortlist UI**: `python shortlist_ui.py` → http://127.0.0.1:8644 — the
+researched buy-list with the value-trap read (see the shortlist section above).
+
 Supporting data backbone (append-only — grep/analyze freely):
 `data/listings_sheet.csv` (latest state + MMR), `data/mmr_history.csv`
 (every scoring run), `data/arena_results.csv` (every tournament),
 `data/ura_cache.json` (per-project URA metrics), `data/ura_district_D*.csv`
 (raw URA prints — the comp source).
+
+### Detail-page enrichment — what PropertyGuru actually serves
+
+`--enrich-top N` / the poller's enrich step visit listing detail pages for
+`floor_level`, `facing`, `furnishing`, `total_units`, `developer`, lat/lng and
+facilities. This was silently broken — the fields sat at **0% coverage across
+~9,040 listings** because the JSON path moved (`props.pageProps.listingData`
+no longer exists; the data is under `props.pageProps.pageData.data`) and the
+fallback default was `None`, so extraction returned `{}` and reported success.
+Fixed 2026-07-29; extraction is now four layers (structured `__NEXT_DATA__` →
+that JSON's rendered metatable → `ld+json` `@graph` → body text), each filling
+only what earlier layers left blank.
+
+Know the honest ceilings before you read a coverage number as a bug:
+
+- **`facing` is unobtainable.** Null on 26/26 sampled listings — PropertyGuru
+  does not serve it. Expect it to stay 0%. Use `profiles/` (via
+  `/research-development`) for facing, never the listing feed.
+- **`floor_level` caps around 35–40%** — it is optional for the posting agent.
+- Populating `floor_level` does **not** re-arm the v3.12 low-floor demotion:
+  `MMR_LOW_FLOOR_PENALTY` fires on `stack_low_floor_share`, computed from URA
+  prints, which was never affected. What it does re-arm is the floor-basis comp
+  adjustment, floor-tier benchmark scaling and stack matching.
 
 ## The memory systems
 
@@ -254,7 +415,12 @@ python invest.py --fetch-ura-districts 3,5,14,15
 
 ```
 invest.py              # CLI: flows, --score, --recall, --search-db, --from-db, --from-review
-weekly.py              # Weekly scan: poll -> algo grade -> AI gate -> digest -> store push
+weekly.py              # Weekly scan: MANDATES, poll -> algo grade -> gate -> digest -> store push
+shortlist.py           # Ranked buy-list (eval memory + realsmart + DB), exit-record first
+shortlist_ui.py        # Shortlist viewer (:8644) with the TRAP/HOLDS read chip
+realsmart.py           # realsmart.sg slug resolution from their sitemap
+realsmart_cache.py     # Per-project realsmart facts, 45-day TTL, /p then /map fallback
+bed_bands.py           # Per-project bedroom->size bands from URA rental contracts
 backtest.py            # Point-in-time URA backtest (validates MMR weights)
 backtest_ext.py        # Extended panel: lever measurement, age curve, regimes
 calibrate_forward.py   # Shipped-score vs realized-return calibration (~mid-2027+)
@@ -276,7 +442,8 @@ scrapers/              # PropertyGuru + URA CSV + headless browser
 docs/evaluation-rubric.md   # Full evaluation rubric (read in step ③)
 docs/RELEASES.md            # Condensed release history + open items
 docs/AUDIT_JUN2026.md       # Jun-2026 full audit — prioritized fix queue
-.claude/skills/        # analyze-development / analyze-listing / market-scan / research-development / arena-cycle
+.claude/skills/        # analyze-development / analyze-listing / market-scan /
+                       # research-development / arena-cycle / realsmart-data
 evaluations/           # Past evaluations — judgements (commit; may be stale)
 profiles/              # Condo profiles — physical facts (commit)
 output/                # Per-run reports (gitignored)

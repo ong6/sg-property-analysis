@@ -315,7 +315,6 @@ def main() -> int:
     if args.projects:
         names += [p.strip() for p in args.projects.split(",") if p.strip()]
     if args.from_db:
-        import listings_db
         want = {int(d) for d in args.districts.split(",")} if args.districts else None
         for r in listings_db.load_db()["listings"].values():
             n = r.get("project_name")

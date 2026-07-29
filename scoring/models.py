@@ -217,22 +217,20 @@ class ROIResult:
     total_mortgage_interest: float = 0
     remaining_principal_at_exit: float = 0
 
-    @property
-    def total_investment(self) -> int:
-        return self.total_upfront_costs
-
 
 @dataclass
 class ScoredListing:
     """A listing with full scoring and ROI analysis.
 
-    Scoring System v2.1 (100 pts max, no URA bias):
-    - Rental Yield: 15 pts
-    - Capital Appreciation: 30 pts (real transaction data for all)
-    - Future Potential: 20 pts
-    - Liquidity: 25 pts
-    - Cost Efficiency: 10 pts
-    - Red Flags: -10 pts max
+    Carries three generations of score, all populated together:
+    - `mmr` / `score_1000` — the RANKING axis (scoring/mmr.py).
+    - `valuation_score` / `livability_score` / `overall_*` — the v3.11 0-100
+      axes (valuation.py / livability.py / overall.py).
+    - `total_score` — the legacy 100-point category sum (rental yield 15 /
+      capital appreciation 30 / future potential 20 / liquidity 25 / cost
+      efficiency 10 / red flags -10). DISPLAY ONLY: it is reported for context
+      but does not rank listings or set tiers whenever `mmr` is present
+      (see `rank_score` and `final_tier`).
     """
     # Original listing data
     id: str
@@ -307,10 +305,12 @@ class ScoredListing:
 
     @property
     def total_score(self) -> float:
-        """Calculate total score with v2.1 weights (no URA bias).
+        """Sum of the legacy 100-point category scores (display only).
 
-        Max: 100 pts for all properties equally.
-        Agent adjustment capped at [-8, +8].
+        Max 100 pts for all properties equally. No agent adjustment is applied
+        here — an agent's appreciation override re-enters through the MMR path
+        (mmr.apply_appreciation_override); only its free-text rationale is kept
+        on this model, as `agent_adjustment_reason`.
         """
         base = (
             self.rental_yield_score

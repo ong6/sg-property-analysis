@@ -26,6 +26,13 @@ the 0–100 **livability score** (`scoring/livability.py`: baths/bed, space/bed,
 walk, floor, facing, age; 50 = neutral) alongside this rubric — it's an explicit
 heuristic, never folded into MMR, and never evidence of returns.
 
+**Its facing term is effectively always dormant.** PropertyGuru does not serve a
+facing/direction on listing pages, so `facing` is null on the whole book and the
+component scores neutral. If facing matters to the call, get it from a researched
+profile (`/research-development` → `profiles/<slug>.json`) and say so — do not
+read a neutral livability score as "facing is fine". `floor_level` is available
+but only on enriched listings, and caps around 35–40% coverage.
+
 ## What the data actually predicts (backtest-calibrated priors, v3.5 — full 28-district panel)
 
 Read this BEFORE the per-factor sections below — it overrides older intuitions

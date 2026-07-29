@@ -36,6 +36,15 @@ output/analyze_runs/
 data/poll_state.json
 # Weekly-scan runtime state (which weeks already ran — machine-local)
 data/weekly_state.json
+# Zero-byte mutex files (listings_db / mmr_history / realsmart cache). Two are
+# already tracked from before this rule — an ignore doesn't untrack them, it just
+# stops new ones (e.g. data/realsmart_projects.json.lock) being committed.
+data/*.lock
+
+# Leftovers from the retired DAILY scan — the loop is weekly and hand-run now
+# (weekly.py). Kept ignored so an old checkout's empty dirs don't reappear.
+output/daily/
+output/daily_runs/
 
 # data/*.csv files are tracked deliberately — they are the data backbone
 # (listings sheet, MMR/arena history, URA cache export, raw URA downloads)

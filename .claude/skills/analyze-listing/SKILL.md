@@ -40,6 +40,23 @@ into MMR) alongside the rubric's own-stay lens.
    score the listing already carries. Prefer it in unattended runs: PropertyGuru
    is behind Cloudflare and a background scrape will usually just fail.
 
+   **Also required in Gather** — per-project market context from realsmart.sg via
+   the `/realsmart-data` skill (or `python realsmart_cache.py --show "<condo>"`).
+   Record REALSCORE, `realsmart_pct_profitable` and `realsmart_annual_return_pct`
+   in `agent_evaluation`, always with the transaction count behind them. Read a
+   high score as *downside* evidence (nobody has lost money here), never as an
+   appreciation forecast.
+
+   **Sanity-check the bedroom count** — it comes from the marketing agent, not a
+   registry, and 2BR+study routinely gets listed as 3BR:
+   ```bash
+   python bed_bands.py --check "<condo>" <beds> <sqft>
+   ```
+   A `mismatch` verdict means this size sits in the project's own band for a
+   *lower* bed count (per URA rental filings) — say so in the verdict; it usually
+   fails the buyer's screen outright regardless of price. `unknown` is common and
+   is not a red flag; `oversize` is a larger stack or penthouse, not a mislabel.
+
 **Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
 actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward
 power; model explains <10% of forward variance, so calibrate confidence.

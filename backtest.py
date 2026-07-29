@@ -1,9 +1,10 @@
 """Point-in-time backtest of the scoring algo's predictive features.
 
 We have no historical *score* log (mmr_history started Jun 2026), so the only
-ground truth is the URA transaction panel itself (data/ura_district_D*.csv,
-~65k resale/new-sale txns, May-2021 -> May-2026). This harness REPLAYS that
-panel point-in-time:
+ground truth is the URA transaction panel itself (data/ura_district_D*.csv;
+106,749 rows across all 28 districts as of Jun-2026 — this harness was written
+against the original 13-district ~65k slice, see docs/RELEASES.md v3.5b). This
+harness REPLAYS that panel point-in-time:
 
   1. Pick a split date T.
   2. For each project, compute the features the algo leans on -- using ONLY
@@ -13,9 +14,13 @@ panel point-in-time:
   4. Ask: do the as-of-T features actually rank forward winners? (Spearman +
      quintile forward-return tables.)
 
-The headline question: trailing appreciation/momentum is ~55-60% of MMR
-variance. Does it predict forward returns, or do returns mean-revert (in which
-case the algo's biggest weight points the wrong way)?
+The headline question (asked at v3.2, when trailing appreciation/momentum was
+~55-60% of MMR variance): does it predict forward returns, or do returns
+mean-revert — i.e. does the algo's biggest weight point the wrong way?
+ANSWERED, and the answer shipped: trailing CAGR ~0 forward power, momentum
+flat/contrarian, cheap-vs-district the strongest channel. Momentum weight is
+now 0 and the appreciation slope 7.5 -> 3 (docs/RELEASES.md v3.3/v3.4/v3.5).
+Re-run this harness after any weight change or panel growth.
 
 Index method (v1): per-project median resale PSF over 12-month windows.
 Resale + Sub Sale only (New Sale is developer pricing). Composition shift
@@ -489,7 +494,7 @@ def run_report(splits, window, min_txn, size_control, split_sample=False, dump=N
             cs = all_corr.get(f, [])
             if not cs:
                 continue
-            rho_p, n_p = _spearman([r.get(f) for r in pooled], fwd_p)
+            rho_p, _n_p = _spearman([r.get(f) for r in pooled], fwd_p)
             lo, hi, k = _cluster_boot_rho([r.get(f) for r in pooled], fwd_p, cl_p)
             pooled_s = (f"pooled {rho_p:+.3f} {_fmt_ci(lo, hi)} "
                         f"({k} projects)" if rho_p is not None else "pooled n/a")

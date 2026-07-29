@@ -33,14 +33,12 @@ from __future__ import annotations
 
 import json
 import os
-import time
 from contextlib import contextmanager
-from datetime import datetime
 from difflib import SequenceMatcher
 from typing import Any, Optional
 
-# Reuse the proven slug/normalise helpers from the evaluation store.
-from eval_memory import slugify, _norm  # noqa: F401
+# Reuse the proven slug/normalise/date/lock helpers from the evaluation store.
+from eval_memory import slugify, _norm, _today, _days_since, _path_lock  # noqa: F401
 
 PROFILE_DIR = os.path.join(os.path.dirname(__file__), "profiles")
 INDEX_FILE = os.path.join(PROFILE_DIR, "index.json")
@@ -56,19 +54,6 @@ PROFILE_TEMPLATE: dict = {
     "researched_at": None, "revision": 1, "confidence": "low",
     "sources": [], "development": {}, "stacks": [], "layouts": [],
 }
-
-
-def _today() -> str:
-    return datetime.now().strftime("%Y-%m-%d")
-
-
-def _days_since(date_str: Optional[str]) -> Optional[int]:
-    if not date_str:
-        return None
-    try:
-        return (datetime.now() - datetime.strptime(date_str, "%Y-%m-%d")).days
-    except ValueError:
-        return None
 
 
 def freshness_note(date_str: Optional[str]) -> str:
@@ -107,37 +92,8 @@ def load_profile(slug: str) -> Optional[dict]:
 def _slug_lock(slug: str, timeout: float = 10.0):
     """Cross-process lock for one profile file (concurrent sessions safe)."""
     _ensure_dir()
-    lock_path = _profile_path(slug) + ".lock"
-    deadline = time.monotonic() + timeout
-    acquired = False
-    while True:
-        try:
-            fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-            os.close(fd)
-            acquired = True
-            break
-        except FileExistsError:
-            if time.monotonic() >= deadline:
-                # Steal the stale lock and take it ourselves rather than drop
-                # the write (proceeding unlocked would also wrongly unlink the
-                # other process's lock on exit).
-                try:
-                    os.unlink(lock_path)
-                    fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-                    os.close(fd)
-                    acquired = True
-                except OSError:
-                    pass  # raced another stealer — proceed rather than drop the write
-                break
-            time.sleep(0.1)
-    try:
+    with _path_lock(_profile_path(slug) + ".lock", timeout=timeout):
         yield
-    finally:
-        if acquired:
-            try:
-                os.unlink(lock_path)
-            except OSError:
-                pass
 
 
 def normalize_profile(profile: dict) -> dict:

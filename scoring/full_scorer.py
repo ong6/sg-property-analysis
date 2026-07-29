@@ -1,27 +1,29 @@
 """Full scoring engine for property investment analysis.
 
-Implements the complete 100-point scoring system optimized for
-short-medium term (3-7 year) condo investment in Singapore.
+Enrichment + component scoring for a Singapore condo listing. This module
+computes the per-category BREAKDOWN that everything downstream reads; it is
+not itself the headline score.
 
-SCORING SYSTEM v2.2 (new-launch bias correction):
-- Rental Yield: 15 pts (yields mechanically low at $2M+)
-- Capital Appreciation: 30 pts (uses real transaction data for ALL properties)
-- Future Potential: 20 pts (infrastructure, govt plans, growth factors)
-- Liquidity: 25 pts (important for exit)
-- Cost Efficiency: 10 pts
-- Red Flags: -10 pts max
+What `FullScorer.score()` produces, in order:
+1. Enrichment — district normalization, project-units/centroid backfill,
+   remaining lease, MRT distance, appreciation rate (URA cache, new-launch
+   bias adjusted), rental estimate.
+2. The legacy 100-point category breakdown (rental yield 15 / capital
+   appreciation 30 / future potential 20 / liquidity 25 / cost efficiency 10 /
+   red flags -10). Since v3.0 this total is **display-only** — it is reported
+   but does not rank listings. Its real job is to populate `score_breakdown`,
+   which is the INPUT to MMR.
+3. Trust signals used by the MMR layer: `psf_premium_pct`, `psf_cohort_txns`,
+   tight same-size stack comps (`stack_premium_pct`, `stack_low_floor_share`,
+   `ask_above_own_stack_prints` / `ask_below_stack_prints`), EC comp join.
+4. `relative_value` (age-adjusted vs district peers), then **MMR** — the
+   actual ranking axis (`scoring/mmr.py`, uncapped Elo-style, shown as
+   `score_1000`).
+5. The v3.11 three-score axes (valuation / livability / overall) and ROI
+   projections + sensitivity.
 
-Max possible: 100 pts for ALL properties equally.
-
-v2.2 changes:
-- NEW: New-launch appreciation bias correction. Properties ≤7 years old have
-  their excess appreciation (above regional baseline) discounted by a decay
-  curve to account for the developer-to-market price transition effect.
-- NEW: URA data now separates "New Sale" vs "Resale" transactions. When a
-  project has significant new-sale proportion, resale-only CAGR is preferred.
-- CHANGED: Property age scoring rebalanced. Sweet spot moved from ≤5yr to 3-7yr
-  to avoid double-rewarding young properties with both inflated appreciation
-  and maximum age points.
+Current calibration, weights and release rationale live in `config.py` and
+`docs/RELEASES.md` — not here.
 """
 
 import json
@@ -46,14 +48,7 @@ try:
         REGIONAL_APPRECIATION_BASELINES,
         DEFAULT_REGIONAL_APPRECIATION,
         NEW_LAUNCH_DISCOUNT_CURVE,
-        NEW_SALE_PROPORTION_THRESHOLD,
-        SCORE_WEIGHT_RENTAL_YIELD,
         SCORE_WEIGHT_CAPITAL_APPRECIATION,
-        SCORE_WEIGHT_FUTURE_POTENTIAL,
-        SCORE_WEIGHT_LIQUIDITY,
-        SCORE_WEIGHT_COST_EFFICIENCY,
-        SCORE_TIER1_MIN,
-        SCORE_TIER2_MIN,
         ROI_SENSITIVITY_RENT_DELTA_PCT,
         ROI_SENSITIVITY_APPRECIATION_DELTA_PCT,
     )
@@ -62,14 +57,7 @@ except ImportError:
     REGIONAL_APPRECIATION_BASELINES = {"CCR": 0.028, "RCR": 0.037, "OCR": 0.042}
     DEFAULT_REGIONAL_APPRECIATION = 0.035
     NEW_LAUNCH_DISCOUNT_CURVE = {1: 0.60, 3: 0.45, 5: 0.30, 7: 0.15}
-    NEW_SALE_PROPORTION_THRESHOLD = 0.20
-    SCORE_WEIGHT_RENTAL_YIELD = 15
     SCORE_WEIGHT_CAPITAL_APPRECIATION = 30
-    SCORE_WEIGHT_FUTURE_POTENTIAL = 20
-    SCORE_WEIGHT_LIQUIDITY = 25
-    SCORE_WEIGHT_COST_EFFICIENCY = 10
-    SCORE_TIER1_MIN = 60
-    SCORE_TIER2_MIN = 45
     ROI_SENSITIVITY_RENT_DELTA_PCT = 0.10
     ROI_SENSITIVITY_APPRECIATION_DELTA_PCT = 0.015
 
@@ -357,24 +345,16 @@ class FullScorer:
     """
     Complete scoring engine for property investment analysis.
 
-    SCORING SYSTEM v2.1 (100 points max, no URA bias):
-    - Rental Yield Potential: 15 pts
-    - Capital Appreciation: 30 pts (real transaction data for ALL properties)
-    - Future Potential: 20 pts (MRT, govt zones, transformation)
-    - Liquidity & Exit Risk: 25 pts
-    - Cost Efficiency: 10 pts
-    - Red Flag Deductions: -10 pts max
+    Emits the per-category breakdown (rental yield / capital appreciation /
+    future potential / liquidity / cost efficiency / red flags) that MMR
+    consumes, plus the trust signals (`psf_premium_pct`, `psf_cohort_txns`,
+    stack-print flags) the v3.6-v3.12 data-trust rules key on. The 100-point
+    total it also produces is display-only — MMR (`score_1000`) is the
+    ranking axis. See the module docstring for the full pipeline.
 
-    Designed for Singapore Citizen, first property (0% ABSD),
-    5-7 year holding period, $2.2M-$2.7M price range.
+    Assumes an INVESTMENT purpose (5-7yr hold); own-stay uses the livability /
+    overall axes instead.
     """
-
-    # Score weights (v2.1 - from config)
-    WEIGHT_RENTAL_YIELD = SCORE_WEIGHT_RENTAL_YIELD
-    WEIGHT_CAPITAL_APPRECIATION = SCORE_WEIGHT_CAPITAL_APPRECIATION
-    WEIGHT_FUTURE_POTENTIAL = SCORE_WEIGHT_FUTURE_POTENTIAL
-    WEIGHT_LIQUIDITY = SCORE_WEIGHT_LIQUIDITY
-    WEIGHT_COST_EFFICIENCY = SCORE_WEIGHT_COST_EFFICIENCY
 
     # Buyer pool depth scoring (replaces static district popularity)
     # Derived from district_profiles.json: condo density + HDB upgrader pool + employment centers
@@ -388,15 +368,10 @@ class FullScorer:
     # Price sweet spot for liquidity
     LIQUIDITY_SWEET_SPOT = (1_800_000, 2_500_000)
 
-    # Tier thresholds (from config.py)
-    TIER1_MIN_SCORE = SCORE_TIER1_MIN
-    TIER2_MIN_SCORE = SCORE_TIER2_MIN
-
     def __init__(
         self,
         condo_rental_data: Optional[dict] = None,
         transaction_data: Optional[dict] = None,
-        fetch_appreciation: bool = False,
         ura_data: Optional[dict] = None,
         cohort_stats: Optional[dict] = None,
     ):
@@ -405,9 +380,14 @@ class FullScorer:
 
         Args:
             condo_rental_data: Dict mapping project_name -> median rent_psf
-            transaction_data: Dict mapping project_name -> transaction history data
-            fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
+            transaction_data: Dict mapping project_name -> transaction history data.
+                Optional PropertyGuru-side appreciation/txn-count fallback, consulted
+                only when the URA cache has no entry for the project. Nothing in the
+                repo populates it today (the URA cache is the appreciation source);
+                it remains a supported injection point.
             ura_data: Dict mapping project_name -> URA appreciation data (from official govt source)
+            cohort_stats: Percentile distributions for this batch. Omitted ->
+                seeded from the full listings DB (see _default_cohort_stats).
         """
         self._current_year = datetime.now().year
         self.quick_scorer = QuickScorer()
@@ -419,9 +399,6 @@ class FullScorer:
         self.district_profiles = self._load_district_profiles()
         self.transaction_data = transaction_data or {}
         self.ura_data = ura_data or {}  # URA official data takes priority
-        # `fetch_appreciation` is retained for backward compatibility but is now
-        # inert: live PropertyGuru appreciation scraping was removed in favour of
-        # the URA cache as the single appreciation source.
         self._appreciation_cache: dict[str, tuple[float, str]] = {}
         # No batch supplied (single-listing flows) -> seed from the listings DB
         self.cohort_stats = cohort_stats or _default_cohort_stats()
@@ -584,9 +561,8 @@ class FullScorer:
         Priority order:
         1. URA resale-only data (if available and property has new-launch bias)
         2. URA official data (5 years history, most reliable)
-        3. Pre-fetched transaction data (PropertyGuru)
-        4. Live fetch from PropertyGuru API
-        5. Regional baseline fallback (flagged for AI follow-up)
+        3. Pre-fetched transaction data (only if `transaction_data` was injected)
+        4. Regional baseline fallback (flagged for AI follow-up)
 
         Returns:
             Tuple of (annual_rate_decimal, source)
@@ -2083,7 +2059,6 @@ def score_listings(
     listings: list[dict],
     condo_rental_data: Optional[dict] = None,
     transaction_data: Optional[dict] = None,
-    fetch_appreciation: bool = False,
     ura_data: Optional[dict] = None,
 ) -> list[ScoredListing]:
     """
@@ -2093,17 +2068,15 @@ def score_listings(
         listings: List of listing dictionaries
         condo_rental_data: Optional condo rental data
         transaction_data: Optional transaction history data
-        fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
         ura_data: Optional URA appreciation data (official govt source, highest priority)
 
     Returns:
-        List of ScoredListing objects, sorted by total score descending
+        List of ScoredListing objects, sorted by rank_score descending
     """
     cohort_stats = build_cohort_stats(listings)
     scorer = FullScorer(
         condo_rental_data,
         transaction_data,
-        fetch_appreciation,
         ura_data,
         cohort_stats=cohort_stats,
     )
@@ -2117,7 +2090,6 @@ def score_and_filter(
     min_quick_score: int = 40,
     condo_rental_data: Optional[dict] = None,
     transaction_data: Optional[dict] = None,
-    fetch_appreciation: bool = False,
     ura_data: Optional[dict] = None,
 ) -> dict[str, list[ScoredListing]]:
     """
@@ -2133,14 +2105,11 @@ def score_and_filter(
             Default 40 is intentionally lenient since quick scorer lacks URA data.
         condo_rental_data: Optional condo rental data
         transaction_data: Optional transaction history data
-        fetch_appreciation: Deprecated/ignored. Appreciation now comes solely from the URA cache.
         ura_data: Optional URA appreciation data (official govt source, highest priority)
 
     Returns:
         Dict with "scored" (full analysis) and "rejected" (quick filtered) lists
     """
-    from scoring.quick_scorer import QuickScorer
-
     # Phase 1: Quick filter using min_quick_score threshold
     quick_scorer = QuickScorer()
     to_score = []
@@ -2176,7 +2145,6 @@ def score_and_filter(
     scorer = FullScorer(
         condo_rental_data,
         transaction_data,
-        fetch_appreciation,
         ura_data,
         cohort_stats=cohort_stats,
     )

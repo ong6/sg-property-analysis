@@ -30,6 +30,12 @@ into MMR) alongside the rubric's own-stay lens.
    ```
    Creates `output/run_NNN/raw_analysis.json` (one entry per unit type).
 
+   Also pull per-project market context from realsmart.sg via the
+   `/realsmart-data` skill (or `python realsmart_cache.py --show "<name>"`) —
+   REALSCORE, % of resales sold at a profit, avg holding period. Record it in
+   `agent_evaluation` *with the transaction count*: 5.0 across six resales is
+   noise. It is backward-looking downside evidence, never an appreciation forecast.
+
 **Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
 actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward
 power; model explains <10% of forward variance, so calibrate confidence.

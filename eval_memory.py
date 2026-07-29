@@ -162,10 +162,16 @@ def _key_facts(entry: dict) -> dict:
 
 
 @contextmanager
-def _slug_lock(slug: str, timeout: float = 10.0):
-    """Cross-process lock for one condo file, so concurrent sessions evaluating
-    different units of the same condo can't lose each other's appends."""
-    lock_path = _condo_path(slug) + ".lock"
+def _path_lock(lock_path: str, timeout: float = 10.0):
+    """Cross-process O_EXCL lock guarding one JSON file's read-append-write.
+
+    Shared by this module's per-condo lock and profile_memory's per-profile
+    lock — both guard a single file whose whole content is rewritten, so the
+    semantics are identical. On timeout the stale lock (from a crashed
+    process) is STOLEN and held by us rather than the write being dropped;
+    proceeding unlocked would also wrongly unlink the other process's lock on
+    exit. Losing a steal race is benign — we proceed rather than drop.
+    """
     deadline = time.monotonic() + timeout
     acquired = False
     while True:
@@ -176,16 +182,13 @@ def _slug_lock(slug: str, timeout: float = 10.0):
             break
         except FileExistsError:
             if time.monotonic() >= deadline:
-                # Stale lock (crashed process) — steal it and take it ourselves
-                # rather than dropping the save. (Previously this proceeded
-                # WITHOUT the lock and then unlinked the other process's lock.)
                 try:
                     os.unlink(lock_path)
                     fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
                     os.close(fd)
                     acquired = True
                 except OSError:
-                    pass  # raced another stealer — proceed rather than drop the save
+                    pass  # raced another stealer — proceed rather than drop the write
                 break
             time.sleep(0.1)
     try:
@@ -196,6 +199,14 @@ def _slug_lock(slug: str, timeout: float = 10.0):
                 os.unlink(lock_path)
             except OSError:
                 pass
+
+
+@contextmanager
+def _slug_lock(slug: str, timeout: float = 10.0):
+    """Cross-process lock for one condo file, so concurrent sessions evaluating
+    different units of the same condo can't lose each other's appends."""
+    with _path_lock(_condo_path(slug) + ".lock", timeout=timeout):
+        yield
 
 
 def save_evaluation(condo: str, district: Optional[str], history_entry: dict) -> str:

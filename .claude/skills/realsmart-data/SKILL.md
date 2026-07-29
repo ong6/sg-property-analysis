@@ -11,21 +11,49 @@ lodged transactions, so cross-check any load-bearing number against `--raw` URA 
 
 ## Fetch
 
-**Default — the public project page. No login, no browser, one plain HTTP fetch:**
+**First choice — let the repo do it.** `realsmart_cache.py` already wraps every step
+below (slug resolution, plain fetch, the `/map` escalation, parsing) and caches the
+result per project for 45 days, so a repeat lookup costs nothing:
+
+```bash
+python realsmart_cache.py --show "Regentville"          # one project, JSON out
+python realsmart_cache.py --from-db --districts 16,18,19 --min-score 600   # warm a scope
+```
+
+Reach for the raw fetches below only when you need a field the cache doesn't parse.
+
+**Resolve the slug — do not guess it.** PropertyGuru abbreviates where realsmart
+spells out ("West Bay Condo" vs `west-bay-condominium`), so a lowercase-and-hyphenate
+guess 404s often enough to matter, and a guess that *happens* to 200 can attach a
+different project's REALSCORE. `realsmart.py` resolves against realsmart's own sitemap
+(cached slug index, one sitemap request a month):
+
+```bash
+python realsmart.py --refresh              # build/refresh the slug index
+python realsmart.py "West Bay Condo"       # -> https://realsmart.sg/p/west-bay-condominium
+```
+
+If it returns no slug, say "not found" and leave the field null. That is the correct
+answer — never fall back to a guessed URL.
+
+**Then fetch the public project page. No login, no browser, one plain HTTP fetch:**
 
 ```bash
 python3 /Users/bytedance/Sideproject/personal-data-store/.claude/skills/web-extract/scripts/fetch.py \
   "https://realsmart.sg/p/<slug>"
 ```
 
-Slug is the project name lowercased, non-alphanumerics collapsed to hyphens
-(`JadeScape` → `jadescape`, `The Continuum` → `the-continuum`). It carries
-REALSCORE, the % Profitable badge, annual returns, transaction stats, unit mix,
-MRT/schools and project facts — verified 2026-07-28. If a slug 404s, try the
-name's other spellings; don't fall through to the SPA just for a score.
+It carries REALSCORE, the % Profitable badge, annual returns, transaction stats, unit
+mix, MRT/schools and project facts — verified 2026-07-28.
 
-**Only if you need something the `/p/` page genuinely lacks** (e.g. per-block
-profitability), use the login-gated map SPA via the Patchright reader:
+**Escalate to the map SPA in two cases**, via the Patchright reader (login-gated):
+
+1. You need something the `/p/` page genuinely lacks (e.g. per-block profitability).
+2. **The `/p/` page has no REALSCORE at all.** realsmart serves two `/p` templates —
+   a full one (JadeScape, Regentville, FLO Residence) and a *lite* one (Palm Gardens)
+   with no score at any depth. Re-fetching the lite page never helps; `/map` has the
+   numbers for those same projects. This is an escalation for a missing score, not a
+   retry for a flaky one.
 
 ```bash
 python3 /Users/bytedance/Sideproject/personal-data-store/.claude/skills/web-extract/scripts/reader.py \
@@ -58,6 +86,16 @@ the one worth acting on.
 
 ## Caveats
 
+- **Reading the page by eye/regex is a known trap** (all handled by
+  `realsmart_cache.parse_project_page`, so prefer it). The page mixes two layouts:
+  stat tiles are VALUE-then-LABEL ("71.5%" / "% Profitable"), while the two header
+  stats are LABEL-then-SUBTITLE-then-VALUE ("Annual Returns" / "Avg annualized profit
+  (past 1y)" / "4.7"). The subtitle contains a digit, so "first number after the label"
+  yields **1.0** for a 4.7% figure. A highlights badge reading "100%" / "Profitable"
+  also sits *above* the real "584" / "Profitable" count tile — take the count, not the
+  badge. Wrong numbers arrive silently; nothing errors.
+- **The denominator for % profitable is profitable + unprofitable resales** — that
+  count is what makes the percentage meaningful, so always carry it.
 - **psf is raw lodged psf** — apply the GFA-harmonisation adjustment when comparing
   pre-Jun-2023 projects against harmonised ones (gross old-comp psf ÷0.95).
 - Uncompleted projects show `N.A.` for profitability/rental — expected, not an error.

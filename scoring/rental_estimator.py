@@ -226,11 +226,6 @@ class RentalEstimator:
                 conf *= 0.85
         return round(conf, 3)
 
-    def _get_rent_psf(self, listing: dict[str, Any]) -> tuple[float, str]:
-        """Back-compat shim: (rent_psf, source) from the best source."""
-        basis = self._get_rent_basis(listing)
-        return basis["rent_psf"], basis["source"]
-
     def _get_rent_basis(self, listing: dict[str, Any]) -> dict:
         """
         Get the rental basis from the best available source.

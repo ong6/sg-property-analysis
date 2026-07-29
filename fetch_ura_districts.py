@@ -130,7 +130,7 @@ def fetch_district(page, district: int,
         # Find and check the district checkbox
         # Checkboxes are labeled like "D05 / Pasir Panjang, Hong Leong Garden, Clementi New Town"
         # The checkbox input is inside a clickable container div
-        cb = page.locator(f'input[type="checkbox"]').filter(
+        cb = page.locator('input[type="checkbox"]').filter(
             has=page.locator(f'text=/{district_str} \\//'),
         )
         if cb.count() == 0:
@@ -249,7 +249,7 @@ Examples:
     )
     parser.add_argument(
         "--districts", "-d", type=str,
-        help="Comma-separated district numbers (default: all 27 districts)",
+        help="Comma-separated district numbers (default: all 28 districts)",
     )
     parser.add_argument(
         "--force", action="store_true",
@@ -295,7 +295,7 @@ Examples:
             if args.force or not is_fresh(csv_path, args.max_age):
                 to_fetch.append((d, pt))
 
-    print(f"\nURA District Fetch", file=sys.stderr)
+    print("\nURA District Fetch", file=sys.stderr)
     print(f"  Districts requested: {districts}", file=sys.stderr)
     print(f"  Property types: {property_types}", file=sys.stderr)
     print(f"  Already cached (fresh): {len(districts) * len(property_types) - len(to_fetch)}",
@@ -355,7 +355,7 @@ Examples:
     print(f"Fetched: {ok} districts, {fail} failed", file=sys.stderr)
 
     # Build cache from all fetched district CSVs
-    print(f"\nBuilding cache from district CSVs...", file=sys.stderr)
+    print("\nBuilding cache from district CSVs...", file=sys.stderr)
     cache = build_cache_from_district_csvs(districts)
 
     print(f"\n{'='*50}", file=sys.stderr)

@@ -272,7 +272,6 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
                 project_key = history.project_name.lower()
 
                 # Project metadata from its transactions
-                import re as _re
                 from collections import Counter as _Counter
                 districts = _Counter(t.district for t in history.transactions if t.district)
                 segments = _Counter(t.market_segment for t in history.transactions if t.market_segment)
@@ -281,7 +280,7 @@ def build_ura_cache_from_csv(csv_patterns: list[str]) -> dict:
                 tenure = tenures.most_common(1)[0][0] if tenures else None
                 lease_start_year = None
                 if tenure:
-                    m = _re.search(r"commencing [fF]rom (\d{4})", tenure)
+                    m = re.search(r"commencing [fF]rom (\d{4})", tenure)
                     if m:
                         lease_start_year = int(m.group(1))
 
@@ -448,7 +447,6 @@ def scrape_condo_listings(
     from scrapers.propertyguru import PropertyGuruScraper
     from models import SearchParams
     from difflib import SequenceMatcher
-    import re
 
     def _norm(text: str) -> str:
         text = re.sub(r"[^a-z0-9 ]", " ", text.lower())
@@ -698,12 +696,23 @@ def scrape_url_listings(
     return result
 
 
+def scored_json_payload(scored: list[ScoredListing]) -> dict:
+    """The `scored.json` / `--json` document for a scoring run."""
+    return {
+        "analyzed_at": datetime.now().isoformat(),
+        "total": len(scored),
+        "ura_data_used": sum(1 for s in scored if "ura" in s.appreciation_source.lower()),
+        "listings": [s.to_dict() for s in scored],
+    }
+
+
 def deduplicate_by_project(scored: list[ScoredListing]) -> list[ScoredListing]:
     """Group listings from the same condo into one entry.
 
     Keeps the highest-scoring listing as the primary and appends
     other listing URLs to its additional_urls field.
-    Listings are assumed to be sorted by total_score descending.
+    Listings are assumed to be pre-sorted by `rank_score` descending (raw MMR
+    when available, else the legacy /100 total).
     """
     seen: dict[str, ScoredListing] = {}  # project_key -> primary listing
     result = []
@@ -1507,36 +1516,28 @@ Examples:
                 project_name=entry.get("project_name"),
             )
 
-            # Restore algo scores from breakdown (supports both old and new format)
-            ab = entry.get("algo_reference") or entry.get("algo_breakdown", {})
+            # Restore the algo's legacy /100 component scores. `algo_reference`
+            # is written by scoring/raw_output._build_algo_breakdown as a flat
+            # dict of rounded points (the report and print_results render them).
+            ab = entry.get("algo_reference") or {}
             # Restore MMR (v3) if present
             if ab.get("mmr") is not None:
                 listing.mmr = ab["mmr"]
                 listing.score_1000 = ab.get("score_1000")
                 listing.mmr_components = ab.get("mmr_components", {})
-            if "rental_yield" in ab and isinstance(ab["rental_yield"], dict):
-                # Old format: nested dicts with "score" key
-                listing.rental_yield_score = ab.get("rental_yield", {}).get("score", 0)
-                listing.capital_appreciation_score = ab.get("capital_appreciation", {}).get("score", 0)
-                listing.future_potential_score = ab.get("future_potential", {}).get("score", 0)
-                listing.liquidity_score = ab.get("liquidity", {}).get("score", 0)
-                listing.cost_efficiency_score = ab.get("cost_efficiency", {}).get("score", 0)
-                listing.red_flag_deductions = ab.get("red_flags", {}).get("deductions", 0)
-            else:
-                # New format: flat dict with direct values
-                listing.rental_yield_score = ab.get("rental_yield", 0)
-                listing.capital_appreciation_score = ab.get("capital_appreciation", 0)
-                listing.future_potential_score = ab.get("future_potential", 0)
-                listing.liquidity_score = ab.get("liquidity", 0)
-                listing.cost_efficiency_score = ab.get("cost_efficiency", 0)
-                listing.red_flag_deductions = ab.get("red_flag_deductions", 0)
+            listing.rental_yield_score = ab.get("rental_yield", 0)
+            listing.capital_appreciation_score = ab.get("capital_appreciation", 0)
+            listing.future_potential_score = ab.get("future_potential", 0)
+            listing.liquidity_score = ab.get("liquidity", 0)
+            listing.cost_efficiency_score = ab.get("cost_efficiency", 0)
+            listing.red_flag_deductions = ab.get("red_flag_deductions", 0)
 
             # Restore remaining lease and MRT
             listing.remaining_lease = entry.get("remaining_lease")
-            # New format has separate fields; old format has "Station (123m)" string
+            # nearest_mrt is normally a bare station name with the distance in
+            # its own field, but hand-written entries use "Station (123m)".
             if entry.get("nearest_mrt"):
                 mrt_str = entry["nearest_mrt"]
-                import re
                 m = re.match(r"(.+?)\s*\((\d+)m\)", mrt_str)
                 if m:
                     listing.nearest_mrt = m.group(1)
@@ -1546,22 +1547,17 @@ Examples:
             if entry.get("nearest_mrt_distance_m"):
                 listing.mrt_distance_m = entry["nearest_mrt_distance_m"]
 
-            # Restore rental & appreciation (supports both old and new format)
+            # Restore rental & appreciation from factual_data
             fd = entry.get("factual_data", {})
-            rental_info_old = entry.get("algo_breakdown", {}).get("rental_yield", {})
             rental_fd = fd.get("rental", {})
-            listing.estimated_monthly_rent = rental_fd.get("estimated_monthly_rent") or rental_info_old.get("monthly_rent_est") or 0
-            listing.estimated_gross_yield = rental_fd.get("gross_yield_pct") or rental_info_old.get("gross_yield_pct") or 0
-            listing.rent_source = rental_fd.get("rent_source") or rental_info_old.get("rent_source") or ""
+            listing.estimated_monthly_rent = rental_fd.get("estimated_monthly_rent") or 0
+            listing.estimated_gross_yield = rental_fd.get("gross_yield_pct") or 0
+            listing.rent_source = rental_fd.get("rent_source") or ""
 
             cap_fd = fd.get("appreciation", {})
-            cap_info_old = entry.get("algo_breakdown", {}).get("capital_appreciation", {})
-            cap_info = cap_info_old  # Keep for later score component access
-            # Explicit None checks: 0% (or negative) is a legitimate rate and
-            # must not be coerced to the 2% fallback by `or`-chaining.
+            # Explicit None check: 0% (or negative) is a legitimate rate and
+            # must not be coerced to the fallback by `or`-chaining.
             rate_pct = cap_fd.get("annual_rate_pct")
-            if rate_pct is None:
-                rate_pct = cap_info_old.get("rate_pct")
             if rate_pct is None:
                 # v3.4: regional fallback (was a hardcoded 2%, inconsistent with the
                 # scorer's regional baselines and below every realized regional return).
@@ -1576,7 +1572,7 @@ Examples:
                 rate_pct = 100 * REGIONAL_APPRECIATION_BASELINES.get(
                     _region, DEFAULT_REGIONAL_APPRECIATION)
             listing.appreciation_rate = rate_pct / 100
-            listing.appreciation_source = cap_fd.get("data_source") or cap_info_old.get("source") or "default"
+            listing.appreciation_source = cap_fd.get("data_source") or "default"
             if entry.get("roi_sensitivity"):
                 listing.roi_sensitivity = entry.get("roi_sensitivity")
 
@@ -1653,50 +1649,33 @@ Examples:
                         listing.score_1000 = mmr_result["score_1000"]
                         listing.mmr_components = mmr_result["components"]
 
-                    # Recompute capital appreciation score using stored components
-                    cap_components = cap_info.get("components", {})
-                    if cap_components:
-                        from scoring.full_scorer import FullScorer
-                        rate_points = FullScorer.score_appreciation_rate_points(
-                            agent_rate_pct,
-                            listing.appreciation_source,
+                    # Recompute the legacy /100 capital-appreciation component:
+                    # swap the pre-override rate points out for the override's,
+                    # keeping every non-rate sub-component (momentum, psf vs
+                    # median, tenure, age) already folded into the stored score.
+                    # The pre-override rate lives in factual_data.appreciation
+                    # (annual_rate_pct); without it prev_rate_points is None and
+                    # the recompute falls back to the rate points alone.
+                    from scoring.full_scorer import FullScorer
+                    rate_points = FullScorer.score_appreciation_rate_points(
+                        agent_rate_pct,
+                        listing.appreciation_source,
+                    )
+                    prev_rate_pct = cap_fd.get("annual_rate_pct")
+                    prev_source = cap_fd.get("source") or listing.appreciation_source
+                    try:
+                        prev_rate_points = (
+                            FullScorer.score_appreciation_rate_points(float(prev_rate_pct), prev_source)
+                            if prev_rate_pct is not None
+                            else None
                         )
-                        other_points = (
-                            (cap_components.get("momentum_points") or 0)
-                            + (cap_components.get("psf_vs_median_points") or 0)
-                            + (cap_components.get("tenure_points") or 0)
-                            + (cap_components.get("property_age_points") or 0)
-                        )
-                        listing.capital_appreciation_score = rate_points + other_points
+                    except (TypeError, ValueError):
+                        prev_rate_points = None
+                    if prev_rate_points is not None:
+                        listing.capital_appreciation_score = (
+                            listing.capital_appreciation_score - prev_rate_points + rate_points)
                     else:
-                        from scoring.full_scorer import FullScorer
-                        rate_points = FullScorer.score_appreciation_rate_points(
-                            agent_rate_pct,
-                            listing.appreciation_source,
-                        )
-                        # Modern raw_analysis files have no algo_breakdown — the
-                        # pre-override rate lives in factual_data.appreciation
-                        # (annual_rate_pct). Without this fallback prev_rate_pct
-                        # was always None for them and the legacy /100 recompute
-                        # silently dropped every non-rate sub-component.
-                        prev_rate_pct = cap_info.get("rate_pct")
-                        if prev_rate_pct is None:
-                            prev_rate_pct = cap_fd.get("annual_rate_pct")
-                        prev_source = (cap_info.get("source") or cap_fd.get("source")
-                                       or listing.appreciation_source)
-                        try:
-                            prev_rate_points = (
-                                FullScorer.score_appreciation_rate_points(float(prev_rate_pct), prev_source)
-                                if prev_rate_pct is not None
-                                else None
-                            )
-                        except (TypeError, ValueError):
-                            prev_rate_points = None
-                        total_cap = cap_info.get("score", listing.capital_appreciation_score)
-                        if prev_rate_points is not None:
-                            listing.capital_appreciation_score = total_cap - prev_rate_points + rate_points
-                        else:
-                            listing.capital_appreciation_score = rate_points
+                        listing.capital_appreciation_score = rate_points
 
                     # Recompute ROI projections
                     from scoring.roi import ROICalculator
@@ -2091,15 +2070,9 @@ Examples:
         print(f"\nReport saved: {report_path}")
 
         # Always save scored JSON
-        json_data = {
-            "analyzed_at": datetime.now().isoformat(),
-            "total": len(scored),
-            "ura_data_used": sum(1 for s in scored if "ura" in s.appreciation_source.lower()),
-            "listings": [s.to_dict() for s in scored],
-        }
         json_path = str(run_dir / "scored.json")
         with open(json_path, "w") as f:
-            json.dump(json_data, f, indent=2, ensure_ascii=False)
+            json.dump(scored_json_payload(scored), f, indent=2, ensure_ascii=False)
         print(f"JSON saved: {json_path}")
 
         # Always save raw analysis for agent review
@@ -2151,14 +2124,8 @@ Examples:
             print(f"CSV saved: {args.csv}")
 
         if args.json:
-            json_data = {
-                "analyzed_at": datetime.now().isoformat(),
-                "total": len(scored),
-                "ura_data_used": sum(1 for s in scored if "ura" in s.appreciation_source.lower()),
-                "listings": [s.to_dict() for s in scored],
-            }
             with open(args.json, "w") as f:
-                json.dump(json_data, f, indent=2, ensure_ascii=False)
+                json.dump(scored_json_payload(scored), f, indent=2, ensure_ascii=False)
             print(f"JSON saved: {args.json}")
 
         if args.raw:
