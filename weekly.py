@@ -372,6 +372,23 @@ def _repriced_since(rec: dict, since: str) -> bool:
     return False
 
 
+def _bed_mismatch(project: str, beds, sqft) -> dict | None:
+    """A confirmed bedroom relabel for this project, or None.
+
+    Only `mismatch` blocks — the size is below the project's own band for that
+    bed count AND lands in a smaller one, which is the 2BR-sold-as-3BR pattern.
+    `oversize`, `undersize` and `unknown` all pass: a roomy unit is not a
+    mislabel, and most projects have no rental history to judge by. Never
+    raises — a missing band file must not stop a scan.
+    """
+    try:
+        import bed_bands
+        v = bed_bands.check(project, beds, sqft)
+    except Exception:  # noqa: BLE001 — advisory check, never fatal
+        return None
+    return v if v.get("verdict") == "mismatch" else None
+
+
 def _known_projects() -> set:
     """Lowercased URA project names — the rescue list. Never raises."""
     try:
@@ -444,6 +461,13 @@ def select_candidates(
             # Not a judgement on the unit — we simply don't know which
             # development it is, so there is nothing to research.
             cand["gate_reason"] = "no usable project name (listing headline, not a development)"
+        elif (bed := _bed_mismatch(name, row.get("beds"), cand.get("sqft"))):
+            # The bedroom count comes from the marketing agent, not a registry,
+            # and 2BR+study routinely gets listed as 3BR. The mandate screens on
+            # bed count, so an unchallenged relabel puts the wrong product in
+            # front of the buyer entirely.
+            cand["gate_reason"] = (
+                f"bed count looks wrong — {bed['reason']}")
         elif (blocked := _blocked_by_cooldown(cooldown_index, slug, row.get("beds"))):
             cand["gate_reason"] = f"same unit type evaluated {blocked} (cooldown)"
         elif cohort in seen_cohort:
