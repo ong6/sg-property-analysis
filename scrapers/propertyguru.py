@@ -150,6 +150,322 @@ def extract_facilities(listing_data):
     return deduped
 
 
+# --- Detail-page enrichment -------------------------------------------------
+# A listing detail page still ships `script#__NEXT_DATA__`, but the enrichment
+# fields moved: they are NOT under `props.pageProps.listingData` any more (that
+# key does not exist at all), they live under
+#   props.pageProps.pageData.data.{listingDetail,listingLocationData,detailsData}
+# Reading the old path silently returned {} on every page, which is how
+# floor_level / facing / latitude sat at 0% coverage across 9k listings while
+# the poller cheerfully reported "0 enriched / 0 failed".
+#
+# The extractor is therefore layered, cheapest-and-most-structured first, and
+# every layer only fills fields the earlier ones left blank:
+#   1. __NEXT_DATA__ structured objects   (listingDetail.unitDetails, project meta)
+#   2. __NEXT_DATA__ detailsData metatable — the same facts as rendered strings,
+#      so a rename under listingDetail doesn't take the page down with it
+#   3. ld+json @graph                     (geo coordinates, furnishing)
+#   4. plain page text                    (label→value phrases, markup-agnostic)
+
+# PG's floor-level filter vocabulary (searchFilterData.filterValues.floorLevel).
+# Values are stored as the human phrase, not the code, because every downstream
+# consumer (config.normalize_floor_tier, ui clustering) reads prose.
+_FLOOR_LEVEL_BY_CODE = {
+    "GND": "Ground Floor",
+    "LOW": "Low Floor",
+    "MID": "Middle Floor",
+    "HIGH": "High Floor",
+    "PENT": "Penthouse",
+}
+_FLOOR_LEVEL_BY_WORD = {
+    "ground": "Ground Floor",
+    "low": "Low Floor",
+    "mid": "Middle Floor",
+    "middle": "Middle Floor",
+    "high": "High Floor",
+    "top": "High Floor",
+    "penthouse": "Penthouse",
+}
+
+# Rendered "Property details" rows, e.g. "Middle floor level",
+# "Developed by Far East Organization", "580 total units", "Partially furnished".
+_META_FLOOR_RE = re.compile(
+    r"^(ground|low|mid|middle|high|top)\s+floor(?:\s+level)?$|^(penthouse)(?:\s+level)?$",
+    re.IGNORECASE)
+_META_DEVELOPER_RE = re.compile(r"^developed\s+by\s+(.+)$", re.IGNORECASE)
+_META_TOTAL_UNITS_RE = re.compile(r"^([\d,]+)\s+total\s+units?$", re.IGNORECASE)
+_META_FURNISHING_RE = re.compile(r"^((?:fully|partially|un)\s*furnished)$", re.IGNORECASE)
+_META_FACING_RE = re.compile(
+    r"^facing[:\s]+(.+?)$|^(.+?)[\s-]+facing$", re.IGNORECASE)
+_DETAIL_ENRICH_FIELDS = ("latitude", "longitude", "facing", "floor_level",
+                         "furnishing", "total_units", "developer", "facilities")
+
+
+def _dig(node, *path):
+    """Walk a dict path, returning None the moment a segment is missing."""
+    for seg in path:
+        if not isinstance(node, dict):
+            return None
+        node = node.get(seg)
+    return node
+
+
+def _fill_blanks(target: dict, extra: dict) -> dict:
+    """Merge `extra` into `target`, never overwriting an already-found value."""
+    for key, value in (extra or {}).items():
+        if value not in (None, "", []) and target.get(key) in (None, "", []):
+            target[key] = value
+    return target
+
+
+def _coded_text(value, code_map: dict | None = None) -> str | None:
+    """Unwrap PropertyGuru's {code, description} value objects to a string.
+
+    PG wraps most enumerated unit attributes as `{"code": "MID", "description":
+    "Middle Floor"}`. Prefer the human description; fall back to mapping the
+    code ourselves so a page that ships the code alone still yields prose.
+    """
+    if isinstance(value, str):
+        return value.strip() or None
+    if isinstance(value, dict):
+        for key in ("description", "text", "label", "name", "value"):
+            v = value.get(key)
+            if isinstance(v, str) and v.strip():
+                return v.strip()
+        code = value.get("code")
+        if isinstance(code, str) and code.strip():
+            if code_map:
+                return code_map.get(code.strip().upper()) or code.strip()
+            return code.strip()
+    return None
+
+
+def _canonical_floor_level(raw) -> str | None:
+    """Normalize any floor descriptor to PG's own phrase ('Middle Floor')."""
+    text = _coded_text(raw, _FLOOR_LEVEL_BY_CODE)
+    if not text:
+        return None
+    m = _META_FLOOR_RE.match(text.strip())
+    if m:
+        word = (m.group(1) or m.group(2) or "").lower()
+        return _FLOOR_LEVEL_BY_WORD.get(word, text.strip())
+    return text.strip()
+
+
+def parse_detail_spec_lines(lines) -> dict:
+    """Parse rendered 'Property details' rows into enrichment fields.
+
+    Works on both the JSON metatable values and raw page text, so the same
+    matchers back the __NEXT_DATA__ fallback and the DOM last resort. Rows are
+    matched whole (anchored) — a stray sentence mentioning "floor level" in a
+    listing blurb can't masquerade as a spec row.
+    """
+    fields: dict = {}
+    for raw in lines or []:
+        if not isinstance(raw, str):
+            continue
+        line = raw.strip().strip("·•").strip()
+        if not line or len(line) > 120:
+            continue
+        if "floor_level" not in fields:
+            m = _META_FLOOR_RE.match(line)
+            if m:
+                word = (m.group(1) or m.group(2) or "").lower()
+                fields["floor_level"] = _FLOOR_LEVEL_BY_WORD.get(word)
+                continue
+        if "developer" not in fields:
+            m = _META_DEVELOPER_RE.match(line)
+            if m:
+                fields["developer"] = m.group(1).strip()
+                continue
+        if "total_units" not in fields:
+            m = _META_TOTAL_UNITS_RE.match(line)
+            if m:
+                fields["total_units"] = _safe_int(m.group(1).replace(",", ""))
+                continue
+        if "furnishing" not in fields:
+            m = _META_FURNISHING_RE.match(line)
+            if m:
+                fields["furnishing"] = m.group(1).strip().capitalize()
+                continue
+        if "facing" not in fields:
+            m = _META_FACING_RE.match(line)
+            if m:
+                facing = (m.group(1) or m.group(2) or "").strip()
+                # Only trust compass words — "South facing" yes, "Sea facing" no.
+                if re.fullmatch(r"(north|south|east|west)(\s*[-/ ]?\s*(north|south|east|west))?",
+                                facing, re.IGNORECASE):
+                    fields["facing"] = facing
+                    continue
+    return {k: v for k, v in fields.items() if v not in (None, "", [])}
+
+
+def _detail_facilities(node: dict, project_meta: dict) -> list:
+    """Facilities from the detail blob, preferring the rendered list."""
+    names = _facility_strings(_dig(node, "facilitiesData", "data"))
+    if not names:
+        names = [f.get("description") for f in (project_meta.get("facilities") or [])
+                 if isinstance(f, dict) and isinstance(f.get("description"), str)]
+    if not names:
+        names = extract_facilities(node)
+    seen, deduped = set(), []
+    for n in names:
+        n = (n or "").strip()
+        key = n.lower()
+        if key and key not in seen and len(n) <= 60:
+            seen.add(key)
+            deduped.append(n)
+        if len(deduped) >= _MAX_FACILITIES:
+            break
+    return deduped
+
+
+def detail_data_node(next_data) -> dict:
+    """Locate the detail page's data blob inside a `__NEXT_DATA__` document.
+
+    Current shape is props.pageProps.pageData.data; older builds put the same
+    blob directly on pageProps. Returns {} when neither is present.
+    """
+    if not isinstance(next_data, dict):
+        return {}
+    props = _dig(next_data, "props", "pageProps")
+    if not isinstance(props, dict):
+        return next_data if "listingDetail" in next_data else {}
+    for candidate in (_dig(props, "pageData", "data"), props.get("data"), props):
+        if isinstance(candidate, dict) and (
+            "listingDetail" in candidate or "listingData" in candidate
+            or "detailsData" in candidate
+        ):
+            return candidate
+    return {}
+
+
+def extract_detail_fields(node) -> dict:
+    """Pull enrichment fields from a PropertyGuru detail-page data blob.
+
+    Accepts either the modern `props.pageProps.pageData.data` node or a legacy
+    flat `listingData` dict, and returns only the fields it actually found —
+    missing stays missing, never guessed. Field sources (current markup):
+
+      floor_level  listingDetail.unitDetails.floorLevel.description
+      facing       listingDetail.unitDetails.direction
+      furnishing   listingDetail.unitDetails.furnishing.description
+      total_units  listingDetail.project.metaByType.verified.totalUnits
+      developer    listingDetail.project.metaByType.verified.developer
+      lat/lng      listingLocationData.data.center.{lat,lng}
+      facilities   facilitiesData.data[].text
+    """
+    if not isinstance(node, dict):
+        return {}
+    fields: dict = {}
+
+    detail = _dig(node, "listingDetail") or {}
+    unit = _dig(detail, "unitDetails") or {}
+    project_meta = _dig(detail, "project", "metaByType", "verified") or {}
+
+    floor_level = _canonical_floor_level(unit.get("floorLevel"))
+    if floor_level:
+        fields["floor_level"] = floor_level
+    facing = _coded_text(unit.get("direction"))
+    if facing:
+        fields["facing"] = facing
+    furnishing = _coded_text(unit.get("furnishing"))
+    if furnishing:
+        fields["furnishing"] = furnishing
+
+    total_units = _safe_int(project_meta.get("totalUnits"))
+    if total_units:
+        fields["total_units"] = total_units
+    developer = project_meta.get("developer") or _dig(node, "listingData", "developer")
+    if isinstance(developer, str) and developer.strip():
+        fields["developer"] = developer.strip()
+
+    lat = _safe_float(_dig(node, "listingLocationData", "data", "center", "lat"))
+    lng = _safe_float(_dig(node, "listingLocationData", "data", "center", "lng"))
+    if lat is None or lng is None:
+        point = _dig(detail, "location", "point") or {}
+        lat = lat if lat is not None else _safe_float(point.get("lat"))
+        lng = lng if lng is not None else _safe_float(point.get("lon") or point.get("lng"))
+    if lat is not None and lng is not None:
+        fields["latitude"], fields["longitude"] = lat, lng
+
+    # Layer 2 — the same facts as rendered strings, filling whatever the
+    # structured objects didn't carry (or lost to a key rename).
+    meta_items = _dig(node, "detailsData", "metatable", "items") or []
+    spec = parse_detail_spec_lines(
+        [it.get("value") for it in meta_items if isinstance(it, dict)])
+    for key, value in spec.items():
+        fields.setdefault(key, value)
+
+    facilities = _detail_facilities(node, project_meta)
+    if facilities:
+        fields["facilities"] = facilities
+
+    # Legacy flat-listingData shape (kept so an older/cached payload still works).
+    legacy = {
+        "facing": node.get("facing") or node.get("unitFacing"),
+        "floor_level": _canonical_floor_level(node.get("floorLevel")),
+        "furnishing": _coded_text(node.get("furnishing")),
+        "total_units": _safe_int(node.get("totalUnits")
+                                 or _dig(node, "project", "totalUnits")),
+        "developer": node.get("developerName")
+                     or _dig(node, "developer", "name")
+                     or _dig(node, "project", "developerName"),
+    }
+    for key, value in legacy.items():
+        if value not in (None, "", []) and key not in fields:
+            fields[key] = value
+    if "latitude" not in fields:
+        lat = _safe_float(node.get("latitude"))
+        lng = _safe_float(node.get("longitude"))
+        if lat is not None and lng is not None:
+            fields["latitude"], fields["longitude"] = lat, lng
+
+    return fields
+
+
+def extract_ld_json_fields(ld_json) -> dict:
+    """Pull geo (and furnishing) from a listing's ld+json.
+
+    PG now emits ONE ld+json document whose payload is an `@graph` array — the
+    old top-level `d['@type'] == 'Product' || d.geo` probe matched nothing on
+    it, so this path was dead too. Accepts a single document or a list.
+    """
+    docs = ld_json if isinstance(ld_json, list) else [ld_json]
+    nodes: list = []
+    for doc in docs:
+        if not isinstance(doc, dict):
+            continue
+        graph = doc.get("@graph")
+        if isinstance(graph, list):
+            nodes.extend(g for g in graph if isinstance(g, dict))
+        else:
+            nodes.append(doc)
+
+    fields: dict = {}
+    for g in nodes:
+        geo = g.get("geo")
+        if isinstance(geo, dict) and "latitude" not in fields:
+            lat = _safe_float(geo.get("latitude"))
+            lng = _safe_float(geo.get("longitude"))
+            if lat is not None and lng is not None:
+                fields["latitude"], fields["longitude"] = lat, lng
+        for prop in (g.get("additionalProperty") or []):
+            if not isinstance(prop, dict):
+                continue
+            name = str(prop.get("name") or "").strip().lower()
+            value = prop.get("value")
+            if not isinstance(value, str) or not value.strip():
+                continue
+            if name == "furnishing":
+                fields.setdefault("furnishing", value.strip())
+            elif name in ("floor level", "floor"):
+                fields.setdefault("floor_level", _canonical_floor_level(value))
+            elif name in ("facing", "direction"):
+                fields.setdefault("facing", value.strip())
+    return {k: v for k, v in fields.items() if v not in (None, "", [])}
+
+
 def classify_pg_url(url: str) -> tuple[str, str | None]:
     """Classify a PropertyGuru URL.
 
@@ -843,10 +1159,17 @@ class PropertyGuruScraper:
         return enriched
 
     def _extract_detail_page(self) -> dict | None:
-        """Extract enrichment data from a listing detail page."""
-        data = {}
+        """Extract enrichment data from a listing detail page.
 
-        # Try __NEXT_DATA__ first
+        Layered so a single markup change can't zero the whole thing again:
+        __NEXT_DATA__ structured objects → the same page's rendered spec rows →
+        ld+json @graph → plain page text. Each layer only fills what the ones
+        before it left blank. Returns None when nothing at all was found, which
+        is what the poller counts as a failed enrichment.
+        """
+        data: dict = {}
+
+        # Layers 1 & 2 — __NEXT_DATA__ (structured objects, then the metatable).
         try:
             raw = self._page.evaluate("""
                 () => {
@@ -856,70 +1179,43 @@ class PropertyGuruScraper:
                     return null;
                 }
             """)
-            if raw and isinstance(raw, dict):
-                props = raw.get("props", {}).get("pageProps", {})
-                listing_data = props.get("listingData", props.get("data", {}))
-                if isinstance(listing_data, dict):
-                    data.update(self._extract_detail_fields(listing_data))
+            if isinstance(raw, dict):
+                _fill_blanks(data, self._extract_detail_fields(detail_data_node(raw)))
         except Exception as e:
             logger.debug("Detail __NEXT_DATA__ failed: %s", e)
 
-        # Try ld+json structured data
+        # Layer 3 — ld+json structured data (geo; the only lat/lng source left
+        # if PG ever drops the location blob).
         try:
             ld_json = self._page.evaluate("""
                 () => {
-                    const scripts = document.querySelectorAll('script[type="application/ld+json"]');
-                    for (const s of scripts) {
-                        try {
-                            const d = JSON.parse(s.textContent);
-                            if (d['@type'] === 'Product' || d['@type'] === 'Residence'
-                                || d['@type'] === 'Apartment' || d.geo) return d;
-                        } catch(e) {}
+                    const out = [];
+                    for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                        try { out.push(JSON.parse(s.textContent)); } catch(e) {}
                     }
-                    return null;
+                    return out;
                 }
             """)
-            if ld_json and isinstance(ld_json, dict):
-                geo = ld_json.get("geo", {})
-                if geo:
-                    if "latitude" not in data:
-                        data["latitude"] = _safe_float(geo.get("latitude"))
-                    if "longitude" not in data:
-                        data["longitude"] = _safe_float(geo.get("longitude"))
+            if ld_json:
+                _fill_blanks(data, extract_ld_json_fields(ld_json))
         except Exception as e:
             logger.debug("Detail ld+json failed: %s", e)
 
-        return data if data else None
+        # Layer 4 — plain page text. Markup-agnostic last resort: only pay for
+        # it when a spec field is still missing after the JSON layers.
+        if not all(data.get(f) for f in ("floor_level", "furnishing",
+                                         "developer", "total_units")):
+            try:
+                text = self._page.evaluate("() => document.body.innerText") or ""
+                _fill_blanks(data, parse_detail_spec_lines(text.splitlines()))
+            except Exception as e:
+                logger.debug("Detail DOM text failed: %s", e)
+
+        return data or None
 
     def _extract_detail_fields(self, data: dict) -> dict:
-        """Pull enrichment fields from detail page JSON."""
-        fields = {}
-        if data.get("latitude"):
-            fields["latitude"] = _safe_float(data["latitude"])
-        if data.get("longitude"):
-            fields["longitude"] = _safe_float(data["longitude"])
-        if data.get("facing") or data.get("unitFacing"):
-            fields["facing"] = data.get("facing") or data.get("unitFacing")
-        if data.get("floorLevel"):
-            fields["floor_level"] = data["floorLevel"]
-        if data.get("furnishing"):
-            fields["furnishing"] = data["furnishing"]
-        if data.get("totalUnits"):
-            fields["total_units"] = _safe_int(data["totalUnits"])
-        if data.get("developerName"):
-            fields["developer"] = data["developerName"]
-        elif isinstance(data.get("developer"), dict):
-            fields["developer"] = data["developer"].get("name")
-        project = data.get("project", {})
-        if isinstance(project, dict):
-            if not fields.get("total_units") and project.get("totalUnits"):
-                fields["total_units"] = _safe_int(project["totalUnits"])
-            if not fields.get("developer") and project.get("developerName"):
-                fields["developer"] = project["developerName"]
-        facilities = extract_facilities(data)
-        if facilities:
-            fields["facilities"] = facilities
-        return fields
+        """Pull enrichment fields from detail page JSON (see extract_detail_fields)."""
+        return extract_detail_fields(data)
 
     def _apply_enrichment(self, listing: Listing, data: dict) -> list[str]:
         """Apply enrichment data to a listing. Returns list of changed field names."""

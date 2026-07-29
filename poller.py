@@ -156,6 +156,18 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     return len(scored_rows), scored_rows
 
 
+def _is_blank(value) -> bool:
+    """Is this enrichment target still empty (and therefore safe to fill)?
+
+    `facilities` is a list whose model default is `[]`, not None — a bare
+    `value in (None, "", 0, 0.0)` test called it populated and silently dropped
+    every scraped facilities list on the floor.
+    """
+    if isinstance(value, (list, tuple, dict, set)):
+        return not value
+    return value in (None, "", 0, 0.0)
+
+
 def _enrich_one(scraper, listing) -> dict:
     """Fetch a single detail page and return its enrichment fields.
 
@@ -241,7 +253,7 @@ def _enrich_new_keys(keys: list[str], headless: bool = True,
                     detail = _enrich_one(scraper, listing)
                     changed = {f: detail[f] for f in _ENRICH_FIELDS
                                if detail.get(f) is not None
-                               and getattr(listing, f, None) in (None, "", 0, 0.0)}
+                               and _is_blank(getattr(listing, f, None))}
                     if changed:
                         enriched_fields[key] = changed
                         result["enriched"] += 1
