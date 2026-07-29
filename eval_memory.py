@@ -347,8 +347,16 @@ def print_recall(name: str) -> None:
         print(f"\n● {data.get('condo')} [{data.get('district') or '?'}] "
               f"— {len(data.get('history', []))} evaluation(s)")
         for h in reversed(data.get("history", [])):
+            if not isinstance(h, dict):
+                continue
             note = staleness_note(h.get("evaluated_at"))
-            as_of = h.get("as_of", {})
+            # `as_of` is normally {price, psf, beds, sqft}, but a batch of
+            # 2026-06 entries stored it as a free-text re-judgment note instead.
+            # Recall is the FIRST step of every analyze flow, so an
+            # AttributeError here aborts the agent's recall mid-output and it
+            # proceeds with no memory at all.
+            as_of = h.get("as_of")
+            as_of = as_of if isinstance(as_of, dict) else {}
             price = as_of.get("price")
             price_str = f"${price/1e6:.2f}M" if price else "$?"
             print(f"  • {h.get('evaluated_at')} — {h.get('rating')} "
