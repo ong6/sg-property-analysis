@@ -51,8 +51,10 @@ import argparse
 import json
 import os
 import re
+import signal
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -551,24 +553,93 @@ def _agent_prompt(cand: dict) -> str:
 
 
 def run_agent(cand: dict, timeout_s: int = AI_TIMEOUT_S) -> dict:
-    """Run one headless `claude -p` analyze pass. Never raises."""
+    """Run one headless `claude -p` analyze pass. Never raises.
+
+    The deadline is enforced on the WALL CLOCK, not via subprocess.run(timeout=),
+    and the child gets its own process group.
+
+    Both details are load-bearing, learned the hard way: on the first real OCR
+    scan an agent ran 1h45m against a 30-minute timeout that never fired,
+    blocking the queue behind it. subprocess.run's timeout is measured with
+    time.monotonic(), which on macOS does NOT advance while the system sleeps —
+    so a laptop that naps mid-run pauses the timeout while real time keeps
+    passing. Wall clock is what "this has been stuck for an hour" actually
+    means. The process group matters because `claude` spawns children; killing
+    only the direct child can leave orphans holding the work.
+    """
     os.makedirs(RUNS_DIR, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_path = os.path.join(RUNS_DIR, f"{cand.get('slug') or cand['id']}_{stamp}.log")
     cmd = ["claude", "-p", _agent_prompt(cand), "--allowedTools", AI_ALLOWED_TOOLS]
     result = {"id": cand["id"], "log": os.path.relpath(log_path, BASE)}
+    logf = None
     try:
-        with open(log_path, "w") as logf:
-            proc = subprocess.run(cmd, cwd=BASE, stdin=subprocess.DEVNULL,
-                                  stdout=logf, stderr=subprocess.STDOUT,
-                                  timeout=timeout_s)
-        result["returncode"] = proc.returncode
-        result["ok"] = proc.returncode == 0
-    except subprocess.TimeoutExpired:
-        result.update(ok=False, error=f"timed out after {timeout_s}s")
+        logf = open(log_path, "w")
+        proc = subprocess.Popen(cmd, cwd=BASE, stdin=subprocess.DEVNULL,
+                                stdout=logf, stderr=subprocess.STDOUT,
+                                start_new_session=True)
     except (OSError, ValueError) as e:
+        if logf:
+            logf.close()
         result.update(ok=False, error=f"{type(e).__name__}: {e}")
+        return result
+
+    deadline = time.time() + timeout_s
+    try:
+        while True:
+            rc = proc.poll()
+            if rc is not None:
+                result["returncode"] = rc
+                result["ok"] = rc == 0
+                break
+            if time.time() >= deadline:
+                _kill_group(proc)
+                result.update(ok=False,
+                              error=f"timed out after {timeout_s}s (wall clock)")
+                break
+            time.sleep(2)
+    finally:
+        logf.close()
     return result
+
+
+def keep_awake() -> subprocess.Popen | None:
+    """Hold off idle sleep for as long as this scan runs (macOS).
+
+    Not a nicety — it is the fix for the failure that wrecked the first real OCR
+    scan. On battery the Mac took repeated 'Maintenance Sleep' naps mid-run;
+    every sleeping agent lost its connection ("API Error: Connection closed
+    mid-response") and 5 of 8 candidates came back with no verdict at all.
+
+    `caffeinate -w <pid>` exits by itself when this process does, so the
+    assertion can never outlive the scan and leave the machine awake. Silent
+    no-op off macOS, and a failure to caffeinate is not worth aborting a scan
+    over — it only makes sleep possible again, which is where we started.
+    """
+    if sys.platform != "darwin":
+        return None
+    try:
+        return subprocess.Popen(["caffeinate", "-i", "-w", str(os.getpid())],
+                                stdout=subprocess.DEVNULL,
+                                stderr=subprocess.DEVNULL)
+    except (OSError, ValueError) as e:  # noqa: BLE001 — best effort by design
+        print(f"  ⚠ could not hold off sleep ({type(e).__name__}: {e}); "
+              "long agent runs may be interrupted", file=sys.stderr)
+        return None
+
+
+def _kill_group(proc: subprocess.Popen) -> None:
+    """SIGTERM the child's process group, then SIGKILL what survives."""
+    for sig, grace in ((signal.SIGTERM, 10), (signal.SIGKILL, 5)):
+        try:
+            os.killpg(os.getpgid(proc.pid), sig)
+        except (ProcessLookupError, PermissionError, OSError):
+            return
+        try:
+            proc.wait(timeout=grace)
+            return
+        except subprocess.TimeoutExpired:
+            continue
 
 
 def read_verdict(cand: dict, on_or_after: str) -> dict | None:
@@ -897,6 +968,8 @@ def main() -> int:
                     help="don't append good finds to the personal data store note")
     args = ap.parse_args()
 
+    keep_awake()
+
     now = datetime.now()
     day = now.strftime("%Y-%m-%d")
     week = iso_week(now)
@@ -980,11 +1053,25 @@ def main() -> int:
                 print(f"      agent run failed: {run.get('error') or run.get('returncode')} "
                       f"— see {run['log']}", file=sys.stderr)
             v = read_verdict(cand, on_or_after=day)
+
+            # One retry when the run produced no verdict. Transient API errors
+            # ("Connection closed mid-response") land here AFTER the research is
+            # done but before the evaluation is written — losing the whole slot
+            # to a flaky connection. Slots are the scarce resource, so buying
+            # one retry is cheaper than dropping a candidate. Strictly one: a
+            # listing that genuinely defeats the flow must not loop.
+            if v is None:
+                print("      → no evaluation saved; retrying once", file=sys.stderr)
+                run = run_agent(cand)
+                run["retry"] = True
+                runs.append(run)
+                v = read_verdict(cand, on_or_after=day)
+
             if v:
                 verdicts[cand["id"]] = v
                 print(f"      → {v.get('rating')} ({v.get('confidence')})", file=sys.stderr)
             else:
-                print("      → no evaluation saved", file=sys.stderr)
+                print("      → no evaluation saved (after retry)", file=sys.stderr)
 
     # 6. Store push (before the digest, so the digest can report what was pushed)
     pushed = [] if (args.dry_run or args.no_store_push) \

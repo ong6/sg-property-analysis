@@ -2,6 +2,7 @@
 
 import json
 import os
+import time
 from datetime import datetime, timedelta
 
 import weekly
@@ -322,6 +323,43 @@ class TestCooldownIndex:
             raise OSError("index gone")
         monkeypatch.setattr(weekly.eval_memory, "load_index", boom)
         assert weekly._eval_cooldown_index(30, datetime(2026, 7, 27)) == {}
+
+
+class TestAgentTimeout:
+    """A stuck agent blocks every candidate behind it. On the first real OCR
+    scan one ran 1h45m against a 30-minute timeout that never fired, so this
+    is regression-tested rather than trusted."""
+
+    def test_timeout_kills_a_hung_agent(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(weekly, "RUNS_DIR", str(tmp_path))
+        monkeypatch.setattr(weekly, "_agent_prompt", lambda c: "x")
+        # `sleep 60` stands in for a hung agent; a 1s deadline must end it.
+        real_popen = weekly.subprocess.Popen          # capture BEFORE patching
+        monkeypatch.setattr(weekly.subprocess, "Popen",
+                            lambda cmd, **kw: real_popen(["sleep", "60"], **kw))
+        started = time.time()
+        r = weekly.run_agent({"id": "a", "slug": "a"}, timeout_s=1)
+        elapsed = time.time() - started
+        assert r["ok"] is False and "timed out" in r["error"]
+        assert elapsed < 30, f"kill took {elapsed:.0f}s — group kill not working"
+
+    def test_normal_exit_reports_returncode(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(weekly, "RUNS_DIR", str(tmp_path))
+        monkeypatch.setattr(weekly, "_agent_prompt", lambda c: "x")
+        real_popen = weekly.subprocess.Popen
+        monkeypatch.setattr(weekly.subprocess, "Popen",
+                            lambda cmd, **kw: real_popen(["true"], **kw))
+        r = weekly.run_agent({"id": "a", "slug": "a"}, timeout_s=30)
+        assert r["ok"] is True and r["returncode"] == 0
+
+    def test_unlaunchable_command_is_reported_not_raised(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(weekly, "RUNS_DIR", str(tmp_path))
+        monkeypatch.setattr(weekly, "_agent_prompt", lambda c: "x")
+        monkeypatch.setattr(weekly.subprocess, "Popen",
+                            lambda cmd, **kw: (_ for _ in ()).throw(
+                                OSError("no such binary")))
+        r = weekly.run_agent({"id": "a", "slug": "a"}, timeout_s=5)
+        assert r["ok"] is False and "OSError" in r["error"]
 
 
 class TestVerdictReadback:
