@@ -41,6 +41,23 @@ MIN_CONTRACTS = 8
 # has to miss by a clear margin, not by rounding.
 TOLERANCE = 0.12
 
+# `check` above is a CONTAINMENT test: does this size fit the band it claims?
+# That is necessary but not sufficient, because once TOLERANCE is applied 74% of
+# adjacent bed-count bands in this file overlap — so almost any size "fits"
+# something and `ok` stops meaning much. Two real listings passed it cleanly:
+#
+#   Palm Gardens 1,216 sqft "4BR" — the project's 4BRs are 1,350-2,350 sqft on 28
+#     contracts; 1,216 sqft is its 3BR product on 160. Advertised bed count wrong.
+#   D'Nest 1,259 sqft "3BR" — sits exactly on the 4BR median; its psf looks cheap
+#     because the size belongs to a bigger format, not because the unit is cheap.
+#
+# So `_contest` asks the COMPARATIVE question the containment test cannot: does a
+# different bed count explain this size better? It is advisory only — it annotates
+# an `ok` verdict and never blocks, because "the size band belongs to a different
+# format" is a reason for the analyst to look harder, not grounds to drop a
+# listing unseen.
+MIN_FIT_RATIO = 2.0
+
 
 def normalize(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (name or "").lower()).strip()
@@ -107,6 +124,67 @@ def load() -> dict:
     return _CACHE
 
 
+def _contest(proj: dict, claimed: dict, beds, sqft) -> dict | None:
+    """A rival bed count that explains `sqft` better than the claimed one, or None.
+
+    Fires on either of two readings, both requiring the rival to clear
+    MIN_CONTRACTS:
+
+      CONTAINMENT FLIP — the rival band contains this size outright and the
+        claimed band does not. Strongest signal; it is what catches D'Nest.
+      CLOSER FIT — the rival sits at least MIN_FIT_RATIO times nearer AND rests
+        on more contracts than the claimed band. Catches Palm Gardens, where
+        1,216 sqft misses the 4BR floor by 11% but the 3BR median by 2.8%.
+
+    The width guard is what makes this usable. A band wider than the one it is
+    contradicting is not evidence: Regentville's 2BR band spans 950-1,750 sqft
+    (contaminated by mixed stacks), so it "contains" nearly anything, and without
+    the guard it flips every genuine 1,152 sqft 3BR there — a unit that misses
+    its own 3BR ceiling by 2 sqft — into a fake 2BR. Requiring the rival to be
+    the TIGHTER band drops that whole class of false positive.
+    """
+    def width(bd):
+        return bd["hi"] - bd["lo"]
+
+    def inside(bd):
+        return bd["lo"] <= sqft <= bd["hi"]
+
+    def gap(bd):
+        """Fractional distance from the band, 0 when inside it."""
+        if inside(bd):
+            return 0.0
+        return (bd["lo"] - sqft) / sqft if sqft < bd["lo"] else (sqft - bd["hi"]) / sqft
+
+    claimed_gap, best = gap(claimed), None
+    for b, bd in proj.items():
+        if int(b) == int(beds) or bd["contracts"] < MIN_CONTRACTS:
+            continue
+        if width(bd) > width(claimed):
+            continue                       # a looser band cannot contradict a tighter one
+        if inside(bd) and not inside(claimed):
+            rule = "containment flip"
+        elif gap(bd) * MIN_FIT_RATIO < claimed_gap and bd["contracts"] > claimed["contracts"]:
+            rule = "closer fit + deeper evidence"
+        else:
+            continue
+        if best is None or gap(bd) < best["gap"]:
+            best = {"looks_like": int(b), "gap": gap(bd), "rule": rule, "band": bd}
+    if best is None:
+        return None
+    return {
+        "looks_like": best["looks_like"],
+        "rule": best["rule"],
+        "band": best["band"],
+        "reason": (
+            f"{sqft:.0f} sqft fits this project's {best['looks_like']}BR band "
+            f"({best['band']['lo']}-{best['band']['hi']} sqft, "
+            f"{best['band']['contracts']} contracts) better than the {beds}BR band "
+            f"it is listed under ({claimed['lo']}-{claimed['hi']} sqft, "
+            f"{claimed['contracts']} contracts) — verify the format before "
+            f"trusting any psf discount, which may be size-mix, not value"),
+    }
+
+
 def check(project: str, beds, sqft) -> dict:
     """Does `sqft` look like a `beds`-bedroom unit in THIS project?
 
@@ -129,7 +207,14 @@ def check(project: str, beds, sqft) -> dict:
     if band and band["contracts"] >= MIN_CONTRACTS:
         lo, hi = band["lo"] * (1 - TOLERANCE), band["hi"] * (1 + TOLERANCE)
         if lo <= sqft <= hi:
-            return {**res, "verdict": "ok", "band": band}
+            ok = {**res, "verdict": "ok", "band": band}
+            # `ok` only means "not contradicted by its own band". Ask the
+            # comparative question too, and attach the answer without changing
+            # the verdict — callers gate on `mismatch`, and a contested size is
+            # a thing to check, not a thing to reject.
+            if (rival := _contest(proj, band, beds, sqft)):
+                ok["contested"] = rival
+            return ok
     elif band:
         return {**res, "verdict": "unknown", "band": band, "reason": "thin band"}
     else:

@@ -300,14 +300,22 @@ def _profit_cell(r: dict) -> str:
 
 
 def _bed_chip(r: dict) -> str:
-    """Only the mislabel. `oversize` is explicitly not a wrong bed count, and
-    `undersize` matches no smaller band either — neither fails his screen, so
-    neither is worth a chip."""
+    """The mislabel, or a contested size. `oversize` is explicitly not a wrong
+    bed count, and `undersize` matches no smaller band either — neither fails his
+    screen, so neither is worth a chip.
+
+    `contested` is the softer sibling: the size passes its own band but fits a
+    different one better, which is usually why the psf looks cheap. It is drawn
+    differently because it is a question, not a finding — the unit may well be
+    what it says it is, in a project whose rental filings are simply coarse."""
     chk = bed_check(r)
-    if chk.get("verdict") != "mismatch":
-        return ""
-    return (f'<span class="chip" title="{_e(chk.get("reason") or "")}">'
-            f'⚠ really a {_e(chk.get("looks_like"))}BR</span>')
+    if chk.get("verdict") == "mismatch":
+        return (f'<span class="chip" title="{_e(chk.get("reason") or "")}">'
+                f'⚠ really a {_e(chk.get("looks_like"))}BR</span>')
+    if (con := chk.get("contested")):
+        return (f'<span class="chip q" title="{_e(con.get("reason") or "")}">'
+                f'? size fits {_e(con.get("looks_like"))}BR better</span>')
+    return ""
 
 
 def _facts(r: dict) -> str:
@@ -481,6 +489,9 @@ th.num { font-size:11px; }
 .chip { display:inline-block; font-size:10.5px; padding:2px 7px; border-radius:4px;
         margin-left:4px; font-weight:700; vertical-align:2px; cursor:help;
         background:rgba(248,81,73,.16); color:var(--red); }
+/* A contested size is a question, not a finding — amber, not red, so it reads
+   as "check this" rather than "this is wrong". */
+.chip.q { background:rgba(210,153,34,.16); color:#d29922; }
 .prof { min-width:215px; }
 .meter { height:5px; background:#243040; border-radius:99px; overflow:hidden;
          max-width:190px; }
