@@ -404,6 +404,23 @@ def _bed_mismatch(project: str, beds, sqft) -> dict | None:
     return v if v.get("verdict") == "mismatch" else None
 
 
+def _bed_contested(project: str, beds, sqft) -> dict | None:
+    """A bed count that fits better than the advertised one, or None.
+
+    Advisory, not a gate. `mismatch` means the buyer is being offered fewer
+    bedrooms than advertised and blocks; `contested` means the size sits in a
+    different format's band, which usually explains an apparent psf discount as
+    size-mix rather than value. That is the analyst's call to make with the
+    project's own prints in front of them, so it is passed to the agent as
+    evidence rather than used to drop the listing. Never raises.
+    """
+    try:
+        import bed_bands
+        return bed_bands.check(project, beds, sqft).get("contested")
+    except Exception:  # noqa: BLE001 — advisory check, never fatal
+        return None
+
+
 def _known_projects() -> set:
     """Lowercased URA project names — the rescue list. Never raises."""
     try:
@@ -552,6 +569,17 @@ def _agent_prompt(cand: dict) -> str:
         "own recent (24mo) prints, per the trust rules in CLAUDE.md."
         if flags else ""
     )
+    bed = _bed_contested(cand.get("project_name"), cand.get("beds"), cand.get("sqft"))
+    bed_note = (
+        f"\nBEDROOM COUNT IS CONTESTED — {bed['reason']}\n"
+        f"Settle this FIRST, from the project's own URA prints and unit mix: an "
+        f"advertised bed count is the marketing agent's word, and the size band a "
+        f"unit really belongs to is what its psf should be compared against. If "
+        f"the format is different from the label (PES/roof-terrace area, a "
+        f"penthouse, a dual-key, or simply a smaller bed count), say so plainly "
+        f"and re-read the discount against the RIGHT cohort before rating it.\n"
+        if bed else ""
+    )
     rs_url, rs_resolved = realsmart_url(cand.get("project_name"))
     rs_note = "" if rs_resolved else (
         "(NOTE: this URL is a GUESS — the project is not in realsmart's sitemap "
@@ -565,7 +593,7 @@ def _agent_prompt(cand: dict) -> str:
         f"    python invest.py --from-db {cand['id']}\n"
         f"instead of `--url` — it builds the run dir and raw_analysis.json from "
         f"the DB record with no scraping (PropertyGuru is behind Cloudflare and "
-        f"this is an unattended run).{flag_note}\n\n"
+        f"this is an unattended run).{flag_note}\n{bed_note}\n"
         f"REQUIRED in step ② Gather — realsmart.sg REALSCORE for this project:\n"
         f"    python3 {WEB_EXTRACT_FETCH} \"{rs_url}\"\n"
         f"{rs_note}"

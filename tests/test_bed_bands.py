@@ -22,6 +22,26 @@ BANDS = {"projects": {
     "thin project": {
         "3": {"lo": 1100, "hi": 1200, "median": 1150, "contracts": 3},
     },
+    # Real shape, from data/bed_bands.json. A "4BR" at 1216 sqft clears its own
+    # band on tolerance alone (1350 * 0.88 = 1188) while sitting 2.8% off a 3BR
+    # median backed by 6x the contracts.
+    "palm gardens": {
+        "2": {"lo": 950, "hi": 950, "median": 950, "contracts": 35},
+        "3": {"lo": 1250, "hi": 1250, "median": 1250, "contracts": 160},
+        "4": {"lo": 1350, "hi": 2350, "median": 1450, "contracts": 28},
+    },
+    # A 1259 sqft "3BR" lands exactly on the 4BR median; its psf reads cheap
+    # because the size belongs to a bigger format.
+    "d nest": {
+        "3": {"lo": 950, "hi": 1250, "median": 950, "contracts": 250},
+        "4": {"lo": 1250, "hi": 1450, "median": 1250, "contracts": 63},
+    },
+    # The false-positive guard: an 800-sqft-wide 2BR band contaminated by mixed
+    # stacks would "contain" a genuine 3BR that misses its own ceiling by 2 sqft.
+    "wide band project": {
+        "2": {"lo": 950, "hi": 1750, "median": 950, "contracts": 81},
+        "3": {"lo": 1050, "hi": 1150, "median": 1150, "contracts": 157},
+    },
 }}
 
 
@@ -83,6 +103,55 @@ class TestSqftParsing:
     def test_normalize(self):
         assert bed_bands.normalize("THE SAIL @ MARINA BAY") == "the sail marina bay"
         assert bed_bands.normalize("Waterview") == "waterview"
+
+
+class TestContested:
+    """The comparative question `ok` cannot answer.
+
+    Containment alone stopped discriminating once TOLERANCE was applied: 74% of
+    adjacent bed-count bands in the real file overlap, so nearly any size fits
+    something. These are the two listings that passed `ok` cleanly and were
+    wrong anyway.
+    """
+
+    def test_a_4br_that_is_really_a_3br_is_contested(self, monkeypatch):
+        _patch(monkeypatch)
+        v = bed_bands.check("Palm Gardens", 4, 1216)
+        assert v["verdict"] == "ok"                # containment still passes it
+        assert v["contested"]["looks_like"] == 3
+        assert v["contested"]["rule"] == "closer fit + deeper evidence"
+
+    def test_a_size_that_belongs_to_a_bigger_format_is_contested(self, monkeypatch):
+        _patch(monkeypatch)
+        v = bed_bands.check("D'Nest", 3, 1259)
+        assert v["verdict"] == "ok"
+        assert v["contested"]["looks_like"] == 4
+        assert v["contested"]["rule"] == "containment flip"
+
+    def test_a_wider_rival_band_is_not_evidence(self, monkeypatch):
+        # Misses its own 3BR ceiling by 2 sqft and lands in a 950-1750 band that
+        # contains almost anything. Without the width guard this whole class of
+        # genuine 3BR gets called a fake 2BR.
+        _patch(monkeypatch)
+        v = bed_bands.check("Wide Band Project", 3, 1152)
+        assert v["verdict"] == "ok"
+        assert "contested" not in v
+
+    def test_a_clean_unit_is_not_contested(self, monkeypatch):
+        _patch(monkeypatch)
+        assert "contested" not in bed_bands.check("Regentville", 3, 1100)
+
+    def test_contested_never_changes_the_verdict(self, monkeypatch):
+        # Callers gate on `mismatch`; a contested size must stay analysable.
+        _patch(monkeypatch)
+        for args in [("Palm Gardens", 4, 1216), ("D'Nest", 3, 1259)]:
+            assert bed_bands.check(*args)["verdict"] == "ok"
+
+    def test_a_thin_rival_band_cannot_contest(self, monkeypatch):
+        monkeypatch.setattr(bed_bands, "load", lambda: {"projects": {
+            "p": {"3": {"lo": 1000, "hi": 1100, "median": 1050, "contracts": 100},
+                  "4": {"lo": 1100, "hi": 1150, "median": 1120, "contracts": 2}}}})
+        assert "contested" not in bed_bands.check("P", 3, 1120)
 
 
 class TestGateIntegration:
