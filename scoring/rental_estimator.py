@@ -331,8 +331,11 @@ class RentalEstimator:
             "rent_psf": rental["rent_psf"],
             "source": rental["source"],
             # Audit #4 contract: the scorer copies confidence onto the scored
-            # listing as rent_confidence (MMR takes min(map, rent_confidence))
-            # and the evidence fields feed factual_data.rental.rent_evidence.
+            # listing as rent_confidence (MMR takes min(map, rent_confidence)).
+            # NOTE: contracts/window_months/capped below are currently DROPPED
+            # by FullScorer._score_rental_yield, so factual_data.rental
+            # .rent_evidence reports them as null/false — see the KNOWN GAP note
+            # on ScoredListing.rent_contracts.
             "confidence": rental["confidence"],
             "contracts": rental["contracts"],
             "window_months": rental["window_months"],
