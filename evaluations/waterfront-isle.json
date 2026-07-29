@@ -363,6 +363,82 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-25593161",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,378 sqft 3BR — the largest 3BR format at Waterfront Isle — asking $2.20M ($1,597 psf), the cheapest 3BR psf in the project's live book. The headline 7% discount to the project median is a size-mix artifact: the project's smaller 3BRs (1,163-1,259 sqft) print $1,763-1,842 psf, while this exact 1,378 sqft size has only three prints in 24 months — $1,717 psf (fl 06-10, Aug-25), $1,742 psf (fl 11-15, Sep-25) and $1,473 psf (fl 01-05, Apr-26). The ask sits almost exactly midway between the low-floor and mid-floor comp levels, and the listing discloses no floor or facing — in a development whose entire premium is the reservoir view above ~floor 4, that is the single unresolved fact that decides whether this is a 7% discount or an 8% premium.",
+      "rating_rationale": "Priced inside its own fair-value band, not below it, once the right comp set is used. (1) The -7.2% vs project median is a size-mix artifact — the repo's own age- and size-band-adjusted comparator puts this unit at -1.1% vs D16 peers, i.e. fair. (2) Same-size evidence brackets the ask: mid/high-floor 1,378 sqft printed $2.365M-$2.40M in Aug/Sep-2025, but the only 2026 print of this size closed at $2.03M on floors 01-05 — so the ask is either ~7% cheap (mid/high floor) or ~8% dear (low floor), and the listing won't say which. This project's 1,378 sqft low-floor discount is consistent across history (-18% in 2021, -15% in 2025/26), so the floor question is worth ~$300k. (3) The 782 score leans on trailing appreciation (10.08 of 42.1 MMR points above base, from a 7.36% 5yr CAGR) which current priors give ~0 forward power; substituting the OCR realized-forward rate (3.7%/yr) drops the all-cash 7yr return from ~6.9% to ~3.7%/yr. Its dev_size/buyer_pool credit also runs on a wrong 922-unit count (the project has 561). (4) Carry is weak: 2.89% gross / 1.7% net on a well-evidenced $5,300/mo (39 URA contracts). (5) The format is the project's thinnest: 3 prints in 24 months vs 13 for the 1,100-1,300 sqft band, so exit liquidity is materially worse than the project's headline 129-transaction depth implies. Against that, the fundamentals are real — 270m to DT30 Bedok Reservoir (DTL), 561 units, deep Bedok/Tampines upgrader catchment, 82 years of lease. Fair price, unverified discount, weak carry: Neutral. Verify the floor before anything else — floor 6+ in a reservoir-facing stack at $2.20M is a Buy; floors 01-05 makes it an Avoid against its own $2.03M Apr-2026 comp.",
+      "red_flags": [
+        "Floor and facing undisclosed — decisive here: 1,378 sqft on floors 01-05 has printed 15-18% below mid/high floor in this project across 2021, 2022 and 2026 (Apr-26: $2.03M / $1,473 psf). At $2.20M the ask is 8.4% above that comp.",
+        "Listed at the same $2.20M since 5 Jun 2026 (~8 weeks, relisted 21 Jul to refresh the date) while being the cheapest 3BR psf in the project — a sitting cheapest ask usually signals floor/facing/format defect rather than a bargain.",
+        "The apparent discount is a size-mix artifact: project median psf is pulled up by smaller 3BRs; against same-size, same-age peers the unit is only -1.1% (fair value, no margin of safety).",
+        "score_1000 782 is inflated for current priors — 10.08 MMR points come from a trailing 7.36% CAGR (≈0 forward power), and dev_size/buyer_pool are computed on 922 units when the project has 561.",
+        "Weak carry: 2.89% gross / 1.7% net yield on a well-evidenced $5,300/mo rent; ROI depends almost entirely on price appreciation.",
+        "Thin format cohort: only 3 prints of 1,378 sqft in 24 months (vs 13 in the 1,100-1,300 sqft band) — slow exit for the project's largest, highest-quantum 3BR.",
+        "Lease: 99 years from 26 Nov 2009, ~82 years remaining (raw_analysis overstates this as 85) — ~75 at a 7-year exit.",
+        "D16 supply at exit: Bayshore precinct GLS (~1,280 units, tender closed Jul 2026), New Upper Changi Rd GLS (~1,040), Sky Eden @ Bedok, plus the sister Waterfront Waves/Key/Gold resale book competing in the same micro-market.",
+        "Stacked Homes notes non-reservoir-facing stacks have poor outlook and ventilation, an undersized gym (<10 machines for 561 units) and a tight two-lane entrance; residents report facilities needing upgrading at 11 years old.",
+        "realsmart.sg REALSCORE unavailable — the public /p/waterfront-isle page resolved and confirmed (Waterfront Isle, D16, 561 units, 2015, 864 transactions to 7 Jul 2026) but serves the lite template with no REALSCORE, % profitable or annualized-return figures, and the /map fallback needs a logged-in session this unattended run does not have. Fields left null rather than guessed — the downside/profitability check on this project is simply not done."
+      ],
+      "catalysts": [
+        "270m (3 min) to DT30 Bedok Reservoir MRT on the Downtown Line — a genuine walk-to-MRT in a deep HDB-upgrader catchment (~1,440 Bedok flats reaching MOP/resale in 2026 feed the upgrader pool).",
+        "Bayshore precinct build-out and TEL/Sungei Bedok interchange lift the D16 narrative over a 5-7yr hold — new-launch benchmarks above $2,000 psf pull resale comparisons up (though the same GLS adds competing supply).",
+        "If verified as floor 6+ in one of the 8 reservoir-facing stacks (open water clears from ~floor 4-5 per Stacked Homes), the ask is 7-8% below the Aug/Sep-2025 same-size prints of $2.365M-$2.40M — that is a real entry discount.",
+        "Cheapest 3BR ask in the live book ($1,597 psf vs $1,625 and $1,711 for the 1,292 and 1,227 sqft listings) and unsold for 8 weeks — negotiating room toward the $2.03-2.10M same-size comp level is plausible."
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1596.52,
+        "beds": 3,
+        "sqft": 1378.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.36,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.89,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "A 1,378 sqft 3BR — the largest 3BR format at Waterfront Isle — asking $2.20M ($1,597 psf), the cheapest 3BR psf in the project's live book. The headline 7% discount to the project median is a size-mix artifact: the project's smaller 3BRs (1,163-1,259 sqft) print $1,763-1,842 psf, while this exact 1,378 sqft size has only three prints in 24 months — $1,717 psf (fl 06-10, Aug-25), $1,742 psf (fl 11-15, Sep-25) and $1,473 psf (fl 01-05, Apr-26). The ask sits almost exactly midway between the low-floor and mid-floor comp levels, and the listing discloses no floor or facing — in a development whose entire premium is the reservoir view above ~floor 4, that is the single unresolved fact that decides whether this is a 7% discount or an 8% premium.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced inside its own fair-value band, not below it, once the right comp set is used. (1) The -7.2% vs project median is a size-mix artifact — the repo's own age- and size-band-adjusted comparator puts this unit at -1.1% vs D16 peers, i.e. fair. (2) Same-size evidence brackets the ask: mid/high-floor 1,378 sqft printed $2.365M-$2.40M in Aug/Sep-2025, but the only 2026 print of this size closed at $2.03M on floors 01-05 — so the ask is either ~7% cheap (mid/high floor) or ~8% dear (low floor), and the listing won't say which. This project's 1,378 sqft low-floor discount is consistent across history (-18% in 2021, -15% in 2025/26), so the floor question is worth ~$300k. (3) The 782 score leans on trailing appreciation (10.08 of 42.1 MMR points above base, from a 7.36% 5yr CAGR) which current priors give ~0 forward power; substituting the OCR realized-forward rate (3.7%/yr) drops the all-cash 7yr return from ~6.9% to ~3.7%/yr. Its dev_size/buyer_pool credit also runs on a wrong 922-unit count (the project has 561). (4) Carry is weak: 2.89% gross / 1.7% net on a well-evidenced $5,300/mo (39 URA contracts). (5) The format is the project's thinnest: 3 prints in 24 months vs 13 for the 1,100-1,300 sqft band, so exit liquidity is materially worse than the project's headline 129-transaction depth implies. Against that, the fundamentals are real — 270m to DT30 Bedok Reservoir (DTL), 561 units, deep Bedok/Tampines upgrader catchment, 82 years of lease. Fair price, unverified discount, weak carry: Neutral. Verify the floor before anything else — floor 6+ in a reservoir-facing stack at $2.20M is a Buy; floors 01-05 makes it an Avoid against its own $2.03M Apr-2026 comp.",
+        "red_flags": [
+          "Floor and facing undisclosed — decisive here: 1,378 sqft on floors 01-05 has printed 15-18% below mid/high floor in this project across 2021, 2022 and 2026 (Apr-26: $2.03M / $1,473 psf). At $2.20M the ask is 8.4% above that comp.",
+          "Listed at the same $2.20M since 5 Jun 2026 (~8 weeks, relisted 21 Jul to refresh the date) while being the cheapest 3BR psf in the project — a sitting cheapest ask usually signals floor/facing/format defect rather than a bargain.",
+          "The apparent discount is a size-mix artifact: project median psf is pulled up by smaller 3BRs; against same-size, same-age peers the unit is only -1.1% (fair value, no margin of safety).",
+          "score_1000 782 is inflated for current priors — 10.08 MMR points come from a trailing 7.36% CAGR (≈0 forward power), and dev_size/buyer_pool are computed on 922 units when the project has 561.",
+          "Weak carry: 2.89% gross / 1.7% net yield on a well-evidenced $5,300/mo rent; ROI depends almost entirely on price appreciation.",
+          "Thin format cohort: only 3 prints of 1,378 sqft in 24 months (vs 13 in the 1,100-1,300 sqft band) — slow exit for the project's largest, highest-quantum 3BR.",
+          "Lease: 99 years from 26 Nov 2009, ~82 years remaining (raw_analysis overstates this as 85) — ~75 at a 7-year exit.",
+          "D16 supply at exit: Bayshore precinct GLS (~1,280 units, tender closed Jul 2026), New Upper Changi Rd GLS (~1,040), Sky Eden @ Bedok, plus the sister Waterfront Waves/Key/Gold resale book competing in the same micro-market.",
+          "Stacked Homes notes non-reservoir-facing stacks have poor outlook and ventilation, an undersized gym (<10 machines for 561 units) and a tight two-lane entrance; residents report facilities needing upgrading at 11 years old.",
+          "realsmart.sg REALSCORE unavailable — the public /p/waterfront-isle page resolved and confirmed (Waterfront Isle, D16, 561 units, 2015, 864 transactions to 7 Jul 2026) but serves the lite template with no REALSCORE, % profitable or annualized-return figures, and the /map fallback needs a logged-in session this unattended run does not have. Fields left null rather than guessed — the downside/profitability check on this project is simply not done."
+        ],
+        "catalysts": [
+          "270m (3 min) to DT30 Bedok Reservoir MRT on the Downtown Line — a genuine walk-to-MRT in a deep HDB-upgrader catchment (~1,440 Bedok flats reaching MOP/resale in 2026 feed the upgrader pool).",
+          "Bayshore precinct build-out and TEL/Sungei Bedok interchange lift the D16 narrative over a 5-7yr hold — new-launch benchmarks above $2,000 psf pull resale comparisons up (though the same GLS adds competing supply).",
+          "If verified as floor 6+ in one of the 8 reservoir-facing stacks (open water clears from ~floor 4-5 per Stacked Homes), the ask is 7-8% below the Aug/Sep-2025 same-size prints of $2.365M-$2.40M — that is a real entry discount.",
+          "Cheapest 3BR ask in the live book ($1,597 psf vs $1,625 and $1,711 for the 1,292 and 1,227 sqft listings) and unsold for 8 weeks — negotiating room toward the $2.03-2.10M same-size comp level is plausible."
+        ],
+        "rental_assessment": "$5,300/mo from 39 URA contracts over 12 months (confidence 0.95) — well-evidenced, not extrapolated. Gross 2.89%, net 1.70%. Below the 3.5% comfort zone; the large 1,378 sqft 3BR does not command rent proportional to its size, so this is a capital-appreciation bet with thin carry, not a yield play.",
+        "appreciation_assessment": "The 7.36%/yr URA 5yr CAGR (129 txns) is real but backward-looking and partly a 2021-26 regime effect — this project's own 1,378 sqft prints went $1,321 psf (2021) to $1,742 (2025), which is the whole market's bull run, not a project edge. Current priors give trailing CAGR ~0 forward power, so I override to the OCR realized-forward rate of 3.7%/yr; on that basis the all-cash 7yr return is ~3.7%/yr rather than the ~6.9% in roi_projections. The forward case rests on region (OCR) and the Bayshore/TEL halo, not on momentum.",
+        "stack_notes": "No profile researched for Waterfront Isle (stack_profile: not_researched), so the stack could not be joined. Public research (Stacked Homes) says 8 of the stacks face Bedok Reservoir and open water clears from roughly floor 4-5; non-facing stacks get a poor outlook and weaker ventilation. Address on the listing is 758 Bedok Reservoir Road. The project's own prints show the 1,378 sqft format splitting hard by floor tier (fl 01-05 $1,473 psf vs fl 06-15 $1,717-1,742 psf, Apr-26 vs Aug/Sep-25) — establish floor and facing at first contact; everything else about this call is secondary to it.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR realized-forward baseline from the repo's 28-district panel backtest (docs/AUDIT_JUN2026.md); the 7.36% figure is a trailing resale CAGR and is de-weighted to ~0 forward power under current priors.",
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_075_500001144",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
