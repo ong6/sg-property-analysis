@@ -344,30 +344,46 @@ class ScoredListing:
 
     @property
     def has_ura_data(self) -> bool:
-        """Check if this listing has real transaction data (URA or PropertyGuru)."""
-        return self.appreciation_source not in {"default", "regional_baseline", "ai_required"}
+        """Whether the appreciation rate came from real transactions.
+
+        True for every `ura_*` source, injected `transaction_data`, and an
+        `agent_override`; False for the `default` / `regional_baseline`
+        fallbacks, which are guesses rather than measurements.
+        """
+        return self.appreciation_source not in {"default", "regional_baseline"}
 
     @property
     def needs_ai_appreciation(self) -> bool:
         """Whether appreciation rate should be validated by AI research."""
-        return self.appreciation_source in {"default", "regional_baseline", "ai_required"}
+        return self.appreciation_source in {"default", "regional_baseline"}
 
     # Rental estimates
     estimated_monthly_rent: float = 0
     estimated_gross_yield: float = 0
-    rent_source: str = ""  # "same_condo", "district_median", "fallback"
+    # "same_condo" | "ura_project_bed" | "ura_project" | "district_bedroom"
+    # | "district_median" | "fallback_bedroom" | "fallback" | "unavailable"
+    rent_source: str = ""
     # Rent evidence (audit #4/#5): numeric confidence (estimator-emitted;
     # MMR takes min(source map, rent_confidence)), URA contract depth and
     # serving window behind a cache-backed rent, and whether the v3.6.2
-    # sqft cap engaged. Populated by the scorer from the estimator output.
+    # sqft cap engaged.
     rent_confidence: Optional[float] = None
+    # KNOWN GAP: the three fields below are never written. RentalEstimator
+    # .estimate_yield_score does emit contracts/window_months/capped, but
+    # FullScorer._score_rental_yield copies only `confidence`, so these stay
+    # None/False and raw_output's rent_evidence reports them as null/false
+    # (its `capped_note` branch is therefore unreachable). Wiring them up
+    # changes raw_analysis.json output — do it deliberately, not in passing.
     rent_contracts: Optional[int] = None
     rent_window_months: Optional[int] = None
     rent_capped: bool = False
 
     # Appreciation data (for ROI calculation)
     appreciation_rate: float = 0.02  # Annual appreciation rate (decimal) — adjusted for new-launch bias
-    appreciation_source: str = "default"  # "project_history", "transaction_data", "regional_baseline", "default"
+    # One of: "ura_resale_only" / "ura_5yr_cagr" / "ura_3yr_avg" (or whatever
+    # `source` the URA cache entry carries), "transaction_data",
+    # "agent_override", "regional_baseline", "default".
+    appreciation_source: str = "default"
     raw_appreciation_rate: float = 0.02  # Original rate before new-launch adjustment
     appreciation_adjustment: float = 0.0  # How much was discounted (decimal, e.g., -0.02 = -2%)
     adjustment_reason: str = ""  # Why adjustment was applied (or "" if none)

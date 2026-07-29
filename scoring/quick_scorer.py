@@ -1,9 +1,11 @@
 """Quick scorer for fast filtering of listings (Phase 1).
 
-Uses only scraped data - no external lookups.
-Designed to quickly filter out poor properties before detailed analysis.
+Uses only scraped data - no external lookups. Its job is to drop obviously
+unusable listings before the expensive FullScorer/URA pass (see
+full_scorer.score_and_filter, which gates on `min_quick_score`); it never
+ranks and its points never reach MMR.
 
-v2.0: Aligned with new scoring system thresholds.
+Thresholds track config.SCORE_TIER1_MIN / SCORE_TIER2_MIN.
 """
 
 import re
@@ -25,10 +27,10 @@ class QuickScorer:
     """
     Quick scoring engine for initial property filtering.
 
-    v2.0 Scoring tiers (aligned with full scorer):
-    - Tier 1 (score >= 60): Keep for detailed analysis
-    - Tier 2 (score 45-59): Maybe, review if needed
-    - Tier 3 (score < 45): Reject
+    Scoring tiers (thresholds from config):
+    - Tier 1 (score >= TIER_1_MIN): Keep for detailed analysis
+    - Tier 2 (TIER_2_MIN..TIER_1_MIN-1): Maybe, review if needed
+    - Tier 3 (score < TIER_2_MIN): Reject
     """
 
     TIER_1_MIN = SCORE_TIER1_MIN  # From config (default 60)
