@@ -1,0 +1,331 @@
+{
+ "props": {
+  "pageProps": {
+   "pageData": {
+    "data": {
+     "listingDetail": {
+      "id": 500200706,
+      "title": {
+       "en": "Affinity At Serangoon"
+      },
+      "location": {
+       "point": {
+        "lat": 1.36561,
+        "lon": 103.87259
+       },
+       "address": {
+        "formatted": "18 Serangoon North Avenue 1",
+        "postalCode": "554336"
+       }
+      },
+      "unitDetails": {
+       "direction": null,
+       "floorLevel": {
+        "code": "MID",
+        "description": "Middle Floor"
+       },
+       "furnishing": {
+        "code": "UNFUR",
+        "description": "Unfurnished"
+       },
+       "tenancy": {
+        "value": "UNTENANTED",
+        "tenantedUntilDate": null
+       },
+       "configuration": {
+        "bedrooms": {
+         "value": 2,
+         "text": "2 Bedrooms"
+        },
+        "bathrooms": {
+         "value": 2,
+         "text": "2 Bathrooms"
+        },
+        "extrarooms": {
+         "value": null,
+         "text": null
+        }
+       }
+      },
+      "project": {
+       "metaByType": {
+        "verified": {
+         "name": "Affinity At Serangoon",
+         "tenure": {
+          "code": "L99",
+          "text": "99-year Leasehold"
+         },
+         "developer": "Oxley Holdings Limited",
+         "totalUnits": 1052,
+         "facilities": [
+          {
+           "code": "BBQ",
+           "description": "Barbeque Pits"
+          },
+          {
+           "code": "CHPLY",
+           "description": "Children's Playground"
+          },
+          {
+           "code": "CLUB",
+           "description": "Clubhouse"
+          },
+          {
+           "code": "COMMG",
+           "description": "Community Garden"
+          },
+          {
+           "code": "DOP",
+           "description": "Drop Off Point"
+          },
+          {
+           "code": "FIT",
+           "description": "Fitness corner"
+          },
+          {
+           "code": "GYM",
+           "description": "Gymnasium room"
+          },
+          {
+           "code": "JAC",
+           "description": "Jacuzzi"
+          },
+          {
+           "code": "JOG",
+           "description": "Jogging track"
+          },
+          {
+           "code": "LAP",
+           "description": "Lap pool"
+          },
+          {
+           "code": "ME",
+           "description": "Main entrance"
+          },
+          {
+           "code": "MSCP",
+           "description": "Multi-Storey Car Park"
+          },
+          {
+           "code": "MULTI",
+           "description": "Multi-purpose hall"
+          },
+          {
+           "code": "PAVI",
+           "description": "Pavillion"
+          },
+          {
+           "code": "PDEC",
+           "description": "Pool Deck"
+          },
+          {
+           "code": "PLAY",
+           "description": "Playground"
+          },
+          {
+           "code": "REF",
+           "description": "Reflexology Path"
+          },
+          {
+           "code": "SEC",
+           "description": "24 hours security"
+          },
+          {
+           "code": "TEN",
+           "description": "Tennis courts"
+          },
+          {
+           "code": "WAD",
+           "description": "Wading pool"
+          }
+         ],
+         "floors": 0,
+         "completionYear": 2024
+        }
+       }
+      }
+     },
+     "listingLocationData": {
+      "data": {
+       "center": {
+        "lat": 1.36561,
+        "lng": 103.87259
+       }
+      }
+     },
+     "detailsData": {
+      "metadata": {
+       "dataAutomationId": "more-details-widget"
+      },
+      "metatable": {
+       "title": "Property details",
+       "items": [
+        {
+         "icon": "home-open-o",
+         "value": "Condominium for sale"
+        },
+        {
+         "icon": "furnished-o",
+         "value": "Unfurnished"
+        },
+        {
+         "icon": "document-with-lines-o",
+         "value": "TOP in Dec 2024"
+        },
+        {
+         "icon": "calendar-days-o",
+         "value": "99-year lease"
+        },
+        {
+         "icon": "calendar-time-o",
+         "value": "Listed on 27 Jul 2026"
+        },
+        {
+         "icon": "document-with-lines-o",
+         "value": "Listing ID - 500200706"
+        },
+        {
+         "icon": "ruler-o",
+         "value": "732 sqft floor area"
+        },
+        {
+         "icon": "auto-size-o",
+         "value": "S$ 1,885.25 psf (floor)"
+        },
+        {
+         "icon": "people-behind-o",
+         "value": "Not tenanted"
+        },
+        {
+         "icon": "asterisk-o",
+         "value": "S$ 310.00 monthly maintenance"
+        },
+        {
+         "icon": "layers-2-o",
+         "value": "Middle floor level"
+        },
+        {
+         "icon": "new-project-o",
+         "value": "Developed by Oxley Holdings Limited"
+        },
+        {
+         "icon": "block-o",
+         "value": "1052 total units"
+        }
+       ],
+       "seeAllBtn": {
+        "text": "See all details"
+       }
+      }
+     },
+     "facilitiesData": {
+      "title": "Common facilities",
+      "seeAllButton": {
+       "text": "See all 20 facilities",
+       "metadata": {
+        "dataAutomationId": "facilities-see-all-btn"
+       }
+      },
+      "data": [
+       {
+        "icon": "security-access-control-o",
+        "text": "24 hours security"
+       },
+       {
+        "icon": "bbq-o",
+        "text": "Barbeque pits"
+       },
+       {
+        "icon": "playground-o",
+        "text": "Children's playground"
+       },
+       {
+        "icon": "shared-space-o",
+        "text": "Clubhouse"
+       },
+       {
+        "icon": "private-garden-o",
+        "text": "Community garden"
+       },
+       {
+        "icon": "taxi-o",
+        "text": "Drop off point"
+       },
+       {
+        "icon": "outdoor-gym-o",
+        "text": "Fitness corner"
+       },
+       {
+        "icon": "gym-o",
+        "text": "Gymnasium room"
+       },
+       {
+        "icon": "jacuzzi-o",
+        "text": "Jacuzzi"
+       },
+       {
+        "icon": "run-o",
+        "text": "Jogging track"
+       },
+       {
+        "icon": "asterisk-o",
+        "text": "Lap pool"
+       },
+       {
+        "icon": "garage-o",
+        "text": "Main entrance"
+       },
+       {
+        "icon": "shared-space-o",
+        "text": "Multi-purpose hall"
+       },
+       {
+        "icon": "parking-o",
+        "text": "Multi-storey car park"
+       },
+       {
+        "icon": "home-roof-o",
+        "text": "Pavillion"
+       },
+       {
+        "icon": "playground-o",
+        "text": "Playground"
+       },
+       {
+        "icon": "asterisk-o",
+        "text": "Pool deck"
+       },
+       {
+        "icon": "reflexology-o",
+        "text": "Reflexology path"
+       },
+       {
+        "icon": "tennis-o",
+        "text": "Tennis courts"
+       },
+       {
+        "icon": "swim-o",
+        "text": "Wading pool"
+       }
+      ]
+     },
+     "listingData": {
+      "listingId": "500200706",
+      "propertyName": "Affinity At Serangoon",
+      "developer": "Oxley Holdings Limited",
+      "districtCode": "D19",
+      "tenure": "L99"
+     }
+    }
+   }
+  }
+ },
+ "page": "/[locale]/consumer/ldp/[[...slug]]",
+ "buildId": "consumerweb-search-8bab4968a0",
+ "query": {
+  "locale": "en",
+  "slug": [
+   "for-sale-affinity-at-serangoon-500200706"
+  ]
+ }
+}

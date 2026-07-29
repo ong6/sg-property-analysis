@@ -1,0 +1,51 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.propertyguru.com.sg/#organization",
+   "name": "PropertyGuru"
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-500200706#webpage",
+   "name": "Affinity At Serangoon Condominium For Sale at S$ 1,380,000 | PropertyGuru Singapore",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-500200706"
+  },
+  {
+   "@type": "RealEstateListing",
+   "@id": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-500200706#realEstateListing",
+   "name": "Affinity At Serangoon",
+   "url": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-500200706"
+  },
+  {
+   "@type": "Apartment",
+   "@id": "https://www.propertyguru.com.sg/listing/for-sale-affinity-at-serangoon-500200706#property",
+   "name": "Affinity At Serangoon",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 1.36561,
+    "longitude": 103.87259
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "Furnishing",
+     "value": "Unfurnished"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Tenure",
+     "value": "99-year Leasehold"
+    }
+   ],
+   "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 732,
+    "unitCode": "FTK",
+    "unitText": "sqft"
+   },
+   "numberOfBedrooms": 2
+  }
+ ]
+}
