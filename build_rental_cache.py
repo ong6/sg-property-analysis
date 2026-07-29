@@ -15,9 +15,11 @@ floor-area band, lease commencement month) into per-project medians:
 Why: production rents were synthetic (district·bed constants), so the MMR
 yield component was mechanically const/PSF — re-skinned cheapness, downweighted
 to 0.5/0.15 confidence in v3.4. Real per-project rents replace the constant with
-actual rental evidence (v3.5 backtest PART 5g: real-rent yield carries ~0
-forward PRICE signal — its value is carry/income, which is exactly what the
-yield component prices for a 5-7yr hold).
+actual rental evidence. What the real rents then showed (backtest_ext PART 5g,
+first read v3.5, re-measured with cluster CIs in v3.10): high gross yield does
+not merely carry ~0 forward PRICE signal, it predicts *lower* forward price
+growth (multivariate std_beta −0.16). So yield is carry/income only — exactly
+what the component should price for a 5-7yr hold, and never appreciation.
 
 Usage:
   python build_rental_cache.py            # uses data/ura_rental_D*.csv (no suffix)

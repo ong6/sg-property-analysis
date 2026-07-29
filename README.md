@@ -53,12 +53,18 @@ searchable listings sheet. See [CLAUDE.md](CLAUDE.md) for the full Claude Code p
 ### Local web UIs
 
 ```bash
-python ui.py          # http://127.0.0.1:8642 — fresh listings + condo arena
-python dashboard.py   # http://127.0.0.1:8643 — system dashboard + headless ANALYZE
+python ui.py            # http://127.0.0.1:8642 — fresh listings + condo arena
+python dashboard.py     # http://127.0.0.1:8643 — system dashboard + headless ANALYZE
+python shortlist_ui.py  # http://127.0.0.1:8644 — the researched buy-list
 ```
 
-The listings UI auto-polls PropertyGuru in the background (every 6h by default, `--no-poll`
-to disable) and scores only new or price-changed listings. Standalone poller: `python poller.py`.
+All three are **viewers over data already on disk — none of them scrape by default.**
+PropertyGuru sits behind Cloudflare, which blocks headless background polls, so in-UI
+scraping is opt-in: `python ui.py --poll --poll-no-headless` turns on the background
+auto-poll and the SCAN NOW button (`--poll-interval-mins`, `--poll-districts`,
+`--poll-beds` to tune). The normal way to refresh data is the standalone headed poller,
+`python poller.py` (`--loop` to keep cycling) — solve Cloudflare once in the Chrome window
+and the clearance cookie in `chrome-profile/` is reused.
 
 ### Standalone (no AI agent)
 
@@ -134,20 +140,62 @@ Most-used flags for `python invest.py`, grouped by purpose (`--help` for the ful
 ## Weekly Scan
 
 `weekly.py` is the once-a-week loop: **poll → algo-grade every new and
-price-changed listing → gate → AI-analyze only what clears the gate → digest**.
-The algo grade is free and applied to everything; the AI agent is expensive, so
-it only runs on listings scoring `>= 650` (capped at 8 per scan, with a 30-day
-re-evaluation cooldown per condo + bed count). Everything filtered out is still
-logged, with the reason.
+price-changed listing → gate → AI-analyze only what clears the gate → digest →
+push the good finds to a notes store**. The algo grade is free and applied to
+everything; the AI agent is expensive, so it only runs on listings scoring
+`>= 650` (capped at 8 per scan, with a 30-day re-evaluation cooldown per condo +
+bed count). Everything filtered out is still logged, with the reason.
 
 ```bash
 python weekly.py              # the real thing (headed browser)
 python weekly.py --dry-run    # poll + gate + digest, no agents
+python weekly.py --no-poll    # skip the scrape, grade what already arrived
+python weekly.py --full-book  # gate every active listing, not just the week's delta
+python weekly.py --force      # re-run a week that already completed
 ```
 
-Nothing auto-starts it — run it by hand when the reminder comes up. Digests land
-in `output/weekly/<date>.md`; verdicts go to `evaluations/` like any other flow.
-Thresholds are at the top of `weekly.py`. Full details: `CLAUDE.md`.
+The scan is driven by a **search mandate** — the `MANDATES` block at the top of
+`weekly.py`, which is the one place that says *what* is being bought (budget per
+buyer, bedroom counts, and a hard region filter over a chosen district list).
+Region, budget and bed count are enforced at the gate, not just in the scrape
+scope, and the AI budget is split fairly across buyers before leftovers go to the
+best-scoring listings — otherwise the larger budget takes every slot. Listings
+whose bedroom count looks relabelled are rejected by `bed_bands.py` (below).
+
+By default a scan looks at the **delta** (new + re-priced). `--full-book`
+re-gates every active listing in the DB instead — standing inventory is invisible
+to a delta scan forever, which is how a 103-listing project never surfaced.
+
+Nothing auto-starts it — no cron, no LaunchAgent; run it by hand when the reminder
+comes up. Digests land in `output/weekly/<date>.md`; verdicts go to `evaluations/`
+like any other flow. Thresholds are at the top of `weekly.py`. Full details:
+`CLAUDE.md`.
+
+## Shortlist and Supporting Data
+
+```bash
+python shortlist.py --mandate his   # ranked buy-list for one buyer (--json for rows)
+python bed_bands.py --build         # per-project bedroom→size bands from URA rentals
+python realsmart.py --refresh       # cache realsmart.sg's sitemap slug index
+python realsmart_cache.py --from-db --districts 16,18,19   # warm per-project stats
+```
+
+- **`shortlist.py` / `shortlist_ui.py`** join evaluation memory, per-project
+  realsmart.sg stats and the live listings DB into one ranked table. It ranks on
+  **evidence of exit** — the share of a project's resales that actually sold at a
+  profit, only trusted past 150 resales — with the algo score *last*, because in
+  the batch measured so far the two ran opposite (r ≈ −0.7). A high algo score
+  next to a poor profitability record is flagged as a value trap.
+- **`bed_bands.py`** learns each project's real bedroom→size bands from URA
+  *rental* contracts (the only source that files a bedroom count against a unit)
+  and rejects the 2BR-sold-as-3BR relabel that a global sqft sanity table waves
+  through. Only a confirmed downward mismatch blocks; oversize units and thin
+  evidence pass.
+- **`realsmart.py` / `realsmart_cache.py`** resolve a project's realsmart.sg page
+  from their sitemap (guessed slugs 404 or, worse, hit a different project) and
+  cache per-project stats with a 45-day TTL, since they belong to the development
+  rather than the listing. Low-volume research lookups only — their terms are
+  personal-use.
 
 ## Configuration
 
@@ -206,6 +254,12 @@ appreciation-rate override with source. The rating scale and field guide are in
 ```
 property-finder/
 ├── invest.py              # Main CLI: flows, --score, --recall, --search-db, --from-review
+├── weekly.py              # Weekly scan: mandate → poll → grade → gate → AI → digest
+├── shortlist.py           # Ranked buy-list; ranks on exit record, not the algo score
+├── shortlist_ui.py        # Shortlist viewer (:8644) with the value-trap read
+├── realsmart.py           # realsmart.sg slug resolution from their sitemap
+├── realsmart_cache.py     # Per-project realsmart stats, cached with a 45-day TTL
+├── bed_bands.py           # Per-project bedroom→size bands from URA rental contracts
 ├── backtest.py / backtest_ext.py   # Point-in-time URA backtests of scoring features
 ├── calibrate_forward.py   # Joins past scores to later URA PSF (forward calibration)
 ├── config.py              # MMR calibration, weights, thresholds, buyer profile
@@ -213,7 +267,7 @@ property-finder/
 ├── profile_memory.py      # Git-tracked condo profiles (physical facts) + listing→stack join
 ├── listings_db.py         # Master listings sheet (continuously-updated, searchable)
 ├── poller.py              # PropertyGuru poll cycle: scrape newest → upsert → score new
-├── ui.py                  # Fresh-listings + arena UI (:8642), auto-polls via poller.py
+├── ui.py                  # Fresh-listings + arena UI (:8642); scraping is opt-in (--poll)
 ├── dashboard.py           # System dashboard (:8643) with headless ANALYZE buttons
 ├── scoring/
 │   ├── full_scorer.py     # Enrichment + component scoring
@@ -227,7 +281,8 @@ property-finder/
 ├── scrapers/              # PropertyGuru + URA CSV + headless browser
 ├── utils/                 # Report generator, geo, logging
 ├── docs/                  # evaluation-rubric.md, RELEASES.md
-├── .claude/skills/        # analyze-development / analyze-listing / market-scan / research-development
+├── .claude/skills/        # analyze-development / analyze-listing / market-scan /
+│                          #   research-development / arena-cycle / realsmart-data
 ├── evaluations/           # Past evaluations — judgements (commit; may be stale)
 ├── profiles/              # Condo profiles — stacks/facings/layouts (commit)
 ├── data/                  # Reference data, listings DB/sheet, URA + rental caches
@@ -237,12 +292,21 @@ property-finder/
 
 ## Troubleshooting
 
-**Cloudflare blocks** — PropertyGuru uses Cloudflare protection. If scraping is blocked:
+**Cloudflare blocks** — PropertyGuru uses Cloudflare protection. Re-run headed and solve
+the challenge once; the clearance cookie is stored in `chrome-profile/` and reused:
 
 ```bash
-rm -rf chrome-profile/                                       # clear browser state and retry
 python invest.py --districts 3 --no-headless --max-pages 1   # solve the challenge manually
 ```
+
+Only if the profile itself is corrupt, `rm -rf chrome-profile/` and solve again — that
+deletes the clearance cookie every scraper path depends on, so it is a last resort, not
+a first step.
+
+**`facing` is always empty, `floor_level` is sparse** — not a bug. PropertyGuru does not
+serve a facing/direction on listing detail pages (null on every sampled listing), so
+`facing` stays at 0% coverage; use a researched profile in `profiles/` for orientation.
+`floor_level` is optional for the posting agent and tops out around 35–40%.
 
 **No URA data for a property** — the scorer falls back to the **regional
 appreciation baseline** (`REGIONAL_APPRECIATION_BASELINES` in `config.py`:

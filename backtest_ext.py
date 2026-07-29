@@ -503,7 +503,7 @@ def _config_composite(r):
     return s
 
 
-def part4_composite(rows, split_sample):
+def part4_composite(rows):
     print("=" * 78)
     print("PART 4 — COMPOSITE-SCORE VALIDATION  | does the ASSEMBLED score predict?")
     print("  Jun-2026 audit P0-1: the old print scored the config composite on ALL")
@@ -526,7 +526,7 @@ def part4_composite(rows, split_sample):
 
     # ---- apples-to-apples: BOTH composites on the complete-case rows -------
     cur_good = [_config_composite(r) for r in good]
-    rho_cg, n_cg = bt._spearman(cur_good, y_good)
+    rho_cg, _n_cg = bt._spearman(cur_good, y_good)
     lo_cg, hi_cg, _ = bt._cluster_boot_rho(cur_good, y_good, cl_good)
 
     Z = np.column_stack([_zser(good, f) for f in feats])
@@ -534,7 +534,7 @@ def part4_composite(rows, split_sample):
     Zd = np.column_stack([np.ones(len(good)), Z])
     beta, *_ = np.linalg.lstsq(Zd, yv, rcond=None)
     fit = Zd @ beta
-    rho_opt, n_opt = bt._spearman(list(fit), list(yv))
+    rho_opt, _n_opt = bt._spearman(list(fit), list(yv))
     # CI of the FIXED fitted composite under cluster resampling (the weights
     # are not refit per draw — this bounds the evaluation noise, not the
     # additional optimism of in-sample fitting, which is already disclosed).
@@ -558,7 +558,7 @@ def part4_composite(rows, split_sample):
     cur_all = [_config_composite(r) for r in rows]
     rho_ca, n_ca = bt._spearman(cur_all, fwd_all)
     lo_ca, hi_ca, k_ca = bt._cluster_boot_rho(cur_all, fwd_all, cl_all)
-    print(f"\n  ALL pooled rows incl. partial-feature rows (NOT comparable to (b)):")
+    print("\n  ALL pooled rows incl. partial-feature rows (NOT comparable to (b)):")
     print(f"    config weights on all rows      forward rho = {rho_ca:+.3f}  "
           f"{bt._fmt_ci(lo_ca, hi_ca)}  (n={n_ca}, {k_ca} projects)")
 
@@ -578,10 +578,16 @@ def part4_composite(rows, split_sample):
 # Added v3.5: validates `future` (govt zones / transformation / supply — the
 # production future score is EXACTLY these district-level parts for the
 # coordinate-less listings that dominate the DB), `buyer_pool`, the age curve,
-# and the stored floor_factors magnitude. `yield` and `dev_size` remain
-# UNTESTABLE here: no real per-project rental series exists in the repo
-# (district median_rental_psf / PSF is just inverse-PSF = region in disguise),
-# and total_units is absent from both the URA panel and 6348/6349 listings.
+# and the stored floor_factors magnitude.
+#
+# SUPERSEDED NOTE: this header used to say `yield` and `dev_size` were
+# UNTESTABLE here (no real per-project rental series in the repo; total_units
+# absent from the URA panel and 6348/6349 listings). Both gaps were closed
+# later in v3.5b and are now measured IN THIS FILE — dev_size in PART 5f via
+# data/project_units.json (build_project_units.py) and real-rent yield in PART
+# 5g via data/ura_rental_D*_202301_202406.csv (fetch_ura_rentals.py). The
+# district median_rental_psf / PSF caveat still stands for the *production
+# fallback* rent, which is why PART 5g insists on contract-level rents.
 # ============================================================================
 
 import json as _json
@@ -647,7 +653,7 @@ def _dnum(district):
         return None
 
 
-def part5_levers(rows, txns, asof):
+def part5_levers(rows, asof):
     print("=" * 78)
     print("PART 5 — UN-TESTED LEVERS  | district-level point-in-time joins")
     print("  `future` here = the EXACT production future score for a coordinate-less")
@@ -705,11 +711,22 @@ def part5_levers(rows, txns, asof):
 
 def part5_floor(asof, lookback=2.0):
     """Within-project floor premium (project fixed effects) vs the stored
-    ura_cache floor_factors (which are all district-basis and ~1.4% low->high)."""
+    ura_cache floor_factors.
+
+    This measurement is what DROVE the v3.5 floor-factor de-attenuation: the
+    stored factors were then all district-basis and ~1.4% low->high against a
+    within-project FE estimate of ~+3.1%/tier. The estimator was replaced
+    (within project x size-band FE, +/-8% clamp) and v3.5c added per-project FE
+    curves where >=40 contrast obs exist, so the cache now carries a mix of
+    bases and a much wider spread. The comparison print below reads both live
+    from the cache — do not hard-code either side.
+    """
     print("=" * 78)
     print("PART 5b — FLOOR-FACTOR MAGNITUDE  | within-project (FE) vs stored cache")
     print("=" * 78)
-    # load_with_floor drops project names, so read the CSVs keeping them
+    # Re-read the CSVs rather than reuse load_with_floor(): this part needs the
+    # rows already narrowed to the (asof-lookback, asof] resale window and
+    # grouped by project, and it is called with `asof` only (no txn list).
     by_proj = defaultdict(list)
     for pth in sorted(glob.glob(bt.DATA_GLOB)):
         with bt._open_csv(pth) as fh:
@@ -885,7 +902,7 @@ def part5f_devsize_mrt(rows):
     print(f"  station file: {len(stations)} stations, {n_dated} dated 2021+ "
           f"(as-of-T gating); {n_moved} rows' nearest station was NOT yet open "
           f"at their split")
-    print(f"  (95% CI = project-cluster bootstrap)")
+    print("  (95% CI = project-cluster bootstrap)")
     for nm, x in (("total_units", units), ("dev_size MMR comp", dev_comp),
                   ("mrt_dist_asof_T", mrt_d), ("mrt MMR comp asof_T", mrt_comp),
                   ("mrt_dist_2026net", mrt_d_all)):
@@ -926,7 +943,7 @@ def part5f_devsize_mrt(rows):
         coef_l, _r2l, _nl = _ols_ci(fr_l, y_l, names, cls_l)
         old = next(o for o in coef_l if o["name"] == "log_mrt_dist")
         new = next(o for o in coef if o["name"] == "log_mrt_dist")
-        print(f"\n  MRT std_beta, look-ahead vs honest (same rows/controls):")
+        print("\n  MRT std_beta, look-ahead vs honest (same rows/controls):")
         print(f"    2026 network (legacy, leaks unopened stations) "
               f"{old['std']:+.3f}  {bt._fmt_ci(old['lo'], old['hi'])}")
         print(f"    as-of-T network (P1-6 fix)                     "
@@ -1458,14 +1475,36 @@ def part6_nonvalue(rows, txns, asof):
         _print_ols_ci(coef, name_w=16)
         joint = {o["name"]: o for o in coef}
 
-    _structural_floor(o_fut, o_cost, o_dev, joint)
+    _structural_floor()
     return {"future": o_fut, "cost": o_cost, "dev_size": o_dev, "joint": joint}
 
 
-def _structural_floor(o_fut, o_cost, o_dev, joint):
+def _structural_floor():
     """Quantify the non-value RAW-MMR floor: a listing with all value+yield
     credit zeroed still floors >650 because the structural components pile up.
-    Mirrors the live config magnitudes (mmr.py + config.py) — read-only."""
+    Mirrors the live config magnitudes (mmr.py + config.py) — read-only, and
+    deliberately independent of the measured betas above: it is a pure config
+    arithmetic check, so it stays interpretable even when a component's CI is
+    UNDETERMINED.
+
+    STATUS: the "GATING RECOMMENDATION" printed at the end SHIPPED in v3.10b as
+    config.MMR_STRUCTURAL_FLOOR_CAP (3.1) — a conditional cap on the
+    unvalidated non-value positives that engages only when value/yield credit
+    is absent or suspect. The shipped gate covers future+cost but EXCLUDES
+    dev_size, which PART 6 found significant (std_beta +0.130) — capping a
+    validated signal is the anti-pattern the audit warns against (see
+    docs/RELEASES.md v3.10b). This function is kept as the derivation of that
+    constant: re-run it whenever a weight or the norm center moves, since the
+    cap is solved from them.
+
+    KNOWN DRIFT (reported, not actioned here — config.py is hashed into
+    score_version): 3.1 was solved at MMR_NORM_CENTER 1508 (raw-at-650 ~ 1526),
+    and the same v3.10b release then recalibrated the center to 1505 (raw-at-650
+    ~ 1523). Re-derived against the live config this print now solves to ~+0.1,
+    i.e. the shipped cap is ~3 raw points looser than its own stated derivation.
+    Deciding whether to re-solve it or to restate the derivation is a config
+    call, and re-solving would restamp score_version on the whole scored book.
+    """
     from config import MMR_NORM_CENTER, MMR_NORM_SCALE, SCORE1000_TIER1_MIN
 
     print("\n" + "-" * 78)
@@ -1531,7 +1570,7 @@ def _structural_floor(o_fut, o_cost, o_dev, joint):
     ]
     ceil_raw = MMR_BASE + sum(p for _, p in ceiling_parts)
     ceil_s = int(round(1000.0 / (1.0 + math.exp(-(ceil_raw - MMR_NORM_CENTER) / MMR_NORM_SCALE))))
-    print(f"\n  WORST-CASE ceiling (value+yield zeroed, every non-value channel maxed):")
+    print("\n  WORST-CASE ceiling (value+yield zeroed, every non-value channel maxed):")
     for nm, p in ceiling_parts:
         print(f"    + {nm:<40}{p:>+6.1f}")
     print(f"  = raw {ceil_raw:.1f}  ->  score_1000 = {ceil_s}  "
@@ -1545,16 +1584,16 @@ def _structural_floor(o_fut, o_cost, o_dev, joint):
     # raw at Buy threshold:
     raw_buy = MMR_NORM_CENTER - MMR_NORM_SCALE * math.log(1000.0 / SCORE1000_TIER1_MIN - 1.0)
     cap_needed = raw_buy - MMR_BASE - validated_pile
-    print(f"\n  GATING RECOMMENDATION (does NOT distort genuine listings):")
+    print("\n  GATING RECOMMENDATION (does NOT distort genuine listings):")
     print(f"    raw at Buy threshold ({SCORE1000_TIER1_MIN}) = {raw_buy:.1f}; "
           f"validated non-value pile (age+apprec+buyer_pool+mrt) = +{validated_pile:.1f}.")
-    print(f"    To keep a value-less/suspect listing < Buy on structure alone, cap")
+    print("    To keep a value-less/suspect listing < Buy on structure alone, cap")
     print(f"    the UNVALIDATED non-value positive sum (future+cost+dev_size, "
           f"currently up to +{unval_max:.1f}) at ~+{max(0.0, cap_needed):.1f} raw")
-    print(f"    WHEN psf_value+age_value+yield are all <= 0 or suspect.")
-    print(f"    The fix is NOT a global weight cut (a genuine large/new OCR dev")
-    print(f"    legitimately earns these); it is a CONDITIONAL cap that engages")
-    print(f"    only when no trustworthy value/yield credit is present.\n")
+    print("    WHEN psf_value+age_value+yield are all <= 0 or suspect.")
+    print("    The fix is NOT a global weight cut (a genuine large/new OCR dev")
+    print("    legitimately earns these); it is a CONDITIONAL cap that engages")
+    print("    only when no trustworthy value/yield credit is present.\n")
 
 
 # ============================================================================
@@ -1625,12 +1664,11 @@ def part7_region_term(txns, window, min_txn, split_sample):
     print(f"  data-rich rows: train {len(tr)}, test {len(te)} "
           f"({len(set((r['project'], r['district']) for r in te))} test projects)")
     if len(tr) < 80 or len(te) < 40:
-        print(f"  too few rows for a clean read\n")
+        print("  too few rows for a clean read\n")
         return None
 
-    from config import (MMR_APPRECIATION_SLOPE, MMR_MOMENTUM_WEIGHT,
-                        MMR_RELVALUE_SLOPE, MMR_TXN_VOLUME_WEIGHT,
-                        MMR_PRICE_BAND_CAP)
+    from config import (MMR_APPRECIATION_SLOPE, MMR_RELVALUE_SLOPE,
+                        MMR_TXN_VOLUME_WEIGHT, MMR_PRICE_BAND_CAP)
 
     def base_composite(r):
         """Current-config composite proxy (the data-rich path: value+apprec+
@@ -1685,7 +1723,7 @@ def part7_region_term(txns, window, min_txn, split_sample):
           f"{bt._fmt_ci(lo_a, hi_a)}")
     print(f"    (b) + explicit region term (slope={best_slope:g} pts per %/yr,"
           f" train-tuned) rho {rho_b:+.3f}  {bt._fmt_ci(lo_b, hi_b)}")
-    print(f"    test-rho sensitivity to slope (pts per %/yr region delta):")
+    print("    test-rho sensitivity to slope (pts per %/yr region delta):")
     print("      " + "  ".join(f"{s:g}:{test_by_slope[s]:+.3f}"
           for s in grid if test_by_slope[s] is not None))
     # IMPORTANT: on this single 2021-26 BULL test split, test-rho rises
@@ -1927,8 +1965,8 @@ def main():
               f"{fb}/{len(rows)} pooled rows ({fb/len(rows):.0%})\n")
     part2_univariate(rows)
     part3_multivariate(rows)
-    part4_composite(rows, args.split_sample)
-    part5_levers(rows, txns, splits[0])
+    part4_composite(rows)
+    part5_levers(rows, splits[0])
     part5_floor(asof)
     part5_age(rows, txns)
     part5f_devsize_mrt(rows)

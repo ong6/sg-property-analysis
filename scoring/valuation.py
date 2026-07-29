@@ -38,10 +38,12 @@ except ImportError:  # mirror config.py — only used if the import fails
     MMR_SUSPECT_VALUE_FACTOR = 0.25
     MIN_BAND_TXNS = 5
 
-# Tunables — module-local for now (config.py is owned by the live MMR session;
-# these move there once the 3-score system settles). Calibrated (Design B, see
-# below) so a TYPICALLY-priced ask scores ≈50, an ask ~15% below the typical
-# district level scores ≈85 (cheap), and one ~25% above scores ≈12 (dear).
+# Tunables — deliberately module-local: config.py is SHA-hashed into
+# score_version, and these feed the display-only valuation axis, not MMR, so
+# they must not restamp every scored listing's vintage when tuned.
+# Calibrated so that (at full confidence) a TYPICALLY-priced ask scores ≈50,
+# an ask ~15% below the typical district level scores ≈77 (cheap), ~25% below
+# scores ≈88, and one ~25% above scores ≈12 (dear).
 _VAL_SLOPE = 4.0                 # tanh slope on the centered value_pct
 # Live-DB structural centers (measured Jun-2026 medians over the scored DB).
 # Asks sit ABOVE transacted URA comps — seller markup + market drift since the

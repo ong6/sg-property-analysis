@@ -151,6 +151,21 @@ def in_region(district) -> bool:
     return n is not None and n in OCR_DISTRICTS
 
 
+def mandate_summary() -> str:
+    """'3BR<=$1.8M or 3-4BR<=$2.5M' — derived, never hand-written.
+
+    This string goes into every off-mandate rejection line in the digest. It was
+    hardcoded once and immediately went stale when his ceiling moved $1.5M ->
+    $1.8M, so every rejection told the reader the wrong budget. Deriving it from
+    MANDATES means the explanation cannot disagree with the rule again.
+    """
+    parts = []
+    for _, max_price, beds, _ in MANDATES:
+        bed_txt = "-".join(str(b) for b in sorted(beds))
+        parts.append(f"{bed_txt}BR<=${max_price / 1e6:.1f}M")
+    return " or ".join(parts)
+
+
 def mandate_for(price, beds, district=None) -> str | None:
     """Which buyer's mandate a listing fits ('his' / 'hers'), or None.
 
@@ -456,7 +471,7 @@ def select_candidates(
             # Off-mandate: nobody can buy it, so its score is irrelevant.
             cand["gate_reason"] = (
                 f"outside the mandate ({row.get('beds')}BR @ "
-                f"{_money(row.get('price'))} — need 3BR<=$1.5M or 3-4BR<=$2.5M)")
+                f"{_money(row.get('price'))} — need {mandate_summary()})")
         elif looks_like_marketing_title(name, known_projects):
             # Not a judgement on the unit — we simply don't know which
             # development it is, so there is nothing to research.

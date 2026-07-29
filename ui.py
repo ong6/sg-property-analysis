@@ -10,10 +10,14 @@ interval so the fresh view stays current without manual runs.
 Zero third-party dependencies (stdlib http.server + the project's own modules).
 
 Usage:
-    python ui.py                          # serve http://127.0.0.1:8642, auto-poll every 6h
-    python ui.py --no-poll                # serve only, never scrape
-    python ui.py --poll-interval-mins 120 # poll more often
-    python ui.py --poll-districts 3,15 --poll-beds 2
+    python ui.py                          # serve http://127.0.0.1:8642 — VIEWER ONLY
+    python ui.py --poll                   # opt IN to background scraping
+    python ui.py --poll --poll-interval-mins 120
+    python ui.py --poll --poll-districts 3,15 --poll-beds 2
+
+Scraping is OFF unless you pass --poll: PropertyGuru sits behind Cloudflare and
+a background poll from a long-running server just accumulates failures. Refresh
+the data with `python poller.py` (headed) or `python weekly.py` instead.
     python ui.py --port 9000 --no-browser
 
 JSON APIs (for scripting): /api/fresh · /api/rankings · /api/poll-status

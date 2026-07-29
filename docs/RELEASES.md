@@ -1,4 +1,4 @@
-# MMR Release History (v3.0 – v3.9)
+# MMR Release History (v3.0 – v3.12)
 
 Condensed change log + measured evidence for the scoring algorithm. The
 backtest harnesses (`backtest.py`, `backtest_ext.py`) are the source of truth,
@@ -318,7 +318,7 @@ prioritized fix queue** — it supersedes and extends the items below.
 - **Shipped-score forward calibration:** `calibrate_forward.py` wired but meaningful only from ~mid-2027 (re-run quarterly).
 - **`yield` component:** carry estimate from one bull regime; strata-vs-livable-area channel (PES/loft sqft inflation) has no data field — parked behind the v3.6.2 cap.
 - **`dev_size`:** marginal +0.045 (direction right, weak). **`future` infra:** measured ≈0/negative — kept upside-only; do not widen.
-- **Floor data coverage:** `floor_level` null on bulk-scraped listings (detail-page enrichment only); per-listing coords likewise (project centroid is the floor).
+- **Floor data coverage (updated 2026-07-29):** the 0% coverage cited in v3.12 was a *bug*, not a limit — `_extract_detail_page()` read a JSON path PropertyGuru had moved and returned `{}` on every page while reporting success. Now fixed (four-layer extraction), so `floor_level`, lat/lng, `total_units`, `developer` and `furnishing` populate on enriched listings. Honest ceilings: **`facing` stays 0%** (PG does not serve a direction at all — null on 26/26 sampled), and **`floor_level` caps around 35–40%** because it is optional for the posting agent. Enrichment is still per-listing detail-page work, so the bulk book stays sparse until it is run. This does **not** re-arm the v3.12 low-floor demotion (that fires on `stack_low_floor_share` from URA prints, which was never affected) — what it re-arms is floor-basis comp adjustment, floor-tier benchmark scaling and stack matching.
 - **Freehold ×0.6 age-slope heuristic:** unmeasured (age not derivable for freehold txns).
 - **15–20yr age-decay leg:** possibly a 2006–11 vintage-cohort effect (kept — for *level*, vintage IS pricing).
 - **Stale/bait asks just inside the −25% knee:** not actioned (would damp genuine 20–25% discounts) — rubric verify-first rule covers it.

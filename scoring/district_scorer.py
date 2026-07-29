@@ -164,7 +164,7 @@ class DistrictScorer:
         result.liquidity_score = self._score_liquidity(profile)
 
         # C. Future Infrastructure Score (0-100)
-        result.future_infra_score = self._score_future_infra(profile, future_mrt)
+        result.future_infra_score = self._score_future_infra(future_mrt)
 
         # D. Government Priority Score (0-100)
         result.govt_priority_score = self._score_govt_priority(profile)
@@ -228,7 +228,7 @@ class DistrictScorer:
 
         return scores.get(volume, 50)
 
-    def _score_future_infra(self, profile: dict, future_mrt: list[str]) -> float:
+    def _score_future_infra(self, future_mrt: list[str]) -> float:
         """Score future infrastructure (0-100).
 
         Based on number of upcoming MRT lines.

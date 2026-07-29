@@ -30,6 +30,11 @@ into MMR) alongside the rubric's own-stay lens.
    ```bash
    python invest.py --recall "<condo name>"
    ```
+   For genuine contenders, add realsmart.sg per-project context via the
+   `/realsmart-data` skill (or `python realsmart_cache.py --show "<condo>"`) —
+   REALSCORE and % of resales sold at a profit, always reported with the
+   transaction count. Their ToS is personal-use: look up contenders, not the
+   whole scan.
 
 **Forward-signal priors**: see `docs/evaluation-rubric.md` ("What the data
 actually predicts") — value + region lead; trailing CAGR/momentum ≈ 0 forward

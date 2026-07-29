@@ -65,7 +65,7 @@ try:
 except ImportError:
     # Fallbacks mirror config.py (kept in sync; only used if config import fails).
     MMR_BASE = 1500
-    MMR_NORM_CENTER = 1516
+    MMR_NORM_CENTER = 1505
     MMR_NORM_SCALE = 29
     MIN_BAND_TXNS = 5
     COHORT_FLOOR_APPRECIATION = 0.55
@@ -209,7 +209,7 @@ def compute_mmr(scored: Any) -> dict:
     apr_pct = (scored.appreciation_rate or 0.0) * 100
     source = scored.appreciation_source or "default"
     txn = sb_cap.get("appreciation_rate", {}).get("transaction_count") or 0
-    momentum_val = sb_cap.get("momentum", {}).get("value")
+    momentum = sb_cap.get("momentum", {}).get("value")
     if source in ("default", "regional_baseline"):
         conf = 0.35  # baseline guess, low weight (continuous analog of the legacy cap)
     elif source == "agent_override":
@@ -226,7 +226,7 @@ def compute_mmr(scored: Any) -> dict:
         # unstable or of UNKNOWN stability (audit #6: a missing momentum must
         # not buy back the confidence the haircut exists to remove), trust it
         # less; a thin series with a measured-stable momentum keeps full weight.
-        if txn < 30 and (momentum_val is None or abs(momentum_val) >= 0.8):
+        if txn < 30 and (momentum is None or abs(momentum) >= 0.8):
             conf *= 0.7
     # v3.2: the project CAGR is measured mostly on other unit sizes. For a unit
     # whose own size-cohort barely trades, that rate is weak evidence — damp it.

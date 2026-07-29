@@ -34,14 +34,6 @@ class QuickScorer:
     TIER_1_MIN = SCORE_TIER1_MIN  # From config (default 60)
     TIER_2_MIN = SCORE_TIER2_MIN  # From config (default 45)
 
-    # High-potential districts (dynamic - based on district scorer results)
-    # These are districts with score >= 70 from DistrictScorer
-    HIGH_POTENTIAL_DISTRICTS = {
-        "D03", "D05", "D14", "D15",  # RCR Prime
-        "D19", "D22",  # High-potential OCR (Punggol, Jurong)
-        "03", "05", "14", "15", "19", "22", "3", "5"  # Numeric variants
-    }
-
     def __init__(self):
         self._current_year = datetime.now().year
 
@@ -358,14 +350,15 @@ class QuickScorer:
 
 def filter_listings(
     listings: list[dict],
-    min_tier: int = 2,
 ) -> dict[str, list[tuple[dict, QuickScore]]]:
     """
-    Filter and categorize listings by tier.
+    Categorize listings into tier1 / tier2 / rejected by quick score.
+
+    Every listing is bucketed (nothing is dropped) and each bucket is sorted
+    by score descending.
 
     Args:
         listings: List of listing dictionaries
-        min_tier: Minimum tier to include (1, 2, or 3)
 
     Returns:
         Dict with "tier1", "tier2", "rejected" lists of (listing, score) tuples
