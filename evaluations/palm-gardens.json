@@ -136,6 +136,88 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-gardens-500174938",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft unit at Palm Gardens (Keppel Land, 694 units, 99LH from Aug-1996, D23 Choa Chu Kang) asking $1,260,000 / $1,036 psf. It is advertised as a 4BR but it is not one: Palm Gardens' true 4BRs are 1,346/1,432/2,336 sqft and print $1.41M-$1.65M, while 1,206/1,216 sqft is the project's dominant 3BR product (95 of 138 URA prints). Priced correctly as a 3BR, the ask is at market, not below it, and the 5-7yr resale-profit case does not clear entry costs.",
+      "rating_rationale": "Three verified, independent problems. (1) THE BED COUNT IS WRONG. URA rental filings put Palm Gardens 4BRs at 1,350-2,350 sqft (median 1,450, n=28) and 3BRs at ~1,250 sqft (n=160); 1,216 sqft sits below the 4BR floor and inside the 3BR band. Six other 1,216 sqft Palm Gardens listings in the DB are all labelled 3BR - only this one says 4BR. 99.co/PropertyGuru project data independently states Palm Gardens 3BRs run 1,206-1,744 sqft. bed_bands returns 'ok' only because the 12% tolerance covers the gap; the evidence is unambiguous. A buyer shortlisting 'a 4BR at $1.26M' is being shown a 3BR - real 4BRs there cost $1.41M-$1.65M. (2) THERE IS NO DISCOUNT. Against the project's own 24-month prints for the 1,190-1,230 sqft band - 32 resales, median $1,277,500 / $1,055 psf - this ask is only ~1.5% below, and ~2.5% below the 2026 median ($1,292,000). The algo's -18.7% 'age-adjusted district discount' is a comparison to a wider 1,050-1,400 sqft cross-project band, not to this unit's own comps; Palm Gardens' ~9% level discount to D23 peers has been stable since 2023 (-8.4% then, -9.4% now) - a permanent location level, not a closing gap. (3) THE SEGMENT HAS STALLED. Palm Gardens' 1,206/1,216 band: $1,028 psf (2023) -> $1,062 (2026), ~+1.1%/yr; D23 same-size 99LH peers excluding Palm Gardens: $1,122 -> $1,172, ~+1.5%/yr - and 2026 medians are BELOW 2025 on both. The headline 6.37% CAGR is entirely 2021-23 post-COVID catch-up (momentum flagged -1.0). At a defensible 2.0%/yr the all-cash ROI is 2.6%/yr over 5 years, below risk-free, and at the peer group's realized 1.5%/yr the ~$38.5k BSD is barely recovered. Add ~18 near-identical 1,205-1,216 sqft 3BRs listed in this one project right now against ~16 band resales a year - over a year of standing inventory, and the same wall at exit. The 823/1000 is the highest of all 22 Palm Gardens listings for one reason: it carries the lowest ask in the band ($1.26M vs $1.288M next cheapest), a ~2% gap the model reads as value. Finally, this listing was seen exactly once, on 2026-06-08, and has not reappeared in 51 days while 15 sibling Palm Gardens listings polled on 2026-07-28 - it is very likely sold or withdrawn. To be clear, this is a listing-level Avoid, not a claim the project is uninvestable: realsmart's 81.3% profitable on 862 resales is real downside evidence, and if this unit were live and honestly described as a 3BR at $1.26M it would be a Neutral - marginally the best-priced of eighteen.",
+      "red_flags": [
+        "MISLABELLED BEDROOM COUNT - advertised 4BR at 1,216 sqft, but URA rental bands (4BR 1,350-2,350 sqft median 1,450, n=28 vs 3BR ~1,250 sqft, n=160), six sibling 1,216 sqft listings all labelled 3BR, and 99.co project data (3BR = 1,206-1,744 sqft) all say this is a 3BR; true Palm Gardens 4BRs (1,346/1,432 sqft) print $1.41M-$1.65M",
+        "NO DISCOUNT vs its own comps - $1,036 psf against a 24mo band median of $1,055 psf / $1,277,500 (n=32) is ~1.5% below, and ~2.5% below the 2026 median $1,292,000; the algo's -18.7% is a cross-project size-band artifact",
+        "LISTING LIKELY DEAD - first_seen = last_seen = 2026-06-08, times_seen = 1, no reappearance in 51 days while 15 sibling Palm Gardens listings polled 2026-07-28",
+        "SEGMENT FLAT AND ROLLING OVER - Palm Gardens 1206/1216 band +1.1%/yr since 2023, D23 same-size 99LH peers (ex-Palm Gardens) +1.5%/yr, and BOTH 2026 medians are below 2025 ($1,182->$1,159 incl PG; $1,226->$1,172 excl)",
+        "STALE TRAILING CAGR - the 6.37% ura_5yr_cagr is all 2021-23 catch-up ($780 psf -> $1,028); the last three years are ~+1.1%/yr and momentum is flagged -1.0",
+        "SUPPLY WALL - ~18 near-identical 1,205-1,216 sqft 3BRs listed concurrently in this one 694-unit project asking $1.288M-$1.400M, against ~16 same-band resales/yr; that is >1 year of inventory and the identical wall he must sell into in 5-7 years",
+        "PERSISTENT, NON-CONVERGING DISCOUNT - Palm Gardens trades ~9% under D23 same-size 99LH peers and has since 2023 (-8.4% -> -9.4%); this is a structural location level that inflates age_value, not a dislocation that closes",
+        "LEASE FROM 12-AUG-1996 - 70 years left today, ~63 at a 5-7yr exit; decay accelerates as the 60-year CPF/financing thresholds approach",
+        "THIN CARRY - $3,900/mo on 5 URA contracts = 3.71% gross, 2.08% net; does not compensate for flat capital, and at 2.0%/yr appreciation the 5yr all-cash ROI is 2.6%/yr, below risk-free",
+        "NO FLOOR, FACING OR STACK DATA - floor_level and facing are unpopulated for this record and there is no researched profile, so the unit cannot be placed; URA floor bands spread ~$1,238k (low) to ~$1,322k (high) within this size, a ~7% range the ask cannot be checked against",
+        "very_old_property (26 years) and very_low_psf flags both fire; the low PSF is the region/project level effect, not condition-driven value"
+      ],
+      "catalysts": [
+        "Genuinely deep exit liquidity - 1,558 lifetime transactions, 862 resales, 694 units, ~16 same-band resales/yr and a 71%-HDB-buyer pool (realsmart); pricing is slow but a seller is never stuck",
+        "Strong downside record - realsmart REALSCORE 3.9/5 with 81.3% of 862 resales sold at a profit (698 profitable / 164 not), avg holding 9.1 yrs, avg annualized 4.7%; deep enough to be real evidence that owners here rarely lose money - backward-looking, not a forward forecast",
+        "Choa Chu Kang becomes an NSL x Jurong Region Line interchange 826m away - JRL Stage 1 now mid-2028, a dated catalyst inside a 5-7yr hold (though the backtest gives future-infrastructure no measured forward power)",
+        "OCR is the backtested-favoured forward region (+3.7%/yr realized vs RCR +3.1, CCR +1.9)",
+        "Keat Hong LRT (BP3) at 220-240m; Keppel Land build with private lift lobbies, full facilities (pool, tennis, clubhouse, bowling), well-maintained for a 2000-vintage OCR condo",
+        "$1.26M quantum sits ~$540k inside the $1.8M mandate, keeping the exit buyer pool very deep and leaving headroom for a better alternative"
+      ],
+      "as_of": {
+        "price": 1260000,
+        "psf": 1036.18,
+        "beds": 4,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.37,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.71,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft unit at Palm Gardens (Keppel Land, 694 units, 99LH from Aug-1996, D23 Choa Chu Kang) asking $1,260,000 / $1,036 psf. It is advertised as a 4BR but it is not one: Palm Gardens' true 4BRs are 1,346/1,432/2,336 sqft and print $1.41M-$1.65M, while 1,206/1,216 sqft is the project's dominant 3BR product (95 of 138 URA prints). Priced correctly as a 3BR, the ask is at market, not below it, and the 5-7yr resale-profit case does not clear entry costs.",
+        "rating": "Avoid",
+        "rating_rationale": "Three verified, independent problems. (1) THE BED COUNT IS WRONG. URA rental filings put Palm Gardens 4BRs at 1,350-2,350 sqft (median 1,450, n=28) and 3BRs at ~1,250 sqft (n=160); 1,216 sqft sits below the 4BR floor and inside the 3BR band. Six other 1,216 sqft Palm Gardens listings in the DB are all labelled 3BR - only this one says 4BR. 99.co/PropertyGuru project data independently states Palm Gardens 3BRs run 1,206-1,744 sqft. bed_bands returns 'ok' only because the 12% tolerance covers the gap; the evidence is unambiguous. A buyer shortlisting 'a 4BR at $1.26M' is being shown a 3BR - real 4BRs there cost $1.41M-$1.65M. (2) THERE IS NO DISCOUNT. Against the project's own 24-month prints for the 1,190-1,230 sqft band - 32 resales, median $1,277,500 / $1,055 psf - this ask is only ~1.5% below, and ~2.5% below the 2026 median ($1,292,000). The algo's -18.7% 'age-adjusted district discount' is a comparison to a wider 1,050-1,400 sqft cross-project band, not to this unit's own comps; Palm Gardens' ~9% level discount to D23 peers has been stable since 2023 (-8.4% then, -9.4% now) - a permanent location level, not a closing gap. (3) THE SEGMENT HAS STALLED. Palm Gardens' 1,206/1,216 band: $1,028 psf (2023) -> $1,062 (2026), ~+1.1%/yr; D23 same-size 99LH peers excluding Palm Gardens: $1,122 -> $1,172, ~+1.5%/yr - and 2026 medians are BELOW 2025 on both. The headline 6.37% CAGR is entirely 2021-23 post-COVID catch-up (momentum flagged -1.0). At a defensible 2.0%/yr the all-cash ROI is 2.6%/yr over 5 years, below risk-free, and at the peer group's realized 1.5%/yr the ~$38.5k BSD is barely recovered. Add ~18 near-identical 1,205-1,216 sqft 3BRs listed in this one project right now against ~16 band resales a year - over a year of standing inventory, and the same wall at exit. The 823/1000 is the highest of all 22 Palm Gardens listings for one reason: it carries the lowest ask in the band ($1.26M vs $1.288M next cheapest), a ~2% gap the model reads as value. Finally, this listing was seen exactly once, on 2026-06-08, and has not reappeared in 51 days while 15 sibling Palm Gardens listings polled on 2026-07-28 - it is very likely sold or withdrawn. To be clear, this is a listing-level Avoid, not a claim the project is uninvestable: realsmart's 81.3% profitable on 862 resales is real downside evidence, and if this unit were live and honestly described as a 3BR at $1.26M it would be a Neutral - marginally the best-priced of eighteen.",
+        "red_flags": [
+          "MISLABELLED BEDROOM COUNT - advertised 4BR at 1,216 sqft, but URA rental bands (4BR 1,350-2,350 sqft median 1,450, n=28 vs 3BR ~1,250 sqft, n=160), six sibling 1,216 sqft listings all labelled 3BR, and 99.co project data (3BR = 1,206-1,744 sqft) all say this is a 3BR; true Palm Gardens 4BRs (1,346/1,432 sqft) print $1.41M-$1.65M",
+          "NO DISCOUNT vs its own comps - $1,036 psf against a 24mo band median of $1,055 psf / $1,277,500 (n=32) is ~1.5% below, and ~2.5% below the 2026 median $1,292,000; the algo's -18.7% is a cross-project size-band artifact",
+          "LISTING LIKELY DEAD - first_seen = last_seen = 2026-06-08, times_seen = 1, no reappearance in 51 days while 15 sibling Palm Gardens listings polled 2026-07-28",
+          "SEGMENT FLAT AND ROLLING OVER - Palm Gardens 1206/1216 band +1.1%/yr since 2023, D23 same-size 99LH peers (ex-Palm Gardens) +1.5%/yr, and BOTH 2026 medians are below 2025 ($1,182->$1,159 incl PG; $1,226->$1,172 excl)",
+          "STALE TRAILING CAGR - the 6.37% ura_5yr_cagr is all 2021-23 catch-up ($780 psf -> $1,028); the last three years are ~+1.1%/yr and momentum is flagged -1.0",
+          "SUPPLY WALL - ~18 near-identical 1,205-1,216 sqft 3BRs listed concurrently in this one 694-unit project asking $1.288M-$1.400M, against ~16 same-band resales/yr; that is >1 year of inventory and the identical wall he must sell into in 5-7 years",
+          "PERSISTENT, NON-CONVERGING DISCOUNT - Palm Gardens trades ~9% under D23 same-size 99LH peers and has since 2023 (-8.4% -> -9.4%); this is a structural location level that inflates age_value, not a dislocation that closes",
+          "LEASE FROM 12-AUG-1996 - 70 years left today, ~63 at a 5-7yr exit; decay accelerates as the 60-year CPF/financing thresholds approach",
+          "THIN CARRY - $3,900/mo on 5 URA contracts = 3.71% gross, 2.08% net; does not compensate for flat capital, and at 2.0%/yr appreciation the 5yr all-cash ROI is 2.6%/yr, below risk-free",
+          "NO FLOOR, FACING OR STACK DATA - floor_level and facing are unpopulated for this record and there is no researched profile, so the unit cannot be placed; URA floor bands spread ~$1,238k (low) to ~$1,322k (high) within this size, a ~7% range the ask cannot be checked against",
+          "very_old_property (26 years) and very_low_psf flags both fire; the low PSF is the region/project level effect, not condition-driven value"
+        ],
+        "catalysts": [
+          "Genuinely deep exit liquidity - 1,558 lifetime transactions, 862 resales, 694 units, ~16 same-band resales/yr and a 71%-HDB-buyer pool (realsmart); pricing is slow but a seller is never stuck",
+          "Strong downside record - realsmart REALSCORE 3.9/5 with 81.3% of 862 resales sold at a profit (698 profitable / 164 not), avg holding 9.1 yrs, avg annualized 4.7%; deep enough to be real evidence that owners here rarely lose money - backward-looking, not a forward forecast",
+          "Choa Chu Kang becomes an NSL x Jurong Region Line interchange 826m away - JRL Stage 1 now mid-2028, a dated catalyst inside a 5-7yr hold (though the backtest gives future-infrastructure no measured forward power)",
+          "OCR is the backtested-favoured forward region (+3.7%/yr realized vs RCR +3.1, CCR +1.9)",
+          "Keat Hong LRT (BP3) at 220-240m; Keppel Land build with private lift lobbies, full facilities (pool, tennis, clubhouse, bowling), well-maintained for a 2000-vintage OCR condo",
+          "$1.26M quantum sits ~$540k inside the $1.8M mandate, keeping the exit buyer pool very deep and leaving headroom for a better alternative"
+        ],
+        "rental_assessment": "Modest and well-evidenced but thin. $3,900/mo comes from 5 URA project-bedroom contracts over 12 months (confidence 0.71) - a real number, not a model guess. That is 3.71% gross / 2.08% net on the ask. Tenant demand in Choa Chu Kang is steady but price-capped: the catchment is HDB-upgrader and west-industrial rather than expat, and Tengah's new-town build-out adds competing stock. Carry covers holding costs with little left over; it cannot rescue a flat capital thesis.",
+        "appreciation_assessment": "The 6.37% ura_5yr_cagr is not a forward number - it is entirely the 2021-23 post-COVID OCR repricing ($780 -> $1,028 psf in two years), after which the band has done ~+1.1%/yr. Critically, this is NOT a Palm-Gardens-specific failure: D23 same-size 99LH peers excluding Palm Gardens managed only ~+1.5%/yr over the same three years, and both series printed 2026 medians below 2025. The whole D23 large-format 99LH resale segment has stalled and is rolling over. Palm Gardens' ~9% discount to those peers is stable and structural, so there is no convergence trade either. Against the OCR baseline of +3.7%/yr I mark this down heavily for the stalled segment, the 70-year lease and the standing inventory, and use 2.0%/yr - at which the all-cash 5yr ROI is 2.6%/yr. Confidence is medium, not high: the model explains <10% of forward variance and 2026 is a partial year (n=47 in the peer set), so the rollover could be mix or noise.",
+        "stack_notes": "Unknown and unverifiable from this record. No researched profile exists for Palm Gardens (stack_profile.status = not_researched), and floor_level and facing are both unpopulated. This matters more than usual here: within the 1,190-1,230 sqft band the project's own 24-month prints run $1,238k (floors 06-10) to $1,322k (floors 16-20) - a ~7% spread - so without the floor the ask cannot be placed against its true comp. A low-floor unit at $1.26M would be roughly at band median rather than below it, erasing even the ~1.5% edge. Blocks are 2A-2E Hong San Walk, 19 storeys.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "Resale-to-resale URA prints: Palm Gardens 1,206/1,216 sqft band $1,028 psf (2023) -> $1,062 (2026), ~+1.1%/yr; D23 same-size 99LH peers excluding Palm Gardens $1,122 -> $1,172, ~+1.5%/yr, with both 2026 medians below 2025. Marked modestly above realized for the OCR regional baseline (+3.7%) and the mid-2028 JRL interchange, and well below the stale 6.37% trailing CAGR which is all 2021-23 catch-up.",
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 81.3,
+        "realsmart_annual_return_pct": 4.7
+      },
+      "source": {
+        "run_dir": "output/run_069_500128846",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-gardens-500128846",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
