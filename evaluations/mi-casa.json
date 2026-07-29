@@ -114,6 +114,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-500074469",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Mi Casa (2012, 457 units, 99yr from 2008) 1,259 sqft 3BR asking $1.60M / $1,271 psf, ~400m from Choa Chu Kang NS4 MRT/bus interchange. A genuinely liquid, well-proven OCR family condo — 744 transactions, 313 resales, 95.5% sold at a profit — and the cheapest of six live 3BR asks. But the algo's 780 rests on a '-16.3% vs age-adjusted D23 median' reading that is a district artifact: D23 is two price worlds, and on the Choa Chu Kang side Mi Casa is the MOST expensive project (2025-26 resale median $1,326 psf vs The Warren $1,186, Northvale $1,102, Regent Grove $1,003). Against its own size band's trailing prints the discount is only ~3-4%, into a tape that has flattened (URA 2025 median $1,333 psf -> 2026 YTD $1,288; PropertyGuru 6-mo avg $1,253 vs 12-mo $1,267). Fair entry, no edge.",
+      "rating_rationale": "Priced at fair value, not cheap, once the comp set is its own sub-market. The 1,150-1,400 sqft resale prints at Mi Casa over the last 12 months run $1,246-$1,346 psf (median ~$1,333); $1,271 psf is ~3-4% under that mid-point, and the 2026 prints plus the softening 6-month average say the market is drifting down to meet the ask rather than the ask undercutting the market. That thin gap is fully explainable by an unverified floor — the two cheapest 2026 prints ($1,246 and $1,288 psf) were both floors 1-5, and PropertyGuru serves no floor_level or facing for this listing. Carry is weak (3.15% gross / 1.87% net on a $4,200 URA-contract rent, 20 contracts), so a 5-7yr return is almost entirely appreciation-dependent — and the appreciation case is the weakest part: the project already re-rated +31% from a 2022 median of $1,021 psf to $1,333 in 2025, momentum is negative, and the JRL catalyst that carried that re-rating slipped to mid-2028 (announced Mar 2026) and has no measured forward power in our own backtest. What holds the rating up rather than down: nothing here is broken. 83 years of lease, deep buyer pool (457 units, 71% historically HDB upgraders, $1.6M sits in the deepest quantum band), and a 313-resale book at 95.5% profitable is real downside evidence. A Buy needs either a confirmed mid/high floor at this price or a negotiated ~$1.50-1.55M; at $1.60M sight-unseen it is a Neutral.",
+      "red_flags": [
+        "score_1000 780 is artifact-inflated: the largest MMR component is age_value 12.17, driven by -16.3% vs the age-adjusted D23 median ($1,518) — but D23 is bifurcated. Hillview/Dairy Farm stock trades $1,531-$1,986 psf; the Choa Chu Kang cohort trades $1,003-$1,326. Mi Casa is the TOP of its own sub-market, not a discount to it.",
+        "Gross yield 3.15% / net 1.87% — thin carry for OCR; the whole 5-7yr case rides on price appreciation.",
+        "Already re-rated: project median psf +31% 2022 ($1,021) -> 2025 ($1,333). 2026 YTD prints median $1,288 (n=3) and PropertyGuru's 6-month average ($1,253) sits below its 12-month average ($1,267) — a flattening-to-softening tape.",
+        "Floor and facing unknown — PropertyGuru serves neither for this listing, and no profiles/ entry exists for Mi Casa. The 2026 prints below $1,300 psf were all floors 1-5, so the modest discount may simply be a low-floor unit at fair value.",
+        "The 'price dropped' badge is partly a unit_group chaining artifact: history spans three listing ids (relisted_from 500180521) and the $1,332.79 psf entry implies 1,238 sqft — a different unit. The $1.688M -> $1.60M path for this 1,259 sqft unit is plausible but not verifiable to one agent/id.",
+        "Six live 3BR asks in the same size band ($1,271-$1,350 psf), several with cuts — the same crowd will be competing at exit.",
+        "JRL first stage delayed to mid-2028 (from end-2027), announced 5 Mar 2026 — the catalyst is later than the 2027 story that priced the last leg."
+      ],
+      "catalysts": [
+        "~380-400m to Choa Chu Kang NS4 MRT + bus interchange, which becomes a JRL interchange — genuine transit quality, though largely already in the price.",
+        "OCR — the strongest measured forward region in our panel (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+        "$1.60M sits in the deepest HDB-upgrader quantum band; realsmart records 71% HDB buyers and 82% sold at launch — the natural buyer pool for the exit is the one that already bought here.",
+        "Newest and closest-to-MRT project on the Choa Chu Kang side (2012 vs Regent Grove/Northvale/Palm Gardens 1990s-2000s) — a durable relative-quality position within its sub-market.",
+        "83 years of lease remaining — no decay drag inside a 5-7yr hold."
+      ],
+      "as_of": {
+        "price": 1599999,
+        "psf": 1270.85,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.22,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.15,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 83
+      },
+      "agent_evaluation": {
+        "summary": "Mi Casa (2012, 457 units, 99yr from 2008) 1,259 sqft 3BR asking $1.60M / $1,271 psf, ~400m from Choa Chu Kang NS4 MRT/bus interchange. A genuinely liquid, well-proven OCR family condo — 744 transactions, 313 resales, 95.5% sold at a profit — and the cheapest of six live 3BR asks. But the algo's 780 rests on a '-16.3% vs age-adjusted D23 median' reading that is a district artifact: D23 is two price worlds, and on the Choa Chu Kang side Mi Casa is the MOST expensive project (2025-26 resale median $1,326 psf vs The Warren $1,186, Northvale $1,102, Regent Grove $1,003). Against its own size band's trailing prints the discount is only ~3-4%, into a tape that has flattened (URA 2025 median $1,333 psf -> 2026 YTD $1,288; PropertyGuru 6-mo avg $1,253 vs 12-mo $1,267). Fair entry, no edge.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced at fair value, not cheap, once the comp set is its own sub-market. The 1,150-1,400 sqft resale prints at Mi Casa over the last 12 months run $1,246-$1,346 psf (median ~$1,333); $1,271 psf is ~3-4% under that mid-point, and the 2026 prints plus the softening 6-month average say the market is drifting down to meet the ask rather than the ask undercutting the market. That thin gap is fully explainable by an unverified floor — the two cheapest 2026 prints ($1,246 and $1,288 psf) were both floors 1-5, and PropertyGuru serves no floor_level or facing for this listing. Carry is weak (3.15% gross / 1.87% net on a $4,200 URA-contract rent, 20 contracts), so a 5-7yr return is almost entirely appreciation-dependent — and the appreciation case is the weakest part: the project already re-rated +31% from a 2022 median of $1,021 psf to $1,333 in 2025, momentum is negative, and the JRL catalyst that carried that re-rating slipped to mid-2028 (announced Mar 2026) and has no measured forward power in our own backtest. What holds the rating up rather than down: nothing here is broken. 83 years of lease, deep buyer pool (457 units, 71% historically HDB upgraders, $1.6M sits in the deepest quantum band), and a 313-resale book at 95.5% profitable is real downside evidence. A Buy needs either a confirmed mid/high floor at this price or a negotiated ~$1.50-1.55M; at $1.60M sight-unseen it is a Neutral.",
+        "red_flags": [
+          "score_1000 780 is artifact-inflated: the largest MMR component is age_value 12.17, driven by -16.3% vs the age-adjusted D23 median ($1,518) — but D23 is bifurcated. Hillview/Dairy Farm stock trades $1,531-$1,986 psf; the Choa Chu Kang cohort trades $1,003-$1,326. Mi Casa is the TOP of its own sub-market, not a discount to it.",
+          "Gross yield 3.15% / net 1.87% — thin carry for OCR; the whole 5-7yr case rides on price appreciation.",
+          "Already re-rated: project median psf +31% 2022 ($1,021) -> 2025 ($1,333). 2026 YTD prints median $1,288 (n=3) and PropertyGuru's 6-month average ($1,253) sits below its 12-month average ($1,267) — a flattening-to-softening tape.",
+          "Floor and facing unknown — PropertyGuru serves neither for this listing, and no profiles/ entry exists for Mi Casa. The 2026 prints below $1,300 psf were all floors 1-5, so the modest discount may simply be a low-floor unit at fair value.",
+          "The 'price dropped' badge is partly a unit_group chaining artifact: history spans three listing ids (relisted_from 500180521) and the $1,332.79 psf entry implies 1,238 sqft — a different unit. The $1.688M -> $1.60M path for this 1,259 sqft unit is plausible but not verifiable to one agent/id.",
+          "Six live 3BR asks in the same size band ($1,271-$1,350 psf), several with cuts — the same crowd will be competing at exit.",
+          "JRL first stage delayed to mid-2028 (from end-2027), announced 5 Mar 2026 — the catalyst is later than the 2027 story that priced the last leg."
+        ],
+        "catalysts": [
+          "~380-400m to Choa Chu Kang NS4 MRT + bus interchange, which becomes a JRL interchange — genuine transit quality, though largely already in the price.",
+          "OCR — the strongest measured forward region in our panel (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+          "$1.60M sits in the deepest HDB-upgrader quantum band; realsmart records 71% HDB buyers and 82% sold at launch — the natural buyer pool for the exit is the one that already bought here.",
+          "Newest and closest-to-MRT project on the Choa Chu Kang side (2012 vs Regent Grove/Northvale/Palm Gardens 1990s-2000s) — a durable relative-quality position within its sub-market.",
+          "83 years of lease remaining — no decay drag inside a 5-7yr hold."
+        ],
+        "rental_assessment": "$4,200/mo from 20 URA project-and-bedroom contracts over 12 months (confidence 0.95) — a trustworthy figure, not an estimate. That is 3.15% gross / 1.87% net on $1.60M. Adequate to hold, but below the OCR norm and it contributes little to total return; treat it as carry only. Per our own priors, a low gross yield is not itself a growth signal either — it just means this unit must earn its return from price.",
+        "appreciation_assessment": "The 5.22% trailing URA CAGR (66 txns) is real history but a poor forward number: it is dominated by the 2022-2025 CCK re-rating (project median $1,021 -> $1,333 psf) that the JRL announcement and the HDB-upgrader wave drove, and that leg has now run — 2026 prints are flat-to-lower and momentum reads -1.0. Backtest priors say trailing CAGR and future-infrastructure scores carry ~no forward power, so I do not extend it. I set a forward rate of 3.5%/yr: the OCR baseline (~3.7-4.2%) marked down modestly because this project sits at the top of its own sub-market's price band and has less room to re-rate than the CCK peers below it. realsmart's 4.2% average annual return over an average 5.7-year hold (313 resales) is a reasonable long-run cross-check and sits close to that.",
+        "stack_notes": "No profiles/ entry for Mi Casa — stack_profile is not_researched, so no stack, facing or view read is available. Listing carries no floor_level or facing either. bed_bands confirms the 3BR label is genuine: 1,259 sqft sits inside Mi Casa's own URA rental band for 3 bedrooms (1,250-1,350 sqft, 83 contracts) — verdict ok, no relabel. Materially, the open question is floor: same-size prints span $1,105 psf (floors 11-15, Jun-24) to $1,346, and the recent sub-$1,300 psf prints cluster on floors 1-5. Confirm floor and whether the unit faces the Ave 3 / Bukit Panjang Expressway side before treating the ~3-4% gap as value. If it is a low floor facing the road, this is fair value, not a discount.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR regional forward baseline (~3.7-4.2%/yr, v3.5 panel) marked down for Mi Casa sitting at the ceiling of its own Choa Chu Kang sub-market after a +31% 2022-25 re-rating. Trailing 5.22% URA CAGR deliberately NOT used (no measured forward power; captures the completed re-rating). Cross-checked against realsmart's 4.2% average annualized return over 313 resales / 5.7yr average hold.",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 95.5,
+        "realsmart_annual_return_pct": 4.2
+      },
+      "source": {
+        "run_dir": "output/run_076_60091531",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-60091531",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
