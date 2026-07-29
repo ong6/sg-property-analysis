@@ -29,6 +29,7 @@ import time
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
 
+import listings_db
 import realsmart
 
 DATA_DIR = os.path.join(BASE, "data")
@@ -51,12 +52,27 @@ def load_cache() -> dict:
         return {}
 
 
-def _save(cache: dict) -> None:
+def _merge_save(new_entries: dict) -> dict:
+    """Merge entries into the on-disk cache under a lock, and return the result.
+
+    Read-modify-write, so it MUST be serialized: two warm runs in parallel each
+    loaded the cache, added their own projects and wrote the whole dict back,
+    and the second write silently erased the first's entries. That is exactly
+    how ten freshly-fetched projects vanished — the fetches all succeeded and
+    reported success, and the data was simply overwritten.
+
+    Merging (rather than writing a whole snapshot) also means a stale in-memory
+    copy can no longer drop another process's rows.
+    """
     os.makedirs(DATA_DIR, exist_ok=True)
-    tmp = CACHE_FILE + ".tmp"
-    with open(tmp, "w") as f:
-        json.dump(cache, f, indent=1, ensure_ascii=False)
-    os.replace(tmp, CACHE_FILE)
+    with listings_db.file_lock(CACHE_FILE + ".lock"):
+        cache = load_cache()
+        cache.update(new_entries)
+        tmp = CACHE_FILE + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump(cache, f, indent=1, ensure_ascii=False)
+        os.replace(tmp, CACHE_FILE)
+    return cache
 
 
 # --------------------------------------------------------------------------- #
@@ -237,16 +253,15 @@ def get(project_name: str, cache: dict | None = None,
 
     if not rec:
         # Record the miss so a scan doesn't retry a dead slug every week.
-        cache[key] = {"project": project_name, "url": url, "resolved": resolved,
-                      "fetched_at": time.time(), "ok": False}
-        _save(cache)
-        return cache[key]
+        miss = {"project": project_name, "url": url, "resolved": resolved,
+                "fetched_at": time.time(), "ok": False}
+        cache.update(_merge_save({key: miss}))
+        return miss
 
     rec.update({"project": project_name, "url": url, "resolved": resolved,
                 "source": source, "fetched_at": time.time(),
                 "ok": rec.get("realscore") is not None})
-    cache[key] = rec
-    _save(cache)
+    cache.update(_merge_save({key: rec}))
     return rec
 
 
