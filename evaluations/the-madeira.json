@@ -116,6 +116,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A genuine 1,356 sqft 3BR at The Madeira (D23 Bukit Batok, 99LH from 2000, 73yr left) asking $1.50M / $1,106 psf. The algo's 787 score rests on a discount that does not survive inspection: against the project's OWN low-floor prints in the same size band the ask is -1.8% (i.e. at market), and the -14.5% 'vs district peers' is the D23 Hillview-vs-Bukit-Batok sub-market gap, not value. Fairly priced, not cheap.",
+      "rating_rationale": "Not a bargain, and not a trap either — an at-market purchase of the softest format in the project. Two independent checks dissolve the discount. (1) FLOOR ARTIFACT: The Madeira has a clean 8.6% floor gradient in the 1,261-1,451 sqft band over 36mo (floors 01-10 median $1,126 psf, n=7; floors 16+ median $1,222, n=6; 28 storeys total). The $1,106 ask sits -1.8% from the low-floor median and -9.5% from the high-floor median — it is priced as a low-floor unit because it almost certainly is one. MMR's two largest positive components, age_value +10.98 and psf_value +4.45 (~36% of its entire margin over base 1500), are crediting that gradient as value. The v3.12 low-floor defences never fired: no researched stack profile and no floor_level on the record, so stack_low_floor_share and the low_floor component both sat at 0.0 — the defence was ABSENT, not passed. (2) SUB-MARKET LEVEL, NOT VALUE: D23 is two price worlds. In this size band over 24mo, Hillview/Dairy Farm projects median $1,641 psf vs Bukit Batok/Gombak $1,212 and Choa Chu Kang $1,139. The Madeira's own $1,212 median puts it at the TOP of its real Bukit Batok/CCK peer set (above Parkview $983, Regent Grove $1,000, Palm Gardens $1,059, Regent Heights $1,089, Northvale $1,100, Mayspings $1,147, The Warren $1,178, Hillview Regency $1,194). It is the expensive end of the cheap belt, not cheap. (3) THE LIVE BOOK AGREES: this exact 1,356 sqft / $1.50M / $1,106 psf ask has stood since 2026-06-07 (~8 weeks), relisted through three different agents (60128058 -> 60135268 -> 500190637, addresses #50 and #52), and is below PropertyGuru's own stated live range for the project ($1,162-$1,282 psf). A genuinely underpriced large 3BR at the deepest quantum band in a 456-unit project does not sit unsold for two months at an unchanged price. What holds up: the bedroom count is REAL (bed_bands 'ok' vs a 122-contract URA rental band — this is not a relabelled 2BR+study, which is what usually kills these), the trailing CAGR is NOT a size-mix artifact (decomposed: every size band ~7-9% over the window with stable median sqft 1243->1270->1248), and the downside record is genuinely strong (87.4% of 350 resales profitable, a sample well past any trust threshold). Against that: 1.99% NET yield is thin carry with no compensation, large-format momentum is the project's weakest segment (last two 1,300-1,450 prints: Nov-25 $1,080, Feb-26 $1,052; momentum -0.92), 73yr lease exits at 66-68yr into a narrowing CPF/financing pool, and the nearest catalyst (Tengah JRL) is 2.39km away and carries no measured forward power anyway. Net: pay market price for an ageing leasehold large unit in the softest slice of its own project. That is a Neutral, and the 787 score should NOT put it at the top of a shortlist. It only becomes interesting if the floor is verified at 11+ (then $1,106 psf really is ~9% under its true comp) or the ask breaks below ~$1.42M.",
+      "red_flags": [
+        "Discount is a FLOOR ARTIFACT: -1.8% vs the project's own low-floor (01-10) same-size prints, not the -8.3%/-14.5% the metrics show; 8.6% intra-project floor gradient across 28 storeys",
+        "v3.12 low-floor defences silently inactive — no stack profile and no floor_level on the record, so stack_low_floor_share = 0 and the low_floor component = 0.0 (absent, not passed)",
+        "D23 bifurcation: -14.5% 'vs age-adjusted district peers' is the Hillview ($1,641) vs Bukit Batok ($1,212) sub-market gap; The Madeira is at the TOP of its true Bukit Batok/CCK peer set, not below it",
+        "~8 weeks unsold at an unchanged $1.50M, relisted by three different agents, and priced below PG's own stated live range for the project — the market has already declined this 'discount'",
+        "Large-format is the project's softest segment: last two 1,300-1,450 sqft prints were $1,080 (Nov-25) and $1,052 (Feb-26); momentum -0.92",
+        "Thin carry: 3.4% gross but only 1.99% net yield — no income compensation for the growth uncertainty",
+        "73yr remaining lease exits the 5-7yr hold at 66-68yr, into a narrowing CPF/financing buyer pool on a then-30-year-old building",
+        "No dated catalyst: nearest future MRT (Tengah, JRL) is 2.39km — not walkable, and future-infra has no measured forward power",
+        "score_1000 787 is not credible for this unit — ~36% of its margin over base comes from the two components the floor read invalidates"
+      ],
+      "catalysts": [
+        "Genuine 3BR, not a relabel: bed_bands 'ok' against a 122-contract URA rental band (1,250-1,350 sqft) — the usual killer of these listings is absent",
+        "Strong downside record: 87.4% of 350 resales sold at a profit (306 profitable / 44 not), avg 4.9%/yr over 8.2yr holds — a large, trustworthy sample; nobody has lost much money here",
+        "$1.50M sits in Singapore's deepest, most liquid quantum band; 456 units, 793 lifetime transactions, 67% HDB-upgrader buyers — real exit depth",
+        "460-480m to Bukit Gombak NS3 (North-South Line) — genuinely walkable to a core line",
+        "OCR region — the strongest realized forward segment in the repo's backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Trailing appreciation is real rather than a pooled size-mix artifact (verified by band decomposition), even though trailing CAGR carries ~0 forward power"
+      ],
+      "as_of": {
+        "price": 1500000,
+        "psf": 1106.19,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.92,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.4,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 73
+      },
+      "agent_evaluation": {
+        "summary": "A genuine 1,356 sqft 3BR at The Madeira (D23 Bukit Batok, 99LH from 2000, 73yr left) asking $1.50M / $1,106 psf. The algo's 787 score rests on a discount that does not survive inspection: against the project's OWN low-floor prints in the same size band the ask is -1.8% (i.e. at market), and the -14.5% 'vs district peers' is the D23 Hillview-vs-Bukit-Batok sub-market gap, not value. Fairly priced, not cheap.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "Not a bargain, and not a trap either — an at-market purchase of the softest format in the project. Two independent checks dissolve the discount. (1) FLOOR ARTIFACT: The Madeira has a clean 8.6% floor gradient in the 1,261-1,451 sqft band over 36mo (floors 01-10 median $1,126 psf, n=7; floors 16+ median $1,222, n=6; 28 storeys total). The $1,106 ask sits -1.8% from the low-floor median and -9.5% from the high-floor median — it is priced as a low-floor unit because it almost certainly is one. MMR's two largest positive components, age_value +10.98 and psf_value +4.45 (~36% of its entire margin over base 1500), are crediting that gradient as value. The v3.12 low-floor defences never fired: no researched stack profile and no floor_level on the record, so stack_low_floor_share and the low_floor component both sat at 0.0 — the defence was ABSENT, not passed. (2) SUB-MARKET LEVEL, NOT VALUE: D23 is two price worlds. In this size band over 24mo, Hillview/Dairy Farm projects median $1,641 psf vs Bukit Batok/Gombak $1,212 and Choa Chu Kang $1,139. The Madeira's own $1,212 median puts it at the TOP of its real Bukit Batok/CCK peer set (above Parkview $983, Regent Grove $1,000, Palm Gardens $1,059, Regent Heights $1,089, Northvale $1,100, Mayspings $1,147, The Warren $1,178, Hillview Regency $1,194). It is the expensive end of the cheap belt, not cheap. (3) THE LIVE BOOK AGREES: this exact 1,356 sqft / $1.50M / $1,106 psf ask has stood since 2026-06-07 (~8 weeks), relisted through three different agents (60128058 -> 60135268 -> 500190637, addresses #50 and #52), and is below PropertyGuru's own stated live range for the project ($1,162-$1,282 psf). A genuinely underpriced large 3BR at the deepest quantum band in a 456-unit project does not sit unsold for two months at an unchanged price. What holds up: the bedroom count is REAL (bed_bands 'ok' vs a 122-contract URA rental band — this is not a relabelled 2BR+study, which is what usually kills these), the trailing CAGR is NOT a size-mix artifact (decomposed: every size band ~7-9% over the window with stable median sqft 1243->1270->1248), and the downside record is genuinely strong (87.4% of 350 resales profitable, a sample well past any trust threshold). Against that: 1.99% NET yield is thin carry with no compensation, large-format momentum is the project's weakest segment (last two 1,300-1,450 prints: Nov-25 $1,080, Feb-26 $1,052; momentum -0.92), 73yr lease exits at 66-68yr into a narrowing CPF/financing pool, and the nearest catalyst (Tengah JRL) is 2.39km away and carries no measured forward power anyway. Net: pay market price for an ageing leasehold large unit in the softest slice of its own project. That is a Neutral, and the 787 score should NOT put it at the top of a shortlist. It only becomes interesting if the floor is verified at 11+ (then $1,106 psf really is ~9% under its true comp) or the ask breaks below ~$1.42M.",
+        "red_flags": [
+          "Discount is a FLOOR ARTIFACT: -1.8% vs the project's own low-floor (01-10) same-size prints, not the -8.3%/-14.5% the metrics show; 8.6% intra-project floor gradient across 28 storeys",
+          "v3.12 low-floor defences silently inactive — no stack profile and no floor_level on the record, so stack_low_floor_share = 0 and the low_floor component = 0.0 (absent, not passed)",
+          "D23 bifurcation: -14.5% 'vs age-adjusted district peers' is the Hillview ($1,641) vs Bukit Batok ($1,212) sub-market gap; The Madeira is at the TOP of its true Bukit Batok/CCK peer set, not below it",
+          "~8 weeks unsold at an unchanged $1.50M, relisted by three different agents, and priced below PG's own stated live range for the project — the market has already declined this 'discount'",
+          "Large-format is the project's softest segment: last two 1,300-1,450 sqft prints were $1,080 (Nov-25) and $1,052 (Feb-26); momentum -0.92",
+          "Thin carry: 3.4% gross but only 1.99% net yield — no income compensation for the growth uncertainty",
+          "73yr remaining lease exits the 5-7yr hold at 66-68yr, into a narrowing CPF/financing buyer pool on a then-30-year-old building",
+          "No dated catalyst: nearest future MRT (Tengah, JRL) is 2.39km — not walkable, and future-infra has no measured forward power",
+          "score_1000 787 is not credible for this unit — ~36% of its margin over base comes from the two components the floor read invalidates"
+        ],
+        "catalysts": [
+          "Genuine 3BR, not a relabel: bed_bands 'ok' against a 122-contract URA rental band (1,250-1,350 sqft) — the usual killer of these listings is absent",
+          "Strong downside record: 87.4% of 350 resales sold at a profit (306 profitable / 44 not), avg 4.9%/yr over 8.2yr holds — a large, trustworthy sample; nobody has lost much money here",
+          "$1.50M sits in Singapore's deepest, most liquid quantum band; 456 units, 793 lifetime transactions, 67% HDB-upgrader buyers — real exit depth",
+          "460-480m to Bukit Gombak NS3 (North-South Line) — genuinely walkable to a core line",
+          "OCR region — the strongest realized forward segment in the repo's backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Trailing appreciation is real rather than a pooled size-mix artifact (verified by band decomposition), even though trailing CAGR carries ~0 forward power"
+        ],
+        "rental_assessment": "$4,250/mo from 28 URA project-bed contracts (confidence 0.95) = 3.4% gross, 1.99% net. Independently corroborated by EdgeProp's $3.4 psf pm average for the project (implying ~$4,610 on 1,356 sqft, range $4,068-5,560), so the estimate is sound-to-slightly-conservative. No yield artifact here — but 1.99% net is thin carry that does not pay you to wait, and large units rent at the bottom of the project's psf-pm range.",
+        "appreciation_assessment": "Trailing 5.92%/yr (URA 5yr CAGR, 71 txns) is real within-project growth, not a size-mix artifact — I decomposed it by size band (<1000: ~8.1%, 1150-1300: ~9.0%, 1300-1450: ~7.0%) with a stable median size across periods (1243 -> 1270 -> 1248 sqft). But it is a single 2021-26 bull-regime read and trailing CAGR has ~0 measured forward power. Forward, I mark it down to the OCR baseline with a haircut: the large-format segment this unit sits in is the project's weakest (Nov-25 $1,080, Feb-26 $1,052 prints), momentum is -0.92, and the lease runs into a narrower buyer pool at exit. Override to 3.5%/yr.",
+        "stack_notes": "No researched profile for The Madeira (status: not_researched), so no stack/facing join was possible — and that absence is material here, because it is why the low-floor defences did not fire. Inferred from URA prints instead: 28 storeys, and the 1,261-1,451 sqft band shows a monotone floor gradient (01-05 $1,095, 06-10 $1,143, 11-15 $1,217, 16-20 $1,222, 21-25 $1,217). The $1,106 ask lands in the 01-10 zone. Before any offer, verify the actual floor — that single fact flips this between 'at market' and 'genuinely ~9% under comp'. Running /research-development on The Madeira would make this join real rather than inferred.",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR realized forward baseline from the repo's own 28-district backtest (+3.7%/yr), haircut for negative large-format momentum (-0.92; last two 1,300-1,450 sqft prints $1,080 and $1,052) and lease decay into the exit. Trailing 5.92% URA CAGR deliberately NOT used forward — resale-to-resale verified as real but single-regime, and trailing CAGR carries ~0 forward power per v3.5 priors.",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 87.4,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_074_60135268",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-madeira-60135268",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
