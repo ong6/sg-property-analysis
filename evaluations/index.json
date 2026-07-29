@@ -2847,8 +2847,8 @@
       "condo": "Treasure at Tampines",
       "district": "D18",
       "latest_rating": "Neutral",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_date": "2026-07-29",
+      "eval_count": 2
     },
     "naung-residence": {
       "condo": "Naung Residence",
@@ -3679,9 +3679,9 @@
     "sky-habitat": {
       "condo": "Sky Habitat",
       "district": "D20",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-07-29",
+      "eval_count": 2
     },
     "millage": {
       "condo": "Millage",
