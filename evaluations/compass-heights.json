@@ -112,6 +112,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500148161",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,507 sqft 3BR (2 baths) at Compass Heights — a 2002/03 99-LH integrated development sitting directly on Sengkang MRT/LRT and Compass One mall — asking $1.75M / $1,161 psf. The algo's 834 score rests on a −12.6% discount to the project median and −20.8% to the age-adjusted D19 size band, but both benchmarks are contaminated by size mix: Compass Heights' PSF falls off a cliff above ~1,550 sqft, and the project's own large-unit prints, time-adjusted, sit at ~$1,100–$1,270 psf. Against its true comp set the ask is fairly priced, not cheap — leaving an outstanding location with a thin 3.1% yield, a 73-year lease and no verified value cushion.",
+      "rating_rationale": "The discount does not survive verification. URA prints for this project (80 txns, 2021–May-26), time-adjusted to 2026 on the project's own median-PSF index, split by size: 1,230–1,340 sqft → ~$1,376 psf (n=36), 1,550 sqft → ~$1,374 psf (n=6), but 1,600–1,800 sqft → ~$1,201 psf (n=7, every single one floor 01–05), and the one genuine 1,507 sqft print (Jan-23, fl 01–05, $929 psf) adjusts to ~$1,117. The ask of $1,161 psf is therefore ~15% below the nearest-size 1,550 prints but roughly AT — even ~4% above — what this project's own large low-floor units actually fetch. The paired evidence is direct: Jan-23 1,507 sqft @ $929 vs May-23 1,550 sqft @ $1,077, same floor band, four months apart — a 14% gap between the two layouts that has never closed. The listing's 2 bathrooms on 1,507 sqft (753 sqft/bath, vs 416–441 for the 1,249/1,324 sqft 3-bath stock asking the same $1.78–1.80M quantum) is the signature of that cheaper tier. I could not confirm the unit's floor — PropertyGuru is Cloudflare-blocked and there is no stack profile — and floor is the swing factor (Dec-25 1,550 fl 01–05 printed $1,274 vs Apr-26 fl 06–10 at $1,361). On a high floor there could be a real ~10% cushion; on the low floor the size cluster implies, there is none. Two agents listing the identical unit at the same price five days apart, $359k under the Apr-26 1,550 sqft print, reads as a lesser product or a bait ask rather than a mispricing a rational seller would leave on the table. Everything else is solid but not compelling: genuinely elite connectivity (56m to Sengkang NE16 + LRT + bus interchange + mall below), three primary schools inside 562m, 536 units and 50+ deals a year, OCR/D19 (the favoured region under current priors). Against that: 3.09% gross / 1.78% net yield, 73 years of lease left (66 at exit), and a size band that has traded twice in five years while the 1,230–1,340 band traded 36 times — project liquidity is deep, this unit type's is not. Mixed signals that balance out: Neutral.",
+      "red_flags": [
+        "Headline discount is a size-mix artifact — −12.6% vs project median and −20.8% vs the age-adjusted D19 1,400–1,800 band are measured against benchmarks dominated by 667–1,340 sqft stock; vs the project's own large-unit prints the ask is at or above fair (psf_cohort_txns = 4, thin)",
+        "2 bathrooms on 1,507 sqft (753 sqft/bath) marks the cheaper tier within the size band — the 1,249/1,324 sqft 3-bath units ask the same $1.78–1.80M quantum",
+        "Floor unverified (PG Cloudflare-blocked, no stack profile) and it is the swing factor: all seven 1,600–1,800 sqft prints are floor 01–05, and the same-size floor spread is 6–7%",
+        "Thin exit liquidity for THIS size: two prints in the 1,400–1,550 band in five years vs 36 in the 1,230–1,340 band",
+        "73-year remaining lease (99 from Apr-2000) → ~66 years at a 5–7yr exit; lease decay is a persistent drag with no offsetting freehold optionality",
+        "Gross yield 3.09% / net 1.78% — weak carry; realsmart puts the project's estimated yield at 3.6% and a 1,300–1,400 sqft 3BR let at $4,450/mo in Jun-26",
+        "Trailing 7.65%/yr URA CAGR is off a depressed 2021 base ($893 psf median) and is mix-influenced — near-zero forward power under current priors; the 7.2% annualized ROI projection is not an underwriting case",
+        "realsmart: 88 of 617 matched resale pairs (14.1%) exited unprofitable — a real, deeply-sampled loss rate, not a never-lost-money project",
+        "23-year-old build (very_old_property flag) — capex/maintenance risk on an integrated mall-top development",
+        "$1,700–2,000 psf new-launch supply in Punggol/Sengkang plus active Fernvale GLS plots compete for the same upgrader dollar"
+      ],
+      "catalysts": [
+        "Genuinely elite connectivity: 56m to Sengkang NE16 MRT + Sengkang LRT + bus interchange, directly integrated with Compass One mall — a durable demand floor, already priced in but not eroding",
+        "Three primary schools within 562m (Compassvale 341m, Seng Kang 435m, Nan Chiau 562m) — sustains owner-occupier and HDB-upgrader demand (58% of the project's buyers are HDB upgraders)",
+        "OCR / D19 — the region with the strongest realized forward drift under the current backtest (OCR +3.7%/yr vs CCR +1.9%)",
+        "Deep project-level liquidity: 536 units, 1,153 lifetime transactions, 50+ deals in the past year",
+        "$1.75M quantum buys 1,507 sqft — the most space per dollar in the project's current book, which has some appeal to space-seeking upgraders even without the third bath",
+        "Punggol Digital District (PDD) in the wider catchment — narrative only; the future-infrastructure score has no measured forward power"
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1161.25,
+        "beds": 3,
+        "sqft": 1507.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.65,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.09,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 73
+      },
+      "agent_evaluation": {
+        "summary": "A 1,507 sqft 3BR (2 baths) at Compass Heights — a 2002/03 99-LH integrated development sitting directly on Sengkang MRT/LRT and Compass One mall — asking $1.75M / $1,161 psf. The algo's 834 score rests on a −12.6% discount to the project median and −20.8% to the age-adjusted D19 size band, but both benchmarks are contaminated by size mix: Compass Heights' PSF falls off a cliff above ~1,550 sqft, and the project's own large-unit prints, time-adjusted, sit at ~$1,100–$1,270 psf. Against its true comp set the ask is fairly priced, not cheap — leaving an outstanding location with a thin 3.1% yield, a 73-year lease and no verified value cushion.",
+        "rating": "Neutral",
+        "rating_rationale": "The discount does not survive verification. URA prints for this project (80 txns, 2021–May-26), time-adjusted to 2026 on the project's own median-PSF index, split by size: 1,230–1,340 sqft → ~$1,376 psf (n=36), 1,550 sqft → ~$1,374 psf (n=6), but 1,600–1,800 sqft → ~$1,201 psf (n=7, every single one floor 01–05), and the one genuine 1,507 sqft print (Jan-23, fl 01–05, $929 psf) adjusts to ~$1,117. The ask of $1,161 psf is therefore ~15% below the nearest-size 1,550 prints but roughly AT — even ~4% above — what this project's own large low-floor units actually fetch. The paired evidence is direct: Jan-23 1,507 sqft @ $929 vs May-23 1,550 sqft @ $1,077, same floor band, four months apart — a 14% gap between the two layouts that has never closed. The listing's 2 bathrooms on 1,507 sqft (753 sqft/bath, vs 416–441 for the 1,249/1,324 sqft 3-bath stock asking the same $1.78–1.80M quantum) is the signature of that cheaper tier. I could not confirm the unit's floor — PropertyGuru is Cloudflare-blocked and there is no stack profile — and floor is the swing factor (Dec-25 1,550 fl 01–05 printed $1,274 vs Apr-26 fl 06–10 at $1,361). On a high floor there could be a real ~10% cushion; on the low floor the size cluster implies, there is none. Two agents listing the identical unit at the same price five days apart, $359k under the Apr-26 1,550 sqft print, reads as a lesser product or a bait ask rather than a mispricing a rational seller would leave on the table. Everything else is solid but not compelling: genuinely elite connectivity (56m to Sengkang NE16 + LRT + bus interchange + mall below), three primary schools inside 562m, 536 units and 50+ deals a year, OCR/D19 (the favoured region under current priors). Against that: 3.09% gross / 1.78% net yield, 73 years of lease left (66 at exit), and a size band that has traded twice in five years while the 1,230–1,340 band traded 36 times — project liquidity is deep, this unit type's is not. Mixed signals that balance out: Neutral.",
+        "red_flags": [
+          "Headline discount is a size-mix artifact — −12.6% vs project median and −20.8% vs the age-adjusted D19 1,400–1,800 band are measured against benchmarks dominated by 667–1,340 sqft stock; vs the project's own large-unit prints the ask is at or above fair (psf_cohort_txns = 4, thin)",
+          "2 bathrooms on 1,507 sqft (753 sqft/bath) marks the cheaper tier within the size band — the 1,249/1,324 sqft 3-bath units ask the same $1.78–1.80M quantum",
+          "Floor unverified (PG Cloudflare-blocked, no stack profile) and it is the swing factor: all seven 1,600–1,800 sqft prints are floor 01–05, and the same-size floor spread is 6–7%",
+          "Thin exit liquidity for THIS size: two prints in the 1,400–1,550 band in five years vs 36 in the 1,230–1,340 band",
+          "73-year remaining lease (99 from Apr-2000) → ~66 years at a 5–7yr exit; lease decay is a persistent drag with no offsetting freehold optionality",
+          "Gross yield 3.09% / net 1.78% — weak carry; realsmart puts the project's estimated yield at 3.6% and a 1,300–1,400 sqft 3BR let at $4,450/mo in Jun-26",
+          "Trailing 7.65%/yr URA CAGR is off a depressed 2021 base ($893 psf median) and is mix-influenced — near-zero forward power under current priors; the 7.2% annualized ROI projection is not an underwriting case",
+          "realsmart: 88 of 617 matched resale pairs (14.1%) exited unprofitable — a real, deeply-sampled loss rate, not a never-lost-money project",
+          "23-year-old build (very_old_property flag) — capex/maintenance risk on an integrated mall-top development",
+          "$1,700–2,000 psf new-launch supply in Punggol/Sengkang plus active Fernvale GLS plots compete for the same upgrader dollar"
+        ],
+        "catalysts": [
+          "Genuinely elite connectivity: 56m to Sengkang NE16 MRT + Sengkang LRT + bus interchange, directly integrated with Compass One mall — a durable demand floor, already priced in but not eroding",
+          "Three primary schools within 562m (Compassvale 341m, Seng Kang 435m, Nan Chiau 562m) — sustains owner-occupier and HDB-upgrader demand (58% of the project's buyers are HDB upgraders)",
+          "OCR / D19 — the region with the strongest realized forward drift under the current backtest (OCR +3.7%/yr vs CCR +1.9%)",
+          "Deep project-level liquidity: 536 units, 1,153 lifetime transactions, 50+ deals in the past year",
+          "$1.75M quantum buys 1,507 sqft — the most space per dollar in the project's current book, which has some appeal to space-seeking upgraders even without the third bath",
+          "Punggol Digital District (PDD) in the wider catchment — narrative only; the future-infrastructure score has no measured forward power"
+        ],
+        "rental_assessment": "Adequate but unexciting. realsmart shows 33 rental contracts in the past month at ~$4.00 psf avg and a median rent of $3,350 (the recent contract list is 1BR-heavy); a 1,300–1,400 sqft 3BR let at $4,450/mo on 1 Jun 2026. The DB's $4,500/mo assumption for this 1,507 sqft unit (rent_source ura_project_bed, confidence 0.95) is therefore realistic to marginally generous — large units do not command proportionally more rent, so the extra 180 sqft over a 1,324 sqft 3BR earns almost nothing. That gives 3.09% gross / 1.78% net, below the 3.6% realsmart estimates for the project as a whole (which is pulled up by the small units). Tenant demand itself is strong and reliable — MRT-on-the-doorstep, mall below, Punggol Digital District employment nearby — but the tenant pool for a $4,500 3BR in Sengkang is thinner than for the 1BR/2BR stock. Treat the yield as carry only; the backtest shows high gross yield predicts LOWER forward price growth, and this is the low-yield end of the same trade-off.",
+        "appreciation_assessment": "The 7.65%/yr URA figure is trailing and should not be underwritten. It measures 2021 ($893 psf project median) to 2026 ($1,361) — a +52% run off a COVID-era trough — and the project's size mix shifts year to year, so part of it is composition rather than price. Under current priors trailing CAGR carries ~zero marginal forward power. I would underwrite closer to the OCR regional baseline of ~3.5–4%/yr, less a modest drag for a lease running 73 → 66 years over the hold, i.e. ~3%/yr net of decay. The ROI table's 7.2% annualized is the data rate compounded and should be read as an upper bound, not a plan. I have left appreciation_rate_override_pct null: there is no dated project-specific catalyst to justify substituting my own number, and the resale-to-resale evidence supports the level critique above rather than a specific alternative rate. Realsmart's backward-looking record is respectable but not exceptional — REALSCORE 3.4/5, 85.9% of 617 matched resale pairs profitable, $156.9M total profits, 4.3% average annualized profit over the past year on a 7.9-year average hold. Read as downside evidence: owners here have usually done fine, but 14% did not, which is a genuine tail on a deep sample and argues against paying up for the story.",
+        "stack_notes": "No stack profile exists for Compass Heights (status: not_researched) and the listing carries no floor, stack or facing — PropertyGuru is Cloudflare-blocked so I could not recover them. What the URA prints do reveal is a strong floor/size coupling: every one of the seven 1,600–1,800 sqft prints since 2021 is floor 01–05, as is the single 1,507 sqft print and the 1,410 sqft print, while the 1,550 sqft layout trades across 01–05, 06–10 and 11–15 at $1,274 / $1,329–1,361 / $1,342 psf respectively. The large layouts in this project appear concentrated on low floors — which, in a development built over a mall and a bus interchange, is exactly where footfall and noise are worst. Combined with 2 baths on 1,507 sqft, the most probable read is a low-floor unit of the cheaper large-format tier. Running /research-development on Compass Heights would resolve this and is the single highest-value next step: if this unit is in fact on floor 8+, the ~10% cushion becomes credible and the rating moves up.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.4,
+        "realsmart_pct_profitable": 85.9,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_056_500212486",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-compass-heights-500212486",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
