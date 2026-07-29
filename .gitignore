@@ -69,3 +69,6 @@ htmlcov/
 
 # realsmart slug index (regenerable: python realsmart.py --refresh)
 data/realsmart_slugs.json
+
+# Per-project bedroom bands (regenerable: python bed_bands.py --build)
+data/bed_bands.json
