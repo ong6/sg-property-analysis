@@ -110,6 +110,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500161555",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,227 sqft 4BR (the smallest of FLO Residence's 88-unit 4BR type) at $1.835M / $1,496 psf. The ask is at-to-slightly-above fair value once the project's own size tiers are separated properly — not the discount the 756 score implies. The score is carried by a trailing 8.23% CAGR (the one-off 2021-26 Punggol repricing off a $992 psf base, now decelerating) plus an MRT credit that is wrong: the 240m station is Coral Edge LRT; the nearest MRT is Punggol at 1,895m. Correct that one input and score_1000 falls to roughly 643 — below the 650 gate that selected this listing.",
+      "rating_rationale": "Priced fairly, with no edge in either direction. Indexing FLO's own liquid 1,012 sqft cohort (Nov-24 $1,374 psf -> Feb-26 $1,463-1,502, +7-9% over 15 months) onto the single 1,227 sqft print (Nov-24, $1.65M / $1,345 psf, fl 11-15) implies ~$1,450 psf today; the adjacent 4BR 1,346 sqft cohort (Sep-25 $1,908k / $1,418 psf) plus the normal size gradient implies ~$1,480-1,500. The $1,496 ask sits at the top of that band and would set a project record for the 1,227 sqft type (+11% over the last print). The algo's two price flags are directionally right but overstated: ask_above_own_stack_prints (+16%, n=7) pools 3BR PES stock into the comp set - the developer mix shows 1,152-1,356 sqft IS the '3-bedroom PES' type (8 units), and two of those seven prints are fl 01-05 at $843 and $1,172 psf; psf_premium_vs_ura_median_pct (+10.9%) compares a 4BR against a median dominated by 764-1,012 sqft stock, a size-mix artifact. Cleaned up, the true premium is ~+3%, not +16%. But correcting the flags down only moves this from overpriced to fully priced. Against that: gross yield is ~3.0-3.1% and the DB's $4,800 rent assumption sits above the top of realsmart's latest 12 contracts ($3,300-$4,350, median $4,050, all of them 2BR/3BR); MRT access is LRT-only at 1.9km to Punggol NEL; and the exit cohort for this size is thin (psf_cohort_txns=4, one 1,227 sqft print in 24 months, 88 4BR units vs 160 of the liquid 3BR Premium type). The relative_value -3.6% 'cheap for its age' read is a geography artifact - D19's $1,693 median blends Serangoon/Kovan/Hougang with Punggol. Supporting the floor, not the upside: realsmart REALSCORE 3.8/5 with 98.1% profitable on a deep 268 matched resale pairs (263 profitable / 5 unprofitable, avg holding 7.4yrs, $59.8M total profits, 789 lifetime transactions, 50+ deals in the past year) - genuine downside evidence that this project has essentially never lost an owner money, but backward-looking and single-regime: 79% sold at launch around $900-1,000 psf and exited into the 2021-26 boom. A buyer today at $1,496 psf gets none of that cushion. At a realistic 4.0%/yr (OCR baseline; realized forward OCR is +3.7%) the all-cash 5yr annualized ROI is ~3.9%. Sound asset, right region, broad sub-$2M HDB-upgrader buyer pool, 84yrs lease - but nothing here to underwrite outperformance. Not an Avoid (no capital-impairment risk, no material overpayment); simply no reason to transact.",
+      "red_flags": [
+        "MRT input is wrong in the scored record: nearest_mrt_distance_m=240 is Coral Edge LRT (PE3); the nearest MRT is Punggol NEL at 1,895m per geocoding. The MMR credits +5.8 for this where the true distance scores -8.67 - a ~14pt MMR swing that takes score_1000 from 756 to roughly 643, under the 650 AI gate",
+        "Ask is at the top of the fair band and would set a new record for the 1,227 sqft type: +11% over the only recent same-size print ($1.65M, Nov-24) and ~+3% over that print indexed forward on the project's own liquid cohort",
+        "Rent assumption optimistic: DB uses $4,800/mo, above the highest of realsmart's latest 12 contracts ($4,350); median $4,050 and every recent contract is 2BR/3BR. Realistic $4,500-4,600 puts gross yield at ~3.0%, net ~1.6%",
+        "The score's largest component (appreciation +10.15) is a de-weighted signal: 8.23% trailing CAGR is the one-off 2021-26 repricing off a $992 psf base and is decelerating (2024->25 +7.5%, 2025->26 +4.4%; momentum -0.577)",
+        "Thin exit cohort for this size band: psf_cohort_txns=4, a single 1,227 sqft print in 24 months. The liquid stock at FLO is 926-1,012 sqft (160 units of 3BR Premium alone), not the 88-unit 4BR type - the 'very_deep' buyer-pool read is district-level, not unit-type level",
+        "relative_value -3.6% vs age-adjusted D19 median is a within-district geography artifact (D19 median $1,693 psf blends Serangoon/Kovan/Hougang with Punggol) - this is not cheap for Punggol",
+        "High rental turnover (61 contracts in a month at a 530-unit project) signals abundant competing rental supply; a 4BR here competes for a thin family-tenant pool with no expat depth",
+        "Prior Jun-2026 evaluations of FLO Residence (3BR) reported resident complaints of heavy traffic noise and a congested site - not re-verified this run (singaporeexpats and 99.co review pages were blocked)",
+        "No floor level disclosed in the listing, and floor moves psf materially here (the 1,346 sqft cohort spans $1,249 psf fl 01-05 to $1,418 psf fl 06-10) - unverifiable price risk in both directions",
+        "No stack profile exists for FLO Residence (status: not_researched) - facing, view and known-issue stacks are unknown"
+      ],
+      "catalysts": [
+        "OCR / D19 is the strongest forward region in the backtest (realized forward OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "REALSCORE 3.8/5 with 98.1% profitable across 268 matched resale pairs (only 5 unprofitable, avg holding 7.4yrs) - a deep, well-evidenced downside floor for the project",
+        "$1.835M quantum sits inside the HDB-upgrader band; FLO's own buyer base is 66% HDB buyers, so a sub-$2M 4BR in Punggol has genuinely broad exit demand",
+        "84 years lease remaining (99 from Dec 2011) - no lease-decay drag over a 5-7yr hold",
+        "Greendale Primary 410m and Mee Toh School 573m support family-tenant and own-stay demand",
+        "Punggol Digital District - narrative only; the backtest gives future-infrastructure zero measured forward power, so this is story, not edge"
+      ],
+      "as_of": {
+        "price": 1835000,
+        "psf": 1495.52,
+        "beds": 4,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": 8.23,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.14,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 86
+      },
+      "agent_evaluation": {
+        "summary": "A 1,227 sqft 4BR (the smallest of FLO Residence's 88-unit 4BR type) at $1.835M / $1,496 psf. The ask is at-to-slightly-above fair value once the project's own size tiers are separated properly — not the discount the 756 score implies. The score is carried by a trailing 8.23% CAGR (the one-off 2021-26 Punggol repricing off a $992 psf base, now decelerating) plus an MRT credit that is wrong: the 240m station is Coral Edge LRT; the nearest MRT is Punggol at 1,895m. Correct that one input and score_1000 falls to roughly 643 — below the 650 gate that selected this listing.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced fairly, with no edge in either direction. Indexing FLO's own liquid 1,012 sqft cohort (Nov-24 $1,374 psf -> Feb-26 $1,463-1,502, +7-9% over 15 months) onto the single 1,227 sqft print (Nov-24, $1.65M / $1,345 psf, fl 11-15) implies ~$1,450 psf today; the adjacent 4BR 1,346 sqft cohort (Sep-25 $1,908k / $1,418 psf) plus the normal size gradient implies ~$1,480-1,500. The $1,496 ask sits at the top of that band and would set a project record for the 1,227 sqft type (+11% over the last print). The algo's two price flags are directionally right but overstated: ask_above_own_stack_prints (+16%, n=7) pools 3BR PES stock into the comp set - the developer mix shows 1,152-1,356 sqft IS the '3-bedroom PES' type (8 units), and two of those seven prints are fl 01-05 at $843 and $1,172 psf; psf_premium_vs_ura_median_pct (+10.9%) compares a 4BR against a median dominated by 764-1,012 sqft stock, a size-mix artifact. Cleaned up, the true premium is ~+3%, not +16%. But correcting the flags down only moves this from overpriced to fully priced. Against that: gross yield is ~3.0-3.1% and the DB's $4,800 rent assumption sits above the top of realsmart's latest 12 contracts ($3,300-$4,350, median $4,050, all of them 2BR/3BR); MRT access is LRT-only at 1.9km to Punggol NEL; and the exit cohort for this size is thin (psf_cohort_txns=4, one 1,227 sqft print in 24 months, 88 4BR units vs 160 of the liquid 3BR Premium type). The relative_value -3.6% 'cheap for its age' read is a geography artifact - D19's $1,693 median blends Serangoon/Kovan/Hougang with Punggol. Supporting the floor, not the upside: realsmart REALSCORE 3.8/5 with 98.1% profitable on a deep 268 matched resale pairs (263 profitable / 5 unprofitable, avg holding 7.4yrs, $59.8M total profits, 789 lifetime transactions, 50+ deals in the past year) - genuine downside evidence that this project has essentially never lost an owner money, but backward-looking and single-regime: 79% sold at launch around $900-1,000 psf and exited into the 2021-26 boom. A buyer today at $1,496 psf gets none of that cushion. At a realistic 4.0%/yr (OCR baseline; realized forward OCR is +3.7%) the all-cash 5yr annualized ROI is ~3.9%. Sound asset, right region, broad sub-$2M HDB-upgrader buyer pool, 84yrs lease - but nothing here to underwrite outperformance. Not an Avoid (no capital-impairment risk, no material overpayment); simply no reason to transact.",
+        "red_flags": [
+          "MRT input is wrong in the scored record: nearest_mrt_distance_m=240 is Coral Edge LRT (PE3); the nearest MRT is Punggol NEL at 1,895m per geocoding. The MMR credits +5.8 for this where the true distance scores -8.67 - a ~14pt MMR swing that takes score_1000 from 756 to roughly 643, under the 650 AI gate",
+          "Ask is at the top of the fair band and would set a new record for the 1,227 sqft type: +11% over the only recent same-size print ($1.65M, Nov-24) and ~+3% over that print indexed forward on the project's own liquid cohort",
+          "Rent assumption optimistic: DB uses $4,800/mo, above the highest of realsmart's latest 12 contracts ($4,350); median $4,050 and every recent contract is 2BR/3BR. Realistic $4,500-4,600 puts gross yield at ~3.0%, net ~1.6%",
+          "The score's largest component (appreciation +10.15) is a de-weighted signal: 8.23% trailing CAGR is the one-off 2021-26 repricing off a $992 psf base and is decelerating (2024->25 +7.5%, 2025->26 +4.4%; momentum -0.577)",
+          "Thin exit cohort for this size band: psf_cohort_txns=4, a single 1,227 sqft print in 24 months. The liquid stock at FLO is 926-1,012 sqft (160 units of 3BR Premium alone), not the 88-unit 4BR type - the 'very_deep' buyer-pool read is district-level, not unit-type level",
+          "relative_value -3.6% vs age-adjusted D19 median is a within-district geography artifact (D19 median $1,693 psf blends Serangoon/Kovan/Hougang with Punggol) - this is not cheap for Punggol",
+          "High rental turnover (61 contracts in a month at a 530-unit project) signals abundant competing rental supply; a 4BR here competes for a thin family-tenant pool with no expat depth",
+          "Prior Jun-2026 evaluations of FLO Residence (3BR) reported resident complaints of heavy traffic noise and a congested site - not re-verified this run (singaporeexpats and 99.co review pages were blocked)",
+          "No floor level disclosed in the listing, and floor moves psf materially here (the 1,346 sqft cohort spans $1,249 psf fl 01-05 to $1,418 psf fl 06-10) - unverifiable price risk in both directions",
+          "No stack profile exists for FLO Residence (status: not_researched) - facing, view and known-issue stacks are unknown"
+        ],
+        "catalysts": [
+          "OCR / D19 is the strongest forward region in the backtest (realized forward OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "REALSCORE 3.8/5 with 98.1% profitable across 268 matched resale pairs (only 5 unprofitable, avg holding 7.4yrs) - a deep, well-evidenced downside floor for the project",
+          "$1.835M quantum sits inside the HDB-upgrader band; FLO's own buyer base is 66% HDB buyers, so a sub-$2M 4BR in Punggol has genuinely broad exit demand",
+          "84 years lease remaining (99 from Dec 2011) - no lease-decay drag over a 5-7yr hold",
+          "Greendale Primary 410m and Mee Toh School 573m support family-tenant and own-stay demand",
+          "Punggol Digital District - narrative only; the backtest gives future-infrastructure zero measured forward power, so this is story, not edge"
+        ],
+        "rental_assessment": "Weak, and weaker than the record assumes. Realsmart's latest 12 contracts: median $4,050/mo, range $3,300-$4,350, all 2BR/3BR; avg rental $4.29 psf is skewed by 700-800 sqft 2BRs at $4.4-4.8 psf, and large units let at lower psf. The DB's $4,800/mo (ura_project_bed, confidence 0.71) sits above the top of the recent range. A realistic $4,500-4,600 gives ~3.0% gross / ~1.6% net. Realsmart's own project-level estimate is 3.5%. 61 contracts in a single month at 530 units indicates heavy competing supply. Treat yield here as thin carry, never as part of the return case.",
+        "appreciation_assessment": "Override the 8.23% trailing CAGR to 4.0%/yr. The trailing figure is real but is a one-off level repricing, not a rate: project median psf ran $992 (2021) -> $1,136 -> $1,246 -> $1,314 -> $1,412 -> $1,474 (2026), i.e. the post-COVID Punggol/OCR catch-up off a low base, and it is visibly decelerating (+7.5% then +4.4% in the last two steps; momentum -0.577). Per current priors trailing CAGR carries ~0 marginal forward power. 4.0% sits at the OCR/D19 baseline (config 4.2%, backtest-realized forward OCR +3.7%). At that rate the all-cash 5yr annualized ROI is ~3.9% and 7yr ~4.0% - market-typical, not outperformance. The DB's projection of a $2.67M exit in 5 years (~$2,172 psf for a 2016 leasehold Punggol condo) should not be relied on.",
+        "stack_notes": "No profile researched for FLO Residence - stack, facing and view are unknown, and the listing discloses no floor. Developer unit mix (cos.sg) confirms the size is legitimate and not a mis-scrape: '4-bedroom: 1,227 to 1,346 sqft (88 Units)', so 1,227 sqft is the smallest standard 4BR. Note the same size band also contains '3-bedroom PES: 1,152-1,356 sqft (8 units)', '3-bedroom Premium PES: 1,184-1,313 (7)' and '3-bedroom Premium Roof Terrace: 1,119-1,227 (5)' - this contamination is what inflates the ask_above_own_stack_prints flag to 16%, since two of its seven comps are fl 01-05 PES prints ($843 psf 1,281 sqft Jul-21; $1,172 psf 1,152 sqft Jun-23). A small residual risk remains that this specific unit is one of the 5 3BR Premium Roof Terrace units at 1,227 sqft rather than a standard 4BR, but the listing's 4BR/3-bath spec and the 88-vs-5 unit odds favour the standard type. Run /research-development before any transaction decision.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "OCR/D19 baseline (config 4.2%, backtest-realized forward OCR +3.7%); trailing 8.23% ura_5yr_cagr rejected as a low-base level repricing that is decelerating",
+        "realscore": 3.8,
+        "realsmart_pct_profitable": 98.1,
+        "realsmart_annual_return_pct": 5.6
+      },
+      "source": {
+        "run_dir": "output/run_052_500210984",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500210984",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
