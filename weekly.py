@@ -974,6 +974,10 @@ def main() -> int:
                     help="poll, grade and write the digest, but spawn no agents")
     ap.add_argument("--no-poll", action="store_true",
                     help="skip the scrape — grade what already arrived since the last run")
+    ap.add_argument("--full-book", action="store_true",
+                    help="gate over EVERY active in-scope listing, not just this "
+                         "cycle's new/re-priced ones — 'what is the best thing on "
+                         "the market', rather than 'what is new this week'")
     ap.add_argument("--headless", action="store_true",
                     help="poll headless (Cloudflare usually blocks this — see module docs)")
     ap.add_argument("--min-score", type=int, default=MIN_SCORE_FOR_AI)
@@ -1040,7 +1044,22 @@ def main() -> int:
     # means NEW listings *and* ones that re-priced in the window: a drop INTO
     # the gate is exactly the signal worth catching, and keying only on
     # first_seen would silently discard every one of them.
-    if args.no_poll and not poll_state.get("reused"):
+    # --full-book asks a different question. The delta view ("what arrived this
+    # week?") is right for monitoring, but the owner is buying ONE property out
+    # of everything currently for sale — and standing inventory is invisible to
+    # a delta scan forever. Treasure at Tampines had 103 listings in the DB and
+    # could never surface, because none of them were new in any later cycle.
+    if args.full_book:
+        db = listings_db.load_db()["listings"]
+        rows = [{"id": k, "project_name": r.get("project_name") or r.get("title"),
+                 "district": r.get("district"), "beds": r.get("beds"),
+                 "price": r.get("price"), "psf": r.get("psf"),
+                 "score_1000": r.get("score_1000"), "url": r.get("url")}
+                for k, r in db.items() if r.get("status") != "stale"]
+        print(f"--full-book: gating over {len(rows)} active listing(s) — the whole "
+              f"market in scope, not just this cycle's changes", file=sys.stderr)
+
+    elif args.no_poll and not poll_state.get("reused"):
         since = (state.get("last_run") or {}).get("date") \
             or (now - timedelta(days=7)).strftime("%Y-%m-%d")
         db = listings_db.load_db()["listings"]
