@@ -56,6 +56,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-habitat-60226910",
         "review_file": "cov_batch_07.json"
       }
+    },
+    {
+      "evaluated_at": "2026-07-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,055 sqft / 2-bath unit at Sky Habitat advertised as a 3BR and asking $1.98M ($1,877 psf). Sky Habitat's own registry says 1,055 sqft is a 2-bedroom (2BR band 721-1,055 sqft, 254 rental contracts; the 3BR band is 1,250-1,750 sqft over 204 contracts, and every 3BR print in the URA file is 1,194-1,410 sqft). It is a 2BR (likely 2BR+study) sold under a 3BR headline. That single error propagates: the scorer applied the project's URA 3BR rent ($6,500/mo, 24 contracts) to a 2BR whose own by-bed rent is $4,700/mo (38 contracts, $4.64 psf), so gross yield 3.94% is really ~2.9-3.0% and net ~2.3% is really ~1.4%. Re-scoring at beds=2 / rent $4,900 takes score_1000 from 753 to 659 and flips the yield component from +6.7 to -3.9. On price, the ask is not cheap against the right comp: the project's own 980-1,140 sqft prints have been flat at ~$1,820 psf since mid-2024 (Jul-25 $1,819, May-25 $1,829, Nov-24 $1,819), so $1,877 is ~+3% ABOVE the last comparable print, and that band has recorded zero prints in the last 12 months. The -0.3% 'discount vs URA median' and -4.0% vs age-adjusted district median are cohort artifacts: the project median is pulled up by high-floor 1,216 sqft 3BRs at $2,220-$2,368 psf (floors 31-35, Oct-25 to Jan-26), and the district size band 1050-1400 mixes true 3BRs in. MMR's own psf_value credit was already ~0 (0.14) - the 753 came from location, development size, transaction depth and the (wrong) yield.",
+      "rating_rationale": "Not the product it is advertised as, and no value edge to compensate. (1) Bed relabel confirmed from two independent sources - the project's own URA size distribution/rental bands and its published floor-plan mix (2BR 721-1,055 sqft, 3BR 1,216-1,249+ sqft). As a 2BR at $1.98M it falls outside the buyer's mandate (3BR<=$1.5M or 3-4BR<=$2.5M) entirely; the weekly gate's bed-relabel rule (weekly.py _bed_mismatch) returns 'mismatch' for this listing today, so it reached evaluation despite the check. (2) Carry is weak once the rent is corrected to the project's own 2BR contracts: ~3.0% gross / ~1.4% net all-cash. Per repo priors yield is carry, never appreciation - and here even the carry is thin. (3) Price is full, not cheap: +3% over the last same-size print, in a size band with no transactions for 12 months. EdgeProp's Sky Vue/Sky Habitat comparison independently flags Sky Habitat's smaller 2BR stock as the stalled cohort ('buyers less willing to pay for balcony space') - exit liquidity for THIS product is weaker than the project's headline 115-print depth suggests. (4) Project history is the laggard of its own street: launched 2012 at $1,604 psf, relaunched lower after 2013 (new-sale avg $1,531 psf by 2015), +14% since 2013 vs Sky Vue's +38%; its unprofitable resales are the pre-relaunch cohort. Trailing 4.39% CAGR on 115 txns is also mix-inflated (2026 prints are high-floor 1,216 sqft units while the 2BR band was flat) and, per repo priors, carries ~0 forward power regardless. (5) Floor is not disclosed and dispersion at this project is enormous - $1,856 psf at floors 16-20 vs $2,368 at 31-35 for the same 1,216 sqft type - so a mid/low-floor unit at a full ask is a live downside. What is genuinely good is the location, not this unit: 480-510m to Bishan NS17/CC15 interchange, Junction 8, Raffles Institution/Catholic High, 509 units, 85 years of lease left, age 11 (inside the 7-30yr returns plateau, no age penalty warranted). A correctly-labelled 2BR here at ~$1,780-1,820 psf ($1.88-1.92M) with a verified high floor would be a Neutral; at $1.98M under a 3BR headline it is an Avoid. One caveat on the model's side: the repo maps D20 to OCR by district partition, but URA's own market-segment field on every Sky Habitat print reads RCR, so the +1.9 region credit is modestly generous (RCR realized forward +3.1%/yr vs OCR +3.7%).",
+      "red_flags": [
+        "Advertised as 3BR but 1,055 sqft with 2 baths is Sky Habitat's 2BR product (3BR band 1,250-1,750 sqft over 204 contracts; all URA 3BR prints 1,194-1,410 sqft) - bed_bands returns verdict 'mismatch'",
+        "Yield overstated ~100bps: scorer used the project's URA 3BR rent $6,500/mo on a 2BR unit whose own by-bed rent is $4,700/mo (38 contracts) - real gross ~3.0%, net ~1.4%",
+        "Ask $1,877 psf is ~3% ABOVE the project's last comparable same-size print ($1,819, Jul-25); the 980-1,140 sqft band has been flat ~$1,820 since mid-2024",
+        "Zero prints in this size band for 12 months - thin price discovery; psf_cohort_txns=4",
+        "As a 2BR at $1.98M it is outside the stated mandate (3BR<=$1.5M or 3-4BR<=$2.5M) - wrong product for the buyer",
+        "The apparent -0.3%/-4.0% discounts are cohort artifacts - project median inflated by high-floor 1,216 sqft 3BRs at $2,220-2,368 psf",
+        "Floor level not disclosed; same-type prints range $1,856 (fl 16-20) to $2,368 psf (fl 31-35) - unpriced risk at a full ask",
+        "Project's own appreciation record is the laggard: 2012 launch $1,604 psf, relaunched lower post-2013, +14% since 2013 vs Sky Vue +38%",
+        "EdgeProp flags Sky Habitat's smaller 2BR units as the stalled cohort - exit liquidity for this specific product is weaker than headline project depth",
+        "realsmart REALSCORE unavailable (public /p/ page confirms the right project but gates the profitability block; map SPA redirected to login) - no downside-history number obtained"
+      ],
+      "catalysts": [
+        "480-510m to Bishan NS17/CC15 interchange - one of the strongest OCR/RCR-fringe connectivity nodes; Junction 8 at the door",
+        "Raffles Institution, Catholic High, Ai Tong - a school catchment that supports resale and rental demand independent of cycle",
+        "509 units, 115 URA prints in 5 years, 646 lifetime transactions - the development itself is genuinely liquid (the 2BR band is the exception)",
+        "85 years remaining lease, age 11 - inside the measured 7-30yr returns plateau; no age discount warranted",
+        "Safdie-designed twin towers with sky bridges - a recognisable, differentiated asset in a district of ordinary stock"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 1876.78,
+        "beds": 3,
+        "sqft": 1055.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.39,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.94,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "A 1,055 sqft / 2-bath unit at Sky Habitat advertised as a 3BR and asking $1.98M ($1,877 psf). Sky Habitat's own registry says 1,055 sqft is a 2-bedroom (2BR band 721-1,055 sqft, 254 rental contracts; the 3BR band is 1,250-1,750 sqft over 204 contracts, and every 3BR print in the URA file is 1,194-1,410 sqft). It is a 2BR (likely 2BR+study) sold under a 3BR headline. That single error propagates: the scorer applied the project's URA 3BR rent ($6,500/mo, 24 contracts) to a 2BR whose own by-bed rent is $4,700/mo (38 contracts, $4.64 psf), so gross yield 3.94% is really ~2.9-3.0% and net ~2.3% is really ~1.4%. Re-scoring at beds=2 / rent $4,900 takes score_1000 from 753 to 659 and flips the yield component from +6.7 to -3.9. On price, the ask is not cheap against the right comp: the project's own 980-1,140 sqft prints have been flat at ~$1,820 psf since mid-2024 (Jul-25 $1,819, May-25 $1,829, Nov-24 $1,819), so $1,877 is ~+3% ABOVE the last comparable print, and that band has recorded zero prints in the last 12 months. The -0.3% 'discount vs URA median' and -4.0% vs age-adjusted district median are cohort artifacts: the project median is pulled up by high-floor 1,216 sqft 3BRs at $2,220-$2,368 psf (floors 31-35, Oct-25 to Jan-26), and the district size band 1050-1400 mixes true 3BRs in. MMR's own psf_value credit was already ~0 (0.14) - the 753 came from location, development size, transaction depth and the (wrong) yield.",
+        "rating": "Avoid",
+        "rating_rationale": "Not the product it is advertised as, and no value edge to compensate. (1) Bed relabel confirmed from two independent sources - the project's own URA size distribution/rental bands and its published floor-plan mix (2BR 721-1,055 sqft, 3BR 1,216-1,249+ sqft). As a 2BR at $1.98M it falls outside the buyer's mandate (3BR<=$1.5M or 3-4BR<=$2.5M) entirely; the weekly gate's bed-relabel rule (weekly.py _bed_mismatch) returns 'mismatch' for this listing today, so it reached evaluation despite the check. (2) Carry is weak once the rent is corrected to the project's own 2BR contracts: ~3.0% gross / ~1.4% net all-cash. Per repo priors yield is carry, never appreciation - and here even the carry is thin. (3) Price is full, not cheap: +3% over the last same-size print, in a size band with no transactions for 12 months. EdgeProp's Sky Vue/Sky Habitat comparison independently flags Sky Habitat's smaller 2BR stock as the stalled cohort ('buyers less willing to pay for balcony space') - exit liquidity for THIS product is weaker than the project's headline 115-print depth suggests. (4) Project history is the laggard of its own street: launched 2012 at $1,604 psf, relaunched lower after 2013 (new-sale avg $1,531 psf by 2015), +14% since 2013 vs Sky Vue's +38%; its unprofitable resales are the pre-relaunch cohort. Trailing 4.39% CAGR on 115 txns is also mix-inflated (2026 prints are high-floor 1,216 sqft units while the 2BR band was flat) and, per repo priors, carries ~0 forward power regardless. (5) Floor is not disclosed and dispersion at this project is enormous - $1,856 psf at floors 16-20 vs $2,368 at 31-35 for the same 1,216 sqft type - so a mid/low-floor unit at a full ask is a live downside. What is genuinely good is the location, not this unit: 480-510m to Bishan NS17/CC15 interchange, Junction 8, Raffles Institution/Catholic High, 509 units, 85 years of lease left, age 11 (inside the 7-30yr returns plateau, no age penalty warranted). A correctly-labelled 2BR here at ~$1,780-1,820 psf ($1.88-1.92M) with a verified high floor would be a Neutral; at $1.98M under a 3BR headline it is an Avoid. One caveat on the model's side: the repo maps D20 to OCR by district partition, but URA's own market-segment field on every Sky Habitat print reads RCR, so the +1.9 region credit is modestly generous (RCR realized forward +3.1%/yr vs OCR +3.7%).",
+        "red_flags": [
+          "Advertised as 3BR but 1,055 sqft with 2 baths is Sky Habitat's 2BR product (3BR band 1,250-1,750 sqft over 204 contracts; all URA 3BR prints 1,194-1,410 sqft) - bed_bands returns verdict 'mismatch'",
+          "Yield overstated ~100bps: scorer used the project's URA 3BR rent $6,500/mo on a 2BR unit whose own by-bed rent is $4,700/mo (38 contracts) - real gross ~3.0%, net ~1.4%",
+          "Ask $1,877 psf is ~3% ABOVE the project's last comparable same-size print ($1,819, Jul-25); the 980-1,140 sqft band has been flat ~$1,820 since mid-2024",
+          "Zero prints in this size band for 12 months - thin price discovery; psf_cohort_txns=4",
+          "As a 2BR at $1.98M it is outside the stated mandate (3BR<=$1.5M or 3-4BR<=$2.5M) - wrong product for the buyer",
+          "The apparent -0.3%/-4.0% discounts are cohort artifacts - project median inflated by high-floor 1,216 sqft 3BRs at $2,220-2,368 psf",
+          "Floor level not disclosed; same-type prints range $1,856 (fl 16-20) to $2,368 psf (fl 31-35) - unpriced risk at a full ask",
+          "Project's own appreciation record is the laggard: 2012 launch $1,604 psf, relaunched lower post-2013, +14% since 2013 vs Sky Vue +38%",
+          "EdgeProp flags Sky Habitat's smaller 2BR units as the stalled cohort - exit liquidity for this specific product is weaker than headline project depth",
+          "realsmart REALSCORE unavailable (public /p/ page confirms the right project but gates the profitability block; map SPA redirected to login) - no downside-history number obtained"
+        ],
+        "catalysts": [
+          "480-510m to Bishan NS17/CC15 interchange - one of the strongest OCR/RCR-fringe connectivity nodes; Junction 8 at the door",
+          "Raffles Institution, Catholic High, Ai Tong - a school catchment that supports resale and rental demand independent of cycle",
+          "509 units, 115 URA prints in 5 years, 646 lifetime transactions - the development itself is genuinely liquid (the 2BR band is the exception)",
+          "85 years remaining lease, age 11 - inside the measured 7-30yr returns plateau; no age discount warranted",
+          "Safdie-designed twin towers with sky bridges - a recognisable, differentiated asset in a district of ordinary stock"
+        ],
+        "rental_assessment": "Use the project's own 2BR contracts, not the 3BR figure the pipeline applied. URA rental cache for Sky Habitat: 2BR $4,700/mo across 38 contracts at $4.64 psf; 3BR $6,500/mo across 24 contracts at $5.00 psf. At 1,055 sqft (top of the 2BR band) the fair estimate is ~$4,900/mo, giving ~2.97% gross and ~1.4% net all-cash - roughly 100bps below what the scored record shows. Rental demand at Bishan is real (103 contracts in 12 months project-wide, $4.93 psf) but the carry does not support a $1.98M entry.",
+        "appreciation_assessment": "Discount the 4.39% trailing CAGR. It is computed over 115 prints whose recent composition shifted hard toward high-floor 1,216 sqft units ($2,220-$2,368 psf, floors 31-35, Oct-25 to Jan-26) while the 1,000-1,100 sqft band stayed flat at ~$1,820 from Jun-24 to Jul-25 - a size/floor mix effect, not a level move in this unit's cohort. Repo priors put trailing CAGR at ~0 forward power anyway. The forward case rests on region and relative value: D20 is coded OCR here but URA prints it as RCR (realized forward +3.1%/yr vs OCR +3.7%), and the unit carries no relative-value edge once benchmarked against its own cohort. Plan on district-level drift at best, from a full entry price.",
+        "stack_notes": "No profile exists for Sky Habitat (status: not_researched) and the listing discloses no floor, stack or facing. This matters more here than at most projects: same-type prints span $1,856 psf (floors 16-20) to $2,368 psf (floors 31-35), and the towers' sky-bridge/inter-tower geometry means facing and blockage vary sharply. Sky Habitat's published mix for this size includes 2BR, 2BR+PES, 2BR+terrace and 2BR+study variants - a PES or terrace-heavy variant would carry outdoor area at full strata psf. Before any further consideration, establish the floor, the stack and whether the quoted 1,055 sqft includes PES/terrace. Run /research-development 'Sky Habitat' to build the profile.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_066_60246778",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-habitat-60246778",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
