@@ -86,10 +86,19 @@ def collect(since: str) -> list[dict]:
                 "avg_holding_yrs": rs.get("avg_holding_yrs"),
             })
 
-    # One row per condo — keep the newest verdict.
-    best: dict[str, dict] = {}
+    # One row per condo AND bed count — keep the newest verdict.
+    #
+    # Keying on the condo alone collapsed genuinely different products into one
+    # row and let the newest verdict speak for all of them. Rivervale Crest's
+    # 3BR at $1.268M (Neutral, 82% of 571 resales profitable) vanished behind a
+    # 1,668 sqft penthouse marketed as a 4BR (Avoid), and Palm Gardens' 3BR
+    # behind its mislabelled "4BR" — the buy list was hiding the better product
+    # of the two. The bed count is what the mandates are written in terms of
+    # (3BR<=$1.8M vs 3-4BR<=$2.5M) and what the re-eval cooldown already treats
+    # as a distinct call, so it belongs in this key too.
+    best: dict[tuple, dict] = {}
     for r in out:
-        k = r["condo"]
+        k = (r["condo"], r.get("beds"))
         if k not in best or (r["evaluated_at"] or "") >= (best[k]["evaluated_at"] or ""):
             best[k] = r
     return list(best.values())
