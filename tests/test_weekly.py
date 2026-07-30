@@ -101,6 +101,65 @@ class TestGate:
         assert "--from-db a" in weekly._agent_prompt(short[0])
 
 
+class TestSightingFreshness:
+    """--full-book gates the whole book, which promotes never-re-verified stock.
+
+    On the 2026-07-29 sweep 3 of 12 agent runs went to listings last seen
+    2026-06-07/08 with times_seen=1, absent from the 07-28 poll of their own
+    district and bed count. They stay `active` because the staleness sweep only
+    judges listings inside the recency window a poll demonstrably covered.
+    """
+
+    @staticmethod
+    def _ago(days):
+        return (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+
+    def test_an_unverified_sighting_does_not_earn_an_agent_run(self):
+        rows = [_row("a", score=800)]
+        db = {"a": _rec("a", last_seen=self._ago(53), times_seen=1)}
+        short, rej = weekly.select_candidates(rows, db)
+        assert short == []
+        assert "not re-seen since" in rej[0]["gate_reason"]
+        assert "unverified" in rej[0]["gate_reason"]
+
+    def test_a_recent_sighting_passes(self):
+        rows = [_row("a", score=800)]
+        db = {"a": _rec("a", last_seen=self._ago(2), times_seen=3)}
+        short, _ = weekly.select_candidates(rows, db)
+        assert [c["id"] for c in short] == ["a"]
+
+    def test_the_boundary_is_inclusive(self):
+        # Exactly at the limit is still fresh; one day past it is not.
+        for days, expect in ((weekly.MAX_SIGHTING_AGE_DAYS, ["a"]),
+                             (weekly.MAX_SIGHTING_AGE_DAYS + 1, [])):
+            rows = [_row("a", score=800)]
+            db = {"a": _rec("a", last_seen=self._ago(days))}
+            short, _ = weekly.select_candidates(rows, db)
+            assert [c["id"] for c in short] == expect
+
+    def test_a_missing_or_broken_date_is_never_read_as_stale(self):
+        # Dropping a record because its date failed to parse would silently
+        # shrink the book — the guard has to abstain, not reject.
+        for bad in (None, "", "not-a-date", 20260607, {"d": 1}):
+            rows = [_row("a", score=800)]
+            db = {"a": _rec("a", last_seen=bad)}
+            short, _ = weekly.select_candidates(rows, db)
+            assert [c["id"] for c in short] == ["a"], f"rejected on last_seen={bad!r}"
+
+    def test_age_is_reported_on_the_candidate(self):
+        rows = [_row("a", score=800)]
+        db = {"a": _rec("a", last_seen=self._ago(4))}
+        short, _ = weekly.select_candidates(rows, db)
+        assert short[0]["sighting_age_days"] == 4
+
+    def test_stale_status_still_wins_the_reason(self):
+        # An explicitly-swept listing should say so, not blame its sighting age.
+        rows = [_row("a", score=800)]
+        db = {"a": _rec("a", status="stale", last_seen=self._ago(99))}
+        _, rej = weekly.select_candidates(rows, db)
+        assert "went stale this cycle" in rej[0]["gate_reason"]
+
+
 class TestMandate:
     """Two buyers, two budgets, one OCR region constraint (stated 2026-07-28).
     Off-mandate listings must never reach an agent however well they score —

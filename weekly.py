@@ -203,6 +203,24 @@ MAX_AI_RUNS_PER_SCAN = 8
 # older half of the week silently never gets seen.
 POLL_MAX_PAGES = 5
 
+# How old a sighting may be and still earn an agent run. A record is `active`
+# until the staleness sweep demotes it, and that sweep is deliberately
+# conservative: it only judges listings whose first_seen falls strictly inside
+# the recency window a poll demonstrably covered, because the poll reads only
+# the newest POLL_MAX_PAGES pages and absence of deep-page stock proves nothing.
+#
+# Sound for the delta scan, which only ever looks at this cycle's arrivals. But
+# --full-book gates the ENTIRE book, which promotes never-re-verified stock to
+# candidate: on the 2026-07-29 sweep, 3 of 12 agent runs (~25 min) went to
+# listings last seen 2026-06-07/08 with times_seen=1, absent from the 07-28 poll
+# of their own district and bed count. Worse than the wasted time, a listing that
+# no longer exists can reach the buy list looking live.
+#
+# So this is not a claim that an old sighting is dead — it is a refusal to spend
+# a research run on one we cannot confirm. Three weekly cycles: long enough that
+# a listing merely pushed off page 5 by newer inventory gets re-seen first.
+MAX_SIGHTING_AGE_DAYS = 21
+
 # Don't re-analyze the same (condo, bedroom count) inside this window — a fresh
 # listing of an already-judged unit type rarely changes the call, and eval memory
 # already holds the reasoning. A different bed count IS a different call.
@@ -404,6 +422,20 @@ def _bed_mismatch(project: str, beds, sqft) -> dict | None:
     return v if v.get("verdict") == "mismatch" else None
 
 
+def _sighting_age_days(last_seen) -> int | None:
+    """Days since this listing was last actually returned by a poll, or None.
+
+    None for anything unparseable — a missing or malformed date must not be
+    read as "stale", because the gate would then silently drop the record.
+    """
+    if not isinstance(last_seen, str):
+        return None
+    try:
+        return (datetime.now() - datetime.strptime(last_seen[:10], "%Y-%m-%d")).days
+    except ValueError:
+        return None
+
+
 def _bed_contested(project: str, beds, sqft) -> dict | None:
     """A bed count that fits better than the advertised one, or None.
 
@@ -473,8 +505,17 @@ def select_candidates(
         mandate = mandate_for(row.get("price"), row.get("beds"), district)
         cand["mandate"] = mandate
 
+        age = _sighting_age_days(rec.get("last_seen"))
+        cand["sighting_age_days"] = age
+
         if rec.get("status") == "stale":
             cand["gate_reason"] = "listing went stale this cycle"
+        elif age is not None and age > MAX_SIGHTING_AGE_DAYS:
+            # Still `active` only because the staleness sweep cannot judge
+            # deep-page stock — not because anyone confirmed it is live.
+            cand["gate_reason"] = (
+                f"not re-seen since {str(rec.get('last_seen'))[:10]} ({age}d, seen "
+                f"{rec.get('times_seen') or 0}x) — unverified, so not worth an agent run")
         elif not (rec.get("price") and rec.get("sqft") and rec.get("psf")):
             cand["gate_reason"] = "incomplete record (price/sqft/psf)"
         elif score is None:
