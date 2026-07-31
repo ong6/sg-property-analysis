@@ -11,17 +11,36 @@ Everything the scripts compute (yield, ROI, liquidity, MMR) assumes an
 **investment** purpose with a 5–7 year hold. If the user's request suggests
 **own-stay** — or is ambiguous — **ask the user which it is before rating.**
 
+**Own-stay ADDS constraints; it does not remove them.** This section used to read
+the other way — that own-stay relaxed the money tests, so a quiet low-liquidity
+boutique "can be a fine home". That framing was wrong for this buyer and is
+corrected here. The owner's mandate is explicitly *"whichever makes the most
+money"*, and an own-stay purchase is still the household's largest leveraged
+position; a home that cannot be exited is a bad home, not a different kind of
+good one. So own-stay is an INTERSECTION, never a substitution: run the full
+investment screen, then narrow to what the household can actually live in.
+
+Every home is eventually sold. The only question own-stay changes is *when* and
+*under what pressure* — and a family that has to sell on a school timetable or a
+job move has less control over timing than an investor does, which makes exit
+liquidity MORE important to them, not less.
+
 | | Investment | Own-stay |
 |---|---|---|
-| Top factors | Appreciation, exit liquidity, yield | Livability, layout, facing, noise, schools, commute |
-| Yield/ROI | Central | Mostly irrelevant |
-| Liquidity | Critical (can you exit?) | Matters only for eventual resale |
-| Unit size | Efficient = better | Generous = better; "oversized" flags don't apply |
-| Verdict framing | Buy/Neutral/Avoid as investment | Suitability for the household's life, plus resale safety net |
+| Screen | Exit demand, appreciation, liquidity, yield | The same screen, **then** livability/layout/schools/commute as a filter on the survivors |
+| Yield/ROI | Central | Secondary, never ignored — it is the carry cost of the home |
+| Liquidity | Critical (can you exit?) | **Still critical** — and timing is less under your control |
+| Unit size | Efficient = better | Generous is a genuine plus, but a size the resale market does not want is still a cost |
+| Verdict framing | Buy/Neutral/Avoid as investment | Same verdict, **plus** whether the household can live there |
 
-For own-stay, several algorithmic red flags invert or vanish: `oversized_unit` is a
-*feature*, low yield is irrelevant, and a quiet low-liquidity boutique development
-can be a fine home. Say explicitly which rubric you applied. For own-stay, weigh
+The only red flag that genuinely inverts is `oversized_unit`: extra space is
+worth paying for when you live in it. Everything else survives — a thin resale
+market, a bad exit record or a quantum above the segment's exit ceiling are as
+disqualifying for a home as for an investment. Say explicitly which rubric you
+applied, and if own-stay, say which lifestyle constraints narrowed the list and
+what they cost in exit terms.
+
+For own-stay, weigh
 the 0–100 **livability score** (`scoring/livability.py`: baths/bed, space/bed, MRT
 walk, floor, facing, age; 50 = neutral) alongside this rubric — it's an explicit
 heuristic, never folded into MMR, and never evidence of returns.
