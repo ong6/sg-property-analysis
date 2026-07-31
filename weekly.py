@@ -13,9 +13,13 @@ The cycle:
   2. **Algo grade** — every new and price-changed listing already carries
      `score_1000` (plus the valuation / livability / overall axes) from step 1.
      That grade is free, so it is applied to ALL of them.
-  3. **Gate** — only listings clearing `MIN_SCORE_FOR_AI` (and the sanity /
-     cooldown / dedupe rules below) earn an AI run. Everything else is logged
-     algo-only. This is the whole point: the agent is the expensive step.
+  3. **Gate** — only listings that clear at least ONE registered lens's bar
+     (scoring/lenses.py — mmr's bar is `MIN_SCORE_FOR_AI`) and the sanity /
+     cooldown / dedupe rules below earn an AI run. Everything else is logged
+     algo-only. This is the whole point: the agent is the expensive step —
+     and several independent lenses can each nominate, because the days when
+     one number (score_1000) decided everything are what let value traps
+     monopolize the research budget (see shortlist.py's header).
   4. **AI analyze** — for each shortlisted listing, a headless `claude -p` runs
      the repo's `/analyze-listing` flow and lands a Buy/Neutral/Avoid verdict in
      eval memory. Gather is `invest.py --from-db` — the listing is already
@@ -184,9 +188,12 @@ def mandate_for(price, beds, district=None) -> str | None:
     return None
 
 
-# The AI gate. 650 is the repo's own "recommended tier" (CLAUDE.md) and sits at
-# roughly the 88th percentile of the scored book — a listing below it is not
-# worth an agent run just for showing up.
+# The AI gate's mmr bar. 650 is the repo's own "recommended tier" (CLAUDE.md)
+# and sits at roughly the 85th percentile of the scored book (measured
+# 2026-07-31, 9,029 scored active listings) — a listing below it is not worth
+# an agent run just for showing up. Since the lens registry landed this is
+# ONE lens's bar, not the whole gate: any registered lens can nominate a
+# candidate over its own bar (see lens_bars / scoring/lenses.py).
 MIN_SCORE_FOR_AI = 650
 
 # Hard cap on agent runs per scan. The gate alone is unbounded: a bulk relist or
@@ -463,6 +470,111 @@ def _known_projects() -> set:
         return set()
 
 
+# --------------------------------------------------------------------------- #
+# Lenses at the gate. Multiple independent scorers (scoring/lenses.py) can
+# each nominate a candidate; a listing is score-eligible when it clears ANY
+# lens's bar. Deliberately an OR, never an average or a rank fusion — folding
+# lenses back into one consensus number is the operation that let score_1000
+# (r ~ -0.7 against realized exit profitability) monopolize the research
+# budget in the first place.
+# --------------------------------------------------------------------------- #
+def _lenses():
+    from scoring import lenses
+    return lenses
+
+
+def lens_bars(db_listings: dict, min_score: int = MIN_SCORE_FOR_AI) -> dict:
+    """Per-lens nomination bars over the scored book. {lens: bar or None}.
+
+    mmr keeps the ABSOLUTE bar (`min_score`, default 650): it is the repo's
+    recommended tier, the --min-score CLI knob, and the pre-lens gate must be
+    reproduced exactly (regression-pinned in tests/test_lenses.py). Every
+    other lens has no tier tradition, so its bar is its own gate_percentile of
+    the scored book — the same construction that put 650 in the book's top
+    ~15%, computed HERE and not in config.py (a constant there would restamp
+    all 9,029 stored scores via score_version; see scoring/lenses.py).
+
+    None means the lens has scored too little of the book to hold a bar, so it
+    cannot nominate anyone this scan — a brand-new lens earns its gate by
+    scoring the book first, not by guessing.
+    """
+    lenses = _lenses()
+    books = lenses.book_scores(db_listings.values())
+    bars: dict = {}
+    for name, lens in lenses.LENSES.items():
+        if name == "mmr":
+            bars[name] = float(min_score)
+            continue
+        book = books.get(name) or []
+        if len(book) < lenses.MIN_BOOK_FOR_RANK:
+            bars[name] = None
+        else:
+            bars[name] = book[min(len(book) - 1,
+                                  int(lens.gate_percentile * len(book)))]
+    return bars
+
+
+def _cand_lens_scores(row: dict, rec: dict) -> dict:
+    """Per-lens scores for one candidate. Absent key = unscored by that lens.
+
+    mmr reads the poll row's score_1000 (fresh this cycle — the DB flat field
+    is the same number, but the row survives even when the record merge is
+    racing); other lenses read the DB record's stored lens_scores.
+    """
+    out: dict = {}
+    if row.get("score_1000") is not None:
+        out["mmr"] = row["score_1000"]
+    registered = _lenses().LENSES
+    for name, entry in (rec.get("lens_scores") or {}).items():
+        if name == "mmr" or name not in registered:
+            continue
+        if isinstance(entry, dict) and entry.get("score") is not None:
+            out[name] = entry["score"]
+    return out
+
+
+def _below_bars_reason(lens_view: dict, bars: dict) -> str:
+    """Why NO lens nominated this listing — every lens states its shortfall.
+
+    The gate is never a black box: "below every lens's bar (mmr 620 < 650;
+    exitrec 0.41 < 0.62)" tells the digest reader exactly which lens came
+    closest and by how much, which is what makes a bar worth arguing with.
+    """
+    parts = []
+    for name, bar in bars.items():
+        s = lens_view.get(name)
+        if s is None:
+            parts.append(f"{name} unscored")
+        elif bar is None:
+            parts.append(f"{name} has no bar yet")
+        else:
+            parts.append(f"{name} {s:g} < {bar:g}")
+    return f"below every lens's bar ({'; '.join(parts)})"
+
+
+def lens_endorsements(rec: dict, min_score: int = MIN_SCORE_FOR_AI) -> list:
+    """Which lenses currently vouch for this DB record — the display read.
+
+    Used by shortlist rows and the shortlist UI to say WHICH lens surfaced a
+    candidate. mmr endorses at the absolute recommended tier; other lenses
+    endorse when the record's STORED rank_norm clears their gate_percentile.
+    The scan gate recomputes bars over the live book; this uses the rank
+    stamped at scoring time, which is accurate enough for a chip and keeps
+    the viewers pipeline-free (they must never load the whole book).
+    """
+    out = []
+    for name, lens in _lenses().LENSES.items():
+        if name == "mmr":
+            if (rec.get("score_1000") or 0) >= min_score:
+                out.append(name)
+            continue
+        entry = (rec.get("lens_scores") or {}).get(name)
+        rn = entry.get("rank_norm") if isinstance(entry, dict) else None
+        if rn is not None and rn >= lens.gate_percentile:
+            out.append(name)
+    return out
+
+
 def select_candidates(
     rows: list[dict],
     db_listings: dict,
@@ -478,12 +590,20 @@ def select_candidates(
     DB record for the fields the gate needs. Every rejected row carries a
     `gate_reason` — the digest prints them, so the gate is never a black box.
 
+    The score check is an ANY-LENS gate: a listing is score-eligible when it
+    clears at least one registered lens's bar (lens_bars), and the lenses that
+    nominated it are recorded as `surfaced_by`. With only "mmr" registered
+    this is exactly the old `score_1000 >= min_score` rule (golden-pinned in
+    tests/test_lenses.py against the pre-lens gate's output on a real-book
+    sample).
+
     Order of checks matters: cheap data-quality rules first, then the score,
     then the two rules that need the rest of the batch (in-batch dedupe, cap).
     """
     cooldown_index = {} if cooldown_index is None else cooldown_index
     shortlist: list[dict] = []
     rejected: list[dict] = []
+    bars = lens_bars(db_listings, min_score)
 
     ranked = sorted(rows, key=lambda r: r.get("score_1000") or 0, reverse=True)
     seen_cohort: set[tuple[str, object]] = set()
@@ -497,7 +617,12 @@ def select_candidates(
                 "tenure": rec.get("tenure"),
                 "sqft": rec.get("sqft"),
                 "status": rec.get("status")}
-        score = row.get("score_1000")
+        lens_view = _cand_lens_scores(row, rec)
+        surfaced = [n for n, bar in bars.items()
+                    if bar is not None and lens_view.get(n) is not None
+                    and lens_view[n] >= bar]
+        cand["lens_view"] = lens_view
+        cand["surfaced_by"] = surfaced
         name = row.get("project_name") or rec.get("title") or ""
         slug = eval_memory.slugify(name) if name else ""
         cohort = (slug, row.get("beds"))
@@ -518,10 +643,10 @@ def select_candidates(
                 f"{rec.get('times_seen') or 0}x) — unverified, so not worth an agent run")
         elif not (rec.get("price") and rec.get("sqft") and rec.get("psf")):
             cand["gate_reason"] = "incomplete record (price/sqft/psf)"
-        elif score is None:
+        elif not lens_view:
             cand["gate_reason"] = "not scored"
-        elif score < min_score:
-            cand["gate_reason"] = f"below gate ({score} < {min_score})"
+        elif not surfaced:
+            cand["gate_reason"] = _below_bars_reason(lens_view, bars)
         elif not in_region(district):
             cand["gate_reason"] = (
                 f"out of region ({district or '?'} is not OCR — mandate is D16-D28)")
@@ -566,29 +691,112 @@ def select_candidates(
     return shortlist, rejected
 
 
-def _allocate_budget(eligible: list[dict], max_ai: int) -> tuple[list[dict], list[dict]]:
-    """Split `max_ai` slots across mandates fairly, then fill leftovers by score.
+def _lens_rankings(eligible: list[dict]) -> dict:
+    """{lens: {id(cand): rank}} — each lens's own ordering over the eligibles.
 
-    `eligible` must already be score-ordered. Returns (shortlist, deferred);
-    deferred candidates carry a gate_reason explaining which cap they hit.
+    Ranks are per-lens because lens scales are incommensurable (score_1000
+    runs 0-1000, an exit-record lens might run 0-1): "this lens's 3rd pick"
+    is comparable across lenses where the raw scores never are. Sorting is
+    stable over the incoming (score_1000-desc) order, so ties — and the
+    mmr-only case — reproduce the pre-lens ordering exactly.
+    """
+    rankings: dict = {}
+    for name in _lenses().LENSES:
+        cands = [c for c in eligible
+                 if (c.get("lens_view") or {}).get(name) is not None]
+        cands.sort(key=lambda c: -c["lens_view"][name])
+        rankings[name] = {id(c): i for i, c in enumerate(cands)}
+    return rankings
+
+
+def _snake_draft(cands: list[dict], rankings: dict) -> list[dict]:
+    """Order one mandate's candidates by a snake draft across lenses.
+
+    Each lens drafts its own best remaining candidate BY ITS OWN RANK, in
+    registry order, direction alternating each round (L1..Ln, then Ln..L1) so
+    the last lens of round one is not also last in round two. A candidate
+    surfaced by several lenses is taken once — the first lens to reach it
+    spends the pick, and it leaves every other queue.
+
+    This is deliberately NOT rank aggregation (no Borda, no RRF): averaging
+    lenses back into one consensus dilutes the lone outlier a second lens
+    exists to catch, which is the exact failure the registry replaces. With
+    one lens registered the snake collapses to that lens's rank order —
+    identical to the old score-ordered allocator.
+    """
+    lens_names = [n for n in _lenses().LENSES
+                  if any(n in (c.get("surfaced_by") or []) for c in cands)]
+    queues = {n: sorted((c for c in cands if n in (c.get("surfaced_by") or [])),
+                        key=lambda c: rankings[n][id(c)])
+              for n in lens_names}
+    order: list[dict] = []
+    taken: set[int] = set()
+    forward = True
+    while True:
+        picked = False
+        for n in (lens_names if forward else reversed(lens_names)):
+            q = queues[n]
+            while q and id(q[0]) in taken:
+                q.pop(0)
+            if q:
+                c = q.pop(0)
+                taken.add(id(c))
+                order.append(c)
+                picked = True
+        if not picked:
+            return order
+        forward = not forward
+
+
+def _allocate_budget(eligible: list[dict], max_ai: int) -> tuple[list[dict], list[dict]]:
+    """Split `max_ai` slots: mandate fair-share OUTER, lens snake-draft INNER.
+
+    Mandates stay the outer split — a second lens must not become a new way
+    for hers' larger budget to crowd his out. WITHIN each mandate the fair
+    share is drafted across lenses (_snake_draft), so every lens that surfaced
+    candidates gets its say before any lens gets a second pick. A candidate
+    surfaced by several lenses consumes one slot, once.
+
+    `eligible` arrives in gate order (score_1000-desc). When the fair shares
+    overshoot `max_ai` (odd cap, both mandates full) the weakest drafted picks
+    are trimmed by best-lens-rank; leftovers then fill unclaimed slots in the
+    same order. With only "mmr" registered every one of these orderings
+    collapses to score order and the result is identical to the pre-lens
+    allocator (pinned against a verbatim copy of it in tests/test_lenses.py).
+    Returns (shortlist, deferred); deferred candidates carry a gate_reason
+    naming the cap they hit.
     """
     present = [m for m, *_ in MANDATES if any(c.get("mandate") == m for c in eligible)]
     if not present:
         return [], []
     fair_share = max(1, -(-max_ai // len(present)))    # ceil, so 8/2 -> 4 each
 
-    taken: dict[str, int] = {}
-    shortlist, leftovers = [], []
-    for cand in eligible:                              # pass 1: fair share
-        m = cand.get("mandate")
-        if len(shortlist) < max_ai and taken.get(m, 0) < fair_share:
-            taken[m] = taken.get(m, 0) + 1
-            shortlist.append(cand)
-        else:
-            leftovers.append(cand)
+    rankings = _lens_rankings(eligible)
 
+    def best_rank(c: dict) -> int:
+        # A candidate's strongest claim: the best rank ANY surfacing lens
+        # gives it. Cross-lens comparable where raw scores are not.
+        return min(rankings[n][id(c)] for n in (c.get("surfaced_by") or ["mmr"])
+                   if id(c) in rankings.get(n, {}))
+
+    order_index = {id(c): i for i, c in enumerate(eligible)}  # stable tiebreak
+
+    # Pass 1: each mandate drafts its fair share; if the shares overshoot the
+    # cap (odd max_ai, several full mandates), trim the weakest claims.
+    drafted = [c for m in present
+               for c in _snake_draft(
+                   [c for c in eligible if c.get("mandate") == m],
+                   rankings)[:fair_share]]
+    drafted.sort(key=lambda c: (best_rank(c), order_index[id(c)]))
+    shortlist = drafted[:max_ai]
+    chosen = {id(c) for c in shortlist}
+
+    # Pass 2: slots nobody claimed go to the best remaining listings
+    # regardless of buyer or lens.
     deferred = []
-    for cand in leftovers:                             # pass 2: unclaimed slots
+    remaining = sorted((c for c in eligible if id(c) not in chosen),
+                       key=lambda c: (best_rank(c), order_index[id(c)]))
+    for cand in remaining:
         if len(shortlist) < max_ai:
             shortlist.append(cand)
         else:
@@ -808,7 +1016,10 @@ _MANDATE_TAG = {"his": "**HIS**", "hers": "**HERS**"}
 
 
 def _row(c: dict) -> str:
+    # `Lens` = which lens(es) nominated the candidate. Rejected rows keep a
+    # dash — nothing vouched for them, which is usually the story.
     return (f"| {c.get('score_1000') or '—'} | "
+            f"{','.join(c.get('surfaced_by') or []) or '—'} | "
             f"{_MANDATE_TAG.get(c.get('mandate'), '—')} | "
             f"{c.get('project_name') or '—'} | "
             f"{c.get('beds') or '—'}BR | {_money(c.get('price'))} | "
@@ -838,8 +1049,15 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
                  "Everything below is from the DB as it stands; the week was NOT "
                  "marked done, so just run it again.")
 
+    # The re-eval cooldown is deliberately LENS-AGNOSTIC: a fresh nomination
+    # by a different lens is not a different question about the same unit
+    # type, so it must not buy a second agent run inside the window.
+    lens_names = list(_lenses().LENSES)
+    gate_txt = (f"`score_1000 >= {min_score}`" if lens_names == ["mmr"] else
+                f"any lens bar ({len(lens_names)} lenses; "
+                f"mmr: `score_1000 >= {min_score}`)")
     L += ["",
-          f"**Gate** · `score_1000 >= {min_score}` · max {max_ai} AI runs/scan · "
+          f"**Gate** · {gate_txt} · max {max_ai} AI runs/scan · "
           f"{RE_EVAL_COOLDOWN_DAYS}d re-eval cooldown",
           f"**Result** · {n_new} new + {n_changed} price-changed → "
           f"**{len(shortlist)} cleared the gate** → "
@@ -857,10 +1075,12 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
                 continue
             rating = (v.get("rating") or "?").strip()
             icon = _RATING_ICON.get(rating.lower(), "⚪️")
+            via = ",".join(cand.get("surfaced_by") or [])
             L.append(f"### {icon} {rating} — {cand.get('project_name')} · "
                      f"{cand.get('beds')}BR {cand.get('sqft') or '?'} sqft · "
                      f"{_money(cand.get('price'))} ({_money(cand.get('psf'))} psf) · "
-                     f"{cand.get('district')} · score {cand.get('score_1000')} · "
+                     f"{cand.get('district')} · score {cand.get('score_1000')}"
+                     + (f" (via {via})" if via else "") + " · "
                      f"{v.get('confidence') or '?'} confidence")
             if (rs := _realsmart_line(v)):
                 L += ["", rs]
@@ -877,13 +1097,13 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
 
     if dry_run and shortlist:
         L += ["## Cleared the gate (dry run — no agent spawned)", "",
-              "| Score | For | Project | Beds | Price | PSF | District |",
-              "|---|---|---|---|---|---|---|"] + [_row(c) for c in shortlist] + [""]
+              "| Score | Lens | For | Project | Beds | Price | PSF | District |",
+              "|---|---|---|---|---|---|---|---|"] + [_row(c) for c in shortlist] + [""]
 
     if rejected:
         L += [f"## Algo-only — {len(rejected)} not sent to the agent", "",
-              "| Score | For | Project | Beds | Price | PSF | District | Why |",
-              "|---|---|---|---|---|---|---|---|"]
+              "| Score | Lens | For | Project | Beds | Price | PSF | District | Why |",
+              "|---|---|---|---|---|---|---|---|---|"]
         L += [_row(c) + f" {c.get('gate_reason', '—')} |" for c in rejected]
         L.append("")
 

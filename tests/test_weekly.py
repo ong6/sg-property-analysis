@@ -32,7 +32,11 @@ class TestGate:
         short, rej = weekly.select_candidates(rows, db, min_score=650)
         assert [c["id"] for c in short] == ["a"]
         assert [c["id"] for c in rej] == ["b"]
-        assert "below gate" in rej[0]["gate_reason"]
+        # The reason names the lens and its bar, not just "below gate" — with
+        # several lenses able to nominate, "which one said no, and by how much"
+        # is the whole content of the rejection.
+        assert "below every lens's bar" in rej[0]["gate_reason"]
+        assert "mmr 649 < 650" in rej[0]["gate_reason"]
 
     def test_shortlist_is_score_ordered_and_capped(self):
         rows = [_row(str(i), score=650 + i, name=f"Condo {i}") for i in range(6)]

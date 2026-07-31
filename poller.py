@@ -88,6 +88,7 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     if not keys:
         return 0, []
     from invest import load_ura_cache
+    from scoring import lenses
     from scoring.full_scorer import FullScorer, build_cohort_stats
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -100,8 +101,16 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
               if r.get("price") and r.get("sqft") and r.get("psf")
               and r.get("status") != "stale"]
     scorer = FullScorer(ura_data=load_ura_cache(), cohort_stats=build_cohort_stats(usable))
+    # Per-lens books over the pre-poll snapshot: rank_norm says where a score
+    # lands in the scored book, and the book a poll cycle can see is the
+    # snapshot (the handful of keys being re-scored barely move a 9k book).
+    lens_books = lenses.book_scores(usable)
 
     scored: dict[str, dict] = {}
+    # Lens entries are kept OUT of `scored`: the flat fields merge with
+    # rec.update(), but lens_scores must merge key-by-key (an un-run lens's
+    # stored score survives), so the two take different paths below.
+    lens_fields: dict[str, dict] = {}
     scored_rows: list[dict] = []
     for key in keys:
         r = snapshot.get(key)
@@ -114,6 +123,11 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
         scored[key] = {"mmr": s.mmr, "score_1000": s.score_1000,
                        "scored_at": today, "score_version": version,
                        **s.three_score_fields()}  # valuation / livability / overalls
+        entries = lenses.score_record(s, r, today=today)
+        for name, e in entries.items():
+            e["rank_norm"] = lenses.rank_norm(e["score"], lens_books.get(name) or [])
+        if entries:
+            lens_fields[key] = entries
         scored_rows.append({
             "id": key,
             "project_name": r.get("project_name") or r.get("title"),
@@ -135,6 +149,7 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
                 rec = store.get(key)
                 if rec is not None:
                     rec.update(fields)
+                    lenses.merge_lens_scores(rec, lens_fields.get(key))
                     merged = True
             if merged:
                 listings_db.save_db(db)
@@ -153,6 +168,18 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
                     writer.writerow([today, row["id"], row["project_name"], row["district"],
                                      row["beds"], row["price"], row["psf"],
                                      row["mmr"], row["score_1000"], version])
+
+        # Per-lens history goes to its OWN file (data/lens_history.csv, with a
+        # `lens` column) — never into mmr_history.csv above, which
+        # calibrate_forward.py cohorts on and which must stay single-lens.
+        lenses.append_history([
+            {"scored_at": today, "lens": name, "id": row["id"],
+             "project_name": row["project_name"], "district": row["district"],
+             "beds": row["beds"], "price": row["price"], "psf": row["psf"],
+             "score": e["score"], "rank_norm": e.get("rank_norm"),
+             "lens_version": e["version"]}
+            for row in scored_rows
+            for name, e in (lens_fields.get(row["id"]) or {}).items()])
     return len(scored_rows), scored_rows
 
 
