@@ -373,18 +373,44 @@ def _seed_history(seed_events: list[dict], own_events: list[dict]) -> list[dict]
     return merged
 
 
-def upsert_listings(listings: list[dict], source: Optional[dict] = None) -> dict:
+def upsert_listings(listings: list[dict], source: Optional[dict] = None,
+                    gate: bool = True) -> dict:
     """Insert or update listings in the master DB.
+
+    Every batch passes the sanity gate on the way in. It used to be applied by
+    the caller, and only ONE caller applied it (poller.run_poll) — so the
+    url/condo/auto/districts flows through invest.py could write a batch mangled
+    by a PropertyGuru redesign straight into the DB. The gate protects the
+    store, so it belongs at the store's door, not in whichever caller
+    remembered.
 
     Args:
         listings: scraped listing dicts (as produced by the scrapers' to_dict()).
         source: optional provenance, e.g. {"flow": "url", "url": "...", "districts": [...]}.
+        gate: opt out only for batches that are known-good by construction
+            (tests, re-imports of already-validated records).
 
     Returns:
-        Stats dict: {added, updated, price_changes, skipped, total}.
+        Stats dict: {added, updated, price_changes, skipped, total}, plus
+        `sanity_gate` when the gate ran.
+
+    Raises:
+        BatchSanityError: the batch failed the pre-upsert invariants. Loud on
+            purpose — a silent partial write is how bad data becomes permanent.
     """
+    report = None
+    if gate and listings:
+        ok, report = check_batch_sanity(listings)
+        if not ok:
+            raise BatchSanityError(
+                f"batch failed pre-upsert invariants ({report['passed']}/"
+                f"{report['batch']} sane, fail_reasons={report['fail_reasons']}) "
+                f"— upsert aborted")
     with _db_lock():
-        return _upsert_listings_locked(listings, source)
+        stats = _upsert_listings_locked(listings, source)
+    if report is not None:
+        stats["sanity_gate"] = report
+    return stats
 
 
 def _upsert_listings_locked(listings: list[dict], source: Optional[dict]) -> dict:

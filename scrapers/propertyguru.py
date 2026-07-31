@@ -797,12 +797,22 @@ class PropertyGuruScraper:
     def stats(self) -> ScrapeStats:
         return self._stats
 
-    def scrape(self, params: SearchParams, max_pages: int = 5) -> list[Listing]:
-        """Scrape listings for given params with smart pagination and dedup.
+    def scrape(self, params: SearchParams, max_pages: int = 5,
+               allow_extend: bool = False, scope_label: str | None = None) -> list[Listing]:
+        """Scrape listings for given params with dedup, and record reach.
 
-        After page 1, reads total_pages from the response and auto-extends
-        up to min(total_pages, MAX_PAGES_LIMIT). Stops early if a page
-        returns fewer than LISTINGS_PER_PAGE listings or 0 new (deduped).
+        `max_pages` is a HARD cap. It used to be a floor: after page 1 the
+        scraper read total_pages and auto-extended to min(total_pages,
+        MAX_PAGES_LIMIT=15), so a caller asking for 5 pages could silently get
+        15. That is why the 2026-07-28 scan pulled 2,462 listings from 18 scopes
+        against a documented ceiling of 5 x 20 x 18 = 1,800 — the poll cost
+        three times its budget, and weekly.POLL_MAX_PAGES did not mean what it
+        said. Pass allow_extend=True to opt back in deliberately (the rotating
+        deep-verification crawl wants exactly that).
+
+        Records per-scope coverage into stats either way, so the caller can tell
+        how much of the scope it actually saw — and, critically, whether the
+        scope ended at a known last page or just went dark.
         """
         all_listings: list[Listing] = []
         self._page = self._context.pages[0] if self._context.pages else self._context.new_page()
@@ -811,19 +821,44 @@ class PropertyGuruScraper:
         self._setup_interception()
 
         effective_max = max_pages
+        scope = scope_label or self._scope_label(params)
+        cov = {"total_results": None, "total_pages": None, "pages_fetched": 0,
+               "listings_seen": 0, "truncated": False, "capped": False}
+        self._stats.scope_coverage[scope] = cov
 
         for page_num in range(1, MAX_PAGES_LIMIT + 1):
             if page_num > effective_max:
+                # Out of budget, not out of inventory: the scope is only partly
+                # seen and anything deeper stays invisible to the staleness
+                # sweep's recency-window rule.
+                if (cov["total_pages"] or 0) > effective_max:
+                    cov["capped"] = True
                 break
 
             logger.info("Scraping page %d / %d", page_num, effective_max)
 
             scraped = self._scrape_single_page(params, page_num)
             if not scraped or not scraped.listings:
-                logger.info("No listings on page %d, stopping", page_num)
+                # An empty page is ambiguous: genuinely the end, or a page-3
+                # Cloudflare block / parse regression. Only the first is
+                # consistent with the totals we were told on page 1, so say
+                # which one this was instead of logging "stopping" either way.
+                if (cov["total_pages"] or 0) > page_num:
+                    cov["truncated"] = True
+                    logger.warning(
+                        "Scope %s went dark on page %d of %s — treating as "
+                        "TRUNCATED, not end of inventory", scope, page_num,
+                        cov["total_pages"])
+                else:
+                    logger.info("No listings on page %d, stopping", page_num)
                 break
 
             self._stats.pages_fetched += 1
+            cov["pages_fetched"] += 1
+            cov["listings_seen"] += len(scraped.listings)
+            if cov["total_results"] is None:
+                cov["total_results"] = scraped.total_results
+                cov["total_pages"] = scraped.total_pages
 
             # Dedup against seen IDs
             new_listings = []
@@ -846,12 +881,13 @@ class PropertyGuruScraper:
                 len(all_listings), scraped.total_results,
             )
 
-            # Smart pagination: after page 1, auto-extend if more pages available
-            if page_num == 1 and scraped.total_pages > effective_max:
+            # Opt-in only. Left on by default this quietly tripled the request
+            # budget of every scan that asked for 5 pages.
+            if allow_extend and page_num == 1 and scraped.total_pages > effective_max:
                 old_max = effective_max
                 effective_max = min(scraped.total_pages, MAX_PAGES_LIMIT)
                 logger.info(
-                    "Smart pagination: %d total pages detected, extending %d -> %d",
+                    "Deep crawl: %d total pages detected, extending %d -> %d",
                     scraped.total_pages, old_max, effective_max,
                 )
 
@@ -877,8 +913,15 @@ class PropertyGuruScraper:
         logger.info("Scraping complete: %d listings collected", len(all_listings))
         return all_listings
 
+    def _scope_label(self, params: SearchParams) -> str:
+        """Stable name for one (districts, beds) search scope, for coverage
+        bookkeeping. Matches how the poller thinks about scopes."""
+        d = ",".join(f"D{x:02d}" for x in (params.districts or [])) or "all"
+        b = ",".join(str(x) for x in (params.beds or [])) or "any"
+        return f"{d}|{b}BR"
+
     def scrape_multi_district(
-        self, params: SearchParams, max_pages: int = 5
+        self, params: SearchParams, max_pages: int = 5, allow_extend: bool = False
     ) -> tuple[list[Listing], ScrapeStats]:
         """Scrape each district independently, then merge with dedup.
 
@@ -888,7 +931,8 @@ class PropertyGuruScraper:
         districts = params.districts or []
         if len(districts) <= 1:
             # Single district or none — just use regular scrape
-            listings = self.scrape(params, max_pages=max_pages)
+            listings = self.scrape(params, max_pages=max_pages,
+                                   allow_extend=allow_extend)
             if districts:
                 self._stats.per_district_counts[districts[0]] = len(listings)
             return listings, self._stats
@@ -912,7 +956,8 @@ class PropertyGuruScraper:
             # Reset per-district stats (the dedup set persists across districts)
             self._stats = ScrapeStats()
 
-            district_listings = self.scrape(district_params, max_pages=max_pages)
+            district_listings = self.scrape(district_params, max_pages=max_pages,
+                                            allow_extend=allow_extend)
             self._stats.per_district_counts[district] = len(district_listings)
 
             all_listings.extend(district_listings)
