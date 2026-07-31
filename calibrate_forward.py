@@ -60,6 +60,30 @@ import backtest as bt
 # Mixed-config legacy tag: rows scored before config.score_version() existed.
 PRE_STAMP = "pre-3.10"
 
+# Fingerprints that denote the SAME calibration under different digests.
+#
+# score_version is CONFIG_VERSION + a hash of config.py. On 2026-07-29 the hash
+# INPUT changed — full-line comments and blank lines are now stripped before the
+# digest, so that documenting a constant no longer restamps every scored listing
+# (commit 0ddcdbe). No weight, threshold or gate moved: the reference listing
+# scores 583 / 1514.8 either side of it. But the digest moved anyway, from
+# 0e388936 to ba8d8abe, which would split the registered v3.12 cohort — 9,029
+# listings snapshotted 2026-07-28, whose first valid forward read is ~2027-08 —
+# into two half-size cohorts of identical calibration.
+#
+# Aliasing them keeps that read at full n. This map is ONLY for digest changes
+# proven score-identical; a genuine recalibration must always start its own
+# clock, which is the whole point of the fingerprint.
+VERSION_ALIASES = {
+    "3.12+ba8d8abe": "3.12+0e388936",   # comment-stripping hash change, scores identical
+}
+
+
+def canonical_version(version: str) -> str:
+    """Collapse known score-identical fingerprints onto the cohort that owns
+    the holdout clock."""
+    return VERSION_ALIASES.get(version, version)
+
 
 def _pu_normalize(name: str) -> str:
     """Conservative name normalization for the URA join — apostrophe variants,
@@ -93,7 +117,8 @@ def load_history(path="data/mmr_history.csv"):
                 t = int(y) + (int(m) - 1 + (int(dd) - 0.5) / 30.4) / 12.0
             except (KeyError, ValueError):
                 continue
-            version = (r.get("score_version") or "").strip() or PRE_STAMP
+            version = canonical_version(
+                (r.get("score_version") or "").strip() or PRE_STAMP)
             rows.append({
                 "t": t,
                 # cohort = (score_version, month): scores from different
