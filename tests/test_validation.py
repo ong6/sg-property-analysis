@@ -145,6 +145,152 @@ class TestSplitsAreLegal:
         assert a[1] <= b[0] or b[1] <= a[0], f"{a} overlaps {b}"
 
 
+class TestTenureParser:
+    """The piece most likely to be silently wrong — a bad parse doesn't crash,
+    it files a decaying asset as freehold and the harness happily measures the
+    wrong thing. Both real-world traps below were live in build_panel's
+    substring flag when this parser was written."""
+
+    AT = 2024.4
+
+    def test_freehold_any_case(self):
+        for s in ("Freehold", "FREEHOLD", "freehold"):
+            assert panel.parse_tenure(s, self.AT) == ("freehold", None, None)
+
+    def test_99_year_with_commencement(self):
+        kind, rem, age = panel.parse_tenure(
+            "99 yrs lease commencing from 1996", self.AT)
+        assert kind == "leasehold"
+        assert age == pytest.approx(28.4)
+        assert rem == pytest.approx(70.6)
+
+    def test_years_spelling_variant(self):
+        # URA mostly writes "yrs"; 3 rows in the live data write "years".
+        kind, rem, age = panel.parse_tenure(
+            "99 years lease commencing from 2022", self.AT)
+        assert kind == "leasehold"
+        assert rem == pytest.approx(99 - 2.4)
+
+    def test_the_1999_substring_trap(self):
+        # "99 yrs lease commencing from 1999" contains "999". build_panel's
+        # flag reads it as freehold; Caribbean at Keppel Bay has ~74 years
+        # left. The parser must not fall for it.
+        kind, rem, age = panel.parse_tenure(
+            "99 yrs lease commencing from 1999", self.AT)
+        assert kind == "leasehold"
+        assert rem == pytest.approx(73.6)
+
+    def test_999_year_is_economically_freehold(self):
+        for s in ("999 yrs lease commencing from 1885",
+                  "9999 yrs lease commencing from 1826",
+                  "999999 yrs lease commencing from 1827",
+                  "999 years leasehold"):
+            assert panel.parse_tenure(s, self.AT)[0] == "freehold"
+
+    def test_colonial_9xx_leases_are_freehold_despite_no_999(self):
+        # 956 from 1928, 929 from 1953 — no "999" substring, so build_panel
+        # calls them leasehold; with ~850 years left they trade as freehold.
+        for s in ("956 yrs lease commencing from 1928",
+                  "929 yrs lease commencing from 1953"):
+            assert panel.parse_tenure(s, self.AT)[0] == "freehold"
+
+    def test_short_and_odd_terms(self):
+        kind, rem, age = panel.parse_tenure(
+            "60 yrs lease commencing from 2013", self.AT)
+        assert kind == "leasehold" and rem == pytest.approx(48.6)
+        kind, rem, _ = panel.parse_tenure(
+            "103 yrs lease commencing from 2011", self.AT)
+        assert kind == "leasehold" and rem == pytest.approx(89.6)
+
+    def test_term_without_commencement_keeps_kind_but_not_remaining(self):
+        # "99 years leasehold" (232 live rows): the term is known, the clock's
+        # start is not. Inventing a start would fabricate the panel's
+        # strongest-evidenced feature, so remaining must be None.
+        assert panel.parse_tenure("99 years leasehold", self.AT) == \
+            ("leasehold", None, None)
+
+    def test_malformed_and_missing(self):
+        for s in ("", None, "n/a", "lease", "yrs lease commencing from",
+                  "99 yrs lease commencing from 19",
+                  "leasehold 99 yrs"):
+            assert panel.parse_tenure(s, self.AT) == (None, None, None)
+
+
+class TestTenureAttachment:
+    SPLIT = 2024.4
+
+    def _txn(self, proj, t, tenure):
+        return {"project": proj, "district": "D05", "t": t, "tenure": tenure}
+
+    def test_modal_tenure_wins_over_first_row(self):
+        # Same reason build_panel went modal: a first-row read keys the
+        # feature to file load order on mixed/dirty-tenure projects.
+        txns = ([self._txn("A", 2023.0, "Freehold")]
+                + [self._txn("A", 2023.5, "99 yrs lease commencing from 1996")] * 3)
+        rows = [{"project": "A", "district": "D05"}]
+        panel._attach_tenure(rows, txns, self.SPLIT)
+        assert rows[0]["tenure_kind"] == "leasehold"
+        assert rows[0]["remaining_lease"] == pytest.approx(70.6)
+
+    def test_post_split_txns_are_ignored(self):
+        # Tenure is a fixed attribute so this costs nothing — but the
+        # no-look-ahead rule stays uniform rather than argued per-feature.
+        txns = ([self._txn("A", 2023.0, "99 yrs lease commencing from 1996")]
+                + [self._txn("A", 2025.0, "Freehold")] * 5)
+        rows = [{"project": "A", "district": "D05"}]
+        panel._attach_tenure(rows, txns, self.SPLIT)
+        assert rows[0]["tenure_kind"] == "leasehold"
+
+    def test_project_with_no_pre_split_tenure_gets_none(self):
+        rows = [{"project": "GHOST", "district": "D05"}]
+        panel._attach_tenure(rows, [], self.SPLIT)
+        assert rows[0]["tenure_kind"] is None
+        assert rows[0]["remaining_lease"] is None
+        assert rows[0]["lease_age"] is None
+
+
+class TestTenureAlgos:
+    def _row(self, kind, remaining=None, age=None, i=0):
+        return {"project": f"P{i}", "district": "D10", "tenure_kind": kind,
+                "remaining_lease": remaining, "lease_age": age}
+
+    def test_lease_decay_puts_freehold_above_every_leasehold(self):
+        fh = algos.lease_decay(self._row("freehold"))
+        lh = algos.lease_decay(self._row("leasehold", remaining=94.0))
+        assert fh > lh > algos.lease_decay(self._row("leasehold", remaining=45.0))
+
+    def test_lease_decay_abstains_without_a_parse(self):
+        assert algos.lease_decay(self._row(None)) is None
+        # "99 years leasehold": kind known, clock start unknown -> abstain
+        # rather than score a made-up remaining.
+        assert algos.lease_decay(self._row("leasehold", remaining=None)) is None
+
+    def test_enbloc_is_an_interaction_not_a_main_effect(self):
+        old_lh = algos.enbloc_leasehold_age(self._row("leasehold", age=35.0))
+        young_lh = algos.enbloc_leasehold_age(self._row("leasehold", age=5.0))
+        fh = algos.enbloc_leasehold_age(self._row("freehold"))
+        assert old_lh > young_lh > fh == 0.0
+        assert algos.enbloc_leasehold_age(self._row(None)) is None
+
+    def test_inf_scores_survive_the_metrics(self):
+        # lease_decay emits math.inf for freehold; the rank-based metrics must
+        # treat that as "tied at the top", not blow up or emit NaN.
+        rng = random.Random(3)
+        rows, scores = [], []
+        for i in range(60):
+            fh = i % 3 == 0
+            r = self._row("freehold" if fh else "leasehold",
+                          remaining=None if fh else 90 - i, i=i)
+            r["district"] = f"D{i % 6:02d}"
+            r["excess_fwd"] = rng.gauss(0, 0.05)
+            rows.append(r)
+            scores.append(algos.lease_decay(r))
+        assert all(s is not None for s in scores)
+        m = metrics.evaluate(rows, scores, reps=100)
+        assert m["rho"] is not None and not math.isnan(m["rho"])
+        assert -1.0 <= m["rho"] <= 1.0
+
+
 class TestPanelId:
     def test_it_changes_with_content_not_just_parameters(self):
         rows = [{"project": "A", "district": "D19", "excess_fwd": 0.01}]
