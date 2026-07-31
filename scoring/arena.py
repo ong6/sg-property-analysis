@@ -36,10 +36,36 @@ except ImportError:  # mirrors mmr.py's fallback; only if config is unimportable
 #
 # These are RELATIVE shares — the live set is renormalized to 1.0 below, because
 # `future` is only live when the MMR actually pays for it (see build_dimensions).
+#
+# Every component mmr.py emits must sit in exactly ONE dimension (guard test in
+# test_arena.py). Two were silently missing after v3.10/v3.12 added them to the
+# MMR: `region` (the strongest measured forward signal, region_delta ranks
+# +0.219, ±4.2 raw span CCR↔OCR) and `low_floor` (the -7.0 exit-liquidity
+# demotion) — so an OCR and a CCR listing fought as regional equals, and a
+# confirmed low-floor stack conceded nothing. Placement follows what each
+# component MEASURES, not where mmr.py happens to compute it:
+#   region    → appreciation: it IS a forward-appreciation read — the regional
+#               baseline delta at MMR_REGION_SLOPE (= the appreciation slope),
+#               gated on the same appreciation data source. It joins the other
+#               forward-growth signals, not `value` (it says nothing about this
+#               unit's price vs peers).
+#   low_floor → liquidity: config names it an "exit-liquidity demotion"
+#               (thinner buyer pool, weaker resale) — price_band's axis, not
+#               `condition`'s. The value-side half of the low-floor story
+#               (floor-driven cheapness isn't value) is already inside
+#               psf_value/age_value via MMR_LOW_FLOOR_VALUE_FACTOR.
+# Weights are untouched, so this re-decides fights only where the new
+# components actually differ. Measured on the frozen 2026-07-31 book (9,030
+# scored listings → 2,082 contenders, 2,166,321 open-division fights): 59,092
+# fights re-decided (2.73%; 15,572 full W↔L flips, the rest draw↔decided —
+# net draws 96,888 → 89,976), 96.5% of Elo ranks shuffle (mean |Δrank| 30.5)
+# but the head stays put: top-10 identical, top-20 19/20, top-50 45/50. The
+# smallest real fight margin is still one dimension weight (0.111 of total),
+# so POINTS_EPS keeps deciding draws by margin, not float rounding.
 _BASE_DIMENSIONS: dict[str, tuple[list[str], float]] = {
     "value": (["psf_value", "age_value"], 0.40),
-    "liquidity": (["txn_volume", "buyer_pool", "dev_size", "price_band"], 0.20),
-    "appreciation": (["appreciation", "momentum"], 0.10),
+    "liquidity": (["txn_volume", "buyer_pool", "dev_size", "price_band", "low_floor"], 0.20),
+    "appreciation": (["appreciation", "momentum", "region"], 0.10),
     "yield": (["yield"], 0.10),
     "future": (["future"], 0.10),
     "condition": (["age", "lease", "mrt", "cost", "red_flags"], 0.10),
@@ -88,7 +114,7 @@ EPOCHS = 3          # passes over all pairs; Elo converges, order effects wash o
 TIE_MARGIN = 0.75   # dimension scores closer than this are a split
 # Weighted-points equality tolerance. A fight's point totals are short sums of
 # dimension weights, so a genuinely drawn fight — each side taking an equal
-# SHARE of the weight, 96,868 of 2,166,321 fights (4.5%) on the current book —
+# SHARE of the weight, 89,976 of 2,166,321 fights (4.2%) on the current book —
 # must compare equal. Bare `==` on floats does not deliver that: the two sums
 # add different weights in a different order and can land 0.5 vs
 # 0.5000000000000001, which silently awarded the whole fight (and full Elo) to
