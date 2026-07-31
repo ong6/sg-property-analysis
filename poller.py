@@ -321,6 +321,7 @@ def run_poll(
     districts: list[int] | None = None,
     beds: list[int] | None = None,
     max_pages: int = DEFAULT_MAX_PAGES,
+    allow_extend: bool = False,
     headless: bool = True,
     min_price: int | None = None,
     max_price: int | None = None,
@@ -336,6 +337,7 @@ def run_poll(
         "districts": districts,
         "beds": beds,
         "max_pages": max_pages,
+        "allow_extend": allow_extend,
     }
 
     before = {k: (r.get("price") or 0) for k, r in listings_db.load_db()["listings"].items()}
@@ -345,6 +347,7 @@ def run_poll(
         listings = scrape_listings(
             districts=districts, min_price=min_price, max_price=max_price,
             beds=beds, max_pages=max_pages, headless=headless, enrich_top=0,
+            allow_extend=allow_extend,
         )
         state["scraped"] = len(listings)
         if listings:

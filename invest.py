@@ -384,8 +384,15 @@ def scrape_listings(
     max_pages: int = 5,
     headless: bool = True,
     enrich_top: int = 0,
+    allow_extend: bool = False,
 ) -> list[dict]:
-    """Scrape listings from PropertyGuru with per-district scraping."""
+    """Scrape listings from PropertyGuru with per-district scraping.
+
+    `allow_extend` lets a scope run past `max_pages` to its real end — the
+    deep-verification crawl wants that; a routine poll does not (see
+    scrapers.propertyguru.scrape, where extending used to be the silent default
+    and tripled the request budget).
+    """
     from scrapers.browser import BrowserManager
     from scrapers.propertyguru import PropertyGuruScraper
     from models import SearchParams
@@ -411,7 +418,8 @@ def scrape_listings(
 
     with BrowserManager(headless=headless) as context:
         scraper = PropertyGuruScraper(context)
-        listings, stats = scraper.scrape_multi_district(params, max_pages=max_pages)
+        listings, stats = scraper.scrape_multi_district(
+            params, max_pages=max_pages, allow_extend=allow_extend)
 
         # Enrich top listings if requested
         if enrich_top > 0 and listings:
