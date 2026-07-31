@@ -86,6 +86,25 @@ class TestDimensionWeights:
     """The arena contests MMR components — a dimension the MMR has zeroed is
     not a dimension, it is dead weight split evenly across every fight."""
 
+    def test_every_mmr_component_sits_in_exactly_one_dimension(self):
+        """The guard that caught nothing twice: v3.10 added `region` and v3.12
+        added `low_floor` to the MMR, and the arena silently ignored both —
+        the model's strongest measured forward signal (±4.2 raw span) and a
+        -7.0 demotion decided zero fights. Enumerating the emitted components
+        from compute_mmr itself means the NEXT added component fails here
+        until someone assigns it a dimension (or deliberately maps it dead,
+        like `future`)."""
+        from collections import Counter
+        from scoring.mmr import compute_mmr
+        emitted = set(compute_mmr(
+            ScoredListing(id="g", title="G", project_name="G",
+                          price=2_000_000, url="u"))["components"])
+        assigned = Counter(
+            k for keys, _w in arena_mod._BASE_DIMENSIONS.values() for k in keys)
+        assert set(assigned) == emitted
+        # exactly once: a component in two dimensions would be double-counted
+        assert all(n == 1 for n in assigned.values())
+
     def test_live_weights_sum_to_one(self):
         assert sum(w for _keys, w in DIMENSIONS.values()) == pytest.approx(1.0)
 
@@ -140,6 +159,41 @@ class TestDimensionWeights:
         fighters = run_arena([a, b])
         assert all(f.draws == 1 and f.wins == 0 and f.losses == 0 for f in fighters)
         assert all(f.elo == arena_mod.ELO_START for f in fighters)
+
+
+class TestRegionAndLowFloorFight:
+    """The two components the arena used to drop on the floor now decide
+    fights. Values below are the REAL emitted magnitudes (region: OCR +1.9 /
+    RCR +0.4 / CCR -2.3 at MMR_REGION_SLOPE 3.0; low_floor: -MMR_LOW_FLOOR_
+    PENALTY = -7.0), so these also pin that the spans clear TIE_MARGIN."""
+
+    def test_region_decides_an_otherwise_equal_fight(self):
+        """An OCR and a CCR listing are no longer regional equals: the ±4.2
+        span is contested inside `appreciation`."""
+        ocr = _fighter_listing("OCR", _comps(region=1.9))
+        ccr = _fighter_listing("CCR", _comps(region=-2.3))
+        fighters = run_arena([ocr, ccr])
+        assert fighters[0].name == "OCR"
+        assert fighters[0].wins == 1 and fighters[0].dims_won == {"appreciation": 1}
+        assert fighters[1].losses == 1
+
+    def test_ocr_vs_rcr_gap_also_clears_the_tie_margin(self):
+        # +1.9 vs +0.4 = 1.5 > TIE_MARGIN — the common OCR/RCR matchup is
+        # contested too, not just the extreme OCR/CCR pairing.
+        ocr = _fighter_listing("OCR", _comps(region=1.9))
+        rcr = _fighter_listing("RCR", _comps(region=0.4))
+        fighters = run_arena([ocr, rcr])
+        assert fighters[0].name == "OCR" and fighters[0].wins == 1
+
+    def test_low_floor_demotion_costs_the_liquidity_dimension(self):
+        """A confirmed low-floor stack now concedes `liquidity` (exit risk is
+        what the -7.0 measures) and with it an otherwise-even fight."""
+        clean = _fighter_listing("Clean", _comps())
+        stack = _fighter_listing("LowFloor", _comps(low_floor=-7.0))
+        fighters = run_arena([clean, stack])
+        assert fighters[0].name == "Clean"
+        assert fighters[0].wins == 1 and fighters[0].dims_won == {"liquidity": 1}
+        assert fighters[1].losses == 1
 
 
 class TestBrackets:
