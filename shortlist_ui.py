@@ -318,6 +318,25 @@ def _bed_chip(r: dict) -> str:
     return ""
 
 
+def _lens_chip(r: dict) -> str:
+    """Which lenses currently vouch for this listing.
+
+    Shown because "the algo likes it" stopped being one fact when the gate went
+    multi-lens. A row endorsed only by `mmr` is the old signal — cheap versus
+    district peers, the one shortlist.py's header warns correlates about -0.7
+    with actually exiting whole. A row a SECOND lens vouches for is a different
+    and better-supported claim, and the reader cannot tell them apart from the
+    algo number alone. Nothing renders while mmr is the only registered lens:
+    a chip that is always identical is noise.
+    """
+    endorsed = r.get("surfaced_by") or []
+    if not endorsed or endorsed == ["mmr"]:
+        return ""
+    return "".join(
+        f'<span class="chip lens" title="{_e(name)} vouches for this listing">'
+        f'{_e(name)}</span>' for name in endorsed)
+
+
 def _facts(r: dict) -> str:
     """The two or three numbers that a viewing decision needs and a column can't
     afford. Anything already printed on the row (psf, resale count) is not
@@ -377,7 +396,7 @@ def _row_html(r: dict, i: int, cut: float) -> str:
         f'<td><span class="read {kind}" title="{_e(read_blurb(r, cut))}">'
         f"{_READ_LABEL[kind]}</span></td>"
         f'<td><span class="verdict {vcls}">{_e(v)}</span></td>'
-        f'<td class="name">{_e(r.get("condo"))} {_bed_chip(r)}'
+        f'<td class="name">{_e(r.get("condo"))} {_bed_chip(r)}{_lens_chip(r)}'
         f'<div class="sub"><span class="tag '
         f'{"his" if r.get("mandate") == "his" else "hers"}">'
         f'{_e((r.get("mandate") or "—").upper())}</span> '
@@ -492,6 +511,8 @@ th.num { font-size:11px; }
 /* A contested size is a question, not a finding — amber, not red, so it reads
    as "check this" rather than "this is wrong". */
 .chip.q { background:rgba(210,153,34,.16); color:#d29922; }
+/* A second lens vouching is good news, and the only chip here that is. */
+.chip.lens { background:rgba(63,185,80,.16); color:var(--green); font-weight:600; }
 .prof { min-width:215px; }
 .meter { height:5px; background:#243040; border-radius:99px; overflow:hidden;
          max-width:190px; }

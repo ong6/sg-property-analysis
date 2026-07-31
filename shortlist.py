@@ -78,6 +78,9 @@ def collect(since: str) -> list[dict]:
                 "price": price, "beds": beds, "district": district,
                 "sqft": rec.get("sqft") or as_of.get("sqft"),
                 "score_1000": rec.get("score_1000"),
+                # Which lenses currently vouch for the live listing (weekly's
+                # gate is any-lens now, so "the algo likes it" is per-lens).
+                "surfaced_by": weekly.lens_endorsements(rec) if rec else [],
                 "url": url,
                 "mandate": weekly.mandate_for(price, beds, district),
                 "realscore": rs.get("realscore"),

@@ -1187,11 +1187,17 @@ Examples:
         usable = [r for r in records if r.get("price") and r.get("sqft") and r.get("psf")]
         print(f"\nScoring {len(usable)}/{len(records)} usable listings for the MMR backlog...", file=sys.stderr)
 
+        from scoring import lenses
+
         ura = load_ura_cache()
         scorer = FullScorer(ura_data=ura, cohort_stats=build_cohort_stats(usable))
         today = datetime.now().strftime("%Y-%m-%d")
         scored_vals = []
         errors = 0
+        # Lens entries merge key-by-key AFTER the flat fields (an un-run lens's
+        # stored score must survive), keyed by object identity because DB
+        # records have no other stable handle inside this loop.
+        lens_entries: dict[int, dict] = {}
         for r in usable:
             try:
                 s = scorer.score(r)
@@ -1203,8 +1209,20 @@ Examples:
             r["scored_at"] = today
             r["score_version"] = config.score_version()
             r.update(s.three_score_fields())  # valuation / livability / overalls
+            lens_entries[id(r)] = lenses.score_record(s, r, today=today)
             if s.score_1000 is not None:
                 scored_vals.append(s.score_1000)
+
+        # rank_norm needs the whole freshly-scored book, so it is stamped in a
+        # second pass: merge every lens score first, then read the books off
+        # the merged records, then rank only the entries THIS run produced
+        # (older vintages keep the rank they earned against their own book).
+        for r in usable:
+            lenses.merge_lens_scores(r, lens_entries.get(id(r)))
+        lens_books = lenses.book_scores(usable)
+        for r in usable:
+            for name, e in (lens_entries.get(id(r)) or {}).items():
+                e["rank_norm"] = lenses.rank_norm(e["score"], lens_books.get(name) or [])
 
         listings_db.save_db(db)
         path = listings_db.export_sheet(db=db)
@@ -1227,6 +1245,18 @@ Examples:
                     writer.writerow([today, r.get("id"), r.get("project_name"), r.get("district"),
                                      r.get("beds"), r.get("price"), r.get("psf"),
                                      r.get("mmr"), r.get("score_1000"), config.score_version()])
+
+        # Per-lens history — its OWN file with a `lens` column. Never rows in
+        # mmr_history.csv above: calibrate_forward.py cohorts off that file and
+        # mixed-lens rows would pollute the registered cohorts.
+        lenses.append_history([
+            {"scored_at": today, "lens": name, "id": r.get("id"),
+             "project_name": r.get("project_name"), "district": r.get("district"),
+             "beds": r.get("beds"), "price": r.get("price"), "psf": r.get("psf"),
+             "score": e["score"], "rank_norm": e.get("rank_norm"),
+             "lens_version": e["version"]}
+            for r in usable
+            for name, e in (lens_entries.get(id(r)) or {}).items()])
 
         if scored_vals:
             scored_vals.sort()
