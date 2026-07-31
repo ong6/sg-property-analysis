@@ -913,6 +913,63 @@ class PropertyGuruScraper:
         logger.info("Scraping complete: %d listings collected", len(all_listings))
         return all_listings
 
+    # Canary thresholds. Deliberately module-local, NOT in config.py: config.py
+    # is sha-hashed into score_version, so a constant added there would restamp
+    # the vintage of all 9,029 scored listings and restart the forward-
+    # calibration clock — for a scraper knob that has nothing to do with scoring.
+    CANARY_MIN_LISTINGS = 15          # a healthy page-1 returns ~20
+    CANARY_MIN_SANE_SHARE = 0.95      # stricter than the upsert gate's 0.90
+
+    def canary(self, params: SearchParams) -> dict:
+        """Fetch ONE page and report whether the extractor still works.
+
+        A full scan is ~123 page loads across 18 scopes. Discovering a layout
+        change on page 60 means an aborted scan, a poisoned batch, or — worst
+        and what actually happened — a silent fallback that reports success
+        while the JSON path has moved. One page up front is the cheapest
+        possible way to find out, and it costs less than a single scope.
+
+        Never raises: a canary that explodes must not be worse than no canary.
+        """
+        import listings_db
+
+        report: dict = {"ok": False, "scope": self._scope_label(params),
+                        "checks": {}, "reason": None}
+        try:
+            page = self._scrape_single_page(params, 1)
+        except Exception as e:  # noqa: BLE001 — diagnostic, never fatal
+            report["reason"] = f"page 1 raised {type(e).__name__}: {e}"
+            return report
+
+        if not page or not page.listings:
+            report["reason"] = "page 1 returned no listings at all"
+            return report
+
+        rows = [l.to_dict() if hasattr(l, "to_dict") else dict(l) for l in page.listings]
+        _, sanity = listings_db.check_batch_sanity(rows)
+        strategy = getattr(page.listings[0], "extraction_strategy", None)
+        share = sanity.get("pass_share")
+
+        checks = {
+            "primary_strategy": strategy == self.PRIMARY_STRATEGY,
+            "listing_count": len(page.listings) >= self.CANARY_MIN_LISTINGS,
+            "sane_share": share is None or share >= self.CANARY_MIN_SANE_SHARE,
+            "pagination_parsed": (page.total_pages or 0) >= 1
+                                 and (page.total_results or 0) > 0,
+        }
+        report.update(
+            checks=checks, strategy=strategy, listings=len(page.listings),
+            pass_share=share, total_results=page.total_results,
+            total_pages=page.total_pages,
+            ok=all(checks.values()),
+        )
+        if not report["ok"]:
+            report["reason"] = "failed: " + ", ".join(k for k, v in checks.items() if not v)
+            logger.warning("Canary %s — %s (strategy=%s, listings=%d, sane=%s)",
+                           report["scope"], report["reason"], strategy,
+                           len(page.listings), share)
+        return report
+
     def _scope_label(self, params: SearchParams) -> str:
         """Stable name for one (districts, beds) search scope, for coverage
         bookkeeping. Matches how the poller thinks about scopes."""
@@ -1297,8 +1354,13 @@ class PropertyGuruScraper:
                                 "data": body,
                             })
                             logger.debug("Intercepted API response: %s", url[:100])
-            except Exception:
-                pass
+            except Exception as e:  # noqa: BLE001 — a bad response must not kill the page
+                # Counted rather than swallowed. This handler runs for every
+                # response on the page, so a broken one is invisible without a
+                # tally; `pass` here meant interception could be failing 100% of
+                # the time and look identical to "nothing to intercept".
+                self._interception_errors = getattr(self, "_interception_errors", 0) + 1
+                logger.debug("Interception handler failed on %s: %s", url[:80], e)
 
         try:
             self._page.on("response", handle_response)
@@ -1402,12 +1464,28 @@ class PropertyGuruScraper:
 
         return None
 
+    # The extraction cascade's healthy state. Everything in the DB that carries
+    # provenance was extracted this way; the fallbacks exist for emergencies and
+    # have DIFFERENT price semantics (DOM reads a range's minimum, JSON reads its
+    # midpoint), so a silent switch shows up later as phantom price moves.
+    PRIMARY_STRATEGY = "__NEXT_DATA__"
+
     def _record_page_stats(self, result: ScrapedPage, strategy: str):
         """Record per-page stats from a successful extraction."""
         n = len(result.listings)
         self._stats.total_cards += n
         self._stats.parsed_ok += n
         self._stats.strategy_counts[strategy] = self._stats.strategy_counts.get(strategy, 0) + 1
+        if strategy != self.PRIMARY_STRATEGY:
+            # A fallback winning is the signature of a PropertyGuru layout
+            # change. It used to be logged at info level and read as success —
+            # the JSON path moved once already (props.pageProps.listingData ->
+            # props.pageProps.pageData.data) and cost months of enrichment while
+            # reporting fine.
+            logger.warning(
+                "Extraction fell back to %r on page %d — %s parsing is broken; "
+                "price semantics differ between strategies",
+                strategy, result.page_number, self.PRIMARY_STRATEGY)
         # Per-listing provenance — the DB uses this to suppress phantom price
         # changes when the winning strategy flips between sightings.
         for listing in result.listings:
