@@ -60,14 +60,14 @@ def render(results: dict, pid: str, dropped: int, total: int) -> str:
     if dropped:
         L.append(f"  ({dropped} dropped so all algorithms are compared on identical rows)")
     L.append("")
-    L.append(f"{'algorithm':18} {'rho':>7} {'95% CI':>18} {'sig':>4} "
+    L.append(f"{'algorithm':21} {'rho':>7} {'95% CI':>18} {'sig':>4} "
              f"{'dec.lift':>9} {'mono':>5} {'hit@25':>7} {'p':>6}")
-    L.append("-" * 80)
+    L.append("-" * 83)
     for name, m in results.items():
         d, h = m.get("decile") or {}, m.get("hit") or {}
         tag = "  (baseline)" if m["is_baseline"] else ""
         L.append(
-            f"{name:18} {_fmt(m['rho']):>7} "
+            f"{name:21} {_fmt(m['rho']):>7} "
             f"{'[' + _fmt(m['rho_lo']) + ',' + _fmt(m['rho_hi']) + ']':>18} "
             f"{'yes' if m['rho_significant'] else 'no':>4} "
             f"{_fmt(d.get('lift'), '+.4f'):>9} "
@@ -147,9 +147,9 @@ def main() -> int:
         for name in dev:
             deg = metrics.degradation(dev[name], val[name])
             if deg is None:
-                print(f"  {name:18} — (DEV rho too near zero to divide by)")
+                print(f"  {name:21} — (DEV rho too near zero to divide by)")
             else:
-                print(f"  {name:18} {deg['ratio']:+.2f}"
+                print(f"  {name:21} {deg['ratio']:+.2f}"
                       f"{'   OVERFIT' if deg['overfit_flag'] else ''}")
     else:
         run_split(panel.DEV_SPLIT if args.split == "dev" else panel.VAL_SPLIT,

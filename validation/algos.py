@@ -76,6 +76,67 @@ def trailing_cagr(r):
     return r.get("trailing_cagr")
 
 
+def lease_decay(r):
+    """Longest remaining lease first, freehold above everything.
+
+    The best-evidenced PRICE driver in the literature (Sia 2022, IRER: +1%
+    remaining lease -> +1.46% price; 71-85yr leaseholds ~25% below freehold,
+    far steeper than Bala's 7%) turned into the naive RETURN bet: decay drags
+    short leases, so avoid them. Freehold scores inf — no decay — which makes
+    hit@25 here read as "25 freeholds in panel order", i.e. buy-freehold-at-
+    random; the tie is real, not a bug.
+
+    Measured on this panel it INVERTS on DEV: rho -0.113 [-0.217,+0.027],
+    +0.030 [-0.133,+0.190] VAL, significant nowhere. Short-lease stock did
+    not lag its district over these 1-year windows — within leaseholds
+    remaining_lease -> excess_fwd is -0.140 [-0.252,+0.006] DEV / -0.067 VAL,
+    i.e. the decay drag the literature documents in price LEVELS is invisible
+    (sign-flipped, even) in 1-year relative returns inside one bull market.
+    What it does expose: cheapness and short lease are nearly one feature
+    here — rho(-psf_vs_dist, remaining_lease) = -0.757 DEV / -0.767 VAL among
+    leaseholds — so the psf_vs_dist baseline is, to first order, a
+    short-lease bet wearing a value label.
+    """
+    k = r.get("tenure_kind")
+    if k == "freehold":
+        return math.inf
+    if k == "leasehold":
+        return r.get("remaining_lease")
+    return None
+
+
+def enbloc_leasehold_age(r):
+    """Old leasehold first, freehold neutral — the collective-sale interaction.
+
+    Sia 2022's age dummies flip sign by tenure: leasehold age 31-40 carries
+    +0.328 (five-fold the 21-30 band's +0.0638, attributed to en-bloc
+    speculation) while freehold age runs negative; JHE 2023 puts the
+    redevelopment-optionality premium at 20-29%. So age is an interaction,
+    not a main effect, and this scores it as one: leasehold age counts up,
+    freehold pins to 0. Two stated approximations: URA has no completion date,
+    so freehold age does not exist here and the freehold half of the
+    interaction goes untested; and true optionality is GPR slack, which needs
+    the Master Plan — age is its computable shadow.
+
+    Collinearity warning: 99-year terms dominate, so within leaseholds this
+    is remaining_lease with the sign flipped (age = 99 - remaining). The two
+    drivers are one axis on this panel, separated only by where freehold sits
+    — which is exactly why lease_decay and this cannot both look good.
+
+    Measured: rho +0.111 [-0.034,+0.216] DEV, -0.020 [-0.189,+0.155] VAL.
+    The DEV point estimate leans the way Sia's coefficients say (old
+    leasehold outperforming), then the sign flips on VAL — a null, and the
+    flip is the tell that the DEV lean was the 2024-2025 old-condo catch-up,
+    not a durable driver.
+    """
+    k = r.get("tenure_kind")
+    if k == "freehold":
+        return 0.0
+    if k == "leasehold":
+        return r.get("lease_age")
+    return None
+
+
 # name -> (fn, is_baseline). Order is display order.
 ALGOS = {
     "random": (random_scorer(), True),
@@ -83,6 +144,8 @@ ALGOS = {
     "psf_vs_dist": (psf_vs_dist, True),
     "mmr_composite": (mmr_composite, False),
     "trailing_cagr": (trailing_cagr, False),
+    "lease_decay": (lease_decay, False),
+    "enbloc_leasehold_age": (enbloc_leasehold_age, False),
 }
 
 BASELINES = [k for k, (_, b) in ALGOS.items() if b]

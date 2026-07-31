@@ -30,7 +30,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from collections import defaultdict
+import re
+from collections import Counter, defaultdict
 
 import backtest as bt
 
@@ -66,6 +67,89 @@ DEFAULT_MIN_TXN = 5
 
 # Below this many prints in a window a median is noise, not a price.
 MIN_DISTRICT_TXN = 20
+
+# ---- tenure -----------------------------------------------------------------
+#
+# URA's Tenure column is close to clean: over the 106,749 loaded txns, 27,707
+# say "Freehold", 78,809 match "N yrs lease commencing from YYYY" (N from 60 to
+# 999999), and only 233 are the commencement-less "99 years leasehold" form —
+# a 99.78% parse rate at the transaction level, and 100% of panel rows in both
+# splits carry a parseable MODAL tenure.
+#
+# Two traps this parser exists to avoid, both live in build_panel's freehold
+# flag ('"999" in tenure' as the 999-year test):
+#   * "99 yrs lease commencing from 1999" contains "999" — Caribbean at Keppel
+#     Bay and Gardenvista, both ~74 years remaining at the DEV split, read as
+#     freehold there. Real decay assets, misfiled.
+#   * 9xx-year colonial leases (956 from 1928, 929 from 1953) contain no "999"
+#     and read as leasehold — but with ~850 years left they trade as freehold.
+# 6 of 393 DEV rows (4 of 386 VAL) disagree between that flag and this parser;
+# the panel keeps build_panel's `freehold` field untouched and puts the parsed
+# truth in `tenure_kind`, which is what the tenure algorithms read.
+
+_TENURE_RE = re.compile(
+    r"^(\d+)\s*(?:yrs?|years?)\s+lease\s+commencing\s+from\s+(\d{4})$")
+_TERM_ONLY_RE = re.compile(r"^(\d+)\s*(?:yrs?|years?)\s+leasehold$")
+
+# At or above this term a lease is economically freehold: no decay a buyer
+# will live to see, no expiry pressure driving en-bloc dynamics.
+FH_LEASE_YEARS = 800
+
+
+def parse_tenure(tenure: str, at: float):
+    """(kind, remaining_years, age_years) as of `at`; kind in
+    {'freehold', 'leasehold', None}.
+
+    `age` is years since lease COMMENCEMENT — the land grant, which precedes
+    completion by the ~3-4 year construction lag. That overstates building age
+    roughly uniformly, so it is harmless for ranking, and it is the only age
+    URA carries: there is no completion-date column, which is also why
+    freehold rows get age None rather than a number.
+
+    The commencement-less "99 years leasehold" form keeps kind='leasehold' but
+    remaining=None — the term is known, the clock's start is not, and
+    inventing one would put a made-up number in the panel's strongest-evidenced
+    feature.
+    """
+    s = (tenure or "").strip().lower()
+    if not s:
+        return None, None, None
+    if "freehold" in s:
+        return "freehold", None, None
+    m = _TENURE_RE.match(s)
+    if m:
+        term, start = int(m.group(1)), int(m.group(2))
+        if term >= FH_LEASE_YEARS:
+            return "freehold", None, None
+        age = at - start
+        return "leasehold", term - age, age
+    m = _TERM_ONLY_RE.match(s)
+    if m:
+        if int(m.group(1)) >= FH_LEASE_YEARS:
+            return "freehold", None, None
+        return "leasehold", None, None
+    return None, None, None
+
+
+def _attach_tenure(rows: list[dict], txns, split: float) -> None:
+    """As-of-T tenure features from each project's MODAL pre-T tenure string.
+
+    Modal for the same reason build_panel's flag is: a first-row read keys the
+    feature to load order and mislabels mixed/dirty-tenure projects. Strictly
+    pre-T txns only — tenure is a fixed attribute so this costs nothing, and
+    it keeps the no-look-ahead rule uniform rather than argued per-feature.
+    """
+    by_proj = defaultdict(Counter)
+    for x in txns:
+        if x["t"] <= split and x["tenure"]:
+            by_proj[(x["project"], x["district"])][x["tenure"]] += 1
+    for r in rows:
+        c = by_proj.get((r["project"], r["district"]))
+        modal = c.most_common(1)[0][0] if c else ""
+        kind, remaining, age = parse_tenure(modal, split)
+        r["tenure_kind"] = kind
+        r["remaining_lease"] = remaining
+        r["lease_age"] = age
 
 
 def _district_forward(txns, split: float, window: float) -> dict:
@@ -120,6 +204,7 @@ def build(split: float = VAL_SPLIT, window: float = DEFAULT_WINDOW,
         out.append({**r, "window": window,
                     "district_forward_cagr": d,
                     "excess_fwd": r["forward_cagr"] - d})
+    _attach_tenure(out, txns, split)
     out.sort(key=lambda r: (r["district"], r["project"]))
     return out
 
@@ -148,6 +233,11 @@ def summary(rows: list[dict]) -> dict:
         "excess_fwd_mean": sum(ex) / len(ex) if ex else None,
         "excess_fwd_median": bt._median(ex),
         "split_sample_fallbacks": sum(r.get("ss_fallback") or 0 for r in rows),
+        "tenure_freehold": sum(1 for r in rows if r["tenure_kind"] == "freehold"),
+        "tenure_leasehold": sum(1 for r in rows if r["tenure_kind"] == "leasehold"),
+        "tenure_unparsed": sum(1 for r in rows if r["tenure_kind"] is None),
+        "remaining_lease_known": sum(1 for r in rows
+                                     if r["remaining_lease"] is not None),
     }
 
 
