@@ -10,10 +10,16 @@ Buy / Neutral / Avoid call.** The score is one input, never the answer.
 All computed metrics (yield, ROI, liquidity, MMR) assume an **investment**
 purpose (5–7yr hold). If the user's request suggests **own-stay** — or is
 ambiguous between the two — **ask the user which it is before rating.**
-Own-stay shifts the rubric: livability, layout, facing, noise, schools and
-commute outweigh yield and exit liquidity; "oversized unit" flips from flag to
-feature, and the 0–100 livability score becomes the primary lens. Full
-comparison: `docs/evaluation-rubric.md`.
+
+Own-stay **adds** constraints, it does not remove them: run the full investment
+screen, then narrow to what the household can live in. It is an intersection,
+never a substitution. Every home is eventually sold, and a family selling on a
+school timetable or a job move has *less* control over timing than an investor —
+so exit liquidity matters more to them, not less. The one flag that genuinely
+inverts is `oversized_unit` (space you live in is worth paying for); a thin
+resale market or a bad exit record disqualifies a home exactly as it does an
+investment. The 0–100 livability score is the filter on survivors, never the
+primary lens. Full comparison: `docs/evaluation-rubric.md`.
 
 ## Pick the flow (each has a skill with the full runbook)
 
