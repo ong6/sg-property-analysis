@@ -321,17 +321,12 @@ def run_poll(
         )
         state["scraped"] = len(listings)
         if listings:
-            # Batch sanity gate (#14b): one PG redesign must not poison the
-            # DB. A failing batch aborts the upsert LOUDLY (poll_state.error).
-            gate_ok, gate = listings_db.check_batch_sanity(listings)
-            state["sanity_gate"] = gate
-            if not gate_ok:
-                raise listings_db.BatchSanityError(
-                    f"scrape batch failed pre-upsert invariants "
-                    f"({gate['passed']}/{gate['batch']} sane, "
-                    f"fail_reasons={gate['fail_reasons']}) — upsert aborted")
+            # Batch sanity gate (#14b): one PG redesign must not poison the DB.
+            # Enforced inside upsert_listings now, so every flow gets it — this
+            # records the report and lets BatchSanityError reach poll_state.error.
             stats = listings_db.upsert_listings(
                 listings, source={"flow": "poll", "districts": districts})
+            state["sanity_gate"] = stats.get("sanity_gate")
             state.update({k: stats[k] for k in ("added", "updated", "price_changes")})
 
         after = listings_db.load_db()["listings"]

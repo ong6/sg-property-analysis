@@ -56,10 +56,16 @@ class SearchParams:
         if self.beds and len(self.beds) > 1:
             for b in self.beds:
                 pairs.append(("bedrooms", str(b)))
-        if self.sort != "date":
-            pairs.append(("sort", self.sort))
-        if self.order != "desc":
-            pairs.append(("order", self.order))
+        # Always emitted, even at the defaults. Date-desc is not a preference
+        # here, it is a load-bearing assumption: the poller treats page depth as
+        # "how far back one scan reaches" (weekly.POLL_MAX_PAGES), and
+        # listings_db.sweep_staleness only dares call a listing missing when it
+        # falls inside the recency window a date-desc scrape demonstrably
+        # covered. Both are nonsense under a "Recommended"-style ordering.
+        # Omitting the params left that ordering to PropertyGuru's default —
+        # correct today by luck, and silently rotting the day the default moves.
+        pairs.append(("sort", self.sort))
+        pairs.append(("order", self.order))
         if self.freetext:
             pairs.append(("freetext", self.freetext))
         return urlencode(pairs) if pairs else ""
@@ -120,6 +126,13 @@ class ScrapeStats:
     fields_missing: Counter = field(default_factory=Counter)  # field_name -> count
     per_district_counts: dict = field(default_factory=dict)  # district -> listing count
     enriched_count: int = 0
+    # Coverage bookkeeping. Without these the repo cannot state what fraction of
+    # live inventory it holds — it knows what it fetched, never what it missed.
+    # `scope_coverage` maps a scope label to {total_results, total_pages,
+    # pages_fetched, truncated}; `truncated` marks a scope that stopped on an
+    # empty page rather than a known last page, which is what a mid-scan
+    # Cloudflare block or parse regression looks like from the outside.
+    scope_coverage: dict = field(default_factory=dict)
 
     def merge(self, other: "ScrapeStats"):
         """Merge another ScrapeStats into this one."""
@@ -133,6 +146,24 @@ class ScrapeStats:
         self.fields_missing.update(other.fields_missing)
         self.per_district_counts.update(other.per_district_counts)
         self.enriched_count += other.enriched_count
+        self.scope_coverage.update(other.scope_coverage)
+
+    def coverage_summary(self) -> dict:
+        """Reach across every scope this run touched: how much was there, how
+        much was fetched, and which scopes ended in the dark."""
+        scopes = self.scope_coverage.values()
+        available = sum(s.get("total_results") or 0 for s in scopes)
+        return {
+            "scopes": len(self.scope_coverage),
+            "results_available": available,
+            "results_seen": sum(s.get("listings_seen") or 0 for s in scopes),
+            "pages_available": sum(s.get("total_pages") or 0 for s in scopes),
+            "pages_fetched": sum(s.get("pages_fetched") or 0 for s in scopes),
+            "truncated_scopes": sorted(k for k, s in self.scope_coverage.items()
+                                       if s.get("truncated")),
+            "capped_scopes": sorted(k for k, s in self.scope_coverage.items()
+                                    if s.get("capped")),
+        }
 
     def summary(self) -> str:
         lines = [

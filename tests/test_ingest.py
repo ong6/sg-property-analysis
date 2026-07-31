@@ -199,6 +199,32 @@ class TestBatchGate:
             [_listing(id=str(i), psf=None) for i in range(12)])
         assert ok
 
+    def test_the_gate_guards_the_door_not_just_the_poller(self, tmp_db):
+        """Every upsert flow is gated, not only poller.run_poll.
+
+        invest.py's url/condo/auto/districts flows called upsert_listings
+        directly and were entirely ungated — a PropertyGuru redesign could write
+        a mangled batch straight into the DB through any of them.
+        """
+        poisoned = [_listing(id=str(i)) for i in range(7)] + [
+            {"id": "x1", "price": 5_000, "sqft": 700.0},
+            {"id": "x2", "price": 1_400_000, "sqft": 60.0},
+            {"id": "x3", "price": 1_400_000, "sqft": 700.0, "psf": 4000.0},
+        ]
+        with pytest.raises(listings_db.BatchSanityError):
+            listings_db.upsert_listings(poisoned, source={"flow": "districts"})
+        assert listings_db.load_db()["listings"] == {}, "nothing may be written"
+
+    def test_a_healthy_batch_reports_its_gate(self, tmp_db):
+        stats = listings_db.upsert_listings([_listing(id=str(i)) for i in range(12)])
+        assert stats["added"] == 12 and stats["sanity_gate"]["pass_share"] == 1.0
+
+    def test_gate_false_is_an_explicit_opt_out(self, tmp_db):
+        bad = [_listing(id=str(i), price=5_000, sqft=60.0, psf=None)
+               for i in range(12)]
+        stats = listings_db.upsert_listings(bad, gate=False)
+        assert stats["added"] == 12 and "sanity_gate" not in stats
+
 
 # ---------------------------------------------------------------------------
 # #7b strategy-aware price history
