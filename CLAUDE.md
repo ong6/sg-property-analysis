@@ -111,6 +111,45 @@ Missing data is neutral, never penalized. Sanity-check tool:
 python invest.py --score '{"price":2300000,"sqft":958,"psf":2401,"beds":2,"district":"D15","tenure":"Freehold","project_name":"...","appreciation_rate_pct":5.5,"monthly_rent":6200}'
 ```
 
+## Validation harness (`validation/`) — does an algorithm rank better than nothing?
+
+```bash
+python -m validation.run --both        # DEV + VAL + the degradation ratio
+```
+
+Separate from `backtest.py` on purpose. That harness measures FEATURES on a
+panel the v3.3–v3.10 weights were then tuned against — useful, but in-sample by
+construction. This one answers only "does algorithm A rank condos better than
+algorithm B, and better than no algorithm at all", and refuses to answer it in
+ways that flatter the algorithm.
+
+- **Target** `excess_fwd`: forward PSF CAGR per project × size-band, **minus its
+  district's**. Differenced because the whole usable panel sits in one bull
+  market, so a raw forward return mostly measures "was it 2022". Size-banded
+  because PSF falls with unit size (elasticity ≈ −0.19) — the artifact that
+  explained away all 12 top scorers in the 2026-07-29 sweep.
+- **The bar is `psf_vs_dist`, not zero.** Baselines (random, district-median,
+  single-feature cheapness) are reported on every run. An assembled model that
+  cannot beat one feature has added complexity and nothing else.
+- **Splits are measured, not chosen.** A split needs a 3-year feature lookback
+  plus the outcome window, inside URA data spanning 2021.38–2026.46. At
+  window=2.0 the legal range is 0.08 years — one split, no validation split at
+  all. Only window=1.0 admits two with disjoint outcome windows, and that is a
+  real compromise (far short of a 5–7yr hold). The fix is another year of
+  prints, not cleverness.
+- **In-regime is not validated.** Both splits sit in 2021–2026. Passing VAL
+  means "not overfit to noise", never "works". Only `calibrate_forward.py`'s
+  prospective clock tests that; first honest read ~2027-08.
+- Results append to `data/validation_results.csv` so they can be graphed across
+  months. `panel_id` embeds a content hash — two rows are only comparable if it
+  matches.
+
+**Never add a constant to `config.py` for a non-scoring knob.** It is
+sha-hashed into `score_version`, so any non-comment line there restamps the
+vintage of all 9,029 scored listings and splits the registered calibration
+cohort. `calibrate_forward.VERSION_ALIASES` exists because this already
+happened once.
+
 ## Condo arena (`--fight`) — AI referee required
 
 `python invest.py --fight` runs a pairwise tournament over the listings DB —
@@ -419,6 +458,11 @@ weekly.py              # Weekly scan: MANDATES, poll -> algo grade -> gate -> di
 shortlist.py           # Ranked buy-list (eval memory + realsmart + DB), exit-record first
 shortlist_ui.py        # Shortlist viewer (:8644) with the TRAP/HOLDS read chip
 realsmart.py           # realsmart.sg slug resolution from their sitemap
+validation/            # Out-of-sample harness: does an algorithm rank better than nothing?
+  panel.py             #   excess_fwd target, district-differenced, size-banded; legal splits
+  algos.py             #   algorithms under test + the baselines they must beat
+  metrics.py           #   rho w/ cluster-bootstrap CI, decile lift, hit@K w/ permutation null
+  run.py               #   runner -> data/validation_results.csv (append-only ledger)
 realsmart_cache.py     # Per-project realsmart facts, 45-day TTL, /p then /map fallback
 bed_bands.py           # Per-project bedroom->size bands from URA rental contracts
 backtest.py            # Point-in-time URA backtest (validates MMR weights)
