@@ -202,13 +202,34 @@ MIN_SCORE_FOR_AI = 650
 # 8, not the 5 a daily cadence used: a weekly scan sweeps ~7 days of inventory,
 # so the same cap would be ~7x stingier per listing seen. Still far below a
 # daily run's 35/week — weekly is the cheaper cadence either way.
-MAX_AI_RUNS_PER_SCAN = 8
+#
+# Raised to 12 on 2026-07-31, because the cap is the binding constraint on
+# COVERAGE, not a safety valve. Measured on the live book: 426 in-mandate
+# listings clear the gate, which dedupe to 137 (condo x bed count) cohorts
+# across 107 distinct condos — and 26 condos had been researched. At 8/scan the
+# 30-day cooldown rotates through 107 condos in ~13 weeks; at 12 it is ~9. The
+# real cost is wall clock, not tokens: agent runs are serial at roughly 8
+# minutes each, so a 12-run scan takes ~100 minutes (measured 2026-07-29:
+# 20:55 -> 22:34 for exactly 12). That is tolerable for a hand-run weekly scan
+# and is why this is not higher.
+MAX_AI_RUNS_PER_SCAN = 12
 
 # Pages per (district, beds) to pull. PropertyGuru search is date-desc, so this
 # is really "how far back does one scan reach". The poller's default of 2 is
 # tuned for 6-hourly polling; a week of listings needs deeper pagination or the
 # older half of the week silently never gets seen.
-POLL_MAX_PAGES = 5
+#
+# 10, raised from 5 on 2026-07-31 — and the raise is a CORRECTION, not an
+# expansion. Until that day `max_pages` was a floor: the scraper read
+# total_pages after page 1 and silently extended to min(total_pages, 15). So
+# the 2026-07-28 poll asked for 5 and actually fetched 2,462 listings across 18
+# scopes — about 6.8 pages per scope, well past its stated budget. Making the
+# cap real (scrapers/propertyguru.py) would therefore have QUIETLY CUT reach by
+# roughly a third while looking like a safety fix. 10 sits above the measured
+# 6.8 so the cap binds rarely, and unlike the old behaviour it is a budget the
+# caller actually controls. Cost at the ceiling: 18 x 10 = 180 page loads,
+# ~2s apart, so about 15 minutes of scraping.
+POLL_MAX_PAGES = 10
 
 # How old a sighting may be and still earn an agent run. A record is `active`
 # until the staleness sweep demotes it, and that sweep is deliberately
@@ -286,6 +307,27 @@ def realsmart_url(project_name: str | None) -> tuple[str, bool]:
 # --------------------------------------------------------------------------- #
 # State
 # --------------------------------------------------------------------------- #
+def deep_scope(state: dict) -> tuple[list, list]:
+    """The one (district, beds) scope to crawl to its real end this cycle.
+
+    A routine poll reads only the newest POLL_MAX_PAGES pages per scope, so
+    anything deeper is never re-seen — which is why 5,378 of 9,040 `active`
+    records were last sighted in June and why the gate now refuses to spend
+    agent runs on them (MAX_SIGHTING_AGE_DAYS). Those records cannot age out
+    either: sweep_staleness only judges listings inside the recency window a
+    poll demonstrably covered, and a 5-page poll never covers them.
+
+    So one scope per cycle gets `allow_extend` and is crawled to its end. With
+    18 scopes that re-verifies every scope's deep stock about every 18 weeks —
+    slow, but it is the only mechanism that closes the loop at all, and it adds
+    one scope's pages rather than 18x the budget. Round-robin by cycle count so
+    no scope is favoured.
+    """
+    scopes = [([d], [b]) for d in SCAN_DISTRICTS for b in SCAN_BEDS]
+    n = len(state.get("history") or [])
+    return scopes[n % len(scopes)]
+
+
 def load_state() -> dict:
     try:
         with open(STATE_FILE) as f:
@@ -1296,6 +1338,9 @@ def main() -> int:
     ap.add_argument("--max-price", type=int,
                     default=int(SCAN_MAX_PRICE * SCAN_PRICE_HEADROOM),
                     help="scrape ceiling; defaults to the top mandate budget + headroom")
+    ap.add_argument("--no-deep", action="store_true",
+                    help="skip this cycle's rotating deep-verification scope "
+                         "(one scope crawled to its end so deep stock is re-seen)")
     ap.add_argument("--no-store-push", action="store_true",
                     help="don't append good finds to the personal data store note")
     args = ap.parse_args()
@@ -1339,6 +1384,28 @@ def main() -> int:
             max_price=args.max_price,
             headless=args.headless,
         )
+
+        # One scope per cycle crawled to its real end — the only mechanism that
+        # ever re-verifies deep stock (see deep_scope). Best-effort: it is a
+        # coverage bonus, so a failure here must not fail the scan.
+        if not args.no_deep and not args.districts and not args.beds:
+            dd, db_ = deep_scope(state)
+            print(f"Deep-verifying scope D{dd[0]:02d} {db_[0]}BR "
+                  f"(rotating, ~every {len(SCAN_DISTRICTS) * len(SCAN_BEDS)} cycles)…",
+                  file=sys.stderr)
+            try:
+                deep = poller.run_poll(districts=dd, beds=db_,
+                                       max_pages=args.max_pages, allow_extend=True,
+                                       max_price=args.max_price, headless=args.headless)
+                poll_state["deep_scope"] = {
+                    "districts": dd, "beds": db_,
+                    "scraped": deep.get("scraped"), "added": deep.get("added"),
+                    "ok": bool(deep.get("ok")),
+                }
+            except Exception as e:  # noqa: BLE001 — bonus coverage, never fatal
+                poll_state["deep_scope"] = {"districts": dd, "beds": db_,
+                                            "ok": False, "error": str(e)}
+                print(f"  deep verify failed ({e}) — continuing", file=sys.stderr)
 
     rows = list(poll_state.get("new_listings") or []) + \
         list(poll_state.get("changed_listings") or [])

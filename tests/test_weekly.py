@@ -105,6 +105,36 @@ class TestGate:
         assert "--from-db a" in weekly._agent_prompt(short[0])
 
 
+class TestDeepScopeRotation:
+    """One scope per cycle is crawled to its real end.
+
+    A routine poll reads only the newest POLL_MAX_PAGES pages per scope, so
+    deeper stock is never re-seen — 5,378 of 9,040 `active` records were last
+    sighted in June — and sweep_staleness cannot age it out either, because it
+    only judges listings inside the window a poll demonstrably covered. This
+    rotation is the only mechanism that ever closes that loop.
+    """
+
+    def test_every_scope_is_covered_before_any_repeats(self):
+        n = len(weekly.SCAN_DISTRICTS) * len(weekly.SCAN_BEDS)
+        seen = [weekly.deep_scope({"history": [0] * i}) for i in range(n)]
+        assert len({(d[0], b[0]) for d, b in seen}) == n
+
+    def test_it_wraps_rather_than_running_off_the_end(self):
+        n = len(weekly.SCAN_DISTRICTS) * len(weekly.SCAN_BEDS)
+        assert weekly.deep_scope({"history": [0] * n}) == weekly.deep_scope({})
+
+    def test_a_fresh_state_picks_the_first_scope(self):
+        d, b = weekly.deep_scope({})
+        assert d == [weekly.SCAN_DISTRICTS[0]] and b == [weekly.SCAN_BEDS[0]]
+
+    def test_a_scope_is_one_district_and_one_bed_count(self):
+        # It must be a single scope: allow_extend on all 18 would multiply the
+        # request budget, which is the failure the hard page cap just fixed.
+        d, b = weekly.deep_scope({"history": [0] * 7})
+        assert len(d) == 1 and len(b) == 1
+
+
 class TestSightingFreshness:
     """--full-book gates the whole book, which promotes never-re-verified stock.
 
