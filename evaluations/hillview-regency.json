@@ -56,6 +56,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-regency-25546581",
         "review_file": "cov_batch_35.json"
       }
+    },
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 1,152 sqft '3BR' at Hillview Regency (26 Bukit Batok East Ave 2, 99LH from 2000) asking $1.28M / $1,111 psf — the cheapest of 12 live asks in the project and the top 2% of the scored book (score_1000 769). The discount does not survive inspection: 1,152 sqft is a low-floor format at this project (both URA prints ever recorded at that exact size are floor 01-05), and low-floor 1,071-1,233 sqft units clear at a $1,056 psf median vs $1,194 for floors 6+. Against its true cohort the ask is +5.2% ABOVE market, not -7% below it.",
+      "rating_rationale": "The one robust forward signal in this model is cheap-vs-peers, and this unit does not have it once the comp set is drawn correctly. Benchmarked against the whole 1,071-1,233 sqft band (n=29, 24mo) the $1,111 psf ask looks -7.0% cheap, which is what drove score_1000 to 769 (psf_value +5.36, age_value +11.78, rank_norm 0.981). But URA's Floor Level column splits that band cleanly in two: the four sub-$1,100 psf prints in 24 months are ALL floor 01-05, and the tiers are $1,056 psf median (01-05, n=4) vs $1,194 psf (floors 6+, n=25) — an ~11.6% structural floor gap. Both prints ever recorded at exactly 1,152 sqft are floor 01-05 (Oct-2021 $925k/$803psf; Dec-2024 $1,220,000/$1,059psf), i.e. a 100% low-floor share. Priced against that cohort the ask is +5.2% above median, and +4.9% above the Dec-2024 same-size print in ~20 months while the project's own band median went sideways ($1,194 24mo vs $1,191 12mo). So there is no value edge — the apparent one is the floor. The v3.8 print-contradiction rule missed it because the +/-7% size tolerance (1,071-1,233 sqft) is wider than this project's separation between its ground format (1,152) and its tower stacks (1,109/1,119/1,130): the low-floor share dilutes from 100% at the exact size to 14% across the band, under the 0.7 trigger, and no stack keys reached factual_data at all. Second, unresolved question: the condo directories put 1,152 sqft at the TOP of the 2-bedroom / 2+study+balcony line (904-1,152), with true 3BRs at 1,109-1,195 — and the subject is the only 1,152 in a 12-listing live book otherwise made of 1,109/1,119/1,130/1,195. bed_bands returns 'ok' but only at 100-sqft bucket resolution (band 1150, 174 contracts), which cannot separate 1,119/1,130/1,152 — the documented overlap blindspot. A ground unit whose strata area is padded by PES would explain both the size and the PSF. Unverified, but it is the buyer's risk, not the seller's. Third, the -15.7% vs the age-adjusted D23 median is a sub-market level, not a dislocation: despite the name this is Bukit Batok East on the NSL (Bukit Batok 867m, Bukit Gombak 946m), not the Hillview/Dairy Farm DTL enclave, and the project has always traded ~20% under the blended D23 median. Do not double-count it as value. What is genuinely good is the exit record, not this entry: REALSCORE 3.6, 92.5% of 626 resales profitable (576 vs 50), avg holding 7.2yr, 4.3% avg annualized profit over the past year, 572 units and 1,177 lifetime transactions. That is real downside evidence — but it is backward-looking and era-driven (owners entered at 2000s prices; the project is already +38% since 2019), and it argues the development is safe, not that this ask is cheap. Net: a fairly-to-fully-priced low-floor unit in a liquid but unremarkable OCR leasehold, on 73 years of lease, at 3.75% gross / ~2.2% net carry, with no cheapness edge and an open format question. Avoid at $1.28M. The call is explicitly conditional: if viewing establishes this is a genuine mid/high-floor 3BR, the $1,111 psf becomes a real ~7% discount to the $1,194 cohort and this flips to a Buy — confirm the floor and the bedroom count before anything else.",
+      "red_flags": [
+        "Apparent -7% discount is a floor artifact: both URA prints ever at 1,152 sqft are floor 01-05; low-floor cohort median is $1,056 psf, so the ask is +5.2% ABOVE its true comp set",
+        "Possible bedroom relabel: condo directories place 1,152 sqft at the top of the 2BR / 2+study+balcony range (904-1,152); true 3BRs are 1,109-1,195. bed_bands 'ok' is only 100-sqft-bucket resolution and cannot discriminate",
+        "Only 1,152 sqft unit in a 12-listing live book (others 1,109/1,119/1,130/1,195) — a rare format, likely ground/PES, which is the slowest-exiting slice",
+        "score_1000 769 (top 2%) is inflated by the artifact: psf_value +5.36 and age_value +11.78 credit a discount that is floor and sub-market, not value",
+        "'Hillview' in name only — 26 Bukit Batok East Ave 2, 867m to Bukit Batok (NSL) / 946m Bukit Gombak, no DTL; the -15.7% vs age-adjusted D23 median is a permanent sub-market level (D23 bifurcation), not a dislocation",
+        "99LH from 20/06/2000: 73 years left today, ~67-69 at a 2031-33 exit. DB's remaining_lease of 75 is 2 years optimistic (computed off completion 2005, not lease start 2000)",
+        "Thin carry: $4,000 median rent (realsmart, 12 latest) = 3.75% gross / ~2.2% net at ask; a low-floor unit rents at the bottom of the $3,400-4,550 range, so the model's $4,200 project-average rent is optimistic here",
+        "61% HDB buyers — demand is upgrader-dependent and tracks the HDB resale cycle",
+        "Brand-new listing (first seen 2026-08-12, one price point): no time-on-market evidence yet either way"
+      ],
+      "catalysts": [
+        "Strong exit record: 92.5% of 626 resales profitable (576 profitable / 50 unprofitable), REALSCORE 3.6, avg holding 7.2yr — genuine downside evidence that the development rarely loses owners money",
+        "Deep liquidity: 572 units, 1,177 lifetime transactions, ~20 resales/yr, 38 rental contracts in the past month — easy to exit at the right price",
+        "OCR region prior is the strongest regional baseline (realized forward ~+3.7%/yr vs RCR +3.1 / CCR +1.9)",
+        "$1.28M for a 1,152 sqft family unit sits in the deepest-liquidity quantum band and well inside the 'his' mandate (<=$1.8M, 3BR)",
+        "Unusually strong facilities for the price point (6 pools, 4 tennis courts, golf driving range); 4.2/5 across 33 reviews",
+        "Three primary schools within 1km (Lianhua 426m, Keming 757m, Bukit View 821m) — durable upgrader demand"
+      ],
+      "as_of": {
+        "price": 1280000,
+        "psf": 1111.11,
+        "beds": 3,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.46,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.94,
+        "nearest_mrt": "Bukit Gombak",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 75
+      },
+      "agent_evaluation": {
+        "summary": "A 1,152 sqft '3BR' at Hillview Regency (26 Bukit Batok East Ave 2, 99LH from 2000) asking $1.28M / $1,111 psf — the cheapest of 12 live asks in the project and the top 2% of the scored book (score_1000 769). The discount does not survive inspection: 1,152 sqft is a low-floor format at this project (both URA prints ever recorded at that exact size are floor 01-05), and low-floor 1,071-1,233 sqft units clear at a $1,056 psf median vs $1,194 for floors 6+. Against its true cohort the ask is +5.2% ABOVE market, not -7% below it.",
+        "rating": "Avoid",
+        "rating_rationale": "The one robust forward signal in this model is cheap-vs-peers, and this unit does not have it once the comp set is drawn correctly. Benchmarked against the whole 1,071-1,233 sqft band (n=29, 24mo) the $1,111 psf ask looks -7.0% cheap, which is what drove score_1000 to 769 (psf_value +5.36, age_value +11.78, rank_norm 0.981). But URA's Floor Level column splits that band cleanly in two: the four sub-$1,100 psf prints in 24 months are ALL floor 01-05, and the tiers are $1,056 psf median (01-05, n=4) vs $1,194 psf (floors 6+, n=25) — an ~11.6% structural floor gap. Both prints ever recorded at exactly 1,152 sqft are floor 01-05 (Oct-2021 $925k/$803psf; Dec-2024 $1,220,000/$1,059psf), i.e. a 100% low-floor share. Priced against that cohort the ask is +5.2% above median, and +4.9% above the Dec-2024 same-size print in ~20 months while the project's own band median went sideways ($1,194 24mo vs $1,191 12mo). So there is no value edge — the apparent one is the floor. The v3.8 print-contradiction rule missed it because the +/-7% size tolerance (1,071-1,233 sqft) is wider than this project's separation between its ground format (1,152) and its tower stacks (1,109/1,119/1,130): the low-floor share dilutes from 100% at the exact size to 14% across the band, under the 0.7 trigger, and no stack keys reached factual_data at all. Second, unresolved question: the condo directories put 1,152 sqft at the TOP of the 2-bedroom / 2+study+balcony line (904-1,152), with true 3BRs at 1,109-1,195 — and the subject is the only 1,152 in a 12-listing live book otherwise made of 1,109/1,119/1,130/1,195. bed_bands returns 'ok' but only at 100-sqft bucket resolution (band 1150, 174 contracts), which cannot separate 1,119/1,130/1,152 — the documented overlap blindspot. A ground unit whose strata area is padded by PES would explain both the size and the PSF. Unverified, but it is the buyer's risk, not the seller's. Third, the -15.7% vs the age-adjusted D23 median is a sub-market level, not a dislocation: despite the name this is Bukit Batok East on the NSL (Bukit Batok 867m, Bukit Gombak 946m), not the Hillview/Dairy Farm DTL enclave, and the project has always traded ~20% under the blended D23 median. Do not double-count it as value. What is genuinely good is the exit record, not this entry: REALSCORE 3.6, 92.5% of 626 resales profitable (576 vs 50), avg holding 7.2yr, 4.3% avg annualized profit over the past year, 572 units and 1,177 lifetime transactions. That is real downside evidence — but it is backward-looking and era-driven (owners entered at 2000s prices; the project is already +38% since 2019), and it argues the development is safe, not that this ask is cheap. Net: a fairly-to-fully-priced low-floor unit in a liquid but unremarkable OCR leasehold, on 73 years of lease, at 3.75% gross / ~2.2% net carry, with no cheapness edge and an open format question. Avoid at $1.28M. The call is explicitly conditional: if viewing establishes this is a genuine mid/high-floor 3BR, the $1,111 psf becomes a real ~7% discount to the $1,194 cohort and this flips to a Buy — confirm the floor and the bedroom count before anything else.",
+        "red_flags": [
+          "Apparent -7% discount is a floor artifact: both URA prints ever at 1,152 sqft are floor 01-05; low-floor cohort median is $1,056 psf, so the ask is +5.2% ABOVE its true comp set",
+          "Possible bedroom relabel: condo directories place 1,152 sqft at the top of the 2BR / 2+study+balcony range (904-1,152); true 3BRs are 1,109-1,195. bed_bands 'ok' is only 100-sqft-bucket resolution and cannot discriminate",
+          "Only 1,152 sqft unit in a 12-listing live book (others 1,109/1,119/1,130/1,195) — a rare format, likely ground/PES, which is the slowest-exiting slice",
+          "score_1000 769 (top 2%) is inflated by the artifact: psf_value +5.36 and age_value +11.78 credit a discount that is floor and sub-market, not value",
+          "'Hillview' in name only — 26 Bukit Batok East Ave 2, 867m to Bukit Batok (NSL) / 946m Bukit Gombak, no DTL; the -15.7% vs age-adjusted D23 median is a permanent sub-market level (D23 bifurcation), not a dislocation",
+          "99LH from 20/06/2000: 73 years left today, ~67-69 at a 2031-33 exit. DB's remaining_lease of 75 is 2 years optimistic (computed off completion 2005, not lease start 2000)",
+          "Thin carry: $4,000 median rent (realsmart, 12 latest) = 3.75% gross / ~2.2% net at ask; a low-floor unit rents at the bottom of the $3,400-4,550 range, so the model's $4,200 project-average rent is optimistic here",
+          "61% HDB buyers — demand is upgrader-dependent and tracks the HDB resale cycle",
+          "Brand-new listing (first seen 2026-08-12, one price point): no time-on-market evidence yet either way"
+        ],
+        "catalysts": [
+          "Strong exit record: 92.5% of 626 resales profitable (576 profitable / 50 unprofitable), REALSCORE 3.6, avg holding 7.2yr — genuine downside evidence that the development rarely loses owners money",
+          "Deep liquidity: 572 units, 1,177 lifetime transactions, ~20 resales/yr, 38 rental contracts in the past month — easy to exit at the right price",
+          "OCR region prior is the strongest regional baseline (realized forward ~+3.7%/yr vs RCR +3.1 / CCR +1.9)",
+          "$1.28M for a 1,152 sqft family unit sits in the deepest-liquidity quantum band and well inside the 'his' mandate (<=$1.8M, 3BR)",
+          "Unusually strong facilities for the price point (6 pools, 4 tennis courts, golf driving range); 4.2/5 across 33 reviews",
+          "Three primary schools within 1km (Lianhua 426m, Keming 757m, Bukit View 821m) — durable upgrader demand"
+        ],
+        "rental_assessment": "realsmart: median rent $4,000/mo across the 12 latest contracts (range $3,400-$4,550), avg $3.63 psf, 38 contracts in the past month, est. project yield 3.6%. The scorer used $4,200 (URA project-bed average, 49 contracts, conf 0.95) for a 3.94% gross / 2.37% net. Both are defensible at project level, but a low-floor unit lets at the bottom of the range, so ~$3,800-4,000 is the realistic figure here: ~3.6% gross, ~2.1-2.2% net. Rental demand itself is deep and not the problem — 38 contracts a month on 572 units is a well-let project. Treat this as carry only; per the backtest, high gross yield predicts LOWER forward price growth (std_beta -0.16).",
+        "appreciation_assessment": "URA cache: 4.46%/yr 5yr CAGR on 118 transactions, momentum -0.757 (decelerating). realsmart's annual medians run $874 (2019) -> $1,210 psf (2026), +38.4% / ~4.75%/yr, and 4.3% avg annualized profit for sellers over the past year. All of it is trailing, and the current priors put trailing CAGR/momentum at ~0 forward power once clustered (univariate +0.13) — story, not signal. I am NOT overriding the rate. The forward case rests on the OCR region prior (+3.7%/yr) minus the absence of any value edge, and the project's own 3BR band has gone sideways over the last 12 months ($1,194 psf 24mo median vs $1,191 12mo) after the 2021-2024 run. Note the 2019->2026 pooled figure carries the usual size-mix caveat (realsmart flags it explicitly on the page).",
+        "stack_notes": "No researched profile exists for Hillview Regency (stack_profile: not_researched), so this is reconstructed from URA's Floor Level column across all 118 prints. The project's formats separate cleanly by size AND floor: 1,109 sqft (n=21) is 0% low-floor, 1,130 (n=22) 0%, 1,195 (n=13) 0%, 1,173 (n=3) 0%; 1,119 (n=20) is 30% low-floor; and 904 (42%) / 969 (62%) / 1,152 (100%, n=2) carry the ground stock. 24mo tier medians in the 1,071-1,233 band: fl 01-05 $1,056 (n=4), fl 06-10 $1,196 (n=2), fl 11-15 $1,194 (n=7), fl 16-20 $1,197 (n=9), fl 21-25 $1,194 (n=7) — the market prices ONE break, ground vs everything above, worth ~11.6%. The subject's 1,152 sqft sits entirely on the wrong side of it on the evidence available. Caveat honestly: n=2 at exactly 1,152 sqft is thin, PropertyGuru served no floor_level for this listing, and facing is never available from the feed. Worth running /research-development on Hillview Regency — 572 units and 12 live asks justify a real stack profile, and the ground-vs-tower break is the single fact that decides every listing here.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": "No override — URA 4.46%/yr on 118 txns retained; trailing CAGR has ~0 forward power under current priors and realsmart's 4.75%/yr agrees closely.",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 92.5,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_082_500208899",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-regency-500208899",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
