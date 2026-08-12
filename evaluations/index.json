@@ -1467,9 +1467,9 @@
     "grandeur-8": {
       "condo": "Grandeur 8",
       "district": "D20",
-      "latest_rating": "Buy",
-      "latest_date": "2026-06-09",
-      "eval_count": 3
+      "latest_rating": "Avoid",
+      "latest_date": "2026-08-12",
+      "eval_count": 4
     },
     "alex-residences": {
       "condo": "Alex Residences",

@@ -164,6 +164,88 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500123966",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A genuine 1,421 sqft 4BR at Grandeur 8 — a large, liquid, well-located 579-unit AMK Central project with one of the better exit records in the OCR book (96.1% of 622 resales sold at a profit). The problem is the price, not the project: at $2.35M / $1,654 psf the ask tops every print this layout has ever made ($2.25M / $1,584 psf, Aug-25) and sits 6.8% above the freshest large-unit comp — a LARGER 1,453 sqft unit that sold for $2.35M-minus-$100k, i.e. $2.25M / $1,548 psf, on 27 Jul 2026, three weeks before this listing was cut. You would be paying a record price into a project with 37 units already competing for the same exit.",
+      "rating_rationale": "The ask is above every comparable print, and the project's own recent history says so three separate ways. (1) LAYOUT RECORD: the exact 1,421 sqft 4BR has printed six times in the URA panel — $1,337, $1,358, $1,443, $1,478, $1,280 and $1,584 psf. The ask of $1,654 psf is +4.4% above its all-time high, and $2.35M tops even the $2.328M record for the whole 1,350-1,550 sqft band. (2) FRESHEST COMP: on 27 Jul 2026 a 1,453 sqft unit — 32 sqft LARGER — transacted at $2.25M / $1,548 psf. Same project, three weeks ago, $100k cheaper for more space. (3) SIZE-PSF INVERTED: among 15 live Grandeur 8 listings this is the 5th-largest unit but carries the 3rd-highest psf ask. The same $2.25M buys a 1,582 sqft 3BR/3-bath here; $2.49M buys 1,841 sqft. A large unit asking small-unit psf is backwards — PSF should fall with size, not rise. The 6.53% trailing CAGR that drives most of the algo's 624 is a size-mix artifact: segment the prints and the LARGE-unit tier is flat, not compounding. Same-size 1,453 sqft resale-to-resale runs Oct-23 $1,368 -> Oct-25 $1,525 -> Jul-26 $1,548 = 4.5%/yr and decelerating to ~2%/yr over the last nine months, while 2026's rising project median psf ($1,441 -> $1,498) is carried by the small 1,195-1,259 sqft stock (Mar-26 $1,557, Apr-26 $1,622, May-26 $1,564). Buying at $1,654 psf needs the large-unit tier to re-rate ~7% just to reach the ask. Note also that relative_value's -3.1% 'discount' to the age-adjusted D20 median is a sub-market artifact, not value: D20's $1,982 median psf is Bishan/Thomson on the TEL, and Ang Mo Kio Central's gap to it is a permanent location level that has never closed. MMR's own psf_value component (-4.9) already flags the ask as expensive; the 624 is carried by trailing appreciation (+7.6) that this repo's backtest values at ~zero forward power. The seller has already cut $2.43M -> $2.35M in 15 days and is still above every print — the direction is right and the level is not there yet. This flips to Neutral around $2.20-2.25M ($1,548-1,583 psf), i.e. a further $100-150k, and only then because the project itself is sound.",
+      "red_flags": [
+        "Ask $2.35M / $1,654 psf exceeds the all-time high print for this exact 1,421 sqft 4BR layout ($2.25M / $1,584 psf, Aug-25) by 4.4%",
+        "A LARGER 1,453 sqft unit in the same project sold for $2.25M / $1,548 psf on 27 Jul 2026 — three weeks earlier, $100k less for 32 sqft more",
+        "Size-PSF inverted: 5th-largest of 15 live listings but 3rd-highest psf ask; $2.25M buys 1,582 sqft here, $2.49M buys 1,841 sqft",
+        "37 of 579 units (6.4%) are on the market at once, median ask $1,587 psf vs ~$1,480 psf transacted — heavy standing inventory to exit against, and this ask is above even that inflated median",
+        "The 6.53% ura_5yr_cagr is size-mix contaminated: segmented same-size (1,453 sqft) resale-to-resale is 4.5%/yr and decelerating to ~2%/yr over the last 9 months",
+        "Thin carry: 2.73% gross / ~1.5% net yield (rent $5,350, 9 URA contracts; realsmart independently 3.0% est yield at $3.64 psf) — an expensive hold",
+        "4BR with only 2 baths, while the project's 1,195-1,582 sqft 3BRs carry 3 baths — rents and resells at a discount to better-configured 4BRs",
+        "99-yr lease from Jul-2002: 75 yrs left at entry, ~68-70 at a 5-7yr exit — starts to thin the CPF/financing-comfortable buyer pool at the margin",
+        "Built 2005 (21 yrs); a prior evaluation of this project cited resident reports of below-par estate maintenance",
+        "MMR's own psf_value is negative (-4.9); score_1000 624 is below the repo's 650 recommended tier and rests on trailing CAGR the backtest rates ~0 forward"
+      ],
+      "catalysts": [
+        "Exceptional downside record: realsmart 96.1% of 622 resales sold at a profit (598 profitable / 24 unprofitable), 268 deals above 6% annualized, avg holding 6.8 yrs — a deep, trustworthy sample, not a six-transaction 5.0",
+        "Deep liquidity: 579 units, 1,175 transactions since 2003, 88 URA prints in 5 yrs, 50+ deals in the past year — you can always sell, the question is only at what price",
+        "Ang Mo Kio has had no new private launch since The Panorama (2014) — scarce competing new supply supports the resale tier",
+        "Ang Mo Kio becomes an NSL/CRL interchange (CR11) around 2030 — real connectivity, though the repo's own backtest gives future-infrastructure no measured forward power and it is largely in the price",
+        "Genuine 4BR (1,421 sqft is one of only two real 4BR sizes here, confirmed by bed_bands on 96 rental contracts) within 1km of Mayflower Primary (389m) and Jing Shan Primary (636m) — real family demand",
+        "OCR region, which the 28-district panel puts ahead of RCR and CCR on realized forward returns",
+        "Seller is moving: $2.43M -> $2.35M inside 15 days signals a negotiable position — at $2.20-2.25M this becomes a different conversation"
+      ],
+      "as_of": {
+        "price": 2350000,
+        "psf": 1653.76,
+        "beds": 4,
+        "sqft": 1421.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.53,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.73,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 75
+      },
+      "agent_evaluation": {
+        "summary": "A genuine 1,421 sqft 4BR at Grandeur 8 — a large, liquid, well-located 579-unit AMK Central project with one of the better exit records in the OCR book (96.1% of 622 resales sold at a profit). The problem is the price, not the project: at $2.35M / $1,654 psf the ask tops every print this layout has ever made ($2.25M / $1,584 psf, Aug-25) and sits 6.8% above the freshest large-unit comp — a LARGER 1,453 sqft unit that sold for $2.35M-minus-$100k, i.e. $2.25M / $1,548 psf, on 27 Jul 2026, three weeks before this listing was cut. You would be paying a record price into a project with 37 units already competing for the same exit.",
+        "rating": "Avoid",
+        "rating_rationale": "The ask is above every comparable print, and the project's own recent history says so three separate ways. (1) LAYOUT RECORD: the exact 1,421 sqft 4BR has printed six times in the URA panel — $1,337, $1,358, $1,443, $1,478, $1,280 and $1,584 psf. The ask of $1,654 psf is +4.4% above its all-time high, and $2.35M tops even the $2.328M record for the whole 1,350-1,550 sqft band. (2) FRESHEST COMP: on 27 Jul 2026 a 1,453 sqft unit — 32 sqft LARGER — transacted at $2.25M / $1,548 psf. Same project, three weeks ago, $100k cheaper for more space. (3) SIZE-PSF INVERTED: among 15 live Grandeur 8 listings this is the 5th-largest unit but carries the 3rd-highest psf ask. The same $2.25M buys a 1,582 sqft 3BR/3-bath here; $2.49M buys 1,841 sqft. A large unit asking small-unit psf is backwards — PSF should fall with size, not rise. The 6.53% trailing CAGR that drives most of the algo's 624 is a size-mix artifact: segment the prints and the LARGE-unit tier is flat, not compounding. Same-size 1,453 sqft resale-to-resale runs Oct-23 $1,368 -> Oct-25 $1,525 -> Jul-26 $1,548 = 4.5%/yr and decelerating to ~2%/yr over the last nine months, while 2026's rising project median psf ($1,441 -> $1,498) is carried by the small 1,195-1,259 sqft stock (Mar-26 $1,557, Apr-26 $1,622, May-26 $1,564). Buying at $1,654 psf needs the large-unit tier to re-rate ~7% just to reach the ask. Note also that relative_value's -3.1% 'discount' to the age-adjusted D20 median is a sub-market artifact, not value: D20's $1,982 median psf is Bishan/Thomson on the TEL, and Ang Mo Kio Central's gap to it is a permanent location level that has never closed. MMR's own psf_value component (-4.9) already flags the ask as expensive; the 624 is carried by trailing appreciation (+7.6) that this repo's backtest values at ~zero forward power. The seller has already cut $2.43M -> $2.35M in 15 days and is still above every print — the direction is right and the level is not there yet. This flips to Neutral around $2.20-2.25M ($1,548-1,583 psf), i.e. a further $100-150k, and only then because the project itself is sound.",
+        "red_flags": [
+          "Ask $2.35M / $1,654 psf exceeds the all-time high print for this exact 1,421 sqft 4BR layout ($2.25M / $1,584 psf, Aug-25) by 4.4%",
+          "A LARGER 1,453 sqft unit in the same project sold for $2.25M / $1,548 psf on 27 Jul 2026 — three weeks earlier, $100k less for 32 sqft more",
+          "Size-PSF inverted: 5th-largest of 15 live listings but 3rd-highest psf ask; $2.25M buys 1,582 sqft here, $2.49M buys 1,841 sqft",
+          "37 of 579 units (6.4%) are on the market at once, median ask $1,587 psf vs ~$1,480 psf transacted — heavy standing inventory to exit against, and this ask is above even that inflated median",
+          "The 6.53% ura_5yr_cagr is size-mix contaminated: segmented same-size (1,453 sqft) resale-to-resale is 4.5%/yr and decelerating to ~2%/yr over the last 9 months",
+          "Thin carry: 2.73% gross / ~1.5% net yield (rent $5,350, 9 URA contracts; realsmart independently 3.0% est yield at $3.64 psf) — an expensive hold",
+          "4BR with only 2 baths, while the project's 1,195-1,582 sqft 3BRs carry 3 baths — rents and resells at a discount to better-configured 4BRs",
+          "99-yr lease from Jul-2002: 75 yrs left at entry, ~68-70 at a 5-7yr exit — starts to thin the CPF/financing-comfortable buyer pool at the margin",
+          "Built 2005 (21 yrs); a prior evaluation of this project cited resident reports of below-par estate maintenance",
+          "MMR's own psf_value is negative (-4.9); score_1000 624 is below the repo's 650 recommended tier and rests on trailing CAGR the backtest rates ~0 forward"
+        ],
+        "catalysts": [
+          "Exceptional downside record: realsmart 96.1% of 622 resales sold at a profit (598 profitable / 24 unprofitable), 268 deals above 6% annualized, avg holding 6.8 yrs — a deep, trustworthy sample, not a six-transaction 5.0",
+          "Deep liquidity: 579 units, 1,175 transactions since 2003, 88 URA prints in 5 yrs, 50+ deals in the past year — you can always sell, the question is only at what price",
+          "Ang Mo Kio has had no new private launch since The Panorama (2014) — scarce competing new supply supports the resale tier",
+          "Ang Mo Kio becomes an NSL/CRL interchange (CR11) around 2030 — real connectivity, though the repo's own backtest gives future-infrastructure no measured forward power and it is largely in the price",
+          "Genuine 4BR (1,421 sqft is one of only two real 4BR sizes here, confirmed by bed_bands on 96 rental contracts) within 1km of Mayflower Primary (389m) and Jing Shan Primary (636m) — real family demand",
+          "OCR region, which the 28-district panel puts ahead of RCR and CCR on realized forward returns",
+          "Seller is moving: $2.43M -> $2.35M inside 15 days signals a negotiable position — at $2.20-2.25M this becomes a different conversation"
+        ],
+        "rental_assessment": "Adequate but thin, and the weakest part of the case. URA gives $5,350/mo across 9 same-project 4BR contracts (confidence 0.90); realsmart's independent read is $3.64 psf avg rental and a 3.0% estimated yield, implying ~$5,170/mo — the two agree. On a $2.35M entry that is 2.73% gross and ~1.5% net, i.e. the hold is carried by the buyer, not the tenant. Grandeur 8's recent 12 rental contracts have a $4,550 median with a $3,850-$6,300 range, and the only 4BR contract visible in that window ($6,300) is on a 2,200-2,300 sqft unit, not this size. The 2-bathroom configuration is a real handicap in the 4BR rental market, where sharers and expat families price bathrooms directly. Demand itself is not the issue — AMK Central, two MRT lines by 2030 and two primary schools inside 1km keep the unit lettable — but at this price the yield does no work.",
+        "appreciation_assessment": "The headline 6.53%/yr (ura_5yr_cagr, 88 txns) does not survive size segmentation, which is the whole point. Grandeur 8 spans 1,109-2,314 sqft, and 2026's median-psf rise ($1,441 -> $1,498) is carried almost entirely by the small 1,195-1,259 sqft stock (Mar-26 $1,557, Apr-26 $1,622, May-26 $1,564). The large-unit tier this unit belongs to has gone sideways: the 1,453 sqft layout traced Oct-23 $1,368 -> Apr-25 $1,514 -> Oct-25 $1,525 -> Jul-26 $1,548, a clean same-size resale-to-resale series worth 4.5%/yr over 2.75 yrs and only ~2%/yr annualized over the last nine months. I have set the forward override to 4.5% on that segmented, same-size, resale-to-resale basis — and even that is measured entirely inside the 2021-26 bull regime, so treat it as a ceiling rather than a forecast. At $1,654 psf the buyer is roughly 7% ahead of the tier's own last print, which means the first two to three years of that 4.5% are spent recovering the entry premium before any real gain begins. The CRL interchange is genuine but arrives around 2030, at the far end of a 5-7yr hold, and the repo's panel finds no measurable forward power in future-infrastructure scores.",
+        "stack_notes": "No researched profile exists for Grandeur 8 (stack_profile: not_researched), and PropertyGuru serves no floor_level or facing for this listing — so the unit's floor is UNKNOWN, and that materially widens the range. It matters a lot here: the 1,421 sqft layout's own prints split hard by floor — $1,280 psf (Nov-24, floors 01-05) and $1,358 psf (Aug-23, 01-05) at the bottom against $1,478 psf (Sep-24, 16-20) and $1,584 psf (Aug-25, 11-15) at the top, a spread of roughly 24% on identical square footage. The ask of $1,654 psf is priced above the best floor band the layout has ever achieved, so it is only arguable at all on a high floor — and even a top-floor unit would be setting a project record. On a low or mid floor the ask is indefensible. The unit is in one of 20-storey blocks along Ang Mo Kio Central 3 (developer NTUC Choice Homes). Verify the floor and the outlook before any offer; if it is below the 11th storey, the gap to fair value is wider than the $100-150k quoted above. Running /research-development on Grandeur 8 would pay for itself given 15 live listings here.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 4.5,
+        "appreciation_rate_source": "Size-segmented same-size resale-to-resale on the project's own large-unit tier (URA D20 prints + realsmart 27-Jul-2026 record): 1,453 sqft at $1,368 psf Oct-2023 -> $1,514 Apr-2025 -> $1,525 Oct-2025 -> $1,548 Jul-2026 = +13.2% over 2.75 yrs = 4.5%/yr. Replaces the pooled 6.53% ura_5yr_cagr, which is inflated by the small-unit (1,195-1,259 sqft) stock that drove 2026's median-psf rise. Bull-regime measurement — a ceiling, not a forecast.",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 96.1,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_090_500179571",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500179571",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
