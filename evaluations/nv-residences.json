@@ -108,6 +108,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500018326",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,356 sqft 3BR at NV Residences (D18 Pasir Ris, 99yr from 2008, TOP 2013) asking $1.78M / $1,313 psf — the cheapest 3BR PSF in the project by ~8% and roughly 9-10% below size-adjusted recent large-unit prints. The discount is real and survives every artifact test, but it is compensation for a measurable defect rather than an inefficiency: the 1,250-1,500 sqft band has produced exactly ONE URA resale in 24 months out of 63 project-wide, and this exact 1,356 sqft size has never printed in 178 transactions. You buy at -9% and, absent a re-rating of the band, sell at -9%.",
+      "rating_rationale": "Value and region — the two forward signals the repo has actually measured — both point the right way: -9.2% vs age-adjusted D18 same-size-band peers (26 peers) and -8.4% vs the project's own median, in OCR, the strongest realized forward region (+3.7%/yr). The project's exit record is genuinely excellent and deeply evidenced: realsmart REALSCORE 4.1 with 91.4% profitable across 432 matched resales (395 profit / 37 loss), avg 7.1yr holding, $71.8M total profits — far above the 150-resale trust bar, and real downside evidence that nobody has lost money here. Build quality and management get no red flags (642 units across 9 blocks, 6 pools, 2 tennis courts, 7.7/10 and 4.5/5 resident ratings). The 3BR label is legitimate (bed_bands 'ok' on 145 contracts; the project's 3BR range is 1,087-1,464 sqft) and no trust rule fires. But three things keep this off a Buy. (1) Exit thinness specific to THIS unit: 91% of the project's trading volume is under 1,250 sqft, and the subject's band produced 1 resale in two years. The MMR's +15.3 points from txn_volume/buyer_pool/dev_size are PROJECT-level credits that do not reach a 1,356 sqft unit — and that 91.4%-profitable record was earned by the 743-1,184 sqft stock, not by large units. The exact size has never traded (nearest: 1,270 sqft n=3, 1,378 sqft n=1; psf_cohort_txns=4), so there is almost no price discovery to buy or sell against. (2) The score is inflated. Re-scoring with the measured OCR forward baseline (3.7%) in place of the trailing 7.27% CAGR drops score_1000 from 769 to 663 — the entire distance between top-decile and the 650 gate rests on a signal the panel measures at ~0 forward power, with momentum already at -0.751. dev_size (+6.0) is also computed off a wrong total_units=1,586; the true count is 642. (3) Carry is negative: 2.83% gross / 1.66% net on a $4,200 rent backed by 41 URA contracts, against $1.78M. Market evidence corroborates rather than contradicts this read — the unit has been openly marketed since 7 June 2026 (66+ days), cut twice from $1.88M to $1.80M to $1.78M (-5.3%), and has now added a second agent (this listing is flagged relisted_from 500018326, same unit, same $1,780,000, same 87 Pasir Ris Grove). That is a seller still hunting for a clearing price, not a mispriced asset. Not an Avoid: there is no artifact, no overpricing and no trap here, the discount is genuine and further negotiable, and a patient buyer at the right entry does fine. What would make it a Buy: a VERIFIED mid-to-high floor (floor_level is null on both listings, and the project's own large-unit prints show a wide low-vs-high spread — $1,101-1,265 psf for floors 01-10 vs $1,265-1,305 for 11-15 in 2023, so part of the 9% may simply be a low floor) plus an entry at or below ~$1.65M / $1,217 psf, which prices the band illiquidity in rather than inheriting it.",
+      "red_flags": [
+        "Exit-thin unit band: only 1 URA resale at 1,250-1,500 sqft in the last 24 months, out of 63 project-wide — 91% of volume is under 1,250 sqft",
+        "The exact 1,356 sqft size has NEVER transacted in 178 URA prints (nearest 1,270 sqft n=3, 1,378 sqft n=1); psf_cohort_txns=4 — near-zero price discovery on both entry and exit",
+        "score_1000 769 falls to 663 when the trailing 7.27% CAGR is replaced by the measured OCR forward baseline (3.7%) — ~106 pts of the score rests on a ~0-power signal; momentum already -0.751",
+        "DB total_units=1,586 is wrong (true 642 per realsmart, 99.co and the developer) — inflates the dev_size/buyer-pool MMR credit",
+        "Weak carry: 2.83% gross / 1.66% net yield on $4,200 rent (41 URA contracts) at a $1.78M quantum — negative cash flow on any leveraged hold",
+        "Unsold 66+ days across two price cuts (-5.3%) and now marketed by a second agent (relisted_from 500018326) — the cheapest 3BR ask in the project is still not clearing",
+        "floor_level is null on both listings; the project's large-unit prints show a material low-vs-high floor spread, so part of the apparent discount may be a low floor",
+        "New competing family-unit supply in Pasir Ris: Pasir Ris 8 TOP'd 2026 (at the MRT/CRL interchange, 3BR sub-sale ~$2,079 psf) and Coastal Cabana EC (748 units, 498 sold Jan 2026 at ~$1,734 psf)",
+        "$1.78M quantum is at the upper end for OCR Pasir Ris, narrowing the buyer pool on top of the size issue"
+      ],
+      "catalysts": [
+        "Genuine ~9-10% discount to size-adjusted recent same-project prints: $1,313 psf vs ~$1,450 implied from the Jul-2026 1,453 sqft resale at $1,431 psf (elasticity-adjusted) and the Jun-2025 1,270 sqft at $1,425 psf",
+        "-9.2% vs age-adjusted D18 same-size-band peers on 26 peers — cheap-vs-peers is the strongest measured forward signal in the panel",
+        "OCR region: realized forward +3.7%/yr, the best of the three regions in the 28-district panel",
+        "Deep, credible exit record: REALSCORE 4.1, 91.4% profitable on 432 matched resales, avg 7.1yr hold, $71.8M cumulative profits — strong downside evidence at the project level",
+        "Motivated seller: -5.3% already conceded over 9 weeks with a second agent added — room to negotiate toward the ~$1.65M level that would make the math work",
+        "Pasir Ris becomes a Cross Island Line interchange ~2030 (497m); treat as narrative — the future-infra score has no measured forward power, and Pasir Ris 8 captures it far more directly",
+        "13 years old with 83 lease-years left — sits inside the 7-30yr forward-return plateau, so no age discount is warranted"
+      ],
+      "as_of": {
+        "price": 1780000,
+        "psf": 1312.68,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.27,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.83,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 83
+      },
+      "agent_evaluation": {
+        "summary": "A 1,356 sqft 3BR at NV Residences (D18 Pasir Ris, 99yr from 2008, TOP 2013) asking $1.78M / $1,313 psf — the cheapest 3BR PSF in the project by ~8% and roughly 9-10% below size-adjusted recent large-unit prints. The discount is real and survives every artifact test, but it is compensation for a measurable defect rather than an inefficiency: the 1,250-1,500 sqft band has produced exactly ONE URA resale in 24 months out of 63 project-wide, and this exact 1,356 sqft size has never printed in 178 transactions. You buy at -9% and, absent a re-rating of the band, sell at -9%.",
+        "rating": "Neutral",
+        "rating_rationale": "Value and region — the two forward signals the repo has actually measured — both point the right way: -9.2% vs age-adjusted D18 same-size-band peers (26 peers) and -8.4% vs the project's own median, in OCR, the strongest realized forward region (+3.7%/yr). The project's exit record is genuinely excellent and deeply evidenced: realsmart REALSCORE 4.1 with 91.4% profitable across 432 matched resales (395 profit / 37 loss), avg 7.1yr holding, $71.8M total profits — far above the 150-resale trust bar, and real downside evidence that nobody has lost money here. Build quality and management get no red flags (642 units across 9 blocks, 6 pools, 2 tennis courts, 7.7/10 and 4.5/5 resident ratings). The 3BR label is legitimate (bed_bands 'ok' on 145 contracts; the project's 3BR range is 1,087-1,464 sqft) and no trust rule fires. But three things keep this off a Buy. (1) Exit thinness specific to THIS unit: 91% of the project's trading volume is under 1,250 sqft, and the subject's band produced 1 resale in two years. The MMR's +15.3 points from txn_volume/buyer_pool/dev_size are PROJECT-level credits that do not reach a 1,356 sqft unit — and that 91.4%-profitable record was earned by the 743-1,184 sqft stock, not by large units. The exact size has never traded (nearest: 1,270 sqft n=3, 1,378 sqft n=1; psf_cohort_txns=4), so there is almost no price discovery to buy or sell against. (2) The score is inflated. Re-scoring with the measured OCR forward baseline (3.7%) in place of the trailing 7.27% CAGR drops score_1000 from 769 to 663 — the entire distance between top-decile and the 650 gate rests on a signal the panel measures at ~0 forward power, with momentum already at -0.751. dev_size (+6.0) is also computed off a wrong total_units=1,586; the true count is 642. (3) Carry is negative: 2.83% gross / 1.66% net on a $4,200 rent backed by 41 URA contracts, against $1.78M. Market evidence corroborates rather than contradicts this read — the unit has been openly marketed since 7 June 2026 (66+ days), cut twice from $1.88M to $1.80M to $1.78M (-5.3%), and has now added a second agent (this listing is flagged relisted_from 500018326, same unit, same $1,780,000, same 87 Pasir Ris Grove). That is a seller still hunting for a clearing price, not a mispriced asset. Not an Avoid: there is no artifact, no overpricing and no trap here, the discount is genuine and further negotiable, and a patient buyer at the right entry does fine. What would make it a Buy: a VERIFIED mid-to-high floor (floor_level is null on both listings, and the project's own large-unit prints show a wide low-vs-high spread — $1,101-1,265 psf for floors 01-10 vs $1,265-1,305 for 11-15 in 2023, so part of the 9% may simply be a low floor) plus an entry at or below ~$1.65M / $1,217 psf, which prices the band illiquidity in rather than inheriting it.",
+        "red_flags": [
+          "Exit-thin unit band: only 1 URA resale at 1,250-1,500 sqft in the last 24 months, out of 63 project-wide — 91% of volume is under 1,250 sqft",
+          "The exact 1,356 sqft size has NEVER transacted in 178 URA prints (nearest 1,270 sqft n=3, 1,378 sqft n=1); psf_cohort_txns=4 — near-zero price discovery on both entry and exit",
+          "score_1000 769 falls to 663 when the trailing 7.27% CAGR is replaced by the measured OCR forward baseline (3.7%) — ~106 pts of the score rests on a ~0-power signal; momentum already -0.751",
+          "DB total_units=1,586 is wrong (true 642 per realsmart, 99.co and the developer) — inflates the dev_size/buyer-pool MMR credit",
+          "Weak carry: 2.83% gross / 1.66% net yield on $4,200 rent (41 URA contracts) at a $1.78M quantum — negative cash flow on any leveraged hold",
+          "Unsold 66+ days across two price cuts (-5.3%) and now marketed by a second agent (relisted_from 500018326) — the cheapest 3BR ask in the project is still not clearing",
+          "floor_level is null on both listings; the project's large-unit prints show a material low-vs-high floor spread, so part of the apparent discount may be a low floor",
+          "New competing family-unit supply in Pasir Ris: Pasir Ris 8 TOP'd 2026 (at the MRT/CRL interchange, 3BR sub-sale ~$2,079 psf) and Coastal Cabana EC (748 units, 498 sold Jan 2026 at ~$1,734 psf)",
+          "$1.78M quantum is at the upper end for OCR Pasir Ris, narrowing the buyer pool on top of the size issue"
+        ],
+        "catalysts": [
+          "Genuine ~9-10% discount to size-adjusted recent same-project prints: $1,313 psf vs ~$1,450 implied from the Jul-2026 1,453 sqft resale at $1,431 psf (elasticity-adjusted) and the Jun-2025 1,270 sqft at $1,425 psf",
+          "-9.2% vs age-adjusted D18 same-size-band peers on 26 peers — cheap-vs-peers is the strongest measured forward signal in the panel",
+          "OCR region: realized forward +3.7%/yr, the best of the three regions in the 28-district panel",
+          "Deep, credible exit record: REALSCORE 4.1, 91.4% profitable on 432 matched resales, avg 7.1yr hold, $71.8M cumulative profits — strong downside evidence at the project level",
+          "Motivated seller: -5.3% already conceded over 9 weeks with a second agent added — room to negotiate toward the ~$1.65M level that would make the math work",
+          "Pasir Ris becomes a Cross Island Line interchange ~2030 (497m); treat as narrative — the future-infra score has no measured forward power, and Pasir Ris 8 captures it far more directly",
+          "13 years old with 83 lease-years left — sits inside the 7-30yr forward-return plateau, so no age discount is warranted"
+        ],
+        "rental_assessment": "Weak. $4,200/mo estimated from 41 URA project+bedroom contracts over 12 months (confidence 0.95) = 2.83% gross / 1.66% net. Realsmart corroborates: project-wide est. yield 3.3%, median rent $3,450 across all bed types, and the most recent 3BR 1,300-1,400 sqft contract (1 Jun 2026) printed $4,500 — even at that figure the gross is only 3.03%. Large units rent at a lower PSF ($3-4 psf vs $4-5 psf for the 700-800 sqft stock), so this unit's yield is structurally below the project average. Per the panel's priors low yield is not itself a negative for appreciation (high gross yield predicts LOWER forward growth, std_beta -0.16), but it means this is a pure capital-gain bet with negative carry throughout the hold — count it as cost, not as return.",
+        "appreciation_assessment": "Do not use the 7.27% trailing figure. It is a 5yr URA CAGR on 178 prints measured entirely inside the 2021-2026 OCR bull run (realsmart's own annual medians: $960 psf in 2021 to $1,436 in 2026), momentum is already -0.751, and the repo's 28-district panel measures trailing CAGR at ~0 marginal forward power once clustered. The honest forward number is the OCR baseline of ~3.7%/yr, which is what I scored the sensitivity at (769 -> 663) and what the ROI should be read against: ~3.6% annualized over 5yr, not the 6.8% the default projection shows. Upside beyond baseline would have to come from the value gap closing, and that requires the 1,250-1,500 sqft band to find buyers it has not found in two years. The CRL interchange is a real 2030 event but accrues disproportionately to Pasir Ris 8 at the station.",
+        "stack_notes": "No profile exists for NV Residences (stack_profile: not_researched), so no stack/facing/view join was possible — worth running /research-development before any viewing, because floor and facing are the main unresolved variables here. What the URA prints do establish: the project's large-unit types are 1,270 / 1,378 / 1,453 / 2,508 sqft and 1,356 sqft matches none of them exactly (closest is the 1,378 type, which has transacted once, Aug-2021, floor 01-05 at $899 psf). The subject is at 87 Pasir Ris Grove, one of 9 blocks. floor_level is null on both the original listing and this relist, and the large-unit history shows floors 01-10 printing $1,101-1,265 psf against $1,265-1,305 for floors 11-15 in the same 2023 window — so establishing the actual floor is the single highest-value next check.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR realized-forward regional baseline (28-district URA panel, docs/evaluation-rubric.md) — replaces the trailing 7.27% ura_5yr_cagr, which the panel measures at ~0 marginal forward power and whose momentum is already -0.751",
+        "realscore": 4.1,
+        "realsmart_pct_profitable": 91.4,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_081_500188401",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500188401",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

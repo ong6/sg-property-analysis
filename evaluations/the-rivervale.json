@@ -58,6 +58,102 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rivervale-500106521",
         "review_file": "cov_batch_23.json"
       }
+    },
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,259 sqft 3BR at The Rivervale — a fully-privatised 1997 Sengkang EC (671 units, 71yr lease, Buangkok NE15 ~525-660m) — asking $1.43M / $1,136 psf. The project itself is sound: 556 resales with 81.8% sold at a profit and $141.3M of realised gains, so the downside record is genuinely good. But this ask carries no edge: it sits at the project's own 2026 median PSF ($1,146), a same-size 1,259 sqft unit is live in the same project at $1.35M, and the algo's 743 rests on two artifacts — a -22% 'discount' that is really the EC-vs-private sub-market level, and a proxy rent 27% above what the project's own contracts fetch.",
+      "rating_rationale": "Fairly priced, not cheap — and not the unit to transact on. (1) NO VALUE EDGE. The dossier's -22.0% vs the D19 age-adjusted size-band median drives MMR's single largest component (age_value +15.6), but The Rivervale is an EXECUTIVE CONDOMINIUM and the D19 peer set is private stock. Its EC neighbour Rivervale Crest asks $1,051-$1,203 psf and private Jewel @ Buangkok resells around $1,302 psf — the gap is a permanent sub-market level that has never closed, not a dislocation. Benchmarked where it belongs, against the project's own 2026 prints (median $1,146 psf, 6 sales) and the 12-month transacted band ($855-$1,200, avg $1,118 psf per EdgeProp), the $1,136 ask is roughly AT market: ~1% under the 2026 median, ~1.6% over the 12-month average. The one robust forward signal in this repo (cheap-vs-peers) is absent once the EC artifact is stripped. (2) A CHEAPER IDENTICAL UNIT IS LIVE. The same 1,259 sqft layout is asking $1.35M ($1,072 psf) in the same project — $80k / 5.6% less — and a 1,270 sqft at $1.35M ($1,063). Neither this listing nor the cheaper ones carry floor or facing data (PropertyGuru serves none, and the project has no profile), so there is no observable reason to pay the premium. This ask is mid-book among 9 live Rivervale 3BR asks spanning $1,063-$1,281 psf. (3) YIELD IS OVERSTATED IN THE DOSSIER. factual_data uses a $5,099/mo district_bedroom proxy (confidence 0.55) for a 4.28% gross yield. The project's OWN rental contracts say otherwise: realsmart's latest 12 contracts median $4,000/mo (23 contracts in the past month, $3.04 psf, 3.2% est yield), corroborated independently by EdgeProp ($3.1 psf pm, 3.3% avg yield). Real gross is ~3.36%, net ~2%. Re-scoring with $4,000 rent drops score_1000 743 -> 727; neutralising the EC age_value artifact takes it to roughly ~625 — still above the 450 threshold, but below the 650 tier that pulled it into this scan. (4) THE RE-RATING IS LARGELY SPENT. Project median PSF ran $742 (2021) -> $1,069 (2024) -> $1,126 (2025) -> $1,146 (2026 YTD): +54% over five years, but only +1.8% in the last one, and volume has roughly halved (22/24 sales in 2024/2025 vs 6 through mid-Jul 2026). Trailing CAGR carries ~0 forward power in any case; what it does tell you is that the privatisation + HDB-upgrader wave is behind this asset, not ahead of it. (5) NO URA VISIBILITY. ECs are excluded from URA's sale CSVs, so ura_transaction_count=0, every trust rule in the scorer is disabled, and appreciation defaulted to the 4.2% OCR regional baseline. The 4.7-4.8% annualised ROI in the projection also assumes the inflated rent — on $4,000/mo it is closer to ~4.3% (and ~2.5% on the downside leg). WHAT KEEPS IT OFF AVOID: the ask is not above the project's band, and the exit evidence is real and well-powered — 81.8% of 556 resales profitable, avg holding 11.4 yrs, REALSCORE 3.9. OCR region is the best forward-region prior, Buangkok NE15 is a genuine MRT (not the LRT credit that flatters other Sengkang projects), and a sub-$1.5M 3BR in a 671-unit project with a 68%-HDB-buyer catchment is about as liquid as OCR gets. This is a fine place to own and a poor listing to buy: if the buyer wants The Rivervale, bid the $1.35M same-size unit or bring this one to ~$1.35-1.38M ($1,070-$1,095 psf), where the carry gap is compensated.",
+      "red_flags": [
+        "The -22% 'discount vs D19 peers' is the EC-vs-private sub-market level, not value — Rivervale Crest (EC) $1,051-$1,203 psf vs Jewel @ Buangkok (private) ~$1,302 psf; the gap has never closed",
+        "A same-size 1,259 sqft unit is asking $1.35M ($1,072 psf) in the same project — $80k less, with no floor/facing evidence to justify this premium",
+        "Dossier rent ($5,099/mo, district_bedroom proxy, conf 0.55) is ~27% above the project's actual contracts ($4,000/mo median, 23 contracts last month) — real gross yield ~3.36%, not 4.28%; net ~2%",
+        "Project median PSF only +1.8% in 2026 after +54% over 2021-2026, on roughly half the transaction volume (6 sales YTD vs 24 in 2025) — the EC re-rating is largely realised",
+        "25-year-old EC, 71yr lease: a 5-7yr hold exits at ~64yr remaining, into a buyer pool starting to price the run to the 60-year CPF threshold",
+        "EC = URA blindspot: zero URA prints, so all scorer trust rules were disabled and appreciation fell back to the 4.2% regional baseline",
+        "No stack/floor/facing data on this or any competing Rivervale listing, and no researched profile — the unit cannot be placed within the development",
+        "The '⬆ price raised' badge is a unit_group chaining artifact across different agents' listings at 1,259 sqft, not a real increase on this listing (first seen today)"
+      ],
+      "catalysts": [
+        "Well-powered exit record: 81.8% of 556 resales profitable, $141.3M total realised profits, avg holding 11.4 yrs, REALSCORE 3.9 — nobody has systematically lost money here",
+        "Buangkok NE15 MRT ~525-660m — a genuine heavy-rail station, not the LRT credit that inflates other Sengkang scores; Ranggung LRT 367m as a second option",
+        "OCR region carries the strongest measured forward baseline (+3.7%/yr realised vs RCR +3.1, CCR +1.9)",
+        "Deep, liquid buyer pool: 671 units, sub-$1.5M quantum, 68% HDB buyers, fully privatised since ~2010 (no MOP or citizenship restriction)",
+        "No new EC land sold in Sengkang for years — no confirmed new EC launch in the current GLS slate inside Sengkang, so direct new-EC competition is thin",
+        "Large 1,259 sqft floorplate for a 3BR (project range 1,238-2,723 sqft); North Vista Primary 302m and Punggol Primary 406m support family demand"
+      ],
+      "as_of": {
+        "price": 1430000,
+        "psf": 1135.82,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 4.28,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 71
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft 3BR at The Rivervale — a fully-privatised 1997 Sengkang EC (671 units, 71yr lease, Buangkok NE15 ~525-660m) — asking $1.43M / $1,136 psf. The project itself is sound: 556 resales with 81.8% sold at a profit and $141.3M of realised gains, so the downside record is genuinely good. But this ask carries no edge: it sits at the project's own 2026 median PSF ($1,146), a same-size 1,259 sqft unit is live in the same project at $1.35M, and the algo's 743 rests on two artifacts — a -22% 'discount' that is really the EC-vs-private sub-market level, and a proxy rent 27% above what the project's own contracts fetch.",
+        "rating": "Neutral",
+        "rating_rationale": "Fairly priced, not cheap — and not the unit to transact on. (1) NO VALUE EDGE. The dossier's -22.0% vs the D19 age-adjusted size-band median drives MMR's single largest component (age_value +15.6), but The Rivervale is an EXECUTIVE CONDOMINIUM and the D19 peer set is private stock. Its EC neighbour Rivervale Crest asks $1,051-$1,203 psf and private Jewel @ Buangkok resells around $1,302 psf — the gap is a permanent sub-market level that has never closed, not a dislocation. Benchmarked where it belongs, against the project's own 2026 prints (median $1,146 psf, 6 sales) and the 12-month transacted band ($855-$1,200, avg $1,118 psf per EdgeProp), the $1,136 ask is roughly AT market: ~1% under the 2026 median, ~1.6% over the 12-month average. The one robust forward signal in this repo (cheap-vs-peers) is absent once the EC artifact is stripped. (2) A CHEAPER IDENTICAL UNIT IS LIVE. The same 1,259 sqft layout is asking $1.35M ($1,072 psf) in the same project — $80k / 5.6% less — and a 1,270 sqft at $1.35M ($1,063). Neither this listing nor the cheaper ones carry floor or facing data (PropertyGuru serves none, and the project has no profile), so there is no observable reason to pay the premium. This ask is mid-book among 9 live Rivervale 3BR asks spanning $1,063-$1,281 psf. (3) YIELD IS OVERSTATED IN THE DOSSIER. factual_data uses a $5,099/mo district_bedroom proxy (confidence 0.55) for a 4.28% gross yield. The project's OWN rental contracts say otherwise: realsmart's latest 12 contracts median $4,000/mo (23 contracts in the past month, $3.04 psf, 3.2% est yield), corroborated independently by EdgeProp ($3.1 psf pm, 3.3% avg yield). Real gross is ~3.36%, net ~2%. Re-scoring with $4,000 rent drops score_1000 743 -> 727; neutralising the EC age_value artifact takes it to roughly ~625 — still above the 450 threshold, but below the 650 tier that pulled it into this scan. (4) THE RE-RATING IS LARGELY SPENT. Project median PSF ran $742 (2021) -> $1,069 (2024) -> $1,126 (2025) -> $1,146 (2026 YTD): +54% over five years, but only +1.8% in the last one, and volume has roughly halved (22/24 sales in 2024/2025 vs 6 through mid-Jul 2026). Trailing CAGR carries ~0 forward power in any case; what it does tell you is that the privatisation + HDB-upgrader wave is behind this asset, not ahead of it. (5) NO URA VISIBILITY. ECs are excluded from URA's sale CSVs, so ura_transaction_count=0, every trust rule in the scorer is disabled, and appreciation defaulted to the 4.2% OCR regional baseline. The 4.7-4.8% annualised ROI in the projection also assumes the inflated rent — on $4,000/mo it is closer to ~4.3% (and ~2.5% on the downside leg). WHAT KEEPS IT OFF AVOID: the ask is not above the project's band, and the exit evidence is real and well-powered — 81.8% of 556 resales profitable, avg holding 11.4 yrs, REALSCORE 3.9. OCR region is the best forward-region prior, Buangkok NE15 is a genuine MRT (not the LRT credit that flatters other Sengkang projects), and a sub-$1.5M 3BR in a 671-unit project with a 68%-HDB-buyer catchment is about as liquid as OCR gets. This is a fine place to own and a poor listing to buy: if the buyer wants The Rivervale, bid the $1.35M same-size unit or bring this one to ~$1.35-1.38M ($1,070-$1,095 psf), where the carry gap is compensated.",
+        "red_flags": [
+          "The -22% 'discount vs D19 peers' is the EC-vs-private sub-market level, not value — Rivervale Crest (EC) $1,051-$1,203 psf vs Jewel @ Buangkok (private) ~$1,302 psf; the gap has never closed",
+          "A same-size 1,259 sqft unit is asking $1.35M ($1,072 psf) in the same project — $80k less, with no floor/facing evidence to justify this premium",
+          "Dossier rent ($5,099/mo, district_bedroom proxy, conf 0.55) is ~27% above the project's actual contracts ($4,000/mo median, 23 contracts last month) — real gross yield ~3.36%, not 4.28%; net ~2%",
+          "Project median PSF only +1.8% in 2026 after +54% over 2021-2026, on roughly half the transaction volume (6 sales YTD vs 24 in 2025) — the EC re-rating is largely realised",
+          "25-year-old EC, 71yr lease: a 5-7yr hold exits at ~64yr remaining, into a buyer pool starting to price the run to the 60-year CPF threshold",
+          "EC = URA blindspot: zero URA prints, so all scorer trust rules were disabled and appreciation fell back to the 4.2% regional baseline",
+          "No stack/floor/facing data on this or any competing Rivervale listing, and no researched profile — the unit cannot be placed within the development",
+          "The '⬆ price raised' badge is a unit_group chaining artifact across different agents' listings at 1,259 sqft, not a real increase on this listing (first seen today)"
+        ],
+        "catalysts": [
+          "Well-powered exit record: 81.8% of 556 resales profitable, $141.3M total realised profits, avg holding 11.4 yrs, REALSCORE 3.9 — nobody has systematically lost money here",
+          "Buangkok NE15 MRT ~525-660m — a genuine heavy-rail station, not the LRT credit that inflates other Sengkang scores; Ranggung LRT 367m as a second option",
+          "OCR region carries the strongest measured forward baseline (+3.7%/yr realised vs RCR +3.1, CCR +1.9)",
+          "Deep, liquid buyer pool: 671 units, sub-$1.5M quantum, 68% HDB buyers, fully privatised since ~2010 (no MOP or citizenship restriction)",
+          "No new EC land sold in Sengkang for years — no confirmed new EC launch in the current GLS slate inside Sengkang, so direct new-EC competition is thin",
+          "Large 1,259 sqft floorplate for a 3BR (project range 1,238-2,723 sqft); North Vista Primary 302m and Punggol Primary 406m support family demand"
+        ],
+        "rental_assessment": "Adequate but thin, and materially below what the dossier assumes. The project's own contracts median $4,000/mo for a 3BR ($3.04 psf, 23 contracts in the past month; range $2,800-$4,300), and EdgeProp independently reports $3.1 psf pm and a 3.3% average yield. On a $1.43M entry that is ~3.36% gross / ~2% net — real carry, but not a yield story, and 23 contracts a month across 671 units shows a working rather than hot rental market. Tenant demand is local-family and Buangkok/Sengkang-commuter, not expat: large floorplates at a low absolute rent. Note the repo's own prior cuts the other way too — high gross yield predicts LOWER forward price growth (std_beta -0.16) — so a 3.4% yield is not itself a mark against the asset; it simply means the hold has to be paid for by appreciation this ask does not discount.",
+        "appreciation_assessment": "Expect the OCR baseline at best, and do not extrapolate the trailing run. Resale-to-resale evidence from the project's own annual medians: $720 psf (2019) -> $742 (2021) -> $951 (2022) -> $1,019 (2023) -> $1,069 (2024) -> $1,126 (2025) -> $1,146 (2026 YTD, 6 sales). That is +9%/yr over five years, but the last leg is +1.8% on half the volume — the curve has flattened right where the ask sits. The drivers behind that run (post-2010 privatisation premium, the 2021-24 HDB-upgrader wave, EC-to-private catch-up) are realised, not pending. Working forward: OCR baseline ~3.7-4.2%/yr, less a lease-decay drag that compounds as the asset walks from 71 toward 64 remaining years, and with no cheap-vs-peers cushion to accrue on top. No override applied — the trailing CAGR has no measured forward power and there is no dated catalyst (Sengkang has no confirmed new EC or major infrastructure landing inside this hold; the Cross Island Line's Defu station is 939m away and CRL access does not measurably transfer here). The 4.2% baseline in the dossier is a fair-to-generous forward assumption, not a conservative one.",
+        "stack_notes": "UNKNOWN — and that is a live gap, not a formality. PropertyGuru serves no floor_level or facing on this listing or on ANY of the 9 competing Rivervale 3BR asks, and there is no researched profile for the development (stack_profile.status = not_researched). /research-development was not run because it cannot resolve the actual question here: with no floor/facing on either listing, a stack map would describe the project's best stacks without telling us which stack THIS unit or the $1.35M same-size unit occupies. The 1,259 sqft type is the project's entry 3BR (mix runs 1,238-2,723 sqft). The 24-month print spread ($855-$1,200 psf) is wide enough that floor and facing clearly matter here — if the buyer views, the first question is what floor and outlook this unit has versus the $1.35M ask, since that single fact is what would move this from Neutral in either direction.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 81.8,
+        "realsmart_annual_return_pct": 5.5,
+        "realsmart_evidence": {
+          "source_url": "https://realsmart.sg/p/the-rivervale",
+          "page_title_verified": "The Rivervale Executive Condo: Price, PSF & Rent | REALSMART.SG — confirmed same development (Rivervale Link, D19 Sengkang, EC, 99yr from 18/12/1997, completed 2000, 671 units)",
+          "data_through": "2026-07-13",
+          "realscore": 3.9,
+          "pct_profitable": 81.8,
+          "resale_txns_behind_pct_profitable": 556,
+          "profitable_txns": 454,
+          "unprofitable_txns": 102,
+          "above_6pct_annualized_txns": 90,
+          "avg_holding_yrs": 11.4,
+          "total_profits": "$141.3M",
+          "total_transactions_all_types": 1223,
+          "annual_return_pct": 5.5,
+          "annual_return_note": "'Avg annualized profit (past 1y)' = 5.5% — a trailing 1-year figure, read as downside/history evidence only, never as a forward rate",
+          "pct_profitable_caveat": "The '100% Profitable' highlights badge on the page is the known misleading tile; the real count tile reads 81.8% (454 profitable / 102 unprofitable = 556 resales). 556 clears MIN_RESALES_FOR_TRUST=150, so this exit record is well-powered and trustworthy.",
+          "est_rental_yield_pct": 3.2,
+          "rental_contracts_past_month": 23,
+          "median_3br_rent": 4000
+        }
+      },
+      "source": {
+        "run_dir": "output/run_085_25408471",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-rivervale-25408471",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
