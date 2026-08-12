@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29",
+  "updated_at": "2026-08-12",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -1831,9 +1831,9 @@
     "mi-casa": {
       "condo": "Mi Casa",
       "district": "D23",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-07-29",
-      "eval_count": 3
+      "latest_rating": "Avoid",
+      "latest_date": "2026-08-12",
+      "eval_count": 4
     },
     "alexis": {
       "condo": "Alexis",
