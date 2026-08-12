@@ -1,0 +1,85 @@
+{
+  "condo": "East Meadows",
+  "slug": "east-meadows",
+  "district": "D16",
+  "history": [
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A correctly-labelled 1,216 sqft 3BR at a genuinely good address — Tanah Merah EW4/CG interchange ~200-300m, 482 units, deep HDB-upgrader buyer pool, 71 years of lease left — asking $1.70M / $1,398 psf. The problem is the price, not the property: no 1,216 sqft unit at East Meadows has ever printed above $1,638,000 ($1,347 psf, Nov 2025) across 18 URA prints of the identical size, and ten cheaper 3BR listings are live in the same project right now. Buying at the layout's all-time high, into visible competing supply and a 2026 project median that has slipped below 2025's, spends the first two years of a 5-7yr hold recovering the entry.",
+      "rating_rationale": "The ask is a record for this exact layout with no observable justification. URA has 18 prints at exactly 1,216 sqft (2021-06 to 2026-05): the high is $1,638,000 / $1,347 psf (Nov 2025, floor 06-10), the last three before that were $1.54M, $1.60M, $1.638M, and even an 11-15 floor unit printed only $1,268 psf. This ask is $1,700,000 / $1,398 psf — $62k (+3.8%) above the layout's record and +9% above the project's 24-month tight-comp median of $1,282 psf. Project-wide, only one print has ever exceeded $1,398 psf and it was an atypical 1,464 sqft format ($2.05M, Apr 2026); independent sources put the trailing-12-month range at $1,139-$1,400 psf, average $1,267. Competition is the second strike: eleven East Meadows listings are live and ten are cheaper per sqft, including 1,195 sqft units at $1,270-$1,320 psf and a larger 1,356 sqft 3BR at $1,327 psf — a buyer at this development has no reason to pay the top of the book. A separate agent's 1,216 sqft unit was on the market at $1,630,000 in June and left the book without a 1,216 print appearing in URA data through May 2026 or realsmart's through 28 Jul; at $70k below this ask it likely did not find a buyer. Direction of travel is unhelpful too: realsmart's project median is $1,230 psf on 12 sales in 2026 vs $1,293 on 9 in 2025, and Sceneca Residence (268 units, TOP 2027, ~$2,079 psf, MRT-linked) plus the Bedok Rise GLS parcel put new stock at the same station. The project's own exit record is decent but not a shield — REALSCORE 3.3, 81.6% profitable on a deep 486 resales (396 profit / 90 loss, avg hold 9.2 yrs) means roughly one in five sellers has exited in the red, and those are the ones who bought at the top of a cycle. Carry does not rescue it either: 3.2% gross / 1.9% net on URA's $4,555 project 3BR rent (50 contracts), 3.1% on realsmart's $4,450 median. score_1000 642 is below the 650 tier and second-lowest of the eleven East Meadows listings, which is consistent rather than decisive. Nothing here is wrong with the unit — the bedroom count checks out (1,216 sqft sits inside the project's own 1,150-1,350 3BR rental band on 269 contracts, not a relabel) — but at $1.70M you would be paying the development's high-water mark on day one. The same layout at $1.55-1.60M is a different conversation.",
+      "red_flags": [
+        "Ask $1,700,000 / $1,398 psf exceeds every one of the 18 URA prints at exactly 1,216 sqft; layout record is $1,638,000 / $1,347 psf (Nov 2025)",
+        "+9% above the project's own 24-month tight-comp median ($1,282 psf, n=20) and +14% above realsmart's 2026 project median of $1,230 psf",
+        "Ten of eleven live East Meadows listings are cheaper per sqft, incl. 1,195 sqft at $1,270 psf and a 1,356 sqft 3BR at $1,327 psf",
+        "Another 1,216 sqft unit (different agent) sat at $1,630,000 from June and left the book with no 1,216 print filed through May 2026 — $70k below this ask and probably unsold",
+        "Project median PSF softening: $1,230 (12 sales, 2026) vs $1,293 (9 sales, 2025)",
+        "Weak carry — 3.22% gross / 1.93% net yield on $4,555 URA project 3BR rent; 3.1% gross on realsmart's $4,450 median rent",
+        "18.4% of East Meadows resales sold at a loss (90 of 486) — a real, well-evidenced downside tail for anyone entering at a cycle high",
+        "99-yr lease from Mar 1998: 71 yrs left today, ~64 at a 7-year exit, with the CPF/financing thresholds getting closer each year",
+        "New competing supply at the same MRT: Sceneca Residence (268 units, TOP 2027, ~$2,079 psf, direct MRT link) and the Bedok Rise GLS parcel",
+        "floor_level not served by PropertyGuru and no researched profile for East Meadows — a high floor or renovation cannot be verified and would not justify +$160k over the layout's last comparable trade anyway"
+      ],
+      "catalysts": [
+        "Tanah Merah MRT (EW4, East-West + Changi branch interchange) ~200-300m — a genuine, permanent locational asset",
+        "Deep exit market: 482 units, 85%+ three-bedders, 966 lifetime transactions, 45% HDB-upgrader buyers, buyer_pool_depth 'deep'",
+        "Schools within 1km: St. Anthony's Canossian Primary (722m), Bedok Green Primary (872m), Anglican High",
+        "Sceneca Residence at ~$2,079 psf resets the local new-launch anchor well above resale stock — supportive of the level, but already reflected in the district comparison and worth little as forward edge",
+        "Thomson-East Coast Line Bedok South ~1.27km — narrative only; the future-infrastructure signal has no measured forward power"
+      ],
+      "as_of": {
+        "price": 1700000,
+        "psf": 1398.03,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.64,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.22,
+        "nearest_mrt": "Tanah Merah",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 71
+      },
+      "agent_evaluation": {
+        "summary": "A correctly-labelled 1,216 sqft 3BR at a genuinely good address — Tanah Merah EW4/CG interchange ~200-300m, 482 units, deep HDB-upgrader buyer pool, 71 years of lease left — asking $1.70M / $1,398 psf. The problem is the price, not the property: no 1,216 sqft unit at East Meadows has ever printed above $1,638,000 ($1,347 psf, Nov 2025) across 18 URA prints of the identical size, and ten cheaper 3BR listings are live in the same project right now. Buying at the layout's all-time high, into visible competing supply and a 2026 project median that has slipped below 2025's, spends the first two years of a 5-7yr hold recovering the entry.",
+        "rating": "Avoid",
+        "rating_rationale": "The ask is a record for this exact layout with no observable justification. URA has 18 prints at exactly 1,216 sqft (2021-06 to 2026-05): the high is $1,638,000 / $1,347 psf (Nov 2025, floor 06-10), the last three before that were $1.54M, $1.60M, $1.638M, and even an 11-15 floor unit printed only $1,268 psf. This ask is $1,700,000 / $1,398 psf — $62k (+3.8%) above the layout's record and +9% above the project's 24-month tight-comp median of $1,282 psf. Project-wide, only one print has ever exceeded $1,398 psf and it was an atypical 1,464 sqft format ($2.05M, Apr 2026); independent sources put the trailing-12-month range at $1,139-$1,400 psf, average $1,267. Competition is the second strike: eleven East Meadows listings are live and ten are cheaper per sqft, including 1,195 sqft units at $1,270-$1,320 psf and a larger 1,356 sqft 3BR at $1,327 psf — a buyer at this development has no reason to pay the top of the book. A separate agent's 1,216 sqft unit was on the market at $1,630,000 in June and left the book without a 1,216 print appearing in URA data through May 2026 or realsmart's through 28 Jul; at $70k below this ask it likely did not find a buyer. Direction of travel is unhelpful too: realsmart's project median is $1,230 psf on 12 sales in 2026 vs $1,293 on 9 in 2025, and Sceneca Residence (268 units, TOP 2027, ~$2,079 psf, MRT-linked) plus the Bedok Rise GLS parcel put new stock at the same station. The project's own exit record is decent but not a shield — REALSCORE 3.3, 81.6% profitable on a deep 486 resales (396 profit / 90 loss, avg hold 9.2 yrs) means roughly one in five sellers has exited in the red, and those are the ones who bought at the top of a cycle. Carry does not rescue it either: 3.2% gross / 1.9% net on URA's $4,555 project 3BR rent (50 contracts), 3.1% on realsmart's $4,450 median. score_1000 642 is below the 650 tier and second-lowest of the eleven East Meadows listings, which is consistent rather than decisive. Nothing here is wrong with the unit — the bedroom count checks out (1,216 sqft sits inside the project's own 1,150-1,350 3BR rental band on 269 contracts, not a relabel) — but at $1.70M you would be paying the development's high-water mark on day one. The same layout at $1.55-1.60M is a different conversation.",
+        "red_flags": [
+          "Ask $1,700,000 / $1,398 psf exceeds every one of the 18 URA prints at exactly 1,216 sqft; layout record is $1,638,000 / $1,347 psf (Nov 2025)",
+          "+9% above the project's own 24-month tight-comp median ($1,282 psf, n=20) and +14% above realsmart's 2026 project median of $1,230 psf",
+          "Ten of eleven live East Meadows listings are cheaper per sqft, incl. 1,195 sqft at $1,270 psf and a 1,356 sqft 3BR at $1,327 psf",
+          "Another 1,216 sqft unit (different agent) sat at $1,630,000 from June and left the book with no 1,216 print filed through May 2026 — $70k below this ask and probably unsold",
+          "Project median PSF softening: $1,230 (12 sales, 2026) vs $1,293 (9 sales, 2025)",
+          "Weak carry — 3.22% gross / 1.93% net yield on $4,555 URA project 3BR rent; 3.1% gross on realsmart's $4,450 median rent",
+          "18.4% of East Meadows resales sold at a loss (90 of 486) — a real, well-evidenced downside tail for anyone entering at a cycle high",
+          "99-yr lease from Mar 1998: 71 yrs left today, ~64 at a 7-year exit, with the CPF/financing thresholds getting closer each year",
+          "New competing supply at the same MRT: Sceneca Residence (268 units, TOP 2027, ~$2,079 psf, direct MRT link) and the Bedok Rise GLS parcel",
+          "floor_level not served by PropertyGuru and no researched profile for East Meadows — a high floor or renovation cannot be verified and would not justify +$160k over the layout's last comparable trade anyway"
+        ],
+        "catalysts": [
+          "Tanah Merah MRT (EW4, East-West + Changi branch interchange) ~200-300m — a genuine, permanent locational asset",
+          "Deep exit market: 482 units, 85%+ three-bedders, 966 lifetime transactions, 45% HDB-upgrader buyers, buyer_pool_depth 'deep'",
+          "Schools within 1km: St. Anthony's Canossian Primary (722m), Bedok Green Primary (872m), Anglican High",
+          "Sceneca Residence at ~$2,079 psf resets the local new-launch anchor well above resale stock — supportive of the level, but already reflected in the district comparison and worth little as forward edge",
+          "Thomson-East Coast Line Bedok South ~1.27km — narrative only; the future-infrastructure signal has no measured forward power"
+        ],
+        "rental_assessment": "Solid demand, unexciting economics. URA has 50 project 3BR contracts in 12 months at ~$4,555/mo and realsmart shows 36 rentals in the past month at $3.72 psf, median $4,450 (range $4,000-$5,000) — a liquid, well-tenanted 3BR pool driven by Changi Business Park, the Expo and Changi Airport, with the MRT interchange doing the work. But rent is a property of the unit and the ask is not: at $1.70M that same $4,450-4,555 is only 3.1-3.2% gross and ~1.9% net, versus 3.6% on the project's median transacted price. Paying the top of the book converts an average-yielding asset into a below-average one, and per the repo's own priors yield is carry, never appreciation.",
+        "appreciation_assessment": "The trailing 4.64% CAGR (77 txns) is real but is a 2021-2025 bull-regime number and carries little forward power. Same-layout resale-to-resale confirms the run happened — 1,216 sqft went $960 psf (Jun 2021) to $1,347 psf (Nov 2025) — which is precisely the problem: that repricing is behind the ask, not ahead of it. The forward picture is flatter: realsmart's avg annualized profit over the past year is 3.8%, the project's 2026 median PSF sits below 2025's, and the measured OCR forward baseline is ~+3.7%/yr. I have set a 3.6% override on that basis. Even at 3.6% the entry premium matters more than the rate — buying $60-160k above the layout's comparable prints means the first two years of the hold go to recovering the ask, and the exit lands into a lease at ~64 years with newer MRT-linked stock next door competing for the same buyer.",
+        "stack_notes": "No researched profile exists for East Meadows and PropertyGuru served no floor_level for this listing, so the stack cannot be identified — the unit is 1,216 sqft, 3 bed / 3 bath, unfurnished, at 30 Tanah Merah Kechil Road. What the prints show is that floor does not rescue this ask at this development: the two highest 1,216 sqft prints ($1,347 and $1,315 psf) were both floor 06-10, while an 11-15 floor unit printed $1,268 psf in Jun 2024 — the layout's ceiling is roughly $1,350 psf regardless of height. Even crediting an unverified high floor and a full renovation, the gap to $1,398 psf is not bridgeable on the evidence available. Worth noting the 1,195 and 1,249 sqft types consistently print $70-140 psf below the 1,216/1,238 types, so the cheaper live listings are not strictly like-for-like — but the 1,356 sqft 3BR at $1,327 psf and the same-size 1,216 at $1,340 psf are.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.6,
+        "appreciation_rate_source": "Same-layout resale-to-resale prints at exactly 1,216 sqft (18 URA prints, Jun 2021-May 2026) show the 2021-2025 repricing is complete and 2026 has flattened; realsmart's project-level avg annualized profit past 1y is 3.8% and its 2026 median PSF ($1,230, 12 sales) is below 2025's ($1,293, 9 sales). 3.6% is set to the measured OCR forward baseline (+3.7%/yr) shaded fractionally for the 71-yr lease and the new MRT-linked supply, rather than the trailing 4.64% bull-regime CAGR.",
+        "realscore": 3.3,
+        "realsmart_pct_profitable": 81.6,
+        "realsmart_annual_return_pct": 3.8
+      },
+      "source": {
+        "run_dir": "output/run_089_500217611",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-east-meadows-500217611",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

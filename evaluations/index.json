@@ -680,6 +680,13 @@
       "latest_date": "2026-06-09",
       "eval_count": 2
     },
+    "east-meadows": {
+      "condo": "East Meadows",
+      "district": "D16",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-08-12",
+      "eval_count": 1
+    },
     "casuarina-cove": {
       "condo": "Casuarina Cove",
       "district": "D15",
