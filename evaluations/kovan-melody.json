@@ -1,0 +1,88 @@
+{
+  "condo": "Kovan Melody",
+  "slug": "kovan-melody",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-08-12",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,227sf 3BR in a genuinely strong OCR asset — 78m to Kovan NE13 with a sheltered walkway, 778 units, 50+ deals a year, and one of the deepest exit records in the book (98.5% of 688 resales sold at a profit). The problem is the price, not the property: $2.38M / $1,940psf sits at the very top of what this exact layout has ever printed, above both of its 2026 prints ($2.32M in July, $2.20M in June), with the floor undisclosed and 2.6% gross yield to wait on.",
+      "rating_rationale": "Good development, wrong price. Only two prints in this project's entire history have cleared $1,940psf (Apr-26 $1,954 on floors 11-15; May-26 $1,940 on 16-20), and the market did not hold there — the two most recent prints of this identical 1,227sf layout came in BELOW the ask at $1,891psf ($2.32M, 20 Jul 2026) and $1,793psf ($2.20M, 19 Jun 2026). The ask is +2.6% over the last comparable print, +8.2% over the one before it, and +10.4% over the project's URA median (ask_above_own_stack_prints fires on n=23 same-size comps). PropertyGuru serves no floor for this unit, and $1,940psf implicitly prices a high floor: 24mo same-size prints run $1,600-1,804 on floors 01-05 and $1,611-1,834 on 06-10 versus $1,685-1,954 on 11-15 — if this is a low-floor unit the ask is 12-18% over its true comp, and that is unverifiable in an unattended run. Carry is thin (2.6% gross / 1.6% net; realsmart's own estimate 2.8%), and a 2006 fit-out plausibly needs $40-80k of renovation on top of the ask. Against that, this is emphatically not a value trap: 675 profitable vs 13 unprofitable resales, REALSCORE 4.2, 6.5yr average hold, and same-size-band psf ($1,191 2021 -> $1,806 2025) confirms the appreciation is real rather than a unit-mix artifact. The +31.9% premium to the age-adjusted D19 median is mostly the Kovan-vs-Punggol/Sengkang split within one district — a permanent location level, not overpayment — so it is discounted here; the +10% premium to the project's OWN prints is not. Three competing asks on the same layout ($2.38M / $2.389M / $2.40M) plus two more at $2.49-2.50M means the seller stack is collectively 5-8% above the clearing level and the buyer holds the leverage. Workable at $2.25-2.30M with the floor confirmed; at $2.38M you are paying the top of the range for the story after it has been published.",
+      "red_flags": [
+        "Ask $1,940psf tops all but one print in the project's history; the last two prints of this exact 1,227sf layout were lower ($1,891psf Jul-26, $1,793psf Jun-26)",
+        "ask_above_own_stack_prints: +10% over the same-size 24mo cohort (n=23); +10.4% over the URA project median",
+        "Floor level not disclosed — 24mo same-size prints span $1,600-1,804 (flr 01-05) vs $1,685-1,954 (flr 11-15); the ask only makes sense on a high floor",
+        "Gross yield 2.62% / net 1.57% (realsmart est. 2.8%) — very thin carry on a $2.38M ticket",
+        "2006 fit-out: unrenovated units typically need $40-80k, an unpriced addition to the effective entry",
+        "Four competing near-identical 3BR asks live in the same project ($2.38M-$2.50M) — same supply condition will exist at exit",
+        "Re-rating largely realized: named one of 2025's top-performing resale condos and psf ran ~+49% since 2021; trailing 7.4% CAGR has ~0 forward power under current priors and is not extrapolated",
+        "score_1000 511 — market-typical, well below the 650 tier (age_value -20.2, psf_value -7.1, yield -5.4)",
+        "The 'price dropped' badge is a unit-group artifact — the $2.40M -> $2.38M chain is shared across three separate listing IDs of the same layout, not a verified cut on this unit"
+      ],
+      "catalysts": [
+        "78m straight-line to Kovan NE13 with sheltered walkway; one stop to Serangoon interchange / NEX",
+        "Exit record among the deepest available: 98.5% profitable on 688 resales (675 vs 13), avg hold 6.5yrs, 417 deals above 6% annualized",
+        "778 units, 116 URA prints in window, 50+ deals past year — very deep buyer pool and top-decile OCR liquidity",
+        "45% HDB buyers with $1M+ HDB and heavy MOP flow nearby — a real, replenishing demand base",
+        "77 years lease remaining (99 from 2004) — no lease drag over a 5-7yr hold",
+        "Bedroom count verified: 1,227sf sits inside the project's own 3BR rental band (1,150-1,350sf, 190 contracts)",
+        "Same-size-band appreciation is genuine, not mix: $1,191psf (2021) -> $1,806psf (2025) in the 1,150-1,350sf band"
+      ],
+      "as_of": {
+        "price": 2380000,
+        "psf": 1939.69,
+        "beds": 3,
+        "sqft": 1227.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.39,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.62,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 76
+      },
+      "agent_evaluation": {
+        "summary": "A 1,227sf 3BR in a genuinely strong OCR asset — 78m to Kovan NE13 with a sheltered walkway, 778 units, 50+ deals a year, and one of the deepest exit records in the book (98.5% of 688 resales sold at a profit). The problem is the price, not the property: $2.38M / $1,940psf sits at the very top of what this exact layout has ever printed, above both of its 2026 prints ($2.32M in July, $2.20M in June), with the floor undisclosed and 2.6% gross yield to wait on.",
+        "rating": "Neutral",
+        "rating_rationale": "Good development, wrong price. Only two prints in this project's entire history have cleared $1,940psf (Apr-26 $1,954 on floors 11-15; May-26 $1,940 on 16-20), and the market did not hold there — the two most recent prints of this identical 1,227sf layout came in BELOW the ask at $1,891psf ($2.32M, 20 Jul 2026) and $1,793psf ($2.20M, 19 Jun 2026). The ask is +2.6% over the last comparable print, +8.2% over the one before it, and +10.4% over the project's URA median (ask_above_own_stack_prints fires on n=23 same-size comps). PropertyGuru serves no floor for this unit, and $1,940psf implicitly prices a high floor: 24mo same-size prints run $1,600-1,804 on floors 01-05 and $1,611-1,834 on 06-10 versus $1,685-1,954 on 11-15 — if this is a low-floor unit the ask is 12-18% over its true comp, and that is unverifiable in an unattended run. Carry is thin (2.6% gross / 1.6% net; realsmart's own estimate 2.8%), and a 2006 fit-out plausibly needs $40-80k of renovation on top of the ask. Against that, this is emphatically not a value trap: 675 profitable vs 13 unprofitable resales, REALSCORE 4.2, 6.5yr average hold, and same-size-band psf ($1,191 2021 -> $1,806 2025) confirms the appreciation is real rather than a unit-mix artifact. The +31.9% premium to the age-adjusted D19 median is mostly the Kovan-vs-Punggol/Sengkang split within one district — a permanent location level, not overpayment — so it is discounted here; the +10% premium to the project's OWN prints is not. Three competing asks on the same layout ($2.38M / $2.389M / $2.40M) plus two more at $2.49-2.50M means the seller stack is collectively 5-8% above the clearing level and the buyer holds the leverage. Workable at $2.25-2.30M with the floor confirmed; at $2.38M you are paying the top of the range for the story after it has been published.",
+        "red_flags": [
+          "Ask $1,940psf tops all but one print in the project's history; the last two prints of this exact 1,227sf layout were lower ($1,891psf Jul-26, $1,793psf Jun-26)",
+          "ask_above_own_stack_prints: +10% over the same-size 24mo cohort (n=23); +10.4% over the URA project median",
+          "Floor level not disclosed — 24mo same-size prints span $1,600-1,804 (flr 01-05) vs $1,685-1,954 (flr 11-15); the ask only makes sense on a high floor",
+          "Gross yield 2.62% / net 1.57% (realsmart est. 2.8%) — very thin carry on a $2.38M ticket",
+          "2006 fit-out: unrenovated units typically need $40-80k, an unpriced addition to the effective entry",
+          "Four competing near-identical 3BR asks live in the same project ($2.38M-$2.50M) — same supply condition will exist at exit",
+          "Re-rating largely realized: named one of 2025's top-performing resale condos and psf ran ~+49% since 2021; trailing 7.4% CAGR has ~0 forward power under current priors and is not extrapolated",
+          "score_1000 511 — market-typical, well below the 650 tier (age_value -20.2, psf_value -7.1, yield -5.4)",
+          "The 'price dropped' badge is a unit-group artifact — the $2.40M -> $2.38M chain is shared across three separate listing IDs of the same layout, not a verified cut on this unit"
+        ],
+        "catalysts": [
+          "78m straight-line to Kovan NE13 with sheltered walkway; one stop to Serangoon interchange / NEX",
+          "Exit record among the deepest available: 98.5% profitable on 688 resales (675 vs 13), avg hold 6.5yrs, 417 deals above 6% annualized",
+          "778 units, 116 URA prints in window, 50+ deals past year — very deep buyer pool and top-decile OCR liquidity",
+          "45% HDB buyers with $1M+ HDB and heavy MOP flow nearby — a real, replenishing demand base",
+          "77 years lease remaining (99 from 2004) — no lease drag over a 5-7yr hold",
+          "Bedroom count verified: 1,227sf sits inside the project's own 3BR rental band (1,150-1,350sf, 190 contracts)",
+          "Same-size-band appreciation is genuine, not mix: $1,191psf (2021) -> $1,806psf (2025) in the 1,150-1,350sf band"
+        ],
+        "rental_assessment": "Weak but honest. URA project-bed rents put a 1,227sf 3BR at ~$5,200/mo (67 contracts, confidence 0.95); realsmart's latest 12 contracts median $5,050 with 3BRs at $4,900-5,300 and 54 rentals in the past month. On $2.38M that is 2.6% gross / 1.6% net — realsmart's own estimate is 2.8%. Rental demand is deep and reliable (NEL adjacency, mature amenities), but the carry does not pay you to wait, and a 75% LTV buyer is meaningfully cash-flow negative at this price.",
+        "appreciation_assessment": "The trailing record is real but should not be extrapolated. The 1,150-1,350sf band went $1,191psf (2021) -> $1,321 (2022) -> $1,437 (2023) -> $1,670 (2024) -> $1,806 (2025), so the 7.39% cache CAGR is not a unit-mix illusion. But the annual project median has decelerated (+4.5% 2025, +3.6% 2026 YTD), 2026's 1,227sf prints are non-monotonic ($2.398M Apr, $2.20M Jun, $2.32M Jul), the project has already been publicly identified as a 2025 top performer, and backtested priors give trailing CAGR ~0 forward power. Forward is modeled at ~4.0%/yr — the OCR realized-forward baseline (+3.7%) with a small credit for MRT-adjacency and buyer-pool depth, not the 7.4% trailing number.",
+        "stack_notes": "No researched profile for Kovan Melody (stack_profile: not_researched) and PropertyGuru serves no floor_level or facing for this listing, so stack/floor cannot be pinned. The 24mo URA prints in the 1,150-1,350sf band segment clearly by floor — 01-05: $1,600-1,804; 06-10: $1,611-1,834; 11-15: $1,685-1,954; 16-20: $1,626-1,940 — so floor is worth roughly $150-250psf here (~$200-300k on this quantum). That is the single largest unknown in the file: confirm the floor before any offer, and run /research-development on Kovan Melody if this project stays on the shortlist.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "OCR realized-forward baseline (+3.7%/yr, full-panel backtest) with a modest uplift for 78m MRT adjacency and very deep buyer pool. The 7.39% ura_5yr_cagr is trailing, in-regime and already partly realized in the 2021-26 re-rating; trailing CAGR is backtested at ~0 forward power so it is deliberately not carried into the ROI.",
+        "realscore": 4.2,
+        "realsmart_pct_profitable": 98.5,
+        "realsmart_annual_return_pct": 6.5,
+        "realsmart_note": "realsmart.sg /p/kovan-melody, page title confirmed 'Kovan Melody Condo: Price, PSF & Rent' (D19, Hougang, 99yr from 20/01/2004, completed 2006, 778 units) — correct development. REALSCORE 4.2/5; 98.5% profitable on 688 resale pairs (675 profitable / 13 unprofitable) out of 1,427 total transactions since 2004 — far above the 150-resale trust threshold, so this is real downside evidence, not noise. Avg annualized profit 6.5% is the PAST 1 YEAR only and is backward-looking; avg holding 6.5yrs; est. rental yield 2.8%. Data through 20 July 2026."
+      },
+      "source": {
+        "run_dir": "output/run_091_500197413",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-melody-500197413",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
