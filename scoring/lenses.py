@@ -144,6 +144,30 @@ register(Lens(name="mmr", score=_mmr_lens,
               version=config.score_version, gate_percentile=0.85))
 
 
+def _exit_demand_lens(scored: Any, record: Optional[dict] = None) -> dict:
+    """Eric Chiew's exit-demand composite as the second lens — the first one
+    that exists BECAUSE it disagrees with mmr (rho +0.18 against stored
+    score_1000 over the 5,078 live listings it can score). Validated
+    2026-08-01 as neutral-and-de-correlated, not superior: DEV rho +0.159
+    [+0.045,+0.255] sig, VAL +0.070 ns, vs a psf_vs_dist bar of +0.221/+0.066
+    (data/validation_results.csv). Calibration, evidence and abstention rules
+    all live in scoring/exit_demand.py — a late import so registry import
+    stays free of that module's URA table build."""
+    from scoring import exit_demand
+    return exit_demand.score(scored, record)
+
+
+def _exit_demand_version() -> str:
+    from scoring import exit_demand
+    return exit_demand.version()
+
+
+# 0.90, not mmr's 0.85: the exit lens validated as neutral, so it earns only
+# its top-decile nominations (see scoring/exit_demand.py's verdict block).
+register(Lens(name="exit_demand", score=_exit_demand_lens,
+              version=_exit_demand_version, gate_percentile=0.90))
+
+
 # --------------------------------------------------------------------------- #
 # Scoring + persistence helpers (shared by poller._score_keys and
 # invest --score-db so the two write identical shapes)

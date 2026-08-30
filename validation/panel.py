@@ -30,10 +30,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 from collections import Counter, defaultdict
 
 import backtest as bt
+import backtest_ext as ext
 
 # The two splits the harness is allowed to use, and why the window is 1.0.
 #
@@ -152,6 +154,132 @@ def _attach_tenure(rows: list[dict], txns, split: float) -> None:
         r["lease_age"] = age
 
 
+# ---- exit demand ------------------------------------------------------------
+#
+# As-of-T features for the Eric Chiew "exit first" criteria (who buys from you,
+# why, at what price). URA caveats carry no unit identifier, so true repeat
+# sales cannot be reconstructed — instead PSEUDO repeat-sales pairs: two resales
+# of the same (project, district, exact sqft, floor tier) at least a year apart,
+# paired consecutively in time. Exact sqft + floor tier is close to "same stack,
+# same unit type", so the pair's PSF change is what a buyer-then-seller of that
+# unit type realized. Consecutive pairing (not all-pairs) keeps one long-held
+# group from minting quadratically many pairs and drowning the rest of the
+# panel. Measured on the full URA load: 10,555 pairs, 84.0% profitable — the
+# base rate every project record must be read against, since 2021-2026 is one
+# bull market and an unsmoothed share saturates at 1.0 for half the panel.
+PAIR_MIN_GAP = 1.0     # years between the two legs; same-year flips are churn,
+                       # not a hold-and-exit record
+FAMILY_SQFT = 900      # >=3BR proxy — Chiew's "family stock" line
+BOUTIQUE_UNITS = 250   # his worst-combination flag: small AND freehold AND
+BOUTIQUE_SQFT = 750    # shoebox-sized median unit
+
+_UNITS_JSON = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), "data", "project_units.json")
+
+
+def _pu_norm(name: str) -> str:
+    """Mirrors build_project_units._norm_name (kept local, same reason it is
+    kept local there: the join must not drag scoring's import graph into the
+    harness)."""
+    s = (name or "").lower().strip()
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s*@\s*", " at ", s)
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+def _load_units() -> dict:
+    """norm name -> URA total_units. Static physical attributes, so reading a
+    present-day snapshot at a 2024 split is not look-ahead: a project's unit
+    count does not change after completion, and a project only appears in the
+    panel if it already has pre-T resales."""
+    try:
+        with open(_UNITS_JSON) as f:
+            projects = json.load(f).get("projects", {})
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {k: v.get("total_units") for k, v in projects.items()
+            if v.get("total_units")}
+
+
+def build_pairs(txns) -> list[dict]:
+    """Pseudo repeat-sales pairs over the whole transaction load.
+
+    Built once, unfiltered by split — each pair carries both legs' dates, and
+    _attach_exit_demand keeps only pairs whose LATER leg is <= T, so the same
+    pair list serves every split with no look-ahead. Rows without a parseable
+    floor band (older caveats, txns loaded via bt.load_txns which drops the
+    column) simply produce no pairs: a pair whose legs might sit 20 floors
+    apart is a floor-premium measurement, not an exit record.
+    """
+    groups = defaultdict(list)
+    for x in txns:
+        if x["sale_type"] not in ("Resale", "Sub Sale") or not x["sqft"]:
+            continue
+        tier = ext._floor_tier(x.get("floor"))
+        if tier is None:
+            continue
+        groups[(x["project"], x["district"], x["sqft"], tier)].append(
+            (x["t"], x["psf"]))
+    pairs = []
+    for (proj, dist, _sqft, _tier), legs in groups.items():
+        legs.sort()
+        for a, b in zip(legs, legs[1:]):
+            if b[0] - a[0] >= PAIR_MIN_GAP:
+                pairs.append({"project": proj, "district": dist,
+                              "t0": a[0], "t1": b[0],
+                              "psf0": a[1], "psf1": b[1]})
+    return pairs
+
+
+def _attach_exit_demand(rows: list[dict], txns, split: float,
+                        pairs=None, units=None) -> None:
+    """As-of-T exit-demand features. Everything here is strictly pre-T.
+
+    pair_profit / pair_loss — matched-pair exit outcomes (later-leg <= T).
+    resale_vol_6m           — resales in (T-0.5, T], Chiew's "1-2 transactions
+                              means no demand and no exit" liquidity read.
+    family_share            — share of pre-T resales at >= FAMILY_SQFT sqft;
+                              all pre-T rather than a trailing window because
+                              unit mix is a build attribute, not a market state.
+    median_sqft, total_units— the boutique-flag inputs; total_units is None
+                              for the ~7% of panel projects the URA GIS join
+                              misses, and consumers must treat None as "no
+                              evidence", never as a number.
+    """
+    pairs = build_pairs(txns) if pairs is None else pairs
+    units = _load_units() if units is None else units
+
+    pair_pl = defaultdict(lambda: [0, 0])
+    for p in pairs:
+        if p["t1"] <= split:
+            pair_pl[(p["project"], p["district"])][
+                0 if p["psf1"] > p["psf0"] else 1] += 1
+
+    vol6 = defaultdict(int)
+    fam = defaultdict(lambda: [0, 0])
+    sqfts = defaultdict(list)
+    for x in txns:
+        if x["sale_type"] not in ("Resale", "Sub Sale") or x["t"] > split:
+            continue
+        k = (x["project"], x["district"])
+        if x["t"] > split - 0.5:
+            vol6[k] += 1
+        if x["sqft"]:
+            fam[k][0] += 1
+            if x["sqft"] >= FAMILY_SQFT:
+                fam[k][1] += 1
+            sqfts[k].append(x["sqft"])
+
+    for r in rows:
+        k = (r["project"], r["district"])
+        r["pair_profit"], r["pair_loss"] = pair_pl.get(k, (0, 0))
+        r["resale_vol_6m"] = vol6.get(k, 0)
+        n, f = fam.get(k, (0, 0))
+        r["family_share"] = f / n if n else None
+        r["median_sqft"] = bt._median(sqfts.get(k) or [])
+        r["total_units"] = units.get(_pu_norm(r["project"]))
+
+
 def _district_forward(txns, split: float, window: float) -> dict:
     """Each district's realized forward CAGR — the benchmark to beat.
 
@@ -191,7 +319,9 @@ def build(split: float = VAL_SPLIT, window: float = DEFAULT_WINDOW,
     noise pushes every value-type feature spuriously negative — the artifact
     backtest.py's --split-sample flag exists for.
     """
-    txns = bt.load_txns() if txns is None else txns
+    # load_with_floor, not load_txns: identical rows (verified — same panel_id
+    # either way) but the Floor Level column survives, which build_pairs needs.
+    txns = ext.load_with_floor() if txns is None else txns
     rows = bt.build_panel(txns, split, window, min_txn=min_txn,
                           size_control=True, split_sample=True)
     dfwd = _district_forward(txns, split, window)
@@ -205,6 +335,7 @@ def build(split: float = VAL_SPLIT, window: float = DEFAULT_WINDOW,
                     "district_forward_cagr": d,
                     "excess_fwd": r["forward_cagr"] - d})
     _attach_tenure(out, txns, split)
+    _attach_exit_demand(out, txns, split)
     out.sort(key=lambda r: (r["district"], r["project"]))
     return out
 
@@ -238,6 +369,10 @@ def summary(rows: list[dict]) -> dict:
         "tenure_unparsed": sum(1 for r in rows if r["tenure_kind"] is None),
         "remaining_lease_known": sum(1 for r in rows
                                      if r["remaining_lease"] is not None),
+        "pairs_3plus": sum(1 for r in rows
+                           if r["pair_profit"] + r["pair_loss"] >= 3),
+        "total_units_known": sum(1 for r in rows
+                                 if r["total_units"] is not None),
     }
 
 
