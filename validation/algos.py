@@ -137,6 +137,124 @@ def enbloc_leasehold_age(r):
     return None
 
 
+# ---- exit demand (Eric Chiew's "always think about exit first") -------------
+#
+# His computable criteria in his order of importance: (1) profitable:
+# unprofitable resale-pair ratio, (2) recent transaction volume, (3) listing
+# scarcity, (4) family unit mix, (5) age-adjusted comparable psf, (6) the
+# boutique-freehold worst-combination flag. (3) has no historical ground truth
+# here — the panel is URA caveats and there is no archive of live listing
+# counts as of 2024 — so like MMR's ask-vs-comps channel it is testable only
+# prospectively, and this harness does not pretend otherwise. (5) was measured
+# and found null (rho +0.043 [-0.095,+0.240] DEV, crediting $50/psf-year
+# against the district's median project age), so it is not carried.
+
+# Fewer pairs than this and the record is an anecdote: 3 all-profitable pairs
+# smooth to 0.71, well below a 20/1 record at 0.88 — enough evidence to rank,
+# not enough to crown.
+EXIT_MIN_PAIRS = 3
+# Laplace prior. Uninformative on purpose (centered at 0.5, NOT at the 84%
+# bull-market base rate): the panel target is district-relative, and shrinking
+# toward the market-wide base rate would make thin records free-ride the bull
+# market the target exists to difference away.
+EXIT_PAIR_ALPHA = 2.0
+
+
+def exit_pair_record(r):
+    """Chiew #1: smoothed share of the project's matched-pair exits that made
+    money as of T.
+
+    His gold/red-flag examples (Tampines Trilliant 262/0 vs Reflections
+    125/182) order correctly under the smoothing: 262/0 -> 0.99, 5/0 -> 0.78,
+    125/182 -> 0.41. This is the DE-CORRELATED core of the framework — on DEV
+    its rank correlation with psf_vs_dist is -0.06, i.e. it ranks on an axis
+    single-feature cheapness does not see at all. And the pseudo-pairs track
+    ground truth: rho +0.77 (n=21) against realsmart's true pct_profitable
+    for the projects both sides cover.
+
+    Measured: rho +0.093 [-0.045,+0.208] DEV, +0.076 [-0.040,+0.217] VAL —
+    positive both splits, significant neither. Alone it is not a return
+    predictor at this horizon; its value is the orthogonality above.
+    """
+    p, u = r.get("pair_profit"), r.get("pair_loss")
+    if p is None or u is None or p + u < EXIT_MIN_PAIRS:
+        return None
+    return (p + EXIT_PAIR_ALPHA) / (p + u + 2 * EXIT_PAIR_ALPHA)
+
+
+def exit_liquidity_6m(r):
+    """Chiew #2: resale count in the last 6 months — "1-2 transactions means
+    no demand and no exit".
+
+    Two honesty notes. The panel's min_txn=5 filter already removes the
+    illiquid left tail he is warning about, so this tests the criterion only
+    over projects that clear a basic liquidity floor. And the per-unit variant
+    (turnover per 100 units) measured significantly NEGATIVE on DEV (rho
+    -0.092 [-0.175,-0.001]) — high churn reads as investor stock, not demand —
+    so the raw count is scored exactly as he states it, and the harness is
+    left to say whether it carries anything.
+
+    Measured: rho -0.017 [-0.164,+0.093] DEV, +0.098 [-0.008,+0.183] VAL — a
+    null. On projects liquid enough to enter the panel, MORE liquidity buys
+    no extra relative return.
+    """
+    v = r.get("resale_vol_6m")
+    return None if v is None else float(v)
+
+
+def exit_family_mix(r):
+    """Chiew #4: share of the project's pre-T resale stock at >= 900 sqft —
+    family stock versus 1-2BR "investor projects".
+
+    Measured: rho +0.134 [+0.054,+0.216] DEV (significant), +0.036
+    [-0.076,+0.177] VAL — the family tilt was real in the 2024-2025 window
+    and faded in 2025-2026 (degradation 0.27, flagged). Note it is the
+    composite's most mmr-correlated input (+0.50 vs mmr_composite ranks on
+    DEV), so it dilutes the pair record's orthogonality as it earns its
+    weight.
+    """
+    return r.get("family_share")
+
+
+def _exit_boutique_ok(r):
+    """1.0 unless the project trips Chiew's worst-combination flag: fewer than
+    ~250 units AND freehold AND a sub-750sqft median unit. Missing unit count
+    or sqft evidence means NO flag — absence of evidence is not a penalty."""
+    if r.get("total_units") is None or r.get("median_sqft") is None:
+        return 1.0
+    boutique = (r["total_units"] < 250
+                and r.get("tenure_kind") == "freehold"
+                and r["median_sqft"] < 750)
+    return 0.0 if boutique else 1.0
+
+
+def exit_demand_composite(r):
+    """The testable Chiew criteria assembled, his priority order as weights.
+
+    All three components are already 0..1 shares, so this is a plain weighted
+    sum — no cross-row ranking, which also means the identical arithmetic runs
+    off a live listing's project history in scoring/exit_demand.py. Volume is
+    deliberately NOT in the composite: measured null as a raw count and
+    sign-inverted per unit (see exit_liquidity_6m), and paying weight for a
+    null feature just dilutes the two that measure something.
+
+    Measured: rho +0.159 [+0.045,+0.255] DEV (significant), +0.070
+    [-0.063,+0.232] VAL (not), against a psf_vs_dist bar of +0.221/+0.066.
+    The verdict is NEUTRAL: it does not beat single-feature cheapness
+    in-split, it degrades like everything else (0.44, flagged), and its VAL
+    hit@25 of 0.64 (p 0.109) is the table's best point estimate without being
+    a finding. What it uniquely has is de-correlation — +0.18 against stored
+    score_1000 on the live book — which is the property the lens registry
+    exists for, and why this registered as a lens despite the null-vs-bar
+    read (scoring/exit_demand.py).
+    """
+    pair = exit_pair_record(r)
+    fam = r.get("family_share")
+    if pair is None or fam is None:
+        return None
+    return 0.5 * pair + 0.3 * fam + 0.2 * _exit_boutique_ok(r)
+
+
 # name -> (fn, is_baseline). Order is display order.
 ALGOS = {
     "random": (random_scorer(), True),
@@ -146,6 +264,10 @@ ALGOS = {
     "trailing_cagr": (trailing_cagr, False),
     "lease_decay": (lease_decay, False),
     "enbloc_leasehold_age": (enbloc_leasehold_age, False),
+    "exit_pair_record": (exit_pair_record, False),
+    "exit_liquidity_6m": (exit_liquidity_6m, False),
+    "exit_family_mix": (exit_family_mix, False),
+    "exit_demand_composite": (exit_demand_composite, False),
 }
 
 BASELINES = [k for k, (_, b) in ALGOS.items() if b]

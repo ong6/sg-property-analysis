@@ -26,7 +26,7 @@ scores + empty fields       does web research,               renders verdicts,
 ## Installation
 
 ```bash
-git clone https://github.com/ong6/property-finder.git
+git clone https://github.com/ong6/sg-property-analysis.git
 cd property-finder
 python -m venv venv && source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
