@@ -27,7 +27,7 @@ scores + empty fields       does web research,               renders verdicts,
 
 ```bash
 git clone https://github.com/ong6/sg-property-analysis.git
-cd property-finder
+cd sg-property-analysis
 python -m venv venv && source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python -m patchright install chromium            # Patchright needs a browser
