@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-09-02",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -2435,6 +2435,13 @@
       "district": "D23",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-08",
+      "eval_count": 1
+    },
+    "icon": {
+      "condo": "Icon",
+      "district": "D02",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-02",
       "eval_count": 1
     },
     "waterwoods": {

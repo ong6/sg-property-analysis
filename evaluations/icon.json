@@ -1,0 +1,134 @@
+{
+  "condo": "Icon",
+  "slug": "icon",
+  "district": "D02",
+  "history": [
+    {
+      "evaluated_at": "2026-09-02",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "High-floor (#38) 1,281 sqft double-volume LOFT 2BR+study at Icon, D2 CCR, 99-yr from 2002 (~75 yrs left), offered as an SRI owner-sale opening price of $2.2M / $1,717 psf (auction 23 Sep 2026). The ask sits ABOVE every print its own loft stack has ever lodged ($1,669 psf Aug-24, $1,639 Jun-22, $1,444 Jul-21) in a project whose median psf has slid from $1,915 (2024) to $1,760 (2026 YTD, realsmart) and whose 5-yr resale CAGR is 0.7%. Gross yield ~3.4% on real 1,200-1,300 sqft URA leases ($5,700-7,000/mo, 2025-26) misses the 3.5% crash floor. Loft = thin format (void counted in strata sqft), CCR = weakest forward region, and the unit breaches the OCR/3BR mandate outright.",
+      "rating_rationale": "1) Not cheap where it matters: $1,717 psf is +3% over the loft stack's last print ($2.138M / $1,669 psf, Aug-24, 31-35 fl) and would be the highest psf ever paid for the 1,281 sqft stack; the 1,050-1,400 band's 24-mo median is $1,670 (2 prints, 1,109-1,119 sqft). There are ZERO 1,200-1,302 sqft prints in the last 24 months, so the format has no live bid. The algo's -16.8% age-adjusted 'discount' vs D2 peers is a CCR-district artefact (band_peer_count 3) and the -5.9% vs URA median is the void: 904-936 sqft 2BRs print $1,890-2,090 psf, the loft prices per void-inflated sqft. 2) Trend is down: project psf 2024 $1,915 -> 2025 $1,800 -> 2026 $1,760; ura 3-yr -6.0%, 5-yr CAGR +0.73%, momentum -0.65; realsmart avg annualized profit 1.1%, REALSCORE 2.2 on 1,025 resales (a deep, actionable low read; Altez 1.2 / Skysuites 1.7 next door confirm the D2 99LH cluster's weak exit record). 3) Lease: 75 yrs now, 68-71 at a 4-7 yr exit -- the next buyer is within a decade of the sub-60 CPF/bank thresholds, so the buyer pool narrows exactly when this buyer sells. 4) Yield: $6,200/mo (median of 2025-26 1,200-1,300 sqft leases) = 3.4% gross, ~2% net -- below the 3.5% fallback and no carry cushion; tenanted to Apr-27 at an unknown rent. 5) Thin format: double-volume loft, CBD investor-only demographic (9:1 leases-to-sales), HDB-upgrader share 33%, no schools within 1 km; exits go to a small pool. 6) Competing supply at the top of the precinct: Newport Residences (246u FH, $3,012-3,370 psf, 57% sold Jan-26), Skywaters (63-storey, ~2028), CBD Incentive Scheme pipeline. 7) Auction mechanics: an owner-sale 'opening price' is a floor, not a discount -- bids go up from $2.2M; with no live band bid, the fair number is at or below $2.05-2.10M (~$1,600-1,640 psf, the stack's own prints), which the seller has not signalled. 8) Mandate: CCR D2 + 2BR breaches the OCR-only, 3BR mandate for both buyers; quantum sits at her $2.2M ceiling for a unit that needs none of her $2.59M capacity. All-cash ROI 5yr 1.1%/yr (downside -0.3%, upside 2.6%). Vs the FAR 3BR ($2.82M) / Dunearn House / Union Square comparison set, this is a worse quantum-for-exit trade.",
+      "red_flags": [
+        "Ask $1,717 psf above own loft-stack prints ($1,669 Aug-24, $1,639 Jun-22) - would be a stack record in a falling project",
+        "No 1,200-1,302 sqft print at Icon in the last 24 months; band cohort 2-4 txns - no live bid for the format",
+        "Double-volume loft: void counted in 1,281 strata sqft; usable area closer to a 2BR+study - thin resale format",
+        "Project psf trend down 8% since 2024 ($1,915 -> $1,760); 3-yr URA -6%, 5-yr CAGR 0.7%, momentum -0.65",
+        "REALSCORE 2.2 on 1,025 resales; avg annualized profit 1.1%; neighbours Altez 1.2 / Skysuites 1.7",
+        "99-yr lease from 2002: 75 yrs left, 68-71 at exit - buyer-pool narrowing begins during the hold",
+        "Gross yield ~3.4% ($6,200/mo) below the 3.5% fallback; net ~2%; tenanted to 14-Apr-27 at unknown rent",
+        "CCR region: weakest realized forward returns (+1.9%/yr panel); investor-only demographic (9:1 leases:sales)",
+        "Owner-sale auction: $2.2M is an opening price (floor), bidding moves up not down",
+        "MANDATE BREACH: CCR D2 + 2BR vs OCR-only 3BR/4BR mandate for both buyers",
+        "Competing supply: Newport Residences (FH, $3,012+ psf), Skywaters (~2028), CBD Incentive Scheme 2.0 pipeline",
+        "2007 finishes; no profile - facing/stack of #38 unverified (blocks face N/S; 'sea view' unconfirmed)"
+      ],
+      "catalysts": [
+        "Four MRT stations within ~500m (Tanjong Pagar EW, Shenton Way TE, Prince Edward Rd CC, Maxwell TE) - already priced",
+        "Greater Southern Waterfront / CBD Incentive Scheme 2.0 rejuvenation - narrative, no measured forward power",
+        "Deep rental machine: 191 leases past year, 646 units - liquidity for tenants, not for sellers of this format"
+      ],
+      "as_of": {
+        "price": 2200000,
+        "psf": 1717.4,
+        "beds": 2,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": 0.73,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.27,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 77
+      },
+      "agent_evaluation": {
+        "summary": "High-floor (#38) 1,281 sqft double-volume LOFT 2BR+study at Icon, D2 CCR, 99-yr from 2002 (~75 yrs left), offered as an SRI owner-sale opening price of $2.2M / $1,717 psf (auction 23 Sep 2026). The ask sits ABOVE every print its own loft stack has ever lodged ($1,669 psf Aug-24, $1,639 Jun-22, $1,444 Jul-21) in a project whose median psf has slid from $1,915 (2024) to $1,760 (2026 YTD, realsmart) and whose 5-yr resale CAGR is 0.7%. Gross yield ~3.4% on real 1,200-1,300 sqft URA leases ($5,700-7,000/mo, 2025-26) misses the 3.5% crash floor. Loft = thin format (void counted in strata sqft), CCR = weakest forward region, and the unit breaches the OCR/3BR mandate outright.",
+        "rating": "Avoid",
+        "rating_rationale": "1) Not cheap where it matters: $1,717 psf is +3% over the loft stack's last print ($2.138M / $1,669 psf, Aug-24, 31-35 fl) and would be the highest psf ever paid for the 1,281 sqft stack; the 1,050-1,400 band's 24-mo median is $1,670 (2 prints, 1,109-1,119 sqft). There are ZERO 1,200-1,302 sqft prints in the last 24 months, so the format has no live bid. The algo's -16.8% age-adjusted 'discount' vs D2 peers is a CCR-district artefact (band_peer_count 3) and the -5.9% vs URA median is the void: 904-936 sqft 2BRs print $1,890-2,090 psf, the loft prices per void-inflated sqft. 2) Trend is down: project psf 2024 $1,915 -> 2025 $1,800 -> 2026 $1,760; ura 3-yr -6.0%, 5-yr CAGR +0.73%, momentum -0.65; realsmart avg annualized profit 1.1%, REALSCORE 2.2 on 1,025 resales (a deep, actionable low read; Altez 1.2 / Skysuites 1.7 next door confirm the D2 99LH cluster's weak exit record). 3) Lease: 75 yrs now, 68-71 at a 4-7 yr exit -- the next buyer is within a decade of the sub-60 CPF/bank thresholds, so the buyer pool narrows exactly when this buyer sells. 4) Yield: $6,200/mo (median of 2025-26 1,200-1,300 sqft leases) = 3.4% gross, ~2% net -- below the 3.5% fallback and no carry cushion; tenanted to Apr-27 at an unknown rent. 5) Thin format: double-volume loft, CBD investor-only demographic (9:1 leases-to-sales), HDB-upgrader share 33%, no schools within 1 km; exits go to a small pool. 6) Competing supply at the top of the precinct: Newport Residences (246u FH, $3,012-3,370 psf, 57% sold Jan-26), Skywaters (63-storey, ~2028), CBD Incentive Scheme pipeline. 7) Auction mechanics: an owner-sale 'opening price' is a floor, not a discount -- bids go up from $2.2M; with no live band bid, the fair number is at or below $2.05-2.10M (~$1,600-1,640 psf, the stack's own prints), which the seller has not signalled. 8) Mandate: CCR D2 + 2BR breaches the OCR-only, 3BR mandate for both buyers; quantum sits at her $2.2M ceiling for a unit that needs none of her $2.59M capacity. All-cash ROI 5yr 1.1%/yr (downside -0.3%, upside 2.6%). Vs the FAR 3BR ($2.82M) / Dunearn House / Union Square comparison set, this is a worse quantum-for-exit trade.",
+        "red_flags": [
+          "Ask $1,717 psf above own loft-stack prints ($1,669 Aug-24, $1,639 Jun-22) - would be a stack record in a falling project",
+          "No 1,200-1,302 sqft print at Icon in the last 24 months; band cohort 2-4 txns - no live bid for the format",
+          "Double-volume loft: void counted in 1,281 strata sqft; usable area closer to a 2BR+study - thin resale format",
+          "Project psf trend down 8% since 2024 ($1,915 -> $1,760); 3-yr URA -6%, 5-yr CAGR 0.7%, momentum -0.65",
+          "REALSCORE 2.2 on 1,025 resales; avg annualized profit 1.1%; neighbours Altez 1.2 / Skysuites 1.7",
+          "99-yr lease from 2002: 75 yrs left, 68-71 at exit - buyer-pool narrowing begins during the hold",
+          "Gross yield ~3.4% ($6,200/mo) below the 3.5% fallback; net ~2%; tenanted to 14-Apr-27 at unknown rent",
+          "CCR region: weakest realized forward returns (+1.9%/yr panel); investor-only demographic (9:1 leases:sales)",
+          "Owner-sale auction: $2.2M is an opening price (floor), bidding moves up not down",
+          "MANDATE BREACH: CCR D2 + 2BR vs OCR-only 3BR/4BR mandate for both buyers",
+          "Competing supply: Newport Residences (FH, $3,012+ psf), Skywaters (~2028), CBD Incentive Scheme 2.0 pipeline",
+          "2007 finishes; no profile - facing/stack of #38 unverified (blocks face N/S; 'sea view' unconfirmed)"
+        ],
+        "catalysts": [
+          "Four MRT stations within ~500m (Tanjong Pagar EW, Shenton Way TE, Prince Edward Rd CC, Maxwell TE) - already priced",
+          "Greater Southern Waterfront / CBD Incentive Scheme 2.0 rejuvenation - narrative, no measured forward power",
+          "Deep rental machine: 191 leases past year, 646 units - liquidity for tenants, not for sellers of this format"
+        ],
+        "rental_assessment": "Real URA contracts for 1,200-1,300 sqft units: Mar-26 $5,700 / $6,450 / $7,000; Sep-25 $6,000 / $5,950; 2024 $6,200-6,600. Use $6,200/mo -> 3.4% gross on $2.2M, ~2% net after maintenance/tax. Project avg $6.66 psf/mo and 4.6% est yield (realsmart) apply to the small units, not this loft. Tenanted till 14 Apr 2027 (rent not disclosed) - buyer inherits ~7 months of an unknown lease.",
+        "appreciation_assessment": "Project is ex-growth: URA 5-yr CAGR +0.73% (137 resales), 3-yr -6.0%, 1-yr -2.5%; realsmart annual medians $1,915 (2024) -> $1,800 (2025) -> $1,760 (2026). CCR forward prior +1.9%/yr and lease decay from 75 yrs argue for 0-1.5%/yr on this stack; the loft's own prints show $1,444 (2021) -> $1,669 (2024) then nothing. Use 1.0%/yr (resale-to-resale, project-level), not the 2.8% CCR baseline.",
+        "stack_notes": "1,281 sqft = 2BR+study loft with ~6m double-volume living (void in strata area); 3 prints all-time at this size, plus 1,173-1,238 sqft variants. Two linear blocks (41 & 46 storeys) face N/S; sea view claimed for #38 but unverified - no profile. Small 2BRs (904-936 sqft) are the liquid format here at $1,890-2,090 psf.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": 1.0,
+        "appreciation_rate_source": "URA resale-to-resale: project 5-yr CAGR 0.73% (137 txns), 3-yr -6%; realsmart 2024->2026 medians -8%; CCR panel forward +1.9%/yr; lease at 75 yrs",
+        "realscore": 2.2,
+        "realsmart_pct_profitable": 90.1,
+        "realsmart_annual_return_pct": 1.1,
+        "realsmart_resales_counted": 1025,
+        "realsmart_total_txns": 1625,
+        "gross_yield_pct_verified": 3.4,
+        "mandate_breach": "CCR D2 + 2BR vs OCR-only 3BR/4BR mandate (both buyers)",
+        "same_size_comps_24mo": [],
+        "same_size_comps_all": [
+          {
+            "date": "Aug-24",
+            "price": 2138000,
+            "sqft": 1281,
+            "psf": 1669,
+            "floor": "31-35"
+          },
+          {
+            "date": "Dec-23",
+            "price": 2018888,
+            "sqft": 1227,
+            "psf": 1645,
+            "floor": "31-35"
+          },
+          {
+            "date": "Apr-23",
+            "price": 1900000,
+            "sqft": 1238,
+            "psf": 1535,
+            "floor": "31-35"
+          },
+          {
+            "date": "Dec-22",
+            "price": 1870000,
+            "sqft": 1173,
+            "psf": 1594,
+            "floor": "36-40"
+          },
+          {
+            "date": "Jun-22",
+            "price": 2100000,
+            "sqft": 1281,
+            "psf": 1639,
+            "floor": "36-40"
+          },
+          {
+            "date": "Jul-21",
+            "price": 1850000,
+            "sqft": 1281,
+            "psf": 1444,
+            "floor": "31-35"
+          }
+        ]
+      },
+      "source": {
+        "run_dir": "output/run_092_500246458",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-icon-500246458",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

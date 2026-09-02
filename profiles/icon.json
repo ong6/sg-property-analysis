@@ -1,0 +1,90 @@
+{
+  "condo": "Icon",
+  "slug": "icon",
+  "district": "D02",
+  "researched_at": "2026-09-02",
+  "revision": 1,
+  "confidence": "low",
+  "sources": [
+    {
+      "url": "https://shioknest.com/blog/review-icon",
+      "type": "forum",
+      "note": "review: 646 units, 99yr from 2002, 4 MRT within ~500m, investor/landlord building, high floors = skyline/partial sea view, 2007 finishes"
+    },
+    {
+      "url": "https://directory.stackedhomes.com/condo/icon/",
+      "type": "stackedhomes",
+      "note": "two linear blocks facing N and S; 50m pool/tennis on 7th floor, clubhouse/gym on 31st"
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/icon",
+      "type": "listing",
+      "note": "some units have double-volume living + loft; 1281 sqft units listed as 3BR/2 bath"
+    },
+    {
+      "url": "data/ura_district_D02.csv",
+      "type": "listing",
+      "note": "URA sqft clusters 2021-26 (137 prints)"
+    }
+  ],
+  "development": {
+    "total_units": 646,
+    "blocks": 2,
+    "max_floor": 46,
+    "tenure": "99 yrs from 29/01/2002",
+    "top_year": 2007,
+    "developer": "Lucky Pinnacle Pte Ltd (Far East Organization)",
+    "orientation_notes": "Two linear blocks (41 & 46 storeys) with direct North/South facing; higher floors get CBD skyline and partial sea view (unverified per stack). Facilities on 7th (pool/tennis/BBQ) and 31st (clubhouse/gym/sky terrace).",
+    "known_issues": [
+      "2007-vintage finishes",
+      "no primary school within 1 km",
+      "investor-heavy resident mix (~9:1 leases to sales)",
+      "loft units carry double-volume void in strata sqft"
+    ]
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "1BR",
+      "sqft": [
+        560,
+        570,
+        581,
+        657,
+        700,
+        786
+      ],
+      "efficiency": "unknown",
+      "notes": "most liquid formats; 560-581 sqft dominate prints"
+    },
+    {
+      "type": "2BR",
+      "sqft": [
+        872,
+        883,
+        904,
+        915,
+        926,
+        936
+      ],
+      "efficiency": "unknown",
+      "notes": "standard 2BR; prints $1,890-2,090 psf in 2024-26"
+    },
+    {
+      "type": "2BR+S loft",
+      "sqft": [
+        1109,
+        1119,
+        1130,
+        1173,
+        1227,
+        1238,
+        1281,
+        1302
+      ],
+      "efficiency": "low",
+      "notes": "double-volume living (~6m ceiling) with loft; void counted in strata area; sometimes marketed as 3BR; rare prints (6 since 2021 at >=1150 sqft)"
+    }
+  ],
+  "first_researched_at": "2026-09-02"
+}
