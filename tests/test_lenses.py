@@ -26,7 +26,19 @@ FIXTURE = os.path.join(os.path.dirname(__file__), "fixtures",
 
 
 @pytest.fixture
-def golden():
+def golden(monkeypatch):
+    # The golden gate was captured with data/bed_bands.json present. That file
+    # is gitignored (regenerable), so on a fresh clone build the bands in
+    # memory from the tracked URA rental CSVs instead of failing on its absence.
+    import bed_bands
+    if not os.path.exists(bed_bands.BANDS_FILE):
+        monkeypatch.setattr(bed_bands, "_CACHE", bed_bands.build())
+    # The registry now ships exit_demand alongside mmr; the golden gate is
+    # defined as the mmr-only gate, so restrict the registry for this fixture
+    # (the autouse guard below restores the full registry afterwards).
+    mmr = lenses.LENSES["mmr"]
+    lenses.LENSES.clear()
+    lenses.LENSES["mmr"] = mmr
     with open(FIXTURE) as f:
         return json.load(f)
 
