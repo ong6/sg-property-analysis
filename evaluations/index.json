@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-12",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -3723,6 +3723,13 @@
       "district": "D16",
       "latest_rating": "Neutral",
       "latest_date": "2026-06-16",
+      "eval_count": 3
+    },
+    "amberwood-at-holland": {
+      "condo": "Amberwood at Holland",
+      "district": "D10",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-12",
       "eval_count": 3
     },
     "1km-to-boon-keng-mrt-only-below-valuation-almost-sold": {

@@ -1,0 +1,114 @@
+{
+  "condo": "Amberwood at Holland",
+  "slug": "amberwood-at-holland",
+  "district": "D10",
+  "researched_at": "2026-09-12",
+  "revision": 1,
+  "confidence": "medium",
+  "sources": [
+    {
+      "url": "https://stackedhomes.com/amberwood-at-holland-to-preview-on-september-11-with-prices-from-2-56m/",
+      "type": "news",
+      "note": "212 units / 11 low-rise blocks 4-6 storeys at the corner of Holland Plain and Holland Link; site 183,729 sqft; land $368.37M ($1,432 psf ppr); 3BR 74 units 872-980 sqft from $2.568M; 4BR 74 units 1,076-1,313 sqft from $3.175M; 5BR 64 units 1,335-1,572 sqft from $3.992M; Luxe = private lift + marble; artist impressions show balconies toward Holland Plain / Holland Green Linear Park; King Albert Park DTL 'about a 9-minute walk'; MGS <1km; preview 11 Sep, booking 26 Sep 2026"
+    },
+    {
+      "url": "https://www.edgeprop.sg/property-news/sim-lian-back-core-central-region-amberwood-holland-after-17-years",
+      "type": "news",
+      "note": "48 Luxe units with private-lift access; side gate to upcoming NParks neighbourhood park; Holland Green Linear Park (2022) connects to Rail Corridor; GCB enclaves Brizay Park / Ewart Park / Garlick Ave surround; plot 2 (169,175 sqft, ~280 units, $454M / $1,491 psf ppr, sole bid May 2026) launches 2Q2027; third Holland Plain GLS site Dec 2026; TOP target Jun 2030; comps quoted: Skye at Holland $2,953 avg, Dunearn House $3,140 avg (56% sold), Royalgreen 2022 resale $2,817"
+    },
+    {
+      "url": "https://projecthome.sg/blog/amberwood-at-holland/",
+      "type": "review",
+      "note": "King Albert Park MRT 'approx. 11-min walk (~1,013 m)'; 99-yr lease from 7 Aug 2025; yield est ~3.1% gross; no HDB within 2km recently MOP (thin upgrader cluster)"
+    },
+    {
+      "url": "https://www.propertyguru.com.sg/project/amberwood-at-holland",
+      "type": "listing",
+      "note": "PropertyGuru project page lists King Albert Park MRT at 1.6 km / 19-min walk — CONFLICTS with 680m-1,013m marketing/review figures; treat true walk as ~0.7-1.0 km via Holland Link/Holland Plain pending on-site check"
+    },
+    {
+      "url": "https://www.businesstimes.com.sg/",
+      "type": "news",
+      "note": "Business Times 10 Sep 2026 (owner-supplied): Sim Lian; 17,069 sqm GLS site; 11 blocks 4-6 storeys; 212 units 74x3BR/74x4BR/64x5BR; land $368.4M / $1,432 psf ppr (Aug 2025, 5 bids); precinct ~2,500 homes across 8 GLS sites; Wing Tai/Metro Dunearn Rd site $1,625 psf ppr Apr 2026"
+    }
+  ],
+  "development": {
+    "total_units": 212,
+    "blocks": 11,
+    "max_floor": 6,
+    "developer": "Sim Lian Land (Sim Lian Group) — first CCR launch since Rochelle at Newton (2009); recent: Treasure at Tampines, Emerald of Katong, Aurelle/Rivelle ECs",
+    "tenure": "99-year leasehold from 7 Aug 2025",
+    "top_year": 2030,
+    "expected_top": "vacant possession by 30 Jun 2030 (developer target)",
+    "address": "Holland Link (corner Holland Plain × Holland Link), Holland Plain precinct, D10",
+    "site_sqm": 17069,
+    "orientation_notes": "Eleven 4-6 storey blocks on a 17,069 sqm corner plot bounded by Holland Plain and Holland Link, ringed by GCB land (Brizay Park / Ewart Park / Garlick Ave) with Holland Green Linear Park (Rail Corridor connector) adjacent and a side gate to a future NParks neighbourhood park. Artist impressions show balconies facing Holland Plain / the linear park. Per-block numbering, compass facings and which stacks hold the 48 Luxe (private-lift) units are NOT verified from text sources — showflat digital stack selector reportedly shows orientations toward the Rail Corridor and GCB areas. Sim Lian's plot 2 (~280 units, launch 2Q2027, build ~2027-2031) is the 'neighbouring' parcel — the side it abuts is unverified; blocks on that boundary face 3-4 years of construction and a permanent view change. Amenities: none inside the precinct yet (Bukit Timah Plaza / KAP mall ~1km).",
+    "known_issues": [
+      "Pre-launch: zero transactions; all pricing indicative until booking 26 Sep 2026",
+      "MRT distance disputed: 680m (marketing) / ~1,013m (projecthome) / 1.6km (PropertyGuru) — walk to King Albert Park DTL is 8-15 min depending on source; CRL interchange 2032",
+      "New precinct: 7 more Holland Plain GLS plots (~2,300 further homes) to be built out around it through the 2030s; plot 2 construction next door 2027-2031",
+      "No 1BR/2BR — 3BR is the entry ticket at $2.568M; buyer pool is family/right-sizer, not investor",
+      "Low-rise 4-6 storeys: no high-floor premium available; view is GCB rooftops / park at best"
+    ]
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "3BR",
+      "sqft": [
+        872,
+        980
+      ],
+      "count": 74,
+      "notes": "3BR 872 sqft from $2.568M (~$2,945 psf); 3BR Flexi 958 sqft from $2.841M (~$2,966 psf). Post-harmonisation (all-liveable) sqft"
+    },
+    {
+      "type": "4BR",
+      "sqft": [
+        1076,
+        1313
+      ],
+      "count": 74,
+      "notes": "4BR 1,087 sqft from $3.175M (~$2,921 psf); 4BR Premium 1,227 sqft from $3.674M (~$2,994 psf)"
+    },
+    {
+      "type": "5BR",
+      "sqft": [
+        1335,
+        1572
+      ],
+      "count": 64,
+      "notes": "5BR Premium 1,335 sqft from $3.992M (~$2,990 psf); 5BR Luxe 1,561 sqft from $4.699M (~$3,010 psf); 48 Luxe units carry private lift access"
+    }
+  ],
+  "unit_mix": [
+    {
+      "type": "3BR",
+      "sqft_range": [
+        872,
+        980
+      ],
+      "count": 74,
+      "share_pct": 35
+    },
+    {
+      "type": "4BR",
+      "sqft_range": [
+        1076,
+        1313
+      ],
+      "count": 74,
+      "share_pct": 35
+    },
+    {
+      "type": "5BR",
+      "sqft_range": [
+        1335,
+        1572
+      ],
+      "count": 64,
+      "share_pct": 30
+    }
+  ],
+  "first_researched_at": "2026-09-12"
+}

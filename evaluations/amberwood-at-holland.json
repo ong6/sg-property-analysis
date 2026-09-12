@@ -1,0 +1,229 @@
+{
+  "condo": "Amberwood at Holland",
+  "slug": "amberwood-at-holland",
+  "district": "D10",
+  "history": [
+    {
+      "evaluated_at": "2026-09-12",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Entry-ticket 3BR (872 sqft, $2.568M / $2,945 psf) in a 212-unit low-rise 99LH estate in a D10 GCB pocket, 0.7-1.0 km from King Albert Park DTL, TOP mid-2030. Priced at parity with Skye at Holland's launch and ~3% over completed Fourth Avenue Residences on a harmonised basis, for a location weaker than both on transit and amenities. Yield ~3.0%, no income until 2030, and 2,270+ new 99LH units in the same belt TOP into the 2029-32 exit window. Fair as a family home; does not work as a 4-7 yr resale-profit trade.",
+      "rating_rationale": "Value: not cheap. On the same 3BR band and harmonised basis the guide psf is +2.9% over completed FAR ($2,862 eq., MRT at the door, realsmart REALSCORE 2.1 / +1.3%/yr), +1.2% over Skye at Holland's launch ($2,910, Holland Village MRT), and -2.5% under Dunearn House C1 ($3,021, Sixth Ave MRT 4 min) — a ~6% discount to FAR's age-adjusted new-build equivalent, which is what the 1 km MRT walk and empty precinct cost. Region: CCR, the worst realized forward region (+1.9%/yr) and the nearest 99LH comps confirm it (FAR +1.3%/yr, OHVR +2.2%/yr, Van Holland's only resale -6.5%/yr). Exit math at the guide: bear -$167k, base +$81k (+0.6%/yr, below T-bills), bull +$337k (+2.4%/yr); break-even needs $3,055 psf at yr 5. Carry: ~3.0% gross (< 3.5% fallback), zero income for 3.8 yrs. Liquidity: 3BR-only entry at $2.57M, above the $2.2M knee and 99% of her ceiling; the exit buyer is a family/right-sizer, not an investor, and 2,270+ fresher 99LH units (Skye, Dunearn House x2, Holland Plain plots 2-3) land in the same window. Bull case (first mover under a land-price umbrella: plot 2 $1,491 vs $1,432 psf ppr; CRL interchange 2032; 74-unit 3BR scarcity; GCB-enclave product) is real but a one-time step of ~4% land uplift, thinner than Dunearn House's 15%. Buy trigger: <=$2.45M ($2,810 psf) acceptable, <=$2.40M ($2,750) good — neither is a launch-day price. 4BR from $3.175M and 5BR from $3.992M: out of envelope and above the $3M liquidity knee — Avoid for this mandate. Mandate exception: NOT justified — fails region, yield, quantum and ceiling rules simultaneously and beats neither Dunearn House C1 nor completed FAR decisively.",
+      "red_flags": [
+        "CCR region: full-panel realized forward +1.9%/yr; nearest 99LH comps FAR (+1.3%/yr, REALSCORE 2.1) and OHVR (+2.2%/yr, REALSCORE 1.7) confirm; Van Holland REALSCORE 1.0 with its only resale at a loss",
+        "Priced at new-launch parity with Skye at Holland ($2,910 harmonised, MRT-door) and +2.9% over completed FAR harmonised-equivalent ($2,862) for a weaker location",
+        "Gross yield ~3.0% (< 3.5% fallback); zero income until TOP 30 Jun 2030; SSD clears Sep 2030 — realistic exit 2031-33",
+        "Supply wave into the exit window: Skye 666 + Dunearn House 380 + Wing Tai Dunearn ~330 + Holland Plain plot 2 ~280 + plot 3 up to 610 (TOP 2029-32), 8 Holland Plain plots / ~2,500 homes long-run; plot 2 construction next door 2027-31",
+        "MRT distance disputed 680 m-1.6 km to King Albert Park; not an MRT-door product; precinct has no amenities yet",
+        "$2.568M 'from' price = 99% of her $2.59M ceiling and above the $2.2M liquidity knee; his envelope cannot reach it at all",
+        "3BR-only entry, 4-6 storey blocks: no 1-2BR investor layer, no high-floor premium; D10 99LH 850-1,000 sqft resale pool only 49 prints in 24 months",
+        "Pre-launch: zero prints, pricing indicative; per-stack facings and plot-2 boundary side unverified",
+        "Sim Lian is a mass-market/EC builder on its first CCR launch in 17 years — CCR-spec finish and defect record unproven"
+      ],
+      "catalysts": [
+        "First mover in Holland Plain: plot 2 land $1,491 vs $1,432 psf ppr (+4%) and Dunearn plot 2 $1,625 set a rising umbrella; Sim Lian's plot 2 launch 2Q2027 will be priced above this",
+        "King Albert Park DTL x CRL interchange 2032 (Singapore's deepest station) — inside the exit window",
+        "GCB-enclave low-rise product with Holland Green Linear Park / Rail Corridor access and MGS within 1 km — scarce format for landed right-sizers and school-belt families",
+        "Segment demand proven: Skye at Holland 98.8% launch-weekend sell-out at $2,953 avg; Dunearn House 56% at $3,140",
+        "74-unit 3BR cohort is the only sub-$3M product in a 212-unit estate — thin internal competition at resale",
+        "CCR was the only region up in Q2-2026 (+2.0%) — contrarian mean-reversion case (CCR won 20/81 rolling windows since 2004)"
+      ],
+      "as_of": {
+        "price": 2568000,
+        "psf": 2945,
+        "beds": 3,
+        "sqft": 872.0
+      },
+      "key_facts": {
+        "appreciation_pct": 1.9,
+        "appreciation_source": "regional_baseline_ccr_realized (full-panel backtest +1.9%/yr; realsmart Fourth Avenue Residences +1.3%/yr avg annualised, One Holland Village +2.2%/yr)",
+        "gross_yield_pct": 3.04,
+        "nearest_mrt": "King Albert Park DT6 (~0.7-1.0 km, 8-13 min; PropertyGuru says 1.6 km; CRL interchange 2032)",
+        "tenure": "99 yrs lease commencing from 2025",
+        "remaining_lease": 98
+      },
+      "agent_evaluation": {
+        "summary": "Entry-ticket 3BR (872 sqft, $2.568M / $2,945 psf) in a 212-unit low-rise 99LH estate in a D10 GCB pocket, 0.7-1.0 km from King Albert Park DTL, TOP mid-2030. Priced at parity with Skye at Holland's launch and ~3% over completed Fourth Avenue Residences on a harmonised basis, for a location weaker than both on transit and amenities. Yield ~3.0%, no income until 2030, and 2,270+ new 99LH units in the same belt TOP into the 2029-32 exit window. Fair as a family home; does not work as a 4-7 yr resale-profit trade.",
+        "rating": "Avoid",
+        "confidence": "medium",
+        "rating_rationale": "Value: not cheap. On the same 3BR band and harmonised basis the guide psf is +2.9% over completed FAR ($2,862 eq., MRT at the door, realsmart REALSCORE 2.1 / +1.3%/yr), +1.2% over Skye at Holland's launch ($2,910, Holland Village MRT), and -2.5% under Dunearn House C1 ($3,021, Sixth Ave MRT 4 min) — a ~6% discount to FAR's age-adjusted new-build equivalent, which is what the 1 km MRT walk and empty precinct cost. Region: CCR, the worst realized forward region (+1.9%/yr) and the nearest 99LH comps confirm it (FAR +1.3%/yr, OHVR +2.2%/yr, Van Holland's only resale -6.5%/yr). Exit math at the guide: bear -$167k, base +$81k (+0.6%/yr, below T-bills), bull +$337k (+2.4%/yr); break-even needs $3,055 psf at yr 5. Carry: ~3.0% gross (< 3.5% fallback), zero income for 3.8 yrs. Liquidity: 3BR-only entry at $2.57M, above the $2.2M knee and 99% of her ceiling; the exit buyer is a family/right-sizer, not an investor, and 2,270+ fresher 99LH units (Skye, Dunearn House x2, Holland Plain plots 2-3) land in the same window. Bull case (first mover under a land-price umbrella: plot 2 $1,491 vs $1,432 psf ppr; CRL interchange 2032; 74-unit 3BR scarcity; GCB-enclave product) is real but a one-time step of ~4% land uplift, thinner than Dunearn House's 15%. Buy trigger: <=$2.45M ($2,810 psf) acceptable, <=$2.40M ($2,750) good — neither is a launch-day price. 4BR from $3.175M and 5BR from $3.992M: out of envelope and above the $3M liquidity knee — Avoid for this mandate. Mandate exception: NOT justified — fails region, yield, quantum and ceiling rules simultaneously and beats neither Dunearn House C1 nor completed FAR decisively.",
+        "red_flags": [
+          "CCR region: full-panel realized forward +1.9%/yr; nearest 99LH comps FAR (+1.3%/yr, REALSCORE 2.1) and OHVR (+2.2%/yr, REALSCORE 1.7) confirm; Van Holland REALSCORE 1.0 with its only resale at a loss",
+          "Priced at new-launch parity with Skye at Holland ($2,910 harmonised, MRT-door) and +2.9% over completed FAR harmonised-equivalent ($2,862) for a weaker location",
+          "Gross yield ~3.0% (< 3.5% fallback); zero income until TOP 30 Jun 2030; SSD clears Sep 2030 — realistic exit 2031-33",
+          "Supply wave into the exit window: Skye 666 + Dunearn House 380 + Wing Tai Dunearn ~330 + Holland Plain plot 2 ~280 + plot 3 up to 610 (TOP 2029-32), 8 Holland Plain plots / ~2,500 homes long-run; plot 2 construction next door 2027-31",
+          "MRT distance disputed 680 m-1.6 km to King Albert Park; not an MRT-door product; precinct has no amenities yet",
+          "$2.568M 'from' price = 99% of her $2.59M ceiling and above the $2.2M liquidity knee; his envelope cannot reach it at all",
+          "3BR-only entry, 4-6 storey blocks: no 1-2BR investor layer, no high-floor premium; D10 99LH 850-1,000 sqft resale pool only 49 prints in 24 months",
+          "Pre-launch: zero prints, pricing indicative; per-stack facings and plot-2 boundary side unverified",
+          "Sim Lian is a mass-market/EC builder on its first CCR launch in 17 years — CCR-spec finish and defect record unproven"
+        ],
+        "catalysts": [
+          "First mover in Holland Plain: plot 2 land $1,491 vs $1,432 psf ppr (+4%) and Dunearn plot 2 $1,625 set a rising umbrella; Sim Lian's plot 2 launch 2Q2027 will be priced above this",
+          "King Albert Park DTL x CRL interchange 2032 (Singapore's deepest station) — inside the exit window",
+          "GCB-enclave low-rise product with Holland Green Linear Park / Rail Corridor access and MGS within 1 km — scarce format for landed right-sizers and school-belt families",
+          "Segment demand proven: Skye at Holland 98.8% launch-weekend sell-out at $2,953 avg; Dunearn House 56% at $3,140",
+          "74-unit 3BR cohort is the only sub-$3M product in a 212-unit estate — thin internal competition at resale",
+          "CCR was the only region up in Q2-2026 (+2.0%) — contrarian mean-reversion case (CCR won 20/81 rolling windows since 2004)"
+        ],
+        "rental_assessment": "No rentals exist (uncompleted). URA 2025-26 3BR 900-1,000 sqft contracts: Fourth Ave $6,850 (n=16, MRT-door), Royalgreen $6,475 (n=10), Hyll $5,950 (n=14). $6,500/mo for 872 sqft liveable at a 1 km walk -> ~3.0% gross at $2.568M; expat-family tenant on housing allowance is the pool, and 2,000+ new units in the belt will cap rents 2030-33. Below the 3.5% fallback line.",
+        "appreciation_assessment": "Use CCR realized +1.9%/yr as the base, not the developer story. Bear: exit at today's completed-comp level ($2,860) = -$167k. Base $3,150 (+1.4%/yr on entry) = +$81k, under T-bills. Bull $3,450 needs Holland Plain plots 2-3 launching at $3,200-3,400 AND the precinct maturing by 2031-32 = +$337k / +2.4%/yr. The 0-5 yr cohort is the worst forward-return cohort (amortising launch premium) and this exits at age 1-3.",
+        "stack_notes": "No per-stack facing data in text sources (profile saved with stacks: []). Physical priors: 11 blocks of 4-6 storeys on a corner plot — take the TOP floor (5 or 6) of any stack, since low-rise offers no other vertical premium; prefer stacks facing Holland Green Linear Park / GCB interior over Holland Plain road frontage; avoid the boundary shared with Sim Lian's plot 2 (~280 units, construction 2027-2031, permanent view change) — confirm which side at the showflat stack selector; check west exposure on the selector (no source states orientation). Luxe (private lift) stacks are 4BR Premium/5BR only — irrelevant to the 3BR mandate.",
+        "appreciation_rate_override_pct": 1.9,
+        "appreciation_rate_source": "CCR full-panel realized forward baseline; realsmart FAR +1.3%/yr and OHVR +2.2%/yr avg annualised resale profit",
+        "realsmart": {
+          "amberwood": "no page (unlaunched)",
+          "fourth_avenue_residences": {
+            "realscore": 2.1,
+            "pct_profitable": 80.4,
+            "profitable": 45,
+            "unprofitable": 11,
+            "annual_return_pct": 1.3,
+            "avg_hold_yrs": 4.5,
+            "yield_pct": 3.4,
+            "total_txns": 532
+          },
+          "one_holland_village_residences": {
+            "realscore": 1.7,
+            "pct_profitable": 83.3,
+            "profitable": 5,
+            "unprofitable": 1,
+            "annual_return_pct": 2.2,
+            "avg_hold_yrs": 5.3,
+            "yield_pct": 3.2,
+            "total_txns": 302
+          },
+          "van_holland": {
+            "realscore": 1.0,
+            "pct_profitable": 0.0,
+            "profitable": 0,
+            "unprofitable": 1,
+            "annual_return_pct": -6.5,
+            "avg_hold_yrs": 3.2,
+            "yield_pct": 4.2,
+            "last12m_avg_psf": 2720,
+            "total_txns": 70
+          }
+        },
+        "mandate_exception_call": "NO. Out of mandate (CCR) and fails four crash rules at once: region, yield (3.0% < 3.5%), quantum ($2.568M > $2.2M), ceiling ($2.568M = 99% of $2.59M). It is not cheaper than Dunearn House C1 by enough (-2.5% psf on the same 872 sqft) to trade a 4-min MRT walk for a 1 km one, and completed FAR at ~$2.82M earns 3.4% from day one at an MRT door. An exception would need <=$2.40M on a top-floor park-facing stack — not a launch-day outcome."
+      },
+      "source": {
+        "run_dir": "output/run_037_amberwood-at-holland",
+        "url": "https://www.propertyguru.com.sg/project/amberwood-at-holland",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-09-12",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "4BR from $3.175M / $2,921 psf (1,087 sqft) up to 4BR Premium $3.674M / 1,227 sqft with private lift. Cheapest psf in the project and the right family format for the GCB pocket, but $3.2M+ is outside both buyer envelopes and above the $3M exit-liquidity knee.",
+      "rating_rationale": "Out of envelope ($3.175M vs $2.59M) — cannot be bought without a gift-flex beyond $2.6M plus a larger loan than TDSR allows, and it breaches the never-at-the-ceiling rule outright. On merit it is the best-priced type (psf below the 3BR, 74-unit cohort, Luxe private-lift variants) and the natural product for landed right-sizers, but the resale buyer for a $3.3-3.9M 99LH 4BR 1 km from MRT is thin, CCR forward is +1.9%/yr and yield ~3.2%. If the owner ever widened the envelope, this type beats the 3BR on relative value; it still does not beat the mandate.",
+      "red_flags": [
+        "$3.175M-$3.674M quantum: outside both envelopes and above the $3M liquidity knee",
+        "CCR +1.9%/yr realized forward; supply wave 2029-32",
+        "No income until Jun 2030; yield ~3.2%"
+      ],
+      "catalysts": [
+        "Cheapest psf in the project ($2,921); 74-unit cohort with private-lift Premium variants",
+        "Natural fit for GCB right-sizers and MGS/Nanyang/Henry Park families",
+        "CRL interchange 2032; Holland Plain plot 2/3 launches above this price"
+      ],
+      "as_of": {
+        "price": 3175000,
+        "psf": 2921,
+        "beds": 4,
+        "sqft": 1087.0
+      },
+      "key_facts": {
+        "appreciation_pct": 1.9,
+        "appreciation_source": "regional_baseline_ccr_realized",
+        "gross_yield_pct": 3.21,
+        "nearest_mrt": "King Albert Park DT6 (~0.7-1.0 km; CRL interchange 2032)",
+        "tenure": "99 yrs lease commencing from 2025",
+        "remaining_lease": 98
+      },
+      "agent_evaluation": {
+        "summary": "4BR from $3.175M / $2,921 psf (1,087 sqft) up to 4BR Premium $3.674M / 1,227 sqft with private lift. Cheapest psf in the project and the right family format for the GCB pocket, but $3.2M+ is outside both buyer envelopes and above the $3M exit-liquidity knee.",
+        "rating": "Avoid",
+        "confidence": "medium",
+        "rating_rationale": "Out of envelope ($3.175M vs $2.59M) — cannot be bought without a gift-flex beyond $2.6M plus a larger loan than TDSR allows, and it breaches the never-at-the-ceiling rule outright. On merit it is the best-priced type (psf below the 3BR, 74-unit cohort, Luxe private-lift variants) and the natural product for landed right-sizers, but the resale buyer for a $3.3-3.9M 99LH 4BR 1 km from MRT is thin, CCR forward is +1.9%/yr and yield ~3.2%. If the owner ever widened the envelope, this type beats the 3BR on relative value; it still does not beat the mandate.",
+        "red_flags": [
+          "$3.175M-$3.674M quantum: outside both envelopes and above the $3M liquidity knee",
+          "CCR +1.9%/yr realized forward; supply wave 2029-32",
+          "No income until Jun 2030; yield ~3.2%"
+        ],
+        "catalysts": [
+          "Cheapest psf in the project ($2,921); 74-unit cohort with private-lift Premium variants",
+          "Natural fit for GCB right-sizers and MGS/Nanyang/Henry Park families",
+          "CRL interchange 2032; Holland Plain plot 2/3 launches above this price"
+        ],
+        "rental_assessment": "~$8,500/mo est. (OHVR/Leedon Green size-scaled) -> ~3.2% gross; expat-family tenant pool.",
+        "appreciation_assessment": "CCR baseline +1.9%/yr; same bear/base/bull shape as the 3BR but a thinner exit pool above $3M.",
+        "stack_notes": "4BR Premium = Luxe collection (private lift); no stack facings sourced. Top floor, park/GCB facing, away from plot-2 boundary.",
+        "appreciation_rate_override_pct": 1.9,
+        "appreciation_rate_source": "CCR full-panel realized forward baseline"
+      },
+      "source": {
+        "run_dir": "output/run_037_amberwood-at-holland",
+        "url": "https://www.propertyguru.com.sg/project/amberwood-at-holland",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-09-12",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "5BR Premium from $3.992M / 1,335 sqft and 5BR Luxe from $4.699M / 1,561 sqft with private lift — the project's flagship, priced at the highest psf in the estate. Own-stay product for landed right-sizers; not an investment vehicle for either buyer.",
+      "rating_rationale": "1.5x the envelope, highest psf in the project on the largest units (the developer charges for Luxe finishes rather than discounting size), $4-4.7M 99LH exit pool 1 km from MRT is the thinnest in the estate, CCR +1.9%/yr, ~3.2% yield, no income until 2030. Nothing in the mandate reaches it and nothing in the rubric favours it.",
+      "red_flags": [
+        "$3.992M-$4.699M: ~1.5x envelope; own-stay-only exit pool",
+        "Highest psf in the project ($2,990-3,010) despite largest size",
+        "CCR region, supply wave, no income until Jun 2030"
+      ],
+      "catalysts": [
+        "Private lift, 6 m living frontage, marble — genuine GCB-substitute product for right-sizers",
+        "64-unit cohort; FH landed in D10 at $9.55M median makes a $4M+ 99LH condo the affordable alternative for that buyer"
+      ],
+      "as_of": {
+        "price": 3992000,
+        "psf": 2990,
+        "beds": 5,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": 1.9,
+        "appreciation_source": "regional_baseline_ccr_realized",
+        "gross_yield_pct": 3.16,
+        "nearest_mrt": "King Albert Park DT6 (~0.7-1.0 km; CRL interchange 2032)",
+        "tenure": "99 yrs lease commencing from 2025",
+        "remaining_lease": 98
+      },
+      "agent_evaluation": {
+        "summary": "5BR Premium from $3.992M / 1,335 sqft and 5BR Luxe from $4.699M / 1,561 sqft with private lift — the project's flagship, priced at the highest psf in the estate. Own-stay product for landed right-sizers; not an investment vehicle for either buyer.",
+        "rating": "Avoid",
+        "confidence": "high",
+        "rating_rationale": "1.5x the envelope, highest psf in the project on the largest units (the developer charges for Luxe finishes rather than discounting size), $4-4.7M 99LH exit pool 1 km from MRT is the thinnest in the estate, CCR +1.9%/yr, ~3.2% yield, no income until 2030. Nothing in the mandate reaches it and nothing in the rubric favours it.",
+        "red_flags": [
+          "$3.992M-$4.699M: ~1.5x envelope; own-stay-only exit pool",
+          "Highest psf in the project ($2,990-3,010) despite largest size",
+          "CCR region, supply wave, no income until Jun 2030"
+        ],
+        "catalysts": [
+          "Private lift, 6 m living frontage, marble — genuine GCB-substitute product for right-sizers",
+          "64-unit cohort; FH landed in D10 at $9.55M median makes a $4M+ 99LH condo the affordable alternative for that buyer"
+        ],
+        "rental_assessment": "~$10,500/mo est. -> ~3.2% gross; very thin tenant pool at this rent 1 km from MRT.",
+        "appreciation_assessment": "CCR baseline +1.9%/yr; exit depends on a single buyer type (right-sizer) — timing risk high.",
+        "stack_notes": "Luxe stacks only; no facings sourced.",
+        "appreciation_rate_override_pct": 1.9,
+        "appreciation_rate_source": "CCR full-panel realized forward baseline"
+      },
+      "source": {
+        "run_dir": "output/run_037_amberwood-at-holland",
+        "url": "https://www.propertyguru.com.sg/project/amberwood-at-holland",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
