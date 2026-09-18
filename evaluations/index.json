@@ -3063,9 +3063,9 @@
     "palm-gardens": {
       "condo": "Palm Gardens",
       "district": "D23",
-      "latest_rating": "Avoid",
-      "latest_date": "2026-07-29",
-      "eval_count": 3
+      "latest_rating": "Neutral",
+      "latest_date": "2026-09-18",
+      "eval_count": 4
     },
     "one-leicester": {
       "condo": "One Leicester",
@@ -3931,9 +3931,9 @@
     "the-centris": {
       "condo": "The Centris",
       "district": "D22",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-07-29",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-18",
+      "eval_count": 2
     },
     "sunglade": {
       "condo": "Sunglade",

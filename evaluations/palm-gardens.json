@@ -218,6 +218,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-gardens-500128846",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Palm Gardens 3BR, 1,216 sqft, block 2B Hong San Walk, asking $1,265,000 ($1,040 psf) after a third cut from $1,320,000 (Jun) and $1,299,999 (Jul). Keppel Land 694-unit 99LH condo, lease from Aug-1996 (69 yrs left), completed 2000, Choa Chu Kang D23, 143-220m to Keat Hong LRT. The algo's 822/1000 rests on a -18.3% age-adjusted DISTRICT discount that is a location level, not unit value: against the project's own prints the ask is at market. Palm Gardens 1,150-1,300 sqft band: 24mo median $1,280,000 / $1,062 psf (n=28, p25 $1,255k, p75 $1,308k); 2026 project median $1,260,000 on 13 sales; latest-12 sales median $1,250,000 (realsmart, data through 7-Sep-2026). This ask is ~1% below the 24mo band median and level with 2026 prints — roughly the 30th percentile, i.e. an honest, motivated ask but not a dislocation. The band has been flat since 2023 ($1,260k -> $1,280k -> $1,277.5k -> $1,286k) while D23 same-size 99LH peers moved +5.6% over the same window, 2026 volume is running at half of 2025's pace (13 vs 28) and the average annualized profit of 2026 sellers has fallen to 3.3% (from 5.2% in 2025). Downside record is genuinely strong (81.4% of 867 resales profitable, REALSCORE 3.9) and exit liquidity is deep, but for a 5-7yr resale-profit mandate there is no edge: fair entry, ~$4,000/mo carry (3.8% gross), a 1996 lease clock and ~20 near-identical 3BRs on the market to sell against. Neutral.",
+      "rating_rationale": "At-market entry, not a bargain: $1,265k vs the project's own 24mo 1,150-1,300 sqft median of $1,280k (n=28) and 2026 median $1,260k (n=13) — the algo's -18.3% is a district-level comparison and Palm Gardens has traded ~9% under D23 peers since 2023 without converging. Three years flat, lagging its district, 69-yr lease, thinning 2026 volume and a wall of ~20 identical 3BR listings cap the 5-7yr resale case at OCR beta minus lease decay. Strong downside evidence (81.4% profitable on 867 resales, deep buyer pool, third price cut, $4k rents) keeps it off Avoid, but nothing here is an edge worth a Buy.",
+      "red_flags": [
+        "NO DISCOUNT vs own comps — ask $1,265,000 is -1.2% vs the 24mo same-size median print ($1,280,000, n=28) and level with the 2026 project median ($1,260,000, n=13; latest-12 median $1,250,000). The algo's -18.3% age-adjusted discount is vs D23 peers; Palm Gardens has sat ~9% under D23 same-size 99LH stock since 2023 and the gap widened, not closed — a permanent Choa Chu Kang location level (see D23 bifurcation), not value",
+        "THREE YEARS FLAT, LAGGING DISTRICT — band median $1,260k (2023) / $1,280k (2024) / $1,277.5k (2025) / $1,286k (2026 URA, n=2) ≈ +0.5%/yr; D23 same-size 99LH peers +5.6% over the same window. The 6.37% ura_5yr_cagr is entirely 2021-23 catch-up ($780 -> $1,045 psf); momentum flag -1.0",
+        "2026 SOFTENING — realsmart: 13 resales YTD vs 28 in 2025 and 25 in 2024; avg annualized profit of 2026 sellers 3.3% vs 5.2% (2025) / 5.4% (2024); 2026 median $1,260k below 2025's $1,300k. Third cut on this listing ($1.32M -> $1.30M -> $1.265M over 3 months) says the seller is chasing a market that is drifting down",
+        "SUPPLY WALL — ~20 near-identical 1,205-1,216 sqft 3BRs listed concurrently in this one project at $1.25M-$1.40M, most with price cuts, against ~18-28 band resales/yr; that is close to a year of inventory and the same wall a 5-7yr exit sells into",
+        "LEASE FROM 12-AUG-1996 — 69 yrs left (realsmart), ~62-64 at exit; older clock than most D23 peers and very likely why the project stalls while the district moves; lease component already -4.0 in MMR",
+        "FLOOR / FACING / STACK UNKNOWN — floor_level and facing unpopulated, no researched profile (stack_profile: not_researched). URA floor bands in the last 24mo: 01-05 $1,260k (n=8), 06-10 $1,270k (n=7), 11-15 $1,280k (n=10), 16-20 $1,310k (n=3) — a ~4% spread the ask cannot be placed in; at $1,265k it is at the low-floor median, so it is only 'below market' if it is a mid/high floor",
+        "MODEST CARRY — $3,800/mo (URA project-bed, 31 contracts) to $4,000-4,200 (Aug-2026 realsmart 1200-1300 sqft contracts) = 3.6-4.0% gross, ~2.2% net; does not compensate for flat capital",
+        "LRT not MRT at the doorstep (Keat Hong BP LRT ~143-220m); CCK NSL/JRL interchange 826m; Tengah new-town supply competes for the same west-region upgrader; very_old_property (26y) and very_low_psf flags fire but the low PSF is the location level, not condition",
+        "Price-drop badge caveat: price_history is keyed to this listing id (times_seen 3, first seen 2026-06-07), so the cut chain is likely one seller, but confirm one agent + one unit before crediting it as motivation"
+      ],
+      "catalysts": [
+        "Strong downside record — realsmart REALSCORE 3.9/5, 81.4% of 867 resales profitable (703 / 164), avg holding 9.1 yrs, avg annualized profit 4.6% (past 1y); deep enough to be real evidence that owners here rarely lose money (backward-looking, not a forecast)",
+        "Genuinely deep exit liquidity — 1,563 lifetime transactions, 694 units, 71% HDB-upgrader buyers, 18-28 same-band resales/yr; slow-priced but never stuck",
+        "Honest, motivated ask — third cut in 3 months, at the p30 of the project's own 24mo band; a further $15-25k negotiation would put it at the low-floor band floor (~$1,240k)",
+        "Choa Chu Kang becomes an NSL x Jurong Region Line interchange (826m) — JRL Stage 1 mid-2028, a dated catalyst inside a 5-7yr hold (though future-infra has no measured forward power in the backtest)",
+        "OCR is the backtested-favoured forward region (+3.7%/yr realized vs RCR +3.1, CCR +1.9); $1.265M quantum sits ~$535k inside the $1.8M 'his' mandate, keeping the exit buyer pool very deep",
+        "Keppel Land build with private lift lobbies, full facilities (pool, tennis, bowling), consistently well-reviewed maintenance for a 2000-vintage OCR condo; 3BR rents holding $4,000-4,200 in Aug-2026 contracts"
+      ],
+      "as_of": {
+        "price": 1265000,
+        "psf": 1040.3,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.37,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.6,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "Palm Gardens 3BR, 1,216 sqft, block 2B Hong San Walk, asking $1,265,000 ($1,040 psf) after a third cut from $1,320,000 (Jun) and $1,299,999 (Jul). Keppel Land 694-unit 99LH condo, lease from Aug-1996 (69 yrs left), completed 2000, Choa Chu Kang D23, 143-220m to Keat Hong LRT. The algo's 822/1000 rests on a -18.3% age-adjusted DISTRICT discount that is a location level, not unit value: against the project's own prints the ask is at market. Palm Gardens 1,150-1,300 sqft band: 24mo median $1,280,000 / $1,062 psf (n=28, p25 $1,255k, p75 $1,308k); 2026 project median $1,260,000 on 13 sales; latest-12 sales median $1,250,000 (realsmart, data through 7-Sep-2026). This ask is ~1% below the 24mo band median and level with 2026 prints — roughly the 30th percentile, i.e. an honest, motivated ask but not a dislocation. The band has been flat since 2023 ($1,260k -> $1,280k -> $1,277.5k -> $1,286k) while D23 same-size 99LH peers moved +5.6% over the same window, 2026 volume is running at half of 2025's pace (13 vs 28) and the average annualized profit of 2026 sellers has fallen to 3.3% (from 5.2% in 2025). Downside record is genuinely strong (81.4% of 867 resales profitable, REALSCORE 3.9) and exit liquidity is deep, but for a 5-7yr resale-profit mandate there is no edge: fair entry, ~$4,000/mo carry (3.8% gross), a 1996 lease clock and ~20 near-identical 3BRs on the market to sell against. Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "At-market entry, not a bargain: $1,265k vs the project's own 24mo 1,150-1,300 sqft median of $1,280k (n=28) and 2026 median $1,260k (n=13) — the algo's -18.3% is a district-level comparison and Palm Gardens has traded ~9% under D23 peers since 2023 without converging. Three years flat, lagging its district, 69-yr lease, thinning 2026 volume and a wall of ~20 identical 3BR listings cap the 5-7yr resale case at OCR beta minus lease decay. Strong downside evidence (81.4% profitable on 867 resales, deep buyer pool, third price cut, $4k rents) keeps it off Avoid, but nothing here is an edge worth a Buy.",
+        "red_flags": [
+          "NO DISCOUNT vs own comps — ask $1,265,000 is -1.2% vs the 24mo same-size median print ($1,280,000, n=28) and level with the 2026 project median ($1,260,000, n=13; latest-12 median $1,250,000). The algo's -18.3% age-adjusted discount is vs D23 peers; Palm Gardens has sat ~9% under D23 same-size 99LH stock since 2023 and the gap widened, not closed — a permanent Choa Chu Kang location level (see D23 bifurcation), not value",
+          "THREE YEARS FLAT, LAGGING DISTRICT — band median $1,260k (2023) / $1,280k (2024) / $1,277.5k (2025) / $1,286k (2026 URA, n=2) ≈ +0.5%/yr; D23 same-size 99LH peers +5.6% over the same window. The 6.37% ura_5yr_cagr is entirely 2021-23 catch-up ($780 -> $1,045 psf); momentum flag -1.0",
+          "2026 SOFTENING — realsmart: 13 resales YTD vs 28 in 2025 and 25 in 2024; avg annualized profit of 2026 sellers 3.3% vs 5.2% (2025) / 5.4% (2024); 2026 median $1,260k below 2025's $1,300k. Third cut on this listing ($1.32M -> $1.30M -> $1.265M over 3 months) says the seller is chasing a market that is drifting down",
+          "SUPPLY WALL — ~20 near-identical 1,205-1,216 sqft 3BRs listed concurrently in this one project at $1.25M-$1.40M, most with price cuts, against ~18-28 band resales/yr; that is close to a year of inventory and the same wall a 5-7yr exit sells into",
+          "LEASE FROM 12-AUG-1996 — 69 yrs left (realsmart), ~62-64 at exit; older clock than most D23 peers and very likely why the project stalls while the district moves; lease component already -4.0 in MMR",
+          "FLOOR / FACING / STACK UNKNOWN — floor_level and facing unpopulated, no researched profile (stack_profile: not_researched). URA floor bands in the last 24mo: 01-05 $1,260k (n=8), 06-10 $1,270k (n=7), 11-15 $1,280k (n=10), 16-20 $1,310k (n=3) — a ~4% spread the ask cannot be placed in; at $1,265k it is at the low-floor median, so it is only 'below market' if it is a mid/high floor",
+          "MODEST CARRY — $3,800/mo (URA project-bed, 31 contracts) to $4,000-4,200 (Aug-2026 realsmart 1200-1300 sqft contracts) = 3.6-4.0% gross, ~2.2% net; does not compensate for flat capital",
+          "LRT not MRT at the doorstep (Keat Hong BP LRT ~143-220m); CCK NSL/JRL interchange 826m; Tengah new-town supply competes for the same west-region upgrader; very_old_property (26y) and very_low_psf flags fire but the low PSF is the location level, not condition",
+          "Price-drop badge caveat: price_history is keyed to this listing id (times_seen 3, first seen 2026-06-07), so the cut chain is likely one seller, but confirm one agent + one unit before crediting it as motivation"
+        ],
+        "catalysts": [
+          "Strong downside record — realsmart REALSCORE 3.9/5, 81.4% of 867 resales profitable (703 / 164), avg holding 9.1 yrs, avg annualized profit 4.6% (past 1y); deep enough to be real evidence that owners here rarely lose money (backward-looking, not a forecast)",
+          "Genuinely deep exit liquidity — 1,563 lifetime transactions, 694 units, 71% HDB-upgrader buyers, 18-28 same-band resales/yr; slow-priced but never stuck",
+          "Honest, motivated ask — third cut in 3 months, at the p30 of the project's own 24mo band; a further $15-25k negotiation would put it at the low-floor band floor (~$1,240k)",
+          "Choa Chu Kang becomes an NSL x Jurong Region Line interchange (826m) — JRL Stage 1 mid-2028, a dated catalyst inside a 5-7yr hold (though future-infra has no measured forward power in the backtest)",
+          "OCR is the backtested-favoured forward region (+3.7%/yr realized vs RCR +3.1, CCR +1.9); $1.265M quantum sits ~$535k inside the $1.8M 'his' mandate, keeping the exit buyer pool very deep",
+          "Keppel Land build with private lift lobbies, full facilities (pool, tennis, bowling), consistently well-reviewed maintenance for a 2000-vintage OCR condo; 3BR rents holding $4,000-4,200 in Aug-2026 contracts"
+        ],
+        "rental_assessment": "URA project-bed estimate $3,800/mo (31 contracts, 12mo) = 3.6% gross / 2.15% net; realsmart Aug-2026 1200-1300 sqft 3BR contracts at $4,000-4,200 and latest-12 median $3,950 suggest ~3.8% gross is achievable. 25 rentals in the past 6 months — a liquid rental pool. Carry only; it does not compensate for flat capital.",
+        "appreciation_assessment": "Do not use the 6.37% ura_5yr_cagr: it is all 2021-23 repricing ($780 -> $1,045 psf); the 1,206/1,216 sqft band has been ~+0.5%/yr since 2023 and 2026 prints are at or below 2025. Override to 2.5%/yr (OCR baseline 2.8 trimmed for a 69-yr lease and a project that has lagged its district for three years). At 2.5%/yr with entry costs, 5-7yr all-cash ROI is ~3%/yr — below risk-free plus carry.",
+        "stack_notes": "Block 2B Hong San Walk. No researched profile; floor and facing unknown. URA 24mo floor bands: 01-05 $1,260k, 06-10 $1,270k, 11-15 $1,280k, 16-20 $1,310k. Confirm floor before treating the ask as below-band.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.5,
+        "appreciation_rate_source": "Project's own 1,150-1,300 sqft URA prints 2023-2026 (~+0.5%/yr) and realsmart annual medians ($1,260k 2023 -> $1,260k 2026), blended toward the OCR baseline (2.8) less lease decay; resale-to-resale only",
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 81.4,
+        "realsmart_annual_return_pct": 4.6
+      },
+      "source": {
+        "run_dir": "output/run_095_500138545",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-palm-gardens-500138545",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
