@@ -83,6 +83,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-melody-500197413",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216sf 3BR (3 bath) in Kovan Melody — a 778-unit, 2006 leasehold 380m from Kovan NE13 with one of the deepest exit records in the book (98.5% of 692 resale pairs profitable, REALSCORE 4.2, 50+ deals a year). The asset is sound; the ask is the issue: $2.40M / $1,974psf is above every 1,216sf print on record (best: $2.36M / $1,940psf, May-26, floor 16-20) and ~1.4% above the project's fresh all-band high ($1,947psf on a 1,292sf unit, 28-Aug-26), with the floor undisclosed and only ~2.6% gross carry. Same-format prints run $1,793-$1,954psf over the last six months, so fair is ~$2.28-2.36M depending on floor. Neutral: worth an offer at or under $2.35M on a confirmed high floor, not at $2.40M blind.",
+      "rating_rationale": "Ask $1,974psf sits above the 1,216sf format's own record print ($1,940, May-26, fl 16-20) and ~12% above the 24mo same-size cohort (n=17), on an undisclosed floor, in a project where floor tier moves psf ~10%; prints are still climbing (Aug-26 $1,947psf, Jul-26 $1,891psf) so the gap is a few percent not a cliff, hence Neutral rather than Avoid. Score_1000 508 is market-typical and a third of it is trailing CAGR, which carries ~0 forward power. Carry is thin (2.6% gross / 1.6% net). Buy case only at ~$2.30-2.35M on a verified high floor with a clean fit-out.",
+      "red_flags": [
+        "Ask $2.40M / $1,974psf exceeds every 1,216sf print on record: May-26 $2.36M/$1,940 (fl 16-20), Dec-25 $2.05M/$1,685 (fl 01-05), Nov-25 $2.20M/$1,809 (fl 11-15)",
+        "ask_above_own_stack_prints: +12% over the 24mo same-size cohort (n=17); +12.3% over the URA project median",
+        "Floor level not disclosed and decisive — same-format prints span $1,685 (fl 01-05) to $1,954 (fl 11-20) in the last 12 months; the ask only works on a high floor",
+        "Gross yield 2.6% / net ~1.6% on URA 3BR rents (67 contracts, ~$5,200; latest Aug-26 3BR 1,200-1,300sf contracts $4,600-5,300) — thin carry on a $2.4M ticket",
+        "Seven competing 3BR asks live in the project ($2.39M-$2.69M); the same 1,216sf format is also listed by another agent at $2.489M — same supply condition at exit",
+        "The 'price dropped' chain ($2.40M -> $2.389M -> $2.40M) is a unit_group artifact shared with Irene Pok's 1,227sf listing 500223360; this is Anne Ho's listing seen once on 18-Sep, no verified cut",
+        "2006 fit-out: unrenovated units typically need $40-80k, unpriced in the ask",
+        "Trailing 7.4% CAGR (2021-26 re-rating, psf +49%) and realsmart 6.3% past-1y annualized profit are backward-looking; under current priors trailing momentum has ~0 forward power and much of the re-rating is realized",
+        "score_1000 508 — market-typical, well below the 650 tier (age_value -21, psf_value -7.4, yield -4.7); valuation axis 22/100"
+      ],
+      "catalysts": [
+        "380m / 5 min to Kovan NE13, one stop to Serangoon interchange / NEX; Cross Island Line Serangoon North ~1.6km",
+        "Exit record among the deepest available: REALSCORE 4.2, 98.5% profitable on 692 resale pairs (679 vs 13), avg hold 6.5yrs, 417 exits above 6% annualized, $291.6M total profits — nobody has lost money here in scale",
+        "778 units, 116 URA prints in window, 50+ deals past year, 45% HDB upgraders and >1K MOPs nearby — very deep, replenishing buyer pool; exit_demand lens 95/100",
+        "Prints still rising: Aug-26 $2.515M/$1,947psf (1,292sf), Jul-26 $2.32M/$1,891psf (1,227sf), Jul-26 $2.85M/$2,021psf (1,410sf) — the ask is ahead of the market, not off it",
+        "Bedroom count verified: 1,216sf sits inside the project's own 3BR rental band (1,150-1,350sf, 190 contracts); 3 baths is the genuine 3BR format",
+        "76 years remaining lease — no lease drag over a 5-7yr hold"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1973.68,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.39,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.6,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 76
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216sf 3BR (3 bath) in Kovan Melody — a 778-unit, 2006 leasehold 380m from Kovan NE13 with one of the deepest exit records in the book (98.5% of 692 resale pairs profitable, REALSCORE 4.2, 50+ deals a year). The asset is sound; the ask is the issue: $2.40M / $1,974psf is above every 1,216sf print on record (best: $2.36M / $1,940psf, May-26, floor 16-20) and ~1.4% above the project's fresh all-band high ($1,947psf on a 1,292sf unit, 28-Aug-26), with the floor undisclosed and only ~2.6% gross carry. Same-format prints run $1,793-$1,954psf over the last six months, so fair is ~$2.28-2.36M depending on floor. Neutral: worth an offer at or under $2.35M on a confirmed high floor, not at $2.40M blind.",
+        "rating": "Neutral",
+        "rating_rationale": "Ask $1,974psf sits above the 1,216sf format's own record print ($1,940, May-26, fl 16-20) and ~12% above the 24mo same-size cohort (n=17), on an undisclosed floor, in a project where floor tier moves psf ~10%; prints are still climbing (Aug-26 $1,947psf, Jul-26 $1,891psf) so the gap is a few percent not a cliff, hence Neutral rather than Avoid. Score_1000 508 is market-typical and a third of it is trailing CAGR, which carries ~0 forward power. Carry is thin (2.6% gross / 1.6% net). Buy case only at ~$2.30-2.35M on a verified high floor with a clean fit-out.",
+        "confidence": "medium",
+        "red_flags": [
+          "Ask $2.40M / $1,974psf exceeds every 1,216sf print on record: May-26 $2.36M/$1,940 (fl 16-20), Dec-25 $2.05M/$1,685 (fl 01-05), Nov-25 $2.20M/$1,809 (fl 11-15)",
+          "ask_above_own_stack_prints: +12% over the 24mo same-size cohort (n=17); +12.3% over the URA project median",
+          "Floor level not disclosed and decisive — same-format prints span $1,685 (fl 01-05) to $1,954 (fl 11-20) in the last 12 months; the ask only works on a high floor",
+          "Gross yield 2.6% / net ~1.6% on URA 3BR rents (67 contracts, ~$5,200; latest Aug-26 3BR 1,200-1,300sf contracts $4,600-5,300) — thin carry on a $2.4M ticket",
+          "Seven competing 3BR asks live in the project ($2.39M-$2.69M); the same 1,216sf format is also listed by another agent at $2.489M — same supply condition at exit",
+          "The 'price dropped' chain ($2.40M -> $2.389M -> $2.40M) is a unit_group artifact shared with Irene Pok's 1,227sf listing 500223360; this is Anne Ho's listing seen once on 18-Sep, no verified cut",
+          "2006 fit-out: unrenovated units typically need $40-80k, unpriced in the ask",
+          "Trailing 7.4% CAGR (2021-26 re-rating, psf +49%) and realsmart 6.3% past-1y annualized profit are backward-looking; under current priors trailing momentum has ~0 forward power and much of the re-rating is realized",
+          "score_1000 508 — market-typical, well below the 650 tier (age_value -21, psf_value -7.4, yield -4.7); valuation axis 22/100"
+        ],
+        "catalysts": [
+          "380m / 5 min to Kovan NE13, one stop to Serangoon interchange / NEX; Cross Island Line Serangoon North ~1.6km",
+          "Exit record among the deepest available: REALSCORE 4.2, 98.5% profitable on 692 resale pairs (679 vs 13), avg hold 6.5yrs, 417 exits above 6% annualized, $291.6M total profits — nobody has lost money here in scale",
+          "778 units, 116 URA prints in window, 50+ deals past year, 45% HDB upgraders and >1K MOPs nearby — very deep, replenishing buyer pool; exit_demand lens 95/100",
+          "Prints still rising: Aug-26 $2.515M/$1,947psf (1,292sf), Jul-26 $2.32M/$1,891psf (1,227sf), Jul-26 $2.85M/$2,021psf (1,410sf) — the ask is ahead of the market, not off it",
+          "Bedroom count verified: 1,216sf sits inside the project's own 3BR rental band (1,150-1,350sf, 190 contracts); 3 baths is the genuine 3BR format",
+          "76 years remaining lease — no lease drag over a 5-7yr hold"
+        ],
+        "rental_assessment": "URA 3BR project rent ~$5,200/mo (67 contracts, 12mo; rental cache 100d old, confidence damped). realsmart's latest 12 contracts median $4,950, Aug-26 3BR 1,200-1,300sf contracts at $4,600-5,300; est. yield 2.7%. Gross 2.6% / net ~1.6% at the ask — carry only, no appreciation credit.",
+        "appreciation_assessment": "ura_5yr_cagr 7.4% is a same-size-band re-rating ($1,191 -> $1,806psf in the 1,150-1,350sf band 2021-25), genuine but realized and trailing. Forward: OCR region baseline (~3.7%/yr realized) with no value edge — the unit is priced above peers, not below (premium_vs_age_adjusted_median +34%, partly a permanent Kovan-MRT location level). Not overriding the rate; do not extrapolate 7.4%.",
+        "stack_notes": "No profile for Kovan Melody (stack_profile not_researched). Floor and facing undisclosed on the listing; URA floor tiers show ~10% psf spread between fl 01-05 and fl 11-20 for this format — confirm floor before offering.",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.2,
+        "realsmart_pct_profitable": 98.5,
+        "realsmart_annual_return_pct": 6.3,
+        "realsmart_txn_count": 692,
+        "realsmart_note": "realsmart.sg/p/kovan-melody, title confirmed 'Kovan Melody', data through 28-Aug-2026: REALSCORE 4.2, 98.5% profitable = 679 profitable / 13 unprofitable resale pairs, avg annualized profit past 1y 6.3% (2026 avg 6.1%), avg hold 6.5 yrs, est. rental yield 2.7%, 1,431 total transactions."
+      },
+      "source": {
+        "run_dir": "output/run_103_500250260",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-kovan-melody-500250260",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
