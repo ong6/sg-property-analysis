@@ -45,13 +45,20 @@ class BrowserManager:
             "--window-position=100,100",
         ]
 
-        self._context = self._playwright.chromium.launch_persistent_context(
-            user_data_dir=self._user_data_dir,
-            channel=BROWSER_CHANNEL,
-            headless=self._headless,
-            no_viewport=True,
-            args=launch_args,
-        )
+        try:
+            self._context = self._playwright.chromium.launch_persistent_context(
+                user_data_dir=self._user_data_dir,
+                channel=BROWSER_CHANNEL,
+                headless=self._headless,
+                no_viewport=True,
+                args=launch_args,
+            )
+        except Exception:
+            # __exit__ never runs when __enter__ raises; stop the driver here or
+            # every later sync_playwright() in this process hits "inside the asyncio loop".
+            self._playwright.stop()
+            self._playwright = None
+            raise
 
         # Block heavy resources to speed up scraping and reduce detection noise.
         try:
