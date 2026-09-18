@@ -220,6 +220,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-livia-500227448",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,410 sqft unit at Livia, this time honestly labelled as a 3-bedroom (it is the developer's 3BR+study type, 1,324-1,410 sqft, 225 units), in a sound, deeply traded Pasir Ris development that has almost never lost an owner money. The problem is the price: $1,950,000 is above every price the 3BR+S type has ever transacted at (max $1,860,000, Jun/Jul-2025), and $1,383 psf is pinned to the type's very best high-floor prints (floors 11-15, $1,382 psf) with the floor unknown. Good building, full ask: a fair price only if this is a top-floor-tier unit, and a 5-8% overpay if it is not.",
+      "rating_rationale": "Neutral rather than Avoid because the ask is at the top of the type's own clearing band rather than beyond it on a psf basis ($1,383 vs the 3BR+S record of $1,382 psf), the label is honest, and the exit record is as strong as it gets (92.2% of 567 resales profitable). Neutral rather than Buy because the quantum is above every 3BR+S print in the five-year record, ~5% over the type's 2026 median ($1,750-1,788k for 1,324 sqft; July-26 prints $1,750k/$1,780k at $1,322-1,323 psf), the 1,410 variant itself has not printed since Mar-2024 ($1,780,000 / $1,262 psf), floor and facing are unknown, and net carry is ~1.6-1.7%. Nothing in the price leaves room for the buyer; the upside case requires the 2021-26 trend to continue, which the backtest says trailing CAGR does not predict. Medium confidence: the comp set is deep (13 same-cohort prints, 42 prints for the 1,300-1,420 sqft class since 2021) but the floor is the swing variable and is unobservable from the feed.",
+      "red_flags": [
+        "ASK ABOVE THE TYPE'S ENTIRE PRINT RECORD: Livia's 3BR+study (1,324/1,346/1,410 sqft) has 42 URA prints since Jun-2021; the highest quantum is $1,860,000 (1,346 sqft, Jun-25 and Jul-25, floors 11-15). This asks $1,950,000, +4.8% above the best ever.",
+        "The exact 1,410 sqft variant has 9 prints since 2021 and NONE since Mar-2024 ($1,780,000 / $1,262 psf, floors 1-5). The ask is +9.6% over the last print of its own layout; exit will be comped against the 1,324/1,346 siblings.",
+        "+5% over the type's 2026 clearing level: 2026 prints for 1,324 sqft are $1,650k (Jan, fl 1-5), $1,785k (Feb, fl 6-10), $1,750k (Mar, fl 6-10), $1,788k (May, fl 1-5), then realsmart shows $1,750k (24-Jul, $1,322 psf) and $1,780k for 1,346 sqft (23-Jul, $1,323 psf). Scaling the 2026 median psf (~$1,335) to 1,410 sqft gives ~$1.88M fair; the ask is ~$70k over that.",
+        "FLOOR UNKNOWN and it decides the verdict: floor_level is null and Livia has no researched profile. The type's psf spread by floor tier is ~10% (1,346 sqft: $1,263 at floors 6-10 vs $1,382 at 11-15 in the same month, Jul-25). The ask only reconciles with a floors 11+ unit; 26 of the 42 type prints are floors 1-10.",
+        "Same size, same project, was listed as a '4BR' at $1,928,000 five weeks ago (listing 500160992, unit_group livia|3|366 shares the bed count now). Whether or not it is the same unit, the 1,410 sqft stock at Livia has now been on the market at $1.93-1.95M since at least early August without clearing, which is itself evidence the ask is above the market.",
+        "Rent in factual_data ($4,600, ura_project_bed, 35 contracts) blends all Livia 3BR bands; realsmart's latest 1,300-1,400 sqft 3BR contract is $4,300 (Aug-26) and the 12-contract median is $4,400. Gross yield 2.7-2.8%, net ~1.6% after MCST and tax. Carry only; it does not offset the entry price.",
+        "relative_value's -5.8% 'discount' vs the age-adjusted D18 median ($1,468) is a persistent sub-market level: D18's median is pulled up by Pasir Ris 8 and Seaside Residences at $1,900-2,100 psf, and Livia has never traded near it. psf_premium_vs_ura_median_pct is +4.1% against Livia's own median: this unit is dearer than its project, not cheaper.",
+        "MMR 703 rides the 6.32%/yr trailing CAGR (appreciation +6.97, the largest component). Same-size resale pairs confirm the number is real (1,410 sqft fl 1-5: Feb-22 $1,430k -> Mar-24 $1,780k), but it is one 2021-26 bull regime and the backtest gives trailing CAGR ~0 forward power. Appreciation overridden to the OCR realized-forward baseline of 3.7%/yr.",
+        "99-yr lease from 07/01/2008: 81 years left; a 5-7yr hold exits at 74-76 years. Not a problem yet, but the lease component in MMR (+0.4) already accounts for it.",
+        "For the 'hers' budget the genuine 4BR (1,539 sqft, 160 units) is the format the market rewards: three Aug-2026 prints at $2,080,000-$2,200,000 ($1,351-1,429 psf). For an extra $130-250k the buyer gets the type with the higher psf and the 4BR label; this 3BR+S at $1.95M is the weaker format at a near-4BR quantum. For 'his' $1.8M mandate the ask is 8% over budget."
+      ],
+      "catalysts": [
+        "Bedroom label is honest: 1,410 sqft is the developer's 3BR+study type, and URA rental filings for the 1,400-1,500 sqft band are 12/12 filed as 3BR. bed_bands returns 'ok' against a 165-contract 3BR band (1,250-1,650 sqft). No relabel discount to apply.",
+        "Deep, demonstrated exit book (realsmart, 18-Sep-2026): REALSCORE 4.0, 92.2% profitable, 523 profitable vs 44 unprofitable across 567 resale pairs, 247 above 6% annualized, avg holding 6.5 yrs, $164.6M total profits, 1,268 total transactions, 29 resales in 2026 alone. Far past the 150-resale trust floor. Read as downside evidence only: Livia does not lose owners money; it says nothing about a buyer entering at a record quantum.",
+        "Liquid type: 42 prints for the 3BR+S class since 2021, 6 in 2026 through July. A buyer who overpays here can still exit; the risk is a flat-to-negative first-owner return, not being stuck.",
+        "OCR region prior is the favourable one (realized forward OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%); D18 buyer pool 'deep' on a 724-unit development; 59% HDB-upgrader buyer base gives a broad local floor.",
+        "Cross Island Line: Pasir Ris becomes an EWL/CRL interchange ~2030 (665m), Pasir Ris Town station ~2032. Under construction but announced since 2019 and priced; the backtest finds no forward power in the future-infra score.",
+        "Family-estate fundamentals: Elias Park Primary within 1km, Pasir Ris Park, White Sands, bus interchange; 3 bathrooms on 1,410 sqft (unverified) is generous for the type."
+      ],
+      "as_of": {
+        "price": 1950000,
+        "psf": 1382.98,
+        "beds": 3,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.32,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.83,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 81
+      },
+      "agent_evaluation": {
+        "summary": "A 1,410 sqft unit at Livia, this time honestly labelled as a 3-bedroom (it is the developer's 3BR+study type, 1,324-1,410 sqft, 225 units), in a sound, deeply traded Pasir Ris development that has almost never lost an owner money. The problem is the price: $1,950,000 is above every price the 3BR+S type has ever transacted at (max $1,860,000, Jun/Jul-2025), and $1,383 psf is pinned to the type's very best high-floor prints (floors 11-15, $1,382 psf) with the floor unknown. Good building, full ask: a fair price only if this is a top-floor-tier unit, and a 5-8% overpay if it is not.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "Neutral rather than Avoid because the ask is at the top of the type's own clearing band rather than beyond it on a psf basis ($1,383 vs the 3BR+S record of $1,382 psf), the label is honest, and the exit record is as strong as it gets (92.2% of 567 resales profitable). Neutral rather than Buy because the quantum is above every 3BR+S print in the five-year record, ~5% over the type's 2026 median ($1,750-1,788k for 1,324 sqft; July-26 prints $1,750k/$1,780k at $1,322-1,323 psf), the 1,410 variant itself has not printed since Mar-2024 ($1,780,000 / $1,262 psf), floor and facing are unknown, and net carry is ~1.6-1.7%. Nothing in the price leaves room for the buyer; the upside case requires the 2021-26 trend to continue, which the backtest says trailing CAGR does not predict. Medium confidence: the comp set is deep (13 same-cohort prints, 42 prints for the 1,300-1,420 sqft class since 2021) but the floor is the swing variable and is unobservable from the feed.",
+        "red_flags": [
+          "ASK ABOVE THE TYPE'S ENTIRE PRINT RECORD: Livia's 3BR+study (1,324/1,346/1,410 sqft) has 42 URA prints since Jun-2021; the highest quantum is $1,860,000 (1,346 sqft, Jun-25 and Jul-25, floors 11-15). This asks $1,950,000, +4.8% above the best ever.",
+          "The exact 1,410 sqft variant has 9 prints since 2021 and NONE since Mar-2024 ($1,780,000 / $1,262 psf, floors 1-5). The ask is +9.6% over the last print of its own layout; exit will be comped against the 1,324/1,346 siblings.",
+          "+5% over the type's 2026 clearing level: 2026 prints for 1,324 sqft are $1,650k (Jan, fl 1-5), $1,785k (Feb, fl 6-10), $1,750k (Mar, fl 6-10), $1,788k (May, fl 1-5), then realsmart shows $1,750k (24-Jul, $1,322 psf) and $1,780k for 1,346 sqft (23-Jul, $1,323 psf). Scaling the 2026 median psf (~$1,335) to 1,410 sqft gives ~$1.88M fair; the ask is ~$70k over that.",
+          "FLOOR UNKNOWN and it decides the verdict: floor_level is null and Livia has no researched profile. The type's psf spread by floor tier is ~10% (1,346 sqft: $1,263 at floors 6-10 vs $1,382 at 11-15 in the same month, Jul-25). The ask only reconciles with a floors 11+ unit; 26 of the 42 type prints are floors 1-10.",
+          "Same size, same project, was listed as a '4BR' at $1,928,000 five weeks ago (listing 500160992, unit_group livia|3|366 shares the bed count now). Whether or not it is the same unit, the 1,410 sqft stock at Livia has now been on the market at $1.93-1.95M since at least early August without clearing, which is itself evidence the ask is above the market.",
+          "Rent in factual_data ($4,600, ura_project_bed, 35 contracts) blends all Livia 3BR bands; realsmart's latest 1,300-1,400 sqft 3BR contract is $4,300 (Aug-26) and the 12-contract median is $4,400. Gross yield 2.7-2.8%, net ~1.6% after MCST and tax. Carry only; it does not offset the entry price.",
+          "relative_value's -5.8% 'discount' vs the age-adjusted D18 median ($1,468) is a persistent sub-market level: D18's median is pulled up by Pasir Ris 8 and Seaside Residences at $1,900-2,100 psf, and Livia has never traded near it. psf_premium_vs_ura_median_pct is +4.1% against Livia's own median: this unit is dearer than its project, not cheaper.",
+          "MMR 703 rides the 6.32%/yr trailing CAGR (appreciation +6.97, the largest component). Same-size resale pairs confirm the number is real (1,410 sqft fl 1-5: Feb-22 $1,430k -> Mar-24 $1,780k), but it is one 2021-26 bull regime and the backtest gives trailing CAGR ~0 forward power. Appreciation overridden to the OCR realized-forward baseline of 3.7%/yr.",
+          "99-yr lease from 07/01/2008: 81 years left; a 5-7yr hold exits at 74-76 years. Not a problem yet, but the lease component in MMR (+0.4) already accounts for it.",
+          "For the 'hers' budget the genuine 4BR (1,539 sqft, 160 units) is the format the market rewards: three Aug-2026 prints at $2,080,000-$2,200,000 ($1,351-1,429 psf). For an extra $130-250k the buyer gets the type with the higher psf and the 4BR label; this 3BR+S at $1.95M is the weaker format at a near-4BR quantum. For 'his' $1.8M mandate the ask is 8% over budget."
+        ],
+        "catalysts": [
+          "Bedroom label is honest: 1,410 sqft is the developer's 3BR+study type, and URA rental filings for the 1,400-1,500 sqft band are 12/12 filed as 3BR. bed_bands returns 'ok' against a 165-contract 3BR band (1,250-1,650 sqft). No relabel discount to apply.",
+          "Deep, demonstrated exit book (realsmart, 18-Sep-2026): REALSCORE 4.0, 92.2% profitable, 523 profitable vs 44 unprofitable across 567 resale pairs, 247 above 6% annualized, avg holding 6.5 yrs, $164.6M total profits, 1,268 total transactions, 29 resales in 2026 alone. Far past the 150-resale trust floor. Read as downside evidence only: Livia does not lose owners money; it says nothing about a buyer entering at a record quantum.",
+          "Liquid type: 42 prints for the 3BR+S class since 2021, 6 in 2026 through July. A buyer who overpays here can still exit; the risk is a flat-to-negative first-owner return, not being stuck.",
+          "OCR region prior is the favourable one (realized forward OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%); D18 buyer pool 'deep' on a 724-unit development; 59% HDB-upgrader buyer base gives a broad local floor.",
+          "Cross Island Line: Pasir Ris becomes an EWL/CRL interchange ~2030 (665m), Pasir Ris Town station ~2032. Under construction but announced since 2019 and priced; the backtest finds no forward power in the future-infra score.",
+          "Family-estate fundamentals: Elias Park Primary within 1km, Pasir Ris Park, White Sands, bus interchange; 3 bathrooms on 1,410 sqft (unverified) is generous for the type."
+        ],
+        "rental_assessment": "Realsmart: latest 12 contracts median $4,400 (range $3,300-6,380), 40 rentals in the past 6 months, est. yield 3.2% at project level. The 1,300-1,400 sqft 3BR band's latest contract is $4,300 (Aug-26); a 1,410 sqft 3BR+S should fetch $4,400-4,700. At $4,500: 2.8% gross, ~1.6% net. Carry, not return.",
+        "appreciation_assessment": "Trailing 6.32%/yr (163 prints) is real and confirmed by same-layout pairs, but single-regime. Realsmart's annualized profit for 2026 exits is 4.8% (average of realised pairs, mostly launch-era buyers). Forward: use the OCR baseline 3.7%/yr; at a +5% entry premium to the type's 2026 median, the first 1-2 years of that are spent recovering the overpay. Realistic 5-7yr outcome at this ask: 2.5-3.5%/yr price growth, mid-single-digit total return per year all-cash including carry.",
+        "stack_notes": "No profile for Livia; stack, facing and floor are unknown. The type's own prints show a ~10% psf spread between floors 6-10 and 11-15. Before any offer: confirm the floor and the pool/park-vs-block facing, and check whether this is the same 1,410 sqft unit that was marketed as a 4BR at $1,928,000 in August (listing 500160992). If it is floors 11+ with an open facing, $1.85-1.88M is fair; below floor 10, $1.78-1.82M.",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR realized-forward baseline (backtest); trailing 6.32% CAGR is single-regime with ~0 forward power",
+        "realscore": 4.0,
+        "realsmart_pct_profitable": 92.2,
+        "realsmart_annual_return_pct": 4.8
+      },
+      "source": {
+        "run_dir": "output/run_100_500257346",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-livia-500257346",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
