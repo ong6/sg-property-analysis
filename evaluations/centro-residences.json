@@ -194,6 +194,80 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500075630",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Same unit as the Jul-2026 Neutral (relist chain 500198864 -> 500075630, unit_group 364) — but the seller has REVERSED the July cut: $2.039M -> $2,149,440 ($1,585 psf), while the format's only two URA prints (Mar-26 1,367 sqft floors 06-10 $1,503; Dec-25 1,561 sqft floors 06-10 $1,511) sit ~5% below the ask. The launch unit mix (124x 2BR 743-893 / 136x 3BR-compact 904-1,001 / 36x 3BR-standard 1,206 / 28x 4BR-compact 1,281 / 5 penthouses = 329 units) contains no 1,356 sqft type: this is a 1,206 sqft standard 3BR plus ~150 sqft of level-6 podium terrace, so the algo's -18% to -22% 'discount' is non-habitable strata area benchmarked against tower apartments. On livable area the ask is ~$1,780 psf for a podium-level unit over the facilities deck beside the MRT/bus interchange, and URA rental filings show these large units rent LESS than the 1,076-1,184 sqft 3BRs ($4,650-4,900 vs $5,700 median).",
+      "rating_rationale": "Ask is now ~5% ABOVE the format's own two URA prints ($1,585 vs $1,503-1,511 psf) after the seller withdrew the July cut, so there is no margin of safety and the price is moving the wrong way. The headline discount is a format artifact: livable area is ~1,206 sqft (standard 3BR) plus a podium terrace, and URA rental contracts prove the market values the extra area at nothing (120-160 sqm units rent $4,650-4,900, below the $5,700 median of 100-110 sqm 3BRs; two 130-140 sqm units were even filed as 2-bedroom). Carry is 2.6% gross / 1.6% net on a $2.15M quantum, and the exit market for this exact format is 2 prints in 77 URA transactions against 8+ identical asks live at once from 8 different agents. Location and project are sound (NSL doorstep, 86% profitable exit record on 167 pairs, OCR region), but that is priced into the tower stock at $1,950-2,090 psf and does not rescue a podium terrace unit priced above its own comps. Neutral in July at the format's print level; at $1,585 psf it is Avoid.",
+      "red_flags": [
+        "ASK ABOVE OWN-FORMAT PRINTS: $1,585 psf vs Mar-26 1,367 sqft (floors 06-10) $1,503 and Dec-25 1,561 sqft (floors 06-10) $1,511 — the only two prints of the large/2-bath tier in 77 URA transactions. +5% over comp with the seller having REVERSED a 5.1% cut on 2026-09-18 (price_history: $2,149,440 -> $2,038,700 in Jul -> back to $2,149,440).",
+        "FORMAT ARTIFACT (mechanism now identified): the 2010 launch mix has no 1,356 sqft type — 3BR standard is 1,206 sqft (36 units, 2 baths); 1,356/1,367/1,453/1,561 sqft '3BR/2-bath' units are level-6 podium units over the facilities deck with terrace area added to strata. relative_value -18.1%, psf_premium_vs_ura_median -21.9% and MMR age_value +13.3 / psf_value +9.1 all benchmark terrace area against tower apartments (psf_cohort_txns = 5). On ~1,206 sqft livable the ask is ~$1,780 psf.",
+        "RENT PROVES THE AREA IS DEAD: URA 2025-26 contracts — 3BR 100-110 sqm: 13 contracts, median $5,700; 3BR 120-130 sqm: $4,650-4,700; 130-160 sqm: $4,800-4,900; and two 130-140 sqm units filed as 2-BEDROOM at $4,600-4,700. Larger strata area, lower rent. Gross yield 2.64% / net 1.55% on the scorer's $4,720 estimate — negative carry on any leveraged hold.",
+        "SUPPLY OVERHANG IN THIS EXACT FORMAT: 8 live listings of 1,356 sqft 3BR/2ba across 8 agents ($1,497-1,653 psf; the cheapest, 500058461, asks $2.03M / $1,497 — $120k below this one for the same product) plus 1,367 sqft x2 and 1,561 sqft x2. Format printed twice in the whole URA history — thin demand meeting thick supply, and the same crowd competes on exit.",
+        "PODIUM LEVEL = WORST NOISE EXPOSURE: both format prints are floors 06-10 (the facilities deck is level 6); EdgeProp residents: 'MRT station, Bus Terminal and Street noises will disturb any resident'; launch review notes dark kitchens facing the internal atrium. No compensating view.",
+        "MOMENTUM STALLED: project median PSF 2024 $1,820 -> 2025 $2,008 -> 2026 $2,038 (13 sales YTD); factual_data momentum -0.922. The 6.2% trailing 5yr CAGR (data rate) carries ~0 forward power — it also feeds ROI projections of 5.7%/yr that should not be trusted.",
+        "2 baths in a $2.15M '3BR' narrows the upgrader pool that a large-format exit depends on; 99yr from Dec-2007 (80 yrs left, ~73 at exit) compounds a narrow-pool format.",
+        "No condo profile (stack_profile not_researched) — mechanism inferred from the launch unit mix + floor levels of the prints, not a floor plan; PropertyGuru unreadable headless so floor/facing/terrace unverified for this specific unit."
+      ],
+      "catalysts": [
+        "Elite transit position: ~100-140m to Ang Mo Kio NSL, integrated with AMK Hub / bus interchange; CR11 Cross Island Line interchange ~2030 at the doorstep (narrative — future-infra score has no measured forward power).",
+        "Project-level downside record is solid: REALSCORE 3.5, 86.1% profitable on 167 matched resale pairs (143/24), avg holding 7.8 yrs, $34.2M total profits, 467 lifetime transactions, 50+ deals past year. Applies to the tower stock; the large-format tier is 2 prints.",
+        "D20 / OCR — the favourable forward region under current priors (realized fwd OCR +3.7%/yr).",
+        "Deep, liquid project overall (329 units, 53 rental contracts in 6 months) — exit is slow only for THIS format.",
+        "A terrace unit at the format's print level (~$1,505 psf / ~$2.04M) or below would revert to Neutral; 500058461 at $2.03M is the better entry to the same product if one wants it."
+      ],
+      "as_of": {
+        "price": 2149440,
+        "psf": 1585.13,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.2,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.64,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 84
+      },
+      "agent_evaluation": {
+        "summary": "Same unit as the Jul-2026 Neutral (relist chain 500198864 -> 500075630, unit_group 364) — but the seller has REVERSED the July cut: $2.039M -> $2,149,440 ($1,585 psf), while the format's only two URA prints (Mar-26 1,367 sqft floors 06-10 $1,503; Dec-25 1,561 sqft floors 06-10 $1,511) sit ~5% below the ask. The launch unit mix (124x 2BR 743-893 / 136x 3BR-compact 904-1,001 / 36x 3BR-standard 1,206 / 28x 4BR-compact 1,281 / 5 penthouses = 329 units) contains no 1,356 sqft type: this is a 1,206 sqft standard 3BR plus ~150 sqft of level-6 podium terrace, so the algo's -18% to -22% 'discount' is non-habitable strata area benchmarked against tower apartments. On livable area the ask is ~$1,780 psf for a podium-level unit over the facilities deck beside the MRT/bus interchange, and URA rental filings show these large units rent LESS than the 1,076-1,184 sqft 3BRs ($4,650-4,900 vs $5,700 median).",
+        "rating": "Avoid",
+        "rating_rationale": "Ask is now ~5% ABOVE the format's own two URA prints ($1,585 vs $1,503-1,511 psf) after the seller withdrew the July cut, so there is no margin of safety and the price is moving the wrong way. The headline discount is a format artifact: livable area is ~1,206 sqft (standard 3BR) plus a podium terrace, and URA rental contracts prove the market values the extra area at nothing (120-160 sqm units rent $4,650-4,900, below the $5,700 median of 100-110 sqm 3BRs; two 130-140 sqm units were even filed as 2-bedroom). Carry is 2.6% gross / 1.6% net on a $2.15M quantum, and the exit market for this exact format is 2 prints in 77 URA transactions against 8+ identical asks live at once from 8 different agents. Location and project are sound (NSL doorstep, 86% profitable exit record on 167 pairs, OCR region), but that is priced into the tower stock at $1,950-2,090 psf and does not rescue a podium terrace unit priced above its own comps. Neutral in July at the format's print level; at $1,585 psf it is Avoid.",
+        "red_flags": [
+          "ASK ABOVE OWN-FORMAT PRINTS: $1,585 psf vs Mar-26 1,367 sqft (floors 06-10) $1,503 and Dec-25 1,561 sqft (floors 06-10) $1,511 — the only two prints of the large/2-bath tier in 77 URA transactions. +5% over comp with the seller having REVERSED a 5.1% cut on 2026-09-18 (price_history: $2,149,440 -> $2,038,700 in Jul -> back to $2,149,440).",
+          "FORMAT ARTIFACT (mechanism now identified): the 2010 launch mix has no 1,356 sqft type — 3BR standard is 1,206 sqft (36 units, 2 baths); 1,356/1,367/1,453/1,561 sqft '3BR/2-bath' units are level-6 podium units over the facilities deck with terrace area added to strata. relative_value -18.1%, psf_premium_vs_ura_median -21.9% and MMR age_value +13.3 / psf_value +9.1 all benchmark terrace area against tower apartments (psf_cohort_txns = 5). On ~1,206 sqft livable the ask is ~$1,780 psf.",
+          "RENT PROVES THE AREA IS DEAD: URA 2025-26 contracts — 3BR 100-110 sqm: 13 contracts, median $5,700; 3BR 120-130 sqm: $4,650-4,700; 130-160 sqm: $4,800-4,900; and two 130-140 sqm units filed as 2-BEDROOM at $4,600-4,700. Larger strata area, lower rent. Gross yield 2.64% / net 1.55% on the scorer's $4,720 estimate — negative carry on any leveraged hold.",
+          "SUPPLY OVERHANG IN THIS EXACT FORMAT: 8 live listings of 1,356 sqft 3BR/2ba across 8 agents ($1,497-1,653 psf; the cheapest, 500058461, asks $2.03M / $1,497 — $120k below this one for the same product) plus 1,367 sqft x2 and 1,561 sqft x2. Format printed twice in the whole URA history — thin demand meeting thick supply, and the same crowd competes on exit.",
+          "PODIUM LEVEL = WORST NOISE EXPOSURE: both format prints are floors 06-10 (the facilities deck is level 6); EdgeProp residents: 'MRT station, Bus Terminal and Street noises will disturb any resident'; launch review notes dark kitchens facing the internal atrium. No compensating view.",
+          "MOMENTUM STALLED: project median PSF 2024 $1,820 -> 2025 $2,008 -> 2026 $2,038 (13 sales YTD); factual_data momentum -0.922. The 6.2% trailing 5yr CAGR (data rate) carries ~0 forward power — it also feeds ROI projections of 5.7%/yr that should not be trusted.",
+          "2 baths in a $2.15M '3BR' narrows the upgrader pool that a large-format exit depends on; 99yr from Dec-2007 (80 yrs left, ~73 at exit) compounds a narrow-pool format.",
+          "No condo profile (stack_profile not_researched) — mechanism inferred from the launch unit mix + floor levels of the prints, not a floor plan; PropertyGuru unreadable headless so floor/facing/terrace unverified for this specific unit."
+        ],
+        "catalysts": [
+          "Elite transit position: ~100-140m to Ang Mo Kio NSL, integrated with AMK Hub / bus interchange; CR11 Cross Island Line interchange ~2030 at the doorstep (narrative — future-infra score has no measured forward power).",
+          "Project-level downside record is solid: REALSCORE 3.5, 86.1% profitable on 167 matched resale pairs (143/24), avg holding 7.8 yrs, $34.2M total profits, 467 lifetime transactions, 50+ deals past year. Applies to the tower stock; the large-format tier is 2 prints.",
+          "D20 / OCR — the favourable forward region under current priors (realized fwd OCR +3.7%/yr).",
+          "Deep, liquid project overall (329 units, 53 rental contracts in 6 months) — exit is slow only for THIS format.",
+          "A terrace unit at the format's print level (~$1,505 psf / ~$2.04M) or below would revert to Neutral; 500058461 at $2.03M is the better entry to the same product if one wants it."
+        ],
+        "rental_assessment": "Strong tenant demand at the project (53 contracts / 6 months, median $4,750) but the large 2-bath format earns no premium: URA filings put 120-160 sqm units at $4,650-4,900/mo versus $5,700 for the 100-110 sqm 3BRs. Expect ~$4,700 -> 2.6% gross / ~1.55% net at $2.15M — weak carry that does not fund a hold.",
+        "appreciation_assessment": "Project median PSF flat 2025 -> 2026 after a 2021-25 run; trailing 6.2% CAGR is de-weighted (~0 forward power). Forward expectation for the tower stock is the OCR baseline (~3-4%/yr); this format has no price discovery beyond two ~$1,505 prints, so paying $1,585 means starting ~5% underwater to the only comps. Do not credit the -18% relative_value — it is terrace area vs apartments.",
+        "stack_notes": "Format = 1,206 sqft standard 3BR + ~150 sqft level-6 podium terrace (inferred: launch mix has no 1,356 type; both URA prints floors 06-10; realsmart unit range 743-1,582). Podium over the facilities deck, closest to MRT/bus-interchange noise, kitchen on the dark internal atrium per the launch review. Best stacks in the project are the high-floor (26-35) 904-1,206 sqft tower units printing $1,950-2,090 psf. Floor/facing of this exact unit undisclosed.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.5,
+        "realsmart_pct_profitable": 86.1,
+        "realsmart_annual_return_pct": 4.6
+      },
+      "source": {
+        "run_dir": "output/run_093_500075630",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-centro-residences-500075630",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-18",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -3035,9 +3035,9 @@
     "centro-residences": {
       "condo": "Centro Residences",
       "district": "D20",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-07-28",
-      "eval_count": 3
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-18",
+      "eval_count": 4
     },
     "narra-residences": {
       "condo": "Narra Residences",
