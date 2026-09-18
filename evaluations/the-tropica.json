@@ -56,6 +56,77 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tropica-500100143",
         "review_file": "batch_03.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Honest 1,238sf 3BR (bed_bands ok on 95 URA rental filings) in a sound, well-reviewed 537-unit Tampines Ave 1 project, but asked at $1,438psf — above every same-size print on record (13 prints in 24mo, median $1,297; 12mo median $1,333; format high $1,433 Mar-26 fl 11-15) with floor unknown, 1.2km from Tampines West DT31, and a 99yr lease from Dec-1996 that will sit around 62-64 years remaining at a 5-7yr exit. The same unit group has been on the market since Jun-26 at $1.70M then $1.80M without clearing; the current $1.78M is a trim, not a discount. Fair value ~$1.65-1.70M; a Buy only if negotiated to that on a confirmed high floor.",
+      "rating_rationale": "Ask $1,438psf tops the 1,227-1,238sf format's every URA print (24mo median $1,297, 12mo $1,333, all-time high $1,433 in Mar-26 on floor 11-15) with floor unknown, so the buyer pays the format's peak price for an unverified stack. Structural drags: 1.2km to the nearest MRT (no station coming closer — CRL Tampines North is 2.8km), lease remaining 69yr decaying toward the low-60s over the hold where next-buyer CPF/financing headroom tightens, and realsmart shows 91 of 483 resale pairs (18.8%) exited at a loss — a real, not perfect, downside record. Offsetting: large liquid project (537 units, 60 URA prints in the cache, 24 prints since Jan-25), honest unit format, 100% profitable on 50+ deals in the past year, resort-style grounds with good resident reviews. The 8.6% trailing CAGR and +13.8 MMR appreciation component are 2021-26 bull-run story, not forward signal; MMR 496 is market-typical and the age_value/psf_value components (-14.6/-6.1) agree the ask carries no value edge. Net carry ~1.7% on $4,300 rent (19 contracts). Not a value trap and not a bait ask, just fully priced: Neutral, fair ~$1.65-1.70M.",
+      "red_flags": [
+        "Ask $1,438psf above every same-size (1,227-1,238sf) URA print on record: 24mo median $1,297 (n=13), 12mo median $1,333 (n=5), format high $1,433 Mar-26 fl 11-15; ~+8-11% over median with floor unknown",
+        "Unit group listed since Jun-26 at $1.70M, raised to $1.80M Jul-26, trimmed to $1.78M Sep-26 — three months unsold; the earlier $1.70M ask is the honest anchor and it did not clear",
+        "1,198m to Tampines West DT31 — not walkable; nearest future station (CRL Tampines North) is 2.8km, no connectivity catalyst",
+        "99yr lease from 04/12/1996: 69 years remaining now, ~62-64 at a 2031-33 exit — next-buyer CPF/loan headroom starts to tighten below the low 60s",
+        "realsmart: 91 of 483 resale pairs (18.8%) sold at a loss — a normal-cycle project, not a never-lost-money one; avg holding 9.2yr",
+        "25-year-old building (TOP 2000) — maintenance/sinking-fund exposure; no stack profile researched, floor and facing unknown",
+        "Trailing 8.61% 5yr CAGR (60 txns) is bull-regime story; MMR relative_value shows +20% premium vs age-adjusted D18 peers (a Tampines-central location level, but no discount either way)"
+      ],
+      "catalysts": [
+        "Large liquid project: 537 units, 24 URA prints since Jan-25, deep 3BR buyer pool at the sub-$1.8M OCR family ticket",
+        "Tampines Regional Centre employment/retail base sustains rental demand ($4,300/mo on 19 contracts, realsmart est. 3.3% gross)",
+        "100% profitable on 50+ resales in the past year per realsmart; 2026 avg annualized profit 4.6%",
+        "Resort-style grounds, tennis/basketball/gym, well-regarded maintenance and security in resident reviews"
+      ],
+      "as_of": {
+        "price": 1780000,
+        "psf": 1437.8,
+        "beds": 3,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": 8.61,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.9,
+        "nearest_mrt": "Tampines West",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 71
+      },
+      "agent_evaluation": {
+        "summary": "Honest 1,238sf 3BR (bed_bands ok on 95 URA rental filings) in a sound, well-reviewed 537-unit Tampines Ave 1 project, but asked at $1,438psf — above every same-size print on record (13 prints in 24mo, median $1,297; 12mo median $1,333; format high $1,433 Mar-26 fl 11-15) with floor unknown, 1.2km from Tampines West DT31, and a 99yr lease from Dec-1996 that will sit around 62-64 years remaining at a 5-7yr exit. The same unit group has been on the market since Jun-26 at $1.70M then $1.80M without clearing; the current $1.78M is a trim, not a discount. Fair value ~$1.65-1.70M; a Buy only if negotiated to that on a confirmed high floor.",
+        "rating": "Neutral",
+        "rating_rationale": "Ask $1,438psf tops the 1,227-1,238sf format's every URA print (24mo median $1,297, 12mo $1,333, all-time high $1,433 in Mar-26 on floor 11-15) with floor unknown, so the buyer pays the format's peak price for an unverified stack. Structural drags: 1.2km to the nearest MRT (no station coming closer — CRL Tampines North is 2.8km), lease remaining 69yr decaying toward the low-60s over the hold where next-buyer CPF/financing headroom tightens, and realsmart shows 91 of 483 resale pairs (18.8%) exited at a loss — a real, not perfect, downside record. Offsetting: large liquid project (537 units, 60 URA prints in the cache, 24 prints since Jan-25), honest unit format, 100% profitable on 50+ deals in the past year, resort-style grounds with good resident reviews. The 8.6% trailing CAGR and +13.8 MMR appreciation component are 2021-26 bull-run story, not forward signal; MMR 496 is market-typical and the age_value/psf_value components (-14.6/-6.1) agree the ask carries no value edge. Net carry ~1.7% on $4,300 rent (19 contracts). Not a value trap and not a bait ask, just fully priced: Neutral, fair ~$1.65-1.70M.",
+        "red_flags": [
+          "Ask $1,438psf above every same-size (1,227-1,238sf) URA print on record: 24mo median $1,297 (n=13), 12mo median $1,333 (n=5), format high $1,433 Mar-26 fl 11-15; ~+8-11% over median with floor unknown",
+          "Unit group listed since Jun-26 at $1.70M, raised to $1.80M Jul-26, trimmed to $1.78M Sep-26 — three months unsold; the earlier $1.70M ask is the honest anchor and it did not clear",
+          "1,198m to Tampines West DT31 — not walkable; nearest future station (CRL Tampines North) is 2.8km, no connectivity catalyst",
+          "99yr lease from 04/12/1996: 69 years remaining now, ~62-64 at a 2031-33 exit — next-buyer CPF/loan headroom starts to tighten below the low 60s",
+          "realsmart: 91 of 483 resale pairs (18.8%) sold at a loss — a normal-cycle project, not a never-lost-money one; avg holding 9.2yr",
+          "25-year-old building (TOP 2000) — maintenance/sinking-fund exposure; no stack profile researched, floor and facing unknown",
+          "Trailing 8.61% 5yr CAGR (60 txns) is bull-regime story; MMR relative_value shows +20% premium vs age-adjusted D18 peers (a Tampines-central location level, but no discount either way)"
+        ],
+        "catalysts": [
+          "Large liquid project: 537 units, 24 URA prints since Jan-25, deep 3BR buyer pool at the sub-$1.8M OCR family ticket",
+          "Tampines Regional Centre employment/retail base sustains rental demand ($4,300/mo on 19 contracts, realsmart est. 3.3% gross)",
+          "100% profitable on 50+ resales in the past year per realsmart; 2026 avg annualized profit 4.6%",
+          "Resort-style grounds, tennis/basketball/gym, well-regarded maintenance and security in resident reviews"
+        ],
+        "rental_assessment": "URA project-bed rent $4,300/mo on 19 contracts (12mo) → 2.9% gross / ~1.7% net at $1.78M; realsmart puts avg rental at $3.55psf and est. yield 3.3%. Tampines Regional Centre and Changi Business Park tenants keep 3BR demand steady, but the 1.2km MRT walk caps rent at the district's mid-band. Carry only, not a return driver.",
+        "appreciation_assessment": "The 2021-26 run ($960 → $1,300-1,430psf on this format) is regime, not project edge. Forward, the priors that matter are region (OCR, positive) and cheap-vs-peers (negative here: ask at the format's all-time high, +20% vs age-adjusted D18 peers). Lease decay into the low-60s over the hold is a mild but real headwind. Expect low-single-digit forward growth from this entry; the ROI table's 8% is the trailing rate and should not be relied on.",
+        "stack_notes": "No profile for The Tropica (status not_researched); floor and facing unknown on the listing. 8 blocks up to 15 storeys; URA shows a ~10% psf spread between floors 01-05 (~$1,296) and 11-15 (~$1,433) on this format, so floor is decisive for whether $1,438 is peak-of-format or simply above market. Verify floor and block/facing (pool vs Tampines Ave 1 road) before any offer.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 81.2,
+        "realsmart_annual_return_pct": 5.2,
+        "realsmart_note": "realsmart.sg/p/the-tropica (title confirmed The Tropica): REALSCORE 3.6, 81.2% profitable = 392 profitable / 91 unprofitable (483 resale pairs), avg holding 9.2yr, total profits $106.8M, avg annualized profit past 1y 5.2% (2026 avg 4.6%), badge '100% Profitable 50+ deals past yr', est. rental yield 3.3%, lease 99yr from 04/12/1996 (69 remaining), 537 units, TOP 2000."
+      },
+      "source": {
+        "run_dir": "output/run_104_500260913",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-tropica-500260913",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
