@@ -196,6 +196,82 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quartz-60056427",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,076 sqft 3BR at The Quartz (D19 Sengkang, 99yr from Apr-2005, ~78yr left, 184-270m to Buangkok NE15, 625 units) asking $1.75M / $1,626 psf. The project is sound — 97.3% of 560 resale pairs sold at a profit, REALSCORE 4.1, very deep buyer pool, walkable MRT, OCR — but this ask sits ABOVE the format's own prints: the 1,033-1,141 sqft 3BR stock printed $1,501-$1,601 psf over the last 12 months (median ~$1,542; Jun-26 1,141 sqft at $1,560) and $1,601 (Feb-26, floors 16-20) is the highest psf ever recorded for the format. At $1,626 the seller is asking ~1.5% over the all-time high and ~5% over the 12-month median, on a unit whose floor and facing are unknown. Fair value is ~$1.66-1.69M; the same unit has been on the market since 11-Aug-2026 (relisted from 500229452 under a new agent, same price) without clearing, and a 1,044 sqft sibling at $1.68M / $1,609 psf has sat unsold for 3+ months. Good project, wrong price — Neutral.",
+      "rating_rationale": "Ask $1,626 psf is ~5% above the 12-month median of the project's own same-format prints ($1,542, 1,033-1,141 sqft) and ~1.5% above the format's all-time high ($1,601, Feb-26, high floor) — with floor/facing unknown, so no premium is justified. relative_value confirms: +6.4% vs the age-adjusted D19 same-size median and +6.8% vs the project URA median; the 706 score comes from MRT/liquidity/buyer-pool/trailing CAGR, not value (psf_value -4.4, age_value -5.1). The listing has not cleared since 11-Aug-2026 across two agents and a cheaper sibling ($1,609 psf) has sat 3+ months — the market is not paying $1,600+ for the compact 3BR format today. Carry is thin: realsmart's latest 12 rental contracts median $4,475 (range $3,500-5,000), so a 1,076 sqft unit rents ~$4,300-4,500 → ~3.0% gross / ~1.8% net, below the $4,850 project-average estimate. What keeps this off Avoid: the project's exit record is genuinely strong (97.3% profitable on 560 pairs, 15 losses in 20 years, avg 6.3yr hold, 5.7-5.9% annualized profit in 2026 exits), the 184m MRT walk and 625-unit pool are real backtested demand supports, and OCR/D19 is the strongest measured forward region. At ~$1.66-1.68M this becomes a reasonable hold; at $1.75M it is paying next year's appreciation today.",
+      "red_flags": [
+        "Ask $1,626 psf exceeds every recorded print for the 1,033-1,141 sqft format: 12-month range $1,501-$1,601 (median ~$1,542); the Feb-26 $1,601 high was a floor 16-20 unit and this unit's floor is unknown.",
+        "Stale-at-price signal: same unit listed 11-Aug-2026 (id 500229452, agent Shanice Lim) and relisted 17-Sep-2026 under a new agent at the identical $1.75M — 5+ weeks with no cut; sibling 1,044 sqft at $1.68M / $1,609 psf unsold since 07-Jun-2026.",
+        "relative_value: +6.4% vs age-adjusted D19 same-size median, +6.8% vs project URA median — the 706 score_1000 is liquidity/MRT/trailing-CAGR driven; its own value channels are negative (psf_value -4.39, age_value -5.06).",
+        "Rent overstated: $4,850 estimate is the project 3BR average across 1,100-1,600 sqft contracts (URA has no 3BR contracts under 1,100 sqft); realsmart's latest 12 contracts median $4,475 → realistic ~$4,300-4,500 for 1,076 sqft, ~3.0% gross / ~1.8% net.",
+        "Bath count inconsistent between the two listings of this unit (3 vs 2) — the compact 1,076 sqft layout is almost certainly 2-bath; verify at viewing.",
+        "Floor and facing unknown (PropertyGuru does not serve facing; no condo profile yet) — low floors 01-05 in this format printed $1,421-1,441 psf in 2025-26, ~8% under mid-floor, so the floor decides whether the ask is 5% or 13% rich.",
+        "99-yr lease from 18-Apr-2005: ~78 yrs left now, ~71 at a 5-7yr exit; 2009 completion (17 yrs) with mixed older reviews on interior finish quality.",
+        "Trailing 6.38% CAGR (120 prints) and project momentum -0.75 (decelerating): story, not forward signal; 2026 project median psf ($1,539 on 13 sales) is only ~2% above 2025 ($1,511) — the run-up is flattening."
+      ],
+      "catalysts": [
+        "Exit record: REALSCORE 4.1, 97.3% profitable — 545 profitable vs 15 unprofitable resale pairs since 2006, avg holding 6.3 yrs, $197.7M total profits; 2026 exits averaging 5.7% annualized. Strong downside evidence on a deep sample (1,169 total transactions).",
+        "Buangkok NE15 at 184-270m — genuine walkable-MRT effect (as-of-T std_beta -0.11), plus Ranggung LRT 462m; 69% of buyers historically HDB upgraders, with Sengkang/Buangkok BTOs reaching MOP feeding sub-$2M family-condo demand.",
+        "OCR/D19: the strongest realized forward region in the 28-district backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+        "Very deep buyer pool: 625 units, 20-30 resales a year, compact 3BR is the project's most liquid format (19 same-size prints in the cohort) — a $1.7M quantum sits in the liquid band.",
+        "Negotiation room is the thesis: at $1.66-1.68M (the format's Dec-25/Feb-26 prints) the unit would be at-market in a project that has almost never lost an owner money.",
+        "Cross Island Line Defu ~1.05km and Punggol Digital District — narrative only (future-infra score has no measured forward power)."
+      ],
+      "as_of": {
+        "price": 1750000,
+        "psf": 1626.39,
+        "beds": 3,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.38,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.33,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 80
+      },
+      "agent_evaluation": {
+        "summary": "A 1,076 sqft 3BR at The Quartz (D19 Sengkang, 99yr from Apr-2005, ~78yr left, 184-270m to Buangkok NE15, 625 units) asking $1.75M / $1,626 psf. The project is sound — 97.3% of 560 resale pairs sold at a profit, REALSCORE 4.1, very deep buyer pool, walkable MRT, OCR — but this ask sits ABOVE the format's own prints: the 1,033-1,141 sqft 3BR stock printed $1,501-$1,601 psf over the last 12 months (median ~$1,542; Jun-26 1,141 sqft at $1,560) and $1,601 (Feb-26, floors 16-20) is the highest psf ever recorded for the format. At $1,626 the seller is asking ~1.5% over the all-time high and ~5% over the 12-month median, on a unit whose floor and facing are unknown. Fair value is ~$1.66-1.69M; the same unit has been on the market since 11-Aug-2026 (relisted from 500229452 under a new agent, same price) without clearing, and a 1,044 sqft sibling at $1.68M / $1,609 psf has sat unsold for 3+ months. Good project, wrong price — Neutral.",
+        "rating": "Neutral",
+        "rating_rationale": "Ask $1,626 psf is ~5% above the 12-month median of the project's own same-format prints ($1,542, 1,033-1,141 sqft) and ~1.5% above the format's all-time high ($1,601, Feb-26, high floor) — with floor/facing unknown, so no premium is justified. relative_value confirms: +6.4% vs the age-adjusted D19 same-size median and +6.8% vs the project URA median; the 706 score comes from MRT/liquidity/buyer-pool/trailing CAGR, not value (psf_value -4.4, age_value -5.1). The listing has not cleared since 11-Aug-2026 across two agents and a cheaper sibling ($1,609 psf) has sat 3+ months — the market is not paying $1,600+ for the compact 3BR format today. Carry is thin: realsmart's latest 12 rental contracts median $4,475 (range $3,500-5,000), so a 1,076 sqft unit rents ~$4,300-4,500 → ~3.0% gross / ~1.8% net, below the $4,850 project-average estimate. What keeps this off Avoid: the project's exit record is genuinely strong (97.3% profitable on 560 pairs, 15 losses in 20 years, avg 6.3yr hold, 5.7-5.9% annualized profit in 2026 exits), the 184m MRT walk and 625-unit pool are real backtested demand supports, and OCR/D19 is the strongest measured forward region. At ~$1.66-1.68M this becomes a reasonable hold; at $1.75M it is paying next year's appreciation today.",
+        "red_flags": [
+          "Ask $1,626 psf exceeds every recorded print for the 1,033-1,141 sqft format: 12-month range $1,501-$1,601 (median ~$1,542); the Feb-26 $1,601 high was a floor 16-20 unit and this unit's floor is unknown.",
+          "Stale-at-price signal: same unit listed 11-Aug-2026 (id 500229452, agent Shanice Lim) and relisted 17-Sep-2026 under a new agent at the identical $1.75M — 5+ weeks with no cut; sibling 1,044 sqft at $1.68M / $1,609 psf unsold since 07-Jun-2026.",
+          "relative_value: +6.4% vs age-adjusted D19 same-size median, +6.8% vs project URA median — the 706 score_1000 is liquidity/MRT/trailing-CAGR driven; its own value channels are negative (psf_value -4.39, age_value -5.06).",
+          "Rent overstated: $4,850 estimate is the project 3BR average across 1,100-1,600 sqft contracts (URA has no 3BR contracts under 1,100 sqft); realsmart's latest 12 contracts median $4,475 → realistic ~$4,300-4,500 for 1,076 sqft, ~3.0% gross / ~1.8% net.",
+          "Bath count inconsistent between the two listings of this unit (3 vs 2) — the compact 1,076 sqft layout is almost certainly 2-bath; verify at viewing.",
+          "Floor and facing unknown (PropertyGuru does not serve facing; no condo profile yet) — low floors 01-05 in this format printed $1,421-1,441 psf in 2025-26, ~8% under mid-floor, so the floor decides whether the ask is 5% or 13% rich.",
+          "99-yr lease from 18-Apr-2005: ~78 yrs left now, ~71 at a 5-7yr exit; 2009 completion (17 yrs) with mixed older reviews on interior finish quality.",
+          "Trailing 6.38% CAGR (120 prints) and project momentum -0.75 (decelerating): story, not forward signal; 2026 project median psf ($1,539 on 13 sales) is only ~2% above 2025 ($1,511) — the run-up is flattening."
+        ],
+        "catalysts": [
+          "Exit record: REALSCORE 4.1, 97.3% profitable — 545 profitable vs 15 unprofitable resale pairs since 2006, avg holding 6.3 yrs, $197.7M total profits; 2026 exits averaging 5.7% annualized. Strong downside evidence on a deep sample (1,169 total transactions).",
+          "Buangkok NE15 at 184-270m — genuine walkable-MRT effect (as-of-T std_beta -0.11), plus Ranggung LRT 462m; 69% of buyers historically HDB upgraders, with Sengkang/Buangkok BTOs reaching MOP feeding sub-$2M family-condo demand.",
+          "OCR/D19: the strongest realized forward region in the 28-district backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+          "Very deep buyer pool: 625 units, 20-30 resales a year, compact 3BR is the project's most liquid format (19 same-size prints in the cohort) — a $1.7M quantum sits in the liquid band.",
+          "Negotiation room is the thesis: at $1.66-1.68M (the format's Dec-25/Feb-26 prints) the unit would be at-market in a project that has almost never lost an owner money.",
+          "Cross Island Line Defu ~1.05km and Punggol Digital District — narrative only (future-infra score has no measured forward power)."
+        ],
+        "rental_assessment": "Tenant demand at The Quartz is steady (32 contracts in 6 months, realsmart) but rents are modest: latest 12 contracts median $4,475, range $3,500-5,000, avg $3.86 psf/month. URA 3BR contracts start at the 1,100-1,200 sqft band ($4,300-4,700 in 2024-26); a 1,076 sqft 2-bath unit should rent ~$4,300-4,500, giving ~3.0% gross and ~1.8% net at $1.75M. Yield is carry only — high gross yield predicts lower forward growth in the panel, and this is not high anyway.",
+        "appreciation_assessment": "Project median psf: $1,236 (2022) → $1,305 (2023) → $1,386 (2024) → $1,511 (2025) → $1,539 (2026, 13 sales) — strong run, now flattening (+2% YTD). The compact 3BR format went $1,421-1,584 (2025) → $1,539-1,601 (2026). Forward: keep the OCR baseline (~3.7%/yr realized) rather than the trailing 6.4% — cheap-vs-peers is the robust signal and this unit is not cheap (+6% vs age-adjusted D19 peers). At ask, the first ~5% of any appreciation is already paid; at $1.66-1.68M it tracks the district. No override — the data rate is a de-biased resale CAGR but trailing, so the ROI table's 6.2% annualized should be read as an upper case.",
+        "stack_notes": "No condo profile (status not_researched); PropertyGuru serves no floor or facing for this listing. Blocks 51-69 Compassvale Bow; the two listings of this unit quote different addresses (51 vs 69), so even the block is unconfirmed. URA floor segmentation for the 1,033-1,141 sqft format: floors 01-05 printed $1,421-1,441 (2025-26), 06-15 $1,533-1,568, 16-20 $1,501-1,601 — the ask only approaches fair if this is a high-floor, unblocked unit. Verify floor, facing (avoid west-sun/road-facing stacks toward Compassvale Bow), and bath count at viewing.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.1,
+        "realsmart_pct_profitable": 97.3,
+        "realsmart_annual_return_pct": 5.9
+      },
+      "source": {
+        "run_dir": "output/run_099_500220458",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quartz-500220458",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
