@@ -276,6 +276,91 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500083447",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,076 sqft 3BR/2ba at Regentville (D19 Hougang, 99yr from 1996, ~69yrs left) listed today at $1.28M / $1,190 psf. Against the project's OWN 1,076 sqft type (27 lifetime URA prints; 8 in the last 24 months at $1,151-$1,254 psf, median ~$1,203; last two: Dec-25 $1,225 on 06-10, Apr-26 $1,197 on 01-05) the ask is at-market, ~1% under the 24mo median and level with the latest low-floor print and realsmart's latest-12-sale median of $1,179 psf. The MMR 809 does not come from a unit discount (psf_value component 0.57): it comes from age_value (-18.3% vs the age-adjusted D19 median of $1,456, a permanent Hougang-old-stock level against Sengkang/Punggol/Serangoon newer stock, since Regentville's own median has been flat at $1,151 -> $1,180 -> $1,184 psf from 2024 to 2026) plus a trailing 7.59%/yr CAGR that is the spent 2021-23 OCR re-rating. The 'price dropped' badge is a unit_group chain: the $1.40M / $1.389M entries belong to listing 500108967 (agent Jeffrey Liew, 3 baths, still live), while this listing (agent Jeff Huang, 2 baths) first appeared 2026-09-18 with no history of its own. Floor, facing and block are undisclosed and there is no researched profile. Sound OCR fundamentals, deep liquidity, low quantum, but a fairly priced 26-year-old leasehold with no verified edge, thin carry and a middling exit record: Neutral.",
+      "rating_rationale": "At-market, not cheap: $1,190 psf sits inside the 1,076 sqft type's own 24mo band ($1,151-$1,254, median ~$1,203, n=8) and level with the Apr-26 low-floor print, so the strongest validated forward signal (cheap-vs-peers) does not fire at unit level. The 809 score is an age-adjusted district-median artifact (Hougang old stock vs D19 new launches) stacked on trailing CAGR, both de-weighted priors. Nothing is wrong with the unit, the project or the price, which keeps it off Avoid; nothing is under-priced, which keeps it off Buy. Medium confidence: the ask itself is verifiable against a deep same-type print set, but floor/facing/bath count and whether $1.28M is a transactable ask or a bait relist are unknown (PropertyGuru unreachable in this run).",
+      "red_flags": [
+        "No unit-level discount: $1,190 psf vs the 1,076 sqft type's own prints of the last 24 months ($1,151-$1,254, median ~$1,203, 8 prints), within ~1% of the Apr-26 01-05 print ($1,197) and realsmart's latest-12-sale median ($1,179); the algo's own psf_value component is 0.57 of a possible ~15",
+        "The 809 rests on age_value (-18.3% vs the age-adjusted D19 median $1,456): that gap is a permanent Hougang-1990s-stock level, not a dislocation. Regentville's median PSF has been flat since 2024 ($1,151 / $1,180 / $1,184) while the district figure is set by newer Sengkang/Punggol/Serangoon stock and $2,147 psf new launches",
+        "'Price dropped' badge is a unit_group chain (regentville|3|353), not a seller cut: the $1.40M and $1.389M entries are listing 500108967 by a different agent (Jeffrey Liew, 3 baths, still live today at $1.389M). This listing (Jeff Huang, 2 baths) first appeared 2026-09-18 with no history of its own; whether it is the same unit re-marketed or a different, possibly weaker, 2-bath unit could not be verified (PropertyGuru 403)",
+        "Floor, facing, block and bath count unverified; no researched profile. The type's 01-05 prints clear ~$1,151-$1,197 vs ~$1,203-$1,254 on 06-15, so a low floor would make this ask a small premium, not a discount. Listed 2 baths where the sibling 1,076 sqft listing shows 3 - either a different layout or agent noise",
+        "Trailing 7.59%/yr CAGR is the spent 2021-23 OCR re-rating ($784 -> $1,085 psf); the ROI table's 7.6%/yr and $1.81M 5yr exit are not a credible base case. Momentum is flat (-1.0)",
+        "realsmart: 71.6% profitable, 235 of 823 computable exits sold at a LOSS on a deep sample; REALSCORE 3.8/5 is middling and 9.2yrs average holding exceeds the 5-7yr hold underwritten here",
+        "3.8% gross / 2.3% net yield ($4,100 on 41 URA contracts; realsmart median rent $3,900, est. 3.8%) is thin carry for a 26-year-old block, and per the backtest high gross yield predicts LOWER forward price growth; count it as income only",
+        "99yr from 24/04/1996: ~69yrs now, ~62-64 at a 5-7yr exit; gradual buyer-financing compression for the next owner",
+        "No operational MRT: 920m / 11min to CR9 Serangoon North, under construction to ~2030; future-infra has no measured forward power and as-of-today MRT distance is a live negative (mrt component -3.16)",
+        "Crowded exit queue for exactly this stock: 29 Regentville listings live on PropertyGuru, at least five 3BRs in the DB at $1.32M-$1.53M and a $1.19M ask (500235682) not yet in the DB; 24-25 resales a year absorb it slowly",
+        "URA rental cache is 100 days old; rent confidence damped 0.85x"
+      ],
+      "catalysts": [
+        "OCR region, the best realized forward region in the 28-district panel (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+        "Very deep liquidity and buyer-pool depth (the one lever that survives clustering): 580 units, 1,397 lifetime transactions, $985M transacted, 27 lifetime prints of this exact 1,076 sqft type, 67% HDB buyers, >1K MOPs in town",
+        "Low $1.28M quantum in a 3BR keeps the HDB-upgrader exit pool at its widest; bed_bands verdict 'ok' on 157 rental contracts (1,050-1,150 band), so the 3BR label is real",
+        "Rosyth School 352m, Hougang Primary 507m, Xinmin Primary 584m; Hougang 1 mall next door; a durable family-demand anchor",
+        "Age 26 sits inside the 7-30yr forward-return plateau; no age discount on returns is warranted. Resident reviews (4.4/5 on 39) describe well-maintained facilities and grounds",
+        "CR9 Serangoon North (Cross Island Line) ~2030 inside the hold window; narrative, not measured edge",
+        "If floor turns out to be 06+ and the ask negotiates to ~$1.24M ($1,150 psf), that would be a real ~5% discount to the type's 24mo median and the call would move toward Buy"
+      ],
+      "as_of": {
+        "price": 1280000,
+        "psf": 1189.59,
+        "beds": 3,
+        "sqft": 1076.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.59,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.84,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "A 1,076 sqft 3BR/2ba at Regentville (D19 Hougang, 99yr from 1996, ~69yrs left) listed today at $1.28M / $1,190 psf. Against the project's OWN 1,076 sqft type (27 lifetime URA prints; 8 in the last 24 months at $1,151-$1,254 psf, median ~$1,203; last two: Dec-25 $1,225 on 06-10, Apr-26 $1,197 on 01-05) the ask is at-market, ~1% under the 24mo median and level with the latest low-floor print and realsmart's latest-12-sale median of $1,179 psf. The MMR 809 does not come from a unit discount (psf_value component 0.57): it comes from age_value (-18.3% vs the age-adjusted D19 median of $1,456, a permanent Hougang-old-stock level against Sengkang/Punggol/Serangoon newer stock, since Regentville's own median has been flat at $1,151 -> $1,180 -> $1,184 psf from 2024 to 2026) plus a trailing 7.59%/yr CAGR that is the spent 2021-23 OCR re-rating. The 'price dropped' badge is a unit_group chain: the $1.40M / $1.389M entries belong to listing 500108967 (agent Jeffrey Liew, 3 baths, still live), while this listing (agent Jeff Huang, 2 baths) first appeared 2026-09-18 with no history of its own. Floor, facing and block are undisclosed and there is no researched profile. Sound OCR fundamentals, deep liquidity, low quantum, but a fairly priced 26-year-old leasehold with no verified edge, thin carry and a middling exit record: Neutral.",
+        "rating": "Neutral",
+        "confidence": "medium",
+        "rating_rationale": "At-market, not cheap: $1,190 psf sits inside the 1,076 sqft type's own 24mo band ($1,151-$1,254, median ~$1,203, n=8) and level with the Apr-26 low-floor print, so the strongest validated forward signal (cheap-vs-peers) does not fire at unit level. The 809 score is an age-adjusted district-median artifact (Hougang old stock vs D19 new launches) stacked on trailing CAGR, both de-weighted priors. Nothing is wrong with the unit, the project or the price, which keeps it off Avoid; nothing is under-priced, which keeps it off Buy. Medium confidence: the ask itself is verifiable against a deep same-type print set, but floor/facing/bath count and whether $1.28M is a transactable ask or a bait relist are unknown (PropertyGuru unreachable in this run).",
+        "red_flags": [
+          "No unit-level discount: $1,190 psf vs the 1,076 sqft type's own prints of the last 24 months ($1,151-$1,254, median ~$1,203, 8 prints), within ~1% of the Apr-26 01-05 print ($1,197) and realsmart's latest-12-sale median ($1,179); the algo's own psf_value component is 0.57 of a possible ~15",
+          "The 809 rests on age_value (-18.3% vs the age-adjusted D19 median $1,456): that gap is a permanent Hougang-1990s-stock level, not a dislocation. Regentville's median PSF has been flat since 2024 ($1,151 / $1,180 / $1,184) while the district figure is set by newer Sengkang/Punggol/Serangoon stock and $2,147 psf new launches",
+          "'Price dropped' badge is a unit_group chain (regentville|3|353), not a seller cut: the $1.40M and $1.389M entries are listing 500108967 by a different agent (Jeffrey Liew, 3 baths, still live today at $1.389M). This listing (Jeff Huang, 2 baths) first appeared 2026-09-18 with no history of its own; whether it is the same unit re-marketed or a different, possibly weaker, 2-bath unit could not be verified (PropertyGuru 403)",
+          "Floor, facing, block and bath count unverified; no researched profile. The type's 01-05 prints clear ~$1,151-$1,197 vs ~$1,203-$1,254 on 06-15, so a low floor would make this ask a small premium, not a discount. Listed 2 baths where the sibling 1,076 sqft listing shows 3 - either a different layout or agent noise",
+          "Trailing 7.59%/yr CAGR is the spent 2021-23 OCR re-rating ($784 -> $1,085 psf); the ROI table's 7.6%/yr and $1.81M 5yr exit are not a credible base case. Momentum is flat (-1.0)",
+          "realsmart: 71.6% profitable, 235 of 823 computable exits sold at a LOSS on a deep sample; REALSCORE 3.8/5 is middling and 9.2yrs average holding exceeds the 5-7yr hold underwritten here",
+          "3.8% gross / 2.3% net yield ($4,100 on 41 URA contracts; realsmart median rent $3,900, est. 3.8%) is thin carry for a 26-year-old block, and per the backtest high gross yield predicts LOWER forward price growth; count it as income only",
+          "99yr from 24/04/1996: ~69yrs now, ~62-64 at a 5-7yr exit; gradual buyer-financing compression for the next owner",
+          "No operational MRT: 920m / 11min to CR9 Serangoon North, under construction to ~2030; future-infra has no measured forward power and as-of-today MRT distance is a live negative (mrt component -3.16)",
+          "Crowded exit queue for exactly this stock: 29 Regentville listings live on PropertyGuru, at least five 3BRs in the DB at $1.32M-$1.53M and a $1.19M ask (500235682) not yet in the DB; 24-25 resales a year absorb it slowly",
+          "URA rental cache is 100 days old; rent confidence damped 0.85x"
+        ],
+        "catalysts": [
+          "OCR region, the best realized forward region in the 28-district panel (+3.7%/yr vs RCR +3.1%, CCR +1.9%)",
+          "Very deep liquidity and buyer-pool depth (the one lever that survives clustering): 580 units, 1,397 lifetime transactions, $985M transacted, 27 lifetime prints of this exact 1,076 sqft type, 67% HDB buyers, >1K MOPs in town",
+          "Low $1.28M quantum in a 3BR keeps the HDB-upgrader exit pool at its widest; bed_bands verdict 'ok' on 157 rental contracts (1,050-1,150 band), so the 3BR label is real",
+          "Rosyth School 352m, Hougang Primary 507m, Xinmin Primary 584m; Hougang 1 mall next door; a durable family-demand anchor",
+          "Age 26 sits inside the 7-30yr forward-return plateau; no age discount on returns is warranted. Resident reviews (4.4/5 on 39) describe well-maintained facilities and grounds",
+          "CR9 Serangoon North (Cross Island Line) ~2030 inside the hold window; narrative, not measured edge",
+          "If floor turns out to be 06+ and the ask negotiates to ~$1.24M ($1,150 psf), that would be a real ~5% discount to the type's 24mo median and the call would move toward Buy"
+        ],
+        "rental_assessment": "$4,100/mo from 41 URA 3BR contracts in 12 months (confidence 0.81, damped for a 100-day-old cache); realsmart shows a $3,900 latest-12 median and 3.8% est. yield on 46 contracts in 6 months. Gross 3.8% / net ~2.3%. Real and well-evidenced, but carry only.",
+        "appreciation_assessment": "Trailing 7.59%/yr (131 URA prints) is entirely the 2021-23 re-rating; project median PSF has been flat 2024-26. Use the OCR baseline (~3.7%/yr realized forward, config 2.8) as the base case, not the trailing figure. Unit is at-market against its own type, so no re-rating cushion.",
+        "stack_notes": "No profile for Regentville; stack/block/floor/facing undisclosed. 5 towers, 15 storeys. The 1,076 sqft type shows a clear floor ladder in URA (01-05 ~$1,150-$1,197 vs 06-15 ~$1,203-$1,254 over 24mo), so the floor is the single fact that decides whether $1,190 psf is a small discount or a small premium.",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR realized forward baseline (28-district backtest); trailing 7.59% is a spent regime re-rating with flat 2024-26 project median",
+        "realscore": 3.8,
+        "realsmart_pct_profitable": 71.6,
+        "realsmart_annual_return_pct": 4.7,
+        "realsmart_note": "realsmart.sg/p/regentville, data through 4 Sep 2026: REALSCORE 3.8, 71.6% profitable = 588 profitable / 235 unprofitable (823 computable exits), 164 exits >6% annualized, avg holding 9.2yrs, avg annualized profit past 1y 4.7%, total transactions 1,397. The '100% Profitable' highlights badge is the past-year badge, not the lifetime figure."
+      },
+      "source": {
+        "run_dir": "output/run_097_500267717",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-regentville-500267717",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
