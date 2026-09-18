@@ -272,6 +272,92 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-60011979",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-18",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The same 1,012 sqft 3BR Premium unit at FLO Residence (Punggol, D19, 99yr from Dec-2011, block 5) that was judged Neutral in Jun and Jul 2026 - now on its third agent and third price: $1.60M (Jun) -> $1.55M (Jul) -> $1.48M / $1,462 psf (18 Sep). The two earlier objections are resolved: the ask is no longer a project record - it sits exactly at the median of the last five same-size (1,012 sqft) URA prints ($1.42M Oct-25, $1.43M Nov-25, $1.48M Jan-26, $1.52M Feb-26, $1.56M Jul-26) and ~5% under the latest one. But at-median is fair, not cheap: no margin of safety, carry is thin (3.4% gross / ~2.1% net), the unit's floor and facing are undisclosed in a project with documented traffic-noise complaints, and the 817 score carries ~90 points of LRT-counted-as-MRT credit. Downside record is deep and real: REALSCORE 3.8, 98.2% of 274 matched resale pairs profitable, avg 5.4%/yr over a 7.5yr hold.",
+      "rating_rationale": "Fairly priced, not cheap. After two cuts the ask lands on the 12-month median of FLO's own 1,012 sqft prints and ~5% below the Jul-2026 high of $1.56M - a reasonable entry into the project's most liquid unit type (160 identical Premium 3BRs), with an unusually deep no-loss record (98.2% of 274 resale pairs). What stops this being a Buy: (1) at-median pricing offers no margin of safety in a project whose repricing is decelerating (2026 median psf +5% vs 2025, momentum -0.58) and whose trailing 8.2% CAGR is a de-weighted signal; (2) net carry ~2.1% on $4,200/mo against 160 identical rental competitors; (3) floor and facing unknown, with a documented 'unbearable traffic noise' review in this project and no stack profile; (4) the 817 score overstates the case - Coral Edge is an LRT, the nearest MRT is Punggol NEL ~1.9km, so the honest score is ~725. A mid/high floor away from Punggol Field, negotiated to ~$1.43-1.45M (the Oct/Nov-2025 prints), would tip this to Buy.",
+      "red_flags": [
+        "No margin of safety: $1,480,000 is the median, not the bottom, of the last five same-size 1,012 sqft URA prints ($1.42M-$1.56M, Oct-25 to Jul-26); relative_value's -5.6% vs the age-adjusted D19 median is the Serangoon/Kovan geography artifact, not Punggol value",
+        "MRT credit is wrong in the scored record: nearest_mrt_distance_m=360 is Coral Edge PE3, an LRT (DB mrt_info states it verbatim); nearest MRT is Punggol NEL ~1.9km. MMR mrt +4.62 should be roughly -8.7, taking score_1000 from 817 to ~725 - still above the 650 gate, but the headline overstates it",
+        "Floor level and facing undisclosed; no stack profile for FLO Residence (status not_researched). Block 5 of 7 blocks (1-13 Punggol Field Walk); EdgeProp carries a resident review: 'traffic noise is unbearable, we ended up closing windows & balcony door all the time' - facing is a material, unverified risk",
+        "Thin carry: $4,200/mo (DB, ura_project_bed, 58 contracts) matches Apr-2026 URA contracts for 1,000-1,100 sqft 3BRs ($4,200-$4,600, median ~$4,350) so the rent is fair, but gross is only 3.4% and net ~2.1%; 3BR rents have been flat since 2023 ($4,300 -> $4,150 -> $4,100 -> $4,200 medians)",
+        "Heavy identical supply on both exit and rent: 160 Premium 3BRs of exactly 1,012 sqft plus 132 standard 3BRs (926-1,044 sqft) in one 530-unit block; 19+ units listed for sale project-wide, four 3BRs in the DB alone",
+        "Marketing history: same unit_group listed 07-Jun-2026 at $1.60M (Ainsley Chong), relisted 28-Jul at $1.55M (JJ Ivan Lim), relisted 18-Sep at $1.48M (Eric Liew) - three agents, -7.5% in 3 months, still unsold; the market has cleared the same size at $1.56M in July, so the discount may reflect the unit (floor/facing) rather than the seller",
+        "Trailing appreciation is decelerating and de-weighted: project median psf $1,002 (2021) -> $1,136 -> $1,246 -> $1,314 -> $1,412 -> $1,474 (Aug-26 realsmart), i.e. +4-5% in the latest year; the 8.23% 5yr CAGR feeding appreciation +12.69 is the 2021-26 Punggol repricing, not a forward rate",
+        "Local URA sale file last refreshed 2 Jun 2026 (prints end Feb-26); the Mar-Aug 2026 prints used here come from realsmart's page, not the repo's comp source"
+      ],
+      "catalysts": [
+        "Ask now inside the project's own print range: $1,480,000 / $1,462 psf vs 1,012 sqft prints of $1,520,000 (Feb-26) and $1,560,000 / $1,542 psf (17-Jul-2026); ~5% under the latest same-size print and at the 12-month median - the first time this unit has been offered at, rather than above, its cohort",
+        "Deep downside evidence: REALSCORE 3.8/5, 98.2% profitable across 274 matched resale pairs (269 profitable, 5 unprofitable), avg holding 7.5 yrs, avg annualized profit 5.4%, 795 total transactions - far past the 150-pair trust threshold. Backward-looking, but nobody entering at prior cohort prices has lost money here",
+        "Most liquid unit type in the project: 1,012 sqft Premium 3BR (160 units) prints several times a year (5 in the last 12 months alone); psf_cohort_txns=13 is a real comp base, and bed_bands confirms 3BR at 1,012 sqft is 'ok' (band 950-1,150 on 157 rental contracts)",
+        "OCR / D19 is the strongest forward region in the backtest (realized fwd OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%); buyer_pool very_deep; $1.48M quantum sits squarely in the HDB-upgrader band",
+        "86 years of lease remaining - no lease-decay drag over a 5-7yr hold; project age 10yr sits inside the 7-30yr return plateau",
+        "Motivated seller (two cuts, three agents, 3+ months) - a $1.43-1.45M negotiated price would match the Oct/Nov-2025 prints and create the margin the ask lacks",
+        "Punggol Digital District / Punggol Coast amenities support the rental catchment - narrative only, zero measured forward power"
+      ],
+      "as_of": {
+        "price": 1480000,
+        "psf": 1462.45,
+        "beds": 3,
+        "sqft": 1012.0
+      },
+      "key_facts": {
+        "appreciation_pct": 8.23,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.41,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 86
+      },
+      "agent_evaluation": {
+        "summary": "The same 1,012 sqft 3BR Premium unit at FLO Residence (Punggol, D19, 99yr from Dec-2011, block 5) that was judged Neutral in Jun and Jul 2026 - now on its third agent and third price: $1.60M (Jun) -> $1.55M (Jul) -> $1.48M / $1,462 psf (18 Sep). The two earlier objections are resolved: the ask is no longer a project record - it sits exactly at the median of the last five same-size (1,012 sqft) URA prints ($1.42M Oct-25, $1.43M Nov-25, $1.48M Jan-26, $1.52M Feb-26, $1.56M Jul-26) and ~5% under the latest one. But at-median is fair, not cheap: no margin of safety, carry is thin (3.4% gross / ~2.1% net), the unit's floor and facing are undisclosed in a project with documented traffic-noise complaints, and the 817 score carries ~90 points of LRT-counted-as-MRT credit. Downside record is deep and real: REALSCORE 3.8, 98.2% of 274 matched resale pairs profitable, avg 5.4%/yr over a 7.5yr hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Fairly priced, not cheap. After two cuts the ask lands on the 12-month median of FLO's own 1,012 sqft prints and ~5% below the Jul-2026 high of $1.56M - a reasonable entry into the project's most liquid unit type (160 identical Premium 3BRs), with an unusually deep no-loss record (98.2% of 274 resale pairs). What stops this being a Buy: (1) at-median pricing offers no margin of safety in a project whose repricing is decelerating (2026 median psf +5% vs 2025, momentum -0.58) and whose trailing 8.2% CAGR is a de-weighted signal; (2) net carry ~2.1% on $4,200/mo against 160 identical rental competitors; (3) floor and facing unknown, with a documented 'unbearable traffic noise' review in this project and no stack profile; (4) the 817 score overstates the case - Coral Edge is an LRT, the nearest MRT is Punggol NEL ~1.9km, so the honest score is ~725. A mid/high floor away from Punggol Field, negotiated to ~$1.43-1.45M (the Oct/Nov-2025 prints), would tip this to Buy.",
+        "red_flags": [
+          "No margin of safety: $1,480,000 is the median, not the bottom, of the last five same-size 1,012 sqft URA prints ($1.42M-$1.56M, Oct-25 to Jul-26); relative_value's -5.6% vs the age-adjusted D19 median is the Serangoon/Kovan geography artifact, not Punggol value",
+          "MRT credit is wrong in the scored record: nearest_mrt_distance_m=360 is Coral Edge PE3, an LRT (DB mrt_info states it verbatim); nearest MRT is Punggol NEL ~1.9km. MMR mrt +4.62 should be roughly -8.7, taking score_1000 from 817 to ~725 - still above the 650 gate, but the headline overstates it",
+          "Floor level and facing undisclosed; no stack profile for FLO Residence (status not_researched). Block 5 of 7 blocks (1-13 Punggol Field Walk); EdgeProp carries a resident review: 'traffic noise is unbearable, we ended up closing windows & balcony door all the time' - facing is a material, unverified risk",
+          "Thin carry: $4,200/mo (DB, ura_project_bed, 58 contracts) matches Apr-2026 URA contracts for 1,000-1,100 sqft 3BRs ($4,200-$4,600, median ~$4,350) so the rent is fair, but gross is only 3.4% and net ~2.1%; 3BR rents have been flat since 2023 ($4,300 -> $4,150 -> $4,100 -> $4,200 medians)",
+          "Heavy identical supply on both exit and rent: 160 Premium 3BRs of exactly 1,012 sqft plus 132 standard 3BRs (926-1,044 sqft) in one 530-unit block; 19+ units listed for sale project-wide, four 3BRs in the DB alone",
+          "Marketing history: same unit_group listed 07-Jun-2026 at $1.60M (Ainsley Chong), relisted 28-Jul at $1.55M (JJ Ivan Lim), relisted 18-Sep at $1.48M (Eric Liew) - three agents, -7.5% in 3 months, still unsold; the market has cleared the same size at $1.56M in July, so the discount may reflect the unit (floor/facing) rather than the seller",
+          "Trailing appreciation is decelerating and de-weighted: project median psf $1,002 (2021) -> $1,136 -> $1,246 -> $1,314 -> $1,412 -> $1,474 (Aug-26 realsmart), i.e. +4-5% in the latest year; the 8.23% 5yr CAGR feeding appreciation +12.69 is the 2021-26 Punggol repricing, not a forward rate",
+          "Local URA sale file last refreshed 2 Jun 2026 (prints end Feb-26); the Mar-Aug 2026 prints used here come from realsmart's page, not the repo's comp source"
+        ],
+        "catalysts": [
+          "Ask now inside the project's own print range: $1,480,000 / $1,462 psf vs 1,012 sqft prints of $1,520,000 (Feb-26) and $1,560,000 / $1,542 psf (17-Jul-2026); ~5% under the latest same-size print and at the 12-month median - the first time this unit has been offered at, rather than above, its cohort",
+          "Deep downside evidence: REALSCORE 3.8/5, 98.2% profitable across 274 matched resale pairs (269 profitable, 5 unprofitable), avg holding 7.5 yrs, avg annualized profit 5.4%, 795 total transactions - far past the 150-pair trust threshold. Backward-looking, but nobody entering at prior cohort prices has lost money here",
+          "Most liquid unit type in the project: 1,012 sqft Premium 3BR (160 units) prints several times a year (5 in the last 12 months alone); psf_cohort_txns=13 is a real comp base, and bed_bands confirms 3BR at 1,012 sqft is 'ok' (band 950-1,150 on 157 rental contracts)",
+          "OCR / D19 is the strongest forward region in the backtest (realized fwd OCR +3.7%/yr vs RCR +3.1%, CCR +1.9%); buyer_pool very_deep; $1.48M quantum sits squarely in the HDB-upgrader band",
+          "86 years of lease remaining - no lease-decay drag over a 5-7yr hold; project age 10yr sits inside the 7-30yr return plateau",
+          "Motivated seller (two cuts, three agents, 3+ months) - a $1.43-1.45M negotiated price would match the Oct/Nov-2025 prints and create the margin the ask lacks",
+          "Punggol Digital District / Punggol Coast amenities support the rental catchment - narrative only, zero measured forward power"
+        ],
+        "rental_assessment": "DB rent $4,200/mo (ura_project_bed, 58 contracts, conf 0.81) is fair-to-slightly-conservative: URA 3BR contracts at 1,000-1,100 sqft commencing Apr-2026 printed $4,200-$4,600 (median ~$4,350), and realsmart's Aug-2026 tiles show 3BRs at $4,200-$4,650. Take $4,200-4,350: gross 3.4-3.5%, net ~2.1-2.2%. Rent has been flat for three years (annual 3BR medians $4,300/$4,150/$4,100/$4,200), and 160 identical Premium 3BRs compete for the same tenants - count yield as carry only.",
+        "appreciation_assessment": "The 8.23% ura_5yr_cagr is a decelerating post-2021 repricing: project median psf +13% (2022), +10% (2023), +5% (2024), +7% (2025), ~+4-5% so far in 2026; momentum -0.58. Under the repo's priors this is story, not signal. Forward: assume the OCR regional baseline (~3.5-4%/yr) rather than the trailing 8%. Value signal is neutral - at-median vs own cohort - so there is no cheap-vs-peers edge to add. The pooled CAGR is not size-mix-driven here (1,012 sqft is the dominant print size throughout).",
+        "stack_notes": "Block 5 Punggol Field Walk; floor and facing not disclosed; FLO has 7 blocks (1-13) and no researched profile. Floor is not a reliable psf premium in this cohort (fl 01-05 printed $1,482 in Jun-25 while fl 16-20 printed $1,374 in Nov-24), so a high floor cannot be assumed from the price. Verify facing (Punggol Field road vs inner/park side) before offering - a resident review reports severe traffic noise.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 4.0,
+        "appreciation_rate_source": "OCR regional baseline; trailing 8.23% is a decelerating 2021-26 repricing (2026 YTD ~+4-5%) and is de-weighted under current priors",
+        "realscore": 3.8,
+        "realsmart_pct_profitable": 98.2,
+        "realsmart_annual_return_pct": 5.4,
+        "realsmart_transactions": {
+          "profitable": 269,
+          "unprofitable": 5,
+          "matched_pairs": 274,
+          "total_transactions": 795,
+          "avg_holding_years": 7.5,
+          "source": "https://realsmart.sg/p/flo-residence (title confirmed 'Flo Residence'; fetched 2026-09-18 via WebFetch - realsmart_cache.py's parser returned NOT FOUND on the same page)"
+        }
+      },
+      "source": {
+        "run_dir": "output/run_096_500265514",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500265514",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
