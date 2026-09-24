@@ -266,6 +266,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-500218596",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "Mi Casa (2013, 457 units, 99yr from 2008) 1,259 sqft 3BR/3-bath asking $1,788,000 / $1,420 psf, 380m from Choa Chu Kang NS4 (future JRL interchange). The development is sound and liquid (313 resale pairs, 95.5% profitable), but this ask is above every print the project has ever made in this size band: the best 1,259 sqft prints are $1.68-1.69M ($1,334-1,340 psf, floors 06-15, Apr/Sep-25) and the latest is Jul-26 $1.62M ($1,286 psf, fl 01-05); the highest psf in the 1,237-1,370 sqft band in 24 months is $1,346 (Dec-25, fl 16-20). Fair value is ~$1.65-1.70M even on a high floor — the ask is ~$90-140k (5-8%) rich, and it was just RAISED from $1,758,888 on the prior listing id. A same-size 1,259 sqft 3BR is live in the project today at $1.638M.",
+      "rating_rationale": "Avoid at this price. $1,420 psf is +5.5% above the project's highest-ever psf for this size band ($1,346, Dec-25, fl 16-20) and +6% over the best exact-size print ($1.688M, Sep-25, fl 11-15); latest same-size print is $1.62M (Jul-26). Own-print fair value ~$1.65-1.70M, so the ask needs a $90-140k cut before it is even neutral — and the seller moved the other way (relisted from 500230458 at $1,758,888 -> $1,788,000). A 1,259 sqft 3BR is live in the same project at $1.638M. Carry is thin (2.89% gross / 1.72% net on 26 URA rental contracts), so the case is pure appreciation bought at a record entry. The 664 score_1000 is carried by liquidity/MRT/dev-size and the D23 age-adjusted median (-6.6%), which is Hillview-dominated; the algo's own project-relative psf_value is -5.63 — it agrees the unit is expensive. Good development (REALSCORE 3.4, 95.5% profitable on 313 resale pairs), wrong price. Confidence high on the price call; floor undisclosed, but even a top-floor premium does not reach $1,420 on the print record.",
+      "red_flags": [
+        "RECORD ASK: $1,420 psf exceeds every Mi Casa print in the 1,237-1,370 sqft band over 24 months (max $1,346 psf, Dec-25 1,367sf fl 16-20). psf_premium_vs_ura_median +9.4%.",
+        "Exact-size 1,259 sqft prints: Jul-26 $1.62M ($1,286, fl 01-05); Sep-25 $1.688M ($1,340, fl 11-15); May-25 $1.67M ($1,326, fl 06-10); Apr-25 $1.68M ($1,334, fl 11-15). Ask is $100-170k above them.",
+        "Seller RAISED the price: relisted from id 500230458 at $1,758,888 (2026-08-12) to $1,788,000 (listed 23 Sep 2026). Earlier price_history entries ($1.688M/$1.65M/$1.60M) are unit_group chaining from other agents' listings, not this unit.",
+        "Cheaper same-size stock live now: 23039452 (1,259 sqft 3BR) at $1.638M ($1,301 psf), plus 500207671 1,270sf at $1.688M and 500238099 1,324sf at $1.73M.",
+        "Thin carry: $4,300/mo (ura_project_bed, 26 contracts) = 2.89% gross / 1.72% net — the return rests entirely on appreciation from an above-record entry.",
+        "Tape is flat-to-soft: 2026 prints in the 3BR band $1,246-1,342 psf, latest Jul-26 at $1,286.",
+        "score_1000 664 leans on D23 age-adjusted median ($1,521) set by Hillview/Dairy Farm stock — Mi Casa is the top of the Choa Chu Kang sub-market, not a discount to D23. Project-relative psf_value is -5.63.",
+        "Floor/facing undisclosed; no profiles/ entry for Mi Casa."
+      ],
+      "catalysts": [
+        "380m to Choa Chu Kang NS4/BP1, which becomes a JRL interchange (JS1) — delayed to mid-2028, largely priced in; future-infra has no measured forward power.",
+        "OCR — strongest measured forward region in the panel (+3.7%/yr realized).",
+        "Deep, proven exit market: 313 resale pairs, 95.5% profitable, 457 units, deep HDB-upgrader quantum band.",
+        "83 years of lease remaining — no decay drag in a 5-7yr hold."
+      ],
+      "as_of": {
+        "price": 1788000,
+        "psf": 1420.17,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.18,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.89,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 83
+      },
+      "agent_evaluation": {
+        "summary": "Mi Casa (2013, 457 units, 99yr from 2008) 1,259 sqft 3BR/3-bath asking $1,788,000 / $1,420 psf, 380m from Choa Chu Kang NS4 (future JRL interchange). The development is sound and liquid (313 resale pairs, 95.5% profitable), but this ask is above every print the project has ever made in this size band: the best 1,259 sqft prints are $1.68-1.69M ($1,334-1,340 psf, floors 06-15, Apr/Sep-25) and the latest is Jul-26 $1.62M ($1,286 psf, fl 01-05); the highest psf in the 1,237-1,370 sqft band in 24 months is $1,346 (Dec-25, fl 16-20). Fair value is ~$1.65-1.70M even on a high floor — the ask is ~$90-140k (5-8%) rich, and it was just RAISED from $1,758,888 on the prior listing id. A same-size 1,259 sqft 3BR is live in the project today at $1.638M.",
+        "rating": "Avoid",
+        "rating_rationale": "Avoid at this price. $1,420 psf is +5.5% above the project's highest-ever psf for this size band ($1,346, Dec-25, fl 16-20) and +6% over the best exact-size print ($1.688M, Sep-25, fl 11-15); latest same-size print is $1.62M (Jul-26). Own-print fair value ~$1.65-1.70M, so the ask needs a $90-140k cut before it is even neutral — and the seller moved the other way (relisted from 500230458 at $1,758,888 -> $1,788,000). A 1,259 sqft 3BR is live in the same project at $1.638M. Carry is thin (2.89% gross / 1.72% net on 26 URA rental contracts), so the case is pure appreciation bought at a record entry. The 664 score_1000 is carried by liquidity/MRT/dev-size and the D23 age-adjusted median (-6.6%), which is Hillview-dominated; the algo's own project-relative psf_value is -5.63 — it agrees the unit is expensive. Good development (REALSCORE 3.4, 95.5% profitable on 313 resale pairs), wrong price. Confidence high on the price call; floor undisclosed, but even a top-floor premium does not reach $1,420 on the print record.",
+        "red_flags": [
+          "RECORD ASK: $1,420 psf exceeds every Mi Casa print in the 1,237-1,370 sqft band over 24 months (max $1,346 psf, Dec-25 1,367sf fl 16-20). psf_premium_vs_ura_median +9.4%.",
+          "Exact-size 1,259 sqft prints: Jul-26 $1.62M ($1,286, fl 01-05); Sep-25 $1.688M ($1,340, fl 11-15); May-25 $1.67M ($1,326, fl 06-10); Apr-25 $1.68M ($1,334, fl 11-15). Ask is $100-170k above them.",
+          "Seller RAISED the price: relisted from id 500230458 at $1,758,888 (2026-08-12) to $1,788,000 (listed 23 Sep 2026). Earlier price_history entries ($1.688M/$1.65M/$1.60M) are unit_group chaining from other agents' listings, not this unit.",
+          "Cheaper same-size stock live now: 23039452 (1,259 sqft 3BR) at $1.638M ($1,301 psf), plus 500207671 1,270sf at $1.688M and 500238099 1,324sf at $1.73M.",
+          "Thin carry: $4,300/mo (ura_project_bed, 26 contracts) = 2.89% gross / 1.72% net — the return rests entirely on appreciation from an above-record entry.",
+          "Tape is flat-to-soft: 2026 prints in the 3BR band $1,246-1,342 psf, latest Jul-26 at $1,286.",
+          "score_1000 664 leans on D23 age-adjusted median ($1,521) set by Hillview/Dairy Farm stock — Mi Casa is the top of the Choa Chu Kang sub-market, not a discount to D23. Project-relative psf_value is -5.63.",
+          "Floor/facing undisclosed; no profiles/ entry for Mi Casa."
+        ],
+        "catalysts": [
+          "380m to Choa Chu Kang NS4/BP1, which becomes a JRL interchange (JS1) — delayed to mid-2028, largely priced in; future-infra has no measured forward power.",
+          "OCR — strongest measured forward region in the panel (+3.7%/yr realized).",
+          "Deep, proven exit market: 313 resale pairs, 95.5% profitable, 457 units, deep HDB-upgrader quantum band.",
+          "83 years of lease remaining — no decay drag in a 5-7yr hold."
+        ],
+        "rental_assessment": "$4,300/mo from 26 URA 3BR contracts (12mo, conf 0.95) — solid evidence; 2.89% gross / 1.72% net at this ask. Carry, not a return driver.",
+        "appreciation_assessment": "URA 5yr CAGR 5.18% (62 txns) is trailing and already realized (project median +38% vs 2019); momentum -1.0. At a record entry psf, the first years of any appreciation are spent catching the price up to where the ask already is. No override.",
+        "stack_notes": "Floor not disclosed; bed band check 'ok' (1,250-1,350 sqft band, 83 contracts) — a genuine 3BR. Even the best-floor comparable prints ($1,340-1,346 psf) sit well under the ask.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.4,
+        "realsmart_pct_profitable": 95.5,
+        "realsmart_annual_return_pct": 4.2
+      },
+      "source": {
+        "run_dir": "output/run_112_500229342",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-mi-casa-500229342",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
