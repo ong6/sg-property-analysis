@@ -1,0 +1,77 @@
+{
+  "condo": "Elias Green",
+  "slug": "elias-green",
+  "district": "D18",
+  "history": [
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "1,550sf 3BR at Elias Green (Pasir Ris, D18 OCR; TOP 1992, 99LH from 1991 → ~64yr left, 419 units on a 517k sf site) asking $1.56M / $1,006psf. The ask sits at the top of this project's own same-size prints (May-26 $1.55M 1,550sf fl 06-10; 2026 1,528sf prints $1.47-1.55M; Aug-26 1,615sf $1.61M), so fair is about $1.50-1.55M: fairly priced, not cheap. Without a collective sale the numbers are ordinary: ~1.75% net carry, a lease down to ~57yr at a 7-yr exit, 1.3km to Pasir Ris MRT, and Elias CRL not before ~2032. The upside is a third en bloc attempt at $883M (plot ratio 1.4→1.8, gazetted MP2025), but the 2018 and 2025 attempts both failed, the 2025 one with no bids at all.",
+      "rating_rationale": "Neutral, not Buy. At $1.56M the ask is about 1-4% over fair on the project's own same-size prints (fair ~$1.50-1.55M). The −11% age-adjusted discount is mostly a lease/sub-market level, not value: the 1,550sf layout has never printed above $1.55M. As an investment it is thin: ~3.1% gross / ~1.75% net yield on URA project rents (median $4,250 on 53 contracts in the 1,500-1,600sf band), and the lease will be ~57yr at exit, which will thin the next buyer's CPF/loan pool. REALSCORE 3.0 with 80.3% profitable on 276 resale pairs (avg 4.2%/yr) is a weaker downside record than OCR peers at 85-99%. What keeps it off Avoid is that the price is fair and the en bloc option is real and free-ish: $883M over 419 units is ~$2.1M per unit on average, well above resale. That option already failed twice (2025 drew no bids), and the committee was still collecting 80% consent as of Mar-2026, so treat it as a lottery ticket, not a thesis. At ~6 near-identical $1.55-1.56M asks sitting since July, there is room to negotiate: ~$1.48-1.50M would move it toward the fair-value floor.",
+      "red_flags": [
+        "~64yr lease left (99LH from 1991), ~57yr at a 7-yr exit. CPF/loan limits start to thin the resale buyer pool, and the lease decay speeds up",
+        "Ask $1.56M sits at the top of own same-size prints (1,550sf: May-26 $1.55M, Nov-24 $1.45M, Apr-24 $1.41M; 1,528sf 2026: $1.47-1.55M; Sep-26 1,507sf $1.41M fl 01-05). Floor undisclosed",
+        "Thin carry: 3.07% gross / ~1.75% net (URA project rent ~$4,000-4,250, 40-53 contracts); the rent-sqft cap fired because 1,550sf is large for a 3BR, but the rent is corroborated by same-band URA contracts",
+        "REALSCORE 3.0 / 80.3% profitable on 276 resale pairs: about 1 in 5 owners sold at a loss",
+        "Crowded live book: ~6 near-identical 1,528-1,550sf 3BR asks at $1.55-1.56M since Jul-26, which means competing exit supply and a stale market at this price",
+        "1.28km to Pasir Ris EWL MRT today; Elias CRL station only ~2032, near the end of the hold",
+        "En bloc has failed twice (2018; 2025 at $928M drew no bids). A third failure could weigh on the price"
+      ],
+      "catalysts": [
+        "Third collective sale attempt at $883M guide (ERA; ~$2.1M/unit average vs $1.5M resale). Plot ratio raised 1.4→1.8 under MP2025 adds ~207k sf GFA. Consent was still being collected as of Mar-2026",
+        "Elias CRL station (~2032) plus Pasir Ris/Tampines North growth; Pasir Ris 8 / Pasir Ris Central regeneration",
+        "Large 517k sf low-density site: 1,500sf+ 3BRs at ~$1.5M are rare family space in the OCR",
+        "OCR region prior (+3.7%/yr realized fwd) and a deep 419-unit resale book (36 URA resales in ~5yrs)"
+      ],
+      "as_of": {
+        "price": 1560000,
+        "psf": 1006.45,
+        "beds": 3,
+        "sqft": 1550.0
+      },
+      "key_facts": {
+        "appreciation_pct": 3.83,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.07,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 64
+      },
+      "agent_evaluation": {
+        "summary": "1,550sf 3BR at Elias Green (Pasir Ris, D18 OCR; TOP 1992, 99LH from 1991 → ~64yr left, 419 units on a 517k sf site) asking $1.56M / $1,006psf. The ask sits at the top of this project's own same-size prints (May-26 $1.55M 1,550sf fl 06-10; 2026 1,528sf prints $1.47-1.55M; Aug-26 1,615sf $1.61M), so fair is about $1.50-1.55M: fairly priced, not cheap. Without a collective sale the numbers are ordinary: ~1.75% net carry, a lease down to ~57yr at a 7-yr exit, 1.3km to Pasir Ris MRT, and Elias CRL not before ~2032. The upside is a third en bloc attempt at $883M (plot ratio 1.4→1.8, gazetted MP2025), but the 2018 and 2025 attempts both failed, the 2025 one with no bids at all.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, not Buy. At $1.56M the ask is about 1-4% over fair on the project's own same-size prints (fair ~$1.50-1.55M). The −11% age-adjusted discount is mostly a lease/sub-market level, not value: the 1,550sf layout has never printed above $1.55M. As an investment it is thin: ~3.1% gross / ~1.75% net yield on URA project rents (median $4,250 on 53 contracts in the 1,500-1,600sf band), and the lease will be ~57yr at exit, which will thin the next buyer's CPF/loan pool. REALSCORE 3.0 with 80.3% profitable on 276 resale pairs (avg 4.2%/yr) is a weaker downside record than OCR peers at 85-99%. What keeps it off Avoid is that the price is fair and the en bloc option is real and free-ish: $883M over 419 units is ~$2.1M per unit on average, well above resale. That option already failed twice (2025 drew no bids), and the committee was still collecting 80% consent as of Mar-2026, so treat it as a lottery ticket, not a thesis. At ~6 near-identical $1.55-1.56M asks sitting since July, there is room to negotiate: ~$1.48-1.50M would move it toward the fair-value floor.",
+        "red_flags": [
+          "~64yr lease left (99LH from 1991), ~57yr at a 7-yr exit. CPF/loan limits start to thin the resale buyer pool, and the lease decay speeds up",
+          "Ask $1.56M sits at the top of own same-size prints (1,550sf: May-26 $1.55M, Nov-24 $1.45M, Apr-24 $1.41M; 1,528sf 2026: $1.47-1.55M; Sep-26 1,507sf $1.41M fl 01-05). Floor undisclosed",
+          "Thin carry: 3.07% gross / ~1.75% net (URA project rent ~$4,000-4,250, 40-53 contracts); the rent-sqft cap fired because 1,550sf is large for a 3BR, but the rent is corroborated by same-band URA contracts",
+          "REALSCORE 3.0 / 80.3% profitable on 276 resale pairs: about 1 in 5 owners sold at a loss",
+          "Crowded live book: ~6 near-identical 1,528-1,550sf 3BR asks at $1.55-1.56M since Jul-26, which means competing exit supply and a stale market at this price",
+          "1.28km to Pasir Ris EWL MRT today; Elias CRL station only ~2032, near the end of the hold",
+          "En bloc has failed twice (2018; 2025 at $928M drew no bids). A third failure could weigh on the price"
+        ],
+        "catalysts": [
+          "Third collective sale attempt at $883M guide (ERA; ~$2.1M/unit average vs $1.5M resale). Plot ratio raised 1.4→1.8 under MP2025 adds ~207k sf GFA. Consent was still being collected as of Mar-2026",
+          "Elias CRL station (~2032) plus Pasir Ris/Tampines North growth; Pasir Ris 8 / Pasir Ris Central regeneration",
+          "Large 517k sf low-density site: 1,500sf+ 3BRs at ~$1.5M are rare family space in the OCR",
+          "OCR region prior (+3.7%/yr realized fwd) and a deep 419-unit resale book (36 URA resales in ~5yrs)"
+        ],
+        "rental_assessment": "URA project rents for the 1,500-1,600sf band over 2025-26: median $4,250 (53 contracts, $1,550-5,800). The algo's $3,996 (capped) is slightly conservative. Gross ~3.1-3.3%, net ~1.75-2%. That is carry, not a return engine.",
+        "appreciation_assessment": "URA 5yr CAGR 3.83% on 36 txns (1,550sf layout: $1.26M Sep-21 → $1.55M May-26, ~4.5%/yr) partly reflects en bloc speculation around the 2025 attempt. Momentum is −0.37. On the de-weighted trailing-return prior and a shrinking lease, expect ~2-3%/yr excluding en bloc. The en bloc is a binary upside, not a base case.",
+        "stack_notes": "No profile. Floor level undisclosed on the listing. At this size the 06-10 and 11-15 floors printed the highest ($1.50-1.55M); a 01-05 unit at this ask would be overpriced (Sep-26 1,507sf fl 01-05 cleared $1.41M).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.0,
+        "realsmart_pct_profitable": 80.3,
+        "realsmart_annual_return_pct": 4.2
+      },
+      "source": {
+        "run_dir": "output/run_114_60094842",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-elias-green-60094842",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

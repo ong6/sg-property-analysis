@@ -1558,9 +1558,9 @@
     "the-jade": {
       "condo": "The Jade",
       "district": "D23",
-      "latest_rating": "Neutral",
-      "latest_date": "2026-06-08",
-      "eval_count": 1
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-24",
+      "eval_count": 2
     },
     "rezi-26": {
       "condo": "Rezi 26",
@@ -2709,6 +2709,13 @@
       "latest_rating": "Neutral",
       "latest_date": "2026-06-15",
       "eval_count": 2
+    },
+    "elias-green": {
+      "condo": "Elias Green",
+      "district": "D18",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-09-24",
+      "eval_count": 1
     },
     "nadia-mansions": {
       "condo": "Nadia Mansions",

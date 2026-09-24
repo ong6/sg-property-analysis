@@ -56,6 +56,76 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-jade-25213043",
         "review_file": "cov_batch_19.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "A 1,475sf 3BR+study at The Jade (Sim Lian, 2004, 280 units, 1 block, 99yr from 2001 — 74yr left) 160m from Bukit Batok MRT, asking $2.40M / $1,627psf. The exact layout has 9 URA resales; the 2025-26 prints are $1.99M-$2.20M ($1,349-$1,492psf), the best being $2.20M (fl 11-15, Mar-26). The ask is ~9% above the highest-ever print for this layout and ~13% above the project's typical — and an identical 1,475sf unit is live on PropertyGuru right now at $2.25M. Even the bigger 1,615sf unit on fl 26-30 sold for only $2.38M (Oct-25). Rent here is ~$5.1-5.6k, which is 1.5% net. There's no discount, no carry, and a shortening lease.",
+      "rating_rationale": "The price is the problem. $2.40M ($1,627psf) is above every print for this exact 1,475sf layout: 2025-26 resales were $1.99M, $2.12M and $2.20M ($1,349-$1,492psf), so fair value from its own prints is ~$2.10-2.25M depending on floor. That is 7-12% below the ask. A same-size unit is listed at $2.25M right now, and a larger 1,615sf high-floor unit sold for $2.38M in Oct-25. The 'price raised' history ($2.25M→$2.40M) is the unit-group artifact: that chain pools several agents' listings of the same size, not one seller raising the price. The project's fundamentals are fine but not strong enough to excuse overpaying. It is OCR and 160m from Bukit Batok MRT/West Mall, with a deep, profitable resale record (REALSCORE 3.2, 88.5% of 282 resale pairs profitable, ~4.5%/yr). Against that: net yield is 1.5%, the lease is 74yr (~67 at exit, which erodes the CPF/financing buyer pool), and the building is a 22-year-old single block. score_1000 419 agrees, driven by age_value −15, psf_value −5.5 and yield −6. The mandate fits (hers, ≈$2.5M, 3-4BR). At ≤$2.15M (≈$1,460psf, in line with the Mar-26 print) this would be a Neutral. At $2.40M it is an Avoid.",
+      "red_flags": [
+        "Ask $1,627psf is above every URA print for the 1,475sf layout (max $1,492psf / $2.20M, Mar-26); own-print fair ~$2.10-2.25M",
+        "Identical 1,475sf unit live at $2.25M (listing 500101338) — this ask is $150k above a direct substitute",
+        "Larger 1,615sf fl 26-30 unit sold at only $2.38M (Oct-25) — the ask prices a smaller unit above it",
+        "Net yield ~1.5% ($5.1-5.6k rent on 20 recent 3BR contracts) — negative carry vs financing",
+        "99yr from 2001: 74yr left, ~67yr at a 7yr exit — shrinking financing/CPF buyer pool",
+        "Floor level unknown (not in listing feed) — can't justify premium on floor either",
+        "22-year-old single-block building; maintenance/sinking-fund exposure"
+      ],
+      "catalysts": [
+        "160m to Bukit Batok MRT (NSL) + West Mall — top-tier transit convenience in D23",
+        "Deep, liquid resale book: 40 URA txns 5yr, 282 realsmart resale pairs, 88.5% profitable",
+        "Tengah / Jurong Lake District growth nearby; JRL at ~1.9km (weak, unmeasured signal)",
+        "Negotiation room: the $2.25M sibling listing suggests sellers will come down"
+      ],
+      "as_of": {
+        "price": 2400000,
+        "psf": 1627.12,
+        "beds": 3,
+        "sqft": 1475.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.44,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.55,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "A 1,475sf 3BR+study at The Jade (Sim Lian, 2004, 280 units, 1 block, 99yr from 2001 — 74yr left) 160m from Bukit Batok MRT, asking $2.40M / $1,627psf. The exact layout has 9 URA resales; the 2025-26 prints are $1.99M-$2.20M ($1,349-$1,492psf), the best being $2.20M (fl 11-15, Mar-26). The ask is ~9% above the highest-ever print for this layout and ~13% above the project's typical — and an identical 1,475sf unit is live on PropertyGuru right now at $2.25M. Even the bigger 1,615sf unit on fl 26-30 sold for only $2.38M (Oct-25). Rent here is ~$5.1-5.6k, which is 1.5% net. There's no discount, no carry, and a shortening lease.",
+        "rating": "Avoid",
+        "rating_rationale": "The price is the problem. $2.40M ($1,627psf) is above every print for this exact 1,475sf layout: 2025-26 resales were $1.99M, $2.12M and $2.20M ($1,349-$1,492psf), so fair value from its own prints is ~$2.10-2.25M depending on floor. That is 7-12% below the ask. A same-size unit is listed at $2.25M right now, and a larger 1,615sf high-floor unit sold for $2.38M in Oct-25. The 'price raised' history ($2.25M→$2.40M) is the unit-group artifact: that chain pools several agents' listings of the same size, not one seller raising the price. The project's fundamentals are fine but not strong enough to excuse overpaying. It is OCR and 160m from Bukit Batok MRT/West Mall, with a deep, profitable resale record (REALSCORE 3.2, 88.5% of 282 resale pairs profitable, ~4.5%/yr). Against that: net yield is 1.5%, the lease is 74yr (~67 at exit, which erodes the CPF/financing buyer pool), and the building is a 22-year-old single block. score_1000 419 agrees, driven by age_value −15, psf_value −5.5 and yield −6. The mandate fits (hers, ≈$2.5M, 3-4BR). At ≤$2.15M (≈$1,460psf, in line with the Mar-26 print) this would be a Neutral. At $2.40M it is an Avoid.",
+        "red_flags": [
+          "Ask $1,627psf is above every URA print for the 1,475sf layout (max $1,492psf / $2.20M, Mar-26); own-print fair ~$2.10-2.25M",
+          "Identical 1,475sf unit live at $2.25M (listing 500101338) — this ask is $150k above a direct substitute",
+          "Larger 1,615sf fl 26-30 unit sold at only $2.38M (Oct-25) — the ask prices a smaller unit above it",
+          "Net yield ~1.5% ($5.1-5.6k rent on 20 recent 3BR contracts) — negative carry vs financing",
+          "99yr from 2001: 74yr left, ~67yr at a 7yr exit — shrinking financing/CPF buyer pool",
+          "Floor level unknown (not in listing feed) — can't justify premium on floor either",
+          "22-year-old single-block building; maintenance/sinking-fund exposure"
+        ],
+        "catalysts": [
+          "160m to Bukit Batok MRT (NSL) + West Mall — top-tier transit convenience in D23",
+          "Deep, liquid resale book: 40 URA txns 5yr, 282 realsmart resale pairs, 88.5% profitable",
+          "Tengah / Jurong Lake District growth nearby; JRL at ~1.9km (weak, unmeasured signal)",
+          "Negotiation room: the $2.25M sibling listing suggests sellers will come down"
+        ],
+        "rental_assessment": "URA 3BR contracts at The Jade (1,300-1,400sf band, 2025-26) cluster $4.9k-$5.9k; $5,100 estimate is fair, a 1,475sf 3BR+study might fetch ~$5.3-5.6k. Gross ~2.6-2.8%, net ~1.5% — carry only, no investment case from yield.",
+        "appreciation_assessment": "The 1,475sf layout printed $1,104-1,226psf in 2022 and $1,349-1,492psf in 2025-26, so it has risen ~5%/yr, in line with the ura_5yr_cagr of 5.44%. That is trailing, bull-regime momentum, and the model gives it no forward weight. The forward drivers are neutral-to-negative. Buying above its own prints means the first 7-12% of any appreciation just gets back to fair value, and the lease drops below 70yr during the hold. Expect roughly market-rate growth at best from fair value, less from this ask.",
+        "stack_notes": "No profile; floor level not published by the listing. Project is a single 280-unit block (Sim Lian, Design Link Architects), 16 layouts 1,011-3,881sf; the 1,475sf type is the 3BR+study. Recent prints show floor premia are modest (fl 06-10 $1,349-1,438psf vs fl 11-15 $1,492psf) — no floor plausibly supports $1,627psf.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.2,
+        "realsmart_pct_profitable": 88.5,
+        "realsmart_annual_return_pct": 4.5
+      },
+      "source": {
+        "run_dir": "output/run_116_500147053",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-jade-500147053",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
