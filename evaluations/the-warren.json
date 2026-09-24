@@ -132,6 +132,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-warren-500098869",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A ground-floor 1,281 sqft 3BR at The Warren (D23 Choa Chu Kang, 99yr from Jun-2001, ~74yrs left, 699 units, ~190m to Choa Chu Kang NS4/BP1, future JRL JS1) asking $1.4888M / $1,162 psf. The price is honest and roughly fair, not a discount: the project's 2026 floor 01-05 3BR prints cleared at $1.41-1.54M ($1,170-1,244 psf; Aug-26 1,206sf $1.41M, Apr-26 1,227sf $1.45M, Jul-26 1,227sf $1.518M, May-26 1,238sf $1.54M), so this ask sits at the low-floor median quantum and ~2-4% under the low-floor psf median — about what a true ground-floor position (vs floors 2-5) should cost. The 1,281sf is not a standard URA size here (no 119sqm prints; the tower 3BRs are 1,206-1,259sf) — likely a 1,238sf layout plus a small patio, which on core area is ~$1,200 psf, i.e. at market. Live mid-floor 3BRs of 1,216-1,313sf ask $1.55-1.60M, so the $60-110k gap is the floor, not a mispricing.",
+      "rating_rationale": "Fairly priced ground-floor unit in a sound, liquid project — no value edge to justify a Buy. The ask equals the project's own 2026 low-floor 3BR prints ($1.41-1.54M, median ~$1.48M) once the ground-floor position and the probable patio in the 1,281sf are accounted for; the -13% vs age-adjusted D23 median that drives the 771 score (age_value 9.95) is mostly the permanent Choa Chu Kang vs Hillview/Bukit Batok sub-market level, not a dislocation. Carry is thin (3.4% gross / ~2.0% net on a rent that has been flat at ~$4,200 since 2023), the lease is 74yrs (~68 at exit) on 2004 stock, and the exit record is decent but not strong: REALSCORE 3.5, 87.3% profitable on 661 resale pairs (i.e. ~1 in 8 resales lost money), avg 4.5%/yr. Good liquidity and OCR region keep it out of Avoid; the lack of any below-print entry keeps it out of Buy. A buyer who wants The Warren should negotiate toward ~$1.43-1.45M (the Aug-26 $1.41M low-floor print scaled for size) or prefer a mid-floor unit near its $1.55M print level.",
+      "red_flags": [
+        "Ground floor: the ~4-7% gap to live 1,216-1,313sf asks ($1.55-1.60M) is the floor discount, not value — ground-floor units carry privacy/noise/security drag and a thinner resale pool than mid floors.",
+        "1,281sf is not a standard printed size at The Warren (no 119sqm URA prints; tower 3BRs are 1,206-1,259sf) — likely includes a patio/PES; on a ~1,238sf core the ask is ~$1,200psf, i.e. at the low-floor print level. Verify strata area and layout at viewing.",
+        "score_1000 771 is inflated by age_value 9.95 (-13% vs age-adjusted D23 median): D23 is bifurcated and Choa Chu Kang sits permanently below Hillview — a location level, not cheapness. Own-project comparison shows ~-2% (psf_premium_vs_ura_median -2.0%).",
+        "Exit record middling: REALSCORE 3.5, 87.3% profitable on 661 matched resale pairs — ~13% of resales lost money, weaker than peer OCR projects (e.g. The Quartz 97.3%, Caspian 98.4%).",
+        "Thin carry: $4,250 est. rent (40 URA contracts, realsmart median $4,200) = 3.43% gross / 2.03% net; 3BR rents flat since 2023 while prices rose.",
+        "99yr lease from Jun-2001: ~74yrs left, ~68 at a 5-7yr exit; 22-year-old building — maintenance/sinking-fund levy risk.",
+        "Project momentum -0.57 (decelerating); trailing 4.6% CAGR is story, not forward signal."
+      ],
+      "catalysts": [
+        "Very deep liquidity: 699 units, 92 URA prints in 5 years, ~20 3BR low-floor/mid-floor prints in 24 months — easy to price and to exit.",
+        "~190m to Choa Chu Kang NS4/BP1, which becomes a JRL interchange (JS1) — walkable MRT is a measured (modest) effect; the JRL uplift itself is narrative only (future-infra has no measured forward power).",
+        "OCR region: strongest realized forward region in the backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+        "Sub-$1.5M 3BR quantum sits in the deepest HDB-upgrader band in the west; bedroom count verified 'ok' against 214 URA 3BR rental contracts (band 1,150-1,350sf).",
+        "Listing looks honest: first seen 2026-09-24, floor disclosed, priced in line with prints — not a bait ask like the $1.40M 1,238sf listing evaluated 2026-07-29."
+      ],
+      "as_of": {
+        "price": 1488800,
+        "psf": 1162.22,
+        "beds": 3,
+        "sqft": 1281.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.6,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.43,
+        "nearest_mrt": "Choa Chu Kang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "A ground-floor 1,281 sqft 3BR at The Warren (D23 Choa Chu Kang, 99yr from Jun-2001, ~74yrs left, 699 units, ~190m to Choa Chu Kang NS4/BP1, future JRL JS1) asking $1.4888M / $1,162 psf. The price is honest and roughly fair, not a discount: the project's 2026 floor 01-05 3BR prints cleared at $1.41-1.54M ($1,170-1,244 psf; Aug-26 1,206sf $1.41M, Apr-26 1,227sf $1.45M, Jul-26 1,227sf $1.518M, May-26 1,238sf $1.54M), so this ask sits at the low-floor median quantum and ~2-4% under the low-floor psf median — about what a true ground-floor position (vs floors 2-5) should cost. The 1,281sf is not a standard URA size here (no 119sqm prints; the tower 3BRs are 1,206-1,259sf) — likely a 1,238sf layout plus a small patio, which on core area is ~$1,200 psf, i.e. at market. Live mid-floor 3BRs of 1,216-1,313sf ask $1.55-1.60M, so the $60-110k gap is the floor, not a mispricing.",
+        "rating": "Neutral",
+        "rating_rationale": "Fairly priced ground-floor unit in a sound, liquid project — no value edge to justify a Buy. The ask equals the project's own 2026 low-floor 3BR prints ($1.41-1.54M, median ~$1.48M) once the ground-floor position and the probable patio in the 1,281sf are accounted for; the -13% vs age-adjusted D23 median that drives the 771 score (age_value 9.95) is mostly the permanent Choa Chu Kang vs Hillview/Bukit Batok sub-market level, not a dislocation. Carry is thin (3.4% gross / ~2.0% net on a rent that has been flat at ~$4,200 since 2023), the lease is 74yrs (~68 at exit) on 2004 stock, and the exit record is decent but not strong: REALSCORE 3.5, 87.3% profitable on 661 resale pairs (i.e. ~1 in 8 resales lost money), avg 4.5%/yr. Good liquidity and OCR region keep it out of Avoid; the lack of any below-print entry keeps it out of Buy. A buyer who wants The Warren should negotiate toward ~$1.43-1.45M (the Aug-26 $1.41M low-floor print scaled for size) or prefer a mid-floor unit near its $1.55M print level.",
+        "red_flags": [
+          "Ground floor: the ~4-7% gap to live 1,216-1,313sf asks ($1.55-1.60M) is the floor discount, not value — ground-floor units carry privacy/noise/security drag and a thinner resale pool than mid floors.",
+          "1,281sf is not a standard printed size at The Warren (no 119sqm URA prints; tower 3BRs are 1,206-1,259sf) — likely includes a patio/PES; on a ~1,238sf core the ask is ~$1,200psf, i.e. at the low-floor print level. Verify strata area and layout at viewing.",
+          "score_1000 771 is inflated by age_value 9.95 (-13% vs age-adjusted D23 median): D23 is bifurcated and Choa Chu Kang sits permanently below Hillview — a location level, not cheapness. Own-project comparison shows ~-2% (psf_premium_vs_ura_median -2.0%).",
+          "Exit record middling: REALSCORE 3.5, 87.3% profitable on 661 matched resale pairs — ~13% of resales lost money, weaker than peer OCR projects (e.g. The Quartz 97.3%, Caspian 98.4%).",
+          "Thin carry: $4,250 est. rent (40 URA contracts, realsmart median $4,200) = 3.43% gross / 2.03% net; 3BR rents flat since 2023 while prices rose.",
+          "99yr lease from Jun-2001: ~74yrs left, ~68 at a 5-7yr exit; 22-year-old building — maintenance/sinking-fund levy risk.",
+          "Project momentum -0.57 (decelerating); trailing 4.6% CAGR is story, not forward signal."
+        ],
+        "catalysts": [
+          "Very deep liquidity: 699 units, 92 URA prints in 5 years, ~20 3BR low-floor/mid-floor prints in 24 months — easy to price and to exit.",
+          "~190m to Choa Chu Kang NS4/BP1, which becomes a JRL interchange (JS1) — walkable MRT is a measured (modest) effect; the JRL uplift itself is narrative only (future-infra has no measured forward power).",
+          "OCR region: strongest realized forward region in the backtest (+3.7%/yr vs RCR +3.1%, CCR +1.9%).",
+          "Sub-$1.5M 3BR quantum sits in the deepest HDB-upgrader band in the west; bedroom count verified 'ok' against 214 URA 3BR rental contracts (band 1,150-1,350sf).",
+          "Listing looks honest: first seen 2026-09-24, floor disclosed, priced in line with prints — not a bait ask like the $1.40M 1,238sf listing evaluated 2026-07-29."
+        ],
+        "rental_assessment": "Rent $4,250/mo from 40 URA 3BR contracts (12mo), matches realsmart median $4,200 (range $3,600-5,000). Ground floor may rent at the lower end. 3.43% gross / ~2.0% net — carry, not a return driver.",
+        "appreciation_assessment": "Trailing 4.6%/yr resale CAGR on 92 txns (resale-to-resale, not a new-launch artifact) but momentum is negative and trailing rates have ~no forward power. Use the district/OCR baseline (~3.7%) rather than the trailing rate; no override applied.",
+        "stack_notes": "No profile for The Warren; floor = Ground Floor per listing. Stack/facing unknown (PropertyGuru does not serve facing). URA '01 to 05' prints pool ground with floors 2-5, so a true ground unit should sit at or slightly below the low-floor print median — which is where this ask is.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.5,
+        "realsmart_pct_profitable": 87.3,
+        "realsmart_annual_return_pct": 4.5
+      },
+      "source": {
+        "run_dir": "output/run_110_500170049",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-warren-500170049",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
