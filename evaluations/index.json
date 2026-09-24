@@ -764,6 +764,13 @@
       "latest_date": "2026-06-08",
       "eval_count": 1
     },
+    "castle-green": {
+      "condo": "Castle Green",
+      "district": "D26",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-24",
+      "eval_count": 1
+    },
     "dunearn-house": {
       "condo": "Dunearn House",
       "district": "D11",

@@ -1,0 +1,73 @@
+{
+  "condo": "Castle Green",
+  "slug": "castle-green",
+  "district": "D26",
+  "history": [
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "1,151sf 3BR at Castle Green (1997, 99LH, ~67yr left, 664 units, D26 Yio Chu Kang Rd, ~7-min walk to Lentor TE5) asking $1.71M / $1,486psf. The same 1,152sf layout has cleared at $1.50-1.68M over the last 12 months (Aug-26 $1.629M fl 01-05, Apr-26 $1.66M fl 01-05, Mar-26 $1.60M fl 06-10, Dec-25 $1.68M fl 06-10, Nov-25 $1.50M fl 01-05), so fair is ~$1.60-1.65M and this ask is ~4-7% over it with floor undisclosed. Carry is thin (~1.9% net on $4,400/mo, 21 contracts) and the lease is ~60yr at a 7-yr exit, where CPF/loan limits start to thin the buyer pool.",
+      "rating_rationale": "Avoid at $1.71M: it's overpriced against this exact layout's own recent prints. The last five 1,152sf resales (Nov-25 to Aug-26) ran $1.50-1.68M, median ~$1.63M, and the newest is $1.629M in Aug-26. So the ask is ~$50-110k (4-7%) over fair, with floor undisclosed and no discount case to offset it. The algo flags the same thing (ask_above_own_stack_prints, +11% vs n=18 same-size prints over a longer window; score_1000 548 = market-typical). Carry doesn't compensate: 3.1% gross / ~1.9% net. Downside evidence is only middling: REALSCORE 3.9, 77.1% profitable, 6.4%/yr avg annualised on 597 resale pairs, so almost a quarter of matched resales lost money. That's a deep, real sample, not noise. The 67yr lease will be ~60yr by a 5-7yr exit, where CPF-usage and loan-quantum rules start to shrink the next buyer pool. The 7.3% ura_5yr_cagr is bull-regime trailing return (momentum −0.45 already rolling over) and is not credited forward. This would be a fair Neutral at ≤~$1.62M, in line with the Aug-26 print. Even at that price, the lease runway limits it to an average OCR hold rather than a Buy.",
+      "red_flags": [
+        "Ask ~4-7% above the last 12 months of same-layout 1,152sf prints ($1.50-1.68M; newest Aug-26 $1.629M)",
+        "~67yr lease remaining (1997 build, 29yrs old) → ~60yr at a 7yr exit; CPF/loan restrictions start to thin the resale buyer pool",
+        "REALSCORE 77.1% profitable on 597 resale pairs: ~23% of owners sold at a loss, weaker downside record than peer OCR projects (84-99%)",
+        "Thin carry: 3.1% gross / ~1.9% net yield (URA project rent $4,400, 21 contracts)",
+        "Crowded live book of same-layout 3BRs ($1.65M-$1.89M asks) means competing exit supply; floor level undisclosed",
+        "Heavy Lentor new-launch supply (Lentor Modern/Hills/Mansion etc. ~$2,200psf) competes for the same upgrader pool"
+      ],
+      "catalysts": [
+        "Lentor TE5 (Thomson-East Coast Line) is already operating ~7 min walk away. The 'future MRT' tag is stale; the connectivity is real but already priced",
+        "Lentor new-launch cluster at ~$2,200psf widens the gap to this older stock, which is some relative-value support for resale demand",
+        "Large 664-unit full-facility estate with deep resale liquidity (124 URA prints in ~5yrs; 177 3BR rental contracts)"
+      ],
+      "as_of": {
+        "price": 1710000,
+        "psf": 1485.66,
+        "beds": 3,
+        "sqft": 1151.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.34,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.09,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 67
+      },
+      "agent_evaluation": {
+        "summary": "1,151sf 3BR at Castle Green (1997, 99LH, ~67yr left, 664 units, D26 Yio Chu Kang Rd, ~7-min walk to Lentor TE5) asking $1.71M / $1,486psf. The same 1,152sf layout has cleared at $1.50-1.68M over the last 12 months (Aug-26 $1.629M fl 01-05, Apr-26 $1.66M fl 01-05, Mar-26 $1.60M fl 06-10, Dec-25 $1.68M fl 06-10, Nov-25 $1.50M fl 01-05), so fair is ~$1.60-1.65M and this ask is ~4-7% over it with floor undisclosed. Carry is thin (~1.9% net on $4,400/mo, 21 contracts) and the lease is ~60yr at a 7-yr exit, where CPF/loan limits start to thin the buyer pool.",
+        "rating": "Avoid",
+        "rating_rationale": "Avoid at $1.71M: it's overpriced against this exact layout's own recent prints. The last five 1,152sf resales (Nov-25 to Aug-26) ran $1.50-1.68M, median ~$1.63M, and the newest is $1.629M in Aug-26. So the ask is ~$50-110k (4-7%) over fair, with floor undisclosed and no discount case to offset it. The algo flags the same thing (ask_above_own_stack_prints, +11% vs n=18 same-size prints over a longer window; score_1000 548 = market-typical). Carry doesn't compensate: 3.1% gross / ~1.9% net. Downside evidence is only middling: REALSCORE 3.9, 77.1% profitable, 6.4%/yr avg annualised on 597 resale pairs, so almost a quarter of matched resales lost money. That's a deep, real sample, not noise. The 67yr lease will be ~60yr by a 5-7yr exit, where CPF-usage and loan-quantum rules start to shrink the next buyer pool. The 7.3% ura_5yr_cagr is bull-regime trailing return (momentum −0.45 already rolling over) and is not credited forward. This would be a fair Neutral at ≤~$1.62M, in line with the Aug-26 print. Even at that price, the lease runway limits it to an average OCR hold rather than a Buy.",
+        "red_flags": [
+          "Ask ~4-7% above the last 12 months of same-layout 1,152sf prints ($1.50-1.68M; newest Aug-26 $1.629M)",
+          "~67yr lease remaining (1997 build, 29yrs old) → ~60yr at a 7yr exit; CPF/loan restrictions start to thin the resale buyer pool",
+          "REALSCORE 77.1% profitable on 597 resale pairs: ~23% of owners sold at a loss, weaker downside record than peer OCR projects (84-99%)",
+          "Thin carry: 3.1% gross / ~1.9% net yield (URA project rent $4,400, 21 contracts)",
+          "Crowded live book of same-layout 3BRs ($1.65M-$1.89M asks) means competing exit supply; floor level undisclosed",
+          "Heavy Lentor new-launch supply (Lentor Modern/Hills/Mansion etc. ~$2,200psf) competes for the same upgrader pool"
+        ],
+        "catalysts": [
+          "Lentor TE5 (Thomson-East Coast Line) is already operating ~7 min walk away. The 'future MRT' tag is stale; the connectivity is real but already priced",
+          "Lentor new-launch cluster at ~$2,200psf widens the gap to this older stock, which is some relative-value support for resale demand",
+          "Large 664-unit full-facility estate with deep resale liquidity (124 URA prints in ~5yrs; 177 3BR rental contracts)"
+        ],
+        "rental_assessment": "URA project/bed rent $4,400/mo (21 contracts, conf 0.95) → 3.09% gross, ~1.86% net. Credible; counts only as carry, not appreciation.",
+        "appreciation_assessment": "Trailing ura_5yr_cagr 7.34% on 124 txns is 2021-26 bull-regime and is de-weighted; momentum −0.45 shows it cooling. Same-layout prints went ~$1.19-1.25M (2021-22) → ~$1.60-1.68M (2025-26). Forward, expect roughly the OCR baseline, reduced by lease decay as it approaches ~60yr. No rate override applied.",
+        "stack_notes": "No profile, and floor/stack are undisclosed on the listing, so a stack join is impossible. bed_bands: ok (3BR band 1,150-1,350sf, 177 contracts), so the 3BR label is honest. The 1,152sf type is the most-traded 3BR layout (20 prints).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 77.1,
+        "realsmart_annual_return_pct": 6.4
+      },
+      "source": {
+        "run_dir": "output/run_113_500271446",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-castle-green-500271446",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
