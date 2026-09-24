@@ -981,7 +981,7 @@ def run_agent(cand: dict, timeout_s: int = AI_TIMEOUT_S) -> dict:
     only the direct child can leave orphans holding the work.
     """
     os.makedirs(RUNS_DIR, exist_ok=True)
-    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")   # a same-second retry keeps its own log
     log_path = os.path.join(RUNS_DIR, f"{cand.get('slug') or cand['id']}_{stamp}.log")
     cmd = ["claude", "-p", _agent_prompt(cand), "--allowedTools", AI_ALLOWED_TOOLS]
     result = {"id": cand["id"], "log": os.path.relpath(log_path, BASE)}
@@ -1122,12 +1122,21 @@ def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> d
             # browser path report "current" while caches never got rebuilt.
             print(f"  ⚠ URA API refresh failed ({e}) — scoring on the data as it stands",
                   file=sys.stderr)
+            ages = [a for a in (_csv_age_days(os.path.join(
+                DATA_DIR, f"ura_district_D{d:02d}.csv")) for d in districts) if a is not None]
             return {"ok": False, "via": "api", "error": f"{type(e).__name__}: {e}",
-                    "oldest_days": None}
-        skipped = res.get("skipped_districts") or []
-        return {"ok": not skipped, "via": "api", "refreshed": list(districts),
+                    "oldest_days": round(max(ages)) if ages else None}
+        # "ura_district_D19.csv: ..." -> 19 (transaction files only; a skipped
+        # rental file is in the detail but doesn't make prints stale).
+        stale = sorted({int(m.group(1)) for s in res.get("skipped_districts") or []
+                        if (m := re.match(r"ura_district_D(\d+)\.csv", s))
+                        and int(m.group(1)) in districts})
+        return {"ok": not res.get("skipped_districts"), "via": "api",
+                "refreshed": [d for d in districts if d not in stale],
                 "oldest_days": 0, "detail": res,
-                **({"still_stale": skipped} if skipped else {})}
+                **({"still_stale": stale} if stale else {}),
+                **({"error": "; ".join(res["skipped_districts"])}
+                   if res.get("skipped_districts") and not stale else {})}
     else:
         print(f"  URA API unavailable ({why}) — using the browser", file=sys.stderr)
 
@@ -1385,11 +1394,7 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
     ura, enr = pf.get("ura") or {}, pf.get("enrich") or {}
     bits = []
     if ura:
-        bits.append(f"URA prints refreshed D{','.join(str(d) for d in ura['refreshed'])}"
-                    if ura.get("refreshed") else
-                    f"URA prints current (oldest {ura.get('oldest_days')}d)"
-                    if ura.get("ok") else
-                    f"⚠️ URA refresh FAILED — scored on prints {ura.get('oldest_days')}d old")
+        bits.append(_ura_line(ura))
     if enr:
         bits.append(f"pre-gate: {enr.get('enriched', 0)}/{enr.get('attempted', 0)} "
                     f"contenders detail-enriched, {enr.get('rescored', 0)} re-scored"
@@ -1466,6 +1471,24 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
         L += ["Nothing new or price-changed in scope this week.", ""]
 
     return "\n".join(L)
+
+
+def _ura_line(ura: dict) -> str:
+    """The digest's URA pre-flight line. Failure is checked FIRST: a partial
+    refresh must read as a warning, never as 'refreshed'."""
+    via = " via API" if ura.get("via") == "api" else ""
+    age = (f"{ura['oldest_days']}d old" if ura.get("oldest_days") is not None
+           else "of unknown age")
+    if not ura.get("ok"):
+        why = ura.get("error") or (
+            f"still stale: D{','.join(str(d) for d in ura['still_stale'])}"
+            if ura.get("still_stale") else "unknown")
+        done = (f"; refreshed D{','.join(str(d) for d in ura['refreshed'])}"
+                if ura.get("refreshed") else "")
+        return f"⚠️ URA refresh incomplete{via} ({why}){done} — some prints {age}"
+    if ura.get("refreshed"):
+        return f"URA prints refreshed{via} D{','.join(str(d) for d in ura['refreshed'])}"
+    return f"URA prints current (oldest {age})"
 
 
 def write_digest(day: str, text: str) -> str:

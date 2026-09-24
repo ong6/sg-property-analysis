@@ -960,3 +960,46 @@ class TestReviewFixes:
         db = {"a": _rec("a", latitude=1.3)}
         out, rep = weekly.pre_gate_enrich(rows, db, {}, 650, set(), headless=True)
         assert rep["attempted"] == 0
+
+
+class TestDigestPreflight:
+    def test_partial_api_refresh_reads_as_a_warning(self):
+        line = weekly._ura_line({"ok": False, "via": "api", "refreshed": [16, 18],
+                                 "still_stale": [19], "oldest_days": 0})
+        assert line.startswith("⚠️ URA refresh incomplete via API") and "D19" in line
+        assert "refreshed D16,18" in line
+
+    def test_api_exception_names_the_error_and_age(self):
+        line = weekly._ura_line({"ok": False, "via": "api", "error": "RuntimeError: x",
+                                 "oldest_days": None})
+        assert "RuntimeError: x" in line and "unknown age" in line and "None" not in line
+
+    def test_clean_refresh(self):
+        assert weekly._ura_line({"ok": True, "via": "api", "refreshed": [19]}) == \
+            "URA prints refreshed via API D19"
+
+    def test_api_skip_maps_back_to_district_numbers(self, monkeypatch):
+        import ura_api
+        monkeypatch.setattr(ura_api, "available", lambda: (True, ""))
+        monkeypatch.setattr(ura_api, "refresh", lambda **k: {
+            "skipped_districts": ["ura_district_D19.csv: 0 rows vs 9724 before — kept the old file"]})
+        out = weekly.refresh_ura([16, 19])
+        assert out["ok"] is False and out["still_stale"] == [19] and out["refreshed"] == [16]
+
+
+class TestLensAwareEnrichment:
+    def test_exit_demand_only_contender_outranks_lower_ranked_mmr(self, monkeypatch):
+        picked = {}
+        monkeypatch.setattr(weekly.poller, "_enrich_new_keys",
+                            lambda keys, headless, cap: picked.setdefault("k", keys) and
+                            {"attempted": len(keys), "enriched": 0})
+        monkeypatch.setattr(weekly.poller, "_score_keys", lambda keys, record_history=True: (0, []))
+        monkeypatch.setattr(weekly, "select_candidates", lambda *a, **k: ([
+            {"id": "m1", "score_1000": 900, "surfaced_by": ["mmr"], "lens_view": {"mmr": 900}},
+            {"id": "m2", "score_1000": 800, "surfaced_by": ["mmr"], "lens_view": {"mmr": 800}},
+            {"id": "e1", "score_1000": 500, "surfaced_by": ["exit_demand"],
+             "lens_view": {"mmr": 500, "exit_demand": 90}},
+        ], []))
+        weekly.pre_gate_enrich([], {}, {}, 650, set(), headless=True, limit=2)
+        # m1 is mmr's #1 and e1 is exit_demand's #1: both beat mmr's #2.
+        assert set(picked["k"]) == {"m1", "e1"}
