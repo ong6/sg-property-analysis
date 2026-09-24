@@ -1,0 +1,77 @@
+{
+  "condo": "Evergreen Park",
+  "slug": "evergreen-park",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An honest 1,173sf 3BR (bed_bands ok: 3BR band 1,050-1,250sf on 82 rental filings) in a 394-unit, 1999 Hougang Ave 7 leasehold at $1.25M/$1,066psf. The ask is roughly fair against the project's own prints, a few percent under, not a mispricing: 1,0xx-sf 3BRs have cleared at a median of about $1,135psf over the past 24 months (Sep-26 $1,133, Feb-26 $1,138/$1,174), and the larger 1,173 format has historically traded 2-5% below them on size. That puts fair value near $1,080-1,100psf, or about $1.27-1.29M. The -27% gap to the age-adjusted D19 median is a location level for older Hougang stock, not value, and it is what drives the 804 score.",
+      "rating_rationale": "Neutral, medium confidence. For: OCR region; a real 3BR at a low $1.25M quantum, well inside the $1.8M 'his' budget; a deep resale market (70 URA prints since Sep-21, 32 rental contracts in 12 months); and an ask about 2-3% under own-print fair value (~$1.27-1.29M). Against: (1) The score is inflated. score_1000 804 leans on age_value (+17.4 MMR). That component measures the -27% gap to the age-adjusted D19 median, and the gap is Hougang Ave 7's permanent sub-market level (see 'Persistent Sub-Market Discount != Dislocation'), not a dislocation that will close. On the project's own prints this unit is only mildly cheap. (2) The lease is the binding exit risk. 69 years remain today and 62-64 at a 5-7yr exit, which erodes the CPF/financing buyer pool, and the leasehold decay curve steepens there. (3) The exit record is only mediocre: REALSCORE 3.6, with 77.5% of 626 matched resale pairs sold at a profit, so about 1 in 4.5 past sellers lost money. That is a real downside signal on a deep sample, although the recent average annualised return is 5.9%. (4) Net carry is thin, about 2.3% (gross 3.77% on URA project-bed rent, $3,925/mo). (5) The 1,173sf format has no print since Mar-23 (floor 01-05, $895psf), so the size comp is interpolated from the 1,022-1,087sf and 1,238sf formats. En-bloc talk (a marketing site) and the Defu CRL station (464m, ~2030) are narrative, not measured edge. A leasehold en bloc also needs a lease top-up premium, which makes it far from assured. Fair value is ~$1.22-1.28M. It would become a marginal Buy only at ~$1.18M or below on a confirmed mid/high floor.",
+      "red_flags": [
+        "69yr lease remaining, ~62-64yr at a 5-7yr exit: shrinking CPF/loan-eligible buyer pool and the steeper part of the leasehold decay curve",
+        "REALSCORE 3.6: only 77.5% of 626 resale pairs profitable, so ~22% of past sellers lost money",
+        "score_1000 804 inflated by age_value (+17.4): the -27% gap to the D19 age-adjusted median is a persistent Hougang sub-market level, not a discount that closes",
+        "No 1,173sf print since Mar-23, so fair value is interpolated from adjacent formats",
+        "Same $1.25M/1,173sf ask is on 3 listing ids (500140628, 500111313, 500266446): one unit marketed by several agents, not a price drop",
+        "27-year-old estate: maintenance/sinking-fund exposure; 'Middle Floor' only, stack/facing unknown (no profile)",
+        "Net yield ~2.3%: carry, not a return driver"
+      ],
+      "catalysts": [
+        "Defu CRL station 464m (Cross Island Line phase 1, ~2030) adds a second rail option; Hougang NE14 is 820m",
+        "Deep, liquid resale market: 70 prints in ~5 years, 32 rental contracts in 12 months",
+        "Low absolute quantum for a 1,173sf 3BR in the OCR, the region with the best realised forward returns (+3.7%/yr)",
+        "En-bloc chatter (owner-run site): optionality only, not underwritable for a leasehold needing a lease top-up"
+      ],
+      "as_of": {
+        "price": 1250000,
+        "psf": 1065.64,
+        "beds": 3,
+        "sqft": 1173.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.26,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.77,
+        "nearest_mrt": "Hougang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 69
+      },
+      "agent_evaluation": {
+        "summary": "An honest 1,173sf 3BR (bed_bands ok: 3BR band 1,050-1,250sf on 82 rental filings) in a 394-unit, 1999 Hougang Ave 7 leasehold at $1.25M/$1,066psf. The ask is roughly fair against the project's own prints, a few percent under, not a mispricing: 1,0xx-sf 3BRs have cleared at a median of about $1,135psf over the past 24 months (Sep-26 $1,133, Feb-26 $1,138/$1,174), and the larger 1,173 format has historically traded 2-5% below them on size. That puts fair value near $1,080-1,100psf, or about $1.27-1.29M. The -27% gap to the age-adjusted D19 median is a location level for older Hougang stock, not value, and it is what drives the 804 score.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, medium confidence. For: OCR region; a real 3BR at a low $1.25M quantum, well inside the $1.8M 'his' budget; a deep resale market (70 URA prints since Sep-21, 32 rental contracts in 12 months); and an ask about 2-3% under own-print fair value (~$1.27-1.29M). Against: (1) The score is inflated. score_1000 804 leans on age_value (+17.4 MMR). That component measures the -27% gap to the age-adjusted D19 median, and the gap is Hougang Ave 7's permanent sub-market level (see 'Persistent Sub-Market Discount != Dislocation'), not a dislocation that will close. On the project's own prints this unit is only mildly cheap. (2) The lease is the binding exit risk. 69 years remain today and 62-64 at a 5-7yr exit, which erodes the CPF/financing buyer pool, and the leasehold decay curve steepens there. (3) The exit record is only mediocre: REALSCORE 3.6, with 77.5% of 626 matched resale pairs sold at a profit, so about 1 in 4.5 past sellers lost money. That is a real downside signal on a deep sample, although the recent average annualised return is 5.9%. (4) Net carry is thin, about 2.3% (gross 3.77% on URA project-bed rent, $3,925/mo). (5) The 1,173sf format has no print since Mar-23 (floor 01-05, $895psf), so the size comp is interpolated from the 1,022-1,087sf and 1,238sf formats. En-bloc talk (a marketing site) and the Defu CRL station (464m, ~2030) are narrative, not measured edge. A leasehold en bloc also needs a lease top-up premium, which makes it far from assured. Fair value is ~$1.22-1.28M. It would become a marginal Buy only at ~$1.18M or below on a confirmed mid/high floor.",
+        "red_flags": [
+          "69yr lease remaining, ~62-64yr at a 5-7yr exit: shrinking CPF/loan-eligible buyer pool and the steeper part of the leasehold decay curve",
+          "REALSCORE 3.6: only 77.5% of 626 resale pairs profitable, so ~22% of past sellers lost money",
+          "score_1000 804 inflated by age_value (+17.4): the -27% gap to the D19 age-adjusted median is a persistent Hougang sub-market level, not a discount that closes",
+          "No 1,173sf print since Mar-23, so fair value is interpolated from adjacent formats",
+          "Same $1.25M/1,173sf ask is on 3 listing ids (500140628, 500111313, 500266446): one unit marketed by several agents, not a price drop",
+          "27-year-old estate: maintenance/sinking-fund exposure; 'Middle Floor' only, stack/facing unknown (no profile)",
+          "Net yield ~2.3%: carry, not a return driver"
+        ],
+        "catalysts": [
+          "Defu CRL station 464m (Cross Island Line phase 1, ~2030) adds a second rail option; Hougang NE14 is 820m",
+          "Deep, liquid resale market: 70 prints in ~5 years, 32 rental contracts in 12 months",
+          "Low absolute quantum for a 1,173sf 3BR in the OCR, the region with the best realised forward returns (+3.7%/yr)",
+          "En-bloc chatter (owner-run site): optionality only, not underwritable for a leasehold needing a lease top-up"
+        ],
+        "rental_assessment": "Solid, not fat. URA project-bed rent is ~$3,925/mo on 32 contracts in 12 months (confidence 0.95). That is 3.77% gross and ~2.3% net: a steady family-tenant market near Hougang Central and Kovan, with no yield artifact.",
+        "appreciation_assessment": "The trailing 6.3%/yr URA CAGR (70 txns) is a bull-regime story with little forward power, and momentum is fading. Own prints for the 1,0xx format rose from ~$840psf (2021) to ~$1,135-1,175psf (2025-26), but the 2025-26 prints have plateaued around $1,090-1,175. Forward, expect OCR-baseline drift, with a drag from lease decay as the lease approaches 60 years. Keep the data rate and apply no override.",
+        "stack_notes": "The listing says only 'Middle Floor'. No profile exists (the stack and facing of the 1,173sf format are unknown), and PropertyGuru does not serve facing. Floor tiers in this project's prints spread about 5-8% psf between floors 01-05 and 11-20. A mid floor sits near the print median, which supports the ~$1.27-1.29M fair estimate.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 77.5,
+        "realsmart_annual_return_pct": 5.9
+      },
+      "source": {
+        "run_dir": "output/run_107_500140628",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-evergreen-park-500140628",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

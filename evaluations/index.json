@@ -4082,6 +4082,13 @@
       "latest_date": "2026-06-08",
       "eval_count": 1
     },
+    "evergreen-park": {
+      "condo": "Evergreen Park",
+      "district": "D19",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-09-24",
+      "eval_count": 1
+    },
     "everitt-edge": {
       "condo": "Everitt Edge",
       "district": "D15",
