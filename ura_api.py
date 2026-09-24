@@ -50,19 +50,26 @@ def _rows(path: Path) -> int:
         return 0
 
 
-def _export_guarded(write, store, district: int, path: Path, skipped: list) -> int:
+def _export_guarded(write, store, district: int, path: Path, skipped: list,
+                    accept_shrink: bool = False) -> int:
     """Export one district to a temp file; swap it in only if it looks whole.
 
     Never truncates a good CSV in place: a failed or empty export leaves the
     old file (and its mtime, so staleness checks still see it as old).
     """
     tmp = path.with_suffix(".csv.tmp")
-    n = write(store, district, tmp)
+    try:
+        n = write(store, district, tmp)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
     old = _rows(path)
     if n == 0 and old == 0:
         tmp.unlink(missing_ok=True)       # a district with no data, before and after
         return 0
-    if n == 0 or (old and n < MIN_KEEP_RATIO * old):
+    # A rolling window CAN legitimately shrink a district by >10%; after
+    # checking, `python ura_api.py --accept-shrink` takes the smaller export.
+    if n == 0 or (old and n < MIN_KEEP_RATIO * old and not accept_shrink):
         tmp.unlink(missing_ok=True)
         skipped.append(f"{path.name}: {n} rows vs {old} before — kept the old file")
         return old
@@ -84,7 +91,7 @@ def available() -> tuple[bool, str]:
 
 
 def refresh(transactions: bool = True, rentals: bool = True, force: bool = False,
-            rebuild: bool = True) -> dict:
+            rebuild: bool = True, accept_shrink: bool = False) -> dict:
     """Sync from URA, export district CSVs, and rebuild the derived caches.
 
     Sync is a no-op when sgprop's store is already newer than URA's last
@@ -103,7 +110,7 @@ def refresh(transactions: bool = True, rentals: bool = True, force: bool = False
         out["transactions"] = sync_transactions(store, client, force=force)
         out["tx_rows"] = sum(
             _export_guarded(export.transactions_csv, store, d,
-                            DATA_DIR / f"ura_district_D{d:02d}.csv", skipped)
+                            DATA_DIR / f"ura_district_D{d:02d}.csv", skipped, accept_shrink)
             for d in ALL_DISTRICTS)
         if rebuild:
             from fetch_ura_districts import build_cache_from_district_csvs
@@ -112,7 +119,7 @@ def refresh(transactions: bool = True, rentals: bool = True, force: bool = False
         out["rentals"] = sync_rentals(store, client, quarters=RENTAL_QUARTERS, force=force)
         out["rent_rows"] = sum(
             _export_guarded(export.rentals_csv, store, d,
-                            DATA_DIR / f"ura_rental_D{d:02d}.csv", skipped)
+                            DATA_DIR / f"ura_rental_D{d:02d}.csv", skipped, accept_shrink)
             for d in ALL_DISTRICTS)
         if rebuild:
             for script in (["build_rental_cache.py"], ["bed_bands.py", "--build"]):
@@ -121,7 +128,9 @@ def refresh(transactions: bool = True, rentals: bool = True, force: bool = False
             out["rebuilt"] = ["rental_cache.json", "bed_bands.json"]
     if skipped:
         out["skipped_districts"] = skipped
-        print("  ⚠ " + "\n  ⚠ ".join(skipped), file=sys.stderr)
+        print("  ⚠ " + "\n  ⚠ ".join(skipped)
+              + "\n  (if the shrink is real, re-run `python ura_api.py --accept-shrink`)",
+              file=sys.stderr)
     return out
 
 
@@ -131,13 +140,16 @@ def main() -> int:
     ap.add_argument("--force", action="store_true", help="ignore URA's publish schedule")
     ap.add_argument("--no-rentals", action="store_true")
     ap.add_argument("--no-transactions", action="store_true")
+    ap.add_argument("--accept-shrink", action="store_true",
+                    help="write exports even if a district shrank >10%% (after checking)")
     a = ap.parse_args()
     ok, why = available()
     if a.check or not ok:
         print("URA API: ready" if ok else f"URA API unavailable: {why}")
         return 0 if ok else 1
     print(json.dumps(refresh(transactions=not a.no_transactions,
-                             rentals=not a.no_rentals, force=a.force), indent=2))
+                             rentals=not a.no_rentals, force=a.force,
+                             accept_shrink=a.accept_shrink), indent=2))
     return 0
 
 

@@ -1003,3 +1003,40 @@ class TestLensAwareEnrichment:
         weekly.pre_gate_enrich([], {}, {}, 650, set(), headless=True, limit=2)
         # m1 is mmr's #1 and e1 is exit_demand's #1: both beat mmr's #2.
         assert set(picked["k"]) == {"m1", "e1"}
+
+
+class TestRound3Fixes:
+    def test_accept_shrink_takes_a_smaller_export(self, tmp_path):
+        import ura_api
+        path = tmp_path / "ura_district_D19.csv"
+        path.write_text("h\n" + "r\n" * 100)
+
+        def short(store, d, p):
+            p.write_text("h\n" + "r\n" * 50)
+            return 50
+
+        assert ura_api._export_guarded(short, None, 19, path, [], accept_shrink=True) == 50
+
+    def test_failed_export_leaves_no_temp_file(self, tmp_path):
+        import ura_api
+        path = tmp_path / "ura_district_D19.csv"
+
+        def boom(store, d, p):
+            p.write_text("partial")
+            raise RuntimeError("x")
+
+        with pytest.raises(RuntimeError):
+            ura_api._export_guarded(boom, None, 19, path, [])
+        assert not (tmp_path / "ura_district_D19.csv.tmp").exists()
+
+    def test_ec_request_does_not_take_the_condo_api_path(self, monkeypatch):
+        import sys as _sys
+        import fetch_ura_districts as f
+        import ura_api
+        monkeypatch.setattr(ura_api, "available", lambda: (True, ""))
+        monkeypatch.setattr(ura_api, "refresh",
+                            lambda **k: (_ for _ in ()).throw(AssertionError("API used for EC")))
+        monkeypatch.setattr(f, "is_fresh", lambda *a: True)      # nothing to fetch
+        monkeypatch.setattr(f, "build_cache_from_district_csvs", lambda d: {})
+        monkeypatch.setattr(_sys, "argv", ["x", "--districts", "19", "--property-types", "ec"])
+        f.main()

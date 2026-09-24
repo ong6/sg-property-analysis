@@ -279,7 +279,11 @@ Examples:
     # The official API (via sgprop, see ura_api.py) is the default: every
     # district in ~40 s, no browser. The browser path below is the fallback
     # for machines without sgprop or a URA key.
-    if not args.build_cache and not args.browser:
+    # EC files (ura_district_D*_EC.csv) aren't exported by the API path, so an
+    # EC request goes to the browser rather than silently refreshing condos.
+    wants_ec = any(normalize_property_type(t) != "condo"
+                   for t in args.property_types.split(",") if t.strip())
+    if not args.build_cache and not args.browser and not wants_ec:
         import ura_api
         ok, why = ura_api.available()
         if ok:
