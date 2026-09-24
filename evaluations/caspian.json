@@ -1,0 +1,71 @@
+{
+  "condo": "Caspian",
+  "slug": "caspian",
+  "district": "D22",
+  "history": [
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Buy",
+      "confidence": "medium",
+      "summary": "Honest 1,238sf 3BR (URA rental band 1,150-1,450sf, 298 contracts) at Caspian, a 712-unit 2013 Frasers project 216-270m from Lakeside EW26, asking $1.92M / $1,551psf — BELOW the two most recent same-size prints (Jul-26 $1.95M fl 01-05, May-26 $2.00M fl 16-20) and the 1,216sf prints of Nov-25/Mar-26 ($1.97-1.975M), and the cheapest of six live 1,238sf asks ($1.99-2.35M). Fair-to-slightly-cheap, not a deep discount; exit record is near-flawless.",
+      "rating_rationale": "Price is right without being suspicious: $1,551psf sits 1.5-4% under the last two 1,238sf prints (and even under the Jul-26 low-floor print, so an unknown floor doesn't flip it into overpaying), −5.2% vs the age-adjusted D22 same-size median, and it's the cheapest of six same-size asks on the live book. The discount is small, so there's no artifact to explain away, and bed_bands confirms a real 3BR. Fundamentals are what the backtest actually rewards: OCR region, a 13yr-old project in the flat age-return plateau, a deep 712-unit resale book (114 URA prints in 5yr, 16 at this exact size), MRT at ~250m, and a strong downside record (REALSCORE 4.1, 98.4% profitable across 575 resale pairs, ~6.1%/yr average). The concerns are minor but real: net carry is only ~1.9% (rent $5.2k on 51 contracts), floor and stack aren't disclosed, the lease is down to 83yr, momentum is slightly negative, and the Jurong Lake District story is a catalyst with no measured forward power. At $1.92M it's over the 'his' ≤$1.8M mandate but well inside 'hers'. Medium, not high, confidence: the model explains <10% of forward variance, and the edge here is fair pricing on a liquid, proven asset, not mispricing.",
+      "red_flags": [
+        "Floor level and stack undisclosed; same-size prints span ~$1,575 (fl 01-05) to $1,616psf (fl 16-20)",
+        "Thin carry: ~3.25% gross / ~1.9% net yield",
+        "99yr lease from ~2010, 83yr remaining",
+        "Price history chains a $2.08M→$2.35M→$2.18M→$1.92M path across relisted/grouped ids (unit_group artifact); the $1.92M ask is only 2 days old, so check it's a real ask and not bait",
+        "Slightly negative momentum (−0.125); flat run of 1,238sf prints ~$1.95-2.00M through 2026"
+      ],
+      "catalysts": [
+        "Jurong Lake District / Jurong Gateway regeneration (long-dated; no measured forward power)",
+        "Jurong Region Line (Peng Kang Hill ~1.4km), a minor catalyst",
+        "OCR region prior (realized fwd ~+3.7%/yr in backtest)"
+      ],
+      "as_of": {
+        "price": 1920000,
+        "psf": 1550.89,
+        "beds": 3,
+        "sqft": 1238.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.18,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.25,
+        "nearest_mrt": "Lakeside",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 83
+      },
+      "agent_evaluation": {
+        "summary": "Honest 1,238sf 3BR (URA rental band 1,150-1,450sf, 298 contracts) at Caspian, a 712-unit 2013 Frasers project 216-270m from Lakeside EW26, asking $1.92M / $1,551psf — BELOW the two most recent same-size prints (Jul-26 $1.95M fl 01-05, May-26 $2.00M fl 16-20) and the 1,216sf prints of Nov-25/Mar-26 ($1.97-1.975M), and the cheapest of six live 1,238sf asks ($1.99-2.35M). Fair-to-slightly-cheap, not a deep discount; exit record is near-flawless.",
+        "rating": "Buy",
+        "rating_rationale": "Price is right without being suspicious: $1,551psf sits 1.5-4% under the last two 1,238sf prints (and even under the Jul-26 low-floor print, so an unknown floor doesn't flip it into overpaying), −5.2% vs the age-adjusted D22 same-size median, and it's the cheapest of six same-size asks on the live book. The discount is small, so there's no artifact to explain away, and bed_bands confirms a real 3BR. Fundamentals are what the backtest actually rewards: OCR region, a 13yr-old project in the flat age-return plateau, a deep 712-unit resale book (114 URA prints in 5yr, 16 at this exact size), MRT at ~250m, and a strong downside record (REALSCORE 4.1, 98.4% profitable across 575 resale pairs, ~6.1%/yr average). The concerns are minor but real: net carry is only ~1.9% (rent $5.2k on 51 contracts), floor and stack aren't disclosed, the lease is down to 83yr, momentum is slightly negative, and the Jurong Lake District story is a catalyst with no measured forward power. At $1.92M it's over the 'his' ≤$1.8M mandate but well inside 'hers'. Medium, not high, confidence: the model explains <10% of forward variance, and the edge here is fair pricing on a liquid, proven asset, not mispricing.",
+        "red_flags": [
+          "Floor level and stack undisclosed; same-size prints span ~$1,575 (fl 01-05) to $1,616psf (fl 16-20)",
+          "Thin carry: ~3.25% gross / ~1.9% net yield",
+          "99yr lease from ~2010, 83yr remaining",
+          "Price history chains a $2.08M→$2.35M→$2.18M→$1.92M path across relisted/grouped ids (unit_group artifact); the $1.92M ask is only 2 days old, so check it's a real ask and not bait",
+          "Slightly negative momentum (−0.125); flat run of 1,238sf prints ~$1.95-2.00M through 2026"
+        ],
+        "catalysts": [
+          "Jurong Lake District / Jurong Gateway regeneration (long-dated; no measured forward power)",
+          "Jurong Region Line (Peng Kang Hill ~1.4km), a minor catalyst",
+          "OCR region prior (realized fwd ~+3.7%/yr in backtest)"
+        ],
+        "rental_assessment": "URA project-bed rent $5,200/mth on 51 contracts over 12mo (conf 0.95) → 3.25% gross, ~1.9% net. Credible, but this is carry, not a return driver.",
+        "appreciation_assessment": "The ura_5yr_cagr of 6.18% on 114 txns is trailing bull-regime evidence; don't underwrite it forward. The 1,238sf prints went from ~$1.58M (2022) to $1.95-2.00M (2026), roughly 5.5%/yr, but that's flattening now. Underwrite the OCR baseline of ~3-4%/yr plus ~1.9% net carry.",
+        "stack_notes": "No profile researched; floor/stack unknown from the listing. The ask is below even the Jul-26 fl 01-05 print, so the floor risk is limited. Confirm the floor before offering, and target ≥$1.92M only for a mid or high floor.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.1,
+        "realsmart_pct_profitable": 98.4,
+        "realsmart_annual_return_pct": 6.1
+      },
+      "source": {
+        "run_dir": "output/run_105_500271288",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-caspian-500271288",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

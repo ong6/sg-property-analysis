@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-24",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -3479,6 +3479,13 @@
       "latest_rating": "Buy",
       "latest_date": "2026-06-09",
       "eval_count": 2
+    },
+    "caspian": {
+      "condo": "Caspian",
+      "district": "D22",
+      "latest_rating": "Buy",
+      "latest_date": "2026-09-24",
+      "eval_count": 1
     },
     "tropika-east": {
       "condo": "Tropika East",
