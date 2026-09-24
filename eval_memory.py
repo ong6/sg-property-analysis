@@ -127,7 +127,9 @@ def rebuild_index() -> dict:
             "latest_date": latest.get("evaluated_at"),
             "eval_count": len(data["history"]),
         }
-    tmp = INDEX_FILE + ".tmp"
+    # Per-process tmp: the weekly scan runs agents in parallel and each save
+    # rebuilds the index, so a shared tmp name let two writers interleave.
+    tmp = f"{INDEX_FILE}.{os.getpid()}.tmp"
     with open(tmp, "w") as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
     os.replace(tmp, INDEX_FILE)

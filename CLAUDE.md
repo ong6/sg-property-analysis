@@ -176,8 +176,16 @@ LaunchAgent, no cron. The reminder lives in the personal data store
 and the owner drives it from there; a successful run stamps that note's
 `last_run` so the reminder clears itself. It chains what already existed:
 
-**poll → algo-grade EVERY new/changed listing → gate → AI-analyze only what
-clears the gate → digest → push the good ones to the store.**
+**refresh stale URA prints → poll → algo-grade EVERY new/changed listing →
+enrich + re-score the contenders → gate → AI-analyze only what clears the gate
+(3 in parallel) → digest → push the good ones to the store.**
+
+Pre-flight (2026-09-24): URA district CSVs older than `URA_MAX_AGE_DAYS` (30)
+are re-fetched for the mandate districts before anything is scored — they had
+drifted to 106 days old, so the algo's own-print comparisons missed three
+months of clearings. Then the top `PRE_GATE_ENRICH` (36) gate-eligible
+listings with no detail visit are enriched and re-scored, so the cap picks on
+floor-aware comps rather than card-level data.
 
 ### The mandate — WHAT is being bought
 
@@ -218,8 +226,11 @@ restamp the scored book's vintage):
 | Knob | Default | Why |
 |---|---|---|
 | `MIN_SCORE_FOR_AI` | 650 | the recommended tier; ~p88 of the book |
-| `MAX_AI_RUNS_PER_SCAN` | 8 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
-| `POLL_MAX_PAGES` | 5 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
+| `MAX_AI_RUNS_PER_SCAN` | 12 | the gate alone is unbounded — a bulk relist could put 40 listings over 650 |
+| `AI_PARALLEL` | 3 | agents in flight; same-condo candidates share a lane so they never race one eval file |
+| `URA_MAX_AGE_DAYS` | 30 | re-fetch URA prints older than this before scoring |
+| `PRE_GATE_ENRICH` | 36 | contenders detail-enriched + re-scored before the capped gate |
+| `POLL_MAX_PAGES` | 10 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
 | `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
 | `AI_TIMEOUT_S` | 1800 | per-agent wall clock; past it something is stuck |
 | store push | Buy/Strong Buy **and** ≥ medium confidence | the store note is a feed the owner reads, not a log |
@@ -231,11 +242,13 @@ each mandate present a fair share first (`ceil(max_ai / mandates_present)`, so
 4 + 4 of 8), then hands unclaimed slots to the best remaining listings
 regardless of buyer. Anything left over is deferred with a cap reason.
 
-Each shortlisted project also gets a **realsmart.sg REALSCORE** lookup in the
-agent step (public `/p/<slug>`, plain fetch, slug resolved by `realsmart.py`),
-surfaced in the digest and the store row. This sits *after* the gate on purpose:
-realsmart's ToS is personal-use, so ≤8 project lookups a week is a research
-source — never a per-listing feed.
+Each shortlisted project also gets a **realsmart.sg REALSCORE** lookup, done
+once per project by `realsmart_cache.warm()` right after the gate and handed to
+the agent in its prompt (it only fetches itself on a miss). The store's
+`fetch.py` is a `uv run --script` file — calling it with this repo's Python
+fails on its imports, which silently broke every lookup until 2026-09-24. This
+sits *after* the gate on purpose: realsmart's ToS is personal-use, so ~12
+project lookups a week is a research source — never a per-listing feed.
 
 ```bash
 python weekly.py                # the real thing (HEADED browser — Cloudflare)
@@ -254,7 +267,8 @@ DB and could never surface, because none of them were new in a later cycle.
 
 Other flags: `--headless` (Cloudflare usually blocks it), `--min-score`,
 `--max-ai`, `--max-pages`, `--districts` / `--beds` / `--max-price` (override the
-mandate for one run), `--no-store-push`.
+mandate for one run), `--parallel N`, `--no-refresh`, `--no-enrich`,
+`--no-store-push`.
 
 Outputs: digest `output/weekly/<date>.md`, agent transcripts
 `output/weekly_runs/`, state `data/weekly_state.json`. A run whose **poll

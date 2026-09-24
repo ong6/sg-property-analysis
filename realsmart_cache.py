@@ -22,6 +22,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -40,6 +41,16 @@ FETCH_TOOL = os.path.join(
     STORE, ".claude", "skills", "web-extract", "scripts", "fetch.py")
 
 CACHE_TTL_DAYS = 45          # project-level stats are slow-moving
+# A miss is retried sooner: it is as likely a broken fetch as a missing page
+# (every miss before 2026-09-24 was the fetcher failing to import its deps).
+MISS_TTL_DAYS = 7
+
+
+def _is_fresh(hit: dict | None) -> bool:
+    if not hit:
+        return False
+    ttl = CACHE_TTL_DAYS if hit.get("ok") else MISS_TTL_DAYS
+    return (time.time() - hit.get("fetched_at", 0)) / 86400 < ttl
 POLITE_DELAY_S = 2.0         # spacing between fetches; this is a slow lookup
 FETCH_TIMEOUT_S = 180
 
@@ -205,10 +216,23 @@ READER_TOOL = os.path.join(
 RENDER_TIMEOUT_S = 300
 
 
+def _script_cmd(path: str) -> list[str]:
+    """How to invoke one of the store's web-extract scripts.
+
+    They are PEP 723 `uv run --script` files carrying their own deps
+    (markdownify, readabilipy, ...). Running them with this repo's
+    interpreter fails on the first import, so every fetch silently returned
+    None and every project was recorded as a miss (found 2026-09-24: 49 of 72
+    cache entries were misses). Fall back to sys.executable only without uv.
+    """
+    uv = shutil.which("uv")
+    return [uv, "run", "--quiet", "--script", path] if uv else [sys.executable, path]
+
+
 def _fetch_text(url: str) -> str | None:
     """Rung 1 — plain fetch of the public /p/<slug> page. Cheap, no browser."""
     try:
-        proc = subprocess.run([sys.executable, FETCH_TOOL, url],
+        proc = subprocess.run(_script_cmd(FETCH_TOOL) + [url],
                               capture_output=True, text=True,
                               timeout=FETCH_TIMEOUT_S)
     except (subprocess.TimeoutExpired, OSError):
@@ -236,9 +260,11 @@ def _render_map(project_name: str) -> str | None:
     """
     q = project_name.upper().replace(" ", "%20")
     url = f"https://realsmart.sg/map?id={q}&mode=c"
+    if not os.path.exists(READER_TOOL):
+        return None       # the store retired reader.py; no render rung today
     try:
         proc = subprocess.run(
-            [sys.executable, READER_TOOL, url, "--wait", "10", "--max", "20000"],
+            _script_cmd(READER_TOOL) + [url, "--wait", "10", "--max", "20000"],
             capture_output=True, text=True, timeout=RENDER_TIMEOUT_S)
     except (subprocess.TimeoutExpired, OSError):
         return None
@@ -256,10 +282,8 @@ def get(project_name: str, cache: dict | None = None,
     if not key:
         return None
     hit = cache.get(key)
-    if hit and not refresh:
-        age = (time.time() - hit.get("fetched_at", 0)) / 86400
-        if age < CACHE_TTL_DAYS:
-            return hit
+    if not refresh and _is_fresh(hit):
+        return hit
 
     url, resolved = realsmart.url_for(project_name)
     text = _fetch_text(url)
@@ -300,8 +324,7 @@ def warm(project_names, refresh: bool = False, verbose: bool = True) -> dict:
     for n in dict.fromkeys(project_names):          # dedupe, keep order
         key = realsmart.normalize(n)
         hit = cache.get(key)
-        fresh = hit and (time.time() - hit.get("fetched_at", 0)) / 86400 < CACHE_TTL_DAYS
-        if fresh and not refresh:
+        if _is_fresh(hit) and not refresh:
             out[n] = hit
         else:
             todo.append(n)

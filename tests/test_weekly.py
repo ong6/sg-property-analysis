@@ -755,3 +755,98 @@ class TestScanNoteStamp:
         p.write_text("# plain\n")
         weekly.stamp_scan_note("2026-07-27", path=str(p))
         assert p.read_text() == "# plain\n"
+
+
+class TestParallelAgents:
+    def _fake(self, monkeypatch, verdict_for):
+        import threading
+        active, peak, lock = [0], [0], threading.Lock()
+        order = []
+
+        def fake_run(cand, timeout_s=None):
+            with lock:
+                active[0] += 1
+                peak[0] = max(peak[0], active[0])
+                order.append(cand["id"])
+            time.sleep(0.05)
+            with lock:
+                active[0] -= 1
+            return {"id": cand["id"], "log": "x.log", "ok": True}
+
+        monkeypatch.setattr(weekly, "run_agent", fake_run)
+        monkeypatch.setattr(weekly, "read_verdict",
+                            lambda cand, on_or_after: verdict_for(cand))
+        return peak, order
+
+    def test_runs_in_parallel_and_keeps_every_verdict(self, monkeypatch):
+        peak, _ = self._fake(monkeypatch, lambda c: {"rating": "Neutral"})
+        short = [{"id": str(i), "slug": f"condo-{i}"} for i in range(6)]
+        verdicts, runs = weekly.run_agents(short, "2026-09-24", parallel=3)
+        assert set(verdicts) == {str(i) for i in range(6)}
+        assert peak[0] == 3
+        assert [r["id"] for r in runs] == [str(i) for i in range(6)]
+
+    def test_same_condo_candidates_never_overlap(self, monkeypatch):
+        peak, order = self._fake(monkeypatch, lambda c: {"rating": "Avoid"})
+        short = [{"id": "a3", "slug": "livia"}, {"id": "a4", "slug": "livia"}]
+        weekly.run_agents(short, "2026-09-24", parallel=3)
+        assert peak[0] == 1 and order == ["a3", "a4"]
+
+    def test_missing_verdict_is_retried_once(self, monkeypatch):
+        calls = {"n": 0}
+
+        def verdict(c):
+            calls["n"] += 1
+            return None if calls["n"] == 1 else {"rating": "Neutral"}
+
+        self._fake(monkeypatch, verdict)
+        verdicts, runs = weekly.run_agents([{"id": "x", "slug": "x"}], "d", parallel=2)
+        assert "x" in verdicts and len(runs) == 2 and runs[1]["retry"]
+
+
+class TestRealsmartPrewarm:
+    def test_attaches_cached_facts_and_prompt_skips_the_fetch(self, monkeypatch):
+        import realsmart_cache
+        monkeypatch.setattr(realsmart_cache, "warm", lambda names, **k: {
+            "Livia": {"ok": True, "realscore": 4.0, "pct_profitable": 92.2,
+                      "annual_return_pct": 4.8, "resale_txns": 567,
+                      "url": "https://realsmart.sg/p/livia", "fetched_at": time.time()},
+            "Nowhere": {"ok": False}})
+        short = [{"id": "1", "project_name": "Livia", "url": "u"},
+                 {"id": "2", "project_name": "Nowhere", "url": "u"}]
+        assert weekly.prewarm_realsmart(short) == {"ok": 1, "missing": 1}
+        p = weekly._agent_prompt(short[0])
+        assert "ALREADY FETCHED" in p and "REALSCORE 4.0" in p and "567" in p
+        assert "uv run" not in p
+        # A miss falls back to the agent fetching, with the right interpreter.
+        monkeypatch.setattr(weekly, "realsmart_url", lambda n: ("https://r/p/x", True))
+        assert "uv run --quiet --script" in weekly._agent_prompt(short[1])
+
+
+class TestUraRefresh:
+    def test_fresh_csvs_skip_the_browser(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(weekly, "DATA_DIR", str(tmp_path))
+        (tmp_path / "ura_district_D19.csv").write_text("x")
+        monkeypatch.setattr(weekly.subprocess, "run",
+                            lambda *a, **k: (_ for _ in ()).throw(AssertionError))
+        out = weekly.refresh_ura([19], max_age_days=30)
+        assert out["ok"] and out["stale"] == []
+
+    def test_stale_csv_triggers_fetch_and_reports_failure(self, monkeypatch, tmp_path):
+        monkeypatch.setattr(weekly, "DATA_DIR", str(tmp_path))
+        f = tmp_path / "ura_district_D19.csv"
+        f.write_text("x")
+        old = time.time() - 90 * 86400
+        os.utime(f, (old, old))
+        called = {}
+
+        class P:
+            returncode = 1
+
+        def fake_run(cmd, **k):
+            called["cmd"] = cmd
+            return P()
+
+        monkeypatch.setattr(weekly.subprocess, "run", fake_run)
+        out = weekly.refresh_ura([19], max_age_days=30)
+        assert "19" in called["cmd"] and not out["ok"] and out["still_stale"] == [19]

@@ -8,6 +8,9 @@ script closes the loop by stamping that note's `last_run` on success.
 
 The cycle:
 
+  0. **Pre-flight** — URA transaction CSVs for the mandate districts are
+     re-fetched when older than a month, so the poll scores against current
+     prints (a browser window opens only when something is stale).
   1. **Poll** — `poller.run_poll()` scrapes the newest listings for the configured
      districts/beds, upserts them, and MMR-scores the new / price-changed ones.
   2. **Algo grade** — every new and price-changed listing already carries
@@ -20,7 +23,11 @@ The cycle:
      and several independent lenses can each nominate, because the days when
      one number (score_1000) decided everything are what let value traps
      monopolize the research budget (see shortlist.py's header).
-  4. **AI analyze** — for each shortlisted listing, a headless `claude -p` runs
+     Before the capped gate, the top contenders are detail-enriched (floor,
+     facing, PES/loft flags) and re-scored, so the cap picks on full data.
+  4. **AI analyze** — realsmart REALSCORE is fetched once per project up
+     front; then for each shortlisted listing, `--parallel` at a time
+     (default 3), a headless `claude -p` runs
      the repo's `/analyze-listing` flow and lands a Buy/Neutral/Avoid verdict in
      eval memory. Gather is `invest.py --from-db` — the listing is already
      scraped and enriched, so the agent never touches the network for it.
@@ -36,6 +43,9 @@ Usage:
     python weekly.py --force         # re-run even though this week already succeeded
     python weekly.py --no-poll       # skip the scrape; grade what arrived since the last run
     python weekly.py --max-ai 2      # tighter cap for this run
+    python weekly.py --parallel 1    # agents one at a time (old behaviour)
+    python weekly.py --no-refresh    # skip the URA pre-flight refresh
+    python weekly.py --no-enrich     # skip pre-gate enrichment + re-score
 
 **Headed by default.** PropertyGuru sits behind Cloudflare, which blocks
 headless background polls (see CLAUDE.md). A Chrome window opens and reuses the
@@ -257,6 +267,34 @@ RE_EVAL_COOLDOWN_DAYS = 30
 # Per-agent wall clock. The analyze-listing flow does real web research; beyond
 # this something is stuck and the run is killed so the cycle finishes.
 AI_TIMEOUT_S = 1800
+
+# Agent runs in flight at once. Serial was the old rule ("keeps logs legible"),
+# but each run is ~3-4 min of mostly network wait and every write path it
+# touches is already concurrency-safe: run dirs are claimed atomically
+# (invest.next_run_dir), eval memory saves under a per-condo lock, the DB and
+# history CSVs under file locks. 3 turns the 2026-09-18 scan's 39 min AI phase
+# into ~13 without hammering any one site. Same-condo candidates still run one
+# after another (see run_agents) so they never race one condo file.
+AI_PARALLEL = 3
+
+# URA transaction CSVs older than this are re-fetched for the mandate
+# districts before the poll scores anything. Every value signal the gate reads
+# (psf premium vs own prints, floor-aware comps, trailing CAGR) is computed from
+# this data, and on 2026-09-24 it was 106 days old — latest print May-26 — so
+# three months of clearings were invisible to the algo while the agents quoted
+# them. That gap is how asks above their own recent prints kept clearing the
+# gate. Monthly matches URA's own publication lag.
+URA_MAX_AGE_DAYS = 30
+
+# Pre-gate enrichment. The poll detail-enriches only the first 20 new keys,
+# in scrape order, so the listings that actually reach the agent usually have
+# no floor level: "floor unknown (~10% psf spread by tier)" appears in most
+# 2026-09-18 verdicts. So the gate runs twice — once uncapped to find who is
+# in contention, then the top PRE_GATE_ENRICH of those get a detail visit and
+# a re-score (floor-aware comps, PES/loft flags, low-floor demotion) before
+# the real, capped gate picks. 3x the cap leaves room for re-ranking to
+# matter; ~2-4s per detail page.
+PRE_GATE_ENRICH = 36
 
 # What the headless agent may touch — scoped, mirroring dashboard.py's ANALYZE.
 AI_ALLOWED_TOOLS = "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Skill,TodoWrite"
@@ -871,10 +909,35 @@ def _agent_prompt(cand: dict) -> str:
         f"and re-read the discount against the RIGHT cohort before rating it.\n"
         if bed else ""
     )
-    rs_url, rs_resolved = realsmart_url(cand.get("project_name"))
-    rs_note = "" if rs_resolved else (
-        "(NOTE: this URL is a GUESS — the project is not in realsmart's sitemap "
-        "index, so verify the page is actually this development, or skip it.)\n")
+    rs = cand.get("realsmart") or {}
+    if rs.get("ok"):
+        # Pre-fetched by prewarm_realsmart — the agent does not fetch at all.
+        rs_block = (
+            f"realsmart.sg REALSCORE for this project is ALREADY FETCHED (cached "
+            f"{rs.get('fetched_on') or 'recently'} from {rs.get('url')}): "
+            f"REALSCORE {rs.get('realscore')}, {rs.get('pct_profitable')}% "
+            f"profitable, avg annualized {rs.get('annual_return_pct')}%, on "
+            f"{rs.get('transactions') or '?'} matched resale pairs. Copy these into "
+            "`realscore`, `realsmart_pct_profitable` and "
+            "`realsmart_annual_return_pct` in agent_evaluation — do not re-fetch.\n")
+    else:
+        rs_url, rs_resolved = realsmart_url(cand.get("project_name"))
+        rs_note = "" if rs_resolved else (
+            "(NOTE: this URL is a GUESS — the project is not in realsmart's sitemap "
+            "index, so verify the page is actually this development, or skip it.)\n")
+        rs_block = (
+            f"REQUIRED in step ② Gather — realsmart.sg REALSCORE for this project "
+            f"(the pre-scan lookup found nothing, so try once yourself):\n"
+            f"    uv run --quiet --script {WEB_EXTRACT_FETCH} \"{rs_url}\"\n"
+            f"{rs_note}"
+            "Public page, plain fetch, no login. Read off REALSCORE (0-5 "
+            "profitability rank), the '% Profitable' badge, avg annualized profit, "
+            "and the transaction COUNT behind them, then fill `realscore`, "
+            "`realsmart_pct_profitable` and `realsmart_annual_return_pct` in "
+            "agent_evaluation. Confirm the page's title really is this development "
+            "before reading numbers off it. If it 404s or is a different project, "
+            "leave the fields null and say so — never guess a number, and never "
+            "attach another project's score to this listing.\n")
     return (
         f"Analyze this PropertyGuru listing per the /analyze-listing flow: "
         f"{cand.get('url')}\n\n"
@@ -885,17 +948,8 @@ def _agent_prompt(cand: dict) -> str:
         f"instead of `--url` — it builds the run dir and raw_analysis.json from "
         f"the DB record with no scraping (PropertyGuru is behind Cloudflare and "
         f"this is an unattended run).{flag_note}\n{bed_note}\n"
-        f"REQUIRED in step ② Gather — realsmart.sg REALSCORE for this project:\n"
-        f"    python3 {WEB_EXTRACT_FETCH} \"{rs_url}\"\n"
-        f"{rs_note}"
-        "Public page, plain fetch, no login. Read off REALSCORE (0-5 "
-        "profitability rank), the '% Profitable' badge, avg annualized profit, "
-        "and the transaction COUNT behind them, then fill `realscore`, "
-        "`realsmart_pct_profitable` and `realsmart_annual_return_pct` in "
-        "agent_evaluation. Confirm the page's title really is this development "
-        "before reading numbers off it. If it 404s or is a different project, "
-        "leave the fields null and say so — never guess a number, and never "
-        "attach another project's score to this listing. Weigh it as downside "
+        f"{rs_block}"
+        "Weigh REALSCORE as downside "
         "evidence (has this project ever lost owners money?), NOT as an "
         "appreciation forecast: it is backward-looking like trailing CAGR, and "
         "a perfect score on a handful of transactions means little — always "
@@ -959,6 +1013,189 @@ def run_agent(cand: dict, timeout_s: int = AI_TIMEOUT_S) -> dict:
     finally:
         logf.close()
     return result
+
+
+def _analyze_one(cand: dict, day: str) -> tuple[list[dict], dict | None]:
+    """One candidate end to end: run, read the verdict, retry once if none.
+
+    The retry exists because transient API errors ("Connection closed
+    mid-response") land AFTER the research is done but before the evaluation
+    is written — losing the whole slot to a flaky connection. Slots are the
+    scarce resource, so one retry is cheaper than dropping a candidate.
+    Strictly one: a listing that genuinely defeats the flow must not loop.
+    """
+    runs = [run_agent(cand)]
+    v = read_verdict(cand, on_or_after=day)
+    if v is None:
+        run = run_agent(cand)
+        run["retry"] = True
+        runs.append(run)
+        v = read_verdict(cand, on_or_after=day)
+    return runs, v
+
+
+def run_agents(shortlist: list[dict], day: str,
+               parallel: int = AI_PARALLEL) -> tuple[dict, list]:
+    """Analyze the shortlist, `parallel` agents at a time. Returns (verdicts, runs).
+
+    Candidates sharing a condo (a 3BR and a 4BR of the same project) go into
+    one lane and run back to back: they append to the same eval-memory file,
+    and read_verdict's newest-entry fallback must not pick up a sibling's
+    verdict written moments earlier.
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    lanes: dict[str, list[dict]] = {}
+    for c in shortlist:
+        lanes.setdefault(c.get("slug") or c["id"], []).append(c)
+    total = len(shortlist)
+    done = [0]
+    verdicts: dict[str, dict] = {}
+    all_runs: list = []
+
+    def lane(cands: list[dict]) -> list[tuple[dict, list, dict | None]]:
+        out = []
+        for cand in cands:
+            runs, v = _analyze_one(cand, day)
+            done[0] += 1
+            tag = (f"{v.get('rating')} ({v.get('confidence')})" if v
+                   else f"no evaluation saved — see {runs[-1]['log']}")
+            print(f"  [{done[0]}/{total}] {cand.get('project_name')} "
+                  f"{cand.get('beds')}BR ({cand.get('score_1000')}) → {tag}",
+                  file=sys.stderr)
+            out.append((cand, runs, v))
+        return out
+
+    with ThreadPoolExecutor(max_workers=max(1, parallel)) as pool:
+        futures = [pool.submit(lane, cands) for cands in lanes.values()]
+        for fut in as_completed(futures):
+            for cand, runs, v in fut.result():
+                all_runs.extend(runs)
+                if v:
+                    verdicts[cand["id"]] = v
+    # Keep the state file's run list in shortlist order, not finish order.
+    order = {c["id"]: i for i, c in enumerate(shortlist)}
+    all_runs.sort(key=lambda r: order.get(r["id"], 0))
+    return verdicts, all_runs
+
+
+# --------------------------------------------------------------------------- #
+# Pre-flight and pre-gate: make the data the gate reads current
+# --------------------------------------------------------------------------- #
+def _csv_age_days(path: str) -> float | None:
+    try:
+        return (time.time() - os.path.getmtime(path)) / 86400
+    except OSError:
+        return None
+
+
+def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> dict:
+    """Re-fetch stale URA transaction CSVs for `districts`, then rebuild the cache.
+
+    Delegates to fetch_ura_districts.py, which skips fresh districts, opens a
+    headed browser only when something is stale, and MERGES the rebuilt
+    projects into ura_cache.json (other districts keep their entries). Runs
+    before the poll so every listing scored this cycle is benchmarked against
+    current prints. Never raises: a failed refresh leaves last month's data in
+    place, which is exactly where the scan was before — the digest says so.
+    """
+    ages = {d: _csv_age_days(os.path.join(DATA_DIR, f"ura_district_D{d:02d}.csv"))
+            for d in districts}
+    stale = [d for d, a in ages.items() if a is None or a > max_age_days]
+    oldest = max((a for a in ages.values() if a is not None), default=None)
+    out = {"stale": stale, "oldest_days": round(oldest) if oldest else None}
+    if not stale:
+        out["ok"] = True
+        return out
+    print(f"Refreshing URA prints for {len(stale)} district(s) "
+          f"(oldest {out['oldest_days']}d; a browser window will open)…",
+          file=sys.stderr)
+    cmd = [sys.executable, os.path.join(BASE, "fetch_ura_districts.py"),
+           "--districts", ",".join(str(d) for d in stale),
+           "--max-age", str(max_age_days)]
+    try:
+        proc = subprocess.run(cmd, cwd=BASE, timeout=1200)
+        out["ok"] = proc.returncode == 0
+    except (subprocess.TimeoutExpired, OSError) as e:
+        out.update(ok=False, error=f"{type(e).__name__}: {e}")
+    still = [d for d in stale
+             if (_csv_age_days(os.path.join(DATA_DIR, f"ura_district_D{d:02d}.csv"))
+                 or 1e9) > max_age_days]
+    out["refreshed"] = [d for d in stale if d not in still]
+    out["still_stale"] = still
+    if still:
+        out["ok"] = False
+    return out
+
+
+def pre_gate_enrich(rows: list[dict], db_listings: dict, cooldown: dict,
+                    min_score: int, known: set, headless: bool,
+                    limit: int = PRE_GATE_ENRICH) -> tuple[list[dict], dict]:
+    """Detail-enrich and re-score the listings in contention, before the real gate.
+
+    Runs the gate uncapped to find who is eligible, takes the top `limit` that
+    have no floor level yet, visits their detail pages, re-scores them, and
+    swaps the fresh scores into `rows`. Returns (rows, report). Best-effort:
+    any failure returns the rows untouched.
+    """
+    report = {"attempted": 0, "enriched": 0, "rescored": 0}
+    try:
+        eligible, _ = select_candidates(rows, db_listings, cooldown_index=cooldown,
+                                        min_score=min_score, max_ai=10_000,
+                                        known_projects=known)
+        eligible.sort(key=lambda c: c.get("score_1000") or 0, reverse=True)
+        # No latitude = the detail page was never visited (floor_level alone
+        # is a bad test: posting agents leave it blank ~60% of the time).
+        targets = [c["id"] for c in eligible
+                   if not (db_listings.get(c["id"]) or {}).get("latitude")][:limit]
+        if not targets:
+            return rows, report
+        print(f"Pre-gate: detail-enriching {len(targets)} contender(s) of "
+              f"{len(eligible)} eligible, then re-scoring…", file=sys.stderr)
+        enr = poller._enrich_new_keys(targets, headless=headless, cap=limit)
+        report.update(attempted=enr["attempted"], enriched=enr["enriched"])
+        _, scored = poller._score_keys(targets)
+        report["rescored"] = len(scored)
+        fresh = {r["id"]: r for r in scored}
+        rows = [{**r, **fresh[r["id"]]} if r["id"] in fresh else r for r in rows]
+    except Exception as e:  # noqa: BLE001 — a coverage bonus, never fatal
+        report["error"] = f"{type(e).__name__}: {e}"
+        print(f"  pre-gate enrichment failed ({e}) — gating on poll scores",
+              file=sys.stderr)
+    return rows, report
+
+
+def prewarm_realsmart(shortlist: list[dict]) -> dict:
+    """Fetch REALSCORE once per shortlisted project and attach it to each cand.
+
+    Used to be step ② of every agent run — a fetch the agent had to make,
+    parse and cross-check itself, and which failed on every 2026-09-18 run
+    (wrong interpreter for the fetch script). realsmart_cache dedupes by
+    project, caches for 45 days, and spaces requests politely. Never raises.
+    """
+    try:
+        import realsmart_cache
+        got = realsmart_cache.warm([c.get("project_name") for c in shortlist
+                                    if c.get("project_name")])
+    except Exception as e:  # noqa: BLE001 — the agent falls back to fetching
+        print(f"  realsmart prewarm failed ({e}) — agents will fetch",
+              file=sys.stderr)
+        return {"ok": 0, "missing": len(shortlist)}
+    ok = 0
+    for c in shortlist:
+        rec = got.get(c.get("project_name")) or {}
+        if rec.get("ok"):
+            ok += 1
+            c["realsmart"] = {
+                "ok": True, "url": rec.get("url"),
+                "realscore": rec.get("realscore"),
+                "pct_profitable": rec.get("pct_profitable"),
+                "annual_return_pct": rec.get("annual_return_pct"),
+                "transactions": rec.get("resale_txns"),
+                "fetched_on": datetime.fromtimestamp(
+                    rec.get("fetched_at") or time.time()).strftime("%Y-%m-%d"),
+            }
+    return {"ok": ok, "missing": len(shortlist) - ok}
 
 
 def keep_awake() -> subprocess.Popen | None:
@@ -1090,6 +1327,22 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
         L.append(f"> ⚠️ **Poll FAILED** — `{poll_state.get('error')}`. "
                  "Everything below is from the DB as it stands; the week was NOT "
                  "marked done, so just run it again.")
+
+    pf = poll_state.get("preflight") or {}
+    ura, enr = pf.get("ura") or {}, pf.get("enrich") or {}
+    bits = []
+    if ura:
+        bits.append(f"URA prints refreshed D{','.join(str(d) for d in ura['refreshed'])}"
+                    if ura.get("refreshed") else
+                    f"URA prints current (oldest {ura.get('oldest_days')}d)"
+                    if ura.get("ok") else
+                    f"⚠️ URA refresh FAILED — scored on prints {ura.get('oldest_days')}d old")
+    if enr:
+        bits.append(f"pre-gate: {enr.get('enriched', 0)}/{enr.get('attempted', 0)} "
+                    f"contenders detail-enriched, {enr.get('rescored', 0)} re-scored"
+                    + (f" (⚠️ {enr['error']})" if enr.get("error") else ""))
+    if bits:
+        L += ["", "**Pre-flight** · " + " · ".join(bits)]
 
     # The re-eval cooldown is deliberately LENS-AGNOSTIC: a fresh nomination
     # by a different lens is not a different question about the same unit
@@ -1341,6 +1594,12 @@ def main() -> int:
     ap.add_argument("--no-deep", action="store_true",
                     help="skip this cycle's rotating deep-verification scope "
                          "(one scope crawled to its end so deep stock is re-seen)")
+    ap.add_argument("--parallel", type=int, default=AI_PARALLEL,
+                    help=f"agent runs in flight at once (default {AI_PARALLEL}; 1 = serial)")
+    ap.add_argument("--no-refresh", action="store_true",
+                    help="skip the pre-flight URA transaction refresh")
+    ap.add_argument("--no-enrich", action="store_true",
+                    help="skip pre-gate detail enrichment + re-score of the contenders")
     ap.add_argument("--no-store-push", action="store_true",
                     help="don't append good finds to the personal data store note")
     args = ap.parse_args()
@@ -1358,6 +1617,16 @@ def main() -> int:
               f"{last.get('finished_at')}) — digest: {last.get('digest')}. "
               f"Use --force to re-run.")
         return 0
+
+    # 0. Pre-flight — current URA prints before anything gets scored. Skipped
+    # with --no-poll: nothing is re-scored then, so fresh comps would change
+    # nothing but the wait.
+    refresh = {}
+    if not args.no_refresh and not args.no_poll and not args.full_book:
+        refresh = refresh_ura(OCR_DISTRICTS)
+        if not refresh.get("ok"):
+            print(f"  ⚠ URA refresh incomplete ({refresh.get('error') or refresh.get('still_stale')})"
+                  " — scoring on the older prints", file=sys.stderr)
 
     # 1. Poll
     if args.no_poll:
@@ -1402,10 +1671,23 @@ def main() -> int:
                     "scraped": deep.get("scraped"), "added": deep.get("added"),
                     "ok": bool(deep.get("ok")),
                 }
+                # The deep crawl's own arrivals must reach the gate. They used
+                # to be dropped (only the main poll's rows were gated), and
+                # next week they are no longer "new", so they never were.
+                seen = {r["id"] for r in (poll_state.get("new_listings") or [])
+                        + (poll_state.get("changed_listings") or [])}
+                for key in ("new_listings", "changed_listings"):
+                    extra = [r for r in (deep.get(key) or []) if r["id"] not in seen]
+                    poll_state[key] = list(poll_state.get(key) or []) + extra
+                    seen.update(r["id"] for r in extra)
             except Exception as e:  # noqa: BLE001 — bonus coverage, never fatal
                 poll_state["deep_scope"] = {"districts": dd, "beds": db_,
                                             "ok": False, "error": str(e)}
                 print(f"  deep verify failed ({e}) — continuing", file=sys.stderr)
+            # run_poll saved the DEEP scope as the last poll; put the main
+            # poll back so `--no-poll` reuse later today sees the whole cycle.
+            if poll_state.get("ok"):
+                poller._save_poll_state(poll_state)
 
     rows = list(poll_state.get("new_listings") or []) + \
         list(poll_state.get("changed_listings") or [])
@@ -1443,49 +1725,37 @@ def main() -> int:
         print(f"--no-poll: grading {len(rows)} listing(s) new or re-priced since {since}",
               file=sys.stderr)
 
-    # 2/3. Gate
+    # 2/3. Gate — enrich + re-score the contenders first, then the real gate.
     db_listings = listings_db.load_db()["listings"]
     cooldown = _eval_cooldown_index(RE_EVAL_COOLDOWN_DAYS, now)
+    known = _known_projects()
+    enrich = {}
+    if not args.no_enrich and not args.full_book and poll_state.get("ok"):
+        rows, enrich = pre_gate_enrich(rows, db_listings, cooldown, args.min_score,
+                                       known, headless=args.headless)
+        if enrich.get("rescored"):
+            db_listings = listings_db.load_db()["listings"]
+    poll_state["preflight"] = {"ura": refresh, "enrich": enrich}
     shortlist, rejected = select_candidates(
         rows, db_listings, cooldown_index=cooldown,
         min_score=args.min_score, max_ai=args.max_ai,
-        known_projects=_known_projects())
+        known_projects=known)
     print(f"\nGate: {len(rows)} new/changed → {len(shortlist)} for AI analysis "
           f"(>= {args.min_score}, cap {args.max_ai})", file=sys.stderr)
 
-    # 4. AI analyze — sequential on purpose: each run is a full agent doing web
-    # research, and serializing keeps cost, logs and any browser use legible.
+    # 4. AI analyze — realsmart looked up once per project first, then the
+    # agents run `--parallel` at a time.
     verdicts: dict[str, dict] = {}
     runs = []
-    if not args.dry_run:
-        for i, cand in enumerate(shortlist, 1):
-            print(f"  [{i}/{len(shortlist)}] analyzing {cand.get('project_name')} "
-                  f"({cand.get('score_1000')})…", file=sys.stderr)
-            run = run_agent(cand)
-            runs.append(run)
-            if not run.get("ok"):
-                print(f"      agent run failed: {run.get('error') or run.get('returncode')} "
-                      f"— see {run['log']}", file=sys.stderr)
-            v = read_verdict(cand, on_or_after=day)
-
-            # One retry when the run produced no verdict. Transient API errors
-            # ("Connection closed mid-response") land here AFTER the research is
-            # done but before the evaluation is written — losing the whole slot
-            # to a flaky connection. Slots are the scarce resource, so buying
-            # one retry is cheaper than dropping a candidate. Strictly one: a
-            # listing that genuinely defeats the flow must not loop.
-            if v is None:
-                print("      → no evaluation saved; retrying once", file=sys.stderr)
-                run = run_agent(cand)
-                run["retry"] = True
-                runs.append(run)
-                v = read_verdict(cand, on_or_after=day)
-
-            if v:
-                verdicts[cand["id"]] = v
-                print(f"      → {v.get('rating')} ({v.get('confidence')})", file=sys.stderr)
-            else:
-                print("      → no evaluation saved (after retry)", file=sys.stderr)
+    if not args.dry_run and shortlist:
+        rs = prewarm_realsmart(shortlist)
+        print(f"realsmart: {rs['ok']}/{len(shortlist)} pre-fetched", file=sys.stderr)
+        print(f"Analyzing {len(shortlist)} listing(s), {args.parallel} at a time…",
+              file=sys.stderr)
+        t_ai = time.time()
+        verdicts, runs = run_agents(shortlist, day, parallel=args.parallel)
+        print(f"AI phase: {len(verdicts)}/{len(shortlist)} verdicts in "
+              f"{(time.time() - t_ai) / 60:.0f} min", file=sys.stderr)
 
     # 6. Store push (before the digest, so the digest can report what was pushed)
     pushed = [] if (args.dry_run or args.no_store_push) \
