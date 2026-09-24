@@ -67,11 +67,11 @@
       "transaction_count": 348,
       "avg_psf_current": 2607.0,
       "median_psf": 2607.0,
-      "avg_psf_5yr_ago": 2579.0,
+      "avg_psf_5yr_ago": 2578.0,
       "appreciation_1yr": 3.2884310618066515,
       "appreciation_3yr": -5.372050816696916,
-      "appreciation_5yr": 1.085692128732063,
-      "annualized_appreciation": 0.21620154025407956,
+      "appreciation_5yr": 1.1249030256012427,
+      "annualized_appreciation": 0.22397505892814973,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 286,
@@ -79,7 +79,7 @@
       "resale_transaction_count": 62,
       "resale_annualized_appreciation": 0.07683445204900163,
       "has_new_launch_bias": true,
-      "appreciation_momentum": 0.614,
+      "appreciation_momentum": 0.613,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -302,7 +302,7 @@
             "txn_count": 1
           },
           "600-800": {
-            "median_psf": 2888.0,
+            "median_psf": 2887.0,
             "txn_count": 35
           },
           "800-1050": {
@@ -603,7 +603,7 @@
       "median_psf": 2778.5,
       "avg_psf_5yr_ago": 2582.5,
       "appreciation_1yr": -3.658113730929269,
-      "appreciation_3yr": 1.1835396941004994,
+      "appreciation_3yr": 1.2204007285974594,
       "appreciation_5yr": 7.589545014520804,
       "annualized_appreciation": 1.4738210305578647,
       "source": "ura_5yr_cagr",
@@ -611,7 +611,7 @@
       "new_sale_count": 25,
       "new_sale_proportion": 0.521,
       "resale_transaction_count": 23,
-      "resale_annualized_appreciation": 0.3929669781358669,
+      "resale_annualized_appreciation": 0.4051565080004593,
       "has_new_launch_bias": true,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -1347,7 +1347,7 @@
             "txn_count": 2
           },
           "1050-1400": {
-            "median_psf": 2971.5,
+            "median_psf": 2971.0,
             "txn_count": 8
           }
         }
@@ -1661,21 +1661,21 @@
       "tenure": "99 yrs lease commencing from 1994",
       "lease_start_year": 1994,
       "transaction_count": 101,
-      "avg_psf_current": 1848.0,
-      "median_psf": 1848.0,
+      "avg_psf_current": 1847.0,
+      "median_psf": 1847.0,
       "avg_psf_5yr_ago": 1700.0,
-      "appreciation_1yr": -0.3236245954692518,
-      "appreciation_3yr": 4.288939051918739,
-      "appreciation_5yr": 8.705882352941185,
-      "annualized_appreciation": 1.6835287170092972,
+      "appreciation_1yr": -0.3775620280474623,
+      "appreciation_3yr": 4.232505643340856,
+      "appreciation_5yr": 8.647058823529408,
+      "annualized_appreciation": 1.6725216233634654,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 101,
-      "resale_annualized_appreciation": 1.6835287170092972,
+      "resale_annualized_appreciation": 1.6725216233634654,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.401,
+      "appreciation_momentum": -0.41,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -1761,7 +1761,7 @@
         "txn_count": 67,
         "low": 0.9587,
         "mid": 1.0,
-        "high": 1.043
+        "high": 1.0431
       }
     },
     "river place": {
@@ -1932,7 +1932,7 @@
         "txn_count": 62,
         "low": 0.959,
         "mid": 1.0,
-        "high": 1.0427
+        "high": 1.0428
       }
     },
     "seventy st patrick's": {
@@ -1973,7 +1973,7 @@
         "recent_median_psf": 2445.0,
         "bands": {
           "1800+": {
-            "median_psf": 2193.0,
+            "median_psf": 2192.0,
             "txn_count": 1
           },
           "0-600": {
@@ -2117,19 +2117,19 @@
       "transaction_count": 23,
       "avg_psf_current": 2612.0,
       "median_psf": 2612.0,
-      "avg_psf_5yr_ago": 1930.0,
+      "avg_psf_5yr_ago": 1929.5,
       "appreciation_1yr": 8.314327182251713,
       "appreciation_3yr": 16.58112028565053,
-      "appreciation_5yr": 35.33678756476684,
-      "annualized_appreciation": 7.858398097109798,
+      "appreciation_5yr": 35.37185799429905,
+      "annualized_appreciation": 7.865384875970549,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 23,
-      "resale_annualized_appreciation": 7.858398097109798,
+      "resale_annualized_appreciation": 7.865384875970549,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.091,
+      "appreciation_momentum": 0.09,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -2317,7 +2317,7 @@
         "txn_count": 46,
         "low": 0.9928,
         "mid": 1.0,
-        "high": 1.0073
+        "high": 1.0072
       }
     },
     "the hacienda": {
@@ -2331,7 +2331,7 @@
       "median_psf": 1705.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": 0.9473060982830184,
-      "appreciation_3yr": 0.8279124778237668,
+      "appreciation_3yr": 0.8875739644970349,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -2341,7 +2341,7 @@
       "resale_transaction_count": 16,
       "resale_annualized_appreciation": 3.1171165622239982,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.134,
+      "appreciation_momentum": 0.13,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -2714,7 +2714,7 @@
       "avg_psf_current": 1915.0,
       "median_psf": 1915.0,
       "avg_psf_5yr_ago": 1403.0,
-      "appreciation_1yr": 3.878491998915101,
+      "appreciation_1yr": 3.90667390124797,
       "appreciation_3yr": 16.484184914841848,
       "appreciation_5yr": 36.49322879543835,
       "annualized_appreciation": 6.4197468401389735,
@@ -2725,14 +2725,14 @@
       "resale_transaction_count": 87,
       "resale_annualized_appreciation": 6.4197468401389735,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.508,
+      "appreciation_momentum": -0.503,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
         "recent_median_psf": 1850.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1843.5,
+            "median_psf": 1843.0,
             "txn_count": 22
           },
           "1400-1800": {
@@ -2915,7 +2915,7 @@
       "median_psf": 1632.5,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 0.5233990147783141,
+      "appreciation_3yr": 0.5543578688019801,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -2923,13 +2923,13 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 10,
-      "resale_annualized_appreciation": 0.5233990147783141,
+      "resale_annualized_appreciation": 0.5543578688019801,
       "has_new_launch_bias": false,
       "appreciation_momentum": null,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1624.0,
+        "recent_median_psf": 1623.5,
         "bands": {
           "0-600": {
             "median_psf": 1631.0,
@@ -3022,7 +3022,7 @@
             "txn_count": 4
           },
           "600-800": {
-            "median_psf": 2124.0,
+            "median_psf": 2123.0,
             "txn_count": 1
           },
           "0-600": {
@@ -3775,10 +3775,10 @@
       "data_coverage": "none",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 827.5,
+        "recent_median_psf": 827.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 827.5,
+            "median_psf": 827.0,
             "txn_count": 2
           }
         }
@@ -4124,7 +4124,7 @@
       "avg_psf_current": 1650.0,
       "median_psf": 1650.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 1.977750309023496,
+      "appreciation_1yr": 2.0408163265306145,
       "appreciation_3yr": 19.956379498364242,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -4135,7 +4135,7 @@
       "resale_transaction_count": 13,
       "resale_annualized_appreciation": 7.763079274028839,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.935,
+      "appreciation_momentum": -0.922,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -4273,7 +4273,7 @@
         "recent_median_psf": 1406.5,
         "bands": {
           "1050-1400": {
-            "median_psf": 1146.0,
+            "median_psf": 1145.5,
             "txn_count": 2
           },
           "0-600": {
@@ -5151,7 +5151,7 @@
       "avg_psf_current": 1781.0,
       "median_psf": 1781.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 6.423662981774725,
+      "appreciation_1yr": 6.455469216975485,
       "appreciation_3yr": 10.142238713667284,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -5162,7 +5162,7 @@
       "resale_transaction_count": 16,
       "resale_annualized_appreciation": 3.063487291038358,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.609,
+      "appreciation_momentum": 0.615,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -5549,7 +5549,7 @@
       "median_psf": 1161.0,
       "avg_psf_5yr_ago": 838.0,
       "appreciation_1yr": null,
-      "appreciation_3yr": 12.445520581113811,
+      "appreciation_3yr": 12.5,
       "appreciation_5yr": 38.544152744630075,
       "annualized_appreciation": 11.479770772786967,
       "source": "ura_5yr_cagr",
@@ -5563,10 +5563,10 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1032.5,
+        "recent_median_psf": 1032.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1032.5,
+            "median_psf": 1032.0,
             "txn_count": 4
           }
         }
@@ -7876,9 +7876,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 45,
-        "low": 0.9588,
+        "low": 0.9587,
         "mid": 1.0,
-        "high": 1.043
+        "high": 1.0431
       }
     },
     "pavilion square": {
@@ -9415,17 +9415,17 @@
       "transaction_count": 17,
       "avg_psf_current": 1384.0,
       "median_psf": 1384.0,
-      "avg_psf_5yr_ago": 1004.5,
+      "avg_psf_5yr_ago": 1004.0,
       "appreciation_1yr": 67.35187424425635,
       "appreciation_3yr": 20.03469210754554,
-      "appreciation_5yr": 37.77999004479842,
-      "annualized_appreciation": 6.619644420547455,
+      "appreciation_5yr": 37.848605577689256,
+      "annualized_appreciation": 6.630261792239867,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 17,
-      "resale_annualized_appreciation": 6.619644420547455,
+      "resale_annualized_appreciation": 6.630261792239867,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "5yr",
@@ -10268,10 +10268,10 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 3,
-      "avg_psf_current": 1341.5,
-      "median_psf": 1341.5,
+      "avg_psf_current": 1341.0,
+      "median_psf": 1341.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 19.66993755575379,
+      "appreciation_1yr": 19.62533452274755,
       "appreciation_3yr": null,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -10286,14 +10286,14 @@
       "data_coverage": "1yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1168.0,
+        "recent_median_psf": 1167.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1515.0,
             "txn_count": 1
           },
           "1800+": {
-            "median_psf": 1144.5,
+            "median_psf": 1144.0,
             "txn_count": 2
           }
         }
@@ -10483,17 +10483,17 @@
       "transaction_count": 5,
       "avg_psf_current": 1488.0,
       "median_psf": 1488.0,
-      "avg_psf_5yr_ago": 1082.0,
+      "avg_psf_5yr_ago": 1081.0,
       "appreciation_1yr": null,
       "appreciation_3yr": 5.494505494505497,
-      "appreciation_5yr": 37.52310536044363,
-      "annualized_appreciation": 11.205232768902707,
+      "appreciation_5yr": 37.65032377428308,
+      "annualized_appreciation": 11.23951305244546,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 11.205232768902707,
+      "resale_annualized_appreciation": 11.23951305244546,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -11746,7 +11746,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 986.5,
+        "recent_median_psf": 986.0,
         "bands": {
           "1050-1400": {
             "median_psf": 948.0,
@@ -12349,7 +12349,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 64,
-        "low": 0.9812,
+        "low": 0.9811,
         "mid": 1.0,
         "high": 1.0192
       }
@@ -12414,7 +12414,7 @@
       "median_psf": 1446.0,
       "avg_psf_5yr_ago": 917.0,
       "appreciation_1yr": 2.991452991452981,
-      "appreciation_3yr": 32.35697940503432,
+      "appreciation_3yr": 32.417582417582416,
       "appreciation_5yr": 57.688113413304244,
       "annualized_appreciation": 9.53673495975389,
       "source": "ura_5yr_cagr",
@@ -12538,7 +12538,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1394.5,
+        "recent_median_psf": 1394.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1429.0,
@@ -12685,14 +12685,14 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1428.0,
+        "recent_median_psf": 1427.5,
         "bands": {
           "0-600": {
             "median_psf": 1599.0,
             "txn_count": 3
           },
           "600-800": {
-            "median_psf": 1428.0,
+            "median_psf": 1427.5,
             "txn_count": 2
           },
           "1400-1800": {
@@ -14150,7 +14150,7 @@
       "median_psf": 1526.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": -13.147410358565736,
-      "appreciation_3yr": 17.339484813533247,
+      "appreciation_3yr": 17.384615384615376,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -14158,13 +14158,13 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 5.4746417684391036,
+      "resale_annualized_appreciation": 5.4881624251400085,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1400.0,
+        "recent_median_psf": 1399.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1739.0,
@@ -14175,7 +14175,7 @@
             "txn_count": 2
           },
           "1400-1800": {
-            "median_psf": 1400.0,
+            "median_psf": 1399.0,
             "txn_count": 1
           }
         }
@@ -15281,7 +15281,7 @@
       "median_psf": 1839.5,
       "avg_psf_5yr_ago": 1291.5,
       "appreciation_1yr": 4.844685095468804,
-      "appreciation_3yr": 25.69183464297915,
+      "appreciation_3yr": 25.734791524265212,
       "appreciation_5yr": 42.4312814556717,
       "annualized_appreciation": 7.32998689462625,
       "source": "ura_5yr_cagr",
@@ -15316,7 +15316,7 @@
         "txn_count": 40,
         "low": 0.9449,
         "mid": 1.0,
-        "high": 1.0583
+        "high": 1.0584
       }
     },
     "kovan primera": {
@@ -15457,7 +15457,7 @@
             "txn_count": 10
           },
           "1800+": {
-            "median_psf": 1151.5,
+            "median_psf": 1151.0,
             "txn_count": 2
           },
           "800-1050": {
@@ -16389,7 +16389,7 @@
       "transaction_count": 16,
       "avg_psf_current": null,
       "median_psf": null,
-      "avg_psf_5yr_ago": 1518.5,
+      "avg_psf_5yr_ago": 1518.0,
       "appreciation_1yr": null,
       "appreciation_3yr": null,
       "appreciation_5yr": null,
@@ -16966,7 +16966,7 @@
       "avg_psf_current": 1758.0,
       "median_psf": 1758.0,
       "avg_psf_5yr_ago": 1398.0,
-      "appreciation_1yr": 1.1216566005176842,
+      "appreciation_1yr": 1.1507479861910141,
       "appreciation_3yr": 7.457212713936423,
       "appreciation_5yr": 25.7510729613734,
       "annualized_appreciation": 4.6893105921439915,
@@ -16977,7 +16977,7 @@
       "resale_transaction_count": 564,
       "resale_annualized_appreciation": 4.14379370847191,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.714,
+      "appreciation_momentum": -0.708,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -17318,25 +17318,25 @@
       "tenure": "999 yrs lease commencing from 1886",
       "lease_start_year": 1886,
       "transaction_count": 7,
-      "avg_psf_current": 1287.5,
-      "median_psf": 1287.5,
+      "avg_psf_current": 1287.0,
+      "median_psf": 1287.0,
       "avg_psf_5yr_ago": 934.0,
-      "appreciation_1yr": -5.156537753222834,
-      "appreciation_3yr": 18.663594470046085,
-      "appreciation_5yr": 37.847965738758035,
-      "annualized_appreciation": 6.630162804920947,
+      "appreciation_1yr": -5.193370165745859,
+      "appreciation_3yr": 18.617511520737317,
+      "appreciation_5yr": 37.79443254817987,
+      "annualized_appreciation": 6.621879563711275,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 7,
-      "resale_annualized_appreciation": 6.630162804920947,
+      "resale_annualized_appreciation": 6.621879563711275,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1168.0,
+        "recent_median_psf": 1167.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1398.0,
@@ -17457,7 +17457,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 68,
-        "low": 0.9661,
+        "low": 0.966,
         "mid": 1.0,
         "high": 1.0351
       }
@@ -17758,7 +17758,7 @@
       "avg_psf_current": 1790.0,
       "median_psf": 1790.0,
       "avg_psf_5yr_ago": 1214.0,
-      "appreciation_1yr": 1.1871113623516116,
+      "appreciation_1yr": 1.2157195363302176,
       "appreciation_3yr": 10.086100861008607,
       "appreciation_5yr": 47.446457990115334,
       "annualized_appreciation": 8.075404296088484,
@@ -17773,7 +17773,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1680.0,
+        "recent_median_psf": 1679.0,
         "bands": {
           "0-600": {
             "median_psf": 1707.5,
@@ -17803,7 +17803,7 @@
       "avg_psf_current": 1728.5,
       "median_psf": 1728.5,
       "avg_psf_5yr_ago": 983.0,
-      "appreciation_1yr": 2.8869047619047628,
+      "appreciation_1yr": 2.9175349806489947,
       "appreciation_3yr": 5.012150668286752,
       "appreciation_5yr": 75.83926754832146,
       "annualized_appreciation": 11.949761634772216,
@@ -17818,7 +17818,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1719.0,
+        "recent_median_psf": 1718.5,
         "bands": {
           "0-600": {
             "median_psf": 1752.0,
@@ -19733,17 +19733,17 @@
       "transaction_count": 253,
       "avg_psf_current": 1656.0,
       "median_psf": 1656.0,
-      "avg_psf_5yr_ago": 1450.0,
+      "avg_psf_5yr_ago": 1449.5,
       "appreciation_1yr": -3.60884749708964,
       "appreciation_3yr": 1.9704433497536922,
-      "appreciation_5yr": 14.206896551724135,
-      "annualized_appreciation": 2.692438370549488,
+      "appreciation_5yr": 14.246291824767155,
+      "annualized_appreciation": 2.6995220733395664,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 253,
-      "resale_annualized_appreciation": 2.692438370549488,
+      "resale_annualized_appreciation": 2.6995220733395664,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -19784,11 +19784,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1402.0,
-      "median_psf": 1402.0,
+      "avg_psf_current": 1401.0,
+      "median_psf": 1401.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -4.0383299110198445,
-      "appreciation_3yr": 11.402463249900684,
+      "appreciation_1yr": -4.106776180698157,
+      "appreciation_3yr": 11.323003575685341,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -19796,7 +19796,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 4.3155561510529905,
+      "resale_annualized_appreciation": 4.296949968889452,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
@@ -19805,7 +19805,7 @@
         "recent_median_psf": 1339.0,
         "bands": {
           "1800+": {
-            "median_psf": 1293.0,
+            "median_psf": 1292.5,
             "txn_count": 2
           },
           "1050-1400": {
@@ -20140,7 +20140,7 @@
             "txn_count": 20
           },
           "800-1050": {
-            "median_psf": 1362.0,
+            "median_psf": 1361.0,
             "txn_count": 7
           }
         }
@@ -21436,7 +21436,7 @@
       "avg_psf_current": 1453.0,
       "median_psf": 1453.0,
       "avg_psf_5yr_ago": 1223.0,
-      "appreciation_1yr": 2.830856334041054,
+      "appreciation_1yr": 2.903682719546752,
       "appreciation_3yr": 19.000819000819003,
       "appreciation_5yr": 18.8062142273099,
       "annualized_appreciation": 3.5065495691589232,
@@ -21447,7 +21447,7 @@
       "resale_transaction_count": 14,
       "resale_annualized_appreciation": 3.5065495691589232,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.135,
+      "appreciation_momentum": -0.121,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -21764,7 +21764,7 @@
       "median_psf": 1696.0,
       "avg_psf_5yr_ago": 1783.0,
       "appreciation_1yr": -11.064499213424227,
-      "appreciation_3yr": -8.125677139761645,
+      "appreciation_3yr": -8.075880758807585,
       "appreciation_5yr": -4.879416713404372,
       "annualized_appreciation": -0.9955077185078376,
       "source": "ura_5yr_cagr",
@@ -21883,7 +21883,7 @@
             "txn_count": 16
           },
           "1400-1800": {
-            "median_psf": 1400.0,
+            "median_psf": 1399.0,
             "txn_count": 1
           }
         }
@@ -21903,19 +21903,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1424.0,
-      "median_psf": 1424.0,
+      "avg_psf_current": 1423.0,
+      "median_psf": 1423.0,
       "avg_psf_5yr_ago": 1369.5,
       "appreciation_1yr": null,
-      "appreciation_3yr": 18.07628524046434,
-      "appreciation_5yr": 3.9795545819642175,
-      "annualized_appreciation": 0.9803770978430215,
+      "appreciation_3yr": 17.99336650082919,
+      "appreciation_5yr": 3.906535231836439,
+      "annualized_appreciation": 0.962644130771162,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 0.9803770978430215,
+      "resale_annualized_appreciation": 0.962644130771162,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "5yr",
@@ -22014,7 +22014,7 @@
             "txn_count": 3
           },
           "800-1050": {
-            "median_psf": 1507.0,
+            "median_psf": 1506.5,
             "txn_count": 2
           }
         }
@@ -22654,7 +22654,7 @@
       "avg_psf_current": 1952.5,
       "median_psf": 1952.5,
       "avg_psf_5yr_ago": 1516.0,
-      "appreciation_1yr": 0.48893463715902197,
+      "appreciation_1yr": 0.5406797116374928,
       "appreciation_3yr": 15.875370919881316,
       "appreciation_5yr": 28.79287598944591,
       "annualized_appreciation": 5.190947801851853,
@@ -22665,18 +22665,18 @@
       "resale_transaction_count": 89,
       "resale_annualized_appreciation": 5.190947801851853,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.94,
+      "appreciation_momentum": -0.93,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1943.0,
+        "recent_median_psf": 1942.0,
         "bands": {
           "1050-1400": {
             "median_psf": 2018.0,
             "txn_count": 11
           },
           "1400-1800": {
-            "median_psf": 1942.0,
+            "median_psf": 1941.5,
             "txn_count": 14
           },
           "600-800": {
@@ -23186,7 +23186,7 @@
         "recent_median_psf": 1486.0,
         "bands": {
           "800-1050": {
-            "median_psf": 1509.0,
+            "median_psf": 1508.5,
             "txn_count": 2
           },
           "1050-1400": {
@@ -23582,7 +23582,7 @@
             "txn_count": 9
           },
           "1800+": {
-            "median_psf": 3692.0,
+            "median_psf": 3691.0,
             "txn_count": 1
           }
         }
@@ -24662,7 +24662,7 @@
       "avg_psf_current": 1147.0,
       "median_psf": 1147.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -0.60658578856152,
+      "appreciation_1yr": -0.5203816131829964,
       "appreciation_3yr": -9.613869188337276,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -24673,11 +24673,11 @@
       "resale_transaction_count": 33,
       "resale_annualized_appreciation": -1.5609334948949338,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.52,
+      "appreciation_momentum": 0.537,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1150.5,
+        "recent_median_psf": 1150.0,
         "bands": {
           "800-1050": {
             "median_psf": 1355.0,
@@ -24770,7 +24770,7 @@
         "recent_median_psf": 3082.0,
         "bands": {
           "0-600": {
-            "median_psf": 3057.0,
+            "median_psf": 3056.0,
             "txn_count": 89
           },
           "600-800": {
@@ -24933,7 +24933,7 @@
             "txn_count": 2
           },
           "600-800": {
-            "median_psf": 2864.0,
+            "median_psf": 2863.5,
             "txn_count": 8
           },
           "0-600": {
@@ -25098,17 +25098,17 @@
       "transaction_count": 54,
       "avg_psf_current": 2173.5,
       "median_psf": 2173.5,
-      "avg_psf_5yr_ago": 2154.5,
+      "avg_psf_5yr_ago": 2154.0,
       "appreciation_1yr": -6.1731059788474045,
       "appreciation_3yr": -5.045871559633031,
-      "appreciation_5yr": 0.8818751450452522,
-      "annualized_appreciation": 0.1757561378257,
+      "appreciation_5yr": 0.9052924791086436,
+      "annualized_appreciation": 0.18040639112479884,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 54,
-      "resale_annualized_appreciation": 0.1757561378257,
+      "resale_annualized_appreciation": 0.18040639112479884,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -25145,32 +25145,32 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 38,
-      "avg_psf_current": 2253.0,
-      "median_psf": 2253.0,
+      "avg_psf_current": 2252.5,
+      "median_psf": 2252.5,
       "avg_psf_5yr_ago": 2229.5,
-      "appreciation_1yr": -3.882252559726962,
-      "appreciation_3yr": -7.928075194115247,
-      "appreciation_5yr": 1.0540479928234925,
-      "annualized_appreciation": 0.2099263647967753,
+      "appreciation_1yr": -3.9035836177474414,
+      "appreciation_3yr": -7.9485083776052345,
+      "appreciation_5yr": 1.0316214397847023,
+      "annualized_appreciation": 0.20547812586033665,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 38,
-      "resale_annualized_appreciation": 0.2099263647967753,
+      "resale_annualized_appreciation": 0.20547812586033665,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.818,
+      "appreciation_momentum": -0.822,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2331.0,
+        "recent_median_psf": 2330.0,
         "bands": {
           "0-600": {
             "median_psf": 2311.0,
             "txn_count": 8
           },
           "600-800": {
-            "median_psf": 2331.0,
+            "median_psf": 2330.0,
             "txn_count": 1
           }
         }
@@ -26845,7 +26845,7 @@
         "txn_count": 57,
         "low": 0.9589,
         "mid": 1.0,
-        "high": 1.0429
+        "high": 1.0428
       }
     },
     "fairmount condominium": {
@@ -26857,17 +26857,17 @@
       "transaction_count": 13,
       "avg_psf_current": 1179.0,
       "median_psf": 1179.0,
-      "avg_psf_5yr_ago": 1018.0,
+      "avg_psf_5yr_ago": 1017.0,
       "appreciation_1yr": 10.808270676691723,
       "appreciation_3yr": 11.278905143935813,
-      "appreciation_5yr": 15.815324165029466,
-      "annualized_appreciation": 2.980075387100567,
+      "appreciation_5yr": 15.92920353982301,
+      "annualized_appreciation": 3.000319162084919,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 13,
-      "resale_annualized_appreciation": 2.980075387100567,
+      "resale_annualized_appreciation": 3.000319162084919,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "5yr",
@@ -27112,7 +27112,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 21,
-      "resale_annualized_appreciation": -0.3272448158754604,
+      "resale_annualized_appreciation": -0.31796904869263454,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
@@ -27546,7 +27546,7 @@
             "txn_count": 143
           },
           "1400-1800": {
-            "median_psf": 2494.5,
+            "median_psf": 2494.0,
             "txn_count": 8
           },
           "600-800": {
@@ -27909,7 +27909,7 @@
       "median_psf": 1402.0,
       "avg_psf_5yr_ago": 1060.0,
       "appreciation_1yr": 7.597851112816567,
-      "appreciation_3yr": 13.983739837398378,
+      "appreciation_3yr": 14.0300935339569,
       "appreciation_5yr": 32.26415094339623,
       "annualized_appreciation": 5.751961063038413,
       "source": "ura_5yr_cagr",
@@ -28060,7 +28060,7 @@
       "median_psf": 1629.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": 3.890306122448983,
-      "appreciation_3yr": 17.363112391930848,
+      "appreciation_3yr": 17.447728911319405,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -28068,9 +28068,9 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 7,
-      "resale_annualized_appreciation": 5.481720781154098,
+      "resale_annualized_appreciation": 5.50706478039491,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.379,
+      "appreciation_momentum": -0.385,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -28332,7 +28332,7 @@
         "txn_count": 62,
         "low": 0.958,
         "mid": 1.0,
-        "high": 1.0439
+        "high": 1.0438
       }
     },
     "the summit": {
@@ -28645,7 +28645,7 @@
         "recent_median_psf": 1611.0,
         "bands": {
           "800-1050": {
-            "median_psf": 1388.0,
+            "median_psf": 1387.0,
             "txn_count": 13
           },
           "0-600": {
@@ -28669,7 +28669,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 58,
-        "low": 0.987,
+        "low": 0.9871,
         "mid": 1.0,
         "high": 1.0131
       }
@@ -29073,11 +29073,11 @@
             "txn_count": 174
           },
           "1400-1800": {
-            "median_psf": 3034.0,
+            "median_psf": 3033.0,
             "txn_count": 87
           },
           "600-800": {
-            "median_psf": 3035.5,
+            "median_psf": 3035.0,
             "txn_count": 168
           },
           "0-600": {
@@ -29191,7 +29191,7 @@
             "txn_count": 226
           },
           "1050-1400": {
-            "median_psf": 2843.0,
+            "median_psf": 2842.5,
             "txn_count": 152
           },
           "800-1050": {
@@ -29258,7 +29258,7 @@
         "txn_count": 192,
         "low": 0.9703,
         "mid": 1.0,
-        "high": 1.0306
+        "high": 1.0307
       }
     },
     "promenade peak": {
@@ -29289,7 +29289,7 @@
         "recent_median_psf": 2943.0,
         "bands": {
           "600-800": {
-            "median_psf": 2912.5,
+            "median_psf": 2912.0,
             "txn_count": 236
           },
           "1400-1800": {
@@ -29347,7 +29347,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2265.5,
+        "recent_median_psf": 2265.0,
         "bands": {
           "0-600": {
             "median_psf": 2153.0,
@@ -29382,25 +29382,25 @@
       "tenure": "99 yrs lease commencing from 2014",
       "lease_start_year": 2014,
       "transaction_count": 209,
-      "avg_psf_current": 2193.0,
-      "median_psf": 2193.0,
+      "avg_psf_current": 2192.0,
+      "median_psf": 2192.0,
       "avg_psf_5yr_ago": 1944.0,
-      "appreciation_1yr": 1.3401109057301186,
-      "appreciation_3yr": 6.949524506217997,
-      "appreciation_5yr": 12.808641975308642,
-      "annualized_appreciation": 2.4397415786532095,
+      "appreciation_1yr": 1.3407304669440512,
+      "appreciation_3yr": 6.900755913191903,
+      "appreciation_5yr": 12.757201646090532,
+      "annualized_appreciation": 2.430397444448751,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 209,
-      "resale_annualized_appreciation": 2.4397415786532095,
+      "resale_annualized_appreciation": 2.430397444448751,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.22,
+      "appreciation_momentum": -0.218,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2185.5,
+        "recent_median_psf": 2184.5,
         "bands": {
           "0-600": {
             "median_psf": 1949.0,
@@ -29411,7 +29411,7 @@
             "txn_count": 17
           },
           "600-800": {
-            "median_psf": 2178.0,
+            "median_psf": 2177.0,
             "txn_count": 15
           },
           "1050-1400": {
@@ -30272,13 +30272,13 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 4,
-      "avg_psf_current": 1905.0,
-      "median_psf": 1905.0,
+      "avg_psf_current": 1904.0,
+      "median_psf": 1904.0,
       "avg_psf_5yr_ago": 1544.0,
       "appreciation_1yr": null,
-      "appreciation_3yr": 1.9807280513918668,
-      "appreciation_5yr": 23.380829015544037,
-      "annualized_appreciation": 5.3930374137389325,
+      "appreciation_3yr": 1.9271948608136968,
+      "appreciation_5yr": 23.316062176165797,
+      "annualized_appreciation": 5.379203582973857,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
@@ -30293,7 +30293,7 @@
         "recent_median_psf": 1767.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1663.5,
+            "median_psf": 1663.0,
             "txn_count": 2
           },
           "800-1050": {
@@ -31334,7 +31334,7 @@
       "new_sale_count": 1,
       "new_sale_proportion": 0.037,
       "resale_transaction_count": 26,
-      "resale_annualized_appreciation": 1.1157717939580536,
+      "resale_annualized_appreciation": 1.1223662291705905,
       "has_new_launch_bias": false,
       "appreciation_momentum": 0.1,
       "data_coverage": "5yr",
@@ -31833,7 +31833,7 @@
             "txn_count": 2
           },
           "0-600": {
-            "median_psf": 1648.5,
+            "median_psf": 1648.0,
             "txn_count": 2
           },
           "1050-1400": {
@@ -32049,7 +32049,7 @@
       "median_psf": 1186.0,
       "avg_psf_5yr_ago": 835.0,
       "appreciation_1yr": 0.08438818565401629,
-      "appreciation_3yr": 10.582750582750577,
+      "appreciation_3yr": 10.634328358208943,
       "appreciation_5yr": 42.035928143712574,
       "annualized_appreciation": 7.270336433586477,
       "source": "ura_5yr_cagr",
@@ -32380,11 +32380,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 17,
-      "avg_psf_current": 2083.0,
-      "median_psf": 2083.0,
+      "avg_psf_current": 2082.5,
+      "median_psf": 2082.5,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 6.875320677270391,
+      "appreciation_3yr": 6.849666495638784,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -32405,7 +32405,7 @@
             "txn_count": 7
           },
           "0-600": {
-            "median_psf": 2130.5,
+            "median_psf": 2130.0,
             "txn_count": 4
           },
           "600-800": {
@@ -33007,19 +33007,19 @@
       "transaction_count": 13,
       "avg_psf_current": 1502.0,
       "median_psf": 1502.0,
-      "avg_psf_5yr_ago": 1190.5,
+      "avg_psf_5yr_ago": 1190.0,
       "appreciation_1yr": 2.9472241261137677,
       "appreciation_3yr": 4.924903946908832,
-      "appreciation_5yr": 26.165476690466182,
-      "annualized_appreciation": 4.758219056169,
+      "appreciation_5yr": 26.21848739495798,
+      "annualized_appreciation": 4.767020788695908,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 13,
-      "resale_annualized_appreciation": 4.758219056169,
+      "resale_annualized_appreciation": 4.767020788695908,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.362,
+      "appreciation_momentum": -0.364,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -33242,7 +33242,7 @@
       "median_psf": 1412.0,
       "avg_psf_5yr_ago": 1231.0,
       "appreciation_1yr": -11.97007481296758,
-      "appreciation_3yr": 1.729106628242083,
+      "appreciation_3yr": 1.8024513338139814,
       "appreciation_5yr": 14.703493095044685,
       "annualized_appreciation": 2.7815892786405394,
       "source": "ura_5yr_cagr",
@@ -33256,7 +33256,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1388.0,
+        "recent_median_psf": 1387.0,
         "bands": {
           "0-600": {
             "median_psf": 1610.0,
@@ -33801,7 +33801,7 @@
       "avg_psf_current": 1659.0,
       "median_psf": 1659.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 9.468822170900705,
+      "appreciation_1yr": 9.504950495049513,
       "appreciation_3yr": 7.239819004524883,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -33827,7 +33827,7 @@
             "txn_count": 3
           },
           "1800+": {
-            "median_psf": 1392.0,
+            "median_psf": 1391.0,
             "txn_count": 1
           },
           "600-800": {
@@ -33945,11 +33945,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 7,
-      "avg_psf_current": 1512.0,
-      "median_psf": 1512.0,
+      "avg_psf_current": 1511.0,
+      "median_psf": 1511.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 19.43127962085307,
-      "appreciation_3yr": -0.13210039630119352,
+      "appreciation_1yr": 19.352290679304907,
+      "appreciation_3yr": -0.19815059445178473,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -33957,7 +33957,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 7,
-      "resale_annualized_appreciation": 8.081909217013061,
+      "resale_annualized_appreciation": 8.064034097040729,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "3yr",
@@ -33966,7 +33966,7 @@
         "recent_median_psf": 1253.0,
         "bands": {
           "800-1050": {
-            "median_psf": 1512.0,
+            "median_psf": 1511.0,
             "txn_count": 3
           },
           "1050-1400": {
@@ -34534,25 +34534,25 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 6,
-      "avg_psf_current": 1566.0,
-      "median_psf": 1566.0,
+      "avg_psf_current": 1565.0,
+      "median_psf": 1565.0,
       "avg_psf_5yr_ago": 1200.0,
-      "appreciation_1yr": -16.56899307405434,
-      "appreciation_3yr": -21.346057257659467,
-      "appreciation_5yr": 30.499999999999993,
-      "annualized_appreciation": 5.468338001489137,
+      "appreciation_1yr": -16.62226957911561,
+      "appreciation_3yr": -21.396283274736316,
+      "appreciation_5yr": 30.41666666666667,
+      "annualized_appreciation": 5.454864784646518,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 6,
-      "resale_annualized_appreciation": 5.468338001489137,
+      "resale_annualized_appreciation": 5.454864784646518,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1613.5,
+        "recent_median_psf": 1613.0,
         "bands": {
           "0-600": {
             "median_psf": 1769.0,
@@ -35296,7 +35296,7 @@
       "median_psf": 1362.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 0.5908419497784312,
+      "appreciation_3yr": 0.6651884700665134,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -35310,10 +35310,10 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1358.0,
+        "recent_median_psf": 1357.5,
         "bands": {
           "1050-1400": {
-            "median_psf": 1358.0,
+            "median_psf": 1357.5,
             "txn_count": 2
           }
         }
@@ -35665,8 +35665,8 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 1,
-      "avg_psf_current": 1231.0,
-      "median_psf": 1231.0,
+      "avg_psf_current": 1230.0,
+      "median_psf": 1230.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
       "appreciation_3yr": null,
@@ -35683,10 +35683,10 @@
       "data_coverage": "none",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1231.0,
+        "recent_median_psf": 1230.0,
         "bands": {
           "1400-1800": {
-            "median_psf": 1231.0,
+            "median_psf": 1230.0,
             "txn_count": 1
           }
         }
@@ -35845,7 +35845,7 @@
         "recent_median_psf": 2408.5,
         "bands": {
           "600-800": {
-            "median_psf": 2380.0,
+            "median_psf": 2379.5,
             "txn_count": 30
           },
           "0-600": {
@@ -35869,9 +35869,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 69,
-        "low": 0.9476,
+        "low": 0.9477,
         "mid": 1.0,
-        "high": 1.0553
+        "high": 1.0552
       }
     },
     "the tre ver": {
@@ -35963,7 +35963,7 @@
             "txn_count": 2
           },
           "800-1050": {
-            "median_psf": 2031.0,
+            "median_psf": 2030.5,
             "txn_count": 32
           },
           "1050-1400": {
@@ -35971,7 +35971,7 @@
             "txn_count": 5
           },
           "600-800": {
-            "median_psf": 2020.0,
+            "median_psf": 2019.5,
             "txn_count": 12
           },
           "1800+": {
@@ -36055,7 +36055,7 @@
       "avg_psf_current": 2073.5,
       "median_psf": 2073.5,
       "avg_psf_5yr_ago": 1742.0,
-      "appreciation_1yr": -1.6366223908918398,
+      "appreciation_1yr": -1.589938300901761,
       "appreciation_3yr": 6.115660184237459,
       "appreciation_5yr": 19.02985074626866,
       "annualized_appreciation": 3.5454876586829442,
@@ -36070,7 +36070,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2108.0,
+        "recent_median_psf": 2107.0,
         "bands": {
           "800-1050": {
             "median_psf": 2221.0,
@@ -36099,7 +36099,7 @@
         "txn_count": 51,
         "low": 1.0486,
         "mid": 1.0,
-        "high": 0.9536
+        "high": 0.9537
       }
     },
     "sennett residence": {
@@ -36109,19 +36109,19 @@
       "tenure": "99 yrs lease commencing from 2011",
       "lease_start_year": 2011,
       "transaction_count": 87,
-      "avg_psf_current": 1875.5,
-      "median_psf": 1875.5,
+      "avg_psf_current": 1875.0,
+      "median_psf": 1875.0,
       "avg_psf_5yr_ago": 1611.0,
-      "appreciation_1yr": -4.091025313219121,
-      "appreciation_3yr": 13.97751443330295,
-      "appreciation_5yr": 16.41837368094352,
-      "annualized_appreciation": 3.0870960109415924,
+      "appreciation_1yr": -4.11659422142675,
+      "appreciation_3yr": 13.947128532360974,
+      "appreciation_5yr": 16.387337057728125,
+      "annualized_appreciation": 3.0815989119922227,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 87,
-      "resale_annualized_appreciation": 3.0870960109415924,
+      "resale_annualized_appreciation": 3.0815989119922227,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -36130,7 +36130,7 @@
         "recent_median_psf": 1955.5,
         "bands": {
           "600-800": {
-            "median_psf": 2030.0,
+            "median_psf": 2029.5,
             "txn_count": 2
           },
           "1800+": {
@@ -36346,7 +36346,7 @@
         "recent_median_psf": 2428.0,
         "bands": {
           "600-800": {
-            "median_psf": 2383.5,
+            "median_psf": 2383.0,
             "txn_count": 2
           },
           "1050-1400": {
@@ -36488,7 +36488,7 @@
       "median_psf": 1653.5,
       "avg_psf_5yr_ago": 1400.5,
       "appreciation_1yr": 1.8792359827479954,
-      "appreciation_3yr": 16.11657303370786,
+      "appreciation_3yr": 16.198172874209416,
       "appreciation_5yr": 18.064976794002142,
       "annualized_appreciation": 3.3770696077106255,
       "source": "ura_5yr_cagr",
@@ -36716,7 +36716,7 @@
       "avg_psf_current": 1745.0,
       "median_psf": 1745.0,
       "avg_psf_5yr_ago": 1394.0,
-      "appreciation_1yr": -0.6264236902050135,
+      "appreciation_1yr": -0.5698005698005715,
       "appreciation_3yr": 15.105540897097637,
       "appreciation_5yr": 25.179340028694398,
       "annualized_appreciation": 4.593942059372758,
@@ -36731,7 +36731,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1756.0,
+        "recent_median_psf": 1755.0,
         "bands": {
           "800-1050": {
             "median_psf": 1716.0,
@@ -36760,19 +36760,19 @@
       "transaction_count": 16,
       "avg_psf_current": 1858.0,
       "median_psf": 1858.0,
-      "avg_psf_5yr_ago": 1592.0,
+      "avg_psf_5yr_ago": 1591.0,
       "appreciation_1yr": 4.853273137697522,
       "appreciation_3yr": 1.8082191780821821,
-      "appreciation_5yr": 16.70854271356783,
-      "annualized_appreciation": 3.9383125114360817,
+      "appreciation_5yr": 16.781898177247022,
+      "annualized_appreciation": 3.954640893451278,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 16,
-      "resale_annualized_appreciation": 3.9383125114360817,
+      "resale_annualized_appreciation": 3.954640893451278,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.183,
+      "appreciation_momentum": 0.18,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -37989,7 +37989,7 @@
             "txn_count": 79
           },
           "1050-1400": {
-            "median_psf": 2553.0,
+            "median_psf": 2552.0,
             "txn_count": 29
           },
           "0-600": {
@@ -38046,7 +38046,7 @@
             "txn_count": 3
           },
           "1050-1400": {
-            "median_psf": 2466.0,
+            "median_psf": 2465.0,
             "txn_count": 1
           },
           "800-1050": {
@@ -38339,7 +38339,7 @@
       "median_psf": 1673.0,
       "avg_psf_5yr_ago": 1327.0,
       "appreciation_1yr": 2.199144777031159,
-      "appreciation_3yr": 0.480480480480483,
+      "appreciation_3yr": 0.5408653846153744,
       "appreciation_5yr": 26.07385079125848,
       "annualized_appreciation": 4.7429987981123745,
       "source": "ura_5yr_cagr",
@@ -38848,7 +38848,7 @@
       "avg_psf_current": 2479.0,
       "median_psf": 2479.0,
       "avg_psf_5yr_ago": 1827.0,
-      "appreciation_1yr": 3.076923076923066,
+      "appreciation_1yr": 3.0983572468288534,
       "appreciation_3yr": 14.239631336405534,
       "appreciation_5yr": 35.68691844553913,
       "annualized_appreciation": 6.293717406189581,
@@ -38859,7 +38859,7 @@
       "resale_transaction_count": 61,
       "resale_annualized_appreciation": 6.293717406189581,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.643,
+      "appreciation_momentum": -0.639,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -38874,7 +38874,7 @@
             "txn_count": 7
           },
           "800-1050": {
-            "median_psf": 2398.0,
+            "median_psf": 2397.0,
             "txn_count": 3
           }
         }
@@ -39535,7 +39535,7 @@
       "median_psf": 3124.0,
       "avg_psf_5yr_ago": 2655.5,
       "appreciation_1yr": null,
-      "appreciation_3yr": 20.664349169563543,
+      "appreciation_3yr": 20.710973724884084,
       "appreciation_5yr": 17.642628506872526,
       "annualized_appreciation": 5.565394048181571,
       "source": "ura_5yr_cagr",
@@ -39545,7 +39545,7 @@
       "resale_transaction_count": 9,
       "resale_annualized_appreciation": 8.853306292992258,
       "has_new_launch_bias": true,
-      "appreciation_momentum": 0.265,
+      "appreciation_momentum": 0.268,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -39852,11 +39852,11 @@
       "transaction_count": 31,
       "avg_psf_current": 1991.0,
       "median_psf": 1991.0,
-      "avg_psf_5yr_ago": 1746.0,
+      "avg_psf_5yr_ago": 1745.0,
       "appreciation_1yr": null,
       "appreciation_3yr": 20.012055455093435,
-      "appreciation_5yr": 14.03207331042382,
-      "annualized_appreciation": 3.337215545886174,
+      "appreciation_5yr": 14.097421203438397,
+      "annualized_appreciation": 3.352017124085105,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 30,
@@ -39864,7 +39864,7 @@
       "resale_transaction_count": 1,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": true,
-      "appreciation_momentum": 0.667,
+      "appreciation_momentum": 0.664,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -40226,7 +40226,7 @@
             "txn_count": 3
           },
           "800-1050": {
-            "median_psf": 1989.0,
+            "median_psf": 1988.0,
             "txn_count": 1
           }
         }
@@ -40299,19 +40299,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 26,
-      "avg_psf_current": 2063.5,
-      "median_psf": 2063.5,
+      "avg_psf_current": 2063.0,
+      "median_psf": 2063.0,
       "avg_psf_5yr_ago": 1654.0,
-      "appreciation_1yr": 15.796857463524127,
-      "appreciation_3yr": 23.04710793082887,
-      "appreciation_5yr": 24.758162031438946,
-      "annualized_appreciation": 4.523463856203658,
+      "appreciation_1yr": 15.768799102132425,
+      "appreciation_3yr": 23.017292784734657,
+      "appreciation_5yr": 24.7279322853688,
+      "annualized_appreciation": 4.5183980168033155,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 26,
-      "resale_annualized_appreciation": 4.523463856203658,
+      "resale_annualized_appreciation": 4.5183980168033155,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "5yr",
@@ -40320,7 +40320,7 @@
         "recent_median_psf": 1884.0,
         "bands": {
           "600-800": {
-            "median_psf": 1954.0,
+            "median_psf": 1953.5,
             "txn_count": 4
           },
           "0-600": {
@@ -40953,7 +40953,7 @@
             "txn_count": 1
           },
           "1400-1800": {
-            "median_psf": 1246.5,
+            "median_psf": 1246.0,
             "txn_count": 2
           },
           "1800+": {
@@ -41176,7 +41176,7 @@
       "avg_psf_current": 1593.0,
       "median_psf": 1593.0,
       "avg_psf_5yr_ago": 1261.0,
-      "appreciation_1yr": -0.1879699248120259,
+      "appreciation_1yr": -0.12539184952977678,
       "appreciation_3yr": 8.551959114139684,
       "appreciation_5yr": 26.328310864393334,
       "annualized_appreciation": 4.785246130321585,
@@ -41187,11 +41187,11 @@
       "resale_transaction_count": 17,
       "resale_annualized_appreciation": 4.785246130321585,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.995,
+      "appreciation_momentum": -0.982,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1594.5,
+        "recent_median_psf": 1594.0,
         "bands": {
           "600-800": {
             "median_psf": 1593.0,
@@ -41451,7 +41451,7 @@
             "txn_count": 1
           },
           "1050-1400": {
-            "median_psf": 2024.5,
+            "median_psf": 2024.0,
             "txn_count": 4
           },
           "1400-1800": {
@@ -41931,7 +41931,7 @@
       "avg_psf_current": 2354.5,
       "median_psf": 2354.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 0.3409333049222196,
+      "appreciation_1yr": 0.36231884057971175,
       "appreciation_3yr": 17.139303482587053,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -41946,14 +41946,14 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2346.5,
+        "recent_median_psf": 2346.0,
         "bands": {
           "1050-1400": {
             "median_psf": 2323.0,
             "txn_count": 5
           },
           "800-1050": {
-            "median_psf": 2374.0,
+            "median_psf": 2373.5,
             "txn_count": 2
           },
           "600-800": {
@@ -41980,7 +41980,7 @@
       "avg_psf_current": 2043.0,
       "median_psf": 2043.0,
       "avg_psf_5yr_ago": 1681.0,
-      "appreciation_1yr": 0.4671748217359273,
+      "appreciation_1yr": 0.4918839153959631,
       "appreciation_3yr": 14.32568550643536,
       "appreciation_5yr": 21.534800713860804,
       "annualized_appreciation": 3.9776818244249057,
@@ -41991,7 +41991,7 @@
       "resale_transaction_count": 18,
       "resale_annualized_appreciation": 3.9776818244249057,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.702,
+      "appreciation_momentum": -0.697,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -42002,7 +42002,7 @@
             "txn_count": 3
           },
           "1050-1400": {
-            "median_psf": 2033.5,
+            "median_psf": 2033.0,
             "txn_count": 4
           }
         }
@@ -42025,7 +42025,7 @@
       "avg_psf_current": 1212.0,
       "median_psf": 1212.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -36.126482213438734,
+      "appreciation_1yr": -36.10964681075382,
       "appreciation_3yr": -36.143308746048476,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -42431,7 +42431,7 @@
             "txn_count": 2
           },
           "600-800": {
-            "median_psf": 1596.0,
+            "median_psf": 1595.0,
             "txn_count": 3
           }
         }
@@ -43286,19 +43286,19 @@
       "transaction_count": 11,
       "avg_psf_current": 2579.0,
       "median_psf": 2579.0,
-      "avg_psf_5yr_ago": 2215.0,
+      "avg_psf_5yr_ago": 2214.0,
       "appreciation_1yr": 7.525536793829479,
       "appreciation_3yr": 10.591766723842188,
-      "appreciation_5yr": 16.433408577878094,
-      "annualized_appreciation": 3.089758518165886,
+      "appreciation_5yr": 16.485998193315265,
+      "annualized_appreciation": 3.0990693707851014,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 11,
-      "resale_annualized_appreciation": 3.089758518165886,
+      "resale_annualized_appreciation": 3.0990693707851014,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.887,
+      "appreciation_momentum": 0.885,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -44622,7 +44622,7 @@
       "avg_psf_current": 1601.0,
       "median_psf": 1601.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 18.37338262476895,
+      "appreciation_1yr": 18.417159763313617,
       "appreciation_3yr": 14.071962949768446,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -44648,7 +44648,7 @@
             "txn_count": 3
           },
           "1400-1800": {
-            "median_psf": 1280.0,
+            "median_psf": 1279.0,
             "txn_count": 1
           }
         }
@@ -44735,7 +44735,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1955.5,
+        "recent_median_psf": 1955.0,
         "bands": {
           "800-1050": {
             "median_psf": 2006.0,
@@ -44746,7 +44746,7 @@
             "txn_count": 1
           },
           "0-600": {
-            "median_psf": 1943.0,
+            "median_psf": 1942.0,
             "txn_count": 1
           },
           "600-800": {
@@ -45377,7 +45377,7 @@
       "avg_psf_current": 1623.5,
       "median_psf": 1623.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 16.92473892689954,
+      "appreciation_1yr": 16.966858789625363,
       "appreciation_3yr": 25.17347725520431,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -45399,7 +45399,7 @@
             "txn_count": 6
           },
           "1050-1400": {
-            "median_psf": 1330.0,
+            "median_psf": 1329.5,
             "txn_count": 2
           }
         }
@@ -45468,11 +45468,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 7,
-      "avg_psf_current": 1192.0,
-      "median_psf": 1192.0,
+      "avg_psf_current": 1191.5,
+      "median_psf": 1191.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -26.100433973961568,
-      "appreciation_3yr": -21.91287258434327,
+      "appreciation_1yr": -26.13143211407316,
+      "appreciation_3yr": -21.945627251883394,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -45480,7 +45480,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 7,
-      "resale_annualized_appreciation": -0.6803817347187824,
+      "resale_annualized_appreciation": -0.6907986018466872,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
@@ -45489,7 +45489,7 @@
         "recent_median_psf": 1544.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1192.0,
+            "median_psf": 1191.5,
             "txn_count": 2
           },
           "1400-1800": {
@@ -48525,11 +48525,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 4,
-      "avg_psf_current": 2227.5,
-      "median_psf": 2227.5,
+      "avg_psf_current": 2227.0,
+      "median_psf": 2227.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 13.157226314452618,
+      "appreciation_3yr": 13.131826263652524,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -48546,7 +48546,7 @@
         "recent_median_psf": 2178.5,
         "bands": {
           "800-1050": {
-            "median_psf": 2227.5,
+            "median_psf": 2227.0,
             "txn_count": 2
           },
           "1050-1400": {
@@ -48807,21 +48807,21 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1732.0,
-      "median_psf": 1732.0,
+      "avg_psf_current": 1731.0,
+      "median_psf": 1731.0,
       "avg_psf_5yr_ago": 1387.0,
-      "appreciation_1yr": 3.8992201559687967,
-      "appreciation_3yr": 27.964536387144445,
-      "appreciation_5yr": 24.873828406633013,
-      "annualized_appreciation": 4.542837929952559,
+      "appreciation_1yr": 3.839232153569294,
+      "appreciation_3yr": 27.890653860362026,
+      "appreciation_5yr": 24.801730353280462,
+      "annualized_appreciation": 4.530763219774747,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 4.542837929952559,
+      "resale_annualized_appreciation": 4.530763219774747,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.129,
+      "appreciation_momentum": -0.138,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -49012,7 +49012,7 @@
             "txn_count": 4
           },
           "1800+": {
-            "median_psf": 796.0,
+            "median_psf": 795.0,
             "txn_count": 1
           }
         }
@@ -49539,11 +49539,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1187.0,
-      "median_psf": 1187.0,
+      "avg_psf_current": 1186.0,
+      "median_psf": 1186.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": -26.45600991325898,
+      "appreciation_3yr": -26.517967781908304,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -49551,7 +49551,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": -12.433118952821276,
+      "resale_annualized_appreciation": -12.470012521363083,
       "has_new_launch_bias": false,
       "appreciation_momentum": null,
       "data_coverage": "3yr",
@@ -49560,7 +49560,7 @@
         "recent_median_psf": 1593.0,
         "bands": {
           "1400-1800": {
-            "median_psf": 1187.0,
+            "median_psf": 1186.0,
             "txn_count": 1
           },
           "600-800": {
@@ -50475,7 +50475,7 @@
       "median_psf": 1439.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": -17.724413950829042,
-      "appreciation_3yr": -11.609336609336607,
+      "appreciation_3yr": -11.555009219422253,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -50489,7 +50489,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1668.5,
+        "recent_median_psf": 1668.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1439.0,
@@ -51865,7 +51865,7 @@
       "avg_psf_current": 1753.0,
       "median_psf": 1753.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 1.6231884057970936,
+      "appreciation_1yr": 1.6821345707656699,
       "appreciation_3yr": 10.949367088607588,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -51876,11 +51876,11 @@
       "resale_transaction_count": 4,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.405,
+      "appreciation_momentum": -0.394,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1652.5,
+        "recent_median_psf": 1652.0,
         "bands": {
           "0-600": {
             "median_psf": 1753.0,
@@ -52467,7 +52467,7 @@
       "avg_psf_current": 1708.0,
       "median_psf": 1708.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -4.260089686098656,
+      "appreciation_1yr": -4.20639371845205,
       "appreciation_3yr": -3.4482758620689613,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -52478,7 +52478,7 @@
       "resale_transaction_count": 3,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.622,
+      "appreciation_momentum": -0.611,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -52489,7 +52489,7 @@
             "txn_count": 1
           },
           "1050-1400": {
-            "median_psf": 1784.0,
+            "median_psf": 1783.0,
             "txn_count": 1
           },
           "1400-1800": {
@@ -54619,10 +54619,10 @@
       "data_coverage": "none",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1269.5,
+        "recent_median_psf": 1269.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1269.5,
+            "median_psf": 1269.0,
             "txn_count": 2
           }
         }
@@ -56618,7 +56618,7 @@
             "txn_count": 77
           },
           "1050-1400": {
-            "median_psf": 1849.0,
+            "median_psf": 1848.5,
             "txn_count": 50
           },
           "0-600": {
@@ -56648,11 +56648,11 @@
       "transaction_count": 121,
       "avg_psf_current": 2090.0,
       "median_psf": 2090.0,
-      "avg_psf_5yr_ago": 1909.5,
-      "appreciation_1yr": 1.2106537530266248,
+      "avg_psf_5yr_ago": 1909.0,
+      "appreciation_1yr": 1.2596899224806224,
       "appreciation_3yr": 18.313048400792532,
-      "appreciation_5yr": 9.45273631840795,
-      "annualized_appreciation": 1.8228678182560243,
+      "appreciation_5yr": 9.481403876375062,
+      "annualized_appreciation": 1.8282010923172498,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 62,
@@ -56660,11 +56660,11 @@
       "resale_transaction_count": 59,
       "resale_annualized_appreciation": 5.074621937854196,
       "has_new_launch_bias": true,
-      "appreciation_momentum": -0.122,
+      "appreciation_momentum": -0.114,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2067.0,
+        "recent_median_psf": 2066.5,
         "bands": {
           "600-800": {
             "median_psf": 2076.5,
@@ -56675,7 +56675,7 @@
             "txn_count": 9
           },
           "1050-1400": {
-            "median_psf": 2068.5,
+            "median_psf": 2068.0,
             "txn_count": 10
           },
           "800-1050": {
@@ -56809,9 +56809,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 83,
-        "low": 0.9531,
+        "low": 0.953,
         "mid": 1.0,
-        "high": 1.0492
+        "high": 1.0493
       }
     },
     "melville park": {
@@ -57210,7 +57210,7 @@
         "txn_count": 58,
         "low": 0.9782,
         "mid": 1.0,
-        "high": 1.0223
+        "high": 1.0222
       }
     },
     "nv residences": {
@@ -58302,7 +58302,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2065.0,
+        "recent_median_psf": 2064.0,
         "bands": {
           "800-1050": {
             "median_psf": 2078.0,
@@ -59007,7 +59007,7 @@
             "txn_count": 5
           },
           "1400-1800": {
-            "median_psf": 1498.0,
+            "median_psf": 1497.0,
             "txn_count": 1
           }
         }
@@ -59315,17 +59315,17 @@
       "transaction_count": 18,
       "avg_psf_current": 1648.5,
       "median_psf": 1648.5,
-      "avg_psf_5yr_ago": 1571.0,
+      "avg_psf_5yr_ago": 1570.0,
       "appreciation_1yr": -6.308610400682014,
       "appreciation_3yr": 1.3837638376383854,
-      "appreciation_5yr": 4.933163590070011,
-      "annualized_appreciation": 1.211110872008736,
+      "appreciation_5yr": 5.000000000000004,
+      "annualized_appreciation": 1.2272234429039353,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 18,
-      "resale_annualized_appreciation": 1.211110872008736,
+      "resale_annualized_appreciation": 1.2272234429039353,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -59440,7 +59440,7 @@
             "txn_count": 4
           },
           "0-600": {
-            "median_psf": 2581.5,
+            "median_psf": 2581.0,
             "txn_count": 2
           }
         }
@@ -60388,7 +60388,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 92,
-        "low": 0.9743,
+        "low": 0.9744,
         "mid": 1.0,
         "high": 1.0263
       }
@@ -60645,7 +60645,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 211,
-        "low": 0.956,
+        "low": 0.9559,
         "mid": 1.0,
         "high": 1.0461
       }
@@ -61596,7 +61596,7 @@
             "txn_count": 4
           },
           "1050-1400": {
-            "median_psf": 1559.0,
+            "median_psf": 1558.0,
             "txn_count": 13
           },
           "1400-1800": {
@@ -62020,32 +62020,32 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 46,
-      "avg_psf_current": 1650.0,
-      "median_psf": 1650.0,
+      "avg_psf_current": 1649.0,
+      "median_psf": 1649.0,
       "avg_psf_5yr_ago": 1346.0,
-      "appreciation_1yr": 3.7735849056603765,
-      "appreciation_3yr": 6.934543097861301,
-      "appreciation_5yr": 22.585438335809815,
-      "annualized_appreciation": 4.156835549134152,
+      "appreciation_1yr": 3.7106918238993813,
+      "appreciation_3yr": 6.869734283862616,
+      "appreciation_5yr": 22.51114413075781,
+      "annualized_appreciation": 4.144207416421808,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 46,
-      "resale_annualized_appreciation": 4.156835549134152,
+      "resale_annualized_appreciation": 4.144207416421808,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.077,
+      "appreciation_momentum": -0.087,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
         "recent_median_psf": 1593.0,
         "bands": {
           "0-600": {
-            "median_psf": 1638.0,
+            "median_psf": 1637.5,
             "txn_count": 4
           },
           "800-1050": {
-            "median_psf": 1103.0,
+            "median_psf": 1102.5,
             "txn_count": 2
           },
           "600-800": {
@@ -62212,21 +62212,21 @@
       "tenure": "99 yrs lease commencing from 2001",
       "lease_start_year": 2001,
       "transaction_count": 40,
-      "avg_psf_current": 1433.5,
-      "median_psf": 1433.5,
+      "avg_psf_current": 1433.0,
+      "median_psf": 1433.0,
       "avg_psf_5yr_ago": 1100.0,
-      "appreciation_1yr": 4.4825072886297335,
-      "appreciation_3yr": 12.563800549666283,
-      "appreciation_5yr": 30.31818181818182,
-      "annualized_appreciation": 5.438933009671976,
+      "appreciation_1yr": 4.446064139941686,
+      "appreciation_3yr": 12.524538672948559,
+      "appreciation_5yr": 30.272727272727273,
+      "annualized_appreciation": 5.431576633893265,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 40,
-      "resale_annualized_appreciation": 5.438933009671976,
+      "resale_annualized_appreciation": 5.431576633893265,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.191,
+      "appreciation_momentum": -0.197,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -62237,7 +62237,7 @@
             "txn_count": 6
           },
           "1050-1400": {
-            "median_psf": 1405.0,
+            "median_psf": 1404.5,
             "txn_count": 8
           },
           "1400-1800": {
@@ -62720,7 +62720,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1546.0,
+        "recent_median_psf": 1545.5,
         "bands": {
           "1400-1800": {
             "median_psf": 1507.0,
@@ -63512,7 +63512,7 @@
             "txn_count": 59
           },
           "0-600": {
-            "median_psf": 2933.0,
+            "median_psf": 2932.5,
             "txn_count": 240
           }
         }
@@ -63550,14 +63550,14 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2082.0,
+        "recent_median_psf": 2081.0,
         "bands": {
           "800-1050": {
             "median_psf": 2177.0,
             "txn_count": 39
           },
           "1400-1800": {
-            "median_psf": 2144.0,
+            "median_psf": 2143.5,
             "txn_count": 4
           },
           "600-800": {
@@ -63640,7 +63640,7 @@
         "txn_count": 69,
         "low": 0.9638,
         "mid": 1.0,
-        "high": 1.0376
+        "high": 1.0375
       }
     },
     "union square residences": {
@@ -63854,7 +63854,7 @@
             "txn_count": 6
           },
           "800-1050": {
-            "median_psf": 1838.5,
+            "median_psf": 1838.0,
             "txn_count": 6
           },
           "0-600": {
@@ -64212,7 +64212,7 @@
       "avg_psf_current": 5689.0,
       "median_psf": 5689.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -7.818196548651057,
+      "appreciation_1yr": -7.8107275968238525,
       "appreciation_3yr": null,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -64234,7 +64234,7 @@
             "txn_count": 5
           },
           "1400-1800": {
-            "median_psf": 6502.0,
+            "median_psf": 6501.0,
             "txn_count": 1
           }
         }
@@ -64569,7 +64569,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 64,
-        "low": 1.0274,
+        "low": 1.0273,
         "mid": 1.0,
         "high": 0.9734
       }
@@ -64638,7 +64638,7 @@
       "median_psf": 1997.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": -11.362627607634268,
-      "appreciation_3yr": -10.085547050877985,
+      "appreciation_3yr": -10.065300607971173,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -64746,7 +64746,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2064.5,
+        "recent_median_psf": 2064.0,
         "bands": {
           "1050-1400": {
             "median_psf": 2104.5,
@@ -64890,7 +64890,7 @@
       "avg_psf_current": 1968.5,
       "median_psf": 1968.5,
       "avg_psf_5yr_ago": 1844.0,
-      "appreciation_1yr": -2.452923686818631,
+      "appreciation_1yr": -2.4045612295488294,
       "appreciation_3yr": 6.491750067622393,
       "appreciation_5yr": 6.751626898047713,
       "annualized_appreciation": 1.3152686800615987,
@@ -64901,18 +64901,18 @@
       "resale_transaction_count": 40,
       "resale_annualized_appreciation": 1.3152686800615987,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.754,
+      "appreciation_momentum": -0.744,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2018.0,
+        "recent_median_psf": 2017.0,
         "bands": {
           "0-600": {
             "median_psf": 2047.0,
             "txn_count": 6
           },
           "600-800": {
-            "median_psf": 2007.5,
+            "median_psf": 2007.0,
             "txn_count": 2
           },
           "800-1050": {
@@ -65358,7 +65358,7 @@
         "recent_median_psf": 1549.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1583.5,
+            "median_psf": 1583.0,
             "txn_count": 4
           },
           "1400-1800": {
@@ -65550,7 +65550,7 @@
             "txn_count": 6
           },
           "1050-1400": {
-            "median_psf": 3130.0,
+            "median_psf": 3129.0,
             "txn_count": 7
           },
           "800-1050": {
@@ -65575,19 +65575,19 @@
       "tenure": "99 yrs lease commencing from 2011",
       "lease_start_year": 2011,
       "transaction_count": 12,
-      "avg_psf_current": 3347.0,
-      "median_psf": 3347.0,
+      "avg_psf_current": 3346.0,
+      "median_psf": 3346.0,
       "avg_psf_5yr_ago": 3117.0,
-      "appreciation_1yr": -3.7111622554660495,
-      "appreciation_3yr": -5.930297920179872,
-      "appreciation_5yr": 7.378889958293233,
-      "annualized_appreciation": 1.4340537196924297,
+      "appreciation_1yr": -3.7399309551208293,
+      "appreciation_3yr": -5.958403597526695,
+      "appreciation_5yr": 7.346807828039781,
+      "annualized_appreciation": 1.4279918028548,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 12,
-      "resale_annualized_appreciation": 1.4340537196924297,
+      "resale_annualized_appreciation": 1.4279918028548,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -65994,7 +65994,7 @@
             "txn_count": 13
           },
           "800-1050": {
-            "median_psf": 1902.5,
+            "median_psf": 1902.0,
             "txn_count": 6
           },
           "600-800": {
@@ -66137,7 +66137,7 @@
             "txn_count": 2
           },
           "1050-1400": {
-            "median_psf": 1885.5,
+            "median_psf": 1885.0,
             "txn_count": 10
           },
           "1400-1800": {
@@ -66502,19 +66502,19 @@
       "transaction_count": 15,
       "avg_psf_current": 1765.0,
       "median_psf": 1765.0,
-      "avg_psf_5yr_ago": 1295.5,
+      "avg_psf_5yr_ago": 1295.0,
       "appreciation_1yr": 10.797237915881986,
       "appreciation_3yr": 2.4970963995354145,
-      "appreciation_5yr": 36.240833654959474,
-      "annualized_appreciation": 8.038071438927584,
+      "appreciation_5yr": 36.29343629343629,
+      "annualized_appreciation": 8.048498314640229,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 15,
-      "resale_annualized_appreciation": 8.038071438927584,
+      "resale_annualized_appreciation": 8.048498314640229,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.552,
+      "appreciation_momentum": 0.55,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -67146,7 +67146,7 @@
             "txn_count": 1
           },
           "1050-1400": {
-            "median_psf": 1366.0,
+            "median_psf": 1365.0,
             "txn_count": 5
           }
         }
@@ -67655,7 +67655,7 @@
       "avg_psf_current": 1274.0,
       "median_psf": 1274.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 7.239057239057245,
+      "appreciation_1yr": 7.329401853411954,
       "appreciation_3yr": 34.957627118644076,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -67666,14 +67666,14 @@
       "resale_transaction_count": 3,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.883,
+      "appreciation_momentum": -0.865,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1188.0,
+        "recent_median_psf": 1187.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 1188.0,
+            "median_psf": 1187.0,
             "txn_count": 3
           }
         }
@@ -67750,7 +67750,7 @@
       "median_psf": 1501.5,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": -1.34691195795007,
+      "appreciation_3yr": -1.3144922773578704,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -67764,7 +67764,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1496.0,
+        "recent_median_psf": 1495.0,
         "bands": {
           "1050-1400": {
             "median_psf": 1621.0,
@@ -68933,7 +68933,7 @@
             "txn_count": 102
           },
           "0-600": {
-            "median_psf": 3057.0,
+            "median_psf": 3056.0,
             "txn_count": 57
           },
           "1050-1400": {
@@ -68951,7 +68951,7 @@
         "txn_count": 431,
         "low": 0.943,
         "mid": 1.0,
-        "high": 1.0605
+        "high": 1.0604
       }
     },
     "the avenir": {
@@ -69550,26 +69550,26 @@
       "transaction_count": 85,
       "avg_psf_current": 2177.0,
       "median_psf": 2177.0,
-      "avg_psf_5yr_ago": 2274.0,
+      "avg_psf_5yr_ago": 2273.0,
       "appreciation_1yr": -2.682163611980326,
       "appreciation_3yr": -4.51754385964912,
-      "appreciation_5yr": -4.2656112576956895,
-      "annualized_appreciation": -0.8680626509545375,
+      "appreciation_5yr": -4.223493180818306,
+      "annualized_appreciation": -0.8593416217574368,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 85,
-      "resale_annualized_appreciation": -0.8680626509545375,
+      "resale_annualized_appreciation": -0.8593416217574368,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.363,
+      "appreciation_momentum": -0.365,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
         "recent_median_psf": 2219.5,
         "bands": {
           "1400-1800": {
-            "median_psf": 2295.0,
+            "median_psf": 2294.0,
             "txn_count": 11
           },
           "0-600": {
@@ -69810,7 +69810,7 @@
         "recent_median_psf": 2104.0,
         "bands": {
           "800-1050": {
-            "median_psf": 2167.0,
+            "median_psf": 2166.5,
             "txn_count": 10
           },
           "0-600": {
@@ -70041,7 +70041,7 @@
       "avg_psf_current": 2410.0,
       "median_psf": 2410.0,
       "avg_psf_5yr_ago": 2219.0,
-      "appreciation_1yr": 2.640545144804096,
+      "appreciation_1yr": 2.6624068157614422,
       "appreciation_3yr": -3.0960997185363937,
       "appreciation_5yr": 8.607480847228487,
       "annualized_appreciation": 1.6651130857234575,
@@ -70052,7 +70052,7 @@
       "resale_transaction_count": 44,
       "resale_annualized_appreciation": 1.6651130857234575,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.195,
+      "appreciation_momentum": 0.199,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -70154,7 +70154,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2768.0,
+        "recent_median_psf": 2767.5,
         "bands": {
           "1400-1800": {
             "median_psf": 2885.5,
@@ -70173,7 +70173,7 @@
             "txn_count": 1
           },
           "800-1050": {
-            "median_psf": 2778.0,
+            "median_psf": 2777.0,
             "txn_count": 3
           }
         }
@@ -70552,7 +70552,7 @@
       "median_psf": 2342.0,
       "avg_psf_5yr_ago": 2232.0,
       "appreciation_1yr": 1.6934433347807198,
-      "appreciation_3yr": 0.7095248333691684,
+      "appreciation_3yr": 0.7311827956989259,
       "appreciation_5yr": 4.92831541218639,
       "annualized_appreciation": 0.9667879028987914,
       "source": "ura_5yr_cagr",
@@ -70591,19 +70591,19 @@
       "transaction_count": 30,
       "avg_psf_current": 2412.0,
       "median_psf": 2412.0,
-      "avg_psf_5yr_ago": 2193.0,
+      "avg_psf_5yr_ago": 2192.0,
       "appreciation_1yr": 0.27021409270422403,
       "appreciation_3yr": 2.9888983774551736,
-      "appreciation_5yr": 9.986320109439117,
-      "annualized_appreciation": 2.4081847228547115,
+      "appreciation_5yr": 10.036496350364965,
+      "annualized_appreciation": 2.419862490844582,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 30,
-      "resale_annualized_appreciation": 2.4081847228547115,
+      "resale_annualized_appreciation": 2.419862490844582,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.428,
+      "appreciation_momentum": -0.43,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -70765,7 +70765,7 @@
             "txn_count": 4
           },
           "800-1050": {
-            "median_psf": 2592.0,
+            "median_psf": 2591.0,
             "txn_count": 1
           }
         }
@@ -70965,7 +70965,7 @@
             "txn_count": 3
           },
           "1400-1800": {
-            "median_psf": 2466.5,
+            "median_psf": 2466.0,
             "txn_count": 4
           }
         }
@@ -71279,11 +71279,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 27,
-      "avg_psf_current": 2124.0,
-      "median_psf": 2124.0,
+      "avg_psf_current": 2123.0,
+      "median_psf": 2123.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -0.2348520432127743,
-      "appreciation_3yr": 1.724137931034475,
+      "appreciation_1yr": -0.28182245185532917,
+      "appreciation_3yr": 1.676245210727978,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -71291,13 +71291,13 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 27,
-      "resale_annualized_appreciation": 0.5791459749690864,
+      "resale_annualized_appreciation": 0.5673054725596094,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.162,
+      "appreciation_momentum": -0.168,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2126.5,
+        "recent_median_psf": 2126.0,
         "bands": {
           "0-600": {
             "median_psf": 2083.5,
@@ -71590,7 +71590,7 @@
         "recent_median_psf": 2351.0,
         "bands": {
           "800-1050": {
-            "median_psf": 2339.0,
+            "median_psf": 2338.0,
             "txn_count": 7
           },
           "1050-1400": {
@@ -71663,11 +71663,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 24,
-      "avg_psf_current": 2514.0,
-      "median_psf": 2514.0,
+      "avg_psf_current": 2513.5,
+      "median_psf": 2513.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 1.1670020120724267,
-      "appreciation_3yr": 9.54248366013073,
+      "appreciation_1yr": 1.1468812877263534,
+      "appreciation_3yr": 9.520697167755987,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -71675,9 +71675,9 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 24,
-      "resale_annualized_appreciation": 3.5095188014854006,
+      "resale_annualized_appreciation": 3.504371762917402,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.403,
+      "appreciation_momentum": -0.405,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -71715,7 +71715,7 @@
       "avg_psf_current": 1711.0,
       "median_psf": 1711.0,
       "avg_psf_5yr_ago": 1522.0,
-      "appreciation_1yr": 6.174371703381931,
+      "appreciation_1yr": 6.2073246430788265,
       "appreciation_3yr": 1.0632014176019,
       "appreciation_5yr": 12.417871222076204,
       "annualized_appreciation": 2.3686724898566824,
@@ -71726,7 +71726,7 @@
       "resale_transaction_count": 25,
       "resale_annualized_appreciation": 2.3686724898566824,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.761,
+      "appreciation_momentum": 0.768,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -71782,7 +71782,7 @@
             "txn_count": 8
           },
           "600-800": {
-            "median_psf": 1815.0,
+            "median_psf": 1814.0,
             "txn_count": 1
           }
         }
@@ -71872,7 +71872,7 @@
             "txn_count": 4
           },
           "1400-1800": {
-            "median_psf": 2821.0,
+            "median_psf": 2820.0,
             "txn_count": 3
           }
         }
@@ -72121,25 +72121,25 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 20,
-      "avg_psf_current": 2592.0,
-      "median_psf": 2592.0,
+      "avg_psf_current": 2591.0,
+      "median_psf": 2591.0,
       "avg_psf_5yr_ago": 2650.0,
-      "appreciation_1yr": -2.409638554216864,
-      "appreciation_3yr": 7.596513075965139,
-      "appreciation_5yr": -2.1886792452830206,
-      "annualized_appreciation": -0.4416192120470397,
+      "appreciation_1yr": -2.4472891566265087,
+      "appreciation_3yr": 7.555002075550021,
+      "appreciation_5yr": -2.2264150943396177,
+      "annualized_appreciation": -0.44930237163754994,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 20,
-      "resale_annualized_appreciation": -0.4416192120470397,
+      "resale_annualized_appreciation": -0.44930237163754994,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.394,
+      "appreciation_momentum": -0.4,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2606.5,
+        "recent_median_psf": 2606.0,
         "bands": {
           "1800+": {
             "median_psf": 2407.0,
@@ -72217,19 +72217,19 @@
       "transaction_count": 20,
       "avg_psf_current": 2095.0,
       "median_psf": 2095.0,
-      "avg_psf_5yr_ago": 1937.0,
-      "appreciation_1yr": -1.9653720168460453,
-      "appreciation_3yr": 0.9152215799614671,
-      "appreciation_5yr": 8.156943727413534,
-      "annualized_appreciation": 1.979669850318455,
+      "avg_psf_5yr_ago": 1936.5,
+      "appreciation_1yr": -1.9424292066463789,
+      "appreciation_3yr": 0.9638554216867545,
+      "appreciation_5yr": 8.184869610121348,
+      "annualized_appreciation": 1.9862519441243398,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 20,
-      "resale_annualized_appreciation": 1.979669850318455,
+      "resale_annualized_appreciation": 1.9862519441243398,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.789,
+      "appreciation_momentum": -0.786,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -72554,7 +72554,7 @@
       "median_psf": 1948.0,
       "avg_psf_5yr_ago": 2271.0,
       "appreciation_1yr": -8.091531021467324,
-      "appreciation_3yr": -6.368661379476093,
+      "appreciation_3yr": -6.346153846153846,
       "appreciation_5yr": -14.222809335094677,
       "annualized_appreciation": -3.021745359512562,
       "source": "ura_5yr_cagr",
@@ -72599,7 +72599,7 @@
       "median_psf": 2786.0,
       "avg_psf_5yr_ago": 2633.0,
       "appreciation_1yr": 2.6529108327192352,
-      "appreciation_3yr": -7.133333333333336,
+      "appreciation_3yr": -7.11785297549592,
       "appreciation_5yr": 5.810862134447392,
       "annualized_appreciation": 1.1360646488660198,
       "source": "ura_5yr_cagr",
@@ -72620,7 +72620,7 @@
             "txn_count": 7
           },
           "800-1050": {
-            "median_psf": 3002.0,
+            "median_psf": 3001.5,
             "txn_count": 2
           }
         }
@@ -72746,7 +72746,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 16,
-      "resale_annualized_appreciation": 1.0551060441062576,
+      "resale_annualized_appreciation": 1.0609307137776414,
       "has_new_launch_bias": false,
       "appreciation_momentum": -0.643,
       "data_coverage": "3yr",
@@ -72961,19 +72961,19 @@
       "transaction_count": 14,
       "avg_psf_current": 2588.5,
       "median_psf": 2588.5,
-      "avg_psf_5yr_ago": 2215.5,
+      "avg_psf_5yr_ago": 2215.0,
       "appreciation_1yr": 7.4512245745122385,
       "appreciation_3yr": 9.682203389830502,
-      "appreciation_5yr": 16.83592868426991,
-      "annualized_appreciation": 3.160938153213566,
+      "appreciation_5yr": 16.862302483069968,
+      "annualized_appreciation": 3.1655951114373693,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 14,
-      "resale_annualized_appreciation": 3.160938153213566,
+      "resale_annualized_appreciation": 3.1655951114373693,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.858,
+      "appreciation_momentum": 0.857,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -73004,11 +73004,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 16,
-      "avg_psf_current": 2084.5,
-      "median_psf": 2084.5,
+      "avg_psf_current": 2084.0,
+      "median_psf": 2084.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 5.597771023302944,
-      "appreciation_3yr": 6.02746693794507,
+      "appreciation_1yr": 5.572441742654499,
+      "appreciation_3yr": 6.00203458799593,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -73016,16 +73016,16 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 16,
-      "resale_annualized_appreciation": 4.440020743174267,
+      "resale_annualized_appreciation": 4.433757285726503,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.718,
+      "appreciation_momentum": 0.714,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2017.5,
+        "recent_median_psf": 2017.0,
         "bands": {
           "1800+": {
-            "median_psf": 2017.5,
+            "median_psf": 2017.0,
             "txn_count": 8
           }
         }
@@ -73098,7 +73098,7 @@
       "median_psf": 2404.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": -1.67689161554192,
-      "appreciation_3yr": 0.2502085070892335,
+      "appreciation_3yr": 0.2920317062995448,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -73108,14 +73108,14 @@
       "resale_transaction_count": 15,
       "resale_annualized_appreciation": 3.101794343998976,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.352,
+      "appreciation_momentum": -0.355,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2398.0,
+        "recent_median_psf": 2397.0,
         "bands": {
           "1050-1400": {
-            "median_psf": 2398.0,
+            "median_psf": 2397.0,
             "txn_count": 11
           },
           "1400-1800": {
@@ -73200,7 +73200,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 18,
-      "resale_annualized_appreciation": 0.0038841739406381137,
+      "resale_annualized_appreciation": 0.007769102338839318,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "3yr",
@@ -73378,7 +73378,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2555.0,
+        "recent_median_psf": 2554.5,
         "bands": {
           "1050-1400": {
             "median_psf": 2524.0,
@@ -73548,7 +73548,7 @@
       "median_psf": 2042.0,
       "avg_psf_5yr_ago": 2007.0,
       "appreciation_1yr": 13.82385730211817,
-      "appreciation_3yr": 0.46740467404673414,
+      "appreciation_3yr": 0.49212598425196763,
       "appreciation_5yr": 1.743896362730446,
       "annualized_appreciation": 0.34637148299851983,
       "source": "ura_5yr_cagr",
@@ -73700,7 +73700,7 @@
             "txn_count": 6
           },
           "0-600": {
-            "median_psf": 1905.0,
+            "median_psf": 1904.0,
             "txn_count": 5
           }
         }
@@ -74084,19 +74084,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 9,
-      "avg_psf_current": 5299.5,
-      "median_psf": 5299.5,
+      "avg_psf_current": 5299.0,
+      "median_psf": 5299.0,
       "avg_psf_5yr_ago": 4007.0,
-      "appreciation_1yr": -15.532355753905003,
-      "appreciation_3yr": 25.93868821292775,
-      "appreciation_5yr": 32.25605190915897,
-      "annualized_appreciation": 5.7506659128009785,
+      "appreciation_1yr": -15.540325151418555,
+      "appreciation_3yr": 25.926806083650188,
+      "appreciation_5yr": 32.2435737459446,
+      "annualized_appreciation": 5.748670353651875,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 9,
-      "resale_annualized_appreciation": 5.7506659128009785,
+      "resale_annualized_appreciation": 5.748670353651875,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -74542,7 +74542,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 9,
-      "resale_annualized_appreciation": -2.791904299098713,
+      "resale_annualized_appreciation": -2.7854295865906376,
       "has_new_launch_bias": false,
       "appreciation_momentum": 0.258,
       "data_coverage": "3yr",
@@ -74657,11 +74657,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 8,
-      "avg_psf_current": 2888.0,
-      "median_psf": 2888.0,
+      "avg_psf_current": 2887.0,
+      "median_psf": 2887.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": -3.829503829503833,
+      "appreciation_3yr": -3.8628038628038652,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -75111,7 +75111,7 @@
       "median_psf": 2466.0,
       "avg_psf_5yr_ago": 2427.0,
       "appreciation_1yr": 1.8587360594795488,
-      "appreciation_3yr": 3.007518796992481,
+      "appreciation_3yr": 3.0290369751410084,
       "appreciation_5yr": 1.606922126081578,
       "annualized_appreciation": 0.3193383619886525,
       "source": "ura_5yr_cagr",
@@ -75132,7 +75132,7 @@
             "txn_count": 7
           },
           "1400-1800": {
-            "median_psf": 2385.0,
+            "median_psf": 2384.0,
             "txn_count": 1
           }
         }
@@ -75567,7 +75567,7 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 3015.0,
+        "recent_median_psf": 3014.5,
         "bands": {
           "1400-1800": {
             "median_psf": 3278.0,
@@ -75781,7 +75781,7 @@
       "avg_psf_current": 2306.0,
       "median_psf": 2306.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 2.5344597598932816,
+      "appreciation_1yr": 2.5572603958194273,
       "appreciation_3yr": -2.4121878967414356,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -75792,7 +75792,7 @@
       "resale_transaction_count": 5,
       "resale_annualized_appreciation": -0.8106158577991351,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.668,
+      "appreciation_momentum": 0.672,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -78154,7 +78154,7 @@
             "txn_count": 74
           },
           "800-1050": {
-            "median_psf": 2911.0,
+            "median_psf": 2910.5,
             "txn_count": 74
           },
           "1050-1400": {
@@ -78798,7 +78798,7 @@
             "txn_count": 8
           },
           "1400-1800": {
-            "median_psf": 3642.0,
+            "median_psf": 3641.0,
             "txn_count": 1
           }
         }
@@ -78934,19 +78934,19 @@
       "transaction_count": 77,
       "avg_psf_current": 2475.0,
       "median_psf": 2475.0,
-      "avg_psf_5yr_ago": 2236.5,
+      "avg_psf_5yr_ago": 2236.0,
       "appreciation_1yr": 6.15483594252626,
       "appreciation_3yr": 12.781954887218049,
-      "appreciation_5yr": 10.663983903420515,
-      "annualized_appreciation": 2.0472392948384766,
+      "appreciation_5yr": 10.688729874776381,
+      "annualized_appreciation": 2.0518027167016006,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 77,
-      "resale_annualized_appreciation": 2.0472392948384766,
+      "resale_annualized_appreciation": 2.0518027167016006,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.822,
+      "appreciation_momentum": 0.821,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -79095,7 +79095,7 @@
       "median_psf": 2222.0,
       "avg_psf_5yr_ago": 1922.5,
       "appreciation_1yr": -4.347826086956519,
-      "appreciation_3yr": 4.613935969868166,
+      "appreciation_3yr": 4.663212435233155,
       "appreciation_5yr": 15.578673602080627,
       "annualized_appreciation": 2.937956200883818,
       "source": "ura_5yr_cagr",
@@ -79254,19 +79254,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 59,
-      "avg_psf_current": 2528.0,
-      "median_psf": 2528.0,
+      "avg_psf_current": 2527.0,
+      "median_psf": 2527.0,
       "avg_psf_5yr_ago": 3108.0,
-      "appreciation_1yr": -22.549019607843135,
-      "appreciation_3yr": -22.549019607843135,
-      "appreciation_5yr": -18.661518661518663,
-      "annualized_appreciation": -5.0327166085723185,
+      "appreciation_1yr": -22.5796568627451,
+      "appreciation_3yr": -22.5796568627451,
+      "appreciation_5yr": -18.693693693693692,
+      "annualized_appreciation": -5.042109545079187,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 30,
       "new_sale_proportion": 0.508,
       "resale_transaction_count": 29,
-      "resale_annualized_appreciation": -8.294782194679762,
+      "resale_annualized_appreciation": -8.312921887826318,
       "has_new_launch_bias": true,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -79302,7 +79302,7 @@
       "avg_psf_current": 2878.0,
       "median_psf": 2878.0,
       "avg_psf_5yr_ago": 2461.5,
-      "appreciation_1yr": 4.483572336177155,
+      "appreciation_1yr": 4.502541757443712,
       "appreciation_3yr": 4.350978970268304,
       "appreciation_5yr": 16.920576884013805,
       "annualized_appreciation": 3.1758819435927954,
@@ -79313,7 +79313,7 @@
       "resale_transaction_count": 49,
       "resale_annualized_appreciation": 3.1758819435927954,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.262,
+      "appreciation_momentum": 0.265,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -79344,11 +79344,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 52,
-      "avg_psf_current": 3352.0,
-      "median_psf": 3352.0,
+      "avg_psf_current": 3351.5,
+      "median_psf": 3351.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 4.358655043586546,
-      "appreciation_3yr": 11.066931742876074,
+      "appreciation_1yr": 4.343088418430874,
+      "appreciation_3yr": 11.050364479787934,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -79358,7 +79358,7 @@
       "resale_transaction_count": 0,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": true,
-      "appreciation_momentum": 0.134,
+      "appreciation_momentum": 0.132,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -79668,14 +79668,14 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 3064.0,
+        "recent_median_psf": 3063.0,
         "bands": {
           "1400-1800": {
             "median_psf": 3025.5,
             "txn_count": 4
           },
           "1800+": {
-            "median_psf": 3064.0,
+            "median_psf": 3063.5,
             "txn_count": 28
           },
           "1050-1400": {
@@ -79711,7 +79711,7 @@
       "new_sale_count": 11,
       "new_sale_proportion": 0.239,
       "resale_transaction_count": 35,
-      "resale_annualized_appreciation": -14.742628685657166,
+      "resale_annualized_appreciation": -14.728423858713757,
       "has_new_launch_bias": true,
       "appreciation_momentum": null,
       "data_coverage": "none",
@@ -80067,7 +80067,7 @@
             "txn_count": 5
           },
           "600-800": {
-            "median_psf": 2079.0,
+            "median_psf": 2078.0,
             "txn_count": 1
           },
           "1050-1400": {
@@ -80222,7 +80222,7 @@
             "txn_count": 2
           },
           "1400-1800": {
-            "median_psf": 1738.0,
+            "median_psf": 1737.0,
             "txn_count": 1
           }
         }
@@ -80298,7 +80298,7 @@
       "avg_psf_current": 2510.0,
       "median_psf": 2510.0,
       "avg_psf_5yr_ago": 2177.5,
-      "appreciation_1yr": -1.5106925642534796,
+      "appreciation_1yr": -1.491365777080067,
       "appreciation_3yr": 7.219137120888508,
       "appreciation_5yr": 15.269804822043632,
       "annualized_appreciation": 2.882879669877103,
@@ -80309,7 +80309,7 @@
       "resale_transaction_count": 37,
       "resale_annualized_appreciation": 2.882879669877103,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.879,
+      "appreciation_momentum": -0.875,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -80328,7 +80328,7 @@
             "txn_count": 1
           },
           "800-1050": {
-            "median_psf": 2565.0,
+            "median_psf": 2564.0,
             "txn_count": 4
           }
         }
@@ -80399,17 +80399,17 @@
       "transaction_count": 31,
       "avg_psf_current": 1897.0,
       "median_psf": 1897.0,
-      "avg_psf_5yr_ago": 1899.5,
+      "avg_psf_5yr_ago": 1899.0,
       "appreciation_1yr": -6.065857885615255,
       "appreciation_3yr": -0.8363826450601186,
-      "appreciation_5yr": -0.13161358252171684,
-      "annualized_appreciation": -0.026336585165698256,
+      "appreciation_5yr": -0.10531858873090716,
+      "annualized_appreciation": -0.02107259696175756,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 31,
-      "resale_annualized_appreciation": -0.026336585165698256,
+      "resale_annualized_appreciation": -0.02107259696175756,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -80438,28 +80438,28 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 33,
-      "avg_psf_current": 4247.0,
-      "median_psf": 4247.0,
-      "avg_psf_5yr_ago": 3770.0,
-      "appreciation_1yr": -0.39868667917448697,
-      "appreciation_3yr": -4.658210798069373,
-      "appreciation_5yr": 12.652519893899195,
-      "annualized_appreciation": 2.4113714711007983,
+      "avg_psf_current": 4246.0,
+      "median_psf": 4246.0,
+      "avg_psf_5yr_ago": 3769.5,
+      "appreciation_1yr": -0.42213883677297837,
+      "appreciation_3yr": -4.68066000673476,
+      "appreciation_5yr": 12.640933810850253,
+      "annualized_appreciation": 2.409264824089763,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 33,
-      "resale_annualized_appreciation": 2.4113714711007983,
+      "resale_annualized_appreciation": 2.409264824089763,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.562,
+      "appreciation_momentum": -0.566,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 4255.5,
+        "recent_median_psf": 4255.0,
         "bands": {
           "1800+": {
-            "median_psf": 4255.5,
+            "median_psf": 4255.0,
             "txn_count": 10
           }
         }
@@ -81239,11 +81239,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 24,
-      "avg_psf_current": 1943.0,
-      "median_psf": 1943.0,
+      "avg_psf_current": 1942.0,
+      "median_psf": 1942.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -7.871028923660505,
-      "appreciation_3yr": -3.1405782652043857,
+      "appreciation_1yr": -7.918444760550026,
+      "appreciation_3yr": -3.1904287138584286,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -81251,7 +81251,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 24,
-      "resale_annualized_appreciation": -4.925240044539169,
+      "resale_annualized_appreciation": -4.9374753912895475,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
@@ -81260,7 +81260,7 @@
         "recent_median_psf": 2096.5,
         "bands": {
           "0-600": {
-            "median_psf": 2031.0,
+            "median_psf": 2030.5,
             "txn_count": 2
           },
           "800-1050": {
@@ -81532,7 +81532,7 @@
       "avg_psf_current": 2436.0,
       "median_psf": 2436.0,
       "avg_psf_5yr_ago": 2061.0,
-      "appreciation_1yr": 35.785953177257525,
+      "appreciation_1yr": 35.86168432794199,
       "appreciation_3yr": 17.03098726879655,
       "appreciation_5yr": 18.195050946142644,
       "annualized_appreciation": 3.399838024195234,
@@ -81547,14 +81547,14 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1979.0,
+        "recent_median_psf": 1978.5,
         "bands": {
           "800-1050": {
             "median_psf": 2436.0,
             "txn_count": 1
           },
           "1800+": {
-            "median_psf": 1794.0,
+            "median_psf": 1793.0,
             "txn_count": 5
           }
         }
@@ -81619,11 +81619,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 18,
-      "avg_psf_current": 3606.0,
-      "median_psf": 3606.0,
+      "avg_psf_current": 3605.0,
+      "median_psf": 3605.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -7.276934944715863,
-      "appreciation_3yr": -6.8457762851976245,
+      "appreciation_1yr": -7.3026484957572695,
+      "appreciation_3yr": -6.871609403254975,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -81631,9 +81631,9 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 18,
-      "resale_annualized_appreciation": -0.5485573868005855,
+      "resale_annualized_appreciation": -0.5577513817326296,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.999,
+      "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -81648,7 +81648,7 @@
             "txn_count": 16
           },
           "1400-1800": {
-            "median_psf": 3604.0,
+            "median_psf": 3603.0,
             "txn_count": 1
           }
         }
@@ -81976,10 +81976,10 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2615.5,
+        "recent_median_psf": 2615.0,
         "bands": {
           "1800+": {
-            "median_psf": 2615.5,
+            "median_psf": 2615.0,
             "txn_count": 8
           }
         }
@@ -82955,7 +82955,7 @@
       "median_psf": 2144.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": 1.7077798861480087,
-      "appreciation_3yr": 10.174717368961982,
+      "appreciation_3yr": 10.231362467866333,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -82965,7 +82965,7 @@
       "resale_transaction_count": 16,
       "resale_annualized_appreciation": 0.9919359236054248,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.337,
+      "appreciation_momentum": -0.341,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
@@ -83135,19 +83135,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 15,
-      "avg_psf_current": 3680.0,
-      "median_psf": 3680.0,
-      "avg_psf_5yr_ago": 3352.0,
-      "appreciation_1yr": -7.246376811594201,
-      "appreciation_3yr": -3.790849673202612,
-      "appreciation_5yr": 9.785202863961807,
-      "annualized_appreciation": 1.8846509066626105,
+      "avg_psf_current": 3679.5,
+      "median_psf": 3679.5,
+      "avg_psf_5yr_ago": 3351.5,
+      "appreciation_1yr": -7.258979206049155,
+      "appreciation_3yr": -3.8039215686274552,
+      "appreciation_5yr": 9.78666268834849,
+      "annualized_appreciation": 1.8849218592191574,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 15,
-      "resale_annualized_appreciation": 1.8846509066626105,
+      "resale_annualized_appreciation": 1.8849218592191574,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -83274,13 +83274,13 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 11,
-      "avg_psf_current": 3468.0,
-      "median_psf": 3468.0,
+      "avg_psf_current": 3467.0,
+      "median_psf": 3467.0,
       "avg_psf_5yr_ago": 4105.5,
-      "appreciation_1yr": 11.726804123711343,
-      "appreciation_3yr": -12.908086388749373,
-      "appreciation_5yr": -15.527950310559003,
-      "annualized_appreciation": -4.130986584744878,
+      "appreciation_1yr": 11.694587628865971,
+      "appreciation_3yr": -12.933199397287797,
+      "appreciation_5yr": -15.55230787967361,
+      "annualized_appreciation": -4.137898304873078,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 8,
@@ -83462,7 +83462,7 @@
       "median_psf": 2190.0,
       "avg_psf_5yr_ago": 1863.0,
       "appreciation_1yr": 2.6241799437675795,
-      "appreciation_3yr": 3.1073446327683607,
+      "appreciation_3yr": 3.1559114460668836,
       "appreciation_5yr": 17.55233494363928,
       "annualized_appreciation": 3.287139981983933,
       "source": "ura_5yr_cagr",
@@ -83717,10 +83717,10 @@
       "data_coverage": "none",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 5462.0,
+        "recent_median_psf": 5461.0,
         "bands": {
           "1800+": {
-            "median_psf": 5462.0,
+            "median_psf": 5461.0,
             "txn_count": 13
           }
         }
@@ -83791,19 +83791,19 @@
       "transaction_count": 13,
       "avg_psf_current": 2587.0,
       "median_psf": 2587.0,
-      "avg_psf_5yr_ago": 2598.5,
+      "avg_psf_5yr_ago": 2598.0,
       "appreciation_1yr": 3.687374749499006,
       "appreciation_3yr": -0.19290123456789932,
-      "appreciation_5yr": -0.4425630171252637,
-      "annualized_appreciation": -0.08866971040785154,
+      "appreciation_5yr": -0.42340261739799434,
+      "annualized_appreciation": -0.08482430471985491,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 13,
-      "resale_annualized_appreciation": -0.08866971040785154,
+      "resale_annualized_appreciation": -0.08482430471985491,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.755,
+      "appreciation_momentum": 0.754,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -83900,7 +83900,7 @@
         "recent_median_psf": 2019.0,
         "bands": {
           "800-1050": {
-            "median_psf": 2085.0,
+            "median_psf": 2084.0,
             "txn_count": 5
           },
           "1050-1400": {
@@ -84597,7 +84597,7 @@
       "avg_psf_current": 2218.0,
       "median_psf": 2218.0,
       "avg_psf_5yr_ago": 1956.0,
-      "appreciation_1yr": 7.722195240407959,
+      "appreciation_1yr": 7.748360456643177,
       "appreciation_3yr": 7.072169925174987,
       "appreciation_5yr": 13.394683026584865,
       "annualized_appreciation": 3.192509218086803,
@@ -84608,7 +84608,7 @@
       "resale_transaction_count": 11,
       "resale_annualized_appreciation": 3.192509218086803,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.906,
+      "appreciation_momentum": 0.911,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -84713,7 +84713,7 @@
             "txn_count": 6
           },
           "600-800": {
-            "median_psf": 2496.0,
+            "median_psf": 2495.5,
             "txn_count": 4
           },
           "800-1050": {
@@ -84737,19 +84737,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 10,
-      "avg_psf_current": 3084.0,
-      "median_psf": 3084.0,
+      "avg_psf_current": 3083.5,
+      "median_psf": 3083.5,
       "avg_psf_5yr_ago": 2690.0,
-      "appreciation_1yr": 8.898305084745761,
-      "appreciation_3yr": -2.250396196513471,
-      "appreciation_5yr": 14.646840148698882,
-      "annualized_appreciation": 2.7714343471160197,
+      "appreciation_1yr": 8.880649717514121,
+      "appreciation_3yr": -2.2662440570523024,
+      "appreciation_5yr": 14.62825278810409,
+      "annualized_appreciation": 2.7681017239056027,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 10,
-      "resale_annualized_appreciation": 2.7714343471160197,
+      "resale_annualized_appreciation": 2.7681017239056027,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "5yr",
@@ -85109,11 +85109,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 9,
-      "avg_psf_current": 3901.0,
-      "median_psf": 3901.0,
+      "avg_psf_current": 3900.5,
+      "median_psf": 3900.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -12.76833631484794,
-      "appreciation_3yr": -14.48925909688733,
+      "appreciation_1yr": -12.779516994633278,
+      "appreciation_3yr": -14.500219202104336,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -85121,7 +85121,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 9,
-      "resale_annualized_appreciation": 0.42749857184809503,
+      "resale_annualized_appreciation": 0.42428041221145296,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "3yr",
@@ -85285,11 +85285,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 7,
-      "avg_psf_current": 2743.5,
-      "median_psf": 2743.5,
+      "avg_psf_current": 2743.0,
+      "median_psf": 2743.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 10.335813392318528,
-      "appreciation_3yr": 13.885429638854308,
+      "appreciation_1yr": 10.31570480595214,
+      "appreciation_3yr": 13.864674138646738,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -85297,7 +85297,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 7,
-      "resale_annualized_appreciation": 3.2361652188715118,
+      "resale_annualized_appreciation": 3.2298932768622057,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "3yr",
@@ -85381,19 +85381,19 @@
       "transaction_count": 10,
       "avg_psf_current": 2445.0,
       "median_psf": 2445.0,
-      "avg_psf_5yr_ago": 2065.0,
+      "avg_psf_5yr_ago": 2064.0,
       "appreciation_1yr": 1.5787287079351842,
       "appreciation_3yr": 16.873804971319316,
-      "appreciation_5yr": 18.401937046004836,
-      "annualized_appreciation": 3.436010481708185,
+      "appreciation_5yr": 18.459302325581394,
+      "annualized_appreciation": 3.4460314090888566,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 10,
-      "resale_annualized_appreciation": 3.436010481708185,
+      "resale_annualized_appreciation": 3.4460314090888566,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.371,
+      "appreciation_momentum": -0.373,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -86270,7 +86270,7 @@
       "avg_psf_current": 2101.5,
       "median_psf": 2101.5,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 0.5983724269985613,
+      "appreciation_1yr": 0.6465517241379226,
       "appreciation_3yr": 2.262773722627731,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -86281,11 +86281,11 @@
       "resale_transaction_count": 7,
       "resale_annualized_appreciation": 0.5609556850295405,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.031,
+      "appreciation_momentum": -0.022,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2089.0,
+        "recent_median_psf": 2088.0,
         "bands": {
           "800-1050": {
             "median_psf": 1945.0,
@@ -86296,7 +86296,7 @@
             "txn_count": 1
           },
           "1050-1400": {
-            "median_psf": 2159.5,
+            "median_psf": 2159.0,
             "txn_count": 4
           },
           "1400-1800": {
@@ -86373,7 +86373,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 6,
-      "resale_annualized_appreciation": 3.0171449989205623,
+      "resale_annualized_appreciation": 3.027950804387136,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "3yr",
@@ -86986,7 +86986,7 @@
       "avg_psf_current": 4571.0,
       "median_psf": 4571.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -25.108544277873346,
+      "appreciation_1yr": -25.102408651482875,
       "appreciation_3yr": -8.980485862206288,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -87711,13 +87711,13 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 3,
-      "avg_psf_current": 5075.0,
-      "median_psf": 5075.0,
+      "avg_psf_current": 5074.0,
+      "median_psf": 5074.0,
       "avg_psf_5yr_ago": 4804.0,
       "appreciation_1yr": null,
-      "appreciation_3yr": -12.5,
-      "appreciation_5yr": 5.641132389675274,
-      "annualized_appreciation": 1.1035976168915163,
+      "appreciation_3yr": -12.51724137931034,
+      "appreciation_5yr": 5.620316402997494,
+      "annualized_appreciation": 1.099612924583493,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
@@ -87729,10 +87729,10 @@
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 5075.0,
+        "recent_median_psf": 5074.0,
         "bands": {
           "1800+": {
-            "median_psf": 5075.0,
+            "median_psf": 5074.0,
             "txn_count": 3
           }
         }
@@ -87879,11 +87879,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1930.0,
-      "median_psf": 1930.0,
+      "avg_psf_current": 1929.0,
+      "median_psf": 1929.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 26.723571897570576,
-      "appreciation_3yr": 0.5732152162584603,
+      "appreciation_1yr": 26.657912015758377,
+      "appreciation_3yr": 0.5211047420531578,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -87891,7 +87891,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": 0.19070781285590588,
+      "resale_annualized_appreciation": 0.173400728764328,
       "has_new_launch_bias": false,
       "appreciation_momentum": 1.0,
       "data_coverage": "3yr",
@@ -87900,7 +87900,7 @@
         "recent_median_psf": 1919.0,
         "bands": {
           "0-600": {
-            "median_psf": 1924.5,
+            "median_psf": 1924.0,
             "txn_count": 4
           },
           "1050-1400": {
@@ -87968,7 +87968,7 @@
       "avg_psf_current": 2579.0,
       "median_psf": 2579.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -3.5166479610924006,
+      "appreciation_1yr": -3.480538922155685,
       "appreciation_3yr": 6.460268317853468,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -88100,19 +88100,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 5,
-      "avg_psf_current": 1737.0,
-      "median_psf": 1737.0,
+      "avg_psf_current": 1736.0,
+      "median_psf": 1736.0,
       "avg_psf_5yr_ago": 1815.0,
-      "appreciation_1yr": -25.673940949935815,
-      "appreciation_3yr": -14.00990099009901,
-      "appreciation_5yr": -4.297520661157028,
-      "annualized_appreciation": -1.0921418608038524,
+      "appreciation_1yr": -25.716730851519042,
+      "appreciation_3yr": -14.059405940594061,
+      "appreciation_5yr": -4.352617079889809,
+      "annualized_appreciation": -1.1063803781437453,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 5,
-      "resale_annualized_appreciation": -1.0921418608038524,
+      "resale_annualized_appreciation": -1.1063803781437453,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -88689,7 +88689,7 @@
       "median_psf": 3300.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": -12.790697674418606,
-      "appreciation_3yr": 1.1029411764705843,
+      "appreciation_3yr": 1.1184311322200102,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -88703,10 +88703,10 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 3308.0,
+        "recent_median_psf": 3307.5,
         "bands": {
           "1800+": {
-            "median_psf": 3308.0,
+            "median_psf": 3307.5,
             "txn_count": 4
           }
         }
@@ -88792,7 +88792,7 @@
             "txn_count": 2
           },
           "1400-1800": {
-            "median_psf": 2572.0,
+            "median_psf": 2571.5,
             "txn_count": 2
           }
         }
@@ -89082,7 +89082,7 @@
       "median_psf": 4485.0,
       "avg_psf_5yr_ago": 4165.0,
       "appreciation_1yr": null,
-      "appreciation_3yr": -3.8379073756432236,
+      "appreciation_3yr": -3.8275972981666184,
       "appreciation_5yr": 7.683073229291715,
       "annualized_appreciation": 1.4914572552110705,
       "source": "ura_5yr_cagr",
@@ -89092,7 +89092,7 @@
       "resale_transaction_count": 4,
       "resale_annualized_appreciation": null,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.554,
+      "appreciation_momentum": -0.553,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -89418,11 +89418,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 2,
-      "avg_psf_current": 2068.0,
-      "median_psf": 2068.0,
+      "avg_psf_current": 2067.0,
+      "median_psf": 2067.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 32.90488431876606,
+      "appreciation_3yr": 32.84061696658098,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -89436,10 +89436,10 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1812.0,
+        "recent_median_psf": 1811.5,
         "bands": {
           "1800+": {
-            "median_psf": 2068.0,
+            "median_psf": 2067.0,
             "txn_count": 1
           },
           "1400-1800": {
@@ -90065,10 +90065,10 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 2,
-      "avg_psf_current": 1682.0,
-      "median_psf": 1682.0,
+      "avg_psf_current": 1681.0,
+      "median_psf": 1681.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": 6.997455470737912,
+      "appreciation_1yr": 6.933842239185761,
       "appreciation_3yr": null,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -90083,10 +90083,10 @@
       "data_coverage": "1yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1627.0,
+        "recent_median_psf": 1626.5,
         "bands": {
           "1800+": {
-            "median_psf": 1627.0,
+            "median_psf": 1626.5,
             "txn_count": 2
           }
         }
@@ -91885,9 +91885,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 49,
-        "low": 0.9688,
+        "low": 0.9689,
         "mid": 1.0,
-        "high": 1.0322
+        "high": 1.0321
       }
     },
     "the jovell": {
@@ -91983,7 +91983,7 @@
             "txn_count": 15
           },
           "1050-1400": {
-            "median_psf": 1290.0,
+            "median_psf": 1289.0,
             "txn_count": 15
           },
           "1400-1800": {
@@ -91995,9 +91995,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 58,
-        "low": 0.9802,
+        "low": 0.9801,
         "mid": 1.0,
-        "high": 1.0202
+        "high": 1.0203
       }
     },
     "parc komo": {
@@ -92052,7 +92052,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92105,7 +92105,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92223,7 +92223,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92276,7 +92276,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92333,7 +92333,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92386,7 +92386,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92439,7 +92439,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92492,7 +92492,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92545,7 +92545,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92594,7 +92594,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92643,7 +92643,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92676,7 +92676,7 @@
         "recent_median_psf": 1208.0,
         "bands": {
           "1400-1800": {
-            "median_psf": 1318.5,
+            "median_psf": 1318.0,
             "txn_count": 2
           },
           "1050-1400": {
@@ -92692,7 +92692,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92737,7 +92737,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92786,7 +92786,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92831,7 +92831,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92884,7 +92884,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92937,7 +92937,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -92986,7 +92986,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93031,7 +93031,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93080,7 +93080,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93129,7 +93129,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93182,7 +93182,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93227,7 +93227,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93272,7 +93272,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93321,7 +93321,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93370,7 +93370,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93419,7 +93419,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93464,7 +93464,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93513,7 +93513,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93558,7 +93558,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93599,7 +93599,7 @@
       "floor_factors": {
         "basis": "district_fe",
         "txn_count": 436,
-        "low": 0.9819,
+        "low": 0.982,
         "mid": 1.0,
         "high": 1.0184
       }
@@ -93650,7 +93650,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "nava grove": {
@@ -93701,9 +93701,9 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 164,
-        "low": 0.9562,
+        "low": 0.9563,
         "mid": 1.0,
-        "high": 1.0458
+        "high": 1.0457
       }
     },
     "pinetree hill": {
@@ -93774,28 +93774,28 @@
       "tenure": "999 yrs lease commencing from 1885",
       "lease_start_year": 1885,
       "transaction_count": 275,
-      "avg_psf_current": 2200.0,
-      "median_psf": 2200.0,
+      "avg_psf_current": 2199.0,
+      "median_psf": 2199.0,
       "avg_psf_5yr_ago": 1897.0,
-      "appreciation_1yr": -1.873327386262269,
-      "appreciation_3yr": -0.990099009900991,
-      "appreciation_5yr": 15.97258829731154,
-      "annualized_appreciation": 3.0080272717808,
+      "appreciation_1yr": -1.9179304192685098,
+      "appreciation_3yr": -1.035103510351032,
+      "appreciation_5yr": 15.91987348444912,
+      "annualized_appreciation": 2.9986612025886483,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 185,
       "new_sale_proportion": 0.673,
       "resale_transaction_count": 90,
-      "resale_annualized_appreciation": 1.6273187114566712,
+      "resale_annualized_appreciation": 1.6199994125399186,
       "has_new_launch_bias": true,
-      "appreciation_momentum": -0.976,
+      "appreciation_momentum": -0.983,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
         "recent_median_psf": 2235.0,
         "bands": {
           "800-1050": {
-            "median_psf": 2265.0,
+            "median_psf": 2264.0,
             "txn_count": 25
           },
           "1050-1400": {
@@ -93815,7 +93815,7 @@
       "floor_factors": {
         "basis": "project_fe",
         "txn_count": 62,
-        "low": 0.9926,
+        "low": 0.9925,
         "mid": 1.0,
         "high": 1.0075
       }
@@ -93860,7 +93860,7 @@
             "txn_count": 16
           },
           "600-800": {
-            "median_psf": 2330.0,
+            "median_psf": 2329.0,
             "txn_count": 19
           },
           "1050-1400": {
@@ -93927,7 +93927,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the sen": {
@@ -94041,7 +94041,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "signature park": {
@@ -94151,7 +94151,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "pine grove": {
@@ -94200,7 +94200,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the hillford": {
@@ -94245,7 +94245,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "mayfair modern": {
@@ -94298,7 +94298,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "pandan valley": {
@@ -94347,7 +94347,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "mayfair gardens": {
@@ -94400,7 +94400,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "daintree residence": {
@@ -94453,7 +94453,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "gardenvista": {
@@ -94498,7 +94498,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "maple woods": {
@@ -94511,7 +94511,7 @@
       "avg_psf_current": 2202.0,
       "median_psf": 2202.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -0.1813236627379866,
+      "appreciation_1yr": -0.1360544217687054,
       "appreciation_3yr": 4.907098618389716,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -94522,14 +94522,14 @@
       "resale_transaction_count": 62,
       "resale_annualized_appreciation": 2.479500523376421,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.363,
+      "appreciation_momentum": -0.354,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2204.0,
+        "recent_median_psf": 2203.5,
         "bands": {
           "1050-1400": {
-            "median_psf": 2206.0,
+            "median_psf": 2205.0,
             "txn_count": 7
           },
           "1800+": {
@@ -94551,7 +94551,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the creek @ bukit": {
@@ -94612,7 +94612,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "clementi park": {
@@ -94643,7 +94643,7 @@
         "recent_median_psf": 1538.0,
         "bands": {
           "1400-1800": {
-            "median_psf": 1519.5,
+            "median_psf": 1519.0,
             "txn_count": 4
           },
           "1800+": {
@@ -94665,7 +94665,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "springdale condominium": {
@@ -94677,19 +94677,19 @@
       "transaction_count": 58,
       "avg_psf_current": 1710.5,
       "median_psf": 1710.5,
-      "avg_psf_5yr_ago": 1370.0,
+      "avg_psf_5yr_ago": 1369.5,
       "appreciation_1yr": 0.558495002939452,
       "appreciation_3yr": 6.639650872817948,
-      "appreciation_5yr": 24.854014598540154,
-      "annualized_appreciation": 4.539520143936415,
+      "appreciation_5yr": 24.899598393574294,
+      "annualized_appreciation": 4.547152437231161,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 58,
-      "resale_annualized_appreciation": 4.539520143936415,
+      "resale_annualized_appreciation": 4.547152437231161,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.796,
+      "appreciation_momentum": -0.798,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -94710,7 +94710,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "view at kismis": {
@@ -94763,7 +94763,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "parc palais": {
@@ -94812,7 +94812,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "sherwood tower": {
@@ -94865,7 +94865,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "floridian": {
@@ -94918,7 +94918,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "cavendish park": {
@@ -94928,25 +94928,25 @@
       "tenure": "99 yrs lease commencing from 1991",
       "lease_start_year": 1991,
       "transaction_count": 45,
-      "avg_psf_current": 1567.0,
-      "median_psf": 1567.0,
+      "avg_psf_current": 1566.0,
+      "median_psf": 1566.0,
       "avg_psf_5yr_ago": 1373.5,
-      "appreciation_1yr": 0.384368994234463,
-      "appreciation_3yr": 7.771664374140297,
-      "appreciation_5yr": 14.088096104841652,
-      "annualized_appreciation": 2.6710649030086575,
+      "appreciation_1yr": 0.32030749519538215,
+      "appreciation_3yr": 7.702888583218703,
+      "appreciation_5yr": 14.01528940662542,
+      "annualized_appreciation": 2.657957400359612,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 45,
-      "resale_annualized_appreciation": 2.6710649030086575,
+      "resale_annualized_appreciation": 2.657957400359612,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.457,
+      "appreciation_momentum": -0.468,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1566.0,
+        "recent_median_psf": 1565.5,
         "bands": {
           "1050-1400": {
             "median_psf": 1546.5,
@@ -94957,7 +94957,7 @@
             "txn_count": 2
           },
           "1400-1800": {
-            "median_psf": 1567.0,
+            "median_psf": 1566.0,
             "txn_count": 1
           },
           "1800+": {
@@ -94971,7 +94971,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the raintree": {
@@ -95020,7 +95020,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "nottinghill suites": {
@@ -95032,30 +95032,30 @@
       "transaction_count": 41,
       "avg_psf_current": 1563.5,
       "median_psf": 1563.5,
-      "avg_psf_5yr_ago": 1599.5,
-      "appreciation_1yr": -15.303358613217766,
+      "avg_psf_5yr_ago": 1599.0,
+      "appreciation_1yr": -15.257452574525743,
       "appreciation_3yr": -9.098837209302324,
-      "appreciation_5yr": -2.2507033447952463,
-      "annualized_appreciation": -0.45424880491341524,
+      "appreciation_5yr": -2.2201375859912442,
+      "annualized_appreciation": -0.44802408305414376,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 41,
-      "resale_annualized_appreciation": -0.45424880491341524,
+      "resale_annualized_appreciation": -0.44802408305414376,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1846.0,
+        "recent_median_psf": 1845.0,
         "bands": {
           "600-800": {
             "median_psf": 1358.0,
             "txn_count": 1
           },
           "0-600": {
-            "median_psf": 1846.0,
+            "median_psf": 1845.0,
             "txn_count": 6
           }
         }
@@ -95065,7 +95065,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "symphony heights": {
@@ -95079,7 +95079,7 @@
       "median_psf": 1702.0,
       "avg_psf_5yr_ago": 1383.5,
       "appreciation_1yr": -5.75858250276855,
-      "appreciation_3yr": 7.551342812006312,
+      "appreciation_3yr": 7.585335018963346,
       "appreciation_5yr": 23.021322732200943,
       "annualized_appreciation": 4.230801762979164,
       "source": "ura_5yr_cagr",
@@ -95114,7 +95114,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "high oak condominium": {
@@ -95159,7 +95159,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "hillview green": {
@@ -95212,7 +95212,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "summerhill": {
@@ -95261,7 +95261,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the nexus": {
@@ -95318,7 +95318,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the blossomvale": {
@@ -95367,7 +95367,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "southaven ii": {
@@ -95420,7 +95420,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "jardin": {
@@ -95473,7 +95473,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "highgate": {
@@ -95518,7 +95518,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "hume park ii": {
@@ -95567,7 +95567,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "sherwood condominium": {
@@ -95612,7 +95612,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "kap residences": {
@@ -95665,7 +95665,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "astor green": {
@@ -95710,7 +95710,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "bukit regency": {
@@ -95755,7 +95755,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "terrene at bukit timah": {
@@ -95808,7 +95808,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the beverly": {
@@ -95857,7 +95857,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "southaven i": {
@@ -95902,7 +95902,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the sterling": {
@@ -95955,7 +95955,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the hillside": {
@@ -96008,7 +96008,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "the linq @ beauty world": {
@@ -96021,7 +96021,7 @@
       "avg_psf_current": 2608.0,
       "median_psf": 2608.0,
       "avg_psf_5yr_ago": 2378.0,
-      "appreciation_1yr": -6.051873198847257,
+      "appreciation_1yr": -6.034948657899475,
       "appreciation_3yr": -6.153292551277434,
       "appreciation_5yr": 9.671993271656865,
       "annualized_appreciation": 1.8636297124141388,
@@ -96043,7 +96043,7 @@
             "txn_count": 7
           },
           "800-1050": {
-            "median_psf": 2798.0,
+            "median_psf": 2797.0,
             "txn_count": 1
           },
           "0-600": {
@@ -96057,7 +96057,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "suites de laurel": {
@@ -96106,7 +96106,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "hume park i": {
@@ -96155,7 +96155,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "1 king albert park": {
@@ -96204,7 +96204,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "beauty world centre": {
@@ -96245,7 +96245,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "le wood": {
@@ -96290,7 +96290,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "meadowlodge": {
@@ -96335,7 +96335,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "eng kong green": {
@@ -96376,7 +96376,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "regis mansions": {
@@ -96421,7 +96421,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "suites at bukit timah": {
@@ -96466,7 +96466,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "freesia woods": {
@@ -96515,7 +96515,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "grand chateau": {
@@ -96556,7 +96556,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "casa esperanza": {
@@ -96601,7 +96601,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "selanting green": {
@@ -96646,7 +96646,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "binjai park": {
@@ -96691,7 +96691,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "grand regency": {
@@ -96736,7 +96736,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "kilat centre": {
@@ -96777,7 +96777,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "sunset lodge": {
@@ -96822,7 +96822,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "charisma view": {
@@ -96871,7 +96871,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "jk building": {
@@ -96916,7 +96916,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "kilat court": {
@@ -96957,7 +96957,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "mayfair park": {
@@ -96998,7 +96998,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "beauty world plaza": {
@@ -97043,7 +97043,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "kilat 19": {
@@ -97084,7 +97084,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "palm residence": {
@@ -97125,7 +97125,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "royal court": {
@@ -97170,7 +97170,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "toh tuck lodge": {
@@ -97215,7 +97215,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "kismis court": {
@@ -97256,7 +97256,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "sun court": {
@@ -97297,7 +97297,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "toh yi court": {
@@ -97338,7 +97338,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "mandarin park": {
@@ -97379,7 +97379,7 @@
         "txn_count": 1120,
         "low": 0.9726,
         "mid": 1.0,
-        "high": 1.0281
+        "high": 1.0282
       }
     },
     "j'den": {
@@ -97485,7 +97485,7 @@
         "txn_count": 105,
         "low": 0.9568,
         "mid": 1.0,
-        "high": 1.0452
+        "high": 1.0451
       }
     },
     "sora": {
@@ -97652,7 +97652,7 @@
         "txn_count": 57,
         "low": 0.9371,
         "mid": 1.0,
-        "high": 1.0671
+        "high": 1.0672
       }
     },
     "the lakeshore": {
@@ -98133,17 +98133,17 @@
       "transaction_count": 54,
       "avg_psf_current": 1019.0,
       "median_psf": 1019.0,
-      "avg_psf_5yr_ago": 946.0,
+      "avg_psf_5yr_ago": 945.0,
       "appreciation_1yr": -4.721832632071066,
       "appreciation_3yr": -2.1603456553048517,
-      "appreciation_5yr": 7.716701902748424,
-      "annualized_appreciation": 1.4977954784933134,
+      "appreciation_5yr": 7.8306878306878325,
+      "annualized_appreciation": 1.5192674066850431,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 54,
-      "resale_annualized_appreciation": 1.4977954784933134,
+      "resale_annualized_appreciation": 1.5192674066850431,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -98697,7 +98697,7 @@
       "median_psf": 1003.0,
       "avg_psf_5yr_ago": 778.0,
       "appreciation_1yr": 1.415571284125372,
-      "appreciation_3yr": 12.696629213483156,
+      "appreciation_3yr": 12.823397075365573,
       "appreciation_5yr": 28.92030848329048,
       "annualized_appreciation": 5.211755540773932,
       "source": "ura_5yr_cagr",
@@ -98744,17 +98744,17 @@
       "transaction_count": 20,
       "avg_psf_current": 937.0,
       "median_psf": 937.0,
-      "avg_psf_5yr_ago": 815.0,
+      "avg_psf_5yr_ago": 814.5,
       "appreciation_1yr": -5.353535353535355,
       "appreciation_3yr": -2.192066805845516,
-      "appreciation_5yr": 14.969325153374236,
-      "annualized_appreciation": 2.8291856458216413,
+      "appreciation_5yr": 15.039901780233267,
+      "annualized_appreciation": 2.8418073702286772,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 20,
-      "resale_annualized_appreciation": 2.8291856458216413,
+      "resale_annualized_appreciation": 2.8418073702286772,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -98816,7 +98816,7 @@
             "txn_count": 339
           },
           "800-1050": {
-            "median_psf": 2166.0,
+            "median_psf": 2165.0,
             "txn_count": 223
           },
           "0-600": {
@@ -99277,7 +99277,7 @@
             "txn_count": 4
           },
           "1050-1400": {
-            "median_psf": 1737.0,
+            "median_psf": 1736.0,
             "txn_count": 9
           },
           "1800+": {
@@ -99651,7 +99651,7 @@
       "avg_psf_current": 1536.0,
       "median_psf": 1536.0,
       "avg_psf_5yr_ago": 1379.0,
-      "appreciation_1yr": -2.165605095541401,
+      "appreciation_1yr": -2.103250478011476,
       "appreciation_3yr": 0.5235602094240788,
       "appreciation_5yr": 11.385061638868743,
       "annualized_appreciation": 2.1798803747051787,
@@ -99662,7 +99662,7 @@
       "resale_transaction_count": 6,
       "resale_annualized_appreciation": 2.1798803747051787,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.869,
+      "appreciation_momentum": -0.857,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -99867,7 +99867,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "canberra crescent residences": {
@@ -99902,7 +99902,7 @@
             "txn_count": 70
           },
           "800-1050": {
-            "median_psf": 2006.0,
+            "median_psf": 2005.0,
             "txn_count": 93
           },
           "600-800": {
@@ -99977,7 +99977,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "symphony suites": {
@@ -100075,7 +100075,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "skies miltonia": {
@@ -100181,7 +100181,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "orchid park condominium": {
@@ -100248,7 +100248,7 @@
       "median_psf": 1394.0,
       "avg_psf_5yr_ago": 1024.5,
       "appreciation_1yr": 5.366591080876804,
-      "appreciation_3yr": 12.600969305331189,
+      "appreciation_3yr": 12.69199676637025,
       "appreciation_5yr": 36.066373840897995,
       "annualized_appreciation": 6.353102175853831,
       "source": "ura_5yr_cagr",
@@ -100291,7 +100291,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "the miltonia residences": {
@@ -100330,7 +100330,7 @@
             "txn_count": 4
           },
           "1400-1800": {
-            "median_psf": 1191.0,
+            "median_psf": 1190.5,
             "txn_count": 6
           },
           "0-600": {
@@ -100344,7 +100344,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "the nautical": {
@@ -100405,7 +100405,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "the wisteria": {
@@ -100458,7 +100458,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "yishun sapphire": {
@@ -100511,7 +100511,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "canberra residences": {
@@ -100524,7 +100524,7 @@
       "avg_psf_current": 1233.0,
       "median_psf": 1233.0,
       "avg_psf_5yr_ago": 929.0,
-      "appreciation_1yr": 2.4086378737541603,
+      "appreciation_1yr": 2.451184046530952,
       "appreciation_3yr": 8.443271767810035,
       "appreciation_5yr": 32.72335844994618,
       "annualized_appreciation": 5.825291278549649,
@@ -100535,7 +100535,7 @@
       "resale_transaction_count": 77,
       "resale_annualized_appreciation": 5.825291278549649,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.683,
+      "appreciation_momentum": -0.675,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -100568,7 +100568,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "yishun emerald": {
@@ -100613,7 +100613,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "euphony gardens": {
@@ -100627,7 +100627,7 @@
       "median_psf": 961.5,
       "avg_psf_5yr_ago": 747.0,
       "appreciation_1yr": 8.155230596175489,
-      "appreciation_3yr": 4.852780806979284,
+      "appreciation_3yr": 4.9672489082969395,
       "appreciation_5yr": 28.714859437751006,
       "annualized_appreciation": 5.178200785914133,
       "source": "ura_5yr_cagr",
@@ -100670,7 +100670,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "nine residences": {
@@ -100723,7 +100723,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "seletaris": {
@@ -100772,7 +100772,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "northwood": {
@@ -100784,19 +100784,19 @@
       "transaction_count": 28,
       "avg_psf_current": 1245.0,
       "median_psf": 1245.0,
-      "avg_psf_5yr_ago": 1122.0,
+      "avg_psf_5yr_ago": 1121.0,
       "appreciation_1yr": 1.6326530612244872,
       "appreciation_3yr": 13.181818181818183,
-      "appreciation_5yr": 10.962566844919785,
-      "annualized_appreciation": 2.1022467740904327,
+      "appreciation_5yr": 11.061552185548607,
+      "annualized_appreciation": 2.120456557088257,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 28,
-      "resale_annualized_appreciation": 2.1022467740904327,
+      "resale_annualized_appreciation": 2.120456557088257,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.094,
+      "appreciation_momentum": -0.098,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -100821,7 +100821,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "kandis residence": {
@@ -100870,7 +100870,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "sun plaza": {
@@ -100919,7 +100919,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "d'banyan": {
@@ -100980,7 +100980,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "the sensoria": {
@@ -101025,7 +101025,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "sembawang cottage": {
@@ -101066,7 +101066,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "kindol gardens": {
@@ -101107,7 +101107,7 @@
         "txn_count": 679,
         "low": 0.9735,
         "mid": 1.0,
-        "high": 1.0272
+        "high": 1.0273
       }
     },
     "high park residences": {
@@ -101954,7 +101954,7 @@
             "txn_count": 5
           },
           "1400-1800": {
-            "median_psf": 3256.0,
+            "median_psf": 3255.0,
             "txn_count": 19
           }
         }
@@ -102087,7 +102087,7 @@
       "avg_psf_current": 2123.0,
       "median_psf": 2123.0,
       "avg_psf_5yr_ago": 1737.0,
-      "appreciation_1yr": 0.7115749525616666,
+      "appreciation_1yr": 0.7354685646500547,
       "appreciation_3yr": 10.057024364955947,
       "appreciation_5yr": 22.222222222222232,
       "annualized_appreciation": 4.095039696925684,
@@ -102098,7 +102098,7 @@
       "resale_transaction_count": 63,
       "resale_annualized_appreciation": 4.095039696925684,
       "has_new_launch_bias": false,
-      "appreciation_momentum": -0.677,
+      "appreciation_momentum": -0.672,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
@@ -102407,7 +102407,7 @@
             "txn_count": 2
           },
           "1400-1800": {
-            "median_psf": 1297.5,
+            "median_psf": 1297.0,
             "txn_count": 10
           },
           "1800+": {
@@ -102584,23 +102584,23 @@
       "transaction_count": 31,
       "avg_psf_current": 2259.0,
       "median_psf": 2259.0,
-      "avg_psf_5yr_ago": 2201.0,
+      "avg_psf_5yr_ago": 2200.0,
       "appreciation_1yr": 2.5419881979119374,
       "appreciation_3yr": 5.437572928821477,
-      "appreciation_5yr": 2.63516583371195,
-      "annualized_appreciation": 0.5215641336265175,
+      "appreciation_5yr": 2.681818181818185,
+      "annualized_appreciation": 0.5307007965781985,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 31,
-      "resale_annualized_appreciation": 0.5215641336265175,
+      "resale_annualized_appreciation": 0.5307007965781985,
       "has_new_launch_bias": false,
-      "appreciation_momentum": 0.404,
+      "appreciation_momentum": 0.402,
       "data_coverage": "5yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2207.5,
+        "recent_median_psf": 2207.0,
         "bands": {
           "600-800": {
             "median_psf": 2148.0,
@@ -103178,7 +103178,7 @@
       "median_psf": 2153.5,
       "avg_psf_5yr_ago": 2156.0,
       "appreciation_1yr": -2.732610659439927,
-      "appreciation_3yr": 4.615010930289043,
+      "appreciation_3yr": 4.640427599611274,
       "appreciation_5yr": -0.1159554730983281,
       "annualized_appreciation": -0.023201858646815232,
       "source": "ura_5yr_cagr",
@@ -103478,7 +103478,7 @@
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2811.0,
+        "recent_median_psf": 2810.0,
         "bands": {
           "1050-1400": {
             "median_psf": 2821.0,
@@ -103681,7 +103681,7 @@
             "txn_count": 5
           },
           "1800+": {
-            "median_psf": 2097.5,
+            "median_psf": 2097.0,
             "txn_count": 2
           }
         }
@@ -103999,19 +103999,19 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 16,
-      "avg_psf_current": 2000.0,
-      "median_psf": 2000.0,
+      "avg_psf_current": 1999.5,
+      "median_psf": 1999.5,
       "avg_psf_5yr_ago": 1633.0,
-      "appreciation_1yr": -5.347846663511591,
-      "appreciation_3yr": 2.564102564102555,
-      "appreciation_5yr": 22.473974280465402,
-      "annualized_appreciation": 4.137887184089228,
+      "appreciation_1yr": -5.3715097018457225,
+      "appreciation_3yr": 2.538461538461534,
+      "appreciation_5yr": 22.443355786895292,
+      "annualized_appreciation": 4.132679768962477,
       "source": "ura_5yr_cagr",
       "updated": "2026-09-24",
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 16,
-      "resale_annualized_appreciation": 4.137887184089228,
+      "resale_annualized_appreciation": 4.132679768962477,
       "has_new_launch_bias": false,
       "appreciation_momentum": -1.0,
       "data_coverage": "5yr",
@@ -104546,7 +104546,7 @@
       "median_psf": 2282.0,
       "avg_psf_5yr_ago": 1964.0,
       "appreciation_1yr": 9.186602870813388,
-      "appreciation_3yr": 2.4236983842010673,
+      "appreciation_3yr": 2.4696901661428017,
       "appreciation_5yr": 16.191446028513234,
       "annualized_appreciation": 3.8229917166852534,
       "source": "ura_5yr_cagr",
@@ -104869,11 +104869,11 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 9,
-      "avg_psf_current": 2051.5,
-      "median_psf": 2051.5,
+      "avg_psf_current": 2051.0,
+      "median_psf": 2051.0,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
-      "appreciation_3yr": 0.9099852434825362,
+      "appreciation_3yr": 0.8853910477127469,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
       "source": "ura_data",
@@ -104881,13 +104881,13 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 9,
-      "resale_annualized_appreciation": 0.453962213285819,
+      "resale_annualized_appreciation": 0.4417199413235595,
       "has_new_launch_bias": false,
       "appreciation_momentum": null,
       "data_coverage": "3yr",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 2051.5,
+        "recent_median_psf": 2051.0,
         "bands": {
           "1800+": {
             "median_psf": 1809.0,
@@ -104898,7 +104898,7 @@
             "txn_count": 2
           },
           "1050-1400": {
-            "median_psf": 2150.0,
+            "median_psf": 2149.5,
             "txn_count": 2
           }
         }
@@ -105617,7 +105617,7 @@
       "new_sale_count": 0,
       "new_sale_proportion": 0.0,
       "resale_transaction_count": 6,
-      "resale_annualized_appreciation": 6.271513101677062,
+      "resale_annualized_appreciation": 6.285154268937099,
       "has_new_launch_bias": false,
       "appreciation_momentum": null,
       "data_coverage": "3yr",
@@ -106721,7 +106721,7 @@
       "avg_psf_current": 1884.0,
       "median_psf": 1884.0,
       "avg_psf_5yr_ago": null,
-      "appreciation_1yr": -1.4128728414442682,
+      "appreciation_1yr": -1.3612565445026203,
       "appreciation_3yr": 28.952772073921974,
       "appreciation_5yr": null,
       "annualized_appreciation": null,
@@ -107328,8 +107328,8 @@
       "tenure": "Freehold",
       "lease_start_year": null,
       "transaction_count": 2,
-      "avg_psf_current": 1753.5,
-      "median_psf": 1753.5,
+      "avg_psf_current": 1752.5,
+      "median_psf": 1752.5,
       "avg_psf_5yr_ago": null,
       "appreciation_1yr": null,
       "appreciation_3yr": null,
@@ -107346,10 +107346,10 @@
       "data_coverage": "none",
       "by_size": {
         "window_years": 2,
-        "recent_median_psf": 1753.5,
+        "recent_median_psf": 1752.5,
         "bands": {
           "1050-1400": {
-            "median_psf": 1753.5,
+            "median_psf": 1752.5,
             "txn_count": 2
           }
         }
