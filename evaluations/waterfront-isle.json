@@ -439,6 +439,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500001144",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Same listing (500043467) that was rated Buy on 2026-06-05 at $2.10M: a 1,292 sqft reservoir-facing corner unit, renovated, but reconfigured from 3BR to 2BR plus a larger living room. It did not sell at $2.10M in 16 weeks and has now been raised to $2.155M ($1,668 psf). That is ~7-9% below the 2026 mid/high-floor prints for this size, but only at fair value if the unit is on a low floor, and the 3BR has to be rebuilt before the mandate's 3BR buyer can use it.",
+      "rating_rationale": "(1) Comps (URA, 24mo): 2026 mid/high-floor 1,227-1,378 sqft 3BRs printed $1,793-1,956 psf (Jun-26 1,227 fl06-10 $2.20M; May-26 1,259 fl06-10 $2.32M x2; Apr-26 1,259 fl11-15 $2.30M; Jun-26 1,378 fl11-15 $2.695M). Size-adjusted fair value for 1,292 sqft is ~$2.30-2.36M on floor 6+. Low-floor 2026 prints spread $1,473-1,809 psf (median ~$1,650), putting low-floor fair value at ~$2.10-2.15M. The only exact-size print is Aug-24, fl11-15, $2.205M. The ask ($1,668 psf) is therefore about 8% below fair if the unit is on floor 6+ and about fair if it is on floors 1-5. The listing still doesn't give the floor. (2) Market test: sitting 16 weeks at $2.10M while mid-floor 1,259s cleared at $2.22-2.32M means buyers are discounting something, most likely the 2BR reconfiguration and/or a low floor. The seller then raised the price instead of cutting it, which removes the negotiating room the June Buy relied on. (3) Format: the June listing text said the unit was reconfigured 3BR→2BR with an enlarged living room. A 3BR buyer/tenant has to pay ~$30-60K to reinstate it and loses part of the ~$200K renovation; the bed_bands 3BR size check is 'ok' (1,150-1,350 band, 154 contracts), so the strata size is a real 3BR, but the physical layout is not today. After reinstatement the effective entry is ~$2.19-2.22M, a ~4-6% margin in the good case and none in the low-floor case. (4) Development fundamentals are solid: 561 units, deep resale book (123 URA resales), ~270m to DT30 Bedok Reservoir, OCR region. REALSCORE 3.6 with 98.7% of 303 matched resale pairs profitable (avg 4.1%/yr) is strong downside evidence that owners here don't lose money. It is not a growth forecast. (5) Carry is weak: $5,250/mo from 44 URA 3BR contracts gives 2.92% gross / 1.73% net. (6) The algo's 777 is inflated under current priors: 10.8 MMR points come from a trailing 7.6% CAGR (≈0 forward power); the MRT input uses 113m where the listing says 270m; remaining lease is ~82 years (99 from Nov-2009), not 85. Valuation vs age-adjusted D16 same-size peers is +1.8%, i.e. fair, with no district-level cheapness. Net: a good development and a possibly well-priced stack, but the known unit facts (reconfigured layout, price raised after 16 unsold weeks, undisclosed floor) make this a Neutral. It becomes a Buy only if a viewing confirms floor 6+ with open reservoir view AND the price after reinstatement stays ≤ ~$2.20M.",
+      "red_flags": [
+        "Reconfigured from 3BR to 2BR + enlarged living (per June listing text): a 3BR buyer/tenant has to reinstate it (~$30-60K), and the ~$200K renovation doesn't carry full value at exit",
+        "Price RAISED $2.10M → $2.155M after 16 weeks unsold (first seen 2026-06-05, relisted 23 Sep) even though mid-floor 3BRs of this size cleared at $2.22-2.32M in the same period. Buyers are discounting a unit-level defect",
+        "Floor still undisclosed. Low-floor 3BRs here print $1,473-1,809 psf vs $1,793-1,956 on floor 6+, so the floor alone decides whether this is an ~8% discount or full price",
+        "Only one exact 1,292 sqft print in 24+ months (Aug-24 fl11-15 $2.205M): thin exact-format evidence",
+        "Weak carry: 2.92% gross / 1.73% net on $5,250/mo (44 URA contracts)",
+        "~82 years lease left (99yr from Nov-2009; raw_analysis overstates as 85), ~75 at a 7-year exit",
+        "score_1000 777 is propped up by trailing-CAGR points (10.8) and an MRT distance of 113m that the listing contradicts (270m)",
+        "D16 exit supply: Bayshore GLS precinct, New Upper Changi Rd GLS, plus the sister Waterfront Waves/Key/Gold resale book in the same micro-market"
+      ],
+      "catalysts": [
+        "If verified floor 6+ in a reservoir-facing corner stack, the ask is ~7-9% below the 2026 same-size mid/high-floor prints ($2.30-2.36M fair)",
+        "REALSCORE 3.6 / 98.7% profitable on 303 resale pairs: strong exit record (downside evidence)",
+        "~270m walk to DT30 Bedok Reservoir (DTL) in a deep HDB-upgrader catchment; OCR region carries the best measured forward prior",
+        "Bayshore precinct / TEL build-out raises D16 new-launch benchmarks (implied fair from new launches $1,873 psf, ask −10.9%)"
+      ],
+      "as_of": {
+        "price": 2155000,
+        "psf": 1667.96,
+        "beds": 3,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.61,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.92,
+        "nearest_mrt": "Bedok Reservoir",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "Same listing (500043467) that was rated Buy on 2026-06-05 at $2.10M: a 1,292 sqft reservoir-facing corner unit, renovated, but reconfigured from 3BR to 2BR plus a larger living room. It did not sell at $2.10M in 16 weeks and has now been raised to $2.155M ($1,668 psf). That is ~7-9% below the 2026 mid/high-floor prints for this size, but only at fair value if the unit is on a low floor, and the 3BR has to be rebuilt before the mandate's 3BR buyer can use it.",
+        "rating": "Neutral",
+        "rating_rationale": "(1) Comps (URA, 24mo): 2026 mid/high-floor 1,227-1,378 sqft 3BRs printed $1,793-1,956 psf (Jun-26 1,227 fl06-10 $2.20M; May-26 1,259 fl06-10 $2.32M x2; Apr-26 1,259 fl11-15 $2.30M; Jun-26 1,378 fl11-15 $2.695M). Size-adjusted fair value for 1,292 sqft is ~$2.30-2.36M on floor 6+. Low-floor 2026 prints spread $1,473-1,809 psf (median ~$1,650), putting low-floor fair value at ~$2.10-2.15M. The only exact-size print is Aug-24, fl11-15, $2.205M. The ask ($1,668 psf) is therefore about 8% below fair if the unit is on floor 6+ and about fair if it is on floors 1-5. The listing still doesn't give the floor. (2) Market test: sitting 16 weeks at $2.10M while mid-floor 1,259s cleared at $2.22-2.32M means buyers are discounting something, most likely the 2BR reconfiguration and/or a low floor. The seller then raised the price instead of cutting it, which removes the negotiating room the June Buy relied on. (3) Format: the June listing text said the unit was reconfigured 3BR→2BR with an enlarged living room. A 3BR buyer/tenant has to pay ~$30-60K to reinstate it and loses part of the ~$200K renovation; the bed_bands 3BR size check is 'ok' (1,150-1,350 band, 154 contracts), so the strata size is a real 3BR, but the physical layout is not today. After reinstatement the effective entry is ~$2.19-2.22M, a ~4-6% margin in the good case and none in the low-floor case. (4) Development fundamentals are solid: 561 units, deep resale book (123 URA resales), ~270m to DT30 Bedok Reservoir, OCR region. REALSCORE 3.6 with 98.7% of 303 matched resale pairs profitable (avg 4.1%/yr) is strong downside evidence that owners here don't lose money. It is not a growth forecast. (5) Carry is weak: $5,250/mo from 44 URA 3BR contracts gives 2.92% gross / 1.73% net. (6) The algo's 777 is inflated under current priors: 10.8 MMR points come from a trailing 7.6% CAGR (≈0 forward power); the MRT input uses 113m where the listing says 270m; remaining lease is ~82 years (99 from Nov-2009), not 85. Valuation vs age-adjusted D16 same-size peers is +1.8%, i.e. fair, with no district-level cheapness. Net: a good development and a possibly well-priced stack, but the known unit facts (reconfigured layout, price raised after 16 unsold weeks, undisclosed floor) make this a Neutral. It becomes a Buy only if a viewing confirms floor 6+ with open reservoir view AND the price after reinstatement stays ≤ ~$2.20M.",
+        "red_flags": [
+          "Reconfigured from 3BR to 2BR + enlarged living (per June listing text): a 3BR buyer/tenant has to reinstate it (~$30-60K), and the ~$200K renovation doesn't carry full value at exit",
+          "Price RAISED $2.10M → $2.155M after 16 weeks unsold (first seen 2026-06-05, relisted 23 Sep) even though mid-floor 3BRs of this size cleared at $2.22-2.32M in the same period. Buyers are discounting a unit-level defect",
+          "Floor still undisclosed. Low-floor 3BRs here print $1,473-1,809 psf vs $1,793-1,956 on floor 6+, so the floor alone decides whether this is an ~8% discount or full price",
+          "Only one exact 1,292 sqft print in 24+ months (Aug-24 fl11-15 $2.205M): thin exact-format evidence",
+          "Weak carry: 2.92% gross / 1.73% net on $5,250/mo (44 URA contracts)",
+          "~82 years lease left (99yr from Nov-2009; raw_analysis overstates as 85), ~75 at a 7-year exit",
+          "score_1000 777 is propped up by trailing-CAGR points (10.8) and an MRT distance of 113m that the listing contradicts (270m)",
+          "D16 exit supply: Bayshore GLS precinct, New Upper Changi Rd GLS, plus the sister Waterfront Waves/Key/Gold resale book in the same micro-market"
+        ],
+        "catalysts": [
+          "If verified floor 6+ in a reservoir-facing corner stack, the ask is ~7-9% below the 2026 same-size mid/high-floor prints ($2.30-2.36M fair)",
+          "REALSCORE 3.6 / 98.7% profitable on 303 resale pairs: strong exit record (downside evidence)",
+          "~270m walk to DT30 Bedok Reservoir (DTL) in a deep HDB-upgrader catchment; OCR region carries the best measured forward prior",
+          "Bayshore precinct / TEL build-out raises D16 new-launch benchmarks (implied fair from new launches $1,873 psf, ask −10.9%)"
+        ],
+        "rental_assessment": "URA project-level 3BR rent $5,250/mo from 44 contracts over 12 months (confidence 0.95). That gives 2.92% gross / 1.73% net, which is carry and not a yield play. As a reconfigured 2BR, tenant demand would sit closer to the 2BR rent band (~$4.2-4.5K) until reinstated.",
+        "appreciation_assessment": "The 7.6% URA 5yr CAGR is 2021-26 bull-regime trailing data and has ≈0 forward power. I override to 3.7%/yr, the realized forward OCR baseline, with no project premium. Development-level value vs D16 age-adjusted same-size peers is fair (+1.8%), so any excess return has to come from the unit-level discount, which depends on the floor.",
+        "stack_notes": "No profile yet (not_researched). From prior research: 8 of the stacks face Bedok Reservoir, and open water clears the tree line from ~floor 4-5; non-reservoir stacks face internal blocks. The June listing text described this unit as a reservoir-facing corner. The floor is not disclosed, and it is decisive.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.7,
+        "appreciation_rate_source": "OCR realized forward baseline (CLAUDE.md backtest); trailing 7.6% URA CAGR de-weighted",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 98.7,
+        "realsmart_annual_return_pct": 4.1
+      },
+      "source": {
+        "run_dir": "output/run_108_500043467",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-isle-500043467",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

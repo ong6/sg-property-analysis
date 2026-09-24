@@ -252,6 +252,82 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500126558",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A low-floor 1,216 sqft 3BR at Tanamera Crest (CapitaLand, TOP 2004, 288 units, 99yr from Jun-2000 = ~73.7yr left) asking $1.378M / $1,133 psf. Fairly priced, not a bargain: the project's own recent same-format prints put fair value at ~$1.40-1.43M, so the ask is only ~2-4% under, and it is the same unit that opened at $1.465M in June and has sat ~3.5 months across several agents. The 773 score is driven by age_value +16 from a -22.8% gap to the D16 age-adjusted median — the permanent Bedok-Upper-East-Coast leasehold sub-market level — while against its own 15-txn cohort the ask is +1.0%.",
+      "rating_rationale": "Neutral because the only forward signal that matters (cheap vs real comps) barely fires: $1,133 psf vs recent low-floor 1,160-1,216 sqft prints of $1,140-1,200 (Sep-26 1,173sf fl01-05 $1.35M/$1,151; Nov-25 1,184sf fl01-05 $1,140; Oct-25 1,163sf fl01-05 $1,196; Jul-25 exact 1,216sf fl01-05 $1.46M/$1,200) — a 2-4% edge, within noise. The algo's 773 rests on the district-gap age_value (+16.0 of the MMR lift), which is a location/tenure level, not a dislocation (project cohort premium +1.0%). Positives are real but baseline: OCR region, deep liquidity (60 URA resales in 5y, ~13/yr, 374 realsmart resale pairs), verified ~3.6% gross yield, REALSCORE 3.0 with 84.6% profitable on 374 pairs. Negatives: low floor, 736m uphill walk to Tanah Merah, lease ~67yr at a 5-7yr exit, and prints flat since late 2024 (2025 ~$1,109-1,219 psf; 2026 $1,151-1,245). Buy only if it can be had ≤~$1.33M ($1,095 psf, ~6% under own-print fair).",
+      "red_flags": [
+        "score_1000 773 is the district-gap artifact: age_value +16.0 comes from -22.8% vs the D16 age-adjusted median ($1,468), the persistent level of 2000s-era leasehold stock off Upper East Coast/Bedok — against the project's own 15-txn cohort the ask is +1.0%.",
+        "Only ~2-4% under own-print fair value: recent low-floor same-format prints $1,140-1,200 psf (Sep-26 1,173sf $1.35M; Jul-25 exact 1,216sf fl01-05 $1.46M) imply ~$1.40-1.43M vs the $1.378M ask.",
+        "Stale, multi-agent unit: the same 1,216sf low-floor unit was asked $1.465M on 2026-06-07, cut to $1.378M on 2026-07-28, and another agent (24063950) still shows $1.45M — ~3.5 months without clearing even after a 6% cut.",
+        "Deep competing supply: ~10 live 3BR asks in a 288-unit project at $1.373-1.48M (e.g. 1,163sf $1.373M, 1,184sf $1.375M, both mid-/unknown floor). The subject is cheapest on PSF but not on quantum; seller has no scarcity.",
+        "Lease: 99yr from 20-Jun-2000 leaves ~73.7yr today (DB shows 74), ~67yr at a 5-7yr exit — within CPF/financing comfort but decay accelerating.",
+        "Low floor (01-05) in a project where floor 11-15 prints ~3-5% higher; facing/stack unresearched (no profile).",
+        "736m to Tanah Merah EW4, reviewers note an uphill walk; nearest future station TEL Bedok South at 1.7km — no dated catalyst.",
+        "Trailing 5.96% URA CAGR (and the run's ~6%/yr ROI) is the spent 2021-24 repricing ($870-1,000 psf 2021-22 → ~$1,150-1,200 now); prints flat since late 2024, momentum -1.0. Overridden to 3.5%."
+      ],
+      "catalysts": [
+        "OCR region — the favoured forward region in the backtest (realized ~+3.7%/yr) — a baseline, not a project-specific edge.",
+        "Deep, transparent liquidity: 60 URA resales in 5 years, the bulk in the 1,160-1,217 sqft 3BR format; exit price is knowable.",
+        "Verified rent: URA project-bed $4,200/mo on 31 contracts (12mo), realsmart median $4,000 — ~3.5-3.7% gross, ~2.2% net carry.",
+        "REALSCORE 3.0/5, 84.6% of 374 matched resale pairs profitable, avg annualized 4.1% — deep-sample downside evidence that owners here have rarely lost money (15% did).",
+        "Family-friendly CapitaLand development: quiet, green, off the main road, full facilities incl. 3 children's pools and tennis; PCN nearby.",
+        "Negotiation room: seller already cut 6%, unit has sat 3.5 months — a ≤$1.33M entry would make this a Buy."
+      ],
+      "as_of": {
+        "price": 1378000,
+        "psf": 1133.22,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.96,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.66,
+        "nearest_mrt": "Tanah Merah",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "A low-floor 1,216 sqft 3BR at Tanamera Crest (CapitaLand, TOP 2004, 288 units, 99yr from Jun-2000 = ~73.7yr left) asking $1.378M / $1,133 psf. Fairly priced, not a bargain: the project's own recent same-format prints put fair value at ~$1.40-1.43M, so the ask is only ~2-4% under, and it is the same unit that opened at $1.465M in June and has sat ~3.5 months across several agents. The 773 score is driven by age_value +16 from a -22.8% gap to the D16 age-adjusted median — the permanent Bedok-Upper-East-Coast leasehold sub-market level — while against its own 15-txn cohort the ask is +1.0%.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral because the only forward signal that matters (cheap vs real comps) barely fires: $1,133 psf vs recent low-floor 1,160-1,216 sqft prints of $1,140-1,200 (Sep-26 1,173sf fl01-05 $1.35M/$1,151; Nov-25 1,184sf fl01-05 $1,140; Oct-25 1,163sf fl01-05 $1,196; Jul-25 exact 1,216sf fl01-05 $1.46M/$1,200) — a 2-4% edge, within noise. The algo's 773 rests on the district-gap age_value (+16.0 of the MMR lift), which is a location/tenure level, not a dislocation (project cohort premium +1.0%). Positives are real but baseline: OCR region, deep liquidity (60 URA resales in 5y, ~13/yr, 374 realsmart resale pairs), verified ~3.6% gross yield, REALSCORE 3.0 with 84.6% profitable on 374 pairs. Negatives: low floor, 736m uphill walk to Tanah Merah, lease ~67yr at a 5-7yr exit, and prints flat since late 2024 (2025 ~$1,109-1,219 psf; 2026 $1,151-1,245). Buy only if it can be had ≤~$1.33M ($1,095 psf, ~6% under own-print fair).",
+        "red_flags": [
+          "score_1000 773 is the district-gap artifact: age_value +16.0 comes from -22.8% vs the D16 age-adjusted median ($1,468), the persistent level of 2000s-era leasehold stock off Upper East Coast/Bedok — against the project's own 15-txn cohort the ask is +1.0%.",
+          "Only ~2-4% under own-print fair value: recent low-floor same-format prints $1,140-1,200 psf (Sep-26 1,173sf $1.35M; Jul-25 exact 1,216sf fl01-05 $1.46M) imply ~$1.40-1.43M vs the $1.378M ask.",
+          "Stale, multi-agent unit: the same 1,216sf low-floor unit was asked $1.465M on 2026-06-07, cut to $1.378M on 2026-07-28, and another agent (24063950) still shows $1.45M — ~3.5 months without clearing even after a 6% cut.",
+          "Deep competing supply: ~10 live 3BR asks in a 288-unit project at $1.373-1.48M (e.g. 1,163sf $1.373M, 1,184sf $1.375M, both mid-/unknown floor). The subject is cheapest on PSF but not on quantum; seller has no scarcity.",
+          "Lease: 99yr from 20-Jun-2000 leaves ~73.7yr today (DB shows 74), ~67yr at a 5-7yr exit — within CPF/financing comfort but decay accelerating.",
+          "Low floor (01-05) in a project where floor 11-15 prints ~3-5% higher; facing/stack unresearched (no profile).",
+          "736m to Tanah Merah EW4, reviewers note an uphill walk; nearest future station TEL Bedok South at 1.7km — no dated catalyst.",
+          "Trailing 5.96% URA CAGR (and the run's ~6%/yr ROI) is the spent 2021-24 repricing ($870-1,000 psf 2021-22 → ~$1,150-1,200 now); prints flat since late 2024, momentum -1.0. Overridden to 3.5%."
+        ],
+        "catalysts": [
+          "OCR region — the favoured forward region in the backtest (realized ~+3.7%/yr) — a baseline, not a project-specific edge.",
+          "Deep, transparent liquidity: 60 URA resales in 5 years, the bulk in the 1,160-1,217 sqft 3BR format; exit price is knowable.",
+          "Verified rent: URA project-bed $4,200/mo on 31 contracts (12mo), realsmart median $4,000 — ~3.5-3.7% gross, ~2.2% net carry.",
+          "REALSCORE 3.0/5, 84.6% of 374 matched resale pairs profitable, avg annualized 4.1% — deep-sample downside evidence that owners here have rarely lost money (15% did).",
+          "Family-friendly CapitaLand development: quiet, green, off the main road, full facilities incl. 3 children's pools and tennis; PCN nearby.",
+          "Negotiation room: seller already cut 6%, unit has sat 3.5 months — a ≤$1.33M entry would make this a Buy."
+        ],
+        "rental_assessment": "$4,200/mo (URA ura_project_bed, 31 contracts, 12mo; realsmart median $4,000, range $3,100-7,300) → ~3.5-3.7% gross, ~2.2% net. Artifact-free, carry only — not appreciation.",
+        "appreciation_assessment": "Trailing 5.96% CAGR is the 2021-24 OCR repricing, now flat (2025-26 prints ~$1,110-1,245 psf). Use ~3.5%/yr: OCR baseline less a small leasehold-age drag; no catalyst.",
+        "stack_notes": "Floor 'Low Floor' (01-05). No researched profile; facing/stack unknown. Low-floor same-format prints run ~3-5% below floor 11-15.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR realized forward baseline (~3.7%/yr) less leasehold drag; project prints flat since late 2024",
+        "realscore": 3.0,
+        "realsmart_pct_profitable": 84.6,
+        "realsmart_annual_return_pct": 4.1
+      },
+      "source": {
+        "run_dir": "output/run_109_500251149",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-tanamera-crest-500251149",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
