@@ -278,6 +278,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-oasis-elias-500247833",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Avoid",
+      "confidence": "high",
+      "summary": "1,432 sqft 4BR, high floor (Blk 72 per the ad), renovated, pool-facing, at Oasis @ Elias (99-LH from Mar-2008, ~81 yrs left, 388 units, CES Land), asking $2,150,000 / $1,501 psf after one genuine cut from $2.20M on the same listing id. Every large-unit print the project has ever recorded is below this ask: the same 1,432 sqft layout last printed $1,310 psf (Aug-24, floor 06-10) and $1,180 (Nov-23), and the 1,400-1,550 sqft band's all-time high is $1,353 psf (Feb-26, 1,496 sqft, floor 16-20). A fair read is ~$1,370-1,430 psf, i.e. $1.96-2.05M even with a high-floor and renovation premium, so the ask is ~5-10% over fair and ~11% over the band's best-ever print. The live book agrees: a 1,410 sqft 4BR has sat unsold at $1.918-1.938M since June. Carry is thin at 2.7% gross / 1.5% net. The project's exit record is sound (REALSCORE 3.3, 93.1% profitable on 263 resale pairs), but that is not a reason to pay above every print.",
+      "rating_rationale": "Avoid at $2.15M. The price is the only problem here, and it is a big one. The project is sound: 93.1% of 263 resale pairs were profitable, 637 lifetime transactions, OCR/D18, deep HDB-upgrader demand. But the ask is $1,501 psf against same-layout prints of $1,180-1,310 and a band all-time high of $1,353 (Feb-26, floor 16-20, a larger 1,496 sqft unit). Rolling the Aug-24 $1,310 print forward by the ~8-9% the project's 3BR format has gained since, and adding a high-floor premium, gives a fair value of about $1,430 psf, or $2.05M. That is the ceiling, not the midpoint. The algo agrees on the numbers (score_1000 512, psf_value -7.9, ask_above_own_stack_prints +19% on n=4) and on nothing better: yield -4.3, MRT -6.7. The one bright spot is that the seller is moving: this listing id was cut from $2.20M on 28-Jul to $2.15M. A negotiated price of ≤$2.0M on a verified high-floor unit would be worth re-rating to Neutral. It fits the 'hers' budget but is never a Buy at the current price.",
+      "red_flags": [
+        "Ask is above every large-unit print on record: $1,501 psf vs same-size 1,432 sqft prints of $1,310 (Aug-24, fl 06-10), $1,180 (Nov-23, fl 11-15), $1,013 (Apr-22, fl 16-20). The 1,400-1,550 sqft band's all-time high is $1,353 psf (Feb-26, 1,496 sqft, fl 16-20)",
+        "psf_premium_vs_ura_median_pct +19.7% and ask_above_own_stack_prints (+19% vs n=4 own same-size prints). psf_cohort_txns=3 is thin, but every print in it points the same way",
+        "Quantum $2.15M exceeds every large-unit print ($2.025M high, Feb-26). Only the 2,637 sqft penthouse ($2.38M, 2023) printed higher in absolute terms",
+        "A cheaper 4BR in the same project has not cleared: 1,410 sqft (unit_group oasis elias|4|366) listed at $1.918M from 8-Jun and at $1.938M from 12-Aug, still unsold. Asks at Oasis run ahead of transactions",
+        "Thin exit for this size: 4 prints in the 1,400-1,550 sqft band in the last 24 months (1 in 2025), against a 1,216 sqft 3BR format that prints every quarter",
+        "Weak carry: URA 4BR rent $4,825/mo on 8 contracts = 2.69% gross / 1.47% net. Yield is carry only and counts for nothing toward appreciation",
+        "Poor transit: 1.28 km / ~15 min walk to Pasir Ris MRT (mrt -6.7). Bus-dependent until the CRL",
+        "Floor is from the ad text ('high floor', Blk 72), not a registry. PG serves no floor_level. If it is actually mid-floor, fair drops to ~$1.95M",
+        "99-yr lease from 17/03/2008: ~81 yrs left now, ~75 at a 5-7yr exit",
+        "realsmart: 19 of 263 resale pairs (7.2%) exited at a loss. REALSCORE 3.3 is middling. Transaction volume is thinning (29 resales in 2021, 10 in 2025, 5 so far in 2026)"
+      ],
+      "catalysts": [
+        "Genuine seller movement on one listing id: $2.20M (28-Jul-26) cut to $2.15M (24-Sep-26). Not a unit-group chain. Room for further negotiation is plausible",
+        "High-floor, renovated, pool-facing unit (3 of 4 bedrooms face the pool) per the ad. This is the top of the project's 4BR tier if verified",
+        "Deep project exit record: 93.1% of 263 resale pairs profitable, avg holding 6.8 yrs, 637 lifetime transactions. 62% of buyers are HDB upgraders, which gives an owner-occupier floor",
+        "OCR / D18, the region with the strongest realized forward drift in the backtest (OCR +3.7%/yr vs CCR +1.9%). Priced +1.8% vs age-adjusted D18 1,400-1,800 sqft peers, so there is no region discount left to capture",
+        "Schools: Park View Primary 251m, Elias Park Primary 398m. Elias Mall is adjacent",
+        "CRL makes Pasir Ris an EWL x CRL interchange ~2030 (~950m). Narrative only: the future-infra score has no measured forward power"
+      ],
+      "as_of": {
+        "price": 2150000,
+        "psf": 1501.4,
+        "beds": 4,
+        "sqft": 1432.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.41,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.69,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "1,432 sqft 4BR, high floor (Blk 72 per the ad), renovated, pool-facing, at Oasis @ Elias (99-LH from Mar-2008, ~81 yrs left, 388 units, CES Land), asking $2,150,000 / $1,501 psf after one genuine cut from $2.20M on the same listing id. Every large-unit print the project has ever recorded is below this ask: the same 1,432 sqft layout last printed $1,310 psf (Aug-24, floor 06-10) and $1,180 (Nov-23), and the 1,400-1,550 sqft band's all-time high is $1,353 psf (Feb-26, 1,496 sqft, floor 16-20). A fair read is ~$1,370-1,430 psf, i.e. $1.96-2.05M even with a high-floor and renovation premium, so the ask is ~5-10% over fair and ~11% over the band's best-ever print. The live book agrees: a 1,410 sqft 4BR has sat unsold at $1.918-1.938M since June. Carry is thin at 2.7% gross / 1.5% net. The project's exit record is sound (REALSCORE 3.3, 93.1% profitable on 263 resale pairs), but that is not a reason to pay above every print.",
+        "rating": "Avoid",
+        "rating_rationale": "Avoid at $2.15M. The price is the only problem here, and it is a big one. The project is sound: 93.1% of 263 resale pairs were profitable, 637 lifetime transactions, OCR/D18, deep HDB-upgrader demand. But the ask is $1,501 psf against same-layout prints of $1,180-1,310 and a band all-time high of $1,353 (Feb-26, floor 16-20, a larger 1,496 sqft unit). Rolling the Aug-24 $1,310 print forward by the ~8-9% the project's 3BR format has gained since, and adding a high-floor premium, gives a fair value of about $1,430 psf, or $2.05M. That is the ceiling, not the midpoint. The algo agrees on the numbers (score_1000 512, psf_value -7.9, ask_above_own_stack_prints +19% on n=4) and on nothing better: yield -4.3, MRT -6.7. The one bright spot is that the seller is moving: this listing id was cut from $2.20M on 28-Jul to $2.15M. A negotiated price of ≤$2.0M on a verified high-floor unit would be worth re-rating to Neutral. It fits the 'hers' budget but is never a Buy at the current price.",
+        "red_flags": [
+          "Ask is above every large-unit print on record: $1,501 psf vs same-size 1,432 sqft prints of $1,310 (Aug-24, fl 06-10), $1,180 (Nov-23, fl 11-15), $1,013 (Apr-22, fl 16-20). The 1,400-1,550 sqft band's all-time high is $1,353 psf (Feb-26, 1,496 sqft, fl 16-20)",
+          "psf_premium_vs_ura_median_pct +19.7% and ask_above_own_stack_prints (+19% vs n=4 own same-size prints). psf_cohort_txns=3 is thin, but every print in it points the same way",
+          "Quantum $2.15M exceeds every large-unit print ($2.025M high, Feb-26). Only the 2,637 sqft penthouse ($2.38M, 2023) printed higher in absolute terms",
+          "A cheaper 4BR in the same project has not cleared: 1,410 sqft (unit_group oasis elias|4|366) listed at $1.918M from 8-Jun and at $1.938M from 12-Aug, still unsold. Asks at Oasis run ahead of transactions",
+          "Thin exit for this size: 4 prints in the 1,400-1,550 sqft band in the last 24 months (1 in 2025), against a 1,216 sqft 3BR format that prints every quarter",
+          "Weak carry: URA 4BR rent $4,825/mo on 8 contracts = 2.69% gross / 1.47% net. Yield is carry only and counts for nothing toward appreciation",
+          "Poor transit: 1.28 km / ~15 min walk to Pasir Ris MRT (mrt -6.7). Bus-dependent until the CRL",
+          "Floor is from the ad text ('high floor', Blk 72), not a registry. PG serves no floor_level. If it is actually mid-floor, fair drops to ~$1.95M",
+          "99-yr lease from 17/03/2008: ~81 yrs left now, ~75 at a 5-7yr exit",
+          "realsmart: 19 of 263 resale pairs (7.2%) exited at a loss. REALSCORE 3.3 is middling. Transaction volume is thinning (29 resales in 2021, 10 in 2025, 5 so far in 2026)"
+        ],
+        "catalysts": [
+          "Genuine seller movement on one listing id: $2.20M (28-Jul-26) cut to $2.15M (24-Sep-26). Not a unit-group chain. Room for further negotiation is plausible",
+          "High-floor, renovated, pool-facing unit (3 of 4 bedrooms face the pool) per the ad. This is the top of the project's 4BR tier if verified",
+          "Deep project exit record: 93.1% of 263 resale pairs profitable, avg holding 6.8 yrs, 637 lifetime transactions. 62% of buyers are HDB upgraders, which gives an owner-occupier floor",
+          "OCR / D18, the region with the strongest realized forward drift in the backtest (OCR +3.7%/yr vs CCR +1.9%). Priced +1.8% vs age-adjusted D18 1,400-1,800 sqft peers, so there is no region discount left to capture",
+          "Schools: Park View Primary 251m, Elias Park Primary 398m. Elias Mall is adjacent",
+          "CRL makes Pasir Ris an EWL x CRL interchange ~2030 (~950m). Narrative only: the future-infra score has no measured forward power"
+        ],
+        "rental_assessment": "URA project 4BR rent $4,825/mo on 8 contracts (12mo, conf 0.86). realsmart shows the project's est. yield at 3.3% and a median rent of $4,225 across all types. At $2.15M: 2.69% gross / 1.47% net. It is carry only, below the ~3.5-4% bar for an OCR investment hold.",
+        "appreciation_assessment": "The trailing 7.41%/yr URA 5yr CAGR comes off a depressed 2021 base ($863 psf project median) and has ~0 forward power under current priors. No override. The project's forward case is the OCR baseline (~3.7%/yr). Paying ~5-10% above fair uses up roughly two years of that drift before the hold starts.",
+        "stack_notes": "No profile (not_researched). Per the listing text: Blk 72, high floor, 3 of 4 bedrooms overlook the pool, one common room has a pocket nature view. Same-size prints span $992 (fl 11-15, 2021) to $1,310 (fl 06-10, 2024). The floor premium within the band is ~3-5%, which does not close a 10%+ gap.",
+        "confidence": "high",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.3,
+        "realsmart_pct_profitable": 93.1,
+        "realsmart_annual_return_pct": 3.5
+      },
+      "source": {
+        "run_dir": "output/run_115_500184843",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-oasis-elias-500184843",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
