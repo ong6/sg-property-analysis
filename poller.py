@@ -74,7 +74,7 @@ def _save_poll_state(state: dict) -> None:
     os.replace(tmp, POLL_STATE_FILE)
 
 
-def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
+def _score_keys(keys: list[str], record_history: bool = True) -> tuple[int, list[dict]]:
     """Score the given DB keys with the same pipeline as --score-db.
 
     Cohort stats come from the FULL usable DB so a poll-scored listing gets the
@@ -84,6 +84,10 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
     score_1000 / scored_at / score_version) by key into a fresh load — a
     concurrent session's upserts in between survive. Returns (n_scored,
     scored_rows) where scored_rows are compact dicts for the poll log.
+
+    `record_history=False` skips the mmr/lens history CSVs: a same-day
+    RE-score (the weekly pre-gate pass) must not add a second row per
+    listing, or calibrate_forward would double-weight exactly the contenders.
     """
     if not keys:
         return 0, []
@@ -155,6 +159,7 @@ def _score_keys(keys: list[str]) -> tuple[int, list[dict]]:
                 listings_db.save_db(db)
                 listings_db.export_sheet(db=db)
 
+    if scored_rows and record_history:
         # invest.py appends to the same CSV from other processes — take the
         # shared file lock so concurrent appends can't interleave mid-row.
         with listings_db.file_lock(MMR_HISTORY_CSV + ".lock"):

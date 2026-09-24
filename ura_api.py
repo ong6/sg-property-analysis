@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -30,9 +31,43 @@ from pathlib import Path
 BASE = Path(__file__).parent
 DATA_DIR = BASE / "data"
 ALL_DISTRICTS = list(range(1, 29))
-# The browser fetch pulled rental contracts for roughly the last three years;
-# keep the same window so rental medians don't shift just from a longer tail.
+# Three years of rental contracts, the same span the browser fetch asked for.
+# Medians still move versus the browser era wherever the eservice download hit
+# its 10,000-row cap (D19: 10,000 -> 18,004 rows), because the old sample was
+# truncated, not because the window changed.
 RENTAL_QUARTERS = 12
+
+# An export that comes back much smaller than the file it replaces is treated
+# as a bad sync, not as the market shrinking: the district keeps its old file.
+MIN_KEEP_RATIO = 0.9
+
+
+def _rows(path: Path) -> int:
+    try:
+        with open(path, encoding="utf-8", errors="replace") as f:
+            return max(0, sum(1 for _ in f) - 1)
+    except OSError:
+        return 0
+
+
+def _export_guarded(write, store, district: int, path: Path, skipped: list) -> int:
+    """Export one district to a temp file; swap it in only if it looks whole.
+
+    Never truncates a good CSV in place: a failed or empty export leaves the
+    old file (and its mtime, so staleness checks still see it as old).
+    """
+    tmp = path.with_suffix(".csv.tmp")
+    n = write(store, district, tmp)
+    old = _rows(path)
+    if n == 0 and old == 0:
+        tmp.unlink(missing_ok=True)       # a district with no data, before and after
+        return 0
+    if n == 0 or (old and n < MIN_KEEP_RATIO * old):
+        tmp.unlink(missing_ok=True)
+        skipped.append(f"{path.name}: {n} rows vs {old} before — kept the old file")
+        return old
+    os.replace(tmp, path)
+    return n
 
 
 def available() -> tuple[bool, str]:
@@ -63,10 +98,12 @@ def refresh(transactions: bool = True, rentals: bool = True, force: bool = False
 
     store, client = Store(), UraClient()
     out: dict = {}
+    skipped: list[str] = []
     if transactions:
         out["transactions"] = sync_transactions(store, client, force=force)
         out["tx_rows"] = sum(
-            export.transactions_csv(store, d, DATA_DIR / f"ura_district_D{d:02d}.csv")
+            _export_guarded(export.transactions_csv, store, d,
+                            DATA_DIR / f"ura_district_D{d:02d}.csv", skipped)
             for d in ALL_DISTRICTS)
         if rebuild:
             from fetch_ura_districts import build_cache_from_district_csvs
@@ -74,13 +111,17 @@ def refresh(transactions: bool = True, rentals: bool = True, force: bool = False
     if rentals:
         out["rentals"] = sync_rentals(store, client, quarters=RENTAL_QUARTERS, force=force)
         out["rent_rows"] = sum(
-            export.rentals_csv(store, d, DATA_DIR / f"ura_rental_D{d:02d}.csv")
+            _export_guarded(export.rentals_csv, store, d,
+                            DATA_DIR / f"ura_rental_D{d:02d}.csv", skipped)
             for d in ALL_DISTRICTS)
         if rebuild:
             for script in (["build_rental_cache.py"], ["bed_bands.py", "--build"]):
                 subprocess.run([sys.executable, str(BASE / script[0]), *script[1:]],
                                cwd=BASE, check=True, stdout=subprocess.DEVNULL)
             out["rebuilt"] = ["rental_cache.json", "bed_bands.json"]
+    if skipped:
+        out["skipped_districts"] = skipped
+        print("  ⚠ " + "\n  ⚠ ".join(skipped), file=sys.stderr)
     return out
 
 

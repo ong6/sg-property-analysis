@@ -81,3 +81,7 @@ data/realsmart_slugs.json
 
 # Per-project bedroom bands (regenerable: python bed_bands.py --build)
 data/bed_bands.json
+
+# temp/lock files from ura_api exports and eval-memory index rebuilds
+data/*.csv.tmp
+evaluations/*.lock

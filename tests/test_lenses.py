@@ -13,6 +13,7 @@ pass clobbering a lens that did not run.
 """
 
 import json
+import re
 import os
 
 import pytest
@@ -66,7 +67,10 @@ def _normalise(reason: str) -> str:
     # all, so rewriting it would invent a fixture entry that never existed.
     if reason.startswith(_PRE_LENS) and "·" not in reason:
         return "below gate (" + reason[len(_PRE_LENS):]
-    return reason
+    # bed_bands reasons quote the live band edges and contract count from the
+    # gitignored data/bed_bands.json, which every rental refresh rebuilds. The
+    # golden pins the gate's DECISION and the shape of its reason, not those.
+    return re.sub(r"\(\d+-\d+ sqft, \d[\d,]* contracts\)", "(BAND)", reason)
 
 
 @pytest.fixture(autouse=True)
@@ -95,7 +99,7 @@ class TestGoldenEquivalence:
                 f"max_ai={max_ai}: the lens gate changed WHICH listings get researched")
             got = {c["id"]: _normalise(c["gate_reason"]) for c in rej}
             for lid, reason in exp["rejected"].items():
-                assert got.get(lid) == reason, f"max_ai={max_ai}, {lid}"
+                assert got.get(lid) == _normalise(reason), f"max_ai={max_ai}, {lid}"
 
     def test_the_normaliser_only_touches_the_phrase_it_claims_to(self):
         # Guard on the guard: if _normalise ever swallowed a real reason, the

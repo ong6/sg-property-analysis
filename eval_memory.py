@@ -109,8 +109,17 @@ def _ensure_dir() -> None:
 
 
 def rebuild_index() -> dict:
-    """Rebuild evaluations/index.json from the per-condo files."""
+    """Rebuild evaluations/index.json from the per-condo files.
+
+    Locked end to end: parallel agents each rebuild after saving, and an
+    unlocked scan-then-write let an older snapshot overwrite a newer index.
+    """
     _ensure_dir()
+    with _path_lock(INDEX_FILE + ".lock", timeout=30):
+        return _rebuild_index_unlocked()
+
+
+def _rebuild_index_unlocked() -> dict:
     index: dict[str, Any] = {"updated_at": _today(), "condos": {}}
     for fname in os.listdir(EVAL_DIR):
         if not fname.endswith(".json") or fname == "index.json":

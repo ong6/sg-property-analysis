@@ -810,7 +810,7 @@ class TestRealsmartPrewarm:
     def test_attaches_cached_facts_and_prompt_skips_the_fetch(self, monkeypatch):
         import realsmart_cache
         monkeypatch.setattr(realsmart_cache, "warm", lambda names, **k: {
-            "Livia": {"ok": True, "realscore": 4.0, "pct_profitable": 92.2,
+            "Livia": {"ok": True, "resolved": True, "realscore": 4.0, "pct_profitable": 92.2,
                       "annual_return_pct": 4.8, "resale_txns": 567,
                       "url": "https://realsmart.sg/p/livia", "fetched_at": time.time()},
             "Nowhere": {"ok": False}})
@@ -867,3 +867,96 @@ class TestUraRefresh:
         monkeypatch.setattr(weekly.subprocess, "run", fake_run)
         out = weekly.refresh_ura([19], max_age_days=30)
         assert "19" in called["cmd"] and not out["ok"] and out["still_stale"] == [19]
+
+
+class TestReviewFixes:
+    def test_deep_rows_merge_without_duplicates(self):
+        ps = {"new_listings": [{"id": "a"}], "changed_listings": [{"id": "b"}]}
+        deep = {"new_listings": [{"id": "a"}, {"id": "c"}],
+                "changed_listings": [{"id": "b"}, {"id": "d"}, {"id": "c"}]}
+        weekly.merge_deep_rows(ps, deep)
+        assert [r["id"] for r in ps["new_listings"]] == ["a", "c"]
+        assert [r["id"] for r in ps["changed_listings"]] == ["b", "d"]
+
+    def test_api_failure_is_reported_not_masked(self, monkeypatch):
+        import ura_api
+        monkeypatch.setattr(ura_api, "available", lambda: (True, ""))
+
+        def boom(**k):
+            raise RuntimeError("bed_bands failed")
+
+        monkeypatch.setattr(ura_api, "refresh", boom)
+        monkeypatch.setattr(weekly.subprocess, "run",
+                            lambda *a, **k: (_ for _ in ()).throw(AssertionError))
+        out = weekly.refresh_ura([19])
+        assert out["ok"] is False and "bed_bands failed" in out["error"]
+
+    def test_guarded_export_keeps_the_old_file_on_a_short_export(self, tmp_path):
+        import ura_api
+        path = tmp_path / "ura_district_D19.csv"
+        path.write_text("h\n" + "r\n" * 100)
+
+        def short(store, d, p):
+            p.write_text("h\n" + "r\n" * 10)
+            return 10
+
+        skipped = []
+        assert ura_api._export_guarded(short, None, 19, path, skipped) == 100
+        assert path.read_text().count("\n") == 101 and skipped
+        assert not (tmp_path / "ura_district_D19.csv.tmp").exists()
+
+        def full(store, d, p):
+            p.write_text("h\n" + "r\n" * 120)
+            return 120
+
+        assert ura_api._export_guarded(full, None, 19, path, []) == 120
+
+    def test_unresolved_realsmart_record_is_left_to_the_agent(self, monkeypatch):
+        import realsmart_cache
+        monkeypatch.setattr(realsmart_cache, "warm", lambda names, **k: {
+            "Guess": {"ok": True, "resolved": False, "realscore": 5.0}})
+        short = [{"id": "1", "project_name": "Guess", "url": "u"}]
+        assert weekly.prewarm_realsmart(short) == {"ok": 0, "missing": 1}
+        assert "realsmart" not in short[0]
+
+    def test_one_failing_lane_keeps_the_others_verdicts(self, monkeypatch):
+        def fake(cand, day):
+            if cand["id"] == "bad":
+                raise RuntimeError("boom")
+            return [{"id": cand["id"], "log": "x", "ok": True}], {"rating": "Neutral"}
+
+        monkeypatch.setattr(weekly, "_analyze_one", fake)
+        short = [{"id": "bad", "slug": "a"}, {"id": "good", "slug": "b"}]
+        verdicts, runs = weekly.run_agents(short, "d", parallel=2)
+        assert set(verdicts) == {"good"}
+        assert any(r["id"] == "bad" and not r["ok"] for r in runs)
+
+    def test_pre_gate_enrich_rescores_contenders_without_history(self, monkeypatch):
+        calls = {}
+        monkeypatch.setattr(weekly.poller, "_enrich_new_keys",
+                            lambda keys, headless, cap: calls.setdefault("enrich", keys) and
+                            {"attempted": len(keys), "enriched": len(keys)})
+
+        def score(keys, record_history=True):
+            calls["history"] = record_history
+            return len(keys), [{"id": k, "score_1000": 900} for k in keys]
+
+        monkeypatch.setattr(weekly.poller, "_score_keys", score)
+        rows = [_row("a", score=700), _row("b", score=600, name="Other")]
+        db = {"a": _rec("a"), "b": _rec("b")}
+        out, rep = weekly.pre_gate_enrich(rows, db, {}, 650, set(), headless=True)
+        assert calls["enrich"] == ["a"] and calls["history"] is False
+        assert next(r for r in out if r["id"] == "a")["score_1000"] == 900
+        assert next(r for r in out if r["id"] == "b")["score_1000"] == 600
+        assert rep["rescored"] == 1
+
+    def test_pre_gate_enrich_skips_already_visited_and_survives_errors(self, monkeypatch):
+        monkeypatch.setattr(weekly.poller, "_enrich_new_keys",
+                            lambda *a, **k: (_ for _ in ()).throw(RuntimeError("pg down")))
+        rows = [_row("a", score=700)]
+        db = {"a": _rec("a")}
+        out, rep = weekly.pre_gate_enrich(rows, db, {}, 650, set(), headless=True)
+        assert out == rows and "pg down" in rep["error"]
+        db = {"a": _rec("a", latitude=1.3)}
+        out, rep = weekly.pre_gate_enrich(rows, db, {}, 650, set(), headless=True)
+        assert rep["attempted"] == 0

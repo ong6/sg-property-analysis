@@ -1057,7 +1057,12 @@ def run_agents(shortlist: list[dict], day: str,
     def lane(cands: list[dict]) -> list[tuple[dict, list, dict | None]]:
         out = []
         for cand in cands:
-            runs, v = _analyze_one(cand, day)
+            try:
+                runs, v = _analyze_one(cand, day)
+            except Exception as e:  # noqa: BLE001 — one bad run must not sink the lane
+                runs = [{"id": cand["id"], "ok": False, "log": "-",
+                         "error": f"{type(e).__name__}: {e}"}]
+                v = None
             done[0] += 1
             tag = (f"{v.get('rating')} ({v.get('confidence')})" if v
                    else f"no evaluation saved — see {runs[-1]['log']}")
@@ -1111,11 +1116,18 @@ def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> d
         print("Refreshing URA data via the API (no browser)…", file=sys.stderr)
         try:
             res = ura_api.refresh(transactions=True, rentals=True)
-            return {"ok": True, "via": "api", "refreshed": list(districts),
-                    "oldest_days": 0, "detail": res}
-        except Exception as e:  # noqa: BLE001 — fall through to the browser
-            print(f"  URA API refresh failed ({e}) — trying the browser",
+        except Exception as e:  # noqa: BLE001 — reported, never fatal
+            # NOT a fall-through to the browser: the API may have exported
+            # fresh CSVs before failing, and their new mtimes would make the
+            # browser path report "current" while caches never got rebuilt.
+            print(f"  ⚠ URA API refresh failed ({e}) — scoring on the data as it stands",
                   file=sys.stderr)
+            return {"ok": False, "via": "api", "error": f"{type(e).__name__}: {e}",
+                    "oldest_days": None}
+        skipped = res.get("skipped_districts") or []
+        return {"ok": not skipped, "via": "api", "refreshed": list(districts),
+                "oldest_days": 0, "detail": res,
+                **({"still_stale": skipped} if skipped else {})}
     else:
         print(f"  URA API unavailable ({why}) — using the browser", file=sys.stderr)
 
@@ -1163,7 +1175,12 @@ def pre_gate_enrich(rows: list[dict], db_listings: dict, cooldown: dict,
         eligible, _ = select_candidates(rows, db_listings, cooldown_index=cooldown,
                                         min_score=min_score, max_ai=10_000,
                                         known_projects=known)
-        eligible.sort(key=lambda c: c.get("score_1000") or 0, reverse=True)
+        # Rank by each candidate's best rank under ANY nominating lens, so an
+        # exit_demand-only contender is enriched too, not just high mmr.
+        ranks = _lens_rankings(eligible)
+        eligible.sort(key=lambda c: min(
+            (ranks[n][id(c)] for n in (c.get("surfaced_by") or ["mmr"])
+             if id(c) in ranks.get(n, {})), default=10**9))
         # No latitude = the detail page was never visited (floor_level alone
         # is a bad test: posting agents leave it blank ~60% of the time).
         targets = [c["id"] for c in eligible
@@ -1174,7 +1191,7 @@ def pre_gate_enrich(rows: list[dict], db_listings: dict, cooldown: dict,
               f"{len(eligible)} eligible, then re-scoring…", file=sys.stderr)
         enr = poller._enrich_new_keys(targets, headless=headless, cap=limit)
         report.update(attempted=enr["attempted"], enriched=enr["enriched"])
-        _, scored = poller._score_keys(targets)
+        _, scored = poller._score_keys(targets, record_history=False)
         report["rescored"] = len(scored)
         fresh = {r["id"]: r for r in scored}
         rows = [{**r, **fresh[r["id"]]} if r["id"] in fresh else r for r in rows]
@@ -1204,7 +1221,9 @@ def prewarm_realsmart(shortlist: list[dict]) -> dict:
     ok = 0
     for c in shortlist:
         rec = got.get(c.get("project_name")) or {}
-        if rec.get("ok"):
+        # A score read off a GUESSED slug may belong to another development;
+        # those go to the agent, which checks the page title before trusting it.
+        if rec.get("ok") and rec.get("resolved"):
             ok += 1
             c["realsmart"] = {
                 "ok": True, "url": rec.get("url"),
@@ -1216,6 +1235,20 @@ def prewarm_realsmart(shortlist: list[dict]) -> dict:
                     rec.get("fetched_at") or time.time()).strftime("%Y-%m-%d"),
             }
     return {"ok": ok, "missing": len(shortlist) - ok}
+
+
+def merge_deep_rows(poll_state: dict, deep: dict) -> None:
+    """Fold the deep crawl's new/changed rows into the main poll's, deduped.
+
+    They used to be dropped (only the main poll's rows were gated), and the
+    week after they are no longer "new", so they never reached the gate.
+    """
+    seen = {r["id"] for r in (poll_state.get("new_listings") or [])
+            + (poll_state.get("changed_listings") or [])}
+    for key in ("new_listings", "changed_listings"):
+        extra = [r for r in (deep.get(key) or []) if r["id"] not in seen]
+        poll_state[key] = list(poll_state.get(key) or []) + extra
+        seen.update(r["id"] for r in extra)
 
 
 def keep_awake() -> subprocess.Popen | None:
@@ -1691,15 +1724,7 @@ def main() -> int:
                     "scraped": deep.get("scraped"), "added": deep.get("added"),
                     "ok": bool(deep.get("ok")),
                 }
-                # The deep crawl's own arrivals must reach the gate. They used
-                # to be dropped (only the main poll's rows were gated), and
-                # next week they are no longer "new", so they never were.
-                seen = {r["id"] for r in (poll_state.get("new_listings") or [])
-                        + (poll_state.get("changed_listings") or [])}
-                for key in ("new_listings", "changed_listings"):
-                    extra = [r for r in (deep.get(key) or []) if r["id"] not in seen]
-                    poll_state[key] = list(poll_state.get(key) or []) + extra
-                    seen.update(r["id"] for r in extra)
+                merge_deep_rows(poll_state, deep)
             except Exception as e:  # noqa: BLE001 — bonus coverage, never fatal
                 poll_state["deep_scope"] = {"districts": dd, "beds": db_,
                                             "ok": False, "error": str(e)}
@@ -1750,7 +1775,9 @@ def main() -> int:
     cooldown = _eval_cooldown_index(RE_EVAL_COOLDOWN_DAYS, now)
     known = _known_projects()
     enrich = {}
-    if not args.no_enrich and not args.full_book and poll_state.get("ok"):
+    # Not under --no-poll: that flag promises no PropertyGuru traffic.
+    if (not args.no_enrich and not args.full_book and not args.no_poll
+            and poll_state.get("ok")):
         rows, enrich = pre_gate_enrich(rows, db_listings, cooldown, args.min_score,
                                        known, headless=args.headless)
         if enrich.get("rescored"):
