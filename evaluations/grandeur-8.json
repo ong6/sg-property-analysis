@@ -246,6 +246,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500179571",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Ground-floor 1,421 sqft unit (the project's 4BR/2-bath layout, marketed here as 3BR) at $2.08M / $1,464 psf in Grandeur 8, a 579-unit 2005 AMK/Yio Chu Kang 99LH with a deep, profitable resale record. The ask is roughly own-print fair for a ground-floor unit of this size, not a discount.",
+      "rating_rationale": "Priced about right, not cheap. This 1,421 sqft layout has six URA resales: low-floor (01-05) prints of $1.93M (Aug-23) and $1.818M (Nov-24, $1,280psf, probably a ground unit), and mid/high-floor prints of $2.05-2.25M (2024-25; the high was Aug-25 at $2.25M on fl 11-15). The nearest low-floor comp is the slightly bigger 1,453 sqft layout: $2.216M (Oct-25) and $2.25M (Jul-26) on fl 01-05, i.e. $1,525-1,548psf. That puts ground-floor fair value at about $2.00-2.15M, so $2.08M is at most 0-3% under, which is not a margin. The 731 score_1000 rests mostly on age_value +11.9, which compares against the D20 median of $1,741-1,982psf. That median is set by Bishan/Thomson stock, a separate sub-market, so it isn't real value. The unit's psf_value vs its own project is -0.2, i.e. no edge. The exit record is strong: REALSCORE 3.6, 96.1% of 622 resale pairs sold at a profit. But the carry is thin (about 2.75% gross / 1.6% net on a 3BR rent of $4,775, maybe about 3% gross if let as a 4BR). The lease will have about 68-70 years left at exit, and a ground-floor unit has a narrower resale pool than a stacked-up one. The higher-floor twin (500179571) asks $2.35M, so this is the cheaper way into the layout. Rates Buy only at about $1.95M or below, or after confirming a PES adds usable space without an extra strata premium.",
+      "red_flags": [
+        "Ask $2.08M sits at own-print fair value for a ground-floor unit, not below it: low-floor 1,421sf prints $1.818-1.93M (2023-24), low-floor 1,453sf prints $2.216-2.25M (Oct-25/Jul-26 ≈ $1,525-1,548psf)",
+        "Ground floor: a narrower resale buyer pool, plus privacy/noise/security concerns; PES/format not confirmed",
+        "Bed count ambiguity: 1,421sf is the project's 4BR/2-bath layout (a sibling listing markets it as 4BR); listed here as 3BR, and bed_bands accepts both",
+        "score_1000 731 is driven by age_value +11.9 against a D20 median set by Bishan/Thomson, a separate sub-market; project-relative psf_value is -0.2",
+        "Thin carry: 2.75% gross / 1.61% net yield (URA 3BR rent $4,775 on 26 contracts)",
+        "99-yr lease from 2002: 75 yrs at entry, ~68-70 at a 5-7yr exit; built 2005",
+        "Heavy standing inventory: 17 live Grandeur 8 listings in the DB to exit against"
+      ],
+      "catalysts": [
+        "Strong downside record: REALSCORE 3.6; 96.1% of 622 matched resale pairs sold at a profit, avg 4.9%/yr",
+        "Deep liquidity: 579 units, 89 URA resale prints in 5 yrs, 'deep' buyer pool",
+        "Cheapest entry to the 1,421sf layout on the live book: $270k under the higher-floor twin asking $2.35M",
+        "OCR region; AMK becomes an NSL/CRL interchange ~2030 (724m), though future infra has no measured forward power",
+        "Fresh listing (first seen 2026-09-24), so there may be room to negotiate toward the $1.93M low-floor print"
+      ],
+      "as_of": {
+        "price": 2080000,
+        "psf": 1463.76,
+        "beds": 3,
+        "sqft": 1421.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.7,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.75,
+        "nearest_mrt": "Yio Chu Kang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 75
+      },
+      "agent_evaluation": {
+        "summary": "Ground-floor 1,421 sqft unit (the project's 4BR/2-bath layout, marketed here as 3BR) at $2.08M / $1,464 psf in Grandeur 8, a 579-unit 2005 AMK/Yio Chu Kang 99LH with a deep, profitable resale record. The ask is roughly own-print fair for a ground-floor unit of this size, not a discount.",
+        "rating": "Neutral",
+        "rating_rationale": "Priced about right, not cheap. This 1,421 sqft layout has six URA resales: low-floor (01-05) prints of $1.93M (Aug-23) and $1.818M (Nov-24, $1,280psf, probably a ground unit), and mid/high-floor prints of $2.05-2.25M (2024-25; the high was Aug-25 at $2.25M on fl 11-15). The nearest low-floor comp is the slightly bigger 1,453 sqft layout: $2.216M (Oct-25) and $2.25M (Jul-26) on fl 01-05, i.e. $1,525-1,548psf. That puts ground-floor fair value at about $2.00-2.15M, so $2.08M is at most 0-3% under, which is not a margin. The 731 score_1000 rests mostly on age_value +11.9, which compares against the D20 median of $1,741-1,982psf. That median is set by Bishan/Thomson stock, a separate sub-market, so it isn't real value. The unit's psf_value vs its own project is -0.2, i.e. no edge. The exit record is strong: REALSCORE 3.6, 96.1% of 622 resale pairs sold at a profit. But the carry is thin (about 2.75% gross / 1.6% net on a 3BR rent of $4,775, maybe about 3% gross if let as a 4BR). The lease will have about 68-70 years left at exit, and a ground-floor unit has a narrower resale pool than a stacked-up one. The higher-floor twin (500179571) asks $2.35M, so this is the cheaper way into the layout. Rates Buy only at about $1.95M or below, or after confirming a PES adds usable space without an extra strata premium.",
+        "red_flags": [
+          "Ask $2.08M sits at own-print fair value for a ground-floor unit, not below it: low-floor 1,421sf prints $1.818-1.93M (2023-24), low-floor 1,453sf prints $2.216-2.25M (Oct-25/Jul-26 ≈ $1,525-1,548psf)",
+          "Ground floor: a narrower resale buyer pool, plus privacy/noise/security concerns; PES/format not confirmed",
+          "Bed count ambiguity: 1,421sf is the project's 4BR/2-bath layout (a sibling listing markets it as 4BR); listed here as 3BR, and bed_bands accepts both",
+          "score_1000 731 is driven by age_value +11.9 against a D20 median set by Bishan/Thomson, a separate sub-market; project-relative psf_value is -0.2",
+          "Thin carry: 2.75% gross / 1.61% net yield (URA 3BR rent $4,775 on 26 contracts)",
+          "99-yr lease from 2002: 75 yrs at entry, ~68-70 at a 5-7yr exit; built 2005",
+          "Heavy standing inventory: 17 live Grandeur 8 listings in the DB to exit against"
+        ],
+        "catalysts": [
+          "Strong downside record: REALSCORE 3.6; 96.1% of 622 matched resale pairs sold at a profit, avg 4.9%/yr",
+          "Deep liquidity: 579 units, 89 URA resale prints in 5 yrs, 'deep' buyer pool",
+          "Cheapest entry to the 1,421sf layout on the live book: $270k under the higher-floor twin asking $2.35M",
+          "OCR region; AMK becomes an NSL/CRL interchange ~2030 (724m), though future infra has no measured forward power",
+          "Fresh listing (first seen 2026-09-24), so there may be room to negotiate toward the $1.93M low-floor print"
+        ],
+        "rental_assessment": "URA project-bed rent $4,775/mo (26 contracts, 12mo) for 3BR; if let as a 4BR, ~$5,000-5,350. Gross 2.75-3.1%, net ~1.6-1.8%: carry only, weak.",
+        "appreciation_assessment": "Pooled ura_5yr_cagr 5.7% is size-mix contaminated and has ~0 forward power. Same-layout resale-to-resale: $1.90M (Jul-23) to $2.05-2.25M (2024-25), ~4-5%/yr and flattening (momentum -0.36). For forward prices, lean on OCR region and a fair entry, not trailing growth.",
+        "stack_notes": "No profile. Floor = Ground Floor per listing; stack/facing unknown. PES is not confirmed, and URA prints do not separate ground from fl 02-05.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 96.1,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_111_500270666",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500270666",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
