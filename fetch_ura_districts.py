@@ -270,7 +270,25 @@ Examples:
              "(default: condo). 'ec' fetches Executive Condominium prints "
              "into ura_district_D{NN}_EC.csv.",
     )
+    parser.add_argument(
+        "--browser", action="store_true",
+        help="use the old headed-browser download instead of the URA API",
+    )
     args = parser.parse_args()
+
+    # The official API (via sgprop, see ura_api.py) is the default: every
+    # district in ~40 s, no browser. The browser path below is the fallback
+    # for machines without sgprop or a URA key.
+    if not args.build_cache and not args.browser:
+        import ura_api
+        ok, why = ura_api.available()
+        if ok:
+            print("\nURA API: syncing transactions (no browser)…", file=sys.stderr)
+            out = ura_api.refresh(transactions=True, rentals=False, force=args.force)
+            print(json.dumps(out, indent=2), file=sys.stderr)
+            return
+        print(f"\nURA API unavailable ({why}); falling back to the browser.",
+              file=sys.stderr)
 
     # Parse district list
     if args.districts:

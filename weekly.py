@@ -8,9 +8,10 @@ script closes the loop by stamping that note's `last_run` on success.
 
 The cycle:
 
-  0. **Pre-flight** — URA transaction CSVs for the mandate districts are
-     re-fetched when older than a month, so the poll scores against current
-     prints (a browser window opens only when something is stale).
+  0. **Pre-flight** — URA sales + rentals are synced through the official
+     API (ura_api.py / sgprop, ~40 s, no browser) so the poll scores against
+     current prints. Without sgprop or a key it falls back to re-fetching
+     month-old district CSVs in a browser.
   1. **Poll** — `poller.run_poll()` scrapes the newest listings for the configured
      districts/beds, upserts them, and MMR-scores the new / price-changed ones.
   2. **Algo grade** — every new and price-changed listing already carries
@@ -1099,6 +1100,25 @@ def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> d
     current prints. Never raises: a failed refresh leaves last month's data in
     place, which is exactly where the scan was before — the digest says so.
     """
+    # Official API first: every district, sales and rentals, ~40 s, no
+    # browser; a no-op sync when URA hasn't published since the last one.
+    try:
+        import ura_api
+        ok, why = ura_api.available()
+    except Exception as e:  # noqa: BLE001
+        ok, why = False, str(e)
+    if ok:
+        print("Refreshing URA data via the API (no browser)…", file=sys.stderr)
+        try:
+            res = ura_api.refresh(transactions=True, rentals=True)
+            return {"ok": True, "via": "api", "refreshed": list(districts),
+                    "oldest_days": 0, "detail": res}
+        except Exception as e:  # noqa: BLE001 — fall through to the browser
+            print(f"  URA API refresh failed ({e}) — trying the browser",
+                  file=sys.stderr)
+    else:
+        print(f"  URA API unavailable ({why}) — using the browser", file=sys.stderr)
+
     ages = {d: _csv_age_days(os.path.join(DATA_DIR, f"ura_district_D{d:02d}.csv"))
             for d in districts}
     stale = [d for d, a in ages.items() if a is None or a > max_age_days]
@@ -1112,7 +1132,7 @@ def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> d
           file=sys.stderr)
     cmd = [sys.executable, os.path.join(BASE, "fetch_ura_districts.py"),
            "--districts", ",".join(str(d) for d in stale),
-           "--max-age", str(max_age_days)]
+           "--max-age", str(max_age_days), "--browser"]
     try:
         proc = subprocess.run(cmd, cwd=BASE, timeout=1200)
         out["ok"] = proc.returncode == 0

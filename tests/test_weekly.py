@@ -5,6 +5,8 @@ import os
 import time
 from datetime import datetime, timedelta
 
+import pytest
+
 import weekly
 
 
@@ -824,6 +826,21 @@ class TestRealsmartPrewarm:
 
 
 class TestUraRefresh:
+    @pytest.fixture(autouse=True)
+    def no_api(self, monkeypatch):
+        # These cover the browser fallback; never touch the real API.
+        import ura_api
+        monkeypatch.setattr(ura_api, "available", lambda: (False, "test"))
+
+    def test_api_path_is_preferred_when_available(self, monkeypatch):
+        import ura_api
+        monkeypatch.setattr(ura_api, "available", lambda: (True, ""))
+        monkeypatch.setattr(ura_api, "refresh", lambda **k: {"tx_rows": 1})
+        monkeypatch.setattr(weekly.subprocess, "run",
+                            lambda *a, **k: (_ for _ in ()).throw(AssertionError))
+        out = weekly.refresh_ura([19])
+        assert out["ok"] and out["via"] == "api"
+
     def test_fresh_csvs_skip_the_browser(self, monkeypatch, tmp_path):
         monkeypatch.setattr(weekly, "DATA_DIR", str(tmp_path))
         (tmp_path / "ura_district_D19.csv").write_text("x")

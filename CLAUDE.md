@@ -180,10 +180,15 @@ and the owner drives it from there; a successful run stamps that note's
 enrich + re-score the contenders → gate → AI-analyze only what clears the gate
 (3 in parallel) → digest → push the good ones to the store.**
 
-Pre-flight (2026-09-24): URA district CSVs older than `URA_MAX_AGE_DAYS` (30)
-are re-fetched for the mandate districts before anything is scored — they had
-drifted to 106 days old, so the algo's own-print comparisons missed three
-months of clearings. Then the top `PRE_GATE_ENRICH` (36) gate-eligible
+Pre-flight (2026-09-24): URA sales and rentals sync through the **official URA
+API** via [sgprop](https://github.com/ong6/sgprop) (`ura_api.py`, ~40 s, no
+browser), which rewrites the same `data/ura_district_D*.csv` /
+`ura_rental_D*.csv` files and rebuilds `ura_cache.json`, `rental_cache.json`
+and `bed_bands.json`. The key lives in `~/.config/sgprop/credentials`, never
+here. Without sgprop or a key it falls back to re-fetching district CSVs older
+than `URA_MAX_AGE_DAYS` (30) in a browser. Before this the prints had drifted
+to 106 days old, and the eservice rental download was capped at 10,000 rows
+per district. Then the top `PRE_GATE_ENRICH` (36) gate-eligible
 listings with no detail visit are enriched and re-scored, so the cap picks on
 floor-aware comps rather than card-level data.
 

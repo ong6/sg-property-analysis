@@ -161,6 +161,8 @@ def main():
                         help="Comma-separated district numbers (default: all 28)")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--max-age", type=int, default=30)
+    parser.add_argument("--browser", action="store_true",
+                        help="use the old headed-browser download instead of the URA API")
     parser.add_argument("--from", dest="date_from", type=str, default=None,
                         help="Lease commencement from, YYYY-MM (export caps at "
                              "10k most-recent rows — set a range for history)")
@@ -169,6 +171,21 @@ def main():
     args = parser.parse_args()
 
     suffix = ""
+    # The official API (via sgprop, see ura_api.py) is the default and is not
+    # capped at 10,000 rows per district like the eservice download. A custom
+    # --from/--to slice still needs the browser.
+    if not args.browser and not (args.date_from or args.date_to):
+        import json
+        import ura_api
+        ok, why = ura_api.available()
+        if ok:
+            print("URA API: syncing rentals (no browser)…", file=sys.stderr)
+            out = ura_api.refresh(transactions=False, rentals=True, force=args.force)
+            print(json.dumps(out, indent=2), file=sys.stderr)
+            return
+        print(f"URA API unavailable ({why}); falling back to the browser.",
+              file=sys.stderr)
+
     if args.date_from or args.date_to:
         suffix = f"_{(args.date_from or 'start').replace('-','')}_{(args.date_to or 'now').replace('-','')}"
 
