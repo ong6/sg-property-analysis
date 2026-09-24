@@ -108,6 +108,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500077493",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-24",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A ground-floor 1,324 sqft 3BR/2-bath at Parc Centros (Wee Hur, 2016 TOP, 618 units, 272m to Punggol NE17) asking $1.88M / $1,420psf. The -15% 'discount' to the project median is the ground-floor PES format, not value: the 2-bath count marks the liveable core as the project's compact ~990 sqft 3BR plus a ~330 sqft patio, and the only URA print of this exact 1,323.97 sqft format ever (Jun-26, floor 01-05) cleared at $1.92M / $1,450psf. The ask is ~2% below that one print. Fair price, sound project, weak carry, thin exit for the format.",
+      "rating_rationale": "There is no real discount. Against its own format this ask is fair: the only exact-size print is Jun-26 $1.92M (fl 01-05, $1,450psf), and the listing is 2% below it. Against the liveable core it is a premium: compact 990 sqft 3BR/2-bath tower units cleared $1,738-1,787k in Mar-May 2026 ($1,756-1,787psf), and four are live now at $1.65-1.78M. So $1.88M pays ~$100-230k for a ground-floor patio that earns no extra rent and has one resale on record. The project itself is sound: 99.7% profitable on 294 resale pairs, a real MRT at 272m, OCR, a 10yr age that sits on the returns plateau and 86yr of lease. That is why this is not an Avoid. But the 822 score rests on psf_value +7.29 and age_value +6.67, which both come from the PES artifact, and the low-floor damper read 0 because there is no floor-level stack profile. Carry is ~1.6% net. At $1.88M it is also just over the 'his' $1.8M ceiling.",
+      "red_flags": [
+        "The discount is the format. The -15.3% vs URA median and -8.5% vs the age-adjusted D19 median come from the ground-floor PES area. Tower 1,313 sqft units cleared $1,770-1,789psf (Dec-25, Aug-26). The only 1,323.97 sqft print ever is Jun-26 $1.92M / $1,450psf on floor 01-05, and the ask is just 2% under it.",
+        "3BR with only 2 baths at 1,324 sqft (662 sqft/bath). The mainstream 1,141-1,163 sqft 3BRs have 3 baths. This is the compact 990 sqft 3BR/2-bath core plus a ~330 sqft patio, so the liveable space is ~990 sqft.",
+        "Paying up for the patio. Four comparable 990 sqft 3BR/2-bath tower units are live at $1.65-1.78M, and recent prints are $1.74-1.77M (Mar-May 2026). The $100-230k premium buys outdoor space that adds nothing to rent and limits the exit buyer pool.",
+        "Thin exit for this format: 1 print out of 128 in the URA set. The project's 'very deep' buyer pool belongs to the 464-1,163 sqft tower stock.",
+        "Possible stale or already-sold listing. The id 500090317 is older than listings first seen in June 2026, yet the DB only picked it up on 2026-09-24. The one exact-size, low-floor print closed in Jun-26 at $1.92M. Confirm with the agent that the unit is still available and which unit it is before acting.",
+        "Weak carry. ura_project_bed rent is $4,200 (40 contracts), which gives 2.68% gross / ~1.58% net. realsmart's median rent is $3,490. Rent follows the 990 sqft core, not the patio.",
+        "Score artifact. psf_value +7.29 and age_value +6.67 drive the 822 and both come from the PES discount. low_floor = 0 because no stack profile exists, so the ground-floor defences could not fire.",
+        "The trailing 6.6% ura_5yr_cagr covers the 2021-22 post-COVID repricing (1,141 sqft went from $1,043-1,315 to $1,629-1,753psf). Momentum is -0.24. Do not read the CAGR as a forward rate.",
+        "Ground floor: less privacy, more noise from the common areas and pool, and a narrower buyer pool (mainly families with young kids or pets)."
+      ],
+      "catalysts": [
+        "A real MRT, not LRT: Punggol NE17 interchange at ~272m, plus Waterway Point mall next door.",
+        "OCR, the strongest realized forward region in the backtest (+3.7%/yr).",
+        "Strong project downside record: REALSCORE 4.0, 99.7% profitable (292 profitable vs 2 unprofitable on 294 matched resale pairs, 898 total transactions), 6.9yr average hold, 5.7% average annualized return, last print 27-Aug-2026. This says owners rarely lose money here; it is not a forecast.",
+        "Age 10, inside the 7-30yr returns plateau, with 86 years of lease left, so no financing or decay pressure over a 5-7yr hold.",
+        "Punggol Digital District and the Punggol North employment node. This is narrative only; the backtest gives future infrastructure zero measured forward power.",
+        "The large PES has real own-stay appeal for families, and that buyer is the exit, at this format's own price rather than the tower's."
+      ],
+      "as_of": {
+        "price": 1880000,
+        "psf": 1419.94,
+        "beds": 3,
+        "sqft": 1324.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.6,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.68,
+        "nearest_mrt": "Punggol",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 86
+      },
+      "agent_evaluation": {
+        "summary": "A ground-floor 1,324 sqft 3BR/2-bath at Parc Centros (Wee Hur, 2016 TOP, 618 units, 272m to Punggol NE17) asking $1.88M / $1,420psf. The -15% 'discount' to the project median is the ground-floor PES format, not value: the 2-bath count marks the liveable core as the project's compact ~990 sqft 3BR plus a ~330 sqft patio, and the only URA print of this exact 1,323.97 sqft format ever (Jun-26, floor 01-05) cleared at $1.92M / $1,450psf. The ask is ~2% below that one print. Fair price, sound project, weak carry, thin exit for the format.",
+        "rating": "Neutral",
+        "rating_rationale": "There is no real discount. Against its own format this ask is fair: the only exact-size print is Jun-26 $1.92M (fl 01-05, $1,450psf), and the listing is 2% below it. Against the liveable core it is a premium: compact 990 sqft 3BR/2-bath tower units cleared $1,738-1,787k in Mar-May 2026 ($1,756-1,787psf), and four are live now at $1.65-1.78M. So $1.88M pays ~$100-230k for a ground-floor patio that earns no extra rent and has one resale on record. The project itself is sound: 99.7% profitable on 294 resale pairs, a real MRT at 272m, OCR, a 10yr age that sits on the returns plateau and 86yr of lease. That is why this is not an Avoid. But the 822 score rests on psf_value +7.29 and age_value +6.67, which both come from the PES artifact, and the low-floor damper read 0 because there is no floor-level stack profile. Carry is ~1.6% net. At $1.88M it is also just over the 'his' $1.8M ceiling.",
+        "red_flags": [
+          "The discount is the format. The -15.3% vs URA median and -8.5% vs the age-adjusted D19 median come from the ground-floor PES area. Tower 1,313 sqft units cleared $1,770-1,789psf (Dec-25, Aug-26). The only 1,323.97 sqft print ever is Jun-26 $1.92M / $1,450psf on floor 01-05, and the ask is just 2% under it.",
+          "3BR with only 2 baths at 1,324 sqft (662 sqft/bath). The mainstream 1,141-1,163 sqft 3BRs have 3 baths. This is the compact 990 sqft 3BR/2-bath core plus a ~330 sqft patio, so the liveable space is ~990 sqft.",
+          "Paying up for the patio. Four comparable 990 sqft 3BR/2-bath tower units are live at $1.65-1.78M, and recent prints are $1.74-1.77M (Mar-May 2026). The $100-230k premium buys outdoor space that adds nothing to rent and limits the exit buyer pool.",
+          "Thin exit for this format: 1 print out of 128 in the URA set. The project's 'very deep' buyer pool belongs to the 464-1,163 sqft tower stock.",
+          "Possible stale or already-sold listing. The id 500090317 is older than listings first seen in June 2026, yet the DB only picked it up on 2026-09-24. The one exact-size, low-floor print closed in Jun-26 at $1.92M. Confirm with the agent that the unit is still available and which unit it is before acting.",
+          "Weak carry. ura_project_bed rent is $4,200 (40 contracts), which gives 2.68% gross / ~1.58% net. realsmart's median rent is $3,490. Rent follows the 990 sqft core, not the patio.",
+          "Score artifact. psf_value +7.29 and age_value +6.67 drive the 822 and both come from the PES discount. low_floor = 0 because no stack profile exists, so the ground-floor defences could not fire.",
+          "The trailing 6.6% ura_5yr_cagr covers the 2021-22 post-COVID repricing (1,141 sqft went from $1,043-1,315 to $1,629-1,753psf). Momentum is -0.24. Do not read the CAGR as a forward rate.",
+          "Ground floor: less privacy, more noise from the common areas and pool, and a narrower buyer pool (mainly families with young kids or pets)."
+        ],
+        "catalysts": [
+          "A real MRT, not LRT: Punggol NE17 interchange at ~272m, plus Waterway Point mall next door.",
+          "OCR, the strongest realized forward region in the backtest (+3.7%/yr).",
+          "Strong project downside record: REALSCORE 4.0, 99.7% profitable (292 profitable vs 2 unprofitable on 294 matched resale pairs, 898 total transactions), 6.9yr average hold, 5.7% average annualized return, last print 27-Aug-2026. This says owners rarely lose money here; it is not a forecast.",
+          "Age 10, inside the 7-30yr returns plateau, with 86 years of lease left, so no financing or decay pressure over a 5-7yr hold.",
+          "Punggol Digital District and the Punggol North employment node. This is narrative only; the backtest gives future infrastructure zero measured forward power.",
+          "The large PES has real own-stay appeal for families, and that buyer is the exit, at this format's own price rather than the tower's."
+        ],
+        "rental_assessment": "Rent tracks the ~990 sqft 3BR/2-bath core. URA project 3BR rent is ~$4,200/mo (40 contracts, 12mo) and realsmart's median is $3,490 (range $2,750-5,700). Expect $3,800-4,300, or 2.4-2.7% gross / ~1.5% net at $1.88M. Punggol tenant demand is solid but the patio earns no rent premium.",
+        "appreciation_assessment": "Same-size tower resales ran from ~$1,315psf (2022) to ~$1,750psf (2026) for 1,141 sqft, mostly a 2021-23 regime move. Recent 2025-26 prints are flat to slightly up (1,141 sqft: $1,629 in Apr-25, $1,753 in Aug-26), and momentum is negative. Forward, expect roughly the OCR baseline, ~2.5-3.5%/yr. The PES format adds exit friction, not upside. No override: the data rate stands and the forward view is carried in this assessment.",
+        "stack_notes": "No profile exists and /research-development was not run in this unattended pass. Floor = 'Ground Floor' (listing feed). Format is inferred from URA: 1,323.97 sqft sits between the 1,313 and 1,346 sqft tower 4BR/3BR formats but has 2 baths, which matches the ~990 sqft compact 3BR plus a PES. The only print of this size is floor 01-05, Jun-26, $1,450psf, versus $1,770-1,789psf for tower 1,313 sqft units on floors 06-10. The best stock in the project is mid/high-floor tower units, and this is the ground-floor patio tier. Facing is unknown.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.0,
+        "realsmart_pct_profitable": 99.7,
+        "realsmart_annual_return_pct": 5.7
+      },
+      "source": {
+        "run_dir": "output/run_106_500090317",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parc-centros-500090317",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
