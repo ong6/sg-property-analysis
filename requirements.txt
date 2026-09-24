@@ -5,4 +5,4 @@ pandas>=2.0.0
 numpy>=1.24.0
 requests>=2.28.0
 pytest>=7.0.0
-sgprop @ git+https://github.com/ong6/sgprop@7a99642  # URA API client (ura_api.py); needs URA_ACCESS_KEY. Pinned: bump deliberately
+sgprop @ git+https://github.com/ong6/sgprop@dec6e1a  # URA API client (ura_api.py); needs URA_ACCESS_KEY. Pinned: bump deliberately

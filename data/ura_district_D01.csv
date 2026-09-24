@@ -1,7 +1,7 @@
 Project Name,Transacted Price ($),Area (SQFT),Unit Price ($ PSF),Sale Date,Street Name,Type of Sale,Type of Area,Area (SQM),Unit Price ($ PSM),Nett Price($),Property Type,Number of Units,Tenure,Postal District,Market Segment,Floor Level
 SKYWATERS RESIDENCES,"11,480,000","2,088.22","5,498",Sep-26,PRINCE EDWARD ROAD,New Sale,Strata,194,"59,175",-,Apartment,1,99 years leasehold,1,Core Central Region,26 to 30
 ONE MARINA GARDENS,"2,997,800",979.52,"3,060",Sep-26,MARINA GARDENS LANE,New Sale,Strata,91,"32,943",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
-ONE MARINA GARDENS,"2,242,332",731.95,"3,064",Sep-26,MARINA GARDENS LANE,New Sale,Strata,68,"32,975",-,Apartment,1,99 years leasehold,1,Rest of Central Region,26 to 30
+ONE MARINA GARDENS,"2,242,332",731.95,"3,063",Sep-26,MARINA GARDENS LANE,New Sale,Strata,68,"32,975",-,Apartment,1,99 years leasehold,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"2,255,900",731.95,"3,082",Sep-26,MARINA GARDENS LANE,New Sale,Strata,68,"33,175",-,Apartment,1,99 years leasehold,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"1,951,400",645.84,"3,021",Sep-26,MARINA GARDENS LANE,New Sale,Strata,60,"32,523",-,Apartment,1,99 years leasehold,1,Rest of Central Region,11 to 15
 UNION SQUARE RESIDENCES,"1,280,000",462.85,"2,765",Sep-26,HAVELOCK ROAD,New Sale,Strata,43,"29,767",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,06 to 10
@@ -151,7 +151,7 @@ ONE MARINA GARDENS,"2,093,100",721.19,"2,902",May-26,MARINA GARDENS LANE,New Sal
 ONE MARINA GARDENS,"2,956,400","1,011.82","2,922",May-26,MARINA GARDENS LANE,New Sale,Strata,94,"31,451",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,11 to 15
 ONE MARINA GARDENS,"3,155,200","1,065.64","2,961",May-26,MARINA GARDENS LANE,New Sale,Strata,99,"31,871",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"1,965,000",645.84,"3,043",May-26,MARINA GARDENS LANE,New Sale,Strata,60,"32,750",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,21 to 25
-ONE MARINA GARDENS,"3,486,400","1,173.28","2,971",May-26,MARINA GARDENS LANE,New Sale,Strata,109,"31,985",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
+ONE MARINA GARDENS,"3,486,400","1,173.28","2,972",May-26,MARINA GARDENS LANE,New Sale,Strata,109,"31,985",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
 ONE MARINA GARDENS,"2,865,500","1,011.82","2,832",May-26,MARINA GARDENS LANE,New Sale,Strata,94,"30,484",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
 ONE MARINA GARDENS,"2,220,600",710.42,"3,126",May-26,MARINA GARDENS LANE,New Sale,Strata,66,"33,645",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,31 to 35
 ONE MARINA GARDENS,"3,474,200","1,173.28","2,961",May-26,MARINA GARDENS LANE,New Sale,Strata,109,"31,873",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
@@ -247,7 +247,7 @@ ONE SHENTON,"1,125,000",581.26,"1,935",Apr-26,SHENTON WAY,Resale,Strata,54,"20,8
 V ON SHENTON,"1,700,000",947.23,"1,795",Apr-26,SHENTON WAY,Resale,Strata,88,"19,318",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,21 to 25
 V ON SHENTON,"990,000",505.91,"1,957",Apr-26,SHENTON WAY,Resale,Strata,47,"21,064",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,41 to 45
 W RESIDENCES MARINA VIEW - SINGAPORE,"2,148,000",818.06,"2,626",Mar-26,MARINA VIEW,New Sale,Strata,76,"28,263",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
-W RESIDENCES MARINA VIEW - SINGAPORE,"2,138,000",818.06,"2,614",Mar-26,MARINA VIEW,New Sale,Strata,76,"28,132",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
+W RESIDENCES MARINA VIEW - SINGAPORE,"2,138,000",818.06,"2,613",Mar-26,MARINA VIEW,New Sale,Strata,76,"28,132",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
 W RESIDENCES MARINA VIEW - SINGAPORE,"1,927,000",710.42,"2,712",Mar-26,MARINA VIEW,New Sale,Strata,66,"29,197",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
 W RESIDENCES MARINA VIEW - SINGAPORE,"1,880,000",710.42,"2,646",Mar-26,MARINA VIEW,New Sale,Strata,66,"28,485",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
 W RESIDENCES MARINA VIEW - SINGAPORE,"2,088,000",796.54,"2,621",Mar-26,MARINA VIEW,New Sale,Strata,74,"28,216",-,Apartment,1,99 yrs lease commencing from 2021,1,Core Central Region,16 to 20
@@ -406,7 +406,7 @@ THE SAIL @ MARINA BAY,"2,355,000","1,033.34","2,279",Oct-25,MARINA BOULEVARD,Res
 THE SAIL @ MARINA BAY,"1,850,000",893.41,"2,071",Oct-25,MARINA BOULEVARD,Resale,Strata,83,"22,289",-,Apartment,1,99 yrs lease commencing from 2002,1,Core Central Region,06 to 10
 ONE SHENTON,"1,990,000","1,119.46","1,778",Oct-25,SHENTON WAY,Resale,Strata,104,"19,135",-,Apartment,1,99 yrs lease commencing from 2005,1,Core Central Region,16 to 20
 ONE SHENTON,"2,988,000","1,571.54","1,901",Oct-25,SHENTON WAY,Resale,Strata,146,"20,466",-,Apartment,1,99 yrs lease commencing from 2005,1,Core Central Region,16 to 20
-V ON SHENTON,"965,000",473.62,"2,037",Oct-25,SHENTON WAY,Resale,Strata,44,"21,932",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,26 to 30
+V ON SHENTON,"965,000",473.62,"2,038",Oct-25,SHENTON WAY,Resale,Strata,44,"21,932",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,26 to 30
 V ON SHENTON,"2,018,000","1,054.87","1,913",Oct-25,SHENTON WAY,Resale,Strata,98,"20,592",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,11 to 15
 V ON SHENTON,"980,000",473.62,"2,069",Oct-25,SHENTON WAY,Resale,Strata,44,"22,273",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,46 to 50
 ONE MARINA GARDENS,"1,899,982",656.6,"2,894",Sep-25,MARINA GARDENS LANE,New Sale,Strata,61,"31,147",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
@@ -419,7 +419,7 @@ ONE MARINA GARDENS,"1,883,403",656.6,"2,868",Sep-25,MARINA GARDENS LANE,New Sale
 ONE MARINA GARDENS,"2,038,262",667.37,"3,054",Sep-25,MARINA GARDENS LANE,New Sale,Strata,62,"32,875",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"3,806,562","1,237.86","3,075",Sep-25,MARINA GARDENS LANE,New Sale,Strata,115,"33,101",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
 UNION SQUARE RESIDENCES,"2,331,000",721.19,"3,232",Sep-25,HAVELOCK ROAD,New Sale,Strata,67,"34,791",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,26 to 30
-UNION SQUARE RESIDENCES,"2,308,000",742.72,"3,107",Sep-25,HAVELOCK ROAD,New Sale,Strata,69,"33,449",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,16 to 20
+UNION SQUARE RESIDENCES,"2,308,000",742.72,"3,108",Sep-25,HAVELOCK ROAD,New Sale,Strata,69,"33,449",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,16 to 20
 THE CLIFT,"1,670,000",818.06,"2,041",Sep-25,MCCALLUM STREET,Resale,Strata,76,"21,974",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,21 to 25
 MARINA ONE RESIDENCES,"3,380,000","1,582.31","2,136",Sep-25,MARINA WAY,Resale,Strata,147,"22,993",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,11 to 15
 MARINA ONE RESIDENCES,"2,330,000","1,108.69","2,102",Sep-25,MARINA WAY,Resale,Strata,103,"22,621",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,26 to 30
@@ -443,10 +443,10 @@ W RESIDENCES MARINA VIEW - SINGAPORE,"2,717,440",818.06,"3,322",Aug-25,MARINA VI
 ONE MARINA GARDENS,"1,909,931",656.6,"2,909",Aug-25,MARINA GARDENS LANE,New Sale,Strata,61,"31,310",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,11 to 15
 ONE MARINA GARDENS,"1,257,768",430.56,"2,921",Aug-25,MARINA GARDENS LANE,New Sale,Strata,40,"31,444",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,01 to 05
 ONE MARINA GARDENS,"3,036,959","1,011.82","3,001",Aug-25,MARINA GARDENS LANE,New Sale,Strata,94,"32,308",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,36 to 40
-ONE MARINA GARDENS,"1,864,422",656.6,"2,840",Aug-25,MARINA GARDENS LANE,New Sale,Strata,61,"30,564",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
+ONE MARINA GARDENS,"1,864,422",656.6,"2,839",Aug-25,MARINA GARDENS LANE,New Sale,Strata,61,"30,564",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
 ONE MARINA GARDENS,"5,144,355","1,646.89","3,124",Aug-25,MARINA GARDENS LANE,New Sale,Strata,153,"33,623",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,21 to 25
 ONE MARINA GARDENS,"2,137,854",721.19,"2,964",Aug-25,MARINA GARDENS LANE,New Sale,Strata,67,"31,908",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,06 to 10
-ONE MARINA GARDENS,"2,635,221",904.18,"2,914",Aug-25,MARINA GARDENS LANE,New Sale,Strata,84,"31,372",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,11 to 15
+ONE MARINA GARDENS,"2,635,221",904.18,"2,915",Aug-25,MARINA GARDENS LANE,New Sale,Strata,84,"31,372",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,11 to 15
 ONE MARINA GARDENS,"2,156,029",710.42,"3,035",Aug-25,MARINA GARDENS LANE,New Sale,Strata,66,"32,667",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,36 to 40
 ONE MARINA GARDENS,"1,799,999",645.84,"2,787",Aug-25,MARINA GARDENS LANE,New Sale,Strata,60,"30,000",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,01 to 05
 ONE MARINA GARDENS,"1,799,999",645.84,"2,787",Aug-25,MARINA GARDENS LANE,New Sale,Strata,60,"30,000",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,01 to 05
@@ -1029,7 +1029,7 @@ ONE MARINA GARDENS,"2,886,657",979.52,"2,947",Apr-25,MARINA GARDENS LANE,New Sal
 ONE MARINA GARDENS,"2,810,373",968.76,"2,901",Apr-25,MARINA GARDENS LANE,New Sale,Strata,90,"31,226",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"2,807,466",968.76,"2,898",Apr-25,MARINA GARDENS LANE,New Sale,Strata,90,"31,194",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,26 to 30
 ONE MARINA GARDENS,"2,801,654",968.76,"2,892",Apr-25,MARINA GARDENS LANE,New Sale,Strata,90,"31,129",-,Apartment,1,99 yrs lease commencing from 2023,1,Rest of Central Region,21 to 25
-UNION SQUARE RESIDENCES,"3,596,000","1,065.64","3,374",Apr-25,HAVELOCK ROAD,New Sale,Strata,99,"36,323",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,31 to 35
+UNION SQUARE RESIDENCES,"3,596,000","1,065.64","3,375",Apr-25,HAVELOCK ROAD,New Sale,Strata,99,"36,323",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,31 to 35
 THE CLIFT,"1,450,000",764.24,"1,897",Apr-25,MCCALLUM STREET,Resale,Strata,71,"20,423",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,31 to 35
 THE CLIFT,"1,058,000",505.91,"2,091",Apr-25,MCCALLUM STREET,Resale,Strata,47,"22,511",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,21 to 25
 MARINA ONE RESIDENCES,"2,070,000","1,033.34","2,003",Apr-25,MARINA WAY,Resale,Strata,96,"21,563",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,21 to 25
@@ -1105,7 +1105,7 @@ UNION SQUARE RESIDENCES,"2,347,000",742.72,"3,160",Jan-25,HAVELOCK ROAD,New Sale
 UNION SQUARE RESIDENCES,"2,481,000",731.95,"3,390",Jan-25,HAVELOCK ROAD,New Sale,Strata,68,"36,485",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,31 to 35
 UNION SQUARE RESIDENCES,"3,572,000","1,065.64","3,352",Jan-25,HAVELOCK ROAD,New Sale,Strata,99,"36,081",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,26 to 30
 UNION SQUARE RESIDENCES,"2,079,000",699.66,"2,971",Jan-25,HAVELOCK ROAD,New Sale,Strata,65,"31,985",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,06 to 10
-UNION SQUARE RESIDENCES,"2,489,000",731.95,"3,401",Jan-25,HAVELOCK ROAD,New Sale,Strata,68,"36,603",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,31 to 35
+UNION SQUARE RESIDENCES,"2,489,000",731.95,"3,400",Jan-25,HAVELOCK ROAD,New Sale,Strata,68,"36,603",-,Apartment,1,99 yrs lease commencing from 2024,1,Rest of Central Region,31 to 35
 THE CLIFT,"1,024,000",505.91,"2,024",Jan-25,MCCALLUM STREET,Resale,Strata,47,"21,787",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,11 to 15
 THE CLIFT,"1,675,000",775.01,"2,161",Jan-25,MCCALLUM STREET,Resale,Strata,72,"23,264",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,11 to 15
 THE CLIFT,"1,030,000",495.14,"2,080",Jan-25,MCCALLUM STREET,Resale,Strata,46,"22,391",-,Apartment,1,99 yrs lease commencing from 2004,1,Core Central Region,16 to 20
@@ -1532,7 +1532,7 @@ THE SAIL @ MARINA BAY,"1,920,000",882.65,"2,175",Mar-23,MARINA BOULEVARD,Resale,
 THE SAIL @ MARINA BAY,"3,200,000","1,646.89","1,943",Mar-23,MARINA BOULEVARD,Resale,Strata,153,"20,915",-,Apartment,1,99 yrs lease commencing from 2002,1,Core Central Region,11 to 15
 THE SAIL @ MARINA BAY,"1,610,000",893.41,"1,802",Mar-23,MARINA BOULEVARD,Resale,Strata,83,"19,398",-,Apartment,1,99 yrs lease commencing from 2002,1,Core Central Region,26 to 30
 ROBINSON SUITES,"1,828,000",990.29,"1,846",Mar-23,ROBINSON ROAD,Resale,Strata,92,"19,870",-,Apartment,1,Freehold,1,Core Central Region,06 to 10
-MARINA BAY RESIDENCES,"1,510,000",710.42,"2,126",Mar-23,MARINA BOULEVARD,Resale,Strata,66,"22,879",-,Condominium,1,99 yrs lease commencing from 2005,1,Core Central Region,41 to 45
+MARINA BAY RESIDENCES,"1,510,000",710.42,"2,125",Mar-23,MARINA BOULEVARD,Resale,Strata,66,"22,879",-,Condominium,1,99 yrs lease commencing from 2005,1,Core Central Region,41 to 45
 ONE SHENTON,"1,850,000","1,097.93","1,685",Mar-23,SHENTON WAY,Resale,Strata,102,"18,137",-,Apartment,1,99 yrs lease commencing from 2005,1,Core Central Region,16 to 20
 ONE SHENTON,"1,970,000","1,184.04","1,664",Mar-23,SHENTON WAY,Resale,Strata,110,"17,909",-,Apartment,1,99 yrs lease commencing from 2005,1,Core Central Region,11 to 15
 V ON SHENTON,"3,000,000","1,205.57","2,488",Mar-23,SHENTON WAY,Resale,Strata,112,"26,786",-,Apartment,1,99 yrs lease commencing from 2011,1,Core Central Region,51 to 55
