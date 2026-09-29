@@ -558,6 +558,12 @@ def _known_projects() -> set:
 # lenses back into one consensus number is the operation that let score_1000
 # (r ~ -0.7 against realized exit profitability) monopolize the research
 # budget in the first place.
+#
+# A lens in NO_SOLO still co-nominates (it labels and drafts candidates
+# another lens also picked) but cannot spend an agent run alone. exit_demand
+# went in on 2026-09-29: 8 solo picks over four scans (2026-08-12 .. 09-29),
+# 0 better than Neutral, 5 of them Avoid. Remove it once the lens changes.
+NO_SOLO = {"exit_demand"}
 # --------------------------------------------------------------------------- #
 def _lenses():
     from scoring import lenses
@@ -728,6 +734,10 @@ def select_candidates(
             cand["gate_reason"] = "not scored"
         elif not surfaced:
             cand["gate_reason"] = _below_bars_reason(lens_view, bars)
+        elif not set(surfaced) - NO_SOLO:
+            cand["gate_reason"] = (
+                f"nominated by {', '.join(surfaced)} alone — solo picks paused "
+                f"for it (NO_SOLO in weekly.py)")
         elif not in_region(district):
             cand["gate_reason"] = (
                 f"out of region ({district or '?'} is not OCR — mandate is D16-D28)")

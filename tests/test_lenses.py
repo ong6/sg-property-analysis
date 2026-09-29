@@ -257,3 +257,13 @@ class TestSecondLens:
             name="abstains", score=lambda s, r: {"score": None, "components": {}},
             version=lambda: "a-1", gate_percentile=0.9))
         assert "abstains" not in lenses.score_record(_listing(), {})
+
+
+def test_no_solo_lens_needs_a_co_nominator(monkeypatch):
+    import weekly
+    monkeypatch.setattr(weekly, "NO_SOLO", {"mmr"})
+    rows = [{"id": "a", "project_name": "Alpha", "beds": 3, "score_1000": 700,
+             "price": 1_500_000, "district": "D19"}]
+    db = {"a": {"price": 1_500_000, "sqft": 1200, "psf": 1250, "district": "D19"}}
+    short, rej = weekly.select_candidates(rows, db, min_score=650)
+    assert short == [] and "alone" in rej[0]["gate_reason"]
