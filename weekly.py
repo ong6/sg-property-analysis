@@ -66,6 +66,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import signal
 import subprocess
 import sys
@@ -78,6 +79,7 @@ sys.path.insert(0, BASE)
 import eval_memory
 import listings_db
 import poller
+from utils.store import store_root, fetch_script
 
 DATA_DIR = os.path.join(BASE, "data")
 STATE_FILE = os.path.join(DATA_DIR, "weekly_state.json")
@@ -303,8 +305,7 @@ AI_ALLOWED_TOOLS = "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Skill,Todo
 # Store push bar: only these reach the personal data store's scan-finds note.
 STORE_PUSH_RATINGS = {"strong buy", "buy"}
 STORE_PUSH_CONFIDENCE = {"high", "medium"}
-_STORE = os.environ.get(
-    "PF_STORE", os.path.expanduser("~/Sideproject/personal-data-store"))
+_STORE = store_root()
 STORE_FINDS_PATH = os.environ.get(
     "PF_STORE_FINDS",
     os.path.join(_STORE, "projects", "home-buying", "scan-finds.md"))
@@ -321,8 +322,7 @@ _RATING_ICON = {"strong buy": "🟢", "buy": "🟢", "neutral": "🟡", "avoid":
 # with the store's plain fetcher. One page per shortlisted project, <=8 a week:
 # realsmart's ToS is personal-use, so this stays a research lookup and must never
 # become a per-listing pipeline feed.
-WEB_EXTRACT_FETCH = os.path.join(
-    _STORE, ".claude", "skills", "web-extract", "scripts", "fetch.py")
+WEB_EXTRACT_FETCH = fetch_script("fetch.py")
 
 
 def realsmart_url(project_name: str | None) -> tuple[str, bool]:
@@ -1641,6 +1641,42 @@ def stamp_scan_note(day: str, path: str = STORE_SCAN_NOTE_PATH) -> bool:
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
+def check_environment(need_browser: bool, need_agents: bool) -> list[str]:
+    """Fail fast on a machine that can't finish the scan. Returns fatal problems.
+
+    A scan polls for ~10 minutes before it first needs the agent CLI, and the
+    2026-09-18 run died on a missing patchright browser only after the URA step.
+    A fresh clone also has no realsmart slug index (it is gitignored), which
+    silently turned every REALSCORE lookup into a guessed URL; that one is fixed
+    here rather than reported.
+    """
+    fatal = []
+    if need_agents and not shutil.which("claude"):
+        fatal.append("`claude` CLI not on PATH — AI analysis can't run (use --dry-run to grade only)")
+    if need_browser:
+        try:
+            from patchright.sync_api import sync_playwright
+            with sync_playwright() as pw:
+                exe = pw.chromium.executable_path
+            if not os.path.exists(exe):
+                fatal.append("patchright Chromium missing — run: python -m patchright install chromium")
+        except Exception as e:  # noqa: BLE001
+            fatal.append(f"patchright unusable ({type(e).__name__}: {e}) — pip install -r requirements.txt")
+    if not os.path.exists(STORE_FINDS_PATH):
+        print(f"  ⚠ store not found ({STORE_FINDS_PATH}) — finds won't be pushed; set PF_STORE",
+              file=sys.stderr)
+    try:
+        import realsmart
+        age = _csv_age_days(realsmart.SLUG_FILE)
+        if age is None or age > 30:
+            n = realsmart.refresh_slugs()
+            print(f"  realsmart slug index {'rebuilt' if age is None else 'refreshed'}: {n} condos",
+                  file=sys.stderr)
+    except Exception as e:  # noqa: BLE001 — REALSCORE is enrichment, never fatal
+        print(f"  ⚠ realsmart slug refresh failed: {e}", file=sys.stderr)
+    return fatal
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Weekly PropertyGuru scan + AI triage")
     ap.add_argument("--force", action="store_true",
@@ -1693,6 +1729,18 @@ def main() -> int:
               f"{last.get('finished_at')}) — digest: {last.get('digest')}. "
               f"Use --force to re-run.")
         return 0
+
+    # The scrapers log page-by-page progress and Cloudflare waits; without a
+    # handler the poll was ~10 silent minutes, indistinguishable from a hang.
+    from utils import setup_logging
+    setup_logging()
+
+    problems = check_environment(need_browser=not args.no_poll and not args.full_book,
+                                 need_agents=not args.dry_run)
+    if problems:
+        for p_ in problems:
+            print(f"  ✗ {p_}", file=sys.stderr)
+        return 2
 
     # 0. Pre-flight — current URA prints before anything gets scored. Skipped
     # with --no-poll: nothing is re-scored then, so fresh comps would change

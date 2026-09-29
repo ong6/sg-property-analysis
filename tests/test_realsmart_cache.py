@@ -190,3 +190,17 @@ class TestSlugResolution:
         assert realsmart.resolve("Nonexistent Place") is None
         url, ok = realsmart.url_for("Nonexistent Place")
         assert ok is False and url.endswith("/nonexistent-place")
+
+
+def test_sitemap_follows_only_condo_children(monkeypatch):
+    import realsmart
+    pages = {
+        realsmart.SITEMAP_URL: "<sitemapindex><sitemap><loc>https://realsmart.sg/sitemap-condos.xml</loc></sitemap>"
+                               "<sitemap><loc>https://realsmart.sg/sitemap-landed.xml</loc></sitemap></sitemapindex>",
+        "https://realsmart.sg/sitemap-condos.xml": "<loc>https://realsmart.sg/p/caspian</loc>",
+    }
+    seen = []
+    monkeypatch.setattr(realsmart, "_get", lambda url, t: seen.append(url) or pages[url])
+    text = realsmart._sitemap_text(5)
+    assert "realsmart.sg/p/caspian" in text
+    assert not any("landed" in u for u in seen)

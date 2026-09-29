@@ -32,13 +32,12 @@ sys.path.insert(0, BASE)
 
 import listings_db
 import realsmart
+from utils.store import store_root, fetch_script
 
 DATA_DIR = os.path.join(BASE, "data")
 CACHE_FILE = os.path.join(DATA_DIR, "realsmart_projects.json")
-STORE = os.environ.get(
-    "PF_STORE", os.path.expanduser("~/Sideproject/personal-data-store"))
-FETCH_TOOL = os.path.join(
-    STORE, ".claude", "skills", "web-extract", "scripts", "fetch.py")
+STORE = store_root()
+FETCH_TOOL = fetch_script("fetch.py")
 
 CACHE_TTL_DAYS = 45          # project-level stats are slow-moving
 # A miss is retried sooner: it is as likely a broken fetch as a missing page
@@ -211,8 +210,7 @@ def parse_project_page(text: str) -> dict:
     return out
 
 
-READER_TOOL = os.path.join(
-    STORE, ".claude", "skills", "web-extract", "scripts", "reader.py")
+READER_TOOL = fetch_script("reader.py")
 RENDER_TIMEOUT_S = 300
 
 

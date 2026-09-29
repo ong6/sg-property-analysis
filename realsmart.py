@@ -9,7 +9,7 @@ REALSCORE for that project.
 realsmart publishes every property URL in its sitemap, and the web-extract
 skill's own notes call that out as the intended way to *resolve slugs* (as
 opposed to bulk-collecting pages, which their personal-use ToS forbids). So:
-fetch the sitemap once, cache the 12.8k slugs locally, and resolve names against
+fetch the condo sitemap once, cache its ~3.3k slugs locally, and resolve names against
 it. That is one sitemap request a month, and zero extra page requests.
 
     python realsmart.py --refresh              # pull/refresh the slug index
@@ -23,17 +23,12 @@ from __future__ import annotations
 import json
 import os
 import re
-import subprocess
 import sys
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE, "data")
 SLUG_FILE = os.path.join(DATA_DIR, "realsmart_slugs.json")
 SITEMAP_URL = "https://realsmart.sg/sitemap.xml"
-STORE = os.environ.get(
-    "PF_STORE", os.path.expanduser("~/Sideproject/personal-data-store"))
-SITEMAP_TOOL = os.path.join(
-    STORE, ".claude", "skills", "web-extract", "scripts", "sitemap.py")
 
 # Only the tail-word abbreviations PropertyGuru actually uses. Kept small and
 # explicit: an aggressive synonym table would start matching the wrong project,
@@ -92,22 +87,45 @@ def load_slugs() -> dict:
         return {}
 
 
-def refresh_slugs(timeout_s: int = 180) -> int:
+def _get(url: str, timeout_s: int) -> str:
+    import requests
+    r = requests.get(url, timeout=timeout_s,
+                     headers={"User-Agent": "Mozilla/5.0 (personal research)"})
+    r.raise_for_status()
+    return r.text
+
+
+def _sitemap_text(timeout_s: int) -> str:
+    """The sitemap plus every child sitemap it indexes, concatenated.
+
+    A plain GET is enough: sitemaps are static XML. This replaced the store's
+    sitemap.py, which was retired with the rest of the old web-extract scripts
+    on 2026-09-09 and left fresh clones with no slug index at all.
+    """
+    root = _get(SITEMAP_URL, timeout_s)
+    children = re.findall(r"<loc>\s*([^<\s]+\.xml)\s*</loc>", root)
+    # Condos only: the HDB and landed children add ~55k slugs that can only
+    # produce false prefix matches for a condo scan.
+    children = [c for c in children if "condo" in c] or children
+    parts = [root]
+    for c in children:
+        try:
+            parts.append(_get(c, timeout_s))
+        except Exception as e:  # noqa: BLE001 — one bad child must not sink the rest
+            print(f"  ⚠ sitemap child {c} failed: {e}", file=sys.stderr)
+    return "\n".join(parts)
+
+
+def refresh_slugs(timeout_s: int = 60) -> int:
     """Fetch the sitemap and cache every /p/<slug>. Returns the count."""
-    if not os.path.exists(SITEMAP_TOOL):
-        print(f"  ⚠ sitemap tool not found at {SITEMAP_TOOL}", file=sys.stderr)
-        return 0
     try:
-        proc = subprocess.run(
-            [sys.executable, SITEMAP_TOOL, SITEMAP_URL, "--match", "/p/",
-             "--limit", "20000"],
-            capture_output=True, text=True, timeout=timeout_s)
-    except (subprocess.TimeoutExpired, OSError) as e:
+        text = _sitemap_text(timeout_s)
+    except Exception as e:  # noqa: BLE001
         print(f"  ⚠ sitemap fetch failed: {type(e).__name__}: {e}", file=sys.stderr)
         return 0
 
     slugs = sorted({m.group(1) for m in
-                    re.finditer(r"realsmart\.sg/p/([^\s/?#]+)", proc.stdout)})
+                    re.finditer(r"realsmart\.sg/p/([^\s/?#<]+)", text)})
     if not slugs:
         print("  ⚠ sitemap returned no /p/ URLs — index left unchanged",
               file=sys.stderr)

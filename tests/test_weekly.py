@@ -1040,3 +1040,27 @@ class TestRound3Fixes:
         monkeypatch.setattr(f, "build_cache_from_district_csvs", lambda d: {})
         monkeypatch.setattr(_sys, "argv", ["x", "--districts", "19", "--property-types", "ec"])
         f.main()
+
+
+class TestCheckEnvironment:
+    def _quiet(self, monkeypatch, tmp_path):
+        import realsmart
+        slug = tmp_path / "slugs.json"
+        slug.write_text("{}")
+        monkeypatch.setattr(realsmart, "SLUG_FILE", str(slug))
+        monkeypatch.setattr(weekly, "STORE_FINDS_PATH", str(slug))
+
+    def test_missing_claude_is_fatal_only_when_agents_run(self, monkeypatch, tmp_path):
+        self._quiet(monkeypatch, tmp_path)
+        monkeypatch.setattr(weekly.shutil, "which", lambda _: None)
+        assert any("claude" in p for p in weekly.check_environment(False, True))
+        assert weekly.check_environment(False, False) == []
+
+    def test_missing_slug_index_is_rebuilt(self, monkeypatch, tmp_path):
+        import realsmart
+        self._quiet(monkeypatch, tmp_path)
+        monkeypatch.setattr(realsmart, "SLUG_FILE", str(tmp_path / "none.json"))
+        calls = []
+        monkeypatch.setattr(realsmart, "refresh_slugs", lambda: calls.append(1) or 5)
+        assert weekly.check_environment(False, False) == []
+        assert calls == [1]
