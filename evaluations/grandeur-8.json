@@ -318,6 +318,80 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-500270666",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "Grandeur 8 (579-unit 2005 99LH, AMK/Yio Chu Kang, D20 OCR) low-floor 1,259 sqft unit listed as 4BR at $2.10M / $1,668 psf. 1,259 sqft (117 sqm) is the project's most common 3BR size, probably the 3BR+study layout, not a true 4BR. Against same-size prints the ask is about 17% rich: the Jul-26 low-floor 117 sqm print was $1.80M ($1,429 psf), and no 111-123 sqm resale has ever printed above $1,622 psf. The project is sound (REALSCORE 3.6; 96.1% profitable on 622 resale pairs; deep liquidity). The price is the problem.",
+      "rating_rationale": "The format is settled first. 1,259 sqft = 117 sqm, the core of Grandeur 8's dominant 3BR size group: about 60 URA resales at 111-117 sqm since 2021, and PropertyGuru's project page calls 3BR/1,259 sf the most popular layout. True 4BRs sit at 129-135+ sqm (bed_bands 4BR median 1,450 sqft). The '4BR' label is the study counted as a bedroom, so the right comps are the 3BR prints, and there the discount turns into a premium. Same-size 117 sqm prints: Jul-26 $1.80M (floors 01-05) and $1.95M (floors 11-15); Jul-25 $1.83M; Jun-25 $1.80M. The whole 111-123 sqm band has never printed above $1,622 psf (Apr-26, floors 06-10). A low-floor unit at $1,668 psf would set a new record for the band from the worst floor tier. The algo agrees (ask_above_own_stack_prints +19% on n=24; psf_value -12.3). The -8.5% vs age-adjusted D20 median comes from a district median set by Bishan/Thomson, a separate sub-market. It is not project-relative value. Other live asks for the same layout undercut it: 1,259 sqft '3BR' at $1.95-2.0M, and 1,227 sqft at $1.88M first seen today. The project's downside record is strong: REALSCORE 3.6 and 96.1% profitable on a deep 622-pair base, avg 4.9%/yr. Carry is thin (3.0% gross on 8 contracts). Mandate fit: as a 3BR this is his mandate, but $2.1M is well over his flexible $1.8M. For hers, the same money buys the project's real 1,421 sqft 4BR (ground floor at $2.08M, evaluated 2026-09-24). Avoid at this ask. Fair for this layout on a low floor is about $1.75-1.85M. At or below $1.85M it would re-rate to Neutral or better for his mandate. Confidence is medium, not high: floor is only 'Low Floor' (not verified 01-05 vs 06-10), there is no stack profile, and condition/renovation is unknown.",
+      "red_flags": [
+        "Mislabelled format: 1,259 sqft (117 sqm) is Grandeur 8's main 3BR size (likely 3BR+study), not a 4BR. Real 4BRs are 129-135+ sqm. Compare psf to the 3BR cohort.",
+        "Ask $2.10M / $1,668 psf is ~17% above the Jul-26 same-size low-floor print ($1.80M / $1,429) and above every 111-123 sqm resale ever (max $1,622 psf)",
+        "ask_above_own_stack_prints: +19% vs 24 same-size prints; psf_premium_vs_ura_median +18.7%",
+        "Cheaper live asks for the same layout: 1,259 sqft at $1.95-2.0M; 1,227 sqft at $1.88M (first seen 2026-09-29). Heavy standing inventory (~19 Grandeur 8 rows in DB).",
+        "Low floor: the lowest-priced tier in this project's prints",
+        "Thin carry: 3.04% gross / 1.69% net (URA 3BR rent $5,325 on only 8 contracts)",
+        "99-yr lease from 2002: ~75 yrs at entry, ~68-70 at a 5-7yr exit; built 2005",
+        "D20 age-adjusted -8.5% 'discount' is vs a Bishan/Thomson-dominated district median, not project value"
+      ],
+      "catalysts": [
+        "Strong downside record: REALSCORE 3.6; 96.1% of 622 matched resale pairs profitable, avg 4.9%/yr annualized",
+        "Deep liquidity: 579 units, 89 URA resales in 5 yrs, deep buyer pool; 1,259 sf is the most traded layout",
+        "OCR region (strongest measured forward region)",
+        "AMK becomes an NSL/CRL interchange ~2030 (724m), though future infra has no measured forward power",
+        "Fresh listing (first seen 2026-09-29): room to negotiate toward ~$1.80-1.85M"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1667.99,
+        "beds": 4,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.7,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.04,
+        "nearest_mrt": "Yio Chu Kang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 75
+      },
+      "agent_evaluation": {
+        "summary": "Grandeur 8 (579-unit 2005 99LH, AMK/Yio Chu Kang, D20 OCR) low-floor 1,259 sqft unit listed as 4BR at $2.10M / $1,668 psf. 1,259 sqft (117 sqm) is the project's most common 3BR size, probably the 3BR+study layout, not a true 4BR. Against same-size prints the ask is about 17% rich: the Jul-26 low-floor 117 sqm print was $1.80M ($1,429 psf), and no 111-123 sqm resale has ever printed above $1,622 psf. The project is sound (REALSCORE 3.6; 96.1% profitable on 622 resale pairs; deep liquidity). The price is the problem.",
+        "rating": "Avoid",
+        "rating_rationale": "The format is settled first. 1,259 sqft = 117 sqm, the core of Grandeur 8's dominant 3BR size group: about 60 URA resales at 111-117 sqm since 2021, and PropertyGuru's project page calls 3BR/1,259 sf the most popular layout. True 4BRs sit at 129-135+ sqm (bed_bands 4BR median 1,450 sqft). The '4BR' label is the study counted as a bedroom, so the right comps are the 3BR prints, and there the discount turns into a premium. Same-size 117 sqm prints: Jul-26 $1.80M (floors 01-05) and $1.95M (floors 11-15); Jul-25 $1.83M; Jun-25 $1.80M. The whole 111-123 sqm band has never printed above $1,622 psf (Apr-26, floors 06-10). A low-floor unit at $1,668 psf would set a new record for the band from the worst floor tier. The algo agrees (ask_above_own_stack_prints +19% on n=24; psf_value -12.3). The -8.5% vs age-adjusted D20 median comes from a district median set by Bishan/Thomson, a separate sub-market. It is not project-relative value. Other live asks for the same layout undercut it: 1,259 sqft '3BR' at $1.95-2.0M, and 1,227 sqft at $1.88M first seen today. The project's downside record is strong: REALSCORE 3.6 and 96.1% profitable on a deep 622-pair base, avg 4.9%/yr. Carry is thin (3.0% gross on 8 contracts). Mandate fit: as a 3BR this is his mandate, but $2.1M is well over his flexible $1.8M. For hers, the same money buys the project's real 1,421 sqft 4BR (ground floor at $2.08M, evaluated 2026-09-24). Avoid at this ask. Fair for this layout on a low floor is about $1.75-1.85M. At or below $1.85M it would re-rate to Neutral or better for his mandate. Confidence is medium, not high: floor is only 'Low Floor' (not verified 01-05 vs 06-10), there is no stack profile, and condition/renovation is unknown.",
+        "red_flags": [
+          "Mislabelled format: 1,259 sqft (117 sqm) is Grandeur 8's main 3BR size (likely 3BR+study), not a 4BR. Real 4BRs are 129-135+ sqm. Compare psf to the 3BR cohort.",
+          "Ask $2.10M / $1,668 psf is ~17% above the Jul-26 same-size low-floor print ($1.80M / $1,429) and above every 111-123 sqm resale ever (max $1,622 psf)",
+          "ask_above_own_stack_prints: +19% vs 24 same-size prints; psf_premium_vs_ura_median +18.7%",
+          "Cheaper live asks for the same layout: 1,259 sqft at $1.95-2.0M; 1,227 sqft at $1.88M (first seen 2026-09-29). Heavy standing inventory (~19 Grandeur 8 rows in DB).",
+          "Low floor: the lowest-priced tier in this project's prints",
+          "Thin carry: 3.04% gross / 1.69% net (URA 3BR rent $5,325 on only 8 contracts)",
+          "99-yr lease from 2002: ~75 yrs at entry, ~68-70 at a 5-7yr exit; built 2005",
+          "D20 age-adjusted -8.5% 'discount' is vs a Bishan/Thomson-dominated district median, not project value"
+        ],
+        "catalysts": [
+          "Strong downside record: REALSCORE 3.6; 96.1% of 622 matched resale pairs profitable, avg 4.9%/yr annualized",
+          "Deep liquidity: 579 units, 89 URA resales in 5 yrs, deep buyer pool; 1,259 sf is the most traded layout",
+          "OCR region (strongest measured forward region)",
+          "AMK becomes an NSL/CRL interchange ~2030 (724m), though future infra has no measured forward power",
+          "Fresh listing (first seen 2026-09-29): room to negotiate toward ~$1.80-1.85M"
+        ],
+        "rental_assessment": "URA 3BR project rent ~$5,325/mo on 8 contracts (12mo) gives 3.04% gross / 1.69% net at $2.1M. Plain carry, no yield artifact. At a fair ~$1.8M the gross would be ~3.5%.",
+        "appreciation_assessment": "URA 5yr CAGR 5.7% on 89 txns is trailing and, under current priors, story not signal. The 117 sqm cohort ran from $1.43M (Nov-21) to $1.80-1.95M (Jul-26). The ask front-runs roughly another 1.5 years of that trend on day one. Momentum is negative (-0.36).",
+        "stack_notes": "No profile (not_researched). The floor is only 'Low Floor'. Low-floor 111-117 sqm prints are the weakest in the project ($1.23-1.43k psf 2024-26), which makes the ask worse, not better.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 96.1,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_011_23899609",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-grandeur-8-23899609",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
