@@ -198,6 +198,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-river-isles-60052764",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "An 893 sqft compact 3BR (2 bath, the smallest 3BR line) at River Isles, Punggol (D19 OCR, 610 units, TOP 2016, 99yr from Feb-2012, ~85yr left), asking $1.40M / $1,568 psf. The same 893 sqft line has 18 URA prints. The last six (Jun-25 to Feb-26) cleared at $1.269M-$1.34M ($1,420-1,500 psf), and the highest ever was $1.34M (Aug-25, floor 06-10). So the ask is about 4.5% above the line's record and 5-9% above its recent clearing level, on a line whose PSF has been flat since mid-2025. The development's downside record is excellent (REALSCORE 4.2; 99.7% of 321 matched resales profitable), and liquidity is deep. But this unit carries no value edge at this price.",
+      "rating_rationale": "The development is sound, but at this ask the unit is only fair-to-rich. The one forward signal the backtest trusts, cheapness against peers, does not fire. relative_value is +1.3% vs the D19 age-adjusted same-size median, psf_value is negative (-4.0), and against the unit's own 893 sqft line the ask sits above every print ever recorded ($1.34M max; recent $1.27-1.34M). The 743 score leans on trailing appreciation (+9.2) and liquidity/buyer-pool/dev-size (~+18.5). Liquidity is real and survives clustering, but trailing CAGR has no forward power, and the 7.06% rate in the ROI table is the 2021-24 repricing, not the forward view. Carry is thin: the size-matched rent is ~$3,700-3,850/mo (not $4,075), so gross yield is ~3.2%. The same asking price has also sat unsold since at least 12-Aug-2026 (~7 weeks), with a sibling listing at $1.369M. At ~$1.32-1.34M (the line's clearing level) this would become a defensible hold on downside evidence, but still not a Buy: it would be fair value with no discount. Neutral, medium confidence. The comp evidence is deep (18 same-size prints), but floor and facing are unknown.",
+      "red_flags": [
+        "ASK ABOVE THE LINE'S RECORD: 893 sqft has 18 URA prints. The max is $1,340,000 ($1,500 psf, Aug-25, floor 06-10), and the recent clears are $1.33M (Jun-25, 11-15), $1.286M/$1.269M (Sep-25, 01-05), $1.308M (Oct-25, 01-05) and $1.308M (Feb-26, 01-05). $1.40M is +4.5% over the best-ever print and ~+7% over the recent median.",
+        "PSF HAS STALLED on this line: 893 sqft prints ran $1,035 (2021) -> $1,297 (2023) -> ~$1,440 (2024) -> ~$1,464 (2025) -> $1,464 (Feb-26). The factual_data momentum is -0.55. The 7.06% trailing CAGR in the ROI table is the spent 2021-24 OCR repricing; the override is 3.5%.",
+        "STALE ASK: the DB price history shows this unit at $1,400,000 since 2026-08-12 (~7 weeks) without a sale. A duplicate listing (500231184) carries the same ask, and a sibling (500179528) was cut to $1,368,888. The market has not accepted $1.40M.",
+        "No value signal: relative_value premium is +1.3% vs the age-adjusted D19 same-size median (41 band peers), psf_premium_vs_ura_median is +7.1% (13 cohort txns), and MMR psf_value is -4.0 / age_value -1.0. The 743 comes from trailing appreciation and liquidity, not from price.",
+        "Rent is overstated: the modelled $4,075 is the project-wide 3BR figure. URA 3BR filings at River Isles in the last 12 months give a median of $3,700 (800-900 sqft band, n=11) and $3,850 (900-1,000, n=7). Real gross yield is ~3.2% (net ~1.9%). Yield is carry, never appreciation.",
+        "Smallest 3BR format in the project (893 sqft, 2 baths; standard 3BRs run 893-1,184 sqft). At exit it competes with the 947 sqft line (asks $1.45-1.49M live) and the larger 1,066-1,184 3BRs. A compact 3BR also has the shallowest family-upgrader appeal among the 3BRs.",
+        "LRT, not MRT: the 480m figure is Riviera LRT (Punggol East loop); the nearest heavy-rail interchange is Punggol, ~1.5km. MMR's mrt +3.16 overstates connectivity.",
+        "Floor and facing unknown: PropertyGuru enrichment returned no floor_level, and River Isles has no researched stack profile. Prints on this line span ~$1,420 (01-05) to $1,500 (06-10) psf, so a low floor would make the ask even dearer.",
+        "Supply-side headwind: several River Isles 3BRs are live at once (893, 947, 1,141+ sqft; 13 DB listings), and Punggol HDB MOP cohorts feed upgraders but also compete for them. Seller competition inside the project caps the exit price at the line's clearing level."
+      ],
+      "catalysts": [
+        "DOWNSIDE RECORD: realsmart REALSCORE 4.2; 99.7% of 321 matched resale pairs profitable; avg annualized 6.1% (cached 2026-09-29, realsmart.sg/p/river-isles). This is a deep sample and strong evidence that owners here have almost never lost money. It is backward-looking (entry cohorts largely 2016-2021) and not an appreciation forecast.",
+        "Deep, transparent liquidity: 152 URA resale prints in 5 years, 18 on this exact 893 sqft line, 610 units, and buyer_pool_depth very_deep (the liquidity lever that survives clustering, std_beta +0.16). Entry and exit can both be priced precisely.",
+        "OCR region prior (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%). This is the baseline for any OCR asset, not a River Isles edge.",
+        "Bedroom count is genuine: bed_bands 'ok' (3BR band 850-1,450 sqft, 201 rental contracts), and the developer's mix lists 893 sqft as the entry 3BR. No relabel.",
+        "Lease is a non-issue: 99yr from Feb-2012 leaves ~85 years, ~78-80 at exit, well clear of CPF pro-rating.",
+        "Quantum fits the 'his' mandate (3BR, <=$1.8M) with ~$400k of headroom, squarely in the deepest HDB-upgrader band. Punggol Digital District / SIT next door support tenant demand, though future-infra has no measured forward power.",
+        "Negotiable to fair: the comp evidence to anchor an offer at $1.32-1.34M is public and unambiguous (Aug-25 $1.34M, Oct-25/Feb-26 $1.308M), and the listing has sat for 7 weeks."
+      ],
+      "as_of": {
+        "price": 1400000,
+        "psf": 1567.75,
+        "beds": 3,
+        "sqft": 893.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.06,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.49,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 86
+      },
+      "agent_evaluation": {
+        "summary": "An 893 sqft compact 3BR (2 bath, the smallest 3BR line) at River Isles, Punggol (D19 OCR, 610 units, TOP 2016, 99yr from Feb-2012, ~85yr left), asking $1.40M / $1,568 psf. The same 893 sqft line has 18 URA prints. The last six (Jun-25 to Feb-26) cleared at $1.269M-$1.34M ($1,420-1,500 psf), and the highest ever was $1.34M (Aug-25, floor 06-10). So the ask is about 4.5% above the line's record and 5-9% above its recent clearing level, on a line whose PSF has been flat since mid-2025. The development's downside record is excellent (REALSCORE 4.2; 99.7% of 321 matched resales profitable), and liquidity is deep. But this unit carries no value edge at this price.",
+        "rating": "Neutral",
+        "rating_rationale": "The development is sound, but at this ask the unit is only fair-to-rich. The one forward signal the backtest trusts, cheapness against peers, does not fire. relative_value is +1.3% vs the D19 age-adjusted same-size median, psf_value is negative (-4.0), and against the unit's own 893 sqft line the ask sits above every print ever recorded ($1.34M max; recent $1.27-1.34M). The 743 score leans on trailing appreciation (+9.2) and liquidity/buyer-pool/dev-size (~+18.5). Liquidity is real and survives clustering, but trailing CAGR has no forward power, and the 7.06% rate in the ROI table is the 2021-24 repricing, not the forward view. Carry is thin: the size-matched rent is ~$3,700-3,850/mo (not $4,075), so gross yield is ~3.2%. The same asking price has also sat unsold since at least 12-Aug-2026 (~7 weeks), with a sibling listing at $1.369M. At ~$1.32-1.34M (the line's clearing level) this would become a defensible hold on downside evidence, but still not a Buy: it would be fair value with no discount. Neutral, medium confidence. The comp evidence is deep (18 same-size prints), but floor and facing are unknown.",
+        "red_flags": [
+          "ASK ABOVE THE LINE'S RECORD: 893 sqft has 18 URA prints. The max is $1,340,000 ($1,500 psf, Aug-25, floor 06-10), and the recent clears are $1.33M (Jun-25, 11-15), $1.286M/$1.269M (Sep-25, 01-05), $1.308M (Oct-25, 01-05) and $1.308M (Feb-26, 01-05). $1.40M is +4.5% over the best-ever print and ~+7% over the recent median.",
+          "PSF HAS STALLED on this line: 893 sqft prints ran $1,035 (2021) -> $1,297 (2023) -> ~$1,440 (2024) -> ~$1,464 (2025) -> $1,464 (Feb-26). The factual_data momentum is -0.55. The 7.06% trailing CAGR in the ROI table is the spent 2021-24 OCR repricing; the override is 3.5%.",
+          "STALE ASK: the DB price history shows this unit at $1,400,000 since 2026-08-12 (~7 weeks) without a sale. A duplicate listing (500231184) carries the same ask, and a sibling (500179528) was cut to $1,368,888. The market has not accepted $1.40M.",
+          "No value signal: relative_value premium is +1.3% vs the age-adjusted D19 same-size median (41 band peers), psf_premium_vs_ura_median is +7.1% (13 cohort txns), and MMR psf_value is -4.0 / age_value -1.0. The 743 comes from trailing appreciation and liquidity, not from price.",
+          "Rent is overstated: the modelled $4,075 is the project-wide 3BR figure. URA 3BR filings at River Isles in the last 12 months give a median of $3,700 (800-900 sqft band, n=11) and $3,850 (900-1,000, n=7). Real gross yield is ~3.2% (net ~1.9%). Yield is carry, never appreciation.",
+          "Smallest 3BR format in the project (893 sqft, 2 baths; standard 3BRs run 893-1,184 sqft). At exit it competes with the 947 sqft line (asks $1.45-1.49M live) and the larger 1,066-1,184 3BRs. A compact 3BR also has the shallowest family-upgrader appeal among the 3BRs.",
+          "LRT, not MRT: the 480m figure is Riviera LRT (Punggol East loop); the nearest heavy-rail interchange is Punggol, ~1.5km. MMR's mrt +3.16 overstates connectivity.",
+          "Floor and facing unknown: PropertyGuru enrichment returned no floor_level, and River Isles has no researched stack profile. Prints on this line span ~$1,420 (01-05) to $1,500 (06-10) psf, so a low floor would make the ask even dearer.",
+          "Supply-side headwind: several River Isles 3BRs are live at once (893, 947, 1,141+ sqft; 13 DB listings), and Punggol HDB MOP cohorts feed upgraders but also compete for them. Seller competition inside the project caps the exit price at the line's clearing level."
+        ],
+        "catalysts": [
+          "DOWNSIDE RECORD: realsmart REALSCORE 4.2; 99.7% of 321 matched resale pairs profitable; avg annualized 6.1% (cached 2026-09-29, realsmart.sg/p/river-isles). This is a deep sample and strong evidence that owners here have almost never lost money. It is backward-looking (entry cohorts largely 2016-2021) and not an appreciation forecast.",
+          "Deep, transparent liquidity: 152 URA resale prints in 5 years, 18 on this exact 893 sqft line, 610 units, and buyer_pool_depth very_deep (the liquidity lever that survives clustering, std_beta +0.16). Entry and exit can both be priced precisely.",
+          "OCR region prior (realized fwd +3.7%/yr vs RCR +3.1%, CCR +1.9%). This is the baseline for any OCR asset, not a River Isles edge.",
+          "Bedroom count is genuine: bed_bands 'ok' (3BR band 850-1,450 sqft, 201 rental contracts), and the developer's mix lists 893 sqft as the entry 3BR. No relabel.",
+          "Lease is a non-issue: 99yr from Feb-2012 leaves ~85 years, ~78-80 at exit, well clear of CPF pro-rating.",
+          "Quantum fits the 'his' mandate (3BR, <=$1.8M) with ~$400k of headroom, squarely in the deepest HDB-upgrader band. Punggol Digital District / SIT next door support tenant demand, though future-infra has no measured forward power.",
+          "Negotiable to fair: the comp evidence to anchor an offer at $1.32-1.34M is public and unambiguous (Aug-25 $1.34M, Oct-25/Feb-26 $1.308M), and the listing has sat for 7 weeks."
+        ],
+        "rental_assessment": "The modelled $4,075/mo (ura_project_bed, 44 contracts) is the project-wide 3BR figure, skewed by 1,000-1,200 sqft units. Size-matched URA 3BR filings in the last 12 months: 800-900 sqft median $3,700 (n=11, range $3,400-4,100); 900-1,000 sqft median $3,850 (n=7). Use ~$3,750/mo, which is 3.2% gross and ~1.9% net on $1.40M. Rental demand is steady (PDD/SIT), but this is carry, not a return driver.",
+        "appreciation_assessment": "The trailing 7.06% URA CAGR (152 txns) is the 2021-24 Punggol repricing: the 893 line went from $1,035 to ~$1,440 psf. Since mid-2025 the line has been flat at ~$1,420-1,500 psf, and momentum is -0.55. Per the priors, trailing CAGR has no forward power, so use the OCR baseline, trimmed for a stalled line and a compact format: 3.5%/yr. Buying at +5-9% over the line's clearing price consumes 1.5-2.5 years of that growth up front.",
+        "stack_notes": "No researched profile for River Isles (stack_profile: not_researched), and floor_level is null. Not researched this run because the verdict is price-driven: 18 same-size prints already bracket the floor effect (~$1,420 psf for floors 01-05 up to ~$1,500 for 06-15). A mid/high floor would justify at most ~$1.34M on the record; a low floor, ~$1.27-1.31M.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.5,
+        "appreciation_rate_source": "OCR baseline (4.2%) trimmed for the flat 893 sqft line since mid-2025 (momentum -0.55) and compact-format exit competition; trailing 7.06% ura_5yr_cagr rejected (no forward power).",
+        "realscore": 4.2,
+        "realsmart_pct_profitable": 99.7,
+        "realsmart_annual_return_pct": 6.1
+      },
+      "source": {
+        "run_dir": "output/run_005_500224814",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-river-isles-500224814",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
