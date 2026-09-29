@@ -188,6 +188,72 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500188401",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Ground-floor 3BR at NV Residences (Pasir Ris, D18 OCR, 99LH from 2008, TOP 2013, 642 units) asking $1.81M / $1,335 psf on a stated 1,356 sqft. The psf 'discount' is a PES artifact: NV's 3BR internal sizes are 1,087-1,259 sqft (URA prints cluster at 1,184/1,227 sqft) and no 1,356 sqft unit has ever printed, so the extra ~130-170 sqft is private-enclosed-space patio counted in strata area. On quantum — the honest comp — the ask sits at/above recent mid-floor 3BR prints (1,184 sqft $1.72M Jan-26; 1,227 sqft $1.77M Jan-26, $1.80M May-26; 1,270 sqft $1.81M Jun-25) for a ground-floor unit, which usually trades at a small discount. Solid, liquid, never-lost-money development, but this unit is full price, not value.",
+      "rating_rationale": "Neutral: the development is sound (OCR, deep 642-unit book, 167 URA resales in 5yrs, REALSCORE 4.0 with 91.5% of 433 resale pairs profitable, ~500m to Pasir Ris MRT and future CRL interchange), but this specific unit offers no entry edge. The -8.9% age-adjusted and -19% vs new-launch-implied psf gaps are inflated by PES strata area (ask_below_stack_prints flag confirmed as format, not bait/bargain). On quantum it matches or exceeds recent mid-floor 3BR resales, while ground floor typically commands a discount (privacy, noise, insects) that PES garden only partly offsets for tenants/buyers. Carry is weak (2.8% gross on $4.2k URA median rent, 34 contracts). The 693 score leans on trailing 7.2% CAGR (de-weighted, momentum negative) and dev-size/buyer-pool — real liquidity support, not a price edge. Would move to Buy only at roughly <=$1.65M (below the 1,184 sqft mid-floor comps).",
+      "red_flags": [
+        "Stated 1,356 sqft includes PES patio — NV 3BR internal is 1,087-1,259 sqft; psf discount is a strata-area artifact (ask_below_stack_prints)",
+        "Ground floor: quantum $1.81M at/above recent mid-floor 3BR prints ($1.72-1.81M) — no ground-floor discount on offer",
+        "Weak carry: ~2.8% gross / 1.6% net yield",
+        "Trailing 7.2% CAGR from a 2021-26 bull run with negative momentum (-0.33) — not a forward signal",
+        "Lease 99yr from 2008 (~81-83yr left) — leasehold decay begins to bite in the exit buyer's financing math by 2032"
+      ],
+      "catalysts": [
+        "Cross Island Line Pasir Ris interchange (~500m) and Pasir Ris Town Centre/Downtown East rejuvenation support the buyer pool",
+        "Deep, liquid resale book (642 units, ~33 resales/yr) — easy exit",
+        "REALSCORE 4.0: 91.5% of 433 resale pairs profitable, avg 4.8%/yr — strong downside record",
+        "OCR region — historically the strongest realized forward region in the repo panel"
+      ],
+      "as_of": {
+        "price": 1810000,
+        "psf": 1334.81,
+        "beds": 3,
+        "sqft": 1356.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.19,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.78,
+        "nearest_mrt": "Pasir Ris",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 83
+      },
+      "agent_evaluation": {
+        "summary": "Ground-floor 3BR at NV Residences (Pasir Ris, D18 OCR, 99LH from 2008, TOP 2013, 642 units) asking $1.81M / $1,335 psf on a stated 1,356 sqft. The psf 'discount' is a PES artifact: NV's 3BR internal sizes are 1,087-1,259 sqft (URA prints cluster at 1,184/1,227 sqft) and no 1,356 sqft unit has ever printed, so the extra ~130-170 sqft is private-enclosed-space patio counted in strata area. On quantum — the honest comp — the ask sits at/above recent mid-floor 3BR prints (1,184 sqft $1.72M Jan-26; 1,227 sqft $1.77M Jan-26, $1.80M May-26; 1,270 sqft $1.81M Jun-25) for a ground-floor unit, which usually trades at a small discount. Solid, liquid, never-lost-money development, but this unit is full price, not value.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral: the development is sound (OCR, deep 642-unit book, 167 URA resales in 5yrs, REALSCORE 4.0 with 91.5% of 433 resale pairs profitable, ~500m to Pasir Ris MRT and future CRL interchange), but this specific unit offers no entry edge. The -8.9% age-adjusted and -19% vs new-launch-implied psf gaps are inflated by PES strata area (ask_below_stack_prints flag confirmed as format, not bait/bargain). On quantum it matches or exceeds recent mid-floor 3BR resales, while ground floor typically commands a discount (privacy, noise, insects) that PES garden only partly offsets for tenants/buyers. Carry is weak (2.8% gross on $4.2k URA median rent, 34 contracts). The 693 score leans on trailing 7.2% CAGR (de-weighted, momentum negative) and dev-size/buyer-pool — real liquidity support, not a price edge. Would move to Buy only at roughly <=$1.65M (below the 1,184 sqft mid-floor comps).",
+        "red_flags": [
+          "Stated 1,356 sqft includes PES patio — NV 3BR internal is 1,087-1,259 sqft; psf discount is a strata-area artifact (ask_below_stack_prints)",
+          "Ground floor: quantum $1.81M at/above recent mid-floor 3BR prints ($1.72-1.81M) — no ground-floor discount on offer",
+          "Weak carry: ~2.8% gross / 1.6% net yield",
+          "Trailing 7.2% CAGR from a 2021-26 bull run with negative momentum (-0.33) — not a forward signal",
+          "Lease 99yr from 2008 (~81-83yr left) — leasehold decay begins to bite in the exit buyer's financing math by 2032"
+        ],
+        "catalysts": [
+          "Cross Island Line Pasir Ris interchange (~500m) and Pasir Ris Town Centre/Downtown East rejuvenation support the buyer pool",
+          "Deep, liquid resale book (642 units, ~33 resales/yr) — easy exit",
+          "REALSCORE 4.0: 91.5% of 433 resale pairs profitable, avg 4.8%/yr — strong downside record",
+          "OCR region — historically the strongest realized forward region in the repo panel"
+        ],
+        "rental_assessment": "URA project 3BR median ~$4,200/mo on 34 contracts (12mo); realsmart median across types $3,550. 1,100-1,300 sqft 3BR filings cluster $4,000-4,800. Gross ~2.8%, net ~1.6% — carry only, below OCR 3BR norms.",
+        "appreciation_assessment": "Model 7.19% is trailing 5yr URA CAGR over a bull regime; momentum negative. Expect OCR baseline ~3-3.7%/yr forward; no value edge at this ask, so projected ROI (~6.7% annualized) is overstated.",
+        "stack_notes": "No profile on file. Ground floor, PES unit (strata 1,356 vs 1,184/1,227 sqft standard 3BR). Facing unknown (PropertyGuru does not serve it). Ground-floor PES in a large 2013 condo: appeals to families with young kids/pets but is a narrower resale pool than mid/high floors.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.0,
+        "realsmart_pct_profitable": 91.5,
+        "realsmart_annual_return_pct": 4.8
+      },
+      "source": {
+        "run_dir": "output/run_010_500188401",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nv-residences-500188401",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
