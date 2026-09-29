@@ -68,6 +68,76 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-castle-green-500271446",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "1,410 sqft 4BR at Castle Green (D26, 99LH from Dec-1993, TOP 1997, 664 units, ~7-min walk to Lentor TEL) asking $2.25M / $1,596 psf. The ask sits ABOVE every same-size print ever recorded (last three: $2.20M Sep-25, $2.15M Mar-26, $2.16M May-26, all floors 11-15) and ~19% above age-adjusted district peers, on a lease that drops below 60 years inside the hold window.",
+      "rating_rationale": "Price, not the project, is the problem — and the lease makes the exit worse. Same-stack-size comps (1,410 sqft) printed $2.15-2.20M ($1,525-1,560 psf) over the last 12 months, all on floors 11-15; this ask ($1,596 psf, floor unknown) is 2-5% above the record and ~19% above age-adjusted D26 peers (relative_value), so there is no value cushion — the one signal that actually predicts forward returns points the wrong way. The lease commenced Dec-1993: ~66 yrs remain today and ~59-60 at a 6-7yr exit, where CPF use and bank LTV get pro-rated for older buyers — a real problem when realsmart shows 54% of buyers here are HDB upgraders (CPF-reliant). REALSCORE 3.9 on 597 resale pairs (77.1% profitable, 6.4%/yr avg) is decent downside evidence but 23% of resales lost money, and much of the recent 7%/yr CAGR is the Lentor new-launch halo (Lentor Modern/Hills/Mansion etc. at ~$2,200+ psf) — trailing, not forward. Gross yield 2.7% (URA 5 contracts) is thin carry. Four 1,410 sqft listings are live at $2.25-2.40M, and this one has already cut from $2.50M in two months, so the seller is moving toward the print band. Would turn Neutral near ~$2.1M ($1,490 psf) and only interesting below ~$2.0M. MMR 523 (market-typical) agrees it is not a standout.",
+      "red_flags": [
+        "Ask $2.25M/$1,596 psf is above the highest-ever 1,410 sqft print ($2.20M/$1,560 psf, Sep-25); last 3 same-size prints $2.15-2.20M, all high floors",
+        "~19% premium vs age-adjusted D26 peers (relative_value) — expensive for a 29-yr-old building",
+        "99LH from 1993: ~66 yrs left now, ~59-60 at a 6-7yr exit — CPF/loan pro-ration shrinks the buyer pool (54% HDB-upgrader buyers)",
+        "23% of 597 resales unprofitable (realsmart) — not a no-loss project",
+        "Gross yield ~2.7% — weak carry",
+        "Four competing 1,410 sqft 4BR listings live at $2.25-2.40M (incl. duplicate listing 500276436)",
+        "Floor level not disclosed; recent high-price prints were all floors 11-15"
+      ],
+      "catalysts": [
+        "~590m to Lentor TEL station; Lentor estate transformation with new launches at ~$2,200+ psf creates a price umbrella for older large units",
+        "Large 664-unit site with full facilities; deep resale book (124 URA prints in 5yrs) — liquid",
+        "Seller already cut $250k (2.50M -> 2.25M) in two months — negotiable toward the print band",
+        "OCR region prior"
+      ],
+      "as_of": {
+        "price": 2250000,
+        "psf": 1595.74,
+        "beds": 4,
+        "sqft": 1410.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.34,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.72,
+        "nearest_mrt": "Lentor",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 67
+      },
+      "agent_evaluation": {
+        "summary": "1,410 sqft 4BR at Castle Green (D26, 99LH from Dec-1993, TOP 1997, 664 units, ~7-min walk to Lentor TEL) asking $2.25M / $1,596 psf. The ask sits ABOVE every same-size print ever recorded (last three: $2.20M Sep-25, $2.15M Mar-26, $2.16M May-26, all floors 11-15) and ~19% above age-adjusted district peers, on a lease that drops below 60 years inside the hold window.",
+        "rating": "Avoid",
+        "rating_rationale": "Price, not the project, is the problem — and the lease makes the exit worse. Same-stack-size comps (1,410 sqft) printed $2.15-2.20M ($1,525-1,560 psf) over the last 12 months, all on floors 11-15; this ask ($1,596 psf, floor unknown) is 2-5% above the record and ~19% above age-adjusted D26 peers (relative_value), so there is no value cushion — the one signal that actually predicts forward returns points the wrong way. The lease commenced Dec-1993: ~66 yrs remain today and ~59-60 at a 6-7yr exit, where CPF use and bank LTV get pro-rated for older buyers — a real problem when realsmart shows 54% of buyers here are HDB upgraders (CPF-reliant). REALSCORE 3.9 on 597 resale pairs (77.1% profitable, 6.4%/yr avg) is decent downside evidence but 23% of resales lost money, and much of the recent 7%/yr CAGR is the Lentor new-launch halo (Lentor Modern/Hills/Mansion etc. at ~$2,200+ psf) — trailing, not forward. Gross yield 2.7% (URA 5 contracts) is thin carry. Four 1,410 sqft listings are live at $2.25-2.40M, and this one has already cut from $2.50M in two months, so the seller is moving toward the print band. Would turn Neutral near ~$2.1M ($1,490 psf) and only interesting below ~$2.0M. MMR 523 (market-typical) agrees it is not a standout.",
+        "red_flags": [
+          "Ask $2.25M/$1,596 psf is above the highest-ever 1,410 sqft print ($2.20M/$1,560 psf, Sep-25); last 3 same-size prints $2.15-2.20M, all high floors",
+          "~19% premium vs age-adjusted D26 peers (relative_value) — expensive for a 29-yr-old building",
+          "99LH from 1993: ~66 yrs left now, ~59-60 at a 6-7yr exit — CPF/loan pro-ration shrinks the buyer pool (54% HDB-upgrader buyers)",
+          "23% of 597 resales unprofitable (realsmart) — not a no-loss project",
+          "Gross yield ~2.7% — weak carry",
+          "Four competing 1,410 sqft 4BR listings live at $2.25-2.40M (incl. duplicate listing 500276436)",
+          "Floor level not disclosed; recent high-price prints were all floors 11-15"
+        ],
+        "catalysts": [
+          "~590m to Lentor TEL station; Lentor estate transformation with new launches at ~$2,200+ psf creates a price umbrella for older large units",
+          "Large 664-unit site with full facilities; deep resale book (124 URA prints in 5yrs) — liquid",
+          "Seller already cut $250k (2.50M -> 2.25M) in two months — negotiable toward the print band",
+          "OCR region prior"
+        ],
+        "rental_assessment": "URA project-bed rent ~$5,100/mo (5 contracts, 12mo) -> ~2.7% gross, ~1.5% net. realsmart median rent $3,550 across all sizes, 3.1% est yield. Carry only; no yield case.",
+        "appreciation_assessment": "Model 7.34%/yr is a 5yr URA CAGR inflated by the 2021-25 bull run plus the Lentor new-launch halo; momentum is -0.45. Trailing CAGR has ~no forward power per the backtest. For a 66-yr lease crossing below 60 in the hold, I'd expect roughly district-typical or below (~2.5-3.5%/yr) with lease decay accelerating.",
+        "stack_notes": "No profile; floor/stack not disclosed on the listing. 1,410 sqft is the project's standard 4BR (URA rental band 1,350-1,450, bed_bands ok). Recent top prints are floors 11-15; if this is a low/mid floor the premium over comps is larger.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "Agent judgement: trailing 7.3% CAGR is bull-regime + Lentor-halo; de-weighted to ~OCR baseline less lease-decay drag for a sub-60yr lease at exit.",
+        "realscore": 3.9,
+        "realsmart_pct_profitable": 77.1,
+        "realsmart_annual_return_pct": 6.4
+      },
+      "source": {
+        "run_dir": "output/run_012_500276785",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-castle-green-500276785",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
