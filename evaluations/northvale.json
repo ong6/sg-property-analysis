@@ -112,6 +112,72 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-60220179",
         "review_file": "top200_reviewed.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A correctly-labelled 1,270 sqft 3BR (bed_bands: ok, 149 contracts) at $1.435M / $1,130 psf in a 762-unit 1998 CapitaLand estate ~460m from the Choa Chu Kang MRT/JRL interchange. It is cheap versus the D23 age-adjusted peer set (-12.8%), but that is mostly the 68-year lease being priced in. Against its own exact-size stack it is at market, not below it.",
+      "rating_rationale": "There is no discount to own comps. 24 same-size (1,259-1,356 sqft) URA prints over the last 24 months cluster around $1.40M / ~$1,105 psf, and this ask is ~2% above that with the floor unknown. The two most recent prints (Jul/Aug-26, low floor) were $883 and $968 psf, so the tape is softening rather than rising. The -12.8% age-adjusted discount to D23 peers is real but is mainly lease decay: 68 years left now, ~61 at a 7-year exit, where CPF/loan pro-rating starts to thin the next buyer pool. That is a ~1%/yr structural drag that roughly cancels the OCR/value tilt. The exit record is middling: REALSCORE 3.6 with only 62.5% of 950 resale pairs profitable (avg 4.0%/yr), a deep sample that says more than a third of past sellers lost money. The positives are real but ordinary: a deep HDB-upgrader buyer pool, 106 URA txns, the MRT/JRL interchange at Lot One, a 3.6% gross yield on 35 rental contracts, and a quantum well inside the $1.8M 'his' mandate. The seller has cut three times ($1.55M Jun, $1.52M Aug, $1.435M now), which signals negotiability. At ≤$1.38M (~$1,085 psf, at or under the stack median) it becomes a fair carry buy on a short lease, but it is not a Buy at the current ask.",
+      "red_flags": [
+        "Lease from 1995: ~68 yrs left now, ~61 at a 7yr exit. CPF/financing pro-rating for older buyers compresses the exit pool, and leasehold decay accelerates past 60 yrs",
+        "Realsmart exit record is weak: 62.5% profitable on 950 resale pairs (REALSCORE 3.6), so ~37% of past resales were at a loss",
+        "Ask ($1,130 psf) is ~2% ABOVE the 24mo same-size print median (~$1,105), not a discount. The -12.8% vs district is the lease, not a bargain",
+        "Latest same-size prints (Jul-26 $883, Aug-26 $968 psf, low floor) show softening. Floor level of this unit is unknown",
+        "1998 build with 7 x 12-storey blocks: aging facilities, sinking-fund and MCST due diligence needed; no stack profile researched",
+        "Three price cuts in 4 months ($1.55M→$1.52M→$1.435M): the seller is anchoring down, and the prior asks were above market"
+      ],
+      "catalysts": [
+        "~460m to Choa Chu Kang MRT (NSL) / future JRL interchange (JRL ~2027-28) plus Lot One mall",
+        "Deep HDB-upgrader buyer pool in CCK, with sub-$1.5M 3BR quantum among the most liquid price points in D23",
+        "Seller motivation (three cuts) implies room to buy at or under the stack median"
+      ],
+      "as_of": {
+        "price": 1435000,
+        "psf": 1129.92,
+        "beds": 3,
+        "sqft": 1270.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.93,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.6,
+        "nearest_mrt": "Choa Chu Kang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 68
+      },
+      "agent_evaluation": {
+        "summary": "A correctly-labelled 1,270 sqft 3BR (bed_bands: ok, 149 contracts) at $1.435M / $1,130 psf in a 762-unit 1998 CapitaLand estate ~460m from the Choa Chu Kang MRT/JRL interchange. It is cheap versus the D23 age-adjusted peer set (-12.8%), but that is mostly the 68-year lease being priced in. Against its own exact-size stack it is at market, not below it.",
+        "rating": "Neutral",
+        "rating_rationale": "There is no discount to own comps. 24 same-size (1,259-1,356 sqft) URA prints over the last 24 months cluster around $1.40M / ~$1,105 psf, and this ask is ~2% above that with the floor unknown. The two most recent prints (Jul/Aug-26, low floor) were $883 and $968 psf, so the tape is softening rather than rising. The -12.8% age-adjusted discount to D23 peers is real but is mainly lease decay: 68 years left now, ~61 at a 7-year exit, where CPF/loan pro-rating starts to thin the next buyer pool. That is a ~1%/yr structural drag that roughly cancels the OCR/value tilt. The exit record is middling: REALSCORE 3.6 with only 62.5% of 950 resale pairs profitable (avg 4.0%/yr), a deep sample that says more than a third of past sellers lost money. The positives are real but ordinary: a deep HDB-upgrader buyer pool, 106 URA txns, the MRT/JRL interchange at Lot One, a 3.6% gross yield on 35 rental contracts, and a quantum well inside the $1.8M 'his' mandate. The seller has cut three times ($1.55M Jun, $1.52M Aug, $1.435M now), which signals negotiability. At ≤$1.38M (~$1,085 psf, at or under the stack median) it becomes a fair carry buy on a short lease, but it is not a Buy at the current ask.",
+        "red_flags": [
+          "Lease from 1995: ~68 yrs left now, ~61 at a 7yr exit. CPF/financing pro-rating for older buyers compresses the exit pool, and leasehold decay accelerates past 60 yrs",
+          "Realsmart exit record is weak: 62.5% profitable on 950 resale pairs (REALSCORE 3.6), so ~37% of past resales were at a loss",
+          "Ask ($1,130 psf) is ~2% ABOVE the 24mo same-size print median (~$1,105), not a discount. The -12.8% vs district is the lease, not a bargain",
+          "Latest same-size prints (Jul-26 $883, Aug-26 $968 psf, low floor) show softening. Floor level of this unit is unknown",
+          "1998 build with 7 x 12-storey blocks: aging facilities, sinking-fund and MCST due diligence needed; no stack profile researched",
+          "Three price cuts in 4 months ($1.55M→$1.52M→$1.435M): the seller is anchoring down, and the prior asks were above market"
+        ],
+        "catalysts": [
+          "~460m to Choa Chu Kang MRT (NSL) / future JRL interchange (JRL ~2027-28) plus Lot One mall",
+          "Deep HDB-upgrader buyer pool in CCK, with sub-$1.5M 3BR quantum among the most liquid price points in D23",
+          "Seller motivation (three cuts) implies room to buy at or under the stack median"
+        ],
+        "rental_assessment": "3.6% gross on 35 URA 3BR contracts in 12mo ($4,300/mo; realsmart median $4,100). It is steady family rental demand near MRT/Lot One. This is carry, not an appreciation signal.",
+        "appreciation_assessment": "The data 6.9% 5yr CAGR is mostly the 2021-23 re-rating ($770→$1,100 psf). Same-size prints have been flat at ~$1,050-1,170 since late 2023 and are soft in mid-2026. With lease decay steepening, I expect ~1-2.5%/yr nominal forward, below the OCR 3.7% baseline. The ROI projections at ~6.9%/yr are too rosy.",
+        "stack_notes": "Floor not disclosed. Same-size prints show floors 11-15 at ~$1,050-1,175 psf vs floors 1-5 at ~$880-1,110. At $1,130 psf the ask is priced like a mid/high floor, so verify the floor before offering. No stack profile has been researched; the estate is 7 blocks of 12 storeys.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 2.0,
+        "appreciation_rate_source": "Northvale same-size (1,259-1,356 sqft) URA resale prints: flat ~$1,100 psf Nov-23→Aug-26 with softening latest prints. The rate is set below the OCR baseline for the 68→61yr lease decay.",
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 62.5,
+        "realsmart_annual_return_pct": 4.0
+      },
+      "source": {
+        "run_dir": "output/run_003_500035894",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-northvale-500035894",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
