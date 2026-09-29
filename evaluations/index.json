@@ -1156,6 +1156,13 @@
       "latest_date": "2026-06-08",
       "eval_count": 1
     },
+    "suites-kovan": {
+      "condo": "Suites @ Kovan",
+      "district": "D19",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-29",
+      "eval_count": 1
+    },
     "regent-park": {
       "condo": "Regent Park",
       "district": "D05",

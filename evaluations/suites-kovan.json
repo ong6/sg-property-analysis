@@ -1,0 +1,73 @@
+{
+  "condo": "Suites @ Kovan",
+  "slug": "suites-kovan",
+  "district": "D19",
+  "history": [
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "$2.19M for a 1,475 sqft '3BR' (listed; SRX gives the 3BR type as 1,679 sqft) on a high floor of Suites @ Kovan, a 16-unit, 5-storey freehold boutique block (TOP ~2010-12) 4 min from Kovan NEL. Most of the block is 366 sqft 1BR shoeboxes. No unit this size has transacted in the URA window: all 9 resale prints since Dec-21 are 1BRs or 807-1,044 sqft 2BRs.",
+      "rating_rationale": "The score of 766 rests on two artifacts. First, yield: the $9,861/mo rent (5.4% gross) is extrapolated from 1BR contracts and capped for oversize; the project's own 2BR rents are $3,300-3,800, and a Kovan 3BR realistically fetches ~$4.5-5.5k, which is ~2.5-3% gross. Second, value: the -13.9% vs the URA median compares against shoebox PSFs. Against age-adjusted D19 same-size peers the discount is only -4.4%, which is noise. The ask of $1,485 psf is ABOVE the project's only large-unit prints ($1,111 psf for 1,044 sqft in Nov-22, $1,349 for 807 sqft in Sep-22). The 8.08% CAGR comes from 9 mostly-shoebox prints, so it is story, not signal. For a 5-7yr investment hold, exit is the problem: a $2.2M 3BR in a 16-unit block with no facilities depth and zero comparable resales has a very thin buyer pool (family buyers at this quantum shop full-facility D19 condos). No realsmart data (page 404). Avoid at this price. It would only be interesting well under ~$1.3k psf, and even then liquidity caps it at Neutral.",
+      "red_flags": [
+        "Gross yield 5.4% is an artifact: rent is extrapolated from 1BR contracts and capped for oversize; real 3BR rent is ~$4.5-5.5k, ~2.5-3% gross",
+        "psf_cohort_txns=0 and no 3BR print since 2021: no comparable resale exists to price or exit against",
+        "Ask of $1,485 psf is above the project's own large-unit prints ($1,111-1,349 psf, 2022)",
+        "16-unit, 5-storey boutique, mostly 366 sqft shoeboxes, so the family buyer pool for a $2.2M unit is thin",
+        "Size conflict: listing says 1,475 sqft, SRX says the 3BR type is 1,679 sqft; verify strata area (possible roof terrace/PES)",
+        "8.08% CAGR comes from 9 mixed-size prints and is shoebox-driven, so it is story, not signal"
+      ],
+      "catalysts": [
+        "Freehold, 313m to Kovan NEL, next to Heartland Mall",
+        "D19 OCR region (forward prior ~+3.7%/yr)",
+        "CRL Hougang interchange ~1.2km (future-infra has no measured forward power)"
+      ],
+      "as_of": {
+        "price": 2190000,
+        "psf": 1484.75,
+        "beds": 3,
+        "sqft": 1475.0
+      },
+      "key_facts": {
+        "appreciation_pct": 8.08,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 5.4,
+        "nearest_mrt": "Kovan",
+        "tenure": "Freehold",
+        "remaining_lease": 999
+      },
+      "agent_evaluation": {
+        "summary": "$2.19M for a 1,475 sqft '3BR' (listed; SRX gives the 3BR type as 1,679 sqft) on a high floor of Suites @ Kovan, a 16-unit, 5-storey freehold boutique block (TOP ~2010-12) 4 min from Kovan NEL. Most of the block is 366 sqft 1BR shoeboxes. No unit this size has transacted in the URA window: all 9 resale prints since Dec-21 are 1BRs or 807-1,044 sqft 2BRs.",
+        "rating": "Avoid",
+        "rating_rationale": "The score of 766 rests on two artifacts. First, yield: the $9,861/mo rent (5.4% gross) is extrapolated from 1BR contracts and capped for oversize; the project's own 2BR rents are $3,300-3,800, and a Kovan 3BR realistically fetches ~$4.5-5.5k, which is ~2.5-3% gross. Second, value: the -13.9% vs the URA median compares against shoebox PSFs. Against age-adjusted D19 same-size peers the discount is only -4.4%, which is noise. The ask of $1,485 psf is ABOVE the project's only large-unit prints ($1,111 psf for 1,044 sqft in Nov-22, $1,349 for 807 sqft in Sep-22). The 8.08% CAGR comes from 9 mostly-shoebox prints, so it is story, not signal. For a 5-7yr investment hold, exit is the problem: a $2.2M 3BR in a 16-unit block with no facilities depth and zero comparable resales has a very thin buyer pool (family buyers at this quantum shop full-facility D19 condos). No realsmart data (page 404). Avoid at this price. It would only be interesting well under ~$1.3k psf, and even then liquidity caps it at Neutral.",
+        "red_flags": [
+          "Gross yield 5.4% is an artifact: rent is extrapolated from 1BR contracts and capped for oversize; real 3BR rent is ~$4.5-5.5k, ~2.5-3% gross",
+          "psf_cohort_txns=0 and no 3BR print since 2021: no comparable resale exists to price or exit against",
+          "Ask of $1,485 psf is above the project's own large-unit prints ($1,111-1,349 psf, 2022)",
+          "16-unit, 5-storey boutique, mostly 366 sqft shoeboxes, so the family buyer pool for a $2.2M unit is thin",
+          "Size conflict: listing says 1,475 sqft, SRX says the 3BR type is 1,679 sqft; verify strata area (possible roof terrace/PES)",
+          "8.08% CAGR comes from 9 mixed-size prints and is shoebox-driven, so it is story, not signal"
+        ],
+        "catalysts": [
+          "Freehold, 313m to Kovan NEL, next to Heartland Mall",
+          "D19 OCR region (forward prior ~+3.7%/yr)",
+          "CRL Hougang interchange ~1.2km (future-infra has no measured forward power)"
+        ],
+        "rental_assessment": "Project rental book is 1BRs at $2.2-2.5k and 2BRs at $3.3-3.8k; no 3BR contracts. The model's $9.9k is not credible. Expect ~$4.5-5.5k, i.e. ~2.5-3.0% gross, ~1.5% net.",
+        "appreciation_assessment": "No override. The 9-print, 5yr CAGR of 8.08% is size-mix-driven and trailing, with ≈0 forward power. Use the OCR/D19 district prior (~3-4%/yr) at best, discounted for boutique illiquidity on a large quantum.",
+        "stack_notes": "Stacks not researched (16 units, not worth a profile). High floor of a 5-storey block; the 3BR type is likely a top-floor/large format.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_004_25638523",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-suites-kovan-25638523",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
