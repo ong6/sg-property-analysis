@@ -54,6 +54,74 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-nuovo-500157895",
         "review_file": "cov_batch_29.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "High-floor 1,422 sqft unit at Nuovo (former EC, 297 units, TOP 2004, 99yr from May 2001 → ~74yr left) asking $1.98M / $1,392 psf. Own recent prints: 1,421 sqft $1.94M ($1,365, 31 Aug 2026), 1,389 sqft $1.939M ($1,396, Aug 2026) and $1.93M ($1,390, Jun 2026); 12-mo range ~$1,141–1,396 psf. Ask sits at the top of the same-size print band (~2% over the latest identical-size sale) and is the priciest of ~5 competing same-size listings in the DB ($1.91–1.98M). Fair value ≈ $1.92–1.94M.",
+      "rating_rationale": "Solid, liquid, never-lost-money project but no value edge at this ask. The −19.6% 'cheap vs age-adjusted D20 peers' is largely a format artifact: Nuovo is a privatised EC (64% HDB-upgrader buyers, lease started 2001 not 2004) and structurally trades below private condos — its own 2026 prints are the true comp, and the ask is at/above the top of them (1,421 sqft sold $1.94M on 31 Aug 2026). Rent is overstated by the model ($5,930 district-bedroom vs realsmart median $4,535 → ~2.8–2.9% gross, not 3.6%). REALSCORE 3.6 / 99.6% profitable on 286 resale pairs is strong downside evidence, but much of it was earned off subsidised EC launch prices a resale buyer today doesn't get. OCR region, 400m to Yio Chu Kang NSL and deep upgrader pool support exit liquidity. Would move toward Buy only at ≤ ~$1.88M (≈$1,320 psf, the 12-mo median). Mandate: over 'his' $1.8M cap; fits 'hers' budget but as a fairly-priced, not cheap, unit.",
+      "red_flags": [
+        "Ask $1,392 psf is at the top of Nuovo's own 12-mo print range and ~2% above the latest same-size sale ($1.94M, 1,421 sqft, 31 Aug 2026)",
+        "Leasehold from May 2001: ~74yr left now, ~67yr at a 7-yr exit — decay steepening into the sale",
+        "Model rent overstated: district-bedroom $5,930 vs project median $4,535 (realsmart, 12 contracts) → gross yield ~2.8–2.9%",
+        "Competing supply: ~5 other same-size Nuovo listings at $1.91–1.98M — this is the priciest",
+        "Relative-value discount vs D20 private peers is an EC-format artifact, not a real edge",
+        "No URA-CSV prints in the repo (EC excluded) — relied on realsmart public prints"
+      ],
+      "catalysts": [
+        "398m to Yio Chu Kang NSL MRT; Lentor TEL ~700m",
+        "Deep HDB-upgrader buyer pool (64% of buyers) — good exit liquidity",
+        "REALSCORE 3.6, 99.6% profitable on 286 resale pairs, avg ~5.1%/yr, 9.1yr avg hold",
+        "High floor"
+      ],
+      "as_of": {
+        "price": 1980000,
+        "psf": 1392.41,
+        "beds": 3,
+        "sqft": 1422.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.59,
+        "nearest_mrt": "Yio Chu Kang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "High-floor 1,422 sqft unit at Nuovo (former EC, 297 units, TOP 2004, 99yr from May 2001 → ~74yr left) asking $1.98M / $1,392 psf. Own recent prints: 1,421 sqft $1.94M ($1,365, 31 Aug 2026), 1,389 sqft $1.939M ($1,396, Aug 2026) and $1.93M ($1,390, Jun 2026); 12-mo range ~$1,141–1,396 psf. Ask sits at the top of the same-size print band (~2% over the latest identical-size sale) and is the priciest of ~5 competing same-size listings in the DB ($1.91–1.98M). Fair value ≈ $1.92–1.94M.",
+        "rating": "Neutral",
+        "rating_rationale": "Solid, liquid, never-lost-money project but no value edge at this ask. The −19.6% 'cheap vs age-adjusted D20 peers' is largely a format artifact: Nuovo is a privatised EC (64% HDB-upgrader buyers, lease started 2001 not 2004) and structurally trades below private condos — its own 2026 prints are the true comp, and the ask is at/above the top of them (1,421 sqft sold $1.94M on 31 Aug 2026). Rent is overstated by the model ($5,930 district-bedroom vs realsmart median $4,535 → ~2.8–2.9% gross, not 3.6%). REALSCORE 3.6 / 99.6% profitable on 286 resale pairs is strong downside evidence, but much of it was earned off subsidised EC launch prices a resale buyer today doesn't get. OCR region, 400m to Yio Chu Kang NSL and deep upgrader pool support exit liquidity. Would move toward Buy only at ≤ ~$1.88M (≈$1,320 psf, the 12-mo median). Mandate: over 'his' $1.8M cap; fits 'hers' budget but as a fairly-priced, not cheap, unit.",
+        "red_flags": [
+          "Ask $1,392 psf is at the top of Nuovo's own 12-mo print range and ~2% above the latest same-size sale ($1.94M, 1,421 sqft, 31 Aug 2026)",
+          "Leasehold from May 2001: ~74yr left now, ~67yr at a 7-yr exit — decay steepening into the sale",
+          "Model rent overstated: district-bedroom $5,930 vs project median $4,535 (realsmart, 12 contracts) → gross yield ~2.8–2.9%",
+          "Competing supply: ~5 other same-size Nuovo listings at $1.91–1.98M — this is the priciest",
+          "Relative-value discount vs D20 private peers is an EC-format artifact, not a real edge",
+          "No URA-CSV prints in the repo (EC excluded) — relied on realsmart public prints"
+        ],
+        "catalysts": [
+          "398m to Yio Chu Kang NSL MRT; Lentor TEL ~700m",
+          "Deep HDB-upgrader buyer pool (64% of buyers) — good exit liquidity",
+          "REALSCORE 3.6, 99.6% profitable on 286 resale pairs, avg ~5.1%/yr, 9.1yr avg hold",
+          "High floor"
+        ],
+        "rental_assessment": "Project median rent $4,535 (range $3,850–4,900, ~$3.39 psf/mo, 12–15 contracts) → ~$4.6–4.8k for this size, gross ~2.8–2.9%, net ~1.5%. Carry, not a thesis.",
+        "appreciation_assessment": "Median psf rose ~$889 (2019) → ~$1,334 (2026) — bull-regime trailing, de-weighted. Forward: OCR regional baseline ~3.7–4.2% less lease decay on a 22yr-old leasehold; buying at the top of the print band eats ~2–3% of it up front. No override applied.",
+        "stack_notes": "No profile; listing says High Floor only. 1,389/1,421 sqft are the project's large 3BR/4BR-ish layouts (prior listings of the same size were labelled 4BR); bed_bands unknown. High floor justifies at most a small premium over the $1.94M same-size print.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 99.6,
+        "realsmart_annual_return_pct": 5.1
+      },
+      "source": {
+        "run_dir": "output/run_008_500242211",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-nuovo-500242211",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
