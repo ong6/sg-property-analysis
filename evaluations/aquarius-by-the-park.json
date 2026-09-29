@@ -58,6 +58,72 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-aquarius-by-the-park-60152619",
         "review_file": "batch_08.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Mid-floor 1,323 sqft 3BR at $1.80M ($1,361 psf) in the 720-unit, 2000-built Aquarius By The Park, 450m from Bedok Reservoir DTL. The ask sits exactly at the median of the project's own same-size prints (8 prints at 1,324 sqft since Feb-25: $1.718M–$1.855M), so this is fair value, not a discount. It's a liquid, OCR, lease-shortening estate whose same-size prices have been flat for 18 months.",
+      "rating_rationale": "The price is right but there is no edge. The $1,361 psf ask is +0.6% vs the project's URA median and matches recent same-size prints ($1,298–1,401 psf; the Aug-26 print was $1.855M). It is only -3.5% vs the age-adjusted D16 peer median, which is too small to count as the 'cheap-vs-peers' forward signal. Positives: OCR, a deep buyer pool (720 units, 128 URA resales), a DTL MRT within walking distance, and realsmart REALSCORE 4.1 with 81.9% profitable on 783 resale pairs. That is solid downside evidence on a deep sample. But ~18% of resales lost money, same-size prices have been flat since early 2025 (1,324 sqft: $1.75–1.85M in Feb-25 vs $1.72–1.855M in 2026), and the lease is down to ~70yr (1996 start). It will be ~63–65yr at a 5–7yr exit, where the resale discount starts to steepen. The 3.07% gross yield (42 contracts) is carry, not return. The algo's 725 is carried by trailing CAGR (6.9%, backward-looking), txn volume and dev size, not by value. Fits the 'his' mandate ($1.8M, 3BR, bed band ok) as a reasonable, liquid hold, but nothing here says buy now over waiting for a softer ask. Target ~$1.70–1.72M (≈$1,290–1,300 psf, the low end of the same-size prints) before it becomes a value call.",
+      "red_flags": [
+        "Remaining lease ~70yr (99yr from 1996) — ~63–65yr at exit, where leasehold decay and financing/CPF friction for buyers start to bite",
+        "Same-size (1,324 sqft) prints flat ~18 months ($1.75–1.85M in 2025 vs $1.72–1.855M in 2026) — no momentum tailwind",
+        "18% of 783 resale pairs unprofitable per realsmart — a meaningful minority for a 26-year-old project",
+        "Oldest, most dated estate in the Bedok Reservoir cluster; resident reviews cite lax MCST enforcement, noise, and leaks — ongoing sinking-fund/upgrade risk",
+        "Stack/facing unknown (no profile; 'Middle Floor' only) — can't tell whether this is a reservoir-facing stack"
+      ],
+      "catalysts": [
+        "Bedok Reservoir DTL station ~450m; reservoir park across the road underpins family rental and resale demand",
+        "Deep, liquid resale book (128 URA resales in the cache, 783 realsmart pairs) — exit is reliable at market",
+        "Large 3BR quantum under $1.8M in OCR — sits in the thickest buyer band for HDB upgraders",
+        "Priced -10% vs the new-launch-implied fair psf ($1,518) — resale remains the affordable alternative to D16/D18 launches"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1360.54,
+        "beds": 3,
+        "sqft": 1323.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.91,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.07,
+        "nearest_mrt": "Bedok Reservoir",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "Mid-floor 1,323 sqft 3BR at $1.80M ($1,361 psf) in the 720-unit, 2000-built Aquarius By The Park, 450m from Bedok Reservoir DTL. The ask sits exactly at the median of the project's own same-size prints (8 prints at 1,324 sqft since Feb-25: $1.718M–$1.855M), so this is fair value, not a discount. It's a liquid, OCR, lease-shortening estate whose same-size prices have been flat for 18 months.",
+        "rating": "Neutral",
+        "rating_rationale": "The price is right but there is no edge. The $1,361 psf ask is +0.6% vs the project's URA median and matches recent same-size prints ($1,298–1,401 psf; the Aug-26 print was $1.855M). It is only -3.5% vs the age-adjusted D16 peer median, which is too small to count as the 'cheap-vs-peers' forward signal. Positives: OCR, a deep buyer pool (720 units, 128 URA resales), a DTL MRT within walking distance, and realsmart REALSCORE 4.1 with 81.9% profitable on 783 resale pairs. That is solid downside evidence on a deep sample. But ~18% of resales lost money, same-size prices have been flat since early 2025 (1,324 sqft: $1.75–1.85M in Feb-25 vs $1.72–1.855M in 2026), and the lease is down to ~70yr (1996 start). It will be ~63–65yr at a 5–7yr exit, where the resale discount starts to steepen. The 3.07% gross yield (42 contracts) is carry, not return. The algo's 725 is carried by trailing CAGR (6.9%, backward-looking), txn volume and dev size, not by value. Fits the 'his' mandate ($1.8M, 3BR, bed band ok) as a reasonable, liquid hold, but nothing here says buy now over waiting for a softer ask. Target ~$1.70–1.72M (≈$1,290–1,300 psf, the low end of the same-size prints) before it becomes a value call.",
+        "red_flags": [
+          "Remaining lease ~70yr (99yr from 1996) — ~63–65yr at exit, where leasehold decay and financing/CPF friction for buyers start to bite",
+          "Same-size (1,324 sqft) prints flat ~18 months ($1.75–1.85M in 2025 vs $1.72–1.855M in 2026) — no momentum tailwind",
+          "18% of 783 resale pairs unprofitable per realsmart — a meaningful minority for a 26-year-old project",
+          "Oldest, most dated estate in the Bedok Reservoir cluster; resident reviews cite lax MCST enforcement, noise, and leaks — ongoing sinking-fund/upgrade risk",
+          "Stack/facing unknown (no profile; 'Middle Floor' only) — can't tell whether this is a reservoir-facing stack"
+        ],
+        "catalysts": [
+          "Bedok Reservoir DTL station ~450m; reservoir park across the road underpins family rental and resale demand",
+          "Deep, liquid resale book (128 URA resales in the cache, 783 realsmart pairs) — exit is reliable at market",
+          "Large 3BR quantum under $1.8M in OCR — sits in the thickest buyer band for HDB upgraders",
+          "Priced -10% vs the new-launch-implied fair psf ($1,518) — resale remains the affordable alternative to D16/D18 launches"
+        ],
+        "rental_assessment": "URA project-level 3BR rent ~$4,600/mo on 42 contracts in 12 months (high confidence) → 3.07% gross, ~1.8% net. Steady family-tenant demand from the reservoir/DTL location; rent is carry, not a source of upside.",
+        "appreciation_assessment": "The 6.9% 5yr CAGR is mostly the 2021–23 catch-up (1,324 sqft went from ~$955–1,210 psf to ~$1,350–1,400) and has since plateaued. Expect roughly the OCR baseline (~3%/yr) less some lease-decay drag as the lease drops below 65yr. No override applied; the data rate overstates the forward rate.",
+        "stack_notes": "Listing says only 'Middle Floor'. No profile exists and facing isn't available from PropertyGuru. Floor tiers in the 1,324 sqft prints (01–20) show a ~$50–100 psf premium for high floors over low ones. At $1,361 psf a mid-floor unit is priced in line, not cheap. Check whether the stack faces the reservoir before offering. A reservoir-view stack would justify the ask; a pool/road-facing stack argues for ~$1.70M.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 4.1,
+        "realsmart_pct_profitable": 81.9,
+        "realsmart_annual_return_pct": 4.9
+      },
+      "source": {
+        "run_dir": "output/run_007_500255318",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-aquarius-by-the-park-500255318",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
