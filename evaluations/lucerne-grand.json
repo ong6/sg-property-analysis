@@ -1,0 +1,241 @@
+{
+  "condo": "Lucerne Grand",
+  "slug": "lucerne-grand",
+  "district": "D22",
+  "history": [
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Lucerne Grand's cheapest 3BR (883sf, $1.988M, $2,251psf harmonised) is fairly priced against the new-launch comps: about 1.5% under LakeGarden and 6% under Sora like-for-like, and next to Lakeside MRT from a strong developer. But it pays a ~14% premium over the completed Lake Grande (age-adjusted it's roughly flat), earns no rent until ~2030-31 and only breaks even in the bear case on a 6-year hold. For her it is acceptable, not good; Caspian beats it in every scenario. Out of his budget.",
+      "rating_rationale": "HIS mandate: out of budget ($1.988M vs ~$1.38M LTV-capped ceiling) - not rated. HERS: Neutral. Priced right vs the new-launch set (Sora ~$2,406 and LakeGarden ~$2,284 harmonised-equivalent vs $2,251), deep-pool quantum under $2.2M, MRT at the gate, a 570-unit project and 6 bidders for the land (CDL paid $1,132psf ppr, 10.4% over the next bid). But the ladder says the launch price is at the edge of 'good': bear breakeven needs <= ~$1.94M on a 5y hold or a 6y hold at launch price, with TOP (est. 2030, VP up to Dec 2031) eating 4-5 of the 4-7 year window with zero rent. That is the crash weakness: no rent-and-wait fallback until TOP, and a ~3.4% gross yield after TOP. The 0-5yr cohort is the repo's worst forward-return age band (still amortising the launch premium). Caspian 3BR (1,238sf, $1.92M, 98.4% profitable, 3.25% gross yield from day one) beats it in bear, base and bull. Upgrade to Buy only at <= ~$1.94M (early-bird/discounted stack) or with a firm 2030 TOP. Buy-price ladder, 3BR 883sf (bear exit = today's harmonised comp $2,285psf flat [LakeGarden harmonised and Lake Grande age-adjusted agree]; base +2.5%/yr; bull +4%/yr; net of BSD $69k, 2.18% sale agent, legal; progressive payments; rent from TOP; T-bill 1.92%): TOP 2030 -> 'good' (bear breakeven) <= $2,194psf/$1.94M for a 5y hold, $2,252/$1.99M for 6y; 'acceptable' (base beats T-bills) <= $2,349psf/$2.07M (5y). At the $1.988M launch price: bear -$52k (5y) / +$1k (6y) / +$54k (7y); base beats T-bills by +$95k to +$230k. If TOP slips to Dec 2031: good <= $2,151-2,240psf ($1.90-1.98M), bear -$92k to -$10k. Same framework on Caspian 3BR 1,238sf at $1.92M (rent from day one): bear +$129k to +$227k, base +$177k to +$298k vs T-bills - Caspian wins every scenario.",
+      "red_flags": [
+        "No rent until TOP (Stacked est. 2030; VP date cited as Dec 2031): the 4-7yr SSD-driven window is mostly construction, so there is no rent-and-wait fallback in a crash",
+        "Launch price only breaks even in the bear case at ~6y hold; 'good' entry is <= ~$1.94M",
+        "Supply: Town Hall Link JLD white site (up to 1,200 homes, tender closes 17 Nov 2026) and a 735-unit Jurong East Ave 1 EC on the 2H2026 GLS list will compete at exit",
+        "883sf 3BR is compact (harmonised); larger completed 3BRs nearby (Caspian 1,238sf, Lake Grande ~926sf) sell for less",
+        "Exit before TOP means a sub-sale into a thinner buyer pool"
+      ],
+      "catalysts": [
+        "Next to Lakeside MRT (EWL) with a 10,764sf retail podium",
+        "CDL developer; 570 units = liquid resale book later",
+        "Priced under the still-selling D22 new launches like-for-like (harmonised)",
+        "JLD long-run (CRL JLD station ~2032, JRL from ~mid-2028) - narrative only, no measured forward power",
+        "Jurong West supply was thin at award (327 unsold units); ~2,890 HDB flats reach MOP within 5 years (upgrader demand)"
+      ],
+      "as_of": {
+        "price": 1987633,
+        "psf": 2251.0,
+        "beds": 3,
+        "sqft": 883.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 2.41,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 90
+      },
+      "agent_evaluation": {
+        "summary": "Lucerne Grand's cheapest 3BR (883sf, $1.988M, $2,251psf harmonised) is fairly priced against the new-launch comps: about 1.5% under LakeGarden and 6% under Sora like-for-like, and next to Lakeside MRT from a strong developer. But it pays a ~14% premium over the completed Lake Grande (age-adjusted it's roughly flat), earns no rent until ~2030-31 and only breaks even in the bear case on a 6-year hold. For her it is acceptable, not good; Caspian beats it in every scenario. Out of his budget.",
+        "rating": "Neutral",
+        "rating_rationale": "HIS mandate: out of budget ($1.988M vs ~$1.38M LTV-capped ceiling) - not rated. HERS: Neutral. Priced right vs the new-launch set (Sora ~$2,406 and LakeGarden ~$2,284 harmonised-equivalent vs $2,251), deep-pool quantum under $2.2M, MRT at the gate, a 570-unit project and 6 bidders for the land (CDL paid $1,132psf ppr, 10.4% over the next bid). But the ladder says the launch price is at the edge of 'good': bear breakeven needs <= ~$1.94M on a 5y hold or a 6y hold at launch price, with TOP (est. 2030, VP up to Dec 2031) eating 4-5 of the 4-7 year window with zero rent. That is the crash weakness: no rent-and-wait fallback until TOP, and a ~3.4% gross yield after TOP. The 0-5yr cohort is the repo's worst forward-return age band (still amortising the launch premium). Caspian 3BR (1,238sf, $1.92M, 98.4% profitable, 3.25% gross yield from day one) beats it in bear, base and bull. Upgrade to Buy only at <= ~$1.94M (early-bird/discounted stack) or with a firm 2030 TOP. Buy-price ladder, 3BR 883sf (bear exit = today's harmonised comp $2,285psf flat [LakeGarden harmonised and Lake Grande age-adjusted agree]; base +2.5%/yr; bull +4%/yr; net of BSD $69k, 2.18% sale agent, legal; progressive payments; rent from TOP; T-bill 1.92%): TOP 2030 -> 'good' (bear breakeven) <= $2,194psf/$1.94M for a 5y hold, $2,252/$1.99M for 6y; 'acceptable' (base beats T-bills) <= $2,349psf/$2.07M (5y). At the $1.988M launch price: bear -$52k (5y) / +$1k (6y) / +$54k (7y); base beats T-bills by +$95k to +$230k. If TOP slips to Dec 2031: good <= $2,151-2,240psf ($1.90-1.98M), bear -$92k to -$10k. Same framework on Caspian 3BR 1,238sf at $1.92M (rent from day one): bear +$129k to +$227k, base +$177k to +$298k vs T-bills - Caspian wins every scenario.",
+        "red_flags": [
+          "No rent until TOP (Stacked est. 2030; VP date cited as Dec 2031): the 4-7yr SSD-driven window is mostly construction, so there is no rent-and-wait fallback in a crash",
+          "Launch price only breaks even in the bear case at ~6y hold; 'good' entry is <= ~$1.94M",
+          "Supply: Town Hall Link JLD white site (up to 1,200 homes, tender closes 17 Nov 2026) and a 735-unit Jurong East Ave 1 EC on the 2H2026 GLS list will compete at exit",
+          "883sf 3BR is compact (harmonised); larger completed 3BRs nearby (Caspian 1,238sf, Lake Grande ~926sf) sell for less",
+          "Exit before TOP means a sub-sale into a thinner buyer pool"
+        ],
+        "catalysts": [
+          "Next to Lakeside MRT (EWL) with a 10,764sf retail podium",
+          "CDL developer; 570 units = liquid resale book later",
+          "Priced under the still-selling D22 new launches like-for-like (harmonised)",
+          "JLD long-run (CRL JLD station ~2032, JRL from ~mid-2028) - narrative only, no measured forward power",
+          "Jurong West supply was thin at award (327 unsold units); ~2,890 HDB flats reach MOP within 5 years (upgrader demand)"
+        ],
+        "rental_assessment": "Real URA rents (Apr-25 to Aug-26): Lake Grande 3BR 900-1,000sf $5,500 median (40 contracts), J Gateway 3BR 900-1,000sf $6,000 (91), Lakeville $5,200 (41). Assume ~$5,600 for an 883sf new MRT-linked 3BR = ~3.4% gross at $1.988M - just under the 3.5% rent-and-wait bar, and NO rent at all until TOP (Stacked est. 2030; one source says VP Dec 2031). The algo's $3,991 district_bedroom rent is synthetic and too low; ignore its 2.4% yield.",
+        "appreciation_assessment": "Comps (URA D22 prints Oct-24 to Sep-26, same size band; pre-harmonised comps grossed /0.95 because Lucerne's GLS tender launched 8 Apr 2025, after the 1 Sep 2022 GLS harmonisation cut-off): 3BR 850-1,030sf - Sora new sale $2,286 med (n18) = ~$2,406 harmonised; LakeGarden new sale $2,170 (n20) = ~$2,284; Lake Grande resale (2019) $1,880 (n13) = ~$1,979; Lakeville $1,849 (n6); J Gateway $2,122 (n12); Caspian $1,542 (n10). 4BR 1,100-1,300sf - Sora $2,266 (n5) = ~$2,385; LakeGarden $2,196 (n37) = ~$2,312; J'den $2,550 (n4) = ~$2,684; Lake Grande $1,931 (n5) = ~$2,033; Lakeville $1,913 (n19). realsmart: Lucerne Grand not in realsmart sitemap (new launch, no score). Comps: Lake Grande REALSCORE 3.6, 100% profitable on 191 resales, 3.8%/yr; Lakeville 3.3/98.0%/3.3%; J Gateway 3.5/99.2%/3.2%; Lakefront 3.3/97.6%/3.6%; Caspian 4.1/98.4% on 575 resales/6.1%. Sora, LakeGarden, J'den: uncompleted, no score. No project resale prints exist; the 4.2% regional baseline in factual_data is a placeholder, not evidence.",
+        "stack_notes": "No public stack-by-stack guidance: Stacked Homes' stack verdict is paywalled and no source names lake-facing vs west-sun blocks (unconfirmed). What is sourced (stackedhomes.com/lucerne-grand-condo-review): five 17-storey blocks ring a central pool; the elevated EWL viaduct passes over the pets garden, further from the blocks than the tennis court, so train noise looks modest; HDB across Jurong West St 51/Kang Ching Rd; Boon Lay Way and Lakeside Drive are the road edges. At 17 storeys there is no 'high floor' premium tier to exploit, and Jurong Lake views from Lakeside Drive are partly screened by existing Lakeside condos (Lakeville/Lakefront/Lake Grande sit between the site and the lake) - do not pay a view premium without seeing the site plan. Prefer inward (pool) or N-S facings on mid floors; avoid units over the retail podium/loading bay and those facing the Boon Lay Way/viaduct edge.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_013",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lucerne-grand-500268314",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "low",
+      "summary": "The 3BR+study (947-1,001sf) is priced from roughly $2.2M-$2.33M on agent listings, at or above her deep-pool line of ~$2.2M, with the same TOP and no-rent problem as the base 3BR. There is no official price for this type; the $2.2M listing at $2,198psf sits below the base 3BR's psf and needs verifying.",
+      "rating_rationale": "HERS: Neutral, low confidence. No official price for the 3BR+study type (947-1,001sf, 128 units). Agent listings cluster at $2.33M ($2,326psf) with a $2.2M outlier. At $2.33M the quantum leaves the deepest pool (<~$2.2M) and the psf is ~2% over Sora's harmonised-equivalent 3BR and ~2% over LakeGarden's, so it is not cheap for the format. Rent ~$6,000 = ~3.1% gross after TOP. The $2.2M/1,001sf ask ($2,198psf) sits below the 883sf base unit's psf: a size-relative anomaly, so verify it against CDL's price list before crediting it. HIS: out of budget.",
+      "red_flags": [
+        "Unverified price: no official 3BR+study figure",
+        "Quantum ~$2.33M is above the deepest-pool band",
+        "Same TOP 2030-31 no-rent problem"
+      ],
+      "catalysts": [
+        "Same location and developer positives as the 3BR"
+      ],
+      "as_of": {
+        "price": 2199999,
+        "psf": 2197.8,
+        "beds": 3,
+        "sqft": 1001.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 2.47,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 101
+      },
+      "agent_evaluation": {
+        "summary": "The 3BR+study (947-1,001sf) is priced from roughly $2.2M-$2.33M on agent listings, at or above her deep-pool line of ~$2.2M, with the same TOP and no-rent problem as the base 3BR. There is no official price for this type; the $2.2M listing at $2,198psf sits below the base 3BR's psf and needs verifying.",
+        "rating": "Neutral",
+        "rating_rationale": "HERS: Neutral, low confidence. No official price for the 3BR+study type (947-1,001sf, 128 units). Agent listings cluster at $2.33M ($2,326psf) with a $2.2M outlier. At $2.33M the quantum leaves the deepest pool (<~$2.2M) and the psf is ~2% over Sora's harmonised-equivalent 3BR and ~2% over LakeGarden's, so it is not cheap for the format. Rent ~$6,000 = ~3.1% gross after TOP. The $2.2M/1,001sf ask ($2,198psf) sits below the 883sf base unit's psf: a size-relative anomaly, so verify it against CDL's price list before crediting it. HIS: out of budget.",
+        "red_flags": [
+          "Unverified price: no official 3BR+study figure",
+          "Quantum ~$2.33M is above the deepest-pool band",
+          "Same TOP 2030-31 no-rent problem"
+        ],
+        "catalysts": [
+          "Same location and developer positives as the 3BR"
+        ],
+        "rental_assessment": "J Gateway 3BR 900-1,000sf $6,000 median (91 contracts); ~3.1% gross at $2.33M, after TOP only.",
+        "appreciation_assessment": "Comps (URA D22 prints Oct-24 to Sep-26, same size band; pre-harmonised comps grossed /0.95 because Lucerne's GLS tender launched 8 Apr 2025, after the 1 Sep 2022 GLS harmonisation cut-off): 3BR 850-1,030sf - Sora new sale $2,286 med (n18) = ~$2,406 harmonised; LakeGarden new sale $2,170 (n20) = ~$2,284; Lake Grande resale (2019) $1,880 (n13) = ~$1,979; Lakeville $1,849 (n6); J Gateway $2,122 (n12); Caspian $1,542 (n10). 4BR 1,100-1,300sf - Sora $2,266 (n5) = ~$2,385; LakeGarden $2,196 (n37) = ~$2,312; J'den $2,550 (n4) = ~$2,684; Lake Grande $1,931 (n5) = ~$2,033; Lakeville $1,913 (n19).",
+        "stack_notes": "No public stack-by-stack guidance: Stacked Homes' stack verdict is paywalled and no source names lake-facing vs west-sun blocks (unconfirmed). What is sourced (stackedhomes.com/lucerne-grand-condo-review): five 17-storey blocks ring a central pool; the elevated EWL viaduct passes over the pets garden, further from the blocks than the tennis court, so train noise looks modest; HDB across Jurong West St 51/Kang Ching Rd; Boon Lay Way and Lakeside Drive are the road edges. At 17 storeys there is no 'high floor' premium tier to exploit, and Jurong Lake views from Lakeside Drive are partly screened by existing Lakeside condos (Lakeville/Lakefront/Lake Grande sit between the site and the lake) - do not pay a view premium without seeing the site plan. Prefer inward (pool) or N-S facings on mid floors; avoid units over the retail podium/loading bay and those facing the Boon Lay Way/viaduct edge.",
+        "confidence": "low",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_013",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lucerne-grand-60127967",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "This listing (4BR, 1,140sf, $2.508M) matches no published unit type: 4BR Premium starts at 1,152sf and $2.788M. Treat it as a mislabelled or bait ask.",
+      "rating_rationale": "The published mix (Stacked Homes review) has 4BR Premium at 1,152-1,195sf from $2.788M ($2,420psf), plus 4BR+Study at 1,345sf and 4BR+Ent at 1,432sf. There is no 1,140sf 4BR. This PropertyGuru ask ($2,200psf) is 9% under CDL's official 4BR psf, which fits the verify-first rule for bait or mislabelling. It is not a real entry price; see the 1,152sf row for the 4BR call.",
+      "red_flags": [
+        "Unit size not in the developer's published mix",
+        "Ask 9% under the official 4BR psf"
+      ],
+      "catalysts": [],
+      "as_of": {
+        "price": 2508000,
+        "psf": 2200.0,
+        "beds": 4,
+        "sqft": 1140.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 2.6,
+        "nearest_mrt": null,
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 101
+      },
+      "agent_evaluation": {
+        "summary": "This listing (4BR, 1,140sf, $2.508M) matches no published unit type: 4BR Premium starts at 1,152sf and $2.788M. Treat it as a mislabelled or bait ask.",
+        "rating": "Avoid",
+        "rating_rationale": "The published mix (Stacked Homes review) has 4BR Premium at 1,152-1,195sf from $2.788M ($2,420psf), plus 4BR+Study at 1,345sf and 4BR+Ent at 1,432sf. There is no 1,140sf 4BR. This PropertyGuru ask ($2,200psf) is 9% under CDL's official 4BR psf, which fits the verify-first rule for bait or mislabelling. It is not a real entry price; see the 1,152sf row for the 4BR call.",
+        "red_flags": [
+          "Unit size not in the developer's published mix",
+          "Ask 9% under the official 4BR psf"
+        ],
+        "catalysts": [],
+        "rental_assessment": "n/a - verify format first",
+        "appreciation_assessment": "Comps (URA D22 prints Oct-24 to Sep-26, same size band; pre-harmonised comps grossed /0.95 because Lucerne's GLS tender launched 8 Apr 2025, after the 1 Sep 2022 GLS harmonisation cut-off): 3BR 850-1,030sf - Sora new sale $2,286 med (n18) = ~$2,406 harmonised; LakeGarden new sale $2,170 (n20) = ~$2,284; Lake Grande resale (2019) $1,880 (n13) = ~$1,979; Lakeville $1,849 (n6); J Gateway $2,122 (n12); Caspian $1,542 (n10). 4BR 1,100-1,300sf - Sora $2,266 (n5) = ~$2,385; LakeGarden $2,196 (n37) = ~$2,312; J'den $2,550 (n4) = ~$2,684; Lake Grande $1,931 (n5) = ~$2,033; Lakeville $1,913 (n19).",
+        "stack_notes": "No public stack-by-stack guidance: Stacked Homes' stack verdict is paywalled and no source names lake-facing vs west-sun blocks (unconfirmed). What is sourced (stackedhomes.com/lucerne-grand-condo-review): five 17-storey blocks ring a central pool; the elevated EWL viaduct passes over the pets garden, further from the blocks than the tennis court, so train noise looks modest; HDB across Jurong West St 51/Kang Ching Rd; Boon Lay Way and Lakeside Drive are the road edges. At 17 storeys there is no 'high floor' premium tier to exploit, and Jurong Lake views from Lakeside Drive are partly screened by existing Lakeside condos (Lakeville/Lakefront/Lake Grande sit between the site and the lake) - do not pay a view premium without seeing the site plan. Prefer inward (pool) or N-S facings on mid floors; avoid units over the retail podium/loading bay and those facing the Boon Lay Way/viaduct edge.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_013",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lucerne-grand-500206852",
+        "review_file": "raw_analysis.json"
+      }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "4BR Premium (1,152sf from $2.788M, $2,420psf) is the weak format here. It is above the deep buyer pool, yields ~3.0% gross, is a 47-unit niche, and its launch psf sits above every like-for-like D22 4BR comp except J'den. The bear case loses $94k-$230k over 5-7 years and the base case barely beats T-bills. For her it is not 'whichever makes the most money'.",
+      "rating_rationale": "HERS: Avoid. At $2,420psf harmonised the 4BR Premium sits above Sora 4BR (~$2,385 harmonised-equivalent), LakeGarden (~$2,312) and age-adjusted Lake Grande (~$2,356); only J'den (~$2,684) is dearer, and J'den is an integrated mall site. The quantum of $2.788M+ is well outside the deepest pool (<~$2.2M) and sits in her envelope only with the larger gift. Rent is ~$7,000 (Lake Grande 4BR 1,100-1,200sf, 11 contracts; J Gateway $7,000-7,200), so ~3.0% gross after TOP, which fails the 3.5% crash rule. There are only 47 Premium units. Ladder (bear exit $2,330psf flat, base +2.5%/yr, TOP 2030): good <= $2,230-2,342psf ($2.57-2.70M); acceptable <= $2,387psf/$2.75M for a 5y hold. At $2.788M: bear -$230k/-$162k/-$94k (5/6/7y); base -$42k/+$41k/+$125k vs T-bills. The official 4BR price is at or above 'acceptable' and well above 'good'. Her 3BR option or Caspian makes more money with less tail risk. The $2.65M/1,152sf PropertyGuru ask is below the official $2.788M; verify before believing it. Even at $2.65M it is only 'acceptable' on a 6y+ hold.",
+      "red_flags": [
+        "Quantum $2.79M+ is above the deep buyer pool",
+        "~3.0% gross yield after TOP, which fails the 3.5% rent-and-wait rule",
+        "Thin format (47 Premium units)",
+        "Launch psf above like-for-like Sora/LakeGarden 4BR",
+        "Bear case -$94k to -$230k"
+      ],
+      "catalysts": [
+        "MRT-linked, CDL; the family 4BR segment is under-supplied in Lakeside new launches"
+      ],
+      "as_of": {
+        "price": 2650000,
+        "psf": 2300.35,
+        "beds": 4,
+        "sqft": 1152.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 2.48,
+        "nearest_mrt": "Lakeside",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 101
+      },
+      "agent_evaluation": {
+        "summary": "4BR Premium (1,152sf from $2.788M, $2,420psf) is the weak format here. It is above the deep buyer pool, yields ~3.0% gross, is a 47-unit niche, and its launch psf sits above every like-for-like D22 4BR comp except J'den. The bear case loses $94k-$230k over 5-7 years and the base case barely beats T-bills. For her it is not 'whichever makes the most money'.",
+        "rating": "Avoid",
+        "rating_rationale": "HERS: Avoid. At $2,420psf harmonised the 4BR Premium sits above Sora 4BR (~$2,385 harmonised-equivalent), LakeGarden (~$2,312) and age-adjusted Lake Grande (~$2,356); only J'den (~$2,684) is dearer, and J'den is an integrated mall site. The quantum of $2.788M+ is well outside the deepest pool (<~$2.2M) and sits in her envelope only with the larger gift. Rent is ~$7,000 (Lake Grande 4BR 1,100-1,200sf, 11 contracts; J Gateway $7,000-7,200), so ~3.0% gross after TOP, which fails the 3.5% crash rule. There are only 47 Premium units. Ladder (bear exit $2,330psf flat, base +2.5%/yr, TOP 2030): good <= $2,230-2,342psf ($2.57-2.70M); acceptable <= $2,387psf/$2.75M for a 5y hold. At $2.788M: bear -$230k/-$162k/-$94k (5/6/7y); base -$42k/+$41k/+$125k vs T-bills. The official 4BR price is at or above 'acceptable' and well above 'good'. Her 3BR option or Caspian makes more money with less tail risk. The $2.65M/1,152sf PropertyGuru ask is below the official $2.788M; verify before believing it. Even at $2.65M it is only 'acceptable' on a 6y+ hold.",
+        "red_flags": [
+          "Quantum $2.79M+ is above the deep buyer pool",
+          "~3.0% gross yield after TOP, which fails the 3.5% rent-and-wait rule",
+          "Thin format (47 Premium units)",
+          "Launch psf above like-for-like Sora/LakeGarden 4BR",
+          "Bear case -$94k to -$230k"
+        ],
+        "catalysts": [
+          "MRT-linked, CDL; the family 4BR segment is under-supplied in Lakeside new launches"
+        ],
+        "rental_assessment": "Lake Grande 4BR 1,100-1,200sf $7,000 median (11); J Gateway 4BR 1,200-1,300sf $7,000 (16). ~3.0% gross at $2.788M, from TOP only.",
+        "appreciation_assessment": "Comps (URA D22 prints Oct-24 to Sep-26, same size band; pre-harmonised comps grossed /0.95 because Lucerne's GLS tender launched 8 Apr 2025, after the 1 Sep 2022 GLS harmonisation cut-off): 3BR 850-1,030sf - Sora new sale $2,286 med (n18) = ~$2,406 harmonised; LakeGarden new sale $2,170 (n20) = ~$2,284; Lake Grande resale (2019) $1,880 (n13) = ~$1,979; Lakeville $1,849 (n6); J Gateway $2,122 (n12); Caspian $1,542 (n10). 4BR 1,100-1,300sf - Sora $2,266 (n5) = ~$2,385; LakeGarden $2,196 (n37) = ~$2,312; J'den $2,550 (n4) = ~$2,684; Lake Grande $1,931 (n5) = ~$2,033; Lakeville $1,913 (n19). realsmart: Lucerne Grand not in realsmart sitemap (new launch, no score). Comps: Lake Grande REALSCORE 3.6, 100% profitable on 191 resales, 3.8%/yr; Lakeville 3.3/98.0%/3.3%; J Gateway 3.5/99.2%/3.2%; Lakefront 3.3/97.6%/3.6%; Caspian 4.1/98.4% on 575 resales/6.1%. Sora, LakeGarden, J'den: uncompleted, no score.",
+        "stack_notes": "No public stack-by-stack guidance: Stacked Homes' stack verdict is paywalled and no source names lake-facing vs west-sun blocks (unconfirmed). What is sourced (stackedhomes.com/lucerne-grand-condo-review): five 17-storey blocks ring a central pool; the elevated EWL viaduct passes over the pets garden, further from the blocks than the tennis court, so train noise looks modest; HDB across Jurong West St 51/Kang Ching Rd; Boon Lay Way and Lakeside Drive are the road edges. At 17 storeys there is no 'high floor' premium tier to exploit, and Jurong Lake views from Lakeside Drive are partly screened by existing Lakeside condos (Lakeville/Lakefront/Lake Grande sit between the site and the lake) - do not pay a view premium without seeing the site plan. Prefer inward (pool) or N-S facings on mid floors; avoid units over the retail podium/loading bay and those facing the Boon Lay Way/viaduct edge.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": null,
+        "realsmart_pct_profitable": null,
+        "realsmart_annual_return_pct": null
+      },
+      "source": {
+        "run_dir": "output/run_013",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-lucerne-grand-500166800",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}

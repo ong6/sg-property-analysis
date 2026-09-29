@@ -2514,6 +2514,13 @@
       "latest_date": "2026-06-08",
       "eval_count": 1
     },
+    "lucerne-grand": {
+      "condo": "Lucerne Grand",
+      "district": "D22",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-09-29",
+      "eval_count": 4
+    },
     "casa-sarina": {
       "condo": "Casa Sarina",
       "district": "D14",
