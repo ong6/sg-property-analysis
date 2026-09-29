@@ -150,6 +150,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-clearwater-25392133",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "3BR 1,335 sqft mid-floor unit at The Clearwater (D16, 420 units, 99yr from 1997, TOP 2001), 284m from Bedok Reservoir DTL, asking $1.888M / $1,414 psf. That is exactly the market: the five most recent same-size (1,335–1,367 sqft) prints from Jun-2025 to Jan-2026 cleared at $1.87–1.95M ($1,386–1,426 psf), mostly on floors 6–10. The age-adjusted district benchmark puts it at −1.7%, so it isn't cheap. The exit record is strong, the resale market is deep, and rent covers a 3.1% gross carry. The lease is the drag: about 70 years left today and about 63–65 at a 5–7yr exit.",
+      "rating_rationale": "The price is fair but has no value edge. $1,414 psf matches the project's own recent prints for this size ($1.87–1.88M for 1,335 sqft in Jun–Nov 2025), and relative_value is −1.7% vs age-adjusted D16 peers. Cheap-vs-district-peers is the robust forward signal, and it is missing here. What drives the 701 score is mostly trailing appreciation (5.8% CAGR, de-weighted), the MRT, and transaction depth. Transaction depth is real, and the downside is well evidenced: REALSCORE 3.7, 87.1% of 436 resale pairs profitable, 5.1%/yr average. Against that, the lease falls to ~63–65yr by exit, which thins the next buyer's CPF/financing pool, and prices have already re-rated about 30% since late 2021. At least four other listings show the same 3BR/1,335 sqft at $1.89M after repeated price cuts. That points to seller overhang, so a buyer has room to negotiate towards ~$1.80–1.83M, which also brings it inside the his-mandate budget. It would still only be a fair-price unit at that level, not a Buy.",
+      "red_flags": [
+        "No discount: $1,414 psf is in line with the project's own last-12-month same-size prints ($1,386–1,426 psf); −1.7% vs age-adjusted D16 median",
+        "99yr lease from 1997: ~70yr left now, ~63–65yr at a 5–7yr exit, so the next buyer's financing/CPF pool narrows and lease decay accelerates",
+        "Price already up ~30% since Dec-2021 (1,335 sqft: $1.44M then, $1.88M in 2025); trailing momentum is story, not a forward signal",
+        "Several identical 3BR/1,335 sqft listings at $1.89M with 3–6 price cuts each: supply overhang, soft asking market",
+        "$1.888M is ~5% over the his-mandate $1.8M ceiling unless negotiated down",
+        "Aged 2001 build: maintenance/upgrading cost exposure"
+      ],
+      "catalysts": [
+        "284m to Bedok Reservoir DTL station, opposite Bedok Reservoir Park",
+        "Deep, liquid resale market: 69 URA prints in ~5yr, 420 units, mostly 3BR stock (304 units), so the exit is proven",
+        "Downside record: 87.1% of 436 resale pairs profitable (REALSCORE 3.7, 5.1%/yr average)",
+        "OCR region, the strongest measured forward region",
+        "Solid rent evidence: $4,925/mo from 28 URA 3BR contracts, 3.1% gross (carry only)",
+        "Seller overhang gives negotiating leverage below $1.85M"
+      ],
+      "as_of": {
+        "price": 1888000,
+        "psf": 1414.23,
+        "beds": 3,
+        "sqft": 1335.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.83,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.13,
+        "nearest_mrt": "Bedok Reservoir",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 72
+      },
+      "agent_evaluation": {
+        "summary": "3BR 1,335 sqft mid-floor unit at The Clearwater (D16, 420 units, 99yr from 1997, TOP 2001), 284m from Bedok Reservoir DTL, asking $1.888M / $1,414 psf. That is exactly the market: the five most recent same-size (1,335–1,367 sqft) prints from Jun-2025 to Jan-2026 cleared at $1.87–1.95M ($1,386–1,426 psf), mostly on floors 6–10. The age-adjusted district benchmark puts it at −1.7%, so it isn't cheap. The exit record is strong, the resale market is deep, and rent covers a 3.1% gross carry. The lease is the drag: about 70 years left today and about 63–65 at a 5–7yr exit.",
+        "rating": "Neutral",
+        "rating_rationale": "The price is fair but has no value edge. $1,414 psf matches the project's own recent prints for this size ($1.87–1.88M for 1,335 sqft in Jun–Nov 2025), and relative_value is −1.7% vs age-adjusted D16 peers. Cheap-vs-district-peers is the robust forward signal, and it is missing here. What drives the 701 score is mostly trailing appreciation (5.8% CAGR, de-weighted), the MRT, and transaction depth. Transaction depth is real, and the downside is well evidenced: REALSCORE 3.7, 87.1% of 436 resale pairs profitable, 5.1%/yr average. Against that, the lease falls to ~63–65yr by exit, which thins the next buyer's CPF/financing pool, and prices have already re-rated about 30% since late 2021. At least four other listings show the same 3BR/1,335 sqft at $1.89M after repeated price cuts. That points to seller overhang, so a buyer has room to negotiate towards ~$1.80–1.83M, which also brings it inside the his-mandate budget. It would still only be a fair-price unit at that level, not a Buy.",
+        "red_flags": [
+          "No discount: $1,414 psf is in line with the project's own last-12-month same-size prints ($1,386–1,426 psf); −1.7% vs age-adjusted D16 median",
+          "99yr lease from 1997: ~70yr left now, ~63–65yr at a 5–7yr exit, so the next buyer's financing/CPF pool narrows and lease decay accelerates",
+          "Price already up ~30% since Dec-2021 (1,335 sqft: $1.44M then, $1.88M in 2025); trailing momentum is story, not a forward signal",
+          "Several identical 3BR/1,335 sqft listings at $1.89M with 3–6 price cuts each: supply overhang, soft asking market",
+          "$1.888M is ~5% over the his-mandate $1.8M ceiling unless negotiated down",
+          "Aged 2001 build: maintenance/upgrading cost exposure"
+        ],
+        "catalysts": [
+          "284m to Bedok Reservoir DTL station, opposite Bedok Reservoir Park",
+          "Deep, liquid resale market: 69 URA prints in ~5yr, 420 units, mostly 3BR stock (304 units), so the exit is proven",
+          "Downside record: 87.1% of 436 resale pairs profitable (REALSCORE 3.7, 5.1%/yr average)",
+          "OCR region, the strongest measured forward region",
+          "Solid rent evidence: $4,925/mo from 28 URA 3BR contracts, 3.1% gross (carry only)",
+          "Seller overhang gives negotiating leverage below $1.85M"
+        ],
+        "rental_assessment": "$4,925/mo from 28 URA 3BR contracts in 12mo (confidence 0.95), about 3.1% gross and 1.85% net. Credible and typical for an OCR resale 3BR. Counted as carry, not as appreciation.",
+        "appreciation_assessment": "Trailing 5yr CAGR of 5.83% on 69 txns is bull-regime momentum and is de-weighted. A realistic forward view is around the OCR baseline (~3–3.7%/yr) minus lease drag at 70yr remaining, so roughly 2.5–3.5%/yr. The model's 5.6% annualised ROI is optimistic.",
+        "stack_notes": "No profile researched. Listing gives 'Middle Floor' only. Same-size recent prints on floors 6–10 cluster at $1,386–1,409 psf, and 11–15 at $1,426–1,476, so a mid floor at $1,414 is fully priced.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.2,
+        "appreciation_rate_source": "OCR forward baseline adjusted for ~70yr remaining lease; trailing 5.8% CAGR de-weighted per priors",
+        "realscore": 3.7,
+        "realsmart_pct_profitable": 87.1,
+        "realsmart_annual_return_pct": 5.1
+      },
+      "source": {
+        "run_dir": "output/run_009_500249347",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-clearwater-500249347",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
