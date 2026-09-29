@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24",
+  "updated_at": "2026-09-29",
   "condos": {
     "blossom-residences": {
       "condo": "Blossom Residences",
@@ -235,9 +235,9 @@
     "rivervale-crest": {
       "condo": "Rivervale Crest",
       "district": "D19",
-      "latest_rating": "Avoid",
-      "latest_date": "2026-07-29",
-      "eval_count": 5
+      "latest_rating": "Neutral",
+      "latest_date": "2026-09-29",
+      "eval_count": 6
     },
     "sims-urban-oasis": {
       "condo": "Sims Urban Oasis",
@@ -2689,6 +2689,13 @@
       "latest_date": "2026-06-08",
       "eval_count": 1
     },
+    "maysprings": {
+      "condo": "Maysprings",
+      "district": "D23",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-09-29",
+      "eval_count": 1
+    },
     "27-lor-32-geylang-singapore-398285": {
       "condo": "27 Lor 32 Geylang, Singapore 398285",
       "district": "D14",
@@ -2931,8 +2938,8 @@
       "condo": "Northvale",
       "district": "D23",
       "latest_rating": "Neutral",
-      "latest_date": "2026-06-09",
-      "eval_count": 2
+      "latest_date": "2026-09-29",
+      "eval_count": 3
     },
     "1-suites-one-suites": {
       "condo": "#1 Suites (One Suites)",

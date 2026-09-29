@@ -312,6 +312,80 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-500076654",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-09-29",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,216 sqft 3BR low-floor unit at Rivervale Crest (Sengkang, D19 OCR, NTUC Choice Homes, 490 units, TOP ~2003, ~73yr lease left), asking $1,270,000 / $1,044 psf after a 2.3% cut from $1.30M in August. That is exactly the project's 24-month same-size median ($1,044.5 psf over 22 prints) and in line with the identical 1,216 sqft layout's recent prints ($1.26M Feb-26, $1.30M Jun-26, both floor 06-10). Fair price, no edge.",
+      "rating_rationale": "Neutral, not Buy: the ask is market price, not a discount. The score of 811 comes mostly from age_value (+17.7) on a -29% gap to D19's age-adjusted median. That gap is where Rivervale Crest has always sat as a 2003 LRT-served Sengkang project, and it is already priced in; it will not close. Against its own 22 prints in the same size band over the last 24 months, the ask is 0% off the median. The project's PSF has also gone flat since late 2024: the yearly median was $1,026 in 2024, $1,067 in 2025 and $1,046 so far in 2026, and momentum reads -1.0. The 7% trailing CAGR is the 2021-23 re-rating and should not be projected forward. Positives: a deep, liquid comp book (88 URA sales, ~15-18 a year); a real downside record (REALSCORE 3.8, 82.1% of 572 resales were profitable); verified 3.8% gross rental carry; a comfortable lease; and a sub-$1.3M ticket at the heart of the HDB-upgrader market. Negatives: about 10 distinct 3BR units are listed at once ($1.27M-$1.45M), and the lease is ageing. Net: a safe, fairly priced OCR 3BR with baseline-at-best forward returns. Worth considering only if the price can be negotiated to about $1.20M (~$990 psf), below the band's lower quartile.",
+      "red_flags": [
+        "NO REAL DISCOUNT: $1,044 psf is exactly the 24-month same-size band median ($1,044.5, n=22). The -29% vs D19 age-adjusted median (age_value +17.7, the largest MMR component) is a persistent location level for LRT-served 2003 Sengkang stock, not convergence fuel.",
+        "PSF HAS STALLED: yearly median $1,026 (2024) -> $1,067 (2025) -> $1,046 (2026 YTD, 15 prints), momentum -1.0. The 6.97% ura_5yr_cagr in the ROI table is the 2021-23 repricing ($747 -> $973) and overstates forward returns by about half; the override is 3.0%.",
+        "CROWDED EXIT QUEUE: ~10 distinct 3BR asks are live in the DB ($1.27M-$1.45M, $1,044-$1,270 psf) against ~15-18 project sales a year across all types, and many sellers are RAISING asks above where prints clear (~$1,040-1,120 psf).",
+        "LOW FLOOR: the listing says 'Low Floor'. The exact 1,216 sqft layout printed $1.26M-$1.30M on floors 06-10 in 2026, so the ask is fair for a low floor but not cheap. No stack profile has been researched, so facing and view are unknown.",
+        "AGE/LEASE: a ~23-year-old building with ~73 years of lease left, ~66-68 at a 5-7yr exit. That is still clear of CPF pro-rating, but condition and lease decay both compound over the hold.",
+        "MRT is ~1km away (Sengkang); daily transit is by Rumbia LRT (~3 min walk, 2 stops to Sengkang NEL). MMR scores mrt -4.1. Defu CRL (2,255m) and PDD are not catalysts for this project, and the future-infrastructure score has no measured forward power anyway.",
+        "Mandate is 'his' (3BR, <=1.8M) with lots of headroom. The unit fits the brief but does not stretch the budget to buy a better forward asset."
+      ],
+      "catalysts": [
+        "DOWNSIDE RECORD: realsmart REALSCORE 3.8, 82.1% of 572 matched resale pairs profitable, avg annualized 5.2%. A large sample, so it is real evidence that owners rarely lose money here, but ~18% did (probably 2011-13 peak buyers), so it is not risk-free.",
+        "DEEP, TRANSPARENT LIQUIDITY: 88 URA prints, 22 in the tight same-size band in 24 months, and 490 units. Both entry and exit can be priced precisely. buyer_pool_depth reads 'very_deep' (the one liquidity signal that survives clustering).",
+        "VERIFIED CARRY: URA project-bed rent $4,000/mo on 28 contracts (confidence 0.95) = 3.78% gross / 2.26% net. This is carry, not appreciation.",
+        "OWNER-OCCUPIER BID: directly behind Rivervale Plaza, 3 min to Rumbia LRT, schools nearby. Family demand for a 1,216 sqft 3BR at ~$1.27M is the deepest part of the OCR resale market.",
+        "OCR region prior (realized fwd +3.7%/yr). This is a baseline available in any OCR asset, not an edge specific to Rivervale Crest.",
+        "The bedroom count checks out: bed_bands says 'ok' (the project's 3BR band is 1,150-1,450 sqft, 133 rental contracts). No sqft or format artifact; the very_low_psf flag is benign (it is the location level)."
+      ],
+      "as_of": {
+        "price": 1270000,
+        "psf": 1044.41,
+        "beds": 3,
+        "sqft": 1216.0
+      },
+      "key_facts": {
+        "appreciation_pct": 6.97,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.78,
+        "nearest_mrt": "Sengkang",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 73
+      },
+      "agent_evaluation": {
+        "summary": "A 1,216 sqft 3BR low-floor unit at Rivervale Crest (Sengkang, D19 OCR, NTUC Choice Homes, 490 units, TOP ~2003, ~73yr lease left), asking $1,270,000 / $1,044 psf after a 2.3% cut from $1.30M in August. That is exactly the project's 24-month same-size median ($1,044.5 psf over 22 prints) and in line with the identical 1,216 sqft layout's recent prints ($1.26M Feb-26, $1.30M Jun-26, both floor 06-10). Fair price, no edge.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, not Buy: the ask is market price, not a discount. The score of 811 comes mostly from age_value (+17.7) on a -29% gap to D19's age-adjusted median. That gap is where Rivervale Crest has always sat as a 2003 LRT-served Sengkang project, and it is already priced in; it will not close. Against its own 22 prints in the same size band over the last 24 months, the ask is 0% off the median. The project's PSF has also gone flat since late 2024: the yearly median was $1,026 in 2024, $1,067 in 2025 and $1,046 so far in 2026, and momentum reads -1.0. The 7% trailing CAGR is the 2021-23 re-rating and should not be projected forward. Positives: a deep, liquid comp book (88 URA sales, ~15-18 a year); a real downside record (REALSCORE 3.8, 82.1% of 572 resales were profitable); verified 3.8% gross rental carry; a comfortable lease; and a sub-$1.3M ticket at the heart of the HDB-upgrader market. Negatives: about 10 distinct 3BR units are listed at once ($1.27M-$1.45M), and the lease is ageing. Net: a safe, fairly priced OCR 3BR with baseline-at-best forward returns. Worth considering only if the price can be negotiated to about $1.20M (~$990 psf), below the band's lower quartile.",
+        "red_flags": [
+          "NO REAL DISCOUNT: $1,044 psf is exactly the 24-month same-size band median ($1,044.5, n=22). The -29% vs D19 age-adjusted median (age_value +17.7, the largest MMR component) is a persistent location level for LRT-served 2003 Sengkang stock, not convergence fuel.",
+          "PSF HAS STALLED: yearly median $1,026 (2024) -> $1,067 (2025) -> $1,046 (2026 YTD, 15 prints), momentum -1.0. The 6.97% ura_5yr_cagr in the ROI table is the 2021-23 repricing ($747 -> $973) and overstates forward returns by about half; the override is 3.0%.",
+          "CROWDED EXIT QUEUE: ~10 distinct 3BR asks are live in the DB ($1.27M-$1.45M, $1,044-$1,270 psf) against ~15-18 project sales a year across all types, and many sellers are RAISING asks above where prints clear (~$1,040-1,120 psf).",
+          "LOW FLOOR: the listing says 'Low Floor'. The exact 1,216 sqft layout printed $1.26M-$1.30M on floors 06-10 in 2026, so the ask is fair for a low floor but not cheap. No stack profile has been researched, so facing and view are unknown.",
+          "AGE/LEASE: a ~23-year-old building with ~73 years of lease left, ~66-68 at a 5-7yr exit. That is still clear of CPF pro-rating, but condition and lease decay both compound over the hold.",
+          "MRT is ~1km away (Sengkang); daily transit is by Rumbia LRT (~3 min walk, 2 stops to Sengkang NEL). MMR scores mrt -4.1. Defu CRL (2,255m) and PDD are not catalysts for this project, and the future-infrastructure score has no measured forward power anyway.",
+          "Mandate is 'his' (3BR, <=1.8M) with lots of headroom. The unit fits the brief but does not stretch the budget to buy a better forward asset."
+        ],
+        "catalysts": [
+          "DOWNSIDE RECORD: realsmart REALSCORE 3.8, 82.1% of 572 matched resale pairs profitable, avg annualized 5.2%. A large sample, so it is real evidence that owners rarely lose money here, but ~18% did (probably 2011-13 peak buyers), so it is not risk-free.",
+          "DEEP, TRANSPARENT LIQUIDITY: 88 URA prints, 22 in the tight same-size band in 24 months, and 490 units. Both entry and exit can be priced precisely. buyer_pool_depth reads 'very_deep' (the one liquidity signal that survives clustering).",
+          "VERIFIED CARRY: URA project-bed rent $4,000/mo on 28 contracts (confidence 0.95) = 3.78% gross / 2.26% net. This is carry, not appreciation.",
+          "OWNER-OCCUPIER BID: directly behind Rivervale Plaza, 3 min to Rumbia LRT, schools nearby. Family demand for a 1,216 sqft 3BR at ~$1.27M is the deepest part of the OCR resale market.",
+          "OCR region prior (realized fwd +3.7%/yr). This is a baseline available in any OCR asset, not an edge specific to Rivervale Crest.",
+          "The bedroom count checks out: bed_bands says 'ok' (the project's 3BR band is 1,150-1,450 sqft, 133 rental contracts). No sqft or format artifact; the very_low_psf flag is benign (it is the location level)."
+        ],
+        "rental_assessment": "$4,000/mo from 28 URA 3BR contracts (12mo) = 3.78% gross, 2.26% net. Plausible for Sengkang 3BR resale condos; well below the 5.5% artifact threshold. Counted as carry only.",
+        "appreciation_assessment": "Resale-to-resale evidence: band median $747 (2021) -> $1,026 (2024) -> $1,067 (2025) -> $1,046 (2026). The re-rating is done and the project has been flat for ~2 years. The forward view is the OCR baseline, trimmed for age and lease: ~3.0%/yr. realsmart avg annualized 5.2% (572 pairs) is backward-looking.",
+        "stack_notes": "No profile (not_researched). The listing says 'Low Floor' only. The same 1,216 sqft layout printed Nov-24 $1.27M (01-05), Dec-24 $1.268M (06-10), Feb-26 $1.26M (06-10), Jun-26 $1.30M (06-10). The floor gradient within this project is small (~2-5%).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "Project own URA same-size band medians 2024-26 flat (~$1,026-1,067 psf); OCR baseline less age/lease drag",
+        "realscore": 3.8,
+        "realsmart_pct_profitable": 82.1,
+        "realsmart_annual_return_pct": 5.2
+      },
+      "source": {
+        "run_dir": "output/run_001_500185609",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-rivervale-crest-500185609",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
