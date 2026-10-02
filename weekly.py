@@ -97,7 +97,7 @@ RUNS_DIR = os.path.join(BASE, "output", "weekly_runs")
 # --------------------------------------------------------------------------- #
 # The search mandate — WHAT the owner is actually buying.
 #
-# Stated 2026-07-28; mirrored in the store's home-buying README. Two buyers,
+# Stated 2026-07-28; mirrored in the store's home-buying README (projects/home/buying/). Two buyers,
 # two budgets, one shared region constraint. Everything else here is policy
 # about HOW to scan; this is the only block that says WHAT to look for, so it
 # is the first thing to change when the hunt changes.
@@ -308,7 +308,7 @@ STORE_PUSH_CONFIDENCE = {"high", "medium"}
 _STORE = store_root()
 STORE_FINDS_PATH = os.environ.get(
     "PF_STORE_FINDS",
-    os.path.join(_STORE, "projects", "home-buying", "scan-finds.md"))
+    os.path.join(_STORE, "projects", "home", "buying", "scan-finds.md"))
 # The note that reminds the owner to run this. A successful scan stamps its
 # `last_run:` so the store's session-start reminder clears itself.
 STORE_SCAN_NOTE_PATH = os.environ.get(
