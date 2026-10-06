@@ -3998,6 +3998,13 @@
       "latest_date": "2026-06-09",
       "eval_count": 2
     },
+    "parkview-apartments": {
+      "condo": "Parkview Apartments",
+      "district": "D23",
+      "latest_rating": "Avoid",
+      "latest_date": "2026-10-06",
+      "eval_count": 1
+    },
     "de-paradiso": {
       "condo": "De Paradiso",
       "district": "D12",

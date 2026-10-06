@@ -1,0 +1,81 @@
+{
+  "condo": "Parkview Apartments",
+  "slug": "parkview-apartments",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 3BR (1,130 sqft, 3 bath) at Parkview Apartments, a 1998 Far East Organization block in Bukit Batok East, asking $1.15M ($1,018 psf). The rent is real (4.2% gross on 38 contracts) and the project trades often. But the ask sits above the project's own recent 3BR prints. The lease, which started in May 1994, drops below 60 years right at a 7-year exit. And the oldest-lease condos in this sub-market have been flat since 2023, while Bukit Batok peers with leases from 1996–2000 kept rising.",
+      "rating_rationale": "(1) NOT CHEAP WHERE IT COUNTS. The 730 score rests mostly on age_value (+15.3), which comes from being -21.5% vs the age-adjusted D23 median. That is the D23 split (Hillview/freehold vs Bukit Batok/CCK), a permanent sub-market level and not value. Against its OWN prints the ask is rich: the 12-month median for 3BRs of 1,119/1,130 sqft is about $1.10M (14 prints, $0.985–1.21M), so $1.15M is about +4.5% over it. The two 2026 prints of this exact 1,130 sqft layout are $1.06M and $1.07M (+8%). factual_data puts it at +3.4% vs the URA median. (2) LEASE CROSSES 60 DURING THE HOLD. The lease is 99 years from 01/05/1994 (expiry 2093), not the 68 years the listing implies. That leaves 66.6 years today, 61.6 at a 5-year exit and 59.6 at a 7-year exit. Below 60, banks tighten loans and CPF use becomes prorated. That squeezes the next buyer pool, and realsmart puts HDB upgraders at 56% of buyers. (3) THE MARKET IS ALREADY PRICING IT. Median resale psf 2023→2026: Parkview (1994 lease) 981→1,006 and Regent Heights (1995) 1,027→1,056, roughly flat since 2024. Over the same period Guilin View (1996) went 1,048→1,191, Hilltop Grove (1996) 1,102→1,171, Hillview Regency (2000) 1,092→1,202 and The Madeira (2000) 1,121→1,202. For this layout the 3BR median fell from about $1.14M in 2023 to about $1.10M now. The 5.17% 5-year CAGR is entirely the 2021–23 jump. (4) SUPPLY OVERHANG. There are about 17 3BR listings since 18 Sep at $1.118–1.22M (8+ distinct units after removing agent duplicates). The project absorbs only about 14 3BR resales a year, so buyers have the leverage. This listing has already been cut from $1.20M to $1.15M, and another is listed at $1.118M. (5) EXIT RECORD. REALSCORE 3.4 on 737 matched resale pairs: 66.9% profitable, which means about a third of resales (246) lost money, at an average of 3.0%/yr annualized. Over a long hold this project has not been a safe harbour. (6) Positives are real but they are carry, not appreciation. Rent is about $4,000/month on 38 contracts, 4.2% gross and 2.5% net. The project is deep and liquid (532 units, 102 resales in 5 years), in the OCR region, and the unit is a generous 3 bath / 1,130 sqft. But a high yield predicts LOWER forward growth. Expected all-cash return is about 3.5–4%/yr (2.5% net carry plus about 1–1.5% drift after lease decay), below what the OCR baseline offers in a longer lease. It is 1.4 km to Bukit Batok MRT, and no new line comes closer. At about $1.05M or less (the 2026 prints of this layout) it would be a Neutral carry play. At $1.15M with the 60-year cliff inside the hold, Avoid.",
+      "red_flags": [
+        "Lease is 99 years from May 1994: 66.6 years left now, 59.6 at a 7-year exit. It crosses the 60-year line for loans and CPF during the hold.",
+        "Ask of $1.15M is about +4.5% over the 12-month 3BR median (~$1.10M) and about +8% over the 2026 prints of this 1,130 sqft layout ($1.06–1.07M).",
+        "Supply overhang: 8+ distinct 3BR units listed at $1.118–1.22M against about 14 3BR resales a year.",
+        "Oldest-lease cohort stalled: Parkview and Regent Heights flat since 2023–24, while 1996–2000-lease Bukit Batok peers rose 6–14%.",
+        "REALSCORE 3.4 on 737 resale pairs: a third (246) sold at a loss.",
+        "1.4 km to Bukit Batok MRT (bus-dependent); no closer future station.",
+        "The MMR age_value credit (+15.3) is the D23 Hillview-vs-Bukit Batok split, not a discount on comparable stock.",
+        "28-year-old estate: reviews rate management 2.9/5; expect renovation and MCST sinking-fund or levy exposure."
+      ],
+      "catalysts": [
+        "Steady rent of about $4,000/month on 38 contracts (12 months), 4.2% gross: genuine carry.",
+        "Deep, liquid resale market: 532 units, about 20 resales a year, 56% HDB-upgrader buyers in the Bukit Batok heartland.",
+        "Large 3-bath 1,130 sqft 3BR at about $1.1M, well inside the 'his' mandate budget.",
+        "Nature-reserve frontage (Bukit Batok Nature Park) and forest views, per resident reviews.",
+        "Long-shot en bloc optionality on a 24,979 sqm site. Not underwritable: it would need a large lease top-up premium."
+      ],
+      "as_of": {
+        "price": 1150000,
+        "psf": 1017.7,
+        "beds": 3,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.17,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 4.17,
+        "nearest_mrt": "Bukit Batok",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 68
+      },
+      "agent_evaluation": {
+        "summary": "A 3BR (1,130 sqft, 3 bath) at Parkview Apartments, a 1998 Far East Organization block in Bukit Batok East, asking $1.15M ($1,018 psf). The rent is real (4.2% gross on 38 contracts) and the project trades often. But the ask sits above the project's own recent 3BR prints. The lease, which started in May 1994, drops below 60 years right at a 7-year exit. And the oldest-lease condos in this sub-market have been flat since 2023, while Bukit Batok peers with leases from 1996–2000 kept rising.",
+        "rating": "Avoid",
+        "rating_rationale": "(1) NOT CHEAP WHERE IT COUNTS. The 730 score rests mostly on age_value (+15.3), which comes from being -21.5% vs the age-adjusted D23 median. That is the D23 split (Hillview/freehold vs Bukit Batok/CCK), a permanent sub-market level and not value. Against its OWN prints the ask is rich: the 12-month median for 3BRs of 1,119/1,130 sqft is about $1.10M (14 prints, $0.985–1.21M), so $1.15M is about +4.5% over it. The two 2026 prints of this exact 1,130 sqft layout are $1.06M and $1.07M (+8%). factual_data puts it at +3.4% vs the URA median. (2) LEASE CROSSES 60 DURING THE HOLD. The lease is 99 years from 01/05/1994 (expiry 2093), not the 68 years the listing implies. That leaves 66.6 years today, 61.6 at a 5-year exit and 59.6 at a 7-year exit. Below 60, banks tighten loans and CPF use becomes prorated. That squeezes the next buyer pool, and realsmart puts HDB upgraders at 56% of buyers. (3) THE MARKET IS ALREADY PRICING IT. Median resale psf 2023→2026: Parkview (1994 lease) 981→1,006 and Regent Heights (1995) 1,027→1,056, roughly flat since 2024. Over the same period Guilin View (1996) went 1,048→1,191, Hilltop Grove (1996) 1,102→1,171, Hillview Regency (2000) 1,092→1,202 and The Madeira (2000) 1,121→1,202. For this layout the 3BR median fell from about $1.14M in 2023 to about $1.10M now. The 5.17% 5-year CAGR is entirely the 2021–23 jump. (4) SUPPLY OVERHANG. There are about 17 3BR listings since 18 Sep at $1.118–1.22M (8+ distinct units after removing agent duplicates). The project absorbs only about 14 3BR resales a year, so buyers have the leverage. This listing has already been cut from $1.20M to $1.15M, and another is listed at $1.118M. (5) EXIT RECORD. REALSCORE 3.4 on 737 matched resale pairs: 66.9% profitable, which means about a third of resales (246) lost money, at an average of 3.0%/yr annualized. Over a long hold this project has not been a safe harbour. (6) Positives are real but they are carry, not appreciation. Rent is about $4,000/month on 38 contracts, 4.2% gross and 2.5% net. The project is deep and liquid (532 units, 102 resales in 5 years), in the OCR region, and the unit is a generous 3 bath / 1,130 sqft. But a high yield predicts LOWER forward growth. Expected all-cash return is about 3.5–4%/yr (2.5% net carry plus about 1–1.5% drift after lease decay), below what the OCR baseline offers in a longer lease. It is 1.4 km to Bukit Batok MRT, and no new line comes closer. At about $1.05M or less (the 2026 prints of this layout) it would be a Neutral carry play. At $1.15M with the 60-year cliff inside the hold, Avoid.",
+        "red_flags": [
+          "Lease is 99 years from May 1994: 66.6 years left now, 59.6 at a 7-year exit. It crosses the 60-year line for loans and CPF during the hold.",
+          "Ask of $1.15M is about +4.5% over the 12-month 3BR median (~$1.10M) and about +8% over the 2026 prints of this 1,130 sqft layout ($1.06–1.07M).",
+          "Supply overhang: 8+ distinct 3BR units listed at $1.118–1.22M against about 14 3BR resales a year.",
+          "Oldest-lease cohort stalled: Parkview and Regent Heights flat since 2023–24, while 1996–2000-lease Bukit Batok peers rose 6–14%.",
+          "REALSCORE 3.4 on 737 resale pairs: a third (246) sold at a loss.",
+          "1.4 km to Bukit Batok MRT (bus-dependent); no closer future station.",
+          "The MMR age_value credit (+15.3) is the D23 Hillview-vs-Bukit Batok split, not a discount on comparable stock.",
+          "28-year-old estate: reviews rate management 2.9/5; expect renovation and MCST sinking-fund or levy exposure."
+        ],
+        "catalysts": [
+          "Steady rent of about $4,000/month on 38 contracts (12 months), 4.2% gross: genuine carry.",
+          "Deep, liquid resale market: 532 units, about 20 resales a year, 56% HDB-upgrader buyers in the Bukit Batok heartland.",
+          "Large 3-bath 1,130 sqft 3BR at about $1.1M, well inside the 'his' mandate budget.",
+          "Nature-reserve frontage (Bukit Batok Nature Park) and forest views, per resident reviews.",
+          "Long-shot en bloc optionality on a 24,979 sqm site. Not underwritable: it would need a large lease top-up premium."
+        ],
+        "rental_assessment": "Solid. URA project-and-bed rent is $4,000/month median on 38 contracts in 12 months (realsmart: $3.6 psf, range $3,000–5,000), giving 4.2% gross and 2.5% net at $1.15M. Rent is the strongest part of the case, but per the backtest high yield is carry, not a growth signal.",
+        "appreciation_assessment": "The 5.17% URA 5-year CAGR is a window artifact: 3BR prints rose from about $0.80–0.92M (2021–22) to about $1.14M (2023), then went flat to slightly down (~$1.10M over the last 12 months). Bukit Batok peers with leases from 1996–2000 kept rising after 2023; the 1994–95 leases did not. That fits the market discounting the approaching 60-year lease line. Forward view: about 1.5%/yr (OCR drift less about 0.7%/yr lease decay across the 66→60-year band). Override applied.",
+        "stack_notes": "The listing gives no floor, stack or facing, and there is no profile for Parkview Apartments (/research-development was not run: with no stack or floor on this listing the join could not match, and it would not change a verdict driven by lease and price). URA prints for this layout span floors 01–15. In 2025–26, floors 06–10 printed at about $1.10–1.21M and 01–05 at about $0.985–1.10M. Confirm the floor before negotiating, and price a low floor against the $1.06–1.07M prints.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 1.5,
+        "appreciation_rate_source": "Resale-to-resale URA prints, 3BR 1,119/1,130 sqft: median ~$1.14M in 2023 vs ~$1.10M in Oct-25 to Sep-26, i.e. flat-to-down for 3 years. Peer cohort: 1994–95-lease Bukit Batok condos flat since 2023–24 vs +6–14% for 1996–2000 leases. Then OCR drift less lease decay to the 60-year mark.",
+        "realscore": 3.4,
+        "realsmart_pct_profitable": 66.9,
+        "realsmart_annual_return_pct": 3.0
+      },
+      "source": {
+        "run_dir": "output/run_121_500225659",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-parkview-apartments-500225659",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
