@@ -268,6 +268,20 @@ MAX_SIGHTING_AGE_DAYS = 21
 # already holds the reasoning. A different bed count IS a different call.
 RE_EVAL_COOLDOWN_DAYS = 30
 
+# A unit already judged stays judged until its ask moves DOWN. The cooldown above
+# is per (condo, bed count) and releases on its own, after which a re-priced or
+# relisted unit is a fresh candidate even when nothing that matters changed.
+# Measured 2026-10-06 over the 103 agent runs since the first scan: 8 re-judged
+# the same unit (same condo and beds, sqft within 1%) at the same or a HIGHER
+# ask. 3 were sellers raising the price on the same listing and 5 were relists
+# by another agent; none came back better than the first verdict. So a unit is
+# re-checked only once its ask is UNIT_RECHECK_DROP_PCT under the ask it was
+# judged at. The memory lapses after UNIT_MEMORY_DAYS, because the market moves
+# ~4%/yr and an old verdict's comps go stale with it.
+UNIT_MEMORY_DAYS = 180
+UNIT_SQFT_TOL = 0.01
+UNIT_RECHECK_DROP_PCT = 2.0
+
 # Per-agent wall clock. The analyze-listing flow does real web research; beyond
 # this something is stuck and the run is killed so the cycle finishes.
 AI_TIMEOUT_S = 1800
@@ -442,6 +456,61 @@ def _eval_cooldown_index(cooldown_days: int, today: datetime) -> dict:
             if when > index.get(key, ""):
                 index[key] = when
     return index
+
+
+def _unit_memory_index(memory_days: int, today: datetime) -> dict:
+    """Map (condo slug, beds) -> [{sqft, price, when, rating}] judged inside the window.
+
+    Only entries that recorded the unit (beds, sqft and price in `as_of`) count:
+    without a size there is no telling which unit was judged. Never raises.
+    """
+    index: dict[tuple[str, object], list] = {}
+    # Verdicts from before the current priors don't count: they are the ones the
+    # recall warning tells agents to re-judge, and re-judging overturned them
+    # (The Palette 3BR: Buy on 2026-06-08, Avoid at the same $2.0M on 2026-10-06
+    # once the agent found it was a ground-floor patio unit).
+    cutoff = max((today - timedelta(days=memory_days)).strftime("%Y-%m-%d"),
+                 eval_memory.PRIORS_FIXED_DATE)
+    try:
+        slugs = eval_memory.load_index().get("condos", {}).keys()
+    except Exception:  # noqa: BLE001 — a broken index must not stop the scan
+        return index
+    for slug in slugs:
+        try:
+            data = eval_memory.load_condo(slug) or {}
+        except Exception:  # noqa: BLE001
+            continue
+        for entry in data.get("history", []) or []:
+            if not isinstance(entry, dict):
+                continue
+            when = entry.get("evaluated_at") or ""
+            as_of = entry.get("as_of")
+            if not isinstance(when, str) or when < cutoff or not isinstance(as_of, dict):
+                continue
+            try:
+                sqft, price = float(as_of.get("sqft")), float(as_of.get("price"))
+            except (TypeError, ValueError):
+                continue
+            if as_of.get("beds") is None or sqft <= 0 or price <= 0:
+                continue
+            index.setdefault((slug, as_of["beds"]), []).append(
+                {"sqft": sqft, "price": price, "when": when, "rating": entry.get("rating")})
+    return index
+
+
+def _judged_unit(index: dict, slug: str, beds, sqft, price) -> dict | None:
+    """The latest verdict on this same unit when the ask has not dropped enough
+    since to be worth a second look; None when the unit is open."""
+    if not (sqft and price):
+        return None
+    same = [e for e in index.get((slug, beds), [])
+            if abs(e["sqft"] - sqft) / sqft <= UNIT_SQFT_TOL]
+    if not same:
+        return None
+    last = max(same, key=lambda e: e["when"])
+    if price <= last["price"] * (1 - UNIT_RECHECK_DROP_PCT / 100):
+        return None
+    return last
 
 
 def _blocked_by_cooldown(index: dict, slug: str, beds) -> str | None:
@@ -676,6 +745,7 @@ def select_candidates(
     min_score: int = MIN_SCORE_FOR_AI,
     max_ai: int = MAX_AI_RUNS_PER_SCAN,
     known_projects: set | None = None,
+    unit_index: dict | None = None,
 ) -> tuple[list[dict], list[dict]]:
     """Split the scan's new/changed listings into (shortlist, rejected).
 
@@ -695,6 +765,7 @@ def select_candidates(
     then the two rules that need the rest of the batch (in-batch dedupe, cap).
     """
     cooldown_index = {} if cooldown_index is None else cooldown_index
+    unit_index = {} if unit_index is None else unit_index
     shortlist: list[dict] = []
     rejected: list[dict] = []
     bars = lens_bars(db_listings, min_score)
@@ -766,6 +837,12 @@ def select_candidates(
                 f"bed count looks wrong — {bed['reason']}")
         elif (blocked := _blocked_by_cooldown(cooldown_index, slug, row.get("beds"))):
             cand["gate_reason"] = f"same unit type evaluated {blocked} (cooldown)"
+        elif (prior := _judged_unit(unit_index, slug, row.get("beds"),
+                                    cand.get("sqft"), row.get("price"))):
+            cand["gate_reason"] = (
+                f"same unit judged {prior['rating'] or '?'} on {prior['when']} at "
+                f"{_money(prior['price'])}; re-checked once the ask is "
+                f"{UNIT_RECHECK_DROP_PCT:g}% below that")
         elif cohort in seen_cohort:
             cand["gate_reason"] = "same condo + bed count already shortlisted this scan"
         else:
@@ -1196,7 +1273,8 @@ def refresh_ura(districts: list[int], max_age_days: int = URA_MAX_AGE_DAYS) -> d
 
 def pre_gate_enrich(rows: list[dict], db_listings: dict, cooldown: dict,
                     min_score: int, known: set, headless: bool,
-                    limit: int = PRE_GATE_ENRICH) -> tuple[list[dict], dict]:
+                    limit: int = PRE_GATE_ENRICH,
+                    unit_index: dict | None = None) -> tuple[list[dict], dict]:
     """Detail-enrich and re-score the listings in contention, before the real gate.
 
     Runs the gate uncapped to find who is eligible, takes the top `limit` that
@@ -1208,7 +1286,7 @@ def pre_gate_enrich(rows: list[dict], db_listings: dict, cooldown: dict,
     try:
         eligible, _ = select_candidates(rows, db_listings, cooldown_index=cooldown,
                                         min_score=min_score, max_ai=10_000,
-                                        known_projects=known)
+                                        known_projects=known, unit_index=unit_index)
         # Rank by each candidate's best rank under ANY nominating lens, so an
         # exit_demand-only contender is enriched too, not just high mmr.
         ranks = _lens_rankings(eligible)
@@ -1734,6 +1812,40 @@ def stamp_scan_note(day: str, path: str = STORE_SCAN_NOTE_PATH) -> bool:
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
+def self_update() -> str:
+    """Fast-forward this checkout to its upstream before a scan. Returns a status
+    line ("" when already current); "updated…" means the caller must re-exec.
+
+    The scan runs from a clone on each laptop, and each ran whatever it last
+    pulled, so a fix pushed from one machine silently missed the other's next
+    scan. Only a clean fast-forward is attempted: a checkout with local commits
+    or with uncommitted changes the update would touch is left alone, with a
+    warning, and the scan runs the local code. Never raises.
+    """
+    def git(*a):
+        return subprocess.run(["git", "-C", BASE, *a], capture_output=True,
+                              text=True, timeout=60)
+    try:
+        if git("fetch", "--quiet").returncode != 0:
+            return "⚠ self-update: git fetch failed, running the local code"
+        counts = git("rev-list", "--left-right", "--count", "HEAD...@{u}")
+        if counts.returncode != 0:
+            return "⚠ self-update: no upstream branch, running the local code"
+        ahead, behind = (int(x) for x in counts.stdout.split())
+        if not behind:
+            return ""
+        if ahead:
+            return (f"⚠ self-update: {ahead} local commit(s) not on origin and {behind} "
+                    f"new there; run `git pull --rebase` (running the local code)")
+        r = git("merge", "--ff-only", "--quiet", "@{u}")
+        if r.returncode != 0:
+            return ("⚠ self-update: fast-forward refused (uncommitted changes in the "
+                    f"way?): {r.stderr.strip()[:160]} (running the local code)")
+        return f"updated to origin (+{behind} commit(s))"
+    except Exception as e:  # noqa: BLE001 — an update is a convenience, never fatal
+        return f"⚠ self-update skipped ({type(e).__name__}: {e})"
+
+
 def check_environment(need_browser: bool, need_agents: bool) -> list[str]:
     """Fail fast on a machine that can't finish the scan. Returns fatal problems.
 
@@ -1816,7 +1928,18 @@ def main() -> int:
                     help="skip pre-gate detail enrichment + re-score of the contenders")
     ap.add_argument("--no-store-push", action="store_true",
                     help="don't append good finds to the personal data store note")
+    ap.add_argument("--no-update", action="store_true",
+                    help="run the local code as is: skip the fast-forward to origin")
     args = ap.parse_args()
+
+    if not args.no_update and not os.environ.get("PF_SELF_UPDATED"):
+        msg = self_update()
+        if msg.startswith("updated"):
+            print(f"  {msg}; restarting on the new code", file=sys.stderr)
+            os.environ["PF_SELF_UPDATED"] = "1"
+            os.execv(sys.executable, [sys.executable, os.path.abspath(__file__), *sys.argv[1:]])
+        elif msg:
+            print(f"  {msg}", file=sys.stderr)
 
     keep_awake()
 
@@ -1946,20 +2069,21 @@ def main() -> int:
     # 2/3. Gate — enrich + re-score the contenders first, then the real gate.
     db_listings = listings_db.load_db()["listings"]
     cooldown = _eval_cooldown_index(RE_EVAL_COOLDOWN_DAYS, now)
+    units = _unit_memory_index(UNIT_MEMORY_DAYS, now)
     known = _known_projects()
     enrich = {}
     # Not under --no-poll: that flag promises no PropertyGuru traffic.
     if (not args.no_enrich and not args.full_book and not args.no_poll
             and poll_state.get("ok")):
         rows, enrich = pre_gate_enrich(rows, db_listings, cooldown, args.min_score,
-                                       known, headless=args.headless)
+                                       known, headless=args.headless, unit_index=units)
         if enrich.get("rescored"):
             db_listings = listings_db.load_db()["listings"]
     poll_state["preflight"] = {"ura": refresh, "enrich": enrich}
     shortlist, rejected = select_candidates(
         rows, db_listings, cooldown_index=cooldown,
         min_score=args.min_score, max_ai=args.max_ai,
-        known_projects=known)
+        known_projects=known, unit_index=units)
     print(f"\nGate: {len(rows)} new/changed → {len(shortlist)} for AI analysis "
           f"(>= {args.min_score}, cap {args.max_ai})", file=sys.stderr)
 

@@ -189,6 +189,11 @@ and the owner drives it from there; a successful run stamps that note's
 enrich + re-score the contenders → gate → AI-analyze only what clears the gate
 (3 in parallel) → digest → push the good ones to the store.**
 
+Every run first **fast-forwards its own checkout** to origin and restarts on the
+new code (2026-10-06), so a fix pushed from one laptop reaches the other's next
+scan. Only a clean fast-forward: local commits or uncommitted changes in the way
+leave the checkout alone with a warning. `--no-update` skips it.
+
 Pre-flight (2026-09-24): URA sales and rentals sync through the **official URA
 API** via [sgprop](https://github.com/ong6/sgprop) (`ura_api.py`, ~40 s, no
 browser), which rewrites the same `data/ura_district_D*.csv` /
@@ -246,6 +251,7 @@ restamp the scored book's vintage):
 | `PRE_GATE_ENRICH` | 36 | contenders detail-enriched + re-scored before the capped gate |
 | `POLL_MAX_PAGES` | 10 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
 | `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
+| `UNIT_MEMORY_DAYS` / `UNIT_RECHECK_DROP_PCT` | 180 / 2% | the same unit (condo, beds, sqft ±1%) is re-run only once its ask is 2% under the ask it was judged at; 8 of the first 103 runs re-judged a unit at the same or a higher ask, none better. Verdicts before 2026-06-10 never block |
 | `AI_TIMEOUT_S` | 1800 | per-agent wall clock; past it something is stuck |
 | store push | Buy/Strong Buy, **or** a non-Avoid whose `max_buy_price` sits below the ask within a typical negotiation (≥ half of comparable sales closed that far under ask); **and** ≥ medium confidence | the store note is a feed the owner reads, not a log; a Neutral at the ask that a normal offer turns into a Buy is a find |
 

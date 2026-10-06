@@ -371,6 +371,108 @@ class TestRepricedSince:
             assert not weekly._repriced_since(rec, "2026-07-20")
 
 
+class TestUnitMemory:
+    """A unit already judged is re-checked only after its ask drops."""
+
+    def _units(self, price=1_400_000, sqft=950.0, when="2026-08-01", rating="Neutral"):
+        return {("test-condo", 3): [{"sqft": sqft, "price": price, "when": when,
+                                     "rating": rating}]}
+
+    def test_same_unit_at_the_same_or_a_higher_ask_is_not_rerun(self):
+        rows = [_row("a", price=1_400_000), _row("b", price=1_450_000, beds=3)]
+        short, rej = weekly.select_candidates(
+            [rows[0]], {"a": _rec("a")}, unit_index=self._units())
+        assert short == []
+        assert "same unit judged Neutral on 2026-08-01 at $1,400,000" in rej[0]["gate_reason"]
+        short, _ = weekly.select_candidates(
+            [rows[1]], {"b": _rec("b", price=1_450_000)}, unit_index=self._units())
+        assert short == []
+
+    def test_a_real_cut_reopens_it(self):
+        row = _row("a", price=1_365_000)   # 2.5% under the judged ask
+        short, _ = weekly.select_candidates(
+            [row], {"a": _rec("a", price=1_365_000)}, unit_index=self._units())
+        assert [c["id"] for c in short] == ["a"]
+
+    def test_a_different_size_is_a_different_unit(self):
+        short, _ = weekly.select_candidates(
+            [_row("a")], {"a": _rec("a", sqft=1100.0)}, unit_index=self._units())
+        assert [c["id"] for c in short] == ["a"]
+
+    def test_index_needs_the_unit_recorded_and_lapses(self, monkeypatch):
+        now = datetime(2026, 10, 6)
+        monkeypatch.setattr(weekly.eval_memory, "load_index",
+                            lambda: {"condos": {"c": {}}})
+        monkeypatch.setattr(weekly.eval_memory, "load_condo", lambda slug: {"history": [
+            {"evaluated_at": "2026-09-01", "rating": "Avoid",
+             "as_of": {"beds": 3, "sqft": 950, "price": 1_400_000}},
+            {"evaluated_at": "2026-09-02", "as_of": {"beds": 3}},          # no unit
+            {"evaluated_at": "2026-01-01", "rating": "Neutral",            # too old
+             "as_of": {"beds": 3, "sqft": 950, "price": 1_300_000}},
+            {"evaluated_at": "2026-09-03", "as_of": "re-judged, see notes"},
+        ]})
+        idx = weekly._unit_memory_index(180, now)
+        assert idx == {("c", 3): [{"sqft": 950.0, "price": 1_400_000.0,
+                                   "when": "2026-09-01", "rating": "Avoid"}]}
+
+    def test_verdicts_before_the_current_priors_never_block(self, monkeypatch):
+        monkeypatch.setattr(weekly.eval_memory, "load_index",
+                            lambda: {"condos": {"c": {}}})
+        monkeypatch.setattr(weekly.eval_memory, "load_condo", lambda slug: {"history": [
+            {"evaluated_at": "2026-06-08", "rating": "Buy",
+             "as_of": {"beds": 3, "sqft": 950, "price": 1_400_000}}]})
+        assert weekly._unit_memory_index(180, datetime(2026, 10, 6)) == {}
+
+
+class TestSelfUpdate:
+    """The scan fast-forwards its own checkout, and only ever fast-forwards."""
+
+    def _git(self, cwd, *a):
+        import subprocess
+        subprocess.run(["git", "-C", str(cwd), *a], check=True, capture_output=True)
+
+    def _repos(self, tmp_path):
+        origin, a, b = tmp_path / "origin.git", tmp_path / "a", tmp_path / "b"
+        self._git(tmp_path, "init", "--bare", "-b", "main", str(origin))
+        for clone in (a, b):
+            self._git(tmp_path, "clone", str(origin), str(clone))
+            self._git(clone, "config", "user.email", "t@t")
+            self._git(clone, "config", "user.name", "t")
+        (a / "f.txt").write_text("1")
+        self._git(a, "add", "f.txt")
+        self._git(a, "commit", "-m", "one")
+        self._git(a, "push", "-q", "origin", "main")
+        self._git(b, "pull", "-q", "origin", "main")
+        self._git(b, "branch", "--set-upstream-to=origin/main")
+        (a / "f.txt").write_text("2")
+        self._git(a, "commit", "-am", "two")
+        self._git(a, "push", "-q", "origin", "main")
+        return a, b
+
+    def test_behind_and_clean_fast_forwards(self, tmp_path, monkeypatch):
+        _, b = self._repos(tmp_path)
+        monkeypatch.setattr(weekly, "BASE", str(b))
+        assert weekly.self_update().startswith("updated to origin (+1")
+        assert (b / "f.txt").read_text() == "2"
+        assert weekly.self_update() == ""
+
+    def test_local_commits_are_never_merged_over(self, tmp_path, monkeypatch):
+        _, b = self._repos(tmp_path)
+        (b / "g.txt").write_text("local")
+        self._git(b, "add", "g.txt")
+        self._git(b, "commit", "-m", "local")
+        monkeypatch.setattr(weekly, "BASE", str(b))
+        msg = weekly.self_update()
+        assert "local commit" in msg and (b / "f.txt").read_text() == "1"
+
+    def test_uncommitted_changes_in_the_way_block_it(self, tmp_path, monkeypatch):
+        _, b = self._repos(tmp_path)
+        (b / "f.txt").write_text("dirty")
+        monkeypatch.setattr(weekly, "BASE", str(b))
+        assert "refused" in weekly.self_update()
+        assert (b / "f.txt").read_text() == "dirty"
+
+
 class TestCooldownIndex:
     def test_index_reads_recent_evals_and_ignores_old_ones(self, monkeypatch):
         now = datetime(2026, 7, 27)
