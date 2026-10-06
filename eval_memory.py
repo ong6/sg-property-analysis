@@ -169,6 +169,9 @@ def _key_facts(entry: dict) -> dict:
         "nearest_mrt": entry.get("nearest_mrt"),
         "tenure": entry.get("tenure"),
         "remaining_lease": entry.get("remaining_lease"),
+        # The ask-vs-own-prints premium the estimate was conditioned on, so the
+        # weekly scan can re-assess the agent's max_buy_price on the same basis.
+        "negotiation": fd.get("negotiation"),
     }
 
 

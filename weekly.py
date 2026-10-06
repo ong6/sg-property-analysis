@@ -78,6 +78,7 @@ sys.path.insert(0, BASE)
 
 import eval_memory
 import listings_db
+import negotiation
 import poller
 from utils.store import store_root, fetch_script
 
@@ -305,6 +306,12 @@ AI_ALLOWED_TOOLS = "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Skill,Todo
 # Store push bar: only these reach the personal data store's scan-finds note.
 STORE_PUSH_RATINGS = {"strong buy", "buy"}
 STORE_PUSH_CONFIDENCE = {"high", "medium"}
+# A non-Buy rating still reaches the store when the agent's walk-away price
+# (max_buy_price) is below the ask but within a TYPICAL negotiation of it: at
+# least half of comparable sales closed that far under. Avoid never does,
+# whatever the price; a non-Buy whose walk-away is at the ask contradicts itself
+# (the rating rests on something other than price) and stays in the digest.
+STORE_PUSH_NEGO_TIERS = {"typical"}
 _STORE = store_root()
 STORE_FINDS_PATH = os.environ.get(
     "PF_STORE_FINDS",
@@ -966,6 +973,14 @@ def _agent_prompt(cand: dict) -> str:
         "a perfect score on a handful of transactions means little — always "
         "report the transaction count with it. Uncompleted projects "
         "legitimately show N.A.\n\n"
+        "Negotiation: factual_data.negotiation is the close this ask is likely to "
+        "reach (URA prints are negotiated prices, the ask is not). Compare the "
+        "EXPECTED CLOSE with the prints, rate the unit at its ask, and always fill "
+        "`max_buy_price` in agent_evaluation: the highest price at which you would "
+        "rate it a Buy on what you know now, with any unverified floor, facing or "
+        "format priced in (below the ask unless you rate it Buy at the ask; null "
+        "only if no realistic price makes it one). The scan checks whether a "
+        "typical negotiation reaches it.\n\n"
         "This is a NON-INTERACTIVE headless run in the weekly scan: do not ask "
         "anything; where the flow would ask about purpose, assume investment "
         "(5-7yr hold) and proceed. Do the real research step — your view first, "
@@ -1363,6 +1378,50 @@ def _realsmart_line(v: dict) -> str:
     return "realsmart: " + " · ".join(bits)
 
 
+def _negotiation(cand: dict, v: dict) -> dict | None:
+    """The agent's walk-away price, assessed against the calibrated negotiation room.
+
+    Conditioned on the same ask-vs-own-prints premium the agent was shown (kept
+    in the verdict's key_facts). Without a max_buy_price this is just the
+    expected-close estimate; without a calibration it is None.
+    """
+    ae = v.get("agent_evaluation") or {}
+    shown = (v.get("key_facts") or {}).get("negotiation") or {}
+    try:
+        max_buy = float(ae.get("max_buy_price")) if ae.get("max_buy_price") else None
+    except (TypeError, ValueError):
+        max_buy = None
+    return negotiation.assess(cand.get("price"), cand.get("sqft"),
+                              shown.get("ask_vs_own_prints_pct"), max_buy)
+
+
+def _negotiation_line(n: dict | None) -> str:
+    if not n:
+        return ""
+    prem = n.get("ask_vs_own_prints_pct")
+    basis = (f"ask {prem:+.1f}% vs own prints" if prem is not None
+             else "no own-print benchmark")
+    psf = (f", −${n['expected_discount_psf']} psf" if n.get("expected_discount_psf") is not None
+           else "")
+    line = (f"**Negotiation:** {basis} → expected close {_money(n['expected_close_price'])} "
+            f"(−{n['expected_discount_pct']}%{psf}), strong negotiation "
+            f"{_money(n['strong_close_price'])} (−{n['strong_discount_pct']}%)")
+    if n.get("tier") == "at_ask":
+        line += f" · walk-away {_money(n['max_buy_price'])} is at or above the ask"
+    elif n.get("tier"):
+        line += (f" · walk-away {_money(n['max_buy_price'])} needs −{n['cut_needed_pct']}%"
+                 + (f" (−${n['cut_needed_psf']} psf)" if n.get("cut_needed_psf") is not None else "")
+                 + f"; {n['share_of_sales_this_deep_pct']}% of comparable sales got that "
+                 f"→ **{n['tier_label']}**")
+    return line
+
+
+def _nego_buy(v: dict, n: dict | None) -> bool:
+    """A non-Avoid verdict whose walk-away price a typical negotiation reaches."""
+    return bool(n and n.get("tier") in STORE_PUSH_NEGO_TIERS
+                and (v.get("rating") or "").strip().lower() != "avoid")
+
+
 _MANDATE_TAG = {"his": "**HIS**", "hers": "**HERS**"}
 
 
@@ -1439,6 +1498,9 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
             rating = (v.get("rating") or "?").strip()
             icon = _RATING_ICON.get(rating.lower(), "⚪️")
             via = ",".join(cand.get("surfaced_by") or [])
+            nego = _negotiation(cand, v)
+            if _nego_buy(v, nego) and rating.lower() not in STORE_PUSH_RATINGS:
+                rating = f"{rating} at ask → 🟢 Buy at ≤ {_money(nego['max_buy_price'])}"
             L.append(f"### {icon} {rating} — {cand.get('project_name')} · "
                      f"{cand.get('beds')}BR {cand.get('sqft') or '?'} sqft · "
                      f"{_money(cand.get('price'))} ({_money(cand.get('psf'))} psf) · "
@@ -1447,6 +1509,8 @@ def build_digest(day: str, poll_state: dict, shortlist: list[dict],
                      f"{v.get('confidence') or '?'} confidence")
             if (rs := _realsmart_line(v)):
                 L += ["", rs]
+            if (nl := _negotiation_line(nego)):
+                L += ["", nl]
             if v.get("summary"):
                 L += ["", f"> {v['summary']}"]
             if v.get("rating_rationale"):
@@ -1548,11 +1612,13 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
         v = verdicts.get(cand["id"])
         if not v:
             continue
-        if (v.get("rating") or "").strip().lower() not in STORE_PUSH_RATINGS:
+        nego = _negotiation(cand, v)
+        if ((v.get("rating") or "").strip().lower() not in STORE_PUSH_RATINGS
+                and not _nego_buy(v, nego)):
             continue
         if (v.get("confidence") or "").strip().lower() not in STORE_PUSH_CONFIDENCE:
             continue
-        good.append((cand, v))
+        good.append((cand, v, nego))
     if not good:
         return []
 
@@ -1569,7 +1635,7 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
         return []
 
     added, lines = [], []
-    for cand, v in good:
+    for cand, v, nego in good:
         url = cand.get("url") or ""
         if url and url in existing:
             continue
@@ -1586,9 +1652,9 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
             f"{cand.get('beds')}BR {cand.get('sqft') or '?'} sqft | "
             f"{_money(cand.get('price'))} ({_money(cand.get('psf'))} psf) · "
             f"{cand.get('district')} | {cand.get('score_1000')} | {real} | "
-            f"**{v.get('rating')}** ({v.get('confidence')}) | {summary} |")
+            f"{_find_verdict(v, nego)} | {summary} |")
         added.append({"project_name": cand.get("project_name"),
-                      "rating": v.get("rating"), "confidence": v.get("confidence"),
+                      "rating": _find_rating(v, nego), "confidence": v.get("confidence"),
                       "url": url})
     if not lines:
         return []
@@ -1597,6 +1663,23 @@ def push_to_store(day: str, shortlist: list[dict], verdicts: dict,
     body = _set_frontmatter(_insert_rows(existing, lines), "updated", day)
     _atomic_write(path, body)
     return added
+
+
+def _find_rating(v: dict, nego: dict | None) -> str:
+    rating = (v.get("rating") or "?").strip()
+    if rating.lower() in STORE_PUSH_RATINGS or not _nego_buy(v, nego):
+        return rating
+    return f"Buy at ≤ {_money(nego['max_buy_price'])} ({rating} at ask)"
+
+
+def _find_verdict(v: dict, nego: dict | None) -> str:
+    """The scan-finds verdict cell: the rating, plus the offer math when it took
+    a negotiation to get there."""
+    cell = f"**{_find_rating(v, nego)}** ({v.get('confidence')})"
+    if nego and nego.get("tier") == "typical":
+        cell += (f" · needs −{nego['cut_needed_pct']}%, "
+                 f"{nego['share_of_sales_this_deep_pct']}% of comparable sales got that")
+    return cell
 
 
 def _atomic_write(path: str, body: str) -> None:
@@ -1684,6 +1767,15 @@ def check_environment(need_browser: bool, need_agents: bool) -> list[str]:
                   file=sys.stderr)
     except Exception as e:  # noqa: BLE001 — REALSCORE is enrichment, never fatal
         print(f"  ⚠ realsmart slug refresh failed: {e}", file=sys.stderr)
+    try:
+        age = negotiation.age_days()
+        if age is None or age > negotiation.MAX_AGE_DAYS:
+            cal = negotiation.build()
+            print(f"  negotiation calibration {'built' if age is None else 'refreshed'}: "
+                  f"{cal['n_matched']} matched sales, median {cal['overall']['median_pct']}% "
+                  f"under ask", file=sys.stderr)
+    except Exception as e:  # noqa: BLE001 — the estimate is enrichment, never fatal
+        print(f"  ⚠ negotiation calibration failed: {e}", file=sys.stderr)
     return fatal
 
 

@@ -79,6 +79,9 @@ power; model explains <10% of forward variance, so calibrate confidence.
 
 4. **Fill `agent_evaluation`** — `rating`, `confidence`, `rating_rationale` are
    mandatory; one-line verdict in `report_level.agent_executive_summary`.
+   Also set `max_buy_price`: the highest price at which you would rate this unit
+   a Buy, judged against its prints (null if no price fixes it). Read
+   `factual_data.negotiation` first: prints are negotiated, the ask is not.
 
 5. **Report** (auto-saves evaluation memory; commit `evaluations/`):
    ```bash

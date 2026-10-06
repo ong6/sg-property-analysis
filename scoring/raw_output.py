@@ -137,6 +137,16 @@ def _build_factual_data(listing: ScoredListing) -> dict:
     if cohort_txns is not None:
         facts["psf_cohort_txns"] = cohort_txns
 
+    # --- Negotiation: the price this ask is likely to close at ---
+    # URA prints are negotiated prices and the ask is not, so every value read
+    # above compares unlike things. Calibrated from our own matched sales and
+    # conditioned on how padded the ask is (see negotiation.py). Omitted when the
+    # calibration has never been built.
+    import negotiation
+    nego = negotiation.estimate(listing.price, listing.sqft, psf_premium)
+    if nego:
+        facts["negotiation"] = nego
+
     # --- Age-adjusted relative value vs district peers ---
     rel_value = listing.score_breakdown.get("relative_value")
     if rel_value:
@@ -534,11 +544,30 @@ def generate_raw_analysis(
             "before crediting it. The scorer damps these channels, but the displayed "
             "gross_yield_pct and premium percentages are raw."
         ),
+        "negotiation": (
+            "URA prints are NEGOTIATED transaction prices; the listing price is an ASK. "
+            "factual_data.negotiation gives the close this ask is likely to reach, measured "
+            "from our own listings matched to their URA sales: expected (median) and strong "
+            "(top-quarter) negotiation, conditioned on how far the ask sits over its own "
+            "prints. An ask at its prints typically closes only ~1-2% under; padded asks "
+            "close further under. When you compare this unit with its prints, compare the "
+            "EXPECTED CLOSE, not the ask. Rate the unit at its ask as before, and set "
+            "max_buy_price: the highest price at which you would rate it a Buy. The scan "
+            "turns that into whether a typical negotiation reaches it."
+        ),
         "steps": steps_by_mode[mode],
         "agent_field_guide": {
             "summary": "2-3 sentence investment thesis"
                        + (" for this development" if mode == "development" else " for this unit"),
             "rating": "Strong Buy / Buy / Neutral / Avoid  (Avoid = no-buy)",
+            "max_buy_price": ("The walk-away price: the highest price (SGD, a number) at which "
+                              "you would rate THIS unit a Buy on what you know NOW, anchored to "
+                              "its own recent prints. Unverified floor, facing or format belong "
+                              "in this price (a margin for the unknowns), not in a condition. At "
+                              "or above the ask only when you rate it Buy at the ask; below it "
+                              "otherwise. null when no realistic price makes it a Buy (lease, "
+                              "format or project problems a discount does not fix). "
+                              "Development mode: null."),
             "rating_rationale": "Key reasons for this rating (what makes it good or bad)",
             "red_flags": "List of specific risks from your research",
             "catalysts": "List of specific growth drivers from your research",

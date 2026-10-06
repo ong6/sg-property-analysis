@@ -133,6 +133,16 @@ From `factual_data.appreciation` — story/context (secondary, ~0 forward power)
   portal headline CAGR.** Only override with resale-to-resale evidence (and a stated
   catalyst with a date).
 
+Negotiation, before you call a price fair or dear:
+- URA prints are **negotiated** transaction prices; the listing price is an **ask**.
+  `factual_data.negotiation` gives the expected (median) and strong (top-quarter)
+  close for this ask, from our own listings matched to their URA sales and
+  conditioned on `ask_vs_own_prints_pct`. An ask at its own prints typically closes
+  ~1-2% under; a padded one further. Compare the **expected close** with the prints.
+- Rate the unit **at its ask**, and set `max_buy_price` (the walk-away price at
+  which you would rate it a Buy). The weekly scan checks how often comparable sales
+  closed that far under ask, and treats a typical-negotiation reach as a find.
+
 Research: catalysts (MRT, govt zones, en-bloc), supply, developer reputation.
 
 Regional forward priors: see "What the data actually predicts" above (OCR > RCR ≫
@@ -281,6 +291,7 @@ miscalibration. Use the full scale; reserve extremes for evidence, not vibes.
 {
   "summary": "2-3 sentence investment thesis",
   "rating": "Strong Buy / Buy / Neutral / Avoid",
+  "max_buy_price": 1750000,
   "rating_rationale": "Specific reasons, numbers and facts",
   "red_flags": ["specific risk"],
   "catalysts": ["specific growth driver"],

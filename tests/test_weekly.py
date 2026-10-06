@@ -608,6 +608,91 @@ class TestStorePush:
         assert "| — |" in row and row.count("|") == 9
 
 
+class TestNegotiatedFinds:
+    """A Neutral at the ask still reaches the store when the agent's walk-away
+    price is within a typical negotiation."""
+
+    @pytest.fixture(autouse=True)
+    def _calibration(self, monkeypatch):
+        import negotiation
+        discounts = [i * 0.25 for i in range(40)]   # 0..9.75% under ask
+        cal = {"built_at": "2026-10-06", "n_matched": 40, "sales_from": "2026-06",
+               "sales_to": "2026-09", "pairs": [[0.0, d] for d in discounts],
+               "discounts": discounts}
+        monkeypatch.setattr(negotiation, "load", lambda: cal)
+
+    def _note(self, tmp_path):
+        p = tmp_path / "scan-finds.md"
+        p.write_text(REAL_NOTE)
+        return str(p)
+
+    def _cand(self, rid):
+        return {"id": rid, "project_name": "Test Condo", "beds": 3, "sqft": 1000,
+                "price": 1_000_000, "psf": 1000.0, "district": "D18",
+                "score_1000": 700, "url": f"https://pg/{rid}"}
+
+    def _v(self, rating, max_buy, conf="medium"):
+        return {"rating": rating, "confidence": conf, "summary": "s",
+                "agent_evaluation": {"max_buy_price": max_buy},
+                "key_facts": {"negotiation": {"ask_vs_own_prints_pct": 0.0}}}
+
+    def test_typical_reach_is_pushed_with_the_offer(self, tmp_path):
+        path = self._note(tmp_path)
+        added = weekly.push_to_store("2026-10-06", [self._cand("a")],
+                                     {"a": self._v("Neutral", 960_000)}, path=path)
+        assert [x["rating"] for x in added] == ["Buy at ≤ $960,000 (Neutral at ask)"]
+        row = [l for l in open(path).read().splitlines() if "https://pg/a" in l][0]
+        assert "needs −4.0%" in row and row.count("|") == 9
+
+    def test_hard_or_out_of_reach_stays_in_the_digest(self, tmp_path):
+        path = self._note(tmp_path)
+        shortlist = [self._cand("a"), self._cand("b")]
+        verdicts = {"a": self._v("Neutral", 930_000), "b": self._v("Neutral", 900_000)}
+        assert weekly.push_to_store("2026-10-06", shortlist, verdicts, path=path) == []
+
+    def test_a_non_buy_with_a_walk_away_at_the_ask_contradicts_itself(self, tmp_path):
+        path = self._note(tmp_path)
+        assert weekly.push_to_store("2026-10-06", [self._cand("a")],
+                                    {"a": self._v("Neutral", 1_000_000)}, path=path) == []
+
+    def test_digest_says_at_the_ask_plainly(self):
+        text = weekly.build_digest("2026-10-06", {"ok": True}, [self._cand("a")], [],
+                                   {"a": self._v("Buy", 1_000_000)}, 650, 12, False, [])
+        assert "walk-away $1,000,000 is at or above the ask" in text and "−0.0%" not in text
+
+    def test_avoid_never_reaches_the_store(self, tmp_path):
+        path = self._note(tmp_path)
+        assert weekly.push_to_store("2026-10-06", [self._cand("a")],
+                                    {"a": self._v("Avoid", 990_000)}, path=path) == []
+
+    def test_low_confidence_still_blocks(self, tmp_path):
+        path = self._note(tmp_path)
+        assert weekly.push_to_store("2026-10-06", [self._cand("a")],
+                                    {"a": self._v("Neutral", 990_000, "low")}, path=path) == []
+
+    def test_digest_shows_the_close_and_the_walk_away(self):
+        cand = self._cand("a")
+        text = weekly.build_digest(
+            "2026-10-06", {"ok": True}, [cand], [], {"a": self._v("Neutral", 960_000)},
+            650, 12, False, [])
+        assert "Neutral at ask → 🟢 Buy at ≤ $960,000" in text
+        assert "expected close $951,000" in text
+        assert "Buy at a typical negotiation" in text
+
+    def test_old_verdict_without_a_walk_away_gets_the_estimate_only(self):
+        cand = self._cand("a")
+        v = {"rating": "Neutral", "confidence": "medium", "summary": "s"}
+        text = weekly.build_digest("2026-10-06", {"ok": True}, [cand], [], {"a": v},
+                                   650, 12, False, [])
+        assert "no own-print benchmark → expected close" in text
+        assert "walk-away" not in text
+
+    def test_prompt_asks_for_the_walk_away_price(self):
+        cand = {"id": "a", "project_name": "X", "score_1000": 700,
+                "url": "https://pg/a", "ingest_flags": []}
+        assert "max_buy_price" in weekly._agent_prompt(cand)
+
+
 class TestRealsmart:
     def test_url_resolves_against_the_sitemap_index(self, monkeypatch):
         import realsmart

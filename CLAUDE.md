@@ -98,6 +98,15 @@ used, and ask if intent is unclear.
   `ask_below_stack_prints` (below p10 of a deep print set — loft void or bait),
   `bedroom_sqft_mismatch`. Gross yield >~5.5% is the same artifact mirrored
   through rent ÷ price — verify ask, `rent_source`, and format first.
+- **Judge the deal, not the ask.** URA prints are negotiated prices; a listing
+  price is an ask. `factual_data.negotiation` (`negotiation.py`, calibrated from
+  our own listings matched to their URA sales) gives the expected and strong
+  close for this ask. The room depends on how padded the ask is: one at its own
+  prints typically closes ~1-2% under, one 10%+ over closes ~4-5% under (Oct 2026,
+  610 sales, median 3.1% / ~$52 psf overall). Compare the expected close with
+  the prints, rate the unit at its ask, and always set `max_buy_price`, the
+  highest price at which it would be a Buy. Rebuild with
+  `python negotiation.py --build` (the weekly scan does it monthly).
 - **Override with care.** The system de-biases new-launch appreciation; don't
   override the adjusted rate with a portal headline CAGR — resale-to-resale
   evidence only.
@@ -238,7 +247,7 @@ restamp the scored book's vintage):
 | `POLL_MAX_PAGES` | 10 | search is date-desc, so pages = reach; the poller's 2 only covers a 6-hourly cadence |
 | `RE_EVAL_COOLDOWN_DAYS` | 30 | a fresh listing of an already-judged (condo, beds) rarely changes the call |
 | `AI_TIMEOUT_S` | 1800 | per-agent wall clock; past it something is stuck |
-| store push | Buy/Strong Buy **and** ≥ medium confidence | the store note is a feed the owner reads, not a log |
+| store push | Buy/Strong Buy, **or** a non-Avoid whose `max_buy_price` sits below the ask within a typical negotiation (≥ half of comparable sales closed that far under ask); **and** ≥ medium confidence | the store note is a feed the owner reads, not a log; a Neutral at the ask that a normal offer turns into a Buy is a find |
 
 **Budget allocation is per-mandate, not pure score rank.** Hers is a ~$1M
 larger budget and therefore systematically nicer stock, so a straight ranking
