@@ -134,6 +134,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-habitat-60246778",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,292 sqft 3BR/2-bath at Sky Habitat (Bishan, 85yr lease left, ~300-500m to the Bishan NSL/CCL interchange) asking $2.49M ($1,927 psf), cut 4.2% from $2.60M on the same listing id after ~10 weeks. It is a quality, deeply liquid asset in a strong family catchment, priced at market: once the comp set is corrected it sits roughly 0-4% below its own time-adjusted prints and 1.6% below age-adjusted D20 peers. That is no measurable value edge. Floor and exact layout are undisclosed.",
+      "rating_rationale": "Fair price on a good asset. The headline value is an artifact, so this is not a Buy. (1) The -13.7% 'discount vs URA median' is a cohort artifact. psf_cohort_txns=6, and 4 of those 6 prints are the premium 1,216 sqft stack on floors 21-35 at $2,220-2,368 psf (Oct-25 to Jun-26), which puts the cohort median at ~$2,232. Excluding that tier, the project's 1,163-1,410 sqft 3BR prints over 24 months are $1,802 (Oct-24, fl 1-5), $1,844, $1,930, $2,049 (Jun-25, fl 1-5), $1,856 (Apr-26, 1,195 sqft fl 16-20) and $1,986. That is a median of ~$1,890, or ~$1,950-2,000 after adjusting at the project's ~4-5%/yr 2024-26 drift. (2) The format is not the standard 3BR. Sky Habitat's standard 3BR is 3-bath at 1,216-1,249 sqft. This listing is 1,292 sqft / 2-bath, a size with no URA print. The nearest odd-size 3BRs (1,259 and 1,281 sqft) printed $1,701-1,835 in 2023-24, below the 1,249 type, which time-adjusts to roughly $1,870-2,020. $1,927 sits inside that range, not below it. (3) Independent check: -1.6% vs the age-adjusted D20 1,050-1,400 sqft median ($1,960, 18 band peers). At market. (4) MMR 731 is overstated. psf_value contributes +6.26 from the artifact discount. The region term (+1.9) credits OCR, but URA files Sky Habitat as RCR (~+0.4). Removing both gives an estimated ~1,527 raw, ~680 score_1000. That is still above the 650 tier, but the margin is noise given R^2<0.10. (5) Exit evidence is middling, not clean: realsmart REALSCORE 3.0, 81.7% profitable on 153 resale pairs (28 losses, mostly 2012 launch-peak buyers), 3.2% avg annualized, 7.8yr avg hold. This project has lost owners money, though the losses trace to a launch premium a resale buyer today does not pay. (6) Strengths are real: deep liquidity (107 URA prints in 5y, 649 lifetime), an interchange within ~300-500m, Junction 8, schools (Catholic High, Raffles Institution), age 11 inside the 7-30yr returns plateau, and 3BR rent of $6,500 on 18 contracts in 12 months (gross 3.1%). Buy trigger: about $2.35M or below (~$1,820 psf, ~7% under time-adjusted same-format comps), with a confirmed floor of 11+ and confirmed bath count and terrace share of strata area.",
+      "red_flags": [
+        "-13.7% vs URA median is a cohort artifact: 4 of 6 cohort prints (psf_cohort_txns=6) are the premium 1,216 sqft stack on floors 21-35 at $2,220-2,368 psf; against non-premium 3BR prints the ask is roughly at market (0 to -4% time-adjusted)",
+        "MMR 731 overstated: psf_value +6.26 comes from that artifact, and the region term credits OCR (+1.9) where URA classifies Sky Habitat as RCR (~+0.4); est ~680 once corrected",
+        "Format uncertainty: 1,292 sqft 3BR/2-bath matches no URA area. Standard 3BR here is 3-bath at 1,216-1,249 sqft, and the nearest odd sizes (1,259/1,281) print below the standard type ($1,701-1,835 in 2023-24). Strata area may include terrace or planter.",
+        "Floor and facing undisclosed (PropertyGuru does not serve facing; no floor on the listing). Same-project 3BR prints span ~$1,700-2,370 psf by stack and floor, so this is an unpriced risk at a near-market ask.",
+        "Downside history: realsmart REALSCORE 3.0, 28 of 153 resales (18.3%) at a loss. This project has lost owners money (2012 launch ~$1,600 psf avg, relaunched 2014 at 10-15% lower).",
+        "Mandate note: URA files Sky Habitat as RCR. It passes the weekly gate only because D20 sits in OCR_DISTRICTS. The OCR>RCR forward tilt (3.7 vs 3.1%/yr realized) does not apply here.",
+        "Nearby supply: Thomson Reserve (CapitaLand/UOL/SingLand, ~1,268 units, Bright Hill Drive) launching ~Oct-2026 at ~$2,500-2,600 psf, plus the Lorong Puntong GLS (~140 units). This competes for the same family buyer over the hold window.",
+        "Top of 'hers' budget ($2.49M vs ~$2.5M) with ~$97.6k entry costs and no negotiating headroom left inside the mandate",
+        "Unsold ~10 weeks: listed Jul-28 at $2.60M ($2,012 psf), cut to $2.49M on the same id. The cut moved it from above market to at market, not below."
+      ],
+      "catalysts": [
+        "~306-510m to Bishan NS17/CC15 interchange plus Junction 8: top-tier connectivity for a non-CCR address",
+        "School catchment (Catholic High, Raffles Institution, Kuo Chuan, Ai Tong nearby) and Bishan-AMK Park. Durable family rental and resale demand.",
+        "Deep liquidity: 509 units, 107 URA prints in 5y, 649 lifetime transactions; 37% HDB-upgrader buyers per realsmart (Bishan HDB values support the upgrader pool)",
+        "Resale-to-new-launch gap: Thomson Reserve at ~$2,500+ psf for compact 3BRs (~904 sqft) vs this 1,292 sqft at $1,927 psf. That gap supports Sky Habitat's floor and the space-per-dollar argument at exit.",
+        "Age 11 / 85yr lease: inside the measured 7-30yr returns plateau; ~78yr left at a 7yr exit, well clear of financing thresholds",
+        "Safdie-designed twin towers with sky bridges: a differentiated, recognisable asset"
+      ],
+      "as_of": {
+        "price": 2490000,
+        "psf": 1927.24,
+        "beds": 3,
+        "sqft": 1292.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.0,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.13,
+        "nearest_mrt": "Bishan",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 85
+      },
+      "agent_evaluation": {
+        "summary": "A 1,292 sqft 3BR/2-bath at Sky Habitat (Bishan, 85yr lease left, ~300-500m to the Bishan NSL/CCL interchange) asking $2.49M ($1,927 psf), cut 4.2% from $2.60M on the same listing id after ~10 weeks. It is a quality, deeply liquid asset in a strong family catchment, priced at market: once the comp set is corrected it sits roughly 0-4% below its own time-adjusted prints and 1.6% below age-adjusted D20 peers. That is no measurable value edge. Floor and exact layout are undisclosed.",
+        "rating": "Neutral",
+        "rating_rationale": "Fair price on a good asset. The headline value is an artifact, so this is not a Buy. (1) The -13.7% 'discount vs URA median' is a cohort artifact. psf_cohort_txns=6, and 4 of those 6 prints are the premium 1,216 sqft stack on floors 21-35 at $2,220-2,368 psf (Oct-25 to Jun-26), which puts the cohort median at ~$2,232. Excluding that tier, the project's 1,163-1,410 sqft 3BR prints over 24 months are $1,802 (Oct-24, fl 1-5), $1,844, $1,930, $2,049 (Jun-25, fl 1-5), $1,856 (Apr-26, 1,195 sqft fl 16-20) and $1,986. That is a median of ~$1,890, or ~$1,950-2,000 after adjusting at the project's ~4-5%/yr 2024-26 drift. (2) The format is not the standard 3BR. Sky Habitat's standard 3BR is 3-bath at 1,216-1,249 sqft. This listing is 1,292 sqft / 2-bath, a size with no URA print. The nearest odd-size 3BRs (1,259 and 1,281 sqft) printed $1,701-1,835 in 2023-24, below the 1,249 type, which time-adjusts to roughly $1,870-2,020. $1,927 sits inside that range, not below it. (3) Independent check: -1.6% vs the age-adjusted D20 1,050-1,400 sqft median ($1,960, 18 band peers). At market. (4) MMR 731 is overstated. psf_value contributes +6.26 from the artifact discount. The region term (+1.9) credits OCR, but URA files Sky Habitat as RCR (~+0.4). Removing both gives an estimated ~1,527 raw, ~680 score_1000. That is still above the 650 tier, but the margin is noise given R^2<0.10. (5) Exit evidence is middling, not clean: realsmart REALSCORE 3.0, 81.7% profitable on 153 resale pairs (28 losses, mostly 2012 launch-peak buyers), 3.2% avg annualized, 7.8yr avg hold. This project has lost owners money, though the losses trace to a launch premium a resale buyer today does not pay. (6) Strengths are real: deep liquidity (107 URA prints in 5y, 649 lifetime), an interchange within ~300-500m, Junction 8, schools (Catholic High, Raffles Institution), age 11 inside the 7-30yr returns plateau, and 3BR rent of $6,500 on 18 contracts in 12 months (gross 3.1%). Buy trigger: about $2.35M or below (~$1,820 psf, ~7% under time-adjusted same-format comps), with a confirmed floor of 11+ and confirmed bath count and terrace share of strata area.",
+        "red_flags": [
+          "-13.7% vs URA median is a cohort artifact: 4 of 6 cohort prints (psf_cohort_txns=6) are the premium 1,216 sqft stack on floors 21-35 at $2,220-2,368 psf; against non-premium 3BR prints the ask is roughly at market (0 to -4% time-adjusted)",
+          "MMR 731 overstated: psf_value +6.26 comes from that artifact, and the region term credits OCR (+1.9) where URA classifies Sky Habitat as RCR (~+0.4); est ~680 once corrected",
+          "Format uncertainty: 1,292 sqft 3BR/2-bath matches no URA area. Standard 3BR here is 3-bath at 1,216-1,249 sqft, and the nearest odd sizes (1,259/1,281) print below the standard type ($1,701-1,835 in 2023-24). Strata area may include terrace or planter.",
+          "Floor and facing undisclosed (PropertyGuru does not serve facing; no floor on the listing). Same-project 3BR prints span ~$1,700-2,370 psf by stack and floor, so this is an unpriced risk at a near-market ask.",
+          "Downside history: realsmart REALSCORE 3.0, 28 of 153 resales (18.3%) at a loss. This project has lost owners money (2012 launch ~$1,600 psf avg, relaunched 2014 at 10-15% lower).",
+          "Mandate note: URA files Sky Habitat as RCR. It passes the weekly gate only because D20 sits in OCR_DISTRICTS. The OCR>RCR forward tilt (3.7 vs 3.1%/yr realized) does not apply here.",
+          "Nearby supply: Thomson Reserve (CapitaLand/UOL/SingLand, ~1,268 units, Bright Hill Drive) launching ~Oct-2026 at ~$2,500-2,600 psf, plus the Lorong Puntong GLS (~140 units). This competes for the same family buyer over the hold window.",
+          "Top of 'hers' budget ($2.49M vs ~$2.5M) with ~$97.6k entry costs and no negotiating headroom left inside the mandate",
+          "Unsold ~10 weeks: listed Jul-28 at $2.60M ($2,012 psf), cut to $2.49M on the same id. The cut moved it from above market to at market, not below."
+        ],
+        "catalysts": [
+          "~306-510m to Bishan NS17/CC15 interchange plus Junction 8: top-tier connectivity for a non-CCR address",
+          "School catchment (Catholic High, Raffles Institution, Kuo Chuan, Ai Tong nearby) and Bishan-AMK Park. Durable family rental and resale demand.",
+          "Deep liquidity: 509 units, 107 URA prints in 5y, 649 lifetime transactions; 37% HDB-upgrader buyers per realsmart (Bishan HDB values support the upgrader pool)",
+          "Resale-to-new-launch gap: Thomson Reserve at ~$2,500+ psf for compact 3BRs (~904 sqft) vs this 1,292 sqft at $1,927 psf. That gap supports Sky Habitat's floor and the space-per-dollar argument at exit.",
+          "Age 11 / 85yr lease: inside the measured 7-30yr returns plateau; ~78yr left at a 7yr exit, well clear of financing thresholds",
+          "Safdie-designed twin towers with sky bridges: a differentiated, recognisable asset"
+        ],
+        "rental_assessment": "Well evidenced. URA 3BR filings in the 1,200-1,300 sqft band: 18 contracts in 12 months, median $6,500 (range $5,600-7,200; Aug-26 prints $6,400-6,600). realsmart rent psf $4.97 implies ~$6,400. Gross 3.13%, net ~1.8% all-cash. A 2-bath layout may let at the lower half of the range. Count yield as carry only; it is normal for Bishan.",
+        "appreciation_assessment": "No override. The URA 5yr CAGR of 4.0% (107 txns) is trailing and has ~0 forward power. The project's own 14-year record is weak (2012 launch ~$1,600 psf avg to ~$1,950-2,000 now, ~1.6%/yr), though recent 2024-26 drift is ~4-5%/yr. A realistic forward prior is the RCR realized baseline of ~3.1%/yr, not OCR 3.7%, at market entry with no value cushion. On ~3.1% the 5yr all-cash annualized ROI is ~3.2% vs the scorer's 3.9%. Treat the 5yr downside band (2.4%) as live. New-launch supply nearby both anchors and competes.",
+        "stack_notes": "Profile created this run (profiles/sky-habitat.json, low confidence, layouts only). No per-stack facing could be sourced. This 1,292 sqft 3BR/2-bath is not the standard 3BR (3-bath, 1,216-1,249 sqft). The 1,216 sqft type is the premium stack ($2,220-2,368 on floors 21-35). The 1,249 type prints only on floors 1-10. The odd 1,259/1,281 sizes trade below both. Floor undisclosed. Ask the agent for floor, stack, bath count, and whether strata area includes a terrace or planter before any offer.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.0,
+        "realsmart_pct_profitable": 81.7,
+        "realsmart_annual_return_pct": 3.2
+      },
+      "source": {
+        "run_dir": "output/run_119_500092760",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-sky-habitat-500092760",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

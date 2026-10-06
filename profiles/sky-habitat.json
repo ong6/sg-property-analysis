@@ -1,0 +1,131 @@
+{
+  "condo": "Sky Habitat",
+  "slug": "sky-habitat",
+  "district": "D20",
+  "researched_at": "2026-10-06",
+  "revision": 1,
+  "confidence": "low",
+  "sources": [
+    {
+      "url": "data/ura_district_D20.csv",
+      "type": "listing",
+      "note": "URA sqft clusters Sep-21..Sep-26 (107 resale prints); URA Market Segment = Rest of Central Region (RCR), not OCR"
+    },
+    {
+      "url": "data/ura_rental_D20.csv",
+      "type": "listing",
+      "note": "284 rental contracts; 3BR filings sit in the 1,200-1,300 sqft band (59), with 1,500-1,900 sqft for larger 3BR/4BR"
+    },
+    {
+      "url": "https://www.safdiearchitects.com/projects/sky-habitat-residential-development",
+      "type": "brochure",
+      "note": "Moshe Safdie design: two 38-storey stepped towers linked by three sky bridges (sky gardens / pool), private terraces on many units"
+    },
+    {
+      "url": "https://www.edgeprop.sg/condo-apartment/sky-habitat",
+      "type": "listing",
+      "note": "509 units, 99yr from 2011, TOP 2015; ~3-6 min walk to Bishan NS17/CC15; some units view Bishan-AMK Park / MacRitchie; CTE & PIE access"
+    },
+    {
+      "url": "https://www.propertyguru.com.sg/project/sky-habitat-21158",
+      "type": "listing",
+      "note": "3BR range 1,216-1,862 sqft; standard 3BR listed 3BR/3-bath at 1,216-1,249 sqft"
+    }
+  ],
+  "development": {
+    "total_units": 509,
+    "blocks": 2,
+    "max_floor": 38,
+    "tenure": "99 yrs from 30/05/2011",
+    "top_year": 2015,
+    "developer": "Bishan Residential Development Pte Ltd (CapitaLand / Mitsubishi Estate Asia / Shimizu JV)",
+    "orientation_notes": "Two stepped 38-storey towers at 7 Bishan Street 15 linked by three sky bridges. Per-stack facing NOT sourced: public listings mention Bishan-AMK Park / MacRitchie views on some stacks and 'no west sun' on some 3BRs, but no site plan with stack-level orientation was found. Launched Apr-2012 (~$1,600 psf avg), slow sales, relaunched Apr-2014 at 10-15% lower.",
+    "known_issues": [
+      "URA classifies the project RCR although D20 is in the scorer's OCR district partition",
+      "launch-peak entry history: realsmart shows 28 of 153 resales (18%) sold at a loss",
+      "1,216 sqft 3BR prints at $2,220-2,368 psf on floors 21-35 (2025-26) form a premium tier that dominates the 3BR size cohort and inflates the project median"
+    ]
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "1BR",
+      "sqft": [
+        710
+      ],
+      "efficiency": "unknown",
+      "notes": "single format, deepest print set; $1,926-1,999 psf in 2025-26"
+    },
+    {
+      "type": "2BR",
+      "sqft": [
+        872,
+        893
+      ],
+      "efficiency": "unknown",
+      "notes": "$1,820-1,880 psf 2024-25"
+    },
+    {
+      "type": "2BR+S / large 2BR",
+      "sqft": [
+        1012,
+        1023,
+        1033,
+        1055,
+        1066
+      ],
+      "efficiency": "unknown",
+      "notes": "rental filings call these 2BR; routinely marketed as 3BR on PropertyGuru (bed_bands: 2BR band to ~1,055 sqft)"
+    },
+    {
+      "type": "3BR standard",
+      "sqft": [
+        1163,
+        1195,
+        1216,
+        1249
+      ],
+      "efficiency": "high",
+      "notes": "3BR/3-bath per listings. 1,216 sqft is a premium tier ($1,957-2,022 in 2024 -> $2,220-2,368 on floors 21-35 in 2025-26). 1,249 sqft prints are all floors 1-10 ($1,802-1,862 2023-24; $2,049 Jun-25)."
+    },
+    {
+      "type": "3BR large / odd-size",
+      "sqft": [
+        1259,
+        1281,
+        1324,
+        1356
+      ],
+      "efficiency": "unknown",
+      "notes": "rare prints, trade below the standard 3BR: 1,259 $1,701 (May-24, fl 11-15); 1,281 $1,702 (Jan-23) and $1,835 (Mar-24), both fl 21-25. A 1,292 sqft 3BR/2-bath listing (Oct-26) has no matching URA area; it may be in this group."
+    },
+    {
+      "type": "3BR+S / 4BR",
+      "sqft": [
+        1399,
+        1410,
+        1507,
+        1518,
+        1733,
+        1787,
+        1798,
+        1862,
+        1894
+      ],
+      "efficiency": "unknown",
+      "notes": "1,798 sqft is the liquid 4BR: $1,847-1,919 (2024) -> $1,936-2,052 (2025-26)"
+    },
+    {
+      "type": "Penthouse",
+      "sqft": [
+        2056,
+        2228,
+        2734,
+        3477
+      ],
+      "efficiency": "low",
+      "notes": "floors 31-40; thin, idiosyncratic prints"
+    }
+  ],
+  "first_researched_at": "2026-10-06"
+}
