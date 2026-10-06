@@ -67,6 +67,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-60075937",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,389 sqft ground-floor 3BR/3-bath at Waterfront Key (Far East, TOP 2012, 437 units, ~300m to DT30 Bedok Reservoir) asking $2.42M ($1,742 psf), the lowest psf of any 3BR in the live book. That low psf comes from the unit being large and on the ground floor, not from value. Against the project's own ground-floor large-format prints ($2.37–2.46M in 2025–26) the ask is fair, within about 2%. It is +7% over age-adjusted D16 peers, carries a ~2.8% gross yield, and has ~74 years of lease left at a 7-year exit. Strong exit record (97.2% of 286 resale pairs profitable), but no margin of safety.",
+      "rating_rationale": "Fair price, no edge. The apparent bargain ($1,742 psf vs $1,950–2,080 psf asks on the project's 1,163–1,227 sqft tower 3BRs) disappears once you compare like with like. URA prints show the project's large ground-floor 3BRs are separate formats: 1,313 sqft (8 prints, all floor 01-05) and 1,442 sqft (5 prints, all 01-05). They cleared at $2.403M (Jul-25) and $2.368M (Jul-26) for 1,313, and $2.40M (Feb-25) and $2.46M (Sep-25) for 1,442. Interpolating by size puts fair value for 1,389 sqft at ~$1,750–1,770 psf ($2.43–2.46M), so the $2.42M ask is at most ~1–2% cheap. The only way to read a real discount is if the 'Ground Floor' tag is wrong. 1,389 sqft has only ever printed at floors 06-15 ($2.60M / $2.689M high floor, Aug/Oct-24), which would make the ask ~10% under. But the floor is the agent's explicit structured field and the description could not be retrieved (PG 403, no EdgeProp mirror for a 4-day-old listing), so I take Ground at face value. On the robust forward signals it is middling. Region is OCR (URA-confirmed): a plus. Cheapness vs district peers is negative: +7.0% vs the age-adjusted D16 median and +2.1% vs the URA median, offset only by −5.6% vs the new-launch-implied $1,845. Downside evidence is genuinely strong: REALSCORE 3.7, 97.2% profitable on 286 matched resale pairs (8 losses), 46% HDB-upgrader buyers, MRT at the door. The drags are a weak ~2.8% gross / ~1.7% net carry, a lease at ~74 years on exit, ground-floor positioning in a development whose premium is the reservoir view, and fresh D16 supply (Vela Bay, Bayshore GLS). score_1000 688 leans on ~11 MMR points from the trailing 7.7% CAGR, which is backtested as story, not signal. The algo's own value channels are negative (psf_value −1.0, age_value −5.5, yield −4.8). Hold-worthy if bought nearer $2.30M (≈5% under ground comps); at $2.42M it is a fair-value purchase.",
+      "red_flags": [
+        "Ground floor in a development whose premium is the Bedok Reservoir view: no water view from ground level, plus road and traffic exposure on Bedok Reservoir Road for road-side stacks, and PES privacy, mosquito and damp checks needed at viewing.",
+        "Format unverified. 1,389 sqft has NEVER printed at floors 01-05 in URA (3 prints, all 06-15); the ground-floor large formats are 1,313 and 1,442 sqft. So either the sqft or the 'Ground Floor' tag is off, or it is an unrecorded ground variant. Confirm strata area and PES share from the title/floor plan before offering.",
+        "No margin of safety vs its true comps: the project's ground-floor large 3BRs printed $2.37–2.46M in 2025–26; $2.42M sits mid-range (~1–2% under a size-interpolated $2.43–2.46M).",
+        "Not cheap vs district peers: +7.0% vs the age-adjusted D16 median (size band 1,050–1,400) and +2.1% vs the URA median. The lead forward signal is neutral-to-negative.",
+        "Weak carry: 1,300–1,400 sqft 3BRs rented at a median $5,750 (8 URA contracts, last 12mo) → ~2.85% gross / ~1.7% net; raw_analysis's $5,400 gives 2.68%. Return depends almost entirely on price.",
+        "Lease: 99 yrs from 31-Oct-2007 → ~81 yrs left now (raw_analysis overstates as 82), ~76 at a 5-yr and ~74 at a 7-yr exit. The next buyer is pricing a lease that is heading toward the 70-yr stall zone.",
+        "score_1000 688 is propped up by ~11 MMR points from a trailing 7.7% 5-yr CAGR (≈0 forward power). The value components are all negative (psf_value −1.03, age_value −5.53, yield −4.83).",
+        "Exit supply: Vela Bay (515 units, launched Apr-2026 at $2,129–3,011 psf), the second Bayshore GLS and Sky Eden@Bedok, plus the sister Waterfront Isle/Waves/Gold resale book in the same micro-market.",
+        "Resident-reported budget original fittings (cracked sanitaryware/bidets); now 14 years old. 'Fully furnished' adds little resale value."
+      ],
+      "catalysts": [
+        "Exit record (downside evidence, not a forecast): REALSCORE 3.7, 97.2% of 286 matched resale pairs sold at a profit (278 vs 8), avg annualized 5.5%, avg holding 6.7 yrs, 697 total transactions since 2009.",
+        "Deep HDB-upgrader buyer pool (46% of buyers per realsmart) and a ~300m walk to DT30 Bedok Reservoir (DTL). Both are durable liquidity supports at the $2.3–2.5M 3BR quantum.",
+        "OCR region (URA 'Outside Central Region' on all 83 prints), the best measured forward-return prior.",
+        "Ground-floor large formats trade regularly here (1,313 × 8, 1,442 × 5 prints since 2021), so exit liquidity for this format is proven rather than speculative.",
+        "Bayshore / Vela Bay benchmarks ($2,129–3,011 psf) put the new-launch-implied fair value at $1,845 psf, ~5.6% above this ask. Mild support, though the same precinct adds competing supply.",
+        "If the floor turns out to be mislabeled and this is a tower 1,389 sqft unit, the ask is ~10% below the Oct-24 high-floor print of $2.689M. That is worth one question to the agent."
+      ],
+      "as_of": {
+        "price": 2420000,
+        "psf": 1742.26,
+        "beds": 3,
+        "sqft": 1389.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.7,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 2.68,
+        "nearest_mrt": "Bedok Reservoir",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 82
+      },
+      "agent_evaluation": {
+        "summary": "A 1,389 sqft ground-floor 3BR/3-bath at Waterfront Key (Far East, TOP 2012, 437 units, ~300m to DT30 Bedok Reservoir) asking $2.42M ($1,742 psf), the lowest psf of any 3BR in the live book. That low psf comes from the unit being large and on the ground floor, not from value. Against the project's own ground-floor large-format prints ($2.37–2.46M in 2025–26) the ask is fair, within about 2%. It is +7% over age-adjusted D16 peers, carries a ~2.8% gross yield, and has ~74 years of lease left at a 7-year exit. Strong exit record (97.2% of 286 resale pairs profitable), but no margin of safety.",
+        "rating": "Neutral",
+        "rating_rationale": "Fair price, no edge. The apparent bargain ($1,742 psf vs $1,950–2,080 psf asks on the project's 1,163–1,227 sqft tower 3BRs) disappears once you compare like with like. URA prints show the project's large ground-floor 3BRs are separate formats: 1,313 sqft (8 prints, all floor 01-05) and 1,442 sqft (5 prints, all 01-05). They cleared at $2.403M (Jul-25) and $2.368M (Jul-26) for 1,313, and $2.40M (Feb-25) and $2.46M (Sep-25) for 1,442. Interpolating by size puts fair value for 1,389 sqft at ~$1,750–1,770 psf ($2.43–2.46M), so the $2.42M ask is at most ~1–2% cheap. The only way to read a real discount is if the 'Ground Floor' tag is wrong. 1,389 sqft has only ever printed at floors 06-15 ($2.60M / $2.689M high floor, Aug/Oct-24), which would make the ask ~10% under. But the floor is the agent's explicit structured field and the description could not be retrieved (PG 403, no EdgeProp mirror for a 4-day-old listing), so I take Ground at face value. On the robust forward signals it is middling. Region is OCR (URA-confirmed): a plus. Cheapness vs district peers is negative: +7.0% vs the age-adjusted D16 median and +2.1% vs the URA median, offset only by −5.6% vs the new-launch-implied $1,845. Downside evidence is genuinely strong: REALSCORE 3.7, 97.2% profitable on 286 matched resale pairs (8 losses), 46% HDB-upgrader buyers, MRT at the door. The drags are a weak ~2.8% gross / ~1.7% net carry, a lease at ~74 years on exit, ground-floor positioning in a development whose premium is the reservoir view, and fresh D16 supply (Vela Bay, Bayshore GLS). score_1000 688 leans on ~11 MMR points from the trailing 7.7% CAGR, which is backtested as story, not signal. The algo's own value channels are negative (psf_value −1.0, age_value −5.5, yield −4.8). Hold-worthy if bought nearer $2.30M (≈5% under ground comps); at $2.42M it is a fair-value purchase.",
+        "red_flags": [
+          "Ground floor in a development whose premium is the Bedok Reservoir view: no water view from ground level, plus road and traffic exposure on Bedok Reservoir Road for road-side stacks, and PES privacy, mosquito and damp checks needed at viewing.",
+          "Format unverified. 1,389 sqft has NEVER printed at floors 01-05 in URA (3 prints, all 06-15); the ground-floor large formats are 1,313 and 1,442 sqft. So either the sqft or the 'Ground Floor' tag is off, or it is an unrecorded ground variant. Confirm strata area and PES share from the title/floor plan before offering.",
+          "No margin of safety vs its true comps: the project's ground-floor large 3BRs printed $2.37–2.46M in 2025–26; $2.42M sits mid-range (~1–2% under a size-interpolated $2.43–2.46M).",
+          "Not cheap vs district peers: +7.0% vs the age-adjusted D16 median (size band 1,050–1,400) and +2.1% vs the URA median. The lead forward signal is neutral-to-negative.",
+          "Weak carry: 1,300–1,400 sqft 3BRs rented at a median $5,750 (8 URA contracts, last 12mo) → ~2.85% gross / ~1.7% net; raw_analysis's $5,400 gives 2.68%. Return depends almost entirely on price.",
+          "Lease: 99 yrs from 31-Oct-2007 → ~81 yrs left now (raw_analysis overstates as 82), ~76 at a 5-yr and ~74 at a 7-yr exit. The next buyer is pricing a lease that is heading toward the 70-yr stall zone.",
+          "score_1000 688 is propped up by ~11 MMR points from a trailing 7.7% 5-yr CAGR (≈0 forward power). The value components are all negative (psf_value −1.03, age_value −5.53, yield −4.83).",
+          "Exit supply: Vela Bay (515 units, launched Apr-2026 at $2,129–3,011 psf), the second Bayshore GLS and Sky Eden@Bedok, plus the sister Waterfront Isle/Waves/Gold resale book in the same micro-market.",
+          "Resident-reported budget original fittings (cracked sanitaryware/bidets); now 14 years old. 'Fully furnished' adds little resale value."
+        ],
+        "catalysts": [
+          "Exit record (downside evidence, not a forecast): REALSCORE 3.7, 97.2% of 286 matched resale pairs sold at a profit (278 vs 8), avg annualized 5.5%, avg holding 6.7 yrs, 697 total transactions since 2009.",
+          "Deep HDB-upgrader buyer pool (46% of buyers per realsmart) and a ~300m walk to DT30 Bedok Reservoir (DTL). Both are durable liquidity supports at the $2.3–2.5M 3BR quantum.",
+          "OCR region (URA 'Outside Central Region' on all 83 prints), the best measured forward-return prior.",
+          "Ground-floor large formats trade regularly here (1,313 × 8, 1,442 × 5 prints since 2021), so exit liquidity for this format is proven rather than speculative.",
+          "Bayshore / Vela Bay benchmarks ($2,129–3,011 psf) put the new-launch-implied fair value at $1,845 psf, ~5.6% above this ask. Mild support, though the same precinct adds competing supply.",
+          "If the floor turns out to be mislabeled and this is a tower 1,389 sqft unit, the ask is ~10% below the Oct-24 high-floor print of $2.689M. That is worth one question to the agent."
+        ],
+        "rental_assessment": "Solid but low-yielding. URA filings put 1,300–1,400 sqft at Waterfront Key firmly in the 3BR band (24/24 contracts). The last 12 months show 8 contracts at a $5,750 median ($4,500–5,800), and a comparable ground-floor 1,475 sqft 3BR/3-bath was advertised at $6,500. On $2.42M that is ~2.85% gross / ~1.7% net after costs, typical for a large OCR 3BR, and below any yield-play threshold. Tenant demand from Bedok/Tampines families and DTL commuters is steady; ground-floor PES units suit families with kids or pets.",
+        "appreciation_assessment": "Trailing 7.7%/yr (83 resale prints, 5-yr URA CAGR) reflects the 2021–26 bull run and has ≈0 forward power on its own. Same-format resale-to-resale evidence: the 1,313 sqft ground format went $1.92M (Jul-23) → $2.40M (Jul-25) → $2.37M (Jul-26), and the 1,442 format went $2.40M (Feb-25) → $2.46M (Sep-25). That is a strong 2023–25 leg and a flattening 2025–26, though tower 3BRs still set a $1,950 psf project record in Sep-26. Forward, I would underwrite the OCR baseline (~3–4%/yr), trimmed slightly for lease decay toward ~74 yrs at exit and new D16 supply. All-cash total return of roughly 5%/yr including carry, not the 7% that raw_analysis projects off the trailing rate.",
+        "stack_notes": "Listing tags the unit 'Ground Floor', 3 baths, fully furnished. The block is unknown: the '772 Bedok Reservoir Road' address is likely PG's project default. Facing is not served. A ground unit forgoes the reservoir view that drives the project's high-floor premium (1,389 sqft high-floor prints reached $1,936 psf in Oct-24 vs ~$1,750 for ground large formats). Profile saved as profiles/waterfront-key.json (low confidence, layouts from URA clusters; per-stack facing not sourced). Ground-only sizes 1,313/1,442/1,464 are the comp set for this unit, not the 1,324–1,389 tower formats. Verify strata area, PES share and whether the patio faces the pool or the road at viewing.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.7,
+        "realsmart_pct_profitable": 97.2,
+        "realsmart_annual_return_pct": 5.5
+      },
+      "source": {
+        "run_dir": "output/run_129_500281530",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-waterfront-key-500281530",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
