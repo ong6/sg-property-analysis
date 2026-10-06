@@ -302,6 +302,13 @@
       "latest_date": "2026-06-11",
       "eval_count": 3
     },
+    "bishan-park-condo": {
+      "condo": "Bishan Park Condo",
+      "district": "D20",
+      "latest_rating": "Neutral",
+      "latest_date": "2026-10-06",
+      "eval_count": 1
+    },
     "the-landmark": {
       "condo": "The Landmark",
       "district": "D03",

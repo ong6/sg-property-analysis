@@ -1,0 +1,83 @@
+{
+  "condo": "Bishan Park Condo",
+  "slug": "bishan-park-condo",
+  "district": "D20",
+  "history": [
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A big 1,346 sqft low-floor 3BR at Bishan Park Condo (Sin Ming Walk, 320 units, 1994 TOP), 393m from Bright Hill TEL, asking $1.80M ($1,337 psf) after a single-agent cut from $1.83M over 8 weeks. The unit is priced ~4% under the project's own recent low-floor 3BR prints, a real but small edge. The 728 score rests on a sub-market discount that has never closed (0.77-0.83x the D20 band median every year since 2022) and on an overstated rent. Underneath that: a lease that exits below 60 years during the hold, URA-RCR classification, and a 74%-profitable exit record. It is a fair-priced unit, not a value buy.",
+      "rating_rationale": "Real, small unit-level edge: $1,337 psf vs a $1,398 median across the six 24-month low-floor (01-05) 3BR prints at 1,270-1,345 sqft ($1,366-1,464). That is ~$80k under comps and also under the competing live ask at 1,345 sqft ($1.889M, 500260983). The price cut is genuine (same id, same agent: $1.83M on 2026-08-12, $1.80M on 2026-10-06). The score does not survive scrutiny: (1) age_value +13.74, its largest component, credits -18.8% vs the D20 age-adjusted median, but Bishan Park has sat at 0.77-0.83x the D20 same-band median every year 2022-2026, so that is a location level, not a dislocation. (2) The yield is scored on a $5,613 district_bedroom rent, but 22 URA contracts for 3BR 1,300-1,400 sqft here have a median of $4,500 (last 12mo $4,000-4,800), giving ~3.0% gross, not 3.74%. Re-scoring with the evidenced rent gives 659, and removing the level credit gives ~546, market-typical. (3) The lease runs 99 yrs from 1 Mar 1991 (edgeprop/URA), so 63.4 yrs remain today, 58.4 at a 5yr exit and 56.4 at 7yr. A buyer under ~37-39 then gets pro-rated CPF, and Bala's curve implies ~0.8%/yr extra decay. So far the market has not punished it: +9.3% from 2023 to 2025/26, in line with 1997-lease neighbours Rafflesia (+9.6%) and Thomson Grand (+8.1%), behind The Gardens at Bishan (+17%); the ~48-50yr leases (Braddell View, Lakeview) were flat. (4) URA tags every print 'Rest of Central Region', so it fails the owner's OCR-only mandate on URA's own classification; the weekly gate let it through because D20 is in OCR_DISTRICTS. (5) realsmart: REALSCORE 3.6, 73.9% profitable on 166 resale pairs, so about 1 in 4 exits lost money; weak downside evidence. Expected unlevered return is roughly 3%/yr price plus ~1.8% net carry, less ~5.5% round-trip costs: market-like with a fatter left tail. Neutral; it becomes a stronger candidate near $1.72-1.75M if the owner relaxes the OCR rule.",
+      "red_flags": [
+        "Lease 99 yrs from 1 Mar 1991: 63.4 yrs left today, ~58.4 at a 5yr exit and ~56.4 at 7yr. Exits below the 60-yr line, so buyers under ~37-39 get pro-rated CPF and the buyer pool narrows",
+        "URA Market Segment = Rest of Central Region (all 58 prints), so it fails the owner's OCR-only hard filter; the region tilt does not apply",
+        "Score inflated by a permanent sub-market level: 0.77-0.83x the D20 same-band median every year since 2022 (age_value +13.74 of 728)",
+        "Rent overstated: scorer $5,613 (district_bedroom, conf 0.55) vs URA 3BR 1,300-1,400 sqft median $4,500 (22 contracts). Gross yield ~3.0%, flat rents since 2023",
+        "realsmart 73.9% profitable on 166 resale pairs: ~26% of exits lost money",
+        "Heavy live supply: ~8 distinct 3BR and ~5 4BR asks in a 320-unit project. The exit competes with a deep book",
+        "32-year-old building: reviews note very old lifts and a noisy location. Special-levy and capex risk ahead",
+        "2019 en bloc (guide $680-688M, >80% signed) never closed. Today's resale values plus a lease top-up make a re-run uneconomic near term",
+        "Low floor; stack and facing unknown (PropertyGuru does not serve facing; listing address is not block evidence)"
+      ],
+      "catalysts": [
+        "Ask ~4% (~$80k) below the project's own 24mo low-floor 3BR prints, and below the competing 1,345 sqft live ask ($1.889M)",
+        "Motivated seller: real single-agent cut $1.83M to $1.80M after ~8 weeks, with room to negotiate toward ~$1.75M",
+        "Bright Hill TEL station 393m (operating since 2021, so priced in, not a future catalyst); Bishan-AMK Park and Sin Ming amenities",
+        "Large 1,346 sqft 3BR with high ceilings at a sub-$1.8M quantum; deep family demand in the Bishan/Bright Hill school belt",
+        "Long-dated en bloc optionality (269,796 sqft site, plot ratio 2.1). Narrative only, not underwritten"
+      ],
+      "as_of": {
+        "price": 1800000,
+        "psf": 1337.3,
+        "beds": 3,
+        "sqft": 1346.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.74,
+        "nearest_mrt": "Bright Hill",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 64
+      },
+      "agent_evaluation": {
+        "summary": "A big 1,346 sqft low-floor 3BR at Bishan Park Condo (Sin Ming Walk, 320 units, 1994 TOP), 393m from Bright Hill TEL, asking $1.80M ($1,337 psf) after a single-agent cut from $1.83M over 8 weeks. The unit is priced ~4% under the project's own recent low-floor 3BR prints, a real but small edge. The 728 score rests on a sub-market discount that has never closed (0.77-0.83x the D20 band median every year since 2022) and on an overstated rent. Underneath that: a lease that exits below 60 years during the hold, URA-RCR classification, and a 74%-profitable exit record. It is a fair-priced unit, not a value buy.",
+        "rating": "Neutral",
+        "rating_rationale": "Real, small unit-level edge: $1,337 psf vs a $1,398 median across the six 24-month low-floor (01-05) 3BR prints at 1,270-1,345 sqft ($1,366-1,464). That is ~$80k under comps and also under the competing live ask at 1,345 sqft ($1.889M, 500260983). The price cut is genuine (same id, same agent: $1.83M on 2026-08-12, $1.80M on 2026-10-06). The score does not survive scrutiny: (1) age_value +13.74, its largest component, credits -18.8% vs the D20 age-adjusted median, but Bishan Park has sat at 0.77-0.83x the D20 same-band median every year 2022-2026, so that is a location level, not a dislocation. (2) The yield is scored on a $5,613 district_bedroom rent, but 22 URA contracts for 3BR 1,300-1,400 sqft here have a median of $4,500 (last 12mo $4,000-4,800), giving ~3.0% gross, not 3.74%. Re-scoring with the evidenced rent gives 659, and removing the level credit gives ~546, market-typical. (3) The lease runs 99 yrs from 1 Mar 1991 (edgeprop/URA), so 63.4 yrs remain today, 58.4 at a 5yr exit and 56.4 at 7yr. A buyer under ~37-39 then gets pro-rated CPF, and Bala's curve implies ~0.8%/yr extra decay. So far the market has not punished it: +9.3% from 2023 to 2025/26, in line with 1997-lease neighbours Rafflesia (+9.6%) and Thomson Grand (+8.1%), behind The Gardens at Bishan (+17%); the ~48-50yr leases (Braddell View, Lakeview) were flat. (4) URA tags every print 'Rest of Central Region', so it fails the owner's OCR-only mandate on URA's own classification; the weekly gate let it through because D20 is in OCR_DISTRICTS. (5) realsmart: REALSCORE 3.6, 73.9% profitable on 166 resale pairs, so about 1 in 4 exits lost money; weak downside evidence. Expected unlevered return is roughly 3%/yr price plus ~1.8% net carry, less ~5.5% round-trip costs: market-like with a fatter left tail. Neutral; it becomes a stronger candidate near $1.72-1.75M if the owner relaxes the OCR rule.",
+        "red_flags": [
+          "Lease 99 yrs from 1 Mar 1991: 63.4 yrs left today, ~58.4 at a 5yr exit and ~56.4 at 7yr. Exits below the 60-yr line, so buyers under ~37-39 get pro-rated CPF and the buyer pool narrows",
+          "URA Market Segment = Rest of Central Region (all 58 prints), so it fails the owner's OCR-only hard filter; the region tilt does not apply",
+          "Score inflated by a permanent sub-market level: 0.77-0.83x the D20 same-band median every year since 2022 (age_value +13.74 of 728)",
+          "Rent overstated: scorer $5,613 (district_bedroom, conf 0.55) vs URA 3BR 1,300-1,400 sqft median $4,500 (22 contracts). Gross yield ~3.0%, flat rents since 2023",
+          "realsmart 73.9% profitable on 166 resale pairs: ~26% of exits lost money",
+          "Heavy live supply: ~8 distinct 3BR and ~5 4BR asks in a 320-unit project. The exit competes with a deep book",
+          "32-year-old building: reviews note very old lifts and a noisy location. Special-levy and capex risk ahead",
+          "2019 en bloc (guide $680-688M, >80% signed) never closed. Today's resale values plus a lease top-up make a re-run uneconomic near term",
+          "Low floor; stack and facing unknown (PropertyGuru does not serve facing; listing address is not block evidence)"
+        ],
+        "catalysts": [
+          "Ask ~4% (~$80k) below the project's own 24mo low-floor 3BR prints, and below the competing 1,345 sqft live ask ($1.889M)",
+          "Motivated seller: real single-agent cut $1.83M to $1.80M after ~8 weeks, with room to negotiate toward ~$1.75M",
+          "Bright Hill TEL station 393m (operating since 2021, so priced in, not a future catalyst); Bishan-AMK Park and Sin Ming amenities",
+          "Large 1,346 sqft 3BR with high ceilings at a sub-$1.8M quantum; deep family demand in the Bishan/Bright Hill school belt",
+          "Long-dated en bloc optionality (269,796 sqft site, plot ratio 2.1). Narrative only, not underwritten"
+        ],
+        "rental_assessment": "URA rental filings are the authority here: 3BR 1,300-1,400 sqft contracts run $4,000-4,800/mo, median $4,500 across 22 contracts, with no growth from late 2023 to Aug 2026. At $1.80M that is ~3.0% gross and ~1.7-1.9% net after property tax, maintenance on a large old unit and vacancy. Edgeprop independently shows 2.7%. The scored 3.74% (district_bedroom $5,613) is ~25% too high. Demand is steady (39 3BR contracts since Nov 2023) but the yield is carry, not a return driver.",
+        "appreciation_assessment": "No project-specific rate was used (regional_baseline 4.2% OCR), and that baseline is wrong twice over. The project is URA-RCR (realized forward ~3.1%/yr per the backtest), and the lease ages 63 to 56 years through the hold, adding ~0.5-0.8%/yr decay above a typical-lease peer. Own resale evidence: same-band median $1,290 (2023) to $1,410 (2025-26), +9.3% over ~2.5 yrs (~3.6%/yr), in step with the 1997-lease Bishan peers. No 60-year stall yet, unlike the 1994-95 Bukit Batok leases. A defensible forward rate is ~2.5-3.0%/yr plus a one-off ~4% if the entry discount closes. Not overridden: there is no dated catalyst to anchor an override.",
+        "stack_notes": "Listing says 'Low Floor' (URA band 01-05); stack, block and facing unknown. The 1,345.5 sqft format is the standard 3BR stack (prints at both 01-05 and 06-10), not a PES or ground-floor format, so the low-floor tier is the right comp. 24mo low-floor 3BR median is ~$1,398 psf vs ~$1,420-1,511 for 06-10 at similar sizes, a ~3-5% floor break that the ask already more than absorbs. No /research-development profile was built: the listing carries no unit or block number, so a profile could not join to this unit. Ask the agent for the unit number before viewing; avoid stacks facing Sin Ming Ave/industrial or the afternoon west sun.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 73.9,
+        "realsmart_annual_return_pct": 5.1
+      },
+      "source": {
+        "run_dir": "output/run_123_500229119",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-bishan-park-condo-500229119",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
