@@ -1,0 +1,77 @@
+{
+  "condo": "Windermere",
+  "slug": "windermere",
+  "district": "D23",
+  "history": [
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Avoid",
+      "confidence": "medium",
+      "summary": "A 2,077 sqft 4BR/4-bath duplex penthouse (no roof terrace, pool view) in Windermere, a privatised 1999 ex-EC at Yew Tee, asking $2.10M ($1,011 psf). Measured against the project's own SLA caveats, the ask is fair: standard units print about $1,008-1,046 psf in 2025-26, and the project's penthouses have traded at roughly 1.02-1.04x the standard-unit psf. There is no edge in the price. As a 5-7yr investment it buys the project's thinnest exit format: 6 prints at 1,700 sqft or more since 2017, only 2 of them penthouses, and a 2,756 sqft penthouse ask at $2.78M that expired unsold. On top of that the lease will be ~62-64 yrs at exit, the buyer pool is 71% HDB upgraders, and gross yield is about 2.7%.",
+      "rating_rationale": "MMR is unusable here. Windermere is an Executive Condominium (realsmart: EC, 99 yrs from 03/03/1997), and URA's private CSVs carry zero prints for it. So ura_transaction_count=0, appreciation is the regional baseline, every discount-trust rule is disabled, and score_1000 694 / valuation 93 rest almost entirely on age_value +15.7. That term is the '-22% vs age-adjusted D23 median', which is the known ex-EC level gap plus the Choa Chu Kang sub-market level, not value. Re-benchmarked on the project's own SLA caveats (121 prints, 2017-May 2026): the 1,430-1,475 sqft standard units moved from $887 psf (2023) to $994 (2025) and $1,008 (2026, n=2: $935 low floor, $1,080 high floor). EdgeProp's 12-month average is $1,046 psf (range $936-1,101). The two penthouse prints traded at roughly the standard-unit psf: 2,400 sqft at $720 (Oct 2021, band $691, ratio 1.04) and 2,734 sqft at $961 (Jun 2024, band $943, ratio 1.02). That implies about $1,030-1,090 psf, or $2.14-2.26M, for this unit. The other large-format comp, 2,055 sqft on floors 06-10 at $894 (Jan 2025, about $940 rolled forward), implies about $1.95M. So $2.10M is at fair value, between those two anchors, and is not a discount. Against fair value I weigh four exit risks. (1) Format liquidity: units of 1,700 sqft or more are 6 of 121 prints in 9.5 years, and a 2,756 sqft penthouse asking $2.78M ($1,008 psf) expired unsold on EdgeProp. A $2.1M+ ask is about 1.4x what this project's buyers normally pay ($1.25-1.57M). (2) Lease: 69.4 yrs left now, 64.4 at a 5-yr exit and 62.4 at a 7-yr exit. The OCR-wide measurement shows about 1.5%/yr of drag once leases are 70 yrs or less, and 71% of buyers are CPF-dependent HDB upgraders. So far the project has kept pace: the standard band rose +13.6% from 2023 to 2026, in line with the 1996-98 lease cohort's +12.6%. That is the best evidence in the unit's favour. (3) Carry: real rents are $4,000-4,175 median for standard units and $3,500-4,600 historically for the 2,000+ sqft formats. A realistic $4,500-5,000 gives about 2.6-2.9% gross. The engine's $6,788 / 3.88% is a capped private-district proxy. (4) Age: a 27-yr-old block, and duplex-penthouse roofs/waterproofing are a known maintenance risk. realsmart is moderate downside evidence on a deep count: REALSCORE 3.1, 80.8% profitable on 318 resale pairs (62 losing resales), 4.3% avg annualised, 12.4-yr average hold. Roughly 1 in 5 owners have exited at a loss. For the 'hers' mandate (~$2.5M, 3-4BR), the same money buys a standard-format 4BR with a much deeper resale book. If the buyer still wants this project, a standard 1,453 sqft unit is the investable format here, not the penthouse. Medium, not high, confidence: the price itself is fair, the project's lease cohort hasn't stalled yet, and two penthouse prints are a thin basis for any psf ratio.",
+      "red_flags": [
+        "Executive Condominium: absent from URA private CSVs, so MMR/valuation (694/93) run blind and age_value banks the ex-EC + CCK sub-market level as a fake -22% 'discount'",
+        "Thinnest exit format in the project: 6 prints of 1,700+ sqft in 9.5 yrs (2 penthouses); a 2,756 sqft penthouse asking $2.78M expired unsold",
+        "Lease 99 yrs from 03/03/1997: ~62-64 yrs left at a 5-7 yr exit, into a 71% HDB-upgrader (CPF-dependent) buyer pool",
+        "Quantum ~1.4x the project's normal resale band ($1.25-1.57M); a $2M+ buyer has younger private 4BR alternatives in the west",
+        "Gross yield ~2.6-2.9% on real rents; the dossier's 3.88% is a capped private district proxy (rent_source district_bedroom)",
+        "27-yr-old block; duplex-penthouse roof/waterproofing and upkeep risk; facing unverified (no profile, the PG feed doesn't serve facing)",
+        "1 in 5 historical resales lost money (realsmart: 62 of 318 resale pairs unprofitable)"
+      ],
+      "catalysts": [
+        "Yew Tee NSL station ~400-470 m walk",
+        "JRL Choa Chu Kang interchange (~1.6 km) slated ~2027-28; narrative only (future-infra score has no measured forward power)",
+        "Tengah new town maturing nearby adds amenities, but also HDB/EC supply competing for the same upgraders",
+        "OCR region prior (+3.7%/yr realized forward) and a project that has so far kept pace with its 1996-98 lease cohort (+13.6% 2023-26)"
+      ],
+      "as_of": {
+        "price": 2100000,
+        "psf": 1011.07,
+        "beds": 4,
+        "sqft": 2077.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.88,
+        "nearest_mrt": "Yew Tee",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "A 2,077 sqft 4BR/4-bath duplex penthouse (no roof terrace, pool view) in Windermere, a privatised 1999 ex-EC at Yew Tee, asking $2.10M ($1,011 psf). Measured against the project's own SLA caveats, the ask is fair: standard units print about $1,008-1,046 psf in 2025-26, and the project's penthouses have traded at roughly 1.02-1.04x the standard-unit psf. There is no edge in the price. As a 5-7yr investment it buys the project's thinnest exit format: 6 prints at 1,700 sqft or more since 2017, only 2 of them penthouses, and a 2,756 sqft penthouse ask at $2.78M that expired unsold. On top of that the lease will be ~62-64 yrs at exit, the buyer pool is 71% HDB upgraders, and gross yield is about 2.7%.",
+        "rating": "Avoid",
+        "rating_rationale": "MMR is unusable here. Windermere is an Executive Condominium (realsmart: EC, 99 yrs from 03/03/1997), and URA's private CSVs carry zero prints for it. So ura_transaction_count=0, appreciation is the regional baseline, every discount-trust rule is disabled, and score_1000 694 / valuation 93 rest almost entirely on age_value +15.7. That term is the '-22% vs age-adjusted D23 median', which is the known ex-EC level gap plus the Choa Chu Kang sub-market level, not value. Re-benchmarked on the project's own SLA caveats (121 prints, 2017-May 2026): the 1,430-1,475 sqft standard units moved from $887 psf (2023) to $994 (2025) and $1,008 (2026, n=2: $935 low floor, $1,080 high floor). EdgeProp's 12-month average is $1,046 psf (range $936-1,101). The two penthouse prints traded at roughly the standard-unit psf: 2,400 sqft at $720 (Oct 2021, band $691, ratio 1.04) and 2,734 sqft at $961 (Jun 2024, band $943, ratio 1.02). That implies about $1,030-1,090 psf, or $2.14-2.26M, for this unit. The other large-format comp, 2,055 sqft on floors 06-10 at $894 (Jan 2025, about $940 rolled forward), implies about $1.95M. So $2.10M is at fair value, between those two anchors, and is not a discount. Against fair value I weigh four exit risks. (1) Format liquidity: units of 1,700 sqft or more are 6 of 121 prints in 9.5 years, and a 2,756 sqft penthouse asking $2.78M ($1,008 psf) expired unsold on EdgeProp. A $2.1M+ ask is about 1.4x what this project's buyers normally pay ($1.25-1.57M). (2) Lease: 69.4 yrs left now, 64.4 at a 5-yr exit and 62.4 at a 7-yr exit. The OCR-wide measurement shows about 1.5%/yr of drag once leases are 70 yrs or less, and 71% of buyers are CPF-dependent HDB upgraders. So far the project has kept pace: the standard band rose +13.6% from 2023 to 2026, in line with the 1996-98 lease cohort's +12.6%. That is the best evidence in the unit's favour. (3) Carry: real rents are $4,000-4,175 median for standard units and $3,500-4,600 historically for the 2,000+ sqft formats. A realistic $4,500-5,000 gives about 2.6-2.9% gross. The engine's $6,788 / 3.88% is a capped private-district proxy. (4) Age: a 27-yr-old block, and duplex-penthouse roofs/waterproofing are a known maintenance risk. realsmart is moderate downside evidence on a deep count: REALSCORE 3.1, 80.8% profitable on 318 resale pairs (62 losing resales), 4.3% avg annualised, 12.4-yr average hold. Roughly 1 in 5 owners have exited at a loss. For the 'hers' mandate (~$2.5M, 3-4BR), the same money buys a standard-format 4BR with a much deeper resale book. If the buyer still wants this project, a standard 1,453 sqft unit is the investable format here, not the penthouse. Medium, not high, confidence: the price itself is fair, the project's lease cohort hasn't stalled yet, and two penthouse prints are a thin basis for any psf ratio.",
+        "red_flags": [
+          "Executive Condominium: absent from URA private CSVs, so MMR/valuation (694/93) run blind and age_value banks the ex-EC + CCK sub-market level as a fake -22% 'discount'",
+          "Thinnest exit format in the project: 6 prints of 1,700+ sqft in 9.5 yrs (2 penthouses); a 2,756 sqft penthouse asking $2.78M expired unsold",
+          "Lease 99 yrs from 03/03/1997: ~62-64 yrs left at a 5-7 yr exit, into a 71% HDB-upgrader (CPF-dependent) buyer pool",
+          "Quantum ~1.4x the project's normal resale band ($1.25-1.57M); a $2M+ buyer has younger private 4BR alternatives in the west",
+          "Gross yield ~2.6-2.9% on real rents; the dossier's 3.88% is a capped private district proxy (rent_source district_bedroom)",
+          "27-yr-old block; duplex-penthouse roof/waterproofing and upkeep risk; facing unverified (no profile, the PG feed doesn't serve facing)",
+          "1 in 5 historical resales lost money (realsmart: 62 of 318 resale pairs unprofitable)"
+        ],
+        "catalysts": [
+          "Yew Tee NSL station ~400-470 m walk",
+          "JRL Choa Chu Kang interchange (~1.6 km) slated ~2027-28; narrative only (future-infra score has no measured forward power)",
+          "Tengah new town maturing nearby adds amenities, but also HDB/EC supply competing for the same upgraders",
+          "OCR region prior (+3.7%/yr realized forward) and a project that has so far kept pace with its 1996-98 lease cohort (+13.6% 2023-26)"
+        ],
+        "rental_assessment": "Real Windermere rents (SLA rental caveats, 241 contracts 2016-Aug 2026): 2025-26 median $4,000 (1,400-1,500 sqft, n=14) and $4,175 (1,200-1,300 sqft, n=12). realsmart median $4,075 (range $2,400-4,850). The large 2,000-2,800 sqft formats leased at $3,500-4,600 in 2018-22, so rent scales weakly with size. Realistic for this penthouse: $4,500-5,000/mo, about 2.6-2.9% gross and ~1.5% net. The engine's $6,788 (district_bedroom, capped, confidence 0.55) overstates rent by ~40%. Tenant pool is Yew Tee/CCK families, a narrow catchment with no CBD/hospital/university anchor.",
+        "appreciation_assessment": "No URA series exists (EC), so the 4.2% is the OCR regional baseline. Resale-to-resale on SLA caveats for the standard 1,430-1,475 sqft band: flat ~$625-690 psf 2017-2021, then $846 (2022), $887 (2023), $943 (2024), $994 (2025), $1,008 (2026). That is a strong bull-regime run (~+7.8%/yr 2021-26), which carries no forward power. realsmart's long-run average is 4.3%/yr on 318 resale pairs. For a 5-7 yr hold I'd base-case ~2.5-3%/yr for the standard units, i.e. the OCR prior less ~1.5%/yr of measured drag for leases at or below 70 yrs, with a further format discount risk on the penthouse at exit. No override set: no resale-to-resale catalyst supports moving the rate.",
+        "stack_notes": "Duplex penthouse on the top floors (blocks go to 24 storeys; penthouses sit around 22-24). Per its SRX listing: 4BR/4-bath, no roof terrace, pool view, high-ceiling living, balcony on lower level, guest/study room on level 1 plus a helper's room. Facing and stack are not verified: there is no Windermere profile, and SRX/99.co/shioknest returned 403. They are not decisive to the call, which turns on format liquidity and lease. Same unit is listed by two agents (500228543 Ethan Tan since 2026-09-18, and this Vanessa Lim listing dated 25 Sep 2026), both at $2.10M with no cuts. For investment in this project, the standard 1,453 sqft mid-to-high floor units have the deep exit book (53 prints since 2017).",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.1,
+        "realsmart_pct_profitable": 80.8,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_128_500224523",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-windermere-500224523",
+        "review_file": "raw_analysis.json"
+      }
+    }
+  ]
+}
