@@ -1,0 +1,102 @@
+{
+  "condo": "Hillview Regency",
+  "slug": "hillview-regency",
+  "district": "D23",
+  "researched_at": "2026-10-06",
+  "revision": 1,
+  "confidence": "low",
+  "sources": [
+    {
+      "url": "data/ura_district_D23.csv",
+      "type": "ura_prints",
+      "note": "108 URA resale prints Sep-21..Aug-26; distinct strata sizes 904/969/1,109/1,119/1,130/1,152/1,173/1,195 sqft with Floor Level column. Basis of the layouts below (authoritative)."
+    },
+    {
+      "url": "data/ura_rental_D23.csv",
+      "type": "ura_rentals",
+      "note": "Rental filings: 3BR = 1,100-1,200 sqft bucket (118 contracts); 2BR = 900-1,000 (66) plus 6 2BR filings in the 1,100-1,200 bucket."
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/hillview-regency",
+      "type": "listing",
+      "note": "2 blocks, 572 units, 25 storeys, land 244,750.8 sqft, GFA 63,666 sqm, completed 2005 (via search snippet; page 403 on direct fetch)."
+    },
+    {
+      "url": "https://realsmart.sg/p/hillview-regency",
+      "type": "listing",
+      "note": "Tenure 99 yrs from 20/06/2000; 572 units; completion 2005; 61% HDB buyers (cached 2026-10-06)."
+    },
+    {
+      "url": "https://www.edgeprop.sg/listing/apartment-condo/condominium/hillview-regency/m_2190030",
+      "type": "listing",
+      "note": "Agent listing: 1,119 sqft 3BR 'High Floor Above #10', 'living room and all bedrooms facing North East, no afternoon west sun', maintenance ~$275/mth. Agent claim, unit not identified."
+    }
+  ],
+  "development": {
+    "total_units": 572,
+    "blocks": 2,
+    "block_numbers": [
+      "26",
+      "28"
+    ],
+    "max_floor": 25,
+    "developer": "Hillview Regency Pte Ltd (Far East Organization)",
+    "tenure": "99-year leasehold from 20/06/2000 (~72.7 yrs remaining at 2026-10; lease started 5 yrs before TOP)",
+    "top_year": 2005,
+    "address": "26 & 28 Bukit Batok East Avenue 2, S659921 area",
+    "site_area_sqft": 244751,
+    "orientation_notes": "NOT in the Hillview/Dairy Farm DTL enclave despite the name: Bukit Batok East, ~0.9-1.1 km to Bukit Batok (NS2) / Bukit Gombak (NS3). Per-stack facing NOT researched — no site plan sourced. Agents advertise both NE-facing (no west sun) and NW-facing 3BRs; treat as unit-level claims, not a stack map.",
+    "known_issues": [
+      "2BR stacks (904/969 sqft) only appear on floors 01-10 in URA prints; 1,195 sqft only on 16-25 — floor and layout are partly confounded in any size-band comp.",
+      "1,119 sqft is the one 3BR size printed on every floor tier 01-25; its 01-05 prints clear ~13-15% below its 11+ prints ($1,027-1,072 vs $1,179-1,237 psf, 2024-26).",
+      "1,152 sqft has printed only at floors 01-05 (2/2) — likely a ground/PES format; do not comp it against tower 3BRs."
+    ]
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "2BR",
+      "sqft": [
+        904
+      ],
+      "efficiency": null,
+      "notes": "Most common 2BR; URA prints only at floors 01-10 (9 at 01-05, 14 at 06-10)."
+    },
+    {
+      "type": "2BR+study",
+      "sqft": [
+        969
+      ],
+      "efficiency": null,
+      "notes": "Rental filings put 900-1,000 sqft as 2BR; prints only at floors 01-10 (8 of 12 at 01-05)."
+    },
+    {
+      "type": "3BR",
+      "sqft": [
+        1109,
+        1119,
+        1130
+      ],
+      "efficiency": null,
+      "notes": "Standard tower 3BR, 3 baths. 1,109 mostly floors 11-20; 1,130 floors 11-25; 1,119 spans all floors incl. 4 prints at 01-05."
+    },
+    {
+      "type": "3BR (low-floor format)",
+      "sqft": [
+        1152,
+        1173
+      ],
+      "efficiency": null,
+      "notes": "1,152 only at 01-05 (likely PES/ground); 1,173 only at 06-10. Thin print history (2 each)."
+    },
+    {
+      "type": "3BR large",
+      "sqft": [
+        1195
+      ],
+      "efficiency": null,
+      "notes": "Only at floors 16-25 (12 prints); trades at a lower psf than 1,109-1,130 despite higher floors (size effect)."
+    }
+  ],
+  "first_researched_at": "2026-10-06"
+}

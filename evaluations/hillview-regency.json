@@ -134,6 +134,86 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-regency-500208899",
         "review_file": "raw_analysis.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,119 sqft 3BR/3-bath at Hillview Regency (Bukit Batok East, 99LH from 2000) asking $1.30M / $1,162 psf. The agent's own copy of this listing (EdgeProp, at its earlier $1,388,888 ask) describes it as high floor above #10, NE-facing with no west sun, unblocked view, move-in condition. The same listing id dropped from $1,388,888 (12 Aug) to $1.30M (3 Oct), making it the cheapest of 16 live 3BR asks. That is a real but modest discount: about 3% under the project's own floor 11-15 3BR prints (median $1,202 psf, about $1.345M at 1,119 sqft) and $15k under the lowest upper-floor 3BR print in 15 months. It buys a liquid, historically reliable exit, but no structural edge. The project trades at par with its true same-vintage peers, and its lease drops below 70 years in the middle of a 5-7 year hold.",
+      "rating_rationale": "Neutral, not Buy. The like-for-like discount is real but small and not yet confirmed, and it sits against structural headwinds. (1) VALUE: comparing only within the same floor tier, $1,162 psf is about 3.3% under the project's floor 6+ 3BR-size median ($1,202, n=19 since Jul-25) and about $45-80k under the floor 11-15 and floor 11+ medians ($1.345M / $1.38M). That is a genuine edge, and it does not come from a floor or format artifact: the unit is verified above #10, and 1,119 sqft is a standard tower layout printed at every floor tier. But it is within the normal spread of individual prints. (2) The -13.9% vs the age-adjusted D23 median, which drives MMR's age_value +10.57 and roughly 80 points of the 720 score, is the permanent Bukit Batok East location level, not value. Against same-vintage west-D23 peers the project trades at par: The Madeira $1,220, The Warren $1,234, Hillview Regency $1,202 psf (floor 6+, 1,050-1,250 sqft, since Jul-25). (3) LEASE: 72.7 yrs left today, so about 67.7 at a 2031 exit and 65.7 at 2033. In the repo's own OCR resale prints, leases from 1995 or earlier (already at or below about 70 yrs left) rose only +9.0% from 2023 to 2026, against +13.5% for 1999-2001 leases. Hillview Regency itself rose +10.1%, the bottom quarter of its own cohort. Expect about 1-1.5%/yr of relative drag in the back half of the hold. (4) The exit record is strong downside evidence: REALSCORE 3.6, with 92.5% of 627 resales profitable. Liquidity is deep: 572 units, about 20 3BR resales a year, 44 3BR rental contracts in 12 months. But carry is thin (3.9% gross / about 2.35% net), 16 competing 3BR asks are an overhang that the next exit will also face, and 61% HDB-upgrader buyers make demand cyclical. (5) The ask is unconfirmed: PropertyGuru is 403 and EdgeProp still showed $1,388,888 nine days ago. The rating holds at either price: at $1.389M it is fair, at $1.30M slightly cheap; neither is Buy-grade. Medium confidence because the unit facts are verified through two independent records, and the conclusion does not depend on the unverified ask.",
+      "red_flags": [
+        "'Hillview' in name only: 26/28 Bukit Batok East Ave 2, 1,071m to Bukit Gombak (NS3) / ~870m to Bukit Batok (NS2), no DTL. The -13.9% vs the D23 age-adjusted median is a permanent sub-market level and inflates MMR age_value (+10.57, about 80 points of score_1000 720)",
+        "Lease: 99 yrs from 20/06/2000 means 72.7 yrs left today, ~67.7 at a 2031 exit and ~65.7 at 2033. The DB's remaining_lease of 75 is overstated. In OCR resale prints, leases from 1995 or earlier rose +9.0% from 2023 to 2026 vs +13.5% for 1999-2001 leases, a ~1.5%/yr relative drag this unit enters mid-hold",
+        "Project lagging its own cohort: +10.1% median psf 2023 to 2026 vs a +13.5% cohort median (bottom quarter)",
+        "Ask not confirmed: PropertyGuru 403. EdgeProp's copy of the same 1,119 sqft high-floor listing still showed $1,388,888 (updated ~27 Sep). The $88,888 cut (-6.4%) appeared in the 3 Oct refresh. Confirm before viewing that $1.30M is real and not a teaser",
+        "Supply overhang: 16 live 3BR asks in a 572-unit project ($1.30M-$1.65M; next cheapest $1.368M and $1.37M). The next exit will also compete with a deep book",
+        "Thin carry: 44 3BR rental contracts in 12 months, median $4,200 (range $3,600-4,800) = 3.9% gross / ~2.35% net at the ask. High yield is carry, never appreciation",
+        "61% HDB buyers (realsmart): demand depends on HDB upgraders and follows the HDB resale cycle",
+        "21-year-old building (TOP 2005): rising maintenance and sinking-fund calls, dated finishes",
+        "'Above #10' most likely means floor 11-15, not 16-25. Compare against the 11-15 tier ($1.315-1.38M, median ~$1.345M for 1,119 sqft), not the 21-25 prints ($1.375-1.42M)"
+      ],
+      "catalysts": [
+        "Genuine like-for-like discount: $1,162 psf is ~3.3% under the floor 6+ 3BR median ($1,202, n=19 since Jul-25) and $15k under the lowest upper-floor 3BR print in 15 months ($1.315M, Apr-26, floor 11-15). The trust checks pass: 1,119 sqft is a standard tower layout printed at every floor tier; this is not the 1,152 sqft low-floor/PES format; bed_bands ok (3BR band, 170 contracts)",
+        "Real seller cut on one listing id: $1,388,888 on 2026-08-12 (mmr_history) to $1.30M on 2026-10-06, after at least 8 weeks unsold. This is not a unit_group chaining artifact; it suggests a motivated seller and room to negotiate",
+        "Unit quality per the agent's copy: high floor above #10, living room and all bedrooms facing north-east (no afternoon west sun), unblocked view, move-in condition, maintenance ~$275/month",
+        "Strong exit record: REALSCORE 3.6, 92.5% of 627 resales profitable (577/50), avg annualized 4.3%, avg holding 7.2 yrs, on 1,178 lifetime transactions. Good evidence the project rarely loses owners money",
+        "Deep liquidity: 572 units, ~20 3BR resales a year, 44 3BR rental contracts in 12 months",
+        "OCR region prior (realized forward ~+3.7%/yr in-sample vs RCR +3.1 / CCR +1.9)",
+        "$1.30M family 3BR sits in the deepest-liquidity quantum band, well inside the 'his' mandate (≤$1.8M, 3BR)"
+      ],
+      "as_of": {
+        "price": 1300000,
+        "psf": 1161.75,
+        "beds": 3,
+        "sqft": 1119.0
+      },
+      "key_facts": {
+        "appreciation_pct": 3.73,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.88,
+        "nearest_mrt": "Bukit Gombak",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 75
+      },
+      "agent_evaluation": {
+        "summary": "A 1,119 sqft 3BR/3-bath at Hillview Regency (Bukit Batok East, 99LH from 2000) asking $1.30M / $1,162 psf. The agent's own copy of this listing (EdgeProp, at its earlier $1,388,888 ask) describes it as high floor above #10, NE-facing with no west sun, unblocked view, move-in condition. The same listing id dropped from $1,388,888 (12 Aug) to $1.30M (3 Oct), making it the cheapest of 16 live 3BR asks. That is a real but modest discount: about 3% under the project's own floor 11-15 3BR prints (median $1,202 psf, about $1.345M at 1,119 sqft) and $15k under the lowest upper-floor 3BR print in 15 months. It buys a liquid, historically reliable exit, but no structural edge. The project trades at par with its true same-vintage peers, and its lease drops below 70 years in the middle of a 5-7 year hold.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, not Buy. The like-for-like discount is real but small and not yet confirmed, and it sits against structural headwinds. (1) VALUE: comparing only within the same floor tier, $1,162 psf is about 3.3% under the project's floor 6+ 3BR-size median ($1,202, n=19 since Jul-25) and about $45-80k under the floor 11-15 and floor 11+ medians ($1.345M / $1.38M). That is a genuine edge, and it does not come from a floor or format artifact: the unit is verified above #10, and 1,119 sqft is a standard tower layout printed at every floor tier. But it is within the normal spread of individual prints. (2) The -13.9% vs the age-adjusted D23 median, which drives MMR's age_value +10.57 and roughly 80 points of the 720 score, is the permanent Bukit Batok East location level, not value. Against same-vintage west-D23 peers the project trades at par: The Madeira $1,220, The Warren $1,234, Hillview Regency $1,202 psf (floor 6+, 1,050-1,250 sqft, since Jul-25). (3) LEASE: 72.7 yrs left today, so about 67.7 at a 2031 exit and 65.7 at 2033. In the repo's own OCR resale prints, leases from 1995 or earlier (already at or below about 70 yrs left) rose only +9.0% from 2023 to 2026, against +13.5% for 1999-2001 leases. Hillview Regency itself rose +10.1%, the bottom quarter of its own cohort. Expect about 1-1.5%/yr of relative drag in the back half of the hold. (4) The exit record is strong downside evidence: REALSCORE 3.6, with 92.5% of 627 resales profitable. Liquidity is deep: 572 units, about 20 3BR resales a year, 44 3BR rental contracts in 12 months. But carry is thin (3.9% gross / about 2.35% net), 16 competing 3BR asks are an overhang that the next exit will also face, and 61% HDB-upgrader buyers make demand cyclical. (5) The ask is unconfirmed: PropertyGuru is 403 and EdgeProp still showed $1,388,888 nine days ago. The rating holds at either price: at $1.389M it is fair, at $1.30M slightly cheap; neither is Buy-grade. Medium confidence because the unit facts are verified through two independent records, and the conclusion does not depend on the unverified ask.",
+        "red_flags": [
+          "'Hillview' in name only: 26/28 Bukit Batok East Ave 2, 1,071m to Bukit Gombak (NS3) / ~870m to Bukit Batok (NS2), no DTL. The -13.9% vs the D23 age-adjusted median is a permanent sub-market level and inflates MMR age_value (+10.57, about 80 points of score_1000 720)",
+          "Lease: 99 yrs from 20/06/2000 means 72.7 yrs left today, ~67.7 at a 2031 exit and ~65.7 at 2033. The DB's remaining_lease of 75 is overstated. In OCR resale prints, leases from 1995 or earlier rose +9.0% from 2023 to 2026 vs +13.5% for 1999-2001 leases, a ~1.5%/yr relative drag this unit enters mid-hold",
+          "Project lagging its own cohort: +10.1% median psf 2023 to 2026 vs a +13.5% cohort median (bottom quarter)",
+          "Ask not confirmed: PropertyGuru 403. EdgeProp's copy of the same 1,119 sqft high-floor listing still showed $1,388,888 (updated ~27 Sep). The $88,888 cut (-6.4%) appeared in the 3 Oct refresh. Confirm before viewing that $1.30M is real and not a teaser",
+          "Supply overhang: 16 live 3BR asks in a 572-unit project ($1.30M-$1.65M; next cheapest $1.368M and $1.37M). The next exit will also compete with a deep book",
+          "Thin carry: 44 3BR rental contracts in 12 months, median $4,200 (range $3,600-4,800) = 3.9% gross / ~2.35% net at the ask. High yield is carry, never appreciation",
+          "61% HDB buyers (realsmart): demand depends on HDB upgraders and follows the HDB resale cycle",
+          "21-year-old building (TOP 2005): rising maintenance and sinking-fund calls, dated finishes",
+          "'Above #10' most likely means floor 11-15, not 16-25. Compare against the 11-15 tier ($1.315-1.38M, median ~$1.345M for 1,119 sqft), not the 21-25 prints ($1.375-1.42M)"
+        ],
+        "catalysts": [
+          "Genuine like-for-like discount: $1,162 psf is ~3.3% under the floor 6+ 3BR median ($1,202, n=19 since Jul-25) and $15k under the lowest upper-floor 3BR print in 15 months ($1.315M, Apr-26, floor 11-15). The trust checks pass: 1,119 sqft is a standard tower layout printed at every floor tier; this is not the 1,152 sqft low-floor/PES format; bed_bands ok (3BR band, 170 contracts)",
+          "Real seller cut on one listing id: $1,388,888 on 2026-08-12 (mmr_history) to $1.30M on 2026-10-06, after at least 8 weeks unsold. This is not a unit_group chaining artifact; it suggests a motivated seller and room to negotiate",
+          "Unit quality per the agent's copy: high floor above #10, living room and all bedrooms facing north-east (no afternoon west sun), unblocked view, move-in condition, maintenance ~$275/month",
+          "Strong exit record: REALSCORE 3.6, 92.5% of 627 resales profitable (577/50), avg annualized 4.3%, avg holding 7.2 yrs, on 1,178 lifetime transactions. Good evidence the project rarely loses owners money",
+          "Deep liquidity: 572 units, ~20 3BR resales a year, 44 3BR rental contracts in 12 months",
+          "OCR region prior (realized forward ~+3.7%/yr in-sample vs RCR +3.1 / CCR +1.9)",
+          "$1.30M family 3BR sits in the deepest-liquidity quantum band, well inside the 'his' mandate (≤$1.8M, 3BR)"
+        ],
+        "rental_assessment": "Deep, steady 3BR rental market: 44 URA contracts since Oct-25 in the 1,100-1,200 sqft band, median $4,200, range $3,600-4,800. realsmart's 12 latest show a $4,050 median ($3,300-4,300). A move-in-condition, high-floor, NE-facing unit should let at about $4,200-4,400: ~3.9-4.1% gross, ~2.3-2.5% net after MCST (~$275/month), tax and vacancy. That covers carry but drives no return. Tenant pool is families drawn to the three primary schools within 1 km and Bukit Batok / Jurong East jobs.",
+        "appreciation_assessment": "Trailing 5-yr URA CAGR is 3.73% (108 txns), but that is backward-looking, and the project's 2023-26 gain (+10.1%) trails its 1999-2001-lease OCR cohort (+13.5%). Forward view: about 2.5-3%/yr nominal for a 5-7yr hold. That is the OCR baseline, less a growing lease drag as remaining lease falls through 70 years in ~2029 (OCR leases already in that zone underperformed by ~1.5%/yr in 2023-26). Plus about 3% one-off from buying under the floor-tier median. All-cash total return is about 3.5%/yr including ~2.3% net yield, below the model's 4.2-4.3% (which uses the trailing rate). No dated catalyst: JRL Jurong East is 2.8 km away and future-infra has no measured forward power. Downside is well protected; upside is ordinary.",
+        "stack_notes": "No per-stack map exists: there is no sourced site plan, and the profile saved today is low confidence with layouts only. The unit itself is 1,119 sqft, which by URA prints is the one 3BR layout that appears at every floor tier from 01 to 25. Its 01-05 prints clear 13-15% below its 11+ prints ($1,027-1,072 vs $1,179-1,237 psf), so floor is the dominant price driver for this layout. Per the agent's copy, this unit is above #10 (likely 11-15) and faces NE with no west sun, which is a good orientation for the project. The best-priced tier is 16-25 (1,130/1,195 sqft, $1.38-1.46M). This unit is mid-tower at a sub-tier price, which explains the discount. Block (26 vs 28) and exact floor are unconfirmed; the DB address '28' may be the project default.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.6,
+        "realsmart_pct_profitable": 92.5,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_124_500131447",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-hillview-regency-500131447",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
