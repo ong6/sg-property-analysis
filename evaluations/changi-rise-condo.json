@@ -60,6 +60,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-rise-condo-500007055",
         "review_file": "batch_10.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,259 sqft 3BR/3-bath at Changi Rise (CDL, 2004, 598 units, 99yr from 2000, ~73yr left) for $1.45M / $1,152 psf. That is the median of the project's own 24-month 1,259 sqft prints ($1.40-1.468M, 9 txns), so the price is fair and the exit book is deep. But there is no edge beyond the OCR prior: the -8% 'cheap vs D18' reading is mostly a Simei sub-market level (next-door Savannah, same 2000 lease, trades at only +3.5%), and this project has flatlined for two years while its neighbours rose 5-12%.",
+      "rating_rationale": "Fair, not cheap: the $1,152 psf ask sits on the project's own 24-month 1,259 sqft prints (median ~$1.435M / $1,143 psf, range $1,112-1,166; psf_premium_vs_ura_median +0.3%). No trust flags fire and the bed count and format are consistent (3 baths, URA rental filings put 3BRs at 1,200-1,300 sqft). Supports: OCR region (the strongest forward prior), a deep and proven exit (598 units, 106 URA resales in 5 years, 688 realsmart resale pairs, 55% HDB-upgrader buyers at a $1.45M quantum), and mid-age stock in the 5-30yr return plateau. About 66 years of lease remain at a 2033 exit, so there is no CPF cliff. Against: (1) the value signal is weaker than it looks. The -8% vs the age-adjusted D18 median is largely a location level. On a same-lease, same-street basis Savannah CondoPark's 24-month median is $1,185 vs $1,143 here (only ~3.5% gap), and Eastpoint Green beside Simei MRT is level at $1,146. (2) This project has de-rated. Its 1,259 sqft prints are flat from 24H2 to 26H2 ($1,116 to $1,135, +1.7%) while Eastpoint Green rose +5.5%, Savannah +7.7%, Tropical Spring +6.5% and Waterview +9.7%. In 2021 it traded at a +8% premium to Eastpoint Green; now it is at about -1 to -5%. A gap that widens is the market re-pricing the project, not a dislocation waiting to close. (3) Rent is overstated in the score. 38 URA contracts for 3BRs of 1,200-1,300 sqft in 2025-26 have a median of $4,200, not the district-bedroom $4,797. That is 3.5% gross, not 4.0%, and re-scoring with $4,200 takes about 30 points off score_1000. (4) The heavy ask book (5-7 concurrent 1,259 sqft asks at $1.45-1.55M plus five 1,130 sqft 3BRs) favours the buyer. (5) REALSCORE is 3.5, the lowest among the Simei/Pasir Ris peers in the cache: 81 of 688 resales lost money, so this project has burned owners in a flat regime before. The 729 score is mostly project-size and liquidity components plus a stale trailing CAGR. The model explains <10% of forward variance, so this is not a Buy signal. The verdict would firm to Buy at around $1.38M or below ($1,096 psf, under every 24-month print), which this ask book could plausibly reach.",
+      "red_flags": [
+        "Project-specific de-rating: 1,259 sqft prints flat at $1,112-1,166 psf since Aug-2024 (+1.7% in 2 years) while Simei/Pasir Ris neighbours rose 5-12%. Changi Rise went from a +8% premium to Eastpoint Green (2021) to a discount.",
+        "'Cheap vs district' is mostly a sub-market level: same-street, same-lease Savannah CondoPark is only ~3.5% dearer, so the -8% age-adjusted reading overstates the value",
+        "Price-drop history ($1.60M to $1.50M to $1.45M) is a unit-group artifact: the earlier prices belong to other agents' listings (500143100 / 500196272). This agent first appeared at $1.45M, so there is no verified seller cut.",
+        "Heavy concurrent supply: about 7 asks for 1,259 sqft units ($1.45-1.55M) and 5 for 1,130 sqft 3BRs ($1.30-1.38M) are live. Asks run ahead of prints.",
+        "Scorer rent overstated: actual 3BR 1,200-1,300 sqft median is $4,200 (38 URA contracts, 2025-26), giving 3.48% gross / about 2% net, not 3.97%",
+        "REALSCORE 3.5: 81 of 688 resales (11.3%) unprofitable. The lowest score among nearby peers in the cache (Savannah 3.8, Livia 4.0, Palette 4.2).",
+        "About 960 m / 12 min walk to DT34 Upper Changi. Xilin (DTL3e, due 2H2026) is about 850 m away, so walkability doesn't improve.",
+        "22-year-old 99yr leasehold (from Nov-2000, ~73 years left, ~66 at a 2033 exit): steady lease decay plus rising maintenance and sinking-fund load",
+        "Floor, stack and facing are unknown. The blocks are max 10 storeys, so there is no high-floor view premium to capture."
+      ],
+      "catalysts": [
+        "Ask equals the project's own 24-month print median: no premium paid, so the downside is anchored by about 9 recent same-size resales",
+        "Deep, proven exit: 598 units, 106 URA resales in 5 years, 688 realsmart resale pairs, 55% HDB-upgrader buyers. A $1.45M 3BR sits squarely in the upgrader budget.",
+        "OCR region: the strongest measured forward prior (realized OCR +3.7%/yr)",
+        "Catch-up optionality: if the gap to Savannah next door (~3.5%) or the D18 age-adjusted median (-8%) narrows, that is upside. Not underwritten, given the gap has been widening.",
+        "Buyer's market inside the project: the ask book lets a buyer negotiate toward $1.38-1.40M",
+        "DTL3e (Xilin / Sungei Bedok, due 2H2026) improves the area's links to the TEL, but it is a narrative, not a measured edge"
+      ],
+      "as_of": {
+        "price": 1449999,
+        "psf": 1151.71,
+        "beds": 3,
+        "sqft": 1259.0
+      },
+      "key_facts": {
+        "appreciation_pct": 5.34,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.97,
+        "nearest_mrt": "Upper Changi",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 74
+      },
+      "agent_evaluation": {
+        "summary": "A 1,259 sqft 3BR/3-bath at Changi Rise (CDL, 2004, 598 units, 99yr from 2000, ~73yr left) for $1.45M / $1,152 psf. That is the median of the project's own 24-month 1,259 sqft prints ($1.40-1.468M, 9 txns), so the price is fair and the exit book is deep. But there is no edge beyond the OCR prior: the -8% 'cheap vs D18' reading is mostly a Simei sub-market level (next-door Savannah, same 2000 lease, trades at only +3.5%), and this project has flatlined for two years while its neighbours rose 5-12%.",
+        "rating": "Neutral",
+        "rating_rationale": "Fair, not cheap: the $1,152 psf ask sits on the project's own 24-month 1,259 sqft prints (median ~$1.435M / $1,143 psf, range $1,112-1,166; psf_premium_vs_ura_median +0.3%). No trust flags fire and the bed count and format are consistent (3 baths, URA rental filings put 3BRs at 1,200-1,300 sqft). Supports: OCR region (the strongest forward prior), a deep and proven exit (598 units, 106 URA resales in 5 years, 688 realsmart resale pairs, 55% HDB-upgrader buyers at a $1.45M quantum), and mid-age stock in the 5-30yr return plateau. About 66 years of lease remain at a 2033 exit, so there is no CPF cliff. Against: (1) the value signal is weaker than it looks. The -8% vs the age-adjusted D18 median is largely a location level. On a same-lease, same-street basis Savannah CondoPark's 24-month median is $1,185 vs $1,143 here (only ~3.5% gap), and Eastpoint Green beside Simei MRT is level at $1,146. (2) This project has de-rated. Its 1,259 sqft prints are flat from 24H2 to 26H2 ($1,116 to $1,135, +1.7%) while Eastpoint Green rose +5.5%, Savannah +7.7%, Tropical Spring +6.5% and Waterview +9.7%. In 2021 it traded at a +8% premium to Eastpoint Green; now it is at about -1 to -5%. A gap that widens is the market re-pricing the project, not a dislocation waiting to close. (3) Rent is overstated in the score. 38 URA contracts for 3BRs of 1,200-1,300 sqft in 2025-26 have a median of $4,200, not the district-bedroom $4,797. That is 3.5% gross, not 4.0%, and re-scoring with $4,200 takes about 30 points off score_1000. (4) The heavy ask book (5-7 concurrent 1,259 sqft asks at $1.45-1.55M plus five 1,130 sqft 3BRs) favours the buyer. (5) REALSCORE is 3.5, the lowest among the Simei/Pasir Ris peers in the cache: 81 of 688 resales lost money, so this project has burned owners in a flat regime before. The 729 score is mostly project-size and liquidity components plus a stale trailing CAGR. The model explains <10% of forward variance, so this is not a Buy signal. The verdict would firm to Buy at around $1.38M or below ($1,096 psf, under every 24-month print), which this ask book could plausibly reach.",
+        "red_flags": [
+          "Project-specific de-rating: 1,259 sqft prints flat at $1,112-1,166 psf since Aug-2024 (+1.7% in 2 years) while Simei/Pasir Ris neighbours rose 5-12%. Changi Rise went from a +8% premium to Eastpoint Green (2021) to a discount.",
+          "'Cheap vs district' is mostly a sub-market level: same-street, same-lease Savannah CondoPark is only ~3.5% dearer, so the -8% age-adjusted reading overstates the value",
+          "Price-drop history ($1.60M to $1.50M to $1.45M) is a unit-group artifact: the earlier prices belong to other agents' listings (500143100 / 500196272). This agent first appeared at $1.45M, so there is no verified seller cut.",
+          "Heavy concurrent supply: about 7 asks for 1,259 sqft units ($1.45-1.55M) and 5 for 1,130 sqft 3BRs ($1.30-1.38M) are live. Asks run ahead of prints.",
+          "Scorer rent overstated: actual 3BR 1,200-1,300 sqft median is $4,200 (38 URA contracts, 2025-26), giving 3.48% gross / about 2% net, not 3.97%",
+          "REALSCORE 3.5: 81 of 688 resales (11.3%) unprofitable. The lowest score among nearby peers in the cache (Savannah 3.8, Livia 4.0, Palette 4.2).",
+          "About 960 m / 12 min walk to DT34 Upper Changi. Xilin (DTL3e, due 2H2026) is about 850 m away, so walkability doesn't improve.",
+          "22-year-old 99yr leasehold (from Nov-2000, ~73 years left, ~66 at a 2033 exit): steady lease decay plus rising maintenance and sinking-fund load",
+          "Floor, stack and facing are unknown. The blocks are max 10 storeys, so there is no high-floor view premium to capture."
+        ],
+        "catalysts": [
+          "Ask equals the project's own 24-month print median: no premium paid, so the downside is anchored by about 9 recent same-size resales",
+          "Deep, proven exit: 598 units, 106 URA resales in 5 years, 688 realsmart resale pairs, 55% HDB-upgrader buyers. A $1.45M 3BR sits squarely in the upgrader budget.",
+          "OCR region: the strongest measured forward prior (realized OCR +3.7%/yr)",
+          "Catch-up optionality: if the gap to Savannah next door (~3.5%) or the D18 age-adjusted median (-8%) narrows, that is upside. Not underwritten, given the gap has been widening.",
+          "Buyer's market inside the project: the ask book lets a buyer negotiate toward $1.38-1.40M",
+          "DTL3e (Xilin / Sungei Bedok, due 2H2026) improves the area's links to the TEL, but it is a narrative, not a measured edge"
+        ],
+        "rental_assessment": "Leasable but not a yield play. URA contracts for 3BRs of 1,200-1,300 sqft (2025-26, n=38) have a median of $4,200/month (1,100-1,200 sqft: $4,100, n=34). realsmart quotes $3,500-5,180 with a median of $4,400. At $1.45M that is ~3.5% gross and ~2% net after MCST, tax and vacancy. Tenant demand comes from Changi Business Park, Changi General Hospital, Expo and SUTD, but the rent has not risen in two years. The scorer's $4,797 district-bedroom estimate (confidence 0.55) overstates the yield by ~0.5pp.",
+        "appreciation_assessment": "The 5.34% URA 5-year CAGR is almost entirely the 2021-23 run ($881-1,000 psf to ~$1,100). Since Aug-2024 the 1,259 sqft cohort has gone sideways at $1,112-1,166 (momentum -0.88). Under current priors, trailing CAGR and momentum are story, not signal. The forward case rests on the OCR region prior (~3-4%/yr) minus ~0.6-0.7%/yr lease decay (Bala curve from ~73 to ~66 years). The project's relative de-rating against same-lease Savannah argues against assuming catch-up. Expect roughly market-typical OCR resale growth of ~2.5-3.5%/yr, with downside anchored by a deep print history. No override applied.",
+        "stack_notes": "Unknown. The listing carries no floor level (none of the 18 Changi Rise rows in the DB has one), and PropertyGuru never serves facing. URA prints show only two floor tiers (01-05: 60, 06-10: 46), so this is a low-rise estate with no high-floor premium tier. The 06-10 band has not printed meaningfully above 01-05 for 1,259 sqft units. No profile exists, and a /research-development pass was not run: with no floor or stack on the listing, a stack join could not resolve this unit. At a viewing, confirm the block and stack. Prefer units away from the Upper Changi Road East / Simei Avenue traffic side, and check for aircraft or air-base noise exposure.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": null,
+        "appreciation_rate_source": null,
+        "realscore": 3.5,
+        "realsmart_pct_profitable": 88.7,
+        "realsmart_annual_return_pct": 4.7
+      },
+      "source": {
+        "run_dir": "output/run_122_500284592",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-changi-rise-condo-500284592",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
