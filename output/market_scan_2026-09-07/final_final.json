@@ -1,0 +1,261 @@
+{
+  "analyzed_at": "2026-09-07T18:39:26.513180",
+  "total": 5,
+  "agent_reviewed": 5,
+  "report_level": {
+    "agent_executive_summary": "Start with D'Nest around $1.4M, Treasure around $1.6M, and The Panorama around $2M; FLO is backup and Luxurie is the four-bedroom comparison. No unconditional Buys.",
+    "agent_methodology_notes": "Preliminary research shortlist, not a full market scrape or purchase recommendation. Public pages/indexes checked 7 Sep 2026. Local URA evidence ends May/Jun 2026 and was supplemented with REALSMART July/August records where available. Seller availability, exact floor/stack and floor plans remain unconfirmed. All ratings Neutral pending checks. No unit-level rental/ROI model was run; missing numeric report fields must not be treated as zero returns. Historical profitability is gross matched-resale evidence, not net profit after costs or a forecast. Saved brief says $1.5M/$2.5M; scanner says his ceiling $1.8M. No affordability approval inferred."
+  },
+  "listings": [
+    {
+      "id": "1",
+      "title": "D'Nest",
+      "price": 1438000,
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-d-nest-500195293",
+      "total_score": 0,
+      "quick_score": 0,
+      "quick_tier": 3,
+      "final_tier": 3,
+      "has_ura_data": false,
+      "district": "D18",
+      "beds": 3,
+      "sqft": 936,
+      "psf": 1536.32,
+      "tenure": "99-year leasehold",
+      "project_name": "D'Nest",
+      "scores": {
+        "rental_yield": 0,
+        "capital_appreciation": 0,
+        "future_potential": 0,
+        "liquidity": 0,
+        "cost_efficiency": 0,
+        "red_flags": 0
+      },
+      "appreciation": {
+        "annual_rate_pct": 4.2,
+        "source": "default",
+        "needs_ai_appreciation": true
+      },
+      "agent": {
+        "rating": "Neutral",
+        "verdict": "NEUTRAL",
+        "rating_rationale": "Best lead around the original $1.5M budget. A same-size sale on 28 Aug 2026 was $1,403,888; ask is 2.4% above it. Indicative negotiation zone $1.38-1.40M, subject to floor, condition and facing. This is the standard 936 sqft product, not the 1,259 sqft variant previously rejected.",
+        "summary": "Best lead around the original $1.5M budget. A same-size sale on 28 Aug 2026 was $1,403,888; ask is 2.4% above it. Indicative negotiation zone $1.38-1.40M, subject to floor, condition and facing. This is the standard 936 sqft product, not the 1,259 sqft variant previously rejected.",
+        "red_flags": [
+          "Listing recovered from search index; direct page returned 403, so availability is not seller-confirmed.",
+          "Exact floor, stack, floor plan and road noise remain unverified. Greenery facing is an agent claim.",
+          "Nearby competing projects limit pricing power."
+        ],
+        "catalysts": [],
+        "adjustment_reason": null,
+        "rental_assessment": "No unit-specific net yield established in this preliminary scan.",
+        "appreciation_assessment": "No appreciation forecast. Negotiation zones are judgment calls anchored to observed sales, not guaranteed valuations.",
+        "stack_notes": "Exact stack not verified. Do not infer facing from project-level data.",
+        "confidence": "low",
+        "appreciation_rate_pct": null,
+        "appreciation_source": null
+      }
+    },
+    {
+      "id": "2",
+      "title": "Treasure at Tampines",
+      "price": 1650000,
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-treasure-at-tampines-500252681",
+      "total_score": 0,
+      "quick_score": 0,
+      "quick_tier": 3,
+      "final_tier": 3,
+      "has_ura_data": false,
+      "district": "D18",
+      "beds": 3,
+      "sqft": 915,
+      "psf": 1803.28,
+      "tenure": "99-year leasehold",
+      "project_name": "Treasure at Tampines",
+      "scores": {
+        "rental_yield": 0,
+        "capital_appreciation": 0,
+        "future_potential": 0,
+        "liquidity": 0,
+        "cost_efficiency": 0,
+        "red_flags": 0
+      },
+      "appreciation": {
+        "annual_rate_pct": 4.2,
+        "source": "default",
+        "needs_ai_appreciation": true
+      },
+      "agent": {
+        "rating": "Neutral",
+        "verdict": "NEUTRAL",
+        "rating_rationale": "Best newer-condo lead if the $1.8M scan ceiling applies. Same-size resale on 28 Aug 2026 was $1.60M, making this ask 3.1% higher. Indicative negotiation zone $1.60-1.62M for a satisfactory unit; $1.65M needs demonstrably better floor/condition. The 2,203-unit project supports transactions but creates internal competition.",
+        "summary": "Best newer-condo lead if the $1.8M scan ceiling applies. Same-size resale on 28 Aug 2026 was $1.60M, making this ask 3.1% higher. Indicative negotiation zone $1.60-1.62M for a satisfactory unit; $1.65M needs demonstrably better floor/condition. The 2,203-unit project supports transactions but creates internal competition.",
+        "red_flags": [
+          "Listing recovered from search index; direct page returned 403.",
+          "Exact floor and stack unverified; pool/greenery view is an agent claim.",
+          "Outside original $1.5M brief; funding needs confirmation.",
+          "MRT walking route must be checked; straight-line distance is misleading."
+        ],
+        "catalysts": [],
+        "adjustment_reason": null,
+        "rental_assessment": "No unit-specific net yield established in this preliminary scan.",
+        "appreciation_assessment": "No appreciation forecast. Negotiation zones are judgment calls anchored to observed sales, not guaranteed valuations.",
+        "stack_notes": "Exact stack not verified. Do not infer facing from project-level data.",
+        "confidence": "low",
+        "appreciation_rate_pct": null,
+        "appreciation_source": null
+      }
+    },
+    {
+      "id": "3",
+      "title": "FLO Residence",
+      "price": 1550000,
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-flo-residence-500228421",
+      "total_score": 0,
+      "quick_score": 0,
+      "quick_tier": 3,
+      "final_tier": 3,
+      "has_ura_data": false,
+      "district": "D19",
+      "beds": 3,
+      "sqft": 1012,
+      "psf": 1531.62,
+      "tenure": "99-year leasehold",
+      "project_name": "FLO Residence",
+      "scores": {
+        "rental_yield": 0,
+        "capital_appreciation": 0,
+        "future_potential": 0,
+        "liquidity": 0,
+        "cost_efficiency": 0,
+        "red_flags": 0
+      },
+      "appreciation": {
+        "annual_rate_pct": 4.2,
+        "source": "default",
+        "needs_ai_appreciation": true
+      },
+      "agent": {
+        "rating": "Neutral",
+        "verdict": "NEUTRAL",
+        "rating_rationale": "Backup near the lower budget. REALSMART's indexed latest table shows a 1,012 sqft resale at $1.56M on 17 Jul 2026, superseding the old claim that $1.55M exceeds every print. Approximately fair, not a verified discount. Indicative negotiation zone $1.48-1.52M.",
+        "summary": "Backup near the lower budget. REALSMART's indexed latest table shows a 1,012 sqft resale at $1.56M on 17 Jul 2026, superseding the old claim that $1.55M exceeds every print. Approximately fair, not a verified discount. Indicative negotiation zone $1.48-1.52M.",
+        "red_flags": [
+          "Coral Edge is LRT, not MRT.",
+          "Floor and stack unknown; renovation and greenery claims require inspection.",
+          "Latest transaction table is search-index evidence; opened page served an older lite template.",
+          "Above original $1.5M brief."
+        ],
+        "catalysts": [],
+        "adjustment_reason": null,
+        "rental_assessment": "No unit-specific net yield established in this preliminary scan.",
+        "appreciation_assessment": "No appreciation forecast. Negotiation zones are judgment calls anchored to observed sales, not guaranteed valuations.",
+        "stack_notes": "Exact stack not verified. Do not infer facing from project-level data.",
+        "confidence": "low",
+        "appreciation_rate_pct": null,
+        "appreciation_source": null
+      }
+    },
+    {
+      "id": "4",
+      "title": "The Panorama",
+      "price": 2099000,
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-the-panorama-23291917",
+      "total_score": 0,
+      "quick_score": 0,
+      "quick_tier": 3,
+      "final_tier": 3,
+      "has_ura_data": false,
+      "district": "D20",
+      "beds": 3,
+      "sqft": 1012,
+      "psf": 2074.11,
+      "tenure": "99-year leasehold",
+      "project_name": "The Panorama",
+      "scores": {
+        "rental_yield": 0,
+        "capital_appreciation": 0,
+        "future_potential": 0,
+        "liquidity": 0,
+        "cost_efficiency": 0,
+        "red_flags": 0
+      },
+      "appreciation": {
+        "annual_rate_pct": 4.2,
+        "source": "default",
+        "needs_ai_appreciation": true
+      },
+      "agent": {
+        "rating": "Neutral",
+        "verdict": "NEUTRAL",
+        "rating_rationale": "First lead for her budget if three bedrooms suffice. Same-size resales were $2.00M on 27 Jul and 20 Aug 2026, with another at $2.206M on 24 Jul. This ask is 4.95% above the two $2M prints. Indicative negotiation zone $2.00-2.05M; exact floor/stack comparisons could change it. Leaves about $401k below the $2.5M purchase-price budget, before costs.",
+        "summary": "First lead for her budget if three bedrooms suffice. Same-size resales were $2.00M on 27 Jul and 20 Aug 2026, with another at $2.206M on 24 Jul. This ask is 4.95% above the two $2M prints. Indicative negotiation zone $2.00-2.05M; exact floor/stack comparisons could change it. Leaves about $401k below the $2.5M purchase-price budget, before costs.",
+        "red_flags": [
+          "Floor and stack not disclosed; no-afternoon-sun claim not independently verified.",
+          "School proximity does not guarantee admission.",
+          "Old $2M listing redirects to project inventory; do not treat it as an available offer.",
+          "Same-size prices have material dispersion; not a valuation."
+        ],
+        "catalysts": [],
+        "adjustment_reason": null,
+        "rental_assessment": "No unit-specific net yield established in this preliminary scan.",
+        "appreciation_assessment": "No appreciation forecast. Negotiation zones are judgment calls anchored to observed sales, not guaranteed valuations.",
+        "stack_notes": "Exact stack not verified. Do not infer facing from project-level data.",
+        "confidence": "medium",
+        "appreciation_rate_pct": null,
+        "appreciation_source": null
+      }
+    },
+    {
+      "id": "5",
+      "title": "The Luxurie",
+      "price": 2400000,
+      "url": "https://www.propertyguru.com.sg/listing/for-sale-the-luxurie-500222086",
+      "total_score": 0,
+      "quick_score": 0,
+      "quick_tier": 3,
+      "final_tier": 3,
+      "has_ura_data": false,
+      "district": "D19",
+      "beds": 4,
+      "sqft": 1313,
+      "psf": 1827.88,
+      "tenure": "99-year leasehold",
+      "project_name": "The Luxurie",
+      "scores": {
+        "rental_yield": 0,
+        "capital_appreciation": 0,
+        "future_potential": 0,
+        "liquidity": 0,
+        "cost_efficiency": 0,
+        "red_flags": 0
+      },
+      "appreciation": {
+        "annual_rate_pct": 4.2,
+        "source": "default",
+        "needs_ai_appreciation": true
+      },
+      "agent": {
+        "rating": "Neutral",
+        "verdict": "NEUTRAL",
+        "rating_rationale": "Four-bedroom comparison for her budget, with direct Sengkang MRT access. REALSMART reports a same-size $2.368M sale on 12 Jun 2026; ask is 1.35% above it. Indicative negotiation zone $2.30-2.35M because the advertised unit is low-floor. Prefer a physical comparison with Panorama before spending the extra $301k.",
+        "summary": "Four-bedroom comparison for her budget, with direct Sengkang MRT access. REALSMART reports a same-size $2.368M sale on 12 Jun 2026; ask is 1.35% above it. Indicative negotiation zone $2.30-2.35M because the advertised unit is low-floor. Prefer a physical comparison with Panorama before spending the extra $301k.",
+        "red_flags": [
+          "Explicitly low-floor; check privacy, light and noise.",
+          "Listing says selected photos are digitally enhanced.",
+          "Only two exact-size comparable sales in the local Sep-2024 onward extract: thin evidence.",
+          "Local URA file dates the $2.368M sale Apr-2026 while REALSMART dates it Jun-2026; verify original caveat.",
+          "Family practicality does not prove superior investment returns."
+        ],
+        "catalysts": [],
+        "adjustment_reason": null,
+        "rental_assessment": "No unit-specific net yield established in this preliminary scan.",
+        "appreciation_assessment": "No appreciation forecast. Negotiation zones are judgment calls anchored to observed sales, not guaranteed valuations.",
+        "stack_notes": "Exact stack not verified. Do not infer facing from project-level data.",
+        "confidence": "medium",
+        "appreciation_rate_pct": null,
+        "appreciation_source": null
+      }
+    }
+  ]
+}
