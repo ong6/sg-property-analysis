@@ -58,6 +58,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-guilin-view-500016775",
         "review_file": "cov_batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "Guilin View (Bukit Batok St 52, D23 OCR, 655 units, CDL/Guilin Park Properties, TOP 2000, 99LH from Apr-1996, ~68.5 yrs left). This high-floor, fully furnished 1,528 sqft 4BR (blk 28) is asking $1.698M / $1,111 psf. That is the market-clearing level, not a bargain. The latest 4BR print was Sep-26: 1,582 sqft on floors 26-30 at $1.70M / $1,074 psf. The latest same-size print was Feb-26: 1,528 sqft on floors 11-15 at $1.78M / $1,165. The ask is ~4-7% under the 24-month same-size median (~$1,185-1,197) and ~4% under the two cheapest live 1,528 asks ($1.77M, unsold since June). The headline -14.8% vs the age-adjusted D23 median is mostly a sub-market level: D23 includes Hillview/Dairy Farm stock that Bukit Batok never trades at. Against true local peers of the same age and lease (4BR-size prints over the last 24 months: Maysprings $1,161, Northvale $1,145, Palm Gardens $1,118, Parc Vista $1,108), this ask is at parity. Fair price, liquid quantum, sound location, but the lease and a softening 4BR tape cap the forward case.",
+      "rating_rationale": "Neutral: a fairly priced unit in a liquid HDB-upgrader market, not a value entry. In its favour: OCR region; NS3 Bukit Gombak MRT ~360 m; an affordable $1.7M 4BR quantum that undercuts new-launch and EC 4BRs nearby by $0.6M+; real-rent carry of ~3.8% gross (~2% net); bed count verified against URA rental bands ('ok'). Against it: (1) the lease is ~68.5 yrs today and ~61-62 at a 2032-33 exit. CPF pro-rating already bites for most buyers and tightens every year, and decay costs roughly 0.7-0.9%/yr against a freehold-equivalent. (2) The 4BR tape is rolling over: 1,528/1,572 sqft prints went from $1,197-1,269 (2024) to $1,165 (Feb-26) and then $1,074 (Sep-26). Seven competing 4BR asks are live, most cut repeatedly since June. (3) The exit record is middling: REALSCORE 3.5, 75% profitable on 638 matched resale pairs, so one resale in four lost money. (4) MMR's 780 rests heavily on age_value (+11.2) and psf_value, both measured against a D23 median inflated by Hillview, so the cheapness signal is overstated (see the D23 bifurcation memory). Against local peers this is parity pricing. Expected unlevered total return of ~5%/yr (~3% price after lease drag + ~2% net carry) is acceptable but not a buy. The 'price drop' badge is a unit-group chain artifact: this is a new listing (4 Oct 2026, a different agent from the $1.96M blk-24 listing it chains from), not a verified cut. Turns into a lean Buy only at roughly $1.60-1.62M (~$1,050 psf, below the Sep-26 print) after a viewing confirms the high floor faces Little Guilin/Bukit Batok Nature Park rather than the HDB blocks.",
+      "red_flags": [
+        "99LH from 24-Apr-1996: ~68.5 yrs left today, ~61-62 yrs at a 5-7yr exit. CPF pro-rating already affects most buyers (lease + age < 95) and lease decay accelerates over the hold",
+        "4BR prints softening: 1,528-1,582 sqft went from $1,197-1,269 psf (2024) to $1,165 (Feb-26) and $1,074 (Sep-26). The ask is at the latest print, not below it",
+        "Supply overhang: 7 live 4BR asks in the project, most repeatedly cut since June 2026 ($1.77-2.01M)",
+        "Exit record mixed: REALSCORE 3.5, 75% profitable on 638 resale pairs (160 losing resales, avg hold 10.4 yrs)",
+        "'Cheap vs district' is mostly the D23 sub-market level: Bukit Batok vs Hillview/Dairy Farm. At parity with same-age local leasehold peers, so MMR age_value/psf_value are overstated",
+        "'Price drop' badge is a unit_group chaining artifact (relisted_from a different agent's blk-24 listing that is still live at $1.96M), not a real cut on this unit",
+        "26-yr-old estate: dated finishes and rising sinking-fund/maintenance needs. Stack and facing unverified (no profile; PG gives only 'High Floor', blk 28)"
+      ],
+      "catalysts": [
+        "NS3 Bukit Gombak MRT ~360 m (NSL direct to Jurong East and Orchard)",
+        "Affordable 4BR quantum (~$1.7M) for a deep HDB-upgrader pool (57% of buyers are HDB). New launches and ECs in Tengah/Bukit Batok price 4BRs well above this",
+        "Real-rent carry: ~$5,350/mo (URA project-bed contracts; realsmart $3.62 psf/mo ~ $5.5k), ~3.8% gross",
+        "Green setting by Little Guilin / Bukit Batok Nature Park; high floors can have park or reservoir views",
+        "Tengah forest town and the JRL (2027-28) widen the catchment. Narrative only: the future-infra score has no measured forward power"
+      ],
+      "as_of": {
+        "price": 1698000,
+        "psf": 1111.26,
+        "beds": 4,
+        "sqft": 1528.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.41,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.78,
+        "nearest_mrt": "Bukit Gombak",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 70
+      },
+      "agent_evaluation": {
+        "summary": "Guilin View (Bukit Batok St 52, D23 OCR, 655 units, CDL/Guilin Park Properties, TOP 2000, 99LH from Apr-1996, ~68.5 yrs left). This high-floor, fully furnished 1,528 sqft 4BR (blk 28) is asking $1.698M / $1,111 psf. That is the market-clearing level, not a bargain. The latest 4BR print was Sep-26: 1,582 sqft on floors 26-30 at $1.70M / $1,074 psf. The latest same-size print was Feb-26: 1,528 sqft on floors 11-15 at $1.78M / $1,165. The ask is ~4-7% under the 24-month same-size median (~$1,185-1,197) and ~4% under the two cheapest live 1,528 asks ($1.77M, unsold since June). The headline -14.8% vs the age-adjusted D23 median is mostly a sub-market level: D23 includes Hillview/Dairy Farm stock that Bukit Batok never trades at. Against true local peers of the same age and lease (4BR-size prints over the last 24 months: Maysprings $1,161, Northvale $1,145, Palm Gardens $1,118, Parc Vista $1,108), this ask is at parity. Fair price, liquid quantum, sound location, but the lease and a softening 4BR tape cap the forward case.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral: a fairly priced unit in a liquid HDB-upgrader market, not a value entry. In its favour: OCR region; NS3 Bukit Gombak MRT ~360 m; an affordable $1.7M 4BR quantum that undercuts new-launch and EC 4BRs nearby by $0.6M+; real-rent carry of ~3.8% gross (~2% net); bed count verified against URA rental bands ('ok'). Against it: (1) the lease is ~68.5 yrs today and ~61-62 at a 2032-33 exit. CPF pro-rating already bites for most buyers and tightens every year, and decay costs roughly 0.7-0.9%/yr against a freehold-equivalent. (2) The 4BR tape is rolling over: 1,528/1,572 sqft prints went from $1,197-1,269 (2024) to $1,165 (Feb-26) and then $1,074 (Sep-26). Seven competing 4BR asks are live, most cut repeatedly since June. (3) The exit record is middling: REALSCORE 3.5, 75% profitable on 638 matched resale pairs, so one resale in four lost money. (4) MMR's 780 rests heavily on age_value (+11.2) and psf_value, both measured against a D23 median inflated by Hillview, so the cheapness signal is overstated (see the D23 bifurcation memory). Against local peers this is parity pricing. Expected unlevered total return of ~5%/yr (~3% price after lease drag + ~2% net carry) is acceptable but not a buy. The 'price drop' badge is a unit-group chain artifact: this is a new listing (4 Oct 2026, a different agent from the $1.96M blk-24 listing it chains from), not a verified cut. Turns into a lean Buy only at roughly $1.60-1.62M (~$1,050 psf, below the Sep-26 print) after a viewing confirms the high floor faces Little Guilin/Bukit Batok Nature Park rather than the HDB blocks.",
+        "red_flags": [
+          "99LH from 24-Apr-1996: ~68.5 yrs left today, ~61-62 yrs at a 5-7yr exit. CPF pro-rating already affects most buyers (lease + age < 95) and lease decay accelerates over the hold",
+          "4BR prints softening: 1,528-1,582 sqft went from $1,197-1,269 psf (2024) to $1,165 (Feb-26) and $1,074 (Sep-26). The ask is at the latest print, not below it",
+          "Supply overhang: 7 live 4BR asks in the project, most repeatedly cut since June 2026 ($1.77-2.01M)",
+          "Exit record mixed: REALSCORE 3.5, 75% profitable on 638 resale pairs (160 losing resales, avg hold 10.4 yrs)",
+          "'Cheap vs district' is mostly the D23 sub-market level: Bukit Batok vs Hillview/Dairy Farm. At parity with same-age local leasehold peers, so MMR age_value/psf_value are overstated",
+          "'Price drop' badge is a unit_group chaining artifact (relisted_from a different agent's blk-24 listing that is still live at $1.96M), not a real cut on this unit",
+          "26-yr-old estate: dated finishes and rising sinking-fund/maintenance needs. Stack and facing unverified (no profile; PG gives only 'High Floor', blk 28)"
+        ],
+        "catalysts": [
+          "NS3 Bukit Gombak MRT ~360 m (NSL direct to Jurong East and Orchard)",
+          "Affordable 4BR quantum (~$1.7M) for a deep HDB-upgrader pool (57% of buyers are HDB). New launches and ECs in Tengah/Bukit Batok price 4BRs well above this",
+          "Real-rent carry: ~$5,350/mo (URA project-bed contracts; realsmart $3.62 psf/mo ~ $5.5k), ~3.8% gross",
+          "Green setting by Little Guilin / Bukit Batok Nature Park; high floors can have park or reservoir views",
+          "Tengah forest town and the JRL (2027-28) widen the catchment. Narrative only: the future-infra score has no measured forward power"
+        ],
+        "rental_assessment": "URA project-bed rent of $5,350/mo comes from only 4 contracts in 12 months (confidence 0.665). It is corroborated by realsmart's rent of $3.62 psf/mo (~$5.5k for 1,528 sqft) and a $3.1-5.5k quoted range across all sizes. Gross 3.78% / net ~2.0% is credible, OCR-typical carry. It is income, not an appreciation argument (high yield predicts lower forward PSF growth).",
+        "appreciation_assessment": "The trailing 4.41% 5yr CAGR (98 txns) is a 2021-24 bull-market print with ~0 forward power. Resale-to-resale prints in this size band are flat-to-down since late 2024. Forward view: OCR config baseline ~3.7%/yr less ~0.7-0.9%/yr lease drag at 68 to 62 yrs remaining, so ~3%/yr. REALSCORE 3.5 / 75% profitable / 4.0% avg annualized (638 resale pairs) is downside evidence that a quarter of sellers lost money, not a forecast.",
+        "stack_notes": "No profile. /research-development was not run: the listing exposes only blk 28 + 'High Floor' with no stack number, so a profile join could not pin the unit, and the verdict's drivers (lease, sub-market level, softening tape) don't depend on stack. Before any offer, verify the facing on viewing: Little Guilin / nature-park side vs HDB-facing. The two other blk-28/blk-20 1,528 sqft units asking $1.77M are the direct live comps.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "Agent: OCR forward baseline ~3.7%/yr less ~0.7-0.9%/yr leasehold decay (68.5 to ~62 yrs remaining over the hold). Resale-to-resale 4BR prints in this project have been flat-to-down since late 2024 ($1,197-1,269 to $1,074-1,165 psf)",
+        "realscore": 3.5,
+        "realsmart_pct_profitable": 75.0,
+        "realsmart_annual_return_pct": 4.0
+      },
+      "source": {
+        "run_dir": "output/run_118_500281812",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-guilin-view-500281812",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
