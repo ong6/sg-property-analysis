@@ -56,6 +56,78 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-eastpoint-green-500067351",
         "review_file": "cov_batch_02.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "A 1,130 sqft 3BR/3-bath, mid-floor, partially furnished unit at Eastpoint Green (Simei, D18 OCR; 684 units in 10-storey blocks, 99LH from Apr-1996, TOP 1999) asking $1.35M / $1,195 psf. That is fair value, not a discount. The same 1,130-1,141 sqft layout printed at a median $1,218 psf on floors 06-10 over the last 12 months (n=6, about $1.376M) and $1,115-1,172 psf on floors 01-05 (n=2, about $1.29M). 'Middle Floor' on a 10-storey block could be either band. The unit buys a deep, liquid resale market and ~3.8% gross carry. But the lease is 68.5 years today and 61.5-63.5 years at a 5-7 year exit. That is the range where Simei's older-lease neighbour Melville Park has already stalled.",
+      "rating_rationale": "Neutral, not Buy. The price is fair, the exit market is deep, but there is no value edge to offset a lease that will be in the stall zone by exit. (1) VALUE, about par. $1,195 psf is about 2% under the floor 06-10 12-month median for this layout ($1,218, range $1,199-1,315, n=6: Dec-25 $1.378M, Jan-26 $1.365M, Mar-26 $1.355M, Apr-26 $1.38M, Jul-26 $1.375M). It is about 2-4% over the floor 01-05 prints (Oct-25 $1.26M, Apr-26 $1.325M, Sep-26 1,119sf $1.31M). relative_value is +1.0% vs the age-adjusted D18 median (26 same-band peers) and psf_premium_vs_ura_median is +1.8%; MMR's own psf_value component is negative (-1.4). This is the cheapest of ~12 live 3BR asks, but the others ($1.38-1.45M for 1,130-1,141 sqft) are padded above the prints, so $1.35M is the realistic ask, not a bargain. The 'price dropped' badge is a unit_group artifact: five different agents posted this same $1.35M / 1,130 sqft ask on 2-4 Oct 2026, and no seller cut anything. (2) LEASE. URA tenure is 99 yrs from 24 Apr 1996, so 68.5 yrs remain now, about 63.5 at a 2031 exit and 61.5 at 2033. Melville Park (Simei, 1992 lease, ~65 yrs left today, which is where Eastpoint Green will be around 2030) rose only +5.5% from 2023 to 2026 (median $910 to $961 psf, 850-1,450 sqft). Over the same period Eastpoint Green rose +14.6% ($1,046 to $1,199) and its 1996-2000-lease D18 peers rose +8% to +16% (Tropical Spring +15.9%, Savannah +14.7%, Changi Rise +8.3%). OCR-wide, leases from 1995 or earlier rose +9.0% against +12.6% for 1996-98 leases. So the 7.5% trailing CAGR, which supplies the largest part of the 730 score (appreciation +10.6), is the part least likely to repeat. I override the forward rate to 3.0%/yr. (3) EXIT RECORD. REALSCORE is 4.0, but only 65.1% of 800 resale pairs were profitable (average hold 9.9 yrs). That is the weakest record in the D18 peer set: Savannah 94.7% of 719, Changi Rise 88.7% of 688, Elias Green 80.3% of 276, Melville Park 72.8% of 1,281. Most of the losses probably belong to buyers at the 1996 launch peak and to the long flat stretch before 2021 (2021 prints were only $830-940 psf). That is a vintage effect rather than a defect, but it shows this estate can go sideways for years. (4) STRENGTHS. Deep liquidity: 149 URA resales in 5 years, and 1,130/1,141 sqft is the most-traded layout. $1.35M sits in the HDB-upgrader band (49% HDB buyers). Simei EW3 is ~500-600m away by sheltered walkway, Eastpoint Mall is next door, and rent is real: URA $4,300/mo on 41 contracts, 3.82% gross / 2.31% net, backed by tenants from CGH, Changi Business Park, SUTD and the airport. (5) UNKNOWNS. The floor band and facing are unknown. The estate sits opposite Changi General Hospital, and residents report ambulance-siren noise on hospital-facing units. What would change the call: a verified floor 06-10, non-hospital-facing unit at about $1.30M or below (~$1,150 psf, 5-6% under upper-band prints) would be worth a closer look. Medium confidence: the price read and the lease maths hold whichever floor band this is; floor and facing move fair value by about +/-$40k, not the verdict.",
+      "red_flags": [
+        "Lease 99 yrs from 24 Apr 1996: 68.5 yrs left now, ~63.5 at a 2031 exit and ~61.5 at 2033. Simei's 1992-lease Melville Park (~65 yrs left) rose only +5.5% from 2023 to 2026, against +14.6% here",
+        "No value edge: $1,195 psf is about 2% under the floor 06-10 12-month median ($1,218, n=6) and about 2-4% over the floor 01-05 prints. Relative value +1.0% vs the age-adjusted D18 median",
+        "Weakest exit record among D18 peers: 65.1% of 800 resale pairs profitable (REALSCORE 4.0) vs Savannah 94.7%, Changi Rise 88.7%, Elias Green 80.3%, Melville Park 72.8%",
+        "MMR 730 is driven by trailing CAGR (+10.6) and liquidity/size components, which have weak forward power. The value component is negative. Identical sister listings without the floor/facility enrichment score 706",
+        "Crowded live book: ~12 competing 3BR asks ($1.35-1.45M) since Jun-26. That is supply the next exit will also compete with",
+        "Floor band (01-05 vs 06-10) and facing are undisclosed. Units facing the hospital and road get ambulance-siren and motorbike noise (resident reviews)",
+        "Plot ratio ~2.0 already built out (GFA 74,310 sqm on 37,155 sqm land) and 684 units, so en bloc is not a realistic exit"
+      ],
+      "catalysts": [
+        "Deep resale market: 149 URA prints in 5 yrs, 1,130/1,141 sqft is the most-traded layout, and $1.35M is the HDB-upgrader band (49% HDB buyers)",
+        "Simei EW3 ~500-600m by sheltered walkway; Eastpoint Mall next door; PIE/TPE access",
+        "Tenant base from Changi General Hospital (opposite), Changi Business Park, SUTD, Expo and Changi Airport (T5 in the 2030s)",
+        "DTL3e Xilin station (~1.2km) is due to open 2H 2026. That is marginal at this distance and mostly priced in",
+        "Five agents posted the same ask within three days, which suggests an open listing and a seller who wants a quick sale. There may be a little room to negotiate toward $1.30-1.32M"
+      ],
+      "as_of": {
+        "price": 1350000,
+        "psf": 1194.69,
+        "beds": 3,
+        "sqft": 1130.0
+      },
+      "key_facts": {
+        "appreciation_pct": 7.54,
+        "appreciation_source": "ura_5yr_cagr",
+        "gross_yield_pct": 3.82,
+        "nearest_mrt": "Simei",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 68
+      },
+      "agent_evaluation": {
+        "summary": "A 1,130 sqft 3BR/3-bath, mid-floor, partially furnished unit at Eastpoint Green (Simei, D18 OCR; 684 units in 10-storey blocks, 99LH from Apr-1996, TOP 1999) asking $1.35M / $1,195 psf. That is fair value, not a discount. The same 1,130-1,141 sqft layout printed at a median $1,218 psf on floors 06-10 over the last 12 months (n=6, about $1.376M) and $1,115-1,172 psf on floors 01-05 (n=2, about $1.29M). 'Middle Floor' on a 10-storey block could be either band. The unit buys a deep, liquid resale market and ~3.8% gross carry. But the lease is 68.5 years today and 61.5-63.5 years at a 5-7 year exit. That is the range where Simei's older-lease neighbour Melville Park has already stalled.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, not Buy. The price is fair, the exit market is deep, but there is no value edge to offset a lease that will be in the stall zone by exit. (1) VALUE, about par. $1,195 psf is about 2% under the floor 06-10 12-month median for this layout ($1,218, range $1,199-1,315, n=6: Dec-25 $1.378M, Jan-26 $1.365M, Mar-26 $1.355M, Apr-26 $1.38M, Jul-26 $1.375M). It is about 2-4% over the floor 01-05 prints (Oct-25 $1.26M, Apr-26 $1.325M, Sep-26 1,119sf $1.31M). relative_value is +1.0% vs the age-adjusted D18 median (26 same-band peers) and psf_premium_vs_ura_median is +1.8%; MMR's own psf_value component is negative (-1.4). This is the cheapest of ~12 live 3BR asks, but the others ($1.38-1.45M for 1,130-1,141 sqft) are padded above the prints, so $1.35M is the realistic ask, not a bargain. The 'price dropped' badge is a unit_group artifact: five different agents posted this same $1.35M / 1,130 sqft ask on 2-4 Oct 2026, and no seller cut anything. (2) LEASE. URA tenure is 99 yrs from 24 Apr 1996, so 68.5 yrs remain now, about 63.5 at a 2031 exit and 61.5 at 2033. Melville Park (Simei, 1992 lease, ~65 yrs left today, which is where Eastpoint Green will be around 2030) rose only +5.5% from 2023 to 2026 (median $910 to $961 psf, 850-1,450 sqft). Over the same period Eastpoint Green rose +14.6% ($1,046 to $1,199) and its 1996-2000-lease D18 peers rose +8% to +16% (Tropical Spring +15.9%, Savannah +14.7%, Changi Rise +8.3%). OCR-wide, leases from 1995 or earlier rose +9.0% against +12.6% for 1996-98 leases. So the 7.5% trailing CAGR, which supplies the largest part of the 730 score (appreciation +10.6), is the part least likely to repeat. I override the forward rate to 3.0%/yr. (3) EXIT RECORD. REALSCORE is 4.0, but only 65.1% of 800 resale pairs were profitable (average hold 9.9 yrs). That is the weakest record in the D18 peer set: Savannah 94.7% of 719, Changi Rise 88.7% of 688, Elias Green 80.3% of 276, Melville Park 72.8% of 1,281. Most of the losses probably belong to buyers at the 1996 launch peak and to the long flat stretch before 2021 (2021 prints were only $830-940 psf). That is a vintage effect rather than a defect, but it shows this estate can go sideways for years. (4) STRENGTHS. Deep liquidity: 149 URA resales in 5 years, and 1,130/1,141 sqft is the most-traded layout. $1.35M sits in the HDB-upgrader band (49% HDB buyers). Simei EW3 is ~500-600m away by sheltered walkway, Eastpoint Mall is next door, and rent is real: URA $4,300/mo on 41 contracts, 3.82% gross / 2.31% net, backed by tenants from CGH, Changi Business Park, SUTD and the airport. (5) UNKNOWNS. The floor band and facing are unknown. The estate sits opposite Changi General Hospital, and residents report ambulance-siren noise on hospital-facing units. What would change the call: a verified floor 06-10, non-hospital-facing unit at about $1.30M or below (~$1,150 psf, 5-6% under upper-band prints) would be worth a closer look. Medium confidence: the price read and the lease maths hold whichever floor band this is; floor and facing move fair value by about +/-$40k, not the verdict.",
+        "red_flags": [
+          "Lease 99 yrs from 24 Apr 1996: 68.5 yrs left now, ~63.5 at a 2031 exit and ~61.5 at 2033. Simei's 1992-lease Melville Park (~65 yrs left) rose only +5.5% from 2023 to 2026, against +14.6% here",
+          "No value edge: $1,195 psf is about 2% under the floor 06-10 12-month median ($1,218, n=6) and about 2-4% over the floor 01-05 prints. Relative value +1.0% vs the age-adjusted D18 median",
+          "Weakest exit record among D18 peers: 65.1% of 800 resale pairs profitable (REALSCORE 4.0) vs Savannah 94.7%, Changi Rise 88.7%, Elias Green 80.3%, Melville Park 72.8%",
+          "MMR 730 is driven by trailing CAGR (+10.6) and liquidity/size components, which have weak forward power. The value component is negative. Identical sister listings without the floor/facility enrichment score 706",
+          "Crowded live book: ~12 competing 3BR asks ($1.35-1.45M) since Jun-26. That is supply the next exit will also compete with",
+          "Floor band (01-05 vs 06-10) and facing are undisclosed. Units facing the hospital and road get ambulance-siren and motorbike noise (resident reviews)",
+          "Plot ratio ~2.0 already built out (GFA 74,310 sqm on 37,155 sqm land) and 684 units, so en bloc is not a realistic exit"
+        ],
+        "catalysts": [
+          "Deep resale market: 149 URA prints in 5 yrs, 1,130/1,141 sqft is the most-traded layout, and $1.35M is the HDB-upgrader band (49% HDB buyers)",
+          "Simei EW3 ~500-600m by sheltered walkway; Eastpoint Mall next door; PIE/TPE access",
+          "Tenant base from Changi General Hospital (opposite), Changi Business Park, SUTD, Expo and Changi Airport (T5 in the 2030s)",
+          "DTL3e Xilin station (~1.2km) is due to open 2H 2026. That is marginal at this distance and mostly priced in",
+          "Five agents posted the same ask within three days, which suggests an open listing and a seller who wants a quick sale. There may be a little room to negotiate toward $1.30-1.32M"
+        ],
+        "rental_assessment": "Solid for an OCR 3BR. URA project 3BR rents median $4,300/mo on 41 contracts in 12 months, uncapped (realsmart: $3.67 psf/mo, $3,400-5,400 range), which gives 3.82% gross / ~2.31% net at $1.35M. Demand comes from CGH staff, Changi Business Park, SUTD and airport workers, and the URA 3BR rental band is deep (214 contracts in the bed-band history). This is carry, not an appreciation signal.",
+        "appreciation_assessment": "The trailing 7.5%/yr URA CAGR (149 txns; median $837 psf in 2021 to $1,199 in 2026) is real, and so far there is no lease stall: Eastpoint Green has outperformed its 1996-2000-lease Simei/Tampines peers. But it came off a long flat base, and the lease reaches the ~65-year zone around 2030, where Melville Park sits today and has lagged (+5.5% over 2023-26). The OCR prior is about +3.7%/yr; with ~1-1.5%/yr of lease drag over the back half of the hold, I use 3.0%/yr forward. There is no dated catalyst strong enough to argue for more.",
+        "stack_notes": "No per-stack facing data (profile saved at low confidence; no site plan found). The listing says 'Middle Floor' in 10-storey blocks, which could be URA band 01-05 or 06-10. The upper band trades at a ~6% premium on this layout over the last 12 months ($1,218 vs $1,144 psf). The best units face away from Changi General Hospital and Simei St 3: agents market 'away from main road and CGH' as a selling point, and residents report siren noise on hospital-facing units. Verify the exact floor and facing before an offer.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "Resale-to-resale URA prints, 850-1,450 sqft, median psf 2023 to 2026. Melville Park (Simei, 1992 lease, ~65 yrs left) +5.5% (~1.8%/yr). OCR leases from 1995 or earlier +9.0% (~2.9%/yr) vs 1996-98 leases +12.6%. Eastpoint Green reaches ~65 yrs left around 2030. Dated catalyst: lease falls to 63.5/61.5 yrs at a 2031/2033 exit.",
+        "realscore": 4.0,
+        "realsmart_pct_profitable": 65.1,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_127_500281996",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-eastpoint-green-500281996",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }

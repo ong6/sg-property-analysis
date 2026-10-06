@@ -1,0 +1,102 @@
+{
+  "condo": "Eastpoint Green",
+  "slug": "eastpoint-green",
+  "district": "D18",
+  "researched_at": "2026-10-06",
+  "revision": 1,
+  "confidence": "low",
+  "sources": [
+    {
+      "url": "https://www.edgeprop.sg/condo-apartment/eastpoint-green",
+      "type": "listing",
+      "note": "3 blocks, max 10 floors; 99 yrs from 24 Apr 1996; TOP 1999; land 37,155 sqm, GFA 74,310 sqm (plot ratio ~2.0 already used); architect TAA Architects; Simei EW3 ~7-min walk with sheltered walkway; resident reviews: ambulance-siren and motorcycle noise for units facing the adjacent hospital. States 646 units (conflicts with 684 elsewhere)."
+    },
+    {
+      "url": "https://www.99.co/singapore/condos-apartments/eastpoint-green",
+      "type": "listing",
+      "note": "684 units; says 4 blocks and completion 1998 (conflicts with EdgeProp's 3 blocks / 1999); right opposite Changi General Hospital."
+    },
+    {
+      "url": "https://www.srx.com.sg/listings/79073742/for-sale-eastpoint-green-away-from-main-road-and-changi-general-hospital",
+      "type": "listing",
+      "note": "Agent markets a unit as 'away from main road and Changi General Hospital'. So orientation to CGH / Simei St 3 is a pricing factor buyers ask about."
+    },
+    {
+      "url": "https://realsmart.sg/p/eastpoint-green",
+      "type": "listing",
+      "note": "684 units, completion 1999, 99 yrs from 24/04/1996; 49% HDB-upgrader buyers; 800 resale pairs, 65.1% profitable (cached 2026-10-06)."
+    },
+    {
+      "url": "data/ura_district_D18.csv",
+      "type": "listing",
+      "note": "URA transacted sqft clusters 2021-26 (149 prints): 904, 958/969, 1,012, 1,108-1,141, 1,173-1,195, 1,302, 1,884, 2,099, 2,314. Floor bands only 01-05 and 06-10, consistent with a 10-storey estate. URA rental bed bands: 3BR median 1,150sf (214 contracts), 2BR ~950sf (246)."
+    }
+  ],
+  "development": {
+    "total_units": 684,
+    "blocks": "3 (EdgeProp) or 4 (99.co); conflicting",
+    "max_floor": 10,
+    "tenure": "99 yrs from 24 Apr 1996",
+    "top_year": 1999,
+    "developer": "Far East Organization with Nissho Iwai (per listing metadata)",
+    "orientation_notes": "Low-rise 10-storey estate on Simei Street 3, directly opposite Changi General Hospital and beside Eastpoint Mall. No per-stack facing diagram found. Agents explicitly market units as 'away from main road and CGH', so hospital/road-facing stacks are the discounted ones.",
+    "known_issues": [
+      "Ambulance-siren noise (CGH opposite) and motorcycle road noise for hospital/road-facing units (resident reviews)",
+      "Unit count and block count conflict across portals (646 vs 684; 3 vs 4 blocks)",
+      "Plot ratio ~2.0 already built out (GFA/land), so en-bloc redevelopment headroom is limited"
+    ]
+  },
+  "stacks": [],
+  "layouts": [
+    {
+      "type": "2BR",
+      "sqft": [
+        904,
+        958,
+        969
+      ],
+      "efficiency": "unknown",
+      "notes": "958sf is the most-traded 2BR (41 URA prints 2021-26)"
+    },
+    {
+      "type": "3BR",
+      "sqft": [
+        1108,
+        1119,
+        1130,
+        1141
+      ],
+      "efficiency": "unknown",
+      "notes": "Main 3BR family; 1,130/1,141sf are 3BR + 3 bath per listings. URA floor bands 01-05 vs 06-10 show a ~3-5% upper-floor premium."
+    },
+    {
+      "type": "3BR (large)",
+      "sqft": [
+        1173,
+        1184,
+        1195
+      ],
+      "efficiency": "unknown",
+      "notes": "Larger 3BR variants; the bed band check treats them as 3BR"
+    },
+    {
+      "type": "4BR",
+      "sqft": [
+        1302
+      ],
+      "efficiency": "unknown",
+      "notes": "Only 4 URA prints. URA 4BR rental band sits at 1,850sf+, so 1,302sf may be a 3BR+study; unverified"
+    },
+    {
+      "type": "PH",
+      "sqft": [
+        1884,
+        2099,
+        2314
+      ],
+      "efficiency": "unknown",
+      "notes": "Penthouses; 1-2 prints each"
+    }
+  ],
+  "first_researched_at": "2026-10-06"
+}
