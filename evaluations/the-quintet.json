@@ -60,6 +60,84 @@
         "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quintet-500163179",
         "review_file": "cov_batch_33.json"
       }
+    },
+    {
+      "evaluated_at": "2026-10-06",
+      "rating": "Neutral",
+      "confidence": "medium",
+      "summary": "The Quintet (D23 Yew Tee, ex-EC by Frasers, 459 units, TOP 2006, 99 yrs from 22-Jan-2003) Type B1 4BR+utility, 1,561 sqft, 3 baths, PG-tagged High Floor, asking $1.82M / $1,166 psf. URA's district CSVs exclude ECs, so the engine scored this blind (0 project prints, regional-baseline appreciation, district-bedroom rent). The comps below come from the project's own caveats (propertyforsale.com.sg, Feb-2017 to Jun-2026). The 1,560/1,571 sqft 4BR format last printed $1.70M / $1,089 psf (Aug-24, floors 11-15), $1.70M / $1,081 (Jun-25, 01-05) and $1.67M / $1,062 (Jun-26, 01-05). No 4BR at this project has ever sold above $1.70M, and no unit of any size above $1,151 psf. This ask would set both records. With a ~3-5% high-floor premium, fair value is ~$1.72-1.78M, so the ask is 2-6% rich and ~$120k over the format's best-ever print. The live book agrees: a mid-floor corner 1,571 sqft sibling asked $1.78M from 8-Jun-2026, went 3+ months unsold, and was relisted at $1.82M. Resale volume has dropped from 17-23 a year (2017-24) to 7 in 2025 and 4 in H1-2026, while the CCK/Bukit Panjang private cluster held steady. Sound family project, wrong price.",
+      "rating_rationale": "Neutral, leaning Avoid at $1.82M. The project is sound: Yew Tee NS5 is 414m away, 72% of buyers are HDB upgraders, and 328 of 335 resale pairs sold at a profit. But this unit has no value edge anywhere. (1) The ask is a project record: +7% over the 4BR format's $1.70M ceiling and above every psf ever printed there. Fair value for a high-floor B1 is ~$1.72-1.78M. (2) The -15% vs D23 and the 697 score are artifacts. age_value +11.5 benchmarks an ex-EC in the Choa Chu Kang cluster against private D23 stock that includes Hillview. Stripped of that, the score is ~600, under the 650 gate. Against its own cluster, the ask prices it like Maysprings ($1,161 psf, private), while its own 4BR prints sit ~10% under The Warren ($1,199), which is the normal ex-EC gap. (3) Carry is thin. Five 4BR contracts in 2025-26 rented for $4,200-4,900, a 3.1% gross / ~1.7% net yield, not the modelled 3.7%. (4) The lease runs from 2003, not 2006: ~75 years are left now and ~68-70 at a 5-7 year exit, inside the ~70-year zone where OCR prints lag ~1.5%/yr. (5) Resale volume has collapsed to ~6/yr against ~17 units listed. That is project-specific buyer resistance, and it is the exit you would be selling into. Walk-away price is ~$1.75M. Even at fair value this is a Neutral family hold, not a value buy. Confidence is medium: only 3 format prints in 24 months, and the floor rests on PG's 'High Floor' tag with block, stack and facing unverified.",
+      "red_flags": [
+        "Record ask: $1.82M / $1,166 psf exceeds every 4BR print ever (max $1.70M; last three $1.67-1.70M at $1,062-1,089 psf) and every psf printed at the project for any unit (max $1,151, Oct-25).",
+        "Live-book resistance: a 1,571 sqft mid-floor corner 4BR sibling asked $1.78M from 8-Jun-2026, sat 3+ months unsold, and was relisted at $1.82M on 18-Sep; this listing joined at the same price on 6-Oct. ~17 units listed on PG.",
+        "Resale volume collapse: caveats ran 17-23/yr in 2017-2024, then 7 in 2025 and 4 in H1-2026, while CCK/Bukit Panjang cluster private resales held at 56-83 per half-year. Project-specific, and it is the exit market.",
+        "Score is a blind-spot artifact. ECs are absent from URA district CSVs, so psf_value, txn_volume and momentum are 0 and every trust rule is off. age_value +11.5 compares an ex-EC in the Choa Chu Kang cluster to private D23 (incl. Hillview). De-artifacted score ~600, below the 650 gate.",
+        "Lease starts 22-Jan-2003, not 2006: ~75.3 years left now, ~70 at a 5-yr exit and ~68 at a 7-yr exit, inside the ~70-year zone where OCR prints lag ~1.5%/yr.",
+        "Rent overstated: the modelled $5,651 (district_bedroom, conf 0.55) is ~20% above the project's own 4BR 1,500-1,600 sqft contracts ($4,200-4,900, median $4,700). Real gross yield ~3.1%, net ~1.7%.",
+        "4BR format lagging: 4BR psf flat 2024 to 2026 ($1,081 to $1,062) while the 3BR rose ~10% ($1,020 to ~$1,125-1,145). The format looks capped near a $1.7M quantum for this HDB-upgrader pool.",
+        "Ex-EC profitability is flattered: original owners bought at subsidised EC launch prices, so 97.9% profitable overstates resale-to-resale safety. REALSCORE 3.3 is middling.",
+        "Floor is only PG's 'High Floor' tag; block, stack and facing are unverified (no profile, EdgeProp page not found)."
+      ],
+      "catalysts": [
+        "Walkable heavy-rail MRT: Yew Tee NS5 at ~414m (not LRT). Yew Tee Point / Yew Tee Square ~0.4-0.5km.",
+        "Downside record: REALSCORE 3.3; 97.9% profitable (328 profitable vs 7 unprofitable on 335 resale pairs); avg 4.3% annualised over a 9.4-yr avg holding. Deep sample (777 total txns), though flattered by the EC launch subsidy.",
+        "OCR region: the strongest realized forward region in the 28-district backtest (+3.7%/yr). Fully privatised ex-EC, so foreigners and all buyers are eligible.",
+        "Big family format: 4BR + utility (helper's room) + 3 baths at 1,561 sqft for ~$1.7-1.8M, against ~$1.9-2.0M for private 4BR-size at The Warren / Yewtee Residences. Real HDB-upgrader demand (72% of buyers).",
+        "Negotiation is the thesis: at ~$1.72-1.75M a high-floor B1 would be at the format's own prints with a small floor premium.",
+        "Jurong Region Line (Choa Chu Kang JRL ~1.7km) and Tengah: narrative only (the future-infra score has no measured forward power)."
+      ],
+      "as_of": {
+        "price": 1820000,
+        "psf": 1165.92,
+        "beds": 4,
+        "sqft": 1561.0
+      },
+      "key_facts": {
+        "appreciation_pct": 4.2,
+        "appreciation_source": "regional_baseline",
+        "gross_yield_pct": 3.73,
+        "nearest_mrt": "Yew Tee",
+        "tenure": "99-year Leasehold",
+        "remaining_lease": 76
+      },
+      "agent_evaluation": {
+        "summary": "The Quintet (D23 Yew Tee, ex-EC by Frasers, 459 units, TOP 2006, 99 yrs from 22-Jan-2003) Type B1 4BR+utility, 1,561 sqft, 3 baths, PG-tagged High Floor, asking $1.82M / $1,166 psf. URA's district CSVs exclude ECs, so the engine scored this blind (0 project prints, regional-baseline appreciation, district-bedroom rent). The comps below come from the project's own caveats (propertyforsale.com.sg, Feb-2017 to Jun-2026). The 1,560/1,571 sqft 4BR format last printed $1.70M / $1,089 psf (Aug-24, floors 11-15), $1.70M / $1,081 (Jun-25, 01-05) and $1.67M / $1,062 (Jun-26, 01-05). No 4BR at this project has ever sold above $1.70M, and no unit of any size above $1,151 psf. This ask would set both records. With a ~3-5% high-floor premium, fair value is ~$1.72-1.78M, so the ask is 2-6% rich and ~$120k over the format's best-ever print. The live book agrees: a mid-floor corner 1,571 sqft sibling asked $1.78M from 8-Jun-2026, went 3+ months unsold, and was relisted at $1.82M. Resale volume has dropped from 17-23 a year (2017-24) to 7 in 2025 and 4 in H1-2026, while the CCK/Bukit Panjang private cluster held steady. Sound family project, wrong price.",
+        "rating": "Neutral",
+        "rating_rationale": "Neutral, leaning Avoid at $1.82M. The project is sound: Yew Tee NS5 is 414m away, 72% of buyers are HDB upgraders, and 328 of 335 resale pairs sold at a profit. But this unit has no value edge anywhere. (1) The ask is a project record: +7% over the 4BR format's $1.70M ceiling and above every psf ever printed there. Fair value for a high-floor B1 is ~$1.72-1.78M. (2) The -15% vs D23 and the 697 score are artifacts. age_value +11.5 benchmarks an ex-EC in the Choa Chu Kang cluster against private D23 stock that includes Hillview. Stripped of that, the score is ~600, under the 650 gate. Against its own cluster, the ask prices it like Maysprings ($1,161 psf, private), while its own 4BR prints sit ~10% under The Warren ($1,199), which is the normal ex-EC gap. (3) Carry is thin. Five 4BR contracts in 2025-26 rented for $4,200-4,900, a 3.1% gross / ~1.7% net yield, not the modelled 3.7%. (4) The lease runs from 2003, not 2006: ~75 years are left now and ~68-70 at a 5-7 year exit, inside the ~70-year zone where OCR prints lag ~1.5%/yr. (5) Resale volume has collapsed to ~6/yr against ~17 units listed. That is project-specific buyer resistance, and it is the exit you would be selling into. Walk-away price is ~$1.75M. Even at fair value this is a Neutral family hold, not a value buy. Confidence is medium: only 3 format prints in 24 months, and the floor rests on PG's 'High Floor' tag with block, stack and facing unverified.",
+        "red_flags": [
+          "Record ask: $1.82M / $1,166 psf exceeds every 4BR print ever (max $1.70M; last three $1.67-1.70M at $1,062-1,089 psf) and every psf printed at the project for any unit (max $1,151, Oct-25).",
+          "Live-book resistance: a 1,571 sqft mid-floor corner 4BR sibling asked $1.78M from 8-Jun-2026, sat 3+ months unsold, and was relisted at $1.82M on 18-Sep; this listing joined at the same price on 6-Oct. ~17 units listed on PG.",
+          "Resale volume collapse: caveats ran 17-23/yr in 2017-2024, then 7 in 2025 and 4 in H1-2026, while CCK/Bukit Panjang cluster private resales held at 56-83 per half-year. Project-specific, and it is the exit market.",
+          "Score is a blind-spot artifact. ECs are absent from URA district CSVs, so psf_value, txn_volume and momentum are 0 and every trust rule is off. age_value +11.5 compares an ex-EC in the Choa Chu Kang cluster to private D23 (incl. Hillview). De-artifacted score ~600, below the 650 gate.",
+          "Lease starts 22-Jan-2003, not 2006: ~75.3 years left now, ~70 at a 5-yr exit and ~68 at a 7-yr exit, inside the ~70-year zone where OCR prints lag ~1.5%/yr.",
+          "Rent overstated: the modelled $5,651 (district_bedroom, conf 0.55) is ~20% above the project's own 4BR 1,500-1,600 sqft contracts ($4,200-4,900, median $4,700). Real gross yield ~3.1%, net ~1.7%.",
+          "4BR format lagging: 4BR psf flat 2024 to 2026 ($1,081 to $1,062) while the 3BR rose ~10% ($1,020 to ~$1,125-1,145). The format looks capped near a $1.7M quantum for this HDB-upgrader pool.",
+          "Ex-EC profitability is flattered: original owners bought at subsidised EC launch prices, so 97.9% profitable overstates resale-to-resale safety. REALSCORE 3.3 is middling.",
+          "Floor is only PG's 'High Floor' tag; block, stack and facing are unverified (no profile, EdgeProp page not found)."
+        ],
+        "catalysts": [
+          "Walkable heavy-rail MRT: Yew Tee NS5 at ~414m (not LRT). Yew Tee Point / Yew Tee Square ~0.4-0.5km.",
+          "Downside record: REALSCORE 3.3; 97.9% profitable (328 profitable vs 7 unprofitable on 335 resale pairs); avg 4.3% annualised over a 9.4-yr avg holding. Deep sample (777 total txns), though flattered by the EC launch subsidy.",
+          "OCR region: the strongest realized forward region in the 28-district backtest (+3.7%/yr). Fully privatised ex-EC, so foreigners and all buyers are eligible.",
+          "Big family format: 4BR + utility (helper's room) + 3 baths at 1,561 sqft for ~$1.7-1.8M, against ~$1.9-2.0M for private 4BR-size at The Warren / Yewtee Residences. Real HDB-upgrader demand (72% of buyers).",
+          "Negotiation is the thesis: at ~$1.72-1.75M a high-floor B1 would be at the format's own prints with a small floor premium.",
+          "Jurong Region Line (Choa Chu Kang JRL ~1.7km) and Tengah: narrative only (the future-infra score has no measured forward power)."
+        ],
+        "rental_assessment": "Project's own URA rental filings (propertyforsale.com.sg): five 4BR contracts in the 1,500-1,600 sqft band, Feb-2025 to May-2026, at $4,200 / $4,300 / $4,700 / $4,800 / $4,900 (median $4,700); 3BR 1,200-1,300 sqft runs $3,900-4,700 (29 contracts). realsmart median rent $4,250 across all types, rent psf $3.18. Realistic rent for this unit is ~$4,600-4,800, a 3.0-3.2% gross / ~1.6-1.7% net yield at $1.82M. The engine's $5,651 (district_bedroom, confidence 0.55) is ~20% too high, and so are its 3.73% gross yield and the +2.85 MMR yield component. Carry is thin, so the case has to come from price.",
+        "appreciation_assessment": "The engine used the OCR regional baseline (4.2%) because ECs have no URA prints. Own-project resale evidence: 3BR psf ~$745 (2019) to ~$1,020 (2024) to ~$1,125-1,145 (2026), ~6%/yr trailing, almost all from the 2020-24 run-up and flattening since. The 4BR format was flat 2024-26 ($1,081 to $1,062), and the project's resale volume has fallen to ~6/yr. Trailing CAGR has ~0 forward power anyway. Forward view: OCR realized ~3.7%/yr, less ~0.5-1%/yr as the lease crosses ~70 years left during the hold, less a buyer-pool quantum ceiling near $1.7M for the 4BR → ~3.0%/yr, applied from fair value, not from this record ask. Paying $1.82M front-loads ~2-6% of that.",
+        "stack_notes": "No profile in profiles/ (stack_profile not_researched). I skipped /research-development in this headless run because the verdict turns on price versus the format's own prints, and this unit's block/stack can't be identified from the feed (PG address is not block evidence). Known physical facts (EdgeProp floor plans): 145 sqm / 1,561 sqft = Type B1, 4BR + utility + yard, 3 baths, in blocks 38/40/42/44. Six blocks; standard units to floor ~20, penthouses (2,400-3,196 sqft) at 16-25. The floor premium within this project is modest: 3BR prints at floors 16-20 run ~3-5% over 01-10 in the same year, so 'High Floor' justifies ~$1,100-1,140 psf, not $1,166. The 1,571 sqft (146 sqm) 4BR is a near-identical sibling format.",
+        "confidence": "medium",
+        "appreciation_rate_override_pct": 3.0,
+        "appreciation_rate_source": "agent: OCR realized-forward ~3.7%/yr less ~0.7%/yr lease-threshold drag (exit at 68-70 yrs left); own-project 4BR caveats flat 2024-26 (propertyforsale.com.sg); EC excluded from URA CSVs",
+        "realscore": 3.3,
+        "realsmart_pct_profitable": 97.9,
+        "realsmart_annual_return_pct": 4.3
+      },
+      "source": {
+        "run_dir": "output/run_126_500265078",
+        "url": "https://www.propertyguru.com.sg/listing/for-sale-the-quintet-500265078",
+        "review_file": "raw_analysis.json"
+      }
     }
   ]
 }
